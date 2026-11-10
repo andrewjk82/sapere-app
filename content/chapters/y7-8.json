@@ -6120,6 +6120,68 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 370\" width=\"420\" height=\"287.8\" role=\"img\" aria-label=\"Paddock with a 700 m stone wall and three-strand fencing, dimensions in metres\"><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#334155\"/></marker></defs><rect x=\"1\" y=\"1\" width=\"538\" height=\"368\" rx=\"12\" fill=\"#fff\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><style>text{font-family:Arial,sans-serif;fill:#334155}.title{font-size:20px;font-weight:700}.lab{font-size:19px;font-weight:700}.note{font-size:16px}.small{font-size:14px}.shape{fill:#eff6ff;stroke:#334155;stroke-width:3;stroke-linejoin:round}</style><polygon points=\"105,70 405,70 405,300 190,300 190,243 105,243\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\" /><rect x=\"105\" y=\"62\" width=\"300\" height=\"14\" fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"110\" y1=\"63\" x2=\"120\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"132\" y1=\"63\" x2=\"142\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"154\" y1=\"63\" x2=\"164\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"176\" y1=\"63\" x2=\"186\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"198\" y1=\"63\" x2=\"208\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"220\" y1=\"63\" x2=\"230\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"242\" y1=\"63\" x2=\"252\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"264\" y1=\"63\" x2=\"274\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"286\" y1=\"63\" x2=\"296\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"308\" y1=\"63\" x2=\"318\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"330\" y1=\"63\" x2=\"340\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"352\" y1=\"63\" x2=\"362\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"374\" y1=\"63\" x2=\"384\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><line x1=\"396\" y1=\"63\" x2=\"406\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1\"  /><text x=\"255\" y=\"96\" text-anchor=\"middle\" class=\"note\" >stone wall</text><line x1=\"105\" y1=\"38\" x2=\"405\" y2=\"38\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"255\" y=\"29\" text-anchor=\"middle\" class=\"small\" >700 m</text><line x1=\"78\" y1=\"70\" x2=\"78\" y2=\"243\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"58\" y=\"164\" text-anchor=\"end\" class=\"note\" >450 m</text><line x1=\"430\" y1=\"70\" x2=\"430\" y2=\"300\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"447\" y=\"190\" text-anchor=\"middle\" class=\"note\" transform=\"rotate(-90 447 190)\">600 m</text><line x1=\"190\" y1=\"324\" x2=\"405\" y2=\"324\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"298\" y=\"348\" text-anchor=\"middle\" class=\"note\" >500 m</text><text x=\"116\" y=\"277\" text-anchor=\"middle\" class=\"small\" >fencing</text><circle cx=\"480\" cy=\"244\" r=\"32\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"468\" y1=\"221\" x2=\"468\" y2=\"253\" stroke=\"#64748b\" stroke-width=\"2\"  /><line x1=\"480\" y1=\"221\" x2=\"480\" y2=\"253\" stroke=\"#64748b\" stroke-width=\"2\"  /><line x1=\"492\" y1=\"221\" x2=\"492\" y2=\"253\" stroke=\"#64748b\" stroke-width=\"2\"  /><line x1=\"459\" y1=\"228\" x2=\"501\" y2=\"228\" stroke=\"#64748b\" stroke-width=\"2\"  /><line x1=\"459\" y1=\"237\" x2=\"501\" y2=\"237\" stroke=\"#64748b\" stroke-width=\"2\"  /><line x1=\"459\" y1=\"246\" x2=\"501\" y2=\"246\" stroke=\"#64748b\" stroke-width=\"2\"  /><text x=\"480\" y=\"284\" text-anchor=\"middle\" class=\"small\" >3-strand</text><text x=\"480\" y=\"300\" text-anchor=\"middle\" class=\"small\" >wire fence</text></svg>"
           }
+        },
+        {
+          "id": "y7-geo-q9-c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the perimeter of the adjacent figures.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 215\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"55,28 184,28 184,137 280,137 280,169 55,169\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"31\" y=\"102.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"286\" y=\"157.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1cm</text><text x=\"168\" y=\"192.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12cm</text><text x=\"168\" y=\"211.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "34 cm",
+            "22 cm",
+            "29 cm",
+            "40 cm"
+          ],
+          "answer": 0,
+          "hint": "The perimeter is the distance all the way round. Two sides have no label: work them out from the sides you are given.",
+          "steps": [
+            {
+              "explain": "Perimeter means the total length of ALL the sides. This shape has six sides, but two of them (the top and the middle vertical side) have no label.",
+              "work": "Unknown sides: <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">top</mark> and <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">inner vertical side</mark>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 215\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"55,28 184,28 184,137 280,137 280,169 55,169\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"31\" y=\"102.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"286\" y=\"157.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1cm</text><text x=\"168\" y=\"192.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12cm</text><text x=\"168\" y=\"211.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">NOT TO SCALE</text><line x1=\"55\" y1=\"28\" x2=\"184\" y2=\"28\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"119\" y=\"19.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">? = 12 − 4 = 8 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "The top is shorter than the bottom (12 cm) by the 4 cm step. The inner vertical side is shorter than the left side (5 cm) by the 1 cm step.",
+              "work": "\\(\\text{top}=12-4=8\\text{ cm}\\)\n\\(\\text{inner vertical}=5-1=4\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 215\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"55,28 184,28 184,137 280,137 280,169 55,169\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"31\" y=\"102.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"286\" y=\"157.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1cm</text><text x=\"168\" y=\"192.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12cm</text><text x=\"168\" y=\"211.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">NOT TO SCALE</text><line x1=\"55\" y1=\"28\" x2=\"184\" y2=\"28\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"119\" y=\"19.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">? = 12 − 4 = 8 cm</text><line x1=\"184\" y1=\"28\" x2=\"184\" y2=\"137\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"190\" y=\"86.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">? = 5 − 1 = 4 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all six sides going round the shape: left 5, top 8, inner vertical 4, step 4, right 1, bottom 12.",
+              "work": "\\(5+8+4+4+1+12=34\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 215\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"55,28 184,28 184,137 280,137 280,169 55,169\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"31\" y=\"102.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"286\" y=\"157.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1cm</text><text x=\"168\" y=\"192.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12cm</text><text x=\"168\" y=\"211.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">NOT TO SCALE</text><line x1=\"55\" y1=\"28\" x2=\"184\" y2=\"28\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"119\" y=\"19.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">? = 12 − 4 = 8 cm</text><line x1=\"184\" y1=\"28\" x2=\"184\" y2=\"137\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"190\" y=\"86.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">? = 5 − 1 = 4 cm</text><line x1=\"55\" y1=\"28\" x2=\"184\" y2=\"28\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"0.9\"/><line x1=\"184\" y1=\"28\" x2=\"184\" y2=\"137\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"0.9\"/><line x1=\"184\" y1=\"137\" x2=\"280\" y2=\"137\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"0.9\"/><line x1=\"280\" y1=\"137\" x2=\"280\" y2=\"169\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"0.9\"/><line x1=\"280\" y1=\"169\" x2=\"55\" y2=\"169\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"0.9\"/><line x1=\"55\" y1=\"169\" x2=\"55\" y2=\"28\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"0.9\"/></svg>"
+              }
+            },
+            {
+              "explain": "Quick check: for a shape like this the perimeter equals the perimeter of the big rectangle around it: 2 × (12 + 5) = 34 cm. Common mistake: 22 cm adds only the four labelled sides (5 + 4 + 1 + 12).",
+              "work": "\\(\\boxed{34\\text{ cm}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "The distance all the way round the outside."
+            },
+            {
+              "text": "adjacent figures",
+              "note": "Use the figure beside the question. It is not drawn to scale."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+            "test": "Question 9 (5 marks)",
+            "number": "(c)",
+            "page": 1
+          }
         }
       ]
     },
@@ -7116,6 +7178,64 @@
             "number": "46",
             "napId": "NAP-96452"
           }
+        },
+        {
+          "id": "y7-geo-e1-a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the perimeter and area of the following shape.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 175\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"62\" y=\"28\" width=\"220\" height=\"100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"172\" y1=\"23\" x2=\"172\" y2=\"33\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"172\" y1=\"123\" x2=\"172\" y2=\"133\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"75.8\" x2=\"57\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"80.2\" x2=\"57\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"75.8\" x2=\"277\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"80.2\" x2=\"277\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><polyline points=\"62,116 74,116 74,128\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"294\" y=\"82.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7.5m</text><text x=\"172\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">16m</text></svg>"
+          },
+          "options": [
+            "Perimeter = 39.5 m, area = 120 m²",
+            "Perimeter = 120 m, area = 47 m²",
+            "Perimeter = 47 m, area = 120 m²",
+            "Perimeter = 23.5 m, area = 120 m²"
+          ],
+          "answer": 2,
+          "hint": "The tick marks show which sides are equal. Perimeter is the distance round; area is length × width.",
+          "steps": [
+            {
+              "explain": "The tick marks (small lines) show equal sides: the top equals the bottom (16 m) and the two sides are equal (7.5 m). The small square shows a right angle, so this is a rectangle.",
+              "work": "Sides: 16 m, 7.5 m, 16 m, 7.5 m",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 175\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"62\" y=\"28\" width=\"220\" height=\"100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"172\" y1=\"23\" x2=\"172\" y2=\"33\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"172\" y1=\"123\" x2=\"172\" y2=\"133\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"75.8\" x2=\"57\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"80.2\" x2=\"57\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"75.8\" x2=\"277\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"80.2\" x2=\"277\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><polyline points=\"62,116 74,116 74,128\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"294\" y=\"82.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7.5m</text><text x=\"172\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">16m</text><text x=\"172\" y=\"20.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">16 m</text><text x=\"50\" y=\"82.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">7.5 m</text><text x=\"172\" y=\"81.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#2563eb\">equal sides (tick marks)</text></svg>"
+              }
+            },
+            {
+              "explain": "Perimeter = add all four sides.",
+              "work": "\\(16+7.5+16+7.5=47\\text{ m}\\)\nOr: \\(2\\times(16+7.5)=2\\times23.5=47\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 175\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"62\" y=\"28\" width=\"220\" height=\"100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"172\" y1=\"23\" x2=\"172\" y2=\"33\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"172\" y1=\"123\" x2=\"172\" y2=\"133\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"75.8\" x2=\"57\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"80.2\" x2=\"57\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"75.8\" x2=\"277\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"80.2\" x2=\"277\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><polyline points=\"62,116 74,116 74,128\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"294\" y=\"82.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7.5m</text><text x=\"172\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">16m</text><rect x=\"62\" y=\"28\" width=\"220\" height=\"100\" fill=\"none\" fill-opacity=\"0.45\" stroke=\"#d97706\" stroke-width=\"3.5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Area = length × width.",
+              "work": "\\(16\\times7.5=16\\times7+16\\times0.5=112+8=120\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 175\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"62\" y=\"28\" width=\"220\" height=\"100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"172\" y1=\"23\" x2=\"172\" y2=\"33\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"172\" y1=\"123\" x2=\"172\" y2=\"133\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"75.8\" x2=\"57\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"67\" y1=\"80.2\" x2=\"57\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"75.8\" x2=\"277\" y2=\"75.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"287\" y1=\"80.2\" x2=\"277\" y2=\"80.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><polyline points=\"62,116 74,116 74,128\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"294\" y=\"82.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7.5m</text><text x=\"172\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">16m</text><rect x=\"62\" y=\"28\" width=\"220\" height=\"100\" fill=\"#fde68a\" fill-opacity=\"0.45\" stroke=\"#059669\" stroke-width=\"3.5\"/><text x=\"172\" y=\"82.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">16 × 7.5 = 120 m²</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the units: perimeter is a length (m) and area is a square measure (m²). Common mistakes: 39.5 m counts only one 7.5 m side, and 23.5 m is half the perimeter.",
+              "work": "\\(\\boxed{P=47\\text{ m},\\;A=120\\text{ m}^2}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perimeter and area",
+              "note": "Perimeter is the distance round; area is the space inside."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+            "test": "Part E",
+            "number": "1 (a)",
+            "page": 2
+          }
         }
       ]
     },
@@ -7589,6 +7709,236 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 340\" width=\"420\" height=\"274.6\" role=\"img\" aria-label=\"A 25 square centimetre square joined to a 4 square centimetre square with the upper region shaded\"><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#334155\"/></marker></defs><rect x=\"1\" y=\"1\" width=\"518\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><style>text{font-family:Arial,sans-serif;fill:#334155}.title{font-size:20px;font-weight:700}.lab{font-size:19px;font-weight:700}.note{font-size:16px}.small{font-size:14px}.shape{fill:#eff6ff;stroke:#334155;stroke-width:3;stroke-linejoin:round}</style><rect x=\"125\" y=\"120\" width=\"205\" height=\"205\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2.5\" /><rect x=\"330\" y=\"120\" width=\"82\" height=\"82\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2.5\" /><polygon points=\"125,120 330,120 412,120 125,325\" fill=\"#d1d5db\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\" /><line x1=\"125\" y1=\"325\" x2=\"412\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\"  /><line x1=\"330\" y1=\"120\" x2=\"330\" y2=\"325\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\" /><line x1=\"330\" y1=\"202\" x2=\"412\" y2=\"202\" stroke=\"#334155\" stroke-width=\"1.5\"  /><text x=\"205\" y=\"220\" text-anchor=\"middle\" class=\"note\" >25 cm²</text><text x=\"390\" y=\"142\" text-anchor=\"middle\" class=\"small\" >4 cm²</text><text x=\"460\" y=\"255\" text-anchor=\"middle\" class=\"small\" >NOT TO SCALE</text></svg>"
           }
+        },
+        {
+          "id": "y7-geo-e1-c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the perimeter and area of the following shape.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"40,30 109,30 109,76 166.5,76 166.5,122 224,122 224,168 270,168 270,214 40,214\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"74.5\" y=\"24.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6cm</text><text x=\"117\" y=\"56.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"137.8\" y=\"70.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"174.5\" y=\"102.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"195.2\" y=\"116.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"148.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"247\" y=\"162.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"278\" y=\"194.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4cm</text></svg>"
+          },
+          "options": [
+            "Perimeter = 36 cm, area = 212 cm²",
+            "Perimeter = 72 cm, area = 320 cm²",
+            "Perimeter = 72 cm, area = 106 cm²",
+            "Perimeter = 72 cm, area = 212 cm²"
+          ],
+          "answer": 3,
+          "hint": "Find the total width and total height of the staircase first. For the area, split it into columns.",
+          "steps": [
+            {
+              "explain": "Find the total width along the bottom and the total height down the left side by adding the steps.",
+              "work": "\\(\\text{width}=6+5+5+4=20\\text{ cm}\\)\n\\(\\text{height}=4+4+4+4=16\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"40,30 109,30 109,76 166.5,76 166.5,122 224,122 224,168 270,168 270,214 40,214\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"74.5\" y=\"24.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6cm</text><text x=\"117\" y=\"56.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"137.8\" y=\"70.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"174.5\" y=\"102.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"195.2\" y=\"116.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"148.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"247\" y=\"162.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"278\" y=\"194.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><line x1=\"40\" y1=\"214\" x2=\"270\" y2=\"214\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"155\" y=\"234.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">bottom = 6 + 5 + 5 + 4 = 20 cm</text><line x1=\"40\" y1=\"30\" x2=\"40\" y2=\"214\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"48\" y=\"166.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#d97706\">left = 16 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "For a staircase shape the horizontal parts on the top add up to the bottom (20 cm) and the vertical parts on the right add up to the left side (16 cm). So the perimeter is the same as the rectangle around it.",
+              "work": "\\(P=2\\times(20+16)=2\\times36=72\\text{ cm}\\)"
+            },
+            {
+              "explain": "Area: split the shape into four columns from the left. Each column is as tall as the staircase is at that point (16, 12, 8, 4 cm).",
+              "work": "\\(6\\times16=96\\)\n\\(5\\times12=60\\)\n\\(5\\times8=40\\)\n\\(4\\times4=16\\)\n\\(96+60+40+16=212\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"40,30 109,30 109,76 166.5,76 166.5,122 224,122 224,168 270,168 270,214 40,214\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"74.5\" y=\"24.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6cm</text><text x=\"117\" y=\"56.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"137.8\" y=\"70.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"174.5\" y=\"102.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"195.2\" y=\"116.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">5cm</text><text x=\"232\" y=\"148.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4</text><text x=\"247\" y=\"162.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><text x=\"278\" y=\"194.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">4cm</text><rect x=\"40\" y=\"30\" width=\"69\" height=\"184\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"109\" y=\"76\" width=\"57.5\" height=\"138\" fill=\"#bbf7d0\" fill-opacity=\"0.6\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"166.5\" y=\"122\" width=\"57.5\" height=\"92\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"224\" y=\"168\" width=\"46\" height=\"46\" fill=\"#bbf7d0\" fill-opacity=\"0.6\" stroke=\"none\" stroke-width=\"0\"/><polygon points=\"40,30 109,30 109,76 166.5,76 166.5,122 224,122 224,168 270,168 270,214 40,214\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"74.5\" y=\"125.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">6 × 16</text><text x=\"137.8\" y=\"148.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">5 × 12</text><text x=\"195.2\" y=\"171.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">5 × 8</text><text x=\"247\" y=\"194.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">4 × 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using the big rectangle: 20 × 16 = 320 cm². The empty staircase part is 0 + 20 + 40 + 48 = 108 cm², and 320 − 108 = 212 cm² \\(\\checkmark\\). Common mistakes: 36 cm only adds the labelled sides; 320 cm² forgets to remove the empty part.",
+              "work": "\\(\\boxed{P=72\\text{ cm},\\;A=212\\text{ cm}^2}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perimeter and area",
+              "note": "Add the steps to find the whole width and height."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+            "test": "Part E",
+            "number": "1 (c)",
+            "page": 3,
+            "note": "4 marks in the source."
+          }
+        },
+        {
+          "id": "y7-geo-e2",
+          "type": "multipart",
+          "stem": "A garden is surrounded by turf. A 1m wide path is to be constructed around the lawn.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#d1fae5\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    \n    </svg>"
+          },
+          "meta": {
+            "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+            "test": "Part E",
+            "number": "2",
+            "page": 3
+          },
+          "parts": [
+            {
+              "id": "y7-geo-e2-a",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Calculate the area of the path.",
+              "options": [
+                "44 m²",
+                "24 m²",
+                "36 m²",
+                "96 m²"
+              ],
+              "answer": 0,
+              "hint": "The path is outside the 12 m by 8 m turf rectangle. Add 1 m on both ends of each dimension to find the outside rectangle.",
+              "steps": [
+                {
+                  "explain": "The given turf plot is the 12 m by 8 m rectangle. Its area is the area inside the boundary where the path will run.",
+                  "work": "\\(12\\times8=96\\text{ m}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#86efac\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Turf plot: 12 m × 8 m = 96 m²</text>\n    </svg>"
+                  }
+                },
+                {
+                  "explain": "The 1 m path is built all around the OUTSIDE edge of the turf. That adds 1 m to both ends of the length and both ends of the width.",
+                  "work": "\\(12+1+1=14\\text{ m}\\qquad 8+1+1=10\\text{ m}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#d1fae5\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Outside dimensions: 14 m × 10 m</text>\n    </svg>"
+                  }
+                },
+                {
+                  "explain": "Find the whole area including the new path, then subtract the original turf plot to leave only the path.",
+                  "work": "\\(14\\times10=140\\text{ m}^2\\)\\n\\(\\text{Path area}=140-96=\\boxed{44\\text{ m}^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#d1fae5\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Path area = outside rectangle − turf plot</text>\n    </svg>"
+                  }
+                },
+                {
+                  "explain": "Check: the answer is the narrow 1 m strip outside the 12 m by 8 m turf boundary, not a strip around the central garden.",
+                  "work": "\\(\\boxed{44\\text{ m}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "area of the path",
+                  "note": "The path borders the OUTSIDE of the turf rectangle."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+                "test": "Part E",
+                "number": "2 (a)",
+                "page": 3,
+                "note": "Corrected: 1 m path outside the 12 m by 8 m turf plot; area = 14×10 − 12×8 = 44 m²."
+              }
+            },
+            {
+              "id": "y7-geo-e2-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "If the path costs $22/m², how much will the path cost in total?",
+              "options": [
+                "$968",
+                "$528",
+                "$462",
+                "$44"
+              ],
+              "answer": 0,
+              "hint": "Use the corrected path area from part (a), then multiply by $22 for each square metre.",
+              "steps": [
+                {
+                  "explain": "Part (a) gives 44 m² of path. The rate is $22 for each square metre.",
+                  "work": "\\(\\text{area}=44\\text{ m}^2,\\qquad\\text{rate}=\\$22/\\text{m}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#d1fae5\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Path area: 44 m²</text>\n    </svg>"
+                  }
+                },
+                {
+                  "explain": "Multiply the number of square metres by the cost per square metre.",
+                  "work": "\\(44\\times22=44\\times(20+2)=880+88=968\\)"
+                },
+                {
+                  "explain": "The total cost is $968. The units m² cancel against dollars per m², leaving dollars.",
+                  "work": "\\(44\\text{ m}^2\\times\\$22/\\text{m}^2=\\boxed{\\$968}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "$22/m²",
+                  "note": "This is the price for each square metre of the outside path."
+                },
+                {
+                  "text": "in total",
+                  "note": "Multiply $22 by the full 44 m² path area."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+                "test": "Part E",
+                "number": "2 (b)",
+                "page": 3,
+                "note": "Corrected using path area 44 m²: 44 × $22 = $968."
+              }
+            },
+            {
+              "id": "y7-geo-e2-c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Calculate the area of turf.",
+              "options": [
+                "81 m²",
+                "75 m²",
+                "60 m²",
+                "96 m²"
+              ],
+              "answer": 0,
+              "hint": "Turf is the 12 m by 8 m rectangle with only the central garden removed. The new path lies outside this rectangle.",
+              "steps": [
+                {
+                  "explain": "The turf plot measures 12 m by 8 m, so first find the total area inside its boundary.",
+                  "work": "\\(12\\times8=96\\text{ m}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#86efac\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Turf plot area: 96 m²</text>\n    </svg>"
+                  }
+                },
+                {
+                  "explain": "The central garden is 6 m by 2.5 m. Find its area, then subtract it because the garden is not turf.",
+                  "work": "\\(6\\times2.5=15\\text{ m}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#d1fae5\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#bfdbfe\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Garden area: 15 m²</text>\n    </svg>"
+                  }
+                },
+                {
+                  "explain": "Subtract the garden area from the turf plot area. Do not subtract the new path: it lies outside the turf plot.",
+                  "work": "\\(\\text{Turf area}=96-15=\\boxed{81\\text{ m}^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"390\" viewBox=\"0 0 560 390\" style=\"width:50%;height:auto;max-width:100%;display:block;margin:0 auto\"><rect width=\"560\" height=\"390\" fill=\"#fff\"/>\n    <rect x=\"60\" y=\"55\" width=\"440\" height=\"275\" rx=\"2\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <rect x=\"95\" y=\"85\" width=\"370\" height=\"215\" fill=\"#86efac\" stroke=\"#f59e0b\" stroke-width=\"4\"/>\n    <rect x=\"215\" y=\"160\" width=\"130\" height=\"65\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <text x=\"280\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">GARDEN</text>\n    <text x=\"135\" y=\"115\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" fill=\"#166534\">TURF</text>\n    <text x=\"280\" y=\"79\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">12 m</text>\n    <text x=\"88\" y=\"198\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#1e293b\">8 m</text>\n    <text x=\"280\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">6 m</text>\n    <text x=\"352\" y=\"198\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\">2.5 m</text>\n    <text x=\"280\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#f59e0b\">1 m path outside turf</text>\n    <line x1=\"60\" y1=\"70\" x2=\"95\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"65,67 60,70 65,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"90,67 95,70 90,73\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77.5\" y=\"64\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text><line x1=\"115\" y1=\"55\" x2=\"115\" y2=\"85\" stroke=\"#d97706\" stroke-width=\"1.5\"/><polyline points=\"112,60 115,55 118,60\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"112,80 115,85 118,80\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"127\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">1 m</text>\n    <text x=\"280\" y=\"365\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">Turf area = plot − garden</text>\n    </svg>"
+                  }
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "area of turf",
+                  "note": "Find the 12 m by 8 m plot, then remove the garden; the path is outside it."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+                "test": "Part E",
+                "number": "2 (c)",
+                "page": 3,
+                "note": "Corrected: turf area = 12×8 − 6×2.5 = 81 m²; path lies outside the turf plot."
+              }
+            }
+          ]
         }
       ]
     },
@@ -8258,6 +8608,64 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 340\" width=\"420\" height=\"285.6\" role=\"img\" aria-label=\"Trapezium tabletop with parallel sides 50 cm and 80 cm, height 40 cm, and 15 cm offsets\"><defs><marker id=\"arr\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto-start-reverse\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#334155\"/></marker></defs><rect x=\"1\" y=\"1\" width=\"498\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#dbe4f0\" stroke-width=\"2\"/><style>text{font-family:Arial,sans-serif;fill:#334155}.title{font-size:20px;font-weight:700}.lab{font-size:19px;font-weight:700}.note{font-size:16px}.small{font-size:14px}.shape{fill:#eff6ff;stroke:#334155;stroke-width:3;stroke-linejoin:round}</style><polygon points=\"150,90 350,90 410,250 90,250\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\" /><line x1=\"150\" y1=\"60\" x2=\"350\" y2=\"60\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"250\" y=\"49\" text-anchor=\"middle\" class=\"lab\" >50 cm</text><line x1=\"90\" y1=\"280\" x2=\"150\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"120\" y=\"307\" text-anchor=\"middle\" class=\"note\" >15 cm</text><line x1=\"350\" y1=\"280\" x2=\"410\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\"  marker-start=\"url(#arr)\" marker-end=\"url(#arr)\"/><text x=\"380\" y=\"307\" text-anchor=\"middle\" class=\"note\" >15 cm</text><line x1=\"250\" y1=\"92\" x2=\"250\" y2=\"250\" stroke=\"#7c3aed\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\" /><path d=\"M250 230h20v20\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-linejoin=\"round\" /><text x=\"264\" y=\"177\" text-anchor=\"start\" class=\"note\" >40 cm</text><text x=\"480\" y=\"180\" text-anchor=\"end\" class=\"small\" >NOT TO SCALE</text></svg>"
+          }
+        },
+        {
+          "id": "y7-geo-e1-b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the perimeter and area of the following shape.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 190\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"85,25 135,145 295,145\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"36\" y1=\"25\" x2=\"36\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"3 4\"/><polyline points=\"32.7,31.2 36,25 39.3,31.2\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"39.3,138.8 36,145 32.7,138.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"28\" y=\"89.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6m</text><text x=\"117\" y=\"66.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7m</text><text x=\"210\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">15m</text><text x=\"215\" y=\"167.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">10m</text></svg>"
+          },
+          "options": [
+            "Perimeter = 32 m, area = 30 m²",
+            "Perimeter = 32 m, area = 60 m²",
+            "Perimeter = 32 m, area = 35 m²",
+            "Perimeter = 30 m, area = 32 m²"
+          ],
+          "answer": 0,
+          "hint": "For the area of a triangle you need the base and the PERPENDICULAR height (the dotted line), not a slanting side.",
+          "steps": [
+            {
+              "explain": "Perimeter = add the three sides of the triangle (highlighted).",
+              "work": "\\(7+15+10=32\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 190\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"85,25 135,145 295,145\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"36\" y1=\"25\" x2=\"36\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"3 4\"/><polyline points=\"32.7,31.2 36,25 39.3,31.2\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"39.3,138.8 36,145 32.7,138.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"28\" y=\"89.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6m</text><text x=\"117\" y=\"66.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7m</text><text x=\"210\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">15m</text><text x=\"215\" y=\"167.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">10m</text><line x1=\"85\" y1=\"25\" x2=\"135\" y2=\"145\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"85\" y1=\"25\" x2=\"295\" y2=\"145\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"135\" y1=\"145\" x2=\"295\" y2=\"145\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/></svg>"
+              }
+            },
+            {
+              "explain": "Area of a triangle = ½ × base × perpendicular height. The base is the bottom side, 10 m. The height is the dotted line, 6 m, which makes a right angle with the base. The 7 m side is slanted, so it is NOT the height.",
+              "work": "Base = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">10 m</mark>,  perpendicular height = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">6 m</mark>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 190\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"85,25 135,145 295,145\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"36\" y1=\"25\" x2=\"36\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"3 4\"/><polyline points=\"32.7,31.2 36,25 39.3,31.2\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"39.3,138.8 36,145 32.7,138.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"28\" y=\"89.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6m</text><text x=\"117\" y=\"66.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7m</text><text x=\"210\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">15m</text><text x=\"215\" y=\"167.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">10m</text><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"85\" y1=\"145\" x2=\"135\" y2=\"145\" stroke=\"#2563eb\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"135\" y1=\"145\" x2=\"295\" y2=\"145\" stroke=\"#059669\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"85,136 94,136 94,145\" fill=\"none\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"77\" y=\"104.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">h = 6</text><text x=\"215\" y=\"132.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">base = 10</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(A=\\frac{1}{2}\\times\\text{base}\\times\\text{height}=\\frac{1}{2}\\times10\\times6=\\frac{1}{2}\\times60=30\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 190\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"85,25 135,145 295,145\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"36\" y1=\"25\" x2=\"36\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"3 4\"/><polyline points=\"32.7,31.2 36,25 39.3,31.2\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"39.3,138.8 36,145 32.7,138.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"28\" y=\"89.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6m</text><text x=\"117\" y=\"66.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">7m</text><text x=\"210\" y=\"74.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">15m</text><text x=\"215\" y=\"167.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">10m</text><line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"145\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"85\" y1=\"145\" x2=\"135\" y2=\"145\" stroke=\"#2563eb\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"135\" y1=\"145\" x2=\"295\" y2=\"145\" stroke=\"#059669\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"85,136 94,136 94,145\" fill=\"none\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"77\" y=\"104.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">h = 6</text><text x=\"215\" y=\"132.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">base = 10</text></svg>"
+              }
+            },
+            {
+              "explain": "Common mistakes: 60 m² forgets the ½; 35 m² uses the slanted side 7 m as the height (½ × 10 × 7).",
+              "work": "\\(\\boxed{P=32\\text{ m},\\;A=30\\text{ m}^2}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perimeter and area",
+              "note": "Perimeter: add the sides. Area of a triangle: ½ × base × height."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 7 Mathematics Practice · Angles, Perimeter and Area",
+            "test": "Part E",
+            "number": "1 (b)",
+            "page": 2
           }
         }
       ]
