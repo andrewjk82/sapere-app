@@ -82,7 +82,7 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
           if (records.length === 0) sub = await fetchSubmission(sessionId);
         } else {
           sub = await fetchSubmission(sessionId);
-          if (sub && !sub.originalsDeletedAt) records = await fetchSubmissionPages(sessionId);
+          if (sub && !sub.originalsDeletedAt) records = await fetchSubmissionPages(sessionId, sub.pageCount);
           records = records.filter((record) => isSafeImageDataUrl(record?.image));
         }
         if (cancelled) return;

@@ -76,9 +76,18 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
   const subRef = doc(db, SUBMISSIONS, session.id);
   // Firestore never answering (offline, blocked network, stuck local cache) must not leave the student on a spinner:
   // give up with 'network' — the work stays saved on the device and the student can simply submit again.
-  const prevSnap = await withTimeout(getDoc(subRef), 20000).catch((err) => { throw err?.message === TIMEOUT_MESSAGE ? new Error('network') : err; });
-  if (prevSnap.exists() && prevSnap.data().status === 'checked') throw new Error('already-checked');
-  const prevCount = prevSnap.exists() ? Number(prevSnap.data().pageCount) || 0 : 0;
+  // The read only tells us (a) the homework was already checked and (b) how many old pages to delete. Neither is
+  // worth failing the submit for: on iPads / blocked Wi-Fi this read is what hung ("Couldn't reach the server")
+  // while writes still went through. Without it the rules still refuse a checked submission (→ 'already-checked'),
+  // and old pages past the new pageCount are simply ignored by the viewer (fetchSubmissionPages).
+  let prevSnap = null;
+  try {
+    prevSnap = await withTimeout(getDoc(subRef), 6000);
+  } catch (err) {
+    if (err?.message !== TIMEOUT_MESSAGE && err?.code !== 'unavailable') throw err;
+  }
+  if (prevSnap?.exists() && prevSnap.data().status === 'checked') throw new Error('already-checked');
+  const prevCount = prevSnap?.exists() ? Number(prevSnap.data().pageCount) || 0 : 0;
 
   const topics = (session.learnedTopics || [])
     .map((t) => ({ id: t?.id || '', label: t?.label || t?.title || t?.id || '' }))
@@ -134,7 +143,9 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
     try {
       await withTimeout(batch.commit(), 90000);
     } catch (err) {
-      throw err?.message === TIMEOUT_MESSAGE ? new Error('network') : err;
+      if (err?.message === TIMEOUT_MESSAGE) throw new Error('network', { cause: err });
+      if (err?.code === 'permission-denied' && !prevSnap) throw new Error('already-checked', { cause: err });
+      throw err;
     }
   };
 
@@ -169,10 +180,12 @@ export async function fetchSubmission(sessionId) {
   return snap.exists() ? { id: snap.id, ...snap.data() } : null;
 }
 
-export async function fetchSubmissionPages(sessionId) {
+export async function fetchSubmissionPages(sessionId, pageCount) {
   const snap = await getDocs(collection(db, SUBMISSIONS, sessionId, 'pages'));
+  const limit = Number(pageCount) > 0 ? Number(pageCount) : Infinity;   // leftovers from a longer earlier submit
   return snap.docs
     .map((d) => d.data())
+    .filter((p) => (p.index ?? 0) < limit)
     .sort((a, b) => (a.index ?? 0) - (b.index ?? 0))
     .filter((p) => p.image)
     .map((p) => ({
