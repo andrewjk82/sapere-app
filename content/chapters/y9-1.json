@@ -11601,32 +11601,32 @@
           "id": "y9-1c-q190",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A virtual reality engine estimates physics collision bounding factors. This analysis requires solving the following operation. Find the simplified product: \\\\(\\\\frac{25a^2}{27b^3} \\\\times \\\\frac{18b^1}{6a^2}\\\\).",
+          "stem": "Find the simplified product: \\(\\dfrac{25a^{2}}{27b^{3}}\\times\\dfrac{18b}{6a^{2}}\\).",
           "options": [
-            "\\\\(\\\\frac{50ab}{9}\\\\)",
-            "\\\\(\\\\frac{25}{9b^2^{2}}\\\\)",
-            "\\\\(\\\\frac{50ab}{9}^{2}\\\\)",
-            "\\\\(\\\\frac{25}{9b^2}\\\\)"
+            "\\(\\dfrac{50}{9b^{2}}\\)",
+            "\\(\\dfrac{25}{9b^{4}}\\)",
+            "\\(\\dfrac{25b^{2}}{9}\\)",
+            "\\(\\dfrac{25}{9b^{2}}\\)"
           ],
           "answer": 3,
-          "hint": "Convert division to multiplication by flipping the divisor fraction if necessary, then cancel common factors.",
-          "solution": "\\\\frac{25}{9b^2}",
+          "hint": "Multiply the numerators and the denominators, then cancel common factors and subtract the indices of \\(b\\).",
+          "solution": "\\(\\dfrac{25}{9b^{2}}\\)",
           "steps": [
             {
-              "explain": "Set up the algebraic expression to simplify.",
-              "work": "\\\\(\\\\frac{25a^2}{27b^3} \\\\times \\\\frac{18b^1}{6a^2}\\\\)"
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\(\\dfrac{25a^{2}}{27b^{3}}\\times\\dfrac{18b}{6a^{2}}=\\dfrac{25a^{2}\\times18b}{27b^{3}\\times6a^{2}}=\\dfrac{450a^{2}b}{162a^{2}b^{3}}\\)"
             },
             {
-              "explain": "Convert division to multiplication by multiplying by the reciprocal if dividing.",
-              "work": "Multiplication is direct."
+              "explain": "Cancel \\(a^{2}\\) from the top and bottom. For \\(b\\), subtract the indices: \\(\\dfrac{b}{b^{3}}=b^{1-3}=\\dfrac{1}{b^{2}}\\).",
+              "work": "\\(\\dfrac{450}{162}\\times\\dfrac{b}{b^{3}}=\\dfrac{450}{162}\\times\\dfrac{1}{b^{2}}\\)"
             },
             {
-              "explain": "Multiply the coefficients and combine indices using exponent laws.",
-              "work": "\\\\(\\\\frac{450a^2b^1}{162b^3a^2}\\\\)"
+              "explain": "Simplify the number fraction by dividing top and bottom by their HCF, 18.",
+              "work": "\\(\\dfrac{450}{162}=\\dfrac{450\\div18}{162\\div18}=\\dfrac{25}{9}\\)"
             },
             {
-              "explain": "Cancel the greatest common factors to get the simplest form.",
-              "work": "\\\\(\\\\frac{25}{9b^2}\\\\)"
+              "explain": "Put the pieces together.",
+              "work": "\\(\\dfrac{25}{9b^{2}}\\)"
             }
           ],
           "xp": 2

@@ -20812,12 +20812,24 @@
             "\\(3+2\\sqrt{2}\\)"
           ],
           "answer": 1,
-          "hint": "Simplify the expression using the properties of surds.",
+          "hint": "Rationalise the denominator of \\(x\\) by multiplying by its conjugate \\(3+2\\sqrt{2}\\), then compare with \\(y\\).",
           "solution": "The correct answer is \\(1\\).",
           "steps": [
             {
-              "explain": "Since \\(x = y\\), the ratio is 1.",
-              "work": "\\( \\\\frac{x}{y} = 1 \\)"
+              "explain": "Rationalise the denominator of \\(x\\): multiply the top and bottom by the conjugate of \\(3-2\\sqrt{2}\\), which is \\(3+2\\sqrt{2}\\).",
+              "work": "\\(x=\\dfrac{1}{3-2\\sqrt{2}}\\times\\dfrac{3+2\\sqrt{2}}{3+2\\sqrt{2}}=\\dfrac{3+2\\sqrt{2}}{(3-2\\sqrt{2})(3+2\\sqrt{2})}\\)"
+            },
+            {
+              "explain": "Use the difference of two squares for the denominator: \\((a-b)(a+b)=a^{2}-b^{2}\\).",
+              "work": "\\((3-2\\sqrt{2})(3+2\\sqrt{2})=3^{2}-(2\\sqrt{2})^{2}=9-8=1\\)"
+            },
+            {
+              "explain": "So \\(x\\) simplifies to a surd expression. It is exactly the same as \\(y\\).",
+              "work": "\\(x=\\dfrac{3+2\\sqrt{2}}{1}=3+2\\sqrt{2}=y\\)"
+            },
+            {
+              "explain": "Any non-zero number divided by itself is \\(1\\).",
+              "work": "\\(\\dfrac{x}{y}=\\dfrac{3+2\\sqrt{2}}{3+2\\sqrt{2}}=1\\)"
             }
           ],
           "timeLimit": 90,
