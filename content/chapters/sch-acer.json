@@ -3695,6 +3695,1166 @@
               ]
             }
           ]
+        },
+        {
+          "id": "sch-acer-2026b-r-q1-5",
+          "type": "multipart",
+          "stem": "QUESTIONS 1 – 5\n\nThe lighthouse keeper's name was Agnes Doyle, and for thirty-one years she had not missed a single night. Through storms that tore slates from the roof and calm summer evenings when the sea lay flat as a plate, the great lamp had turned, and turned, and turned. Ships passed in the dark and never knew her name; they saw only the light, sweeping the water, telling them where the rocks were and where they were not.\n\nShe had grown old at her post. Her hands, once quick, now moved slowly over the brass fittings she polished each morning out of habit rather than need, for the lamp had long since been made automatic. The mainland had written to say her services were no longer required: a machine would do the work now, and do it more cheaply. Agnes folded the letter and put it in the drawer with the others. She climbed the stairs that evening as she always had, and watched the light reach out across the dark water, and felt, for the first time in thirty-one years, entirely alone.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Reading and Viewing",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-r1",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For thirty-one years, Agnes Doyle had",
+              "options": [
+                "sailed on many ships.",
+                "never missed a single night.",
+                "lived on the mainland.",
+                "worked only during storms."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the first sentence and check what Agnes had never missed.",
+              "keyPoints": [
+                {
+                  "text": "For thirty-one years, Agnes Doyle had",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “for thirty-one years she had not missed a single night”}\\)"
+                },
+                {
+                  "explain": "The opening sentence states her record directly. The storms and calm evenings show that this was a regular duty, not something she did only in storms.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “never missed a single night.” This is the answer to question 1.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "1",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r2",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The ships that passed knew Agnes",
+              "options": [
+                "not at all, only by her light.",
+                "through her letters.",
+                "as a famous keeper.",
+                "by her name."
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Look for the sentence that says what the ships knew and what they did not know.",
+              "keyPoints": [
+                {
+                  "text": "The ships that passed knew Agnes",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “Ships passed in the dark and never knew her name; they saw only the light”}\\)"
+                },
+                {
+                  "explain": "The passage contrasts Agnes’s unseen identity with the visible lamp. Ships used the light to find the rocks safely, but did not know who operated it.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “not at all, only by her light.” This is the answer to question 2.",
+                  "work": "\\(\\boxed{\\text{A}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "2",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r3",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Agnes polishes the brass fittings each morning",
+              "options": [
+                "because the mainland orders her to.",
+                "to keep her hands warm.",
+                "out of habit rather than need.",
+                "because the lamp will not work otherwise."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Notice that the lamp is automatic; then find the stated reason she still polishes it.",
+              "keyPoints": [
+                {
+                  "text": "Agnes polishes the brass fittings each morning",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “out of habit rather than need”}\\)"
+                },
+                {
+                  "explain": "The passage says the lamp had become automatic, so polishing was no longer needed for the lamp to work. Agnes continued because the routine was familiar.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “out of habit rather than need.” This is the answer to question 3.",
+                  "work": "\\(\\boxed{\\text{C}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "3",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r4",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The letter from the mainland tells Agnes that",
+              "options": [
+                "she has been given a reward.",
+                "the lighthouse will be closed.",
+                "she must work longer hours.",
+                "a machine will replace her."
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find what the mainland says will do the lighthouse work now.",
+              "keyPoints": [
+                {
+                  "text": "The letter from the mainland tells Agnes that",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “a machine would do the work now, and do it more cheaply”}\\)"
+                },
+                {
+                  "explain": "The mainland says her services are no longer required because a machine can do the work more cheaply. It does not say the lighthouse itself will close.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “a machine will replace her.” This is the answer to question 4.",
+                  "work": "\\(\\boxed{\\text{D}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "4",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r5",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "At the end of the passage, Agnes feels alone for the first time because she",
+              "options": [
+                "is afraid of the coming storm.",
+                "has quarrelled with the mainland.",
+                "has lost the role that gave her purpose.",
+                "can no longer climb the stairs."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Connect the machine replacing Agnes with her feeling at the end.",
+              "keyPoints": [
+                {
+                  "text": "At the end of the passage, Agnes feels alone for the first time because she",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “for the first time in thirty-one years, entirely alone”}\\)"
+                },
+                {
+                  "explain": "For many years, Agnes had a nightly responsibility. Now a machine has made her work unnecessary, and she watches the light without having that role.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “has lost the role that gave her purpose.” This is the answer to question 5.",
+                  "work": "\\(\\boxed{\\text{C}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "5",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ],
+          "hint": "Read the lighthouse passage and use the exact sentence that relates to each question. Notice the contrast between Agnes’s long routine and the machine replacing her."
+        },
+        {
+          "id": "sch-acer-2026b-r-q6-10",
+          "type": "multipart",
+          "stem": "Below are two poems about a tree. Read them both carefully before answering.\n\nThe Old Oak\n\nIt does not hurry, does not fret,\nIt has not moved, and will not yet;\nIt drank the rain a hundred springs\nAnd learned the patience that this brings.\nThe wind may shout, the lightning fall,\nIt bends a little, that is all.\n\nThe Young Sapling\n\nSo thin I am the breeze can win,\nAnd lay me flat, and lift me up again;\nI have no rings, I have no scars,\nI have not yet looked long upon the stars.\nBut I am reaching, every day,\nAnd one day I shall stand the storm's own way.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Reading and Viewing",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-r6",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the first poem, the oak survives storms by",
+              "options": [
+                "calling for help.",
+                "running away from them.",
+                "growing new leaves.",
+                "bending a little and standing firm."
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Use the last two lines of “The Old Oak” to see what it does in a storm.",
+              "keyPoints": [
+                {
+                  "text": "In the first poem, the oak survives storms by",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “It bends a little, that is all.”}\\)"
+                },
+                {
+                  "explain": "The poem says the oak bends a little when the wind and lightning come. It does not run away or ask for help.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “bending a little and standing firm.” This is the answer to question 6.",
+                  "work": "\\(\\boxed{\\text{D}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "6",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r7",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The phrase 'a hundred springs' suggests that the oak is",
+              "options": [
+                "about to die.",
+                "very old.",
+                "newly planted.",
+                "very young."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Think about how many years are represented by a hundred springs.",
+              "keyPoints": [
+                {
+                  "text": "The phrase 'a hundred springs' suggests that the oak is",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “It drank the rain a hundred springs”}\\)"
+                },
+                {
+                  "explain": "A spring is a season. Experiencing a hundred springs means the oak has lived through many years, so it is very old.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “very old.” This is the answer to question 7.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "7",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r8",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The young sapling is described as",
+              "options": [
+                "thin and easily blown over.",
+                "strong and unbending.",
+                "old and scarred.",
+                "taller than the oak."
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the line where the sapling describes what a breeze can do to it.",
+              "keyPoints": [
+                {
+                  "text": "The young sapling is described as",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “So thin I am the breeze can win”}\\)"
+                },
+                {
+                  "explain": "The sapling says even a breeze can lay it flat. This tells us it is thin and not yet strong.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “thin and easily blown over.” This is the answer to question 8.",
+                  "work": "\\(\\boxed{\\text{A}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "8",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r9",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When the sapling says 'I am reaching, every day', it shows that it is",
+              "options": [
+                "jealous of the oak.",
+                "frightened of the wind.",
+                "growing and full of hope.",
+                "giving up."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Read the following line too; it tells you what the sapling hopes to become.",
+              "keyPoints": [
+                {
+                  "text": "When the sapling says 'I am reaching, every day', it shows that it is",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “I am reaching, every day”}\\)"
+                },
+                {
+                  "explain": "“Reaching” each day describes continuing growth. The next line says it hopes one day to stand against storms.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “growing and full of hope.” This is the answer to question 9.",
+                  "work": "\\(\\boxed{\\text{C}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "9",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r10",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "One difference between the two poems is that the oak is",
+              "options": [
+                "already strong, while the sapling is still growing toward strength.",
+                "afraid, while the sapling is calm.",
+                "younger than the sapling.",
+                "weaker than the sapling."
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Compare what the oak can already do with what the sapling hopes to do later.",
+              "keyPoints": [
+                {
+                  "text": "One difference between the two poems is that the oak is",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “And one day I shall stand the storm's own way.”}\\)"
+                },
+                {
+                  "explain": "The oak already bends and remains standing through storms. The sapling says it is thin now but hopes to become strong one day.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “already strong, while the sapling is still growing toward strength.” This is the answer to question 10.",
+                  "work": "\\(\\boxed{\\text{A}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "10",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ],
+          "hint": "Keep the two speakers separate. The oak describes its long experience; the sapling describes its present weakness and future hope."
+        },
+        {
+          "id": "sch-acer-2026b-r-q11-17",
+          "type": "multipart",
+          "stem": "QUESTIONS 11 – 17\n\nThe axolotl is one of the strangest animals in the world. Although it is a kind of salamander, it never grows up in the way other salamanders do. Most salamanders begin life in the water with feathery gills, then change as they mature, losing their gills and crawling onto land. The axolotl never makes this change. It keeps its feathery gills, which fan out like a pink crown around its head, and spends its whole life in the water.\n\nAxolotls are found naturally in only one place on Earth: a system of lakes and canals near Mexico City. There, the water is cool and rich in the small creatures they eat. They have a remarkable ability that has made them famous among scientists. If an axolotl loses a leg, it can grow a perfect new one, complete with bones, muscles and nerves. It can even regrow parts of its heart and brain. No mammal can do anything close to this.\n\nSadly, in the wild the axolotl is now critically endangered. The lakes where it lives have been drained and polluted as the city around them has grown, and other fish, brought in by people, now eat the young axolotls. Yet the animal is far from extinct, because so many are kept in laboratories and aquariums around the world, where scientists study its astonishing powers of repair.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Reading and Viewing",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-r11",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Unlike most salamanders, the axolotl",
+              "options": [
+                "changes colour as it grows.",
+                "has no gills at all.",
+                "lives entirely on land.",
+                "never loses its gills or leaves the water."
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Compare the sentence about most salamanders with the sentence that begins “The axolotl never…”.",
+              "keyPoints": [
+                {
+                  "text": "Unlike most salamanders, the axolotl",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “It keeps its feathery gills”}\\)"
+                },
+                {
+                  "explain": "The passage compares most salamanders, which lose their gills and move onto land, with the axolotl, which keeps its gills and stays in water.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “never loses its gills or leaves the water.” This is the answer to question 11.",
+                  "work": "\\(\\boxed{\\text{D}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "11",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r12",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The 'pink crown' around the axolotl's head is actually its",
+              "options": [
+                "front legs.",
+                "feathery gills.",
+                "ears.",
+                "crest of bone."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the noun immediately before the phrase “which fan out like a pink crown”.",
+              "keyPoints": [
+                {
+                  "text": "The 'pink crown' around the axolotl's head is actually its",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “its feathery gills, which fan out like a pink crown around its head”}\\)"
+                },
+                {
+                  "explain": "The “pink crown” is a comparison for the gills that fan out around the axolotl’s head.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “feathery gills.” This is the answer to question 12.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "12",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r13",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the wild, axolotls are found naturally",
+              "options": [
+                "in laboratories worldwide.",
+                "across North America.",
+                "in only one place on Earth.",
+                "all over Mexico."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Look for the words “found naturally” in the second paragraph.",
+              "keyPoints": [
+                {
+                  "text": "In the wild, axolotls are found naturally",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “found naturally in only one place on Earth”}\\)"
+                },
+                {
+                  "explain": "The passage says their natural home is one system of lakes and canals near Mexico City. Laboratories and aquariums are places where people keep them, not their natural range.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “in only one place on Earth.” This is the answer to question 13.",
+                  "work": "\\(\\boxed{\\text{C}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "13",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r14",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The ability that has made axolotls famous among scientists is that they can",
+              "options": [
+                "breathe both air and water.",
+                "change into other animals.",
+                "live for hundreds of years.",
+                "grow back lost body parts perfectly."
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the example that begins “If an axolotl loses a leg”.",
+              "keyPoints": [
+                {
+                  "text": "The ability that has made axolotls famous among scientists is that they can",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “it can grow a perfect new one, complete with bones, muscles and nerves”}\\)"
+                },
+                {
+                  "explain": "The example is a lost leg growing back with its parts restored. The passage also mentions the heart and brain.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “grow back lost body parts perfectly.” This is the answer to question 14.",
+                  "work": "\\(\\boxed{\\text{D}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "14",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r15",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "According to the passage, the wild axolotl is now",
+              "options": [
+                "completely extinct.",
+                "critically endangered.",
+                "spreading to new lakes.",
+                "increasing in number."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the sentence beginning “Sadly, in the wild”.",
+              "keyPoints": [
+                {
+                  "text": "According to the passage, the wild axolotl is now",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “in the wild the axolotl is now critically endangered”}\\)"
+                },
+                {
+                  "explain": "The word “critically” describes the serious level of danger. The next sentence gives reasons for the decline.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “critically endangered.” This is the answer to question 15.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "15",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r16",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "One reason the wild axolotl is in danger is that",
+              "options": [
+                "other fish brought in by people eat the young.",
+                "it cannot find a mate.",
+                "the water has become too cold.",
+                "it has stopped regrowing its legs."
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the second threat listed in the final paragraph.",
+              "keyPoints": [
+                {
+                  "text": "One reason the wild axolotl is in danger is that",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “other fish, brought in by people, now eat the young axolotls”}\\)"
+                },
+                {
+                  "explain": "The passage gives two habitat threats: drained or polluted lakes and introduced fish eating young axolotls.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “other fish brought in by people eat the young.” This is the answer to question 16.",
+                  "work": "\\(\\boxed{\\text{A}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "16",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r17",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The passage says the axolotl is far from extinct mainly because",
+              "options": [
+                "it can live on land if it must.",
+                "the introduced fish have been removed.",
+                "its lakes are being cleaned.",
+                "many are kept in laboratories and aquariums."
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Look immediately after the words “far from extinct”.",
+              "keyPoints": [
+                {
+                  "text": "The passage says the axolotl is far from extinct mainly because",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “so many are kept in laboratories and aquariums around the world”}\\)"
+                },
+                {
+                  "explain": "The passage directly links its not being extinct to the many axolotls kept in laboratories and aquariums.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “many are kept in laboratories and aquariums.” This is the answer to question 17.",
+                  "work": "\\(\\boxed{\\text{D}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "17",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ],
+          "hint": "Use the paragraph that contains the clue: features are in paragraph one, habitat and regrowth in paragraph two, and threats or protection in paragraph three."
+        },
+        {
+          "id": "sch-acer-2026b-r-q18-23",
+          "type": "multipart",
+          "stem": "The following is part of an interview with Sam Whitlock, who designs roller coasters. Because it is a conversation, the speakers do not always use complete sentences.\n\nInterviewer: Sam, when most people think of a roller coaster, they think about how scary it is. But you say the scariest ones aren't actually the most dangerous.\n\nSam Whitlock: That's right, and it surprises people. Fear and danger are two completely different things. A good coaster is designed to feel terrifying while being one of the safest things you'll do all week, safer than the drive to the park. The fear is the product. The danger is the enemy.\n\nInterviewer: So how do you create fear without danger?\n\nSam Whitlock: Mostly it's about what you can and can't see. A drop feels far worse when you can't see the bottom, even if it's shorter than one you can see. We hide the track, we use tunnels, we tip you over the edge slowly so your brain has time to panic. None of that adds risk. It just adds the feeling of risk.\n\nInterviewer: Doesn't it worry you, frightening people for a living?\n\nSam Whitlock: Not at all, because they've chosen it. There's a strange pleasure in being scared when, deep down, you know you're safe. That's the whole trick. Take away the safety and it stops being fun and starts being a real emergency. My entire job is to keep those two things apart.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Reading and Viewing",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-r18",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sam says that the scariest roller coasters are",
+              "options": [
+                "not actually the most dangerous.",
+                "the shortest ones.",
+                "always the most dangerous.",
+                "the slowest ones."
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Use Sam’s first answer to the interviewer.",
+              "keyPoints": [
+                {
+                  "text": "Sam says that the scariest roller coasters are",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “the scariest ones aren't actually the most dangerous”}\\)"
+                },
+                {
+                  "explain": "Sam’s first reply agrees that fear and danger are different. A ride can feel scary while still being designed to be safe.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “not actually the most dangerous.” This is the answer to question 18.",
+                  "work": "\\(\\boxed{\\text{A}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "18",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r19",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "According to Sam, fear and danger are",
+              "options": [
+                "both equally important to avoid.",
+                "two completely different things.",
+                "impossible to tell apart.",
+                "exactly the same thing."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find Sam’s sentence that names the relationship between fear and danger.",
+              "keyPoints": [
+                {
+                  "text": "According to Sam, fear and danger are",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “Fear and danger are two completely different things”}\\)"
+                },
+                {
+                  "explain": "Sam states this distinction directly, then explains that fear is the product and danger is the enemy.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “two completely different things.” This is the answer to question 19.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "19",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r20",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sam says a drop feels far worse when you",
+              "options": [
+                "have been on it before.",
+                "go down it slowly.",
+                "cannot see the bottom.",
+                "can see the bottom clearly."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Look for the sentence that compares a visible bottom with an unseen one.",
+              "keyPoints": [
+                {
+                  "text": "Sam says a drop feels far worse when you",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “A drop feels far worse when you can't see the bottom”}\\)"
+                },
+                {
+                  "explain": "The key comparison is between seeing and not seeing the bottom. Sam says the unseen drop feels worse even if it is shorter.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “cannot see the bottom.” This is the answer to question 20.",
+                  "work": "\\(\\boxed{\\text{C}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "20",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r21",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The tunnels and hidden track are used to",
+              "options": [
+                "add the feeling of risk without real risk.",
+                "make the coaster cheaper to build.",
+                "slow the coaster down for safety.",
+                "make the ride genuinely more dangerous."
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find what Sam says the hidden track changes and what it does not change.",
+              "keyPoints": [
+                {
+                  "text": "The tunnels and hidden track are used to",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “None of that adds risk. It just adds the feeling of risk.”}\\)"
+                },
+                {
+                  "explain": "Hiding the track changes what riders feel, not the actual safety. Sam explicitly says these tricks do not add risk.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “add the feeling of risk without real risk.” This is the answer to question 21.",
+                  "work": "\\(\\boxed{\\text{A}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "21",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r22",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sam is not worried about frightening people because",
+              "options": [
+                "he never meets the riders.",
+                "no one is ever really frightened.",
+                "they have chosen to be scared.",
+                "the rides are actually dangerous."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Use his reply to “Doesn’t it worry you…?”",
+              "keyPoints": [
+                {
+                  "text": "Sam is not worried about frightening people because",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “because they've chosen it”}\\)"
+                },
+                {
+                  "explain": "Sam accepts the fear because riders choose to take the ride and know they are safe underneath the feeling.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “they have chosen to be scared.” This is the answer to question 22.",
+                  "work": "\\(\\boxed{\\text{C}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "22",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r23",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When Sam says his job is 'to keep those two things apart', he means keeping apart",
+              "options": [
+                "the riders and the staff.",
+                "fear and safety, so the ride stays fun and not a real emergency.",
+                "the track and the tunnels.",
+                "children and adults on the ride."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Read the sentence immediately before “those two things” to identify what it refers to.",
+              "keyPoints": [
+                {
+                  "text": "When Sam says his job is 'to keep those two things apart', he means keeping apart",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “Take away the safety and it stops being fun and starts being a real emergency. My entire job is to keep those two things apart.”}\\)"
+                },
+                {
+                  "explain": "“Those two things” refers to the fear and the real danger discussed throughout the interview. His job is to create the feeling of fear while keeping riders safe.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “fear and safety, so the ride stays fun and not a real emergency.” This is the answer to question 23.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "23",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ],
+          "hint": "Follow the interviewer’s question and Sam’s reply. Watch for his repeated contrast between how a ride feels and whether it is safe."
+        },
+        {
+          "id": "sch-acer-2026b-r-q24-25",
+          "type": "multipart",
+          "stem": "QUESTIONS 24 AND 25\n\nWe are told, again and again, that we must follow our passion, that somewhere inside each of us lies a single true calling waiting to be discovered. It is a comforting idea, and almost entirely wrong. Most people who love their work did not begin with a burning passion for it; they grew to love it slowly, as they became good at it. Skill comes first, and passion follows. The dancer was not born loving ballet; she loved it after years of practice made her movements feel like flight. So if you are waiting to feel passionate before you begin, you have the order backwards. Start, work, improve, and the passion will come to meet you.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Reading and Viewing",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-r24",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The writer believes the idea that everyone has a single true calling is",
+              "options": [
+                "impossible to judge.",
+                "completely correct.",
+                "true only for dancers.",
+                "almost entirely wrong."
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the writer’s opinion in the second sentence.",
+              "keyPoints": [
+                {
+                  "text": "The writer believes the idea that everyone has a single true calling is",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “almost entirely wrong”}\\)"
+                },
+                {
+                  "explain": "The writer directly says the comforting idea of one hidden calling is “almost entirely wrong”.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “almost entirely wrong.” This is the answer to question 24.",
+                  "work": "\\(\\boxed{\\text{D}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "24",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-r25",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "According to the writer, for most people passion",
+              "options": [
+                "must come before any work begins.",
+                "follows after skill is developed.",
+                "never appears at all.",
+                "cannot be learned."
+              ],
+              "answer": 1,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Look for the short sentence that states the order of skill and passion.",
+              "keyPoints": [
+                {
+                  "text": "According to the writer, for most people passion",
+                  "note": "Use this exact clue in the passage to decide what the question is asking."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "First find the sentence in the shared passage that gives this information.",
+                  "work": "\\(\\text{Passage clue: “Skill comes first, and passion follows.”}\\)"
+                },
+                {
+                  "explain": "The writer gives the order: people practise and become skilled first, then grow to love the work.",
+                  "work": "Compare the clue with each option. Cross out choices that add information the passage does not say or contradict the clue."
+                },
+                {
+                  "explain": "The passage supports “follows after skill is developed.” This is the answer to question 25.",
+                  "work": "\\(\\boxed{\\text{B}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "25",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ],
+          "hint": "The author states a main idea and then supports it with the example of the dancer. Use the sentence that directly answers each question."
         }
       ]
     },
@@ -3948,6 +5108,84 @@
               "work": "Structure: opinion → reasons → other view → conclusion."
             }
           ]
+        },
+        {
+          "id": "sch-acer-2026b-writing-task1",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "TASK 1: Narrative (Story)\n\nUse the prompt below to write a story.\n\nThe last train had already gone.\n\nPLANNING SPACE:",
+          "manual": true,
+          "answer": "Teacher-reviewed writing response.",
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Plan a beginning, a problem caused by missing the last train, and an ending. Keep the story focused on the prompt.",
+          "keyPoints": [
+            {
+              "text": "The last train had already gone.",
+              "note": "Make this event important to the story: explain who missed it and what happens next."
+            },
+            {
+              "text": "write a story",
+              "note": "Use a narrative with characters, events and an ending rather than an opinion paragraph."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the prompt and decide who has missed the train, where they are, and what they want to do next."
+            },
+            {
+              "explain": "Plan a simple sequence: the station after the train leaves, the difficulty this creates, and the choice the character makes."
+            },
+            {
+              "explain": "Write the story with clear paragraphs. Check that the ending resolves or deliberately develops the problem created by the missed train."
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Writing",
+            "sourceQuestion": "Task 1",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-writing-task2",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "TASK 2: Opinion\n\nWrite your opinion on the following topic. Do not write a story for this piece of writing. Your writing will be judged on what you have to say and how well you say it.\n\nSome schools want all students to wear a uniform.\nOther people think students should choose their own clothes.\n\nWhat do you think?\n\nPLANNING SPACE:",
+          "manual": true,
+          "answer": "Teacher-reviewed writing response.",
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose a clear position. Give two reasons and support each with an example; briefly acknowledge the other view before concluding.",
+          "keyPoints": [
+            {
+              "text": "Do not write a story",
+              "note": "Give reasons for your view instead of inventing a sequence of events."
+            },
+            {
+              "text": "What do you think?",
+              "note": "State your own position clearly and support it with reasons."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose whether you support school uniforms, personal choice, or a balanced approach. Write your position in one clear sentence."
+            },
+            {
+              "explain": "Plan two reasons. For each reason, add an example that explains how uniforms or clothing choice affects students."
+            },
+            {
+              "explain": "Organise the response: opening opinion, reason paragraphs, and a short conclusion. Check that each paragraph supports your view and that you have not turned it into a story."
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Writing",
+            "sourceQuestion": "Task 2",
+            "sourcePage": "not visible in supplied screenshots"
+          }
         }
       ]
     },
@@ -7377,6 +8615,1104 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 347\" width=\"100%\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"30\" y=\"25\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"58.5\" y=\"63\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">1</text><rect x=\"30\" y=\"85\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"58.5\" y=\"123\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">2</text><rect x=\"90\" y=\"25\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"118.5\" y=\"63\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">3</text><rect x=\"150\" y=\"25\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"178.5\" y=\"63\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">4</text><rect x=\"90\" y=\"85\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"118.5\" y=\"123\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">5</text><rect x=\"30\" y=\"145\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"58.5\" y=\"183\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">6</text><rect x=\"30\" y=\"205\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"58.5\" y=\"243\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">7</text><rect x=\"90\" y=\"145\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"118.5\" y=\"183\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">8</text><rect x=\"150\" y=\"85\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"178.5\" y=\"123\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">9</text><rect x=\"210\" y=\"25\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"238.5\" y=\"63\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">10</text><rect x=\"270\" y=\"25\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"298.5\" y=\"63\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">11</text><rect x=\"210\" y=\"85\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"238.5\" y=\"123\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">X</text><rect x=\"150\" y=\"145\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"178.5\" y=\"183\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">13</text><rect x=\"90\" y=\"205\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"118.5\" y=\"243\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">14</text><rect x=\"30\" y=\"265\" width=\"57\" height=\"57\" fill=\"#ddd\" stroke=\"#555\" stroke-width=\"1.5\"/><text x=\"58.5\" y=\"303\" text-anchor=\"middle\" font-family=\"Georgia\" font-size=\"19\">15</text></svg>"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A pizza is cut into four equal slices. Two slices have been eaten (shaded). What fraction of the pizza has been eaten?",
+          "options": [
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count the total equal pieces first, then count how many shaded pieces show the amount eaten.",
+          "keyPoints": [
+            {
+              "text": "Two slices have been eaten (shaded)",
+              "note": "The shaded pieces are the eaten pieces; compare their count with the total number of equal pieces."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The diagram has 4 equal square pieces in total. The two shaded top pieces are the ones eaten.",
+              "work": "\\(\\text{shaded}=2,\\quad\\text{total}=4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 180 150\"><rect x=\"28\" y=\"18\" width=\"112\" height=\"112\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"2\"/><rect x=\"28\" y=\"18\" width=\"56\" height=\"56\" fill=\"#9ca3af\"/><rect x=\"84\" y=\"18\" width=\"56\" height=\"56\" fill=\"#9ca3af\"/><rect x=\"31\" y=\"21\" width=\"50\" height=\"50\" fill=\"#f59e0b\" opacity=\".35\"/><rect x=\"87\" y=\"21\" width=\"50\" height=\"50\" fill=\"#f59e0b\" opacity=\".35\"/><path d=\"M84 18V130M28 74H140\" stroke=\"#111827\" stroke-width=\"2\"/></svg>"
+              }
+            },
+            {
+              "explain": "A fraction is shaded pieces over all equal pieces. Write 2 over 4, then simplify by dividing top and bottom by 2.",
+              "work": "\\(\\frac{2}{4}=\\frac{2\\div2}{4\\div2}=\\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Half of the equal pieces are shaded, so half of the pizza has been eaten.",
+              "work": "\\(\\boxed{\\frac{1}{2}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "1",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 180 150\"><rect x=\"28\" y=\"18\" width=\"112\" height=\"112\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"2\"/><rect x=\"28\" y=\"18\" width=\"56\" height=\"56\" fill=\"#9ca3af\"/><rect x=\"84\" y=\"18\" width=\"56\" height=\"56\" fill=\"#9ca3af\"/><path d=\"M84 18V130M28 74H140\" stroke=\"#111827\" stroke-width=\"2\"/></svg>"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the value of 7 × 8 − 6 × 5?",
+          "options": [
+            "56",
+            "30",
+            "50",
+            "26"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Do both multiplications before subtracting; multiplication comes before subtraction.",
+          "keyPoints": [
+            {
+              "text": "7 × 8 − 6 × 5",
+              "note": "Multiply each pair before carrying out the subtraction."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "There are two multiplications. Work them out first.",
+              "work": "\\(7\\times8=56,\\qquad6\\times5=30\\)"
+            },
+            {
+              "explain": "Now subtract the second product from the first.",
+              "work": "\\(56-30=26\\)"
+            },
+            {
+              "explain": "The value of the expression is 26.",
+              "work": "\\(\\boxed{26}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "2",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A recipe for 6 people needs 9 eggs. How many eggs are needed for 10 people?",
+          "options": [
+            "13",
+            "12",
+            "15",
+            "18"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the number of eggs for one person, then multiply by 10.",
+          "keyPoints": [
+            {
+              "text": "6 people needs 9 eggs",
+              "note": "Use the same eggs-per-person rate for 10 people."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The recipe uses 9 eggs for 6 people. First find the amount for one person.",
+              "work": "\\(9\\div6=1.5\\text{ eggs per person}\\)"
+            },
+            {
+              "explain": "For 10 people, multiply this amount by 10.",
+              "work": "\\(1.5\\times10=15\\text{ eggs}\\)"
+            },
+            {
+              "explain": "The scaled recipe needs 15 eggs.",
+              "work": "\\(\\boxed{15}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "3",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the missing number? 1, 2, 4, 7, 11, ?",
+          "options": [
+            "16",
+            "18",
+            "14",
+            "15"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare each term with the one before it. The amount added changes by one each time.",
+          "keyPoints": [
+            {
+              "text": "1, 2, 4, 7, 11, ?",
+              "note": "Look at the differences between neighbouring numbers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the changes: 2−1=1, 4−2=2, 7−4=3, and 11−7=4.",
+              "work": "\\( +1,\\ +2,\\ +3,\\ +4\\)"
+            },
+            {
+              "explain": "The increases go up by 1 each time, so the next increase is 5.",
+              "work": "\\(11+5=16\\)"
+            },
+            {
+              "explain": "The missing number is 16.",
+              "work": "\\(\\boxed{16}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "4",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq5-6",
+          "type": "multipart",
+          "stem": "Information for Questions 5 and 6\n\nThe map grid shows the homes of four friends.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-mq5",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Whose home is directly below K?",
+              "options": [
+                "L",
+                "N",
+                "no one",
+                "M"
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find K in the grid, stay in its column, and look at the square immediately underneath.",
+              "keyPoints": [
+                {
+                  "text": "directly below K",
+                  "note": "Stay in the same column and move down one row."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "K is in column B, row 5. “Directly below” means keep column B and move to the next row down.",
+                  "work": "\\(K=(B,5)\\)"
+                },
+                {
+                  "explain": "The square below K is B4. None of the other people is in B4; M is farther down in B2.",
+                  "work": "\\(B4\\ne M(B2)\\)"
+                },
+                {
+                  "explain": "There is no one directly below K.",
+                  "work": "\\(\\boxed{\\text{no one}}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "5",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-mq6",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The distance from K to L is the same as the distance from",
+              "options": [
+                "K to N only.",
+                "L to N only.",
+                "M to N, K to M and L to N.",
+                "No other pair."
+              ],
+              "answer": 2,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Count the spaces for every possible pair. The source grid makes several pairs equal to K–L, so select the option that lists all of them.",
+              "keyPoints": [
+                {
+                  "text": "distance from K to L",
+                  "note": "Count the equal grid intervals between the labelled positions."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "K and L are both in row 5. From column B to column E is 3 grid spaces.",
+                  "work": "\\(KL=3\\text{ grid spaces}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 310\"><style>text{font:16px system-ui;fill:#1e293b}</style><rect x=\"91\" y=\"71\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><rect x=\"131\" y=\"71\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><rect x=\"171\" y=\"71\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><rect x=\"211\" y=\"71\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"250\" y1=\"30\" x2=\"250\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"290\" y1=\"30\" x2=\"290\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"30\" x2=\"290\" y2=\"30\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"70\" x2=\"290\" y2=\"70\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"110\" x2=\"290\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"150\" x2=\"290\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"230\" x2=\"290\" y2=\"230\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"270\" x2=\"290\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"70.0\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"110.0\" y=\"20\" text-anchor=\"middle\">B</text><text x=\"150.0\" y=\"20\" text-anchor=\"middle\">C</text><text x=\"190.0\" y=\"20\" text-anchor=\"middle\">D</text><text x=\"230.0\" y=\"20\" text-anchor=\"middle\">E</text><text x=\"270.0\" y=\"20\" text-anchor=\"middle\">F</text><text x=\"35\" y=\"255.0\" text-anchor=\"middle\">1</text><text x=\"35\" y=\"215.0\" text-anchor=\"middle\">2</text><text x=\"35\" y=\"175.0\" text-anchor=\"middle\">3</text><text x=\"35\" y=\"135.0\" text-anchor=\"middle\">4</text><text x=\"35\" y=\"95.0\" text-anchor=\"middle\">5</text><text x=\"35\" y=\"55.0\" text-anchor=\"middle\">6</text><text x=\"110.0\" y=\"95.0\" text-anchor=\"middle\" font-weight=\"700\">K</text><text x=\"230.0\" y=\"95.0\" text-anchor=\"middle\" font-weight=\"700\">L</text><text x=\"110.0\" y=\"215.0\" text-anchor=\"middle\" font-weight=\"700\">M</text><text x=\"230.0\" y=\"215.0\" text-anchor=\"middle\" font-weight=\"700\">N</text></svg>"
+                  }
+                },
+                {
+                  "explain": "M is in B2 and N is in E2. They are in the same row and are also 3 columns apart.",
+                  "work": "\\(MN=3\\text{ grid spaces}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 310\"><style>text{font:16px system-ui;fill:#1e293b}</style><rect x=\"91\" y=\"191\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><rect x=\"131\" y=\"191\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><rect x=\"171\" y=\"191\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><rect x=\"211\" y=\"191\" width=\"38\" height=\"38\" fill=\"#fde68a\" opacity=\".8\"/><line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"250\" y1=\"30\" x2=\"250\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"290\" y1=\"30\" x2=\"290\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"30\" x2=\"290\" y2=\"30\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"70\" x2=\"290\" y2=\"70\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"110\" x2=\"290\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"150\" x2=\"290\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"230\" x2=\"290\" y2=\"230\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"270\" x2=\"290\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"70.0\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"110.0\" y=\"20\" text-anchor=\"middle\">B</text><text x=\"150.0\" y=\"20\" text-anchor=\"middle\">C</text><text x=\"190.0\" y=\"20\" text-anchor=\"middle\">D</text><text x=\"230.0\" y=\"20\" text-anchor=\"middle\">E</text><text x=\"270.0\" y=\"20\" text-anchor=\"middle\">F</text><text x=\"35\" y=\"255.0\" text-anchor=\"middle\">1</text><text x=\"35\" y=\"215.0\" text-anchor=\"middle\">2</text><text x=\"35\" y=\"175.0\" text-anchor=\"middle\">3</text><text x=\"35\" y=\"135.0\" text-anchor=\"middle\">4</text><text x=\"35\" y=\"95.0\" text-anchor=\"middle\">5</text><text x=\"35\" y=\"55.0\" text-anchor=\"middle\">6</text><text x=\"110.0\" y=\"95.0\" text-anchor=\"middle\" font-weight=\"700\">K</text><text x=\"230.0\" y=\"95.0\" text-anchor=\"middle\" font-weight=\"700\">L</text><text x=\"110.0\" y=\"215.0\" text-anchor=\"middle\" font-weight=\"700\">M</text><text x=\"230.0\" y=\"215.0\" text-anchor=\"middle\" font-weight=\"700\">N</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The three other pairs each have the same 3-space distance as K–L: M–N, K–M and L–N. The diagonal pairs K–N and L–M are longer. Choose the option that lists all three matching pairs.",
+                  "work": "\\\\(KL=MN=LN=KM=3\\\\text{ grid spaces}\\\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Reading and Viewing",
+                "sourceQuestion": "6",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 310\"><style>text{font:16px system-ui;fill:#1e293b}</style><line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"30\" x2=\"90\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"30\" x2=\"170\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"250\" y1=\"30\" x2=\"250\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"290\" y1=\"30\" x2=\"290\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"30\" x2=\"290\" y2=\"30\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"70\" x2=\"290\" y2=\"70\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"110\" x2=\"290\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"150\" x2=\"290\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"230\" x2=\"290\" y2=\"230\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"270\" x2=\"290\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"70.0\" y=\"20\" text-anchor=\"middle\">A</text><text x=\"110.0\" y=\"20\" text-anchor=\"middle\">B</text><text x=\"150.0\" y=\"20\" text-anchor=\"middle\">C</text><text x=\"190.0\" y=\"20\" text-anchor=\"middle\">D</text><text x=\"230.0\" y=\"20\" text-anchor=\"middle\">E</text><text x=\"270.0\" y=\"20\" text-anchor=\"middle\">F</text><text x=\"35\" y=\"255.0\" text-anchor=\"middle\">1</text><text x=\"35\" y=\"215.0\" text-anchor=\"middle\">2</text><text x=\"35\" y=\"175.0\" text-anchor=\"middle\">3</text><text x=\"35\" y=\"135.0\" text-anchor=\"middle\">4</text><text x=\"35\" y=\"95.0\" text-anchor=\"middle\">5</text><text x=\"35\" y=\"55.0\" text-anchor=\"middle\">6</text><text x=\"110.0\" y=\"95.0\" text-anchor=\"middle\" font-weight=\"700\">K</text><text x=\"230.0\" y=\"95.0\" text-anchor=\"middle\" font-weight=\"700\">L</text><text x=\"110.0\" y=\"215.0\" text-anchor=\"middle\" font-weight=\"700\">M</text><text x=\"230.0\" y=\"215.0\" text-anchor=\"middle\" font-weight=\"700\">N</text></svg>"
+          },
+          "hint": "Use the labelled grid positions. Keep rows and columns straight when comparing locations."
+        },
+        {
+          "id": "sch-acer-2026b-mq7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Lena has these coins: 50c, 20c, 10c, 2c, 2c. Which total can she make exactly?",
+          "options": [
+            "45c",
+            "72c",
+            "65c",
+            "85c"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add combinations of the listed coins; each coin can be used only once.",
+          "keyPoints": [
+            {
+              "text": "50c, 20c, 10c, 2c, 2c",
+              "note": "Use only these five coins and do not reuse a coin."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the combination that can make 72c: use the 50c and 20c coins first.",
+              "work": "\\(50+20=70\\)"
+            },
+            {
+              "explain": "There are two 2c coins, so add one of them to reach 72c.",
+              "work": "\\(70+2=72\\text{ cents}\\)"
+            },
+            {
+              "explain": "These coins make 72c exactly.",
+              "work": "\\(\\boxed{72\\text{c}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "7",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A train leaves at 9:50 am and arrives at 11:35 am. How long is the journey?",
+          "options": [
+            "1 h 45 min",
+            "1 h 55 min",
+            "1 h 35 min",
+            "2 h 5 min"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count from 9:50 to 10:00, then to 11:00, then to 11:35.",
+          "keyPoints": [
+            {
+              "text": "leaves at 9:50 am and arrives at 11:35 am",
+              "note": "Find elapsed time, not the sum of the clock readings."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From 9:50 am to 10:00 am is 10 minutes.",
+              "work": "\\(9{:}50\\to10{:}00=10\\text{ min}\\)"
+            },
+            {
+              "explain": "From 10:00 am to 11:00 am is 1 hour, and from 11:00 am to 11:35 am is 35 minutes.",
+              "work": "\\(1\\text{ h}+35\\text{ min}+10\\text{ min}=1\\text{ h }45\\text{ min}\\)"
+            },
+            {
+              "explain": "The journey takes 1 hour 45 minutes.",
+              "work": "\\(\\boxed{1\\text{ h }45\\text{ min}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "8",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What fraction of the figure is shaded?",
+          "options": [
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count all equal squares and then count the shaded squares.",
+          "keyPoints": [
+            {
+              "text": "What fraction of the figure is shaded?",
+              "note": "The fraction is shaded equal parts divided by all equal parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The square is divided into 9 equal small squares: 3 columns and 3 rows.",
+              "work": "\\(3\\times3=9\\text{ equal squares}\\)"
+            },
+            {
+              "explain": "The whole top row is shaded, so 3 of the 9 squares are shaded.",
+              "work": "\\(\\frac{3}{9}=\\frac{3\\div3}{9\\div3}=\\frac{1}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 220 220\"><rect x=\"25\" y=\"20\" width=\"168\" height=\"168\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"2\"/><rect x=\"25\" y=\"20\" width=\"168\" height=\"56\" fill=\"#9ca3af\"/><rect x=\"28\" y=\"23\" width=\"162\" height=\"50\" fill=\"#f59e0b\" opacity=\".35\"/><path d=\"M81 20V188M137 20V188M25 76H193M25 132H193\" stroke=\"#111827\" stroke-width=\"2\"/></svg>"
+              }
+            },
+            {
+              "explain": "One of the three equal rows is shaded. The fraction is one third.",
+              "work": "\\(\\boxed{\\frac{1}{3}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "9",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 220 220\"><rect x=\"25\" y=\"20\" width=\"168\" height=\"168\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"2\"/><rect x=\"25\" y=\"20\" width=\"168\" height=\"56\" fill=\"#9ca3af\"/><path d=\"M81 20V188M137 20V188M25 76H193M25 132H193\" stroke=\"#111827\" stroke-width=\"2\"/></svg>"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the missing number in the pyramid? Each block is the sum of the two below it.",
+          "options": [
+            "18",
+            "26",
+            "23",
+            "20"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add the two blocks directly below the missing block.",
+          "keyPoints": [
+            {
+              "text": "Each block is the sum of the two below it",
+              "note": "Use addition for each block above the bottom row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The two blocks below the top are 12 and 8. Add them.",
+              "work": "\\(12+8=20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 220\"><rect x=\"160.0\" y=\"18\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"45\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">?</text><rect x=\"106.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">12</text><rect x=\"160.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">8</text><rect x=\"-2.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"25.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">7</text><rect x=\"52.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"79.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">5</text><rect x=\"106.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">3</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the row below: 7+5=12 and 5+3=8, matching the given middle row.",
+              "work": "\\(7+5=12,\\qquad5+3=8\\)"
+            },
+            {
+              "explain": "So the top block is 20.",
+              "work": "\\(\\boxed{20}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "10",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 220\"><rect x=\"160.0\" y=\"18\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"45\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">?</text><rect x=\"106.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">12</text><rect x=\"160.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">8</text><rect x=\"-2.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"25.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">7</text><rect x=\"52.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"79.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">5</text><rect x=\"106.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">3</text></svg>"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eight painters paint a fence in 9 hours. How long would 12 painters take, working at the same rate?",
+          "options": [
+            "8 hours",
+            "6 hours",
+            "7 hours",
+            "5 hours"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "More painters mean less time. Keep the total painter-hours the same.",
+          "keyPoints": [
+            {
+              "text": "Eight painters paint a fence in 9 hours",
+              "note": "For the same fence, multiply workers by hours to get total work."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The fence needs 8 painters × 9 hours of work.",
+              "work": "\\(8\\times9=72\\text{ painter-hours}\\)"
+            },
+            {
+              "explain": "Share 72 painter-hours among 12 painters.",
+              "work": "\\(72\\div12=6\\text{ hours}\\)"
+            },
+            {
+              "explain": "Twelve painters take 6 hours at the same rate.",
+              "work": "\\(\\boxed{6\\text{ hours}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "11",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq12-13",
+          "type": "multipart",
+          "stem": "Information for Questions 12 and 13\n\nPens cost 45c each.\nNotebooks cost 80c each.\nRubbers cost 25c each.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "group",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-2026b-mq12",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Sam buys 2 pens and 3 rubbers. How much does he spend?",
+              "options": [
+                "$1.65",
+                "$1.55",
+                "$1.75",
+                "$1.85"
+              ],
+              "answer": 0,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Calculate the cost of the pens and rubbers separately, then add.",
+              "keyPoints": [
+                {
+                  "text": "2 pens and 3 rubbers",
+                  "note": "Use the listed price for each item and multiply by the quantity."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Two pens cost 2 × 45 cents.",
+                  "work": "\\(2\\times45\\text{c}=90\\text{c}\\)"
+                },
+                {
+                  "explain": "Three rubbers cost 3 × 25 cents. Add both costs.",
+                  "work": "\\(3\\times25\\text{c}=75\\text{c};\\quad90\\text{c}+75\\text{c}=165\\text{c}\\)"
+                },
+                {
+                  "explain": "165 cents is 1 dollar and 65 cents.",
+                  "work": "\\(165\\text{c}=\\$1.65\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Mathematics",
+                "sourceQuestion": "12",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            },
+            {
+              "id": "sch-acer-2026b-mq13",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Nina has $3.00. She buys 1 notebook and 2 pens. How much change does she get?",
+              "options": [
+                "$1.20",
+                "$1.40",
+                "$1.10",
+                "$1.30"
+              ],
+              "answer": 3,
+              "timeLimit": 60,
+              "xp": 1,
+              "hint": "Find the total cost first, then subtract it from $3.00.",
+              "keyPoints": [
+                {
+                  "text": "1 notebook and 2 pens",
+                  "note": "Add the notebook price to twice the pen price."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "One notebook costs 80 cents and two pens cost 2 × 45 cents.",
+                  "work": "\\(80+2\\times45=80+90=170\\text{c}\\)"
+                },
+                {
+                  "explain": "Convert $3.00 to cents and subtract the cost.",
+                  "work": "\\(\\$3.00=300\\text{c};\\quad300-170=130\\text{c}\\)"
+                },
+                {
+                  "explain": "130 cents is $1.30 change.",
+                  "work": "\\(\\boxed{\\$1.30}\\)"
+                }
+              ],
+              "meta": {
+                "source": "ACER Scholarship Practice Test · user confirmed permission",
+                "test": "ACER screenshot set (2026-11-10)",
+                "section": "Mathematics",
+                "sourceQuestion": "13",
+                "sourcePage": "not visible in supplied screenshots"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sch-acer-2026b-mq14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the missing number? 100, 81, 64, 49, ?, 25",
+          "options": [
+            "30",
+            "36",
+            "42",
+            "38"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "These numbers are perfect squares. Write each as a square number.",
+          "keyPoints": [
+            {
+              "text": "100, 81, 64, 49, ?, 25",
+              "note": "Recognise the square numbers and continue the pattern."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the terms as squares: 100=10², 81=9², 64=8², 49=7².",
+              "work": "\\(10^2,\\ 9^2,\\ 8^2,\\ 7^2\\)"
+            },
+            {
+              "explain": "The square roots count down by one, so the next term is 6².",
+              "work": "\\(6^2=36\\)"
+            },
+            {
+              "explain": "The missing number is 36.",
+              "work": "\\(\\boxed{36}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "14",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a code, each letter is replaced by the letter two places earlier in the alphabet (so C becomes A, D becomes B). What does the code VGY stand for?",
+          "options": [
+            "TFX",
+            "SEW",
+            "TEW",
+            "TEA"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the stated two-letter shift to each letter in VGY, one letter at a time.",
+          "keyPoints": [
+            {
+              "text": "two places earlier in the alphabet",
+              "note": "Move each letter two places back, as the examples C→A and D→B show."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The rule moves each letter two places earlier. Apply it to V.",
+              "work": "\\(V\\to U\\to T\\)"
+            },
+            {
+              "explain": "Apply the same move to G and Y.",
+              "work": "\\(G\\to F\\to E,\\qquad Y\\to X\\to W\\)"
+            },
+            {
+              "explain": "The letters become T, E, W in order.",
+              "work": "\\(\\boxed{\\text{TEW}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "15",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Three numbers add up to 80. The second is three times the first. The third is four times the first. What is the smallest number?",
+          "options": [
+            "10",
+            "12",
+            "8",
+            "15"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use equal parts: the three numbers are 1 part, 3 parts, and 4 parts.",
+          "keyPoints": [
+            {
+              "text": "The second is three times the first",
+              "note": "Represent the first number as 1 equal part."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "If the first number is 1 part, the second is 3 parts and the third is 4 parts. Together there are 8 parts.",
+              "work": "\\(1+3+4=8\\text{ parts}\\)"
+            },
+            {
+              "explain": "Divide the total 80 by 8 to find one part.",
+              "work": "\\(80\\div8=10\\)"
+            },
+            {
+              "explain": "The smallest number is the first number, one part: 10.",
+              "work": "\\(\\boxed{10}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "16",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The perimeter of a regular hexagon is 48 cm. How long is each side?",
+          "options": [
+            "6 cm",
+            "8 cm",
+            "7 cm",
+            "9 cm"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "A regular hexagon has six equal sides. Divide its perimeter by 6.",
+          "keyPoints": [
+            {
+              "text": "regular hexagon",
+              "note": "Regular means all six sides have equal length."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A hexagon has 6 sides, and regular means those sides are equal.",
+              "work": "\\(\\text{perimeter}=6\\times\\text{side length}\\)"
+            },
+            {
+              "explain": "Divide 48 cm equally among the 6 sides.",
+              "work": "\\(48\\div6=8\\text{ cm}\\)"
+            },
+            {
+              "explain": "Each side is 8 cm.",
+              "work": "\\(\\boxed{8\\text{ cm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "17",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A box holds 6 red, 5 green and 4 blue counters. Without looking, what is the smallest number you must take out to be sure of getting two blue counters?",
+          "options": [
+            "14",
+            "11",
+            "13",
+            "12"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine the worst case: you might pick every non-blue counter before getting any blue ones.",
+          "keyPoints": [
+            {
+              "text": "be sure of getting two blue counters",
+              "note": "Count the most non-blue counters that could be drawn first, then add two blue counters."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "To delay getting blue counters as long as possible, first take all 6 red and all 5 green counters.",
+              "work": "\\(6+5=11\\text{ non-blue counters}\\)"
+            },
+            {
+              "explain": "After those 11, take 2 more counters. Both must be blue because only blue counters remain.",
+              "work": "\\(11+2=13\\)"
+            },
+            {
+              "explain": "So 13 counters guarantee two blue counters.",
+              "work": "\\(\\boxed{13}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "18",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the missing time so the gaps are equal? 3:05, ?, 3:35, 3:50",
+          "options": [
+            "3:25",
+            "3:30",
+            "3:15",
+            "3:20"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "The gap from 3:35 to 3:50 is 15 minutes. Use the same gap before 3:35.",
+          "keyPoints": [
+            {
+              "text": "the gaps are equal",
+              "note": "Use the same time increase between each neighbouring time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From 3:35 to 3:50 is 15 minutes.",
+              "work": "\\(3{:}50-3{:}35=15\\text{ min}\\)"
+            },
+            {
+              "explain": "The missing time must be 15 minutes before 3:35.",
+              "work": "\\(3{:}35-15\\text{ min}=3{:}20\\)"
+            },
+            {
+              "explain": "The missing time is 3:20.",
+              "work": "\\(\\boxed{3{:}20}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "19",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Apples cost 40c and pears cost 65c. Omar has $4.00 and buys 3 pears. What is the greatest number of apples he can then buy?",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "3"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Subtract the cost of 3 pears from $4.00, then see how many 40-cent apples fit in the remainder.",
+          "keyPoints": [
+            {
+              "text": "buys 3 pears",
+              "note": "First find the money spent on pears before buying apples."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Three pears cost 3 × 65 cents.",
+              "work": "\\(3\\times65=195\\text{c}\\)"
+            },
+            {
+              "explain": "Omar has 400 cents. Subtract 195 cents, then divide by 40 cents per apple.",
+              "work": "\\(400-195=205\\text{c};\\quad205\\div40=5\\text{ remainder }5\\)"
+            },
+            {
+              "explain": "He can buy 5 whole apples. The remaining 5 cents is not enough for another.",
+              "work": "\\(\\boxed{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "20",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On planet Vex, 1 zad = 6 mons and 1 mon = 4 tibs. How many tibs equal 1 zad and 3 mons?",
+          "options": [
+            "60 tibs",
+            "84 tibs",
+            "27 tibs",
+            "36 tibs"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Convert the zad to mons, add the extra mons, then convert all mons to tibs.",
+          "keyPoints": [
+            {
+              "text": "1 zad = 6 mons and 1 mon = 4 tibs",
+              "note": "Use both conversion facts in order."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert 1 zad to 6 mons and add the extra 3 mons.",
+              "work": "\\(6+3=9\\text{ mons}\\)"
+            },
+            {
+              "explain": "Each mon is 4 tibs, so multiply 9 by 4.",
+              "work": "\\(9\\times4=36\\text{ tibs}\\)"
+            },
+            {
+              "explain": "The total is 36 tibs.",
+              "work": "\\(\\boxed{36\\text{ tibs}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "21",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 12 cm long and 4 cm wide. Another rectangle has the same area but is 8 cm wide. How long is the second rectangle?",
+          "options": [
+            "8 cm",
+            "4 cm",
+            "6 cm",
+            "12 cm"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the first rectangle’s area, then divide by the second rectangle’s width.",
+          "keyPoints": [
+            {
+              "text": "same area",
+              "note": "Keep the area fixed when finding the other rectangle’s length."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the first area: length multiplied by width.",
+              "work": "\\(12\\times4=48\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "The second rectangle also has area 48 cm². Divide by its 8 cm width to find the length.",
+              "work": "\\(48\\div8=6\\text{ cm}\\)"
+            },
+            {
+              "explain": "The second rectangle is 6 cm long.",
+              "work": "\\(\\boxed{6\\text{ cm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "22",
+            "sourcePage": "not visible in supplied screenshots"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the missing number in the pyramid? Each block is the product of the two below it.",
+          "options": [
+            "75",
+            "150",
+            "120",
+            "300"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the two middle-row numbers to find the top block.",
+          "keyPoints": [
+            {
+              "text": "Each block is the product of the two below it",
+              "note": "Product means multiply the two numbers underneath."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The row above the bottom is correct because 2×5=10 and 5×3=15.",
+              "work": "\\(2\\times5=10,\\qquad5\\times3=15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 220\"><rect x=\"160.0\" y=\"18\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"45\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">?</text><rect x=\"106.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">10</text><rect x=\"160.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">15</text><rect x=\"-2.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"25.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">2</text><rect x=\"52.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"79.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">5</text><rect x=\"106.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">3</text></svg>"
+              }
+            },
+            {
+              "explain": "The top block is the product of 10 and 15.",
+              "work": "\\(10\\times15=150\\)"
+            },
+            {
+              "explain": "The missing number is 150.",
+              "work": "\\(\\boxed{150}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "23",
+            "sourcePage": "not visible in supplied screenshots"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 220\"><rect x=\"160.0\" y=\"18\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"45\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">?</text><rect x=\"106.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">10</text><rect x=\"160.0\" y=\"66\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"187.0\" y=\"93\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">15</text><rect x=\"-2.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"25.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">2</text><rect x=\"52.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"79.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">5</text><rect x=\"106.0\" y=\"114\" width=\"54\" height=\"42\" fill=\"#fff\" stroke=\"#111827\" stroke-width=\"1.7\"/><text x=\"133.0\" y=\"141\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"17\" fill=\"#111827\">3</text></svg>"
+          }
+        },
+        {
+          "id": "sch-acer-2026b-mq24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Dots are arranged in triangles. Triangle 1 has 1 dot, Triangle 2 has 3 dots, Triangle 3 has 6 dots, Triangle 4 has 10 dots. How many dots are in Triangle 6?",
+          "options": [
+            "21",
+            "18",
+            "28",
+            "15"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Continue the pattern by adding one more dot than the previous increase.",
+          "keyPoints": [
+            {
+              "text": "Triangle 1 has 1 dot, Triangle 2 has 3 dots, Triangle 3 has 6 dots, Triangle 4 has 10 dots",
+              "note": "Compare totals to see how many dots are added for each new triangle row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The increases are 2, 3, and 4 dots: 1→3→6→10.",
+              "work": "\\(+2,\\quad+3,\\quad+4\\)"
+            },
+            {
+              "explain": "Triangle 5 adds 5 dots, and Triangle 6 adds 6 dots.",
+              "work": "\\(10+5=15,\\qquad15+6=21\\)"
+            },
+            {
+              "explain": "Triangle 6 has 21 dots.",
+              "work": "\\(\\boxed{21}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER Scholarship Practice Test · user confirmed permission",
+            "test": "ACER screenshot set (2026-11-10)",
+            "section": "Mathematics",
+            "sourceQuestion": "24",
+            "sourcePage": "not visible in supplied screenshots"
           }
         }
       ]
