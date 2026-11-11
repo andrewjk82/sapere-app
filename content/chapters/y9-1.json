@@ -79,10 +79,10 @@
         },
         {
           "id": "6wN2YidtSskRmD8qZ0uW",
-          "type": "short",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Expand: \\((3a+2b)(a-4b)\\)",
-          "answer": "3a^2 - 10ab - 8b^2",
+          "answer": 1,
           "solution": "\\(3a^2-10ab-8b^2\\)",
           "timeLimit": 60,
           "xp": 2,
@@ -97,13 +97,19 @@
               "work": "\\(=3a^2-12ab+2ab-8b^2\\)"
             },
             {
-              "explain": "Collect the like terms \\(-12ab\\) and \\(+2ab\\).",
+              "explain": "Collect the like terms \\(-12ab\\) and \\(+2ab\\). Take care with the signs.",
               "work": "\\(-12ab+2ab=-10ab\\)"
             },
             {
-              "explain": "Write the final expanded expression.",
+              "explain": "Write the final expanded expression. This matches option B.",
               "work": "\\(3a^2-10ab-8b^2\\)"
             }
+          ],
+          "options": [
+            "\\(3a^2-12ab-8b^2\\)",
+            "\\(3a^2-10ab-8b^2\\)",
+            "\\(3a^2-10ab+8b^2\\)",
+            "\\(3a^2-14ab-8b^2\\)"
           ]
         },
         {

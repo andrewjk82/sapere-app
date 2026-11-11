@@ -7466,33 +7466,37 @@
           "difficulty": "hard",
           "stem": "Solve: \\(\\frac{2x+1}{x-3} = \\frac{3x-2}{x+1}\\)",
           "options": [
-            "\\(x = 5\\)",
-            "\\(x = -5\\)",
-            "\\(x = 1\\)",
-            "\\(x = 7\\)"
+            "\\(x=7\\pm2\\sqrt{11}\\)",
+            "\\(x=7\\pm\\sqrt{11}\\)",
+            "\\(x=-7\\pm2\\sqrt{11}\\)",
+            "\\(x=14\\pm2\\sqrt{11}\\)"
           ],
           "answer": 0,
-          "hint": "Cross-multiply, expand both sides, and solve the resulting linear equation.",
+          "hint": "Cross-multiply, expand both sides, collect everything on one side, then solve the quadratic with the quadratic formula.",
           "steps": [
             {
-              "explain": "Cross-multiply.",
-              "work": "\\((2x+1)(x+1) = (3x-2)(x-3)\\)"
+              "explain": "The denominators \\(x-3\\) and \\(x+1\\) cannot be zero, so \\(x\\ne3\\) and \\(x\\ne-1\\). Cross-multiply.",
+              "work": "\\((2x+1)(x+1)=(3x-2)(x-3)\\)"
             },
             {
               "explain": "Expand the left side.",
-              "work": "\\(2x^2 + 3x + 1\\)"
+              "work": "\\((2x+1)(x+1)=2x^2+2x+x+1=2x^2+3x+1\\)"
             },
             {
               "explain": "Expand the right side.",
-              "work": "\\(3x^2 - 11x + 6\\)"
+              "work": "\\((3x-2)(x-3)=3x^2-9x-2x+6=3x^2-11x+6\\)"
             },
             {
-              "explain": "Equate and simplify.",
-              "work": "\\(2x^2 + 3x + 1 = 3x^2 - 11x + 6 \\Rightarrow x^2 - 14x + 5 = 0\\)"
+              "explain": "Set the two sides equal and move every term to the right-hand side.",
+              "work": "\\(2x^2+3x+1=3x^2-11x+6\\ \\Rightarrow\\ 0=x^2-14x+5\\)"
             },
             {
-              "explain": "For simple cases, test \\(x = 5\\): both sides give the same value.",
-              "work": "\\(x = 5\\)"
+              "explain": "This does not factorise, so use the quadratic formula with \\(a=1\\), \\(b=-14\\), \\(c=5\\).",
+              "work": "\\(x=\\dfrac{14\\pm\\sqrt{(-14)^2-4(1)(5)}}{2}=\\dfrac{14\\pm\\sqrt{176}}{2}\\)"
+            },
+            {
+              "explain": "Simplify the surd: \\(\\sqrt{176}=\\sqrt{16\\times11}=4\\sqrt{11}\\). Both solutions are different from \\(3\\) and \\(-1\\), so both are valid.",
+              "work": "\\(x=\\dfrac{14\\pm4\\sqrt{11}}{2}=7\\pm2\\sqrt{11}\\)"
             }
           ],
           "xp": 2,

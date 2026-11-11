@@ -2092,14 +2092,14 @@
           "id": "wghs-y9-2016-t3-alg-q6",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given \\(s=ut+\\frac12at^2\\), find \\(s\\) when \\(t=-2\\), \\(u=8\\) and \\(a=5\\).",
+          "stem": "Given \\(s=ut+\\dfrac12at^2\\), find \\(s\\) when \\(t=-2\\), \\(u=8\\) and \\(a=5\\).",
           "options": [
-            "\\(−6\\)",
+            "\\(-6\\)",
             "\\(26\\)",
-            "\\(−26\\)",
+            "\\(-26\\)",
             "\\(6\\)"
           ],
-          "answer": 3,
+          "answer": 0,
           "hint": "Substitute the three values, keeping the negative value of t in brackets.",
           "keyPoints": [
             {
@@ -2113,15 +2113,15 @@
           ],
           "steps": [
             {
-              "explain": "Substitute \\(t=-2\\), \\(u=8\\) and \\(a=5\\) into the formula.",
-              "work": "\\(s=8(-2)+\\frac12(5)(-2)^2\\)"
+              "explain": "Substitute \\(t=-2\\), \\(u=8\\) and \\(a=5\\) into the formula. Keep the negative value of \\(t\\) in brackets.",
+              "work": "\\(s=8(-2)+\\dfrac12(5)(-2)^2\\)"
             },
             {
-              "explain": "Evaluate the powers and products in order.",
-              "work": "\\(s=-16+\\frac12(5)(4)=-16+10\\)"
+              "explain": "Evaluate the power first: \\((-2)^2=4\\). Then multiply.",
+              "work": "\\(s=-16+\\dfrac12(5)(4)=-16+10\\)"
             },
             {
-              "explain": "Therefore \\(s=-6\\).",
+              "explain": "Add.",
               "work": "\\(s=-6\\)"
             }
           ],
