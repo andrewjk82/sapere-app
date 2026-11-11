@@ -4485,67 +4485,6 @@
           "solution": "Let \\(\\angle BAD=\\theta\\). Then \\(\\angle ABC=\\angle ADC=180^\\circ-\\theta\\) (co-interior angles, \\(AD\\parallel BC\\) and \\(AB\\parallel DC\\)).\n\\(\\angle ABE=\\angle ADF=\\theta\\) (angles on a straight line).\nSince \\(AB=AE\\) and \\(AD=AF\\): \\(\\angle AEB=\\theta\\), \\(\\angle BAE=180^\\circ-2\\theta\\), \\(\\angle AFD=\\theta\\), \\(\\angle DAF=180^\\circ-2\\theta\\) (base angles of isosceles triangles, angle sum).\n\\(\\angle DAE=\\theta+(180^\\circ-2\\theta)=180^\\circ-\\theta=\\angle FAB\\).\nIn \\(\\triangle ADE\\) and \\(\\triangle AFB\\): \\(AD=AF\\), \\(\\angle DAE=\\angle FAB\\), \\(AE=AB\\), so \\(\\triangle ADE\\equiv\\triangle AFB\\) (SAS) and therefore \\(DE=BF\\).\nMarking guide (4 marks): 1 angles of the parallelogram and the straight-line angles in terms of \\(\\theta\\); 1 base angles and apex angles of the two isosceles triangles; 1 \\(\\angle DAE=\\angle FAB=180^\\circ-\\theta\\); 1 SAS congruence with the vertices in matching order and the conclusion \\(DE=BF\\)."
         },
         {
-          "id": "y10-8e-q15a",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Analyze the properties of the triangle divided by similarity intervals.\na) Prove that \\(BC \\parallel MN\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
-            },
-            {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
-            },
-            {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
-            },
-            {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\text{Final answer}"
-            }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3
-        },
-        {
-          "id": "y10-8e-q15b",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Analyze the properties of the triangle divided by similarity intervals.\nb) If \\(BN\\) and \\(CM\\) intersect at \\(P\\), prove that \\(BP = 4PN\\).",
-          "figure": {
-            "svg": "fig:101390bdc9"
-          },
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
-            },
-            {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
-            },
-            {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
-            },
-            {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\text{Final answer}"
-            }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3
-        },
-        {
           "id": "y10-8e-q3",
           "type": "multipart",
           "difficulty": "medium",
