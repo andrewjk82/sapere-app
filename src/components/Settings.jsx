@@ -54,7 +54,7 @@ const Settings = () => {
   });
   const [uploading, setUploading] = useState(false);
   const [cloudVersion, setCloudVersion] = useState(null);
-  const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '', manualOpen: false });
+  const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '', zoomLink2: '', manualOpen: false });
   const [studySessionSaving, setStudySessionSaving] = useState(false);
   const [studySessionOpening, setStudySessionOpening] = useState(false);
   const [showFilmingGuidelinesPreview, setShowFilmingGuidelinesPreview] = useState(false);
@@ -100,7 +100,7 @@ const Settings = () => {
     getDoc(doc(db, 'system_config', 'onlineStudySession')).then((snap) => {
       if (snap.exists()) {
         const data = snap.data();
-        setStudySession({ enabled: !!data.enabled, zoomLink: data.zoomLink || '', manualOpen: !!data.manualOpen });
+        setStudySession({ enabled: !!data.enabled, zoomLink: data.zoomLink || '', zoomLink2: data.zoomLink2 || '', manualOpen: !!data.manualOpen });
       }
     }).catch(() => {});
   }, [isAdmin]);
@@ -112,6 +112,7 @@ const Settings = () => {
       await setDoc(doc(db, 'system_config', 'onlineStudySession'), {
         enabled: studySession.enabled,
         zoomLink: studySession.zoomLink.trim(),
+        zoomLink2: (studySession.zoomLink2 || '').trim(),
         updatedAt: new Date().toISOString(),
         updatedBy: user.email,
       }, { merge: true });
@@ -871,6 +872,13 @@ const Settings = () => {
                   placeholder="https://zoom.us/j/..."
                   value={studySession.zoomLink}
                   onChange={(e) => setStudySession((s) => ({ ...s, zoomLink: e.target.value }))}
+                  style={{ width: '100%', padding: '12px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '0.85rem', marginBottom: '12px', boxSizing: 'border-box' }}
+                />
+                <input
+                  type="url"
+                  placeholder="Second room (Zoom) — shown until 10:30 PM"
+                  value={studySession.zoomLink2}
+                  onChange={(e) => setStudySession((s) => ({ ...s, zoomLink2: e.target.value }))}
                   style={{ width: '100%', padding: '12px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '0.85rem', marginBottom: '12px', boxSizing: 'border-box' }}
                 />
                 <button

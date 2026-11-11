@@ -24,7 +24,7 @@ function sydneyTotalMinutes() {
 const OnlineStudySessionCard = () => {
   const [config, setConfig] = useState(null);
   const [nowMin, setNowMin] = useState(sydneyTotalMinutes);
-  const [showGuidelines, setShowGuidelines] = useState(false);
+  const [showGuidelines, setShowGuidelines] = useState(null);   // the link to open after the guidelines
 
   useEffect(() => {
     const unsub = onSnapshot(doc(db, 'system_config', 'onlineStudySession'), (snap) => {
@@ -41,12 +41,14 @@ const OnlineStudySessionCard = () => {
   const inWindow = nowMin >= START_MIN && nowMin < END_MIN;
   const isOpen = config?.manualOpen || (config?.enabled && inWindow);
   if (!isOpen || !config?.zoomLink) return null;
+  // The second (Zoom) room only runs until 10:30 PM, even when the main room is opened manually.
+  const zoomRoomOpen = Boolean(config?.zoomLink2) && nowMin < END_MIN && nowMin >= 6 * 60;
 
   return (
     <>
     <button
       type="button"
-      onClick={() => setShowGuidelines(true)}
+      onClick={() => setShowGuidelines(config.zoomLink)}
       style={{
         display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
         margin: '0 0 24px', maxWidth: '100%',
@@ -77,12 +79,38 @@ const OnlineStudySessionCard = () => {
       </div>
     </button>
 
+    {zoomRoomOpen && (
+      <button
+        type="button"
+        onClick={() => setShowGuidelines(config.zoomLink2)}
+        style={{
+          display: 'flex', alignItems: 'center', gap: '16px', width: '100%', maxWidth: '100%',
+          margin: '-12px 0 24px', padding: '16px 24px', borderRadius: '28px',
+          background: 'linear-gradient(110deg, #ffffff, #eef6ff)', color: '#1e1b4b', cursor: 'pointer',
+          border: '1px solid #dbe7f7', textAlign: 'left', boxShadow: '0 8px 24px rgba(37,99,235,0.08)',
+        }}
+      >
+        <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: '#e0edff', color: '#2563eb', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+          <Video size={22} />
+        </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#64748b', marginBottom: '3px' }}>
+            Zoom Study Room
+          </div>
+          <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#27224e' }}>
+            Tap to join on Zoom · open until 10:30 PM only
+          </div>
+        </div>
+      </button>
+    )}
+
     <FilmingGuidelinesModal
-      open={showGuidelines}
-      onCancel={() => setShowGuidelines(false)}
+      open={Boolean(showGuidelines)}
+      onCancel={() => setShowGuidelines(null)}
       onProceed={() => {
-        setShowGuidelines(false);
-        window.open(config.zoomLink, '_blank', 'noopener,noreferrer');
+        const link = showGuidelines;
+        setShowGuidelines(null);
+        window.open(link, '_blank', 'noopener,noreferrer');
       }}
     />
     </>
