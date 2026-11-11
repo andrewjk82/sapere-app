@@ -52,6 +52,8 @@ const PINCH_RESPONSE = 0.6;
 // reloaded the whole app (2026-11).
 const MAX_CANVAS_PIXELS = 7_000_000;
 
+let renderQueue = Promise.resolve();   // page rasterisation, one at a time (see PdfPage)
+
 // Device-pixel ratio for a page drawn `cssWidth` wide with height/width = `ratio`, within the pixel budget.
 const safeDpr = (cssWidth, ratio) => {
   const wanted = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / Math.max(1, cssWidth));
@@ -285,10 +287,24 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
     const size = `${inkW}x${inkH}`;
     const ids = new Set(penStrokes.map((st) => st.id));
     const removed = [...drawn.ids].some((id) => !ids.has(id));
+    // Full-resolution canvases only where they are needed. Every page of the PDF used to hold two of them
+    // (up to 28 MB each) for good, on or off screen, written on or not — the memory that made iPads stutter and
+    // reload. The ink canvas now exists for nearby pages that have writing, the live one for nearby pages while
+    // the pen is on; both are given back when the page scrolls away and redrawn (same resolution) when it returns.
+    const wantLive = near && hl.on && hl.mode === 'pen';
+    if (live) {
+      if (wantLive) { if (live.width !== inkW || live.height !== inkH) { live.width = inkW; live.height = inkH; } }
+      else if (live.width > 1) { live.width = 1; live.height = 1; }
+    }
+    if (!near || penStrokes.length === 0) {
+      if (ink.width > 1) { ink.width = 1; ink.height = 1; }
+      drawn.ids = new Set();
+      drawn.size = '';
+      return;
+    }
     const ctx = ink.getContext('2d');
     if (drawn.size !== size || removed) {
       if (ink.width !== inkW || ink.height !== inkH) { ink.width = inkW; ink.height = inkH; } else ctx.clearRect(0, 0, inkW, inkH);
-      if (live && (live.width !== inkW || live.height !== inkH)) { live.width = inkW; live.height = inkH; }
       drawn.ids = new Set();
       drawn.size = size;
     }
@@ -459,7 +475,15 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
     let cancelled = false;
     let task = null;
     (async () => {
+      // One page is rasterised at a time: several at once each held a second full-size buffer (memory spike)
+      // and fought over the main thread. Same pages, same resolution, just in turn.
+      const myTurn = renderQueue;
+      let release;
+      renderQueue = new Promise((resolve) => { release = resolve; });
+      const safety = window.setTimeout(release, 15000);   // a render that never settles must not block the rest
       try {
+        await myTurn;
+        if (cancelled) return;
         const page = await pdf.getPage(pageNumber);
         if (cancelled) return;
         const base = page.getViewport({ scale: 1 });
@@ -483,6 +507,9 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
         buffer.height = 0;
       } catch (err) {
         if (err?.name !== 'RenderingCancelledException') console.warn('[PdfViewer] page render failed:', err);
+      } finally {
+        window.clearTimeout(safety);
+        release();
       }
     })();
     return () => { cancelled = true; task?.cancel(); };
