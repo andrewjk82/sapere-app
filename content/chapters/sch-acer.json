@@ -9714,6 +9714,2635 @@
             "sourceQuestion": "24",
             "sourcePage": "not visible in supplied screenshots"
           }
+        },
+        {
+          "id": "sch-acer-gen1-mq1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Four taps fill 12 buckets in 10 minutes. How many buckets would eight taps fill in the same 10 minutes?",
+          "options": [
+            "16",
+            "24",
+            "20",
+            "48"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Eight taps is twice as many taps. What happens to the number of buckets in the same time?",
+          "keyPoints": [
+            {
+              "text": "the same 10 minutes",
+              "note": "The time does not change, so only the number of taps matters."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Eight taps is double four taps.",
+              "work": "\\(8\\div4=2\\)"
+            },
+            {
+              "explain": "Twice as many taps fill twice as many buckets in the same time.",
+              "work": "\\(12\\times2=\\boxed{24}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 1,
+            "category": "rates and proportion",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Six printers print 240 posters in 2 hours. How many posters would nine printers print in 3 hours?",
+          "options": [
+            "360",
+            "480",
+            "540",
+            "720"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "First find how many posters one printer prints in one hour.",
+          "keyPoints": [
+            {
+              "text": "nine printers print in 3 hours",
+              "note": "Both the number of printers and the time change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the rate for one printer in one hour.",
+              "work": "\\(240\\div6\\div2=20\\text{ posters}\\)"
+            },
+            {
+              "explain": "Nine printers working for 3 hours.",
+              "work": "\\(20\\times9\\times3=\\boxed{540}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 2,
+            "category": "rates and proportion",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Six workers can build a wall in 10 days. After they have worked for 4 days, three more workers join them. All workers work at the same rate. How many more days will it take to finish the wall?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Measure the whole job in \"worker-days\". How much is left after 4 days?",
+          "keyPoints": [
+            {
+              "text": "three more workers join them",
+              "note": "From day 5 there are 9 workers, not 6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The whole wall needs 6 workers × 10 days.",
+              "work": "\\(6\\times10=60\\text{ worker-days}\\)"
+            },
+            {
+              "explain": "After 4 days, 6 workers have done 24 worker-days.",
+              "work": "\\(60-6\\times4=36\\text{ worker-days left}\\)"
+            },
+            {
+              "explain": "Now there are 9 workers.",
+              "work": "\\(36\\div9=\\boxed{4\\text{ days}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 3,
+            "category": "rates and proportion",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the missing number?\n\n5, 9, 13, 17, ?",
+          "options": [
+            "21",
+            "19",
+            "20",
+            "22"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find how much is added each time.",
+          "keyPoints": [
+            {
+              "text": "5, 9, 13, 17, ?",
+              "note": "Look at the gap between neighbours."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each number is 4 more than the one before.",
+              "work": "\\(9-5=4,\\ 13-9=4,\\ 17-13=4\\)"
+            },
+            {
+              "explain": "Add 4 again.",
+              "work": "\\(17+4=\\boxed{21}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 4,
+            "category": "number sequences",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the missing number?\n\n3, 4, 7, 12, 19, ?",
+          "options": [
+            "26",
+            "27",
+            "28",
+            "31"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Write down the gaps between the numbers. Do the gaps follow a pattern?",
+          "keyPoints": [
+            {
+              "text": "3, 4, 7, 12, 19, ?",
+              "note": "The gaps grow by 2 each time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the gaps.",
+              "work": "\\(+1,\\ +3,\\ +5,\\ +7\\)"
+            },
+            {
+              "explain": "The gaps are the odd numbers, so the next gap is 9.",
+              "work": "\\(19+9=\\boxed{28}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 5,
+            "category": "number sequences",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the missing number?\n\n1, 4, 10, 22, 46, ?",
+          "options": [
+            "70",
+            "90",
+            "92",
+            "94"
+          ],
+          "answer": 3,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "The gaps are 3, 6, 12, 24. What happens to the gap each time?",
+          "keyPoints": [
+            {
+              "text": "1, 4, 10, 22, 46, ?",
+              "note": "The gaps double each time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the gaps.",
+              "work": "\\(+3,\\ +6,\\ +12,\\ +24\\)"
+            },
+            {
+              "explain": "Each gap is double the one before, so the next gap is 48.",
+              "work": "\\(46+48=\\boxed{94}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 6,
+            "category": "number sequences",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ravi has these coins: 50c, 20c, 10c, 5c. Which total can he make <b>exactly</b>?",
+          "options": [
+            "40c",
+            "35c",
+            "45c",
+            "90c"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Try to build each total from the coins. Each coin can be used only once.",
+          "keyPoints": [
+            {
+              "text": "50c, 20c, 10c, 5c",
+              "note": "There is only one of each coin."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Try 35c.",
+              "work": "\\(20+10+5=35\\) ✓"
+            },
+            {
+              "explain": "40c and 45c cannot be made without another 10c or 20c coin, and 90c is more than all four coins together (85c).",
+              "work": "\\(\\boxed{35\\text{c}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 7,
+            "category": "coin totals",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Mia has these coins: 50c, 20c, 20c, 5c, 2c. Which total can she make <b>exactly</b>?",
+          "options": [
+            "35c",
+            "47c",
+            "60c",
+            "82c"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Try to build each total. Each coin can be used only once.",
+          "keyPoints": [
+            {
+              "text": "50c, 20c, 20c, 5c, 2c",
+              "note": "There are two 20c coins but no 10c coin."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Try 47c without the 50c coin.",
+              "work": "\\(20+20+5+2=47\\) ✓"
+            },
+            {
+              "explain": "35c would need a 10c coin, 60c would need a 10c coin, and 82c cannot be reached (50 + 20 + 5 + 2 = 77, 50 + 20 + 20 = 90).",
+              "work": "\\(\\boxed{47\\text{c}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 8,
+            "category": "coin totals",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Ella has only 20c and 50c coins. She has 9 coins altogether and they are worth \\(\\$3.00\\) in total. How many 50c coins does she have?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Imagine all 9 coins were 20c coins. How much would be missing?",
+          "keyPoints": [
+            {
+              "text": "9 coins altogether",
+              "note": "The number of 20c coins plus the number of 50c coins is 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "If all 9 coins were 20c coins, she would have 180c.",
+              "work": "\\(9\\times20=180\\text{c}\\)"
+            },
+            {
+              "explain": "She really has 300c, which is 120c more. Swapping a 20c for a 50c adds 30c.",
+              "work": "\\(120\\div30=4\\)"
+            },
+            {
+              "explain": "Check: four 50c and five 20c.",
+              "work": "\\(4\\times50+5\\times20=300\\text{c}\\ \\Rightarrow\\ \\boxed{4}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 9,
+            "category": "coin totals",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bus leaves at 8:40 am. The trip takes 35 minutes. At what time does the bus arrive?",
+          "options": [
+            "9:05 am",
+            "9:10 am",
+            "9:15 am",
+            "9:25 am"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Go to 9:00 first, then add the minutes that are left.",
+          "keyPoints": [
+            {
+              "text": "35 minutes",
+              "note": "Split the 35 minutes into 20 + 15."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From 8:40 to 9:00 is 20 minutes.",
+              "work": "\\(35-20=15\\text{ minutes left}\\)"
+            },
+            {
+              "explain": "Add the remaining 15 minutes.",
+              "work": "\\(9{:}00+15\\text{ min}=\\boxed{9{:}15\\text{ am}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 10,
+            "category": "time",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A film starts at 6:45 pm. It runs for 1 hour 50 minutes, and there is also a 15-minute interval in the middle. At what time does the film finish?",
+          "options": [
+            "8:35 pm",
+            "8:45 pm",
+            "8:50 pm",
+            "9:00 pm"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Add the interval to the running time first.",
+          "keyPoints": [
+            {
+              "text": "15-minute interval",
+              "note": "The interval makes the finish later."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Total time is the film plus the interval.",
+              "work": "\\(1\\text{ h }50\\text{ min}+15\\text{ min}=2\\text{ h }5\\text{ min}\\)"
+            },
+            {
+              "explain": "Add this to the start time.",
+              "work": "\\(6{:}45+2\\text{ h }5\\text{ min}=\\boxed{8{:}50\\text{ pm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 11,
+            "category": "time",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A clock loses 3 minutes every hour. It is set to the correct time at 9:00 am. What time does the clock show when the real time is 5:00 pm on the same day?",
+          "options": [
+            "4:36 pm",
+            "4:24 pm",
+            "4:40 pm",
+            "5:24 pm"
+          ],
+          "answer": 0,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "How many hours pass from 9:00 am to 5:00 pm? How many minutes does the clock lose in that time?",
+          "keyPoints": [
+            {
+              "text": "loses 3 minutes every hour",
+              "note": "A clock that loses time shows an earlier time than the real time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From 9:00 am to 5:00 pm is 8 hours.",
+              "work": "\\(8\\times3=24\\text{ minutes lost}\\)"
+            },
+            {
+              "explain": "The clock is 24 minutes behind the real time.",
+              "work": "\\(5{:}00-24\\text{ min}=\\boxed{4{:}36\\text{ pm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 12,
+            "category": "time",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On planet Nim, 1 gro = 10 fens. How many fens equal 3 gros and 7 fens?",
+          "options": [
+            "17 fens",
+            "30 fens",
+            "73 fens",
+            "37 fens"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Change the gros into fens first.",
+          "keyPoints": [
+            {
+              "text": "1 gro = 10 fens",
+              "note": "Each gro is worth 10 fens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Change 3 gros into fens.",
+              "work": "\\(3\\times10=30\\text{ fens}\\)"
+            },
+            {
+              "explain": "Add the extra 7 fens.",
+              "work": "\\(30+7=\\boxed{37\\text{ fens}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 13,
+            "category": "invented units",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On planet Zorb, 1 kell = 5 mips and 1 mip = 3 tocs. How many tocs equal 2 kells and 4 mips?",
+          "options": [
+            "22 tocs",
+            "30 tocs",
+            "34 tocs",
+            "42 tocs"
+          ],
+          "answer": 3,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Change everything into mips first, then into tocs.",
+          "keyPoints": [
+            {
+              "text": "1 mip = 3 tocs",
+              "note": "The 4 mips must be changed into tocs too."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Change the kells into mips and add the 4 mips.",
+              "work": "\\(2\\times5+4=14\\text{ mips}\\)"
+            },
+            {
+              "explain": "Change mips into tocs.",
+              "work": "\\(14\\times3=\\boxed{42\\text{ tocs}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 14,
+            "category": "invented units",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "On planet Quo, 1 dral = 4 emms and 1 emm = 6 fips. Which of these is the same as 84 fips?",
+          "options": [
+            "3 drals and 2 emms",
+            "2 drals and 4 emms",
+            "3 drals and 3 emms",
+            "4 drals and 2 emms"
+          ],
+          "answer": 0,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Change 84 fips into emms first. Then group the emms into drals.",
+          "keyPoints": [
+            {
+              "text": "1 dral = 4 emms",
+              "note": "Four emms make one dral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Change fips into emms.",
+              "work": "\\(84\\div6=14\\text{ emms}\\)"
+            },
+            {
+              "explain": "Group the emms in fours to make drals.",
+              "work": "\\(14=3\\times4+2\\)"
+            },
+            {
+              "explain": "So 84 fips is 3 drals and 2 emms.",
+              "work": "\\(\\boxed{3\\text{ drals and }2\\text{ emms}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 15,
+            "category": "invented units",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A drawer holds 5 blue socks and 5 white socks. Without looking, what is the smallest number of socks you must take out to be <b>sure</b> of getting two socks of the same colour?",
+          "options": [
+            "2",
+            "3",
+            "6",
+            "10"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Think about the unluckiest way the first socks could come out.",
+          "keyPoints": [
+            {
+              "text": "sure",
+              "note": "Plan for the unluckiest case."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The unluckiest start is one blue and one white.",
+              "work": "\\(2\\text{ socks, no pair yet}\\)"
+            },
+            {
+              "explain": "The third sock must match one of them.",
+              "work": "\\(2+1=\\boxed{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 16,
+            "category": "worst case",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag holds 7 red, 5 yellow and 3 blue marbles. Without looking, what is the smallest number of marbles you must take out to be <b>sure</b> of getting at least one marble of each colour?",
+          "options": [
+            "4",
+            "11",
+            "13",
+            "15"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "In the unluckiest case, which colour would come out last?",
+          "keyPoints": [
+            {
+              "text": "at least one marble of each colour",
+              "note": "The colour with the fewest marbles (blue) could come out last."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The unluckiest case is taking every red and every yellow marble first.",
+              "work": "\\(7+5=12\\text{ marbles, still no blue}\\)"
+            },
+            {
+              "explain": "The next marble must be blue.",
+              "work": "\\(12+1=\\boxed{13}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 17,
+            "category": "worst case",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A box holds 9 red pens, 6 green pens and 4 blue pens. Without looking, what is the smallest number of pens you must take out to be <b>sure</b> of getting three pens of the same colour?",
+          "options": [
+            "5",
+            "7",
+            "9",
+            "13"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "What is the largest number of pens you could hold without having three of one colour?",
+          "keyPoints": [
+            {
+              "text": "three pens of the same colour",
+              "note": "Any colour will do, so think about holding two of each."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The unluckiest case is two pens of each colour.",
+              "work": "\\(2+2+2=6\\text{ pens, no three the same}\\)"
+            },
+            {
+              "explain": "The next pen must make three of some colour.",
+              "work": "\\(6+1=\\boxed{7}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 18,
+            "category": "worst case",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Tom has twice as many cards as Jo. Together they have 36 cards. How many cards does Jo have?",
+          "options": [
+            "9",
+            "12",
+            "18",
+            "24"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Think of Jo as 1 part and Tom as 2 parts.",
+          "keyPoints": [
+            {
+              "text": "twice as many",
+              "note": "Tom has 2 parts for every 1 part Jo has."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Jo is 1 part and Tom is 2 parts, so there are 3 equal parts.",
+              "work": "\\(36\\div3=12\\)"
+            },
+            {
+              "explain": "Jo has one part.",
+              "work": "\\(\\boxed{12}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 19,
+            "category": "relationships",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Ava, Ben and Cal share 60 stickers. Ben has three times as many as Ava. Cal has 10 more than Ava. How many stickers does Cal have?",
+          "options": [
+            "10",
+            "20",
+            "25",
+            "30"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Take away Cal's extra 10 first. Then the rest is 5 equal parts.",
+          "keyPoints": [
+            {
+              "text": "Cal has 10 more than Ava",
+              "note": "Cal is one part plus 10 extra."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take away Cal's extra 10 stickers.",
+              "work": "\\(60-10=50\\)"
+            },
+            {
+              "explain": "Now Ava is 1 part, Ben is 3 parts and Cal is 1 part: 5 equal parts.",
+              "work": "\\(50\\div5=10\\)"
+            },
+            {
+              "explain": "Cal has one part plus 10.",
+              "work": "\\(10+10=\\boxed{20}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 20,
+            "category": "relationships",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "One-third of a number is 4 more than one-quarter of the number. What is the number?",
+          "options": [
+            "12",
+            "16",
+            "24",
+            "48"
+          ],
+          "answer": 3,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "What fraction of the number is the difference between one-third and one-quarter?",
+          "keyPoints": [
+            {
+              "text": "4 more than",
+              "note": "The difference between the two fractions of the number is 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the difference between one-third and one-quarter.",
+              "work": "\\(\\frac{1}{3}-\\frac{1}{4}=\\frac{4}{12}-\\frac{3}{12}=\\frac{1}{12}\\)"
+            },
+            {
+              "explain": "So one-twelfth of the number is 4.",
+              "work": "\\(4\\times12=\\boxed{48}\\)"
+            },
+            {
+              "explain": "Check.",
+              "work": "\\(48\\div3=16,\\ 48\\div4=12,\\ 16-12=4\\) ✓"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 21,
+            "category": "relationships",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Stickers cost 30c each. What is the greatest number of stickers you can buy with \\(\\$2.00\\)?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "60"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "How many 30s fit into 200 without going over?",
+          "keyPoints": [
+            {
+              "text": "greatest number",
+              "note": "You cannot spend more than you have."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count in 30s.",
+              "work": "\\(6\\times30=180\\text{c},\\ 7\\times30=210\\text{c}\\)"
+            },
+            {
+              "explain": "7 stickers cost too much, so the most is 6.",
+              "work": "\\(\\boxed{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 22,
+            "category": "money",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Notebooks cost \\(\\$1.20\\) each and pencils cost 35c each. Zoe has \\(\\$6.00\\) and buys 3 notebooks. What is the greatest number of pencils she can then buy?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "First find how much money is left after the notebooks.",
+          "keyPoints": [
+            {
+              "text": "buys 3 notebooks",
+              "note": "Take the cost of the notebooks away first."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the cost of the notebooks and the money left.",
+              "work": "\\(3\\times\\$1.20=\\$3.60,\\quad \\$6.00-\\$3.60=\\$2.40\\)"
+            },
+            {
+              "explain": "Count how many 35c pencils fit into 240c.",
+              "work": "\\(6\\times35=210\\text{c},\\ 7\\times35=245\\text{c}\\)"
+            },
+            {
+              "explain": "7 pencils cost too much.",
+              "work": "\\(\\boxed{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 23,
+            "category": "money",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Tickets cost \\(\\$12\\) for an adult and \\(\\$7\\) for a child. A group of 6 people paid \\(\\$57\\) altogether. How many children were in the group?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Imagine all 6 people were adults. How much too high is the total?",
+          "keyPoints": [
+            {
+              "text": "A group of 6 people",
+              "note": "Adults plus children make 6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "If all 6 were adults the cost would be \\(\\$72\\).",
+              "work": "\\(6\\times12=72\\)"
+            },
+            {
+              "explain": "The real cost is \\(\\$15\\) less. Each child saves \\(\\$5\\).",
+              "work": "\\(72-57=15,\\quad 15\\div5=3\\)"
+            },
+            {
+              "explain": "Check: 3 adults and 3 children.",
+              "work": "\\(3\\times12+3\\times7=57\\ \\Rightarrow\\ \\boxed{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 24,
+            "category": "money",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq25",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a code, each letter is replaced by the letter <b>one</b> place later in the alphabet (so A becomes B, B becomes C). What does the code <b>DBU</b> stand for?",
+          "options": [
+            "BAT",
+            "CAR",
+            "CAT",
+            "ECV"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "To decode, move each letter one place back in the alphabet.",
+          "keyPoints": [
+            {
+              "text": "one",
+              "note": "Decoding goes the opposite way: one place earlier."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Move each code letter back one place.",
+              "work": "\\(\\text{D}\\to\\text{C},\\ \\text{B}\\to\\text{A},\\ \\text{U}\\to\\text{T}\\)"
+            },
+            {
+              "explain": "The word is CAT.",
+              "work": "\\(\\boxed{\\text{CAT}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 25,
+            "category": "codes",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "These coded messages have the meanings shown. The words are <b>not</b> in the same order as the codes.\n\nBX KM TR – RED CAR FAST\nKM ZP LD – BIKE STOPS RED\nTR LD QW – HERE CAR STOPS\n\nWhat does BX mean?",
+          "options": [
+            "RED",
+            "CAR",
+            "FAST",
+            "STOPS"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Find a code that appears in two messages, and the word that appears in the same two messages.",
+          "keyPoints": [
+            {
+              "text": "not",
+              "note": "Match codes and words by which messages they share."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "KM is in messages 1 and 2. The only word in both is RED.",
+              "work": "\\(\\text{KM}=\\text{RED}\\)"
+            },
+            {
+              "explain": "TR is in messages 1 and 3. The only word in both is CAR.",
+              "work": "\\(\\text{TR}=\\text{CAR}\\)"
+            },
+            {
+              "explain": "The word left in message 1 is FAST.",
+              "work": "\\(\\text{BX}=\\boxed{\\text{FAST}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 26,
+            "category": "codes",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a code, A = 1, B = 2, C = 3 and so on. The value of a word is the sum of its letters. For example, CAB = 3 + 1 + 2 = 6.\n\nWhich of these words has a value of 20?",
+          "options": [
+            "FADE",
+            "HEAD",
+            "FACED",
+            "CAGED"
+          ],
+          "answer": 3,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Write the number under each letter: A = 1, B = 2, C = 3, D = 4, E = 5, F = 6, G = 7, H = 8.",
+          "keyPoints": [
+            {
+              "text": "sum of its letters",
+              "note": "Add the number for every letter in the word."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out each word.",
+              "work": "\\(\\text{FADE}=6+1+4+5=16\\)\n\\(\\text{HEAD}=8+5+1+4=18\\)\n\\(\\text{FACED}=6+1+3+5+4=19\\)\n\\(\\text{CAGED}=3+1+7+5+4=20\\)"
+            },
+            {
+              "explain": "Only CAGED has a value of 20.",
+              "work": "\\(\\boxed{\\text{CAGED}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 27,
+            "category": "codes",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Square tables are joined in a row. One table seats 4 people. Two tables joined together seat 6 people. Three tables joined together seat 8 people. How many people can sit at 10 tables joined in a row?",
+          "options": [
+            "20",
+            "22",
+            "24",
+            "40"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "How many extra seats does each new table add?",
+          "keyPoints": [
+            {
+              "text": "joined in a row",
+              "note": "Joining tables loses the seats where they touch."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each extra table adds 2 seats.",
+              "work": "\\(4,\\ 6,\\ 8,\\ \\dots\\)"
+            },
+            {
+              "explain": "Ten tables is 9 more tables than one table.",
+              "work": "\\(4+9\\times2=\\boxed{22}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 28,
+            "category": "growing patterns",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "At a meeting, every person shakes hands once with every other person. There are 6 people at the meeting. How many handshakes are there altogether?",
+          "options": [
+            "12",
+            "30",
+            "15",
+            "36"
+          ],
+          "answer": 2,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "The first person shakes 5 hands. How many new handshakes does the second person make?",
+          "keyPoints": [
+            {
+              "text": "once with every other person",
+              "note": "A handshake between two people counts only once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count new handshakes person by person, so none are counted twice.",
+              "work": "\\(5+4+3+2+1\\)"
+            },
+            {
+              "explain": "Add them up.",
+              "work": "\\(5+4+3+2+1=\\boxed{15}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 29,
+            "category": "growing patterns",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq30",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "24 students chose their favourite fruit. The pie chart shows the results. How many students chose <b>banana</b>?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 250\" width=\"55%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><path d=\"M130 125 L130.0 25.0 A100 100 0 0 1 130.0 225.0 Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"190\" y=\"129\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Apple</text><path d=\"M130 125 L130.0 225.0 A100 100 0 0 1 30.0 125.0 Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"87.5736\" y=\"171.426\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Banana</text><path d=\"M130 125 L30.0 125.0 A100 100 0 0 1 130.0 25.0 Z\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"87.5736\" y=\"86.5736\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Orange</text></svg>"
+          },
+          "options": [
+            "4",
+            "6",
+            "8",
+            "12"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "What fraction of the circle is the banana sector?",
+          "keyPoints": [
+            {
+              "text": "24 students",
+              "note": "The whole circle stands for 24 students."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The banana sector is one quarter of the circle.",
+              "work": "\\(\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Find one quarter of 24.",
+              "work": "\\(24\\div4=\\boxed{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 30,
+            "category": "pie charts",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq31",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "80 people chose their favourite sport. The pie chart shows the results. The Tennis and Golf sectors are the same size. How many people chose <b>tennis</b>?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 250\" width=\"55%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><path d=\"M130 125 L130.0 25.0 A100 100 0 0 1 130.0 225.0 Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"190\" y=\"129\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Soccer</text><path d=\"M130 125 L130.0 225.0 A100 100 0 0 1 30.0 125.0 Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"87.5736\" y=\"171.426\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Swimming</text><path d=\"M130 125 L30.0 125.0 A100 100 0 0 1 59.3 54.3 Z\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"74.5672\" y=\"106.039\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Tennis</text><path d=\"M130 125 L59.3 54.3 A100 100 0 0 1 130.0 25.0 Z\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"107.039\" y=\"73.5672\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Golf</text></svg>"
+          },
+          "options": [
+            "10",
+            "8",
+            "16",
+            "20"
+          ],
+          "answer": 0,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Soccer is half and Swimming is a quarter. What fraction is left for Tennis and Golf together?",
+          "keyPoints": [
+            {
+              "text": "The Tennis and Golf sectors are the same size",
+              "note": "Each of these two sectors is half of a quarter."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Soccer is one half and Swimming is one quarter, so one quarter is left.",
+              "work": "\\(1-\\frac{1}{2}-\\frac{1}{4}=\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Tennis and Golf share that quarter equally, so each is one eighth.",
+              "work": "\\(80\\div8=\\boxed{10}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 31,
+            "category": "pie charts",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Some people were asked to name their favourite pet. The pie chart shows the results. 15 people chose <b>cats</b>. How many people were asked altogether?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 250\" width=\"55%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><path d=\"M130 125 L130.0 25.0 A100 100 0 0 1 130.0 225.0 Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"190\" y=\"129\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Dogs</text><path d=\"M130 125 L130.0 225.0 A100 100 0 0 1 30.0 125.0 Z\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"87.5736\" y=\"171.426\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Cats</text><path d=\"M130 125 L30.0 125.0 A100 100 0 0 1 130.0 25.0 Z\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"87.5736\" y=\"86.5736\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Fish</text></svg>"
+          },
+          "options": [
+            "30",
+            "45",
+            "60",
+            "75"
+          ],
+          "answer": 2,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "What fraction of the circle is the cats sector?",
+          "keyPoints": [
+            {
+              "text": "15 people chose",
+              "note": "This number matches one sector, not the whole circle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The cats sector is one quarter of the circle.",
+              "work": "\\(\\frac{1}{4}\\text{ of the people}=15\\)"
+            },
+            {
+              "explain": "The whole circle is four quarters.",
+              "work": "\\(15\\times4=\\boxed{60}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 32,
+            "category": "pie charts",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq33",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The bar chart shows how many books four children read in a month. How many <b>more</b> books did Bea read than Cy?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 245\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"62\" y1=\"215\" x2=\"360\" y2=\"215\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"219\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0</text><line x1=\"62\" y1=\"197\" x2=\"360\" y2=\"197\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"201\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">1</text><line x1=\"62\" y1=\"179\" x2=\"360\" y2=\"179\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"183\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">2</text><line x1=\"62\" y1=\"161\" x2=\"360\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"165\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">3</text><line x1=\"62\" y1=\"143\" x2=\"360\" y2=\"143\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"147\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">4</text><line x1=\"62\" y1=\"125\" x2=\"360\" y2=\"125\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"129\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">5</text><line x1=\"62\" y1=\"107\" x2=\"360\" y2=\"107\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"111\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">6</text><line x1=\"62\" y1=\"89\" x2=\"360\" y2=\"89\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"93\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">7</text><line x1=\"62\" y1=\"71\" x2=\"360\" y2=\"71\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"75\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">8</text><line x1=\"62\" y1=\"53\" x2=\"360\" y2=\"53\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"57\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">9</text><line x1=\"62\" y1=\"35\" x2=\"360\" y2=\"35\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"39\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">10</text><line x1=\"62\" y1=\"215\" x2=\"360\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"62\" y1=\"35\" x2=\"62\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\" /><rect x=\"88\" y=\"107\" width=\"42\" height=\"108\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"109\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Ali</text><rect x=\"156\" y=\"53\" width=\"42\" height=\"162\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"177\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Bea</text><rect x=\"224\" y=\"143\" width=\"42\" height=\"72\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"245\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Cy</text><rect x=\"292\" y=\"89\" width=\"42\" height=\"126\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"313\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Di</text><text x=\"16\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 125)\">Books read</text></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "5",
+            "13"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Read the height of Bea's bar and Cy's bar, then find the difference.",
+          "keyPoints": [
+            {
+              "text": "more",
+              "note": "\"How many more\" means subtract."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the two bars.",
+              "work": "\\(\\text{Bea}=9,\\ \\text{Cy}=4\\)"
+            },
+            {
+              "explain": "Find the difference.",
+              "work": "\\(9-4=\\boxed{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 33,
+            "category": "bar charts",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq34",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The bar chart shows the rainfall in a town on five days. What was the <b>average</b> rainfall per day?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 438 245\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"62\" y1=\"215\" x2=\"428\" y2=\"215\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"219\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0</text><line x1=\"62\" y1=\"179\" x2=\"428\" y2=\"179\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"183\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">2</text><line x1=\"62\" y1=\"143\" x2=\"428\" y2=\"143\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"147\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">4</text><line x1=\"62\" y1=\"107\" x2=\"428\" y2=\"107\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"111\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">6</text><line x1=\"62\" y1=\"71\" x2=\"428\" y2=\"71\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"75\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">8</text><line x1=\"62\" y1=\"35\" x2=\"428\" y2=\"35\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"39\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">10</text><line x1=\"62\" y1=\"215\" x2=\"428\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"62\" y1=\"35\" x2=\"62\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\" /><rect x=\"88\" y=\"143\" width=\"42\" height=\"72\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"109\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Mon</text><rect x=\"156\" y=\"35\" width=\"42\" height=\"180\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"177\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Tue</text><rect x=\"224\" y=\"107\" width=\"42\" height=\"108\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"245\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Wed</text><rect x=\"292\" y=\"179\" width=\"42\" height=\"36\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"313\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Thu</text><rect x=\"360\" y=\"71\" width=\"42\" height=\"144\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"381\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Fri</text><text x=\"16\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 125)\">Rainfall (mm)</text></svg>"
+          },
+          "options": [
+            "5 mm",
+            "6 mm",
+            "8 mm",
+            "30 mm"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Add up all five days, then share the total equally between the 5 days.",
+          "keyPoints": [
+            {
+              "text": "average",
+              "note": "Average = total ÷ number of days."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the rainfall for the five days.",
+              "work": "\\(4+10+6+2+8=30\\text{ mm}\\)"
+            },
+            {
+              "explain": "Divide by the number of days.",
+              "work": "\\(30\\div5=\\boxed{6\\text{ mm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 34,
+            "category": "bar charts",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq35",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The bar chart shows how many tickets a cinema sold on four days. Every ticket costs \\(\\$4\\). How much <b>more</b> money did the cinema take on Tuesday than on Wednesday?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 245\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"62\" y1=\"215\" x2=\"360\" y2=\"215\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"219\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0</text><line x1=\"62\" y1=\"192.5\" x2=\"360\" y2=\"192.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"196.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">5</text><line x1=\"62\" y1=\"170\" x2=\"360\" y2=\"170\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"174\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">10</text><line x1=\"62\" y1=\"147.5\" x2=\"360\" y2=\"147.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"151.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">15</text><line x1=\"62\" y1=\"125\" x2=\"360\" y2=\"125\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"129\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">20</text><line x1=\"62\" y1=\"102.5\" x2=\"360\" y2=\"102.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"106.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">25</text><line x1=\"62\" y1=\"80\" x2=\"360\" y2=\"80\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"84\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">30</text><line x1=\"62\" y1=\"57.5\" x2=\"360\" y2=\"57.5\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"61.5\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">35</text><line x1=\"62\" y1=\"35\" x2=\"360\" y2=\"35\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"54\" y=\"39\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">40</text><line x1=\"62\" y1=\"215\" x2=\"360\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"62\" y1=\"35\" x2=\"62\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\" /><rect x=\"88\" y=\"125\" width=\"42\" height=\"90\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"109\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Mon</text><rect x=\"156\" y=\"57.5\" width=\"42\" height=\"157.5\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"177\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Tue</text><rect x=\"224\" y=\"147.5\" width=\"42\" height=\"67.5\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"245\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Wed</text><rect x=\"292\" y=\"80\" width=\"42\" height=\"135\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"313\" y=\"232\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Thu</text><text x=\"16\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 125)\">Tickets sold</text></svg>"
+          },
+          "options": [
+            "\\(\\$20\\)",
+            "\\(\\$60\\)",
+            "\\(\\$80\\)",
+            "\\(\\$140\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Find how many more tickets were sold on Tuesday, then multiply by the price.",
+          "keyPoints": [
+            {
+              "text": "Every ticket costs",
+              "note": "Change the difference in tickets into money."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the two bars and find the difference.",
+              "work": "\\(35-15=20\\text{ tickets}\\)"
+            },
+            {
+              "explain": "Each ticket costs \\(\\$4\\).",
+              "work": "\\(20\\times\\$4=\\boxed{\\$80}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 35,
+            "category": "bar charts",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq36",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction of the figure is shaded?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 204 112\" width=\"42%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"10\" y=\"10\" width=\"184\" height=\"92\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\" /><rect x=\"10\" y=\"10\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"56\" y=\"56\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><line x1=\"56\" y1=\"10\" x2=\"56\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"102\" y1=\"10\" x2=\"102\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"148\" y1=\"10\" x2=\"148\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"10\" y1=\"56\" x2=\"194\" y2=\"56\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"10\" y=\"10\" width=\"184\" height=\"92\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{1}{8}\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count all the equal squares, then count the shaded ones.",
+          "keyPoints": [
+            {
+              "text": "What fraction",
+              "note": "Shaded parts over all equal parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "There are 8 equal squares and 2 are shaded.",
+              "work": "\\(\\frac{2}{8}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(\\frac{2}{8}=\\boxed{\\frac{1}{4}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 36,
+            "category": "fractions of shapes",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq37",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What fraction of the figure is shaded?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 204 204\" width=\"42%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"10\" y=\"10\" width=\"184\" height=\"184\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\" /><rect x=\"10\" y=\"10\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"56\" y=\"10\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"148\" y=\"56\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"56\" y=\"102\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"102\" y=\"102\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"10\" y=\"148\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><line x1=\"56\" y1=\"10\" x2=\"56\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"102\" y1=\"10\" x2=\"102\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"148\" y1=\"10\" x2=\"148\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"10\" y1=\"56\" x2=\"194\" y2=\"56\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"10\" y1=\"102\" x2=\"194\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"10\" y1=\"148\" x2=\"194\" y2=\"148\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"10\" y=\"10\" width=\"184\" height=\"184\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{3}{8}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{3}{4}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Count all the equal squares, count the shaded ones, then simplify.",
+          "keyPoints": [
+            {
+              "text": "What fraction",
+              "note": "Shaded parts over all equal parts, in simplest form."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "There are 16 equal squares and 6 are shaded.",
+              "work": "\\(\\frac{6}{16}\\)"
+            },
+            {
+              "explain": "Simplify by dividing top and bottom by 2.",
+              "work": "\\(\\frac{6}{16}=\\boxed{\\frac{3}{8}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 37,
+            "category": "fractions of shapes",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq38",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What fraction of the figure is shaded?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 158 158\" width=\"42%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"10\" y=\"10\" width=\"138\" height=\"138\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\" /><rect x=\"10\" y=\"10\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><rect x=\"102\" y=\"102\" width=\"46\" height=\"46\" fill=\"#93c5fd\" stroke=\"none\" stroke-width=\"0\" /><polygon points=\"56,56 56,102 102,102\" fill=\"#93c5fd\"/><polygon points=\"102,10 148,10 148,56\" fill=\"#93c5fd\"/><line x1=\"56\" y1=\"10\" x2=\"56\" y2=\"148\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"102\" y1=\"10\" x2=\"102\" y2=\"148\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"10\" y1=\"56\" x2=\"148\" y2=\"56\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"10\" y1=\"102\" x2=\"148\" y2=\"102\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"10\" y=\"10\" width=\"138\" height=\"138\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "\\(\\frac{2}{9}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{4}{9}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Two shaded triangles together make one whole square.",
+          "keyPoints": [
+            {
+              "text": "What fraction",
+              "note": "Half squares count as halves."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "There are 9 equal squares. Two whole squares are shaded.",
+              "work": "\\(2\\text{ squares}\\)"
+            },
+            {
+              "explain": "Each shaded triangle is half a square, so the two triangles make 1 more square.",
+              "work": "\\(2+\\frac{1}{2}+\\frac{1}{2}=3\\text{ squares}\\)"
+            },
+            {
+              "explain": "Write the fraction and simplify.",
+              "work": "\\(\\frac{3}{9}=\\boxed{\\frac{1}{3}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 38,
+            "category": "fractions of shapes",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq39",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Each block is the <b>sum</b> of the two blocks below it. What is the missing number?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 152\" width=\"48%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"80\" y=\"10\" width=\"70\" height=\"44\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"115\" y=\"39\" font-size=\"20\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">?</text><rect x=\"45\" y=\"54\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"80\" y=\"83\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\"></text><rect x=\"115\" y=\"54\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"150\" y=\"83\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\"></text><rect x=\"10\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"45\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"80\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"115\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><rect x=\"150\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"185\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text></svg>"
+          },
+          "options": [
+            "12",
+            "16",
+            "17",
+            "18"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Fill in the middle row first.",
+          "keyPoints": [
+            {
+              "text": "sum",
+              "note": "Add the two blocks underneath."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Fill in the middle row.",
+              "work": "\\(3+5=8,\\quad 5+4=9\\)"
+            },
+            {
+              "explain": "Add the middle row to get the top block.",
+              "work": "\\(8+9=\\boxed{17}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 39,
+            "category": "number pyramids",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq40",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each block is the <b>sum</b> of the two blocks below it. What is the missing number?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 152\" width=\"48%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"80\" y=\"10\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"115\" y=\"39\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">30</text><rect x=\"45\" y=\"54\" width=\"70\" height=\"44\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"80\" y=\"83\" font-size=\"20\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">?</text><rect x=\"115\" y=\"54\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"150\" y=\"83\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">17</text><rect x=\"10\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"45\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><rect x=\"80\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"115\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\"></text><rect x=\"150\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"185\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">10</text></svg>"
+          },
+          "options": [
+            "13",
+            "11",
+            "14",
+            "23"
+          ],
+          "answer": 0,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Use the top block: the two middle blocks must add to 30.",
+          "keyPoints": [
+            {
+              "text": "sum",
+              "note": "Work down from the top as well as up from the bottom."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The two middle blocks add to the top block.",
+              "work": "\\(?+17=30\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(30-17=\\boxed{13}\\)"
+            },
+            {
+              "explain": "Check with the bottom row: the empty bottom block is 7.",
+              "work": "\\(6+7=13,\\quad 7+10=17\\) ✓"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 40,
+            "category": "number pyramids",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq41",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Each block is the <b>product</b> of the two blocks below it. What is the missing number?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 152\" width=\"48%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"80\" y=\"10\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"115\" y=\"39\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">96</text><rect x=\"45\" y=\"54\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"80\" y=\"83\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\"></text><rect x=\"115\" y=\"54\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"150\" y=\"83\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\"></text><rect x=\"10\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"45\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"80\" y=\"98\" width=\"70\" height=\"44\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"115\" y=\"127\" font-size=\"20\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">?</text><rect x=\"150\" y=\"98\" width=\"70\" height=\"44\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /><text x=\"185\" y=\"127\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text></svg>"
+          },
+          "options": [
+            "4",
+            "6",
+            "8",
+            "16"
+          ],
+          "answer": 0,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Try each answer: fill in the middle row, then check whether the top is 96.",
+          "keyPoints": [
+            {
+              "text": "product",
+              "note": "Product means multiply."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Call the missing number ?. The middle row is 2 × ? and ? × 3."
+            },
+            {
+              "explain": "Try 4.",
+              "work": "\\(2\\times4=8,\\quad 4\\times3=12,\\quad 8\\times12=96\\) ✓"
+            },
+            {
+              "explain": "The other choices give tops that are too big (6 gives 216).",
+              "work": "\\(\\boxed{4}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 41,
+            "category": "number pyramids",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq42",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ben is in square C2. He moves 3 squares to the right and then 2 squares up. Which square is he in now?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 366 280\" width=\"62%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"34\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"54\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"94\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"134\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"174\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">D</text><text x=\"214\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">E</text><text x=\"254\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">F</text><text x=\"294\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">G</text><text x=\"334\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">H</text><text x=\"22\" y=\"237\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><text x=\"22\" y=\"197\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><text x=\"22\" y=\"157\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><text x=\"22\" y=\"117\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><text x=\"22\" y=\"77\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"22\" y=\"37\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><rect x=\"117\" y=\"175\" width=\"34\" height=\"34\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"134\" y=\"196\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Ben</text><rect x=\"34\" y=\"12\" width=\"320\" height=\"240\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "E4",
+            "F4",
+            "F5",
+            "C5"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Moving right changes the letter. Moving up changes the number.",
+          "keyPoints": [
+            {
+              "text": "3 squares to the right and then 2 squares up",
+              "note": "Right changes the letter; up changes the number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Three squares right of C.",
+              "work": "\\(\\text{C}\\to\\text{D}\\to\\text{E}\\to\\text{F}\\)"
+            },
+            {
+              "explain": "Two squares up from row 2.",
+              "work": "\\(2+2=4\\ \\Rightarrow\\ \\boxed{\\text{F4}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 42,
+            "category": "grid maps",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq43",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The map shows Home, the Park, the Shop and the School. You can only move left, right, up or down from square to square (not diagonally). Which place is the <b>fewest</b> moves from Home?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 366 280\" width=\"62%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"34\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"54\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"94\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"134\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"174\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">D</text><text x=\"214\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">E</text><text x=\"254\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">F</text><text x=\"294\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">G</text><text x=\"334\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">H</text><text x=\"22\" y=\"237\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><text x=\"22\" y=\"197\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><text x=\"22\" y=\"157\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><text x=\"22\" y=\"117\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><text x=\"22\" y=\"77\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"22\" y=\"37\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><rect x=\"77\" y=\"175\" width=\"34\" height=\"34\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"94\" y=\"196\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Home</text><rect x=\"197\" y=\"15\" width=\"34\" height=\"34\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"214\" y=\"36\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Park</text><rect x=\"237\" y=\"135\" width=\"34\" height=\"34\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"254\" y=\"156\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Shop</text><rect x=\"77\" y=\"15\" width=\"34\" height=\"34\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"94\" y=\"36\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">School</text><rect x=\"34\" y=\"12\" width=\"320\" height=\"240\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "Park",
+            "Shop",
+            "Shop and School are equally close",
+            "School"
+          ],
+          "answer": 3,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Count the squares across and the squares up for each place.",
+          "keyPoints": [
+            {
+              "text": "not diagonally",
+              "note": "Add the moves across and the moves up."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the moves from Home (B2) to each place.",
+              "work": "\\(\\text{Park (E6)}: 3+4=7\\)\n\\(\\text{Shop (F3)}: 4+1=5\\)\n\\(\\text{School (B6)}: 0+4=4\\)"
+            },
+            {
+              "explain": "The School needs the fewest moves.",
+              "work": "\\(\\boxed{\\text{School}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 43,
+            "category": "grid maps",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq44",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A treasure is hidden in row 5. It is the same number of squares from the Rock as it is from the Tree, counting moves left, right, up or down (not diagonally). Which square is the treasure in?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 366 280\" width=\"62%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"34\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"34\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"74\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"154\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"194\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"274\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"212\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"172\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"132\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"92\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"52\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><rect x=\"314\" y=\"12\" width=\"40\" height=\"40\" fill=\"#fff\" stroke=\"#94a3b8\" stroke-width=\"1.2\" /><text x=\"54\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"94\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"134\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"174\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">D</text><text x=\"214\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">E</text><text x=\"254\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">F</text><text x=\"294\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">G</text><text x=\"334\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">H</text><text x=\"22\" y=\"237\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><text x=\"22\" y=\"197\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><text x=\"22\" y=\"157\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><text x=\"22\" y=\"117\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><text x=\"22\" y=\"77\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"22\" y=\"37\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><rect x=\"77\" y=\"175\" width=\"34\" height=\"34\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"94\" y=\"196\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Rock</text><rect x=\"237\" y=\"175\" width=\"34\" height=\"34\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"254\" y=\"196\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Tree</text><rect x=\"34\" y=\"12\" width=\"320\" height=\"240\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "C5",
+            "D5",
+            "E5",
+            "D2"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "The Rock and the Tree are in the same row. Which column is exactly halfway between them?",
+          "keyPoints": [
+            {
+              "text": "the same number of squares",
+              "note": "Look for the column halfway between the Rock and the Tree."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The Rock is in B2 and the Tree is in F2. The column halfway between B and F is D.",
+              "work": "\\(\\text{B, C, }\\mathbf{D}\\text{, E, F}\\)"
+            },
+            {
+              "explain": "The treasure is in row 5, so it is in D5. Check: both are 2 across and 3 up.",
+              "work": "\\(2+3=5\\text{ moves each}\\ \\Rightarrow\\ \\boxed{\\text{D5}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 44,
+            "category": "grid maps",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq45",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Squares are made in a row with matchsticks. 1 square uses 4 matchsticks, 2 squares use 7 and 3 squares use 10. How many matchsticks are needed for 5 squares in a row?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 308 82\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"12\" y=\"14\" width=\"34\" height=\"34\" fill=\"#fff\" stroke=\"#b45309\" stroke-width=\"3\" /><text x=\"29\" y=\"72\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1 square</text><rect x=\"80\" y=\"14\" width=\"34\" height=\"34\" fill=\"#fff\" stroke=\"#b45309\" stroke-width=\"3\" /><rect x=\"114\" y=\"14\" width=\"34\" height=\"34\" fill=\"#fff\" stroke=\"#b45309\" stroke-width=\"3\" /><text x=\"114\" y=\"72\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2 squares</text><rect x=\"182\" y=\"14\" width=\"34\" height=\"34\" fill=\"#fff\" stroke=\"#b45309\" stroke-width=\"3\" /><rect x=\"216\" y=\"14\" width=\"34\" height=\"34\" fill=\"#fff\" stroke=\"#b45309\" stroke-width=\"3\" /><rect x=\"250\" y=\"14\" width=\"34\" height=\"34\" fill=\"#fff\" stroke=\"#b45309\" stroke-width=\"3\" /><text x=\"233\" y=\"72\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3 squares</text></svg>"
+          },
+          "options": [
+            "13",
+            "15",
+            "16",
+            "20"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "How many extra matchsticks does each new square need?",
+          "keyPoints": [
+            {
+              "text": "in a row",
+              "note": "Neighbouring squares share one matchstick."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each new square needs 3 more matchsticks.",
+              "work": "\\(4,\\ 7,\\ 10,\\ \\dots\\)"
+            },
+            {
+              "explain": "Keep adding 3.",
+              "work": "\\(10+3=13,\\quad 13+3=\\boxed{16}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 45,
+            "category": "growing patterns",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq46",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Dots are arranged in a cross. Pattern 1 has 5 dots, Pattern 2 has 9 dots and Pattern 3 has 13 dots. How many dots are in Pattern 6?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 392 150\" width=\"75%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><circle cx=\"56\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"72\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"40\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"56\" cy=\"86\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"56\" cy=\"54\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><text x=\"56\" y=\"140\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Pattern 1</text><circle cx=\"164\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"180\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"148\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"164\" cy=\"86\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"164\" cy=\"54\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"196\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"132\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"164\" cy=\"102\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"164\" cy=\"38\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><text x=\"164\" y=\"140\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Pattern 2</text><circle cx=\"304\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"320\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"288\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"304\" cy=\"86\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"304\" cy=\"54\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"336\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"272\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"304\" cy=\"102\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"304\" cy=\"38\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"352\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"256\" cy=\"70\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"304\" cy=\"118\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><circle cx=\"304\" cy=\"22\" r=\"5\" fill=\"#475569\" stroke=\"none\" stroke-width=\"0\"/><text x=\"304\" y=\"140\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Pattern 3</text></svg>"
+          },
+          "options": [
+            "21",
+            "25",
+            "24",
+            "29"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "How many dots are added each time? Where are they added?",
+          "keyPoints": [
+            {
+              "text": "Pattern 6",
+              "note": "Each arm has the same number of dots as the pattern number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each new pattern adds one dot to each of the 4 arms.",
+              "work": "\\(5,\\ 9,\\ 13,\\ \\dots\\ (+4)\\)"
+            },
+            {
+              "explain": "Pattern 6 has 6 dots on each arm plus the centre dot.",
+              "work": "\\(4\\times6+1=\\boxed{25}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 46,
+            "category": "growing patterns",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq47",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Each figure is a square of grey tiles with a border of white tiles around it. Figure 1 has 8 white tiles, Figure 2 has 12 and Figure 3 has 16. How many <b>white</b> tiles are in Figure 6?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 134\" width=\"72%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"12\" y=\"30\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"12\" y=\"48\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"12\" y=\"66\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"30\" y=\"30\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"30\" y=\"48\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"30\" y=\"66\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"48\" y=\"30\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"48\" y=\"48\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"48\" y=\"66\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><text x=\"39\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Figure 1</text><rect x=\"96\" y=\"21\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"96\" y=\"39\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"96\" y=\"57\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"96\" y=\"75\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"21\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"39\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"57\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"114\" y=\"75\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"132\" y=\"21\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"132\" y=\"39\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"132\" y=\"57\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"132\" y=\"75\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"150\" y=\"21\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"150\" y=\"39\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"150\" y=\"57\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"150\" y=\"75\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><text x=\"132\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Figure 2</text><rect x=\"198\" y=\"12\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"198\" y=\"30\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"198\" y=\"48\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"198\" y=\"66\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"198\" y=\"84\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"216\" y=\"12\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"216\" y=\"30\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"216\" y=\"48\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"216\" y=\"66\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"216\" y=\"84\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"12\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"30\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"48\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"66\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"234\" y=\"84\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"252\" y=\"12\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"252\" y=\"30\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"252\" y=\"48\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"252\" y=\"66\" width=\"18\" height=\"18\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"252\" y=\"84\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"270\" y=\"12\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"270\" y=\"30\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"270\" y=\"48\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"270\" y=\"66\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><rect x=\"270\" y=\"84\" width=\"18\" height=\"18\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.2\" /><text x=\"243\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Figure 3</text></svg>"
+          },
+          "options": [
+            "24",
+            "28",
+            "32",
+            "36"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Figure 6 has a 6 by 6 grey square. How big is the whole square including the border?",
+          "keyPoints": [
+            {
+              "text": "white",
+              "note": "Only the border tiles are white."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The white tiles go up by 4 each time.",
+              "work": "\\(8,\\ 12,\\ 16,\\ 20,\\ 24,\\ 28\\)"
+            },
+            {
+              "explain": "Check with Figure 6: the whole square is 8 by 8 and the grey square is 6 by 6.",
+              "work": "\\(8\\times8-6\\times6=64-36=\\boxed{28}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 47,
+            "category": "growing patterns",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq48",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A number goes into this machine. What number comes out?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 80\" width=\"75%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><text x=\"49\" y=\"14\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">IN</text><rect x=\"10\" y=\"22\" width=\"78\" height=\"46\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"49\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><line x1=\"90\" y1=\"45\" x2=\"112\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"112,39 122,45 112,51\" fill=\"#475569\"/><rect x=\"124\" y=\"22\" width=\"78\" height=\"46\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"163\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">× 3</text><line x1=\"204\" y1=\"45\" x2=\"226\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"226,39 236,45 226,51\" fill=\"#475569\"/><rect x=\"238\" y=\"22\" width=\"78\" height=\"46\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"277\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">+ 2</text><line x1=\"318\" y1=\"45\" x2=\"340\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"340,39 350,45 340,51\" fill=\"#475569\"/><text x=\"391\" y=\"14\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">OUT</text><rect x=\"352\" y=\"22\" width=\"78\" height=\"46\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"391\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">?</text></svg>"
+          },
+          "options": [
+            "13",
+            "15",
+            "17",
+            "21"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Do the steps in order from left to right.",
+          "keyPoints": [
+            {
+              "text": "What number comes out",
+              "note": "Follow the arrows in order."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply by 3 first.",
+              "work": "\\(5\\times3=15\\)"
+            },
+            {
+              "explain": "Then add 2.",
+              "work": "\\(15+2=\\boxed{17}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 48,
+            "category": "number machines",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq49",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The number 26 comes out of this machine. What number went in?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 80\" width=\"75%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><text x=\"49\" y=\"14\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">IN</text><rect x=\"10\" y=\"22\" width=\"78\" height=\"46\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"49\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">?</text><line x1=\"90\" y1=\"45\" x2=\"112\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"112,39 122,45 112,51\" fill=\"#475569\"/><rect x=\"124\" y=\"22\" width=\"78\" height=\"46\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"163\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">× 4</text><line x1=\"204\" y1=\"45\" x2=\"226\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"226,39 236,45 226,51\" fill=\"#475569\"/><rect x=\"238\" y=\"22\" width=\"78\" height=\"46\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"277\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">− 6</text><line x1=\"318\" y1=\"45\" x2=\"340\" y2=\"45\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"340,39 350,45 340,51\" fill=\"#475569\"/><text x=\"391\" y=\"14\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">OUT</text><rect x=\"352\" y=\"22\" width=\"78\" height=\"46\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"2\" rx=\"6\"/><text x=\"391\" y=\"51\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">26</text></svg>"
+          },
+          "options": [
+            "5",
+            "8",
+            "7",
+            "98"
+          ],
+          "answer": 1,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Work backwards: undo the last step first.",
+          "keyPoints": [
+            {
+              "text": "What number went in",
+              "note": "Go backwards and do the opposite of each step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Undo \"− 6\" by adding 6.",
+              "work": "\\(26+6=32\\)"
+            },
+            {
+              "explain": "Undo \"× 4\" by dividing by 4.",
+              "work": "\\(32\\div4=\\boxed{8}\\)"
+            },
+            {
+              "explain": "Check.",
+              "work": "\\(8\\times4-6=26\\) ✓"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 49,
+            "category": "number machines",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq50",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The number in the circle of each triangle is made from the three corner numbers using the same rule. What is the missing number?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 124\" width=\"85%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><polygon points=\"65,14 15,112 115,112\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"65\" y=\"44\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><text x=\"32\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><text x=\"98\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><circle cx=\"65\" cy=\"78\" r=\"15\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"65\" y=\"83\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">10</text><polygon points=\"195,14 145,112 245,112\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"195\" y=\"44\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"162\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><text x=\"228\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><circle cx=\"195\" cy=\"78\" r=\"15\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"195\" y=\"83\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">7</text><polygon points=\"325,14 275,112 375,112\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"325\" y=\"44\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><text x=\"292\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><text x=\"358\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><circle cx=\"325\" cy=\"78\" r=\"15\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"325\" y=\"83\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><polygon points=\"455,14 405,112 505,112\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"455\" y=\"44\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><text x=\"422\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><text x=\"488\" y=\"106\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><circle cx=\"455\" cy=\"78\" r=\"15\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"455\" y=\"83\" font-size=\"14\" font-weight=\"600\" fill=\"#b45309\" text-anchor=\"middle\">?</text></svg>"
+          },
+          "options": [
+            "9",
+            "14",
+            "15",
+            "16"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Try multiplying the two bottom numbers. How is the answer connected to the top number and the circle?",
+          "keyPoints": [
+            {
+              "text": "the same rule",
+              "note": "Test your rule on every triangle before using it."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In the first triangle, the bottom numbers multiply to 12 and the circle is 10. That is 12 take away the top number.",
+              "work": "\\(3\\times4-2=10\\)"
+            },
+            {
+              "explain": "Check the rule on the next two triangles.",
+              "work": "\\(2\\times6-5=7,\\quad 4\\times2-4=4\\) ✓"
+            },
+            {
+              "explain": "Use the rule on the last triangle.",
+              "work": "\\(5\\times3-1=\\boxed{14}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 50,
+            "category": "number puzzles",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq51",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The scale shows that 1 cube balances 3 balls. How many balls would balance <b>2 cubes and 1 ball</b>?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 110\" width=\"60%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"40\" y1=\"70\" x2=\"330\" y2=\"70\" stroke=\"#475569\" stroke-width=\"4\" /><polygon points=\"185,72 170,100 200,100\" fill=\"#475569\"/><rect x=\"92\" y=\"42\" width=\"26\" height=\"26\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" /><circle cx=\"235\" cy=\"55\" r=\"13\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"265\" cy=\"55\" r=\"13\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"295\" cy=\"55\" r=\"13\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/></svg>"
+          },
+          "options": [
+            "5",
+            "7",
+            "6",
+            "9"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Swap each cube for the balls it balances.",
+          "keyPoints": [
+            {
+              "text": "1 cube balances 3 balls",
+              "note": "A cube can be swapped for 3 balls."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each cube is the same as 3 balls.",
+              "work": "\\(2\\times3=6\\text{ balls}\\)"
+            },
+            {
+              "explain": "Add the extra ball.",
+              "work": "\\(6+1=\\boxed{7}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 51,
+            "category": "balance scales",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq52",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Both scales balance. How many balls would balance <b>1 cube</b>?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 220\" width=\"60%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"40\" y1=\"70\" x2=\"330\" y2=\"70\" stroke=\"#475569\" stroke-width=\"4\" /><polygon points=\"185,72 170,100 200,100\" fill=\"#475569\"/><polygon points=\"90.0,42 77.0,68 103.0,68\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"120.0,42 107.0,68 133.0,68\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"207.5\" cy=\"58\" r=\"10\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"230.5\" cy=\"58\" r=\"10\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"253.5\" cy=\"58\" r=\"10\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"276.5\" cy=\"58\" r=\"10\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"299.5\" cy=\"58\" r=\"10\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"322.5\" cy=\"58\" r=\"10\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"40\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"#475569\" stroke-width=\"4\" /><polygon points=\"185,182 170,210 200,210\" fill=\"#475569\"/><rect x=\"92\" y=\"152\" width=\"26\" height=\"26\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" /><polygon points=\"250.0,152 237.0,178 263.0,178\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"280.0,152 267.0,178 293.0,178\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "6",
+            "12"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Use the top scale to find how many balls balance one triangle.",
+          "keyPoints": [
+            {
+              "text": "Both scales balance",
+              "note": "Use one scale to help with the other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Top scale: 2 triangles balance 6 balls, so 1 triangle balances 3 balls.",
+              "work": "\\(6\\div2=3\\)"
+            },
+            {
+              "explain": "Bottom scale: 1 cube balances 2 triangles.",
+              "work": "\\(2\\times3=\\boxed{6}\\text{ balls}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 52,
+            "category": "balance scales",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq53",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cube and a ball together have a mass of 10 kg. A cube and two balls together have a mass of 13 kg. All cubes are the same and all balls are the same. What is the mass of <b>one cube</b>?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 150\" width=\"60%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"52\" y=\"24\" width=\"36\" height=\"36\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" /><circle cx=\"115\" cy=\"46\" r=\"14\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"92\" y=\"84\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">10 kg</text><rect x=\"212\" y=\"24\" width=\"36\" height=\"36\" fill=\"#e0e7ff\" stroke=\"#475569\" stroke-width=\"2\" /><circle cx=\"275\" cy=\"46\" r=\"14\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"308\" cy=\"46\" r=\"14\" fill=\"#fef3c7\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"268\" y=\"84\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">13 kg</text><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"95\" stroke=\"#cbd5e1\" stroke-width=\"1\" /></svg>"
+          },
+          "options": [
+            "3 kg",
+            "4 kg",
+            "5 kg",
+            "7 kg"
+          ],
+          "answer": 3,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "What is the only difference between the two groups?",
+          "keyPoints": [
+            {
+              "text": "one cube",
+              "note": "Find the ball first, then the cube."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The second group has one extra ball and is 3 kg heavier.",
+              "work": "\\(13-10=3\\text{ kg}=\\text{one ball}\\)"
+            },
+            {
+              "explain": "A cube and a ball make 10 kg.",
+              "work": "\\(10-3=\\boxed{7\\text{ kg}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 53,
+            "category": "balance scales",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq54",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The diagram shows how many children in a class can swim and how many can ride a bike. How many children can <b>swim</b>?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"62%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"204\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><circle cx=\"140\" cy=\"115\" r=\"78\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"220\" cy=\"115\" r=\"78\" fill=\"#fef3c7\" fill-opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"105\" y=\"30\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Swim</text><text x=\"255\" y=\"30\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Ride a bike</text><text x=\"105\" y=\"121\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">7</text><text x=\"180\" y=\"121\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><text x=\"255\" y=\"121\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">9</text><text x=\"326\" y=\"198\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text></svg>"
+          },
+          "options": [
+            "4",
+            "7",
+            "11",
+            "16"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Count every number that is inside the Swim circle.",
+          "keyPoints": [
+            {
+              "text": "swim",
+              "note": "Children in the overlap can swim too."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The Swim circle has two parts: swim only, and both.",
+              "work": "\\(7+4\\)"
+            },
+            {
+              "explain": "Add them.",
+              "work": "\\(7+4=\\boxed{11}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 54,
+            "category": "venn diagrams",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq55",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The diagram shows how many children in a club play chess and how many play tennis. How many children play <b>exactly one</b> of the two games?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 220\" width=\"62%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"204\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><circle cx=\"140\" cy=\"115\" r=\"78\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2\"/><circle cx=\"220\" cy=\"115\" r=\"78\" fill=\"#fef3c7\" fill-opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"105\" y=\"30\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Chess</text><text x=\"255\" y=\"30\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Tennis</text><text x=\"105\" y=\"121\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">8</text><text x=\"180\" y=\"121\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><text x=\"255\" y=\"121\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><text x=\"326\" y=\"198\" font-size=\"18\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text></svg>"
+          },
+          "options": [
+            "14",
+            "11",
+            "17",
+            "21"
+          ],
+          "answer": 0,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Children in the overlap play both games, so they are not counted.",
+          "keyPoints": [
+            {
+              "text": "exactly one",
+              "note": "Leave out the overlap and the number outside the circles."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Chess only is 8 and tennis only is 6.",
+              "work": "\\(8+6\\)"
+            },
+            {
+              "explain": "Do not count the 3 who play both or the 4 who play neither.",
+              "work": "\\(8+6=\\boxed{14}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 55,
+            "category": "venn diagrams",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq56",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph shows the fare for a taxi ride. What is the fare for a ride of 5 km?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 266\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"58\" y1=\"220\" x2=\"58\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">0</text><line x1=\"88\" y1=\"220\" x2=\"88\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"88\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><line x1=\"118\" y1=\"220\" x2=\"118\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"118\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><line x1=\"148\" y1=\"220\" x2=\"148\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"148\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><line x1=\"178\" y1=\"220\" x2=\"178\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"178\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><line x1=\"208\" y1=\"220\" x2=\"208\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"208\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><line x1=\"238\" y1=\"220\" x2=\"238\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"238\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><line x1=\"268\" y1=\"220\" x2=\"268\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"268\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">7</text><line x1=\"298\" y1=\"220\" x2=\"298\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"298\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">8</text><line x1=\"328\" y1=\"220\" x2=\"328\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"328\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">9</text><line x1=\"358\" y1=\"220\" x2=\"358\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"358\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">10</text><line x1=\"58\" y1=\"220\" x2=\"358\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"224\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0</text><line x1=\"58\" y1=\"188.333\" x2=\"358\" y2=\"188.333\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"192.333\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">4</text><line x1=\"58\" y1=\"156.667\" x2=\"358\" y2=\"156.667\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"160.667\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">8</text><line x1=\"58\" y1=\"125\" x2=\"358\" y2=\"125\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"129\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">12</text><line x1=\"58\" y1=\"93.3333\" x2=\"358\" y2=\"93.3333\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"97.3333\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">16</text><line x1=\"58\" y1=\"61.6667\" x2=\"358\" y2=\"61.6667\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"65.6667\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">20</text><line x1=\"58\" y1=\"30\" x2=\"358\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"34\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">24</text><line x1=\"58\" y1=\"220\" x2=\"358\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"58\" y1=\"220\" x2=\"58\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"58\" y1=\"188.333\" x2=\"358\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><text x=\"208\" y=\"256\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Distance (km)</text><text x=\"14\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 14 125)\">Fare ($)</text></svg>"
+          },
+          "options": [
+            "\\(\\$10\\)",
+            "\\(\\$12\\)",
+            "\\(\\$14\\)",
+            "\\(\\$16\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Find 5 on the distance axis, go up to the line, then across to the fare axis.",
+          "keyPoints": [
+            {
+              "text": "5 km",
+              "note": "Start on the bottom axis."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Go up from 5 km to the line."
+            },
+            {
+              "explain": "The line is halfway between \\(\\$12\\) and \\(\\$16\\) there.",
+              "work": "\\(\\boxed{\\$14}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 56,
+            "category": "line graphs",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq57",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The graph shows the fare for a taxi ride. Kim paid \\(\\$20\\) for a ride. Tao paid \\(\\$8\\) for a ride. How much <b>further</b> did Kim travel than Tao?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 266\" width=\"70%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><line x1=\"58\" y1=\"220\" x2=\"58\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">0</text><line x1=\"88\" y1=\"220\" x2=\"88\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"88\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><line x1=\"118\" y1=\"220\" x2=\"118\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"118\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><line x1=\"148\" y1=\"220\" x2=\"148\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"148\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><line x1=\"178\" y1=\"220\" x2=\"178\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"178\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">4</text><line x1=\"208\" y1=\"220\" x2=\"208\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"208\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">5</text><line x1=\"238\" y1=\"220\" x2=\"238\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"238\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">6</text><line x1=\"268\" y1=\"220\" x2=\"268\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"268\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">7</text><line x1=\"298\" y1=\"220\" x2=\"298\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"298\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">8</text><line x1=\"328\" y1=\"220\" x2=\"328\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"328\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">9</text><line x1=\"358\" y1=\"220\" x2=\"358\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"358\" y=\"236\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">10</text><line x1=\"58\" y1=\"220\" x2=\"358\" y2=\"220\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"224\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">0</text><line x1=\"58\" y1=\"188.333\" x2=\"358\" y2=\"188.333\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"192.333\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">4</text><line x1=\"58\" y1=\"156.667\" x2=\"358\" y2=\"156.667\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"160.667\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">8</text><line x1=\"58\" y1=\"125\" x2=\"358\" y2=\"125\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"129\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">12</text><line x1=\"58\" y1=\"93.3333\" x2=\"358\" y2=\"93.3333\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"97.3333\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">16</text><line x1=\"58\" y1=\"61.6667\" x2=\"358\" y2=\"61.6667\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"65.6667\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">20</text><line x1=\"58\" y1=\"30\" x2=\"358\" y2=\"30\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"50\" y=\"34\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">24</text><line x1=\"58\" y1=\"220\" x2=\"358\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"58\" y1=\"220\" x2=\"58\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\" /><line x1=\"58\" y1=\"188.333\" x2=\"358\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"2.5\" /><text x=\"208\" y=\"256\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">Distance (km)</text><text x=\"14\" y=\"125\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 14 125)\">Fare ($)</text></svg>"
+          },
+          "options": [
+            "4 km",
+            "6 km",
+            "8 km",
+            "12 km"
+          ],
+          "answer": 1,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Read the distance for each fare from the graph, then subtract.",
+          "keyPoints": [
+            {
+              "text": "further",
+              "note": "Find both distances, then subtract."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read across from each fare to the line, then down.",
+              "work": "\\(\\$20\\to8\\text{ km},\\quad \\$8\\to2\\text{ km}\\)"
+            },
+            {
+              "explain": "Find the difference.",
+              "work": "\\(8-2=\\boxed{6\\text{ km}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 57,
+            "category": "line graphs",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq58",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many lines of symmetry does this rectangle have?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 130\" width=\"45%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"20\" y=\"20\" width=\"220\" height=\"90\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" /></svg>"
+          },
+          "options": [
+            "0",
+            "1",
+            "2",
+            "4"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine folding the rectangle so that one half lands exactly on the other.",
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry is a fold line where both halves match."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "It folds exactly in half across the middle and down the middle.",
+              "work": "\\(2\\text{ fold lines}\\)"
+            },
+            {
+              "explain": "Folding along a diagonal does not work because the corners do not meet.",
+              "work": "\\(\\boxed{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 58,
+            "category": "symmetry",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq59",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The plan shows a building made of cubes, seen from above. The number in each square shows how many cubes are stacked on that square. How many cubes are in the building altogether?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 168 120\" width=\"36%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"12\" y=\"12\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"36\" y=\"42\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"60\" y=\"12\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"84\" y=\"42\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"108\" y=\"12\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"132\" y=\"42\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"12\" y=\"60\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"36\" y=\"90\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"60\" y=\"60\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"84\" y=\"90\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"108\" y=\"60\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"132\" y=\"90\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text></svg>"
+          },
+          "options": [
+            "6",
+            "9",
+            "11",
+            "12"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Each number is a stack of cubes. Add all the stacks.",
+          "keyPoints": [
+            {
+              "text": "how many cubes are stacked on that square",
+              "note": "Each number is the height of one stack."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the numbers in the plan.",
+              "work": "\\(3+1+2+2+2+1\\)"
+            },
+            {
+              "explain": "Total.",
+              "work": "\\(=\\boxed{11}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 59,
+            "category": "cube stacks",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq60",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The plan shows a building made of cubes, seen from above. The number in each square shows how many cubes are stacked on that square. The front of the building is the bottom edge of the plan. When you look at the building from the <b>front</b>, how many squares do you see?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 168 120\" width=\"36%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"12\" y=\"12\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"36\" y=\"42\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">3</text><rect x=\"60\" y=\"12\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"84\" y=\"42\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text><rect x=\"108\" y=\"12\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"132\" y=\"42\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"12\" y=\"60\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"36\" y=\"90\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"60\" y=\"60\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"84\" y=\"90\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">2</text><rect x=\"108\" y=\"60\" width=\"48\" height=\"48\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"132\" y=\"90\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1</text></svg>"
+          },
+          "options": [
+            "7",
+            "6",
+            "8",
+            "11"
+          ],
+          "answer": 0,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "From the front you see each column of the plan as one stack, as tall as its tallest stack.",
+          "keyPoints": [
+            {
+              "text": "front",
+              "note": "From the front, each column looks as tall as its tallest stack."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For each column, take the tallest stack.",
+              "work": "\\(\\text{left: }3,\\quad \\text{middle: }2,\\quad \\text{right: }2\\)"
+            },
+            {
+              "explain": "Add the three heights.",
+              "work": "\\(3+2+2=\\boxed{7}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 60,
+            "category": "cube stacks",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq61",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "This shape is drawn on a grid. Each small square is 2 cm by 2 cm. What is the <b>perimeter</b> of the shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 144\" width=\"40%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"12\" y=\"12\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"12\" y=\"52\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"12\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"52\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"92\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"132\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"52\" y=\"52\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /></svg>"
+          },
+          "options": [
+            "14 cm",
+            "24 cm",
+            "28 cm",
+            "32 cm"
+          ],
+          "answer": 2,
+          "timeLimit": 75,
+          "xp": 1,
+          "hint": "Count the square edges around the outside, then remember each edge is 2 cm long.",
+          "keyPoints": [
+            {
+              "text": "2 cm by 2 cm",
+              "note": "Each edge of a small square is 2 cm, not 1 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the edges around the outside of the shape.",
+              "work": "\\(14\\text{ edges}\\)"
+            },
+            {
+              "explain": "Each edge is 2 cm long.",
+              "work": "\\(14\\times2=\\boxed{28\\text{ cm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 61,
+            "category": "perimeter and area",
+            "origin": "generated"
+          }
+        },
+        {
+          "id": "sch-acer-gen1-mq62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "This shape is drawn on a grid. Each small square is 2 cm by 2 cm. What is the <b>area</b> of the shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184 144\" width=\"40%\" height=\"auto\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\"><rect x=\"12\" y=\"12\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"12\" y=\"52\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"12\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"52\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"92\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"132\" y=\"92\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"52\" y=\"52\" width=\"40\" height=\"40\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.5\" /></svg>"
+          },
+          "options": [
+            "7 square cm",
+            "14 square cm",
+            "49 square cm",
+            "28 square cm"
+          ],
+          "answer": 3,
+          "timeLimit": 100,
+          "xp": 1,
+          "hint": "Find the area of one small square first.",
+          "keyPoints": [
+            {
+              "text": "2 cm by 2 cm",
+              "note": "Each small square has an area of 4 square cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "One small square is 2 cm by 2 cm.",
+              "work": "\\(2\\times2=4\\text{ square cm}\\)"
+            },
+            {
+              "explain": "The shape is made of 7 small squares.",
+              "work": "\\(7\\times4=\\boxed{28\\text{ square cm}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "ACER-style practice · generated",
+            "test": "Generated Set 1 (2026-11)",
+            "section": "Mathematics",
+            "number": 62,
+            "category": "perimeter and area",
+            "origin": "generated"
+          }
         }
       ]
     }
