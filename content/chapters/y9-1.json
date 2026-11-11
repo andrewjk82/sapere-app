@@ -81,11 +81,30 @@
           "id": "6wN2YidtSskRmD8qZ0uW",
           "type": "short",
           "difficulty": "hard",
-          "stem": "Expand: $(3a + 2b)(a - 4b)$",
-          "answer": "$3a^2 - 10ab - 8b^2$",
-          "solution": "FOIL: $3a^2 - 12ab + 2ab - 8b^2 = 3a^2 - 10ab - 8b^2$",
+          "stem": "Expand: \\((3a+2b)(a-4b)\\)",
+          "answer": "3a^2 - 10ab - 8b^2",
+          "solution": "\\(3a^2-10ab-8b^2\\)",
           "timeLimit": 60,
-          "xp": 2
+          "xp": 2,
+          "hint": "Multiply every term in the first bracket by every term in the second bracket, then collect like terms.",
+          "steps": [
+            {
+              "explain": "Multiply each term in the first bracket by each term in the second bracket (FOIL: First, Outer, Inner, Last).",
+              "work": "\\((3a+2b)(a-4b)=3a\\times a+3a\\times(-4b)+2b\\times a+2b\\times(-4b)\\)"
+            },
+            {
+              "explain": "Work out each product.",
+              "work": "\\(=3a^2-12ab+2ab-8b^2\\)"
+            },
+            {
+              "explain": "Collect the like terms \\(-12ab\\) and \\(+2ab\\).",
+              "work": "\\(-12ab+2ab=-10ab\\)"
+            },
+            {
+              "explain": "Write the final expanded expression.",
+              "work": "\\(3a^2-10ab-8b^2\\)"
+            }
+          ]
         },
         {
           "id": "TkB02RukZuRQvD2thgub",
