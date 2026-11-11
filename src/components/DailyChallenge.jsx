@@ -77,6 +77,7 @@ import { takePlanStart } from '../utils/planStart';
 import { buildRecentPracticePatch } from '../utils/recentPractice';
 import { queueWriteGroups } from '../utils/queueWriteGroups';
 import LoadingScreen from './LoadingScreen';
+import { slimResultsForDraft, storeDraftImages, hydrateDraftResults, clearDraftImages } from '../utils/quizDraftImages';
 
 // FlameBuddy's hint bubble wants one plain string. `hint` is not always a
 // string in the bank (some seeds store an array of step objects), and
@@ -242,6 +243,21 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
   // Save draft on every meaningful state change while quiz is running.
   // We record savedAt so on return we can compute elapsed time precisely.
+  // Working-out images go to IndexedDB once per answer (utils/quizDraftImages); the draft below only carries
+  // them until IndexedDB has confirmed it holds them.
+  const draftImagesStoredRef = useRef({});
+  const [draftImagesTick, setDraftImagesTick] = useState(0);
+  useEffect(() => {
+    if (step !== 'quiz' || !user?.uid) return;
+    let cancelled = false;
+    storeDraftImages(user.uid, today, answerResults, draftImagesStoredRef.current).then((done) => {
+      if (cancelled || Object.keys(done).length === 0) return;
+      draftImagesStoredRef.current = { ...draftImagesStoredRef.current, ...done };
+      setDraftImagesTick((n) => n + 1);
+    });
+    return () => { cancelled = true; };
+  }, [step, answerResults, user?.uid, today]);
+
   useEffect(() => {
     if (step !== 'quiz' || !draftKey || questions.length === 0) return;
     const draft = {
@@ -253,7 +269,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       currentIdx,
       score,
       userAnswers,
-      answerResults,
+      answerResults: slimResultsForDraft(answerResults, draftImagesStoredRef.current),
       shuffledOptions,
       subAnswers,
       timeLeft,
@@ -262,10 +278,14 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       savedAt: Date.now(),
     };
     try { localStorage.setItem(draftKey, JSON.stringify(draft)); } catch {}
-  }, [step, currentIdx, score, userAnswers, answerResults, shuffledOptions, subAnswers, timeLeft, attempt, solvedParts]);
+  }, [step, currentIdx, score, userAnswers, answerResults, shuffledOptions, subAnswers, timeLeft, attempt, solvedParts, draftImagesTick]);
 
   // Clear draft when quiz finishes (normally or abandoned).
-  const clearDraft = () => { if (draftKey) try { localStorage.removeItem(draftKey); } catch {} };
+  const clearDraft = () => {
+    if (draftKey) try { localStorage.removeItem(draftKey); } catch {}
+    draftImagesStoredRef.current = {};
+    clearDraftImages(user?.uid);
+  };
 
   // On mount: check for an in-progress draft from today.
   // Fast-forward the timer: each question that would have timed out while the
@@ -275,11 +295,18 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [restoredDraft, setRestoredDraft] = useState(null);
   useEffect(() => {
     if (!draftKey) return;
+    let cancelled = false;
+    (async () => {
     try {
       const raw = localStorage.getItem(draftKey);
       if (!raw) return;
       const draft = JSON.parse(raw);
-      if (draft.date !== today) { localStorage.removeItem(draftKey); return; }
+      if (draft.date !== today) { localStorage.removeItem(draftKey); clearDraftImages(user?.uid); return; }
+      // Working-out images are kept in IndexedDB, not in the draft: put them back before anything uses the results.
+      const hydrated = await hydrateDraftResults(user?.uid, draft.date, draft.answerResults);
+      if (cancelled) return;
+      draft.answerResults = hydrated.results;
+      draftImagesStoredRef.current = hydrated.stored;
 
       // No clock, nothing to burn: an untimed session resumes exactly where the student left it.
       if (!isTimedSession(draft.challengeType)) {
@@ -316,6 +343,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       const allExpired = idx >= draft.questions.length;
       setRestoredDraft({ ...draft, currentIdx: idx, userAnswers: ua, answerResults: ar, timeLeft: Math.floor(qTimeLeft), allExpired });
     } catch {}
+    })();
+    return () => { cancelled = true; };
   }, [draftKey]);
 
   // ── Convenience helpers ──
