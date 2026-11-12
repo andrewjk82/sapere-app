@@ -18,7 +18,7 @@ The target is all matching products indexed by the four retailers at check time.
 
 ## Architecture
 
-Build a small Node.js 20 service contained in `pokemon-stock-monitor/` with its own `package.json`, configuration example, documentation, and state directory. It has four retailer adapters that normalize retailer-specific pages or public endpoints into a common product and availability record. The shared pipeline performs discovery, product de-duplication, online/store stock checks, digest formatting, and Telegram delivery.
+Build a small Node.js 24 service contained in `pokemon-stock-monitor/` with its own `package.json`, configuration example, documentation, and state directory. It has four retailer adapters that normalize retailer-specific pages or public endpoints into a common product and availability record. The shared pipeline performs discovery, product de-duplication, online/store stock checks, digest formatting, and Telegram delivery.
 
 Use only unauthenticated, publicly accessible storefront information. Apply conservative request pacing, bounded concurrency, caching, and per-retailer timeouts. Do not bypass login, access controls, CAPTCHAs, or anti-bot challenges. If a site changes or declines automated requests, mark that retailer as unavailable in the digest and logs rather than inferring stock.
 
@@ -26,9 +26,9 @@ Persist the discovered catalog and last check metadata in a local state file so 
 
 ## Scheduling and delivery
 
-Run the monitor as a standalone process on the user's Mac, scheduled every 30 minutes with a macOS LaunchAgent. The computer must be awake and connected for checks to run. The schedule uses Australia/Sydney local operation and sends each completed run's digest through Telegram's HTTPS Bot API `sendMessage` method.
+Run the monitor on the user's Raspberry Pi with 64-bit Raspberry Pi OS, scheduled every 30 minutes with a `systemd` timer. The Pi must be powered on and connected for checks to run. The timer starts checks at 30-minute intervals and allows the service to recover after reboot. The schedule uses Australia/Sydney local time and sends each completed run's digest through Telegram's HTTPS Bot API `sendMessage` method.
 
-Configuration is read from environment variables (documented in `.env.example`): Telegram bot token, Telegram chat ID, and the postcode (default `2067`). Never commit real credentials or include them in logs. Setup documentation explains creating a bot, obtaining the chat ID, installing dependencies, validating credentials with a test send, and loading/unloading the LaunchAgent.
+Configuration is read from environment variables (documented in `.env.example`): Telegram bot token, Telegram chat ID, and the postcode (default `2067`). Never commit real credentials or include them in logs. Setup documentation explains installing Node.js 24 and dependencies on Raspberry Pi OS, creating a bot, obtaining the chat ID, validating credentials with a test send, and enabling/disabling the `systemd` service and timer.
 
 ## Data model
 
@@ -40,7 +40,7 @@ Each normalized product has retailer, product ID or canonical URL, name, product
 - Search coverage depends on each retailer's public catalog and matching terms; completeness cannot be guaranteed.
 - Store inventory can change between checks and may differ from shelf stock. The report is informational, not a reservation.
 - Public storefront access may not expose every store-level status or exact quantities.
-- A Mac that is asleep or offline will miss scheduled checks until it is available again.
+- A Pi that is powered off or offline will miss scheduled checks until it is available again.
 - Repeated 30-minute digests are intentional, even when availability has not changed, because the requested behaviour is a periodic report.
 
 ## Validation
