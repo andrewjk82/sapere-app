@@ -2948,7 +2948,7 @@
         },
         {
           "id": "y10-8e-q1b-a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Find the value of the pronumeral \\(x\\) in the given diagram.",
           "figure": {
@@ -3051,30 +3051,35 @@
               ]
             }
           },
-          "answer": "3",
-          "hint": "Set up a similarity ratio with the parallel sides: \\(\\frac{\\text{small}}{\\text{large}} = \\frac{3}{5}\\).",
-          "solution": "3",
+          "answer": 1,
+          "hint": "\\(PQ\\parallel BC\\), so triangle \\(APQ\\) is similar to triangle \\(ABC\\). Set up \\(\\dfrac{AQ}{AC}=\\dfrac{PQ}{BC}\\) with \\(AC=x+2\\).",
+          "solution": "\\(\\dfrac{x}{x+2}=\\dfrac{3}{5}\\Rightarrow 5x=3x+6\\Rightarrow x=3\\)",
           "steps": [
             {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
+              "explain": "The marks show that \\(PQ\\parallel BC\\), so the small triangle \\(APQ\\) and the large triangle \\(ABC\\) have equal corresponding angles. They are similar triangles.",
+              "work": "\\(\\triangle APQ\\sim\\triangle ABC\\)"
             },
             {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
+              "explain": "Corresponding sides are in the same ratio. The whole side \\(AC\\) is \\(AQ+QC=x+2\\), and the parallel sides are \\(PQ=3\\) and \\(BC=5\\).",
+              "work": "\\(\\dfrac{AQ}{AC}=\\dfrac{PQ}{BC}\\ \\Rightarrow\\ \\dfrac{x}{x+2}=\\dfrac{3}{5}\\)"
             },
             {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
+              "explain": "Cross-multiply to remove the fractions.",
+              "work": "\\(5x=3(x+2)\\)"
             },
             {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "3"
+              "explain": "Expand the bracket and solve for \\(x\\).",
+              "work": "\\(5x=3x+6\\ \\Rightarrow\\ 2x=6\\ \\Rightarrow\\ x=3\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ]
         },
         {
           "id": "y10-8e-q1b-b",
