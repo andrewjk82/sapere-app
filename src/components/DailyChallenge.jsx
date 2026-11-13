@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
-import { db } from '../firebase/config';
+import { db, wantsForcedLongPolling, requestForcedLongPolling } from '../firebase/config';
 import {
   doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, writeBatch, increment, deleteField,
 } from 'firebase/firestore';
@@ -723,6 +723,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   };
 
   const startDailyQuiz = async (modeId = 'normal') => {
+    let stage = 'setup'; // which step failed, shown in the error so a screenshot is enough to diagnose
     try {
       const mode = getChallengeMode(modeId);
       challengeModeRef.current = mode.id;
@@ -751,6 +752,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // legitimately exceed 20s. The rebuild is a one-time cost per student per
       // signature change; 45s lets it finish instead of hard-failing with
       // "Failed to start challenge (Assignment load timed out)".
+      stage = 'load';
       const assignment = await Promise.race([
         fetchOrCreateDailyAssignment({
           uid: user?.uid,
@@ -760,6 +762,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         }),
         new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 45000)),
       ]);
+      stage = 'prepare';
       const rawQs = (assignment.questions || []).map(correctQuestionAnswer);
       if (rawQs.length === 0) throw new Error('No daily assignment questions were generated.');
       const combinedQs = applyModeTimeScale(rawQs, mode.id);
@@ -773,6 +776,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // Firestore setDoc promises only resolve on backend acknowledgement, so an
       // offline/quota-stalled connection leaves the write pending forever — never
       // rejecting, so the catch never fires and `loading` never clears.
+      stage = 'begin';
       beginQuiz(combinedQs);
       setAbandonedToday(true);
       mergeChallengeBootCache(user?.uid, { date: today, dailyStatus: 'abandoned', todayCompleted: false, abandonedToday: true, savedAt: Date.now() });
@@ -798,7 +802,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       }
     } catch (error) {
       console.error('Critical error in startDailyQuiz:', error);
-      showToast(`Failed to start challenge${error?.message ? ` (${error.message})` : ''}. Please check your assigned curriculum or try again later.`, 'error');
+      // The load stalled (no answer from Firestore): switch this device to long polling, which gets through networks
+      // that swallow the normal connection, and reload once so the setting applies.
+      const detail = error?.message || error?.code || (error ? String(error) : '') || 'no details';
+      if ((stage === 'load' && (!error?.message || /timed out|timeout/i.test(error.message))) && !wantsForcedLongPolling()) {
+        requestForcedLongPolling();
+        showToast('The connection is slow. Reconnecting in a safer mode…', 'info');
+        setTimeout(() => window.location.reload(), 1500);
+        return;
+      }
+      showToast(`Failed to start challenge (${stage}: ${detail}). Please check your assigned curriculum or try again later.`, 'error');
       if (setIsLocked) setIsLocked(false);
       setLoading(false);
     }

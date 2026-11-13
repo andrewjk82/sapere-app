@@ -27,6 +27,22 @@ export const googleProvider = new GoogleAuthProvider();
 // stuck fighting for the IndexedDB lock (failed-precondition) instead of
 // sharing the cache. That lock contention was hanging plain getDocs()
 // calls (e.g. the leaderboard rank fetch) on the second open.
+// A network that blocks Firestore's streaming connection in a way auto-detect does not notice leaves every read
+// waiting forever (iPad on Wi-Fi: Daily Practice stuck on "Loading…" until it times out). Long polling is slower but
+// goes through. A device that hit such a timeout asks for it (DailyChallenge sets this flag); opening the app with
+// ?longpoll=1 sets it by hand, ?longpoll=0 clears it. Read once at start-up, so it takes effect after a reload.
+const LONG_POLL_KEY = 'sapere:forceLongPolling';
+export const wantsForcedLongPolling = () => {
+  try {
+    const q = new URLSearchParams(window.location.search).get('longpoll');
+    if (q === '1') window.localStorage.setItem(LONG_POLL_KEY, '1');
+    if (q === '0') window.localStorage.removeItem(LONG_POLL_KEY);
+    return window.localStorage.getItem(LONG_POLL_KEY) === '1';
+  } catch { return false; }
+};
+export const requestForcedLongPolling = () => { try { window.localStorage.setItem(LONG_POLL_KEY, '1'); } catch { /* ignore */ } };
+const forceLongPolling = wantsForcedLongPolling();
+
 let firestoreDb;
 try {
   firestoreDb = initializeFirestore(app, {
@@ -35,7 +51,7 @@ try {
     // The device then silently runs on its offline cache: a checked homework still shows "Submitted", cheat sheets
     // and curriculum never update (2026-10-12 Thiery's iPad). Auto-detect falls back to long polling only when the
     // normal connection fails to establish; networks where it works are unaffected.
-    experimentalAutoDetectLongPolling: true,
+    ...(forceLongPolling ? { experimentalForceLongPolling: true } : { experimentalAutoDetectLongPolling: true }),
   });
 } catch (err) {
   console.warn('Firestore persistent cache unavailable, falling back to memory cache:', err?.code || err?.message);
