@@ -2664,24 +2664,28 @@
           "id": "y10-11b-1d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given that \\(y = \\frac{1}{x}\\), find \\(y\\) when \\(x = \\frac{3}{2}\\).",
+          "stem": "Given that \\(y=\\dfrac{1}{x}\\), find \\(y\\) when \\(x=\\dfrac{3}{2}\\).",
           "options": [
-            "\\(y = -\\frac{2}{3}\\)",
-            "\\(y = \\frac{2}{3}\\)",
-            "\\(y = \\frac{3}{2}\\)",
-            "\\(y = 1\\)"
+            "\\(y=-\\dfrac{2}{3}\\)",
+            "\\(y=\\dfrac{2}{3}\\)",
+            "\\(y=\\dfrac{3}{2}\\)",
+            "\\(y=1\\)"
           ],
-          "answer": 3,
-          "hint": "Flip the fraction.",
-          "solution": "y = 1/(3/2) = 2/3",
+          "answer": 1,
+          "hint": "Dividing by a fraction is the same as multiplying by its reciprocal (flip the fraction).",
+          "solution": "\\(y=\\dfrac{1}{\\frac{3}{2}}=\\dfrac{2}{3}\\)",
           "steps": [
             {
               "explain": "Substitute the given value of \\(x\\) into the equation.",
-              "work": "Given \\(y = \\frac{1}{x}\\), substitute \\(x = \\frac{3}{2}\\):\n\n\\(y = \\frac{1}{\\frac{3}{2}}\\)"
+              "work": "\\(y=\\dfrac{1}{x}=\\dfrac{1}{\\frac{3}{2}}\\)"
             },
             {
-              "explain": "Evaluate the reciprocal.",
-              "work": "Dividing 1 by a fraction gives its reciprocal:\n\n\\(y = \\frac{2}{3}\\)"
+              "explain": "Dividing \\(1\\) by a fraction is the same as multiplying by its reciprocal, so flip \\(\\dfrac{3}{2}\\).",
+              "work": "\\(1\\div\\dfrac{3}{2}=1\\times\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(y=\\dfrac{2}{3}\\)"
             }
           ],
           "timeLimit": 90,

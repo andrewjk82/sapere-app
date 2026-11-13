@@ -20993,31 +20993,43 @@
           "id": "y10-2f-q16e",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "If \\(x = 3+\\sqrt{2}\\) and \\(y = 5-\\sqrt{2}\\), find the value of \\(\\frac{1}{x}\\) in simplest form.",
+          "stem": "If \\(x=3+\\sqrt{2}\\) and \\(y=5-\\sqrt{2}\\), find the value of \\(\\dfrac{1}{x}\\) in simplest form.",
           "options": [
-            "\\(\\frac{3+\\sqrt{2}}{7}\\)",
-            "\\(\\frac{3-\\sqrt{2}}{7}\\)",
+            "\\(\\dfrac{3+\\sqrt{2}}{7}\\)",
+            "\\(\\dfrac{3-\\sqrt{2}}{7}\\)",
             "\\(3-\\sqrt{2}\\)",
-            "\\(\\frac{1}{7}\\)"
+            "\\(\\dfrac{1}{7}\\)"
           ],
           "answer": 1,
-          "hint": "Simplify the expression using the properties of surds.",
-          "solution": "The correct answer is \\(\\frac{3-\\sqrt{2}}{7}\\).",
+          "hint": "Rationalise the denominator by multiplying the top and bottom by the conjugate of \\(3+\\sqrt{2}\\).",
+          "solution": "\\(\\dfrac{3-\\sqrt{2}}{7}\\)",
           "steps": [
             {
-              "explain": "Rationalise \\(\\frac{1}{x} = \\frac{1}{3+\\sqrt{2}}\\) using conjugate \\((3-\\sqrt{2})\\).",
-              "work": "\\( \\\\frac{1}{3+\\\\sqrt{2}} \\\\times \\\\frac{3-\\\\sqrt{2}}{3-\\\\sqrt{2}} = \\\\frac{3-\\\\sqrt{2}}{9-2} = \\\\frac{3-\\\\sqrt{2}}{7} \\)"
+              "explain": "Write \\(\\dfrac{1}{x}\\) using the given value of \\(x\\).",
+              "work": "\\(\\dfrac{1}{x}=\\dfrac{1}{3+\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Multiply the top and bottom by the conjugate \\(3-\\sqrt{2}\\) to remove the surd from the denominator.",
+              "work": "\\(\\dfrac{1}{3+\\sqrt{2}}\\times\\dfrac{3-\\sqrt{2}}{3-\\sqrt{2}}=\\dfrac{3-\\sqrt{2}}{(3+\\sqrt{2})(3-\\sqrt{2})}\\)"
+            },
+            {
+              "explain": "Use the difference of two squares in the denominator: \\((a+b)(a-b)=a^{2}-b^{2}\\).",
+              "work": "\\((3+\\sqrt{2})(3-\\sqrt{2})=3^{2}-(\\sqrt{2})^{2}=9-2=7\\)"
+            },
+            {
+              "explain": "Write the result.",
+              "work": "\\(\\dfrac{1}{x}=\\dfrac{3-\\sqrt{2}}{7}\\)"
             }
           ],
           "timeLimit": 90,
           "xp": 2,
           "keyPoints": [
             {
-              "text": "find the value of \\(\\frac{1}{x}\\) in simplest form",
+              "text": "find the value of \\(\\dfrac{1}{x}\\) in simplest form",
               "note": "Check signs and powers carefully when simplifying the requested expression."
             },
             {
-              "text": "\\(x = 3+\\sqrt{2}\\)",
+              "text": "\\(x=3+\\sqrt{2}\\)",
               "note": "Use the given definitions or relationships to rewrite the requested expression before substituting; simplify exactly."
             }
           ]
