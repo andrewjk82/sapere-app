@@ -10,3 +10,28 @@ export const withTimeout = (promise, ms = 8000) => new Promise((resolve, reject)
     (error) => { clearTimeout(timer); reject(error); },
   );
 });
+
+// Runs `start()` (which begins a fresh attempt each time) and, if an attempt gets no answer within `ms`, starts
+// another — up to `tries` attempts. A Firestore read that stalls on weak Wi-Fi usually answers when asked again,
+// whereas waiting on the stalled one never ends. Errors other than the timeout are passed straight through.
+export const retryOnTimeout = async (start, { ms = 8000, tries = 2 } = {}) => {
+  let lastError;
+  for (let attempt = 0; attempt < tries; attempt += 1) {
+    try {
+      return await withTimeout(start(), ms);
+    } catch (error) {
+      if (error?.message !== TIMEOUT_MESSAGE) throw error;
+      lastError = error;
+    }
+  }
+  throw lastError;
+};
+
+// One run per key at a time: a second caller with the same key gets the run already under way instead of starting
+// the same work again beside it. The entry is dropped as soon as the run settles, so a failed run can be retried.
+export const shareInFlight = (map, key, run) => {
+  if (map.has(key)) return map.get(key);
+  const promise = Promise.resolve().then(run).finally(() => { if (map.get(key) === promise) map.delete(key); });
+  map.set(key, promise);
+  return promise;
+};

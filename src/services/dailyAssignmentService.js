@@ -19,6 +19,7 @@ import {
 import { localCache } from "./localCacheService";
 import { pickPrepAssignment } from "../utils/prepAssignment";
 import { canGrade } from "../utils/secretNote";
+import { retryOnTimeout, shareInFlight } from "../utils/withTimeout";
 import {
   getYearNumber,
   normalizeYearLabel,
@@ -587,7 +588,7 @@ const fetchRecentlySeenQuestionIds = async (uid) => {
   const seen = new Set();
   if (!uid) return seen;
   try {
-    const snap = await getDoc(seenQuestionsRef(uid));
+    const snap = await retryOnTimeout(() => getDoc(seenQuestionsRef(uid)));
     if (!snap.exists()) return seen;
     (snap.data().questionIds || []).forEach((id) => seen.add(String(id)));
   } catch {
@@ -660,7 +661,7 @@ const HSC_PAST_PAPER_POOL_REF = doc(db, "sync_meta", "hsc_past_paper_pool");
 // main draw so a student doesn't keep re-seeing the same trial-paper question.
 const fetchHscPastPaperQuestions = async (uid, count, excludeIds = new Set()) => {
   try {
-    const poolSnap = await getDoc(HSC_PAST_PAPER_POOL_REF);
+    const poolSnap = await retryOnTimeout(() => getDoc(HSC_PAST_PAPER_POOL_REF));
     if (!poolSnap.exists()) return [];
     const allIds = poolSnap.data().ids || [];
     if (allIds.length === 0) return [];
@@ -998,13 +999,25 @@ export const prepareNextDailyAssignment = async ({
   return cacheValue;
 };
 
-export const fetchOrCreateDailyAssignment = async ({
+// Starts under way, by student + day + scope. When the 45s start guard gives up, the work behind it is still
+// running; a second tap used to start the whole thing again beside it (same reads, two transactions fighting over
+// the pool document). It now joins the run already going, so a slow first load carries on instead of starting over.
+const assignmentsInFlight = new Map();
+
+export const fetchOrCreateDailyAssignment = (args = {}) => {
+  const { uid, studentProfile, dateKey = getDateKey(), questionCount } = args;
+  if (!uid) return Promise.reject(new Error("Daily assignment requires a user id."));
+  const count = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
+  const key = `${uid}|${dateKey}|${count}|${getCurriculumSignature(studentProfile)}`;
+  return shareInFlight(assignmentsInFlight, key, () => loadDailyAssignment(args));
+};
+
+const loadDailyAssignment = async ({
   uid,
   studentProfile,
   dateKey = getDateKey(),
   questionCount,
 }) => {
-  if (!uid) throw new Error("Daily assignment requires a user id.");
   const expectedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
   const expectedSignature = getCurriculumSignature(studentProfile);
   const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
@@ -1037,7 +1050,8 @@ export const fetchOrCreateDailyAssignment = async ({
   // contentVersion bumps on content edits (solutionSteps, LaTeX etc.) — does NOT
   // trigger assignment regeneration, so editing questions doesn't cost every student a re-gen.
   const [assignmentSnap, syncData] = await Promise.all([
-    getDoc(doc(db, "users", uid, "daily_assignments", dateKey)),
+    // Asked again if there is no answer in 8s — a stalled read never recovers by waiting on it.
+    retryOnTimeout(() => getDoc(doc(db, "users", uid, "daily_assignments", dateKey))),
     readQuestionsSyncMeta(),
   ]);
   // membershipVersion tracks add/delete only. Prefer it over content `version`
@@ -1115,8 +1129,8 @@ export const fetchOrCreateDailyAssignment = async ({
   const yesterday = new Date(`${dateKey}T12:00:00`);
   yesterday.setDate(yesterday.getDate() - 1);
   const [prepRead, prevRead] = await Promise.all([
-    getDoc(doc(db, "users", uid, "daily_assignments", "next_prep")).then((s) => ({ s }), () => ({ failed: true })),
-    getDoc(doc(db, "users", uid, "daily_assignments", getDateKey(yesterday))).then((s) => s, () => null),
+    retryOnTimeout(() => getDoc(doc(db, "users", uid, "daily_assignments", "next_prep"))).then((s) => ({ s }), () => ({ failed: true })),
+    retryOnTimeout(() => getDoc(doc(db, "users", uid, "daily_assignments", getDateKey(yesterday)))).then((s) => s, () => null),
   ]);
   const picked = pickPrepAssignment({
     serverPrep: prepRead.s?.exists() ? { id: prepRead.s.id, ...prepRead.s.data() } : null,

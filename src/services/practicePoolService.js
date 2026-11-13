@@ -39,6 +39,14 @@ import { db } from '../firebase/config';
 import { readChapterIndex } from './questionIndexService';
 import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentService';
 import { allocateQuotas, easyAllowanceFor, pickExtraRoundIds } from '../utils/poolAllocation';
+import { withTimeout, retryOnTimeout } from '../utils/withTimeout';
+
+// A read or transaction that gets no answer (weak Wi-Fi) used to hold Daily Practice on "Loading…" until the 45s
+// start guard gave up, and every retry waited on the same silence. Reads are asked again after 8s; a transaction
+// that has not committed in 20s fails the start so the student can retry (a late commit is harmless — it writes
+// the same pool state).
+const readPool = (uid) => retryOnTimeout(() => getDoc(poolRef(uid)));
+const POOL_TX_TIMEOUT_MS = 20000;
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 
@@ -133,7 +141,7 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
     return cached;
   }
 
-  const snap = await getDoc(poolRef(uid));
+  const snap = await readPool(uid);
   const existing = snap.exists() ? snap.data() : null;
 
   let targets;
@@ -192,16 +200,15 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
       _membershipChanged.set(uid, false);
       const merged = { ...existing, membershipVersion: mv };
       setCached(uid, newSignature, merged);
-      try {
-        await runTransaction(db, async (transaction) => {
-          const liveSnap = await transaction.get(poolRef(uid));
-          if (!liveSnap.exists()) return;
-          transaction.set(poolRef(uid), { membershipVersion: mv }, { merge: true });
-        });
-      } catch (err) {
+      // Not awaited: the stamp only saves the next session a re-check, so the student does not wait a round trip for it.
+      runTransaction(db, async (transaction) => {
+        const liveSnap = await transaction.get(poolRef(uid));
+        if (!liveSnap.exists()) return;
+        transaction.set(poolRef(uid), { membershipVersion: mv }, { merge: true });
+      }).catch((err) => {
         // 기록 실패는 치명적이지 않다 — 다음 세션에 다시 확인할 뿐이다.
         console.warn('practice pool membership stamp failed (non-critical):', err?.code || err);
-      }
+      });
       return merged;
     }
 
@@ -231,7 +238,7 @@ const rebuildPool = async ({ uid, newSignature, mv, indexResults }) => {
   // 겹치면 방금 done 처리된 문제가 다시 undone으로 보여 며칠 뒤 재출제됐다
   // (2026-07-25, y9-4/y9-7 등 소진되지 않은 챕터에서 실제 확인).
   const ref = poolRef(uid);
-  const newPool = await runTransaction(db, async (transaction) => {
+  const newPool = await withTimeout(runTransaction(db, async (transaction) => {
     const liveSnap = await transaction.get(ref);
     const live = liveSnap.exists() ? liveSnap.data() : null;
 
@@ -265,7 +272,7 @@ const rebuildPool = async ({ uid, newSignature, mv, indexResults }) => {
     };
     transaction.set(ref, next);
     return next;
-  });
+  }), POOL_TX_TIMEOUT_MS);
 
   setCached(uid, newSignature, newPool);
   return newPool;
@@ -302,7 +309,7 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   const cachedEntry = _poolCache.get(uid);
   let seed = cachedEntry?.data || null;
   if (!seed) {
-    const snap = await getDoc(poolRef(uid));
+    const snap = await readPool(uid);
     if (!snap.exists()) throw new Error('Practice pool not initialized. Call ensurePracticePool first.');
     seed = snap.data();
   }
@@ -316,7 +323,7 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   // 포함해서). 2026-07 Riel 학생 리포트 — 소진되지 않은 챕터(y6-frac, y6-ar)의
   // 개별 문제가 며칠 간격으로 재출제된 사고의 원인 중 하나.
   const ref = poolRef(uid);
-  const resolved = await runTransaction(db, async (transaction) => {
+  const resolved = await withTimeout(runTransaction(db, async (transaction) => {
     const snap = await transaction.get(ref);
     const live = snap.exists() ? snap.data() : seed;
     let chapter_pools = live.chapter_pools || {};
@@ -355,7 +362,7 @@ export const selectDailyQuestions = async (uid, questionCount) => {
     const next = { ...live, chapter_pools, cycle, updatedAt: serverTimestamp() };
     transaction.set(ref, next);
     return next;
-  });
+  }), POOL_TX_TIMEOUT_MS);
 
   const chapter_pools = resolved.chapter_pools || {};
   const chapter_accuracy = resolved.chapter_accuracy || {};
@@ -479,7 +486,7 @@ export const pickExtraPoolIds = async (uid, { excludeIds = [], count = 10 } = {}
   const cachedEntry = _poolCache.get(uid);
   let data = cachedEntry?.data || null;
   if (!data) {
-    const snap = await getDoc(poolRef(uid));
+    const snap = await readPool(uid);
     if (!snap.exists()) return [];
     data = snap.data();
   }
@@ -513,7 +520,7 @@ export const pickExtraRoundPoolIds = async (uid, options) => {
   if (!uid) return [];
   let data = _poolCache.get(uid)?.data || null;
   if (!data) {
-    const snap = await getDoc(poolRef(uid));
+    const snap = await readPool(uid);
     if (!snap.exists()) return [];
     data = snap.data();
     setCached(uid, data.curriculumSignature, data);
