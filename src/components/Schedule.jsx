@@ -16,6 +16,8 @@ import ScheduleLessonModal from './ScheduleLessonModal';
 import LessonTopicPicker from './schedule/LessonTopicPicker';
 import LessonWorkspace from './LessonWorkspace';
 import HomeworkRedo from './homework/HomeworkRedo';
+import { toHistoryRow, topicHomeworkStates } from '../utils/homeworkTopicHistory';
+import { loadOlderHomeworkRows } from '../services/homeworkTopicHistoryService';
 import { mistakesForLesson, MISTAKES_REVIEWED_FIELD } from '../utils/lessonMistakes';
 import {
   groupMeta, findPreviousCoveredSession, findNextTopic, splitHomeworkExtra, composeHomework,
@@ -531,6 +533,28 @@ const Schedule = ({ students = [] }) => {
     const picked = new Set((editData.learnedTopics || []).map((t) => t.id));
     return prev ? findNextTopic(curriculumTopicOptions, prev.learnedTopics, picked) : null;
   }, [selectedSession, sessions, curriculumTopicOptions, editData.learnedTopics]);
+
+  // Topics this student was already given as homework (picker colours). Lessons in the schedule's own window are
+  // live in memory; older ones are read once per student and then kept on the device (homeworkTopicHistoryService).
+  const [olderHwRows, setOlderHwRows] = useState({ studentId: '', rows: [] });
+  const hwStudentId = isAdmin ? (selectedSession?.studentId || '') : '';
+  useEffect(() => {
+    if (!hwStudentId) return undefined;
+    let cancelled = false;
+    const { startDate } = getAdminScheduleWindow();
+    const from = new Date(); from.setDate(from.getDate() - 180);
+    const until = new Date(`${startDate}T12:00:00`); until.setDate(until.getDate() - 1);
+    loadOlderHomeworkRows(hwStudentId, formatDateKey(from), formatDateKey(until))
+      .then((rows) => { if (!cancelled) setOlderHwRows({ studentId: hwStudentId, rows }); })
+      .catch((err) => console.warn('Homework topic history unavailable:', err?.code || err?.message || err));
+    return () => { cancelled = true; };
+  }, [hwStudentId]);
+  const topicHwStates = useMemo(() => {
+    if (!hwStudentId) return {};
+    const older = olderHwRows.studentId === hwStudentId ? olderHwRows.rows : [];
+    const live = sessions.filter((s) => s.studentId === hwStudentId).map(toHistoryRow);
+    return topicHomeworkStates([...older, ...live], { excludeSessionId: selectedSession?.id || '', today: formatDateKey(new Date()) });
+  }, [hwStudentId, olderHwRows, sessions, selectedSession?.id]);
 
   const toggleLearnedTopic = (topic) => {
     setEditData(prev => {
@@ -1515,6 +1539,7 @@ const Schedule = ({ students = [] }) => {
                       selected={editData.learnedTopics || []}
                       onToggle={toggleLearnedTopic}
                       nextUp={nextUpTopic}
+                      homeworkStates={topicHwStates}
                       emptyText={`No assigned curriculum found${activeStudentProfile ? ` for ${getStudentDisplayYear(activeStudentProfile)}` : ''}.`}
                     />
                   ) : (

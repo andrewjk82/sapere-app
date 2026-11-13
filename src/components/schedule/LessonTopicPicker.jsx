@@ -12,7 +12,16 @@ const S = {
   chapterHead: { display: 'flex', alignItems: 'center', gap: '6px', width: '100%', border: 'none', background: 'none', padding: '4px 0', cursor: 'pointer', textAlign: 'left', color: '#1e293b', fontWeight: 800, fontSize: '0.85rem' },
   count: { marginLeft: 'auto', color: '#6366f1', fontSize: '0.72rem', fontWeight: 800 },
   codes: { display: 'flex', flexWrap: 'wrap', gap: '6px', padding: '4px 0 6px 20px' },
-  code: (on, done) => ({ minWidth: '44px', border: `1.5px solid ${on ? '#4f46e5' : '#e2e8f0'}`, background: on ? '#4f46e5' : '#fff', color: on ? '#fff' : done ? '#94a3b8' : '#1e293b', borderRadius: '10px', padding: '6px 10px', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer' }),
+  // hw: 'open' (homework given, not checked yet → light red) | 'done' (given and checked → light blue). Still tappable.
+  code: (on, done, hw) => {
+    const tint = hw === 'open' ? { bg: '#fee2e2', border: '#fca5a5', text: '#b91c1c' } : hw === 'done' ? { bg: '#e0f2fe', border: '#bae6fd', text: '#0369a1' } : null;
+    return {
+      minWidth: '44px', borderRadius: '10px', padding: '6px 10px', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer',
+      border: `1.5px solid ${on ? '#4f46e5' : tint ? tint.border : '#e2e8f0'}`,
+      background: on ? '#4f46e5' : tint ? tint.bg : '#fff',
+      color: on ? '#fff' : tint ? tint.text : done ? '#94a3b8' : '#1e293b',
+    };
+  },
   hint: { color: '#94a3b8', fontWeight: 700, fontSize: '0.72rem' },
 };
 
@@ -21,7 +30,7 @@ const S = {
  * suggestion, then year (or year + course) tabs → collapsible chapters →
  * topic code buttons. Purely presentational; the parent owns the selection.
  */
-const LessonTopicPicker = ({ options, selected, onToggle, nextUp, emptyText }) => {
+const LessonTopicPicker = ({ options, selected, onToggle, nextUp, emptyText, homeworkStates = {} }) => {
   const groups = useMemo(() => groupTopicOptions(options), [options]);
   const selectedIds = useMemo(() => new Set(selected.map((t) => t.id)), [selected]);
   // Topics saved by older sessions only carry { id, label }; show them with
@@ -96,6 +105,7 @@ const LessonTopicPicker = ({ options, selected, onToggle, nextUp, emptyText }) =
               <button type="button" style={S.chapterHead} onClick={() => toggleChapter(chapter.id)}>
                 {open ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
                 {chapter.title}
+                {chapter.topics.some((t) => homeworkStates[t.id]?.state === 'open') && <span title="Homework not checked yet" style={{ width: 8, height: 8, borderRadius: '50%', background: '#f87171', flexShrink: 0 }} />}
                 {picked > 0 && <span style={S.count}>{picked} picked</span>}
               </button>
               {open && (
@@ -104,8 +114,8 @@ const LessonTopicPicker = ({ options, selected, onToggle, nextUp, emptyText }) =
                     <button
                       key={t.id}
                       type="button"
-                      title={`${t.title}${t.completed ? ' (completed)' : ''}`}
-                      style={S.code(selectedIds.has(t.id), t.completed)}
+                      title={`${t.title}${t.completed ? ' (completed)' : ''}${homeworkStates[t.id] ? ` · homework given ${homeworkStates[t.id].date}${homeworkStates[t.id].state === 'open' ? ', not checked yet' : ', checked'}` : ''}`}
+                      style={S.code(selectedIds.has(t.id), t.completed, homeworkStates[t.id]?.state)}
                       onClick={() => onToggle(t)}
                     >
                       {topicChipLabel(t)}
@@ -117,7 +127,7 @@ const LessonTopicPicker = ({ options, selected, onToggle, nextUp, emptyText }) =
           );
         })}
       </div>
-      <div style={S.hint}>Tap a chapter to open it · grey codes are completed</div>
+      <div style={S.hint}>Tap a chapter to open it · grey codes are completed · blue = homework given · red = not submitted / not checked yet</div>
     </div>
   );
 };

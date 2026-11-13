@@ -1,5 +1,6 @@
 import { buildCheckedNotification } from '../utils/homeworkMarking';
 import { withTimeout, TIMEOUT_MESSAGE } from '../utils/withTimeout';
+import { clearHomeworkTopicHistoryCache } from './homeworkTopicHistoryService';
 import {
   collection, doc, getDoc, getDocs, query, updateDoc, where, writeBatch, serverTimestamp,
 } from 'firebase/firestore';
@@ -255,6 +256,7 @@ export async function fetchHomeworkAssignments({ force = false } = {}) {
 // One write each, no reads: the cached list just drops the card, so the dashboard does not re-read every session.
 const closeAssignment = async (sessionId, fields) => {
   await withTimeout(updateDoc(doc(db, 'sessions', sessionId), fields), 15000);
+  clearHomeworkTopicHistoryCache();
   if (assignmentsCache) assignmentsCache = { ...assignmentsCache, list: assignmentsCache.list.filter((a) => a.id !== sessionId) };
 };
 
@@ -289,6 +291,7 @@ export async function markHomeworkChecked(sessionId, grade = null, notify = null
   });
   await batch.commit();
   assignmentsCache = null;
+  clearHomeworkTopicHistoryCache();
   // Tell the student it is back. Push + in-app only (no email), and never blocks or fails the check.
   if (notify?.studentId) {
     notifyStudentHomeworkChecked({ studentId: notify.studentId, sessionId, topics: notify.topics || [], grade })
