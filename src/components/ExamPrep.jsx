@@ -1309,7 +1309,7 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
   };
 
   return (
-    <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '960px', width: '100%', minWidth: 0, margin: '0 auto' }}>
       {/* Shared SVG gradients for rings */}
       <svg width={0} height={0} style={{ position: 'absolute', overflow: 'hidden' }} aria-hidden>
         <defs>

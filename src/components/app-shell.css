@@ -161,8 +161,14 @@
 
 .settings-display-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* minmax(0, …): a long phone number / email must wrap inside its cell, not widen the page on a phone */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+}
+
+.settings-display-item {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .settings-display-item label {
@@ -659,7 +665,7 @@
 
 @media (max-width: 920px) {
   .avatar-modal__content {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);   /* plain 1fr lets wide content push the page sideways on a phone */
   }
 
   .avatar-modal__preview-card {
@@ -1174,11 +1180,11 @@
   }
 
   .app-grid--content {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);   /* plain 1fr lets wide content push the page sideways on a phone */
   }
 
   .unit-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);   /* plain 1fr lets wide content push the page sideways on a phone */
   }
 }
 
@@ -1355,7 +1361,7 @@
 
   .app-grid--stats,
   .student-list-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);   /* plain 1fr lets wide content push the page sideways on a phone */
   }
 
   .student-row__side {
