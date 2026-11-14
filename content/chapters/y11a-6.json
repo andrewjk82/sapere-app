@@ -10179,15 +10179,9 @@
         {
           "id": "y11a-6d-q4c",
           "type": "review",
-          "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\cos 270^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
+          "difficulty": "easy",
           "answer": "0",
-          "options": [
-            "\\(-1\\)",
-            "\\(1\\)",
-            "\\(0\\)",
-            "undefined"
-          ],
           "hint": "Look at the cosine curve at x = 270°.",
           "solution": "0",
           "steps": [
@@ -10213,9 +10207,11 @@
               "work": "The cosine value corresponds to the x-coordinate of the point on the unit circle.<br>Since the x-coordinate is \\(0\\), \\(\\cos 270^{\\circ} = 0\\)."
             }
           ],
-          "manual": true,
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y11a-6d-q4d",
