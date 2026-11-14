@@ -1,18 +1,19 @@
-import { useEffect, useState } from 'react';
-import { ChevronLeft, ChevronRight, Loader2 } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Loader2 } from 'lucide-react';
 import { fetchSubmission } from '../../services/homeworkService';
 import { loadHomeworkLocal } from '../../utils/homeworkLocalStore';
 import { isSafeImageDataUrl } from '../../utils/homework';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
-const NAV_BTN = { border: 0, background: '#fff', borderRadius: 10, width: 36, height: 36, display: 'grid', placeItems: 'center', cursor: 'pointer', boxShadow: '0 1px 3px rgba(15,23,42,0.15)' };
 
-// The pages the student handed in, for one topic. The copy kept on this device first;
+// Every page the student handed in, in one scrolling column grouped by topic; opens at the topic of the question
+// being redone (`topicId`). It used to show that topic's pages only, one at a time — students took the single page
+// on screen for the whole submission. The copy kept on this device first;
 // only when there is none is the submission doc read once (for its thumbnails).
 const SubmittedPages = ({ uid, sessionId, topicId }) => {
   const [records, setRecords] = useState(null); // null while loading
   const [thumbOnly, setThumbOnly] = useState(false);
-  const [page, setPage] = useState(0);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -27,7 +28,7 @@ const SubmittedPages = ({ uid, sessionId, topicId }) => {
           const sub = await fetchSubmission(sessionId);
           const pageTopics = sub?.pageTopics || [];
           list = (sub?.thumbnails || [])
-            .map((image, i) => ({ image, topicId: pageTopics[i]?.topicId || null }))
+            .map((image, i) => ({ image, topicId: pageTopics[i]?.topicId || null, topicLabel: pageTopics[i]?.topicLabel || '' }))
             .filter((r) => isSafeImageDataUrl(r.image));
           thumbs = list.length > 0;
         }
@@ -37,28 +38,46 @@ const SubmittedPages = ({ uid, sessionId, topicId }) => {
     return () => { cancelled = true; };
   }, [uid, sessionId]);
 
+  // Bring the current question's topic to the top (on open, and when another question is picked).
+  useEffect(() => {
+    const box = scrollRef.current;
+    if (!box || !records?.length || !topicId) return;
+    const target = [...box.querySelectorAll('[data-topic]')].find((el) => el.dataset.topic === String(topicId));
+    if (target) box.scrollTop = target.offsetTop;
+  }, [records, topicId]);
+
   if (records === null) {
     return <div style={{ height: '100%', display: 'grid', placeItems: 'center' }}><Loader2 size={24} color="#94a3b8" style={SPIN} /></div>;
   }
-  // Pages from before per-topic notebooks have no topicId: show them for every topic.
-  const visible = records.filter((r) => !r.topicId || r.topicId === topicId);
-  const current = Math.min(page, Math.max(visible.length - 1, 0));
-  if (visible.length === 0) {
-    return <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 700, padding: 24, textAlign: 'center' }}>Nothing submitted for this topic on this device.</div>;
+  if (records.length === 0) {
+    return <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 700, padding: 24, textAlign: 'center' }}>Nothing submitted on this device.</div>;
   }
+  // Consecutive pages of one topic share a heading (pages are stored topic by topic).
+  const groups = [];
+  records.forEach((record, index) => {
+    const key = record.topicId || '';
+    const last = groups[groups.length - 1];
+    if (last && last.key === key) last.pages.push({ ...record, index });
+    else groups.push({ key, label: record.topicLabel || record.topicId || 'Earlier combined notes', pages: [{ ...record, index }] });
+  });
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column', minHeight: 0 }}>
       {thumbOnly && <div style={{ textAlign: 'center', color: '#b45309', fontSize: '0.75rem', fontWeight: 700, padding: '2px 0 6px' }}>Small preview — the full-size copy is no longer stored.</div>}
-      <div style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', touchAction: 'pan-x pan-y pinch-zoom' }}>
-        <img src={visible[current].image} alt={`Your submitted page ${current + 1}`} style={{ margin: '0 auto auto', width: '100%', maxWidth: 900, height: 'auto', background: '#fff', borderRadius: 12, border: '1px solid #e2e8f0' }} />
+      <div ref={scrollRef} style={{ flex: 1, minHeight: 0, overflow: 'auto', position: 'relative', padding: '0 8px 16px', touchAction: 'pan-x pan-y pinch-zoom' }}>
+        {groups.map((group, g) => (
+          <div key={`${group.key}:${g}`} data-topic={group.key} style={{ maxWidth: 900, margin: '0 auto' }}>
+            <div style={{ position: 'sticky', top: 0, zIndex: 1, background: '#f8fafc', padding: '8px 2px 6px', fontWeight: 800, fontSize: '0.8rem', color: group.key && group.key === topicId ? '#6d28d9' : '#475569', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              {group.label} · {group.pages.length} page{group.pages.length === 1 ? '' : 's'}
+            </div>
+            {group.pages.map((record) => (
+              <div key={record.index} style={{ marginBottom: 12 }}>
+                <img src={record.image} alt={`Your submitted page ${record.index + 1}`} style={{ display: 'block', width: '100%', height: 'auto', background: '#fff', borderRadius: 12, border: '1px solid #e2e8f0' }} />
+                <div style={{ textAlign: 'center', fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', paddingTop: 4 }}>Page {record.index + 1} of {records.length}</div>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
-      {visible.length > 1 && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, paddingTop: 8, flexShrink: 0 }}>
-          <button type="button" aria-label="Previous page" disabled={current === 0} onClick={() => setPage(current - 1)} style={{ ...NAV_BTN, opacity: current === 0 ? 0.35 : 1 }}><ChevronLeft size={20} /></button>
-          <span style={{ fontWeight: 800, color: '#475569', fontSize: '0.85rem' }}>{current + 1} / {visible.length}</span>
-          <button type="button" aria-label="Next page" disabled={current === visible.length - 1} onClick={() => setPage(current + 1)} style={{ ...NAV_BTN, opacity: current === visible.length - 1 ? 0.35 : 1 }}><ChevronRight size={20} /></button>
-        </div>
-      )}
     </div>
   );
 };
