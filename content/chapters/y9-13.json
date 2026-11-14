@@ -1595,9 +1595,9 @@
           "id": "ch9t3-q7",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A ramp is placed on top of a set of 3 stairs (each step 13 cm high and 30 cm deep — so the stairs are 39 cm tall and 60 cm deep in total), sloping down at \\(5°\\) to the ground. Find the extra horizontal distance \\(d\\) covered by the ramp beyond the base of the stairs, correct to 2 decimal places.",
+          "stem": "A ramp is placed on top of a set of 3 stairs (each step is 13 cm high and 30 cm deep, so the stairs are 39 cm tall and 60 cm deep in total). The ramp slopes down at \\(5^\\circ\\) to the ground. Find the extra horizontal distance \\(d\\) covered by the ramp beyond the base of the stairs, correct to 2 decimal places.",
           "figure": {
-            "svg": "fig:0945508142"
+            "svg": "<svg viewBox=\"0 125 440 125\" width=\"100%\" style=\"max-width:440px;display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(20,20)\"><polygon points=\"30,180 165,180 165,160.5 97.5,160.5 97.5,141 30,141\" fill=\"#dbeafe\" fill-opacity=\"0.6\"/><polyline points=\"30,180 30,121.5 30,141 97.5,141 97.5,160.5 165,160.5 165,180\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"30\" y1=\"180\" x2=\"360\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"30\" y1=\"121.5\" x2=\"360\" y2=\"180\" stroke=\"#1d4ed8\" stroke-width=\"2.6\"/><text x=\"22\" y=\"156\" font-size=\"12\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\" text-anchor=\"end\">39 cm</text><text x=\"172\" y=\"174\" font-size=\"12\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\">13 cm</text><text x=\"131\" y=\"154\" font-size=\"12\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\" text-anchor=\"middle\">30 cm</text><text x=\"372\" y=\"176\" font-size=\"13\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#b45309\">5&#176;</text><line x1=\"30\" y1=\"198\" x2=\"165\" y2=\"198\" stroke=\"#475569\" stroke-width=\"1.4\"/><line x1=\"165\" y1=\"198\" x2=\"360\" y2=\"198\" stroke=\"#1d4ed8\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"192\" x2=\"30\" y2=\"204\" stroke=\"#475569\" stroke-width=\"1.4\"/><line x1=\"165\" y1=\"192\" x2=\"165\" y2=\"204\" stroke=\"#475569\" stroke-width=\"1.4\"/><line x1=\"360\" y1=\"192\" x2=\"360\" y2=\"204\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"97.5\" y=\"216\" font-size=\"13\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\" text-anchor=\"middle\">60 cm</text><text x=\"262.5\" y=\"216\" font-size=\"14\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1d4ed8\" text-anchor=\"middle\">d</text></g></svg>"
           },
           "options": [
             "\\(445.77\\text{ cm}\\)",
@@ -1606,26 +1606,30 @@
             "\\(334.06\\text{ cm}\\)"
           ],
           "answer": 1,
-          "hint": "Set up a right triangle for the WHOLE ramp: the total height is 39 cm (3 steps × 13 cm), and the total horizontal base is \\(60+d\\) cm. Use \\(\\tan5°=\\dfrac{39}{60+d}\\), then subtract the 60 cm the stairs already cover.",
+          "hint": "Set up a right triangle for the WHOLE ramp: the total height is 39 cm (3 steps × 13 cm), and the total horizontal base is \\(60+d\\) cm. Use \\(\\tan5^\\circ=\\dfrac{39}{60+d}\\), then subtract the 60 cm the stairs already cover.",
           "steps": [
             {
-              "explain": "The total height of the 3 steps is \\(3\\times13=39\\) cm, and the ramp meets the ground at a horizontal distance of \\(60+d\\) cm from the top of the stairs (where 60 cm is the stairs' own horizontal span, and \\(d\\) is the EXTRA distance).",
-              "work": "Total height \\(=39\\) cm; total horizontal base \\(=60+d\\) cm",
+              "explain": "The ramp, the ground and the vertical line through the top of the stairs form a right triangle. Its height is the stairs' height, and its base is the stairs' depth plus the extra distance \\(d\\).",
+              "work": "\\(\\text{height}=3\\times13=39\\text{ cm},\\quad \\text{base}=60+d\\)",
               "figure": {
-                "svg": "fig:0945508142"
+                "svg": "<svg viewBox=\"0 125 440 125\" width=\"100%\" style=\"max-width:440px;display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(20,20)\"><polygon points=\"30,180 165,180 165,160.5 97.5,160.5 97.5,141 30,141\" fill=\"#dbeafe\" fill-opacity=\"0.6\"/><polyline points=\"30,180 30,121.5 30,141 97.5,141 97.5,160.5 165,160.5 165,180\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"30\" y1=\"180\" x2=\"360\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"30\" y1=\"121.5\" x2=\"360\" y2=\"180\" stroke=\"#1d4ed8\" stroke-width=\"2.6\"/><text x=\"22\" y=\"156\" font-size=\"12\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\" text-anchor=\"end\">39 cm</text><text x=\"172\" y=\"174\" font-size=\"12\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\">13 cm</text><text x=\"131\" y=\"154\" font-size=\"12\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#1e293b\" text-anchor=\"middle\">30 cm</text><text x=\"372\" y=\"176\" font-size=\"13\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#b45309\">5&#176;</text><line x1=\"30\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"#b45309\" stroke-width=\"1.6\"/><line x1=\"30\" y1=\"194\" x2=\"30\" y2=\"206\" stroke=\"#b45309\" stroke-width=\"1.6\"/><line x1=\"360\" y1=\"194\" x2=\"360\" y2=\"206\" stroke=\"#b45309\" stroke-width=\"1.6\"/><text x=\"195\" y=\"218\" font-size=\"13\" font-family=\"system-ui,-apple-system,sans-serif\" font-weight=\"600\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" fill=\"#b45309\" text-anchor=\"middle\">60 + d</text></g></svg>"
               }
             },
             {
-              "explain": "Use the tangent ratio for the overall ramp triangle (angle \\(5°\\) at the base, opposite side 39 cm, adjacent side \\(60+d\\)).",
-              "work": "\\(\\tan5° = \\dfrac{39}{60+d}\\)"
+              "explain": "The angle at the ground is \\(5^\\circ\\), the height is opposite it and the base is adjacent, so use tangent.",
+              "work": "\\(\\tan5^\\circ=\\dfrac{39}{60+d}\\)"
             },
             {
-              "explain": "Rearrange to solve for \\(60+d\\).",
-              "work": "\\(60+d = \\dfrac{39}{\\tan5°}\\)"
+              "explain": "Rearrange for the base.",
+              "work": "\\(60+d=\\dfrac{39}{\\tan5^\\circ}\\)"
             },
             {
-              "explain": "Evaluate, then subtract 60 to isolate \\(d\\).",
-              "work": "\\(60+d \\approx 445.77 \\Rightarrow d \\approx 385.77\\text{ cm}\\)"
+              "explain": "Evaluate with a calculator in degree mode.",
+              "work": "\\(60+d\\approx445.77\\)"
+            },
+            {
+              "explain": "Subtract the 60 cm that the stairs already cover.",
+              "work": "\\(d\\approx445.77-60=385.77\\text{ cm}\\)"
             }
           ],
           "meta": {
