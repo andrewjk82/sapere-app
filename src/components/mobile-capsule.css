@@ -7,9 +7,8 @@
   top: 16px !important;
   right: 16px !important;
   z-index: 2147483647 !important;
-  background: rgba(255, 255, 255, 0.8) !important;
-  backdrop-filter: blur(20px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  /* No backdrop blur: this sits fixed over the scrolling page, so a blur was recomputed on every scroll frame. */
+  background: rgba(255, 255, 255, 0.97) !important;
   padding: 6px !important;
   border-radius: 999px !important;
   border: 1px solid rgba(167, 139, 250, 0.3) !important;
@@ -20,7 +19,8 @@
   align-items: center !important;
   gap: 8px !important;
   pointer-events: auto !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  /* Position, opacity and width are animated by framer-motion; a CSS transition on them eased every frame twice. */
+  transition: box-shadow 0.3s, background-color 0.3s !important;
 }
 
 .mobile-user-capsule__avatar {
@@ -104,9 +104,7 @@
   width: calc(100vw - 32px) !important;
   max-width: 360px !important;
   max-height: 500px !important;
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(20px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  background: rgba(255, 255, 255, 0.99) !important;
   border-radius: 28px !important;
   border: 1px solid rgba(167, 139, 250, 0.2) !important;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;

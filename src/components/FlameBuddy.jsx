@@ -1526,8 +1526,13 @@ export function FlameBuddyAvatar({ mood = 'cheer', className = '' }) {
 
 function FlameSvg({ idPrefix = '' } = {}) {
   const p = idPrefix;
+  // One <svg> per moving layer. The flicker used to animate <g> elements inside a single SVG, which no browser can
+  // hand to the compositor: the whole flame (and its blur filter) was repainted on every frame, on every screen, for
+  // as long as the app was open. Animating the <svg> boxes themselves is a plain layer transform — painted once.
+  const box = { viewBox: '0 0 100 130', width: 62, height: 80, 'aria-hidden': true };
   return (
-    <svg viewBox="0 0 100 130" width="62" height="80" aria-hidden>
+    <>
+    <svg {...box} className="fb-glow">
       <defs>
         <filter id={`${p}fb-softGlow`} x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="4.5" result="blur" />
@@ -1600,21 +1605,24 @@ function FlameSvg({ idPrefix = '' } = {}) {
           <stop offset="100%" stopColor="#FFFFF6" />
         </linearGradient>
       </defs>
-      <g className="fb-glow" filter={`url(#${p}fb-softGlow)`} opacity="0.55">
+      <g filter={`url(#${p}fb-softGlow)`}>
         <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M30,40 C15.6,61 10,76.4 10,86 C10,97.1 18.3,110 30,110 C41.7,110 50,97.1 50,86 C50,76.4 44.4,61 30,40 Z" />
         <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M70,28 C55.6,54.4 50,73.8 50,85.8 C50,99.8 58.3,116 70,116 C81.7,116 90,99.8 90,85.8 C90,73.8 84.4,54.4 70,28 Z" />
         <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,6 C26,42 16,68 16,85 C16,105 30,126 50,126 C70,126 84,105 84,85 C84,68 74,42 50,6 Z" />
       </g>
-      <g className="fb-outer">
+    </svg>
+    <svg {...box} className="fb-outer">
         <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M30,40 C15.6,61 10,76.4 10,86 C10,97.1 18.3,110 30,110 C41.7,110 50,97.1 50,86 C50,76.4 44.4,61 30,40 Z" />
         <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M70,28 C55.6,54.4 50,73.8 50,85.8 C50,99.8 58.3,116 70,116 C81.7,116 90,99.8 90,85.8 C90,73.8 84.4,54.4 70,28 Z" />
         <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,6 C26,42 16,68 16,85 C16,105 30,126 50,126 C70,126 84,105 84,85 C84,68 74,42 50,6 Z" />
-      </g>
-      <g className="fb-inner">
+    </svg>
+    <svg {...box} className="fb-inner">
         <path className="fb-flamePath" fill={`url(#${p}fb-innerGrad)`} d="M50,44 C31.3,67.4 24,84.6 24,95.2 C24,107.6 34.8,122 50,122 C65.2,122 76,107.6 76,95.2 C76,84.6 68.7,67.4 50,44 Z" />
-      </g>
+    </svg>
+    <svg {...box}>
       <ellipse cx="38" cy="75" rx="8" ry="14" fill={`url(#${p}fb-sheenGrad)`} opacity="0.6" />
     </svg>
+    </>
   );
 }
 
