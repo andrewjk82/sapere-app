@@ -207,6 +207,10 @@ bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say
 - **Diagrams must never be clipped.** Every figure in the builds is auto-fitted before printing
   (`getBBox()` → `viewBox` + padding in the build script). Keep that step in any new build script and
   check a rendered page with a figure before sending.
+- **Figures must be legible at print size.** A wide bank figure (e.g. a 560×300 SVG) must be shown at
+  least ~450 px wide; never cap every figure at a small fixed width (the old `max-width:200px` made the
+  two-square Pythagoras proof diagram unreadable). Use `max-width:480px` (figures keep their natural
+  size when smaller), and look at the rendered page of every figure that contains labels or text.
 - **Chapter numbering.** The app's chapter *title* number is what the user means by "ChN" (e.g.
   `y7-5.json` is "Chapter 6: An introduction to geometry"; `y7-8.json` is "Chapter 9: Measurement").
   File numbers do not always match — if "ChN" maps to two different files, ask which one before building.
