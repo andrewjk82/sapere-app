@@ -4762,6 +4762,56 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2018-y8-s2q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A can of drink costs 90 cents. How many cans of drink can be bought for $3.60?",
+          "options": [
+            "40",
+            "3",
+            "4",
+            "6"
+          ],
+          "answer": 2,
+          "hint": "Change the dollars to cents so both amounts use the same unit, then divide.",
+          "steps": [
+            {
+              "explain": "The price is in cents and the money is in dollars. Change $3.60 to cents (1 dollar = 100 cents).",
+              "work": "\\(\\$3.60=360\\text{ c}\\)"
+            },
+            {
+              "explain": "Divide the total money by the price of one can.",
+              "work": "\\(360\\div90=4\\)"
+            },
+            {
+              "explain": "Check: \\(4\\times90\\text{c}=360\\text{c}=\\$3.60\\;\\checkmark\\). 40 comes from a decimal error (3.60 ÷ 0.09).",
+              "work": "\\(\\boxed{4\\text{ cans}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "90 cents",
+              "note": "Use the same unit for both amounts."
+            },
+            {
+              "text": "$3.60",
+              "note": "$3.60 = 360 cents."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(a)",
+            "sourceMarks": 1,
+            "page": 14
+          }
         }
       ]
     },
@@ -5831,6 +5881,62 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2018-y8-s1q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the numbers below in descending order.\n\\(0.8\\)    \\(75\\%\\)    \\(\\frac{5}{7}\\)",
+          "options": [
+            "\\(0.8,\\; \\frac{5}{7},\\; 75\\%\\)",
+            "\\(\\frac{5}{7},\\; 75\\%,\\; 0.8\\)",
+            "\\(0.8,\\; 75\\%,\\; \\frac{5}{7}\\)",
+            "\\(75\\%,\\; 0.8,\\; \\frac{5}{7}\\)"
+          ],
+          "answer": 2,
+          "hint": "Change every number into a decimal so you can compare them. 'Descending' means biggest first.",
+          "steps": [
+            {
+              "explain": "To compare numbers in different forms, write them all as decimals. 0.8 is already a decimal.",
+              "work": "0.8 = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">0.8</mark>"
+            },
+            {
+              "explain": "Percent means 'out of 100', so divide by 100. A fraction means 'top ÷ bottom'.",
+              "work": "\\(75\\%=\\frac{75}{100}=0.75\\)\n\\(\\frac{5}{7}=5\\div7=0.714\\ldots\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 212 116\" width=\"39%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"6\" y=\"6\" width=\"90\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"23.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Number</text><rect x=\"96\" y=\"6\" width=\"110\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"23.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">As a decimal</text><rect x=\"6\" y=\"32\" width=\"90\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"49.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.8</text><rect x=\"96\" y=\"32\" width=\"110\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"49.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.8</text><rect x=\"6\" y=\"58\" width=\"90\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"75.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">75%</text><rect x=\"96\" y=\"58\" width=\"110\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"75.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.75</text><rect x=\"6\" y=\"84\" width=\"90\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"101.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">5/7</text><rect x=\"96\" y=\"84\" width=\"110\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"101.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.714…</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare: 0.8 > 0.75 > 0.714. Line the numbers up to the same number of decimal places if it helps (0.800, 0.750, 0.714).",
+              "work": "\\(0.800>0.750>0.714\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 212 116\" width=\"39%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"6\" y=\"6\" width=\"90\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"23.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Number</text><rect x=\"96\" y=\"6\" width=\"110\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"23.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">As a decimal</text><rect x=\"6\" y=\"32\" width=\"90\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"49.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.8</text><rect x=\"96\" y=\"32\" width=\"110\" height=\"26\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"49.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.800</text><rect x=\"6\" y=\"58\" width=\"90\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"75.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">75%</text><rect x=\"96\" y=\"58\" width=\"110\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"75.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.750</text><rect x=\"6\" y=\"84\" width=\"90\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"51\" y=\"101.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">5/7</text><rect x=\"96\" y=\"84\" width=\"110\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"151\" y=\"101.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">0.714</text></svg>"
+              }
+            },
+            {
+              "explain": "Descending means from the LARGEST to the smallest, so we write the original numbers in this order. Ascending order (smallest first) would be the reverse.",
+              "work": "\\(0.8,\\; 75\\%,\\; \\frac{5}{7}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "descending order",
+              "note": "Descending means largest first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q2(a)",
+            "sourceMarks": 1,
+            "page": 3
+          }
         }
       ]
     }

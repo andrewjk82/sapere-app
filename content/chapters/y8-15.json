@@ -2015,6 +2015,209 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "wghs2018-y8-s2q2b",
+          "type": "multipart",
+          "stem": "Find the area of the following.",
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q2(b)",
+            "sourceMarks": 4,
+            "page": 12
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s2q2b-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the following shape.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"54%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"90\" y=\"100\" width=\"120\" height=\"120\" fill=\"#f1f5f9\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"90,100 150,20 210,100\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"100\" x2=\"210\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><polyline points=\"150,91 141,91 141,100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"90,211 99,211 99,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"210,211 201,211 201,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"69.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6 mm</text><text x=\"218\" y=\"163.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text><text x=\"150\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text></svg>"
+              },
+              "options": [
+                "88 mm²",
+                "64 mm²",
+                "112 mm²",
+                "48 mm²"
+              ],
+              "answer": 0,
+              "hint": "Split the shape into a square and a triangle. Use ½ × base × height for the triangle (height is the dotted perpendicular).",
+              "steps": [
+                {
+                  "explain": "Split the shape along the dashed line into a TRIANGLE on top and a SQUARE below.",
+                  "work": "Triangle (base 8 mm, height 6 mm) + square (8 mm by 8 mm)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"54%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"90\" y=\"100\" width=\"120\" height=\"120\" fill=\"#f1f5f9\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"90,100 150,20 210,100\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"100\" x2=\"210\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><polyline points=\"150,91 141,91 141,100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"90,211 99,211 99,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"210,211 201,211 201,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"69.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6 mm</text><text x=\"218\" y=\"163.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text><text x=\"150\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Area of the triangle = ½ × base × perpendicular height. The height is the dotted line, 6 mm.",
+                  "work": "\\(A_1=\\frac{1}{2}\\times8\\times6=24\\text{ mm}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"54%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"90\" y=\"100\" width=\"120\" height=\"120\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"90,100 150,20 210,100\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"100\" x2=\"210\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><polyline points=\"150,91 141,91 141,100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"90,211 99,211 99,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"210,211 201,211 201,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"69.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6 mm</text><text x=\"218\" y=\"163.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text><text x=\"150\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text><polygon points=\"90,100 150,20 210,100\" fill=\"#fde68a\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"222\" y=\"62.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">½ × 8 × 6 = 24</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Area of the square = side × side.",
+                  "work": "\\(A_2=8\\times8=64\\text{ mm}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"54%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"90\" y=\"100\" width=\"120\" height=\"120\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"90,100 150,20 210,100\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"100\" x2=\"210\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\" stroke-dasharray=\"5 4\"/><polyline points=\"150,91 141,91 141,100\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"90,211 99,211 99,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"210,211 201,211 201,220\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"69.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">6 mm</text><text x=\"218\" y=\"163.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text><text x=\"150\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8 mm</text><polygon points=\"90,100 150,20 210,100\" fill=\"#fde68a\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"222\" y=\"62.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">½ × 8 × 6 = 24</text><rect x=\"90\" y=\"100\" width=\"120\" height=\"120\" fill=\"#bfdbfe\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"150\" y=\"164.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">8 × 8 = 64</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add the two areas.",
+                  "work": "\\(24+64=88\\text{ mm}^2\\)"
+                },
+                {
+                  "explain": "Common mistakes: 64 (only the square), 112 (using base × height = 48 for the triangle) and 48.",
+                  "work": "\\(\\boxed{88\\text{ mm}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "area",
+                  "note": "Break the shape into simple shapes."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(b)(i)",
+                "sourceMarks": 2,
+                "page": 12,
+                "note": "The handwritten total in the scan reads 66; 24 + 64 = 88."
+              }
+            },
+            {
+              "id": "wghs2018-y8-s2q2b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the following shape.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 240\" width=\"42%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"60,205 180,205 180,50 60,70\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"60,196 69,196 69,205\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"180,196 171,196 171,205\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"52\" y=\"141.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">17 cm</text><text x=\"188\" y=\"131.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">19 cm</text><text x=\"120\" y=\"227.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">9 cm</text></svg>"
+              },
+              "options": [
+                "324 cm²",
+                "153 cm²",
+                "162 cm²",
+                "171 cm²"
+              ],
+              "answer": 2,
+              "hint": "The shape is a trapezium. The two parallel sides are 17 cm and 19 cm, and the distance between them is 9 cm.",
+              "steps": [
+                {
+                  "explain": "The two vertical sides (17 cm and 19 cm) are parallel, so the shape is a TRAPEZIUM. The distance between them is the bottom side, 9 cm (the right angles show it is perpendicular).",
+                  "work": "Parallel sides: a = 17, b = 19\nHeight (distance between them): h = 9",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 240\" width=\"42%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"60,205 180,205 180,50 60,70\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"60,196 69,196 69,205\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"180,196 171,196 171,205\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"52\" y=\"141.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">17 cm</text><text x=\"188\" y=\"131.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">19 cm</text><text x=\"120\" y=\"227.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">9 cm</text><line x1=\"60\" y1=\"70\" x2=\"60\" y2=\"205\" stroke=\"#d97706\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"180\" y1=\"50\" x2=\"180\" y2=\"205\" stroke=\"#d97706\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"120\" y=\"149.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">parallel sides</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Write the formula for the area of a trapezium.",
+                  "work": "\\(A=\\frac{h}{2}(a+b)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 240\" width=\"42%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"60,205 180,205 180,50 60,70\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"60,196 69,196 69,205\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><polyline points=\"180,196 171,196 171,205\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><text x=\"52\" y=\"141.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">17 cm</text><text x=\"188\" y=\"131.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">19 cm</text><text x=\"120\" y=\"227.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">9 cm</text><line x1=\"60\" y1=\"70\" x2=\"60\" y2=\"205\" stroke=\"#d97706\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"180\" y1=\"50\" x2=\"180\" y2=\"205\" stroke=\"#d97706\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"120\" y=\"149.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#92400e\">parallel sides</text><line x1=\"60\" y1=\"205\" x2=\"180\" y2=\"205\" stroke=\"#2563eb\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"120\" y=\"173.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">height h = 9</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute and work it out: add the parallel sides first.",
+                  "work": "\\(A=\\frac{9}{2}(17+19)=\\frac{9}{2}\\times36\\)"
+                },
+                {
+                  "explain": "Calculate.",
+                  "work": "\\(\\frac{9}{2}\\times36=9\\times18=162\\text{ cm}^2\\)"
+                },
+                {
+                  "explain": "Common mistakes: 324 (forgetting the ½), 153 (using only 17) and 171 (using only 19).",
+                  "work": "\\(\\boxed{162\\text{ cm}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "area",
+                  "note": "Use the parallel sides and the distance between them."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(b)(ii)",
+                "sourceMarks": 1,
+                "page": 12
+              }
+            },
+            {
+              "id": "wghs2018-y8-s2q2b-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the following shape.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"50%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"20,150 95,35 270,35 195,150\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"20\" y1=\"150\" x2=\"270\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"95\" y1=\"35\" x2=\"195\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"153.2,88.7 147.3,81.9 139.1,85.7\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><line x1=\"53.3\" y1=\"89.8\" x2=\"61.7\" y2=\"95.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"40\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"236.7\" y1=\"95.2\" x2=\"228.3\" y2=\"89.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"107.5\" y1=\"155\" x2=\"107.5\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><rect x=\"79\" y=\"58.2\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"101\" y=\"71.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">20 mm</text><rect x=\"191.8\" y=\"39.9\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"213.8\" y=\"53.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">30 mm</text></svg>"
+              },
+              "options": [
+                "300 mm²",
+                "600 mm²",
+                "150 mm²",
+                "50 mm²"
+              ],
+              "answer": 0,
+              "hint": "This is a rhombus with the diagonals shown. Use A = ½ × (diagonal 1) × (diagonal 2).",
+              "steps": [
+                {
+                  "explain": "The shape has 4 equal sides (tick marks), so it is a RHOMBUS. The two lines inside are its diagonals and they cross at a right angle.",
+                  "work": "Diagonals: 20 mm and 30 mm",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"50%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"20,150 95,35 270,35 195,150\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"20\" y1=\"150\" x2=\"270\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"95\" y1=\"35\" x2=\"195\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"153.2,88.7 147.3,81.9 139.1,85.7\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><line x1=\"53.3\" y1=\"89.8\" x2=\"61.7\" y2=\"95.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"40\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"236.7\" y1=\"95.2\" x2=\"228.3\" y2=\"89.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"107.5\" y1=\"155\" x2=\"107.5\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><rect x=\"79\" y=\"58.2\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"101\" y=\"71.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">20 mm</text><rect x=\"191.8\" y=\"39.9\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"213.8\" y=\"53.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">30 mm</text><line x1=\"20\" y1=\"150\" x2=\"270\" y2=\"35\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"95\" y1=\"35\" x2=\"195\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "The area of a rhombus is half the product of its diagonals.",
+                  "work": "\\(A=\\frac{1}{2}\\times d_1\\times d_2\\)"
+                },
+                {
+                  "explain": "Substitute and calculate.",
+                  "work": "\\(A=\\frac{1}{2}\\times20\\times30=\\frac{1}{2}\\times600=300\\text{ mm}^2\\)"
+                },
+                {
+                  "explain": "Common mistakes: 600 (forgetting the ½), 50 (adding 20 + 30) and 150.",
+                  "work": "\\(\\boxed{300\\text{ mm}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "area",
+                  "note": "Diagonals of a rhombus: A = ½ × d₁ × d₂."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(b)(iii)",
+                "sourceMarks": 1,
+                "page": 12
+              }
+            }
+          ]
         }
       ]
     },
@@ -2141,6 +2344,76 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "wghs2018-y8-s2q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By first finding the volume, find the capacity of the rectangular prism below. Write your answer in litres.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 230\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"30\" y=\"70\" width=\"190\" height=\"110\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"30,70 85,25 275,25 220,70\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"226.9\" y1=\"64.4\" x2=\"226.9\" y2=\"174.4\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"233.8\" y1=\"58.8\" x2=\"233.8\" y2=\"168.8\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"240.6\" y1=\"53.1\" x2=\"240.6\" y2=\"163.1\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"247.5\" y1=\"47.5\" x2=\"247.5\" y2=\"157.5\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"254.4\" y1=\"41.9\" x2=\"254.4\" y2=\"151.9\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"261.2\" y1=\"36.2\" x2=\"261.2\" y2=\"146.2\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"268.1\" y1=\"30.6\" x2=\"268.1\" y2=\"140.6\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"125\" y=\"201.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">26 cm</text><text x=\"299\" y=\"84.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12 cm</text><text x=\"253.5\" y=\"189.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5 cm</text></svg>"
+          },
+          "options": [
+            "1 560 L",
+            "15.6 L",
+            "156 L",
+            "1.56 L"
+          ],
+          "answer": 3,
+          "hint": "Volume = length × width × height in cm³. Then use 1000 cm³ = 1 L.",
+          "steps": [
+            {
+              "explain": "A rectangular prism has volume = length × width × height. The three edges are 26 cm, 12 cm and 5 cm.",
+              "work": "Edges: 26 cm, 12 cm, 5 cm",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 230\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"30\" y=\"70\" width=\"190\" height=\"110\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"30,70 85,25 275,25 220,70\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"226.9\" y1=\"64.4\" x2=\"226.9\" y2=\"174.4\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"233.8\" y1=\"58.8\" x2=\"233.8\" y2=\"168.8\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"240.6\" y1=\"53.1\" x2=\"240.6\" y2=\"163.1\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"247.5\" y1=\"47.5\" x2=\"247.5\" y2=\"157.5\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"254.4\" y1=\"41.9\" x2=\"254.4\" y2=\"151.9\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"261.2\" y1=\"36.2\" x2=\"261.2\" y2=\"146.2\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"268.1\" y1=\"30.6\" x2=\"268.1\" y2=\"140.6\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"125\" y=\"201.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">26 cm</text><text x=\"299\" y=\"84.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12 cm</text><text x=\"253.5\" y=\"189.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5 cm</text><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#fde68a\" fill-opacity=\"0.75\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "First find the area of the end face (5 cm by 12 cm), as in the highlighted face.",
+              "work": "\\(5\\times12=60\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 230\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"30\" y=\"70\" width=\"190\" height=\"110\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"30,70 85,25 275,25 220,70\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"226.9\" y1=\"64.4\" x2=\"226.9\" y2=\"174.4\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"233.8\" y1=\"58.8\" x2=\"233.8\" y2=\"168.8\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"240.6\" y1=\"53.1\" x2=\"240.6\" y2=\"163.1\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"247.5\" y1=\"47.5\" x2=\"247.5\" y2=\"157.5\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"254.4\" y1=\"41.9\" x2=\"254.4\" y2=\"151.9\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"261.2\" y1=\"36.2\" x2=\"261.2\" y2=\"146.2\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"268.1\" y1=\"30.6\" x2=\"268.1\" y2=\"140.6\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"125\" y=\"201.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">26 cm</text><text x=\"299\" y=\"84.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12 cm</text><text x=\"253.5\" y=\"189.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5 cm</text><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#fde68a\" fill-opacity=\"0.75\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Multiply by the length 26 cm.",
+              "work": "\\(V=60\\times26=1560\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 230\" width=\"58%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"30\" y=\"70\" width=\"190\" height=\"110\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><polygon points=\"30,70 85,25 275,25 220,70\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"226.9\" y1=\"64.4\" x2=\"226.9\" y2=\"174.4\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"233.8\" y1=\"58.8\" x2=\"233.8\" y2=\"168.8\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"240.6\" y1=\"53.1\" x2=\"240.6\" y2=\"163.1\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"247.5\" y1=\"47.5\" x2=\"247.5\" y2=\"157.5\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"254.4\" y1=\"41.9\" x2=\"254.4\" y2=\"151.9\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"261.2\" y1=\"36.2\" x2=\"261.2\" y2=\"146.2\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"268.1\" y1=\"30.6\" x2=\"268.1\" y2=\"140.6\" stroke=\"#94a3b8\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"125\" y=\"201.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">26 cm</text><text x=\"299\" y=\"84.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">12 cm</text><text x=\"253.5\" y=\"189.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">5 cm</text><polygon points=\"220,70 275,25 275,135 220,180\" fill=\"#fde68a\" fill-opacity=\"0.75\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"30\" y1=\"180\" x2=\"220\" y2=\"180\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/></svg>"
+              }
+            },
+            {
+              "explain": "Capacity: 1 litre = 1000 cm³, so divide by 1000.",
+              "work": "\\(1560\\text{ cm}^3=1560\\text{ mL}=1560\\div1000=1.56\\text{ L}\\)"
+            },
+            {
+              "explain": "Common mistakes: 1 560 L (not converting), 15.6 L and 156 L (place value errors).",
+              "work": "\\(\\boxed{1.56\\text{ L}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "capacity",
+              "note": "1000 cm³ = 1 L."
+            },
+            {
+              "text": "first finding the volume",
+              "note": "Find the volume in cm³ first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q2(e)",
+            "sourceMarks": 3,
+            "page": 13
           }
         }
       ]
@@ -2463,6 +2736,76 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "wghs2018-y8-s2q2d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the volume of the cylinder below correct to 1 decimal place.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"56%\" height=\"auto\" style=\"display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"45\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><path d=\"M45 200 A120 24 0 0 0 285 200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><circle cx=\"165\" cy=\"50\" r=\"2.4\" fill=\"#1e293b\"/><text x=\"165\" y=\"90.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m (diameter)</text><text x=\"37\" y=\"129.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m</text></svg>"
+          },
+          "options": [
+            "1 998.2 m³",
+            "499.6 m³",
+            "249.8 m³",
+            "464.7 m³"
+          ],
+          "answer": 1,
+          "hint": "The 8.6 m across the top is the DIAMETER. Halve it to get the radius before using V = πr²h.",
+          "steps": [
+            {
+              "explain": "Find the radius. The line across the top passes through the centre, so 8.6 m is the diameter. The radius is half of it.",
+              "work": "\\(r=8.6\\div2=4.3\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"56%\" height=\"auto\" style=\"display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"45\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><path d=\"M45 200 A120 24 0 0 0 285 200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><circle cx=\"165\" cy=\"50\" r=\"2.4\" fill=\"#1e293b\"/><text x=\"165\" y=\"90.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m (diameter)</text><text x=\"37\" y=\"129.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m</text><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#d97706\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"3\"/><line x1=\"165\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"231\" y=\"42.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">r = 4.3</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the area of the circular base (highlighted).",
+              "work": "\\(A=\\pi r^2=\\pi\\times4.3^2=58.088\\ldots\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"56%\" height=\"auto\" style=\"display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"45\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><path d=\"M45 200 A120 24 0 0 0 285 200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><circle cx=\"165\" cy=\"50\" r=\"2.4\" fill=\"#1e293b\"/><text x=\"165\" y=\"90.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m (diameter)</text><text x=\"37\" y=\"129.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m</text><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#d97706\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"3\"/><line x1=\"165\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"231\" y=\"42.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">r = 4.3</text></svg>"
+              }
+            },
+            {
+              "explain": "The height is 8.6 m. Volume = base area × height.",
+              "work": "\\(V=\\pi r^2h=58.088\\ldots\\times8.6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"56%\" height=\"auto\" style=\"display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"45\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"285\" y1=\"50\" x2=\"285\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><path d=\"M45 200 A120 24 0 0 0 285 200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"45\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><circle cx=\"165\" cy=\"50\" r=\"2.4\" fill=\"#1e293b\"/><text x=\"165\" y=\"90.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m (diameter)</text><text x=\"37\" y=\"129.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">8.6 m</text><ellipse cx=\"165\" cy=\"50\" rx=\"120\" ry=\"24\" fill=\"#d97706\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"3\"/><line x1=\"165\" y1=\"50\" x2=\"285\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"231\" y=\"42.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">r = 4.3</text><line x1=\"295\" y1=\"50\" x2=\"295\" y2=\"200\" stroke=\"#059669\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><text x=\"299\" y=\"129.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">h = 8.6</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate and round to 1 decimal place.",
+              "work": "\\(V=499.56\\ldots\\approx499.6\\text{ m}^3\\)"
+            },
+            {
+              "explain": "Common mistakes: 1 998.2 (using the diameter 8.6 as the radius) and 249.8 (dividing by 2 again).",
+              "work": "\\(\\boxed{499.6\\text{ m}^3}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "volume of the cylinder",
+              "note": "V = πr²h."
+            },
+            {
+              "text": "1 decimal place",
+              "note": "Round at the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q2(d)",
+            "sourceMarks": 3,
+            "page": 13
           }
         }
       ]
@@ -2888,6 +3231,171 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "wghs2018-y8-s2q2a",
+          "type": "multipart",
+          "stem": "Convert to the unit shown",
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q2(a)",
+            "sourceMarks": 2,
+            "page": 12
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s2q2a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "1 hectare = ………… m²",
+              "options": [
+                "100",
+                "1 000",
+                "100 000",
+                "10 000"
+              ],
+              "answer": 3,
+              "hint": "A hectare is a square 100 m by 100 m. Find its area.",
+              "steps": [
+                {
+                  "explain": "A hectare is the area of a square with sides 100 m long.",
+                  "work": "1 hectare = a 100 m by 100 m square",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dcfce7\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 hectare</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 m²</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Area of a square = side × side.",
+                  "work": "\\(100\\times100=10\\,000\\text{ m}^2\\)"
+                },
+                {
+                  "explain": "Check: a hectare is about the size of a rugby field (a bit more than one). Common mistakes: 100 (using only one side) and 1 000 or 100 000 (place value errors).",
+                  "work": "\\(\\boxed{10\\,000\\text{ m}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "hectare",
+                  "note": "A hectare is a 100 m by 100 m square."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(a)(i)",
+                "sourceMarks": 1,
+                "page": 12
+              }
+            },
+            {
+              "id": "wghs2018-y8-s2q2a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "1 m² = ………… cm²",
+              "options": [
+                "100",
+                "10 000",
+                "1 000",
+                "1 000 000"
+              ],
+              "answer": 1,
+              "hint": "1 m = 100 cm. A square metre is a square that is 100 cm by 100 cm.",
+              "steps": [
+                {
+                  "explain": "First change the side length: 1 m = 100 cm. A square metre is a square with sides 1 m = 100 cm.",
+                  "work": "1 m = 100 cm",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 m²</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 cm²</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Area of the square in cm².",
+                  "work": "\\(100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^2\\)"
+                },
+                {
+                  "explain": "Remember that for AREA units you must square the conversion factor: \\(100^2=10\\,000\\). Common mistake: 100 (using the length factor).",
+                  "work": "\\(\\boxed{10\\,000\\text{ cm}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "1 m²",
+                  "note": "Square the length conversion: 100 × 100."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(a)(ii)",
+                "sourceMarks": 1,
+                "page": 12
+              }
+            }
+          ]
+        },
+        {
+          "id": "wghs2018-y8-s2q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A cyclist rides 3 separate legs of a race. The lengths were 10.5km, 1300m and 4.8km. Find the total length that she rides.",
+          "options": [
+            "16.6 km",
+            "1 315.3 km",
+            "15.3 km",
+            "28.6 km"
+          ],
+          "answer": 0,
+          "hint": "The lengths are in different units. Change 1300 m into km before adding.",
+          "steps": [
+            {
+              "explain": "Two lengths are in km and one is in metres. Change them all to km. 1 km = 1000 m, so divide metres by 1000.",
+              "work": "\\(1300\\text{ m}=1300\\div1000=1.3\\text{ km}\\)"
+            },
+            {
+              "explain": "Now add the three lengths in km. Line up the decimal points.",
+              "work": "\\(10.5+1.3+4.8\\)"
+            },
+            {
+              "explain": "Add step by step.",
+              "work": "\\(10.5+1.3=11.8\\)\n\\(11.8+4.8=16.6\\text{ km}\\)"
+            },
+            {
+              "explain": "Common mistakes: 1 315.3 (adding without changing units), 15.3 (using 0.3 km for 1300 m) and 28.6 (using 13 km).",
+              "work": "\\(\\boxed{16.6\\text{ km}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "1300m",
+              "note": "Change metres to kilometres first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(b)",
+            "sourceMarks": 1,
+            "page": 14
           }
         }
       ]
