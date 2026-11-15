@@ -5290,6 +5290,183 @@
             "Foreign residents pay tax only on investment income."
           ],
           "answer": 0
+        },
+        {
+          "id": "wghs2018-y8-s1q5g",
+          "type": "multipart",
+          "stem": "In the last financial year Scott's taxable income was $142 000 and Liz's taxable income was $16 950. The table to calculate tax payable is shown below.\nNote: Medicare levy is calculated separately: 1.5% of taxable income",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 382 168\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"6\" y=\"6\" width=\"120\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"22.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Taxable income</text><rect x=\"126\" y=\"6\" width=\"250\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"22.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Tax on this income</text><rect x=\"6\" y=\"32\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"48.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">0–$18 200</text><rect x=\"126\" y=\"32\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"48.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Nil</text><rect x=\"6\" y=\"58\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"74.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$18 201–$37 000</text><rect x=\"126\" y=\"58\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"74.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">19c for each $1 over $18 200</text><rect x=\"6\" y=\"84\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"100.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$37 001–$80 000</text><rect x=\"126\" y=\"84\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"100.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"6\" y=\"110\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"126.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$80 001–$180 000</text><rect x=\"126\" y=\"110\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"126.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"6\" y=\"136\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"152.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$180 001 and over</text><rect x=\"126\" y=\"136\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"152.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$54 547 plus 45c for each $1 over $180 000</text></svg>"
+          },
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q5(g)",
+            "sourceMarks": 3,
+            "page": 7,
+            "note": "Year 9 topic (9 chap 1 in the exam)."
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s1q5g-a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Use the table to find Liz's tax payable. (not including Medicare levy)",
+              "options": [
+                "Nil",
+                "$3 220.50",
+                "$237.50",
+                "$16 950"
+              ],
+              "answer": 0,
+              "hint": "Find which row of the table Liz's taxable income is in. Look at the first row.",
+              "steps": [
+                {
+                  "explain": "Liz's taxable income is $16 950. Find the row of the table that contains this amount.",
+                  "work": "$16 950 is between $0 and $18 200",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 382 168\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"6\" y=\"6\" width=\"120\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"22.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Taxable income</text><rect x=\"126\" y=\"6\" width=\"250\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"22.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Tax on this income</text><rect x=\"6\" y=\"32\" width=\"120\" height=\"26\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"48.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">0–$18 200</text><rect x=\"126\" y=\"32\" width=\"250\" height=\"26\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"48.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Nil</text><rect x=\"6\" y=\"58\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"74.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$18 201–$37 000</text><rect x=\"126\" y=\"58\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"74.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">19c for each $1 over $18 200</text><rect x=\"6\" y=\"84\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"100.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$37 001–$80 000</text><rect x=\"126\" y=\"84\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"100.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"6\" y=\"110\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"126.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$80 001–$180 000</text><rect x=\"126\" y=\"110\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"126.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"6\" y=\"136\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"152.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$180 001 and over</text><rect x=\"126\" y=\"136\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"152.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$54 547 plus 45c for each $1 over $180 000</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The first row ($0–$18 200) says the tax is Nil, which means no tax is payable.",
+                  "work": "Tax = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">Nil</mark>"
+                },
+                {
+                  "explain": "Common mistakes: $3 220.50 (taking 19% of all of $16 950) and $237.50 (19c on the difference 18 200 − 16 950, which is not above the threshold).",
+                  "work": "<b>Liz pays no tax.</b>"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Liz's tax payable",
+                  "note": "Find Liz's income band in the table first."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(g)(a)",
+                "sourceMarks": 1,
+                "page": 7
+              }
+            },
+            {
+              "id": "wghs2018-y8-s1q5g-b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Use the table to find Scott's tax payable. (not including Medicare levy)",
+              "options": [
+                "$52 540",
+                "$70 087",
+                "$22 940",
+                "$40 487"
+              ],
+              "answer": 3,
+              "hint": "Scott's income is $142 000. Find the band, use the fixed amount, then add the cents for each dollar over the start of the band.",
+              "steps": [
+                {
+                  "explain": "Scott's taxable income is $142 000. Find the row of the table that contains it: $80 001–$180 000.",
+                  "work": "Band: $80 001–$180 000\nRule: $17 547 plus 37c for each $1 over $80 000",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 382 168\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"6\" y=\"6\" width=\"120\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"22.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Taxable income</text><rect x=\"126\" y=\"6\" width=\"250\" height=\"26\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"22.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\">Tax on this income</text><rect x=\"6\" y=\"32\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"48.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">0–$18 200</text><rect x=\"126\" y=\"32\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"48.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">Nil</text><rect x=\"6\" y=\"58\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"74.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$18 201–$37 000</text><rect x=\"126\" y=\"58\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"74.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">19c for each $1 over $18 200</text><rect x=\"6\" y=\"84\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"100.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$37 001–$80 000</text><rect x=\"126\" y=\"84\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"100.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"6\" y=\"110\" width=\"120\" height=\"26\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"126.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$80 001–$180 000</text><rect x=\"126\" y=\"110\" width=\"250\" height=\"26\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"126.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"6\" y=\"136\" width=\"120\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"66\" y=\"152.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$180 001 and over</text><rect x=\"126\" y=\"136\" width=\"250\" height=\"26\" fill=\"#ffffff\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"251\" y=\"152.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#1e293b\">$54 547 plus 45c for each $1 over $180 000</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Find how much of his income is over $80 000.",
+                  "work": "\\(142\\,000-80\\,000=62\\,000\\)"
+                },
+                {
+                  "explain": "Calculate 37c (= $0.37) for each of those dollars.",
+                  "work": "\\(0.37\\times62\\,000=22\\,940\\)"
+                },
+                {
+                  "explain": "Add the fixed amount from the table.",
+                  "work": "\\(17\\,547+22\\,940=40\\,487\\)"
+                },
+                {
+                  "explain": "Common mistakes: $52 540 (0.37 × all of $142 000), $70 087 (adding the fixed amount to that) and $22 940 (forgetting the fixed amount).",
+                  "work": "\\(\\boxed{\\$40\\,487}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Scott's tax payable",
+                  "note": "Use the band that contains $142 000."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(g)(b)",
+                "sourceMarks": 1,
+                "page": 7
+              }
+            },
+            {
+              "id": "wghs2018-y8-s1q5g-c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Calculate Scott's Medicare levy.",
+              "options": [
+                "$213",
+                "$2 130",
+                "$21 300",
+                "$254.25"
+              ],
+              "answer": 1,
+              "hint": "The Medicare levy is 1.5% of the taxable income. Change 1.5% to a decimal and multiply by Scott's income.",
+              "steps": [
+                {
+                  "explain": "The note says the Medicare levy is 1.5% of taxable income. Scott's taxable income is $142 000.",
+                  "work": "Levy = 1.5% of $142 000"
+                },
+                {
+                  "explain": "Change the percentage to a decimal: divide by 100.",
+                  "work": "\\(1.5\\%=0.015\\)"
+                },
+                {
+                  "explain": "Multiply by the taxable income.",
+                  "work": "\\(0.015\\times142\\,000=2130\\)"
+                },
+                {
+                  "explain": "Check: 1% of 142 000 is 1 420 and half a percent is 710, so 1 420 + 710 = 2 130 \\(\\checkmark\\). $254.25 would be the levy for Liz's income.",
+                  "work": "\\(\\boxed{\\$2130}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Medicare levy",
+                  "note": "It is 1.5% of the taxable income."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(g)(c)",
+                "sourceMarks": 1,
+                "page": 7
+              }
+            }
+          ]
         }
       ]
     },
@@ -5915,6 +6092,124 @@
             "\\(\\$36,000.00\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "wghs2018-y8-s1q5f",
+          "type": "multipart",
+          "stem": "For question 5f, use the formula \\(A = P(1 + r)^n\\)\nSandi invests $70 000 for 15 years at a compound interest rate of 6% per annum. Find the value of her investment after 15 years if the interest is",
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q5(f)",
+            "sourceMarks": 2,
+            "page": 7,
+            "note": "Year 9 topic (9 chap 1 in the exam)."
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s1q5f-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "compounded each year.",
+              "options": [
+                "$133 000.00",
+                "$167 759.07",
+                "$63 000.00",
+                "$74 200.00"
+              ],
+              "answer": 1,
+              "hint": "Use A = P(1 + r)ⁿ with r = 0.06 and n = 15. Press the power on your calculator carefully.",
+              "steps": [
+                {
+                  "explain": "Compounded each year means the interest is added once a year, so n = 15 and r = 6% = 0.06.",
+                  "work": "P = 70 000\nr = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">0.06</mark>\nn = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">15</mark>"
+                },
+                {
+                  "explain": "Substitute into the formula.",
+                  "work": "\\(A=70\\,000(1+0.06)^{15}=70\\,000(1.06)^{15}\\)"
+                },
+                {
+                  "explain": "Work out the power first, then multiply.",
+                  "work": "\\(1.06^{15}=2.3965\\ldots\\)\n\\(A=70\\,000\\times2.3965\\ldots=167\\,759.07\\)"
+                },
+                {
+                  "explain": "The value after 15 years is $167 759.07. Common mistakes: $133 000 (simple interest), $63 000 (only the interest earned with simple interest) and $74 200 (only 1 year).",
+                  "work": "\\(\\boxed{\\$167\\,759.07}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "compounded each year",
+                  "note": "Interest is added once a year, so n = 15."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(f)(i)",
+                "sourceMarks": 1,
+                "page": 7
+              }
+            },
+            {
+              "id": "wghs2018-y8-s1q5f-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "compounded each month.",
+              "options": [
+                "$167 759.07",
+                "$75 437.79",
+                "$171 786.55",
+                "$74 200.00"
+              ],
+              "answer": 2,
+              "hint": "Monthly compounding: divide the yearly rate by 12 and multiply the number of years by 12.",
+              "steps": [
+                {
+                  "explain": "Compounded each month means interest is added 12 times a year. So the rate each month is the yearly rate ÷ 12 and the number of periods is the years × 12.",
+                  "work": "\\(r=\\frac{6\\%}{12}=0.5\\%=0.005\\)\n\\(n=15\\times12=180\\)"
+                },
+                {
+                  "explain": "Substitute into the formula.",
+                  "work": "\\(A=70\\,000(1+0.005)^{180}\\)"
+                },
+                {
+                  "explain": "Calculate the power, then multiply.",
+                  "work": "\\(1.005^{180}=2.4540\\ldots\\)\n\\(A=70\\,000\\times2.4540\\ldots=171\\,786.55\\)"
+                },
+                {
+                  "explain": "Monthly compounding gives a little more than yearly compounding ($167 759.07). Common mistakes: using n = 15 with the monthly rate, or not dividing the rate by 12.",
+                  "work": "\\(\\boxed{\\$171\\,786.55}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "compounded each month",
+                  "note": "Use r ÷ 12 and n × 12."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(f)(ii)",
+                "sourceMarks": 1,
+                "page": 7
+              }
+            }
+          ]
         }
       ]
     },

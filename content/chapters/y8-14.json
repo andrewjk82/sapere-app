@@ -706,6 +706,64 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"50%\" height=\"auto\"><path d=\"M55 68 A116.5 116.5 0 0 1 245 200 L55 68 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"55\" y1=\"68\" x2=\"55\" y2=\"200\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"55\" y1=\"200\" x2=\"245\" y2=\"200\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"55\" y1=\"68\" x2=\"245\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M55 184 L71 184 L71 200\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"37\" y=\"61\" font-size=\"12\" fill=\"#334155\">B</text><text x=\"38\" y=\"216\" font-size=\"12\" fill=\"#334155\">A</text><text x=\"247\" y=\"216\" font-size=\"12\" fill=\"#334155\">D</text><text x=\"205\" y=\"57\" font-size=\"12\" fill=\"#334155\">C</text><text x=\"36\" y=\"135\" font-size=\"12\" fill=\"#334155\">10</text><text x=\"143\" y=\"218\" font-size=\"12\" fill=\"#334155\">24</text></svg>"
           }
+        },
+        {
+          "id": "wghs2018-y8-s2q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the circumference of a circle with a radius of 6370 km. Round your answer to the nearest whole number.",
+          "options": [
+            "20 012 km",
+            "12 740 km",
+            "40 024 km",
+            "127 477 000 km"
+          ],
+          "answer": 2,
+          "hint": "Use C = 2πr. Round only at the very end.",
+          "steps": [
+            {
+              "explain": "The circumference is the distance around a circle. The formula with the radius is C = 2πr.",
+              "work": "\\(C=2\\pi r\\)"
+            },
+            {
+              "explain": "Substitute r = 6370 km.",
+              "work": "\\(C=2\\times\\pi\\times6370\\)"
+            },
+            {
+              "explain": "Use the π button on your calculator.",
+              "work": "\\(C=40\\,023.8\\ldots\\)"
+            },
+            {
+              "explain": "Round to the nearest whole number: the digit after the units is 8, so round up.",
+              "work": "\\(C\\approx40\\,024\\text{ km}\\)"
+            },
+            {
+              "explain": "Common mistakes: 20 012 (using πr instead of 2πr), 12 740 (the diameter) and 127 477 000 (using the area formula πr²).",
+              "work": "\\(\\boxed{40\\,024\\text{ km}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "radius of 6370 km",
+              "note": "Use C = 2πr."
+            },
+            {
+              "text": "nearest whole number",
+              "note": "Round at the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q2(c)",
+            "sourceMarks": 1,
+            "page": 13
+          }
         }
       ]
     },

@@ -3463,6 +3463,56 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2018-y8-s2q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find 30% of 1.2 Litres. Write your answer in millilitres.",
+          "options": [
+            "36 mL",
+            "360 mL",
+            "0.36 mL",
+            "3 600 mL"
+          ],
+          "answer": 1,
+          "hint": "Change 1.2 L to millilitres first, then find 30% of it.",
+          "steps": [
+            {
+              "explain": "1 litre = 1000 mL, so change 1.2 L to millilitres.",
+              "work": "\\(1.2\\text{ L}=1.2\\times1000=1200\\text{ mL}\\)"
+            },
+            {
+              "explain": "Change 30% to a decimal (divide by 100) and multiply.",
+              "work": "\\(30\\%=0.30\\)\n\\(0.3\\times1200=360\\)"
+            },
+            {
+              "explain": "Check with 10%: 10% of 1200 is 120, so 30% is 3 × 120 = 360 \\(\\checkmark\\). Common mistakes: 36 and 3 600 (place value errors).",
+              "work": "\\(\\boxed{360\\text{ mL}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "30%",
+              "note": "Change 30% to the decimal 0.3."
+            },
+            {
+              "text": "millilitres",
+              "note": "1 L = 1000 mL."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(c)",
+            "sourceMarks": 1,
+            "page": 14
+          }
         }
       ]
     },
@@ -3782,6 +3832,64 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2018-y8-s1q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For questions 5d & 5e, use the formula \\(I = Prn\\)\nJames invests $5000 for 7 years at a simple interest rate of 8.5% per annum. Find the amount of interest James earns.",
+          "options": [
+            "$425",
+            "$297 500",
+            "$5 425",
+            "$2 975"
+          ],
+          "answer": 3,
+          "hint": "Write the values for P, r and n. Change the rate to a decimal before multiplying.",
+          "steps": [
+            {
+              "explain": "Match the information to the formula \\(I=Prn\\): P is the principal (amount invested), r is the rate as a decimal and n is the number of years.",
+              "work": "P = 5000\nr = 8.5% = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">0.085</mark>\nn = 7"
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(I=5000\\times0.085\\times7\\)"
+            },
+            {
+              "explain": "Multiply step by step: first one year's interest, then 7 years.",
+              "work": "\\(5000\\times0.085=425\\)\n\\(425\\times7=2975\\)"
+            },
+            {
+              "explain": "The interest is $2 975. Common mistakes: $425 (only one year), $297 500 (using 8.5 instead of 0.085) and $5 425 (adding the principal).",
+              "work": "\\(\\boxed{I=\\$2975}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$5000",
+              "note": "This is the principal P."
+            },
+            {
+              "text": "8.5% per annum",
+              "note": "Change 8.5% to 0.085."
+            },
+            {
+              "text": "7 years",
+              "note": "This is n."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q5(d)",
+            "sourceMarks": 1,
+            "page": 6
+          }
         }
       ]
     },
@@ -4080,6 +4188,63 @@
               "note": "The second discount is taken from Tanya’s already-reduced price."
             }
           ]
+        },
+        {
+          "id": "wghs2018-y8-s2q3h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Shania buys a dress that has been discounted by 25%. If the sale price is $225, what was the original price of the dress?",
+          "options": [
+            "$281.25",
+            "$250",
+            "$300",
+            "$56.25"
+          ],
+          "answer": 2,
+          "hint": "A 25% discount means the sale price is 75% of the original. $225 is 75%. Find 100%.",
+          "steps": [
+            {
+              "explain": "A discount of 25% means she pays 100% − 25% = 75% of the original price. So $225 is 75% of the original.",
+              "work": "\\(75\\%\\text{ of original}=\\$225\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 444 114\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"12\" y=\"30\" width=\"105\" height=\"34\" fill=\"#fecaca\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"78.5\" y=\"18.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">25% off</text><rect x=\"117\" y=\"30\" width=\"315\" height=\"34\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"274.5\" y=\"51.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">75% = $225</text><line x1=\"12\" y1=\"64\" x2=\"12\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"432\" y1=\"64\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"12\" y1=\"74\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"17.3,76.8 12,74 17.3,71.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"426.7,71.2 432,74 426.7,76.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"189.2\" y=\"66.6\" width=\"65.5\" height=\"14.9\" fill=\"#fff\"/><text x=\"222\" y=\"78.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">100% = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Write an equation with x for the original price.",
+              "work": "\\(0.75x=225\\)"
+            },
+            {
+              "explain": "Divide both sides by 0.75.",
+              "work": "\\(x=\\frac{225}{0.75}=300\\)"
+            },
+            {
+              "explain": "Check: \\(300\\times0.75=225\\;\\checkmark\\). $281.25 comes from adding 25% to the sale price, which is not the same as undoing a discount.",
+              "work": "\\(\\boxed{\\$300}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "discounted by 25%",
+              "note": "The sale price is 75% of the original."
+            },
+            {
+              "text": "original price",
+              "note": "Find 100%."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(h)",
+            "sourceMarks": 1,
+            "page": 15
+          }
         }
       ]
     },
@@ -4326,6 +4491,334 @@
               "note": "Adding water changes the total volume but not the amount of concentrate."
             }
           ]
+        },
+        {
+          "id": "wghs2018-y8-s2q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Decrease $450 by 26%.",
+          "options": [
+            "$117",
+            "$576",
+            "$424",
+            "$333"
+          ],
+          "answer": 3,
+          "hint": "A 26% decrease leaves 74% of the original price. Find 74% of $450.",
+          "steps": [
+            {
+              "explain": "Decreasing by 26% means 26% is taken off, so 100% − 26% = 74% is left.",
+              "work": "\\(100\\%-26\\%=74\\%\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 444 114\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"12\" y=\"30\" width=\"109.2\" height=\"34\" fill=\"#fecaca\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"80.6\" y=\"18.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">26% off</text><rect x=\"121.2\" y=\"30\" width=\"310.8\" height=\"34\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"276.6\" y=\"51.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">74% left</text><line x1=\"12\" y1=\"64\" x2=\"12\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"432\" y1=\"64\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"12\" y1=\"74\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"17.3,76.8 12,74 17.3,71.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"426.7,71.2 432,74 426.7,76.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"178.1\" y=\"66.6\" width=\"87.8\" height=\"14.9\" fill=\"#fff\"/><text x=\"222\" y=\"78.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">100% = $450</text></svg>"
+              }
+            },
+            {
+              "explain": "Change 74% to a decimal and multiply by $450.",
+              "work": "\\(74\\%=0.74\\)\n\\(450\\times0.74=333\\)"
+            },
+            {
+              "explain": "Check another way: 26% of 450 dollars is 117 dollars, and 450 − 117 = 333 \\(\\checkmark\\). The option 117 is only the decrease and 576 is an increase.",
+              "work": "\\(\\boxed{\\$333}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Decrease $450 by 26%",
+              "note": "Find 74% of the original."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(d)",
+            "sourceMarks": 1,
+            "page": 14
+          }
+        },
+        {
+          "id": "wghs2018-y8-s2q3f",
+          "type": "multipart",
+          "stem": "Renae buys a diamond for $17 500 and sells it 2 years later for $15 000.",
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(f)",
+            "sourceMarks": 2,
+            "page": 14
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s2q3f-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How much did Renae lose on the diamond?",
+              "options": [
+                "$2 500",
+                "$32 500",
+                "$5 000",
+                "$17 500"
+              ],
+              "answer": 0,
+              "hint": "Loss = cost price − selling price.",
+              "steps": [
+                {
+                  "explain": "She bought the diamond for $17 500 and sold it for $15 000, which is less. So she made a LOSS.",
+                  "work": "Cost price = $17 500\nSelling price = $15 000"
+                },
+                {
+                  "explain": "Loss = cost price − selling price.",
+                  "work": "\\(17\\,500-15\\,000=2500\\)"
+                },
+                {
+                  "explain": "Check: \\(15\\,000+2500=17\\,500\\;\\checkmark\\). $32 500 adds the two prices instead.",
+                  "work": "\\(\\boxed{\\$2500}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "lose",
+                  "note": "Loss = cost − selling price."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q3(f)(i)",
+                "sourceMarks": 1,
+                "page": 14
+              }
+            },
+            {
+              "id": "wghs2018-y8-s2q3f-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the loss as a percentage of the cost price?",
+              "options": [
+                "16.7%",
+                "85.7%",
+                "12.5%",
+                "14.3%"
+              ],
+              "answer": 3,
+              "hint": "Percentage loss = loss ÷ cost price × 100. Use the COST price, not the selling price.",
+              "steps": [
+                {
+                  "explain": "Write the loss as a fraction of the cost price. The cost price is $17 500 and the loss is $2 500.",
+                  "work": "\\(\\frac{\\text{loss}}{\\text{cost price}}=\\frac{2500}{17\\,500}\\)"
+                },
+                {
+                  "explain": "Divide, then multiply by 100 to change it to a percentage.",
+                  "work": "\\(\\frac{2500}{17\\,500}=0.142857\\ldots\\)\n\\(0.142857\\times100=14.2857\\ldots\\%\\)"
+                },
+                {
+                  "explain": "Round to 1 decimal place.",
+                  "work": "\\(14.3\\%\\)"
+                },
+                {
+                  "explain": "Common mistakes: 16.7% (dividing by the selling price $15 000) and 85.7% (the selling price as a percentage of the cost).",
+                  "work": "\\(\\boxed{14.3\\%}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "cost price",
+                  "note": "Divide the loss by the cost price."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q3(f)(ii)",
+                "sourceMarks": 1,
+                "page": 14
+              }
+            }
+          ]
+        },
+        {
+          "id": "wghs2018-y8-s2q3g",
+          "type": "multipart",
+          "stem": "A television was valued at $2200 in 2017. When the 2018 model was released the price increased by 3.8%.",
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(g)",
+            "sourceMarks": 2,
+            "page": 15
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s2q3g-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the price increase.",
+              "options": [
+                "$836",
+                "$8.36",
+                "$83.60",
+                "$2 283.60"
+              ],
+              "answer": 2,
+              "hint": "Increase = 3.8% of $2200. Change 3.8% to a decimal.",
+              "steps": [
+                {
+                  "explain": "The price increased by 3.8% of the original price $2200.",
+                  "work": "Increase = 3.8% of $2200"
+                },
+                {
+                  "explain": "Change 3.8% to a decimal (divide by 100).",
+                  "work": "\\(3.8\\%=0.038\\)"
+                },
+                {
+                  "explain": "Multiply.",
+                  "work": "\\(0.038\\times2200=83.6\\)"
+                },
+                {
+                  "explain": "The price increase is $83.60. Common mistakes: $836 and $8.36 (decimal point errors) and $2 283.60 (that is the new price, part (ii)).",
+                  "work": "\\(\\boxed{\\$83.60}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "price increase",
+                  "note": "Find 3.8% of the old price."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q3(g)(i)",
+                "sourceMarks": 1,
+                "page": 15
+              }
+            },
+            {
+              "id": "wghs2018-y8-s2q3g-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the price of the 2018 model.",
+              "options": [
+                "$2 116.40",
+                "$2 203.80",
+                "$83.60",
+                "$2 283.60"
+              ],
+              "answer": 3,
+              "hint": "New price = old price + increase. Use the answer from part (i).",
+              "steps": [
+                {
+                  "explain": "Use the increase from part (i): $83.60. The price went UP.",
+                  "work": "Old price = $2200\nIncrease = $83.60"
+                },
+                {
+                  "explain": "Add the increase to the old price.",
+                  "work": "\\(2200+83.60=2283.60\\)"
+                },
+                {
+                  "explain": "Check with one step: 103.8% of $2200 = 1.038 × 2200 = $2 283.60 \\(\\checkmark\\). $2 116.40 is the price after a DECREASE of 3.8%.",
+                  "work": "\\(\\boxed{\\$2283.60}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "price of the 2018 model",
+                  "note": "New price = old price + increase."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q3(g)(ii)",
+                "sourceMarks": 1,
+                "page": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "wghs2018-y8-s2q3j",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The price of a new phone is $1085 including 10% GST. Find the price of the phone without GST.",
+          "options": [
+            "$976.50",
+            "$986.36",
+            "$1 193.50",
+            "$108.50"
+          ],
+          "answer": 1,
+          "hint": "The $1085 is 110% of the price without GST. Divide by 1.1.",
+          "steps": [
+            {
+              "explain": "GST is 10% added to the price. Including GST the price is 100% + 10% = 110% of the price without GST.",
+              "work": "\\(110\\%\\text{ of price}=\\$1085\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 444 114\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"12\" y=\"30\" width=\"381.8\" height=\"34\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"202.9\" y=\"51.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">price 100%</text><rect x=\"393.8\" y=\"30\" width=\"38.2\" height=\"34\" fill=\"#bfdbfe\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"412.9\" y=\"18.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">GST 10%</text><line x1=\"12\" y1=\"64\" x2=\"12\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"432\" y1=\"64\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"12\" y1=\"74\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"17.3,76.8 12,74 17.3,71.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"426.7,71.2 432,74 426.7,76.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"174.4\" y=\"66.6\" width=\"95.3\" height=\"14.9\" fill=\"#fff\"/><text x=\"222\" y=\"78.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">110% = $1085</text></svg>"
+              }
+            },
+            {
+              "explain": "Write an equation: 110% = 1.1 as a decimal.",
+              "work": "\\(1.1x=1085\\)"
+            },
+            {
+              "explain": "Divide both sides by 1.1.",
+              "work": "\\(x=\\frac{1085}{1.1}=986.36\\ldots\\)"
+            },
+            {
+              "explain": "Check: \\(986.36\\times1.1=1085\\;\\checkmark\\). Common mistakes: $976.50 (taking 10% off $1085) and $1 193.50 (adding 10%).",
+              "work": "\\(\\boxed{\\$986.36}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "including 10% GST",
+              "note": "The given price is 110% of the original price."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(j)",
+            "sourceMarks": 2,
+            "page": 15
+          }
         }
       ]
     },
@@ -4438,6 +4931,120 @@
               "note": "The $108 is only 8% of the starting amount."
             }
           ]
+        },
+        {
+          "id": "wghs2018-y8-s2q3e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Jill paid an agent a 3% commission to sell a painting. After selling the painting she paid the agent $335. How much did the painting sell for?",
+          "options": [
+            "$10.05",
+            "$11 166.67",
+            "$345.05",
+            "$9 700.00"
+          ],
+          "answer": 1,
+          "hint": "$335 is 3% of the selling price. Find 1% first, then 100%.",
+          "steps": [
+            {
+              "explain": "The $335 is the commission, which is 3% of the selling price. We need 100%.",
+              "work": "3% of the price = $335",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 444 114\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"12\" y=\"30\" width=\"12.6\" height=\"34\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"32.3\" y=\"18.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">3% = $335</text><rect x=\"24.6\" y=\"30\" width=\"407.4\" height=\"34\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"228.3\" y=\"51.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">the other 97%</text><line x1=\"12\" y1=\"64\" x2=\"12\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"432\" y1=\"64\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"12\" y1=\"74\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"17.3,76.8 12,74 17.3,71.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"426.7,71.2 432,74 426.7,76.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"189.2\" y=\"66.6\" width=\"65.5\" height=\"14.9\" fill=\"#fff\"/><text x=\"222\" y=\"78.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">100% = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Find 1% by dividing by 3.",
+              "work": "\\(1\\%=335\\div3=111.666\\ldots\\)"
+            },
+            {
+              "explain": "Find 100% by multiplying by 100.",
+              "work": "\\(100\\%=111.666\\ldots\\times100=11\\,166.67\\)"
+            },
+            {
+              "explain": "Check: \\(3\\%\\text{ of }11\\,166.67=0.03\\times11\\,166.67=335\\;\\checkmark\\). $10.05 is 3% of 335 (the wrong way round).",
+              "work": "\\(\\boxed{\\$11\\,166.67}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "3% commission",
+              "note": "$335 is 3% of the selling price."
+            },
+            {
+              "text": "How much did the painting sell for",
+              "note": "You need 100%."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(e)",
+            "sourceMarks": 1,
+            "page": 14
+          }
+        },
+        {
+          "id": "wghs2018-y8-s2q3i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Last year Joanna paid $23 009.28 in income tax. If this amount represents two-ninths of her income, calculate her income.",
+          "options": [
+            "$103 541.76",
+            "$11 504.64",
+            "$5 113.17",
+            "$34 513.92"
+          ],
+          "answer": 0,
+          "hint": "Two-ninths is 2 parts out of 9. Find one-ninth first, then all nine parts.",
+          "steps": [
+            {
+              "explain": "Two-ninths of her income is $23 009.28. Split her income into 9 equal parts; the tax is 2 of those parts.",
+              "work": "2 parts = $23 009.28",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 444 114\" width=\"70%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"12\" y=\"30\" width=\"93.3\" height=\"34\" fill=\"#fde68a\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"72.7\" y=\"18.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">2 parts = $23 009.28</text><rect x=\"105.3\" y=\"30\" width=\"326.7\" height=\"34\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"268.7\" y=\"51.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">the other 7 parts</text><line x1=\"12\" y1=\"64\" x2=\"12\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"432\" y1=\"64\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"12\" y1=\"74\" x2=\"432\" y2=\"74\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"17.3,76.8 12,74 17.3,71.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"426.7,71.2 432,74 426.7,76.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"129.7\" y=\"66.6\" width=\"184.6\" height=\"14.9\" fill=\"#fff\"/><text x=\"222\" y=\"78.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">all 9 parts = her income</text></svg>"
+              }
+            },
+            {
+              "explain": "Find one part (one-ninth) by dividing by 2.",
+              "work": "\\(23\\,009.28\\div2=11\\,504.64\\)"
+            },
+            {
+              "explain": "Her income is 9 parts, so multiply by 9.",
+              "work": "\\(11\\,504.64\\times9=103\\,541.76\\)"
+            },
+            {
+              "explain": "Check: \\(\\frac{2}{9}\\times103\\,541.76=23\\,009.28\\;\\checkmark\\). $11 504.64 is only one-ninth.",
+              "work": "\\(\\boxed{\\$103\\,541.76}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two-ninths",
+              "note": "Two parts out of nine equal parts."
+            },
+            {
+              "text": "calculate her income",
+              "note": "You need all nine parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q3(i)",
+            "sourceMarks": 1,
+            "page": 15
+          }
         }
       ]
     },
@@ -4476,6 +5083,123 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2018-y8-s1q5e",
+          "type": "multipart",
+          "stem": "Lana invests $7500 in an account that pays simple interest for 27 months. Lana's earns $253 interest.",
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q5(e)",
+            "sourceMarks": 2,
+            "page": 6
+          },
+          "parts": [
+            {
+              "id": "wghs2018-y8-s1q5e-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Write 27 months in years.",
+              "options": [
+                "2.7 years",
+                "2.25 years",
+                "27 years",
+                "2.5 years"
+              ],
+              "answer": 1,
+              "hint": "There are 12 months in a year. How many whole years fit in 27 months, and what is left over?",
+              "steps": [
+                {
+                  "explain": "1 year = 12 months, so divide 27 months by 12.",
+                  "work": "\\(27\\div12=2.25\\)"
+                },
+                {
+                  "explain": "Check by splitting: 24 months is exactly 2 years, and the extra 3 months is \\(\\frac{3}{12}=0.25\\) of a year.",
+                  "work": "\\(2+0.25=2.25\\text{ years}\\)"
+                },
+                {
+                  "explain": "Common mistakes: 2.7 years (writing 2 years 7 months as a decimal) and 27 years (not changing the unit).",
+                  "work": "\\(\\boxed{2.25\\text{ years}}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "27 months",
+                  "note": "Divide by 12 to change months into years."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(e)(i)",
+                "sourceMarks": 1,
+                "page": 6
+              }
+            },
+            {
+              "id": "wghs2018-y8-s1q5e-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find the interest rate that Lana received.",
+              "options": [
+                "1.5% p.a.",
+                "3.4% p.a.",
+                "0.1% p.a.",
+                "15% p.a."
+              ],
+              "answer": 0,
+              "hint": "Use I = Prn with I = 253, P = 7500 and n = 2.25 years. Rearrange to find r.",
+              "steps": [
+                {
+                  "explain": "Write the values from the question using \\(I=Prn\\). Use n = 2.25 years from part (i).",
+                  "work": "I = 253\nP = 7500\nn = <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">2.25</mark>\nr = ?"
+                },
+                {
+                  "explain": "Substitute into the formula.",
+                  "work": "\\(253=7500\\times r\\times2.25\\)"
+                },
+                {
+                  "explain": "Multiply the numbers on the right and then divide both sides by that number to get r on its own.",
+                  "work": "\\(7500\\times2.25=16\\,875\\)\n\\(r=\\frac{253}{16\\,875}=0.01499\\ldots\\approx0.015\\)"
+                },
+                {
+                  "explain": "Change the decimal to a percentage by multiplying by 100.",
+                  "work": "\\(0.015\\times100=1.5\\%\\)"
+                },
+                {
+                  "explain": "Common mistakes: 3.4% (ignoring the time: 253 ÷ 7500), 0.1% (using 27 years) and 15%.",
+                  "work": "\\(\\boxed{r\\approx1.5\\%\\text{ p.a.}}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "interest rate",
+                  "note": "Rearrange I = Prn to find r."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q5(e)(ii)",
+                "sourceMarks": 1,
+                "page": 6
+              }
+            }
+          ]
         }
       ]
     },
