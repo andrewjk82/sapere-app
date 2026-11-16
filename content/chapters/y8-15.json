@@ -3217,119 +3217,102 @@
           }
         },
         {
-          "id": "wghs2018-y8-s2q2a",
-          "type": "multipart",
-          "stem": "Convert to the unit shown",
+          "id": "wghs2018-y8-s2q2a-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "1 hectare = ………… m²",
+          "options": [
+            "100",
+            "1 000",
+            "100 000",
+            "10 000"
+          ],
+          "answer": 3,
+          "hint": "A hectare is a square 100 m by 100 m. Find its area.",
+          "steps": [
+            {
+              "explain": "A hectare is the area of a square with sides 100 m long.",
+              "work": "1 hectare = a 100 m by 100 m square",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dcfce7\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 hectare</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 m²</text></svg>"
+              }
+            },
+            {
+              "explain": "Area of a square = side × side.",
+              "work": "\\(100\\times100=10\\,000\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Check: a hectare is about the size of a rugby field (a bit more than one). Common mistakes: 100 (using only one side) and 1 000 or 100 000 (place value errors).",
+              "work": "\\(\\boxed{10\\,000\\text{ m}^2}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hectare",
+              "note": "A hectare is a 100 m by 100 m square."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
             "school": "Willoughby Girls High School",
             "examType": "Yearly Examination",
             "grade": "8",
             "origin": "teacher",
-            "sourceQuestion": "Section 2 Q2(a)",
-            "sourceMarks": 2,
+            "sourceQuestion": "Section 2 Q2(a)(i)",
+            "sourceMarks": 1,
             "page": 12
-          },
-          "parts": [
+          }
+        },
+        {
+          "id": "wghs2018-y8-s2q2a-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "1 m² = ………… cm²",
+          "options": [
+            "100",
+            "10 000",
+            "1 000",
+            "1 000 000"
+          ],
+          "answer": 1,
+          "hint": "1 m = 100 cm. A square metre is a square that is 100 cm by 100 cm.",
+          "steps": [
             {
-              "id": "wghs2018-y8-s2q2a-i",
-              "type": "mc",
-              "difficulty": "easy",
-              "stem": "1 hectare = ………… m²",
-              "options": [
-                "100",
-                "1 000",
-                "100 000",
-                "10 000"
-              ],
-              "answer": 3,
-              "hint": "A hectare is a square 100 m by 100 m. Find its area.",
-              "steps": [
-                {
-                  "explain": "A hectare is the area of a square with sides 100 m long.",
-                  "work": "1 hectare = a 100 m by 100 m square",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dcfce7\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 hectare</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 m²</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Area of a square = side × side.",
-                  "work": "\\(100\\times100=10\\,000\\text{ m}^2\\)"
-                },
-                {
-                  "explain": "Check: a hectare is about the size of a rugby field (a bit more than one). Common mistakes: 100 (using only one side) and 1 000 or 100 000 (place value errors).",
-                  "work": "\\(\\boxed{10\\,000\\text{ m}^2}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "hectare",
-                  "note": "A hectare is a 100 m by 100 m square."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 2 Q2(a)(i)",
-                "sourceMarks": 1,
-                "page": 12
+              "explain": "First change the side length: 1 m = 100 cm. A square metre is a square with sides 1 m = 100 cm.",
+              "work": "1 m = 100 cm",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 m²</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 cm²</text></svg>"
               }
             },
             {
-              "id": "wghs2018-y8-s2q2a-ii",
-              "type": "mc",
-              "difficulty": "easy",
-              "stem": "1 m² = ………… cm²",
-              "options": [
-                "100",
-                "10 000",
-                "1 000",
-                "1 000 000"
-              ],
-              "answer": 1,
-              "hint": "1 m = 100 cm. A square metre is a square that is 100 cm by 100 cm.",
-              "steps": [
-                {
-                  "explain": "First change the side length: 1 m = 100 cm. A square metre is a square with sides 1 m = 100 cm.",
-                  "work": "1 m = 100 cm",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 m²</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 cm²</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Area of the square in cm².",
-                  "work": "\\(100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^2\\)"
-                },
-                {
-                  "explain": "Remember that for AREA units you must square the conversion factor: \\(100^2=10\\,000\\). Common mistake: 100 (using the length factor).",
-                  "work": "\\(\\boxed{10\\,000\\text{ cm}^2}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "1 m²",
-                  "note": "Square the length conversion: 100 × 100."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 2 Q2(a)(ii)",
-                "sourceMarks": 1,
-                "page": 12
-              }
+              "explain": "Area of the square in cm².",
+              "work": "\\(100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Remember that for AREA units you must square the conversion factor: \\(100^2=10\\,000\\). Common mistake: 100 (using the length factor).",
+              "work": "\\(\\boxed{10\\,000\\text{ cm}^2}\\)"
             }
-          ]
+          ],
+          "keyPoints": [
+            {
+              "text": "1 m²",
+              "note": "Square the length conversion: 100 × 100."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Q2(a)(ii)",
+            "sourceMarks": 1,
+            "page": 12
+          }
         },
         {
           "id": "wghs2018-y8-s2q3b",
