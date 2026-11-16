@@ -2212,317 +2212,300 @@
           ]
         },
         {
-          "id": "wghs2018-y8-s1q2d",
-          "type": "multipart",
-          "stem": "Simplify each expression, write your answer in index form.",
+          "id": "wghs2018-y8-s1q2d-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify, writing your answer in index form: \\(2 \\times 2 \\times 2\\)",
+          "options": [
+            "\\(3^2\\)",
+            "\\(2^3\\)",
+            "\\(2^6\\)",
+            "\\(6^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Index form is a base with a small number saying how many times it is multiplied. How many 2s are multiplied?",
+          "steps": [
+            {
+              "explain": "Count how many times the base 2 is written in the multiplication.",
+              "work": "2 × 2 × 2 → <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">three 2s</mark>"
+            },
+            {
+              "explain": "In index form the base is 2 and the index is the number of times it is used.",
+              "work": "\\(2\\times2\\times2=2^3\\)"
+            },
+            {
+              "explain": "Check: \\(2^3=8\\) and 2 × 2 × 2 = 8 \\(\\checkmark\\). \\(3^2=9\\) is wrong (it swaps base and index) and \\(2^6=64\\) multiplies by 6.",
+              "work": "\\(\\boxed{2^3}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "2 \\times 2 \\times 2",
+              "note": "Count the number of 2s."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
             "school": "Willoughby Girls High School",
             "examType": "Yearly Examination",
             "grade": "8",
             "origin": "teacher",
-            "sourceQuestion": "Section 1 Q2(d)",
-            "sourceMarks": 6,
+            "sourceQuestion": "Section 1 Q2(d)(i)",
+            "sourceMarks": 1,
             "page": 3
-          },
-          "parts": [
+          }
+        },
+        {
+          "id": "wghs2018-y8-s1q2d-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify, writing your answer in index form: \\(\\dfrac{5 \\times 5 \\times 5 \\times 5}{5 \\times 5}\\)",
+          "options": [
+            "\\(5^4\\)",
+            "\\(5^6\\)",
+            "\\(5^1\\)",
+            "\\(5^2\\)"
+          ],
+          "answer": 3,
+          "hint": "You can cancel the same factors on the top and bottom. How many 5s are left?",
+          "steps": [
             {
-              "id": "wghs2018-y8-s1q2d-i",
-              "type": "mc",
-              "difficulty": "easy",
-              "stem": "\\(2 \\times 2 \\times 2\\)",
-              "options": [
-                "\\(3^2\\)",
-                "\\(2^3\\)",
-                "\\(2^6\\)",
-                "\\(6^2\\)"
-              ],
-              "answer": 1,
-              "hint": "Index form is a base with a small number saying how many times it is multiplied. How many 2s are multiplied?",
-              "steps": [
-                {
-                  "explain": "Count how many times the base 2 is written in the multiplication.",
-                  "work": "2 × 2 × 2 → <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">three 2s</mark>"
-                },
-                {
-                  "explain": "In index form the base is 2 and the index is the number of times it is used.",
-                  "work": "\\(2\\times2\\times2=2^3\\)"
-                },
-                {
-                  "explain": "Check: \\(2^3=8\\) and 2 × 2 × 2 = 8 \\(\\checkmark\\). \\(3^2=9\\) is wrong (it swaps base and index) and \\(2^6=64\\) multiplies by 6.",
-                  "work": "\\(\\boxed{2^3}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "2 \\times 2 \\times 2",
-                  "note": "Count the number of 2s."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 1 Q2(d)(i)",
-                "sourceMarks": 1,
-                "page": 3
-              }
+              "explain": "Write the top and bottom as powers of 5. The top has four 5s and the bottom has two 5s.",
+              "work": "\\(\\frac{5^4}{5^2}\\)"
             },
             {
-              "id": "wghs2018-y8-s1q2d-ii",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "\\(\\dfrac{5 \\times 5 \\times 5 \\times 5}{5 \\times 5}\\)",
-              "options": [
-                "\\(5^4\\)",
-                "\\(5^6\\)",
-                "\\(5^1\\)",
-                "\\(5^2\\)"
-              ],
-              "answer": 3,
-              "hint": "You can cancel the same factors on the top and bottom. How many 5s are left?",
-              "steps": [
-                {
-                  "explain": "Write the top and bottom as powers of 5. The top has four 5s and the bottom has two 5s.",
-                  "work": "\\(\\frac{5^4}{5^2}\\)"
-                },
-                {
-                  "explain": "Cancel two 5s from the top with the two 5s on the bottom.",
-                  "work": "\\(\\frac{5\\times5\\times\\cancel{5}\\times\\cancel{5}}{\\cancel{5}\\times\\cancel{5}}=5\\times5\\)"
-                },
-                {
-                  "explain": "Write what is left in index form.",
-                  "work": "\\(5\\times5=5^2\\)"
-                },
-                {
-                  "explain": "Check with the index law for division: subtract the indices, \\(5^{4-2}=5^2\\) \\(\\checkmark\\). \\(5^4\\) forgets to divide.",
-                  "work": "\\(\\boxed{5^2}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "5 \\times 5 \\times 5 \\times 5",
-                  "note": "Four 5s on the top."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 1 Q2(d)(ii)",
-                "sourceMarks": 1,
-                "page": 3
-              }
+              "explain": "Cancel two 5s from the top with the two 5s on the bottom.",
+              "work": "\\(\\frac{5\\times5\\times\\cancel{5}\\times\\cancel{5}}{\\cancel{5}\\times\\cancel{5}}=5\\times5\\)"
             },
             {
-              "id": "wghs2018-y8-s1q2d-iii",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "\\(2^3 \\times 2^7\\)",
-              "options": [
-                "\\(2^{21}\\)",
-                "\\(2^{10}\\)",
-                "\\(4^{10}\\)",
-                "\\(2^4\\)"
-              ],
-              "answer": 1,
-              "hint": "The bases are the same and you are multiplying. What happens to the indices?",
-              "steps": [
-                {
-                  "explain": "The bases are both 2 and the operation is multiplication, so use the index law: when multiplying powers with the same base, ADD the indices.",
-                  "work": "\\(a^m\\times a^n=a^{m+n}\\)"
-                },
-                {
-                  "explain": "Add the indices 3 and 7. Keep the base 2.",
-                  "work": "\\(2^3\\times2^7=2^{3+7}\\)"
-                },
-                {
-                  "explain": "Work out the sum.",
-                  "work": "\\(=2^{10}\\)"
-                },
-                {
-                  "explain": "Common mistakes: 2²¹ (multiplying the indices), 4¹⁰ (multiplying the bases) and 2⁴ (subtracting the indices).",
-                  "work": "\\(\\boxed{2^{10}}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "2^3 \\times 2^7",
-                  "note": "Same base, multiply: add the indices."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 1 Q2(d)(iii)",
-                "sourceMarks": 1,
-                "page": 3
-              }
+              "explain": "Write what is left in index form.",
+              "work": "\\(5\\times5=5^2\\)"
             },
             {
-              "id": "wghs2018-y8-s1q2d-iv",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "\\((2 \\times 3)^0 \\times 6^4\\)",
-              "options": [
-                "\\(6^4\\)",
-                "\\(6^5\\)",
-                "\\(0\\)",
-                "\\(36^4\\)"
-              ],
-              "answer": 0,
-              "hint": "What is any number (except 0) raised to the power 0? Work out the brackets first.",
-              "steps": [
-                {
-                  "explain": "Work out the bracket first: 2 × 3 = 6.",
-                  "work": "\\((2\\times3)^0=6^0\\)"
-                },
-                {
-                  "explain": "Any non-zero number to the power 0 equals 1.",
-                  "work": "\\(6^0=1\\)"
-                },
-                {
-                  "explain": "Multiply by the remaining term.",
-                  "work": "\\(1\\times6^4=6^4\\)"
-                },
-                {
-                  "explain": "Common mistakes: 6⁵ (treating \\(6^0\\) as 6), 0 (thinking the power 0 gives 0) and 36⁴.",
-                  "work": "\\(\\boxed{6^4}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "(2 \\times 3)^0",
-                  "note": "Anything (not zero) to the power 0 is 1."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 1 Q2(d)(iv)",
-                "sourceMarks": 1,
-                "page": 3
-              }
-            },
-            {
-              "id": "wghs2018-y8-s1q2d-v",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "\\((5^3)^{20}\\)",
-              "options": [
-                "\\(5^{23}\\)",
-                "\\(5^{17}\\)",
-                "\\(5^{60}\\)",
-                "\\(15^{20}\\)"
-              ],
-              "answer": 2,
-              "hint": "A power of a power: what do you do with the two indices?",
-              "steps": [
-                {
-                  "explain": "This is a power of a power. The index law says: MULTIPLY the indices.",
-                  "work": "\\((a^m)^n=a^{m\\times n}\\)"
-                },
-                {
-                  "explain": "Multiply 3 and 20. Keep the base 5.",
-                  "work": "\\((5^3)^{20}=5^{3\\times20}\\)"
-                },
-                {
-                  "explain": "Work out the product.",
-                  "work": "\\(=5^{60}\\)"
-                },
-                {
-                  "explain": "Common mistakes: 5²³ (adding the indices), 5¹⁷ (subtracting) and 15²⁰ (multiplying the base by 3).",
-                  "work": "\\(\\boxed{5^{60}}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "(5^3)^{20}",
-                  "note": "Power of a power: multiply the indices."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 1 Q2(d)(v)",
-                "sourceMarks": 1,
-                "page": 3
-              }
-            },
-            {
-              "id": "wghs2018-y8-s1q2d-vi",
-              "type": "mc",
-              "difficulty": "hard",
-              "stem": "\\(\\dfrac{(3^3)^2 \\times 3^4}{3}\\)",
-              "options": [
-                "\\(3^9\\)",
-                "\\(3^{10}\\)",
-                "\\(3^8\\)",
-                "\\(3^{12}\\)"
-              ],
-              "answer": 0,
-              "hint": "Work from the top: first the power of a power, then multiply, then divide by 3 (which is 3¹).",
-              "steps": [
-                {
-                  "explain": "Start with the power of a power: multiply the indices.",
-                  "work": "\\((3^3)^2=3^{3\\times2}=3^6\\)"
-                },
-                {
-                  "explain": "Now the top is a product with the same base: add the indices.",
-                  "work": "\\(3^6\\times3^4=3^{6+4}=3^{10}\\)\n\\(\\frac{3^{10}}{3}\\)"
-                },
-                {
-                  "explain": "Remember that 3 on the bottom is \\(3^1\\). When dividing with the same base, SUBTRACT the indices.",
-                  "work": "\\(\\frac{3^{10}}{3^1}=3^{10-1}=3^9\\)"
-                },
-                {
-                  "explain": "Common mistakes: 3¹⁰ (forgetting to divide by 3), 3⁸ (using \\(3^{3+2}\\)) and 3¹².",
-                  "work": "\\(\\boxed{3^9}\\)"
-                }
-              ],
-              "keyPoints": [
-                {
-                  "text": "(3^3)^2",
-                  "note": "Do the power of a power first."
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-                "school": "Willoughby Girls High School",
-                "examType": "Yearly Examination",
-                "grade": "8",
-                "origin": "teacher",
-                "sourceQuestion": "Section 1 Q2(d)(vi)",
-                "sourceMarks": 1,
-                "page": 3
-              }
+              "explain": "Check with the index law for division: subtract the indices, \\(5^{4-2}=5^2\\) \\(\\checkmark\\). \\(5^4\\) forgets to divide.",
+              "work": "\\(\\boxed{5^2}\\)"
             }
-          ]
+          ],
+          "keyPoints": [
+            {
+              "text": "5 \\times 5 \\times 5 \\times 5",
+              "note": "Four 5s on the top."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q2(d)(ii)",
+            "sourceMarks": 1,
+            "page": 3
+          }
+        },
+        {
+          "id": "wghs2018-y8-s1q2d-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify, writing your answer in index form: \\(2^3 \\times 2^7\\)",
+          "options": [
+            "\\(2^{21}\\)",
+            "\\(2^{10}\\)",
+            "\\(4^{10}\\)",
+            "\\(2^4\\)"
+          ],
+          "answer": 1,
+          "hint": "The bases are the same and you are multiplying. What happens to the indices?",
+          "steps": [
+            {
+              "explain": "The bases are both 2 and the operation is multiplication, so use the index law: when multiplying powers with the same base, ADD the indices.",
+              "work": "\\(a^m\\times a^n=a^{m+n}\\)"
+            },
+            {
+              "explain": "Add the indices 3 and 7. Keep the base 2.",
+              "work": "\\(2^3\\times2^7=2^{3+7}\\)"
+            },
+            {
+              "explain": "Work out the sum.",
+              "work": "\\(=2^{10}\\)"
+            },
+            {
+              "explain": "Common mistakes: 2²¹ (multiplying the indices), 4¹⁰ (multiplying the bases) and 2⁴ (subtracting the indices).",
+              "work": "\\(\\boxed{2^{10}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "2^3 \\times 2^7",
+              "note": "Same base, multiply: add the indices."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q2(d)(iii)",
+            "sourceMarks": 1,
+            "page": 3
+          }
+        },
+        {
+          "id": "wghs2018-y8-s1q2d-iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify, writing your answer in index form: \\((2 \\times 3)^0 \\times 6^4\\)",
+          "options": [
+            "\\(6^4\\)",
+            "\\(6^5\\)",
+            "\\(0\\)",
+            "\\(36^4\\)"
+          ],
+          "answer": 0,
+          "hint": "What is any number (except 0) raised to the power 0? Work out the brackets first.",
+          "steps": [
+            {
+              "explain": "Work out the bracket first: 2 × 3 = 6.",
+              "work": "\\((2\\times3)^0=6^0\\)"
+            },
+            {
+              "explain": "Any non-zero number to the power 0 equals 1.",
+              "work": "\\(6^0=1\\)"
+            },
+            {
+              "explain": "Multiply by the remaining term.",
+              "work": "\\(1\\times6^4=6^4\\)"
+            },
+            {
+              "explain": "Common mistakes: 6⁵ (treating \\(6^0\\) as 6), 0 (thinking the power 0 gives 0) and 36⁴.",
+              "work": "\\(\\boxed{6^4}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(2 \\times 3)^0",
+              "note": "Anything (not zero) to the power 0 is 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q2(d)(iv)",
+            "sourceMarks": 1,
+            "page": 3
+          }
+        },
+        {
+          "id": "wghs2018-y8-s1q2d-v",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify, writing your answer in index form: \\((5^3)^{20}\\)",
+          "options": [
+            "\\(5^{23}\\)",
+            "\\(5^{17}\\)",
+            "\\(5^{60}\\)",
+            "\\(15^{20}\\)"
+          ],
+          "answer": 2,
+          "hint": "A power of a power: what do you do with the two indices?",
+          "steps": [
+            {
+              "explain": "This is a power of a power. The index law says: MULTIPLY the indices.",
+              "work": "\\((a^m)^n=a^{m\\times n}\\)"
+            },
+            {
+              "explain": "Multiply 3 and 20. Keep the base 5.",
+              "work": "\\((5^3)^{20}=5^{3\\times20}\\)"
+            },
+            {
+              "explain": "Work out the product.",
+              "work": "\\(=5^{60}\\)"
+            },
+            {
+              "explain": "Common mistakes: 5²³ (adding the indices), 5¹⁷ (subtracting) and 15²⁰ (multiplying the base by 3).",
+              "work": "\\(\\boxed{5^{60}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(5^3)^{20}",
+              "note": "Power of a power: multiply the indices."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q2(d)(v)",
+            "sourceMarks": 1,
+            "page": 3
+          }
+        },
+        {
+          "id": "wghs2018-y8-s1q2d-vi",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify, writing your answer in index form: \\(\\dfrac{(3^3)^2 \\times 3^4}{3}\\)",
+          "options": [
+            "\\(3^9\\)",
+            "\\(3^{10}\\)",
+            "\\(3^8\\)",
+            "\\(3^{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the top: first the power of a power, then multiply, then divide by 3 (which is 3¹).",
+          "steps": [
+            {
+              "explain": "Start with the power of a power: multiply the indices.",
+              "work": "\\((3^3)^2=3^{3\\times2}=3^6\\)"
+            },
+            {
+              "explain": "Now the top is a product with the same base: add the indices.",
+              "work": "\\(3^6\\times3^4=3^{6+4}=3^{10}\\)\n\\(\\frac{3^{10}}{3}\\)"
+            },
+            {
+              "explain": "Remember that 3 on the bottom is \\(3^1\\). When dividing with the same base, SUBTRACT the indices.",
+              "work": "\\(\\frac{3^{10}}{3^1}=3^{10-1}=3^9\\)"
+            },
+            {
+              "explain": "Common mistakes: 3¹⁰ (forgetting to divide by 3), 3⁸ (using \\(3^{3+2}\\)) and 3¹².",
+              "work": "\\(\\boxed{3^9}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(3^3)^2",
+              "note": "Do the power of a power first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly Examination",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 1 Q2(d)(vi)",
+            "sourceMarks": 1,
+            "page": 3
+          }
         }
       ]
     },
