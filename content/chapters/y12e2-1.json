@@ -1405,31 +1405,31 @@
           "id": "ch13ext2-q11a-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Given that \\(z = \\sqrt2\\cos\\frac{\\pi}{3} - \\sqrt2 i\\sin\\frac{\\pi}{3}\\), express \\(z\\) in the form \\(x+iy\\), where \\(x\\) and \\(y\\) are real numbers, in exact form.",
+          "stem": "Given that \\(z = \\sqrt2\\cos\\dfrac{\\pi}{3} - \\sqrt2 i\\sin\\dfrac{\\pi}{3}\\), express \\(z\\) in the form \\(x+iy\\), where \\(x\\) and \\(y\\) are real numbers, in exact form.",
           "options": [
-            "\\(\\frac{\\sqrt2}{2}+\\frac{\\sqrt6}{2}i\\)",
-            "\\(-\\frac{\\sqrt2}{2}-\\frac{\\sqrt6}{2}i\\)",
-            "\\(\\frac{\\sqrt2}{2}-\\frac{\\sqrt6}{2}i\\)",
-            "\\(\\frac{\\sqrt6}{2}-\\frac{\\sqrt2}{2}i\\)"
+            "\\(\\dfrac{\\sqrt2}{2}+\\dfrac{\\sqrt6}{2}i\\)",
+            "\\(-\\dfrac{\\sqrt2}{2}-\\dfrac{\\sqrt6}{2}i\\)",
+            "\\(\\dfrac{\\sqrt2}{2}-\\dfrac{\\sqrt6}{2}i\\)",
+            "\\(\\dfrac{\\sqrt6}{2}-\\dfrac{\\sqrt2}{2}i\\)"
           ],
           "answer": 2,
-          "hint": "Use \\(\\cos\\frac{\\pi}{3}=\\frac12\\) and \\(\\sin\\frac{\\pi}{3}=\\frac{\\sqrt3}{2}\\). Multiply carefully by \\(\\sqrt2\\).",
+          "hint": "Use \\(\\cos\\dfrac{\\pi}{3}=\\dfrac12\\) and \\(\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt3}{2}\\). Multiply carefully by \\(\\sqrt2\\).",
           "steps": [
             {
-              "explain": "Write the known exact values: \\(\\cos\\frac{\\pi}{3}=\\frac12\\) and \\(\\sin\\frac{\\pi}{3}=\\frac{\\sqrt3}{2}\\).",
-              "work": "\\(\\cos\\tfrac{\\pi}{3}=\\tfrac12,\\quad \\sin\\tfrac{\\pi}{3}=\\tfrac{\\sqrt3}{2}\\)"
+              "explain": "Write the known exact values: \\(\\cos\\dfrac{\\pi}{3}=\\dfrac12\\) and \\(\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt3}{2}\\).",
+              "work": "\\(\\cos\\dfrac{\\pi}{3}=\\dfrac12,\\quad \\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt3}{2}\\)"
             },
             {
-              "explain": "Substitute into z. The real part is \\(\\sqrt2\\times\\frac12\\) and the imaginary part is \\(-\\sqrt2\\times\\frac{\\sqrt3}{2}\\).",
-              "work": "\\(z=\\sqrt2\\cdot\\tfrac12-\\sqrt2\\cdot\\tfrac{\\sqrt3}{2}i\\)"
+              "explain": "Substitute into z. The real part is \\(\\sqrt2\\times\\dfrac12\\) and the imaginary part is \\(-\\sqrt2\\times\\dfrac{\\sqrt3}{2}\\).",
+              "work": "\\(z=\\sqrt2\\cdot\\dfrac12-\\sqrt2\\cdot\\dfrac{\\sqrt3}{2}i\\)"
             },
             {
-              "explain": "Simplify each part. \\(\\sqrt2\\cdot\\frac12=\\frac{\\sqrt2}{2}\\) and \\(\\sqrt2\\cdot\\frac{\\sqrt3}{2}=\\frac{\\sqrt6}{2}\\).",
-              "work": "\\(z=\\tfrac{\\sqrt2}{2}-\\tfrac{\\sqrt6}{2}i\\)"
+              "explain": "Simplify each part. \\(\\sqrt2\\cdot\\dfrac12=\\dfrac{\\sqrt2}{2}\\) and \\(\\sqrt2\\cdot\\dfrac{\\sqrt3}{2}=\\dfrac{\\sqrt6}{2}\\).",
+              "work": "\\(z=\\dfrac{\\sqrt2}{2}-\\dfrac{\\sqrt6}{2}i\\)"
             },
             {
               "explain": "Check the signs: the real part is positive (cos is positive) and the imaginary part is negative because of the minus sign in front of i.",
-              "work": "Answer: \\(\\frac{\\sqrt2}{2}-\\frac{\\sqrt6}{2}i\\)"
+              "work": "Answer: \\(\\dfrac{\\sqrt2}{2}-\\dfrac{\\sqrt6}{2}i\\)"
             }
           ],
           "keyPoints": [
@@ -1457,29 +1457,29 @@
           "difficulty": "hard",
           "stem": "Evaluate \\(z^{10}\\), leaving your answer in modulus argument form (for the same \\(z\\) as in part (i)).",
           "options": [
-            "\\(32\\left(\\cos\\tfrac{2\\pi}{3}+i\\sin\\tfrac{2\\pi}{3}\\right)\\)",
-            "\\(32\\left(\\cos\\tfrac{-2\\pi}{3}+i\\sin\\tfrac{-2\\pi}{3}\\right)\\)",
-            "\\(2^{10}\\left(\\cos\\tfrac{\\pi}{3}+i\\sin\\tfrac{\\pi}{3}\\right)\\)",
-            "\\(32\\left(\\cos\\tfrac{\\pi}{3}+i\\sin\\tfrac{\\pi}{3}\\right)\\)"
+            "\\(32\\left(\\cos\\dfrac{2\\pi}{3}+i\\sin\\dfrac{2\\pi}{3}\\right)\\)",
+            "\\(32\\left(\\cos\\dfrac{-2\\pi}{3}+i\\sin\\dfrac{-2\\pi}{3}\\right)\\)",
+            "\\(2^{10}\\left(\\cos\\dfrac{\\pi}{3}+i\\sin\\dfrac{\\pi}{3}\\right)\\)",
+            "\\(32\\left(\\cos\\dfrac{\\pi}{3}+i\\sin\\dfrac{\\pi}{3}\\right)\\)"
           ],
           "answer": 0,
-          "hint": "Write z in modulus-argument form first: modulus \\(\\sqrt2\\), argument \\(-\\frac{\\pi}{3}\\). Then use de Moivre's theorem.",
+          "hint": "Write z in modulus-argument form first: modulus \\(\\sqrt2\\), argument \\(-\\dfrac{\\pi}{3}\\). Then use de Moivre's theorem.",
           "steps": [
             {
-              "explain": "Find the modulus of z: \\(|z| = \\sqrt{(\\sqrt2\\cos\\frac{\\pi}{3})^2+(\\sqrt2\\sin\\frac{\\pi}{3})^2}=\\sqrt2\\).",
+              "explain": "Find the modulus of z: \\(|z| = \\sqrt{\\left(\\sqrt2\\cos\\dfrac{\\pi}{3}\\right)^2+\\left(\\sqrt2\\sin\\dfrac{\\pi}{3}\\right)^2}=\\sqrt2\\).",
               "work": "\\(|z|=\\sqrt2\\)"
             },
             {
-              "explain": "The argument is \\(-\\frac{\\pi}{3}\\) (the z in the question is \\(\\sqrt2\\cos\\theta - i\\sqrt2\\sin\\theta = \\sqrt2\\,\\mathrm{cis}(-\\theta)\\)).",
-              "work": "\\(z=\\sqrt2\\left(\\cos(-\\tfrac{\\pi}{3})+i\\sin(-\\tfrac{\\pi}{3})\\right)\\)"
+              "explain": "The argument is \\(-\\dfrac{\\pi}{3}\\) (the z in the question is \\(\\sqrt2\\cos\\theta - i\\sqrt2\\sin\\theta = \\sqrt2\\,\\mathrm{cis}(-\\theta)\\)).",
+              "work": "\\(z=\\sqrt2\\left(\\cos\\left(-\\dfrac{\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{\\pi}{3}\\right)\\right)\\)"
             },
             {
-              "explain": "Apply de Moivre's theorem: \\(z^{10} = (\\sqrt2)^{10}\\,(\\cos(-\\frac{10\\pi}{3})+i\\sin(-\\frac{10\\pi}{3}))\\). Here \\((\\sqrt2)^{10}=2^5=32\\).",
-              "work": "\\(z^{10}=32\\left(\\cos(-\\tfrac{10\\pi}{3})+i\\sin(-\\tfrac{10\\pi}{3})\\right)\\)"
+              "explain": "Apply de Moivre's theorem: \\(z^{10} = (\\sqrt2)^{10}\\,\\left(\\cos\\left(-\\dfrac{10\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{10\\pi}{3}\\right)\\right)\\). Here \\((\\sqrt2)^{10}=2^5=32\\).",
+              "work": "\\(z^{10}=32\\left(\\cos\\left(-\\dfrac{10\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{10\\pi}{3}\\right)\\right)\\)"
             },
             {
-              "explain": "Reduce the angle by adding \\(4\\pi\\) (a full turn is \\(2\\pi\\)): \\(-\\frac{10\\pi}{3}+4\\pi=\\frac{2\\pi}{3}\\).",
-              "work": "\\(z^{10}=32\\left(\\cos\\tfrac{2\\pi}{3}+i\\sin\\tfrac{2\\pi}{3}\\right)\\)"
+              "explain": "Reduce the angle by adding \\(4\\pi\\) (a full turn is \\(2\\pi\\)): \\(-\\dfrac{10\\pi}{3}+4\\pi=\\dfrac{2\\pi}{3}\\).",
+              "work": "\\(z^{10}=32\\left(\\cos\\dfrac{2\\pi}{3}+i\\sin\\dfrac{2\\pi}{3}\\right)\\)"
             }
           ],
           "keyPoints": [
@@ -1507,29 +1507,29 @@
           "difficulty": "easy",
           "stem": "Let \\(z=\\dfrac{1}{2}+\\dfrac{\\sqrt3}{2}i\\). Express \\(z\\) in the form \\(e^{i\\theta}\\), where \\(\\theta\\) is the argument of \\(z\\).",
           "options": [
-            "\\(e^{i\\pi/6}\\)",
-            "\\(e^{-i\\pi/3}\\)",
-            "\\(e^{2i\\pi/3}\\)",
-            "\\(e^{i\\pi/3}\\)"
+            "\\(e^{\\frac{\\pi}{6}i}\\)",
+            "\\(e^{-\\frac{\\pi}{3}i}\\)",
+            "\\(e^{\\frac{2\\pi}{3}i}\\)",
+            "\\(e^{\\frac{\\pi}{3}i}\\)"
           ],
           "answer": 3,
           "hint": "Find the modulus and the argument of \\(z\\). Then write \\(z=|z|e^{i\\theta}\\).",
           "steps": [
             {
-              "explain": "Modulus: \\(|z|=\\sqrt{\\frac14+\\frac34}=1\\).",
+              "explain": "Modulus: \\(|z|=\\sqrt{\\dfrac14+\\dfrac34}=1\\).",
               "work": "\\(|z|=1\\)"
             },
             {
-              "explain": "Argument: \\(\\tan\\theta=\\frac{\\sqrt3/2}{1/2}=\\sqrt3\\). Both parts are positive, so \\(z\\) is in the first quadrant and \\(\\theta=\\frac{\\pi}{3}\\).",
-              "work": "\\(\\theta=\\tfrac{\\pi}{3}\\)"
+              "explain": "Argument: \\(\\tan\\theta=\\dfrac{\\sqrt3}{2}\\div\\dfrac{1}{2}=\\sqrt3\\). Both parts are positive, so \\(z\\) is in the first quadrant and \\(\\theta=\\dfrac{\\pi}{3}\\).",
+              "work": "\\(\\theta=\\dfrac{\\pi}{3}\\)"
             },
             {
-              "explain": "Write \\(z=1\\cdot e^{i\\pi/3}\\).",
-              "work": "\\(z=e^{i\\pi/3}\\)"
+              "explain": "Write \\(z=1\\cdot e^{\\frac{\\pi}{3}i}\\).",
+              "work": "\\(z=e^{\\frac{\\pi}{3}i}\\)"
             },
             {
-              "explain": "Check: \\(\\cos\\frac{\\pi}{3}=\\frac12\\) and \\(\\sin\\frac{\\pi}{3}=\\frac{\\sqrt3}{2}\\), matching \\(z\\). Common mistake: \\(\\frac{\\pi}{6}\\) (using the wrong angle).",
-              "work": "Answer: \\(e^{i\\pi/3}\\)"
+              "explain": "Check: \\(\\cos\\dfrac{\\pi}{3}=\\dfrac12\\) and \\(\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt3}{2}\\), matching \\(z\\). Common mistake: \\(\\dfrac{\\pi}{6}\\) (using the wrong angle).",
+              "work": "Answer: \\(e^{\\frac{\\pi}{3}i}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1551,29 +1551,29 @@
           "difficulty": "medium",
           "stem": "Evaluate \\(z^i\\) in exact form.",
           "options": [
-            "\\(e^{-\\pi/3}\\)",
-            "\\(e^{\\pi/3}\\)",
-            "\\(e^{-\\pi/6}\\)",
-            "\\(e^{i\\pi/3}\\)"
+            "\\(e^{-\\frac{\\pi}{3}}\\)",
+            "\\(e^{\\frac{\\pi}{3}}\\)",
+            "\\(e^{-\\frac{\\pi}{6}}\\)",
+            "\\(e^{\\frac{\\pi}{3}i}\\)"
           ],
           "answer": 0,
-          "hint": "Substitute \\(z=e^{i\\pi/3}\\) and use \\(e^{i\\pi/3}\\)... remember \\(i\\cdot i=-1\\).",
+          "hint": "Substitute \\(z=e^{\\frac{\\pi}{3}i}\\) and use \\(e^{\\frac{\\pi}{3}i}\\)... remember \\(i\\cdot i=-1\\).",
           "steps": [
             {
-              "explain": "Use \\(z=e^{i\\pi/3}\\) from part (i): \\(z^i=\\left(e^{i\\pi/3}\\right)^i\\).",
-              "work": "\\(z^i=(e^{i\\pi/3})^i\\)"
+              "explain": "Use \\(z=e^{\\frac{\\pi}{3}i}\\) from part (i): \\(z^i=\\left(e^{\\frac{\\pi}{3}i}\\right)^i\\).",
+              "work": "\\(z^i=(e^{\\frac{\\pi}{3}i})^i\\)"
             },
             {
-              "explain": "Apply the index law \\((e^a)^b=e^{ab}\\): \\(z^i=e^{i\\cdot i\\pi/3}\\).",
-              "work": "\\(z^i=e^{i^2\\pi/3}\\)"
+              "explain": "Apply the index law \\((e^a)^b=e^{ab}\\): \\(z^i=e^{i\\cdot\\frac{\\pi}{3}i}\\).",
+              "work": "\\(z^i=e^{\\frac{i^2\\pi}{3}}\\)"
             },
             {
-              "explain": "Use \\(i^2=-1\\): \\(z^i=e^{-\\pi/3}\\).",
-              "work": "\\(z^i=e^{-\\pi/3}\\)"
+              "explain": "Use \\(i^2=-1\\): \\(z^i=e^{-\\frac{\\pi}{3}}\\).",
+              "work": "\\(z^i=e^{-\\frac{\\pi}{3}}\\)"
             },
             {
-              "explain": "Check: the result is real and positive, as expected for a real exponential. Common mistake: \\(e^{\\pi/3}\\) (forgetting \\(i^2=-1\\)).",
-              "work": "Answer: \\(e^{-\\pi/3}\\)"
+              "explain": "Check: the result is real and positive, as expected for a real exponential. Common mistake: \\(e^{\\frac{\\pi}{3}}\\) (forgetting \\(i^2=-1\\)).",
+              "work": "Answer: \\(e^{-\\frac{\\pi}{3}}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1595,7 +1595,7 @@
           "difficulty": "easy",
           "stem": "Explain why the quadrilateral \\(OACB\\) forms a rhombus. Which reason is correct?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><line x1=\"68\" y1=\"220\" x2=\"238.5\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"232.3,216.7 238.5,220 232.3,223.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"242\" x2=\"90\" y2=\"71.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"86.7,77.7 90,71.5 93.3,77.7\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"90\" cy=\"220\" r=\"110\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><polygon points=\"90,220 167.8,142.2 167.8,32.2 90,110\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"167.8\" cy=\"142.2\" r=\"3\" fill=\"#1e293b\"/><text x=\"175.8\" y=\"140.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">A</text><circle cx=\"90\" cy=\"110\" r=\"3\" fill=\"#1e293b\"/><text x=\"76\" y=\"110.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">B</text><circle cx=\"167.8\" cy=\"32.2\" r=\"3\" fill=\"#1e293b\"/><text x=\"175.8\" y=\"30.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">C = z + w</text><text x=\"84\" y=\"238.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">O</text><text x=\"202\" y=\"238.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"100%\" style=\"max-width:300px;display:block;margin:0 auto\"><line x1=\"68\" y1=\"220\" x2=\"238.5\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"232.3,216.7 238.5,220 232.3,223.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"90\" y1=\"242\" x2=\"90\" y2=\"71.5\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"86.7,77.7 90,71.5 93.3,77.7\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"90\" cy=\"220\" r=\"110\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><polygon points=\"90,220 167.8,142.2 167.8,32.2 90,110\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"167.8\" cy=\"142.2\" r=\"3\" fill=\"#1e293b\"/><text x=\"175.8\" y=\"140.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">A</text><circle cx=\"90\" cy=\"110\" r=\"3\" fill=\"#1e293b\"/><text x=\"76\" y=\"110.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">B</text><circle cx=\"167.8\" cy=\"32.2\" r=\"3\" fill=\"#1e293b\"/><text x=\"175.8\" y=\"30.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">C = z + w</text><text x=\"84\" y=\"238.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">O</text><text x=\"202\" y=\"238.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1</text></svg>"
           },
           "options": [
             "\\(OA\\perp OB\\), so the angles are all right angles.",
@@ -1635,21 +1635,21 @@
         {
           "id": "ch13ext2-q15b-ii",
           "type": "review",
-          "stem": "Show that \\(\\arg(z+w)=\\frac{3\\pi}{8}\\), where \\(z=\\frac{1}{\\sqrt2}(1+i)\\) and \\(w=i\\).",
-          "answer": "Use the rhombus property: the diagonal OC bisects the angle AOB. \\(\\arg z=\\frac\\pi4\\) and \\(\\angle BOA=\\frac\\pi4\\), so \\(\\arg(z+w)=\\frac\\pi4+\\frac12\\cdot\\frac\\pi4=\\frac{3\\pi}{8}\\).",
+          "stem": "Show that \\(\\arg(z+w)=\\dfrac{3\\pi}{8}\\), where \\(z=\\dfrac{1}{\\sqrt2}(1+i)\\) and \\(w=i\\).",
+          "answer": "Use the rhombus property: the diagonal OC bisects the angle AOB. \\(\\arg z=\\dfrac\\pi4\\) and \\(\\angle BOA=\\dfrac\\pi4\\), so \\(\\arg(z+w)=\\dfrac\\pi4+\\dfrac12\\cdot\\dfrac\\pi4=\\dfrac{3\\pi}{8}\\).",
           "manual": true,
           "hint": "Find the argument of z and the angle between OA and OB, then use the fact that the diagonal bisects the angle.",
           "steps": [
             {
-              "explain": "\\(\\arg z=\\frac\\pi4\\) (since \\(z=\\frac{1}{\\sqrt2}+\\frac{1}{\\sqrt2}i\\)) and \\(\\arg w=\\frac\\pi2\\). So \\(\\angle AOB=\\frac\\pi2-\\frac\\pi4=\\frac\\pi4\\).",
-              "work": "\\(\\angle AOB=\\tfrac{\\pi}{4}\\)"
+              "explain": "\\(\\arg z=\\dfrac\\pi4\\) (since \\(z=\\dfrac{1}{\\sqrt2}+\\dfrac{1}{\\sqrt2}i\\)) and \\(\\arg w=\\dfrac\\pi2\\). So \\(\\angle AOB=\\dfrac\\pi2-\\dfrac\\pi4=\\dfrac\\pi4\\).",
+              "work": "\\(\\angle AOB=\\dfrac{\\pi}{4}\\)"
             },
             {
-              "explain": "In a rhombus the diagonal bisects the angle. So \\(\\arg(z+w)=\\arg z+\\frac12\\angle AOB=\\frac\\pi4+\\frac\\pi8\\).",
-              "work": "\\(\\arg(z+w)=\\tfrac\\pi4+\\tfrac\\pi8\\)"
+              "explain": "In a rhombus the diagonal bisects the angle. So \\(\\arg(z+w)=\\arg z+\\dfrac12\\angle AOB=\\dfrac\\pi4+\\dfrac\\pi8\\).",
+              "work": "\\(\\arg(z+w)=\\dfrac\\pi4+\\dfrac\\pi8\\)"
             },
             {
-              "explain": "Add: \\(\\frac{\\pi}{4}+\\frac{\\pi}{8}=\\frac{3\\pi}{8}\\). Shown.",
+              "explain": "Add: \\(\\dfrac{\\pi}{4}+\\dfrac{\\pi}{8}=\\dfrac{3\\pi}{8}\\). Shown.",
               "work": "<b>Shown.</b>"
             }
           ],
@@ -1669,21 +1669,21 @@
         {
           "id": "ch13ext2-q15b-iii",
           "type": "review",
-          "stem": "Hence, show that \\(\\tan\\frac{3\\pi}{8}=\\sqrt2+1\\).",
-          "answer": "Use \\(\\tan(\\arg(x+iy))=\\frac yx\\) with \\(z+w=\\frac{1}{\\sqrt2}+\\left(1+\\frac{1}{\\sqrt2}\\right)i\\).",
+          "stem": "Hence, show that \\(\\tan\\dfrac{3\\pi}{8}=\\sqrt2+1\\).",
+          "answer": "Use \\(\\tan(\\arg(x+iy))=\\dfrac yx\\) with \\(z+w=\\dfrac{1}{\\sqrt2}+\\left(1+\\dfrac{1}{\\sqrt2}\\right)i\\).",
           "manual": true,
-          "hint": "Write z + w in the form x + iy, then use tan(arg) = y/x.",
+          "hint": "Write \\(z+w\\) in the form \\(x+iy\\), then use \\(\\tan(\\arg(z+w))=\\dfrac{y}{x}\\).",
           "steps": [
             {
-              "explain": "Write \\(z+w=\\frac{1}{\\sqrt2}+\\left(\\frac{1}{\\sqrt2}+1\\right)i\\).",
-              "work": "\\(z+w=\\tfrac{1}{\\sqrt2}+\\left(1+\\tfrac{1}{\\sqrt2}\\right)i\\)"
+              "explain": "Write \\(z+w=\\dfrac{1}{\\sqrt2}+\\left(\\dfrac{1}{\\sqrt2}+1\\right)i\\).",
+              "work": "\\(z+w=\\dfrac{1}{\\sqrt2}+\\left(1+\\dfrac{1}{\\sqrt2}\\right)i\\)"
             },
             {
-              "explain": "Then \\(\\tan(\\arg(z+w))=\\dfrac{1+\\frac{1}{\\sqrt2}}{\\frac{1}{\\sqrt2}}=\\sqrt2+1\\).",
-              "work": "\\(\\tan(\\arg(z+w))=\\frac{1+\\frac{1}{\\sqrt2}}{\\frac{1}{\\sqrt2}}=\\sqrt2+1\\)"
+              "explain": "Then \\(\\tan(\\arg(z+w))=\\dfrac{1+\\dfrac{1}{\\sqrt2}}{\\dfrac{1}{\\sqrt2}}=\\sqrt2+1\\).",
+              "work": "\\(\\tan(\\arg(z+w))=\\dfrac{1+\\dfrac{1}{\\sqrt2}}{\\dfrac{1}{\\sqrt2}}=\\sqrt2+1\\)"
             },
             {
-              "explain": "From part (ii), \\(\\arg(z+w)=\\frac{3\\pi}{8}\\), so \\(\\tan\\frac{3\\pi}{8}=\\sqrt2+1\\). Shown.",
+              "explain": "From part (ii), \\(\\arg(z+w)=\\dfrac{3\\pi}{8}\\), so \\(\\tan\\dfrac{3\\pi}{8}=\\sqrt2+1\\). Shown.",
               "work": "<b>Shown.</b>"
             }
           ],
@@ -3270,29 +3270,29 @@
           "difficulty": "hard",
           "stem": "Let \\(z\\) and \\(w\\) be complex numbers where \\(w=\\dfrac{z-2}{z-i}\\) and \\(w\\neq0\\) is purely imaginary. Which describes the locus of \\(z\\)?",
           "options": [
-            "A circle with centre \\((1,\\tfrac12)\\) and radius \\(\\tfrac{5}{2}\\), excluding \\(z=2\\) and \\(z=i\\)",
-            "A circle with centre \\((1,\\tfrac12)\\) and radius \\(\\tfrac{\\sqrt5}{2}\\), excluding the points \\(z=2\\) and \\(z=i\\)",
-            "A circle with centre \\((2,0)\\) and radius \\(\\tfrac{\\sqrt5}{2}\\), excluding \\(z=2\\) and \\(z=i\\)",
-            "A circle with centre \\((1,-\\tfrac12)\\) and radius \\(\\tfrac{\\sqrt5}{2}\\), with no points excluded"
+            "A circle with centre \\(\\left(1,\\dfrac12\\right)\\) and radius \\(\\dfrac{5}{2}\\), excluding \\(z=2\\) and \\(z=i\\)",
+            "A circle with centre \\(\\left(1,\\dfrac12\\right)\\) and radius \\(\\dfrac{\\sqrt5}{2}\\), excluding the points \\(z=2\\) and \\(z=i\\)",
+            "A circle with centre \\((2,0)\\) and radius \\(\\dfrac{\\sqrt5}{2}\\), excluding \\(z=2\\) and \\(z=i\\)",
+            "A circle with centre \\(\\left(1,-\\dfrac12\\right)\\) and radius \\(\\dfrac{\\sqrt5}{2}\\), with no points excluded"
           ],
           "answer": 1,
           "hint": "Write \\(z=x+iy\\), rationalise the denominator, and set the real part of \\(w\\) to zero.",
           "steps": [
             {
-              "explain": "Let \\(z=x+iy\\). Then \\(w=\\frac{(x-2)+iy}{x+i(y-1)}\\). Multiply top and bottom by the conjugate \\(x-i(y-1)\\).",
-              "work": "\\(w=\\frac{((x-2)+iy)(x-i(y-1))}{x^2+(y-1)^2}\\)"
+              "explain": "Let \\(z=x+iy\\). Then \\(w=\\dfrac{(x-2)+iy}{x+i(y-1)}\\). Multiply top and bottom by the conjugate \\(x-i(y-1)\\).",
+              "work": "\\(w=\\dfrac{((x-2)+iy)(x-i(y-1))}{x^2+(y-1)^2}\\)"
             },
             {
-              "explain": "Real part of \\(w\\) is \\(\\frac{x(x-2)+y(y-1)}{x^2+(y-1)^2}\\). Since \\(w\\) is purely imaginary, this must be 0, so \\(x(x-2)+y(y-1)=0\\).",
+              "explain": "Real part of \\(w\\) is \\(\\dfrac{x(x-2)+y(y-1)}{x^2+(y-1)^2}\\). Since \\(w\\) is purely imaginary, this must be 0, so \\(x(x-2)+y(y-1)=0\\).",
               "work": "\\(x^2-2x+y^2-y=0\\)"
             },
             {
-              "explain": "Complete the square: \\((x-1)^2+(y-\\tfrac12)^2=1+\\tfrac14=\\tfrac54\\). So the centre is \\((1,\\tfrac12)\\) and radius \\(\\tfrac{\\sqrt5}{2}\\).",
-              "work": "\\((x-1)^2+(y-\\tfrac12)^2=\\tfrac54\\)"
+              "explain": "Complete the square: \\((x-1)^2+\\left(y-\\dfrac12\\right)^2=1+\\dfrac14=\\dfrac54\\). So the centre is \\(\\left(1,\\dfrac12\\right)\\) and radius \\(\\dfrac{\\sqrt5}{2}\\).",
+              "work": "\\((x-1)^2+\\left(y-\\dfrac12\\right)^2=\\dfrac54\\)"
             },
             {
               "explain": "Exclude points where \\(w\\) is undefined or zero: \\(w=0\\) when \\(z=2\\), and \\(z=i\\) makes the denominator zero. Both lie on the circle, so they are excluded.",
-              "work": "<b>Circle centre (1, 1/2), radius √5/2, excluding z = 2 and z = i.</b>"
+              "work": "<b>Circle with centre \\(\\left(1,\\dfrac{1}{2}\\right)\\) and radius \\(\\dfrac{\\sqrt5}{2}\\), excluding \\(z=2\\) and \\(z=i\\).</b>"
             }
           ],
           "timeLimit": 60,

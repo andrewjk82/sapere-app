@@ -1016,26 +1016,34 @@
         {
           "id": "ch13ext2-q11d",
           "type": "review",
-          "stem": "Prove using contradiction, that \\(\\sqrt{4n-2}\\) is irrational for all positive integers \\(n\\).",
-          "answer": "Assume \\(\\sqrt{4n-2}=p/q\\) in lowest terms. Then \\(p\\) and \\(q\\) cannot both be even, but \\(p=2k\\) gives \\(2k^2=(2n-1)q^2\\), so the left side is even and the right side is odd. Contradiction.",
+          "stem": "Prove, using contradiction, that \\(\\sqrt{4n-2}\\) is irrational for all positive integers \\(n\\).",
+          "answer": "Assume \\(\\sqrt{4n-2}=\\dfrac{p}{q}\\), where \\(p\\) and \\(q\\) are positive integers with no common factor. Then \\(p^2=(4n-2)q^2=2(2n-1)q^2\\), so \\(p\\) is even. Let \\(p=2k\\). Then \\(2k^2=(2n-1)q^2\\). Since \\(p\\) is even, \\(q\\) is odd, so the right side is odd while the left side is even. This is a contradiction, so \\(\\sqrt{4n-2}\\) is irrational.",
           "manual": true,
-          "hint": "Assume the number is rational and write it as \\(p/q\\) in lowest terms. Look at the factors of 2 on both sides.",
+          "hint": "Assume the number is rational and write it as \\(\\dfrac{p}{q}\\) in lowest terms. Compare the factors of 2 on both sides.",
           "steps": [
             {
-              "explain": "Assume the contrary: \\(\\sqrt{4n-2}=\\frac{p}{q}\\) with \\(\\gcd(p,q)=1\\). Square both sides: \\(4n-2=\\frac{p^2}{q^2}\\), so \\(p^2=(4n-2)q^2\\).",
-              "work": "\\(p^2=(4n-2)q^2\\)"
+              "explain": "Assume the opposite: the number is rational. Write it as a fraction in lowest terms, where \\(p\\) and \\(q\\) are positive integers with no common factor.",
+              "work": "\\(\\sqrt{4n-2}=\\dfrac{p}{q}\\)"
             },
             {
-              "explain": "The right side is even (it has a factor 2), so \\(p^2\\) is even, so \\(p\\) is even. Write \\(p=2k\\).",
+              "explain": "Square both sides and multiply by \\(q^2\\).",
+              "work": "\\(4n-2=\\dfrac{p^2}{q^2}\\)<br/>\\(p^2=(4n-2)q^2=2(2n-1)q^2\\)"
+            },
+            {
+              "explain": "The right side has a factor of 2, so \\(p^2\\) is even, and therefore \\(p\\) is even. Write \\(p=2k\\) for some integer \\(k\\).",
               "work": "\\(p=2k\\Rightarrow p^2=4k^2\\)"
             },
             {
-              "explain": "Substitute: \\(4k^2=(4n-2)q^2\\). Divide by 2: \\(2k^2=(2n-1)q^2\\). Now \\(q\\) must be odd (since \\(\\gcd(p,q)=1\\) and p is even).",
-              "work": "\\(2k^2=(2n-1)q^2\\)"
+              "explain": "Substitute and divide both sides by 2.",
+              "work": "\\(4k^2=2(2n-1)q^2\\)<br/>\\(2k^2=(2n-1)q^2\\)"
             },
             {
-              "explain": "The left side is even but the right side \\((2n-1)q^2\\) is odd (odd times odd), a contradiction. So \\(\\sqrt{4n-2}\\) is irrational.",
-              "work": "<b>Contradiction, so \\(\\sqrt{4n-2}\\) is irrational.</b>"
+              "explain": "Since \\(p\\) is even and \\(p\\), \\(q\\) have no common factor, \\(q\\) is odd. Also \\(2n-1\\) is odd, so the right side is odd (odd times odd), but the left side \\(2k^2\\) is even.",
+              "work": "\\(\\text{even}=\\text{odd}\\), which is impossible"
+            },
+            {
+              "explain": "The assumption leads to a contradiction, so it is false.",
+              "work": "\\(\\sqrt{4n-2}\\text{ is irrational for all positive integers } n\\)"
             }
           ],
           "timeLimit": 60,
@@ -2242,7 +2250,7 @@
         {
           "id": "ch13ext2-q15a",
           "type": "review",
-          "stem": "Use the AM-GM inequality \\(\\frac{x+y}{2}\\ge\\sqrt{xy}\\) to prove that \\((x+y)(y+z)(z+x)\\ge8xyz\\) for positive real numbers \\(x,y,z\\).",
+          "stem": "Use the AM-GM inequality \\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\) to prove that \\((x+y)(y+z)(z+x)\\ge8xyz\\) for positive real numbers \\(x,y,z\\).",
           "answer": "Apply AM-GM to each pair, multiply the three inequalities (all sides positive), and simplify the product of square roots.",
           "manual": true,
           "hint": "Write AM-GM for the pairs (x,y), (y,z) and (z,x), then multiply.",
@@ -2900,37 +2908,41 @@
           "id": "ch13ext2-q10",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The following induction proof to show that \\(5^n + 2\\times11^n\\) is a multiple of 3 for all positive integers n contains an algebraic error. In which section does the error occur?",
+          "stem": "The following induction proof, which aims to show that \\(5^n+2\\times11^n\\) is a multiple of 3 for all positive integers \\(n\\), contains an algebraic error.<br/><br/><b>Step 1.</b> When \\(n=1\\): \\(5^1+2\\times11^1=27=3\\times9\\), so the statement is true for \\(n=1\\).<br/><b>Step 2.</b> Assume the statement is true for \\(n=k\\): \\(5^k+2\\times11^k=3M\\) for some integer \\(M\\).<br/><b>Step 3.</b> When \\(n=k+1\\): \\(5^{k+1}+2\\times11^{k+1}=5\\left(5^k+2\\times11^k\\right)+12\\times11^k\\)<br/><b>Step 4.</b> \\(=5(3M)+3\\left(4\\times11^k\\right)=3\\left(5+4\\times11^k\\right)\\), which is a multiple of 3.<br/><br/>In which step does the error occur?",
           "options": [
-            "(A) Show true for n = 1.",
-            "(B) Assume true for n = k, where k is a natural number.",
-            "(C) Prove true for n = k + 1.",
-            "(D) The step \\(5(3M)+3(6\\times11^k)\\) from the assumption n = k."
+            "Step 1, showing the statement is true for \\(n=1\\)",
+            "Step 2, the assumption for \\(n=k\\)",
+            "Step 3, rewriting \\(5^{k+1}+2\\times11^{k+1}\\)",
+            "Step 4, factorising \\(5(3M)+3\\left(4\\times11^k\\right)\\)"
           ],
           "answer": 3,
-          "hint": "Check each line: the algebra must follow from the previous line. Look for a factor that was pulled out wrongly.",
+          "hint": "Check that each line follows from the one before it. Look for a factor that was taken out incorrectly.",
           "steps": [
             {
-              "explain": "Section A: \\(5^1+2\\times11^1=27\\), a multiple of 3. This is correct.",
-              "work": "\\(5+22=27=3\\times9\\;\\checkmark\\)"
+              "explain": "Check Step 1 by substituting \\(n=1\\).",
+              "work": "\\(5+2\\times11=27=3\\times9\\) (correct)"
             },
             {
-              "explain": "Section B: assume \\(5^k+2\\times11^k=3M\\). This is a valid assumption.",
-              "work": "\\(5^k+2\\times11^k=3M\\)"
+              "explain": "Check Step 2. Writing a multiple of 3 as \\(3M\\) with \\(M\\) an integer is a valid assumption.",
+              "work": "\\(5^k+2\\times11^k=3M\\) (correct)"
             },
             {
-              "explain": "Section C: \\(5^{k+1}+2\\times11^{k+1}=5(5^k+2\times11^k)+6\\times2\\times11^k\\). This is correct, since \\(2\\times11^{k+1}=22\\times11^k\\).",
-              "work": "\\(5(5^k+2\\times11^k)+12\\times11^k\\)"
+              "explain": "Check Step 3 by expanding the right-hand side.",
+              "work": "\\(5\\left(5^k+2\\times11^k\\right)+12\\times11^k=5^{k+1}+10\\times11^k+12\\times11^k\\)<br/>\\(=5^{k+1}+22\\times11^k=5^{k+1}+2\\times11^{k+1}\\) (correct)"
             },
             {
-              "explain": "Section D: \\(5(3M)+3(6\\times11^k)\\) is correct, but the next step is \\(=3(5+6\\times11^k)\\). That is wrong: \\(5\\times3M+3\\times6\\times11^k\\) factorises to \\(3(5M+6\\times11^k)\\), not \\(3(5+6\\times11^k)\\). The factor 5 must multiply M. Answer: D.",
-              "work": ""
+              "explain": "Check Step 4. Substituting the assumption gives \\(5(3M)+3\\left(4\\times11^k\\right)\\), which is correct. Now take out the common factor 3.",
+              "work": "\\(5(3M)+3\\left(4\\times11^k\\right)=15M+12\\times11^k=3\\left(5M+4\\times11^k\\right)\\)"
+            },
+            {
+              "explain": "The proof wrote \\(3\\left(5+4\\times11^k\\right)\\), dropping the \\(M\\). The error is in Step 4.",
+              "work": "\\(3\\left(5+4\\times11^k\\right)\\ne 3\\left(5M+4\\times11^k\\right)\\)"
             }
           ],
           "keyPoints": [
             {
               "text": "algebraic error",
-              "note": "Check that each factor is pulled out correctly."
+              "note": "Check that each factor is taken out correctly."
             }
           ],
           "timeLimit": 60,
@@ -2950,24 +2962,24 @@
           "id": "ch13ext2-q15c-ii",
           "type": "review",
           "stem": "Prove by mathematical induction that \\(\\dfrac{d^ny}{dx^n}=2^{\\frac n2}e^x\\sin\\left(x+\\dfrac{n\\pi}{4}\\right)\\) for all positive integers \\(n\\), where \\(y=e^x\\sin x\\).",
-          "answer": "Base case n = 1 uses the identity from part (i). Assume true for n = k and differentiate once to get n = k+1, using \\(\\sin\\theta+\\cos\\theta=\\sqrt2\\sin(\\theta+\\frac\\pi4)\\).",
+          "answer": "Base case n = 1 uses the identity from part (i). Assume true for n = k and differentiate once to get n = k+1, using \\(\\sin\\theta+\\cos\\theta=\\sqrt2\\sin\\left(\\theta+\\dfrac\\pi4\\right)\\).",
           "manual": true,
           "hint": "Prove the base case first, then assume the result for n = k and differentiate once.",
           "steps": [
             {
-              "explain": "Base case n = 1: \\(\\frac{dy}{dx}=e^x\\sin x+e^x\\cos x=e^x(\\sin x+\\cos x)=\\sqrt2e^x\\sin(x+\\tfrac{\\pi}{4})\\), which matches the formula with \\(n=1\\).",
-              "work": "\\(y\\'=\\sqrt2e^x\\sin(x+\\tfrac{\\pi}{4})\\)"
+              "explain": "Base case \\(n=1\\): \\(\\dfrac{dy}{dx}=e^x\\sin x+e^x\\cos x=e^x(\\sin x+\\cos x)=\\sqrt2e^x\\sin\\left(x+\\dfrac{\\pi}{4}\\right)\\), which matches the formula with \\(n=1\\).",
+              "work": "\\(y\\'=\\sqrt2e^x\\sin\\left(x+\\dfrac{\\pi}{4}\\right)\\)"
             },
             {
-              "explain": "Inductive hypothesis: assume \\(\\frac{d^ky}{dx^k}=2^{k/2}e^x\\sin(x+\\frac{k\\pi}{4})\\).",
-              "work": "\\(y^{(k)}=2^{k/2}e^x\\sin(x+\\tfrac{k\\pi}{4})\\)"
+              "explain": "Inductive hypothesis: assume \\(\\dfrac{d^ky}{dx^k}=2^{\\frac{k}{2}}e^x\\sin\\left(x+\\dfrac{k\\pi}{4}\\right)\\).",
+              "work": "\\(y^{(k)}=2^{\\frac{k}{2}}e^x\\sin\\left(x+\\dfrac{k\\pi}{4}\\right)\\)"
             },
             {
-              "explain": "Differentiate once: product rule gives \\(2^{k/2}e^x\\left[\\sin(x+\\tfrac{k\\pi}{4})+\\cos(x+\\tfrac{k\\pi}{4})\\right]\\).",
-              "work": "\\(2^{k/2}e^x\\left[\\sin\\left(x+\\tfrac{k\\pi}{4}\\right)+\\cos\\left(x+\\tfrac{k\\pi}{4}\\right)\\right]\\)"
+              "explain": "Differentiate once: product rule gives \\(2^{\\frac{k}{2}}e^x\\left[\\sin\\left(x+\\dfrac{k\\pi}{4}\\right)+\\cos\\left(x+\\dfrac{k\\pi}{4}\\right)\\right]\\).",
+              "work": "\\(2^{\\frac{k}{2}}e^x\\left[\\sin\\left(x+\\dfrac{k\\pi}{4}\\right)+\\cos\\left(x+\\dfrac{k\\pi}{4}\\right)\\right]\\)"
             },
             {
-              "explain": "Use the identity from part (i): \\(\\sin\\theta+\\cos\\theta=\\sqrt2\\sin(\\theta+\\frac\\pi4)\\). So the derivative is \\(2^{k/2}\\sqrt2\\,e^x\\sin(x+\\tfrac{(k+1)\\pi}{4})=2^{(k+1)/2}e^x\\sin(x+\\tfrac{(k+1)\\pi}{4})\\). Proof complete by induction.",
+              "explain": "Use the identity from part (i): \\(\\sin\\theta+\\cos\\theta=\\sqrt2\\sin\\left(\\theta+\\dfrac\\pi4\\right)\\). So the derivative is \\(2^{\\frac{k}{2}}\\sqrt2\\,e^x\\sin\\left(x+\\dfrac{(k+1)\\pi}{4}\\right)=2^{\\frac{k+1}{2}}e^x\\sin\\left(x+\\dfrac{(k+1)\\pi}{4}\\right)\\). Proof complete by induction.",
               "work": "<b>True for all positive integers n.</b>"
             }
           ],
@@ -2987,21 +2999,21 @@
         {
           "id": "ch13ext2-q15c-iii",
           "type": "review",
-          "stem": "Hence, show that \\(2^4\\times\\frac{d^ky}{dx^k}=\\frac{d^{k+8}y}{dx^{k+8}}\\), where \\(k\\) is a positive integer.",
-          "answer": "Use the formula from part (ii) for \\(n=k\\) and \\(n=k+8\\). The phase differs by \\(2\\pi\\) and \\(2^{(k+8)/2}=2^4\\cdot2^{k/2}\\).",
+          "stem": "Hence, show that \\(2^4\\times\\dfrac{d^ky}{dx^k}=\\dfrac{d^{k+8}y}{dx^{k+8}}\\), where \\(k\\) is a positive integer.",
+          "answer": "Use the formula from part (ii) for \\(n=k\\) and \\(n=k+8\\). The phase differs by \\(2\\pi\\) and \\(2^{\\frac{k+8}{2}}=2^4\\cdot2^{\\frac{k}{2}}\\).",
           "manual": true,
           "hint": "Write both derivatives using the formula, then compare the powers of 2 and the angles.",
           "steps": [
             {
-              "explain": "From part (ii): \\(\\frac{d^ky}{dx^k}=2^{k/2}e^x\\sin(x+\\frac{k\\pi}{4})\\) and \\(\\frac{d^{k+8}y}{dx^{k+8}}=2^{(k+8)/2}e^x\\sin(x+(k+8)\\cdot\\frac{\\pi}{4})\\).",
-              "work": "\\(y^{(k+8)}=2^{(k+8)/2}e^x\\sin(x+\\tfrac{(k+8)\\pi}{4})\\)"
+              "explain": "From part (ii): \\(\\dfrac{d^ky}{dx^k}=2^{\\frac{k}{2}}e^x\\sin\\left(x+\\dfrac{k\\pi}{4}\\right)\\) and \\(\\dfrac{d^{k+8}y}{dx^{k+8}}=2^{\\frac{k+8}{2}}e^x\\sin\\left(x+(k+8)\\cdot\\dfrac{\\pi}{4}\\right)\\).",
+              "work": "\\(y^{(k+8)}=2^{\\frac{k+8}{2}}e^x\\sin\\left(x+\\dfrac{(k+8)\\pi}{4}\\right)\\)"
             },
             {
-              "explain": "Angle: \\((k+8)\\cdot\\frac{\\pi}{4}=\\frac{k\\pi}{4}+2\\pi\\), and \\(\\sin\\) has period \\(2\\pi\\), so the sine terms are equal.",
-              "work": "\\(\\sin(x+\\tfrac{(k+8)\\pi}{4})=\\sin(x+\\tfrac{k\\pi}{4})\\)"
+              "explain": "Angle: \\((k+8)\\cdot\\dfrac{\\pi}{4}=\\dfrac{k\\pi}{4}+2\\pi\\), and \\(\\sin\\) has period \\(2\\pi\\), so the sine terms are equal.",
+              "work": "\\(\\sin\\left(x+\\dfrac{(k+8)\\pi}{4}\\right)=\\sin\\left(x+\\dfrac{k\\pi}{4}\\right)\\)"
             },
             {
-              "explain": "Power of 2: \\(2^{(k+8)/2}=2^4\\cdot2^{k/2}\\). So \\(\\frac{d^{k+8}y}{dx^{k+8}}=2^4\\frac{d^ky}{dx^k}\\). Shown.",
+              "explain": "Power of 2: \\(2^{\\frac{k+8}{2}}=2^4\\cdot2^{\\frac{k}{2}}\\). So \\(\\dfrac{d^{k+8}y}{dx^{k+8}}=2^4\\dfrac{d^ky}{dx^k}\\). Shown.",
               "work": "<b>Shown.</b>"
             }
           ],
@@ -3657,22 +3669,22 @@
         {
           "id": "ch13ext2-q16c-i",
           "type": "review",
-          "stem": "Use the trapezoidal rule with \\(n-1\\) sub-intervals to show that \\(\\int_1^n\\ln x\\,dx > \\ln n + \\frac12\\ln((n-1)!)\\).",
-          "answer": "The trapezoidal estimate gives \\(\\frac12\\ln n+\\ln((n-1)!)\\), and since \\(\\ln x\\) is concave down the estimate is an underestimate.",
+          "stem": "Use the trapezoidal rule with \\(n-1\\) sub-intervals to show that \\(\\int_1^n\\ln x\\,dx > \\ln n + \\dfrac12\\ln((n-1)!)\\).",
+          "answer": "The trapezoidal estimate gives \\(\\dfrac12\\ln n+\\ln((n-1)!)\\), and since \\(\\ln x\\) is concave down the estimate is an underestimate.",
           "manual": true,
           "hint": "Use the trapezoidal rule with the points \\(x=1,2,\\dots,n\\), and remember the curve is concave down.",
           "steps": [
             {
-              "explain": "Trapezoidal rule with \\(n-1\\) strips of width 1 and points \\(x=1,\\dots,n\\): area \\(\\approx\\frac12\\left[f(1)+2f(2)+\\dots+2f(n-1)+f(n)\\right]\\), where \\(f=\\ln x\\).",
-              "work": "\\(\\tfrac12[\\ln1+2\\ln2+\\dots+2\\ln(n-1)+\\ln n]\\)"
+              "explain": "Trapezoidal rule with \\(n-1\\) strips of width 1 and points \\(x=1,\\dots,n\\): area \\(\\approx\\dfrac12\\left[f(1)+2f(2)+\\dots+2f(n-1)+f(n)\\right]\\), where \\(f=\\ln x\\).",
+              "work": "\\(\\dfrac12[\\ln1+2\\ln2+\\dots+2\\ln(n-1)+\\ln n]\\)"
             },
             {
-              "explain": "Use \\(\\ln1=0\\) and \\(\\sum\\ln k=\\ln\\prod k\\): the sum becomes \\(\\frac12\\left[\\ln n+2\\ln((n-1)!)\\right]=\\frac12\\ln n+\\ln((n-1)!)\\).",
-              "work": "\\(\\tfrac12\\ln n+\\ln((n-1)!)\\)"
+              "explain": "Use \\(\\ln1=0\\) and \\(\\sum\\ln k=\\ln\\prod k\\): the sum becomes \\(\\dfrac12\\left[\\ln n+2\\ln((n-1)!)\\right]=\\dfrac12\\ln n+\\ln((n-1)!)\\).",
+              "work": "\\(\\dfrac12\\ln n+\\ln((n-1)!)\\)"
             },
             {
               "explain": "\\(\\ln x\\) is concave down, so each trapezium lies below the curve. The trapezoidal estimate is an underestimate, so the integral is larger.",
-              "work": "\\(\\int_1^n\\ln x\\,dx>\\tfrac12\\ln n+\\ln((n-1)!)\\)"
+              "work": "\\(\\int_1^n\\ln x\\,dx>\\dfrac12\\ln n+\\ln((n-1)!)\\)"
             },
             {
               "explain": "This is the bound stated in the question, so the proof is complete.",
@@ -3707,8 +3719,8 @@
           "hint": "Put the integral result into the inequality from part (i), then take exponentials to remove the logs.",
           "steps": [
             {
-              "explain": "Substitute \\(\\int_1^n\\ln x\\,dx=n\\ln n-n+1\\) into the part (i) inequality: \\(n\\ln n-n+1>\\ln n+\\tfrac12\\ln((n-1)!)\\).",
-              "work": "\\(n\\ln n-n+1>\\ln n+\\tfrac12\\ln((n-1)!)\\)"
+              "explain": "Substitute \\(\\int_1^n\\ln x\\,dx=n\\ln n-n+1\\) into the part (i) inequality: \\(n\\ln n-n+1>\\ln n+\\dfrac12\\ln((n-1)!)\\).",
+              "work": "\\(n\\ln n-n+1>\\ln n+\\dfrac12\\ln((n-1)!)\\)"
             },
             {
               "explain": "Exponentiate both sides. The left becomes \\(e^{n\\ln n}e^{1-n}=n^ne^{1-n}\\). The right becomes \\(e^{\\ln n}\\cdot e^{\\frac12\\ln((n-1)!)}=n\\sqrt{(n-1)!}\\).",

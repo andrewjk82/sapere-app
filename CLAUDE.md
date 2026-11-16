@@ -167,6 +167,21 @@ sketch for a “Sketch…” part, no highlighted result. Answer-bearing diagram
 `steps[].figure`. Red flag: a part's `figure.svg` byte-identical to one of its own `steps[].figure.svg`.
 (Incident: `y11a-4-excel-further-q12i/ii` showed the solved graph above the options.)
 
+## Fractions in questions must be full-size stacked fractions (2026-11-16)
+
+Applies to every question you add or edit — stem, options, hint, model answer, every step. Standing
+rule, never needs to be repeated. (Incident: the whole `ch13ext2` exam set shipped with tiny or slash
+fractions that teachers read as "broken LaTeX".)
+
+- Always `\dfrac{a}{b}`. Never `\tfrac`, never a bare `\frac` outside an exponent/subscript/limit.
+- Never a slash fraction in math: `\pi/4`, `p/q`, `m/(m+n)`, `1/2` → `\dfrac{\pi}{4}` etc.
+- Exponents and integral limits use a stacked `\frac`, never a slash: `e^{\frac{\pi}{3}i}` (not
+  `e^{i\pi/3}`), `2^{\frac{k}{2}}`, `\int_0^{\frac{\pi}{4}}`.
+- Brackets around a fraction are `\left( \right)`, not plain `( )`.
+- No maths as plain text or unicode (`cos4θ`, `3²`, `√5/2`, `22/7`) — wrap in `\( \)`.
+- Before finishing, run `node tools/content/lintQuestion.mjs content/chapters/<file>.json '<id regex>'`
+  — it flags all of the above — and fix every fraction warning on the questions you touched.
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)

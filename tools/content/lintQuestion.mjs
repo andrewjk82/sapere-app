@@ -17,6 +17,18 @@ const check = (q, ctxId) => {
   const slash = (label, s) => { if (typeof s !== 'string') return; for (const m of s.matchAll(/\\\(([\s\S]*?)\\\)/g)) { const t = m[1].replace(/\^\{[^{}]*\}/g, ''); if (/[\\A-Za-z0-9)}]\s*\/\s*[\\(A-Za-z0-9]/.test(t)) flag(`${label} has slash fraction in math (use \\frac): ${m[1].slice(0, 60)}`); } };
   slash('stem', q.stem); slash('hint', q.hint); (q.options || []).forEach((o, i) => slash(`option${i}`, typeof o === 'string' ? o : o?.text)); (q.steps || []).forEach((s, i) => { slash(`step${i + 1}.explain`, s.explain); slash(`step${i + 1}.work`, s.work); });
   (q.options || []).forEach((o, i) => txt(`option${i}`, typeof o === 'string' ? o : o?.text));
+  // fractions must render full-size: no \tfrac anywhere, no slash fraction in an exponent (e^{i\pi/3}), and a
+  // bare \frac outside an exponent/subscript must be \dfrac (inline \frac renders tiny and looks broken)
+  const frac = (label, s) => { if (typeof s !== 'string') return; for (const m of s.matchAll(/\\\(([\s\S]*?)\\\)/g)) {
+    const t = m[1];
+    if (/\\tfrac/.test(t)) flag(`${label} uses \\tfrac (use \\dfrac): ${t.slice(0, 60)}`);
+    if (/\^\{[^{}]*[A-Za-z0-9)]\s*\/\s*[A-Za-z0-9(][^{}]*\}/.test(t)) flag(`${label} has slash fraction in exponent (use ^{\\frac{a}{b}}): ${t.slice(0, 60)}`);
+    let bare = t; for (let k = 0; k < 4; k++) bare = bare.replace(/[\^_]\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}/g, '');
+    if (/\\frac(?![a-zA-Z])/.test(bare)) flag(`${label} uses small \\frac outside an exponent (use \\dfrac): ${t.slice(0, 60)}`);
+  } };
+  frac('stem', q.stem); frac('hint', q.hint); if (typeof q.answer === 'string') frac('answer', q.answer);
+  (q.options || []).forEach((o, i) => frac(`option${i}`, typeof o === 'string' ? o : o?.text));
+  (q.steps || []).forEach((st, i) => { frac(`step${i + 1}.explain`, st.explain); frac(`step${i + 1}.work`, st.work); });
   (q.keyPoints || []).forEach((k) => { txt('keyPoint.note', k.note); if (q.stem && !q.stem.includes(k.text)) flag(`keyPoint text not a substring of stem: ${k.text.slice(0, 50)}`); });
   const figs = [];
   if (q.figure?.svg) figs.push(['question figure', q.figure.svg]);

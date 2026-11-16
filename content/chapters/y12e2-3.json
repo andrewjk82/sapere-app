@@ -394,7 +394,7 @@
           "id": "ch13ext2-q5",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Let \\(\\omega = \\cos\\frac{\\pi}{5} + i\\sin\\frac{\\pi}{5}\\). Which of the following polynomials has \\(\\omega, \\omega^3, \\omega^7\\) and \\(\\omega^9\\) as its zeros?",
+          "stem": "Let \\(\\omega = \\cos\\dfrac{\\pi}{5} + i\\sin\\dfrac{\\pi}{5}\\). Which of the following polynomials has \\(\\omega, \\omega^3, \\omega^7\\) and \\(\\omega^9\\) as its zeros?",
           "options": [
             "\\(z^4+z^3+z^2+z+1\\)",
             "\\(z^4+z^3-z^2-z+1\\)",
@@ -405,15 +405,15 @@
           "hint": "Use the conjugate pairs of roots. The product of \\((z-\\alpha)(z-\\bar\\alpha)\\) is \\(z^2 - 2\\mathrm{Re}(\\alpha)z + |\\alpha|^2\\).",
           "steps": [
             {
-              "explain": "Write the roots using de Moivre: \\(\\omega = e^{i\\pi/5}\\). Then \\(\\omega^3 = e^{3i\\pi/5}\\), \\(\\omega^7 = e^{7i\\pi/5}\\), \\(\\omega^9 = e^{9i\\pi/5}\\). Note \\(\\omega^7 = \\bar{\\omega}^3\\) and \\(\\omega^9 = \\bar\\omega\\).",
+              "explain": "Write the roots using de Moivre: \\(\\omega = e^{\\frac{\\pi}{5}i}\\). Then \\(\\omega^3 = e^{\\frac{3\\pi}{5}i}\\), \\(\\omega^7 = e^{\\frac{7\\pi}{5}i}\\), \\(\\omega^9 = e^{\\frac{9\\pi}{5}i}\\). Note \\(\\omega^7 = \\bar{\\omega}^3\\) and \\(\\omega^9 = \\bar\\omega\\).",
               "work": "\\(\\omega^7=\\overline{\\omega^3},\\quad \\omega^9=\\bar\\omega\\)"
             },
             {
-              "explain": "Pair the roots into conjugates. \\((z-\\omega)(z-\\bar\\omega)=z^2-2\\cos\\tfrac{\\pi}{5}z+1\\) and \\((z-\\omega^3)(z-\\bar\\omega^3)=z^2-2\\cos\\tfrac{3\\pi}{5}z+1\\).",
-              "work": "\\((z^2-2\\cos\\tfrac{\\pi}{5}z+1)(z^2-2\\cos\\tfrac{3\\pi}{5}z+1)\\)"
+              "explain": "Pair the roots into conjugates. \\((z-\\omega)(z-\\bar\\omega)=z^2-2\\cos\\dfrac{\\pi}{5}z+1\\) and \\((z-\\omega^3)(z-\\bar\\omega^3)=z^2-2\\cos\\dfrac{3\\pi}{5}z+1\\).",
+              "work": "\\(\\left(z^2-2\\cos\\dfrac{\\pi}{5}z+1\\right)\\left(z^2-2\\cos\\dfrac{3\\pi}{5}z+1\\right)\\)"
             },
             {
-              "explain": "Expand. The \\(z^3\\) coefficient is \\(-2\\cos\\tfrac{\\pi}{5}-2\\cos\\tfrac{3\\pi}{5}=-1\\), since \\(\\cos\\tfrac{\\pi}{5}+\\cos\\tfrac{3\\pi}{5}=\\tfrac12\\). The \\(z^2\\) coefficient is \\(2+4\\cos\\tfrac{\\pi}{5}\\cos\\tfrac{3\\pi}{5}=1\\).",
+              "explain": "Expand. The \\(z^3\\) coefficient is \\(-2\\cos\\dfrac{\\pi}{5}-2\\cos\\dfrac{3\\pi}{5}=-1\\), since \\(\\cos\\dfrac{\\pi}{5}+\\cos\\dfrac{3\\pi}{5}=\\dfrac12\\). The \\(z^2\\) coefficient is \\(2+4\\cos\\dfrac{\\pi}{5}\\cos\\dfrac{3\\pi}{5}=1\\).",
               "work": "\\(z^4-z^3+z^2-z+1\\)"
             },
             {
@@ -443,8 +443,8 @@
         {
           "id": "ch13ext2-q13b-ii",
           "type": "review",
-          "stem": "Hence, by solving \\(16x^4-16x^2+1=0\\) using the substitution \\(x=\\cos\\theta\\), prove that \\(\\cos\\frac{\\pi}{12}\\cos\\frac{5\\pi}{12}\\cos\\frac{7\\pi}{12}\\cos\\frac{11\\pi}{12}=\\frac{1}{16}\\).",
-          "answer": "With \\(x=\\cos\\theta\\), \\(16x^4-16x^2+1=2(8\\cos^4\\theta-8\\cos^2\\theta+1)-1=2\\cos4\\theta-1\\). So \\(\\cos4\\theta=\\frac12\\). The four roots are \\(\\cos\\frac{\\pi}{12},\\cos\\frac{5\\pi}{12},\\cos\\frac{7\\pi}{12},\\cos\\frac{11\\pi}{12}\\), whose product is \\(\\frac{1}{16}\\) (product of roots \\(=\\frac{e}{a}=\\frac{1}{16}\\)).",
+          "stem": "Hence, by solving \\(16x^4-16x^2+1=0\\) using the substitution \\(x=\\cos\\theta\\), prove that \\(\\cos\\dfrac{\\pi}{12}\\cos\\dfrac{5\\pi}{12}\\cos\\dfrac{7\\pi}{12}\\cos\\dfrac{11\\pi}{12}=\\dfrac{1}{16}\\).",
+          "answer": "With \\(x=\\cos\\theta\\), \\(16x^4-16x^2+1=2(8\\cos^4\\theta-8\\cos^2\\theta+1)-1=2\\cos4\\theta-1\\). So \\(\\cos4\\theta=\\dfrac12\\). The four roots are \\(\\cos\\dfrac{\\pi}{12},\\cos\\dfrac{5\\pi}{12},\\cos\\dfrac{7\\pi}{12},\\cos\\dfrac{11\\pi}{12}\\), whose product is \\(\\dfrac{1}{16}\\) (product of roots \\(=\\dfrac{e}{a}=\\dfrac{1}{16}\\)).",
           "manual": true,
           "hint": "Use the identity from part (i) to rewrite \\(16x^4-16x^2+1\\) as \\(2\\cos4\\theta-1\\).",
           "steps": [
@@ -453,20 +453,20 @@
               "work": "\\(16x^4-16x^2+1=2\\cos4\\theta-1\\)"
             },
             {
-              "explain": "Set this to zero: \\(2\\cos4\\theta-1=0\\), so \\(\\cos4\\theta=\\frac12\\). Then \\(4\\theta=\\frac{\\pi}{3},\\frac{5\\pi}{3},\\frac{7\\pi}{3},\\frac{11\\pi}{3}\\) in the first period.",
-              "work": "\\(4\\theta\\in\\left\\{\\tfrac{\\pi}{3},\\tfrac{5\\pi}{3},\\tfrac{7\\pi}{3},\\tfrac{11\\pi}{3}\\right\\}\\)"
+              "explain": "Set this to zero: \\(2\\cos4\\theta-1=0\\), so \\(\\cos4\\theta=\\dfrac12\\). Then \\(4\\theta=\\dfrac{\\pi}{3},\\dfrac{5\\pi}{3},\\dfrac{7\\pi}{3},\\dfrac{11\\pi}{3}\\) in the first period.",
+              "work": "\\(4\\theta\\in\\left\\{\\dfrac{\\pi}{3},\\dfrac{5\\pi}{3},\\dfrac{7\\pi}{3},\\dfrac{11\\pi}{3}\\right\\}\\)"
             },
             {
-              "explain": "Divide by 4 to get \\(\\theta=\\frac{\\pi}{12},\\frac{5\\pi}{12},\\frac{7\\pi}{12},\\frac{11\\pi}{12}\\). These are the four roots \\(x_1,\\dots,x_4\\).",
-              "work": "\\(x_k=\\cos\\tfrac{\\pi}{12},\\cos\\tfrac{5\\pi}{12},\\cos\\tfrac{7\\pi}{12},\\cos\\tfrac{11\\pi}{12}\\)"
+              "explain": "Divide by 4 to get \\(\\theta=\\dfrac{\\pi}{12},\\dfrac{5\\pi}{12},\\dfrac{7\\pi}{12},\\dfrac{11\\pi}{12}\\). These are the four roots \\(x_1,\\dots,x_4\\).",
+              "work": "\\(x_k=\\cos\\dfrac{\\pi}{12},\\cos\\dfrac{5\\pi}{12},\\cos\\dfrac{7\\pi}{12},\\cos\\dfrac{11\\pi}{12}\\)"
             },
             {
-              "explain": "The polynomial \\(16x^4-16x^2+1\\) has product of roots \\(\\frac{e}{a}=\\frac{1}{16}\\) (for degree 4, the product is the constant term divided by the leading coefficient).",
-              "work": "\\(x_1x_2x_3x_4=\\tfrac{1}{16}\\)"
+              "explain": "The polynomial \\(16x^4-16x^2+1\\) has product of roots \\(\\dfrac{e}{a}=\\dfrac{1}{16}\\) (for degree 4, the product is the constant term divided by the leading coefficient).",
+              "work": "\\(x_1x_2x_3x_4=\\dfrac{1}{16}\\)"
             },
             {
-              "explain": "So \\(\\cos\\frac{\\pi}{12}\\cos\\frac{5\\pi}{12}\\cos\\frac{7\\pi}{12}\\cos\\frac{11\\pi}{12}=\\frac{1}{16}\\). Proof complete.",
-              "work": "<b>Product = 1/16</b>"
+              "explain": "So \\(\\cos\\dfrac{\\pi}{12}\\cos\\dfrac{5\\pi}{12}\\cos\\dfrac{7\\pi}{12}\\cos\\dfrac{11\\pi}{12}=\\dfrac{1}{16}\\). Proof complete.",
+              "work": "<b>Product \\(=\\dfrac{1}{16}\\)</b>"
             }
           ],
           "timeLimit": 60,
@@ -488,10 +488,10 @@
           "difficulty": "hard",
           "stem": "Solve \\(4z^3 - iz^2 - 4z + i = 0\\) over the set of complex numbers.",
           "options": [
-            "\\(z = 1,\\;-1,\\;-\\tfrac{i}{4}\\)",
+            "\\(z = 1,\\;-1,\\;-\\dfrac{i}{4}\\)",
             "\\(z = 1,\\;i,\\;-1\\)",
-            "\\(z = 1,\\;-1,\\;\\tfrac{i}{4}\\)",
-            "\\(z = 1,\\;-1,\\;\\tfrac{1}{4}\\)"
+            "\\(z = 1,\\;-1,\\;\\dfrac{i}{4}\\)",
+            "\\(z = 1,\\;-1,\\;\\dfrac{1}{4}\\)"
           ],
           "answer": 2,
           "hint": "Multiply by \\(i\\) to remove the complex coefficients. Then test simple values with the remainder theorem.",
@@ -505,12 +505,12 @@
               "work": "\\(z=1,\\;z=-1\\text{ are roots}\\)"
             },
             {
-              "explain": "Test \\(z=-\\frac{1}{4i}=\\frac{i}{4}\\): \\(4i(\\tfrac{i}{4})^3+(\\tfrac{i}{4})^2-4i(\\tfrac{i}{4})-1=0\\). So \\(z=\\frac{i}{4}\\) is the third root.",
-              "work": "\\(z=\\tfrac{i}{4}\\)"
+              "explain": "Test \\(z=-\\dfrac{1}{4i}=\\dfrac{i}{4}\\): \\(4i\\left(\\dfrac{i}{4}\\right)^3+\\left(\\dfrac{i}{4}\\right)^2-4i\\left(\\dfrac{i}{4}\\right)-1=0\\). So \\(z=\\dfrac{i}{4}\\) is the third root.",
+              "work": "\\(z=\\dfrac{i}{4}\\)"
             },
             {
-              "explain": "A cubic has three roots, so these are all of them. Check the product: \\(1\\times(-1)\\times\\frac{i}{4}=-\\frac{i}{4}\\), which matches \\(-\\frac{d}{a}\\) for the cubic.",
-              "work": "Answer: \\(z=1,\\;-1,\\;\\tfrac{i}{4}\\)"
+              "explain": "A cubic has three roots, so these are all of them. Check the product: \\(1\\times(-1)\\times\\dfrac{i}{4}=-\\dfrac{i}{4}\\), which matches \\(-\\dfrac{d}{a}\\) for the cubic.",
+              "work": "Answer: \\(z=1,\\;-1,\\;\\dfrac{i}{4}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1662,7 +1662,7 @@
             },
             {
               "explain": "Equate with the real part of \\(z^4\\), which is \\(\\cos4\\theta\\). Proof complete.",
-              "work": "<b>cos4θ = 8cos⁴θ − 8cos²θ + 1</b>"
+              "work": "<b>\\(\\cos4\\theta=8\\cos^4\\theta-8\\cos^2\\theta+1\\)</b>"
             }
           ],
           "timeLimit": 60,
@@ -1681,17 +1681,17 @@
         {
           "id": "ch13ext2-q15c-i",
           "type": "review",
-          "stem": "Show that \\(\\sin\\left(x+\\frac{n\\pi}{4}\\right)+\\cos\\left(x+\\frac{n\\pi}{4}\\right)=\\sqrt2\\sin\\left(x+\\frac{(n+1)\\pi}{4}\\right)\\) for integer \\(n\\).",
-          "answer": "Expand the right-hand side with the compound angle formula for \\(\\sin(A+B)\\) and use \\(\\sin\\frac\\pi4=\\cos\\frac\\pi4=\\frac{1}{\\sqrt2}\\).",
+          "stem": "Show that \\(\\sin\\left(x+\\dfrac{n\\pi}{4}\\right)+\\cos\\left(x+\\dfrac{n\\pi}{4}\\right)=\\sqrt2\\sin\\left(x+\\dfrac{(n+1)\\pi}{4}\\right)\\) for integer \\(n\\).",
+          "answer": "Expand the right-hand side with the compound angle formula for \\(\\sin(A+B)\\) and use \\(\\sin\\dfrac\\pi4=\\cos\\dfrac\\pi4=\\dfrac{1}{\\sqrt2}\\).",
           "manual": true,
           "hint": "Expand the right-hand side using \\(\\sin(A+B)\\), then recombine.",
           "steps": [
             {
-              "explain": "Expand: \\(\\sqrt2\\sin\\left(x+\\tfrac{n\\pi}{4}+\\tfrac\\pi4\\right)=\\sqrt2\\left[\\sin\\left(x+\\tfrac{n\\pi}4\\right)\\cos\\tfrac\\pi4+\\cos\\left(x+\\tfrac{n\\pi}4\\right)\\sin\\tfrac\\pi4\\right]\\).",
-              "work": "\\(\\sqrt2\\sin(\\cdot+\\tfrac\\pi4)=\\sqrt2[\\sin(\\cdot)\\cos\\tfrac\\pi4+\\cos(\\cdot)\\sin\\tfrac\\pi4]\\)"
+              "explain": "Expand: \\(\\sqrt2\\sin\\left(x+\\dfrac{n\\pi}{4}+\\dfrac\\pi4\\right)=\\sqrt2\\left[\\sin\\left(x+\\dfrac{n\\pi}4\\right)\\cos\\dfrac\\pi4+\\cos\\left(x+\\dfrac{n\\pi}4\\right)\\sin\\dfrac\\pi4\\right]\\).",
+              "work": "\\(\\sqrt2\\sin\\left(\\cdot+\\dfrac\\pi4\\right)=\\sqrt2[\\sin(\\cdot)\\cos\\dfrac\\pi4+\\cos(\\cdot)\\sin\\dfrac\\pi4]\\)"
             },
             {
-              "explain": "Use \\(\\cos\\frac\\pi4=\\sin\\frac\\pi4=\\frac{1}{\\sqrt2}\\): the bracket gives \\(\\frac{1}{\\sqrt2}\\left[\\sin(\\cdot)+\\cos(\\cdot)\\right]\\).",
+              "explain": "Use \\(\\cos\\dfrac\\pi4=\\sin\\dfrac\\pi4=\\dfrac{1}{\\sqrt2}\\): the bracket gives \\(\\dfrac{1}{\\sqrt2}\\left[\\sin(\\cdot)+\\cos(\\cdot)\\right]\\).",
               "work": "\\(=\\sin(\\cdot)+\\cos(\\cdot)\\)"
             },
             {
@@ -2623,34 +2623,42 @@
           "id": "ch13ext2-q12c-i",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Given that \\(z_1 = 1+i\\sqrt3\\), find \\(z_2, z_3, z_4\\) and \\(z_5\\) in exponential form (the pentagon is regular and inscribed in the circle with centre the origin).",
+          "stem": "The complex numbers \\(z_1, z_2, z_3, z_4\\) and \\(z_5\\) are the vertices of a regular pentagon inscribed in a circle with centre the origin, labelled anticlockwise as shown. Given that \\(z_1=1+i\\sqrt{3}\\), find \\(z_2, z_3, z_4\\) and \\(z_5\\) in exponential form.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><line x1=\"15\" y1=\"165\" x2=\"345\" y2=\"165\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"337.9,161.2 345,165 337.9,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"318\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"166.2,29.1 170,22 173.8,29.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"165\" r=\"115\" fill=\"none\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><polygon points=\"227.5,65.4 282.5,188.9 182,279.4 64.9,211.8 93,79.5\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"227.5\" cy=\"65.4\" r=\"3\" fill=\"#1e293b\"/><text x=\"237.5\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z1</text><circle cx=\"282.5\" cy=\"188.9\" r=\"3\" fill=\"#1e293b\"/><text x=\"260.5\" y=\"187.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z2</text><circle cx=\"182\" cy=\"279.4\" r=\"3\" fill=\"#1e293b\"/><text x=\"156\" y=\"287.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z3</text><circle cx=\"64.9\" cy=\"211.8\" r=\"3\" fill=\"#1e293b\"/><text x=\"58.9\" y=\"234.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z4</text><circle cx=\"93\" cy=\"79.5\" r=\"3\" fill=\"#1e293b\"/><text x=\"105\" y=\"98.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z5</text><text x=\"164\" y=\"185.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">O</text><text x=\"345\" y=\"185.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Re(z)</text><text x=\"178\" y=\"30.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Im(z)</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" style=\"max-width:340px;display:block;margin:0.5rem auto\"><line x1=\"15\" y1=\"165\" x2=\"345\" y2=\"165\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"337.9,161.2 345,165 337.9,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"318\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"166.2,29.1 170,22 173.8,29.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><circle cx=\"170\" cy=\"165\" r=\"115\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><polygon points=\"227.5,65.4 93.0,79.5 64.9,211.8 182.0,279.4 282.5,188.9\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"227.5\" cy=\"65.4\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"237.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">1</tspan></text><circle cx=\"93.0\" cy=\"79.5\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"80.3\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">2</tspan></text><circle cx=\"64.9\" cy=\"211.8\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"47.6\" y=\"224.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">3</tspan></text><circle cx=\"182.0\" cy=\"279.4\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"184.0\" y=\"303.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">4</tspan></text><circle cx=\"282.5\" cy=\"188.9\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"301.1\" y=\"197.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">5</tspan></text><text x=\"162\" y=\"182\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"350\" y=\"184\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Re(z)</text><text x=\"178\" y=\"24\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Im(z)</text></svg>"
           },
           "options": [
-            "\\(z_2=2e^{7\\pi i/15},\\; z_3=2e^{-13\\pi i/15},\\; z_4=2e^{-7\\pi i/15},\\; z_5=2e^{-\\pi i/15}\\)",
-            "\\(z_2=2e^{11\\pi i/15},\\; z_3=2e^{13\\pi i/15},\\; z_4=2e^{7\\pi i/15},\\; z_5=2e^{\\pi i/15}\\)",
-            "\\(z_2=2e^{11\\pi i/15},\\; z_3=2e^{-13\\pi i/15},\\; z_4=2e^{-7\\pi i/15},\\; z_5=2e^{-\\pi i/15}\\)",
-            "\\(z_2=e^{11\\pi i/15},\\; z_3=e^{-13\\pi i/15},\\; z_4=e^{-7\\pi i/15},\\; z_5=e^{-\\pi i/15}\\)"
+            "\\(z_2=2e^{\\frac{7\\pi}{15}i},\\quad z_3=2e^{-\\frac{13\\pi}{15}i},\\quad z_4=2e^{-\\frac{7\\pi}{15}i},\\quad z_5=2e^{-\\frac{\\pi}{15}i}\\)",
+            "\\(z_2=2e^{\\frac{11\\pi}{15}i},\\quad z_3=2e^{\\frac{13\\pi}{15}i},\\quad z_4=2e^{\\frac{7\\pi}{15}i},\\quad z_5=2e^{\\frac{\\pi}{15}i}\\)",
+            "\\(z_2=2e^{\\frac{11\\pi}{15}i},\\quad z_3=2e^{-\\frac{13\\pi}{15}i},\\quad z_4=2e^{-\\frac{7\\pi}{15}i},\\quad z_5=2e^{-\\frac{\\pi}{15}i}\\)",
+            "\\(z_2=e^{\\frac{11\\pi}{15}i},\\quad z_3=e^{-\\frac{13\\pi}{15}i},\\quad z_4=e^{-\\frac{7\\pi}{15}i},\\quad z_5=e^{-\\frac{\\pi}{15}i}\\)"
           ],
           "answer": 2,
-          "hint": "Find the modulus and argument of \\(z_1\\), then add \\(\\frac{2\\pi}{5}\\) to the argument for each vertex going anticlockwise.",
+          "hint": "Find the modulus and argument of \\(z_1\\), then add \\(\\dfrac{2\\pi}{5}\\) to the argument for each vertex going anticlockwise.",
           "steps": [
             {
-              "explain": "Modulus: \\(|z_1|=\\sqrt{1^2+(\\sqrt3)^2}=2\\). Argument: \\(\\tan\\theta=\\sqrt3\\), so \\(\\theta=\\frac{\\pi}{3}\\). So \\(z_1 = 2e^{i\\pi/3}\\).",
-              "work": "\\(z_1=2e^{i\\pi/3}\\)"
+              "explain": "Find the modulus of \\(z_1\\).",
+              "work": "\\(|z_1|=\\sqrt{1^2+\\left(\\sqrt{3}\\right)^2}=\\sqrt{4}=2\\)"
             },
             {
-              "explain": "The five vertices are equally spaced: the angle between neighbours is \\(\\frac{2\\pi}{5}\\). Going anticlockwise from \\(z_1\\), add \\(\\frac{2\\pi}{5}=\\frac{6\\pi}{15}\\) each time.",
-              "work": "\\(\\tfrac{2\\pi}{5}=\\tfrac{6\\pi}{15}\\)"
+              "explain": "Find the argument of \\(z_1\\) (first quadrant).",
+              "work": "\\(\\tan\\theta=\\dfrac{\\sqrt{3}}{1}\\Rightarrow\\theta=\\dfrac{\\pi}{3},\\quad z_1=2e^{\\frac{\\pi}{3}i}\\)"
             },
             {
-              "explain": "Find each argument. \\(z_2: \\frac{\\pi}{3}+\\frac{6\\pi}{15}=\\frac{11\\pi}{15}\\). Then \\(z_3: \\frac{11\\pi}{15}+\\frac{6\\pi}{15}=\\frac{17\\pi}{15}\\), and so on for \\(z_4\\) and \\(z_5\\).",
-              "work": "\\(z_2=2e^{11\\pi i/15}\\)"
+              "explain": "The five vertices are equally spaced on the circle, so neighbouring arguments differ by \\(\\dfrac{2\\pi}{5}\\). Write both angles over 15.",
+              "work": "\\(\\dfrac{2\\pi}{5}=\\dfrac{6\\pi}{15},\\quad \\dfrac{\\pi}{3}=\\dfrac{5\\pi}{15}\\)"
             },
             {
-              "explain": "Reduce angles bigger than \\(\\pi\\) by subtracting \\(2\\pi\\): \\(\\frac{17\\pi}{15}-2\\pi=-\\frac{13\\pi}{15}\\), \\(\\frac{23\\pi}{15}-2\\pi=-\\frac{7\\pi}{15}\\), \\(\\frac{29\\pi}{15}-2\\pi=-\\frac{\\pi}{15}\\). This matches the diagram.",
-              "work": "Answer: \\(z_2=2e^{11\\pi i/15}\\), \\(z_3=2e^{-13\\pi i/15}\\), \\(z_4=2e^{-7\\pi i/15}\\), \\(z_5=2e^{-\\pi i/15}\\)"
+              "explain": "Add \\(\\dfrac{6\\pi}{15}\\) each time, going anticlockwise.",
+              "work": "\\(z_2:\\ \\dfrac{5\\pi}{15}+\\dfrac{6\\pi}{15}=\\dfrac{11\\pi}{15}\\)<br/>\\(z_3:\\ \\dfrac{17\\pi}{15},\\quad z_4:\\ \\dfrac{23\\pi}{15},\\quad z_5:\\ \\dfrac{29\\pi}{15}\\)"
+            },
+            {
+              "explain": "Arguments greater than \\(\\pi\\) are written as principal arguments by subtracting \\(2\\pi=\\dfrac{30\\pi}{15}\\).",
+              "work": "\\(\\dfrac{17\\pi}{15}-\\dfrac{30\\pi}{15}=-\\dfrac{13\\pi}{15}\\)<br/>\\(\\dfrac{23\\pi}{15}-\\dfrac{30\\pi}{15}=-\\dfrac{7\\pi}{15}\\)<br/>\\(\\dfrac{29\\pi}{15}-\\dfrac{30\\pi}{15}=-\\dfrac{\\pi}{15}\\)"
+            },
+            {
+              "explain": "All vertices have modulus 2.",
+              "work": "\\(z_2=2e^{\\frac{11\\pi}{15}i},\\quad z_3=2e^{-\\frac{13\\pi}{15}i}\\)<br/>\\(z_4=2e^{-\\frac{7\\pi}{15}i},\\quad z_5=2e^{-\\frac{\\pi}{15}i}\\)"
             }
           ],
           "timeLimit": 60,
@@ -2670,31 +2678,31 @@
           "id": "ch13ext2-q12c-ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find an equation in the form \\(z^5 = x+iy\\), where \\(z_1,z_2,z_3,z_4,z_5\\) are the roots and \\(x\\) and \\(y\\) are real numbers.",
+          "stem": "The complex numbers \\(z_1, z_2, z_3, z_4\\) and \\(z_5\\) are the vertices of a regular pentagon inscribed in a circle with centre the origin, labelled anticlockwise as shown. Given that \\(z_1=1+i\\sqrt{3}\\), find an equation in the form \\(z^5=x+iy\\) which has \\(z_1, z_2, z_3, z_4, z_5\\) as its roots, where \\(x\\) and \\(y\\) are real numbers.",
           "options": [
-            "\\(z^5=16+16\\sqrt3\\,i\\)",
-            "\\(z^5=-16+16\\sqrt3\\,i\\)",
-            "\\(z^5=16\\sqrt3-16i\\)",
-            "\\(z^5=16-16\\sqrt3\\,i\\)"
+            "\\(z^5=16+16\\sqrt{3}\\,i\\)",
+            "\\(z^5=-16+16\\sqrt{3}\\,i\\)",
+            "\\(z^5=16\\sqrt{3}-16i\\)",
+            "\\(z^5=16-16\\sqrt{3}\\,i\\)"
           ],
           "answer": 3,
-          "hint": "Each root satisfies \\(z^5 = c\\). Use \\(z_1 = 2e^{i\\pi/3}\\) and de Moivre's theorem.",
+          "hint": "Each root satisfies \\(z^5=x+iy\\). Write \\(z_1\\) in exponential form and raise it to the fifth power.",
           "steps": [
             {
-              "explain": "Each vertex is a root of \\(z^5 = c\\). Pick \\(z_1 = 2e^{i\\pi/3}\\) and raise it to the fifth power.",
-              "work": "\\(z_1^5=(2e^{i\\pi/3})^5\\)"
+              "explain": "Write \\(z_1\\) in exponential form.",
+              "work": "\\(|z_1|=\\sqrt{1+3}=2,\\quad \\arg z_1=\\dfrac{\\pi}{3},\\quad z_1=2e^{\\frac{\\pi}{3}i}\\)"
             },
             {
-              "explain": "Apply the index law: \\((2e^{i\\pi/3})^5=2^5e^{5i\\pi/3}=32e^{5i\\pi/3}\\).",
-              "work": "\\(=32e^{5i\\pi/3}\\)"
+              "explain": "Every vertex is a root, so \\(x+iy=z_1^5\\). Raise \\(z_1\\) to the fifth power.",
+              "work": "\\(z_1^5=\\left(2e^{\\frac{\\pi}{3}i}\\right)^5=2^5e^{\\frac{5\\pi}{3}i}=32e^{\\frac{5\\pi}{3}i}\\)"
             },
             {
-              "explain": "Convert back: \\(\\cos\\frac{5\\pi}{3}=\\frac12\\) and \\(\\sin\\frac{5\\pi}{3}=-\\frac{\\sqrt3}{2}\\). So \\(32\\left(\\frac12-\\frac{\\sqrt3}{2}i\\right)=16-16\\sqrt3\\,i\\).",
-              "work": "\\(z^5=16-16\\sqrt3\\,i\\)"
+              "explain": "Convert to Cartesian form.",
+              "work": "\\(32\\left(\\cos\\dfrac{5\\pi}{3}+i\\sin\\dfrac{5\\pi}{3}\\right)=32\\left(\\dfrac{1}{2}-\\dfrac{\\sqrt{3}}{2}i\\right)\\)"
             },
             {
-              "explain": "Check with \\(z_2\\): \\(z_2^5=32e^{11\\pi i/3}=32e^{5\\pi i/3}\\), the same value. Common mistakes: the sign of the imaginary part.",
-              "work": "Answer: \\(z^5 = 16-16\\sqrt3\\,i\\)"
+              "explain": "Expand.",
+              "work": "\\(z^5=16-16\\sqrt{3}\\,i\\)"
             }
           ],
           "timeLimit": 60,
@@ -2708,6 +2716,9 @@
             "sourceQuestion": "Section II Q12(c)(ii)",
             "sourceMarks": 2,
             "page": 9
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" style=\"max-width:340px;display:block;margin:0.5rem auto\"><line x1=\"15\" y1=\"165\" x2=\"345\" y2=\"165\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"337.9,161.2 345,165 337.9,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"318\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"166.2,29.1 170,22 173.8,29.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><circle cx=\"170\" cy=\"165\" r=\"115\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><polygon points=\"227.5,65.4 93.0,79.5 64.9,211.8 182.0,279.4 282.5,188.9\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"227.5\" cy=\"65.4\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"237.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">1</tspan></text><circle cx=\"93.0\" cy=\"79.5\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"80.3\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">2</tspan></text><circle cx=\"64.9\" cy=\"211.8\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"47.6\" y=\"224.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">3</tspan></text><circle cx=\"182.0\" cy=\"279.4\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"184.0\" y=\"303.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">4</tspan></text><circle cx=\"282.5\" cy=\"188.9\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"301.1\" y=\"197.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">5</tspan></text><text x=\"162\" y=\"182\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"350\" y=\"184\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Re(z)</text><text x=\"178\" y=\"24\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Im(z)</text></svg>"
           }
         }
       ]
