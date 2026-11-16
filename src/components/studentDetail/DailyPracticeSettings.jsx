@@ -66,6 +66,10 @@ export default function DailyPracticeSettings({
               });
             }
 
+            const courseGroups = Array.isArray(data)
+              ? [{ course: "", chapters }]
+              : Object.entries(data).filter(([, list]) => Array.isArray(list) && list.length > 0).map(([course, list]) => ({ course, chapters: list }));
+
             const selectedChaptersInYear = chapters.filter(ch => dailyPracticeConfig.chapters.includes(ch.id));
             const hasPartialSelection = !isYearSelected && selectedChaptersInYear.length > 0;
 
@@ -124,44 +128,74 @@ export default function DailyPracticeSettings({
                   )}
                 </div>
 
-                {/* Expanded Chapter Grid */}
+                {/* Expanded: chapters, in one block per course when the year has several (Year 11 / 12) */}
                 {isExpanded && (
                   <div style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-                    gap: "8px",
+                    gap: "14px",
                     padding: "12px",
                     background: "#f8fafc",
                     border: "1.5px solid #e2e8f0",
                     borderTop: "none",
                     borderRadius: "0 0 12px 12px",
                   }}>
-                    {chapters.map(ch => {
-                      const isSel = dailyPracticeConfig.chapters.includes(ch.id);
+                    {courseGroups.map(({ course, chapters: groupChapters }) => {
+                      const ids = groupChapters.map((ch) => ch.id);
+                      const picked = ids.filter((id) => dailyPracticeConfig.chapters.includes(id)).length;
+                      const allPicked = ids.length > 0 && picked === ids.length;
+                      // Ticking a course ticks each of its chapters (the saved setting stays a chapter list).
+                      const toggleCourse = () => onUpdateDailyConfig({
+                        ...dailyPracticeConfig,
+                        chapters: allPicked
+                          ? dailyPracticeConfig.chapters.filter((id) => !ids.includes(id))
+                          : [...new Set([...dailyPracticeConfig.chapters, ...ids])],
+                      });
                       return (
-                        <div
-                          key={ch.id}
-                          onClick={() => onToggleDailyChapter(ch.id)}
-                          style={{
-                            display: "flex", alignItems: "center", gap: "10px",
-                            padding: "10px 12px", borderRadius: "10px",
-                            background: isSel ? "#ecfdf5" : "white",
-                            border: `1.5px solid ${isSel ? "#34d399" : "#e2e8f0"}`,
-                            cursor: "pointer", transition: "all 0.15s",
-                          }}
-                        >
-                          <div style={{
-                            width: "16px", height: "16px", borderRadius: "4px", flexShrink: 0,
-                            background: isSel ? "#10b981" : "transparent",
-                            border: `2px solid ${isSel ? "#10b981" : "#cbd5e1"}`,
-                            display: "flex", alignItems: "center", justifyContent: "center", color: "white",
-                          }}>
-                            {isSel && <Check size={10} strokeWidth={4} />}
+                        <div key={course || "all"}>
+                          {course && (
+                            <div onClick={toggleCourse} style={{ display: "flex", alignItems: "center", gap: "10px", padding: "4px 2px 10px", cursor: "pointer" }}>
+                              <div style={{
+                                width: "18px", height: "18px", borderRadius: "5px", flexShrink: 0,
+                                background: allPicked ? "#10b981" : picked > 0 ? "#a7f3d0" : "white",
+                                border: `2px solid ${picked > 0 ? "#10b981" : "#cbd5e1"}`,
+                                display: "flex", alignItems: "center", justifyContent: "center", color: "white",
+                              }}>
+                                {allPicked && <Check size={11} strokeWidth={4} />}
+                              </div>
+                              <span style={{ fontWeight: 800, fontSize: "0.82rem", color: picked > 0 ? "#065f46" : "#374151" }}>{course}</span>
+                              <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "#64748b" }}>{picked}/{ids.length}</span>
+                            </div>
+                          )}
+                          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "8px" }}>
+                            {groupChapters.map(ch => {
+                              const isSel = dailyPracticeConfig.chapters.includes(ch.id);
+                              return (
+                                <div
+                                  key={ch.id}
+                                  onClick={() => onToggleDailyChapter(ch.id)}
+                                  style={{
+                                    display: "flex", alignItems: "center", gap: "10px",
+                                    padding: "10px 12px", borderRadius: "10px",
+                                    background: isSel ? "#ecfdf5" : "white",
+                                    border: `1.5px solid ${isSel ? "#34d399" : "#e2e8f0"}`,
+                                    cursor: "pointer", transition: "all 0.15s",
+                                  }}
+                                >
+                                  <div style={{
+                                    width: "16px", height: "16px", borderRadius: "4px", flexShrink: 0,
+                                    background: isSel ? "#10b981" : "transparent",
+                                    border: `2px solid ${isSel ? "#10b981" : "#cbd5e1"}`,
+                                    display: "flex", alignItems: "center", justifyContent: "center", color: "white",
+                                  }}>
+                                    {isSel && <Check size={10} strokeWidth={4} />}
+                                  </div>
+                                  <span style={{ fontSize: "0.78rem", fontWeight: 600, color: isSel ? "#065f46" : "#475569", lineHeight: 1.3 }}>
+                                    {ch.title}
+                                  </span>
+                                </div>
+                              );
+                            })}
                           </div>
-                          <span style={{ fontSize: "0.78rem", fontWeight: 600, color: isSel ? "#065f46" : "#475569", lineHeight: 1.3 }}>
-                            {ch._course && <span style={{ opacity: 0.55, fontSize: "0.68rem", display: "block" }}>{ch._course}</span>}
-                            {ch.title}
-                          </span>
                         </div>
                       );
                     })}
