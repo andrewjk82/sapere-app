@@ -444,6 +444,140 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q11b-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A line passes through the points \\(A(1,-1,3)\\) and \\(B(0,5,8)\\). Find the midpoint of the segment \\(AB\\).",
+          "options": [
+            "\\((0.5,\\;2,\\;5)\\)",
+            "\\((1,\\;2,\\;6)\\)",
+            "\\((0.5,\\;2.5,\\;5.5)\\)",
+            "\\((0.5,\\;2,\\;5.5)\\)"
+          ],
+          "answer": 3,
+          "hint": "The midpoint is the point halfway along the segment: \\(\\lambda = 0.5\\) in \\(\\underset{\\sim}{r}=\\underset{\\sim}{a}+\\lambda\\underset{\\sim}{b}\\).",
+          "steps": [
+            {
+              "explain": "Use the vector equation from part (i): \\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\-1\\\\ 3\\end{pmatrix}+\\lambda\\begin{pmatrix}-1\\\\ 6\\\\ 5\\end{pmatrix}\\).",
+              "work": "\\(r=(1,-1,3)+\\lambda(-1,6,5)\\)"
+            },
+            {
+              "explain": "The midpoint is halfway along AB, so \\(\\lambda = 0.5\\).",
+              "work": "\\(\\lambda=0.5\\)"
+            },
+            {
+              "explain": "Substitute \\(\\lambda = 0.5\\): \\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\-1\\\\ 3\\end{pmatrix}+0.5\\begin{pmatrix}-1\\\\ 6\\\\ 5\\end{pmatrix}=\\begin{pmatrix}0.5\\\\ 2\\\\ 5.5\\end{pmatrix}\\).",
+              "work": "\\(M=(0.5,\\;2,\\;5.5)\\)"
+            },
+            {
+              "explain": "Check: the midpoint is the average of A and B: \\(\\frac{1+0}{2}=0.5\\), \\(\\frac{-1+5}{2}=2\\), \\(\\frac{3+8}{2}=5.5\\). Answer: \\(M(0.5,2,5.5)\\).",
+              "work": "Answer: \\(M(0.5,\\,2,\\,5.5)\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "midpoint",
+              "note": "The midpoint has \\(\\lambda = 0.5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q11(b)(ii)",
+            "sourceMarks": 1,
+            "page": 8
+          }
+        },
+        {
+          "id": "ch13ext2-q11b-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hence, find the point \\(P\\) which divides the segment \\(AB\\) internally in the ratio \\(3:2\\).",
+          "options": [
+            "\\((0.6,\\;2.4,\\;5.2)\\)",
+            "\\((0.4,\\;2.6,\\;6)\\)",
+            "\\((0.4,\\;2.6,\\;5)\\)",
+            "\\((0.5,\\;2,\\;5.5)\\)"
+          ],
+          "answer": 1,
+          "hint": "For internal division in the ratio \\(m:n\\), \\(\\lambda = \\frac{m}{m+n}\\). Here \\(m=3\\) and \\(n=2\\).",
+          "steps": [
+            {
+              "explain": "Identify the ratio. P divides AB internally in the ratio 3:2, so the part from A to P is 3 parts and the whole segment is 5 parts.",
+              "work": "\\(\\lambda=\\frac{m}{m+n}=\\frac{3}{5}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\lambda = \\frac35\\) into the line equation.",
+              "work": "\\(r=(1,-1,3)+\\tfrac35(-1,6,5)\\)"
+            },
+            {
+              "explain": "Multiply: \\(\\frac35(-1,6,5)=(-0.6,\\,3.6,\\,3)\\). Add to A.",
+              "work": "\\(r=(1-0.6,\\;-1+3.6,\\;3+3)=(0.4,\\;2.6,\\;6)\\)"
+            },
+            {
+              "explain": "Check: \\(\\lambda = 0.5\\) gave the midpoint, and \\(\\lambda=0.6\\) should be closer to B (which is at \\(\\lambda = 1\\)). The point \\((0.4, 2.6, 6)\\) is 60% of the way from A to B.",
+              "work": "Answer: \\(P(0.4,\\,2.6,\\,6)\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "internally in the ratio",
+              "note": "Use λ = m/(m+n) = 3/5."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q11(b)(iii)",
+            "sourceMarks": 2,
+            "page": 8
+          }
+        },
+        {
+          "id": "ch13ext2-q11b-i",
+          "type": "review",
+          "stem": "A line passes through the points \\(A(1,-1,3)\\) and \\(B(0,5,8)\\). Show that the vector equation of the line is \\(\\underset{\\sim}{r}=\\begin{pmatrix}1\\\\-1\\\\ 3\\end{pmatrix}+\\lambda\\begin{pmatrix}-1\\\\ 6\\\\ 5\\end{pmatrix}\\).",
+          "answer": "Direction \\(\\vec{AB}=B-A=(-1,6,5)\\). Use A as the position vector \\(\\underset{\\sim}{a}\\). Then \\(\\underset{\\sim}{r}=\\underset{\\sim}{a}+\\lambda\\vec{AB}\\).",
+          "manual": true,
+          "hint": "Find the direction vector \\(\\vec{AB}\\) first, then use A as the point on the line.",
+          "steps": [
+            {
+              "explain": "Direction vector: \\(\\vec{AB}=\\underset{\\sim}{b}-\\underset{\\sim}{a}=(0,5,8)-(1,-1,3)=(-1,6,5)\\).",
+              "work": "\\(\\vec{AB}=(-1,6,5)\\)"
+            },
+            {
+              "explain": "A point on the line is A itself, with position vector \\((1,-1,3)\\).",
+              "work": "\\(\\underset{\\sim}{a}=(1,-1,3)\\)"
+            },
+            {
+              "explain": "Combine: \\(\\underset{\\sim}{r}=\\underset{\\sim}{a}+\\lambda\\vec{AB}=\\begin{pmatrix}1\\\\-1\\\\ 3\\end{pmatrix}+\\lambda\\begin{pmatrix}-1\\\\ 6\\\\ 5\\end{pmatrix}\\). Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q11(b)(i)",
+            "sourceMarks": 2,
+            "page": 8
+          }
         }
       ]
     },
@@ -1328,6 +1462,56 @@
               "note": "Eliminate t; a circle needs equal coefficients on (x − 1)² and (y − 1)²."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Consider the following parametric curve given by \\(\\underset{\\sim}{r} = \\begin{pmatrix}\\cos t\\\\\\ sin t\\\\ t\\end{pmatrix}\\) from \\(0 \\le t \\le 2\\pi\\). Which of the following best represents the \\(xz\\) projection of \\(\\underset{\\sim}{r}\\)?",
+          "options": [
+            "The circle \\(x^2+z^2=1\\)",
+            "The curve \\(z=\\cos x\\), starting at \\((0,1)\\)",
+            "The curve \\(x=\\cos z\\), for \\(0\\le z\\le 2\\pi\\), starting at \\((1,0)\\)",
+            "The curve \\(z=\\sin x\\), starting at the origin"
+          ],
+          "answer": 2,
+          "hint": "The xz projection drops the y-coordinate. So keep \\(x = \\cos t\\) and \\(z = t\\), and eliminate t.",
+          "steps": [
+            {
+              "explain": "The three components are \\(x = \\cos t\\), \\(y = \\sin t\\), \\(z = t\\). The projection onto the xz plane keeps x and z and drops y.",
+              "work": "\\(x=\\cos t,\\qquad z=t\\)"
+            },
+            {
+              "explain": "Substitute \\(t = z\\) into the x equation to get a relation between x and z.",
+              "work": "\\(x=\\cos z,\\qquad 0\\le z\\le2\\pi\\)"
+            },
+            {
+              "explain": "Describe the curve: at \\(z=0\\) it is at \\(x=1\\). As z increases the curve moves left to \\(x=-1\\) at \\(z=\\pi\\) and back to \\(x=1\\) at \\(z=2\\pi\\). The z-axis is vertical in the picture.",
+              "work": "Starts at (1, 0), a wave in x against z."
+            },
+            {
+              "explain": "Check the options: A is a circle (not a projection of this curve). B and D are graphs of z against x, which is the wrong way round. Only C matches \\(x = \\cos z\\).",
+              "work": "Answer: C"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "projection of",
+              "note": "Keep x and z; drop y."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q9",
+            "sourceMarks": 1,
+            "page": 2
+          }
         }
       ]
     },
@@ -2074,6 +2258,100 @@
               "note": "Use the three-dimensional magnitude formula, square each component, then use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and the positive sign of secant in the first quadrant."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the vectors \\(\\underset{\\sim}{a} = \\begin{pmatrix}1.2\\\\ 0\\\\ k\\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix}6\\\\ 0\\\\-10\\end{pmatrix}\\). Which value of \\(k\\) will make the vectors perpendicular to each other?",
+          "options": [
+            "\\(k=-2\\)",
+            "\\(k=2\\)",
+            "\\(k=-\\tfrac{18}{25}\\)",
+            "\\(k=\\tfrac{18}{25}\\)"
+          ],
+          "answer": 3,
+          "hint": "Two vectors are perpendicular when their dot product is zero.",
+          "steps": [
+            {
+              "explain": "Perpendicular vectors have dot product zero: \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=0\\).",
+              "work": "\\(a\\cdot b=0\\)"
+            },
+            {
+              "explain": "Multiply matching components and add.",
+              "work": "\\(1.2\\times6+0\\times0+k\\times(-10)=0\\)"
+            },
+            {
+              "explain": "Simplify: \\(7.2 - 10k = 0\\), so \\(k = \\dfrac{7.2}{10} = \\dfrac{18}{25}\\).",
+              "work": "\\(k=\\frac{18}{25}\\)"
+            },
+            {
+              "explain": "Check the signs: \\(-10k\\) must cancel \\(+7.2\\), so \\(k\\) is positive. Option A/B have the wrong size, C has the wrong sign.",
+              "work": "Answer: D"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perpendicular",
+              "note": "Perpendicular means dot product = 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q4",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q13d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let \\(\\underset{\\sim}{u}\\) be the projection vector of the line segment \\(\\underset{\\sim}{r}=\\lambda\\begin{pmatrix}2\\\\ 3\\\\ 1\\end{pmatrix}\\), \\(0\\le\\lambda\\le1\\), onto the \\(xy\\) plane. Find the unit vector in the direction of \\(\\underset{\\sim}{u}\\).",
+          "options": [
+            "\\(\\frac{1}{\\sqrt{14}}\\begin{pmatrix}2\\\\ 3\\\\ 1\\end{pmatrix}\\)",
+            "\\(\\frac{1}{\\sqrt{13}}\\begin{pmatrix}3\\\\ 2\\\\ 0\\end{pmatrix}\\)",
+            "\\(\\frac{1}{\\sqrt{13}}\\begin{pmatrix}2\\\\ 3\\\\ 0\\end{pmatrix}\\)",
+            "\\(\\frac{1}{13}\\begin{pmatrix}2\\\\ 3\\\\ 0\\end{pmatrix}\\)"
+          ],
+          "answer": 2,
+          "hint": "Projection onto the xy plane sets the z-component to 0. Then divide by the length to get a unit vector.",
+          "steps": [
+            {
+              "explain": "Projecting onto the xy plane keeps x and y and sets z to 0. So the projection of \\((2,3,1)\\) is \\(\\underset{\\sim}{u}=(2,3,0)\\).",
+              "work": "\\(\\underset{\\sim}{u}=\\begin{pmatrix}2\\\\ 3\\\\ 0\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Find the length: \\(|\\underset{\\sim}{u}|=\\sqrt{2^2+3^2+0^2}=\\sqrt{13}\\).",
+              "work": "\\(|u|=\\sqrt{13}\\)"
+            },
+            {
+              "explain": "Divide by the length to make a unit vector: \\(\\hat u=\\frac{1}{\\sqrt{13}}(2,3,0)\\).",
+              "work": "\\(\\hat u=\\tfrac{1}{\\sqrt{13}}\\begin{pmatrix}2\\\\ 3\\\\ 0\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check: the length is \\(\\sqrt{\\frac{4}{13}+\\frac{9}{13}}=1\\) \\(\\checkmark\\). Common mistakes: keeping the z-component, or swapping x and y.",
+              "work": "Answer: \\(\\frac{1}{\\sqrt{13}}\\begin{pmatrix}2\\\\ 3\\\\ 0\\end{pmatrix}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q13(d)",
+            "sourceMarks": 2,
+            "page": 10
+          }
         }
       ]
     },
@@ -2646,6 +2924,88 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 380 250\"><rect width=\"380\" height=\"250\" fill=\"white\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"42.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"330.0\" y2=\"205.0\" stroke=\"#334155\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"205.0\" x2=\"193.3\" y2=\"61.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"205.0\" x2=\"125.9\" y2=\"74.2\" stroke=\"#475569\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"24.0\" x2=\"158.0\" y2=\"205.0\" stroke=\"#64748b\" stroke-width=\"2.0\" stroke-linecap=\"round\"/><path d=\"M188.5,56.1 L183.4,60.9 L188.3,66.0\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><path d=\"M129.6,68.3 L135.5,72.0 L131.7,77.9\" fill=\"none\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><circle cx=\"158.0\" cy=\"24.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"163.0\" y=\"17.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">A</text><circle cx=\"42.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"28.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">B</text><circle cx=\"330.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"336.0\" y=\"221.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">C</text><circle cx=\"158.0\" cy=\"205.0\" r=\"2.8\" fill=\"#334155\"/><text x=\"164.0\" y=\"222.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">D</text><circle cx=\"193.3\" cy=\"61.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"200.3\" y=\"54.2\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">E</text><circle cx=\"125.9\" cy=\"74.2\" r=\"2.8\" fill=\"#334155\"/><text x=\"105.0\" y=\"68.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">F</text><circle cx=\"158.0\" cy=\"94.8\" r=\"2.8\" fill=\"#334155\"/><text x=\"167.0\" y=\"132.0\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#0f172a\">O</text></svg>"
           }
+        },
+        {
+          "id": "ch13ext2-q13a-i",
+          "type": "review",
+          "stem": "The points \\(A(-3,2,6)\\), \\(B(-1,-3,-5)\\), \\(C(7,-1,-4)\\) and \\(D(5,4,7)\\) form the vertices of the quadrilateral \\(ABCD\\). Deduce that \\(ABCD\\) is a parallelogram by showing that \\(\\vec{AB}=\\vec{DC}\\) and \\(\\vec{AD}=\\vec{BC}\\).",
+          "answer": "AB = (2,-5,-11) and DC = (2,-5,-11), so AB = DC. AD = (8,2,1) and BC = (8,2,1), so AD = BC. Opposite sides are equal and parallel, so ABCD is a parallelogram.",
+          "manual": true,
+          "hint": "Write each vector as (end point) − (start point). Compare the components.",
+          "steps": [
+            {
+              "explain": "Find \\(\\vec{AB}=\\underset{\\sim}{b}-\\underset{\\sim}{a}=(-1,-3,-5)-(-3,2,6)=(2,-5,-11)\\).",
+              "work": "\\(\\vec{AB}=(2,-5,-11)\\)"
+            },
+            {
+              "explain": "Find \\(\\vec{DC}=C-D=(7,-1,-4)-(5,4,7)=(2,-5,-11)\\). So \\(\\vec{AB}=\\vec{DC}\\).",
+              "work": "\\(\\vec{DC}=(2,-5,-11)=\\vec{AB}\\)"
+            },
+            {
+              "explain": "Find \\(\\vec{AD}=D-A=(8,2,1)\\) and \\(\\vec{BC}=C-B=(8,2,1)\\). So \\(\\vec{AD}=\\vec{BC}\\).",
+              "work": "\\(\\vec{AD}=(8,2,1)=\\vec{BC}\\)"
+            },
+            {
+              "explain": "Equal vectors mean equal length and parallel direction. Opposite sides are parallel and equal, so ABCD is a parallelogram.",
+              "work": "<b>ABCD is a parallelogram.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q13(a)(i)",
+            "sourceMarks": 2,
+            "page": 10
+          }
+        },
+        {
+          "id": "ch13ext2-q13a-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Hence, find the point \\(X\\) where the diagonals of the parallelogram \\(ABCD\\) intersect.",
+          "options": [
+            "\\(X(1,\\,0.5,\\,1)\\)",
+            "\\(X(2,\\,0.5,\\,1)\\)",
+            "\\(X(2,\\,1,\\,1)\\)",
+            "\\(X(3,\\,0.5,\\,1)\\)"
+          ],
+          "answer": 1,
+          "hint": "The diagonals of a parallelogram bisect each other, so \\(X\\) is the midpoint of AC (or BD).",
+          "steps": [
+            {
+              "explain": "Diagonals of a parallelogram bisect each other, so \\(X\\) is the midpoint of \\(AC\\).",
+              "work": "\\(X=\\tfrac12(A+C)\\)"
+            },
+            {
+              "explain": "Add the coordinates of A and C: \\(A+C=(-3+7,\\;2-1,\\;6-4)=(4,\\;1,\\;2)\\).",
+              "work": "\\(A+C=(4,1,2)\\)"
+            },
+            {
+              "explain": "Halve: \\(X=(2,\\;0.5,\\;1)\\).",
+              "work": "\\(X=(2,\\,0.5,\\,1)\\)"
+            },
+            {
+              "explain": "Check with BD: \\(\\frac12(B+D)=\\frac12(4,1,2)=(2,0.5,1)\\), the same point.",
+              "work": "Answer: \\(X(2,\\,0.5,\\,1)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q13(a)(ii)",
+            "sourceMarks": 2,
+            "page": 10
+          }
         }
       ]
     },
@@ -2874,6 +3234,222 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following represents a sphere with centre \\((1,2,-2)\\) and radius 3 units?",
+          "options": [
+            "\\(x^2-2x+y^2-4y+z^2+4z=0\\)",
+            "\\(x^2+2x+y^2+4y+z^2-4z=0\\)",
+            "\\(\\left|\\begin{pmatrix}x+1\\\\ y+2\\\\ z-2\\end{pmatrix}\\right|=3\\)",
+            "\\(\\left|\\begin{pmatrix}x-1\\\\ y-2\\\\ z+2\\end{pmatrix}\\right|=9\\)"
+          ],
+          "answer": 0,
+          "hint": "A sphere with centre \\((a,b,c)\\) and radius r is \\((x-a)^2+(y-b)^2+(z-c)^2=r^2\\). Expand it and compare.",
+          "steps": [
+            {
+              "explain": "Write the standard sphere equation with centre \\((1,2,-2)\\) and radius 3.",
+              "work": "\\((x-1)^2+(y-2)^2+(z+2)^2=3^2\\)"
+            },
+            {
+              "explain": "Expand each bracket. \\((x-1)^2 = x^2 - 2x + 1\\), \\((y-2)^2 = y^2 - 4y + 4\\), \\((z+2)^2 = z^2 + 4z + 4\\).",
+              "work": "\\(x^2-2x+1+y^2-4y+4+z^2+4z+4=9\\)"
+            },
+            {
+              "explain": "Collect the constants: \\(1 + 4 + 4 = 9\\). Subtract 9 from both sides.",
+              "work": "\\(x^2-2x+y^2-4y+z^2+4z=0\\)"
+            },
+            {
+              "explain": "This matches option A. Options C and D use vector moduli with the wrong centre or radius (D has radius 9). Option B has the wrong signs on the linear terms.",
+              "work": "Answer: A"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "radius 3 units",
+              "note": "Radius 3 means the right-hand side is 3² = 9."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q2",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q16d-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hence, derive that \\(a=\\dfrac{2}{\\sqrt3}\\) for the cube \\(ABCDEFGH\\) inscribed in the unit sphere.",
+          "options": [
+            "\\(a=\\tfrac{2}{\\sqrt3}\\)",
+            "\\(a=\\tfrac{\\sqrt3}{2}\\)",
+            "\\(a=\\tfrac23\\)",
+            "\\(a=1\\)"
+          ],
+          "answer": 0,
+          "hint": "The longest diagonal of the cube is a diameter of the sphere, which has length 2.",
+          "steps": [
+            {
+              "explain": "The longest diagonal of the cube (AG) passes through the centre and is a diameter of the unit sphere, so its length is \\(2\\).",
+              "work": "\\(AG=2\\)"
+            },
+            {
+              "explain": "From part (i), the longest diagonal is \\(\\sqrt3\\,a\\).",
+              "work": "\\(\\sqrt3\\,a=2\\)"
+            },
+            {
+              "explain": "Divide by \\(\\sqrt3\\): \\(a=\\frac{2}{\\sqrt3}\\).",
+              "work": "\\(a=\\tfrac{2}{\\sqrt3}\\)"
+            },
+            {
+              "explain": "Check: \\(\\sqrt3\\cdot\\frac{2}{\\sqrt3}=2\\). Common mistakes: \\(\\frac{\\sqrt3}{2}\\) (inverting), or using \\(a\\) as the diagonal.",
+              "work": "Answer: \\(a=\\frac{2}{\\sqrt3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(d)(ii)",
+            "sourceMarks": 1,
+            "page": 14
+          }
+        },
+        {
+          "id": "ch13ext2-q16d-iii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Hence, find the sum of the volumes of the two square pyramids \\(OABCD\\) and \\(OEFGH\\).",
+          "options": [
+            "\\(\\frac{8\\sqrt3}{9}\\)",
+            "\\(\\frac{8\\sqrt3}{27}\\)",
+            "\\(\\frac{4\\sqrt3}{27}\\)",
+            "\\(\\frac{8}{27}\\)"
+          ],
+          "answer": 1,
+          "hint": "Each pyramid has a square base of area \\(a^2\\) and height equal to half the cube side \\(\\frac a2\\), so its volume is \\(\\frac16 a^3\\)...",
+          "steps": [
+            {
+              "explain": "A pyramid with a square base of side \\(a\\) and height \\(\\frac a2\\) has volume \\(\\frac13\\times a^2\\times\\frac a2=\\frac{a^3}{6}\\).",
+              "work": "\\(V=\\tfrac13 a^2\\cdot\\frac{a}{2}=\\tfrac{a^3}{6}\\)"
+            },
+            {
+              "explain": "Two pyramids together: \\(2\\times\\frac{a^3}{6}=\\frac{a^3}{3}\\).",
+              "work": "\\(V_{\\text{total}}=\\tfrac{a^3}{3}\\)"
+            },
+            {
+              "explain": "Substitute \\(a=\\frac{2}{\\sqrt3}\\): \\(a^3=\\frac{8}{3\\sqrt3}=\\frac{8\\sqrt3}{9}\\).",
+              "work": "\\(a^3=\\tfrac{8\\sqrt3}{9}\\)"
+            },
+            {
+              "explain": "Divide by 3: \\(V=\\frac{8\\sqrt3}{27}\\). Common mistake: \\(\\frac{8\\sqrt3}{9}\\) (forgetting to divide by 3).",
+              "work": "\\(\\boxed{\\frac{8\\sqrt3}{27}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(d)(iii)",
+            "sourceMarks": 1,
+            "page": 14
+          }
+        },
+        {
+          "id": "ch13ext2-q16d-iv",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Show that \\(\\vec{OA}\\cdot\\vec{OC}=-\\dfrac13\\).",
+          "options": [
+            "\\(\\tfrac13\\)",
+            "\\(-\\tfrac12\\)",
+            "\\(-\\tfrac23\\)",
+            "\\(-\\tfrac13\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the coordinates of A and C using \\(a=\\frac{2}{\\sqrt3}\\), then take the dot product.",
+          "steps": [
+            {
+              "explain": "Coordinates: A \\((-\\frac a2,\\frac a2,\\frac a2)\\) and C \\((\\frac a2,-\\frac a2,\\frac a2)\\). Here \\(a^2=\\frac43\\), so \\(\\frac{a^2}{4}=\\frac13\\).",
+              "work": "\\(\\tfrac{a^2}{4}=\\tfrac13\\)"
+            },
+            {
+              "explain": "Dot product: \\(\\vec{OA}\\cdot\\vec{OC}=(-\\frac{a}{2})(\\frac{a}{2})+(\\frac{a}{2})(-\\frac{a}{2})+(\\frac{a}{2})(\\frac{a}{2})\\).",
+              "work": "\\(-\\tfrac{a^2}{4}-\\tfrac{a^2}{4}+\\tfrac{a^2}{4}\\)"
+            },
+            {
+              "explain": "Simplify: \\(-\\frac{a^2}{4}\\).",
+              "work": "\\(=-\\tfrac{a^2}{4}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\frac{a^2}{4}=\\frac13\\): \\(\\vec{OA}\\cdot\\vec{OC}=-\\frac13\\). Shown.",
+              "work": "\\(\\boxed{-\\tfrac13}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(d)(iv)",
+            "sourceMarks": 1,
+            "page": 14
+          }
+        },
+        {
+          "id": "ch13ext2-q16d-i",
+          "type": "review",
+          "stem": "Show that the longest diagonal in a cube with side length \\(a\\) units is \\(\\sqrt3a\\) units.",
+          "answer": "Use the cube corners \\((0,0,0)\\) and \\((a,a,a)\\) and the distance formula in 3D.",
+          "manual": true,
+          "hint": "Take two opposite corners of the cube and find the distance between them.",
+          "steps": [
+            {
+              "explain": "Take opposite corners \\((0,0,0)\\) and \\((a,a,a)\\). These are the ends of a space diagonal.",
+              "work": "\\((0,0,0)\\text{ to }(a,a,a)\\)"
+            },
+            {
+              "explain": "Distance: \\(\\sqrt{a^2+a^2+a^2}=\\sqrt{3a^2}\\).",
+              "work": "\\(\\sqrt{3a^2}\\)"
+            },
+            {
+              "explain": "So the length is \\(\\sqrt3\\,a\\). Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(d)(i)",
+            "sourceMarks": 1,
+            "page": 14
+          }
         }
       ]
     },

@@ -389,6 +389,142 @@
               "note": "Use Vieta’s formulas. First note that the two non-real cube roots are conjugates, so \\(\\omega+\\bar\\omega=-1\\) and \\(\\omega\\bar\\omega=1\\)."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Let \\(\\omega = \\cos\\frac{\\pi}{5} + i\\sin\\frac{\\pi}{5}\\). Which of the following polynomials has \\(\\omega, \\omega^3, \\omega^7\\) and \\(\\omega^9\\) as its zeros?",
+          "options": [
+            "\\(z^4+z^3+z^2+z+1\\)",
+            "\\(z^4+z^3-z^2-z+1\\)",
+            "\\(z^4-z^3-z^2+z+1\\)",
+            "\\(z^4-z^3+z^2-z+1\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the conjugate pairs of roots. The product of \\((z-\\alpha)(z-\\bar\\alpha)\\) is \\(z^2 - 2\\mathrm{Re}(\\alpha)z + |\\alpha|^2\\).",
+          "steps": [
+            {
+              "explain": "Write the roots using de Moivre: \\(\\omega = e^{i\\pi/5}\\). Then \\(\\omega^3 = e^{3i\\pi/5}\\), \\(\\omega^7 = e^{7i\\pi/5}\\), \\(\\omega^9 = e^{9i\\pi/5}\\). Note \\(\\omega^7 = \\bar{\\omega}^3\\) and \\(\\omega^9 = \\bar\\omega\\).",
+              "work": "\\(\\omega^7=\\overline{\\omega^3},\\quad \\omega^9=\\bar\\omega\\)"
+            },
+            {
+              "explain": "Pair the roots into conjugates. \\((z-\\omega)(z-\\bar\\omega)=z^2-2\\cos\\tfrac{\\pi}{5}z+1\\) and \\((z-\\omega^3)(z-\\bar\\omega^3)=z^2-2\\cos\\tfrac{3\\pi}{5}z+1\\).",
+              "work": "\\((z^2-2\\cos\\tfrac{\\pi}{5}z+1)(z^2-2\\cos\\tfrac{3\\pi}{5}z+1)\\)"
+            },
+            {
+              "explain": "Expand. The \\(z^3\\) coefficient is \\(-2\\cos\\tfrac{\\pi}{5}-2\\cos\\tfrac{3\\pi}{5}=-1\\), since \\(\\cos\\tfrac{\\pi}{5}+\\cos\\tfrac{3\\pi}{5}=\\tfrac12\\). The \\(z^2\\) coefficient is \\(2+4\\cos\\tfrac{\\pi}{5}\\cos\\tfrac{3\\pi}{5}=1\\).",
+              "work": "\\(z^4-z^3+z^2-z+1\\)"
+            },
+            {
+              "explain": "Check the constant term: \\(1\\times1=1\\). Options A, B and C have the wrong signs on the z terms.",
+              "work": "Answer: D"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "zeros",
+              "note": "Each root and its conjugate give a quadratic factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q5",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q13b-ii",
+          "type": "review",
+          "stem": "Hence, by solving \\(16x^4-16x^2+1=0\\) using the substitution \\(x=\\cos\\theta\\), prove that \\(\\cos\\frac{\\pi}{12}\\cos\\frac{5\\pi}{12}\\cos\\frac{7\\pi}{12}\\cos\\frac{11\\pi}{12}=\\frac{1}{16}\\).",
+          "answer": "With \\(x=\\cos\\theta\\), \\(16x^4-16x^2+1=2(8\\cos^4\\theta-8\\cos^2\\theta+1)-1=2\\cos4\\theta-1\\). So \\(\\cos4\\theta=\\frac12\\). The four roots are \\(\\cos\\frac{\\pi}{12},\\cos\\frac{5\\pi}{12},\\cos\\frac{7\\pi}{12},\\cos\\frac{11\\pi}{12}\\), whose product is \\(\\frac{1}{16}\\) (product of roots \\(=\\frac{e}{a}=\\frac{1}{16}\\)).",
+          "manual": true,
+          "hint": "Use the identity from part (i) to rewrite \\(16x^4-16x^2+1\\) as \\(2\\cos4\\theta-1\\).",
+          "steps": [
+            {
+              "explain": "Use part (i): \\(8\\cos^4\\theta-8\\cos^2\\theta+1=\\cos4\\theta\\). So \\(16x^4-16x^2+1=2(8x^4-8x^2+1)-1=2\\cos4\\theta-1\\).",
+              "work": "\\(16x^4-16x^2+1=2\\cos4\\theta-1\\)"
+            },
+            {
+              "explain": "Set this to zero: \\(2\\cos4\\theta-1=0\\), so \\(\\cos4\\theta=\\frac12\\). Then \\(4\\theta=\\frac{\\pi}{3},\\frac{5\\pi}{3},\\frac{7\\pi}{3},\\frac{11\\pi}{3}\\) in the first period.",
+              "work": "\\(4\\theta\\in\\left\\{\\tfrac{\\pi}{3},\\tfrac{5\\pi}{3},\\tfrac{7\\pi}{3},\\tfrac{11\\pi}{3}\\right\\}\\)"
+            },
+            {
+              "explain": "Divide by 4 to get \\(\\theta=\\frac{\\pi}{12},\\frac{5\\pi}{12},\\frac{7\\pi}{12},\\frac{11\\pi}{12}\\). These are the four roots \\(x_1,\\dots,x_4\\).",
+              "work": "\\(x_k=\\cos\\tfrac{\\pi}{12},\\cos\\tfrac{5\\pi}{12},\\cos\\tfrac{7\\pi}{12},\\cos\\tfrac{11\\pi}{12}\\)"
+            },
+            {
+              "explain": "The polynomial \\(16x^4-16x^2+1\\) has product of roots \\(\\frac{e}{a}=\\frac{1}{16}\\) (for degree 4, the product is the constant term divided by the leading coefficient).",
+              "work": "\\(x_1x_2x_3x_4=\\tfrac{1}{16}\\)"
+            },
+            {
+              "explain": "So \\(\\cos\\frac{\\pi}{12}\\cos\\frac{5\\pi}{12}\\cos\\frac{7\\pi}{12}\\cos\\frac{11\\pi}{12}=\\frac{1}{16}\\). Proof complete.",
+              "work": "<b>Product = 1/16</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q13(b)(ii)",
+            "sourceMarks": 4,
+            "page": 10
+          }
+        },
+        {
+          "id": "ch13ext2-q14c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve \\(4z^3 - iz^2 - 4z + i = 0\\) over the set of complex numbers.",
+          "options": [
+            "\\(z = 1,\\;-1,\\;-\\tfrac{i}{4}\\)",
+            "\\(z = 1,\\;i,\\;-1\\)",
+            "\\(z = 1,\\;-1,\\;\\tfrac{i}{4}\\)",
+            "\\(z = 1,\\;-1,\\;\\tfrac{1}{4}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply by \\(i\\) to remove the complex coefficients. Then test simple values with the remainder theorem.",
+          "steps": [
+            {
+              "explain": "Multiply every term by \\(i\\): \\(4iz^3+z^2-4iz-1=0\\). Real coefficients are now easier to test.",
+              "work": "\\(4iz^3+z^2-4iz-1=0\\)"
+            },
+            {
+              "explain": "Test \\(z=1\\): \\(4i+1-4i-1=0\\), so \\(z=1\\) is a root. Test \\(z=-1\\): \\(-4i+1+4i-1=0\\), so \\(z=-1\\) is also a root.",
+              "work": "\\(z=1,\\;z=-1\\text{ are roots}\\)"
+            },
+            {
+              "explain": "Test \\(z=-\\frac{1}{4i}=\\frac{i}{4}\\): \\(4i(\\tfrac{i}{4})^3+(\\tfrac{i}{4})^2-4i(\\tfrac{i}{4})-1=0\\). So \\(z=\\frac{i}{4}\\) is the third root.",
+              "work": "\\(z=\\tfrac{i}{4}\\)"
+            },
+            {
+              "explain": "A cubic has three roots, so these are all of them. Check the product: \\(1\\times(-1)\\times\\frac{i}{4}=-\\frac{i}{4}\\), which matches \\(-\\frac{d}{a}\\) for the cubic.",
+              "work": "Answer: \\(z=1,\\;-1,\\;\\tfrac{i}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q14(c)",
+            "sourceMarks": 3,
+            "page": 11
+          }
         }
       ]
     },
@@ -1503,6 +1639,78 @@
               "note": "Use Euler: the left side is 2i sin 2θ. Then 2θ runs over a doubled interval."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q13b-i",
+          "type": "review",
+          "stem": "Let \\(z^4 = (\\cos\\theta+i\\sin\\theta)^4\\). Show that \\(\\cos4\\theta = 8\\cos^4\\theta - 8\\cos^2\\theta + 1\\) using De Moivre's Theorem and the Binomial Expansion Theorem.",
+          "answer": "Expand \\((\\cos\\theta+i\\sin\\theta)^4\\) with the binomial theorem and compare real parts with \\(\\cos4\\theta\\). Then use \\(\\sin^2\\theta=1-\\cos^2\\theta\\).",
+          "manual": true,
+          "hint": "Compare the real parts of the two expansions of \\(z^4\\).",
+          "steps": [
+            {
+              "explain": "De Moivre: \\(z^4 = \\cos4\\theta + i\\sin4\\theta\\).",
+              "work": "\\(z^4=\\cos4\\theta+i\\sin4\\theta\\)"
+            },
+            {
+              "explain": "Binomial expansion: \\(z^4 = \\cos^4\\theta + 4\\cos^3\\theta(i\\sin\\theta)+6\\cos^2\\theta(i\\sin\\theta)^2+\\dots\\). The real part is \\(\\cos^4\\theta-6\\cos^2\\theta\\sin^2\\theta+\\sin^4\\theta\\).",
+              "work": "\\(\\cos^4\\theta-6\\cos^2\\theta\\sin^2\\theta+\\sin^4\\theta\\)"
+            },
+            {
+              "explain": "Replace \\(\\sin^2\\theta = 1-\\cos^2\\theta\\) and expand. You get \\(8\\cos^4\\theta-8\\cos^2\\theta+1\\).",
+              "work": "\\(8\\cos^4\\theta-8\\cos^2\\theta+1\\)"
+            },
+            {
+              "explain": "Equate with the real part of \\(z^4\\), which is \\(\\cos4\\theta\\). Proof complete.",
+              "work": "<b>cos4θ = 8cos⁴θ − 8cos²θ + 1</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q13(b)(i)",
+            "sourceMarks": 2,
+            "page": 10
+          }
+        },
+        {
+          "id": "ch13ext2-q15c-i",
+          "type": "review",
+          "stem": "Show that \\(\\sin\\left(x+\\frac{n\\pi}{4}\\right)+\\cos\\left(x+\\frac{n\\pi}{4}\\right)=\\sqrt2\\sin\\left(x+\\frac{(n+1)\\pi}{4}\\right)\\) for integer \\(n\\).",
+          "answer": "Expand the right-hand side with the compound angle formula for \\(\\sin(A+B)\\) and use \\(\\sin\\frac\\pi4=\\cos\\frac\\pi4=\\frac{1}{\\sqrt2}\\).",
+          "manual": true,
+          "hint": "Expand the right-hand side using \\(\\sin(A+B)\\), then recombine.",
+          "steps": [
+            {
+              "explain": "Expand: \\(\\sqrt2\\sin\\left(x+\\tfrac{n\\pi}{4}+\\tfrac\\pi4\\right)=\\sqrt2\\left[\\sin\\left(x+\\tfrac{n\\pi}4\\right)\\cos\\tfrac\\pi4+\\cos\\left(x+\\tfrac{n\\pi}4\\right)\\sin\\tfrac\\pi4\\right]\\).",
+              "work": "\\(\\sqrt2\\sin(\\cdot+\\tfrac\\pi4)=\\sqrt2[\\sin(\\cdot)\\cos\\tfrac\\pi4+\\cos(\\cdot)\\sin\\tfrac\\pi4]\\)"
+            },
+            {
+              "explain": "Use \\(\\cos\\frac\\pi4=\\sin\\frac\\pi4=\\frac{1}{\\sqrt2}\\): the bracket gives \\(\\frac{1}{\\sqrt2}\\left[\\sin(\\cdot)+\\cos(\\cdot)\\right]\\).",
+              "work": "\\(=\\sin(\\cdot)+\\cos(\\cdot)\\)"
+            },
+            {
+              "explain": "So the right-hand side equals the left-hand side. Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q15(c)(i)",
+            "sourceMarks": 2,
+            "page": 12
+          }
         }
       ]
     },
@@ -2410,6 +2618,97 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q12c-i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given that \\(z_1 = 1+i\\sqrt3\\), find \\(z_2, z_3, z_4\\) and \\(z_5\\) in exponential form (the pentagon is regular and inscribed in the circle with centre the origin).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><line x1=\"15\" y1=\"165\" x2=\"345\" y2=\"165\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"337.9,161.2 345,165 337.9,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"318\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"166.2,29.1 170,22 173.8,29.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"165\" r=\"115\" fill=\"none\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><polygon points=\"227.5,65.4 282.5,188.9 182,279.4 64.9,211.8 93,79.5\" fill=\"none\" fill-opacity=\"1\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"227.5\" cy=\"65.4\" r=\"3\" fill=\"#1e293b\"/><text x=\"237.5\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z1</text><circle cx=\"282.5\" cy=\"188.9\" r=\"3\" fill=\"#1e293b\"/><text x=\"260.5\" y=\"187.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z2</text><circle cx=\"182\" cy=\"279.4\" r=\"3\" fill=\"#1e293b\"/><text x=\"156\" y=\"287.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z3</text><circle cx=\"64.9\" cy=\"211.8\" r=\"3\" fill=\"#1e293b\"/><text x=\"58.9\" y=\"234.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z4</text><circle cx=\"93\" cy=\"79.5\" r=\"3\" fill=\"#1e293b\"/><text x=\"105\" y=\"98.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">z5</text><text x=\"164\" y=\"185.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">O</text><text x=\"345\" y=\"185.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Re(z)</text><text x=\"178\" y=\"30.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Im(z)</text></svg>"
+          },
+          "options": [
+            "\\(z_2=2e^{7\\pi i/15},\\; z_3=2e^{-13\\pi i/15},\\; z_4=2e^{-7\\pi i/15},\\; z_5=2e^{-\\pi i/15}\\)",
+            "\\(z_2=2e^{11\\pi i/15},\\; z_3=2e^{13\\pi i/15},\\; z_4=2e^{7\\pi i/15},\\; z_5=2e^{\\pi i/15}\\)",
+            "\\(z_2=2e^{11\\pi i/15},\\; z_3=2e^{-13\\pi i/15},\\; z_4=2e^{-7\\pi i/15},\\; z_5=2e^{-\\pi i/15}\\)",
+            "\\(z_2=e^{11\\pi i/15},\\; z_3=e^{-13\\pi i/15},\\; z_4=e^{-7\\pi i/15},\\; z_5=e^{-\\pi i/15}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the modulus and argument of \\(z_1\\), then add \\(\\frac{2\\pi}{5}\\) to the argument for each vertex going anticlockwise.",
+          "steps": [
+            {
+              "explain": "Modulus: \\(|z_1|=\\sqrt{1^2+(\\sqrt3)^2}=2\\). Argument: \\(\\tan\\theta=\\sqrt3\\), so \\(\\theta=\\frac{\\pi}{3}\\). So \\(z_1 = 2e^{i\\pi/3}\\).",
+              "work": "\\(z_1=2e^{i\\pi/3}\\)"
+            },
+            {
+              "explain": "The five vertices are equally spaced: the angle between neighbours is \\(\\frac{2\\pi}{5}\\). Going anticlockwise from \\(z_1\\), add \\(\\frac{2\\pi}{5}=\\frac{6\\pi}{15}\\) each time.",
+              "work": "\\(\\tfrac{2\\pi}{5}=\\tfrac{6\\pi}{15}\\)"
+            },
+            {
+              "explain": "Find each argument. \\(z_2: \\frac{\\pi}{3}+\\frac{6\\pi}{15}=\\frac{11\\pi}{15}\\). Then \\(z_3: \\frac{11\\pi}{15}+\\frac{6\\pi}{15}=\\frac{17\\pi}{15}\\), and so on for \\(z_4\\) and \\(z_5\\).",
+              "work": "\\(z_2=2e^{11\\pi i/15}\\)"
+            },
+            {
+              "explain": "Reduce angles bigger than \\(\\pi\\) by subtracting \\(2\\pi\\): \\(\\frac{17\\pi}{15}-2\\pi=-\\frac{13\\pi}{15}\\), \\(\\frac{23\\pi}{15}-2\\pi=-\\frac{7\\pi}{15}\\), \\(\\frac{29\\pi}{15}-2\\pi=-\\frac{\\pi}{15}\\). This matches the diagram.",
+              "work": "Answer: \\(z_2=2e^{11\\pi i/15}\\), \\(z_3=2e^{-13\\pi i/15}\\), \\(z_4=2e^{-7\\pi i/15}\\), \\(z_5=2e^{-\\pi i/15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q12(c)(i)",
+            "sourceMarks": 4,
+            "page": 9
+          }
+        },
+        {
+          "id": "ch13ext2-q12c-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find an equation in the form \\(z^5 = x+iy\\), where \\(z_1,z_2,z_3,z_4,z_5\\) are the roots and \\(x\\) and \\(y\\) are real numbers.",
+          "options": [
+            "\\(z^5=16+16\\sqrt3\\,i\\)",
+            "\\(z^5=-16+16\\sqrt3\\,i\\)",
+            "\\(z^5=16\\sqrt3-16i\\)",
+            "\\(z^5=16-16\\sqrt3\\,i\\)"
+          ],
+          "answer": 3,
+          "hint": "Each root satisfies \\(z^5 = c\\). Use \\(z_1 = 2e^{i\\pi/3}\\) and de Moivre's theorem.",
+          "steps": [
+            {
+              "explain": "Each vertex is a root of \\(z^5 = c\\). Pick \\(z_1 = 2e^{i\\pi/3}\\) and raise it to the fifth power.",
+              "work": "\\(z_1^5=(2e^{i\\pi/3})^5\\)"
+            },
+            {
+              "explain": "Apply the index law: \\((2e^{i\\pi/3})^5=2^5e^{5i\\pi/3}=32e^{5i\\pi/3}\\).",
+              "work": "\\(=32e^{5i\\pi/3}\\)"
+            },
+            {
+              "explain": "Convert back: \\(\\cos\\frac{5\\pi}{3}=\\frac12\\) and \\(\\sin\\frac{5\\pi}{3}=-\\frac{\\sqrt3}{2}\\). So \\(32\\left(\\frac12-\\frac{\\sqrt3}{2}i\\right)=16-16\\sqrt3\\,i\\).",
+              "work": "\\(z^5=16-16\\sqrt3\\,i\\)"
+            },
+            {
+              "explain": "Check with \\(z_2\\): \\(z_2^5=32e^{11\\pi i/3}=32e^{5\\pi i/3}\\), the same value. Common mistakes: the sign of the imaginary part.",
+              "work": "Answer: \\(z^5 = 16-16\\sqrt3\\,i\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q12(c)(ii)",
+            "sourceMarks": 2,
+            "page": 9
+          }
         }
       ]
     },
