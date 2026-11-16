@@ -19209,44 +19209,27 @@
           "id": "y11-5g-q1a-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Let \\(y = x^2 - 6x\\). Sketch the graph of this function showing the intercepts and vertex.\ni) The parabola is shifted right by 2 units. Find its new equation, expanding any brackets.",
+          "stem": "The parabola \\(y = x^2 - 6x\\) is shifted right by \\(2\\) units. Find its new equation, expanding any brackets.",
           "options": [
-            "\\(y = x^2 + 10x - 16\\)",
-            "\\(y = x^2 - 10x + 16\\)",
-            "\\(y = x^2 - 10x + 16 + 1\\)",
-            "\\(y = x^4 - 10x + 16\\)"
+            "\\(y = x^2 - 2x + 16\\)",
+            "\\(y = x^2 - 10x + 13\\)",
+            "\\(y = (x - 2)^2 - 6x\\)",
+            "\\(y = x^2 - 10x + 16\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = x^2 - 10x + 16\\).",
+          "answer": 3,
+          "solution": "Replacing \\(x\\) with \\(x - 2\\) gives \\(y = (x - 2)^2 - 6(x - 2) = x^2 - 4x + 4 - 6x + 12 = x^2 - 10x + 16\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (x - 2)^2 - 6(x - 2)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal translation of \\(2\\) units to the right replaces \\(x\\) with \\(x - 2\\) in \\(y = x^2 - 6x\\).",
+              "work": "y = (x - 2)^2 - 6(x - 2)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(y = x^2 - 4x + 4 - 6x + 12\\)"
+              "explain": "Expand the perfect square and distribute \\(-6\\).",
+              "work": "y = x^2 - 4x + 4 - 6x + 12"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 - 10x + 16\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 - 10x + 16. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 - 10x + 16\\)"
+              "explain": "Combine like terms.",
+              "work": "y = x^2 - 10x + 16"
             }
           ],
           "timeLimit": 60,
@@ -19256,44 +19239,23 @@
           "id": "y11-5g-q1a-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Let \\(y = x^2 - 6x\\). Sketch the graph of this function showing the intercepts and vertex.\nii) The shifted parabola in part i is then shifted up 3 units. Find its final equation.",
+          "stem": "The parabola \\(y = x^2 - 6x\\) is first shifted right by \\(2\\) units to give \\(y = x^2 - 10x + 16\\), and is then shifted up by \\(3\\) units. Find its final equation.",
           "options": [
-            "\\(y = x^2 + 10x - 19\\)",
             "\\(y = x^2 - 10x + 19\\)",
-            "\\(y = x^2 - 10x + 19 + 1\\)",
-            "\\(y = x^4 - 10x + 19\\)"
+            "\\(y = x^2 - 10x + 13\\)",
+            "\\(y = x^2 - 6x + 19\\)",
+            "\\(y = x^2 - 2x + 19\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = x^2 - 10x + 19\\).",
+          "answer": 0,
+          "solution": "Shifting \\(y = x^2 - 10x + 16\\) up by \\(3\\) units adds \\(3\\) to the right-hand side, giving \\(y = x^2 - 10x + 19\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (x^2 - 10x + 16) + 3\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A vertical translation of \\(3\\) units up adds \\(3\\) to the equation \\(y = x^2 - 10x + 16\\).",
+              "work": "y = (x^2 - 10x + 16) + 3"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(y = x^2 - 10x + 19\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 - 10x + 19\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 - 10x + 19. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 - 10x + 19\\)"
+              "explain": "Simplify the constant term.",
+              "work": "y = x^2 - 10x + 19"
             }
           ],
           "timeLimit": 60,
@@ -19303,57 +19265,23 @@
           "id": "y11-5g-q1b-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Let \\(y = x^2 - 6x\\). Sketch the graph of this function showing the intercepts and vertex.\nb) i) The original parabola \\(y = x^2 - 6x\\) is translated up 3 units. Find its equation.",
-          "figure": {
-            "jsxGraph": {
-              "width": 360,
-              "height": 260,
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-            }
-          },
+          "stem": "The parabola \\(y = x^2 - 6x\\) is translated up by \\(3\\) units. Find its equation.",
           "options": [
-            "\\(y = x^2 + 6x - 3\\)",
+            "\\(y = x^2 - 6x - 3\\)",
             "\\(y = x^2 - 6x + 3\\)",
-            "\\(y = x^2 - 6x + 3 + 1\\)",
-            "\\(y = x^4 - 6x + 4\\)"
+            "\\(y = x^2 - 3x + 3\\)",
+            "\\(y = (x - 3)^2 - 6(x - 3)\\)"
           ],
           "answer": 1,
-          "solution": "The correct answer is \\(y = x^2 - 6x + 3\\).",
+          "solution": "Translating \\(y = x^2 - 6x\\) up by \\(3\\) units adds \\(3\\) to the function, giving \\(y = x^2 - 6x + 3\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = x^2 - 6x + 3\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A vertical translation of \\(3\\) units up replaces \\(y = f(x)\\) with \\(y = f(x) + 3\\).",
+              "work": "y = (x^2 - 6x) + 3"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 - 6x + 3\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 - 6x + 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 - 6x + 3\\)"
+              "explain": "Write the resulting equation.",
+              "work": "y = x^2 - 6x + 3"
             }
           ],
           "timeLimit": 60,
@@ -19363,44 +19291,27 @@
           "id": "y11-5g-q1b-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Let \\(y = x^2 - 6x\\). Sketch the graph of this function showing the intercepts and vertex.\nii) The translated parabola in part i is then translated 2 units right. Find its equation, expanding any brackets.",
+          "stem": "The parabola \\(y = x^2 - 6x\\) is first translated up by \\(3\\) units to give \\(y = x^2 - 6x + 3\\), and is then translated \\(2\\) units to the right. Find its final equation, expanding any brackets.",
           "options": [
-            "\\(y = x^2 + 10x - 19\\)",
+            "\\(y = x^2 - 10x + 16\\)",
+            "\\(y = x^2 - 6x + 19\\)",
             "\\(y = x^2 - 10x + 19\\)",
-            "\\(y = x^2 - 10x + 19 + 1\\)",
-            "\\(y = x^4 - 10x + 19\\)"
+            "\\(y = x^2 - 2x + 19\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = x^2 - 10x + 19\\).",
+          "answer": 2,
+          "solution": "Replacing \\(x\\) with \\(x - 2\\) in \\(y = x^2 - 6x + 3\\) gives \\(y = (x - 2)^2 - 6(x - 2) + 3 = x^2 - 4x + 4 - 6x + 12 + 3 = x^2 - 10x + 19\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (x - 2)^2 - 6(x - 2) + 3\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal translation of \\(2\\) units right replaces \\(x\\) with \\(x - 2\\) in \\(y = x^2 - 6x + 3\\).",
+              "work": "y = (x - 2)^2 - 6(x - 2) + 3"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(y = (x^2 - 4x + 4) - (6x - 12) + 3 = x^2 - 10x + 19\\)"
+              "explain": "Expand the brackets.",
+              "work": "y = x^2 - 4x + 4 - 6x + 12 + 3"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 - 10x + 19\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 - 10x + 19. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 - 10x + 19\\)"
+              "explain": "Combine like terms.",
+              "work": "y = x^2 - 10x + 19"
             }
           ],
           "timeLimit": 60,
@@ -19440,44 +19351,23 @@
           "id": "y11-5g-q2a-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 4x\\). We will apply dilations in different orders.\na) i) The parabola is dilated by a factor of 3 horizontally. Find its equation.",
+          "stem": "The parabola \\(y = x^2 - 4x\\) is dilated horizontally by a factor of \\(3\\). Find its equation.",
           "options": [
-            "\\(y = (x/3)^2 + 4(x/3)\\)",
-            "\\(y = (x/3)^2 - 4(x/3)\\)",
-            "\\(y = (x/3)^2 - 4(x/3) + 1\\)",
-            "\\(y = (x/4)^4 - 4(x/4)\\)"
+            "\\(y = (3x)^2 - 4(3x)\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\)",
+            "\\(y = 3x^2 - 12x\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4x\\)"
           ],
           "answer": 1,
-          "solution": "The correct answer is \\(y = (x/3)^2 - 4(x/3)\\).",
+          "solution": "A horizontal dilation by a factor of \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\), giving \\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\left(\\frac{x}{3}\\right)^2 - 4\\left(\\frac{x}{3}\\right)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal dilation by factor \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\) in \\(y = x^2 - 4x\\).",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = (x/3)^2 - 4(x/3)\\)"
-            },
-            {
-              "explain": "Final answer: y = (x/3)^2 - 4(x/3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = (x/3)^2 - 4(x/3)\\)"
+              "explain": "Match the resulting equation to the options.",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)"
             }
           ],
           "timeLimit": 60,
@@ -19487,44 +19377,23 @@
           "id": "y11-5g-q2a-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 4x\\). We will apply dilations in different orders.\nii) The parabola in part i is then dilated by a factor of 2 vertically. Find its equation.",
+          "stem": "The parabola \\(y = x^2 - 4x\\) is first dilated horizontally by a factor of \\(3\\) to give \\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\), and is then dilated vertically by a factor of \\(2\\). Find its equation.",
           "options": [
-            "\\(y = 2*(x/3)^2 + 8*(x/3)\\)",
-            "\\(y = 2*(x/3)^2 - 8*(x/3)\\)",
-            "\\(y = 2*(x/3)^2 - 8*(x/3) + 1\\)",
-            "\\(y = 4*(x/4)^4 - 8*(x/4)\\)"
+            "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\)",
+            "\\(y = 2x^2 - 8x\\)",
+            "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = 2*(x/3)^2 - 8*(x/3)\\).",
+          "answer": 0,
+          "solution": "A vertical dilation by a factor of \\(2\\) multiplies the entire right-hand side by \\(2\\), giving \\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = 2\\left[\\left(\\frac{x}{3}\\right)^2 - 4\\left(\\frac{x}{3}\\right)\\right] = 2\\left(\\frac{x}{3}\\right)^2 - 8\\left(\\frac{x}{3}\\right)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A vertical dilation by factor \\(2\\) multiplies the entire right-hand side of \\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\) by \\(2\\).",
+              "work": "y = 2\\left[\\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\right]"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = 2*(x/3)^2 - 8*(x/3)\\)"
-            },
-            {
-              "explain": "Final answer: y = 2*(x/3)^2 - 8*(x/3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = 2*(x/3)^2 - 8*(x/3)\\)"
+              "explain": "Distribute the factor of \\(2\\).",
+              "work": "y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)"
             }
           ],
           "timeLimit": 60,
@@ -19534,57 +19403,23 @@
           "id": "y11-5g-q2b-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 4x\\). We will apply dilations in different orders.\nb) i) The original parabola \\(y = x^2 - 4x\\) is stretched by a factor of 2 vertically. Find its equation.",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
+          "stem": "The parabola \\(y = x^2 - 4x\\) is stretched vertically by a factor of \\(2\\). Find its equation.",
           "options": [
-            "\\(y = 2*x^2 + 8*x\\)",
-            "\\(y = 2*x^2 - 8*x\\)",
-            "\\(y = 2*x^2 - 8*x + 1\\)",
-            "\\(y = 4*x^4 - 8*x\\)"
+            "\\(y = x^2 - 4x + 2\\)",
+            "\\(y = (2x)^2 - 4(2x)\\)",
+            "\\(y = 2x^2 - 8x\\)",
+            "\\(y = \\dfrac{1}{2}x^2 - 2x\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = 2*x^2 - 8*x\\).",
+          "answer": 2,
+          "solution": "Stretching vertically by a factor of \\(2\\) multiplies the function by \\(2\\), giving \\(y = 2(x^2 - 4x) = 2x^2 - 8x\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = 2(x^2 - 4x) = 2x^2 - 8x\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A vertical stretch by factor \\(2\\) multiplies every \\(y\\)-value of \\(y = x^2 - 4x\\) by \\(2\\).",
+              "work": "y = 2(x^2 - 4x)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = 2*x^2 - 8*x\\)"
-            },
-            {
-              "explain": "Final answer: y = 2*x^2 - 8*x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = 2*x^2 - 8*x\\)"
+              "explain": "Expand the brackets.",
+              "work": "y = 2x^2 - 8x"
             }
           ],
           "timeLimit": 60,
@@ -19594,44 +19429,23 @@
           "id": "y11-5g-q2b-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 4x\\). We will apply dilations in different orders.\nii) The parabola in part i is then stretched by a factor of 3 horizontally. Find its equation.",
+          "stem": "The parabola \\(y = x^2 - 4x\\) is first stretched vertically by a factor of \\(2\\) to give \\(y = 2x^2 - 8x\\), and is then stretched horizontally by a factor of \\(3\\). Find its equation.",
           "options": [
-            "\\(y = 2*(x/3)^2 + 8*(x/3)\\)",
-            "\\(y = 2*(x/3)^2 - 8*(x/3)\\)",
-            "\\(y = 2*(x/3)^2 - 8*(x/3) + 1\\)",
-            "\\(y = 4*(x/4)^4 - 8*(x/4)\\)"
+            "\\(y = 2x^2 - 8x\\)",
+            "\\(y = 2(3x)^2 - 8(3x)\\)",
+            "\\(y = 6x^2 - 24x\\)",
+            "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = 2*(x/3)^2 - 8*(x/3)\\).",
+          "answer": 3,
+          "solution": "A horizontal stretch by a factor of \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\) in \\(y = 2x^2 - 8x\\), giving \\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = 2\\left(\\frac{x}{3}\\right)^2 - 8\\left(\\frac{x}{3}\\right)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal stretch by factor \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\) in \\(y = 2x^2 - 8x\\).",
+              "work": "y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = 2*(x/3)^2 - 8*(x/3)\\)"
-            },
-            {
-              "explain": "Final answer: y = 2*(x/3)^2 - 8*(x/3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = 2*(x/3)^2 - 8*(x/3)\\)"
+              "explain": "Match the resulting equation to the options.",
+              "work": "y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)"
             }
           ],
           "timeLimit": 60,
@@ -19639,43 +19453,31 @@
         },
         {
           "id": "y11-5g-q2c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 4x\\). We will apply dilations in different orders.\nc) Parts a and b used the same dilations, a factor of 3 horizontally and a factor of 2 vertically, but in a different order. Do these transformations commute?",
-          "answer": "0",
-          "solution": "0",
+          "stem": "Consider the parabola \\(y = x^2 - 4x\\) under two dilations: a horizontal dilation by a factor of \\(3\\) and a vertical dilation by a factor of \\(2\\), applied in either order. Do these two dilations commute?",
+          "options": [
+            "Yes, they commute (both orders give the same final equation).",
+            "No, they do not commute.",
+            "Only for linear functions.",
+            "Only when the vertex is at the origin."
+          ],
+          "answer": 0,
+          "solution": "Dilating horizontally by \\(3\\) then vertically by \\(2\\) gives \\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)\\), and dilating vertically by \\(2\\) then horizontally by \\(3\\) gives the exact same equation. Therefore, horizontal and vertical dilations commute.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "y = x^2 - 4x. We will apply dilations in different orders.",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "Dilate \\(y = x^2 - 4x\\) horizontally by \\(3\\) first, then vertically by \\(2\\).",
+              "work": "y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Reverse the order: dilate vertically by \\(2\\) first to get \\(y = 2x^2 - 8x\\), then horizontally by \\(3\\).",
+              "work": "y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\left(\\dfrac{x}{3}\\right)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0\\)"
-            },
-            {
-              "explain": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0\\)"
+              "explain": "Compare the resulting equations from both orders.",
+              "work": "\\text{Both orders produce the same equation, so the dilations commute.}"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 3
         },
@@ -19683,44 +19485,23 @@
           "id": "y11-5g-q3a-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 + 4x\\). We will examine combining a horizontal dilation and a vertical translation.\na) i) The parabola is dilated by a factor of 3 horizontally. Find its equation.",
+          "stem": "The parabola \\(y = x^2 + 4x\\) is dilated horizontally by a factor of \\(3\\). Find its equation.",
           "options": [
-            "\\(y = (x/3)^2 + 4(x/3)\\)",
-            "\\(y = (x/3)^2 + 4(x/3) + 1\\)",
-            "\\(y = (x/3)^2 - 4(x/3)\\)",
-            "\\(y = (x/4)^4 + 4(x/4)\\)"
+            "\\(y = 3x^2 + 12x\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)\\)",
+            "\\(y = (3x)^2 + 4(3x)\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4x\\)"
           ],
-          "answer": 0,
-          "solution": "The correct answer is \\(y = (x/3)^2 + 4(x/3)\\).",
+          "answer": 1,
+          "solution": "A horizontal dilation by a factor of \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\), giving \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\left(\\frac{x}{3}\\right)^2 + 4\\left(\\frac{x}{3}\\right)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal dilation by factor \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\) in \\(y = x^2 + 4x\\).",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = (x/3)^2 + 4(x/3)\\)"
-            },
-            {
-              "explain": "Final answer: y = (x/3)^2 + 4(x/3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = (x/3)^2 + 4(x/3)\\)"
+              "explain": "Match the resulting equation to the options.",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)"
             }
           ],
           "timeLimit": 60,
@@ -19730,44 +19511,23 @@
           "id": "y11-5g-q3a-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 + 4x\\). We will examine combining a horizontal dilation and a vertical translation.\nii) The parabola in part i is then translated 2 units up. Find its equation.",
+          "stem": "The parabola \\(y = x^2 + 4x\\) is first dilated horizontally by a factor of \\(3\\) to give \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)\\), and is then translated up by \\(2\\) units. Find its equation.",
           "options": [
-            "\\(y = (x/3)^2 + 4(x/3) + 2\\)",
-            "\\(y = (x/3)^2 + 4(x/3) + 2 + 1\\)",
-            "\\(y = (x/3)^2 - 4(x/3) - 2\\)",
-            "\\(y = (x/4)^4 + 4(x/4) + 4\\)"
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)\\)",
+            "\\(y = x^2 + 4x + 2\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) - 2\\)"
           ],
-          "answer": 0,
-          "solution": "The correct answer is \\(y = (x/3)^2 + 4(x/3) + 2\\).",
+          "answer": 2,
+          "solution": "Translating \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right)\\) up by \\(2\\) units adds \\(2\\) to the right-hand side, giving \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\left(\\frac{x}{3}\\right)^2 + 4\\left(\\frac{x}{3}\\right) + 2\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A vertical translation of \\(2\\) units up adds \\(2\\) outside the expression.",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = (x/3)^2 + 4(x/3) + 2\\)"
-            },
-            {
-              "explain": "Final answer: y = (x/3)^2 + 4(x/3) + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = (x/3)^2 + 4(x/3) + 2\\)"
+              "explain": "Match the resulting equation to the options.",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2"
             }
           ],
           "timeLimit": 60,
@@ -19777,44 +19537,23 @@
           "id": "y11-5g-q3b-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 + 4x\\). We will examine combining a horizontal dilation and a vertical translation.\nb) i) The original parabola is shifted 2 units up. Find its equation.",
+          "stem": "The parabola \\(y = x^2 + 4x\\) is translated up by \\(2\\) units. Find its equation.",
           "options": [
             "\\(y = x^2 + 4x + 2\\)",
-            "\\(y = x^2 + 4x + 2 + 1\\)",
-            "\\(y = x^2 - 4x - 2\\)",
-            "\\(y = x^4 + 4x + 4\\)"
+            "\\(y = (x + 2)^2 + 4(x + 2)\\)",
+            "\\(y = x^2 + 4x - 2\\)",
+            "\\(y = 2x^2 + 8x\\)"
           ],
           "answer": 0,
-          "solution": "The correct answer is \\(y = x^2 + 4x + 2\\).",
+          "solution": "Translating \\(y = x^2 + 4x\\) up by \\(2\\) units adds \\(2\\) to the right-hand side, giving \\(y = x^2 + 4x + 2\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = x^2 + 4x + 2\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A vertical translation of \\(2\\) units up adds \\(2\\) to \\(y = x^2 + 4x\\).",
+              "work": "y = x^2 + 4x + 2"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 + 4x + 2\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 + 4x + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 + 4x + 2\\)"
+              "explain": "Write the resulting equation.",
+              "work": "y = x^2 + 4x + 2"
             }
           ],
           "timeLimit": 60,
@@ -19824,44 +19563,23 @@
           "id": "y11-5g-q3b-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 + 4x\\). We will examine combining a horizontal dilation and a vertical translation.\nii) The parabola in part i is then dilated by a factor of 3 horizontally. Find its equation.",
+          "stem": "The parabola \\(y = x^2 + 4x\\) is first translated up by \\(2\\) units to give \\(y = x^2 + 4x + 2\\), and is then dilated horizontally by a factor of \\(3\\). Find its equation.",
           "options": [
-            "\\(y = (x/3)^2 + 4(x/3) + 2\\)",
-            "\\(y = (x/3)^2 + 4(x/3) + 2 + 1\\)",
-            "\\(y = (x/3)^2 - 4(x/3) - 2\\)",
-            "\\(y = (x/4)^4 + 4(x/4) + 4\\)"
+            "\\(y = 3(x^2 + 4x + 2)\\)",
+            "\\(y = (3x)^2 + 4(3x) + 2\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 6\\)",
+            "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2\\)"
           ],
-          "answer": 0,
-          "solution": "The correct answer is \\(y = (x/3)^2 + 4(x/3) + 2\\).",
+          "answer": 3,
+          "solution": "A horizontal dilation by a factor of \\(3\\) replaces \\(x\\) with \\(\\dfrac{x}{3}\\) in \\(y = x^2 + 4x + 2\\), leaving the constant \\(+2\\) unchanged and giving \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\left(\\frac{x}{3}\\right)^2 + 4\\left(\\frac{x}{3}\\right) + 2\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal dilation by factor \\(3\\) replaces every \\(x\\) with \\(\\dfrac{x}{3}\\) in \\(y = x^2 + 4x + 2\\).",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = (x/3)^2 + 4(x/3) + 2\\)"
-            },
-            {
-              "explain": "Final answer: y = (x/3)^2 + 4(x/3) + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = (x/3)^2 + 4(x/3) + 2\\)"
+              "explain": "Match the resulting equation to the options.",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2"
             }
           ],
           "timeLimit": 60,
@@ -19869,43 +19587,31 @@
         },
         {
           "id": "y11-5g-q3c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 + 4x\\). We will examine combining a horizontal dilation and a vertical translation.\nc) Do these transformations (horizontal dilation and vertical translation) commute?",
-          "answer": "0",
-          "solution": "0",
+          "stem": "Consider the parabola \\(y = x^2 + 4x\\) under two transformations: a horizontal dilation by a factor of \\(3\\) and a vertical translation of \\(2\\) units up, applied in either order. Do these two transformations commute?",
+          "options": [
+            "No, they do not commute.",
+            "Yes, they commute (both orders give the same final equation).",
+            "Only for even functions.",
+            "Only when the vertical translation is zero."
+          ],
+          "answer": 1,
+          "solution": "Both orders produce \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2\\) because horizontal dilation acts only on \\(x\\) while vertical translation acts only on \\(y\\). Thus, they commute.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "y = x^2 + 4x. We will examine combining a horizontal dilation and a vertical translation.",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "Dilate \\(y = x^2 + 4x\\) horizontally by \\(3\\) first, then translate up by \\(2\\) units.",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Reverse the order: translate up by \\(2\\) units first to get \\(y = x^2 + 4x + 2\\), then dilate horizontally by \\(3\\).",
+              "work": "y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\left(\\dfrac{x}{3}\\right) + 2"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0\\)"
-            },
-            {
-              "explain": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0\\)"
+              "explain": "Compare the resulting equations from both orders.",
+              "work": "\\text{Both orders produce the same equation, so the transformations commute.}"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 3
         },
@@ -19913,44 +19619,27 @@
           "id": "y11-5g-q4a-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 8x\\). We will analyze a shift right and a reflection in the y-axis.\na) i) The parabola is shifted right by 3 units. Find its equation, expanding any brackets.",
+          "stem": "The parabola \\(y = x^2 - 8x\\) is shifted right by \\(3\\) units. Find its equation, expanding any brackets.",
           "options": [
-            "\\(y = x^2 + 14x - 33\\)",
+            "\\(y = x^2 - 2x - 15\\)",
+            "\\(y = x^2 + 14x + 33\\)",
             "\\(y = x^2 - 14x + 33\\)",
-            "\\(y = x^2 - 14x + 33 + 1\\)",
-            "\\(y = x^4 - 14x + 44\\)"
+            "\\(y = x^2 - 8x + 3\\)"
           ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y = x^2 - 14x + 33\\).",
+          "answer": 2,
+          "solution": "Replacing \\(x\\) with \\(x - 3\\) in \\(y = x^2 - 8x\\) gives \\(y = (x - 3)^2 - 8(x - 3) = x^2 - 6x + 9 - 8x + 24 = x^2 - 14x + 33\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (x - 3)^2 - 8(x - 3)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal shift of \\(3\\) units to the right replaces \\(x\\) with \\(x - 3\\) in \\(y = x^2 - 8x\\).",
+              "work": "y = (x - 3)^2 - 8(x - 3)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(y = x^2 - 14x + 33\\)"
+              "explain": "Expand the brackets.",
+              "work": "y = x^2 - 6x + 9 - 8x + 24"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 - 14x + 33\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 - 14x + 33. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 - 14x + 33\\)"
+              "explain": "Collect like terms.",
+              "work": "y = x^2 - 14x + 33"
             }
           ],
           "timeLimit": 60,
@@ -19960,44 +19649,23 @@
           "id": "y11-5g-q4a-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 8x\\). We will analyze a shift right and a reflection in the y-axis.\nii) The shifted parabola is then reflected in the y-axis. Find its equation.",
+          "stem": "The parabola \\(y = x^2 - 8x\\) is first shifted right by \\(3\\) units to give \\(y = x^2 - 14x + 33\\), and is then reflected in the \\(y\\)-axis. Find its equation.",
           "options": [
-            "\\(y = x^2 + 14x + 33\\)",
-            "\\(y = x^2 + 14x + 33 + 1\\)",
+            "\\(y = -x^2 + 14x - 33\\)",
             "\\(y = x^2 - 14x - 33\\)",
-            "\\(y = x^4 + 14x + 44\\)"
+            "\\(y = x^2 + 2x - 15\\)",
+            "\\(y = x^2 + 14x + 33\\)"
           ],
-          "answer": 0,
-          "solution": "The correct answer is \\(y = x^2 + 14x + 33\\).",
+          "answer": 3,
+          "solution": "Reflecting \\(y = x^2 - 14x + 33\\) in the \\(y\\)-axis replaces \\(x\\) with \\(-x\\), giving \\(y = (-x)^2 - 14(-x) + 33 = x^2 + 14x + 33\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (-x)^2 - 14(-x) + 33 = x^2 + 14x + 33\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A reflection in the \\(y\\)-axis replaces \\(x\\) with \\(-x\\) in \\(y = x^2 - 14x + 33\\).",
+              "work": "y = (-x)^2 - 14(-x) + 33"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 + 14x + 33\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 + 14x + 33. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 + 14x + 33\\)"
+              "explain": "Simplify the signs.",
+              "work": "y = x^2 + 14x + 33"
             }
           ],
           "timeLimit": 60,
@@ -20007,44 +19675,23 @@
           "id": "y11-5g-q4b-i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 8x\\). We will analyze a shift right and a reflection in the y-axis.\nb) i) The original parabola is reflected in the y-axis. Find its equation.",
+          "stem": "The parabola \\(y = x^2 - 8x\\) is reflected in the \\(y\\)-axis. Find its equation.",
           "options": [
             "\\(y = x^2 + 8x\\)",
-            "\\(y = x^2 + 8x + 1\\)",
-            "\\(y = x^2 - 8x\\)",
-            "\\(y = x^4 + 8x\\)"
+            "\\(y = -x^2 + 8x\\)",
+            "\\(y = -x^2 - 8x\\)",
+            "\\(y = x^2 - 8x\\)"
           ],
           "answer": 0,
-          "solution": "The correct answer is \\(y = x^2 + 8x\\).",
+          "solution": "Reflecting \\(y = x^2 - 8x\\) in the \\(y\\)-axis replaces \\(x\\) with \\(-x\\), giving \\(y = (-x)^2 - 8(-x) = x^2 + 8x\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (-x)^2 - 8(-x) = x^2 + 8x\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A reflection in the \\(y\\)-axis replaces \\(x\\) with \\(-x\\) in \\(y = x^2 - 8x\\).",
+              "work": "y = (-x)^2 - 8(-x)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 + 8x\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 + 8x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 + 8x\\)"
+              "explain": "Simplify the expression.",
+              "work": "y = x^2 + 8x"
             }
           ],
           "timeLimit": 60,
@@ -20054,44 +19701,27 @@
           "id": "y11-5g-q4b-ii",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 8x\\). We will analyze a shift right and a reflection in the y-axis.\nii) The reflected parabola is then shifted 3 units right. Find its equation, expanding any brackets.",
+          "stem": "The parabola \\(y = x^2 - 8x\\) is first reflected in the \\(y\\)-axis to give \\(y = x^2 + 8x\\), and is then shifted \\(3\\) units to the right. Find its equation, expanding any brackets.",
           "options": [
+            "\\(y = x^2 + 14x + 33\\)",
             "\\(y = x^2 + 2x - 15\\)",
-            "\\(y = x^2 + 2x - 15 + 1\\)",
-            "\\(y = x^2 - 2x + 15\\)",
-            "\\(y = x^4 + 4x - 15\\)"
+            "\\(y = x^2 - 2x - 15\\)",
+            "\\(y = x^2 + 8x - 3\\)"
           ],
-          "answer": 0,
-          "solution": "The correct answer is \\(y = x^2 + 2x - 15\\).",
+          "answer": 1,
+          "solution": "Replacing \\(x\\) with \\(x - 3\\) in \\(y = x^2 + 8x\\) gives \\(y = (x - 3)^2 + 8(x - 3) = x^2 - 6x + 9 + 8x - 24 = x^2 + 2x - 15\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (x - 3)^2 + 8(x - 3)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "A horizontal shift of \\(3\\) units right replaces \\(x\\) with \\(x - 3\\) in \\(y = x^2 + 8x\\).",
+              "work": "y = (x - 3)^2 + 8(x - 3)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(y = x^2 + 2x - 15\\)"
+              "explain": "Expand the brackets.",
+              "work": "y = x^2 - 6x + 9 + 8x - 24"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x^2 + 2x - 15\\)"
-            },
-            {
-              "explain": "Final answer: y = x^2 + 2x - 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x^2 + 2x - 15\\)"
+              "explain": "Collect like terms.",
+              "work": "y = x^2 + 2x - 15"
             }
           ],
           "timeLimit": 60,
@@ -20101,68 +19731,27 @@
           "id": "y11-5g-q4c",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 8x\\). We will analyze a shift right and a reflection in the y-axis.\nDo these transformations commute?",
+          "stem": "Consider the parabola \\(y = x^2 - 8x\\) under two transformations: a horizontal shift of \\(3\\) units right and a reflection in the \\(y\\)-axis, applied in either order. Do these two transformations commute?",
           "options": [
-            "Yes, the order of transformations does not matter.",
-            "No, the order of transformations changes the final result."
+            "Yes, they commute",
+            "Only for linear functions",
+            "No, they do not commute",
+            "Only for even functions"
           ],
-          "answer": 1,
-          "solution": "Since \\(f(-x - a) \\neq f(-x + a)\\), the transformations do not commute.",
+          "answer": 2,
+          "solution": "Shifting right by \\(3\\) units and then reflecting in the \\(y\\)-axis gives \\(y = x^2 + 14x + 33\\), whereas reflecting in the \\(y\\)-axis first and then shifting right by \\(3\\) units gives \\(y = x^2 + 2x - 15\\). Since the two results differ, these transformations do not commute.",
           "steps": [
             {
-              "explain": "Let the original function be \\(f(x) = x^2 - 8x\\). A shift to the right by \\(a\\) units (where \\(a > 0\\)) means replacing \\(x\\) with \\((x - a)\\). A reflection in the y-axis means replacing \\(x\\) with \\(-x\\). We need to check if applying these in different orders gives the same final function.",
-              "work": "Order 1 (Shift then Reflect) vs Order 2 (Reflect then Shift)"
+              "explain": "Order 1 (shift right \\(3\\), then reflect in the \\(y\\)-axis): \\(y = x^2 - 8x \\to y = (x - 3)^2 - 8(x - 3) = x^2 - 14x + 33 \\to y = (-x)^2 - 14(-x) + 33\\).",
+              "work": "y = x^2 + 14x + 33"
             },
             {
-              "explain": "Order 1: Shift right by \\(a\\), then reflect in the y-axis.\nFirst, shift right by \\(a\\): \\(y = f(x - a)\\).\nNext, reflect in the y-axis by replacing \\(x\\) with \\(-x\\): \\(y = f(-x - a)\\).\nThe graph demonstrates this with a shift of \\(a=2\\) units.",
-              "work": "\\(f(-x - a) = (-x - a)^2 - 8(-x - a) = (x+a)^2 + 8(x+a)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 400,
-                  "height": 300,
-                  "boundingbox": [
-                    -12,
-                    10,
-                    12,
-                    -20
-                  ],
-                  "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nboard.create('functiongraph', [function(x){ return x*x - 8*x; }, -12, 12], {strokeColor:'#94a3b8', strokeWidth:2, dash:2});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2) - 8*(x-2); }, -12, 12], {strokeColor:'#cbd5e1', strokeWidth:2, dash:3});\nboard.create('functiongraph', [function(x){ return x*x + 12*x + 20; }, -12, 12], {strokeColor:'#dc2626', strokeWidth:2.5});\nboard.create('text', [3, -12, 'Original'], {color:'#94a3b8', fontSize: 14});\nboard.create('text', [-11, -10, 'Shift then reflect'], {color:'#dc2626', fontSize: 14});\nboard.unsuspendUpdate();\n"
-                }
-              }
+              "explain": "Order 2 (reflect in the \\(y\\)-axis, then shift right \\(3\\)): \\(y = x^2 - 8x \\to y = x^2 + 8x \\to y = (x - 3)^2 + 8(x - 3)\\).",
+              "work": "y = x^2 + 2x - 15"
             },
             {
-              "explain": "Order 2: Reflect in the y-axis, then shift right by \\(a\\).\nFirst, reflect in the y-axis: \\(y = f(-x)\\).\nNext, shift right by \\(a\\) by replacing \\(x\\) with \\((x - a)\\): \\(y = f(-(x - a)) = f(-x + a)\\).\nThe graph demonstrates this with a shift of \\(a=2\\) units.",
-              "work": "\\(f(-x + a) = (-x + a)^2 - 8(-x + a) = (x-a)^2 + 8(x-a)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 400,
-                  "height": 300,
-                  "boundingbox": [
-                    -12,
-                    10,
-                    12,
-                    -20
-                  ],
-                  "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nboard.create('functiongraph', [function(x){ return x*x - 8*x; }, -12, 12], {strokeColor:'#94a3b8', strokeWidth:2, dash:2});\nboard.create('functiongraph', [function(x){ return x*x + 8*x; }, -12, 12], {strokeColor:'#cbd5e1', strokeWidth:2, dash:3});\nboard.create('functiongraph', [function(x){ return x*x + 4*x - 12; }, -12, 12], {strokeColor:'#16a34a', strokeWidth:2.5});\nboard.create('text', [3, -12, 'Original'], {color:'#94a3b8', fontSize: 14});\nboard.create('text', [-11, -10, 'Reflect then shift'], {color:'#16a34a', fontSize: 14});\nboard.unsuspendUpdate();\n"
-                }
-              }
-            },
-            {
-              "explain": "Compare the two results. Since \\(f(-x - a) \\neq f(-x + a)\\), the final functions are different. Therefore, a horizontal shift and a reflection in the y-axis do **not** commute.",
-              "work": "\\((x+a)^2 + 8(x+a) \\neq (x-a)^2 + 8(x-a)\\) (for \\(a \\neq 0\\))",
-              "figure": {
-                "jsxGraph": {
-                  "width": 400,
-                  "height": 300,
-                  "boundingbox": [
-                    -12,
-                    10,
-                    12,
-                    -20
-                  ],
-                  "script": "\nboard.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]]);\nboard.create('axis', [[0,0], [0,1]]);\nboard.create('functiongraph', [function(x){ return x*x - 8*x; }, -12, 12], {strokeColor:'#94a3b8', strokeWidth:2, dash:2});\nboard.create('functiongraph', [function(x){ return x*x + 12*x + 20; }, -12, 12], {strokeColor:'#dc2626', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return x*x + 4*x - 12; }, -12, 12], {strokeColor:'#16a34a', strokeWidth:2.5});\nboard.create('text', [-11, -5, 'Order 1 (Red)'], {color:'#dc2626', fontSize: 14});\nboard.create('text', [-3, -18, 'Order 2 (Green)'], {color:'#16a34a', fontSize: 14});\nboard.unsuspendUpdate();\n"
-                }
-              }
+              "explain": "Compare the resulting equations.",
+              "work": "x^2 + 14x + 33 \\neq x^2 + 2x - 15 \\implies \\text{No, they do not commute.}"
             }
           ],
           "timeLimit": 60,
@@ -20636,101 +20225,80 @@
         },
         {
           "id": "y11-5g-q7a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus HT is horizontal translation, VT is vertical translation, HD is horizontal dilation, and VD is vertical dilation.\nLet C indicate that they commute, and N indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\na) Complete the entries below the diagonal in the table.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus \\(\\text{HT}\\) is horizontal translation, \\(\\text{VT}\\) is vertical translation, \\(\\text{HD}\\) is horizontal dilation, and \\(\\text{VD}\\) is vertical dilation. Let \\(C\\) indicate that they commute, and \\(N\\) indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\n\nWhich option correctly completes the missing entries below the diagonal in the commutation table for \\(\\text{HT}, \\text{VT}, \\text{HD}, \\text{VD}\\)?",
+          "options": [
+            "Every pair of transformations commutes (all C).",
+            "No pair of transformations commutes (all N).",
+            "HT with VT: C; HD with VT: C; VD with HT: C; VD with VT: N; HD with HT: N",
+            "HT with VT: N; HD with VT: N; VD with HT: N; VD with VT: C; HD with HT: C"
+          ],
+          "answer": 2,
+          "solution": "Any horizontal transformation commutes with any vertical transformation (so HT–VT, HD–VT, and VD–HT are all C). A dilation and a translation along the same axis do not commute (so HD–HT is N and VD–VT is N).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & C & N & C \\\\ \\text{VT} & C & C & C & N \\\\ \\text{HD} & N & C & C & C \\\\ \\text{VD} & C & N & C & C \\end{array}\\)"
+              "explain": "Horizontal and vertical operations act on independent coordinates (\\(x\\) and \\(y\\)), so any horizontal transformation commutes with any vertical transformation.",
+              "work": "\\text{HT–VT} = C,\\quad \\text{HD–VT} = C,\\quad \\text{VD–HT} = C"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
+              "explain": "A dilation and a translation in the same direction do not commute because the dilation also scales a prior translation.",
+              "work": "\\text{HD–HT} = N,\\quad \\text{VD–VT} = N"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 3
         },
         {
           "id": "y11-5g-q7b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus HT is horizontal translation, VT is vertical translation, HD is horizontal dilation, and VD is vertical dilation.\nLet C indicate that they commute, and N indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\nb) The table does not directly include reflections. How can the table be used to decide whether a reflection commutes with another transformation?",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus \\(\\text{HT}\\) is horizontal translation, \\(\\text{VT}\\) is vertical translation, \\(\\text{HD}\\) is horizontal dilation, and \\(\\text{VD}\\) is vertical dilation. Let \\(C\\) indicate that they commute, and \\(N\\) indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\n\nThe table does not list reflections separately. How can it still be used to decide whether a reflection commutes with another transformation?",
+          "options": [
+            "Treat reflection in the \\(y\\)-axis as a horizontal dilation (HD) with factor \\(-1\\), and reflection in the \\(x\\)-axis as a vertical dilation (VD) with factor \\(-1\\).",
+            "Treat reflections as translations of \\(-1\\) unit.",
+            "Reflections always commute with every transformation, so no table entry is needed.",
+            "Only vertical reflections can be read from the table; horizontal ones cannot."
+          ],
+          "answer": 0,
+          "solution": "A reflection in the \\(y\\)-axis replaces \\(x\\) with \\(-x\\), which is a horizontal dilation (HD) by factor \\(-1\\). A reflection in the \\(x\\)-axis replaces \\(y\\) with \\(-y\\), which is a vertical dilation (VD) by factor \\(-1\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
+              "explain": "A reflection is a dilation by factor \\(-1\\): reflection in the \\(y\\)-axis is \\(\\text{HD}(-1)\\), and reflection in the \\(x\\)-axis is \\(\\text{VD}(-1)\\).",
+              "work": "\\text{y-axis reflection} = \\text{HD}(-1),\\quad \\text{x-axis reflection} = \\text{VD}(-1)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
+              "explain": "Therefore the HD and VD entries of the table apply directly to reflections.",
+              "work": "\\text{Use the HD and VD rows/columns of the table.}"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 3
         },
         {
           "id": "y11-5g-q7c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "A table shows whether pairs of transformations commute, where:\n• \\(\\text{HT}\\): Horizontal translation\n• \\(\\text{VT}\\): Vertical translation\n• \\(\\text{HD}\\): Horizontal dilation (with reflection in the \\(y\\)-axis as factor \\(-1\\))\n• \\(\\text{VD}\\): Vertical dilation (with reflection in the \\(x\\)-axis as factor \\(-1\\))\n\nLet \\(C\\) indicate that the pair of transformations commute (the order does not affect the final graph), and \\(N\\) indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\n\nVerify whether the entries in the table agree with the commutativity of the following six pairs of transformations:\n1. Reflection in the \\(y\\)-axis (\\(\\text{HD}\\)) and horizontal translation (\\(\\text{HT}\\))\n2. Vertical dilation (\\(\\text{VD}\\)) and vertical translation (\\(\\text{VT}\\))\n3. Vertical dilation (\\(\\text{VD}\\)) and reflection in the \\(x\\)-axis (\\(\\text{VD}\\))\n4. Horizontal translation (\\(\\text{HT}\\)) and vertical translation (\\(\\text{VT}\\))\n5. Horizontal dilation (\\(\\text{HD}\\)) and horizontal translation (\\(\\text{HT}\\))\n6. Reflection in the \\(x\\)-axis (\\(\\text{VD}\\)) and horizontal translation (\\(\\text{HT}\\))\n\nFor each pair, explain algebraically why they commute (\\(C\\)) or do not commute (\\(N\\)), and confirm that this matches the table.",
-          "figure": {
-            "svg": "fig:234253686f"
-          },
-          "answer": "All six pairs agree with the table:\n1. y-axis reflection (HD) and HT: Do not commute (N).\n2. VD and VT: Do not commute (N).\n3. VD and x-axis reflection (VD): Commute (C).\n4. HT and VT: Commute (C).\n5. HD and HT: Do not commute (N).\n6. x-axis reflection (VD) and HT: Commute (C).",
-          "hint": "Transformations in different dimensions (horizontal vs vertical) always commute because operations on x and y are independent. In the same dimension, translations commute with translations and dilations commute with dilations, but a dilation and a translation in the same dimension do not commute.",
-          "solution": "1. **General Commutativity Rules**:\n   • **Different dimensions (Horizontal vs Vertical)**: Operations on \\(x\\) and operations on \\(y\\) do not interact and always commute (\\(C\\)): \\(\\text{HT} \\leftrightarrow \\text{VT}\\), \\(\\text{HD} \\leftrightarrow \\text{VT}\\), \\(\\text{HT} \\leftrightarrow \\text{VD}\\), and \\(\\text{HD} \\leftrightarrow \\text{VD}\\).\n   • **Same dimension, same type (T with T, D with D)**: Two translations add (\\(x - (c_1 + c_2)\\)) and two dilations multiply (\\((a_1 a_2)y\\)), so they always commute (\\(C\\)).\n   • **Same dimension, mixed type (T with D)**: Translating then dilating scales the translation shift (\\(k(x - c) = kx - kc\\)), whereas dilating then translating only shifts the scaled variable (\\(kx - c\\)). Hence \\(\\text{HD} \\leftrightarrow \\text{HT}\\) and \\(\\text{VD} \\leftrightarrow \\text{VT}\\) do NOT commute (\\(N\\)).\n\n2. **Evaluating the 6 Pairs**:\n   • Pair 1: Reflection in \\(y\\)-axis (\\(\\text{HD}\\)) and \\(\\text{HT}\\) \\(\\implies -x + c \\neq -x - c \\implies N\\) (matches row HD, col HT).\n   • Pair 2: \\(\\text{VD}\\) and \\(\\text{VT}\\) \\(\\implies a(y+k) \\neq ay+k \\implies N\\) (matches row VD, col VT).\n   • Pair 3: \\(\\text{VD}\\) and \\(x\\)-axis reflection (\\(\\text{VD}\\)) \\(\\implies (-1)(ay) = a(-y) = -ay \\implies C\\) (matches row VD, col VD).\n   • Pair 4: \\(\\text{HT}\\) and \\(\\text{VT}\\) \\(\\implies (x+c, y+k) \\implies C\\) (matches row VT, col HT).\n   • Pair 5: \\(\\text{HD}\\) and \\(\\text{HT}\\) \\(\\implies k(x-c) \\neq kx-c \\implies N\\) (matches row HD, col HT).\n   • Pair 6: \\(x\\)-axis reflection (\\(\\text{VD}\\)) and \\(\\text{HT}\\) \\(\\implies -f(x-c) \\implies C\\) (matches row VD, col HT).\n\nAll results fully agree with the table.",
+          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus \\(\\text{HT}\\) is horizontal translation, \\(\\text{VT}\\) is vertical translation, \\(\\text{HD}\\) is horizontal dilation, and \\(\\text{VD}\\) is vertical dilation. Let \\(C\\) indicate that they commute, and \\(N\\) indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\n\nWhich statement correctly checks the table against the commutativity of the six key transformation pairs?",
+          "options": [
+            "The table contradicts the commutativity rules for every pair involving a reflection.",
+            "y-axis reflection with HT: N; VD with VT: N; VD with x-axis reflection: C; HT with VT: C; HD with HT: N; x-axis reflection with HT: C — consistent with the table.",
+            "The commutativity rules only match the table when both transformations are translations.",
+            "The table says HD and HT commute, which disagrees with algebraic transformation rules."
+          ],
+          "answer": 1,
+          "solution": "Mapping reflections in the \\(y\\)- and \\(x\\)-axes to HD and VD respectively gives: y-axis reflection (HD) with HT is N; VD with VT is N; VD with x-axis reflection (VD) is C; HT with VT is C; HD with HT is N; x-axis reflection (VD) with HT is C. All six agree with the table.",
           "steps": [
             {
-              "explain": "Establish the three core rules governing whether geometric transformations commute:\n1. **Orthogonal dimensions (Horizontal ↔ Vertical)**: Transformations affecting \\(x\\) and transformations affecting \\(y\\) are completely independent and always commute (\\(C\\)).\n2. **Same dimension, same operation type**: Translations add together (\\(x - c_1 - c_2 = x - (c_1 + c_2)\\)) and dilations multiply together (\\(a_1(a_2 y) = (a_1 a_2)y\\)), so both commute (\\(C\\)).\n3. **Same dimension, mixed type (Translation ↔ Dilation)**: Applying a dilation after a translation also scales the translation amount (\\(k(x - c) = kx - kc\\)), which differs from translating after a dilation (\\(kx - c\\)). Thus they do NOT commute (\\(N\\)).",
-              "work": "\\begin{aligned} &\\text{1. Cross-dimension (H } \\leftrightarrow \\text{ V):} \\quad \\text{Always commute } (C) \\\\ &\\text{2. Same dimension, same type (T } \\leftrightarrow \\text{ T, D } \\leftrightarrow \\text{ D):} \\quad \\text{Commute } (C) \\\\ &\\text{3. Same dimension, mixed type (T } \\leftrightarrow \\text{ D):} \\quad \\text{Do not commute } (N) \\end{aligned}",
-              "figure": {
-                "svg": "fig:9941bef687"
-              }
+              "explain": "Map each transformation onto \\(\\text{HT}, \\text{VT}, \\text{HD}, \\text{VD}\\) (treating reflections as dilations by factor \\(-1\\)).",
+              "work": "\\text{y-refl} \\to \\text{HD},\\quad \\text{x-refl} \\to \\text{VD}"
             },
             {
-              "explain": "Prove algebraically why the three same-dimension mixed-type pairs do NOT commute (\\(N\\)):\n• **Pair 1 (\\(y\\)-axis reflection and \\(\\text{HT}\\))**: Reflection in the \\(y\\)-axis is \\(\\text{HD}\\) with scale factor \\(-1\\). Translating right by \\(c\\) then reflecting gives \\(x \\to x - c \\to -(x - c) = -x + c\\). Reflecting then translating gives \\(x \\to -x \\to -x - c\\). Since \\(-x + c \\neq -x - c\\), they do not commute (\\(N\\)).\n• **Pair 2 (\\(\\text{VD}\\) and \\(\\text{VT}\\))**: Translating vertically by \\(k\\) then dilating by \\(a\\) gives \\(a(y + k) = ay + ak\\). Dilating then translating gives \\(ay + k\\). Since \\(ay + ak \\neq ay + k\\) (when \\(a \\neq 1, k \\neq 0\\)), they do not commute (\\(N\\)).\n• **Pair 5 (\\(\\text{HD}\\) and \\(\\text{HT}\\))**: Translating horizontally then dilating gives \\(f(k(x - c)) = f(kx - kc)\\). Dilating then translating gives \\(f(kx - c)\\). Since \\(kx - kc \\neq kx - c\\), they do not commute (\\(N\\)).",
-              "work": "\\begin{aligned} &\\text{Pair 1 (} y\\text{-ref} \\times \\text{HT}): \\quad -(x - c) = -x + c \\neq -x - c \\implies N \\\\ &\\text{Pair 2 (VD} \\times \\text{VT}): \\quad a(y + k) = ay + ak \\neq ay + k \\implies N \\\\ &\\text{Pair 5 (HD} \\times \\text{HT}): \\quad k(x - c) = kx - kc \\neq kx - c \\implies N \\end{aligned}",
-              "figure": {
-                "svg": "fig:7573927d33"
-              }
-            },
-            {
-              "explain": "Prove algebraically why the three orthogonal and same-type pairs commute (\\(C\\)):\n• **Pair 3 (\\(\\text{VD}\\) and \\(x\\)-axis reflection)**: Reflection in the \\(x\\)-axis is \\(\\text{VD}\\) with factor \\(-1\\). Both operate on the \\(y\\)-output by multiplication: \\((-1) \\cdot (ay) = a \\cdot (-y) = -ay\\). The order does not matter: they commute (\\(C\\)).\n• **Pair 4 (\\(\\text{HT}\\) and \\(\\text{VT}\\))**: Translating horizontally by \\(c\\) acts on \\(x \\mapsto x + c\\), while translating vertically by \\(k\\) acts on \\(y \\mapsto y + k\\). Either order maps \\((x, y) \\to (x + c, y + k)\\): they commute (\\(C\\)).\n• **Pair 6 (\\(x\\)-axis reflection and \\(\\text{HT}\\))**: Reflection in the \\(x\\)-axis negates the function value (\\(-f(x)\\)), and horizontal translation replaces \\(x\\) with \\(x - c\\). In either order, the result is \\(-f(x - c)\\): they commute (\\(C\\)).",
-              "work": "\\begin{aligned} &\\text{Pair 3 (VD} \\times x\\text{-ref}): \\quad (-1)(ay) = a(-y) = -ay \\implies C \\\\ &\\text{Pair 4 (HT} \\times \\text{VT}): \\quad (x + c, y + k) \\text{ in both orders} \\implies C \\\\ &\\text{Pair 6 (} x\\text{-ref} \\times \\text{HT}): \\quad -f(x - c) \\text{ in both orders} \\implies C \\end{aligned}",
-              "figure": {
-                "svg": "fig:41c1223013"
-              }
-            },
-            {
-              "explain": "Confirm that all six algebraic results match the entries in the commutativity table:\n1. Reflection in \\(y\\)-axis (\\(\\text{HD}\\)) and \\(\\text{HT}\\): \\(N\\) matches row \\(\\text{HD}\\), col \\(\\text{HT}\\).\n2. \\(\\text{VD}\\) and \\(\\text{VT}\\): \\(N\\) matches row \\(\\text{VD}\\), col \\(\\text{VT}\\).\n3. \\(\\text{VD}\\) and reflection in \\(x\\)-axis (\\(\\text{VD}\\)): \\(C\\) matches row \\(\\text{VD}\\), col \\(\\text{VD}\\).\n4. \\(\\text{HT}\\) and \\(\\text{VT}\\): \\(C\\) matches row \\(\\text{VT}\\), col \\(\\text{HT}\\).\n5. \\(\\text{HD}\\) and \\(\\text{HT}\\): \\(N\\) matches row \\(\\text{HD}\\), col \\(\\text{HT}\\).\n6. Reflection in \\(x\\)-axis (\\(\\text{VD}\\)) and \\(\\text{HT}\\): \\(C\\) matches row \\(\\text{VD}\\), col \\(\\text{HT}\\).\n\nConclusion: All pairs agree with the table.",
-              "work": "\\begin{aligned} &\\text{Checklist against table entries:} \\\\ &\\quad 1.\\; \\text{HD} \\times \\text{HT} = N \\quad \\checkmark \\\\ &\\quad 2.\\; \\text{VD} \\times \\text{VT} = N \\quad \\checkmark \\\\ &\\quad 3.\\; \\text{VD} \\times \\text{VD} = C \\quad \\checkmark \\\\ &\\quad 4.\\; \\text{HT} \\times \\text{VT} = C \\quad \\checkmark \\\\ &\\quad 5.\\; \\text{HD} \\times \\text{HT} = N \\quad \\checkmark \\\\ &\\quad 6.\\; \\text{VD} \\times \\text{HT} = C \\quad \\checkmark \\\\ &\\therefore \\text{All 6 pairs agree with the table.} \\end{aligned}",
-              "figure": {
-                "svg": "fig:082d7e17bb"
-              }
+              "explain": "Read each pair from the table: HD–HT is N, VD–VT is N, VD–VD is C, HT–VT is C, HD–HT is N, and VD–HT is C.",
+              "work": "\\text{All six pairs match the table entries.}"
             }
           ],
-          "manual": true,
-          "timeLimit": 180,
+          "timeLimit": 90,
           "xp": 3
         },
         {
@@ -20939,51 +20507,62 @@
         },
         {
           "id": "y11-5g-q9a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "The parabola \\(y = (x - 2)^2\\) is shifted 4 units left and then reflected in the y-axis.\na) Show that the new parabola has the same equation as the original.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "stem": "The parabola \\(y = (x - 2)^2\\) is shifted \\(4\\) units left and then reflected in the \\(y\\)-axis. What is the equation of the resulting image?",
+          "options": [
+            "\\(y = (x - 2)^2\\) (same as the original)",
+            "\\(y = (x + 2)^2\\)",
+            "\\(y = (x + 6)^2\\)",
+            "\\(y = (x - 6)^2\\)"
+          ],
+          "answer": 0,
+          "solution": "Shifting \\(y = (x - 2)^2\\) left by \\(4\\) units replaces \\(x\\) with \\(x + 4\\), giving \\(y = (x + 2)^2\\). Reflecting in the \\(y\\)-axis replaces \\(x\\) with \\(-x\\), giving \\(y = (-x + 2)^2 = (x - 2)^2\\), which is the same as the original parabola.",
           "steps": [
             {
-              "explain": "Start with the equation: \\(y = (x - 2)^2\\). Shift 4 left: replace \\(x\\) with \\(x + 4\\) to get: \\(y = (x + 4 - 2)^2 = (x + 2)^2\\).",
-              "work": "\\(y = (x + 2)^2\\)"
+              "explain": "Shift \\(4\\) units left by replacing \\(x\\) with \\(x + 4\\).",
+              "work": "y = (x + 4 - 2)^2 = (x + 2)^2"
             },
             {
-              "explain": "Next, reflect in the y-axis: replace \\(x\\) with \\(-x\\) to get: \\(y = (-x + 2)^2\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-              "work": "\\(y = (2 - x)^2 = (x - 2)^2\\)"
+              "explain": "Reflect in the \\(y\\)-axis by replacing \\(x\\) with \\(-x\\).",
+              "work": "y = (-x + 2)^2 = (-(x - 2))^2 = (x - 2)^2"
             },
             {
-              "explain": "Since \\((x - 2)^2\\) matches the original equation, the new parabola is identical. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing."
+              "explain": "The final equation is identical to the original parabola.",
+              "work": "y = (x - 2)^2"
             }
           ],
-          "manual": true,
+          "timeLimit": 90,
           "xp": 4
         },
         {
           "id": "y11-5g-q9b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "The parabola \\(y = (x - 2)^2\\) is shifted 4 units left and then reflected in the y-axis.\nb) Investigate why this has happened.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "stem": "The parabola \\(y = (x - 2)^2\\) is shifted \\(4\\) units left and then reflected in the \\(y\\)-axis, producing the same equation \\(y = (x - 2)^2\\) as the original parabola. Why does the image have the same equation as the original parabola?",
+          "options": [
+            "Any two horizontal transformations always cancel for every parabola.",
+            "Reflection in the \\(y\\)-axis never changes a graph.",
+            "The left shift of \\(4\\) has no effect on \\(y = (x - 2)^2\\).",
+            "The vertex moves from \\((2, 0)\\) to \\((-2, 0)\\) after the left shift, then back to \\((2, 0)\\) after the \\(y\\)-axis reflection, and the parabola is symmetric about its axis."
+          ],
+          "answer": 3,
+          "solution": "The original vertex is at \\((2, 0)\\). Shifting \\(4\\) units left moves the vertex to \\((-2, 0)\\), and reflecting in the \\(y\\)-axis moves \\((-2, 0)\\) back to \\((2, 0)\\). Since the parabola is symmetric about its vertical axis and its shape is unchanged, the final graph coincides with the original.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "y = (x - 2)^2 is shifted 4 units left and then reflected in the y-axis."
+              "explain": "Track the vertex \\((2, 0)\\) under the horizontal shift of \\(4\\) units left.",
+              "work": "\\((2, 0) \\xrightarrow{\\text{left } 4} (-2, 0)\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Track the new vertex \\((-2, 0)\\) under reflection in the \\(y\\)-axis.",
+              "work": "\\((-2, 0) \\xrightarrow{\\text{y-axis reflection}} (2, 0)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
+              "explain": "Because a parabola is symmetric about its vertical axis and the vertex returns to \\((2, 0)\\) without any dilation, the equation is unchanged.",
+              "work": "y = (x - 2)^2"
             }
           ],
-          "manual": true,
+          "timeLimit": 90,
           "xp": 4
         },
         {
@@ -21517,736 +21096,6 @@
             "grade": "12"
           },
           "xp": 3
-        },
-        {
-          "id": "y11-5g-q1",
-          "type": "multipart",
-          "difficulty": "easy",
-          "stem": "Let \\(y = x^2 - 6x\\). Sketch the graph of this function showing the intercepts and vertex.",
-          "parts": [
-            {
-              "id": "y11-5g-q1a-i",
-              "type": "mc",
-              "stem": "i) The parabola is shifted right by 2 units. Find its new equation, expanding any brackets.",
-              "options": [
-                "\\(y = x^2 - 2x + 16\\)",
-                "\\(y = x^2 - 10x + 13\\)",
-                "\\(y = (x-2)^2 - 6x\\)",
-                "\\(y = x^2 - 10x + 16\\)"
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Apply the horizontal translation to the function.",
-                  "work": "y = f(x - 2)"
-                },
-                {
-                  "explain": "Substitute \\((x-2)\\) into the original equation \\(y = x^2 - 6x\\).",
-                  "work": "y = (x - 2)^2 - 6(x - 2)"
-                },
-                {
-                  "explain": "Expand the perfect square and distribute.",
-                  "work": "y = x^2 - 4x + 4 - 6x + 12"
-                },
-                {
-                  "explain": "Combine like terms.",
-                  "work": "y = x^2 - 10x + 16"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q1a-ii",
-              "type": "mc",
-              "stem": "ii) The shifted parabola in part i is then shifted up 3 units. Find its final equation.",
-              "options": [
-                "\\(y = x^2 - 10x + 19\\)",
-                "\\(y = x^2 - 10x + 16\\)",
-                "\\(y = x^2 - 6x + 19\\)",
-                "\\(y = x^2 - 2x + 19\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Apply the vertical translation to the shifted function from part i.",
-                  "work": "y = (x^2 - 10x + 16) + 3"
-                },
-                {
-                  "explain": "Simplify.",
-                  "work": "y = x^2 - 10x + 19"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q1b-i",
-              "type": "mc",
-              "stem": "b) i) The original parabola \\(y = x^2 - 6x\\) is translated up 3 units. Find its equation.",
-              "options": [
-                "\\(y = x^2 - 6x - 3\\)",
-                "\\(y = x^2 - 6x + 3\\)",
-                "\\(y = x^2 - 3x + 3\\)",
-                "\\(y = (x-3)^2\\)"
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Apply the vertical translation to the original function \\(y = x^2 - 6x\\).",
-                  "work": "y = f(x) + 3"
-                },
-                {
-                  "explain": "Substitute the function.",
-                  "work": "y = x^2 - 6x + 3"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q1b-ii",
-              "type": "mc",
-              "stem": "ii) The translated parabola in part i is then translated 2 units right. Find its equation, expanding any brackets.",
-              "options": [
-                "\\(y = x^2 - 10x + 16\\)",
-                "\\(y = x^2 - 6x + 19\\)",
-                "\\(y = x^2 - 10x + 19\\)",
-                "\\(y = x^2 - 2x + 19\\)"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Apply the horizontal translation to the function from part i.",
-                  "work": "y = f(x - 2)"
-                },
-                {
-                  "explain": "Substitute \\((x-2)\\) into \\(y = x^2 - 6x + 3\\).",
-                  "work": "y = (x - 2)^2 - 6(x - 2) + 3"
-                },
-                {
-                  "explain": "Expand and simplify.",
-                  "work": "y = x^2 - 4x + 4 - 6x + 12 + 3"
-                },
-                {
-                  "explain": "Combine like terms.",
-                  "work": "y = x^2 - 10x + 19"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q1c",
-              "type": "mc",
-              "stem": "The previous parts used the same two translations, \\(2\\) units right and \\(3\\) units up, in different orders. Do these transformations commute?",
-              "options": [
-                "No, they do not commute",
-                "Only for linear functions",
-                "Only for even functions",
-                "Yes, they commute"
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Compare the final equations from both orders of translation.",
-                  "work": "\\text{Both methods resulted in } y = x^2 - 10x + 19"
-                },
-                {
-                  "explain": "Conclude if the transformations commute.",
-                  "work": "\\text{Yes, shifting horizontally and vertically are independent and therefore commute.}"
-                }
-              ],
-              "xp": 3
-            }
-          ],
-          "hint": "Factor the expression to find x-intercepts, and use the axis of symmetry to find the vertex.",
-          "timeLimit": 60
-        },
-        {
-          "id": "y11-5g-q2",
-          "type": "multipart",
-          "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 4x\\). We will apply dilations in different orders.",
-          "parts": [
-            {
-              "id": "y11-5g-q2a-i",
-              "type": "mc",
-              "stem": "a) i) The parabola is dilated by a factor of 3 horizontally. Find its equation.",
-              "options": [
-                "\\(y = x^2 - 4x\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\dfrac{x}{3}\\)",
-                "\\(y = (x - 1)^2\\)",
-                "\\(y = 9x^2 - 12x\\)"
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "A horizontal dilation by factor 3 replaces \\(x\\) with \\(\\dfrac{x}{3}\\) in the equation of the graph.",
-                  "work": "\\(y = x^2 - 4x\\)"
-                },
-                {
-                  "explain": "Substitute: \\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\left(\\dfrac{x}{3}\\right)\\).",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Equivalently \\(y = \\dfrac{x^2}{9} - \\dfrac{4x}{3}\\). Match the option with proper fractions.",
-                  "work": "\\(y = \\dfrac{x^2}{9} - \\dfrac{4x}{3}\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q2a-ii",
-              "type": "mc",
-              "stem": "ii) The parabola in part (i) is then dilated by a factor of 2 vertically. Find its equation.",
-              "options": [
-                "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\dfrac{x}{3}\\)",
-                "\\(y = 2x^2 - 8x\\)",
-                "\\(y = \\dfrac{2x^2}{9} - \\dfrac{4x}{3}\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Vertical dilation by 2 multiplies the entire right-hand side by 2.",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 - 4\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Multiply: \\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\).",
-                  "work": "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Equivalently \\(y = \\dfrac{2x^2}{9} - \\dfrac{8x}{3}\\).",
-                  "work": "\\(y = \\dfrac{2x^2}{9} - \\dfrac{8x}{3}\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q2b-i",
-              "type": "mc",
-              "stem": "b) i) The original parabola \\(y = x^2 - 4x\\) is stretched by a factor of 2 vertically. Find its equation.",
-              "options": [
-                "\\(y = x^2 - 4x\\)",
-                "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\)",
-                "\\(y = 2x^2 - 8x\\)",
-                "\\(y = \\dfrac{1}{2}x^2 - 2x\\)"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Vertical stretch by 2 multiplies every \\(y\\)-value by 2.",
-                  "work": "\\(y = x^2 - 4x\\)"
-                },
-                {
-                  "explain": "So \\(y = 2(x^2 - 4x) = 2x^2 - 8x\\).",
-                  "work": "\\(y = 2x^2 - 8x\\)"
-                },
-                {
-                  "explain": "Final equation: \\(y = 2x^2 - 8x\\).",
-                  "work": "\\(y = 2x^2 - 8x\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q2b-ii",
-              "type": "mc",
-              "stem": "ii) The parabola in part (i) is then stretched by a factor of 3 horizontally. Find its equation.",
-              "options": [
-                "\\(y = 2x^2 - 8x\\)",
-                "\\(y = 2(3x)^2 - 8(3x)\\)",
-                "\\(y = 18x^2 - 24x\\)",
-                "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\)"
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Horizontal stretch by 3: replace \\(x\\) by \\(\\dfrac{x}{3}\\) in \\(y = 2x^2 - 8x\\).",
-                  "work": "\\(y = 2x^2 - 8x\\)"
-                },
-                {
-                  "explain": "Obtain \\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\), same as part (a)(ii).",
-                  "work": "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Horizontal then vertical dilations commute for pure dilations about the axes.",
-                  "work": "\\(y = \\dfrac{2x^2}{9} - \\dfrac{8x}{3}\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q2c",
-              "type": "mc",
-              "stem": "c) Parts (a) and (b) used the same dilations (factor 3 horizontally and factor 2 vertically) in different orders. Do these dilations commute?",
-              "options": [
-                "Yes, they commute (same final equation).",
-                "No, they do not commute.",
-                "Only for linear functions.",
-                "Only when the vertex is at the origin."
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Compare the final equations from (a)(ii) and (b)(ii).",
-                  "work": "\\(y = 2\\left(\\dfrac{x}{3}\\right)^2 - 8\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Both orders give the same formula, so pure horizontal and vertical dilations commute.",
-                  "work": "\\(\\text{Same equation in both orders}\\)"
-                },
-                {
-                  "explain": "Answer: yes, they commute.",
-                  "work": "\\(\\text{They commute}\\)"
-                }
-              ],
-              "xp": 3
-            }
-          ],
-          "hint": "Remember that horizontal dilation replaces \\(x\\) with \\(\\frac{x}{k}\\), and vertical dilation multiplies the entire expression by \\(c\\).",
-          "timeLimit": 240
-        },
-        {
-          "id": "y11-5g-q3",
-          "type": "multipart",
-          "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 + 4x\\). We will examine combining a horizontal dilation and a vertical translation.",
-          "parts": [
-            {
-              "id": "y11-5g-q3a-i",
-              "type": "mc",
-              "stem": "a) i) The parabola is dilated by a factor of 3 horizontally. Find its equation.",
-              "options": [
-                "\\(y = x^2 + 4x\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3}\\)",
-                "\\(y = 9x^2 + 12x\\)",
-                "\\(y = (x + 2)^2\\)"
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Horizontal dilation by 3: replace \\(x\\) by \\(\\dfrac{x}{3}\\).",
-                  "work": "\\(y = x^2 + 4x\\)"
-                },
-                {
-                  "explain": "So \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3}\\).",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Equivalently \\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3}\\).",
-                  "work": "\\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3}\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q3a-ii",
-              "type": "mc",
-              "stem": "ii) The graph in part (i) is then translated up 2 units. Find its equation.",
-              "options": [
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3}\\)",
-                "\\(y = x^2 + 4x + 2\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\)",
-                "\\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3} - 2\\)"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Vertical translation up 2 adds 2 outside.",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3}\\)"
-                },
-                {
-                  "explain": "Result: \\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\).",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\)"
-                },
-                {
-                  "explain": "Equivalently \\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3} + 2\\).",
-                  "work": "\\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3} + 2\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q3b-i",
-              "type": "mc",
-              "stem": "b) i) The original parabola \\(y = x^2 + 4x\\) is translated up 2 units. Find its equation.",
-              "options": [
-                "\\(y = x^2 + 4x + 2\\)",
-                "\\(y = x^2 + 4x\\)",
-                "\\(y = x^2 + 4x - 2\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Add 2: vertical translation up.",
-                  "work": "\\(y = x^2 + 4x\\)"
-                },
-                {
-                  "explain": "Obtain \\(y = x^2 + 4x + 2\\).",
-                  "work": "\\(y = x^2 + 4x + 2\\)"
-                },
-                {
-                  "explain": "Final equation as above.",
-                  "work": "\\(y = x^2 + 4x + 2\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q3b-ii",
-              "type": "mc",
-              "stem": "ii) The graph in part (i) is then dilated by a factor of 3 horizontally. Find its equation.",
-              "options": [
-                "\\(y = x^2 + 4x + 2\\)",
-                "\\(y = 9x^2 + 12x + 2\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3}\\)",
-                "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\)"
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Replace \\(x\\) by \\(\\dfrac{x}{3}\\) in \\(y = x^2 + 4x + 2\\).",
-                  "work": "\\(y = x^2 + 4x + 2\\)"
-                },
-                {
-                  "explain": "Get the same equation as in (a)(ii).",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\)"
-                },
-                {
-                  "explain": "Horizontal dilation and vertical translation commute here.",
-                  "work": "\\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3} + 2\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q3c",
-              "type": "mc",
-              "stem": "c) Parts (a) and (b) used the same two transformations in different orders. Do they commute?",
-              "options": [
-                "No, they do not commute.",
-                "Yes, they commute (same final equation).",
-                "Only for even functions.",
-                "Only when the translation is zero."
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Compare final equations from (a)(ii) and (b)(ii).",
-                  "work": "\\(y = \\left(\\dfrac{x}{3}\\right)^2 + 4\\dfrac{x}{3} + 2\\)"
-                },
-                {
-                  "explain": "They match, so this horizontal dilation and vertical translation commute.",
-                  "work": "\\(\\text{Same equation}\\)"
-                },
-                {
-                  "explain": "Answer: yes, they commute.",
-                  "work": "\\(\\text{They commute}\\)"
-                }
-              ],
-              "xp": 3
-            }
-          ],
-          "hint": "Check if changing the order of horizontal dilation and vertical translation affects the equation.",
-          "timeLimit": 240
-        },
-        {
-          "id": "y11-5g-q4",
-          "type": "multipart",
-          "difficulty": "easy",
-          "stem": "Start with the parabola \\(y = x^2 - 8x\\). We will analyze a shift right and a reflection in the y-axis.",
-          "parts": [
-            {
-              "id": "y11-5g-q4a-i",
-              "type": "mc",
-              "stem": "a) i) The parabola is shifted right by 3 units. Find its equation, expanding any brackets.",
-              "options": [
-                "\\(y = x^2\\)",
-                "\\(y = (x-1)^2\\)",
-                "\\(y = x^2 - 14x + 33\\)",
-                "\\(y = 2x\\)"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Replace \\(x\\) with \\(x - 3\\) in the equation.",
-                  "work": "\\(y = (x - 3)^2 - 8(x - 3)\\)"
-                },
-                {
-                  "explain": "Expand the terms: \\(y = x^2 - 6x + 9 - 8x + 24\\).",
-                  "work": "\\(y = x^2 - 14x + 33\\)"
-                },
-                {
-                  "explain": "Continue the algebraic simplification.",
-                  "work": "\\(y = x^2 - 14x + 33\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q4a-ii",
-              "type": "mc",
-              "stem": "ii) The shifted parabola is then reflected in the y-axis. Find its equation.",
-              "options": [
-                "\\(y = x^2\\)",
-                "\\(y = (x-1)^2\\)",
-                "\\(y = 2x\\)",
-                "\\(y = x^2 + 14x + 33\\)"
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Apply the stated transformation carefully, keeping track of order.",
-                  "work": "\\(y = x^2 + 14x + 33\\)"
-                },
-                {
-                  "explain": "Expand or simplify if required by the question.",
-                  "work": "\\(y = x^2 + 14x + 33\\)"
-                },
-                {
-                  "explain": "Match the equation to the correct option.",
-                  "work": "\\(y = x^2 + 14x + 33\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q4b-i",
-              "type": "mc",
-              "stem": "b) i) The original parabola is reflected in the y-axis. Find its equation.",
-              "options": [
-                "\\(y = x^2 + 8x\\)",
-                "\\(y = x^2\\)",
-                "\\(y = (x-1)^2\\)",
-                "\\(y = 2x\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Apply the stated transformation carefully, keeping track of order.",
-                  "work": "\\(y = x^2 + 8x\\)"
-                },
-                {
-                  "explain": "Expand or simplify if required by the question.",
-                  "work": "\\(y = x^2 + 8x\\)"
-                },
-                {
-                  "explain": "Match the equation to the correct option.",
-                  "work": "\\(y = x^2 + 8x\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q4b-ii",
-              "type": "mc",
-              "stem": "ii) The reflected parabola is then shifted 3 units right. Find its equation, expanding any brackets.",
-              "options": [
-                "\\(y = x^2\\)",
-                "\\(y = x^2 + 2x - 15\\)",
-                "\\(y = (x-1)^2\\)",
-                "\\(y = 2x\\)"
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Replace \\(x\\) with \\(x - 3\\) in \\(y = x^2 + 8x\\).",
-                  "work": "\\(y = (x - 3)^2 + 8(x - 3)\\)"
-                },
-                {
-                  "explain": "Expand the brackets: \\(y = x^2 - 6x + 9 + 8x - 24\\).",
-                  "work": "\\(y = x^2 + 2x - 15\\)"
-                },
-                {
-                  "explain": "Continue the algebraic simplification.",
-                  "work": "\\(y = x^2 + 2x - 15\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "y11-5g-q4c",
-              "type": "mc",
-              "stem": "c) Do these transformations (shift right and reflection in the y-axis) commute?",
-              "options": [
-                "Yes, they commute",
-                "Only for linear functions",
-                "No, they do not commute",
-                "Only for even functions"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Compare the final equations: \\(y = x^2 + 14x + 33\\) (from part a) vs \\(y = x^2 + 2x - 15\\) (from part b). Since the final functions are different, these transformations do not commute.",
-                  "work": "\\(No, they do not commute\\)"
-                },
-                {
-                  "explain": "Continue the algebraic simplification.",
-                  "work": "\\(No, they do not commute\\)"
-                },
-                {
-                  "explain": "Continue the algebraic simplification.",
-                  "work": "\\(No, they do not commute\\)"
-                }
-              ],
-              "xp": 3
-            }
-          ],
-          "hint": "Recall that reflection in the y-axis replaces \\(x\\) with \\(-x\\).",
-          "timeLimit": 240
-        },
-        {
-          "id": "y11-5g-q7",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus HT is horizontal translation, VT is vertical translation, HD is horizontal dilation, and VD is vertical dilation. Entries are C (commute) or N (do not commute).",
-          "parts": [
-            {
-              "id": "y11-5g-q7a",
-              "type": "mc",
-              "stem": "Which completed table of commutation (C = commute, N = do not) is correct for HT, VT, HD, VD?",
-              "options": [
-                "Every pair of transformations commutes (all C).",
-                "No pair of transformations commutes (all N).",
-                "HT with VT: C; HD with VT: C; VD with HT: C; VD with VT: N; HD with HT: N",
-                "HT with VT: N; HD with VT: N; VD with HT: N; VD with VT: C; HD with HT: C"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Independent directions usually commute (horizontal with vertical). Same-direction dilation and translation generally do not.",
-                  "work": "\\(\\text{Compare HT/VT, HD/VT, VD/HT, VD/VT, HD/HT}\\)"
-                },
-                {
-                  "explain": "HT and VT commute (C). HD and VT commute (C). VD and HT commute (C). VD and VT do not (N). HD and HT do not (N).",
-                  "work": "\\(\\text{VT--HT: C; HD--VT: C; VD--HT: C; VD--VT: N; HD--HT: N}\\)"
-                },
-                {
-                  "explain": "Select the option listing these C/N results.",
-                  "work": "\\(\\text{Match the C/N pattern above}\\)"
-                }
-              ],
-              "xp": 3
-            },
-            {
-              "id": "y11-5g-q7b",
-              "type": "mc",
-              "stem": "The table does not list reflections separately. How can it still decide whether a reflection commutes with another transformation?",
-              "options": [
-                "Reflection in the \\(y\\)-axis is HD with factor \\(-1\\); reflection in the \\(x\\)-axis is VD with factor \\(-1\\). Use the HD/VD rows and columns.",
-                "Reflections never commute with any translation, so the table is irrelevant.",
-                "Reflections are the same as translations of factor 0.",
-                "Only vertical reflections can be read from the table; horizontal ones cannot."
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "A reflection is a dilation by factor \\(-1\\): y-axis reflection is horizontal dilation by \\(-1\\); x-axis reflection is vertical dilation by \\(-1\\).",
-                  "work": "\\(\\text{y-axis reflection} = \\text{HD}(-1),\\; \\text{x-axis reflection} = \\text{VD}(-1)\\)"
-                },
-                {
-                  "explain": "Therefore the HD and VD entries of the table apply directly to reflections.",
-                  "work": "\\(\\text{Use HD/VD commutation rules}\\)"
-                },
-                {
-                  "explain": "Choose the option that identifies reflections as special dilations.",
-                  "work": "\\(\\text{Reflections as HD/VD with factor } -1\\)"
-                }
-              ],
-              "xp": 3
-            },
-            {
-              "id": "y11-5g-q7c",
-              "type": "mc",
-              "stem": "Which statement correctly checks the table against the commutativity of the six key transformation pairs?",
-              "options": [
-                "The table contradicts the commutativity rules for every pair involving a reflection.",
-                "y-axis reflection with HT: N; VD with VT: N; VD with x-axis reflection: C; HT with VT: C; HD with HT: N; x-axis reflection with HT: C — consistent with the table.",
-                "The commutativity rules only match the table when both transformations are translations.",
-                "The table says HD and HT commute, which disagrees with algebraic transformation rules."
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Map each transformation pair onto HT/VT/HD/VD (with reflections as dilations of factor \\(-1\\)).",
-                  "work": "\\(\\text{Match transformation pairs to table codes}\\)"
-                },
-                {
-                  "explain": "y-axis reflection (HD) with HT → N; VD with VT → N; two vertical dilations → C; HT with VT → C; HD with HT → N; x-axis reflection (VD) with HT → C.",
-                  "work": "\\(\\text{All match the table}\\)"
-                },
-                {
-                  "explain": "The table is consistent with all transformation pairs.",
-                  "work": "\\(\\text{Consistent}\\)"
-                }
-              ],
-              "xp": 3
-            }
-          ],
-          "hint": "Think about how each pair of transformations acts on a general function \\(f(x)\\).",
-          "timeLimit": 240
-        },
-        {
-          "id": "y11-5g-q9",
-          "type": "multipart",
-          "difficulty": "hard",
-          "stem": "The parabola \\(y = (x - 2)^2\\) is shifted 4 units left and then reflected in the \\(y\\)-axis.",
-          "parts": [
-            {
-              "id": "y11-5g-q9a",
-              "type": "mc",
-              "stem": "After shifting 4 units left and then reflecting in the \\(y\\)-axis, what is the equation of the image?",
-              "options": [
-                "\\(y = (x - 2)^2\\) (same as the original)",
-                "\\(y = (x + 2)^2\\)",
-                "\\(y = (x + 6)^2\\)",
-                "\\(y = (-x - 2)^2\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Shift left 4: replace \\(x\\) by \\(x + 4\\).",
-                  "work": "\\(y = (x + 4 - 2)^2 = (x + 2)^2\\)"
-                },
-                {
-                  "explain": "Reflect in the \\(y\\)-axis: replace \\(x\\) by \\(-x\\).",
-                  "work": "\\(y = (-x + 2)^2 = (x - 2)^2\\)"
-                },
-                {
-                  "explain": "The final equation is identical to the original parabola.",
-                  "work": "\\(y = (x - 2)^2\\)"
-                }
-              ],
-              "xp": 4
-            },
-            {
-              "id": "y11-5g-q9b",
-              "type": "mc",
-              "stem": "Why does the image have the same equation as the original parabola?",
-              "options": [
-                "Any two horizontal transformations always cancel for every parabola.",
-                "Reflection in the \\(y\\)-axis never changes a graph.",
-                "The left shift of 4 has no effect on \\(y = (x-2)^2\\).",
-                "The vertex moves from \\((2,0)\\) to \\((-2,0)\\) after the left shift, then back to \\((2,0)\\) after the \\(y\\)-axis reflection, so the graph is unchanged."
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Original vertex is at \\((2, 0)\\). A left shift of 4 moves it to \\((-2, 0)\\).",
-                  "work": "\\((2,0) \\;\\xrightarrow{\\text{left }4}\\; (-2,0)\\)"
-                },
-                {
-                  "explain": "Reflection in the \\(y\\)-axis sends \\((-2, 0)\\) to \\((2, 0)\\), the original vertex. The shape is unchanged.",
-                  "work": "\\((-2,0) \\;\\xrightarrow{\\text{y-axis reflection}}\\; (2,0)\\)"
-                },
-                {
-                  "explain": "Same vertex and same vertical stretch ⇒ same equation.",
-                  "work": "\\(\\text{Equation unchanged}\\)"
-                }
-              ],
-              "xp": 4
-            }
-          ],
-          "hint": "Perform the operations one by one and check the final equation."
         },
         {
           "id": "y11-5g-q10a-i",
