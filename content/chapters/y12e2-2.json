@@ -627,6 +627,136 @@
             }
           ],
           "answer": "For a positive base different from 1, \\(\\log_{\\frac{1}{a}}\\left(\\frac{1}{b}\\right)=\\frac{\\ln\\left(\\frac{1}{b}\\right)}{\\ln\\left(\\frac{1}{a}\\right)}=\\frac{-\\ln b}{-\\ln a}=\\frac{\\ln b}{\\ln a}=\\log_a b\\). The source statement omits the necessary restriction \\(a\\ne1\\); at \\(a=1\\), both sides are undefined."
+        },
+        {
+          "id": "ch13ext2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The converse of the statement “If \\(x\\) is odd, then \\(y\\) is even” is:",
+          "options": [
+            "“If \\(y\\) is odd, then \\(x\\) is even”.",
+            "“If \\(y\\) is even, then \\(x\\) is odd”.",
+            "“If \\(y\\) is even, then \\(x\\) is even”.",
+            "“If \\(y\\) is odd, then \\(x\\) is odd”."
+          ],
+          "answer": 1,
+          "hint": "The converse swaps the hypothesis and the conclusion: \\(P \\Rightarrow Q\\) becomes \\(Q \\Rightarrow P\\).",
+          "steps": [
+            {
+              "explain": "Name the parts. P: “\\(x\\) is odd”. Q: “\\(y\\) is even”. The statement is \\(P \\Rightarrow Q\\).",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "The converse is \\(Q \\Rightarrow P\\): swap the two parts.",
+              "work": "\\(Q\\Rightarrow P\\)"
+            },
+            {
+              "explain": "Write it in words: “If \\(y\\) is even, then \\(x\\) is odd.”",
+              "work": "Answer: B"
+            },
+            {
+              "explain": "Do not confuse the converse with the contrapositive (\\(\\neg Q \\Rightarrow \\neg P\\)), which would be “If \\(y\\) is odd, then \\(x\\) is even”.",
+              "work": "Option A negates both parts, so it is not the converse."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "converse",
+              "note": "Swap the 'if' part and the 'then' part."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q3",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q14d-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the statements \\(P\\): \\(\\underset{\\sim}{a}=\\lambda\\underset{\\sim}{b}\\), and \\(Q\\): the vectors are parallel. Determine if \\(P\\Leftrightarrow Q\\).",
+          "options": [
+            "Yes, \\(P\\Leftrightarrow Q\\) because both implications are true.",
+            "No, \\(Q\\Rightarrow P\\) is false.",
+            "No, \\(P\\Rightarrow Q\\) is false.",
+            "Yes, but only \\(P\\Rightarrow Q\\) is true."
+          ],
+          "answer": 0,
+          "hint": "An equivalence needs both \\(P\\Rightarrow Q\\) and \\(Q\\Rightarrow P\\) to be true.",
+          "steps": [
+            {
+              "explain": "\\(P\\Rightarrow Q\\): if one vector is a scalar multiple of the other, they point in the same or opposite direction, so they are parallel. True.",
+              "work": "\\(P\\Rightarrow Q\\text{ is true}\\)"
+            },
+            {
+              "explain": "\\(Q\\Rightarrow P\\): if the vectors are parallel, one is a scalar multiple of the other (provided the second is non-zero). True.",
+              "work": "\\(Q\\Rightarrow P\\text{ is true}\\)"
+            },
+            {
+              "explain": "Both directions hold, so \\(P\\Leftrightarrow Q\\).",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q14(d)(i)",
+            "sourceMarks": 1,
+            "page": 11
+          }
+        },
+        {
+          "id": "ch13ext2-q14d-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the contrapositive of \\(P\\Rightarrow Q\\) and explain why it is true.",
+          "options": [
+            "If \\(\\underset{\\sim}{a}\\) is not a scalar multiple of \\(\\underset{\\sim}{b}\\), then the vectors are not parallel.",
+            "If the vectors are parallel, then \\(\\underset{\\sim}{a}=\\lambda\\underset{\\sim}{b}\\).",
+            "If \\(\\underset{\\sim}{a}\\neq\\lambda\\underset{\\sim}{b}\\), then the vectors are parallel.",
+            "If the vectors are not parallel, then \\(\\underset{\\sim}{a}=\\lambda\\underset{\\sim}{b}\\)."
+          ],
+          "answer": 0,
+          "hint": "The contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\): negate both parts and swap them.",
+          "steps": [
+            {
+              "explain": "Negate \\(Q\\): “the vectors are not parallel”. Negate \\(P\\): “\\(\\underset{\\sim}{a}\\) is not a scalar multiple of \\(\\underset{\\sim}{b}\\)”.",
+              "work": "\\(\\neg Q:\\text{ not parallel},\\quad \\neg P:\\ a\\ne\\lambda b\\)"
+            },
+            {
+              "explain": "Swap them: \\(\\neg Q\\Rightarrow\\neg P\\) reads “If the vectors are not parallel, then \\(\\underset{\\sim}{a}\\) is not a scalar multiple of \\(\\underset{\\sim}{b}\\)”.",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "A contrapositive is logically equivalent to the original statement, so it is true whenever \\(P\\Rightarrow Q\\) is true.",
+              "work": "Answer: A"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q14(d)(ii)",
+            "sourceMarks": 3,
+            "page": 11
+          }
         }
       ]
     },
@@ -882,6 +1012,44 @@
               "note": "Assume x² − 4y = 2. Then x² is even, so x = 2c, which leads to c² − y = ½."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q11d",
+          "type": "review",
+          "stem": "Prove using contradiction, that \\(\\sqrt{4n-2}\\) is irrational for all positive integers \\(n\\).",
+          "answer": "Assume \\(\\sqrt{4n-2}=p/q\\) in lowest terms. Then \\(p\\) and \\(q\\) cannot both be even, but \\(p=2k\\) gives \\(2k^2=(2n-1)q^2\\), so the left side is even and the right side is odd. Contradiction.",
+          "manual": true,
+          "hint": "Assume the number is rational and write it as \\(p/q\\) in lowest terms. Look at the factors of 2 on both sides.",
+          "steps": [
+            {
+              "explain": "Assume the contrary: \\(\\sqrt{4n-2}=\\frac{p}{q}\\) with \\(\\gcd(p,q)=1\\). Square both sides: \\(4n-2=\\frac{p^2}{q^2}\\), so \\(p^2=(4n-2)q^2\\).",
+              "work": "\\(p^2=(4n-2)q^2\\)"
+            },
+            {
+              "explain": "The right side is even (it has a factor 2), so \\(p^2\\) is even, so \\(p\\) is even. Write \\(p=2k\\).",
+              "work": "\\(p=2k\\Rightarrow p^2=4k^2\\)"
+            },
+            {
+              "explain": "Substitute: \\(4k^2=(4n-2)q^2\\). Divide by 2: \\(2k^2=(2n-1)q^2\\). Now \\(q\\) must be odd (since \\(\\gcd(p,q)=1\\) and p is even).",
+              "work": "\\(2k^2=(2n-1)q^2\\)"
+            },
+            {
+              "explain": "The left side is even but the right side \\((2n-1)q^2\\) is odd (odd times odd), a contradiction. So \\(\\sqrt{4n-2}\\) is irrational.",
+              "work": "<b>Contradiction, so \\(\\sqrt{4n-2}\\) is irrational.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q11(d)",
+            "sourceMarks": 3,
+            "page": 8
+          }
         }
       ]
     },
@@ -2070,6 +2238,40 @@
               "answer": "Substitute \\(A=a+b,\\;B=b+c,\\;C=c+a\\) into the previous result. Then \\(A+B+C=2(a+b+c)\\), so \\((a+b+c)\\left(\\frac{1}{a+b}+\\frac{1}{b+c}+\\frac{1}{c+a}\\right)\\ge\\frac{9}{2}\\). Since \\(\\frac{a+b+c}{b+c}=1+\\frac{a}{b+c}\\) and cyclically, the left side is \\(3+\\frac{a}{b+c}+\\frac{b}{c+a}+\\frac{c}{a+b}\\). Subtract 3 to obtain the required \\(\\frac{3}{2}\\)."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q15a",
+          "type": "review",
+          "stem": "Use the AM-GM inequality \\(\\frac{x+y}{2}\\ge\\sqrt{xy}\\) to prove that \\((x+y)(y+z)(z+x)\\ge8xyz\\) for positive real numbers \\(x,y,z\\).",
+          "answer": "Apply AM-GM to each pair, multiply the three inequalities (all sides positive), and simplify the product of square roots.",
+          "manual": true,
+          "hint": "Write AM-GM for the pairs (x,y), (y,z) and (z,x), then multiply.",
+          "steps": [
+            {
+              "explain": "AM-GM gives \\(x+y\\ge2\\sqrt{xy}\\), \\(y+z\\ge2\\sqrt{yz}\\) and \\(z+x\\ge2\\sqrt{zx}\\).",
+              "work": "\\(x+y\\ge2\\sqrt{xy}\\)"
+            },
+            {
+              "explain": "All terms are positive, so multiply the three inequalities: \\((x+y)(y+z)(z+x)\\ge8\\sqrt{xy}\\sqrt{yz}\\sqrt{zx}\\).",
+              "work": "\\((x+y)(y+z)(z+x)\\ge8\\sqrt{x^2y^2z^2}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\sqrt{x^2y^2z^2}=xyz\\) (all positive), so \\((x+y)(y+z)(z+x)\\ge8xyz\\). Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q15(a)",
+            "sourceMarks": 3,
+            "page": 12
+          }
         }
       ]
     },
@@ -2693,6 +2895,128 @@
               "note": "Divide out the common factors first: show (k+1)^(k+1)/(k+2)^k > 1."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The following induction proof to show that \\(5^n + 2\\times11^n\\) is a multiple of 3 for all positive integers n contains an algebraic error. In which section does the error occur?",
+          "options": [
+            "(A) Show true for n = 1.",
+            "(B) Assume true for n = k, where k is a natural number.",
+            "(C) Prove true for n = k + 1.",
+            "(D) The step \\(5(3M)+3(6\\times11^k)\\) from the assumption n = k."
+          ],
+          "answer": 3,
+          "hint": "Check each line: the algebra must follow from the previous line. Look for a factor that was pulled out wrongly.",
+          "steps": [
+            {
+              "explain": "Section A: \\(5^1+2\\times11^1=27\\), a multiple of 3. This is correct.",
+              "work": "\\(5+22=27=3\\times9\\;\\checkmark\\)"
+            },
+            {
+              "explain": "Section B: assume \\(5^k+2\\times11^k=3M\\). This is a valid assumption.",
+              "work": "\\(5^k+2\\times11^k=3M\\)"
+            },
+            {
+              "explain": "Section C: \\(5^{k+1}+2\\times11^{k+1}=5(5^k+2\times11^k)+6\\times2\\times11^k\\). This is correct, since \\(2\\times11^{k+1}=22\\times11^k\\).",
+              "work": "\\(5(5^k+2\\times11^k)+12\\times11^k\\)"
+            },
+            {
+              "explain": "Section D: \\(5(3M)+3(6\\times11^k)\\) is correct, but the next step is \\(=3(5+6\\times11^k)\\). That is wrong: \\(5\\times3M+3\\times6\\times11^k\\) factorises to \\(3(5M+6\\times11^k)\\), not \\(3(5+6\\times11^k)\\). The factor 5 must multiply M. Answer: D.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "algebraic error",
+              "note": "Check that each factor is pulled out correctly."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q10",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q15c-ii",
+          "type": "review",
+          "stem": "Prove by mathematical induction that \\(\\dfrac{d^ny}{dx^n}=2^{\\frac n2}e^x\\sin\\left(x+\\dfrac{n\\pi}{4}\\right)\\) for all positive integers \\(n\\), where \\(y=e^x\\sin x\\).",
+          "answer": "Base case n = 1 uses the identity from part (i). Assume true for n = k and differentiate once to get n = k+1, using \\(\\sin\\theta+\\cos\\theta=\\sqrt2\\sin(\\theta+\\frac\\pi4)\\).",
+          "manual": true,
+          "hint": "Prove the base case first, then assume the result for n = k and differentiate once.",
+          "steps": [
+            {
+              "explain": "Base case n = 1: \\(\\frac{dy}{dx}=e^x\\sin x+e^x\\cos x=e^x(\\sin x+\\cos x)=\\sqrt2e^x\\sin(x+\\tfrac{\\pi}{4})\\), which matches the formula with \\(n=1\\).",
+              "work": "\\(y\\'=\\sqrt2e^x\\sin(x+\\tfrac{\\pi}{4})\\)"
+            },
+            {
+              "explain": "Inductive hypothesis: assume \\(\\frac{d^ky}{dx^k}=2^{k/2}e^x\\sin(x+\\frac{k\\pi}{4})\\).",
+              "work": "\\(y^{(k)}=2^{k/2}e^x\\sin(x+\\tfrac{k\\pi}{4})\\)"
+            },
+            {
+              "explain": "Differentiate once: product rule gives \\(2^{k/2}e^x\\left[\\sin(x+\\tfrac{k\\pi}{4})+\\cos(x+\\tfrac{k\\pi}{4})\\right]\\).",
+              "work": "\\(2^{k/2}e^x\\left[\\sin\\left(x+\\tfrac{k\\pi}{4}\\right)+\\cos\\left(x+\\tfrac{k\\pi}{4}\\right)\\right]\\)"
+            },
+            {
+              "explain": "Use the identity from part (i): \\(\\sin\\theta+\\cos\\theta=\\sqrt2\\sin(\\theta+\\frac\\pi4)\\). So the derivative is \\(2^{k/2}\\sqrt2\\,e^x\\sin(x+\\tfrac{(k+1)\\pi}{4})=2^{(k+1)/2}e^x\\sin(x+\\tfrac{(k+1)\\pi}{4})\\). Proof complete by induction.",
+              "work": "<b>True for all positive integers n.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q15(c)(ii)",
+            "sourceMarks": 4,
+            "page": 12
+          }
+        },
+        {
+          "id": "ch13ext2-q15c-iii",
+          "type": "review",
+          "stem": "Hence, show that \\(2^4\\times\\frac{d^ky}{dx^k}=\\frac{d^{k+8}y}{dx^{k+8}}\\), where \\(k\\) is a positive integer.",
+          "answer": "Use the formula from part (ii) for \\(n=k\\) and \\(n=k+8\\). The phase differs by \\(2\\pi\\) and \\(2^{(k+8)/2}=2^4\\cdot2^{k/2}\\).",
+          "manual": true,
+          "hint": "Write both derivatives using the formula, then compare the powers of 2 and the angles.",
+          "steps": [
+            {
+              "explain": "From part (ii): \\(\\frac{d^ky}{dx^k}=2^{k/2}e^x\\sin(x+\\frac{k\\pi}{4})\\) and \\(\\frac{d^{k+8}y}{dx^{k+8}}=2^{(k+8)/2}e^x\\sin(x+(k+8)\\cdot\\frac{\\pi}{4})\\).",
+              "work": "\\(y^{(k+8)}=2^{(k+8)/2}e^x\\sin(x+\\tfrac{(k+8)\\pi}{4})\\)"
+            },
+            {
+              "explain": "Angle: \\((k+8)\\cdot\\frac{\\pi}{4}=\\frac{k\\pi}{4}+2\\pi\\), and \\(\\sin\\) has period \\(2\\pi\\), so the sine terms are equal.",
+              "work": "\\(\\sin(x+\\tfrac{(k+8)\\pi}{4})=\\sin(x+\\tfrac{k\\pi}{4})\\)"
+            },
+            {
+              "explain": "Power of 2: \\(2^{(k+8)/2}=2^4\\cdot2^{k/2}\\). So \\(\\frac{d^{k+8}y}{dx^{k+8}}=2^4\\frac{d^ky}{dx^k}\\). Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q15(c)(iii)",
+            "sourceMarks": 1,
+            "page": 12
+          }
         }
       ]
     },
@@ -3329,6 +3653,88 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q16c-i",
+          "type": "review",
+          "stem": "Use the trapezoidal rule with \\(n-1\\) sub-intervals to show that \\(\\int_1^n\\ln x\\,dx > \\ln n + \\frac12\\ln((n-1)!)\\).",
+          "answer": "The trapezoidal estimate gives \\(\\frac12\\ln n+\\ln((n-1)!)\\), and since \\(\\ln x\\) is concave down the estimate is an underestimate.",
+          "manual": true,
+          "hint": "Use the trapezoidal rule with the points \\(x=1,2,\\dots,n\\), and remember the curve is concave down.",
+          "steps": [
+            {
+              "explain": "Trapezoidal rule with \\(n-1\\) strips of width 1 and points \\(x=1,\\dots,n\\): area \\(\\approx\\frac12\\left[f(1)+2f(2)+\\dots+2f(n-1)+f(n)\\right]\\), where \\(f=\\ln x\\).",
+              "work": "\\(\\tfrac12[\\ln1+2\\ln2+\\dots+2\\ln(n-1)+\\ln n]\\)"
+            },
+            {
+              "explain": "Use \\(\\ln1=0\\) and \\(\\sum\\ln k=\\ln\\prod k\\): the sum becomes \\(\\frac12\\left[\\ln n+2\\ln((n-1)!)\\right]=\\frac12\\ln n+\\ln((n-1)!)\\).",
+              "work": "\\(\\tfrac12\\ln n+\\ln((n-1)!)\\)"
+            },
+            {
+              "explain": "\\(\\ln x\\) is concave down, so each trapezium lies below the curve. The trapezoidal estimate is an underestimate, so the integral is larger.",
+              "work": "\\(\\int_1^n\\ln x\\,dx>\\tfrac12\\ln n+\\ln((n-1)!)\\)"
+            },
+            {
+              "explain": "This is the bound stated in the question, so the proof is complete.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(c)(i)",
+            "sourceMarks": 2,
+            "page": 13
+          }
+        },
+        {
+          "id": "ch13ext2-q16c-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Hence, if \\(\\int_1^n\\ln x\\,dx=n\\ln n-n+1\\), show that \\(n! < n^{\\,n+\\frac12}e^{1-n}\\). Which is the correct inequality after substituting and taking exponentials?",
+          "options": [
+            "\\(n^ne^{n-1}>n\\sqrt{(n-1)!}\\)",
+            "\\(n^ne^{1-n}>\\sqrt n\\,(n-1)!\\)",
+            "\\(n^ne^{1-n}<n\\sqrt{(n-1)!}\\)",
+            "\\(n^ne^{1-n}>n\\sqrt{(n-1)!}\\)"
+          ],
+          "answer": 3,
+          "hint": "Put the integral result into the inequality from part (i), then take exponentials to remove the logs.",
+          "steps": [
+            {
+              "explain": "Substitute \\(\\int_1^n\\ln x\\,dx=n\\ln n-n+1\\) into the part (i) inequality: \\(n\\ln n-n+1>\\ln n+\\tfrac12\\ln((n-1)!)\\).",
+              "work": "\\(n\\ln n-n+1>\\ln n+\\tfrac12\\ln((n-1)!)\\)"
+            },
+            {
+              "explain": "Exponentiate both sides. The left becomes \\(e^{n\\ln n}e^{1-n}=n^ne^{1-n}\\). The right becomes \\(e^{\\ln n}\\cdot e^{\\frac12\\ln((n-1)!)}=n\\sqrt{(n-1)!}\\).",
+              "work": "\\(n^ne^{1-n}>n\\sqrt{(n-1)!}\\)"
+            },
+            {
+              "explain": "The inequality keeps its direction because \\(e^x\\) is increasing. Check the options: A uses \\(e^{n-1}\\) instead of \\(e^{1-n}\\). B drops the factor n. C reverses the inequality.",
+              "work": "Answer: \\(n^ne^{1-n}>n\\sqrt{(n-1)!}\\)"
+            },
+            {
+              "explain": "Then divide by \\(n\\) and square to reach \\(n!<n^{\\,n+\\frac12}e^{1-n}\\), as required.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(c)(ii)",
+            "sourceMarks": 2,
+            "page": 13
+          }
         }
       ]
     },

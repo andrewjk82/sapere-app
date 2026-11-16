@@ -1159,6 +1159,166 @@
               "note": "Choose \\(u=\\sqrt{e^x+1}\\). Then \\(du=e^x/(2u)\\,dx\\), which combines with the remaining factor e^x in the numerator."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\int_0^{\\pi/4}\\tan^3x\\sec^2x\\,dx\\).",
+          "options": [
+            "\\(\\tfrac13\\)",
+            "\\(\\tfrac14\\)",
+            "\\(\\tfrac12\\)",
+            "\\(1\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the substitution \\(u = \\tan x\\), so \\(du = \\sec^2x\\,dx\\). Change the limits too.",
+          "steps": [
+            {
+              "explain": "Let \\(u = \\tan x\\). Then \\(du = \\sec^2x\\,dx\\), so the integrand \\(\\tan^3x\\sec^2x\\,dx\\) becomes \\(u^3\\,du\\).",
+              "work": "\\(u=\\tan x,\\quad du=\\sec^2x\\,dx\\)"
+            },
+            {
+              "explain": "Change the limits: when \\(x=0\\), \\(u=0\\); when \\(x=\\frac{\\pi}{4}\\), \\(u=1\\).",
+              "work": "\\(\\int_0^{\\pi/4}\\tan^3x\\sec^2x\\,dx=\\int_0^1u^3\\,du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int_0^1u^3\\,du = \\left[\\tfrac{u^4}{4}\\right]_0^1 = \\tfrac14 - 0\\).",
+              "work": "\\(=\\tfrac14\\)"
+            },
+            {
+              "explain": "Check the common mistakes: \\(\\frac13\\) comes from using \\(u^2\\), and \\(1\\) forgets the \\(\\frac14\\) from integrating \\(u^3\\).",
+              "work": "Answer: \\(\\frac14\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q11(c)",
+            "sourceMarks": 3,
+            "page": 8
+          }
+        },
+        {
+          "id": "ch13ext2-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the exact area bounded by the curve \\(y = \\dfrac{x^2}{x^2+1}\\), the lines \\(x=-1\\), \\(x=\\sqrt3\\) and the \\(x\\)-axis.",
+          "options": [
+            "\\(\\sqrt3-1-\\tfrac{7\\pi}{12}\\)",
+            "\\(\\sqrt3+1-\\tfrac{\\pi}{3}\\)",
+            "\\(2\\sqrt3-\\tfrac{7\\pi}{12}\\)",
+            "\\(\\sqrt3+1-\\tfrac{7\\pi}{12}\\)"
+          ],
+          "answer": 3,
+          "hint": "Split \\(\\frac{x^2}{x^2+1}\\) as \\(1-\\frac{1}{x^2+1}\\) before integrating.",
+          "steps": [
+            {
+              "explain": "Rewrite the curve: \\(\\frac{x^2}{x^2+1}=1-\\frac{1}{x^2+1}\\) (since \\(\\frac{x^2+1-1}{x^2+1}\\)). This is easy to integrate.",
+              "work": "\\(\\frac{x^2}{x^2+1}=1-\\frac{1}{x^2+1}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\left(1-\\frac{1}{x^2+1}\\right)dx = x-\\tan^{-1}x\\).",
+              "work": "\\(\\left[x-\\tan^{-1}x\\right]_{-1}^{\\sqrt3}\\)"
+            },
+            {
+              "explain": "Substitute the limits: at \\(\\sqrt3\\): \\(\\sqrt3-\\frac{\\pi}{3}\\). At \\(-1\\): \\(-1+\\frac{\\pi}{4}\\). Subtract.",
+              "work": "\\(\\left(\\sqrt3-\\tfrac{\\pi}{3}\\right)-\\left(-1+\\tfrac{\\pi}{4}\\right)\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\sqrt3+1-\\frac{\\pi}{3}-\\frac{\\pi}{4}=\\sqrt3+1-\\frac{7\\pi}{12}\\).",
+              "work": "\\(\\sqrt3+1-\\tfrac{7\\pi}{12}\\text{ units}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q12(a)",
+            "sourceMarks": 3,
+            "page": 9
+          }
+        },
+        {
+          "id": "ch13ext2-q16a-i",
+          "type": "review",
+          "stem": "Show that \\(x^4(1-x)^4 = x^8-4x^7+6x^6-4x^5+x^4\\).",
+          "answer": "Expand \\((1-x)^4=1-4x+6x^2-4x^3+x^4\\) by the binomial theorem and multiply by \\(x^4\\).",
+          "manual": true,
+          "hint": "Use the binomial expansion of \\((1-x)^4\\), then multiply each term by \\(x^4\\).",
+          "steps": [
+            {
+              "explain": "Binomial theorem: \\((1-x)^4=1-4x+6x^2-4x^3+x^4\\).",
+              "work": "\\((1-x)^4=1-4x+6x^2-4x^3+x^4\\)"
+            },
+            {
+              "explain": "Multiply every term by \\(x^4\\): \\(x^4-4x^5+6x^6-4x^7+x^8\\).",
+              "work": "\\(x^4(1-4x+6x^2-4x^3+x^4)\\)"
+            },
+            {
+              "explain": "Reorder by power: \\(x^8-4x^7+6x^6-4x^5+x^4\\). Proof complete.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(a)(i)",
+            "sourceMarks": 1,
+            "page": 13
+          }
+        },
+        {
+          "id": "ch13ext2-q16a-ii",
+          "type": "review",
+          "stem": "Hence, prove that \\(\\frac{22}{7}\\) is an overestimate of \\(\\pi\\) by evaluating the integral \\(\\int_0^1\\frac{x^4(1-x)^4}{1+x^2}dx\\).",
+          "answer": "Long division gives \\(\\frac{x^4(1-x)^4}{1+x^2}=x^6-4x^5+5x^4-4x^2+4-\\frac{4}{1+x^2}\\). Integrating from 0 to 1 gives \\(\\frac{22}{7}-\\pi\\), which is positive, so \\(\\frac{22}{7}>\\pi\\).",
+          "manual": true,
+          "hint": "Divide the polynomial by \\(1+x^2\\), integrate, and use the fact that the integrand is positive.",
+          "steps": [
+            {
+              "explain": "Long division of \\(x^8-4x^7+6x^6-4x^5+x^4\\) by \\(1+x^2\\) gives quotient \\(x^6-4x^5+5x^4-4x^2+4\\) and remainder \\(-4\\).",
+              "work": "\\(\\frac{x^4(1-x)^4}{1+x^2}=x^6-4x^5+5x^4-4x^2+4-\\frac{4}{1+x^2}\\)"
+            },
+            {
+              "explain": "Integrate from 0 to 1 term by term: \\(\\frac17-\\frac23+1-\\frac43+4=\\frac{22}{7}\\). The last term gives \\(\\int_0^1\\frac{4}{1+x^2}dx=4\\cdot\\frac{\\pi}{4}=\\pi\\), so the integral is \\(\\frac{22}{7}-\\pi\\).",
+              "work": "\\(\\int_0^1=\\tfrac{22}{7}-\\pi\\)"
+            },
+            {
+              "explain": "The integrand \\(\\frac{x^4(1-x)^4}{1+x^2}\\) is positive for \\(0<x<1\\), so the integral is positive: \\(\\frac{22}{7}-\\pi>0\\).",
+              "work": "\\(\\tfrac{22}{7}-\\pi>0\\)"
+            },
+            {
+              "explain": "Therefore \\(\\frac{22}{7}>\\pi\\): the fraction is an overestimate. Proof complete.",
+              "work": "<b>22/7 is an overestimate of π.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q16(a)(ii)",
+            "sourceMarks": 3,
+            "page": 13
+          }
         }
       ]
     },
@@ -1786,6 +1946,54 @@
               "note": "Set the expression equal to \\(A/(x-3)+B/(x+1)\\), clear the denominator, and solve for A and B."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q13c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find \\(\\int\\dfrac{16x-43}{x^3-4x^2-3x+18}\\,dx\\).",
+          "options": [
+            "\\(3\\ln|x-3|-\\frac{1}{x-3}-3\\ln|x+2|+C\\)",
+            "\\(3\\ln|x-3|+\\frac{1}{x-3}-3\\ln|x+2|+C\\)",
+            "\\(3\\ln|x-3|-\\frac{1}{(x-3)^2}+3\\ln|x+2|+C\\)",
+            "\\(\\ln\\left|\\frac{(x-3)^3}{(x+2)^3}\\right|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise the denominator, then write the integrand as partial fractions \\(\\frac{A}{x-3}+\\frac{B}{(x-3)^2}+\\frac{C}{x+2}\\).",
+          "steps": [
+            {
+              "explain": "Factorise: \\(x^3-4x^2-3x+18=(x-3)^2(x+2)\\). Check: \\((x-3)^2(x+2)=(x^2-6x+9)(x+2)=x^3-4x^2-3x+18\\). \\(\\checkmark\\)",
+              "work": "\\((x-3)^2(x+2)\\)"
+            },
+            {
+              "explain": "Partial fractions: \\(\\frac{16x-43}{(x-3)^2(x+2)}=\\frac{A}{x-3}+\\frac{B}{(x-3)^2}+\\frac{C}{x+2}\\). Set \\(x=3\\): \\(5=5B\\), so \\(B=1\\). Set \\(x=-2\\): \\(-75=25C\\), so \\(C=-3\\).",
+              "work": "\\(B=1,\\quad C=-3\\)"
+            },
+            {
+              "explain": "Find \\(A\\) by setting \\(x=0\\): \\(-43=A(-3)(2)+1(2)-3(9)=-6A-25\\), so \\(A=3\\).",
+              "work": "\\(\\frac{16x-43}{(x-3)^2(x+2)}=\\frac{3}{x-3}+\\frac{1}{(x-3)^2}-\\frac{3}{x+2}\\)"
+            },
+            {
+              "explain": "Integrate term by term: \\(\\int\\frac{3}{x-3}=3\\ln|x-3|\\), \\(\\int\\frac{1}{(x-3)^2}=-\\frac{1}{x-3}\\), \\(\\int\\frac{-3}{x+2}=-3\\ln|x+2|\\).",
+              "work": "\\(3\\ln|x-3|-\\frac{1}{x-3}-3\\ln|x+2|+C\\)"
+            },
+            {
+              "explain": "Common mistakes: \\(+\\frac{1}{x-3}\\) (wrong sign on the integral of \\((x-3)^{-2}\\)), and writing \\(\\frac{1}{(x-3)^2}\\) as the integral.",
+              "work": "Answer: \\(3\\ln|x-3|-\\frac{1}{x-3}-3\\ln|x+2|+C\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q13(c)",
+            "sourceMarks": 3,
+            "page": 10
+          }
         }
       ]
     },
@@ -2540,6 +2748,225 @@
               "note": "A cross product is perpendicular to both vectors. Divide it by its magnitude to make a unit vector; either orientation is acceptable."
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which of the following is a reduction formula for the integral \\(I_n = \\int x^n e^{2x}\\,dx\\)?",
+          "options": [
+            "\\(2x^n e^{2x}-2nI_{n-1}\\)",
+            "\\(2x^n e^{2x}-nI_{n-1}\\)",
+            "\\(\\tfrac12 x^n e^{2x}-\\tfrac{n}{2}I_{n-1}\\)",
+            "\\(\\tfrac12 x^n e^{2x}-nI_{n-1}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use integration by parts with \\(u = x^n\\) and \\(v' = e^{2x}\\). Remember \\(\\int e^{2x}dx = \\frac12 e^{2x}\\).",
+          "steps": [
+            {
+              "explain": "Choose \\(u = x^n\\), so \\(u' = nx^{n-1}\\). Choose \\(v' = e^{2x}\\), so \\(v = \\tfrac12 e^{2x}\\).",
+              "work": "\\(u=x^n,\\; v'=e^{2x},\\; v=\\tfrac12e^{2x}\\)"
+            },
+            {
+              "explain": "Apply \\(\\int uv' = uv - \\int u'v\\).",
+              "work": "\\(I_n=\\tfrac12x^ne^{2x}-\\int nx^{n-1}\\tfrac12e^{2x}\\,dx\\)"
+            },
+            {
+              "explain": "Pull the constants out of the new integral: \\(\\tfrac{n}{2}\\int x^{n-1}e^{2x}dx = \\tfrac n2 I_{n-1}\\).",
+              "work": "\\(I_n=\\tfrac12x^ne^{2x}-\\tfrac n2I_{n-1}\\)"
+            },
+            {
+              "explain": "Check the options: A and B have the wrong coefficient of \\(x^ne^{2x}\\) (it must be \\(\\tfrac12\\)). D has the right first term but the wrong factor \\(n\\) instead of \\(\\tfrac n2\\).",
+              "work": "Answer: C"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "reduction formula",
+              "note": "Integrate by parts once to lower the power of x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q6",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The shaded region below is constructed by taking the intersection of two other regions. Which of the following best represents the two possible regions?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"60%\" height=\"auto\" style=\"display:block;margin:0 auto\"><line x1=\"62.8\" y1=\"200\" x2=\"214\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"206.9,196.2 214,200 206.9,203.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"130\" y1=\"225.2\" x2=\"130\" y2=\"95\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"126.2,102.1 130,95 133.8,102.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"220\" y=\"218.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Re</text><text x=\"138\" y=\"103.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">Im</text><text x=\"172\" y=\"220.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1</text><text x=\"88\" y=\"220.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">−1</text><text x=\"118\" y=\"120.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">2</text><text x=\"118\" y=\"162.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">1</text><circle cx=\"130\" cy=\"158\" r=\"42\" fill=\"none\" fill-opacity=\"1\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"158\" r=\"42\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"88\" y1=\"158\" x2=\"175.3\" y2=\"107.6\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><line x1=\"88\" y1=\"158\" x2=\"175.3\" y2=\"208.4\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M88 158 L151 121.6 A42 42 0 0 0 151 194.4 Z\" fill=\"#9ca3af\" fill-opacity=\"0.35\" stroke=\"none\"/><path d=\"M88 158 L151 121.6 M88 158 L151 194.4\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><path d=\"M151 194.4 A42 42 0 0 0 151 121.6\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"88\" cy=\"158\" r=\"3.5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><circle cx=\"151\" cy=\"121.6\" r=\"3.5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><circle cx=\"151\" cy=\"194.4\" r=\"3.5\" fill=\"#fff\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"82\" y=\"152.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">−1 + i</text></svg>"
+          },
+          "options": [
+            "\\(|z-1|<1\\text{ and }-\\tfrac{\\pi}{6}\\le\\arg(z-1+i)\\le\\tfrac{\\pi}{6}\\)",
+            "\\(|z-i|<1\\text{ and }-\\tfrac{\\pi}{6}\\le\\arg(z+1-i)\\le\\tfrac{\\pi}{6}\\)",
+            "\\(|z-1|\\le1\\text{ and }-\\tfrac{\\pi}{6}<\\arg(z-1+i)<\\tfrac{\\pi}{6}\\)",
+            "\\(|z-i|\\le1\\text{ and }-\\tfrac{\\pi}{6}<\\arg(z+1-i)<\\tfrac{\\pi}{6}\\)"
+          ],
+          "answer": 3,
+          "hint": "The circle has centre \\(i\\) and radius 1 with its boundary included (solid). The wedge has its vertex at \\(-1+i\\) and its boundary excluded (open circles).",
+          "steps": [
+            {
+              "explain": "The curved part is a circle. Its centre is \\(i = (0,1)\\) and the radius is 1. The boundary is solid in the picture, so the inequality includes equality: \\(|z-i|\\le 1\\).",
+              "work": "\\(|z-i|\\le1\\)"
+            },
+            {
+              "explain": "The straight edges meet at the point \\(-1+i\\), so the wedge uses \\(\\arg(z-(-1+i)) = \\arg(z+1-i)\\). The edges are at \\(\\pm\\tfrac{\\pi}{6}\\) and the boundary rays are dashed (excluded).",
+              "work": "\\(-\\tfrac{\\pi}{6}<\\arg(z+1-i)<\\tfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "The shaded region is the intersection of the two regions, so combine them with “and”.",
+              "work": "\\(|z-i|\\le1\\text{ and }-\\tfrac{\\pi}{6}<\\arg(z+1-i)<\\tfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Check the other options: A and B use the wrong centre or vertex, and A and C use strict/non-strict combinations that do not match the open and closed boundaries.",
+              "work": "Answer: D"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "intersection",
+              "note": "Combine the two conditions with 'and'."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section I Q8",
+            "sourceMarks": 1,
+            "page": 2
+          }
+        },
+        {
+          "id": "ch13ext2-q12b-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hence, if the particle starts at the origin, explain its motion as \\(t \\to \\infty\\), and whether the particle will return to the origin.",
+          "options": [
+            "The velocity tends to \\(\\frac{\\pi}{2}\\) and the displacement grows without bound, so the particle moves away and never returns to the origin.",
+            "The velocity tends to 0, so the particle stops at a fixed distance and never moves again.",
+            "The particle oscillates about the origin and returns to it infinitely often.",
+            "The velocity tends to \\(\\frac{\\pi}{2}\\), but the particle returns to the origin every \\(2\\pi\\) seconds."
+          ],
+          "answer": 0,
+          "hint": "Look at the limit of v as t grows. Since v is positive for every t > 0, the displacement can only increase.",
+          "steps": [
+            {
+              "explain": "As \\(t\\to\\infty\\), \\(\\tan^{-1}t\\to\\frac{\\pi}{2}\\). So the velocity tends to the constant \\(\\frac{\\pi}{2}\\) m/s.",
+              "work": "\\(v\\to\\tfrac{\\pi}{2}\\text{ as }t\\to\\infty\\)"
+            },
+            {
+              "explain": "Velocity is always positive for \\(t>0\\) (since \\(\\tan^{-1}t>0\\)), so the displacement is strictly increasing.",
+              "work": "\\(v>0\\text{ for }t>0\\)"
+            },
+            {
+              "explain": "A velocity that stays positive means the particle keeps moving in the same direction. The displacement tends to infinity, so the particle moves further away.",
+              "work": "Displacement \\(x\\to\\infty\\)"
+            },
+            {
+              "explain": "Because displacement is strictly increasing from the origin, it can never come back to 0. Answer: it moves away at a near-constant speed and never returns.",
+              "work": "Answer: never returns to the origin."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q12(b)(iii)",
+            "sourceMarks": 1,
+            "page": 9
+          }
+        },
+        {
+          "id": "ch13ext2-q12b-i",
+          "type": "review",
+          "stem": "Show, using integration by parts, that \\(\\int\\tan^{-1}t\\,dt = t\\tan^{-1}t-\\frac12\\log_e(1+t^2)+C\\).",
+          "answer": "Let \\(u=\\tan^{-1}t\\) and \\(v'=1\\). Then \\(u'=\\frac{1}{1+t^2}\\) and \\(v=t\\). The remaining integral \\(\\int\\frac{t}{1+t^2}dt=\\frac12\\ln(1+t^2)\\).",
+          "manual": true,
+          "hint": "Choose \\(u=\\tan^{-1}t\\) (its derivative is simpler) and \\(v'=1\\).",
+          "steps": [
+            {
+              "explain": "Set \\(u=\\tan^{-1}t\\), \\(v'=1\\). Then \\(u'=\\frac{1}{1+t^2}\\), \\(v=t\\).",
+              "work": "\\(u=\\tan^{-1}t,\\; v=t\\)"
+            },
+            {
+              "explain": "Integration by parts: \\(\\int\\tan^{-1}t\\,dt = t\\tan^{-1}t-\\int\\frac{t}{1+t^2}dt\\).",
+              "work": "\\(=t\\tan^{-1}t-\\int\\frac{t}{1+t^2}dt\\)"
+            },
+            {
+              "explain": "Substitute \\(w=1+t^2\\), \\(dw=2t\\,dt\\): \\(\\int\\frac{t}{1+t^2}dt=\\frac12\\ln(1+t^2)\\). So the result is \\(t\\tan^{-1}t-\\frac12\\log_e(1+t^2)+C\\). Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q12(b)(i)",
+            "sourceMarks": 3,
+            "page": 9
+          }
+        },
+        {
+          "id": "ch13ext2-q12b-ii",
+          "type": "review",
+          "stem": "Prove that \\(t\\tan^{-1}t > \\frac12\\log_e(1+t^2)\\) for \\(t>0\\).",
+          "answer": "Let \\(F(t)=t\\tan^{-1}t-\\frac12\\log_e(1+t^2)\\). Then \\(F(0)=0\\) and \\(F'(t)=\\tan^{-1}t>0\\) for \\(t>0\\), so \\(F(t)>0\\) for \\(t>0\\).",
+          "manual": true,
+          "hint": "Define \\(F(t)\\) as the difference, check \\(F(0)=0\\), and show \\(F\\) is increasing.",
+          "steps": [
+            {
+              "explain": "Let \\(F(t)=t\\tan^{-1}t-\\frac12\\log_e(1+t^2)\\). The inequality is \\(F(t)>0\\) for \\(t>0\\).",
+              "work": "\\(F(t)=t\\tan^{-1}t-\\tfrac12\\log_e(1+t^2)\\)"
+            },
+            {
+              "explain": "At \\(t=0\\): \\(F(0)=0-0=0\\).",
+              "work": "\\(F(0)=0\\)"
+            },
+            {
+              "explain": "Differentiate using part (i): \\(F'(t)=\\tan^{-1}t\\).",
+              "work": "\\(F\\'(t)=\\tan^{-1}t>0\\text{ for }t>0\\)"
+            },
+            {
+              "explain": "Since \\(F\\) is increasing from 0, \\(F(t)>0\\) for \\(t>0\\). So \\(t\\tan^{-1}t>\\frac12\\log_e(1+t^2)\\). Proof complete.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q12(b)(ii)",
+            "sourceMarks": 2,
+            "page": 9
+          }
         }
       ]
     },
@@ -3531,6 +3958,118 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ch13ext2-q14c-iii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Let \\(I_n = \\int_0^1 \\frac{x^n}{1+x^2}\\,dx\\). Evaluate \\(I_{10}\\).",
+          "options": [
+            "\\(\\frac{263}{315}+\\frac{\\pi}{4}\\)",
+            "\\(\\frac{263}{315}-\\frac{\\pi}{4}\\)",
+            "\\(\\frac{76}{105}-\\frac{\\pi}{4}\\)",
+            "\\(\\frac{1}{9}-\\frac{\\pi}{4}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the reduction formula \\(I_n=\\frac{1}{n-1}-I_{n-2}\\) starting from \\(I_0=\\frac{\\pi}{4}\\).",
+          "steps": [
+            {
+              "explain": "Start with \\(I_0=\\int_0^1\\frac{1}{1+x^2}dx=\\left[\\tan^{-1}x\\right]_0^1=\\frac{\\pi}{4}\\).",
+              "work": "\\(I_0=\\tfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Use \\(I_n=\\frac{1}{n-1}-I_{n-2}\\) to get \\(I_2=1-\\frac{\\pi}{4}\\), \\(I_4=\\frac13-I_2=-\\frac23+\\frac{\\pi}{4}\\), \\(I_6=\\frac15-I_4=\\frac{13}{15}-\\frac{\\pi}{4}\\).",
+              "work": "\\(I_6=\\tfrac{13}{15}-\\tfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Continue: \\(I_8=\\frac17-I_6=-\\frac{76}{105}+\\frac{\\pi}{4}\\), then \\(I_{10}=\\frac19-I_8\\).",
+              "work": "\\(I_8=-\\tfrac{76}{105}+\\tfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Simplify: \\(I_{10}=\\frac19+\\frac{76}{105}-\\frac{\\pi}{4}=\\frac{263}{315}-\\frac{\\pi}{4}\\).",
+              "work": "\\(I_{10}=\\tfrac{263}{315}-\\tfrac{\\pi}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q14(a)(iii)",
+            "sourceMarks": 4,
+            "page": 11
+          }
+        },
+        {
+          "id": "ch13ext2-q14a-i",
+          "type": "review",
+          "stem": "Consider \\(I_n=\\int_0^1\\frac{x^n}{1+x^2}dx\\), where \\(n\\ge0\\). Show that \\(x^n=x^{n-2}(1+x^2)-x^{n-2}\\).",
+          "answer": "Expand the right-hand side: \\(x^{n-2}+x^n-x^{n-2}=x^n\\).",
+          "manual": true,
+          "hint": "Expand the brackets on the right-hand side.",
+          "steps": [
+            {
+              "explain": "Expand: \\(x^{n-2}(1+x^2)=x^{n-2}+x^{n}\\).",
+              "work": "\\(x^{n-2}(1+x^2)=x^{n-2}+x^n\\)"
+            },
+            {
+              "explain": "Subtract \\(x^{n-2}\\): \\(x^{n-2}+x^n-x^{n-2}=x^n\\).",
+              "work": "\\(=x^n\\)"
+            },
+            {
+              "explain": "This equals the left-hand side, so the identity holds. Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q14(a)(i)",
+            "sourceMarks": 1,
+            "page": 11
+          }
+        },
+        {
+          "id": "ch13ext2-q14a-ii",
+          "type": "review",
+          "stem": "Hence, show that \\(I_n=\\frac{1}{n-1}-I_{n-2}\\) for \\(n\\ge2\\).",
+          "answer": "Substitute the identity from part (i) into \\(I_n\\), split the integral and recognise \\(\\int_0^1x^{n-2}dx=\\frac{1}{n-1}\\).",
+          "manual": true,
+          "hint": "Substitute part (i) into the integral, then split it into two integrals.",
+          "steps": [
+            {
+              "explain": "Substitute: \\(I_n=\\int_0^1\\frac{x^{n-2}(1+x^2)-x^{n-2}}{1+x^2}dx\\).",
+              "work": "\\(I_n=\\int_0^1\\frac{x^{n-2}(1+x^2)-x^{n-2}}{1+x^2}dx\\)"
+            },
+            {
+              "explain": "Cancel the \\((1+x^2)\\) in the first term: \\(I_n=\\int_0^1x^{n-2}dx-\\int_0^1\\frac{x^{n-2}}{1+x^2}dx\\).",
+              "work": "\\(=\\int_0^1x^{n-2}dx-I_{n-2}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\int_0^1x^{n-2}dx=\\left[\\frac{x^{n-1}}{n-1}\\right]_0^1=\\frac{1}{n-1}\\). So \\(I_n=\\frac{1}{n-1}-I_{n-2}\\). Shown.",
+              "work": "<b>Shown.</b>"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cheltenham Girls High School 2023 HSC Trial Assessment Task 4 (Mathematics Extension 2)",
+            "school": "Cheltenham Girls High School",
+            "examType": "HSC Trial 2023",
+            "grade": "12",
+            "origin": "teacher",
+            "sourceQuestion": "Section II Q14(a)(ii)",
+            "sourceMarks": 2,
+            "page": 11
+          }
         }
       ]
     },
