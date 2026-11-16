@@ -19408,43 +19408,31 @@
         },
         {
           "id": "y11-5g-q1c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
-          "stem": "Let \\(y = x^2 - 6x\\). Sketch the graph of this function showing the intercepts and vertex.\nc) Parts a and b used the same translations, 2 units right and 3 units up, but in a different order. Do these transformations commute?",
-          "answer": "0",
-          "solution": "0",
+          "stem": "Consider the parabola \\(y = x^2 - 6x\\) under two translations: a horizontal translation of \\(2\\) units right and a vertical translation of \\(3\\) units up. Do these two translations commute (that is, do both orders of applying them produce the same final equation)?",
+          "options": [
+            "No, they do not commute",
+            "Only for linear functions",
+            "Only for even functions",
+            "Yes, they commute"
+          ],
+          "answer": 3,
+          "solution": "Shifting right by \\(2\\) units and then up by \\(3\\) units gives \\(y = (x - 2)^2 - 6(x - 2) + 3 = x^2 - 10x + 19\\). Shifting up by \\(3\\) units and then right by \\(2\\) units also gives \\(y = (x - 2)^2 - 6(x - 2) + 3 = x^2 - 10x + 19\\). Since both orders give the same equation, the translations commute.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "y = x^2 - 6x. Sketch the graph of this function showing the intercepts and vertex.",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "explain": "Translate \\(y = x^2 - 6x\\) right by \\(2\\) units first (replace \\(x\\) with \\(x - 2\\)), then up by \\(3\\) units (add \\(3\\)).",
+              "work": "y = (x - 2)^2 - 6(x - 2) + 3 = x^2 - 10x + 19"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Now reverse the order: translate \\(y = x^2 - 6x\\) up by \\(3\\) units first to get \\(y = x^2 - 6x + 3\\), then right by \\(2\\) units (replace \\(x\\) with \\(x - 2\\)).",
+              "work": "y = (x - 2)^2 - 6(x - 2) + 3 = x^2 - 10x + 19"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0\\)"
-            },
-            {
-              "explain": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0\\)"
+              "explain": "Compare the two resulting equations.",
+              "work": "\\text{Both orders produce } y = x^2 - 10x + 19\\text{, so the translations commute.}"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 3
         },
@@ -21647,7 +21635,7 @@
             {
               "id": "y11-5g-q1c",
               "type": "mc",
-              "stem": "c) Parts a and b used the same translations, 2 units right and 3 units up, but in a different order. Do these transformations commute?",
+              "stem": "The previous parts used the same two translations, \\(2\\) units right and \\(3\\) units up, in different orders. Do these transformations commute?",
               "options": [
                 "No, they do not commute",
                 "Only for linear functions",
@@ -21657,7 +21645,7 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Compare the final equations from part (a) and part (b).",
+                  "explain": "Compare the final equations from both orders of translation.",
                   "work": "\\text{Both methods resulted in } y = x^2 - 10x + 19"
                 },
                 {
@@ -21669,7 +21657,6 @@
             }
           ],
           "hint": "Factor the expression to find x-intercepts, and use the axis of symmetry to find the vertex.",
-          "manual": true,
           "timeLimit": 60
         },
         {
