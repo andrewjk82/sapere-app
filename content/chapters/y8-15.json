@@ -2152,7 +2152,7 @@
           "difficulty": "medium",
           "stem": "Find the area of the following shape.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"80%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"20,150 95,35 270,35 195,150\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"20\" y1=\"150\" x2=\"270\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"95\" y1=\"35\" x2=\"195\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"153.2,88.7 147.3,81.9 139.1,85.7\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><line x1=\"53.3\" y1=\"89.8\" x2=\"61.7\" y2=\"95.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"40\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"236.7\" y1=\"95.2\" x2=\"228.3\" y2=\"89.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"107.5\" y1=\"155\" x2=\"107.5\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><rect x=\"59\" y=\"61.3\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"81\" y=\"74.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">20 mm</text><rect x=\"193.5\" y=\"34.8\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"215.5\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">30 mm</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"80%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"40,140 115,25 275,25 200,140\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"40\" y1=\"140\" x2=\"275\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"115\" y1=\"25\" x2=\"200\" y2=\"140\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"165.6,78.5 160.2,71.3 152.2,75.3\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><line x1=\"73.3\" y1=\"79.8\" x2=\"81.7\" y2=\"85.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"195\" y1=\"20\" x2=\"195\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"241.7\" y1=\"85.2\" x2=\"233.3\" y2=\"79.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"120\" y1=\"145\" x2=\"120\" y2=\"135\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><text x=\"105\" y=\"25.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">20 mm</text><text x=\"36\" y=\"164.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">30 mm</text></svg>"
           },
           "options": [
             "300 mm²",
@@ -2167,7 +2167,7 @@
               "explain": "The shape has 4 equal sides (tick marks), so it is a RHOMBUS. The two lines inside are its diagonals and they cross at a right angle.",
               "work": "Diagonals: 20 mm and 30 mm",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"80%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"20,150 95,35 270,35 195,150\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"20\" y1=\"150\" x2=\"270\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"95\" y1=\"35\" x2=\"195\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"153.2,88.7 147.3,81.9 139.1,85.7\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><line x1=\"53.3\" y1=\"89.8\" x2=\"61.7\" y2=\"95.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"182.5\" y1=\"30\" x2=\"182.5\" y2=\"40\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"236.7\" y1=\"95.2\" x2=\"228.3\" y2=\"89.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"107.5\" y1=\"155\" x2=\"107.5\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><rect x=\"59\" y=\"61.3\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"81\" y=\"74.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">20 mm</text><rect x=\"193.5\" y=\"34.8\" width=\"44\" height=\"18\" fill=\"#fff\" fill-opacity=\"0.92\" stroke=\"none\" stroke-width=\"0\"/><text x=\"215.5\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">30 mm</text><line x1=\"20\" y1=\"150\" x2=\"270\" y2=\"35\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"95\" y1=\"35\" x2=\"195\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"80%\" height=\"auto\" style=\"display:block;margin:0 auto\"><polygon points=\"40,140 115,25 275,25 200,140\" fill=\"#e2e8f0\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"40\" y1=\"140\" x2=\"275\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"115\" y1=\"25\" x2=\"200\" y2=\"140\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><polyline points=\"165.6,78.5 160.2,71.3 152.2,75.3\" fill=\"none\" fill-opacity=\"1\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><line x1=\"73.3\" y1=\"79.8\" x2=\"81.7\" y2=\"85.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"195\" y1=\"20\" x2=\"195\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"241.7\" y1=\"85.2\" x2=\"233.3\" y2=\"79.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><line x1=\"120\" y1=\"145\" x2=\"120\" y2=\"135\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"butt\" stroke-opacity=\"1\"/><text x=\"105\" y=\"25.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">20 mm</text><text x=\"36\" y=\"164.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">30 mm</text><line x1=\"40\" y1=\"140\" x2=\"275\" y2=\"25\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/><line x1=\"115\" y1=\"25\" x2=\"200\" y2=\"140\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-opacity=\"1\"/></svg>"
               }
             },
             {
@@ -3217,102 +3217,119 @@
           }
         },
         {
-          "id": "wghs2018-y8-s2q2a-i",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "1 hectare = ………… m²",
-          "options": [
-            "100",
-            "1 000",
-            "100 000",
-            "10 000"
-          ],
-          "answer": 3,
-          "hint": "A hectare is a square 100 m by 100 m. Find its area.",
-          "steps": [
-            {
-              "explain": "A hectare is the area of a square with sides 100 m long.",
-              "work": "1 hectare = a 100 m by 100 m square",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dcfce7\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 hectare</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 m²</text></svg>"
-              }
-            },
-            {
-              "explain": "Area of a square = side × side.",
-              "work": "\\(100\\times100=10\\,000\\text{ m}^2\\)"
-            },
-            {
-              "explain": "Check: a hectare is about the size of a rugby field (a bit more than one). Common mistakes: 100 (using only one side) and 1 000 or 100 000 (place value errors).",
-              "work": "\\(\\boxed{10\\,000\\text{ m}^2}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "hectare",
-              "note": "A hectare is a 100 m by 100 m square."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
+          "id": "wghs2018-y8-s2q2a",
+          "type": "multipart",
+          "stem": "Convert to the unit shown",
           "meta": {
             "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
             "school": "Willoughby Girls High School",
             "examType": "Yearly Examination",
             "grade": "8",
             "origin": "teacher",
-            "sourceQuestion": "Section 2 Q2(a)(i)",
-            "sourceMarks": 1,
+            "sourceQuestion": "Section 2 Q2(a)",
+            "sourceMarks": 2,
             "page": 12
-          }
-        },
-        {
-          "id": "wghs2018-y8-s2q2a-ii",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "1 m² = ………… cm²",
-          "options": [
-            "100",
-            "10 000",
-            "1 000",
-            "1 000 000"
-          ],
-          "answer": 1,
-          "hint": "1 m = 100 cm. A square metre is a square that is 100 cm by 100 cm.",
-          "steps": [
+          },
+          "parts": [
             {
-              "explain": "First change the side length: 1 m = 100 cm. A square metre is a square with sides 1 m = 100 cm.",
-              "work": "1 m = 100 cm",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 m²</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 cm²</text></svg>"
+              "id": "wghs2018-y8-s2q2a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "1 hectare = ………… m²",
+              "options": [
+                "100",
+                "1 000",
+                "100 000",
+                "10 000"
+              ],
+              "answer": 3,
+              "hint": "A hectare is a square 100 m by 100 m. Find its area.",
+              "steps": [
+                {
+                  "explain": "A hectare is the area of a square with sides 100 m long.",
+                  "work": "1 hectare = a 100 m by 100 m square",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dcfce7\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 hectare</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 m</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 m²</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Area of a square = side × side.",
+                  "work": "\\(100\\times100=10\\,000\\text{ m}^2\\)"
+                },
+                {
+                  "explain": "Check: a hectare is about the size of a rugby field (a bit more than one). Common mistakes: 100 (using only one side) and 1 000 or 100 000 (place value errors).",
+                  "work": "\\(\\boxed{10\\,000\\text{ m}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "hectare",
+                  "note": "A hectare is a 100 m by 100 m square."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(a)(i)",
+                "sourceMarks": 1,
+                "page": 12
               }
             },
             {
-              "explain": "Area of the square in cm².",
-              "work": "\\(100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^2\\)"
-            },
-            {
-              "explain": "Remember that for AREA units you must square the conversion factor: \\(100^2=10\\,000\\). Common mistake: 100 (using the length factor).",
-              "work": "\\(\\boxed{10\\,000\\text{ cm}^2}\\)"
+              "id": "wghs2018-y8-s2q2a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "1 m² = ………… cm²",
+              "options": [
+                "100",
+                "10 000",
+                "1 000",
+                "1 000 000"
+              ],
+              "answer": 1,
+              "hint": "1 m = 100 cm. A square metre is a square that is 100 cm by 100 cm.",
+              "steps": [
+                {
+                  "explain": "First change the side length: 1 m = 100 cm. A square metre is a square with sides 1 m = 100 cm.",
+                  "work": "1 m = 100 cm",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"52%\" height=\"auto\" style=\"display:block;margin:0 auto\"><rect x=\"80\" y=\"20\" width=\"120\" height=\"120\" fill=\"#dbeafe\" fill-opacity=\"1\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"140\" y=\"84.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">1 m²</text><text x=\"140\" y=\"16.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"70\" y=\"84.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\">100 cm</text><text x=\"140\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">100 × 100 = 10 000 cm²</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Area of the square in cm².",
+                  "work": "\\(100\\text{ cm}\\times100\\text{ cm}=10\\,000\\text{ cm}^2\\)"
+                },
+                {
+                  "explain": "Remember that for AREA units you must square the conversion factor: \\(100^2=10\\,000\\). Common mistake: 100 (using the length factor).",
+                  "work": "\\(\\boxed{10\\,000\\text{ cm}^2}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "1 m²",
+                  "note": "Square the length conversion: 100 × 100."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 2 Q2(a)(ii)",
+                "sourceMarks": 1,
+                "page": 12
+              }
             }
-          ],
-          "keyPoints": [
-            {
-              "text": "1 m²",
-              "note": "Square the length conversion: 100 × 100."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-            "school": "Willoughby Girls High School",
-            "examType": "Yearly Examination",
-            "grade": "8",
-            "origin": "teacher",
-            "sourceQuestion": "Section 2 Q2(a)(ii)",
-            "sourceMarks": 1,
-            "page": 12
-          }
+          ]
         },
         {
           "id": "wghs2018-y8-s2q3b",

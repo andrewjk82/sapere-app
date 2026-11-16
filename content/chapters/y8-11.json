@@ -2263,304 +2263,321 @@
           }
         },
         {
-          "id": "wghs2018-y8-s1q4a-i",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "\\(7x - 3x\\)",
-          "options": [
-            "\\(4x\\)",
-            "\\(10x\\)",
-            "\\(4\\)",
-            "\\(4x^2\\)"
-          ],
-          "answer": 0,
-          "hint": "These are like terms (both have x). Subtract the numbers in front.",
-          "steps": [
-            {
-              "explain": "Both terms have the same pronumeral x, so they are LIKE TERMS and can be combined.",
-              "work": "\\(7x-3x\\)"
-            },
-            {
-              "explain": "Subtract the coefficients (the numbers in front of x) and keep x.",
-              "work": "\\(7-3=4\\)\n\\(7x-3x=4x\\)"
-            },
-            {
-              "explain": "Common mistakes: 10x (adding), 4 (losing the x) and 4x² (changing the x).",
-              "work": "\\(\\boxed{4x}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "7x - 3x",
-              "note": "Like terms: subtract the numbers in front of x."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
+          "id": "wghs2018-y8-s1q4a",
+          "type": "multipart",
+          "stem": "Simplify each expression.",
           "meta": {
             "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
             "school": "Willoughby Girls High School",
             "examType": "Yearly Examination",
             "grade": "8",
             "origin": "teacher",
-            "sourceQuestion": "Section 1 Q4(a)(i)",
-            "sourceMarks": 1,
+            "sourceQuestion": "Section 1 Q4(a)",
+            "sourceMarks": 6,
             "page": 5
-          }
-        },
-        {
-          "id": "wghs2018-y8-s1q4a-ii",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "\\(4a \\times 3\\)",
-          "options": [
-            "\\(7a\\)",
-            "\\(12\\)",
-            "\\(12a^2\\)",
-            "\\(12a\\)"
-          ],
-          "answer": 3,
-          "hint": "When multiplying, multiply the numbers together and keep the pronumeral.",
-          "steps": [
+          },
+          "parts": [
             {
-              "explain": "Multiplication: multiply the numbers 4 and 3, and keep the pronumeral a.",
-              "work": "\\(4a\\times3=4\\times3\\times a\\)"
+              "id": "wghs2018-y8-s1q4a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(7x - 3x\\)",
+              "options": [
+                "\\(4x\\)",
+                "\\(10x\\)",
+                "\\(4\\)",
+                "\\(4x^2\\)"
+              ],
+              "answer": 0,
+              "hint": "These are like terms (both have x). Subtract the numbers in front.",
+              "steps": [
+                {
+                  "explain": "Both terms have the same pronumeral x, so they are LIKE TERMS and can be combined.",
+                  "work": "\\(7x-3x\\)"
+                },
+                {
+                  "explain": "Subtract the coefficients (the numbers in front of x) and keep x.",
+                  "work": "\\(7-3=4\\)\n\\(7x-3x=4x\\)"
+                },
+                {
+                  "explain": "Common mistakes: 10x (adding), 4 (losing the x) and 4x² (changing the x).",
+                  "work": "\\(\\boxed{4x}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "7x - 3x",
+                  "note": "Like terms: subtract the numbers in front of x."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q4(a)(i)",
+                "sourceMarks": 1,
+                "page": 5
+              }
             },
             {
-              "explain": "Work out the numbers.",
-              "work": "\\(4\\times3=12\\)"
+              "id": "wghs2018-y8-s1q4a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "\\(4a \\times 3\\)",
+              "options": [
+                "\\(7a\\)",
+                "\\(12\\)",
+                "\\(12a^2\\)",
+                "\\(12a\\)"
+              ],
+              "answer": 3,
+              "hint": "When multiplying, multiply the numbers together and keep the pronumeral.",
+              "steps": [
+                {
+                  "explain": "Multiplication: multiply the numbers 4 and 3, and keep the pronumeral a.",
+                  "work": "\\(4a\\times3=4\\times3\\times a\\)"
+                },
+                {
+                  "explain": "Work out the numbers.",
+                  "work": "\\(4\\times3=12\\)"
+                },
+                {
+                  "explain": "Write the answer with a.",
+                  "work": "\\(4a\\times3=12a\\)"
+                },
+                {
+                  "explain": "Common mistakes: 7a (adding 4 + 3) and 12a² (squaring a, but a appears only once).",
+                  "work": "\\(\\boxed{12a}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "4a \\times 3",
+                  "note": "Multiply the numbers; a appears once."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q4(a)(ii)",
+                "sourceMarks": 1,
+                "page": 5
+              }
             },
             {
-              "explain": "Write the answer with a.",
-              "work": "\\(4a\\times3=12a\\)"
+              "id": "wghs2018-y8-s1q4a-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(7x + 3y - 5x + 2x\\)",
+              "options": [
+                "\\(14x+3y\\)",
+                "\\(10xy\\)",
+                "\\(4x+3y\\)",
+                "\\(9x+3y\\)"
+              ],
+              "answer": 2,
+              "hint": "Group the x terms together (keep the sign in front of each one). The y term cannot join them.",
+              "steps": [
+                {
+                  "explain": "Find the like terms. The x terms are +7x, −5x and +2x. The only y term is +3y.",
+                  "work": "\\(7x-5x+2x\\) and \\(3y\\)"
+                },
+                {
+                  "explain": "Combine the x terms from left to right.",
+                  "work": "\\(7x-5x=2x\\)\n\\(2x+2x=4x\\)"
+                },
+                {
+                  "explain": "x terms and y terms are unlike, so they cannot be combined. Write both parts.",
+                  "work": "\\(4x+3y\\)"
+                },
+                {
+                  "explain": "Common mistakes: 14x (adding the 5x) and 10xy (joining unlike terms).",
+                  "work": "\\(\\boxed{4x+3y}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "7x + 3y - 5x + 2x",
+                  "note": "Collect like terms and keep their signs."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q4(a)(iii)",
+                "sourceMarks": 1,
+                "page": 5
+              }
             },
             {
-              "explain": "Common mistakes: 7a (adding 4 + 3) and 12a² (squaring a, but a appears only once).",
-              "work": "\\(\\boxed{12a}\\)"
+              "id": "wghs2018-y8-s1q4a-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(2a \\times 4a \\times 3b\\)",
+              "options": [
+                "\\(9a^2b\\)",
+                "\\(24ab\\)",
+                "\\(24a^3b\\)",
+                "\\(24a^2b\\)"
+              ],
+              "answer": 3,
+              "hint": "Multiply the numbers first, then the pronumerals. a × a = a².",
+              "steps": [
+                {
+                  "explain": "Multiply the numbers (coefficients).",
+                  "work": "\\(2\\times4\\times3=24\\)"
+                },
+                {
+                  "explain": "Multiply the pronumerals. a × a = a², and b stays as b.",
+                  "work": "\\(a\\times a\\times b=a^2b\\)"
+                },
+                {
+                  "explain": "Put them together.",
+                  "work": "\\(2a\\times4a\\times3b=24a^2b\\)"
+                },
+                {
+                  "explain": "Common mistakes: 9a²b (adding the numbers), 24ab (forgetting a × a = a²) and 24a³b.",
+                  "work": "\\(\\boxed{24a^2b}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "2a \\times 4a \\times 3b",
+                  "note": "Multiply numbers together, then letters."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q4(a)(iv)",
+                "sourceMarks": 1,
+                "page": 5
+              }
+            },
+            {
+              "id": "wghs2018-y8-s1q4a-v",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "\\(\\dfrac{4xy}{2y^2}\\)",
+              "options": [
+                "\\(2xy\\)",
+                "\\(\\frac{2x}{y^2}\\)",
+                "\\(\\frac{2x}{y}\\)",
+                "\\(\\frac{2}{xy}\\)"
+              ],
+              "answer": 2,
+              "hint": "Divide the numbers, then cancel the letters that are on both the top and the bottom.",
+              "steps": [
+                {
+                  "explain": "Simplify the numbers first: 4 ÷ 2 = 2.",
+                  "work": "\\(\\frac{4xy}{2y^2}=\\frac{2xy}{y^2}\\)"
+                },
+                {
+                  "explain": "Write \\(y^2\\) as y × y so you can see what cancels.",
+                  "work": "\\(\\frac{2\\times x\\times y}{y\\times y}\\)"
+                },
+                {
+                  "explain": "Cancel one y from the top and one y from the bottom.",
+                  "work": "\\(\\frac{2\\times x\\times\\cancel{y}}{\\cancel{y}\\times y}=\\frac{2x}{y}\\)"
+                },
+                {
+                  "explain": "Common mistakes: \\(2xy\\) (multiplying instead of dividing) and \\(\\frac{2x}{y^2}\\) (not cancelling the y).",
+                  "work": "\\(\\boxed{\\dfrac{2x}{y}}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "2y^2",
+                  "note": "y² means y × y."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q4(a)(v)",
+                "sourceMarks": 1,
+                "page": 5
+              }
+            },
+            {
+              "id": "wghs2018-y8-s1q4a-vi",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "\\(4a^2b \\div 20ab\\)",
+              "options": [
+                "\\(\\frac{a}{5}\\)",
+                "\\(5a\\)",
+                "\\(\\frac{5}{a}\\)",
+                "\\(\\frac{a}{5b}\\)"
+              ],
+              "answer": 0,
+              "hint": "Write it as a fraction, divide the numbers, then cancel the a's and b's.",
+              "steps": [
+                {
+                  "explain": "Write the division as a fraction.",
+                  "work": "\\(4a^2b\\div20ab=\\frac{4a^2b}{20ab}\\)"
+                },
+                {
+                  "explain": "Divide the numbers: 4 and 20 share the factor 4.",
+                  "work": "\\(\\frac{4}{20}=\\frac{1}{5}\\)"
+                },
+                {
+                  "explain": "Cancel the letters: \\(a^2\\) = a × a, so one a cancels. The b on the top and bottom cancels.",
+                  "work": "\\(\\frac{a\\times a\\times b}{a\\times b}=a\\)"
+                },
+                {
+                  "explain": "Combine the number and the letter parts.",
+                  "work": "\\(\\frac{1}{5}\\times a=\\frac{a}{5}\\)\nCommon mistakes: \\(5a\\) (dividing the wrong way) and \\(\\frac{a}{5b}\\) (not cancelling the b)."
+                },
+                {
+                  "explain": "Check by multiplying back: \\(\\frac{a}{5}\\times20ab=4a^2b\\;\\checkmark\\)",
+                  "work": "\\(\\boxed{\\dfrac{a}{5}}\\)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "4a^2b \\div 20ab",
+                  "note": "Write as a fraction and cancel."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
+                "school": "Willoughby Girls High School",
+                "examType": "Yearly Examination",
+                "grade": "8",
+                "origin": "teacher",
+                "sourceQuestion": "Section 1 Q4(a)(vi)",
+                "sourceMarks": 1,
+                "page": 5
+              }
             }
-          ],
-          "keyPoints": [
-            {
-              "text": "4a \\times 3",
-              "note": "Multiply the numbers; a appears once."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-            "school": "Willoughby Girls High School",
-            "examType": "Yearly Examination",
-            "grade": "8",
-            "origin": "teacher",
-            "sourceQuestion": "Section 1 Q4(a)(ii)",
-            "sourceMarks": 1,
-            "page": 5
-          }
-        },
-        {
-          "id": "wghs2018-y8-s1q4a-iii",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "\\(7x + 3y - 5x + 2x\\)",
-          "options": [
-            "\\(14x+3y\\)",
-            "\\(10xy\\)",
-            "\\(4x+3y\\)",
-            "\\(9x+3y\\)"
-          ],
-          "answer": 2,
-          "hint": "Group the x terms together (keep the sign in front of each one). The y term cannot join them.",
-          "steps": [
-            {
-              "explain": "Find the like terms. The x terms are +7x, −5x and +2x. The only y term is +3y.",
-              "work": "\\(7x-5x+2x\\) and \\(3y\\)"
-            },
-            {
-              "explain": "Combine the x terms from left to right.",
-              "work": "\\(7x-5x=2x\\)\n\\(2x+2x=4x\\)"
-            },
-            {
-              "explain": "x terms and y terms are unlike, so they cannot be combined. Write both parts.",
-              "work": "\\(4x+3y\\)"
-            },
-            {
-              "explain": "Common mistakes: 14x (adding the 5x) and 10xy (joining unlike terms).",
-              "work": "\\(\\boxed{4x+3y}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "7x + 3y - 5x + 2x",
-              "note": "Collect like terms and keep their signs."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-            "school": "Willoughby Girls High School",
-            "examType": "Yearly Examination",
-            "grade": "8",
-            "origin": "teacher",
-            "sourceQuestion": "Section 1 Q4(a)(iii)",
-            "sourceMarks": 1,
-            "page": 5
-          }
-        },
-        {
-          "id": "wghs2018-y8-s1q4a-iv",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "\\(2a \\times 4a \\times 3b\\)",
-          "options": [
-            "\\(9a^2b\\)",
-            "\\(24ab\\)",
-            "\\(24a^3b\\)",
-            "\\(24a^2b\\)"
-          ],
-          "answer": 3,
-          "hint": "Multiply the numbers first, then the pronumerals. a × a = a².",
-          "steps": [
-            {
-              "explain": "Multiply the numbers (coefficients).",
-              "work": "\\(2\\times4\\times3=24\\)"
-            },
-            {
-              "explain": "Multiply the pronumerals. a × a = a², and b stays as b.",
-              "work": "\\(a\\times a\\times b=a^2b\\)"
-            },
-            {
-              "explain": "Put them together.",
-              "work": "\\(2a\\times4a\\times3b=24a^2b\\)"
-            },
-            {
-              "explain": "Common mistakes: 9a²b (adding the numbers), 24ab (forgetting a × a = a²) and 24a³b.",
-              "work": "\\(\\boxed{24a^2b}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "2a \\times 4a \\times 3b",
-              "note": "Multiply numbers together, then letters."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-            "school": "Willoughby Girls High School",
-            "examType": "Yearly Examination",
-            "grade": "8",
-            "origin": "teacher",
-            "sourceQuestion": "Section 1 Q4(a)(iv)",
-            "sourceMarks": 1,
-            "page": 5
-          }
-        },
-        {
-          "id": "wghs2018-y8-s1q4a-v",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "\\(\\dfrac{4xy}{2y^2}\\)",
-          "options": [
-            "\\(2xy\\)",
-            "\\(\\frac{2x}{y^2}\\)",
-            "\\(\\frac{2x}{y}\\)",
-            "\\(\\frac{2}{xy}\\)"
-          ],
-          "answer": 2,
-          "hint": "Divide the numbers, then cancel the letters that are on both the top and the bottom.",
-          "steps": [
-            {
-              "explain": "Simplify the numbers first: 4 ÷ 2 = 2.",
-              "work": "\\(\\frac{4xy}{2y^2}=\\frac{2xy}{y^2}\\)"
-            },
-            {
-              "explain": "Write \\(y^2\\) as y × y so you can see what cancels.",
-              "work": "\\(\\frac{2\\times x\\times y}{y\\times y}\\)"
-            },
-            {
-              "explain": "Cancel one y from the top and one y from the bottom.",
-              "work": "\\(\\frac{2\\times x\\times\\cancel{y}}{\\cancel{y}\\times y}=\\frac{2x}{y}\\)"
-            },
-            {
-              "explain": "Common mistakes: \\(2xy\\) (multiplying instead of dividing) and \\(\\frac{2x}{y^2}\\) (not cancelling the y).",
-              "work": "\\(\\boxed{\\dfrac{2x}{y}}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "2y^2",
-              "note": "y² means y × y."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-            "school": "Willoughby Girls High School",
-            "examType": "Yearly Examination",
-            "grade": "8",
-            "origin": "teacher",
-            "sourceQuestion": "Section 1 Q4(a)(v)",
-            "sourceMarks": 1,
-            "page": 5
-          }
-        },
-        {
-          "id": "wghs2018-y8-s1q4a-vi",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "\\(4a^2b \\div 20ab\\)",
-          "options": [
-            "\\(\\frac{a}{5}\\)",
-            "\\(5a\\)",
-            "\\(\\frac{5}{a}\\)",
-            "\\(\\frac{a}{5b}\\)"
-          ],
-          "answer": 0,
-          "hint": "Write it as a fraction, divide the numbers, then cancel the a's and b's.",
-          "steps": [
-            {
-              "explain": "Write the division as a fraction.",
-              "work": "\\(4a^2b\\div20ab=\\frac{4a^2b}{20ab}\\)"
-            },
-            {
-              "explain": "Divide the numbers: 4 and 20 share the factor 4.",
-              "work": "\\(\\frac{4}{20}=\\frac{1}{5}\\)"
-            },
-            {
-              "explain": "Cancel the letters: \\(a^2\\) = a × a, so one a cancels. The b on the top and bottom cancels.",
-              "work": "\\(\\frac{a\\times a\\times b}{a\\times b}=a\\)"
-            },
-            {
-              "explain": "Combine the number and the letter parts.",
-              "work": "\\(\\frac{1}{5}\\times a=\\frac{a}{5}\\)\nCommon mistakes: \\(5a\\) (dividing the wrong way) and \\(\\frac{a}{5b}\\) (not cancelling the b)."
-            },
-            {
-              "explain": "Check by multiplying back: \\(\\frac{a}{5}\\times20ab=4a^2b\\;\\checkmark\\)",
-              "work": "\\(\\boxed{\\dfrac{a}{5}}\\)"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "4a^2b \\div 20ab",
-              "note": "Write as a fraction and cancel."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Yearly Examination 2018",
-            "school": "Willoughby Girls High School",
-            "examType": "Yearly Examination",
-            "grade": "8",
-            "origin": "teacher",
-            "sourceQuestion": "Section 1 Q4(a)(vi)",
-            "sourceMarks": 1,
-            "page": 5
-          }
+          ]
         }
       ]
     },
