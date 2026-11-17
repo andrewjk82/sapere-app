@@ -182,6 +182,22 @@ fractions that teachers read as "broken LaTeX".)
 - Before finishing, run `node tools/content/lintQuestion.mjs content/chapters/<file>.json '<id regex>'`
   — it flags all of the above — and fix every fraction warning on the questions you touched.
 
+## Figures in added questions: vector SVG, clean and faithful (2026-11-17)
+
+Standing rule for EVERY question you add or edit, never needs to be repeated. If the source (PDF, screenshot,
+book page) has a figure, graph, table or diagram, store it as a **vector SVG** (`figure.svg`, `steps[].figure`),
+never a raster image, and make it **clean and good-looking**:
+
+- Reproduce the original exactly (shapes, labels, proportions). Extract outlines from the page with OpenCV
+  contours (black ink → even-odd `<path>`, colour fills → polygons) or hand-draw the geometry; do not embed `<image>`.
+- Tidy rendering: non-square `viewBox` sized to the content, `width="100%" height="auto"`, `max-width` >= 312px,
+  crisp strokes, no white label boxes sitting on lines, labels never overlapping lines or other labels, no scan noise.
+- Question figure shows only what the question GIVES (never the answer — see the answer-leak rule above).
+- Solution steps get their own highlighted figure (sides/angles/regions in colour, labelled) — never identical to the
+  question figure.
+- Text-only options cannot render figures: put option graphics into ONE labelled A-D figure on the question and keep text options "A"…"D".
+- Check the result by rendering it (Playwright screenshot) before committing.
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
