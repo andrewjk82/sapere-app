@@ -19652,6 +19652,56 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-t4a-q13a",
+          "type": "mc",
+          "stem": "Expand and simplify the following algebraic expressions. \\((3x + 1)(2 - x) + 2x + 4\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-3x^2 + 7x + 6\\)",
+            "\\(-3x^2 + 5x + 2\\)",
+            "\\(3x^2 + 7x + 6\\)",
+            "\\(-3x^2 + 3x + 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the product of two brackets first (all FOUR terms), then collect the like terms with \\(+2x+4\\). Watch the signs: \\((3x)(-x)\\) is negative.",
+          "steps": [
+            {
+              "explain": "Expand \\((3x+1)(2-x)\\) term by term: first × first, first × second, second × first, second × second.",
+              "work": "\\(3x\\times2 + 3x\\times(-x) + 1\\times 2 + 1\\times(-x)\\)"
+            },
+            {
+              "explain": "Work out each product carefully with its sign.",
+              "work": "\\(6x - 3x^2 + 2 - x\\)"
+            },
+            {
+              "explain": "Add the remaining part of the expression: \\(+ 2x + 4\\).",
+              "work": "\\(6x - 3x^2 + 2 - x + 2x + 4\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(x^2\\) terms: \\(-3x^2\\); \\(x\\) terms: \\(6x - x + 2x = 7x\\); numbers: \\(2 + 4 = 6\\).",
+              "work": "\\(\\textcolor{#b45309}{-3x^2} + \\textcolor{#2563eb}{7x} + \\textcolor{#15803d}{6}\\)"
+            },
+            {
+              "explain": "Write in descending powers of x.",
+              "work": "\\(-3x^2 + 7x + 6\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify the following algebraic expressions",
+              "note": "Expand the binomial product, then collect like terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -22576,6 +22626,52 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-t4a-q13b",
+          "type": "mc",
+          "stem": "Expand and simplify the following algebraic expressions. \\((x - y)^2 - (x + y)^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-4xy\\)",
+            "\\(0\\)",
+            "\\(4xy\\)",
+            "\\(-2xy\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand each square separately: \\((x-y)^2 = x^2 - 2xy + y^2\\) and \\((x+y)^2 = x^2 + 2xy + y^2\\). Then SUBTRACT — change every sign of the second bracket.",
+          "steps": [
+            {
+              "explain": "Expand the first perfect square.",
+              "work": "\\((x - y)^2 = x^2 \\textcolor{#b45309}{- 2xy} + y^2\\)"
+            },
+            {
+              "explain": "Expand the second perfect square.",
+              "work": "\\((x + y)^2 = x^2 \\textcolor{#2563eb}{+ 2xy} + y^2\\)"
+            },
+            {
+              "explain": "Subtract: put the second result in a bracket and change ALL its signs.",
+              "work": "\\((x^2 - 2xy + y^2) - (x^2 + 2xy + y^2) = x^2 - 2xy + y^2 - x^2 - 2xy - y^2\\)"
+            },
+            {
+              "explain": "\\(x^2\\) cancels with \\(-x^2\\), and \\(y^2\\) cancels with \\(-y^2\\). The \\(xy\\) terms add: \\(-2xy - 2xy = -4xy\\).",
+              "work": "\\(-4xy\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify the following algebraic expressions",
+              "note": "Square each bracket, then subtract (flip all signs)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -24713,6 +24809,50 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q7",
+          "type": "mc",
+          "stem": "Which of the following expansion represents a difference of two squares?",
+          "difficulty": "easy",
+          "options": [
+            "\\((a+b)^2 = a^2 + 2ab + b^2\\)",
+            "\\((a-b)(a+b) = a^2 - b^2\\)"
+          ],
+          "answer": 1,
+          "hint": "A difference of two squares is \\((\\text{something})^2 - (\\text{something})^2\\) — one square MINUS another square, with NO middle term.",
+          "steps": [
+            {
+              "explain": "Option A: \\((a+b)^2\\) expands to three terms. It is a perfect square, with a middle term \\(2ab\\).",
+              "work": "\\(a^2 + \\textcolor{#b45309}{2ab} + b^2\\)  <span style=\"color:#b91c1c;font-weight:700\">✗ not a difference</span>"
+            },
+            {
+              "explain": "A difference of two squares has just TWO terms: one square minus another.",
+              "work": "\\(a^2 - b^2\\)"
+            },
+            {
+              "explain": "Option B: multiplying \\((a-b)(a+b)\\) the middle terms cancel (\\(+ab - ab = 0\\)), leaving only the two squares.",
+              "work": "\\((a-b)(a+b) = a^2 \\textcolor{#2563eb}{+ab - ab} - b^2 = \\textcolor{#b45309}{a^2 - b^2}\\)"
+            },
+            {
+              "explain": "So B is the difference of two squares.",
+              "work": "<span style=\"color:#047857;font-weight:700\">Answer: B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "difference of two squares",
+              "note": "Two perfect squares subtracted, no middle term."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
           }
         }
       ]
