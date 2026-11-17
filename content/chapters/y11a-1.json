@@ -21590,6 +21590,52 @@
               "note": "Factor \\(x^2-4\\), then rewrite the second fraction with the common denominator."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q13",
+          "type": "mc",
+          "stem": "Simplify fully \\(\\dfrac{5}{x^2 - 3x + 2} - \\dfrac{3}{x - 1}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{11 - 3x}{(x - 1)(x - 2)}\\)",
+            "\\(\\dfrac{2}{(x - 1)(x - 2)}\\)",
+            "\\(\\dfrac{-3x - 1}{(x - 1)(x - 2)}\\)",
+            "\\(\\dfrac{11 - 3x}{x - 1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise the first denominator first. Then find the common denominator and put brackets around the second numerator before subtracting.",
+          "steps": [
+            {
+              "explain": "Factorise \\(x^2 - 3x + 2\\): product <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">2</mark>, sum <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">-3</mark> → \\(-1\\) and \\(-2\\).",
+              "work": "\\(x^2 - 3x + 2 = (x - 1)(x - 2)\\)"
+            },
+            {
+              "explain": "The common denominator is \\((x - 1)(x - 2)\\). The second fraction is missing the factor \\((x - 2)\\).",
+              "work": "\\(\\dfrac{5}{(x-1)(x-2)} - \\dfrac{3\\textcolor{#b45309}{(x-2)}}{(x-1)\\textcolor{#b45309}{(x-2)}}\\)"
+            },
+            {
+              "explain": "Combine the numerators. The minus applies to the WHOLE \\(3(x - 2)\\).",
+              "work": "\\(\\dfrac{5 - 3(x - 2)}{(x-1)(x-2)} = \\dfrac{5 - 3x + 6}{(x-1)(x-2)}\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(\\dfrac{11 - 3x}{(x - 1)(x - 2)}\\)  ✓ (nothing cancels)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify fully",
+              "note": "Factorise denominators, then combine."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

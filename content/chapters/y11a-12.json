@@ -1396,6 +1396,69 @@
               "note": "Use this specific condition to select the relevant probability calculation."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q21a",
+          "type": "mc",
+          "stem": "A class has 28 students. 5 of them study neither Art nor Music and 8 of them study exactly one of Art and Music. Two students are chosen at random from the class. Draw a Venn diagram to represent this information showing only the number studying both Art and Music, and the number studying neither Art nor Music. What numbers go in the two boxes (both Art and Music, neither)?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 699 410.4\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M579.4 339.7 L579.4 378.7 L656.9 378.7 L657.4 378.3 L657.4 339.7 L656.9 339.3 L579.8 339.3ZM580.2 341.5 L581.1 340.2 L655.6 340.2 L656.5 341.5 L656.5 377 L655.6 377.9 L581.1 377.9 L580.2 377ZM309 185.5 L309 224 L309.4 224.5 L387 224.5 L387.4 223.2 L387.4 185.9 L386.5 184.6 L309.8 184.6ZM309.8 186.8 L310.7 185.9 L385.7 185.9 L386.1 186.3 L386.1 222.7 L385.7 223.2 L310.3 223.2 L309.8 222.7ZM71.1 184.6 L69.8 195.4 L69.8 213.6 L71.5 227.5 L72.4 229.2 L72.8 233.6 L73.7 234.9 L75.4 242.7 L80.6 256.1 L86.7 267.8 L94.9 280.4 L104.9 292.5 L115.7 303.3 L129.6 314.6 L141.3 322.4 L161.2 332.8 L176.4 338.9 L195.4 344.5 L213.2 348 L230.1 349.7 L243.1 349.7 L244.4 350.1 L244.8 349.7 L263.9 349.3 L282.1 346.7 L284.3 345.8 L294.2 344.1 L295.5 343.2 L299 342.8 L311.6 338.9 L323.7 334.1 L338 327.2 L348 321.1 L355.8 325.9 L369.6 332.8 L384.8 338.9 L407.8 345.4 L432 349.3 L451.5 349.7 L452 350.1 L472.3 349.3 L475.8 348.4 L483.2 348 L485.3 347.1 L497 345.4 L520 338.9 L536 332.4 L548.2 326.3 L562.9 317.2 L572.9 309.8 L582 302 L596.3 286.9 L606.7 272.6 L610.6 266.1 L617.1 252.6 L620.5 243.5 L623.6 232.7 L623.6 230.5 L624.4 228.8 L624.9 223.6 L625.7 221 L626.2 211.5 L626.6 211 L626.6 198.5 L626.2 198 L625.7 188.1 L623.1 174.6 L622.3 173.3 L621.8 169.9 L621 168.6 L617.9 158.6 L611.9 145.6 L602.8 130.9 L595.4 121.3 L584.6 109.6 L575.9 101.8 L560.7 90.6 L548.6 83.2 L526.5 72.8 L515.7 68.9 L496.2 63.7 L481.9 61.1 L474.5 60.7 L470.6 59.8 L463.2 59.8 L462.8 59.4 L434.2 59.8 L430.3 60.7 L422.9 61.1 L404.7 64.6 L389.1 68.9 L376.1 73.7 L359.2 81.5 L348.4 88 L347.5 88 L339.3 82.8 L327.2 76.7 L314.6 71.5 L304.2 68.5 L302.9 67.6 L299.9 67.2 L298.6 66.3 L273.4 61.1 L261.7 59.8 L254.8 59.8 L254.4 59.4 L225.8 59.8 L206.3 62.4 L204.5 63.3 L199.8 63.7 L182 68.5 L158.6 77.6 L139.5 88 L121.3 101 L106.2 115.3 L99.7 122.6 L91.9 133 L83.2 147.8 L78.9 157.3 L75 168.1ZM347.5 89.7 L351.4 91.4 L360.1 97.5 L375.3 110.5 L388.3 124.8 L397.8 138.2 L405.6 152.5 L410.4 164.2 L414.3 177.7 L416.9 194.6 L416.9 214.5 L414.3 231.4 L413.4 233.1 L412.1 239.6 L407.8 251.8 L406.9 252.6 L406.5 254.8 L401.3 265.2 L391.7 279.9 L380.9 292.9 L365.3 307.7 L348.8 319.4 L346.7 318.9 L338.9 313.7 L325 302.5 L310.7 287.7 L298.6 271.3 L290.3 256.1 L284.3 240.1 L280.4 223.2 L279.1 210.6 L279.1 198.5 L281.7 179 L282.5 177.2 L284.3 169 L288.2 158.2 L295.5 143 L303.3 130.9 L315.5 116.1 L322.4 109.2 L332.4 100.5ZM411.7 64.1 L414.3 64.1 L416.4 63.3 L422.1 62.8 L424.7 62 L432.9 61.5 L437.2 60.7 L445 60.7 L445.5 60.2 L458.9 60.2 L459.3 60.7 L467.6 60.7 L471.9 61.5 L476.2 61.5 L488.4 63.3 L505.7 67.2 L520.9 71.9 L533.9 77.1 L542.1 81 L557.3 89.7 L568.5 97.5 L582.4 109.2 L591.9 119.2 L601 130.4 L608.4 141.7 L614.9 154.3 L621.4 172.5 L624 184.2 L625.3 194.6 L625.3 214.9 L624 224.9 L621.4 236.6 L616.2 251.8 L612.3 260.4 L604.5 273.9 L590.6 291.6 L579.8 302.5 L568.1 312 L558.1 318.9 L542.5 328 L528.2 334.5 L517.8 338.4 L495.7 344.5 L481.4 347.1 L473.6 347.5 L469.3 348.4 L442 348.8 L417.7 346.2 L413.4 344.9 L410.8 344.9 L390.9 339.7 L378.7 335.4 L364.9 329.3 L349.7 320.7 L350.1 319.8 L366.6 308.1 L374 301.6 L387.8 286.9 L398.2 272.6 L407.3 255.7 L412.5 241.8 L416.4 226.2 L418.2 210.2 L417.7 192 L415.1 176.8 L411.2 163.4 L403.4 145.6 L396.1 133.5 L384.4 118.3 L376.6 110.1 L367.9 102.3 L349.7 88.8 L351 87.5 L360.1 82.3 L379.2 73.7 L391.3 69.3ZM203.2 64.1 L205.8 64.1 L208 63.3 L213.6 62.8 L216.2 62 L224.5 61.5 L228.8 60.7 L236.6 60.7 L237 60.2 L259.1 60.7 L279.9 63.3 L297.3 67.2 L319.4 74.5 L333.7 81 L343.2 86.2 L346.7 88.8 L333.7 97.9 L321.5 108.3 L310.7 119.6 L299 135.2 L291.2 148.6 L284.7 164.2 L280.8 178.1 L278.2 195.4 L278.2 213.6 L280.8 231.4 L286 248.7 L289.9 257.8 L295.1 267.8 L301.2 277.3 L313.3 292.5 L324.1 303.3 L332.4 310.3 L346.7 320.2 L338.9 325.4 L325.9 331.9 L312.9 337.1 L291.2 343.6 L289 343.6 L287.3 344.5 L278.2 346.2 L275.2 346.2 L272.6 347.1 L254.4 348.8 L233.6 348.8 L233.1 348.4 L226.6 348.4 L222.7 347.5 L214.9 347.1 L205 344.9 L202.4 344.9 L182.4 339.7 L172.5 335.8 L171.2 335.8 L151.2 326.7 L134.8 316.8 L120.5 305.9 L104.4 290.3 L96.6 280.8 L86.2 264.8 L81.9 256.1 L77.1 244.4 L72.4 225.8 L70.6 211 L70.6 198 L71.9 185.9 L75.8 169 L82.3 152.1 L90.1 137.8 L102.7 120.9 L115.3 107.9 L124.4 100.1 L138.2 90.1 L151.7 82.3 L168.6 74.5 L182.9 69.3ZM0 2.2 L0 406.9 L0.4 407.8 L695.5 407.8 L696.4 406.5 L696.4 2.6 L695.5 1.3 L0.9 1.3ZM1.3 3 L1.7 2.6 L694.6 2.6 L695.1 3 L695.1 406 L694.2 406.9 L1.7 406.9 L1.3 406.5Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "options": [
+            "15 and 5",
+            "10 and 5",
+            "15 and 8",
+            "23 and 5"
+          ],
+          "answer": 0,
+          "hint": "Split the 28 students into three groups: neither, exactly one, and both. The three groups add up to 28.",
+          "steps": [
+            {
+              "explain": "The Venn diagram has two boxes: the overlap (both subjects) and the outside box (neither).",
+              "work": "overlap = both;  outside = neither",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 699 410.4\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M579.4 339.7 L579.4 378.7 L656.9 378.7 L657.4 378.3 L657.4 339.7 L656.9 339.3 L579.8 339.3ZM580.2 341.5 L581.1 340.2 L655.6 340.2 L656.5 341.5 L656.5 377 L655.6 377.9 L581.1 377.9 L580.2 377ZM309 185.5 L309 224 L309.4 224.5 L387 224.5 L387.4 223.2 L387.4 185.9 L386.5 184.6 L309.8 184.6ZM309.8 186.8 L310.7 185.9 L385.7 185.9 L386.1 186.3 L386.1 222.7 L385.7 223.2 L310.3 223.2 L309.8 222.7ZM71.1 184.6 L69.8 195.4 L69.8 213.6 L71.5 227.5 L72.4 229.2 L72.8 233.6 L73.7 234.9 L75.4 242.7 L80.6 256.1 L86.7 267.8 L94.9 280.4 L104.9 292.5 L115.7 303.3 L129.6 314.6 L141.3 322.4 L161.2 332.8 L176.4 338.9 L195.4 344.5 L213.2 348 L230.1 349.7 L243.1 349.7 L244.4 350.1 L244.8 349.7 L263.9 349.3 L282.1 346.7 L284.3 345.8 L294.2 344.1 L295.5 343.2 L299 342.8 L311.6 338.9 L323.7 334.1 L338 327.2 L348 321.1 L355.8 325.9 L369.6 332.8 L384.8 338.9 L407.8 345.4 L432 349.3 L451.5 349.7 L452 350.1 L472.3 349.3 L475.8 348.4 L483.2 348 L485.3 347.1 L497 345.4 L520 338.9 L536 332.4 L548.2 326.3 L562.9 317.2 L572.9 309.8 L582 302 L596.3 286.9 L606.7 272.6 L610.6 266.1 L617.1 252.6 L620.5 243.5 L623.6 232.7 L623.6 230.5 L624.4 228.8 L624.9 223.6 L625.7 221 L626.2 211.5 L626.6 211 L626.6 198.5 L626.2 198 L625.7 188.1 L623.1 174.6 L622.3 173.3 L621.8 169.9 L621 168.6 L617.9 158.6 L611.9 145.6 L602.8 130.9 L595.4 121.3 L584.6 109.6 L575.9 101.8 L560.7 90.6 L548.6 83.2 L526.5 72.8 L515.7 68.9 L496.2 63.7 L481.9 61.1 L474.5 60.7 L470.6 59.8 L463.2 59.8 L462.8 59.4 L434.2 59.8 L430.3 60.7 L422.9 61.1 L404.7 64.6 L389.1 68.9 L376.1 73.7 L359.2 81.5 L348.4 88 L347.5 88 L339.3 82.8 L327.2 76.7 L314.6 71.5 L304.2 68.5 L302.9 67.6 L299.9 67.2 L298.6 66.3 L273.4 61.1 L261.7 59.8 L254.8 59.8 L254.4 59.4 L225.8 59.8 L206.3 62.4 L204.5 63.3 L199.8 63.7 L182 68.5 L158.6 77.6 L139.5 88 L121.3 101 L106.2 115.3 L99.7 122.6 L91.9 133 L83.2 147.8 L78.9 157.3 L75 168.1ZM347.5 89.7 L351.4 91.4 L360.1 97.5 L375.3 110.5 L388.3 124.8 L397.8 138.2 L405.6 152.5 L410.4 164.2 L414.3 177.7 L416.9 194.6 L416.9 214.5 L414.3 231.4 L413.4 233.1 L412.1 239.6 L407.8 251.8 L406.9 252.6 L406.5 254.8 L401.3 265.2 L391.7 279.9 L380.9 292.9 L365.3 307.7 L348.8 319.4 L346.7 318.9 L338.9 313.7 L325 302.5 L310.7 287.7 L298.6 271.3 L290.3 256.1 L284.3 240.1 L280.4 223.2 L279.1 210.6 L279.1 198.5 L281.7 179 L282.5 177.2 L284.3 169 L288.2 158.2 L295.5 143 L303.3 130.9 L315.5 116.1 L322.4 109.2 L332.4 100.5ZM411.7 64.1 L414.3 64.1 L416.4 63.3 L422.1 62.8 L424.7 62 L432.9 61.5 L437.2 60.7 L445 60.7 L445.5 60.2 L458.9 60.2 L459.3 60.7 L467.6 60.7 L471.9 61.5 L476.2 61.5 L488.4 63.3 L505.7 67.2 L520.9 71.9 L533.9 77.1 L542.1 81 L557.3 89.7 L568.5 97.5 L582.4 109.2 L591.9 119.2 L601 130.4 L608.4 141.7 L614.9 154.3 L621.4 172.5 L624 184.2 L625.3 194.6 L625.3 214.9 L624 224.9 L621.4 236.6 L616.2 251.8 L612.3 260.4 L604.5 273.9 L590.6 291.6 L579.8 302.5 L568.1 312 L558.1 318.9 L542.5 328 L528.2 334.5 L517.8 338.4 L495.7 344.5 L481.4 347.1 L473.6 347.5 L469.3 348.4 L442 348.8 L417.7 346.2 L413.4 344.9 L410.8 344.9 L390.9 339.7 L378.7 335.4 L364.9 329.3 L349.7 320.7 L350.1 319.8 L366.6 308.1 L374 301.6 L387.8 286.9 L398.2 272.6 L407.3 255.7 L412.5 241.8 L416.4 226.2 L418.2 210.2 L417.7 192 L415.1 176.8 L411.2 163.4 L403.4 145.6 L396.1 133.5 L384.4 118.3 L376.6 110.1 L367.9 102.3 L349.7 88.8 L351 87.5 L360.1 82.3 L379.2 73.7 L391.3 69.3ZM203.2 64.1 L205.8 64.1 L208 63.3 L213.6 62.8 L216.2 62 L224.5 61.5 L228.8 60.7 L236.6 60.7 L237 60.2 L259.1 60.7 L279.9 63.3 L297.3 67.2 L319.4 74.5 L333.7 81 L343.2 86.2 L346.7 88.8 L333.7 97.9 L321.5 108.3 L310.7 119.6 L299 135.2 L291.2 148.6 L284.7 164.2 L280.8 178.1 L278.2 195.4 L278.2 213.6 L280.8 231.4 L286 248.7 L289.9 257.8 L295.1 267.8 L301.2 277.3 L313.3 292.5 L324.1 303.3 L332.4 310.3 L346.7 320.2 L338.9 325.4 L325.9 331.9 L312.9 337.1 L291.2 343.6 L289 343.6 L287.3 344.5 L278.2 346.2 L275.2 346.2 L272.6 347.1 L254.4 348.8 L233.6 348.8 L233.1 348.4 L226.6 348.4 L222.7 347.5 L214.9 347.1 L205 344.9 L202.4 344.9 L182.4 339.7 L172.5 335.8 L171.2 335.8 L151.2 326.7 L134.8 316.8 L120.5 305.9 L104.4 290.3 L96.6 280.8 L86.2 264.8 L81.9 256.1 L77.1 244.4 L72.4 225.8 L70.6 211 L70.6 198 L71.9 185.9 L75.8 169 L82.3 152.1 L90.1 137.8 L102.7 120.9 L115.3 107.9 L124.4 100.1 L138.2 90.1 L151.7 82.3 L168.6 74.5 L182.9 69.3ZM0 2.2 L0 406.9 L0.4 407.8 L695.5 407.8 L696.4 406.5 L696.4 2.6 L695.5 1.3 L0.9 1.3ZM1.3 3 L1.7 2.6 L694.6 2.6 L695.1 3 L695.1 406 L694.2 406.9 L1.7 406.9 L1.3 406.5Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g><rect x=\"2\" y=\"2\" width=\"695\" height=\"406.4\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Neither: the question says \\(5\\) students study neither subject. That goes in the outside box.",
+              "work": "\\(\\text{neither} = 5\\)"
+            },
+            {
+              "explain": "Exactly one subject: 8 students. They are in the circles but outside the overlap (not shown, as the question says only boxes).",
+              "work": "\\(\\text{exactly one} = 8\\)"
+            },
+            {
+              "explain": "Everyone else must study BOTH. Subtract the other groups from the total of 28.",
+              "work": "\\(\\text{both} = 28 - 5 - 8 = \\textcolor{#b45309}{15}\\)"
+            },
+            {
+              "explain": "Fill in the two boxes: overlap \\(15\\), outside \\(5\\).",
+              "work": "both = 15, neither = 5",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 699 410.4\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M579.4 339.7 L579.4 378.7 L656.9 378.7 L657.4 378.3 L657.4 339.7 L656.9 339.3 L579.8 339.3ZM580.2 341.5 L581.1 340.2 L655.6 340.2 L656.5 341.5 L656.5 377 L655.6 377.9 L581.1 377.9 L580.2 377ZM309 185.5 L309 224 L309.4 224.5 L387 224.5 L387.4 223.2 L387.4 185.9 L386.5 184.6 L309.8 184.6ZM309.8 186.8 L310.7 185.9 L385.7 185.9 L386.1 186.3 L386.1 222.7 L385.7 223.2 L310.3 223.2 L309.8 222.7ZM71.1 184.6 L69.8 195.4 L69.8 213.6 L71.5 227.5 L72.4 229.2 L72.8 233.6 L73.7 234.9 L75.4 242.7 L80.6 256.1 L86.7 267.8 L94.9 280.4 L104.9 292.5 L115.7 303.3 L129.6 314.6 L141.3 322.4 L161.2 332.8 L176.4 338.9 L195.4 344.5 L213.2 348 L230.1 349.7 L243.1 349.7 L244.4 350.1 L244.8 349.7 L263.9 349.3 L282.1 346.7 L284.3 345.8 L294.2 344.1 L295.5 343.2 L299 342.8 L311.6 338.9 L323.7 334.1 L338 327.2 L348 321.1 L355.8 325.9 L369.6 332.8 L384.8 338.9 L407.8 345.4 L432 349.3 L451.5 349.7 L452 350.1 L472.3 349.3 L475.8 348.4 L483.2 348 L485.3 347.1 L497 345.4 L520 338.9 L536 332.4 L548.2 326.3 L562.9 317.2 L572.9 309.8 L582 302 L596.3 286.9 L606.7 272.6 L610.6 266.1 L617.1 252.6 L620.5 243.5 L623.6 232.7 L623.6 230.5 L624.4 228.8 L624.9 223.6 L625.7 221 L626.2 211.5 L626.6 211 L626.6 198.5 L626.2 198 L625.7 188.1 L623.1 174.6 L622.3 173.3 L621.8 169.9 L621 168.6 L617.9 158.6 L611.9 145.6 L602.8 130.9 L595.4 121.3 L584.6 109.6 L575.9 101.8 L560.7 90.6 L548.6 83.2 L526.5 72.8 L515.7 68.9 L496.2 63.7 L481.9 61.1 L474.5 60.7 L470.6 59.8 L463.2 59.8 L462.8 59.4 L434.2 59.8 L430.3 60.7 L422.9 61.1 L404.7 64.6 L389.1 68.9 L376.1 73.7 L359.2 81.5 L348.4 88 L347.5 88 L339.3 82.8 L327.2 76.7 L314.6 71.5 L304.2 68.5 L302.9 67.6 L299.9 67.2 L298.6 66.3 L273.4 61.1 L261.7 59.8 L254.8 59.8 L254.4 59.4 L225.8 59.8 L206.3 62.4 L204.5 63.3 L199.8 63.7 L182 68.5 L158.6 77.6 L139.5 88 L121.3 101 L106.2 115.3 L99.7 122.6 L91.9 133 L83.2 147.8 L78.9 157.3 L75 168.1ZM347.5 89.7 L351.4 91.4 L360.1 97.5 L375.3 110.5 L388.3 124.8 L397.8 138.2 L405.6 152.5 L410.4 164.2 L414.3 177.7 L416.9 194.6 L416.9 214.5 L414.3 231.4 L413.4 233.1 L412.1 239.6 L407.8 251.8 L406.9 252.6 L406.5 254.8 L401.3 265.2 L391.7 279.9 L380.9 292.9 L365.3 307.7 L348.8 319.4 L346.7 318.9 L338.9 313.7 L325 302.5 L310.7 287.7 L298.6 271.3 L290.3 256.1 L284.3 240.1 L280.4 223.2 L279.1 210.6 L279.1 198.5 L281.7 179 L282.5 177.2 L284.3 169 L288.2 158.2 L295.5 143 L303.3 130.9 L315.5 116.1 L322.4 109.2 L332.4 100.5ZM411.7 64.1 L414.3 64.1 L416.4 63.3 L422.1 62.8 L424.7 62 L432.9 61.5 L437.2 60.7 L445 60.7 L445.5 60.2 L458.9 60.2 L459.3 60.7 L467.6 60.7 L471.9 61.5 L476.2 61.5 L488.4 63.3 L505.7 67.2 L520.9 71.9 L533.9 77.1 L542.1 81 L557.3 89.7 L568.5 97.5 L582.4 109.2 L591.9 119.2 L601 130.4 L608.4 141.7 L614.9 154.3 L621.4 172.5 L624 184.2 L625.3 194.6 L625.3 214.9 L624 224.9 L621.4 236.6 L616.2 251.8 L612.3 260.4 L604.5 273.9 L590.6 291.6 L579.8 302.5 L568.1 312 L558.1 318.9 L542.5 328 L528.2 334.5 L517.8 338.4 L495.7 344.5 L481.4 347.1 L473.6 347.5 L469.3 348.4 L442 348.8 L417.7 346.2 L413.4 344.9 L410.8 344.9 L390.9 339.7 L378.7 335.4 L364.9 329.3 L349.7 320.7 L350.1 319.8 L366.6 308.1 L374 301.6 L387.8 286.9 L398.2 272.6 L407.3 255.7 L412.5 241.8 L416.4 226.2 L418.2 210.2 L417.7 192 L415.1 176.8 L411.2 163.4 L403.4 145.6 L396.1 133.5 L384.4 118.3 L376.6 110.1 L367.9 102.3 L349.7 88.8 L351 87.5 L360.1 82.3 L379.2 73.7 L391.3 69.3ZM203.2 64.1 L205.8 64.1 L208 63.3 L213.6 62.8 L216.2 62 L224.5 61.5 L228.8 60.7 L236.6 60.7 L237 60.2 L259.1 60.7 L279.9 63.3 L297.3 67.2 L319.4 74.5 L333.7 81 L343.2 86.2 L346.7 88.8 L333.7 97.9 L321.5 108.3 L310.7 119.6 L299 135.2 L291.2 148.6 L284.7 164.2 L280.8 178.1 L278.2 195.4 L278.2 213.6 L280.8 231.4 L286 248.7 L289.9 257.8 L295.1 267.8 L301.2 277.3 L313.3 292.5 L324.1 303.3 L332.4 310.3 L346.7 320.2 L338.9 325.4 L325.9 331.9 L312.9 337.1 L291.2 343.6 L289 343.6 L287.3 344.5 L278.2 346.2 L275.2 346.2 L272.6 347.1 L254.4 348.8 L233.6 348.8 L233.1 348.4 L226.6 348.4 L222.7 347.5 L214.9 347.1 L205 344.9 L202.4 344.9 L182.4 339.7 L172.5 335.8 L171.2 335.8 L151.2 326.7 L134.8 316.8 L120.5 305.9 L104.4 290.3 L96.6 280.8 L86.2 264.8 L81.9 256.1 L77.1 244.4 L72.4 225.8 L70.6 211 L70.6 198 L71.9 185.9 L75.8 169 L82.3 152.1 L90.1 137.8 L102.7 120.9 L115.3 107.9 L124.4 100.1 L138.2 90.1 L151.7 82.3 L168.6 74.5 L182.9 69.3ZM0 2.2 L0 406.9 L0.4 407.8 L695.5 407.8 L696.4 406.5 L696.4 2.6 L695.5 1.3 L0.9 1.3ZM1.3 3 L1.7 2.6 L694.6 2.6 L695.1 3 L695.1 406 L694.2 406.9 L1.7 406.9 L1.3 406.5Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><text x=\"348\" y=\"211\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#dc2626\">15</text><text x=\"620\" y=\"364\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#dc2626\">5</text></g></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "A class has 28 students",
+              "note": "Total = neither + exactly one + both."
+            },
+            {
+              "text": "Draw a Venn diagram",
+              "note": "Only the two boxes are asked."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5075,6 +5138,117 @@
             "course": "Advanced",
             "grade": "11"
           }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q15",
+          "type": "mc",
+          "stem": "The probability that Gemma gets a concert booking with her band on any given weekend is 0.65. What is the probability that over two consecutive weekends she will get at least one concert booking?",
+          "difficulty": "medium",
+          "options": [
+            "0.8775",
+            "1.3",
+            "0.4225",
+            "0.1225"
+          ],
+          "answer": 0,
+          "hint": "'At least one' = 1 − P(NONE). First find the probability of NO booking on a weekend, then both weekends.",
+          "steps": [
+            {
+              "explain": "Probability of NO booking on one weekend (the complement).",
+              "work": "\\(P(\\text{no booking}) = 1 - 0.65 = \\textcolor{#b45309}{0.35}\\)"
+            },
+            {
+              "explain": "The two weekends are independent, so multiply to get 'no booking on both weekends'.",
+              "work": "\\(P(\\text{none in 2 weekends}) = 0.35 \\times 0.35 = 0.1225\\)"
+            },
+            {
+              "explain": "'At least one booking' is the complement of 'none'.",
+              "work": "\\(P(\\text{at least one}) = 1 - 0.1225\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(= 0.8775\\)  ✓"
+            },
+            {
+              "explain": "(Why not \\(0.65 + 0.65 = 1.3\\)? Probabilities of overlapping events cannot just be added — the answer must be at most 1.)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "at least one",
+              "note": "Use the complement."
+            },
+            {
+              "text": "two consecutive weekends",
+              "note": "Independent events: multiply."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q21b",
+          "type": "mc",
+          "stem": "A class has 28 students. 5 of them study neither Art nor Music and 8 of them study exactly one of Art and Music. Two students are chosen at random from the class. Find in simplest fraction form the probability that both students chosen study both Art and Music.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{5}{18}\\)",
+            "\\(\\dfrac{225}{784}\\)",
+            "\\(\\dfrac{15}{28}\\)",
+            "\\(\\dfrac{1}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "From part (a), 15 of the 28 students study both subjects. The two students are chosen WITHOUT replacement, so after the first choice there is one fewer student in both the numerator and the denominator.",
+          "steps": [
+            {
+              "explain": "From part (a): 15 students study BOTH Art and Music, out of 28.",
+              "work": "\\(P(\\text{1st studies both}) = \\dfrac{15}{28}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 699 410.4\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M579.4 339.7 L579.4 378.7 L656.9 378.7 L657.4 378.3 L657.4 339.7 L656.9 339.3 L579.8 339.3ZM580.2 341.5 L581.1 340.2 L655.6 340.2 L656.5 341.5 L656.5 377 L655.6 377.9 L581.1 377.9 L580.2 377ZM309 185.5 L309 224 L309.4 224.5 L387 224.5 L387.4 223.2 L387.4 185.9 L386.5 184.6 L309.8 184.6ZM309.8 186.8 L310.7 185.9 L385.7 185.9 L386.1 186.3 L386.1 222.7 L385.7 223.2 L310.3 223.2 L309.8 222.7ZM71.1 184.6 L69.8 195.4 L69.8 213.6 L71.5 227.5 L72.4 229.2 L72.8 233.6 L73.7 234.9 L75.4 242.7 L80.6 256.1 L86.7 267.8 L94.9 280.4 L104.9 292.5 L115.7 303.3 L129.6 314.6 L141.3 322.4 L161.2 332.8 L176.4 338.9 L195.4 344.5 L213.2 348 L230.1 349.7 L243.1 349.7 L244.4 350.1 L244.8 349.7 L263.9 349.3 L282.1 346.7 L284.3 345.8 L294.2 344.1 L295.5 343.2 L299 342.8 L311.6 338.9 L323.7 334.1 L338 327.2 L348 321.1 L355.8 325.9 L369.6 332.8 L384.8 338.9 L407.8 345.4 L432 349.3 L451.5 349.7 L452 350.1 L472.3 349.3 L475.8 348.4 L483.2 348 L485.3 347.1 L497 345.4 L520 338.9 L536 332.4 L548.2 326.3 L562.9 317.2 L572.9 309.8 L582 302 L596.3 286.9 L606.7 272.6 L610.6 266.1 L617.1 252.6 L620.5 243.5 L623.6 232.7 L623.6 230.5 L624.4 228.8 L624.9 223.6 L625.7 221 L626.2 211.5 L626.6 211 L626.6 198.5 L626.2 198 L625.7 188.1 L623.1 174.6 L622.3 173.3 L621.8 169.9 L621 168.6 L617.9 158.6 L611.9 145.6 L602.8 130.9 L595.4 121.3 L584.6 109.6 L575.9 101.8 L560.7 90.6 L548.6 83.2 L526.5 72.8 L515.7 68.9 L496.2 63.7 L481.9 61.1 L474.5 60.7 L470.6 59.8 L463.2 59.8 L462.8 59.4 L434.2 59.8 L430.3 60.7 L422.9 61.1 L404.7 64.6 L389.1 68.9 L376.1 73.7 L359.2 81.5 L348.4 88 L347.5 88 L339.3 82.8 L327.2 76.7 L314.6 71.5 L304.2 68.5 L302.9 67.6 L299.9 67.2 L298.6 66.3 L273.4 61.1 L261.7 59.8 L254.8 59.8 L254.4 59.4 L225.8 59.8 L206.3 62.4 L204.5 63.3 L199.8 63.7 L182 68.5 L158.6 77.6 L139.5 88 L121.3 101 L106.2 115.3 L99.7 122.6 L91.9 133 L83.2 147.8 L78.9 157.3 L75 168.1ZM347.5 89.7 L351.4 91.4 L360.1 97.5 L375.3 110.5 L388.3 124.8 L397.8 138.2 L405.6 152.5 L410.4 164.2 L414.3 177.7 L416.9 194.6 L416.9 214.5 L414.3 231.4 L413.4 233.1 L412.1 239.6 L407.8 251.8 L406.9 252.6 L406.5 254.8 L401.3 265.2 L391.7 279.9 L380.9 292.9 L365.3 307.7 L348.8 319.4 L346.7 318.9 L338.9 313.7 L325 302.5 L310.7 287.7 L298.6 271.3 L290.3 256.1 L284.3 240.1 L280.4 223.2 L279.1 210.6 L279.1 198.5 L281.7 179 L282.5 177.2 L284.3 169 L288.2 158.2 L295.5 143 L303.3 130.9 L315.5 116.1 L322.4 109.2 L332.4 100.5ZM411.7 64.1 L414.3 64.1 L416.4 63.3 L422.1 62.8 L424.7 62 L432.9 61.5 L437.2 60.7 L445 60.7 L445.5 60.2 L458.9 60.2 L459.3 60.7 L467.6 60.7 L471.9 61.5 L476.2 61.5 L488.4 63.3 L505.7 67.2 L520.9 71.9 L533.9 77.1 L542.1 81 L557.3 89.7 L568.5 97.5 L582.4 109.2 L591.9 119.2 L601 130.4 L608.4 141.7 L614.9 154.3 L621.4 172.5 L624 184.2 L625.3 194.6 L625.3 214.9 L624 224.9 L621.4 236.6 L616.2 251.8 L612.3 260.4 L604.5 273.9 L590.6 291.6 L579.8 302.5 L568.1 312 L558.1 318.9 L542.5 328 L528.2 334.5 L517.8 338.4 L495.7 344.5 L481.4 347.1 L473.6 347.5 L469.3 348.4 L442 348.8 L417.7 346.2 L413.4 344.9 L410.8 344.9 L390.9 339.7 L378.7 335.4 L364.9 329.3 L349.7 320.7 L350.1 319.8 L366.6 308.1 L374 301.6 L387.8 286.9 L398.2 272.6 L407.3 255.7 L412.5 241.8 L416.4 226.2 L418.2 210.2 L417.7 192 L415.1 176.8 L411.2 163.4 L403.4 145.6 L396.1 133.5 L384.4 118.3 L376.6 110.1 L367.9 102.3 L349.7 88.8 L351 87.5 L360.1 82.3 L379.2 73.7 L391.3 69.3ZM203.2 64.1 L205.8 64.1 L208 63.3 L213.6 62.8 L216.2 62 L224.5 61.5 L228.8 60.7 L236.6 60.7 L237 60.2 L259.1 60.7 L279.9 63.3 L297.3 67.2 L319.4 74.5 L333.7 81 L343.2 86.2 L346.7 88.8 L333.7 97.9 L321.5 108.3 L310.7 119.6 L299 135.2 L291.2 148.6 L284.7 164.2 L280.8 178.1 L278.2 195.4 L278.2 213.6 L280.8 231.4 L286 248.7 L289.9 257.8 L295.1 267.8 L301.2 277.3 L313.3 292.5 L324.1 303.3 L332.4 310.3 L346.7 320.2 L338.9 325.4 L325.9 331.9 L312.9 337.1 L291.2 343.6 L289 343.6 L287.3 344.5 L278.2 346.2 L275.2 346.2 L272.6 347.1 L254.4 348.8 L233.6 348.8 L233.1 348.4 L226.6 348.4 L222.7 347.5 L214.9 347.1 L205 344.9 L202.4 344.9 L182.4 339.7 L172.5 335.8 L171.2 335.8 L151.2 326.7 L134.8 316.8 L120.5 305.9 L104.4 290.3 L96.6 280.8 L86.2 264.8 L81.9 256.1 L77.1 244.4 L72.4 225.8 L70.6 211 L70.6 198 L71.9 185.9 L75.8 169 L82.3 152.1 L90.1 137.8 L102.7 120.9 L115.3 107.9 L124.4 100.1 L138.2 90.1 L151.7 82.3 L168.6 74.5 L182.9 69.3ZM0 2.2 L0 406.9 L0.4 407.8 L695.5 407.8 L696.4 406.5 L696.4 2.6 L695.5 1.3 L0.9 1.3ZM1.3 3 L1.7 2.6 L694.6 2.6 L695.1 3 L695.1 406 L694.2 406.9 L1.7 406.9 L1.3 406.5Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><text x=\"348\" y=\"211\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#dc2626\">15</text><text x=\"620\" y=\"364\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#dc2626\">5</text></g></svg>"
+              }
+            },
+            {
+              "explain": "After one student who studies both is chosen, 14 of the remaining 27 students study both.",
+              "work": "\\(P(\\text{2nd studies both} \\mid \\text{1st does}) = \\dfrac{14}{27}\\)"
+            },
+            {
+              "explain": "Both events must happen: multiply the probabilities.",
+              "work": "\\(\\dfrac{15}{28} \\times \\dfrac{14}{27}\\)"
+            },
+            {
+              "explain": "Cancel common factors before multiplying: 15 and 27 share 3; 14 and 28 share 14.",
+              "work": "\\(\\dfrac{15^{5}}{28_{2}} \\times \\dfrac{14^{1}}{27_{9}} = \\dfrac{5 \\times 1}{2 \\times 9}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\dfrac{5}{18}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "simplest fraction form",
+              "note": "Cancel common factors."
+            },
+            {
+              "text": "Two students are chosen at random",
+              "note": "Without replacement."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6119,6 +6293,55 @@
               }
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q32a",
+          "type": "mc",
+          "stem": "In a local netball competition, a team can either win or lose a match. A certain team has a probability of 0.45 of winning a match if the coach's daughter is playing in that match or a probability of 0.75 if she is not. The probability of the coach's daughter playing is 0.4. Find the probability that the team will win a match.",
+          "difficulty": "medium",
+          "options": [
+            "0.63",
+            "0.6",
+            "0.18",
+            "0.45"
+          ],
+          "answer": 0,
+          "hint": "Draw a probability TREE. A win can happen in TWO ways: (daughter plays AND team wins) OR (daughter doesn't play AND team wins). Multiply along each branch, then ADD the two branches.",
+          "steps": [
+            {
+              "explain": "Daughter plays with probability 0.4, so she does NOT play with probability \\(1 - 0.4 = 0.6\\).",
+              "work": "P(plays) = 0.4,  P(not) = 0.6",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 220\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"110\" x2=\"140\" y2=\"50\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"110\" x2=\"140\" y2=\"170\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50\" x2=\"290\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50\" x2=\"290\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"170\" x2=\"290\" y2=\"145\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"170\" x2=\"290\" y2=\"195\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"80\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">0.4</text><text x=\"80\" y=\"160\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">0.6</text><text x=\"160\" y=\"52\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">plays</text><text x=\"160\" y=\"172\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">not</text><text x=\"240\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">0.45</text><text x=\"240\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">0.55</text><text x=\"240\" y=\"138\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">0.75</text><text x=\"240\" y=\"205\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">0.25</text><text x=\"300\" y=\"29\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">win</text><text x=\"300\" y=\"79\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">lose</text><text x=\"300\" y=\"149\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">win</text><text x=\"300\" y=\"199\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">lose</text></svg>"
+              }
+            },
+            {
+              "explain": "Branch 1: daughter plays AND the team wins (multiply along the branch).",
+              "work": "\\(P(\\text{plays} \\cap \\text{win}) = 0.4 \\times 0.45 = \\textcolor{#b45309}{0.18}\\)"
+            },
+            {
+              "explain": "Branch 2: daughter does NOT play AND the team wins.",
+              "work": "\\(P(\\text{not} \\cap \\text{win}) = 0.6 \\times 0.75 = \\textcolor{#2563eb}{0.45}\\)"
+            },
+            {
+              "explain": "The two branches are different (mutually exclusive) ways to win, so ADD them (total probability).",
+              "work": "\\(P(\\text{win}) = 0.18 + 0.45 = 0.63\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that the team will win a match",
+              "note": "Add the two winning branches."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7212,6 +7435,52 @@
             "source": "Killara High School Year 11 Preliminary Examination Mathematics Advanced",
             "sourcePage": 15,
             "sourceQuestion": 18
+          }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q32b",
+          "type": "mc",
+          "stem": "In a local netball competition, a team can either win or lose a match. A certain team has a probability of 0.45 of winning a match if the coach's daughter is playing in that match or a probability of 0.75 if she is not. The probability of the coach's daughter playing is 0.4. Given that the team has won a match, find the probability that the coach's daughter was playing on that day.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{2}{7}\\)",
+            "\\(0.18\\)",
+            "\\(\\dfrac{5}{7}\\)",
+            "\\(0.4\\)"
+          ],
+          "answer": 0,
+          "hint": "This is CONDITIONAL probability: \\(P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}\\). The 'given' event (the team won) is the bottom of the fraction; its probability is from part (a).",
+          "steps": [
+            {
+              "explain": "Write the conditional probability formula. A = daughter plays, B = team wins.",
+              "work": "\\(P(\\text{plays} \\mid \\text{win}) = \\dfrac{P(\\text{plays} \\cap \\text{win})}{P(\\text{win})}\\)"
+            },
+            {
+              "explain": "From part (a), the branch 'plays AND wins' is \\(0.18\\) and the total probability of winning is \\(0.63\\).",
+              "work": "\\(P(\\text{plays} \\cap \\text{win}) = 0.4 \\times 0.45 = 0.18\\qquad P(\\text{win}) = 0.63\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\dfrac{0.18}{0.63}\\)"
+            },
+            {
+              "explain": "Multiply top and bottom by 100, then cancel the common factor 9.",
+              "work": "\\(\\dfrac{18}{63} = \\dfrac{2}{7}\\)  ✓ (\\(\\approx 0.286\\))"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given that the team has won a match",
+              "note": "The 'given' event goes in the denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]
