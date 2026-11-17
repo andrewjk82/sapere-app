@@ -2386,6 +2386,98 @@
             "\\(5\\sqrt5\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "killara2022-y9-t4a-q2",
+          "type": "mc",
+          "stem": "Simplify \\(\\sqrt{81}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(9\\)",
+            "\\(3\\)",
+            "\\(40.5\\)",
+            "\\(27\\)"
+          ],
+          "answer": 0,
+          "hint": "Ask: which number multiplied by itself gives 81? Remember \\(\\sqrt{\\;}\\) is NOT the same as dividing by 2.",
+          "steps": [
+            {
+              "explain": "A square root asks: which positive number times itself equals 81?",
+              "work": "\\(\\sqrt{81} = ?\\quad ?\\times ? = 81\\)"
+            },
+            {
+              "explain": "Try the perfect squares: \\(8 \\times 8 = 64\\) (too small), \\(10 \\times 10 = 100\\) (too big).",
+              "work": "\\(9 \\times 9 = 81\\)"
+            },
+            {
+              "explain": "So the square root of 81 is 9.",
+              "work": "\\(\\sqrt{81} = \\textcolor{#b45309}{9}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Find the exact value."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q11a",
+          "type": "mc",
+          "stem": "Simplify the following surds. Express your answer in simplest form. \\(\\sqrt{32}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(4\\sqrt{2}\\)",
+            "\\(8\\sqrt{2}\\)",
+            "\\(16\\sqrt{2}\\)",
+            "\\(4\\sqrt{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Look for the LARGEST perfect square that divides 32 (4, 16 …). Split the surd: \\(\\sqrt{ab} = \\sqrt{a}\\times\\sqrt{b}\\).",
+          "steps": [
+            {
+              "explain": "List perfect squares and test which divide 32: 4, 16 both divide it. Pick the <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">largest</mark> one so you finish in one go.",
+              "work": "\\(32 = \\textcolor{#b45309}{16} \\times 2\\)"
+            },
+            {
+              "explain": "Split the surd into a product of two surds.",
+              "work": "\\(\\sqrt{32} = \\sqrt{\\textcolor{#b45309}{16}} \\times \\sqrt{2}\\)"
+            },
+            {
+              "explain": "Take the square root of the perfect square: \\(\\sqrt{16} = 4\\).",
+              "work": "\\(= \\textcolor{#b45309}{4}\\sqrt{2}\\)"
+            },
+            {
+              "explain": "\\(\\sqrt{2}\\) has no square factor left, so this is in simplest form.",
+              "work": "\\(\\sqrt{32} = 4\\sqrt{2}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following surds",
+              "note": "Pull out the largest perfect-square factor."
+            },
+            {
+              "text": "simplest form",
+              "note": "No perfect-square factor may remain under the root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2619,6 +2711,102 @@
               "note": "Use a common denominator for the fractions, keeping the common factor \\(\\sqrt5\\)."
             }
           ]
+        },
+        {
+          "id": "killara2022-y9-t4a-q3",
+          "type": "mc",
+          "stem": "Simplify \\(7\\sqrt{5} - 4\\sqrt{5}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(3\\sqrt{5}\\)",
+            "\\(3\\)",
+            "\\(11\\sqrt{5}\\)",
+            "\\(28\\sqrt{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Both terms contain \\(\\sqrt{5}\\) — they are LIKE surds. Treat \\(\\sqrt{5}\\) like a letter: \\(7x - 4x\\).",
+          "steps": [
+            {
+              "explain": "Check that the surds are alike: both terms have the same root \\(\\sqrt{5}\\).",
+              "work": "\\(7\\textcolor{#b45309}{\\sqrt{5}} - 4\\textcolor{#b45309}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "Subtract the numbers in front (the coefficients) and keep \\(\\sqrt{5}\\) as it is.",
+              "work": "\\((7 - 4)\\textcolor{#b45309}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "Calculate \\(7 - 4\\).",
+              "work": "\\(3\\textcolor{#b45309}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "The surd part \\(\\sqrt{5}\\) is not subtracted — it stays.",
+              "work": "\\(7\\sqrt{5} - 4\\sqrt{5} = 3\\sqrt{5}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Combine like surds by adding/subtracting their coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q19",
+          "type": "mc",
+          "stem": "Simplify the following surds. Express your answer in simplest form. \\(4\\sqrt{63} + 5\\sqrt{7} - 8\\sqrt{28}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sqrt{7}\\)",
+            "\\(9\\sqrt{7}\\)",
+            "\\(1\\)",
+            "\\(-\\sqrt{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify each surd FIRST (look for a square factor: 9 in 63, 4 in 28). Then add/subtract the like surds \\(\\sqrt{7}\\).",
+          "steps": [
+            {
+              "explain": "Simplify \\(\\sqrt{63}\\): \\(63 = 9 \\times 7\\).",
+              "work": "\\(4\\sqrt{63} = 4\\sqrt{\\textcolor{#b45309}{9} \\times 7} = 4 \\times \\textcolor{#b45309}{3}\\sqrt{7} = 12\\sqrt{7}\\)"
+            },
+            {
+              "explain": "The middle term is already simple.",
+              "work": "\\(5\\sqrt{7}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{28}\\): \\(28 = 4 \\times 7\\).",
+              "work": "\\(8\\sqrt{28} = 8\\sqrt{\\textcolor{#b45309}{4} \\times 7} = 8 \\times \\textcolor{#b45309}{2}\\sqrt{7} = 16\\sqrt{7}\\)"
+            },
+            {
+              "explain": "Now every term has \\(\\sqrt{7}\\). Combine the coefficients.",
+              "work": "\\(12\\sqrt{7} + 5\\sqrt{7} - 16\\sqrt{7} = (12 + 5 - 16)\\sqrt{7}\\)"
+            },
+            {
+              "explain": "Calculate \\(12 + 5 - 16 = 1\\) and write \\(1\\sqrt{7}\\) as \\(\\sqrt{7}\\).",
+              "work": "\\(\\sqrt{7}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following surds",
+              "note": "Simplify each surd to the same root first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2862,6 +3050,98 @@
             "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
             "school": "Chatswood High School",
             "examType": "Assessment Task",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q11b",
+          "type": "mc",
+          "stem": "Simplify the following surds. Express your answer in simplest form. \\(\\dfrac{\\sqrt{100}}{\\sqrt{20}}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sqrt{5}\\)",
+            "\\(5\\)",
+            "\\(2\\sqrt{5}\\)",
+            "\\(\\dfrac{\\sqrt{5}}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "You can put both roots under ONE root: \\(\\dfrac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\dfrac{a}{b}}\\). Then simplify the fraction inside.",
+          "steps": [
+            {
+              "explain": "Combine the two roots into a single root of a fraction.",
+              "work": "\\(\\dfrac{\\sqrt{100}}{\\sqrt{20}} = \\sqrt{\\dfrac{100}{20}}\\)"
+            },
+            {
+              "explain": "Simplify the fraction under the root: divide top and bottom by 20.",
+              "work": "\\(\\dfrac{100}{20} = \\textcolor{#b45309}{5}\\)"
+            },
+            {
+              "explain": "So the expression becomes the square root of 5.",
+              "work": "\\(\\sqrt{5}\\)"
+            },
+            {
+              "explain": "\\(5\\) is not a perfect square and has no square factor, so \\(\\sqrt{5}\\) is simplest form. Check another way: \\(\\dfrac{10}{2\\sqrt{5}} = \\dfrac{5}{\\sqrt{5}} = \\sqrt{5}\\)  ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following surds",
+              "note": "Use the quotient rule for roots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q11c",
+          "type": "mc",
+          "stem": "Simplify the following surds. Express your answer in simplest form. \\(2\\sqrt{3} \\times 3\\sqrt{3}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(18\\)",
+            "\\(6\\sqrt{3}\\)",
+            "\\(12\\)",
+            "\\(5\\sqrt{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numbers in front, and multiply the surds. Remember \\(\\sqrt{3} \\times \\sqrt{3} = 3\\) — the root disappears.",
+          "steps": [
+            {
+              "explain": "Group the coefficients together and the surds together.",
+              "work": "\\((\\textcolor{#b45309}{2} \\times \\textcolor{#b45309}{3})(\\textcolor{#2563eb}{\\sqrt{3}} \\times \\textcolor{#2563eb}{\\sqrt{3}})\\)"
+            },
+            {
+              "explain": "Multiply the coefficients: \\(2 \\times 3 = 6\\).",
+              "work": "\\(6 \\times (\\sqrt{3} \\times \\sqrt{3})\\)"
+            },
+            {
+              "explain": "A root times itself gives the number inside: \\(\\sqrt{3} \\times \\sqrt{3} = 3\\).",
+              "work": "\\(6 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(2\\sqrt{3} \\times 3\\sqrt{3} = 18\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following surds",
+              "note": "A root times itself gives the number inside."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
           }
@@ -3195,6 +3475,148 @@
             "part": "1(b)(iii)",
             "marks": 2,
             "origin": "exam-import"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q12a",
+          "type": "mc",
+          "stem": "Expand and simplify the following surds. \\(2\\sqrt{3}(2 - \\sqrt{5})\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(4\\sqrt{3} - 2\\sqrt{15}\\)",
+            "\\(4\\sqrt{3} - 2\\sqrt{5}\\)",
+            "\\(2\\sqrt{3} - 2\\sqrt{15}\\)",
+            "\\(4 - 2\\sqrt{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand: multiply \\(2\\sqrt{3}\\) by EACH term inside the bracket. Use \\(\\sqrt{a}\\times\\sqrt{b} = \\sqrt{ab}\\).",
+          "steps": [
+            {
+              "explain": "Distribute \\(2\\sqrt{3}\\) over both terms of the bracket.",
+              "work": "\\(2\\sqrt{3}\\times \\textcolor{#b45309}{2} - 2\\sqrt{3}\\times \\textcolor{#2563eb}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "First term: \\(2\\sqrt{3}\\times 2 = 4\\sqrt{3}\\).",
+              "work": "\\(4\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Second term: multiply the coefficients (\\(2 \\times 1 = 2\\)) and the roots (\\(\\sqrt{3}\\times\\sqrt{5} = \\sqrt{15}\\)).",
+              "work": "\\(2\\sqrt{3}\\times\\sqrt{5} = 2\\sqrt{15}\\)"
+            },
+            {
+              "explain": "Put them together with the minus sign. \\(\\sqrt{3}\\) and \\(\\sqrt{15}\\) are unlike surds, so we cannot combine them.",
+              "work": "\\(4\\sqrt{3} - 2\\sqrt{15}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify the following surds",
+              "note": "Distribute, then simplify each product."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q12b",
+          "type": "mc",
+          "stem": "Expand and simplify the following surds. \\(\\left(3\\sqrt{2} + \\sqrt{7}\\right)^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(25 + 6\\sqrt{14}\\)",
+            "\\(25\\)",
+            "\\(25 + 12\\sqrt{14}\\)",
+            "\\(11 + 6\\sqrt{14}\\)"
+          ],
+          "answer": 0,
+          "hint": "A perfect square: \\((A + B)^2 = A^2 + 2AB + B^2\\) with \\(A = 3\\sqrt{2}\\) and \\(B = \\sqrt{7}\\). Don't forget the MIDDLE term.",
+          "steps": [
+            {
+              "explain": "Identify A and B and write the perfect-square expansion.",
+              "work": "\\((\\textcolor{#b45309}{3\\sqrt{2}} + \\textcolor{#2563eb}{\\sqrt{7}})^2 = (3\\sqrt{2})^2 + 2(3\\sqrt{2})(\\sqrt{7}) + (\\sqrt{7})^2\\)"
+            },
+            {
+              "explain": "Square the first term: \\((3\\sqrt{2})^2 = 9 \\times 2 = 18\\).",
+              "work": "\\(18\\)"
+            },
+            {
+              "explain": "Middle term: \\(2 \\times 3\\sqrt{2} \\times \\sqrt{7} = 6\\sqrt{14}\\).",
+              "work": "\\(6\\sqrt{14}\\)"
+            },
+            {
+              "explain": "Last term: \\((\\sqrt{7})^2 = 7\\).",
+              "work": "\\(18 + 6\\sqrt{14} + 7\\)"
+            },
+            {
+              "explain": "Add the whole numbers \\(18 + 7 = 25\\). The surd \\(6\\sqrt{14}\\) cannot be added to a whole number.",
+              "work": "\\(25 + 6\\sqrt{14}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify the following surds",
+              "note": "Use (A+B)² = A² + 2AB + B²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q12c",
+          "type": "mc",
+          "stem": "Expand and simplify the following surds. \\((\\sqrt{8} - \\sqrt{5})(\\sqrt{8} + \\sqrt{5})\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(13\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 0,
+          "hint": "This is a DIFFERENCE OF TWO SQUARES: \\((A - B)(A + B) = A^2 - B^2\\). The middle terms cancel.",
+          "steps": [
+            {
+              "explain": "Spot the pattern: same two terms, one bracket with minus and one with plus.",
+              "work": "\\((\\textcolor{#b45309}{\\sqrt{8}} - \\textcolor{#2563eb}{\\sqrt{5}})(\\textcolor{#b45309}{\\sqrt{8}} + \\textcolor{#2563eb}{\\sqrt{5}})\\)"
+            },
+            {
+              "explain": "Use \\(A^2 - B^2\\) with \\(A = \\sqrt{8}\\) and \\(B = \\sqrt{5}\\).",
+              "work": "\\((\\sqrt{8})^2 - (\\sqrt{5})^2\\)"
+            },
+            {
+              "explain": "A root squared gives the number inside: \\((\\sqrt{8})^2 = 8\\) and \\((\\sqrt{5})^2 = 5\\).",
+              "work": "\\(8 - 5\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(3\\)  ✓ (no surds are left)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify the following surds",
+              "note": "Difference of two squares removes the surds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
           }
         }
       ]
@@ -3656,6 +4078,223 @@
             "\\(\\frac{13+5\\sqrt7}{3}\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "killara2022-y9-t4a-q14",
+          "type": "mc",
+          "stem": "Rationalise and simplify the following: \\(\\dfrac{6\\sqrt{7}}{5\\sqrt{2}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3\\sqrt{14}}{5}\\)",
+            "\\(\\dfrac{3\\sqrt{7}}{5}\\)",
+            "\\(\\dfrac{6\\sqrt{14}}{5}\\)",
+            "\\(\\dfrac{3\\sqrt{14}}{10}\\)"
+          ],
+          "answer": 0,
+          "hint": "Rationalise = remove the surd from the BOTTOM. Multiply top and bottom by \\(\\sqrt{2}\\) (the surd in the denominator).",
+          "steps": [
+            {
+              "explain": "The denominator contains \\(\\sqrt{2}\\). Multiply the top and the bottom by \\(\\sqrt{2}\\) — this is the same as multiplying by 1.",
+              "work": "\\(\\dfrac{6\\sqrt{7}}{5\\sqrt{2}} \\times \\dfrac{\\textcolor{#b45309}{\\sqrt{2}}}{\\textcolor{#b45309}{\\sqrt{2}}}\\)"
+            },
+            {
+              "explain": "Top: \\(6\\sqrt{7}\\times\\sqrt{2} = 6\\sqrt{14}\\). Bottom: \\(5\\sqrt{2}\\times\\sqrt{2} = 5\\times 2 = 10\\).",
+              "work": "\\(\\dfrac{6\\sqrt{14}}{10}\\)"
+            },
+            {
+              "explain": "Simplify the fraction: divide the numbers 6 and 10 by their common factor 2.",
+              "work": "\\(\\dfrac{6\\sqrt{14}}{10} = \\dfrac{3\\sqrt{14}}{5}\\)"
+            },
+            {
+              "explain": "The denominator is now the whole number 5 — rationalised and in simplest form.",
+              "work": "\\(\\dfrac{6\\sqrt{7}}{5\\sqrt{2}} = \\dfrac{3\\sqrt{14}}{5}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rationalise and simplify",
+              "note": "Multiply top and bottom by the surd in the denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q20",
+          "type": "mc",
+          "stem": "Find a and b if: \\(\\dfrac{\\sqrt{5}}{\\sqrt{10} - \\sqrt{5}} = a + \\sqrt{b}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(a = 1,\\ b = 2\\)",
+            "\\(a = 2,\\ b = 1\\)",
+            "\\(a = 1,\\ b = 5\\)",
+            "\\(a = 5,\\ b = 2\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator is a binomial surd \\(\\sqrt{10} - \\sqrt{5}\\). Rationalise it by multiplying top and bottom by its CONJUGATE \\(\\sqrt{10} + \\sqrt{5}\\) (difference of two squares).",
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by the conjugate (change the sign between the surds).",
+              "work": "\\(\\dfrac{\\sqrt{5}}{\\sqrt{10} - \\sqrt{5}} \\times \\dfrac{\\textcolor{#b45309}{\\sqrt{10} + \\sqrt{5}}}{\\textcolor{#b45309}{\\sqrt{10} + \\sqrt{5}}}\\)"
+            },
+            {
+              "explain": "Bottom: difference of two squares \\((A-B)(A+B) = A^2 - B^2\\) removes the surds.",
+              "work": "\\((\\sqrt{10})^2 - (\\sqrt{5})^2 = 10 - 5 = 5\\)"
+            },
+            {
+              "explain": "Top: expand \\(\\sqrt{5}(\\sqrt{10} + \\sqrt{5})\\).",
+              "work": "\\(\\sqrt{50} + 5\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}\\).",
+              "work": "\\(\\dfrac{5\\sqrt{2} + 5}{5}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by 5.",
+              "work": "\\(\\sqrt{2} + 1 = \\textcolor{#b45309}{1} + \\textcolor{#2563eb}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Compare with \\(a + \\sqrt{b}\\): \\(a = 1\\) and \\(\\sqrt{b} = \\sqrt{2}\\), so \\(b = 2\\).",
+              "work": "\\(a = 1,\\ b = 2\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find a and b",
+              "note": "Rationalise first, then compare with the form a plus root b."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q25",
+          "type": "mc",
+          "stem": "A right-angled triangle has an area of \\((4 - \\sqrt{2})\\) cm² and a base length of \\((3 + \\sqrt{2})\\) cm. Find the perpendicular height of the triangle. Leave your answer in simplest exact form. (Rationalise your answer)",
+          "difficulty": "hard",
+          "options": [
+            "\\((4 - 2\\sqrt{2})\\) cm",
+            "\\((2 - \\sqrt{2})\\) cm",
+            "\\((8 - 2\\sqrt{2})\\) cm",
+            "\\(\\dfrac{8 - 2\\sqrt{2}}{3 + \\sqrt{2}}\\) cm"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\text{Area} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height}\\). Make \\(h\\) the subject (multiply the area by 2, divide by the base), then rationalise using the conjugate \\(3 - \\sqrt{2}\\).",
+          "steps": [
+            {
+              "explain": "Write the area formula with the given values. The base (blue) and the perpendicular height \\(h\\) (red) are the two legs of the right angle.",
+              "work": "\\(\\dfrac{1}{2} \\times h \\times (3 + \\sqrt{2}) = 4 - \\sqrt{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><polygon points=\"50,200 300,200 50,40\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"50\" y=\"182\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"50\" y1=\"200\" x2=\"300\" y2=\"200\" stroke=\"#2563eb\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><text x=\"175\" y=\"226\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">base b = (3 + √2) cm</text><line x1=\"50\" y1=\"200\" x2=\"50\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"4.2\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><text x=\"36\" y=\"124\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#dc2626\">h</text><text x=\"185\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">Area = (4 − √2) cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 2 to clear the fraction.",
+              "work": "\\(h(3 + \\sqrt{2}) = 2(4 - \\sqrt{2}) = 8 - 2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Divide both sides by \\((3 + \\sqrt{2})\\) to get \\(h\\).",
+              "work": "\\(h = \\dfrac{8 - 2\\sqrt{2}}{3 + \\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Rationalise: multiply top and bottom by the conjugate \\((3 - \\sqrt{2})\\).",
+              "work": "\\(h = \\dfrac{8 - 2\\sqrt{2}}{3 + \\sqrt{2}} \\times \\dfrac{\\textcolor{#b45309}{3 - \\sqrt{2}}}{\\textcolor{#b45309}{3 - \\sqrt{2}}}\\)"
+            },
+            {
+              "explain": "Bottom: difference of two squares. Top: expand carefully (four products).",
+              "work": "\\(\\dfrac{24 - 8\\sqrt{2} - 6\\sqrt{2} + 2 \\cdot 2}{9 - 2} = \\dfrac{24 - 14\\sqrt{2} + 4}{7}\\)"
+            },
+            {
+              "explain": "Collect like terms on top: \\(24 + 4 = 28\\) and \\(-8\\sqrt{2} - 6\\sqrt{2} = -14\\sqrt{2}\\). Divide each term by 7.",
+              "work": "\\(h = \\dfrac{28 - 14\\sqrt{2}}{7} = \\textcolor{#b45309}{4 - 2\\sqrt{2}}\\)  ✓",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><polygon points=\"50,200 300,200 50,40\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"50\" y=\"182\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"50\" y1=\"200\" x2=\"300\" y2=\"200\" stroke=\"#2563eb\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><text x=\"175\" y=\"226\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">base b = (3 + √2) cm</text><line x1=\"50\" y1=\"200\" x2=\"50\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"4.2\" stroke-linecap=\"round\" stroke-dasharray=\"\"/><text x=\"36\" y=\"124\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#dc2626\">h</text><text x=\"185\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">Area = (4 − √2) cm²</text><text x=\"36\" y=\"150\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">= 4 − 2√2</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perpendicular height",
+              "note": "The two legs of a right-angled triangle are base and height."
+            },
+            {
+              "text": "Rationalise your answer",
+              "note": "Use the conjugate to remove the surd from the denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q26",
+          "type": "mc",
+          "stem": "Evaluate the following: \\(\\dfrac{1}{\\sqrt{1}+\\sqrt{2}} + \\dfrac{1}{\\sqrt{2}+\\sqrt{3}} + \\dfrac{1}{\\sqrt{3}+\\sqrt{4}} + \\cdots + \\dfrac{1}{\\sqrt{15}+\\sqrt{16}}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Rationalise EACH fraction (multiply by its conjugate). Almost every term then cancels with the next one — a 'telescoping' sum.",
+          "steps": [
+            {
+              "explain": "Look at the first fraction. Multiply top and bottom by the conjugate \\(\\sqrt{1} - \\sqrt{2}\\).",
+              "work": "\\(\\dfrac{1}{\\sqrt{1}+\\sqrt{2}} \\times \\dfrac{\\sqrt{1}-\\sqrt{2}}{\\sqrt{1}-\\sqrt{2}} = \\dfrac{\\sqrt{1}-\\sqrt{2}}{1 - 2} = \\dfrac{\\sqrt{1}-\\sqrt{2}}{-1} = \\sqrt{2} - \\sqrt{1}\\)"
+            },
+            {
+              "explain": "Every fraction works the same way: the bottom becomes \\(n - (n+1) = -1\\), so each fraction equals the NEXT root minus this root.",
+              "work": "\\(\\dfrac{1}{\\sqrt{n}+\\sqrt{n+1}} = \\sqrt{n+1} - \\sqrt{n}\\)"
+            },
+            {
+              "explain": "Rewrite the whole sum using this result.",
+              "work": "\\((\\sqrt{2} - \\sqrt{1}) + (\\sqrt{3} - \\sqrt{2}) + (\\sqrt{4} - \\sqrt{3}) + \\cdots + (\\sqrt{16} - \\sqrt{15})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 490 170\" width=\"100%\" height=\"auto\" style=\"max-width:470px;display:block;margin:0 auto\"><rect x=\"30\" y=\"30\" width=\"72\" height=\"62\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><text x=\"66\" y=\"56\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#047857\">+√2</text><text x=\"66\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">−√1</text><rect x=\"120\" y=\"30\" width=\"72\" height=\"62\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><text x=\"156\" y=\"56\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#047857\">+√3</text><text x=\"156\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">−√2</text><rect x=\"210\" y=\"30\" width=\"72\" height=\"62\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><text x=\"246\" y=\"56\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#047857\">+√4</text><text x=\"246\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">−√3</text><text x=\"336\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"700\" fill=\"#475569\">· · ·</text><rect x=\"390\" y=\"30\" width=\"72\" height=\"62\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><text x=\"426\" y=\"56\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#047857\">+√16</text><text x=\"426\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">−√15</text><text x=\"105\" y=\"108\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">+√2 cancels −√2</text><text x=\"195\" y=\"124\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#d97706\">+√3 cancels −√3</text><text x=\"255\" y=\"20\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\">each +√(k+1) cancels the next −√(k+1)</text><text x=\"70\" y=\"150\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">left over:  +√16  and  −√1</text><text x=\"300\" y=\"150\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#047857\">= 4 − 1 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Each \\(+\\sqrt{k}\\) is cancelled by the \\(-\\sqrt{k}\\) in the next bracket. Only the very first and the very last terms are left.",
+              "work": "\\(-\\sqrt{1} + \\sqrt{16}\\)"
+            },
+            {
+              "explain": "Evaluate the two roots.",
+              "work": "\\(-1 + 4 = \\textcolor{#b45309}{3}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate the following",
+              "note": "Rationalise each term, then look for cancellation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3786,6 +4425,110 @@
             "source": "2023 Year 9 Mathematics 5.3 Task 4A",
             "school": "Ballarat High School",
             "year": "2023"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q4",
+          "type": "mc",
+          "stem": "Which of the following is not a rational number?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(\\sqrt{9}\\)",
+            "\\(4\\sqrt{7}\\)",
+            "\\(0.\\overline{483}\\)"
+          ],
+          "answer": 2,
+          "hint": "A rational number can be written as a fraction of two integers. Check each choice: is it a fraction, a perfect square root, or a repeating decimal?",
+          "steps": [
+            {
+              "explain": "Rational numbers are fractions \\(\\dfrac{p}{q}\\) (including terminating and RECURRING decimals).",
+              "work": "\\(\\dfrac{5}{3}\\ \\text{is already a fraction}\\)  → rational"
+            },
+            {
+              "explain": "\\(\\sqrt{9}\\) is a perfect square root, so it equals a whole number.",
+              "work": "\\(\\sqrt{9} = 3 = \\dfrac{3}{1}\\)  → rational"
+            },
+            {
+              "explain": "\\(0.\\overline{483}\\) is a recurring decimal. Every recurring decimal can be written as a fraction.",
+              "work": "\\(0.\\overline{483} = \\dfrac{483}{999}\\)  → rational"
+            },
+            {
+              "explain": "\\(\\sqrt{7}\\) is not a perfect square, so its decimal never ends and never repeats. Multiplying by 4 doesn't change that.",
+              "work": "\\(4\\textcolor{#b45309}{\\sqrt{7}} = 10.583\\ldots\\)  → <span style=\"color:#b91c1c;font-weight:700\">NOT rational</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "not a rational number",
+              "note": "Find the irrational one: a non-perfect-square root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q17",
+          "type": "mc",
+          "stem": "Using algebra techniques, convert the following recurring decimal into a fraction. \\(0.\\overline{84}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{28}{33}\\)",
+            "\\(\\dfrac{21}{25}\\)",
+            "\\(\\dfrac{14}{15}\\)",
+            "\\(\\dfrac{28}{333}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(x\\) equal the decimal. The repeating block has 2 digits, so multiply by \\(100\\) and SUBTRACT to wipe out the repeating tail.",
+          "steps": [
+            {
+              "explain": "Let \\(x\\) be the recurring decimal and write out some repeats.",
+              "work": "\\(x = 0.848484\\ldots\\)"
+            },
+            {
+              "explain": "The repeating block <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">84</mark> has 2 digits, so multiply by \\(10^2 = 100\\) to move one whole block to the left of the decimal point.",
+              "work": "\\(100x = \\textcolor{#b45309}{84}.848484\\ldots\\)"
+            },
+            {
+              "explain": "Subtract the first line from the second — the repeating tails are identical and cancel.",
+              "work": "\\(100x - x = 84.848484\\ldots - 0.848484\\ldots\\)"
+            },
+            {
+              "explain": "Simplify both sides.",
+              "work": "\\(99x = 84\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\), then cancel the common factor 3 (84 and 99 are both multiples of 3).",
+              "work": "\\(x = \\dfrac{84}{99} = \\dfrac{\\textcolor{#b45309}{28}}{\\textcolor{#b45309}{33}}\\)"
+            },
+            {
+              "explain": "Check: \\(28 \\div 33 = 0.848484\\ldots\\)  ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using algebra techniques",
+              "note": "Let x = the decimal, multiply by a power of 10 and subtract."
+            },
+            {
+              "text": "recurring decimal",
+              "note": "The block 84 repeats forever."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
           }
         }
       ]

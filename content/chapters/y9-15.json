@@ -620,6 +620,56 @@
             "\\((y-3z)(2x+y)\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "killara2022-y9-t4a-q15a",
+          "type": "mc",
+          "stem": "Fully factorise the following algebraic expressions. \\(12xy - 9x - 16y + 12\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\((4y - 3)(3x - 4)\\)",
+            "\\((4y - 3)(3x + 4)\\)",
+            "\\((4y + 3)(3x - 4)\\)",
+            "\\((3y - 4)(4x - 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Four terms → try GROUPING: factor the first two terms, then the last two, and look for a common bracket.",
+          "steps": [
+            {
+              "explain": "Group the terms in pairs.",
+              "work": "\\((12xy - 9x) + (-16y + 12)\\)"
+            },
+            {
+              "explain": "Factor the first pair: the HCF of \\(12xy\\) and \\(9x\\) is \\(3x\\).",
+              "work": "\\(12xy - 9x = \\textcolor{#b45309}{3x}(4y - 3)\\)"
+            },
+            {
+              "explain": "Factor the second pair so that the bracket MATCHES: take out \\(-4\\).",
+              "work": "\\(-16y + 12 = \\textcolor{#b45309}{-4}(4y - 3)\\)"
+            },
+            {
+              "explain": "Now both groups contain the common bracket \\((4y - 3)\\). Factor it out.",
+              "work": "\\(3x\\textcolor{#b45309}{(4y-3)} - 4\\textcolor{#b45309}{(4y-3)} = \\textcolor{#b45309}{(4y-3)}(3x - 4)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\((4y-3)(3x-4) = 12xy - 16y - 9x + 12\\)  ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "Four terms: group in pairs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -775,6 +825,102 @@
             "\\((p-6q)(p+q)\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "killara2022-y9-t4a-q8",
+          "type": "mc",
+          "stem": "Factorise the following monic quadratic expression. \\(x^2 + 3x + 2\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\((x+1)(x+2)\\)",
+            "\\((x+3)(x+1)\\)",
+            "\\((x-1)(x-2)\\)",
+            "\\((x+3)(x+2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that MULTIPLY to the constant (+2) and ADD to the middle coefficient (+3).",
+          "steps": [
+            {
+              "explain": "The expression is \\(x^2 + bx + c\\) with \\(b = 3\\) and \\(c = 2\\).",
+              "work": "\\(x^2 + 3x + 2\\)"
+            },
+            {
+              "explain": "List the factor pairs of the constant <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">2</mark>.",
+              "work": "\\(1 \\times 2 = 2\\quad(-1)\\times(-2) = 2\\)"
+            },
+            {
+              "explain": "Which pair also ADDS to <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">3</mark>?",
+              "work": "\\(1 + 2 = 3\\) ✓     \\((-1) + (-2) = -3\\) ✗"
+            },
+            {
+              "explain": "Write the brackets using these two numbers.",
+              "work": "\\(x^2 + 3x + 2 = (x + \\textcolor{#b45309}{1})(x + \\textcolor{#b45309}{2})\\)"
+            },
+            {
+              "explain": "Check by expanding: \\((x+1)(x+2) = x^2 + 2x + x + 2 = x^2 + 3x + 2\\)  ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "monic quadratic",
+              "note": "The coefficient of x² is 1, so find two numbers that multiply to c and add to b."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q15b",
+          "type": "mc",
+          "stem": "Fully factorise the following algebraic expressions. \\(3p^2 - 3p - 36\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(3(p - 4)(p + 3)\\)",
+            "\\(3(p + 4)(p - 3)\\)",
+            "\\(3(p - 6)(p + 2)\\)",
+            "\\((p - 4)(p + 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "ALWAYS take out the common factor FIRST (here 3). Then factorise the quadratic that is left.",
+          "steps": [
+            {
+              "explain": "All three terms are divisible by 3. Take out the HCF.",
+              "work": "\\(3p^2 - 3p - 36 = \\textcolor{#b45309}{3}(p^2 - p - 12)\\)"
+            },
+            {
+              "explain": "Factorise \\(p^2 - p - 12\\): find two numbers that multiply to <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">-12</mark> and add to <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">-1</mark>.",
+              "work": "\\(-4 \\times 3 = -12\\quad -4 + 3 = -1\\)"
+            },
+            {
+              "explain": "Write the brackets with \\(-4\\) and \\(+3\\).",
+              "work": "\\(p^2 - p - 12 = (p - 4)(p + 3)\\)"
+            },
+            {
+              "explain": "Put the common factor 3 back in front — 'fully factorised' needs it.",
+              "work": "\\(3(p - 4)(p + 3)\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "Common factor first, then the quadratic."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1087,6 +1233,60 @@
             "\\((3x+5)(2x-2)\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "killara2022-y9-t4a-q15c",
+          "type": "mc",
+          "stem": "Fully factorise the following algebraic expressions. \\(2x^2 - 7x - 15\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\((x - 5)(2x + 3)\\)",
+            "\\((x + 5)(2x - 3)\\)",
+            "\\((2x - 5)(x + 3)\\)",
+            "\\((x - 3)(2x + 5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Non-monic: multiply \\(a \\times c\\) = \\(2 \\times (-15)\\) and find two numbers with that product that add to \\(-7\\). Then split the middle term and group.",
+          "steps": [
+            {
+              "explain": "Compute \\(a \\times c\\).",
+              "work": "\\(2 \\times (-15) = \\textcolor{#b45309}{-30}\\)"
+            },
+            {
+              "explain": "Find two numbers with product <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">-30</mark> and sum <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">-7</mark>.",
+              "work": "\\(-10 \\times 3 = -30\\quad -10 + 3 = -7\\)"
+            },
+            {
+              "explain": "Split the middle term \\(-7x\\) into \\(-10x + 3x\\).",
+              "work": "\\(2x^2 \\textcolor{#b45309}{- 10x} \\textcolor{#2563eb}{+ 3x} - 15\\)"
+            },
+            {
+              "explain": "Group and factor each pair.",
+              "work": "\\(2x(x - 5) + 3(x - 5)\\)"
+            },
+            {
+              "explain": "Factor out the common bracket \\((x - 5)\\).",
+              "work": "\\((x - 5)(2x + 3)\\)"
+            },
+            {
+              "explain": "Check: \\((x-5)(2x+3) = 2x^2 + 3x - 10x - 15 = 2x^2 - 7x - 15\\)  ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "ac-method for non-monic quadratics."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1665,6 +1865,201 @@
             "\\(\\frac{3a-2}{3}\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "killara2022-y9-t4a-q9",
+          "type": "mc",
+          "stem": "Simplify the following fraction. \\(\\dfrac{3x}{4} \\times \\dfrac{2x}{9}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{x^2}{6}\\)",
+            "\\(\\dfrac{x}{6}\\)",
+            "\\(\\dfrac{x^2}{3}\\)",
+            "\\(\\dfrac{x^2}{18}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply tops together and bottoms together — but CANCEL common factors first to keep the numbers small.",
+          "steps": [
+            {
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\(\\dfrac{3x \\times 2x}{4 \\times 9} = \\dfrac{6x^2}{36}\\)"
+            },
+            {
+              "explain": "Find the common factor of the numbers: 6 divides both 6 and 36.",
+              "work": "\\(\\dfrac{6x^2}{36} = \\dfrac{\\textcolor{#b45309}{6}x^2}{\\textcolor{#b45309}{6} \\times 6}\\)"
+            },
+            {
+              "explain": "Cancel the 6s. The \\(x^2\\) stays on top.",
+              "work": "\\(\\dfrac{x^2}{6}\\)"
+            },
+            {
+              "explain": "Quick check by cancelling first: 3 and 9 → 1 and 3; 2 and 4 → 1 and 2, giving \\(\\dfrac{1 \\cdot x \\cdot 1 \\cdot x}{2 \\cdot 3} = \\dfrac{x^2}{6}\\) ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following fraction",
+              "note": "Cancel common factors."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q21a",
+          "type": "mc",
+          "stem": "Simplifying the following algebraic fractions. \\(\\dfrac{a^2 + a - 2}{a + 2} \\div \\dfrac{a^2 - 4a + 3}{a^2 - 3a}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(a\\)",
+            "\\(\\dfrac{1}{a}\\)",
+            "\\(\\dfrac{(a-1)^2}{a}\\)",
+            "\\(a - 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise EVERY numerator and denominator first. Change ÷ into × by flipping the second fraction. Then cancel common factors.",
+          "steps": [
+            {
+              "explain": "Factorise the quadratic \\(a^2 + a - 2\\): numbers with product <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">-2</mark> and sum <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">+1</mark> are \\(+2\\) and \\(-1\\).",
+              "work": "\\(a^2 + a - 2 = (a + 2)(a - 1)\\)"
+            },
+            {
+              "explain": "Factorise \\(a^2 - 4a + 3\\) (product 3, sum -4 → -1 and -3) and \\(a^2 - 3a\\) (common factor \\(a\\)).",
+              "work": "\\(a^2 - 4a + 3 = (a - 1)(a - 3)\\qquad a^2 - 3a = a(a - 3)\\)"
+            },
+            {
+              "explain": "Rewrite the division as a multiplication by the RECIPROCAL (flip the second fraction).",
+              "work": "\\(\\dfrac{(a+2)(a-1)}{a+2} \\times \\dfrac{a(a-3)}{(a-1)(a-3)}\\)"
+            },
+            {
+              "explain": "Cancel the common factors: \\((a+2)\\), \\((a-1)\\) and \\((a-3)\\).",
+              "work": "\\(\\dfrac{\\textcolor{#b45309}{(a+2)}\\textcolor{#2563eb}{(a-1)}}{\\textcolor{#b45309}{(a+2)}} \\times \\dfrac{a\\textcolor{#15803d}{(a-3)}}{\\textcolor{#2563eb}{(a-1)}\\textcolor{#15803d}{(a-3)}}\\)"
+            },
+            {
+              "explain": "Only \\(a\\) is left.",
+              "work": "\\(a\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "algebraic fractions",
+              "note": "Factorise, flip the second fraction, cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q21b",
+          "type": "mc",
+          "stem": "Simplifying the following algebraic fractions. \\(\\dfrac{v^2 - u^2}{u - v}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(-v - u\\)",
+            "\\(v + u\\)",
+            "\\(v - u\\)",
+            "\\(u - v\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise the top as a difference of two squares. The bottom is the OPPOSITE of one factor: \\(u - v = -(v - u)\\).",
+          "steps": [
+            {
+              "explain": "Factorise the numerator: \\(v^2 - u^2\\) is a difference of two squares.",
+              "work": "\\(v^2 - u^2 = (v - u)(v + u)\\)"
+            },
+            {
+              "explain": "Rewrite the denominator so it matches \\((v - u)\\): \\(u - v\\) is \\(-1\\) times \\((v - u)\\).",
+              "work": "\\(u - v = -(v - u)\\)"
+            },
+            {
+              "explain": "Substitute and cancel the common factor \\((v - u)\\).",
+              "work": "\\(\\dfrac{\\textcolor{#b45309}{(v-u)}(v+u)}{-\\textcolor{#b45309}{(v-u)}} = \\dfrac{v + u}{-1}\\)"
+            },
+            {
+              "explain": "Dividing by \\(-1\\) changes the sign.",
+              "work": "\\(-(v + u) = -v - u\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "algebraic fractions",
+              "note": "Remember u − v is the opposite of v − u; watch the sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q28",
+          "type": "review",
+          "stem": "Using algebra techniques, show that the following is true. \\(\\dfrac{a - b}{a + b} \\times \\sqrt{\\dfrac{a + b}{a - b}} = \\dfrac{\\sqrt{a^2 - b^2}}{a + b}\\)",
+          "difficulty": "hard",
+          "answer": "LHS = \\(\\dfrac{a-b}{a+b}\\times\\sqrt{\\dfrac{a+b}{a-b}} = \\sqrt{\\dfrac{(a-b)^2}{(a+b)^2}\\times\\dfrac{a+b}{a-b}} = \\sqrt{\\dfrac{(a-b)(a+b)}{(a+b)^2}} = \\dfrac{\\sqrt{a^2-b^2}}{a+b} = \\text{RHS}\\)",
+          "manual": true,
+          "hint": "Put the left fraction INSIDE the square root by squaring it: \\(X = \\sqrt{X^2}\\). Then combine, cancel common factors, and use \\((a-b)(a+b) = a^2 - b^2\\).",
+          "steps": [
+            {
+              "explain": "Start with the left-hand side (LHS) and aim to reach the right-hand side. Write the fraction as a square root by squaring it inside the root (valid for positive values).",
+              "work": "\\(\\dfrac{a-b}{a+b} = \\sqrt{\\left(\\dfrac{a-b}{a+b}\\right)^2} = \\sqrt{\\dfrac{(a-b)^2}{(a+b)^2}}\\)"
+            },
+            {
+              "explain": "Multiply the two square roots: \\(\\sqrt{A}\\times\\sqrt{B} = \\sqrt{AB}\\).",
+              "work": "\\(\\text{LHS} = \\sqrt{\\dfrac{(a-b)^2}{(a+b)^2} \\times \\dfrac{a+b}{a-b}}\\)"
+            },
+            {
+              "explain": "Write the squared brackets in full so you can see what cancels.",
+              "work": "\\(= \\sqrt{\\dfrac{(a-b)(a-b)(a+b)}{(a+b)(a+b)(a-b)}}\\)"
+            },
+            {
+              "explain": "Cancel one \\((a-b)\\) and one \\((a+b)\\) from the top and bottom.",
+              "work": "\\(= \\sqrt{\\dfrac{\\textcolor{#b45309}{(a-b)}(a-b)(a+b)}{(a+b)(a+b)\\textcolor{#b45309}{(a-b)}}} \\;\\to\\; \\sqrt{\\dfrac{(a-b)(a+b)}{(a+b)^2}}\\)"
+            },
+            {
+              "explain": "Use the difference of two squares on the top, and take the square root of the bottom: \\(\\sqrt{(a+b)^2} = a + b\\).",
+              "work": "\\(= \\dfrac{\\sqrt{(a-b)(a+b)}}{\\sqrt{(a+b)^2}} = \\dfrac{\\sqrt{a^2 - b^2}}{a + b}\\)"
+            },
+            {
+              "explain": "This is exactly the right-hand side, so the statement is true.",
+              "work": "\\(\\text{LHS} = \\text{RHS}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the following is true",
+              "note": "Work from one side only (LHS) until it matches the other side."
+            },
+            {
+              "text": "Using algebra techniques",
+              "note": "Combine roots, cancel, use difference of squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2075,6 +2470,198 @@
             "\\(-\\frac{2bx}{a^2+b^2}\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "killara2022-y9-t4a-q6",
+          "type": "mc",
+          "stem": "Express the following as a single fraction. \\(\\dfrac{a}{2} + \\dfrac{a}{5}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{7a}{10}\\)",
+            "\\(\\dfrac{2a}{7}\\)",
+            "\\(\\dfrac{a}{10}\\)",
+            "\\(\\dfrac{7a}{20}\\)"
+          ],
+          "answer": 0,
+          "hint": "To add fractions you need a COMMON denominator. What is the lowest common multiple of 2 and 5?",
+          "steps": [
+            {
+              "explain": "Find the lowest common denominator (LCD) of 2 and 5.",
+              "work": "LCD = \\(10\\)"
+            },
+            {
+              "explain": "Rewrite each fraction with denominator 10: multiply top and bottom of \\(\\dfrac{a}{2}\\) by 5, and of \\(\\dfrac{a}{5}\\) by 2.",
+              "work": "\\(\\dfrac{a \\times \\textcolor{#b45309}{5}}{2 \\times \\textcolor{#b45309}{5}} + \\dfrac{a \\times \\textcolor{#2563eb}{2}}{5 \\times \\textcolor{#2563eb}{2}}\\)"
+            },
+            {
+              "explain": "Now the denominators are equal, so add the numerators and keep the denominator.",
+              "work": "\\(\\dfrac{5a}{10} + \\dfrac{2a}{10} = \\dfrac{5a + 2a}{10}\\)"
+            },
+            {
+              "explain": "Collect the like terms \\(5a + 2a = 7a\\).",
+              "work": "\\(\\dfrac{7a}{10}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "single fraction",
+              "note": "Use a common denominator, then add the numerators."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q16a",
+          "type": "mc",
+          "stem": "Simplifying the following algebraic fraction by expressing it as a single fraction. \\(\\dfrac{3x - 1}{3} - \\dfrac{7 - 2x}{4}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{18x - 25}{12}\\)",
+            "\\(\\dfrac{6x - 25}{12}\\)",
+            "\\(\\dfrac{18x - 17}{12}\\)",
+            "\\(\\dfrac{5x - 8}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "LCD of 3 and 4 is 12. Multiply each NUMERATOR by the number its denominator was multiplied by — and put brackets around the second numerator before subtracting.",
+          "steps": [
+            {
+              "explain": "The lowest common denominator of 3 and 4 is <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">12</mark>. Multiply the first fraction by 4 and the second by 3 (top and bottom).",
+              "work": "\\(\\dfrac{\\textcolor{#b45309}{4}(3x - 1)}{12} - \\dfrac{\\textcolor{#2563eb}{3}(7 - 2x)}{12}\\)"
+            },
+            {
+              "explain": "Expand the brackets in the numerators.",
+              "work": "\\(\\dfrac{12x - 4}{12} - \\dfrac{21 - 6x}{12}\\)"
+            },
+            {
+              "explain": "Write over one denominator. The minus sign applies to the WHOLE second numerator, so change both signs.",
+              "work": "\\(\\dfrac{12x - 4 \\textcolor{#b45309}{- 21 + 6x}}{12}\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(12x + 6x = 18x\\) and \\(-4 - 21 = -25\\).",
+              "work": "\\(\\dfrac{18x - 25}{12}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "single fraction",
+              "note": "Common denominator, expand, then subtract the whole numerator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q16b",
+          "type": "mc",
+          "stem": "Simplifying the following algebraic fraction by expressing it as a single fraction. \\(\\dfrac{5}{4x} - \\dfrac{2}{x^2}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{5x - 8}{4x^2}\\)",
+            "\\(\\dfrac{5x - 2}{4x^2}\\)",
+            "\\(\\dfrac{3}{4x - x^2}\\)",
+            "\\(\\dfrac{5x - 8}{4x}\\)"
+          ],
+          "answer": 0,
+          "hint": "The LCD must contain EVERY factor of both denominators: \\(4x\\) and \\(x^2\\) → \\(4x^2\\).",
+          "steps": [
+            {
+              "explain": "Find the lowest common denominator of \\(4x\\) and \\(x^2\\).",
+              "work": "LCD = \\(4x^2\\)"
+            },
+            {
+              "explain": "Make the denominators equal: multiply the first fraction by \\(\\dfrac{x}{x}\\) and the second by \\(\\dfrac{4}{4}\\).",
+              "work": "\\(\\dfrac{5 \\times \\textcolor{#b45309}{x}}{4x \\times \\textcolor{#b45309}{x}} - \\dfrac{2 \\times \\textcolor{#2563eb}{4}}{x^2 \\times \\textcolor{#2563eb}{4}}\\)"
+            },
+            {
+              "explain": "Simplify the numerators.",
+              "work": "\\(\\dfrac{5x}{4x^2} - \\dfrac{8}{4x^2}\\)"
+            },
+            {
+              "explain": "Subtract the numerators over the common denominator.",
+              "work": "\\(\\dfrac{5x - 8}{4x^2}\\)  ✓ (no common factor, so it is simplest)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "single fraction",
+              "note": "LCD includes every factor: 4x²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-t4a-q27",
+          "type": "mc",
+          "stem": "Simplify the following algebraic expression. \\(2 + \\dfrac{t^2}{t + 1} - \\left(1 + \\dfrac{1}{t + 1}\\right)\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(t\\)",
+            "\\(t + 1\\)",
+            "\\(\\dfrac{t^2 + t + 2}{t + 1}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Put every term over the common denominator \\(t+1\\). Be careful with the minus in front of the bracket: it changes the sign of BOTH terms inside.",
+          "steps": [
+            {
+              "explain": "Write the whole numbers 2 and 1 as fractions with denominator \\(t+1\\).",
+              "work": "\\(2 = \\dfrac{2(t+1)}{t+1} = \\dfrac{2t+2}{t+1}\\qquad 1 = \\dfrac{t+1}{t+1}\\)"
+            },
+            {
+              "explain": "Add the two terms inside the bracket (same denominator).",
+              "work": "\\(1 + \\dfrac{1}{t+1} = \\dfrac{t + 1 + 1}{t+1} = \\dfrac{t + 2}{t + 1}\\)"
+            },
+            {
+              "explain": "Rewrite the whole expression over \\(t+1\\).",
+              "work": "\\(\\dfrac{2t + 2}{t+1} + \\dfrac{t^2}{t+1} - \\dfrac{t + 2}{t+1}\\)"
+            },
+            {
+              "explain": "Combine the numerators. The minus applies to the WHOLE \\((t+2)\\).",
+              "work": "\\(\\dfrac{2t + 2 + t^2 \\textcolor{#b45309}{- t - 2}}{t + 1}\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(t^2\\); \\(2t - t = t\\); \\(2 - 2 = 0\\).",
+              "work": "\\(\\dfrac{t^2 + t}{t + 1}\\)"
+            },
+            {
+              "explain": "Factorise the top (common factor \\(t\\)) and cancel \\((t+1)\\).",
+              "work": "\\(\\dfrac{t\\textcolor{#b45309}{(t+1)}}{\\textcolor{#b45309}{(t+1)}} = t\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following algebraic expression",
+              "note": "Common denominator t + 1; expand the bracket's minus sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2022",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
