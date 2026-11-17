@@ -4520,6 +4520,158 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "wghs2015-y10-m2",
+          "type": "mc",
+          "stem": "Calculate the exact value of \\(x\\) and give your answer with a rational denominator.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 364.3 245.6\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><g transform=\"translate(6,6)\"><path d=\"M167.7 218.8 L167.7 229.7 L168.1 230.1 L169.4 229.7 L169.9 221.4 L171.6 220.1 L172.9 220.1 L174.2 221 L174.6 229.7 L175.5 230.1 L176.4 229.7 L176.4 221.9 L178.1 220.1 L179.8 220.1 L181.1 221.4 L181.6 225.3 L181.1 229.7 L181.6 230.1 L183.3 229.7 L183.3 221.4 L181.6 218.8 L179.4 218.4 L176.4 220.1 L173.3 218.4 L171.2 218.8 L170.3 219.7 L169.4 218.8ZM157.3 214.9 L155.6 216.2 L154.7 218.4 L155.1 218.8 L156.9 218.8 L157.3 217.1 L159.9 215.8 L161.2 216.2 L162.9 218 L162.9 219.7 L156 226.6 L154.7 229.7 L155.1 230.1 L164.7 230.1 L165.1 229.7 L164.7 227.9 L163.4 228.4 L160.8 227.9 L157.7 228.4 L157.3 227.9 L163.8 221.9 L164.7 220.1 L164.7 217.5 L163.8 215.8 L161.6 214.5ZM149.9 214.5 L149.1 214.5 L146 217.5 L144.3 218.4 L144.3 220.1 L147.8 218 L148.2 218.4 L148.2 229.7 L148.6 230.1 L149.9 229.7ZM261.3 166 L259.1 168.6 L258.7 175.1 L260.4 178.5 L263.9 179 L265.6 178.1 L266.5 176.4 L266.9 169.9 L266.1 166.8 L264.8 166ZM262.2 167.3 L263.5 167.3 L264.8 168.6 L265.6 170.7 L265.6 174.6 L264.8 176.8 L263.5 177.7 L262.6 177.7 L260.4 175.5 L260 173.8 L260.4 169ZM250.9 166 L249.2 167.7 L248.7 169 L250 169.4 L251.8 167.3 L253.1 167.3 L254.8 169 L254.8 169.9 L252.2 171.2 L251.8 172.5 L254.8 173.3 L255.2 176.4 L253.5 177.7 L251.8 177.2 L250 175.1 L248.7 175.5 L248.7 176.4 L250 178.5 L253.5 179 L254.8 178.5 L256.5 176.8 L257 175.5 L256.5 172.9 L255.2 171.6 L256.1 170.3 L256.1 167.3 L254.4 166ZM269.5 162.1 L268.2 164.2 L268.2 167.3 L269.5 169.4 L271.7 169.9 L273.9 167.7 L273.9 163.4 L273 162.1ZM270.4 162.5 L272.1 162.9 L273 164.7 L273 166.8 L271.7 168.6 L270.8 168.6 L269.1 166.4 L269.5 166 L269.1 164.7ZM170.3 58.5 L168.6 58.9 L166 62 L165.1 61.1 L164.7 58.9 L162.5 58.9 L160.8 61.1 L161.6 61.1 L162.9 59.8 L164.2 62.4 L164.2 64.6 L161.6 67.6 L159.9 67.6 L159.5 68.9 L159.9 69.3 L161.6 68.9 L164.2 65.9 L165.1 66.3 L165.5 68.9 L166.4 69.3 L168.1 68.9 L169.4 67.6 L169.4 66.7 L167.7 68 L166.4 66.3 L166 63.3 L168.6 60.2 L169.9 60.7 L170.3 60.2ZM17.8 9.1 L18.2 10.4 L17.8 11.7 L17.8 21.7 L18.2 22.1 L17.8 35.1 L18.2 36 L17.8 36.4 L17.8 72.4 L17.3 72.8 L17.8 73.2 L17.8 133.5 L18.2 133.9 L17.8 134.3 L17.8 183.7 L18.2 184.2 L17.8 188.5 L18.2 188.9 L67.6 188.9 L68 188.5 L68.5 188.9 L71.5 188.5 L72.4 188.9 L75.8 188.5 L76.3 188.9 L77.6 188.5 L78.9 188.9 L79.7 188.5 L84.9 188.5 L85.4 188.9 L86.2 188.5 L87.5 188.9 L88.8 188.5 L91 188.9 L91.9 188.5 L94.5 188.9 L99.2 188.9 L99.7 188.5 L100.5 188.9 L103.1 188.5 L103.6 188.9 L105.7 188.5 L106.6 188.9 L107 188.5 L108.8 188.9 L109.6 188.5 L115.7 188.5 L116.1 188.9 L117.4 188.5 L118.3 188.9 L119.2 188.5 L122.6 188.9 L123.9 188.5 L126.5 188.9 L127.8 188.5 L128.7 188.9 L129.1 188.5 L130.4 188.9 L132.2 188.5 L132.6 188.9 L133 188.5 L134.3 188.9 L134.8 188.5 L136.1 188.9 L137.4 188.5 L140 188.9 L140.8 188.5 L142.1 188.9 L142.6 188.5 L143.4 188.9 L146.5 188.5 L149.5 188.9 L152.1 188.5 L154.7 188.9 L155.6 188.5 L158.2 188.9 L159.5 188.5 L167.3 188.5 L167.7 188.9 L168.1 188.5 L175.9 188.5 L176.4 188.9 L176.8 188.5 L182 188.5 L182.4 188.9 L182.9 188.5 L185.9 188.9 L186.3 188.5 L188.1 188.9 L188.9 188.5 L193.7 188.5 L194.1 188.9 L194.6 188.5 L202.8 188.5 L203.2 188.9 L204.5 188.5 L206.3 188.9 L207.1 188.5 L213.6 188.5 L214.1 188.9 L214.5 188.5 L218 188.9 L218.4 188.5 L220.1 188.9 L221.4 188.5 L233.6 188.5 L234 188.9 L236.2 188.5 L238.8 188.9 L239.6 188.5 L246.1 188.5 L246.6 188.9 L247 188.5 L265.2 188.5 L265.6 188.9 L269.5 188.5 L272.1 188.9 L272.6 188.5 L288.2 188.5 L288.6 188.9 L289 188.5 L298.6 188.5 L299 188.9 L299.4 188.5 L305.1 188.5 L305.5 188.9 L327.6 188.5 L328.9 188.9 L330.2 188.1 L329.3 186.8 L325 184.6 L323.7 183.3 L316.8 180.3 L312.4 177.2 L311.6 177.2 L307.2 174.2 L302 171.6 L300.7 170.3 L295.1 167.7 L289 163.8 L288.2 163.8 L286.9 162.5 L276.9 157.3 L274.7 155.6 L273.9 155.6 L251.8 142.1 L249.2 141.3 L227.5 128.3 L221.4 125.2 L217.1 122.2 L216.2 122.2 L207.1 116.6 L206.3 116.6 L205 115.3 L204.1 115.3 L201.9 113.5 L201.1 113.5 L171.6 96.2 L170.7 96.2 L167.3 93.6 L159.5 89.7 L156 87.1 L149.5 84.1 L146 81.5 L141.3 79.3 L131.7 73.2 L130 72.8 L100.5 55.5 L99.7 55.5 L96.2 52.9 L92.3 51.1 L89.7 49 L83.2 45.9 L81.9 44.6 L75 41.2 L73.7 39.9 L72.8 39.9 L65.4 35.1 L61.5 33.4 L54.2 28.6 L50.3 26.9 L45.1 23.4 L42.5 22.5 L41.2 21.2 L38.6 20.4 L18.6 8.7ZM19.1 156.9 L19.5 156.4 L50.3 156.4 L50.7 156.9 L50.3 157.3 L50.7 159.9 L50.3 160.8 L50.7 162.9 L50.3 164.2 L50.7 165.5 L50.3 167.3 L50.7 186.8 L50.3 187.2 L23.8 187.2 L23.4 187.6 L20.4 187.2 L19.9 187.6 L19.1 186.8 L19.5 185.9 L19.1 184.2 L19.5 182.4 L19.1 180.7 L19.5 180.3 L19.1 179 L19.5 178.1 L19.1 177.2 L19.5 176.8 L19.1 174.2 L19.5 173.3 L19.1 169 L19.5 157.7ZM19.1 11.7 L19.9 11.3 L28.6 16 L42 24.3 L46.8 26.4 L49 28.2 L71.5 40.7 L75.8 43.8 L76.7 43.8 L78 45.1 L82.8 47.2 L84.9 49 L91 52 L121.8 70.2 L132.6 75.8 L146 84.1 L156 89.3 L157.3 90.6 L158.2 90.6 L230.5 132.6 L234.4 134.3 L250 143.9 L250.9 143.9 L274.7 158.2 L275.6 158.2 L292.9 168.6 L302.9 173.8 L311.6 179 L312.4 180.3 L313.7 180.3 L316.8 182.4 L318.9 182.9 L325.4 186.8 L325 187.2 L313.3 187.2 L312.9 186.8 L312 187.2 L299.9 187.2 L299.4 186.8 L298.6 187.2 L297.3 186.8 L296.4 187.2 L293.4 186.8 L292.5 187.2 L267.8 187.2 L267.4 186.8 L266.5 187.2 L257.4 187.2 L257 186.8 L256.1 187.2 L244.8 187.2 L244.4 186.8 L243.1 187.2 L212.8 187.2 L212.3 186.8 L211 187.2 L52.4 187.2 L52 186.8 L52 156 L51.1 155.1 L45.9 155.1 L45.5 154.7 L44.6 155.1 L19.9 155.1 L19.1 154.3 L19.5 153.8 L19.1 151.7 L19.5 151.2 L19.1 149.9 L19.5 145.6 L19.1 144.3 L19.5 143.4 L19.1 142.6 L19.1 137.4 L19.5 136.9 L19.1 136.1 L19.1 131.7 L19.5 131.3 L19.1 130.9 L19.5 130 L19.1 129.1 L19.5 128.3 L19.1 127.4 L19.1 101 L19.5 100.5 L19.1 99.7 L19.5 98.8 L19.1 97.9 L19.5 93.6 L19.1 92.7 L19.5 89.7 L19.1 89.3 L19.1 73.2 L19.5 72.8 L19.1 71.9 L19.5 71.5 L19.5 67.2 L19.1 66.7 L19.5 65.9 L19.1 63.3 L19.5 62 L19.1 59.4 L19.5 58.9 L19.1 57.2 L19.5 56.3 L19.1 54.6 L19.5 53.7 L19.5 46.4 L19.1 45.9 L19.5 45.1 L19.5 39 L19.1 38.6 L19.5 38.1 L19.5 32.1 L19.1 31.6 L19.5 31.2 L19.5 19.9 L19.1 19.5 L19.5 16.9 L19.1 13.9 L19.5 13.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "options": [
+            "\\(8\\sqrt{3}\\ \\text{m}\\)",
+            "\\(6\\sqrt{3}\\ \\text{m}\\)",
+            "\\(\\dfrac{24}{\\sqrt{3}}\\ \\text{m}\\)",
+            "\\(24\\sqrt{3}\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Which two sides are involved? The 12 m side is ADJACENT to the 30° angle and \\(x\\) is the HYPOTENUSE — so use cosine: \\(\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}\\). Use the exact value \\(\\cos 30^\\circ = \\dfrac{\\sqrt{3}}{2}\\).",
+          "steps": [
+            {
+              "explain": "Label the sides from the 30° angle: 12 m is next to the angle (adjacent, blue) and \\(x\\) is opposite the right angle (hypotenuse, red).",
+              "work": "adjacent and hypotenuse → <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">cos</mark>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 364.3 245.6\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><g transform=\"translate(6,6)\"><path d=\"M167.7 218.8 L167.7 229.7 L168.1 230.1 L169.4 229.7 L169.9 221.4 L171.6 220.1 L172.9 220.1 L174.2 221 L174.6 229.7 L175.5 230.1 L176.4 229.7 L176.4 221.9 L178.1 220.1 L179.8 220.1 L181.1 221.4 L181.6 225.3 L181.1 229.7 L181.6 230.1 L183.3 229.7 L183.3 221.4 L181.6 218.8 L179.4 218.4 L176.4 220.1 L173.3 218.4 L171.2 218.8 L170.3 219.7 L169.4 218.8ZM157.3 214.9 L155.6 216.2 L154.7 218.4 L155.1 218.8 L156.9 218.8 L157.3 217.1 L159.9 215.8 L161.2 216.2 L162.9 218 L162.9 219.7 L156 226.6 L154.7 229.7 L155.1 230.1 L164.7 230.1 L165.1 229.7 L164.7 227.9 L163.4 228.4 L160.8 227.9 L157.7 228.4 L157.3 227.9 L163.8 221.9 L164.7 220.1 L164.7 217.5 L163.8 215.8 L161.6 214.5ZM149.9 214.5 L149.1 214.5 L146 217.5 L144.3 218.4 L144.3 220.1 L147.8 218 L148.2 218.4 L148.2 229.7 L148.6 230.1 L149.9 229.7ZM261.3 166 L259.1 168.6 L258.7 175.1 L260.4 178.5 L263.9 179 L265.6 178.1 L266.5 176.4 L266.9 169.9 L266.1 166.8 L264.8 166ZM262.2 167.3 L263.5 167.3 L264.8 168.6 L265.6 170.7 L265.6 174.6 L264.8 176.8 L263.5 177.7 L262.6 177.7 L260.4 175.5 L260 173.8 L260.4 169ZM250.9 166 L249.2 167.7 L248.7 169 L250 169.4 L251.8 167.3 L253.1 167.3 L254.8 169 L254.8 169.9 L252.2 171.2 L251.8 172.5 L254.8 173.3 L255.2 176.4 L253.5 177.7 L251.8 177.2 L250 175.1 L248.7 175.5 L248.7 176.4 L250 178.5 L253.5 179 L254.8 178.5 L256.5 176.8 L257 175.5 L256.5 172.9 L255.2 171.6 L256.1 170.3 L256.1 167.3 L254.4 166ZM269.5 162.1 L268.2 164.2 L268.2 167.3 L269.5 169.4 L271.7 169.9 L273.9 167.7 L273.9 163.4 L273 162.1ZM270.4 162.5 L272.1 162.9 L273 164.7 L273 166.8 L271.7 168.6 L270.8 168.6 L269.1 166.4 L269.5 166 L269.1 164.7ZM170.3 58.5 L168.6 58.9 L166 62 L165.1 61.1 L164.7 58.9 L162.5 58.9 L160.8 61.1 L161.6 61.1 L162.9 59.8 L164.2 62.4 L164.2 64.6 L161.6 67.6 L159.9 67.6 L159.5 68.9 L159.9 69.3 L161.6 68.9 L164.2 65.9 L165.1 66.3 L165.5 68.9 L166.4 69.3 L168.1 68.9 L169.4 67.6 L169.4 66.7 L167.7 68 L166.4 66.3 L166 63.3 L168.6 60.2 L169.9 60.7 L170.3 60.2ZM17.8 9.1 L18.2 10.4 L17.8 11.7 L17.8 21.7 L18.2 22.1 L17.8 35.1 L18.2 36 L17.8 36.4 L17.8 72.4 L17.3 72.8 L17.8 73.2 L17.8 133.5 L18.2 133.9 L17.8 134.3 L17.8 183.7 L18.2 184.2 L17.8 188.5 L18.2 188.9 L67.6 188.9 L68 188.5 L68.5 188.9 L71.5 188.5 L72.4 188.9 L75.8 188.5 L76.3 188.9 L77.6 188.5 L78.9 188.9 L79.7 188.5 L84.9 188.5 L85.4 188.9 L86.2 188.5 L87.5 188.9 L88.8 188.5 L91 188.9 L91.9 188.5 L94.5 188.9 L99.2 188.9 L99.7 188.5 L100.5 188.9 L103.1 188.5 L103.6 188.9 L105.7 188.5 L106.6 188.9 L107 188.5 L108.8 188.9 L109.6 188.5 L115.7 188.5 L116.1 188.9 L117.4 188.5 L118.3 188.9 L119.2 188.5 L122.6 188.9 L123.9 188.5 L126.5 188.9 L127.8 188.5 L128.7 188.9 L129.1 188.5 L130.4 188.9 L132.2 188.5 L132.6 188.9 L133 188.5 L134.3 188.9 L134.8 188.5 L136.1 188.9 L137.4 188.5 L140 188.9 L140.8 188.5 L142.1 188.9 L142.6 188.5 L143.4 188.9 L146.5 188.5 L149.5 188.9 L152.1 188.5 L154.7 188.9 L155.6 188.5 L158.2 188.9 L159.5 188.5 L167.3 188.5 L167.7 188.9 L168.1 188.5 L175.9 188.5 L176.4 188.9 L176.8 188.5 L182 188.5 L182.4 188.9 L182.9 188.5 L185.9 188.9 L186.3 188.5 L188.1 188.9 L188.9 188.5 L193.7 188.5 L194.1 188.9 L194.6 188.5 L202.8 188.5 L203.2 188.9 L204.5 188.5 L206.3 188.9 L207.1 188.5 L213.6 188.5 L214.1 188.9 L214.5 188.5 L218 188.9 L218.4 188.5 L220.1 188.9 L221.4 188.5 L233.6 188.5 L234 188.9 L236.2 188.5 L238.8 188.9 L239.6 188.5 L246.1 188.5 L246.6 188.9 L247 188.5 L265.2 188.5 L265.6 188.9 L269.5 188.5 L272.1 188.9 L272.6 188.5 L288.2 188.5 L288.6 188.9 L289 188.5 L298.6 188.5 L299 188.9 L299.4 188.5 L305.1 188.5 L305.5 188.9 L327.6 188.5 L328.9 188.9 L330.2 188.1 L329.3 186.8 L325 184.6 L323.7 183.3 L316.8 180.3 L312.4 177.2 L311.6 177.2 L307.2 174.2 L302 171.6 L300.7 170.3 L295.1 167.7 L289 163.8 L288.2 163.8 L286.9 162.5 L276.9 157.3 L274.7 155.6 L273.9 155.6 L251.8 142.1 L249.2 141.3 L227.5 128.3 L221.4 125.2 L217.1 122.2 L216.2 122.2 L207.1 116.6 L206.3 116.6 L205 115.3 L204.1 115.3 L201.9 113.5 L201.1 113.5 L171.6 96.2 L170.7 96.2 L167.3 93.6 L159.5 89.7 L156 87.1 L149.5 84.1 L146 81.5 L141.3 79.3 L131.7 73.2 L130 72.8 L100.5 55.5 L99.7 55.5 L96.2 52.9 L92.3 51.1 L89.7 49 L83.2 45.9 L81.9 44.6 L75 41.2 L73.7 39.9 L72.8 39.9 L65.4 35.1 L61.5 33.4 L54.2 28.6 L50.3 26.9 L45.1 23.4 L42.5 22.5 L41.2 21.2 L38.6 20.4 L18.6 8.7ZM19.1 156.9 L19.5 156.4 L50.3 156.4 L50.7 156.9 L50.3 157.3 L50.7 159.9 L50.3 160.8 L50.7 162.9 L50.3 164.2 L50.7 165.5 L50.3 167.3 L50.7 186.8 L50.3 187.2 L23.8 187.2 L23.4 187.6 L20.4 187.2 L19.9 187.6 L19.1 186.8 L19.5 185.9 L19.1 184.2 L19.5 182.4 L19.1 180.7 L19.5 180.3 L19.1 179 L19.5 178.1 L19.1 177.2 L19.5 176.8 L19.1 174.2 L19.5 173.3 L19.1 169 L19.5 157.7ZM19.1 11.7 L19.9 11.3 L28.6 16 L42 24.3 L46.8 26.4 L49 28.2 L71.5 40.7 L75.8 43.8 L76.7 43.8 L78 45.1 L82.8 47.2 L84.9 49 L91 52 L121.8 70.2 L132.6 75.8 L146 84.1 L156 89.3 L157.3 90.6 L158.2 90.6 L230.5 132.6 L234.4 134.3 L250 143.9 L250.9 143.9 L274.7 158.2 L275.6 158.2 L292.9 168.6 L302.9 173.8 L311.6 179 L312.4 180.3 L313.7 180.3 L316.8 182.4 L318.9 182.9 L325.4 186.8 L325 187.2 L313.3 187.2 L312.9 186.8 L312 187.2 L299.9 187.2 L299.4 186.8 L298.6 187.2 L297.3 186.8 L296.4 187.2 L293.4 186.8 L292.5 187.2 L267.8 187.2 L267.4 186.8 L266.5 187.2 L257.4 187.2 L257 186.8 L256.1 187.2 L244.8 187.2 L244.4 186.8 L243.1 187.2 L212.8 187.2 L212.3 186.8 L211 187.2 L52.4 187.2 L52 186.8 L52 156 L51.1 155.1 L45.9 155.1 L45.5 154.7 L44.6 155.1 L19.9 155.1 L19.1 154.3 L19.5 153.8 L19.1 151.7 L19.5 151.2 L19.1 149.9 L19.5 145.6 L19.1 144.3 L19.5 143.4 L19.1 142.6 L19.1 137.4 L19.5 136.9 L19.1 136.1 L19.1 131.7 L19.5 131.3 L19.1 130.9 L19.5 130 L19.1 129.1 L19.5 128.3 L19.1 127.4 L19.1 101 L19.5 100.5 L19.1 99.7 L19.5 98.8 L19.1 97.9 L19.5 93.6 L19.1 92.7 L19.5 89.7 L19.1 89.3 L19.1 73.2 L19.5 72.8 L19.1 71.9 L19.5 71.5 L19.5 67.2 L19.1 66.7 L19.5 65.9 L19.1 63.3 L19.5 62 L19.1 59.4 L19.5 58.9 L19.1 57.2 L19.5 56.3 L19.1 54.6 L19.5 53.7 L19.5 46.4 L19.1 45.9 L19.5 45.1 L19.5 39 L19.1 38.6 L19.5 38.1 L19.5 32.1 L19.1 31.6 L19.5 31.2 L19.5 19.9 L19.1 19.5 L19.5 16.9 L19.1 13.9 L19.5 13.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"20\" y1=\"189\" x2=\"332\" y2=\"189\" stroke=\"#2563eb\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"7\" x2=\"332\" y2=\"189\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"176\" y=\"176\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">adjacent = 12 m</text><text x=\"40\" y=\"40\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">hypotenuse x</text><path d=\"M290 189 A42 42 0 0 0 301 166\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/></g></svg>"
+              }
+            },
+            {
+              "explain": "Write the cosine ratio.",
+              "work": "\\(\\cos 30^\\circ = \\dfrac{12}{x}\\)"
+            },
+            {
+              "explain": "Use the exact value \\(\\cos 30^\\circ = \\dfrac{\\sqrt{3}}{2}\\) and solve for \\(x\\) (swap \\(x\\) and \\(\\cos 30^\\circ\\)).",
+              "work": "\\(x = \\dfrac{12}{\\cos 30^\\circ} = \\dfrac{12}{\\dfrac{\\sqrt{3}}{2}} = 12 \\times \\dfrac{2}{\\sqrt{3}} = \\dfrac{24}{\\sqrt{3}}\\)"
+            },
+            {
+              "explain": "Rationalise the denominator: multiply top and bottom by \\(\\sqrt{3}\\).",
+              "work": "\\(\\dfrac{24}{\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{24\\sqrt{3}}{3}\\)"
+            },
+            {
+              "explain": "Divide 24 by 3.",
+              "work": "\\(x = 8\\sqrt{3}\\ \\text{m}\\)  ✓ (\\(\\approx 13.86\\) m)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Keep surds, no decimals."
+            },
+            {
+              "text": "rational denominator",
+              "note": "Rationalise at the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-m5a",
+          "type": "mc",
+          "stem": "Find the exact value of the following, showing all working and giving answers in simplest form. You do not have to rationalise denominators. \\(\\cos 60^\\circ \\times \\sin 45^\\circ\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2\\sqrt{2}}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{\\sqrt{3}}{2\\sqrt{2}}\\)",
+            "\\(\\dfrac{1}{\\sqrt{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the exact-value triangles: \\(\\cos 60^\\circ = \\dfrac{1}{2}\\) and \\(\\sin 45^\\circ = \\dfrac{1}{\\sqrt{2}}\\). Then multiply the fractions.",
+          "steps": [
+            {
+              "explain": "Recall the exact values from the special triangles (30-60-90 and 45-45-90).",
+              "work": "\\(\\cos 60^\\circ = \\dfrac{1}{2}\\qquad \\sin 45^\\circ = \\dfrac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\cos 60^\\circ \\times \\sin 45^\\circ = \\dfrac{1}{2} \\times \\dfrac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and the denominators.",
+              "work": "\\(= \\dfrac{1}{2\\sqrt{2}}\\)  ✓"
+            },
+            {
+              "explain": "(Rationalised: \\(\\dfrac{1}{2\\sqrt{2}} = \\dfrac{\\sqrt{2}}{4}\\) — an equivalent value; the question does not require it.)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Use special-triangle values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-m5b",
+          "type": "mc",
+          "stem": "Find the exact value of the following, showing all working and giving answers in simplest form. You do not have to rationalise denominators. \\(\\dfrac{\\tan 30^\\circ}{\\sin 30^\\circ}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{2}{\\sqrt{3}}\\)",
+            "\\(\\dfrac{1}{2\\sqrt{3}}\\)",
+            "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(2\\sqrt{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\tan 30^\\circ = \\dfrac{1}{\\sqrt{3}}\\) and \\(\\sin 30^\\circ = \\dfrac{1}{2}\\). Dividing by a fraction = MULTIPLYING by its reciprocal.",
+          "steps": [
+            {
+              "explain": "Recall the exact values.",
+              "work": "\\(\\tan 30^\\circ = \\dfrac{1}{\\sqrt{3}}\\qquad \\sin 30^\\circ = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Substitute into the fraction.",
+              "work": "\\(\\dfrac{\\tan 30^\\circ}{\\sin 30^\\circ} = \\dfrac{\\dfrac{1}{\\sqrt{3}}}{\\dfrac{1}{2}} = \\dfrac{1}{\\sqrt{3}} \\div \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Change the division into multiplication by the RECIPROCAL (flip the second fraction).",
+              "work": "\\(\\dfrac{1}{\\sqrt{3}} \\times \\textcolor{#b45309}{2}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\dfrac{2}{\\sqrt{3}}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Use the exact values from the 30-60-90 triangle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9416,6 +9568,115 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 440 280\" role=\"img\"><polygon points=\"135,145 185,235 265,35\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"135\" y1=\"145\" x2=\"135\" y2=\"75\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"135\" y=\"66\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">N</text><line x1=\"135\" y1=\"145\" x2=\"135\" y2=\"215\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"135\" y=\"228\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">S</text><path d=\"M 135 181 A 36 36 0 0 0 152.5 176.5\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"150\" y=\"202\" fill=\"#ea580c\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"start\">30°</text><line x1=\"185\" y1=\"235\" x2=\"185\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"185\" y=\"141\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">N</text><path d=\"M 185 193 A 42 42 0 0 1 200.6 196.0\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"202\" y=\"185\" fill=\"#ea580c\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"start\">20°</text><line x1=\"265\" y1=\"35\" x2=\"265\" y2=\"10\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"265\" y=\"6\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">N</text><line x1=\"265\" y1=\"35\" x2=\"265\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"265\" y=\"128\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">S</text><text x=\"118\" y=\"148\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"end\">A</text><text x=\"185\" y=\"258\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">B</text><text x=\"282\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"start\">C</text><text x=\"145\" y=\"210\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"end\">20 km</text><text x=\"195\" y=\"80\" fill=\"#4338ca\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">31 km</text></svg>"
           }
+        },
+        {
+          "id": "wghs2015-y10-m4a",
+          "type": "review",
+          "stem": "In \\(\\triangle PQR\\): \\(r = 14.2\\)m, \\(p = 16.1\\)m and \\(\\angle QPR = 28^\\circ\\). Draw a diagram and place all the above information on it.",
+          "difficulty": "medium",
+          "answer": "A triangle PQR with the angle \\(28^\\circ\\) marked at P, side \\(r = PQ = 14.2\\) m (opposite R) and side \\(p = QR = 16.1\\) m (opposite P).",
+          "manual": true,
+          "hint": "Lowercase letters name sides: side \\(p\\) is OPPOSITE vertex P, side \\(q\\) opposite Q and side \\(r\\) opposite R. ∠QPR is the angle at P.",
+          "steps": [
+            {
+              "explain": "Draw a triangle and label its vertices P, Q and R.",
+              "work": "triangle PQR"
+            },
+            {
+              "explain": "∠QPR is the angle AT vertex P (the middle letter of QPR). Mark \\(28^\\circ\\) at P.",
+              "work": "28° at P"
+            },
+            {
+              "explain": "Side \\(r = 14.2\\) m is opposite vertex R, so it is the side PQ. Side \\(p = 16.1\\) m is opposite P, so it is the side QR.",
+              "work": "\\(r = PQ = 14.2\\ \\text{m};\\quad p = QR = 16.1\\ \\text{m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"150,40 40,190 330,150\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"150\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">P</text><text x=\"28\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">Q</text><text x=\"344\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">R</text><path d=\"M138 62 A24 24 0 0 0 164 62\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"152\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">28°</text><text x=\"67\" y=\"111\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">r = 14.2 m</text><text x=\"191\" y=\"190\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">p = 16.1 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the \\(28^\\circ\\) angle at P is opposite the side \\(p = 16.1\\) (QR). This matches the pair we will use in the sine rule.",
+              "work": "\\(\\text{angle } P \\leftrightarrow \\text{side } p;\\quad \\text{angle } R \\leftrightarrow \\text{side } r\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Draw a diagram",
+              "note": "Label the vertices and mark the given lengths and angle."
+            },
+            {
+              "text": "place all the above information on it",
+              "note": "Lowercase letter = side opposite the capital letter."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-m4b",
+          "type": "mc",
+          "stem": "In \\(\\triangle PQR\\): \\(r = 14.2\\)m, \\(p = 16.1\\)m and \\(\\angle QPR = 28^\\circ\\). Find the size of \\(\\angle PQR\\) to the nearest degree.",
+          "difficulty": "hard",
+          "options": [
+            "\\(128^\\circ\\)",
+            "\\(24^\\circ\\)",
+            "\\(52^\\circ\\)",
+            "\\(76^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "We know a side and its OPPOSITE angle (\\(p = 16.1\\) opposite \\(P = 28^\\circ\\)) plus another side \\(r\\) → SINE RULE finds angle R. Then angles in a triangle add to 180°.",
+          "steps": [
+            {
+              "explain": "Mark the information: the side \\(p = 16.1\\) is opposite the known angle \\(P = 28^\\circ\\). The side \\(r = 14.2\\) is opposite the unknown angle \\(R\\).",
+              "work": "pair 1: p, P;  pair 2: r, R",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"150,40 40,190 330,150\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><text x=\"150\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">P</text><text x=\"28\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">Q</text><text x=\"344\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\">R</text><path d=\"M138 62 A24 24 0 0 0 164 62\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"152\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">28°</text><text x=\"67\" y=\"111\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\">r = 14.2 m</text><text x=\"191\" y=\"190\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">p = 16.1 m</text><line x1=\"150\" y1=\"40\" x2=\"40\" y2=\"190\" stroke=\"#059669\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"190\" x2=\"330\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"304\" y=\"124\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#7c3aed\">R = ?</text><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">Q = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the sine rule with the unknown angle on top.",
+              "work": "\\(\\dfrac{\\sin R}{r} = \\dfrac{\\sin P}{p} \\;\\Rightarrow\\; \\dfrac{\\sin R}{14.2} = \\dfrac{\\sin 28^\\circ}{16.1}\\)"
+            },
+            {
+              "explain": "Multiply both sides by 14.2.",
+              "work": "\\(\\sin R = \\dfrac{14.2 \\sin 28^\\circ}{16.1} = 0.4141\\ldots\\)"
+            },
+            {
+              "explain": "Use \\(\\sin^{-1}\\) to find R. Since \\(r < p\\) the angle R is smaller than 28° (acute) — only one answer.",
+              "work": "\\(R = \\sin^{-1}(0.4141\\ldots) = 24.46\\ldots^\\circ \\approx 24^\\circ\\)"
+            },
+            {
+              "explain": "The question asks for ∠PQR (angle Q). Angles in a triangle add to 180°.",
+              "work": "\\(Q = 180^\\circ - (28^\\circ + 24.46^\\circ) = 127.5\\ldots^\\circ\\)"
+            },
+            {
+              "explain": "Round to the nearest degree.",
+              "work": "\\(\\angle PQR \\approx 128^\\circ\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the size of",
+              "note": "Angle Q, not angle R."
+            },
+            {
+              "text": "nearest degree",
+              "note": "Round at the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10465,6 +10726,99 @@
               "work": "\\(0.1360\\ldots\\times60=8.16\\ldots′\\Rightarrow\\boxed{\\theta=118°08′}\\)"
             }
           ]
+        },
+        {
+          "id": "wghs2015-y10-m5c",
+          "type": "mc",
+          "stem": "Find the exact value of the following, showing all working and giving answers in simplest form. You do not have to rationalise denominators. \\(\\cos 135^\\circ\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{1}{\\sqrt{2}}\\)",
+            "\\(\\dfrac{1}{\\sqrt{2}}\\)",
+            "\\(-\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(-\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "135° is in the SECOND quadrant, where cosine is NEGATIVE. Find the related acute angle: \\(180^\\circ - 135^\\circ = 45^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Find the quadrant. 135° is between 90° and 180° — the 2nd quadrant. In the 2nd quadrant only SINE is positive (ASTC: S in the 2nd quadrant), so cosine is <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">negative</mark>.",
+              "work": "quadrant 2:  sin +,  cos −,  tan −"
+            },
+            {
+              "explain": "Find the related (acute) angle.",
+              "work": "\\(180^\\circ - 135^\\circ = 45^\\circ\\)"
+            },
+            {
+              "explain": "So \\(\\cos 135^\\circ = -\\cos 45^\\circ\\).",
+              "work": "\\(\\cos 135^\\circ = -\\cos 45^\\circ\\)"
+            },
+            {
+              "explain": "Use the exact value \\(\\cos 45^\\circ = \\dfrac{1}{\\sqrt{2}}\\).",
+              "work": "\\(\\cos 135^\\circ = -\\dfrac{1}{\\sqrt{2}}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "135° is in quadrant 2: cosine is negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-m5d",
+          "type": "mc",
+          "stem": "Find the exact value of the following, showing all working and giving answers in simplest form. You do not have to rationalise denominators. \\(\\sin 90^\\circ \\times \\sin 300^\\circ\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(-\\dfrac{1}{2}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\sin 90^\\circ = 1\\). 300° is in the FOURTH quadrant, where sine is NEGATIVE. Its related angle is \\(360^\\circ - 300^\\circ = 60^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Exact value of the first factor.",
+              "work": "\\(\\sin 90^\\circ = 1\\)"
+            },
+            {
+              "explain": "300° is between 270° and 360° — the 4th quadrant. Only COSINE is positive there, so sine is <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">negative</mark>.",
+              "work": "quadrant 4:  sin −,  cos +,  tan −"
+            },
+            {
+              "explain": "Related acute angle.",
+              "work": "\\(360^\\circ - 300^\\circ = 60^\\circ \\;\\Rightarrow\\; \\sin 300^\\circ = -\\sin 60^\\circ = -\\dfrac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Multiply the two values.",
+              "work": "\\(1 \\times \\left(-\\dfrac{\\sqrt{3}}{2}\\right) = -\\dfrac{\\sqrt{3}}{2}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "300° is in quadrant 4: sine is negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher",
+            "note": "Handwritten solution is hard to read; value computed independently as −√3/2."
+          }
         }
       ]
     },
@@ -12088,6 +12442,126 @@
               }
             }
           ]
+        },
+        {
+          "id": "wghs2015-y10-m3a",
+          "type": "mc",
+          "stem": "The bearing of C from A is \\(250^\\circ\\) and the distance of C from A is 36km. Explain why \\(\\theta\\) is \\(110^\\circ\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 428.4 259.4\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><g transform=\"translate(6,6)\"><path d=\"M29 227.1 L23.4 226.6 L20.8 227.9 L19.1 229.7 L17.3 234.4 L19.1 238.8 L22.1 239.6 L25.6 238.8 L26.9 237.5 L26 237 L24.3 238.3 L21.2 238.3 L19.5 237 L19.5 233.1 L21.2 229.2 L22.5 227.9 L26.9 227.5 L27.7 228.4 L27.7 229.7 L28.6 230.1ZM150.8 208.4 L152.1 209.7 L151.7 219.7 L149.9 220.6 L154.3 221 L153 219.7 L153 218 L154.3 217.1 L156 219.7 L156 221 L164.2 221 L162.9 220.1 L162.9 214.9 L164.7 213.6 L166 213.6 L166.8 214.5 L166.4 218.8 L166.8 219.7 L165.5 221 L169 221.4 L169 220.6 L167.7 220.1 L168.1 219.3 L167.7 217.1 L168.1 215.4 L169.9 213.6 L170.7 213.6 L172 216.2 L172 219.7 L170.7 220.6 L170.7 221.4 L173.8 221.4 L172.9 220.1 L173.3 218 L172.9 213.6 L171.6 212.3 L169.4 212.8 L168.6 213.6 L166.8 212.8 L164.2 213.2 L161.2 212.8 L160.8 213.6 L161.6 214.1 L161.2 215.8 L161.6 219.7 L159.5 220.6 L154.7 216.2 L159 212.3 L156 212.3 L156.4 213.2 L153.4 215.8 L153 215.4 L153.4 208.4 L153 208ZM144.3 207.6 L140.4 208.4 L136.9 212.3 L136.5 216.7 L139.1 220.6 L143 220.6 L144.7 217.1 L144.3 214.1 L142.6 212.3 L139.5 212.8 L139.1 211.9ZM140.4 213.2 L143 214.9 L143 218 L142.1 219.7 L139.5 219.7 L138.2 217.5 L138.2 214.9ZM132.6 207.6 L130 207.6 L127.8 209.7 L130.4 208.4 L132.6 210.2 L132.6 211.5 L129.6 214.1 L131.3 214.1 L132.6 215.4 L133 217.5 L131.7 219.3 L129.6 219.3 L127.8 218.4 L127 219.3 L127.4 220.1 L131.7 220.1 L133.9 218.8 L134.3 215.4 L132.6 212.8 L133.9 211.5 L133.9 209.3ZM247.9 165.5 L246.6 166 L246.6 166.8 L243.1 171.2 L241.8 174.2 L239.2 177.2 L239.6 177.7 L242.2 177.7 L241.4 176.4 L242.2 174.6 L244 173.3 L247.4 174.2 L247.4 176.8 L246.1 177.7 L247.4 178.1 L250.5 177.7 L248.7 176.4 L248.3 172.5 L248.7 170.3ZM246.1 169 L247 170.7 L247 172.5 L244 172.9 L243.5 172.5ZM226.6 153.8 L223.2 154.3 L220.1 158.6 L219.3 164.7 L221 167.3 L224.5 167.3 L226.6 165.1 L227.9 162.5 L228.8 157.7 L227.5 154.3ZM221.9 160.8 L226.2 161.6 L225.3 164.2 L223.6 166.4 L221.9 166.4 L221 164.7 L221 161.6ZM224.9 154.7 L226.2 154.7 L227.1 156 L227.1 158.6 L225.8 160.3 L222.3 159.5 L223.2 156.4ZM371.8 138.7 L373.1 140 L373.1 148.6 L372.7 149.9 L371.4 150.8 L371.8 151.2 L380.9 151.7 L382.2 149.5 L381.8 148.6 L380.9 148.6 L380.5 149.9 L378.7 150.8 L374.4 149.9 L374.8 147.3 L374.4 146 L375.3 145.2 L377.9 145.2 L380 146.9 L380.5 143.9 L379.6 143.4 L378.7 144.3 L374.8 144.3 L374.4 143 L375.3 139.5 L379.6 140 L380.5 141.3 L381.8 140.4 L381.8 139.5 L374.4 138.2ZM360.1 138.2 L361.4 139.5 L361.4 144.3 L361 144.7 L361.4 148.2 L361 149.5 L359.7 150.4 L363.1 151.2 L369.6 151.2 L370.9 148.6 L369.6 148.2 L368.3 149.9 L367 150.4 L364 150.4 L363.1 149.5 L362.7 147.3 L363.1 146.9 L362.7 143.9 L363.6 143 L363.1 140 L364.4 139.1 L364.4 138.2ZM352.3 138.2 L350.6 141.7 L349.7 145.2 L348.8 145.6 L347.5 149.1 L345.8 150.4 L348.8 150.8 L349.3 149.9 L348.4 149.5 L350.1 146.5 L354.5 146.5 L355.8 149.1 L354.5 150.8 L358.8 150.8 L356.6 148.2 L356.2 145.6 L353.2 139.5 L353.2 138.2ZM352.7 140.8 L353.2 143.4 L354.5 145.2 L350.6 145.6 L350.1 145.2 L351 144.3 L351 142.6ZM337.6 137.8 L334.5 141.3 L333.7 143.9 L334.5 147.8 L336.7 149.9 L338 150.4 L341.9 150.4 L344.9 149.1 L344.5 148.2 L342.3 149.5 L338.4 149.5 L337.1 148.6 L335.8 146 L335.8 143 L336.7 140.4 L338.4 138.7 L339.7 138.2 L342.8 139.1 L343.6 140.8 L344.9 141.7 L344.9 138.2 L341 137.4ZM326.7 136.9 L324.6 138.2 L324.1 141.7 L325 143 L328 144.7 L330.2 147.3 L328 149.5 L325 148.6 L324.1 146.9 L323.3 146.5 L323.7 147.3 L323.3 149.1 L328.5 150.4 L330.2 149.9 L331.5 148.6 L331.5 147.3 L332.4 146 L329.8 143.4 L327.6 142.6 L325.4 140.4 L325.4 139.5 L328 137.8 L330.6 139.5 L331.1 141.3 L331.9 139.5 L331.5 137.8ZM356.2 116.1 L353.6 119.2 L353.2 123.9 L356.2 127.8 L361.8 128.3 L364.4 125.7 L365.7 121.3 L362.3 116.1 L360.5 115.7ZM358.8 116.6 L360.5 116.6 L362.7 118.7 L363.6 120.9 L363.1 124.4 L360.5 127.4 L357.1 127 L355.8 125.7 L354.9 123.5 L354.9 120.9 L355.8 119.2ZM341.9 115.3 L341.5 117.9 L343.6 116.1 L345.8 117 L344.9 122.2 L345.4 126.1 L343.6 127.8 L348.4 127.8 L346.7 126.1 L347.1 124.8 L346.7 123.1 L347.5 122.2 L347.1 117.9 L348.4 116.6 L349.7 116.6 L351.9 118.3 L352.3 117.4 L351.9 115.7ZM336.7 101.8 L336.7 103.6 L335.4 104.9 L338.9 104.9 L337.6 104 L337.1 101.8ZM337.1 96.2 L336.7 96.6 L337.1 100.5 L337.6 97.9ZM362.3 93.6 L362.7 96.2 L364.4 94 L367 94.5 L366.6 95.3 L367 95.8 L366.6 104.4 L365.3 105.7 L370.1 105.7 L368.3 104.4 L369.2 98.4 L368.8 94.9 L371.4 94.5 L373.1 96.2 L373.5 94.5 L372.2 93.2 L371.8 93.6 L370.1 93.2ZM351.9 93.6 L349.3 97.1 L348.8 100.1 L350.1 103.6 L352.3 105.3 L354.5 105.7 L358.8 105.3 L361 102.3 L361.4 100.5 L361 96.2 L357.9 93.2 L356.6 92.7ZM354.9 93.6 L357.1 94 L359.2 96.6 L358.8 102.7 L356.2 104.9 L353.2 104.4 L351.4 102.7 L351 98.4 L352.3 95.3ZM335.8 92.3 L335.4 92.7 L337.1 94 L336.7 94.9 L338 95.3 L339.7 97.1 L340.2 98.8 L342.3 101 L342.3 101.8 L344.9 104 L345.4 105.3 L346.2 105.3 L345.8 104 L346.2 103.6 L345.8 102.7 L346.2 94.5 L348 92.7 L344.1 92.7 L345.8 94.9 L345.4 96.6 L345.8 100.5 L344.5 101 L341.5 97.5 L338.9 93.2ZM221.4 66.3 L221.4 67.2 L222.3 67.6 L222.3 69.3 L221.4 70.6 L219.7 77.1 L218 78.4 L224.9 78.9 L227.1 78 L228.4 76.7 L228.4 73.2 L227.5 73.2 L227.1 72.4 L229.7 70.6 L229.7 69.3 L228.8 67.6 L227.1 66.7ZM225.3 72.8 L226.6 74.5 L226.2 76.3 L224 78 L221.9 78 L221.4 75.8 L222.3 75 L222.3 73.7 L223.6 72.4ZM226.6 67.6 L227.9 69.3 L226.2 71.5 L223.6 71.9 L223.2 71.1 L224 68.9 L225.3 67.6ZM238.3 28.2 L234.9 40.7 L233.1 44.2 L234 45.1 L236.6 42.9 L237.9 44.2 L237.5 44.6 L237.9 49 L237 49.8 L237.5 50.3 L237 52.9 L237.5 54.6 L237 61.5 L237.5 62 L236.6 68.5 L237 71.9 L234.9 73.2 L234 75 L234.4 77.1 L198.9 105.3 L197.6 105.7 L195.9 107.9 L194.1 109.2 L192.8 109.2 L192 110.9 L177.7 121.3 L170.3 127.8 L167.3 129.6 L166 131.3 L164.2 131.7 L160.3 135.6 L157.3 137.8 L156.4 137.8 L153.4 140.8 L146.9 145.2 L141.7 149.9 L133 156 L127 161.6 L116.1 169.4 L115.3 170.7 L110.1 174.2 L101.4 181.6 L99.7 182 L93.2 186.8 L89.3 190.7 L83.6 194.6 L75.4 201.5 L74.1 201.9 L73.7 202.8 L72.4 203.2 L70.2 205.8 L68 206.7 L66.3 208.9 L63.7 210.2 L58.1 215.4 L38.1 230.1 L37.3 231.4 L32.9 231 L31.6 232.3 L31.2 234 L32.9 236.6 L34.7 237 L36 236.6 L37.3 235.3 L38.1 232.7 L39.9 232.7 L54.2 227.5 L57.2 227.1 L61.5 224.9 L63.3 224.9 L65 224 L66.3 224.5 L69.8 222.7 L71.5 222.7 L72.4 221.9 L76.7 221 L78.4 219.7 L80.2 219.7 L82.8 218.4 L85.8 218 L94.5 214.5 L97.9 214.1 L98.8 213.2 L101.4 212.8 L115.7 207.6 L120 206.7 L123.5 205 L131.7 202.8 L132.6 201.9 L142.6 199.3 L151.2 195.9 L158.2 193.7 L159.9 193.7 L169 190.2 L170.7 190.2 L172 189.4 L175.9 188.5 L176.8 187.6 L178.5 187.6 L179.4 186.8 L181.1 186.8 L190.7 183.3 L195 182.4 L196.3 181.6 L201.9 180.7 L202.8 179.8 L209.3 178.1 L210.2 177.2 L213.2 176.8 L214.1 175.9 L215.8 175.9 L218 174.6 L220.1 174.6 L221.4 173.8 L223.2 173.8 L224.9 172.5 L228.4 172 L231.4 170.3 L231.8 171.6 L233.1 172 L237 171.6 L237.5 167.7 L234.4 165.5 L235.3 158.2 L234.9 156.9 L235.3 142.1 L235.7 141.7 L235.3 139.1 L235.7 137.4 L235.3 136.9 L236.2 130.9 L235.7 125.7 L236.2 125.2 L236.2 118.3 L237 110.5 L236.6 104.9 L237.5 99.7 L237 98.8 L237.5 84.9 L237.9 84.5 L237.5 83.2 L237.9 79.7 L237 79.3 L236.6 83.2 L237 86.2 L236.6 86.7 L236.6 96.2 L236.2 96.6 L236.6 99.7 L235.7 105.3 L236.2 109.6 L235.3 116.6 L234.9 144.3 L234 145.2 L225.8 146.5 L218.4 150.8 L214.5 155.1 L212.3 159 L210.6 164.2 L211 165.5 L210.6 166 L210.6 173.3 L211.5 175.1 L210.6 176.4 L207.6 177.7 L204.1 178.1 L201.9 179.4 L198.9 179.8 L195.4 181.6 L194.1 181.1 L191.5 182.4 L188.5 182.9 L186.3 184.2 L177.7 186.3 L164.7 191.1 L162.9 191.1 L162.1 192 L152.1 194.6 L149.5 195.9 L143 197.6 L140.8 198.9 L138.7 198.9 L137.8 199.8 L133.5 200.6 L120 205.8 L109.2 208.9 L104.4 211 L103.6 210.6 L102.7 211.5 L98.8 212.3 L97.5 213.2 L91.4 214.5 L89.7 215.8 L86.7 216.2 L85.8 217.1 L77.6 219.3 L74.1 221 L68.5 222.3 L66.3 223.6 L63.3 223.6 L39 232.3 L37.3 231.8 L61.1 214.1 L64.1 211 L67.2 209.3 L68 208 L71.5 205.8 L72.8 204.1 L90.6 190.7 L94.5 186.8 L95.3 186.8 L101 182 L102.7 181.6 L110.9 174.6 L116.6 170.7 L117.4 169.4 L120 168.1 L120.5 167.3 L127.8 162.1 L128.7 160.8 L137.4 153.8 L144.7 148.6 L147.8 145.6 L149.1 145.2 L151.2 143 L152.1 143 L156.4 139.1 L161.2 136.1 L179 121.3 L181.6 120 L186.3 115.7 L189.4 114.4 L193.3 110.5 L194.6 110.1 L196.3 108.3 L197.2 108.3 L199.8 105.3 L208 99.7 L212.8 95.3 L229.7 82.8 L234.4 78.4 L239.2 78.4 L240.5 77.1 L240.1 73.7 L238.3 72.4 L237.9 69.3 L238.3 68.9 L237.9 64.6 L238.8 61.1 L238.3 60.2 L238.8 57.2 L238.3 55.9 L238.8 55.5 L238.3 54.2 L238.8 51.1 L238.3 50.7 L239.2 45.5 L238.8 44.2 L239.6 43.3 L240.1 44.2 L241.4 44.2 L242.2 45.5 L243.1 45.5 L243.1 44.2 L241.4 39.9 L241.4 37.7 L239.2 31.2 L239.2 29ZM234 146 L234.9 146.9 L234.4 147.3 L234.4 156.4 L234 156.9 L234.4 158.2 L234 164.7 L234.4 165.1 L232.3 166.4 L230.5 169.9 L219.3 173.8 L217.5 173.8 L212.8 175.9 L211.9 175.1 L211 168.1 L211.9 162.9 L214.9 156.4 L219.3 151.7 L220.1 151.7 L222.7 149.1 L229.2 146.5ZM235.3 40.7 L236.2 40.3 L236.6 41.2 L235.7 41.6ZM234.4 13.9 L234.4 23.8 L234 24.7 L236.2 24.7 L236.6 21.7 L236.2 18.6 L237.5 17.8 L240.9 25.1 L243.1 25.1 L243.5 24.7 L243.1 23.4 L243.5 23 L243.5 16 L244.4 15.2 L242.7 13.9 L241.4 14.3 L240.9 16 L241.8 17.3 L241.4 17.8 L241.8 19.9 L240.1 20.8 L239.6 18.2 L237 14.7 L236.6 13.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "options": [
+            "Because the angles around the point A add up to \\(360^\\circ\\), so \\(\\theta = 360^\\circ - 250^\\circ = 110^\\circ\\).",
+            "Because a bearing is measured anticlockwise, so \\(\\theta = 250^\\circ - 140^\\circ = 110^\\circ\\).",
+            "Because angles on a straight line add to \\(180^\\circ\\), so \\(\\theta = 180^\\circ - 250^\\circ = -70^\\circ\\), which is \\(110^\\circ\\).",
+            "Because \\(250^\\circ \\div 2 = 125^\\circ\\) and \\(125^\\circ - 15^\\circ = 110^\\circ\\)."
+          ],
+          "answer": 0,
+          "hint": "A bearing is measured CLOCKWISE from NORTH. Angles all the way round a point add to \\(360^\\circ\\). Which angle is \\(\\theta\\) — the bearing itself or the rest of the turn?",
+          "steps": [
+            {
+              "explain": "The bearing \\(250^\\circ\\) is the clockwise angle from north (line AB) all the way round to AC. It is NOT \\(\\theta\\) — it is the 'big' angle on the other side.",
+              "work": "bearing \\(= 250^\\circ\\) (blue, clockwise from north)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 428.4 259.4\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><g transform=\"translate(6,6)\"><path d=\"M29 227.1 L23.4 226.6 L20.8 227.9 L19.1 229.7 L17.3 234.4 L19.1 238.8 L22.1 239.6 L25.6 238.8 L26.9 237.5 L26 237 L24.3 238.3 L21.2 238.3 L19.5 237 L19.5 233.1 L21.2 229.2 L22.5 227.9 L26.9 227.5 L27.7 228.4 L27.7 229.7 L28.6 230.1ZM150.8 208.4 L152.1 209.7 L151.7 219.7 L149.9 220.6 L154.3 221 L153 219.7 L153 218 L154.3 217.1 L156 219.7 L156 221 L164.2 221 L162.9 220.1 L162.9 214.9 L164.7 213.6 L166 213.6 L166.8 214.5 L166.4 218.8 L166.8 219.7 L165.5 221 L169 221.4 L169 220.6 L167.7 220.1 L168.1 219.3 L167.7 217.1 L168.1 215.4 L169.9 213.6 L170.7 213.6 L172 216.2 L172 219.7 L170.7 220.6 L170.7 221.4 L173.8 221.4 L172.9 220.1 L173.3 218 L172.9 213.6 L171.6 212.3 L169.4 212.8 L168.6 213.6 L166.8 212.8 L164.2 213.2 L161.2 212.8 L160.8 213.6 L161.6 214.1 L161.2 215.8 L161.6 219.7 L159.5 220.6 L154.7 216.2 L159 212.3 L156 212.3 L156.4 213.2 L153.4 215.8 L153 215.4 L153.4 208.4 L153 208ZM144.3 207.6 L140.4 208.4 L136.9 212.3 L136.5 216.7 L139.1 220.6 L143 220.6 L144.7 217.1 L144.3 214.1 L142.6 212.3 L139.5 212.8 L139.1 211.9ZM140.4 213.2 L143 214.9 L143 218 L142.1 219.7 L139.5 219.7 L138.2 217.5 L138.2 214.9ZM132.6 207.6 L130 207.6 L127.8 209.7 L130.4 208.4 L132.6 210.2 L132.6 211.5 L129.6 214.1 L131.3 214.1 L132.6 215.4 L133 217.5 L131.7 219.3 L129.6 219.3 L127.8 218.4 L127 219.3 L127.4 220.1 L131.7 220.1 L133.9 218.8 L134.3 215.4 L132.6 212.8 L133.9 211.5 L133.9 209.3ZM247.9 165.5 L246.6 166 L246.6 166.8 L243.1 171.2 L241.8 174.2 L239.2 177.2 L239.6 177.7 L242.2 177.7 L241.4 176.4 L242.2 174.6 L244 173.3 L247.4 174.2 L247.4 176.8 L246.1 177.7 L247.4 178.1 L250.5 177.7 L248.7 176.4 L248.3 172.5 L248.7 170.3ZM246.1 169 L247 170.7 L247 172.5 L244 172.9 L243.5 172.5ZM226.6 153.8 L223.2 154.3 L220.1 158.6 L219.3 164.7 L221 167.3 L224.5 167.3 L226.6 165.1 L227.9 162.5 L228.8 157.7 L227.5 154.3ZM221.9 160.8 L226.2 161.6 L225.3 164.2 L223.6 166.4 L221.9 166.4 L221 164.7 L221 161.6ZM224.9 154.7 L226.2 154.7 L227.1 156 L227.1 158.6 L225.8 160.3 L222.3 159.5 L223.2 156.4ZM371.8 138.7 L373.1 140 L373.1 148.6 L372.7 149.9 L371.4 150.8 L371.8 151.2 L380.9 151.7 L382.2 149.5 L381.8 148.6 L380.9 148.6 L380.5 149.9 L378.7 150.8 L374.4 149.9 L374.8 147.3 L374.4 146 L375.3 145.2 L377.9 145.2 L380 146.9 L380.5 143.9 L379.6 143.4 L378.7 144.3 L374.8 144.3 L374.4 143 L375.3 139.5 L379.6 140 L380.5 141.3 L381.8 140.4 L381.8 139.5 L374.4 138.2ZM360.1 138.2 L361.4 139.5 L361.4 144.3 L361 144.7 L361.4 148.2 L361 149.5 L359.7 150.4 L363.1 151.2 L369.6 151.2 L370.9 148.6 L369.6 148.2 L368.3 149.9 L367 150.4 L364 150.4 L363.1 149.5 L362.7 147.3 L363.1 146.9 L362.7 143.9 L363.6 143 L363.1 140 L364.4 139.1 L364.4 138.2ZM352.3 138.2 L350.6 141.7 L349.7 145.2 L348.8 145.6 L347.5 149.1 L345.8 150.4 L348.8 150.8 L349.3 149.9 L348.4 149.5 L350.1 146.5 L354.5 146.5 L355.8 149.1 L354.5 150.8 L358.8 150.8 L356.6 148.2 L356.2 145.6 L353.2 139.5 L353.2 138.2ZM352.7 140.8 L353.2 143.4 L354.5 145.2 L350.6 145.6 L350.1 145.2 L351 144.3 L351 142.6ZM337.6 137.8 L334.5 141.3 L333.7 143.9 L334.5 147.8 L336.7 149.9 L338 150.4 L341.9 150.4 L344.9 149.1 L344.5 148.2 L342.3 149.5 L338.4 149.5 L337.1 148.6 L335.8 146 L335.8 143 L336.7 140.4 L338.4 138.7 L339.7 138.2 L342.8 139.1 L343.6 140.8 L344.9 141.7 L344.9 138.2 L341 137.4ZM326.7 136.9 L324.6 138.2 L324.1 141.7 L325 143 L328 144.7 L330.2 147.3 L328 149.5 L325 148.6 L324.1 146.9 L323.3 146.5 L323.7 147.3 L323.3 149.1 L328.5 150.4 L330.2 149.9 L331.5 148.6 L331.5 147.3 L332.4 146 L329.8 143.4 L327.6 142.6 L325.4 140.4 L325.4 139.5 L328 137.8 L330.6 139.5 L331.1 141.3 L331.9 139.5 L331.5 137.8ZM356.2 116.1 L353.6 119.2 L353.2 123.9 L356.2 127.8 L361.8 128.3 L364.4 125.7 L365.7 121.3 L362.3 116.1 L360.5 115.7ZM358.8 116.6 L360.5 116.6 L362.7 118.7 L363.6 120.9 L363.1 124.4 L360.5 127.4 L357.1 127 L355.8 125.7 L354.9 123.5 L354.9 120.9 L355.8 119.2ZM341.9 115.3 L341.5 117.9 L343.6 116.1 L345.8 117 L344.9 122.2 L345.4 126.1 L343.6 127.8 L348.4 127.8 L346.7 126.1 L347.1 124.8 L346.7 123.1 L347.5 122.2 L347.1 117.9 L348.4 116.6 L349.7 116.6 L351.9 118.3 L352.3 117.4 L351.9 115.7ZM336.7 101.8 L336.7 103.6 L335.4 104.9 L338.9 104.9 L337.6 104 L337.1 101.8ZM337.1 96.2 L336.7 96.6 L337.1 100.5 L337.6 97.9ZM362.3 93.6 L362.7 96.2 L364.4 94 L367 94.5 L366.6 95.3 L367 95.8 L366.6 104.4 L365.3 105.7 L370.1 105.7 L368.3 104.4 L369.2 98.4 L368.8 94.9 L371.4 94.5 L373.1 96.2 L373.5 94.5 L372.2 93.2 L371.8 93.6 L370.1 93.2ZM351.9 93.6 L349.3 97.1 L348.8 100.1 L350.1 103.6 L352.3 105.3 L354.5 105.7 L358.8 105.3 L361 102.3 L361.4 100.5 L361 96.2 L357.9 93.2 L356.6 92.7ZM354.9 93.6 L357.1 94 L359.2 96.6 L358.8 102.7 L356.2 104.9 L353.2 104.4 L351.4 102.7 L351 98.4 L352.3 95.3ZM335.8 92.3 L335.4 92.7 L337.1 94 L336.7 94.9 L338 95.3 L339.7 97.1 L340.2 98.8 L342.3 101 L342.3 101.8 L344.9 104 L345.4 105.3 L346.2 105.3 L345.8 104 L346.2 103.6 L345.8 102.7 L346.2 94.5 L348 92.7 L344.1 92.7 L345.8 94.9 L345.4 96.6 L345.8 100.5 L344.5 101 L341.5 97.5 L338.9 93.2ZM221.4 66.3 L221.4 67.2 L222.3 67.6 L222.3 69.3 L221.4 70.6 L219.7 77.1 L218 78.4 L224.9 78.9 L227.1 78 L228.4 76.7 L228.4 73.2 L227.5 73.2 L227.1 72.4 L229.7 70.6 L229.7 69.3 L228.8 67.6 L227.1 66.7ZM225.3 72.8 L226.6 74.5 L226.2 76.3 L224 78 L221.9 78 L221.4 75.8 L222.3 75 L222.3 73.7 L223.6 72.4ZM226.6 67.6 L227.9 69.3 L226.2 71.5 L223.6 71.9 L223.2 71.1 L224 68.9 L225.3 67.6ZM238.3 28.2 L234.9 40.7 L233.1 44.2 L234 45.1 L236.6 42.9 L237.9 44.2 L237.5 44.6 L237.9 49 L237 49.8 L237.5 50.3 L237 52.9 L237.5 54.6 L237 61.5 L237.5 62 L236.6 68.5 L237 71.9 L234.9 73.2 L234 75 L234.4 77.1 L198.9 105.3 L197.6 105.7 L195.9 107.9 L194.1 109.2 L192.8 109.2 L192 110.9 L177.7 121.3 L170.3 127.8 L167.3 129.6 L166 131.3 L164.2 131.7 L160.3 135.6 L157.3 137.8 L156.4 137.8 L153.4 140.8 L146.9 145.2 L141.7 149.9 L133 156 L127 161.6 L116.1 169.4 L115.3 170.7 L110.1 174.2 L101.4 181.6 L99.7 182 L93.2 186.8 L89.3 190.7 L83.6 194.6 L75.4 201.5 L74.1 201.9 L73.7 202.8 L72.4 203.2 L70.2 205.8 L68 206.7 L66.3 208.9 L63.7 210.2 L58.1 215.4 L38.1 230.1 L37.3 231.4 L32.9 231 L31.6 232.3 L31.2 234 L32.9 236.6 L34.7 237 L36 236.6 L37.3 235.3 L38.1 232.7 L39.9 232.7 L54.2 227.5 L57.2 227.1 L61.5 224.9 L63.3 224.9 L65 224 L66.3 224.5 L69.8 222.7 L71.5 222.7 L72.4 221.9 L76.7 221 L78.4 219.7 L80.2 219.7 L82.8 218.4 L85.8 218 L94.5 214.5 L97.9 214.1 L98.8 213.2 L101.4 212.8 L115.7 207.6 L120 206.7 L123.5 205 L131.7 202.8 L132.6 201.9 L142.6 199.3 L151.2 195.9 L158.2 193.7 L159.9 193.7 L169 190.2 L170.7 190.2 L172 189.4 L175.9 188.5 L176.8 187.6 L178.5 187.6 L179.4 186.8 L181.1 186.8 L190.7 183.3 L195 182.4 L196.3 181.6 L201.9 180.7 L202.8 179.8 L209.3 178.1 L210.2 177.2 L213.2 176.8 L214.1 175.9 L215.8 175.9 L218 174.6 L220.1 174.6 L221.4 173.8 L223.2 173.8 L224.9 172.5 L228.4 172 L231.4 170.3 L231.8 171.6 L233.1 172 L237 171.6 L237.5 167.7 L234.4 165.5 L235.3 158.2 L234.9 156.9 L235.3 142.1 L235.7 141.7 L235.3 139.1 L235.7 137.4 L235.3 136.9 L236.2 130.9 L235.7 125.7 L236.2 125.2 L236.2 118.3 L237 110.5 L236.6 104.9 L237.5 99.7 L237 98.8 L237.5 84.9 L237.9 84.5 L237.5 83.2 L237.9 79.7 L237 79.3 L236.6 83.2 L237 86.2 L236.6 86.7 L236.6 96.2 L236.2 96.6 L236.6 99.7 L235.7 105.3 L236.2 109.6 L235.3 116.6 L234.9 144.3 L234 145.2 L225.8 146.5 L218.4 150.8 L214.5 155.1 L212.3 159 L210.6 164.2 L211 165.5 L210.6 166 L210.6 173.3 L211.5 175.1 L210.6 176.4 L207.6 177.7 L204.1 178.1 L201.9 179.4 L198.9 179.8 L195.4 181.6 L194.1 181.1 L191.5 182.4 L188.5 182.9 L186.3 184.2 L177.7 186.3 L164.7 191.1 L162.9 191.1 L162.1 192 L152.1 194.6 L149.5 195.9 L143 197.6 L140.8 198.9 L138.7 198.9 L137.8 199.8 L133.5 200.6 L120 205.8 L109.2 208.9 L104.4 211 L103.6 210.6 L102.7 211.5 L98.8 212.3 L97.5 213.2 L91.4 214.5 L89.7 215.8 L86.7 216.2 L85.8 217.1 L77.6 219.3 L74.1 221 L68.5 222.3 L66.3 223.6 L63.3 223.6 L39 232.3 L37.3 231.8 L61.1 214.1 L64.1 211 L67.2 209.3 L68 208 L71.5 205.8 L72.8 204.1 L90.6 190.7 L94.5 186.8 L95.3 186.8 L101 182 L102.7 181.6 L110.9 174.6 L116.6 170.7 L117.4 169.4 L120 168.1 L120.5 167.3 L127.8 162.1 L128.7 160.8 L137.4 153.8 L144.7 148.6 L147.8 145.6 L149.1 145.2 L151.2 143 L152.1 143 L156.4 139.1 L161.2 136.1 L179 121.3 L181.6 120 L186.3 115.7 L189.4 114.4 L193.3 110.5 L194.6 110.1 L196.3 108.3 L197.2 108.3 L199.8 105.3 L208 99.7 L212.8 95.3 L229.7 82.8 L234.4 78.4 L239.2 78.4 L240.5 77.1 L240.1 73.7 L238.3 72.4 L237.9 69.3 L238.3 68.9 L237.9 64.6 L238.8 61.1 L238.3 60.2 L238.8 57.2 L238.3 55.9 L238.8 55.5 L238.3 54.2 L238.8 51.1 L238.3 50.7 L239.2 45.5 L238.8 44.2 L239.6 43.3 L240.1 44.2 L241.4 44.2 L242.2 45.5 L243.1 45.5 L243.1 44.2 L241.4 39.9 L241.4 37.7 L239.2 31.2 L239.2 29ZM234 146 L234.9 146.9 L234.4 147.3 L234.4 156.4 L234 156.9 L234.4 158.2 L234 164.7 L234.4 165.1 L232.3 166.4 L230.5 169.9 L219.3 173.8 L217.5 173.8 L212.8 175.9 L211.9 175.1 L211 168.1 L211.9 162.9 L214.9 156.4 L219.3 151.7 L220.1 151.7 L222.7 149.1 L229.2 146.5ZM235.3 40.7 L236.2 40.3 L236.6 41.2 L235.7 41.6ZM234.4 13.9 L234.4 23.8 L234 24.7 L236.2 24.7 L236.6 21.7 L236.2 18.6 L237.5 17.8 L240.9 25.1 L243.1 25.1 L243.5 24.7 L243.1 23.4 L243.5 23 L243.5 16 L244.4 15.2 L242.7 13.9 L241.4 14.3 L240.9 16 L241.8 17.3 L241.4 17.8 L241.8 19.9 L240.1 20.8 L239.6 18.2 L237 14.7 L236.6 13.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><path d=\"M234 112 A34 34 0 0 0 202 156\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\"/><path d=\"M234 112 A34 34 0 1 1 202 156\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-dasharray=\"5 4\"/><text x=\"270\" y=\"188\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">250°</text><text x=\"210\" y=\"130\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">110°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\theta\\) is the remaining angle between AB (north) and AC, measured the short way round.",
+              "work": "\\(\\theta\\) = the rest of the full turn (gold)"
+            },
+            {
+              "explain": "A full turn around a point is 360°.",
+              "work": "\\(\\theta + 250^\\circ = 360^\\circ\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(\\theta = 360^\\circ - 250^\\circ = 110^\\circ\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "bearing of C from A",
+              "note": "Clockwise from north."
+            },
+            {
+              "text": "Explain why",
+              "note": "Use angles around a point = 360°."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-m3b",
+          "type": "mc",
+          "stem": "The bearing of C from A is \\(250^\\circ\\) and the distance of C from A is 36km. If B is 15km due north of A, calculate the distance of C from B, correct to the nearest kilometre.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 428.4 259.4\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><g transform=\"translate(6,6)\"><path d=\"M29 227.1 L23.4 226.6 L20.8 227.9 L19.1 229.7 L17.3 234.4 L19.1 238.8 L22.1 239.6 L25.6 238.8 L26.9 237.5 L26 237 L24.3 238.3 L21.2 238.3 L19.5 237 L19.5 233.1 L21.2 229.2 L22.5 227.9 L26.9 227.5 L27.7 228.4 L27.7 229.7 L28.6 230.1ZM150.8 208.4 L152.1 209.7 L151.7 219.7 L149.9 220.6 L154.3 221 L153 219.7 L153 218 L154.3 217.1 L156 219.7 L156 221 L164.2 221 L162.9 220.1 L162.9 214.9 L164.7 213.6 L166 213.6 L166.8 214.5 L166.4 218.8 L166.8 219.7 L165.5 221 L169 221.4 L169 220.6 L167.7 220.1 L168.1 219.3 L167.7 217.1 L168.1 215.4 L169.9 213.6 L170.7 213.6 L172 216.2 L172 219.7 L170.7 220.6 L170.7 221.4 L173.8 221.4 L172.9 220.1 L173.3 218 L172.9 213.6 L171.6 212.3 L169.4 212.8 L168.6 213.6 L166.8 212.8 L164.2 213.2 L161.2 212.8 L160.8 213.6 L161.6 214.1 L161.2 215.8 L161.6 219.7 L159.5 220.6 L154.7 216.2 L159 212.3 L156 212.3 L156.4 213.2 L153.4 215.8 L153 215.4 L153.4 208.4 L153 208ZM144.3 207.6 L140.4 208.4 L136.9 212.3 L136.5 216.7 L139.1 220.6 L143 220.6 L144.7 217.1 L144.3 214.1 L142.6 212.3 L139.5 212.8 L139.1 211.9ZM140.4 213.2 L143 214.9 L143 218 L142.1 219.7 L139.5 219.7 L138.2 217.5 L138.2 214.9ZM132.6 207.6 L130 207.6 L127.8 209.7 L130.4 208.4 L132.6 210.2 L132.6 211.5 L129.6 214.1 L131.3 214.1 L132.6 215.4 L133 217.5 L131.7 219.3 L129.6 219.3 L127.8 218.4 L127 219.3 L127.4 220.1 L131.7 220.1 L133.9 218.8 L134.3 215.4 L132.6 212.8 L133.9 211.5 L133.9 209.3ZM247.9 165.5 L246.6 166 L246.6 166.8 L243.1 171.2 L241.8 174.2 L239.2 177.2 L239.6 177.7 L242.2 177.7 L241.4 176.4 L242.2 174.6 L244 173.3 L247.4 174.2 L247.4 176.8 L246.1 177.7 L247.4 178.1 L250.5 177.7 L248.7 176.4 L248.3 172.5 L248.7 170.3ZM246.1 169 L247 170.7 L247 172.5 L244 172.9 L243.5 172.5ZM226.6 153.8 L223.2 154.3 L220.1 158.6 L219.3 164.7 L221 167.3 L224.5 167.3 L226.6 165.1 L227.9 162.5 L228.8 157.7 L227.5 154.3ZM221.9 160.8 L226.2 161.6 L225.3 164.2 L223.6 166.4 L221.9 166.4 L221 164.7 L221 161.6ZM224.9 154.7 L226.2 154.7 L227.1 156 L227.1 158.6 L225.8 160.3 L222.3 159.5 L223.2 156.4ZM371.8 138.7 L373.1 140 L373.1 148.6 L372.7 149.9 L371.4 150.8 L371.8 151.2 L380.9 151.7 L382.2 149.5 L381.8 148.6 L380.9 148.6 L380.5 149.9 L378.7 150.8 L374.4 149.9 L374.8 147.3 L374.4 146 L375.3 145.2 L377.9 145.2 L380 146.9 L380.5 143.9 L379.6 143.4 L378.7 144.3 L374.8 144.3 L374.4 143 L375.3 139.5 L379.6 140 L380.5 141.3 L381.8 140.4 L381.8 139.5 L374.4 138.2ZM360.1 138.2 L361.4 139.5 L361.4 144.3 L361 144.7 L361.4 148.2 L361 149.5 L359.7 150.4 L363.1 151.2 L369.6 151.2 L370.9 148.6 L369.6 148.2 L368.3 149.9 L367 150.4 L364 150.4 L363.1 149.5 L362.7 147.3 L363.1 146.9 L362.7 143.9 L363.6 143 L363.1 140 L364.4 139.1 L364.4 138.2ZM352.3 138.2 L350.6 141.7 L349.7 145.2 L348.8 145.6 L347.5 149.1 L345.8 150.4 L348.8 150.8 L349.3 149.9 L348.4 149.5 L350.1 146.5 L354.5 146.5 L355.8 149.1 L354.5 150.8 L358.8 150.8 L356.6 148.2 L356.2 145.6 L353.2 139.5 L353.2 138.2ZM352.7 140.8 L353.2 143.4 L354.5 145.2 L350.6 145.6 L350.1 145.2 L351 144.3 L351 142.6ZM337.6 137.8 L334.5 141.3 L333.7 143.9 L334.5 147.8 L336.7 149.9 L338 150.4 L341.9 150.4 L344.9 149.1 L344.5 148.2 L342.3 149.5 L338.4 149.5 L337.1 148.6 L335.8 146 L335.8 143 L336.7 140.4 L338.4 138.7 L339.7 138.2 L342.8 139.1 L343.6 140.8 L344.9 141.7 L344.9 138.2 L341 137.4ZM326.7 136.9 L324.6 138.2 L324.1 141.7 L325 143 L328 144.7 L330.2 147.3 L328 149.5 L325 148.6 L324.1 146.9 L323.3 146.5 L323.7 147.3 L323.3 149.1 L328.5 150.4 L330.2 149.9 L331.5 148.6 L331.5 147.3 L332.4 146 L329.8 143.4 L327.6 142.6 L325.4 140.4 L325.4 139.5 L328 137.8 L330.6 139.5 L331.1 141.3 L331.9 139.5 L331.5 137.8ZM356.2 116.1 L353.6 119.2 L353.2 123.9 L356.2 127.8 L361.8 128.3 L364.4 125.7 L365.7 121.3 L362.3 116.1 L360.5 115.7ZM358.8 116.6 L360.5 116.6 L362.7 118.7 L363.6 120.9 L363.1 124.4 L360.5 127.4 L357.1 127 L355.8 125.7 L354.9 123.5 L354.9 120.9 L355.8 119.2ZM341.9 115.3 L341.5 117.9 L343.6 116.1 L345.8 117 L344.9 122.2 L345.4 126.1 L343.6 127.8 L348.4 127.8 L346.7 126.1 L347.1 124.8 L346.7 123.1 L347.5 122.2 L347.1 117.9 L348.4 116.6 L349.7 116.6 L351.9 118.3 L352.3 117.4 L351.9 115.7ZM336.7 101.8 L336.7 103.6 L335.4 104.9 L338.9 104.9 L337.6 104 L337.1 101.8ZM337.1 96.2 L336.7 96.6 L337.1 100.5 L337.6 97.9ZM362.3 93.6 L362.7 96.2 L364.4 94 L367 94.5 L366.6 95.3 L367 95.8 L366.6 104.4 L365.3 105.7 L370.1 105.7 L368.3 104.4 L369.2 98.4 L368.8 94.9 L371.4 94.5 L373.1 96.2 L373.5 94.5 L372.2 93.2 L371.8 93.6 L370.1 93.2ZM351.9 93.6 L349.3 97.1 L348.8 100.1 L350.1 103.6 L352.3 105.3 L354.5 105.7 L358.8 105.3 L361 102.3 L361.4 100.5 L361 96.2 L357.9 93.2 L356.6 92.7ZM354.9 93.6 L357.1 94 L359.2 96.6 L358.8 102.7 L356.2 104.9 L353.2 104.4 L351.4 102.7 L351 98.4 L352.3 95.3ZM335.8 92.3 L335.4 92.7 L337.1 94 L336.7 94.9 L338 95.3 L339.7 97.1 L340.2 98.8 L342.3 101 L342.3 101.8 L344.9 104 L345.4 105.3 L346.2 105.3 L345.8 104 L346.2 103.6 L345.8 102.7 L346.2 94.5 L348 92.7 L344.1 92.7 L345.8 94.9 L345.4 96.6 L345.8 100.5 L344.5 101 L341.5 97.5 L338.9 93.2ZM221.4 66.3 L221.4 67.2 L222.3 67.6 L222.3 69.3 L221.4 70.6 L219.7 77.1 L218 78.4 L224.9 78.9 L227.1 78 L228.4 76.7 L228.4 73.2 L227.5 73.2 L227.1 72.4 L229.7 70.6 L229.7 69.3 L228.8 67.6 L227.1 66.7ZM225.3 72.8 L226.6 74.5 L226.2 76.3 L224 78 L221.9 78 L221.4 75.8 L222.3 75 L222.3 73.7 L223.6 72.4ZM226.6 67.6 L227.9 69.3 L226.2 71.5 L223.6 71.9 L223.2 71.1 L224 68.9 L225.3 67.6ZM238.3 28.2 L234.9 40.7 L233.1 44.2 L234 45.1 L236.6 42.9 L237.9 44.2 L237.5 44.6 L237.9 49 L237 49.8 L237.5 50.3 L237 52.9 L237.5 54.6 L237 61.5 L237.5 62 L236.6 68.5 L237 71.9 L234.9 73.2 L234 75 L234.4 77.1 L198.9 105.3 L197.6 105.7 L195.9 107.9 L194.1 109.2 L192.8 109.2 L192 110.9 L177.7 121.3 L170.3 127.8 L167.3 129.6 L166 131.3 L164.2 131.7 L160.3 135.6 L157.3 137.8 L156.4 137.8 L153.4 140.8 L146.9 145.2 L141.7 149.9 L133 156 L127 161.6 L116.1 169.4 L115.3 170.7 L110.1 174.2 L101.4 181.6 L99.7 182 L93.2 186.8 L89.3 190.7 L83.6 194.6 L75.4 201.5 L74.1 201.9 L73.7 202.8 L72.4 203.2 L70.2 205.8 L68 206.7 L66.3 208.9 L63.7 210.2 L58.1 215.4 L38.1 230.1 L37.3 231.4 L32.9 231 L31.6 232.3 L31.2 234 L32.9 236.6 L34.7 237 L36 236.6 L37.3 235.3 L38.1 232.7 L39.9 232.7 L54.2 227.5 L57.2 227.1 L61.5 224.9 L63.3 224.9 L65 224 L66.3 224.5 L69.8 222.7 L71.5 222.7 L72.4 221.9 L76.7 221 L78.4 219.7 L80.2 219.7 L82.8 218.4 L85.8 218 L94.5 214.5 L97.9 214.1 L98.8 213.2 L101.4 212.8 L115.7 207.6 L120 206.7 L123.5 205 L131.7 202.8 L132.6 201.9 L142.6 199.3 L151.2 195.9 L158.2 193.7 L159.9 193.7 L169 190.2 L170.7 190.2 L172 189.4 L175.9 188.5 L176.8 187.6 L178.5 187.6 L179.4 186.8 L181.1 186.8 L190.7 183.3 L195 182.4 L196.3 181.6 L201.9 180.7 L202.8 179.8 L209.3 178.1 L210.2 177.2 L213.2 176.8 L214.1 175.9 L215.8 175.9 L218 174.6 L220.1 174.6 L221.4 173.8 L223.2 173.8 L224.9 172.5 L228.4 172 L231.4 170.3 L231.8 171.6 L233.1 172 L237 171.6 L237.5 167.7 L234.4 165.5 L235.3 158.2 L234.9 156.9 L235.3 142.1 L235.7 141.7 L235.3 139.1 L235.7 137.4 L235.3 136.9 L236.2 130.9 L235.7 125.7 L236.2 125.2 L236.2 118.3 L237 110.5 L236.6 104.9 L237.5 99.7 L237 98.8 L237.5 84.9 L237.9 84.5 L237.5 83.2 L237.9 79.7 L237 79.3 L236.6 83.2 L237 86.2 L236.6 86.7 L236.6 96.2 L236.2 96.6 L236.6 99.7 L235.7 105.3 L236.2 109.6 L235.3 116.6 L234.9 144.3 L234 145.2 L225.8 146.5 L218.4 150.8 L214.5 155.1 L212.3 159 L210.6 164.2 L211 165.5 L210.6 166 L210.6 173.3 L211.5 175.1 L210.6 176.4 L207.6 177.7 L204.1 178.1 L201.9 179.4 L198.9 179.8 L195.4 181.6 L194.1 181.1 L191.5 182.4 L188.5 182.9 L186.3 184.2 L177.7 186.3 L164.7 191.1 L162.9 191.1 L162.1 192 L152.1 194.6 L149.5 195.9 L143 197.6 L140.8 198.9 L138.7 198.9 L137.8 199.8 L133.5 200.6 L120 205.8 L109.2 208.9 L104.4 211 L103.6 210.6 L102.7 211.5 L98.8 212.3 L97.5 213.2 L91.4 214.5 L89.7 215.8 L86.7 216.2 L85.8 217.1 L77.6 219.3 L74.1 221 L68.5 222.3 L66.3 223.6 L63.3 223.6 L39 232.3 L37.3 231.8 L61.1 214.1 L64.1 211 L67.2 209.3 L68 208 L71.5 205.8 L72.8 204.1 L90.6 190.7 L94.5 186.8 L95.3 186.8 L101 182 L102.7 181.6 L110.9 174.6 L116.6 170.7 L117.4 169.4 L120 168.1 L120.5 167.3 L127.8 162.1 L128.7 160.8 L137.4 153.8 L144.7 148.6 L147.8 145.6 L149.1 145.2 L151.2 143 L152.1 143 L156.4 139.1 L161.2 136.1 L179 121.3 L181.6 120 L186.3 115.7 L189.4 114.4 L193.3 110.5 L194.6 110.1 L196.3 108.3 L197.2 108.3 L199.8 105.3 L208 99.7 L212.8 95.3 L229.7 82.8 L234.4 78.4 L239.2 78.4 L240.5 77.1 L240.1 73.7 L238.3 72.4 L237.9 69.3 L238.3 68.9 L237.9 64.6 L238.8 61.1 L238.3 60.2 L238.8 57.2 L238.3 55.9 L238.8 55.5 L238.3 54.2 L238.8 51.1 L238.3 50.7 L239.2 45.5 L238.8 44.2 L239.6 43.3 L240.1 44.2 L241.4 44.2 L242.2 45.5 L243.1 45.5 L243.1 44.2 L241.4 39.9 L241.4 37.7 L239.2 31.2 L239.2 29ZM234 146 L234.9 146.9 L234.4 147.3 L234.4 156.4 L234 156.9 L234.4 158.2 L234 164.7 L234.4 165.1 L232.3 166.4 L230.5 169.9 L219.3 173.8 L217.5 173.8 L212.8 175.9 L211.9 175.1 L211 168.1 L211.9 162.9 L214.9 156.4 L219.3 151.7 L220.1 151.7 L222.7 149.1 L229.2 146.5ZM235.3 40.7 L236.2 40.3 L236.6 41.2 L235.7 41.6ZM234.4 13.9 L234.4 23.8 L234 24.7 L236.2 24.7 L236.6 21.7 L236.2 18.6 L237.5 17.8 L240.9 25.1 L243.1 25.1 L243.5 24.7 L243.1 23.4 L243.5 23 L243.5 16 L244.4 15.2 L242.7 13.9 L241.4 14.3 L240.9 16 L241.8 17.3 L241.4 17.8 L241.8 19.9 L240.1 20.8 L239.6 18.2 L237 14.7 L236.6 13.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "options": [
+            "\\(43\\ \\text{km}\\)",
+            "\\(38\\ \\text{km}\\)",
+            "\\(51\\ \\text{km}\\)",
+            "\\(1890\\ \\text{km}\\)"
+          ],
+          "answer": 0,
+          "hint": "Triangle ABC has two sides (15 and 36) and the angle BETWEEN them (110°) — use the COSINE RULE to find the third side BC.",
+          "steps": [
+            {
+              "explain": "Mark the known information on triangle ABC: \\(AB = 15\\) km, \\(AC = 36\\) km and the included angle \\(A = 110^\\circ\\). We want side \\(a = BC\\) (opposite angle A).",
+              "work": "two sides + included angle → cosine rule",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 428.4 259.4\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><g transform=\"translate(6,6)\"><path d=\"M29 227.1 L23.4 226.6 L20.8 227.9 L19.1 229.7 L17.3 234.4 L19.1 238.8 L22.1 239.6 L25.6 238.8 L26.9 237.5 L26 237 L24.3 238.3 L21.2 238.3 L19.5 237 L19.5 233.1 L21.2 229.2 L22.5 227.9 L26.9 227.5 L27.7 228.4 L27.7 229.7 L28.6 230.1ZM150.8 208.4 L152.1 209.7 L151.7 219.7 L149.9 220.6 L154.3 221 L153 219.7 L153 218 L154.3 217.1 L156 219.7 L156 221 L164.2 221 L162.9 220.1 L162.9 214.9 L164.7 213.6 L166 213.6 L166.8 214.5 L166.4 218.8 L166.8 219.7 L165.5 221 L169 221.4 L169 220.6 L167.7 220.1 L168.1 219.3 L167.7 217.1 L168.1 215.4 L169.9 213.6 L170.7 213.6 L172 216.2 L172 219.7 L170.7 220.6 L170.7 221.4 L173.8 221.4 L172.9 220.1 L173.3 218 L172.9 213.6 L171.6 212.3 L169.4 212.8 L168.6 213.6 L166.8 212.8 L164.2 213.2 L161.2 212.8 L160.8 213.6 L161.6 214.1 L161.2 215.8 L161.6 219.7 L159.5 220.6 L154.7 216.2 L159 212.3 L156 212.3 L156.4 213.2 L153.4 215.8 L153 215.4 L153.4 208.4 L153 208ZM144.3 207.6 L140.4 208.4 L136.9 212.3 L136.5 216.7 L139.1 220.6 L143 220.6 L144.7 217.1 L144.3 214.1 L142.6 212.3 L139.5 212.8 L139.1 211.9ZM140.4 213.2 L143 214.9 L143 218 L142.1 219.7 L139.5 219.7 L138.2 217.5 L138.2 214.9ZM132.6 207.6 L130 207.6 L127.8 209.7 L130.4 208.4 L132.6 210.2 L132.6 211.5 L129.6 214.1 L131.3 214.1 L132.6 215.4 L133 217.5 L131.7 219.3 L129.6 219.3 L127.8 218.4 L127 219.3 L127.4 220.1 L131.7 220.1 L133.9 218.8 L134.3 215.4 L132.6 212.8 L133.9 211.5 L133.9 209.3ZM247.9 165.5 L246.6 166 L246.6 166.8 L243.1 171.2 L241.8 174.2 L239.2 177.2 L239.6 177.7 L242.2 177.7 L241.4 176.4 L242.2 174.6 L244 173.3 L247.4 174.2 L247.4 176.8 L246.1 177.7 L247.4 178.1 L250.5 177.7 L248.7 176.4 L248.3 172.5 L248.7 170.3ZM246.1 169 L247 170.7 L247 172.5 L244 172.9 L243.5 172.5ZM226.6 153.8 L223.2 154.3 L220.1 158.6 L219.3 164.7 L221 167.3 L224.5 167.3 L226.6 165.1 L227.9 162.5 L228.8 157.7 L227.5 154.3ZM221.9 160.8 L226.2 161.6 L225.3 164.2 L223.6 166.4 L221.9 166.4 L221 164.7 L221 161.6ZM224.9 154.7 L226.2 154.7 L227.1 156 L227.1 158.6 L225.8 160.3 L222.3 159.5 L223.2 156.4ZM371.8 138.7 L373.1 140 L373.1 148.6 L372.7 149.9 L371.4 150.8 L371.8 151.2 L380.9 151.7 L382.2 149.5 L381.8 148.6 L380.9 148.6 L380.5 149.9 L378.7 150.8 L374.4 149.9 L374.8 147.3 L374.4 146 L375.3 145.2 L377.9 145.2 L380 146.9 L380.5 143.9 L379.6 143.4 L378.7 144.3 L374.8 144.3 L374.4 143 L375.3 139.5 L379.6 140 L380.5 141.3 L381.8 140.4 L381.8 139.5 L374.4 138.2ZM360.1 138.2 L361.4 139.5 L361.4 144.3 L361 144.7 L361.4 148.2 L361 149.5 L359.7 150.4 L363.1 151.2 L369.6 151.2 L370.9 148.6 L369.6 148.2 L368.3 149.9 L367 150.4 L364 150.4 L363.1 149.5 L362.7 147.3 L363.1 146.9 L362.7 143.9 L363.6 143 L363.1 140 L364.4 139.1 L364.4 138.2ZM352.3 138.2 L350.6 141.7 L349.7 145.2 L348.8 145.6 L347.5 149.1 L345.8 150.4 L348.8 150.8 L349.3 149.9 L348.4 149.5 L350.1 146.5 L354.5 146.5 L355.8 149.1 L354.5 150.8 L358.8 150.8 L356.6 148.2 L356.2 145.6 L353.2 139.5 L353.2 138.2ZM352.7 140.8 L353.2 143.4 L354.5 145.2 L350.6 145.6 L350.1 145.2 L351 144.3 L351 142.6ZM337.6 137.8 L334.5 141.3 L333.7 143.9 L334.5 147.8 L336.7 149.9 L338 150.4 L341.9 150.4 L344.9 149.1 L344.5 148.2 L342.3 149.5 L338.4 149.5 L337.1 148.6 L335.8 146 L335.8 143 L336.7 140.4 L338.4 138.7 L339.7 138.2 L342.8 139.1 L343.6 140.8 L344.9 141.7 L344.9 138.2 L341 137.4ZM326.7 136.9 L324.6 138.2 L324.1 141.7 L325 143 L328 144.7 L330.2 147.3 L328 149.5 L325 148.6 L324.1 146.9 L323.3 146.5 L323.7 147.3 L323.3 149.1 L328.5 150.4 L330.2 149.9 L331.5 148.6 L331.5 147.3 L332.4 146 L329.8 143.4 L327.6 142.6 L325.4 140.4 L325.4 139.5 L328 137.8 L330.6 139.5 L331.1 141.3 L331.9 139.5 L331.5 137.8ZM356.2 116.1 L353.6 119.2 L353.2 123.9 L356.2 127.8 L361.8 128.3 L364.4 125.7 L365.7 121.3 L362.3 116.1 L360.5 115.7ZM358.8 116.6 L360.5 116.6 L362.7 118.7 L363.6 120.9 L363.1 124.4 L360.5 127.4 L357.1 127 L355.8 125.7 L354.9 123.5 L354.9 120.9 L355.8 119.2ZM341.9 115.3 L341.5 117.9 L343.6 116.1 L345.8 117 L344.9 122.2 L345.4 126.1 L343.6 127.8 L348.4 127.8 L346.7 126.1 L347.1 124.8 L346.7 123.1 L347.5 122.2 L347.1 117.9 L348.4 116.6 L349.7 116.6 L351.9 118.3 L352.3 117.4 L351.9 115.7ZM336.7 101.8 L336.7 103.6 L335.4 104.9 L338.9 104.9 L337.6 104 L337.1 101.8ZM337.1 96.2 L336.7 96.6 L337.1 100.5 L337.6 97.9ZM362.3 93.6 L362.7 96.2 L364.4 94 L367 94.5 L366.6 95.3 L367 95.8 L366.6 104.4 L365.3 105.7 L370.1 105.7 L368.3 104.4 L369.2 98.4 L368.8 94.9 L371.4 94.5 L373.1 96.2 L373.5 94.5 L372.2 93.2 L371.8 93.6 L370.1 93.2ZM351.9 93.6 L349.3 97.1 L348.8 100.1 L350.1 103.6 L352.3 105.3 L354.5 105.7 L358.8 105.3 L361 102.3 L361.4 100.5 L361 96.2 L357.9 93.2 L356.6 92.7ZM354.9 93.6 L357.1 94 L359.2 96.6 L358.8 102.7 L356.2 104.9 L353.2 104.4 L351.4 102.7 L351 98.4 L352.3 95.3ZM335.8 92.3 L335.4 92.7 L337.1 94 L336.7 94.9 L338 95.3 L339.7 97.1 L340.2 98.8 L342.3 101 L342.3 101.8 L344.9 104 L345.4 105.3 L346.2 105.3 L345.8 104 L346.2 103.6 L345.8 102.7 L346.2 94.5 L348 92.7 L344.1 92.7 L345.8 94.9 L345.4 96.6 L345.8 100.5 L344.5 101 L341.5 97.5 L338.9 93.2ZM221.4 66.3 L221.4 67.2 L222.3 67.6 L222.3 69.3 L221.4 70.6 L219.7 77.1 L218 78.4 L224.9 78.9 L227.1 78 L228.4 76.7 L228.4 73.2 L227.5 73.2 L227.1 72.4 L229.7 70.6 L229.7 69.3 L228.8 67.6 L227.1 66.7ZM225.3 72.8 L226.6 74.5 L226.2 76.3 L224 78 L221.9 78 L221.4 75.8 L222.3 75 L222.3 73.7 L223.6 72.4ZM226.6 67.6 L227.9 69.3 L226.2 71.5 L223.6 71.9 L223.2 71.1 L224 68.9 L225.3 67.6ZM238.3 28.2 L234.9 40.7 L233.1 44.2 L234 45.1 L236.6 42.9 L237.9 44.2 L237.5 44.6 L237.9 49 L237 49.8 L237.5 50.3 L237 52.9 L237.5 54.6 L237 61.5 L237.5 62 L236.6 68.5 L237 71.9 L234.9 73.2 L234 75 L234.4 77.1 L198.9 105.3 L197.6 105.7 L195.9 107.9 L194.1 109.2 L192.8 109.2 L192 110.9 L177.7 121.3 L170.3 127.8 L167.3 129.6 L166 131.3 L164.2 131.7 L160.3 135.6 L157.3 137.8 L156.4 137.8 L153.4 140.8 L146.9 145.2 L141.7 149.9 L133 156 L127 161.6 L116.1 169.4 L115.3 170.7 L110.1 174.2 L101.4 181.6 L99.7 182 L93.2 186.8 L89.3 190.7 L83.6 194.6 L75.4 201.5 L74.1 201.9 L73.7 202.8 L72.4 203.2 L70.2 205.8 L68 206.7 L66.3 208.9 L63.7 210.2 L58.1 215.4 L38.1 230.1 L37.3 231.4 L32.9 231 L31.6 232.3 L31.2 234 L32.9 236.6 L34.7 237 L36 236.6 L37.3 235.3 L38.1 232.7 L39.9 232.7 L54.2 227.5 L57.2 227.1 L61.5 224.9 L63.3 224.9 L65 224 L66.3 224.5 L69.8 222.7 L71.5 222.7 L72.4 221.9 L76.7 221 L78.4 219.7 L80.2 219.7 L82.8 218.4 L85.8 218 L94.5 214.5 L97.9 214.1 L98.8 213.2 L101.4 212.8 L115.7 207.6 L120 206.7 L123.5 205 L131.7 202.8 L132.6 201.9 L142.6 199.3 L151.2 195.9 L158.2 193.7 L159.9 193.7 L169 190.2 L170.7 190.2 L172 189.4 L175.9 188.5 L176.8 187.6 L178.5 187.6 L179.4 186.8 L181.1 186.8 L190.7 183.3 L195 182.4 L196.3 181.6 L201.9 180.7 L202.8 179.8 L209.3 178.1 L210.2 177.2 L213.2 176.8 L214.1 175.9 L215.8 175.9 L218 174.6 L220.1 174.6 L221.4 173.8 L223.2 173.8 L224.9 172.5 L228.4 172 L231.4 170.3 L231.8 171.6 L233.1 172 L237 171.6 L237.5 167.7 L234.4 165.5 L235.3 158.2 L234.9 156.9 L235.3 142.1 L235.7 141.7 L235.3 139.1 L235.7 137.4 L235.3 136.9 L236.2 130.9 L235.7 125.7 L236.2 125.2 L236.2 118.3 L237 110.5 L236.6 104.9 L237.5 99.7 L237 98.8 L237.5 84.9 L237.9 84.5 L237.5 83.2 L237.9 79.7 L237 79.3 L236.6 83.2 L237 86.2 L236.6 86.7 L236.6 96.2 L236.2 96.6 L236.6 99.7 L235.7 105.3 L236.2 109.6 L235.3 116.6 L234.9 144.3 L234 145.2 L225.8 146.5 L218.4 150.8 L214.5 155.1 L212.3 159 L210.6 164.2 L211 165.5 L210.6 166 L210.6 173.3 L211.5 175.1 L210.6 176.4 L207.6 177.7 L204.1 178.1 L201.9 179.4 L198.9 179.8 L195.4 181.6 L194.1 181.1 L191.5 182.4 L188.5 182.9 L186.3 184.2 L177.7 186.3 L164.7 191.1 L162.9 191.1 L162.1 192 L152.1 194.6 L149.5 195.9 L143 197.6 L140.8 198.9 L138.7 198.9 L137.8 199.8 L133.5 200.6 L120 205.8 L109.2 208.9 L104.4 211 L103.6 210.6 L102.7 211.5 L98.8 212.3 L97.5 213.2 L91.4 214.5 L89.7 215.8 L86.7 216.2 L85.8 217.1 L77.6 219.3 L74.1 221 L68.5 222.3 L66.3 223.6 L63.3 223.6 L39 232.3 L37.3 231.8 L61.1 214.1 L64.1 211 L67.2 209.3 L68 208 L71.5 205.8 L72.8 204.1 L90.6 190.7 L94.5 186.8 L95.3 186.8 L101 182 L102.7 181.6 L110.9 174.6 L116.6 170.7 L117.4 169.4 L120 168.1 L120.5 167.3 L127.8 162.1 L128.7 160.8 L137.4 153.8 L144.7 148.6 L147.8 145.6 L149.1 145.2 L151.2 143 L152.1 143 L156.4 139.1 L161.2 136.1 L179 121.3 L181.6 120 L186.3 115.7 L189.4 114.4 L193.3 110.5 L194.6 110.1 L196.3 108.3 L197.2 108.3 L199.8 105.3 L208 99.7 L212.8 95.3 L229.7 82.8 L234.4 78.4 L239.2 78.4 L240.5 77.1 L240.1 73.7 L238.3 72.4 L237.9 69.3 L238.3 68.9 L237.9 64.6 L238.8 61.1 L238.3 60.2 L238.8 57.2 L238.3 55.9 L238.8 55.5 L238.3 54.2 L238.8 51.1 L238.3 50.7 L239.2 45.5 L238.8 44.2 L239.6 43.3 L240.1 44.2 L241.4 44.2 L242.2 45.5 L243.1 45.5 L243.1 44.2 L241.4 39.9 L241.4 37.7 L239.2 31.2 L239.2 29ZM234 146 L234.9 146.9 L234.4 147.3 L234.4 156.4 L234 156.9 L234.4 158.2 L234 164.7 L234.4 165.1 L232.3 166.4 L230.5 169.9 L219.3 173.8 L217.5 173.8 L212.8 175.9 L211.9 175.1 L211 168.1 L211.9 162.9 L214.9 156.4 L219.3 151.7 L220.1 151.7 L222.7 149.1 L229.2 146.5ZM235.3 40.7 L236.2 40.3 L236.6 41.2 L235.7 41.6ZM234.4 13.9 L234.4 23.8 L234 24.7 L236.2 24.7 L236.6 21.7 L236.2 18.6 L237.5 17.8 L240.9 25.1 L243.1 25.1 L243.5 24.7 L243.1 23.4 L243.5 23 L243.5 16 L244.4 15.2 L242.7 13.9 L241.4 14.3 L240.9 16 L241.8 17.3 L241.4 17.8 L241.8 19.9 L240.1 20.8 L239.6 18.2 L237 14.7 L236.6 13.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"234\" y1=\"72\" x2=\"234\" y2=\"146\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"234\" y1=\"146\" x2=\"33\" y2=\"231\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"33\" y1=\"231\" x2=\"234\" y2=\"72\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"250\" y=\"112\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">15 km</text><text x=\"120\" y=\"176\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">AC = 36 km</text><text x=\"110\" y=\"130\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">a = BC = ?</text><text x=\"215\" y=\"138\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">110°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Write the cosine rule.",
+              "work": "\\(a^2 = b^2 + c^2 - 2bc\\cos A\\)"
+            },
+            {
+              "explain": "Substitute \\(b = 15\\), \\(c = 36\\), \\(A = 110^\\circ\\).",
+              "work": "\\(a^2 = 15^2 + 36^2 - 2(15)(36)\\cos 110^\\circ\\)"
+            },
+            {
+              "explain": "Calculate. Note \\(\\cos 110^\\circ\\) is NEGATIVE, so the last term is added.",
+              "work": "\\(a^2 = 225 + 1296 + 369.38\\ldots = 1890.38\\ldots\\)"
+            },
+            {
+              "explain": "Take the positive square root (a distance).",
+              "work": "\\(a = \\sqrt{1890.38\\ldots} = 43.48\\ldots\\)"
+            },
+            {
+              "explain": "Round to the nearest kilometre.",
+              "work": "\\(BC \\approx 43\\ \\text{km}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "calculate the distance of C from B",
+              "note": "Cosine rule: two sides and the included angle."
+            },
+            {
+              "text": "nearest kilometre",
+              "note": "Round at the very end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

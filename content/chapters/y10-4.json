@@ -1092,6 +1092,58 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "wghs2015-y10-a1a",
+          "type": "mc",
+          "stem": "Given that A(-1,4) and B(3,-2): Find the gradient of AB.",
+          "difficulty": "easy",
+          "options": [
+            "\\(-\\dfrac{3}{2}\\)",
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(-\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Gradient = rise ÷ run = \\(\\dfrac{y_2 - y_1}{x_2 - x_1}\\). Subtract the y's and the x's in the SAME order (B minus A, or A minus B for both).",
+          "steps": [
+            {
+              "explain": "Write down the coordinates and label them.",
+              "work": "\\(A(\\textcolor{#b45309}{-1},\\textcolor{#2563eb}{4})\\quad B(\\textcolor{#b45309}{3},\\textcolor{#2563eb}{-2})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"118\" x2=\"320\" y2=\"118\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"10\" x2=\"170\" y2=\"250\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"326\" y=\"122\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" font-style=\"italic\">x</text><text x=\"178\" y=\"14\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" font-style=\"italic\">y</text><line x1=\"26\" y1=\"115\" x2=\"26\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"115\" x2=\"62\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"115\" x2=\"98\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"115\" x2=\"134\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"115\" x2=\"170\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"115\" x2=\"206\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"242\" y1=\"115\" x2=\"242\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278\" y1=\"115\" x2=\"278\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"314\" y1=\"115\" x2=\"314\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.4\" y1=\"-58.4\" x2=\"299.6\" y2=\"222.4\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"134\" cy=\"-26\" r=\"5\" fill=\"#1d4ed8\"/><circle cx=\"278\" cy=\"190\" r=\"5\" fill=\"#1d4ed8\"/><text x=\"128\" y=\"-34\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">A(−1, 4)</text><text x=\"286\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">B(3, −2)</text></svg>"
+              }
+            },
+            {
+              "explain": "The rise is the change in <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">y</mark> and the run is the change in <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">x</mark> going from A to B.",
+              "work": "\\(m = \\dfrac{y_B - y_A}{x_B - x_A} = \\dfrac{-2 - 4}{3 - (-1)}\\)"
+            },
+            {
+              "explain": "Calculate the rise and the run. Watch the double negative: \\(3 - (-1) = 3 + 1 = 4\\).",
+              "work": "\\(m = \\dfrac{\\textcolor{#dc2626}{-6}}{\\textcolor{#d97706}{4}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"118\" x2=\"320\" y2=\"118\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"10\" x2=\"170\" y2=\"250\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"326\" y=\"122\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" font-style=\"italic\">x</text><text x=\"178\" y=\"14\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" font-style=\"italic\">y</text><line x1=\"26\" y1=\"115\" x2=\"26\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"115\" x2=\"62\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"115\" x2=\"98\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"115\" x2=\"134\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"115\" x2=\"170\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"206\" y1=\"115\" x2=\"206\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"242\" y1=\"115\" x2=\"242\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"278\" y1=\"115\" x2=\"278\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"314\" y1=\"115\" x2=\"314\" y2=\"121\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.4\" y1=\"-58.4\" x2=\"299.6\" y2=\"222.4\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"134\" y1=\"-26\" x2=\"278\" y2=\"-26\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"278\" y1=\"-26\" x2=\"278\" y2=\"190\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"206\" y=\"-34\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">run = 3 − (−1) = 4</text><text x=\"284\" y=\"82\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">rise = −2 − 4 = −6</text><circle cx=\"134\" cy=\"-26\" r=\"5\" fill=\"#1d4ed8\"/><circle cx=\"278\" cy=\"190\" r=\"5\" fill=\"#1d4ed8\"/><text x=\"128\" y=\"-34\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">A(−1, 4)</text><text x=\"286\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">B(3, −2)</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify by dividing top and bottom by 2. The line goes DOWN as x increases, so the gradient is negative.",
+              "work": "\\(m_{AB} = -\\dfrac{3}{2}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the gradient of AB",
+              "note": "Rise over run between A and B."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2291,6 +2343,64 @@
           ],
           "answer": 0,
           "solution": "The correct answer is \\(x-3y+9=0\\)."
+        },
+        {
+          "id": "wghs2015-y10-a1b",
+          "type": "mc",
+          "stem": "Given that A(-1,4) and B(3,-2): Find the equation of the line perpendicular to AB passing through \\(\\left(4,\\ 3\\dfrac{1}{2}\\right)\\). Express your answer in general form.",
+          "difficulty": "hard",
+          "options": [
+            "\\(4x - 6y + 5 = 0\\)",
+            "\\(4x - 6y - 5 = 0\\)",
+            "\\(3x + 2y - 19 = 0\\)",
+            "\\(2x - 3y + 5 = 0\\)"
+          ],
+          "answer": 0,
+          "hint": "Perpendicular gradients multiply to \\(-1\\): flip the gradient of AB and change its sign. Then use \\(y - y_1 = m(x - x_1)\\) and rearrange to \\(ax + by + c = 0\\).",
+          "steps": [
+            {
+              "explain": "Gradient of AB from part (a):",
+              "work": "\\(m_{AB} = -\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "The perpendicular gradient is the NEGATIVE RECIPROCAL (flip it and change the sign).",
+              "work": "\\(m_{\\perp} = -1 \\div \\left(-\\dfrac{3}{2}\\right) = \\textcolor{#b45309}{\\dfrac{2}{3}}\\)"
+            },
+            {
+              "explain": "Use point-gradient form with the point \\(\\left(4,\\ \\dfrac{7}{2}\\right)\\) (since \\(3\\dfrac{1}{2} = \\dfrac{7}{2}\\)).",
+              "work": "\\(y - \\dfrac{7}{2} = \\dfrac{2}{3}(x - 4)\\)"
+            },
+            {
+              "explain": "Multiply both sides by 6 (the lowest common denominator of 2 and 3) to clear the fractions.",
+              "work": "\\(6y - 21 = 4(x - 4)\\)\n\\(6y - 21 = 4x - 16\\)"
+            },
+            {
+              "explain": "Collect all terms on the SIDE with \\(x\\) so that the other side is 0: subtract \\(6y\\) and add \\(21\\) to both sides of \\(4x - 16 = 6y - 21\\).",
+              "work": "\\(4x - 6y - 16 + 21 = 0\\)"
+            },
+            {
+              "explain": "Tidy the constants \\(-16 + 21 = 5\\). The coefficient of x is already positive, so this is general form.",
+              "work": "\\(4x - 6y + 5 = 0\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perpendicular",
+              "note": "Negative reciprocal of the gradient."
+            },
+            {
+              "text": "general form",
+              "note": "Everything on one side equal to zero, with a positive x term."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4110,6 +4220,68 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "wghs2015-y10-a2",
+          "type": "mc",
+          "stem": "Solve the following problem using simultaneous equations: Four apples and three bananas have a total mass of 960 grams. Two of each fruit have a mass of 540 grams. Find the individual mass of each piece of fruit.",
+          "difficulty": "medium",
+          "options": [
+            "Apple 150 g, banana 120 g",
+            "Apple 120 g, banana 150 g",
+            "Apple 180 g, banana 80 g",
+            "Apple 135 g, banana 135 g"
+          ],
+          "answer": 0,
+          "hint": "Let a = mass of an apple and b = mass of a banana. Write two equations from the two sentences, then eliminate one letter.",
+          "steps": [
+            {
+              "explain": "Define the unknowns.",
+              "work": "\\(a\\) = mass of one apple (g),  \\(b\\) = mass of one banana (g)"
+            },
+            {
+              "explain": "Translate each sentence into an equation.",
+              "work": "\\(4a + 3b = 960\\quad(1)\\)\n\\(2a + 2b = 540\\quad(2)\\)"
+            },
+            {
+              "explain": "Simplify equation (2) by dividing by 2.",
+              "work": "\\(a + b = 270\\quad(3)\\)"
+            },
+            {
+              "explain": "From (3), \\(a = 270 - b\\). Substitute into (1).",
+              "work": "\\(4(270 - b) + 3b = 960\\)"
+            },
+            {
+              "explain": "Expand and solve for b.",
+              "work": "\\(1080 - 4b + 3b = 960 \\;\\Rightarrow\\; -b = -120 \\;\\Rightarrow\\; b = \\textcolor{#b45309}{120}\\)"
+            },
+            {
+              "explain": "Find a from (3).",
+              "work": "\\(a = 270 - 120 = \\textcolor{#b45309}{150}\\)"
+            },
+            {
+              "explain": "Check in (1): \\(4 \\times 150 + 3 \\times 120 = 600 + 360 = 960\\) ✓",
+              "work": "<span style=\"color:#047857;font-weight:700\">Apple 150 g, banana 120 g</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "using simultaneous equations",
+              "note": "Two unknowns, two equations: substitute or eliminate."
+            },
+            {
+              "text": "Find the individual mass of each piece of fruit",
+              "note": "Give both masses."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
