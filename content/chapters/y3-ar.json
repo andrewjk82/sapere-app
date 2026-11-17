@@ -668,9 +668,9 @@
           },
           "options": [
             "Moving one box to the right along any row increases the sum by \\(5\\).",
-            "Moving one box to the right along any row increases the sum by \\(1\\), and the yellow diagonal (\\(2, 4, 6, 8, 10, \\dots\\)) increases by \\(2\\).",
-            "Every row contains only odd numbers.",
-            "Moving down any column decreases the sum by \\(1\\)."
+            "Moving one box to the right along any row increases the sum by \\(1\\).",
+            "Moving one box to the right along any row decreases the sum by \\(1\\).",
+            "Moving down any column decreases the sum by \\(2\\)."
           ],
           "answer": 1,
           "hint": "Compare how the numbers change when you step 1 box to the right along a row, 1 box down a column, or along the diagonal of doubles (1+1, 2+2, 3+3, ...).",
@@ -5203,9 +5203,9 @@
           },
           "options": [
             "Leo had \\(18\\) marbles and gave \\(7\\) marbles away. How many marbles does he have left?",
-            "Leo had \\(18\\) marbles and found \\(7\\) more marbles. How many marbles does he have altogether (\\(25\\))?",
-            "Leo shared \\(18\\) marbles equally among \\(7\\) friends.",
-            "Leo had \\(25\\) marbles and found \\(7\\) more marbles."
+            "Leo had \\(18\\) marbles and found \\(7\\) more marbles. How many marbles does he have altogether?",
+            "Leo shared \\(18\\) marbles equally among \\(7\\) friends. How many marbles did each friend get?",
+            "Leo had \\(25\\) marbles and found \\(7\\) more marbles. How many marbles does he have altogether?"
           ],
           "answer": 1,
           "hint": "Look for a story where a starting group of 18 is combined with (added to) a group of 7 to make a total of 25.",
