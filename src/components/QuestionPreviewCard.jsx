@@ -79,8 +79,7 @@ const QuestionPreviewCard = ({ question: q }) => {
         <MathView
           content={q.question}
           graphData={
-            q.type === 'graph_sketch'
-            || (q.type !== 'multiple_choice' && /^(sketch|draw)\b/i.test(String(q.question || '').trim()) && !(Array.isArray(q.solutionSteps) && q.solutionSteps.some((s) => s?.graphData)))
+            q.type === 'graph_sketch' || /^(sketch|draw)\b/i.test(String(q.question || '').trim())
               ? null
               : q.graphData
           }

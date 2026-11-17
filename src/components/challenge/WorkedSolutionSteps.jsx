@@ -38,7 +38,6 @@ const hasDrawableGraph = (gd) => {
 const stemHidesGraph = (q) => {
   if (!q) return false;
   if (q.type === 'graph_sketch') return true;
-  if (q.type === 'multiple_choice') return false;
   return /^(sketch|draw)\b/i.test(String(q.question || q.text || '').trim());
 };
 
