@@ -3174,6 +3174,102 @@
           ],
           "answer": 0,
           "solution": "The correct answer is \\(x=-2,\\;\\frac43\\)."
+        },
+        {
+          "id": "wghs2015-y10-a5a",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation by factorisation, the quadratic formula or completing the square: \\(x^2 - 12x + 20 = 0\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x = 10,\\ 2\\)",
+            "\\(x = -10,\\ -2\\)",
+            "\\(x = 5,\\ 4\\)",
+            "\\(x = 20,\\ 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Look for two numbers with product 20 and sum −12, then use the Null Factor Law.",
+          "steps": [
+            {
+              "explain": "Product \\(+20\\), sum \\(-12\\): the numbers are \\(-10\\) and \\(-2\\).",
+              "work": "\\((-10)(-2) = 20,\\ (-10) + (-2) = -12\\)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\((x - 10)(x - 2) = 0\\)"
+            },
+            {
+              "explain": "Null Factor Law: if a product is 0, one of the factors is 0.",
+              "work": "\\(x - 10 = 0 \\ \\text{or}\\ x - 2 = 0\\)"
+            },
+            {
+              "explain": "Solve each.",
+              "work": "\\(x = 10 \\ \\text{or}\\ x = 2\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "quadratic equation",
+              "note": "Equation = 0: factorise then solve."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-a5b",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation by factorisation, the quadratic formula or completing the square: \\(2x^2 - 13x + 18 = 0\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(x = \\dfrac{9}{2},\\ 2\\)",
+            "\\(x = \\dfrac{2}{9},\\ 2\\)",
+            "\\(x = -\\dfrac{9}{2},\\ -2\\)",
+            "\\(x = 9,\\ 4\\)"
+          ],
+          "answer": 0,
+          "hint": "Non-monic: \\(ac = 36\\). Find two numbers with product 36 and sum −13, split the middle term, group, then use the Null Factor Law.",
+          "steps": [
+            {
+              "explain": "Compute \\(a \\times c = 2 \\times 18 = 36\\). Numbers with product 36 and sum −13:",
+              "work": "\\(-9 \\times -4 = 36,\\quad -9 + (-4) = -13\\)"
+            },
+            {
+              "explain": "Split the middle term.",
+              "work": "\\(2x^2 \\textcolor{#b45309}{- 9x} \\textcolor{#2563eb}{- 4x} + 18 = 0\\)"
+            },
+            {
+              "explain": "Group in pairs and factor.",
+              "work": "\\(x(2x - 9) - 2(2x - 9) = 0\\)"
+            },
+            {
+              "explain": "Take out the common bracket.",
+              "work": "\\((2x - 9)(x - 2) = 0\\)"
+            },
+            {
+              "explain": "Null Factor Law: set each factor to 0.",
+              "work": "\\(2x - 9 = 0 \\Rightarrow x = \\dfrac{9}{2}\\qquad x - 2 = 0 \\Rightarrow x = 2\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "quadratic equation",
+              "note": "ac-method then Null Factor Law."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3557,6 +3653,56 @@
             "examPaper": "nbsc2021-y10-t4"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs2015-y10-a4a",
+          "type": "mc",
+          "stem": "Solve the following by completing the square: \\(x^2 - 8x + 1 = 0\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(x = 4 \\pm \\sqrt{15}\\)",
+            "\\(x = 4 \\pm \\sqrt{17}\\)",
+            "\\(x = -4 \\pm \\sqrt{15}\\)",
+            "\\(x = 8 \\pm \\sqrt{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "Move the constant to the right. Add (half the x-coefficient)² to BOTH sides: half of 8 is 4, and \\(4^2 = 16\\).",
+          "steps": [
+            {
+              "explain": "Move the constant term to the right-hand side.",
+              "work": "\\(x^2 - 8x = -1\\)"
+            },
+            {
+              "explain": "Half of the x-coefficient: \\(-8 \\div 2 = -4\\). Square it: \\((-4)^2 = 16\\). Add 16 to BOTH sides.",
+              "work": "\\(x^2 - 8x \\textcolor{#b45309}{+ 16} = -1 \\textcolor{#b45309}{+ 16}\\)"
+            },
+            {
+              "explain": "The left side is now a perfect square.",
+              "work": "\\((x - 4)^2 = 15\\)"
+            },
+            {
+              "explain": "Take the square root of both sides — remember BOTH the positive and negative roots.",
+              "work": "\\(x - 4 = \\pm\\sqrt{15}\\)"
+            },
+            {
+              "explain": "Add 4 to both sides.",
+              "work": "\\(x = 4 \\pm \\sqrt{15}\\)  ✓ (\\(\\approx 7.87\\) or \\(0.13\\))"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "completing the square",
+              "note": "Add (b/2)² to both sides."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3683,6 +3829,206 @@
               "note": "Simplify the discriminant radical before stating the roots."
             }
           ]
+        },
+        {
+          "id": "wghs2015-y10-a4b",
+          "type": "mc",
+          "stem": "Solve by using the quadratic formula: Give your answer in simplest exact form. \\(x^2 - 10x = -8\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(x = 5 \\pm \\sqrt{17}\\)",
+            "\\(x = 10 \\pm 2\\sqrt{17}\\)",
+            "\\(x = 5 \\pm \\sqrt{8}\\)",
+            "\\(x = -5 \\pm \\sqrt{17}\\)"
+          ],
+          "answer": 0,
+          "hint": "First rewrite as \\(ax^2 + bx + c = 0\\) (move the \\(-8\\) across). Then use \\(x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\) and simplify the surd.",
+          "steps": [
+            {
+              "explain": "Rearrange so the right side is 0.",
+              "work": "\\(x^2 - 10x + 8 = 0\\quad\\Rightarrow\\quad a = 1,\\ b = -10,\\ c = 8\\)"
+            },
+            {
+              "explain": "Substitute into the quadratic formula (use brackets for negative values).",
+              "work": "\\(x = \\dfrac{-(-10) \\pm \\sqrt{(-10)^2 - 4(1)(8)}}{2(1)}\\)"
+            },
+            {
+              "explain": "Work out the discriminant \\(b^2 - 4ac\\).",
+              "work": "\\(x = \\dfrac{10 \\pm \\sqrt{100 - 32}}{2} = \\dfrac{10 \\pm \\sqrt{68}}{2}\\)"
+            },
+            {
+              "explain": "Simplify the surd: \\(\\sqrt{68} = \\sqrt{4 \\times 17} = 2\\sqrt{17}\\).",
+              "work": "\\(x = \\dfrac{10 \\pm 2\\sqrt{17}}{2}\\)"
+            },
+            {
+              "explain": "Divide every term by 2.",
+              "work": "\\(x = 5 \\pm \\sqrt{17}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "quadratic formula",
+              "note": "Read off the three coefficients after moving everything to one side."
+            },
+            {
+              "text": "simplest exact form",
+              "note": "Leave the surd; simplify it."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-a5c",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation by factorisation, the quadratic formula or completing the square: \\(x^2 - 6x - 2 = 0\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(x = 3 \\pm \\sqrt{11}\\)",
+            "\\(x = 3 \\pm \\sqrt{7}\\)",
+            "\\(x = 6 \\pm \\sqrt{11}\\)",
+            "\\(x = -3 \\pm \\sqrt{11}\\)"
+          ],
+          "answer": 0,
+          "hint": "No two integers multiply to −2 and add to −6, so factorising won't work. Use the quadratic formula with \\(a = 1,\\ b = -6,\\ c = -2\\).",
+          "steps": [
+            {
+              "explain": "Identify a, b, c.",
+              "work": "\\(a = 1,\\quad b = -6,\\quad c = -2\\)"
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(x = \\dfrac{-(-6) \\pm \\sqrt{(-6)^2 - 4(1)(-2)}}{2(1)}\\)"
+            },
+            {
+              "explain": "Calculate the discriminant: \\(36 - (-8) = 36 + 8 = 44\\) (a negative times a negative is positive).",
+              "work": "\\(x = \\dfrac{6 \\pm \\sqrt{44}}{2}\\)"
+            },
+            {
+              "explain": "Simplify the surd \\(\\sqrt{44} = \\sqrt{4 \\times 11} = 2\\sqrt{11}\\).",
+              "work": "\\(x = \\dfrac{6 \\pm 2\\sqrt{11}}{2}\\)"
+            },
+            {
+              "explain": "Divide every term by 2.",
+              "work": "\\(x = 3 \\pm \\sqrt{11}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "quadratic equation",
+              "note": "Use the formula when it doesn't factorise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-a6a",
+          "type": "mc",
+          "stem": "Without solving, state whether the solutions of the following quadratic equation are: (i) real / unreal (ii) rational / irrational (iii) equal/different. \\(x^2 - 5x + 12 = 0\\)",
+          "difficulty": "medium",
+          "options": [
+            "Unreal solutions",
+            "Real, rational and different",
+            "Real, irrational and different",
+            "Real and equal"
+          ],
+          "answer": 0,
+          "hint": "Find the discriminant \\(\\Delta = b^2 - 4ac\\). If \\(\\Delta < 0\\) the solutions are UNREAL; if \\(\\Delta > 0\\) they are real and different; if \\(\\Delta = 0\\) they are equal.",
+          "steps": [
+            {
+              "explain": "Identify a, b, c.",
+              "work": "\\(a = 1,\\quad b = -5,\\quad c = 12\\)"
+            },
+            {
+              "explain": "Substitute into the discriminant.",
+              "work": "\\(\\Delta = b^2 - 4ac = (-5)^2 - 4(1)(12)\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(\\Delta = 25 - 48 = \\textcolor{#b45309}{-23}\\)"
+            },
+            {
+              "explain": "\\(\\Delta < 0\\), so the square root in the quadratic formula is of a negative number — there are no real solutions.",
+              "work": "<span style=\"color:#047857;font-weight:700\">Unreal solutions</span> (so (ii) and (iii) do not apply)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Without solving",
+              "note": "Use the discriminant only."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-a6b",
+          "type": "mc",
+          "stem": "Without solving, state whether the solutions of the following quadratic equation are: (i) real / unreal (ii) rational / irrational (iii) equal/different. \\(x^2 - 2x - 7 = 0\\)",
+          "difficulty": "medium",
+          "options": [
+            "Real, irrational and different",
+            "Real, rational and different",
+            "Unreal solutions",
+            "Real and equal"
+          ],
+          "answer": 0,
+          "hint": "Find \\(\\Delta = b^2 - 4ac\\). Positive → real and different. Then ask: is the discriminant a PERFECT SQUARE (rational) or not (irrational)?",
+          "steps": [
+            {
+              "explain": "Identify a, b, c.",
+              "work": "\\(a = 1,\\quad b = -2,\\quad c = -7\\)"
+            },
+            {
+              "explain": "Substitute into the discriminant.",
+              "work": "\\(\\Delta = (-2)^2 - 4(1)(-7) = 4 + 28\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(\\Delta = \\textcolor{#b45309}{32} > 0\\) → (i) REAL and (iii) DIFFERENT"
+            },
+            {
+              "explain": "Is 32 a perfect square? \\(5^2 = 25\\) and \\(6^2 = 36\\), so \\(\\sqrt{32}\\) is not a whole number — it is a surd.",
+              "work": "(ii) IRRATIONAL"
+            },
+            {
+              "explain": "Combine the three descriptions.",
+              "work": "<span style=\"color:#047857;font-weight:700\">Real, irrational and different solutions</span>  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Without solving",
+              "note": "Use the discriminant only."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

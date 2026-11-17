@@ -6056,6 +6056,56 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "wghs2015-y10-n1a",
+          "type": "mc",
+          "stem": "Simplify: \\(3\\sqrt{75} + 2\\sqrt{72} - 4\\sqrt{108}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(12\\sqrt{2} - 9\\sqrt{3}\\)",
+            "\\(15\\sqrt{2} - 9\\sqrt{3}\\)",
+            "\\(3\\sqrt{2}\\)",
+            "\\(12\\sqrt{3} - 9\\sqrt{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify each surd FIRST by pulling out the largest perfect square (25 from 75, 36 from 72, 36 from 108). Then combine only LIKE surds (same root).",
+          "steps": [
+            {
+              "explain": "Simplify \\(\\sqrt{75}\\): \\(75 = 25 \\times 3\\).",
+              "work": "\\(3\\sqrt{75} = 3\\sqrt{\\textcolor{#b45309}{25} \\times 3} = 3 \\times 5\\sqrt{3} = 15\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{72}\\): \\(72 = 36 \\times 2\\).",
+              "work": "\\(2\\sqrt{72} = 2\\sqrt{\\textcolor{#b45309}{36} \\times 2} = 2 \\times 6\\sqrt{2} = 12\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{108}\\): \\(108 = 36 \\times 3\\).",
+              "work": "\\(4\\sqrt{108} = 4\\sqrt{\\textcolor{#b45309}{36} \\times 3} = 4 \\times 6\\sqrt{3} = 24\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Put the simplified terms together.",
+              "work": "\\(15\\sqrt{3} + 12\\sqrt{2} - 24\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Combine the \\(\\sqrt{3}\\) terms: \\(15 - 24 = -9\\). The \\(\\sqrt{2}\\) term is different and stays.",
+              "work": "\\(12\\sqrt{2} - 9\\sqrt{3}\\)  ✓ (or \\(-9\\sqrt{3} + 12\\sqrt{2}\\))"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Simplify each surd, then combine like surds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -14967,6 +15017,56 @@
           ],
           "answer": 1,
           "solution": "Correct answer: \\(21-6\\sqrt6\\)"
+        },
+        {
+          "id": "wghs2015-y10-n1c",
+          "type": "mc",
+          "stem": "Expand: \\((3\\sqrt{2} - 5)^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(43 - 30\\sqrt{2}\\)",
+            "\\(43 + 30\\sqrt{2}\\)",
+            "\\(13 - 30\\sqrt{2}\\)",
+            "\\(18 + 25\\)"
+          ],
+          "answer": 0,
+          "hint": "A perfect square: \\((A - B)^2 = A^2 - 2AB + B^2\\) with \\(A = 3\\sqrt{2}\\) and \\(B = 5\\). Don't forget the middle term.",
+          "steps": [
+            {
+              "explain": "Write the expansion.",
+              "work": "\\((\\textcolor{#b45309}{3\\sqrt{2}} - \\textcolor{#2563eb}{5})^2 = (3\\sqrt{2})^2 - 2(3\\sqrt{2})(5) + 5^2\\)"
+            },
+            {
+              "explain": "Square the first term: \\((3\\sqrt{2})^2 = 9 \\times 2 = 18\\).",
+              "work": "\\(18\\)"
+            },
+            {
+              "explain": "Middle term: \\(2 \\times 3\\sqrt{2} \\times 5 = 30\\sqrt{2}\\) (with a minus sign).",
+              "work": "\\(-30\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Last term: \\(5^2 = 25\\).",
+              "work": "\\(18 - 30\\sqrt{2} + 25\\)"
+            },
+            {
+              "explain": "Add the whole numbers.",
+              "work": "\\(43 - 30\\sqrt{2}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand",
+              "note": "(A − B)² = A² − 2AB + B²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18077,6 +18177,102 @@
             "source": "Abbotsleigh 2025 Year 10 Mathematics Core and Pathways, Band 1 and Band 2 Assessment Task 4",
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
+          }
+        },
+        {
+          "id": "wghs2015-y10-n1b",
+          "type": "mc",
+          "stem": "Express \\(\\dfrac{2\\sqrt{3} + 3}{\\sqrt{5} - 2}\\) with a rational denominator.",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\sqrt{15} + 4\\sqrt{3} + 3\\sqrt{5} + 6\\)",
+            "\\(2\\sqrt{15} - 4\\sqrt{3} + 3\\sqrt{5} - 6\\)",
+            "\\(\\dfrac{2\\sqrt{15} + 4\\sqrt{3} + 3\\sqrt{5} + 6}{9}\\)",
+            "\\(2\\sqrt{15} + 3\\sqrt{5} + 10\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by the CONJUGATE of the denominator: change the sign between the terms, \\(\\sqrt{5} + 2\\). The bottom becomes a difference of two squares.",
+          "steps": [
+            {
+              "explain": "The denominator is \\(\\sqrt{5} - 2\\). Its conjugate is \\(\\sqrt{5} + 2\\). Multiply the top and bottom by it.",
+              "work": "\\(\\dfrac{2\\sqrt{3} + 3}{\\sqrt{5} - 2} \\times \\dfrac{\\textcolor{#b45309}{\\sqrt{5} + 2}}{\\textcolor{#b45309}{\\sqrt{5} + 2}}\\)"
+            },
+            {
+              "explain": "Bottom: difference of two squares \\((A-B)(A+B) = A^2 - B^2\\).",
+              "work": "\\((\\sqrt{5} - 2)(\\sqrt{5} + 2) = 5 - 4 = 1\\)"
+            },
+            {
+              "explain": "Top: expand all four products.",
+              "work": "\\((2\\sqrt{3} + 3)(\\sqrt{5} + 2) = 2\\sqrt{15} + 4\\sqrt{3} + 3\\sqrt{5} + 6\\)"
+            },
+            {
+              "explain": "Divide by the denominator 1 — it does not change anything.",
+              "work": "\\(2\\sqrt{15} + 4\\sqrt{3} + 3\\sqrt{5} + 6\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational denominator",
+              "note": "Multiply by the conjugate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs2015-y10-n1d",
+          "type": "mc",
+          "stem": "If \\(\\dfrac{1}{5 - 3\\sqrt{2}} = a + b\\sqrt{2}\\), find the value of \\(a\\) and \\(b\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(a = \\dfrac{5}{7},\\ b = \\dfrac{3}{7}\\)",
+            "\\(a = 5,\\ b = 3\\)",
+            "\\(a = -\\dfrac{5}{7},\\ b = \\dfrac{3}{7}\\)",
+            "\\(a = \\dfrac{5}{43},\\ b = \\dfrac{3}{43}\\)"
+          ],
+          "answer": 0,
+          "hint": "Rationalise the left side first (multiply by the conjugate \\(5 + 3\\sqrt{2}\\)), write it as \\(a + b\\sqrt{2}\\) and compare.",
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by the conjugate of \\(5 - 3\\sqrt{2}\\).",
+              "work": "\\(\\dfrac{1}{5 - 3\\sqrt{2}} \\times \\dfrac{\\textcolor{#b45309}{5 + 3\\sqrt{2}}}{\\textcolor{#b45309}{5 + 3\\sqrt{2}}}\\)"
+            },
+            {
+              "explain": "Bottom: difference of two squares.",
+              "work": "\\((5)^2 - (3\\sqrt{2})^2 = 25 - 9 \\times 2 = 25 - 18 = 7\\)"
+            },
+            {
+              "explain": "Top: \\(1 \\times (5 + 3\\sqrt{2})\\).",
+              "work": "\\(\\dfrac{5 + 3\\sqrt{2}}{7}\\)"
+            },
+            {
+              "explain": "Split into two fractions to match \\(a + b\\sqrt{2}\\).",
+              "work": "\\(\\dfrac{5}{7} + \\dfrac{3}{7}\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Compare the number part and the \\(\\sqrt{2}\\) part.",
+              "work": "\\(a = \\dfrac{5}{7},\\quad b = \\dfrac{3}{7}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of",
+              "note": "Rationalise, then compare the two parts of the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+            "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
           }
         }
       ]
