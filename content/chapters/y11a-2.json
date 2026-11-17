@@ -8354,6 +8354,52 @@
             "sourceQuestion": 11,
             "sourcePage": 10
           }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q12",
+          "type": "mc",
+          "stem": "Given that \\(a = 4\\) and \\(b = \\sqrt{3}\\), evaluate \\(\\dfrac{a + b^2}{ab}\\). Leave your answer with a rational denominator.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{7\\sqrt{3}}{12}\\)",
+            "\\(\\dfrac{7}{4\\sqrt{3}}\\)",
+            "\\(\\dfrac{4 + \\sqrt{3}}{4\\sqrt{3}}\\)",
+            "\\(\\dfrac{7\\sqrt{3}}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute carefully: \\(b^2 = (\\sqrt{3})^2 = 3\\). Then rationalise by multiplying top and bottom by \\(\\sqrt{3}\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(a = 4\\) and \\(b = \\sqrt{3}\\).",
+              "work": "\\(\\dfrac{a + b^2}{ab} = \\dfrac{\\textcolor{#b45309}{4} + (\\textcolor{#2563eb}{\\sqrt{3}})^2}{\\textcolor{#b45309}{4}\\textcolor{#2563eb}{\\sqrt{3}}}\\)"
+            },
+            {
+              "explain": "Square the root: \\((\\sqrt{3})^2 = 3\\), so the numerator is \\(4 + 3 = 7\\).",
+              "work": "\\(\\dfrac{7}{4\\sqrt{3}}\\)"
+            },
+            {
+              "explain": "The denominator contains a surd. Multiply top and bottom by \\(\\sqrt{3}\\) to rationalise.",
+              "work": "\\(\\dfrac{7}{4\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{7\\sqrt{3}}{4 \\times 3}\\)"
+            },
+            {
+              "explain": "Calculate the denominator.",
+              "work": "\\(\\dfrac{7\\sqrt{3}}{12}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational denominator",
+              "note": "Multiply by the surd in the denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

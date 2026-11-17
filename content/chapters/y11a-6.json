@@ -17388,6 +17388,63 @@
               "work": "\\(\\boxed{\\tan x = -\\frac{1}{2\\sqrt{2}}}\\)"
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q14",
+          "type": "mc",
+          "stem": "Given that \\(\\tan x = 2\\) and \\(\\cos x < 0\\), find the exact value of \\(\\sin x\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac{2}{\\sqrt{5}}\\)",
+            "\\(\\dfrac{2}{\\sqrt{5}}\\)",
+            "\\(-\\dfrac{1}{\\sqrt{5}}\\)",
+            "\\(-\\dfrac{\\sqrt{5}}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw a reference right-angled triangle from \\(\\tan x = \\dfrac{\\text{opposite}}{\\text{adjacent}}\\). Use Pythagoras for the hypotenuse, then use the signs (ASTC) to decide whether sine is positive or negative.",
+          "steps": [
+            {
+              "explain": "Since \\(\\tan x = 2 = \\dfrac{2}{1}\\), draw a triangle with opposite = 2 (green) and adjacent = 1 (blue).",
+              "work": "opposite 2, adjacent 1",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><polygon points=\"40,150 160,150 160,30\" fill=\"#dbeafe\" fill-opacity=\"0.55\" stroke=\"#475569\" stroke-width=\"2.4\"/><rect x=\"146\" y=\"136\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"40\" y1=\"150\" x2=\"160\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"150\" x2=\"160\" y2=\"30\" stroke=\"#059669\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"150\" x2=\"160\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"100\" y=\"172\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">adjacent = 1</text><text x=\"172\" y=\"92\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">opposite = 2</text><text x=\"86\" y=\"80\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">hyp = √5</text><path d=\"M72 150 A32 32 0 0 0 66 130\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"88\" y=\"138\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\">x</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the hypotenuse (red) using Pythagoras.",
+              "work": "\\(\\text{hyp}^2 = 1^2 + 2^2 = 5 \\;\\Rightarrow\\; \\text{hyp} = \\sqrt{5}\\)"
+            },
+            {
+              "explain": "In the triangle, \\(\\sin = \\dfrac{\\text{opposite}}{\\text{hypotenuse}}\\), so the size of sine is:",
+              "work": "\\(\\left|\\sin x\\right| = \\dfrac{2}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "Work out the quadrant. \\(\\tan x > 0\\) (positive) means quadrant 1 or 3. \\(\\cos x < 0\\) (negative) means quadrant 2 or 3. Both are true only in QUADRANT 3.",
+              "work": "quadrant 3: sin −, cos −, tan +"
+            },
+            {
+              "explain": "In quadrant 3 sine is NEGATIVE.",
+              "work": "\\(\\sin x = -\\dfrac{2}{\\sqrt{5}} = -\\dfrac{2\\sqrt{5}}{5}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Keep surds; get the sign from the quadrant."
+            },
+            {
+              "text": "cos x < 0",
+              "note": "Cosine negative → quadrant 2 or 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -19634,6 +19691,55 @@
               "note": "Use the two right triangles to express their sides using sin, cos and tan. Then substitute the identity into the equation and use that θ is an acute angle of a right triangle."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q28a",
+          "type": "review",
+          "stem": "Show that: \\(\\tan^2 A\\,(1 - \\sin^2 A) = \\sin^2 A\\).",
+          "difficulty": "medium",
+          "answer": "LHS \\(= \\tan^2 A(1 - \\sin^2 A) = \\dfrac{\\sin^2 A}{\\cos^2 A} \\times \\cos^2 A = \\sin^2 A = \\) RHS.",
+          "manual": true,
+          "hint": "Replace \\(1 - \\sin^2 A\\) using the Pythagorean identity \\(\\sin^2 A + \\cos^2 A = 1\\), and write \\(\\tan A\\) as \\(\\dfrac{\\sin A}{\\cos A}\\). Work from the LEFT side only.",
+          "steps": [
+            {
+              "explain": "Start with the left-hand side (LHS).",
+              "work": "\\(\\text{LHS} = \\tan^2 A\\,(1 - \\sin^2 A)\\)"
+            },
+            {
+              "explain": "The Pythagorean identity gives \\(1 - \\sin^2 A = \\cos^2 A\\).",
+              "work": "\\(\\text{LHS} = \\tan^2 A \\times \\textcolor{#b45309}{\\cos^2 A}\\)"
+            },
+            {
+              "explain": "Write the tangent as sine over cosine.",
+              "work": "\\(\\tan^2 A = \\dfrac{\\sin^2 A}{\\cos^2 A}\\) so \\(\\text{LHS} = \\dfrac{\\sin^2 A}{\\cos^2 A} \\times \\cos^2 A\\)"
+            },
+            {
+              "explain": "Cancel \\(\\cos^2 A\\) from the top and the bottom.",
+              "work": "\\(\\text{LHS} = \\sin^2 A\\)"
+            },
+            {
+              "explain": "This equals the right-hand side.",
+              "work": "\\(\\text{LHS} = \\text{RHS}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Work from one side only (the LHS)."
+            },
+            {
+              "text": "tan",
+              "note": "tan = sin / cos."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -21510,6 +21616,60 @@
               "note": "Use inverse tangent for the reference angle. Tangent is positive in quadrants I and III, so add π for the second solution."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q28b",
+          "type": "mc",
+          "stem": "Hence, or otherwise, solve: \\(4\\tan^2 A\\,(1 - \\sin^2 A) = 1\\), for \\(0 \\le A \\le 2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(A = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)",
+            "\\(A = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}\\)",
+            "\\(A = \\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ \\dfrac{5\\pi}{3}\\)",
+            "\\(A = \\dfrac{\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (a): \\(\\tan^2 A(1 - \\sin^2 A) = \\sin^2 A\\). The equation becomes \\(4\\sin^2 A = 1\\). Remember that \\(\\sin A = \\pm\\dfrac{1}{2}\\) gives FOUR solutions on \\([0, 2\\pi]\\).",
+          "steps": [
+            {
+              "explain": "Replace the left-hand side using the result of part (a).",
+              "work": "\\(4\\tan^2 A(1 - \\sin^2 A) = 4\\sin^2 A\\)"
+            },
+            {
+              "explain": "So the equation becomes:",
+              "work": "\\(4\\sin^2 A = 1 \\;\\Rightarrow\\; \\sin^2 A = \\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Take the square root of both sides — positive and negative.",
+              "work": "\\(\\sin A = \\dfrac{1}{2}\\quad\\text{or}\\quad \\sin A = -\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "\\(\\sin A = \\dfrac{1}{2}\\): sine is positive in quadrants 1 and 2; the related angle is \\(\\dfrac{\\pi}{6}\\).",
+              "work": "\\(A = \\dfrac{\\pi}{6},\\ \\pi - \\dfrac{\\pi}{6} = \\dfrac{5\\pi}{6}\\)"
+            },
+            {
+              "explain": "\\(\\sin A = -\\dfrac{1}{2}\\): sine is negative in quadrants 3 and 4.",
+              "work": "\\(A = \\pi + \\dfrac{\\pi}{6} = \\dfrac{7\\pi}{6},\\quad 2\\pi - \\dfrac{\\pi}{6} = \\dfrac{11\\pi}{6}\\)"
+            },
+            {
+              "explain": "Check the original equation: \\(\\tan A\\) is undefined at \\(\\dfrac{\\pi}{2}\\) and \\(\\dfrac{3\\pi}{2}\\), but none of our solutions is one of these. All four are valid.",
+              "work": "\\(A = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise, solve",
+              "note": "Use part (a) to simplify first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -29162,6 +29322,67 @@
               "note": "The 60° angle is between sides x and 7; the opposite side is 13. Substitute into the cosine rule, then reject any negative root because x is a length."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q24",
+          "type": "mc",
+          "stem": "A triangle has sides of length 5 cm, 7 cm and 8 cm. Find the size of the smallest angle, correct to the nearest minute.",
+          "difficulty": "hard",
+          "options": [
+            "38°13′",
+            "38°12′",
+            "60°0′",
+            "81°47′"
+          ],
+          "answer": 0,
+          "hint": "The SMALLEST angle is opposite the SHORTEST side (5 cm). All three sides are known, so use the cosine rule rearranged for the angle: \\(\\cos C = \\dfrac{a^2 + b^2 - c^2}{2ab}\\).",
+          "steps": [
+            {
+              "explain": "Label the triangle: the angle we want, \\(\\theta\\), is opposite the shortest side 5 cm. The other two sides next to it are 7 cm and 8 cm.",
+              "work": "\\(c = 5\\ (\\text{opposite } \\theta),\\quad a = 7,\\quad b = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><polygon points=\"30,150 270,150 190,30\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#475569\" stroke-width=\"2.4\"/><line x1=\"30\" y1=\"150\" x2=\"270\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"150\" x2=\"190\" y2=\"30\" stroke=\"#059669\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"270\" y1=\"150\" x2=\"190\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"150\" y=\"172\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">8 cm</text><text x=\"92\" y=\"82\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">7 cm</text><text x=\"246\" y=\"82\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">5 cm</text><path d=\"M222 150 A34 34 0 0 0 232 124\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"210\" y=\"136\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#d97706\">θ</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the cosine rule for the angle opposite the side of length 5.",
+              "work": "\\(5^2 = 7^2 + 8^2 - 2(7)(8)\\cos\\theta\\)"
+            },
+            {
+              "explain": "Rearrange for \\(\\cos\\theta\\).",
+              "work": "\\(\\cos\\theta = \\dfrac{7^2 + 8^2 - 5^2}{2 \\times 7 \\times 8} = \\dfrac{49 + 64 - 25}{112} = \\dfrac{88}{112} = \\dfrac{11}{14}\\)"
+            },
+            {
+              "explain": "Use \\(\\cos^{-1}\\) on the calculator.",
+              "work": "\\(\\theta = \\cos^{-1}\\left(\\dfrac{11}{14}\\right) = 38.2132\\ldots^\\circ\\)"
+            },
+            {
+              "explain": "Convert the decimal part to minutes: \\(0.2132 \\times 60 = 12.79\\) minutes, which rounds to 13.",
+              "work": "\\(\\theta \\approx 38^\\circ 13'\\)  ✓"
+            },
+            {
+              "explain": "Check the other angles: opposite 7 is \\(60^\\circ\\) and opposite 8 is about \\(81^\\circ 47'\\) — larger, so \\(38^\\circ 13'\\) is the smallest.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "smallest angle",
+              "note": "Opposite the shortest side."
+            },
+            {
+              "text": "nearest minute",
+              "note": "1° = 60′."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -33773,6 +33994,218 @@
               "note": "Use the cosine rule in triangles PBC and PBA, then apply sin^{2}α+cos^{2}α=1. Finally check the triangle inequality because x is a side length."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q31a",
+          "type": "review",
+          "stem": "Three girls are standing on the school oval. A is 35 metres from B and B is 48 metres from C. The bearing of B from A is 036°T and the bearing of C from B is 156°T. Show all the information on the diagram.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "answer": "At A draw a north line and mark the angle \\(36^\\circ\\) clockwise from it to AB; at B draw a north line and mark \\(156^\\circ\\) clockwise to BC; label the sides \\(AB = 35\\) m and \\(BC = 48\\) m.",
+          "manual": true,
+          "hint": "A BEARING is always measured CLOCKWISE from NORTH. Draw a north line through each point first, then mark the angles from it.",
+          "steps": [
+            {
+              "explain": "Draw a north line (dotted) through A and through B. The two north lines are parallel.",
+              "work": "north at A, north at B"
+            },
+            {
+              "explain": "The bearing of B from A is \\(036^\\circ\\): measure \\(36^\\circ\\) CLOCKWISE from north at A to the line AB (blue).",
+              "work": "\\(36^\\circ\\ \\text{at } A\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"35\" y1=\"218\" x2=\"35\" y2=\"148\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"45\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"124\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"-16\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"201\" y=\"-6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><path d=\"M35 148 A70 70 0 0 1 66 157\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"72\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">036°</text><path d=\"M191 94 A44 44 0 0 1 227 108\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3.5\"/><text x=\"204\" y=\"138\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">156°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "The bearing of C from B is \\(156^\\circ\\): at B measure \\(156^\\circ\\) clockwise from the north line at B to BC (green).",
+              "work": "\\(156^\\circ\\ \\text{at } B\\)"
+            },
+            {
+              "explain": "Mark the given distances on the sides.",
+              "work": "\\(AB = 35\\ \\text{m},\\quad BC = 48\\ \\text{m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"35\" y1=\"218\" x2=\"35\" y2=\"148\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"45\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"124\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"-16\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"201\" y=\"-6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><path d=\"M35 148 A70 70 0 0 1 66 157\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"72\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">036°</text><path d=\"M191 94 A44 44 0 0 1 227 108\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3.5\"/><text x=\"204\" y=\"138\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">156°</text><line x1=\"35\" y1=\"218\" x2=\"191\" y2=\"34\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"191\" y1=\"34\" x2=\"303\" y2=\"277\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"218\" x2=\"303\" y2=\"277\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"120\" y=\"110\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">35 m</text><text x=\"262\" y=\"130\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">48 m</text></g></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show all the information on the diagram",
+              "note": "North lines, clockwise angles, side lengths."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q31b",
+          "type": "review",
+          "stem": "Three girls are standing on the school oval. A is 35 metres from B and B is 48 metres from C. The bearing of B from A is 036°T and the bearing of C from B is 156°T. Show that \\(\\angle ABC = 60^\\circ\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "answer": "The north lines at A and B are parallel, so the bearing of A from B is \\(036^\\circ + 180^\\circ = 216^\\circ\\) (co-interior angles add to \\(180^\\circ\\)). The bearing of C from B is \\(156^\\circ\\), so \\(\\angle ABC = 216^\\circ - 156^\\circ = 60^\\circ\\).",
+          "manual": true,
+          "hint": "Find the bearing of A FROM B (the back-bearing: add or subtract 180°). Then the angle ABC is the difference between the bearings of A and C as seen from B.",
+          "steps": [
+            {
+              "explain": "The bearing of B from A is \\(036^\\circ\\). The north lines at A and B are parallel, so the bearing of A from B (looking back) is 180° more.",
+              "work": "\\(\\text{bearing of } A \\text{ from } B = 36^\\circ + 180^\\circ = 216^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"35\" y1=\"218\" x2=\"35\" y2=\"148\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"45\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"124\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"-16\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"201\" y=\"-6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><path d=\"M35 148 A70 70 0 0 1 66 157\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"72\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">036°</text><path d=\"M191 94 A44 44 0 0 1 227 108\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3.5\"/><text x=\"204\" y=\"138\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">156°</text></g></svg>"
+              }
+            },
+            {
+              "explain": "The bearing of C from B is \\(156^\\circ\\) (given). Both bearings are measured clockwise from the same north line at B.",
+              "work": "\\(\\text{bearing of } C \\text{ from } B = 156^\\circ\\)"
+            },
+            {
+              "explain": "The angle between the two directions BA and BC is the difference of the bearings.",
+              "work": "\\(\\angle ABC = 216^\\circ - 156^\\circ = 60^\\circ\\)  ✓"
+            },
+            {
+              "explain": "(Equivalent: the angle from BC round to the south line is \\(180^\\circ - 156^\\circ = 24^\\circ\\) and the angle from the south line to BA is \\(36^\\circ\\), giving \\(24^\\circ + 36^\\circ = 60^\\circ\\).)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Back-bearing = bearing ± 180°."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q31c",
+          "type": "review",
+          "stem": "Three girls are standing on the school oval. A is 35 metres from B and B is 48 metres from C. The bearing of B from A is 036°T and the bearing of C from B is 156°T. Show that the distance of C from A is 43 metres.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "answer": "In triangle \\(ABC\\): \\(AC^2 = 35^2 + 48^2 - 2(35)(48)\\cos 60^\\circ = 1225 + 2304 - 1680 = 1849\\), so \\(AC = \\sqrt{1849} = 43\\) m.",
+          "manual": true,
+          "hint": "Triangle ABC has two sides (35 and 48) and the angle BETWEEN them, \\(\\angle ABC = 60^\\circ\\) from part (b). Use the cosine rule for the third side AC.",
+          "steps": [
+            {
+              "explain": "Mark the known information: \\(AB = 35\\) (orange), \\(BC = 48\\) (red) and the included angle \\(B = 60^\\circ\\). The unknown side \\(AC\\) is opposite angle \\(B\\).",
+              "work": "two sides + included angle → cosine rule",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"35\" y1=\"218\" x2=\"35\" y2=\"148\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"45\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"124\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"-16\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"201\" y=\"-6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><path d=\"M35 148 A70 70 0 0 1 66 157\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"72\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">036°</text><path d=\"M191 94 A44 44 0 0 1 227 108\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3.5\"/><text x=\"204\" y=\"138\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">156°</text><line x1=\"35\" y1=\"218\" x2=\"191\" y2=\"34\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"191\" y1=\"34\" x2=\"303\" y2=\"277\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"218\" x2=\"303\" y2=\"277\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"120\" y=\"110\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">35 m</text><text x=\"262\" y=\"130\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">48 m</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Write the cosine rule for the side opposite \\(B\\).",
+              "work": "\\(AC^2 = AB^2 + BC^2 - 2(AB)(BC)\\cos B\\)"
+            },
+            {
+              "explain": "Substitute the values.",
+              "work": "\\(AC^2 = 35^2 + 48^2 - 2(35)(48)\\cos 60^\\circ\\)"
+            },
+            {
+              "explain": "Use \\(\\cos 60^\\circ = \\dfrac{1}{2}\\) and calculate each part.",
+              "work": "\\(AC^2 = 1225 + 2304 - 3360 \\times \\dfrac{1}{2} = 3529 - 1680 = 1849\\)"
+            },
+            {
+              "explain": "Take the square root: \\(43^2 = 1849\\).",
+              "work": "\\(AC = \\sqrt{1849} = 43\\ \\text{m}\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the distance of C from A",
+              "note": "Cosine rule with the 60° angle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "abbotsleigh2024-y11a-q31d",
+          "type": "mc",
+          "stem": "Three girls are standing on the school oval. A is 35 metres from B and B is 48 metres from C. The bearing of B from A is 036°T and the bearing of C from B is 156°T. Hence, or otherwise, find the bearing of A from C. Give your answer correct to the nearest degree.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "options": [
+            "291°T",
+            "069°T",
+            "336°T",
+            "249°T"
+          ],
+          "answer": 0,
+          "hint": "Find \\(\\angle ACB\\) with the sine rule. Then find the bearing of B from C (the back-bearing of 156°) and ROTATE anticlockwise by \\(\\angle ACB\\) to reach A.",
+          "steps": [
+            {
+              "explain": "Find the angle at C with the sine rule: the side \\(AB = 35\\) is opposite \\(C\\) and \\(AC = 43\\) is opposite \\(B = 60^\\circ\\).",
+              "work": "\\(\\dfrac{\\sin C}{35} = \\dfrac{\\sin 60^\\circ}{43}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 325 306.4\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M316.3 287.7 L315.9 288.2 L311.6 287.7 L306.8 290.3 L305.1 294.2 L305.1 297.7 L306.8 300.3 L308.5 301.2 L311.6 301.2 L314.6 299 L311.6 301.2 L308.5 300.7 L306.4 298.1 L306.4 294.7 L308.1 290.3 L311.6 287.7 L313.7 287.7 L315 288.6 L315.5 291.6ZM20.4 210.6 L14.3 218.4 L13.9 220.1 L10 223.6 L13.4 223.6 L12.6 223.2 L12.6 221.9 L14.3 219.3 L18.2 219.7 L18.2 221.9 L16.5 223.6 L20.8 223.6 L19.5 222.7ZM18.2 214.1 L18.6 218 L17.8 218.8 L15.2 218.8 L14.7 218.4ZM286.4 152.5 L287.3 153.4 L287.3 159.5 L286 160.3 L289.9 160.3 L288.6 159.5 L288.6 153.8 L290.3 152.5 L291.2 152.5 L292.5 153.8 L292.5 159.5 L291.2 160.3 L295.1 160.3 L294.2 160.3 L293.4 159 L293.4 154.3 L295.5 152.5 L296.4 152.5 L297.7 153.8 L297.7 159.5 L296.4 160.3 L299.9 160.3 L299 159.5 L299 153.4 L298.1 152.1 L296.4 151.7 L293.8 153.4 L292.1 151.7 L290.8 151.7 L289 153.4 L288.2 151.7ZM274.3 148.2 L272.6 150.8 L275.2 154.3 L273 156 L272.6 157.7 L274.7 160.3 L277.3 160.3 L279.5 158.2 L279.1 155.6 L276.9 153.8 L279.1 151.2 L279.1 149.5 L277.8 148.2ZM275.2 154.3 L276.5 154.7 L278.6 157.7 L278.6 158.6 L276.9 160.3 L275.2 160.3 L273.9 158.6 L273.9 156ZM274.7 148.2 L277.3 148.2 L278.2 149.5 L278.2 151.2 L276.5 153.4 L273.9 151.2 L273.9 149.1ZM267.8 148.2 L264.8 152.1 L264.8 153 L262.2 155.6 L262.2 156.9 L267.4 156.9 L267.8 160.3 L268.7 160.3 L268.7 157.3 L270.4 156.9 L270.4 156 L268.7 155.6 L268.7 148.2ZM267.4 149.9 L267.8 150.4 L267.8 155.6 L263.5 156 L263 155.1 L264.3 154.3 L264.8 152.5ZM83.6 114.4 L84.9 114.8 L84.9 121.3 L83.6 122.2 L87.5 122.2 L86.2 121.8 L86.2 115.7 L88 114.4 L88.8 114.4 L90.1 115.7 L90.1 121.3 L88.8 122.2 L92.7 122.2 L91.4 121.3 L91.4 116.1 L93.2 114.4 L94.5 114.4 L95.3 115.3 L95.3 121.8 L94 122.2 L97.9 122.2 L96.6 121.3 L96.6 116.6 L95.3 114 L93.2 114 L91.9 115.3 L90.6 114 L88 114 L86.7 115.3 L86.2 114ZM76.7 110.1 L72.8 110.1 L70.6 114 L73.2 114.4 L76.3 117.9 L76.3 119.2 L73.7 121.3 L70.2 120.5 L71.1 122.2 L73.2 122.2 L75 121.3 L76.7 119.2 L76.3 115.3 L75 114 L71.9 112.7 L72.8 110.9 L76.3 110.9ZM65.9 110.5 L62.8 110.1 L61.1 110.9 L60.7 112.2 L62.4 110.5 L63.7 110.5 L65.4 112.2 L65 114.4 L62.4 116.1 L65.4 117 L66.3 118.3 L66.3 120 L65 121.3 L62.8 121.8 L60.7 120.9 L61.1 122.2 L64.1 122.2 L67.2 119.6 L67.2 117 L65 114.8 L66.7 113.1 L66.7 111.4ZM33.4 215.8 L34.2 216.7 L39.9 217.5 L49.8 220.6 L53.7 221 L61.5 223.6 L65.9 224 L73.7 226.6 L78 227.1 L84.5 229.2 L90.1 230.1 L100.1 233.1 L104 233.6 L111.8 236.2 L116.1 236.6 L123.9 239.2 L128.3 239.6 L133 241.4 L140.4 242.7 L150.4 245.7 L154.3 246.1 L162.1 248.7 L166.4 249.2 L174.2 251.8 L178.5 252.2 L186.3 254.8 L190.7 255.2 L197.2 257.4 L204.5 258.7 L212.3 261.3 L216.7 261.7 L224.5 264.3 L228.8 264.8 L236.6 267.4 L240.9 267.8 L247.4 270 L254.8 271.3 L262.6 273.9 L266.9 274.3 L274.7 276.9 L279.1 277.3 L286.9 279.9 L291.2 280.4 L296 282.1 L303.3 283.4 L302.5 280.4 L299.4 274.7 L299 272.6 L296 267.4 L296 266.1 L289.9 253.9 L289.9 252.6 L286.9 247 L286 244 L283.4 239.6 L279.9 230.5 L274.3 219.7 L274.3 218.4 L271.3 212.8 L270.8 210.6 L268.7 207.1 L267.4 203.2 L264.8 198.5 L264.3 196.3 L261.7 192 L261.7 190.7 L258.7 185 L258.3 182.9 L255.2 177.7 L254.8 175.5 L249.2 164.2 L245.7 155.1 L240.1 144.3 L239.6 142.1 L230.5 123.1 L230.1 120.9 L227.1 115.7 L227.1 114.4 L221 102.3 L217.5 93.2 L211.5 81.5 L211.5 80.2 L208.4 74.5 L208.4 73.2 L205.8 68.9 L204.1 63.7 L201.9 60.2 L201.5 58.1 L198.9 53.7 L198.5 51.1 L195.9 46.8 L195.4 44.6 L191.1 36 L177.2 51.1 L175.9 53.3 L174.2 54.6 L173.3 56.3 L171.2 58.1 L170.7 59.4 L168.1 61.5 L167.7 62.8 L165.1 65 L164.7 66.3 L155.6 75.8 L152.1 80.6 L149.1 83.2 L148.6 84.5 L146.5 86.2 L145.6 88 L143.9 89.3 L140 94.5 L138.7 95.3 L102.3 136.9 L101.4 138.7 L99.2 140.4 L98.8 141.7 L95.8 144.3 L85.4 156.9 L83.6 158.2 L82.8 159.9 L80.2 162.1 L79.7 163.4 L77.1 165.5 L76.7 166.8 L74.5 168.6 L64.1 181.1 L61.5 183.3 L61.1 184.6 L58.5 186.8 L58.1 188.1 L55.9 189.8 L52 195ZM34.2 215.8 L133 103.1 L133.9 101.4 L136.1 99.7 L136.5 98.4 L139.1 96.2 L149.9 83.2 L151.7 81.9 L152.5 80.2 L154.7 78.4 L155.1 77.1 L157.7 75 L158.2 73.7 L160.8 71.5 L161.2 70.2 L163.4 68.5 L173.8 55.9 L176.8 53.3 L177.2 52 L179.4 50.3 L180.3 48.5 L182 47.2 L190.7 36.8 L192.4 39 L192.8 41.2 L198 51.6 L199.8 56.8 L201.9 60.2 L202.4 62.4 L205.4 67.6 L205.4 68.9 L214.9 88.8 L214.9 90.1 L221 101.8 L221 103.1 L226.6 114.4 L228.4 119.6 L233.6 129.6 L234 132.2 L236.6 136.5 L237 138.7 L239.6 143 L239.6 144.3 L245.7 156.4 L249.6 166.4 L255.2 177.2 L255.2 178.5 L260.9 189.8 L262.6 195 L267.8 205 L268.2 207.6 L274.3 219.3 L277.8 228.4 L279.9 231.8 L283.8 241.8 L289.5 252.6 L289.9 254.8 L295.1 265.2 L296.8 270.4 L302.5 281.2 L302.5 282.5 L301.2 283 L294.7 280.8 L290.3 280.4 L282.5 277.8 L278.2 277.3 L270.4 274.7 L266.1 274.3 L258.3 271.7 L252.2 270.8 L244.4 268.2 L240.1 267.8 L232.3 265.2 L227.9 264.8 L220.1 262.2 L215.8 261.7 L208 259.1 L201.9 258.3 L194.1 255.7 L189.8 255.2 L182 252.6 L177.7 252.2 L169.9 249.6 L165.5 249.2 L157.7 246.6 L152.1 245.7 L143.9 243.1 L139.5 242.7 L131.7 240.1 L127.4 239.6 L119.6 237 L115.3 236.6 L107.5 234 L101.8 233.1 L93.6 230.5 L89.3 230.1 L81.5 227.5 L77.1 227.1 L69.3 224.5 L65 224 L57.2 221.4 L51.6 220.6 L43.3 218 L39 217.5ZM195 13 L193.3 12.1 L187.6 12.1 L188.9 12.6 L188.9 14.3 L186.8 19.9 L186.3 23 L185 24.7 L184.2 24.7 L191.1 24.7 L193.3 23.4 L194.6 21.2 L194.6 19.9 L192.4 17.8 L195.4 16ZM192 18.2 L192.8 19.5 L192.8 22.1 L189.8 24.7 L187.2 24.7 L186.8 24.3 L189.4 17.8ZM190.7 12.1 L192.4 12.1 L194.1 13.4 L194.1 15.2 L192.4 17.3 L188.9 16.9Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/><line x1=\"35\" y1=\"218\" x2=\"35\" y2=\"148\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"45\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"124\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"191\" y1=\"34\" x2=\"191\" y2=\"-16\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"201\" y=\"-6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#475569\">N</text><path d=\"M35 148 A70 70 0 0 1 66 157\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"72\" y=\"146\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">036°</text><path d=\"M191 94 A44 44 0 0 1 227 108\" fill=\"none\" stroke=\"#059669\" stroke-width=\"3.5\"/><text x=\"204\" y=\"138\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\">156°</text><line x1=\"35\" y1=\"218\" x2=\"191\" y2=\"34\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"191\" y1=\"34\" x2=\"303\" y2=\"277\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"35\" y1=\"218\" x2=\"303\" y2=\"277\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"120\" y=\"110\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">35 m</text><text x=\"262\" y=\"130\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">48 m</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Solve for \\(\\sin C\\).",
+              "work": "\\(\\sin C = \\dfrac{35\\sin 60^\\circ}{43} = 0.7049\\ldots\\)"
+            },
+            {
+              "explain": "Since \\(AB < AC\\), angle C is smaller than angle B, so it is acute.",
+              "work": "\\(C = \\sin^{-1}(0.7049\\ldots) = 44.8^\\circ\\)"
+            },
+            {
+              "explain": "The bearing of B from C is the back-bearing of the bearing of C from B (156°): add 180°.",
+              "work": "\\(156^\\circ + 180^\\circ = 336^\\circ\\)"
+            },
+            {
+              "explain": "A lies to the LEFT (anticlockwise) of B as seen from C, so SUBTRACT the angle ACB from 336°.",
+              "work": "\\(336^\\circ - 44.8^\\circ = 291.2^\\circ\\)"
+            },
+            {
+              "explain": "Round to the nearest degree and write as a three-figure bearing.",
+              "work": "<span style=\"color:#047857;font-weight:700\">291°T</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the bearing of A from C",
+              "note": "Back-bearing of BC is 336°; subtract angle C."
+            },
+            {
+              "text": "nearest degree",
+              "note": "Round at the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
+            "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
