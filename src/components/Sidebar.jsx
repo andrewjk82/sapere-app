@@ -148,9 +148,8 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
           gap: '4px',
           padding: '8px 4px',
           marginBottom: '8px',
-          background: 'rgba(255,255,255,0.6)',
-          borderRadius: '16px',
-          border: '1px solid rgba(167,139,250,0.15)',
+          borderRadius: '12px',
+          border: '1px solid #e5e7eb',
         }}>
           {!isAdmin && onShowLeaderboard && (
             <button
@@ -192,8 +191,10 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         {!isMobile && (
           <div className="app-panel app-sidebar__profile" style={{
             padding: '12px',
-            background: 'rgba(255, 255, 255, 0.7)',
-            border: '1px solid rgba(167, 139, 250, 0.15)',
+            background: '#fff',
+            border: '1px solid #e5e7eb',
+            borderRadius: '12px',
+            boxShadow: 'none',
             marginBottom: '10px'
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

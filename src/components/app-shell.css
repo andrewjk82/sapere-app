@@ -2,9 +2,8 @@
   display: flex;
   height: 100vh;
   overflow: hidden;
-  background:
-    radial-gradient(circle at top left, rgba(216, 180, 254, 0.3), transparent 30%),
-    linear-gradient(180deg, #fcfaff 0%, #f6f1ff 55%, #f3edff 100%);
+  /* Flat white page (2026-11): the lavender gradient is gone; cards are told apart by their border. */
+  background: #ffffff;
   color: var(--text-primary);
   transition: filter 0.3s ease;
 }
@@ -51,14 +50,12 @@
 .app-sidebar {
   width: 300px;
   flex-shrink: 0;
-  padding: 28px 20px;
-  border-right: 1px solid rgba(167, 139, 250, 0.18);
-  background: rgba(255, 255, 255, 0.58);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  padding: 24px 16px;
+  border-right: 1px solid #e5e7eb;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .app-sidebar__brand {
@@ -74,7 +71,7 @@
   border-radius: 18px;
   overflow: hidden;
   background: white;
-  box-shadow: 0 14px 30px rgba(139, 92, 246, 0.16);
+  border: 1px solid #e5e7eb;
 }
 
 .app-sidebar__logo img {
@@ -103,7 +100,7 @@
 .app-sidebar__nav {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
 }
 
 .app-sidebar__item {
@@ -111,26 +108,26 @@
   align-items: center;
   gap: 14px;
   width: 100%;
-  padding: 14px 16px;
+  padding: 10px 12px;
   border: 1px solid transparent;
-  border-radius: 18px;
+  border-radius: 10px;
   background: transparent;
-  color: #6d6a85;
+  color: #52525b;
   cursor: pointer;
   transition: 0.2s ease;
   text-align: left;
 }
 
 .app-sidebar__item:hover {
-  background: rgba(255, 255, 255, 0.72);
-  border-color: rgba(167, 139, 250, 0.16);
+  background: #f4f4f5;
   color: var(--text-primary);
 }
 
-.app-sidebar__item.is-active {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.92), rgba(167, 139, 250, 0.9));
-  color: white;
-  box-shadow: 0 18px 34px rgba(139, 92, 246, 0.18);
+/* Selected item: a flat light-violet pill with dark text (no gradient, no shadow). */
+.app-sidebar__item.is-active,
+.app-sidebar__item.is-active:hover {
+  background: #ede9fe;
+  color: #4c1d95;
 }
 
 .app-sidebar__item span {
@@ -153,10 +150,10 @@
 }
 
 .app-panel {
-  border: 1px solid rgba(167, 139, 250, 0.16);
+  border: 1px solid #e5e7eb;
   border-radius: 26px;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 24px 60px rgba(91, 33, 182, 0.08);
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .settings-display-grid {
