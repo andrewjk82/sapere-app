@@ -1042,10 +1042,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
           <MathView
             content={q?.question}
-            // Sketch/draw prompts: model graph is on solutionSteps only (not stem).
+            // Sketch/draw prompts: only hide stem graphData if it's a legacy sketch
+            // question without step figures (never hide on MCQs or when steps own figures).
             graphData={
               q?.type === 'graph_sketch'
-              || /^(sketch|draw)\b/i.test(String(q?.question || '').trim())
+              || (!isMC && /^(sketch|draw)\b/i.test(String(q?.question || '').trim()) && !steps.some((s) => s?.graphData))
                 ? (submitted ? q?.graphData : null)
                 : q?.graphData
             }

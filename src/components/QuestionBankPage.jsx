@@ -576,11 +576,11 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
 
                   <MathView
                     content={q?.question}
-                    // Sketch / draw prompts: model graph belongs in solutionSteps only,
-                    // never on the question stem (spoiler).
+                    // Sketch / draw prompts: only hide root graphData when it is a legacy
+                    // sketch question with no step figures (never hide on MCQs or when steps have figures).
                     graphData={
                       q?.type === 'graph_sketch'
-                      || /^(sketch|draw)\b/i.test(String(q?.question || '').trim())
+                      || (q?.type !== 'multiple_choice' && /^(sketch|draw)\b/i.test(String(q?.question || '').trim()) && !(Array.isArray(q?.solutionSteps) && q.solutionSteps.some((s) => s?.graphData)))
                         ? null
                         : q?.graphData
                     }
