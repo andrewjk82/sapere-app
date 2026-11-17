@@ -75,7 +75,7 @@ import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
 import ScholarshipPanel from "./studentDetail/ScholarshipPanel";
-import SpecialWeeklyPanel from "./studentDetail/SpecialWeeklyPanel";
+import SpecialProgressPanel from "./studentDetail/SpecialProgressPanel";
 import MistakeReview from "./studentDetail/MistakeReview";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
@@ -2188,7 +2188,6 @@ const StudentDetail = ({ studentId, onBack }) => {
                 student={student}
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
-              <SpecialWeeklyPanel student={student} />
             </CollapsibleSection>
 
             <CollapsibleSection
@@ -2205,6 +2204,8 @@ const StudentDetail = ({ studentId, onBack }) => {
             </CollapsibleSection>
           </div>
         );
+      case "special":
+        return <SpecialProgressPanel student={student} />;
       case "homework":
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -2441,6 +2442,18 @@ const StudentDetail = ({ studentId, onBack }) => {
         >
           <FileText size={18} /> HSC
         </button>
+        {/* Only for students doing OC / Selective / Scholarship (or with results already stored). */}
+        {(student?.scholarshipEnabled === true || Object.keys(student?.specialWeekly || {}).length > 0) && (
+          <button
+            onClick={() => setActiveTab("special")}
+            style={{
+              ...styles.navBtn,
+              ...(activeTab === "special" ? styles.navBtnActive : {}),
+            }}
+          >
+            <Target size={18} /> Special tests
+          </button>
+        )}
         <button
           onClick={() => setIsScheduleModalOpen(true)}
           style={styles.navBtn}

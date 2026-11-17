@@ -10,17 +10,17 @@ const sentence = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const mins = (secs) => (secs >= 3600 ? `${Math.floor(secs / 3600)}h ${Math.round((secs % 3600) / 60)}m` : `${Math.round(secs / 60)} min`);
 
 /**
- * Teacher view of what a student did in OC / Selective / Scholarship, one row per week (last 8). The data is the
+ * Teacher view of what a student did in OC / Selective / Scholarship, one row per week (latest `limit`); shown in the Special tests tab under SpecialProgressPanel. The data is the
  * `specialWeekly` map the student's device sends once a week (utils/specialWeekly) — it is already on the student
  * document this page listens to, so showing it costs no extra read.
  */
-export default function SpecialWeeklyPanel({ student }) {
-  const weeks = weeksForTeacher(student?.specialWeekly).slice(0, 8);
+export default function SpecialWeeklyPanel({ student, limit = 8 }) {
+  const weeks = weeksForTeacher(student?.specialWeekly).slice(0, limit);
   const [open, setOpen] = useState(null);
 
   if (!weeks.length) {
     return (
-      <div style={{ marginTop: 18, paddingTop: 16, borderTop: `1px solid ${C.line}` }}>
+      <div style={{ paddingTop: 16 }}>
         <div style={{ fontWeight: 800, color: C.ink, fontSize: '0.85rem' }}>Weekly results</div>
         <div style={{ marginTop: 6, color: C.muted, fontWeight: 500, fontSize: '0.84rem', lineHeight: 1.5 }}>
           Nothing yet. The student&apos;s device sends one summary per week, the first time the app is opened after the week has ended.
@@ -30,10 +30,10 @@ export default function SpecialWeeklyPanel({ student }) {
   }
 
   return (
-    <div style={{ marginTop: 18, paddingTop: 16, borderTop: `1px solid ${C.line}` }}>
+    <div style={{ paddingTop: 16 }}>
       <div style={{ fontWeight: 800, color: C.ink, fontSize: '0.85rem' }}>Weekly results</div>
       <div style={{ color: C.muted, fontWeight: 500, fontSize: '0.78rem', margin: '2px 0 10px' }}>
-        Sent once a week by the student&apos;s device, so the latest week shows after it has ended.
+        Tap a week for its exams, weakest types and missed questions.
       </div>
       <div style={{ border: `1px solid ${C.line}`, borderRadius: 12, overflow: 'hidden' }}>
         {weeks.map((w, i) => {
