@@ -143,6 +143,55 @@
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
             "sourcePages": "10"
           }
+        },
+        {
+          "id": "cranbrook2020e1-q7a",
+          "type": "review",
+          "stem": "Prove that \\(2\\times1!+5\\times2!+10\\times3!+\\cdots+(n^2+1)\\,n!=n\\,(n+1)!\\) for \\(n\\in\\mathbb{Z}^+\\) by mathematical induction.",
+          "difficulty": "hard",
+          "answer": "Base case \\(n=1\\): \\(2\\times1!=2=1\\times2!\\). Assume true for \\(n=k\\). Then \\(k(k+1)!+\\left((k+1)^2+1\\right)(k+1)!=(k+1)!\\left(k^2+3k+2\\right)=(k+1)(k+2)!\\), which is the statement for \\(n=k+1\\). ∎",
+          "manual": true,
+          "hint": "Three parts: (1) BASE case, (2) ASSUME it is true for \\(n=k\\), (3) PROVE it for \\(n=k+1\\) by adding the next term and factorising.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): the left side has one term \\((1^2+1)\\,1!=2\\).",
+              "work": "\\(\\text{LHS}=2,\\qquad\\text{RHS}=1\\times2!=2\\) ✓ true for \\(n=1\\)"
+            },
+            {
+              "explain": "Assumption: suppose it is true for \\(n=k\\) (for some \\(k\\ge1\\)).",
+              "work": "\\(2\\times1!+\\cdots+(k^2+1)k!=k\\,(k+1)!\\)"
+            },
+            {
+              "explain": "Step: for \\(n=k+1\\) add the next term \\(\\left((k+1)^2+1\\right)(k+1)!\\) to both sides.",
+              "work": "\\(\\text{LHS}_{k+1}=k\\,(k+1)!+\\left((k+1)^2+1\\right)(k+1)!\\)"
+            },
+            {
+              "explain": "Factor out \\((k+1)!\\).",
+              "work": "\\(=(k+1)!\\left[k+(k+1)^2+1\\right]=(k+1)!\\left(k+k^2+2k+1+1\\right)=(k+1)!\\left(k^2+3k+2\\right)\\)"
+            },
+            {
+              "explain": "Factorise the quadratic and use \\((k+1)!\\,(k+2)=(k+2)!\\).",
+              "work": "\\(=(k+1)!\\,(k+1)(k+2)=(k+1)\\,(k+2)!\\) = \\((k+1)\\,\\left((k+1)+1\\right)!\\) = RHS for \\(n=k+1\\)"
+            },
+            {
+              "explain": "Conclusion: true for \\(n=1\\), and if true for \\(n=k\\) then true for \\(n=k+1\\). So it is true for all \\(n\\in\\mathbb{Z}^+\\) by mathematical induction.  ∎",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Base case, assumption, then add the next term and factorise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -356,6 +405,105 @@
               }
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e1-q1",
+          "type": "mc",
+          "stem": "The expression \\(3^n+7^{n+1}\\) for \\(n\\in\\mathbb{Z}^+\\) is divisible by:",
+          "difficulty": "medium",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "10"
+          ],
+          "answer": 1,
+          "hint": "Test the first two values of \\(n\\): a divisor that fails for even ONE value of \\(n\\) can be eliminated. The survivor can then be proved by induction.",
+          "steps": [
+            {
+              "explain": "Substitute \\(n=1\\).",
+              "work": "\\(3^1+7^2=3+49=52\\)"
+            },
+            {
+              "explain": "Test the four options on \\(52\\): \\(52\\div3\\) is not whole; \\(52\\div5\\) is not whole; \\(52\\div10\\) is not whole; \\(52\\div4=13\\) ✓.",
+              "work": "only 4 divides 52"
+            },
+            {
+              "explain": "Confirm with \\(n=2\\).",
+              "work": "\\(3^2+7^3=9+343=352=4\\times88\\) ✓"
+            },
+            {
+              "explain": "Why it always works (induction step): if \\(3^k+7^{k+1}=4m\\), then",
+              "work": "\\(3^{k+1}+7^{k+2}=3\\left(3^k+7^{k+1}\\right)+4\\times7^{k+1}=12m+4\\times7^{k+1}=4\\left(3m+7^{k+1}\\right)\\)"
+            },
+            {
+              "explain": "Both pieces are multiples of 4, so the expression is divisible by 4 for all \\(n\\).",
+              "work": "<span style=\"color:#047857;font-weight:700\">B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is divisible by",
+              "note": "Test small values of n and rule out options."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e1-q7b",
+          "type": "review",
+          "stem": "Prove that \\(x^{2n}-y^{2n}\\) is divisible by \\((x+y)\\) for \\(n\\in\\mathbb{Z}^+\\) by mathematical induction where \\(x,y\\in\\mathbb{R}\\).",
+          "difficulty": "hard",
+          "answer": "Base case \\(n=1\\): \\(x^2-y^2=(x-y)(x+y)\\). Assume \\(x^{2k}-y^{2k}=(x+y)P\\). Then \\(x^{2k+2}-y^{2k+2}=x^2(x^{2k}-y^{2k})+y^{2k}(x^2-y^2)\\), both parts divisible by \\((x+y)\\). ∎",
+          "manual": true,
+          "hint": "To prove 'divisible', write the expression as \\((x+y)\\times\\text{something}\\). For the step, split \\(x^{2k+2}-y^{2k+2}\\) cleverly so that the ASSUMPTION appears.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\).",
+              "work": "\\(x^2-y^2=(x-y)(x+y)\\) which is divisible by \\((x+y)\\) ✓"
+            },
+            {
+              "explain": "Assumption: suppose true for \\(n=k\\): there is a polynomial \\(P\\) with",
+              "work": "\\(x^{2k}-y^{2k}=(x+y)P\\)"
+            },
+            {
+              "explain": "Step: for \\(n=k+1\\) split the expression, adding and subtracting \\(x^2y^{2k}\\).",
+              "work": "\\(x^{2k+2}-y^{2k+2}=x^2x^{2k}-x^2y^{2k}+x^2y^{2k}-y^2y^{2k}\\)"
+            },
+            {
+              "explain": "Group the first pair and the second pair.",
+              "work": "\\(=x^2\\left(x^{2k}-y^{2k}\\right)+y^{2k}\\left(x^2-y^2\\right)\\)"
+            },
+            {
+              "explain": "Use the assumption on the first bracket and \\(x^2-y^2=(x-y)(x+y)\\) on the second.",
+              "work": "\\(=x^2(x+y)P+y^{2k}(x-y)(x+y)=(x+y)\\left[x^2P+y^{2k}(x-y)\\right]\\)"
+            },
+            {
+              "explain": "Both pieces contain the factor \\((x+y)\\), so \\(x^{2k+2}-y^{2k+2}\\) is divisible by \\((x+y)\\). True for \\(n=1\\) and \\(n=k\\Rightarrow n=k+1\\), so true for all \\(n\\in\\mathbb{Z}^+\\) by induction.  ∎",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "divisible by",
+              "note": "Show the expression equals (x + y) times something."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

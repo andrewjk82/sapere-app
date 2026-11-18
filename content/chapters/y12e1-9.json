@@ -1064,6 +1064,108 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e1-q2",
+          "type": "mc",
+          "stem": "If \\(\\begin{bmatrix}3\\\\ 1\\end{bmatrix}\\) and \\(\\begin{bmatrix}b\\\\ -1\\end{bmatrix}\\) are perpendicular. The value of \\(b\\) is:",
+          "difficulty": "easy",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(-\\dfrac{1}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Two vectors are PERPENDICULAR exactly when their DOT PRODUCT is zero: \\(\\mathbf{u}\\cdot\\mathbf{v}=0\\).",
+          "steps": [
+            {
+              "explain": "Dot product of column vectors: multiply matching components and add.",
+              "work": "\\(\\begin{bmatrix}3\\\\ 1\\end{bmatrix}\\cdot\\begin{bmatrix}b\\\\ -1\\end{bmatrix}=3b+(1)(-1)=3b-1\\)"
+            },
+            {
+              "explain": "Perpendicular means the dot product is zero.",
+              "work": "\\(3b-1=0\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(3b=1\\;\\Rightarrow\\;b=\\dfrac{1}{3}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Why not \\(b=3\\)? That would give the dot product \\(9-1=8\\ne0\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perpendicular",
+              "note": "Perpendicular vectors have zero dot product."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e1-q4",
+          "type": "mc",
+          "stem": "Consider the circle with centre \\(O\\) and diameter \\(\\overrightarrow{AC}=\\mathbf{a}\\). Point \\(B\\) is on the circumference of the circle, where \\(\\overrightarrow{BC}=\\mathbf{b}\\) and \\(\\angle ABC=90^\\circ\\). Which of the following statements is true?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 262\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><circle cx=\"160\" cy=\"130\" r=\"100\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"83.4\" y1=\"65.7\" x2=\"236.6\" y2=\"194.3\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"83.4\" y1=\"65.7\" x2=\"102.6\" y2=\"211.9\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"102.6\" y1=\"211.9\" x2=\"236.6\" y2=\"194.3\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"130\" r=\"4\" fill=\"#1e293b\"/><path d=\"M100.9,199 l12.9,-1.7 l1.7,12.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"69.4\" y=\"61.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text><text x=\"250.6\" y=\"202.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text><text x=\"96.6\" y=\"231.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text><text x=\"164\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text></svg>"
+          },
+          "options": [
+            "\\(|\\mathbf{a}|^2=2|\\mathbf{b}|^2\\)",
+            "\\(\\mathbf{a}\\cdot\\mathbf{b}=0\\)",
+            "\\(|\\mathbf{a}|^2-|\\mathbf{b}|^2=\\mathbf{a}\\cdot\\mathbf{b}\\)",
+            "\\(|\\mathbf{b}|^2=\\mathbf{a}\\cdot\\mathbf{b}\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the third side \\(\\overrightarrow{AB}\\) in terms of \\(\\mathbf{a}\\) and \\(\\mathbf{b}\\), then use the right angle at \\(B\\): \\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\).",
+          "steps": [
+            {
+              "explain": "Mark the vectors: \\(\\mathbf{a}=\\overrightarrow{AC}\\) (red), \\(\\mathbf{b}=\\overrightarrow{BC}\\) (blue). Go from \\(A\\) to \\(C\\) via \\(B\\): \\(\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{BC}\\).",
+              "work": "\\(\\overrightarrow{AB}=\\mathbf{a}-\\mathbf{b}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 262\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><circle cx=\"160\" cy=\"130\" r=\"100\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"83.4\" y1=\"65.7\" x2=\"236.6\" y2=\"194.3\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"83.4\" y1=\"65.7\" x2=\"102.6\" y2=\"211.9\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"102.6\" y1=\"211.9\" x2=\"236.6\" y2=\"194.3\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"130\" r=\"4\" fill=\"#1e293b\"/><path d=\"M100.9,199 l12.9,-1.7 l1.7,12.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"69.4\" y=\"61.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">A</text><text x=\"250.6\" y=\"202.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text><text x=\"96.6\" y=\"231.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text><text x=\"164\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><line x1=\"83.4\" y1=\"65.7\" x2=\"230.5\" y2=\"189.1\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M236.6,194.3 l-11.6,-3.2 l6.4,-7.7z\" fill=\"#dc2626\"/><line x1=\"102.6\" y1=\"211.9\" x2=\"228.7\" y2=\"195.3\" stroke=\"#2563eb\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M236.6,194.3 l-10.3,6.4 l-1.3,-9.9z\" fill=\"#2563eb\"/><line x1=\"102.6\" y1=\"211.9\" x2=\"84.4\" y2=\"73.7\" stroke=\"#059669\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M83.4,65.7 l6.4,10.3 l-9.9,1.3z\" fill=\"#059669\"/><text x=\"137.7\" y=\"87.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b91c1c\" font-style=\"italic\">a</text><text x=\"177.6\" y=\"225.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">b</text><text x=\"67\" y=\"138.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">a − b</text></svg>"
+              }
+            },
+            {
+              "explain": "The angle at \\(B\\) is a right angle (angle in a semicircle), so \\(\\overrightarrow{AB}\\) is perpendicular to \\(\\overrightarrow{BC}\\). Perpendicular means zero dot product.",
+              "work": "\\((\\mathbf{a}-\\mathbf{b})\\cdot\\mathbf{b}=0\\)"
+            },
+            {
+              "explain": "Expand the dot product.",
+              "work": "\\(\\mathbf{a}\\cdot\\mathbf{b}-\\mathbf{b}\\cdot\\mathbf{b}=0\\;\\Rightarrow\\;\\mathbf{a}\\cdot\\mathbf{b}-|\\mathbf{b}|^2=0\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(|\\mathbf{b}|^2=\\mathbf{a}\\cdot\\mathbf{b}\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Why not B? \\(\\mathbf{a}\\) (the diameter) is NOT perpendicular to \\(\\mathbf{b}\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following statements is true",
+              "note": "Write AB as a minus b and use the right angle at B."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
