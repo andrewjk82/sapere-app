@@ -12602,6 +12602,106 @@
               "note": "Set consecutive differences equal. Do not divide by x."
             }
           ]
+        },
+        {
+          "id": "hurlstone2020-q30a",
+          "type": "mc",
+          "stem": "John wishes to construct a ladder with 7 rungs which diminish uniformly from 48 cm (the length of the lowest rung) to 33 cm (the length of the highest rung). Find the common difference of the length between each rung.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"200\" x2=\"60\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"124\" y1=\"200\" x2=\"104\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"200\" x2=\"66\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"200\" x2=\"110\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43\" y1=\"200\" x2=\"121\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"172\" x2=\"118\" y2=\"172\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"49.1\" y1=\"144\" x2=\"114.9\" y2=\"144\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52.1\" y1=\"116\" x2=\"111.9\" y2=\"116\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55.2\" y1=\"88\" x2=\"108.8\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"58.2\" y1=\"60\" x2=\"105.8\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"61.3\" y1=\"32\" x2=\"102.7\" y2=\"32\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"200\" x2=\"170\" y2=\"36\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M170,28 l-5,12 h10z\" fill=\"#475569\"/><text x=\"206\" y=\"34\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7th rung</text><text x=\"206\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1st rung</text></svg>"
+          },
+          "options": [
+            "\\(-2.5\\)",
+            "\\(2.5\\)",
+            "\\(-2\\)",
+            "\\(-15\\)"
+          ],
+          "answer": 0,
+          "hint": "The rung lengths form an ARITHMETIC sequence: \\(T_n=a+(n-1)d\\) with \\(a=48\\) (1st rung) and \\(T_7=33\\) (7th rung).",
+          "steps": [
+            {
+              "explain": "Identify the terms (1st rung blue, 7th rung red).",
+              "work": "\\(a=48,\\quad n=7,\\quad T_7=33\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"200\" x2=\"60\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"124\" y1=\"200\" x2=\"104\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"200\" x2=\"66\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"200\" x2=\"110\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43\" y1=\"200\" x2=\"121\" y2=\"200\" stroke=\"#2563eb\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"172\" x2=\"118\" y2=\"172\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"49.1\" y1=\"144\" x2=\"114.9\" y2=\"144\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"52.1\" y1=\"116\" x2=\"111.9\" y2=\"116\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"55.2\" y1=\"88\" x2=\"108.8\" y2=\"88\" stroke=\"#059669\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"58.2\" y1=\"60\" x2=\"105.8\" y2=\"60\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"61.3\" y1=\"32\" x2=\"102.7\" y2=\"32\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"200\" x2=\"170\" y2=\"36\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M170,28 l-5,12 h10z\" fill=\"#475569\"/><text x=\"206\" y=\"34\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7th rung</text><text x=\"206\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1st rung</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute in \\(T_n=a+(n-1)d\\).",
+              "work": "\\(33=48+(7-1)d=48+6d\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(6d=-15\\;\\Rightarrow\\;d=-2.5\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Negative because the rungs get SHORTER going up.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "common difference",
+              "note": "Use the general term formula with the first and seventh rungs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q30b",
+          "type": "mc",
+          "stem": "John wishes to construct a ladder with 7 rungs which diminish uniformly from 48 cm (the length of the lowest rung) to 33 cm (the length of the highest rung). The common difference is \\(-2.5\\) cm. Hence, find the length of the fifth rung.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"200\" x2=\"60\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"124\" y1=\"200\" x2=\"104\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"200\" x2=\"66\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"200\" x2=\"110\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43\" y1=\"200\" x2=\"121\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"172\" x2=\"118\" y2=\"172\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"49.1\" y1=\"144\" x2=\"114.9\" y2=\"144\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52.1\" y1=\"116\" x2=\"111.9\" y2=\"116\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55.2\" y1=\"88\" x2=\"108.8\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"58.2\" y1=\"60\" x2=\"105.8\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"61.3\" y1=\"32\" x2=\"102.7\" y2=\"32\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"200\" x2=\"170\" y2=\"36\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M170,28 l-5,12 h10z\" fill=\"#475569\"/><text x=\"206\" y=\"34\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7th rung</text><text x=\"206\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1st rung</text></svg>"
+          },
+          "options": [
+            "38 cm",
+            "40.5 cm",
+            "35.5 cm",
+            "36 cm"
+          ],
+          "answer": 0,
+          "hint": "Use the general term \\(T_n=a+(n-1)d\\) with \\(n=5\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(a=48\\), \\(d=-2.5\\), \\(n=5\\) (the 5th rung is green).",
+              "work": "\\(T_5=48+(5-1)(-2.5)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"200\" x2=\"60\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"124\" y1=\"200\" x2=\"104\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"200\" x2=\"66\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"200\" x2=\"110\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43\" y1=\"200\" x2=\"121\" y2=\"200\" stroke=\"#2563eb\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"172\" x2=\"118\" y2=\"172\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"49.1\" y1=\"144\" x2=\"114.9\" y2=\"144\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"52.1\" y1=\"116\" x2=\"111.9\" y2=\"116\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"55.2\" y1=\"88\" x2=\"108.8\" y2=\"88\" stroke=\"#059669\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"58.2\" y1=\"60\" x2=\"105.8\" y2=\"60\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"61.3\" y1=\"32\" x2=\"102.7\" y2=\"32\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"200\" x2=\"170\" y2=\"36\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M170,28 l-5,12 h10z\" fill=\"#475569\"/><text x=\"206\" y=\"34\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7th rung</text><text x=\"206\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1st rung</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(T_5=48-10=38\\) cm → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: the rungs are 48, 45.5, 43, 40.5, 38, 35.5, 33 ✓ (the 5th is 38).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "length of the fifth rung",
+              "note": "Add four times the common difference to the first rung."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -17860,6 +17960,56 @@
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
           }
+        },
+        {
+          "id": "hurlstone2020-q15",
+          "type": "mc",
+          "stem": "Find the number of terms in the geometric sequence \\(128,\\ 192,\\ \\ldots,\\ 972\\).",
+          "difficulty": "medium",
+          "options": [
+            "6",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 0,
+          "hint": "Find the first term \\(a\\) and the common ratio \\(r\\), then use \\(T_n=ar^{n-1}\\) with \\(T_n=972\\) and solve for \\(n\\).",
+          "steps": [
+            {
+              "explain": "First term and common ratio.",
+              "work": "\\(a=128,\\qquad r=\\dfrac{192}{128}=\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Set the last term equal to the general term.",
+              "work": "\\(972=128\\left(\\dfrac{3}{2}\\right)^{n-1}\\)"
+            },
+            {
+              "explain": "Divide by 128.",
+              "work": "\\(\\left(\\dfrac{3}{2}\\right)^{n-1}=\\dfrac{972}{128}=\\dfrac{243}{32}\\)"
+            },
+            {
+              "explain": "Write \\(\\dfrac{243}{32}\\) as a power: \\(243=3^5\\) and \\(32=2^5\\).",
+              "work": "\\(\\dfrac{243}{32}=\\left(\\dfrac{3}{2}\\right)^5\\)"
+            },
+            {
+              "explain": "Equate the powers.",
+              "work": "\\(n-1=5\\;\\Rightarrow\\;n=6\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "number of terms",
+              "note": "Use the general term formula and match the powers."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -21976,6 +22126,59 @@
           "meta": {
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
+          }
+        },
+        {
+          "id": "hurlstone2020-q30c",
+          "type": "mc",
+          "stem": "John wishes to construct a ladder with 7 rungs which diminish uniformly from 48 cm (the length of the lowest rung) to 33 cm (the length of the highest rung). The common difference is \\(-2.5\\) cm. If John wants to extend his ladder to a maximum number of rungs, how many more rungs he can have?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"200\" x2=\"60\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"124\" y1=\"200\" x2=\"104\" y2=\"16\" stroke=\"#334155\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"200\" x2=\"66\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"200\" x2=\"110\" y2=\"16\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"43\" y1=\"200\" x2=\"121\" y2=\"200\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"172\" x2=\"118\" y2=\"172\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"49.1\" y1=\"144\" x2=\"114.9\" y2=\"144\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52.1\" y1=\"116\" x2=\"111.9\" y2=\"116\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"55.2\" y1=\"88\" x2=\"108.8\" y2=\"88\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"58.2\" y1=\"60\" x2=\"105.8\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"61.3\" y1=\"32\" x2=\"102.7\" y2=\"32\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"200\" x2=\"170\" y2=\"36\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M170,28 l-5,12 h10z\" fill=\"#475569\"/><text x=\"206\" y=\"34\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7th rung</text><text x=\"206\" y=\"206\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1st rung</text></svg>"
+          },
+          "options": [
+            "13",
+            "14",
+            "20",
+            "12"
+          ],
+          "answer": 0,
+          "hint": "Rung lengths must stay POSITIVE: \\(T_n>0\\). Solve for the largest whole \\(n\\), then subtract the 7 rungs John already has.",
+          "steps": [
+            {
+              "explain": "A rung must have positive length.",
+              "work": "\\(T_n=48+(n-1)(-2.5)>0\\)"
+            },
+            {
+              "explain": "Expand and rearrange.",
+              "work": "\\(48-2.5n+2.5>0\\;\\Rightarrow\\;50.5>2.5n\\)"
+            },
+            {
+              "explain": "Divide by 2.5.",
+              "work": "\\(n<20.2\\)"
+            },
+            {
+              "explain": "The largest whole number of rungs.",
+              "work": "\\(n=20\\) (the 20th rung has length \\(48-19(2.5)=0.5\\) cm ✓; the 21st would be negative)."
+            },
+            {
+              "explain": "John already has 7 rungs.",
+              "work": "\\(20-7=13\\) more rungs → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum number of rungs",
+              "note": "Length must stay positive: solve for the nth term greater than zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

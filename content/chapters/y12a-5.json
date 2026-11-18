@@ -10611,6 +10611,60 @@
             "course": "Advanced",
             "sourceQuestion": "Q29, 2020 HSC"
           }
+        },
+        {
+          "id": "hurlstone2020-q32",
+          "type": "mc",
+          "stem": "For the curve \\(y=2x^2-\\ln\\left(\\dfrac{x}{2}\\right)-4\\), find the coordinates of the minimum stationary point. Give your answer in exact form.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\left(\\dfrac{1}{2},\\ \\ln4-\\dfrac{7}{2}\\right)\\)",
+            "\\(\\left(-\\dfrac{1}{2},\\ \\ln4-\\dfrac{7}{2}\\right)\\)",
+            "\\(\\left(\\dfrac{1}{2},\\ -\\ln4-\\dfrac{7}{2}\\right)\\)",
+            "\\(\\left(\\dfrac{1}{2},\\ \\ln2-\\dfrac{7}{2}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Stationary point: \\(\\dfrac{dy}{dx}=0\\). Use \\(\\ln\\left(\\dfrac{x}{2}\\right)=\\ln x-\\ln2\\) so that its derivative is simply \\(\\dfrac{1}{x}\\). The domain is \\(x>0\\) (logs need positive inputs).",
+          "steps": [
+            {
+              "explain": "Rewrite the log.",
+              "work": "\\(\\ln\\left(\\dfrac{x}{2}\\right)=\\ln x-\\ln2\\)"
+            },
+            {
+              "explain": "Differentiate.",
+              "work": "\\(\\dfrac{dy}{dx}=4x-\\dfrac{1}{x}\\)"
+            },
+            {
+              "explain": "Set to zero and solve.",
+              "work": "\\(4x=\\dfrac{1}{x}\\;\\Rightarrow\\;4x^2=1\\;\\Rightarrow\\;x^2=\\dfrac{1}{4}\\;\\Rightarrow\\;x=\\pm\\dfrac{1}{2}\\). Only \\(x=\\dfrac{1}{2}\\) is allowed (\\(x>0\\))."
+            },
+            {
+              "explain": "Find \\(y\\) at \\(x=\\dfrac{1}{2}\\).",
+              "work": "\\(y=2\\left(\\dfrac{1}{4}\\right)-\\ln\\left(\\dfrac{1}{4}\\right)-4=\\dfrac{1}{2}+\\ln4-4=\\ln4-\\dfrac{7}{2}\\)"
+            },
+            {
+              "explain": "Confirm it is a MINIMUM with the second derivative.",
+              "work": "\\(\\dfrac{d^2y}{dx^2}=4+\\dfrac{1}{x^2}=4+4=8>0\\) ✓"
+            },
+            {
+              "explain": "The minimum stationary point.",
+              "work": "\\(\\left(\\dfrac{1}{2},\\ \\ln4-\\dfrac{7}{2}\\right)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "minimum stationary point",
+              "note": "Set the derivative to zero, reject the negative root, check the second derivative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -13939,6 +13993,52 @@
             }
           ],
           "timeLimit": 150
+        },
+        {
+          "id": "hurlstone2020-q11",
+          "type": "mc",
+          "stem": "Find the anti-derivative of \\(\\dfrac{1}{1-2x}\\) with respect to \\(x\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{1}{2}\\ln|1-2x|+C\\)",
+            "\\(\\dfrac{1}{2}\\ln|1-2x|+C\\)",
+            "\\(-2\\ln|1-2x|+C\\)",
+            "\\(\\ln|1-2x|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\int\\dfrac{f'(x)}{f(x)}\\,dx=\\ln|f(x)|+C\\). Here the inside is \\(1-2x\\), whose derivative is \\(-2\\): adjust with a factor to make the numerator match.",
+          "steps": [
+            {
+              "explain": "Compare with the reverse chain rule form \\(\\dfrac{f'}{f}\\): with \\(f=1-2x\\) we would need \\(f'=-2\\) on top.",
+              "work": "\\(\\dfrac{d}{dx}\\ln|1-2x|=\\dfrac{-2}{1-2x}\\)"
+            },
+            {
+              "explain": "Our integrand has \\(1\\) on top, which is \\(-\\dfrac{1}{2}\\) of \\(-2\\). So multiply by \\(-\\dfrac{1}{2}\\).",
+              "work": "\\(\\dfrac{1}{1-2x}=-\\dfrac{1}{2}\\times\\dfrac{-2}{1-2x}\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(\\int\\dfrac{1}{1-2x}\\,dx=-\\dfrac{1}{2}\\ln|1-2x|+C\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check by differentiating: \\(-\\dfrac{1}{2}\\times\\dfrac{-2}{1-2x}=\\dfrac{1}{1-2x}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "anti-derivative",
+              "note": "Reverse chain rule: ln of the denominator, divided by its derivative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

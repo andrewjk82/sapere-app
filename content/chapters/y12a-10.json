@@ -8377,6 +8377,97 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-q21a",
+          "type": "mc",
+          "stem": "The probability density function for the continuous random variable \\(X\\) is given by \\(f(x)=\\begin{cases}|1-x|,&0\\le x\\le2\\\\ 0,&\\text{otherwise}\\end{cases}\\). Find \\(P(X\\le1.5)\\).",
+          "difficulty": "medium",
+          "options": [
+            "0.625",
+            "0.75",
+            "0.5",
+            "0.875"
+          ],
+          "answer": 0,
+          "hint": "For a continuous variable the probability is the AREA under the density curve. Sketch \\(y=|1-x|\\) (a V-shape) and find the area to the left of \\(x=1.5\\) using triangles.",
+          "steps": [
+            {
+              "explain": "Sketch the density: \\(|1-x|\\) is \\(1-x\\) for \\(x<1\\) and \\(x-1\\) for \\(x>1\\). The shaded region is the area from \\(x=0\\) to \\(x=1.5\\).",
+              "work": "two triangles: 0 to 1 and 1 to 1.5",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><clipPath id=\"c16\"><rect x=\"28\" y=\"28\" width=\"384\" height=\"244\"/></clipPath><path d=\"M97.8,83.8 L100.7,87.3 L103.6,90.7 L106.5,94.2 L109.5,97.7 L112.4,101.2 L115.3,104.7 L118.2,108.2 L121.1,111.7 L124,115.1 L126.9,118.6 L129.8,122.1 L132.7,125.6 L135.6,129.1 L138.5,132.6 L141.5,136.1 L144.4,139.5 L147.3,143 L150.2,146.5 L153.1,150 L156,153.5 L158.9,157 L161.8,160.5 L164.7,163.9 L167.6,167.4 L170.5,170.9 L173.5,174.4 L176.4,177.9 L179.3,181.4 L182.2,184.9 L185.1,188.3 L188,191.8 L190.9,195.3 L193.8,198.8 L196.7,202.3 L199.6,205.8 L202.5,209.3 L205.5,212.7 L208.4,216.2 L211.3,219.7 L214.2,223.2 L217.1,219.7 L220,216.2 L222.9,212.7 L225.8,209.3 L228.7,205.8 L231.6,202.3 L234.5,198.8 L237.5,195.3 L240.4,191.8 L243.3,188.3 L246.2,184.9 L249.1,181.4 L252,177.9 L254.9,174.4 L257.8,170.9 L260.7,167.4 L263.6,163.9 L266.5,160.5 L269.5,157 L272.4,153.5 L272.4,223.2 L97.8,223.2Z\" fill=\"#2563eb\" fill-opacity=\"0.3\"/><line x1=\"28\" y1=\"223.2\" x2=\"412\" y2=\"223.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"97.8\" y1=\"28\" x2=\"97.8\" y2=\"272\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M419,223.2 l-9,-4.5 v9z\" fill=\"#334155\"/><path d=\"M97.8,21 l-4.5,9 h9z\" fill=\"#334155\"/><g clip-path=\"url(#c16)\"><polyline points=\"97.8,83.8 98.1,84.1 98.3,84.4 98.6,84.7 98.9,85 99.1,85.3 99.4,85.6 99.6,85.9 99.9,86.3 100.1,86.6 100.4,86.9 100.7,87.2 100.9,87.5 101.2,87.8 101.4,88.1 101.7,88.4 102,88.7 102.2,89 102.5,89.3 102.7,89.7 103,90 103.2,90.3 103.5,90.6 103.8,90.9 104,91.2 104.3,91.5 104.5,91.8 104.8,92.1 105.1,92.4 105.3,92.8 105.6,93.1 105.8,93.4 106.1,93.7 106.4,94 106.6,94.3 106.9,94.6 107.1,94.9 107.4,95.2 107.6,95.5 107.9,95.9 108.2,96.2 108.4,96.5 108.7,96.8 108.9,97.1 109.2,97.4 109.5,97.7 109.7,98 110,98.3 110.2,98.6 110.5,99 110.7,99.3 111,99.6 111.3,99.9 111.5,100.2 111.8,100.5 112,100.8 112.3,101.1 112.6,101.4 112.8,101.7 113.1,102.1 113.3,102.4 113.6,102.7 113.9,103 114.1,103.3 114.4,103.6 114.6,103.9 114.9,104.2 115.1,104.5 115.4,104.8 115.7,105.2 115.9,105.5 116.2,105.8 116.4,106.1 116.7,106.4 117,106.7 117.2,107 117.5,107.3 117.7,107.6 118,107.9 118.2,108.2 118.5,108.6 118.8,108.9 119,109.2 119.3,109.5 119.5,109.8 119.8,110.1 120.1,110.4 120.3,110.7 120.6,111 120.8,111.3 121.1,111.7 121.3,112 121.6,112.3 121.9,112.6 122.1,112.9 122.4,113.2 122.6,113.5 122.9,113.8 123.2,114.1 123.4,114.4 123.7,114.8 123.9,115.1 124.2,115.4 124.5,115.7 124.7,116 125,116.3 125.2,116.6 125.5,116.9 125.7,117.2 126,117.5 126.3,117.9 126.5,118.2 126.8,118.5 127,118.8 127.3,119.1 127.6,119.4 127.8,119.7 128.1,120 128.3,120.3 128.6,120.6 128.8,121 129.1,121.3 129.4,121.6 129.6,121.9 129.9,122.2 130.1,122.5 130.4,122.8 130.7,123.1 130.9,123.4 131.2,123.7 131.4,124.1 131.7,124.4 132,124.7 132.2,125 132.5,125.3 132.7,125.6 133,125.9 133.2,126.2 133.5,126.5 133.8,126.8 134,127.1 134.3,127.5 134.5,127.8 134.8,128.1 135.1,128.4 135.3,128.7 135.6,129 135.8,129.3 136.1,129.6 136.3,129.9 136.6,130.2 136.9,130.6 137.1,130.9 137.4,131.2 137.6,131.5 137.9,131.8 138.2,132.1 138.4,132.4 138.7,132.7 138.9,133 139.2,133.3 139.5,133.7 139.7,134 140,134.3 140.2,134.6 140.5,134.9 140.7,135.2 141,135.5 141.3,135.8 141.5,136.1 141.8,136.4 142,136.8 142.3,137.1 142.6,137.4 142.8,137.7 143.1,138 143.3,138.3 143.6,138.6 143.8,138.9 144.1,139.2 144.4,139.5 144.6,139.9 144.9,140.2 145.1,140.5 145.4,140.8 145.7,141.1 145.9,141.4 146.2,141.7 146.4,142 146.7,142.3 146.9,142.6 147.2,143 147.5,143.3 147.7,143.6 148,143.9 148.2,144.2 148.5,144.5 148.8,144.8 149,145.1 149.3,145.4 149.5,145.7 149.8,146 150.1,146.4 150.3,146.7 150.6,147 150.8,147.3 151.1,147.6 151.3,147.9 151.6,148.2 151.9,148.5 152.1,148.8 152.4,149.1 152.6,149.5 152.9,149.8 153.2,150.1 153.4,150.4 153.7,150.7 153.9,151 154.2,151.3 154.4,151.6 154.7,151.9 155,152.2 155.2,152.6 155.5,152.9 155.7,153.2 156,153.5 156.3,153.8 156.5,154.1 156.8,154.4 157,154.7 157.3,155 157.6,155.3 157.8,155.7 158.1,156 158.3,156.3 158.6,156.6 158.8,156.9 159.1,157.2 159.4,157.5 159.6,157.8 159.9,158.1 160.1,158.4 160.4,158.8 160.7,159.1 160.9,159.4 161.2,159.7 161.4,160 161.7,160.3 161.9,160.6 162.2,160.9 162.5,161.2 162.7,161.5 163,161.9 163.2,162.2 163.5,162.5 163.8,162.8 164,163.1 164.3,163.4 164.5,163.7 164.8,164 165.1,164.3 165.3,164.6 165.6,164.9 165.8,165.3 166.1,165.6 166.3,165.9 166.6,166.2 166.9,166.5 167.1,166.8 167.4,167.1 167.6,167.4 167.9,167.7 168.2,168 168.4,168.4 168.7,168.7 168.9,169 169.2,169.3 169.4,169.6 169.7,169.9 170,170.2 170.2,170.5 170.5,170.8 170.7,171.1 171,171.5 171.3,171.8 171.5,172.1 171.8,172.4 172,172.7 172.3,173 172.5,173.3 172.8,173.6 173.1,173.9 173.3,174.2 173.6,174.6 173.8,174.9 174.1,175.2 174.4,175.5 174.6,175.8 174.9,176.1 175.1,176.4 175.4,176.7 175.7,177 175.9,177.3 176.2,177.7 176.4,178 176.7,178.3 176.9,178.6 177.2,178.9 177.5,179.2 177.7,179.5 178,179.8 178.2,180.1 178.5,180.4 178.8,180.8 179,181.1 179.3,181.4 179.5,181.7 179.8,182 180,182.3 180.3,182.6 180.6,182.9 180.8,183.2 181.1,183.5 181.3,183.9 181.6,184.2 181.9,184.5 182.1,184.8 182.4,185.1 182.6,185.4 182.9,185.7 183.2,186 183.4,186.3 183.7,186.6 183.9,186.9 184.2,187.3 184.4,187.6 184.7,187.9 185,188.2 185.2,188.5 185.5,188.8 185.7,189.1 186,189.4 186.3,189.7 186.5,190 186.8,190.4 187,190.7 187.3,191 187.5,191.3 187.8,191.6 188.1,191.9 188.3,192.2 188.6,192.5 188.8,192.8 189.1,193.1 189.4,193.5 189.6,193.8 189.9,194.1 190.1,194.4 190.4,194.7 190.7,195 190.9,195.3 191.2,195.6 191.4,195.9 191.7,196.2 191.9,196.6 192.2,196.9 192.5,197.2 192.7,197.5 193,197.8 193.2,198.1 193.5,198.4 193.8,198.7 194,199 194.3,199.3 194.5,199.7 194.8,200 195,200.3 195.3,200.6 195.6,200.9 195.8,201.2 196.1,201.5 196.3,201.8 196.6,202.1 196.9,202.4 197.1,202.8 197.4,203.1 197.6,203.4 197.9,203.7 198.1,204 198.4,204.3 198.7,204.6 198.9,204.9 199.2,205.2 199.4,205.5 199.7,205.8 200,206.2 200.2,206.5 200.5,206.8 200.7,207.1 201,207.4 201.3,207.7 201.5,208 201.8,208.3 202,208.6 202.3,208.9 202.5,209.3 202.8,209.6 203.1,209.9 203.3,210.2 203.6,210.5 203.8,210.8 204.1,211.1 204.4,211.4 204.6,211.7 204.9,212 205.1,212.4 205.4,212.7 205.6,213 205.9,213.3 206.2,213.6 206.4,213.9 206.7,214.2 206.9,214.5 207.2,214.8 207.5,215.1 207.7,215.5 208,215.8 208.2,216.1 208.5,216.4 208.8,216.7 209,217 209.3,217.3 209.5,217.6 209.8,217.9 210,218.2 210.3,218.6 210.6,218.9 210.8,219.2 211.1,219.5 211.3,219.8 211.6,220.1 211.9,220.4 212.1,220.7 212.4,221 212.6,221.3 212.9,221.7 213.1,222 213.4,222.3 213.7,222.6 213.9,222.9 214.2,223.2 214.4,222.9 214.7,222.6 215,222.3 215.2,222 215.5,221.7 215.7,221.3 216,221 216.3,220.7 216.5,220.4 216.8,220.1 217,219.8 217.3,219.5 217.5,219.2 217.8,218.9 218.1,218.6 218.3,218.2 218.6,217.9 218.8,217.6 219.1,217.3 219.4,217 219.6,216.7 219.9,216.4 220.1,216.1 220.4,215.8 220.6,215.5 220.9,215.1 221.2,214.8 221.4,214.5 221.7,214.2 221.9,213.9 222.2,213.6 222.5,213.3 222.7,213 223,212.7 223.2,212.4 223.5,212 223.7,211.7 224,211.4 224.3,211.1 224.5,210.8 224.8,210.5 225,210.2 225.3,209.9 225.6,209.6 225.8,209.3 226.1,208.9 226.3,208.6 226.6,208.3 226.9,208 227.1,207.7 227.4,207.4 227.6,207.1 227.9,206.8 228.1,206.5 228.4,206.2 228.7,205.8 228.9,205.5 229.2,205.2 229.4,204.9 229.7,204.6 230,204.3 230.2,204 230.5,203.7 230.7,203.4 231,203.1 231.2,202.8 231.5,202.4 231.8,202.1 232,201.8 232.3,201.5 232.5,201.2 232.8,200.9 233.1,200.6 233.3,200.3 233.6,200 233.8,199.7 234.1,199.3 234.4,199 234.6,198.7 234.9,198.4 235.1,198.1 235.4,197.8 235.6,197.5 235.9,197.2 236.2,196.9 236.4,196.6 236.7,196.2 236.9,195.9 237.2,195.6 237.5,195.3 237.7,195 238,194.7 238.2,194.4 238.5,194.1 238.7,193.8 239,193.5 239.3,193.1 239.5,192.8 239.8,192.5 240,192.2 240.3,191.9 240.6,191.6 240.8,191.3 241.1,191 241.3,190.7 241.6,190.4 241.9,190 242.1,189.7 242.4,189.4 242.6,189.1 242.9,188.8 243.1,188.5 243.4,188.2 243.7,187.9 243.9,187.6 244.2,187.3 244.4,186.9 244.7,186.6 245,186.3 245.2,186 245.5,185.7 245.7,185.4 246,185.1 246.2,184.8 246.5,184.5 246.8,184.2 247,183.9 247.3,183.5 247.5,183.2 247.8,182.9 248.1,182.6 248.3,182.3 248.6,182 248.8,181.7 249.1,181.4 249.3,181.1 249.6,180.8 249.9,180.4 250.1,180.1 250.4,179.8 250.6,179.5 250.9,179.2 251.2,178.9 251.4,178.6 251.7,178.3 251.9,178 252.2,177.7 252.5,177.3 252.7,177 253,176.7 253.2,176.4 253.5,176.1 253.7,175.8 254,175.5 254.3,175.2 254.5,174.9 254.8,174.6 255,174.2 255.3,173.9 255.6,173.6 255.8,173.3 256.1,173 256.3,172.7 256.6,172.4 256.8,172.1 257.1,171.8 257.4,171.5 257.6,171.1 257.9,170.8 258.1,170.5 258.4,170.2 258.7,169.9 258.9,169.6 259.2,169.3 259.4,169 259.7,168.7 260,168.4 260.2,168 260.5,167.7 260.7,167.4 261,167.1 261.2,166.8 261.5,166.5 261.8,166.2 262,165.9 262.3,165.6 262.5,165.3 262.8,164.9 263.1,164.6 263.3,164.3 263.6,164 263.8,163.7 264.1,163.4 264.3,163.1 264.6,162.8 264.9,162.5 265.1,162.2 265.4,161.9 265.6,161.5 265.9,161.2 266.2,160.9 266.4,160.6 266.7,160.3 266.9,160 267.2,159.7 267.5,159.4 267.7,159.1 268,158.8 268.2,158.4 268.5,158.1 268.7,157.8 269,157.5 269.3,157.2 269.5,156.9 269.8,156.6 270,156.3 270.3,156 270.6,155.7 270.8,155.3 271.1,155 271.3,154.7 271.6,154.4 271.8,154.1 272.1,153.8 272.4,153.5 272.6,153.2 272.9,152.9 273.1,152.6 273.4,152.2 273.7,151.9 273.9,151.6 274.2,151.3 274.4,151 274.7,150.7 274.9,150.4 275.2,150.1 275.5,149.8 275.7,149.5 276,149.1 276.2,148.8 276.5,148.5 276.8,148.2 277,147.9 277.3,147.6 277.5,147.3 277.8,147 278.1,146.7 278.3,146.4 278.6,146 278.8,145.7 279.1,145.4 279.3,145.1 279.6,144.8 279.9,144.5 280.1,144.2 280.4,143.9 280.6,143.6 280.9,143.3 281.2,143 281.4,142.6 281.7,142.3 281.9,142 282.2,141.7 282.4,141.4 282.7,141.1 283,140.8 283.2,140.5 283.5,140.2 283.7,139.9 284,139.5 284.3,139.2 284.5,138.9 284.8,138.6 285,138.3 285.3,138 285.6,137.7 285.8,137.4 286.1,137.1 286.3,136.8 286.6,136.4 286.8,136.1 287.1,135.8 287.4,135.5 287.6,135.2 287.9,134.9 288.1,134.6 288.4,134.3 288.7,134 288.9,133.7 289.2,133.3 289.4,133 289.7,132.7 289.9,132.4 290.2,132.1 290.5,131.8 290.7,131.5 291,131.2 291.2,130.9 291.5,130.6 291.8,130.2 292,129.9 292.3,129.6 292.5,129.3 292.8,129 293.1,128.7 293.3,128.4 293.6,128.1 293.8,127.8 294.1,127.5 294.3,127.1 294.6,126.8 294.9,126.5 295.1,126.2 295.4,125.9 295.6,125.6 295.9,125.3 296.2,125 296.4,124.7 296.7,124.4 296.9,124.1 297.2,123.7 297.4,123.4 297.7,123.1 298,122.8 298.2,122.5 298.5,122.2 298.7,121.9 299,121.6 299.3,121.3 299.5,121 299.8,120.6 300,120.3 300.3,120 300.5,119.7 300.8,119.4 301.1,119.1 301.3,118.8 301.6,118.5 301.8,118.2 302.1,117.9 302.4,117.5 302.6,117.2 302.9,116.9 303.1,116.6 303.4,116.3 303.7,116 303.9,115.7 304.2,115.4 304.4,115.1 304.7,114.8 304.9,114.4 305.2,114.1 305.5,113.8 305.7,113.5 306,113.2 306.2,112.9 306.5,112.6 306.8,112.3 307,112 307.3,111.7 307.5,111.3 307.8,111 308,110.7 308.3,110.4 308.6,110.1 308.8,109.8 309.1,109.5 309.3,109.2 309.6,108.9 309.9,108.6 310.1,108.2 310.4,107.9 310.6,107.6 310.9,107.3 311.2,107 311.4,106.7 311.7,106.4 311.9,106.1 312.2,105.8 312.4,105.5 312.7,105.2 313,104.8 313.2,104.5 313.5,104.2 313.7,103.9 314,103.6 314.3,103.3 314.5,103 314.8,102.7 315,102.4 315.3,102.1 315.5,101.7 315.8,101.4 316.1,101.1 316.3,100.8 316.6,100.5 316.8,100.2 317.1,99.9 317.4,99.6 317.6,99.3 317.9,99 318.1,98.6 318.4,98.3 318.7,98 318.9,97.7 319.2,97.4 319.4,97.1 319.7,96.8 319.9,96.5 320.2,96.2 320.5,95.9 320.7,95.5 321,95.2 321.2,94.9 321.5,94.6 321.8,94.3 322,94 322.3,93.7 322.5,93.4 322.8,93.1 323,92.8 323.3,92.4 323.6,92.1 323.8,91.8 324.1,91.5 324.3,91.2 324.6,90.9 324.9,90.6 325.1,90.3 325.4,90 325.6,89.7 325.9,89.3 326.1,89 326.4,88.7 326.7,88.4 326.9,88.1 327.2,87.8 327.4,87.5 327.7,87.2 328,86.9 328.2,86.6 328.5,86.3 328.7,85.9 329,85.6 329.3,85.3 329.5,85 329.8,84.7 330,84.4 330.3,84.1 330.5,83.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></g><text x=\"422\" y=\"239.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">x</text><text x=\"107.8\" y=\"20\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">y</text><text x=\"214.2\" y=\"239.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"330.5\" y=\"239.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"84.8\" y=\"87.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"224.4\" y=\"135.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">y = |1 − x|</text></svg>"
+              }
+            },
+            {
+              "explain": "Triangle on \\(0\\le x\\le1\\): base 1, height \\(f(0)=1\\).",
+              "work": "\\(\\dfrac{1}{2}\\times1\\times1=0.5\\)"
+            },
+            {
+              "explain": "Triangle on \\(1\\le x\\le1.5\\): base 0.5, height \\(f(1.5)=0.5\\).",
+              "work": "\\(\\dfrac{1}{2}\\times0.5\\times0.5=0.125\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(P(X\\le1.5)=0.5+0.125=0.625\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Probability is the area under the density curve."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q21b",
+          "type": "mc",
+          "stem": "The probability density function for the continuous random variable \\(X\\) is given by \\(f(x)=\\begin{cases}|1-x|,&0\\le x\\le2\\\\ 0,&\\text{otherwise}\\end{cases}\\). Find \\(P(1\\le X\\le2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "0.5",
+            "1",
+            "0.25",
+            "0.75"
+          ],
+          "answer": 0,
+          "hint": "Probability = AREA under \\(y=|1-x|\\) from \\(x=1\\) to \\(x=2\\). On this interval \\(|1-x|=x-1\\), a straight line from height 0 to height 1: a triangle.",
+          "steps": [
+            {
+              "explain": "From \\(x=1\\) to \\(x=2\\) the density rises from \\(f(1)=0\\) to \\(f(2)=1\\): a right-angled triangle with base 1 and height 1.",
+              "work": "triangle: base 1, height 1"
+            },
+            {
+              "explain": "Area of a triangle.",
+              "work": "\\(P(1\\le X\\le2)=\\dfrac{1}{2}\\times1\\times1=0.5\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: the total area is \\(0.5+0.5=1\\) ✓ (the left triangle is also 0.5).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "The area of the triangle between the two x-values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9462,6 +9553,53 @@
             "page": "280",
             "course": "Advanced",
             "sourceQuestion": "10"
+          }
+        },
+        {
+          "id": "hurlstone2020-q27",
+          "type": "mc",
+          "stem": "The probability density function for the continuous random variable \\(X\\) is \\(f(x)=\\begin{cases}x^3-x+4,&0\\le x\\le1\\\\ 0,&\\text{otherwise}\\end{cases}\\). Find \\(E(X)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{28}{15}\\)",
+            "\\(\\dfrac{15}{28}\\)",
+            "\\(\\dfrac{4}{15}\\)",
+            "\\(\\dfrac{15}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "For a continuous variable \\(E(X)=\\int x\\,f(x)\\,dx\\) over the range where \\(f\\) is non-zero. Multiply \\(f(x)\\) by \\(x\\) FIRST, then integrate from 0 to 1.",
+          "steps": [
+            {
+              "explain": "Set up the integral.",
+              "work": "\\(E(X)=\\int_0^1x\\,(x^3-x+4)\\,dx\\)"
+            },
+            {
+              "explain": "Expand the integrand.",
+              "work": "\\(x(x^3-x+4)=x^4-x^2+4x\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(E(X)=\\left[\\dfrac{x^5}{5}-\\dfrac{x^3}{3}+2x^2\\right]_0^1\\)"
+            },
+            {
+              "explain": "Substitute the limits (\\(x=0\\) gives 0).",
+              "work": "\\(=\\dfrac{1}{5}-\\dfrac{1}{3}+2=\\dfrac{3-5+30}{15}=\\dfrac{28}{15}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Multiply the density by x, then integrate over its range."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "As printed, the function x³ − x + 4 does not integrate to 1 on [0, 1] (so it is not a true probability density function); the marking guide still computes E(X) = 28/15 as above."
           }
         }
       ]
@@ -11203,6 +11341,182 @@
           "meta": {
             "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
             "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q7",
+          "type": "mc",
+          "stem": "The continuous random variable \\(X\\) has a normal distribution with a mean of 11 and standard deviation of 2. If the random variable \\(Z\\) has the standard normal distribution, then the probability that \\(X\\) is greater than 16 is equal in value to which expression below?",
+          "difficulty": "medium",
+          "options": [
+            "\\(P(Z>2)\\)",
+            "\\(P(Z<-2.5)\\)",
+            "\\(P(Z<2.5)\\)",
+            "\\(P(Z>5)\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert to a z-score with \\(z=\\dfrac{x-\\mu}{\\sigma}\\). Then use the SYMMETRY of the standard normal curve: \\(P(Z>a)=P(Z<-a)\\).",
+          "steps": [
+            {
+              "explain": "z-score of 16.",
+              "work": "\\(z=\\dfrac{16-11}{2}=2.5\\)"
+            },
+            {
+              "explain": "So \\(P(X>16)=P(Z>2.5)\\). That exact form is not an option, so use symmetry.",
+              "work": "\\(P(X>16)=P(Z>2.5)\\)"
+            },
+            {
+              "explain": "The curve is symmetric about 0, so the area above \\(2.5\\) equals the area below \\(-2.5\\).",
+              "work": "\\(P(Z>2.5)=P(Z<-2.5)\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Why not \\(P(Z<2.5)\\)? That is the area BELOW 2.5, which is the complement.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "probability that",
+              "note": "Convert to a z-score, then use symmetry."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q26a",
+          "type": "mc",
+          "stem": "The students in a school were surveyed on the number of hours of sleep per week. The results were normally distributed with a mean of 48 hours. The survey indicated that 95% of students had between 42 and \\(x\\) hours of sleep per week. Determine the value of \\(x\\).",
+          "difficulty": "easy",
+          "options": [
+            "54",
+            "50",
+            "51",
+            "57"
+          ],
+          "answer": 0,
+          "hint": "About 95% of a normal distribution lies within 2 standard deviations of the mean, SYMMETRICALLY. The mean must be exactly halfway between 42 and \\(x\\).",
+          "steps": [
+            {
+              "explain": "95% is the range \\(\\mu\\pm2\\sigma\\) — symmetric about the mean 48.",
+              "work": "\\(\\mu-2\\sigma=42,\\qquad\\mu+2\\sigma=x\\)"
+            },
+            {
+              "explain": "The mean is the midpoint, so \\(x\\) is as far above 48 as 42 is below it.",
+              "work": "\\(48-42=6\\;\\Rightarrow\\;x=48+6=54\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: the midpoint of 42 and 54 is \\(\\dfrac{42+54}{2}=48\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine the value of",
+              "note": "95% means within 2 standard deviations, symmetric about the mean."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q26b",
+          "type": "mc",
+          "stem": "The students in a school were surveyed on the number of hours of sleep per week. The results were normally distributed with a mean of 48 hours. The survey indicated that 95% of students had between 42 and 54 hours of sleep per week. What was the standard deviation?",
+          "difficulty": "easy",
+          "options": [
+            "3 hours",
+            "6 hours",
+            "1.5 hours",
+            "12 hours"
+          ],
+          "answer": 0,
+          "hint": "From 42 to 54 is the interval \\(\\mu\\pm2\\sigma\\): its total width is \\(4\\sigma\\).",
+          "steps": [
+            {
+              "explain": "The interval has total width \\(4\\sigma\\) (2 standard deviations each side).",
+              "work": "\\(54-42=4\\sigma\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(12=4\\sigma\\;\\Rightarrow\\;\\sigma=3\\) hours → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(48\\pm2(3)=42,\\ 54\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not 6? That is HALF the width, i.e. \\(2\\sigma\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "standard deviation",
+              "note": "The width of the 95 percent interval is 4σ."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q26c",
+          "type": "mc",
+          "stem": "The students in a school were surveyed on the number of hours of sleep per week. The results were normally distributed with a mean of 48 hours. The standard deviation is 3 hours. What percentage of students would have indicated they had between 51 and 57 hours of sleep per week?",
+          "difficulty": "medium",
+          "options": [
+            "15.85%",
+            "13.5%",
+            "34%",
+            "16%"
+          ],
+          "answer": 0,
+          "hint": "Convert 51 and 57 to z-scores (\\(z=\\dfrac{x-\\mu}{\\sigma}\\)) and use the 68–95–99.7 rule: the area between \\(z=1\\) and \\(z=3\\).",
+          "steps": [
+            {
+              "explain": "z-scores.",
+              "work": "\\(z_{51}=\\dfrac{51-48}{3}=1,\\qquad z_{57}=\\dfrac{57-48}{3}=3\\)"
+            },
+            {
+              "explain": "Area from the mean to \\(z=1\\) is \\(\\dfrac{68\\%}{2}=34\\%\\); from the mean to \\(z=3\\) is \\(\\dfrac{99.7\\%}{2}=49.85\\%\\).",
+              "work": "\\(34\\%\\ \\text{and}\\ 49.85\\%\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(49.85\\%-34\\%=15.85\\%\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What percentage",
+              "note": "Use z-scores 1 and 3 and the 68–95–99.7 rule."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }

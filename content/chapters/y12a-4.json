@@ -8378,6 +8378,52 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-q12",
+          "type": "mc",
+          "stem": "Differentiate \\(e^{x\\sin x}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(e^{x\\sin x}(\\sin x+x\\cos x)\\)",
+            "\\(e^{x\\sin x}\\sin x\\)",
+            "\\(x\\sin x\\,e^{x\\sin x-1}\\)",
+            "\\(e^{x\\sin x}(\\sin x-x\\cos x)\\)"
+          ],
+          "answer": 0,
+          "hint": "The exponent is itself a PRODUCT. Use the chain rule \\(\\dfrac{d}{dx}e^{u}=e^{u}\\,u'\\) and the product rule for \\(u'\\).",
+          "steps": [
+            {
+              "explain": "Set the exponent.",
+              "work": "\\(u=x\\sin x\\)"
+            },
+            {
+              "explain": "Product rule for \\(u'\\).",
+              "work": "\\(u'=1\\cdot\\sin x+x\\cos x=\\sin x+x\\cos x\\)"
+            },
+            {
+              "explain": "Chain rule for the exponential.",
+              "work": "\\(\\dfrac{d}{dx}e^{u}=e^{u}u'\\)"
+            },
+            {
+              "explain": "Substitute back.",
+              "work": "\\(\\dfrac{d}{dx}e^{x\\sin x}=e^{x\\sin x}(\\sin x+x\\cos x)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate",
+              "note": "Chain rule, then product rule on the exponent."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

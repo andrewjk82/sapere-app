@@ -1579,6 +1579,106 @@
             "sourceQuestion": "Q10, 2019 HSC",
             "page": "143"
           }
+        },
+        {
+          "id": "hurlstone2020-q10",
+          "type": "mc",
+          "stem": "At time \\(t\\) a particle has displacement and acceleration functions \\(x(t)\\) and \\(a(t)\\). For which of the following functions is \\(x(t)\\equiv a(t)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x(t)=3\\sin(t)-e^t\\)",
+            "\\(x(t)=3\\cos(t)-e^{-t}\\)",
+            "\\(x(t)=e^t-e^{-t}\\)",
+            "\\(x(t)=3\\sin(t)-3\\cos(t)\\)"
+          ],
+          "answer": 2,
+          "hint": "Acceleration is the SECOND derivative of displacement: \\(a(t)=x''(t)\\). Differentiate each option twice and see which gives back the original function.",
+          "steps": [
+            {
+              "explain": "Acceleration.",
+              "work": "\\(a(t)=x''(t)\\)"
+            },
+            {
+              "explain": "Option A: \\(x=3\\sin t-e^t\\).",
+              "work": "\\(x'=3\\cos t-e^t,\\quad x''=-3\\sin t-e^t\\ne x\\) ✗"
+            },
+            {
+              "explain": "Option B: \\(x=3\\cos t-e^{-t}\\).",
+              "work": "\\(x'=-3\\sin t+e^{-t},\\quad x''=-3\\cos t-e^{-t}\\ne x\\) ✗"
+            },
+            {
+              "explain": "Option C: \\(x=e^t-e^{-t}\\).",
+              "work": "\\(x'=e^t+e^{-t},\\quad x''=e^t-e^{-t}=x\\) ✓"
+            },
+            {
+              "explain": "Option D: \\(x=3\\sin t-3\\cos t\\).",
+              "work": "\\(x'=3\\cos t+3\\sin t,\\quad x''=-3\\sin t+3\\cos t\\ne x\\) ✗"
+            },
+            {
+              "explain": "Only C satisfies \\(x''=x\\).",
+              "work": "<span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "acceleration functions",
+              "note": "Differentiate twice; compare with the original."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q31b",
+          "type": "mc",
+          "stem": "A particle moves in a straight line. At time \\(t\\) seconds, its displacement from the origin is \\(x\\) metres and is given by \\(x=1-\\cos2t\\). Using your graph, or otherwise, find the times when the particle is at rest and the position of the particle at these times.",
+          "difficulty": "medium",
+          "options": [
+            "\\(t=0,\\ \\dfrac{\\pi}{2},\\ \\pi;\\quad x=0,\\ 2,\\ 0\\)",
+            "\\(t=\\dfrac{\\pi}{2}\\ \\text{only};\\quad x=2\\)",
+            "\\(t=0,\\ \\pi;\\quad x=0,\\ 0\\)",
+            "\\(t=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4};\\quad x=1,\\ 1\\)"
+          ],
+          "answer": 0,
+          "hint": "At rest means the VELOCITY is zero: \\(v=\\dfrac{dx}{dt}=0\\). On the graph that is where the tangent is horizontal (turning points) — including the end points of the interval.",
+          "steps": [
+            {
+              "explain": "Velocity.",
+              "work": "\\(v=\\dfrac{dx}{dt}=2\\sin2t\\)"
+            },
+            {
+              "explain": "At rest: \\(v=0\\).",
+              "work": "\\(2\\sin2t=0\\;\\Rightarrow\\;\\sin2t=0\\)"
+            },
+            {
+              "explain": "In \\(0\\le t\\le\\pi\\) we have \\(0\\le2t\\le2\\pi\\), where sine is zero at \\(0,\\ \\pi,\\ 2\\pi\\).",
+              "work": "\\(2t=0,\\ \\pi,\\ 2\\pi\\;\\Rightarrow\\;t=0,\\ \\dfrac{\\pi}{2},\\ \\pi\\)"
+            },
+            {
+              "explain": "Positions: substitute into \\(x=1-\\cos2t\\).",
+              "work": "\\(x(0)=0,\\qquad x\\left(\\dfrac{\\pi}{2}\\right)=2,\\qquad x(\\pi)=0\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "at rest",
+              "note": "At rest means velocity zero; solve sine equal to zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2170,6 +2270,60 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
+          }
+        },
+        {
+          "id": "hurlstone2020-q29",
+          "type": "mc",
+          "stem": "A viable nest of an insect has between 100 000 to 500 000 insects. The population \\(P\\) of a nest of this insect grows exponentially so that \\(\\dfrac{dP}{dt}=1200e^{0.3t}\\). A nest of these insects has a population of 5000 after one month. Determine how long it will take the nest to reach the viable stage (i.e. when the population has reached 100 000). Give your answer correct to the nearest month.",
+          "difficulty": "hard",
+          "options": [
+            "11 months",
+            "10 months",
+            "12 months",
+            "8 months"
+          ],
+          "answer": 0,
+          "hint": "Integrate the rate to get \\(P(t)\\) (with \\(+C\\)), use \\(P(1)=5000\\) to find \\(C\\), then solve \\(P(t)=100\\,000\\) using natural logarithms. Do NOT round until the very end.",
+          "steps": [
+            {
+              "explain": "Integrate \\(e^{0.3t}\\): divide by 0.3.",
+              "work": "\\(P=\\dfrac{1200}{0.3}e^{0.3t}+C=4000e^{0.3t}+C\\)"
+            },
+            {
+              "explain": "Use \\(P=5000\\) when \\(t=1\\).",
+              "work": "\\(5000=4000e^{0.3}+C\\;\\Rightarrow\\;C=5000-4000e^{0.3}\\)"
+            },
+            {
+              "explain": "Write the model.",
+              "work": "\\(P=4000e^{0.3t}+5000-4000e^{0.3}\\)"
+            },
+            {
+              "explain": "Set \\(P=100\\,000\\) and rearrange for \\(e^{0.3t}\\).",
+              "work": "\\(100\\,000=4000e^{0.3t}+5000-4000e^{0.3}\\;\\Rightarrow\\;e^{0.3t}=\\dfrac{95\\,000+4000e^{0.3}}{4000}=25.0998\\ldots\\)"
+            },
+            {
+              "explain": "Take natural logs and solve for \\(t\\).",
+              "work": "\\(0.3t=\\ln25.0998\\ldots=3.2228\\ldots\\;\\Rightarrow\\;t=10.74\\ldots\\)"
+            },
+            {
+              "explain": "Round to the nearest month.",
+              "work": "\\(t\\approx11\\ \\text{months}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how long",
+              "note": "Integrate, use the starting data for the constant, then logs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

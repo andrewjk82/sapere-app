@@ -6968,6 +6968,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-q5",
+          "type": "mc",
+          "stem": "For what value of \\(x\\) is \\(\\log x-\\log3=\\log\\left(\\dfrac{x-3}{2}\\right)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=3\\)",
+            "\\(x=5\\)",
+            "\\(x=7\\)",
+            "\\(x=9\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine the left side with the log law \\(\\log a-\\log b=\\log\\dfrac{a}{b}\\), then 'drop the logs' (equal logs have equal insides) and solve.",
+          "steps": [
+            {
+              "explain": "Log law for subtraction.",
+              "work": "\\(\\log x-\\log3=\\log\\dfrac{x}{3}\\)"
+            },
+            {
+              "explain": "Both sides are now a single log, so the insides are equal.",
+              "work": "\\(\\dfrac{x}{3}=\\dfrac{x-3}{2}\\)"
+            },
+            {
+              "explain": "Cross-multiply.",
+              "work": "\\(2x=3(x-3)\\)"
+            },
+            {
+              "explain": "Expand and solve.",
+              "work": "\\(2x=3x-9\\;\\Rightarrow\\;x=9\\)"
+            },
+            {
+              "explain": "Check: the logs need positive inputs. \\(x=9\\): \\(\\log9-\\log3=\\log3\\) and \\(\\log\\dfrac{9-3}{2}=\\log3\\) ✓.",
+              "work": "\\(x=9\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "For what value of",
+              "note": "Subtract logs by dividing, then solve the equation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

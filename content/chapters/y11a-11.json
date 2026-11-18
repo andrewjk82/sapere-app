@@ -4904,6 +4904,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-q9",
+          "type": "mc",
+          "stem": "What are the solutions to the equation \\(2\\sin x+\\sqrt{3}=0\\) where \\(\\{x:0\\le x\\le2\\pi\\}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3}\\)",
+            "\\(\\dfrac{2\\pi}{3},\\ \\dfrac{5\\pi}{3}\\)",
+            "\\(\\dfrac{4\\pi}{3},\\ \\dfrac{5\\pi}{3}\\)",
+            "\\(\\dfrac{7\\pi}{3},\\ \\dfrac{11\\pi}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Isolate \\(\\sin x\\), find the reference angle, then use the quadrant rule (sine is NEGATIVE in quadrants 3 and 4).",
+          "steps": [
+            {
+              "explain": "Isolate the sine.",
+              "work": "\\(\\sin x=-\\dfrac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Reference angle (ignore the sign): \\(\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt{3}}{2}\\).",
+              "work": "\\(\\text{reference angle}=\\dfrac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "Sine is negative in quadrant 3 (\\(\\pi+\\text{ref}\\)) and quadrant 4 (\\(2\\pi-\\text{ref}\\)).",
+              "work": "\\(x=\\pi+\\dfrac{\\pi}{3}=\\dfrac{4\\pi}{3},\\qquad x=2\\pi-\\dfrac{\\pi}{3}=\\dfrac{5\\pi}{3}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Check the domain: both lie in \\([0,2\\pi]\\) ✓ (\\(\\dfrac{7\\pi}{3}\\) and \\(\\dfrac{11\\pi}{3}\\) are bigger than \\(2\\pi\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "solutions to the equation",
+              "note": "Isolate sine; negative sine means quadrants 3 and 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
