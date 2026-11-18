@@ -3288,7 +3288,7 @@
           "keyPoints": [
             {
               "text": "What direction is Dark Forest from Big Mountain?",
-              "note": "Moving straight down on the map is south (S). Start at Big Mountain and trace on the map."
+              "note": "Start at Big Mountain and check the compass rose (N = up, S = down, E = right, W = left) to see which direction leads to Dark Forest."
             }
           ],
           "solution": "Starting at Big Mountain and moving south leads to Dark Forest, so the answer is south.",
