@@ -7,12 +7,14 @@ const SLOW_AFTER_MS = 10000;
 // code, a hung request…) — instead of an endless black spinner the student gets a way out.
 // "Fix and reload" drops the app's own cached copies (service worker, Cache Storage, our localStorage cache) and
 // reloads from the network; it never touches notes or homework drafts (IndexedDB) or the login.
-const LoadingScreen = () => {
+const LoadingScreen = ({ detail = '' }) => {
   const [slow, setSlow] = useState(false);
+  const [secs, setSecs] = useState(0);
   const [busy, setBusy] = useState(false);
   useEffect(() => {
     const timer = window.setTimeout(() => setSlow(true), SLOW_AFTER_MS);
-    return () => window.clearTimeout(timer);
+    const tick = window.setInterval(() => setSecs((n) => n + 1), 1000);
+    return () => { window.clearTimeout(timer); window.clearInterval(tick); };
   }, []);
 
   const reload = () => {
@@ -43,6 +45,11 @@ const LoadingScreen = () => {
         <div role="status" style={{ marginTop: 24, maxWidth: 340, textAlign: 'center', color: '#ddd6fe' }}>
           <div style={{ fontWeight: 800, fontSize: '1rem', marginBottom: 6 }}>This is taking longer than usual</div>
           <div style={{ fontSize: '0.85rem', opacity: 0.85, marginBottom: 14 }}>Check your internet connection, then try again.</div>
+          {detail && (
+            <div style={{ fontSize: '0.75rem', opacity: 0.7, marginBottom: 14 }}>
+              {detail} · {secs}s · {typeof navigator !== 'undefined' && navigator.onLine === false ? 'offline' : 'online'}
+            </div>
+          )}
           <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
             <button type="button" onClick={reload} disabled={busy} style={{ padding: '10px 18px', borderRadius: 12, border: 0, background: '#7c3aed', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Reload</button>
             <button type="button" onClick={fixAndReload} disabled={busy} style={{ padding: '10px 18px', borderRadius: 12, border: '1.5px solid #a78bfa', background: 'transparent', color: '#ddd6fe', fontWeight: 800, cursor: 'pointer' }}>{busy ? 'Working…' : 'Fix and reload'}</button>
