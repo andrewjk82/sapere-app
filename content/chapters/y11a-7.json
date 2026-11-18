@@ -3821,6 +3821,52 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "ascham2020-adv-q2",
+          "type": "mc",
+          "stem": "What is the gradient of the normal to the tangent line \\(x - 2y + 1 = 0\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(-2\\)",
+            "\\(2\\)"
+          ],
+          "answer": 2,
+          "hint": "First find the gradient of the tangent line by writing it as \\(y = mx + c\\). The normal is PERPENDICULAR, so its gradient is the negative reciprocal \\(-\\dfrac{1}{m}\\).",
+          "steps": [
+            {
+              "explain": "Make \\(y\\) the subject of the tangent line.",
+              "work": "\\(x-2y+1=0\\;\\Rightarrow\\;2y=x+1\\;\\Rightarrow\\;y=\\dfrac{1}{2}x+\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Read the gradient (coefficient of \\(x\\)) of the tangent.",
+              "work": "\\(m_1=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "A normal is perpendicular to the tangent, so \\(m_1m_2=-1\\).",
+              "work": "\\(\\dfrac{1}{2}\\times m_2=-1\\)"
+            },
+            {
+              "explain": "Solve for \\(m_2\\): multiply both sides by 2 (the negative reciprocal).",
+              "work": "\\(m_2=-2\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "gradient of the normal",
+              "note": "Normal gradient = negative reciprocal of the tangent gradient."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

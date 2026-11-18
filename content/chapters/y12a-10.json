@@ -128,59 +128,6 @@
           "xp": 2
         },
         {
-          "id": "ascham2020-q05",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Ascham School collected data on the reasons given by students for being late to school. The Pareto chart shows the data collected. Approximately what percentage of students gave the reasons “Traffic” or “Sport training”?",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 700 410\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"410\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"70\" y1=\"325.0\" x2=\"660\" y2=\"325.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><line x1=\"70\" y1=\"301.0\" x2=\"660\" y2=\"301.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"305.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >20</text><line x1=\"70\" y1=\"277.0\" x2=\"660\" y2=\"277.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"281.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >40</text><line x1=\"70\" y1=\"253.0\" x2=\"660\" y2=\"253.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"257.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >60</text><line x1=\"70\" y1=\"229.0\" x2=\"660\" y2=\"229.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"233.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >80</text><line x1=\"70\" y1=\"205.0\" x2=\"660\" y2=\"205.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"209.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >100</text><line x1=\"70\" y1=\"181.0\" x2=\"660\" y2=\"181.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"185.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >120</text><line x1=\"70\" y1=\"157.0\" x2=\"660\" y2=\"157.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"161.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >140</text><line x1=\"70\" y1=\"133.0\" x2=\"660\" y2=\"133.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"137.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >160</text><line x1=\"70\" y1=\"109.0\" x2=\"660\" y2=\"109.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"113.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >180</text><line x1=\"70\" y1=\"85.0\" x2=\"660\" y2=\"85.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"89.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >200</text><rect x=\"100\" y=\"235.0\" width=\"46\" height=\"90.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"118\" y=\"337\" transform=\"rotate(-55 118 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Public transport</text><rect x=\"178\" y=\"283.0\" width=\"46\" height=\"42.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"196\" y=\"337\" transform=\"rotate(-55 196 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Traffic</text><rect x=\"256\" y=\"289.0\" width=\"46\" height=\"36.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"274\" y=\"337\" transform=\"rotate(-55 274 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Sport training</text><rect x=\"334\" y=\"295.0\" width=\"46\" height=\"30.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"352\" y=\"337\" transform=\"rotate(-55 352 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Appointment</text><rect x=\"412\" y=\"301.0\" width=\"46\" height=\"24.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"430\" y=\"337\" transform=\"rotate(-55 430 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Music lesson</text><rect x=\"490\" y=\"313.0\" width=\"46\" height=\"12.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"508\" y=\"337\" transform=\"rotate(-55 508 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Overslept</text><rect x=\"568\" y=\"319.0\" width=\"46\" height=\"6.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"586\" y=\"337\" transform=\"rotate(-55 586 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Weather</text><polyline points=\"123,235.0 201,193.0 279,157.0 357,127.0 435,103.0 513,91.0 591,85.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"123\" cy=\"235.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"201\" cy=\"193.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"279\" cy=\"157.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"357\" cy=\"127.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"435\" cy=\"103.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"513\" cy=\"91.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"591\" cy=\"85.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><text x=\"350\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\" >Reasons for being late to school</text></svg>"
-          },
-          "options": [
-            "23%",
-            "33%",
-            "65%",
-            "70%"
-          ],
-          "answer": 1,
-          "hint": "Add the two bar counts for Traffic and Sport training, then divide by the total count.",
-          "keyPoints": [
-            {
-              "text": "“Traffic” or “Sport training”",
-              "note": "Add the two category frequencies from the Pareto chart, then divide by the total number of students."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Read the two relevant bars: Traffic is about 35 students and Sport training is about 30. The total across all bars is about 200.",
-              "work": "\\(35+30=65,\\quad N=75+35+30+25+20+10+5=200\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 700 410\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"410\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"70\" y1=\"325.0\" x2=\"660\" y2=\"325.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"329.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><line x1=\"70\" y1=\"301.0\" x2=\"660\" y2=\"301.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"305.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >20</text><line x1=\"70\" y1=\"277.0\" x2=\"660\" y2=\"277.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"281.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >40</text><line x1=\"70\" y1=\"253.0\" x2=\"660\" y2=\"253.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"257.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >60</text><line x1=\"70\" y1=\"229.0\" x2=\"660\" y2=\"229.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"233.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >80</text><line x1=\"70\" y1=\"205.0\" x2=\"660\" y2=\"205.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"209.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >100</text><line x1=\"70\" y1=\"181.0\" x2=\"660\" y2=\"181.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"185.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >120</text><line x1=\"70\" y1=\"157.0\" x2=\"660\" y2=\"157.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"161.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >140</text><line x1=\"70\" y1=\"133.0\" x2=\"660\" y2=\"133.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"137.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >160</text><line x1=\"70\" y1=\"109.0\" x2=\"660\" y2=\"109.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"113.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >180</text><line x1=\"70\" y1=\"85.0\" x2=\"660\" y2=\"85.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" /><text x=\"58\" y=\"89.0\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >200</text><rect x=\"100\" y=\"235.0\" width=\"46\" height=\"90.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"118\" y=\"337\" transform=\"rotate(-55 118 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Public transport</text><rect x=\"178\" y=\"283.0\" width=\"46\" height=\"42.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"196\" y=\"337\" transform=\"rotate(-55 196 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Traffic</text><rect x=\"256\" y=\"289.0\" width=\"46\" height=\"36.0\" fill=\"#fb923c\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"274\" y=\"337\" transform=\"rotate(-55 274 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Sport training</text><rect x=\"334\" y=\"295.0\" width=\"46\" height=\"30.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"352\" y=\"337\" transform=\"rotate(-55 352 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Appointment</text><rect x=\"412\" y=\"301.0\" width=\"46\" height=\"24.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"430\" y=\"337\" transform=\"rotate(-55 430 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Music lesson</text><rect x=\"490\" y=\"313.0\" width=\"46\" height=\"12.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"508\" y=\"337\" transform=\"rotate(-55 508 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Overslept</text><rect x=\"568\" y=\"319.0\" width=\"46\" height=\"6.0\" fill=\"#38bdf8\" stroke=\"#0369a1\" stroke-width=\"1\" /><text x=\"586\" y=\"337\" transform=\"rotate(-55 586 337)\" font-family=\"Arial\" font-size=\"11\" fill=\"#334155\">Weather</text><polyline points=\"123,235.0 201,193.0 279,157.0 357,127.0 435,103.0 513,91.0 591,85.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"123\" cy=\"235.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"201\" cy=\"193.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"279\" cy=\"157.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"357\" cy=\"127.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"435\" cy=\"103.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"513\" cy=\"91.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><circle cx=\"591\" cy=\"85.0\" r=\"3\" fill=\"#1d4ed8\" stroke=\"#1d4ed8\" stroke-width=\"1\"/><text x=\"350\" y=\"27\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\" >Reasons for being late to school</text></svg>"
-              }
-            },
-            {
-              "explain": "A percentage is the part divided by the whole, multiplied by 100.",
-              "work": "\\(\\frac{65}{200}\\times100\\%=32.5\\%\\)"
-            },
-            {
-              "explain": "The closest listed percentage is 33%. The cumulative line is not the value to add here; use the bar counts.",
-              "work": "\\(32.5\\%\\approx33\\%\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 5,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y12a-9A"
-          }
-        },
-        {
           "id": "hg2020-q7",
           "type": "mc",
           "difficulty": "hard",
@@ -459,57 +406,6 @@
             }
           ],
           "timeLimit": 60
-        },
-        {
-          "id": "ascham2020-q04",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "A set of data has a lower quartile of 22 and an upper quartile of 32. What is the maximum possible range for this set of data if there are no outliers?",
-          "options": [
-            "7",
-            "10",
-            "40",
-            "47"
-          ],
-          "answer": 2,
-          "hint": "Calculate the interquartile range first, then use the two 1.5 IQR fences.",
-          "keyPoints": [
-            {
-              "text": "maximum possible range",
-              "note": "Find the IQR, then locate the lower and upper 1.5-IQR fences; the largest range spans those fences."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "The interquartile range measures the distance from the lower quartile to the upper quartile.",
-              "work": "\\(\\mathrm{IQR}=Q_3-Q_1=32-22=10\\)"
-            },
-            {
-              "explain": "With no outliers, the smallest value can be as low as the lower fence.",
-              "work": "\\(Q_1-1.5(\\mathrm{IQR})=22-15=7\\)"
-            },
-            {
-              "explain": "The largest value can be as high as the upper fence.",
-              "work": "\\(Q_3+1.5(\\mathrm{IQR})=32+15=47\\)"
-            },
-            {
-              "explain": "The greatest possible range is upper fence minus lower fence.",
-              "work": "\\(47-7=40\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 4,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y12a-9C"
-          }
         },
         {
           "id": "y12a-advanced-005-p260-q01",
@@ -6952,243 +6848,6 @@
           }
         },
         {
-          "id": "ascham2020-q10",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Consider the cumulative distribution function: \\(F(x)=0\\) for \\((−\\infty,0)\\), \\(F(x)=\\sin(\\frac{x}{2})\\) for \\([0,b]\\), and \\(F(x)=1\\) for \\((b,\\infty)\\). Find \\(b\\).",
-          "options": [
-            "\\(b=\\frac{\\pi}{2}\\)",
-            "\\(b=\\pi\\)",
-            "\\(b=2\\pi\\)",
-            "\\(b=4\\pi\\)"
-          ],
-          "answer": 1,
-          "hint": "At the end of the middle interval, the cumulative probability must have reached 1.",
-          "keyPoints": [
-            {
-              "text": "Find \\(b\\)",
-              "note": "Use continuity at the right endpoint: the middle formula must reach 1 when x=b."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "A cumulative distribution function must join the middle formula to the constant value 1 at \\(x=b\\).",
-              "work": "\\(F(b)=\\sin\\left(\\frac b2\\right)=1\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><line x1=\"85\" y1=\"318.0\" x2=\"85\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"160\" y1=\"318.0\" x2=\"160\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"235\" y1=\"318.0\" x2=\"235\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"310\" y1=\"318.0\" x2=\"310\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"385\" y1=\"318.0\" x2=\"385\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"460\" y1=\"318.0\" x2=\"460\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"535\" y1=\"318.0\" x2=\"535\" y2=\"52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"85\" y1=\"280\" x2=\"535\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"85\" y1=\"90\" x2=\"535\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"85\" y1=\"280\" x2=\"535\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"160\" y1=\"318.0\" x2=\"160\" y2=\"52.0\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"85\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >-1</text><text x=\"235\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >1</text><text x=\"385\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >3</text><text x=\"535\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >5</text><polyline points=\"160.0,280.0 162.9,276.3 165.9,272.5 168.8,268.8 171.8,265.1 174.7,261.4 177.7,257.7 180.6,254.0 183.6,250.3 186.5,246.6 189.5,242.9 192.4,239.3 195.3,235.6 198.3,232.0 201.2,228.4 204.2,224.8 207.1,221.3 210.1,217.8 213.0,214.2 216.0,210.8 218.9,207.3 221.9,203.9 224.8,200.5 227.7,197.1 230.7,193.7 233.6,190.4 236.6,187.2 239.5,183.9 242.5,180.7 245.4,177.6 248.4,174.4 251.3,171.4 254.2,168.3 257.2,165.3 260.1,162.4 263.1,159.5 266.0,156.6 269.0,153.8 271.9,151.0 274.9,148.3 277.8,145.6 280.8,143.0 283.7,140.5 286.6,138.0 289.6,135.5 292.5,133.1 295.5,130.8 298.4,128.5 301.4,126.3 304.3,124.1 307.3,122.0 310.2,120.0 313.2,118.0 316.1,116.1 319.0,114.2 322.0,112.4 324.9,110.7 327.9,109.0 330.8,107.5 333.8,105.9 336.7,104.5 339.7,103.1 342.6,101.7 345.6,100.5 348.5,99.3 351.4,98.2 354.4,97.1 357.3,96.2 360.3,95.2 363.2,94.4 366.2,93.7 369.1,93.0 372.1,92.3 375.0,91.8 377.9,91.3 380.9,90.9 383.8,90.6 386.8,90.3 389.7,90.1 392.7,90.0 395.6,90.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"395.6194490192345\" y1=\"90\" x2=\"520\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"3\" /><circle cx=\"395.6194490192345\" cy=\"90\" r=\"5\" fill=\"#16a34a\" stroke=\"#16a34a\" stroke-width=\"1\"/><text x=\"395.6194490192345\" y=\"73\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#15803d\" >(b,1)</text><text x=\"540\" y=\"285\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >x</text><text x=\"164\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#334155\" >F(x)</text></svg>"
-              }
-            },
-            {
-              "explain": "The first positive angle whose sine is 1 is \\(\\pi/2\\). Thus the input angle \\(b/2\\) equals \\(\\pi/2\\).",
-              "work": "\\(\\frac b2=\\frac\\pi2\\)"
-            },
-            {
-              "explain": "Multiply both sides by 2.",
-              "work": "\\(b=\\pi\\)"
-            },
-            {
-              "explain": "The matching choice is B.",
-              "work": "\\(\\boxed{b=\\pi}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 10,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y12a-10B"
-          }
-        },
-        {
-          "id": "ascham2020-q31",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "The waiting time X (in minutes) for an ambulance after a 000 call has density \\(f(x)=ax(10-x)\\) for \\(0\\le x\\le10\\), and \\(f(x)=0\\) otherwise.",
-          "parts": [
-            {
-              "id": "ascham2020-q31a",
-              "type": "review",
-              "difficulty": "medium",
-              "stem": "Show that the value of \\(a\\) is \\(\\frac3{500}\\).",
-              "answer": "",
-              "manual": true,
-              "hint": "A probability density has total area 1 over its support; integrate from 0 to 10 and solve for a.",
-              "keyPoints": [
-                {
-                  "text": "value of",
-                  "note": "A probability density has total area 1 over its support; integrate from 0 to 10 and solve for a."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Because the density is zero outside 0≤x≤10, the total probability is the integral over this interval.",
-                  "work": "\\(\\int_0^{10}ax(10-x)\\,dx=1\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"120\" y1=\"289.0\" x2=\"120\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"170\" y1=\"289.0\" x2=\"170\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"220\" y1=\"289.0\" x2=\"220\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"270\" y1=\"289.0\" x2=\"270\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"320\" y1=\"289.0\" x2=\"320\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"370\" y1=\"289.0\" x2=\"370\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"420\" y1=\"289.0\" x2=\"420\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"470\" y1=\"289.0\" x2=\"470\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"520\" y1=\"289.0\" x2=\"520\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"570\" y1=\"289.0\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"262\" x2=\"570\" y2=\"262\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"244\" x2=\"570\" y2=\"244\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"226\" x2=\"570\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"208\" x2=\"570\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"190\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"70\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><text x=\"170\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"270\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"370\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><text x=\"470\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >8</text><text x=\"570\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >10</text><text x=\"55\" y=\"248\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"55\" y=\"212\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><polyline points=\"70.0,280.0 75.0,279.9 80.0,279.8 85.0,279.7 90.0,279.6 95.0,279.5 100.0,279.4 105.0,279.3 110.0,279.2 115.0,279.1 120.0,279.0 125.0,278.9 130.0,278.9 135.0,278.8 140.0,278.7 145.0,278.6 150.0,278.5 155.0,278.5 160.0,278.4 165.0,278.3 170.0,278.3 175.0,278.2 180.0,278.1 185.0,278.1 190.0,278.0 195.0,278.0 200.0,277.9 205.0,277.9 210.0,277.8 215.0,277.8 220.0,277.7 225.0,277.7 230.0,277.6 235.0,277.6 240.0,277.6 245.0,277.5 250.0,277.5 255.0,277.5 260.0,277.5 265.0,277.4 270.0,277.4 275.0,277.4 280.0,277.4 285.0,277.4 290.0,277.3 295.0,277.3 300.0,277.3 305.0,277.3 310.0,277.3 315.0,277.3 320.0,277.3 325.0,277.3 330.0,277.3 335.0,277.3 340.0,277.3 345.0,277.3 350.0,277.3 355.0,277.4 360.0,277.4 365.0,277.4 370.0,277.4 375.0,277.4 380.0,277.5 385.0,277.5 390.0,277.5 395.0,277.5 400.0,277.6 405.0,277.6 410.0,277.6 415.0,277.7 420.0,277.7 425.0,277.8 430.0,277.8 435.0,277.9 440.0,277.9 445.0,278.0 450.0,278.0 455.0,278.1 460.0,278.1 465.0,278.2 470.0,278.3 475.0,278.3 480.0,278.4 485.0,278.5 490.0,278.5 495.0,278.6 500.0,278.7 505.0,278.8 510.0,278.9 515.0,278.9 520.0,279.0 525.0,279.1 530.0,279.2 535.0,279.3 540.0,279.4 545.0,279.5 550.0,279.6 555.0,279.7 560.0,279.8 565.0,279.9 570.0,280.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"330\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#2563eb\" >f(x) = (3/500)x(10−x)</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Expand the integrand and integrate term by term.",
-                  "work": "\\(a\\int_0^{10}(10x-x^2)dx=a\\left[5x^2-\\frac{x^3}{3}\\right]_0^{10}\\)"
-                },
-                {
-                  "explain": "Evaluate at 10 and 0.",
-                  "work": "\\(a\\left(500-\\frac{1000}{3}\\right)=a\\left(\\frac{500}{3}\\right)=1\\)"
-                },
-                {
-                  "explain": "Solve for a.",
-                  "work": "\\(a=\\frac3{500}\\)"
-                },
-                {
-                  "explain": "Thus the normalized density uses the stated constant.",
-                  "work": "\\(\\boxed{a=\\frac3{500}}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 31,
-                "sourcePart": "a",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10B"
-              }
-            },
-            {
-              "id": "ascham2020-q31b",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Find the cumulative distribution function.",
-              "options": [
-                "\\(F(x)=\\begin{cases}0,&x<0\\\\\\frac{15x^2-x^3}{500},&0\\le x\\le10\\\\ 1,&x>10\\end{cases}\\)",
-                "\\(F(x)=\\frac{3x(10-x)}{500}\\)",
-                "\\(F(x)=\\begin{cases}0,&x<0\\\\\\frac{15x^2-x^3}{500},&0\\le x\\le10\\\\ 0,&x>10\\end{cases}\\)",
-                "\\(F(x)=\\frac{3x^2}{500}\\)"
-              ],
-              "answer": 0,
-              "hint": "Integrate the density from the lower support endpoint 0 to x, and attach the outside-support values.",
-              "keyPoints": [
-                {
-                  "text": "cumulative distribution function",
-                  "note": "Integrate the density from the lower support endpoint 0 to x and include the values outside the support."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "For x<0, no waiting time values have accumulated, so F(x)=0. For 0≤x≤10, integrate the density.",
-                  "work": "\\(F(x)=\\int_0^x\\frac3{500}t(10-t)\\,dt\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"120\" y1=\"289.0\" x2=\"120\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"170\" y1=\"289.0\" x2=\"170\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"220\" y1=\"289.0\" x2=\"220\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"270\" y1=\"289.0\" x2=\"270\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"320\" y1=\"289.0\" x2=\"320\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"370\" y1=\"289.0\" x2=\"370\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"420\" y1=\"289.0\" x2=\"420\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"470\" y1=\"289.0\" x2=\"470\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"520\" y1=\"289.0\" x2=\"520\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"570\" y1=\"289.0\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"262\" x2=\"570\" y2=\"262\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"244\" x2=\"570\" y2=\"244\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"226\" x2=\"570\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"208\" x2=\"570\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"190\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"70\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><text x=\"170\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"270\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"370\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><text x=\"470\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >8</text><text x=\"570\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >10</text><text x=\"55\" y=\"248\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"55\" y=\"212\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><polyline points=\"70.0,280.0 75.0,279.9 80.0,279.8 85.0,279.7 90.0,279.6 95.0,279.5 100.0,279.4 105.0,279.3 110.0,279.2 115.0,279.1 120.0,279.0 125.0,278.9 130.0,278.9 135.0,278.8 140.0,278.7 145.0,278.6 150.0,278.5 155.0,278.5 160.0,278.4 165.0,278.3 170.0,278.3 175.0,278.2 180.0,278.1 185.0,278.1 190.0,278.0 195.0,278.0 200.0,277.9 205.0,277.9 210.0,277.8 215.0,277.8 220.0,277.7 225.0,277.7 230.0,277.6 235.0,277.6 240.0,277.6 245.0,277.5 250.0,277.5 255.0,277.5 260.0,277.5 265.0,277.4 270.0,277.4 275.0,277.4 280.0,277.4 285.0,277.4 290.0,277.3 295.0,277.3 300.0,277.3 305.0,277.3 310.0,277.3 315.0,277.3 320.0,277.3 325.0,277.3 330.0,277.3 335.0,277.3 340.0,277.3 345.0,277.3 350.0,277.3 355.0,277.4 360.0,277.4 365.0,277.4 370.0,277.4 375.0,277.4 380.0,277.5 385.0,277.5 390.0,277.5 395.0,277.5 400.0,277.6 405.0,277.6 410.0,277.6 415.0,277.7 420.0,277.7 425.0,277.8 430.0,277.8 435.0,277.9 440.0,277.9 445.0,278.0 450.0,278.0 455.0,278.1 460.0,278.1 465.0,278.2 470.0,278.3 475.0,278.3 480.0,278.4 485.0,278.5 490.0,278.5 495.0,278.6 500.0,278.7 505.0,278.8 510.0,278.9 515.0,278.9 520.0,279.0 525.0,279.1 530.0,279.2 535.0,279.3 540.0,279.4 545.0,279.5 550.0,279.6 555.0,279.7 560.0,279.8 565.0,279.9 570.0,280.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"330\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#2563eb\" >f(x) = (3/500)x(10−x)</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Expand before integrating.",
-                  "work": "\\(F(x)=\\frac3{500}\\int_0^x(10t-t^2)dt=\\frac3{500}\\left[5t^2-\\frac{t^3}{3}\\right]_0^x\\)"
-                },
-                {
-                  "explain": "Substitute the limits and simplify.",
-                  "work": "\\(F(x)=\\frac3{500}\\left(5x^2-\\frac{x^3}{3}\\right)=\\frac{15x^2-x^3}{500}\\)"
-                },
-                {
-                  "explain": "For x>10, the entire density area has accumulated, so F(x)=1.",
-                  "work": "\\(F(x)=\\begin{cases}0,&x<0\\\\\\dfrac{15x^2-x^3}{500},&0\\le x\\le10\\\\ 1,&x>10\\end{cases}\\)"
-                },
-                {
-                  "explain": "This piecewise function is the cumulative distribution.",
-                  "work": "\\(\\boxed{F(x)=0,\\frac{15x^2-x^3}{500},1\\text{ on the three stated intervals}}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 31,
-                "sourcePart": "b",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10B"
-              }
-            },
-            {
-              "id": "ascham2020-q31c",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Find the probability, as a decimal, that a person will have to wait more than 7 minutes.",
-              "options": [
-                "0.216",
-                "0.784",
-                "0.300",
-                "0.500"
-              ],
-              "answer": 0,
-              "hint": "Integrate the density over the tail from 7 to 10, or calculate 1−F(7).",
-              "keyPoints": [
-                {
-                  "text": "wait more than 7 minutes",
-                  "note": "Find the upper-tail probability by integrating from 7 to 10 or by calculating 1−F(7)."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Waiting more than 7 minutes is the area under the density from 7 to the maximum wait 10.",
-                  "work": "\\(P(X>7)=\\int_7^{10}\\frac3{500}x(10-x)\\,dx\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"120\" y1=\"289.0\" x2=\"120\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"170\" y1=\"289.0\" x2=\"170\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"220\" y1=\"289.0\" x2=\"220\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"270\" y1=\"289.0\" x2=\"270\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"320\" y1=\"289.0\" x2=\"320\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"370\" y1=\"289.0\" x2=\"370\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"420\" y1=\"289.0\" x2=\"420\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"470\" y1=\"289.0\" x2=\"470\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"520\" y1=\"289.0\" x2=\"520\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"570\" y1=\"289.0\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"262\" x2=\"570\" y2=\"262\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"244\" x2=\"570\" y2=\"244\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"226\" x2=\"570\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"208\" x2=\"570\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"190\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"70\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><text x=\"170\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"270\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"370\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><text x=\"470\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >8</text><text x=\"570\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >10</text><text x=\"55\" y=\"248\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"55\" y=\"212\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><polyline points=\"70.0,280.0 75.0,279.9 80.0,279.8 85.0,279.7 90.0,279.6 95.0,279.5 100.0,279.4 105.0,279.3 110.0,279.2 115.0,279.1 120.0,279.0 125.0,278.9 130.0,278.9 135.0,278.8 140.0,278.7 145.0,278.6 150.0,278.5 155.0,278.5 160.0,278.4 165.0,278.3 170.0,278.3 175.0,278.2 180.0,278.1 185.0,278.1 190.0,278.0 195.0,278.0 200.0,277.9 205.0,277.9 210.0,277.8 215.0,277.8 220.0,277.7 225.0,277.7 230.0,277.6 235.0,277.6 240.0,277.6 245.0,277.5 250.0,277.5 255.0,277.5 260.0,277.5 265.0,277.4 270.0,277.4 275.0,277.4 280.0,277.4 285.0,277.4 290.0,277.3 295.0,277.3 300.0,277.3 305.0,277.3 310.0,277.3 315.0,277.3 320.0,277.3 325.0,277.3 330.0,277.3 335.0,277.3 340.0,277.3 345.0,277.3 350.0,277.3 355.0,277.4 360.0,277.4 365.0,277.4 370.0,277.4 375.0,277.4 380.0,277.5 385.0,277.5 390.0,277.5 395.0,277.5 400.0,277.6 405.0,277.6 410.0,277.6 415.0,277.7 420.0,277.7 425.0,277.8 430.0,277.8 435.0,277.9 440.0,277.9 445.0,278.0 450.0,278.0 455.0,278.1 460.0,278.1 465.0,278.2 470.0,278.3 475.0,278.3 480.0,278.4 485.0,278.5 490.0,278.5 495.0,278.6 500.0,278.7 505.0,278.8 510.0,278.9 515.0,278.9 520.0,279.0 525.0,279.1 530.0,279.2 535.0,279.3 540.0,279.4 545.0,279.5 550.0,279.6 555.0,279.7 560.0,279.8 565.0,279.9 570.0,280.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"330\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#2563eb\" >f(x) = (3/500)x(10−x)</text></svg>"
-                  }
-                },
-                {
-                  "explain": "An antiderivative is \\((15x^2-x^3)/500\\). Evaluate it at 10 and 7.",
-                  "work": "\\(P(X>7)=\\left[\\frac{15x^2-x^3}{500}\\right]_7^{10}\\)"
-                },
-                {
-                  "explain": "At x=10 the CDF is 1. At x=7 it is (735−343)/500=392/500=0.784.",
-                  "work": "\\(F(10)=1,\\quad F(7)=\\frac{392}{500}=0.784\\)"
-                },
-                {
-                  "explain": "Subtract the accumulated probability up to 7 from 1.",
-                  "work": "\\(P(X>7)=1-0.784=\\boxed{0.216}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 31,
-                "sourcePart": "c",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10B"
-              }
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "sourcePaper": "Ascham 2020 2U Trials",
-            "sourceQuestion": 31
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 390\" role=\"img\"><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"120\" y1=\"289.0\" x2=\"120\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"170\" y1=\"289.0\" x2=\"170\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"220\" y1=\"289.0\" x2=\"220\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"270\" y1=\"289.0\" x2=\"270\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"320\" y1=\"289.0\" x2=\"320\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"370\" y1=\"289.0\" x2=\"370\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"420\" y1=\"289.0\" x2=\"420\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"470\" y1=\"289.0\" x2=\"470\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"520\" y1=\"289.0\" x2=\"520\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"570\" y1=\"289.0\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"262\" x2=\"570\" y2=\"262\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"244\" x2=\"570\" y2=\"244\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"226\" x2=\"570\" y2=\"226\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"208\" x2=\"570\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"190\" x2=\"570\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\" /><line x1=\"70\" y1=\"280\" x2=\"570\" y2=\"280\" stroke=\"#334155\" stroke-width=\"2\" /><line x1=\"70\" y1=\"289.0\" x2=\"70\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" /><text x=\"70\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >0</text><text x=\"170\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"270\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><text x=\"370\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >6</text><text x=\"470\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >8</text><text x=\"570\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >10</text><text x=\"55\" y=\"248\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >2</text><text x=\"55\" y=\"212\" text-anchor=\"end\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >4</text><polyline points=\"70.0,280.0 75.0,279.9 80.0,279.8 85.0,279.7 90.0,279.6 95.0,279.5 100.0,279.4 105.0,279.3 110.0,279.2 115.0,279.1 120.0,279.0 125.0,278.9 130.0,278.9 135.0,278.8 140.0,278.7 145.0,278.6 150.0,278.5 155.0,278.5 160.0,278.4 165.0,278.3 170.0,278.3 175.0,278.2 180.0,278.1 185.0,278.1 190.0,278.0 195.0,278.0 200.0,277.9 205.0,277.9 210.0,277.8 215.0,277.8 220.0,277.7 225.0,277.7 230.0,277.6 235.0,277.6 240.0,277.6 245.0,277.5 250.0,277.5 255.0,277.5 260.0,277.5 265.0,277.4 270.0,277.4 275.0,277.4 280.0,277.4 285.0,277.4 290.0,277.3 295.0,277.3 300.0,277.3 305.0,277.3 310.0,277.3 315.0,277.3 320.0,277.3 325.0,277.3 330.0,277.3 335.0,277.3 340.0,277.3 345.0,277.3 350.0,277.3 355.0,277.4 360.0,277.4 365.0,277.4 370.0,277.4 375.0,277.4 380.0,277.5 385.0,277.5 390.0,277.5 395.0,277.5 400.0,277.6 405.0,277.6 410.0,277.6 415.0,277.7 420.0,277.7 425.0,277.8 430.0,277.8 435.0,277.9 440.0,277.9 445.0,278.0 450.0,278.0 455.0,278.1 460.0,278.1 465.0,278.2 470.0,278.3 475.0,278.3 480.0,278.4 485.0,278.5 490.0,278.5 495.0,278.6 500.0,278.7 505.0,278.8 510.0,278.9 515.0,278.9 520.0,279.0 525.0,279.1 530.0,279.2 535.0,279.3 540.0,279.4 545.0,279.5 550.0,279.6 555.0,279.7 560.0,279.8 565.0,279.9 570.0,280.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"330\" y=\"35\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#2563eb\" >f(x) = (3/500)x(10−x)</text></svg>"
-          },
-          "manual": true
-        },
-        {
           "id": "y12a-advanced-005-p279-q01",
           "type": "mc",
           "difficulty": "medium",
@@ -8535,6 +8194,189 @@
             "course": "Advanced",
             "sourceQuestion": "14"
           }
+        },
+        {
+          "id": "ascham2020-adv-q10",
+          "type": "mc",
+          "stem": "Consider the cumulative distribution function: \\(F(x)=\\begin{cases}0,&(-\\infty,0)\\\\ \\sin\\left(\\dfrac{x}{2}\\right),&[0,b]\\\\ 1,&(b,\\infty)\\end{cases}\\) Find \\(b\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(b=\\dfrac{\\pi}{2}\\)",
+            "\\(b=\\pi\\)",
+            "\\(b=2\\pi\\)",
+            "\\(b=4\\pi\\)"
+          ],
+          "answer": 1,
+          "hint": "A cumulative distribution function climbs from 0 up to 1 and then STAYS at 1. The middle piece must reach 1 exactly at \\(x=b\\).",
+          "steps": [
+            {
+              "explain": "The CDF is continuous: at \\(x=b\\) the middle piece must join the value 1.",
+              "work": "\\(F(b)=1\\)"
+            },
+            {
+              "explain": "Substitute \\(F(b)=\\sin\\dfrac{b}{2}\\).",
+              "work": "\\(\\sin\\left(\\dfrac{b}{2}\\right)=1\\)"
+            },
+            {
+              "explain": "The first positive angle with sine equal to 1 is \\(\\dfrac{\\pi}{2}\\) (a CDF is increasing, so take the FIRST time it reaches 1).",
+              "work": "\\(\\dfrac{b}{2}=\\dfrac{\\pi}{2}\\)"
+            },
+            {
+              "explain": "Multiply by 2.",
+              "work": "\\(b=\\pi\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "cumulative distribution function",
+              "note": "F rises to 1 and then stays 1: solve F(b) = 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q31a",
+          "type": "review",
+          "stem": "The length of time (in minutes) that a person in the Sydney metropolitan area has to wait for an ambulance to arrive after contacting ‘000’ is a continuous probability distribution function defined by: \\(f(x)=\\begin{cases}ax(10-x),&0\\le x\\le10\\\\ 0,&\\text{otherwise}\\end{cases}\\) Show that the value of \\(a\\) is \\(\\dfrac{3}{500}\\).",
+          "difficulty": "medium",
+          "answer": "\\(\\int_0^{10}ax(10-x)\\,dx=a\\left[5x^2-\\dfrac{x^3}{3}\\right]_0^{10}=a\\left(500-\\dfrac{1000}{3}\\right)=\\dfrac{500a}{3}=1\\;\\Rightarrow\\;a=\\dfrac{3}{500}\\).",
+          "manual": true,
+          "hint": "For any probability density function the TOTAL area under the curve is 1: \\(\\int f(x)\\,dx=1\\).",
+          "steps": [
+            {
+              "explain": "The total probability is 1.",
+              "work": "\\(\\int_0^{10}ax(10-x)\\,dx=1\\)"
+            },
+            {
+              "explain": "Expand the integrand \\(ax(10-x)=a(10x-x^2)\\) and integrate.",
+              "work": "\\(a\\left[5x^2-\\dfrac{x^3}{3}\\right]_0^{10}\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(a\\left(500-\\dfrac{1000}{3}\\right)=a\\times\\dfrac{1500-1000}{3}=\\dfrac{500a}{3}\\)"
+            },
+            {
+              "explain": "Set equal to 1 and solve.",
+              "work": "\\(\\dfrac{500a}{3}=1\\;\\Rightarrow\\;a=\\dfrac{3}{500}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Total area under f is 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q31b",
+          "type": "mc",
+          "stem": "The length of time (in minutes) that a person in the Sydney metropolitan area has to wait for an ambulance to arrive after contacting ‘000’ is a continuous probability distribution function defined by: \\(f(x)=\\begin{cases}ax(10-x),&0\\le x\\le10\\\\ 0,&\\text{otherwise}\\end{cases}\\) With \\(a=\\dfrac{3}{500}\\), find the cumulative distribution function.",
+          "difficulty": "hard",
+          "options": [
+            "\\(F(x)=\\begin{cases}0,&x<0\\\\ \\dfrac{3x^2}{100}-\\dfrac{x^3}{500},&0\\le x\\le10\\\\ 1,&x>10\\end{cases}\\)",
+            "\\(F(x)=\\begin{cases}0,&x<0\\\\ \\dfrac{3x^2}{50}-\\dfrac{x^3}{500},&0\\le x\\le10\\\\ 1,&x>10\\end{cases}\\)",
+            "\\(F(x)=\\begin{cases}0,&x<0\\\\ \\dfrac{3x^2}{100}-\\dfrac{x^3}{300},&0\\le x\\le10\\\\ 1,&x>10\\end{cases}\\)",
+            "\\(F(x)=\\begin{cases}0,&x<0\\\\ \\dfrac{3x}{50}-\\dfrac{3x^2}{500},&0\\le x\\le10\\\\ 1,&x>10\\end{cases}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(F(x)=\\int_{0}^{x}f(t)\\,dt\\). Integrate the density from 0 to \\(x\\), and check that \\(F(10)=1\\).",
+          "steps": [
+            {
+              "explain": "Cumulative distribution: area up to \\(x\\).",
+              "work": "\\(F(x)=\\int_0^x\\dfrac{3}{500}\\,t(10-t)\\,dt\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(=\\dfrac{3}{500}\\left[5t^2-\\dfrac{t^3}{3}\\right]_0^x=\\dfrac{3}{500}\\left(5x^2-\\dfrac{x^3}{3}\\right)\\)"
+            },
+            {
+              "explain": "Distribute \\(\\dfrac{3}{500}\\).",
+              "work": "\\(F(x)=\\dfrac{3x^2}{100}-\\dfrac{x^3}{500}\\)"
+            },
+            {
+              "explain": "Outside \\([0,10]\\): nothing before \\(x=0\\) and everything after \\(x=10\\).",
+              "work": "\\(F(x)=0\\ (x<0),\\qquad F(x)=1\\ (x>10)\\)"
+            },
+            {
+              "explain": "Check: \\(F(10)=\\dfrac{3(100)}{100}-\\dfrac{1000}{500}=3-2=1\\) ✓.",
+              "work": "<span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "cumulative distribution function",
+              "note": "F(x) = integral of f from 0 to x; F(10) must be 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q31c",
+          "type": "mc",
+          "stem": "The length of time (in minutes) that a person in the Sydney metropolitan area has to wait for an ambulance to arrive after contacting ‘000’ is a continuous probability distribution function defined by: \\(f(x)=\\begin{cases}ax(10-x),&0\\le x\\le10\\\\ 0,&\\text{otherwise}\\end{cases}\\) Find the probability, as a decimal, that a person will have to wait more than 7 minutes.",
+          "difficulty": "medium",
+          "options": [
+            "0.216",
+            "0.784",
+            "0.343",
+            "0.3"
+          ],
+          "answer": 0,
+          "hint": "'MORE than 7' is the TAIL: use \\(P(X>7)=1-F(7)\\) with \\(F(x)=\\dfrac{3x^2}{100}-\\dfrac{x^3}{500}\\).",
+          "steps": [
+            {
+              "explain": "Complement.",
+              "work": "\\(P(X>7)=1-P(X\\le7)=1-F(7)\\)"
+            },
+            {
+              "explain": "Evaluate \\(F(7)\\).",
+              "work": "\\(F(7)=\\dfrac{3(49)}{100}-\\dfrac{343}{500}=1.47-0.686=0.784\\)"
+            },
+            {
+              "explain": "Subtract from 1.",
+              "work": "\\(P(X>7)=1-0.784=0.216\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not 0.784? That is the probability of waiting 7 minutes OR LESS.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "wait more than 7 minutes",
+              "note": "P(X > 7) = 1 − F(7)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9170,186 +9012,6 @@
           },
           "dna": {
             "dnaId": "PROB-COND-01"
-          }
-        },
-        {
-          "id": "ascham2020-q28",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "Kelly has been offered two part-time jobs at local furniture shops. At furniture shop X she receives a retainer of $300 per week plus $200 for each lounge suite sold. At furniture shop Y she receives a retainer of $450 per week plus $100 for each lounge suite sold. Past weekly sales of lounge suites indicate the following probability distribution.",
-          "parts": [
-            {
-              "id": "ascham2020-q28a",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Find the expected number of lounge suites sold per week. Give your answer to the nearest whole.",
-              "options": [
-                "1",
-                "2",
-                "3",
-                "4"
-              ],
-              "answer": 1,
-              "hint": "Multiply each possible sales count by its probability and add the products.",
-              "keyPoints": [
-                {
-                  "text": "expected number",
-                  "note": "Multiply each possible sales count by its probability, add, and round to the nearest whole number."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "For a discrete random variable, the expected value is the probability-weighted sum of possible outcomes.",
-                  "work": "\\(E(N)=\\sum nP(N=n)\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 680 104\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"104\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"97.14285714285714\" y1=\"0\" x2=\"97.14285714285714\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"194.28571428571428\" y1=\"0\" x2=\"194.28571428571428\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"291.42857142857144\" y1=\"0\" x2=\"291.42857142857144\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"388.57142857142856\" y1=\"0\" x2=\"388.57142857142856\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"485.7142857142857\" y1=\"0\" x2=\"485.7142857142857\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"582.8571428571429\" y1=\"0\" x2=\"582.8571428571429\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"52\" x2=\"680\" y2=\"52\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"48.57142857142857\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >Suites sold</text><text x=\"145.71428571428572\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >0</text><text x=\"242.85714285714286\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >1</text><text x=\"340.0\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >2</text><text x=\"437.14285714285717\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >3</text><text x=\"534.2857142857143\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >4</text><text x=\"631.4285714285714\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >5</text><text x=\"48.57142857142857\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >Probability</text><text x=\"145.71428571428572\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.10</text><text x=\"242.85714285714286\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.20</text><text x=\"340.0\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.50</text><text x=\"437.14285714285717\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.15</text><text x=\"534.2857142857143\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.04</text><text x=\"631.4285714285714\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.01</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Substitute all six sales counts and their probabilities from the table.",
-                  "work": "\\(E(N)=0(.10)+1(.20)+2(.50)+3(.15)+4(.04)+5(.01)\\)"
-                },
-                {
-                  "explain": "Evaluate the contributions and add them.",
-                  "work": "\\(E(N)=0+0.20+1.00+0.45+0.16+0.05=1.86\\)"
-                },
-                {
-                  "explain": "Round 1.86 to the nearest whole number.",
-                  "work": "\\(\\boxed{2\\text{ lounge suites}}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 28,
-                "sourcePart": "a",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10C"
-              }
-            },
-            {
-              "id": "ascham2020-q28b",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Find the variance for this data.",
-              "options": [
-                "0.7804",
-                "0.9804",
-                "1.2400",
-                "1.8600"
-              ],
-              "answer": 1,
-              "hint": "Find E(N²) from the table, then use Var(N)=E(N²)−[E(N)]².",
-              "keyPoints": [
-                {
-                  "text": "variance",
-                  "note": "Calculate E(N²) from the probability table, then use Var(N)=E(N²)−[E(N)]²."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Use the probability distribution and the exact mean 1.86 from the weighted sum.",
-                  "work": "\\(E(N)=1.86\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 680 104\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"104\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"97.14285714285714\" y1=\"0\" x2=\"97.14285714285714\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"194.28571428571428\" y1=\"0\" x2=\"194.28571428571428\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"291.42857142857144\" y1=\"0\" x2=\"291.42857142857144\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"388.57142857142856\" y1=\"0\" x2=\"388.57142857142856\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"485.7142857142857\" y1=\"0\" x2=\"485.7142857142857\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"582.8571428571429\" y1=\"0\" x2=\"582.8571428571429\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"52\" x2=\"680\" y2=\"52\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"48.57142857142857\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >Suites sold</text><text x=\"145.71428571428572\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >0</text><text x=\"242.85714285714286\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >1</text><text x=\"340.0\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >2</text><text x=\"437.14285714285717\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >3</text><text x=\"534.2857142857143\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >4</text><text x=\"631.4285714285714\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >5</text><text x=\"48.57142857142857\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >Probability</text><text x=\"145.71428571428572\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.10</text><text x=\"242.85714285714286\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.20</text><text x=\"340.0\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.50</text><text x=\"437.14285714285717\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.15</text><text x=\"534.2857142857143\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.04</text><text x=\"631.4285714285714\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.01</text></svg>"
-                  }
-                },
-                {
-                  "explain": "Square each outcome before weighting by its probability.",
-                  "work": "\\(E(N^2)=0^2(.10)+1^2(.20)+2^2(.50)+3^2(.15)+4^2(.04)+5^2(.01)\\)"
-                },
-                {
-                  "explain": "Add the weighted squared values.",
-                  "work": "\\(E(N^2)=0+0.20+2.00+1.35+0.64+0.25=4.44\\)"
-                },
-                {
-                  "explain": "Subtract the square of the exact mean.",
-                  "work": "\\(\\mathrm{Var}(N)=4.44-(1.86)^2=4.44-3.4596=0.9804\\)"
-                },
-                {
-                  "explain": "The variance is 0.9804 suites².",
-                  "work": "\\(\\boxed{0.9804}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 28,
-                "sourcePart": "b",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10C"
-              }
-            },
-            {
-              "id": "ascham2020-q28c",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Which furniture shop job should Kelly take? Justify your answer by referring to the weekly pay Kelly expects to earn based on your result from part (a).",
-              "options": [
-                "Furniture shop X, expected pay $650",
-                "Furniture shop X, expected pay $700",
-                "Furniture shop Y, expected pay $650",
-                "Furniture shop Y, expected pay $700"
-              ],
-              "answer": 1,
-              "hint": "Use the rounded expected sales from part (a), then substitute it into each shop’s weekly pay rule.",
-              "keyPoints": [
-                {
-                  "text": "Which furniture shop job",
-                  "note": "Use the rounded expected sales from part (a) in each shop’s weekly-pay rule, then compare the results."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "The expected number rounded to the nearest whole from the previous part is 2 suites.",
-                  "work": "\\(N\\approx2\\)"
-                },
-                {
-                  "explain": "Shop X pays $300 retainer plus $200 per suite. Substitute N=2.",
-                  "work": "\\(P_X=300+200(2)=700\\)"
-                },
-                {
-                  "explain": "Shop Y pays $450 retainer plus $100 per suite.",
-                  "work": "\\(P_Y=450+100(2)=650\\)"
-                },
-                {
-                  "explain": "Compare expected weekly pay: X is higher by $50.",
-                  "work": "\\(700>650\\Rightarrow\\boxed{\\text{Choose shop X; expected pay }\\$700}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 28,
-                "sourcePart": "c",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10C"
-              }
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "sourcePaper": "Ascham 2020 2U Trials",
-            "sourceQuestion": 28
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 680 104\" role=\"img\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"104\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1\" /><line x1=\"97.14285714285714\" y1=\"0\" x2=\"97.14285714285714\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"194.28571428571428\" y1=\"0\" x2=\"194.28571428571428\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"291.42857142857144\" y1=\"0\" x2=\"291.42857142857144\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"388.57142857142856\" y1=\"0\" x2=\"388.57142857142856\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"485.7142857142857\" y1=\"0\" x2=\"485.7142857142857\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"582.8571428571429\" y1=\"0\" x2=\"582.8571428571429\" y2=\"104\" stroke=\"#64748b\" stroke-width=\"1\" /><line x1=\"0\" y1=\"52\" x2=\"680\" y2=\"52\" stroke=\"#64748b\" stroke-width=\"1\" /><text x=\"48.57142857142857\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >Suites sold</text><text x=\"145.71428571428572\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >0</text><text x=\"242.85714285714286\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >1</text><text x=\"340.0\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >2</text><text x=\"437.14285714285717\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >3</text><text x=\"534.2857142857143\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >4</text><text x=\"631.4285714285714\" y=\"34.32\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" >5</text><text x=\"48.57142857142857\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >Probability</text><text x=\"145.71428571428572\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.10</text><text x=\"242.85714285714286\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.20</text><text x=\"340.0\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.50</text><text x=\"437.14285714285717\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.15</text><text x=\"534.2857142857143\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.04</text><text x=\"631.4285714285714\" y=\"85.8\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >.01</text></svg>"
           }
         },
         {
@@ -9997,56 +9659,6 @@
             }
           ],
           "timeLimit": 60
-        },
-        {
-          "id": "ascham2020-q09",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "There will be 90 000 students sitting an examination. If their examination results form a normal distribution, how many students would be expected to score a result higher than 1 standard deviation below the mean?",
-          "options": [
-            "14 400",
-            "14 535",
-            "75 465",
-            "75 600"
-          ],
-          "answer": 3,
-          "hint": "Use the empirical rule: about 16% lie below one standard deviation under the mean.",
-          "keyPoints": [
-            {
-              "text": "higher than 1 standard deviation below the mean",
-              "note": "Mark one standard deviation below the mean; use the empirical-rule area to the right of that point."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "The requested scores are above \\(\\mu-\\sigma\\). The area below this cutoff is approximately 16%, so the area above is 84%.",
-              "work": "\\(P(X>\\mu-\\sigma)=1-0.16=0.84\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 350\" role=\"img\"><rect x=\"20\" y=\"20\" width=\"600\" height=\"310\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"55\" y1=\"260\" x2=\"585\" y2=\"260\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M260 260 L260 188 L260.4,139.5 L263.2,135.7 L266.0,131.9 L268.8,128.1 L271.6,124.5 L274.4,120.8 L277.2,117.3 L280.0,113.9 L282.8,110.5 L285.6,107.3 L288.4,104.2 L291.2,101.3 L294.0,98.5 L296.8,95.9 L299.6,93.4 L302.4,91.1 L305.2,89.0 L308.0,87.2 L310.8,85.5 L313.6,84.0 L316.4,82.8 L319.2,81.8 L322.0,81.0 L324.8,80.4 L327.6,80.1 L330.4,80.0 L333.2,80.2 L336.0,80.5 L338.8,81.2 L341.6,82.0 L344.4,83.1 L347.2,84.4 L350.0,85.9 L352.8,87.7 L355.6,89.6 L358.4,91.8 L361.2,94.1 L364.0,96.6 L366.8,99.3 L369.6,102.1 L372.4,105.1 L375.2,108.2 L378.0,111.5 L380.8,114.8 L383.6,118.3 L386.4,121.9 L389.2,125.5 L392.0,129.2 L394.8,133.0 L397.6,136.8 L400.4,140.6 L403.2,144.4 L406.0,148.3 L408.8,152.1 L411.6,155.9 L414.4,159.7 L417.2,163.5 L420.0,167.3 L422.8,170.9 L425.6,174.6 L428.4,178.1 L431.2,181.6 L434.0,185.0 L436.8,188.3 L439.6,191.6 L442.4,194.7 L445.2,197.7 L448.0,200.7 L450.8,203.5 L453.6,206.3 L456.4,208.9 L459.2,211.4 L462.0,213.9 L464.8,216.2 L467.6,218.4 L470.4,220.5 L473.2,222.5 L476.0,224.4 L478.8,226.2 L481.6,228.0 L484.4,229.6 L487.2,231.1 L490.0,232.5 L492.8,233.9 L495.6,235.1 L498.4,236.3 L501.2,237.4 L504.0,238.5 L506.8,239.4 L509.6,240.3 L512.4,241.2 L515.2,241.9 L518.0,242.7 L520.8,243.3 L523.6,243.9 L526.4,244.5 L529.2,245.0 L532.0,245.5 L534.8,245.9 L537.6,246.3 L540.4,246.7 L543.2,247.0 L546.0,247.3 L548.8,247.6 L551.6,247.8 L554.4,248.1 L557.2,248.3 L560.0,248.5 L562.8,248.6 L565.6,248.8 L568.4,248.9 L571.2,249.0 L574.0,249.1 L570 260 Z\" fill=\"#bbf7d0\" opacity=\".8\"/><polyline points=\"70.0,249.6 72.8,249.5 75.6,249.5 78.4,249.4 81.2,249.3 84.0,249.2 86.8,249.1 89.6,249.0 92.4,248.9 95.2,248.7 98.0,248.6 100.8,248.4 103.6,248.2 106.4,248.0 109.2,247.8 112.0,247.5 114.8,247.2 117.6,246.9 120.4,246.6 123.2,246.2 126.0,245.8 128.8,245.3 131.6,244.9 134.4,244.3 137.2,243.8 140.0,243.1 142.8,242.5 145.6,241.7 148.4,240.9 151.2,240.1 154.0,239.2 156.8,238.2 159.6,237.1 162.4,236.0 165.2,234.8 168.0,233.5 170.8,232.1 173.6,230.7 176.4,229.1 179.2,227.5 182.0,225.7 184.8,223.9 187.6,222.0 190.4,219.9 193.2,217.8 196.0,215.5 198.8,213.2 201.6,210.7 204.4,208.2 207.2,205.5 210.0,202.7 212.8,199.9 215.6,196.9 218.4,193.8 221.2,190.6 224.0,187.4 226.8,184.0 229.6,180.6 232.4,177.1 235.2,173.5 238.0,169.9 240.8,166.2 243.6,162.4 246.4,158.7 249.2,154.8 252.0,151.0 254.8,147.2 257.6,143.3 260.4,139.5 263.2,135.7 266.0,131.9 268.8,128.1 271.6,124.5 274.4,120.8 277.2,117.3 280.0,113.9 282.8,110.5 285.6,107.3 288.4,104.2 291.2,101.3 294.0,98.5 296.8,95.9 299.6,93.4 302.4,91.1 305.2,89.0 308.0,87.2 310.8,85.5 313.6,84.0 316.4,82.8 319.2,81.8 322.0,81.0 324.8,80.4 327.6,80.1 330.4,80.0 333.2,80.2 336.0,80.5 338.8,81.2 341.6,82.0 344.4,83.1 347.2,84.4 350.0,85.9 352.8,87.7 355.6,89.6 358.4,91.8 361.2,94.1 364.0,96.6 366.8,99.3 369.6,102.1 372.4,105.1 375.2,108.2 378.0,111.5 380.8,114.8 383.6,118.3 386.4,121.9 389.2,125.5 392.0,129.2 394.8,133.0 397.6,136.8 400.4,140.6 403.2,144.4 406.0,148.3 408.8,152.1 411.6,155.9 414.4,159.7 417.2,163.5 420.0,167.3 422.8,170.9 425.6,174.6 428.4,178.1 431.2,181.6 434.0,185.0 436.8,188.3 439.6,191.6 442.4,194.7 445.2,197.7 448.0,200.7 450.8,203.5 453.6,206.3 456.4,208.9 459.2,211.4 462.0,213.9 464.8,216.2 467.6,218.4 470.4,220.5 473.2,222.5 476.0,224.4 478.8,226.2 481.6,228.0 484.4,229.6 487.2,231.1 490.0,232.5 492.8,233.9 495.6,235.1 498.4,236.3 501.2,237.4 504.0,238.5 506.8,239.4 509.6,240.3 512.4,241.2 515.2,241.9 518.0,242.7 520.8,243.3 523.6,243.9 526.4,244.5 529.2,245.0 532.0,245.5 534.8,245.9 537.6,246.3 540.4,246.7 543.2,247.0 546.0,247.3 548.8,247.6 551.6,247.8 554.4,248.1 557.2,248.3 560.0,248.5 562.8,248.6 565.6,248.8 568.4,248.9 571.2,249.0 574.0,249.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"180\" y1=\"260\" x2=\"180\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"180\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ−2σ</text><line x1=\"255\" y1=\"260\" x2=\"255\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"255\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ−σ</text><line x1=\"330\" y1=\"260\" x2=\"330\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"330\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ</text><line x1=\"405\" y1=\"260\" x2=\"405\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"405\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ+σ</text><line x1=\"480\" y1=\"260\" x2=\"480\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"480\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ+2σ</text><text x=\"380\" y=\"72\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#15803d\" >84%</text></svg>"
-              }
-            },
-            {
-              "explain": "Multiply the proportion by the total number of students.",
-              "work": "\\(0.84(90000)=75600\\)"
-            },
-            {
-              "explain": "The expected number is 75 600 students.",
-              "work": "\\(\\boxed{75\\,600}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 9,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y12a-10D"
-          }
         },
         {
           "id": "y12a-advanced-005-p284-q02",
@@ -11333,124 +10945,6 @@
           }
         },
         {
-          "id": "ascham2020-q33",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "A number of people participated in a Swimming Championship and swim times were normally distributed. Swimmers who took longer than 16.5 minutes to complete the swim were disqualified. About 16% of swimmers were disqualified. The mean time to complete the race was 15 minutes.",
-          "parts": [
-            {
-              "id": "ascham2020-q33a",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Find the standard deviation of swim times for this race.",
-              "options": [
-                "0.75 minutes",
-                "1.0 minute",
-                "1.5 minutes",
-                "3.0 minutes"
-              ],
-              "answer": 2,
-              "hint": "About 16% of a normal distribution lies above one standard deviation greater than the mean.",
-              "keyPoints": [
-                {
-                  "text": "standard deviation of swim times",
-                  "note": "About 16% above the cutoff corresponds to approximately one standard deviation above the mean."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "A right-tail proportion of about 16% corresponds to a cutoff approximately one standard deviation above the mean.",
-                  "work": "\\(16.5\\approx\\mu+\\sigma\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 350\" role=\"img\"><rect x=\"20\" y=\"20\" width=\"600\" height=\"310\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"55\" y1=\"260\" x2=\"585\" y2=\"260\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M260 260 L260 188 L260.4,139.5 L263.2,135.7 L266.0,131.9 L268.8,128.1 L271.6,124.5 L274.4,120.8 L277.2,117.3 L280.0,113.9 L282.8,110.5 L285.6,107.3 L288.4,104.2 L291.2,101.3 L294.0,98.5 L296.8,95.9 L299.6,93.4 L302.4,91.1 L305.2,89.0 L308.0,87.2 L310.8,85.5 L313.6,84.0 L316.4,82.8 L319.2,81.8 L322.0,81.0 L324.8,80.4 L327.6,80.1 L330.4,80.0 L333.2,80.2 L336.0,80.5 L338.8,81.2 L341.6,82.0 L344.4,83.1 L347.2,84.4 L350.0,85.9 L352.8,87.7 L355.6,89.6 L358.4,91.8 L361.2,94.1 L364.0,96.6 L366.8,99.3 L369.6,102.1 L372.4,105.1 L375.2,108.2 L378.0,111.5 L380.8,114.8 L383.6,118.3 L386.4,121.9 L389.2,125.5 L392.0,129.2 L394.8,133.0 L397.6,136.8 L400.4,140.6 L403.2,144.4 L406.0,148.3 L408.8,152.1 L411.6,155.9 L414.4,159.7 L417.2,163.5 L420.0,167.3 L422.8,170.9 L425.6,174.6 L428.4,178.1 L431.2,181.6 L434.0,185.0 L436.8,188.3 L439.6,191.6 L442.4,194.7 L445.2,197.7 L448.0,200.7 L450.8,203.5 L453.6,206.3 L456.4,208.9 L459.2,211.4 L462.0,213.9 L464.8,216.2 L467.6,218.4 L470.4,220.5 L473.2,222.5 L476.0,224.4 L478.8,226.2 L481.6,228.0 L484.4,229.6 L487.2,231.1 L490.0,232.5 L492.8,233.9 L495.6,235.1 L498.4,236.3 L501.2,237.4 L504.0,238.5 L506.8,239.4 L509.6,240.3 L512.4,241.2 L515.2,241.9 L518.0,242.7 L520.8,243.3 L523.6,243.9 L526.4,244.5 L529.2,245.0 L532.0,245.5 L534.8,245.9 L537.6,246.3 L540.4,246.7 L543.2,247.0 L546.0,247.3 L548.8,247.6 L551.6,247.8 L554.4,248.1 L557.2,248.3 L560.0,248.5 L562.8,248.6 L565.6,248.8 L568.4,248.9 L571.2,249.0 L574.0,249.1 L570 260 Z\" fill=\"#bbf7d0\" opacity=\".8\"/><polyline points=\"70.0,249.6 72.8,249.5 75.6,249.5 78.4,249.4 81.2,249.3 84.0,249.2 86.8,249.1 89.6,249.0 92.4,248.9 95.2,248.7 98.0,248.6 100.8,248.4 103.6,248.2 106.4,248.0 109.2,247.8 112.0,247.5 114.8,247.2 117.6,246.9 120.4,246.6 123.2,246.2 126.0,245.8 128.8,245.3 131.6,244.9 134.4,244.3 137.2,243.8 140.0,243.1 142.8,242.5 145.6,241.7 148.4,240.9 151.2,240.1 154.0,239.2 156.8,238.2 159.6,237.1 162.4,236.0 165.2,234.8 168.0,233.5 170.8,232.1 173.6,230.7 176.4,229.1 179.2,227.5 182.0,225.7 184.8,223.9 187.6,222.0 190.4,219.9 193.2,217.8 196.0,215.5 198.8,213.2 201.6,210.7 204.4,208.2 207.2,205.5 210.0,202.7 212.8,199.9 215.6,196.9 218.4,193.8 221.2,190.6 224.0,187.4 226.8,184.0 229.6,180.6 232.4,177.1 235.2,173.5 238.0,169.9 240.8,166.2 243.6,162.4 246.4,158.7 249.2,154.8 252.0,151.0 254.8,147.2 257.6,143.3 260.4,139.5 263.2,135.7 266.0,131.9 268.8,128.1 271.6,124.5 274.4,120.8 277.2,117.3 280.0,113.9 282.8,110.5 285.6,107.3 288.4,104.2 291.2,101.3 294.0,98.5 296.8,95.9 299.6,93.4 302.4,91.1 305.2,89.0 308.0,87.2 310.8,85.5 313.6,84.0 316.4,82.8 319.2,81.8 322.0,81.0 324.8,80.4 327.6,80.1 330.4,80.0 333.2,80.2 336.0,80.5 338.8,81.2 341.6,82.0 344.4,83.1 347.2,84.4 350.0,85.9 352.8,87.7 355.6,89.6 358.4,91.8 361.2,94.1 364.0,96.6 366.8,99.3 369.6,102.1 372.4,105.1 375.2,108.2 378.0,111.5 380.8,114.8 383.6,118.3 386.4,121.9 389.2,125.5 392.0,129.2 394.8,133.0 397.6,136.8 400.4,140.6 403.2,144.4 406.0,148.3 408.8,152.1 411.6,155.9 414.4,159.7 417.2,163.5 420.0,167.3 422.8,170.9 425.6,174.6 428.4,178.1 431.2,181.6 434.0,185.0 436.8,188.3 439.6,191.6 442.4,194.7 445.2,197.7 448.0,200.7 450.8,203.5 453.6,206.3 456.4,208.9 459.2,211.4 462.0,213.9 464.8,216.2 467.6,218.4 470.4,220.5 473.2,222.5 476.0,224.4 478.8,226.2 481.6,228.0 484.4,229.6 487.2,231.1 490.0,232.5 492.8,233.9 495.6,235.1 498.4,236.3 501.2,237.4 504.0,238.5 506.8,239.4 509.6,240.3 512.4,241.2 515.2,241.9 518.0,242.7 520.8,243.3 523.6,243.9 526.4,244.5 529.2,245.0 532.0,245.5 534.8,245.9 537.6,246.3 540.4,246.7 543.2,247.0 546.0,247.3 548.8,247.6 551.6,247.8 554.4,248.1 557.2,248.3 560.0,248.5 562.8,248.6 565.6,248.8 568.4,248.9 571.2,249.0 574.0,249.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"180\" y1=\"260\" x2=\"180\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"180\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ−2σ</text><line x1=\"255\" y1=\"260\" x2=\"255\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"255\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ−σ</text><line x1=\"330\" y1=\"260\" x2=\"330\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"330\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ</text><line x1=\"405\" y1=\"260\" x2=\"405\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"405\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ+σ</text><line x1=\"480\" y1=\"260\" x2=\"480\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"480\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ+2σ</text><text x=\"380\" y=\"72\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#15803d\" >84%</text></svg>"
-                  }
-                },
-                {
-                  "explain": "The mean is 15, so equate 16.5 to 15+σ.",
-                  "work": "\\(16.5=15+\\sigma\\)"
-                },
-                {
-                  "explain": "Subtract 15 from both sides.",
-                  "work": "\\(\\sigma=16.5-15=1.5\\text{ minutes}\\)"
-                },
-                {
-                  "explain": "The standard deviation is 1.5 minutes.",
-                  "work": "\\(\\boxed{1.5\\text{ minutes}}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 33,
-                "sourcePart": "a",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10E"
-              }
-            },
-            {
-              "id": "ascham2020-q33b",
-              "type": "review",
-              "difficulty": "medium",
-              "stem": "Sketch the normal distribution curve for this information.",
-              "answer": "",
-              "manual": true,
-              "hint": "Draw a symmetric bell curve centred at the mean, then mark the 16.5-minute cutoff one standard deviation to the right and shade the 16% tail.",
-              "keyPoints": [
-                {
-                  "text": "normal distribution curve",
-                  "note": "Centre a symmetric bell curve at 15 minutes and mark 16.5 one standard deviation to the right; shade the upper 16%."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "The mean is the centre of symmetry; from part (a), the standard deviation is 1.5 minutes.",
-                  "work": "\\(\\mu=15,\\quad\\sigma=1.5\\text{ min}\\)"
-                },
-                {
-                  "explain": "Mark one standard deviation above the mean at 16.5 minutes.",
-                  "work": "\\(\\mu+\\sigma=15+1.5=16.5\\)"
-                },
-                {
-                  "explain": "Draw a bell-shaped curve symmetric about 15 and shade the region to the right of 16.5; label that tail about 16%.",
-                  "work": "\\(P(X>16.5)\\approx0.16\\)"
-                },
-                {
-                  "explain": "The sample sketch marks the centre, cutoff and disqualified tail.",
-                  "work": "\\(\\boxed{\\text{Normal curve centred at }15\\text{ with right tail }16\\%\\text{ beyond }16.5}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 360\" role=\"img\"><rect x=\"15\" y=\"15\" width=\"610\" height=\"330\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"60\" y1=\"270\" x2=\"580\" y2=\"270\" stroke=\"#334155\" stroke-width=\"2\" /><polyline points=\"65.0,259.5 67.5,259.4 70.0,259.4 72.5,259.3 75.0,259.2 77.5,259.1 80.0,259.0 82.5,258.9 85.0,258.8 87.5,258.7 90.0,258.5 92.5,258.4 95.0,258.2 97.5,258.0 100.0,257.8 102.5,257.6 105.0,257.4 107.5,257.1 110.0,256.8 112.5,256.5 115.0,256.2 117.5,255.8 120.0,255.4 122.5,255.0 125.0,254.6 127.5,254.1 130.0,253.5 132.5,253.0 135.0,252.4 137.5,251.7 140.0,251.0 142.5,250.3 145.0,249.5 147.5,248.6 150.0,247.7 152.5,246.8 155.0,245.8 157.5,244.7 160.0,243.6 162.5,242.4 165.0,241.1 167.5,239.8 170.0,238.3 172.5,236.9 175.0,235.3 177.5,233.7 180.0,232.0 182.5,230.2 185.0,228.3 187.5,226.4 190.0,224.4 192.5,222.3 195.0,220.1 197.5,217.8 200.0,215.5 202.5,213.1 205.0,210.6 207.5,208.1 210.0,205.4 212.5,202.7 215.0,200.0 217.5,197.1 220.0,194.2 222.5,191.3 225.0,188.3 227.5,185.2 230.0,182.1 232.5,179.0 235.0,175.8 237.5,172.6 240.0,169.4 242.5,166.2 245.0,163.0 247.5,159.7 250.0,156.5 252.5,153.3 255.0,150.1 257.5,146.9 260.0,143.8 262.5,140.7 265.0,137.7 267.5,134.8 270.0,131.9 272.5,129.1 275.0,126.4 277.5,123.7 280.0,121.2 282.5,118.8 285.0,116.5 287.5,114.3 290.0,112.3 292.5,110.4 295.0,108.6 297.5,107.0 300.0,105.6 302.5,104.3 305.0,103.2 307.5,102.2 310.0,101.4 312.5,100.8 315.0,100.4 317.5,100.1 320.0,100.0 322.5,100.1 325.0,100.4 327.5,100.8 330.0,101.4 332.5,102.2 335.0,103.2 337.5,104.3 340.0,105.6 342.5,107.0 345.0,108.6 347.5,110.4 350.0,112.3 352.5,114.3 355.0,116.5 357.5,118.8 360.0,121.2 362.5,123.7 365.0,126.4 367.5,129.1 370.0,131.9 372.5,134.8 375.0,137.7 377.5,140.7 380.0,143.8 382.5,146.9 385.0,150.1 387.5,153.3 390.0,156.5 392.5,159.7 395.0,163.0 397.5,166.2 400.0,169.4 402.5,172.6 405.0,175.8 407.5,179.0 410.0,182.1 412.5,185.2 415.0,188.3 417.5,191.3 420.0,194.2 422.5,197.1 425.0,200.0 427.5,202.7 430.0,205.4 432.5,208.1 435.0,210.6 437.5,213.1 440.0,215.5 442.5,217.8 445.0,220.1 447.5,222.3 450.0,224.4 452.5,226.4 455.0,228.3 457.5,230.2 460.0,232.0 462.5,233.7 465.0,235.3 467.5,236.9 470.0,238.3 472.5,239.8 475.0,241.1 477.5,242.4 480.0,243.6 482.5,244.7 485.0,245.8 487.5,246.8 490.0,247.7 492.5,248.6 495.0,249.5 497.5,250.3 500.0,251.0 502.5,251.7 505.0,252.4 507.5,253.0 510.0,253.5 512.5,254.1 515.0,254.6 517.5,255.0 520.0,255.4 522.5,255.8 525.0,256.2 527.5,256.5 530.0,256.8 532.5,257.1 535.0,257.4 537.5,257.6 540.0,257.8 542.5,258.0 545.0,258.2 547.5,258.4 550.0,258.5 552.5,258.7 555.0,258.8 557.5,258.9 560.0,259.0 562.5,259.1 565.0,259.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"320\" y1=\"100\" x2=\"320\" y2=\"275\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"425\" y1=\"155\" x2=\"425\" y2=\"275\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"320\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#334155\" >μ = 15 min</text><text x=\"425\" y=\"298\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#b91c1c\" >16.5 min</text><text x=\"500\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#b91c1c\" >16% disqualified</text><path d=\"M425 155 L425 270 L550 270 C520 220 475 175 425 155Z\" fill=\"#fecaca\" opacity=\".65\"/></svg>"
-                  }
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 33,
-                "sourcePart": "b",
-                "sourcePage": null,
-                "sourceTopic": "y12a-10E"
-              }
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "sourcePaper": "Ascham 2020 2U Trials",
-            "sourceQuestion": 33
-          },
-          "manual": true
-        },
-        {
           "id": "y12a-advanced-005-p284-q01",
           "type": "mc",
           "difficulty": "medium",
@@ -11573,6 +11067,145 @@
               }
             }
           ]
+        },
+        {
+          "id": "ascham2020-adv-q9",
+          "type": "mc",
+          "stem": "There will be 90 000 students sitting an examination. If their examination results form a normal distribution, how many students would be expected to score a result higher than 1 standard deviation below the mean?",
+          "difficulty": "medium",
+          "options": [
+            "14 400",
+            "14 535",
+            "75 465",
+            "75 600"
+          ],
+          "answer": 3,
+          "hint": "Use the 68–95–99.7 rule: about 68% of a normal distribution lies within 1 standard deviation of the mean. Sketch the curve and shade the part ABOVE \\(\\mu-\\sigma\\).",
+          "steps": [
+            {
+              "explain": "Mark \\(\\mu-\\sigma\\) on the curve. We want everything to the RIGHT of it (blue).",
+              "work": "area above μ − σ",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><clipPath id=\"c7\"><rect x=\"28\" y=\"28\" width=\"404\" height=\"224\"/></clipPath><path d=\"M173.9,116.8 L177,111.4 L180.1,106 L183.1,100.7 L186.2,95.5 L189.3,90.4 L192.4,85.5 L195.5,80.9 L198.6,76.4 L201.7,72.3 L204.8,68.5 L207.8,65.1 L210.9,62 L214,59.3 L217.1,57.1 L220.2,55.3 L223.3,54 L226.4,53.2 L229.4,52.9 L232.5,53 L235.6,53.7 L238.7,54.8 L241.8,56.4 L244.9,58.5 L248,61 L251,63.9 L254.1,67.2 L257.2,70.9 L260.3,74.9 L263.4,79.2 L266.5,83.8 L269.6,88.6 L272.6,93.6 L275.7,98.8 L278.8,104.1 L281.9,109.4 L285,114.8 L288.1,120.2 L291.2,125.6 L294.2,131 L297.3,136.3 L300.4,141.4 L303.5,146.5 L306.6,151.3 L309.7,156.1 L312.8,160.6 L315.9,164.9 L318.9,169.1 L322,173 L325.1,176.7 L328.2,180.2 L331.3,183.5 L334.4,186.5 L337.5,189.4 L340.5,192 L343.6,194.4 L346.7,196.7 L349.8,198.7 L352.9,200.6 L356,202.3 L359.1,203.8 L362.1,205.2 L365.2,206.4 L368.3,207.6 L371.4,208.6 L374.5,209.4 L377.6,210.2 L380.7,210.9 L383.7,211.5 L386.8,212.1 L389.9,212.5 L393,213 L396.1,213.3 L399.2,213.6 L402.3,213.9 L405.3,214.1 L408.4,214.3 L411.5,214.5 L414.6,214.6 L417.7,214.7 L420.8,214.8 L420.8,215.3 L173.9,215.3Z\" fill=\"#93c5fd\" fill-opacity=\"0.6\"/><path d=\"M39.2,214.8 L42.6,214.7 L46,214.6 L49.3,214.4 L52.7,214.2 L56.1,214 L59.4,213.7 L62.8,213.4 L66.2,213.1 L69.5,212.6 L72.9,212.1 L76.3,211.5 L79.6,210.9 L83,210.1 L86.4,209.2 L89.7,208.2 L93.1,207.1 L96.5,205.8 L99.8,204.3 L103.2,202.7 L106.6,200.9 L109.9,198.9 L113.3,196.7 L116.7,194.2 L120,191.5 L123.4,188.6 L126.8,185.4 L130.1,182 L133.5,178.3 L136.9,174.4 L140.2,170.2 L143.6,165.7 L147,161 L150.3,156.1 L153.7,150.9 L157.1,145.6 L160.4,140 L163.8,134.4 L167.2,128.6 L170.5,122.7 L173.9,116.8 L173.9,215.3 L39.2,215.3Z\" fill=\"#fca5a5\" fill-opacity=\"0.7\"/><line x1=\"28\" y1=\"215.3\" x2=\"432\" y2=\"215.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M439,215.3 l-9,-4.5 v9z\" fill=\"#334155\"/><g clip-path=\"url(#c7)\"><polyline points=\"33.6,215 34,215 34.5,215 34.9,215 35.4,214.9 35.8,214.9 36.2,214.9 36.7,214.9 37.1,214.9 37.5,214.9 38,214.9 38.4,214.9 38.8,214.9 39.3,214.8 39.7,214.8 40.2,214.8 40.6,214.8 41,214.8 41.5,214.8 41.9,214.8 42.3,214.7 42.8,214.7 43.2,214.7 43.6,214.7 44.1,214.7 44.5,214.7 45,214.6 45.4,214.6 45.8,214.6 46.3,214.6 46.7,214.6 47.1,214.5 47.6,214.5 48,214.5 48.4,214.5 48.9,214.5 49.3,214.4 49.8,214.4 50.2,214.4 50.6,214.4 51.1,214.3 51.5,214.3 51.9,214.3 52.4,214.3 52.8,214.2 53.3,214.2 53.7,214.2 54.1,214.2 54.6,214.1 55,214.1 55.4,214.1 55.9,214 56.3,214 56.7,214 57.2,213.9 57.6,213.9 58.1,213.9 58.5,213.8 58.9,213.8 59.4,213.8 59.8,213.7 60.2,213.7 60.7,213.6 61.1,213.6 61.5,213.6 62,213.5 62.4,213.5 62.9,213.4 63.3,213.4 63.7,213.3 64.2,213.3 64.6,213.2 65,213.2 65.5,213.1 65.9,213.1 66.3,213 66.8,213 67.2,212.9 67.7,212.9 68.1,212.8 68.5,212.8 69,212.7 69.4,212.6 69.8,212.6 70.3,212.5 70.7,212.5 71.1,212.4 71.6,212.3 72,212.3 72.5,212.2 72.9,212.1 73.3,212.1 73.8,212 74.2,211.9 74.6,211.8 75.1,211.8 75.5,211.7 75.9,211.6 76.4,211.5 76.8,211.4 77.3,211.3 77.7,211.3 78.1,211.2 78.6,211.1 79,211 79.4,210.9 79.9,210.8 80.3,210.7 80.7,210.6 81.2,210.5 81.6,210.4 82.1,210.3 82.5,210.2 82.9,210.1 83.4,210 83.8,209.9 84.2,209.8 84.7,209.7 85.1,209.6 85.5,209.4 86,209.3 86.4,209.2 86.9,209.1 87.3,208.9 87.7,208.8 88.2,208.7 88.6,208.6 89,208.4 89.5,208.3 89.9,208.1 90.3,208 90.8,207.9 91.2,207.7 91.7,207.6 92.1,207.4 92.5,207.3 93,207.1 93.4,207 93.8,206.8 94.3,206.6 94.7,206.5 95.1,206.3 95.6,206.1 96,206 96.5,205.8 96.9,205.6 97.3,205.4 97.8,205.2 98.2,205 98.6,204.9 99.1,204.7 99.5,204.5 99.9,204.3 100.4,204.1 100.8,203.9 101.3,203.7 101.7,203.5 102.1,203.2 102.6,203 103,202.8 103.4,202.6 103.9,202.4 104.3,202.1 104.7,201.9 105.2,201.7 105.6,201.4 106.1,201.2 106.5,200.9 106.9,200.7 107.4,200.4 107.8,200.2 108.2,199.9 108.7,199.7 109.1,199.4 109.5,199.1 110,198.8 110.4,198.6 110.9,198.3 111.3,198 111.7,197.7 112.2,197.4 112.6,197.1 113,196.8 113.5,196.5 113.9,196.2 114.3,195.9 114.8,195.6 115.2,195.3 115.7,195 116.1,194.6 116.5,194.3 117,194 117.4,193.6 117.8,193.3 118.3,193 118.7,192.6 119.1,192.3 119.6,191.9 120,191.5 120.5,191.2 120.9,190.8 121.3,190.4 121.8,190.1 122.2,189.7 122.6,189.3 123.1,188.9 123.5,188.5 124,188.1 124.4,187.7 124.8,187.3 125.3,186.9 125.7,186.5 126.1,186.1 126.6,185.6 127,185.2 127.4,184.8 127.9,184.3 128.3,183.9 128.8,183.4 129.2,183 129.6,182.5 130.1,182.1 130.5,181.6 130.9,181.2 131.4,180.7 131.8,180.2 132.2,179.7 132.7,179.2 133.1,178.8 133.6,178.3 134,177.8 134.4,177.3 134.9,176.8 135.3,176.2 135.7,175.7 136.2,175.2 136.6,174.7 137,174.2 137.5,173.6 137.9,173.1 138.4,172.5 138.8,172 139.2,171.4 139.7,170.9 140.1,170.3 140.5,169.8 141,169.2 141.4,168.6 141.8,168.1 142.3,167.5 142.7,166.9 143.2,166.3 143.6,165.7 144,165.1 144.5,164.5 144.9,163.9 145.3,163.3 145.8,162.7 146.2,162.1 146.6,161.4 147.1,160.8 147.5,160.2 148,159.6 148.4,158.9 148.8,158.3 149.3,157.6 149.7,157 150.1,156.3 150.6,155.7 151,155 151.4,154.4 151.9,153.7 152.3,153 152.8,152.4 153.2,151.7 153.6,151 154.1,150.3 154.5,149.6 154.9,148.9 155.4,148.3 155.8,147.6 156.2,146.9 156.7,146.2 157.1,145.5 157.6,144.7 158,144 158.4,143.3 158.9,142.6 159.3,141.9 159.7,141.2 160.2,140.4 160.6,139.7 161,139 161.5,138.3 161.9,137.5 162.4,136.8 162.8,136 163.2,135.3 163.7,134.6 164.1,133.8 164.5,133.1 165,132.3 165.4,131.6 165.8,130.8 166.3,130.1 166.7,129.3 167.2,128.6 167.6,127.8 168,127.1 168.5,126.3 168.9,125.5 169.3,124.8 169.8,124 170.2,123.2 170.6,122.5 171.1,121.7 171.5,121 172,120.2 172.4,119.4 172.8,118.7 173.3,117.9 173.7,117.1 174.1,116.4 174.6,115.6 175,114.8 175.4,114.1 175.9,113.3 176.3,112.5 176.8,111.8 177.2,111 177.6,110.2 178.1,109.5 178.5,108.7 178.9,108 179.4,107.2 179.8,106.4 180.2,105.7 180.7,104.9 181.1,104.2 181.6,103.4 182,102.7 182.4,101.9 182.9,101.2 183.3,100.4 183.7,99.7 184.2,98.9 184.6,98.2 185,97.5 185.5,96.7 185.9,96 186.4,95.3 186.8,94.6 187.2,93.8 187.7,93.1 188.1,92.4 188.5,91.7 189,91 189.4,90.3 189.8,89.6 190.3,88.9 190.7,88.2 191.2,87.5 191.6,86.8 192,86.1 192.5,85.4 192.9,84.8 193.3,84.1 193.8,83.4 194.2,82.8 194.7,82.1 195.1,81.5 195.5,80.8 196,80.2 196.4,79.5 196.8,78.9 197.3,78.3 197.7,77.7 198.1,77.1 198.6,76.4 199,75.8 199.5,75.2 199.9,74.7 200.3,74.1 200.8,73.5 201.2,72.9 201.6,72.4 202.1,71.8 202.5,71.2 202.9,70.7 203.4,70.2 203.8,69.6 204.3,69.1 204.7,68.6 205.1,68.1 205.6,67.6 206,67.1 206.4,66.6 206.9,66.1 207.3,65.6 207.7,65.2 208.2,64.7 208.6,64.2 209.1,63.8 209.5,63.4 209.9,62.9 210.4,62.5 210.8,62.1 211.2,61.7 211.7,61.3 212.1,60.9 212.5,60.5 213,60.2 213.4,59.8 213.9,59.5 214.3,59.1 214.7,58.8 215.2,58.5 215.6,58.1 216,57.8 216.5,57.5 216.9,57.2 217.3,56.9 217.8,56.7 218.2,56.4 218.7,56.2 219.1,55.9 219.5,55.7 220,55.4 220.4,55.2 220.8,55 221.3,54.8 221.7,54.6 222.1,54.5 222.6,54.3 223,54.1 223.5,54 223.9,53.8 224.3,53.7 224.8,53.6 225.2,53.5 225.6,53.4 226.1,53.3 226.5,53.2 226.9,53.1 227.4,53 227.8,53 228.3,52.9 228.7,52.9 229.1,52.9 229.6,52.9 230,52.9 230.4,52.9 230.9,52.9 231.3,52.9 231.7,52.9 232.2,53 232.6,53 233.1,53.1 233.5,53.2 233.9,53.3 234.4,53.4 234.8,53.5 235.2,53.6 235.7,53.7 236.1,53.8 236.5,54 237,54.1 237.4,54.3 237.9,54.5 238.3,54.6 238.7,54.8 239.2,55 239.6,55.2 240,55.4 240.5,55.7 240.9,55.9 241.3,56.2 241.8,56.4 242.2,56.7 242.7,56.9 243.1,57.2 243.5,57.5 244,57.8 244.4,58.1 244.8,58.5 245.3,58.8 245.7,59.1 246.1,59.5 246.6,59.8 247,60.2 247.5,60.5 247.9,60.9 248.3,61.3 248.8,61.7 249.2,62.1 249.6,62.5 250.1,62.9 250.5,63.4 250.9,63.8 251.4,64.2 251.8,64.7 252.3,65.2 252.7,65.6 253.1,66.1 253.6,66.6 254,67.1 254.4,67.6 254.9,68.1 255.3,68.6 255.7,69.1 256.2,69.6 256.6,70.2 257.1,70.7 257.5,71.2 257.9,71.8 258.4,72.4 258.8,72.9 259.2,73.5 259.7,74.1 260.1,74.7 260.5,75.2 261,75.8 261.4,76.4 261.9,77.1 262.3,77.7 262.7,78.3 263.2,78.9 263.6,79.5 264,80.2 264.5,80.8 264.9,81.5 265.4,82.1 265.8,82.8 266.2,83.4 266.7,84.1 267.1,84.8 267.5,85.4 268,86.1 268.4,86.8 268.8,87.5 269.3,88.2 269.7,88.9 270.2,89.6 270.6,90.3 271,91 271.5,91.7 271.9,92.4 272.3,93.1 272.8,93.8 273.2,94.6 273.6,95.3 274.1,96 274.5,96.7 275,97.5 275.4,98.2 275.8,98.9 276.3,99.7 276.7,100.4 277.1,101.2 277.6,101.9 278,102.7 278.4,103.4 278.9,104.2 279.3,104.9 279.8,105.7 280.2,106.4 280.6,107.2 281.1,108 281.5,108.7 281.9,109.5 282.4,110.2 282.8,111 283.2,111.8 283.7,112.5 284.1,113.3 284.6,114.1 285,114.8 285.4,115.6 285.9,116.4 286.3,117.1 286.7,117.9 287.2,118.7 287.6,119.4 288,120.2 288.5,121 288.9,121.7 289.4,122.5 289.8,123.2 290.2,124 290.7,124.8 291.1,125.5 291.5,126.3 292,127.1 292.4,127.8 292.8,128.6 293.3,129.3 293.7,130.1 294.2,130.8 294.6,131.6 295,132.3 295.5,133.1 295.9,133.8 296.3,134.6 296.8,135.3 297.2,136 297.6,136.8 298.1,137.5 298.5,138.3 299,139 299.4,139.7 299.8,140.4 300.3,141.2 300.7,141.9 301.1,142.6 301.6,143.3 302,144 302.4,144.7 302.9,145.5 303.3,146.2 303.8,146.9 304.2,147.6 304.6,148.3 305.1,148.9 305.5,149.6 305.9,150.3 306.4,151 306.8,151.7 307.2,152.4 307.7,153 308.1,153.7 308.6,154.4 309,155 309.4,155.7 309.9,156.3 310.3,157 310.7,157.6 311.2,158.3 311.6,158.9 312,159.6 312.5,160.2 312.9,160.8 313.4,161.4 313.8,162.1 314.2,162.7 314.7,163.3 315.1,163.9 315.5,164.5 316,165.1 316.4,165.7 316.8,166.3 317.3,166.9 317.7,167.5 318.2,168.1 318.6,168.6 319,169.2 319.5,169.8 319.9,170.3 320.3,170.9 320.8,171.4 321.2,172 321.6,172.5 322.1,173.1 322.5,173.6 323,174.2 323.4,174.7 323.8,175.2 324.3,175.7 324.7,176.2 325.1,176.8 325.6,177.3 326,177.8 326.4,178.3 326.9,178.8 327.3,179.2 327.8,179.7 328.2,180.2 328.6,180.7 329.1,181.2 329.5,181.6 329.9,182.1 330.4,182.5 330.8,183 331.2,183.4 331.7,183.9 332.1,184.3 332.6,184.8 333,185.2 333.4,185.6 333.9,186.1 334.3,186.5 334.7,186.9 335.2,187.3 335.6,187.7 336,188.1 336.5,188.5 336.9,188.9 337.4,189.3 337.8,189.7 338.2,190.1 338.7,190.4 339.1,190.8 339.5,191.2 340,191.5 340.4,191.9 340.9,192.3 341.3,192.6 341.7,193 342.2,193.3 342.6,193.6 343,194 343.5,194.3 343.9,194.6 344.3,195 344.8,195.3 345.2,195.6 345.7,195.9 346.1,196.2 346.5,196.5 347,196.8 347.4,197.1 347.8,197.4 348.3,197.7 348.7,198 349.1,198.3 349.6,198.6 350,198.8 350.5,199.1 350.9,199.4 351.3,199.7 351.8,199.9 352.2,200.2 352.6,200.4 353.1,200.7 353.5,200.9 353.9,201.2 354.4,201.4 354.8,201.7 355.3,201.9 355.7,202.1 356.1,202.4 356.6,202.6 357,202.8 357.4,203 357.9,203.2 358.3,203.5 358.7,203.7 359.2,203.9 359.6,204.1 360.1,204.3 360.5,204.5 360.9,204.7 361.4,204.9 361.8,205 362.2,205.2 362.7,205.4 363.1,205.6 363.5,205.8 364,206 364.4,206.1 364.9,206.3 365.3,206.5 365.7,206.6 366.2,206.8 366.6,207 367,207.1 367.5,207.3 367.9,207.4 368.3,207.6 368.8,207.7 369.2,207.9 369.7,208 370.1,208.1 370.5,208.3 371,208.4 371.4,208.6 371.8,208.7 372.3,208.8 372.7,208.9 373.1,209.1 373.6,209.2 374,209.3 374.5,209.4 374.9,209.6 375.3,209.7 375.8,209.8 376.2,209.9 376.6,210 377.1,210.1 377.5,210.2 377.9,210.3 378.4,210.4 378.8,210.5 379.3,210.6 379.7,210.7 380.1,210.8 380.6,210.9 381,211 381.4,211.1 381.9,211.2 382.3,211.3 382.7,211.3 383.2,211.4 383.6,211.5 384.1,211.6 384.5,211.7 384.9,211.8 385.4,211.8 385.8,211.9 386.2,212 386.7,212.1 387.1,212.1 387.5,212.2 388,212.3 388.4,212.3 388.9,212.4 389.3,212.5 389.7,212.5 390.2,212.6 390.6,212.6 391,212.7 391.5,212.8 391.9,212.8 392.3,212.9 392.8,212.9 393.2,213 393.7,213 394.1,213.1 394.5,213.1 395,213.2 395.4,213.2 395.8,213.3 396.3,213.3 396.7,213.4 397.1,213.4 397.6,213.5 398,213.5 398.5,213.6 398.9,213.6 399.3,213.6 399.8,213.7 400.2,213.7 400.6,213.8 401.1,213.8 401.5,213.8 401.9,213.9 402.4,213.9 402.8,213.9 403.3,214 403.7,214 404.1,214 404.6,214.1 405,214.1 405.4,214.1 405.9,214.2 406.3,214.2 406.8,214.2 407.2,214.2 407.6,214.3 408.1,214.3 408.5,214.3 408.9,214.3 409.4,214.4 409.8,214.4 410.2,214.4 410.7,214.4 411.1,214.5 411.6,214.5 412,214.5 412.4,214.5 412.9,214.5 413.3,214.6 413.7,214.6 414.2,214.6 414.6,214.6 415,214.6 415.5,214.7 415.9,214.7 416.4,214.7 416.8,214.7 417.2,214.7 417.7,214.7 418.1,214.8 418.5,214.8 419,214.8 419.4,214.8 419.8,214.8 420.3,214.8 420.7,214.8 421.2,214.9 421.6,214.9 422,214.9 422.5,214.9 422.9,214.9 423.3,214.9 423.8,214.9 424.2,214.9 424.6,214.9 425.1,215 425.5,215 426,215 426.4,215\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></g><text x=\"442\" y=\"231.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">x</text><line x1=\"117.8\" y1=\"211.3\" x2=\"117.8\" y2=\"219.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"117.8\" y=\"233.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">μ − 2σ</text><line x1=\"173.9\" y1=\"211.3\" x2=\"173.9\" y2=\"219.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"173.9\" y=\"233.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">μ − σ</text><line x1=\"230\" y1=\"211.3\" x2=\"230\" y2=\"219.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"230\" y=\"233.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">μ</text><line x1=\"286.1\" y1=\"211.3\" x2=\"286.1\" y2=\"219.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"286.1\" y=\"233.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">μ + σ</text><line x1=\"342.2\" y1=\"211.3\" x2=\"342.2\" y2=\"219.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"342.2\" y=\"233.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">μ + 2σ</text><line x1=\"230\" y1=\"215.3\" x2=\"230\" y2=\"52.9\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"241.2\" y=\"186.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e40af\">84%</text><text x=\"98.1\" y=\"166.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">16%</text></svg>"
+              }
+            },
+            {
+              "explain": "68% lies between \\(\\mu-\\sigma\\) and \\(\\mu+\\sigma\\). The rest is shared equally by the two tails.",
+              "work": "\\(\\dfrac{100\\%-68\\%}{2}=16\\%\\ \\text{in each tail}\\)"
+            },
+            {
+              "explain": "Above \\(\\mu-\\sigma\\) = 68% + the upper tail 16%. (Equivalently 100% − the lower tail 16%.)",
+              "work": "\\(68\\%+16\\%=84\\%\\)"
+            },
+            {
+              "explain": "Number of students.",
+              "work": "\\(0.84\\times90\\,000=75\\,600\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Why not 14 400? That is the 16% BELOW \\(\\mu-\\sigma\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "higher than 1 standard deviation below the mean",
+              "note": "Use 68–95–99.7: above μ − σ is 84%."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q33a",
+          "type": "mc",
+          "stem": "A number of people participated in a Swimming Championship and swim times were normally distributed. Swimmers who took longer than 16.5 minutes to complete the swim were disqualified. About 16% of swimmers were disqualified. The mean time to complete the race was 15 minutes. Find the standard deviation of swim times for this race.",
+          "difficulty": "medium",
+          "options": [
+            "1.5 minutes",
+            "1 minute",
+            "0.75 minutes",
+            "3 minutes"
+          ],
+          "answer": 0,
+          "hint": "About 16% lies above \\(\\mu+\\sigma\\) (68–95–99.7 rule: the two tails share the remaining 32%). So 16.5 minutes is ONE standard deviation above the mean.",
+          "steps": [
+            {
+              "explain": "The two tails beyond \\(\\mu\\pm\\sigma\\) hold \\(100\\%-68\\%=32\\%\\), so ONE tail holds 16%.",
+              "work": "\\(P(X>\\mu+\\sigma)\\approx16\\%\\)"
+            },
+            {
+              "explain": "16% of swimmers took longer than 16.5 minutes, so \\(16.5=\\mu+\\sigma\\).",
+              "work": "\\(15+\\sigma=16.5\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(\\sigma=1.5\\) minutes → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "standard deviation",
+              "note": "16% above means one standard deviation above the mean."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q33b",
+          "type": "review",
+          "stem": "A number of people participated in a Swimming Championship and swim times were normally distributed. Swimmers who took longer than 16.5 minutes to complete the swim were disqualified. About 16% of swimmers were disqualified. The mean time to complete the race was 15 minutes. Sketch the normal distribution curve for this information.",
+          "difficulty": "medium",
+          "answer": "A bell curve centred at \\(15\\), with marks at \\(13.5\\) and \\(16.5\\) (\\(\\mu\\pm\\sigma\\)) and \\(12\\) and \\(18\\) (\\(\\mu\\pm2\\sigma\\)); the area to the right of \\(16.5\\) is 16% (disqualified).",
+          "manual": true,
+          "hint": "Use \\(\\mu=15\\) and \\(\\sigma=1.5\\): the marks are \\(\\mu\\pm\\sigma\\) and \\(\\mu\\pm2\\sigma\\). Shade the 16% tail.",
+          "steps": [
+            {
+              "explain": "Centre of the curve (mean).",
+              "work": "\\(\\mu=15\\)"
+            },
+            {
+              "explain": "Mark one and two standard deviations (\\(\\sigma=1.5\\)).",
+              "work": "\\(\\mu\\pm\\sigma=13.5,\\ 16.5;\\qquad\\mu\\pm2\\sigma=12,\\ 18\\)"
+            },
+            {
+              "explain": "Shade the disqualified swimmers: above \\(16.5\\) minutes (16%).",
+              "work": "\\(P(X>16.5)=16\\%\\)"
+            },
+            {
+              "explain": "Sketch: bell curve symmetric about 15 with the red tail beyond 16.5 (and, for part (c), the green 1% tail near 11.5).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><clipPath id=\"c28\"><rect x=\"28\" y=\"28\" width=\"404\" height=\"224\"/></clipPath><path d=\"M297.3,109.8 L300.5,114.2 L303.6,118.6 L306.8,123 L309.9,127.3 L313,131.6 L316.2,135.7 L319.3,139.8 L322.5,143.8 L325.6,147.6 L328.8,151.4 L331.9,155 L335,158.4 L338.2,161.7 L341.3,164.9 L344.5,167.9 L347.6,170.7 L350.8,173.4 L353.9,176 L357,178.4 L360.2,180.7 L363.3,182.8 L366.5,184.7 L369.6,186.6 L372.7,188.3 L375.9,189.8 L379,191.3 L382.2,192.6 L385.3,193.9 L388.5,195 L391.6,196 L394.7,197 L397.9,197.8 L401,198.6 L404.2,199.3 L407.3,200 L410.5,200.5 L413.6,201 L416.7,201.5 L419.9,201.9 L423,202.3 L423,204.8 L297.3,204.8Z\" fill=\"#fca5a5\" fill-opacity=\"0.6\"/><path d=\"M32.5,202.7 L33.8,202.6 L35.2,202.5 L36.6,202.3 L37.9,202.2 L39.3,202 L40.6,201.8 L42,201.7 L43.3,201.5 L44.7,201.3 L46,201.1 L47.4,200.9 L48.7,200.7 L50.1,200.4 L51.4,200.2 L52.8,199.9 L54.2,199.7 L55.5,199.4 L56.9,199.1 L58.2,198.8 L59.6,198.5 L60.9,198.1 L62.3,197.8 L63.6,197.4 L65,197.1 L66.3,196.7 L67.7,196.3 L69.1,195.8 L70.4,195.4 L71.8,194.9 L73.1,194.5 L73.1,204.8 L32.5,204.8Z\" fill=\"#86efac\" fill-opacity=\"0.7\"/><line x1=\"28\" y1=\"204.8\" x2=\"432\" y2=\"204.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M439,204.8 l-9,-4.5 v9z\" fill=\"#334155\"/><g clip-path=\"url(#c28)\"><polyline points=\"32.5,202.7 32.9,202.7 33.4,202.6 33.8,202.6 34.2,202.6 34.7,202.5 35.1,202.5 35.6,202.4 36,202.4 36.4,202.3 36.9,202.3 37.3,202.2 37.8,202.2 38.2,202.1 38.6,202.1 39.1,202 39.5,202 40,201.9 40.4,201.9 40.8,201.8 41.3,201.8 41.7,201.7 42.1,201.6 42.6,201.6 43,201.5 43.5,201.5 43.9,201.4 44.3,201.3 44.8,201.3 45.2,201.2 45.7,201.1 46.1,201.1 46.5,201 47,200.9 47.4,200.9 47.9,200.8 48.3,200.7 48.7,200.7 49.2,200.6 49.6,200.5 50,200.4 50.5,200.4 50.9,200.3 51.4,200.2 51.8,200.1 52.2,200 52.7,200 53.1,199.9 53.6,199.8 54,199.7 54.4,199.6 54.9,199.5 55.3,199.4 55.8,199.3 56.2,199.2 56.6,199.1 57.1,199 57.5,199 57.9,198.9 58.4,198.8 58.8,198.6 59.3,198.5 59.7,198.4 60.1,198.3 60.6,198.2 61,198.1 61.5,198 61.9,197.9 62.3,197.8 62.8,197.7 63.2,197.5 63.7,197.4 64.1,197.3 64.5,197.2 65,197.1 65.4,196.9 65.8,196.8 66.3,196.7 66.7,196.6 67.2,196.4 67.6,196.3 68,196.2 68.5,196 68.9,195.9 69.4,195.7 69.8,195.6 70.2,195.4 70.7,195.3 71.1,195.2 71.6,195 72,194.9 72.4,194.7 72.9,194.5 73.3,194.4 73.7,194.2 74.2,194.1 74.6,193.9 75.1,193.7 75.5,193.6 75.9,193.4 76.4,193.2 76.8,193.1 77.3,192.9 77.7,192.7 78.1,192.5 78.6,192.3 79,192.2 79.5,192 79.9,191.8 80.3,191.6 80.8,191.4 81.2,191.2 81.6,191 82.1,190.8 82.5,190.6 83,190.4 83.4,190.2 83.8,190 84.3,189.8 84.7,189.6 85.2,189.3 85.6,189.1 86,188.9 86.5,188.7 86.9,188.4 87.4,188.2 87.8,188 88.2,187.8 88.7,187.5 89.1,187.3 89.5,187 90,186.8 90.4,186.6 90.9,186.3 91.3,186.1 91.7,185.8 92.2,185.5 92.6,185.3 93.1,185 93.5,184.8 93.9,184.5 94.4,184.2 94.8,183.9 95.3,183.7 95.7,183.4 96.1,183.1 96.6,182.8 97,182.5 97.4,182.3 97.9,182 98.3,181.7 98.8,181.4 99.2,181.1 99.6,180.8 100.1,180.5 100.5,180.2 101,179.9 101.4,179.5 101.8,179.2 102.3,178.9 102.7,178.6 103.2,178.3 103.6,177.9 104,177.6 104.5,177.3 104.9,176.9 105.3,176.6 105.8,176.2 106.2,175.9 106.7,175.6 107.1,175.2 107.5,174.8 108,174.5 108.4,174.1 108.9,173.8 109.3,173.4 109.7,173 110.2,172.7 110.6,172.3 111.1,171.9 111.5,171.5 111.9,171.1 112.4,170.8 112.8,170.4 113.2,170 113.7,169.6 114.1,169.2 114.6,168.8 115,168.4 115.4,168 115.9,167.6 116.3,167.1 116.8,166.7 117.2,166.3 117.6,165.9 118.1,165.5 118.5,165 119,164.6 119.4,164.2 119.8,163.7 120.3,163.3 120.7,162.8 121.1,162.4 121.6,162 122,161.5 122.5,161 122.9,160.6 123.3,160.1 123.8,159.7 124.2,159.2 124.7,158.7 125.1,158.3 125.5,157.8 126,157.3 126.4,156.8 126.9,156.3 127.3,155.9 127.7,155.4 128.2,154.9 128.6,154.4 129,153.9 129.5,153.4 129.9,152.9 130.4,152.4 130.8,151.9 131.2,151.4 131.7,150.9 132.1,150.3 132.6,149.8 133,149.3 133.4,148.8 133.9,148.3 134.3,147.7 134.8,147.2 135.2,146.7 135.6,146.1 136.1,145.6 136.5,145 137,144.5 137.4,144 137.8,143.4 138.3,142.9 138.7,142.3 139.1,141.8 139.6,141.2 140,140.6 140.5,140.1 140.9,139.5 141.3,139 141.8,138.4 142.2,137.8 142.7,137.3 143.1,136.7 143.5,136.1 144,135.5 144.4,134.9 144.9,134.4 145.3,133.8 145.7,133.2 146.2,132.6 146.6,132 147,131.4 147.5,130.9 147.9,130.3 148.4,129.7 148.8,129.1 149.2,128.5 149.7,127.9 150.1,127.3 150.6,126.7 151,126.1 151.4,125.5 151.9,124.9 152.3,124.3 152.8,123.7 153.2,123 153.6,122.4 154.1,121.8 154.5,121.2 154.9,120.6 155.4,120 155.8,119.4 156.3,118.8 156.7,118.2 157.1,117.5 157.6,116.9 158,116.3 158.5,115.7 158.9,115.1 159.3,114.5 159.8,113.8 160.2,113.2 160.7,112.6 161.1,112 161.5,111.4 162,110.7 162.4,110.1 162.8,109.5 163.3,108.9 163.7,108.3 164.2,107.6 164.6,107 165,106.4 165.5,105.8 165.9,105.2 166.4,104.5 166.8,103.9 167.2,103.3 167.7,102.7 168.1,102.1 168.6,101.5 169,100.8 169.4,100.2 169.9,99.6 170.3,99 170.7,98.4 171.2,97.8 171.6,97.2 172.1,96.6 172.5,96 172.9,95.4 173.4,94.8 173.8,94.2 174.3,93.6 174.7,93 175.1,92.4 175.6,91.8 176,91.2 176.5,90.6 176.9,90 177.3,89.4 177.8,88.8 178.2,88.2 178.6,87.6 179.1,87 179.5,86.5 180,85.9 180.4,85.3 180.8,84.7 181.3,84.2 181.7,83.6 182.2,83 182.6,82.5 183,81.9 183.5,81.4 183.9,80.8 184.4,80.3 184.8,79.7 185.2,79.2 185.7,78.6 186.1,78.1 186.5,77.5 187,77 187.4,76.5 187.9,75.9 188.3,75.4 188.7,74.9 189.2,74.4 189.6,73.9 190.1,73.4 190.5,72.9 190.9,72.3 191.4,71.8 191.8,71.4 192.3,70.9 192.7,70.4 193.1,69.9 193.6,69.4 194,68.9 194.4,68.5 194.9,68 195.3,67.5 195.8,67.1 196.2,66.6 196.6,66.2 197.1,65.7 197.5,65.3 198,64.8 198.4,64.4 198.8,64 199.3,63.6 199.7,63.1 200.2,62.7 200.6,62.3 201,61.9 201.5,61.5 201.9,61.1 202.3,60.7 202.8,60.4 203.2,60 203.7,59.6 204.1,59.2 204.5,58.9 205,58.5 205.4,58.2 205.9,57.8 206.3,57.5 206.7,57.1 207.2,56.8 207.6,56.5 208.1,56.2 208.5,55.9 208.9,55.6 209.4,55.3 209.8,55 210.2,54.7 210.7,54.4 211.1,54.1 211.6,53.8 212,53.6 212.4,53.3 212.9,53 213.3,52.8 213.8,52.6 214.2,52.3 214.6,52.1 215.1,51.9 215.5,51.7 216,51.4 216.4,51.2 216.8,51 217.3,50.8 217.7,50.7 218.1,50.5 218.6,50.3 219,50.1 219.5,50 219.9,49.8 220.3,49.7 220.8,49.5 221.2,49.4 221.7,49.3 222.1,49.1 222.5,49 223,48.9 223.4,48.8 223.9,48.7 224.3,48.6 224.7,48.5 225.2,48.5 225.6,48.4 226,48.3 226.5,48.3 226.9,48.2 227.4,48.2 227.8,48.1 228.2,48.1 228.7,48.1 229.1,48.1 229.6,48.1 230,48.1 230.4,48.1 230.9,48.1 231.3,48.1 231.8,48.1 232.2,48.1 232.6,48.2 233.1,48.2 233.5,48.3 234,48.3 234.4,48.4 234.8,48.5 235.3,48.5 235.7,48.6 236.1,48.7 236.6,48.8 237,48.9 237.5,49 237.9,49.1 238.3,49.3 238.8,49.4 239.2,49.5 239.7,49.7 240.1,49.8 240.5,50 241,50.1 241.4,50.3 241.9,50.5 242.3,50.7 242.7,50.8 243.2,51 243.6,51.2 244,51.4 244.5,51.7 244.9,51.9 245.4,52.1 245.8,52.3 246.2,52.6 246.7,52.8 247.1,53 247.6,53.3 248,53.6 248.4,53.8 248.9,54.1 249.3,54.4 249.8,54.7 250.2,55 250.6,55.3 251.1,55.6 251.5,55.9 251.9,56.2 252.4,56.5 252.8,56.8 253.3,57.1 253.7,57.5 254.1,57.8 254.6,58.2 255,58.5 255.5,58.9 255.9,59.2 256.3,59.6 256.8,60 257.2,60.4 257.7,60.7 258.1,61.1 258.5,61.5 259,61.9 259.4,62.3 259.8,62.7 260.3,63.1 260.7,63.6 261.2,64 261.6,64.4 262,64.8 262.5,65.3 262.9,65.7 263.4,66.2 263.8,66.6 264.2,67.1 264.7,67.5 265.1,68 265.6,68.5 266,68.9 266.4,69.4 266.9,69.9 267.3,70.4 267.7,70.9 268.2,71.4 268.6,71.8 269.1,72.3 269.5,72.9 269.9,73.4 270.4,73.9 270.8,74.4 271.3,74.9 271.7,75.4 272.1,75.9 272.6,76.5 273,77 273.5,77.5 273.9,78.1 274.3,78.6 274.8,79.2 275.2,79.7 275.6,80.3 276.1,80.8 276.5,81.4 277,81.9 277.4,82.5 277.8,83 278.3,83.6 278.7,84.2 279.2,84.7 279.6,85.3 280,85.9 280.5,86.5 280.9,87 281.4,87.6 281.8,88.2 282.2,88.8 282.7,89.4 283.1,90 283.5,90.6 284,91.2 284.4,91.8 284.9,92.4 285.3,93 285.7,93.6 286.2,94.2 286.6,94.8 287.1,95.4 287.5,96 287.9,96.6 288.4,97.2 288.8,97.8 289.3,98.4 289.7,99 290.1,99.6 290.6,100.2 291,100.8 291.4,101.5 291.9,102.1 292.3,102.7 292.8,103.3 293.2,103.9 293.6,104.5 294.1,105.2 294.5,105.8 295,106.4 295.4,107 295.8,107.6 296.3,108.3 296.7,108.9 297.2,109.5 297.6,110.1 298,110.7 298.5,111.4 298.9,112 299.3,112.6 299.8,113.2 300.2,113.8 300.7,114.5 301.1,115.1 301.5,115.7 302,116.3 302.4,116.9 302.9,117.5 303.3,118.2 303.7,118.8 304.2,119.4 304.6,120 305.1,120.6 305.5,121.2 305.9,121.8 306.4,122.4 306.8,123 307.2,123.7 307.7,124.3 308.1,124.9 308.6,125.5 309,126.1 309.4,126.7 309.9,127.3 310.3,127.9 310.8,128.5 311.2,129.1 311.6,129.7 312.1,130.3 312.5,130.9 313,131.4 313.4,132 313.8,132.6 314.3,133.2 314.7,133.8 315.1,134.4 315.6,134.9 316,135.5 316.5,136.1 316.9,136.7 317.3,137.3 317.8,137.8 318.2,138.4 318.7,139 319.1,139.5 319.5,140.1 320,140.6 320.4,141.2 320.9,141.8 321.3,142.3 321.7,142.9 322.2,143.4 322.6,144 323,144.5 323.5,145 323.9,145.6 324.4,146.1 324.8,146.7 325.2,147.2 325.7,147.7 326.1,148.3 326.6,148.8 327,149.3 327.4,149.8 327.9,150.3 328.3,150.9 328.8,151.4 329.2,151.9 329.6,152.4 330.1,152.9 330.5,153.4 331,153.9 331.4,154.4 331.8,154.9 332.3,155.4 332.7,155.9 333.1,156.3 333.6,156.8 334,157.3 334.5,157.8 334.9,158.3 335.3,158.7 335.8,159.2 336.2,159.7 336.7,160.1 337.1,160.6 337.5,161 338,161.5 338.4,162 338.9,162.4 339.3,162.8 339.7,163.3 340.2,163.7 340.6,164.2 341,164.6 341.5,165 341.9,165.5 342.4,165.9 342.8,166.3 343.2,166.7 343.7,167.1 344.1,167.6 344.6,168 345,168.4 345.4,168.8 345.9,169.2 346.3,169.6 346.8,170 347.2,170.4 347.6,170.8 348.1,171.1 348.5,171.5 348.9,171.9 349.4,172.3 349.8,172.7 350.3,173 350.7,173.4 351.1,173.8 351.6,174.1 352,174.5 352.5,174.8 352.9,175.2 353.3,175.6 353.8,175.9 354.2,176.2 354.7,176.6 355.1,176.9 355.5,177.3 356,177.6 356.4,177.9 356.8,178.3 357.3,178.6 357.7,178.9 358.2,179.2 358.6,179.5 359,179.9 359.5,180.2 359.9,180.5 360.4,180.8 360.8,181.1 361.2,181.4 361.7,181.7 362.1,182 362.6,182.3 363,182.5 363.4,182.8 363.9,183.1 364.3,183.4 364.7,183.7 365.2,183.9 365.6,184.2 366.1,184.5 366.5,184.8 366.9,185 367.4,185.3 367.8,185.5 368.3,185.8 368.7,186.1 369.1,186.3 369.6,186.6 370,186.8 370.5,187 370.9,187.3 371.3,187.5 371.8,187.8 372.2,188 372.6,188.2 373.1,188.4 373.5,188.7 374,188.9 374.4,189.1 374.8,189.3 375.3,189.6 375.7,189.8 376.2,190 376.6,190.2 377,190.4 377.5,190.6 377.9,190.8 378.4,191 378.8,191.2 379.2,191.4 379.7,191.6 380.1,191.8 380.5,192 381,192.2 381.4,192.3 381.9,192.5 382.3,192.7 382.7,192.9 383.2,193.1 383.6,193.2 384.1,193.4 384.5,193.6 384.9,193.7 385.4,193.9 385.8,194.1 386.3,194.2 386.7,194.4 387.1,194.5 387.6,194.7 388,194.9 388.4,195 388.9,195.2 389.3,195.3 389.8,195.4 390.2,195.6 390.6,195.7 391.1,195.9 391.5,196 392,196.2 392.4,196.3 392.8,196.4 393.3,196.6 393.7,196.7 394.2,196.8 394.6,196.9 395,197.1 395.5,197.2 395.9,197.3 396.3,197.4 396.8,197.5 397.2,197.7 397.7,197.8 398.1,197.9 398.5,198 399,198.1 399.4,198.2 399.9,198.3 400.3,198.4 400.7,198.5 401.2,198.6 401.6,198.8 402.1,198.9 402.5,199 402.9,199 403.4,199.1 403.8,199.2 404.2,199.3 404.7,199.4 405.1,199.5 405.6,199.6 406,199.7 406.4,199.8 406.9,199.9 407.3,200 407.8,200 408.2,200.1 408.6,200.2 409.1,200.3 409.5,200.4 410,200.4 410.4,200.5 410.8,200.6 411.3,200.7 411.7,200.7 412.1,200.8 412.6,200.9 413,200.9 413.5,201 413.9,201.1 414.3,201.1 414.8,201.2 415.2,201.3 415.7,201.3 416.1,201.4 416.5,201.5 417,201.5 417.4,201.6 417.9,201.6 418.3,201.7 418.7,201.8 419.2,201.8 419.6,201.9 420,201.9 420.5,202 420.9,202 421.4,202.1 421.8,202.1 422.2,202.2 422.7,202.2 423.1,202.3 423.6,202.3 424,202.4 424.4,202.4 424.9,202.5 425.3,202.5 425.8,202.6 426.2,202.6 426.6,202.6 427.1,202.7 427.5,202.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></g><text x=\"442\" y=\"220.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">x</text><line x1=\"95.3\" y1=\"200.8\" x2=\"95.3\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"95.3\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">12</text><line x1=\"162.7\" y1=\"200.8\" x2=\"162.7\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"162.7\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">13.5</text><line x1=\"230\" y1=\"200.8\" x2=\"230\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"230\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">15</text><line x1=\"297.3\" y1=\"200.8\" x2=\"297.3\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"297.3\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">16.5</text><line x1=\"364.7\" y1=\"200.8\" x2=\"364.7\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"364.7\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">18</text><line x1=\"230\" y1=\"204.8\" x2=\"230\" y2=\"48.1\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"340\" y=\"194.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">16%</text><text x=\"63.9\" y=\"178.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">1%</text><text x=\"72.9\" y=\"236.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">11.5</text><text x=\"427.5\" y=\"238.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#475569\">time (min)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Sketch",
+              "note": "Centre 15, marks at ±σ and ±2σ, shade the 16% tail."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -11665,60 +11298,6 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"50%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif;height:auto;max-width:100%\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"260\" x2=\"545\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><path d=\"M75 255 C125 244 155 205 195 141 C225 93 255 70 300 68 C345 70 375 93 405 141 C445 205 475 244 535 255\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M300 68 C345 70 375 93 405 141 L405 260 L300 260 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><line x1=\"300\" y1=\"68\" x2=\"300\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"405\" y1=\"141\" x2=\"405\" y2=\"260\" stroke=\"#6366f1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"300\" y=\"284\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"405\" y=\"284\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0.67</text><text x=\"356\" y=\"213\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">area ≈ 0.25</text><text x=\"522\" y=\"248\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">z</text></svg>"
-          }
-        },
-        {
-          "id": "ascham2020-q33c",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "A number of people participated in a Swimming Championship and swim times were normally distributed. Swimmers who took longer than 16.5 minutes to complete the swim were disqualified. About 16% of swimmers were disqualified. The mean time to complete the race was 15 minutes. The fastest 1% of swimmers immediately qualify to move forward to the next level of competition. Use the probability tables for the standard normal distribution provided on pages 33 and 34 to determine the qualifying time.",
-          "options": [
-            "11.5 minutes",
-            "12.7 minutes",
-            "17.3 minutes",
-            "18.5 minutes"
-          ],
-          "answer": 0,
-          "hint": "The fastest times are in the lower 1% tail. Find the corresponding negative z-score, then convert back using x=μ+zσ.",
-          "keyPoints": [
-            {
-              "text": "fastest 1%",
-              "note": "The qualifying swimmers are in the lower 1% tail; find its negative z-value and convert with x=μ+zσ."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "The fastest 1% is the lower tail, so find z with P(Z<z)=0.01. The provided standard-normal table gives approximately z=−2.33.",
-              "work": "\\(z_{0.01}\\approx-2.33\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 640 350\" role=\"img\"><rect x=\"20\" y=\"20\" width=\"600\" height=\"310\" fill=\"#fff\" stroke=\"#e2e8f0\" stroke-width=\"1\" rx=\"8\"/><line x1=\"55\" y1=\"260\" x2=\"585\" y2=\"260\" stroke=\"#334155\" stroke-width=\"2\" /><path d=\"M260 260 L260 188 L260.4,139.5 L263.2,135.7 L266.0,131.9 L268.8,128.1 L271.6,124.5 L274.4,120.8 L277.2,117.3 L280.0,113.9 L282.8,110.5 L285.6,107.3 L288.4,104.2 L291.2,101.3 L294.0,98.5 L296.8,95.9 L299.6,93.4 L302.4,91.1 L305.2,89.0 L308.0,87.2 L310.8,85.5 L313.6,84.0 L316.4,82.8 L319.2,81.8 L322.0,81.0 L324.8,80.4 L327.6,80.1 L330.4,80.0 L333.2,80.2 L336.0,80.5 L338.8,81.2 L341.6,82.0 L344.4,83.1 L347.2,84.4 L350.0,85.9 L352.8,87.7 L355.6,89.6 L358.4,91.8 L361.2,94.1 L364.0,96.6 L366.8,99.3 L369.6,102.1 L372.4,105.1 L375.2,108.2 L378.0,111.5 L380.8,114.8 L383.6,118.3 L386.4,121.9 L389.2,125.5 L392.0,129.2 L394.8,133.0 L397.6,136.8 L400.4,140.6 L403.2,144.4 L406.0,148.3 L408.8,152.1 L411.6,155.9 L414.4,159.7 L417.2,163.5 L420.0,167.3 L422.8,170.9 L425.6,174.6 L428.4,178.1 L431.2,181.6 L434.0,185.0 L436.8,188.3 L439.6,191.6 L442.4,194.7 L445.2,197.7 L448.0,200.7 L450.8,203.5 L453.6,206.3 L456.4,208.9 L459.2,211.4 L462.0,213.9 L464.8,216.2 L467.6,218.4 L470.4,220.5 L473.2,222.5 L476.0,224.4 L478.8,226.2 L481.6,228.0 L484.4,229.6 L487.2,231.1 L490.0,232.5 L492.8,233.9 L495.6,235.1 L498.4,236.3 L501.2,237.4 L504.0,238.5 L506.8,239.4 L509.6,240.3 L512.4,241.2 L515.2,241.9 L518.0,242.7 L520.8,243.3 L523.6,243.9 L526.4,244.5 L529.2,245.0 L532.0,245.5 L534.8,245.9 L537.6,246.3 L540.4,246.7 L543.2,247.0 L546.0,247.3 L548.8,247.6 L551.6,247.8 L554.4,248.1 L557.2,248.3 L560.0,248.5 L562.8,248.6 L565.6,248.8 L568.4,248.9 L571.2,249.0 L574.0,249.1 L570 260 Z\" fill=\"#bbf7d0\" opacity=\".8\"/><polyline points=\"70.0,249.6 72.8,249.5 75.6,249.5 78.4,249.4 81.2,249.3 84.0,249.2 86.8,249.1 89.6,249.0 92.4,248.9 95.2,248.7 98.0,248.6 100.8,248.4 103.6,248.2 106.4,248.0 109.2,247.8 112.0,247.5 114.8,247.2 117.6,246.9 120.4,246.6 123.2,246.2 126.0,245.8 128.8,245.3 131.6,244.9 134.4,244.3 137.2,243.8 140.0,243.1 142.8,242.5 145.6,241.7 148.4,240.9 151.2,240.1 154.0,239.2 156.8,238.2 159.6,237.1 162.4,236.0 165.2,234.8 168.0,233.5 170.8,232.1 173.6,230.7 176.4,229.1 179.2,227.5 182.0,225.7 184.8,223.9 187.6,222.0 190.4,219.9 193.2,217.8 196.0,215.5 198.8,213.2 201.6,210.7 204.4,208.2 207.2,205.5 210.0,202.7 212.8,199.9 215.6,196.9 218.4,193.8 221.2,190.6 224.0,187.4 226.8,184.0 229.6,180.6 232.4,177.1 235.2,173.5 238.0,169.9 240.8,166.2 243.6,162.4 246.4,158.7 249.2,154.8 252.0,151.0 254.8,147.2 257.6,143.3 260.4,139.5 263.2,135.7 266.0,131.9 268.8,128.1 271.6,124.5 274.4,120.8 277.2,117.3 280.0,113.9 282.8,110.5 285.6,107.3 288.4,104.2 291.2,101.3 294.0,98.5 296.8,95.9 299.6,93.4 302.4,91.1 305.2,89.0 308.0,87.2 310.8,85.5 313.6,84.0 316.4,82.8 319.2,81.8 322.0,81.0 324.8,80.4 327.6,80.1 330.4,80.0 333.2,80.2 336.0,80.5 338.8,81.2 341.6,82.0 344.4,83.1 347.2,84.4 350.0,85.9 352.8,87.7 355.6,89.6 358.4,91.8 361.2,94.1 364.0,96.6 366.8,99.3 369.6,102.1 372.4,105.1 375.2,108.2 378.0,111.5 380.8,114.8 383.6,118.3 386.4,121.9 389.2,125.5 392.0,129.2 394.8,133.0 397.6,136.8 400.4,140.6 403.2,144.4 406.0,148.3 408.8,152.1 411.6,155.9 414.4,159.7 417.2,163.5 420.0,167.3 422.8,170.9 425.6,174.6 428.4,178.1 431.2,181.6 434.0,185.0 436.8,188.3 439.6,191.6 442.4,194.7 445.2,197.7 448.0,200.7 450.8,203.5 453.6,206.3 456.4,208.9 459.2,211.4 462.0,213.9 464.8,216.2 467.6,218.4 470.4,220.5 473.2,222.5 476.0,224.4 478.8,226.2 481.6,228.0 484.4,229.6 487.2,231.1 490.0,232.5 492.8,233.9 495.6,235.1 498.4,236.3 501.2,237.4 504.0,238.5 506.8,239.4 509.6,240.3 512.4,241.2 515.2,241.9 518.0,242.7 520.8,243.3 523.6,243.9 526.4,244.5 529.2,245.0 532.0,245.5 534.8,245.9 537.6,246.3 540.4,246.7 543.2,247.0 546.0,247.3 548.8,247.6 551.6,247.8 554.4,248.1 557.2,248.3 560.0,248.5 562.8,248.6 565.6,248.8 568.4,248.9 571.2,249.0 574.0,249.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"180\" y1=\"260\" x2=\"180\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"180\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ−2σ</text><line x1=\"255\" y1=\"260\" x2=\"255\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"255\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ−σ</text><line x1=\"330\" y1=\"260\" x2=\"330\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"330\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ</text><line x1=\"405\" y1=\"260\" x2=\"405\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"405\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ+σ</text><line x1=\"480\" y1=\"260\" x2=\"480\" y2=\"265\" stroke=\"#334155\" stroke-width=\"1\" /><text x=\"480\" y=\"287\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#334155\" >μ+2σ</text><text x=\"380\" y=\"72\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#15803d\" >84%</text></svg>"
-              }
-            },
-            {
-              "explain": "Standardize using \\(z=(x-\\mu)/\\sigma\\), with mean 15 and standard deviation 1.5.",
-              "work": "\\(x=\\mu+z\\sigma=15+(-2.33)(1.5)\\)"
-            },
-            {
-              "explain": "Calculate the cutoff time.",
-              "work": "\\(x=15-3.495=11.505\\text{ minutes}\\)"
-            },
-            {
-              "explain": "The qualifying time is approximately 11.5 minutes.",
-              "work": "\\(\\boxed{11.5\\text{ minutes (approximately)}}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 33,
-            "sourcePart": "c",
-            "sourcePage": null,
-            "sourceTopic": "y12a-10F"
           }
         },
         {
@@ -12615,6 +12194,63 @@
             "sourcePaper": "Y12 Advanced Topic by topic 005",
             "sourceQuestion": 15,
             "sourcePage": "286-287"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q33c",
+          "type": "mc",
+          "stem": "A number of people participated in a Swimming Championship and swim times were normally distributed. Swimmers who took longer than 16.5 minutes to complete the swim were disqualified. About 16% of swimmers were disqualified. The mean time to complete the race was 15 minutes. The fastest 1% of swimmers immediately qualify to move forward to the next level of competition. Use the probability tables for the standard normal distribution provided on pages 33 and 34 to determine the qualifying time.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><clipPath id=\"c29\"><rect x=\"28\" y=\"28\" width=\"404\" height=\"224\"/></clipPath><line x1=\"28\" y1=\"204.8\" x2=\"432\" y2=\"204.8\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M439,204.8 l-9,-4.5 v9z\" fill=\"#334155\"/><g clip-path=\"url(#c29)\"><polyline points=\"32.5,202.7 32.9,202.7 33.4,202.6 33.8,202.6 34.2,202.6 34.7,202.5 35.1,202.5 35.6,202.4 36,202.4 36.4,202.3 36.9,202.3 37.3,202.2 37.8,202.2 38.2,202.1 38.6,202.1 39.1,202 39.5,202 40,201.9 40.4,201.9 40.8,201.8 41.3,201.8 41.7,201.7 42.1,201.6 42.6,201.6 43,201.5 43.5,201.5 43.9,201.4 44.3,201.3 44.8,201.3 45.2,201.2 45.7,201.1 46.1,201.1 46.5,201 47,200.9 47.4,200.9 47.9,200.8 48.3,200.7 48.7,200.7 49.2,200.6 49.6,200.5 50,200.4 50.5,200.4 50.9,200.3 51.4,200.2 51.8,200.1 52.2,200 52.7,200 53.1,199.9 53.6,199.8 54,199.7 54.4,199.6 54.9,199.5 55.3,199.4 55.8,199.3 56.2,199.2 56.6,199.1 57.1,199 57.5,199 57.9,198.9 58.4,198.8 58.8,198.6 59.3,198.5 59.7,198.4 60.1,198.3 60.6,198.2 61,198.1 61.5,198 61.9,197.9 62.3,197.8 62.8,197.7 63.2,197.5 63.7,197.4 64.1,197.3 64.5,197.2 65,197.1 65.4,196.9 65.8,196.8 66.3,196.7 66.7,196.6 67.2,196.4 67.6,196.3 68,196.2 68.5,196 68.9,195.9 69.4,195.7 69.8,195.6 70.2,195.4 70.7,195.3 71.1,195.2 71.6,195 72,194.9 72.4,194.7 72.9,194.5 73.3,194.4 73.7,194.2 74.2,194.1 74.6,193.9 75.1,193.7 75.5,193.6 75.9,193.4 76.4,193.2 76.8,193.1 77.3,192.9 77.7,192.7 78.1,192.5 78.6,192.3 79,192.2 79.5,192 79.9,191.8 80.3,191.6 80.8,191.4 81.2,191.2 81.6,191 82.1,190.8 82.5,190.6 83,190.4 83.4,190.2 83.8,190 84.3,189.8 84.7,189.6 85.2,189.3 85.6,189.1 86,188.9 86.5,188.7 86.9,188.4 87.4,188.2 87.8,188 88.2,187.8 88.7,187.5 89.1,187.3 89.5,187 90,186.8 90.4,186.6 90.9,186.3 91.3,186.1 91.7,185.8 92.2,185.5 92.6,185.3 93.1,185 93.5,184.8 93.9,184.5 94.4,184.2 94.8,183.9 95.3,183.7 95.7,183.4 96.1,183.1 96.6,182.8 97,182.5 97.4,182.3 97.9,182 98.3,181.7 98.8,181.4 99.2,181.1 99.6,180.8 100.1,180.5 100.5,180.2 101,179.9 101.4,179.5 101.8,179.2 102.3,178.9 102.7,178.6 103.2,178.3 103.6,177.9 104,177.6 104.5,177.3 104.9,176.9 105.3,176.6 105.8,176.2 106.2,175.9 106.7,175.6 107.1,175.2 107.5,174.8 108,174.5 108.4,174.1 108.9,173.8 109.3,173.4 109.7,173 110.2,172.7 110.6,172.3 111.1,171.9 111.5,171.5 111.9,171.1 112.4,170.8 112.8,170.4 113.2,170 113.7,169.6 114.1,169.2 114.6,168.8 115,168.4 115.4,168 115.9,167.6 116.3,167.1 116.8,166.7 117.2,166.3 117.6,165.9 118.1,165.5 118.5,165 119,164.6 119.4,164.2 119.8,163.7 120.3,163.3 120.7,162.8 121.1,162.4 121.6,162 122,161.5 122.5,161 122.9,160.6 123.3,160.1 123.8,159.7 124.2,159.2 124.7,158.7 125.1,158.3 125.5,157.8 126,157.3 126.4,156.8 126.9,156.3 127.3,155.9 127.7,155.4 128.2,154.9 128.6,154.4 129,153.9 129.5,153.4 129.9,152.9 130.4,152.4 130.8,151.9 131.2,151.4 131.7,150.9 132.1,150.3 132.6,149.8 133,149.3 133.4,148.8 133.9,148.3 134.3,147.7 134.8,147.2 135.2,146.7 135.6,146.1 136.1,145.6 136.5,145 137,144.5 137.4,144 137.8,143.4 138.3,142.9 138.7,142.3 139.1,141.8 139.6,141.2 140,140.6 140.5,140.1 140.9,139.5 141.3,139 141.8,138.4 142.2,137.8 142.7,137.3 143.1,136.7 143.5,136.1 144,135.5 144.4,134.9 144.9,134.4 145.3,133.8 145.7,133.2 146.2,132.6 146.6,132 147,131.4 147.5,130.9 147.9,130.3 148.4,129.7 148.8,129.1 149.2,128.5 149.7,127.9 150.1,127.3 150.6,126.7 151,126.1 151.4,125.5 151.9,124.9 152.3,124.3 152.8,123.7 153.2,123 153.6,122.4 154.1,121.8 154.5,121.2 154.9,120.6 155.4,120 155.8,119.4 156.3,118.8 156.7,118.2 157.1,117.5 157.6,116.9 158,116.3 158.5,115.7 158.9,115.1 159.3,114.5 159.8,113.8 160.2,113.2 160.7,112.6 161.1,112 161.5,111.4 162,110.7 162.4,110.1 162.8,109.5 163.3,108.9 163.7,108.3 164.2,107.6 164.6,107 165,106.4 165.5,105.8 165.9,105.2 166.4,104.5 166.8,103.9 167.2,103.3 167.7,102.7 168.1,102.1 168.6,101.5 169,100.8 169.4,100.2 169.9,99.6 170.3,99 170.7,98.4 171.2,97.8 171.6,97.2 172.1,96.6 172.5,96 172.9,95.4 173.4,94.8 173.8,94.2 174.3,93.6 174.7,93 175.1,92.4 175.6,91.8 176,91.2 176.5,90.6 176.9,90 177.3,89.4 177.8,88.8 178.2,88.2 178.6,87.6 179.1,87 179.5,86.5 180,85.9 180.4,85.3 180.8,84.7 181.3,84.2 181.7,83.6 182.2,83 182.6,82.5 183,81.9 183.5,81.4 183.9,80.8 184.4,80.3 184.8,79.7 185.2,79.2 185.7,78.6 186.1,78.1 186.5,77.5 187,77 187.4,76.5 187.9,75.9 188.3,75.4 188.7,74.9 189.2,74.4 189.6,73.9 190.1,73.4 190.5,72.9 190.9,72.3 191.4,71.8 191.8,71.4 192.3,70.9 192.7,70.4 193.1,69.9 193.6,69.4 194,68.9 194.4,68.5 194.9,68 195.3,67.5 195.8,67.1 196.2,66.6 196.6,66.2 197.1,65.7 197.5,65.3 198,64.8 198.4,64.4 198.8,64 199.3,63.6 199.7,63.1 200.2,62.7 200.6,62.3 201,61.9 201.5,61.5 201.9,61.1 202.3,60.7 202.8,60.4 203.2,60 203.7,59.6 204.1,59.2 204.5,58.9 205,58.5 205.4,58.2 205.9,57.8 206.3,57.5 206.7,57.1 207.2,56.8 207.6,56.5 208.1,56.2 208.5,55.9 208.9,55.6 209.4,55.3 209.8,55 210.2,54.7 210.7,54.4 211.1,54.1 211.6,53.8 212,53.6 212.4,53.3 212.9,53 213.3,52.8 213.8,52.6 214.2,52.3 214.6,52.1 215.1,51.9 215.5,51.7 216,51.4 216.4,51.2 216.8,51 217.3,50.8 217.7,50.7 218.1,50.5 218.6,50.3 219,50.1 219.5,50 219.9,49.8 220.3,49.7 220.8,49.5 221.2,49.4 221.7,49.3 222.1,49.1 222.5,49 223,48.9 223.4,48.8 223.9,48.7 224.3,48.6 224.7,48.5 225.2,48.5 225.6,48.4 226,48.3 226.5,48.3 226.9,48.2 227.4,48.2 227.8,48.1 228.2,48.1 228.7,48.1 229.1,48.1 229.6,48.1 230,48.1 230.4,48.1 230.9,48.1 231.3,48.1 231.8,48.1 232.2,48.1 232.6,48.2 233.1,48.2 233.5,48.3 234,48.3 234.4,48.4 234.8,48.5 235.3,48.5 235.7,48.6 236.1,48.7 236.6,48.8 237,48.9 237.5,49 237.9,49.1 238.3,49.3 238.8,49.4 239.2,49.5 239.7,49.7 240.1,49.8 240.5,50 241,50.1 241.4,50.3 241.9,50.5 242.3,50.7 242.7,50.8 243.2,51 243.6,51.2 244,51.4 244.5,51.7 244.9,51.9 245.4,52.1 245.8,52.3 246.2,52.6 246.7,52.8 247.1,53 247.6,53.3 248,53.6 248.4,53.8 248.9,54.1 249.3,54.4 249.8,54.7 250.2,55 250.6,55.3 251.1,55.6 251.5,55.9 251.9,56.2 252.4,56.5 252.8,56.8 253.3,57.1 253.7,57.5 254.1,57.8 254.6,58.2 255,58.5 255.5,58.9 255.9,59.2 256.3,59.6 256.8,60 257.2,60.4 257.7,60.7 258.1,61.1 258.5,61.5 259,61.9 259.4,62.3 259.8,62.7 260.3,63.1 260.7,63.6 261.2,64 261.6,64.4 262,64.8 262.5,65.3 262.9,65.7 263.4,66.2 263.8,66.6 264.2,67.1 264.7,67.5 265.1,68 265.6,68.5 266,68.9 266.4,69.4 266.9,69.9 267.3,70.4 267.7,70.9 268.2,71.4 268.6,71.8 269.1,72.3 269.5,72.9 269.9,73.4 270.4,73.9 270.8,74.4 271.3,74.9 271.7,75.4 272.1,75.9 272.6,76.5 273,77 273.5,77.5 273.9,78.1 274.3,78.6 274.8,79.2 275.2,79.7 275.6,80.3 276.1,80.8 276.5,81.4 277,81.9 277.4,82.5 277.8,83 278.3,83.6 278.7,84.2 279.2,84.7 279.6,85.3 280,85.9 280.5,86.5 280.9,87 281.4,87.6 281.8,88.2 282.2,88.8 282.7,89.4 283.1,90 283.5,90.6 284,91.2 284.4,91.8 284.9,92.4 285.3,93 285.7,93.6 286.2,94.2 286.6,94.8 287.1,95.4 287.5,96 287.9,96.6 288.4,97.2 288.8,97.8 289.3,98.4 289.7,99 290.1,99.6 290.6,100.2 291,100.8 291.4,101.5 291.9,102.1 292.3,102.7 292.8,103.3 293.2,103.9 293.6,104.5 294.1,105.2 294.5,105.8 295,106.4 295.4,107 295.8,107.6 296.3,108.3 296.7,108.9 297.2,109.5 297.6,110.1 298,110.7 298.5,111.4 298.9,112 299.3,112.6 299.8,113.2 300.2,113.8 300.7,114.5 301.1,115.1 301.5,115.7 302,116.3 302.4,116.9 302.9,117.5 303.3,118.2 303.7,118.8 304.2,119.4 304.6,120 305.1,120.6 305.5,121.2 305.9,121.8 306.4,122.4 306.8,123 307.2,123.7 307.7,124.3 308.1,124.9 308.6,125.5 309,126.1 309.4,126.7 309.9,127.3 310.3,127.9 310.8,128.5 311.2,129.1 311.6,129.7 312.1,130.3 312.5,130.9 313,131.4 313.4,132 313.8,132.6 314.3,133.2 314.7,133.8 315.1,134.4 315.6,134.9 316,135.5 316.5,136.1 316.9,136.7 317.3,137.3 317.8,137.8 318.2,138.4 318.7,139 319.1,139.5 319.5,140.1 320,140.6 320.4,141.2 320.9,141.8 321.3,142.3 321.7,142.9 322.2,143.4 322.6,144 323,144.5 323.5,145 323.9,145.6 324.4,146.1 324.8,146.7 325.2,147.2 325.7,147.7 326.1,148.3 326.6,148.8 327,149.3 327.4,149.8 327.9,150.3 328.3,150.9 328.8,151.4 329.2,151.9 329.6,152.4 330.1,152.9 330.5,153.4 331,153.9 331.4,154.4 331.8,154.9 332.3,155.4 332.7,155.9 333.1,156.3 333.6,156.8 334,157.3 334.5,157.8 334.9,158.3 335.3,158.7 335.8,159.2 336.2,159.7 336.7,160.1 337.1,160.6 337.5,161 338,161.5 338.4,162 338.9,162.4 339.3,162.8 339.7,163.3 340.2,163.7 340.6,164.2 341,164.6 341.5,165 341.9,165.5 342.4,165.9 342.8,166.3 343.2,166.7 343.7,167.1 344.1,167.6 344.6,168 345,168.4 345.4,168.8 345.9,169.2 346.3,169.6 346.8,170 347.2,170.4 347.6,170.8 348.1,171.1 348.5,171.5 348.9,171.9 349.4,172.3 349.8,172.7 350.3,173 350.7,173.4 351.1,173.8 351.6,174.1 352,174.5 352.5,174.8 352.9,175.2 353.3,175.6 353.8,175.9 354.2,176.2 354.7,176.6 355.1,176.9 355.5,177.3 356,177.6 356.4,177.9 356.8,178.3 357.3,178.6 357.7,178.9 358.2,179.2 358.6,179.5 359,179.9 359.5,180.2 359.9,180.5 360.4,180.8 360.8,181.1 361.2,181.4 361.7,181.7 362.1,182 362.6,182.3 363,182.5 363.4,182.8 363.9,183.1 364.3,183.4 364.7,183.7 365.2,183.9 365.6,184.2 366.1,184.5 366.5,184.8 366.9,185 367.4,185.3 367.8,185.5 368.3,185.8 368.7,186.1 369.1,186.3 369.6,186.6 370,186.8 370.5,187 370.9,187.3 371.3,187.5 371.8,187.8 372.2,188 372.6,188.2 373.1,188.4 373.5,188.7 374,188.9 374.4,189.1 374.8,189.3 375.3,189.6 375.7,189.8 376.2,190 376.6,190.2 377,190.4 377.5,190.6 377.9,190.8 378.4,191 378.8,191.2 379.2,191.4 379.7,191.6 380.1,191.8 380.5,192 381,192.2 381.4,192.3 381.9,192.5 382.3,192.7 382.7,192.9 383.2,193.1 383.6,193.2 384.1,193.4 384.5,193.6 384.9,193.7 385.4,193.9 385.8,194.1 386.3,194.2 386.7,194.4 387.1,194.5 387.6,194.7 388,194.9 388.4,195 388.9,195.2 389.3,195.3 389.8,195.4 390.2,195.6 390.6,195.7 391.1,195.9 391.5,196 392,196.2 392.4,196.3 392.8,196.4 393.3,196.6 393.7,196.7 394.2,196.8 394.6,196.9 395,197.1 395.5,197.2 395.9,197.3 396.3,197.4 396.8,197.5 397.2,197.7 397.7,197.8 398.1,197.9 398.5,198 399,198.1 399.4,198.2 399.9,198.3 400.3,198.4 400.7,198.5 401.2,198.6 401.6,198.8 402.1,198.9 402.5,199 402.9,199 403.4,199.1 403.8,199.2 404.2,199.3 404.7,199.4 405.1,199.5 405.6,199.6 406,199.7 406.4,199.8 406.9,199.9 407.3,200 407.8,200 408.2,200.1 408.6,200.2 409.1,200.3 409.5,200.4 410,200.4 410.4,200.5 410.8,200.6 411.3,200.7 411.7,200.7 412.1,200.8 412.6,200.9 413,200.9 413.5,201 413.9,201.1 414.3,201.1 414.8,201.2 415.2,201.3 415.7,201.3 416.1,201.4 416.5,201.5 417,201.5 417.4,201.6 417.9,201.6 418.3,201.7 418.7,201.8 419.2,201.8 419.6,201.9 420,201.9 420.5,202 420.9,202 421.4,202.1 421.8,202.1 422.2,202.2 422.7,202.2 423.1,202.3 423.6,202.3 424,202.4 424.4,202.4 424.9,202.5 425.3,202.5 425.8,202.6 426.2,202.6 426.6,202.6 427.1,202.7 427.5,202.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></g><text x=\"442\" y=\"220.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">x</text><line x1=\"95.3\" y1=\"200.8\" x2=\"95.3\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"95.3\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">12</text><line x1=\"162.7\" y1=\"200.8\" x2=\"162.7\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"162.7\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">13.5</text><line x1=\"230\" y1=\"200.8\" x2=\"230\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"230\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">15</text><line x1=\"297.3\" y1=\"200.8\" x2=\"297.3\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"297.3\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">16.5</text><line x1=\"364.7\" y1=\"200.8\" x2=\"364.7\" y2=\"208.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"364.7\" y=\"221.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">18</text><line x1=\"230\" y1=\"204.8\" x2=\"230\" y2=\"48.1\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"427.5\" y=\"238.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#475569\">time (min)</text></svg>"
+          },
+          "options": [
+            "11.5 minutes",
+            "18.5 minutes",
+            "12.5 minutes",
+            "13.5 minutes"
+          ],
+          "answer": 0,
+          "hint": "The fastest 1% take the SHORTEST times, so the cut-off is in the LOWER tail: find the z-score with \\(P(Z<z)=0.01\\) in the table, then convert with \\(x=\\mu+z\\sigma\\).",
+          "steps": [
+            {
+              "explain": "Fastest 1% means \\(P(Z<z)=0.01\\). Look inside the table (the row for \\(z=-2.3\\)) for the value closest to \\(0.0100\\).",
+              "work": "\\(0.0099\\ (z=-2.33)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 116\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"60\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"32\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">z</text><rect x=\"62\" y=\"2\" width=\"64\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"94\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.00</text><rect x=\"126\" y=\"2\" width=\"64\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"158\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.01</text><rect x=\"190\" y=\"2\" width=\"64\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"222\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.02</text><rect x=\"254\" y=\"2\" width=\"64\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"286\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.03</text><rect x=\"318\" y=\"2\" width=\"64\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"350\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.04</text><rect x=\"2\" y=\"30\" width=\"60\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"32\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">−2.4</text><rect x=\"62\" y=\"30\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"94\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0082</text><rect x=\"126\" y=\"30\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"158\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0080</text><rect x=\"190\" y=\"30\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"222\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0078</text><rect x=\"254\" y=\"30\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"286\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0075</text><rect x=\"318\" y=\"30\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"350\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0073</text><rect x=\"2\" y=\"58\" width=\"60\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"32\" y=\"76.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">−2.3</text><rect x=\"62\" y=\"58\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"94\" y=\"76.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0107</text><rect x=\"126\" y=\"58\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"158\" y=\"76.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0104</text><rect x=\"190\" y=\"58\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"222\" y=\"76.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0102</text><rect x=\"254\" y=\"58\" width=\"64\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"286\" y=\"76.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0099</text><rect x=\"318\" y=\"58\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"350\" y=\"76.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0096</text><rect x=\"2\" y=\"86\" width=\"60\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"32\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">−2.2</text><rect x=\"62\" y=\"86\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"94\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0139</text><rect x=\"126\" y=\"86\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"158\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0136</text><rect x=\"190\" y=\"86\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"222\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0132</text><rect x=\"254\" y=\"86\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"286\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0129</text><rect x=\"318\" y=\"86\" width=\"64\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"350\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">0.0125</text></svg>"
+              }
+            },
+            {
+              "explain": "The closest entry is \\(0.0099\\) in row \\(-2.3\\), column \\(0.03\\).",
+              "work": "\\(z=-2.33\\)"
+            },
+            {
+              "explain": "Convert to a time (the z-score formula \\(z=\\dfrac{x-\\mu}{\\sigma}\\) rearranged).",
+              "work": "\\(x=\\mu+z\\sigma=15+(-2.33)(1.5)\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(x=15-3.495=11.505\\ldots\\approx11.5\\ \\text{minutes}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: 11.5 is below the mean 15 ✓ (fast swimmers have SHORT times); 18.5 would be the slowest 1%.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "fastest 1%",
+              "note": "Lower tail: z with P(Z < z) = 0.01 is about −2.33."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "The standard normal tables (pages 33–34 of the source) are not reproduced; the relevant row (z = −2.3) is shown in the solution."
           }
         }
       ]
