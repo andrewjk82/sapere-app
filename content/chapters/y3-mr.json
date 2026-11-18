@@ -5658,6 +5658,831 @@
             "page": 38,
             "question": "3i"
           }
+        },
+        {
+          "id": "y3-mr-3-mp14-q4a",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 8 ÷ 4 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">8 ÷ 4 = ?</text></svg>"
+          },
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Share the 8 dots equally into 4 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 8,\\quad \\text{Rows} = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"122\" y=\"24\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"44\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"64\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"84\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">8 ÷ 4 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 2 dots in each row.",
+              "work": "\\(8 \\div 4 = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"122\" y=\"24\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"44\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"64\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"84\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">8 ÷ 4 = 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 4 × 2 = 8.",
+              "work": "\\(\\text{Check: } 4 \\times 2 = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"122\" y=\"24\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"44\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"64\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"84\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">8 ÷ 4 = 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 8 ÷ 4 = 2.",
+              "work": "\\(\\text{Answer: } 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"122\" y=\"24\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"44\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"64\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"122\" y=\"84\" width=\"46\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">8 ÷ 4 = 2</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 4 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "8 ÷ 4",
+              "note": "Divide 8 dots into 4 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4b",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 12 ÷ 3 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">12 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 12 dots equally into 3 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 12,\\quad \\text{Rows} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">12 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 4 dots in each row.",
+              "work": "\\(12 \\div 3 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 3 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 3 × 4 = 12.",
+              "work": "\\(\\text{Check: } 3 \\times 4 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 3 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 12 ÷ 3 = 4.",
+              "work": "\\(\\text{Answer: } 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 3 = 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 3 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "12 ÷ 3",
+              "note": "Divide 12 dots into 3 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4c",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 15 ÷ 3 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">15 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Share the 15 dots equally into 3 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 15,\\quad \\text{Rows} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">15 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 5 dots in each row.",
+              "work": "\\(15 \\div 3 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 3 × 5 = 15.",
+              "work": "\\(\\text{Check: } 3 \\times 5 = 15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 15 ÷ 3 = 5.",
+              "work": "\\(\\text{Answer: } 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 3 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "15 ÷ 3",
+              "note": "Divide 15 dots into 3 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4d",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 18 ÷ 3 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">18 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Share the 18 dots equally into 3 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 18,\\quad \\text{Rows} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">18 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 6 dots in each row.",
+              "work": "\\(18 \\div 3 = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">18 ÷ 3 = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 3 × 6 = 18.",
+              "work": "\\(\\text{Check: } 3 \\times 6 = 18\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">18 ÷ 3 = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 18 ÷ 3 = 6.",
+              "work": "\\(\\text{Answer: } 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">18 ÷ 3 = 6</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 3 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "18 ÷ 3",
+              "note": "Divide 18 dots into 3 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4e",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 9 ÷ 3 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">9 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 9 dots equally into 3 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 9,\\quad \\text{Rows} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"34\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"54\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"74\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">9 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 3 dots in each row.",
+              "work": "\\(9 \\div 3 = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"34\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"54\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"74\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">9 ÷ 3 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 3 × 3 = 9.",
+              "work": "\\(\\text{Check: } 3 \\times 3 = 9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"34\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"54\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"74\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">9 ÷ 3 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 9 ÷ 3 = 3.",
+              "work": "\\(\\text{Answer: } 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"34\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"54\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"111\" y=\"74\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">9 ÷ 3 = 3</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 3 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "9 ÷ 3",
+              "note": "Divide 9 dots into 3 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4f",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 16 ÷ 4 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">16 ÷ 4 = ?</text></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 16 dots equally into 4 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 16,\\quad \\text{Rows} = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">16 ÷ 4 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 4 dots in each row.",
+              "work": "\\(16 \\div 4 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">16 ÷ 4 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 4 × 4 = 16.",
+              "work": "\\(\\text{Check: } 4 \\times 4 = 16\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">16 ÷ 4 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 16 ÷ 4 = 4.",
+              "work": "\\(\\text{Answer: } 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">16 ÷ 4 = 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 4 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "16 ÷ 4",
+              "note": "Divide 16 dots into 4 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4g",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 20 ÷ 5 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"112\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">20 ÷ 5 = ?</text></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 20 dots equally into 5 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 20,\\quad \\text{Rows} = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"14\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"94\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">20 ÷ 5 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 4 dots in each row.",
+              "work": "\\(20 \\div 5 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"14\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"94\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">20 ÷ 5 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 5 × 4 = 20.",
+              "work": "\\(\\text{Check: } 5 \\times 4 = 20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"14\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"94\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">20 ÷ 5 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 20 ÷ 5 = 4.",
+              "work": "\\(\\text{Answer: } 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"14\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"23\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"34\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"54\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"74\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"94\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"103\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">20 ÷ 5 = 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 5 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "20 ÷ 5",
+              "note": "Divide 20 dots into 5 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4h",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 24 ÷ 6 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"112\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"112\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">24 ÷ 6 = ?</text></svg>"
+          },
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 24 dots equally into 6 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 24,\\quad \\text{Rows} = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"4\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"104\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">24 ÷ 6 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 4 dots in each row.",
+              "work": "\\(24 \\div 6 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"4\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"104\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">24 ÷ 6 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 6 × 4 = 24.",
+              "work": "\\(\\text{Check: } 6 \\times 4 = 24\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"4\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"104\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">24 ÷ 6 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 24 ÷ 6 = 4.",
+              "work": "\\(\\text{Answer: } 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"100\" y=\"4\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"13\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"24\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"33\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"44\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"53\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"64\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"73\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"84\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"93\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"100\" y=\"104\" width=\"90\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"112\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"134\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"156\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"178\" cy=\"113\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">24 ÷ 6 = 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 6 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "24 ÷ 6",
+              "note": "Divide 24 dots into 6 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4i",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 12 ÷ 4 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">12 ÷ 4 = ?</text></svg>"
+          },
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 12 dots equally into 4 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 12,\\quad \\text{Rows} = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">12 ÷ 4 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 3 dots in each row.",
+              "work": "\\(12 \\div 4 = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 4 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 4 × 3 = 12.",
+              "work": "\\(\\text{Check: } 4 \\times 3 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 4 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 12 ÷ 4 = 3.",
+              "work": "\\(\\text{Answer: } 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 4 = 3</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 4 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "12 ÷ 4",
+              "note": "Divide 12 dots into 4 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4j",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 20 ÷ 4 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">20 ÷ 4 = ?</text></svg>"
+          },
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 20 dots equally into 4 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 20,\\quad \\text{Rows} = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">20 ÷ 4 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 5 dots in each row.",
+              "work": "\\(20 \\div 4 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">20 ÷ 4 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 4 × 5 = 20.",
+              "work": "\\(\\text{Check: } 4 \\times 5 = 20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">20 ÷ 4 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 20 ÷ 4 = 5.",
+              "work": "\\(\\text{Answer: } 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">20 ÷ 4 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 4 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "20 ÷ 4",
+              "note": "Divide 20 dots into 4 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4k",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 25 ÷ 5 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">25 ÷ 5 = ?</text></svg>"
+          },
+          "options": [
+            "4",
+            "5",
+            "6",
+            "10"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 25 dots equally into 5 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 25,\\quad \\text{Rows} = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"14\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"94\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">25 ÷ 5 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 5 dots in each row.",
+              "work": "\\(25 \\div 5 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"14\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"94\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">25 ÷ 5 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 5 × 5 = 25.",
+              "work": "\\(\\text{Check: } 5 \\times 5 = 25\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"14\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"94\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">25 ÷ 5 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 25 ÷ 5 = 5.",
+              "work": "\\(\\text{Answer: } 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"14\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"23\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"94\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"103\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">25 ÷ 5 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 5 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "25 ÷ 5",
+              "note": "Divide 25 dots into 5 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q4l",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Use the dot array to solve the division fact: 30 ÷ 6 = ?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">30 ÷ 6 = ?</text></svg>"
+          },
+          "options": [
+            "4",
+            "5",
+            "6",
+            "10"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 30 dots equally into 6 horizontal rows.",
+              "work": "\\(\\text{Total dots} = 30,\\quad \\text{Rows} = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"4\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"104\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">30 ÷ 6 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count how many dots are in each row: there are 5 dots in each row.",
+              "work": "\\(30 \\div 6 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"4\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"104\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">30 ÷ 6 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check using multiplication: 6 × 5 = 30.",
+              "work": "\\(\\text{Check: } 6 \\times 5 = 30\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"4\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"104\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">30 ÷ 6 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 30 ÷ 6 = 5.",
+              "work": "\\(\\text{Answer: } 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"4\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"13\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"24\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"33\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"84\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"93\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"104\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"113\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">30 ÷ 6 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "The array has 6 equal rows of dots. Count how many dots are in 1 row.",
+          "keyPoints": [
+            {
+              "text": "30 ÷ 6",
+              "note": "Divide 30 dots into 6 equal rows."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q5a",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Which array description correctly models the division number sentence 10 ÷ 2 = 5?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">10 ÷ 2 = ?</text></svg>"
+          },
+          "options": [
+            "2 rows with 5 dots in each row",
+            "2 rows with 2 dots in each row",
+            "5 rows with 5 dots in each row",
+            "10 rows with 2 dots in each row"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "In 10 ÷ 2 = 5, the total number of dots is 10, shared into 2 equal rows.",
+              "work": "\\(\\text{Total} = 10,\\quad \\text{Rows} = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">10 ÷ 2 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Each of the 2 rows holds 5 dots, giving 2 × 5 = 10.",
+              "work": "\\(2\\text{ rows of } 5 = 10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">10 ÷ 2 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other choices: their row and column counts do not multiply to 10.",
+              "work": "\\(10 \\div 2 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">10 ÷ 2 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 2 rows with 5 dots in each row is correct.",
+              "work": "\\(\\text{Answer: 2 rows with 5 dots in each row}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">10 ÷ 2 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "Check which option has the correct number of rows and dots per row so that rows × dots per row equals the total.",
+          "keyPoints": [
+            {
+              "text": "10 ÷ 2 = 5",
+              "note": "10 shared into 2 equal rows gives 5 in each row."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q5b",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Which array description correctly models the division number sentence 15 ÷ 3 = 5?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">15 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "3 rows with 3 dots in each row",
+            "3 rows with 5 dots in each row",
+            "5 rows with 5 dots in each row",
+            "15 rows with 3 dots in each row"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "In 15 ÷ 3 = 5, the total number of dots is 15, shared into 3 equal rows.",
+              "work": "\\(\\text{Total} = 15,\\quad \\text{Rows} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">15 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Each of the 3 rows holds 5 dots, giving 3 × 5 = 15.",
+              "work": "\\(3\\text{ rows of } 5 = 15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other choices: their row and column counts do not multiply to 15.",
+              "work": "\\(15 \\div 3 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 3 rows with 5 dots in each row is correct.",
+              "work": "\\(\\text{Answer: 3 rows with 5 dots in each row}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "Check which option has the correct number of rows and dots per row so that rows × dots per row equals the total.",
+          "keyPoints": [
+            {
+              "text": "15 ÷ 3 = 5",
+              "note": "15 shared into 3 equal rows gives 5 in each row."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-3-mp14-q5c",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Which array description correctly models the division number sentence 18 ÷ 3 = 6?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">18 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "3 rows with 5 dots in each row",
+            "6 rows with 6 dots in each row",
+            "3 rows with 6 dots in each row",
+            "2 rows with 6 dots in each row"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "In 18 ÷ 3 = 6, the total number of dots is 18, shared into 3 equal rows.",
+              "work": "\\(\\text{Total} = 18,\\quad \\text{Rows} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">18 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Each of the 3 rows holds 6 dots, giving 3 × 6 = 18.",
+              "work": "\\(3\\text{ rows of } 6 = 18\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">18 ÷ 3 = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other choices: their row and column counts do not multiply to 18.",
+              "work": "\\(18 \\div 3 = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">18 ÷ 3 = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 3 rows with 6 dots in each row is correct.",
+              "work": "\\(\\text{Answer: 3 rows with 6 dots in each row}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"78\" y=\"34\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"43\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"54\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"63\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"78\" y=\"74\" width=\"134\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"90\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"112\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"134\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"156\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"178\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"200\" cy=\"83\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">18 ÷ 3 = 6</text></svg>"
+              }
+            }
+          ],
+          "hint": "Check which option has the correct number of rows and dots per row so that rows × dots per row equals the total.",
+          "keyPoints": [
+            {
+              "text": "18 ÷ 3 = 6",
+              "note": "18 shared into 3 equal rows gives 6 in each row."
+            }
+          ],
+          "difficulty": "easy"
         }
       ]
     },
@@ -7144,6 +7969,226 @@
             {
               "text": "6 pencils",
               "note": "Multiply the two numbers together to find the total."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-5-mp14-q6a",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Ten marbles were shared equally between two girls. How many marbles did each girl receive?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">10 ÷ 2 = ?</text></svg>"
+          },
+          "options": [
+            "4 marbles",
+            "5 marbles",
+            "6 marbles",
+            "8 marbles"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 10 counters into 2 equal rows (one row per person).",
+              "work": "\\(10 \\div 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">10 ÷ 2 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the counters in each row: 10 ÷ 2 = 5.",
+              "work": "\\(10 \\div 2 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">10 ÷ 2 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by multiplying: 2 × 5 = 10.",
+              "work": "\\(2 \\times 5 = 10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">10 ÷ 2 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Each person received 5 marbles.",
+              "work": "\\(\\text{Answer: 5 marbles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"44\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#2563eb\"/><rect x=\"89\" y=\"64\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#2563eb\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">10 ÷ 2 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide the total number (10) by the number of people (2).",
+          "keyPoints": [
+            {
+              "text": "shared equally",
+              "note": "Use division (10 ÷ 2) to find each equal share."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-5-mp14-q6b",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Fifteen toys were shared equally among three children. How many toys did each child receive?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">15 ÷ 3 = ?</text></svg>"
+          },
+          "options": [
+            "3 toys",
+            "4 toys",
+            "5 toys",
+            "6 toys"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Share the 15 counters into 3 equal rows (one row per person).",
+              "work": "\\(15 \\div 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">15 ÷ 3 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the counters in each row: 15 ÷ 3 = 5.",
+              "work": "\\(15 \\div 3 = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by multiplying: 3 × 5 = 15.",
+              "work": "\\(3 \\times 5 = 15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Each person received 5 toys.",
+              "work": "\\(\\text{Answer: 5 toys}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"89\" y=\"34\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"43\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"54\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"63\" r=\"6.5\" fill=\"#ef4444\"/><rect x=\"89\" y=\"74\" width=\"112\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"101\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"123\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"145\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"167\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><circle cx=\"189\" cy=\"83\" r=\"6.5\" fill=\"#ef4444\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">15 ÷ 3 = 5</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide the total number (15) by the number of people (3).",
+          "keyPoints": [
+            {
+              "text": "shared equally",
+              "note": "Use division (15 ÷ 3) to find each equal share."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-5-mp14-q6c",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Fourteen pencils were shared equally between two girls. How many pencils did each girl receive?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"79\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"79\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">14 ÷ 2 = ?</text></svg>"
+          },
+          "options": [
+            "6 pencils",
+            "7 pencils",
+            "8 pencils",
+            "12 pencils"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 14 counters into 2 equal rows (one row per person).",
+              "work": "\\(14 \\div 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"67\" y=\"44\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"67\" y=\"64\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">14 ÷ 2 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the counters in each row: 14 ÷ 2 = 7.",
+              "work": "\\(14 \\div 2 = 7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"67\" y=\"44\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"67\" y=\"64\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">14 ÷ 2 = 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by multiplying: 2 × 7 = 14.",
+              "work": "\\(2 \\times 7 = 14\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"67\" y=\"44\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"67\" y=\"64\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">14 ÷ 2 = 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Each person received 7 pencils.",
+              "work": "\\(\\text{Answer: 7 pencils}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"67\" y=\"44\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"53\" r=\"6.5\" fill=\"#15803d\"/><rect x=\"67\" y=\"64\" width=\"156\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"101\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"189\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><circle cx=\"211\" cy=\"73\" r=\"6.5\" fill=\"#15803d\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">14 ÷ 2 = 7</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide the total number (14) by the number of people (2).",
+          "keyPoints": [
+            {
+              "text": "shared equally",
+              "note": "Use division (14 ÷ 2) to find each equal share."
+            }
+          ],
+          "difficulty": "easy"
+        },
+        {
+          "id": "y3-mr-5-mp14-q6d",
+          "type": "mc",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Twelve stickers were shared equally among four children. How many stickers did each child receive?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">12 ÷ 4 = ?</text></svg>"
+          },
+          "options": [
+            "2 stickers",
+            "3 stickers",
+            "4 stickers",
+            "6 stickers"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Share the 12 counters into 4 equal rows (one row per person).",
+              "work": "\\(12 \\div 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">12 ÷ 4 = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the counters in each row: 12 ÷ 4 = 3.",
+              "work": "\\(12 \\div 4 = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 4 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by multiplying: 4 × 3 = 12.",
+              "work": "\\(4 \\times 3 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 4 = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Each person received 3 stickers.",
+              "work": "\\(\\text{Answer: 3 stickers}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"147\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"111\" y=\"24\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"33\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"44\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"53\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"64\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"73\" r=\"6.5\" fill=\"#eab308\"/><rect x=\"111\" y=\"84\" width=\"68\" height=\"18\" rx=\"6\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1.2\"/><circle cx=\"123\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"145\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><circle cx=\"167\" cy=\"93\" r=\"6.5\" fill=\"#eab308\"/><text x=\"145\" y=\"138\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">12 ÷ 4 = 3</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide the total number (12) by the number of people (4).",
+          "keyPoints": [
+            {
+              "text": "shared equally",
+              "note": "Use division (12 ÷ 4) to find each equal share."
             }
           ],
           "difficulty": "easy"
