@@ -364,6 +364,274 @@
             "school": "Abbotsleigh",
             "year": 2020
           }
+        },
+        {
+          "id": "barker2023-y11e1-q2",
+          "type": "mc",
+          "stem": "In how many ways can the letters of the word ROAMING be arranged if the new word must end in a vowel?",
+          "difficulty": "medium",
+          "options": [
+            "720",
+            "2160",
+            "4320",
+            "5040"
+          ],
+          "answer": 1,
+          "hint": "Fix the LAST position first (it must be a vowel), then arrange the other letters freely. ROAMING has 7 DIFFERENT letters.",
+          "steps": [
+            {
+              "explain": "List the letters: \\(R, O, A, M, I, N, G\\) — all different. The vowels are <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">O, A, I</mark> (3 vowels).",
+              "work": "7 distinct letters, 3 vowels"
+            },
+            {
+              "explain": "Choose the LAST letter: it must be a vowel.",
+              "work": "\\(3\\ \\text{choices}\\)"
+            },
+            {
+              "explain": "The remaining 6 letters fill the first 6 positions in any order.",
+              "work": "\\(6! = 720\\)"
+            },
+            {
+              "explain": "Multiply (multiplication principle).",
+              "work": "\\(3 \\times 6! = 3 \\times 720 = 2160\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "must end in a vowel",
+              "note": "Fix the last letter first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q12c1",
+          "type": "mc",
+          "stem": "A three-letter code is to be created by using each of the 5 letters of the word SLEEP at most once each. How many three-letter codes can be made if the code must contain both Es?",
+          "difficulty": "medium",
+          "options": [
+            "6",
+            "9",
+            "12",
+            "24"
+          ],
+          "answer": 1,
+          "hint": "Both Es are used, so only ONE other letter is chosen (from S, L, P). Then arrange the 3 letters, remembering the two Es are identical.",
+          "steps": [
+            {
+              "explain": "Letters: \\(S, L, E, E, P\\). The code has the two Es plus ONE more letter from \\(S, L, P\\).",
+              "work": "\\(3\\ \\text{choices}\\)"
+            },
+            {
+              "explain": "Arrange the 3 letters \\(E,E,X\\) in a row: the two Es are identical so divide by \\(2!\\).",
+              "work": "\\(\\dfrac{3!}{2!}=3\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(3\\times3=9\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "contain both Es",
+              "note": "Choose the one other letter, then arrange."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q12c2",
+          "type": "mc",
+          "stem": "A three-letter code is to be created by using each of the 5 letters of the word SLEEP at most once each. How many three-letter codes can be made if each letter must be distinct?",
+          "difficulty": "easy",
+          "options": [
+            "12",
+            "24",
+            "60",
+            "125"
+          ],
+          "answer": 1,
+          "hint": "Distinct letters means \\(E\\) is used at most once, so there are only 4 different letters: \\(S, L, E, P\\).",
+          "steps": [
+            {
+              "explain": "Only 4 DIFFERENT letters are available.",
+              "work": "\\(S, L, E, P\\)"
+            },
+            {
+              "explain": "Fill three positions in order without repeats.",
+              "work": "\\(4\\times3\\times2\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(=24\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "each letter must be distinct",
+              "note": "Use only the 4 different letters."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q12c3",
+          "type": "mc",
+          "stem": "A three-letter code is to be created by using each of the 5 letters of the word SLEEP at most once each. Hence, find the total number of three-letter codes that can be made.",
+          "difficulty": "medium",
+          "options": [
+            "24",
+            "33",
+            "9",
+            "57"
+          ],
+          "answer": 1,
+          "hint": "Every code is EITHER all-distinct OR contains both Es — these cases do not overlap. Add the previous two answers.",
+          "steps": [
+            {
+              "explain": "Cases: no repeated letter (all distinct) OR both Es (the only way to have a repeat).",
+              "work": "\\(\\text{distinct}=24,\\quad \\text{both Es}=9\\)"
+            },
+            {
+              "explain": "Why they do not overlap: a code with both Es repeats a letter, so it is never in the all-distinct case.",
+              "work": "no double counting"
+            },
+            {
+              "explain": "The cases cannot overlap, so ADD.",
+              "work": "\\(24+9=33\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "total number",
+              "note": "Add the two disjoint cases."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q13b1",
+          "type": "mc",
+          "stem": "10 friends go to the cinemas to watch a movie. They book two rows of seats to sit together. The first row of seats contains six seats and the second row of seats contains four seats. How many ways can the friends sit: without any restrictions?",
+          "difficulty": "easy",
+          "options": [
+            "3 628 800",
+            "1 814 400",
+            "210",
+            "720"
+          ],
+          "answer": 0,
+          "hint": "10 different people fill 10 different seats — every arrangement counts, so it is just \\(10!\\).",
+          "steps": [
+            {
+              "explain": "10 people, 10 distinct seats (6 + 4).",
+              "work": "all seats are different positions"
+            },
+            {
+              "explain": "First seat 10 choices, next 9, …, last 1.",
+              "work": "\\(10\\times9\\times\\cdots\\times1=10!\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(10!=3\\,628\\,800\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "without any restrictions",
+              "note": "10 people into 10 seats = 10!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q13b2",
+          "type": "mc",
+          "stem": "10 friends go to the cinemas to watch a movie. They book two rows of seats to sit together. The first row of seats contains six seats and the second row of seats contains four seats. How many ways can the friends sit: if Daniel, Greg, and Jodi must sit next to each other in the same row?",
+          "difficulty": "hard",
+          "options": [
+            "181 440",
+            "120 960",
+            "60 480",
+            "362 880"
+          ],
+          "answer": 0,
+          "hint": "Treat the three friends as ONE block (arranged in \\(3!\\) ways). Count the block positions in the 6-seat row and in the 4-seat row separately, then ADD the cases; the other 7 friends fill the remaining seats in \\(7!\\) ways.",
+          "steps": [
+            {
+              "explain": "Case 1: the block sits in the ROW OF 6. Positions for 3 adjacent seats in 6: \\(6-3+1=4\\).",
+              "work": "\\(4\\text{ positions}\\times3!=4\\times6=24\\)"
+            },
+            {
+              "explain": "Case 2: the block sits in the ROW OF 4. Positions: \\(4-3+1=2\\).",
+              "work": "\\(2\\times3!=12\\)"
+            },
+            {
+              "explain": "The other 7 friends fill the 7 remaining seats (in either case).",
+              "work": "\\(7!=5040\\)"
+            },
+            {
+              "explain": "Case 1 total.",
+              "work": "\\(24\\times5040=120\\,960\\)"
+            },
+            {
+              "explain": "Case 2 total.",
+              "work": "\\(12\\times5040=60\\,480\\)"
+            },
+            {
+              "explain": "Add the two cases (the block is in one row or the other).",
+              "work": "\\(120\\,960+60\\,480=181\\,440\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "must sit next to each other",
+              "note": "Treat the three as one block, then count the rows separately."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -509,6 +777,52 @@
               ]
             }
           ]
+        },
+        {
+          "id": "barker2023-y11e1-q4",
+          "type": "mc",
+          "stem": "How many different arrangements of the letters of the word EXTENSION are possible?",
+          "difficulty": "medium",
+          "options": [
+            "15 120",
+            "90 720",
+            "181 440",
+            "362 880"
+          ],
+          "answer": 1,
+          "hint": "Count ALL the letters, then DIVIDE by the factorial of each repeated letter: \\(\\dfrac{n!}{p!\\,q!}\\).",
+          "steps": [
+            {
+              "explain": "Write out the letters of EXTENSION and count them.",
+              "work": "\\(E, X, T, E, N, S, I, O, N\\) → 9 letters"
+            },
+            {
+              "explain": "Find the repeated letters: <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">E appears 2 times</mark> and <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">N appears 2 times</mark>; X, T, S, I, O appear once.",
+              "work": "E × 2,  N × 2"
+            },
+            {
+              "explain": "If all 9 letters were different there would be \\(9!\\) arrangements. Swapping the two E's (or the two N's) gives the same word, so divide by \\(2!\\) for each.",
+              "work": "\\(\\dfrac{9!}{2!\\,2!}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(\\dfrac{362\\,880}{2 \\times 2} = 90\\,720\\)  ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "different arrangements",
+              "note": "Divide by factorials of repeated letters."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -565,6 +879,191 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 240 180\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"240\" height=\"180\" fill=\"white\"/><line x1=\"30\" y1=\"135\" x2=\"150\" y2=\"135\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"45\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"75\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"105\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"135\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"70\" cy=\"90\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"110\" cy=\"75\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"105\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"190\" cy=\"70\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"165\" cy=\"45\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><text x=\"20\" y=\"160\" font-size=\"11\">Four points lie on one line</text></svg>"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q10",
+          "type": "mc",
+          "stem": "25 students audition for a play. There are 10 different named roles in the main cast of the play. Of the 15 students not given a role in the main cast, 9 students are assigned to be unnamed extras and 6 students are assigned to be backstage assistants.\n\nAndrew has been told that he has been assigned one of the roles in the main cast, however, he does not know which character he will play. How many ways are there of assigning roles for the 25 students involved in the play?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{25!}{10!\\,9!\\,6!}\\)",
+            "\\(\\dfrac{25!}{9!\\,6!}\\)",
+            "\\(10 \\times \\dfrac{24!}{10!\\,9!\\,6!}\\)",
+            "\\(10 \\times \\dfrac{24!}{9!\\,6!}\\)"
+          ],
+          "answer": 3,
+          "hint": "Andrew is certainly in the main cast: choose his role first, then assign the remaining 24 students.",
+          "steps": [
+            {
+              "explain": "Andrew is in the main cast: choose which of the <mark style=\"background:#fde68a;border-radius:4px;padding:0 2px\">10 named roles</mark> he plays.",
+              "work": "\\(10\\ \\text{ways}\\)"
+            },
+            {
+              "explain": "The 24 other students fill: 9 remaining named roles (all different), 9 unnamed extras (identical roles) and 6 backstage assistants (identical roles).",
+              "work": "9 + 9 + 6 = 24"
+            },
+            {
+              "explain": "Line the 24 students up and read off roles in order: first the 9 named roles (all different, so order matters), then the 9 extras and the 6 assistants. All \\(24!\\) orders are counted, but shuffling the 9 extras among themselves, or the 6 assistants among themselves, gives the SAME assignment, so divide by \\(9!\\) and \\(6!\\).",
+              "work": "\\(\\dfrac{24!}{9!\\,6!}\\)"
+            },
+            {
+              "explain": "Multiply the two stages.",
+              "work": "\\(10 \\times \\dfrac{24!}{9!\\,6!}\\)  ✓ → <span style=\"color:#047857;font-weight:700\">D</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Andrew",
+              "note": "Choose his role first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q15b1",
+          "type": "mc",
+          "stem": "In the television game show Letters & Numbers, contestants must choose six numbered tiles from a set of twenty-four shuffled tiles. The tiles are arranged into two groups: large numbers and small numbers. There are four tiles in the large numbers set: {25, 50, 75, 100}. There are twenty tiles in the small numbers set, two each of the numbers from 1 to 10. Contestants may choose to select any number of large number tiles or small number tiles to make up their set of six numbers in total. The order the tiles are chosen is not important. How many ways are there of: choosing four large numbers and two equal small numbers?",
+          "difficulty": "medium",
+          "options": [
+            "10",
+            "20",
+            "45",
+            "190"
+          ],
+          "answer": 0,
+          "hint": "All four large tiles are chosen (1 way). Two EQUAL small numbers means a pair of the same number: pick which of the 10 numbers.",
+          "steps": [
+            {
+              "explain": "Four large numbers from the four large tiles.",
+              "work": "\\({}^4C_4=1\\)"
+            },
+            {
+              "explain": "Two equal small numbers: there are two tiles of each number from 1 to 10, so choose the number.",
+              "work": "\\({}^{10}C_1=10\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(1\\times10=10\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two equal small numbers",
+              "note": "Pick which number is repeated."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q15b2",
+          "type": "mc",
+          "stem": "In the television game show Letters & Numbers, contestants must choose six numbered tiles from a set of twenty-four shuffled tiles. The tiles are arranged into two groups: large numbers and small numbers. There are four tiles in the large numbers set: {25, 50, 75, 100}. There are twenty tiles in the small numbers set, two each of the numbers from 1 to 10. Contestants may choose to select any number of large number tiles or small number tiles to make up their set of six numbers in total. The order the tiles are chosen is not important. How many ways are there of: choosing four large numbers and two distinct small numbers?",
+          "difficulty": "medium",
+          "options": [
+            "45",
+            "90",
+            "190",
+            "20"
+          ],
+          "answer": 0,
+          "hint": "Choose 2 DIFFERENT numbers from the 10 small numbers (each number has two tiles, but the tile used is interchangeable).",
+          "steps": [
+            {
+              "explain": "Four large numbers.",
+              "work": "\\(1\\)"
+            },
+            {
+              "explain": "Two distinct small numbers: choose 2 different numbers out of 1–10 (order irrelevant).",
+              "work": "\\({}^{10}C_2=\\dfrac{10\\times9}{2}=45\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(1\\times45=45\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two distinct small numbers",
+              "note": "Choose 2 different numbers: 10C2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q15b3",
+          "type": "mc",
+          "stem": "In the television game show Letters & Numbers, contestants must choose six numbered tiles from a set of twenty-four shuffled tiles. The tiles are arranged into two groups: large numbers and small numbers. There are four tiles in the large numbers set: {25, 50, 75, 100}. There are twenty tiles in the small numbers set, two each of the numbers from 1 to 10. Contestants may choose to select any number of large number tiles or small number tiles to make up their set of six numbers in total. The order the tiles are chosen is not important. How many ways are there of: choosing two large numbers and four small numbers?",
+          "difficulty": "hard",
+          "options": [
+            "3690",
+            "29 070",
+            "615",
+            "2520"
+          ],
+          "answer": 0,
+          "hint": "Choose 2 of the 4 large tiles, then count the ways to take four small numbers from the numbers 1–10 with at most two of each: split by repeats.",
+          "steps": [
+            {
+              "explain": "Two large numbers from four.",
+              "work": "\\({}^4C_2=6\\)"
+            },
+            {
+              "explain": "Four small numbers. Case A: all four DIFFERENT.",
+              "work": "\\({}^{10}C_4=210\\)"
+            },
+            {
+              "explain": "Case B: two pairs (two numbers each used twice).",
+              "work": "\\({}^{10}C_2=45\\)"
+            },
+            {
+              "explain": "Case C: one pair + two other different numbers: choose the pair number, then two others from the remaining 9.",
+              "work": "\\(10\\times{}^9C_2=10\\times36=360\\)"
+            },
+            {
+              "explain": "Total small selections.",
+              "work": "\\(210+45+360=615\\)"
+            },
+            {
+              "explain": "Multiply by the large selections.",
+              "work": "\\(6\\times615=3690\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two large numbers and four small numbers",
+              "note": "Split into cases by repeated numbers."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "Option B is not a number; replace with a numerical distractor if preferred. Solution counts tiles with equal numbers as indistinct."
           }
         }
       ]

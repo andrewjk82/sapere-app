@@ -48,6 +48,43 @@
               "note": "Find the x⁵ coefficient on each side of (1 + x)¹¹ = (1 + x)³(1 + x)⁸."
             }
           ]
+        },
+        {
+          "id": "barker2023-y11e1-q12d",
+          "type": "review",
+          "stem": "Prove that \\({}^{2n}C_2 - 2\\times {}^{n}C_2 = n^2\\).",
+          "difficulty": "medium",
+          "answer": "\\({}^{2n}C_2=\\dfrac{2n(2n-1)}{2}=2n^2-n\\), \\(2\\times{}^nC_2=n(n-1)=n^2-n\\), difference \\(n^2\\).",
+          "manual": true,
+          "hint": "Expand each combination using \\({}^{n}C_2=\\dfrac{n(n-1)}{2}\\) then subtract.",
+          "steps": [
+            {
+              "explain": "Expand \\({}^{2n}C_2\\) (replace \\(n\\) by \\(2n\\)).",
+              "work": "\\({}^{2n}C_2=\\dfrac{2n(2n-1)}{2}=n(2n-1)=2n^2-n\\)"
+            },
+            {
+              "explain": "Expand \\({}^{n}C_2\\) and double it.",
+              "work": "\\(2\\times{}^nC_2=2\\times\\dfrac{n(n-1)}{2}=n^2-n\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\((2n^2-n)-(n^2-n)=n^2\\) = RHS ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Expand both combinations with n(n−1)/2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }

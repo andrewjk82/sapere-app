@@ -1597,6 +1597,66 @@
             "number": "9A Q19b"
           },
           "xp": 4
+        },
+        {
+          "id": "barker2023-y11e1-q12a1",
+          "type": "mc",
+          "stem": "Allison has a win rate of 55% in the game scissors-paper-rock. She plays two games in a row and records her results. Let the number of games that Allison wins be the discrete random variable \\(X\\). Copy and complete the table: which row of values is \\(P(X=0),\\ P(X=1),\\ P(X=2)\\)?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\"></text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\"></text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\"></text></svg>"
+          },
+          "options": [
+            "0.2025, 0.4950, 0.3025",
+            "0.2025, 0.2475, 0.3025",
+            "0.45, 0.55, 0",
+            "0.3025, 0.4950, 0.2025"
+          ],
+          "answer": 0,
+          "hint": "Games are independent. Use \\(P(\\text{win})=0.55\\), \\(P(\\text{lose})=0.45\\) and a tree diagram. For \\(X=1\\) there are TWO routes (WL or LW).",
+          "steps": [
+            {
+              "explain": "Tree diagram: each game is a win (W, 0.55) or not (L, 0.45).",
+              "work": "WW, WL, LW, LL",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\"></text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\"></text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\"></text><rect x=\"2\" y=\"2\" width=\"350\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "\\(X=0\\): both games lost.",
+              "work": "\\(P(X=0)=0.45\\times0.45=0.2025\\)"
+            },
+            {
+              "explain": "\\(X=1\\): exactly one win — TWO orders (WL or LW).",
+              "work": "\\(P(X=1)=0.55\\times0.45+0.45\\times0.55=2\\times0.2475=0.495\\)"
+            },
+            {
+              "explain": "\\(X=2\\): both won.",
+              "work": "\\(P(X=2)=0.55\\times0.55=0.3025\\)"
+            },
+            {
+              "explain": "Check: the probabilities add to 1.",
+              "work": "\\(0.2025+0.495+0.3025=1\\) ✓ → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.2025</text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.495</text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.3025</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "win rate of 55%",
+              "note": "P(win) = 0.55 for each independent game."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "Question asks to copy and complete the table; converted to choosing the correct row of values."
+          }
         }
       ]
     },
@@ -2575,6 +2635,125 @@
             "number": "9B Q16"
           },
           "xp": 4
+        },
+        {
+          "id": "barker2023-y11e1-q5",
+          "type": "mc",
+          "stem": "The number of possums appearing in my backyard on any given night is the discrete random variable \\(X\\) represented by the following probability distribution table. What is the expected number of possums that would appear in my backyard on any given night?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"282\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">7p</text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">6p</text><rect x=\"282\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.08</text></svg>"
+          },
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "answer": 1,
+          "hint": "The probabilities must add to 1 — use this to find \\(p\\). Then \\(E(X) = \\sum x\\,P(X = x)\\).",
+          "steps": [
+            {
+              "explain": "The probabilities of a distribution sum to 1.",
+              "work": "\\(0.4 + 7p + 6p + 0.08 = 1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"282\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">7p</text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">6p</text><rect x=\"282\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.08</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect the terms.",
+              "work": "\\(0.48 + 13p = 1 \\;\\Rightarrow\\; 13p = 0.52 \\;\\Rightarrow\\; p = \\textcolor{#b45309}{0.04}\\)"
+            },
+            {
+              "explain": "Find each probability.",
+              "work": "\\(P(0) = 0.4,\\quad P(1) = 7p = 0.28,\\quad P(2) = 6p = 0.24,\\quad P(3) = 0.08\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"282\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.28</text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.24</text><rect x=\"282\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.08</text></svg>"
+              }
+            },
+            {
+              "explain": "Expected value: multiply each value of \\(x\\) by its probability and add.",
+              "work": "\\(E(X) = 0(0.4) + 1(0.28) + 2(0.24) + 3(0.08)\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(E(X) = 0 + 0.28 + 0.48 + 0.24 = 1\\)  ✓ → <span style=\"color:#047857;font-weight:700\">B</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "expected number",
+              "note": "E(X) = Σ x·P(X = x)."
+            },
+            {
+              "text": "discrete random variable",
+              "note": "Probabilities add to 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q14a",
+          "type": "mc",
+          "stem": "The discrete random variable \\(X\\) is given by the probability distribution table below. It is known that \\(E(X)=1\\). Evaluate \\(a\\) and \\(b\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">b</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">5</text><rect x=\"282\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.69</text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">a</text><rect x=\"282\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">a²</text></svg>"
+          },
+          "options": [
+            "\\(a=0.1,\\ b=2\\)",
+            "\\(a=0.1,\\ b=5\\)",
+            "\\(a=0.2,\\ b=2\\)",
+            "\\(a=-1.1,\\ b=2\\)"
+          ],
+          "answer": 0,
+          "hint": "Probabilities add to 1 → a quadratic in \\(a\\) (reject any negative probability). Then use \\(E(X)=\\sum xP(X=x)=1\\) to find \\(b\\).",
+          "steps": [
+            {
+              "explain": "Probabilities sum to 1.",
+              "work": "\\(0.69+0.2+a+a^2=1\\;\\Rightarrow\\;a^2+a-0.11=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 64\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"72\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"142\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">b</text><rect x=\"212\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">5</text><rect x=\"282\" y=\"2\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><rect x=\"2\" y=\"32\" width=\"70\" height=\"30\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"37\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"72\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"107\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.69</text><rect x=\"142\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"177\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"212\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"247\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">a</text><rect x=\"282\" y=\"32\" width=\"70\" height=\"30\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"317\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">a²</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve the quadratic.",
+              "work": "\\(a=\\dfrac{-1\\pm\\sqrt{1+0.44}}{2}=\\dfrac{-1\\pm1.2}{2}\\;\\Rightarrow\\;a=0.1\\ \\text{or}\\ a=-1.1\\)"
+            },
+            {
+              "explain": "A probability cannot be negative, so reject \\(a=-1.1\\).",
+              "work": "\\(a=0.1\\),  \\(a^2=0.01\\)"
+            },
+            {
+              "explain": "Use \\(E(X)=1\\).",
+              "work": "\\(E(X)=0(0.69)+b(0.2)+5(a)+10(a^2)=0.2b+0.5+0.1=1\\)"
+            },
+            {
+              "explain": "Solve for \\(b\\).",
+              "work": "\\(0.2b=0.4\\;\\Rightarrow\\;b=2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "It is known that",
+              "note": "Sum to 1 gives a; E(X) = 1 gives b."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3726,6 +3905,52 @@
             "number": "9C Q18c"
           },
           "xp": 4
+        },
+        {
+          "id": "barker2023-y11e1-q12a2",
+          "type": "mc",
+          "stem": "Allison has a win rate of 55% in the game scissors-paper-rock. She plays two games in a row; \\(X\\) is the number of games she wins, with \\(P(X=0)=0.2025,\\ P(X=1)=0.495,\\ P(X=2)=0.3025\\). Hence calculate the variance and standard deviation, correct to 3 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "Variance 0.495, standard deviation 0.704",
+            "Variance 1.100, standard deviation 1.049",
+            "Variance 0.704, standard deviation 0.495",
+            "Variance 1.705, standard deviation 1.306"
+          ],
+          "answer": 0,
+          "hint": "\\(\\text{Var}(X)=E(X^2)-[E(X)]^2\\). Find \\(E(X)\\) and \\(E(X^2)\\) first; the standard deviation is the square root of the variance.",
+          "steps": [
+            {
+              "explain": "Expected value.",
+              "work": "\\(E(X)=0(0.2025)+1(0.495)+2(0.3025)=0.495+0.605=1.1\\)"
+            },
+            {
+              "explain": "Expected value of \\(X^2\\).",
+              "work": "\\(E(X^2)=0^2(0.2025)+1^2(0.495)+2^2(0.3025)=0.495+1.21=1.705\\)"
+            },
+            {
+              "explain": "Variance.",
+              "work": "\\(\\text{Var}(X)=1.705-(1.1)^2=1.705-1.21=0.495\\)"
+            },
+            {
+              "explain": "Standard deviation.",
+              "work": "\\(\\sigma=\\sqrt{0.495}=0.7036\\ldots\\approx 0.704\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "variance and standard deviation",
+              "note": "Var = E(X²) − [E(X)]²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }
