@@ -578,6 +578,93 @@
             "sourceMarks": 2,
             "page": 8
           }
+        },
+        {
+          "id": "cranbrook2020e2-q11di",
+          "type": "review",
+          "stem": "A line passes through the points \\(A(1,3,-2)\\) and \\(B(2,-1,5)\\). Show that the vector equation of the line \\(AB\\) is given by \\(\\mathbf{r}=(\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k})+\\lambda_1(\\mathbf{i}-4\\mathbf{j}+7\\mathbf{k}),\\ \\lambda_1\\in\\mathbb{R}\\).",
+          "difficulty": "easy",
+          "answer": "Position vector of \\(A\\): \\(\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k}\\). Direction \\(\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}=(2-1)\\mathbf{i}+(-1-3)\\mathbf{j}+(5+2)\\mathbf{k}=\\mathbf{i}-4\\mathbf{j}+7\\mathbf{k}\\). So \\(\\mathbf{r}=\\mathbf{a}+\\lambda\\overrightarrow{AB}\\) is the required equation. ∎",
+          "manual": true,
+          "hint": "A line needs a POINT on it and a DIRECTION: use \\(A\\) as the point and \\(\\overrightarrow{AB}\\) as the direction.",
+          "steps": [
+            {
+              "explain": "Position vector of the point \\(A\\).",
+              "work": "\\(\\mathbf{a}=\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k}\\)"
+            },
+            {
+              "explain": "Direction vector: end minus start.",
+              "work": "\\(\\overrightarrow{AB}=\\mathbf{b}-\\mathbf{a}=(2-1)\\mathbf{i}+(-1-3)\\mathbf{j}+(5-(-2))\\mathbf{k}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(\\overrightarrow{AB}=\\mathbf{i}-4\\mathbf{j}+7\\mathbf{k}\\)"
+            },
+            {
+              "explain": "Vector equation of a line: point plus a multiple of the direction.",
+              "work": "\\(\\mathbf{r}=(\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k})+\\lambda_1(\\mathbf{i}-4\\mathbf{j}+7\\mathbf{k}),\\ \\lambda_1\\in\\mathbb{R}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Point A plus a multiple of the vector AB."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q11dii",
+          "type": "mc",
+          "stem": "A line passes through the points \\(A(1,3,-2)\\) and \\(B(2,-1,5)\\). The line \\(AB\\) has equation \\(\\mathbf{r}=(\\mathbf{i}+3\\mathbf{j}-2\\mathbf{k})+\\lambda_1(\\mathbf{i}-4\\mathbf{j}+7\\mathbf{k})\\). Determine if the point \\(C(3,4,9)\\) lies on the line.",
+          "difficulty": "easy",
+          "options": [
+            "No: the \\(x\\)-coordinate needs \\(\\lambda_1=2\\), but then \\(y=-5\\ne4\\).",
+            "Yes: \\(\\lambda_1=2\\) works for every coordinate.",
+            "Yes: \\(\\lambda_1=1\\) works for every coordinate.",
+            "No: the \\(x\\)-coordinate can never equal 3."
+          ],
+          "answer": 0,
+          "hint": "The point is on the line only if ONE value of \\(\\lambda_1\\) gives ALL THREE coordinates. Find \\(\\lambda_1\\) from one coordinate, then test the other two.",
+          "steps": [
+            {
+              "explain": "Write the coordinates of a general point on the line.",
+              "work": "\\(x=1+\\lambda_1,\\quad y=3-4\\lambda_1,\\quad z=-2+7\\lambda_1\\)"
+            },
+            {
+              "explain": "Match \\(x=3\\).",
+              "work": "\\(1+\\lambda_1=3\\;\\Rightarrow\\;\\lambda_1=2\\)"
+            },
+            {
+              "explain": "Test this in the \\(y\\) and \\(z\\) equations.",
+              "work": "\\(y=3-4(2)=-5\\ne4\\quad✗,\\qquad z=-2+7(2)=12\\ne9\\quad✗\\)"
+            },
+            {
+              "explain": "The value does not give \\(C\\)'s coordinates, so \\(C\\) is NOT on the line.",
+              "work": "<span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lies on the line",
+              "note": "One value of the parameter must fit all three coordinates."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -931,6 +1018,56 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e2-q11diii",
+          "type": "mc",
+          "stem": "A line passes through the points \\(A(1,3,-2)\\) and \\(B(2,-1,5)\\). Consider a line with parametric equations \\(x=1-\\lambda_2,\\ y=2+3\\lambda_2\\) and \\(z=-1+\\lambda_2\\). Assuming the line is neither parallel or perpendicular to \\(AB\\), determine whether the lines intersect or are skew.",
+          "difficulty": "hard",
+          "options": [
+            "Skew: no values of \\(\\lambda_1\\) and \\(\\lambda_2\\) satisfy all three equations.",
+            "They intersect at \\((2,-1,5)\\).",
+            "They intersect at \\((2,-1,-2)\\).",
+            "They are the same line."
+          ],
+          "answer": 0,
+          "hint": "Set the two lines equal. Use TWO of the three coordinate equations to find \\(\\lambda_1\\) and \\(\\lambda_2\\), then CHECK those values in the third. If the third fails, the lines are skew.",
+          "steps": [
+            {
+              "explain": "Equate the coordinates (line 1: \\((1+\\lambda_1,\\ 3-4\\lambda_1,\\ -2+7\\lambda_1)\\)).",
+              "work": "\\(1+\\lambda_1=1-\\lambda_2,\\quad3-4\\lambda_1=2+3\\lambda_2,\\quad-2+7\\lambda_1=-1+\\lambda_2\\)"
+            },
+            {
+              "explain": "From the first equation.",
+              "work": "\\(\\lambda_1=-\\lambda_2\\)"
+            },
+            {
+              "explain": "Substitute into the second.",
+              "work": "\\(3+4\\lambda_2=2+3\\lambda_2\\;\\Rightarrow\\;\\lambda_2=-1,\\ \\lambda_1=1\\)"
+            },
+            {
+              "explain": "Test in the THIRD equation.",
+              "work": "\\(\\text{LHS}=-2+7(1)=5,\\qquad\\text{RHS}=-1+(-1)=-2\\) — not equal ✗"
+            },
+            {
+              "explain": "No values satisfy all three equations, so the lines never meet. They are not parallel (assumed), so they are SKEW.",
+              "work": "<span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "intersect or are skew",
+              "note": "Solve two equations, test the third."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1320,6 +1457,106 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e2-q13ci",
+          "type": "mc",
+          "stem": "A sphere \\(S_1\\) with centre \\(\\mathbf{c}=2\\mathbf{i}+2\\mathbf{j}+2\\mathbf{k}\\) passes through \\(\\mathbf{a}=4\\mathbf{i}+4\\mathbf{j}+4\\mathbf{k}\\). Find the Cartesian equation of \\(S_1\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\((x-2)^2+(y-2)^2+(z-2)^2=12\\)",
+            "\\((x-2)^2+(y-2)^2+(z-2)^2=\\sqrt{12}\\)",
+            "\\((x-2)^2+(y-2)^2+(z-2)^2=48\\)",
+            "\\((x+2)^2+(y+2)^2+(z+2)^2=12\\)"
+          ],
+          "answer": 0,
+          "hint": "A sphere with centre \\((h,k,l)\\) and radius \\(r\\) has equation \\((x-h)^2+(y-k)^2+(z-l)^2=r^2\\). The radius is the distance from the centre to a point on the sphere.",
+          "steps": [
+            {
+              "explain": "Centre and the point on the sphere.",
+              "work": "\\(c=(2,2,2),\\qquad a=(4,4,4)\\)"
+            },
+            {
+              "explain": "Radius squared = (distance from centre to \\(a\\))².",
+              "work": "\\(r^2=(4-2)^2+(4-2)^2+(4-2)^2=4+4+4=12\\)"
+            },
+            {
+              "explain": "Write the equation.",
+              "work": "\\((x-2)^2+(y-2)^2+(z-2)^2=12\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check \\((4,4,4)\\): \\(4+4+4=12\\) ✓. (D has the wrong centre, B uses \\(r\\) instead of \\(r^2\\).)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Cartesian equation",
+              "note": "Radius squared is the squared distance from the centre to the given point."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q13cii",
+          "type": "mc",
+          "stem": "The sphere \\(S_1\\) has equation \\((x-2)^2+(y-2)^2+(z-2)^2=12\\). A second sphere, \\(S_2\\), has equation \\((x-2)^2+(y-2)^2+(z-5)^2=1\\). Find the equation of the circle in which \\(S_1\\) and \\(S_2\\) intersect and state the centre and radius of this circle.",
+          "difficulty": "hard",
+          "options": [
+            "\\(z=\\dfrac{16}{3},\\ (x-2)^2+(y-2)^2=\\dfrac{8}{9};\\ \\text{centre }\\left(2,2,\\dfrac{16}{3}\\right),\\ \\text{radius }\\dfrac{2\\sqrt{2}}{3}\\)",
+            "\\(z=\\dfrac{16}{3},\\ (x-2)^2+(y-2)^2=\\dfrac{8}{9};\\ \\text{centre }\\left(2,2,\\dfrac{16}{3}\\right),\\ \\text{radius }\\dfrac{8}{9}\\)",
+            "\\(z=3,\\ (x-2)^2+(y-2)^2=11;\\ \\text{centre }(2,2,3),\\ \\text{radius }\\sqrt{11}\\)",
+            "\\(z=5,\\ (x-2)^2+(y-2)^2=1;\\ \\text{centre }(2,2,5),\\ \\text{radius }1\\)"
+          ],
+          "answer": 0,
+          "hint": "Points on BOTH spheres satisfy both equations. SUBTRACT the equations: the \\(x\\) and \\(y\\) terms cancel, leaving a PLANE (the plane of the circle). Substitute back to get the circle.",
+          "steps": [
+            {
+              "explain": "Subtract \\(S_2\\) from \\(S_1\\): only the \\(z\\) terms remain.",
+              "work": "\\((z-2)^2-(z-5)^2=12-1=11\\)"
+            },
+            {
+              "explain": "Expand the squares.",
+              "work": "\\((z^2-4z+4)-(z^2-10z+25)=6z-21=11\\)"
+            },
+            {
+              "explain": "Solve: the intersection lies in the plane.",
+              "work": "\\(6z=32\\;\\Rightarrow\\;z=\\dfrac{16}{3}\\)"
+            },
+            {
+              "explain": "Substitute \\(z=\\dfrac{16}{3}\\) into \\(S_1\\).",
+              "work": "\\((x-2)^2+(y-2)^2+\\left(\\dfrac{16}{3}-2\\right)^2=12\\;\\Rightarrow\\;(x-2)^2+(y-2)^2=12-\\dfrac{100}{9}=\\dfrac{8}{9}\\)"
+            },
+            {
+              "explain": "Read the circle: it lies in the plane \\(z=\\dfrac{16}{3}\\), centre directly above the sphere centres' line.",
+              "work": "\\(\\text{centre}\\left(2,2,\\dfrac{16}{3}\\right),\\quad\\text{radius}=\\sqrt{\\dfrac{8}{9}}=\\dfrac{2\\sqrt{2}}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check in \\(S_2\\): \\(\\dfrac{8}{9}+\\left(\\dfrac{16}{3}-5\\right)^2=\\dfrac{8}{9}+\\dfrac{1}{9}=1\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equation of the circle",
+              "note": "Subtract the sphere equations to get the plane of the circle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2351,6 +2588,52 @@
             "sourceQuestion": "Section II Q13(d)",
             "sourceMarks": 2,
             "page": 10
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q11b",
+          "type": "mc",
+          "stem": "Let \\(\\mathbf{a}=\\begin{pmatrix}2\\\\ 1\\\\ 3\\end{pmatrix}\\) and \\(\\mathbf{b}=\\begin{pmatrix}-1\\\\ 1\\\\ 2\\end{pmatrix}\\). What is the angle between the vectors, to the nearest degree?",
+          "difficulty": "medium",
+          "options": [
+            "\\(57^\\circ\\)",
+            "\\(33^\\circ\\)",
+            "\\(63^\\circ\\)",
+            "\\(123^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\cos\\theta=\\dfrac{\\mathbf{a}\\cdot\\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}\\). Calculate the dot product and the two lengths separately.",
+          "steps": [
+            {
+              "explain": "Dot product.",
+              "work": "\\(\\mathbf{a}\\cdot\\mathbf{b}=2(-1)+1(1)+3(2)=-2+1+6=5\\)"
+            },
+            {
+              "explain": "Lengths.",
+              "work": "\\(|\\mathbf{a}|=\\sqrt{4+1+9}=\\sqrt{14},\\qquad|\\mathbf{b}|=\\sqrt{1+1+4}=\\sqrt{6}\\)"
+            },
+            {
+              "explain": "Cosine of the angle.",
+              "work": "\\(\\cos\\theta=\\dfrac{5}{\\sqrt{14}\\sqrt{6}}=\\dfrac{5}{\\sqrt{84}}=0.5455\\ldots\\)"
+            },
+            {
+              "explain": "Inverse cosine and round.",
+              "work": "\\(\\theta=\\cos^{-1}(0.5455)=56.9^\\circ\\approx57^\\circ\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "angle between the vectors",
+              "note": "The cosine of the angle is the dot product divided by the product of the lengths."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -3471,6 +3754,106 @@
             "sourceQuestion": "Section II Q16(d)",
             "sourceMarks": 4,
             "page": 14
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q2",
+          "type": "mc",
+          "stem": "What is the distance of the point \\((2,3,7)\\) from the \\(x\\)-\\(z\\) plane?",
+          "difficulty": "easy",
+          "options": [
+            "2 units",
+            "3 units",
+            "7 units",
+            "9 units"
+          ],
+          "answer": 1,
+          "hint": "The \\(x\\)-\\(z\\) plane is the plane \\(y=0\\). The distance of a point from it is the absolute value of its \\(y\\)-coordinate.",
+          "steps": [
+            {
+              "explain": "The \\(xz\\)-plane contains every point whose \\(y\\)-coordinate is 0.",
+              "work": "\\(y=0\\)"
+            },
+            {
+              "explain": "Moving straight from \\((2,3,7)\\) to the plane means changing only \\(y\\) from 3 to 0: the point becomes \\((2,0,7)\\).",
+              "work": "\\((2,3,7)\\to(2,0,7)\\)"
+            },
+            {
+              "explain": "Distance.",
+              "work": "\\(|3-0|=3\\) units → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Why not 2 or 7? Those are the distances from the \\(yz\\)-plane and the \\(xy\\)-plane.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "distance of the point",
+              "note": "Distance from the xz-plane is the absolute y-coordinate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q16a",
+          "type": "mc",
+          "stem": "Let the line \\(l\\) have parametric equations \\(x=3-\\lambda\\), \\(y=2+2\\lambda\\) and \\(z=5-2\\lambda\\). Find the distance from the line to the point \\(R=3\\mathbf{i}+2\\mathbf{j}-\\mathbf{k}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\sqrt{5}\\)",
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(3\\sqrt{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Pick a point \\(P\\) on the line (try \\(\\lambda=0\\)), form \\(\\overrightarrow{PR}\\), and remove its component ALONG the line: the leftover (perpendicular) part is the distance. Use \\(d^2=|\\overrightarrow{PR}|^2-(\\text{projection})^2\\).",
+          "steps": [
+            {
+              "explain": "Point on the line (\\(\\lambda=0\\)) and direction.",
+              "work": "\\(P(3,2,5),\\qquad\\mathbf{d}=\\begin{pmatrix}-1\\\\ 2\\\\ -2\\end{pmatrix},\\ |\\mathbf{d}|=\\sqrt{1+4+4}=3\\)"
+            },
+            {
+              "explain": "Vector from \\(P\\) to \\(R\\).",
+              "work": "\\(\\overrightarrow{PR}=(3,2,-1)-(3,2,5)=\\begin{pmatrix}0\\\\ 0\\\\ -6\\end{pmatrix},\\quad|\\overrightarrow{PR}|^2=36\\)"
+            },
+            {
+              "explain": "Component of \\(\\overrightarrow{PR}\\) ALONG the line: \\(\\dfrac{\\overrightarrow{PR}\\cdot\\mathbf{d}}{|\\mathbf{d}|}\\).",
+              "work": "\\(\\overrightarrow{PR}\\cdot\\mathbf{d}=0+0+12=12\\;\\Rightarrow\\;\\text{projection}=\\dfrac{12}{3}=4\\)"
+            },
+            {
+              "explain": "Pythagoras: distance² = length² − projection².",
+              "work": "\\(d^2=36-4^2=20\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(d=\\sqrt{20}=2\\sqrt{5}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check with the cross product: \\(\\dfrac{|\\overrightarrow{PR}\\times\\mathbf{d}|}{|\\mathbf{d}|}=\\dfrac{|(12,6,0)|}{3}=\\dfrac{6\\sqrt{5}}{3}=2\\sqrt{5}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "distance from the line",
+              "note": "Remove the component of PR along the line direction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

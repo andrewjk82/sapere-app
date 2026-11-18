@@ -110,7 +110,58 @@
       "topicId": "y12e2-5B",
       "code": "5B",
       "title": "The t-Formulae",
-      "questions": []
+      "questions": [
+        {
+          "id": "cranbrook2020e2-q12ci",
+          "type": "mc",
+          "stem": "Let \\(I=\\int_0^{\\frac{\\pi}{2}}\\dfrac{2}{3+5\\cos x}\\,dx\\). Using the substitution \\(t=\\tan\\dfrac{x}{2}\\) show that \\(I=\\int_0^{1}\\dfrac{2}{4-t^2}\\,dt\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\int_0^1\\dfrac{2}{4-t^2}\\,dt\\)",
+            "\\(\\int_0^1\\dfrac{2}{4+t^2}\\,dt\\)",
+            "\\(\\int_0^{\\frac{\\pi}{2}}\\dfrac{2}{4-t^2}\\,dt\\)",
+            "\\(\\int_0^1\\dfrac{4}{4-t^2}\\,dt\\)"
+          ],
+          "answer": 0,
+          "hint": "The t-formulae: \\(\\cos x=\\dfrac{1-t^2}{1+t^2}\\) and \\(dx=\\dfrac{2\\,dt}{1+t^2}\\). Substitute into the denominator and the differential, simplify, and change the limits.",
+          "steps": [
+            {
+              "explain": "Substitution rules for \\(t=\\tan\\dfrac{x}{2}\\).",
+              "work": "\\(\\cos x=\\dfrac{1-t^2}{1+t^2},\\qquad dx=\\dfrac{2}{1+t^2}\\,dt\\)"
+            },
+            {
+              "explain": "Change the limits.",
+              "work": "\\(x=0\\;\\Rightarrow\\;t=\\tan0=0;\\qquad x=\\dfrac{\\pi}{2}\\;\\Rightarrow\\;t=\\tan\\dfrac{\\pi}{4}=1\\)"
+            },
+            {
+              "explain": "Simplify the denominator \\(3+5\\cos x\\).",
+              "work": "\\(3+5\\cdot\\dfrac{1-t^2}{1+t^2}=\\dfrac{3(1+t^2)+5(1-t^2)}{1+t^2}=\\dfrac{8-2t^2}{1+t^2}\\)"
+            },
+            {
+              "explain": "Substitute into the integral and combine.",
+              "work": "\\(I=\\int_0^1\\dfrac{2}{\\left(\\dfrac{8-2t^2}{1+t^2}\\right)}\\times\\dfrac{2}{1+t^2}\\,dt=\\int_0^1\\dfrac{2(1+t^2)}{8-2t^2}\\times\\dfrac{2}{1+t^2}\\,dt\\)"
+            },
+            {
+              "explain": "The factors \\((1+t^2)\\) cancel.",
+              "work": "\\(I=\\int_0^1\\dfrac{4}{8-2t^2}\\,dt=\\int_0^1\\dfrac{2}{4-t^2}\\,dt\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the substitution",
+              "note": "Use the t-formulae and change the limits."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        }
+      ]
     },
     {
       "topicId": "y12e2-5R",

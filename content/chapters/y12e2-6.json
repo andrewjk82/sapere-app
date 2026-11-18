@@ -1319,6 +1319,110 @@
             "sourceMarks": 3,
             "page": 13
           }
+        },
+        {
+          "id": "cranbrook2020e2-q4",
+          "type": "mc",
+          "stem": "Which of the following expressions is equal to \\(\\int\\dfrac{1}{x(\\log_ex)^2}\\,dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{\\log_ex}+C\\)",
+            "\\(\\dfrac{1}{(\\log_ex)^3}+C\\)",
+            "\\(\\log_e\\left(\\dfrac{1}{x}\\right)+C\\)",
+            "\\(-\\dfrac{1}{\\log_ex}+C\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute \\(u=\\log_ex\\): then \\(du=\\dfrac{1}{x}dx\\), and the integrand becomes a simple power of \\(u\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\log_ex\\).",
+              "work": "\\(du=\\dfrac{1}{x}\\,dx\\)"
+            },
+            {
+              "explain": "Rewrite the integral: \\(\\dfrac{1}{x}dx=du\\) and \\((\\log_ex)^2=u^2\\).",
+              "work": "\\(\\int\\dfrac{1}{u^2}\\,du=\\int u^{-2}\\,du\\)"
+            },
+            {
+              "explain": "Integrate the power.",
+              "work": "\\(\\dfrac{u^{-1}}{-1}+C=-\\dfrac{1}{u}+C\\)"
+            },
+            {
+              "explain": "Substitute back.",
+              "work": "\\(-\\dfrac{1}{\\log_ex}+C\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\left(-(\\ln x)^{-1}\\right)=(\\ln x)^{-2}\\cdot\\dfrac{1}{x}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "expressions is equal to",
+              "note": "Substitute u = ln x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q12e",
+          "type": "mc",
+          "stem": "Evaluate \\(\\int_0^3u\\sqrt{u+1}\\,du\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{116}{15}\\)",
+            "\\(\\dfrac{104}{15}\\)",
+            "\\(\\dfrac{58}{15}\\)",
+            "\\(\\dfrac{14}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(s=u+1\\) so the root becomes \\(\\sqrt{s}\\) and \\(u=s-1\\). CHANGE THE LIMITS: \\(u=0\\to s=1\\) and \\(u=3\\to s=4\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(s=u+1,\\ ds=du,\\ u=s-1;\\qquad u:0\\to3\\ \\Rightarrow\\ s:1\\to4\\)"
+            },
+            {
+              "explain": "Rewrite the integral.",
+              "work": "\\(\\int_1^4(s-1)\\sqrt{s}\\,ds=\\int_1^4\\left(s^{\\frac{3}{2}}-s^{\\frac{1}{2}}\\right)ds\\)"
+            },
+            {
+              "explain": "Integrate each power.",
+              "work": "\\(\\left[\\dfrac{2}{5}s^{\\frac{5}{2}}-\\dfrac{2}{3}s^{\\frac{3}{2}}\\right]_1^4\\)"
+            },
+            {
+              "explain": "Upper limit \\(s=4\\) (\\(4^{\\frac{5}{2}}=32\\), \\(4^{\\frac{3}{2}}=8\\)).",
+              "work": "\\(\\dfrac{2}{5}(32)-\\dfrac{2}{3}(8)=\\dfrac{64}{5}-\\dfrac{16}{3}=\\dfrac{192-80}{15}=\\dfrac{112}{15}\\)"
+            },
+            {
+              "explain": "Lower limit \\(s=1\\).",
+              "work": "\\(\\dfrac{2}{5}-\\dfrac{2}{3}=\\dfrac{6-10}{15}=-\\dfrac{4}{15}\\)"
+            },
+            {
+              "explain": "Subtract (upper − lower).",
+              "work": "\\(\\dfrac{112}{15}-\\left(-\\dfrac{4}{15}\\right)=\\dfrac{116}{15}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Substitute s = u + 1 and change the limits."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1994,6 +2098,106 @@
             "sourceMarks": 3,
             "page": 10
           }
+        },
+        {
+          "id": "cranbrook2020e2-q12cii",
+          "type": "mc",
+          "stem": "Let \\(I=\\int_0^{1}\\dfrac{2}{4-t^2}\\,dt\\). Hence find the value of \\(I\\). Give your answer in the form \\(\\ln\\sqrt{k}\\) where \\(k\\) is a positive integer.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln\\sqrt{3}\\)",
+            "\\(\\ln\\sqrt{2}\\)",
+            "\\(\\ln\\sqrt{5}\\)",
+            "\\(\\ln\\sqrt{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use PARTIAL FRACTIONS: \\(\\dfrac{2}{4-t^2}=\\dfrac{2}{(2-t)(2+t)}=\\dfrac{A}{2-t}+\\dfrac{B}{2+t}\\). Then integrate each log term.",
+          "steps": [
+            {
+              "explain": "Partial fractions: put over the common denominator.",
+              "work": "\\(2=A(2+t)+B(2-t)\\)"
+            },
+            {
+              "explain": "Substitute \\(t=2\\) and \\(t=-2\\).",
+              "work": "\\(t=2:\\ 2=4A\\Rightarrow A=\\dfrac{1}{2};\\qquad t=-2:\\ 2=4B\\Rightarrow B=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "So.",
+              "work": "\\(\\dfrac{2}{4-t^2}=\\dfrac{1}{2}\\left(\\dfrac{1}{2-t}+\\dfrac{1}{2+t}\\right)\\)"
+            },
+            {
+              "explain": "Integrate (\\(\\int\\dfrac{dt}{2-t}=-\\ln|2-t|\\)).",
+              "work": "\\(I=\\dfrac{1}{2}\\Big[-\\ln(2-t)+\\ln(2+t)\\Big]_0^1=\\dfrac{1}{2}\\Big[\\ln\\dfrac{2+t}{2-t}\\Big]_0^1\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(I=\\dfrac{1}{2}\\left[\\ln\\dfrac{3}{1}-\\ln\\dfrac{2}{2}\\right]=\\dfrac{1}{2}\\ln3=\\ln\\sqrt{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find the value",
+              "note": "Partial fractions, then logarithms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q13ai",
+          "type": "mc",
+          "stem": "Express \\(\\dfrac{-x^2+2x+5}{(x^2+2)(1-x)}\\) in the form \\(\\dfrac{ax+b}{x^2+2}+\\dfrac{c}{1-x}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{3x+1}{x^2+2}+\\dfrac{2}{1-x}\\)",
+            "\\(\\dfrac{3x-1}{x^2+2}+\\dfrac{2}{1-x}\\)",
+            "\\(\\dfrac{x+3}{x^2+2}+\\dfrac{2}{1-x}\\)",
+            "\\(\\dfrac{3x+1}{x^2+2}+\\dfrac{1}{1-x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\((x^2+2)(1-x)\\) to clear the fractions, then find \\(c\\) by substituting \\(x=1\\), and \\(a,b\\) by comparing coefficients.",
+          "steps": [
+            {
+              "explain": "Clear the fractions.",
+              "work": "\\(-x^2+2x+5=(ax+b)(1-x)+c(x^2+2)\\)"
+            },
+            {
+              "explain": "Substitute \\(x=1\\) (kills the first bracket).",
+              "work": "\\(-1+2+5=c(1+2)\\;\\Rightarrow\\;6=3c\\;\\Rightarrow\\;c=2\\)"
+            },
+            {
+              "explain": "Expand the right side.",
+              "work": "\\((ax+b)(1-x)+c(x^2+2)=(c-a)x^2+(a-b)x+(b+2c)\\)"
+            },
+            {
+              "explain": "Compare coefficients of \\(x^2\\): \\(-1=c-a\\); constant: \\(5=b+2c\\).",
+              "work": "\\(-1=2-a\\Rightarrow a=3,\\qquad5=b+4\\Rightarrow b=1\\)"
+            },
+            {
+              "explain": "Check the \\(x\\) term: \\(a-b=3-1=2\\) ✓ (matches \\(2x\\)).",
+              "work": "\\(\\dfrac{-x^2+2x+5}{(x^2+2)(1-x)}=\\dfrac{3x+1}{x^2+2}+\\dfrac{2}{1-x}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express",
+              "note": "Clear the fractions, substitute the value that kills a bracket, then compare coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2304,6 +2508,106 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e2-q8",
+          "type": "mc",
+          "stem": "Which expression is equal to \\(\\int\\dfrac{dx}{\\sqrt{8-2x-x^2}}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sin^{-1}\\left(\\dfrac{1-x}{2\\sqrt{2}}\\right)+C\\)",
+            "\\(\\sin^{-1}\\left(\\dfrac{1-x}{3}\\right)+C\\)",
+            "\\(\\sin^{-1}\\left(\\dfrac{1+x}{2\\sqrt{2}}\\right)+C\\)",
+            "\\(\\sin^{-1}\\left(\\dfrac{1+x}{3}\\right)+C\\)"
+          ],
+          "answer": 3,
+          "hint": "Complete the square under the root so that it looks like \\(a^2-u^2\\), then use \\(\\int\\dfrac{du}{\\sqrt{a^2-u^2}}=\\sin^{-1}\\dfrac{u}{a}+C\\).",
+          "steps": [
+            {
+              "explain": "Complete the square: \\(8-2x-x^2=-(x^2+2x)+8\\).",
+              "work": "\\(x^2+2x=(x+1)^2-1\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(8-2x-x^2=8-\\left[(x+1)^2-1\\right]=9-(x+1)^2\\)"
+            },
+            {
+              "explain": "The integral is now in standard form with \\(a=3\\) and \\(u=x+1\\) (\\(du=dx\\)).",
+              "work": "\\(\\int\\dfrac{dx}{\\sqrt{3^2-(x+1)^2}}\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(\\sin^{-1}\\left(\\dfrac{x+1}{3}\\right)+C\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Check the domain: \\(9-(x+1)^2>0\\) needs \\(-4<x<2\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which expression is equal to",
+              "note": "Complete the square to get 9 minus (x + 1) squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q13aii",
+          "type": "mc",
+          "stem": "Using \\(\\dfrac{-x^2+2x+5}{(x^2+2)(1-x)}=\\dfrac{3x+1}{x^2+2}+\\dfrac{2}{1-x}\\), find \\(\\int\\dfrac{-x^2+2x+5}{(x^2+2)(1-x)}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{3}{2}\\ln(x^2+2)+\\dfrac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\dfrac{x}{\\sqrt{2}}\\right)-2\\ln|1-x|+C\\)",
+            "\\(\\dfrac{3}{2}\\ln(x^2+2)+\\dfrac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\dfrac{x}{\\sqrt{2}}\\right)+2\\ln|1-x|+C\\)",
+            "\\(3\\ln(x^2+2)+\\tan^{-1}\\left(\\dfrac{x}{\\sqrt{2}}\\right)-2\\ln|1-x|+C\\)",
+            "\\(\\dfrac{3}{2}\\ln(x^2+2)+\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x}{\\sqrt{2}}\\right)-2\\ln|1-x|+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Split \\(\\dfrac{3x+1}{x^2+2}\\) into \\(\\dfrac{3x}{x^2+2}\\) (a log: numerator is a multiple of the derivative of the denominator) and \\(\\dfrac{1}{x^2+2}\\) (an inverse tangent). The last term is a log with a \\(-\\) from the chain rule.",
+          "steps": [
+            {
+              "explain": "Split the integral into three.",
+              "work": "\\(\\int\\dfrac{3x}{x^2+2}\\,dx+\\int\\dfrac{1}{x^2+2}\\,dx+\\int\\dfrac{2}{1-x}\\,dx\\)"
+            },
+            {
+              "explain": "First: \\(\\dfrac{d}{dx}(x^2+2)=2x\\), so \\(3x=\\dfrac{3}{2}(2x)\\).",
+              "work": "\\(\\int\\dfrac{3x}{x^2+2}\\,dx=\\dfrac{3}{2}\\ln(x^2+2)\\)"
+            },
+            {
+              "explain": "Second: \\(\\int\\dfrac{dx}{a^2+x^2}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{x}{a}\\) with \\(a=\\sqrt{2}\\).",
+              "work": "\\(\\int\\dfrac{1}{x^2+2}\\,dx=\\dfrac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\dfrac{x}{\\sqrt{2}}\\right)\\)"
+            },
+            {
+              "explain": "Third: the derivative of \\(1-x\\) is \\(-1\\), so there is a minus sign.",
+              "work": "\\(\\int\\dfrac{2}{1-x}\\,dx=-2\\ln|1-x|\\)"
+            },
+            {
+              "explain": "Add the three results.",
+              "work": "\\(\\dfrac{3}{2}\\ln(x^2+2)+\\dfrac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\dfrac{x}{\\sqrt{2}}\\right)-2\\ln|1-x|+C\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find",
+              "note": "Split into a log, an inverse tangent and another log."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2966,6 +3270,55 @@
             "sourceQuestion": "Section II Q12(b)(ii)",
             "sourceMarks": 2,
             "page": 9
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q15a",
+          "type": "review",
+          "stem": "Find \\(\\int e^{-x}\\sin(-x)\\,dx\\).",
+          "difficulty": "hard",
+          "answer": "\\(\\int e^{-x}\\sin(-x)\\,dx=-\\int e^{-x}\\sin x\\,dx=\\dfrac{1}{2}e^{-x}(\\sin x+\\cos x)+C\\).",
+          "manual": true,
+          "hint": "Use \\(\\sin(-x)=-\\sin x\\) first. Then integrate \\(e^{-x}\\sin x\\) by parts TWICE and rearrange (the original integral reappears).",
+          "steps": [
+            {
+              "explain": "Simplify: sine is an odd function.",
+              "work": "\\(\\int e^{-x}\\sin(-x)\\,dx=-\\int e^{-x}\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Let \\(J=\\int e^{-x}\\sin x\\,dx\\). Parts with \\(u=\\sin x\\), \\(dv=e^{-x}dx\\) (\\(v=-e^{-x}\\)).",
+              "work": "\\(J=-e^{-x}\\sin x+\\int e^{-x}\\cos x\\,dx\\)"
+            },
+            {
+              "explain": "Parts again with \\(u=\\cos x\\), \\(dv=e^{-x}dx\\).",
+              "work": "\\(\\int e^{-x}\\cos x\\,dx=-e^{-x}\\cos x-\\int e^{-x}\\sin x\\,dx=-e^{-x}\\cos x-J\\)"
+            },
+            {
+              "explain": "Substitute back: \\(J\\) appears on both sides.",
+              "work": "\\(J=-e^{-x}\\sin x-e^{-x}\\cos x-J\\;\\Rightarrow\\;2J=-e^{-x}(\\sin x+\\cos x)\\)"
+            },
+            {
+              "explain": "Solve for \\(J\\) (include \\(C\\)).",
+              "work": "\\(J=-\\dfrac{1}{2}e^{-x}(\\sin x+\\cos x)+C\\)"
+            },
+            {
+              "explain": "Remember the minus sign from step 1.",
+              "work": "\\(\\int e^{-x}\\sin(-x)\\,dx=-J=\\dfrac{1}{2}e^{-x}(\\sin x+\\cos x)+C\\)  ✓ (differentiate to check)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Sine is odd; integrate by parts twice and solve for the integral."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -4069,6 +4422,100 @@
             "sourceQuestion": "Section II Q14(a)(ii)",
             "sourceMarks": 2,
             "page": 11
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q16bi",
+          "type": "review",
+          "stem": "Let \\(I_n=\\int_0^{\\frac{\\pi}{2}}\\cos^nx\\sin^2x\\,dx\\). Show that \\(I_n=\\left(\\dfrac{n-1}{n+2}\\right)I_{n-2}\\) for \\(n\\ge2\\).",
+          "difficulty": "hard",
+          "answer": "Integrate by parts with \\(u=\\cos^{n-1}x\\) and \\(dv=\\sin^2x\\cos x\\,dx\\): \\(I_n=\\left[\\dfrac{\\cos^{n-1}x\\sin^3x}{3}\\right]_0^{\\frac{\\pi}{2}}+\\dfrac{n-1}{3}\\int\\cos^{n-2}x\\sin^4x\\,dx\\); the boundary term is 0, and \\(\\sin^4x=\\sin^2x(1-\\cos^2x)\\) gives \\(I_n=\\dfrac{n-1}{3}(I_{n-2}-I_n)\\), so \\((n+2)I_n=(n-1)I_{n-2}\\). ∎",
+          "manual": true,
+          "hint": "Split \\(\\cos^nx=\\cos^{n-1}x\\cdot\\cos x\\) so that \\(\\sin^2x\\cos x\\) is a clean thing to integrate; differentiate the \\(\\cos^{n-1}x\\) part.",
+          "steps": [
+            {
+              "explain": "Split the integrand and choose parts.",
+              "work": "\\(I_n=\\int_0^{\\frac{\\pi}{2}}\\cos^{n-1}x\\cdot\\left(\\sin^2x\\cos x\\right)dx;\\qquad u=\\cos^{n-1}x,\\ dv=\\sin^2x\\cos x\\,dx\\)"
+            },
+            {
+              "explain": "Differentiate \\(u\\) and integrate \\(dv\\).",
+              "work": "\\(du=-(n-1)\\cos^{n-2}x\\sin x\\,dx,\\qquad v=\\dfrac{\\sin^3x}{3}\\)"
+            },
+            {
+              "explain": "Integration by parts: \\(\\int u\\,dv=uv-\\int v\\,du\\).",
+              "work": "\\(I_n=\\left[\\dfrac{\\cos^{n-1}x\\sin^3x}{3}\\right]_0^{\\frac{\\pi}{2}}+\\dfrac{n-1}{3}\\int_0^{\\frac{\\pi}{2}}\\cos^{n-2}x\\sin^4x\\,dx\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=\\dfrac{\\pi}{2}\\) \\(\\cos x=0\\) (for \\(n\\ge2\\)), at \\(x=0\\) \\(\\sin x=0\\). So it is 0.",
+              "work": "\\(I_n=\\dfrac{n-1}{3}\\int_0^{\\frac{\\pi}{2}}\\cos^{n-2}x\\sin^4x\\,dx\\)"
+            },
+            {
+              "explain": "Write \\(\\sin^4x=\\sin^2x\\left(1-\\cos^2x\\right)\\) and split.",
+              "work": "\\(I_n=\\dfrac{n-1}{3}\\left[\\int\\cos^{n-2}x\\sin^2x\\,dx-\\int\\cos^nx\\sin^2x\\,dx\\right]=\\dfrac{n-1}{3}\\left(I_{n-2}-I_n\\right)\\)"
+            },
+            {
+              "explain": "Multiply by 3 and collect the \\(I_n\\) terms.",
+              "work": "\\(3I_n=(n-1)I_{n-2}-(n-1)I_n\\;\\Rightarrow\\;(n+2)I_n=(n-1)I_{n-2}\\)"
+            },
+            {
+              "explain": "Divide by \\(n+2\\).",
+              "work": "\\(I_n=\\left(\\dfrac{n-1}{n+2}\\right)I_{n-2}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Integrate by parts with u as the cosine power; rewrite sin to the fourth with a Pythagorean identity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q16bii",
+          "type": "review",
+          "stem": "Let \\(I_n=\\int_0^{\\frac{\\pi}{2}}\\cos^nx\\sin^2x\\,dx\\). Using \\(I_n=\\left(\\dfrac{n-1}{n+2}\\right)I_{n-2}\\) for \\(n\\ge2\\), hence show that \\(I_2=\\dfrac{\\pi}{16}\\).",
+          "difficulty": "medium",
+          "answer": "\\(I_2=\\dfrac{1}{4}I_0\\) and \\(I_0=\\int_0^{\\frac{\\pi}{2}}\\sin^2x\\,dx=\\dfrac{1}{2}\\left[x-\\dfrac{\\sin2x}{2}\\right]_0^{\\frac{\\pi}{2}}=\\dfrac{\\pi}{4}\\), so \\(I_2=\\dfrac{1}{4}\\times\\dfrac{\\pi}{4}=\\dfrac{\\pi}{16}\\). ∎",
+          "manual": true,
+          "hint": "Put \\(n=2\\) in the reduction formula, then evaluate the base case \\(I_0\\) directly (use \\(\\sin^2x=\\dfrac{1-\\cos2x}{2}\\)).",
+          "steps": [
+            {
+              "explain": "Reduction formula with \\(n=2\\).",
+              "work": "\\(I_2=\\dfrac{2-1}{2+2}I_0=\\dfrac{1}{4}I_0\\)"
+            },
+            {
+              "explain": "\\(I_0\\) has \\(\\cos^0x=1\\).",
+              "work": "\\(I_0=\\int_0^{\\frac{\\pi}{2}}\\sin^2x\\,dx=\\int_0^{\\frac{\\pi}{2}}\\dfrac{1-\\cos2x}{2}\\,dx\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(I_0=\\dfrac{1}{2}\\left[x-\\dfrac{\\sin2x}{2}\\right]_0^{\\frac{\\pi}{2}}=\\dfrac{1}{2}\\left(\\dfrac{\\pi}{2}-0\\right)=\\dfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(I_2=\\dfrac{1}{4}\\times\\dfrac{\\pi}{4}=\\dfrac{\\pi}{16}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hence show that",
+              "note": "Use the reduction formula with n equal to two, then evaluate the base case."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
