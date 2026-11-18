@@ -3028,6 +3028,60 @@
               "note": "The tangent gradient equals the derivative at \\(x=-2\\). Then substitute the point into \\(y=mx+b\\)."
             }
           ]
+        },
+        {
+          "id": "hurlstone2020-q25d",
+          "type": "mc",
+          "stem": "A curve with the equation \\(y=f(x)\\) has \\(\\dfrac{dy}{dx}=x^3+2x-7\\). The point \\(P(2,4)\\) lies on the curve. Find an equation for the normal to the curve at \\(P\\), in the form \\(ax+by+c=0\\), where \\(a,\\ b\\) and \\(c\\) are integers.",
+          "difficulty": "hard",
+          "options": [
+            "\\(x+5y-22=0\\)",
+            "\\(5x-y-6=0\\)",
+            "\\(x-5y+18=0\\)",
+            "\\(y=-\\dfrac{1}{5}x+\\dfrac{22}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Gradient of the TANGENT = \\(\\dfrac{dy}{dx}\\) at \\(x=2\\). The NORMAL is perpendicular: gradient = negative reciprocal. Then use \\(y-y_1=m(x-x_1)\\) and rearrange into the required form.",
+          "steps": [
+            {
+              "explain": "Gradient of the tangent at \\(P\\).",
+              "work": "\\(m_T=2^3+2(2)-7=8+4-7=5\\)"
+            },
+            {
+              "explain": "Gradient of the normal (negative reciprocal).",
+              "work": "\\(m_N=-\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Point-gradient form through \\(P(2,4)\\).",
+              "work": "\\(y-4=-\\dfrac{1}{5}(x-2)\\)"
+            },
+            {
+              "explain": "Multiply by 5 to clear the fraction.",
+              "work": "\\(5y-20=-(x-2)=-x+2\\)"
+            },
+            {
+              "explain": "Rearrange into \\(ax+by+c=0\\) with integers.",
+              "work": "\\(x+5y-22=0\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check \\(P(2,4)\\): \\(2+20-22=0\\) ✓. (D is correct as a line but NOT in the required form.)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equation for the normal",
+              "note": "Normal gradient = negative reciprocal; give the answer in the form asked."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3415,6 +3469,48 @@
           "meta": {
             "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
             "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q19",
+          "type": "mc",
+          "stem": "Differentiate \\(\\dfrac{\\sin x}{x^2}\\) with respect to \\(x\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x\\cos x-2\\sin x}{x^3}\\)",
+            "\\(\\dfrac{x\\cos x+2\\sin x}{x^3}\\)",
+            "\\(\\dfrac{\\cos x}{2x}\\)",
+            "\\(\\dfrac{x^2\\cos x-2x\\sin x}{x^2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the QUOTIENT RULE \\(\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}\\) with \\(u=\\sin x\\) and \\(v=x^2\\).",
+          "steps": [
+            {
+              "explain": "Identify the parts.",
+              "work": "\\(u=\\sin x,\\ u'=\\cos x;\\qquad v=x^2,\\ v'=2x\\)"
+            },
+            {
+              "explain": "Apply the quotient rule.",
+              "work": "\\(\\dfrac{d}{dx}\\left(\\dfrac{\\sin x}{x^2}\\right)=\\dfrac{x^2\\cos x-\\sin x\\cdot2x}{(x^2)^2}\\)"
+            },
+            {
+              "explain": "Simplify the denominator \\((x^2)^2=x^4\\) and cancel one factor of \\(x\\) from top and bottom.",
+              "work": "\\(=\\dfrac{x(x\\cos x-2\\sin x)}{x^4}=\\dfrac{x\\cos x-2\\sin x}{x^3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate",
+              "note": "Quotient rule: (u′v − uv′) over v squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -4364,6 +4460,60 @@
           "meta": {
             "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
             "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q1",
+          "type": "mc",
+          "stem": "What is the value of \\(f'(x)\\) if \\(f(x)=3x^4(4-x)^3\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(3x^3(4-x)^3(7x-16)\\)",
+            "\\(3x^3(4-x)^3(16-7x)\\)",
+            "\\(3x^3(4-x)^2(7x-16)\\)",
+            "\\(3x^3(4-x)^2(16-7x)\\)"
+          ],
+          "answer": 3,
+          "hint": "Two functions are MULTIPLIED, so use the PRODUCT RULE \\((uv)'=u'v+uv'\\); the factor \\((4-x)^3\\) also needs the CHAIN RULE (its inner derivative is \\(-1\\)). Then factor out the common terms.",
+          "steps": [
+            {
+              "explain": "Choose \\(u\\) and \\(v\\).",
+              "work": "\\(u=3x^4,\\qquad v=(4-x)^3\\)"
+            },
+            {
+              "explain": "Differentiate each (\\(v\\) needs the chain rule).",
+              "work": "\\(u'=12x^3,\\qquad v'=3(4-x)^2\\times(-1)=-3(4-x)^2\\)"
+            },
+            {
+              "explain": "Product rule.",
+              "work": "\\(f'(x)=3x^4\\left[-3(4-x)^2\\right]+(4-x)^3\\left[12x^3\\right]\\)"
+            },
+            {
+              "explain": "Factor out the common factor \\(3x^3(4-x)^2\\) (the lowest power of each).",
+              "work": "\\(f'(x)=3x^3(4-x)^2\\left[-3x+4(4-x)\\right]\\)"
+            },
+            {
+              "explain": "Simplify the bracket.",
+              "work": "\\(-3x+16-4x=16-7x\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(f'(x)=3x^3(4-x)^2(16-7x)\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "value of",
+              "note": "Product rule with the chain rule on the cubed bracket."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
             "grade": "11",
             "origin": "teacher"
           }

@@ -17263,6 +17263,98 @@
               "note": "Find factors that produce \\(2x^2\\) and \\(-12\\), with middle terms adding to \\(5x\\)."
             }
           ]
+        },
+        {
+          "id": "hurlstone2020-q17a",
+          "type": "mc",
+          "stem": "Given that \\(f(x)=(x^2-6x)(x-3)+2x\\). Express \\(f(x)\\) in the form \\(x(ax^2+bx+c)\\), where \\(a,\\ b\\) and \\(c\\) are constants.",
+          "difficulty": "medium",
+          "options": [
+            "\\(x(x^2-9x+20)\\)",
+            "\\(x(x^2-9x+18)\\)",
+            "\\(x(x^2-3x+20)\\)",
+            "\\(x(x^2-6x+2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Both parts of \\(f(x)\\) contain a factor \\(x\\): \\(x^2-6x=x(x-6)\\) and \\(2x=x\\cdot2\\). Take \\(x\\) out as a common factor, then expand the rest.",
+          "steps": [
+            {
+              "explain": "Factor \\(x^2-6x\\) first.",
+              "work": "\\(x^2-6x=x(x-6)\\)"
+            },
+            {
+              "explain": "Now every term has a factor of \\(x\\).",
+              "work": "\\(f(x)=x(x-6)(x-3)+2x=x\\left[(x-6)(x-3)+2\\right]\\)"
+            },
+            {
+              "explain": "Expand \\((x-6)(x-3)\\).",
+              "work": "\\((x-6)(x-3)=x^2-3x-6x+18=x^2-9x+18\\)"
+            },
+            {
+              "explain": "Add the 2.",
+              "work": "\\(x^2-9x+18+2=x^2-9x+20\\)"
+            },
+            {
+              "explain": "Write in the required form.",
+              "work": "\\(f(x)=x(x^2-9x+20)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express",
+              "note": "Take out the common factor x, then expand the bracket."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q17b",
+          "type": "mc",
+          "stem": "Given that \\(f(x)=(x^2-6x)(x-3)+2x\\). It is known that \\(f(x)=x(x^2-9x+20)\\). Hence factorise \\(f(x)\\) completely.",
+          "difficulty": "easy",
+          "options": [
+            "\\(x(x-4)(x-5)\\)",
+            "\\(x(x+4)(x+5)\\)",
+            "\\(x(x-2)(x-10)\\)",
+            "\\((x-4)(x-5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise the quadratic \\(x^2-9x+20\\): find two numbers that MULTIPLY to \\(20\\) and ADD to \\(-9\\).",
+          "steps": [
+            {
+              "explain": "Look for two numbers with product \\(+20\\) and sum \\(-9\\).",
+              "work": "\\(-4\\times-5=20,\\qquad-4+(-5)=-9\\)"
+            },
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "\\(x^2-9x+20=(x-4)(x-5)\\)"
+            },
+            {
+              "explain": "Keep the factor \\(x\\) out the front.",
+              "work": "\\(f(x)=x(x-4)(x-5)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "factorise",
+              "note": "Find two numbers with product 20 and sum minus nine."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

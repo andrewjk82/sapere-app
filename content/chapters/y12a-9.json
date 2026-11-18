@@ -1710,6 +1710,54 @@
             "origin": "teacher",
             "note": "The four printed tables are combined into one labelled figure A–D; options are the letters."
           }
+        },
+        {
+          "id": "hurlstone2020-q13a",
+          "type": "mc",
+          "stem": "The random variable \\(X\\) has the probability distribution shown. Find \\(P(1<X\\le3)\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 60\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">X</text><rect x=\"92\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"148\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"204\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"260\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"316\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><rect x=\"2\" y=\"30\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"92\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text><rect x=\"148\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"204\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"260\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"316\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text></svg>"
+          },
+          "options": [
+            "0.6",
+            "0.8",
+            "0.4",
+            "0.2"
+          ],
+          "answer": 0,
+          "hint": "\\(P(1<X\\le3)\\): the '\\(<\\)' on the left EXCLUDES 1, and '\\(\\le\\)' on the right INCLUDES 3. List which values of \\(X\\) are in the range.",
+          "steps": [
+            {
+              "explain": "Which values of \\(X\\) satisfy \\(1<X\\le3\\)? Not 1 (strict), but 2 and 3.",
+              "work": "\\(X=2,\\ 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 60\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">X</text><rect x=\"92\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"148\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"204\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"260\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"316\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><rect x=\"2\" y=\"30\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"92\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text><rect x=\"148\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"204\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"260\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"316\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text></svg>"
+              }
+            },
+            {
+              "explain": "Add their probabilities.",
+              "work": "\\(P(1<X\\le3)=P(2)+P(3)=0.4+0.2=0.6\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistake: including \\(X=1\\) (giving 0.8).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "List the included values of X, then add their probabilities."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4155,6 +4203,58 @@
           "meta": {
             "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
             "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-q13b",
+          "type": "mc",
+          "stem": "The random variable \\(X\\) has the probability distribution shown. Find the variance of \\(X\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 60\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">X</text><rect x=\"92\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"148\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"204\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"260\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"316\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><rect x=\"2\" y=\"30\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"92\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text><rect x=\"148\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"204\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"260\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"316\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text></svg>"
+          },
+          "options": [
+            "1.2",
+            "2",
+            "5.2",
+            "1.1"
+          ],
+          "answer": 0,
+          "hint": "\\(\\text{Var}(X)=E(X^2)-[E(X)]^2\\). Find the mean \\(E(X)\\) first, then \\(E(X^2)\\).",
+          "steps": [
+            {
+              "explain": "Mean.",
+              "work": "\\(E(X)=0(0.1)+1(0.2)+2(0.4)+3(0.2)+4(0.1)=0+0.2+0.8+0.6+0.4=2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 60\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"2\" y=\"2\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">X</text><rect x=\"92\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><rect x=\"148\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"204\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><rect x=\"260\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><rect x=\"316\" y=\"2\" width=\"56\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><rect x=\"2\" y=\"30\" width=\"90\" height=\"28\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"47\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P(X = x)</text><rect x=\"92\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text><rect x=\"148\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"176\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"204\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"232\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.4</text><rect x=\"260\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"288\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><rect x=\"316\" y=\"30\" width=\"56\" height=\"28\" fill=\"#fde68a\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"344\" y=\"48.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0.1</text></svg>"
+              }
+            },
+            {
+              "explain": "Mean of the squares.",
+              "work": "\\(E(X^2)=0^2(0.1)+1^2(0.2)+2^2(0.4)+3^2(0.2)+4^2(0.1)=0+0.2+1.6+1.8+1.6=5.2\\)"
+            },
+            {
+              "explain": "Variance.",
+              "work": "\\(\\text{Var}(X)=5.2-2^2=1.2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not 5.2? That is \\(E(X^2)\\), before subtracting \\([E(X)]^2\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "variance",
+              "note": "Var = E(X²) − [E(X)]²; find the mean first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
+            "school": "Hurlstone Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
