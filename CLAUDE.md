@@ -216,6 +216,11 @@ that were not between the two segments; `wghs2015-y10`/`abbotsleigh2024` figures
   Before committing ANY figure: render it (Playwright), look at it, and run `grep -c 'fill-rule=\\"evenodd' content/chapters/<file>.json` on the file you touched — must be 0
   for your new ids. Graphs = plot from a function with grid, ticks, axis arrows; geometry = coordinates computed from the real lengths/angles.
   Applies to question figures, option-graph figures AND step figures. If you cannot hand-draw one, say so — do not trace it.
+- **No label may touch a curve, line, axis, dot or another label (2026-11-18, Q15c graph incident: `A`, `P(x)`, axis ticks sat on curves).**
+  Every label (point names, curve names, tick numbers, side lengths, angles) is placed by a collision check, not by eye: candidate positions around the
+  anchor, pick the first whose bbox is >3px clear of ALL drawn geometry and earlier labels; if none fits, move/shrink the label or enlarge the figure — never
+  accept an overlap. `tools/content/svgplot.py` `plot()` does this for function graphs (`pts`, `tags`); mimic it for geometry. Always include the
+  extra lines you draw (tangents, AB, highlights) as obstacles. Then render and look at every figure before committing.
 - `width="100%"` + `style="max-width:Npx"`, text with a white halo, no label overlapping a line or another label.
 
 ## Question DNA reasoning-blueprint authoring
