@@ -4762,61 +4762,6 @@
           "timeLimit": 60
         },
         {
-          "id": "ascham2020-q21",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Solve \\(2\\sin 2x+\\sqrt{3}=0\\) in the domain \\([0,2\\pi]\\).",
-          "options": [
-            "\\(x=\\frac{2\\pi}{3},\\frac{5\\pi}{6}\\)",
-            "\\(x=\\frac{2\\pi}{3},\\frac{5\\pi}{6},\\frac{5\\pi}{3},\\frac{11\\pi}{6}\\)",
-            "\\(x=\\frac{\\pi}{3},\\frac{2\\pi}{3},\\frac{4\\pi}{3},\\frac{5\\pi}{3}\\)",
-            "\\(x=\\frac{5\\pi}{6},\\frac{7\\pi}{6}\\)"
-          ],
-          "answer": 1,
-          "hint": "Isolate sin(2x), use its reference angle and negative-sine quadrants, then remember 2x spans a 4π interval.",
-          "keyPoints": [
-            {
-              "text": "\\([0,2\\pi]\\)",
-              "note": "Solve for sin(2x), find all solutions while 2x ranges from 0 to 4π, then halve each angle."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Move √3 and divide by 2.",
-              "work": "\\(2\\sin2x=-\\sqrt3\\Rightarrow\\sin2x=-\\frac{\\sqrt3}{2}\\)"
-            },
-            {
-              "explain": "The reference angle is π/3 because \\(\\sin(\\pi/3)=\\sqrt3/2\\). Sine is negative in quadrants III and IV.",
-              "work": "\\(2x=\\frac{4\\pi}{3},\\frac{5\\pi}{3}\\quad\\text{within }[0,2\\pi)\\)"
-            },
-            {
-              "explain": "Because x ranges from 0 to 2π, the angle 2x ranges from 0 to 4π, so include the corresponding solutions one full 2π cycle later.",
-              "work": "\\(2x=\\frac{10\\pi}{3},\\frac{11\\pi}{3}\\)"
-            },
-            {
-              "explain": "Divide each solution for 2x by 2 and check that x lies in [0,2π].",
-              "work": "\\(x=\\frac{2\\pi}{3},\\frac{5\\pi}{6},\\frac{5\\pi}{3},\\frac{11\\pi}{6}\\)"
-            },
-            {
-              "explain": "These are all four solutions in the required domain.",
-              "work": "\\(\\boxed{x=\\frac{2\\pi}{3},\\frac{5\\pi}{6},\\frac{5\\pi}{3},\\frac{11\\pi}{6}}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 21,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y12a-2I"
-          }
-        },
-        {
           "id": "killara2026-q23",
           "type": "mc",
           "difficulty": "hard",
@@ -4913,6 +4858,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "ascham2020-adv-q21",
+          "type": "mc",
+          "stem": "Solve \\(2\\sin2x+\\sqrt{3}=0\\) in the domain \\([0,2\\pi]\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\dfrac{2\\pi}{3},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{5\\pi}{3},\\ \\dfrac{11\\pi}{6}\\)",
+            "\\(x=\\dfrac{2\\pi}{3},\\ \\dfrac{5\\pi}{6}\\)",
+            "\\(x=\\dfrac{4\\pi}{3},\\ \\dfrac{5\\pi}{3}\\)",
+            "\\(x=\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{3},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{4\\pi}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Isolate \\(\\sin2x\\), and because the angle is \\(2x\\) the domain doubles: \\(0\\le2x\\le4\\pi\\) (TWO full turns, so expect four answers).",
+          "steps": [
+            {
+              "explain": "Isolate the sine.",
+              "work": "\\(\\sin2x=-\\dfrac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Reference angle: \\(\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt{3}}{2}\\). Sine is NEGATIVE in quadrants 3 and 4.",
+              "work": "\\(2x=\\pi+\\dfrac{\\pi}{3}=\\dfrac{4\\pi}{3},\\qquad 2x=2\\pi-\\dfrac{\\pi}{3}=\\dfrac{5\\pi}{3}\\)"
+            },
+            {
+              "explain": "Domain for \\(2x\\): \\(0\\le2x\\le4\\pi\\). Add \\(2\\pi\\) to get the solutions in the second turn.",
+              "work": "\\(2x=\\dfrac{4\\pi}{3},\\ \\dfrac{5\\pi}{3},\\ \\dfrac{10\\pi}{3},\\ \\dfrac{11\\pi}{3}\\)"
+            },
+            {
+              "explain": "Divide every value by 2.",
+              "work": "\\(x=\\dfrac{2\\pi}{3},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{5\\pi}{3},\\ \\dfrac{11\\pi}{6}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Double the domain for 2x, then divide the answers by 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4958,56 +4949,6 @@
             "grade": "12"
           },
           "xp": 2
-        },
-        {
-          "id": "ascham2020-q15",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "A sector of angle \\(\\frac{2\\pi}{3}\\) is cut out of a circular piece of paper of radius 10 cm and removed. The cut edges of the remaining paper are brought together to shape the paper into a cone. Find the exact circumference of the circular base of the cone.",
-          "options": [
-            "\\(\\frac{20\\pi}{3}\\text{ cm}\\)",
-            "\\(\\frac{40\\pi}{3}\\text{ cm}\\)",
-            "\\(\\frac{50\\pi}{3}\\text{ cm}\\)",
-            "\\(20\\pi\\text{ cm}\\)"
-          ],
-          "answer": 1,
-          "hint": "The cone’s base circumference equals the arc length of the paper that remains after the sector is removed. First find the remaining angle.",
-          "keyPoints": [
-            {
-              "text": "\\frac{2\\pi}{3}",
-              "note": "Subtract the removed central angle from a full turn before finding the remaining arc length."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "A full circle has angle size \\(2\\pi\\) radians. The removed sector has angle \\(2\\pi/3\\), so the remaining piece has angle \\(2\\pi-2\\pi/3\\).",
-              "work": "\\(\\theta_{\\mathrm{remaining}}=2\\pi-\\frac{2\\pi}{3}=\\frac{4\\pi}{3}\\)"
-            },
-            {
-              "explain": "When the cut edges are joined, the remaining curved edge becomes the circumference of the cone’s circular base. Arc length is \\(s=r\\theta\\), with θ measured in radians.",
-              "work": "\\(s=r\\theta=10\\left(\\frac{4\\pi}{3}\\right)\\)"
-            },
-            {
-              "explain": "Multiply the radius by the remaining angle to get the exact arc length.",
-              "work": "\\(s=\\frac{40\\pi}{3}\\text{ cm}\\)"
-            },
-            {
-              "explain": "That curved edge is exactly the circumference of the new cone base.",
-              "work": "\\(\\boxed{C=\\frac{40\\pi}{3}\\text{ cm}}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11 Advanced",
-            "sourceQuestion": 15,
-            "sourcePage": 12,
-            "sourceTopic": "11C Arcs and sectors of circles"
-          }
         },
         {
           "id": "y11a-11-excel-radians-q2",
@@ -7237,6 +7178,103 @@
           "meta": {
             "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
             "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q15",
+          "type": "mc",
+          "stem": "A sector of angle \\(\\dfrac{2\\pi}{3}\\) is cut out of a circular piece of paper of radius 10 cm and removed. The cut edges of the remaining paper are brought together to shape the paper into a cone. Find the exact circumference of the circular base of the cone.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{40\\pi}{3}\\ \\text{cm}\\)",
+            "\\(\\dfrac{20\\pi}{3}\\ \\text{cm}\\)",
+            "\\(\\dfrac{10\\pi}{3}\\ \\text{cm}\\)",
+            "\\(20\\pi\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "When the sector is rolled into a cone, the ARC of the remaining sector becomes the circumference of the cone's base. Use arc length \\(l=r\\theta\\) with the REMAINING angle.",
+          "steps": [
+            {
+              "explain": "Angle of the remaining paper: a full circle is \\(2\\pi\\).",
+              "work": "\\(\\theta=2\\pi-\\dfrac{2\\pi}{3}=\\dfrac{4\\pi}{3}\\)"
+            },
+            {
+              "explain": "The curved edge (arc) of the remaining sector has length \\(l=r\\theta\\).",
+              "work": "\\(l=10\\times\\dfrac{4\\pi}{3}=\\dfrac{40\\pi}{3}\\)"
+            },
+            {
+              "explain": "This arc closes up to form the circle at the base of the cone, so it equals the base circumference.",
+              "work": "\\(C=\\dfrac{40\\pi}{3}\\ \\text{cm}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not \\(\\dfrac{20\\pi}{3}\\)? That is the arc of the REMOVED sector.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact circumference",
+              "note": "Use the remaining angle; arc length = radius times angle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q32a",
+          "type": "review",
+          "stem": "A circular piece of tinplate of radius 10 cm has three segments removed, leaving the shaded shape as illustrated. The angle \\(\\theta\\) is measured in radians. Show the remaining shaded area is given by \\(A=50(\\theta+3\\sin\\theta)\\ \\text{cm}^2\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"3 4\"/><path d=\"M99.2,43.1 A84 84 0 0 1 200.8,43.1 L200.8,176.9 L99.2,176.9Z\" fill=\"#e5e7eb\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\"/><line x1=\"150\" y1=\"110\" x2=\"99.2\" y2=\"43.1\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"110\" x2=\"200.8\" y2=\"43.1\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"110\" r=\"6\" fill=\"#fff\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"150\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><text x=\"85.2\" y=\"39.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text><text x=\"214.8\" y=\"39.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text><text x=\"46\" y=\"60\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10 cm</text><path d=\"M106,80\" /><line x1=\"80\" y1=\"64\" x2=\"120.6\" y2=\"72.6\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M120.6,72.6 l-10,-1 l4,-8z\" fill=\"#64748b\"/></svg>"
+          },
+          "answer": "Sector \\(OBC\\): \\(\\dfrac{1}{2}(10)^2\\theta=50\\theta\\). Triangle \\(OED\\) (angle \\(\\theta\\)): \\(50\\sin\\theta\\). Triangles \\(OBE\\) and \\(OCD\\) (angle \\(\\pi-\\theta\\) each): \\(\\dfrac{1}{2}(10)^2\\sin(\\pi-\\theta)=50\\sin\\theta\\) each. Total \\(A=50\\theta+3\\times50\\sin\\theta=50(\\theta+3\\sin\\theta)\\).",
+          "manual": true,
+          "hint": "Split the shaded shape at the centre \\(O\\) into a SECTOR and three TRIANGLES. Use \\(A_{\\text{sector}}=\\dfrac{1}{2}r^2\\theta\\) and \\(A_{\\triangle}=\\dfrac{1}{2}ab\\sin C\\).",
+          "steps": [
+            {
+              "explain": "Join the centre \\(O\\) to the four corners \\(B,C,D,E\\) on the circle. The shape splits into: blue sector, green triangle and two red triangles.",
+              "work": "1 sector + 3 triangles, all with two sides equal to the radius 10",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"3 4\"/><path d=\"M99.2,43.1 A84 84 0 0 1 200.8,43.1 L200.8,176.9 L99.2,176.9Z\" fill=\"#e5e7eb\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\"/><path d=\"M150,110 L99.2,43.1 A84 84 0 0 1 200.8,43.1Z\" fill=\"#2563eb\" fill-opacity=\"0.35\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><path d=\"M150,110 L99.2,176.9 L200.8,176.9Z\" fill=\"#059669\" fill-opacity=\"0.45\" stroke=\"#059669\" stroke-width=\"1.6\"/><path d=\"M150,110 L99.2,43.1 L99.2,176.9Z\" fill=\"#dc2626\" fill-opacity=\"0.45\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M150,110 L200.8,43.1 L200.8,176.9Z\" fill=\"#dc2626\" fill-opacity=\"0.45\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><line x1=\"150\" y1=\"110\" x2=\"99.2\" y2=\"176.9\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"150\" y1=\"110\" x2=\"200.8\" y2=\"176.9\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"150\" y=\"76\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e40af\" font-style=\"italic\">θ</text><text x=\"150\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#047857\" font-style=\"italic\">θ</text><text x=\"122\" y=\"114\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#7f1d1d\">π − θ</text><text x=\"178\" y=\"114\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#7f1d1d\">π − θ</text><text x=\"85.2\" y=\"39.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">B</text><text x=\"214.8\" y=\"39.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">C</text><text x=\"46\" y=\"60\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10 cm</text><path d=\"M106,80\" /><line x1=\"80\" y1=\"64\" x2=\"120.6\" y2=\"72.6\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M120.6,72.6 l-10,-1 l4,-8z\" fill=\"#64748b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Sector \\(OBC\\) with angle \\(\\theta\\).",
+              "work": "\\(A_1=\\dfrac{1}{2}r^2\\theta=\\dfrac{1}{2}(10)^2\\theta=50\\theta\\)"
+            },
+            {
+              "explain": "Bottom triangle \\(OED\\): the chord \\(ED\\) equals \\(BC\\) (the shape is a rectangle), so the angle at \\(O\\) is also \\(\\theta\\).",
+              "work": "\\(A_2=\\dfrac{1}{2}(10)(10)\\sin\\theta=50\\sin\\theta\\)"
+            },
+            {
+              "explain": "Side triangles \\(OBE\\) and \\(OCD\\): the angles around \\(O\\) add to \\(2\\pi\\), so each side angle is \\(\\dfrac{2\\pi-2\\theta}{2}=\\pi-\\theta\\).",
+              "work": "\\(A_3=A_4=\\dfrac{1}{2}(10)(10)\\sin(\\pi-\\theta)=50\\sin\\theta\\)"
+            },
+            {
+              "explain": "Add all four areas (using \\(\\sin(\\pi-\\theta)=\\sin\\theta\\)).",
+              "work": "\\(A=50\\theta+50\\sin\\theta+50\\sin\\theta+50\\sin\\theta=50(\\theta+3\\sin\\theta)\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show",
+              "note": "Sector plus three triangles; the sine of pi minus theta equals the sine of theta."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
             "grade": "11",
             "origin": "teacher"
           }

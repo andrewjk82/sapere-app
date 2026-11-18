@@ -7568,53 +7568,6 @@
           "xp": 2
         },
         {
-          "id": "ascham2020-q27",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate \\(3^{x^2}\\).",
-          "options": [
-            "\\(2x\\ln(3)\\,3^{x^2}\\)",
-            "\\(2x\\,3^{x^2-1}\\)",
-            "\\(x^2\\ln(3)\\,3^{x^2}\\)",
-            "\\(3x^2\\ln(3)\\)"
-          ],
-          "answer": 0,
-          "hint": "For \\(a^{u(x)}\\), multiply \\(a^{u(x)}\\ln a\\) by the derivative of the exponent.",
-          "keyPoints": [
-            {
-              "text": "3^{x^2}",
-              "note": "For an exponential with variable exponent, retain the factor 3^(x²) ln 3 and multiply by the derivative of x²."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Use the exponential chain rule: \\(\\frac{d}{dx}a^{u}=a^u\\ln(a)u'\\). Here the base is 3 and the exponent is x².",
-              "work": "\\(u=x^2,\\quad u'=2x\\)"
-            },
-            {
-              "explain": "Substitute the base, exponent, and exponent derivative.",
-              "work": "\\(\\frac{d}{dx}3^{x^2}=3^{x^2}\\ln(3)(2x)\\)"
-            },
-            {
-              "explain": "Reorder the factors into standard form.",
-              "work": "\\(\\boxed{2x\\ln(3)\\,3^{x^2}}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 27,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y12a-5B"
-          }
-        },
-        {
           "id": "y12a-advanced-002-p128-q07",
           "type": "mc",
           "difficulty": "medium",
@@ -8374,6 +8327,56 @@
             "page": "152",
             "course": "Advanced",
             "sourceQuestion": "Q2a, 2002 HSC"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q13",
+          "type": "mc",
+          "stem": "Differentiate \\(\\left(e^x+x\\right)^4\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(4\\left(e^x+x\\right)^3\\left(e^x+1\\right)\\)",
+            "\\(4\\left(e^x+x\\right)^3\\)",
+            "\\(4\\left(e^x+1\\right)^3\\)",
+            "\\(4\\left(e^x+x\\right)^3e^x\\)"
+          ],
+          "answer": 0,
+          "hint": "This is a function of a function: use the CHAIN RULE. Outer: something to the power 4. Inner: \\(e^x+x\\) (differentiate it too!).",
+          "steps": [
+            {
+              "explain": "Identify the outer and inner functions.",
+              "work": "\\(y=u^4,\\qquad u=e^x+x\\)"
+            },
+            {
+              "explain": "Differentiate each piece.",
+              "work": "\\(\\dfrac{dy}{du}=4u^3,\\qquad\\dfrac{du}{dx}=e^x+1\\)"
+            },
+            {
+              "explain": "Chain rule: \\(\\dfrac{dy}{dx}=\\dfrac{dy}{du}\\times\\dfrac{du}{dx}\\).",
+              "work": "\\(\\dfrac{dy}{dx}=4u^3\\times(e^x+1)\\)"
+            },
+            {
+              "explain": "Substitute back \\(u=e^x+x\\).",
+              "work": "\\(\\dfrac{dy}{dx}=4\\left(e^x+x\\right)^3\\left(e^x+1\\right)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistake: forgetting the \\(+1\\) (the derivative of \\(x\\)) from the inner function.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate",
+              "note": "Chain rule: outer × derivative of the inner."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -18865,6 +18868,56 @@
             "source": "Y12 Advanced Topic by topic 002",
             "page": "126-127",
             "course": "Advanced"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q27",
+          "type": "mc",
+          "stem": "Differentiate \\(3^{x^2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2x\\cdot3^{x^2}\\ln3\\)",
+            "\\(x^2\\cdot3^{x^2-1}\\)",
+            "\\(3^{x^2}\\ln3\\)",
+            "\\(2x\\cdot3^{x^2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\dfrac{d}{dx}\\left(a^{u}\\right)=a^{u}\\ln a\\times u'\\) (exponential with base \\(3\\) and a function \\(u=x^2\\) in the power).",
+          "steps": [
+            {
+              "explain": "Identify the pieces.",
+              "work": "\\(y=3^{u},\\qquad u=x^2\\)"
+            },
+            {
+              "explain": "Differentiate each: the derivative of \\(a^u\\) with respect to \\(u\\) is \\(a^u\\ln a\\).",
+              "work": "\\(\\dfrac{dy}{du}=3^u\\ln3,\\qquad\\dfrac{du}{dx}=2x\\)"
+            },
+            {
+              "explain": "Chain rule.",
+              "work": "\\(\\dfrac{dy}{dx}=3^u\\ln3\\times2x\\)"
+            },
+            {
+              "explain": "Substitute back \\(u=x^2\\).",
+              "work": "\\(\\dfrac{dy}{dx}=2x\\cdot3^{x^2}\\ln3\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistakes: using the power rule (\\(x^2\\cdot3^{x^2-1}\\)), or forgetting \\(\\ln3\\) or the \\(2x\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate",
+              "note": "Exponential rule with the chain-rule factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

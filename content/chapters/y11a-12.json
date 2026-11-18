@@ -5617,61 +5617,6 @@
           }
         },
         {
-          "id": "ascham2020-q12",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "In a bag there are 6 red marbles (R) and 12 green marbles (G). Two marbles are selected at random without replacement. A partially completed probability tree is shown. Complete the probability tree and calculate the probability of selecting two marbles of different colours.",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 360\" role=\"img\"><line x1=\"50\" y1=\"190\" x2=\"170\" y2=\"100\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"50\" y1=\"190\" x2=\"170\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"55\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"145\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"235\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"325\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"175\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"175\" y=\"295\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"312\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"312\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"312\" y=\"238\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"312\" y=\"328\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"105\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#475569\">6/18</text></svg>"
-          },
-          "answer": "",
-          "manual": true,
-          "hint": "After the first marble is removed, update both colour counts and the total before filling the second-stage branches.",
-          "keyPoints": [
-            {
-              "text": "without replacement",
-              "note": "After the first marble is drawn, reduce the matching colour count and the total count on the second branches."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Initially there are 18 marbles. The first-branch probabilities are \\(6/18\\) for red and \\(12/18\\) for green.",
-              "work": "\\(P(R_1)=\\frac6{18}=\\frac13,\\quad P(G_1)=\\frac{12}{18}=\\frac23\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 360\" role=\"img\"><line x1=\"50\" y1=\"190\" x2=\"170\" y2=\"100\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"50\" y1=\"190\" x2=\"170\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"55\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"145\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"235\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"325\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"175\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"175\" y=\"295\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"312\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"312\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"312\" y=\"238\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"312\" y=\"328\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"105\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#475569\">6/18</text><text x=\"105\" y=\"254\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#15803d\">12/18</text></svg>"
-              }
-            },
-            {
-              "explain": "If the first marble is red, 5 red and 12 green remain out of 17. If it is green, 6 red and 11 green remain out of 17.",
-              "work": "\\(P(R_2|R_1)=\\frac5{17},\\ P(G_2|R_1)=\\frac{12}{17};\\quad P(R_2|G_1)=\\frac6{17},\\ P(G_2|G_1)=\\frac{11}{17}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50%\" height=\"auto\" viewBox=\"0 0 360 360\" role=\"img\"><line x1=\"50\" y1=\"190\" x2=\"170\" y2=\"100\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"50\" y1=\"190\" x2=\"170\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"55\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"145\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"235\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"325\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"175\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"175\" y=\"295\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"312\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"312\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"312\" y=\"238\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">R</text><text x=\"312\" y=\"328\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"105\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#475569\">6/18</text><text x=\"105\" y=\"254\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#15803d\">12/18</text><text x=\"235\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#15803d\">5/17</text><text x=\"235\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#15803d\">12/17</text><text x=\"235\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#15803d\">6/17</text><text x=\"235\" y=\"307\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#15803d\">11/17</text><line x1=\"170\" y1=\"100\" x2=\"300\" y2=\"145\" stroke=\"#16a34a\" stroke-width=\"5\"/><line x1=\"170\" y1=\"280\" x2=\"300\" y2=\"235\" stroke=\"#16a34a\" stroke-width=\"5\"/></svg>"
-              }
-            },
-            {
-              "explain": "Different colours occur on the two paths RG and GR. Multiply along each path.",
-              "work": "\\(P(RG)=\\frac6{18}\\cdot\\frac{12}{17}=\\frac{4}{17},\\quad P(GR)=\\frac{12}{18}\\cdot\\frac6{17}=\\frac{4}{17}\\)"
-            },
-            {
-              "explain": "The two paths are mutually exclusive, so add their probabilities.",
-              "work": "\\(P(\\text{different colours})=\\frac4{17}+\\frac4{17}=\\boxed{\\frac8{17}}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 2U Trials.pdf",
-            "school": "Ascham School",
-            "examType": "Trial HSC",
-            "year": 2020,
-            "grade": "11/12 Advanced",
-            "sourceQuestion": 12,
-            "sourcePart": null,
-            "sourcePage": null,
-            "sourceTopic": "y11a-12F"
-          }
-        },
-        {
           "id": "y11a-12-excel-probvenn-p095-q03",
           "type": "mc",
           "difficulty": "easy",
@@ -6341,6 +6286,71 @@
             "school": "Abbotsleigh",
             "grade": "11",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q12",
+          "type": "mc",
+          "stem": "In a bag there are 6 red marbles (R) and 12 green marbles (G). Two marbles are selected at random without replacement. A partially completed probability tree is shown. Complete the probability tree and calculate the probability of selecting two marbles of different colours.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"115\" x2=\"150\" y2=\"60\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"115\" x2=\"150\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"60\" x2=\"300\" y2=\"25\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">R</text><line x1=\"150\" y1=\"60\" x2=\"300\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"100\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">G</text><line x1=\"150\" y1=\"170\" x2=\"300\" y2=\"140\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"145\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">R</text><line x1=\"150\" y1=\"170\" x2=\"300\" y2=\"210\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"215\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">G</text><text x=\"162\" y=\"54\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"162\" y=\"186\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">G</text><text x=\"66\" y=\"72\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6</text><line x1=\"60\" y1=\"76\" x2=\"72\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"66\" y=\"91\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">18</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{8}{17}\\)",
+            "\\(\\dfrac{4}{9}\\)",
+            "\\(\\dfrac{6}{17}\\)",
+            "\\(\\dfrac{12}{17}\\)"
+          ],
+          "answer": 0,
+          "hint": "WITHOUT replacement, the second pick has one fewer marble in the bag. 'Different colours' means RG or GR: multiply along each branch, then ADD the two branches.",
+          "steps": [
+            {
+              "explain": "First pick: 6 red and 12 green out of 18.",
+              "work": "\\(P(R)=\\dfrac{6}{18},\\quad P(G)=\\dfrac{12}{18}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"115\" x2=\"150\" y2=\"60\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"115\" x2=\"150\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"60\" x2=\"300\" y2=\"25\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">R</text><line x1=\"150\" y1=\"60\" x2=\"300\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"100\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">G</text><line x1=\"150\" y1=\"170\" x2=\"300\" y2=\"140\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"145\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">R</text><line x1=\"150\" y1=\"170\" x2=\"300\" y2=\"210\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"314\" y=\"215\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">G</text><text x=\"162\" y=\"54\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"162\" y=\"186\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">G</text><text x=\"66\" y=\"72\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">6</text><line x1=\"60\" y1=\"76\" x2=\"72\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"66\" y=\"91\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">18</text><text x=\"60\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">12</text><line x1=\"51\" y1=\"151\" x2=\"69\" y2=\"151\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"60\" y=\"164\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">18</text><text x=\"221\" y=\"20.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">5</text><line x1=\"212\" y1=\"23.5\" x2=\"230\" y2=\"23.5\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"221\" y=\"36.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">17</text><text x=\"221\" y=\"95.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">12</text><line x1=\"212\" y1=\"98.5\" x2=\"230\" y2=\"98.5\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"221\" y=\"111.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">17</text><text x=\"221\" y=\"133\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">6</text><line x1=\"212\" y1=\"136\" x2=\"230\" y2=\"136\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"221\" y=\"149\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">17</text><text x=\"221\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">11</text><line x1=\"212\" y1=\"211\" x2=\"230\" y2=\"211\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"221\" y=\"224\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">17</text></svg>"
+              }
+            },
+            {
+              "explain": "After a RED is removed: 5 red, 12 green, total 17.",
+              "work": "\\(P(R|R)=\\dfrac{5}{17},\\quad P(G|R)=\\dfrac{12}{17}\\)"
+            },
+            {
+              "explain": "After a GREEN is removed: 6 red, 11 green, total 17.",
+              "work": "\\(P(R|G)=\\dfrac{6}{17},\\quad P(G|G)=\\dfrac{11}{17}\\)"
+            },
+            {
+              "explain": "Different colours: red then green, or green then red. Multiply along the branches.",
+              "work": "\\(P(RG)=\\dfrac{6}{18}\\times\\dfrac{12}{17}=\\dfrac{72}{306},\\qquad P(GR)=\\dfrac{12}{18}\\times\\dfrac{6}{17}=\\dfrac{72}{306}\\)"
+            },
+            {
+              "explain": "Add the two branches.",
+              "work": "\\(\\dfrac{72}{306}+\\dfrac{72}{306}=\\dfrac{144}{306}=\\dfrac{8}{17}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not \\(\\dfrac{4}{9}\\)? That is the answer WITH replacement (\\(2\\times\\dfrac{1}{3}\\times\\dfrac{2}{3}\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "without replacement",
+              "note": "The second pick has one fewer marble."
+            },
+            {
+              "text": "different colours",
+              "note": "RG or GR: add the two branch products."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "The question asks to complete the tree; it is converted to choosing the final probability, and the completed tree is shown in the solution figure."
           }
         }
       ]

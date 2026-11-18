@@ -36860,118 +36860,6 @@
           }
         },
         {
-          "id": "ascham2020-q16",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20.",
-          "parts": [
-            {
-              "id": "ascham2020-q16a",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Write equations for the cost \\(C\\), and income \\(I\\), for the sale of \\(x\\) items.",
-              "options": [
-                "\\(C=60+16x,\\ I=20x\\)",
-                "\\(C=16x,\\ I=60+20x\\)",
-                "\\(C=60+20x,\\ I=16x\\)",
-                "\\(C=76x,\\ I=20x\\)"
-              ],
-              "answer": 0,
-              "hint": "Cost includes the one-off $60 equipment expense; income is the selling price multiplied by the number sold.",
-              "keyPoints": [
-                {
-                  "text": "Write equations for the cost",
-                  "note": "The $60 equipment purchase is a fixed cost; add $16 per doll, while income is $20 per doll."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "The cost contains a fixed equipment cost plus a cost for every doll made.",
-                  "work": "\\(C=60+16x\\)"
-                },
-                {
-                  "explain": "Income has no fixed component: each of x dolls brings in $20.",
-                  "work": "\\(I=20x\\)"
-                },
-                {
-                  "explain": "Keep the fixed amount in the cost equation, not in the income equation.",
-                  "work": "\\(\\boxed{C=60+16x,\\quad I=20x}\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 16,
-                "sourcePart": "a",
-                "sourcePage": null,
-                "sourceTopic": "y11a-1E"
-              }
-            },
-            {
-              "id": "ascham2020-q16b",
-              "type": "mc",
-              "difficulty": "medium",
-              "stem": "Solve the equations simultaneously to determine the number of dolls Ali needs to sell to break even.",
-              "options": [
-                "12 dolls",
-                "15 dolls",
-                "20 dolls",
-                "30 dolls"
-              ],
-              "answer": 1,
-              "hint": "At break-even, set the cost equation equal to the income equation.",
-              "keyPoints": [
-                {
-                  "text": "Solve the equations simultaneously",
-                  "note": "At break-even, set the cost and income expressions equal and solve for the number sold."
-                }
-              ],
-              "steps": [
-                {
-                  "explain": "Use the equations for this business: cost is fixed equipment plus production cost; income is selling revenue.",
-                  "work": "\\(C=60+16x,\\quad I=20x\\)"
-                },
-                {
-                  "explain": "Break-even means the two amounts are equal.",
-                  "work": "\\(60+16x=20x\\)"
-                },
-                {
-                  "explain": "Subtract 16x from both sides, then divide by 4.",
-                  "work": "\\(60=4x\\Rightarrow x=15\\)"
-                },
-                {
-                  "explain": "Ali must sell 15 dolls for cost and income to match.",
-                  "work": "\\(C=60+16(15)=300,\\quad I=20(15)=300\\)"
-                }
-              ],
-              "timeLimit": 60,
-              "xp": 1,
-              "meta": {
-                "source": "Ascham 2020 2U Trials.pdf",
-                "school": "Ascham School",
-                "examType": "Trial HSC",
-                "year": 2020,
-                "grade": "11/12 Advanced",
-                "sourceQuestion": 16,
-                "sourcePart": "b",
-                "sourcePage": null,
-                "sourceTopic": "y11a-1E"
-              }
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "sourcePaper": "Ascham 2020 2U Trials",
-            "sourceQuestion": 16
-          }
-        },
-        {
           "id": "y11a-1-excel-algebra-q07",
           "type": "mc",
           "difficulty": "easy",
@@ -37338,6 +37226,102 @@
               "note": "Add the equations to eliminate y, then substitute back to find x and y."
             }
           ]
+        },
+        {
+          "id": "ascham2020-adv-q16a",
+          "type": "mc",
+          "stem": "Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20. Write equations for the cost C, and income I, for the sale of x items.",
+          "difficulty": "easy",
+          "options": [
+            "\\(C=60+16x,\\quad I=20x\\)",
+            "\\(C=16x,\\quad I=20x-60\\)",
+            "\\(C=60x+16,\\quad I=20x\\)",
+            "\\(C=76x,\\quad I=20x\\)"
+          ],
+          "answer": 0,
+          "hint": "COST = fixed cost + (cost per item × number of items). INCOME = price per item × number of items.",
+          "steps": [
+            {
+              "explain": "Fixed cost (paid once, whatever \\(x\\) is): equipment $60.",
+              "work": "\\(60\\)"
+            },
+            {
+              "explain": "Variable cost: $16 for EACH doll, so for \\(x\\) dolls.",
+              "work": "\\(16x\\)"
+            },
+            {
+              "explain": "Total cost = fixed + variable.",
+              "work": "\\(C=60+16x\\)"
+            },
+            {
+              "explain": "Income: $20 for each doll sold.",
+              "work": "\\(I=20x\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write equations",
+              "note": "Cost = fixed + per-item × x; income = price × x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "ascham2020-adv-q16b",
+          "type": "mc",
+          "stem": "Ali decides to turn her crochet hobby into a small not-for-profit business. She spends $60 on equipment and estimates that it costs her $16 to manufacture each crochet doll. She plans to sell each doll for $20. The cost and income equations are \\(C=60+16x\\) and \\(I=20x\\). Solve the equations simultaneously to determine the number of dolls Ali needs to sell to break even.",
+          "difficulty": "easy",
+          "options": [
+            "15",
+            "12",
+            "60",
+            "3"
+          ],
+          "answer": 0,
+          "hint": "Break even means INCOME = COST. Set the two equations equal and solve for \\(x\\).",
+          "steps": [
+            {
+              "explain": "Break even: income equals cost.",
+              "work": "\\(I=C\\)"
+            },
+            {
+              "explain": "Substitute both expressions.",
+              "work": "\\(20x=60+16x\\)"
+            },
+            {
+              "explain": "Subtract \\(16x\\) from both sides.",
+              "work": "\\(4x=60\\)"
+            },
+            {
+              "explain": "Divide by 4.",
+              "work": "\\(x=15\\) dolls → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(C=60+16(15)=300\\) and \\(I=20(15)=300\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "break even",
+              "note": "Break even: income = cost."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham School 2020 Mathematics Advanced HSC Trial Examination",
+            "school": "Ascham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
