@@ -50,6 +50,56 @@
             "school": "Abbotsleigh",
             "year": 2020
           }
+        },
+        {
+          "id": "barker2023-y11e1-q13a",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x) = x^4 + 4x^3 - 3x^2 + ax + b\\) has remainder \\(R(x) = 32x + 44\\) when divided by \\((x^2 - 2x - 3)\\). Find the values of \\(a\\) and \\(b\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(a=-10,\\ b=8\\)",
+            "\\(a=10,\\ b=8\\)",
+            "\\(a=-10,\\ b=-8\\)",
+            "\\(a=8,\\ b=-10\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by long division until the remainder has degree 1, then equate it to \\(32x+44\\) (compare the coefficients of \\(x\\) and the constants).",
+          "steps": [
+            {
+              "explain": "Divide the leading terms: \\(x^4 \\div x^2 = x^2\\). Multiply back and subtract.",
+              "work": "\\(x^2(x^2-2x-3)=x^4-2x^3-3x^2\\);  remainder so far \\(6x^3+0x^2+ax+b\\)"
+            },
+            {
+              "explain": "Next term: \\(6x^3\\div x^2=6x\\).",
+              "work": "\\(6x(x^2-2x-3)=6x^3-12x^2-18x\\);  remainder \\(12x^2+(a+18)x+b\\)"
+            },
+            {
+              "explain": "Next term: \\(12x^2\\div x^2=12\\).",
+              "work": "\\(12(x^2-2x-3)=12x^2-24x-36\\);  remainder \\((a+42)x+(b+36)\\)"
+            },
+            {
+              "explain": "The remainder must equal \\(32x+44\\). Equate coefficients.",
+              "work": "\\(a+42=32\\;\\Rightarrow\\;a=-10\\);  \\(b+36=44\\;\\Rightarrow\\;b=8\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(a=-10,\\ b=8\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "remainder",
+              "note": "Equate remainder coefficients after long division."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -252,6 +302,218 @@
             "number": "11(d)",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
             "sourcePages": "8"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q1",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x) = x^3 - 4x^2 - x + 4\\) has distinct integer roots. Which of the following is NOT a factor of the polynomial?",
+          "difficulty": "medium",
+          "options": [
+            "\\((x + 1)\\)",
+            "\\((x - 1)\\)",
+            "\\((x + 4)\\)",
+            "\\((x - 4)\\)"
+          ],
+          "answer": 2,
+          "hint": "If \\((x - a)\\) is a factor then \\(P(a) = 0\\). The integer roots divide the constant term 4, so test \\(\\pm 1, \\pm 2, \\pm 4\\). The factor whose root does NOT give 0 is the answer.",
+          "steps": [
+            {
+              "explain": "Write each factor as a root: \\((x+1)\\) → \\(x = -1\\);  \\((x-1)\\) → \\(x = 1\\);  \\((x+4)\\) → \\(x = -4\\);  \\((x-4)\\) → \\(x = 4\\). By the Factor Theorem, test \\(P(\\text{root}) = 0\\).",
+              "work": "factor ⇔ P(root) = 0"
+            },
+            {
+              "explain": "Test \\(x = 1\\).",
+              "work": "\\(P(1) = 1 - 4 - 1 + 4 = 0\\) ✓ so \\((x - 1)\\) is a factor"
+            },
+            {
+              "explain": "Test \\(x = -1\\).",
+              "work": "\\(P(-1) = -1 - 4 + 1 + 4 = 0\\) ✓ so \\((x + 1)\\) is a factor"
+            },
+            {
+              "explain": "Test \\(x = 4\\).",
+              "work": "\\(P(4) = 64 - 64 - 4 + 4 = 0\\) ✓ so \\((x - 4)\\) is a factor"
+            },
+            {
+              "explain": "Test \\(x = -4\\).",
+              "work": "\\(P(-4) = -64 - 64 + 4 + 4 = -120 \\ne 0\\) ✗"
+            },
+            {
+              "explain": "So \\((x + 4)\\) is NOT a factor. (The three integer roots are \\(-1,\\ 1,\\ 4\\).)",
+              "work": "<span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "distinct integer roots",
+              "note": "Test integer divisors of the constant term."
+            },
+            {
+              "text": "NOT a factor",
+              "note": "Find the root that gives P ≠ 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q11c",
+          "type": "mc",
+          "stem": "Fully factorise the polynomial \\(P(x) = x^3 - 4x^2 + x + 6\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\((x+1)(x-2)(x-3)\\)",
+            "\\((x-1)(x+2)(x+3)\\)",
+            "\\((x+1)(x+2)(x-3)\\)",
+            "\\((x-1)(x-2)(x-3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Test factors of the constant 6 (\\(\\pm1,\\pm2,\\pm3,\\pm6\\)) with the Factor Theorem, divide, then factorise the quadratic.",
+          "steps": [
+            {
+              "explain": "Try \\(x=-1\\).",
+              "work": "\\(P(-1) = -1 - 4 - 1 + 6 = 0\\) ✓ so \\((x+1)\\) is a factor"
+            },
+            {
+              "explain": "Divide \\(P(x)\\) by \\((x+1)\\) (long division / inspection).",
+              "work": "\\(x^3 - 4x^2 + x + 6 = (x+1)(x^2 - 5x + 6)\\)"
+            },
+            {
+              "explain": "Check the expansion: \\((x+1)(x^2-5x+6) = x^3 - 5x^2 + 6x + x^2 - 5x + 6 = x^3 - 4x^2 + x + 6\\) ✓",
+              "work": ""
+            },
+            {
+              "explain": "Factorise the quadratic (product 6, sum \\(-5\\) → \\(-2\\) and \\(-3\\)).",
+              "work": "\\(x^2 - 5x + 6 = (x-2)(x-3)\\)"
+            },
+            {
+              "explain": "Write the full factorisation.",
+              "work": "\\(P(x) = (x+1)(x-2)(x-3)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "Factor Theorem, then factorise the quadratic."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q15c1",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x)=2x^4-16x^3+46x^2-55x+21\\) is tangent to the quadratic function \\(Q(x)=2x^2-7x+3\\) at two distinct points \\(A\\) and \\(B\\). The point \\(B\\) lies on the \\(x\\)-axis. Find the coordinates of the points \\(A\\) and \\(B\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 259.6 201.1\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M91 166 L83.2 174.2 L83.6 174.6 L85.4 174.6 L84.9 173.8 L86.2 172 L88.8 172.5 L88 174.6 L91 174.6 L90.6 173.8ZM88.4 169.4 L88.8 170.7 L87.5 171.2 L87.1 170.7ZM184.6 137.8 L184.2 138.2 L185 139.1 L183.3 145.6 L182 146.5 L188.9 146 L189.8 143.9 L188.5 142.1 L190.2 140.8 L190.2 139.1 L188.5 137.8ZM187.2 142.6 L187.6 144.7 L186.8 146 L185.5 146.5 L185 146 L185.5 143.4ZM187.6 138.7 L188.5 140 L186.8 141.7 L186.3 140ZM240.9 130.4 L242.7 133 L240.9 136.5 L242.2 136.5 L242.2 135.2 L243.1 133.9 L244.4 135.6 L244 136.1 L245.7 136.5 L246.1 136.1 L244 133.5 L244 132.6 L245.7 130.4 L244.4 130.4 L243.5 132.2 L242.7 131.3 L243.1 130.4ZM234.4 84.9 L234 85.4 L235.3 86.2 L235.7 88 L234 89.7 L233.6 89.3 L233.1 90.6 L234.4 90.6 L235.7 88.8 L236.2 90.6 L237.5 90.6 L238.3 89.3 L237.5 89.7 L236.6 87.1 L237.5 86.2 L238.8 86.2 L238.8 84.9 L237.9 84.9 L236.6 86.2 L235.7 84.9ZM240.5 81.9 L240.1 82.3 L241.8 84.9 L242.2 88.8 L240.1 93.6 L241.8 92.3 L243.1 89.7 L243.1 85.4ZM232.7 81.9 L231.4 82.3 L229.2 86.2 L229.7 90.6 L232.3 93.6 L232.7 93.2 L231.4 91.9 L230.5 89.7 L230.5 85.8 L231 84.1ZM227.5 82.3 L224 81.9 L221.4 84.1 L220.1 86.7 L220.1 88.8 L221.9 91.4 L220.1 93.2 L221.4 92.7 L223.2 93.6 L225.8 93.6 L227.5 91.9 L226.6 92.3 L222.7 91.9 L223.2 91 L226.2 90.1 L228.4 86.7 L228.4 83.6ZM226.2 82.3 L227.1 83.6 L227.1 86.2 L226.2 88.4 L224 90.6 L222.7 90.6 L221.4 88.8 L221.9 85.8 L224.5 82.3ZM214.5 62.8 L215.4 67.2 L216.2 67.6 L217.1 66.7 L221.9 73.2 L222.7 72.8 L222.7 71.9 L218.4 66.3 L219.3 64.6 L215.4 62.4ZM192.8 46.8 L189.8 44.2 L188.5 44.2 L188.1 45.5 L183.3 44.6 L183.3 45.5 L187.6 46.4 L188.1 46.8 L187.6 48.1 L188.5 48.5ZM169 40.7 L170.3 42.5 L170.3 44.2 L167.7 46.4 L168.6 46.8 L170.3 45.1 L171.6 46.8 L172.5 46.4 L173.3 45.1 L172.5 45.5 L171.6 42.9 L173.3 42 L173.8 40.7 L172.5 40.7 L171.6 42 L170.7 40.7ZM174.6 38.1 L175.9 39 L176.8 41.2 L176.8 45.9 L176.4 47.2 L174.6 49 L175.5 49 L177.7 46.8 L178.1 41.6 L176.8 39ZM166.8 38.1 L164.7 40.3 L164.2 45.5 L164.7 46.8 L166.8 49 L167.7 49 L166.4 47.7 L165.5 45.5 L165.5 41.2 L166.8 38.6 L167.7 38.1ZM163.4 38.6 L157.7 38.1 L158.6 38.6 L157.7 43.3 L156.9 45.5 L155.6 46.4 L158.6 46.8 L159 46.4 L158.2 45.5 L158.6 43.3 L159.5 42.5 L162.5 42 L163.8 40.3ZM160.8 38.1 L162.5 39.4 L162.5 40.3 L161.2 42 L159.9 42 L159.5 40.3ZM0 131.3 L0 134.8 L4.3 136.9 L4.8 136.1 L0 133.9 L0.4 133.5 L52 133.5 L52.4 133.9 L52.4 189.4 L52 189.8 L49.8 185 L49 185 L52.4 193.3 L53.3 193.3 L56.8 185 L55.9 185.5 L53.7 190.2 L53.3 189.8 L53.3 133.9 L53.7 133.5 L72.8 133.5 L83.2 151.7 L92.7 165.1 L92.3 168.1 L94.9 170.3 L96.6 169.9 L103.6 176.8 L110.9 182 L118.3 185.5 L125.7 186.8 L132.6 186.3 L140.8 183.7 L151.2 176.8 L159.5 168.6 L171.2 152.5 L179.8 136.9 L182.4 136.1 L184.6 133.5 L233.1 133.5 L233.6 133.9 L228.8 136.1 L229.2 136.9 L237 133 L229.2 129.1 L228.8 130 L233.6 132.2 L233.1 132.6 L184.6 132.6 L183.3 130.9 L191.5 112.7 L201.9 86.2 L212.3 55.9 L219.3 32.1 L220.1 31.2 L222.3 31.6 L223.2 30.8 L222.3 21.7 L220.6 21.2 L214.9 28.2 L214.9 29.5 L217.1 30.3 L217.5 31.6 L205 71.1 L196.3 94.9 L191.5 106.2 L191.1 104.4 L194.6 89.7 L198.9 63.7 L202.8 31.6 L203.2 31.2 L205 31.6 L206.3 30.3 L204.1 23.4 L204.1 21.7 L201.9 21.2 L197.6 28.6 L198 30.8 L199.8 30.8 L200.6 31.6 L196.3 65.9 L192 91.4 L187.6 110.5 L181.6 128.7 L180.7 129.6 L179.4 129.6 L176.8 132.6 L84.1 132.6 L83.6 132.2 L78 101.4 L71.1 44.6 L70.2 31.6 L72.4 30.8 L73.2 29 L70.2 24.3 L68.9 21.2 L66.7 21.7 L66.7 23.4 L64.6 29 L64.6 30.8 L65.9 31.6 L67.2 31.2 L68 32.1 L68.9 45.1 L73.7 86.7 L77.6 112.7 L80.6 128.7 L81.5 130.9 L81 132.6 L75.4 132.6 L70.6 123.5 L62.8 105.7 L53.3 80.6 L53.3 26 L53.7 25.6 L56.3 30.3 L56.8 29.9 L52.9 22.1 L49 29.9 L49.4 30.3 L50.3 29.5 L52 25.6 L52.4 26 L52.4 75.8 L52 76.3 L46.8 62 L37.3 31.2 L37.7 30.3 L39.9 29.5 L39.9 27.7 L34.7 22.1 L34.7 21.2 L32.5 21.7 L31.6 30.8 L32.5 31.6 L34.7 31.2 L35.5 32.1 L44.6 62.4 L52.4 84.1 L52.4 132.2 L52 132.6 L0.4 132.6 L0 132.2 L4.8 130 L4.8 129.1ZM172 146.5 L165.1 157.7 L156.9 168.1 L149.5 175.5 L142.1 180.7 L138.7 182.4 L131.3 184.6 L121.3 184.2 L112.7 180.7 L102.3 172.5 L107.9 171.6 L111.4 169.9 L116.6 166.4 L117 165.5 L130.9 154.7 L140.4 149.9 L148.2 148.6 L162.1 149.1 L168.1 147.8 L171.2 146ZM84.1 133.9 L84.5 133.5 L176.8 133.5 L178.1 135.6 L175.1 140 L172 143 L166.4 146 L146 146.5 L138.7 148.2 L134.8 149.9 L126.5 155.1 L112.2 166.8 L107.5 169.4 L102.7 170.3 L98.8 168.1 L98.8 165.5 L97.5 163.8 L94.5 163.4 L93.2 161.6 L89.7 153.8 L87.1 146ZM76.3 133.5 L81.5 133.5 L81.9 133.9 L84.1 143.4 L86.7 150.8 L86.2 152.1 L78.4 139.1 L75.8 133.9ZM53.7 88.4 L65.4 117.4 L72.4 131.7 L71.9 132.6 L53.7 132.6 L53.3 132.2 L53.3 88.8ZM55.9 9.1 L54.2 9.1 L54.6 10 L53.3 12.6 L52 10.4 L52.4 9.1 L49.8 9.1 L52.9 14.3 L51.6 16.5 L50.7 16 L50.3 17.3 L52.4 16.9ZM214.9 0 L214.5 0.9 L215.4 1.3 L215.8 0.4ZM205 0.9 L210.6 0.9 L211.9 0 L210.2 0 L208.4 0.9 L207.6 0 L206.3 0ZM196.3 0 L198 1.3 L198.9 0.9 L200.2 1.3 L201.5 0.4ZM192.8 0.9 L195 0.9 L194.1 0ZM183.7 0 L184.2 0.9 L186.3 0.4 L191.5 0.9 L191.1 0 L189.4 0.9 L188.9 0 L188.5 0.4 L188.1 0 L186.3 0.4ZM175.5 0.9 L179 0.9 L178.5 0 L176.8 0ZM164.2 0.9 L166 1.3 L167.7 0 L166.8 0 L166.4 0.9 L165.1 0.9 L164.2 0ZM160.8 0 L161.2 0.9 L162.9 0.4 L162.9 0 L162.5 0.4ZM150.4 0.9 L152.5 0.9 L152.1 0ZM144.3 0 L146 1.3 L148.6 0 L147.8 0 L147.3 0.9ZM136.9 3.9 L139.5 3.9 L138.7 3 L138.7 1.3 L139.1 0.9 L140.4 1.3 L142.1 0 L140.8 0.9 L137.8 0 L137.8 3ZM131.3 0.9 L133 0.9 L133.5 0 L133 0.4 L131.3 0ZM125.2 0 L127 1.3 L129.1 0 L128.3 0.4ZM121.8 0.9 L123.9 0.9 L123.1 0ZM118.3 0.9 L120.5 0.9 L120 0ZM111.8 0 L112.2 0.9 L114 0.4 L114 0 L113.5 0.4ZM106.6 0 L106.6 0.9 L107.9 1.3 L110.1 0.4 L109.6 0 L108.8 0.9 L107.5 0.9ZM96.6 0 L98.4 1.3 L100.1 0.4 L100.5 1.3 L101.8 0.4 L100.1 0 L99.2 0.9 L97.9 0ZM87.1 0 L88.8 1.3 L91.4 0 L90.1 0.9ZM74.5 0.9 L76.3 0.9 L76.7 0 L76.3 0.4 L74.5 0ZM67.6 0 L68 0.9 L69.8 0.4 L69.8 0 L69.3 0.4ZM61.5 0 L62 0.9 L66.3 0.4 L66.3 0 L65.9 0.4ZM51.1 0 L51.1 0.9 L55.5 0.4 L54.6 0 L52.9 0.9ZM31.2 0 L31.2 0.9 L33.4 0.4 L33.4 0 L32.5 0.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "options": [
+            "\\(A(1,-2),\\ B(3,0)\\)",
+            "\\(A(3,0),\\ B(1,-2)\\)",
+            "\\(A(1,2),\\ B(3,0)\\)",
+            "\\(A(-1,12),\\ B(3,0)\\)"
+          ],
+          "answer": 0,
+          "hint": "Tangent points are where \\(P(x)-Q(x)=0\\) with a DOUBLE root each. Subtract, factorise as a perfect square, then use \\(Q\\) to find the y-coordinates.",
+          "steps": [
+            {
+              "explain": "At the points of contact \\(P(x)=Q(x)\\).",
+              "work": "\\(P(x)-Q(x)=2x^4-16x^3+44x^2-48x+18=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 259.6 201.1\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M91 166 L83.2 174.2 L83.6 174.6 L85.4 174.6 L84.9 173.8 L86.2 172 L88.8 172.5 L88 174.6 L91 174.6 L90.6 173.8ZM88.4 169.4 L88.8 170.7 L87.5 171.2 L87.1 170.7ZM184.6 137.8 L184.2 138.2 L185 139.1 L183.3 145.6 L182 146.5 L188.9 146 L189.8 143.9 L188.5 142.1 L190.2 140.8 L190.2 139.1 L188.5 137.8ZM187.2 142.6 L187.6 144.7 L186.8 146 L185.5 146.5 L185 146 L185.5 143.4ZM187.6 138.7 L188.5 140 L186.8 141.7 L186.3 140ZM240.9 130.4 L242.7 133 L240.9 136.5 L242.2 136.5 L242.2 135.2 L243.1 133.9 L244.4 135.6 L244 136.1 L245.7 136.5 L246.1 136.1 L244 133.5 L244 132.6 L245.7 130.4 L244.4 130.4 L243.5 132.2 L242.7 131.3 L243.1 130.4ZM234.4 84.9 L234 85.4 L235.3 86.2 L235.7 88 L234 89.7 L233.6 89.3 L233.1 90.6 L234.4 90.6 L235.7 88.8 L236.2 90.6 L237.5 90.6 L238.3 89.3 L237.5 89.7 L236.6 87.1 L237.5 86.2 L238.8 86.2 L238.8 84.9 L237.9 84.9 L236.6 86.2 L235.7 84.9ZM240.5 81.9 L240.1 82.3 L241.8 84.9 L242.2 88.8 L240.1 93.6 L241.8 92.3 L243.1 89.7 L243.1 85.4ZM232.7 81.9 L231.4 82.3 L229.2 86.2 L229.7 90.6 L232.3 93.6 L232.7 93.2 L231.4 91.9 L230.5 89.7 L230.5 85.8 L231 84.1ZM227.5 82.3 L224 81.9 L221.4 84.1 L220.1 86.7 L220.1 88.8 L221.9 91.4 L220.1 93.2 L221.4 92.7 L223.2 93.6 L225.8 93.6 L227.5 91.9 L226.6 92.3 L222.7 91.9 L223.2 91 L226.2 90.1 L228.4 86.7 L228.4 83.6ZM226.2 82.3 L227.1 83.6 L227.1 86.2 L226.2 88.4 L224 90.6 L222.7 90.6 L221.4 88.8 L221.9 85.8 L224.5 82.3ZM214.5 62.8 L215.4 67.2 L216.2 67.6 L217.1 66.7 L221.9 73.2 L222.7 72.8 L222.7 71.9 L218.4 66.3 L219.3 64.6 L215.4 62.4ZM192.8 46.8 L189.8 44.2 L188.5 44.2 L188.1 45.5 L183.3 44.6 L183.3 45.5 L187.6 46.4 L188.1 46.8 L187.6 48.1 L188.5 48.5ZM169 40.7 L170.3 42.5 L170.3 44.2 L167.7 46.4 L168.6 46.8 L170.3 45.1 L171.6 46.8 L172.5 46.4 L173.3 45.1 L172.5 45.5 L171.6 42.9 L173.3 42 L173.8 40.7 L172.5 40.7 L171.6 42 L170.7 40.7ZM174.6 38.1 L175.9 39 L176.8 41.2 L176.8 45.9 L176.4 47.2 L174.6 49 L175.5 49 L177.7 46.8 L178.1 41.6 L176.8 39ZM166.8 38.1 L164.7 40.3 L164.2 45.5 L164.7 46.8 L166.8 49 L167.7 49 L166.4 47.7 L165.5 45.5 L165.5 41.2 L166.8 38.6 L167.7 38.1ZM163.4 38.6 L157.7 38.1 L158.6 38.6 L157.7 43.3 L156.9 45.5 L155.6 46.4 L158.6 46.8 L159 46.4 L158.2 45.5 L158.6 43.3 L159.5 42.5 L162.5 42 L163.8 40.3ZM160.8 38.1 L162.5 39.4 L162.5 40.3 L161.2 42 L159.9 42 L159.5 40.3ZM0 131.3 L0 134.8 L4.3 136.9 L4.8 136.1 L0 133.9 L0.4 133.5 L52 133.5 L52.4 133.9 L52.4 189.4 L52 189.8 L49.8 185 L49 185 L52.4 193.3 L53.3 193.3 L56.8 185 L55.9 185.5 L53.7 190.2 L53.3 189.8 L53.3 133.9 L53.7 133.5 L72.8 133.5 L83.2 151.7 L92.7 165.1 L92.3 168.1 L94.9 170.3 L96.6 169.9 L103.6 176.8 L110.9 182 L118.3 185.5 L125.7 186.8 L132.6 186.3 L140.8 183.7 L151.2 176.8 L159.5 168.6 L171.2 152.5 L179.8 136.9 L182.4 136.1 L184.6 133.5 L233.1 133.5 L233.6 133.9 L228.8 136.1 L229.2 136.9 L237 133 L229.2 129.1 L228.8 130 L233.6 132.2 L233.1 132.6 L184.6 132.6 L183.3 130.9 L191.5 112.7 L201.9 86.2 L212.3 55.9 L219.3 32.1 L220.1 31.2 L222.3 31.6 L223.2 30.8 L222.3 21.7 L220.6 21.2 L214.9 28.2 L214.9 29.5 L217.1 30.3 L217.5 31.6 L205 71.1 L196.3 94.9 L191.5 106.2 L191.1 104.4 L194.6 89.7 L198.9 63.7 L202.8 31.6 L203.2 31.2 L205 31.6 L206.3 30.3 L204.1 23.4 L204.1 21.7 L201.9 21.2 L197.6 28.6 L198 30.8 L199.8 30.8 L200.6 31.6 L196.3 65.9 L192 91.4 L187.6 110.5 L181.6 128.7 L180.7 129.6 L179.4 129.6 L176.8 132.6 L84.1 132.6 L83.6 132.2 L78 101.4 L71.1 44.6 L70.2 31.6 L72.4 30.8 L73.2 29 L70.2 24.3 L68.9 21.2 L66.7 21.7 L66.7 23.4 L64.6 29 L64.6 30.8 L65.9 31.6 L67.2 31.2 L68 32.1 L68.9 45.1 L73.7 86.7 L77.6 112.7 L80.6 128.7 L81.5 130.9 L81 132.6 L75.4 132.6 L70.6 123.5 L62.8 105.7 L53.3 80.6 L53.3 26 L53.7 25.6 L56.3 30.3 L56.8 29.9 L52.9 22.1 L49 29.9 L49.4 30.3 L50.3 29.5 L52 25.6 L52.4 26 L52.4 75.8 L52 76.3 L46.8 62 L37.3 31.2 L37.7 30.3 L39.9 29.5 L39.9 27.7 L34.7 22.1 L34.7 21.2 L32.5 21.7 L31.6 30.8 L32.5 31.6 L34.7 31.2 L35.5 32.1 L44.6 62.4 L52.4 84.1 L52.4 132.2 L52 132.6 L0.4 132.6 L0 132.2 L4.8 130 L4.8 129.1ZM172 146.5 L165.1 157.7 L156.9 168.1 L149.5 175.5 L142.1 180.7 L138.7 182.4 L131.3 184.6 L121.3 184.2 L112.7 180.7 L102.3 172.5 L107.9 171.6 L111.4 169.9 L116.6 166.4 L117 165.5 L130.9 154.7 L140.4 149.9 L148.2 148.6 L162.1 149.1 L168.1 147.8 L171.2 146ZM84.1 133.9 L84.5 133.5 L176.8 133.5 L178.1 135.6 L175.1 140 L172 143 L166.4 146 L146 146.5 L138.7 148.2 L134.8 149.9 L126.5 155.1 L112.2 166.8 L107.5 169.4 L102.7 170.3 L98.8 168.1 L98.8 165.5 L97.5 163.8 L94.5 163.4 L93.2 161.6 L89.7 153.8 L87.1 146ZM76.3 133.5 L81.5 133.5 L81.9 133.9 L84.1 143.4 L86.7 150.8 L86.2 152.1 L78.4 139.1 L75.8 133.9ZM53.7 88.4 L65.4 117.4 L72.4 131.7 L71.9 132.6 L53.7 132.6 L53.3 132.2 L53.3 88.8ZM55.9 9.1 L54.2 9.1 L54.6 10 L53.3 12.6 L52 10.4 L52.4 9.1 L49.8 9.1 L52.9 14.3 L51.6 16.5 L50.7 16 L50.3 17.3 L52.4 16.9ZM214.9 0 L214.5 0.9 L215.4 1.3 L215.8 0.4ZM205 0.9 L210.6 0.9 L211.9 0 L210.2 0 L208.4 0.9 L207.6 0 L206.3 0ZM196.3 0 L198 1.3 L198.9 0.9 L200.2 1.3 L201.5 0.4ZM192.8 0.9 L195 0.9 L194.1 0ZM183.7 0 L184.2 0.9 L186.3 0.4 L191.5 0.9 L191.1 0 L189.4 0.9 L188.9 0 L188.5 0.4 L188.1 0 L186.3 0.4ZM175.5 0.9 L179 0.9 L178.5 0 L176.8 0ZM164.2 0.9 L166 1.3 L167.7 0 L166.8 0 L166.4 0.9 L165.1 0.9 L164.2 0ZM160.8 0 L161.2 0.9 L162.9 0.4 L162.9 0 L162.5 0.4ZM150.4 0.9 L152.5 0.9 L152.1 0ZM144.3 0 L146 1.3 L148.6 0 L147.8 0 L147.3 0.9ZM136.9 3.9 L139.5 3.9 L138.7 3 L138.7 1.3 L139.1 0.9 L140.4 1.3 L142.1 0 L140.8 0.9 L137.8 0 L137.8 3ZM131.3 0.9 L133 0.9 L133.5 0 L133 0.4 L131.3 0ZM125.2 0 L127 1.3 L129.1 0 L128.3 0.4ZM121.8 0.9 L123.9 0.9 L123.1 0ZM118.3 0.9 L120.5 0.9 L120 0ZM111.8 0 L112.2 0.9 L114 0.4 L114 0 L113.5 0.4ZM106.6 0 L106.6 0.9 L107.9 1.3 L110.1 0.4 L109.6 0 L108.8 0.9 L107.5 0.9ZM96.6 0 L98.4 1.3 L100.1 0.4 L100.5 1.3 L101.8 0.4 L100.1 0 L99.2 0.9 L97.9 0ZM87.1 0 L88.8 1.3 L91.4 0 L90.1 0.9ZM74.5 0.9 L76.3 0.9 L76.7 0 L76.3 0.4 L74.5 0ZM67.6 0 L68 0.9 L69.8 0.4 L69.8 0 L69.3 0.4ZM61.5 0 L62 0.9 L66.3 0.4 L66.3 0 L65.9 0.4ZM51.1 0 L51.1 0.9 L55.5 0.4 L54.6 0 L52.9 0.9ZM31.2 0 L31.2 0.9 L33.4 0.4 L33.4 0 L32.5 0.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g><rect x=\"2\" y=\"2\" width=\"255.6\" height=\"197.1\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Tangent at two points means two DOUBLE roots, so the difference is a perfect square: \\(2\\,(x^2+px+q)^2\\). Divide by 2 and match.",
+              "work": "\\(x^4-8x^3+22x^2-24x+9=(x^2-4x+3)^2\\)"
+            },
+            {
+              "explain": "Check by expanding.",
+              "work": "\\((x^2-4x+3)^2=x^4-8x^3+(16+6)x^2-24x+9\\) ✓"
+            },
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "\\((x-1)^2(x-3)^2=0\\;\\Rightarrow\\;x=1,\\ x=3\\)"
+            },
+            {
+              "explain": "y-coordinates from \\(Q(x)\\): \\(Q(1)=2-7+3=-2\\) and \\(Q(3)=18-21+3=0\\) (B on the x-axis ✓).",
+              "work": "\\(A(1,-2),\\quad B(3,0)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the coordinates",
+              "note": "P − Q is a perfect square (double roots)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q15c2",
+          "type": "review",
+          "stem": "The polynomial \\(P(x)=2x^4-16x^3+46x^2-55x+21\\) is tangent to the quadratic function \\(Q(x)=2x^2-7x+3\\) at two distinct points \\(A\\) and \\(B\\). The point \\(B\\) lies on the \\(x\\)-axis. Hence, show that the line passing through \\(A\\) and \\(B\\) is tangent to \\(P(x)\\) at the midpoint of \\(AB\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 259.6 201.1\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><path d=\"M91 166 L83.2 174.2 L83.6 174.6 L85.4 174.6 L84.9 173.8 L86.2 172 L88.8 172.5 L88 174.6 L91 174.6 L90.6 173.8ZM88.4 169.4 L88.8 170.7 L87.5 171.2 L87.1 170.7ZM184.6 137.8 L184.2 138.2 L185 139.1 L183.3 145.6 L182 146.5 L188.9 146 L189.8 143.9 L188.5 142.1 L190.2 140.8 L190.2 139.1 L188.5 137.8ZM187.2 142.6 L187.6 144.7 L186.8 146 L185.5 146.5 L185 146 L185.5 143.4ZM187.6 138.7 L188.5 140 L186.8 141.7 L186.3 140ZM240.9 130.4 L242.7 133 L240.9 136.5 L242.2 136.5 L242.2 135.2 L243.1 133.9 L244.4 135.6 L244 136.1 L245.7 136.5 L246.1 136.1 L244 133.5 L244 132.6 L245.7 130.4 L244.4 130.4 L243.5 132.2 L242.7 131.3 L243.1 130.4ZM234.4 84.9 L234 85.4 L235.3 86.2 L235.7 88 L234 89.7 L233.6 89.3 L233.1 90.6 L234.4 90.6 L235.7 88.8 L236.2 90.6 L237.5 90.6 L238.3 89.3 L237.5 89.7 L236.6 87.1 L237.5 86.2 L238.8 86.2 L238.8 84.9 L237.9 84.9 L236.6 86.2 L235.7 84.9ZM240.5 81.9 L240.1 82.3 L241.8 84.9 L242.2 88.8 L240.1 93.6 L241.8 92.3 L243.1 89.7 L243.1 85.4ZM232.7 81.9 L231.4 82.3 L229.2 86.2 L229.7 90.6 L232.3 93.6 L232.7 93.2 L231.4 91.9 L230.5 89.7 L230.5 85.8 L231 84.1ZM227.5 82.3 L224 81.9 L221.4 84.1 L220.1 86.7 L220.1 88.8 L221.9 91.4 L220.1 93.2 L221.4 92.7 L223.2 93.6 L225.8 93.6 L227.5 91.9 L226.6 92.3 L222.7 91.9 L223.2 91 L226.2 90.1 L228.4 86.7 L228.4 83.6ZM226.2 82.3 L227.1 83.6 L227.1 86.2 L226.2 88.4 L224 90.6 L222.7 90.6 L221.4 88.8 L221.9 85.8 L224.5 82.3ZM214.5 62.8 L215.4 67.2 L216.2 67.6 L217.1 66.7 L221.9 73.2 L222.7 72.8 L222.7 71.9 L218.4 66.3 L219.3 64.6 L215.4 62.4ZM192.8 46.8 L189.8 44.2 L188.5 44.2 L188.1 45.5 L183.3 44.6 L183.3 45.5 L187.6 46.4 L188.1 46.8 L187.6 48.1 L188.5 48.5ZM169 40.7 L170.3 42.5 L170.3 44.2 L167.7 46.4 L168.6 46.8 L170.3 45.1 L171.6 46.8 L172.5 46.4 L173.3 45.1 L172.5 45.5 L171.6 42.9 L173.3 42 L173.8 40.7 L172.5 40.7 L171.6 42 L170.7 40.7ZM174.6 38.1 L175.9 39 L176.8 41.2 L176.8 45.9 L176.4 47.2 L174.6 49 L175.5 49 L177.7 46.8 L178.1 41.6 L176.8 39ZM166.8 38.1 L164.7 40.3 L164.2 45.5 L164.7 46.8 L166.8 49 L167.7 49 L166.4 47.7 L165.5 45.5 L165.5 41.2 L166.8 38.6 L167.7 38.1ZM163.4 38.6 L157.7 38.1 L158.6 38.6 L157.7 43.3 L156.9 45.5 L155.6 46.4 L158.6 46.8 L159 46.4 L158.2 45.5 L158.6 43.3 L159.5 42.5 L162.5 42 L163.8 40.3ZM160.8 38.1 L162.5 39.4 L162.5 40.3 L161.2 42 L159.9 42 L159.5 40.3ZM0 131.3 L0 134.8 L4.3 136.9 L4.8 136.1 L0 133.9 L0.4 133.5 L52 133.5 L52.4 133.9 L52.4 189.4 L52 189.8 L49.8 185 L49 185 L52.4 193.3 L53.3 193.3 L56.8 185 L55.9 185.5 L53.7 190.2 L53.3 189.8 L53.3 133.9 L53.7 133.5 L72.8 133.5 L83.2 151.7 L92.7 165.1 L92.3 168.1 L94.9 170.3 L96.6 169.9 L103.6 176.8 L110.9 182 L118.3 185.5 L125.7 186.8 L132.6 186.3 L140.8 183.7 L151.2 176.8 L159.5 168.6 L171.2 152.5 L179.8 136.9 L182.4 136.1 L184.6 133.5 L233.1 133.5 L233.6 133.9 L228.8 136.1 L229.2 136.9 L237 133 L229.2 129.1 L228.8 130 L233.6 132.2 L233.1 132.6 L184.6 132.6 L183.3 130.9 L191.5 112.7 L201.9 86.2 L212.3 55.9 L219.3 32.1 L220.1 31.2 L222.3 31.6 L223.2 30.8 L222.3 21.7 L220.6 21.2 L214.9 28.2 L214.9 29.5 L217.1 30.3 L217.5 31.6 L205 71.1 L196.3 94.9 L191.5 106.2 L191.1 104.4 L194.6 89.7 L198.9 63.7 L202.8 31.6 L203.2 31.2 L205 31.6 L206.3 30.3 L204.1 23.4 L204.1 21.7 L201.9 21.2 L197.6 28.6 L198 30.8 L199.8 30.8 L200.6 31.6 L196.3 65.9 L192 91.4 L187.6 110.5 L181.6 128.7 L180.7 129.6 L179.4 129.6 L176.8 132.6 L84.1 132.6 L83.6 132.2 L78 101.4 L71.1 44.6 L70.2 31.6 L72.4 30.8 L73.2 29 L70.2 24.3 L68.9 21.2 L66.7 21.7 L66.7 23.4 L64.6 29 L64.6 30.8 L65.9 31.6 L67.2 31.2 L68 32.1 L68.9 45.1 L73.7 86.7 L77.6 112.7 L80.6 128.7 L81.5 130.9 L81 132.6 L75.4 132.6 L70.6 123.5 L62.8 105.7 L53.3 80.6 L53.3 26 L53.7 25.6 L56.3 30.3 L56.8 29.9 L52.9 22.1 L49 29.9 L49.4 30.3 L50.3 29.5 L52 25.6 L52.4 26 L52.4 75.8 L52 76.3 L46.8 62 L37.3 31.2 L37.7 30.3 L39.9 29.5 L39.9 27.7 L34.7 22.1 L34.7 21.2 L32.5 21.7 L31.6 30.8 L32.5 31.6 L34.7 31.2 L35.5 32.1 L44.6 62.4 L52.4 84.1 L52.4 132.2 L52 132.6 L0.4 132.6 L0 132.2 L4.8 130 L4.8 129.1ZM172 146.5 L165.1 157.7 L156.9 168.1 L149.5 175.5 L142.1 180.7 L138.7 182.4 L131.3 184.6 L121.3 184.2 L112.7 180.7 L102.3 172.5 L107.9 171.6 L111.4 169.9 L116.6 166.4 L117 165.5 L130.9 154.7 L140.4 149.9 L148.2 148.6 L162.1 149.1 L168.1 147.8 L171.2 146ZM84.1 133.9 L84.5 133.5 L176.8 133.5 L178.1 135.6 L175.1 140 L172 143 L166.4 146 L146 146.5 L138.7 148.2 L134.8 149.9 L126.5 155.1 L112.2 166.8 L107.5 169.4 L102.7 170.3 L98.8 168.1 L98.8 165.5 L97.5 163.8 L94.5 163.4 L93.2 161.6 L89.7 153.8 L87.1 146ZM76.3 133.5 L81.5 133.5 L81.9 133.9 L84.1 143.4 L86.7 150.8 L86.2 152.1 L78.4 139.1 L75.8 133.9ZM53.7 88.4 L65.4 117.4 L72.4 131.7 L71.9 132.6 L53.7 132.6 L53.3 132.2 L53.3 88.8ZM55.9 9.1 L54.2 9.1 L54.6 10 L53.3 12.6 L52 10.4 L52.4 9.1 L49.8 9.1 L52.9 14.3 L51.6 16.5 L50.7 16 L50.3 17.3 L52.4 16.9ZM214.9 0 L214.5 0.9 L215.4 1.3 L215.8 0.4ZM205 0.9 L210.6 0.9 L211.9 0 L210.2 0 L208.4 0.9 L207.6 0 L206.3 0ZM196.3 0 L198 1.3 L198.9 0.9 L200.2 1.3 L201.5 0.4ZM192.8 0.9 L195 0.9 L194.1 0ZM183.7 0 L184.2 0.9 L186.3 0.4 L191.5 0.9 L191.1 0 L189.4 0.9 L188.9 0 L188.5 0.4 L188.1 0 L186.3 0.4ZM175.5 0.9 L179 0.9 L178.5 0 L176.8 0ZM164.2 0.9 L166 1.3 L167.7 0 L166.8 0 L166.4 0.9 L165.1 0.9 L164.2 0ZM160.8 0 L161.2 0.9 L162.9 0.4 L162.9 0 L162.5 0.4ZM150.4 0.9 L152.5 0.9 L152.1 0ZM144.3 0 L146 1.3 L148.6 0 L147.8 0 L147.3 0.9ZM136.9 3.9 L139.5 3.9 L138.7 3 L138.7 1.3 L139.1 0.9 L140.4 1.3 L142.1 0 L140.8 0.9 L137.8 0 L137.8 3ZM131.3 0.9 L133 0.9 L133.5 0 L133 0.4 L131.3 0ZM125.2 0 L127 1.3 L129.1 0 L128.3 0.4ZM121.8 0.9 L123.9 0.9 L123.1 0ZM118.3 0.9 L120.5 0.9 L120 0ZM111.8 0 L112.2 0.9 L114 0.4 L114 0 L113.5 0.4ZM106.6 0 L106.6 0.9 L107.9 1.3 L110.1 0.4 L109.6 0 L108.8 0.9 L107.5 0.9ZM96.6 0 L98.4 1.3 L100.1 0.4 L100.5 1.3 L101.8 0.4 L100.1 0 L99.2 0.9 L97.9 0ZM87.1 0 L88.8 1.3 L91.4 0 L90.1 0.9ZM74.5 0.9 L76.3 0.9 L76.7 0 L76.3 0.4 L74.5 0ZM67.6 0 L68 0.9 L69.8 0.4 L69.8 0 L69.3 0.4ZM61.5 0 L62 0.9 L66.3 0.4 L66.3 0 L65.9 0.4ZM51.1 0 L51.1 0.9 L55.5 0.4 L54.6 0 L52.9 0.9ZM31.2 0 L31.2 0.9 L33.4 0.4 L33.4 0 L32.5 0.4Z\" fill=\"#1e293b\" fill-rule=\"evenodd\"/></g></svg>"
+          },
+          "answer": "A(1,−2), B(3,0): gradient 1, midpoint (2,−1), line \\(y=x-3\\). \\(P(2)=-1\\) and \\(P'(2)=1\\) so the line touches P at (2,−1) with the same gradient.",
+          "manual": true,
+          "hint": "Find the line AB and its midpoint M. Show M lies on P and \\(P'(x)\\) at M equals the gradient of AB.",
+          "steps": [
+            {
+              "explain": "Using \\(A(1,-2)\\) and \\(B(3,0)\\): gradient and equation of \\(AB\\).",
+              "work": "\\(m=\\dfrac{0-(-2)}{3-1}=1,\\quad y=x-3\\)"
+            },
+            {
+              "explain": "Midpoint.",
+              "work": "\\(\\left(\\dfrac{1+3}{2},\\dfrac{-2+0}{2}\\right)=(2,-1)\\)"
+            },
+            {
+              "explain": "Does the midpoint lie on \\(P\\)?",
+              "work": "\\(P(2)=2(16)-16(8)+46(4)-55(2)+21=32-128+184-110+21=-1\\) ✓"
+            },
+            {
+              "explain": "Gradient of \\(P\\) at \\(x=2\\).",
+              "work": "\\(P'(x)=8x^3-48x^2+92x-55\\;\\Rightarrow\\;P'(2)=64-192+184-55=1\\)"
+            },
+            {
+              "explain": "The line \\(y=x-3\\) passes through \\((2,-1)\\) on \\(P\\) with the same gradient 1, so it is tangent to \\(P\\) there ∎.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tangent to",
+              "note": "Show the midpoint is on P and P′ equals the gradient."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]
@@ -534,6 +796,172 @@
               ]
             }
           ]
+        },
+        {
+          "id": "barker2023-y11e1-q11e",
+          "type": "mc",
+          "stem": "The roots of \\(2x^3 - 5x + 3 = 0\\) are \\(\\alpha, \\beta, \\gamma\\). Find the value of \\(\\alpha\\beta + \\beta\\gamma + \\alpha\\gamma\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-\\dfrac{5}{2}\\)",
+            "\\(\\dfrac{5}{2}\\)",
+            "\\(-\\dfrac{3}{2}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(ax^3+bx^2+cx+d=0\\): \\(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma=\\dfrac{c}{a}\\). Take care: the \\(x^2\\) coefficient here is 0.",
+          "steps": [
+            {
+              "explain": "Write the cubic in the form \\(ax^3+bx^2+cx+d=0\\).",
+              "work": "\\(2x^3 + 0x^2 - 5x + 3 = 0\\) so \\(a=2,\\ b=0,\\ c=-5,\\ d=3\\)"
+            },
+            {
+              "explain": "Sum of the roots taken two at a time.",
+              "work": "\\(\\alpha\\beta+\\beta\\gamma+\\alpha\\gamma=\\dfrac{c}{a}\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(=\\dfrac{-5}{2}=-\\dfrac{5}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value",
+              "note": "Use c/a for the sum of products of pairs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q14c1",
+          "type": "review",
+          "stem": "The polynomial \\(P(x)=4x^3-8kx^2+29x-4k\\) has three distinct zeroes, with \\(k>0\\). It is known that \\(k\\) is one of the zeroes of the polynomial. Show that the other zeroes of the polynomial are reciprocals of each other.",
+          "difficulty": "medium",
+          "answer": "Product of all zeroes \\(=-\\dfrac{-4k}{4}=k\\); with one zero \\(k\\) the other two have product \\(\\dfrac{k}{k}=1\\), so they are reciprocals.",
+          "manual": true,
+          "hint": "Let the zeroes be \\(k,\\ \\alpha,\\ \\beta\\) and use the product of roots \\(\\alpha\\beta\\gamma=-\\dfrac{d}{a}\\).",
+          "steps": [
+            {
+              "explain": "Name the zeroes \\(k,\\ \\alpha,\\ \\beta\\).",
+              "work": "k, α, β"
+            },
+            {
+              "explain": "Product of the zeroes of a cubic: \\(-\\dfrac{d}{a}\\) with \\(a=4,\\ d=-4k\\).",
+              "work": "\\(k\\cdot\\alpha\\cdot\\beta=-\\dfrac{-4k}{4}=k\\)"
+            },
+            {
+              "explain": "Divide by \\(k\\) (\\(k>0\\) so \\(k\\ne0\\)).",
+              "work": "\\(\\alpha\\beta=1\\), i.e. \\(\\beta=\\dfrac{1}{\\alpha}\\) ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "reciprocals of each other",
+              "note": "Use the product of the zeroes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q14c2",
+          "type": "review",
+          "stem": "The polynomial \\(P(x)=4x^3-8kx^2+29x-4k\\) has three distinct zeroes, with \\(k>0\\). It is known that \\(k\\) is one of the zeroes of the polynomial. Show that \\(k\\) is equal to the sum of the other zeroes.",
+          "difficulty": "medium",
+          "answer": "Sum of all zeroes \\(=\\dfrac{8k}{4}=2k\\); so the sum of the other two is \\(2k-k=k\\) ∎.",
+          "manual": true,
+          "hint": "Use the sum of the zeroes \\(-\\dfrac{b}{a}\\) and subtract the zero \\(k\\).",
+          "steps": [
+            {
+              "explain": "Sum of all zeroes: \\(-\\dfrac{b}{a}\\) with \\(b=-8k\\).",
+              "work": "\\(k+\\alpha+\\beta=\\dfrac{8k}{4}=2k\\)"
+            },
+            {
+              "explain": "Subtract \\(k\\) from both sides.",
+              "work": "\\(\\alpha+\\beta=2k-k=k\\)"
+            },
+            {
+              "explain": "So \\(k\\) equals the sum of the other zeroes ∎.",
+              "work": "\\(k=\\alpha+\\beta\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sum of the other zeroes",
+              "note": "Use the sum of all zeroes = 8k/4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2023-y11e1-q14c3",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x)=4x^3-8kx^2+29x-4k\\) has three distinct zeroes, with \\(k>0\\). It is known that \\(k\\) is one of the zeroes of the polynomial. Hence, or otherwise, find the zeroes of the polynomial.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2},\\ 2,\\ \\dfrac{5}{2}\\)",
+            "\\(1,\\ 2,\\ \\dfrac{5}{2}\\)",
+            "\\(\\dfrac{1}{2},\\ 2,\\ 5\\)",
+            "\\(-\\dfrac{5}{2},\\ \\dfrac{1}{2},\\ 2\\)"
+          ],
+          "answer": 0,
+          "hint": "Since \\(k\\) is a zero, \\(P(k)=0\\) gives \\(k\\). The other two zeroes have SUM \\(k\\) and PRODUCT 1.",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=k\\) into \\(P(x)=0\\).",
+              "work": "\\(4k^3-8k^3+29k-4k=-4k^3+25k=0\\)"
+            },
+            {
+              "explain": "Factor \\(k\\) (\\(k>0\\)).",
+              "work": "\\(k(25-4k^2)=0\\;\\Rightarrow\\;k^2=\\dfrac{25}{4}\\;\\Rightarrow\\;k=\\dfrac{5}{2}\\)"
+            },
+            {
+              "explain": "From (i) and (ii): the other zeroes have product 1 and sum \\(\\dfrac{5}{2}\\).",
+              "work": "\\(\\alpha\\beta=1,\\quad\\alpha+\\beta=\\dfrac{5}{2}\\)"
+            },
+            {
+              "explain": "They are the roots of \\(z^2-\\dfrac{5}{2}z+1=0\\), i.e. \\(2z^2-5z+2=0\\).",
+              "work": "\\((2z-1)(z-2)=0\\;\\Rightarrow\\;z=\\dfrac{1}{2},\\ 2\\)"
+            },
+            {
+              "explain": "The three zeroes.",
+              "work": "\\(\\dfrac{1}{2},\\ 2,\\ \\dfrac{5}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the zeroes of the polynomial",
+              "note": "Find k first, then solve the quadratic from sum and product."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }
