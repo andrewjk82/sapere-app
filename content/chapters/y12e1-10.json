@@ -384,6 +384,70 @@
               }
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e1-q5",
+          "type": "mc",
+          "stem": "A particle of mass 30 kg is suspended by two strings attached to two points in the same horizontal plane. The two strings make angles of \\(25^\\circ\\) and \\(55^\\circ\\) respectively to the horizontal. The magnitude of acceleration due to gravity is \\(10\\ \\text{ms}^{-2}\\). The magnitude of the tension force \\(F_1\\), correct to the nearest newton, N, is given by:",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"8.1\" y1=\"40\" x2=\"357\" y2=\"40\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"150\" x2=\"14.1\" y2=\"40\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"150\" x2=\"327\" y2=\"40\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"240\" y=\"148\" width=\"20\" height=\"20\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"250\" y1=\"150\" x2=\"210.1\" y2=\"131.4\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M202.9,128 l12.1,0.1 l-4.2,9.1z\" fill=\"#1e293b\"/><line x1=\"250\" y1=\"150\" x2=\"275.2\" y2=\"114\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M279.8,107.4 l-2.2,11.9 l-8.2,-5.7z\" fill=\"#1e293b\"/><line x1=\"250\" y1=\"170\" x2=\"250\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M250,218 l-5,-11 l10,0z\" fill=\"#1e293b\"/><text x=\"206.9\" y=\"152\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">F₁ N</text><text x=\"301.8\" y=\"117.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">F₂ N</text><text x=\"284\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">30g N</text><path d=\"M60.1,40 A46 46 0 0 1 55.8,59.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"76.1\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">25°</text><path d=\"M293,40 A34 34 0 0 0 307.5,67.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"283\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">55°</text></svg>"
+          },
+          "options": [
+            "17 N",
+            "28 N",
+            "175 N",
+            "276 N"
+          ],
+          "answer": 2,
+          "hint": "The particle is in EQUILIBRIUM: the forces balance in BOTH directions. Resolve each tension into horizontal and vertical components, giving two equations in \\(F_1\\) and \\(F_2\\).",
+          "steps": [
+            {
+              "explain": "Weight of the particle.",
+              "work": "\\(W=mg=30\\times10=300\\ \\text{N}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"8.1\" y1=\"40\" x2=\"357\" y2=\"40\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"150\" x2=\"14.1\" y2=\"40\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"150\" x2=\"327\" y2=\"40\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"240\" y=\"148\" width=\"20\" height=\"20\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"250\" y1=\"150\" x2=\"210.1\" y2=\"131.4\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M202.9,128 l12.1,0.1 l-4.2,9.1z\" fill=\"#dc2626\"/><line x1=\"250\" y1=\"150\" x2=\"275.2\" y2=\"114\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M279.8,107.4 l-2.2,11.9 l-8.2,-5.7z\" fill=\"#2563eb\"/><line x1=\"250\" y1=\"170\" x2=\"250\" y2=\"210\" stroke=\"#059669\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M250,218 l-5,-11 l10,0z\" fill=\"#059669\"/><text x=\"206.9\" y=\"152\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#b91c1c\">F₁ N</text><text x=\"301.8\" y=\"117.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1d4ed8\">F₂ N</text><text x=\"284\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#047857\">30g N</text><path d=\"M60.1,40 A46 46 0 0 1 55.8,59.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"76.1\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">25°</text><path d=\"M293,40 A34 34 0 0 0 307.5,67.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"283\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">55°</text></svg>"
+              }
+            },
+            {
+              "explain": "Horizontal balance (the horizontal components of \\(F_1\\) at \\(25^\\circ\\) and \\(F_2\\) at \\(55^\\circ\\) are equal and opposite).",
+              "work": "\\(F_1\\cos25^\\circ=F_2\\cos55^\\circ\\;\\Rightarrow\\;F_2=\\dfrac{F_1\\cos25^\\circ}{\\cos55^\\circ}\\)"
+            },
+            {
+              "explain": "Vertical balance (the two upward components support the weight).",
+              "work": "\\(F_1\\sin25^\\circ+F_2\\sin55^\\circ=300\\)"
+            },
+            {
+              "explain": "Substitute \\(F_2\\) and use \\(\\dfrac{\\sin55^\\circ}{\\cos55^\\circ}=\\tan55^\\circ\\).",
+              "work": "\\(F_1\\left(\\sin25^\\circ+\\cos25^\\circ\\tan55^\\circ\\right)=300\\)"
+            },
+            {
+              "explain": "Evaluate the bracket.",
+              "work": "\\(0.4226+0.9063\\times1.4281=1.7168\\)"
+            },
+            {
+              "explain": "Solve for \\(F_1\\).",
+              "work": "\\(F_1=\\dfrac{300}{1.7168}=174.7\\ldots\\approx175\\ \\text{N}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Check: \\(F_2=\\dfrac{174.7\\times0.9063}{0.5736}=276\\) N, and \\(276\\) N is the other (wrong) option — it is the tension in the 55° string.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "magnitude of the tension force",
+              "note": "Equilibrium: resolve horizontally and vertically."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -855,6 +919,98 @@
               "note": "At the collision r_A(T) = r_B(T): two equations, one from i and one from j."
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e1-q8iv",
+          "type": "review",
+          "stem": "O and R are two points \\(d\\) metres apart on horizontal ground. A rocket is projected from \\(O\\) with speed \\(|\\mathbf{v}(0)|\\) m/s at an angle of \\(\\theta\\) above the horizontal, where \\(0<\\theta<\\dfrac{\\pi}{2}\\). At the same instant, another rocket is projected vertically from \\(R\\) with speed \\(|\\mathbf{n}(0)|\\) m/s. After time \\(t\\) seconds, the rocket from \\(O\\) has horizontal and vertical displacements from \\(O\\), while the rocket from \\(R\\) has vertical displacement from \\(R\\) and a constant horizontal displacement from \\(O\\). The two rockets collide after \\(T\\) seconds. The vector equation of the projectile fired from \\(O\\) is given by \\(\\mathbf{r}(t)=\\left(|\\mathbf{v}(0)|t\\cos\\theta\\right)\\mathbf{i}+\\left(|\\mathbf{v}(0)|t\\sin\\theta-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\) where \\(g\\ \\text{ms}^{-2}\\) is the acceleration due to gravity. (You do not need to prove this). The collision conditions are \\(d=|\\mathbf{v}(0)|T\\cos\\theta\\) and \\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\). Show that \\(T=\\dfrac{d}{\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}}\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"190\" x2=\"114.9\" y2=\"105.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M114.9,105.1 l-4.2,12.7 l-8.5,-8.5z\" fill=\"#1e293b\"/><path d=\"M330,66 l6,12 l-12,0z\" fill=\"#1e293b\"/><path d=\"M60,190 A30 30 0 0 0 51.2,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"74\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><path d=\"M318,190 v-12 h12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"22\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"334\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"180\" y=\"212\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">d</text><text x=\"144.9\" y=\"99.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|v(0)|</text><text x=\"366\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|n(0)|</text></svg>"
+          },
+          "answer": "\\(|\\mathbf{v}(0)|^2\\cos^2\\theta=|\\mathbf{v}(0)|^2-|\\mathbf{v}(0)|^2\\sin^2\\theta=|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2\\), so \\(|\\mathbf{v}(0)|\\cos\\theta=\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}\\) (cosine positive) and \\(T=\\dfrac{d}{|\\mathbf{v}(0)|\\cos\\theta}=\\dfrac{d}{\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}}\\). ∎",
+          "manual": true,
+          "hint": "Make \\(T\\) the subject of \\(d=|\\mathbf{v}(0)|T\\cos\\theta\\). Then eliminate \\(\\theta\\) using \\(\\cos^2\\theta=1-\\sin^2\\theta\\) and the sine result.",
+          "steps": [
+            {
+              "explain": "Make \\(T\\) the subject.",
+              "work": "\\(T=\\dfrac{d}{|\\mathbf{v}(0)|\\cos\\theta}\\)"
+            },
+            {
+              "explain": "Find \\(|\\mathbf{v}(0)|\\cos\\theta\\) without \\(\\theta\\): square it and use the Pythagorean identity.",
+              "work": "\\(|\\mathbf{v}(0)|^2\\cos^2\\theta=|\\mathbf{v}(0)|^2\\left(1-\\sin^2\\theta\\right)=|\\mathbf{v}(0)|^2-|\\mathbf{v}(0)|^2\\sin^2\\theta\\)"
+            },
+            {
+              "explain": "Replace \\(|\\mathbf{v}(0)|\\sin\\theta\\) by \\(|\\mathbf{n}(0)|\\) (from (ii)).",
+              "work": "\\(|\\mathbf{v}(0)|^2\\cos^2\\theta=|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2\\)"
+            },
+            {
+              "explain": "Take the square root (cosine is positive since \\(\\theta\\) is acute).",
+              "work": "\\(|\\mathbf{v}(0)|\\cos\\theta=\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}\\)"
+            },
+            {
+              "explain": "Substitute into the formula for \\(T\\).",
+              "work": "\\(T=\\dfrac{d}{\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Square the cosine term and use the Pythagorean identity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e1-q8v",
+          "type": "review",
+          "stem": "O and R are two points \\(d\\) metres apart on horizontal ground. A rocket is projected from \\(O\\) with speed \\(|\\mathbf{v}(0)|\\) m/s at an angle of \\(\\theta\\) above the horizontal, where \\(0<\\theta<\\dfrac{\\pi}{2}\\). At the same instant, another rocket is projected vertically from \\(R\\) with speed \\(|\\mathbf{n}(0)|\\) m/s. After time \\(t\\) seconds, the rocket from \\(O\\) has horizontal and vertical displacements from \\(O\\), while the rocket from \\(R\\) has vertical displacement from \\(R\\) and a constant horizontal displacement from \\(O\\). The two rockets collide after \\(T\\) seconds. The vector equation of the projectile fired from \\(O\\) is given by \\(\\mathbf{r}(t)=\\left(|\\mathbf{v}(0)|t\\cos\\theta\\right)\\mathbf{i}+\\left(|\\mathbf{v}(0)|t\\sin\\theta-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\) where \\(g\\ \\text{ms}^{-2}\\) is the acceleration due to gravity. (You do not need to prove this). If the two rockets collide at the highest points of their respective flights, show that \\(d=\\dfrac{|\\mathbf{n}(0)|\\times\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}}{g}\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"190\" x2=\"114.9\" y2=\"105.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M114.9,105.1 l-4.2,12.7 l-8.5,-8.5z\" fill=\"#1e293b\"/><path d=\"M330,66 l6,12 l-12,0z\" fill=\"#1e293b\"/><path d=\"M60,190 A30 30 0 0 0 51.2,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"74\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><path d=\"M318,190 v-12 h12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"22\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"334\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"180\" y=\"212\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">d</text><text x=\"144.9\" y=\"99.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|v(0)|</text><text x=\"366\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|n(0)|</text></svg>"
+          },
+          "answer": "At the highest point the vertical velocity is 0: for the rocket from \\(R\\), \\(|\\mathbf{n}(0)|-gT=0\\) so \\(T=\\dfrac{|\\mathbf{n}(0)|}{g}\\). Substituting into \\(d=T\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}\\) gives the result. ∎",
+          "manual": true,
+          "hint": "At the TOP of its flight a projectile's vertical velocity is zero. Use the rocket from \\(R\\) (simplest velocity), find \\(T\\), then substitute into the formula connecting \\(d\\) and \\(T\\).",
+          "steps": [
+            {
+              "explain": "From (iv): \\(d=T\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}\\) (multiply both sides of the result of (iv) by the square root).",
+              "work": "\\(d=T\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}\\)"
+            },
+            {
+              "explain": "Highest point: vertical velocity is zero. Rocket from \\(R\\) has \\(\\mathbf{v}(t)=\\left(|\\mathbf{n}(0)|-gt\\right)\\mathbf{j}\\).",
+              "work": "\\(|\\mathbf{n}(0)|-gT=0\\)"
+            },
+            {
+              "explain": "Solve for \\(T\\).",
+              "work": "\\(T=\\dfrac{|\\mathbf{n}(0)|}{g}\\)"
+            },
+            {
+              "explain": "Substitute into the formula for \\(d\\).",
+              "work": "\\(d=\\dfrac{|\\mathbf{n}(0)|}{g}\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}=\\dfrac{|\\mathbf{n}(0)|\\times\\sqrt{|\\mathbf{v}(0)|^2-|\\mathbf{n}(0)|^2}}{g}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "highest points",
+              "note": "Vertical velocity is zero at the highest point: T equals the starting speed divided by g."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1261,6 +1417,145 @@
               }
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e1-q8i",
+          "type": "review",
+          "stem": "O and R are two points \\(d\\) metres apart on horizontal ground. A rocket is projected from \\(O\\) with speed \\(|\\mathbf{v}(0)|\\) m/s at an angle of \\(\\theta\\) above the horizontal, where \\(0<\\theta<\\dfrac{\\pi}{2}\\). At the same instant, another rocket is projected vertically from \\(R\\) with speed \\(|\\mathbf{n}(0)|\\) m/s. After time \\(t\\) seconds, the rocket from \\(O\\) has horizontal and vertical displacements from \\(O\\), while the rocket from \\(R\\) has vertical displacement from \\(R\\) and a constant horizontal displacement from \\(O\\). The two rockets collide after \\(T\\) seconds. The vector equation of the projectile fired from \\(O\\) is given by \\(\\mathbf{r}(t)=\\left(|\\mathbf{v}(0)|t\\cos\\theta\\right)\\mathbf{i}+\\left(|\\mathbf{v}(0)|t\\sin\\theta-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\) where \\(g\\ \\text{ms}^{-2}\\) is the acceleration due to gravity. (You do not need to prove this). Show that the vector equation for the displacement of the rocket fired from \\(R\\) can be given by \\(\\mathbf{s}(t)=d\\mathbf{i}+\\left(|\\mathbf{n}(0)|t-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\). (Hint: let the vector equation for the acceleration of the rocket projected from \\(R\\) be \\(\\mathbf{a}(t)=0\\mathbf{i}-g\\mathbf{j}\\)).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"190\" x2=\"114.9\" y2=\"105.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M114.9,105.1 l-4.2,12.7 l-8.5,-8.5z\" fill=\"#1e293b\"/><path d=\"M330,66 l6,12 l-12,0z\" fill=\"#1e293b\"/><path d=\"M60,190 A30 30 0 0 0 51.2,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"74\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><path d=\"M318,190 v-12 h12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"22\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"334\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"180\" y=\"212\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">d</text><text x=\"144.9\" y=\"99.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|v(0)|</text><text x=\"366\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|n(0)|</text></svg>"
+          },
+          "answer": "Integrate the acceleration twice, using the initial velocity \\(|\\mathbf{n}(0)|\\mathbf{j}\\) (vertical) and the initial position \\(d\\mathbf{i}\\): \\(\\mathbf{v}(t)=\\left(|\\mathbf{n}(0)|-gt\\right)\\mathbf{j},\\quad\\mathbf{s}(t)=d\\mathbf{i}+\\left(|\\mathbf{n}(0)|t-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\). ∎",
+          "manual": true,
+          "hint": "Acceleration → integrate → velocity (+ constant from the initial velocity) → integrate → displacement (+ constant from the initial position).",
+          "steps": [
+            {
+              "explain": "Start from the given acceleration.",
+              "work": "\\(\\mathbf{a}(t)=0\\mathbf{i}-g\\mathbf{j}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"190\" x2=\"114.9\" y2=\"105.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M114.9,105.1 l-4.2,12.7 l-8.5,-8.5z\" fill=\"#1e293b\"/><path d=\"M330,66 l6,12 l-12,0z\" fill=\"#1e293b\"/><path d=\"M60,190 A30 30 0 0 0 51.2,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"74\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><path d=\"M318,190 v-12 h12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"22\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"334\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"180\" y=\"212\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">d</text><text x=\"144.9\" y=\"99.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|v(0)|</text><text x=\"366\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|n(0)|</text><rect x=\"2\" y=\"2\" width=\"416\" height=\"226\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Integrate to get the velocity. The initial velocity of the rocket from \\(R\\) is \\(|\\mathbf{n}(0)|\\mathbf{j}\\) (straight up).",
+              "work": "\\(\\mathbf{v}(t)=c_1\\mathbf{i}+\\left(-gt+c_2\\right)\\mathbf{j}\\);  \\(\\mathbf{v}(0)=|\\mathbf{n}(0)|\\mathbf{j}\\;\\Rightarrow\\;c_1=0,\\ c_2=|\\mathbf{n}(0)|\\)"
+            },
+            {
+              "explain": "So the velocity is.",
+              "work": "\\(\\mathbf{v}(t)=0\\mathbf{i}+\\left(|\\mathbf{n}(0)|-gt\\right)\\mathbf{j}\\)"
+            },
+            {
+              "explain": "Integrate again. The rocket starts at \\(R\\), which is \\(d\\) from \\(O\\) horizontally, so \\(\\mathbf{s}(0)=d\\mathbf{i}\\).",
+              "work": "\\(\\mathbf{s}(t)=d_1\\mathbf{i}+\\left(|\\mathbf{n}(0)|t-\\dfrac{1}{2}gt^2+d_2\\right)\\mathbf{j},\\quad\\mathbf{s}(0)=d\\mathbf{i}\\Rightarrow d_1=d,\\ d_2=0\\)"
+            },
+            {
+              "explain": "Therefore.",
+              "work": "\\(\\mathbf{s}(t)=d\\mathbf{i}+\\left(|\\mathbf{n}(0)|t-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Integrate the acceleration twice, using the starting velocity and position."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e1-q8ii",
+          "type": "review",
+          "stem": "O and R are two points \\(d\\) metres apart on horizontal ground. A rocket is projected from \\(O\\) with speed \\(|\\mathbf{v}(0)|\\) m/s at an angle of \\(\\theta\\) above the horizontal, where \\(0<\\theta<\\dfrac{\\pi}{2}\\). At the same instant, another rocket is projected vertically from \\(R\\) with speed \\(|\\mathbf{n}(0)|\\) m/s. After time \\(t\\) seconds, the rocket from \\(O\\) has horizontal and vertical displacements from \\(O\\), while the rocket from \\(R\\) has vertical displacement from \\(R\\) and a constant horizontal displacement from \\(O\\). The two rockets collide after \\(T\\) seconds. The vector equation of the projectile fired from \\(O\\) is given by \\(\\mathbf{r}(t)=\\left(|\\mathbf{v}(0)|t\\cos\\theta\\right)\\mathbf{i}+\\left(|\\mathbf{v}(0)|t\\sin\\theta-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\) where \\(g\\ \\text{ms}^{-2}\\) is the acceleration due to gravity. (You do not need to prove this). The vector equation of the rocket from \\(R\\) is \\(\\mathbf{s}(t)=d\\mathbf{i}+\\left(|\\mathbf{n}(0)|t-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\). Hence, show that \\(d=|\\mathbf{v}(0)|T\\cos\\theta\\) and \\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"190\" x2=\"114.9\" y2=\"105.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M114.9,105.1 l-4.2,12.7 l-8.5,-8.5z\" fill=\"#1e293b\"/><path d=\"M330,66 l6,12 l-12,0z\" fill=\"#1e293b\"/><path d=\"M60,190 A30 30 0 0 0 51.2,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"74\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><path d=\"M318,190 v-12 h12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"22\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"334\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"180\" y=\"212\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">d</text><text x=\"144.9\" y=\"99.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|v(0)|</text><text x=\"366\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|n(0)|</text></svg>"
+          },
+          "answer": "At the collision \\(\\mathbf{r}(T)=\\mathbf{s}(T)\\): equate the \\(\\mathbf{i}\\) components: \\(|\\mathbf{v}(0)|T\\cos\\theta=d\\); equate the \\(\\mathbf{j}\\) components: \\(|\\mathbf{v}(0)|T\\sin\\theta-\\dfrac{1}{2}gT^2=|\\mathbf{n}(0)|T-\\dfrac{1}{2}gT^2\\), so \\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\). ∎",
+          "manual": true,
+          "hint": "Colliding means both rockets are at the SAME point at time \\(T\\): the position vectors are equal, so the \\(\\mathbf{i}\\) parts match AND the \\(\\mathbf{j}\\) parts match.",
+          "steps": [
+            {
+              "explain": "Collision at \\(t=T\\): the positions are equal.",
+              "work": "\\(\\mathbf{r}(T)=\\mathbf{s}(T)\\)"
+            },
+            {
+              "explain": "Write both out.",
+              "work": "\\(\\left(|\\mathbf{v}(0)|T\\cos\\theta\\right)\\mathbf{i}+\\left(|\\mathbf{v}(0)|T\\sin\\theta-\\dfrac{1}{2}gT^2\\right)\\mathbf{j}=d\\mathbf{i}+\\left(|\\mathbf{n}(0)|T-\\dfrac{1}{2}gT^2\\right)\\mathbf{j}\\)"
+            },
+            {
+              "explain": "Equate the \\(\\mathbf{i}\\) components.",
+              "work": "\\(|\\mathbf{v}(0)|T\\cos\\theta=d\\)  ✓ (first result)"
+            },
+            {
+              "explain": "Equate the \\(\\mathbf{j}\\) components: the \\(-\\dfrac{1}{2}gT^2\\) terms cancel.",
+              "work": "\\(|\\mathbf{v}(0)|T\\sin\\theta=|\\mathbf{n}(0)|T\\)"
+            },
+            {
+              "explain": "Divide by \\(T\\) (\\(T>0\\)).",
+              "work": "\\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\)  ✓ (second result)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, show that",
+              "note": "At collision the i parts and the j parts of the positions are equal."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e1-q8iii",
+          "type": "review",
+          "stem": "O and R are two points \\(d\\) metres apart on horizontal ground. A rocket is projected from \\(O\\) with speed \\(|\\mathbf{v}(0)|\\) m/s at an angle of \\(\\theta\\) above the horizontal, where \\(0<\\theta<\\dfrac{\\pi}{2}\\). At the same instant, another rocket is projected vertically from \\(R\\) with speed \\(|\\mathbf{n}(0)|\\) m/s. After time \\(t\\) seconds, the rocket from \\(O\\) has horizontal and vertical displacements from \\(O\\), while the rocket from \\(R\\) has vertical displacement from \\(R\\) and a constant horizontal displacement from \\(O\\). The two rockets collide after \\(T\\) seconds. The vector equation of the projectile fired from \\(O\\) is given by \\(\\mathbf{r}(t)=\\left(|\\mathbf{v}(0)|t\\cos\\theta\\right)\\mathbf{i}+\\left(|\\mathbf{v}(0)|t\\sin\\theta-\\dfrac{1}{2}gt^2\\right)\\mathbf{j}\\) where \\(g\\ \\text{ms}^{-2}\\) is the acceleration due to gravity. (You do not need to prove this). The collision conditions are \\(d=|\\mathbf{v}(0)|T\\cos\\theta\\) and \\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\). Explain why \\(|\\mathbf{v}(0)|>|\\mathbf{n}(0)|\\) for the rockets to collide.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"190\" x2=\"114.9\" y2=\"105.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M114.9,105.1 l-4.2,12.7 l-8.5,-8.5z\" fill=\"#1e293b\"/><path d=\"M330,66 l6,12 l-12,0z\" fill=\"#1e293b\"/><path d=\"M60,190 A30 30 0 0 0 51.2,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"74\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">θ</text><path d=\"M318,190 v-12 h12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"22\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"334\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">R</text><text x=\"180\" y=\"212\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">d</text><text x=\"144.9\" y=\"99.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|v(0)|</text><text x=\"366\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">|n(0)|</text></svg>"
+          },
+          "answer": "Since \\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\) and \\(0<\\theta<\\dfrac{\\pi}{2}\\) gives \\(0<\\sin\\theta<1\\), we get \\(|\\mathbf{n}(0)|<|\\mathbf{v}(0)|\\).",
+          "manual": true,
+          "hint": "Use the result \\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\) and the range of \\(\\sin\\theta\\) for an angle strictly between \\(0\\) and \\(\\dfrac{\\pi}{2}\\).",
+          "steps": [
+            {
+              "explain": "From (ii).",
+              "work": "\\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta\\)"
+            },
+            {
+              "explain": "The angle is strictly between \\(0\\) and \\(\\dfrac{\\pi}{2}\\) (acute), so sine is strictly between 0 and 1.",
+              "work": "\\(0<\\sin\\theta<1\\)"
+            },
+            {
+              "explain": "Multiply by \\(|\\mathbf{v}(0)|>0\\): the product is smaller than \\(|\\mathbf{v}(0)|\\).",
+              "work": "\\(|\\mathbf{n}(0)|=|\\mathbf{v}(0)|\\sin\\theta<|\\mathbf{v}(0)|\\).  So \\(|\\mathbf{v}(0)|>|\\mathbf{n}(0)|\\)."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why",
+              "note": "Use the sine result and the range of sine for an acute angle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }
