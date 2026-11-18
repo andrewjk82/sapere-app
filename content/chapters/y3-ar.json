@@ -3120,11 +3120,11 @@
             "\\(7 + 4 = 11\\) and \\(70 + 40 = 11\\)"
           ],
           "answer": 0,
-          "hint": "First find the basic addition fact \\(7 + 4\\), then use the pattern that \\(7\\text{ tens} + 4\\text{ tens}\\) equals \\(11\\text{ tens}\\).",
+          "hint": "First find the basic addition fact on the left, then use the same number of tens on the right.",
           "keyPoints": [
             {
               "text": "\\(7 + 4 = \\square\\) and \\(70 + 40 = \\square\\)",
-              "note": "Since 7 + 4 = 11, adding 7 tens (70) and 4 tens (40) gives 11 tens (110)."
+              "note": "Add the ones first, then use that same sum for the tens (for example, 6 + 3 = 9 so 60 + 30 = 90)."
             }
           ],
           "solution": "Since \\(7 + 4 = 11\\), extending to tens gives \\(70 + 40 = 110\\).",
@@ -3181,11 +3181,11 @@
             "\\(8 + 5 = 13\\) and \\(80 + 50 = 130\\)"
           ],
           "answer": 3,
-          "hint": "First find the basic addition fact \\(8 + 5\\), then use the pattern that \\(8\\text{ tens} + 5\\text{ tens}\\) equals \\(13\\text{ tens}\\).",
+          "hint": "First find the basic addition fact on the left, then use the same number of tens on the right.",
           "keyPoints": [
             {
               "text": "\\(8 + 5 = \\square\\) and \\(80 + 50 = \\square\\)",
-              "note": "Since 8 + 5 = 13, adding 8 tens (80) and 5 tens (50) gives 13 tens (130)."
+              "note": "Add the ones first, then use that same sum for the tens (for example, 6 + 3 = 9 so 60 + 30 = 90)."
             }
           ],
           "solution": "Since \\(8 + 5 = 13\\), extending to tens gives \\(80 + 50 = 130\\).",
@@ -3242,11 +3242,11 @@
             "\\(7 + 5 = 11\\) and \\(70 + 50 = 110\\)"
           ],
           "answer": 2,
-          "hint": "First find the basic addition fact \\(7 + 5\\), then use the pattern that \\(7\\text{ tens} + 5\\text{ tens}\\) equals \\(12\\text{ tens}\\).",
+          "hint": "First find the basic addition fact on the left, then use the same number of tens on the right.",
           "keyPoints": [
             {
               "text": "\\(7 + 5 = \\square\\) and \\(70 + 50 = \\square\\)",
-              "note": "Since 7 + 5 = 12, adding 7 tens (70) and 5 tens (50) gives 12 tens (120)."
+              "note": "Add the ones first, then use that same sum for the tens (for example, 6 + 3 = 9 so 60 + 30 = 90)."
             }
           ],
           "solution": "Since \\(7 + 5 = 12\\), extending to tens gives \\(70 + 50 = 120\\).",
@@ -3303,11 +3303,11 @@
             "\\(8 + 7 = 16\\) and \\(80 + 70 = 160\\)"
           ],
           "answer": 1,
-          "hint": "First find the basic addition fact \\(8 + 7\\), then use the pattern that \\(8\\text{ tens} + 7\\text{ tens}\\) equals \\(15\\text{ tens}\\).",
+          "hint": "First find the basic addition fact on the left, then use the same number of tens on the right.",
           "keyPoints": [
             {
               "text": "\\(8 + 7 = \\square\\) and \\(80 + 70 = \\square\\)",
-              "note": "Since 8 + 7 = 15, adding 8 tens (80) and 7 tens (70) gives 15 tens (150)."
+              "note": "Add the ones first, then use that same sum for the tens (for example, 6 + 3 = 9 so 60 + 30 = 90)."
             }
           ],
           "solution": "Since \\(8 + 7 = 15\\), extending to tens gives \\(80 + 70 = 150\\).",
@@ -3364,11 +3364,11 @@
             "\\(9 + 4 = 13\\) and \\(90 + 40 = 13\\)"
           ],
           "answer": 0,
-          "hint": "First find the basic addition fact \\(9 + 4\\), then use the pattern that \\(9\\text{ tens} + 4\\text{ tens}\\) equals \\(13\\text{ tens}\\).",
+          "hint": "First find the basic addition fact on the left, then use the same number of tens on the right.",
           "keyPoints": [
             {
               "text": "\\(9 + 4 = \\square\\) and \\(90 + 40 = \\square\\)",
-              "note": "Since 9 + 4 = 13, adding 9 tens (90) and 4 tens (40) gives 13 tens (130)."
+              "note": "Add the ones first, then use that same sum for the tens (for example, 6 + 3 = 9 so 60 + 30 = 90)."
             }
           ],
           "solution": "Since \\(9 + 4 = 13\\), extending to tens gives \\(90 + 40 = 130\\).",
@@ -3425,11 +3425,11 @@
             "\\(8 + 6 = 14\\) and \\(80 + 60 = 140\\)"
           ],
           "answer": 3,
-          "hint": "First find the basic addition fact \\(8 + 6\\), then use the pattern that \\(8\\text{ tens} + 6\\text{ tens}\\) equals \\(14\\text{ tens}\\).",
+          "hint": "First find the basic addition fact on the left, then use the same number of tens on the right.",
           "keyPoints": [
             {
               "text": "\\(8 + 6 = \\square\\) and \\(80 + 60 = \\square\\)",
-              "note": "Since 8 + 6 = 14, adding 8 tens (80) and 6 tens (60) gives 14 tens (140)."
+              "note": "Add the ones first, then use that same sum for the tens (for example, 6 + 3 = 9 so 60 + 30 = 90)."
             }
           ],
           "solution": "Since \\(8 + 6 = 14\\), extending to tens gives \\(80 + 60 = 140\\).",
@@ -3852,11 +3852,11 @@
             "\\(29\\)"
           ],
           "answer": 0,
-          "hint": "First round \\(8\\) to the nearest \\(10\\) (\\(10\\)) and round \\(21\\) to the nearest \\(10\\) (\\(20\\)), then add the two rounded tens.",
+          "hint": "Round each of the two numbers in the addition sentence to the nearest \\(10\\) first, then add the two rounded tens together.",
           "keyPoints": [
             {
               "text": "Round each number in the addition number sentence to the nearest \\(10\\) to estimate an answer",
-              "note": "Round 8 to 10 and round 21 to 20, then add 10 + 20."
+              "note": "Check the ones digit of each addend to round it to the nearest 10, then add the rounded multiples of 10."
             }
           ],
           "solution": "Rounding to the nearest \\(10\\) gives \\(8 \\rightarrow 10\\) and \\(21 \\rightarrow 20\\), so \\(8 + 21\\) is about \\(10 + 20 = 30\\).",
@@ -3913,11 +3913,11 @@
             "\\(40\\)"
           ],
           "answer": 3,
-          "hint": "First round \\(17\\) to the nearest \\(10\\) (\\(20\\)) and round \\(22\\) to the nearest \\(10\\) (\\(20\\)), then add the two rounded tens.",
+          "hint": "Round each of the two numbers in the addition sentence to the nearest \\(10\\) first, then add the two rounded tens together.",
           "keyPoints": [
             {
               "text": "Round each number in the addition number sentence to the nearest \\(10\\) to estimate an answer",
-              "note": "Round 17 to 20 and round 22 to 20, then add 20 + 20."
+              "note": "Check the ones digit of each addend to round it to the nearest 10, then add the rounded multiples of 10."
             }
           ],
           "solution": "Rounding to the nearest \\(10\\) gives \\(17 \\rightarrow 20\\) and \\(22 \\rightarrow 20\\), so \\(17 + 22\\) is about \\(20 + 20 = 40\\).",
@@ -3974,11 +3974,11 @@
             "\\(50\\)"
           ],
           "answer": 2,
-          "hint": "First round \\(36\\) to the nearest \\(10\\) (\\(40\\)) and round \\(23\\) to the nearest \\(10\\) (\\(20\\)), then add the two rounded tens.",
+          "hint": "Round each of the two numbers in the addition sentence to the nearest \\(10\\) first, then add the two rounded tens together.",
           "keyPoints": [
             {
               "text": "Round each number in the addition number sentence to the nearest \\(10\\) to estimate an answer",
-              "note": "Round 36 to 40 and round 23 to 20, then add 40 + 20."
+              "note": "Check the ones digit of each addend to round it to the nearest 10, then add the rounded multiples of 10."
             }
           ],
           "solution": "Rounding to the nearest \\(10\\) gives \\(36 \\rightarrow 40\\) and \\(23 \\rightarrow 20\\), so \\(36 + 23\\) is about \\(40 + 20 = 60\\).",
@@ -4035,11 +4035,11 @@
             "\\(100\\)"
           ],
           "answer": 1,
-          "hint": "First round \\(64\\) to the nearest \\(10\\) (\\(60\\)) and round \\(29\\) to the nearest \\(10\\) (\\(30\\)), then add the two rounded tens.",
+          "hint": "Round each of the two numbers in the addition sentence to the nearest \\(10\\) first, then add the two rounded tens together.",
           "keyPoints": [
             {
               "text": "Round each number in the addition number sentence to the nearest \\(10\\) to estimate an answer",
-              "note": "Round 64 to 60 and round 29 to 30, then add 60 + 30."
+              "note": "Check the ones digit of each addend to round it to the nearest 10, then add the rounded multiples of 10."
             }
           ],
           "solution": "Rounding to the nearest \\(10\\) gives \\(64 \\rightarrow 60\\) and \\(29 \\rightarrow 30\\), so \\(64 + 29\\) is about \\(60 + 30 = 90\\).",
@@ -4096,11 +4096,11 @@
             "\\(71\\)"
           ],
           "answer": 0,
-          "hint": "First round \\(37\\) to the nearest \\(10\\) (\\(40\\)) and round \\(34\\) to the nearest \\(10\\) (\\(30\\)), then add the two rounded tens.",
+          "hint": "Round each of the two numbers in the addition sentence to the nearest \\(10\\) first, then add the two rounded tens together.",
           "keyPoints": [
             {
               "text": "Round each number in the addition number sentence to the nearest \\(10\\) to estimate an answer",
-              "note": "Round 37 to 40 and round 34 to 30, then add 40 + 30."
+              "note": "Check the ones digit of each addend to round it to the nearest 10, then add the rounded multiples of 10."
             }
           ],
           "solution": "Rounding to the nearest \\(10\\) gives \\(37 \\rightarrow 40\\) and \\(34 \\rightarrow 30\\), so \\(37 + 34\\) is about \\(40 + 30 = 70\\).",
@@ -4157,11 +4157,11 @@
             "\\(90\\)"
           ],
           "answer": 3,
-          "hint": "First round \\(48\\) to the nearest \\(10\\) (\\(50\\)) and round \\(42\\) to the nearest \\(10\\) (\\(40\\)), then add the two rounded tens.",
+          "hint": "Round each of the two numbers in the addition sentence to the nearest \\(10\\) first, then add the two rounded tens together.",
           "keyPoints": [
             {
               "text": "Round each number in the addition number sentence to the nearest \\(10\\) to estimate an answer",
-              "note": "Round 48 to 50 and round 42 to 40, then add 50 + 40."
+              "note": "Check the ones digit of each addend to round it to the nearest 10, then add the rounded multiples of 10."
             }
           ],
           "solution": "Rounding to the nearest \\(10\\) gives \\(48 \\rightarrow 50\\) and \\(42 \\rightarrow 40\\), so \\(48 + 42\\) is about \\(50 + 40 = 90\\).",
@@ -5018,7 +5018,7 @@
             "\\(12 + 4 = 16\\) and \\(12 + 8 = 20\\)"
           ],
           "answer": 0,
-          "hint": "Both subtraction facts start with the total (12): first subtract 4 to get 8, and second subtract 8 to get 4.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -5079,7 +5079,7 @@
             "\\(12 + 5 = 17\\) and \\(12 + 7 = 19\\)"
           ],
           "answer": 1,
-          "hint": "Both subtraction facts start with the total (12): first subtract 5 to get 7, and second subtract 7 to get 5.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -5140,7 +5140,7 @@
             "\\(15 + 9 = 24\\) and \\(15 + 6 = 21\\)"
           ],
           "answer": 2,
-          "hint": "Both subtraction facts start with the total (15): first subtract 9 to get 6, and second subtract 6 to get 9.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -5201,7 +5201,7 @@
             "\\(15 - 7 = 8\\) and \\(15 - 8 = 7\\)"
           ],
           "answer": 3,
-          "hint": "Both subtraction facts start with the total (15): first subtract 7 to get 8, and second subtract 8 to get 7.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -5262,7 +5262,7 @@
             "\\(17 + 8 = 25\\) and \\(17 + 9 = 26\\)"
           ],
           "answer": 1,
-          "hint": "Both subtraction facts start with the total (17): first subtract 8 to get 9, and second subtract 9 to get 8.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -5323,7 +5323,7 @@
             "\\(20 + 8 = 28\\) and \\(20 + 12 = 32\\)"
           ],
           "answer": 2,
-          "hint": "Both subtraction facts start with the total (20): first subtract 8 to get 12, and second subtract 12 to get 8.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -5384,7 +5384,7 @@
             "\\(19 + 6 = 25\\) and \\(19 + 13 = 32\\)"
           ],
           "answer": 0,
-          "hint": "Both subtraction facts start with the total (19): first subtract 6 to get 13, and second subtract 13 to get 6.",
+          "hint": "Both subtraction facts start with the total from the addition fact: subtract the first part to get the second part, and subtract the second part to get the first part.",
           "keyPoints": [
             {
               "text": "addition facts to make two subtraction facts",
@@ -6489,11 +6489,11 @@
             "\\(\\$70\\)"
           ],
           "answer": 2,
-          "hint": "Subtract \\(\\$60\\) from \\(\\$150\\) using tens: \\(15\\text{ tens} - 6\\text{ tens} = 9\\text{ tens}\\).",
+          "hint": "Subtract \\(\\$60\\) from \\(\\$150\\) by thinking in tens: \\(15\\text{ tens} - 6\\text{ tens}\\).",
           "keyPoints": [
             {
               "text": "had \\(\\$150\\) but spent \\(\\$60\\)",
-              "note": "Subtract the $60 spent from the starting $150: 15 tens − 6 tens = 9 tens."
+              "note": "Subtract the $60 spent from the starting $150 using tens (15 tens − 6 tens)."
             }
           ],
           "solution": "Yasma has \\(\\$150 - \\$60 = \\$90\\) left.",

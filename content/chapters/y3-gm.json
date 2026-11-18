@@ -2434,7 +2434,7 @@
           "keyPoints": [
             {
               "text": "bottom right corner",
-              "note": "The bottom right corner is on the lowest shelf in the rightmost column, right next to Hassan."
+              "note": "Locate the bottom-right corner tray where Fred goes, then look at the tray immediately to the left of that corner."
             }
           ],
           "solution": "Fred's tray is in the bottom right corner (below Ella), which is directly to the right of Hassan's tray, so Hassan is directly to the left of Fred.",
@@ -2979,7 +2979,7 @@
             "Hop"
           ],
           "answer": 0,
-          "hint": "Start at Cricket on the map and use the compass rose (N = up, S = down, E = right, W = left) to look towards Skip.",
+          "hint": "Start at Cricket on the map and use the compass rose (N = up, S = down, E = right, W = left) to look north (straight up).",
           "keyPoints": [
             {
               "text": "Which town is north of Cricket?",
@@ -3040,7 +3040,7 @@
             "Jog"
           ],
           "answer": 2,
-          "hint": "Start at Gym on the map and use the compass rose (N = up, S = down, E = right, W = left) to look towards Netball.",
+          "hint": "Start at Gym on the map and use the compass rose (N = up, S = down, E = right, W = left) to look south (straight down).",
           "keyPoints": [
             {
               "text": "Which town is south of Gym?",
@@ -3101,7 +3101,7 @@
             "Gym"
           ],
           "answer": 1,
-          "hint": "Start at Hockey on the map and use the compass rose (N = up, S = down, E = right, W = left) to look towards Jog.",
+          "hint": "Start at Hockey on the map and use the compass rose (N = up, S = down, E = right, W = left) to look south (straight down).",
           "keyPoints": [
             {
               "text": "Which town is south of Hockey?",
@@ -3162,7 +3162,7 @@
             "Gym"
           ],
           "answer": 3,
-          "hint": "Start at Hockey on the map and use the compass rose (N = up, S = down, E = right, W = left) to look towards Gym.",
+          "hint": "Start at Hockey on the map and use the compass rose (N = up, S = down, E = right, W = left) to look east (to the right).",
           "keyPoints": [
             {
               "text": "Which town is east of Hockey?",
@@ -3223,7 +3223,7 @@
             "Soccer"
           ],
           "answer": 0,
-          "hint": "Start at Hockey on the map and use the compass rose (N = up, S = down, E = right, W = left) to look towards Cricket.",
+          "hint": "Start at Hockey on the map and use the compass rose (N = up, S = down, E = right, W = left) to look west (to the left).",
           "keyPoints": [
             {
               "text": "Which town is west of Hockey?",
@@ -3406,11 +3406,11 @@
             "Bottom-left box"
           ],
           "answer": 1,
-          "hint": "Find Emu (top-left box) on Kangaroo Island, then follow the compass direction east (to the right) to find the matching box.",
+          "hint": "Find Emu on Kangaroo Island, then follow the compass direction east (to the right) to find the matching box.",
           "keyPoints": [
             {
               "text": "Fox is east of Emu.",
-              "note": "Start at Emu (top-left box) and move east (to the right) to locate the box."
+              "note": "Start at Emu and move east (to the right) to locate the box."
             }
           ],
           "solution": "Starting from Emu (top-left box) and moving east (to the right) leads to the Top-right box (above Dark Forest).",
@@ -3467,11 +3467,11 @@
             "Bottom-left box"
           ],
           "answer": 2,
-          "hint": "Find Fox (top-right box) on Kangaroo Island, then follow the compass direction south (straight down) to find the matching box.",
+          "hint": "Find Fox on Kangaroo Island, then follow the compass direction south (straight down) to find the matching box.",
           "keyPoints": [
             {
               "text": "Ram is south of Fox.",
-              "note": "Start at Fox (top-right box) and move south (straight down) to locate the box."
+              "note": "Start at Fox and move south (straight down) to locate the box."
             }
           ],
           "solution": "Starting from Fox (top-right box) and moving south (straight down) leads to the Bottom-right box (below Dark Forest).",
@@ -3528,11 +3528,11 @@
             "Bottom-left box"
           ],
           "answer": 3,
-          "hint": "Find Ram (bottom-right box) on Kangaroo Island, then follow the compass direction west (to the left) to find the matching box.",
+          "hint": "Find Ram on Kangaroo Island, then follow the compass direction west (to the left) to find the matching box.",
           "keyPoints": [
             {
               "text": "Duck is west of Ram.",
-              "note": "Start at Ram (bottom-right box) and move west (to the left) to locate the box."
+              "note": "Start at Ram and move west (to the left) to locate the box."
             }
           ],
           "solution": "Starting from Ram (bottom-right box) and moving west (to the left) leads to the Bottom-left box (west of Ram).",
@@ -3589,11 +3589,11 @@
             "Top-left box"
           ],
           "answer": 0,
-          "hint": "Find Duck (bottom-left box) on Kangaroo Island, then follow the compass direction north (straight up) to find the matching box.",
+          "hint": "Find Duck on Kangaroo Island, then follow the compass direction north (straight up) to find the matching box.",
           "keyPoints": [
             {
               "text": "Dog is north of Duck.",
-              "note": "Start at Duck (bottom-left box) and move north (straight up) to locate the box."
+              "note": "Start at Duck and move north (straight up) to locate the box."
             }
           ],
           "solution": "Starting from Duck (bottom-left box) and moving north (straight up) leads to the Middle-left box (between Emu and Duck).",

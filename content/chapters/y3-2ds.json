@@ -267,11 +267,11 @@
             "A, E, I, L"
           ],
           "answer": 1,
-          "hint": "A pentagon is any \\(2\\text{D}\\) shape with \\(5\\) straight sides (both regular pentagons like G and M, and irregular \\(5\\)-sided pentagons like K and L).",
+          "hint": "A pentagon is any closed \\(2\\text{D}\\) shape with exactly \\(5\\) straight sides and \\(5\\) corners (including both regular and irregular \\(5\\)-sided polygons).",
           "keyPoints": [
             {
               "text": "which of the shapes are pentagons",
-              "note": "Count the straight sides on every polygon—don't forget irregular 5-sided shapes (K and L) as well as regular pentagons (G and M)."
+              "note": "Count the straight sides on every polygon—include both regular pentagons (5 equal sides) and irregular pentagons (any closed shape with 5 straight sides)."
             }
           ],
           "solution": "Shapes G and M are regular pentagons (\\(5\\) equal sides) and shapes K and L are irregular pentagons (\\(5\\) straight sides), so the pentagons are G, K, L, M.",
@@ -332,7 +332,7 @@
           "keyPoints": [
             {
               "text": "which of the shapes is a hexagon",
-              "note": "Count the straight sides: H has 6 sides (hexagon), whereas G, K, L, M have 5 sides (pentagons) and J has 8 sides (octagon)."
+              "note": "Count the straight sides of each polygon and find the shape that has 6 straight sides."
             }
           ],
           "solution": "Shape H has \\(6\\) straight sides and \\(6\\) corners, so H is a hexagon.",

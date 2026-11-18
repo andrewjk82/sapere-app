@@ -23,11 +23,11 @@
             "\\(20\\text{ minutes}\\)"
           ],
           "answer": 0,
-          "hint": "Count how many number spaces the minute hand moves from \\(12\\) to \\(1\\) (\\(1\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(12\\) to \\(1\\)",
-              "note": "Moving from 12 to 1 is 1 number space(s). Since each space is 5 minutes, multiply 1 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(12\\) to \\(1\\) is \\(1\\) number spaces of \\(5\\) minutes each, which takes \\(1 \\times 5 = 5\\) minutes.",
@@ -84,11 +84,11 @@
             "\\(10\\text{ minutes}\\)"
           ],
           "answer": 3,
-          "hint": "Count how many number spaces the minute hand moves from \\(12\\) to \\(2\\) (\\(2\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(12\\) to \\(2\\)",
-              "note": "Moving from 12 to 2 is 2 number space(s). Since each space is 5 minutes, multiply 2 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(12\\) to \\(2\\) is \\(2\\) number spaces of \\(5\\) minutes each, which takes \\(2 \\times 5 = 10\\) minutes.",
@@ -145,11 +145,11 @@
             "\\(20\\text{ minutes}\\)"
           ],
           "answer": 2,
-          "hint": "Count how many number spaces the minute hand moves from \\(12\\) to \\(3\\) (\\(3\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(12\\) to \\(3\\)",
-              "note": "Moving from 12 to 3 is 3 number space(s). Since each space is 5 minutes, multiply 3 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(12\\) to \\(3\\) is \\(3\\) number spaces of \\(5\\) minutes each, which takes \\(3 \\times 5 = 15\\) minutes.",
@@ -206,11 +206,11 @@
             "\\(15\\text{ minutes}\\)"
           ],
           "answer": 1,
-          "hint": "Count how many number spaces the minute hand moves from \\(12\\) to \\(4\\) (\\(4\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(12\\) to \\(4\\)",
-              "note": "Moving from 12 to 4 is 4 number space(s). Since each space is 5 minutes, multiply 4 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(12\\) to \\(4\\) is \\(4\\) number spaces of \\(5\\) minutes each, which takes \\(4 \\times 5 = 20\\) minutes.",
@@ -267,11 +267,11 @@
             "\\(6\\text{ minutes}\\)"
           ],
           "answer": 0,
-          "hint": "Count how many number spaces the minute hand moves from \\(12\\) to \\(6\\) (\\(6\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(12\\) to \\(6\\)",
-              "note": "Moving from 12 to 6 is 6 number space(s). Since each space is 5 minutes, multiply 6 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(12\\) to \\(6\\) is \\(6\\) number spaces of \\(5\\) minutes each, which takes \\(6 \\times 5 = 30\\) minutes.",
@@ -328,11 +328,11 @@
             "\\(5\\text{ minutes}\\)"
           ],
           "answer": 3,
-          "hint": "Count how many number spaces the minute hand moves from \\(2\\) to \\(3\\) (\\(1\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(2\\) to \\(3\\)",
-              "note": "Moving from 2 to 3 is 1 number space(s). Since each space is 5 minutes, multiply 1 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(2\\) to \\(3\\) is \\(1\\) number spaces of \\(5\\) minutes each, which takes \\(1 \\times 5 = 5\\) minutes.",
@@ -389,11 +389,11 @@
             "\\(15\\text{ minutes}\\)"
           ],
           "answer": 2,
-          "hint": "Count how many number spaces the minute hand moves from \\(4\\) to \\(6\\) (\\(2\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(4\\) to \\(6\\)",
-              "note": "Moving from 4 to 6 is 2 number space(s). Since each space is 5 minutes, multiply 2 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(4\\) to \\(6\\) is \\(2\\) number spaces of \\(5\\) minutes each, which takes \\(2 \\times 5 = 10\\) minutes.",
@@ -450,11 +450,11 @@
             "\\(10\\text{ minutes}\\)"
           ],
           "answer": 1,
-          "hint": "Count how many number spaces the minute hand moves from \\(5\\) to \\(8\\) (\\(3\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(5\\) to \\(8\\)",
-              "note": "Moving from 5 to 8 is 3 number space(s). Since each space is 5 minutes, multiply 3 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(5\\) to \\(8\\) is \\(3\\) number spaces of \\(5\\) minutes each, which takes \\(3 \\times 5 = 15\\) minutes.",
@@ -511,11 +511,11 @@
             "\\(3\\text{ minutes}\\)"
           ],
           "answer": 0,
-          "hint": "Count how many number spaces the minute hand moves from \\(6\\) to \\(9\\) (\\(3\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(6\\) to \\(9\\)",
-              "note": "Moving from 6 to 9 is 3 number space(s). Since each space is 5 minutes, multiply 3 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(6\\) to \\(9\\) is \\(3\\) number spaces of \\(5\\) minutes each, which takes \\(3 \\times 5 = 15\\) minutes.",
@@ -572,11 +572,11 @@
             "\\(20\\text{ minutes}\\)"
           ],
           "answer": 3,
-          "hint": "Count how many number spaces the minute hand moves from \\(8\\) to \\(12\\) (\\(4\\)), then multiply by \\(5\\) minutes per space.",
+          "hint": "Count how many number spaces the minute hand moves clockwise from the first number to the second number, then multiply by \\(5\\) minutes per space.",
           "keyPoints": [
             {
               "text": "move from \\(8\\) to \\(12\\)",
-              "note": "Moving from 8 to 12 is 4 number space(s). Since each space is 5 minutes, multiply 4 × 5."
+              "note": "Count the number of steps between the two clock numbers and multiply by 5 minutes for each step."
             }
           ],
           "solution": "Moving from \\(8\\) to \\(12\\) is \\(4\\) number spaces of \\(5\\) minutes each, which takes \\(4 \\times 5 = 20\\) minutes.",
@@ -1129,7 +1129,7 @@
           "keyPoints": [
             {
               "text": "hour hand to move from one number to the next",
-              "note": "The hour hand takes 1 full hour to move from one number to the next, and 1 hour = 60 minutes."
+              "note": "The hour hand takes 1 full hour to move from one clock number to the next."
             }
           ],
           "solution": "The hour hand moves from one number to the next in \\(1\\) hour, which is \\(60\\text{ minutes}\\).",

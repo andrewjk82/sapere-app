@@ -888,7 +888,7 @@
           "keyPoints": [
             {
               "text": "how is \\(285\\) written on the numeral expander",
-              "note": "In a 3-digit number, the left digit is hundreds (2), the middle digit is tens (8), and the right digit is ones (5)."
+              "note": "In a 3-digit number, the first digit on the left shows hundreds, the middle digit shows tens, and the last digit on the right shows ones."
             }
           ],
           "solution": "\\(285\\) has \\(2\\) hundreds, \\(8\\) tens, and \\(5\\) ones.",
@@ -949,7 +949,7 @@
           "keyPoints": [
             {
               "text": "how is \\(743\\) written on the numeral expander",
-              "note": "In a 3-digit number, the left digit is hundreds (7), the middle digit is tens (4), and the right digit is ones (3)."
+              "note": "In a 3-digit number, the first digit on the left shows hundreds, the middle digit shows tens, and the last digit on the right shows ones."
             }
           ],
           "solution": "\\(743\\) has \\(7\\) hundreds, \\(4\\) tens, and \\(3\\) ones.",
@@ -1010,7 +1010,7 @@
           "keyPoints": [
             {
               "text": "how is \\(854\\) written on the numeral expander",
-              "note": "In a 3-digit number, the left digit is hundreds (8), the middle digit is tens (5), and the right digit is ones (4)."
+              "note": "In a 3-digit number, the first digit on the left shows hundreds, the middle digit shows tens, and the last digit on the right shows ones."
             }
           ],
           "solution": "\\(854\\) has \\(8\\) hundreds, \\(5\\) tens, and \\(4\\) ones.",
@@ -1071,7 +1071,7 @@
           "keyPoints": [
             {
               "text": "how is \\(999\\) written on the numeral expander",
-              "note": "In a 3-digit number, the left digit is hundreds (9), the middle digit is tens (9), and the right digit is ones (9)."
+              "note": "In a 3-digit number, the first digit on the left shows hundreds, the middle digit shows tens, and the last digit on the right shows ones."
             }
           ],
           "solution": "\\(999\\) has \\(9\\) hundreds, \\(9\\) tens, and \\(9\\) ones.",
@@ -1132,7 +1132,7 @@
           "keyPoints": [
             {
               "text": "how is \\(870\\) written on the numeral expander",
-              "note": "In a 3-digit number, the left digit is hundreds (8), the middle digit is tens (7), and the right digit is ones (0)."
+              "note": "In a 3-digit number, the first digit on the left shows hundreds, the middle digit shows tens, and the last digit on the right shows ones."
             }
           ],
           "solution": "\\(870\\) has \\(8\\) hundreds, \\(7\\) tens, and \\(0\\) ones.",
@@ -1193,7 +1193,7 @@
           "keyPoints": [
             {
               "text": "how is \\(809\\) written on the numeral expander",
-              "note": "In a 3-digit number, the left digit is hundreds (8), the middle digit is tens (0), and the right digit is ones (9)."
+              "note": "In a 3-digit number, the first digit on the left shows hundreds, the middle digit shows tens, and the last digit on the right shows ones."
             }
           ],
           "solution": "\\(809\\) has \\(8\\) hundreds, \\(0\\) tens, and \\(9\\) ones.",
@@ -1250,11 +1250,11 @@
             "\\(300 + 6 + 3\\)"
           ],
           "answer": 0,
-          "hint": "Write the value of the hundreds digit (\\(300\\)), the tens digit (\\(60\\)), and the ones digit (\\(3\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(363 = \\square + \\square + \\square\\)",
-              "note": "Partition 363 into its place values: 300 (hundreds) + 60 (tens) + 3 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(363\\) by place value gives \\(363 = 300 + 60 + 3\\).",
@@ -1311,11 +1311,11 @@
             "\\(700 + 20 + 5\\)"
           ],
           "answer": 3,
-          "hint": "Write the value of the hundreds digit (\\(700\\)), the tens digit (\\(20\\)), and the ones digit (\\(5\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(725 = \\square + \\square + \\square\\)",
-              "note": "Partition 725 into its place values: 700 (hundreds) + 20 (tens) + 5 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(725\\) by place value gives \\(725 = 700 + 20 + 5\\).",
@@ -1372,11 +1372,11 @@
             "\\(6 + 9 + 4\\)"
           ],
           "answer": 2,
-          "hint": "Write the value of the hundreds digit (\\(600\\)), the tens digit (\\(90\\)), and the ones digit (\\(4\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(694 = \\square + \\square + \\square\\)",
-              "note": "Partition 694 into its place values: 600 (hundreds) + 90 (tens) + 4 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(694\\) by place value gives \\(694 = 600 + 90 + 4\\).",
@@ -1433,11 +1433,11 @@
             "\\(800 + 60 + 5\\)"
           ],
           "answer": 1,
-          "hint": "Write the value of the hundreds digit (\\(800\\)), the tens digit (\\(50\\)), and the ones digit (\\(6\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(856 = \\square + \\square + \\square\\)",
-              "note": "Partition 856 into its place values: 800 (hundreds) + 50 (tens) + 6 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(856\\) by place value gives \\(856 = 800 + 50 + 6\\).",
@@ -1494,11 +1494,11 @@
             "\\(700 + 9 + 7\\)"
           ],
           "answer": 0,
-          "hint": "Write the value of the hundreds digit (\\(700\\)), the tens digit (\\(90\\)), and the ones digit (\\(7\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(797 = \\square + \\square + \\square\\)",
-              "note": "Partition 797 into its place values: 700 (hundreds) + 90 (tens) + 7 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(797\\) by place value gives \\(797 = 700 + 90 + 7\\).",
@@ -1555,11 +1555,11 @@
             "\\(300 + 40 + 7\\)"
           ],
           "answer": 3,
-          "hint": "Write the value of the hundreds digit (\\(300\\)), the tens digit (\\(40\\)), and the ones digit (\\(7\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(347 = \\square + \\square + \\square\\)",
-              "note": "Partition 347 into its place values: 300 (hundreds) + 40 (tens) + 7 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(347\\) by place value gives \\(347 = 300 + 40 + 7\\).",
@@ -1616,11 +1616,11 @@
             "\\(2 + 9 + 6\\)"
           ],
           "answer": 2,
-          "hint": "Write the value of the hundreds digit (\\(200\\)), the tens digit (\\(90\\)), and the ones digit (\\(6\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(296 = \\square + \\square + \\square\\)",
-              "note": "Partition 296 into its place values: 200 (hundreds) + 90 (tens) + 6 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(296\\) by place value gives \\(296 = 200 + 90 + 6\\).",
@@ -1677,11 +1677,11 @@
             "\\(300 + 9 + 0\\)"
           ],
           "answer": 1,
-          "hint": "Write the value of the hundreds digit (\\(300\\)), the tens digit (\\(90\\)), and the ones digit (\\(0\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(390 = \\square + \\square + \\square\\)",
-              "note": "Partition 390 into its place values: 300 (hundreds) + 90 (tens) + 0 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(390\\) by place value gives \\(390 = 300 + 90 + 0\\).",
@@ -1738,11 +1738,11 @@
             "\\(400 + 0 + 3\\)"
           ],
           "answer": 0,
-          "hint": "Write the value of the hundreds digit (\\(400\\)), the tens digit (\\(70\\)), and the ones digit (\\(0\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(470 = \\square + \\square + \\square\\)",
-              "note": "Partition 470 into its place values: 400 (hundreds) + 70 (tens) + 0 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(470\\) by place value gives \\(470 = 400 + 70 + 0\\).",
@@ -1799,11 +1799,11 @@
             "\\(500 + 0 + 8\\)"
           ],
           "answer": 3,
-          "hint": "Write the value of the hundreds digit (\\(500\\)), the tens digit (\\(0\\)), and the ones digit (\\(8\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(508 = \\square + \\square + \\square\\)",
-              "note": "Partition 508 into its place values: 500 (hundreds) + 0 (tens) + 8 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(508\\) by place value gives \\(508 = 500 + 0 + 8\\).",
@@ -1860,11 +1860,11 @@
             "\\(6 + 0 + 9\\)"
           ],
           "answer": 2,
-          "hint": "Write the value of the hundreds digit (\\(600\\)), the tens digit (\\(0\\)), and the ones digit (\\(9\\)).",
+          "hint": "Partition the 3-digit number into the value of its hundreds digit, its tens digit, and its ones digit.",
           "keyPoints": [
             {
               "text": "\\(609 = \\square + \\square + \\square\\)",
-              "note": "Partition 609 into its place values: 600 (hundreds) + 0 (tens) + 9 (ones)."
+              "note": "Write the value of the hundreds digit (in hundreds), the tens digit (in tens), and the ones digit."
             }
           ],
           "solution": "Expanding \\(609\\) by place value gives \\(609 = 600 + 0 + 9\\).",
@@ -1932,7 +1932,7 @@
           "keyPoints": [
             {
               "text": "compares \\(45\\) and \\(63\\)",
-              "note": "Since 45 is less than 63, use the < symbol (45 < 63)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(45\\) is less than \\(63\\), the true number sentence is \\(45 < 63\\).",
@@ -1993,7 +1993,7 @@
           "keyPoints": [
             {
               "text": "compares \\(72\\) and \\(51\\)",
-              "note": "Since 72 is greater than 51, use the > symbol (72 > 51)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(72\\) is greater than \\(51\\), the true number sentence is \\(72 > 51\\).",
@@ -2054,7 +2054,7 @@
           "keyPoints": [
             {
               "text": "compares \\(86\\) and \\(49\\)",
-              "note": "Since 86 is greater than 49, use the > symbol (86 > 49)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(86\\) is greater than \\(49\\), the true number sentence is \\(86 > 49\\).",
@@ -2115,7 +2115,7 @@
           "keyPoints": [
             {
               "text": "compares \\(37\\) and \\(80\\)",
-              "note": "Since 37 is less than 80, use the < symbol (37 < 80)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(37\\) is less than \\(80\\), the true number sentence is \\(37 < 80\\).",
@@ -2176,7 +2176,7 @@
           "keyPoints": [
             {
               "text": "compares \\(8\\) and \\(81\\)",
-              "note": "Since 8 is less than 81, use the < symbol (8 < 81)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(8\\) is less than \\(81\\), the true number sentence is \\(8 < 81\\).",
@@ -2237,7 +2237,7 @@
           "keyPoints": [
             {
               "text": "compares \\(21\\) and \\(45\\)",
-              "note": "Since 21 is less than 45, use the < symbol (21 < 45)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(21\\) is less than \\(45\\), the true number sentence is \\(21 < 45\\).",
@@ -2298,7 +2298,7 @@
           "keyPoints": [
             {
               "text": "compares \\(89\\) and \\(53\\)",
-              "note": "Since 89 is greater than 53, use the > symbol (89 > 53)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(89\\) is greater than \\(53\\), the true number sentence is \\(89 > 53\\).",
@@ -2359,7 +2359,7 @@
           "keyPoints": [
             {
               "text": "compares \\(153\\) and \\(298\\)",
-              "note": "Since 153 is less than 298, use the < symbol (153 < 298)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(153\\) is less than \\(298\\), the true number sentence is \\(153 < 298\\).",
@@ -2420,7 +2420,7 @@
           "keyPoints": [
             {
               "text": "compares \\(504\\) and \\(376\\)",
-              "note": "Since 504 is greater than 376, use the > symbol (504 > 376)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(504\\) is greater than \\(376\\), the true number sentence is \\(504 > 376\\).",
@@ -2481,7 +2481,7 @@
           "keyPoints": [
             {
               "text": "compares \\(900\\) and \\(899\\)",
-              "note": "Since 900 is greater than 899, use the > symbol (900 > 899)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(900\\) is greater than \\(899\\), the true number sentence is \\(900 > 899\\).",
@@ -2542,7 +2542,7 @@
           "keyPoints": [
             {
               "text": "compares \\(401\\) and \\(921\\)",
-              "note": "Since 401 is less than 921, use the < symbol (401 < 921)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(401\\) is less than \\(921\\), the true number sentence is \\(401 < 921\\).",
@@ -2603,7 +2603,7 @@
           "keyPoints": [
             {
               "text": "compares \\(569\\) and \\(385\\)",
-              "note": "Since 569 is greater than 385, use the > symbol (569 > 385)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(569\\) is greater than \\(385\\), the true number sentence is \\(569 > 385\\).",
@@ -2664,7 +2664,7 @@
           "keyPoints": [
             {
               "text": "compares \\(216\\) and \\(621\\)",
-              "note": "Since 216 is less than 621, use the < symbol (216 < 621)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(216\\) is less than \\(621\\), the true number sentence is \\(216 < 621\\).",
@@ -2725,7 +2725,7 @@
           "keyPoints": [
             {
               "text": "compares \\(308\\) and \\(925\\)",
-              "note": "Since 308 is less than 925, use the < symbol (308 < 925)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(308\\) is less than \\(925\\), the true number sentence is \\(308 < 925\\).",
@@ -2786,7 +2786,7 @@
           "keyPoints": [
             {
               "text": "compares \\(864\\) and \\(67\\)",
-              "note": "Since 864 is greater than 67, use the > symbol (864 > 67)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(864\\) is greater than \\(67\\), the true number sentence is \\(864 > 67\\).",
@@ -2847,7 +2847,7 @@
           "keyPoints": [
             {
               "text": "compares \\(67\\) and \\(325\\)",
-              "note": "Since 67 is less than 325, use the < symbol (67 < 325)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(67\\) is less than \\(325\\), the true number sentence is \\(67 < 325\\).",
@@ -2908,7 +2908,7 @@
           "keyPoints": [
             {
               "text": "compares \\(63\\) and \\(9\\)",
-              "note": "Since 63 is greater than 9, use the > symbol (63 > 9)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(63\\) is greater than \\(9\\), the true number sentence is \\(63 > 9\\).",
@@ -2969,7 +2969,7 @@
           "keyPoints": [
             {
               "text": "compares \\(504\\) and \\(405\\)",
-              "note": "Since 504 is greater than 405, use the > symbol (504 > 405)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(504\\) is greater than \\(405\\), the true number sentence is \\(504 > 405\\).",
@@ -3030,7 +3030,7 @@
           "keyPoints": [
             {
               "text": "compares \\(327\\) and \\(723\\)",
-              "note": "Since 327 is less than 723, use the < symbol (327 < 723)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(327\\) is less than \\(723\\), the true number sentence is \\(327 < 723\\).",
@@ -3091,7 +3091,7 @@
           "keyPoints": [
             {
               "text": "compares \\(528\\) and \\(347\\)",
-              "note": "Since 528 is greater than 347, use the > symbol (528 > 347)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(528\\) is greater than \\(347\\), the true number sentence is \\(528 > 347\\).",
@@ -3152,7 +3152,7 @@
           "keyPoints": [
             {
               "text": "compares \\(999\\) and \\(100\\)",
-              "note": "Since 999 is greater than 100, use the > symbol (999 > 100)."
+              "note": "Compare the two numbers from the highest place value; the open mouth of > or < always faces the larger number."
             }
           ],
           "solution": "Since \\(999\\) is greater than \\(100\\), the true number sentence is \\(999 > 100\\).",
@@ -3220,7 +3220,7 @@
           "keyPoints": [
             {
               "text": "closest \\(10\\) that each ball would roll to",
-              "note": "A ball on the hill rolls down the slope away from the peak (5) into the nearest ten valley (10)."
+              "note": "A ball on the hill rolls down the slope away from the peak (5, 15, or 25) into the nearest ten valley at the bottom of that slope."
             }
           ],
           "solution": "Ball \\(6\\) sits on the slope going down to \\(10\\), so the closest \\(10\\) is \\(10\\).",
@@ -3281,7 +3281,7 @@
           "keyPoints": [
             {
               "text": "closest \\(10\\) that each ball would roll to",
-              "note": "A ball on the hill rolls down the slope away from the peak (15) into the nearest ten valley (10)."
+              "note": "A ball on the hill rolls down the slope away from the peak (5, 15, or 25) into the nearest ten valley at the bottom of that slope."
             }
           ],
           "solution": "Ball \\(13\\) sits on the slope going down to \\(10\\), so the closest \\(10\\) is \\(10\\).",
@@ -3342,7 +3342,7 @@
           "keyPoints": [
             {
               "text": "closest \\(10\\) that each ball would roll to",
-              "note": "A ball on the hill rolls down the slope away from the peak (15) into the nearest ten valley (20)."
+              "note": "A ball on the hill rolls down the slope away from the peak (5, 15, or 25) into the nearest ten valley at the bottom of that slope."
             }
           ],
           "solution": "Ball \\(17\\) sits on the slope going down to \\(20\\), so the closest \\(10\\) is \\(20\\).",
@@ -3403,7 +3403,7 @@
           "keyPoints": [
             {
               "text": "closest \\(10\\) that each ball would roll to",
-              "note": "A ball on the hill rolls down the slope away from the peak (25) into the nearest ten valley (20)."
+              "note": "A ball on the hill rolls down the slope away from the peak (5, 15, or 25) into the nearest ten valley at the bottom of that slope."
             }
           ],
           "solution": "Ball \\(24\\) sits on the slope going down to \\(20\\), so the closest \\(10\\) is \\(20\\).",
@@ -3460,11 +3460,11 @@
             "\\(0\\)"
           ],
           "answer": 0,
-          "hint": "Find which two multiples of \\(10\\) the number \\(19\\) lies between (\\(10\\) and \\(20\\)), then check the ones digit (\\(9\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(19\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (9): if it is 1, 2, 3, or 4, round down to 10; if it is 5, 6, 7, 8, or 9, round up to 20."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(19\\) lies between \\(10\\) and \\(20\\). Since its ones digit is \\(9\\), \\(19\\) rounds to \\(20\\).",
@@ -3521,11 +3521,11 @@
             "\\(20\\)"
           ],
           "answer": 3,
-          "hint": "Find which two multiples of \\(10\\) the number \\(23\\) lies between (\\(20\\) and \\(30\\)), then check the ones digit (\\(3\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(23\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (3): if it is 1, 2, 3, or 4, round down to 20; if it is 5, 6, 7, 8, or 9, round up to 30."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(23\\) lies between \\(20\\) and \\(30\\). Since its ones digit is \\(3\\), \\(23\\) rounds to \\(20\\).",
@@ -3582,11 +3582,11 @@
             "\\(40\\)"
           ],
           "answer": 3,
-          "hint": "Find which two multiples of \\(10\\) the number \\(38\\) lies between (\\(30\\) and \\(40\\)), then check the ones digit (\\(8\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(38\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (8): if it is 1, 2, 3, or 4, round down to 30; if it is 5, 6, 7, 8, or 9, round up to 40."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(38\\) lies between \\(30\\) and \\(40\\). Since its ones digit is \\(8\\), \\(38\\) rounds to \\(40\\).",
@@ -3643,11 +3643,11 @@
             "\\(40\\)"
           ],
           "answer": 0,
-          "hint": "Find which two multiples of \\(10\\) the number \\(52\\) lies between (\\(50\\) and \\(60\\)), then check the ones digit (\\(2\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(52\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (2): if it is 1, 2, 3, or 4, round down to 50; if it is 5, 6, 7, 8, or 9, round up to 60."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(52\\) lies between \\(50\\) and \\(60\\). Since its ones digit is \\(2\\), \\(52\\) rounds to \\(50\\).",
@@ -3704,11 +3704,11 @@
             "\\(10\\)"
           ],
           "answer": 0,
-          "hint": "Find which two multiples of \\(10\\) the number \\(27\\) lies between (\\(20\\) and \\(30\\)), then check the ones digit (\\(7\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(27\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (7): if it is 1, 2, 3, or 4, round down to 20; if it is 5, 6, 7, 8, or 9, round up to 30."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(27\\) lies between \\(20\\) and \\(30\\). Since its ones digit is \\(7\\), \\(27\\) rounds to \\(30\\).",
@@ -3765,11 +3765,11 @@
             "\\(80\\)"
           ],
           "answer": 1,
-          "hint": "Find which two multiples of \\(10\\) the number \\(73\\) lies between (\\(70\\) and \\(80\\)), then check the ones digit (\\(3\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(73\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (3): if it is 1, 2, 3, or 4, round down to 70; if it is 5, 6, 7, 8, or 9, round up to 80."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(73\\) lies between \\(70\\) and \\(80\\). Since its ones digit is \\(3\\), \\(73\\) rounds to \\(70\\).",
@@ -3826,11 +3826,11 @@
             "\\(30\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(35\\) lies between (\\(30\\) and \\(40\\)), then check the ones digit (\\(5\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(35\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (5): if it is 1, 2, 3, or 4, round down to 30; if it is 5, 6, 7, 8, or 9, round up to 40."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(35\\) lies between \\(30\\) and \\(40\\). Since its ones digit is \\(5\\), \\(35\\) rounds to \\(40\\).",
@@ -3887,11 +3887,11 @@
             "\\(30\\)"
           ],
           "answer": 0,
-          "hint": "Find which two multiples of \\(10\\) the number \\(44\\) lies between (\\(40\\) and \\(50\\)), then check the ones digit (\\(4\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(44\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (4): if it is 1, 2, 3, or 4, round down to 40; if it is 5, 6, 7, 8, or 9, round up to 50."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(44\\) lies between \\(40\\) and \\(50\\). Since its ones digit is \\(4\\), \\(44\\) rounds to \\(40\\).",
@@ -3948,11 +3948,11 @@
             "\\(80\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(89\\) lies between (\\(80\\) and \\(90\\)), then check the ones digit (\\(9\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(89\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (9): if it is 1, 2, 3, or 4, round down to 80; if it is 5, 6, 7, 8, or 9, round up to 90."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(89\\) lies between \\(80\\) and \\(90\\). Since its ones digit is \\(9\\), \\(89\\) rounds to \\(90\\).",
@@ -4009,11 +4009,11 @@
             "\\(100\\)"
           ],
           "answer": 3,
-          "hint": "Find which two multiples of \\(10\\) the number \\(99\\) lies between (\\(90\\) and \\(100\\)), then check the ones digit (\\(9\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(99\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (9): if it is 1, 2, 3, or 4, round down to 90; if it is 5, 6, 7, 8, or 9, round up to 100."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(99\\) lies between \\(90\\) and \\(100\\). Since its ones digit is \\(9\\), \\(99\\) rounds to \\(100\\).",
@@ -4070,11 +4070,11 @@
             "\\(120\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(129\\) lies between (\\(120\\) and \\(130\\)), then check the ones digit (\\(9\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(129\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (9): if it is 1, 2, 3, or 4, round down to 120; if it is 5, 6, 7, 8, or 9, round up to 130."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(129\\) lies between \\(120\\) and \\(130\\). Since its ones digit is \\(9\\), \\(129\\) rounds to \\(130\\).",
@@ -4131,11 +4131,11 @@
             "\\(120\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(128\\) lies between (\\(120\\) and \\(130\\)), then check the ones digit (\\(8\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(128\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (8): if it is 1, 2, 3, or 4, round down to 120; if it is 5, 6, 7, 8, or 9, round up to 130."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(128\\) lies between \\(120\\) and \\(130\\). Since its ones digit is \\(8\\), \\(128\\) rounds to \\(130\\).",
@@ -4192,11 +4192,11 @@
             "\\(620\\)"
           ],
           "answer": 0,
-          "hint": "Find which two multiples of \\(10\\) the number \\(637\\) lies between (\\(630\\) and \\(640\\)), then check the ones digit (\\(7\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(637\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (7): if it is 1, 2, 3, or 4, round down to 630; if it is 5, 6, 7, 8, or 9, round up to 640."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(637\\) lies between \\(630\\) and \\(640\\). Since its ones digit is \\(7\\), \\(637\\) rounds to \\(640\\).",
@@ -4253,11 +4253,11 @@
             "\\(260\\)"
           ],
           "answer": 1,
-          "hint": "Find which two multiples of \\(10\\) the number \\(251\\) lies between (\\(250\\) and \\(260\\)), then check the ones digit (\\(1\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(251\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (1): if it is 1, 2, 3, or 4, round down to 250; if it is 5, 6, 7, 8, or 9, round up to 260."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(251\\) lies between \\(250\\) and \\(260\\). Since its ones digit is \\(1\\), \\(251\\) rounds to \\(250\\).",
@@ -4314,11 +4314,11 @@
             "\\(230\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(221\\) lies between (\\(220\\) and \\(230\\)), then check the ones digit (\\(1\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(221\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (1): if it is 1, 2, 3, or 4, round down to 220; if it is 5, 6, 7, 8, or 9, round up to 230."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(221\\) lies between \\(220\\) and \\(230\\). Since its ones digit is \\(1\\), \\(221\\) rounds to \\(220\\).",
@@ -4375,11 +4375,11 @@
             "\\(380\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(372\\) lies between (\\(370\\) and \\(380\\)), then check the ones digit (\\(2\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(372\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (2): if it is 1, 2, 3, or 4, round down to 370; if it is 5, 6, 7, 8, or 9, round up to 380."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(372\\) lies between \\(370\\) and \\(380\\). Since its ones digit is \\(2\\), \\(372\\) rounds to \\(370\\).",
@@ -4436,11 +4436,11 @@
             "\\(340\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(331\\) lies between (\\(330\\) and \\(340\\)), then check the ones digit (\\(1\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(331\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (1): if it is 1, 2, 3, or 4, round down to 330; if it is 5, 6, 7, 8, or 9, round up to 340."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(331\\) lies between \\(330\\) and \\(340\\). Since its ones digit is \\(1\\), \\(331\\) rounds to \\(330\\).",
@@ -4497,11 +4497,11 @@
             "\\(550\\)"
           ],
           "answer": 3,
-          "hint": "Find which two multiples of \\(10\\) the number \\(549\\) lies between (\\(540\\) and \\(550\\)), then check the ones digit (\\(9\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(549\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (9): if it is 1, 2, 3, or 4, round down to 540; if it is 5, 6, 7, 8, or 9, round up to 550."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(549\\) lies between \\(540\\) and \\(550\\). Since its ones digit is \\(9\\), \\(549\\) rounds to \\(550\\).",
@@ -4558,11 +4558,11 @@
             "\\(780\\)"
           ],
           "answer": 2,
-          "hint": "Find which two multiples of \\(10\\) the number \\(789\\) lies between (\\(780\\) and \\(790\\)), then check the ones digit (\\(9\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(789\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (9): if it is 1, 2, 3, or 4, round down to 780; if it is 5, 6, 7, 8, or 9, round up to 790."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(789\\) lies between \\(780\\) and \\(790\\). Since its ones digit is \\(9\\), \\(789\\) rounds to \\(790\\).",
@@ -4619,11 +4619,11 @@
             "\\(140\\)"
           ],
           "answer": 3,
-          "hint": "Find which two multiples of \\(10\\) the number \\(135\\) lies between (\\(130\\) and \\(140\\)), then check the ones digit (\\(5\\)).",
+          "hint": "Look at the ones digit of the number: if the ones digit is \\(1, 2, 3,\\) or \\(4\\), round down to the lower ten; if it is \\(5, 6, 7, 8,\\) or \\(9\\), round up to the next ten.",
           "keyPoints": [
             {
               "text": "\\(135\\) rounded to the nearest \\(10\\)",
-              "note": "Check the ones digit (5): if it is 1, 2, 3, or 4, round down to 130; if it is 5, 6, 7, 8, or 9, round up to 140."
+              "note": "Check the ones digit: 4 or less rounds down to the lower multiple of 10, while 5 or more rounds up to the next multiple of 10."
             }
           ],
           "solution": "\\(135\\) lies between \\(130\\) and \\(140\\). Since its ones digit is \\(5\\), \\(135\\) rounds to \\(140\\).",
@@ -4681,7 +4681,7 @@
           "keyPoints": [
             {
               "text": "round them to the nearest \\(10\\)",
-              "note": "45 ends in 5 so it rounds up to 50; 74 ends in 4 so it rounds down to 70; 168 ends in 8 so it rounds up to 170."
+              "note": "Check each number's ones digit: 5 or more rounds up to the next ten, and 4 or less rounds down to the lower ten."
             }
           ],
           "solution": "\\(45\\) rounds up to \\(50\\), \\(74\\) rounds down to \\(70\\), and \\(168\\) rounds up to \\(170\\).",
