@@ -188,8 +188,8 @@ Standing rule for EVERY question you add or edit, never needs to be repeated. If
 book page) has a figure, graph, table or diagram, store it as a **vector SVG** (`figure.svg`, `steps[].figure`),
 never a raster image, and make it **clean and good-looking**:
 
-- Reproduce the original exactly (shapes, labels, proportions). Extract outlines from the page with OpenCV
-  contours (black ink → even-odd `<path>`, colour fills → polygons) or hand-draw the geometry; do not embed `<image>`.
+- Reproduce the original exactly (shapes, labels, proportions) by HAND-DRAWING the geometry as SVG (`<line>/<path>/<polyline>/<text>`,
+  graphs plotted from a function). NEVER ship auto-traced/OpenCV-contour output (`fill-rule="evenodd"` ink blobs) or `<image>` — see the 11-18 rule below.
 - Tidy rendering: non-square `viewBox` sized to the content, `width="100%" height="auto"`, `max-width` >= 312px,
   crisp strokes, no white label boxes sitting on lines, labels never overlapping lines or other labels, no scan noise.
 - Question figure shows only what the question GIVES (never the answer — see the answer-leak rule above).
@@ -212,6 +212,10 @@ that were not between the two segments; `wghs2015-y10`/`abbotsleigh2024` figures
   radius beyond the arc). Check by code that the label box clears both segments by >1px (assert), then
   render and look. Bearings: arc clockwise from the north line. Side-length labels sit outside the side
   (inside the triangle when a north line or arcs occupy the outside).
+- **Trace-ban (2026-11-18, Barker 2023 incident):** the user asked for clean SVG and traced blobs (pixel-noisy axes, dotted curves, ragged text) were shipped anyway.
+  Before committing ANY figure: render it (Playwright), look at it, and run `grep -c 'fill-rule=\\"evenodd' content/chapters/<file>.json` on the file you touched — must be 0
+  for your new ids. Graphs = plot from a function with grid, ticks, axis arrows; geometry = coordinates computed from the real lengths/angles.
+  Applies to question figures, option-graph figures AND step figures. If you cannot hand-draw one, say so — do not trace it.
 - `width="100%"` + `style="max-width:Npx"`, text with a white halo, no label overlapping a line or another label.
 
 ## Question DNA reasoning-blueprint authoring
