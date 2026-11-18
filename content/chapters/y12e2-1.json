@@ -1215,6 +1215,105 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e2-q12ai",
+          "type": "review",
+          "stem": "Consider the equation \\(z^2-2(1+2i)z+(1+i)=0\\). Show that \\(\\left(z-(1+2i)\\right)^2=-4+3i\\).",
+          "difficulty": "medium",
+          "answer": "Complete the square: \\(z^2-2(1+2i)z=\\left(z-(1+2i)\\right)^2-(1+2i)^2\\), so \\(\\left(z-(1+2i)\\right)^2=(1+2i)^2-(1+i)=1+4i-4-1-i=-4+3i\\). ∎",
+          "manual": true,
+          "hint": "Complete the square on the \\(z\\) terms, treating \\(1+2i\\) as the number to halve.",
+          "steps": [
+            {
+              "explain": "Complete the square: \\(z^2-2bz=(z-b)^2-b^2\\) with \\(b=1+2i\\).",
+              "work": "\\(z^2-2(1+2i)z=\\left(z-(1+2i)\\right)^2-(1+2i)^2\\)"
+            },
+            {
+              "explain": "Substitute into the equation.",
+              "work": "\\(\\left(z-(1+2i)\\right)^2-(1+2i)^2+(1+i)=0\\)"
+            },
+            {
+              "explain": "Move the constants to the right side.",
+              "work": "\\(\\left(z-(1+2i)\\right)^2=(1+2i)^2-(1+i)\\)"
+            },
+            {
+              "explain": "Expand \\((1+2i)^2=1+4i+4i^2=-3+4i\\).",
+              "work": "\\(=(-3+4i)-1-i=-4+3i\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Complete the square, then simplify the constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q12aii",
+          "type": "mc",
+          "stem": "Consider the equation \\(z^2-2(1+2i)z+(1+i)=0\\). Hence solve \\(z^2-2(1+2i)z+(1+i)=0\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(z=\\left(1+\\dfrac{\\sqrt{2}}{2}\\right)+\\left(2+\\dfrac{3\\sqrt{2}}{2}\\right)i\\ \\ \\text{or}\\ \\ z=\\left(1-\\dfrac{\\sqrt{2}}{2}\\right)+\\left(2-\\dfrac{3\\sqrt{2}}{2}\\right)i\\)",
+            "\\(z=\\left(1+\\dfrac{\\sqrt{2}}{2}\\right)+\\left(2-\\dfrac{3\\sqrt{2}}{2}\\right)i\\ \\ \\text{or}\\ \\ z=\\left(1-\\dfrac{\\sqrt{2}}{2}\\right)+\\left(2+\\dfrac{3\\sqrt{2}}{2}\\right)i\\)",
+            "\\(z=1+2i\\pm(-4+3i)\\)",
+            "\\(z=1+2i\\pm(2+i)\\)"
+          ],
+          "answer": 0,
+          "hint": "From (i): \\(z-(1+2i)=\\pm\\sqrt{-4+3i}\\). Find the square root \\(a+bi\\) of \\(-4+3i\\) by squaring: \\(a^2-b^2=-4\\) and \\(2ab=3\\).",
+          "steps": [
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "\\(z=(1+2i)\\pm\\sqrt{-4+3i}\\)"
+            },
+            {
+              "explain": "Let \\(\\sqrt{-4+3i}=a+bi\\) and square.",
+              "work": "\\(a^2-b^2=-4\\quad\\text{(real parts)},\\qquad2ab=3\\quad\\text{(imaginary parts)}\\)"
+            },
+            {
+              "explain": "Use the modulus: \\(a^2+b^2=|-4+3i|=\\sqrt{16+9}=5\\).",
+              "work": "\\(a^2+b^2=5\\)"
+            },
+            {
+              "explain": "Add and subtract the equations \\(a^2-b^2=-4\\) and \\(a^2+b^2=5\\).",
+              "work": "\\(2a^2=1\\Rightarrow a^2=\\dfrac{1}{2},\\qquad2b^2=9\\Rightarrow b^2=\\dfrac{9}{2}\\)"
+            },
+            {
+              "explain": "Signs: \\(2ab=3>0\\) means \\(a\\) and \\(b\\) have the SAME sign.",
+              "work": "\\(a=\\pm\\dfrac{1}{\\sqrt{2}},\\ b=\\pm\\dfrac{3}{\\sqrt{2}}\\;\\Rightarrow\\;\\sqrt{-4+3i}=\\pm\\dfrac{\\sqrt{2}}{2}(1+3i)\\)"
+            },
+            {
+              "explain": "Add to \\(1+2i\\).",
+              "work": "\\(z=1+2i\\pm\\dfrac{\\sqrt{2}}{2}(1+3i)\\), i.e. the two solutions in the first option → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(\\left[\\dfrac{\\sqrt{2}}{2}(1+3i)\\right]^2=\\dfrac{1}{2}(1+6i-9)=-4+3i\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence solve",
+              "note": "Take the square root of −4 + 3i by equating real and imaginary parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1698,6 +1797,98 @@
             "sourceQuestion": "Section II Q15(b)(iii)",
             "sourceMarks": 2,
             "page": 12
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q1",
+          "type": "mc",
+          "stem": "Let \\(z=1+\\sqrt{3}i\\). What is \\(z\\) in exponential form?",
+          "difficulty": "easy",
+          "options": [
+            "\\(e^{\\frac{i\\pi}{3}}\\)",
+            "\\(e^{\\frac{i\\pi}{6}}\\)",
+            "\\(2e^{\\frac{i\\pi}{3}}\\)",
+            "\\(2e^{\\frac{i\\pi}{6}}\\)"
+          ],
+          "answer": 2,
+          "hint": "Exponential form is \\(z=re^{i\\theta}\\) with \\(r=|z|\\) and \\(\\theta=\\arg z\\). Find the modulus first, then the argument from the quadrant and the ratio of the parts.",
+          "steps": [
+            {
+              "explain": "Modulus.",
+              "work": "\\(r=|z|=\\sqrt{1^2+(\\sqrt{3})^2}=\\sqrt{4}=2\\)"
+            },
+            {
+              "explain": "Argument: \\(z\\) is in quadrant 1, so \\(\\tan\\theta=\\dfrac{\\text{Im}}{\\text{Re}}=\\sqrt{3}\\).",
+              "work": "\\(\\theta=\\dfrac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "Write in exponential form.",
+              "work": "\\(z=2e^{\\frac{i\\pi}{3}}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Why not A? It has modulus 1, but \\(|z|=2\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exponential form",
+              "note": "Modulus first, then the argument."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q11ai",
+          "type": "mc",
+          "stem": "Let \\(z=1+i\\) and \\(w=\\cos\\dfrac{\\pi}{6}+i\\sin\\dfrac{\\pi}{6}\\). Express \\(\\dfrac{w}{z}\\) in polar form. Show all working.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{\\sqrt{2}}\\left(\\cos\\left(-\\dfrac{\\pi}{12}\\right)+i\\sin\\left(-\\dfrac{\\pi}{12}\\right)\\right)\\)",
+            "\\(\\sqrt{2}\\left(\\cos\\dfrac{5\\pi}{12}+i\\sin\\dfrac{5\\pi}{12}\\right)\\)",
+            "\\(\\dfrac{1}{\\sqrt{2}}\\left(\\cos\\dfrac{5\\pi}{12}+i\\sin\\dfrac{5\\pi}{12}\\right)\\)",
+            "\\(\\sqrt{2}\\left(\\cos\\left(-\\dfrac{\\pi}{12}\\right)+i\\sin\\left(-\\dfrac{\\pi}{12}\\right)\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Put \\(z\\) in polar form first (\\(r=\\sqrt{2}\\), \\(\\theta=\\dfrac{\\pi}{4}\\)). For a QUOTIENT: DIVIDE the moduli and SUBTRACT the arguments.",
+          "steps": [
+            {
+              "explain": "Polar form of \\(z=1+i\\).",
+              "work": "\\(|z|=\\sqrt{2},\\quad\\arg z=\\dfrac{\\pi}{4}\\;\\Rightarrow\\;z=\\sqrt{2}\\,\\text{cis}\\dfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Polar form of \\(w\\) (already given).",
+              "work": "\\(|w|=1,\\quad\\arg w=\\dfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Quotient rule: \\(\\left|\\dfrac{w}{z}\\right|=\\dfrac{|w|}{|z|}\\) and \\(\\arg\\dfrac{w}{z}=\\arg w-\\arg z\\).",
+              "work": "\\(\\left|\\dfrac{w}{z}\\right|=\\dfrac{1}{\\sqrt{2}},\\qquad\\arg\\dfrac{w}{z}=\\dfrac{\\pi}{6}-\\dfrac{\\pi}{4}=-\\dfrac{\\pi}{12}\\)"
+            },
+            {
+              "explain": "Write in polar form.",
+              "work": "\\(\\dfrac{w}{z}=\\dfrac{1}{\\sqrt{2}}\\left(\\cos\\left(-\\dfrac{\\pi}{12}\\right)+i\\sin\\left(-\\dfrac{\\pi}{12}\\right)\\right)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "polar form",
+              "note": "Divide the moduli and subtract the arguments."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -2319,6 +2510,62 @@
               ]
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e2-q12d",
+          "type": "mc",
+          "stem": "On the Argand diagram, points \\(A\\) and \\(B\\) correspond to the complex numbers \\(z_1=5+3i\\) and \\(z_2=3-i\\). \\(M\\) is the midpoint of the interval \\(AB\\) and \\(QM\\) is drawn such that it is perpendicular to \\(AB\\) and \\(QM=AM=BM\\). Let \\(Q\\) represent the complex number \\(\\omega\\). Find all possible values of \\(\\omega\\) in the form \\(a+ib\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><clipPath id=\"c13\"><rect x=\"28\" y=\"28\" width=\"384\" height=\"274\"/></clipPath><line x1=\"28\" y1=\"28\" x2=\"28\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.7\" y1=\"28\" x2=\"70.7\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"113.3\" y1=\"28\" x2=\"113.3\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"156\" y1=\"28\" x2=\"156\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.7\" y1=\"28\" x2=\"198.7\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"241.3\" y1=\"28\" x2=\"241.3\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"284\" y1=\"28\" x2=\"284\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"326.7\" y1=\"28\" x2=\"326.7\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"369.3\" y1=\"28\" x2=\"369.3\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"412\" y1=\"28\" x2=\"412\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"302\" x2=\"412\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"262.9\" x2=\"412\" y2=\"262.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"223.7\" x2=\"412\" y2=\"223.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"184.6\" x2=\"412\" y2=\"184.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"145.4\" x2=\"412\" y2=\"145.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"106.3\" x2=\"412\" y2=\"106.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"67.1\" x2=\"412\" y2=\"67.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"28\" x2=\"412\" y2=\"28\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"223.7\" x2=\"412\" y2=\"223.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.7\" y1=\"28\" x2=\"70.7\" y2=\"302\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M419,223.7 l-9,-4.5 v9z\" fill=\"#334155\"/><path d=\"M70.7,21 l-4.5,9 h9z\" fill=\"#334155\"/><g clip-path=\"url(#c13)\"></g><circle cx=\"284\" cy=\"106.3\" r=\"4.6\" fill=\"#1e293b\"/><circle cx=\"198.7\" cy=\"262.9\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"422\" y=\"239.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Re</text><text x=\"80.7\" y=\"20\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Im</text><text x=\"28\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"113.3\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"156\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"198.7\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">3</text><text x=\"241.3\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">4</text><text x=\"284\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">5</text><text x=\"326.7\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">6</text><text x=\"369.3\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">7</text><text x=\"412\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">8</text><text x=\"57.7\" y=\"305.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−2</text><text x=\"57.7\" y=\"266.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"57.7\" y=\"188.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"57.7\" y=\"148.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"57.7\" y=\"109.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">3</text><text x=\"57.7\" y=\"70.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">4</text><text x=\"57.7\" y=\"31.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">5</text><text x=\"298\" y=\"96.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"212.7\" y=\"253.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">B</text><line x1=\"284\" y1=\"106.3\" x2=\"198.7\" y2=\"262.9\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(\\omega=6\\ \\text{or}\\ \\omega=2+2i\\)",
+            "\\(\\omega=6+0i\\ \\text{only}\\)",
+            "\\(\\omega=4+i\\pm(1+2i)\\)",
+            "\\(\\omega=2+2i\\ \\text{only}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(M\\) (the average of \\(z_1\\) and \\(z_2\\)). To get from \\(M\\) to \\(Q\\): rotate the vector \\(\\overrightarrow{MA}\\) (same length as \\(QM\\)) through \\(\\pm90^\\circ\\), i.e. multiply by \\(\\pm i\\).",
+          "steps": [
+            {
+              "explain": "Midpoint.",
+              "work": "\\(M=\\dfrac{z_1+z_2}{2}=\\dfrac{(5+3i)+(3-i)}{2}=4+i\\)"
+            },
+            {
+              "explain": "The vector from \\(M\\) to \\(A\\): \\(z_1-M\\).",
+              "work": "\\(\\overrightarrow{MA}=(5+3i)-(4+i)=1+2i\\)"
+            },
+            {
+              "explain": "\\(QM\\) is perpendicular to \\(AB\\) with the same length as \\(AM\\): rotate \\(\\overrightarrow{MA}\\) by \\(\\pm90^\\circ\\) (multiply by \\(\\pm i\\)) — TWO possible points.",
+              "work": "\\(\\overrightarrow{MQ}=\\pm i(1+2i)=\\pm(i+2i^2)=\\pm(-2+i)\\)"
+            },
+            {
+              "explain": "Add to \\(M\\).",
+              "work": "\\(\\omega=M+\\overrightarrow{MQ}=(4+i)+(-2+i)=2+2i\\quad\\text{or}\\quad(4+i)-(-2+i)=6\\)"
+            },
+            {
+              "explain": "Both are valid.",
+              "work": "\\(\\omega=6\\ \\text{or}\\ \\omega=2+2i\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><clipPath id=\"c12\"><rect x=\"28\" y=\"28\" width=\"384\" height=\"274\"/></clipPath><line x1=\"28\" y1=\"28\" x2=\"28\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.7\" y1=\"28\" x2=\"70.7\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"113.3\" y1=\"28\" x2=\"113.3\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"156\" y1=\"28\" x2=\"156\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"198.7\" y1=\"28\" x2=\"198.7\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"241.3\" y1=\"28\" x2=\"241.3\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"284\" y1=\"28\" x2=\"284\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"326.7\" y1=\"28\" x2=\"326.7\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"369.3\" y1=\"28\" x2=\"369.3\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"412\" y1=\"28\" x2=\"412\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"302\" x2=\"412\" y2=\"302\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"262.9\" x2=\"412\" y2=\"262.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"223.7\" x2=\"412\" y2=\"223.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"184.6\" x2=\"412\" y2=\"184.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"145.4\" x2=\"412\" y2=\"145.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"106.3\" x2=\"412\" y2=\"106.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"67.1\" x2=\"412\" y2=\"67.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"28\" x2=\"412\" y2=\"28\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"223.7\" x2=\"412\" y2=\"223.7\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.7\" y1=\"28\" x2=\"70.7\" y2=\"302\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M419,223.7 l-9,-4.5 v9z\" fill=\"#334155\"/><path d=\"M70.7,21 l-4.5,9 h9z\" fill=\"#334155\"/><g clip-path=\"url(#c12)\"></g><circle cx=\"284\" cy=\"106.3\" r=\"4.6\" fill=\"#1e293b\"/><circle cx=\"198.7\" cy=\"262.9\" r=\"4.6\" fill=\"#1e293b\"/><circle cx=\"241.3\" cy=\"184.6\" r=\"4.6\" fill=\"#d97706\"/><circle cx=\"326.7\" cy=\"223.7\" r=\"4.6\" fill=\"#dc2626\"/><circle cx=\"156\" cy=\"145.4\" r=\"4.6\" fill=\"#dc2626\"/><text x=\"422\" y=\"239.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Re</text><text x=\"80.7\" y=\"20\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Im</text><text x=\"28\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"113.3\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"156\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"198.7\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">3</text><text x=\"241.3\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">4</text><text x=\"284\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">5</text><text x=\"326.7\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">6</text><text x=\"369.3\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">7</text><text x=\"412\" y=\"240.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">8</text><text x=\"57.7\" y=\"305.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−2</text><text x=\"57.7\" y=\"266.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"57.7\" y=\"188.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"57.7\" y=\"148.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"57.7\" y=\"109.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">3</text><text x=\"57.7\" y=\"70.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">4</text><text x=\"57.7\" y=\"31.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">5</text><text x=\"298\" y=\"96.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">A</text><text x=\"212.7\" y=\"253.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">B</text><text x=\"255.3\" y=\"174.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#d97706\">M</text><text x=\"340.7\" y=\"213.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">Q₁</text><text x=\"170\" y=\"135.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">Q₂</text><line x1=\"284\" y1=\"106.3\" x2=\"198.7\" y2=\"262.9\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"326.7\" y1=\"223.7\" x2=\"156\" y2=\"145.4\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find all possible values",
+              "note": "Rotate MA by plus or minus 90 degrees (multiply by plus or minus i)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3306,6 +3553,103 @@
             "sourceQuestion": "Section II Q16(b)",
             "sourceMarks": 3,
             "page": 13
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q10",
+          "type": "mc",
+          "stem": "The locus of \\(z\\) is displayed on the Argand diagram below (the straight line segment from \\(i\\) to \\(1\\), with both end points excluded). Which of the following is the equation of the locus of \\(z\\)?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><clipPath id=\"c10\"><rect x=\"28\" y=\"28\" width=\"304\" height=\"244\"/></clipPath><line x1=\"73.6\" y1=\"28\" x2=\"73.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"149.6\" y1=\"28\" x2=\"149.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"225.6\" y1=\"28\" x2=\"225.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"301.6\" y1=\"28\" x2=\"301.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"233.5\" x2=\"332\" y2=\"233.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"169.3\" x2=\"332\" y2=\"169.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"105.1\" x2=\"332\" y2=\"105.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"40.8\" x2=\"332\" y2=\"40.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"169.3\" x2=\"332\" y2=\"169.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"149.6\" y1=\"28\" x2=\"149.6\" y2=\"272\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M339,169.3 l-9,-4.5 v9z\" fill=\"#334155\"/><path d=\"M149.6,21 l-4.5,9 h9z\" fill=\"#334155\"/><g clip-path=\"url(#c10)\"><polyline points=\"149.6,105.1 149.7,105.1 149.8,105.2 149.9,105.3 149.9,105.3 150,105.4 150.1,105.5 150.2,105.6 150.3,105.6 150.4,105.7 150.4,105.8 150.5,105.8 150.6,105.9 150.7,106 150.8,106.1 150.9,106.1 151,106.2 151,106.3 151.1,106.3 151.2,106.4 151.3,106.5 151.4,106.6 151.5,106.6 151.5,106.7 151.6,106.8 151.7,106.8 151.8,106.9 151.9,107 152,107.1 152,107.1 152.1,107.2 152.2,107.3 152.3,107.3 152.4,107.4 152.5,107.5 152.6,107.5 152.6,107.6 152.7,107.7 152.8,107.8 152.9,107.8 153,107.9 153.1,108 153.1,108 153.2,108.1 153.3,108.2 153.4,108.3 153.5,108.3 153.6,108.4 153.7,108.5 153.7,108.5 153.8,108.6 153.9,108.7 154,108.8 154.1,108.8 154.2,108.9 154.2,109 154.3,109 154.4,109.1 154.5,109.2 154.6,109.3 154.7,109.3 154.8,109.4 154.8,109.5 154.9,109.5 155,109.6 155.1,109.7 155.2,109.8 155.3,109.8 155.3,109.9 155.4,110 155.5,110 155.6,110.1 155.7,110.2 155.8,110.3 155.8,110.3 155.9,110.4 156,110.5 156.1,110.5 156.2,110.6 156.3,110.7 156.4,110.8 156.4,110.8 156.5,110.9 156.6,111 156.7,111 156.8,111.1 156.9,111.2 156.9,111.3 157,111.3 157.1,111.4 157.2,111.5 157.3,111.5 157.4,111.6 157.5,111.7 157.5,111.8 157.6,111.8 157.7,111.9 157.8,112 157.9,112 158,112.1 158,112.2 158.1,112.3 158.2,112.3 158.3,112.4 158.4,112.5 158.5,112.5 158.6,112.6 158.6,112.7 158.7,112.8 158.8,112.8 158.9,112.9 159,113 159.1,113 159.1,113.1 159.2,113.2 159.3,113.3 159.4,113.3 159.5,113.4 159.6,113.5 159.6,113.5 159.7,113.6 159.8,113.7 159.9,113.8 160,113.8 160.1,113.9 160.2,114 160.2,114 160.3,114.1 160.4,114.2 160.5,114.3 160.6,114.3 160.7,114.4 160.7,114.5 160.8,114.5 160.9,114.6 161,114.7 161.1,114.8 161.2,114.8 161.3,114.9 161.3,115 161.4,115 161.5,115.1 161.6,115.2 161.7,115.3 161.8,115.3 161.8,115.4 161.9,115.5 162,115.5 162.1,115.6 162.2,115.7 162.3,115.8 162.4,115.8 162.4,115.9 162.5,116 162.6,116 162.7,116.1 162.8,116.2 162.9,116.3 162.9,116.3 163,116.4 163.1,116.5 163.2,116.5 163.3,116.6 163.4,116.7 163.4,116.8 163.5,116.8 163.6,116.9 163.7,117 163.8,117 163.9,117.1 164,117.2 164,117.3 164.1,117.3 164.2,117.4 164.3,117.5 164.4,117.5 164.5,117.6 164.5,117.7 164.6,117.8 164.7,117.8 164.8,117.9 164.9,118 165,118 165.1,118.1 165.1,118.2 165.2,118.3 165.3,118.3 165.4,118.4 165.5,118.5 165.6,118.5 165.6,118.6 165.7,118.7 165.8,118.8 165.9,118.8 166,118.9 166.1,119 166.2,119 166.2,119.1 166.3,119.2 166.4,119.3 166.5,119.3 166.6,119.4 166.7,119.5 166.7,119.5 166.8,119.6 166.9,119.7 167,119.7 167.1,119.8 167.2,119.9 167.2,120 167.3,120 167.4,120.1 167.5,120.2 167.6,120.2 167.7,120.3 167.8,120.4 167.8,120.5 167.9,120.5 168,120.6 168.1,120.7 168.2,120.7 168.3,120.8 168.3,120.9 168.4,121 168.5,121 168.6,121.1 168.7,121.2 168.8,121.2 168.9,121.3 168.9,121.4 169,121.5 169.1,121.5 169.2,121.6 169.3,121.7 169.4,121.7 169.4,121.8 169.5,121.9 169.6,122 169.7,122 169.8,122.1 169.9,122.2 170,122.2 170,122.3 170.1,122.4 170.2,122.5 170.3,122.5 170.4,122.6 170.5,122.7 170.5,122.7 170.6,122.8 170.7,122.9 170.8,123 170.9,123 171,123.1 171,123.2 171.1,123.2 171.2,123.3 171.3,123.4 171.4,123.5 171.5,123.5 171.6,123.6 171.6,123.7 171.7,123.7 171.8,123.8 171.9,123.9 172,124 172.1,124 172.1,124.1 172.2,124.2 172.3,124.2 172.4,124.3 172.5,124.4 172.6,124.5 172.7,124.5 172.7,124.6 172.8,124.7 172.9,124.7 173,124.8 173.1,124.9 173.2,125 173.2,125 173.3,125.1 173.4,125.2 173.5,125.2 173.6,125.3 173.7,125.4 173.8,125.5 173.8,125.5 173.9,125.6 174,125.7 174.1,125.7 174.2,125.8 174.3,125.9 174.3,126 174.4,126 174.5,126.1 174.6,126.2 174.7,126.2 174.8,126.3 174.8,126.4 174.9,126.5 175,126.5 175.1,126.6 175.2,126.7 175.3,126.7 175.4,126.8 175.4,126.9 175.5,127 175.6,127 175.7,127.1 175.8,127.2 175.9,127.2 175.9,127.3 176,127.4 176.1,127.5 176.2,127.5 176.3,127.6 176.4,127.7 176.5,127.7 176.5,127.8 176.6,127.9 176.7,128 176.8,128 176.9,128.1 177,128.2 177,128.2 177.1,128.3 177.2,128.4 177.3,128.5 177.4,128.5 177.5,128.6 177.6,128.7 177.6,128.7 177.7,128.8 177.8,128.9 177.9,129 178,129 178.1,129.1 178.1,129.2 178.2,129.2 178.3,129.3 178.4,129.4 178.5,129.5 178.6,129.5 178.6,129.6 178.7,129.7 178.8,129.7 178.9,129.8 179,129.9 179.1,130 179.2,130 179.2,130.1 179.3,130.2 179.4,130.2 179.5,130.3 179.6,130.4 179.7,130.5 179.7,130.5 179.8,130.6 179.9,130.7 180,130.7 180.1,130.8 180.2,130.9 180.3,131 180.3,131 180.4,131.1 180.5,131.2 180.6,131.2 180.7,131.3 180.8,131.4 180.8,131.5 180.9,131.5 181,131.6 181.1,131.7 181.2,131.7 181.3,131.8 181.4,131.9 181.4,131.9 181.5,132 181.6,132.1 181.7,132.2 181.8,132.2 181.9,132.3 181.9,132.4 182,132.4 182.1,132.5 182.2,132.6 182.3,132.7 182.4,132.7 182.4,132.8 182.5,132.9 182.6,132.9 182.7,133 182.8,133.1 182.9,133.2 183,133.2 183,133.3 183.1,133.4 183.2,133.4 183.3,133.5 183.4,133.6 183.5,133.7 183.5,133.7 183.6,133.8 183.7,133.9 183.8,133.9 183.9,134 184,134.1 184.1,134.2 184.1,134.2 184.2,134.3 184.3,134.4 184.4,134.4 184.5,134.5 184.6,134.6 184.6,134.7 184.7,134.7 184.8,134.8 184.9,134.9 185,134.9 185.1,135 185.2,135.1 185.2,135.2 185.3,135.2 185.4,135.3 185.5,135.4 185.6,135.4 185.7,135.5 185.7,135.6 185.8,135.7 185.9,135.7 186,135.8 186.1,135.9 186.2,135.9 186.2,136 186.3,136.1 186.4,136.2 186.5,136.2 186.6,136.3 186.7,136.4 186.8,136.4 186.8,136.5 186.9,136.6 187,136.7 187.1,136.7 187.2,136.8 187.3,136.9 187.3,136.9 187.4,137 187.5,137.1 187.6,137.2 187.7,137.2 187.8,137.3 187.9,137.4 187.9,137.4 188,137.5 188.1,137.6 188.2,137.7 188.3,137.7 188.4,137.8 188.4,137.9 188.5,137.9 188.6,138 188.7,138.1 188.8,138.2 188.9,138.2 189,138.3 189,138.4 189.1,138.4 189.2,138.5 189.3,138.6 189.4,138.7 189.5,138.7 189.5,138.8 189.6,138.9 189.7,138.9 189.8,139 189.9,139.1 190,139.2 190,139.2 190.1,139.3 190.2,139.4 190.3,139.4 190.4,139.5 190.5,139.6 190.6,139.7 190.6,139.7 190.7,139.8 190.8,139.9 190.9,139.9 191,140 191.1,140.1 191.1,140.2 191.2,140.2 191.3,140.3 191.4,140.4 191.5,140.4 191.6,140.5 191.7,140.6 191.7,140.7 191.8,140.7 191.9,140.8 192,140.9 192.1,140.9 192.2,141 192.2,141.1 192.3,141.2 192.4,141.2 192.5,141.3 192.6,141.4 192.7,141.4 192.8,141.5 192.8,141.6 192.9,141.7 193,141.7 193.1,141.8 193.2,141.9 193.3,141.9 193.3,142 193.4,142.1 193.5,142.2 193.6,142.2 193.7,142.3 193.8,142.4 193.8,142.4 193.9,142.5 194,142.6 194.1,142.7 194.2,142.7 194.3,142.8 194.4,142.9 194.4,142.9 194.5,143 194.6,143.1 194.7,143.2 194.8,143.2 194.9,143.3 194.9,143.4 195,143.4 195.1,143.5 195.2,143.6 195.3,143.7 195.4,143.7 195.5,143.8 195.5,143.9 195.6,143.9 195.7,144 195.8,144.1 195.9,144.1 196,144.2 196,144.3 196.1,144.4 196.2,144.4 196.3,144.5 196.4,144.6 196.5,144.6 196.6,144.7 196.6,144.8 196.7,144.9 196.8,144.9 196.9,145 197,145.1 197.1,145.1 197.1,145.2 197.2,145.3 197.3,145.4 197.4,145.4 197.5,145.5 197.6,145.6 197.6,145.6 197.7,145.7 197.8,145.8 197.9,145.9 198,145.9 198.1,146 198.2,146.1 198.2,146.1 198.3,146.2 198.4,146.3 198.5,146.4 198.6,146.4 198.7,146.5 198.7,146.6 198.8,146.6 198.9,146.7 199,146.8 199.1,146.9 199.2,146.9 199.3,147 199.3,147.1 199.4,147.1 199.5,147.2 199.6,147.3 199.7,147.4 199.8,147.4 199.8,147.5 199.9,147.6 200,147.6 200.1,147.7 200.2,147.8 200.3,147.9 200.4,147.9 200.4,148 200.5,148.1 200.6,148.1 200.7,148.2 200.8,148.3 200.9,148.4 200.9,148.4 201,148.5 201.1,148.6 201.2,148.6 201.3,148.7 201.4,148.8 201.4,148.9 201.5,148.9 201.6,149 201.7,149.1 201.8,149.1 201.9,149.2 202,149.3 202,149.4 202.1,149.4 202.2,149.5 202.3,149.6 202.4,149.6 202.5,149.7 202.5,149.8 202.6,149.9 202.7,149.9 202.8,150 202.9,150.1 203,150.1 203.1,150.2 203.1,150.3 203.2,150.4 203.3,150.4 203.4,150.5 203.5,150.6 203.6,150.6 203.6,150.7 203.7,150.8 203.8,150.9 203.9,150.9 204,151 204.1,151.1 204.2,151.1 204.2,151.2 204.3,151.3 204.4,151.4 204.5,151.4 204.6,151.5 204.7,151.6 204.7,151.6 204.8,151.7 204.9,151.8 205,151.9 205.1,151.9 205.2,152 205.2,152.1 205.3,152.1 205.4,152.2 205.5,152.3 205.6,152.4 205.7,152.4 205.8,152.5 205.8,152.6 205.9,152.6 206,152.7 206.1,152.8 206.2,152.9 206.3,152.9 206.3,153 206.4,153.1 206.5,153.1 206.6,153.2 206.7,153.3 206.8,153.4 206.9,153.4 206.9,153.5 207,153.6 207.1,153.6 207.2,153.7 207.3,153.8 207.4,153.9 207.4,153.9 207.5,154 207.6,154.1 207.7,154.1 207.8,154.2 207.9,154.3 208,154.4 208,154.4 208.1,154.5 208.2,154.6 208.3,154.6 208.4,154.7 208.5,154.8 208.5,154.9 208.6,154.9 208.7,155 208.8,155.1 208.9,155.1 209,155.2 209,155.3 209.1,155.4 209.2,155.4 209.3,155.5 209.4,155.6 209.5,155.6 209.6,155.7 209.6,155.8 209.7,155.9 209.8,155.9 209.9,156 210,156.1 210.1,156.1 210.1,156.2 210.2,156.3 210.3,156.3 210.4,156.4 210.5,156.5 210.6,156.6 210.7,156.6 210.7,156.7 210.8,156.8 210.9,156.8 211,156.9 211.1,157 211.2,157.1 211.2,157.1 211.3,157.2 211.4,157.3 211.5,157.3 211.6,157.4 211.7,157.5 211.8,157.6 211.8,157.6 211.9,157.7 212,157.8 212.1,157.8 212.2,157.9 212.3,158 212.3,158.1 212.4,158.1 212.5,158.2 212.6,158.3 212.7,158.3 212.8,158.4 212.8,158.5 212.9,158.6 213,158.6 213.1,158.7 213.2,158.8 213.3,158.8 213.4,158.9 213.4,159 213.5,159.1 213.6,159.1 213.7,159.2 213.8,159.3 213.9,159.3 213.9,159.4 214,159.5 214.1,159.6 214.2,159.6 214.3,159.7 214.4,159.8 214.5,159.8 214.5,159.9 214.6,160 214.7,160.1 214.8,160.1 214.9,160.2 215,160.3 215,160.3 215.1,160.4 215.2,160.5 215.3,160.6 215.4,160.6 215.5,160.7 215.6,160.8 215.6,160.8 215.7,160.9 215.8,161 215.9,161.1 216,161.1 216.1,161.2 216.1,161.3 216.2,161.3 216.3,161.4 216.4,161.5 216.5,161.6 216.6,161.6 216.6,161.7 216.7,161.8 216.8,161.8 216.9,161.9 217,162 217.1,162.1 217.2,162.1 217.2,162.2 217.3,162.3 217.4,162.3 217.5,162.4 217.6,162.5 217.7,162.6 217.7,162.6 217.8,162.7 217.9,162.8 218,162.8 218.1,162.9 218.2,163 218.3,163.1 218.3,163.1 218.4,163.2 218.5,163.3 218.6,163.3 218.7,163.4 218.8,163.5 218.8,163.6 218.9,163.6 219,163.7 219.1,163.8 219.2,163.8 219.3,163.9 219.4,164 219.4,164.1 219.5,164.1 219.6,164.2 219.7,164.3 219.8,164.3 219.9,164.4 219.9,164.5 220,164.6 220.1,164.6 220.2,164.7 220.3,164.8 220.4,164.8 220.4,164.9 220.5,165 220.6,165.1 220.7,165.1 220.8,165.2 220.9,165.3 221,165.3 221,165.4 221.1,165.5 221.2,165.6 221.3,165.6 221.4,165.7 221.5,165.8 221.5,165.8 221.6,165.9 221.7,166 221.8,166.1 221.9,166.1 222,166.2 222.1,166.3 222.1,166.3 222.2,166.4 222.3,166.5 222.4,166.6 222.5,166.6 222.6,166.7 222.6,166.8 222.7,166.8 222.8,166.9 222.9,167 223,167.1 223.1,167.1 223.2,167.2 223.2,167.3 223.3,167.3 223.4,167.4 223.5,167.5 223.6,167.6 223.7,167.6 223.7,167.7 223.8,167.8 223.9,167.8 224,167.9 224.1,168 224.2,168.1 224.2,168.1 224.3,168.2 224.4,168.3 224.5,168.3 224.6,168.4 224.7,168.5 224.8,168.5 224.8,168.6 224.9,168.7 225,168.8 225.1,168.8 225.2,168.9 225.3,169 225.3,169 225.4,169.1 225.5,169.2 225.6,169.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></g><text x=\"342\" y=\"185.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Re</text><text x=\"159.6\" y=\"20\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Im</text><text x=\"73.6\" y=\"185.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"225.6\" y=\"185.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"301.6\" y=\"185.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"136.6\" y=\"237\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"136.6\" y=\"108.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"136.6\" y=\"44.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><circle cx=\"149.6\" cy=\"105.1\" r=\"4.6\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"225.6\" cy=\"169.3\" r=\"4.6\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/></svg>"
+          },
+          "options": [
+            "\\(\\arg\\left(\\dfrac{z-i}{z-1}\\right)=0\\)",
+            "\\(\\arg\\left(\\dfrac{z-i}{z-1}\\right)=\\pm\\pi\\)",
+            "\\(\\arg\\left(\\dfrac{z+i}{z+1}\\right)=0\\)",
+            "\\(\\arg\\left(\\dfrac{z+i}{z+1}\\right)=\\pm\\pi\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(\\arg\\left(\\dfrac{z-z_1}{z-z_2}\\right)=\\arg(z-z_1)-\\arg(z-z_2)\\) is the angle at \\(z\\) subtended by the end points. Which angle does a point BETWEEN the two end points of a segment see?",
+          "steps": [
+            {
+              "explain": "The end points are \\(z_1=i\\) (the point \\((0,1)\\)) and \\(z_2=1\\) (the point \\((1,0)\\)). So the correct options are the ones with \\(z-i\\) and \\(z-1\\) (A or B).",
+              "work": "end points i and 1  →  (z − i)/(z − 1)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><clipPath id=\"c9\"><rect x=\"28\" y=\"28\" width=\"304\" height=\"244\"/></clipPath><line x1=\"73.6\" y1=\"28\" x2=\"73.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"149.6\" y1=\"28\" x2=\"149.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"225.6\" y1=\"28\" x2=\"225.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"301.6\" y1=\"28\" x2=\"301.6\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"233.5\" x2=\"332\" y2=\"233.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"169.3\" x2=\"332\" y2=\"169.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"105.1\" x2=\"332\" y2=\"105.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"40.8\" x2=\"332\" y2=\"40.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"169.3\" x2=\"332\" y2=\"169.3\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"149.6\" y1=\"28\" x2=\"149.6\" y2=\"272\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M339,169.3 l-9,-4.5 v9z\" fill=\"#334155\"/><path d=\"M149.6,21 l-4.5,9 h9z\" fill=\"#334155\"/><g clip-path=\"url(#c9)\"><polyline points=\"149.6,105.1 149.7,105.1 149.8,105.2 149.9,105.3 149.9,105.3 150,105.4 150.1,105.5 150.2,105.6 150.3,105.6 150.4,105.7 150.4,105.8 150.5,105.8 150.6,105.9 150.7,106 150.8,106.1 150.9,106.1 151,106.2 151,106.3 151.1,106.3 151.2,106.4 151.3,106.5 151.4,106.6 151.5,106.6 151.5,106.7 151.6,106.8 151.7,106.8 151.8,106.9 151.9,107 152,107.1 152,107.1 152.1,107.2 152.2,107.3 152.3,107.3 152.4,107.4 152.5,107.5 152.6,107.5 152.6,107.6 152.7,107.7 152.8,107.8 152.9,107.8 153,107.9 153.1,108 153.1,108 153.2,108.1 153.3,108.2 153.4,108.3 153.5,108.3 153.6,108.4 153.7,108.5 153.7,108.5 153.8,108.6 153.9,108.7 154,108.8 154.1,108.8 154.2,108.9 154.2,109 154.3,109 154.4,109.1 154.5,109.2 154.6,109.3 154.7,109.3 154.8,109.4 154.8,109.5 154.9,109.5 155,109.6 155.1,109.7 155.2,109.8 155.3,109.8 155.3,109.9 155.4,110 155.5,110 155.6,110.1 155.7,110.2 155.8,110.3 155.8,110.3 155.9,110.4 156,110.5 156.1,110.5 156.2,110.6 156.3,110.7 156.4,110.8 156.4,110.8 156.5,110.9 156.6,111 156.7,111 156.8,111.1 156.9,111.2 156.9,111.3 157,111.3 157.1,111.4 157.2,111.5 157.3,111.5 157.4,111.6 157.5,111.7 157.5,111.8 157.6,111.8 157.7,111.9 157.8,112 157.9,112 158,112.1 158,112.2 158.1,112.3 158.2,112.3 158.3,112.4 158.4,112.5 158.5,112.5 158.6,112.6 158.6,112.7 158.7,112.8 158.8,112.8 158.9,112.9 159,113 159.1,113 159.1,113.1 159.2,113.2 159.3,113.3 159.4,113.3 159.5,113.4 159.6,113.5 159.6,113.5 159.7,113.6 159.8,113.7 159.9,113.8 160,113.8 160.1,113.9 160.2,114 160.2,114 160.3,114.1 160.4,114.2 160.5,114.3 160.6,114.3 160.7,114.4 160.7,114.5 160.8,114.5 160.9,114.6 161,114.7 161.1,114.8 161.2,114.8 161.3,114.9 161.3,115 161.4,115 161.5,115.1 161.6,115.2 161.7,115.3 161.8,115.3 161.8,115.4 161.9,115.5 162,115.5 162.1,115.6 162.2,115.7 162.3,115.8 162.4,115.8 162.4,115.9 162.5,116 162.6,116 162.7,116.1 162.8,116.2 162.9,116.3 162.9,116.3 163,116.4 163.1,116.5 163.2,116.5 163.3,116.6 163.4,116.7 163.4,116.8 163.5,116.8 163.6,116.9 163.7,117 163.8,117 163.9,117.1 164,117.2 164,117.3 164.1,117.3 164.2,117.4 164.3,117.5 164.4,117.5 164.5,117.6 164.5,117.7 164.6,117.8 164.7,117.8 164.8,117.9 164.9,118 165,118 165.1,118.1 165.1,118.2 165.2,118.3 165.3,118.3 165.4,118.4 165.5,118.5 165.6,118.5 165.6,118.6 165.7,118.7 165.8,118.8 165.9,118.8 166,118.9 166.1,119 166.2,119 166.2,119.1 166.3,119.2 166.4,119.3 166.5,119.3 166.6,119.4 166.7,119.5 166.7,119.5 166.8,119.6 166.9,119.7 167,119.7 167.1,119.8 167.2,119.9 167.2,120 167.3,120 167.4,120.1 167.5,120.2 167.6,120.2 167.7,120.3 167.8,120.4 167.8,120.5 167.9,120.5 168,120.6 168.1,120.7 168.2,120.7 168.3,120.8 168.3,120.9 168.4,121 168.5,121 168.6,121.1 168.7,121.2 168.8,121.2 168.9,121.3 168.9,121.4 169,121.5 169.1,121.5 169.2,121.6 169.3,121.7 169.4,121.7 169.4,121.8 169.5,121.9 169.6,122 169.7,122 169.8,122.1 169.9,122.2 170,122.2 170,122.3 170.1,122.4 170.2,122.5 170.3,122.5 170.4,122.6 170.5,122.7 170.5,122.7 170.6,122.8 170.7,122.9 170.8,123 170.9,123 171,123.1 171,123.2 171.1,123.2 171.2,123.3 171.3,123.4 171.4,123.5 171.5,123.5 171.6,123.6 171.6,123.7 171.7,123.7 171.8,123.8 171.9,123.9 172,124 172.1,124 172.1,124.1 172.2,124.2 172.3,124.2 172.4,124.3 172.5,124.4 172.6,124.5 172.7,124.5 172.7,124.6 172.8,124.7 172.9,124.7 173,124.8 173.1,124.9 173.2,125 173.2,125 173.3,125.1 173.4,125.2 173.5,125.2 173.6,125.3 173.7,125.4 173.8,125.5 173.8,125.5 173.9,125.6 174,125.7 174.1,125.7 174.2,125.8 174.3,125.9 174.3,126 174.4,126 174.5,126.1 174.6,126.2 174.7,126.2 174.8,126.3 174.8,126.4 174.9,126.5 175,126.5 175.1,126.6 175.2,126.7 175.3,126.7 175.4,126.8 175.4,126.9 175.5,127 175.6,127 175.7,127.1 175.8,127.2 175.9,127.2 175.9,127.3 176,127.4 176.1,127.5 176.2,127.5 176.3,127.6 176.4,127.7 176.5,127.7 176.5,127.8 176.6,127.9 176.7,128 176.8,128 176.9,128.1 177,128.2 177,128.2 177.1,128.3 177.2,128.4 177.3,128.5 177.4,128.5 177.5,128.6 177.6,128.7 177.6,128.7 177.7,128.8 177.8,128.9 177.9,129 178,129 178.1,129.1 178.1,129.2 178.2,129.2 178.3,129.3 178.4,129.4 178.5,129.5 178.6,129.5 178.6,129.6 178.7,129.7 178.8,129.7 178.9,129.8 179,129.9 179.1,130 179.2,130 179.2,130.1 179.3,130.2 179.4,130.2 179.5,130.3 179.6,130.4 179.7,130.5 179.7,130.5 179.8,130.6 179.9,130.7 180,130.7 180.1,130.8 180.2,130.9 180.3,131 180.3,131 180.4,131.1 180.5,131.2 180.6,131.2 180.7,131.3 180.8,131.4 180.8,131.5 180.9,131.5 181,131.6 181.1,131.7 181.2,131.7 181.3,131.8 181.4,131.9 181.4,131.9 181.5,132 181.6,132.1 181.7,132.2 181.8,132.2 181.9,132.3 181.9,132.4 182,132.4 182.1,132.5 182.2,132.6 182.3,132.7 182.4,132.7 182.4,132.8 182.5,132.9 182.6,132.9 182.7,133 182.8,133.1 182.9,133.2 183,133.2 183,133.3 183.1,133.4 183.2,133.4 183.3,133.5 183.4,133.6 183.5,133.7 183.5,133.7 183.6,133.8 183.7,133.9 183.8,133.9 183.9,134 184,134.1 184.1,134.2 184.1,134.2 184.2,134.3 184.3,134.4 184.4,134.4 184.5,134.5 184.6,134.6 184.6,134.7 184.7,134.7 184.8,134.8 184.9,134.9 185,134.9 185.1,135 185.2,135.1 185.2,135.2 185.3,135.2 185.4,135.3 185.5,135.4 185.6,135.4 185.7,135.5 185.7,135.6 185.8,135.7 185.9,135.7 186,135.8 186.1,135.9 186.2,135.9 186.2,136 186.3,136.1 186.4,136.2 186.5,136.2 186.6,136.3 186.7,136.4 186.8,136.4 186.8,136.5 186.9,136.6 187,136.7 187.1,136.7 187.2,136.8 187.3,136.9 187.3,136.9 187.4,137 187.5,137.1 187.6,137.2 187.7,137.2 187.8,137.3 187.9,137.4 187.9,137.4 188,137.5 188.1,137.6 188.2,137.7 188.3,137.7 188.4,137.8 188.4,137.9 188.5,137.9 188.6,138 188.7,138.1 188.8,138.2 188.9,138.2 189,138.3 189,138.4 189.1,138.4 189.2,138.5 189.3,138.6 189.4,138.7 189.5,138.7 189.5,138.8 189.6,138.9 189.7,138.9 189.8,139 189.9,139.1 190,139.2 190,139.2 190.1,139.3 190.2,139.4 190.3,139.4 190.4,139.5 190.5,139.6 190.6,139.7 190.6,139.7 190.7,139.8 190.8,139.9 190.9,139.9 191,140 191.1,140.1 191.1,140.2 191.2,140.2 191.3,140.3 191.4,140.4 191.5,140.4 191.6,140.5 191.7,140.6 191.7,140.7 191.8,140.7 191.9,140.8 192,140.9 192.1,140.9 192.2,141 192.2,141.1 192.3,141.2 192.4,141.2 192.5,141.3 192.6,141.4 192.7,141.4 192.8,141.5 192.8,141.6 192.9,141.7 193,141.7 193.1,141.8 193.2,141.9 193.3,141.9 193.3,142 193.4,142.1 193.5,142.2 193.6,142.2 193.7,142.3 193.8,142.4 193.8,142.4 193.9,142.5 194,142.6 194.1,142.7 194.2,142.7 194.3,142.8 194.4,142.9 194.4,142.9 194.5,143 194.6,143.1 194.7,143.2 194.8,143.2 194.9,143.3 194.9,143.4 195,143.4 195.1,143.5 195.2,143.6 195.3,143.7 195.4,143.7 195.5,143.8 195.5,143.9 195.6,143.9 195.7,144 195.8,144.1 195.9,144.1 196,144.2 196,144.3 196.1,144.4 196.2,144.4 196.3,144.5 196.4,144.6 196.5,144.6 196.6,144.7 196.6,144.8 196.7,144.9 196.8,144.9 196.9,145 197,145.1 197.1,145.1 197.1,145.2 197.2,145.3 197.3,145.4 197.4,145.4 197.5,145.5 197.6,145.6 197.6,145.6 197.7,145.7 197.8,145.8 197.9,145.9 198,145.9 198.1,146 198.2,146.1 198.2,146.1 198.3,146.2 198.4,146.3 198.5,146.4 198.6,146.4 198.7,146.5 198.7,146.6 198.8,146.6 198.9,146.7 199,146.8 199.1,146.9 199.2,146.9 199.3,147 199.3,147.1 199.4,147.1 199.5,147.2 199.6,147.3 199.7,147.4 199.8,147.4 199.8,147.5 199.9,147.6 200,147.6 200.1,147.7 200.2,147.8 200.3,147.9 200.4,147.9 200.4,148 200.5,148.1 200.6,148.1 200.7,148.2 200.8,148.3 200.9,148.4 200.9,148.4 201,148.5 201.1,148.6 201.2,148.6 201.3,148.7 201.4,148.8 201.4,148.9 201.5,148.9 201.6,149 201.7,149.1 201.8,149.1 201.9,149.2 202,149.3 202,149.4 202.1,149.4 202.2,149.5 202.3,149.6 202.4,149.6 202.5,149.7 202.5,149.8 202.6,149.9 202.7,149.9 202.8,150 202.9,150.1 203,150.1 203.1,150.2 203.1,150.3 203.2,150.4 203.3,150.4 203.4,150.5 203.5,150.6 203.6,150.6 203.6,150.7 203.7,150.8 203.8,150.9 203.9,150.9 204,151 204.1,151.1 204.2,151.1 204.2,151.2 204.3,151.3 204.4,151.4 204.5,151.4 204.6,151.5 204.7,151.6 204.7,151.6 204.8,151.7 204.9,151.8 205,151.9 205.1,151.9 205.2,152 205.2,152.1 205.3,152.1 205.4,152.2 205.5,152.3 205.6,152.4 205.7,152.4 205.8,152.5 205.8,152.6 205.9,152.6 206,152.7 206.1,152.8 206.2,152.9 206.3,152.9 206.3,153 206.4,153.1 206.5,153.1 206.6,153.2 206.7,153.3 206.8,153.4 206.9,153.4 206.9,153.5 207,153.6 207.1,153.6 207.2,153.7 207.3,153.8 207.4,153.9 207.4,153.9 207.5,154 207.6,154.1 207.7,154.1 207.8,154.2 207.9,154.3 208,154.4 208,154.4 208.1,154.5 208.2,154.6 208.3,154.6 208.4,154.7 208.5,154.8 208.5,154.9 208.6,154.9 208.7,155 208.8,155.1 208.9,155.1 209,155.2 209,155.3 209.1,155.4 209.2,155.4 209.3,155.5 209.4,155.6 209.5,155.6 209.6,155.7 209.6,155.8 209.7,155.9 209.8,155.9 209.9,156 210,156.1 210.1,156.1 210.1,156.2 210.2,156.3 210.3,156.3 210.4,156.4 210.5,156.5 210.6,156.6 210.7,156.6 210.7,156.7 210.8,156.8 210.9,156.8 211,156.9 211.1,157 211.2,157.1 211.2,157.1 211.3,157.2 211.4,157.3 211.5,157.3 211.6,157.4 211.7,157.5 211.8,157.6 211.8,157.6 211.9,157.7 212,157.8 212.1,157.8 212.2,157.9 212.3,158 212.3,158.1 212.4,158.1 212.5,158.2 212.6,158.3 212.7,158.3 212.8,158.4 212.8,158.5 212.9,158.6 213,158.6 213.1,158.7 213.2,158.8 213.3,158.8 213.4,158.9 213.4,159 213.5,159.1 213.6,159.1 213.7,159.2 213.8,159.3 213.9,159.3 213.9,159.4 214,159.5 214.1,159.6 214.2,159.6 214.3,159.7 214.4,159.8 214.5,159.8 214.5,159.9 214.6,160 214.7,160.1 214.8,160.1 214.9,160.2 215,160.3 215,160.3 215.1,160.4 215.2,160.5 215.3,160.6 215.4,160.6 215.5,160.7 215.6,160.8 215.6,160.8 215.7,160.9 215.8,161 215.9,161.1 216,161.1 216.1,161.2 216.1,161.3 216.2,161.3 216.3,161.4 216.4,161.5 216.5,161.6 216.6,161.6 216.6,161.7 216.7,161.8 216.8,161.8 216.9,161.9 217,162 217.1,162.1 217.2,162.1 217.2,162.2 217.3,162.3 217.4,162.3 217.5,162.4 217.6,162.5 217.7,162.6 217.7,162.6 217.8,162.7 217.9,162.8 218,162.8 218.1,162.9 218.2,163 218.3,163.1 218.3,163.1 218.4,163.2 218.5,163.3 218.6,163.3 218.7,163.4 218.8,163.5 218.8,163.6 218.9,163.6 219,163.7 219.1,163.8 219.2,163.8 219.3,163.9 219.4,164 219.4,164.1 219.5,164.1 219.6,164.2 219.7,164.3 219.8,164.3 219.9,164.4 219.9,164.5 220,164.6 220.1,164.6 220.2,164.7 220.3,164.8 220.4,164.8 220.4,164.9 220.5,165 220.6,165.1 220.7,165.1 220.8,165.2 220.9,165.3 221,165.3 221,165.4 221.1,165.5 221.2,165.6 221.3,165.6 221.4,165.7 221.5,165.8 221.5,165.8 221.6,165.9 221.7,166 221.8,166.1 221.9,166.1 222,166.2 222.1,166.3 222.1,166.3 222.2,166.4 222.3,166.5 222.4,166.6 222.5,166.6 222.6,166.7 222.6,166.8 222.7,166.8 222.8,166.9 222.9,167 223,167.1 223.1,167.1 223.2,167.2 223.2,167.3 223.3,167.3 223.4,167.4 223.5,167.5 223.6,167.6 223.7,167.6 223.7,167.7 223.8,167.8 223.9,167.8 224,167.9 224.1,168 224.2,168.1 224.2,168.1 224.3,168.2 224.4,168.3 224.5,168.3 224.6,168.4 224.7,168.5 224.8,168.5 224.8,168.6 224.9,168.7 225,168.8 225.1,168.8 225.2,168.9 225.3,169 225.3,169 225.4,169.1 225.5,169.2 225.6,169.3\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></g><text x=\"342\" y=\"185.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Re</text><text x=\"159.6\" y=\"20\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Im</text><text x=\"73.6\" y=\"185.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"225.6\" y=\"185.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"301.6\" y=\"185.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"136.6\" y=\"237\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"136.6\" y=\"108.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"136.6\" y=\"44.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><circle cx=\"149.6\" cy=\"105.1\" r=\"4.6\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"225.6\" cy=\"169.3\" r=\"4.6\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/></svg>"
+              }
+            },
+            {
+              "explain": "For a point \\(z\\) ON the segment between them, the vectors \\(z-i\\) and \\(z-1\\) point in OPPOSITE directions (one towards each end point).",
+              "work": "\\(z-i=-k\\,(z-1)\\ \\text{for some}\\ k>0\\)"
+            },
+            {
+              "explain": "So \\(\\dfrac{z-i}{z-1}=-k\\) is a NEGATIVE real number, whose argument is \\(\\pm\\pi\\) (not 0).",
+              "work": "\\(\\arg\\left(\\dfrac{z-i}{z-1}\\right)=\\pm\\pi\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Why not A? \\(\\arg=0\\) is the locus of points on the line OUTSIDE the segment (on the same side of both end points).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equation of the locus",
+              "note": "On the segment the two vectors point opposite ways, so the argument is plus or minus pi."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "The paper's diagram shows only the segment; the end points (open circles) are excluded."
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q12b",
+          "type": "review",
+          "stem": "Sketch the intersection of the regions defined by \\(|z-2i|\\le1\\) and \\(0<\\text{Arg}(z-2i)\\le\\dfrac{3\\pi}{4}\\).",
+          "difficulty": "hard",
+          "answer": "A sector of the disc with centre \\(2i\\) (the point \\((0,2)\\)) and radius 1: the part between the ray at angle \\(0\\) (the horizontal line to the right, drawn dashed, EXCLUDED) and the ray at angle \\(\\dfrac{3\\pi}{4}\\) (solid, INCLUDED); the centre is excluded since the argument is undefined there.",
+          "manual": true,
+          "hint": "Both conditions are measured from the CENTRE \\(2i\\): the first is a DISC; the second is a WEDGE (all points at angles between 0 and \\(\\dfrac{3\\pi}{4}\\) from the centre).",
+          "steps": [
+            {
+              "explain": "Region 1: \\(|z-2i|\\le1\\) is every point at distance at most 1 from \\(2i\\): a solid disc, centre \\((0,2)\\), radius 1 (boundary included).",
+              "work": "\\(\\text{disc: centre }(0,2),\\ r=1\\)"
+            },
+            {
+              "explain": "Region 2: \\(\\text{Arg}(z-2i)\\) is the angle of the vector from \\(2i\\) to \\(z\\), measured from the positive real direction. \\(0<\\text{Arg}\\le\\dfrac{3\\pi}{4}\\) is the wedge above the horizontal line through \\(2i\\), up to the ray at \\(135^\\circ\\).",
+              "work": "\\(\\text{wedge}:\\ 0^\\circ<\\theta\\le135^\\circ\\)"
+            },
+            {
+              "explain": "Boundaries: the ray at \\(\\theta=0\\) is NOT included (dashed), the ray at \\(\\theta=\\dfrac{3\\pi}{4}\\) IS included (solid), and the centre \\(2i\\) is excluded (open circle).",
+              "work": "\\(\\text{dashed: }\\theta=0;\\quad\\text{solid: }\\theta=\\dfrac{3\\pi}{4}\\)"
+            },
+            {
+              "explain": "The intersection of the two regions is the shaded sector of the disc.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><clipPath id=\"c11\"><rect x=\"28\" y=\"28\" width=\"364\" height=\"284\"/></clipPath><line x1=\"43.8\" y1=\"28\" x2=\"43.8\" y2=\"312\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"123\" y1=\"28\" x2=\"123\" y2=\"312\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"202.1\" y1=\"28\" x2=\"202.1\" y2=\"312\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"281.2\" y1=\"28\" x2=\"281.2\" y2=\"312\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"360.3\" y1=\"28\" x2=\"360.3\" y2=\"312\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"271.4\" x2=\"392\" y2=\"271.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"203.8\" x2=\"392\" y2=\"203.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"136.2\" x2=\"392\" y2=\"136.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"28\" y1=\"68.6\" x2=\"392\" y2=\"68.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><path d=\"M202.1,136.2 L281.2,136.2 L281.1,132.7 L280.8,129.1 L280.2,125.6 L279.5,122.1 L278.5,118.7 L277.3,115.3 L276,112 L274.4,108.7 L272.6,105.5 L270.6,102.4 L268.5,99.4 L266.1,96.4 L263.6,93.6 L260.9,90.9 L258,88.4 L255,85.9 L251.9,83.6 L248.6,81.5 L245.2,79.5 L241.7,77.6 L238,75.9 L234.3,74.4 L230.4,73.1 L226.5,71.9 L222.6,70.9 L218.5,70 L214.5,69.4 L210.4,68.9 L206.2,68.7 L202.1,68.6 L197.9,68.7 L193.8,68.9 L189.7,69.4 L185.6,70 L181.6,70.9 L177.6,71.9 L173.7,73.1 L169.9,74.4 L166.2,75.9 L162.5,77.6 L159,79.5 L155.6,81.5 L152.3,83.6 L149.1,85.9 L146.1,88.4Z\" fill=\"#2563eb\" fill-opacity=\"0.3\"/><line x1=\"28\" y1=\"271.4\" x2=\"392\" y2=\"271.4\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"202.1\" y1=\"28\" x2=\"202.1\" y2=\"312\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M399,271.4 l-9,-4.5 v9z\" fill=\"#334155\"/><path d=\"M202.1,21 l-4.5,9 h9z\" fill=\"#334155\"/><g clip-path=\"url(#c11)\"></g><circle cx=\"202.1\" cy=\"136.2\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"402\" y=\"287.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Re</text><text x=\"212.1\" y=\"20\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" font-style=\"italic\">Im</text><text x=\"43.8\" y=\"287.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−2</text><text x=\"123\" y=\"287.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">−1</text><text x=\"281.2\" y=\"287.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"360.3\" y=\"287.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><text x=\"189.1\" y=\"207.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">1</text><text x=\"189.1\" y=\"139.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"500\" fill=\"#64748b\">2</text><path d=\"M281.2,136.2 L281.1,132.7 L280.8,129.1 L280.2,125.6 L279.5,122.1 L278.5,118.7 L277.3,115.3 L276,112 L274.4,108.7 L272.6,105.5 L270.6,102.4 L268.5,99.4 L266.1,96.4 L263.6,93.6 L260.9,90.9 L258,88.4 L255,85.9 L251.9,83.6 L248.6,81.5 L245.2,79.5 L241.7,77.6 L238,75.9 L234.3,74.4 L230.4,73.1 L226.5,71.9 L222.6,70.9 L218.5,70 L214.5,69.4 L210.4,68.9 L206.2,68.7 L202.1,68.6 L197.9,68.7 L193.8,68.9 L189.7,69.4 L185.6,70 L181.6,70.9 L177.6,71.9 L173.7,73.1 L169.9,74.4 L166.2,75.9 L162.5,77.6 L159,79.5 L155.6,81.5 L152.3,83.6 L149.1,85.9 L146.1,88.4\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.6\"/><line x1=\"202.1\" y1=\"136.2\" x2=\"146.1\" y2=\"88.4\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"202.1\" y1=\"136.2\" x2=\"281.2\" y2=\"136.2\" stroke=\"#1d4ed8\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"202.1\" cy=\"136.2\" r=\"4.6\" fill=\"#fff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"324.7\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\">θ = 0 (excluded)</text><text x=\"79.4\" y=\"80\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\">θ =</text><text x=\"99.2\" y=\"73\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\">3π</text><line x1=\"89.4\" y1=\"76\" x2=\"109\" y2=\"76\" stroke=\"#1d4ed8\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"99.2\" y=\"88\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\">4</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Sketch the intersection",
+              "note": "A disc centred at 2i, cut by the argument wedge from the centre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

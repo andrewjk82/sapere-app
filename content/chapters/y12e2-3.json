@@ -525,6 +525,105 @@
             "sourceMarks": 3,
             "page": 11
           }
+        },
+        {
+          "id": "cranbrook2020e2-q11c",
+          "type": "mc",
+          "stem": "Let \\(P(z)=z^4-4z^3-3z^2+50z-52\\). Solve \\(P(z)=0\\) if \\(z=3-2i\\) is a root of the polynomial.",
+          "difficulty": "hard",
+          "options": [
+            "\\(z=3\\pm2i,\\ -1\\pm\\sqrt{5}\\)",
+            "\\(z=3\\pm2i,\\ 1\\pm\\sqrt{5}\\)",
+            "\\(z=3-2i,\\ -1\\pm\\sqrt{5}\\)",
+            "\\(z=3\\pm2i,\\ -2,\\ 2\\)"
+          ],
+          "answer": 0,
+          "hint": "The polynomial has REAL coefficients, so complex roots come in CONJUGATE pairs: \\(3+2i\\) is also a root. The two roots give a real quadratic factor, then divide.",
+          "steps": [
+            {
+              "explain": "Conjugate root theorem: the roots \\(3-2i\\) and \\(3+2i\\).",
+              "work": "\\(\\text{sum}=6,\\qquad\\text{product}=(3)^2+(2)^2=13\\)"
+            },
+            {
+              "explain": "Quadratic factor: \\(z^2-(\\text{sum})z+\\text{product}\\).",
+              "work": "\\(z^2-6z+13\\)"
+            },
+            {
+              "explain": "Divide \\(P(z)\\) by \\(z^2-6z+13\\) (long division / inspection): the other factor has leading term \\(z^2\\) and constant \\(-4\\) (since \\(13\\times(-4)=-52\\)). Match the \\(z^3\\) term: \\(-6+b=-4\\) gives \\(b=2\\).",
+              "work": "\\(P(z)=(z^2-6z+13)(z^2+2z-4)\\)"
+            },
+            {
+              "explain": "Check by expanding.",
+              "work": "\\(z^4+2z^3-4z^2-6z^3-12z^2+24z+13z^2+26z-52=z^4-4z^3-3z^2+50z-52\\) ✓"
+            },
+            {
+              "explain": "Solve \\(z^2+2z-4=0\\) with the quadratic formula.",
+              "work": "\\(z=\\dfrac{-2\\pm\\sqrt{4+16}}{2}=\\dfrac{-2\\pm2\\sqrt{5}}{2}=-1\\pm\\sqrt{5}\\)"
+            },
+            {
+              "explain": "All four roots.",
+              "work": "\\(z=3\\pm2i,\\ -1\\pm\\sqrt{5}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is a root of the polynomial",
+              "note": "Real coefficients: conjugate roots come in pairs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q15cii",
+          "type": "review",
+          "stem": "Consider the equation \\(z^5=1\\). Show that for \\(z\\ne1\\): \\(\\dfrac{z^5-1}{z-1}=\\left(z^2-2z\\cos\\dfrac{2\\pi}{5}+1\\right)\\left(z^2-2z\\cos\\dfrac{4\\pi}{5}+1\\right)\\).",
+          "difficulty": "hard",
+          "answer": "The roots of \\(z^5-1=0\\) are \\(1\\), \\(\\text{cis}\\left(\\pm\\dfrac{2\\pi}{5}\\right)\\), \\(\\text{cis}\\left(\\pm\\dfrac{4\\pi}{5}\\right)\\). Pair each conjugate pair: \\((z-\\text{cis}\\theta)(z-\\text{cis}(-\\theta))=z^2-2z\\cos\\theta+1\\). Then \\(z^5-1=(z-1)\\left(z^2-2z\\cos\\dfrac{2\\pi}{5}+1\\right)\\left(z^2-2z\\cos\\dfrac{4\\pi}{5}+1\\right)\\). ∎",
+          "manual": true,
+          "hint": "Factorise \\(z^5-1\\) using ALL its roots from (i), then group the CONJUGATE roots in pairs (each pair gives a real quadratic).",
+          "steps": [
+            {
+              "explain": "Factor theorem with the five roots from (i).",
+              "work": "\\(z^5-1=(z-1)(z-\\omega)(z-\\bar{\\omega})(z-\\omega^2)(z-\\bar{\\omega}^2),\\quad\\omega=\\text{cis}\\dfrac{2\\pi}{5}\\)"
+            },
+            {
+              "explain": "Divide by \\(z-1\\) (\\(z\\ne1\\)).",
+              "work": "\\(\\dfrac{z^5-1}{z-1}=(z-\\omega)(z-\\bar{\\omega})\\times(z-\\omega^2)(z-\\bar{\\omega}^2)\\)"
+            },
+            {
+              "explain": "Multiply a conjugate pair: sum of roots \\(\\omega+\\bar{\\omega}=2\\cos\\dfrac{2\\pi}{5}\\) and product \\(\\omega\\bar{\\omega}=|\\omega|^2=1\\).",
+              "work": "\\((z-\\omega)(z-\\bar{\\omega})=z^2-\\left(\\omega+\\bar{\\omega}\\right)z+\\omega\\bar{\\omega}=z^2-2z\\cos\\dfrac{2\\pi}{5}+1\\)"
+            },
+            {
+              "explain": "The same for the second pair (angle \\(\\dfrac{4\\pi}{5}\\)).",
+              "work": "\\((z-\\omega^2)(z-\\bar{\\omega}^2)=z^2-2z\\cos\\dfrac{4\\pi}{5}+1\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\dfrac{z^5-1}{z-1}=\\left(z^2-2z\\cos\\dfrac{2\\pi}{5}+1\\right)\\left(z^2-2z\\cos\\dfrac{4\\pi}{5}+1\\right)\\)  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Factorise the polynomial using all five roots and pair the conjugates."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -982,6 +1081,149 @@
               "note": "Factor \\(z^5-1\\) using its five roots, then evaluate the derivative at the root z=1 to obtain the product of the four non-unit factors."
             }
           ]
+        },
+        {
+          "id": "cranbrook2020e2-q3",
+          "type": "mc",
+          "stem": "Which of the following is equivalent to \\(\\sqrt{i^3}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(e^{\\frac{i\\pi}{4}}\\)",
+            "\\(e^{\\frac{i\\pi}{2}}\\)",
+            "\\(e^{\\frac{3i\\pi}{4}}\\)",
+            "\\(e^{-\\frac{i\\pi}{4}}\\)"
+          ],
+          "answer": 2,
+          "hint": "Write \\(i\\) in exponential form \\(e^{\\frac{i\\pi}{2}}\\), cube it, then take the square root by HALVING the exponent.",
+          "steps": [
+            {
+              "explain": "Exponential form of \\(i\\).",
+              "work": "\\(i=e^{\\frac{i\\pi}{2}}\\)"
+            },
+            {
+              "explain": "Cube (multiply the exponent by 3).",
+              "work": "\\(i^3=\\left(e^{\\frac{i\\pi}{2}}\\right)^3=e^{\\frac{3i\\pi}{2}}\\)"
+            },
+            {
+              "explain": "Square root (halve the exponent).",
+              "work": "\\(\\sqrt{i^3}=\\left(e^{\\frac{3i\\pi}{2}}\\right)^{\\frac{1}{2}}=e^{\\frac{3i\\pi}{4}}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Check: \\(\\left(e^{\\frac{3i\\pi}{4}}\\right)^2=e^{\\frac{3i\\pi}{2}}=-i=i^3\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equivalent to",
+              "note": "Write i as an exponential, cube it, then halve the exponent."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "The other square root of i³ = −i is e^{−iπ/4} (option D); the paper's key takes the root obtained by halving the exponent 3π/2, i.e. e^{3iπ/4}."
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q5",
+          "type": "mc",
+          "stem": "Let \\(\\alpha=1-i\\). Which of the following is true about the value of \\(\\alpha^{10}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "It is purely real",
+            "It is purely imaginary",
+            "0",
+            "\\(32\\left(\\cos\\dfrac{5\\pi}{2}+i\\sin\\dfrac{5\\pi}{2}\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "Square first to simplify: \\((1-i)^2\\) is a pure number times \\(i\\). Then use powers of \\(i\\) (\\(i^2=-1\\)).",
+          "steps": [
+            {
+              "explain": "Square \\(\\alpha\\).",
+              "work": "\\(\\alpha^2=(1-i)^2=1-2i+i^2=-2i\\)"
+            },
+            {
+              "explain": "\\(\\alpha^{10}=(\\alpha^2)^5\\).",
+              "work": "\\(\\alpha^{10}=(-2i)^5=(-2)^5\\,i^5=-32\\,i^5\\)"
+            },
+            {
+              "explain": "Powers of \\(i\\) repeat every 4: \\(i^5=i\\).",
+              "work": "\\(\\alpha^{10}=-32i\\)"
+            },
+            {
+              "explain": "The value is a real number times \\(i\\) and has no real part.",
+              "work": "purely imaginary → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Why not D? It equals \\(32\\left(\\cos\\dfrac{5\\pi}{2}+i\\sin\\dfrac{5\\pi}{2}\\right)=32i\\), which has the wrong sign (the argument of \\(\\alpha^{10}\\) is \\(-\\dfrac{5\\pi}{2}\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is true",
+              "note": "Square first: (1 − i)² = −2i."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q11aii",
+          "type": "mc",
+          "stem": "Let \\(z=1+i\\) and \\(w=\\cos\\dfrac{\\pi}{6}+i\\sin\\dfrac{\\pi}{6}\\). Hence or otherwise, express \\((w\\bar{z})^8\\) in the form \\(a+ib\\) where \\(a,b\\in\\mathbb{R}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-8-8\\sqrt{3}\\,i\\)",
+            "\\(-8+8\\sqrt{3}\\,i\\)",
+            "\\(8-8\\sqrt{3}\\,i\\)",
+            "\\(-16-16\\sqrt{3}\\,i\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(w\\bar{z}\\) in polar form (the conjugate has the SAME modulus and the OPPOSITE argument), then use de Moivre's theorem: \\((r\\,\\text{cis}\\theta)^8=r^8\\,\\text{cis}(8\\theta)\\).",
+          "steps": [
+            {
+              "explain": "Conjugate of \\(z\\).",
+              "work": "\\(\\bar{z}=\\sqrt{2}\\,\\text{cis}\\left(-\\dfrac{\\pi}{4}\\right)\\)"
+            },
+            {
+              "explain": "Multiply: moduli multiply, arguments add.",
+              "work": "\\(w\\bar{z}=1\\times\\sqrt{2}\\,\\text{cis}\\left(\\dfrac{\\pi}{6}-\\dfrac{\\pi}{4}\\right)=\\sqrt{2}\\,\\text{cis}\\left(-\\dfrac{\\pi}{12}\\right)\\)"
+            },
+            {
+              "explain": "de Moivre's theorem.",
+              "work": "\\((w\\bar{z})^8=(\\sqrt{2})^8\\,\\text{cis}\\left(-\\dfrac{8\\pi}{12}\\right)=16\\,\\text{cis}\\left(-\\dfrac{2\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "Evaluate the cosine and sine (\\(\\cos\\dfrac{2\\pi}{3}=-\\dfrac{1}{2}\\), \\(\\sin\\left(-\\dfrac{2\\pi}{3}\\right)=-\\dfrac{\\sqrt{3}}{2}\\)).",
+              "work": "\\(=16\\left(-\\dfrac{1}{2}-\\dfrac{\\sqrt{3}}{2}i\\right)=-8-8\\sqrt{3}\\,i\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence or otherwise",
+              "note": "Conjugate flips the argument; then de Moivre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1710,6 +1952,55 @@
             "sourceQuestion": "Section II Q15(c)(i)",
             "sourceMarks": 2,
             "page": 12
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q15ciii",
+          "type": "review",
+          "stem": "Consider the equation \\(z^5=1\\) and the identity \\(\\dfrac{z^5-1}{z-1}=\\left(z^2-2z\\cos\\dfrac{2\\pi}{5}+1\\right)\\left(z^2-2z\\cos\\dfrac{4\\pi}{5}+1\\right)\\). Deduce that \\(\\cos\\left(\\dfrac{2\\pi}{5}\\right)\\) and \\(\\cos\\left(\\dfrac{4\\pi}{5}\\right)\\) are roots of the equation \\(4x^2+2x-1=0\\).",
+          "difficulty": "hard",
+          "answer": "Write \\(a=\\cos\\dfrac{2\\pi}{5}\\), \\(b=\\cos\\dfrac{4\\pi}{5}\\). Expanding and comparing \\(z^3\\) and \\(z^2\\) coefficients with \\(z^4+z^3+z^2+z+1\\): \\(-2(a+b)=1\\) and \\(2+4ab=1\\). So \\(a+b=-\\dfrac{1}{2}\\), \\(ab=-\\dfrac{1}{4}\\): \\(a,b\\) are the roots of \\(x^2+\\dfrac{1}{2}x-\\dfrac{1}{4}=0\\), i.e. \\(4x^2+2x-1=0\\). ∎",
+          "manual": true,
+          "hint": "The left side is \\(z^4+z^3+z^2+z+1\\). Expand the right side in terms of \\(a\\) and \\(b\\), compare coefficients, and use the sum and product of roots.",
+          "steps": [
+            {
+              "explain": "The left side: \\(\\dfrac{z^5-1}{z-1}=z^4+z^3+z^2+z+1\\) (geometric series).",
+              "work": "\\(z^4+z^3+z^2+z+1\\)"
+            },
+            {
+              "explain": "Let \\(a=\\cos\\dfrac{2\\pi}{5}\\) and \\(b=\\cos\\dfrac{4\\pi}{5}\\). Expand the right side.",
+              "work": "\\((z^2-2az+1)(z^2-2bz+1)=z^4-2(a+b)z^3+(2+4ab)z^2-2(a+b)z+1\\)"
+            },
+            {
+              "explain": "Compare coefficients of \\(z^3\\).",
+              "work": "\\(-2(a+b)=1\\;\\Rightarrow\\;a+b=-\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Compare coefficients of \\(z^2\\).",
+              "work": "\\(2+4ab=1\\;\\Rightarrow\\;ab=-\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "A quadratic with roots \\(a\\) and \\(b\\) is \\(x^2-(a+b)x+ab=0\\).",
+              "work": "\\(x^2+\\dfrac{1}{2}x-\\dfrac{1}{4}=0\\)"
+            },
+            {
+              "explain": "Multiply by 4.",
+              "work": "\\(4x^2+2x-1=0\\) — so \\(\\cos\\dfrac{2\\pi}{5}\\) and \\(\\cos\\dfrac{4\\pi}{5}\\) are its roots.  ∎"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Deduce that",
+              "note": "Compare coefficients, then use the sum and product of the roots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -2719,6 +3010,203 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" style=\"max-width:340px;display:block;margin:0.5rem auto\"><line x1=\"15\" y1=\"165\" x2=\"345\" y2=\"165\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"337.9,161.2 345,165 337.9,168.8\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"318\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><polyline points=\"166.2,29.1 170,22 173.8,29.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><circle cx=\"170\" cy=\"165\" r=\"115\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><polygon points=\"227.5,65.4 93.0,79.5 64.9,211.8 182.0,279.4 282.5,188.9\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><circle cx=\"227.5\" cy=\"65.4\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"237.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">1</tspan></text><circle cx=\"93.0\" cy=\"79.5\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"80.3\" y=\"70.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">2</tspan></text><circle cx=\"64.9\" cy=\"211.8\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"47.6\" y=\"224.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">3</tspan></text><circle cx=\"182.0\" cy=\"279.4\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"184.0\" y=\"303.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">4</tspan></text><circle cx=\"282.5\" cy=\"188.9\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"301.1\" y=\"197.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" font-style=\"italic\" fill=\"#1e293b\">z<tspan font-size=\"10\" dy=\"4\" font-style=\"normal\">5</tspan></text><text x=\"162\" y=\"182\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">O</text><text x=\"350\" y=\"184\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Re(z)</text><text x=\"178\" y=\"24\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">Im(z)</text></svg>"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q15ci",
+          "type": "mc",
+          "stem": "Consider the equation \\(z^5=1\\). Write down, in polar form, the five roots of \\(z^5=1\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(z_k=\\cos\\dfrac{2k\\pi}{5}+i\\sin\\dfrac{2k\\pi}{5},\\ k=0,\\pm1,\\pm2\\)",
+            "\\(z_k=\\cos\\dfrac{k\\pi}{5}+i\\sin\\dfrac{k\\pi}{5},\\ k=0,\\pm1,\\pm2\\)",
+            "\\(z_k=\\cos\\dfrac{2k\\pi}{5}+i\\sin\\dfrac{2k\\pi}{5},\\ k=1,2,3,4,5,6\\)",
+            "\\(z_k=\\cos\\dfrac{2k\\pi}{3}+i\\sin\\dfrac{2k\\pi}{3},\\ k=0,\\pm1,\\pm2\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(1=\\text{cis}(2k\\pi)\\) and take the fifth root: divide the angle by 5. The five roots are equally spaced on the unit circle, \\(\\dfrac{2\\pi}{5}\\) apart.",
+          "steps": [
+            {
+              "explain": "Write \\(1\\) in polar form with the full set of arguments.",
+              "work": "\\(1=\\cos2k\\pi+i\\sin2k\\pi,\\quad k\\in\\mathbb{Z}\\)"
+            },
+            {
+              "explain": "de Moivre: take the fifth root (divide the argument by 5, modulus \\(1^{\\frac{1}{5}}=1\\)).",
+              "work": "\\(z=\\cos\\dfrac{2k\\pi}{5}+i\\sin\\dfrac{2k\\pi}{5}\\)"
+            },
+            {
+              "explain": "Choose five consecutive values of \\(k\\) (principal arguments).",
+              "work": "\\(k=0,\\ \\pm1,\\ \\pm2:\\quad z=1,\\ \\text{cis}\\dfrac{\\pm2\\pi}{5},\\ \\text{cis}\\dfrac{\\pm4\\pi}{5}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not C? \\(k=1,\\ldots,6\\) gives SIX values, and \\(k=6\\) repeats \\(k=1\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "polar form",
+              "note": "Take the fifth root: divide the angle by five."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q16ci",
+          "type": "mc",
+          "stem": "Consider the equation \\(z^5=(z+1)^5\\) where \\(z\\in\\mathbb{C}\\). Explain why this equation does NOT have five roots.",
+          "difficulty": "medium",
+          "options": [
+            "The \\(z^5\\) terms cancel when expanded, leaving a polynomial of degree 4, which has at most 4 roots.",
+            "A fifth-degree equation can never have five roots.",
+            "The equation has no roots at all.",
+            "Roots of \\(z^5=(z+1)^5\\) must all be real, so some are lost."
+          ],
+          "answer": 0,
+          "hint": "Expand \\((z+1)^5\\) with the binomial theorem and move everything to one side. Look at the HIGHEST power of \\(z\\) that is left.",
+          "steps": [
+            {
+              "explain": "Move everything to one side.",
+              "work": "\\((z+1)^5-z^5=0\\)"
+            },
+            {
+              "explain": "Expand: \\((z+1)^5=z^5+5z^4+10z^3+10z^2+5z+1\\).",
+              "work": "\\((z+1)^5-z^5=5z^4+10z^3+10z^2+5z+1\\)"
+            },
+            {
+              "explain": "The \\(z^5\\) terms CANCEL: the highest power is \\(z^4\\), so this is a polynomial of degree 4.",
+              "work": "\\(5z^4+10z^3+10z^2+5z+1=0\\)"
+            },
+            {
+              "explain": "A degree-4 polynomial has at most 4 roots, so the equation has 4 roots (not 5).",
+              "work": "<span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "does NOT have five roots",
+              "note": "The fifth powers cancel, so the degree drops to four."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q16cii",
+          "type": "mc",
+          "stem": "Consider the equation \\(z^5=(z+1)^5\\) where \\(z\\in\\mathbb{C}\\). Solve \\(z^5=(z+1)^5\\), giving your answer in the form \\(a+bi\\cot\\theta\\) where \\(a,b,\\theta\\in\\mathbb{R}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(z=-\\dfrac{1}{2}-\\dfrac{1}{2}i\\cot\\dfrac{k\\pi}{5},\\ k=1,2,3,4\\)",
+            "\\(z=-\\dfrac{1}{2}+\\dfrac{1}{2}i\\cot\\dfrac{k\\pi}{5},\\ k=0,1,2,3,4\\)",
+            "\\(z=\\dfrac{1}{2}-\\dfrac{1}{2}i\\cot\\dfrac{2k\\pi}{5},\\ k=1,2,3,4\\)",
+            "\\(z=-\\dfrac{1}{2}-\\dfrac{1}{2}i\\tan\\dfrac{k\\pi}{5},\\ k=1,2,3,4\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both sides by \\(z^5\\) (note \\(z=0\\) is not a root) to get \\(\\left(\\dfrac{z+1}{z}\\right)^5=1\\), so \\(\\dfrac{z+1}{z}\\) is a fifth root of unity. Then solve for \\(z\\) and use a half-angle identity.",
+          "steps": [
+            {
+              "explain": "Divide by \\(z^5\\).",
+              "work": "\\(\\left(\\dfrac{z+1}{z}\\right)^5=1\\)"
+            },
+            {
+              "explain": "So \\(\\dfrac{z+1}{z}=1+\\dfrac{1}{z}=\\omega\\), a fifth root of unity, but \\(\\omega\\ne1\\) (else \\(\\dfrac{1}{z}=0\\) is impossible).",
+              "work": "\\(\\omega=\\text{cis}\\dfrac{2k\\pi}{5},\\ k=1,2,3,4\\)"
+            },
+            {
+              "explain": "Solve for \\(z\\).",
+              "work": "\\(\\dfrac{1}{z}=\\omega-1\\;\\Rightarrow\\;z=\\dfrac{1}{\\omega-1}\\)"
+            },
+            {
+              "explain": "Write \\(\\omega-1\\) with half angles: \\(\\omega-1=\\cos\\theta-1+i\\sin\\theta=-2\\sin^2\\dfrac{\\theta}{2}+2i\\sin\\dfrac{\\theta}{2}\\cos\\dfrac{\\theta}{2}\\), where \\(\\theta=\\dfrac{2k\\pi}{5}\\).",
+              "work": "\\(\\omega-1=2i\\sin\\dfrac{\\theta}{2}\\left(\\cos\\dfrac{\\theta}{2}+i\\sin\\dfrac{\\theta}{2}\\right)\\)"
+            },
+            {
+              "explain": "Take the reciprocal: \\(\\dfrac{1}{\\cos\\phi+i\\sin\\phi}=\\cos\\phi-i\\sin\\phi\\) with \\(\\phi=\\dfrac{\\theta}{2}=\\dfrac{k\\pi}{5}\\).",
+              "work": "\\(z=\\dfrac{\\cos\\phi-i\\sin\\phi}{2i\\sin\\phi}=\\dfrac{\\cos\\phi}{2i\\sin\\phi}-\\dfrac{i\\sin\\phi}{2i\\sin\\phi}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{1}{i}=-i\\).",
+              "work": "\\(z=-\\dfrac{1}{2}-\\dfrac{i}{2}\\cot\\phi=-\\dfrac{1}{2}-\\dfrac{1}{2}i\\cot\\dfrac{k\\pi}{5},\\quad k=1,2,3,4\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "All roots have real part \\(-\\dfrac{1}{2}\\) (on a vertical line).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Divide by the fifth power of z; the ratio is a fifth root of unity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "cranbrook2020e2-q16ciii",
+          "type": "mc",
+          "stem": "The roots of \\(z^5=(z+1)^5\\) are \\(z=-\\dfrac{1}{2}-\\dfrac{1}{2}i\\cot\\dfrac{k\\pi}{5}\\) for \\(k=1,2,3,4\\). Describe the geometrical relationship between these roots and the roots of the equation \\((iz)^5=(iz+1)^5\\). Provide some mathematical working to justify your answer.",
+          "difficulty": "hard",
+          "options": [
+            "The new roots are the old roots rotated by 90° clockwise about the origin (multiplied by \\(-i\\)): they lie on the horizontal line \\(\\text{Im}(z)=\\dfrac{1}{2}\\).",
+            "The new roots are the old roots rotated by 90° anticlockwise about the origin (multiplied by \\(i\\)).",
+            "The new roots are the old roots reflected in the real axis.",
+            "The new roots are the same as the old roots."
+          ],
+          "answer": 0,
+          "hint": "Let \\(w=iz\\). Then the new equation is \\(w^5=(w+1)^5\\), the SAME equation, so \\(w\\) takes the old values. Then \\(z=\\dfrac{w}{i}=-iw\\): what does multiplying by \\(-i\\) do geometrically?",
+          "steps": [
+            {
+              "explain": "Put \\(w=iz\\) in the new equation.",
+              "work": "\\((iz)^5=(iz+1)^5\\;\\Rightarrow\\;w^5=(w+1)^5\\)"
+            },
+            {
+              "explain": "So \\(w\\) is one of the OLD roots.",
+              "work": "\\(w=-\\dfrac{1}{2}-\\dfrac{1}{2}i\\cot\\dfrac{k\\pi}{5}\\)"
+            },
+            {
+              "explain": "Solve for the new root \\(z\\): \\(z=\\dfrac{w}{i}=-iw\\).",
+              "work": "\\(z=-i\\left(-\\dfrac{1}{2}-\\dfrac{1}{2}i\\cot\\dfrac{k\\pi}{5}\\right)=\\dfrac{i}{2}-\\dfrac{1}{2}\\cot\\dfrac{k\\pi}{5}\\)"
+            },
+            {
+              "explain": "Multiplying by \\(-i\\) rotates a point by \\(90^\\circ\\) CLOCKWISE about the origin (modulus unchanged, argument \\(-\\dfrac{\\pi}{2}\\)). The old roots lay on the vertical line \\(\\text{Re}(z)=-\\dfrac{1}{2}\\); the new roots lie on the horizontal line \\(\\text{Im}(z)=\\dfrac{1}{2}\\).",
+              "work": "rotation by 90° clockwise about the origin → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "geometrical relationship",
+              "note": "Let w equal iz: the new roots are the old ones multiplied by minus i."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
+            "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "The printed equation reads 'iz^5 = (iz+1)^5'; interpreted as (iz)^5 = (iz+1)^5 (the only reading with a clean geometric relationship)."
           }
         }
       ]
