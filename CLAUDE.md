@@ -198,6 +198,22 @@ never a raster image, and make it **clean and good-looking**:
 - Text-only options cannot render figures: put option graphics into ONE labelled A-D figure on the question and keep text options "A"…"D".
 - Check the result by rendering it (Playwright screenshot) before committing.
 
+## Figures from exam papers: faithful clean SVG, angle labels between the segments (2026-11-18)
+
+Applies whenever you add or edit a figure. Standing rule, never needs to be repeated.
+(Incident: `abbotsleigh2024-y11a-q31` bearing figure had 036°/156° labels sitting on the lines and arcs
+that were not between the two segments; `wghs2015-y10`/`abbotsleigh2024` figures were auto-traced blobs.)
+
+- Re-draw the original paper's figure by hand as clean SVG (view the source PDF page). Never ship an
+  auto-traced/vectorised image. Keep the original's layout, labels, tick marks, "NOT TO SCALE".
+- A question's own figure shows only what the paper gives. Answer marks (filled values, angles you
+  derived, highlights) go in `steps[].figure` only. Never reuse the stem figure unchanged as a step figure.
+- Angles: draw an arc between the two segments; put the label **inside that wedge** (on the bisector,
+  radius beyond the arc). Check by code that the label box clears both segments by >1px (assert), then
+  render and look. Bearings: arc clockwise from the north line. Side-length labels sit outside the side
+  (inside the triangle when a north line or arcs occupy the outside).
+- `width="100%"` + `style="max-width:Npx"`, text with a white halo, no label overlapping a line or another label.
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)

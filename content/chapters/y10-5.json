@@ -3935,94 +3935,109 @@
           }
         },
         {
-          "id": "wghs2015-y10-a6a",
-          "type": "mc",
-          "stem": "Without solving, state whether the solutions of the following quadratic equation are: (i) real / unreal (ii) rational / irrational (iii) equal/different. \\(x^2 - 5x + 12 = 0\\)",
+          "id": "wghs2015-y10-a6",
+          "type": "multipart",
           "difficulty": "medium",
-          "options": [
-            "Unreal solutions",
-            "Real, rational and different",
-            "Real, irrational and different",
-            "Real and equal"
-          ],
-          "answer": 0,
-          "hint": "Find the discriminant \\(\\Delta = b^2 - 4ac\\). If \\(\\Delta < 0\\) the solutions are UNREAL; if \\(\\Delta > 0\\) they are real and different; if \\(\\Delta = 0\\) they are equal.",
-          "steps": [
+          "timeLimit": 120,
+          "stem": "Without solving, state whether the solutions of each quadratic equation below are:<br/>(i) real or unreal<br/>(ii) rational or irrational<br/>(iii) equal or different",
+          "parts": [
             {
-              "explain": "Identify a, b, c.",
-              "work": "\\(a = 1,\\quad b = -5,\\quad c = 12\\)"
+              "id": "wghs2015-y10-a6a",
+              "type": "mc",
+              "stem": "Without solving, describe the solutions of \\(x^2-5x+12=0\\).",
+              "difficulty": "medium",
+              "options": [
+                "Unreal solutions",
+                "Real, rational and different",
+                "Real, irrational and different",
+                "Real and equal"
+              ],
+              "answer": 0,
+              "hint": "Find the discriminant \\(\\Delta = b^2 - 4ac\\). If \\(\\Delta < 0\\) the solutions are UNREAL; if \\(\\Delta > 0\\) they are real and different; if \\(\\Delta = 0\\) they are equal.",
+              "steps": [
+                {
+                  "explain": "Identify a, b, c.",
+                  "work": "\\(a = 1,\\quad b = -5,\\quad c = 12\\)"
+                },
+                {
+                  "explain": "Substitute into the discriminant.",
+                  "work": "\\(\\Delta = b^2 - 4ac = (-5)^2 - 4(1)(12)\\)"
+                },
+                {
+                  "explain": "Calculate.",
+                  "work": "\\(\\Delta = 25 - 48 = \\textcolor{#b45309}{-23}\\)"
+                },
+                {
+                  "explain": "\\(\\Delta < 0\\), so the square root in the quadratic formula is of a negative number — there are no real solutions.",
+                  "work": "<span style=\"color:#047857;font-weight:700\">Unreal solutions</span> (so (ii) and (iii) do not apply)"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Without solving",
+                  "note": "Use the discriminant only."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+                "school": "Willoughby Girls High School",
+                "grade": "10",
+                "origin": "teacher"
+              }
             },
             {
-              "explain": "Substitute into the discriminant.",
-              "work": "\\(\\Delta = b^2 - 4ac = (-5)^2 - 4(1)(12)\\)"
-            },
-            {
-              "explain": "Calculate.",
-              "work": "\\(\\Delta = 25 - 48 = \\textcolor{#b45309}{-23}\\)"
-            },
-            {
-              "explain": "\\(\\Delta < 0\\), so the square root in the quadratic formula is of a negative number — there are no real solutions.",
-              "work": "<span style=\"color:#047857;font-weight:700\">Unreal solutions</span> (so (ii) and (iii) do not apply)"
+              "id": "wghs2015-y10-a6b",
+              "type": "mc",
+              "stem": "Without solving, describe the solutions of \\(x^2-2x-7=0\\).",
+              "difficulty": "medium",
+              "options": [
+                "Real, irrational and different",
+                "Real, rational and different",
+                "Unreal solutions",
+                "Real and equal"
+              ],
+              "answer": 0,
+              "hint": "Find \\(\\Delta = b^2 - 4ac\\). Positive → real and different. Then ask: is the discriminant a PERFECT SQUARE (rational) or not (irrational)?",
+              "steps": [
+                {
+                  "explain": "Identify a, b, c.",
+                  "work": "\\(a = 1,\\quad b = -2,\\quad c = -7\\)"
+                },
+                {
+                  "explain": "Substitute into the discriminant.",
+                  "work": "\\(\\Delta = (-2)^2 - 4(1)(-7) = 4 + 28\\)"
+                },
+                {
+                  "explain": "Calculate.",
+                  "work": "\\(\\Delta = \\textcolor{#b45309}{32} > 0\\) → (i) REAL and (iii) DIFFERENT"
+                },
+                {
+                  "explain": "Is 32 a perfect square? \\(5^2 = 25\\) and \\(6^2 = 36\\), so \\(\\sqrt{32}\\) is not a whole number — it is a surd.",
+                  "work": "(ii) IRRATIONAL"
+                },
+                {
+                  "explain": "Combine the three descriptions.",
+                  "work": "<span style=\"color:#047857;font-weight:700\">Real, irrational and different solutions</span>  ✓"
+                }
+              ],
+              "keyPoints": [
+                {
+                  "text": "Without solving",
+                  "note": "Use the discriminant only."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
+                "school": "Willoughby Girls High School",
+                "grade": "10",
+                "origin": "teacher"
+              }
             }
           ],
-          "keyPoints": [
-            {
-              "text": "Without solving",
-              "note": "Use the discriminant only."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
-            "school": "Willoughby Girls High School",
-            "grade": "10",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "wghs2015-y10-a6b",
-          "type": "mc",
-          "stem": "Without solving, state whether the solutions of the following quadratic equation are: (i) real / unreal (ii) rational / irrational (iii) equal/different. \\(x^2 - 2x - 7 = 0\\)",
-          "difficulty": "medium",
-          "options": [
-            "Real, irrational and different",
-            "Real, rational and different",
-            "Unreal solutions",
-            "Real and equal"
-          ],
-          "answer": 0,
-          "hint": "Find \\(\\Delta = b^2 - 4ac\\). Positive → real and different. Then ask: is the discriminant a PERFECT SQUARE (rational) or not (irrational)?",
-          "steps": [
-            {
-              "explain": "Identify a, b, c.",
-              "work": "\\(a = 1,\\quad b = -2,\\quad c = -7\\)"
-            },
-            {
-              "explain": "Substitute into the discriminant.",
-              "work": "\\(\\Delta = (-2)^2 - 4(1)(-7) = 4 + 28\\)"
-            },
-            {
-              "explain": "Calculate.",
-              "work": "\\(\\Delta = \\textcolor{#b45309}{32} > 0\\) → (i) REAL and (iii) DIFFERENT"
-            },
-            {
-              "explain": "Is 32 a perfect square? \\(5^2 = 25\\) and \\(6^2 = 36\\), so \\(\\sqrt{32}\\) is not a whole number — it is a surd.",
-              "work": "(ii) IRRATIONAL"
-            },
-            {
-              "explain": "Combine the three descriptions.",
-              "work": "<span style=\"color:#047857;font-weight:700\">Real, irrational and different solutions</span>  ✓"
-            }
-          ],
-          "keyPoints": [
-            {
-              "text": "Without solving",
-              "note": "Use the discriminant only."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
