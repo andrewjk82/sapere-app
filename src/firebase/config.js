@@ -5,6 +5,8 @@ import {
   initializeFirestore,
   persistentLocalCache,
   persistentMultipleTabManager,
+  terminate,
+  clearIndexedDbPersistence,
 } from "firebase/firestore";
 import { getMessaging, getToken, isSupported, onMessage } from "firebase/messaging";
 
@@ -58,6 +60,32 @@ try {
   firestoreDb = getFirestore(app);
 }
 export const db = firestoreDb;
+
+// Last resort for a device whose Firestore reads never answer even in long-polling mode: its on-device copy of the
+// data (IndexedDB) is damaged. Drops that copy and lets the next start rebuild it from the server. At most once a day
+// per device, so a device with another kind of problem cannot loop. Returns true when a reload should follow.
+const CACHE_RESET_KEY = 'sapere:firestoreCacheReset';
+export const resetFirestoreCacheOncePerDay = async () => {
+  const today = new Date().toLocaleDateString('en-CA');
+  try {
+    if (window.localStorage.getItem(CACHE_RESET_KEY) === today) return false;
+    window.localStorage.setItem(CACHE_RESET_KEY, today);
+  } catch { return false; }
+  try { await Promise.race([terminate(firestoreDb), new Promise((r) => setTimeout(r, 3000))]); } catch { /* ignore */ }
+  try {
+    await Promise.race([clearIndexedDbPersistence(firestoreDb), new Promise((_, rej) => setTimeout(() => rej(new Error('clear timeout')), 5000))]);
+  } catch {
+    // Could not clear through the SDK: remove the databases directly.
+    try {
+      const dbs = (await window.indexedDB.databases?.()) || [];
+      await Promise.all(dbs.filter((d) => d.name && d.name.startsWith('firestore/')).map((d) => new Promise((res) => {
+        const req = window.indexedDB.deleteDatabase(d.name);
+        req.onsuccess = res; req.onerror = res; req.onblocked = res;
+      })));
+    } catch { /* ignore */ }
+  }
+  return true;
+};
 
 const VAPID_KEY = 'BKWJEPa-4K08Rcrta2QX7iYT1PBpDUlgdsUXRLpBcA6ClzltUlu-yzWm427sezrUXfnI1Wz1ux6zF_ihgZ3Zuco';
 

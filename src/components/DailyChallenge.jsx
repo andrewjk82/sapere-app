@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
-import { db, wantsForcedLongPolling, requestForcedLongPolling } from '../firebase/config';
+import { db, wantsForcedLongPolling, requestForcedLongPolling, resetFirestoreCacheOncePerDay } from '../firebase/config';
 import {
   doc, getDoc, setDoc, deleteDoc, collection, addDoc, getDocs, query, updateDoc, serverTimestamp, writeBatch, increment, deleteField,
 } from 'firebase/firestore';
@@ -165,6 +165,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [isFinishing, setIsFinishing] = useState(false);
   const isFinishingRef = useRef(false);
   const [loading, setLoading] = useState(false);
+  const [loadStage, setLoadStage] = useState('');
   const [challengeMode, setChallengeMode] = useState('normal');
   const challengeModeRef = useRef('normal');
 
@@ -753,6 +754,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // signature change; 45s lets it finish instead of hard-failing with
       // "Failed to start challenge (Assignment load timed out)".
       stage = 'load';
+      setLoadStage('Getting today’s questions');
       const assignment = await Promise.race([
         fetchOrCreateDailyAssignment({
           uid: user?.uid,
@@ -763,6 +765,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 45000)),
       ]);
       stage = 'prepare';
+      setLoadStage('Preparing the quiz');
       const rawQs = (assignment.questions || []).map(correctQuestionAnswer);
       if (rawQs.length === 0) throw new Error('No daily assignment questions were generated.');
       const combinedQs = applyModeTimeScale(rawQs, mode.id);
@@ -810,6 +813,15 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         showToast('The connection is slow. Reconnecting in a safer mode…', 'info');
         setTimeout(() => window.location.reload(), 1500);
         return;
+      }
+      // Already in long-polling mode and still no answer: the copy of the data kept on this device is the likely culprit
+      // (an iPad whose phone works fine). Clear it once and reload; the next start rebuilds it from the server.
+      if (stage === 'load' && (!error?.message || /timed out|timeout/i.test(error.message)) && wantsForcedLongPolling()) {
+        if (await resetFirestoreCacheOncePerDay()) {
+          showToast('Refreshing this device’s saved data…', 'info');
+          setTimeout(() => window.location.reload(), 1200);
+          return;
+        }
       }
       showToast(`Failed to start challenge (${stage}: ${detail}). Please check your assigned curriculum or try again later.`, 'error');
       if (setIsLocked) setIsLocked(false);
@@ -2509,7 +2521,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     );
   };
 
-  if (loading) return <LoadingScreen />;
+  if (loading) return <LoadingScreen detail={loadStage} />;
 
   return (
     <div className="app-page">
