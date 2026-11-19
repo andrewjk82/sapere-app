@@ -22025,31 +22025,40 @@
           "id": "y10-2f-q20biii",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Show that: \\(k = 1 + \\frac{1}{k}\\). State your algebraic proof steps.",
-          "answer": "Proof: \\(1 + \\frac{1}{k} = 1 + \\frac{\\sqrt{5}-1}{2} = \\frac{\\sqrt{5}+1}{2} = k\\).",
-          "solution": "Evaluate Right Hand Side: \\(1 + \\frac{1}{k} = 1 + \\frac{\\sqrt{5}-1}{2} = \\frac{2 + \\sqrt{5} - 1}{2} = \\frac{\\sqrt{5}+1}{2} = k\\). Thus, Left Hand Side equals Right Hand Side.",
+          "stem": "Given that \\(k=\\dfrac{\\sqrt{5}+1}{2}\\), show that \\(k=1+\\dfrac{1}{k}\\). State your algebraic proof steps.",
+          "answer": "Rationalise: \\(\\dfrac{1}{k}=\\dfrac{2}{\\sqrt{5}+1}\\times\\dfrac{\\sqrt{5}-1}{\\sqrt{5}-1}=\\dfrac{2\\left(\\sqrt{5}-1\\right)}{4}=\\dfrac{\\sqrt{5}-1}{2}\\). Then \\(1+\\dfrac{1}{k}=\\dfrac{2}{2}+\\dfrac{\\sqrt{5}-1}{2}=\\dfrac{\\sqrt{5}+1}{2}=k\\).",
+          "solution": "Rationalise: \\(\\dfrac{1}{k}=\\dfrac{2}{\\sqrt{5}+1}\\times\\dfrac{\\sqrt{5}-1}{\\sqrt{5}-1}=\\dfrac{2\\left(\\sqrt{5}-1\\right)}{4}=\\dfrac{\\sqrt{5}-1}{2}\\). Then \\(1+\\dfrac{1}{k}=\\dfrac{2}{2}+\\dfrac{\\sqrt{5}-1}{2}=\\dfrac{\\sqrt{5}+1}{2}=k\\).",
           "steps": [
             {
-              "explain": "Start from the established relationship \\(k^2 = k+1\\).",
-              "work": "\\( k^2 = k+1 \\)"
+              "explain": "Work with the right-hand side. First write \\(\\dfrac{1}{k}\\) using the given value of \\(k\\).",
+              "work": "\\(\\dfrac{1}{k}=1\\div\\dfrac{\\sqrt{5}+1}{2}=\\dfrac{2}{\\sqrt{5}+1}\\)"
             },
             {
-              "explain": "Divide both sides by \\(k\\) (since \\(k \\neq 0\\)).",
-              "work": "\\( \\\\frac{k^2}{k} = \\\\frac{k+1}{k} \\)"
+              "explain": "Rationalise the denominator: multiply top and bottom by the conjugate \\(\\sqrt{5}-1\\).",
+              "work": "\\(\\dfrac{2}{\\sqrt{5}+1}\\times\\dfrac{\\sqrt{5}-1}{\\sqrt{5}-1}=\\dfrac{2\\left(\\sqrt{5}-1\\right)}{\\left(\\sqrt{5}\\right)^2-1^2}\\)"
             },
             {
-              "explain": "Simplify.",
-              "work": "\\( k = \\\\frac{k}{k} + \\\\frac{1}{k} = 1 + \\\\frac{1}{k} \\)"
+              "explain": "Simplify the denominator: \\(5-1=4\\), then cancel the common factor 2.",
+              "work": "\\(\\dfrac{2\\left(\\sqrt{5}-1\\right)}{4}=\\dfrac{\\sqrt{5}-1}{2}\\)"
+            },
+            {
+              "explain": "Add 1 by writing it as \\(\\dfrac{2}{2}\\).",
+              "work": "\\(1+\\dfrac{1}{k}=\\dfrac{2}{2}+\\dfrac{\\sqrt{5}-1}{2}=\\dfrac{2+\\sqrt{5}-1}{2}=\\dfrac{\\sqrt{5}+1}{2}\\)"
+            },
+            {
+              "explain": "This equals the given value of \\(k\\), so the right-hand side equals the left-hand side.",
+              "work": "\\(1+\\dfrac{1}{k}=\\dfrac{\\sqrt{5}+1}{2}=k\\)"
             }
           ],
           "timeLimit": 90,
           "xp": 3,
           "keyPoints": [
             {
-              "text": "Show that: \\(k = 1 + \\frac{1}{k}\\). State your algebraic proof steps",
-              "note": "Expand or transform one side using the surd laws, and show each algebraic step until it matches the other side."
+              "text": "show that",
+              "note": "Start from one side, rationalise the denominator and show each step until it matches the other side."
             }
-          ]
+          ],
+          "hint": "Find \\(\\dfrac{1}{k}\\) first and rationalise the denominator, then add 1."
         },
         {
           "id": "y10-2f-q21",

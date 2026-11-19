@@ -17,6 +17,7 @@ import { answersMatch } from '../utils/answerMatching';
 import { resolveCorrectOptionIndex, resolveCorrectOptionText } from '../utils/mcOptionShuffle';
 import { adminGetQuestion } from '../services/contentLoader';
 import { contentPatch } from '../services/contentApi';
+import { retryOnTimeout, withTimeout } from '../utils/withTimeout';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -245,6 +246,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   // opening this screen must not add a second grading_queue subscription.
   const { pendingGrading: gradingQueueRaw } = useAdminFeed();
   const [reportsLoading, setReportsLoading] = useState(true);
+  const [reportsError, setReportsError] = useState('');
   const gradingLoading = false;
   const [editingQuestion, setEditingQuestion] = useState(null);
   const [previewReport, setPreviewReport] = useState(null);
@@ -358,8 +360,15 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   const fetchReports = useCallback(async () => {
     try {
       const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
-      const snapshot = await getDocs(qReports);
+      // A read that gets no answer (stalled connection / damaged on-device cache) never fails by itself: ask again
+      // once, then show an error with a Retry button instead of "Loading items..." forever.
+      const snapshot = await retryOnTimeout(() => getDocs(qReports), { ms: 10000, tries: 2 });
       const rawReports = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+      // Show the list right away; the live-question enrichment below fills in multi-part details afterwards, so a slow
+      // or stuck content download can no longer keep the whole screen on "Loading items...".
+      setReports(rawReports);
+      setReportsError('');
+      setReportsLoading(false);
 
       // Reports save only a lightweight questionData snapshot that omits
       // subQuestions, so multi-part questions showed only the parent prompt.
@@ -385,7 +394,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
       const liveById = {};
       await Promise.all(idsToFetch.map(async (qid) => {
         try {
-          const d = await readLiveQuestion(qid);
+          const d = await withTimeout(readLiveQuestion(qid), 15000);
           if (d) liveById[qid] = d;
         } catch { /* non-fatal — report still renders its parent prompt */ }
       }));
@@ -405,8 +414,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
         return r;
       });
       setReports(enriched);
+      setReportsError('');
     } catch (err) {
       console.error('Reports fetch error:', err);
+      setReportsError(err?.message === 'timeout' ? 'The reports did not load in time.' : (err?.message || 'The reports could not be loaded.'));
     } finally {
       setReportsLoading(false);
     }
@@ -1578,7 +1589,13 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
       </div>
 
       <div style={{ padding: '0 24px 40px', maxWidth: '900px' }}>
-        {loading ? (
+        {viewMode === 'reports' && !loading && reportsError && reports.length === 0 ? (
+          <div style={{ textAlign: 'center', padding: '80px 0' }}>
+            <p style={{ color: '#be123c', fontWeight: 800, marginBottom: 6 }}>{reportsError}</p>
+            <p style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem', marginBottom: 16 }}>Check the connection, then try again.</p>
+            <button type="button" onClick={() => { setReportsLoading(true); fetchReports(); }} style={{ height: 40, padding: '0 20px', borderRadius: 12, border: 0, background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Retry</button>
+          </div>
+        ) : loading ? (
           <div style={{ textAlign: 'center', padding: '100px 0' }}>
             <div className="sapere-loader" style={{ margin: '0 auto 20px' }}></div>
             <p style={{ color: '#94a3b8', fontWeight: 700 }}>Loading items...</p>
