@@ -2175,6 +2175,52 @@
             "page": 5,
             "note": "The handwritten answer in the scan is incomplete; the value is 28."
           }
+        },
+        {
+          "id": "form2an2020-q1e",
+          "type": "mc",
+          "stem": "Find the value of \\(x^2+3x\\) when \\(x=2\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(7\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace every \\(x\\) with 2, then use the order of operations (powers first).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=2\\) (use brackets).",
+              "work": "\\((2)^2+3(2)\\)"
+            },
+            {
+              "explain": "Powers first, then multiplication.",
+              "work": "\\(4+6\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(10\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(2^2\\) is \\(2\\times2=4\\), not \\(2\\times 2\\times 2\\) or \\(2+2\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value",
+              "note": "Substitute \\(x=2\\) and follow the order of operations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3144,6 +3190,236 @@
             "sourceMarks": 2,
             "page": 4
           }
+        },
+        {
+          "id": "form2an2020-q2fi",
+          "type": "mc",
+          "stem": "Solve: \\(x-5=12\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=17\\)",
+            "\\(x=7\\)",
+            "\\(x=-7\\)",
+            "\\(x=60\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo the subtraction by ADDING 5 to both sides.",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides.",
+              "work": "\\(x-5+5=12+5\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x=17\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(17-5=12\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Do the opposite operation to both sides."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q2fii",
+          "type": "mc",
+          "stem": "Solve: \\(7x+4=18\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=2\\)",
+            "\\(x=22\\)",
+            "\\(x=\\dfrac{22}{7}\\)",
+            "\\(x=3\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo the +4 first (subtract 4), then undo the \\(\\times7\\) (divide by 7).",
+          "steps": [
+            {
+              "explain": "Subtract 4 from both sides.",
+              "work": "\\(7x+4-4=18-4\\)  →  \\(7x=14\\)"
+            },
+            {
+              "explain": "Divide both sides by 7.",
+              "work": "\\(x=\\dfrac{14}{7}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x=2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(7\\times2+4=18\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Undo +4 first, then divide by 7."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q4di",
+          "type": "mc",
+          "stem": "Write an inequation corresponding with the given number line graph (closed circle at 2, arrow to the left).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 100\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"70\" x2=\"350\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M358,70 l-9,-4.5 v9z\" fill=\"#1e293b\"/><line x1=\"40\" y1=\"65\" x2=\"40\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"40\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><line x1=\"88\" y1=\"65\" x2=\"88\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"88\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"136\" y1=\"65\" x2=\"136\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"136\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"184\" y1=\"65\" x2=\"184\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><line x1=\"232\" y1=\"65\" x2=\"232\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"232\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><line x1=\"280\" y1=\"65\" x2=\"280\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"280\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5</text><line x1=\"328\" y1=\"65\" x2=\"328\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"328\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6</text><line x1=\"136\" y1=\"44\" x2=\"26\" y2=\"44\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M22,44 l9,-4.5 v9z\" fill=\"#1e293b\"/><circle cx=\"136\" cy=\"44\" r=\"5\" fill=\"#1e293b\"/><text x=\"366\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text></svg>"
+          },
+          "options": [
+            "\\(x\\leq2\\)",
+            "\\(x<2\\)",
+            "\\(x\\geq2\\)",
+            "\\(x>2\\)"
+          ],
+          "answer": 0,
+          "hint": "Closed circle means the number is INCLUDED (≤ or ≥). The arrow points left, towards smaller numbers.",
+          "steps": [
+            {
+              "explain": "Closed (filled) circle at 2: 2 is included, so use \\(\\leq\\) or \\(\\geq\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 100\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"70\" x2=\"350\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M358,70 l-9,-4.5 v9z\" fill=\"#1e293b\"/><line x1=\"40\" y1=\"65\" x2=\"40\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"40\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><line x1=\"88\" y1=\"65\" x2=\"88\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"88\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"136\" y1=\"65\" x2=\"136\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"136\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"184\" y1=\"65\" x2=\"184\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><line x1=\"232\" y1=\"65\" x2=\"232\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"232\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><line x1=\"280\" y1=\"65\" x2=\"280\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"280\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5</text><line x1=\"328\" y1=\"65\" x2=\"328\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"328\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6</text><line x1=\"136\" y1=\"44\" x2=\"26\" y2=\"44\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M22,44 l9,-4.5 v9z\" fill=\"#1e293b\"/><circle cx=\"136\" cy=\"44\" r=\"5\" fill=\"#1e293b\"/><text x=\"366\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"2\" y=\"2\" width=\"376\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The arrow points LEFT: the values are less than or equal to 2.",
+              "work": ""
+            },
+            {
+              "explain": "Write the inequation.",
+              "work": "\\(x\\leq2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write an inequation",
+              "note": "Closed circle: included; arrow left: less than."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q4dii",
+          "type": "mc",
+          "stem": "Write an inequation corresponding with the given number line graph (open circle at 4, arrow to the right).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 100\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"70\" x2=\"350\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M358,70 l-9,-4.5 v9z\" fill=\"#1e293b\"/><line x1=\"40\" y1=\"65\" x2=\"40\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"40\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><line x1=\"88\" y1=\"65\" x2=\"88\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"88\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"136\" y1=\"65\" x2=\"136\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"136\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"184\" y1=\"65\" x2=\"184\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><line x1=\"232\" y1=\"65\" x2=\"232\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"232\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><line x1=\"280\" y1=\"65\" x2=\"280\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"280\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5</text><line x1=\"328\" y1=\"65\" x2=\"328\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"328\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6</text><line x1=\"232\" y1=\"44\" x2=\"352\" y2=\"44\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M358,44 l-9,-4.5 v9z\" fill=\"#1e293b\"/><circle cx=\"232\" cy=\"44\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"366\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text></svg>"
+          },
+          "options": [
+            "\\(x>4\\)",
+            "\\(x\\geq4\\)",
+            "\\(x<4\\)",
+            "\\(x\\leq4\\)"
+          ],
+          "answer": 0,
+          "hint": "Open circle means the number is NOT included (< or >). The arrow points right, towards bigger numbers.",
+          "steps": [
+            {
+              "explain": "Open circle at 4: 4 is not included, so use \\(<\\) or \\(>\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 100\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"70\" x2=\"350\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M358,70 l-9,-4.5 v9z\" fill=\"#1e293b\"/><line x1=\"40\" y1=\"65\" x2=\"40\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"40\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><line x1=\"88\" y1=\"65\" x2=\"88\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"88\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"136\" y1=\"65\" x2=\"136\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"136\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"184\" y1=\"65\" x2=\"184\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><line x1=\"232\" y1=\"65\" x2=\"232\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"232\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">4</text><line x1=\"280\" y1=\"65\" x2=\"280\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"280\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5</text><line x1=\"328\" y1=\"65\" x2=\"328\" y2=\"75\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"328\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6</text><line x1=\"232\" y1=\"44\" x2=\"352\" y2=\"44\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M358,44 l-9,-4.5 v9z\" fill=\"#1e293b\"/><circle cx=\"232\" cy=\"44\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"366\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">x</text><rect x=\"2\" y=\"2\" width=\"376\" height=\"96\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The arrow points RIGHT: the values are greater than 4.",
+              "work": ""
+            },
+            {
+              "explain": "Write the inequation.",
+              "work": "\\(x>4\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write an inequation",
+              "note": "Open circle: not included; arrow right: greater than."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q5b",
+          "type": "mc",
+          "stem": "Solve \\(2x-1\\leq3\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x\\leq2\\)",
+            "\\(x\\geq2\\)",
+            "\\(x\\leq1\\)",
+            "\\(x\\leq4\\)"
+          ],
+          "answer": 0,
+          "hint": "Solve like an equation: undo −1 first, then divide by 2. The inequality sign stays the same (we divide by a POSITIVE).",
+          "steps": [
+            {
+              "explain": "Add 1 to both sides.",
+              "work": "\\(2x\\leq3+1=4\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x\\leq\\dfrac{4}{2}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x\\leq2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(x=2\\) gives \\(2(2)-1=3\\leq3\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Treat it like an equation; the sign stays when dividing by a positive."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3520,6 +3796,148 @@
             "sourceMarks": 2,
             "page": 5
           }
+        },
+        {
+          "id": "form2an2020-q6b",
+          "type": "mc",
+          "stem": "Three consecutive even numbers add to make 54. Form an equation and solve it to find the largest number.",
+          "difficulty": "medium",
+          "options": [
+            "\\(20\\)",
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(22\\)"
+          ],
+          "answer": 0,
+          "hint": "Let the smallest even number be \\(x\\). The next even numbers are \\(x+2\\) and \\(x+4\\).",
+          "steps": [
+            {
+              "explain": "Write the three numbers.",
+              "work": "\\(x,\\quad x+2,\\quad x+4\\)"
+            },
+            {
+              "explain": "Form the equation (they add to 54) and solve.",
+              "work": "\\(x+(x+2)+(x+4)=54\\ \\Rightarrow\\ 3x+6=54\\ \\Rightarrow\\ 3x=48\\ \\Rightarrow\\ x=16\\)"
+            },
+            {
+              "explain": "The numbers are 16, 18, 20. The largest is \\(x+4=20\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            },
+            {
+              "explain": "Check: \\(16+18+20=54\\) ✓. (16 is the SMALLEST, not the answer.)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Form an equation",
+              "note": "Let the smallest be x; the others are x + 2 and x + 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q9c",
+          "type": "mc",
+          "stem": "In a list of seven consecutive numbers a quarter of the smallest number is five less than a third of the largest number. Form an equation and hence calculate the value of the smallest number in the list.",
+          "difficulty": "hard",
+          "options": [
+            "\\(36\\)",
+            "\\(30\\)",
+            "\\(42\\)",
+            "\\(24\\)"
+          ],
+          "answer": 0,
+          "hint": "Let the smallest number be \\(x\\). Seven consecutive numbers: the largest is \\(x+6\\).",
+          "steps": [
+            {
+              "explain": "Smallest \\(x\\), largest \\(x+6\\) (7 numbers: add 6).",
+              "work": ""
+            },
+            {
+              "explain": "'A quarter of the smallest is five less than a third of the largest'.",
+              "work": "\\(\\dfrac{x}{4}=\\dfrac{x+6}{3}-5\\)"
+            },
+            {
+              "explain": "Multiply every term by 12 to clear the fractions.",
+              "work": "\\(3x=4(x+6)-60=4x+24-60=4x-36\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(x=36\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{36}{4}=9\\) and \\(\\dfrac{42}{3}-5=14-5=9\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Form an equation",
+              "note": "Smallest x; largest x + 6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q10c",
+          "type": "mc",
+          "stem": "Five positive integers (not necessarily all different) are written on five cards. Boris calculates the sum of the numbers on every pair of cards. He obtains only three different totals: 57, 70 and 83. What is the largest integer on any card?",
+          "difficulty": "hard",
+          "options": [
+            "\\(48\\)",
+            "\\(41\\)",
+            "\\(57\\)",
+            "\\(35\\)"
+          ],
+          "answer": 0,
+          "hint": "Order the numbers \\(a\\leq b\\leq c\\leq d\\leq e\\). The smallest pair sum is \\(a+b\\) and the largest is \\(d+e\\).",
+          "steps": [
+            {
+              "explain": "Only three different pair sums, so many numbers must be equal. The smallest sum is 57 and the largest is 83, the middle one is 70.",
+              "work": ""
+            },
+            {
+              "explain": "Try three equal middle cards, all equal to \\(m\\): then \\(m+m\\) is a pair sum, so \\(2m=70\\) and \\(m=35\\).",
+              "work": ""
+            },
+            {
+              "explain": "The smallest card gives the sum 57 with a 35, and the largest gives 83 with a 35: \\(57-35=22\\) and \\(83-35=48\\).",
+              "work": "\\(22,\\ 35,\\ 35,\\ 35,\\ 48\\)"
+            },
+            {
+              "explain": "Check the pair sums: \\(22+35=57\\), \\(35+35=70\\), \\(35+48=83\\), \\(22+48=70\\) ✓. Only 57, 70, 83 appear. Largest: \\(48\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "largest integer",
+              "note": "Equal numbers give repeated pair sums."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3781,6 +4199,90 @@
             "marks": 2,
             "part": "",
             "origin": "exam-import"
+          }
+        },
+        {
+          "id": "form2an2020-q5ai",
+          "type": "mc",
+          "stem": "Simplify the following: \\(\\dfrac{4b^3c}{3}\\div\\dfrac{2bc}{3}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(2b^2\\)",
+            "\\(\\dfrac{8b^4c^2}{9}\\)",
+            "\\(2b^4\\)",
+            "\\(\\dfrac{2}{b^2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Dividing by a fraction = MULTIPLY by its reciprocal (flip the second fraction).",
+          "steps": [
+            {
+              "explain": "Keep, change, flip.",
+              "work": "\\(\\dfrac{4b^3c}{3}\\times\\dfrac{3}{2bc}\\)"
+            },
+            {
+              "explain": "Cancel the 3s, then \\(4\\div2=2\\), \\(b^3\\div b=b^2\\) and the \\(c\\)s cancel.",
+              "work": "\\(\\dfrac{4b^3c\\times3}{3\\times2bc}=\\dfrac{4b^3}{2b}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(2b^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following",
+              "note": "Multiply by the reciprocal, then cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q5aii",
+          "type": "mc",
+          "stem": "Simplify the following: \\(\\dfrac{x}{2}-\\dfrac{x}{6}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x}{3}\\)",
+            "\\(\\dfrac{x}{4}\\)",
+            "\\(\\dfrac{2x}{3}\\)",
+            "\\(\\dfrac{x}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find a COMMON denominator first. The lowest common multiple of 2 and 6 is 6.",
+          "steps": [
+            {
+              "explain": "Rewrite the first fraction with denominator 6.",
+              "work": "\\(\\dfrac{x}{2}=\\dfrac{3x}{6}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\dfrac{3x}{6}-\\dfrac{x}{6}=\\dfrac{2x}{6}\\)"
+            },
+            {
+              "explain": "Cancel by 2.",
+              "work": "\\(\\dfrac{x}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the following",
+              "note": "Use a common denominator, subtract, then simplify."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]

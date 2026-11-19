@@ -2314,6 +2314,98 @@
             "sourceMarks": 1,
             "page": 5
           }
+        },
+        {
+          "id": "form2an2020-q1g",
+          "type": "mc",
+          "stem": "Factorise \\(xy-2x\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x(y-2)\\)",
+            "\\(y(x-2)\\)",
+            "\\(x(y+2)\\)",
+            "\\(2x(y-1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Look for a factor that appears in BOTH terms.",
+          "steps": [
+            {
+              "explain": "Both terms contain \\(x\\).",
+              "work": "\\(xy=x\\times y,\\qquad 2x=x\\times2\\)"
+            },
+            {
+              "explain": "Take the common factor \\(x\\) outside the bracket.",
+              "work": "\\(xy-2x=x(\\ \\ )\\)"
+            },
+            {
+              "explain": "Write what is left of each term inside the bracket.",
+              "work": "\\(x(y-2)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check by expanding: \\(x(y-2)=xy-2x\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise",
+              "note": "Take out the common factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q4ci",
+          "type": "mc",
+          "stem": "Expand \\(4(2y-7)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(8y-28\\)",
+            "\\(8y-7\\)",
+            "\\(6y-3\\)",
+            "\\(8y+28\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply EVERY term inside the bracket by 4.",
+          "steps": [
+            {
+              "explain": "First term.",
+              "work": "\\(4\\times2y=8y\\)"
+            },
+            {
+              "explain": "Second term (keep the minus sign).",
+              "work": "\\(4\\times(-7)=-28\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(8y-28\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(8y-7\\) forgets to multiply the 7.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand",
+              "note": "Multiply each term inside by the number outside."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },

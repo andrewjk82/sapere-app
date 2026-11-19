@@ -2561,6 +2561,98 @@
             "sourceMarks": 1,
             "page": 5
           }
+        },
+        {
+          "id": "form2an2020-q4cii",
+          "type": "mc",
+          "stem": "Expand and simplify \\(3-2(x-1)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(5-2x\\)",
+            "\\(1-2x\\)",
+            "\\(5+2x\\)",
+            "\\(2x-5\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(-2(x-1)\\) first. Multiplying \\(-2\\) by \\(-1\\) gives a POSITIVE.",
+          "steps": [
+            {
+              "explain": "Expand the bracket.",
+              "work": "\\(-2\\times x=-2x,\\qquad-2\\times(-1)=+2\\)"
+            },
+            {
+              "explain": "Rewrite.",
+              "work": "\\(3-2x+2\\)"
+            },
+            {
+              "explain": "Collect the numbers.",
+              "work": "\\(5-2x\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(1-2x\\) comes from \\(-2\\times(-1)=-2\\) (wrong sign).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Multiply the negative through the bracket, then collect like terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q7e",
+          "type": "mc",
+          "stem": "Expand and simplify \\((x+3)^2-2(x-1)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x^2+4x+11\\)",
+            "\\(x^2+4x+7\\)",
+            "\\(x^2-2x+11\\)",
+            "\\(x^2+4x+9\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\((x+3)^2\\) as \\((x+3)(x+3)\\) (it is NOT \\(x^2+9\\)). Then expand \\(-2(x-1)\\).",
+          "steps": [
+            {
+              "explain": "Expand the square.",
+              "work": "\\((x+3)^2=x^2+3x+3x+9=x^2+6x+9\\)"
+            },
+            {
+              "explain": "Expand the bracket.",
+              "work": "\\(-2(x-1)=-2x+2\\)"
+            },
+            {
+              "explain": "Add and collect like terms.",
+              "work": "\\(x^2+6x+9-2x+2=x^2+4x+11\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(x^2+4x+7\\) uses \\(-2\\times(-1)=-2\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Expand both brackets, then collect like terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },

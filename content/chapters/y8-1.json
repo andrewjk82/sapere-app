@@ -6537,6 +6537,52 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "form2an2020-q1ai",
+          "type": "mc",
+          "stem": "Calculate: \\(7\\times6-2\\times15\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(12\\)",
+            "\\(72\\)",
+            "\\(27\\)",
+            "\\(-12\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiplication comes BEFORE subtraction. Do both multiplications first.",
+          "steps": [
+            {
+              "explain": "Order of operations: multiply first, subtract last.",
+              "work": "\\(7\\times6-2\\times15\\)"
+            },
+            {
+              "explain": "Work out each product.",
+              "work": "\\(7\\times6=42,\\qquad2\\times15=30\\)"
+            },
+            {
+              "explain": "Now subtract.",
+              "work": "\\(42-30=12\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistake: working left to right gives \\((42-2)\\times15=600\\), which is wrong.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Multiply before you subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },

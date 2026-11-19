@@ -1040,6 +1040,90 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "form2an2020-q6e1",
+          "type": "review",
+          "stem": "Perform the constructions outlined on the loose sheet provided with this examination paper: construct a right angle at the point \\(A\\) on the given line.",
+          "difficulty": "hard",
+          "answer": "Compass-and-straightedge construction of a perpendicular at A: arcs of equal radius either side of A on the line, then larger equal arcs from those two points meeting above the line at X; join A to X. Then AX ⟂ the line (right angle).",
+          "manual": true,
+          "hint": "Mark two points the same distance from A on the line, then use arcs from those points to find a point above A.",
+          "steps": [
+            {
+              "explain": "Put the compass point on \\(A\\) and draw arcs that cut the line at two points \\(P\\) and \\(Q\\), one on each side of \\(A\\) (so \\(AP=AQ\\)).",
+              "work": ""
+            },
+            {
+              "explain": "Open the compass wider. From \\(P\\) and then from \\(Q\\) draw arcs of the SAME radius that cross above the line at \\(X\\).",
+              "work": ""
+            },
+            {
+              "explain": "Use the ruler to join \\(A\\) to \\(X\\).",
+              "work": ""
+            },
+            {
+              "explain": "\\(AX\\perp PQ\\), so the angle at \\(A\\) is a right angle (check with a protractor: \\(90^\\circ\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "constructions",
+              "note": "Use arcs of equal radius; do not rub out the construction arcs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher",
+            "note": "Loose sheet not included in the paper; stem reworded only to describe the first construction."
+          }
+        },
+        {
+          "id": "form2an2020-q6e2",
+          "type": "review",
+          "stem": "Perform the constructions outlined on the loose sheet provided with this examination paper: copy the angle \\(\\angle ABC\\) to the ray \\(YX\\) so that \\(\\angle XYZ=\\angle ABC\\).",
+          "difficulty": "hard",
+          "answer": "Copy the angle: arc from B cutting BA and BC at P, Q; same-radius arc from Y cutting YX at R; set compass to PQ and mark that distance from R to cut the arc at S; draw ray YS (Z on it). Then ∠XYZ = ∠ABC.",
+          "manual": true,
+          "hint": "Use the same compass setting for both arcs, then copy the 'gap' between the arms.",
+          "steps": [
+            {
+              "explain": "With the compass point on \\(B\\), draw an arc cutting \\(BA\\) at \\(P\\) and \\(BC\\) at \\(Q\\).",
+              "work": ""
+            },
+            {
+              "explain": "Keep the SAME radius. From \\(Y\\), draw an arc cutting \\(YX\\) at \\(R\\).",
+              "work": ""
+            },
+            {
+              "explain": "Measure the gap \\(PQ\\) with the compass, then from \\(R\\) mark that distance on the arc to find \\(S\\).",
+              "work": ""
+            },
+            {
+              "explain": "Draw the ray \\(YS\\) and label a point \\(Z\\) on it. The triangles \\(BPQ\\) and \\(YRS\\) have three equal sides, so \\(\\angle XYZ=\\angle ABC\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "constructions",
+              "note": "Same compass radius for both arcs; copy the gap PQ."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher",
+            "note": "Loose sheet not included in the paper; stem reworded only to describe the second construction."
+          }
         }
       ]
     },
@@ -1341,6 +1425,106 @@
               }
             }
           ]
+        },
+        {
+          "id": "form2an2020-q2g",
+          "type": "mc",
+          "stem": "Write down the value of \\(x\\) in the diagram above, giving a geometric reason.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 200\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"65\" x2=\"260\" y2=\"65\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M145,65 L136,69 L136,61z\" fill=\"#1e293b\"/><line x1=\"20\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M145,150 L136,154 L136,146z\" fill=\"#1e293b\"/><line x1=\"170.4\" y1=\"5.9\" x2=\"135.5\" y2=\"204.2\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"186,65 186,63.5 185.8,62 185.6,60.5 185.3,59 184.9,57.5 184.4,56.1 183.9,54.7 183.2,53.3 182.5,52 181.7,50.7 180.9,49.5 179.9,48.3 178.9,47.2 177.8,46.1 176.7,45.1 175.5,44.1 174.3,43.3 173,42.5 171.7,41.8 170.3,41.1 168.9,40.6 167.5,40.1 166,39.7 164.5,39.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"195.2\" y=\"39.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">80°</text><polyline points=\"171,150 171,148.5 170.8,147 170.6,145.5 170.3,144 169.9,142.5 169.4,141.1 168.9,139.7 168.2,138.3 167.5,137 166.7,135.7 165.9,134.5 164.9,133.3 163.9,132.2 162.9,131.1 161.7,130.1 160.5,129.1 159.3,128.3 158,127.5 156.7,126.8 155.3,126.1 153.9,125.6 152.5,125.1 151,124.7 149.5,124.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"180.3\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">x°</text><text x=\"20\" y=\"53.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"260\" y=\"53.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"20\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"260\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"184.4\" y=\"24.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"149.5\" y=\"195.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"144\" y=\"59.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"129\" y=\"166.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">F</text></svg>"
+          },
+          "options": [
+            "\\(x=80\\), corresponding angles (AB ∥ CD)",
+            "\\(x=100\\), co-interior angles (AB ∥ CD)",
+            "\\(x=80\\), vertically opposite angles",
+            "\\(x=10\\), angles on a straight line"
+          ],
+          "answer": 0,
+          "hint": "\\(AB\\parallel CD\\) (arrows). Find where the \\(80^\\circ\\) and \\(x^\\circ\\) sit relative to the transversal.",
+          "steps": [
+            {
+              "explain": "Mark the angle at \\(G\\) (between \\(GB\\) and \\(GH\\)) and the angle at \\(F\\) (between \\(FD\\) and \\(FG\\)).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 200\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"65\" x2=\"260\" y2=\"65\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M145,65 L136,69 L136,61z\" fill=\"#1e293b\"/><line x1=\"20\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M145,150 L136,154 L136,146z\" fill=\"#1e293b\"/><line x1=\"170.4\" y1=\"5.9\" x2=\"135.5\" y2=\"204.2\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"186,65 186,63.5 185.8,62 185.6,60.5 185.3,59 184.9,57.5 184.4,56.1 183.9,54.7 183.2,53.3 182.5,52 181.7,50.7 180.9,49.5 179.9,48.3 178.9,47.2 177.8,46.1 176.7,45.1 175.5,44.1 174.3,43.3 173,42.5 171.7,41.8 170.3,41.1 168.9,40.6 167.5,40.1 166,39.7 164.5,39.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"195.2\" y=\"39.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">80°</text><polyline points=\"171,150 171,148.5 170.8,147 170.6,145.5 170.3,144 169.9,142.5 169.4,141.1 168.9,139.7 168.2,138.3 167.5,137 166.7,135.7 165.9,134.5 164.9,133.3 163.9,132.2 162.9,131.1 161.7,130.1 160.5,129.1 159.3,128.3 158,127.5 156.7,126.8 155.3,126.1 153.9,125.6 152.5,125.1 151,124.7 149.5,124.4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"180.3\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1d4ed8\">x°</text><text x=\"20\" y=\"53.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"260\" y=\"53.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"20\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"260\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"184.4\" y=\"24.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"149.5\" y=\"195.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"144\" y=\"59.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"129\" y=\"166.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">F</text></svg>"
+              }
+            },
+            {
+              "explain": "Both are on the same side of the transversal and above their lines: they are in matching positions.",
+              "work": ""
+            },
+            {
+              "explain": "Parallel lines: CORRESPONDING angles are equal.",
+              "work": "\\(x=80\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not 100? Co-interior angles would be on the same side between the lines and add to \\(180^\\circ\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "giving a geometric reason",
+              "note": "Name the angle relationship: corresponding angles on parallel lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q5fi",
+          "type": "mc",
+          "stem": "In the diagram above, \\(AB\\) and \\(DE\\) are parallel and equal in length. State the values of \\(x\\) and \\(y\\), giving clear geometric reasons.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 476 323\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"102\" y1=\"51\" x2=\"308.4\" y2=\"51\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M210.2,51 L201.2,55 L201.2,47z\" fill=\"#1e293b\"/><line x1=\"65.6\" y1=\"221\" x2=\"272\" y2=\"221\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M173.8,221 L164.8,225 L164.8,217z\" fill=\"#1e293b\"/><line x1=\"102\" y1=\"51\" x2=\"272\" y2=\"221\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"308.4\" y1=\"51\" x2=\"65.6\" y2=\"221\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"202.7\" y1=\"57\" x2=\"202.7\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"207.7\" y1=\"57\" x2=\"207.7\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"166.3\" y1=\"227\" x2=\"166.3\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"171.3\" y1=\"227\" x2=\"171.3\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polyline points=\"130.3,79.3 131.2,78.3 132.1,77.4 132.9,76.4 133.7,75.4 134.5,74.3 135.3,73.2 136,72.1 136.6,71 137.3,69.9 137.9,68.7 138.4,67.5 139,66.3 139.4,65.1 139.9,63.9 140.3,62.6 140.6,61.4 141,60.1 141.2,58.8 141.5,57.5 141.7,56.2 141.8,54.9 141.9,53.6 142,52.3 142,51\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"183.3\" y=\"88.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">45°</text><polyline points=\"268.4,51 268.4,52 268.4,53 268.5,54.1 268.6,55.1 268.7,56.1 268.8,57.1 269,58.1 269.2,59.1 269.4,60.1 269.7,61.1 269.9,62.1 270.2,63 270.5,64 270.9,65 271.3,65.9 271.7,66.8 272.1,67.8 272.5,68.7 273,69.6 273.5,70.5 274,71.4 274.5,72.2 275,73.1 275.6,73.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"216.8\" y=\"84.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">35°</text><polyline points=\"105.6,221 105.6,220 105.6,219 105.5,217.9 105.4,216.9 105.3,215.9 105.2,214.9 105,213.9 104.8,212.9 104.6,211.9 104.3,210.9 104.1,209.9 103.8,209 103.5,208 103.1,207 102.7,206.1 102.3,205.2 101.9,204.2 101.5,203.3 101,202.4 100.5,201.5 100,200.6 99.5,199.8 99,198.9 98.4,198.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"157.2\" y=\"197\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">x°</text><polyline points=\"243.7,192.7 242.8,193.7 241.9,194.6 241.1,195.6 240.3,196.6 239.5,197.7 238.7,198.8 238,199.9 237.4,201 236.7,202.1 236.1,203.3 235.6,204.5 235,205.7 234.6,206.9 234.1,208.1 233.7,209.4 233.4,210.6 233,211.9 232.8,213.2 232.5,214.5 232.3,215.8 232.2,217.1 232.1,218.4 232,219.7 232,221\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"183.3\" y=\"189.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">y°</text><text x=\"90\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"320.4\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"53.6\" y=\"234.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"284\" y=\"234.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"187\" y=\"125.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(x=35,\\ y=45\\) (alternate angles, \\(AB\\parallel DE\\))",
+            "\\(x=45,\\ y=35\\) (alternate angles, \\(AB\\parallel DE\\))",
+            "\\(x=35,\\ y=45\\) (vertically opposite angles)",
+            "\\(x=100,\\ y=100\\) (angle sum of a triangle)"
+          ],
+          "answer": 0,
+          "hint": "\\(AE\\) and \\(BD\\) are transversals crossing the parallel lines. Match the angles in 'Z' shapes (alternate angles).",
+          "steps": [
+            {
+              "explain": "Line \\(BD\\) crosses the parallels: \\(\\angle ABC=35^\\circ\\) and \\(\\angle CDE=x^\\circ\\) form a 'Z' (alternate angles).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 476 323\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"102\" y1=\"51\" x2=\"308.4\" y2=\"51\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M210.2,51 L201.2,55 L201.2,47z\" fill=\"#1e293b\"/><line x1=\"65.6\" y1=\"221\" x2=\"272\" y2=\"221\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M173.8,221 L164.8,225 L164.8,217z\" fill=\"#1e293b\"/><line x1=\"102\" y1=\"51\" x2=\"272\" y2=\"221\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"308.4\" y1=\"51\" x2=\"65.6\" y2=\"221\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"202.7\" y1=\"57\" x2=\"202.7\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"207.7\" y1=\"57\" x2=\"207.7\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"166.3\" y1=\"227\" x2=\"166.3\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"171.3\" y1=\"227\" x2=\"171.3\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polyline points=\"130.3,79.3 131.2,78.3 132.1,77.4 132.9,76.4 133.7,75.4 134.5,74.3 135.3,73.2 136,72.1 136.6,71 137.3,69.9 137.9,68.7 138.4,67.5 139,66.3 139.4,65.1 139.9,63.9 140.3,62.6 140.6,61.4 141,60.1 141.2,58.8 141.5,57.5 141.7,56.2 141.8,54.9 141.9,53.6 142,52.3 142,51\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"183.3\" y=\"88.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">45°</text><polyline points=\"268.4,51 268.4,52 268.4,53 268.5,54.1 268.6,55.1 268.7,56.1 268.8,57.1 269,58.1 269.2,59.1 269.4,60.1 269.7,61.1 269.9,62.1 270.2,63 270.5,64 270.9,65 271.3,65.9 271.7,66.8 272.1,67.8 272.5,68.7 273,69.6 273.5,70.5 274,71.4 274.5,72.2 275,73.1 275.6,73.9\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"216.8\" y=\"84.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1d4ed8\">35°</text><polyline points=\"105.6,221 105.6,220 105.6,219 105.5,217.9 105.4,216.9 105.3,215.9 105.2,214.9 105,213.9 104.8,212.9 104.6,211.9 104.3,210.9 104.1,209.9 103.8,209 103.5,208 103.1,207 102.7,206.1 102.3,205.2 101.9,204.2 101.5,203.3 101,202.4 100.5,201.5 100,200.6 99.5,199.8 99,198.9 98.4,198.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"157.2\" y=\"197\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1d4ed8\">x°</text><polyline points=\"243.7,192.7 242.8,193.7 241.9,194.6 241.1,195.6 240.3,196.6 239.5,197.7 238.7,198.8 238,199.9 237.4,201 236.7,202.1 236.1,203.3 235.6,204.5 235,205.7 234.6,206.9 234.1,208.1 233.7,209.4 233.4,210.6 233,211.9 232.8,213.2 232.5,214.5 232.3,215.8 232.2,217.1 232.1,218.4 232,219.7 232,221\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"183.3\" y=\"189.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#b91c1c\">y°</text><text x=\"90\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"320.4\" y=\"50.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"53.6\" y=\"234.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"284\" y=\"234.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"187\" y=\"125.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Alternate angles on parallel lines are equal.",
+              "work": "\\(x=35\\)"
+            },
+            {
+              "explain": "Line \\(AE\\) crosses the parallels: \\(\\angle BAC=45^\\circ\\) and \\(\\angle CED=y^\\circ\\) are alternate angles.",
+              "work": "\\(y=45\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "giving clear geometric reasons",
+              "note": "Alternate angles are equal when the lines are parallel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1671,6 +1855,58 @@
             "\\(8:7:6\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "form2an2020-q4e",
+          "type": "mc",
+          "stem": "In the diagram above, find the value of \\(x\\), giving geometric reasons.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"160\" x2=\"250\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"160\" x2=\"185\" y2=\"47.4\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"160\" x2=\"185\" y2=\"47.4\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"103,130.6 101.7,131.3 100.5,132.1 99.3,133 98.1,134 97,134.9 96,136 94.9,137 94,138.1 93,139.3 92.1,140.5 91.3,141.7 90.6,143 89.8,144.3 89.2,145.6 88.6,147 88.1,148.4 87.6,149.8 87.2,151.2 86.8,152.6 86.5,154.1 86.3,155.6 86.1,157 86,158.5 86,160\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"66.3\" y=\"133.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2x°</text><polyline points=\"235,134 233.9,134.7 232.8,135.4 231.7,136.2 230.7,137 229.7,137.9 228.8,138.8 227.9,139.7 227,140.7 226.2,141.7 225.4,142.8 224.7,143.9 224,145 223.4,146.1 222.8,147.3 222.3,148.5 221.8,149.7 221.4,151 221,152.2 220.7,153.5 220.5,154.8 220.3,156.1 220.1,157.4 220,158.7 220,160\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"206.7\" y=\"139.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">60°</text><polyline points=\"169,75.1 170.2,75.8 171.5,76.4 172.8,77 174.1,77.5 175.4,77.9 176.7,78.3 178.1,78.7 179.4,78.9 180.8,79.1 182.2,79.3 183.6,79.4 185,79.4 186.4,79.4 187.8,79.3 189.2,79.1 190.6,78.9 191.9,78.7 193.3,78.3 194.6,77.9 195.9,77.5 197.2,77 198.5,76.4 199.8,75.8 201,75.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"185\" y=\"102\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">x°</text><text x=\"8\" y=\"175.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"112\" y=\"181.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"264\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"185\" y=\"38.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(x=60\\) (exterior angle of a triangle equals the sum of the two opposite interior angles)",
+            "\\(x=30\\) (angles on a straight line add to 180°)",
+            "\\(x=60\\) (angle sum of a triangle is 180°)",
+            "\\(x=120\\) (co-interior angles)"
+          ],
+          "answer": 0,
+          "hint": "\\(2x^\\circ\\) is OUTSIDE the triangle (on the straight line \\(DAB\\)). Use the exterior angle theorem.",
+          "steps": [
+            {
+              "explain": "The exterior angle at \\(A\\) is \\(2x^\\circ\\); the two interior opposite angles are \\(x^\\circ\\) (at C) and \\(60^\\circ\\) (at B).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"160\" x2=\"250\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"160\" x2=\"185\" y2=\"47.4\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"160\" x2=\"185\" y2=\"47.4\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"103,130.6 101.7,131.3 100.5,132.1 99.3,133 98.1,134 97,134.9 96,136 94.9,137 94,138.1 93,139.3 92.1,140.5 91.3,141.7 90.6,143 89.8,144.3 89.2,145.6 88.6,147 88.1,148.4 87.6,149.8 87.2,151.2 86.8,152.6 86.5,154.1 86.3,155.6 86.1,157 86,158.5 86,160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"66.3\" y=\"133.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">2x°</text><polyline points=\"235,134 233.9,134.7 232.8,135.4 231.7,136.2 230.7,137 229.7,137.9 228.8,138.8 227.9,139.7 227,140.7 226.2,141.7 225.4,142.8 224.7,143.9 224,145 223.4,146.1 222.8,147.3 222.3,148.5 221.8,149.7 221.4,151 221,152.2 220.7,153.5 220.5,154.8 220.3,156.1 220.1,157.4 220,158.7 220,160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"206.7\" y=\"139.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1d4ed8\">60°</text><polyline points=\"169,75.1 170.2,75.8 171.5,76.4 172.8,77 174.1,77.5 175.4,77.9 176.7,78.3 178.1,78.7 179.4,78.9 180.8,79.1 182.2,79.3 183.6,79.4 185,79.4 186.4,79.4 187.8,79.3 189.2,79.1 190.6,78.9 191.9,78.7 193.3,78.3 194.6,77.9 195.9,77.5 197.2,77 198.5,76.4 199.8,75.8 201,75.1\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.2\"/><text x=\"185\" y=\"102\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#047857\">x°</text><text x=\"8\" y=\"175.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"112\" y=\"181.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"264\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"185\" y=\"38.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Exterior angle = sum of the two opposite interior angles.",
+              "work": "\\(2x=x+60\\)"
+            },
+            {
+              "explain": "Subtract \\(x\\) from both sides.",
+              "work": "\\(x=60\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: interior angle at A is \\(180-120=60\\), and \\(60+60+60=180\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "giving geometric reasons",
+              "note": "Use the exterior angle theorem."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1782,6 +2018,55 @@
             "sourceMarks": 2,
             "page": 11,
             "note": "Drawing task: kept as a teacher-review question."
+          }
+        },
+        {
+          "id": "form2an2020-q9a",
+          "type": "mc",
+          "stem": "Points \\(A\\), \\(B\\) and \\(C\\) lie in that order on a straight line. A point \\(D\\), not on the line, is placed such that \\(AD=AB\\), \\(BD=BC\\) and \\(\\angle BDC=25^\\circ\\). What is the value of \\(\\angle DAB\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(80^\\circ\\)",
+            "\\(50^\\circ\\)",
+            "\\(100^\\circ\\)",
+            "\\(130^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Two isosceles triangles: \\(BD=BC\\) (triangle BDC) and \\(AD=AB\\) (triangle ABD). Work from the 25° angle.",
+          "steps": [
+            {
+              "explain": "Triangle \\(BDC\\) has \\(BD=BC\\), so the base angles are equal: \\(\\angle BCD=\\angle BDC=25^\\circ\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"10\" y1=\"160\" x2=\"350\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"160\" x2=\"40.8\" y2=\"41.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"160\" x2=\"40.8\" y2=\"41.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40.8\" y1=\"41.8\" x2=\"294.3\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"36.3\" y1=\"102\" x2=\"24.5\" y2=\"99.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"166\" x2=\"80\" y2=\"154\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"96.6\" y1=\"99\" x2=\"87.4\" y2=\"106.7\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"93.4\" y1=\"95.1\" x2=\"84.2\" y2=\"102.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"214.6\" y1=\"166\" x2=\"214.6\" y2=\"154\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"219.6\" y1=\"166\" x2=\"219.6\" y2=\"154\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polyline points=\"70.4,77.1 71,76.5 71.7,76 72.3,75.4 72.9,74.8 73.5,74.2 74.1,73.6 74.6,73 75.2,72.4 75.8,71.8 76.3,71.1 76.8,70.5 77.3,69.8 77.8,69.2 78.3,68.5 78.8,67.8 79.3,67.1 79.7,66.4 80.2,65.7 80.6,65 81,64.2 81.4,63.5 81.8,62.8 82.2,62 82.5,61.3\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"128.1\" y=\"112.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\">25°</text><polyline points=\"54,160 53.9,158 53.8,156.1 53.5,154.1 53.1,152.2 52.6,150.2 51.9,148.4 51.2,146.5 50.4,144.7 49.4,143 48.4,141.3 47.3,139.7 46,138.1 44.7,136.7 43.3,135.3 41.9,134 40.3,132.7 38.7,131.6 37,130.6 35.3,129.6 33.5,128.8 31.6,128.1 29.8,127.4 27.8,126.9 25.9,126.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"61.4\" y=\"129.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1d4ed8\">x</text><text x=\"10\" y=\"179.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"140\" y=\"181.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"294.3\" y=\"181.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"40.8\" y=\"33.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Exterior angle of triangle BDC at \\(B\\): \\(\\angle DBA=25+25=50^\\circ\\).",
+              "work": ""
+            },
+            {
+              "explain": "Triangle \\(ABD\\) has \\(AD=AB\\), so \\(\\angle ADB=\\angle ABD=50^\\circ\\).",
+              "work": ""
+            },
+            {
+              "explain": "Angle sum of a triangle.",
+              "work": "\\(\\angle DAB=180-50-50=80^\\circ\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value",
+              "note": "Use the base angles of the two isosceles triangles."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]

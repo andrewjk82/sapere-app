@@ -764,6 +764,52 @@
             "sourceMarks": 1,
             "page": 13
           }
+        },
+        {
+          "id": "form2an2020-q1i",
+          "type": "mc",
+          "stem": "Calculate the circumference of a circle with radius 2 cm using the approximation \\(\\pi=3.1\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(12.4\\ \\text{cm}\\)",
+            "\\(6.2\\ \\text{cm}\\)",
+            "\\(24.8\\ \\text{cm}\\)",
+            "\\(12.4\\ \\text{cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Circumference \\(C=2\\pi r\\) (or \\(\\pi d\\)). Use \\(r=2\\) and \\(\\pi=3.1\\).",
+          "steps": [
+            {
+              "explain": "Write the formula.",
+              "work": "\\(C=2\\pi r\\)"
+            },
+            {
+              "explain": "Substitute \\(\\pi=3.1\\) and \\(r=2\\).",
+              "work": "\\(C=2\\times3.1\\times2\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(C=12.4\\ \\text{cm}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistakes: \\(6.2\\) is \\(\\pi r\\) (forgot the 2) and \\(12.4\\ \\text{cm}^2\\) has the wrong unit (area units).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the circumference",
+              "note": "Use \\(C=2\\pi r\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1311,6 +1357,163 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 235\" width=\"50%\" height=\"auto\"><path d=\"M55 175 H255 V55 H185 V105 H55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"195\" y=\"43\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\"><tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text><text x=\"94\" y=\"95\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">2<tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text><text x=\"6\" y=\"146\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3 cm</text><text x=\"140\" y=\"82\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3 cm</text><text x=\"263\" y=\"118\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">6 cm</text><text x=\"155\" y=\"198\" font-family=\"STIX Two Math, Cambria Math, serif\" font-size=\"14\" fill=\"#334155\">3<tspan font-style=\"italic\">x</tspan><tspan font-style=\"normal\"> cm</tspan></text></svg>"
+          }
+        },
+        {
+          "id": "form2an2020-q3g",
+          "type": "mc",
+          "stem": "Find the area of the figure in the diagram above, which has been formed by joining a rectangle and a semi-circle. Give your answer in terms of \\(\\pi\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><path d=\"M60,35 H200 A60 60 0 0 1 200,155 H60 Z\" fill=\"#fff\" fill-opacity=\"0.7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"200\" y1=\"35\" x2=\"200\" y2=\"155\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M60,47 h12 v-12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M60,143 h12 v12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"130\" y=\"25\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7 cm</text><text x=\"40\" y=\"99\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6 cm</text></svg>"
+          },
+          "options": [
+            "\\((42+4.5\\pi)\\ \\text{cm}^2\\)",
+            "\\((42+9\\pi)\\ \\text{cm}^2\\)",
+            "\\((42+3\\pi)\\ \\text{cm}^2\\)",
+            "\\((13+4.5\\pi)\\ \\text{cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the figure: rectangle + semicircle. The semicircle's DIAMETER is the 6 cm side, so its radius is 3 cm.",
+          "steps": [
+            {
+              "explain": "Rectangle: \\(7\\times6=42\\) cm².",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><path d=\"M60,35 H200 A60 60 0 0 1 200,155 H60 Z\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"200\" y1=\"35\" x2=\"200\" y2=\"155\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M60,47 h12 v-12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M60,143 h12 v12\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"130\" y=\"25\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">7 cm</text><text x=\"40\" y=\"99\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6 cm</text><text x=\"130\" y=\"100\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">rectangle</text><path d=\"M200,35 A60 60 0 0 1 200,155 Z\" fill=\"#fca5a5\" fill-opacity=\"0.5\"/><line x1=\"200\" y1=\"95\" x2=\"260\" y2=\"95\" stroke=\"#b91c1c\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"230\" y=\"111\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">r = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Semicircle: diameter 6 cm, so radius \\(r=3\\) cm. Area of a full circle is \\(\\pi r^2=9\\pi\\).",
+              "work": "\\(\\text{semicircle}=\\dfrac{1}{2}\\times9\\pi=4.5\\pi\\)"
+            },
+            {
+              "explain": "Add the two areas.",
+              "work": "\\(42+4.5\\pi\\) cm² → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: using the full circle gives \\(9\\pi\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the area",
+              "note": "Rectangle area plus half a circle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q8c",
+          "type": "mc",
+          "stem": "The diagram above shows a square with sides of length \\(a\\). Semi-circles are drawn along three edges to create the design shown above. What is the shaded area? Give your answer in terms of \\(\\pi\\) and \\(a\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><clipPath id=\"sq\"><rect x=\"30\" y=\"30\" width=\"200\" height=\"200\"/></clipPath><g clip-path=\"url(#sq)\"><rect x=\"30\" y=\"130.0\" width=\"200\" height=\"100.0\" fill=\"#9ca3af\" fill-opacity=\"0.75\"/><circle cx=\"30\" cy=\"130.0\" r=\"100.0\" fill=\"#fff\"/><circle cx=\"230\" cy=\"130.0\" r=\"100.0\" fill=\"#fff\"/><clipPath id=\"cl1\"><circle cx=\"30\" cy=\"130.0\" r=\"100.0\"/></clipPath><clipPath id=\"cr1\"><circle cx=\"230\" cy=\"130.0\" r=\"100.0\"/></clipPath><g clip-path=\"url(#cl1)\"><circle cx=\"130.0\" cy=\"30\" r=\"100.0\" fill=\"#9ca3af\" fill-opacity=\"0.75\"/></g><g clip-path=\"url(#cr1)\"><circle cx=\"130.0\" cy=\"30\" r=\"100.0\" fill=\"#9ca3af\" fill-opacity=\"0.75\"/></g></g><rect x=\"30\" y=\"30\" width=\"200\" height=\"200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><circle cx=\"30\" cy=\"130.0\" r=\"100.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\" clip-path=\"url(#sq)\"/><circle cx=\"230\" cy=\"130.0\" r=\"100.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\" clip-path=\"url(#sq)\"/><circle cx=\"130.0\" cy=\"30\" r=\"100.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\" clip-path=\"url(#sq)\"/><line x1=\"30\" y1=\"18\" x2=\"230\" y2=\"18\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"12\" x2=\"30\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"12\" x2=\"230\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"130\" y=\"14\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">a</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{\\pi a^2}{8}\\)",
+            "\\(\\dfrac{\\pi a^2}{4}\\)",
+            "\\(\\dfrac{\\pi a^2}{16}\\)",
+            "\\(a^2-\\dfrac{\\pi a^2}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Don't find each petal separately. The shaded area equals the bottom half of the square minus two quarter-circles, plus the two petals: the 'square' parts cancel.",
+          "steps": [
+            {
+              "explain": "Each semicircle has diameter \\(a\\), so radius \\(\\dfrac{a}{2}\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><clipPath id=\"sq\"><rect x=\"30\" y=\"30\" width=\"200\" height=\"200\"/></clipPath><g clip-path=\"url(#sq)\"><rect x=\"30\" y=\"130.0\" width=\"200\" height=\"100.0\" fill=\"#60a5fa\" fill-opacity=\"0.75\"/><circle cx=\"30\" cy=\"130.0\" r=\"100.0\" fill=\"#fff\"/><circle cx=\"230\" cy=\"130.0\" r=\"100.0\" fill=\"#fff\"/><clipPath id=\"cl1\"><circle cx=\"30\" cy=\"130.0\" r=\"100.0\"/></clipPath><clipPath id=\"cr1\"><circle cx=\"230\" cy=\"130.0\" r=\"100.0\"/></clipPath><g clip-path=\"url(#cl1)\"><circle cx=\"130.0\" cy=\"30\" r=\"100.0\" fill=\"#60a5fa\" fill-opacity=\"0.75\"/></g><g clip-path=\"url(#cr1)\"><circle cx=\"130.0\" cy=\"30\" r=\"100.0\" fill=\"#60a5fa\" fill-opacity=\"0.75\"/></g></g><rect x=\"30\" y=\"30\" width=\"200\" height=\"200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><circle cx=\"30\" cy=\"130.0\" r=\"100.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\" clip-path=\"url(#sq)\"/><circle cx=\"230\" cy=\"130.0\" r=\"100.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\" clip-path=\"url(#sq)\"/><circle cx=\"130.0\" cy=\"30\" r=\"100.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\" clip-path=\"url(#sq)\"/><line x1=\"30\" y1=\"18\" x2=\"230\" y2=\"18\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"12\" x2=\"30\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"12\" x2=\"230\" y2=\"24\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"130\" y=\"14\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">a</text></svg>"
+              }
+            },
+            {
+              "explain": "The two top petals together with the bottom region equal exactly the area of half of one circle of radius \\(\\dfrac{a}{2}\\) in total (the square parts cancel out).",
+              "work": ""
+            },
+            {
+              "explain": "Area of the circle: \\(\\pi\\left(\\dfrac{a}{2}\\right)^2=\\dfrac{\\pi a^2}{4}\\).",
+              "work": "\\(\\text{shaded}=\\dfrac{1}{2}\\times\\dfrac{\\pi a^2}{4}\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\dfrac{\\pi a^2}{8}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the shaded area",
+              "note": "The shaded area is half of one circle of radius a/2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher",
+            "note": "Shaded area = pi*a^2/8 (petals pi*a^2/4 - a^2/2 plus base region a^2/2 - pi*a^2/8)."
+          }
+        },
+        {
+          "id": "form2an2020-q10d",
+          "type": "mc",
+          "stem": "In a field of grass, a goat on a 10 m long chain is tied to the corner of a shed which has the shape of an isosceles trapezium. This is shown in the diagram above. What is the total area of grass available to the goat for grazing, assuming the chain does not get tangled? Give your answer in terms of \\(\\pi\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 310\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"150\" y1=\"185\" x2=\"250\" y2=\"185\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"185\" x2=\"235\" y2=\"159\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235\" y1=\"159\" x2=\"165\" y2=\"159\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"159\" x2=\"150\" y2=\"185\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M150,185 L250,185 L235,159 L165,159Z\" fill=\"#9ca3af\" fill-opacity=\"0.8\"/><line x1=\"235\" y1=\"159\" x2=\"299.3\" y2=\"82.4\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"299.3\" cy=\"82.4\" r=\"4.5\" fill=\"#1e293b\"/><circle cx=\"235\" cy=\"159\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"323.3\" y=\"76.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">goat</text><text x=\"292.4\" y=\"127.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">10 m</text><text x=\"200\" y=\"147.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">7 m</text><text x=\"200\" y=\"207.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">10 m</text><text x=\"135.5\" y=\"176.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3 m</text><text x=\"264.5\" y=\"176.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3 m</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{169\\pi}{2}\\ \\text{m}^2\\)",
+            "\\(83\\pi\\ \\text{m}^2\\)",
+            "\\(100\\pi\\ \\text{m}^2\\)",
+            "\\(169\\pi\\ \\text{m}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The top corners of the trapezium are 120°, the bottom corners 60°. The chain swings round three sectors as it wraps around the shed.",
+          "steps": [
+            {
+              "explain": "At the tie point the shed's inside angle is 120°, so the goat can swing \\(360-120=240^\\circ\\) with the full 10 m chain.",
+              "work": "\\(\\dfrac{240}{360}\\pi(10)^2=\\dfrac{200\\pi}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 310\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><path d=\"M235,159 L285,245.6 L293.8,239.9 L301.9,233.3 L309.3,225.9 L315.9,217.8 L321.6,209 L326.4,199.7 L330.1,189.9 L332.8,179.8 L334.5,169.5 L335,159 L334.5,148.5 L332.8,138.2 L330.1,128.1 L326.4,118.3 L321.6,109 L315.9,100.2 L309.3,92.1 L301.9,84.7 L293.8,78.1 L285,72.4 L275.7,67.6 L265.9,63.9 L255.8,61.2 L245.5,59.5 L235,59 L224.5,59.5 L214.2,61.2 L204.1,63.9 L194.3,67.6 L185,72.4 L176.2,78.1 L168.1,84.7 L160.7,92.1 L154.1,100.2 L148.4,109 L143.6,118.3 L139.9,128.1 L137.2,138.2 L135.5,148.5 L135,159Z\" fill=\"#2563eb\" fill-opacity=\"0.35\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><path d=\"M165,159 L135,159 L135,159.8 L135,160.6 L135.1,161.4 L135.2,162.1 L135.3,162.9 L135.4,163.7 L135.5,164.5 L135.7,165.2 L135.8,166 L136,166.8 L136.2,167.5 L136.5,168.3 L136.7,169 L137,169.8 L137.3,170.5 L137.6,171.2 L137.9,171.9 L138.3,172.6 L138.6,173.3 L139,174 L139.4,174.7 L139.8,175.3 L140.3,176 L140.7,176.6 L141.2,177.3 L141.7,177.9 L142.2,178.5 L142.7,179.1 L143.2,179.7 L143.8,180.2 L144.3,180.8 L144.9,181.3 L145.5,181.8 L146.1,182.3 L146.7,182.8 L147.4,183.3 L148,183.7 L148.7,184.2 L149.3,184.6 L150,185Z\" fill=\"#dc2626\" fill-opacity=\"0.35\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M250,185 L180,185 L180.1,188.7 L180.4,192.3 L180.9,196 L181.5,199.6 L182.4,203.1 L183.4,206.6 L184.6,210.1 L186.1,213.5 L187.6,216.8 L189.4,220 L191.3,223.1 L193.4,226.1 L195.6,229.1 L198,231.8 L200.5,234.5 L203.2,237 L205.9,239.4 L208.9,241.6 L211.9,243.7 L215,245.6 L218.2,247.4 L221.5,248.9 L224.9,250.4 L228.4,251.6 L231.9,252.6 L235.4,253.5 L239,254.1 L242.7,254.6 L246.3,254.9 L250,255 L253.7,254.9 L257.3,254.6 L261,254.1 L264.6,253.5 L268.1,252.6 L271.6,251.6 L275.1,250.4 L278.5,248.9 L281.8,247.4 L285,245.6Z\" fill=\"#059669\" fill-opacity=\"0.35\" stroke=\"#059669\" stroke-width=\"1.6\"/><line x1=\"150\" y1=\"185\" x2=\"250\" y2=\"185\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"185\" x2=\"235\" y2=\"159\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235\" y1=\"159\" x2=\"165\" y2=\"159\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"159\" x2=\"150\" y2=\"185\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M150,185 L250,185 L235,159 L165,159Z\" fill=\"#9ca3af\" fill-opacity=\"0.8\"/><line x1=\"235\" y1=\"159\" x2=\"299.3\" y2=\"82.4\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"299.3\" cy=\"82.4\" r=\"4.5\" fill=\"#1e293b\"/><circle cx=\"235\" cy=\"159\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"323.3\" y=\"76.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">goat</text><text x=\"292.4\" y=\"127.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">10 m</text><text x=\"200\" y=\"147.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">7 m</text><text x=\"200\" y=\"207.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">10 m</text><text x=\"135.5\" y=\"176.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3 m</text><text x=\"264.5\" y=\"176.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Wrapping along the 7 m top edge to the other top corner leaves \\(10-7=3\\) m of chain, which swings \\(60^\\circ\\) (the outside angle there, \\(180-120\\)).",
+              "work": "\\(\\dfrac{60}{360}\\pi(3)^2=\\dfrac{3\\pi}{2}\\)"
+            },
+            {
+              "explain": "The other way, past a 3 m side, \\(10-3=7\\) m of chain swings \\(120^\\circ\\) around the 60° bottom corner.",
+              "work": "\\(\\dfrac{120}{360}\\pi(7)^2=\\dfrac{49\\pi}{3}\\)"
+            },
+            {
+              "explain": "Add the three sectors.",
+              "work": "\\(\\dfrac{200\\pi}{3}+\\dfrac{49\\pi}{3}+\\dfrac{3\\pi}{2}=83\\pi+\\dfrac{3\\pi}{2}=\\dfrac{169\\pi}{2}\\ \\text{m}^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "total area of grass",
+              "note": "Add the three sectors the chain can reach."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]

@@ -3366,6 +3366,195 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "form2an2020-q2d",
+          "type": "mc",
+          "stem": "If \\(A=\\{1,2,3,4\\}\\) and \\(B=\\{2,4,6\\}\\), list the members of \\(A\\cap B\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\{2,4\\}\\)",
+            "\\(\\{1,2,3,4,6\\}\\)",
+            "\\(\\{1,3\\}\\)",
+            "\\(\\{6\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\cap\\) means INTERSECTION: the members in BOTH sets.",
+          "steps": [
+            {
+              "explain": "Write out both sets.",
+              "work": "\\(A=\\{1,2,3,4\\},\\qquad B=\\{2,4,6\\}\\)"
+            },
+            {
+              "explain": "Check each member of \\(A\\): is it also in \\(B\\)? 1 no, 2 yes, 3 no, 4 yes.",
+              "work": ""
+            },
+            {
+              "explain": "Collect the common members.",
+              "work": "\\(A\\cap B=\\{2,4\\}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\{1,2,3,4,6\\}\\) is the UNION \\(A\\cup B\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "list the members",
+              "note": "The intersection contains only members in both sets."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q6d",
+          "type": "mc",
+          "stem": "Use a Venn diagram, or otherwise, to help find \\(|A\\cup B|\\) given that \\(|A|=16\\), \\(|B|=10\\) and \\(|A\\cap B|=4\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(22\\)",
+            "\\(26\\)",
+            "\\(30\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "Don't count the overlap twice: \\(|A\\cup B|=|A|+|B|-|A\\cap B|\\).",
+          "steps": [
+            {
+              "explain": "Draw the Venn diagram. The overlap holds 4, so \\(A\\) only has \\(16-4=12\\) and \\(B\\) only has \\(10-4=6\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(12)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(4)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(6)</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all the regions.",
+              "work": "\\(12+4+6=22\\)"
+            },
+            {
+              "explain": "Or by formula.",
+              "work": "\\(16+10-4=22\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(26\\) counts the overlap twice.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Venn diagram",
+              "note": "Subtract the overlap so it is counted once."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q8bi",
+          "type": "review",
+          "stem": "Each of the children in a class of 33 children likes either Linguistics or Coding, and 3 of them like both. The total number of children who like Linguistics is half as many as the total number who like Coding. Let \\(x\\) be the number of children who like Linguistics but do not like Coding, and draw a Venn diagram to represent the situation.",
+          "difficulty": "medium",
+          "answer": "Two overlapping circles L (Linguistics) and C (Coding) inside a rectangle: L only = x, both = 3, C only = 30 − x (33 − 3 − x), outside = 0.",
+          "manual": true,
+          "hint": "Put 3 in the overlap first. Then the two 'only' regions must share the remaining 30 children.",
+          "steps": [
+            {
+              "explain": "Draw a rectangle for the class, with two overlapping circles \\(L\\) and \\(C\\).",
+              "work": ""
+            },
+            {
+              "explain": "Put 3 in the overlap (they like both).",
+              "work": ""
+            },
+            {
+              "explain": "Linguistics only is \\(x\\) (given). Everyone likes at least one, so nothing goes outside the circles.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">L</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(x)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(30−x)</text></svg>"
+              }
+            },
+            {
+              "explain": "Coding only is the rest of the 33: \\(33-3-x=30-x\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "draw a Venn diagram",
+              "note": "Overlap 3; Linguistics only x; Coding only 30 − x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "form2an2020-q8bii",
+          "type": "mc",
+          "stem": "Each of the children in a class of 33 children likes either Linguistics or Coding, and 3 of them like both. The total number of children who like Linguistics is half as many as the total number who like Coding. Using your Venn diagram, or otherwise, state how many children like Coding.",
+          "difficulty": "hard",
+          "options": [
+            "\\(24\\)",
+            "\\(21\\)",
+            "\\(12\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Total for each subject = 'only' + both. Linguistics total = \\(x+3\\) and Coding total = \\(30-x+3=33-x\\).",
+          "steps": [
+            {
+              "explain": "Totals from the Venn diagram.",
+              "work": "\\(\\text{Linguistics}=x+3,\\qquad\\text{Coding}=(30-x)+3=33-x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">L</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(x)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(30−x)</text></svg>"
+              }
+            },
+            {
+              "explain": "Linguistics is half of Coding, so Coding is twice Linguistics.",
+              "work": "\\(33-x=2(x+3)=2x+6\\ \\Rightarrow\\ 27=3x\\ \\Rightarrow\\ x=9\\)"
+            },
+            {
+              "explain": "Coding total.",
+              "work": "\\(33-9=24\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: Linguistics \\(9+3=12\\), half of 24 ✓. Mistakes: 21 is 'Coding only'; 12 is Linguistics.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how many children like Coding",
+              "note": "Coding total = Coding only + both."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     }

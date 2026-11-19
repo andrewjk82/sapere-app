@@ -3112,6 +3112,48 @@
             "\\(\\frac3{15}\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "form2an2020-q1aii",
+          "type": "mc",
+          "stem": "Calculate: \\(1-\\dfrac{4}{9}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{5}{9}\\)",
+            "\\(\\dfrac{4}{9}\\)",
+            "\\(\\dfrac{3}{9}\\)",
+            "\\(\\dfrac{13}{9}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the whole number 1 as a fraction with the SAME denominator, 9.",
+          "steps": [
+            {
+              "explain": "Write 1 as ninths.",
+              "work": "\\(1=\\dfrac{9}{9}\\)"
+            },
+            {
+              "explain": "Same denominators: subtract the numerators and keep the denominator.",
+              "work": "\\(\\dfrac{9}{9}-\\dfrac{4}{9}=\\dfrac{9-4}{9}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(=\\dfrac{5}{9}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Write 1 as a fraction with the same denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4693,6 +4735,52 @@
             "\\(\\frac56\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "form2an2020-q1b",
+          "type": "mc",
+          "stem": "Simplify fully \\(\\dfrac{6}{5}\\times\\dfrac{25}{36}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5}{6}\\)",
+            "\\(\\dfrac{150}{180}\\)",
+            "\\(\\dfrac{6}{5}\\)",
+            "\\(\\dfrac{31}{41}\\)"
+          ],
+          "answer": 0,
+          "hint": "Cancel common factors BEFORE multiplying: 6 and 36 share a factor, and 25 and 5 share a factor.",
+          "steps": [
+            {
+              "explain": "Write the product as one fraction, keeping the factors visible so common factors can be cancelled.",
+              "work": "\\(\\dfrac{6\\times25}{5\\times36}=\\dfrac{6\\times5\\times5}{5\\times6\\times6}\\)"
+            },
+            {
+              "explain": "Cancel one 5 and one 6 from top and bottom.",
+              "work": "\\(\\dfrac{\\cancel{6}\\times\\cancel{5}\\times5}{\\cancel{5}\\times\\cancel{6}\\times6}=\\dfrac{5}{6}\\)"
+            },
+            {
+              "explain": "Nothing else cancels, so this is fully simplified.",
+              "work": "\\(\\dfrac{5}{6}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{150}{180}\\) is the same value but is NOT fully simplified.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify fully",
+              "note": "Cancel common factors, then multiply."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4724,6 +4812,140 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "form2an2020-q1aiii",
+          "type": "mc",
+          "stem": "Calculate: \\(4.5-3.25\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(1.25\\)",
+            "\\(1.35\\)",
+            "\\(1.75\\)",
+            "\\(0.75\\)"
+          ],
+          "answer": 0,
+          "hint": "Line up the decimal points. Write 4.5 as 4.50 so both numbers have two decimal places.",
+          "steps": [
+            {
+              "explain": "Write 4.5 with a zero so that the place values line up.",
+              "work": "\\(4.50-3.25\\)"
+            },
+            {
+              "explain": "Subtract column by column (borrow where needed): hundredths \\(10-5=5\\), tenths \\(4-2=2\\), units \\(4-3=1\\).",
+              "work": "\\(4.50-3.25=1.25\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check by adding back: \\(3.25+1.25=4.50\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Line up the decimal points and subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q2ai",
+          "type": "mc",
+          "stem": "Evaluate: \\((0.4)^2\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(0.16\\)",
+            "\\(1.6\\)",
+            "\\(0.8\\)",
+            "\\(0.016\\)"
+          ],
+          "answer": 0,
+          "hint": "Squaring means multiplying by itself. Multiply as whole numbers, then place the decimal point.",
+          "steps": [
+            {
+              "explain": "Write as a product.",
+              "work": "\\(0.4\\times0.4\\)"
+            },
+            {
+              "explain": "Multiply the digits: \\(4\\times4=16\\). Count decimal places: one plus one is TWO.",
+              "work": "\\(0.16\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\((0.4)^2=0.16\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(0.8\\) comes from \\(0.4\\times2\\) (doubling instead of squaring).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Multiply 0.4 by itself and count the decimal places."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2an2020-q2aii",
+          "type": "mc",
+          "stem": "Evaluate: \\(6.4\\div0.4\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(16\\)",
+            "\\(1.6\\)",
+            "\\(160\\)",
+            "\\(2.56\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply BOTH numbers by 10 so that you divide by a whole number.",
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by 10 (the answer does not change).",
+              "work": "\\(6.4\\div0.4=64\\div4\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(64\\div4=16\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(16\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(16\\times0.4=6.4\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Multiply both numbers by 10, then divide."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Annual Examination 2020",
+            "school": "Form II Annual",
+            "grade": "8",
+            "origin": "teacher"
+          }
         }
       ]
     },
