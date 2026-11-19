@@ -2173,6 +2173,52 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "jamesruse2020-y12a-mc4",
+          "type": "mc",
+          "stem": "If \\(\\ln3a=\\ln b-2\\ln c\\) where \\(a,b,c>0\\), which of the following is true?",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=\\dfrac{b-c^2}{3}\\)",
+            "\\(a=\\dfrac{b}{3c^2}\\)",
+            "\\(\\ln3a=\\dfrac{b}{c^2}\\)",
+            "\\(\\ln3a=\\dfrac{\\ln b}{\\ln c^2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the log laws to combine the right side into a single logarithm, then remove the \\(\\ln\\).",
+          "steps": [
+            {
+              "explain": "Power law: \\(2\\ln c=\\ln c^2\\).",
+              "work": "\\(\\ln3a=\\ln b-\\ln c^2\\)"
+            },
+            {
+              "explain": "Quotient law.",
+              "work": "\\(\\ln3a=\\ln\\dfrac{b}{c^2}\\)"
+            },
+            {
+              "explain": "Equate the arguments.",
+              "work": "\\(3a=\\dfrac{b}{c^2}\\ \\Rightarrow\\ a=\\dfrac{b}{3c^2}\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Mistake: option C forgets the \\(\\ln\\) on the right side.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "which of the following is true",
+              "note": "Combine the logs, then equate the arguments."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -14036,6 +14082,48 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q21b",
+          "type": "mc",
+          "stem": "Evaluate: \\(\\displaystyle\\int_0^3\\dfrac{8x}{1+x^2}dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(4\\ln10\\)",
+            "\\(8\\ln10\\)",
+            "\\(2\\ln10\\)",
+            "\\(4\\ln9\\)"
+          ],
+          "answer": 0,
+          "hint": "The numerator is a multiple of the derivative of the denominator: \\(\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|\\).",
+          "steps": [
+            {
+              "explain": "Rewrite so the numerator is the derivative of \\(1+x^2\\) (which is \\(2x\\)).",
+              "work": "\\(\\int_0^3\\dfrac{8x}{1+x^2}dx=4\\int_0^3\\dfrac{2x}{1+x^2}dx\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(=4\\left[\\ln\\left(1+x^2\\right)\\right]_0^3\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(=4\\left(\\ln10-\\ln1\\right)=4\\ln10\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Numerator is the derivative of the denominator (up to a constant)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }

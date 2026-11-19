@@ -3158,6 +3158,144 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-y12a-q19a",
+          "type": "mc",
+          "stem": "Find \\(\\tan A\\) if \\(\\operatorname{cosec}A=-\\dfrac{13}{12}\\) and \\(\\sec A>0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{12}{5}\\)",
+            "\\(\\dfrac{12}{5}\\)",
+            "\\(-\\dfrac{5}{12}\\)",
+            "\\(\\dfrac{5}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use a right-angled triangle for the sizes (12, 13 and the missing side 5), then use the signs from the quadrant.",
+          "steps": [
+            {
+              "explain": "\\(\\operatorname{cosec}A=-\\dfrac{13}{12}\\) means \\(\\sin A=-\\dfrac{12}{13}\\) (sine negative). \\(\\sec A>0\\) means \\(\\cos A>0\\).",
+              "work": ""
+            },
+            {
+              "explain": "Sine negative and cosine positive: the 4th quadrant.",
+              "work": ""
+            },
+            {
+              "explain": "Third side: \\(\\sqrt{13^2-12^2}=5\\), so \\(\\cos A=\\dfrac{5}{13}\\).",
+              "work": ""
+            },
+            {
+              "explain": "Tangent = sine ÷ cosine.",
+              "work": "\\(\\tan A=\\left(-\\dfrac{12}{13}\\right)\\div\\dfrac{5}{13}=-\\dfrac{12}{5}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Sizes from a triangle, signs from the quadrant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q19b",
+          "type": "mc",
+          "stem": "Solve \\(\\cos^22x=\\dfrac{1}{2}\\) for \\(0\\leq x\\leq2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\dfrac{\\pi}{8},\\dfrac{3\\pi}{8},\\dfrac{5\\pi}{8},\\dfrac{7\\pi}{8},\\dfrac{9\\pi}{8},\\dfrac{11\\pi}{8},\\dfrac{13\\pi}{8},\\dfrac{15\\pi}{8}\\)",
+            "\\(x=\\dfrac{\\pi}{4},\\dfrac{3\\pi}{4},\\dfrac{5\\pi}{4},\\dfrac{7\\pi}{4}\\)",
+            "\\(x=\\dfrac{\\pi}{8},\\dfrac{7\\pi}{8},\\dfrac{9\\pi}{8},\\dfrac{15\\pi}{8}\\)",
+            "\\(x=\\dfrac{\\pi}{8},\\dfrac{3\\pi}{8},\\dfrac{5\\pi}{8},\\dfrac{7\\pi}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Take the square root (both signs): \\(\\cos2x=\\pm\\dfrac{1}{\\sqrt{2}}\\). The range for \\(2x\\) is \\(0\\leq2x\\leq4\\pi\\) (two full turns).",
+          "steps": [
+            {
+              "explain": "Square root.",
+              "work": "\\(\\cos2x=\\pm\\dfrac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Solve for \\(2x\\) in \\([0,4\\pi]\\): the reference angle is \\(\\dfrac{\\pi}{4}\\), and cosine is \\(\\pm\\) in all four quadrants, so in each turn \\(2x=\\dfrac{\\pi}{4},\\dfrac{3\\pi}{4},\\dfrac{5\\pi}{4},\\dfrac{7\\pi}{4}\\).",
+              "work": "\\(2x=\\dfrac{\\pi}{4},\\dfrac{3\\pi}{4},\\dfrac{5\\pi}{4},\\dfrac{7\\pi}{4},\\dfrac{9\\pi}{4},\\dfrac{11\\pi}{4},\\dfrac{13\\pi}{4},\\dfrac{15\\pi}{4}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(x=\\dfrac{\\pi}{8},\\dfrac{3\\pi}{8},\\dfrac{5\\pi}{8},\\dfrac{7\\pi}{8},\\dfrac{9\\pi}{8},\\dfrac{11\\pi}{8},\\dfrac{13\\pi}{8},\\dfrac{15\\pi}{8}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Alternatively \\(\\cos^22x=\\dfrac{1+\\cos4x}{2}=\\dfrac{1}{2}\\) gives \\(\\cos4x=0\\), i.e. \\(4x=\\dfrac{\\pi}{2}+k\\pi\\) with 8 solutions in \\([0,2\\pi]\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "The domain for 2x is two full turns; use both signs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q20",
+          "type": "mc",
+          "stem": "Solve \\(3\\tan\\theta-\\cot\\theta=5\\) for \\(0^\\circ\\leq\\theta\\leq360^\\circ\\). Give your answers to the nearest degree.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=62^\\circ,\\ 170^\\circ,\\ 242^\\circ,\\ 350^\\circ\\)",
+            "\\(\\theta=62^\\circ,\\ 118^\\circ,\\ 242^\\circ,\\ 298^\\circ\\)",
+            "\\(\\theta=62^\\circ,\\ 242^\\circ\\)",
+            "\\(\\theta=28^\\circ,\\ 152^\\circ,\\ 208^\\circ,\\ 332^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\cot\\theta=\\dfrac{1}{\\tan\\theta}\\) and let \\(t=\\tan\\theta\\) to get a quadratic.",
+          "steps": [
+            {
+              "explain": "Let \\(t=\\tan\\theta\\).",
+              "work": "\\(3t-\\dfrac{1}{t}=5\\ \\Rightarrow\\ 3t^2-1=5t\\)"
+            },
+            {
+              "explain": "Quadratic formula for \\(3t^2-5t-1=0\\).",
+              "work": "\\(t=\\dfrac{5\\pm\\sqrt{25+12}}{6}=\\dfrac{5\\pm\\sqrt{37}}{6}\\approx1.847\\ \\text{or}\\ -0.1805\\)"
+            },
+            {
+              "explain": "\\(\\tan\\theta=1.847\\): reference angle \\(61.6^\\circ\\), tangent positive in Q1 and Q3.",
+              "work": "\\(\\theta\\approx62^\\circ,\\ 242^\\circ\\)"
+            },
+            {
+              "explain": "\\(\\tan\\theta=-0.1805\\): reference angle \\(10.2^\\circ\\), tangent negative in Q2 and Q4.",
+              "work": "\\(\\theta\\approx170^\\circ,\\ 350^\\circ\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Turn it into a quadratic in \\(\\tan\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -16479,6 +16617,52 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q15",
+          "type": "mc",
+          "stem": "A curve \\(y=f(x)\\) passes through the point \\((0,7)\\). Its gradient function is given by \\(\\dfrac{dy}{dx}=1-6\\sin3x\\). Find the equation of the curve.",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=x+2\\cos3x+5\\)",
+            "\\(y=x-2\\cos3x+9\\)",
+            "\\(y=x+18\\cos3x-11\\)",
+            "\\(y=x+2\\cos3x+7\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the gradient function, then use the point to find the constant \\(C\\).",
+          "steps": [
+            {
+              "explain": "Integrate.",
+              "work": "\\(y=\\int(1-6\\sin3x)dx=x-6\\left(-\\dfrac{\\cos3x}{3}\\right)+C=x+2\\cos3x+C\\)"
+            },
+            {
+              "explain": "Use \\((0,7)\\).",
+              "work": "\\(7=0+2\\cos0+C=2+C\\ \\Rightarrow\\ C=5\\)"
+            },
+            {
+              "explain": "The equation.",
+              "work": "\\(y=x+2\\cos3x+5\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\int\\sin3x\\,dx=-\\dfrac{1}{3}\\cos3x\\) (not \\(+\\dfrac{1}{3}\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equation of the curve",
+              "note": "Integrate, then use the point for the constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
