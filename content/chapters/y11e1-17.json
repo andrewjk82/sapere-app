@@ -862,6 +862,48 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "danebank2021-y12e1-mc8",
+          "type": "mc",
+          "stem": "A company has a board of twelve directors. Six of these were selected at random to be candidates in the election for the positions of President, Vice-President and Treasurer. In how many ways can these three senior positions be filled?",
+          "difficulty": "hard",
+          "options": [
+            "\\({}^{12}P_3\\)",
+            "\\(\\dfrac{12!}{3!}\\)",
+            "\\(\\dfrac{{}^{12}P_6}{3!}\\)",
+            "\\(\\dfrac{{}^{12}P_6}{3!\\,3!}\\)"
+          ],
+          "answer": 2,
+          "hint": "First choose which 6 directors become candidates (order doesn't matter), then fill the 3 different positions from those 6 (order matters).",
+          "steps": [
+            {
+              "explain": "Choose the 6 candidates from 12.",
+              "work": "\\({}^{12}C_6=\\dfrac{12!}{6!\\,6!}\\)"
+            },
+            {
+              "explain": "Fill the three different positions from the 6 candidates.",
+              "work": "\\({}^6P_3=\\dfrac{6!}{3!}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\({}^{12}C_6\\times{}^6P_3=\\dfrac{12!}{6!\\,6!}\\times\\dfrac{6!}{3!}=\\dfrac{12!}{6!\\,3!}=\\dfrac{{}^{12}P_6}{3!}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways",
+              "note": "Combination for the candidates, permutation for the positions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1624,6 +1666,52 @@
             "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
             "school": "Baulkham Hills High School",
             "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "danebank2021-y12e1-q12c",
+          "type": "mc",
+          "stem": "Use the pigeonhole principle to determine how many integers must be selected from the numbers 5, 6, 7, 8, 9 and 10 so that at least 2 of the numbers will have a difference of 3?",
+          "difficulty": "medium",
+          "options": [
+            "4",
+            "3",
+            "5",
+            "6"
+          ],
+          "answer": 0,
+          "hint": "Make 'pigeonholes' from pairs that DO have a difference of 3. How many such pairs are there?",
+          "steps": [
+            {
+              "explain": "Pairs with difference 3: \\(\\{5,8\\},\\ \\{6,9\\},\\ \\{7,10\\}\\) — these use all six numbers: 3 pigeonholes.",
+              "work": ""
+            },
+            {
+              "explain": "If we select 3 numbers we could take one from each pair (e.g. 5, 6, 7) with NO difference of 3.",
+              "work": ""
+            },
+            {
+              "explain": "A 4th selected number must come from a pair already used (pigeonhole principle), giving two numbers with difference 3.",
+              "work": "4 → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "So at least 4 integers must be selected.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "pigeonhole principle",
+              "note": "Pair up the numbers that differ by 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
             "origin": "teacher"
           }
         }

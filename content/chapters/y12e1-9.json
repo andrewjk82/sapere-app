@@ -156,6 +156,52 @@
               "note": "Travel M → A → B: half of a, then c."
             }
           ]
+        },
+        {
+          "id": "danebank2021-y12e1-mc1",
+          "type": "mc",
+          "stem": "Peter draws a vector from the origin to the point \\(A(-2,5)\\). He then draws a vector \\(-3\\underset{\\sim}{i}+2\\underset{\\sim}{j}\\) from \\(A\\), ending at point \\(B\\). How far is point \\(B\\) from the origin?",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sqrt{10}\\) units",
+            "\\(\\sqrt{74}\\) units",
+            "\\(\\sqrt{13}\\) units",
+            "\\(\\sqrt{34}\\) units"
+          ],
+          "answer": 1,
+          "hint": "Add the vector to the position of \\(A\\) to find the coordinates of \\(B\\), then use the distance formula from the origin.",
+          "steps": [
+            {
+              "explain": "Position of \\(B\\) = position of \\(A\\) + the vector.",
+              "work": "\\(B=(-2-3,\\ 5+2)=(-5,7)\\)"
+            },
+            {
+              "explain": "Distance from the origin.",
+              "work": "\\(OB=\\sqrt{(-5)^2+7^2}=\\sqrt{25+49}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(\\sqrt{74}\\) units → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\sqrt{13}\\) is the length of the vector from \\(A\\) to \\(B\\) alone.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How far",
+              "note": "Find B first, then its distance from the origin."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1163,6 +1209,98 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "danebank2021-y12e1-mc5",
+          "type": "mc",
+          "stem": "The vectors \\(4\\underset{\\sim}{i}-\\underset{\\sim}{j}\\) and \\(3\\underset{\\sim}{i}+x\\underset{\\sim}{j}\\) are perpendicular. What is the value of \\(x\\)?",
+          "difficulty": "easy",
+          "options": [
+            "-12",
+            "-1",
+            "12",
+            "13"
+          ],
+          "answer": 2,
+          "hint": "Perpendicular vectors have dot product 0.",
+          "steps": [
+            {
+              "explain": "Dot product.",
+              "work": "\\((4,-1)\\cdot(3,x)=4\\times3+(-1)\\times x=12-x\\)"
+            },
+            {
+              "explain": "Set equal to 0.",
+              "work": "\\(12-x=0\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(x=12\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perpendicular",
+              "note": "Dot product equals zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "danebank2021-y12e1-q11c",
+          "type": "mc",
+          "stem": "Find the angle between the vectors \\(\\underset{\\sim}{a}=\\begin{pmatrix}3\\\\ -5\\end{pmatrix}\\) and \\(\\underset{\\sim}{b}=\\begin{pmatrix}-1\\\\ 4\\end{pmatrix}\\), correct to the nearest degree.",
+          "difficulty": "medium",
+          "options": [
+            "\\(163^\\circ\\)",
+            "\\(17^\\circ\\)",
+            "\\(107^\\circ\\)",
+            "\\(73^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\cos\\theta=\\dfrac{\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}}{|\\underset{\\sim}{a}||\\underset{\\sim}{b}|}\\).",
+          "steps": [
+            {
+              "explain": "Dot product.",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=3(-1)+(-5)(4)=-23\\)"
+            },
+            {
+              "explain": "Magnitudes.",
+              "work": "\\(|\\underset{\\sim}{a}|=\\sqrt{9+25}=\\sqrt{34},\\qquad|\\underset{\\sim}{b}|=\\sqrt{1+16}=\\sqrt{17}\\)"
+            },
+            {
+              "explain": "Cosine of the angle.",
+              "work": "\\(\\cos\\theta=\\dfrac{-23}{\\sqrt{34}\\sqrt{17}}=-0.9566\\)"
+            },
+            {
+              "explain": "Inverse cosine.",
+              "work": "\\(\\theta=163^\\circ\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(17^\\circ\\) ignores the negative sign of the dot product.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "angle between the vectors",
+              "note": "\\(\\cos\\theta\\) = dot product ÷ product of magnitudes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
             "grade": "12",
             "origin": "teacher"
           }

@@ -943,6 +943,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "danebank2021-y12e1-q12e",
+          "type": "mc",
+          "stem": "It is known that \\(\\sin x=\\dfrac{1}{3}\\), where \\(\\dfrac{\\pi}{2}<x<\\pi\\). Find the exact value of \\(\\cot2x\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac{7\\sqrt{2}}{8}\\)",
+            "\\(\\dfrac{7\\sqrt{2}}{8}\\)",
+            "\\(-\\dfrac{7}{9}\\)",
+            "\\(-\\dfrac{4\\sqrt{2}}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\cot2x=\\dfrac{\\cos2x}{\\sin2x}\\). Find \\(\\cos x\\) first (negative in the second quadrant).",
+          "steps": [
+            {
+              "explain": "Second quadrant: \\(\\cos x<0\\).",
+              "work": "\\(\\cos x=-\\sqrt{1-\\dfrac{1}{9}}=-\\dfrac{2\\sqrt{2}}{3}\\)"
+            },
+            {
+              "explain": "Double angle formulas.",
+              "work": "\\(\\cos2x=1-2\\sin^2x=1-\\dfrac{2}{9}=\\dfrac{7}{9},\\qquad\\sin2x=2\\sin x\\cos x=2\\left(\\dfrac{1}{3}\\right)\\left(-\\dfrac{2\\sqrt{2}}{3}\\right)=-\\dfrac{4\\sqrt{2}}{9}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\cot2x=\\dfrac{7}{9}\\div\\left(-\\dfrac{4\\sqrt{2}}{9}\\right)=-\\dfrac{7}{4\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Rationalise.",
+              "work": "\\(-\\dfrac{7\\sqrt{2}}{8}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Find cos x (negative), then use the double angle formulas."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2442,6 +2488,52 @@
               "note": "Use sin x + cos x = √2 sin(x + π/4), then think about the denominator."
             }
           ]
+        },
+        {
+          "id": "danebank2021-y12e1-q11e",
+          "type": "mc",
+          "stem": "By expressing \\(\\sin x-\\sqrt{3}\\cos x\\) in the form \\(A\\sin(x-\\alpha)\\), solve \\(\\sin x-\\sqrt{3}\\cos x=-\\sqrt{2}\\), for \\(0\\leq x\\leq2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\dfrac{\\pi}{12},\\ \\dfrac{19\\pi}{12}\\)",
+            "\\(x=\\dfrac{7\\pi}{12},\\ \\dfrac{13\\pi}{12}\\)",
+            "\\(x=\\dfrac{\\pi}{12},\\ \\dfrac{5\\pi}{12}\\)",
+            "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{7\\pi}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(A\\sin(x-\\alpha)=A\\sin x\\cos\\alpha-A\\cos x\\sin\\alpha\\) and match \\(A\\cos\\alpha=1\\), \\(A\\sin\\alpha=\\sqrt{3}\\).",
+          "steps": [
+            {
+              "explain": "Match coefficients.",
+              "work": "\\(A\\cos\\alpha=1,\\quad A\\sin\\alpha=\\sqrt{3}\\ \\Rightarrow\\ A=\\sqrt{1+3}=2,\\quad\\tan\\alpha=\\sqrt{3}\\ \\Rightarrow\\ \\alpha=\\dfrac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "So.",
+              "work": "\\(\\sin x-\\sqrt{3}\\cos x=2\\sin\\left(x-\\dfrac{\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "Solve \\(2\\sin\\left(x-\\dfrac{\\pi}{3}\\right)=-\\sqrt{2}\\) for \\(-\\dfrac{\\pi}{3}\\leq x-\\dfrac{\\pi}{3}\\leq\\dfrac{5\\pi}{3}\\).",
+              "work": "\\(\\sin\\left(x-\\dfrac{\\pi}{3}\\right)=-\\dfrac{\\sqrt{2}}{2}\\ \\Rightarrow\\ x-\\dfrac{\\pi}{3}=-\\dfrac{\\pi}{4},\\ \\dfrac{5\\pi}{4}\\)"
+            },
+            {
+              "explain": "Add \\(\\dfrac{\\pi}{3}\\) to each (the solutions \\(-\\dfrac{3\\pi}{4}\\) and \\(\\dfrac{7\\pi}{4}\\) are outside the range).",
+              "work": "\\(x=\\dfrac{\\pi}{12},\\ \\dfrac{19\\pi}{12}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By expressing",
+              "note": "Write it as \\(A\\sin(x-\\alpha)\\) with \\(A=2\\) and \\(\\alpha=\\dfrac{\\pi}{3}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

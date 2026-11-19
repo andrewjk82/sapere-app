@@ -2034,6 +2034,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "danebank2021-y12e1-q11b",
+          "type": "mc",
+          "stem": "For what values of \\(x\\) is \\(\\dfrac{x}{x-1}\\geq-2\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(x\\leq\\dfrac{2}{3}\\) or \\(x>1\\)",
+            "\\(\\dfrac{2}{3}\\leq x<1\\)",
+            "\\(x\\geq\\dfrac{2}{3}\\)",
+            "\\(x<1\\)"
+          ],
+          "answer": 0,
+          "hint": "Don't multiply by \\((x-1)\\) (unknown sign). Multiply by \\((x-1)^2\\) and remember \\(x\\neq1\\).",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\((x-1)^2>0\\).",
+              "work": "\\(x(x-1)\\geq-2(x-1)^2\\)"
+            },
+            {
+              "explain": "Move to one side and factorise.",
+              "work": "\\(x(x-1)+2(x-1)^2\\geq0\\ \\Rightarrow\\ (x-1)\\left[x+2(x-1)\\right]\\geq0\\ \\Rightarrow\\ (x-1)(3x-2)\\geq0\\)"
+            },
+            {
+              "explain": "An upward parabola is non-negative outside its roots \\(\\dfrac{2}{3}\\) and \\(1\\).",
+              "work": "\\(x\\leq\\dfrac{2}{3}\\quad\\text{or}\\quad x\\geq1\\)"
+            },
+            {
+              "explain": "Exclude \\(x=1\\) (undefined).",
+              "work": "\\(x\\leq\\dfrac{2}{3}\\) or \\(x>1\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "For what values",
+              "note": "Multiply by the square of the denominator and exclude \\(x=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

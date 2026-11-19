@@ -130,6 +130,52 @@
               }
             }
           ]
+        },
+        {
+          "id": "danebank2021-y12e1-mc9",
+          "type": "mc",
+          "stem": "A particle is initially positioned at \\(x=-2\\). Its motion has velocity of \\(v=\\dfrac{1}{t+e}\\). Which of the following will be true when the particle reaches the origin?",
+          "difficulty": "hard",
+          "options": [
+            "\\(t=2,\\ v=\\dfrac{1}{2+e}\\)",
+            "\\(t=e,\\ \\dot{x}=\\dfrac{1}{2e}\\)",
+            "\\(t=e^2,\\ v=\\dfrac{1}{e^2+e}\\)",
+            "\\(t=e^3-e,\\ v=e^{-3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Integrate the velocity to get \\(x\\), use \\(x(0)=-2\\) for the constant, then find when \\(x=0\\).",
+          "steps": [
+            {
+              "explain": "Integrate.",
+              "work": "\\(x=\\int\\dfrac{1}{t+e}dt=\\ln(t+e)+C\\)"
+            },
+            {
+              "explain": "At \\(t=0\\), \\(x=-2\\).",
+              "work": "\\(-2=\\ln e+C=1+C\\ \\Rightarrow\\ C=-3\\), so \\(x=\\ln(t+e)-3\\)"
+            },
+            {
+              "explain": "The origin: \\(x=0\\).",
+              "work": "\\(\\ln(t+e)=3\\ \\Rightarrow\\ t+e=e^3\\ \\Rightarrow\\ t=e^3-e\\)"
+            },
+            {
+              "explain": "Velocity then.",
+              "work": "\\(v=\\dfrac{1}{t+e}=\\dfrac{1}{e^3}=e^{-3}\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "reaches the origin",
+              "note": "Integrate with \\(x(0)=-2\\), then set \\(x=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }
