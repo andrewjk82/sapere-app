@@ -7301,6 +7301,94 @@
             "course": "Advanced",
             "grade": "12"
           }
+        },
+        {
+          "id": "barker2021-y11a-mc7",
+          "type": "mc",
+          "stem": "The function \\(y=x^2\\) is translated 3 units to the right and 5 units up. What is its new equation?",
+          "difficulty": "easy",
+          "options": [
+            "\\(y=x^2+3x+5\\)",
+            "\\(y=x^2-6x+14\\)",
+            "\\(y=x^2-9x+5\\)",
+            "\\(y=x^2+9x+14\\)"
+          ],
+          "answer": 1,
+          "hint": "Right 3: replace \\(x\\) by \\((x-3)\\). Up 5: add 5 to the whole function.",
+          "steps": [
+            {
+              "explain": "Shift right by 3.",
+              "work": "\\(y=(x-3)^2\\)"
+            },
+            {
+              "explain": "Shift up by 5.",
+              "work": "\\(y=(x-3)^2+5\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(y=x^2-6x+9+5=x^2-6x+14\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Mistake: moving right means \\(x-3\\), NOT \\(x+3\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "translated",
+              "note": "Right a: replace x by x − a; up b: add b."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q12e",
+          "type": "mc",
+          "stem": "Determine the transformation that has been applied to \\(x^2+y^2=49\\) to result in \\(x^2+y^2-6y-40=0\\).",
+          "difficulty": "medium",
+          "options": [
+            "A vertical translation of 3 units up (translation by \\(\\begin{pmatrix}0\\\\ 3\\end{pmatrix}\\))",
+            "A vertical translation of 3 units down",
+            "A horizontal translation of 3 units right",
+            "A dilation by a factor of 3"
+          ],
+          "answer": 0,
+          "hint": "Complete the square in \\(y\\) to see the centre of the circle.",
+          "steps": [
+            {
+              "explain": "Rearrange.",
+              "work": "\\(x^2+y^2-6y=40\\)"
+            },
+            {
+              "explain": "Complete the square for \\(y\\) (add 9 to both sides).",
+              "work": "\\(x^2+(y^2-6y+9)=40+9\\ \\Rightarrow\\ x^2+(y-3)^2=49\\)"
+            },
+            {
+              "explain": "The circle has the same radius 7 but its centre moved from \\((0,0)\\) to \\((0,3)\\).",
+              "work": "<span style=\"color:#047857;font-weight:700\">3 units up</span> → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Complete the square to find the new centre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10274,6 +10362,48 @@
             "grade": "11",
             "origin": "teacher",
             "note": "Four graph options redrawn as vector from the page and arranged in one figure labelled A–D. Answers computed independently (no solutions in the PDF)."
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14eiii",
+          "type": "mc",
+          "stem": "Let \\(f(x)=\\ln x\\), \\(g(x)=x^4+1\\) and \\(h(x)=\\ln\\left(x^4+1\\right)\\). State whether the functions \\(f(x)\\), \\(g(x)\\) and \\(h(x)\\) are even, odd or neither.",
+          "difficulty": "medium",
+          "options": [
+            "f neither, g even, h even",
+            "f odd, g even, h even",
+            "f neither, g odd, h even",
+            "f even, g even, h neither"
+          ],
+          "answer": 0,
+          "hint": "Test \\(f(-x)\\): \\(f(-x)=f(x)\\) means even; \\(f(-x)=-f(x)\\) means odd.",
+          "steps": [
+            {
+              "explain": "\\(f(x)=\\ln x\\) is only defined for \\(x>0\\), so \\(f(-x)\\) does not exist: <span style=\"color:#047857;font-weight:700\">neither</span>.",
+              "work": ""
+            },
+            {
+              "explain": "\\(g(-x)=(-x)^4+1=x^4+1=g(x)\\): <span style=\"color:#047857;font-weight:700\">even</span>.",
+              "work": ""
+            },
+            {
+              "explain": "\\(h(-x)=\\ln\\left((-x)^4+1\\right)=\\ln(x^4+1)=h(x)\\): <span style=\"color:#047857;font-weight:700\">even</span> → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "even, odd or neither",
+              "note": "Compare f(−x) with f(x)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]
@@ -18596,6 +18726,94 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "barker2021-y11a-mc1",
+          "type": "mc",
+          "stem": "Which of the following is the value of \\(|5-7|+|-6|-|-5|+2|-3|\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-9\\)",
+            "\\(-7\\)",
+            "\\(9\\)",
+            "\\(19\\)"
+          ],
+          "answer": 2,
+          "hint": "Work out each absolute value first (the distance from zero is always positive), then add and subtract.",
+          "steps": [
+            {
+              "explain": "Evaluate each absolute value.",
+              "work": "\\(|5-7|=|-2|=2,\\quad|-6|=6,\\quad|-5|=5,\\quad|-3|=3\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(2+6-5+2\\times3\\)"
+            },
+            {
+              "explain": "Multiply then add and subtract.",
+              "work": "\\(2+6-5+6=9\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Mistake: evaluating \\(|-5|\\) as \\(-5\\) would give a different total.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "value",
+              "note": "Evaluate each absolute value before combining."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q11b",
+          "type": "mc",
+          "stem": "Solve \\(|4x-9|=15\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=6\\) or \\(x=-\\dfrac{3}{2}\\)",
+            "\\(x=6\\) only",
+            "\\(x=\\dfrac{3}{2}\\) or \\(x=-6\\)",
+            "\\(x=6\\) or \\(x=\\dfrac{3}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "An absolute value equation has TWO cases: \\(4x-9=15\\) or \\(4x-9=-15\\).",
+          "steps": [
+            {
+              "explain": "Case 1.",
+              "work": "\\(4x-9=15\\ \\Rightarrow\\ 4x=24\\ \\Rightarrow\\ x=6\\)"
+            },
+            {
+              "explain": "Case 2.",
+              "work": "\\(4x-9=-15\\ \\Rightarrow\\ 4x=-6\\ \\Rightarrow\\ x=-\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Both are valid: \\(|4(-1.5)-9|=|-15|=15\\) ✓.",
+              "work": "\\(x=6\\) or \\(x=-\\dfrac{3}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Consider both the positive and negative case."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -19332,6 +19550,178 @@
             "grade": "11",
             "origin": "teacher",
             "note": "Values read from the printed graphs: f(−2) = 3 (f looks like x² − 1) and g(3) = 4 (g looks like x + 1). Check against the marking guide if available."
+          }
+        },
+        {
+          "id": "barker2021-y11a-q11d",
+          "type": "mc",
+          "stem": "If \\(f(x)=\\dfrac{3}{x^2}\\), find an expression for \\(f(f(x))\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x^4}{3}\\)",
+            "\\(\\dfrac{9}{x^4}\\)",
+            "\\(\\dfrac{3}{x^4}\\)",
+            "\\(\\dfrac{x^4}{9}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace the \\(x\\) in \\(f(x)\\) with the whole expression \\(\\dfrac{3}{x^2}\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(f(x)\\) into \\(f\\).",
+              "work": "\\(f(f(x))=3\\div\\left(\\dfrac{3}{x^2}\\right)^2\\)"
+            },
+            {
+              "explain": "Square the inside.",
+              "work": "\\(\\left(\\dfrac{3}{x^2}\\right)^2=\\dfrac{9}{x^4}\\)"
+            },
+            {
+              "explain": "Divide by a fraction = multiply by its reciprocal.",
+              "work": "\\(3\\div\\dfrac{9}{x^4}=3\\times\\dfrac{x^4}{9}=\\dfrac{x^4}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "expression",
+              "note": "Substitute the whole function into itself."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14ei",
+          "type": "mc",
+          "stem": "Let \\(f(x)=\\ln x\\), and \\(g(x)=x^4+1\\). Find \\(h(x)\\) if \\(h(x)=f(g(x))\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\ln\\left(x^4+1\\right)\\)",
+            "\\((\\ln x)^4+1\\)",
+            "\\(4\\ln x+1\\)",
+            "\\(\\ln\\left(x^4\\right)+1\\)"
+          ],
+          "answer": 0,
+          "hint": "Composite function \\(f(g(x))\\): put the whole of \\(g(x)\\) inside \\(f\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(g(x)\\) for the input of \\(f\\).",
+              "work": "\\(f(g(x))=\\ln\\left(g(x)\\right)\\)"
+            },
+            {
+              "explain": "Replace \\(g(x)\\).",
+              "work": "\\(h(x)=\\ln\\left(x^4+1\\right)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\((\\ln x)^4+1\\) is \\(g(f(x))\\) (the other order).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "f(g(x)) means g goes inside f."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14eiv",
+          "type": "review",
+          "stem": "Let \\(f(x)=\\ln x\\), \\(g(x)=x^4+1\\) and \\(h(x)=\\ln\\left(x^4+1\\right)\\). Show that \\(h(x)+h(-x)=f\\left(\\left(g(x)\\right)^2\\right)\\).",
+          "difficulty": "hard",
+          "answer": "Since h is even, h(−x) = h(x). LHS = h(x) + h(x) = 2h(x) = 2 ln(x⁴ + 1) = ln((x⁴ + 1)²) = ln((g(x))²) = f((g(x))²) = RHS.",
+          "manual": true,
+          "hint": "Use part (iii): an even function has \\(h(-x)=h(x)\\). Then use the log power law.",
+          "steps": [
+            {
+              "explain": "From part (iii), \\(h\\) is even so \\(h(-x)=h(x)\\).",
+              "work": "\\(\\text{LHS}=h(x)+h(x)=2h(x)\\)"
+            },
+            {
+              "explain": "Substitute \\(h(x)\\).",
+              "work": "\\(2\\ln\\left(x^4+1\\right)\\)"
+            },
+            {
+              "explain": "Power law: \\(n\\ln a=\\ln a^n\\).",
+              "work": "\\(=\\ln\\left(x^4+1\\right)^2=\\ln\\left(\\left(g(x)\\right)^2\\right)\\)"
+            },
+            {
+              "explain": "This is \\(f\\left((g(x))^2\\right)=\\text{RHS}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Use h(−x) = h(x) and the log power law."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14ev",
+          "type": "mc",
+          "stem": "Let \\(f(x)=\\ln x\\), \\(g(x)=x^4+1\\) and \\(i(x)=g(f(x))\\). By first determining whether or not \\(i(x)=4\\ln x+1\\), state the range of \\(i(x)\\).",
+          "difficulty": "hard",
+          "options": [
+            "i(x) ≠ 4 ln x + 1, because i(x) = (ln x)⁴ + 1; the range is i(x) ≥ 1",
+            "i(x) = 4 ln x + 1; the range is all real numbers",
+            "i(x) ≠ 4 ln x + 1; the range is i(x) > 1",
+            "i(x) = 4 ln x + 1; the range is i(x) ≥ 1"
+          ],
+          "answer": 0,
+          "hint": "Substitute: \\(g(f(x))=(f(x))^4+1\\). Is \\((\\ln x)^4\\) the same as \\(4\\ln x\\)?",
+          "steps": [
+            {
+              "explain": "Composite.",
+              "work": "\\(i(x)=g(\\ln x)=(\\ln x)^4+1\\)"
+            },
+            {
+              "explain": "The power applies to the LOGARITHM, not to \\(x\\), so \\((\\ln x)^4\\neq4\\ln x\\) (the power law needs \\(\\ln\\left(x^4\\right)\\)).",
+              "work": "\\(i(x)\\neq4\\ln x+1\\)"
+            },
+            {
+              "explain": "Range: \\((\\ln x)^4\\geq0\\) for every real value of \\(\\ln x\\) (an even power), and it equals 0 at \\(x=1\\).",
+              "work": "\\((\\ln x)^4+1\\geq1\\)"
+            },
+            {
+              "explain": "Range.",
+              "work": "\\(i(x)\\geq1\\ \\text{i.e. }[1,\\infty)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "range",
+              "note": "An even power is never negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]

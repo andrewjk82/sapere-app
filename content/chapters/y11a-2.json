@@ -4537,6 +4537,52 @@
               "note": "Substitute both values into the formula first; evaluate the square root before multiplying by \\(4\\pi\\)."
             }
           ]
+        },
+        {
+          "id": "barker2021-y11a-mc2",
+          "type": "mc",
+          "stem": "Which of the following is the expansion of \\(\\left(5-2\\sqrt{3}\\right)^2\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-11\\)",
+            "\\(25-4\\sqrt{3}\\)",
+            "\\(37\\)",
+            "\\(37-20\\sqrt{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Squaring a bracket means multiplying it by itself; don't forget the middle term.",
+          "steps": [
+            {
+              "explain": "Write the product.",
+              "work": "\\((5-2\\sqrt{3})(5-2\\sqrt{3})\\)"
+            },
+            {
+              "explain": "Expand using \\((a-b)^2=a^2-2ab+b^2\\).",
+              "work": "\\(5^2-2(5)(2\\sqrt{3})+(2\\sqrt{3})^2=25-20\\sqrt{3}+12\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(37-20\\sqrt{3}\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Mistake: \\((2\\sqrt{3})^2=12\\) (not 6 or 2·3).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "expansion",
+              "note": "Use (a − b)² = a² − 2ab + b²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -7787,6 +7787,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "barker2021-y11a-q12d",
+          "type": "mc",
+          "stem": "Find the value(s) of \\(k\\) for which \\(y=3x^2-12x+k\\) would have two different roots.",
+          "difficulty": "medium",
+          "options": [
+            "\\(k<12\\)",
+            "\\(k>12\\)",
+            "\\(k\\leq12\\)",
+            "\\(k<-12\\)"
+          ],
+          "answer": 0,
+          "hint": "Two different (real) roots means the discriminant is positive: \\(\\Delta=b^2-4ac>0\\).",
+          "steps": [
+            {
+              "explain": "Identify.",
+              "work": "\\(a=3,\\ b=-12,\\ c=k\\)"
+            },
+            {
+              "explain": "Discriminant.",
+              "work": "\\(\\Delta=(-12)^2-4(3)(k)=144-12k\\)"
+            },
+            {
+              "explain": "Require \\(\\Delta>0\\) and solve.",
+              "work": "\\(144-12k>0\\ \\Rightarrow\\ k<12\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "When \\(k=12\\) the roots are equal, so \\(k=12\\) is excluded.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two different roots",
+              "note": "Discriminant greater than zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
