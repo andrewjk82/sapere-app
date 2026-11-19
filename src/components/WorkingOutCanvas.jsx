@@ -1691,9 +1691,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
           ? { display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4px', padding: '6px 8px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }
           : { display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
           {/* Row 1: drawing tools (one line with row 2 when the title is hidden: `contents` lets both rows share the toolbar line) */}
-          <div style={hideTitle ? { display: 'contents' } : { display: 'flex', padding: '8px 14px', gap: '6px', alignItems: 'center' }}>
+          <div style={hideTitle ? { display: 'contents' } : { display: 'flex', flexWrap: 'wrap', padding: '8px 14px', gap: '6px', alignItems: 'center' }}>
             {hideTitle ? null : (
-              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap' }}>
                 {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
                 <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
               </span>
@@ -1773,7 +1773,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             </div>
           </div>
           {/* Row 2: page navigation + undo + clear */}
-          <div style={hideTitle ? { display: 'contents' } : { display: 'flex', padding: '6px 14px 8px', gap: '6px', alignItems: 'center', borderTop: '1px solid #e2e8f0' }}>
+          <div style={hideTitle ? { display: 'contents' } : { display: 'flex', flexWrap: 'wrap', padding: '6px 14px 8px', gap: '6px', alignItems: 'center', borderTop: '1px solid #e2e8f0' }}>
             <button onClick={handleUndo} disabled={!undoStack.length} aria-label="Undo" title="Undo" style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: undoStack.length ? 'pointer' : 'default', background: '#f1f5f9', color: '#64748b', opacity: undoStack.length ? 1 : 0.4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <RotateCcw size={15} />
             </button>
