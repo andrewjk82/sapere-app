@@ -2216,6 +2216,48 @@
             "section": "Fractions and Decimals",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form2hy2022-q1aiv",
+          "type": "mc",
+          "stem": "Evaluate \\(\\dfrac{2}{3}\\times\\dfrac{1}{5}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{2}{15}\\)",
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{7}{15}\\)",
+            "\\(\\dfrac{10}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "To multiply fractions, multiply the TOP numbers together and the BOTTOM numbers together.",
+          "steps": [
+            {
+              "explain": "Multiply the numerators.",
+              "work": "\\(2\\times1=2\\)"
+            },
+            {
+              "explain": "Multiply the denominators.",
+              "work": "\\(3\\times5=15\\)"
+            },
+            {
+              "explain": "Write the new fraction (it cannot be simplified).",
+              "work": "\\(\\dfrac{2}{15}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Multiply tops, multiply bottoms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4085,6 +4127,48 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "form2hy2022-q4bi",
+          "type": "mc",
+          "stem": "Evaluate, expressing your answer in simplest form: \\(\\dfrac{16}{9}\\div\\dfrac{28}{15}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{20}{21}\\)",
+            "\\(\\dfrac{21}{20}\\)",
+            "\\(\\dfrac{448}{135}\\)",
+            "\\(\\dfrac{4}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "To divide by a fraction, MULTIPLY by its RECIPROCAL (flip the second fraction). Cancel common factors BEFORE multiplying.",
+          "steps": [
+            {
+              "explain": "Flip the second fraction and change to multiplication.",
+              "work": "\\(\\dfrac{16}{9}\\times\\dfrac{15}{28}\\)"
+            },
+            {
+              "explain": "Cancel before multiplying: divide \\(16\\) and \\(28\\) by 4, and \\(15\\) and \\(9\\) by 3.",
+              "work": "\\(\\dfrac{16}{9}\\times\\dfrac{15}{28}=\\dfrac{4}{3}\\times\\dfrac{5}{7}\\)"
+            },
+            {
+              "explain": "Multiply the tops and the bottoms.",
+              "work": "\\(\\dfrac{4\\times5}{3\\times7}=\\dfrac{20}{21}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Multiply by the reciprocal; cancel before multiplying."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },

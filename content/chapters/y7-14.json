@@ -3263,6 +3263,48 @@
               "note": "An equivalent fraction keeps the same value when numerator and denominator are multiplied by the same number."
             }
           ]
+        },
+        {
+          "id": "form2hy2022-q1c",
+          "type": "mc",
+          "stem": "Write \\(35\\%\\) as a decimal.",
+          "difficulty": "easy",
+          "options": [
+            "0.35",
+            "3.5",
+            "0.035",
+            "35"
+          ],
+          "answer": 0,
+          "hint": "'Per cent' means 'out of 100'. Divide by 100 (move the decimal point 2 places LEFT).",
+          "steps": [
+            {
+              "explain": "Percent means per hundred.",
+              "work": "\\(35\\%=\\dfrac{35}{100}\\)"
+            },
+            {
+              "explain": "Divide by 100: move the decimal point two places to the left.",
+              "work": "\\(35.0\\to0.35\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(0.35\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "as a decimal",
+              "note": "Divide by 100."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4181,6 +4223,144 @@
               "note": "Subtracting 10% is the same as multiplying the original price by 90%."
             }
           ]
+        },
+        {
+          "id": "form2hy2022-q2c",
+          "type": "mc",
+          "stem": "Find \\(40\\%\\) of \\(200\\).",
+          "difficulty": "easy",
+          "options": [
+            "80",
+            "8",
+            "20",
+            "160"
+          ],
+          "answer": 0,
+          "hint": "'Percent of' means multiply: \\(40\\%=\\dfrac{40}{100}\\).",
+          "steps": [
+            {
+              "explain": "Write the percentage as a fraction.",
+              "work": "\\(40\\%=\\dfrac{40}{100}\\)"
+            },
+            {
+              "explain": "Multiply by 200.",
+              "work": "\\(\\dfrac{40}{100}\\times200=40\\times2\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(=80\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: 10% of 200 is 20, so 40% is \\(4\\times20=80\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Percent of a quantity: multiply the fraction by the quantity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q3f",
+          "type": "mc",
+          "stem": "Decrease \\(\\$40\\) by \\(15\\%\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\$34\\)",
+            "\\(\\$6\\)",
+            "\\(\\$46\\)",
+            "\\(\\$25\\)"
+          ],
+          "answer": 0,
+          "hint": "Find 15% of \\(\\$40\\) first, then SUBTRACT it from \\(\\$40\\) (or find 85% directly).",
+          "steps": [
+            {
+              "explain": "Find the 15% amount.",
+              "work": "\\(15\\%\\times40=\\dfrac{15}{100}\\times40=6\\)"
+            },
+            {
+              "explain": "Decrease means take it away.",
+              "work": "\\(40-6=34\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\$34\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Another way: the new price is \\(85\\%\\) of the old: \\(0.85\\times40=34\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Decrease",
+              "note": "Find the percentage amount, then subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q7d",
+          "type": "mc",
+          "stem": "In a certain town, some people were affected by a virus. In the first month, \\(20\\%\\) of the population contracted the virus making them sick. In the following month, \\(20\\%\\) of the sick people recovered and \\(20\\%\\) of the healthy people contracted the virus. What percentage of the population is healthy at the end of the second month?",
+          "difficulty": "hard",
+          "options": [
+            "68%",
+            "64%",
+            "76%",
+            "80%"
+          ],
+          "answer": 0,
+          "hint": "Track TWO groups through the second month: the sick (20% of the town) and the healthy (80%). Work out how many recover and how many get sick, as percentages of the WHOLE population.",
+          "steps": [
+            {
+              "explain": "After month 1: \\(20\\%\\) sick and \\(80\\%\\) healthy.",
+              "work": "\\(\\text{sick}=20\\%,\\qquad\\text{healthy}=80\\%\\)"
+            },
+            {
+              "explain": "Month 2, recoveries: 20% of the sick people.",
+              "work": "\\(20\\%\\times20\\%=\\dfrac{1}{5}\\times\\dfrac{1}{5}=\\dfrac{1}{25}=4\\%\\ \\text{of the population recover}\\)"
+            },
+            {
+              "explain": "Month 2, new infections: 20% of the healthy people.",
+              "work": "\\(20\\%\\times80\\%=\\dfrac{1}{5}\\times\\dfrac{4}{5}=\\dfrac{4}{25}=16\\%\\ \\text{of the population get sick}\\)"
+            },
+            {
+              "explain": "New healthy percentage: start at 80, add the recoveries, subtract the new infections.",
+              "work": "\\(80+4-16=68\\)% → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What percentage",
+              "note": "Track the sick and healthy groups as percentages of the whole population."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     }

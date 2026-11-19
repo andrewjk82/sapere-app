@@ -4188,6 +4188,48 @@
             "section": "Fractions and Decimals",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form2hy2022-q1aii",
+          "type": "mc",
+          "stem": "Evaluate \\(7.6+12.1\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(19.7\\)",
+            "\\(18.7\\)",
+            "\\(19.17\\)",
+            "\\(20.7\\)"
+          ],
+          "answer": 0,
+          "hint": "Line up the DECIMAL POINTS and add column by column, starting from the right (tenths first).",
+          "steps": [
+            {
+              "explain": "Write the numbers with the decimal points lined up.",
+              "work": "\\(\\begin{array}{r}\\ \\ 7.6\\\\ +12.1\\\\ \\hline\\end{array}\\)"
+            },
+            {
+              "explain": "Tenths column: \\(6+1=7\\). Units column: \\(7+2=9\\). Tens column: \\(0+1=1\\).",
+              "work": "\\(7.6+12.1=19.7\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check by estimating: \\(8+12=20\\), close to 19.7 ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Line up the decimal points and add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5173,6 +5215,52 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q21"
+          }
+        },
+        {
+          "id": "form2hy2022-q3a",
+          "type": "mc",
+          "stem": "Evaluate \\(0.4\\times1.2\\).",
+          "difficulty": "easy",
+          "options": [
+            "0.48",
+            "4.8",
+            "0.048",
+            "1.6"
+          ],
+          "answer": 0,
+          "hint": "Ignore the decimal points and multiply the whole numbers; then put the decimal point back using the TOTAL number of decimal places.",
+          "steps": [
+            {
+              "explain": "Multiply \\(4\\times12\\) (ignoring the decimal points).",
+              "work": "\\(4\\times12=48\\)"
+            },
+            {
+              "explain": "Count the decimal places: \\(0.4\\) has 1 and \\(1.2\\) has 1, so the answer needs 2 decimal places.",
+              "work": "1 + 1 = 2 decimal places"
+            },
+            {
+              "explain": "Place the decimal point 2 places from the right.",
+              "work": "\\(0.4\\times1.2=0.48\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check with fractions: \\(\\dfrac{4}{10}\\times\\dfrac{12}{10}=\\dfrac{48}{100}=0.48\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Multiply without the points, then count the decimal places."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
           }
         }
       ]

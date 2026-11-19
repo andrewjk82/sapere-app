@@ -274,6 +274,596 @@
               "note": "Place each Venn region into the matching row and column, then check that row and column totals agree."
             }
           ]
+        },
+        {
+          "id": "form2hy2022-q1e",
+          "type": "mc",
+          "stem": "If \\(A=\\{4,5,6\\}\\) and \\(B=\\{6,7,8\\}\\), find \\(A\\cup B\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\{4,5,6,7,8\\}\\)",
+            "\\(\\{6\\}\\)",
+            "\\(\\{4,5,6,6,7,8\\}\\)",
+            "\\(\\{4,5,7,8\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "The UNION \\(A\\cup B\\) contains everything that is in A OR in B (or both). Each element is listed only ONCE.",
+          "steps": [
+            {
+              "explain": "List the elements of \\(A\\).",
+              "work": "\\(4,\\ 5,\\ 6\\)"
+            },
+            {
+              "explain": "Add the elements of \\(B\\) that are not already listed (\\(6\\) is already there).",
+              "work": "\\(7,\\ 8\\)"
+            },
+            {
+              "explain": "Write the union with each element once.",
+              "work": "\\(A\\cup B=\\{4,5,6,7,8\\}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistake: writing 6 twice.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find",
+              "note": "The union lists every element once."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q4ei",
+          "type": "mc",
+          "stem": "For the Venn diagram (circle \\(A\\) contains 8 and 3, circle \\(B\\) contains 3 and 6, and 2 lie outside both circles) state the value of \\(|A\\cup B|\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(8)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(6)</text><text x=\"240\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+          },
+          "options": [
+            "17",
+            "9",
+            "11",
+            "19"
+          ],
+          "answer": 0,
+          "hint": "\\(|A\\cup B|\\) counts everything in A OR B (or both): the regions INSIDE the circles. The \\(2\\) outside does NOT count.",
+          "steps": [
+            {
+              "explain": "Read the regions: A only \\(8\\), both \\(3\\), B only \\(6\\), outside \\(2\\). The union uses the three regions inside the circles (red).",
+              "work": "(8) (3) (6) (2)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(8)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(6)</text><text x=\"240\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+              }
+            },
+            {
+              "explain": "The union is everything inside at least one circle.",
+              "work": "\\(|A\\cup B|=8+3+6\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(=17\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not 19? That includes the 2 OUTSIDE both circles.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "state the value",
+              "note": "Union counts every region inside a circle, not the outside."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q4eii",
+          "type": "mc",
+          "stem": "For the Venn diagram (circle \\(A\\) contains 8 and 3, circle \\(B\\) contains 3 and 6, and 2 lie outside both circles) state the value of \\(|\\overline{A}|\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(8)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(6)</text><text x=\"240\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+          },
+          "options": [
+            "8",
+            "11",
+            "6",
+            "2"
+          ],
+          "answer": 0,
+          "hint": "\\(\\overline{A}\\) is the COMPLEMENT of \\(A\\): everything that is NOT in circle \\(A\\) (inside the rectangle).",
+          "steps": [
+            {
+              "explain": "Everything in circle \\(A\\) is \\(8+3=11\\) (A only and the overlap).",
+              "work": "\\(|A|=8+3=11\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(8)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(6)</text><text x=\"240\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+              }
+            },
+            {
+              "explain": "The complement is the rest of the universal set: the B-only part and the outside.",
+              "work": "\\(\\overline{A}=\\{\\text{B only}\\}\\cup\\{\\text{outside}\\}\\)"
+            },
+            {
+              "explain": "Add those regions (red: B only and outside).",
+              "work": "\\(|\\overline{A}|=6+2=8\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"284\" height=\"154\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"120.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"180.0\" cy=\"85.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"91.4\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"208.6\" y=\"31\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"282\" y=\"156\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"94\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(8)</text><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(3)</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(6)</text><text x=\"240\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">(2)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(|A|+|\\overline{A}|=11+8=19\\) = all the numbers in the diagram ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "state the value",
+              "note": "The complement is everything outside the circle A."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q5di",
+          "type": "mc",
+          "stem": "Dumbledore’s Army consists of 20 people: 14 study Potions, 9 study Herbology and 2 study neither. Let \\(P=\\{\\text{people who study Potions}\\}\\) and \\(H=\\{\\text{people who study Herbology}\\}\\). Draw a Venn diagram to illustrate this situation. Which Venn diagram is correct (numbers in the order: P only, both, H only, neither)?",
+          "difficulty": "medium",
+          "options": [
+            "\\((9),\\ (5),\\ (4),\\ (2)\\)",
+            "\\((14),\\ (5),\\ (9),\\ (2)\\)",
+            "\\((9),\\ (5),\\ (4),\\ (0)\\)",
+            "\\((5),\\ (9),\\ (4),\\ (2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Only \\(18\\) people study at least one subject (20 − 2). Use the INCLUSION–EXCLUSION idea: \\(|P\\cup H|=|P|+|H|-|P\\cap H|\\) to find how many study BOTH.",
+          "steps": [
+            {
+              "explain": "People who study at least one of the two subjects.",
+              "work": "\\(|P\\cup H|=20-2=18\\)"
+            },
+            {
+              "explain": "Use the union formula to find the overlap.",
+              "work": "\\(18=14+9-|P\\cap H|\\;\\Rightarrow\\;|P\\cap H|=23-18=5\\)"
+            },
+            {
+              "explain": "Subtract the overlap from each total: Potions only, Herbology only.",
+              "work": "\\(P\\ \\text{only}=14-5=9,\\qquad H\\ \\text{only}=9-5=4\\)"
+            },
+            {
+              "explain": "Fill in the Venn diagram (and \\(2\\) outside both circles).",
+              "work": "\\((9),\\ (5),\\ (4),\\ (2)\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"304\" height=\"164\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"128.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"192.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"99.4\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"220.6\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"302\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"102\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(9)</text><text x=\"160\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(5)</text><text x=\"218\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(4)</text><text x=\"260\" y=\"154\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(9+5+4+2=20\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Draw a Venn diagram",
+              "note": "Use the union formula to find the overlap, then subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q5dii",
+          "type": "mc",
+          "stem": "Dumbledore’s Army consists of 20 people: 14 study Potions, 9 study Herbology and 2 study neither. Let \\(P=\\{\\text{people who study Potions}\\}\\) and \\(H=\\{\\text{people who study Herbology}\\}\\). State the value of \\(|P\\cap H|\\).",
+          "difficulty": "medium",
+          "options": [
+            "5",
+            "9",
+            "4",
+            "18"
+          ],
+          "answer": 0,
+          "hint": "\\(P\\cap H\\) is the INTERSECTION: the people in BOTH circles. Use \\(|P\\cup H|=|P|+|H|-|P\\cap H|\\).",
+          "steps": [
+            {
+              "explain": "The union.",
+              "work": "\\(|P\\cup H|=20-2=18\\)"
+            },
+            {
+              "explain": "Substitute into the formula.",
+              "work": "\\(18=14+9-|P\\cap H|\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(|P\\cap H|=23-18=5\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"304\" height=\"164\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"128.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"192.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"99.4\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"220.6\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"302\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"102\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(9)</text><text x=\"160\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(5)</text><text x=\"218\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(4)</text><text x=\"260\" y=\"154\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "State the value",
+              "note": "Use the union formula; the intersection is the overlap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q5diii",
+          "type": "mc",
+          "stem": "Dumbledore’s Army consists of 20 people: 14 study Potions, 9 study Herbology and 2 study neither. Let \\(P=\\{\\text{people who study Potions}\\}\\) and \\(H=\\{\\text{people who study Herbology}\\}\\). Describe in words the set \\(P\\cap\\overline{H}\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"304\" height=\"164\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"128.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"192.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"99.4\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"220.6\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"302\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"102\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(9)</text><text x=\"160\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(5)</text><text x=\"218\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(4)</text><text x=\"260\" y=\"154\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text></svg>"
+          },
+          "options": [
+            "The people who study Potions but NOT Herbology",
+            "The people who study both Potions and Herbology",
+            "The people who study Herbology but NOT Potions",
+            "The people who study neither subject"
+          ],
+          "answer": 0,
+          "hint": "\\(\\overline{H}\\) means NOT in \\(H\\). The \\(\\cap\\) means AND. So read it as 'in P AND not in H'.",
+          "steps": [
+            {
+              "explain": "Read the symbols: \\(\\overline{H}\\) = people who do NOT study Herbology.",
+              "work": "\\(\\overline{H}=\\text{not in }H\\)"
+            },
+            {
+              "explain": "\\(\\cap\\) means 'and' (in both sets).",
+              "work": "\\(P\\cap\\overline{H}=\\text{in }P\\ \\text{AND not in}\\ H\\)"
+            },
+            {
+              "explain": "In the Venn diagram this is the part of circle \\(P\\) that does NOT overlap \\(H\\) (the \\(9\\) people).",
+              "work": "the 9 in 'P only' → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"304\" height=\"164\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"128.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"192.0\" cy=\"90.0\" r=\"52\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"99.4\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">P</text><text x=\"220.6\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">H</text><text x=\"302\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"102\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(9)</text><text x=\"160\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(5)</text><text x=\"218\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(4)</text><text x=\"260\" y=\"154\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">(2)</text><rect x=\"2\" y=\"2\" width=\"316\" height=\"176\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Describe in words",
+              "note": "H-bar means not in H; the intersection symbol means and."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q6di",
+          "type": "mc",
+          "stem": "Competitive chess players each have a rating indicating their ability level. The higher the number the better the player. Let \\(A\\) be the set of chess players with a rating greater than 1500, \\(B\\) be the set of chess players with a rating greater than 1800, and \\(C\\) be the set of chess players with a rating greater than 2100. Draw a Venn diagram to represent this situation. Which description is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Three circles one inside the other: \\(C\\) inside \\(B\\) inside \\(A\\), all inside the universal set",
+            "Three overlapping circles with a common region",
+            "Three separate circles that do not touch",
+            "Two overlapping circles \\(A\\) and \\(B\\) with \\(C\\) outside both"
+          ],
+          "answer": 0,
+          "hint": "Ask: if a player is in \\(C\\) (rating over 2100), must they ALSO be in \\(B\\) and \\(A\\)? A rating over 2100 is also over 1800 and over 1500.",
+          "steps": [
+            {
+              "explain": "Rating over 2100 implies rating over 1800.",
+              "work": "\\(C\\subset B\\)"
+            },
+            {
+              "explain": "Rating over 1800 implies rating over 1500.",
+              "work": "\\(B\\subset A\\)"
+            },
+            {
+              "explain": "So each set sits COMPLETELY inside the next: \\(C\\subset B\\subset A\\) (nested circles) inside the universal set \\(\\mathcal{E}=\\{\\text{chess players}\\}\\).",
+              "work": "\\(C\\subset B\\subset A\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"314\" height=\"234\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"112\" r=\"98\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"165\" cy=\"112\" r=\"68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.2\"/><circle cx=\"165\" cy=\"112\" r=\"38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"165\" y=\"34\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">A</text><text x=\"165\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b45309\" font-style=\"italic\">B</text><text x=\"165\" y=\"94\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\" font-style=\"italic\">C</text><text x=\"308\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"110\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">E = {chess players}</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Draw a Venn diagram",
+              "note": "Each higher rating set is a subset of the lower rating set."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q6diia",
+          "type": "mc",
+          "stem": "Competitive chess players each have a rating indicating their ability level. The higher the number the better the player. Let \\(A\\) be the set of chess players with a rating greater than 1500, \\(B\\) be the set of chess players with a rating greater than 1800, and \\(C\\) be the set of chess players with a rating greater than 2100. If Grogu has a rating of 2000, state whether the following is true or false: \\(\\text{Grogu}\\in A\\).",
+          "difficulty": "easy",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "hint": "\\(\\in\\) means 'is an element of'. Is 2000 greater than 1500?",
+          "steps": [
+            {
+              "explain": "Set \\(A\\) is the players with a rating greater than 1500.",
+              "work": "\\(A=\\{\\text{rating}>1500\\}\\)"
+            },
+            {
+              "explain": "Compare Grogu's rating.",
+              "work": "\\(2000>1500\\)"
+            },
+            {
+              "explain": "So Grogu belongs to \\(A\\): the statement is TRUE.",
+              "work": "<span style=\"color:#047857;font-weight:700\">True</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"314\" height=\"234\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"112\" r=\"98\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"165\" cy=\"112\" r=\"68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.2\"/><circle cx=\"165\" cy=\"112\" r=\"38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"165\" y=\"34\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">A</text><text x=\"165\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b45309\" font-style=\"italic\">B</text><text x=\"165\" y=\"94\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\" font-style=\"italic\">C</text><text x=\"308\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"110\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">E = {chess players}</text><circle cx=\"181\" cy=\"158\" r=\"5\" fill=\"#059669\"/><text x=\"211\" y=\"162\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">Grogu</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Compare the rating with the cut-off for the set."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q6diib",
+          "type": "mc",
+          "stem": "Competitive chess players each have a rating indicating their ability level. The higher the number the better the player. Let \\(A\\) be the set of chess players with a rating greater than 1500, \\(B\\) be the set of chess players with a rating greater than 1800, and \\(C\\) be the set of chess players with a rating greater than 2100. If Grogu has a rating of 2000, state whether the following is true or false: \\(\\text{Grogu}\\in C\\cup(A\\cap\\overline{B})\\).",
+          "difficulty": "hard",
+          "options": [
+            "False",
+            "True"
+          ],
+          "answer": 0,
+          "hint": "Work out which players are in each part: \\(C\\), then \\(A\\cap\\overline{B}\\) (in \\(A\\) but NOT in \\(B\\)). Then ask whether Grogu is in either.",
+          "steps": [
+            {
+              "explain": "Is Grogu in \\(C\\)? \\(C\\) needs a rating over 2100.",
+              "work": "\\(2000\\not>2100\\;\\Rightarrow\\;\\text{Grogu}\\notin C\\)"
+            },
+            {
+              "explain": "Is Grogu in \\(A\\cap\\overline{B}\\)? That means in \\(A\\) AND NOT in \\(B\\). Grogu IS in \\(B\\) (rating over 1800).",
+              "work": "\\(2000>1800\\;\\Rightarrow\\;\\text{Grogu}\\in B\\;\\Rightarrow\\;\\text{Grogu}\\notin\\overline{B}\\)"
+            },
+            {
+              "explain": "So Grogu is in neither part of the union.",
+              "work": "\\(\\text{Grogu}\\notin C\\ \\text{and}\\ \\text{Grogu}\\notin A\\cap\\overline{B}\\)"
+            },
+            {
+              "explain": "The statement is FALSE.",
+              "work": "<span style=\"color:#047857;font-weight:700\">False</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"314\" height=\"234\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"112\" r=\"98\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"165\" cy=\"112\" r=\"68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.2\"/><circle cx=\"165\" cy=\"112\" r=\"38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"165\" y=\"34\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">A</text><text x=\"165\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b45309\" font-style=\"italic\">B</text><text x=\"165\" y=\"94\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\" font-style=\"italic\">C</text><text x=\"308\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"110\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\">E = {chess players}</text><circle cx=\"181\" cy=\"158\" r=\"5\" fill=\"#059669\"/><text x=\"211\" y=\"162\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">Grogu</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "B-bar means not in B; check each part of the union."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q8b",
+          "type": "mc",
+          "stem": "In a certain town, \\(85\\%\\) of the people speak Tamil, \\(40\\%\\) speak English and \\(20\\%\\) speak Hindi. Also \\(32\\%\\) speak Tamil and English, \\(13\\%\\) speak Tamil and Hindi, and \\(10\\%\\) speak English and Hindi. If every person speaks at least one of these languages, find the percentage of people who can speak all three languages.",
+          "difficulty": "hard",
+          "options": [
+            "10%",
+            "5%",
+            "15%",
+            "20%"
+          ],
+          "answer": 0,
+          "hint": "Let \\(x\\%\\) speak ALL THREE. Fill in the three-circle Venn diagram from the CENTRE outwards, then use 'every person speaks at least one language': all regions add to 100%.",
+          "steps": [
+            {
+              "explain": "Centre: all three languages = \\(x\\). The two-language-only regions are the pair totals minus \\(x\\).",
+              "work": "\\(T\\&E\\ \\text{only}=32-x,\\quad T\\&H\\ \\text{only}=13-x,\\quad E\\&H\\ \\text{only}=10-x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"284\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"78\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"200\" r=\"78\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"60\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">T</text><text x=\"300\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b91c1c\" font-style=\"italic\">E</text><text x=\"92\" y=\"262\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#047857\" font-style=\"italic\">H</text><text x=\"98\" y=\"105\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">40+x</text><text x=\"262\" y=\"105\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">x−2</text><text x=\"180\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">32−x</text><text x=\"134\" y=\"172\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">13−x</text><text x=\"226\" y=\"172\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">10−x</text><text x=\"180\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">x</text><text x=\"180\" y=\"236\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">x−3</text></svg>"
+              }
+            },
+            {
+              "explain": "One-language-only regions: subtract the other regions from each total (Tamil: \\(85-(32-x)-(13-x)-x=40+x\\)).",
+              "work": "\\(T\\ \\text{only}=40+x,\\quad E\\ \\text{only}=x-2,\\quad H\\ \\text{only}=x-3\\)"
+            },
+            {
+              "explain": "Everyone speaks at least one language: the seven regions add to 100.",
+              "work": "\\((40+x)+(32-x)+(13-x)+x+(x-2)+(10-x)+(x-3)=100\\)"
+            },
+            {
+              "explain": "Collect like terms: the \\(x\\) terms are \\(x-x-x+x+x-x+x=x\\) and the numbers are \\(40+32+13-2+10-3=90\\).",
+              "work": "\\(90+x=100\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(x=10\\)% → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: Tamil only \\(50\\), English only \\(8\\), Hindi only \\(7\\), T&E only \\(22\\), T&H only \\(3\\), E&H only \\(0\\), all \\(10\\): total \\(100\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "percentage of people who can speak all three",
+              "note": "Let x be the centre; fill the Venn diagram outwards; all regions add to 100."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q8ci",
+          "type": "mc",
+          "stem": "Consider the set of points on the line segment \\([0,1]\\). If you remove the middle third but leave the end points, the new set is \\(\\left[0,\\dfrac{1}{3}\\right]\\cup\\left[\\dfrac{2}{3},1\\right]\\). If you now remove the middle third from each of these line segments but leave the end points, and repeat this process forever, you are left with a special set, called the Cantor set. List three members of the Cantor set.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 240\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"30\" x2=\"390\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"390\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"98\" x2=\"150\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"98\" x2=\"390\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"118\" x2=\"156.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"118\" x2=\"276.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"390\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"176\" x2=\"70\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"70\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"110\" y1=\"176\" x2=\"150\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"176\" x2=\"310\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"310\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"350\" y1=\"176\" x2=\"390\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"350\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"70\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"63.3\" y1=\"196\" x2=\"76.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"110\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"103.3\" y1=\"196\" x2=\"116.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"110\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"150\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"196\" x2=\"156.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"196\" x2=\"276.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"310\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">7</text><line x1=\"303.3\" y1=\"196\" x2=\"316.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"310\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"350\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">8</text><line x1=\"343.3\" y1=\"196\" x2=\"356.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"350\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"390\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text></svg>"
+          },
+          "options": [
+            "\\(0,\\ \\dfrac{1}{3},\\ 1\\)",
+            "\\(0,\\ \\dfrac{1}{2},\\ 1\\)",
+            "\\(\\dfrac{1}{3},\\ \\dfrac{1}{2},\\ \\dfrac{2}{3}\\)",
+            "\\(\\dfrac{1}{6},\\ \\dfrac{1}{3},\\ \\dfrac{5}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "End points are NEVER removed (the rule says 'leave the end points'). Which numbers are end points of the first-stage segments? Also check that the number is not in a removed middle third.",
+          "steps": [
+            {
+              "explain": "Stage 1 keeps \\(\\left[0,\\dfrac{1}{3}\\right]\\) and \\(\\left[\\dfrac{2}{3},1\\right]\\). The removed middle part is \\(\\left(\\dfrac{1}{3},\\dfrac{2}{3}\\right)\\) (end points kept).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 240\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"30\" x2=\"390\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"390\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"98\" x2=\"150\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"98\" x2=\"390\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"118\" x2=\"156.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"118\" x2=\"276.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"390\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"176\" x2=\"70\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"70\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"110\" y1=\"176\" x2=\"150\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"176\" x2=\"310\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"310\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"350\" y1=\"176\" x2=\"390\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"350\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"70\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"63.3\" y1=\"196\" x2=\"76.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"110\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"103.3\" y1=\"196\" x2=\"116.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"110\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"150\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"196\" x2=\"156.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"196\" x2=\"276.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"310\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">7</text><line x1=\"303.3\" y1=\"196\" x2=\"316.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"310\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"350\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">8</text><line x1=\"343.3\" y1=\"196\" x2=\"356.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"350\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"390\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"2\" y=\"2\" width=\"416\" height=\"236\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The end points \\(0,\\ \\dfrac{1}{3},\\ \\dfrac{2}{3},\\ 1\\) are never removed at any later stage (they are always end points of a segment).",
+              "work": "\\(0,\\ \\dfrac{1}{3},\\ \\dfrac{2}{3},\\ 1\\ \\in\\ \\text{Cantor set}\\)"
+            },
+            {
+              "explain": "So \\(0,\\ \\dfrac{1}{3},\\ 1\\) are members.",
+              "work": "<span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not B? \\(\\dfrac{1}{2}\\) lies in the removed middle third \\(\\left(\\dfrac{1}{3},\\dfrac{2}{3}\\right)\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "List three members",
+              "note": "End points of the segments are never removed."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q8cii",
+          "type": "review",
+          "stem": "Consider the set of points on the line segment \\([0,1]\\). If you remove the middle third but leave the end points, the new set is \\(\\left[0,\\dfrac{1}{3}\\right]\\cup\\left[\\dfrac{2}{3},1\\right]\\). If you now remove the middle third from each of these line segments but leave the end points, and repeat this process forever, you are left with a special set, called the Cantor set. Show that the Cantor set is an infinite set. (Hint: find an infinite subset.)",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 240\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"30\" x2=\"390\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"390\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"98\" x2=\"150\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"98\" x2=\"390\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"118\" x2=\"156.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"118\" x2=\"276.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"390\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"176\" x2=\"70\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"70\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"110\" y1=\"176\" x2=\"150\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"176\" x2=\"310\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"310\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"350\" y1=\"176\" x2=\"390\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"350\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"70\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"63.3\" y1=\"196\" x2=\"76.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"110\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"103.3\" y1=\"196\" x2=\"116.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"110\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"150\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"196\" x2=\"156.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"196\" x2=\"276.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"310\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">7</text><line x1=\"303.3\" y1=\"196\" x2=\"316.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"310\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"350\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">8</text><line x1=\"343.3\" y1=\"196\" x2=\"356.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"350\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"390\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text></svg>"
+          },
+          "answer": "\\(\\dfrac{1}{3},\\ \\dfrac{1}{9},\\ \\dfrac{1}{27},\\ \\dfrac{1}{81},\\ldots,\\ \\dfrac{1}{3^n},\\ldots\\) are all end points of segments at some stage, so all belong to the Cantor set. There are infinitely many of them (\\(n=1,2,3,\\ldots\\)), so the Cantor set has an infinite subset and is therefore infinite. ∎",
+          "manual": true,
+          "hint": "A set that CONTAINS an infinite subset must itself be infinite. Look at the sequence of left-most end points of the segments that approach 0.",
+          "steps": [
+            {
+              "explain": "Look at the pattern in the pictures: after each stage a new right end point appears next to \\(0\\): \\(\\dfrac{1}{3},\\ \\dfrac{1}{9}\\), ...",
+              "work": "\\(\\dfrac{1}{3^1},\\ \\dfrac{1}{3^2},\\ \\dfrac{1}{3^3},\\ \\dfrac{1}{3^4},\\ldots\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 240\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"30\" x2=\"390\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"30\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"390\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"98\" x2=\"150\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"98\" x2=\"390\" y2=\"98\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"98\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"150\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"118\" x2=\"156.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"118\" x2=\"276.7\" y2=\"118\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"390\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"30\" y1=\"176\" x2=\"70\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"70\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"110\" y1=\"176\" x2=\"150\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"150\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"270\" y1=\"176\" x2=\"310\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"310\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><line x1=\"350\" y1=\"176\" x2=\"390\" y2=\"176\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"350\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"390\" cy=\"176\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"30\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"70\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"63.3\" y1=\"196\" x2=\"76.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"110\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"103.3\" y1=\"196\" x2=\"116.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"110\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"150\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"143.3\" y1=\"196\" x2=\"156.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"270\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"263.3\" y1=\"196\" x2=\"276.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"310\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">7</text><line x1=\"303.3\" y1=\"196\" x2=\"316.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"310\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"350\" y=\"193\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">8</text><line x1=\"343.3\" y1=\"196\" x2=\"356.7\" y2=\"196\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"350\" y=\"209\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"390\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">1</text><rect x=\"2\" y=\"2\" width=\"416\" height=\"236\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Each \\(\\dfrac{1}{3^n}\\) is the right-hand end point of the first segment at stage \\(n\\), and end points are never removed.",
+              "work": "\\(\\dfrac{1}{3^n}\\in\\text{Cantor set for every }n\\)"
+            },
+            {
+              "explain": "So the set \\(\\left\\{\\dfrac{1}{3},\\dfrac{1}{9},\\dfrac{1}{27},\\ldots\\right\\}\\) is a subset of the Cantor set, and it has infinitely many members (one for each \\(n=1,2,3,\\ldots\\)).",
+              "work": "infinite subset"
+            },
+            {
+              "explain": "A set containing an infinite subset is infinite. Hence the Cantor set is infinite.  ∎",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "infinite set",
+              "note": "Find an infinite subset such as the numbers one over three to the n."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     }
