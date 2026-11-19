@@ -3075,6 +3075,136 @@
           ],
           "answer": 0,
           "solution": "The correct answer is \\(xy(y-12)\\)."
+        },
+        {
+          "id": "fortst2023y10-b1a",
+          "type": "mc",
+          "stem": "Expand and simplify: \\((x-4)(x+4)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x^2-16\\)",
+            "\\(x^2+16\\)",
+            "\\(x^2-8x-16\\)",
+            "\\(x^2-8\\)"
+          ],
+          "answer": 0,
+          "hint": "This is a difference of two squares: \\((a-b)(a+b)=a^2-b^2\\).",
+          "steps": [
+            {
+              "explain": "Multiply each term.",
+              "work": "\\(x\\times x+x\\times4-4\\times x-4\\times4\\)"
+            },
+            {
+              "explain": "The middle terms cancel.",
+              "work": "\\(x^2+4x-4x-16\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x^2-16\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Use the difference of two squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b1b",
+          "type": "mc",
+          "stem": "Expand and simplify: \\((x+4)^2\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x^2+8x+16\\)",
+            "\\(x^2+16\\)",
+            "\\(x^2+4x+16\\)",
+            "\\(x^2+8x+8\\)"
+          ],
+          "answer": 0,
+          "hint": "Squaring a bracket means multiplying it by itself. Don't forget the middle term.",
+          "steps": [
+            {
+              "explain": "Write out the product.",
+              "work": "\\((x+4)(x+4)\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(x^2+4x+4x+16\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(x^2+8x+16\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(x^2+16\\) misses the middle term \\(2\\times4x\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Perfect square: a² + 2ab + b²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b1c",
+          "type": "mc",
+          "stem": "Expand and simplify: \\(-x(x+2)(x+4)\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-x^3-6x^2-8x\\)",
+            "\\(-x^3+6x^2+8x\\)",
+            "\\(x^3+6x^2+8x\\)",
+            "\\(-x^3-6x-8\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the two brackets first, then multiply every term by \\(-x\\).",
+          "steps": [
+            {
+              "explain": "Expand \\((x+2)(x+4)\\).",
+              "work": "\\(x^2+4x+2x+8=x^2+6x+8\\)"
+            },
+            {
+              "explain": "Multiply by \\(-x\\) (every term changes sign).",
+              "work": "\\(-x(x^2+6x+8)=-x^3-6x^2-8x\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: forgetting that \\(-x\\) multiplies EVERY term gives wrong signs.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Expand the brackets, then multiply by −x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -13331,6 +13461,52 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2023y10-b2c",
+          "type": "mc",
+          "stem": "Factorise fully: \\(x^4-16\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\((x-2)(x+2)(x^2+4)\\)",
+            "\\((x^2-4)(x^2+4)\\)",
+            "\\((x-2)^2(x+2)^2\\)",
+            "\\((x-4)(x+4)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the difference of two squares TWICE: \\(x^4=(x^2)^2\\) and \\(16=4^2\\).",
+          "steps": [
+            {
+              "explain": "First difference of squares.",
+              "work": "\\(x^4-16=(x^2)^2-4^2=(x^2-4)(x^2+4)\\)"
+            },
+            {
+              "explain": "The factor \\(x^2-4\\) is another difference of squares.",
+              "work": "\\(x^2-4=(x-2)(x+2)\\)"
+            },
+            {
+              "explain": "Combine (\\(x^2+4\\) cannot be factorised).",
+              "work": "\\((x-2)(x+2)(x^2+4)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\((x^2-4)(x^2+4)\\) is not FULLY factorised.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise fully",
+              "note": "Apply the difference of two squares more than once."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -16032,6 +16208,94 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b2a",
+          "type": "mc",
+          "stem": "Factorise fully: \\(y^2+6y+9\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\((y+3)^2\\)",
+            "\\((y+3)(y-3)\\)",
+            "\\((y+9)(y+1)\\)",
+            "\\((y-3)^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to 9 and add to 6.",
+          "steps": [
+            {
+              "explain": "Factor pairs of 9.",
+              "work": "\\(1\\times9,\\quad3\\times3\\)"
+            },
+            {
+              "explain": "Which pair adds to 6? \\(3+3=6\\).",
+              "work": "\\((y+3)(y+3)\\)"
+            },
+            {
+              "explain": "Write as a perfect square.",
+              "work": "\\((y+3)^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise fully",
+              "note": "Two numbers that multiply to 9 and add to 6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b2b",
+          "type": "mc",
+          "stem": "Factorise fully: \\(w^4+3w^3-18w^2\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(w^2(w+6)(w-3)\\)",
+            "\\(w^2(w-6)(w+3)\\)",
+            "\\(w^2(w^2+3w-18)\\)",
+            "\\(w(w^3+3w^2-18w)\\)"
+          ],
+          "answer": 0,
+          "hint": "Take out the highest common factor \\(w^2\\) first, then factorise the quadratic.",
+          "steps": [
+            {
+              "explain": "Common factor \\(w^2\\).",
+              "work": "\\(w^2(w^2+3w-18)\\)"
+            },
+            {
+              "explain": "Numbers that multiply to \\(-18\\) and add to \\(+3\\): \\(6\\) and \\(-3\\).",
+              "work": "\\(w^2+3w-18=(w+6)(w-3)\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(w^2(w+6)(w-3)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(w^2(w^2+3w-18)\\) is not FULLY factorised.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise fully",
+              "note": "Take out the common factor first, then factorise the quadratic."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
             "grade": "10",
             "origin": "teacher"
           }
