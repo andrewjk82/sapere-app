@@ -49,6 +49,148 @@
               "note": "The 4th term uses k = 3 (counting from k = 0). Keep the sign of (−4)³."
             }
           ]
+        },
+        {
+          "id": "bh2020-y11e1-mc10",
+          "type": "mc",
+          "stem": "What is the coefficient of \\(x^3\\) in the expansion of \\(\\left(1+x+x^2\\right)^5\\)?",
+          "difficulty": "hard",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ],
+          "answer": 2,
+          "hint": "Write \\((1+x+x^2)^5=\\left((1+x)+x^2\\right)^5\\) and expand as a binomial; only two terms can contain \\(x^3\\).",
+          "steps": [
+            {
+              "explain": "Expand using the binomial theorem.",
+              "work": "\\(\\sum\\binom{5}{r}(1+x)^{5-r}(x^2)^r\\)"
+            },
+            {
+              "explain": "Only \\(r=0\\) and \\(r=1\\) can give \\(x^3\\): \\((1+x)^5\\) and \\(5x^2(1+x)^4\\).",
+              "work": ""
+            },
+            {
+              "explain": "Coefficient of \\(x^3\\) in \\((1+x)^5\\): \\(\\binom{5}{3}=10\\). In \\(5x^2(1+x)^4\\): \\(5\\times\\binom{4}{1}=20\\).",
+              "work": ""
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(10+20=30\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "coefficient",
+              "note": "Group as ((1 + x) + x²) and use the binomial theorem."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q12c",
+          "type": "mc",
+          "stem": "Find the coefficient of \\(x^3\\) in the expansion of \\((3-4x)^7\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-181\\,440\\)",
+            "\\(181\\,440\\)",
+            "\\(-241\\,920\\)",
+            "\\(-2835\\)"
+          ],
+          "answer": 0,
+          "hint": "General term: \\(\\binom{7}{r}(3)^{7-r}(-4x)^r\\). For \\(x^3\\) take \\(r=3\\).",
+          "steps": [
+            {
+              "explain": "Term with \\(r=3\\).",
+              "work": "\\(\\binom{7}{3}(3)^{4}(-4x)^3\\)"
+            },
+            {
+              "explain": "Evaluate each part.",
+              "work": "\\(\\binom{7}{3}=35,\\quad3^4=81,\\quad(-4)^3=-64\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(35\\times81\\times(-64)=-181\\,440\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(-241\\,920\\) swaps the exponents (using \\(3^3\\) and \\(4^4\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "coefficient",
+              "note": "Use the general term with \\(r=3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q13c",
+          "type": "mc",
+          "stem": "If \\((1+kx)^n=1-12x+60x^2-\\ldots\\), find the values of \\(k\\) and \\(n\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(k=-2\\) and \\(n=6\\)",
+            "\\(k=2\\) and \\(n=-6\\)",
+            "\\(k=-6\\) and \\(n=2\\)",
+            "\\(k=-3\\) and \\(n=4\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare the first two terms: \\(\\binom{n}{1}kx=-12x\\) and \\(\\binom{n}{2}(kx)^2=60x^2\\). Solve the two equations together.",
+          "steps": [
+            {
+              "explain": "From the \\(x\\) term.",
+              "work": "\\(nk=-12\\quad(1)\\)"
+            },
+            {
+              "explain": "From the \\(x^2\\) term.",
+              "work": "\\(\\dfrac{n(n-1)}{2}k^2=60\\ \\Rightarrow\\ k^2n(n-1)=120\\quad(2)\\)"
+            },
+            {
+              "explain": "Substitute \\(k=-\\dfrac{12}{n}\\) into (2).",
+              "work": "\\(\\dfrac{144}{n^2}n(n-1)=120\\ \\Rightarrow\\ 144(n-1)=120n\\ \\Rightarrow\\ 24n=144\\ \\Rightarrow\\ n=6\\)"
+            },
+            {
+              "explain": "Then \\(k=-\\dfrac{12}{6}=-2\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            },
+            {
+              "explain": "Check: \\((1-2x)^6=1-12x+60x^2-\\ldots\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the values",
+              "note": "Match the first two coefficients and solve simultaneously."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -632,6 +774,94 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bh2020-y11e1-mc5",
+          "type": "mc",
+          "stem": "At a family gathering, 6 adults and 3 children are randomly seated around a circular table. What is the number of possible seating arrangements if none of the children are to sit together?",
+          "difficulty": "hard",
+          "options": [
+            "720",
+            "2400",
+            "14400",
+            "86400"
+          ],
+          "answer": 2,
+          "hint": "Seat the adults first (circular arrangement), then put the children into the gaps between adults.",
+          "steps": [
+            {
+              "explain": "Arrange the 6 adults around the table.",
+              "work": "\\((6-1)!=5!=120\\)"
+            },
+            {
+              "explain": "There are 6 gaps between the adults; choose and order 3 of them for the children.",
+              "work": "\\({}^6P_3=6\\times5\\times4=120\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(120\\times120=14\\,400\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "none of the children",
+              "note": "Seat adults first, then children in the gaps."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q11diii",
+          "type": "mc",
+          "stem": "A group of 12 students is to be divided into discussion groups. In how many ways can a president and vice president be chosen for the group of 12?",
+          "difficulty": "easy",
+          "options": [
+            "132",
+            "66",
+            "144",
+            "12"
+          ],
+          "answer": 0,
+          "hint": "The two positions are different, so order matters: choose the president, then the vice president.",
+          "steps": [
+            {
+              "explain": "President: 12 choices.",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "Vice president: any of the 11 remaining students.",
+              "work": "\\(11\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(12\\times11=132\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(66\\) is \\(\\binom{12}{2}\\) (order ignored).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "president and vice president",
+              "note": "Ordered selection: 12 × 11."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -820,6 +1050,98 @@
           "meta": {
             "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
             "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q12di",
+          "type": "mc",
+          "stem": "All the letters of the word DEFINITION are arranged in a row. How many distinct arrangements are possible?",
+          "difficulty": "medium",
+          "options": [
+            "302\\,400",
+            "3\\,628\\,800",
+            "604\\,800",
+            "1\\,814\\,400"
+          ],
+          "answer": 0,
+          "hint": "The word has 10 letters with repeats: I appears 3 times and N appears twice. Divide by the factorials of the repeats.",
+          "steps": [
+            {
+              "explain": "Letters: D, E, F, I, N, I, T, I, O, N → 10 letters, with \\(I\\times3\\) and \\(N\\times2\\).",
+              "work": ""
+            },
+            {
+              "explain": "Arrangements of 10 letters with repeats.",
+              "work": "\\(\\dfrac{10!}{3!\\,2!}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(\\dfrac{3\\,628\\,800}{12}=302\\,400\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(604\\,800\\) forgets to divide by \\(2!\\) for the repeated N.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "distinct arrangements",
+              "note": "Divide by the factorials of the repeated letters."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q12dii",
+          "type": "mc",
+          "stem": "All the letters of the word DEFINITION are arranged in a row. In how many of these arrangements are all the vowels together?",
+          "difficulty": "hard",
+          "options": [
+            "7200",
+            "1200",
+            "14\\,400",
+            "43\\,200"
+          ],
+          "answer": 0,
+          "hint": "Vowels: E, I, I, O, I (5 of them). Treat the vowels as ONE block, arrange the block among the consonants, then arrange inside the block.",
+          "steps": [
+            {
+              "explain": "Consonants: D, F, N, T, N (5, with N repeated). Arrange them.",
+              "work": "\\(\\dfrac{5!}{2!}=60\\)"
+            },
+            {
+              "explain": "The block of vowels can go in any of the 6 gaps (before, between, after the consonants).",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "Arrange the vowels within the block: E, I, I, O, I (I repeated 3 times).",
+              "work": "\\(\\dfrac{5!}{3!}=20\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(60\\times6\\times20=7200\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "all the vowels together",
+              "note": "Treat the vowels as one block."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -1065,6 +1387,94 @@
             "origin": "teacher",
             "note": "Option B is not a number; replace with a numerical distractor if preferred. Solution counts tiles with equal numbers as indistinct."
           }
+        },
+        {
+          "id": "bh2020-y11e1-q11di",
+          "type": "mc",
+          "stem": "A group of 12 students is to be divided into discussion groups. In how many ways can the discussion groups be formed if there are 7 people in one group and 5 people in the other?",
+          "difficulty": "medium",
+          "options": [
+            "792",
+            "95\\,040",
+            "1584",
+            "5040"
+          ],
+          "answer": 0,
+          "hint": "Choose the 7 people for the first group; the other 5 form the second group automatically.",
+          "steps": [
+            {
+              "explain": "Choose 7 of the 12 students.",
+              "work": "\\(\\binom{12}{7}\\)"
+            },
+            {
+              "explain": "The remaining 5 are determined, so the groups are different sizes (no double counting).",
+              "work": "\\(\\binom{12}{7}\\times\\binom{5}{5}=\\binom{12}{7}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(\\dfrac{12!}{7!\\,5!}=792\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways",
+              "note": "Choose the 7, the rest form the other group."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q11dii",
+          "type": "mc",
+          "stem": "A group of 12 students is to be divided into discussion groups. In how many ways can the discussion groups be formed if there are 3 groups containing 4 people each?",
+          "difficulty": "hard",
+          "options": [
+            "5775",
+            "34\\,650",
+            "792",
+            "1925"
+          ],
+          "answer": 0,
+          "hint": "The three groups are the SAME size, so the groups are not labelled: divide by \\(3!\\).",
+          "steps": [
+            {
+              "explain": "Choose members for the groups one at a time.",
+              "work": "\\(\\binom{12}{4}\\times\\binom{8}{4}\\times\\binom{4}{4}=495\\times70\\times1=34\\,650\\)"
+            },
+            {
+              "explain": "The groups are not distinguishable, so each division has been counted \\(3!\\) times.",
+              "work": "\\(\\dfrac{34\\,650}{3!}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\dfrac{34\\,650}{6}=5775\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(34\\,650\\) forgets to divide by \\(3!\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "3 groups",
+              "note": "Equal-sized groups: divide by 3!."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1173,6 +1583,48 @@
             "number": "10",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
             "sourcePages": "7"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q12diii",
+          "type": "mc",
+          "stem": "All the letters of the word DEFINITION are arranged in a row. What is the probability that the letter D appears somewhere to the left of the letter T?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{2}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "D and T each appear once. By symmetry, is D more likely to be left of T than right of T?",
+          "steps": [
+            {
+              "explain": "In any arrangement either D is to the left of T or T is to the left of D (one of them).",
+              "work": ""
+            },
+            {
+              "explain": "Swapping the positions of D and T pairs up arrangements, so these two cases are equally likely.",
+              "work": ""
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(\\dfrac{1}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "probability",
+              "note": "Symmetry: D left of T and T left of D are equally likely."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]
