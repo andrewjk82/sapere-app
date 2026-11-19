@@ -917,6 +917,48 @@
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q3(d)(ii)"
           }
+        },
+        {
+          "id": "form2hy2022-q1biv",
+          "type": "mc",
+          "stem": "Simplify \\(12m\\div4\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(3m\\)",
+            "\\(8m\\)",
+            "\\(3\\)",
+            "\\(48m\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the NUMBER by the number; the letter stays.",
+          "steps": [
+            {
+              "explain": "Write as a fraction.",
+              "work": "\\(12m\\div4=\\dfrac{12m}{4}\\)"
+            },
+            {
+              "explain": "Divide the numerator's number by 4.",
+              "work": "\\(\\dfrac{12}{4}=3\\)"
+            },
+            {
+              "explain": "Keep the letter \\(m\\).",
+              "work": "\\(=3m\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Divide the number; the letter stays."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4762,6 +4804,48 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
             "sourceQuestion": "Q4(d)"
+          }
+        },
+        {
+          "id": "form2hy2022-q5ai",
+          "type": "mc",
+          "stem": "Simplify fully: \\(\\dfrac{(2a)^2}{3a\\times a^2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{4}{3a}\\)",
+            "\\(\\dfrac{2}{3a}\\)",
+            "\\(\\dfrac{4a^2}{3a^2}\\)",
+            "\\(\\dfrac{4}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify the top and the bottom separately: \\((2a)^2=2^2\\times a^2\\). Then CANCEL common factors using the index laws.",
+          "steps": [
+            {
+              "explain": "Top: square both the number and the letter.",
+              "work": "\\((2a)^2=4a^2\\)"
+            },
+            {
+              "explain": "Bottom: multiply the letters (add the powers).",
+              "work": "\\(3a\\times a^2=3a^{1+2}=3a^3\\)"
+            },
+            {
+              "explain": "Cancel \\(a^2\\) from top and bottom (\\(\\dfrac{a^2}{a^3}=\\dfrac{1}{a}\\)).",
+              "work": "\\(\\dfrac{4a^2}{3a^3}=\\dfrac{4}{3a}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify fully",
+              "note": "Square the bracket, add powers on the bottom, then cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
           }
         }
       ]

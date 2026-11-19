@@ -4428,6 +4428,48 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 195\" width=\"430\" height=\"195\" role=\"img\" aria-label=\"Shallow right triangle ramp with outside base-length and rise measurements\"><rect width=\"430\" height=\"195\" fill=\"white\"/><polygon points=\"50.00,137.00 350.00,137.00 350.00,49.00\" fill=\"#fff3a6\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M50.00,154.00 L350.00,154.00\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M50.00,150.00 L50.00,159.00\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M350.00,150.00 L350.00,159.00\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"200\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">base length</text><path d=\"M370.00,137.00 L370.00,49.00\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M366.00,137.00 L374.00,137.00\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M366.00,49.00 L374.00,49.00\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"380\" y=\"94\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"400\" fill=\"#334155\">rise</text><text x=\"54\" y=\"32\" text-anchor=\"start\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"400\" fill=\"#64748b\">NOT TO SCALE</text></svg>"
           }
+        },
+        {
+          "id": "form2hy2022-q6b",
+          "type": "mc",
+          "stem": "If \\(45\\%\\) of a bottle of polyjuice potion is \\(180\\ \\text{mL}\\), how many millilitres are in \\(50\\%\\) of a bottle?",
+          "difficulty": "medium",
+          "options": [
+            "200 mL",
+            "180 mL",
+            "90 mL",
+            "225 mL"
+          ],
+          "answer": 0,
+          "hint": "Use the UNITARY METHOD: find 1% first (or 5%), then scale up to 50%.",
+          "steps": [
+            {
+              "explain": "Divide by 9 to get 5% (since \\(45=5\\times9\\)).",
+              "work": "\\(5\\%=180\\div9=20\\ \\text{mL}\\)"
+            },
+            {
+              "explain": "50% is 10 times 5%.",
+              "work": "\\(50\\%=20\\times10=200\\ \\text{mL}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check with 1%: \\(180\\div45=4\\) mL per 1%, so \\(50\\times4=200\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how many millilitres",
+              "note": "Find 5 percent first (divide by 9), then multiply by 10."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8666,6 +8708,104 @@
             "test": "Part E",
             "number": "1 (b)",
             "page": 2
+          }
+        },
+        {
+          "id": "form2hy2022-q5ci",
+          "type": "mc",
+          "stem": "The right-angled triangle shown has two equal sides (marked with ticks), each of length \\(h\\). Write an expression for the area of the triangle in terms of \\(h\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 200\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"20\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"160\" x2=\"160\" y2=\"20\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M148,160 L148,148 L160,148\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"166\" x2=\"90\" y2=\"154\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"90\" x2=\"154\" y2=\"90\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"176\" y=\"95.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" font-style=\"italic\">h</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{1}{2}h^2\\)",
+            "\\(h^2\\)",
+            "\\(2h\\)",
+            "\\(\\dfrac{1}{2}h\\)"
+          ],
+          "answer": 0,
+          "hint": "Area of a triangle \\(=\\dfrac{1}{2}\\times\\text{base}\\times\\text{height}\\). For a right-angled triangle use the two sides at the right angle: here both are \\(h\\).",
+          "steps": [
+            {
+              "explain": "The base and the height are the two equal sides (blue).",
+              "work": "\\(\\text{base}=h,\\qquad\\text{height}=h\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 200\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"20\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"20\" y1=\"160\" x2=\"160\" y2=\"20\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M148,160 L148,148 L160,148\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"166\" x2=\"90\" y2=\"154\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"166\" y1=\"90\" x2=\"154\" y2=\"90\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"176\" y=\"95.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">h</text><text x=\"90\" y=\"189.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1d4ed8\" font-style=\"italic\">h</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the area formula.",
+              "work": "\\(A=\\dfrac{1}{2}\\times\\text{base}\\times\\text{height}=\\dfrac{1}{2}\\times h\\times h\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(A=\\dfrac{1}{2}h^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "area of the triangle",
+              "note": "Half base times height, with base and height both equal to h."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q5cii",
+          "type": "mc",
+          "stem": "The area of a right-angled triangle with two equal sides of length \\(h\\) is \\(A=\\dfrac{1}{2}h^2\\). If \\(h=1\\dfrac{5}{6}\\) cm, calculate the area of the triangle.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{121}{72}\\ \\text{cm}^2\\)",
+            "\\(\\dfrac{121}{36}\\ \\text{cm}^2\\)",
+            "\\(\\dfrac{11}{12}\\ \\text{cm}^2\\)",
+            "\\(\\dfrac{25}{72}\\ \\text{cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Change the MIXED NUMERAL into an improper fraction first, square it, then multiply by \\(\\dfrac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Convert to an improper fraction: \\(1\\dfrac{5}{6}=\\dfrac{1\\times6+5}{6}\\).",
+              "work": "\\(h=\\dfrac{11}{6}\\)"
+            },
+            {
+              "explain": "Substitute into the area formula.",
+              "work": "\\(A=\\dfrac{1}{2}\\left(\\dfrac{11}{6}\\right)^2\\)"
+            },
+            {
+              "explain": "Square the fraction (square the top and the bottom).",
+              "work": "\\(\\left(\\dfrac{11}{6}\\right)^2=\\dfrac{121}{36}\\)"
+            },
+            {
+              "explain": "Multiply by \\(\\dfrac{1}{2}\\).",
+              "work": "\\(A=\\dfrac{1}{2}\\times\\dfrac{121}{36}=\\dfrac{121}{72}\\ \\text{cm}^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not B? That forgets the \\(\\dfrac{1}{2}\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "calculate the area",
+              "note": "Improper fraction first, square, then take half."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
           }
         }
       ]

@@ -532,6 +532,116 @@
             "\\(2048\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "form2hy2022-q8di",
+          "type": "mc",
+          "stem": "At certain times on a 12-hour clock the hour and minute hands point in exactly the same direction. The hands point in the same direction at 12 o’clock. How many other times does this occur in a 12-hour period?",
+          "difficulty": "hard",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "9"
+          ],
+          "answer": 0,
+          "hint": "Think about the minute hand LAPPING the hour hand. In 12 hours the minute hand goes round 12 times and the hour hand once. How many times does it catch up?",
+          "steps": [
+            {
+              "explain": "In 12 hours the minute hand makes 12 full turns; the hour hand makes 1 turn. So the minute hand gains \\(12-1=11\\) turns on the hour hand.",
+              "work": "\\(12-1=11\\)"
+            },
+            {
+              "explain": "Each gained turn means the hands overlap once: \\(11\\) overlaps in 12 hours, INCLUDING the one at 12 o'clock (start and end are the same moment).",
+              "work": "11 overlaps including 12:00"
+            },
+            {
+              "explain": "The question asks for the OTHER times.",
+              "work": "\\(11-1=10\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"150\" r=\"120\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"61\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><line x1=\"210\" y1=\"46.1\" x2=\"204\" y2=\"56.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"197\" y=\"73.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"253.9\" y1=\"90\" x2=\"243.5\" y2=\"96\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"231.4\" y=\"108\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"270\" y1=\"150\" x2=\"258\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"244\" y=\"155\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><line x1=\"253.9\" y1=\"210\" x2=\"243.5\" y2=\"204\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"231.4\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><line x1=\"210\" y1=\"253.9\" x2=\"204\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"197\" y=\"236.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">5</text><line x1=\"150\" y1=\"270\" x2=\"150\" y2=\"258\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"249\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">6</text><line x1=\"90\" y1=\"253.9\" x2=\"96\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"103\" y=\"236.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">7</text><line x1=\"46.1\" y1=\"210\" x2=\"56.5\" y2=\"204\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68.6\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><line x1=\"30\" y1=\"150\" x2=\"42\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"56\" y=\"155\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><line x1=\"46.1\" y1=\"90\" x2=\"56.5\" y2=\"96\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68.6\" y=\"108\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><line x1=\"90\" y1=\"46.1\" x2=\"96\" y2=\"56.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"103\" y=\"73.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><line x1=\"150\" y1=\"150\" x2=\"193.3\" y2=\"82.7\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"150\" x2=\"178.1\" y2=\"106.3\" stroke=\"#dc2626\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"150\" r=\"5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Reality check: just after 12 the minute hand races ahead; they next meet a little after 1:05, then after 2:10, ..., last before 11.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many other times",
+              "note": "The minute hand gains 11 turns in 12 hours; subtract the 12 o'clock overlap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q8dii",
+          "type": "mc",
+          "stem": "At certain times on a 12-hour clock the hour and minute hands point in exactly the same direction. Find all these exact times.",
+          "difficulty": "hard",
+          "options": [
+            "\\(h:\\dfrac{60h}{11}\\ \\text{minutes},\\ h=1,2,\\ldots,10\\ \\text{(and 12:00)}\\)",
+            "\\(h:\\dfrac{60h}{12}\\ \\text{minutes},\\ h=1,2,\\ldots,11\\)",
+            "\\(h:05\\ \\text{minutes},\\ h=1,2,\\ldots,11\\)",
+            "\\(h:\\dfrac{60}{11}h^2\\ \\text{minutes},\\ h=1,2,\\ldots,10\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(x\\) be the minutes past the hour \\(h\\). Write the positions of both hands as FRACTIONS of the way round the clock, set them equal, and solve for \\(x\\).",
+          "steps": [
+            {
+              "explain": "Minute hand: \\(x\\) minutes past is \\(\\dfrac{x}{60}\\) of the way round.",
+              "work": "\\(\\text{minute hand}=\\dfrac{x}{60}\\)"
+            },
+            {
+              "explain": "Hour hand: starts at \\(\\dfrac{h}{12}\\) of the way round at \\(h\\) o'clock and moves a further \\(\\dfrac{x}{60}\\div12\\) (it is 12 times slower).",
+              "work": "\\(\\text{hour hand}=\\dfrac{h}{12}+\\dfrac{x}{60}\\div12=\\dfrac{h}{12}+\\dfrac{x}{720}\\)"
+            },
+            {
+              "explain": "Same direction: set the two equal.",
+              "work": "\\(\\dfrac{x}{60}=\\dfrac{h}{12}+\\dfrac{x}{720}\\)"
+            },
+            {
+              "explain": "Common denominator 720: \\(\\dfrac{x}{60}=\\dfrac{12x}{720}\\).",
+              "work": "\\(\\dfrac{12x}{720}-\\dfrac{x}{720}=\\dfrac{h}{12}\\;\\Rightarrow\\;\\dfrac{11x}{720}=\\dfrac{h}{12}\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x=\\dfrac{720h}{12\\times11}=\\dfrac{60h}{11}\\)"
+            },
+            {
+              "explain": "The times: \\(h=1:\\ 1{:}\\dfrac{60}{11}\\) (about 1:05:27), \\(h=2:\\ 2{:}\\dfrac{120}{11}\\) (about 2:10:55), ..., \\(h=10:\\ 10{:}\\dfrac{600}{11}\\) (about 10:54:33), and 12:00.",
+              "work": "\\(h{:}\\dfrac{60h}{11}\\ \\text{minutes},\\ h=1,\\ldots,10\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"150\" r=\"120\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"61\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><line x1=\"210\" y1=\"46.1\" x2=\"204\" y2=\"56.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"197\" y=\"73.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><line x1=\"253.9\" y1=\"90\" x2=\"243.5\" y2=\"96\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"231.4\" y=\"108\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><line x1=\"270\" y1=\"150\" x2=\"258\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"244\" y=\"155\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><line x1=\"253.9\" y1=\"210\" x2=\"243.5\" y2=\"204\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"231.4\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><line x1=\"210\" y1=\"253.9\" x2=\"204\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"197\" y=\"236.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">5</text><line x1=\"150\" y1=\"270\" x2=\"150\" y2=\"258\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"150\" y=\"249\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">6</text><line x1=\"90\" y1=\"253.9\" x2=\"96\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"103\" y=\"236.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">7</text><line x1=\"46.1\" y1=\"210\" x2=\"56.5\" y2=\"204\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68.6\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><line x1=\"30\" y1=\"150\" x2=\"42\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"56\" y=\"155\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><line x1=\"46.1\" y1=\"90\" x2=\"56.5\" y2=\"96\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"68.6\" y=\"108\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><line x1=\"90\" y1=\"46.1\" x2=\"96\" y2=\"56.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"103\" y=\"73.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><line x1=\"150\" y1=\"150\" x2=\"222.8\" y2=\"116.8\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"150\" x2=\"197.3\" y2=\"128.4\" stroke=\"#dc2626\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"150\" r=\"5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Check \\(h=1\\): \\(\\dfrac{60}{11}=5.45\\) minutes: minute hand at \\(\\dfrac{5.45}{60}=0.0909\\) of the circle; hour hand at \\(\\dfrac{1}{12}+\\dfrac{5.45}{720}=0.0909\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact times",
+              "note": "Set the two hand positions equal as fractions of a full turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     }

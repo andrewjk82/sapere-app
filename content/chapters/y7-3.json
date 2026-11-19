@@ -7670,6 +7670,94 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Algebra Q6"
           }
+        },
+        {
+          "id": "form2hy2022-q2ai",
+          "type": "mc",
+          "stem": "Expand \\(3(2x-9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(6x-27\\)",
+            "\\(6x-9\\)",
+            "\\(5x-6\\)",
+            "\\(6x+27\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the number outside the bracket by EACH term inside, keeping the signs.",
+          "steps": [
+            {
+              "explain": "Multiply the first term.",
+              "work": "\\(3\\times2x=6x\\)"
+            },
+            {
+              "explain": "Multiply the second term (careful: \\(-9\\) is negative).",
+              "work": "\\(3\\times(-9)=-27\\)"
+            },
+            {
+              "explain": "Write the result.",
+              "work": "\\(3(2x-9)=6x-27\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand",
+              "note": "Multiply every term inside the bracket."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q2aii",
+          "type": "mc",
+          "stem": "Expand \\(-a(4-a)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-4a+a^2\\)",
+            "\\(-4a-a^2\\)",
+            "\\(-4+a\\)",
+            "\\(4a-a^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The number outside is \\(-a\\) (a NEGATIVE). Multiply it by each term inside; remember negative × negative = positive.",
+          "steps": [
+            {
+              "explain": "First term.",
+              "work": "\\(-a\\times4=-4a\\)"
+            },
+            {
+              "explain": "Second term: \\(-a\\times(-a)\\): negative × negative is positive.",
+              "work": "\\(-a\\times(-a)=+a^2\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(-a(4-a)=-4a+a^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistake: getting \\(-a^2\\) by forgetting the double negative.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand",
+              "note": "Negative times negative is positive."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8986,6 +9074,48 @@
           "meta": {
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Algebra Q7"
+          }
+        },
+        {
+          "id": "form2hy2022-q1bii",
+          "type": "mc",
+          "stem": "Simplify \\(4a\\times3b\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(12ab\\)",
+            "\\(7ab\\)",
+            "\\(12a+b\\)",
+            "\\(43ab\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the NUMBERS together and the LETTERS together (in alphabetical order).",
+          "steps": [
+            {
+              "explain": "Numbers: \\(4\\times3=12\\).",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "Letters: \\(a\\times b=ab\\).",
+              "work": "\\(ab\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(4a\\times3b=12ab\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Multiply numbers with numbers and letters with letters."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
           }
         }
       ]

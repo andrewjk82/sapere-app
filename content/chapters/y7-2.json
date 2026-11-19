@@ -6047,6 +6047,94 @@
             "\\(5^x\\times5^x\\times5^x\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "form2hy2022-q4ai",
+          "type": "mc",
+          "stem": "Simplify \\(a^6\\times a^6\\div a^3\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(a^9\\)",
+            "\\(a^{15}\\)",
+            "\\(a^3\\)",
+            "\\(a^{36}\\)"
+          ],
+          "answer": 0,
+          "hint": "Index laws: MULTIPLYING same bases means ADD the powers; DIVIDING means SUBTRACT the powers.",
+          "steps": [
+            {
+              "explain": "Multiply first: add the powers.",
+              "work": "\\(a^6\\times a^6=a^{6+6}=a^{12}\\)"
+            },
+            {
+              "explain": "Then divide: subtract the power.",
+              "work": "\\(a^{12}\\div a^3=a^{12-3}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(a^9\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Add the powers when multiplying, subtract when dividing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q5aii",
+          "type": "mc",
+          "stem": "Simplify fully: \\(4^x\\times4^{x+1}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(4^{2x+1}\\)",
+            "\\(16^{2x+1}\\)",
+            "\\(4^{x^2+x}\\)",
+            "\\(4^{2x}+1\\)"
+          ],
+          "answer": 0,
+          "hint": "Same base 4, so ADD the powers: \\(x+(x+1)\\).",
+          "steps": [
+            {
+              "explain": "The bases are equal (\\(4\\)): multiplying means adding the indices.",
+              "work": "\\(4^x\\times4^{x+1}=4^{x+(x+1)}\\)"
+            },
+            {
+              "explain": "Add the indices.",
+              "work": "\\(x+x+1=2x+1\\)"
+            },
+            {
+              "explain": "Write the result.",
+              "work": "\\(4^{2x+1}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Do NOT multiply the bases (that would give \\(16\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify fully",
+              "note": "Same base: add the indices."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8941,6 +9029,52 @@
             "\\(-6\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "form2hy2022-q4bii",
+          "type": "mc",
+          "stem": "Evaluate, expressing your answer in simplest form: \\(\\sqrt{\\dfrac{3}{2}+\\dfrac{1}{16}}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5}{4}\\)",
+            "\\(\\dfrac{25}{16}\\)",
+            "\\(\\dfrac{\\sqrt{19}}{4}\\)",
+            "\\(\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Work out the fractions UNDER the square root first (common denominator 16), then take the square root of the top and bottom separately.",
+          "steps": [
+            {
+              "explain": "Common denominator 16: \\(\\dfrac{3}{2}=\\dfrac{24}{16}\\).",
+              "work": "\\(\\dfrac{24}{16}+\\dfrac{1}{16}\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(\\sqrt{\\dfrac{25}{16}}\\)"
+            },
+            {
+              "explain": "Square root of the numerator and the denominator.",
+              "work": "\\(\\sqrt{25}=5,\\qquad\\sqrt{16}=4\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\dfrac{5}{4}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Add the fractions under the root first, then take the root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },

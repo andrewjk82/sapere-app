@@ -5208,6 +5208,94 @@
               "note": "Use a common denominator to find the interval between these endpoints."
             }
           ]
+        },
+        {
+          "id": "form2hy2022-q1aiii",
+          "type": "mc",
+          "stem": "Evaluate \\(\\dfrac{1}{7}+\\dfrac{3}{7}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{4}{7}\\)",
+            "\\(\\dfrac{4}{14}\\)",
+            "\\(\\dfrac{3}{49}\\)",
+            "\\(\\dfrac{3}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominators are already the SAME, so add the numerators and KEEP the denominator.",
+          "steps": [
+            {
+              "explain": "Same denominator \\(7\\): the pieces are all sevenths.",
+              "work": "\\(\\dfrac{1}{7}+\\dfrac{3}{7}\\)"
+            },
+            {
+              "explain": "Add the numerators only.",
+              "work": "\\(\\dfrac{1+3}{7}=\\dfrac{4}{7}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Common mistake: adding the denominators too (giving \\(\\dfrac{4}{14}\\)).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Same denominators: add the numerators, keep the denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q3b",
+          "type": "mc",
+          "stem": "Fully simplify \\(\\dfrac{2}{3}+\\dfrac{5}{6}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(\\dfrac{7}{9}\\)",
+            "\\(\\dfrac{9}{6}\\)",
+            "\\(\\dfrac{7}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Make the denominators the SAME first (the lowest common denominator is 6), add the numerators, then SIMPLIFY the fraction.",
+          "steps": [
+            {
+              "explain": "Write \\(\\dfrac{2}{3}\\) with denominator 6: multiply top and bottom by 2.",
+              "work": "\\(\\dfrac{2}{3}=\\dfrac{4}{6}\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\dfrac{4}{6}+\\dfrac{5}{6}=\\dfrac{9}{6}\\)"
+            },
+            {
+              "explain": "Simplify: divide top and bottom by their HCF, 3.",
+              "work": "\\(\\dfrac{9}{6}=\\dfrac{3}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "(The question says FULLY simplify: \\(\\dfrac{9}{6}\\) is not enough.)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully simplify",
+              "note": "Common denominator, add, then simplify."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },

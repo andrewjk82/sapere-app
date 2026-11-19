@@ -4349,6 +4349,52 @@
             "number": "(b)",
             "page": 1
           }
+        },
+        {
+          "id": "form2hy2022-q1ai",
+          "type": "mc",
+          "stem": "Evaluate \\(4\\times(-6)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-24\\)",
+            "\\(24\\)",
+            "\\(-10\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numbers first, then decide the sign: a POSITIVE times a NEGATIVE gives a NEGATIVE.",
+          "steps": [
+            {
+              "explain": "Ignore the signs and multiply the numbers.",
+              "work": "\\(4\\times6=24\\)"
+            },
+            {
+              "explain": "Decide the sign: different signs (one positive, one negative) give a NEGATIVE answer.",
+              "work": "positive × negative = negative"
+            },
+            {
+              "explain": "Put the sign on the answer.",
+              "work": "\\(4\\times(-6)=-24\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Why not 24? That would be \\(4\\times6\\) or \\((-4)\\times(-6)\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Multiply, then use the sign rule: different signs give negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },

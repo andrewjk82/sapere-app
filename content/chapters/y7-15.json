@@ -1486,6 +1486,48 @@
               "note": "Keep the equation balanced by doing the same operation to both sides."
             }
           ]
+        },
+        {
+          "id": "form2hy2022-q1di",
+          "type": "mc",
+          "stem": "Solve \\(x-6=13\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=19\\)",
+            "\\(x=7\\)",
+            "\\(x=-7\\)",
+            "\\(x=78\\)"
+          ],
+          "answer": 0,
+          "hint": "To undo \\(-6\\), do the OPPOSITE operation to BOTH sides: add 6.",
+          "steps": [
+            {
+              "explain": "Subtraction of 6 is undone by adding 6.",
+              "work": "\\(x-6+6=13+6\\)"
+            },
+            {
+              "explain": "Simplify both sides.",
+              "work": "\\(x=19\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(19-6=13\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Do the opposite operation to both sides."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1635,6 +1677,139 @@
               "note": "Equivalent equations have the same solution set and can be formed by applying the same non-zero operation to both sides."
             }
           ]
+        },
+        {
+          "id": "form2hy2022-q1dii",
+          "type": "mc",
+          "stem": "Solve \\(\\dfrac{x}{4}=6\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=24\\)",
+            "\\(x=1.5\\)",
+            "\\(x=10\\)",
+            "\\(x=2\\)"
+          ],
+          "answer": 0,
+          "hint": "The \\(x\\) is being DIVIDED by 4. The opposite operation is to MULTIPLY both sides by 4.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 4.",
+              "work": "\\(\\dfrac{x}{4}\\times4=6\\times4\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x=24\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{24}{4}=6\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "The opposite of dividing by 4 is multiplying by 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q4ci",
+          "type": "mc",
+          "stem": "Solve \\(\\dfrac{y-4}{-2}>3\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(y<-2\\)",
+            "\\(y>-2\\)",
+            "\\(y<2\\)",
+            "\\(y>2\\)"
+          ],
+          "answer": 0,
+          "hint": "Treat it like an equation, BUT when you multiply or divide both sides by a NEGATIVE number the inequality sign FLIPS.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(-2\\) (negative!), so the sign changes from \\(>\\) to \\(<\\).",
+              "work": "\\(y-4<3\\times(-2)=-6\\)"
+            },
+            {
+              "explain": "Add 4 to both sides.",
+              "work": "\\(y<-6+4\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(y<-2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check with \\(y=-3\\): \\(\\dfrac{-3-4}{-2}=3.5>3\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Flip the inequality sign when multiplying by a negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form2hy2022-q4cii",
+          "type": "mc",
+          "stem": "The solution to part (i) is \\(y<-2\\). Graph your solution to part (i) on a number line. Which description is correct?",
+          "difficulty": "easy",
+          "options": [
+            "An OPEN circle at \\(-2\\) with an arrow pointing LEFT",
+            "A CLOSED circle at \\(-2\\) with an arrow pointing LEFT",
+            "An OPEN circle at \\(-2\\) with an arrow pointing RIGHT",
+            "A CLOSED circle at \\(2\\) with an arrow pointing RIGHT"
+          ],
+          "answer": 0,
+          "hint": "Two decisions: (1) open or closed circle? '\\(<\\)' does NOT include the end point, so OPEN. (2) which way? \\(y<-2\\) means values SMALLER than \\(-2\\): to the LEFT.",
+          "steps": [
+            {
+              "explain": "The end point is \\(-2\\). Because the sign is \\(<\\) (strictly less than) and NOT \\(\\le\\), \\(-2\\) itself is NOT a solution: use an OPEN circle.",
+              "work": "< → open circle"
+            },
+            {
+              "explain": "Smaller numbers are to the LEFT on a number line, so shade/arrow to the left of \\(-2\\) (the values \\(-3,\\ -4,\\ldots\\)).",
+              "work": "y < −2 → arrow to the left"
+            },
+            {
+              "explain": "Draw it.",
+              "work": "<span style=\"color:#047857;font-weight:700\">A</span>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"20\" y1=\"60\" x2=\"340\" y2=\"60\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M20,60 l9,-4.5 v9z\" fill=\"#1e293b\"/><path d=\"M340,60 l-9,-4.5 v9z\" fill=\"#1e293b\"/><line x1=\"60\" y1=\"54\" x2=\"60\" y2=\"66\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−4</text><line x1=\"120\" y1=\"54\" x2=\"120\" y2=\"66\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"120\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−3</text><line x1=\"180\" y1=\"54\" x2=\"180\" y2=\"66\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"180\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−2</text><line x1=\"240\" y1=\"54\" x2=\"240\" y2=\"66\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"240\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">−1</text><line x1=\"300\" y1=\"54\" x2=\"300\" y2=\"66\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"300\" y=\"84\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">0</text><line x1=\"180\" y1=\"34\" x2=\"24\" y2=\"34\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M20,34 l10,-5 v10z\" fill=\"#2563eb\"/><circle cx=\"180\" cy=\"34\" r=\"5.5\" fill=\"#fff\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"214\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1d4ed8\">y < −2</text><text x=\"330\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">y</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "number line",
+              "note": "Open circle for strict inequality; smaller values are to the left."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2700,6 +2875,52 @@
             "\\(8\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "form2hy2022-q3e",
+          "type": "mc",
+          "stem": "Solve \\(\\dfrac{3x-2}{4}=-8\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=-10\\)",
+            "\\(x=-6\\)",
+            "\\(x=10\\)",
+            "\\(x=-\\dfrac{34}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo the DIVISION by 4 first (multiply both sides by 4), then undo the subtraction, then undo the multiplication.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 4.",
+              "work": "\\(3x-2=-8\\times4=-32\\)"
+            },
+            {
+              "explain": "Add 2 to both sides.",
+              "work": "\\(3x=-30\\)"
+            },
+            {
+              "explain": "Divide both sides by 3.",
+              "work": "\\(x=-10\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{3(-10)-2}{4}=\\dfrac{-32}{4}=-8\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Multiply by 4, add 2, then divide by 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3014,6 +3235,56 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "form2hy2022-q5b",
+          "type": "mc",
+          "stem": "Solve \\(\\dfrac{x}{2}-3=x+\\dfrac{5}{6}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=-\\dfrac{23}{3}\\)",
+            "\\(x=\\dfrac{23}{3}\\)",
+            "\\(x=-\\dfrac{13}{3}\\)",
+            "\\(x=-23\\)"
+          ],
+          "answer": 0,
+          "hint": "Clear the fractions: multiply EVERY term by the common denominator \\(6\\), then collect the \\(x\\) terms.",
+          "steps": [
+            {
+              "explain": "Multiply every term by 6.",
+              "work": "\\(6\\times\\dfrac{x}{2}-6\\times3=6\\times x+6\\times\\dfrac{5}{6}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(3x-18=6x+5\\)"
+            },
+            {
+              "explain": "Subtract \\(6x\\) from both sides (collect the \\(x\\) terms on one side).",
+              "work": "\\(-18=3x+5\\)"
+            },
+            {
+              "explain": "Subtract 5 from both sides.",
+              "work": "\\(-23=3x\\)"
+            },
+            {
+              "explain": "Divide by 3.",
+              "work": "\\(x=-\\dfrac{23}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Multiply every term by the common denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Mathematics Half-Yearly Examination 2022",
+            "school": "Form II Half-Yearly",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
