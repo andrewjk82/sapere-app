@@ -12702,6 +12702,105 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "jamesruse2020-y12a-q14a",
+          "type": "mc",
+          "stem": "The patterns below are made using small matchsticks. Pattern #1 requires 6 matchsticks, pattern #2 requires 11 match sticks and pattern #3 requires 16 matchsticks. Write a formula for the number of sticks, \\(X_n\\), needed to construct pattern #\\(n\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 130 130\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"85\" x2=\"30\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"85\" x2=\"80\" y2=\"85\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"35\" x2=\"80\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"85\" x2=\"80\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"35\" x2=\"55\" y2=\"10\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"10\" x2=\"80\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(X_n=5n+1\\)",
+            "\\(X_n=6n\\)",
+            "\\(X_n=5n\\)",
+            "\\(X_n=n+5\\)"
+          ],
+          "answer": 0,
+          "hint": "The number of sticks goes up by the SAME amount each time: an arithmetic sequence \\(T_n=a+(n-1)d\\).",
+          "steps": [
+            {
+              "explain": "Terms: 6, 11, 16. Common difference.",
+              "work": "\\(d=11-6=5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 130\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"85\" x2=\"30\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"85\" x2=\"80\" y2=\"85\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"35\" x2=\"80\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"85\" x2=\"80\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"85\" x2=\"130\" y2=\"85\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"35\" x2=\"130\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"85\" x2=\"130\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"85\" x2=\"180\" y2=\"85\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"35\" x2=\"180\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"85\" x2=\"180\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"35\" x2=\"55\" y2=\"10\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"10\" x2=\"80\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"85\" x2=\"105\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"105\" y1=\"110\" x2=\"130\" y2=\"85\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"35\" x2=\"155\" y2=\"10\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"155\" y1=\"10\" x2=\"180\" y2=\"35\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Arithmetic sequence formula with \\(a=6\\).",
+              "work": "\\(X_n=6+(n-1)\\times5\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(X_n=5n+1\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(n=3\\) gives \\(16\\) ✓. Why +5 each time: each new box adds 3 sticks for the box and 2 for the roof.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write a formula",
+              "note": "Arithmetic sequence: constant difference 5."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "The paper shows three matchstick patterns (houses in a row, roofs alternating up and down). The sketch is redrawn."
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q14b",
+          "type": "mc",
+          "stem": "Pattern #\\(n\\) needs \\(X_n=5n+1\\) matchsticks. What is the largest pattern number that can be constructed using 200 matchsticks?",
+          "difficulty": "medium",
+          "options": [
+            "39",
+            "40",
+            "41",
+            "199"
+          ],
+          "answer": 0,
+          "hint": "Solve \\(5n+1\\leq200\\) and take the largest WHOLE number.",
+          "steps": [
+            {
+              "explain": "Inequality.",
+              "work": "\\(5n+1\\leq200\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(5n\\leq199\\ \\Rightarrow\\ n\\leq39.8\\)"
+            },
+            {
+              "explain": "The pattern number must be a whole number, so take the largest one that fits.",
+              "work": "\\(n=39\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(X_{39}=5(39)+1=196\\leq200\\) but \\(X_{40}=201>200\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "largest pattern number",
+              "note": "Solve the inequality and round DOWN."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18007,6 +18106,98 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
             "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q13",
+          "type": "mc",
+          "stem": "Find the values of \\(x\\) and \\(y\\) if the first four terms of a geometric sequence are \\(3,\\ x,\\ y,\\ 192\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=12,\\ y=48\\)",
+            "\\(x=6,\\ y=12\\)",
+            "\\(x=-12,\\ y=48\\)",
+            "\\(x=64,\\ y=128\\)"
+          ],
+          "answer": 0,
+          "hint": "In a geometric sequence \\(T_n=ar^{n-1}\\). The 4th term is \\(ar^3\\).",
+          "steps": [
+            {
+              "explain": "First term \\(a=3\\) and the 4th term.",
+              "work": "\\(3r^3=192\\ \\Rightarrow\\ r^3=64\\)"
+            },
+            {
+              "explain": "Solve for the ratio.",
+              "work": "\\(r=4\\)"
+            },
+            {
+              "explain": "Next terms.",
+              "work": "\\(x=3\\times4=12,\\qquad y=12\\times4=48\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(48\\times4=192\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the values",
+              "note": "Use the 4th term formula to find the ratio."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q17a",
+          "type": "mc",
+          "stem": "A weightlifter in training becomes increasingly tired with each lift. Each time he lifts, he can only do so with 90% of the preceding weight. If his first lift was 200 kg, what will be the weight lifted on the tenth lift, correct to two decimal places?",
+          "difficulty": "medium",
+          "options": [
+            "\\(77.48\\ \\text{kg}\\)",
+            "\\(86.10\\ \\text{kg}\\)",
+            "\\(69.74\\ \\text{kg}\\)",
+            "\\(180\\ \\text{kg}\\)"
+          ],
+          "answer": 0,
+          "hint": "Geometric sequence with \\(a=200\\) and \\(r=0.9\\). The 10th term is \\(ar^9\\).",
+          "steps": [
+            {
+              "explain": "Identify.",
+              "work": "\\(a=200,\\quad r=0.9\\)"
+            },
+            {
+              "explain": "10th term.",
+              "work": "\\(T_{10}=ar^{9}=200\\times0.9^9\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(200\\times0.38742\\ldots=77.48\\ \\text{kg}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(86.10\\) uses \\(0.9^8\\) (9th lift).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tenth lift",
+              "note": "The nth term is \\(ar^{n-1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -30240,6 +30431,52 @@
               "work": "\\(\\boxed{35\\text{ days}}\\)"
             }
           ]
+        },
+        {
+          "id": "jamesruse2020-y12a-q14c",
+          "type": "mc",
+          "stem": "Pattern #\\(n\\) needs \\(X_n=5n+1\\) matchsticks. How many matchsticks would be needed to construct all patterns from pattern #1 to pattern #20?",
+          "difficulty": "medium",
+          "options": [
+            "1070",
+            "1050",
+            "2100",
+            "1041"
+          ],
+          "answer": 0,
+          "hint": "Add the first 20 terms of an arithmetic series: \\(S_n=\\dfrac{n}{2}(a+l)\\).",
+          "steps": [
+            {
+              "explain": "First and last terms.",
+              "work": "\\(a=X_1=6,\\qquad l=X_{20}=5(20)+1=101\\)"
+            },
+            {
+              "explain": "Arithmetic series formula.",
+              "work": "\\(S_{20}=\\dfrac{20}{2}(6+101)\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(10\\times107=1070\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check using \\(\\sum(5n+1)=5\\times210+20=1070\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many matchsticks",
+              "note": "Sum of an arithmetic series."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -38886,6 +39123,52 @@
             "course": "Advanced",
             "sourceQuestion": "Q8"
           }
+        },
+        {
+          "id": "jamesruse2020-y12a-mc1",
+          "type": "mc",
+          "stem": "For the series, \\(2-1+\\dfrac{1}{2}-\\dfrac{1}{4}+\\cdots\\) what is the sum of the first eight terms, correct to two decimal places?",
+          "difficulty": "medium",
+          "options": [
+            "0.68",
+            "1.31",
+            "1.33",
+            "4.00"
+          ],
+          "answer": 2,
+          "hint": "It is a geometric series: find the first term \\(a\\) and the common ratio \\(r\\) (each term divided by the previous).",
+          "steps": [
+            {
+              "explain": "First term and ratio.",
+              "work": "\\(a=2,\\qquad r=\\dfrac{-1}{2}=-\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Sum of the first \\(n\\) terms of a GP.",
+              "work": "\\(S_8=\\dfrac{a(1-r^8)}{1-r}=\\dfrac{2\\left(1-(-0.5)^8\\right)}{1-(-0.5)}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(=\\dfrac{2\\times0.99609}{1.5}=1.328\\ldots\\approx1.33\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            },
+            {
+              "explain": "Mistake: \\(4.00\\) is the (infinite) wrong ratio \\(r=-2\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sum of the first eight terms",
+              "note": "Geometric series: \\(S_n=\\dfrac{a(1-r^n)}{1-r}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -44538,6 +44821,48 @@
           "meta": {
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
+          }
+        },
+        {
+          "id": "jamesruse2020-y12a-q17b",
+          "type": "mc",
+          "stem": "A weightlifter's lifts follow a geometric sequence with first lift 200 kg and each lift 90% of the preceding weight. At the given rate, what would be the sum of all weights lifted by the time he were totally exhausted?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2000\\ \\text{kg}\\)",
+            "\\(1800\\ \\text{kg}\\)",
+            "\\(200\\ \\text{kg}\\)",
+            "\\(1000\\ \\text{kg}\\)"
+          ],
+          "answer": 0,
+          "hint": "'Totally exhausted' means continuing forever: the limiting sum \\(S_\\infty=\\dfrac{a}{1-r}\\) (valid since \\(|r|<1\\)).",
+          "steps": [
+            {
+              "explain": "Check the condition.",
+              "work": "\\(r=0.9,\\ |r|<1\\)"
+            },
+            {
+              "explain": "Limiting sum.",
+              "work": "\\(S_\\infty=\\dfrac{200}{1-0.9}=\\dfrac{200}{0.1}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(2000\\ \\text{kg}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sum of all weights",
+              "note": "Limiting sum of a geometric series."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
+            "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
