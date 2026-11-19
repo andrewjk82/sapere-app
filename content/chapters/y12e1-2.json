@@ -192,6 +192,52 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "danebank2021-y12e1-q12a",
+          "type": "review",
+          "stem": "Use the principle of mathematical induction to show that for all integers \\(n\\geq1\\), \\(1^3+2^3+3^3+\\ldots+n^3=\\dfrac{n^2}{4}(n+1)^2\\).",
+          "difficulty": "hard",
+          "answer": "Step 1 (n = 1): LHS = 1, RHS = (1/4)(4) = 1 ✓. Step 2 (assume true for n = k): 1³ + … + k³ = k²(k+1)²/4. Step 3 (n = k+1): LHS = k²(k+1)²/4 + (k+1)³ = (k+1)²[k²/4 + (k+1)] = (k+1)²(k²+4k+4)/4 = (k+1)²(k+2)²/4 = RHS for n = k+1. Step 4: true for n=1 and n=k ⇒ n=k+1, so true for all n ≥ 1 by induction.",
+          "manual": true,
+          "hint": "Four steps: prove \\(n=1\\), assume \\(n=k\\), prove \\(n=k+1\\) (use the assumption), conclude.",
+          "steps": [
+            {
+              "explain": "Prove true for \\(n=1\\).",
+              "work": "\\(\\text{LHS}=1^3=1,\\qquad\\text{RHS}=\\dfrac{1^2}{4}(2)^2=1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\).",
+              "work": "\\(1^3+2^3+\\ldots+k^3=\\dfrac{k^2}{4}(k+1)^2\\)"
+            },
+            {
+              "explain": "Prove for \\(n=k+1\\): add the next cube to both sides.",
+              "work": "\\(\\text{LHS}=\\dfrac{k^2(k+1)^2}{4}+(k+1)^3=\\dfrac{(k+1)^2}{4}\\left[k^2+4(k+1)\\right]\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(=\\dfrac{(k+1)^2}{4}(k+2)^2=\\dfrac{(k+1)^2}{4}\\left((k+1)+1\\right)^2\\) which is the formula for \\(n=k+1\\)."
+            },
+            {
+              "explain": "Conclusion: true for \\(n=1\\), and true for \\(n=k\\) implies true for \\(n=k+1\\), so by induction true for all integers \\(n\\geq1\\). ✓",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "mathematical induction",
+              "note": "Prove \\(n=1\\), assume \\(n=k\\), prove \\(n=k+1\\), conclude."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
         }
       ]
     },

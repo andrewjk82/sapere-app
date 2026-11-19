@@ -142,6 +142,98 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "danebank2021-y12e1-q11ai",
+          "type": "mc",
+          "stem": "Given \\(P(x)=x^3+11x^2-56x+60\\) and \\(P'(2)=0\\): Fully factorise the polynomial \\(P(x)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\((x-2)^2(x+15)\\)",
+            "\\((x-2)(x+3)(x-10)\\)",
+            "\\((x+2)^2(x-15)\\)",
+            "\\((x-2)(x+6)(x+10)\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P'(2)=0\\) and \\(P(2)=0\\) together mean \\(x=2\\) is a DOUBLE root, so \\((x-2)^2\\) is a factor.",
+          "steps": [
+            {
+              "explain": "Check \\(P(2)=8+44-112+60=0\\): \\((x-2)\\) is a factor; with \\(P'(2)=0\\), \\((x-2)^2\\) is a factor.",
+              "work": ""
+            },
+            {
+              "explain": "Divide by \\((x-2)^2=x^2-4x+4\\).",
+              "work": "\\(x^3+11x^2-56x+60=(x^2-4x+4)(x+15)\\)"
+            },
+            {
+              "explain": "Check by expanding.",
+              "work": "\\((x^2-4x+4)(x+15)=x^3+15x^2-4x^2-60x+4x+60=x^3+11x^2-56x+60\\) ✓"
+            },
+            {
+              "explain": "So \\(P(x)=(x-2)^2(x+15)\\) → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "A double root is where P and P′ are both zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "danebank2021-y12e1-q11aii",
+          "type": "mc",
+          "stem": "Given \\(P(x)=(x-2)^2(x+15)\\): Hence, solve \\(P(x)\\leq0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x\\leq-15\\) or \\(x=2\\)",
+            "\\(-15\\leq x\\leq2\\)",
+            "\\(x\\geq-15\\)",
+            "\\(x\\leq-15\\)"
+          ],
+          "answer": 0,
+          "hint": "Sketch the cubic using its roots: it touches the axis at \\(x=2\\) (double root) and crosses at \\(x=-15\\).",
+          "steps": [
+            {
+              "explain": "Roots: \\(x=-15\\) (single, crosses) and \\(x=2\\) (double, touches). Leading coefficient positive: low on the left, high on the right.",
+              "work": ""
+            },
+            {
+              "explain": "The curve is BELOW the axis for \\(x<-15\\) and touches the axis at \\(x=2\\) (it is \\(\\geq0\\) elsewhere).",
+              "work": ""
+            },
+            {
+              "explain": "Solution of \\(P(x)\\leq0\\).",
+              "work": "\\(x\\leq-15\\) or \\(x=2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: forgetting \\(x=2\\) (where \\(P=0\\) exactly) loses a solution.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, solve",
+              "note": "Sketch the cubic; include the touching point \\(x=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
+            "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
