@@ -1459,6 +1459,371 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "barker2021-y11a-mc9",
+          "type": "mc",
+          "stem": "A Venn diagram is shaded as per below. Which of the following represents the shaded area in set notation?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"320\" height=\"210\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"120\" r=\"62\" fill=\"#fff\"/><circle cx=\"205\" cy=\"120\" r=\"62\" fill=\"#fff\"/><circle cx=\"135\" cy=\"120\" r=\"62\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"205\" cy=\"120\" r=\"62\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"105\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"236\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "\\(A\\cup B\\)",
+            "\\(A\\cap B\\)",
+            "\\(\\overline{A}\\cup\\overline{B}\\)",
+            "\\(\\overline{A}\\cap\\overline{B}\\)"
+          ],
+          "answer": 3,
+          "hint": "The shaded region is OUTSIDE both circles: not in A AND not in B.",
+          "steps": [
+            {
+              "explain": "Shaded = everything that is outside circle A and outside circle B.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"320\" height=\"210\" fill=\"#fecaca\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"120\" r=\"62\" fill=\"#fff\"/><circle cx=\"205\" cy=\"120\" r=\"62\" fill=\"#fff\"/><circle cx=\"135\" cy=\"120\" r=\"62\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"205\" cy=\"120\" r=\"62\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"105\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"236\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"40\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">shaded</text><text x=\"300\" y=\"205\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">outside both circles</text></svg>"
+              }
+            },
+            {
+              "explain": "'Not in A' is \\(\\overline{A}\\); 'not in B' is \\(\\overline{B}\\). 'And' means intersection.",
+              "work": "\\(\\overline{A}\\cap\\overline{B}\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Check: \\(\\overline{A}\\cup\\overline{B}\\) would also shade the part of one circle that is outside the other.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "set notation",
+              "note": "Outside both means not A and not B."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q13ci",
+          "type": "review",
+          "stem": "In a class of 25 students, 18 play netball, 13 play soccer and 2 play neither sport. Draw a Venn diagram for this scenario, showing all information.",
+          "difficulty": "medium",
+          "answer": "Two overlapping circles N (netball) and S (soccer) in a rectangle of 25: both = 8, netball only = 10, soccer only = 5, neither = 2.",
+          "manual": true,
+          "hint": "Use \\(|N\\cup S|=|N|+|S|-|N\\cap S|\\). Only 23 students play at least one sport.",
+          "steps": [
+            {
+              "explain": "Students playing at least one sport.",
+              "work": "\\(25-2=23\\)"
+            },
+            {
+              "explain": "Inclusion-exclusion.",
+              "work": "\\(23=18+13-|N\\cap S|\\ \\Rightarrow\\ |N\\cap S|=8\\)"
+            },
+            {
+              "explain": "Netball only \\(18-8=10\\); soccer only \\(13-8=5\\).",
+              "work": "\\(10+8+5+2=25\\) ✓"
+            },
+            {
+              "explain": "Draw two overlapping circles in a rectangle and write 10, 8, 5 in the regions and 2 outside.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"224\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"225\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"80\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">N</text><text x=\"280\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">S</text><text x=\"100\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">10</text><text x=\"180\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">8</text><text x=\"260\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">5</text><text x=\"320\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">2</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Venn diagram",
+              "note": "Find the overlap first with inclusion–exclusion."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "barker2021-y11a-q13ciia",
+          "type": "mc",
+          "stem": "In a class of 25 students, 18 play netball, 13 play soccer and 2 play neither sport. A student is chosen at random. Find the probability that they play both soccer and netball.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{8}{25}\\)",
+            "\\(\\dfrac{10}{25}\\)",
+            "\\(\\dfrac{5}{25}\\)",
+            "\\(\\dfrac{13}{25}\\)"
+          ],
+          "answer": 0,
+          "hint": "Probability = (number in both) ÷ (total students). Use the Venn diagram.",
+          "steps": [
+            {
+              "explain": "From the Venn diagram, 8 students play both.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"224\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"225\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"80\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">N</text><text x=\"280\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">S</text><text x=\"100\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">10</text><text x=\"180\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">8</text><text x=\"260\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">5</text><text x=\"320\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Total students: 25.",
+              "work": "\\(P(\\text{both})=\\dfrac{8}{25}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{10}{25}\\) is netball ONLY.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "both soccer and netball",
+              "note": "Use the overlap region of the Venn diagram."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q13ciib",
+          "type": "mc",
+          "stem": "In a class of 25 students, 18 play netball, 13 play soccer and 2 play neither sport. A student is chosen at random. Find the probability that they do not play soccer.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{12}{25}\\)",
+            "\\(\\dfrac{13}{25}\\)",
+            "\\(\\dfrac{10}{25}\\)",
+            "\\(\\dfrac{5}{25}\\)"
+          ],
+          "answer": 0,
+          "hint": "Not soccer = netball only + neither = \\(25-13\\).",
+          "steps": [
+            {
+              "explain": "Students who do not play soccer: netball only (10) plus neither (2).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"224\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"225\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"80\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">N</text><text x=\"280\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">S</text><text x=\"100\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">10</text><text x=\"180\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">8</text><text x=\"260\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">5</text><text x=\"320\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#b91c1c\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(10+2=12\\)"
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(\\dfrac{12}{25}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(1-P(\\text{soccer})=1-\\dfrac{13}{25}=\\dfrac{12}{25}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "do not play soccer",
+              "note": "Use the complement: 1 − P(soccer)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14ai",
+          "type": "mc",
+          "stem": "Three sets are defined as below. Universal Set \\(V=\\{\\text{Positive integers}\\leq20\\}\\), Subset \\(A=\\{\\text{Even numbers}\\}\\), Subset \\(B=\\{\\text{Multiples of }3\\}\\). Note that 3 is a multiple of 3. A number is randomly selected from Set \\(V\\). Calculate: \\(P(A)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{9}{20}\\)",
+            "\\(\\dfrac{11}{20}\\)",
+            "\\(\\dfrac{1}{10}\\)"
+          ],
+          "answer": 0,
+          "hint": "List the even numbers from 1 to 20 and count them.",
+          "steps": [
+            {
+              "explain": "Even numbers up to 20.",
+              "work": "\\(A=\\{2,4,6,8,10,12,14,16,18,20\\}\\): 10 numbers."
+            },
+            {
+              "explain": "Total numbers in \\(V\\): 20.",
+              "work": "\\(P(A)=\\dfrac{10}{20}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(\\dfrac{1}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Favourable ÷ total."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14aii",
+          "type": "mc",
+          "stem": "Three sets are defined as below. Universal Set \\(V=\\{\\text{Positive integers}\\leq20\\}\\), Subset \\(A=\\{\\text{Even numbers}\\}\\), Subset \\(B=\\{\\text{Multiples of }3\\}\\). Note that 3 is a multiple of 3. A number is randomly selected from Set \\(V\\). Calculate: \\(P(B)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{7}{20}\\)",
+            "\\(\\dfrac{3}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "List the multiples of 3 up to 20.",
+          "steps": [
+            {
+              "explain": "Multiples of 3.",
+              "work": "\\(B=\\{3,6,9,12,15,18\\}\\): 6 numbers."
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(P(B)=\\dfrac{6}{20}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(\\dfrac{3}{10}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Count the multiples of 3 up to 20."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14aiii",
+          "type": "mc",
+          "stem": "Three sets are defined as below. Universal Set \\(V=\\{\\text{Positive integers}\\leq20\\}\\), Subset \\(A=\\{\\text{Even numbers}\\}\\), Subset \\(B=\\{\\text{Multiples of }3\\}\\). Note that 3 is a multiple of 3. A number is randomly selected from Set \\(V\\). Calculate: \\(P(A\\cap B)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{3}{20}\\)",
+            "\\(\\dfrac{1}{20}\\)",
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(A\\cap B\\) are numbers that are BOTH even and multiples of 3.",
+          "steps": [
+            {
+              "explain": "Which numbers are in both sets? Even multiples of 3 (multiples of 6).",
+              "work": "\\(A\\cap B=\\{6,12,18\\}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"224\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"225\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"80\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"280\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"100\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">7</text><text x=\"180\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"260\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"320\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">7</text></svg>"
+              }
+            },
+            {
+              "explain": "3 numbers out of 20.",
+              "work": "\\(P(A\\cap B)=\\dfrac{3}{20}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check using independence: \\(P(A)\\times P(B)=\\dfrac{1}{2}\\times\\dfrac{3}{10}=\\dfrac{3}{20}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Intersection = in both sets."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14aiv",
+          "type": "mc",
+          "stem": "Three sets are defined as below. Universal Set \\(V=\\{\\text{Positive integers}\\leq20\\}\\), Subset \\(A=\\{\\text{Even numbers}\\}\\), Subset \\(B=\\{\\text{Multiples of }3\\}\\). Note that 3 is a multiple of 3. A number is randomly selected from Set \\(V\\). Calculate: \\(P(A\\cup B)\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{13}{20}\\)",
+            "\\(\\dfrac{4}{5}\\)",
+            "\\(\\dfrac{7}{20}\\)",
+            "\\(\\dfrac{3}{20}\\)"
+          ],
+          "answer": 0,
+          "hint": "Don't count the overlap twice: \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\).",
+          "steps": [
+            {
+              "explain": "Use the addition formula.",
+              "work": "\\(P(A\\cup B)=\\dfrac{1}{2}+\\dfrac{3}{10}-\\dfrac{3}{20}\\)"
+            },
+            {
+              "explain": "Common denominator 20.",
+              "work": "\\(\\dfrac{10}{20}+\\dfrac{6}{20}-\\dfrac{3}{20}=\\dfrac{13}{20}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check with the Venn diagram: \\(7+3+3=13\\) numbers are in \\(A\\cup B\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"344\" height=\"224\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"135\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"225\" cy=\"125\" r=\"70\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"80\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"280\" y=\"63\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"100\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">7</text><text x=\"180\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"260\" y=\"131\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">3</text><text x=\"320\" y=\"216\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\">7</text></svg>"
+              }
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{16}{20}=\\dfrac{4}{5}\\) counts 6, 12, 18 twice.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5397,6 +5762,52 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q12a",
+          "type": "mc",
+          "stem": "During a particular month, the probability of it raining on a given day is \\(\\dfrac{1}{3}\\). Over a three-day long weekend, what is the probability that it will rain on exactly two days?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{2}{9}\\)",
+            "\\(\\dfrac{2}{27}\\)",
+            "\\(\\dfrac{1}{9}\\)",
+            "\\(\\dfrac{4}{9}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the number of ways to get exactly 2 wet days (RRN, RNR, NRR) and find the probability of each.",
+          "steps": [
+            {
+              "explain": "One arrangement, e.g. rain, rain, no rain.",
+              "work": "\\(P(RRN)=\\dfrac{1}{3}\\times\\dfrac{1}{3}\\times\\dfrac{2}{3}=\\dfrac{2}{27}\\)"
+            },
+            {
+              "explain": "There are 3 arrangements (the dry day can be first, second or third), each with probability \\(\\dfrac{2}{27}\\).",
+              "work": "\\(RRN,\\ RNR,\\ NRR\\)"
+            },
+            {
+              "explain": "Add them.",
+              "work": "\\(3\\times\\dfrac{2}{27}=\\dfrac{6}{27}=\\dfrac{2}{9}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{2}{27}\\) counts only ONE arrangement.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exactly two days",
+              "note": "Add the probabilities of all orders with two wet days."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
             "grade": "11",
             "origin": "teacher"
           }

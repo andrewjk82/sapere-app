@@ -3867,6 +3867,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "barker2021-y11a-mc6",
+          "type": "mc",
+          "stem": "What is the angle of inclination, created with the \\(x\\)-axis, of the line \\(4x-5y+30=0\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(38^\\circ40'\\)",
+            "\\(51^\\circ20'\\)",
+            "\\(75^\\circ58'\\)",
+            "\\(141^\\circ20'\\)"
+          ],
+          "answer": 0,
+          "hint": "The gradient is \\(m=\\tan\\theta\\). Rearrange to \\(y=mx+b\\) to find \\(m\\).",
+          "steps": [
+            {
+              "explain": "Rearrange.",
+              "work": "\\(5y=4x+30\\ \\Rightarrow\\ y=\\dfrac{4}{5}x+6\\)"
+            },
+            {
+              "explain": "Gradient and angle.",
+              "work": "\\(\\tan\\theta=\\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Inverse tangent.",
+              "work": "\\(\\theta=\\tan^{-1}\\left(\\dfrac{4}{5}\\right)=38.66^\\circ=38^\\circ40'\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(51^\\circ20'\\) is \\(90^\\circ-38^\\circ40'\\) (angle with the y-axis).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "angle of inclination",
+              "note": "\\(\\tan\\theta\\) equals the gradient."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9438,6 +9484,52 @@
               "note": "Find the original gradient, take its negative reciprocal and use the given point."
             }
           ]
+        },
+        {
+          "id": "barker2021-y11a-q13d",
+          "type": "mc",
+          "stem": "Find the exact equation of the straight line which passes through the midpoint of \\((0,-5)\\) and \\((4,-1)\\) and is perpendicular to the line that makes an angle of \\(30^\\circ\\) with the positive \\(x\\)-axis.",
+          "difficulty": "hard",
+          "options": [
+            "\\(y=-\\sqrt{3}x+2\\sqrt{3}-3\\)",
+            "\\(y=\\sqrt{3}x-2\\sqrt{3}-3\\)",
+            "\\(y=-\\dfrac{1}{\\sqrt{3}}x+\\dfrac{2}{\\sqrt{3}}-3\\)",
+            "\\(y=-\\sqrt{3}x-3\\)"
+          ],
+          "answer": 0,
+          "hint": "Gradient = tangent of the angle of inclination. Perpendicular gradients multiply to \\(-1\\).",
+          "steps": [
+            {
+              "explain": "Midpoint.",
+              "work": "\\(\\left(\\dfrac{0+4}{2},\\dfrac{-5+(-1)}{2}\\right)=(2,-3)\\)"
+            },
+            {
+              "explain": "Gradient of the given line.",
+              "work": "\\(m=\\tan30^\\circ=\\dfrac{1}{\\sqrt{3}}\\)"
+            },
+            {
+              "explain": "Perpendicular gradient.",
+              "work": "\\(m_\\perp=-\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Point-gradient form.",
+              "work": "\\(y+3=-\\sqrt{3}(x-2)\\ \\Rightarrow\\ y=-\\sqrt{3}x+2\\sqrt{3}-3\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact equation",
+              "note": "Gradient from \\(\\tan30^\\circ\\), then the negative reciprocal."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }

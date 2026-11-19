@@ -4580,6 +4580,48 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:420px\"><rect width=\"400\" height=\"300\" fill=\"#fff\"/><path d=\"M60.0 250.0 L92.3 62.8 A190 190 0 0 1 250.0 250.0 Z\" fill=\"#dbeafe\" fill-opacity=\"0.6\"/><path d=\"M92.3 62.8 A190 190 0 0 1 250.0 250.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M60.0 250.0 L92.3 62.8\" stroke=\"#334155\" stroke-width=\"2.4\" /><path d=\"M60.0 250.0 L250.0 250.0\" stroke=\"#334155\" stroke-width=\"2.4\" /><circle cx=\"60.0\" cy=\"250.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"42.0\" y=\"264.0\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" font-family=\"system-ui\">O</text><circle cx=\"92.3\" cy=\"62.8\" r=\"5\" fill=\"#1e293b\"/><text x=\"86.3\" y=\"52.8\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" font-family=\"system-ui\">A</text><circle cx=\"250.0\" cy=\"250.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"262.0\" y=\"256.0\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" font-family=\"system-ui\">B</text><text x=\"155.0\" y=\"272.0\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" font-family=\"system-ui\">45 m</text><text x=\"50.1\" y=\"156.4\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"middle\" font-family=\"system-ui\">45 m</text><text x=\"222.0\" y=\"122.6\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" text-anchor=\"start\" font-family=\"system-ui\">63 m</text></svg>"
           }
+        },
+        {
+          "id": "barker2021-y11a-q11a",
+          "type": "mc",
+          "stem": "Convert 5 radians into degrees and minutes, rounded to the nearest minute.",
+          "difficulty": "easy",
+          "options": [
+            "\\(286^\\circ29'\\)",
+            "\\(286^\\circ48'\\)",
+            "\\(286^\\circ\\)",
+            "\\(573^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply radians by \\(\\dfrac{180}{\\pi}\\). The decimal part of a degree is converted with ×60.",
+          "steps": [
+            {
+              "explain": "Convert.",
+              "work": "\\(5\\times\\dfrac{180^\\circ}{\\pi}=286.479\\ldots^\\circ\\)"
+            },
+            {
+              "explain": "Minutes: \\(0.479\\times60=28.7\\), rounded to 29.",
+              "work": "\\(286^\\circ29'\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(286^\\circ48'\\) treats 0.48 as 48 minutes (a degree has 60 minutes, not 100).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Multiply by \\(\\dfrac{180}{\\pi}\\) then convert the decimal to minutes."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7323,6 +7365,159 @@
             "school": "Ascham School",
             "grade": "11",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-mc4",
+          "type": "mc",
+          "stem": "The following sector has an area of \\(10\\pi\\ \\text{cm}^2\\). What is the size of the angle \\(\\theta\\), subtended at its centre?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><line x1=\"70\" y1=\"150\" x2=\"110.2\" y2=\"273.6\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"110.2\" y2=\"26.4\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"110.2,273.6 115.3,271.8 120.4,269.8 125.4,267.6 130.2,265.2 135.0,262.6 139.7,259.8 144.2,256.7 148.6,253.5 152.9,250.2 157.0,246.6 161.0,242.9 164.8,239.0 168.4,234.9 171.9,230.7 175.2,226.4 178.3,221.9 181.2,217.3 183.9,212.6 186.4,207.8 188.8,202.9 190.9,197.9 192.8,192.8 194.5,187.6 195.9,182.3 197.2,177.0 198.2,171.7 199.0,166.3 199.5,160.9 199.9,155.4 200.0,150.0 199.9,144.6 199.5,139.1 199.0,133.7 198.2,128.3 197.2,123.0 195.9,117.7 194.5,112.4 192.8,107.2 190.9,102.1 188.8,97.1 186.4,92.2 183.9,87.4 181.2,82.7 178.3,78.1 175.2,73.6 171.9,69.3 168.4,65.1 164.8,61.0 161.0,57.1 157.0,53.4 152.9,49.8 148.6,46.5 144.2,43.3 139.7,40.2 135.0,37.4 130.2,34.8 125.4,32.4 120.4,30.2 115.3,28.2 110.2,26.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"84.4\" y1=\"213.7\" x2=\"95.8\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.8\" y1=\"90\" x2=\"84.4\" y2=\"86.3\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#1e293b\"/><polyline points=\"79.3,178.5 82.2,177.4 85,176 87.6,174.3 90.1,172.3 92.3,170.1 94.3,167.6 96,165 97.4,162.2 98.5,159.3 99.3,156.2 99.8,153.1 100,150 99.8,146.9 99.3,143.8 98.5,140.7 97.4,137.8 96,135 94.3,132.4 92.3,129.9 90.1,127.7 87.6,125.7 85,124 82.2,122.6 79.3,121.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"124\" y=\"155.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">θ</text><text x=\"116.7\" y=\"207.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5 cm</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{\\pi}{5}\\)",
+            "\\(\\dfrac{2\\pi}{5}\\)",
+            "\\(\\dfrac{4\\pi}{5}\\)",
+            "\\(2\\pi\\)"
+          ],
+          "answer": 2,
+          "hint": "Sector area formula (radians): \\(A=\\dfrac{1}{2}r^2\\theta\\). The tick marks show the radius is 5 cm.",
+          "steps": [
+            {
+              "explain": "Write the formula and substitute \\(A=10\\pi\\) and \\(r=5\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"100%\" height=\"auto\" style=\"max-width:320px;display:block;margin:0 auto\"><path d=\"M70.0,150.0 L110.2,273.6 L115.3,271.8 L120.4,269.8 L125.4,267.6 L130.2,265.2 L135.0,262.6 L139.7,259.8 L144.2,256.7 L148.6,253.5 L152.9,250.2 L157.0,246.6 L161.0,242.9 L164.8,239.0 L168.4,234.9 L171.9,230.7 L175.2,226.4 L178.3,221.9 L181.2,217.3 L183.9,212.6 L186.4,207.8 L188.8,202.9 L190.9,197.9 L192.8,192.8 L194.5,187.6 L195.9,182.3 L197.2,177.0 L198.2,171.7 L199.0,166.3 L199.5,160.9 L199.9,155.4 L200.0,150.0 L199.9,144.6 L199.5,139.1 L199.0,133.7 L198.2,128.3 L197.2,123.0 L195.9,117.7 L194.5,112.4 L192.8,107.2 L190.9,102.1 L188.8,97.1 L186.4,92.2 L183.9,87.4 L181.2,82.7 L178.3,78.1 L175.2,73.6 L171.9,69.3 L168.4,65.1 L164.8,61.0 L161.0,57.1 L157.0,53.4 L152.9,49.8 L148.6,46.5 L144.2,43.3 L139.7,40.2 L135.0,37.4 L130.2,34.8 L125.4,32.4 L120.4,30.2 L115.3,28.2 L110.2,26.4Z\" fill=\"#bfdbfe\" fill-opacity=\"0.7\" stroke=\"none\"/><line x1=\"70\" y1=\"150\" x2=\"110.2\" y2=\"273.6\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"110.2\" y2=\"26.4\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polyline points=\"110.2,273.6 115.3,271.8 120.4,269.8 125.4,267.6 130.2,265.2 135.0,262.6 139.7,259.8 144.2,256.7 148.6,253.5 152.9,250.2 157.0,246.6 161.0,242.9 164.8,239.0 168.4,234.9 171.9,230.7 175.2,226.4 178.3,221.9 181.2,217.3 183.9,212.6 186.4,207.8 188.8,202.9 190.9,197.9 192.8,192.8 194.5,187.6 195.9,182.3 197.2,177.0 198.2,171.7 199.0,166.3 199.5,160.9 199.9,155.4 200.0,150.0 199.9,144.6 199.5,139.1 199.0,133.7 198.2,128.3 197.2,123.0 195.9,117.7 194.5,112.4 192.8,107.2 190.9,102.1 188.8,97.1 186.4,92.2 183.9,87.4 181.2,82.7 178.3,78.1 175.2,73.6 171.9,69.3 168.4,65.1 164.8,61.0 161.0,57.1 157.0,53.4 152.9,49.8 148.6,46.5 144.2,43.3 139.7,40.2 135.0,37.4 130.2,34.8 125.4,32.4 120.4,30.2 115.3,28.2 110.2,26.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"84.4\" y1=\"213.7\" x2=\"95.8\" y2=\"210\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.8\" y1=\"90\" x2=\"84.4\" y2=\"86.3\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"150\" r=\"3.5\" fill=\"#1e293b\"/><polyline points=\"79.3,178.5 82.2,177.4 85,176 87.6,174.3 90.1,172.3 92.3,170.1 94.3,167.6 96,165 97.4,162.2 98.5,159.3 99.3,156.2 99.8,153.1 100,150 99.8,146.9 99.3,143.8 98.5,140.7 97.4,137.8 96,135 94.3,132.4 92.3,129.9 90.1,127.7 87.6,125.7 85,124 82.2,122.6 79.3,121.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"124\" y=\"155.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#b91c1c\">θ</text><text x=\"116.7\" y=\"207.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5 cm</text><text x=\"155\" y=\"155\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">10π cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(10\\pi=\\dfrac{1}{2}(5)^2\\theta=12.5\\theta\\)"
+            },
+            {
+              "explain": "Solve for \\(\\theta\\).",
+              "work": "\\(\\theta=\\dfrac{10\\pi}{12.5}=\\dfrac{4\\pi}{5}\\) → <span style=\"color:#047857;font-weight:700\">C</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "angle",
+              "note": "Sector area \\(A=\\dfrac{1}{2}r^2\\theta\\) with \\(\\theta\\) in radians."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14bi",
+          "type": "review",
+          "stem": "A circle has a radius of 6cm and centre \\(O\\). A chord \\(AB\\) has been drawn, such that it bisects the radius, as shown below. Show the size of \\(\\angle AOB\\) is \\(\\dfrac{2\\pi}{3}\\) radians.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polyline points=\"275.0,160.0 274.8,154.2 274.4,148.5 273.6,142.8 272.6,137.1 271.3,131.5 269.6,126.0 267.7,120.6 265.5,115.3 263.0,110.1 260.3,105.0 257.3,100.1 254.0,95.3 250.5,90.8 246.7,86.4 242.8,82.2 238.6,78.3 234.2,74.5 229.7,71.0 224.9,67.7 220.0,64.7 214.9,62.0 209.7,59.5 204.4,57.3 199.0,55.4 193.5,53.7 187.9,52.4 182.2,51.4 176.5,50.6 170.8,50.2 165.0,50.0 159.2,50.2 153.5,50.6 147.8,51.4 142.1,52.4 136.5,53.7 131.0,55.4 125.6,57.3 120.3,59.5 115.1,62.0 110.0,64.7 105.1,67.7 100.3,71.0 95.8,74.5 91.4,78.3 87.2,82.2 83.3,86.4 79.5,90.8 76.0,95.3 72.7,100.1 69.7,105.0 67.0,110.1 64.5,115.3 62.3,120.6 60.4,126.0 58.7,131.5 57.4,137.1 56.4,142.8 55.6,148.5 55.2,154.2 55.0,160.0 55.2,165.8 55.6,171.5 56.4,177.2 57.4,182.9 58.7,188.5 60.4,194.0 62.3,199.4 64.5,204.7 67.0,209.9 69.7,215.0 72.7,219.9 76.0,224.7 79.5,229.2 83.3,233.6 87.2,237.8 91.4,241.7 95.8,245.5 100.3,249.0 105.1,252.3 110.0,255.3 115.1,258.0 120.3,260.5 125.6,262.7 131.0,264.6 136.5,266.3 142.1,267.6 147.8,268.6 153.5,269.4 159.2,269.8 165.0,270.0 170.8,269.8 176.5,269.4 182.2,268.6 187.9,267.6 193.5,266.3 199.0,264.6 204.4,262.7 209.7,260.5 214.9,258.0 220.0,255.3 224.9,252.3 229.7,249.0 234.2,245.5 238.6,241.7 242.8,237.8 246.7,233.6 250.5,229.2 254.0,224.7 257.3,219.9 260.3,215.0 263.0,209.9 265.5,204.7 267.7,199.4 269.6,194.0 271.3,188.5 272.6,182.9 273.6,177.2 274.4,171.5 274.8,165.8 275.0,160.0 275.0,160.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><path d=\"M260.3,105.0 L257.3,100.1 L254.0,95.3 L250.5,90.8 L246.7,86.4 L242.8,82.2 L238.6,78.3 L234.2,74.5 L229.7,71.0 L224.9,67.7 L220.0,64.7 L214.9,62.0 L209.7,59.5 L204.4,57.3 L199.0,55.4 L193.5,53.7 L187.9,52.4 L182.2,51.4 L176.5,50.6 L170.8,50.2 L165.0,50.0 L159.2,50.2 L153.5,50.6 L147.8,51.4 L142.1,52.4 L136.5,53.7 L131.0,55.4 L125.6,57.3 L120.3,59.5 L115.1,62.0 L110.0,64.7 L105.1,67.7 L100.3,71.0 L95.8,74.5 L91.4,78.3 L87.2,82.2 L83.3,86.4 L79.5,90.8 L76.0,95.3 L72.7,100.1 L69.7,105.0Z\" fill=\"#d1d5db\" fill-opacity=\"0.8\" stroke=\"none\"/><line x1=\"69.7\" y1=\"105\" x2=\"260.3\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"160\" x2=\"165\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M165,114 L174,114 L174,105\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"165\" cy=\"160\" r=\"3\" fill=\"#1e293b\"/><text x=\"141\" y=\"136.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"141\" y=\"81.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"55.7\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"274.3\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"177\" y=\"174.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">O</text></svg>"
+          },
+          "answer": "Let X be the midpoint of AB (the foot of the perpendicular from O). In right-angled triangle OXB: OX = 3, OB = 6, so cos(∠XOB) = 3/6 = 1/2, giving ∠XOB = π/3. By symmetry ∠AOB = 2 × π/3 = 2π/3.",
+          "manual": true,
+          "hint": "Split the isosceles triangle AOB into two right-angled triangles with the perpendicular from O. The chord bisects the radius, so the adjacent side is 3 cm.",
+          "steps": [
+            {
+              "explain": "Drop the perpendicular from \\(O\\) to \\(AB\\) at \\(X\\): \\(OX=3\\) (half the radius) and \\(OB=6\\) (radius).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polyline points=\"275.0,160.0 274.8,154.2 274.4,148.5 273.6,142.8 272.6,137.1 271.3,131.5 269.6,126.0 267.7,120.6 265.5,115.3 263.0,110.1 260.3,105.0 257.3,100.1 254.0,95.3 250.5,90.8 246.7,86.4 242.8,82.2 238.6,78.3 234.2,74.5 229.7,71.0 224.9,67.7 220.0,64.7 214.9,62.0 209.7,59.5 204.4,57.3 199.0,55.4 193.5,53.7 187.9,52.4 182.2,51.4 176.5,50.6 170.8,50.2 165.0,50.0 159.2,50.2 153.5,50.6 147.8,51.4 142.1,52.4 136.5,53.7 131.0,55.4 125.6,57.3 120.3,59.5 115.1,62.0 110.0,64.7 105.1,67.7 100.3,71.0 95.8,74.5 91.4,78.3 87.2,82.2 83.3,86.4 79.5,90.8 76.0,95.3 72.7,100.1 69.7,105.0 67.0,110.1 64.5,115.3 62.3,120.6 60.4,126.0 58.7,131.5 57.4,137.1 56.4,142.8 55.6,148.5 55.2,154.2 55.0,160.0 55.2,165.8 55.6,171.5 56.4,177.2 57.4,182.9 58.7,188.5 60.4,194.0 62.3,199.4 64.5,204.7 67.0,209.9 69.7,215.0 72.7,219.9 76.0,224.7 79.5,229.2 83.3,233.6 87.2,237.8 91.4,241.7 95.8,245.5 100.3,249.0 105.1,252.3 110.0,255.3 115.1,258.0 120.3,260.5 125.6,262.7 131.0,264.6 136.5,266.3 142.1,267.6 147.8,268.6 153.5,269.4 159.2,269.8 165.0,270.0 170.8,269.8 176.5,269.4 182.2,268.6 187.9,267.6 193.5,266.3 199.0,264.6 204.4,262.7 209.7,260.5 214.9,258.0 220.0,255.3 224.9,252.3 229.7,249.0 234.2,245.5 238.6,241.7 242.8,237.8 246.7,233.6 250.5,229.2 254.0,224.7 257.3,219.9 260.3,215.0 263.0,209.9 265.5,204.7 267.7,199.4 269.6,194.0 271.3,188.5 272.6,182.9 273.6,177.2 274.4,171.5 274.8,165.8 275.0,160.0 275.0,160.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><path d=\"M260.3,105.0 L257.3,100.1 L254.0,95.3 L250.5,90.8 L246.7,86.4 L242.8,82.2 L238.6,78.3 L234.2,74.5 L229.7,71.0 L224.9,67.7 L220.0,64.7 L214.9,62.0 L209.7,59.5 L204.4,57.3 L199.0,55.4 L193.5,53.7 L187.9,52.4 L182.2,51.4 L176.5,50.6 L170.8,50.2 L165.0,50.0 L159.2,50.2 L153.5,50.6 L147.8,51.4 L142.1,52.4 L136.5,53.7 L131.0,55.4 L125.6,57.3 L120.3,59.5 L115.1,62.0 L110.0,64.7 L105.1,67.7 L100.3,71.0 L95.8,74.5 L91.4,78.3 L87.2,82.2 L83.3,86.4 L79.5,90.8 L76.0,95.3 L72.7,100.1 L69.7,105.0Z\" fill=\"#bfdbfe\" fill-opacity=\"0.8\" stroke=\"none\"/><line x1=\"69.7\" y1=\"105\" x2=\"260.3\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"160\" x2=\"165\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M165,114 L174,114 L174,105\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"165\" cy=\"160\" r=\"3\" fill=\"#1e293b\"/><line x1=\"165\" y1=\"160\" x2=\"260.3\" y2=\"105\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"160\" x2=\"69.7\" y2=\"105\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"185.8,148 184.7,146.2 183.4,144.6 182,143 180.4,141.6 178.8,140.3 177,139.2 175.1,138.2 173.2,137.4 171.2,136.8 169.2,136.4 167.1,136.1 165,136 162.9,136.1 160.8,136.4 158.8,136.8 156.8,137.4 154.9,138.2 153,139.2 151.2,140.3 149.6,141.6 148,143 146.6,144.6 145.3,146.2 144.2,148\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\"/><text x=\"199\" y=\"136.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"141\" y=\"81.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"55.7\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"274.3\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"177\" y=\"174.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"117\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">120°</text></svg>"
+              }
+            },
+            {
+              "explain": "In right-angled triangle \\(OXB\\).",
+              "work": "\\(\\cos\\angle XOB=\\dfrac{OX}{OB}=\\dfrac{3}{6}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Inverse cosine.",
+              "work": "\\(\\angle XOB=\\dfrac{\\pi}{3}\\ (60^\\circ)\\)"
+            },
+            {
+              "explain": "The perpendicular bisects the angle at the centre (isosceles triangle), so.",
+              "work": "\\(\\angle AOB=2\\times\\dfrac{\\pi}{3}=\\dfrac{2\\pi}{3}\\) ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show the size",
+              "note": "Use cosine in the right-angled triangle, then double."
+            },
+            {
+              "text": "bisects the radius",
+              "note": "The chord is 3 cm from the centre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "barker2021-y11a-q14bii",
+          "type": "mc",
+          "stem": "A circle has a radius of 6cm and centre \\(O\\). A chord \\(AB\\) subtends an angle of \\(\\dfrac{2\\pi}{3}\\) at the centre. Calculate the area of the shaded minor segment to 2 decimal places.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polyline points=\"275.0,160.0 274.8,154.2 274.4,148.5 273.6,142.8 272.6,137.1 271.3,131.5 269.6,126.0 267.7,120.6 265.5,115.3 263.0,110.1 260.3,105.0 257.3,100.1 254.0,95.3 250.5,90.8 246.7,86.4 242.8,82.2 238.6,78.3 234.2,74.5 229.7,71.0 224.9,67.7 220.0,64.7 214.9,62.0 209.7,59.5 204.4,57.3 199.0,55.4 193.5,53.7 187.9,52.4 182.2,51.4 176.5,50.6 170.8,50.2 165.0,50.0 159.2,50.2 153.5,50.6 147.8,51.4 142.1,52.4 136.5,53.7 131.0,55.4 125.6,57.3 120.3,59.5 115.1,62.0 110.0,64.7 105.1,67.7 100.3,71.0 95.8,74.5 91.4,78.3 87.2,82.2 83.3,86.4 79.5,90.8 76.0,95.3 72.7,100.1 69.7,105.0 67.0,110.1 64.5,115.3 62.3,120.6 60.4,126.0 58.7,131.5 57.4,137.1 56.4,142.8 55.6,148.5 55.2,154.2 55.0,160.0 55.2,165.8 55.6,171.5 56.4,177.2 57.4,182.9 58.7,188.5 60.4,194.0 62.3,199.4 64.5,204.7 67.0,209.9 69.7,215.0 72.7,219.9 76.0,224.7 79.5,229.2 83.3,233.6 87.2,237.8 91.4,241.7 95.8,245.5 100.3,249.0 105.1,252.3 110.0,255.3 115.1,258.0 120.3,260.5 125.6,262.7 131.0,264.6 136.5,266.3 142.1,267.6 147.8,268.6 153.5,269.4 159.2,269.8 165.0,270.0 170.8,269.8 176.5,269.4 182.2,268.6 187.9,267.6 193.5,266.3 199.0,264.6 204.4,262.7 209.7,260.5 214.9,258.0 220.0,255.3 224.9,252.3 229.7,249.0 234.2,245.5 238.6,241.7 242.8,237.8 246.7,233.6 250.5,229.2 254.0,224.7 257.3,219.9 260.3,215.0 263.0,209.9 265.5,204.7 267.7,199.4 269.6,194.0 271.3,188.5 272.6,182.9 273.6,177.2 274.4,171.5 274.8,165.8 275.0,160.0 275.0,160.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><path d=\"M260.3,105.0 L257.3,100.1 L254.0,95.3 L250.5,90.8 L246.7,86.4 L242.8,82.2 L238.6,78.3 L234.2,74.5 L229.7,71.0 L224.9,67.7 L220.0,64.7 L214.9,62.0 L209.7,59.5 L204.4,57.3 L199.0,55.4 L193.5,53.7 L187.9,52.4 L182.2,51.4 L176.5,50.6 L170.8,50.2 L165.0,50.0 L159.2,50.2 L153.5,50.6 L147.8,51.4 L142.1,52.4 L136.5,53.7 L131.0,55.4 L125.6,57.3 L120.3,59.5 L115.1,62.0 L110.0,64.7 L105.1,67.7 L100.3,71.0 L95.8,74.5 L91.4,78.3 L87.2,82.2 L83.3,86.4 L79.5,90.8 L76.0,95.3 L72.7,100.1 L69.7,105.0Z\" fill=\"#d1d5db\" fill-opacity=\"0.8\" stroke=\"none\"/><line x1=\"69.7\" y1=\"105\" x2=\"260.3\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"160\" x2=\"165\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M165,114 L174,114 L174,105\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"165\" cy=\"160\" r=\"3\" fill=\"#1e293b\"/><text x=\"141\" y=\"136.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"141\" y=\"81.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"55.7\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"274.3\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"177\" y=\"174.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">O</text></svg>"
+          },
+          "options": [
+            "\\(22.11\\ \\text{cm}^2\\)",
+            "\\(37.70\\ \\text{cm}^2\\)",
+            "\\(15.59\\ \\text{cm}^2\\)",
+            "\\(53.29\\ \\text{cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Minor segment = area of the minor sector − area of triangle \\(AOB\\).",
+          "steps": [
+            {
+              "explain": "Area of the sector.",
+              "work": "\\(A_{sector}=\\dfrac{1}{2}r^2\\theta=\\dfrac{1}{2}(36)\\left(\\dfrac{2\\pi}{3}\\right)=12\\pi=37.70\\)"
+            },
+            {
+              "explain": "Area of the triangle (two sides and the included angle).",
+              "work": "\\(A_{triangle}=\\dfrac{1}{2}(6)(6)\\sin\\dfrac{2\\pi}{3}=18\\times\\dfrac{\\sqrt{3}}{2}=9\\sqrt{3}=15.59\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polyline points=\"275.0,160.0 274.8,154.2 274.4,148.5 273.6,142.8 272.6,137.1 271.3,131.5 269.6,126.0 267.7,120.6 265.5,115.3 263.0,110.1 260.3,105.0 257.3,100.1 254.0,95.3 250.5,90.8 246.7,86.4 242.8,82.2 238.6,78.3 234.2,74.5 229.7,71.0 224.9,67.7 220.0,64.7 214.9,62.0 209.7,59.5 204.4,57.3 199.0,55.4 193.5,53.7 187.9,52.4 182.2,51.4 176.5,50.6 170.8,50.2 165.0,50.0 159.2,50.2 153.5,50.6 147.8,51.4 142.1,52.4 136.5,53.7 131.0,55.4 125.6,57.3 120.3,59.5 115.1,62.0 110.0,64.7 105.1,67.7 100.3,71.0 95.8,74.5 91.4,78.3 87.2,82.2 83.3,86.4 79.5,90.8 76.0,95.3 72.7,100.1 69.7,105.0 67.0,110.1 64.5,115.3 62.3,120.6 60.4,126.0 58.7,131.5 57.4,137.1 56.4,142.8 55.6,148.5 55.2,154.2 55.0,160.0 55.2,165.8 55.6,171.5 56.4,177.2 57.4,182.9 58.7,188.5 60.4,194.0 62.3,199.4 64.5,204.7 67.0,209.9 69.7,215.0 72.7,219.9 76.0,224.7 79.5,229.2 83.3,233.6 87.2,237.8 91.4,241.7 95.8,245.5 100.3,249.0 105.1,252.3 110.0,255.3 115.1,258.0 120.3,260.5 125.6,262.7 131.0,264.6 136.5,266.3 142.1,267.6 147.8,268.6 153.5,269.4 159.2,269.8 165.0,270.0 170.8,269.8 176.5,269.4 182.2,268.6 187.9,267.6 193.5,266.3 199.0,264.6 204.4,262.7 209.7,260.5 214.9,258.0 220.0,255.3 224.9,252.3 229.7,249.0 234.2,245.5 238.6,241.7 242.8,237.8 246.7,233.6 250.5,229.2 254.0,224.7 257.3,219.9 260.3,215.0 263.0,209.9 265.5,204.7 267.7,199.4 269.6,194.0 271.3,188.5 272.6,182.9 273.6,177.2 274.4,171.5 274.8,165.8 275.0,160.0 275.0,160.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><path d=\"M260.3,105.0 L257.3,100.1 L254.0,95.3 L250.5,90.8 L246.7,86.4 L242.8,82.2 L238.6,78.3 L234.2,74.5 L229.7,71.0 L224.9,67.7 L220.0,64.7 L214.9,62.0 L209.7,59.5 L204.4,57.3 L199.0,55.4 L193.5,53.7 L187.9,52.4 L182.2,51.4 L176.5,50.6 L170.8,50.2 L165.0,50.0 L159.2,50.2 L153.5,50.6 L147.8,51.4 L142.1,52.4 L136.5,53.7 L131.0,55.4 L125.6,57.3 L120.3,59.5 L115.1,62.0 L110.0,64.7 L105.1,67.7 L100.3,71.0 L95.8,74.5 L91.4,78.3 L87.2,82.2 L83.3,86.4 L79.5,90.8 L76.0,95.3 L72.7,100.1 L69.7,105.0Z\" fill=\"#bfdbfe\" fill-opacity=\"0.8\" stroke=\"none\"/><line x1=\"69.7\" y1=\"105\" x2=\"260.3\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"160\" x2=\"165\" y2=\"105\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M165,114 L174,114 L174,105\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"165\" cy=\"160\" r=\"3\" fill=\"#1e293b\"/><line x1=\"165\" y1=\"160\" x2=\"260.3\" y2=\"105\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"165\" y1=\"160\" x2=\"69.7\" y2=\"105\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"185.8,148 184.7,146.2 183.4,144.6 182,143 180.4,141.6 178.8,140.3 177,139.2 175.1,138.2 173.2,137.4 171.2,136.8 169.2,136.4 167.1,136.1 165,136 162.9,136.1 160.8,136.4 158.8,136.8 156.8,137.4 154.9,138.2 153,139.2 151.2,140.3 149.6,141.6 148,143 146.6,144.6 145.3,146.2 144.2,148\" fill=\"none\" stroke=\"#059669\" stroke-width=\"1.8\"/><text x=\"199\" y=\"136.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"141\" y=\"81.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">3cm</text><text x=\"55.7\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"274.3\" y=\"103.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"177\" y=\"174.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">O</text><text x=\"117\" y=\"144\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">120°</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(12\\pi-9\\sqrt{3}=22.11\\ \\text{cm}^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(53.29\\) ADDS the triangle (that would be the segment plus two triangles).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "area of the shaded minor segment",
+              "note": "Sector minus triangle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
+            "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "The printed worked solution writes 18π for the sector area (typo); the correct value is 12π ≈ 37.70, and the final answer 22.11 is unchanged."
           }
         }
       ]
