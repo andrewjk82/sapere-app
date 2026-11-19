@@ -184,6 +184,10 @@ common-mistake questions (one target mistake each, with a "Common mistake" line 
 bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say so and, where sensible, build
 (1) from questions of the related chapters instead.
 
+**Paper size from 2026-11-19 (user request, overrides the 25/25/25/20 counts above):** every paper in the
+four-paper set has **35 questions** — verbatim, new hard, common mistakes and multi-step. If the bank cannot
+supply 35 distinct verbatim questions, say so and fill from related chapters or report the shortfall.
+
 **Printable-paper wording and layout rules (2026-11-07, after review feedback — apply to every paper, never needs repeating):**
 
 - **Be self-contained: no term or formula a student has not been taught.** If a question uses a concept
