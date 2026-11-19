@@ -630,7 +630,7 @@
           "type": "review",
           "stem": "Consider the polynomial \\(\\psi_n(x)=x^{4n+1}+(x+1)^{2n-1}\\), where \\(n\\) is a positive integer. Show that \\(\\psi_n(\\omega)=0\\) and that \\(\\psi_n\\left(\\omega^2\\right)=0\\).",
           "difficulty": "hard",
-          "answer": "Use 1 + ω + ω² = 0 and ω³ = 1. ω + 1 = −ω²; so ψ(ω) = ω^{4n+1} + (−ω²)^{2n−1} = ω^{4n+1} − ω^{4n−2} = ω^{4n−2}(ω³ − 1) = 0. For ω²: ω² + 1 = −ω; ψ(ω²) = ω^{8n+2} + (−ω)^{2n−1} = ω^{8n+2} − ω^{2n−1} = ω^{2n−1}(ω^{6n+3} − 1) = ω^{2n−1}((ω³)^{2n+1} − 1) = 0.",
+          "answer": "Use \\(1+\\omega+\\omega^2=0\\) and \\(\\omega^3=1\\). Then \\(\\omega+1=-\\omega^2\\), so \\(\\psi_n(\\omega)=\\omega^{4n+1}+\\left(-\\omega^2\\right)^{2n-1}=\\omega^{4n+1}-\\omega^{4n-2}=\\omega^{4n-2}\\left(\\omega^3-1\\right)=0\\). For \\(\\omega^2\\): \\(\\omega^2+1=-\\omega\\), so \\(\\psi_n\\left(\\omega^2\\right)=\\omega^{8n+2}+(-\\omega)^{2n-1}=\\omega^{8n+2}-\\omega^{2n-1}=\\omega^{2n-1}\\left(\\omega^{6n+3}-1\\right)=\\omega^{2n-1}\\left(\\left(\\omega^3\\right)^{2n+1}-1\\right)=0\\).",
           "manual": true,
           "hint": "Use \\(\\omega+1=-\\omega^2\\) (from part (i)) and \\(\\omega^3=1\\) to reduce the powers.",
           "steps": [
@@ -672,7 +672,7 @@
           "type": "review",
           "stem": "Hence, show that \\(x^2+x+1\\) is a factor of \\(\\psi_n(x)=x^{4n+1}+(x+1)^{2n-1}\\).",
           "difficulty": "medium",
-          "answer": "x² + x + 1 = 0 has roots ω and ω² (the non-real cube roots of unity). Both are zeros of ψ_n(x) (part ii), and ψ_n has real coefficients, so (x − ω)(x − ω²) = x² + x + 1 divides ψ_n(x) with no remainder.",
+          "answer": "\\(x^2+x+1=0\\) has roots \\(\\omega\\) and \\(\\omega^2\\) (the non-real cube roots of unity). Both are zeros of \\(\\psi_n(x)\\) (part ii), and \\(\\psi_n\\) has real coefficients, so \\((x-\\omega)\\left(x-\\omega^2\\right)=x^2+x+1\\) divides \\(\\psi_n(x)\\) with no remainder.",
           "manual": true,
           "hint": "The roots of \\(x^2+x+1=0\\) are \\(\\omega\\) and \\(\\omega^2\\). If both are zeros of \\(\\psi_n\\), then the quadratic is a factor.",
           "steps": [
@@ -2102,7 +2102,7 @@
               "work": "\\(e^{i(-\\theta)}=\\cos(-\\theta)+i\\sin(-\\theta)\\)"
             },
             {
-              "explain": "Even/odd properties.",
+              "explain": "Even and odd properties.",
               "work": "\\(\\cos(-\\theta)=\\cos\\theta,\\qquad\\sin(-\\theta)=-\\sin\\theta\\)"
             },
             {
@@ -2130,7 +2130,7 @@
           "type": "review",
           "stem": "Using \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\) and \\(e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\), hence show that \\(\\cos\\theta=\\dfrac{1}{2}\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\).",
           "difficulty": "easy",
-          "answer": "Add the two results: e^{iθ} + e^{−iθ} = (cosθ + i sinθ) + (cosθ − i sinθ) = 2cosθ. Divide by 2: cosθ = ½(e^{iθ} + e^{−iθ}).",
+          "answer": "Add the two results: \\(e^{i\\theta}+e^{-i\\theta}=(\\cos\\theta+i\\sin\\theta)+(\\cos\\theta-i\\sin\\theta)=2\\cos\\theta\\). Divide by 2: \\(\\cos\\theta=\\dfrac{1}{2}\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\).",
           "manual": true,
           "hint": "Add the two expressions so the imaginary parts cancel.",
           "steps": [
@@ -2168,7 +2168,7 @@
           "type": "review",
           "stem": "Use the result \\(\\cos\\theta=\\dfrac{1}{2}\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\) to show \\(\\cos^3\\theta=\\dfrac{1}{4}\\cos3\\theta+\\dfrac{3}{4}\\cos\\theta\\).",
           "difficulty": "medium",
-          "answer": "cos³θ = ⅛(e^{iθ} + e^{−iθ})³ = ⅛(e^{3iθ} + 3e^{iθ} + 3e^{−iθ} + e^{−3iθ}) = ⅛[(e^{3iθ} + e^{−3iθ}) + 3(e^{iθ} + e^{−iθ})] = ⅛[2cos3θ + 6cosθ] = ¼cos3θ + ¾cosθ.",
+          "answer": "\\(\\cos^3\\theta=\\dfrac{1}{8}\\left(e^{i\\theta}+e^{-i\\theta}\\right)^3=\\dfrac{1}{8}\\left(e^{3i\\theta}+3e^{i\\theta}+3e^{-i\\theta}+e^{-3i\\theta}\\right)=\\dfrac{1}{8}\\left[\\left(e^{3i\\theta}+e^{-3i\\theta}\\right)+3\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\right]=\\dfrac{1}{8}\\left[2\\cos3\\theta+6\\cos\\theta\\right]=\\dfrac{1}{4}\\cos3\\theta+\\dfrac{3}{4}\\cos\\theta\\).",
           "manual": true,
           "hint": "Cube the exponential form of \\(\\cos\\theta\\) using the binomial expansion, then pair up the terms that are conjugates.",
           "steps": [
@@ -3504,7 +3504,7 @@
           "type": "review",
           "stem": "Let \\(\\omega\\) be a cube root of unity where \\(\\omega\\neq1\\). Show that \\(1+\\omega+\\omega^2=0\\).",
           "difficulty": "medium",
-          "answer": "ω is a root of z³ − 1 = 0 = (z − 1)(z² + z + 1). Since ω ≠ 1, ω is a root of z² + z + 1 = 0, so 1 + ω + ω² = 0. (Or: the sum of the roots 1, ω, ω² of z³ − 1 = 0 is 0.)",
+          "answer": "\\(\\omega\\) is a root of \\(z^3-1=0=(z-1)\\left(z^2+z+1\\right)\\). Since \\(\\omega\\neq1\\), \\(\\omega\\) is a root of \\(z^2+z+1=0\\), so \\(1+\\omega+\\omega^2=0\\). (Or: the sum of the roots \\(1,\\ \\omega,\\ \\omega^2\\) of \\(z^3-1=0\\) is 0.)",
           "manual": true,
           "hint": "Factorise \\(z^3-1\\) and decide which factor \\(\\omega\\) satisfies.",
           "steps": [

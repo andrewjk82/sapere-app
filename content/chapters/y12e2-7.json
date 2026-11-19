@@ -383,7 +383,7 @@
           "type": "review",
           "stem": "A rocket is fired vertically from the Earth's surface with initial speed \\(V\\ \\text{ms}^{-1}\\). Assuming negligible air resistance, the acceleration experienced by the rocket is inversely proportional to the square of the distance from the centre of the earth and is directed towards the centre of the Earth. Show that an expression for the velocity, \\(v\\), of the rocket is given by \\(v^2=\\dfrac{2k}{x}+V^2-\\dfrac{2k}{R}\\) where \\(k\\) is the constant of proportionality and \\(R\\) is the distance from the Earth's centre to the surface.",
           "difficulty": "hard",
-          "answer": "a = −k/x² (towards the centre). v dv/dx = −k/x² ⇒ d(v²/2)/dx = −k/x² ⇒ v²/2 = k/x + C. At x = R, v = V: C = V²/2 − k/R. So v² = 2k/x + V² − 2k/R.",
+          "answer": "\\(a=-\\dfrac{k}{x^2}\\) (towards the centre). \\(v\\dfrac{dv}{dx}=-\\dfrac{k}{x^2}\\ \\Rightarrow\\ \\dfrac{d}{dx}\\left(\\dfrac{1}{2}v^2\\right)=-\\dfrac{k}{x^2}\\ \\Rightarrow\\ \\dfrac{1}{2}v^2=\\dfrac{k}{x}+C\\). At \\(x=R\\), \\(v=V\\): \\(C=\\dfrac{V^2}{2}-\\dfrac{k}{R}\\). So \\(v^2=\\dfrac{2k}{x}+V^2-\\dfrac{2k}{R}\\).",
           "manual": true,
           "hint": "Use \\(\\ddot{x}=v\\dfrac{dv}{dx}=\\dfrac{d}{dx}\\left(\\dfrac{1}{2}v^2\\right)\\) with \\(\\ddot{x}=-\\dfrac{k}{x^2}\\) (negative: towards the Earth).",
           "steps": [
@@ -429,7 +429,7 @@
           "type": "review",
           "stem": "For a rocket with \\(v^2=\\dfrac{2k}{x}+V^2-\\dfrac{2k}{R}\\), show that at the Earth's surface \\(v=\\sqrt{\\dfrac{2gR^2}{x}+V^2-2gR}\\), where \\(g\\) is the acceleration due to gravity.",
           "difficulty": "medium",
-          "answer": "At the Earth's surface x = R the acceleration is g downwards: g = k/R², so k = gR². Substitute: v² = 2gR²/x + V² − 2gR²/R = 2gR²/x + V² − 2gR. So v = √(2gR²/x + V² − 2gR).",
+          "answer": "At the Earth's surface \\(x=R\\) the acceleration is \\(g\\) downwards: \\(g=\\dfrac{k}{R^2}\\), so \\(k=gR^2\\). Substitute: \\(v^2=\\dfrac{2gR^2}{x}+V^2-\\dfrac{2gR^2}{R}=\\dfrac{2gR^2}{x}+V^2-2gR\\). So \\(v=\\sqrt{\\dfrac{2gR^2}{x}+V^2-2gR}\\).",
           "manual": true,
           "hint": "At the surface \\(x=R\\) the acceleration is \\(g\\). Use it to write \\(k\\) in terms of \\(g\\) and \\(R\\).",
           "steps": [
@@ -2213,7 +2213,7 @@
           "type": "review",
           "stem": "A swimmer in a pool stops swimming and is slowed with a resistive force \\(R=-mk\\left(v_0+v^2\\right)\\), where \\(m\\) is the mass of the swimmer, \\(v_0\\) is the velocity of the swimmer when she stops swimming, \\(x\\) is the distance, \\(t\\) is the time and \\(v\\) is the velocity of the swimmer after she stops swimming. Show that the distance before the swimmer comes to rest is \\(x=\\dfrac{1}{2k}\\ln\\left(1+v_0\\right)\\).",
           "difficulty": "hard",
-          "answer": "m v dv/dx = −mk(v₀ + v²) ⇒ v/(v₀ + v²) dv = −k dx ⇒ ½ln(v₀ + v²) = −kx + C. At x = 0, v = v₀: C = ½ln(v₀ + v₀²). At rest v = 0: ½ln v₀ = −kx + ½ln(v₀ + v₀²) ⇒ x = (1/2k) ln((v₀ + v₀²)/v₀) = (1/2k) ln(1 + v₀).",
+          "answer": "\\(mv\\dfrac{dv}{dx}=-mk\\left(v_0+v^2\\right)\\ \\Rightarrow\\ \\dfrac{v}{v_0+v^2}dv=-k\\,dx\\ \\Rightarrow\\ \\dfrac{1}{2}\\ln\\left(v_0+v^2\\right)=-kx+C\\). At \\(x=0\\), \\(v=v_0\\): \\(C=\\dfrac{1}{2}\\ln\\left(v_0+v_0^2\\right)\\). At rest \\(v=0\\): \\(\\dfrac{1}{2}\\ln v_0=-kx+\\dfrac{1}{2}\\ln\\left(v_0+v_0^2\\right)\\ \\Rightarrow\\ x=\\dfrac{1}{2k}\\ln\\dfrac{v_0+v_0^2}{v_0}=\\dfrac{1}{2k}\\ln\\left(1+v_0\\right)\\).",
           "manual": true,
           "hint": "Use \\(\\ddot{x}=v\\dfrac{dv}{dx}\\) to get a differential equation in \\(v\\) and \\(x\\). Separate the variables.",
           "steps": [
@@ -2259,7 +2259,7 @@
           "type": "review",
           "stem": "The swimmer is slowed by the resistive force \\(R=-mk\\left(v_0+v^2\\right)\\). Show that the time \\(t\\) after she stops swimming is given by \\(t=\\dfrac{1}{k\\sqrt{v_0}}\\tan^{-1}\\left(\\dfrac{v_0-v}{(1+v)\\sqrt{v_0}}\\right)\\).",
           "difficulty": "hard",
-          "answer": "dv/dt = −k(v₀ + v²) ⇒ ∫dv/(v₀ + v²) = −kt + C ⇒ (1/√v₀)tan⁻¹(v/√v₀) = −kt + C. At t = 0, v = v₀: C = (1/√v₀)tan⁻¹(√v₀). So t = (1/(k√v₀))[tan⁻¹√v₀ − tan⁻¹(v/√v₀)] = (1/(k√v₀))tan⁻¹((√v₀ − v/√v₀)/(1 + v)) using tan⁻¹a − tan⁻¹b = tan⁻¹((a−b)/(1+ab)) with ab = v. Simplifying the fraction gives (v₀ − v)/((1+v)√v₀).",
+          "answer": "\\(\\dfrac{dv}{dt}=-k\\left(v_0+v^2\\right)\\ \\Rightarrow\\ \\int\\dfrac{dv}{v_0+v^2}=-kt+C\\ \\Rightarrow\\ \\dfrac{1}{\\sqrt{v_0}}\\tan^{-1}\\left(\\dfrac{v}{\\sqrt{v_0}}\\right)=-kt+C\\). At \\(t=0\\), \\(v=v_0\\): \\(C=\\dfrac{1}{\\sqrt{v_0}}\\tan^{-1}\\left(\\sqrt{v_0}\\right)\\). So \\(t=\\dfrac{1}{k\\sqrt{v_0}}\\left[\\tan^{-1}\\sqrt{v_0}-\\tan^{-1}\\left(\\dfrac{v}{\\sqrt{v_0}}\\right)\\right]=\\dfrac{1}{k\\sqrt{v_0}}\\tan^{-1}\\left(\\dfrac{\\sqrt{v_0}-\\dfrac{v}{\\sqrt{v_0}}}{1+v}\\right)\\) using \\(\\tan^{-1}a-\\tan^{-1}b=\\tan^{-1}\\left(\\dfrac{a-b}{1+ab}\\right)\\) with \\(ab=v\\). Simplifying the fraction gives \\(\\dfrac{v_0-v}{(1+v)\\sqrt{v_0}}\\).",
           "manual": true,
           "hint": "Separate \\(\\dfrac{dv}{dt}=-k\\left(v_0+v^2\\right)\\), integrate to an inverse tangent, then combine two inverse tangents with the difference formula.",
           "steps": [
@@ -3253,7 +3253,7 @@
           "type": "review",
           "stem": "From a horizontal plane the path of a particle projected at an angle \\(\\alpha\\) is given by the vector \\(\\underset{\\sim}{r}(t)=Vt\\cos\\alpha\\underset{\\sim}{i}+\\left(Vt\\sin\\alpha-\\dfrac{gt^2}{2}\\right)\\underset{\\sim}{j}\\) where \\(V\\ \\text{ms}^{-1}\\) is the initial projection speed, \\(t\\) is the time in seconds and \\(g\\) is the acceleration due to gravity. Show that the Cartesian path of the particle is given by \\(y=x\\tan\\alpha-\\dfrac{gx^2\\sec^2\\alpha}{2V^2}\\).",
           "difficulty": "medium",
-          "answer": "x = Vt cosα ⇒ t = x/(V cosα). Substitute into y = Vt sinα − gt²/2: y = x tanα − g x²/(2V² cos²α) = x tanα − g x² sec²α/(2V²).",
+          "answer": "\\(x=Vt\\cos\\alpha\\ \\Rightarrow\\ t=\\dfrac{x}{V\\cos\\alpha}\\). Substitute into \\(y=Vt\\sin\\alpha-\\dfrac{gt^2}{2}\\): \\(y=x\\tan\\alpha-\\dfrac{gx^2}{2V^2\\cos^2\\alpha}=x\\tan\\alpha-\\dfrac{gx^2\\sec^2\\alpha}{2V^2}\\).",
           "manual": true,
           "hint": "Eliminate \\(t\\): make \\(t\\) the subject of the \\(x\\)-equation and substitute into \\(y\\).",
           "steps": [
@@ -3291,7 +3291,7 @@
           "type": "review",
           "stem": "A vertical wall is a distance \\(d\\) metres from the origin. Show that if \\(d<\\dfrac{V^2}{g}\\) the particle will strike the wall provided that \\(\\beta<\\alpha<\\dfrac{\\pi}{2}-\\beta\\), where \\(\\beta=\\dfrac{1}{2}\\sin^{-1}\\left(\\dfrac{gd}{V^2}\\right)\\).",
           "difficulty": "hard",
-          "answer": "The particle reaches the wall if its height at x = d is non-negative: d tanα − g d² sec²α/(2V²) ≥ 0 ⇒ tanα ≥ g d sec²α/(2V²) ⇒ 2V² sinα cosα ≥ g d ⇒ sin2α ≥ gd/V². Since gd/V² < 1, sin⁻¹(gd/V²) = 2β exists with 0 < 2β < π/2, and sin2α ≥ sin2β holds for 2β ≤ 2α ≤ π − 2β, i.e. β ≤ α ≤ π/2 − β.",
+          "answer": "The particle reaches the wall if its height at \\(x=d\\) is non-negative: \\(d\\tan\\alpha-\\dfrac{gd^2\\sec^2\\alpha}{2V^2}\\geq0\\ \\Rightarrow\\ \\tan\\alpha\\geq\\dfrac{gd\\sec^2\\alpha}{2V^2}\\ \\Rightarrow\\ 2V^2\\sin\\alpha\\cos\\alpha\\geq gd\\ \\Rightarrow\\ \\sin2\\alpha\\geq\\dfrac{gd}{V^2}\\). Since \\(\\dfrac{gd}{V^2}<1\\), \\(\\sin^{-1}\\left(\\dfrac{gd}{V^2}\\right)=2\\beta\\) exists with \\(0<2\\beta<\\dfrac{\\pi}{2}\\), and \\(\\sin2\\alpha\\geq\\sin2\\beta\\) holds for \\(2\\beta\\leq2\\alpha\\leq\\pi-2\\beta\\), i.e. \\(\\beta\\leq\\alpha\\leq\\dfrac{\\pi}{2}-\\beta\\).",
           "manual": true,
           "hint": "Strike the wall means the height at \\(x=d\\) is not below the ground: \\(y\\geq0\\) when \\(x=d\\). Simplify to a condition on \\(\\sin2\\alpha\\).",
           "steps": [
@@ -3912,7 +3912,7 @@
           "type": "review",
           "stem": "Frank decides to go bungee-jumping. Frank falls, from rest, off a bridge attached by an elastic cable of length \\(l\\) metres. After Frank falls \\(l\\) metres he is slowed by the cable which exerts a force of \\(mgk(x-l)\\), where \\(m\\) is his mass in kilograms, \\(g\\) is the constant acceleration due to gravity in \\(\\text{ms}^{-2}\\), \\(k\\) is the constant of proportionality. Let \\(x\\) m be the distance Frank has fallen and let \\(v\\ \\text{ms}^{-1}\\) be his speed at \\(x\\). There is negligible air resistance for the duration of Frank's jump. Show that \\(v^2=2gx-kg(x-l)^2\\) for \\(x>l\\).",
           "difficulty": "hard",
-          "answer": "For x > l, net downward force: mg − mgk(x − l), so ẍ = g − gk(x − l). v dv/dx = g − gk(x − l) ⇒ ½v² = gx − ½gk(x − l)² + C. At x = l, free fall from rest gave v² = 2gl, so ½(2gl) = gl − 0 + C ⇒ C = 0. Hence v² = 2gx − gk(x − l)².",
+          "answer": "For \\(x>l\\), net downward force: \\(mg-mgk(x-l)\\), so \\(\\ddot{x}=g-gk(x-l)\\). \\(v\\dfrac{dv}{dx}=g-gk(x-l)\\ \\Rightarrow\\ \\dfrac{1}{2}v^2=gx-\\dfrac{1}{2}gk(x-l)^2+C\\). At \\(x=l\\), free fall from rest gave \\(v^2=2gl\\), so \\(\\dfrac{1}{2}(2gl)=gl-0+C\\ \\Rightarrow\\ C=0\\). Hence \\(v^2=2gx-gk(x-l)^2\\).",
           "manual": true,
           "hint": "Net force on Frank (taking downward as positive): weight \\(mg\\) down and the cable force \\(mgk(x-l)\\) up. Use \\(\\ddot{x}=v\\dfrac{dv}{dx}\\).",
           "steps": [
@@ -3954,7 +3954,7 @@
           "type": "review",
           "stem": "Frank's speed satisfies \\(v^2=2gx-kg(x-l)^2\\) for \\(x>l\\). Show that Frank's fall is first halted at \\(x=l+\\dfrac{1}{k}+\\sqrt{\\dfrac{2l}{k}+\\dfrac{1}{k^2}}\\).",
           "difficulty": "hard",
-          "answer": "Halted: v = 0 ⇒ 2gx = kg(x − l)² ⇒ k(x − l)² − 2(x − l) − 2l = 0 (using x = (x − l) + l). Solve for x − l: x − l = [2 ± √(4 + 8kl)]/(2k) = [1 ± √(1 + 2kl)]/k. Take the positive root (x > l): x = l + 1/k + √(1/k² + 2l/k).",
+          "answer": "Halted: \\(v=0\\ \\Rightarrow\\ 2gx=kg(x-l)^2\\ \\Rightarrow\\ k(x-l)^2-2(x-l)-2l=0\\) (using \\(x=(x-l)+l\\)). Solve for \\(x-l\\): \\(x-l=\\dfrac{2\\pm\\sqrt{4+8kl}}{2k}=\\dfrac{1\\pm\\sqrt{1+2kl}}{k}\\). Take the positive root (\\(x>l\\)): \\(x=l+\\dfrac{1}{k}+\\sqrt{\\dfrac{1}{k^2}+\\dfrac{2l}{k}}\\).",
           "manual": true,
           "hint": "Set \\(v=0\\) and substitute \\(u=x-l\\) to get a quadratic in \\(u\\).",
           "steps": [
@@ -3996,7 +3996,7 @@
           "type": "review",
           "stem": "Frank is first halted at \\(x=l+\\dfrac{1}{k}+\\sqrt{\\dfrac{2l}{k}+\\dfrac{1}{k^2}}\\). Show that if the length of rope is 40 m and the constant of proportionality \\(k\\) is \\(\\dfrac{1}{10}\\) then the bridge needs to be at least 80 metres above the ground.",
           "difficulty": "medium",
-          "answer": "l = 40, k = 1/10: x = 40 + 10 + √(2·40·10 + 100) = 50 + √900 = 50 + 30 = 80. Frank falls 80 m before first stopping, so the bridge must be at least 80 m above the ground.",
+          "answer": "\\(l=40\\), \\(k=\\dfrac{1}{10}\\): \\(x=40+10+\\sqrt{2\\cdot40\\cdot10+100}=50+\\sqrt{900}=50+30=80\\). Frank falls 80 m before first stopping, so the bridge must be at least 80 m above the ground.",
           "manual": true,
           "hint": "Substitute \\(l=40\\) and \\(k=\\dfrac{1}{10}\\) into the formula for the halting position.",
           "steps": [
