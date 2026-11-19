@@ -3298,6 +3298,94 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "form3hy2022-q3a",
+          "type": "mc",
+          "stem": "Find \\(14\\%\\) of \\(150\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(21\\)",
+            "\\(2.1\\)",
+            "\\(210\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "Find 10% and then 1%, or multiply \\(0.14\\times150\\).",
+          "steps": [
+            {
+              "explain": "10% of 150.",
+              "work": "\\(150\\div10=15\\)"
+            },
+            {
+              "explain": "1% of 150 is \\(1.5\\), so 4% is \\(4\\times1.5=6\\).",
+              "work": ""
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(15+6=21\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Break the percentage into 10% and 1% parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q5e",
+          "type": "mc",
+          "stem": "In a colony of 2300 penguins, 920 of them are parents. What percentage of the penguins in the colony are parents?",
+          "difficulty": "easy",
+          "options": [
+            "\\(40\\%\\)",
+            "\\(25\\%\\)",
+            "\\(2.5\\%\\)",
+            "\\(4\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Percentage = part ÷ whole × 100.",
+          "steps": [
+            {
+              "explain": "Write as a fraction of the whole.",
+              "work": "\\(\\dfrac{920}{2300}\\)"
+            },
+            {
+              "explain": "Simplify by dividing by 460 (or 23 then 4).",
+              "work": "\\(\\dfrac{920}{2300}=\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Change to a percentage.",
+              "work": "\\(\\dfrac{2}{5}\\times100=40\\%\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(25\\%\\) uses \\(\\dfrac{2300}{920}\\) (flipped).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What percentage",
+              "note": "Part ÷ whole × 100."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5467,6 +5555,200 @@
               }
             }
           ]
+        },
+        {
+          "id": "form3hy2022-q5ai",
+          "type": "mc",
+          "stem": "Last year Nigel's cake shop made a profit of \\(\\$70\\,000\\). The profit was \\(40\\%\\) of his costs. Calculate his costs.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\$175\\,000\\)",
+            "\\(\\$28\\,000\\)",
+            "\\(\\$50\\,000\\)",
+            "\\(\\$280\\,000\\)"
+          ],
+          "answer": 0,
+          "hint": "The profit is 40% of the COSTS (the 100% amount). Find 1% first.",
+          "steps": [
+            {
+              "explain": "40% of the costs is \\(\\$70\\,000\\).",
+              "work": "\\(40\\%\\ \\to\\ \\$70\\,000\\)"
+            },
+            {
+              "explain": "Find 1%.",
+              "work": "\\(70\\,000\\div40=1750\\)"
+            },
+            {
+              "explain": "Find 100% (the costs).",
+              "work": "\\(1750\\times100=\\$175\\,000\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(28\\,000\\) is 40% OF the profit.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "his costs",
+              "note": "Profit is 40% of costs: find 1% then 100%."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q5aii",
+          "type": "mc",
+          "stem": "Last year Nigel's cake shop made a profit of \\(\\$70\\,000\\). The profit was \\(40\\%\\) of his costs. Calculate his sales.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\$245\\,000\\)",
+            "\\(\\$175\\,000\\)",
+            "\\(\\$70\\,000\\)",
+            "\\(\\$315\\,000\\)"
+          ],
+          "answer": 0,
+          "hint": "Sales = costs + profit. Use the costs from part (i).",
+          "steps": [
+            {
+              "explain": "Costs from part (i): \\(\\$70\\,000\\div0.4=\\$175\\,000\\).",
+              "work": ""
+            },
+            {
+              "explain": "Sales equal costs plus profit.",
+              "work": "\\(175\\,000+70\\,000\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(\\$245\\,000\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(245\\,000=1.4\\times175\\,000\\) ✓ (a 40% mark-up).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "his sales",
+              "note": "Sales = costs + profit."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q8a",
+          "type": "mc",
+          "stem": "Mable pays tax on her income at the rates given in the table above. If Mable pays \\(\\$60\\,400\\) in tax, calculate her pre-tax income.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 190\" width=\"100%\" height=\"auto\" style=\"max-width:560px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"504\" height=\"174\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"228\" y1=\"8\" x2=\"228\" y2=\"182\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"42\" x2=\"512\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"76\" x2=\"512\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"110\" x2=\"512\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"144\" x2=\"512\" y2=\"144\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"118\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Pre-Tax Income</text><text x=\"374\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Tax Rate</text><text x=\"118\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">first $40 000</text><text x=\"374\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">no tax</text><text x=\"118\" y=\"98\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">from $40 001 to $80 000</text><text x=\"374\" y=\"98\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">20c for each dollar over $40 000</text><text x=\"118\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">From $80 001 to $120 000</text><text x=\"374\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">35c for each dollar over $80 000</text><text x=\"118\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">from $120 001</text><text x=\"374\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">48c for each dollar over $120 000</text></svg>"
+          },
+          "options": [
+            "\\(\\$200\\,000\\)",
+            "\\(\\$302\\,000\\)",
+            "\\(\\$125\\,833\\)",
+            "\\(\\$160\\,000\\)"
+          ],
+          "answer": 0,
+          "hint": "Work out the tax paid at the top of each bracket to find which bracket \\(\\$60\\,400\\) falls in.",
+          "steps": [
+            {
+              "explain": "Tax on \\(\\$80\\,000\\): \\(0.20\\times40\\,000=\\$8000\\). Tax on \\(\\$120\\,000\\): \\(8000+0.35\\times40\\,000=\\$22\\,000\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 190\" width=\"100%\" height=\"auto\" style=\"max-width:560px;display:block;margin:0 auto\"><rect x=\"8\" y=\"8\" width=\"504\" height=\"174\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"228\" y1=\"8\" x2=\"228\" y2=\"182\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"42\" x2=\"512\" y2=\"42\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"76\" x2=\"512\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"110\" x2=\"512\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"8\" y1=\"144\" x2=\"512\" y2=\"144\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"118\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Pre-Tax Income</text><text x=\"374\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Tax Rate</text><text x=\"118\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">first $40 000</text><text x=\"374\" y=\"64\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">no tax</text><text x=\"118\" y=\"98\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">from $40 001 to $80 000</text><text x=\"374\" y=\"98\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">20c for each dollar over $40 000</text><text x=\"118\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">From $80 001 to $120 000</text><text x=\"374\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">35c for each dollar over $80 000</text><text x=\"118\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">from $120 001</text><text x=\"374\" y=\"166\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">48c for each dollar over $120 000</text><rect x=\"2\" y=\"2\" width=\"516\" height=\"186\" rx=\"6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\$60\\,400\\) is more than \\(\\$22\\,000\\), so her income is in the top bracket (48c per dollar over \\(\\$120\\,000\\)).",
+              "work": ""
+            },
+            {
+              "explain": "Tax in the top bracket.",
+              "work": "\\(60\\,400-22\\,000=\\$38\\,400\\)"
+            },
+            {
+              "explain": "Income over \\(\\$120\\,000\\).",
+              "work": "\\(38\\,400\\div0.48=\\$80\\,000\\)"
+            },
+            {
+              "explain": "Pre-tax income.",
+              "work": "\\(120\\,000+80\\,000=\\$200\\,000\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "calculate her pre-tax income",
+              "note": "Find which bracket the tax falls in, then work backwards."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q8b",
+          "type": "mc",
+          "stem": "Two pans of melted chocolate and milk are poured into a jug already containing a litre of warm milk. Once poured, it is mixed together thoroughly and the resulting drink is 20% chocolate. Prior to mixing, Pan A contained half a litre of liquid which was 80% chocolate. Pan B contained 5 litres of liquid but the percentage of chocolate was unknown. What percentage of the liquid in pan B was chocolate?",
+          "difficulty": "hard",
+          "options": [
+            "\\(18\\%\\)",
+            "\\(20\\%\\)",
+            "\\(8\\%\\)",
+            "\\(36\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Count LITRES OF CHOCOLATE before and after mixing (the warm milk contains none).",
+          "steps": [
+            {
+              "explain": "Total liquid in the jug.",
+              "work": "\\(1+0.5+5=6.5\\ \\text{L}\\)"
+            },
+            {
+              "explain": "Chocolate in the final drink: 20% of 6.5.",
+              "work": "\\(0.2\\times6.5=1.3\\ \\text{L}\\)"
+            },
+            {
+              "explain": "Chocolate from pan A: \\(0.8\\times0.5=0.4\\ \\text{L}\\). So chocolate from pan B is \\(1.3-0.4=0.9\\ \\text{L}\\).",
+              "work": ""
+            },
+            {
+              "explain": "Percentage of pan B.",
+              "work": "\\(\\dfrac{0.9}{5}\\times100=18\\%\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What percentage",
+              "note": "Add the litres of chocolate; the milk has none."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

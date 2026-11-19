@@ -1062,6 +1062,52 @@
             "grade": "9",
             "sourceQuestion": "par-q8iv"
           }
+        },
+        {
+          "id": "form3hy2022-q7e",
+          "type": "mc",
+          "stem": "A rectangle has a width which is 4 cm longer than its length. A new rectangle is made by increasing both the width and length of the original rectangle by 3 cm each. The area of the new rectangle is \\(63\\ \\text{cm}^2\\) greater than the original. Let the length of the original rectangle be \\(x\\). Write and solve an equation in \\(x\\) to find the length of the original rectangle.",
+          "difficulty": "hard",
+          "options": [
+            "\\((x+3)(x+7)-x(x+4)=63\\), so \\(x=7\\ \\text{cm}\\)",
+            "\\((x+3)(x+4)-x(x+4)=63\\), so \\(x=17\\ \\text{cm}\\)",
+            "\\((x+3)(x+7)-x(x+4)=63\\), so \\(x=10.5\\ \\text{cm}\\)",
+            "\\((x+3)(x+7)-x(x+4)=63\\), so \\(x=42\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Original: length \\(x\\), width \\(x+4\\). New: length \\(x+3\\), width \\(x+7\\). New area − old area = 63.",
+          "steps": [
+            {
+              "explain": "Original area \\(x(x+4)\\); new area \\((x+3)(x+7)\\).",
+              "work": "\\((x+3)(x+7)-x(x+4)=63\\)"
+            },
+            {
+              "explain": "Expand: \\(x^2+10x+21-x^2-4x=63\\) (the \\(x^2\\) terms cancel).",
+              "work": "\\(6x+21=63\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(6x=42\\ \\Rightarrow\\ x=7\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: original \\(7\\times11=77\\), new \\(10\\times14=140\\), and \\(140-77=63\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write and solve an equation",
+              "note": "New area minus old area equals 63."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

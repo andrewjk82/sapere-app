@@ -368,6 +368,52 @@
             "grade": "9",
             "sourceQuestion": "fm-q7"
           }
+        },
+        {
+          "id": "form3hy2022-q7a",
+          "type": "mc",
+          "stem": "A scale model of a proposed building is in the ratio of \\(1:400\\). Calculate the width of the lobby entrance on the real building if it is 12 mm wide on the model. Give your answer in metres.",
+          "difficulty": "medium",
+          "options": [
+            "\\(4.8\\ \\text{m}\\)",
+            "\\(48\\ \\text{m}\\)",
+            "\\(0.48\\ \\text{m}\\)",
+            "\\(4800\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the model length by 400, then change millimetres to metres (÷ 1000).",
+          "steps": [
+            {
+              "explain": "Real width in millimetres.",
+              "work": "\\(12\\times400=4800\\ \\text{mm}\\)"
+            },
+            {
+              "explain": "Convert: \\(1000\\ \\text{mm}=1\\ \\text{m}\\).",
+              "work": "\\(4800\\div1000=4.8\\ \\text{m}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: 4.8 m is a sensible width for a doorway (a lobby entrance).",
+              "work": ""
+            },
+            {
+              "explain": "Mistake: \\(4800\\ \\text{m}\\) forgets to convert units.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the width",
+              "note": "Multiply by the scale factor, then convert the units."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }
