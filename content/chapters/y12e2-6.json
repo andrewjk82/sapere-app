@@ -1423,6 +1423,102 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-y12e2-mc1",
+          "type": "mc",
+          "stem": "Which expression is equal to \\(\\displaystyle\\int x^2\\sin\\left(x^3\\right)dx\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x^3}{3}\\sin\\left(x^3\\right)-\\dfrac{1}{3}\\int x^3\\sin\\left(x^3\\right)dx+C\\)",
+            "\\(\\dfrac{x^3}{3}\\sin\\left(x^3\\right)-\\dfrac{1}{3}\\int x^3\\cos\\left(x^3\\right)dx+C\\)",
+            "\\(\\dfrac{1}{3}\\cos\\left(x^3\\right)+C\\)",
+            "\\(-\\dfrac{1}{3}\\cos\\left(x^3\\right)+C\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the substitution \\(u=x^3\\) (then \\(du=3x^2dx\\)).",
+          "steps": [
+            {
+              "explain": "Let \\(u=x^3\\), so \\(du=3x^2\\,dx\\) and \\(x^2dx=\\dfrac{1}{3}du\\).",
+              "work": "\\(\\int x^2\\sin\\left(x^3\\right)dx=\\dfrac{1}{3}\\int\\sin u\\,du\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(=-\\dfrac{1}{3}\\cos u+C\\)"
+            },
+            {
+              "explain": "Replace \\(u\\).",
+              "work": "\\(-\\dfrac{1}{3}\\cos\\left(x^3\\right)+C\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\left[-\\dfrac{1}{3}\\cos x^3\\right]=\\dfrac{1}{3}\\sin x^3\\times3x^2=x^2\\sin x^3\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equal to",
+              "note": "Substitution u = x³ turns this into a simple sine integral."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-y12e2-q14a",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{-1}^{\\sqrt{3}}\\dfrac{x^2}{\\sqrt{4-x^2}}dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\pi-\\sqrt{3}\\)",
+            "\\(\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(\\pi+\\sqrt{3}\\)",
+            "\\(\\dfrac{\\pi}{2}-\\sqrt{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the substitution \\(x=2\\sin\\theta\\): then \\(\\sqrt{4-x^2}=2\\cos\\theta\\) and \\(dx=2\\cos\\theta\\,d\\theta\\). Change the limits.",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\dfrac{x^2}{\\sqrt{4-x^2}}dx=\\dfrac{4\\sin^2\\theta}{2\\cos\\theta}\\times2\\cos\\theta\\,d\\theta=4\\sin^2\\theta\\,d\\theta\\)"
+            },
+            {
+              "explain": "Limits: \\(x=-1\\Rightarrow\\sin\\theta=-\\dfrac{1}{2}\\Rightarrow\\theta=-\\dfrac{\\pi}{6}\\); \\(x=\\sqrt{3}\\Rightarrow\\sin\\theta=\\dfrac{\\sqrt{3}}{2}\\Rightarrow\\theta=\\dfrac{\\pi}{3}\\).",
+              "work": ""
+            },
+            {
+              "explain": "Use \\(4\\sin^2\\theta=2-2\\cos2\\theta\\) and integrate.",
+              "work": "\\(\\int_{-\\frac{\\pi}{6}}^{\\frac{\\pi}{3}}(2-2\\cos2\\theta)d\\theta=\\left[2\\theta-\\sin2\\theta\\right]_{-\\frac{\\pi}{6}}^{\\frac{\\pi}{3}}\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(\\left(\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}\\right)-\\left(-\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{2}\\right)=\\pi-\\sqrt{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: option B uses only the upper limit.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Substitute \\(x=2\\sin\\theta\\) and change the limits."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2198,6 +2294,102 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-y12e2-q11ci",
+          "type": "mc",
+          "stem": "Find real numbers \\(A\\) and \\(B\\) such that \\(\\dfrac{3x^2-x+12}{(x-2)\\left(x^2+2x+3\\right)}\\equiv\\dfrac{A}{x-2}+\\dfrac{Bx-3}{x^2+2x+3}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(A=2,\\ B=1\\)",
+            "\\(A=1,\\ B=2\\)",
+            "\\(A=2,\\ B=-1\\)",
+            "\\(A=3,\\ B=0\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\((x-2)(x^2+2x+3)\\) and substitute \\(x=2\\) to find \\(A\\). Then compare the \\(x^2\\) terms.",
+          "steps": [
+            {
+              "explain": "Clear the denominators.",
+              "work": "\\(3x^2-x+12\\equiv A\\left(x^2+2x+3\\right)+(Bx-3)(x-2)\\)"
+            },
+            {
+              "explain": "Put \\(x=2\\) (kills the second term).",
+              "work": "\\(12-2+12=A(4+4+3)\\ \\Rightarrow\\ 22=11A\\ \\Rightarrow\\ A=2\\)"
+            },
+            {
+              "explain": "Compare the coefficients of \\(x^2\\).",
+              "work": "\\(3=A+B\\ \\Rightarrow\\ B=1\\)"
+            },
+            {
+              "explain": "Check the constant term: \\(3A+6=12\\) ✓.",
+              "work": "\\(A=2,\\ B=1\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find real numbers",
+              "note": "Substitute \\(x=2\\), then compare coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-y12e2-q11cii",
+          "type": "mc",
+          "stem": "Hence find \\(\\displaystyle\\int\\dfrac{3x^2-x+12}{(x-2)\\left(x^2+2x+3\\right)}dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left(x^2+2x+3\\right)-2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+C\\)",
+            "\\(2\\ln|x-2|+\\ln\\left(x^2+2x+3\\right)-4\\tan^{-1}(x+1)+C\\)",
+            "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left(x^2+2x+3\\right)+2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+C\\)",
+            "\\(\\ln|x-2|+\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(A=2\\), \\(B=1\\). Split \\(\\dfrac{x-3}{x^2+2x+3}\\) into a log part (\\(2x+2\\) is the derivative of the denominator) and an inverse-tangent part (complete the square).",
+          "steps": [
+            {
+              "explain": "Using part (i).",
+              "work": "\\(\\int\\dfrac{2}{x-2}dx+\\int\\dfrac{x-3}{x^2+2x+3}dx\\)"
+            },
+            {
+              "explain": "First integral.",
+              "work": "\\(2\\ln|x-2|\\)"
+            },
+            {
+              "explain": "Write \\(x-3=\\dfrac{1}{2}(2x+2)-4\\).",
+              "work": "\\(\\int\\dfrac{x-3}{x^2+2x+3}dx=\\dfrac{1}{2}\\ln\\left(x^2+2x+3\\right)-4\\int\\dfrac{dx}{(x+1)^2+2}\\)"
+            },
+            {
+              "explain": "The last integral.",
+              "work": "\\(\\int\\dfrac{dx}{(x+1)^2+2}=\\dfrac{1}{\\sqrt{2}}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)\\ \\Rightarrow\\ -\\dfrac{4}{\\sqrt{2}}=-2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left(x^2+2x+3\\right)-2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+C\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find",
+              "note": "Split into a log part and an inverse tangent part."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2605,6 +2797,48 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-y12e2-q13a",
+          "type": "mc",
+          "stem": "By completing the square, find \\(\\displaystyle\\int\\dfrac{dx}{x^2+6x+13}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x+3}{2}\\right)+C\\)",
+            "\\(\\tan^{-1}\\left(\\dfrac{x+3}{2}\\right)+C\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left(x^2+6x+13\\right)+C\\)",
+            "\\(2\\tan^{-1}(x+3)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square: \\(x^2+6x+13=(x+3)^2+4\\), then use \\(\\int\\dfrac{dx}{u^2+a^2}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\).",
+          "steps": [
+            {
+              "explain": "Complete the square.",
+              "work": "\\(x^2+6x+13=(x+3)^2+4\\)"
+            },
+            {
+              "explain": "Rewrite the integral with \\(a=2\\).",
+              "work": "\\(\\int\\dfrac{dx}{(x+3)^2+2^2}\\)"
+            },
+            {
+              "explain": "Standard integral.",
+              "work": "\\(\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{x+3}{2}\\right)+C\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "completing the square",
+              "note": "Complete the square to reach the inverse tangent form."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3317,6 +3551,52 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-y12e2-mc3",
+          "type": "mc",
+          "stem": "Which of the following is a primitive of \\(x\\cos x\\) ?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x\\sin x+\\sin x\\)",
+            "\\(x\\sin x+\\cos x\\)",
+            "\\(x\\sin x-\\cos x\\)",
+            "\\(x\\sin x-\\sin x\\)"
+          ],
+          "answer": 1,
+          "hint": "Integrate by parts with \\(u=x\\) and \\(dv=\\cos x\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Parts.",
+              "work": "\\(\\int x\\cos x\\,dx=x\\sin x-\\int1\\cdot\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(\\int\\sin x\\,dx=-\\cos x\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(x\\sin x-(-\\cos x)=x\\sin x+\\cos x\\) → <span style=\"color:#047857;font-weight:700\">B</span>"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}(x\\sin x+\\cos x)=\\sin x+x\\cos x-\\sin x=x\\cos x\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "primitive",
+              "note": "Integration by parts with u = x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4517,6 +4797,48 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-y12e2-q16a",
+          "type": "review",
+          "stem": "Given \\(I_n=\\displaystyle\\int_0^1\\dfrac{1}{\\left(1+x^4\\right)^n}dx\\), show that \\(I_{n+1}=\\dfrac{4n-1}{4n}I_n+\\dfrac{1}{n2^{n+2}}\\).",
+          "difficulty": "hard",
+          "answer": "By parts with u = (1+x⁴)^{−n}, dv = dx: I_n = [x(1+x⁴)^{−n}]₀¹ + 4n∫₀¹x⁴(1+x⁴)^{−n−1}dx = 2^{−n} + 4n∫₀¹((1+x⁴) − 1)(1+x⁴)^{−n−1}dx = 2^{−n} + 4n(I_n − I_{n+1}). So 4nI_{n+1} = 2^{−n} + (4n − 1)I_n and I_{n+1} = (4n−1)/(4n) I_n + 1/(4n·2^n) = (4n−1)/(4n) I_n + 1/(n2^{n+2}).",
+          "manual": true,
+          "hint": "Integrate by parts with \\(u=(1+x^4)^{-n}\\) and \\(dv=dx\\), then write \\(x^4=(1+x^4)-1\\).",
+          "steps": [
+            {
+              "explain": "Parts: \\(u=(1+x^4)^{-n}\\), \\(dv=dx\\), \\(du=-4nx^3(1+x^4)^{-n-1}dx\\), \\(v=x\\).",
+              "work": "\\(I_n=\\left[x(1+x^4)^{-n}\\right]_0^1+4n\\int_0^1\\dfrac{x^4}{(1+x^4)^{n+1}}dx\\)"
+            },
+            {
+              "explain": "Evaluate the boundary term: \\(1\\times2^{-n}-0=\\dfrac{1}{2^n}\\). Write \\(x^4=(1+x^4)-1\\).",
+              "work": "\\(I_n=\\dfrac{1}{2^n}+4n\\int_0^1\\left[\\dfrac{1}{(1+x^4)^n}-\\dfrac{1}{(1+x^4)^{n+1}}\\right]dx=\\dfrac{1}{2^n}+4n\\left(I_n-I_{n+1}\\right)\\)"
+            },
+            {
+              "explain": "Solve for \\(I_{n+1}\\).",
+              "work": "\\(4nI_{n+1}=\\dfrac{1}{2^n}+4nI_n-I_n=\\dfrac{1}{2^n}+(4n-1)I_n\\)"
+            },
+            {
+              "explain": "Divide by \\(4n\\) and note \\(4n\\cdot2^n=n2^{n+2}\\).",
+              "work": "\\(I_{n+1}=\\dfrac{4n-1}{4n}I_n+\\dfrac{1}{n2^{n+2}}\\) ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Integrate by parts, then use x⁴ = (1 + x⁴) − 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
         }
       ]
     },
@@ -4620,6 +4942,132 @@
               ]
             }
           ]
+        },
+        {
+          "id": "fortst2020-y12e2-q15bi",
+          "type": "review",
+          "stem": "Show that \\(\\displaystyle\\int_0^{\\frac{\\pi}{2}}(\\sin x)^{2k}\\cos x\\,dx=\\dfrac{1}{2k+1}\\), where \\(k\\) is a positive integer.",
+          "difficulty": "medium",
+          "answer": "Let u = sin x, du = cos x dx; limits x = 0 → u = 0, x = π/2 → u = 1. ∫₀¹ u^{2k} du = [u^{2k+1}/(2k+1)]₀¹ = 1/(2k+1).",
+          "manual": true,
+          "hint": "Substitute \\(u=\\sin x\\) (the cosine is the derivative).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\sin x\\), \\(du=\\cos x\\,dx\\). Limits: \\(x=0\\to u=0\\), \\(x=\\dfrac{\\pi}{2}\\to u=1\\).",
+              "work": ""
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\int_0^1u^{2k}\\,du\\)"
+            },
+            {
+              "explain": "Integrate.",
+              "work": "\\(\\left[\\dfrac{u^{2k+1}}{2k+1}\\right]_0^1=\\dfrac{1}{2k+1}\\) ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Substitute u = sin x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "fortst2020-y12e2-q15bii",
+          "type": "review",
+          "stem": "By writing \\((\\cos x)^{2n}=\\left(1-\\sin^2x\\right)^n\\), show that \\(\\displaystyle\\int_0^{\\frac{\\pi}{2}}(\\cos x)^{2n+1}dx=\\sum_{k=0}^n\\dfrac{(-1)^k}{2k+1}\\binom{n}{k}\\).",
+          "difficulty": "hard",
+          "answer": "(cos x)^{2n+1} = (cos x)^{2n} cos x = (1 − sin²x)^n cos x = Σ_{k=0}^n C(n,k)(−1)^k (sin²x)^k cos x (binomial theorem). Integrate term by term from 0 to π/2 using ∫(sin x)^{2k}cos x dx = 1/(2k+1): ∫(cos x)^{2n+1}dx = Σ (−1)^k C(n,k)/(2k+1).",
+          "manual": true,
+          "hint": "Write \\((\\cos x)^{2n+1}=(\\cos x)^{2n}\\cos x\\), expand with the binomial theorem, then use part (i).",
+          "steps": [
+            {
+              "explain": "Split off one cosine.",
+              "work": "\\((\\cos x)^{2n+1}=(\\cos x)^{2n}\\cos x=\\left(1-\\sin^2x\\right)^n\\cos x\\)"
+            },
+            {
+              "explain": "Binomial theorem.",
+              "work": "\\(\\left(1-\\sin^2x\\right)^n=\\sum_{k=0}^n\\binom{n}{k}(-1)^k(\\sin x)^{2k}\\)"
+            },
+            {
+              "explain": "Integrate term by term and use part (i).",
+              "work": "\\(\\int_0^{\\frac{\\pi}{2}}(\\sin x)^{2k}\\cos x\\,dx=\\dfrac{1}{2k+1}\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\int_0^{\\frac{\\pi}{2}}(\\cos x)^{2n+1}dx=\\sum_{k=0}^n\\dfrac{(-1)^k}{2k+1}\\binom{n}{k}\\) ✓"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Expand with the binomial theorem and use part (i)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "fortst2020-y12e2-q15biii",
+          "type": "mc",
+          "stem": "Hence, or otherwise, evaluate \\(\\displaystyle\\int_0^{\\frac{\\pi}{2}}(\\cos x)^5dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{8}{15}\\)",
+            "\\(\\dfrac{4}{5}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{1}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\((\\cos x)^5\\) is \\((\\cos x)^{2n+1}\\) with \\(n=2\\). Use the sum from part (ii).",
+          "steps": [
+            {
+              "explain": "Here \\(2n+1=5\\), so \\(n=2\\).",
+              "work": "\\(\\sum_{k=0}^2\\dfrac{(-1)^k}{2k+1}\\binom{2}{k}\\)"
+            },
+            {
+              "explain": "Terms: \\(k=0\\): \\(1\\); \\(k=1\\): \\(-\\dfrac{2}{3}\\); \\(k=2\\): \\(\\dfrac{1}{5}\\).",
+              "work": "\\(1-\\dfrac{2}{3}+\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Common denominator 15.",
+              "work": "\\(\\dfrac{15-10+3}{15}=\\dfrac{8}{15}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check with the reduction formula: \\(\\int_0^{\\frac{\\pi}{2}}\\cos^5x\\,dx=\\dfrac{4}{5}\\times\\dfrac{2}{3}=\\dfrac{8}{15}\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate",
+              "note": "Use the sum from part (ii) with \\(n=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
