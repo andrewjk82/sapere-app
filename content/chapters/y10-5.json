@@ -3495,6 +3495,102 @@
               "note": "Round both solutions only after evaluating the exact roots."
             }
           ]
+        },
+        {
+          "id": "fortst2023y10-b3",
+          "type": "mc",
+          "stem": "Solve the following for \\(x\\): \\(x-\\dfrac{10}{x}=3\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=5\\) or \\(x=-2\\)",
+            "\\(x=-5\\) or \\(x=2\\)",
+            "\\(x=13\\) or \\(x=-10\\)",
+            "\\(x=5\\) only"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term by \\(x\\) to clear the fraction, then make one side zero.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(x\\) (\\(x\\neq0\\)).",
+              "work": "\\(x^2-10=3x\\)"
+            },
+            {
+              "explain": "Move everything to one side and factorise.",
+              "work": "\\(x^2-3x-10=0\\ \\Rightarrow\\ (x-5)(x+2)=0\\)"
+            },
+            {
+              "explain": "Solve each factor.",
+              "work": "\\(x=5\\quad\\text{or}\\quad x=-2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Check: \\(5-\\dfrac{10}{5}=3\\) ✓ and \\(-2-\\dfrac{10}{-2}=-2+5=3\\) ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the following",
+              "note": "Multiply by x to remove the fraction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b5",
+          "type": "mc",
+          "stem": "Solve the following for \\(x\\): \\(\\dfrac{7}{x+2}-3x=2\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=\\dfrac{1}{3}\\) or \\(x=-3\\)",
+            "\\(x=-\\dfrac{1}{3}\\) or \\(x=3\\)",
+            "\\(x=\\dfrac{1}{3}\\) or \\(x=3\\)",
+            "\\(x=-3\\) or \\(x=-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term by \\((x+2)\\) to clear the fraction. Then collect into a quadratic.",
+          "steps": [
+            {
+              "explain": "Multiply by \\((x+2)\\).",
+              "work": "\\(7-3x(x+2)=2(x+2)\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(7-3x^2-6x=2x+4\\)"
+            },
+            {
+              "explain": "Collect into standard form.",
+              "work": "\\(3x^2+8x-3=0\\ \\Rightarrow\\ (3x-1)(x+3)=0\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(x=\\dfrac{1}{3}\\quad\\text{or}\\quad x=-3\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Neither answer makes \\(x+2\\) zero, so both are valid.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the following",
+              "note": "Multiply through by x + 2, then solve the quadratic."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3700,6 +3796,56 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-e5",
+          "type": "mc",
+          "stem": "A plane follows a parabolic path that can be modelled using the equation \\(h=-x^2+6x-5\\) where \\(h\\) is the height of the plane in kilometres, and \\(x\\) is the horizontal distance travelled in kilometres. By the method of completing the square or otherwise find the maximum height of the plane.",
+          "difficulty": "hard",
+          "options": [
+            "\\(4\\ \\text{km}\\)",
+            "\\(3\\ \\text{km}\\)",
+            "\\(5\\ \\text{km}\\)",
+            "\\(9\\ \\text{km}\\)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square: write the equation as \\(h=-(x-3)^2+k\\). The vertex is the maximum because the parabola opens DOWN.",
+          "steps": [
+            {
+              "explain": "Factor out \\(-1\\) from the \\(x\\) terms.",
+              "work": "\\(h=-(x^2-6x)-5\\)"
+            },
+            {
+              "explain": "Complete the square inside: add and subtract 9.",
+              "work": "\\(x^2-6x=(x-3)^2-9\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(h=-\\left[(x-3)^2-9\\right]-5=-(x-3)^2+9-5=-(x-3)^2+4\\)"
+            },
+            {
+              "explain": "Maximum when \\((x-3)^2=0\\) (at \\(x=3\\)).",
+              "work": "\\(h_{max}=4\\ \\text{km}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(3\\) is the horizontal distance of the maximum, not the height.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum height",
+              "note": "Complete the square; the vertex gives the maximum."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
             "grade": "10",
             "origin": "teacher"
           }
@@ -4041,6 +4187,98 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b4",
+          "type": "mc",
+          "stem": "Solve by using the quadratic formula: \\(6p^2+5p-4=0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(p=\\dfrac{1}{2}\\) or \\(p=-\\dfrac{4}{3}\\)",
+            "\\(p=-\\dfrac{1}{2}\\) or \\(p=\\dfrac{4}{3}\\)",
+            "\\(p=1\\) or \\(p=-\\dfrac{8}{3}\\)",
+            "\\(p=\\dfrac{1}{2}\\) only"
+          ],
+          "answer": 0,
+          "hint": "Quadratic formula: \\(p=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}\\) with \\(a=6,\\ b=5,\\ c=-4\\).",
+          "steps": [
+            {
+              "explain": "Find the discriminant.",
+              "work": "\\(b^2-4ac=25-4(6)(-4)=25+96=121\\)"
+            },
+            {
+              "explain": "Substitute (note \\(2a=12\\)).",
+              "work": "\\(p=\\dfrac{-5\\pm\\sqrt{121}}{12}=\\dfrac{-5\\pm11}{12}\\)"
+            },
+            {
+              "explain": "The two solutions.",
+              "work": "\\(p=\\dfrac{6}{12}=\\dfrac{1}{2}\\quad\\text{or}\\quad p=\\dfrac{-16}{12}=-\\dfrac{4}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: dividing by 6 instead of 12 gives \\(p=1\\) and \\(-\\dfrac{8}{3}\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "quadratic formula",
+              "note": "Use the formula with \\(a=6,\\ b=5,\\ c=-4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-b6",
+          "type": "mc",
+          "stem": "Find the values of \\(h\\) such that the equation \\(hx^2+x+2\\) has no real roots.",
+          "difficulty": "hard",
+          "options": [
+            "\\(h>\\dfrac{1}{8}\\)",
+            "\\(h<\\dfrac{1}{8}\\)",
+            "\\(h>8\\)",
+            "\\(h\\geq\\dfrac{1}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "No real roots means the discriminant is NEGATIVE: \\(\\Delta=b^2-4ac<0\\).",
+          "steps": [
+            {
+              "explain": "Identify the coefficients.",
+              "work": "\\(a=h,\\quad b=1,\\quad c=2\\)"
+            },
+            {
+              "explain": "Discriminant must be negative.",
+              "work": "\\(\\Delta=1^2-4(h)(2)=1-8h<0\\)"
+            },
+            {
+              "explain": "Solve the inequality (add \\(8h\\) and divide by 8).",
+              "work": "\\(1<8h\\ \\Rightarrow\\ h>\\dfrac{1}{8}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "When \\(h=\\dfrac{1}{8}\\) the discriminant is 0 (one root), so \\(\\geq\\) is wrong.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "no real roots",
+              "note": "The discriminant must be negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
             "grade": "10",
             "origin": "teacher"
           }

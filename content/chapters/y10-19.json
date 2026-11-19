@@ -91,6 +91,55 @@
             "school": "Abbotsleigh",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Y9/MG_Task4_yr10Maths_Band1.pdf"
           }
+        },
+        {
+          "id": "fortst2023y10-e2",
+          "type": "mc",
+          "stem": "Explain why \\(\\tan\\theta\\) is positive in the third quadrant.",
+          "difficulty": "medium",
+          "options": [
+            "In the third quadrant both sine and cosine are negative, and tan is sine divided by cosine, so negative ÷ negative is positive",
+            "In the third quadrant only tangent is negative, so tan is positive",
+            "In the third quadrant sine is positive and cosine is negative, so tan is positive",
+            "Tangent is positive in every quadrant"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}\\) and the signs of sine and cosine in the third quadrant (both x and y are negative).",
+          "steps": [
+            {
+              "explain": "In the third quadrant (angles between \\(180^\\circ\\) and \\(270^\\circ\\)) the point on the unit circle has \\(x<0\\) and \\(y<0\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"30\" y1=\"115\" x2=\"310\" y2=\"115\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"250\" y=\"45\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">1st: all positive</text><text x=\"90\" y=\"45\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">2nd: sin +</text><text x=\"250\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">4th: cos +</text><text x=\"90\" y=\"145\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">3rd: tan +</text><text x=\"90\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b91c1c\">sin −, cos −</text><text x=\"90\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">tan = (−) ÷ (−) = +</text></svg>"
+              }
+            },
+            {
+              "explain": "So \\(\\cos\\theta=x<0\\) and \\(\\sin\\theta=y<0\\) (both negative).",
+              "work": ""
+            },
+            {
+              "explain": "Therefore.",
+              "work": "\\(\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}=\\dfrac{(-)}{(-)}=+\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "(A negative divided by a negative is positive.)",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why",
+              "note": "Sine and cosine are both negative, so their quotient is positive."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -3758,6 +3758,126 @@
           ],
           "answer": 0,
           "solution": "Correct answer: \\(\\frac{313}{990}\\)"
+        },
+        {
+          "id": "fortst2023y10-a1a",
+          "type": "mc",
+          "stem": "For the following number state if it is rational or irrational: \\(\\dfrac{\\pi}{2}\\)",
+          "difficulty": "easy",
+          "options": [
+            "Irrational",
+            "Rational"
+          ],
+          "answer": 0,
+          "hint": "A rational number can be written as a fraction of two integers. Is \\(\\pi\\) such a number?",
+          "steps": [
+            {
+              "explain": "\\(\\pi\\) is irrational: its decimal never ends or repeats.",
+              "work": "\\(\\pi=3.14159\\ldots\\)"
+            },
+            {
+              "explain": "Dividing an irrational number by the rational number 2 keeps it irrational.",
+              "work": "\\(\\dfrac{\\pi}{2}=1.5707\\ldots\\)"
+            },
+            {
+              "explain": "Answer: <span style=\"color:#047857;font-weight:700\">irrational</span> → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational or irrational",
+              "note": "Rational numbers are fractions of integers; pi is not."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-a1b",
+          "type": "mc",
+          "stem": "For the following number state if it is rational or irrational: \\(\\dfrac{1}{\\sqrt{49}}\\)",
+          "difficulty": "easy",
+          "options": [
+            "Rational",
+            "Irrational"
+          ],
+          "answer": 0,
+          "hint": "Simplify the square root first. Is \\(49\\) a perfect square?",
+          "steps": [
+            {
+              "explain": "49 is a perfect square.",
+              "work": "\\(\\sqrt{49}=7\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\dfrac{1}{\\sqrt{49}}=\\dfrac{1}{7}\\)"
+            },
+            {
+              "explain": "A fraction of two integers is rational.",
+              "work": "<span style=\"color:#047857;font-weight:700\">Rational</span> → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational or irrational",
+              "note": "Check whether the surd simplifies to a whole number."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-a1c",
+          "type": "mc",
+          "stem": "For the following number state if it is rational or irrational: \\(0.125\\)",
+          "difficulty": "easy",
+          "options": [
+            "Rational",
+            "Irrational"
+          ],
+          "answer": 0,
+          "hint": "Terminating (ending) decimals can always be written as a fraction.",
+          "steps": [
+            {
+              "explain": "0.125 ends after three decimal places.",
+              "work": "\\(0.125=\\dfrac{125}{1000}\\)"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\(\\dfrac{125}{1000}=\\dfrac{1}{8}\\)"
+            },
+            {
+              "explain": "It is a fraction of two integers.",
+              "work": "<span style=\"color:#047857;font-weight:700\">Rational</span> → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational or irrational",
+              "note": "A terminating decimal is rational."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6103,6 +6223,48 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-a3",
+          "type": "mc",
+          "stem": "Simplify \\(\\sqrt{192}-5\\sqrt{12}+\\sqrt{75}\\) fully.",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\sqrt{3}\\)",
+            "\\(7\\sqrt{3}\\)",
+            "\\(23\\sqrt{3}\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Write every surd as a multiple of \\(\\sqrt{3}\\) first, then add and subtract the coefficients.",
+          "steps": [
+            {
+              "explain": "Simplify each surd.",
+              "work": "\\(\\sqrt{192}=\\sqrt{64\\times3}=8\\sqrt{3},\\quad\\sqrt{12}=2\\sqrt{3},\\quad\\sqrt{75}=\\sqrt{25\\times3}=5\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(8\\sqrt{3}-5\\times2\\sqrt{3}+5\\sqrt{3}=8\\sqrt{3}-10\\sqrt{3}+5\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Combine the coefficients: \\(8-10+5=3\\).",
+              "work": "\\(3\\sqrt{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Convert every surd to a multiple of the same surd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
             "grade": "10",
             "origin": "teacher"
           }
@@ -12445,6 +12607,96 @@
           "answer": "For values where the denominators are non-zero and the radicands are positive, both sides equal \\(\\sqrt{\\frac{x-y}{x+y}}\\).",
           "manual": true,
           "solution": "For values where the denominators are non-zero and the radicands are positive, both sides equal \\(\\sqrt{\\frac{x-y}{x+y}}\\)."
+        },
+        {
+          "id": "fortst2023y10-a2a",
+          "type": "mc",
+          "stem": "Simplify \\(\\dfrac{\\sqrt{48}-\\sqrt{300}}{\\sqrt{12}}\\) fully.",
+          "difficulty": "medium",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(-6\\sqrt{3}\\)",
+            "\\(-\\sqrt{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify each surd first: \\(\\sqrt{48}=4\\sqrt{3}\\), \\(\\sqrt{300}=10\\sqrt{3}\\) and \\(\\sqrt{12}=2\\sqrt{3}\\).",
+          "steps": [
+            {
+              "explain": "Write each surd with the largest square factor.",
+              "work": "\\(\\sqrt{48}=\\sqrt{16\\times3}=4\\sqrt{3},\\quad\\sqrt{300}=\\sqrt{100\\times3}=10\\sqrt{3},\\quad\\sqrt{12}=\\sqrt{4\\times3}=2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Substitute and simplify the numerator.",
+              "work": "\\(\\dfrac{4\\sqrt{3}-10\\sqrt{3}}{2\\sqrt{3}}=\\dfrac{-6\\sqrt{3}}{2\\sqrt{3}}\\)"
+            },
+            {
+              "explain": "Cancel \\(\\sqrt{3}\\) and divide.",
+              "work": "\\(=-3\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(-6\\sqrt{3}\\) forgets to divide by the denominator.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Simplify each surd before dividing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-a2b",
+          "type": "mc",
+          "stem": "Using your answer to the previous question, \\(\\dfrac{\\sqrt{48}-\\sqrt{300}}{\\sqrt{12}}\\): state if it is rational or irrational.",
+          "difficulty": "easy",
+          "options": [
+            "Rational",
+            "Irrational"
+          ],
+          "answer": 0,
+          "hint": "Look at the simplified value of the expression.",
+          "steps": [
+            {
+              "explain": "From the previous question the expression equals \\(-3\\).",
+              "work": "\\(\\dfrac{\\sqrt{48}-\\sqrt{300}}{\\sqrt{12}}=-3\\)"
+            },
+            {
+              "explain": "\\(-3\\) is an integer, which is a fraction \\(\\dfrac{-3}{1}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the value is <span style=\"color:#047857;font-weight:700\">rational</span> → <span style=\"color:#047857;font-weight:700\">A</span>",
+              "work": ""
+            },
+            {
+              "explain": "Even though the expression contains surds, the surds cancel.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational or irrational",
+              "note": "Decide using the simplified value."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18271,6 +18523,94 @@
           "meta": {
             "source": "Willoughby Girls High School Year 10 5.3 Yearly Examination 2015",
             "school": "Willoughby Girls High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-a6a",
+          "type": "mc",
+          "stem": "Rationalise the denominator for the following, (do not simplify): \\(\\dfrac{15}{\\sqrt{6}}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{15\\sqrt{6}}{6}\\)",
+            "\\(\\dfrac{15}{6}\\)",
+            "\\(\\dfrac{15\\sqrt{6}}{36}\\)",
+            "\\(\\dfrac{\\sqrt{6}}{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the top and bottom by \\(\\sqrt{6}\\).",
+          "steps": [
+            {
+              "explain": "Multiply by \\(\\dfrac{\\sqrt{6}}{\\sqrt{6}}\\) (this equals 1).",
+              "work": "\\(\\dfrac{15}{\\sqrt{6}}\\times\\dfrac{\\sqrt{6}}{\\sqrt{6}}\\)"
+            },
+            {
+              "explain": "Bottom: \\(\\sqrt{6}\\times\\sqrt{6}=6\\). Top: \\(15\\sqrt{6}\\).",
+              "work": "\\(\\dfrac{15\\sqrt{6}}{6}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "The question says not to simplify, so we stop here.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator",
+              "note": "Multiply top and bottom by the surd in the denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2023y10-a6b",
+          "type": "mc",
+          "stem": "Rationalise the denominator for the following, (do not simplify): \\(\\dfrac{\\sqrt{3}}{\\sqrt{3}-3}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3+3\\sqrt{3}}{-6}\\)",
+            "\\(\\dfrac{3+3\\sqrt{3}}{12}\\)",
+            "\\(\\dfrac{3-3\\sqrt{3}}{-6}\\)",
+            "\\(\\dfrac{3+3\\sqrt{3}}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by the CONJUGATE \\(\\sqrt{3}+3\\).",
+          "steps": [
+            {
+              "explain": "Multiply by \\(\\dfrac{\\sqrt{3}+3}{\\sqrt{3}+3}\\).",
+              "work": "\\(\\dfrac{\\sqrt{3}(\\sqrt{3}+3)}{(\\sqrt{3}-3)(\\sqrt{3}+3)}\\)"
+            },
+            {
+              "explain": "Denominator: difference of squares.",
+              "work": "\\((\\sqrt{3})^2-3^2=3-9=-6\\)"
+            },
+            {
+              "explain": "Numerator: expand.",
+              "work": "\\(\\sqrt{3}\\times\\sqrt{3}+3\\sqrt{3}=3+3\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Write the fraction (not simplified further).",
+              "work": "\\(\\dfrac{3+3\\sqrt{3}}{-6}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator",
+              "note": "Use the conjugate and the difference of squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort St High School Year 10 Common Task 2 2023",
+            "school": "Fort St Yearly",
             "grade": "10",
             "origin": "teacher"
           }
