@@ -85,6 +85,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bh2020-y11e1-q14e",
+          "type": "review",
+          "stem": "Consider the expression \\((1+x)^n=\\binom{n}{0}+\\binom{n}{1}x+\\binom{n}{2}x^2+\\cdots+\\binom{n}{n}x^n\\). Multiplying by \\(x\\), another identity is obtained: \\(x(1+x)^n=\\binom{n}{0}x+\\binom{n}{1}x^2+\\cdots+\\binom{n}{n}x^{n+1}\\). Find the function \\(F(n)\\) such that \\(2\\binom{n}{1}+3\\binom{n}{2}+4\\binom{n}{3}+\\cdots+n\\binom{n}{n-1}=(n+2)F(n)\\).",
+          "difficulty": "hard",
+          "answer": "Differentiate both sides of the second identity: LHS = (1+x)^n + nx(1+x)^(n−1); RHS = 1 + 2C(n,1)x + 3C(n,2)x² + … + (n+1)C(n,n)xⁿ. Put x = 1: 2ⁿ + n2^(n−1) = 1 + 2C(n,1) + 3C(n,2) + … + n·C(n,n−1) + (n+1). So the required sum = 2^(n−1)(n+2) − (n+2) = (n+2)(2^(n−1) − 1), giving F(n) = 2^(n−1) − 1.",
+          "manual": true,
+          "hint": "Differentiate the identity \\(x(1+x)^n=\\ldots\\) with respect to \\(x\\) (product rule), then substitute \\(x=1\\).",
+          "steps": [
+            {
+              "explain": "Differentiate the left side (product rule).",
+              "work": "\\(\\dfrac{d}{dx}\\left[x(1+x)^n\\right]=(1+x)^n+nx(1+x)^{n-1}=(1+x)^{n-1}(1+x+nx)\\)"
+            },
+            {
+              "explain": "Differentiate the right side term by term (each \\(x^{k+1}\\) gives \\((k+1)x^k\\)).",
+              "work": "\\(1+2\\binom{n}{1}x+3\\binom{n}{2}x^2+\\cdots+n\\binom{n}{n-1}x^{n-1}+(n+1)\\binom{n}{n}x^n\\)"
+            },
+            {
+              "explain": "Substitute \\(x=1\\) in both sides.",
+              "work": "\\(2^{n-1}(n+2)=1+2\\binom{n}{1}+3\\binom{n}{2}+\\cdots+n\\binom{n}{n-1}+(n+1)\\)"
+            },
+            {
+              "explain": "Isolate the required sum: subtract \\(1+(n+1)=n+2\\).",
+              "work": "\\(2\\binom{n}{1}+3\\binom{n}{2}+\\cdots+n\\binom{n}{n-1}=2^{n-1}(n+2)-(n+2)=(n+2)\\left(2^{n-1}-1\\right)\\)"
+            },
+            {
+              "explain": "Compare with \\((n+2)F(n)\\).",
+              "work": "\\(F(n)=2^{n-1}-1\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the function",
+              "note": "Differentiate the second identity and substitute \\(x=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher",
+            "note": "Open response: teacher review."
+          }
         }
       ]
     }

@@ -764,6 +764,185 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bh2020-y11e1-mc7",
+          "type": "mc",
+          "stem": "\\(2\\cos6\\theta\\sin2\\theta\\) is equivalent to",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\cos4\\theta+\\cos8\\theta\\)",
+            "\\(\\cos8\\theta-\\cos4\\theta\\)",
+            "\\(\\sin8\\theta+\\sin4\\theta\\)",
+            "\\(\\sin8\\theta-\\sin4\\theta\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the product-to-sum identity: \\(2\\cos A\\sin B=\\sin(A+B)-\\sin(A-B)\\) (on the reference sheet).",
+          "steps": [
+            {
+              "explain": "Identify \\(A=6\\theta\\) and \\(B=2\\theta\\).",
+              "work": "\\(2\\cos6\\theta\\sin2\\theta\\)"
+            },
+            {
+              "explain": "Apply the identity.",
+              "work": "\\(=\\sin(6\\theta+2\\theta)-\\sin(6\\theta-2\\theta)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(=\\sin8\\theta-\\sin4\\theta\\) → <span style=\"color:#047857;font-weight:700\">D</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equivalent to",
+              "note": "Product-to-sum formula for 2cos A sin B."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q11c",
+          "type": "mc",
+          "stem": "Simplify \\(\\dfrac{\\cos2\\alpha-\\cos\\alpha+1}{\\sin2\\alpha-\\sin\\alpha}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cot\\alpha\\)",
+            "\\(\\tan\\alpha\\)",
+            "\\(\\cos\\alpha\\)",
+            "\\(\\dfrac{1}{\\sin\\alpha}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the double angle formulas \\(\\cos2\\alpha=2\\cos^2\\alpha-1\\) and \\(\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha\\).",
+          "steps": [
+            {
+              "explain": "Replace the double angles.",
+              "work": "\\(\\dfrac{(2\\cos^2\\alpha-1)-\\cos\\alpha+1}{2\\sin\\alpha\\cos\\alpha-\\sin\\alpha}\\)"
+            },
+            {
+              "explain": "Simplify the numerator and factorise both parts.",
+              "work": "\\(\\dfrac{2\\cos^2\\alpha-\\cos\\alpha}{\\sin\\alpha(2\\cos\\alpha-1)}=\\dfrac{\\cos\\alpha(2\\cos\\alpha-1)}{\\sin\\alpha(2\\cos\\alpha-1)}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((2\\cos\\alpha-1)\\).",
+              "work": "\\(\\dfrac{\\cos\\alpha}{\\sin\\alpha}=\\cot\\alpha\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use the double angle formulas and factorise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q14a",
+          "type": "mc",
+          "stem": "Express \\(\\cot\\dfrac{A}{2}-2\\cot A\\) as a single trigonometric ratio.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\tan\\dfrac{A}{2}\\)",
+            "\\(\\cot\\dfrac{A}{2}\\)",
+            "\\(\\tan A\\)",
+            "\\(2\\tan\\dfrac{A}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(t=\\tan\\dfrac{A}{2}\\). Then \\(\\cot\\dfrac{A}{2}=\\dfrac{1}{t}\\) and \\(\\tan A=\\dfrac{2t}{1-t^2}\\) so \\(\\cot A=\\dfrac{1-t^2}{2t}\\).",
+          "steps": [
+            {
+              "explain": "Substitute the t-formulas.",
+              "work": "\\(\\dfrac{1}{t}-2\\times\\dfrac{1-t^2}{2t}\\)"
+            },
+            {
+              "explain": "Cancel the 2 and combine over \\(t\\).",
+              "work": "\\(\\dfrac{1-(1-t^2)}{t}=\\dfrac{t^2}{t}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(t=\\tan\\dfrac{A}{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "single trigonometric ratio",
+              "note": "Use t = tan(A/2) formulas."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bh2020-y11e1-q14d",
+          "type": "mc",
+          "stem": "Find the exact value of \\(\\cos\\left[\\sin^{-1}\\dfrac{5}{13}+\\tan^{-1}\\dfrac{3}{5}\\right]\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{45}{13\\sqrt{34}}\\)",
+            "\\(\\dfrac{75}{13\\sqrt{34}}\\)",
+            "\\(\\dfrac{15}{13\\sqrt{34}}\\)",
+            "\\(\\dfrac{60}{13\\sqrt{34}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(\\alpha=\\sin^{-1}\\dfrac{5}{13}\\) and \\(\\beta=\\tan^{-1}\\dfrac{3}{5}\\). Draw right triangles to find \\(\\cos\\alpha,\\ \\sin\\alpha,\\ \\cos\\beta,\\ \\sin\\beta\\), then use the compound angle formula.",
+          "steps": [
+            {
+              "explain": "Right triangles: \\(\\sin\\alpha=\\dfrac{5}{13}\\) gives sides 5, 12, 13; \\(\\tan\\beta=\\dfrac{3}{5}\\) gives sides 3, 5, \\(\\sqrt{34}\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 170\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"130\" x2=\"160\" y2=\"130\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"160\" y1=\"130\" x2=\"160\" y2=\"80\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"130\" x2=\"160\" y2=\"80\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M150,130 L150,120 L160,120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><polyline points=\"66,130 66,129.6 66,129.1 66,128.7 65.9,128.3 65.9,127.9 65.9,127.4 65.8,127 65.8,126.6 65.7,126.2 65.6,125.7 65.6,125.3 65.5,124.9 65.4,124.5 65.3,124.1 65.2,123.6 65.1,123.2 65,122.8 64.9,122.4 64.7,122 64.6,121.6 64.5,121.2 64.3,120.8 64.2,120.4 64,120\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"138.1\" y=\"114.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#b91c1c\">α</text><text x=\"100\" y=\"148.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"174\" y=\"109.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5</text><text x=\"94.6\" y=\"96.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">13</text><line x1=\"250\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"130\" x2=\"300\" y2=\"100\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"130\" x2=\"300\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M290,130 L290,120 L300,120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><polyline points=\"272,130 272,129.5 272,129 271.9,128.5 271.9,128 271.9,127.5 271.8,127 271.7,126.5 271.6,126.1 271.5,125.6 271.4,125.1 271.3,124.6 271.2,124.1 271.1,123.7 270.9,123.2 270.8,122.7 270.6,122.2 270.4,121.8 270.2,121.3 270,120.9 269.8,120.4 269.6,120 269.4,119.5 269.1,119.1 268.9,118.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"307.8\" y=\"118.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1d4ed8\">β</text><text x=\"275\" y=\"148.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5</text><text x=\"320\" y=\"119.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"264.7\" y=\"102.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">√34</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the ratios.",
+              "work": "\\(\\cos\\alpha=\\dfrac{12}{13},\\ \\sin\\alpha=\\dfrac{5}{13},\\ \\cos\\beta=\\dfrac{5}{\\sqrt{34}},\\ \\sin\\beta=\\dfrac{3}{\\sqrt{34}}\\)"
+            },
+            {
+              "explain": "Compound angle formula.",
+              "work": "\\(\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(=\\dfrac{12}{13}\\times\\dfrac{5}{\\sqrt{34}}-\\dfrac{5}{13}\\times\\dfrac{3}{\\sqrt{34}}=\\dfrac{60-15}{13\\sqrt{34}}=\\dfrac{45}{13\\sqrt{34}}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{75}{13\\sqrt{34}}\\) adds the two products (the formula has a minus).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Use cos(α + β) with right-angled triangles."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
+            "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
