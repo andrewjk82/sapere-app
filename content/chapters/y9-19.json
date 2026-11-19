@@ -50,6 +50,150 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "form3hy2022-q2ai",
+          "type": "mc",
+          "stem": "Nine people were asked to complete a puzzle. Their completion times, in minutes, are presented in the stem-and-leaf plot above. For the time taken to complete the puzzle, find the mode.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"80\" y1=\"22\" x2=\"80\" y2=\"126\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"66\" y=\"42\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"94\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"66\" y=\"68\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"111\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"128\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"66\" y=\"94\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"94\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"128\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"145\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"66\" y=\"120\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"94\" y=\"120\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"190\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2 | 1 means 21 minutes</text></svg>"
+          },
+          "options": [
+            "\\(27\\)",
+            "\\(21\\)",
+            "\\(22\\)",
+            "\\(32\\)"
+          ],
+          "answer": 0,
+          "hint": "The MODE is the value that appears most often.",
+          "steps": [
+            {
+              "explain": "Read all the values from the plot (stem then leaf).",
+              "work": "\\(4,\\ 10,\\ 14,\\ 19,\\ 21,\\ 22,\\ 27,\\ 27,\\ 32\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"80\" y1=\"22\" x2=\"80\" y2=\"126\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"66\" y=\"42\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"94\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"66\" y=\"68\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"111\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"128\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"66\" y=\"94\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"94\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"128\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"145\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"66\" y=\"120\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"94\" y=\"120\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"190\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2 | 1 means 21 minutes</text><rect x=\"90\" y=\"77\" width=\"16\" height=\"23\" rx=\"4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><rect x=\"124\" y=\"77\" width=\"32\" height=\"23\" rx=\"4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for the repeated value: 27 appears twice, all others once.",
+              "work": ""
+            },
+            {
+              "explain": "Mode.",
+              "work": "\\(27\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the mode",
+              "note": "The mode is the most frequent value."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q2aii",
+          "type": "mc",
+          "stem": "Nine people were asked to complete a puzzle. Their completion times, in minutes, are presented in the stem-and-leaf plot above. For the time taken to complete the puzzle, find the median.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"80\" y1=\"22\" x2=\"80\" y2=\"126\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"66\" y=\"42\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"94\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"66\" y=\"68\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"111\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"128\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"66\" y=\"94\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"94\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"128\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"145\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"66\" y=\"120\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"94\" y=\"120\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"190\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2 | 1 means 21 minutes</text></svg>"
+          },
+          "options": [
+            "\\(21\\)",
+            "\\(22\\)",
+            "\\(27\\)",
+            "\\(19\\)"
+          ],
+          "answer": 0,
+          "hint": "The MEDIAN is the middle value when the data is in order. With 9 values it is the 5th.",
+          "steps": [
+            {
+              "explain": "The plot is already in order.",
+              "work": "\\(4,\\ 10,\\ 14,\\ 19,\\ 21,\\ 22,\\ 27,\\ 27,\\ 32\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"80\" y1=\"22\" x2=\"80\" y2=\"126\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"66\" y=\"42\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"94\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"66\" y=\"68\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"111\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"128\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"66\" y=\"94\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"94\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"128\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"145\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"66\" y=\"120\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"94\" y=\"120\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"190\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2 | 1 means 21 minutes</text><rect x=\"90\" y=\"77\" width=\"16\" height=\"23\" rx=\"4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><rect x=\"124\" y=\"77\" width=\"32\" height=\"23\" rx=\"4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Position of the middle value of 9: \\(\\dfrac{9+1}{2}=5\\)th.",
+              "work": ""
+            },
+            {
+              "explain": "The 5th value is \\(21\\) (four values are below, four above).",
+              "work": "\\(21\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the median",
+              "note": "The median is the middle value of the ordered data."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q2aiii",
+          "type": "mc",
+          "stem": "Nine people were asked to complete a puzzle. Their completion times, in minutes, are presented in the stem-and-leaf plot above. For the time taken to complete the puzzle, find the range.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"80\" y1=\"22\" x2=\"80\" y2=\"126\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"66\" y=\"42\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"94\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"66\" y=\"68\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"111\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"128\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"66\" y=\"94\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"94\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"128\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"145\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"66\" y=\"120\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"94\" y=\"120\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"190\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2 | 1 means 21 minutes</text></svg>"
+          },
+          "options": [
+            "\\(28\\)",
+            "\\(32\\)",
+            "\\(4\\)",
+            "\\(29\\)"
+          ],
+          "answer": 0,
+          "hint": "Range = highest value − lowest value.",
+          "steps": [
+            {
+              "explain": "Highest value: \\(32\\) (stem 3, leaf 2). Lowest value: \\(4\\) (stem 0, leaf 4).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"80\" y1=\"22\" x2=\"80\" y2=\"126\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"66\" y=\"42\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"94\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"66\" y=\"68\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"94\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">0</text><text x=\"111\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"128\" y=\"68\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"66\" y=\"94\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"94\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"111\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"128\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"145\" y=\"94\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">7</text><text x=\"66\" y=\"120\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"94\" y=\"120\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"190\" y=\"42\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\">2 | 1 means 21 minutes</text><rect x=\"90\" y=\"77\" width=\"16\" height=\"23\" rx=\"4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><rect x=\"124\" y=\"77\" width=\"32\" height=\"23\" rx=\"4\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-dasharray=\"4 3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(32-4=28\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(28\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the range",
+              "note": "Range = largest − smallest."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1081,6 +1225,210 @@
             "The charts rank wealth per adult, not total national wealth; China is outside the top 10 on these measures."
           ],
           "answer": 3
+        },
+        {
+          "id": "form3hy2022-q6ci",
+          "type": "mc",
+          "stem": "The number of cookies eaten each day by the Cookie Monster was recorded for 20 days. The results were recorded in the table above. For the number of cookies eaten per day find the mode.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"280\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"80\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Number of Cookies</text><text x=\"220\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency</text><line x1=\"10\" y1=\"48\" x2=\"290\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"290\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"290\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"290\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"290\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"80\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"220\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"80\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"220\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"80\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"220\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"80\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"220\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"80\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"220\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text></svg>"
+          },
+          "options": [
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "The mode is the value with the HIGHEST FREQUENCY (not the highest frequency number itself).",
+          "steps": [
+            {
+              "explain": "Look at the frequency column: 4, 10, 3, 2, 1.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Cookies</text><text x=\"155\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency f</text><text x=\"285\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Total  Σ</text><line x1=\"10\" y1=\"48\" x2=\"370\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"370\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"370\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"370\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"370\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"370\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"60\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"155\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"285\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">8 × 4 = 32</text><text x=\"60\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"155\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"285\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">9 × 10 = 90</text><text x=\"60\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"155\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"285\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">10 × 3 = 30</text><text x=\"60\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"155\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"285\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">11 × 2 = 22</text><text x=\"60\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"155\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">12 × 1 = 12</text><text x=\"60\" y=\"207\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\"></text></svg>"
+              }
+            },
+            {
+              "explain": "The largest frequency is 10, which belongs to 9 cookies.",
+              "work": ""
+            },
+            {
+              "explain": "Mode.",
+              "work": "\\(9\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(10\\) is the frequency, not the number of cookies.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the mode",
+              "note": "The mode has the highest frequency."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q6cii",
+          "type": "mc",
+          "stem": "The number of cookies eaten each day by the Cookie Monster was recorded for 20 days. The results were recorded in the table above. For the number of cookies eaten per day find the median.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"280\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"80\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Number of Cookies</text><text x=\"220\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency</text><line x1=\"10\" y1=\"48\" x2=\"290\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"290\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"290\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"290\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"290\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"80\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"220\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"80\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"220\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"80\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"220\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"80\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"220\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"80\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"220\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text></svg>"
+          },
+          "options": [
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(9.5\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "20 values: the median is the mean of the 10th and 11th values in order.",
+          "steps": [
+            {
+              "explain": "Cumulative count: 8 → positions 1–4, 9 → positions 5–14, 10 → 15–17, 11 → 18–19, 12 → 20.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Cookies</text><text x=\"155\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency f</text><text x=\"285\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Total  Σ</text><line x1=\"10\" y1=\"48\" x2=\"370\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"370\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"370\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"370\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"370\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"370\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"60\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"155\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"285\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">8 × 4 = 32</text><text x=\"60\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"155\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"285\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">9 × 10 = 90</text><text x=\"60\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"155\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"285\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">10 × 3 = 30</text><text x=\"60\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"155\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"285\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">11 × 2 = 22</text><text x=\"60\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"155\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">12 × 1 = 12</text><text x=\"60\" y=\"207\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\"></text></svg>"
+              }
+            },
+            {
+              "explain": "The 10th and 11th values both lie in positions 5–14, so both are 9.",
+              "work": ""
+            },
+            {
+              "explain": "Median.",
+              "work": "\\(\\dfrac{9+9}{2}=9\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the median",
+              "note": "Use the 10th and 11th values of the 20."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q6ciii",
+          "type": "mc",
+          "stem": "The number of cookies eaten each day by the Cookie Monster was recorded for 20 days. The results were recorded in the table above. For the number of cookies eaten per day find the mean.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"280\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"80\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Number of Cookies</text><text x=\"220\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency</text><line x1=\"10\" y1=\"48\" x2=\"290\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"290\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"290\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"290\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"290\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"80\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"220\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"80\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"220\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"80\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"220\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"80\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"220\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"80\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"220\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text></svg>"
+          },
+          "options": [
+            "\\(9.3\\)",
+            "\\(10\\)",
+            "\\(9\\)",
+            "\\(9.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Mean = (sum of all values) ÷ (number of values). Each value counts as many times as its frequency.",
+          "steps": [
+            {
+              "explain": "Multiply each number of cookies by its frequency.",
+              "work": "\\(8\\times4=32,\\ 9\\times10=90,\\ 10\\times3=30,\\ 11\\times2=22,\\ 12\\times1=12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Cookies</text><text x=\"155\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency f</text><text x=\"285\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Total  Σ</text><line x1=\"10\" y1=\"48\" x2=\"370\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"370\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"370\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"370\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"370\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"370\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"60\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"155\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"285\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">8 × 4 = 32</text><text x=\"60\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"155\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"285\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">9 × 10 = 90</text><text x=\"60\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"155\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"285\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">10 × 3 = 30</text><text x=\"60\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"155\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"285\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">11 × 2 = 22</text><text x=\"60\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"155\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">12 × 1 = 12</text><text x=\"60\" y=\"207\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\"></text></svg>"
+              }
+            },
+            {
+              "explain": "Add the products.",
+              "work": "\\(32+90+30+22+12=186\\)"
+            },
+            {
+              "explain": "Divide by the total frequency 20.",
+              "work": "\\(\\dfrac{186}{20}=9.3\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(10\\) is the mean of 8, 9, 10, 11, 12 ignoring the frequencies.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the mean",
+              "note": "Multiply by the frequencies, add, divide by 20."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q6civ",
+          "type": "mc",
+          "stem": "The number of cookies eaten each day by the Cookie Monster was recorded for 20 days. The results were recorded in the table above. State whether this distribution is symmetrical, positively skewed or negatively skewed.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"280\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"80\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Number of Cookies</text><text x=\"220\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency</text><line x1=\"10\" y1=\"48\" x2=\"290\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"290\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"290\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"290\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"290\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"290\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"80\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"220\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"80\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"220\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"80\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"220\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"80\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"220\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"80\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"220\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text></svg>"
+          },
+          "options": [
+            "Positively skewed",
+            "Negatively skewed",
+            "Symmetrical",
+            "It cannot be determined"
+          ],
+          "answer": 0,
+          "hint": "Look at where most of the data sits and where the long 'tail' points.",
+          "steps": [
+            {
+              "explain": "Most of the data is at the LOW end: 8 and 9 (14 of the 20 days).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"60\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Cookies</text><text x=\"155\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Frequency f</text><text x=\"285\" y=\"36\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Total  Σ</text><line x1=\"10\" y1=\"48\" x2=\"370\" y2=\"48\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"76\" x2=\"370\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"104\" x2=\"370\" y2=\"104\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"132\" x2=\"370\" y2=\"132\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"160\" x2=\"370\" y2=\"160\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"10\" y1=\"188\" x2=\"370\" y2=\"188\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><line x1=\"200\" y1=\"10\" x2=\"200\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"60\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">8</text><text x=\"155\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">4</text><text x=\"285\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">8 × 4 = 32</text><text x=\"60\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">9</text><text x=\"155\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"285\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">9 × 10 = 90</text><text x=\"60\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">10</text><text x=\"155\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">3</text><text x=\"285\" y=\"123\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">10 × 3 = 30</text><text x=\"60\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">11</text><text x=\"155\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">2</text><text x=\"285\" y=\"151\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">11 × 2 = 22</text><text x=\"60\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">12</text><text x=\"155\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\">1</text><text x=\"285\" y=\"179\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">12 × 1 = 12</text><text x=\"60\" y=\"207\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\"></text></svg>"
+              }
+            },
+            {
+              "explain": "There is a thin tail towards the HIGH end (10, 11, 12).",
+              "work": ""
+            },
+            {
+              "explain": "A tail to the right (higher values) means the distribution is positively skewed.",
+              "work": "<span style=\"color:#047857;font-weight:700\">Positively skewed</span> → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Also the mean (9.3) is greater than the median (9), which fits positive skew.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "State whether this distribution",
+              "note": "The tail points to the larger values: positively skewed."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

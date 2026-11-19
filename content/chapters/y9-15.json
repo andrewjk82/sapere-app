@@ -1287,6 +1287,52 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form3hy2022-q3diii",
+          "type": "mc",
+          "stem": "Factorise fully: \\(3x^2-15x+12\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(3(x-1)(x-4)\\)",
+            "\\((3x-3)(x-4)\\)",
+            "\\(3(x+1)(x+4)\\)",
+            "\\(3(x-2)(x-2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Take out the common factor 3 first, then factorise the quadratic inside.",
+          "steps": [
+            {
+              "explain": "Common factor 3.",
+              "work": "\\(3(x^2-5x+4)\\)"
+            },
+            {
+              "explain": "Find two numbers that multiply to 4 and add to \\(-5\\): \\(-1\\) and \\(-4\\).",
+              "work": ""
+            },
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "\\(3(x-1)(x-4)\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\((3x-3)(x-4)\\) is not FULLY factorised.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise fully",
+              "note": "Take out the common factor first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2060,6 +2106,52 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form3hy2022-q3c",
+          "type": "mc",
+          "stem": "Simplify \\(\\dfrac{2p^3}{9}\\times\\dfrac{6}{p^2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{4p}{3}\\)",
+            "\\(\\dfrac{4p^5}{3}\\)",
+            "\\(\\dfrac{12p}{9}\\)",
+            "\\(\\dfrac{4}{3p}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply tops and bottoms, then cancel common factors (numbers and powers of \\(p\\)).",
+          "steps": [
+            {
+              "explain": "Multiply across.",
+              "work": "\\(\\dfrac{2p^3\\times6}{9\\times p^2}=\\dfrac{12p^3}{9p^2}\\)"
+            },
+            {
+              "explain": "Divide numbers by their HCF 3 and subtract the powers.",
+              "work": "\\(\\dfrac{12}{9}=\\dfrac{4}{3},\\qquad p^3\\div p^2=p\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\dfrac{4p}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{12p}{9}\\) is not fully simplified.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Cancel common factors and subtract the powers."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2662,6 +2754,52 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form3hy2022-q8d",
+          "type": "mc",
+          "stem": "Express \\(\\left(\\dfrac{c^2+b^2-a^2}{2bc}-1\\right)\\div\\left(\\dfrac{c^2-b^2-a^2}{2ab}-1\\right)\\) as a single fraction in simplest form.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{a(a-b+c)}{c(a+b+c)}\\)",
+            "\\(\\dfrac{a(a+b+c)}{c(a-b+c)}\\)",
+            "\\(\\dfrac{a}{c}\\)",
+            "\\(\\dfrac{a(a-b+c)}{c(a+b-c)}\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine each bracket into a single fraction first, then factorise the numerators as a difference of two squares.",
+          "steps": [
+            {
+              "explain": "First bracket: common denominator.",
+              "work": "\\(\\dfrac{c^2+b^2-a^2-2bc}{2bc}=\\dfrac{(c-b)^2-a^2}{2bc}=\\dfrac{(c-b-a)(c-b+a)}{2bc}\\)"
+            },
+            {
+              "explain": "Second bracket.",
+              "work": "\\(\\dfrac{c^2-b^2-a^2-2ab}{2ab}=\\dfrac{c^2-(a+b)^2}{2ab}=\\dfrac{(c-a-b)(c+a+b)}{2ab}\\)"
+            },
+            {
+              "explain": "Divide = multiply by the reciprocal.",
+              "work": "\\(\\dfrac{(c-b-a)(c-b+a)}{2bc}\\times\\dfrac{2ab}{(c-a-b)(c+a+b)}\\)"
+            },
+            {
+              "explain": "Cancel \\(2b\\) and the common factor \\((c-a-b)\\) (the same as \\(c-b-a\\)).",
+              "work": "\\(\\dfrac{a(a-b+c)}{c(a+b+c)}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "single fraction in simplest form",
+              "note": "Factorise each numerator, then cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2708,6 +2846,52 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "form3hy2022-q7b",
+          "type": "mc",
+          "stem": "Express \\(x^2+\\dfrac{4}{3}x+\\dfrac{4}{9}\\) in the form \\((x+a)^2\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\left(x+\\dfrac{2}{3}\\right)^2\\)",
+            "\\(\\left(x+\\dfrac{4}{3}\\right)^2\\)",
+            "\\(\\left(x+\\dfrac{2}{9}\\right)^2\\)",
+            "\\(\\left(x+\\dfrac{4}{9}\\right)^2\\)"
+          ],
+          "answer": 0,
+          "hint": "In a perfect square \\((x+a)^2=x^2+2ax+a^2\\), the middle coefficient is \\(2a\\).",
+          "steps": [
+            {
+              "explain": "Compare the middle terms.",
+              "work": "\\(2a=\\dfrac{4}{3}\\)"
+            },
+            {
+              "explain": "Solve for \\(a\\).",
+              "work": "\\(a=\\dfrac{4}{3}\\div2=\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Check the last term.",
+              "work": "\\(a^2=\\left(\\dfrac{2}{3}\\right)^2=\\dfrac{4}{9}\\) ✓"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\left(x+\\dfrac{2}{3}\\right)^2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "in the form",
+              "note": "Half the middle coefficient gives a."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

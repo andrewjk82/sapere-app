@@ -2132,6 +2132,52 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "form3hy2022-q1e",
+          "type": "mc",
+          "stem": "Find the value of \\(P\\) if \\(P=\\dfrac{RT}{V}\\), given \\(R=6\\), \\(T=3\\) and \\(V=9\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(18\\)",
+            "\\(162\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace each letter with its number, then multiply and divide.",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(P=\\dfrac{6\\times3}{9}\\)"
+            },
+            {
+              "explain": "Multiply the top.",
+              "work": "\\(P=\\dfrac{18}{9}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(P=2\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(18\\) forgets to divide by V.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value",
+              "note": "Substitute the numbers, then evaluate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4111,6 +4157,140 @@
             "\\(b=\\frac{2a+1}{3-a}\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "form3hy2022-q5ci",
+          "type": "mc",
+          "stem": "Rearrange the following formula to make \\(a\\) the subject: \\(w=H+Ca\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=\\dfrac{w-H}{C}\\)",
+            "\\(a=\\dfrac{w}{C}-H\\)",
+            "\\(a=w-H-C\\)",
+            "\\(a=\\dfrac{w+H}{C}\\)"
+          ],
+          "answer": 0,
+          "hint": "Isolate the term containing \\(a\\) first (subtract \\(H\\)), then divide by \\(C\\).",
+          "steps": [
+            {
+              "explain": "Subtract \\(H\\) from both sides.",
+              "work": "\\(w-H=Ca\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(C\\) (divide the WHOLE left side).",
+              "work": "\\(a=\\dfrac{w-H}{C}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{w}{C}-H\\) divides only one term by \\(C\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rearrange the following formula",
+              "note": "Undo the addition, then the multiplication."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q5cii",
+          "type": "mc",
+          "stem": "Rearrange the following formula to make \\(a\\) the subject: \\(S=\\dfrac{n}{2}(a+l)\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=\\dfrac{2S}{n}-l\\)",
+            "\\(a=\\dfrac{2S-l}{n}\\)",
+            "\\(a=\\dfrac{2S}{n}+l\\)",
+            "\\(a=\\dfrac{S}{2n}-l\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 2, divide by \\(n\\), then subtract \\(l\\).",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 2.",
+              "work": "\\(2S=n(a+l)\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(n\\).",
+              "work": "\\(\\dfrac{2S}{n}=a+l\\)"
+            },
+            {
+              "explain": "Subtract \\(l\\).",
+              "work": "\\(a=\\dfrac{2S}{n}-l\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(\\dfrac{2S-l}{n}\\) subtracts \\(l\\) before dividing by \\(n\\) (it must be after).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rearrange the following formula",
+              "note": "Undo each operation in reverse order."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q7d",
+          "type": "mc",
+          "stem": "Make \\(c\\) the subject of the formula \\(\\dfrac{a}{b}=\\sqrt{1-\\dfrac{c^2}{d^2}}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(c=\\pm\\dfrac{d\\sqrt{b^2-a^2}}{b}\\)",
+            "\\(c=\\pm\\dfrac{d\\sqrt{a^2-b^2}}{b}\\)",
+            "\\(c=\\pm\\dfrac{d\\left(b^2-a^2\\right)}{b^2}\\)",
+            "\\(c=\\pm\\dfrac{db}{\\sqrt{b^2-a^2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Square both sides to remove the root, then isolate \\(c^2\\) and take the square root.",
+          "steps": [
+            {
+              "explain": "Square both sides.",
+              "work": "\\(\\dfrac{a^2}{b^2}=1-\\dfrac{c^2}{d^2}\\)"
+            },
+            {
+              "explain": "Rearrange for the \\(c\\) term.",
+              "work": "\\(\\dfrac{c^2}{d^2}=1-\\dfrac{a^2}{b^2}=\\dfrac{b^2-a^2}{b^2}\\)"
+            },
+            {
+              "explain": "Multiply by \\(d^2\\).",
+              "work": "\\(c^2=\\dfrac{d^2\\left(b^2-a^2\\right)}{b^2}\\)"
+            },
+            {
+              "explain": "Take the square root (positive and negative).",
+              "work": "\\(c=\\pm\\dfrac{d\\sqrt{b^2-a^2}}{b}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Make",
+              "note": "Square first, then isolate c² and take the square root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

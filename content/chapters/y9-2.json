@@ -1642,6 +1642,214 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form3hy2022-q2b",
+          "type": "mc",
+          "stem": "The diagram above shows a right-angled triangle of base length 12 cm and height 16 cm. Find the length of the hypotenuse.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><line x1=\"90\" y1=\"190\" x2=\"210\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"190\" x2=\"90\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"190\" x2=\"90\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M102,190 L102,178 L90,178\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"56\" y=\"114.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">16 cm</text><text x=\"150\" y=\"210.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">12 cm</text></svg>"
+          },
+          "options": [
+            "\\(20\\ \\text{cm}\\)",
+            "\\(28\\ \\text{cm}\\)",
+            "\\(400\\ \\text{cm}\\)",
+            "\\(4\\sqrt{7}\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use Pythagoras: hypotenuse² = sum of the squares of the other two sides.",
+          "steps": [
+            {
+              "explain": "Label the hypotenuse \\(h\\) (opposite the right angle).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:0 auto\"><line x1=\"90\" y1=\"190\" x2=\"210\" y2=\"190\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"190\" x2=\"90\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"210\" y1=\"190\" x2=\"90\" y2=\"30\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M102,190 L102,178 L90,178\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"56\" y=\"114.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#059669\">16 cm</text><text x=\"150\" y=\"210.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#2563eb\">12 cm</text><text x=\"190\" y=\"108.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b91c1c\">h = 20 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(h^2=12^2+16^2=144+256=400\\)"
+            },
+            {
+              "explain": "Square root.",
+              "work": "\\(h=\\sqrt{400}=20\\ \\text{cm}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistakes: \\(28\\) adds the sides; \\(4\\sqrt{7}\\) subtracts the squares.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the length",
+              "note": "Pythagoras' theorem."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q5bi",
+          "type": "mc",
+          "stem": "The diagram above shows a rectangular prism where \\(AD=5\\ \\text{cm}\\) and \\(DC=12\\ \\text{cm}\\). Find the length of \\(AC\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"220\" x2=\"150\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"220\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"150\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"125\" x2=\"40\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"40\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"150\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"55\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"55\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"220\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"220\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"75\" y=\"240.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5 cm</text><text x=\"195\" y=\"199.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">12 cm</text><text x=\"40\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"150\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"220\" y=\"170.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"110\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"40\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"150\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"220\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"110\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">H</text></svg>"
+          },
+          "options": [
+            "\\(13\\ \\text{cm}\\)",
+            "\\(17\\ \\text{cm}\\)",
+            "\\(\\sqrt{119}\\ \\text{cm}\\)",
+            "\\(7\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(AC\\) is the diagonal of the base rectangle \\(ABCD\\). Triangle \\(ADC\\) has a right angle at \\(D\\).",
+          "steps": [
+            {
+              "explain": "Triangle \\(ADC\\) is right-angled at \\(D\\) with legs 5 and 12.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"220\" x2=\"150\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"220\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"150\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"125\" x2=\"40\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"40\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"150\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"55\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"55\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"220\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"220\" x2=\"220\" y2=\"150\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"55\" stroke=\"#059669\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"220\" x2=\"220\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"75\" y=\"240.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5 cm</text><text x=\"195\" y=\"199.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">12 cm</text><text x=\"40\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"150\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"220\" y=\"170.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"110\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"40\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"150\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"220\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"110\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">H</text></svg>"
+              }
+            },
+            {
+              "explain": "Pythagoras.",
+              "work": "\\(AC^2=5^2+12^2=25+144=169\\)"
+            },
+            {
+              "explain": "Square root.",
+              "work": "\\(AC=13\\ \\text{cm}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the length",
+              "note": "Use Pythagoras in the base rectangle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q5bii",
+          "type": "mc",
+          "stem": "The diagram above shows a rectangular prism where \\(AD=5\\ \\text{cm}\\) and \\(DC=12\\ \\text{cm}\\). The length of the space diagonal \\(AG\\) is \\(20\\ \\text{cm}\\). Find the exact length of \\(CG\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"220\" x2=\"150\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"220\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"150\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"125\" x2=\"40\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"40\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"150\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"55\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"55\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"220\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"220\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"75\" y=\"240.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5 cm</text><text x=\"195\" y=\"199.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">12 cm</text><text x=\"40\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"150\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"220\" y=\"170.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"110\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"40\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"150\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"220\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"110\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">H</text></svg>"
+          },
+          "options": [
+            "\\(\\sqrt{231}\\ \\text{cm}\\)",
+            "\\(\\sqrt{569}\\ \\text{cm}\\)",
+            "\\(7\\ \\text{cm}\\)",
+            "\\(13\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Triangle \\(ACG\\) is right-angled at \\(C\\) (the edge \\(CG\\) is vertical). The hypotenuse is \\(AG=20\\) and \\(AC=13\\).",
+          "steps": [
+            {
+              "explain": "In triangle \\(ACG\\): \\(AC=13\\) (part i), \\(AG=20\\) is the hypotenuse.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"40\" y1=\"220\" x2=\"150\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"220\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"150\" x2=\"150\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"125\" x2=\"40\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"40\" y2=\"220\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"125\" x2=\"150\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"55\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"55\" x2=\"110\" y2=\"125\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"220\" x2=\"220\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"55\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"220\" x2=\"220\" y2=\"150\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"55\" stroke=\"#059669\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"220\" x2=\"220\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"75\" y=\"240.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">5 cm</text><text x=\"195\" y=\"199.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">12 cm</text><text x=\"40\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"150\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"220\" y=\"170.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"110\" y=\"240.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text><text x=\"40\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">E</text><text x=\"150\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">F</text><text x=\"220\" y=\"43.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">G</text><text x=\"110\" y=\"113.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">H</text></svg>"
+              }
+            },
+            {
+              "explain": "Pythagoras.",
+              "work": "\\(AG^2=AC^2+CG^2\\ \\Rightarrow\\ 400=169+CG^2\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(CG^2=231\\)"
+            },
+            {
+              "explain": "Exact length (231 has no square factor).",
+              "work": "\\(CG=\\sqrt{231}\\ \\text{cm}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(7\\) is \\(20-13\\) (subtracting lengths instead of squares).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact length",
+              "note": "Pythagoras in the triangle with the space diagonal as hypotenuse."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q6d",
+          "type": "mc",
+          "stem": "The diagram above shows two right-angled triangles \\(ABC\\) and \\(ABD\\), where \\(AB=6\\ \\text{cm}\\), \\(AC=9\\ \\text{cm}\\) and \\(AD=2\\sqrt{29}\\ \\text{cm}\\). Find the exact length of \\(DC\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 170\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"300\" y1=\"48\" x2=\"300\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"120\" x2=\"219.5\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"219.5\" y1=\"120\" x2=\"192.7\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"48\" x2=\"219.5\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"48\" x2=\"192.7\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M289,120 L289,109 L300,109\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"326\" y=\"88.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6 cm</text><text x=\"273.1\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">9 cm</text><text x=\"231.9\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2√29 cm</text><text x=\"300\" y=\"36.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"300\" y=\"140.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"219.5\" y=\"140.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"192.7\" y=\"108.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text></svg>"
+          },
+          "options": [
+            "\\(\\sqrt{5}\\ \\text{cm}\\)",
+            "\\(7\\sqrt{5}\\ \\text{cm}\\)",
+            "\\(3\\sqrt{5}\\ \\text{cm}\\)",
+            "\\(5\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(BC\\) and \\(BD\\) using Pythagoras in each triangle (right angle at \\(B\\)), then subtract: \\(DC=BD-BC\\).",
+          "steps": [
+            {
+              "explain": "Triangle \\(ABC\\): \\(BC^2=9^2-6^2=81-36=45\\), so \\(BC=\\sqrt{45}=3\\sqrt{5}\\).",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 170\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"300\" y1=\"48\" x2=\"300\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"120\" x2=\"219.5\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"219.5\" y1=\"120\" x2=\"192.7\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"48\" x2=\"219.5\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"48\" x2=\"192.7\" y2=\"120\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M289,120 L289,109 L300,109\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"326\" y=\"88.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">6 cm</text><text x=\"273.1\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">9 cm</text><text x=\"231.9\" y=\"67\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\">2√29 cm</text><text x=\"259.8\" y=\"140.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">3√5</text><text x=\"206.1\" y=\"140.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">4√5</text><text x=\"300\" y=\"36.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"300\" y=\"140.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"233.5\" y=\"138.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"192.7\" y=\"108.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#1e293b\" font-style=\"italic\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Triangle \\(ABD\\): \\(BD^2=(2\\sqrt{29})^2-6^2=116-36=80\\), so \\(BD=\\sqrt{80}=4\\sqrt{5}\\).",
+              "work": ""
+            },
+            {
+              "explain": "\\(C\\) lies between \\(D\\) and \\(B\\), so subtract.",
+              "work": "\\(DC=BD-BC=4\\sqrt{5}-3\\sqrt{5}=\\sqrt{5}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(7\\sqrt{5}\\) adds instead of subtracting.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact length",
+              "note": "Find BC and BD with Pythagoras, then subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2478,6 +2686,52 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "form3hy2022-q1aii",
+          "type": "mc",
+          "stem": "Fully simplify: \\(\\sqrt{50}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(5\\sqrt{2}\\)",
+            "\\(25\\sqrt{2}\\)",
+            "\\(10\\sqrt{5}\\)",
+            "\\(2\\sqrt{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 50 as a product containing the largest perfect square factor.",
+          "steps": [
+            {
+              "explain": "The largest perfect square that divides 50 is 25.",
+              "work": "\\(50=25\\times2\\)"
+            },
+            {
+              "explain": "Split the root.",
+              "work": "\\(\\sqrt{50}=\\sqrt{25}\\times\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Evaluate \\(\\sqrt{25}=5\\).",
+              "work": "\\(5\\sqrt{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(25\\sqrt{2}\\) forgets to take the square root of 25.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully simplify",
+              "note": "Pull out the largest perfect square factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2804,6 +3058,52 @@
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2022",
             "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q1ai",
+          "type": "mc",
+          "stem": "Fully simplify: \\(2\\sqrt{3}+5\\sqrt{3}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(7\\sqrt{3}\\)",
+            "\\(10\\sqrt{3}\\)",
+            "\\(7\\sqrt{6}\\)",
+            "\\(21\\)"
+          ],
+          "answer": 0,
+          "hint": "Like surds (the same root) add like like terms: add the numbers in front, keep the \\(\\sqrt{3}\\).",
+          "steps": [
+            {
+              "explain": "Both terms are multiples of \\(\\sqrt{3}\\) (like surds), just as \\(2x+5x\\) are like terms.",
+              "work": "\\(2\\sqrt{3}+5\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Add the coefficients.",
+              "work": "\\(2+5=7\\)"
+            },
+            {
+              "explain": "Keep the surd.",
+              "work": "\\(7\\sqrt{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: the surd does not change when adding, so \\(7\\sqrt{6}\\) is wrong.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully simplify",
+              "note": "Add the coefficients of like surds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
             "grade": "9",
             "origin": "teacher"
           }
@@ -3142,6 +3442,98 @@
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2022",
             "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q1aiii",
+          "type": "mc",
+          "stem": "Fully simplify: \\(\\dfrac{\\sqrt{66}}{\\sqrt{33}}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sqrt{2}\\)",
+            "\\(2\\)",
+            "\\(\\sqrt{33}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide under the root: \\(\\dfrac{\\sqrt{a}}{\\sqrt{b}}=\\sqrt{\\dfrac{a}{b}}\\).",
+          "steps": [
+            {
+              "explain": "Combine into one root.",
+              "work": "\\(\\dfrac{\\sqrt{66}}{\\sqrt{33}}=\\sqrt{\\dfrac{66}{33}}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\dfrac{66}{33}=2\\)"
+            },
+            {
+              "explain": "Answer.",
+              "work": "\\(\\sqrt{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(2\\) forgets the square root.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Fully simplify",
+              "note": "Divide the numbers under one root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q4ci",
+          "type": "mc",
+          "stem": "Evaluate: \\(\\left(3\\sqrt{2}\\right)^2\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(18\\)",
+            "\\(6\\)",
+            "\\(36\\)",
+            "\\(9\\sqrt{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Square BOTH parts: the 3 and the \\(\\sqrt{2}\\).",
+          "steps": [
+            {
+              "explain": "Write as a product.",
+              "work": "\\((3\\sqrt{2})^2=3\\sqrt{2}\\times3\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Multiply numbers and surds separately.",
+              "work": "\\(3\\times3=9,\\qquad\\sqrt{2}\\times\\sqrt{2}=2\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(9\\times2=18\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "Mistake: \\(6\\) squares only the surd and forgets the 3.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Square both the 3 and the surd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
             "grade": "9",
             "origin": "teacher"
           }
@@ -3615,6 +4007,52 @@
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2022",
             "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q2d",
+          "type": "mc",
+          "stem": "Expand and simplify \\(\\left(3\\sqrt{2}-2\\right)\\left(2\\sqrt{2}-1\\right)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(14-7\\sqrt{2}\\)",
+            "\\(10-7\\sqrt{2}\\)",
+            "\\(14+7\\sqrt{2}\\)",
+            "\\(14-\\sqrt{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply each term in the first bracket by each term in the second (FOIL). Remember \\(\\sqrt{2}\\times\\sqrt{2}=2\\).",
+          "steps": [
+            {
+              "explain": "First × First.",
+              "work": "\\(3\\sqrt{2}\\times2\\sqrt{2}=6\\times2=12\\)"
+            },
+            {
+              "explain": "Outer, Inner.",
+              "work": "\\(3\\sqrt{2}\\times(-1)=-3\\sqrt{2},\\qquad-2\\times2\\sqrt{2}=-4\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Last × Last.",
+              "work": "\\((-2)(-1)=2\\)"
+            },
+            {
+              "explain": "Add all four and collect like terms.",
+              "work": "\\(12-3\\sqrt{2}-4\\sqrt{2}+2=14-7\\sqrt{2}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Multiply every term by every term, then collect like terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
             "grade": "9",
             "origin": "teacher"
           }
@@ -4292,6 +4730,94 @@
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2022",
             "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q3b",
+          "type": "mc",
+          "stem": "Express \\(\\dfrac{5}{\\sqrt{3}}\\) with a rational denominator.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{5\\sqrt{3}}{3}\\)",
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(5\\sqrt{3}\\)",
+            "\\(\\dfrac{\\sqrt{3}}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the top and bottom by \\(\\sqrt{3}\\) (this is the same as multiplying by 1).",
+          "steps": [
+            {
+              "explain": "Multiply by \\(\\dfrac{\\sqrt{3}}{\\sqrt{3}}\\).",
+              "work": "\\(\\dfrac{5}{\\sqrt{3}}\\times\\dfrac{\\sqrt{3}}{\\sqrt{3}}\\)"
+            },
+            {
+              "explain": "Top: \\(5\\sqrt{3}\\). Bottom: \\(\\sqrt{3}\\times\\sqrt{3}=3\\).",
+              "work": "\\(\\dfrac{5\\sqrt{3}}{3}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            },
+            {
+              "explain": "The denominator 3 is rational ✓.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational denominator",
+              "note": "Multiply top and bottom by the surd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "form3hy2022-q4b",
+          "type": "mc",
+          "stem": "Express \\(\\dfrac{7}{3-\\sqrt{5}}\\) with a rational denominator in simplest form.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{21+7\\sqrt{5}}{4}\\)",
+            "\\(\\dfrac{21-7\\sqrt{5}}{4}\\)",
+            "\\(\\dfrac{21+7\\sqrt{5}}{14}\\)",
+            "\\(\\dfrac{21+7\\sqrt{5}}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by the CONJUGATE \\(3+\\sqrt{5}\\) (change the sign in the middle).",
+          "steps": [
+            {
+              "explain": "Multiply by \\(\\dfrac{3+\\sqrt{5}}{3+\\sqrt{5}}\\).",
+              "work": "\\(\\dfrac{7(3+\\sqrt{5})}{(3-\\sqrt{5})(3+\\sqrt{5})}\\)"
+            },
+            {
+              "explain": "Denominator: difference of squares.",
+              "work": "\\((3-\\sqrt{5})(3+\\sqrt{5})=9-5=4\\)"
+            },
+            {
+              "explain": "Numerator: expand.",
+              "work": "\\(7(3+\\sqrt{5})=21+7\\sqrt{5}\\)"
+            },
+            {
+              "explain": "Answer (no common factor between 21, 7 and 4).",
+              "work": "\\(\\dfrac{21+7\\sqrt{5}}{4}\\) → <span style=\"color:#047857;font-weight:700\">A</span>"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "rational denominator",
+              "note": "Multiply by the conjugate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form III Mathematics Half-Yearly Examination 2022",
+            "school": "Form III Half-Yearly",
             "grade": "9",
             "origin": "teacher"
           }
