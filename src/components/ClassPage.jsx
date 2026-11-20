@@ -350,14 +350,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
     localCache.set(historyCacheKey(historyKey), { savedAt: Date.now(), list });
     setHistory({ key: historyKey, list, fresh: historyFresh });
   };
-  const shared = { unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
-
-  return (
-    <div className={`cls${clay ? ' cls--clay' : ''}`}>
-      <header className="cls-top">
-        <h2 className="cls-title">Class</h2>
-        <span className="cls-day">{unit.date === today ? 'Today' : shortDate(unit.date)}</span>
-        {dayUnits.length > 1 && (
+  const lessonNav = dayUnits.length > 1 && (
           <nav className="cls-day-list" aria-label="Lessons">
             {dayUnits.map((u) => (
               <button key={u.key} type="button" className={`cls-day-item${u.key === unit.key ? ' is-on' : ''}`} onClick={() => { setPickedKey(u.key); setPadOpen(false); }}>
@@ -365,7 +358,14 @@ export default function ClassPage({ students = [], onSelectStudent }) {
               </button>
             ))}
           </nav>
-        )}
+        );
+  const shared = { lessonNav, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
+
+  return (
+    <div className={`cls${clay ? ' cls--clay' : ''}`}>
+      <header className="cls-top">
+        <h2 className="cls-title">Class</h2>
+        <span className="cls-day">{unit.date === today ? 'Today' : shortDate(unit.date)}</span>
         {historyFailed && (
           <span className="cls-sync" role="alert">
             Couldn’t load lessons.{' '}
@@ -398,7 +398,7 @@ function LessonTime({ unit, isNow }) {
   );
 }
 
-function SoloView({ unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const lesson = unit.sessions[0];
   const studentId = sessionStudentId(lesson);
   const student = findStudent(studentId);
@@ -439,6 +439,8 @@ function SoloView({ unit, sessions, patchSessions, isNow, today, weekFor, findSt
         <LessonTime unit={unit} isNow={isNow} />
         {onSelectStudent && student && <button type="button" className="cls-link" onClick={() => onSelectStudent(student.id)}>Open profile</button>}
       </section>
+
+      {lessonNav}
 
       {sessions && (
         <ClassMonthCalendar
@@ -527,7 +529,7 @@ function SoloView({ unit, sessions, patchSessions, isNow, today, weekFor, findSt
   );
 }
 
-function GroupView({ unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function GroupView({ lessonNav, unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const members = unit.sessions.map((s) => {
     const id = sessionStudentId(s);
     const student = findStudent(id);
@@ -553,6 +555,8 @@ function GroupView({ unit, sessions, isNow, today, weekFor, findStudent, onSelec
         </div>
         <LessonTime unit={unit} isNow={isNow} />
       </section>
+
+      {lessonNav}
 
       <div className="cls-grid">
         <div className="cls-flow">
