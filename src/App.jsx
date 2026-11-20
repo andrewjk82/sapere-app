@@ -725,22 +725,30 @@ function App() {
   // student on the section they were viewing instead of always bouncing to
   // Dashboard — there is no URL router, so this is the only place "current
   // page" lives.
-  const hadStoredTabRef = useRef(false);
   const [activeTab, setActiveTab] = useState(() => {
     try {
-      const stored = sessionStorage.getItem('sapere:activeTab');
-      hadStoredTabRef.current = Boolean(stored);
-      return stored || 'Dashboard';
+      return sessionStorage.getItem('sapere:activeTab') || 'Dashboard';
     } catch {
       return 'Dashboard';
     }
   });
-  // Teachers land on Class (the lesson in progress) on a fresh open; a reload keeps whatever page was open.
+  // Teachers always open on Class (the lesson in progress). The iPad home-screen app is rarely relaunched — iOS keeps
+  // it alive — so coming back after 30+ minutes in the background counts as opening it too.
   const classDefaultDoneRef = useRef(false);
   useEffect(() => {
-    if (!isAdmin || classDefaultDoneRef.current) return;
-    classDefaultDoneRef.current = true;
-    if (!hadStoredTabRef.current) setActiveTab((tab) => (tab === 'Dashboard' ? 'Class' : tab));
+    if (!isAdmin) return undefined;
+    if (!classDefaultDoneRef.current) {
+      classDefaultDoneRef.current = true;
+      setActiveTab('Class');
+    }
+    let hiddenAt = 0;
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') { hiddenAt = Date.now(); return; }
+      if (hiddenAt && Date.now() - hiddenAt > 30 * 60_000) { setSelectedStudentId(null); setActiveTab('Class'); }
+      hiddenAt = 0;
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
   }, [isAdmin]);
   useEffect(() => {
     try {
