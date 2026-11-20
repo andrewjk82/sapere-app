@@ -5,6 +5,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
+import { useClayStyle } from '../utils/clayStyle';
 import './class-page.css';
 
 // Teacher's "Class" page: the lesson happening now (or next today) on one screen.
@@ -267,9 +268,8 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const [pickedKey, setPickedKey] = useState('');
   const unit = dayUnits.find((u) => u.key === pickedKey) || autoPick;
   const [padOpen, setPadOpen] = useState(false);
-  // Trial of the soft "clay" look (pure CSS, scoped to .cls--clay). Remembered per device; the old look stays the default.
-  const [clay, setClay] = useState(() => { try { return localStorage.getItem('sapere:classStyle') === 'clay'; } catch { return false; } });
-  const toggleClay = () => setClay((v) => { const n = !v; try { localStorage.setItem('sapere:classStyle', n ? 'clay' : 'plain'); } catch { /* ignore */ } return n; });
+  // Trial of the soft "clay" look (CSS only, remembered per device, shared with the sidebar). Off by default.
+  const [clay, toggleClay] = useClayStyle();
   const note = useLessonNote(unit?.key || '');
 
   // History: the group's lessons (groupId) or the student's lessons.

@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useClayStyle } from '../utils/clayStyle';
+import './clay-sidebar.css';
 import {
   LayoutDashboard,
   Presentation,
@@ -63,6 +65,7 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) =>
 );
 
 const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowNotifs, unreadCount = 0 }) => {
+  useClayStyle(); // re-render keeps the sidebar in step with the Clay style switch (CSS does the styling)
   const { user, isAdmin, logout } = useAuth();
   const { gradingCount, reportCount } = useAdminFeed();
   const [avatarOpen, setAvatarOpen] = useState(false);
