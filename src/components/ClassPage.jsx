@@ -256,6 +256,9 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const [pickedKey, setPickedKey] = useState('');
   const unit = dayUnits.find((u) => u.key === pickedKey) || autoPick;
   const [padOpen, setPadOpen] = useState(false);
+  // Trial of the soft "clay" look (pure CSS, scoped to .cls--clay). Remembered per device; the old look stays the default.
+  const [clay, setClay] = useState(() => { try { return localStorage.getItem('sapere:classStyle') === 'clay'; } catch { return false; } });
+  const toggleClay = () => setClay((v) => { const n = !v; try { localStorage.setItem('sapere:classStyle', n ? 'clay' : 'plain'); } catch { /* ignore */ } return n; });
   const note = useLessonNote(unit?.key || '');
 
   // History: the group's lessons (groupId) or the student's lessons.
@@ -313,7 +316,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const shared = { unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
-    <div className="cls">
+    <div className={`cls${clay ? ' cls--clay' : ''}`}>
       <header className="cls-top">
         <h2 className="cls-title">Class</h2>
         <span className="cls-day">{unit.date === today ? 'Today' : shortDate(unit.date)}</span>
@@ -329,6 +332,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
         <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.text ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
           Notes
         </button>
+        <button type="button" className="cls-pad-btn cls-style-btn" onClick={toggleClay} aria-pressed={clay}>{clay ? 'Clay style: on' : 'Clay style'}</button>
       </header>
 
       {padOpen && note.loaded && <NotePad key={unit.key} unit={unit} savedText={note.text} onClose={() => setPadOpen(false)} />}
