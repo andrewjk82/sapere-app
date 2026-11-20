@@ -154,7 +154,7 @@ const HomeworkCard = ({ sessions: liveSessions, profile, user }) => {
       )}
 
       {showHistory && (
-        <HomeworkHistory sessions={sessions} onOpen={openHomework} onClose={() => setShowHistory(false)} />
+        <HomeworkHistory sessions={sessions} uid={user?.uid} reloadKey={redoItem ? 'redo' : 'idle'} onOpen={openHomework} onClose={() => setShowHistory(false)} />
       )}
 
       {openItem && openSession && openItem.status !== 'checked' && (
