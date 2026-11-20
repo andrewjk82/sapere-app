@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { collection, doc, getDoc, getDocs, onSnapshot, query, where, writeBatch, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
+import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import './class-page.css';
 
@@ -16,6 +17,8 @@ import './class-page.css';
 // Reads: a live listener on the next 8 days of sessions, one getDocs for the lesson's history, the live
 // admin_daily_summary for today and the earlier days of this week (cached for the tab).
 
+const UPCOMING_CACHE = 'class-upcoming:v1';
+const historyCacheKey = (k) => `class-history:v1:${k}`;
 const dateKey = (d) => d.toLocaleDateString('en-CA');
 const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
 
@@ -218,18 +221,26 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   }, []);
   const today = dateKey(now);
 
-  const [upcoming, setUpcoming] = useState(null);
+  // Stale-while-revalidate: the last lesson list is on the device (localStorage), so the page paints at once and
+  // the live listener replaces it when the server answers. If the server never answers the saved list stays up.
+  const [upcoming, setUpcoming] = useState(() => {
+    const c = localCache.get(UPCOMING_CACHE);
+    return Array.isArray(c?.list) ? c.list.filter((s) => (s.date || '') >= dateKey(new Date())) : null;
+  });
+  const [liveUpcoming, setLiveUpcoming] = useState(false);
   useEffect(() => {
     const end = dateKey(addDays(new Date(`${today}T12:00:00`), 7));
     const q = query(collection(db, 'sessions'), where('date', '>=', today), where('date', '<=', end));
     let unsub = () => {};
     const attach = () => {
       unsub();
-      unsub = onSnapshot(q, (snap) => {
-        setUpcoming(snap.docs.map((d) => ({ id: d.id, ...d.data() })).filter((s) => sessionStudentId(s) && s.attendance !== 'cancelled'));
+      unsub = onSnapshot(q, { includeMetadataChanges: true }, (snap) => {
+        const list = snap.docs.map((d) => ({ id: d.id, ...d.data() })).filter((s) => sessionStudentId(s) && s.attendance !== 'cancelled');
+        setUpcoming(list);
+        if (!snap.metadata.fromCache) { setLiveUpcoming(true); localCache.set(UPCOMING_CACHE, { savedAt: Date.now(), list }); }
       }, () => setUpcoming((prev) => prev || []));
     };
-    const onVis = () => { if (document.visibilityState === 'hidden') { unsub(); unsub = () => {}; } else attach(); };
+    const onVis = () => { if (document.visibilityState === 'hidden') { unsub(); unsub = () => {}; } else { setLiveUpcoming(false); attach(); } };
     attach();
     document.addEventListener('visibilitychange', onVis);
     return () => { unsub(); document.removeEventListener('visibilitychange', onVis); };
@@ -263,17 +274,38 @@ export default function ClassPage({ students = [], onSelectStudent }) {
 
   // History: the group's lessons (groupId) or the student's lessons.
   const historyKey = unit ? (unit.isGroup ? `g:${unit.groupId}` : `s:${sessionStudentId(unit.sessions[0])}`) : '';
-  const [history, setHistory] = useState({ key: '', list: null });
+  const [history, setHistory] = useState({ key: '', list: null, fresh: false });
+  const [historyTry, setHistoryTry] = useState(0);
   useEffect(() => {
     if (!historyKey) return undefined;
     let cancelled = false;
     const [kind, id] = [historyKey.slice(0, 1), historyKey.slice(2)];
-    getDocs(query(collection(db, 'sessions'), where(kind === 'g' ? 'groupId' : 'studentId', '==', id)))
-      .then((snap) => { if (!cancelled) setHistory({ key: historyKey, list: snap.docs.map((d) => ({ id: d.id, ...d.data() })) }); })
-      .catch(() => { if (!cancelled) setHistory({ key: historyKey, list: [] }); });
-    return () => { cancelled = true; };
+    // A live listener, not getDocs: on the iPad a one-off getDocs for this query can wait forever while listeners
+    // keep working (the lesson list above is one). The listener also answers from the on-device copy first.
+    const q = query(collection(db, 'sessions'), where(kind === 'g' ? 'groupId' : 'studentId', '==', id));
+    const stall = window.setTimeout(() => {
+      if (!cancelled) setHistory((h) => (h.key === historyKey && h.list ? h : { key: historyKey, list: null, fresh: false, failed: true }));
+    }, 15000);
+    const unsub = onSnapshot(q, { includeMetadataChanges: true }, (snap) => {
+      if (cancelled) return;
+      // Nothing saved on this device yet and the server has not answered: wait, do not claim "no lessons".
+      if (snap.metadata.fromCache && snap.empty) return;
+      window.clearTimeout(stall);
+      const list = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+      const fresh = !snap.metadata.fromCache;
+      if (fresh) localCache.set(historyCacheKey(historyKey), { savedAt: Date.now(), list });
+      setHistory({ key: historyKey, list, fresh });
+    }, () => { if (!cancelled) setHistory({ key: historyKey, list: null, fresh: false, failed: true }); });
+    return () => { cancelled = true; window.clearTimeout(stall); unsub(); };
+  }, [historyKey, historyTry]);
+  const savedHistory = useMemo(() => {
+    const c = historyKey ? localCache.get(historyCacheKey(historyKey)) : null;
+    return Array.isArray(c?.list) ? c.list : null;
   }, [historyKey]);
-  const sessions = history.key === historyKey ? history.list : null;
+  const here = history.key === historyKey ? history : null;
+  const sessions = here?.list || savedHistory || null;
+  const historyFailed = Boolean(here?.failed) && !sessions;
+  const historyFresh = Boolean(here?.fresh);
 
   // Daily Practice for the week.
   const todaySummary = useLiveDoc(['admin_daily_summary', today]);
@@ -312,7 +344,12 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const findStudent = (id) => students.find((s) => s.id === id || s.uid === id) || null;
   const unitLabel = (u) => (u.isGroup ? `Group (${u.sessions.length})` : firstName(u.sessions[0].studentName));
 
-  const patchSessions = (fn) => setHistory((h) => (h.key === historyKey && h.list ? { ...h, list: fn(h.list) } : h));
+  const patchSessions = (fn) => {
+    if (!sessions) return;
+    const list = fn(sessions);
+    localCache.set(historyCacheKey(historyKey), { savedAt: Date.now(), list });
+    setHistory({ key: historyKey, list, fresh: historyFresh });
+  };
   const shared = { unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
@@ -328,6 +365,15 @@ export default function ClassPage({ students = [], onSelectStudent }) {
               </button>
             ))}
           </nav>
+        )}
+        {historyFailed && (
+          <span className="cls-sync" role="alert">
+            Couldn’t load lessons.{' '}
+            <button type="button" className="cls-link" onClick={() => { setHistory({ key: '', list: null, fresh: false }); setHistoryTry((n) => n + 1); }}>Retry</button>
+          </span>
+        )}
+        {!historyFailed && (!liveUpcoming || (historyKey && !historyFresh)) && (
+          <span className="cls-sync" role="status">{todaySummary.status === 'offline' ? 'Offline – saved data' : 'Updating…'}</span>
         )}
         <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.text ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
           Notes
@@ -379,7 +425,8 @@ function SoloView({ unit, sessions, patchSessions, isNow, today, weekFor, findSt
   const course = Array.isArray(student?.assignedCourse) ? student.assignedCourse[0] : student?.assignedCourse;
   const school = student?.school || student?.schoolName || '';
   // The student's actual school year (profile), not the curriculum year they are being taught.
-  const grade = student?.year || student?.level || progress.year || '';
+  const rawGrade = student?.year || student?.level || progress.year || '';
+  const grade = rawGrade && !/year/i.test(String(rawGrade)) ? `Year ${rawGrade}` : rawGrade;
   const studentName = student?.name || lesson.studentName || 'Student';
 
   return (

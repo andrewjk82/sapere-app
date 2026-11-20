@@ -71,6 +71,8 @@
 .cls-dot.is-none { background: #fff; border: 1px solid #e4e2f3; color: #8b8aa3; }
 
 /* Notepad */
+.cls-sync { color: #8b8aa3; font-size: 0.78rem; font-weight: 600; margin-left: auto; }
+.cls-sync ~ .cls-pad-btn:not(.cls-style-btn) { margin-left: 0 !important; }
 .cls-pad-btn {
   border: 1px solid #e4e2f3; background: #fff; color: #4b4870; border-radius: 10px;
   padding: 7px 14px; font: 600 0.85rem var(--font-sans); cursor: pointer;
