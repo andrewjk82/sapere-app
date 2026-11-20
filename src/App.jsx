@@ -727,6 +727,8 @@ function App() {
   // page" lives.
   const [activeTab, setActiveTab] = useState(() => {
     try {
+      // A device that last signed in as the teacher opens straight on Class (no Dashboard flash while auth loads).
+      if (localStorage.getItem('sapere:teacherDevice') === '1') return 'Class';
       return sessionStorage.getItem('sapere:activeTab') || 'Dashboard';
     } catch {
       return 'Dashboard';
@@ -736,6 +738,7 @@ function App() {
   // it alive — so coming back after 30+ minutes in the background counts as opening it too.
   const classDefaultDoneRef = useRef(false);
   useEffect(() => {
+    try { if (isAdmin) localStorage.setItem('sapere:teacherDevice', '1'); else if (user) localStorage.removeItem('sapere:teacherDevice'); } catch { /* ignore */ }
     if (!isAdmin) return undefined;
     if (!classDefaultDoneRef.current) {
       classDefaultDoneRef.current = true;
@@ -749,7 +752,8 @@ function App() {
     };
     document.addEventListener('visibilitychange', onVis);
     return () => document.removeEventListener('visibilitychange', onVis);
-  }, [isAdmin]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAdmin, Boolean(user)]);
   useEffect(() => {
     try {
       sessionStorage.setItem('sapere:activeTab', activeTab);
@@ -1405,6 +1409,10 @@ function App() {
 
 
     switch (activeTab) {
+      case 'Class':
+        if (isAdmin) return <ClassPage students={students} onSelectStudent={(id) => setSelectedStudentId(id)} />;
+        // A student on a former teacher device: fall through to their Dashboard.
+      // eslint-disable-next-line no-fallthrough
       case 'Dashboard':
         return (
           <Dashboard
@@ -1417,8 +1425,6 @@ function App() {
             onOpenJourneyMap={() => setShowJourneyMap(true)}
           />
         );
-      case 'Class':
-        return <ClassPage students={students} onSelectStudent={(id) => setSelectedStudentId(id)} />;
       case 'Students':
         return (
           <StudentList 
