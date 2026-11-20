@@ -23,3 +23,7 @@ html[data-clay="1"] .app-sidebar__profile {
 }
 html[data-clay="1"] .app-sidebar__profile-name, html[data-clay="1"] .app-sidebar__profile p { font-family: 'Nunito', var(--font-sans); font-weight: 800; color: var(--clay-ink); }
 html[data-clay="1"] .app-sidebar__profile-meta { color: #7a5fd0; }
+
+/* The cream is the page itself, so the Class panel, the sidebar and the margins around them are one colour. */
+html[data-clay="1"] body, html[data-clay="1"] .app-shell, html[data-clay="1"] .app-shell__main { background: #fff4e4; }
+html[data-clay="1"] .app-sidebar { box-shadow: none; }
