@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
 import { doc, setDoc, getDocFromServer, serverTimestamp } from 'firebase/firestore';
 import AuthLayout from './AuthLayout';
+import { touchStudentsSyncMeta } from '../services/studentService';
 import { upsertRegisteredUserLeaderboard } from '../services/leaderboardService';
 
 const Signup = ({ onToggleMode }) => {
@@ -201,6 +202,8 @@ const Signup = ({ onToggleMode }) => {
 
       // 3. Save to Firestore with merge: true to protect data
       await setDoc(doc(db, 'users', user.uid), userData, { merge: true });
+      // New student finished signup: tell open teacher screens the roster changed (they listen to this doc).
+      touchStudentsSyncMeta(null, true).catch(() => {});
 
       // 4. Sync leaderboard with completed profile
       try {

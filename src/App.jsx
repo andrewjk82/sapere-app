@@ -9,6 +9,7 @@ import { useProfile } from './context/ProfileContext';
 import { examIdForTab } from './utils/examHub';
 import { syncSpecialWeekly } from './services/specialWeeklyService';
 import { studentService } from './services/studentService';
+import useLiveDoc from './hooks/useLiveDoc';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
 import MedalCelebrationModal from './components/MedalCelebrationModal';
@@ -1160,6 +1161,21 @@ function App() {
     // profileLoaded is included so non-admin students wait for profile before fetching.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.uid, isAdmin, profileLoaded]);
+
+  // Live roster signal (teacher only): sync_meta/students_admin is bumped whenever the roster changes (student
+  // added/edited/signed up). One read per change while the app is on screen; a bump rescans the roster from the
+  // server, so the teacher's iPad no longer waits for a cache age-out or a manual Sync.
+  const rosterMeta = useLiveDoc(['sync_meta', 'students_admin'], { enabled: Boolean(user && isAdmin) });
+  const rosterVersionRef = useRef(null);
+  useEffect(() => {
+    if (rosterMeta.status !== 'live' || !rosterMeta.data) return;
+    const version = Number(rosterMeta.data.version || 0);
+    const seen = rosterVersionRef.current;
+    rosterVersionRef.current = version;
+    if (seen === null || version <= seen) return;
+    handleRefreshStudents(true, true).catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rosterMeta.status, rosterMeta.data]);
 
   // A background roster revalidation that did rescan replaces the cached list on screen.
   useEffect(() => studentService.onRosterUpdate((fresh) => {
