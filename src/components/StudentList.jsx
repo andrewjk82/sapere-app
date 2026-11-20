@@ -212,6 +212,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       await onRefreshStudents(false, true);
     } catch (err) {
       console.error('Refresh failed:', err);
+      window.alert('Sync failed — the student list could not be fully loaded. Check the connection and try again.');
     } finally {
       setIsRefreshing(false);
     }

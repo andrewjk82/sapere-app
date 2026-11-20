@@ -1114,18 +1114,23 @@ function App() {
     // Full-page spinner only on explicit user-triggered refresh — never on login.
     if (!silent) setLoading(true);
 
+    let syncError = null;
     try {
       // Cap wait so a slow/hanging roster fetch never traps the whole shell.
       const data = await Promise.race([
         studentService.getStudents(user.uid, isAdmin, { forceRefresh }),
         new Promise((_, reject) => {
-          window.setTimeout(() => reject(new Error('students-timeout')), 10000);
+          window.setTimeout(() => reject(new Error('students-timeout')), forceRefresh ? 35000 : 10000);
         }),
       ]);
       setStudents(Array.isArray(data) ? data : []);
       setLoadError('');
     } catch (err) {
-      if (err?.message === 'students-timeout') {
+      if (forceRefresh) {
+        // Explicit Sync failed: keep the roster on screen and tell the caller (StudentList shows it).
+        console.error(err);
+        syncError = err;
+      } else if (err?.message === 'students-timeout') {
         console.warn('[App] Student roster fetch timed out — shell stays open');
         // Keep any previously loaded students; don't blank the UI.
         setLoadError('');
@@ -1140,6 +1145,7 @@ function App() {
     } finally {
       setLoading(false);
     }
+    if (syncError) throw syncError;
   }, [user, profileLoaded, hasProfile, isAdmin]);
 
 
