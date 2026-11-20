@@ -16591,178 +16591,194 @@
           "xp": 1
         },
         {
-          "id": "y12a-8e-q5ai",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\na) i) What does the initial loan amount to after 48 months? Write as a formula, e.g. 15000*1.01^48.",
-          "options": [
-            "\\(15000*1.01^48\\)",
-            "\\(15000*1.01^49\\)",
-            "\\(15000*1.01^47\\)",
-            "\\(15000*1.01^50\\)"
-          ],
-          "answer": 0,
-          "solution": "The correct answer is \\(15000*1.01^48\\).",
-          "steps": [
+          "id": "y12a-8e-q5",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A personal loan of \\(\\$15000\\) is taken out with a bank for four years at an interest rate of \\(12\\%\\) per annum, compounded monthly (\\(1\\%\\) per month). Let \\(M\\) be the size of each monthly instalment, paid at the end of each month, and let \\(A_{48}\\) be the amount owing on the loan after \\(48\\) months.",
+          "parts": [
             {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "\\(15000*1.01^48\\)"
+              "id": "y12a-8e-q5ai",
+              "type": "mc",
+              "stem": "What does the original loan of \\(\\$15000\\) grow to after \\(48\\) months of interest?",
+              "options": [
+                "\\(15000\\times1.01^{48}\\)",
+                "\\(15000\\times1.01^{47}\\)",
+                "\\(15000\\times0.99^{48}\\)",
+                "\\(15000\\times1.12^{48}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The rate is 12% per annum compounded monthly, so each month the amount is multiplied by 1 + 0.01 = 1.01.",
+                  "work": "\\(\\text{monthly multiplier}=1+\\dfrac{12\\%}{12}=1.01\\)"
+                },
+                {
+                  "explain": "Interest is added for all 48 months, so the multiplier is applied 48 times.",
+                  "work": "\\(15000\\times1.01^{48}\\)"
+                },
+                {
+                  "explain": "Check the others: 47 months is one month short, 0.99 would be a decrease, and 1.12 would use the yearly rate every month.",
+                  "work": "\\(\\text{Answer: }15000\\times1.01^{48}\\)"
+                }
+              ],
+              "xp": 2
             },
             {
-              "explain": "Final answer: 15000*1.01^48.",
-              "work": "\\(15000*1.01^48\\)"
-            }
-          ],
-          "timeLimit": 240,
-          "xp": 1
-        },
-        {
-          "id": "y12a-8e-q5aii",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\nFor the loan in Q5.\n\na) ii) Write the amount that the first instalment grows to by the end of the 48th month. (Write as a formula, e.g. M*1.01^47)",
-          "options": [
-            "\\(M*1.01^47\\)",
-            "\\(M*1.01^48\\)",
-            "\\(M*1.01^49\\)",
-            "\\(M*1.01^46\\)"
-          ],
-          "answer": 0,
-          "solution": "The correct answer is \\(M*1.01^47\\).",
-          "steps": [
-            {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "\\(M*1.01^47\\)"
+              "id": "y12a-8e-q5aii",
+              "type": "mc",
+              "stem": "The first instalment \\(M\\) is paid at the end of month \\(1\\). What does it grow to by the end of the \\(48\\)th month?",
+              "options": [
+                "\\(M\\times1.01^{47}\\)",
+                "\\(M\\times1.01^{48}\\)",
+                "\\(M\\times1.01^{49}\\)",
+                "\\(M\\times1.01^{46}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The first instalment is paid at the end of month 1, so it earns interest for the remaining months only.",
+                  "work": "\\(48-1=47\\text{ months}\\)"
+                },
+                {
+                  "explain": "Multiply by 1.01 once for each of those 47 months.",
+                  "work": "\\(M\\times1.01^{47}\\)"
+                },
+                {
+                  "explain": "A common slip is to use 48, which would mean it was paid at the very start of the loan.",
+                  "work": "\\(\\text{Answer: }M\\times1.01^{47}\\)"
+                }
+              ],
+              "xp": 2
             },
             {
-              "explain": "Final answer: M*1.01^47.",
-              "work": "\\(M*1.01^47\\)"
-            }
-          ],
-          "timeLimit": 240,
-          "xp": 1
-        },
-        {
-          "id": "y12a-8e-q5aiii1",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\nFor the loan in Q5.\n\na) iii) Part 1: Write the amount that the second instalment grows to by the end of the 48th month. (Write as a formula, e.g. M*1.01^46)",
-          "options": [
-            "\\(M*1.01^47\\)",
-            "\\(M*1.01^48\\)",
-            "\\(M*1.01^46\\)",
-            "\\(M*1.01^45\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(M*1.01^46\\).",
-          "steps": [
-            {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "\\(M*1.01^46\\)"
+              "id": "y12a-8e-q5aiii1",
+              "type": "mc",
+              "stem": "The second instalment is paid at the end of month \\(2\\). What does it grow to by the end of the \\(48\\)th month?",
+              "options": [
+                "\\(M\\times1.01^{47}\\)",
+                "\\(M\\times1.01^{48}\\)",
+                "\\(M\\times1.01^{46}\\)",
+                "\\(M\\times1.01^{45}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "The second instalment is paid at the end of month 2, so it earns interest for 48 − 2 months.",
+                  "work": "\\(48-2=46\\text{ months}\\)"
+                },
+                {
+                  "explain": "Multiply by 1.01 once for each of those months.",
+                  "work": "\\(M\\times1.01^{46}\\)"
+                },
+                {
+                  "explain": "Each later instalment has one fewer month of interest than the one before it.",
+                  "work": "\\(\\text{Answer: }M\\times1.01^{46}\\)"
+                }
+              ],
+              "xp": 2
             },
             {
-              "explain": "Final answer: M*1.01^46.",
-              "work": "\\(M*1.01^46\\)"
-            }
-          ],
-          "timeLimit": 240,
-          "xp": 1
-        },
-        {
-          "id": "y12a-8e-q5aiii2",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\nFor the loan in Q5.\n\na) iii) Part 2: Write the amount that the last instalment grows to by the end of the 48th month. (Write as a formula, e.g. M)",
-          "options": [
-            "\\(M(1 + r)\\)",
-            "\\(M(1 - r)\\)",
-            "\\(M/r\\)",
-            "\\(M\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(M\\).",
-          "steps": [
-            {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "\\(M\\)"
+              "id": "y12a-8e-q5aiii2",
+              "type": "mc",
+              "stem": "The last instalment is paid at the end of month \\(48\\). What does it grow to by the end of the \\(48\\)th month?",
+              "options": [
+                "\\(M\\times1.01\\)",
+                "\\(M\\times0.99\\)",
+                "\\(2M\\)",
+                "\\(M\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "The last instalment is paid at the very end of the loan, so it earns no interest.",
+                  "work": "\\(48-48=0\\text{ months}\\)"
+                },
+                {
+                  "explain": "Multiplying by \\(1.01\\) zero times leaves \\(M\\) unchanged.",
+                  "work": "\\(M\\times1.01^{0}=M\\)"
+                },
+                {
+                  "explain": "This matches the pattern: 47, 46, …, 1, 0 months of interest.",
+                  "work": "\\(\\text{Answer: }M\\)"
+                }
+              ],
+              "xp": 2
             },
             {
-              "explain": "Final answer: M.",
-              "work": "\\(M\\)"
-            }
-          ],
-          "timeLimit": 240,
-          "xp": 1
-        },
-        {
-          "id": "y12a-8e-q5aiv",
-          "type": "review",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\nFor the loan in Q5.\n\na) iv) Hence write down a series expression for \\( A_{48} \\).",
-          "answer": "\\( A_{48} = 15000 \\times 1.01^{48} - M(1 + 1.01 + \\dots + 1.01^{47}) \\).",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "\\( A_{48} = 15000 \\times 1.01^{48} - M(1 + 1.01 + \\dots + 1.01^{47}) \\).",
-          "steps": [
-            {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "\\( A_{48} = 15000 \\times 1.01^{48} - M(1 + 1.01 + \\dots + 1.01^{47}) \\)."
+              "id": "y12a-8e-q5aiv",
+              "type": "review",
+              "stem": "Hence write down a series expression for \\(A_{48}\\), the amount owing after \\(48\\) months.",
+              "answer": "\\(A_{48}=15000\\times1.01^{48}-\\left(M\\times1.01^{47}+M\\times1.01^{46}+\\cdots+M\\times1.01+M\\right)\\)",
+              "steps": [
+                {
+                  "explain": "The amount owing is what the loan grows to, minus what all the instalments have grown to.",
+                  "work": "\\(A_{48}=\\text{(loan grown)}-\\text{(instalments grown)}\\)"
+                },
+                {
+                  "explain": "The loan grows to \\(15000\\times1.01^{48}\\). The instalments grow to \\(M\\times1.01^{47}\\), \\(M\\times1.01^{46}\\), …, \\(M\\times1.01\\), \\(M\\).",
+                  "work": "\\(A_{48}=15000\\times1.01^{48}-\\left(M\\times1.01^{47}+M\\times1.01^{46}+\\cdots+M\\times1.01+M\\right)\\)"
+                },
+                {
+                  "explain": "Written from the smallest term, the bracket is a geometric series.",
+                  "work": "\\(M\\left(1+1.01+\\cdots+1.01^{47}\\right)\\)"
+                }
+              ],
+              "xp": 3
             },
             {
-              "explain": "Final answer: \\( A_{48} = 15000 \\times 1.01^{48} - M(1 + 1.01 + \\dots + 1.01^{47}) \\)..",
-              "work": "\\( A_{48} = 15000 \\times 1.01^{48} - M(1 + 1.01 + \\dots + 1.01^{47}) \\)."
-            }
-          ],
-          "manual": true,
-          "timeLimit": 240,
-          "xp": 1
-        },
-        {
-          "id": "y12a-8e-q5b",
-          "type": "review",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\nFor the loan in Q5.\n\nb) Hence show that \\( 0 = 15000 \\times 1.01^{48} - \\frac{M(1.01^{48} - 1)}{0.01} \\).",
-          "answer": "The series of repayments is a GP sum with \\( a = M \\), \\( r = 1.01 \\), \\( n = 48 \\).\nSince the loan is paid off, \\( A_{48} = 0 \\), which gives: \\( 0 = 15000 \\times 1.01^{48} - \\frac{M(1.01^{48} - 1)}{0.01} \\).",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "The series of repayments is a GP sum with \\( a = M \\), \\( r = 1.01 \\), \\( n = 48 \\).\nSince the loan is paid off, \\( A_{48} = 0 \\), which gives: \\( 0 = 15000 \\times 1.01^{48} - \\frac{M(1.01^{48} - 1)}{0.01} \\).",
-          "steps": [
-            {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "The series of repayments is a GP sum with \\( a = M \\), \\( r = 1.01 \\), \\( n = 48 \\).\nSince the loan is paid off, \\( A_{48} = 0 \\), which gives: \\( 0 = 15000 \\times 1.01^{48} - \\frac{M(1.01^{48} - 1)}{0.01} \\)."
+              "id": "y12a-8e-q5b",
+              "type": "review",
+              "stem": "The loan is exactly paid off after \\(48\\) months, so \\(A_{48}=0\\). Hence show that \\(0=15000\\times1.01^{48}-\\dfrac{M\\left(1.01^{48}-1\\right)}{0.01}\\).",
+              "answer": "The bracket \\(M\\left(1+1.01+\\cdots+1.01^{47}\\right)\\) is a geometric series with \\(a=M\\), \\(r=1.01\\), \\(n=48\\), so its sum is \\(\\dfrac{M\\left(1.01^{48}-1\\right)}{1.01-1}\\). Setting \\(A_{48}=0\\) gives \\(0=15000\\times1.01^{48}-\\dfrac{M\\left(1.01^{48}-1\\right)}{0.01}\\).",
+              "steps": [
+                {
+                  "explain": "Identify the geometric series in the instalments.",
+                  "work": "\\(a=M,\\quad r=1.01,\\quad n=48\\)"
+                },
+                {
+                  "explain": "Use the sum formula for a geometric series.",
+                  "work": "\\(S_{48}=\\dfrac{M\\left(1.01^{48}-1\\right)}{1.01-1}=\\dfrac{M\\left(1.01^{48}-1\\right)}{0.01}\\)"
+                },
+                {
+                  "explain": "Substitute into the expression for \\(A_{48}\\) and set it equal to \\(0\\) because the loan is paid off.",
+                  "work": "\\(0=15000\\times1.01^{48}-\\dfrac{M\\left(1.01^{48}-1\\right)}{0.01}\\)"
+                }
+              ],
+              "xp": 3
             },
             {
-              "explain": "Final answer: The series of repayments is a GP sum with \\( a = M \\), \\( r = 1.01 \\), \\( n = 48 \\).\nSince the loan is paid off, \\( A_{48} = 0 \\), which gives: \\( 0 = 15000 \\times 1.01^{48} - \\frac{M(1.01^{48} - 1)}{0.01} \\)..",
-              "work": "The series of repayments is a GP sum with \\( a = M \\), \\( r = 1.01 \\), \\( n = 48 \\).\nSince the loan is paid off, \\( A_{48} = 0 \\), which gives: \\( 0 = 15000 \\times 1.01^{48} - \\frac{M(1.01^{48} - 1)}{0.01} \\)."
+              "id": "y12a-8e-q5c",
+              "type": "mc",
+              "stem": "Hence find \\(M\\), the monthly instalment, correct to the nearest dollar.",
+              "options": [
+                "\\(\\$313\\)",
+                "\\(\\$395\\)",
+                "\\(\\$463\\)",
+                "\\(\\$242\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Rearrange the equation from the previous part for M.",
+                  "work": "\\(M=\\dfrac{15000\\times1.01^{48}\\times0.01}{1.01^{48}-1}\\)"
+                },
+                {
+                  "explain": "Evaluate \\(1.01^{48}\\).",
+                  "work": "\\(1.01^{48}\\approx1.612226\\)"
+                },
+                {
+                  "explain": "Substitute and calculate.",
+                  "work": "\\(M=\\dfrac{15000\\times1.612226\\times0.01}{0.612226}\\approx\\$395.0\\)"
+                },
+                {
+                  "explain": "Check the others: \\(\\$313\\) is \\(15000\\div48\\) (no interest), \\(\\$463\\) uses simple interest, \\(\\$242\\) forgets to divide by \\(1.01^{48}-1\\).",
+                  "work": "\\(M\\approx\\$395\\)"
+                }
+              ],
+              "xp": 3
             }
           ],
-          "manual": true,
-          "timeLimit": 240,
-          "xp": 1
-        },
-        {
-          "id": "y12a-8e-q5c",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "I took out a personal loan of \\( \\$15000 \\) with a bank for four years at an interest rate of 12% per annum, compounded monthly (1% per month). Let \\( M \\) be the size of each instalment to the bank, and let \\( A_{48} \\) be the amount owing on the loan after 48 months.\n\nFor the loan in Q5.\n\nc) Hence find \\( M \\), correct to the nearest dollar.",
-          "options": [
-            "\\(385\\)",
-            "\\(405\\)",
-            "\\(395\\)",
-            "\\(359\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(395\\).",
-          "steps": [
-            {
-              "explain": "Apply the relevant financial mathematics formula, substituting the given values for principal (P), interest rate (R), number of periods (n), and repayment amount (M) as appropriate.",
-              "work": "\\(395\\)"
-            },
-            {
-              "explain": "Final answer: 395.",
-              "work": "\\(395\\)"
-            }
-          ],
-          "timeLimit": 240,
-          "xp": 1
+          "timeLimit": 300
         },
         {
           "id": "y12a-8e-q6a",
