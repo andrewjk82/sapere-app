@@ -19,6 +19,7 @@ import CheatSheetLightbox from './CheatSheetLightbox';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
 import PdfViewer from './PdfViewer';
+import TextbookAnswerSheet from './TextbookAnswerSheet';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { useCurriculumNote } from '../utils/useCurriculumNote';
 import { noteKeyForTopic } from '../utils/curriculumLocalNotes';
@@ -80,6 +81,7 @@ const LearningPath = ({ profile }) => {
   const [lastStudy, setLastStudy] = useState(null);
   const pendingResumeRef = useRef(null); // { chapterId } waiting for its track's chapters to load
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
+  const [answersFor, setAnswersFor] = useState(null); // topic id whose answer key is open over the worksheet
   const [pdfPreview, setPdfPreview] = useState(null); // { raw, url, openUrl, title } | null — topic worksheet
   const curriculumNoteKey = pdfPreview?.noteKey;
   const curriculumCanvasRef = useRef(null);
@@ -793,7 +795,7 @@ const LearningPath = ({ profile }) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            style={{ width: isTablet ? 'min(1500px, 100%)' : 'min(960px, 100%)', height: isTablet ? '94vh' : 'min(90vh, 1100px)', background: '#fff', borderRadius: 20, overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 60px rgba(15,23,42,0.35)' }}
+            style={{ width: isTablet ? 'min(1500px, 100%)' : 'min(960px, 100%)', height: isTablet ? '94vh' : 'min(90vh, 1100px)', background: '#fff', borderRadius: 20, overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 60px rgba(15,23,42,0.35)' }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
               <FileText size={18} color="#7c3aed" />
@@ -808,6 +810,14 @@ const LearningPath = ({ profile }) => {
                   Next <ChevronRight size={18} strokeWidth={3} />
                 </button>
               )}
+              <button
+                type="button"
+                onClick={() => setAnswersFor((cur) => (cur === pdfPreview.topicId ? null : pdfPreview.topicId))}
+                aria-pressed={answersFor === pdfPreview.topicId}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 5, border: 0, borderRadius: 10, padding: '7px 12px', background: answersFor === pdfPreview.topicId ? '#7c3aed' : '#f5f3ff', color: answersFor === pdfPreview.topicId ? '#fff' : '#6d28d9', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap' }}
+              >
+                <CheckCircle2 size={15} /> Check answer
+              </button>
               <StudyTimerStartButton />
               {isTablet && <SplitLayoutToggle layout={notesLayout} onChange={setLayoutChoice} />}
               <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
@@ -846,6 +856,9 @@ const LearningPath = ({ profile }) => {
               />
             ) : (
               <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minHeight: 0 }} />
+            )}
+            {answersFor === pdfPreview.topicId && (
+              <TextbookAnswerSheet key={pdfPreview.topicId} topicId={pdfPreview.topicId} title={pdfPreview.title} onClose={() => setAnswersFor(null)} />
             )}
           </div>
         </div>,
