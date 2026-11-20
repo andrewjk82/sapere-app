@@ -1167,13 +1167,23 @@ function App() {
   // server, so the teacher's iPad no longer waits for a cache age-out or a manual Sync.
   const rosterMeta = useLiveDoc(['sync_meta', 'students_admin'], { enabled: Boolean(user && isAdmin) });
   const rosterVersionRef = useRef(null);
+  const rosterRescanAtRef = useRef(0);
+  const rosterRescanTimerRef = useRef(0);
+  useEffect(() => () => window.clearTimeout(rosterRescanTimerRef.current), []);
   useEffect(() => {
     if (rosterMeta.status !== 'live' || !rosterMeta.data) return;
     const version = Number(rosterMeta.data.version || 0);
     const seen = rosterVersionRef.current;
     rosterVersionRef.current = version;
     if (seen === null || version <= seen) return;
-    handleRefreshStudents(true, true).catch(() => {});
+    // Any signed-in account can bump this doc, so a forced rescan runs at most once a minute; a burst of bumps
+    // (or a malicious loop) collapses into one trailing rescan instead of a users/ scan per bump.
+    const wait = Math.max(0, rosterRescanAtRef.current + 60_000 - Date.now());
+    window.clearTimeout(rosterRescanTimerRef.current);
+    rosterRescanTimerRef.current = window.setTimeout(() => {
+      rosterRescanAtRef.current = Date.now();
+      handleRefreshStudents(true, true).catch(() => {});
+    }, wait);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rosterMeta.status, rosterMeta.data]);
 
