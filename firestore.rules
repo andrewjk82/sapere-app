@@ -41,6 +41,11 @@ service cloud.firestore {
     }
 
     // Sessions (lesson sessions)
+    // Teacher's private lesson notes (Class page notepad). Not on the session doc: students can read their sessions.
+    match /class_notes/{noteId} {
+      allow read, write: if isAdmin();
+    }
+
     match /sessions/{sessionId} {
       allow read: if isAdmin()
         || (isSignedIn() && resource.data.tutorId == request.auth.uid)

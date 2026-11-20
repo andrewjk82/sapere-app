@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { collection, doc, getDoc, getDocs, onSnapshot, query, where, writeBatch, serverTimestamp } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, onSnapshot, query, where, writeBatch, setDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
@@ -9,7 +9,8 @@ import './class-page.css';
 // - One student: who they are, course progress, last lesson, today's plan, homework, Daily Practice.
 // - A group (several session docs sharing groupId + time): every student at a glance, the papers worked through in
 //   class (saved on each member's session as `papersCovered`) and what the group did last time.
-// - Notes: a notepad on every lesson, autosaved to the lesson's session doc(s) as `classNotes` (teacher only — kept
+// - Notes: a notepad on every lesson, autosaved to class_notes/{lesson key} — admin-only by rules, because students
+//   can read their own session docs (so private notes must not live there). Was
 //   apart from `notes`, which the schedule and parent emails use).
 // Reads: a live listener on the next 8 days of sessions, one getDocs for the lesson's history, the live
 // admin_daily_summary for today and the earlier days of this week (cached for the tab).
@@ -41,6 +42,16 @@ const toUnits = (sessions) => {
     map.get(k).sessions.push(s);
   });
   return [...map.values()].map((u) => ({ ...u, isGroup: u.sessions.length > 1 })).sort(byTime);
+};
+
+const noteDocId = (key) => String(key || '').replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 300);
+const useLessonNote = (key) => {
+  const live = useLiveDoc(['class_notes', noteDocId(key)], { enabled: Boolean(key) });
+  return { text: live.data?.text || '', loaded: live.data !== undefined || live.status === 'offline' };
+};
+const LastNote = ({ lessonKey }) => {
+  const note = useLessonNote(lessonKey);
+  return note.text ? <p className="cls-note cls-note--mine">{note.text}</p> : null;
 };
 
 const shortDate = (key) => (key ? new Date(`${key}T12:00:00`).toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }) : '');
@@ -111,16 +122,22 @@ function WeekDots({ week, small = false }) {
   );
 }
 
-function NotePad({ unit, onClose }) {
-  const initial = unit.sessions[0]?.classNotes || '';
-  const [text, setText] = useState(initial);
+function NotePad({ unit, savedText, onClose }) {
+  const [text, setText] = useState(savedText);
   const [state, setState] = useState('saved');
   const timer = useRef(0);
   const latest = useRef(text);
+  const ref = doc(db, 'class_notes', noteDocId(unit.key));
 
   const save = async (value) => {
     setState('saving');
-    try { await writeToUnit(unit, { classNotes: value }); setState('saved'); } catch { setState('error'); }
+    try {
+      await setDoc(ref, {
+        text: value, date: unit.date, startTime: unit.startTime || '', groupId: unit.groupId || '',
+        studentIds: unit.sessions.map(sessionStudentId), updatedAt: serverTimestamp(),
+      }, { merge: true });
+      setState('saved');
+    } catch { setState('error'); }
   };
   const onChange = (e) => {
     const v = e.target.value;
@@ -130,7 +147,7 @@ function NotePad({ unit, onClose }) {
   };
   const close = () => {
     window.clearTimeout(timer.current);
-    if (latest.current !== (unit.sessions[0]?.classNotes || '') && state !== 'saved') save(latest.current);
+    if (state === 'typing') save(latest.current);
     onClose();
   };
   useEffect(() => () => window.clearTimeout(timer.current), []);
@@ -238,6 +255,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const [pickedKey, setPickedKey] = useState('');
   const unit = dayUnits.find((u) => u.key === pickedKey) || autoPick;
   const [padOpen, setPadOpen] = useState(false);
+  const note = useLessonNote(unit?.key || '');
 
   // History: the group's lessons (groupId) or the student's lessons.
   const historyKey = unit ? (unit.isGroup ? `g:${unit.groupId}` : `s:${sessionStudentId(unit.sessions[0])}`) : '';
@@ -306,12 +324,12 @@ export default function ClassPage({ students = [], onSelectStudent }) {
             ))}
           </nav>
         )}
-        <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${unit.sessions[0]?.classNotes ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
+        <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.text ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
           Notes
         </button>
       </header>
 
-      {padOpen && <NotePad key={unit.key} unit={unit} onClose={() => setPadOpen(false)} />}
+      {padOpen && note.loaded && <NotePad key={unit.key} unit={unit} savedText={note.text} onClose={() => setPadOpen(false)} />}
 
       {unit.isGroup ? <GroupView key={unit.key} {...shared} /> : <SoloView key={unit.key} {...shared} />}
     </div>
@@ -376,7 +394,7 @@ function SoloView({ unit, sessions, isNow, today, weekFor, findStudent, onSelect
                   ? <ul className="cls-topics">{lastLesson.learnedTopics.map((t) => <li key={t.id || topicText(t)}>{topicText(t)}</li>)}</ul>
                   : <p className="cls-muted">No topics recorded.</p>}
                 {lastLesson.notes && <p className="cls-note">{lastLesson.notes}</p>}
-                {lastLesson.classNotes && <p className="cls-note cls-note--mine">{lastLesson.classNotes}</p>}
+                <LastNote lessonKey={unitKey(lastLesson)} />
                 {lastLesson.attendance && lastLesson.attendance !== 'present' && <p className="cls-flag">Attendance: {lastLesson.attendance}</p>}
               </>
             )}
@@ -454,7 +472,6 @@ function GroupView({ unit, sessions, isNow, today, weekFor, findStudent, onSelec
     return units[units.length - 1] || null;
   }, [sessions, unit.date]);
   const lastPapers = lastUnit?.sessions.find((s) => Array.isArray(s.papersCovered) && s.papersCovered.length)?.papersCovered || [];
-  const lastNotes = lastUnit?.sessions.find((s) => s.classNotes)?.classNotes || '';
   const lastTopics = lastUnit?.sessions.find((s) => (s.learnedTopics || []).length)?.learnedTopics || [];
   const years = [...new Set(members.map((m) => m.student?.year || m.student?.level).filter(Boolean))];
 
@@ -477,7 +494,7 @@ function GroupView({ unit, sessions, isNow, today, weekFor, findStudent, onSelec
                 {lastPapers.length > 0 ? <PaperList papers={lastPapers} /> : lastTopics.length > 0
                   ? <ul className="cls-topics">{lastTopics.map((t) => <li key={t.id || topicText(t)}>{topicText(t)}</li>)}</ul>
                   : <p className="cls-muted">No papers recorded.</p>}
-                {lastNotes && <p className="cls-note cls-note--mine">{lastNotes}</p>}
+                <LastNote lessonKey={lastUnit.key} />
               </>
             )}
           </article>
