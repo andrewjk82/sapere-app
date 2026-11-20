@@ -22332,17 +22332,46 @@
         },
         {
           "id": "y11a-3g-q13b",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the equation of the semicircle: left half of circle centered at origin with radius 2.",
-          "answer": "x = -\\sqrt{4 - y^2}",
+          "stem": "Which equation gives the left half of the circle with centre the origin and radius \\(2\\)?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Solving \\( x^2 + y^2 = 4 \\) for x gives \\( x = \\pm \\sqrt{4 - y^2} \\). The left half has negative x-values, so \\( x = -\\sqrt{4 - y^2} \\)."
+              "explain": "The circle with centre the origin and radius 2 has equation \\(x^2+y^2=r^2\\) with \\(r=2\\).",
+              "work": "\\(x^2+y^2=4\\)"
+            },
+            {
+              "explain": "The left half is described by \\(x\\) in terms of \\(y\\), so make \\(x\\) the subject.",
+              "work": "\\(x^2=4-y^2\\ \\Rightarrow\\ x=\\pm\\sqrt{4-y^2}\\)"
+            },
+            {
+              "explain": "Every point of the left half has \\(x\\leq0\\), so take the negative root.",
+              "work": "\\(x=-\\sqrt{4-y^2},\\quad -2\\leq y\\leq2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" style=\"max-width:340px;display:block;margin:0.5rem auto\"><line x1=\"18.0\" y1=\"160\" x2=\"342.0\" y2=\"160\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"316.0\" x2=\"180\" y2=\"4.0\" stroke=\"#475569\" stroke-width=\"1.6\"/><polyline points=\"333.0,155 342.0,160 333.0,165\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><polyline points=\"175,13.0 180,4.0 185,13.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"350.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"500\" font-style=\"italic\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">x</text><text x=\"190.0\" y=\"8.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"500\" font-style=\"italic\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">y</text><line x1=\"60\" y1=\"156\" x2=\"60\" y2=\"164\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"60.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">&#8722;2</text><line x1=\"176\" y1=\"280\" x2=\"184\" y2=\"280\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"170.0\" y=\"285.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">&#8722;2</text><line x1=\"120\" y1=\"156\" x2=\"120\" y2=\"164\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"120.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">&#8722;1</text><line x1=\"176\" y1=\"220\" x2=\"184\" y2=\"220\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"170.0\" y=\"225.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">&#8722;1</text><line x1=\"240\" y1=\"156\" x2=\"240\" y2=\"164\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"240.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">1</text><line x1=\"176\" y1=\"100\" x2=\"184\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"170.0\" y=\"105.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">1</text><line x1=\"300\" y1=\"156\" x2=\"300\" y2=\"164\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"300.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">2</text><line x1=\"176\" y1=\"40\" x2=\"184\" y2=\"40\" stroke=\"#475569\" stroke-width=\"1.4\"/><text x=\"170.0\" y=\"45.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"500\" fill=\"#475569\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">2</text><circle cx=\"180\" cy=\"160\" r=\"120\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"6 5\"/><path d=\"M180,40 A120,120 0 0 0 180,280\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4.2\"/><text x=\"93.0\" y=\"69.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">x = &#8722;&#8730;(4 &#8722; y&#178;)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the others: \\(y=-\\sqrt{4-x^2}\\) is the bottom half, \\(x=\\sqrt{4-y^2}\\) is the right half, and \\(\\sqrt{2-y^2}\\) uses \\(r\\) instead of \\(r^2\\).",
+              "work": ""
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "\\(x=-\\sqrt{4-y^2}\\)",
+            "\\(y=-\\sqrt{4-x^2}\\)",
+            "\\(x=\\sqrt{4-y^2}\\)",
+            "\\(x=-\\sqrt{2-y^2}\\)"
+          ],
+          "hint": "Write the circle as \\(x^2+y^2=4\\) and make \\(x\\) the subject. The left half has negative \\(x\\)-values.",
+          "keyPoints": [
+            {
+              "text": "left half",
+              "note": "The left half has negative x-values, so use the negative root of x."
+            }
+          ]
         },
         {
           "id": "y11a-3g-q13c",
