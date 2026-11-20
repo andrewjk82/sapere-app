@@ -98,6 +98,7 @@ import { StudyTimerPill } from './components/studyTimer/StudyTimerPill';
 import { reloadWithRepair, chunkUrlsInImporter } from './utils/crashRecovery';
 import { StudyTimerSessionModal } from './components/studyTimer/StudyTimerSessionModal';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
+const ClassPage = lazyWithReload(() => import('./components/ClassPage'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
 const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
 const TimesTableSprint = lazyWithReload(() => import('./components/TimesTableSprint'));
@@ -724,13 +725,23 @@ function App() {
   // student on the section they were viewing instead of always bouncing to
   // Dashboard — there is no URL router, so this is the only place "current
   // page" lives.
+  const hadStoredTabRef = useRef(false);
   const [activeTab, setActiveTab] = useState(() => {
     try {
-      return sessionStorage.getItem('sapere:activeTab') || 'Dashboard';
+      const stored = sessionStorage.getItem('sapere:activeTab');
+      hadStoredTabRef.current = Boolean(stored);
+      return stored || 'Dashboard';
     } catch {
       return 'Dashboard';
     }
   });
+  // Teachers land on Class (the lesson in progress) on a fresh open; a reload keeps whatever page was open.
+  const classDefaultDoneRef = useRef(false);
+  useEffect(() => {
+    if (!isAdmin || classDefaultDoneRef.current) return;
+    classDefaultDoneRef.current = true;
+    if (!hadStoredTabRef.current) setActiveTab((tab) => (tab === 'Dashboard' ? 'Class' : tab));
+  }, [isAdmin]);
   useEffect(() => {
     try {
       sessionStorage.setItem('sapere:activeTab', activeTab);
@@ -1398,6 +1409,8 @@ function App() {
             onOpenJourneyMap={() => setShowJourneyMap(true)}
           />
         );
+      case 'Class':
+        return <ClassPage students={students} onSelectStudent={(id) => setSelectedStudentId(id)} />;
       case 'Students':
         return (
           <StudentList 

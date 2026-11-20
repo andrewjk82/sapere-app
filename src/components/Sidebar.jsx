@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   LayoutDashboard,
+  Presentation,
   Users,
   Calendar,
   BookOpen,
@@ -101,6 +102,9 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
       </motion.div>
 
       <nav className="app-sidebar__nav">
+        {isAdmin && (
+          <SidebarItem icon={Presentation} label="Class" active={activeTab === 'Class'} onClick={() => setActiveTab('Class')} disabled={isLocked} />
+        )}
         <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'Dashboard'} onClick={() => setActiveTab('Dashboard')} disabled={isLocked} />
         {isAdmin && (
           <SidebarItem icon={Users} label="Students" active={activeTab === 'Students'} onClick={() => setActiveTab('Students')} disabled={isLocked} />
