@@ -41709,7 +41709,7 @@
           "id": "y10-1f-high-q93",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A high-capacity commercial warehouse purchased by SolarisEnergy costs \\(\\$118000\\). The finance department compares reducing balance depreciation at \\(18.4\\%\\) p.a. against straight-line depreciation using the same nominal rate over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the term. Correct to the nearest cent.",
+          "stem": "A high-capacity commercial warehouse purchased by SolarisEnergy costs \\(\\$118000\\). The finance department compares reducing balance depreciation at \\(18.4\\%\\) p.a. against straight-line depreciation at the same rate (\\(18.4\\%\\) of the purchase price each year) over \\(5\\) years. Calculate the absolute difference in the book values calculated by the two methods at the end of the \\(5\\) years. Correct to the nearest cent.",
           "options": [
             "\\(\\$42690.65\\)",
             "\\(\\$31255.61\\)",
@@ -41720,20 +41720,24 @@
           "solution": "2",
           "steps": [
             {
-              "explain": "Set up the variables x and y representing the principal sums of Loan X and Loan Y.",
-              "work": "\\(x + y = 27000\\)"
+              "explain": "Reducing balance: each year the value keeps 100% − 18.4% = 81.6% of the previous year, so multiply by 0.816 five times.",
+              "work": "\\(V_{\\text{RB}} = 118000 \\times (0.816)^{5}\\)"
             },
             {
-              "explain": "Express the total annual interest from the flat rates.",
-              "work": "\\(\\frac{3.5}{100}x + \\frac{6.5}{100}y = 1365.00 \\implies 3.5x + 6.5y = 136500\\)"
+              "explain": "Evaluate the power, then multiply.",
+              "work": "\\(V_{\\text{RB}} = 118000 \\times 0.361789\\ldots \\approx \\$42690.65\\)"
             },
             {
-              "explain": "Substitute y = total - x into the interest equation.",
-              "work": "\\(3.5x + 6.5(27000 - x) = 136500\\)"
+              "explain": "Straight-line: the same amount is lost every year, 18.4% of the purchase price. Find the total lost over 5 years.",
+              "work": "\\(\\text{Loss per year} = 0.184 \\times 118000 = \\$21712\\), \\(\\text{Total loss} = 5 \\times 21712 = \\$108560\\)"
             },
             {
-              "explain": "Solve for variable x to calculate the principal sum of the first loan.",
-              "work": "\\(-3x = -39000 \\implies x = 13000\\)"
+              "explain": "Book value after 5 years = purchase price − total loss.",
+              "work": "\\(V_{\\text{SL}} = 118000 - 108560 = \\$9440.00\\)"
+            },
+            {
+              "explain": "Absolute difference of the two book values. The first option is only the reducing balance value; the others come from slips in the calculation.",
+              "work": "\\(42690.65 - 9440.00 = \\$33250.65\\)"
             }
           ],
           "xp": 3,
