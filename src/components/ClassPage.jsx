@@ -3,6 +3,7 @@ import { collection, doc, getDoc, getDocs, onSnapshot, query, where, writeBatch,
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
+import ClassMonthCalendar from './ClassMonthCalendar';
 import './class-page.css';
 
 // Teacher's "Class" page: the lesson happening now (or next today) on one screen.
@@ -308,7 +309,8 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const findStudent = (id) => students.find((s) => s.id === id || s.uid === id) || null;
   const unitLabel = (u) => (u.isGroup ? `Group (${u.sessions.length})` : firstName(u.sessions[0].studentName));
 
-  const shared = { unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
+  const patchSessions = (fn) => setHistory((h) => (h.key === historyKey && h.list ? { ...h, list: fn(h.list) } : h));
+  const shared = { unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
     <div className="cls">
@@ -346,7 +348,7 @@ function LessonTime({ unit, isNow }) {
   );
 }
 
-function SoloView({ unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function SoloView({ unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const lesson = unit.sessions[0];
   const studentId = sessionStudentId(lesson);
   const student = findStudent(studentId);
@@ -372,17 +374,33 @@ function SoloView({ unit, sessions, isNow, today, weekFor, findStudent, onSelect
   const todayDaily = week.find((d) => d.key === today)?.state || 'none';
   const course = Array.isArray(student?.assignedCourse) ? student.assignedCourse[0] : student?.assignedCourse;
   const school = student?.school || student?.schoolName || '';
+  // The student's actual school year (profile), not the curriculum year they are being taught.
+  const grade = student?.year || student?.level || progress.year || '';
+  const studentName = student?.name || lesson.studentName || 'Student';
 
   return (
     <>
       <section className="cls-student">
         <div className="cls-student-main">
-          <h1>{student?.name || lesson.studentName || 'Student'}</h1>
-          <p>{[progress.year || student?.year || student?.level, course, school].filter(Boolean).join(' · ') || 'No profile details'}</p>
+          <h1>{studentName}</h1>
+          <p>{[grade, school || 'School not set', course].filter(Boolean).join(' · ')}</p>
         </div>
         <LessonTime unit={unit} isNow={isNow} />
         {onSelectStudent && student && <button type="button" className="cls-link" onClick={() => onSelectStudent(student.id)}>Open profile</button>}
       </section>
+
+      {sessions && (
+        <ClassMonthCalendar
+          studentId={studentId}
+          student={student}
+          studentName={studentName}
+          lessons={sessions}
+          currentId={lesson.id}
+          defaultDate={lesson.date}
+          defaultSubject={lesson.subject}
+          onChange={patchSessions}
+        />
+      )}
 
       <div className="cls-grid">
         <div className="cls-flow">
