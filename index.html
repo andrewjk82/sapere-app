@@ -26,7 +26,16 @@
             sessionStorage.setItem(KEY, String(Date.now()));
           } catch (err) { /* storage unavailable (private mode etc.) — still try one reload */ }
           var sep = location.search ? '&' : '?';
-          location.replace(location.pathname + location.search + sep + '_cb=' + Date.now() + location.hash);
+          var go = function () { location.replace(location.pathname + location.search + sep + '_cb=' + Date.now() + location.hash); };
+          // A leftover service worker (old /sw.js passed every request through its own fetch) or a stale Cache
+          // Storage entry can keep failing the same file on every reload. Drop both before the one retry.
+          var jobs = [];
+          try { if (navigator.serviceWorker) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })); } catch (err) { /* ignore */ }
+          try { if (window.caches) jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })); } catch (err) { /* ignore */ }
+          var done = false;
+          var fin = function () { if (!done) { done = true; go(); } };
+          Promise.all(jobs).then(fin, fin);
+          setTimeout(fin, 1500);
         }, true);
       })();
     </script>
@@ -37,8 +46,17 @@
         function add(m) { errs.push(String(m).slice(0, 300)); }
         window.addEventListener('error', function (e) {
           var t = e.target;
-          add(t && (t.src || t.href) ? 'load failed: ' + (t.src || t.href) : (e.message || 'error') + ' @' + (e.filename || '') + ':' + (e.lineno || ''));
+          var u = t && (t.src || t.href);
+          if (!u) { add((e.message || 'error') + ' @' + (e.filename || '') + ':' + (e.lineno || '')); return; }
+          add('load failed: ' + u);
+          // Probe the same file to see what the browser actually gets (status / network error).
+          try {
+            fetch(u, { cache: 'no-store', mode: 'cors' }).then(function (res) {
+              return res.text().then(function (b) { add('  probe ' + res.status + ' ' + (res.headers.get('content-type') || '') + ' ' + b.length + 'B'); });
+            }, function (err) { add('  probe error: ' + (err && err.message)); });
+          } catch (err) { add('  probe threw: ' + err.message); }
         }, true);
+        try { add('sw: ' + ((navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.scriptURL) || 'none')); } catch (err) { /* ignore */ }
         window.addEventListener('unhandledrejection', function (e) { add('promise: ' + (e.reason && (e.reason.message || e.reason))); });
         setTimeout(function () {
           var r = document.getElementById('root');
