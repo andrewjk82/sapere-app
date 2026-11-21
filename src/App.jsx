@@ -760,6 +760,7 @@ function App() {
     } catch { /* ignore */ }
   }, [activeTab]);
   const [reportsInitialTab, setReportsInitialTab] = useState('reports');
+  const [reportsStudent, setReportsStudent] = useState(null);   // { id, name } — Reports & Review limited to one student
   // Question id to open in the Question Bank when jumping there from Reports & Review.
   const [bankJumpId, setBankJumpId] = useState(null);
   const [showJourneyMap, setShowJourneyMap] = useState(false);
@@ -1410,7 +1411,13 @@ function App() {
 
     switch (activeTab) {
       case 'Class':
-        if (isAdmin) return <ClassPage students={students} onSelectStudent={(id) => setSelectedStudentId(id)} />;
+        if (isAdmin) return (
+          <ClassPage
+            students={students}
+            onSelectStudent={(id) => setSelectedStudentId(id)}
+            onOpenReports={(student, tab) => { handleTabChange('Reports'); setReportsInitialTab(tab || 'reports'); setReportsStudent(student); }}
+          />
+        );
         // A student on a former teacher device: fall through to their Dashboard.
       // eslint-disable-next-line no-fallthrough
       case 'Dashboard':
@@ -1473,6 +1480,8 @@ function App() {
           <ReportsAdmin
             initialViewMode={reportsInitialTab}
             setInitialViewMode={setReportsInitialTab}
+            studentFilter={reportsStudent}
+            onClearStudentFilter={() => setReportsStudent(null)}
             onOpenInBank={(id) => { setBankJumpId(id); handleTabChange('Curriculum'); }}
           />
         );
@@ -1498,6 +1507,7 @@ function App() {
     }
     if (tab === 'Reports') {
       setReportsInitialTab('reports');
+      setReportsStudent(null);
     }
     setActiveTab(tab);
     setSelectedStudentId(null);

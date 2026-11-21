@@ -221,7 +221,7 @@ const readLiveQuestion = async (qid) => {
   return d ? { ...d } : null;
 };
 
-const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenInBank }) => {
+const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenInBank, studentFilter = null, onClearStudentFilter }) => {
   // A report often snapshots a sub-question's own id; open its parent so the bank finds it.
   const openInBank = async (qid) => {
     if (!qid || !onOpenInBank) return;
@@ -1001,7 +1001,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   };
 
   const renderReportsList = () => {
-    const filtered = reports.filter(r => filterBySearch(r.studentName));
+    const filtered = reports.filter(r => (!studentFilter || r.studentId === studentFilter.id) && filterBySearch(r.studentName));
     return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       {filtered.length === 0 ? (
@@ -1113,7 +1113,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
   };
 
   const renderGradingQueue = () => {
-    const filtered = gradingQueue.filter(item => filterBySearch(item.userName));
+    const filtered = gradingQueue.filter(item => (!studentFilter || item.userId === studentFilter.id) && filterBySearch(item.userName));
     return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       {filtered.length === 0 ? (
@@ -1539,6 +1539,16 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Reports & Review</h2>
+          {studentFilter && (
+            <button
+              type="button"
+              onClick={() => onClearStudentFilter?.()}
+              title="Show everyone again"
+              style={{ marginLeft: 12, border: 0, borderRadius: 999, background: '#ede9fe', color: '#5b3fc4', padding: '6px 14px', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}
+            >
+              {studentFilter.name || 'Student'} only ✕
+            </button>
+          )}
         </div>
 
         <div style={{ position: 'relative', marginLeft: 'auto' }}>

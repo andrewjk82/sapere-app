@@ -12,6 +12,7 @@ import ClassProgressCard from './ClassProgressCard';
 import { courseTopics } from '../utils/topicProgress';
 import HomeworkRedo from './homework/HomeworkRedo';
 import { useAuth } from '../context/AuthContext';
+import { useAdminFeed } from '../context/AdminFeedContext';
 import { mistakesForLesson, MISTAKES_REVIEWED_FIELD } from '../utils/lessonMistakes';
 import '../utils/clayStyle';
 import './class-page.css';
@@ -207,6 +208,29 @@ const MistakeButtons = ({ mistakes, onCheck, showWho = false }) => (
   </>
 );
 
+// Reports and Review waiting for THIS student. Tapping goes to Reports & Review limited to the student.
+function ReportsCard({ studentId, studentName, reports, reviews, onOpen }) {
+  const go = (tab) => onOpen && onOpen({ id: studentId, name: firstName(studentName) }, tab);
+  const total = reports + reviews;
+  return (
+    <article
+      className={`cls-card${total > 0 ? ' cls-card--link' : ''}`}
+      role={total > 0 ? 'button' : undefined}
+      tabIndex={total > 0 ? 0 : undefined}
+      onClick={() => total > 0 && go(reports > 0 ? 'reports' : 'grading')}
+      onKeyDown={(e) => { if (total > 0 && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); go(reports > 0 ? 'reports' : 'grading'); } }}
+    >
+      <h3>Reports &amp; Review{total > 0 && <small>Open ›</small>}</h3>
+      {total === 0 ? <p className="cls-muted">Nothing waiting.</p> : (
+        <ul className="cls-hw-sum">
+          {reports > 0 && <li className="is-flag"><button type="button" className="cls-link" onClick={(e) => { e.stopPropagation(); go('reports'); }}>{reports} {reports === 1 ? 'report' : 'reports'}</button></li>}
+          {reviews > 0 && <li className="is-flag"><button type="button" className="cls-link" onClick={(e) => { e.stopPropagation(); go('grading'); }}>{reviews} to review</button></li>}
+        </ul>
+      )}
+    </article>
+  );
+}
+
 // Compact card: just whether there is homework / mistakes to go through. Tap it for the details (modal).
 function HomeworkCard({ title, sessions, openList, mistakes, onAssign, onCheck, showWho = false }) {
   const [open, setOpen] = useState(false);
@@ -265,7 +289,7 @@ const PaperList = ({ papers }) => (
   </ul>
 );
 
-export default function ClassPage({ students = [], onSelectStudent }) {
+export default function ClassPage({ students = [], onSelectStudent, onOpenReports }) {
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
     const tick = () => setNow(new Date());
@@ -331,6 +355,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const [hwOpen, setHwOpen] = useState(false);
   const [mistakeReview, setMistakeReview] = useState(null);   // { item, studentId, studentName }
   const { user } = useAuth();
+  const { openReports, pendingGrading } = useAdminFeed();
   const note = useLessonNote(unit?.key || '');
   useNoteFlush();
 
@@ -440,7 +465,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
       window.alert('Could not save. Try again.');
     }
   };
-  const shared = { lessonNav, openLesson, mistakes, onCheckMistake: setMistakeReview, onAssignHomework: () => setHwOpen(true), unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
+  const shared = { openReports, pendingGrading, onOpenReports, lessonNav, openLesson, mistakes, onCheckMistake: setMistakeReview, onAssignHomework: () => setHwOpen(true), unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
     <div className="cls cls--clay">
@@ -509,7 +534,7 @@ function LessonTime({ unit, isNow }) {
   );
 }
 
-function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHomework, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function SoloView({ openReports, pendingGrading, onOpenReports, lessonNav, openLesson, mistakes, onCheckMistake, onAssignHomework, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const lesson = unit.sessions[0];
   const studentId = sessionStudentId(lesson);
   const student = findStudent(studentId);
@@ -607,6 +632,15 @@ function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHom
         </div>
 
         <aside className="cls-side cls-side--row">
+          <ReportsCard
+            student={student}
+            studentId={studentId}
+            studentName={studentName}
+            reports={(openReports || []).filter((r) => r.studentId === studentId).length}
+            reviews={(pendingGrading || []).filter((g) => g.userId === studentId).length}
+            onOpen={onOpenReports}
+          />
+
           <HomeworkCard
             title={studentName}
             sessions={sessions}
