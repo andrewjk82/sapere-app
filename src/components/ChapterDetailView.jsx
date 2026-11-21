@@ -86,7 +86,7 @@ const clearChapterProgress = (uid, chapterId) => {
   } catch { /* ignore */ }
 };
 
-const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic, lastTopicId = '' }) => {
+const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic, lastTopicId = '', doneTopicIds = null }) => {
   const { user } = useAuth();
   // topicProgress: { [topicId]: { progress, masteredCount, totalQuestions } }
   const [topicProgress, setTopicProgress] = useState({});
@@ -117,12 +117,18 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
 
   const topics = useMemo(() => {
     return (chapter.topics || []).map((topic, idx) => {
-      const state = getTopicState(
+      let state = getTopicState(
         topic.id,
         topicProgress,
         profile?.completedChapters,
         profile?.assignedTopics
       );
+      // Same "Done" rule as the Learning Path and the teacher's Class page (taught → homework checked → mistakes
+      // reviewed, or marked done by the teacher). Practicing a topic to 100% alone no longer counts it as done.
+      if (doneTopicIds) {
+        if (doneTopicIds.has(topic.id)) state = 'done';
+        else if (state === 'done') state = 'current';
+      }
       const entry = topicProgress?.[topic.id];
       const pct = entry?.progress || (state === 'done' ? 100 : 0);
       const masteredCount = entry?.masteredCount || 0;
@@ -130,7 +136,7 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
       const xpEarned = Math.round((pct / 100) * XP_PER_TOPIC);
       return { ...topic, idx, state, pct, masteredCount, totalCount, xpEarned };
     });
-  }, [chapter.topics, topicProgress, profile]);
+  }, [chapter.topics, topicProgress, profile, doneTopicIds]);
 
   const totalTopics = topics.length;
   const doneCount = topics.filter(t => t.state === 'done').length;

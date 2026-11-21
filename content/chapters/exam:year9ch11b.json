@@ -600,7 +600,7 @@
             {
               "id": "y9-11b-q9b",
               "type": "review",
-              "stem": "Show that \\(BC = 2MP\\) and \\(AB = 2PN\\).",
+              "stem": "\\(P\\) is the midpoint of \\(AC\\). Show that \\(BC = 2MP\\) and \\(AB = 2PN\\).",
               "answer": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
               "steps": [
                 {

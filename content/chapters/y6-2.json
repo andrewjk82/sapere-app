@@ -1,0 +1,1052 @@
+{
+  "chapterId": "y6-2",
+  "title": "Chapter 2: Addition and subtraction",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-2a",
+      "code": "2A",
+      "title": "Mental strategies for addition",
+      "questions": [
+        {
+          "id": "y6-wn-q7a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the sum:\n\\(46 + 33\\)",
+          "options": [
+            "\\(78\\)",
+            "\\(79\\)",
+            "\\(73\\)",
+            "\\(89\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the units digits first, then add the tens digits.",
+          "solution": "Units: 6 + 3 = 9. Tens: 4 + 3 = 7. Combining them gives 79.",
+          "steps": [
+            {
+              "explain": "Set up the addition by aligning the place values.",
+              "work": "\\begin{array}{r@{\\quad}l} 46 \\\\ +\\quad 33 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add the units column.",
+              "work": "\\(6 + 3 = 9\\)"
+            },
+            {
+              "explain": "Add the tens column.",
+              "work": "\\(4 + 3 = 7\\)"
+            },
+            {
+              "explain": "State the final sum.",
+              "work": "\\(79\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the sum:\n\\(68 + 25\\)",
+          "options": [
+            "\\(95\\)",
+            "\\(83\\)",
+            "\\(93\\)",
+            "\\(98\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the units digits first. If the sum is 10 or more, carry over to the tens place.",
+          "solution": "Units: 8 + 5 = 13 (write 3, carry 1). Tens: 6 + 2 + 1 (carry) = 9. Sum is 93.",
+          "steps": [
+            {
+              "explain": "Set up the vertical column addition.",
+              "work": "\\begin{array}{r@{\\quad}l} 68 \\\\ +\\quad 25 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add the units place and carry over 1 to the tens place.",
+              "work": "\\(8 + 5 = 13 \\implies 3\\text{ with carry of } 1\\)"
+            },
+            {
+              "explain": "Add the tens place including the carried value.",
+              "work": "\\(6 + 2 + 1\\text{ (carry)} = 9\\)"
+            },
+            {
+              "explain": "State the final sum.",
+              "work": "\\(93\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the sum:\n\\(83 + 54\\)",
+          "options": [
+            "\\(133\\)",
+            "\\(127\\)",
+            "\\(137\\)",
+            "\\(147\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the units digits, then add the tens digits.",
+          "solution": "Units: 3 + 4 = 7. Tens: 8 + 5 = 13. Combined sum is 137.",
+          "steps": [
+            {
+              "explain": "Set up the vertical column addition.",
+              "work": "\\begin{array}{r@{\\quad}l} 83 \\\\ +\\quad 54 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add the units place.",
+              "work": "\\(3 + 4 = 7\\)"
+            },
+            {
+              "explain": "Add the tens place.",
+              "work": "\\(8 + 5 = 13\\)"
+            },
+            {
+              "explain": "State the final sum.",
+              "work": "\\(137\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2b",
+      "code": "2B",
+      "title": "The standard addition algorithm",
+      "questions": [
+        {
+          "id": "y6-wn-q34",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum: $824 + 27 + 513 + 9 + 2146$",
+          "options": [
+            "3167",
+            "3695",
+            "3519",
+            "3871"
+          ],
+          "answer": 2,
+          "hint": "Align all numbers vertically by their units column, then add them column by column from right to left, carrying over numbers as needed.",
+          "solution": "Adding the numbers vertically:\n$824 + 27 + 513 + 9 + 2146 = 3\\,519$.",
+          "steps": [
+            {
+              "explain": "Align the digits vertically.",
+              "work": "\\begin{array}{r l} 2146 & \\\\ 824 & \\\\ 513 & \\\\ 27 & \\\\ + \\quad \\quad 9 & \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add the units column (\\(6+4+3+7+9 = 29\\)), write \\(9\\), carry \\(2\\). Add the tens column (\\(2 \\text{ carried} + 4 + 2 + 1 + 2 = 11\\)), write \\(1\\), carry \\(1\\). Add the hundreds column (\\(1 \\text{ carried} + 1 + 8 + 5 = 15\\)), write \\(5\\), carry \\(1\\). Add the thousands column (\\(1 \\text{ carried} + 2 = 3\\)).",
+              "work": "3,519"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q39",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: $385 + 748 + 196$",
+          "options": [
+            "1395",
+            "1462",
+            "1196",
+            "1329"
+          ],
+          "answer": 3,
+          "hint": "Add vertically: start with units ($5+8+6$), then tens, then hundreds, carrying numbers over appropriately.",
+          "solution": "Performing addition:\n$385 + 748 + 196 = 1\\,329$.",
+          "steps": [
+            {
+              "explain": "Sum the units column (\\(5 + 8 + 6 = 19\\)). Write \\(9\\), carry \\(1\\).",
+              "work": "\\begin{aligned} \\text{Units: } 5+8+6 &= 19 \\end{aligned}"
+            },
+            {
+              "explain": "Sum the tens column (\\(1 \\text{ carried} + 8 + 4 + 9 = 22\\)). Write \\(2\\), carry \\(2\\).",
+              "work": "\\begin{aligned} \\text{Tens: } 1+8+4+9 &= 22 \\end{aligned}"
+            },
+            {
+              "explain": "Sum the hundreds column (\\(2 \\text{ carried} + 3 + 7 + 1 = 13\\)).",
+              "work": "\\begin{aligned} \\text{Hundreds: } 2+3+7+1 &= 13 \\end{aligned}"
+            },
+            {
+              "explain": "Assemble the sum.",
+              "work": "1,329"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q7a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the sum:\n\\(349 + 62\\)",
+          "options": [
+            "\\(412\\)",
+            "\\(401\\)",
+            "\\(311\\)",
+            "\\(411\\)"
+          ],
+          "answer": 3,
+          "hint": "Add units, tens, and hundreds.",
+          "solution": "349 + 62 = 411.",
+          "steps": [
+            {
+              "explain": "Set up column addition.",
+              "work": "\\begin{array}{r@{\\quad}l} 349 \\\\ +\\quad 62 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add the units: 9 + 2 = 11 (write 1, carry 1).",
+              "work": "\\(9 + 2 = 11\\)"
+            },
+            {
+              "explain": "Add the tens: 4 + 6 + 1 (carry) = 11 (write 1, carry 1).",
+              "work": "\\(4 + 6 + 1 = 11\\)"
+            },
+            {
+              "explain": "Add the hundreds: 3 + 1 (carry) = 4.",
+              "work": "\\(3 + 1 = 4\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the sum:\n\\(423 + 54\\)",
+          "options": [
+            "\\(467\\)",
+            "\\(577\\)",
+            "\\(477\\)",
+            "\\(478\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform column addition.",
+          "solution": "423 + 54 = 477.",
+          "steps": [
+            {
+              "explain": "Set up column addition.",
+              "work": "\\begin{array}{r@{\\quad}l} 423 \\\\ +\\quad 54 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add place values.",
+              "work": "\\(3+4=7\\), quad \\(2+5=7\\), quad \\(4+0=4\\)"
+            },
+            {
+              "explain": "State final sum.",
+              "work": "\\(477\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the sum:\n\\(742 + 339\\)",
+          "options": [
+            "\\(1\\ 082\\)",
+            "\\(981\\)",
+            "\\(1\\ 071\\)",
+            "\\(1\\ 081\\)"
+          ],
+          "answer": 3,
+          "hint": "Set up column addition and carry over values.",
+          "solution": "742 + 339 = 1081.",
+          "steps": [
+            {
+              "explain": "Set up column addition.",
+              "work": "\\begin{array}{r@{\\quad}l} 742 \\\\ +\\quad 339 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Add the units: 2 + 9 = 11 (carry 1).",
+              "work": "\\(2 + 9 = 11\\)"
+            },
+            {
+              "explain": "Add the tens: 4 + 3 + 1 = 8.",
+              "work": "\\(4 + 3 + 1 = 8\\)"
+            },
+            {
+              "explain": "Add the hundreds: 7 + 3 = 10.",
+              "work": "\\(7 + 3 = 10\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5a_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the sum of the following numbers:\n\\\\(472 + 629 + 254\\\\)",
+          "options": [
+            "\\\\(1345\\\\)",
+            "\\\\(1355\\\\)",
+            "\\\\(1255\\\\)",
+            "\\\\(1365\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Line up the digits by place value and add them column by column from right to left.",
+          "solution": "Add the numbers:\n\\\\(472 + 629 = 1101\\\\)\n\\\\(1101 + 254 = 1355\\\\).",
+          "steps": [
+            {
+              "explain": "Add the ones digits: \\\\(2 + 9 + 4 = 15\\\\). Write down 5 and carry over 1 to the tens column.",
+              "work": "\\\\(2 + 9 + 4 = 15\\\\)"
+            },
+            {
+              "explain": "Add the tens digits, including the carryover: \\\\(7 + 2 + 5 + 1 = 15\\\\). Write down 5 and carry over 1 to the hundreds column.",
+              "work": "\\\\(7 + 2 + 5 + 1 = 15\\\\)"
+            },
+            {
+              "explain": "Add the hundreds digits, including the carryover: \\\\(4 + 6 + 2 + 1 = 13\\\\). Write down 13.",
+              "work": "\\\\(4 + 6 + 2 + 1 = 13\\\\)"
+            },
+            {
+              "explain": "Combine the results to get the total sum.",
+              "work": "\\\\(472 + 629 + 254 = 1355\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5b_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the sum of the following numbers:\n\\\\(645 + 438 + 294\\\\)",
+          "options": [
+            "\\\\(1367\\\\)",
+            "\\\\(1387\\\\)",
+            "\\\\(1277\\\\)",
+            "\\\\(1377\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Line up the place values and add from right to left, carrying over when a column sum exceeds 9.",
+          "solution": "Calculate the sum:\n\\\\(645 + 438 = 1083\\\\)\n\\\\(1083 + 294 = 1377\\\\).",
+          "steps": [
+            {
+              "explain": "Add the ones digits: \\\\(5 + 8 + 4 = 17\\\\). Write 7 and carry 1 to the tens column.",
+              "work": "\\\\(5 + 8 + 4 = 17\\\\)"
+            },
+            {
+              "explain": "Add the tens digits and the carryover: \\\\(4 + 3 + 9 + 1 = 17\\\\). Write 7 and carry 1 to the hundreds column.",
+              "work": "\\\\(4 + 3 + 9 + 1 = 17\\\\)"
+            },
+            {
+              "explain": "Add the hundreds digits and the carryover: \\\\(6 + 4 + 2 + 1 = 13\\\\). Write 13.",
+              "work": "\\\\(6 + 4 + 2 + 1 = 13\\\\)"
+            },
+            {
+              "explain": "State the final sum.",
+              "work": "\\\\(645 + 438 + 294 = 1377\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the sum of the following numbers:\n\\\\(1594 + 685 + 473\\\\)",
+          "options": [
+            "\\\\(2742\\\\)",
+            "\\\\(2652\\\\)",
+            "\\\\(2752\\\\)",
+            "\\\\(2852\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Align the numbers by place values. Add the ones column, then tens, hundreds, and thousands, carrying values as needed.",
+          "solution": "Add the numbers:\n\\\\(1594 + 685 = 2279\\\\)\n\\\\(2279 + 473 = 2752\\\\).",
+          "steps": [
+            {
+              "explain": "Add the ones digits: \\\\(4 + 5 + 3 = 12\\\\). Write 2 and carry 1.",
+              "work": "\\\\(4 + 5 + 3 = 12\\\\)"
+            },
+            {
+              "explain": "Add the tens digits with carryover: \\\\(9 + 8 + 7 + 1 = 25\\\\). Write 5 and carry 2.",
+              "work": "\\\\(9 + 8 + 7 + 1 = 25\\\\)"
+            },
+            {
+              "explain": "Add the hundreds digits with carryover: \\\\(5 + 6 + 4 + 2 = 17\\\\). Write 7 and carry 1.",
+              "work": "\\\\(5 + 6 + 4 + 2 = 17\\\\)"
+            },
+            {
+              "explain": "Add the thousands digit with carryover: \\\\(1 + 1 = 2\\\\). Write 2.",
+              "work": "\\\\(1 + 1 = 2\\\\)"
+            },
+            {
+              "explain": "Give the final accumulated sum.",
+              "work": "\\\\(1594 + 685 + 473 = 2752\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the sum:\\n\\\\(731 + 16 + 409 + 8 + 1072\\\\)",
+          "options": [
+            "\\\\(2336\\\\)",
+            "\\\\(2136\\\\)",
+            "\\\\(2246\\\\)",
+            "\\\\(2236\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Group numbers to make addition easier, or align them vertically.",
+          "solution": "Add the numbers vertically or by grouping:\n\\\\(731 + 409 = 1140\\\\)\n\\\\(16 + 8 = 24\\\\)\n\\\\(1140 + 24 + 1072 = 2236\\\\).",
+          "steps": [
+            {
+              "explain": "Group compatible numbers to simplify mental calculation.",
+              "work": "\\\\((731 + 409) + (16 + 8) + 1072\\\\)"
+            },
+            {
+              "explain": "Evaluate the sub-sums.",
+              "work": "\\\\(1140 + 24 + 1072\\\\)"
+            },
+            {
+              "explain": "Complete the sum to get the total.",
+              "work": "\\\\(2236\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q5b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the sum:\\n\\\\(96 + 854 + 1376 + 4 + 32\\\\)",
+          "options": [
+            "\\\\(2462\\\\)",
+            "\\\\(2262\\\\)",
+            "\\\\(2362\\\\)",
+            "\\\\(2352\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Group compatible pairs to simplify calculations: e.g. \\\\(96 + 4 = 100\\\\).",
+          "solution": "Use grouping methods to solve:\n- \\\\(96 + 4 = 100\\\\)\n- \\\\(854 + 1376 + 32 = 2262\\\\)\n\nAdd together: \\\\(100 + 2262 = 2362\\\\).",
+          "steps": [
+            {
+              "explain": "Identify number pairs that sum to multiples of 10 or 100.",
+              "work": "\\\\(96 + 4 = 100\\\\)"
+            },
+            {
+              "explain": "Sum the remaining numbers.",
+              "work": "\\\\(854 + 1376 + 32 = 2262\\\\)"
+            },
+            {
+              "explain": "Add the grouped parts together.",
+              "work": "\\\\(100 + 2262 = 2362\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q5c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the sum:\\n\\\\(7482 + 16 + 895 + 431 + 80796\\\\)",
+          "options": [
+            "\\\\(89620\\\\)",
+            "\\\\(88620\\\\)",
+            "\\\\(89610\\\\)",
+            "\\\\(89520\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Stack the numbers vertically, aligning place values, and add them.",
+          "solution": "Calculate the vertical addition:\n- Carry over digits from units, tens, hundreds, thousands columns.\n- Sum = \\\\(89620\\\\).",
+          "steps": [
+            {
+              "explain": "Align numbers vertically by their place values.",
+              "work": "\\\\(\\begin{array}{rl} & 80796 \\\\ & 7482 \\\\ & 895 \\\\ & 431 \\\\ + & 16 \\\\ \\hline \\end{array}\\\\)"
+            },
+            {
+              "explain": "Add column by column starting from the ones place, carrying over where needed.",
+              "work": "\\\\(\\text{Ones column: } 6+2+5+1+6 = 20 \\implies \\text{write } 0, text{ carry } 2\\\\)"
+            },
+            {
+              "explain": "Complete columns additions up to the ten-thousands place.",
+              "work": "\\\\(89620\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2c",
+      "code": "2C",
+      "title": "Mental strategies for subtraction",
+      "questions": [
+        {
+          "id": "y6-wn-q8a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the difference:\n\\(47 - 24\\)",
+          "options": [
+            "\\(23\\)",
+            "\\(13\\)",
+            "\\(27\\)",
+            "\\(21\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the units column first, then the tens column.",
+          "solution": "Units: 7 - 4 = 3. Tens: 4 - 2 = 2. Combined difference is 23.",
+          "steps": [
+            {
+              "explain": "Set up the vertical column subtraction.",
+              "work": "\\begin{array}{r@{\\quad}l} 47 \\\\ -\\quad 24 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Subtract the units place.",
+              "work": "\\(7 - 4 = 3\\)"
+            },
+            {
+              "explain": "Subtract the tens place.",
+              "work": "\\(4 - 2 = 2\\)"
+            },
+            {
+              "explain": "State the final difference.",
+              "work": "\\(23\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the difference:\n\\(58 - 15\\)",
+          "options": [
+            "\\(33\\)",
+            "\\(43\\)",
+            "\\(45\\)",
+            "\\(53\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract the units column first, then the tens column.",
+          "solution": "Units: 8 - 5 = 3. Tens: 5 - 1 = 4. Combined difference is 43.",
+          "steps": [
+            {
+              "explain": "Set up the vertical column subtraction.",
+              "work": "\\begin{array}{r@{\\quad}l} 58 \\\\ -\\quad 15 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Subtract the units place.",
+              "work": "\\(8 - 5 = 3\\)"
+            },
+            {
+              "explain": "Subtract the tens place.",
+              "work": "\\(5 - 1 = 4\\)"
+            },
+            {
+              "explain": "State the final difference.",
+              "work": "\\(43\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the difference:\n\\(64 - 18\\)",
+          "options": [
+            "\\(48\\)",
+            "\\(36\\)",
+            "\\(56\\)",
+            "\\(46\\)"
+          ],
+          "answer": 3,
+          "hint": "Borrow 1 ten from the tens place to subtract 8 from 4 in the units place.",
+          "solution": "Borrowing makes units 14 - 8 = 6. Tens place becomes 5 - 1 = 4. Difference is 46.",
+          "steps": [
+            {
+              "explain": "Set up the vertical column subtraction.",
+              "work": "\\begin{array}{r@{\\quad}l} 64 \\\\ -\\quad 18 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Borrow 1 ten from the tens column to make 14 in the units column.",
+              "work": "\\(14 - 8 = 6\\)"
+            },
+            {
+              "explain": "Subtract the remaining tens place (which is now 5).",
+              "work": "\\(5 - 1 = 4\\)"
+            },
+            {
+              "explain": "State the final difference.",
+              "work": "\\(46\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the difference:\n\\(79 - 25\\)",
+          "options": [
+            "\\(54\\)",
+            "\\(53\\)",
+            "\\(55\\)",
+            "\\(44\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract place values.",
+          "solution": "79 - 25 = 54.",
+          "steps": [
+            {
+              "explain": "Subtract the units.",
+              "work": "\\(9 - 5 = 4\\)"
+            },
+            {
+              "explain": "Subtract the tens.",
+              "work": "\\(7 - 2 = 5\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the difference:\n\\(74 - 36\\)",
+          "options": [
+            "\\(38\\)",
+            "\\(37\\)",
+            "\\(48\\)",
+            "\\(42\\)"
+          ],
+          "answer": 0,
+          "hint": "Borrow 1 ten to subtract in the units place.",
+          "solution": "74 - 36 = 38.",
+          "steps": [
+            {
+              "explain": "Set up column subtraction and borrow from tens.",
+              "work": "\\(14 - 6 = 8\\)"
+            },
+            {
+              "explain": "Subtract remaining tens.",
+              "work": "\\(6 - 3 = 3\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the difference:\n\\\\(73 - 48\\\\)",
+          "options": [
+            "\\\\(35\\\\)",
+            "\\\\(27\\\\)",
+            "\\\\(33\\\\)",
+            "\\\\(25\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Since \\\\(3\\\\) is less than \\\\(8\\\\) in the ones column, borrow \\\\(1\\\\) ten from the tens column.",
+          "solution": "Borrow from tens column:\n\\\\(13 - 8 = 5\\\\) (ones column)\n\\\\(6 - 4 = 2\\\\) (tens column)\n\n\\\\(73 - 48 = 25\\\\).",
+          "steps": [
+            {
+              "explain": "Regroup the numbers: borrow 1 ten from 7 tens (making it 6 tens) to convert 3 ones into 13 ones.",
+              "work": "\\\\(73 = 60 + 13\\\\)"
+            },
+            {
+              "explain": "Subtract the ones column: \\\\(13 - 8 = 5\\\\).",
+              "work": "\\\\(13 - 8 = 5\\\\)"
+            },
+            {
+              "explain": "Subtract the remaining tens column: \\\\(6 - 4 = 2\\\\).",
+              "work": "\\\\(60 - 40 = 20\\\\)"
+            },
+            {
+              "explain": "Combine columns to find the final difference.",
+              "work": "\\\\(20 + 5 = 25\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2d",
+      "code": "2D",
+      "title": "Subtraction algorithms",
+      "questions": [
+        {
+          "id": "y6-wn-q35",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: $8000 - 2478$",
+          "options": [
+            "5522",
+            "5798",
+            "4970",
+            "6074"
+          ],
+          "answer": 0,
+          "hint": "Since $8000$ has consecutive zeros, you must borrow starting all the way from the thousands place ($8$).",
+          "solution": "Borrowing steps:\n- Borrow from thousands place: $8000$ becomes $7$ thousands, $9$ hundreds, $9$ tens, and $10$ units.\n- Subtract: $10-8=2$, $9-7=2$, $9-4=5$, $7-2=5$.\n\nResult: $5\\,522$.",
+          "steps": [
+            {
+              "explain": "Show the regrouping (borrowing) of \\(8,000\\).",
+              "work": "\\begin{array}{rccc} 7 & 9 & 9 & 10 \\\\ \\cancel{8} & \\cancel{0} & \\cancel{0} & \\cancel{0} \\\\ - \\quad 2 & 4 & 7 & 8 \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Perform the column subtractions.",
+              "work": "5,522"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the difference:\n\\(327 - 51\\)",
+          "options": [
+            "\\(275\\)",
+            "\\(276\\)",
+            "\\(286\\)",
+            "\\(266\\)"
+          ],
+          "answer": 1,
+          "hint": "Perform column subtraction.",
+          "solution": "327 - 51 = 276.",
+          "steps": [
+            {
+              "explain": "Subtract units.",
+              "work": "\\(7 - 1 = 6\\)"
+            },
+            {
+              "explain": "Subtract tens by borrowing 1 hundred.",
+              "work": "\\(12 - 5 = 7\\)"
+            },
+            {
+              "explain": "Subtract hundreds.",
+              "work": "\\(2 - 0 = 2\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6b_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the difference:\n\\\\(359 - 64\\\\)",
+          "options": [
+            "\\\\(295\\\\)",
+            "\\\\(305\\\\)",
+            "\\\\(285\\\\)",
+            "\\\\(291\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the ones column first, then borrow from the hundreds column to subtract the tens column.",
+          "solution": "Subtract: \n1. Ones column: \\\\(9 - 4 = 5\\\\)\n2. Tens column: borrow from hundreds column to get \\\\(15 - 6 = 9\\\\)\n3. Hundreds column: \\\\(2 - 0 = 2\\\\)\n\n\\\\(359 - 64 = 295\\\\).",
+          "steps": [
+            {
+              "explain": "Subtract the ones column: \\\\(9 - 4 = 5\\\\).",
+              "work": "\\\\(9 - 4 = 5\\\\)"
+            },
+            {
+              "explain": "Regroup the tens: borrow 1 hundred from 3 hundreds (leaving 2) to change 5 tens into 15 tens, then subtract: \\\\(15 - 6 = 9\\\\).",
+              "work": "\\\\(15 - 6 = 9\\\\)"
+            },
+            {
+              "explain": "Subtract the hundreds column: \\\\(2 - 0 = 2\\\\).",
+              "work": "\\\\(200 - 0 = 200\\\\)"
+            },
+            {
+              "explain": "Combine column calculations to write the final result.",
+              "work": "\\\\(359 - 64 = 295\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q6c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the difference:\n\\\\(743 - 358\\\\)",
+          "options": [
+            "\\\\(395\\\\)",
+            "\\\\(385\\\\)",
+            "\\\\(375\\\\)",
+            "\\\\(383\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Borrow from the tens column to subtract the ones, and borrow from the hundreds column to subtract the tens.",
+          "solution": "Subtract:\n1. Ones column: borrow from tens column to make \\\\(13 - 8 = 5\\\\)\n2. Tens column: borrow from hundreds column to make \\\\(13 - 5 = 8\\\\)\n3. Hundreds column: \\\\(6 - 3 = 3\\\\)\n\n\\\\(743 - 358 = 385\\\\).",
+          "steps": [
+            {
+              "explain": "Regroup the tens and ones: borrow 1 ten from 4 tens (leaving 3) to make 3 ones into 13 ones. Subtract ones: \\\\(13 - 8 = 5\\\\).",
+              "work": "\\\\(13 - 8 = 5\\\\)"
+            },
+            {
+              "explain": "Regroup the hundreds and tens: borrow 1 hundred from 7 hundreds (leaving 6) to make 3 tens into 13 tens. Subtract tens: \\\\(13 - 5 = 8\\\\).",
+              "work": "\\\\(13 - 5 = 8\\\\)"
+            },
+            {
+              "explain": "Subtract the remaining hundreds column: \\\\(6 - 3 = 3\\\\).",
+              "work": "\\\\(6 - 3 = 3\\\\)"
+            },
+            {
+              "explain": "Combine results to get the total difference.",
+              "work": "\\\\(743 - 358 = 385\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the difference:\\n\\\\(793 - 147\\\\)",
+          "options": [
+            "\\\\(636\\\\)",
+            "\\\\(656\\\\)",
+            "\\\\(746\\\\)",
+            "\\\\(646\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Subtract column by column. Borrow from the tens column since 7 is greater than 3.",
+          "solution": "Perform subtraction:\n- Borrow 10 from 9 in the tens column (making 13 in the units column).\n- \\\\(13 - 7 = 6\\\\).\n- Tens column: \\\\(8 - 4 = 4\\\\).\n- Hundreds column: \\\\(7 - 1 = 6\\\\).\n- Result: \\\\(646\\\\).",
+          "steps": [
+            {
+              "explain": "Align the digits vertically and borrow 1 ten to make 13 in the units column.",
+              "work": "\\\\(793 - 147 = 700 + 80 + 13 - (100 + 40 + 7)\\\\)"
+            },
+            {
+              "explain": "Perform subtraction column-wise.",
+              "work": "\\\\(\\text{Units: } 13-7=6,\\ \\text{Tens: } 80-40=40,\\ \\text{Hundreds: } 700-100=600\\\\)"
+            },
+            {
+              "explain": "Combine the column results.",
+              "work": "\\\\(600 + 40 + 6 = 646\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the difference:\\n\\\\(632 - 248\\\\)",
+          "options": [
+            "\\\\(394\\\\)",
+            "\\\\(374\\\\)",
+            "\\\\(384\\\\)",
+            "\\\\(484\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Borrow from the tens place and then from the hundreds place as needed.",
+          "solution": "Subtract with borrowing:\n- Units: \\\\(12 - 8 = 4\\\\) (borrowed from tens).\n- Tens: \\\\(12 - 4 = 8\\\\) (borrowed from hundreds).\n- Hundreds: \\\\(5 - 2 = 3\\\\).\n- Result: \\\\(384\\\\).",
+          "steps": [
+            {
+              "explain": "Borrow 1 ten for units column.",
+              "work": "\\\\(632 \\to 600 + 20 + 12\\\\)"
+            },
+            {
+              "explain": "Borrow 1 hundred for tens column.",
+              "work": "\\\\(600 + 20 + 12 \\to 500 + 120 + 12\\\\)"
+            },
+            {
+              "explain": "Subtract components of \\\\(248 = 200 + 40 + 8\\\\).",
+              "work": "\\\\((500-200) + (120-40) + (12-8) = 300 + 80 + 4 = 384\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the difference:\\n\\\\(6000 - 1369\\\\)",
+          "options": [
+            "\\\\(5631\\\\)",
+            "\\\\(4621\\\\)",
+            "\\\\(4631\\\\)",
+            "\\\\(4731\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Borrow repeatedly across the zeros of 6000 to perform subtraction.",
+          "solution": "Subtract by borrowing:\n- Treat 6000 as \\\\(5990 + 10\\\\).\n- \\\\(10 - 9 = 1\\\\)\n- \\\\(9 - 6 = 3\\\\)\n- \\\\(9 - 3 = 6\\\\)\n- \\\\(5 - 1 = 4\\\\)\n- Result: \\\\(4631\\\\).",
+          "steps": [
+            {
+              "explain": "Rewrite 6000 to allow borrowing from the thousands column to units.",
+              "work": "\\\\(6000 = 5000 + 900 + 90 + 10\\\\)"
+            },
+            {
+              "explain": "Subtract \\\\(1369 = 1000 + 300 + 60 + 9\\\\) column-wise.",
+              "work": "\\\\((5000-1000) + (900-300) + (90-60) + (10-9)\\\\)"
+            },
+            {
+              "explain": "Sum the differences.",
+              "work": "\\\\(4000 + 600 + 30 + 1 = 4631\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2e",
+      "code": "2E",
+      "title": "Working with larger numbers",
+      "questions": [
+        {
+          "id": "y6-wn-q31",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: $85\\,314 - 67\\,429$",
+          "options": [
+            "19674",
+            "17885",
+            "18779",
+            "16097"
+          ],
+          "answer": 1,
+          "hint": "Set up the subtraction vertically. You will need to borrow from left columns because several digits on top are smaller than those on the bottom.",
+          "solution": "Performing vertical subtraction:\n  $85\\,314 - 67\\,429 = 17\\,885$.",
+          "steps": [
+            {
+              "explain": "Align numbers vertically by place value.",
+              "work": "\\begin{array}{r l} 85,314 & \\\\ - \\quad 67,429 & \\\\ \\hline \\end{array}"
+            },
+            {
+              "explain": "Subtract column-by-column starting from units, borrowing from the next left columns where necessary.",
+              "work": "\\begin{array}{rccccc} & 7 & 14 & 12 & 10 & 14 \\\\ & \\cancel{8} & \\cancel{5} & \\cancel{3} & \\cancel{1} & \\cancel{4} \\\\ - & 6 & 7 & 4 & 2 & 9 \\\\ \\hline & 1 & 7 & 8 & 8 & 5 \\end{array}"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the difference:\\n\\\\(91\\ 632 - 76\\ 218\\\\)",
+          "options": [
+            "\\\\(15\\ 414\\\\)",
+            "\\\\(15\\ 424\\\\)",
+            "\\\\(14\\ 414\\\\)",
+            "\\\\(15\\ 314\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Align the digits vertically and borrow where the top digit is smaller than the bottom digit.",
+          "solution": "Perform subtraction:\n- Units: \\\\(12 - 8 = 4\\\\) (borrowed 1 ten).\n- Tens: \\\\(2 - 1 = 1\\\\).\n- Hundreds: \\\\(6 - 2 = 4\\\\).\n- Thousands: \\\\(11 - 6 = 5\\\\) (borrowed 1 ten-thousand).\n- Ten-thousands: \\\\(8 - 7 = 1\\\\).\n- Result: \\\\(15\\ 414\\\\).",
+          "steps": [
+            {
+              "explain": "Align the digits vertically and perform units column borrowing.",
+              "work": "\\\\(91632 - 76218 \\implies 91620 + 12 - 76218\\\\)"
+            },
+            {
+              "explain": "Subtract the lower parts from the borrowed numbers column-wise.",
+              "work": "\\\\(\\text{Units: } 12-8=4,\\ \\text{Tens: } 2-1=1,\\ \\text{Hundreds: } 6-2=4\\\\)"
+            },
+            {
+              "explain": "Borrow for thousands column and complete subtraction.",
+              "work": "\\\\(\\text{Thousands: } 11-6=5,\\ \\text{Ten-thousands: } 8-7=1 \\implies 15414\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the difference:\\n\\\\(53\\ 462 - 47\\ 169\\\\)",
+          "options": [
+            "\\\\(6293\\\\)",
+            "\\\\(6283\\\\)",
+            "\\\\(5293\\\\)",
+            "\\\\(6393\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform column-by-column subtraction, borrowing from the left as needed.",
+          "solution": "Perform subtraction:\n- Units: \\\\(12 - 9 = 3\\\\) (borrowed from tens).\n- Tens: \\\\(15 - 6 = 9\\\\) (borrowed from hundreds).\n- Hundreds: \\\\(3 - 1 = 2\\\\).\n- Thousands: \\\\(13 - 7 = 6\\\\) (borrowed from ten-thousands).\n- Ten-thousands: \\\\(4 - 4 = 0\\\\).\n- Result: \\\\(6293\\\\).",
+          "steps": [
+            {
+              "explain": "Align the numbers and borrow from the tens and hundreds columns where the top digit is smaller.",
+              "work": "\\\\(\\text{Borrow to units: } 2 \\to 12,\\ \\text{borrow to tens: } 5 \\to 15\\\\)"
+            },
+            {
+              "explain": "Perform subtraction on the lower place values.",
+              "work": "\\\\(\\text{Units: } 12-9=3,\\ \\text{Tens: } 15-6=9,\\ \\text{Hundreds: } 3-1=2\\\\)"
+            },
+            {
+              "explain": "Perform subtraction on thousands and ten-thousands places.",
+              "work": "\\\\(\\text{Thousands: } 13-7=6,\\ \\text{Ten-thousands: } 4-4=0 \\implies 6293\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the difference:\\n\\\\(73\\ 851 - 68\\ 674\\\\)",
+          "options": [
+            "\\\\(4177\\\\)",
+            "\\\\(5177\\\\)",
+            "\\\\(5277\\\\)",
+            "\\\\(5187\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Perform subtraction from right to left, borrowing from adjacent left places when needed.",
+          "solution": "Perform subtraction:\n- Units: \\\\(11 - 4 = 7\\\\) (borrowed from tens).\n- Tens: \\\\(14 - 7 = 7\\\\) (borrowed from hundreds).\n- Hundreds: \\\\(7 - 6 = 1\\\\).\n- Thousands: \\\\(13 - 8 = 5\\\\) (borrowed from ten-thousands).\n- Ten-thousands: \\\\(6 - 6 = 0\\\\).\n- Result: \\\\(5177\\\\).",
+          "steps": [
+            {
+              "explain": "Perform units and tens column borrowing adjustments.",
+              "work": "\\\\(\\text{Units: } 1 \\to 11,\\ \\text{Tens: } 4 \\to 14\\\\)"
+            },
+            {
+              "explain": "Subtract the values in the units, tens, and hundreds columns.",
+              "work": "\\\\(\\text{Units: } 11-4=7,\\ \\text{Tens: } 14-7=7,\\ \\text{Hundreds: } 7-6=1\\\\)"
+            },
+            {
+              "explain": "Subtract the values in the thousands and ten-thousands columns.",
+              "work": "\\\\(\\text{Thousands: } 13-8=5,\\ \\text{Ten-thousands: } 6-6=0 \\implies 5177\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2f",
+      "code": "2F",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

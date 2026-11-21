@@ -9,6 +9,7 @@ import { useProfile } from './context/ProfileContext';
 import { examIdForTab } from './utils/examHub';
 import { syncSpecialWeekly } from './services/specialWeeklyService';
 import { studentService } from './services/studentService';
+import useLiveDoc from './hooks/useLiveDoc';
 import Sidebar from './components/Sidebar';
 import ErrorBoundary from './components/ErrorBoundary';
 import MedalCelebrationModal from './components/MedalCelebrationModal';
@@ -97,6 +98,7 @@ import { StudyTimerPill } from './components/studyTimer/StudyTimerPill';
 import { reloadWithRepair, chunkUrlsInImporter } from './utils/crashRecovery';
 import { StudyTimerSessionModal } from './components/studyTimer/StudyTimerSessionModal';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
+const ClassPage = lazyWithReload(() => import('./components/ClassPage'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
 const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
 const TimesTableSprint = lazyWithReload(() => import('./components/TimesTableSprint'));
@@ -725,17 +727,40 @@ function App() {
   // page" lives.
   const [activeTab, setActiveTab] = useState(() => {
     try {
+      // A device that last signed in as the teacher opens straight on Class (no Dashboard flash while auth loads).
+      if (localStorage.getItem('sapere:teacherDevice') === '1') return 'Class';
       return sessionStorage.getItem('sapere:activeTab') || 'Dashboard';
     } catch {
       return 'Dashboard';
     }
   });
+  // Teachers always open on Class (the lesson in progress). The iPad home-screen app is rarely relaunched — iOS keeps
+  // it alive — so coming back after 30+ minutes in the background counts as opening it too.
+  const classDefaultDoneRef = useRef(false);
+  useEffect(() => {
+    try { if (isAdmin) localStorage.setItem('sapere:teacherDevice', '1'); else if (user) localStorage.removeItem('sapere:teacherDevice'); } catch { /* ignore */ }
+    if (!isAdmin) return undefined;
+    if (!classDefaultDoneRef.current) {
+      classDefaultDoneRef.current = true;
+      setActiveTab('Class');
+    }
+    let hiddenAt = 0;
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') { hiddenAt = Date.now(); return; }
+      if (hiddenAt && Date.now() - hiddenAt > 30 * 60_000) { setSelectedStudentId(null); setActiveTab('Class'); }
+      hiddenAt = 0;
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAdmin, Boolean(user)]);
   useEffect(() => {
     try {
       sessionStorage.setItem('sapere:activeTab', activeTab);
     } catch { /* ignore */ }
   }, [activeTab]);
   const [reportsInitialTab, setReportsInitialTab] = useState('reports');
+  const [reportsStudent, setReportsStudent] = useState(null);   // { id, name } — Reports & Review limited to one student
   // Question id to open in the Question Bank when jumping there from Reports & Review.
   const [bankJumpId, setBankJumpId] = useState(null);
   const [showJourneyMap, setShowJourneyMap] = useState(false);
@@ -1114,18 +1139,23 @@ function App() {
     // Full-page spinner only on explicit user-triggered refresh — never on login.
     if (!silent) setLoading(true);
 
+    let syncError = null;
     try {
       // Cap wait so a slow/hanging roster fetch never traps the whole shell.
       const data = await Promise.race([
         studentService.getStudents(user.uid, isAdmin, { forceRefresh }),
         new Promise((_, reject) => {
-          window.setTimeout(() => reject(new Error('students-timeout')), 10000);
+          window.setTimeout(() => reject(new Error('students-timeout')), forceRefresh ? 35000 : 10000);
         }),
       ]);
       setStudents(Array.isArray(data) ? data : []);
       setLoadError('');
     } catch (err) {
-      if (err?.message === 'students-timeout') {
+      if (forceRefresh) {
+        // Explicit Sync failed: keep the roster on screen and tell the caller (StudentList shows it).
+        console.error(err);
+        syncError = err;
+      } else if (err?.message === 'students-timeout') {
         console.warn('[App] Student roster fetch timed out — shell stays open');
         // Keep any previously loaded students; don't blank the UI.
         setLoadError('');
@@ -1140,6 +1170,7 @@ function App() {
     } finally {
       setLoading(false);
     }
+    if (syncError) throw syncError;
   }, [user, profileLoaded, hasProfile, isAdmin]);
 
 
@@ -1154,6 +1185,31 @@ function App() {
     // profileLoaded is included so non-admin students wait for profile before fetching.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.uid, isAdmin, profileLoaded]);
+
+  // Live roster signal (teacher only): sync_meta/students_admin is bumped whenever the roster changes (student
+  // added/edited/signed up). One read per change while the app is on screen; a bump rescans the roster from the
+  // server, so the teacher's iPad no longer waits for a cache age-out or a manual Sync.
+  const rosterMeta = useLiveDoc(['sync_meta', 'students_admin'], { enabled: Boolean(user && isAdmin) });
+  const rosterVersionRef = useRef(null);
+  const rosterRescanAtRef = useRef(0);
+  const rosterRescanTimerRef = useRef(0);
+  useEffect(() => () => window.clearTimeout(rosterRescanTimerRef.current), []);
+  useEffect(() => {
+    if (rosterMeta.status !== 'live' || !rosterMeta.data) return;
+    const version = Number(rosterMeta.data.version || 0);
+    const seen = rosterVersionRef.current;
+    rosterVersionRef.current = version;
+    if (seen === null || version <= seen) return;
+    // Any signed-in account can bump this doc, so a forced rescan runs at most once a minute; a burst of bumps
+    // (or a malicious loop) collapses into one trailing rescan instead of a users/ scan per bump.
+    const wait = Math.max(0, rosterRescanAtRef.current + 60_000 - Date.now());
+    window.clearTimeout(rosterRescanTimerRef.current);
+    rosterRescanTimerRef.current = window.setTimeout(() => {
+      rosterRescanAtRef.current = Date.now();
+      handleRefreshStudents(true, true).catch(() => {});
+    }, wait);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rosterMeta.status, rosterMeta.data]);
 
   // A background roster revalidation that did rescan replaces the cached list on screen.
   useEffect(() => studentService.onRosterUpdate((fresh) => {
@@ -1354,6 +1410,16 @@ function App() {
 
 
     switch (activeTab) {
+      case 'Class':
+        if (isAdmin) return (
+          <ClassPage
+            students={students}
+            onSelectStudent={(id) => setSelectedStudentId(id)}
+            onOpenReports={(student, tab) => { handleTabChange('Reports'); setReportsInitialTab(tab || 'reports'); setReportsStudent(student); }}
+          />
+        );
+        // A student on a former teacher device: fall through to their Dashboard.
+      // eslint-disable-next-line no-fallthrough
       case 'Dashboard':
         return (
           <Dashboard
@@ -1414,6 +1480,8 @@ function App() {
           <ReportsAdmin
             initialViewMode={reportsInitialTab}
             setInitialViewMode={setReportsInitialTab}
+            studentFilter={reportsStudent}
+            onClearStudentFilter={() => setReportsStudent(null)}
             onOpenInBank={(id) => { setBankJumpId(id); handleTabChange('Curriculum'); }}
           />
         );
@@ -1439,6 +1507,7 @@ function App() {
     }
     if (tab === 'Reports') {
       setReportsInitialTab('reports');
+      setReportsStudent(null);
     }
     setActiveTab(tab);
     setSelectedStudentId(null);

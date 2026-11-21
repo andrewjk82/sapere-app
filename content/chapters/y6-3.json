@@ -1,0 +1,458 @@
+{
+  "chapterId": "y6-3",
+  "title": "Chapter 3: Multiples and factors",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-3a",
+      "code": "3A",
+      "title": "Multiples and products",
+      "questions": [
+        {
+          "id": "y6-wn-q45",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of $3^4$.",
+          "options": [
+            "89",
+            "85",
+            "81",
+            "73"
+          ],
+          "answer": 2,
+          "hint": "An exponent tells you how many times to multiply the base by itself: $3^4 = 3 \\times 3 \\times 3 \\times 3$.",
+          "solution": "$3^4 = 3 \\times 3 \\times 3 \\times 3 = 9 \\times 9 = 81$.",
+          "steps": [
+            {
+              "explain": "Write out the power as a repeated multiplication.",
+              "work": "3^4 = 3 \\times 3 \\times 3 \\times 3"
+            },
+            {
+              "explain": "Multiply step-by-step.",
+              "work": "\\begin{aligned} 3 \\times 3 &= 9 \\\\ 9 \\times 3 &= 27 \\\\ 27 \\times 3 &= 81 \\end{aligned}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q46",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of $3 \\times 4^3$.",
+          "options": [
+            "202",
+            "211",
+            "192",
+            "173"
+          ],
+          "answer": 2,
+          "hint": "According to BODMAS, exponents (orders) must be calculated before multiplication: calculate $4^3$ first.",
+          "solution": "1. Exponent: $4^3 = 4 \\times 4 \\times 4 = 64$\n2. Multiplication: $3 \\times 64 = 192$.",
+          "steps": [
+            {
+              "explain": "Evaluate the exponent \\(4^3\\) first.",
+              "work": "4^3 = 4 \\times 4 \\times 4 = 64"
+            },
+            {
+              "explain": "Multiply the result by \\(3\\).",
+              "work": "3 \\times 64 = 192"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q47",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the expression $5 \\times 5 \\times 5 \\times 5$ in exponential notation.",
+          "options": [
+            "\\(20^1\\)",
+            "\\(5 \\times 4\\)",
+            "\\(5^4\\)",
+            "\\(4^5\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many times $5$ is multiplied by itself. This count is the exponent (power).",
+          "solution": "The number $5$ is multiplied by itself $4$ times. In exponential notation, this is written as $5^4$.",
+          "steps": [
+            {
+              "explain": "Count the number of times the base (\\(5\\)) appears in the product.",
+              "work": "\\underbrace{5 \\times 5 \\times 5 \\times 5}_{4 \\text{ times}}"
+            },
+            {
+              "explain": "Write the base with the count as the exponent.",
+              "work": "5^4"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q48",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: $2^6$",
+          "options": [
+            "58",
+            "67",
+            "64",
+            "70"
+          ],
+          "answer": 2,
+          "hint": "Multiply $2$ by itself $6$ times: $2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$.",
+          "solution": "$2^6 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 = 64$.",
+          "steps": [
+            {
+              "explain": "Expand the exponential expression.",
+              "work": "2^6 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2"
+            },
+            {
+              "explain": "Perform the repeated multiplication.",
+              "work": "\\begin{aligned} 2 \\times 2 &= 4 \\\\ 4 \\times 2 &= 8 \\\\ 8 \\times 2 &= 16 \\\\ 16 \\times 2 &= 32 \\\\ 32 \\times 2 &= 64 \\end{aligned}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q50",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the equation $8000 = 8 \\times 1000$ in exponential notation.",
+          "options": [
+            "\\(8 \\times 10^4\\)",
+            "\\(8 \\times 10^2\\)",
+            "\\(8 \\times 10^3\\)",
+            "\\(80^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert $1000$ into a power of $10$. Count the number of zeros in $1000$.",
+          "solution": "1. $1000 = 10 \\times 10 \\times 10 = 10^3$\n2. Therefore, $8 \\times 1000 = 8 \\times 10^3$.",
+          "steps": [
+            {
+              "explain": "Express \\(1000\\) as a product of tens.",
+              "work": "1000 = 10 \\times 10 \\times 10"
+            },
+            {
+              "explain": "Write the product of tens in exponential form.",
+              "work": "1000 = 10^3"
+            },
+            {
+              "explain": "Substitute \\(10^3\\) back into the original multiplication.",
+              "work": "8 \\times 1000 = 8 \\times 10^3"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10e_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value based on the terminology:\nEvaluate \\\\(9\\\\) squared.",
+          "options": [
+            "\\\\(81\\\\)",
+            "\\\\(18\\\\)",
+            "\\\\(27\\\\)",
+            "\\\\(90\\\\)"
+          ],
+          "answer": 0,
+          "hint": "A number 'squared' is multiplied by itself: \\\\(9 \\\\times 9\\\\).",
+          "solution": "Multiply: \\\\(9 \\\\times 9 = 81\\\\).",
+          "steps": [
+            {
+              "explain": "Express the squaring operation.",
+              "work": "\\\\(9^2 = 9 \\\\times 9\\\\)"
+            },
+            {
+              "explain": "Calculate the product.",
+              "work": "\\\\(9 \\\\times 9 = 81\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10f_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value based on the terminology:\nEvaluate \\\\(2\\\\) cubed.",
+          "options": [
+            "\\\\(6\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(16\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A number 'cubed' is multiplied by itself three times: \\\\(2 \\\\times 2 \\\\times 2\\\\).",
+          "solution": "Multiply: \\\\(2 \\\\times 2 \\\\times 2 = 8\\\\).",
+          "steps": [
+            {
+              "explain": "Express the cubing operation.",
+              "work": "\\\\(2^3 = 2 \\\\times 2 \\\\times 2\\\\)"
+            },
+            {
+              "explain": "Calculate the product.",
+              "work": "\\\\(2 \\\\times 2 \\\\times 2 = 8\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10g_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value:\n\\\\(7^2\\\\)",
+          "options": [
+            "\\\\(21\\\\)",
+            "\\\\(35\\\\)",
+            "\\\\(49\\\\)",
+            "\\\\(14\\\\)"
+          ],
+          "answer": 2,
+          "hint": "The notation \\\\(7^2\\\\) represents \\\\(7\\\\) raised to the power of 2, which means \\\\(7 \\\\times 7\\\\).",
+          "solution": "Multiply: \\\\(7 \\\\times 7 = 49\\\\).",
+          "steps": [
+            {
+              "explain": "Express the exponentiation as repeated multiplication.",
+              "work": "\\\\(7^2 = 7 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Calculate the product.",
+              "work": "\\\\(7 \\\\times 7 = 49\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following repeated multiplication expression in exponential notation:\n\\\\(7 \\\\times 7 \\\\times 7\\\\)",
+          "options": [
+            "\\\\(7 \\\\times 3\\\\)",
+            "\\\\(7^2\\\\)",
+            "\\\\(7^3\\\\)",
+            "\\\\(3^7\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many times \\\\(7\\\\) is multiplied by itself. This count is the exponent (power).",
+          "solution": "Since \\\\(7\\\\) is multiplied by itself 3 times, it is written as \\\\(7^3\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the base and count the number of factors.",
+              "work": "\\\\(\\text{Base} = 7,\\\\ \\text{Count of factors} = 3\\\\)"
+            },
+            {
+              "explain": "Write the expression with the base raised to the power of the count.",
+              "work": "\\\\(7^3\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11b_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following repeated multiplication expression in exponential notation:\n\\\\(4 \\\\times 4 \\\\times 4 \\\\times 4 \\\\times 4\\\\)",
+          "options": [
+            "\\\\(4 \\\\times 5\\\\)",
+            "\\\\(4^5\\\\)",
+            "\\\\(5^4\\\\)",
+            "\\\\(4^4\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the number of times \\\\(4\\\\) is multiplied by itself.",
+          "solution": "Since \\\\(4\\\\) is multiplied by itself 5 times, it is written as \\\\(4^5\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the base and count the number of factors.",
+              "work": "\\\\(\\text{Base} = 4,\\\\ \\text{Count of factors} = 5\\\\)"
+            },
+            {
+              "explain": "Write the base raised to the power of the factor count.",
+              "work": "\\\\(4^5\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the equation \\\\(5000 = 5 \\\\times 1000\\\\) in exponential notation.",
+          "options": [
+            "\\\\(5 \\\\times 10^2\\\\)",
+            "\\\\(50^3\\\\)",
+            "\\\\(5 \\\\times 10^3\\\\)",
+            "\\\\(5 \\\\times 10^4\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert the value \\\\(1000\\\\) to a power of 10. Check the number of zeros in \\\\(1000\\\\).",
+          "solution": "Calculate the exponential form:\n\\\\(1000 = 10 \\\\times 10 \\\\times 10 = 10^3\\\\)\nTherefore, \\\\(5 \\\\times 1000 = 5 \\\\times 10^3\\\\).",
+          "steps": [
+            {
+              "explain": "Express the value 1000 as a power of 10.",
+              "work": "\\\\(1000 = 10^3\\\\)"
+            },
+            {
+              "explain": "Substitute \\\\(10^3\\\\) back into the product expression.",
+              "work": "\\\\(5 \\\\times 10^3\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the exponential term as an ordinary number:\\n\\\\(3^5\\\\)",
+          "options": [
+            "\\\\(243\\\\)",
+            "\\\\(125\\\\)",
+            "\\\\(15\\\\)",
+            "\\\\(81\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate 3 raised to the power of 5, which means 3 multiplied by itself 5 times.",
+          "solution": "Calculate power value:\n\\\\(3^5 = 3 \\\\times 3 \\\\times 3 \\\\times 3 \\\\times 3 = 243\\\\).",
+          "steps": [
+            {
+              "explain": "Expand the power term into a multiplication chain.",
+              "work": "\\\\(3^5 = 3 \\\\times 3 \\\\times 3 \\\\times 3 \\\\times 3\\\\)"
+            },
+            {
+              "explain": "Perform the multiplications sequentially.",
+              "work": "\\\\(3 \\\\times 3 = 9, quad 9 \\\\times 3 = 27, quad 27 \\\\times 3 = 81\\\\)"
+            },
+            {
+              "explain": "Multiply by the last factor of 3 to find the final ordinary number.",
+              "work": "\\\\(81 \\\\times 3 = 243\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the exponential term as an ordinary number:\\n\\\\(2^8\\\\)",
+          "options": [
+            "\\\\(128\\\\)",
+            "\\\\(256\\\\)",
+            "\\\\(64\\\\)",
+            "\\\\(512\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate 2 raised to the power of 8, which means 2 multiplied by itself 8 times.",
+          "solution": "Calculate power value:\n\\\\(2^8 = 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 = 256\\\\).",
+          "steps": [
+            {
+              "explain": "Expand the power expression as a product of factors of 2.",
+              "work": "\\\\(2^8 = 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2\\\\)"
+            },
+            {
+              "explain": "Group factors to simplify calculations.",
+              "work": "\\\\(2^4 \\\\times 2^4 = 16 \\\\times 16\\\\)"
+            },
+            {
+              "explain": "Multiply 16 by 16 to find the final value.",
+              "work": "\\\\(16 \\\\times 16 = 256\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the exponential term as an ordinary number:\\n\\\\(6^4\\\\)",
+          "options": [
+            "\\\\(24\\\\)",
+            "\\\\(216\\\\)",
+            "\\\\(1296\\\\)",
+            "\\\\(360\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate 6 raised to the power of 4, which means 6 multiplied by itself 4 times.",
+          "solution": "Calculate power value:\n\\\\(6^4 = 6 \\\\times 6 \\\\times 6 \\\\times 6 = 1296\\\\).",
+          "steps": [
+            {
+              "explain": "Write out the exponential term as a multiplication product of 6.",
+              "work": "\\\\(6^4 = 6 \\\\times 6 \\\\times 6 \\\\times 6\\\\)"
+            },
+            {
+              "explain": "Simplify by multiplying in pairs.",
+              "work": "\\\\(36 \\\\times 36\\\\)"
+            },
+            {
+              "explain": "Find the product of 36 multiplied by 36.",
+              "work": "\\\\(36 \\\\times 36 = 1296\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10d_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the exponential expression as an ordinary number:\\n\\\\(2 \\\\times 5^3\\\\)",
+          "options": [
+            "\\\\(125\\\\)",
+            "\\\\(1000\\\\)",
+            "\\\\(250\\\\)",
+            "\\\\(30\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Order of operations applies: calculate the power first (5^3), then multiply by 2.",
+          "solution": "Calculate step-by-step:\n1. Evaluate power first: \\\\(5^3 = 5 \\\\times 5 \\\\times 5 = 125\\\\).\n2. Multiply: \\\\(2 \\\\times 125 = 250\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the value of the exponential term first according to order of operations.",
+              "work": "\\\\(5^3 = 5 \\\\times 5 \\\\times 5 = 125\\\\)"
+            },
+            {
+              "explain": "Multiply the resulting value by 2.",
+              "work": "\\\\(2 \\\\times 125\\\\)"
+            },
+            {
+              "explain": "Compute the final product.",
+              "work": "\\\\(250\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-3b",
+      "code": "3B",
+      "title": "Factors and primes",
+      "questions": []
+    },
+    {
+      "topicId": "y6-3c",
+      "code": "3C",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

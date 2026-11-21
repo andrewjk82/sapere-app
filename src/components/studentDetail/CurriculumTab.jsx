@@ -10,6 +10,7 @@ const CurriculumTab = ({
   chapters,
   assignedChapters,
   completedChapters,
+  topicProgress,
   onToggleChapter,
 }) => {
   return (
@@ -163,6 +164,11 @@ const CurriculumTab = ({
                 >
                   {ch.title}
                 </div>
+                {topicProgress?.chapters?.[ch.id]?.total > 0 && (
+                  <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#64748b" }}>
+                    {topicProgress.chapters[ch.id].done}/{topicProgress.chapters[ch.id].total} topics done
+                  </div>
+                )}
               </div>
             );
           })}

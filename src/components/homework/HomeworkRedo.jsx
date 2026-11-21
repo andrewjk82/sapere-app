@@ -17,7 +17,7 @@ import WorksheetPlaceholder from './WorksheetPlaceholder';
 import { getHomeworkQuestionIndex, getQuestionsByIds } from '../../services/contentLoader';
 import { resolveHomeworkQuestion } from '../../utils/homeworkQuestionLink';
 import { isSafeImageDataUrl } from '../../utils/homework';
-import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel, homeworkReferenceFor } from '../../utils/homeworkRedo';
+import { wrongQuestions, redoStoreUid, draftHasInk, redoState, redoSummary, shortTopicLabel, homeworkReferenceFor } from '../../utils/homeworkRedo';
 import { groupMarksByTopic, markKey } from '../../utils/homeworkMarking';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
@@ -26,7 +26,7 @@ const MARK_BG = { c: '#10b981', x: '#ef4444', h: '#f59e0b' };
 
 // Local storage key: a separate "uid" so this never touches the real homework record.
 // The teacher's copy in a lesson ("Check the mistake") is kept apart from anything of their own.
-const storeUid = (uid) => `redo-${uid}`;
+const storeUid = redoStoreUid;
 const lessonStoreUid = (studentId) => `lesson-${studentId}`;
 
 /**

@@ -959,136 +959,219 @@ export const CURRICULUM_DATA = {
   ],
   'Year 6': [
     {
-      id: 'y6-wn',
-      title: 'Whole Numbers',
-      modules: 6,
+      id: 'y6-1',
+      title: 'Positive and negative whole numbers',
+      modules: 5,
       topics: [
-        { id: 'y6-wn-1', code: 'WN1', title: 'Roman Numerals: Convert Roman numerals to Hindu-Arabic and vice-versa up to 2000' },
-        { id: 'y6-wn-2', code: 'WN2', title: 'Place Value and Expanded Notation: Place value of digits in large numbers; reading and writing numbers in words; expanded notation with powers of 10' },
-        { id: 'y6-wn-3', code: 'WN3', title: 'Rounding and Estimation: Round numbers to the nearest 10, 100, 1000, 10000; order numbers using inequality symbols' },
-        { id: 'y6-wn-4', code: 'WN4', title: 'Basic Operations: Add, subtract, multiply, and divide large whole numbers including remainders and vertical column methods' },
-        { id: 'y6-wn-5', code: 'WN5', title: 'Powers and Exponential Notation: Calculate squares and cubes; simplify using exponential notation and BODMAS order of operations' },
-        { id: 'y6-wn-6', code: 'WN6', title: 'Word Problems and Averages: Calculate averages of multiple numbers; solve word problems and translate verbal descriptions into mathematical expressions' }
+        { id: 'y6-1a', code: '1A', title: 'Place value', page: 4 },
+        { id: 'y6-1b', code: '1B', title: 'The number line', page: 8 },
+        { id: 'y6-1c', code: '1C', title: 'Counting', page: 11 },
+        { id: 'y6-1d', code: '1D', title: 'The integers', page: 14 },
+        { id: 'y6-1e', code: '1E', title: 'Review questions', page: 18 }
       ]
     },
     {
-      id: 'y6-frac',
+      id: 'y6-2',
+      title: 'Addition and subtraction',
+      modules: 6,
+      topics: [
+        { id: 'y6-2a', code: '2A', title: 'Mental strategies for addition', page: 22 },
+        { id: 'y6-2b', code: '2B', title: 'The standard addition algorithm', page: 26 },
+        { id: 'y6-2c', code: '2C', title: 'Mental strategies for subtraction', page: 29 },
+        { id: 'y6-2d', code: '2D', title: 'Subtraction algorithms', page: 32 },
+        { id: 'y6-2e', code: '2E', title: 'Working with larger numbers', page: 35 },
+        { id: 'y6-2f', code: '2F', title: 'Review questions', page: 38 }
+      ]
+    },
+    {
+      id: 'y6-3',
+      title: 'Multiples and factors',
+      modules: 3,
+      topics: [
+        { id: 'y6-3a', code: '3A', title: 'Multiples and products', page: 42 },
+        { id: 'y6-3b', code: '3B', title: 'Factors and primes', page: 49 },
+        { id: 'y6-3c', code: '3C', title: 'Review questions', page: 56 }
+      ]
+    },
+    {
+      id: 'y6-4',
+      title: 'Multiplication and division',
+      modules: 8,
+      topics: [
+        { id: 'y6-4a', code: '4A', title: 'Mental strategies for multiplication', page: 60 },
+        { id: 'y6-4b', code: '4B', title: 'Breaking a multiplication apart', page: 63 },
+        { id: 'y6-4c', code: '4C', title: 'The multiplication algorithm', page: 65 },
+        { id: 'y6-4d', code: '4D', title: 'Connecting multiplication and division', page: 70 },
+        { id: 'y6-4e', code: '4E', title: 'The long division algorithm', page: 76 },
+        { id: 'y6-4f', code: '4F', title: 'The short division algorithm', page: 81 },
+        { id: 'y6-4g', code: '4G', title: 'Tests for divisibility', page: 83 },
+        { id: 'y6-4h', code: '4H', title: 'Review questions', page: 89 }
+      ]
+    },
+    {
+      id: 'y6-5',
+      title: 'Length, perimeter, area and volume',
+      modules: 10,
+      topics: [
+        { id: 'y6-5a', code: '5A', title: 'Length', page: 94 },
+        { id: 'y6-5b', code: '5B', title: 'Converting length measurements', page: 98 },
+        { id: 'y6-5c', code: '5C', title: 'Calculating perimeter', page: 103 },
+        { id: 'y6-5d', code: '5D', title: 'Area', page: 108 },
+        { id: 'y6-5e', code: '5E', title: 'Area of composite shapes', page: 111 },
+        { id: 'y6-5f', code: '5F', title: 'Area of triangles', page: 115 },
+        { id: 'y6-5g', code: '5G', title: 'Hectares', page: 120 },
+        { id: 'y6-5h', code: '5H', title: 'Volume', page: 122 },
+        { id: 'y6-5i', code: '5I', title: 'Liquid measure', page: 128 },
+        { id: 'y6-5j', code: '5J', title: 'Review questions', page: 131 }
+      ]
+    },
+    {
+      id: 'y6-6',
       title: 'Fractions',
+      modules: 7,
+      topics: [
+        { id: 'y6-6a', code: '6A', title: 'What is a fraction?', page: 136 },
+        { id: 'y6-6b', code: '6B', title: 'Fractions on the number line', page: 140 },
+        { id: 'y6-6c', code: '6C', title: 'Area model for fractions', page: 143 },
+        { id: 'y6-6d', code: '6D', title: 'Equivalent fractions and simplest form', page: 148 },
+        { id: 'y6-6e', code: '6E', title: 'Comparing fractions', page: 154 },
+        { id: 'y6-6f', code: '6F', title: 'Improper fractions and mixed numbers', page: 159 },
+        { id: 'y6-6g', code: '6G', title: 'Review questions', page: 163 }
+      ]
+    },
+    {
+      id: 'y6-7',
+      title: 'Fraction arithmetic',
+      modules: 8,
+      topics: [
+        { id: 'y6-7a', code: '7A', title: 'Adding fractions with the same denominator', page: 168 },
+        { id: 'y6-7b', code: '7B', title: 'Adding fractions with different denominators', page: 170 },
+        { id: 'y6-7c', code: '7C', title: 'Subtraction of fractions', page: 175 },
+        { id: 'y6-7d', code: '7D', title: 'Multiplying fractions: Taking a fraction of a number', page: 179 },
+        { id: 'y6-7e', code: '7E', title: 'Multiplying fractions: A fraction of a fraction', page: 181 },
+        { id: 'y6-7f', code: '7F', title: 'Fractions and division', page: 185 },
+        { id: 'y6-7g', code: '7G', title: 'Dividing by a fraction', page: 187 },
+        { id: 'y6-7h', code: '7H', title: 'Review questions', page: 191 }
+      ]
+    },
+    {
+      id: 'y6-8',
+      title: 'Decimals',
+      modules: 11,
+      topics: [
+        { id: 'y6-8a', code: '8A', title: 'Decimal numbers', page: 196 },
+        { id: 'y6-8b', code: '8B', title: 'Comparing decimal numbers', page: 205 },
+        { id: 'y6-8c', code: '8C', title: 'Adding decimals', page: 208 },
+        { id: 'y6-8d', code: '8D', title: 'Subtracting decimals', page: 211 },
+        { id: 'y6-8e', code: '8E', title: 'Multiplying decimals by 10, 100 or 1000', page: 213 },
+        { id: 'y6-8f', code: '8F', title: 'Dividing decimals by 10, 100 or 1000', page: 218 },
+        { id: 'y6-8g', code: '8G', title: 'Multiplying decimals by a whole number', page: 221 },
+        { id: 'y6-8h', code: '8H', title: 'Division and decimals', page: 223 },
+        { id: 'y6-8i', code: '8I', title: 'Multiplying whole numbers by decimals', page: 227 },
+        { id: 'y6-8j', code: '8J', title: 'Rounding decimals', page: 230 },
+        { id: 'y6-8k', code: '8K', title: 'Review questions', page: 233 }
+      ]
+    },
+    {
+      id: 'y6-9',
+      title: 'Percentages',
       modules: 4,
       topics: [
-        { id: 'y6-frac-1', code: 'FRAC1', title: 'Basic Fractions and Equivalent Fractions: Understanding basic fractions, shaded regions, equivalent fractions, and simplifying fractions.' },
-        { id: 'y6-frac-2', code: 'FRAC2', title: 'Mixed Numerals and Improper Fractions: Converting between mixed and improper fractions, and comparing fractions.' },
-        { id: 'y6-frac-3', code: 'FRAC3', title: 'Fraction Operations: Adding, subtracting, and multiplying proper and mixed fractions.' },
-        { id: 'y6-frac-4', code: 'FRAC4', title: 'Fraction Word Problems: Solving real-world problems involving fractions and fractional units.' }
+        { id: 'y6-9a', code: '9A', title: 'Converting fractions to percentages', page: 236 },
+        { id: 'y6-9b', code: '9B', title: 'Decimals and percentages', page: 240 },
+        { id: 'y6-9c', code: '9C', title: 'Percentage \'of\' a quantity', page: 243 },
+        { id: 'y6-9d', code: '9D', title: 'Review questions', page: 247 }
       ]
     },
     {
-      id: 'y6-rn',
-      title: 'Represents Numbers (B)',
+      id: 'y6-10',
+      title: 'Lines and angles',
       modules: 4,
       topics: [
-        { id: 'y6-rn-1', code: 'MA3-RN-03', title: 'Integers on a number line: Locate and represent positive and negative integers; order integers; understand direction and distance from zero' },
-        { id: 'y6-rn-2', code: 'MA3-RN-01', title: 'Fractions, decimals, percentages: Make connections between benchmark fractions, decimals and percentages (e.g. ½ = 0.5 = 50%); convert fluently between forms' },
-        { id: 'y6-rn-3', code: 'MA3-RN-01', title: 'Percentage discounts: Determine percentage discounts of 10%, 25% and 50%; apply to real money contexts' },
-        { id: 'y6-rn-4', code: 'MA3-RN-03', title: 'Ordering negative integers: Compare and order positive and negative integers; represent on a horizontal and vertical number line' }
+        { id: 'y6-10a', code: '10A', title: 'Lines and angles', page: 250 },
+        { id: 'y6-10b', code: '10B', title: 'Using a protractor', page: 256 },
+        { id: 'y6-10c', code: '10C', title: 'Finding unknown angles', page: 262 },
+        { id: 'y6-10d', code: '10D', title: 'Review questions', page: 267 }
       ]
     },
     {
-      id: 'y6-ar',
-      title: 'Additive Relations (B)',
-      modules: 4,
-      topics: [
-        { id: 'y6-ar-1', code: 'MA3-AR-01', title: 'Efficient strategies — large numbers: Choose and apply efficient mental and written strategies for addition and subtraction of large numbers' },
-        { id: 'y6-ar-2', code: 'MA3-AR-01', title: 'Add and subtract decimals: Apply known strategies to add and subtract decimal numbers to 3 decimal places' },
-        { id: 'y6-ar-3', code: 'MA3-AR-01', title: 'Budgeting contexts: Solve problems involving addition and subtraction in real-life budgeting and financial contexts' },
-        { id: 'y6-ar-4', code: 'MA3-AR-01', title: 'Reasonableness: Use leading digit approximation and rounding of decimal numbers to check solutions' }
-      ]
-    },
-    {
-      id: 'y6-mr',
-      title: 'Multiplicative Relations (B)',
-      modules: 5,
-      topics: [
-        { id: 'y6-mr-1', code: 'MA3-MR-01', title: 'Multiply and divide whole numbers: Select and apply strategies for multi-digit multiplication and division including long division' },
-        { id: 'y6-mr-2', code: 'MA3-MR-01', title: 'Multiply and divide decimals by powers of 10: Multiply and divide decimal numbers by 10, 100 and 1000; connect to place value shifts' },
-        { id: 'y6-mr-3', code: 'MA3-MR-01', title: 'Equivalent number sentences: Use equivalent number sentences involving multiplication and division to find unknown quantities' },
-        { id: 'y6-mr-4', code: 'MA3-MR-01', title: 'Number patterns: Represent and describe number patterns formed by multiples; identify rules in sequences' },
-        { id: 'y6-mr-5', code: 'MA3-MR-01', title: 'Order of operations (full): Explore brackets and full order of operations (BODMAS) to write and evaluate multi-step number sentences' }
-      ]
-    },
-    {
-      id: 'y6-rqf',
-      title: 'Representing Quantity Fractions (B)',
-      modules: 5,
-      topics: [
-        { id: 'y6-rqf-1', code: 'MA3-RQF-01', title: 'Compare fractions (different denominators): Compare fractions using equivalence; compare fractions with different denominators by finding common denominators' },
-        { id: 'y6-rqf-2', code: 'MA3-RQF-01', title: 'Add fractions with related denominators: Use equivalence to add and subtract fractional quantities including fractions with related denominators' },
-        { id: 'y6-rqf-3', code: 'MA3-RQF-01', title: 'Fractions of whole numbers: Find fractional quantities of whole numbers — halves, quarters, fifths and tenths; solve word problems' },
-        { id: 'y6-rqf-4', code: 'MA3-RQF-02', title: 'Fractions as division: Recognise that a fraction represents division; build up to the whole from a given fractional part' },
-        { id: 'y6-rqf-5', code: 'MA3-RQF-01', title: 'Simplify fractions: Simplify fractions using highest common factor; understand equivalence across forms' }
-      ]
-    },
-    {
-      id: 'y6-gm',
-      title: 'Geometric Measure (B)',
+      id: 'y6-11',
+      title: 'Two-dimensional shapes',
       modules: 6,
       topics: [
-        { id: 'y6-gm-1', code: 'MA3-GM-01', title: 'All 4 quadrants: Use the full Cartesian coordinate system across all 4 quadrants; plot and describe locations using positive and negative coordinates' },
-        { id: 'y6-gm-2', code: 'MA3-GM-02', title: 'Convert metric length units: Connect decimal representations to the metric system; convert between mm, cm, m and km' },
-        { id: 'y6-gm-3', code: 'MA3-GM-02', title: 'Solve length problems: Solve problems involving comparison of lengths using appropriate units of measurement' },
-        { id: 'y6-gm-4', code: 'MA3-GM-03', title: 'Angles on a straight line: Investigate that angles on a straight line sum to 180°; apply to find unknown angles' },
-        { id: 'y6-gm-5', code: 'MA3-GM-03', title: 'Angles at a point: Investigate that angles at a point sum to 360°; apply to find unknown angles' },
-        { id: 'y6-gm-6', code: 'MA3-GM-03', title: 'Vertically opposite angles: Investigate the relationships formed by the intersection of straight lines; identify and use vertically opposite angles' }
+        { id: 'y6-11a', code: '11A', title: 'Triangles', page: 272 },
+        { id: 'y6-11b', code: '11B', title: 'Quadrilaterals', page: 280 },
+        { id: 'y6-11c', code: '11C', title: 'The rhombus', page: 287 },
+        { id: 'y6-11d', code: '11D', title: 'Pentagons', page: 289 },
+        { id: 'y6-11e', code: '11E', title: 'Circles', page: 292 },
+        { id: 'y6-11f', code: '11F', title: 'Review questions', page: 297 }
       ]
     },
     {
-      id: 'y6-2ds',
-      title: '2D Spatial Structure (B)',
+      id: 'y6-12',
+      title: 'Three-dimensional objects',
+      modules: 3,
+      topics: [
+        { id: 'y6-12a', code: '12A', title: 'Polyhedra, prisms, pyramids and cylinders', page: 300 },
+        { id: 'y6-12b', code: '12B', title: 'Nets of three-dimensional objects', page: 305 },
+        { id: 'y6-12c', code: '12C', title: 'Review questions', page: 309 }
+      ]
+    },
+    {
+      id: 'y6-13',
+      title: 'Measurement',
       modules: 5,
       topics: [
-        { id: 'y6-2ds-1', code: 'MA2-2DS-01', title: 'Transformations on a grid: Translate, reflect and rotate shapes on a coordinate grid; describe transformations precisely' },
-        { id: 'y6-2ds-2', code: 'MA2-2DS-01', title: 'Enlargement: Explore the enlargement transformation; understand scale and similarity' },
-        { id: 'y6-2ds-3', code: 'MA3-2DS-03', title: 'Area of composite figures: Find the area of composite figures by subdivision into familiar shapes' },
-        { id: 'y6-2ds-4', code: 'MA3-2DS-02', title: 'Area of parallelograms: Calculate the area of a parallelogram using base × height via subdivision and rearrangement' },
-        { id: 'y6-2ds-5', code: 'MA3-2DS-02', title: 'Area of triangles: Determine the area of a triangle using ½ × base × height' }
+        { id: 'y6-13a', code: '13A', title: 'Mass', page: 312 },
+        { id: 'y6-13b', code: '13B', title: 'Calculating different masses', page: 316 },
+        { id: 'y6-13c', code: '13C', title: 'Reading and recording time', page: 318 },
+        { id: 'y6-13d', code: '13D', title: 'Temperature', page: 321 },
+        { id: 'y6-13e', code: '13E', title: 'Review questions', page: 325 }
       ]
     },
     {
-      id: 'y6-3ds',
-      title: '3D Spatial Structure (B)',
-      modules: 2,
-      topics: [
-        { id: 'y6-3ds-1', code: 'MA3-3DS-01', title: 'Construct 3D objects: Construct prisms and pyramids using nets; make objects using cubes' },
-        { id: 'y6-3ds-2', code: 'MA3-3DS-02', title: 'Volume — cm³ and m³: Use cubic centimetres and cubic metres; recognise the multiplicative structure (l × w × h) to find volume of rectangular prisms' }
-      ]
-    },
-    {
-      id: 'y6-nsm',
-      title: 'Non-Spatial Measure (B)',
-      modules: 2,
-      topics: [
-        { id: 'y6-nsm-1', code: 'MA3-NSM-01', title: 'Convert mass units: Convert between common metric units of mass (mg, g, kg, t); net mass vs gross mass' },
-        { id: 'y6-nsm-2', code: 'MA3-NSM-02', title: 'Duration problems: Solve problems involving duration using 12- and 24-hour time; personal and transport timetables' }
-      ]
-    },
-    {
-      id: 'y6-data',
-      title: 'Data (B)',
+      id: 'y6-14',
+      title: 'Maps and coordinates',
       modules: 3,
       topics: [
-        { id: 'y6-data-1', code: 'MA3-DATA-01', title: 'Extended data displays: Interpret and compare dot plots, pie charts, side-by-side column graphs, line graphs and two-way tables' },
-        { id: 'y6-data-2', code: 'MA3-DATA-01', title: 'Misleading data: Identify and explain misleading data and graphs in digital media and real contexts' },
-        { id: 'y6-data-3', code: 'MA3-DATA-01', title: 'Data in digital media: Interpret data presented in digital media and broader contexts; critically evaluate representations' }
+        { id: 'y6-14a', code: '14A', title: 'Maps and grid references', page: 328 },
+        { id: 'y6-14b', code: '14B', title: 'The Cartesian plane', page: 330 },
+        { id: 'y6-14c', code: '14C', title: 'Review questions', page: 333 }
       ]
     },
     {
-      id: 'y6-chan',
-      title: 'Chance (B)',
+      id: 'y6-15',
+      title: 'Data',
+      modules: 9,
+      topics: [
+        { id: 'y6-15a', code: '15A', title: 'Using tables', page: 337 },
+        { id: 'y6-15b', code: '15B', title: 'Mode, median and mean', page: 341 },
+        { id: 'y6-15c', code: '15C', title: 'Dot plots', page: 347 },
+        { id: 'y6-15d', code: '15D', title: 'Column graphs', page: 350 },
+        { id: 'y6-15e', code: '15E', title: 'Line graphs', page: 353 },
+        { id: 'y6-15f', code: '15F', title: 'Pie charts', page: 356 },
+        { id: 'y6-15g', code: '15G', title: 'The statistical data investigation process', page: 359 },
+        { id: 'y6-15h', code: '15H', title: 'Probability', page: 364 },
+        { id: 'y6-15i', code: '15I', title: 'Review questions', page: 368 }
+      ]
+    },
+    {
+      id: 'y6-16',
+      title: 'Algebra',
       modules: 3,
       topics: [
-        { id: 'y6-chan-1', code: 'MA3-CHAN-01', title: 'Create random generators: Create random generators (spinners, cards, dice); describe probabilities using fractions' },
-        { id: 'y6-chan-2', code: 'MA3-CHAN-01', title: 'Small and large trials: Conduct chance experiments with both small and large numbers of trials; record systematically' },
-        { id: 'y6-chan-3', code: 'MA3-CHAN-01', title: 'Observed vs expected: Compare observed frequencies of outcomes with expected theoretical results; use proportional reasoning' }
+        { id: 'y6-16a', code: '16A', title: 'Finding an unknown', page: 372 },
+        { id: 'y6-16b', code: '16B', title: 'Pronumerals', page: 374 },
+        { id: 'y6-16c', code: '16C', title: 'Number patterns', page: 379 }
+      ]
+    },
+    {
+      id: 'y6-17',
+      title: 'Symmetry and transformation',
+      modules: 2,
+      topics: [
+        { id: 'y6-17a', code: '17A', title: 'Symmetry of two-dimensional shapes', page: 384 },
+        { id: 'y6-17b', code: '17B', title: 'Transformation and tessellation', page: 386 }
       ]
     }
   ],

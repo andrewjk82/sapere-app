@@ -5354,72 +5354,6 @@
           "xp": 1
         },
         {
-          "id": "y8-10g-q8a",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "What is their hourly rate?",
-          "options": [
-            "\\(48\\)",
-            "\\(24\\)",
-            "\\(12\\)",
-            "\\(240\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(24\\).",
-          "steps": [
-            {
-              "explain": "Identify the total pay and total hours.",
-              "work": "\\(\\text{Pay} = \\$192, \\quad \\text{Hours} = 8\\)"
-            },
-            {
-              "explain": "Divide the total pay by the number of hours.",
-              "work": "\\(\\frac{\\$192}{8}\\)"
-            },
-            {
-              "explain": "Perform the division.",
-              "work": "\\(24\\)"
-            },
-            {
-              "explain": "State the hourly rate.",
-              "work": "\\(\\text{The hourly rate is } \\$24.\\)"
-            }
-          ],
-          "xp": 2
-        },
-        {
-          "id": "y8-10g-q8b",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "How much do they get paid for \\(12\\) hours work?",
-          "options": [
-            "\\(576\\)",
-            "\\(144\\)",
-            "\\(2880\\)",
-            "\\(288\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(288\\).",
-          "steps": [
-            {
-              "explain": "Identify the hourly rate from the previous part.",
-              "work": "\\(\\text{Hourly rate} = \\$24\\text{/hour}\\)"
-            },
-            {
-              "explain": "Multiply the hourly rate by the new number of hours (12).",
-              "work": "\\(\\$24 \\times 12\\)"
-            },
-            {
-              "explain": "Perform the multiplication.",
-              "work": "\\(288\\)"
-            },
-            {
-              "explain": "State the final pay.",
-              "work": "\\(\\text{The pay for 12 hours is } \\$288.\\)"
-            }
-          ],
-          "xp": 2
-        },
-        {
           "id": "y8-10g-q9",
           "type": "mc",
           "difficulty": "easy",
@@ -6558,35 +6492,35 @@
           "id": "y8-10g-q8",
           "type": "multipart",
           "difficulty": "easy",
-          "stem": "A person works for $8$ hours and gets paid $192.",
+          "stem": "A person works for \\(8\\) hours and is paid \\(\\$192\\).",
           "parts": [
             {
               "id": "y8-10g-q8a",
               "type": "mc",
               "stem": "What is their hourly rate?",
               "options": [
-                "\\(48\\)",
-                "\\(24\\)",
-                "\\(12\\)",
-                "\\(240\\)"
+                "\\(\\$48\\)",
+                "\\(\\$24\\)",
+                "\\(\\$12\\)",
+                "\\(\\$240\\)"
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Identify the total pay and total hours.",
-                  "work": "\\(\\text{Pay} = \\$192, \\quad \\text{Hours} = 8\\)"
+                  "explain": "Identify the total pay and the total hours worked.",
+                  "work": "\\(\\text{Pay}=\\$192,\\quad \\text{Hours}=8\\)"
                 },
                 {
-                  "explain": "Divide the total pay by the number of hours.",
-                  "work": "\\(\\frac{\\$192}{8}\\)"
+                  "explain": "Hourly rate = total pay divided by hours worked.",
+                  "work": "\\(\\dfrac{\\$192}{8}\\)"
                 },
                 {
                   "explain": "Perform the division.",
-                  "work": "\\(24\\)"
+                  "work": "\\(192\\div8=24\\)"
                 },
                 {
                   "explain": "State the hourly rate.",
-                  "work": "\\(\\text{The hourly rate is } \\$24.\\)"
+                  "work": "\\(\\text{The hourly rate is }\\$24\\text{ per hour.}\\)"
                 }
               ],
               "xp": 2
@@ -6594,38 +6528,36 @@
             {
               "id": "y8-10g-q8b",
               "type": "mc",
-              "stem": "How much do they get paid for \\(12\\) hours work?",
+              "stem": "How much are they paid for \\(12\\) hours of work at the same rate?",
               "options": [
-                "\\(576\\)",
-                "\\(144\\)",
-                "\\(2880\\)",
-                "\\(288\\)"
+                "\\(\\$576\\)",
+                "\\(\\$144\\)",
+                "\\(\\$2880\\)",
+                "\\(\\$288\\)"
               ],
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Identify the hourly rate from the previous part.",
-                  "work": "\\(\\text{Hourly rate} = \\$24\\text{/hour}\\)"
+                  "explain": "Use the hourly rate from part (a).",
+                  "work": "\\(\\text{Hourly rate}=\\$24\\text{ per hour}\\)"
                 },
                 {
-                  "explain": "Multiply the hourly rate by the new number of hours (12).",
-                  "work": "\\(\\$24 \\times 12\\)"
+                  "explain": "Multiply the hourly rate by the number of hours.",
+                  "work": "\\(\\$24\\times12\\)"
                 },
                 {
                   "explain": "Perform the multiplication.",
-                  "work": "\\(288\\)"
+                  "work": "\\(24\\times12=288\\)"
                 },
                 {
-                  "explain": "State the final pay.",
-                  "work": "\\(\\text{The pay for 12 hours is } \\$288.\\)"
+                  "explain": "State the pay for 12 hours.",
+                  "work": "\\(\\text{The pay for 12 hours is }\\$288.\\)"
                 }
               ],
               "xp": 2
             }
           ],
-          "answer": "Refer to sub-questions",
-          "hint": "Divide the total pay by hours worked to get the rate per hour, then multiply by $12$.",
-          "solution": "To solve this problem:\na) Calculate the hourly rate by dividing the total pay by the hours worked:\n   $$\\text{Hourly rate} = 192 \\div 8 = 24\\text{ dollars/hour}$$\nb) Multiply the hourly rate by the number of hours worked ($12$):\n   $$\\text{Pay for 12 hours} = 12 \\times 24 = 288\\text{ dollars}$$"
+          "hint": "Divide the total pay by the hours worked to get the rate per hour, then multiply by \\(12\\)."
         },
         {
           "id": "y8-10g-q10",

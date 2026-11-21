@@ -1,7 +1,7 @@
 // Device cache for the teacher's textbook answer keys (Firestore answer_keys/{topicId}).
 // Answers almost never change, so a key read once is kept in IndexedDB and
 // reused — marking the same topic again costs no Firestore read. Entries expire
-// after TTL (so a corrected key reaches the device within two weeks) and are
+// after TTL (so a corrected key reaches the device within a month) and are
 // dropped when ANSWER_KEY_CACHE_VERSION changes. "No key" results are never
 // stored, so a key added later shows up on the next open.
 
@@ -14,7 +14,7 @@
 // 8: Extension 2 Year 12 (2026) labels made part-level from the question pages (2026-11-04).
 // 9: Year 12 Extension 1 and Advanced (2026) labels made part-level from the question pages (2026-11-04).
 export const ANSWER_KEY_CACHE_VERSION = 9;
-export const ANSWER_KEY_TTL_MS = 14 * 24 * 60 * 60 * 1000;
+export const ANSWER_KEY_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 
 // adapter: { get(id) → Promise<record|undefined>, set(id, record) → Promise }
 export const createAnswerKeyCache = (adapter, { ttlMs = ANSWER_KEY_TTL_MS, version = ANSWER_KEY_CACHE_VERSION, now = Date.now } = {}) => ({

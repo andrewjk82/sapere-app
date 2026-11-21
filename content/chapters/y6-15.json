@@ -1,0 +1,718 @@
+{
+  "chapterId": "y6-15",
+  "title": "Chapter 15: Data",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-15a",
+      "code": "15A",
+      "title": "Using tables",
+      "questions": [
+        {
+          "id": "y6-data-1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The two-way table shows students' favourite sport by gender. How many more girls than boys prefer netball?",
+          "figure": {
+            "svg": "fig:79d1f8f903"
+          },
+          "options": [
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(10\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the netball values for boys and girls, then subtract.",
+          "steps": [
+            {
+              "explain": "Read off the number of girls and boys who prefer netball.",
+              "work": "Girls: 14, Boys: 4"
+            },
+            {
+              "explain": "Subtract to find the difference.",
+              "work": "\\(14-4=10\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15b",
+      "code": "15B",
+      "title": "Mode, median and mean",
+      "questions": [
+        {
+          "id": "y6-mr-2-l5-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A precision assembly arm records the cycle times in seconds for assembling six components: \\\\(10.7\\\\), \\\\(10.5\\\\), \\\\(10.8\\\\), \\\\(10.9\\\\), \\\\(11.0\\\\), and \\\\(10.3\\\\) seconds. What is the average cycle time of the robot in seconds?",
+          "options": [
+            "\\\\(10.7\\\\)",
+            "\\\\(10.8\\\\)",
+            "\\\\(10.6\\\\)",
+            "\\\\(10.5\\\\)"
+          ],
+          "answer": 0,
+          "hint": "To find the average, sum all six cycle times together and then divide the sum by the total number of components, which is \\\\(6\\\\).",
+          "steps": [
+            {
+              "explain": "First, identify the dataset of times and the number of values. The times are \\\\(\\{10.7, 10.5, 10.8, 10.9, 11.0, 10.3\\}\\) and the count is \\\\(6\\\\).",
+              "work": "\\\\(\\text{Count} = 6\\\\)"
+            },
+            {
+              "explain": "Add the six decimal times together. Align the decimal points and sum the values.",
+              "work": "\\\\(10.7 + 10.5 + 10.8 + 10.9 + 11.0 + 10.3 = 64.2\\\\)"
+            },
+            {
+              "explain": "Divide the sum \\\\(64.2\\\\) by the count \\\\(6\\\\) to find the mean average. Perform the decimal division.",
+              "work": "\\\\(64.2 \\\\div 6 = 10.7\\\\)"
+            },
+            {
+              "explain": "Conclude that the average cycle time is 10.7 seconds. This represents the central tendency of the assembly time.",
+              "work": "\\\\(\\text{Average} = 10.7\\\\text{ seconds}\\\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q51",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The average of $4$ numbers is $8$. A fifth number is added, and the new average of all five numbers is $10$. What is the fifth number?",
+          "options": [
+            "19",
+            "16",
+            "20",
+            "18"
+          ],
+          "answer": 3,
+          "hint": "First find the total sum of the first 4 numbers ($4 \\times \\text{average}$). Then find the total sum of the 5 numbers ($5 \\times \\text{new average}$). The difference is the fifth number.",
+          "solution": "1. Sum of first 4 numbers: $4 \\times 8 = 32$\n2. Sum of 5 numbers: $5 \\times 10 = 50$\n3. The fifth number is the difference: $50 - 32 = 18$.",
+          "steps": [
+            {
+              "explain": "Calculate the sum of the original 4 numbers.",
+              "work": "\\text{Sum of 4 numbers} = 4 \\times 8 = 32"
+            },
+            {
+              "explain": "Calculate the sum of the 5 numbers after the new number is added.",
+              "work": "\\text{Sum of 5 numbers} = 5 \\times 10 = 50"
+            },
+            {
+              "explain": "Subtract the original sum from the new sum to find the value of the added number.",
+              "work": "\\text{Fifth number} = 50 - 32 = 18"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q52",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cricket player's batting average is $24$ runs across $6$ matches. If they score $108$ runs in their $7\\text{th}$ match, what is their new batting average?",
+          "options": [
+            "32",
+            "38",
+            "36",
+            "40"
+          ],
+          "answer": 2,
+          "hint": "Find the total runs scored in the first $6$ matches. Add the $108$ runs from the $7\\text{th}$ match to get the new total. Divide by $7$.",
+          "solution": "1. Runs in first 6 matches: $6 \\times 24 = 144$\n2. New total runs: $144 + 108 = 252$\n3. Divide by total matches (7): $252 \\div 7 = 36$.\n\nNew average is $36$.",
+          "steps": [
+            {
+              "explain": "Find the total runs scored in the first 6 matches.",
+              "work": "\\text{Total runs (6 matches)} = 6 \\times 24 = 144"
+            },
+            {
+              "explain": "Add the runs from the 7th match to find the new total runs.",
+              "work": "\\text{New total runs} = 144 + 108 = 252"
+            },
+            {
+              "explain": "Divide the new total runs by 7 matches to find the new average.",
+              "work": "\\text{New average} = \\frac{252}{7} = 36"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q57",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the average of the following numbers: $4$, $8$, $9$, $13$, and $16$.",
+          "options": [
+            "11",
+            "10",
+            "12",
+            "9"
+          ],
+          "answer": 1,
+          "hint": "To find the average, add all the numbers together, then divide by the total count of numbers (which is $5$).",
+          "solution": "1. Sum: $4 + 8 + 9 + 13 + 16 = 50$\n2. Count: $5$\n3. Average: $50 \\div 5 = 10$.",
+          "steps": [
+            {
+              "explain": "Find the sum of all five numbers.",
+              "work": "4 + 8 + 9 + 13 + 16 = 50"
+            },
+            {
+              "explain": "Divide the sum by the count of numbers (5).",
+              "work": "\\text{Average} = \\frac{50}{5} = 10"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q58",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the average of the following numbers: $8$, $12$, $15$, and $21$.",
+          "options": [
+            "15",
+            "13",
+            "14",
+            "17"
+          ],
+          "answer": 2,
+          "hint": "Add the four numbers together, then divide by the count of numbers ($4$).",
+          "solution": "1. Sum: $8 + 12 + 15 + 21 = 56$\n2. Count: $4$\n3. Average: $56 \\div 4 = 14$.",
+          "steps": [
+            {
+              "explain": "Calculate the total sum.",
+              "work": "8 + 12 + 15 + 21 = 56"
+            },
+            {
+              "explain": "Divide by the count of numbers (4).",
+              "work": "\\text{Average} = \\frac{56}{4} = 14"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q60",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A school has $6$ classes in Year 6. The number of students in each class is $28$, $30$, $29$, $31$, $28$, and $34$. What is the average number of students per class?",
+          "options": [
+            "33",
+            "30",
+            "32",
+            "27"
+          ],
+          "answer": 1,
+          "hint": "Find the total number of students in Year 6 by adding all class sizes, then divide by the number of classes ($6$).",
+          "solution": "1. Total students: $28 + 30 + 29 + 31 + 28 + 34 = 180$\n2. Classes count: $6$\n3. Average students per class: $180 \\div 6 = 30$.",
+          "steps": [
+            {
+              "explain": "Sum the sizes of all 6 classes to find the total number of students.",
+              "work": "28 + 30 + 29 + 31 + 28 + 34 = 180"
+            },
+            {
+              "explain": "Divide the total students by the number of classes (6).",
+              "work": "\\text{Average} = \\frac{180}{6} = 30"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q12e_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following terminology problem:\nWhat is the average of \\(8\\) and \\(12\\)?",
+          "options": [
+            "\\(20\\)",
+            "\\(10\\)",
+            "\\(12\\)",
+            "\\(8\\)"
+          ],
+          "answer": 1,
+          "hint": "To find the average of two numbers, add them together and divide by 2.",
+          "solution": "Sum of 8 and 12 is 20. Divide by 2: 20 / 2 = 10.",
+          "steps": [
+            {
+              "explain": "Find the sum of the two numbers.",
+              "work": "\\(8 + 12 = 20\\)"
+            },
+            {
+              "explain": "Divide the sum by the count of numbers (2).",
+              "work": "\\(20 \\div 2 = 10\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q12a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the average of the following numbers:\n\\(3\\), \\(7\\) and \\(8\\)",
+          "options": [
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(18\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Add the numbers and divide by 3.",
+          "solution": "(3 + 7 + 8)/3 = 18/3 = 6.",
+          "steps": [
+            {
+              "explain": "Find the sum of the numbers.",
+              "work": "\\(3 + 7 + 8 = 18\\)"
+            },
+            {
+              "explain": "Divide the sum by 3.",
+              "work": "\\(18 \\div 3 = 6\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q12b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the average of the following numbers:\n\\(4\\), \\(7\\), \\(10\\), \\(13\\) and \\(11\\)",
+          "options": [
+            "\\(11\\)",
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 3,
+          "hint": "Add the numbers and divide by 5.",
+          "solution": "(4 + 7 + 10 + 13 + 11)/5 = 45/5 = 9.",
+          "steps": [
+            {
+              "explain": "Find the sum of the numbers.",
+              "work": "\\(4 + 7 + 10 + 13 + 11 = 45\\)"
+            },
+            {
+              "explain": "Divide the sum by 5.",
+              "work": "\\(45 \\div 5 = 9\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the average problem:\\nThe average of \\\\(3\\\\) numbers is \\\\(7\\\\). A fourth number is added to the total, and the new average is \\\\(9\\\\). What is the fourth number?",
+          "options": [
+            "\\\\(17\\\\)",
+            "\\\\(13\\\\)",
+            "\\\\(15\\\\)",
+            "\\\\(11\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the total sum of the first 3 numbers, then the total sum of all 4 numbers, and calculate the difference.",
+          "solution": "Solve using sums:\n- Total of first 3 numbers: \\\\(3 \\\\times 7 = 21\\\\).\n- Total of all 4 numbers: \\\\(4 \\\\times 9 = 36\\\\).\n- The fourth number is the difference: \\\\(36 - 21 = 15\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the sum of the first three numbers using their average.",
+              "work": "\\\\(\\text{Sum of 3 numbers} = 3 \\\\times 7 = 21\\\\)"
+            },
+            {
+              "explain": "Determine the sum of all four numbers using their new average.",
+              "work": "\\\\(\\text{Sum of 4 numbers} = 4 \\\\times 9 = 36\\\\)"
+            },
+            {
+              "explain": "Subtract the sum of the first three numbers from the sum of the four numbers to find the fourth number.",
+              "work": "\\\\(\\text{Fourth number} = 36 - 21 = 15\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the average problem:\\nMy cricket batting average is \\\\(26\\\\) runs for \\\\(5\\\\) matches. If I score \\\\(128\\\\) runs in my \\\\(6\\text{th}\\\\) match, what is my new batting average?",
+          "options": [
+            "\\\\(45\\\\)",
+            "\\\\(38\\\\)",
+            "\\\\(43\\\\)",
+            "\\\\(41\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the total runs scored in the first 5 matches, add 128 to get the new total, and divide by 6.",
+          "solution": "Calculate the average:\n- Total runs in 5 matches: \\\\(5 \\\\times 26 = 130\\\\) runs.\n- Total runs in 6 matches: \\\\(130 + 128 = 258\\\\) runs.\n- New average: \\\\(258 \\div 6 = 43\\\\) runs.",
+          "steps": [
+            {
+              "explain": "Find the total runs scored in the first 5 matches.",
+              "work": "\\\\(\\text{Total runs (5 matches)} = 5 \\\\times 26 = 130\\\\)"
+            },
+            {
+              "explain": "Calculate the new total runs by adding the 6th match score.",
+              "work": "\\\\(\\text{Total runs (6 matches)} = 130 + 128 = 258\\\\)"
+            },
+            {
+              "explain": "Divide the new total by the total number of matches (6) to find the new average.",
+              "work": "\\\\(\\text{New average} = 258 \\div 6 = 43\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15c",
+      "code": "15C",
+      "title": "Dot plots",
+      "questions": [
+        {
+          "id": "y6-data-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dot plot shows the number of pets owned by 15 students: 0 pets — 3 students, 1 pet — 6 students, 2 pets — 4 students, 3 pets — 2 students. What is the mode of this data?",
+          "options": [
+            "\\(1\\text{ pet}\\)",
+            "\\(0\\text{ pets}\\)",
+            "\\(6\\text{ pets}\\)",
+            "\\(15\\text{ pets}\\)"
+          ],
+          "answer": 0,
+          "hint": "The mode is the value that occurs most often.",
+          "steps": [
+            {
+              "explain": "Compare the number of students for each value: 3, 6, 4, 2.",
+              "work": "The highest count is 6, for \"1 pet\""
+            },
+            {
+              "explain": "The mode is the pet count with the highest frequency, not the frequency itself.",
+              "work": "\\(\\text{Mode}=1\\text{ pet}\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15d",
+      "code": "15D",
+      "title": "Column graphs",
+      "questions": [
+        {
+          "id": "y6-data-2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bar graph's vertical axis starts at \\(50\\) instead of \\(0\\), as shown. What effect does this have on how the bars appear?",
+          "figure": {
+            "svg": "fig:41e2efbd6f"
+          },
+          "options": [
+            "It makes the difference between the bars look smaller than it really is",
+            "It makes the difference between the bars look much bigger than it really is",
+            "It has no effect on how the bars look",
+            "It makes both bars look identical"
+          ],
+          "answer": 1,
+          "hint": "Compare the true difference (65−55=10) to how large that difference LOOKS when the axis is cut off at 50 rather than starting at 0.",
+          "steps": [
+            {
+              "explain": "The true difference between the two values is only 10 (65 − 55).",
+              "work": "\\(65-55=10\\)"
+            },
+            {
+              "explain": "But because the axis starts at 50 (not 0), that difference of 10 takes up a much larger share of the visible bar heights than it should.",
+              "work": "Truncating the axis exaggerates the visual difference"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15e",
+      "code": "15E",
+      "title": "Line graphs",
+      "questions": [
+        {
+          "id": "y6-data-1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A line graph records temperature through the day: 6am — \\(10°\\text{C}\\), 9am — \\(14°\\text{C}\\), 12pm — \\(22°\\text{C}\\), 3pm — \\(25°\\text{C}\\), 6pm — \\(19°\\text{C}\\). What is the range of temperatures recorded?",
+          "options": [
+            "\\(25°\\text{C}\\)",
+            "\\(10°\\text{C}\\)",
+            "\\(6°\\text{C}\\)",
+            "\\(15°\\text{C}\\)"
+          ],
+          "answer": 3,
+          "hint": "Range = highest value − lowest value.",
+          "steps": [
+            {
+              "explain": "Identify the highest and lowest recorded temperatures.",
+              "work": "Highest: \\(25°\\text{C}\\), Lowest: \\(10°\\text{C}\\)"
+            },
+            {
+              "explain": "Subtract to find the range.",
+              "work": "\\(25-10=15°\\text{C}\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15f",
+      "code": "15F",
+      "title": "Pie charts",
+      "questions": [
+        {
+          "id": "y6-data-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A pie chart shows the favourite fruit of a class: Apples \\(40\\%\\), Bananas \\(35\\%\\), Oranges \\(35\\%\\). What is wrong with this pie chart?",
+          "options": [
+            "Pie charts cannot show fruit data",
+            "There are too few categories",
+            "The percentages add up to more than \\(100\\%\\), which is impossible for a whole pie chart",
+            "Nothing is wrong with it"
+          ],
+          "answer": 2,
+          "hint": "Add up all the percentages shown.",
+          "steps": [
+            {
+              "explain": "Add the three percentages together.",
+              "work": "\\(40+35+35=110\\%\\)"
+            },
+            {
+              "explain": "A complete pie chart must represent exactly \\(100\\%\\) — this one is inaccurate.",
+              "work": "\\(110\\% \\ne 100\\%\\), so the chart is misleading/incorrect"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15g",
+      "code": "15G",
+      "title": "The statistical data investigation process",
+      "questions": [
+        {
+          "id": "y6-data-3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An online poll on a video-game website asks visitors \"Do you play video games daily?\" and finds that \\(95\\%\\) said yes. Why might this result be misleading if used to describe the general population?",
+          "options": [
+            "The people surveyed were already visitors to a gaming website, so they are not a representative sample of everyone",
+            "95% is too high a number to be measured accurately",
+            "Online polls can never be about video games",
+            "The question was too short"
+          ],
+          "answer": 0,
+          "hint": "Think about who would be visiting a gaming website in the first place.",
+          "steps": [
+            {
+              "explain": "The sample (visitors to a gaming website) is heavily biased toward people who are already interested in gaming.",
+              "work": "Sample is not representative of the wider population"
+            },
+            {
+              "explain": "This is called sampling bias — the result cannot be generalised beyond that specific group.",
+              "work": "The 95% figure overstates video-game habits in the general population"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-data-3-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A graph in a news article shows that both ice-cream sales and shark attacks increase during summer months. Does this mean ice-cream sales cause shark attacks?",
+          "options": [
+            "Yes — the graph proves ice-cream causes shark attacks",
+            "Yes, but only in coastal towns",
+            "No, because sharks do not eat ice-cream",
+            "No — both are likely caused by a third factor (warm weather leads to more swimming and more ice-cream eating)"
+          ],
+          "answer": 3,
+          "hint": "Two things happening at the same time (correlation) does not mean one causes the other.",
+          "steps": [
+            {
+              "explain": "Both ice-cream sales and shark attacks rise in warm weather, but for unrelated reasons — more people swim, and more people buy ice-cream.",
+              "work": "Warm weather is the common underlying cause of both"
+            },
+            {
+              "explain": "This is an example of correlation without causation.",
+              "work": "Ice-cream does not cause shark attacks"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15h",
+      "code": "15H",
+      "title": "Probability",
+      "questions": [
+        {
+          "id": "y6-chan-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A spinner is divided into 4 equal sections coloured red, blue, green and yellow. What is the probability of landing on blue?",
+          "figure": {
+            "svg": "fig:be25d6b986"
+          },
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 4 equal sections in total, and only 1 is blue.",
+          "steps": [
+            {
+              "explain": "There are 4 equally likely sections, and blue is 1 of them.",
+              "work": "\\(P(\\text{blue}) = \\dfrac{\\text{favourable outcomes}}{\\text{total outcomes}} = \\dfrac{1}{4}\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-chan-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag contains 3 red counters and 5 blue counters. What is the probability of picking a red counter at random?",
+          "options": [
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "The total number of counters is \\(3+5=8\\).",
+          "steps": [
+            {
+              "explain": "Find the total number of counters.",
+              "work": "\\(3+5=8\\text{ counters total}\\)"
+            },
+            {
+              "explain": "The probability of red is the number of red counters over the total.",
+              "work": "\\(P(\\text{red})=\\dfrac{3}{8}\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-chan-2-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Coin A is flipped 10 times and lands on heads 8 times. Coin B is flipped 1000 times and lands on heads 512 times. Which coin's result is closer to the theoretical probability of \\(50\\%\\), and why?",
+          "options": [
+            "Coin A — smaller trials are always more accurate",
+            "Both are equally accurate",
+            "Neither is close to 50%",
+            "Coin B — larger trials tend to give results closer to the theoretical probability"
+          ],
+          "answer": 3,
+          "hint": "Compare \\(\\dfrac{8}{10}\\) and \\(\\dfrac{512}{1000}\\) as percentages.",
+          "steps": [
+            {
+              "explain": "Convert both results to percentages.",
+              "work": "Coin A: \\(\\dfrac{8}{10}=80\\%\\); \\quad Coin B: \\(\\dfrac{512}{1000}=51.2\\%\\)"
+            },
+            {
+              "explain": "Compare each to the theoretical probability of 50%.",
+              "work": "\\(80\\%\\) is \\(30\\) points away; \\(51.2\\%\\) is only \\(1.2\\) points away"
+            },
+            {
+              "explain": "Coin B's larger number of trials gives a result much closer to the true probability — this is a general property of random trials.",
+              "work": "Coin B is closer"
+            }
+          ],
+          "xp": 3
+        },
+        {
+          "id": "y6-chan-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A die is rolled 30 times and lands on an even number 22 times. What is the experimental probability of rolling an even number, as a percentage?",
+          "options": [
+            "\\(22\\%\\)",
+            "\\(73.3\\%\\)",
+            "\\(30\\%\\)",
+            "\\(50\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the number of favourable outcomes by the total number of trials.",
+          "steps": [
+            {
+              "explain": "Divide the number of even results by the total number of rolls.",
+              "work": "\\(\\dfrac{22}{30}\\)"
+            },
+            {
+              "explain": "Convert to a percentage.",
+              "work": "\\(\\dfrac{22}{30}\\times100\\%\\approx73.3\\%\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-chan-3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A fair die is rolled 60 times. Based on theoretical probability, how many times would you expect to roll a 6?",
+          "options": [
+            "\\(6\\)",
+            "\\(60\\)",
+            "\\(10\\)",
+            "\\(1\\)"
+          ],
+          "answer": 2,
+          "hint": "The theoretical probability of rolling a 6 is \\(\\dfrac16\\). Multiply this by the number of trials.",
+          "steps": [
+            {
+              "explain": "The theoretical probability of any single number on a fair die is \\(\\dfrac16\\).",
+              "work": "\\(P(6)=\\dfrac16\\)"
+            },
+            {
+              "explain": "Multiply by the number of trials to find the expected count.",
+              "work": "\\(60\\times\\dfrac16=10\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-chan-3-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A spinner with 4 equal sections is spun 200 times. It lands on \"red\" 60 times. How does the observed probability of red compare to the expected (theoretical) probability?",
+          "options": [
+            "Observed is \\(30\\%\\), which is higher than the expected \\(25\\%\\)",
+            "Observed is \\(25\\%\\), exactly matching the expected value",
+            "Observed is \\(60\\%\\), much higher than expected",
+            "Observed is \\(20\\%\\), lower than expected"
+          ],
+          "answer": 0,
+          "hint": "Expected probability \\(=\\dfrac14=25\\%\\). Observed probability \\(=\\dfrac{60}{200}\\).",
+          "steps": [
+            {
+              "explain": "The expected (theoretical) probability for one of 4 equal sections is 25%.",
+              "work": "\\(P(\\text{expected})=\\dfrac14=25\\%\\)"
+            },
+            {
+              "explain": "The observed probability is the actual result divided by the total spins.",
+              "work": "\\(P(\\text{observed})=\\dfrac{60}{200}=30\\%\\)"
+            },
+            {
+              "explain": "Compare the two values.",
+              "work": "\\(30\\%\\gt25\\%\\) — the observed result is somewhat higher than expected"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-15i",
+      "code": "15I",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

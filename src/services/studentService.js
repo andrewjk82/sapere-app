@@ -2,6 +2,7 @@ import {
   collection,
   addDoc,
   getDocs,
+  getDocsFromServer,
   query,
   where,
   onSnapshot,
@@ -159,8 +160,12 @@ export const studentService = {
     }
 
     try {
-      const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
-      const remoteVersion = metaVersionOf(metaSnap.data());
+      // An explicit Sync rescans from the server (never the on-device copy) and does not depend on the meta read.
+      const readDocs = forceRefresh ? getDocsFromServer : getDocs;
+      const metaSnap = forceRefresh
+        ? await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin))).catch(() => null)
+        : await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
+      const remoteVersion = metaVersionOf(metaSnap?.data());
       // XP / last activity / new sign-ups don't bump the roster version, hence the age cap.
       const cacheFresh = Date.now() - Number(cached?.savedAt || 0) < ROSTER_STALE_MS;
       if (cached?.students && cached?.version === remoteVersion && remoteVersion > 0 && cacheFresh) {
@@ -173,7 +178,7 @@ export const studentService = {
         ? query(studentsRef) 
         : query(studentsRef, where("tutorId", "==", tutorId));
 
-      const manualSnap = await getDocs(manualQuery);
+      const manualSnap = await readDocs(manualQuery);
       const manualStudents = manualSnap.docs.map(doc => ({
         id: doc.id,
         source: 'manual',
@@ -187,9 +192,9 @@ export const studentService = {
         try {
           const usersRef = collection(db, "users");
           const usersSnap = await Promise.race([
-            getDocs(usersRef),
+            readDocs(usersRef),
             new Promise((_, reject) => {
-              setTimeout(() => reject(new Error('users-scan-timeout')), 8000);
+              setTimeout(() => reject(new Error('users-scan-timeout')), forceRefresh ? 25000 : 8000);
             }),
           ]);
           registeredStudents = usersSnap.docs
@@ -209,6 +214,8 @@ export const studentService = {
             }));
         } catch (scanErr) {
           console.warn('[studentService] registered users scan skipped:', scanErr?.message || scanErr);
+          // An explicit Sync must not pretend it worked with half a roster.
+          if (forceRefresh) throw scanErr;
           // A background check never swaps a full cached roster for a manual-only one.
           if (cached?.students?.length) return cached.students;
           // Fall back to manual-only roster so the teacher UI still opens.

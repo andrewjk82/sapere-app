@@ -4803,7 +4803,7 @@
           "type": "review",
           "stem": "Given \\(I_n=\\displaystyle\\int_0^1\\dfrac{1}{\\left(1+x^4\\right)^n}dx\\), show that \\(I_{n+1}=\\dfrac{4n-1}{4n}I_n+\\dfrac{1}{n2^{n+2}}\\).",
           "difficulty": "hard",
-          "answer": "By parts with u = (1+x⁴)^{−n}, dv = dx: I_n = [x(1+x⁴)^{−n}]₀¹ + 4n∫₀¹x⁴(1+x⁴)^{−n−1}dx = 2^{−n} + 4n∫₀¹((1+x⁴) − 1)(1+x⁴)^{−n−1}dx = 2^{−n} + 4n(I_n − I_{n+1}). So 4nI_{n+1} = 2^{−n} + (4n − 1)I_n and I_{n+1} = (4n−1)/(4n) I_n + 1/(4n·2^n) = (4n−1)/(4n) I_n + 1/(n2^{n+2}).",
+          "answer": "By parts with \\(u=\\left(1+x^4\\right)^{-n}\\), \\(dv=dx\\): \\(I_n=\\left[x\\left(1+x^4\\right)^{-n}\\right]_0^1+4n\\int_0^1x^4\\left(1+x^4\\right)^{-n-1}dx=2^{-n}+4n\\int_0^1\\left(\\left(1+x^4\\right)-1\\right)\\left(1+x^4\\right)^{-n-1}dx=2^{-n}+4n\\left(I_n-I_{n+1}\\right)\\). So \\(4nI_{n+1}=2^{-n}+(4n-1)I_n\\) and \\(I_{n+1}=\\dfrac{4n-1}{4n}I_n+\\dfrac{1}{4n\\cdot2^n}=\\dfrac{4n-1}{4n}I_n+\\dfrac{1}{n2^{n+2}}\\).",
           "manual": true,
           "hint": "Integrate by parts with \\(u=(1+x^4)^{-n}\\) and \\(dv=dx\\), then write \\(x^4=(1+x^4)-1\\).",
           "steps": [
@@ -4948,7 +4948,7 @@
           "type": "review",
           "stem": "Show that \\(\\displaystyle\\int_0^{\\frac{\\pi}{2}}(\\sin x)^{2k}\\cos x\\,dx=\\dfrac{1}{2k+1}\\), where \\(k\\) is a positive integer.",
           "difficulty": "medium",
-          "answer": "Let u = sin x, du = cos x dx; limits x = 0 → u = 0, x = π/2 → u = 1. ∫₀¹ u^{2k} du = [u^{2k+1}/(2k+1)]₀¹ = 1/(2k+1).",
+          "answer": "Let \\(u=\\sin x\\), \\(du=\\cos x\\,dx\\); limits \\(x=0\\to u=0\\), \\(x=\\dfrac{\\pi}{2}\\to u=1\\). \\(\\int_0^1u^{2k}\\,du=\\left[\\dfrac{u^{2k+1}}{2k+1}\\right]_0^1=\\dfrac{1}{2k+1}\\).",
           "manual": true,
           "hint": "Substitute \\(u=\\sin x\\) (the cosine is the derivative).",
           "steps": [
@@ -4986,7 +4986,7 @@
           "type": "review",
           "stem": "By writing \\((\\cos x)^{2n}=\\left(1-\\sin^2x\\right)^n\\), show that \\(\\displaystyle\\int_0^{\\frac{\\pi}{2}}(\\cos x)^{2n+1}dx=\\sum_{k=0}^n\\dfrac{(-1)^k}{2k+1}\\binom{n}{k}\\).",
           "difficulty": "hard",
-          "answer": "(cos x)^{2n+1} = (cos x)^{2n} cos x = (1 − sin²x)^n cos x = Σ_{k=0}^n C(n,k)(−1)^k (sin²x)^k cos x (binomial theorem). Integrate term by term from 0 to π/2 using ∫(sin x)^{2k}cos x dx = 1/(2k+1): ∫(cos x)^{2n+1}dx = Σ (−1)^k C(n,k)/(2k+1).",
+          "answer": "\\((\\cos x)^{2n+1}=(\\cos x)^{2n}\\cos x=\\left(1-\\sin^2x\\right)^n\\cos x=\\sum_{k=0}^n\\binom{n}{k}(-1)^k\\left(\\sin^2x\\right)^k\\cos x\\) (binomial theorem). Integrate term by term from \\(0\\) to \\(\\dfrac{\\pi}{2}\\) using \\(\\int_0^{\\frac{\\pi}{2}}(\\sin x)^{2k}\\cos x\\,dx=\\dfrac{1}{2k+1}\\): \\(\\int_0^{\\frac{\\pi}{2}}(\\cos x)^{2n+1}dx=\\sum_{k=0}^n\\dfrac{(-1)^k}{2k+1}\\binom{n}{k}\\).",
           "manual": true,
           "hint": "Write \\((\\cos x)^{2n+1}=(\\cos x)^{2n}\\cos x\\), expand with the binomial theorem, then use part (i).",
           "steps": [

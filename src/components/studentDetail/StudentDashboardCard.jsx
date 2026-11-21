@@ -96,6 +96,7 @@ export default function StudentDashboardCard({
   onImageUpload,
   chapters,
   completedChapters,
+  topicProgress,
   editingTerm,
   setEditingTerm,
   showToast,
@@ -200,9 +201,12 @@ export default function StudentDashboardCard({
                 (id) => currentChapterIds.has(id),
               );
 
-              const progressPct = Math.round(
-                (completedInCurriculum.length / (chapters.length || 1)) * 100,
-              );
+              // Topics done by the Class-page rule (taught → homework checked → mistakes reviewed), else the old
+              // chapter tick count.
+              const byTopics = topicProgress?.loaded && topicProgress.sum.total > 0;
+              const progressPct = byTopics
+                ? Math.round((topicProgress.sum.count.done / topicProgress.sum.total) * 100)
+                : Math.round((completedInCurriculum.length / (chapters.length || 1)) * 100);
               const clampedPct = Math.min(progressPct, 100);
 
               return (
@@ -215,7 +219,10 @@ export default function StudentDashboardCard({
                       fontWeight: 800,
                     }}
                   >
-                    <span style={{ fontSize: "0.9rem" }}>Curriculum</span>
+                    <span style={{ fontSize: "0.9rem" }}>
+                      Curriculum
+                      {byTopics && <span style={{ color: "#94a3b8", fontWeight: 700, marginLeft: 8, fontSize: "0.78rem" }}>{topicProgress.sum.count.done}/{topicProgress.sum.total} topics</span>}
+                    </span>
                     <span style={{ color: "#6366f1", fontSize: "0.9rem" }}>{clampedPct}%</span>
                   </div>
                   <div

@@ -1,0 +1,481 @@
+{
+  "chapterId": "y6-5",
+  "title": "Chapter 5: Length, perimeter, area and volume",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-5a",
+      "code": "5A",
+      "title": "Length",
+      "questions": [
+        {
+          "id": "y6-gm-3-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A garden path is made from 8 paving stones, each \\(45\\text{ cm}\\) long, laid end to end. What is the total length of the path in metres?",
+          "options": [
+            "\\(36\\text{ m}\\)",
+            "\\(0.36\\text{ m}\\)",
+            "\\(45\\text{ m}\\)",
+            "\\(3.6\\text{ m}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the number of stones by the length of each, then convert to metres.",
+          "steps": [
+            {
+              "explain": "Multiply the number of stones by the length of one stone.",
+              "work": "\\(8\\times45=360\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert centimetres to metres by dividing by 100.",
+              "work": "\\(360\\div100=3.6\\text{ m}\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5b",
+      "code": "5B",
+      "title": "Converting length measurements",
+      "questions": [
+        {
+          "id": "y6-gm-2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(3.5\\text{ m}\\) to centimetres.",
+          "options": [
+            "\\(35\\text{ cm}\\)",
+            "\\(3500\\text{ cm}\\)",
+            "\\(0.035\\text{ cm}\\)",
+            "\\(350\\text{ cm}\\)"
+          ],
+          "answer": 3,
+          "hint": "There are 100 cm in 1 m.",
+          "steps": [
+            {
+              "explain": "Multiply by 100, since \\(1\\text{ m}=100\\text{ cm}\\).",
+              "work": "\\(3.5\\times100=350\\text{ cm}\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-gm-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\(2500\\text{ m}\\) to kilometres.",
+          "options": [
+            "\\(25\\text{ km}\\)",
+            "\\(2.5\\text{ km}\\)",
+            "\\(0.25\\text{ km}\\)",
+            "\\(250\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "There are 1000 m in 1 km.",
+          "steps": [
+            {
+              "explain": "Divide by 1000, since \\(1\\text{ km}=1000\\text{ m}\\).",
+              "work": "\\(2500\\div1000=2.5\\text{ km}\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-gm-2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(45\\text{ mm}\\) to centimetres.",
+          "options": [
+            "\\(450\\text{ cm}\\)",
+            "\\(0.45\\text{ cm}\\)",
+            "\\(4.5\\text{ cm}\\)",
+            "\\(45\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 10 mm in 1 cm.",
+          "steps": [
+            {
+              "explain": "Divide by 10, since \\(1\\text{ cm}=10\\text{ mm}\\).",
+              "work": "\\(45\\div10=4.5\\text{ cm}\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-gm-3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which distance is longer: \\(1.2\\text{ km}\\) or \\(1050\\text{ m}\\)?",
+          "options": [
+            "\\(1.2\\text{ km}\\)",
+            "\\(1050\\text{ m}\\)",
+            "They are equal",
+            "Cannot be compared"
+          ],
+          "answer": 0,
+          "hint": "Convert both distances to the same unit before comparing.",
+          "steps": [
+            {
+              "explain": "Convert \\(1.2\\text{ km}\\) to metres.",
+              "work": "\\(1.2\\times1000=1200\\text{ m}\\)"
+            },
+            {
+              "explain": "Compare with \\(1050\\text{ m}\\).",
+              "work": "\\(1200\\text{ m} \\gt 1050\\text{ m}\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-rn-2-l5-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A miniature microchip sensor has a width of \\\\(3\\\\text{ cm}\\) and \\\\(2\\\\text{ mm}\\\\). Express this width in centimetres as a decimal.",
+          "options": [
+            "\\\\(3.2\\\\text{ cm}\\\\)",
+            "\\\\(3.5\\\\text{ cm}\\\\)",
+            "\\\\(3.22\\\\text{ cm}\\\\)",
+            "\\\\(3.02\\\\text{ cm}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall that \\\\(10\\\\text{ mm} = 1\\\\text{ cm}\\\\). Convert the millimetres to centimetres first, then add it to the whole centimetre value.",
+          "steps": [
+            {
+              "explain": "Identify the measurement components and the conversion factor. The width is \\\\(3\\\\text{ cm}\\) and \\\\(2\\\\text{ mm}\\\\), and we know that \\\\(10\\\\text{ mm} = 1\\\\text{ cm}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 10\\\\text{ mm} = 1\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Convert the \\\\(2\\\\text{ mm}\\) component into centimetres by dividing by \\\\(10\\\\). This shifts the digit one place value down.",
+              "work": "\\\\(2\\\\text{ mm} = \\\\frac{2}{10}\\\\text{ cm} = 0.2\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Add the converted centimetre decimal to the original \\\\(3\\\\text{ cm}\\) to get the final total length.",
+              "work": "\\\\(3\\\\text{ cm} + 0.2\\\\text{ cm} = 3.2\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Conclude that the decimal equivalent of the width is 3.2 cm.",
+              "work": "\\\\(\\text{Total Width} = 3.2\\\\text{ cm}\\\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-rn-2-l5-q12d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telescope mirror mounting rail has a measured length of \\\\(4\\\\text{ metres}\\) and \\\\(6\\\\text{ centimetres}\\\\). Express this length in metres as a decimal.",
+          "options": [
+            "\\\\(4.6\\\\text{ m}\\\\)",
+            "\\\\(4.06\\\\text{ m}\\\\)",
+            "\\\\(4.66\\\\text{ m}\\\\)",
+            "\\\\(4.006\\\\text{ m}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "There are \\\\(100\\\\text{ centimetres}\\) in \\\\(1\\\\text{ metre}\\\\). Divide \\\\(6\\\\) by \\\\(100\\\\) to convert it to metres, ensuring you place a placeholder zero in the tenths place.",
+          "steps": [
+            {
+              "explain": "Identify the measurements and the conversion factor. The length is \\\\(4\\\\text{ m}\\) and \\\\(6\\\\text{ cm}\\\\), and we know that \\\\(100\\\\text{ cm} = 1\\\\text{ m}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 100\\\\text{ cm} = 1\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Convert \\\\(6\\\\text{ cm}\\) into metres by dividing by \\\\(100\\\\). This shifts the digit two positions to the left, requiring a placeholder zero.",
+              "work": "\\\\(6\\\\text{ cm} = \\\\frac{6}{100}\\\\text{ m} = 0.06\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Add the converted metre value to the original \\\\(4\\\\text{ m}\\) length.",
+              "work": "\\\\(4\\\\text{ m} + 0.06\\\\text{ m} = 4.06\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Conclude that the mounting rail length expressed as a decimal is 4.06 metres.",
+              "work": "\\\\(\\text{Total Length} = 4.06\\\\text{ m}\\\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5c",
+      "code": "5C",
+      "title": "Calculating perimeter",
+      "questions": []
+    },
+    {
+      "topicId": "y6-5d",
+      "code": "5D",
+      "title": "Area",
+      "questions": [
+        {
+          "id": "y6-2ds-4-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the parallelogram shown.",
+          "figure": {
+            "svg": "fig:e294a34700"
+          },
+          "options": [
+            "\\(40\\text{ cm}^2\\)",
+            "\\(26\\text{ cm}^2\\)",
+            "\\(13\\text{ cm}^2\\)",
+            "\\(80\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Area of a parallelogram \\(=\\text{base}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Use the formula for the area of a parallelogram.",
+              "work": "\\(\\text{Area}=\\text{base}\\times\\text{height}\\)"
+            },
+            {
+              "explain": "Substitute the base (8 cm) and the perpendicular height (5 cm).",
+              "work": "\\(\\text{Area}=8\\times5=40\\text{ cm}^2\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5e",
+      "code": "5E",
+      "title": "Area of composite shapes",
+      "questions": [
+        {
+          "id": "y6-2ds-3-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the total area of the L-shaped figure shown, by dividing it into two rectangles.",
+          "figure": {
+            "svg": "fig:15c8630de4"
+          },
+          "options": [
+            "\\(48\\text{ units}^2\\)",
+            "\\(80\\text{ units}^2\\)",
+            "\\(68\\text{ units}^2\\)",
+            "\\(60\\text{ units}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Split the L-shape into a left rectangle (full height) and a right rectangle (the upper part only), then add their areas.",
+          "steps": [
+            {
+              "explain": "The left rectangle has width 6 and the full height, 8.",
+              "work": "\\(\\text{Rectangle A}=6\\times8=48\\)"
+            },
+            {
+              "explain": "The right rectangle has width 4 and height equal to the total height minus the step, \\(8-3=5\\).",
+              "work": "\\(\\text{Rectangle B}=4\\times5=20\\)"
+            },
+            {
+              "explain": "Add the two rectangle areas.",
+              "work": "\\(48+20=68\\text{ units}^2\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5f",
+      "code": "5F",
+      "title": "Area of triangles",
+      "questions": [
+        {
+          "id": "y6-2ds-5-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the triangle shown.",
+          "figure": {
+            "svg": "fig:91faaf824c"
+          },
+          "options": [
+            "\\(60\\text{ cm}^2\\)",
+            "\\(16\\text{ cm}^2\\)",
+            "\\(48\\text{ cm}^2\\)",
+            "\\(30\\text{ cm}^2\\)"
+          ],
+          "answer": 3,
+          "hint": "Area of a triangle \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Use the triangle area formula.",
+              "work": "\\(\\text{Area}=\\dfrac12\\times\\text{base}\\times\\text{height}\\)"
+            },
+            {
+              "explain": "Substitute the base (10 cm) and height (6 cm).",
+              "work": "\\(\\text{Area}=\\dfrac12\\times10\\times6=30\\text{ cm}^2\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-2ds-5-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A triangle has a base of \\(12\\text{ cm}\\) and a height of \\(5\\text{ cm}\\). Find its area.",
+          "options": [
+            "\\(60\\text{ cm}^2\\)",
+            "\\(30\\text{ cm}^2\\)",
+            "\\(17\\text{ cm}^2\\)",
+            "\\(35\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Area of a triangle \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Substitute the values into the triangle area formula.",
+              "work": "\\(\\text{Area}=\\dfrac12\\times12\\times5\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(=30\\text{ cm}^2\\)"
+            }
+          ],
+          "xp": 1
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5g",
+      "code": "5G",
+      "title": "Hectares",
+      "questions": []
+    },
+    {
+      "topicId": "y6-5h",
+      "code": "5H",
+      "title": "Volume",
+      "questions": [
+        {
+          "id": "y6-3ds-2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the volume of the rectangular prism shown.",
+          "figure": {
+            "svg": "fig:624cd8cab0"
+          },
+          "options": [
+            "\\(12\\text{ cm}^3\\)",
+            "\\(60\\text{ cm}^3\\)",
+            "\\(35\\text{ cm}^3\\)",
+            "\\(47\\text{ cm}^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Volume of a rectangular prism \\(=\\text{length}\\times\\text{width}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Use the volume formula for a rectangular prism.",
+              "work": "\\(V=l\\times w\\times h\\)"
+            },
+            {
+              "explain": "Substitute the three dimensions: 4 cm, 5 cm and 3 cm.",
+              "work": "\\(V=4\\times5\\times3\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(V=60\\text{ cm}^3\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-3ds-2-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fish tank measures \\(2\\text{ m}\\) long, \\(1\\text{ m}\\) wide and \\(1.5\\text{ m}\\) high. Find its volume in cubic metres.",
+          "options": [
+            "\\(4.5\\text{ m}^3\\)",
+            "\\(2\\text{ m}^3\\)",
+            "\\(3\\text{ m}^3\\)",
+            "\\(1.5\\text{ m}^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the three dimensions together.",
+          "steps": [
+            {
+              "explain": "Multiply the length, width and height.",
+              "work": "\\(V=2\\times1\\times1.5\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(V=3\\text{ m}^3\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-3ds-2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangular box has a volume of \\(72\\text{ cm}^3\\). Its length is \\(6\\text{ cm}\\) and its width is \\(4\\text{ cm}\\). Find its height.",
+          "options": [
+            "\\(3\\text{ cm}\\)",
+            "\\(12\\text{ cm}\\)",
+            "\\(6\\text{ cm}\\)",
+            "\\(24\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the volume by the length and width to find the missing height.",
+          "steps": [
+            {
+              "explain": "Use the volume formula and substitute the known values.",
+              "work": "\\(72=6\\times4\\times h\\)"
+            },
+            {
+              "explain": "Simplify \\(6\\times4=24\\), then divide.",
+              "work": "\\(72=24h \\Rightarrow h=72\\div24=3\\text{ cm}\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5i",
+      "code": "5I",
+      "title": "Liquid measure",
+      "questions": [
+        {
+          "id": "y6-rn-2-l5-q12c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A coolant reservoir is filled with \\\\(4\\\\text{ litres}\\) and \\\\(38\\\\text{ millilitres}\\) of coolant fluid. Express this volume in litres as a decimal.",
+          "options": [
+            "\\\\(4.038\\\\text{ L}\\\\)",
+            "\\\\(4.38\\\\text{ L}\\\\)",
+            "\\\\(4.380\\\\text{ L}\\\\)",
+            "\\\\(4.0038\\\\text{ L}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "There are \\\\(1000\\\\text{ millilitres}\\) in \\\\(1\\\\text{ litre}\\\\). Divide the millilitres by \\\\(1000\\\\) to convert to litres, making sure to use a placeholder zero.",
+          "steps": [
+            {
+              "explain": "Identify the volume parts and the conversion factor. The volume is \\\\(4\\\\text{ L}\\) and \\\\(38\\\\text{ mL}\\\\), and we know that \\\\(1000\\\\text{ mL} = 1\\\\text{ L}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 1000\\\\text{ mL} = 1\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Convert the \\\\(38\\\\text{ mL}\\) component into litres by dividing by \\\\(1000\\\\). Since 38 has only two digits, we must place a placeholder zero in the tenths position.",
+              "work": "\\\\(38\\\\text{ mL} = \\\\frac{38}{1000}\\\\text{ L} = 0.038\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Add the converted decimal litres to the initial \\\\(4\\\\text{ L}\\) of fluid.",
+              "work": "\\\\(4\\\\text{ L} + 0.038\\\\text{ L} = 4.038\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Conclude that the reservoir holds 4.038 litres of coolant.",
+              "work": "\\\\(\\text{Total Volume} = 4.038\\\\text{ L}\\\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-5j",
+      "code": "5J",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

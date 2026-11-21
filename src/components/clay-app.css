@@ -1,0 +1,151 @@
+/* ───────── Clay look for the whole app (students and teacher) ─────────
+   A SKIN ONLY: colours, corner radius, shadows and fonts. No layout, sizes, display or positioning are touched, so no
+   screen can change behaviour. Everything hangs off <html data-clay="1"> (utils/clayStyle.js). To switch it off,
+   remove that attribute (or this import). Screens that must stay plain (a running exam, drawing paper, figures,
+   maths keypad) are left alone on purpose.
+   Many screens colour themselves with inline styles; those are reached by matching the serialized style text
+   (e.g. background: rgb(255, 255, 255)) inside the page area only. */
+
+html[data-clay="1"] {
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Nunito', system-ui, -apple-system, sans-serif;
+  --text-primary: #4a2f2a;
+  --text-secondary: #7a6a64;
+  --border: rgba(120, 90, 70, 0.14);
+  --clay-bg: #fff4e4;
+  --clay-card: #fffaf2;
+  --clay-inset: #fff0dc;
+  --clay-ink: #4a2f2a;
+  --clay-soft: #7a6a64;
+  --clay-purple: #8a70d4;
+  --clay-puff: inset 0 3px 5px rgba(255,255,255,0.75), inset 0 -7px 10px rgba(90,60,40,0.10), 0 12px 22px rgba(140,100,170,0.16);
+  --clay-puff-sm: inset 0 2px 3px rgba(255,255,255,0.8), inset 0 -4px 6px rgba(90,60,40,0.10), 0 6px 12px rgba(140,100,170,0.16);
+}
+
+html[data-clay="1"] body,
+html[data-clay="1"] button,
+html[data-clay="1"] input,
+html[data-clay="1"] select,
+html[data-clay="1"] textarea { font-family: var(--font-sans); }
+
+/* Shared card classes */
+html[data-clay="1"] .app-panel,
+html[data-clay="1"] .dashboard-card,
+html[data-clay="1"] .page-card,
+html[data-clay="1"] .student-card,
+html[data-clay="1"] .overview-card,
+html[data-clay="1"] .stat-card,
+html[data-clay="1"] .detail-header-card,
+html[data-clay="1"] .detail-session-card,
+html[data-clay="1"] .academic-progress-card,
+html[data-clay="1"] .settings-profile,
+html[data-clay="1"] .app-modal__card,
+html[data-clay="1"] .avatar-modal__content,
+html[data-clay="1"] .subject-tab-card,
+html[data-clay="1"] .chapter-card-premium,
+html[data-clay="1"] .chapter-card,
+html[data-clay="1"] .topics-drilldown-panel,
+html[data-clay="1"] .achievements-panel,
+html[data-clay="1"] .achievement-card-premium,
+html[data-clay="1"] .sync-card,
+html[data-clay="1"] .curriculum-empty {
+  background: var(--clay-card);
+  border: 0;
+  border-radius: 28px;
+  box-shadow: var(--clay-puff);
+}
+
+/* Boxes inside cards */
+html[data-clay="1"] .settings-display-item,
+html[data-clay="1"] .page-list__item,
+html[data-clay="1"] .activity-item,
+html[data-clay="1"] .contact-item {
+  background: var(--clay-inset);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: inset 0 2px 4px rgba(90, 60, 40, 0.08);
+}
+
+/* Buttons and fields from the shared kit */
+html[data-clay="1"] .app-button {
+  border: 0;
+  border-radius: 999px;
+  background: var(--clay-card);
+  color: var(--clay-ink);
+  font-weight: 800;
+  box-shadow: var(--clay-puff-sm);
+}
+html[data-clay="1"] .app-button--primary {
+  background: var(--clay-purple);
+  color: #fff;
+  box-shadow: inset 0 3px 4px rgba(255,255,255,0.35), inset 0 -5px 8px rgba(60,30,120,0.25), 0 8px 14px rgba(110,80,190,0.3);
+}
+html[data-clay="1"] .app-button:active { transform: translateY(1px); }
+html[data-clay="1"] .app-input {
+  border: 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: inset 0 2px 5px rgba(90, 60, 40, 0.14);
+}
+
+html[data-clay="1"] .app-page__title h2 { font-weight: 800; color: var(--clay-ink); }
+html[data-clay="1"] .app-modal__backdrop { background: rgba(74, 47, 42, 0.38); }
+
+/* Screens that colour themselves inline — page area only (not exams, canvases or figures) */
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"]:not(canvas):not(img):not(svg):not(iframe):not(video),
+html[data-clay="1"] .app-shell__main [style*="background-color: rgb(255, 255, 255)"]:not(canvas):not(img):not(svg):not(iframe):not(video) { background-color: var(--clay-card) !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(30, 27, 75)"] { color: var(--clay-ink) !important; }
+html[data-clay="1"] .app-shell__main [style*="background: rgb(248, 250, 252)"],
+html[data-clay="1"] .app-shell__main [style*="background-color: rgb(248, 250, 252)"],
+html[data-clay="1"] .app-shell__main [style*="background: rgb(241, 245, 249)"] { background-color: var(--clay-inset) !important; }
+html[data-clay="1"] .app-shell__main [style*="rgb(226, 232, 240)"],
+html[data-clay="1"] .app-shell__main [style*="rgb(241, 245, 249)"],
+html[data-clay="1"] .app-shell__main [style*="rgb(229, 231, 235)"],
+html[data-clay="1"] .app-shell__main [style*="rgb(238, 242, 247)"] { border-color: rgba(120, 90, 70, 0.10) !important; }
+/* The big rounded inline cards get the puffy shadow (small chips and inputs do not) */
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"][style*="border-radius: 20px"],
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"][style*="border-radius: 24px"],
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"][style*="border-radius: 28px"],
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"][style*="border-radius: 32px"] {
+  box-shadow: var(--clay-puff) !important;
+  border-radius: 28px !important;
+}
+
+/* Phone: floating user capsule */
+html[data-clay="1"] .mobile-user-capsule {
+  background: var(--clay-card) !important;
+  border: 0 !important;
+  box-shadow: var(--clay-puff-sm) !important;
+}
+html[data-clay="1"] .mobile-user-capsule__avatar { border-color: var(--clay-card) !important; }
+
+/* ───────── Student dashboard (inline-styled cards): flat clay colours instead of indigo gradients ─────────
+   Matched on the serialized inline styles; colours only. */
+html[data-clay="1"] [style*="rgb(99, 102, 241), rgb(139, 92, 246)"] { background: #8a70d4 !important; }
+html[data-clay="1"] [style*="rgb(99, 102, 241), rgb(139, 92, 246)"][style*="border-radius: 28px"] { box-shadow: var(--clay-puff) !important; }
+html[data-clay="1"] [style*="rgb(14, 165, 233), rgb(99, 102, 241)"] { background: #6aa8e6 !important; }
+html[data-clay="1"] [style*="rgb(14, 165, 233), rgb(99, 102, 241)"][style*="border-radius: 28px"] { box-shadow: var(--clay-puff) !important; }
+html[data-clay="1"] [style*="rgb(30, 27, 75), rgb(49, 46, 129)"] { background: #5b43a8 !important; }
+/* Week bars of Daily Practice */
+html[data-clay="1"] [style*="linear-gradient(rgb(129, 140, 248), rgb(99, 102, 241))"] { background: #8a70d4 !important; }
+html[data-clay="1"] [style*="linear-gradient(180deg, rgb(129, 140, 248), rgb(99, 102, 241))"] { background: #8a70d4 !important; }
+html[data-clay="1"] [style*="linear-gradient(rgb(165, 180, 252), rgb(129, 140, 248))"] { background: #b5a2ea !important; }
+html[data-clay="1"] [style*="linear-gradient(180deg, rgb(165, 180, 252), rgb(129, 140, 248))"] { background: #b5a2ea !important; }
+html[data-clay="1"] [style*="linear-gradient(rgb(199, 210, 254), rgb(165, 180, 252))"] { background: #d9ccf5 !important; }
+html[data-clay="1"] [style*="linear-gradient(180deg, rgb(199, 210, 254), rgb(165, 180, 252))"] { background: #d9ccf5 !important; }
+html[data-clay="1"] [style*="rgb(238, 242, 255), rgb(224, 231, 255)"] { background: #e4dcf7 !important; }
+html[data-clay="1"] .app-shell__main [style*="background: rgb(238, 242, 255)"] { background: #f3e7d6 !important; }
+html[data-clay="1"] .app-shell__main [style*="background: rgb(79, 70, 229)"] { background: #8a70d4 !important; }
+/* Today's plan rows */
+html[data-clay="1"] .app-shell__main [style*="min-height: 76px"][style*="border-radius: 18px"] {
+  border: 0 !important;
+  border-radius: 24px !important;
+  box-shadow: var(--clay-puff-sm) !important;
+}
+/* Text colours on those cards */
+html[data-clay="1"] .app-shell__main [style*="color: rgb(15, 23, 42)"] { color: var(--clay-ink) !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(71, 85, 105)"] { color: var(--clay-soft) !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(148, 163, 184)"] { color: #a08c82 !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(67, 56, 202)"],
+html[data-clay="1"] .app-shell__main [style*="color: rgb(79, 70, 229)"] { color: #6b4fc4 !important; }
+html[data-clay="1"] .app-shell__main [style*="Poppins"] { font-family: var(--font-heading) !important; }

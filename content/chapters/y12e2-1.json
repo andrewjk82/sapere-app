@@ -3947,7 +3947,7 @@
           "type": "review",
           "stem": "Sketch the graph of the complex number \\(z\\) defined by \\(\\arg\\left(\\dfrac{z-2}{z+2i}\\right)=\\dfrac{\\pi}{2}\\).",
           "difficulty": "hard",
-          "answer": "The angle between the vectors from −2i to z and from 2 to z is a right angle, so z lies on the circle with diameter joining 2 and −2i (centre 1 − i, radius √2). Test z = 0: (0−2)/(0+2i) = i, with argument π/2 ✓, so the locus is the semicircle containing the origin (the upper-left semicircle), excluding its endpoints 2 and −2i.",
+          "answer": "The angle between the vectors from \\(-2i\\) to \\(z\\) and from \\(2\\) to \\(z\\) is a right angle, so \\(z\\) lies on the circle with diameter joining \\(2\\) and \\(-2i\\) (centre \\(1-i\\), radius \\(\\sqrt{2}\\)). Test \\(z=0\\): \\(\\dfrac{0-2}{0+2i}=i\\), which has argument \\(\\dfrac{\\pi}{2}\\) ✓, so the locus is the semicircle containing the origin (the upper-left semicircle), excluding its endpoints \\(2\\) and \\(-2i\\).",
           "manual": true,
           "hint": "\\(\\arg\\dfrac{z-2}{z+2i}=\\arg(z-2)-\\arg(z+2i)\\) is the angle at \\(z\\) between the points \\(-2i\\) and \\(2\\). A right angle in a semicircle…",
           "steps": [

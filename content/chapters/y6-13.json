@@ -1,12 +1,12 @@
 {
-  "chapterId": "y6-nsm",
-  "title": "Non-Spatial Measure (B)",
+  "chapterId": "y6-13",
+  "title": "Chapter 13: Measurement",
   "year": "Year 6",
   "topics": [
     {
-      "topicId": "y6-nsm-1",
-      "code": "MA3-NSM-01",
-      "title": "Convert mass units",
+      "topicId": "y6-13a",
+      "code": "13A",
+      "title": "Mass",
       "questions": [
         {
           "id": "y6-nsm-1-q1",
@@ -49,7 +49,14 @@
             }
           ],
           "xp": 1
-        },
+        }
+      ]
+    },
+    {
+      "topicId": "y6-13b",
+      "code": "13B",
+      "title": "Calculating different masses",
+      "questions": [
         {
           "id": "y6-nsm-1-q3",
           "type": "mc",
@@ -70,13 +77,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y6-rn-2-l5-q12b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A geological sample weighs \\\\(5\\\\text{ kilograms}\\) and \\\\(637\\\\text{ grams}\\\\). Express this weight in kilograms as a decimal.",
+          "options": [
+            "\\\\(5.0637\\\\text{ kg}\\\\)",
+            "\\\\(5.637\\\\text{ g}\\\\)",
+            "\\\\(5.637\\\\text{ kg}\\\\)",
+            "\\\\(56.37\\\\text{ kg}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "There are \\\\(1000\\\\text{ grams}\\) in \\\\(1\\\\text{ kilogram}\\\\). Convert the grams to kilograms by dividing by \\\\(1000\\\\), then add it to the kilograms.",
+          "steps": [
+            {
+              "explain": "Identify the given weights and the conversion relationship between grams and kilograms. We have \\\\(5\\\\text{ kg}\\) and \\\\(637\\\\text{ g}\\\\), and know that \\\\(1000\\\\text{ g} = 1\\\\text{ kg}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 1000\\\\text{ g} = 1\\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Convert the \\\\(637\\\\text{ g}\\) to kilograms by dividing by \\\\(1000\\\\). This shifts the decimal point three places to the left.",
+              "work": "\\\\(637\\\\text{ g} = \\\\frac{637}{1000}\\\\text{ kg} = 0.637\\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Add the decimal kilograms to the whole kilograms to find the final decimal weight.",
+              "work": "\\\\(5\\\\text{ kg} + 0.637\\\\text{ kg} = 5.637\\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Conclude that the sample weight expressed as a decimal is 5.637 kg.",
+              "work": "\\\\(\\text{Total Weight} = 5.637\\\\text{ kg}\\\\)"
+            }
+          ],
+          "xp": 2
         }
       ]
     },
     {
-      "topicId": "y6-nsm-2",
-      "code": "MA3-NSM-02",
-      "title": "Duration problems",
+      "topicId": "y6-13c",
+      "code": "13C",
+      "title": "Reading and recording time",
       "questions": [
         {
           "id": "y6-nsm-2-q1",
@@ -160,8 +200,57 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y6-rn-2-l5-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An automated delivery drone logs a flight duration of \\\\(3\\\\) hours and \\\\(12\\\\) minutes. Express this flight duration in decimal hours.",
+          "options": [
+            "\\\\(3.2\\\\)",
+            "\\\\(3.12\\\\)",
+            "\\\\(3.5\\\\)",
+            "\\\\(3.25\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert the minutes portion into a fraction of an hour (since there are 60 minutes in an hour) and then convert that fraction to a decimal.",
+          "steps": [
+            {
+              "explain": "Identify the given hours and minutes. The time is \\\\(3\\\\) hours and \\\\(12\\\\) minutes, and we need to convert the minutes to decimal hours.",
+              "work": "\\\\(\\text{Time} = 3\\\\text{ hours} + 12\\\\text{ minutes}\\\\)"
+            },
+            {
+              "explain": "Convert \\\\(12\\\\) minutes to a fraction of an hour by dividing by \\\\(60\\\\). This is because one hour contains exactly \\\\(60\\\\) minutes.",
+              "work": "\\\\(\\text{Fraction of hour} = \\\\frac{12}{60}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 12. This yields a basic equivalent fraction.",
+              "work": "\\\\(\\frac{12 \\\\div 12}{60 \\\\div 12} = \\\\frac{1}{5}\\\\)"
+            },
+            {
+              "explain": "Convert \\\\(\\frac{1}{5}\\\\) to a decimal by dividing 1 by 5, or multiplying the terms by 2 to get tenths.",
+              "work": "\\\\(\\frac{1}{5} = \\\\frac{2}{10} = 0.2\\\\text{ hours}\\\\)"
+            },
+            {
+              "explain": "Add the decimal hours to the whole hours to find the final answer. The total duration is 3.2 hours.",
+              "work": "\\\\(3 + 0.2 = 3.2\\\\text{ hours}\\\\)"
+            }
+          ],
+          "xp": 2
         }
       ]
+    },
+    {
+      "topicId": "y6-13d",
+      "code": "13D",
+      "title": "Temperature",
+      "questions": []
+    },
+    {
+      "topicId": "y6-13e",
+      "code": "13E",
+      "title": "Review questions",
+      "questions": []
     }
   ]
 }

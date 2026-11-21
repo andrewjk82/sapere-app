@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import {
   AlertTriangle,
   Eye,
@@ -15,6 +15,7 @@ import {
   Upload,
 } from 'lucide-react';
 import { db } from '../firebase/config';
+import useLiveDoc from '../hooks/useLiveDoc';
 import taxonomyData from '../../tools/scripts/output/question_types_taxonomy.json';
 import HomeworkInbox from './homework/HomeworkInbox';
 
@@ -255,7 +256,6 @@ const AdminDashboard = ({
   setActiveTab,
 }) => {
   const buckets = useMemo(() => buildBuckets(students), [students]);
-  const [todayCompletionSummary, setTodayCompletionSummary] = useState(null);
   const [importStatus, setImportStatus] = useState(null); // null | 'running' | 'done' | 'error'
   const [importMsg, setImportMsg] = useState('');
 
@@ -296,27 +296,13 @@ const AdminDashboard = ({
   const totalLessons = students.reduce((acc, s) => acc + (s.lessons || 0), 0);
   const hoursTutored = `${Math.round(totalLessons * 1.5)}h`;
 
-  useEffect(() => {
-    let cancelled = false;
-
-    const fetchTodayCompletions = async () => {
-      try {
-        const summarySnap = await getDoc(doc(db, 'admin_daily_summary', todayKey));
-        if (cancelled) return;
-        setTodayCompletionSummary(
-          summarySnap.exists() ? summarySnap.data().students || {} : {}
-        );
-      } catch (error) {
-        console.warn('Failed to load today completion summary:', error?.code || error);
-        if (!cancelled) setTodayCompletionSummary({});
-      }
-    };
-
-    fetchTodayCompletions();
-    return () => {
-      cancelled = true;
-    };
-  }, [todayKey]);
+  // Live: one read per student completion while the dashboard is on screen (was a single getDoc on mount,
+  // which on an iPad could show the on-device copy for minutes).
+  const todayLive = useLiveDoc(['admin_daily_summary', todayKey]);
+  const todayCompletionSummary = useMemo(
+    () => (todayLive.data === undefined ? null : (todayLive.data?.students || {})),
+    [todayLive.data],
+  );
 
   const completedTodayCount = useMemo(() => {
     if (!todayCompletionSummary) return 0;

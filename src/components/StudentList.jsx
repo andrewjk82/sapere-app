@@ -5,6 +5,7 @@ import { studentService } from '../services/studentService';
 import { db } from '../firebase/config';
 import { collection, doc, getDoc, getDocs, setDoc, writeBatch } from 'firebase/firestore';
 import { useAdminFeed } from '../context/AdminFeedContext';
+import useLiveDoc from '../hooks/useLiveDoc';
 import AvatarPickerModal from './AvatarPickerModal';
 import StudentProfileModal from './StudentProfileModal';
 
@@ -17,9 +18,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   const [activeMenuId, setActiveMenuId] = useState(null);
   const [profileOpen, setProfileOpen] = useState(false);
   const [profileStudent, setProfileStudent] = useState(null);
-  const [completionStates, setCompletionStates] = useState({}); // { studentId: 'pending' | 'done' | 'ended' }
   const { pendingGrading } = useAdminFeed();
-  const [weeklyActivity, setWeeklyActivity] = useState({}); // { studentId: number of days practised this week }
 
   const [isResettingAllXP, setIsResettingAllXP] = useState(false);
 
@@ -90,7 +89,6 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
   };
 
   const todayStr = new Date().toLocaleDateString('en-CA'); // Local YYYY-MM-DD, avoids UTC timezone shift
-  const COMPLETION_REFRESH_TTL_MS = 5 * 60 * 1000;
 
   // Mon→Sun date strings for the current week (local, YYYY-MM-DD).
   const weekDates = useMemo(() => {
@@ -106,70 +104,31 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
     return dates;
   }, [todayStr]);
 
-  // Build a stable ID-list from `students` so the effect doesn't re-run every
-  // time the parent passes in a new array reference with the same contents.
-  const studentSig = useMemo(
-    () => (students || []).map(s => `${s.source || ''}|${s.id}`).join(','),
-    [students]
-  );
 
-  React.useEffect(() => {
-    if (!students || students.length === 0) return;
-    let cancelled = false;
 
-    // One summary document replaces 2N per-student daily/calc stat reads.
-    const fetchCompletions = async () => {
-      try {
-        const summarySnap = await getDoc(doc(db, 'admin_daily_summary', todayStr));
-        if (cancelled) return;
-        const summary = summarySnap.exists() ? (summarySnap.data().students || {}) : {};
-        const next = {};
-        students.forEach((student) => {
-          const item = summary[student.id];
-          if (!item) {
-            next[student.id] = 'pending';
-            return;
-          }
-          const calcEnabled = student.calculationEnabled !== false;
-          const dailyDone = item.dailyDone === true;
-          const calcDone = item.calcDone === true;
-          const dailyEnded = item.dailyEnded === true || item.dailyStatus === 'ended';
-          const calcEnded = item.calcEnded === true || item.calcStatus === 'ended';
-          const allRequiredDone = dailyDone && (!calcEnabled || calcDone);
-          const anyEnded = dailyEnded || (calcEnabled && calcEnded);
-          next[student.id] = allRequiredDone ? 'done' : (anyEnded ? 'ended' : 'pending');
-        });
-        setCompletionStates(next);
-      } catch (err) {
-        console.error("Failed to fetch admin_daily_summary:", err);
-        // If the query fails (e.g. Quota Exceeded), we log it instead of crashing.
-      }
-    };
-
-    // Throttle: this is cheap now (1 read), but still avoid focus bounce churn.
-    // (rapid focus/blur shouldn't pile up reads).
-    let lastRefreshAt = 0;
-    const refresh = () => {
-      const now = Date.now();
-      if (now - lastRefreshAt < COMPLETION_REFRESH_TTL_MS) return;
-      lastRefreshAt = now;
-      fetchCompletions();
-    };
-
-    const onVisibilityChange = () => {
-      if (!document.hidden) refresh();
-    };
-
-    refresh(); // initial
-    window.addEventListener('focus', refresh);
-    document.addEventListener('visibilitychange', onVisibilityChange);
-
-    return () => {
-      cancelled = true;
-      window.removeEventListener('focus', refresh);
-      document.removeEventListener('visibilitychange', onVisibilityChange);
-    };
-  }, [studentSig, todayStr]);
+  // Today's completion: live view of the one admin_daily_summary doc (1 read per student completion while this
+  // screen is up). It used to be a getDoc re-run at most every 5 minutes, which on an iPad served the on-device
+  // copy for minutes after a student had finished.
+  const todaySummary = useLiveDoc(['admin_daily_summary', todayStr]);
+  // { studentId: 'pending' | 'done' | 'ended' }
+  const completionStates = useMemo(() => {
+    if (!students || students.length === 0 || todaySummary.data === undefined) return {};
+    const summary = todaySummary.data?.students || {};
+    const next = {};
+    students.forEach((student) => {
+      const item = summary[student.id];
+      if (!item) { next[student.id] = 'pending'; return; }
+      const calcEnabled = student.calculationEnabled !== false;
+      const dailyDone = item.dailyDone === true;
+      const calcDone = item.calcDone === true;
+      const dailyEnded = item.dailyEnded === true || item.dailyStatus === 'ended';
+      const calcEnded = item.calcEnded === true || item.calcStatus === 'ended';
+      const allRequiredDone = dailyDone && (!calcEnabled || calcDone);
+      const anyEnded = dailyEnded || (calcEnabled && calcEnded);
+      next[student.id] = allRequiredDone ? 'done' : (anyEnded ? 'ended' : 'pending');
+    });
+    return next;
+  }, [students, todaySummary.data]);
 
   // REVIEW badge from the shared pending-grading listener (AdminFeedContext) —
   // replaces one grading_queue query per student on every visit to this tab.
@@ -179,32 +138,30 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
     return pending;
   }, [pendingGrading]);
 
-  // Weekly activity — how many days this week each student did a challenge.
-  // 7 reads total (one admin_daily_summary doc per day), not 7 per student.
+  // Weekly activity — how many days this week each student did a challenge. Past days are read once
+  // (they no longer change); today comes from the live summary above.
+  const [pastWeekSummaries, setPastWeekSummaries] = useState([]);
   React.useEffect(() => {
-    if (!students || students.length === 0) return;
     let cancelled = false;
-    (async () => {
-      const snaps = await Promise.all(
-        weekDates.map((d) => getDoc(doc(db, 'admin_daily_summary', d)).catch(() => null)),
-      );
-      if (cancelled) return;
-      const counts = {};
-      students.forEach((s) => { counts[s.id] = 0; });
-      snaps.forEach((snap) => {
-        if (!snap || !snap.exists()) return;
-        const summary = snap.data().students || {};
-        students.forEach((s) => {
-          const item = summary[s.id];
-          if (item && (item.dailyDone || item.calcDone || item.dailyEnded || item.calcEnded)) {
-            counts[s.id] = (counts[s.id] || 0) + 1;
-          }
-        });
-      });
-      setWeeklyActivity(counts);
-    })();
+    const past = weekDates.filter((d) => d < todayStr);
+    Promise.all(past.map((d) => getDoc(doc(db, 'admin_daily_summary', d)).catch(() => null))).then((snaps) => {
+      if (!cancelled) setPastWeekSummaries(snaps.map((snap) => (snap?.exists() ? snap.data().students || {} : {})));
+    });
     return () => { cancelled = true; };
-  }, [studentSig]);
+  }, [weekDates, todayStr]);
+  // { studentId: number of days practised this week }
+  const weeklyActivity = useMemo(() => {
+    if (!students || students.length === 0) return {};
+    const days = [...pastWeekSummaries, todaySummary.data?.students || {}];
+    const counts = {};
+    students.forEach((s) => {
+      counts[s.id] = days.filter((summary) => {
+        const item = summary[s.id];
+        return item && (item.dailyDone || item.calcDone || item.dailyEnded || item.calcEnded);
+      }).length;
+    });
+    return counts;
+  }, [students, pastWeekSummaries, todaySummary.data]);
 
   const handleManualRefresh = async () => {
     setIsRefreshing(true);
@@ -212,6 +169,7 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       await onRefreshStudents(false, true);
     } catch (err) {
       console.error('Refresh failed:', err);
+      window.alert('Sync failed — the student list could not be fully loaded. Check the connection and try again.');
     } finally {
       setIsRefreshing(false);
     }
@@ -269,6 +227,11 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Students</h2>
+          {todaySummary.status === 'offline' && (
+            <span role="status" style={{ marginLeft: 10, padding: '3px 10px', borderRadius: 999, background: '#fef3c7', color: '#92400e', fontSize: '0.75rem', fontWeight: 800 }}>
+              Offline – showing saved data
+            </span>
+          )}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <button

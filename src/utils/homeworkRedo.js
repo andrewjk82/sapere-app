@@ -52,3 +52,9 @@ export const homeworkReferenceFor = (question) => ({
   section: question?.section || '',
   label: question?.label || '',
 });
+
+// Local-store key for a student's own redo work (shared by the redo screen and the history list).
+export const redoStoreUid = (uid) => `redo-${uid}`;
+
+// Questions still to fix: a "Got it" counts as fixed, everything else (new / writing / "Still wrong") does not.
+export const redoRemaining = (questions, status = {}) => questions.filter((q) => status[q.key] !== 'got').length;

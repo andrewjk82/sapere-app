@@ -1,7 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowLeft, CheckCircle2, Clock, MinusCircle, PenLine, XCircle, BookOpenCheck } from 'lucide-react';
 import { getHomeworkHistory } from '../../utils/homework';
+import { loadHomeworkLocal } from '../../utils/homeworkLocalStore';
+import { wrongQuestions, redoStoreUid, redoRemaining } from '../../utils/homeworkRedo';
 
 const BADGE = {
   todo: { label: 'To do', color: '#7c3aed', bg: '#f5f3ff', Icon: PenLine },
@@ -27,8 +29,19 @@ const monthLabel = (date) => {
  * Every past homework, from the sessions the app already has in memory — no
  * Firestore reads. Opening one shows the pages kept on this device.
  */
-const HomeworkHistory = ({ sessions, onOpen, onClose }) => {
+const HomeworkHistory = ({ sessions, uid, reloadKey, onOpen, onClose }) => {
   const items = useMemo(() => getHomeworkHistory(sessions), [sessions]);
+  // Questions still to redo per session: "Got it" answers are kept on this device (no Firestore reads).
+  const [remaining, setRemaining] = useState({});
+  useEffect(() => {
+    let cancelled = false;
+    const withRedo = items.filter((i) => i.status === 'checked' && i.wrongCount > 0);
+    Promise.all(withRedo.map(async (i) => {
+      const record = await loadHomeworkLocal(redoStoreUid(uid), i.sessionId);
+      return [i.sessionId, redoRemaining(wrongQuestions(i.marks, i.topics), record?.redoStatus || {})];
+    })).then((entries) => { if (!cancelled) setRemaining(Object.fromEntries(entries)); }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [items, uid, reloadKey]);
   const [filter, setFilter] = useState('all');
   const shown = filter === 'all' ? items : items.filter((i) => i.status === filter);
   const filterCounts = useMemo(() => items.reduce((counts, item) => {
@@ -127,9 +140,12 @@ const HomeworkHistory = ({ sessions, onOpen, onClose }) => {
                           <div style={{ fontSize: '0.78rem', color: '#4f46e5', fontWeight: 600, marginTop: 2 }}>“{item.comment}”</div>
                         )}
                       </div>
-                      {item.status === 'checked' && item.wrongCount > 0 && (
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#c2410c', background: '#fff7ed', borderRadius: 8, padding: '4px 7px', whiteSpace: 'nowrap' }}>{item.wrongCount} to redo</span>
-                      )}
+                      {item.status === 'checked' && item.wrongCount > 0 && (() => {
+                        const left = remaining[item.sessionId] ?? item.wrongCount;
+                        return left > 0
+                          ? <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#c2410c', background: '#fff7ed', borderRadius: 8, padding: '4px 7px', whiteSpace: 'nowrap' }}>{left} to redo</span>
+                          : <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d', background: '#f0fdf4', borderRadius: 8, padding: '4px 7px', whiteSpace: 'nowrap' }}>Done</span>;
+                      })()}
                       {item.mark && <span style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.9rem' }}>{item.mark}</span>}
                       <span style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '6px 9px', borderRadius: 10, background: b.bg, color: b.color, fontSize: '0.7rem', fontWeight: 800, whiteSpace: 'nowrap' }}>
                         <BadgeIcon size={13} /> <span className="homework-history-status-label">{b.label}</span>
