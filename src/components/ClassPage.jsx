@@ -478,9 +478,9 @@ export default function ClassPage({ students = [], onSelectStudent }) {
         </button>
       </header>
 
-      {padOpen && <NotePad key={unit.key} unit={unit} onClose={() => setPadOpen(false)} />}
+      {padOpen && <NotePad key={`pad:${unit.key}`} unit={unit} onClose={() => setPadOpen(false)} />}
 
-      {unit.isGroup ? <GroupView key={unit.key} {...shared} /> : <SoloView key={unit.key} {...shared} />}
+      {unit.isGroup ? <GroupView key={`view:${unit.key}`} {...shared} /> : <SoloView key={`view:${unit.key}`} {...shared} />}
 
       {hwOpen && (
         <ClassHomeworkModal
