@@ -4185,32 +4185,45 @@
         },
         {
           "id": "y9-11b-q9b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "The triangle \\(ABC\\) has vertices \\(A(1, 2)\\), \\(B(3, 8)\\) and \\(C(7, 2)\\). Complete the following tasks.\nShow that \\(BC = 2MP\\) and \\(AB = 2PN\\).",
-          "answer": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
+          "stem": "The triangle \\(ABC\\) has vertices \\(A(1, 2)\\), \\(B(3, 8)\\) and \\(C(7, 2)\\). \\(M\\) and \\(N\\) are the midpoints of \\(AB\\) and \\(BC\\), and \\(P\\) is the midpoint of \\(AC\\). Which statement about the lengths of the sides and the segments \\(MP\\) and \\(PN\\) is correct?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Step 1: Find \\(P\\), midpoint of \\(AC\\).",
-              "work": "\\( P = \\left(\\frac{1+7}{2}, \\frac{2+2}{2}\\right) = (4, 2) \\)"
+              "explain": "Find P, the midpoint of AC, by averaging the coordinates of A and C.",
+              "work": "\\(P=\\left(\\dfrac{1+7}{2},\\dfrac{2+2}{2}\\right)=(4,2)\\)"
             },
             {
-              "explain": "Step 2: Calculate lengths \\(BC\\) and \\(MP\\).",
-              "work": "\\( \\begin{aligned} BC &= \\sqrt{(7-3)^2 + (2-8)^2} = \\sqrt{16 + 36} = \\sqrt{52} = 2\\sqrt{13} \\\\\\\\ MP &= \\sqrt{(4-2)^2 + (2-5)^2} = \\sqrt{4 + 9} = \\sqrt{13} \\end{aligned} \\) <br>Thus \\(BC = 2MP\\)."
+              "explain": "Use the distance formula for BC and MP, with M(2, 5).",
+              "work": "\\(BC=\\sqrt{(7-3)^2+(2-8)^2}=\\sqrt{52}=2\\sqrt{13}\\),  \\(MP=\\sqrt{(4-2)^2+(2-5)^2}=\\sqrt{13}\\)"
             },
             {
-              "explain": "Step 3: Calculate lengths \\(AB\\) and \\(PN\\).",
-              "work": "\\( \\begin{aligned} AB &= \\sqrt{(3-1)^2 + (8-2)^2} = \\sqrt{4 + 36} = \\sqrt{40} = 2\\sqrt{10} \\\\\\\\ PN &= \\sqrt{(5-4)^2 + (5-2)^2} = \\sqrt{1 + 9} = \\sqrt{10} \\end{aligned} \\) <br>Thus \\(AB = 2PN\\)."
+              "explain": "Use the distance formula for AB and PN, with N(5, 5).",
+              "work": "\\(AB=\\sqrt{(3-1)^2+(8-2)^2}=\\sqrt{40}=2\\sqrt{10}\\),  \\(PN=\\sqrt{(5-4)^2+(5-2)^2}=\\sqrt{10}\\)"
             },
             {
-              "explain": "Step 4: Conclude.",
-              "work": "We have shown that \\(BC = 2MP\\) and \\(AB = 2PN\\), satisfying the Midpoint Theorem."
+              "explain": "Compare: each side is twice the matching segment (the Midpoint Theorem). The other options swap the pairs or use the wrong ratio.",
+              "work": "\\(BC=2MP\\) and \\(AB=2PN\\)"
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" style=\"max-width:340px\" font-family=\"system-ui,sans-serif\"><polygon points=\"30,260 120,20 300,260\" fill=\"#dbeafe\" fill-opacity=\"0.55\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"140\" x2=\"165\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"165\" y1=\"260\" x2=\"210\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><g fill=\"#1e293b\"><circle cx=\"30\" cy=\"260\" r=\"3\"/><circle cx=\"120\" cy=\"20\" r=\"3\"/><circle cx=\"300\" cy=\"260\" r=\"3\"/><circle cx=\"75\" cy=\"140\" r=\"3\"/><circle cx=\"210\" cy=\"140\" r=\"3\"/><circle cx=\"165\" cy=\"260\" r=\"3\"/></g><g font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"3\"><text x=\"22\" y=\"278\" text-anchor=\"end\">A(1, 2)</text><text x=\"120\" y=\"12\" text-anchor=\"middle\">B(3, 8)</text><text x=\"308\" y=\"278\">C(7, 2)</text><text x=\"66\" y=\"138\" text-anchor=\"end\">M</text><text x=\"220\" y=\"138\">N</text><text x=\"165\" y=\"280\" text-anchor=\"middle\">P</text></g></svg>"
+          },
+          "options": [
+            "\\(BC=2MP\\) and \\(AB=2PN\\)",
+            "\\(BC=MP\\) and \\(AB=PN\\)",
+            "\\(BC=2PN\\) and \\(AB=2MP\\)",
+            "\\(BC=3MP\\) and \\(AB=3PN\\)"
+          ],
+          "keyPoints": [
+            {
+              "text": "midpoint of \\(AC\\)",
+              "note": "Find \\(P\\) first by averaging the coordinates of \\(A\\) and \\(C\\)."
+            }
+          ]
         },
         {
           "id": "y9-11b-q10",
