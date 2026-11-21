@@ -12,7 +12,7 @@
           "id": "y6-wn-q11",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the number $3\\,482\\,905$ in words.",
+          "stem": "Write the number \\(3\\,482\\,905\\) in words.",
           "options": [
             "Three hundred and forty-eight thousand, nine hundred and five",
             "Three million, forty-eight thousand, nine hundred and five",
@@ -25,15 +25,15 @@
           "steps": [
             {
               "explain": "Group the digits by standard three-digit periods (Millions, Thousands, Units).",
-              "work": "\\text{Periods: } \\underbrace{3}_{\\text{Millions}} \\, underbrace{482}_{\\text{Thousands}} \\, underbrace{905}_{\\text{Units}}"
+              "work": "\\(\\text{Periods: } \\underbrace{3}_{\\text{Millions}} \\,\\ \\underbrace{482}_{\\text{Thousands}} \\,\\ \\underbrace{905}_{\\text{Units}}\\)"
             },
             {
               "explain": "Write out the value of each period in words.",
-              "work": "\\begin{aligned} 3 &\\rightarrow \\text{Three million} \\\\ 482 &\\rightarrow \\text{four hundred and eighty-two thousand} \\\\ 905 &\\rightarrow \\text{nine hundred and five} \\end{aligned}"
+              "work": "\\(\\begin{aligned} 3 &\\rightarrow \\text{Three million} \\\\ 482 &\\rightarrow \\text{four hundred and eighty-two thousand} \\\\ 905 &\\rightarrow \\text{nine hundred and five} \\end{aligned}\\)"
             },
             {
               "explain": "Combine all parts with appropriate commas.",
-              "work": "\\text{Three million, four hundred and eighty-two thousand, nine hundred and five}"
+              "work": "\\(\\text{Three million, four hundred and eighty-two thousand, nine hundred and five}\\)"
             }
           ],
           "alsoIn": [
@@ -45,7 +45,7 @@
           "id": "y6-wn-q12",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Write the number $97\\,003\\,002$ in words.",
+          "stem": "Write the number \\(97\\,003\\,002\\) in words.",
           "options": [
             "Ninety-seven million, three hundred thousand and two",
             "Nine million, seven hundred and three thousand and two",
@@ -58,15 +58,15 @@
           "steps": [
             {
               "explain": "Group the number into three-digit periods.",
-              "work": "\\text{Periods: } \\underbrace{97}_{\\text{Millions}} \\, underbrace{003}_{\\text{Thousands}} \\, underbrace{002}_{\\text{Units}}"
+              "work": "\\(\\text{Periods: } \\underbrace{97}_{\\text{Millions}} \\,\\ \\underbrace{003}_{\\text{Thousands}} \\,\\ \\underbrace{002}_{\\text{Units}}\\)"
             },
             {
               "explain": "Convert each period to words. Note that empty placeholders (zeros) are skipped.",
-              "work": "\\begin{aligned} 97 &\\rightarrow \\text{Ninety-seven million} \\\\ 3 &\\rightarrow \\text{three thousand} \\\\ 2 &\\rightarrow \\text{two} \\end{aligned}"
+              "work": "\\(\\begin{aligned} 97 &\\rightarrow \\text{Ninety-seven million} \\\\ 3 &\\rightarrow \\text{three thousand} \\\\ 2 &\\rightarrow \\text{two} \\end{aligned}\\)"
             },
             {
               "explain": "Combine into a single phrase.",
-              "work": "\\text{Ninety-seven million, three thousand and two}"
+              "work": "\\(\\text{Ninety-seven million, three thousand and two}\\)"
             }
           ],
           "alsoIn": [
