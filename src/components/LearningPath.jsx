@@ -9,6 +9,8 @@ import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import useStudentSessions from '../hooks/useStudentSessions';
+import { deriveTopicStates, topicStatuses, byChapter } from '../utils/topicProgress';
 import { withTimeout } from '../utils/withTimeout';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
@@ -240,38 +242,44 @@ const LearningPath = ({ profile }) => {
   }, [availableSubjects, activeSubject]);
 
   // ── Derive each chapter's state and lesson count ──────────────────────
+  // Same "Done" rule as the teacher's Class page and student screen (utils/topicProgress): a topic is done once it was
+  // taught in a lesson, the homework was checked and any mistakes were gone through — or the teacher marked it done.
+  // A chapter is done when all its topics are. (Own practice % still shows on each topic chip; it no longer decides
+  // whether the chapter counts as done.)
+  const lessons = useStudentSessions(user?.uid);
+  const topicStates = useMemo(() => {
+    const allTopics = curriculum.flatMap((chapter) => (Array.isArray(chapter.topics) && chapter.topics.length > 0
+      ? chapter.topics.map((t) => ({ id: t.id, code: t.code || '', title: t.title || '', chapterId: chapter.id, chapterTitle: chapter.title }))
+      : [{ id: chapter.id, code: '', title: chapter.title, chapterId: chapter.id, chapterTitle: chapter.title }]));
+    const derived = lessons ? deriveTopicStates(lessons, new Date().toLocaleDateString('en-CA')) : new Map();
+    return topicStatuses(allTopics, derived, { completed: profile?.completedChapters || [], overrides: profile?.progressOverrides || {} });
+  }, [curriculum, lessons, profile?.completedChapters, profile?.progressOverrides]);
+  const doneTopicIds = useMemo(() => new Set(topicStates.filter((t) => t.state === 'done').map((t) => t.id)), [topicStates]);
+
   const nodes = useMemo(() => {
     const teacherAssigned = profile?.assignedChapters || [];
     const teacherCompleted = profile?.completedChapters || [];
     const noAssignments = teacherAssigned.length === 0 && teacherCompleted.length === 0;
+    const perChapter = byChapter(topicStates);
 
     return curriculum.map((chapter, idx) => {
-      const topicMap = progress[chapter.id] || {};
       const topics = Array.isArray(chapter.topics) ? chapter.topics : [];
-      const lessons = topics.length || chapter.modules || 12;
+      const lessonsCount = topics.length || chapter.modules || 12;
+      const c = perChapter[chapter.id] || { done: 0, total: 0 };
 
-      const isTeacherCompleted = teacherCompleted.includes(chapter.id);
+      const isDone = c.total > 0 && c.done === c.total;
+      const pct = c.total > 0 ? Math.round((c.done / c.total) * 100) : 0;
+
       const isTeacherAssigned = teacherAssigned.includes(chapter.id);
-
-      // Mastered when teacher marked complete OR every topic is at 100%
-      const allTopicsDone = topics.length > 0 && topics.every((t) => (topicMap[t.id] || 0) === 100);
-      const isDone = isTeacherCompleted || allTopicsDone;
-
-      // Overall chapter progress = average of topic progresses
-      const topicPcts = topics.map((t) => topicMap[t.id] || 0);
-      const pct = isTeacherCompleted ? 100 : topics.length > 0
-        ? Math.round(topicPcts.reduce((s, p) => s + p, 0) / topics.length)
-        : 0;
-
       const isCurrent = !isDone && (isTeacherAssigned || (noAssignments && idx === 0));
       const isNext = !isDone && !isCurrent && (isTeacherAssigned || (noAssignments && idx < 3));
 
       return {
-        ...chapter, idx, lessons, pct,
+        ...chapter, idx, lessons: lessonsCount, pct,
         state: isDone ? 'done' : isCurrent ? 'current' : isNext ? 'next' : 'locked',
       };
     });
-  }, [curriculum, progress, profile?.assignedChapters, profile?.completedChapters]);
+  }, [curriculum, topicStates, profile?.assignedChapters, profile?.completedChapters]);
 
   const overview = useMemo(() => {
     const total = nodes.length || 1;
@@ -468,6 +476,7 @@ const LearningPath = ({ profile }) => {
           chapterState={selectedChapter.state}
           lastTopicId={lastStudy && lastStudy.chapterId === selectedChapter.chapter.id ? lastStudy.topicId : ''}
           profile={profile}
+          doneTopicIds={doneTopicIds}
           onBack={() => setSelectedChapter(null)}
           onStartTopic={(topic, chapter) => {
             setSelectedTopic({ topic, chapter });
