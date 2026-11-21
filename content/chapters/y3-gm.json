@@ -3700,6 +3700,776 @@
               "note": "Sum all four outer edges."
             }
           ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16b",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 2 m 70 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">2 m 70 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "2.70 m",
+            "3.70 m",
+            "270 m",
+            "0.270 m"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 70 cm is 70 hundredths of a metre (0.70 m).",
+              "work": "\\(70\\text{ cm} = \\dfrac{70}{100}\\text{ m} = 0.70\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">2 m + 0.70 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (2) and hundredths of a metre (70): 2.70 m.",
+              "work": "\\(2 + 0.70 = 2.70\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 70 cm = 2.70 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(2.70\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 70 cm = 2.70 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 2 m 70 cm = 2.70 m.",
+              "work": "\\(\\text{Answer: } 2.70\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 70 cm = 2.70 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "2 m 70 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16c",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 3 m 45 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">3 m 45 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "4.45 m",
+            "345 m",
+            "0.345 m",
+            "3.45 m"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 45 cm is 45 hundredths of a metre (0.45 m).",
+              "work": "\\(45\\text{ cm} = \\dfrac{45}{100}\\text{ m} = 0.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">3 m + 0.45 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (3) and hundredths of a metre (45): 3.45 m.",
+              "work": "\\(3 + 0.45 = 3.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">3 m 45 cm = 3.45 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(3.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">3 m 45 cm = 3.45 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 3 m 45 cm = 3.45 m.",
+              "work": "\\(\\text{Answer: } 3.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">3 m 45 cm = 3.45 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "3 m 45 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16d",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 1 m 27 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">1 m 27 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "127 m",
+            "0.127 m",
+            "1.27 m",
+            "2.27 m"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 27 cm is 27 hundredths of a metre (0.27 m).",
+              "work": "\\(27\\text{ cm} = \\dfrac{27}{100}\\text{ m} = 0.27\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">1 m + 0.27 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (1) and hundredths of a metre (27): 1.27 m.",
+              "work": "\\(1 + 0.27 = 1.27\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">1 m 27 cm = 1.27 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(1.27\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">1 m 27 cm = 1.27 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 1 m 27 cm = 1.27 m.",
+              "work": "\\(\\text{Answer: } 1.27\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">1 m 27 cm = 1.27 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "1 m 27 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16e",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 2 m 56 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">2 m 56 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "0.256 m",
+            "2.56 m",
+            "3.56 m",
+            "256 m"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 56 cm is 56 hundredths of a metre (0.56 m).",
+              "work": "\\(56\\text{ cm} = \\dfrac{56}{100}\\text{ m} = 0.56\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">2 m + 0.56 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (2) and hundredths of a metre (56): 2.56 m.",
+              "work": "\\(2 + 0.56 = 2.56\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 56 cm = 2.56 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(2.56\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 56 cm = 2.56 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 2 m 56 cm = 2.56 m.",
+              "work": "\\(\\text{Answer: } 2.56\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 56 cm = 2.56 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "2 m 56 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16f",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 4 m 45 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">4 m 45 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "4.45 m",
+            "5.45 m",
+            "445 m",
+            "0.445 m"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 45 cm is 45 hundredths of a metre (0.45 m).",
+              "work": "\\(45\\text{ cm} = \\dfrac{45}{100}\\text{ m} = 0.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">4 m + 0.45 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (4) and hundredths of a metre (45): 4.45 m.",
+              "work": "\\(4 + 0.45 = 4.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">4 m 45 cm = 4.45 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(4.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">4 m 45 cm = 4.45 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 4 m 45 cm = 4.45 m.",
+              "work": "\\(\\text{Answer: } 4.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">4 m 45 cm = 4.45 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "4 m 45 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16g",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 6 m 32 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">6 m 32 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "7.32 m",
+            "632 m",
+            "0.632 m",
+            "6.32 m"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 32 cm is 32 hundredths of a metre (0.32 m).",
+              "work": "\\(32\\text{ cm} = \\dfrac{32}{100}\\text{ m} = 0.32\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">6 m + 0.32 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (6) and hundredths of a metre (32): 6.32 m.",
+              "work": "\\(6 + 0.32 = 6.32\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">6 m 32 cm = 6.32 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(6.32\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">6 m 32 cm = 6.32 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 6 m 32 cm = 6.32 m.",
+              "work": "\\(\\text{Answer: } 6.32\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">6 m 32 cm = 6.32 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "6 m 32 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16h",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 3 m 78 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">3 m 78 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "378 m",
+            "0.378 m",
+            "3.78 m",
+            "4.78 m"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 78 cm is 78 hundredths of a metre (0.78 m).",
+              "work": "\\(78\\text{ cm} = \\dfrac{78}{100}\\text{ m} = 0.78\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">3 m + 0.78 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (3) and hundredths of a metre (78): 3.78 m.",
+              "work": "\\(3 + 0.78 = 3.78\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">3 m 78 cm = 3.78 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(3.78\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">3 m 78 cm = 3.78 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 3 m 78 cm = 3.78 m.",
+              "work": "\\(\\text{Answer: } 3.78\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">3 m 78 cm = 3.78 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "3 m 78 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16i",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 2 m 98 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">2 m 98 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "0.298 m",
+            "2.98 m",
+            "3.98 m",
+            "298 m"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 98 cm is 98 hundredths of a metre (0.98 m).",
+              "work": "\\(98\\text{ cm} = \\dfrac{98}{100}\\text{ m} = 0.98\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">2 m + 0.98 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (2) and hundredths of a metre (98): 2.98 m.",
+              "work": "\\(2 + 0.98 = 2.98\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 98 cm = 2.98 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(2.98\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 98 cm = 2.98 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 2 m 98 cm = 2.98 m.",
+              "work": "\\(\\text{Answer: } 2.98\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 98 cm = 2.98 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "2 m 98 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mp31-q16j",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 5 m 40 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">5 m 40 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "5.40 m",
+            "6.40 m",
+            "540 m",
+            "0.540 m"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 40 cm is 40 hundredths of a metre (0.40 m).",
+              "work": "\\(40\\text{ cm} = \\dfrac{40}{100}\\text{ m} = 0.40\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">5 m + 0.40 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (5) and hundredths of a metre (40): 5.40 m.",
+              "work": "\\(5 + 0.40 = 5.40\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">5 m 40 cm = 5.40 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(5.40\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">5 m 40 cm = 5.40 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 5 m 40 cm = 5.40 m.",
+              "work": "\\(\\text{Answer: } 5.40\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">5 m 40 cm = 5.40 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "5 m 40 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mpdr4-p11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 1 m 25 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">1 m 25 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "2.25 m",
+            "125 m",
+            "0.125 m",
+            "1.25 m"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 25 cm is 25 hundredths of a metre (0.25 m).",
+              "work": "\\(25\\text{ cm} = \\dfrac{25}{100}\\text{ m} = 0.25\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">1 m + 0.25 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (1) and hundredths of a metre (25): 1.25 m.",
+              "work": "\\(1 + 0.25 = 1.25\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">1 m 25 cm = 1.25 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(1.25\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">1 m 25 cm = 1.25 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 1 m 25 cm = 1.25 m.",
+              "work": "\\(\\text{Answer: } 1.25\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">1 m 25 cm = 1.25 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "1 m 25 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mpdr4-p11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 2 m 37 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">2 m 37 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "237 m",
+            "0.237 m",
+            "2.37 m",
+            "3.37 m"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 37 cm is 37 hundredths of a metre (0.37 m).",
+              "work": "\\(37\\text{ cm} = \\dfrac{37}{100}\\text{ m} = 0.37\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">2 m + 0.37 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (2) and hundredths of a metre (37): 2.37 m.",
+              "work": "\\(2 + 0.37 = 2.37\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 37 cm = 2.37 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(2.37\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 37 cm = 2.37 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 2 m 37 cm = 2.37 m.",
+              "work": "\\(\\text{Answer: } 2.37\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">2 m 37 cm = 2.37 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "2 m 37 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mpdr4-p11c",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Convert 6 m 49 cm into metres using decimal notation.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">6 m 49 cm = ?.?? m</text><text x=\"145\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">Remember: 100 cm = 1 m</text></svg>"
+          },
+          "options": [
+            "0.649 m",
+            "6.49 m",
+            "7.49 m",
+            "649 m"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Since 100 cm = 1 m, 49 cm is 49 hundredths of a metre (0.49 m).",
+              "work": "\\(49\\text{ cm} = \\dfrac{49}{100}\\text{ m} = 0.49\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#854d0e\">6 m + 0.49 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine whole metres (6) and hundredths of a metre (49): 6.49 m.",
+              "work": "\\(6 + 0.49 = 6.49\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">6 m 49 cm = 6.49 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the decimal point separates whole metres from centimetres.",
+              "work": "\\(6.49\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">6 m 49 cm = 6.49 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 6 m 49 cm = 6.49 m.",
+              "work": "\\(\\text{Answer: } 6.49\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 92\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"282\" height=\"84\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"145\" y=\"52\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">6 m 49 cm = 6.49 m</text></svg>"
+              }
+            }
+          ],
+          "hint": "Put the whole metres before the decimal point and the two-digit centimetres after the decimal point.",
+          "keyPoints": [
+            {
+              "text": "6 m 49 cm",
+              "note": "100 cm = 1 m, so centimetres go in the two decimal places."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mpdr4-p12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many centimetres (cm) are in 1 metre (1 m)?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0f172a\">Metric &amp; time unit conversion</text></svg>"
+          },
+          "options": [
+            "10 cm",
+            "100 cm",
+            "1000 cm",
+            "50 cm"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Centi means hundredth, so 1 m = 100 cm.",
+              "work": "\\(\\text{100 cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#854d0e\">Centi means hundredth, so 1 m = 100 cm.</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the unit carefully: 100 cm.",
+              "work": "\\(\\text{100 cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">100 cm ✓</text></svg>"
+              }
+            },
+            {
+              "explain": "Metric prefixes: kilo = 1000, centi = 1/100, milli = 1/1000.",
+              "work": "\\(\\text{Verified}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">100 cm ✓</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, the answer is 100 cm.",
+              "work": "\\(\\text{Answer: 100 cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">100 cm ✓</text></svg>"
+              }
+            }
+          ],
+          "hint": "Recall: 1 L = 1000 mL, 1 m = 100 cm, 1 kg = 1000 g, 1 hour = 60 minutes.",
+          "keyPoints": [
+            {
+              "text": "How many",
+              "note": "Use standard metric and time conversions."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-1-mpdr4-p12f",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many centimetres (cm) are in \\(\\dfrac{1}{4}\\) metre?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0f172a\">Metric &amp; time unit conversion</text></svg>"
+          },
+          "options": [
+            "50 cm",
+            "25 cm",
+            "40 cm",
+            "20 cm"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "One-quarter of 100 cm is 100 ÷ 4 = 25 cm.",
+              "work": "\\(\\text{25 cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#854d0e\">One-quarter of 100 cm is 100 ÷ 4 = 25 cm.</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the unit carefully: 25 cm.",
+              "work": "\\(\\text{25 cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">25 cm ✓</text></svg>"
+              }
+            },
+            {
+              "explain": "Metric prefixes: kilo = 1000, centi = 1/100, milli = 1/1000.",
+              "work": "\\(\\text{Verified}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">25 cm ✓</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, the answer is 25 cm.",
+              "work": "\\(\\text{Answer: 25 cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 88\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"272\" height=\"80\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"140\" y=\"48\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#15803d\">25 cm ✓</text></svg>"
+              }
+            }
+          ],
+          "hint": "Recall: 1 L = 1000 mL, 1 m = 100 cm, 1 kg = 1000 g, 1 hour = 60 minutes.",
+          "keyPoints": [
+            {
+              "text": "How many",
+              "note": "Use standard metric and time conversions."
+            }
+          ]
         }
       ]
     },
@@ -9040,6 +9810,226 @@
             {
               "text": "\"Less than a right angle\", \"Equal to a right angle\", and \"Larger than a right angle\"",
               "note": "Match each object to its angle size."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-3-mp30-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Look at the four opening doors (Doors 1, 2, 3, and 4). Which door formed the SMALLEST opening angle with its doorway?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+          },
+          "options": [
+            "Door 1",
+            "Door 2",
+            "Door 3",
+            "Door 4"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Imagine the dotted line across the doorway as the hidden first arm of the angle, and the open door as the second arm.",
+              "work": "\\(\\text{Compare opening angles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Door 1 is barely open (still nearly flat against the frame), so the angle between the door and the dotted frame line is the smallest.",
+              "work": "\\(\\text{Door 1}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Order the doors from smallest opening angle to largest: Door 1 < Door 2 < Door 3 < Door 4.",
+              "work": "\\(\\text{Door 1} < \\text{Door 2} < \\text{Door 3} < \\text{Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, Door 1 is correct.",
+              "work": "\\(\\text{Answer: Door 1}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The wider a door swings open from its frame, the larger the angle it makes (Door 1 is barely open; Door 4 is almost wide open at 90°).",
+          "keyPoints": [
+            {
+              "text": "angle",
+              "note": "Compare how wide each door has turned away from the doorway."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-3-mp30-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Look at the four opening doors (Doors 1, 2, 3, and 4). Which door formed the LARGEST opening angle with its doorway?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+          },
+          "options": [
+            "Door 1",
+            "Door 4",
+            "Door 2",
+            "Door 3"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Imagine the dotted line across the doorway as the hidden first arm of the angle, and the open door as the second arm.",
+              "work": "\\(\\text{Compare opening angles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Door 4 is swung almost completely open into the room (nearly straight out from the frame), forming the largest opening angle.",
+              "work": "\\(\\text{Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Order the doors from smallest opening angle to largest: Door 1 < Door 2 < Door 3 < Door 4.",
+              "work": "\\(\\text{Door 1} < \\text{Door 2} < \\text{Door 3} < \\text{Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, Door 4 is correct.",
+              "work": "\\(\\text{Answer: Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The wider a door swings open from its frame, the larger the angle it makes (Door 1 is barely open; Door 4 is almost wide open at 90°).",
+          "keyPoints": [
+            {
+              "text": "angle",
+              "note": "Compare how wide each door has turned away from the doorway."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-3-mp30-q13c",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Compare Door 1 and Door 3. Is the opening angle formed by Door 1 LARGER than the angle formed by Door 3?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+          },
+          "options": [
+            "Yes, Door 1 is open wider than Door 3",
+            "They are the exact same angle",
+            "No, Door 1 forms a smaller angle than Door 3",
+            "Neither door forms an angle"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Imagine the dotted line across the doorway as the hidden first arm of the angle, and the open door as the second arm.",
+              "work": "\\(\\text{Compare opening angles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Door 3 is swung open much further than Door 1, so Door 1 forms a SMALLER angle than Door 3.",
+              "work": "\\(\\text{No, Door 1 forms a smaller angle than Door 3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Order the doors from smallest opening angle to largest: Door 1 < Door 2 < Door 3 < Door 4.",
+              "work": "\\(\\text{Door 1} < \\text{Door 2} < \\text{Door 3} < \\text{Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, No, Door 1 forms a smaller angle than Door 3 is correct.",
+              "work": "\\(\\text{Answer: No, Door 1 forms a smaller angle than Door 3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The wider a door swings open from its frame, the larger the angle it makes (Door 1 is barely open; Door 4 is almost wide open at 90°).",
+          "keyPoints": [
+            {
+              "text": "angle",
+              "note": "Compare how wide each door has turned away from the doorway."
+            }
+          ]
+        },
+        {
+          "id": "y3-gm-3-mp30-q13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Look at the four opening doors (Doors 1, 2, 3, and 4). Which door formed an opening angle close to a right angle (90°)?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 4</text></svg>"
+          },
+          "options": [
+            "Door 1",
+            "Door 2",
+            "Door 3",
+            "Door 4"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Imagine the dotted line across the doorway as the hidden first arm of the angle, and the open door as the second arm.",
+              "work": "\\(\\text{Compare opening angles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Door 4 swings almost straight out perpendicular to the doorway, making an opening angle close to a 90° right angle.",
+              "work": "\\(\\text{Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Order the doors from smallest opening angle to largest: Door 1 < Door 2 < Door 3 < Door 4.",
+              "work": "\\(\\text{Door 1} < \\text{Door 2} < \\text{Door 3} < \\text{Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, Door 4 is correct.",
+              "work": "\\(\\text{Answer: Door 4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 135\" width=\"65%\" height=\"auto\" style=\"max-width:462px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"352\" height=\"127\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"24\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"78,18 30,24 30,96 78,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"24\" y1=\"100\" x2=\"78\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"51\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">1</text><text x=\"51\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 1</text><rect x=\"108\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"162,18 124,24 124,96 162,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"100\" x2=\"162\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"135\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">2</text><text x=\"135\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 2</text><rect x=\"192\" y=\"18\" width=\"54\" height=\"82\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2\"/><polygon points=\"246,18 220,24 220,96 246,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"192\" y1=\"100\" x2=\"246\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"219\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">3</text><text x=\"219\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#334155\">Door 3</text><rect x=\"276\" y=\"18\" width=\"54\" height=\"82\" fill=\"#fef9c3\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"330,18 318,24 318,96 330,100\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"276\" y1=\"100\" x2=\"330\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><text x=\"303\" y=\"60\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\">4</text><text x=\"303\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#dc2626\">Door 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "The wider a door swings open from its frame, the larger the angle it makes (Door 1 is barely open; Door 4 is almost wide open at 90°).",
+          "keyPoints": [
+            {
+              "text": "angle",
+              "note": "Compare how wide each door has turned away from the doorway."
             }
           ]
         }
