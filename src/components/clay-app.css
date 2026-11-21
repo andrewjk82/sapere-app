@@ -118,3 +118,34 @@ html[data-clay="1"] .mobile-user-capsule {
   box-shadow: var(--clay-puff-sm) !important;
 }
 html[data-clay="1"] .mobile-user-capsule__avatar { border-color: var(--clay-card) !important; }
+
+/* ───────── Student dashboard (inline-styled cards): flat clay colours instead of indigo gradients ─────────
+   Matched on the serialized inline styles; colours only. */
+html[data-clay="1"] [style*="rgb(99, 102, 241), rgb(139, 92, 246)"] { background: #8a70d4 !important; }
+html[data-clay="1"] [style*="rgb(99, 102, 241), rgb(139, 92, 246)"][style*="border-radius: 28px"] { box-shadow: var(--clay-puff) !important; }
+html[data-clay="1"] [style*="rgb(14, 165, 233), rgb(99, 102, 241)"] { background: #6aa8e6 !important; }
+html[data-clay="1"] [style*="rgb(14, 165, 233), rgb(99, 102, 241)"][style*="border-radius: 28px"] { box-shadow: var(--clay-puff) !important; }
+html[data-clay="1"] [style*="rgb(30, 27, 75), rgb(49, 46, 129)"] { background: #5b43a8 !important; }
+/* Week bars of Daily Practice */
+html[data-clay="1"] [style*="linear-gradient(rgb(129, 140, 248), rgb(99, 102, 241))"] { background: #8a70d4 !important; }
+html[data-clay="1"] [style*="linear-gradient(180deg, rgb(129, 140, 248), rgb(99, 102, 241))"] { background: #8a70d4 !important; }
+html[data-clay="1"] [style*="linear-gradient(rgb(165, 180, 252), rgb(129, 140, 248))"] { background: #b5a2ea !important; }
+html[data-clay="1"] [style*="linear-gradient(180deg, rgb(165, 180, 252), rgb(129, 140, 248))"] { background: #b5a2ea !important; }
+html[data-clay="1"] [style*="linear-gradient(rgb(199, 210, 254), rgb(165, 180, 252))"] { background: #d9ccf5 !important; }
+html[data-clay="1"] [style*="linear-gradient(180deg, rgb(199, 210, 254), rgb(165, 180, 252))"] { background: #d9ccf5 !important; }
+html[data-clay="1"] [style*="rgb(238, 242, 255), rgb(224, 231, 255)"] { background: #e4dcf7 !important; }
+html[data-clay="1"] .app-shell__main [style*="background: rgb(238, 242, 255)"] { background: #f3e7d6 !important; }
+html[data-clay="1"] .app-shell__main [style*="background: rgb(79, 70, 229)"] { background: #8a70d4 !important; }
+/* Today's plan rows */
+html[data-clay="1"] .app-shell__main [style*="min-height: 76px"][style*="border-radius: 18px"] {
+  border: 0 !important;
+  border-radius: 24px !important;
+  box-shadow: var(--clay-puff-sm) !important;
+}
+/* Text colours on those cards */
+html[data-clay="1"] .app-shell__main [style*="color: rgb(15, 23, 42)"] { color: var(--clay-ink) !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(71, 85, 105)"] { color: var(--clay-soft) !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(148, 163, 184)"] { color: #a08c82 !important; }
+html[data-clay="1"] .app-shell__main [style*="color: rgb(67, 56, 202)"],
+html[data-clay="1"] .app-shell__main [style*="color: rgb(79, 70, 229)"] { color: #6b4fc4 !important; }
+html[data-clay="1"] .app-shell__main [style*="Poppins"] { font-family: var(--font-heading) !important; }
