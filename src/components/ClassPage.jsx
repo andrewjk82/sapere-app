@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, deleteDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
+import { useLessonNote, useNoteFlush, saveNoteLocal, deleteNoteLocal, flushNotes } from '../utils/classNotes';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import LessonWorkspace from './LessonWorkspace';
@@ -55,13 +56,6 @@ const toUnits = (sessions) => {
   return [...map.values()].map((u) => ({ ...u, isGroup: u.sessions.length > 1 })).sort(byTime);
 };
 
-const noteDocId = (key) => String(key || '').replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 300);
-const useLessonNote = (key) => {
-  const live = useLiveDoc(['class_notes', noteDocId(key)], { enabled: Boolean(key) });
-  // `loaded` waits for the server (or a saved copy that really has the note): a first, empty answer from the
-  // device's own cache would otherwise open the pad blank and then hide a note that exists.
-  return { text: live.data?.text || '', loaded: live.status === 'live' || live.status === 'offline' || Boolean(live.data) };
-};
 const LastNote = ({ lessonKey }) => {
   const note = useLessonNote(lessonKey);
   return note.text ? <p className="cls-note cls-note--mine">{note.text}</p> : null;
@@ -135,70 +129,50 @@ function WeekDots({ week, small = false }) {
   );
 }
 
-function NotePad({ unit, savedText, onClose }) {
-  // `draft` is what has been typed here; until something is typed the pad shows the saved note, so a note that
-  // arrives from the server a moment after the pad opened still appears.
+// Local first: typing is kept on the device at once; Done (or leaving, or the connection coming back) sends it to
+// Firebase in a single write. Nothing is written to Firebase while typing.
+function NotePad({ unit, onClose }) {
+  const note = useLessonNote(unit.key);
   const [draft, setDraft] = useState(null);
-  const text = draft ?? savedText;
-  const [state, setState] = useState('saved');
+  const text = draft ?? note.text;
   const timer = useRef(0);
-  const latest = useRef(null);
-  const ref = doc(db, 'class_notes', noteDocId(unit.key));
+  const pending = useRef(null);
+  const meta = useMemo(() => ({
+    date: unit.date, startTime: unit.startTime || '', groupId: unit.groupId || '', studentIds: unit.sessions.map(sessionStudentId),
+  }), [unit]);
 
-  const save = async (value) => {
-    setState('saving');
-    try {
-      // The write is kept on the device and sent when the connection allows, so a slow server ack (the iPad's
-      // usual stall) never leaves the pad stuck on "Saving…".
-      const result = await Promise.race([
-        setDoc(ref, {
-          text: value, date: unit.date, startTime: unit.startTime || '', groupId: unit.groupId || '',
-          studentIds: unit.sessions.map(sessionStudentId), updatedAt: serverTimestamp(),
-        }, { merge: true }),
-        new Promise((resolve) => { window.setTimeout(() => resolve('queued'), 4000); }),
-      ]);
-      setState(result === 'queued' ? 'queued' : 'saved');
-    } catch { setState('error'); }
+  const [typing, setTyping] = useState(false);
+  const commit = () => {
+    window.clearTimeout(timer.current);
+    if (pending.current !== null) { saveNoteLocal(unit.key, pending.current, meta); pending.current = null; }
   };
   const onChange = (e) => {
     const v = e.target.value;
-    setDraft(v); latest.current = v; setState('typing');
+    setDraft(v); setTyping(true); pending.current = v;
     window.clearTimeout(timer.current);
-    timer.current = window.setTimeout(() => save(v), 1500);
+    timer.current = window.setTimeout(() => { commit(); setTyping(false); }, 400);
   };
-  const close = () => {
-    window.clearTimeout(timer.current);
-    if (latest.current !== null && state === 'typing') save(latest.current);
+  // Closing the pad any way (Done, switching lesson, leaving the page) keeps what was typed.
+  useEffect(() => () => { commit(); flushNotes(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const done = () => { commit(); setTyping(false); flushNotes(); onClose(); };
+  const remove = () => {
+    if (!window.confirm('Delete this note? This cannot be undone.')) return;
+    window.clearTimeout(timer.current); pending.current = null;
+    deleteNoteLocal(unit.key, meta);
+    flushNotes();
     onClose();
   };
-  useEffect(() => () => window.clearTimeout(timer.current), []);
-  const remove = async () => {
-    if (!window.confirm('Delete this note? This cannot be undone.')) return;
-    window.clearTimeout(timer.current);
-    setState('saving');
-    try {
-      await deleteDoc(ref);
-      setDraft(null); latest.current = null;
-      onClose();
-    } catch { setState('error'); }
-  };
+  const status = typing ? '' : note.dirty ? 'Saved on this device' : 'Saved';
 
   return (
     <div className="cls-pad" role="dialog" aria-label="Lesson notes">
       <div className="cls-pad-head">
         <strong>Notes · {shortDate(unit.date)} {unit.startTime}</strong>
-        <span className={`cls-pad-state is-${state}`}>
-          {state === 'saving' ? 'Saving…' : state === 'queued' ? 'Saved on this device' : state === 'error' ? 'Not saved — check connection' : state === 'typing' ? '' : 'Saved'}
-        </span>
-        {(text || savedText) && <button type="button" className="cls-link cls-link--danger" onClick={remove}>Delete note</button>}
-        <button type="button" className="cls-link" onClick={close}>Done</button>
+        <span className="cls-pad-state">{status}</span>
+        {(text || note.exists) && <button type="button" className="cls-link cls-link--danger" onClick={remove}>Delete note</button>}
+        <button type="button" className="cls-link" onClick={done}>Done</button>
       </div>
-      <textarea
-        autoFocus
-        value={text}
-        onChange={onChange}
-        placeholder="Anything to remember about this lesson…"
-      />
+      <textarea autoFocus value={text} onChange={onChange} placeholder="Anything to remember about this lesson…" />
     </div>
   );
 }
@@ -375,6 +349,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const [mistakeReview, setMistakeReview] = useState(null);   // { item, studentId, studentName }
   const { user } = useAuth();
   const note = useLessonNote(unit?.key || '');
+  useNoteFlush();
 
   // History: the group's lessons (groupId) or the student's lessons.
   const historyKey = unit ? (unit.isGroup ? `g:${unit.groupId}` : `s:${sessionStudentId(unit.sessions[0])}`) : '';
@@ -498,12 +473,12 @@ export default function ClassPage({ students = [], onSelectStudent }) {
         {!historyFailed && (!liveUpcoming || (historyKey && !historyFresh)) && (
           <span className="cls-sync" role="status">{todaySummary.status === 'offline' ? 'Offline – saved data' : 'Updating…'}</span>
         )}
-        <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.text ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
+        <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.exists ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
           Notes
         </button>
       </header>
 
-      {padOpen && note.loaded && <NotePad key={unit.key} unit={unit} savedText={note.text} onClose={() => setPadOpen(false)} />}
+      {padOpen && <NotePad key={unit.key} unit={unit} onClose={() => setPadOpen(false)} />}
 
       {unit.isGroup ? <GroupView key={unit.key} {...shared} /> : <SoloView key={unit.key} {...shared} />}
 
