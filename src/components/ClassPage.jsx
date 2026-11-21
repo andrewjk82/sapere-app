@@ -5,7 +5,7 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
-import { useClayStyle } from '../utils/clayStyle';
+import '../utils/clayStyle';
 import './class-page.css';
 
 // Teacher's "Class" page: the lesson happening now (or next today) on one screen.
@@ -217,8 +217,12 @@ const PaperList = ({ papers }) => (
 export default function ClassPage({ students = [], onSelectStudent }) {
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
-    const t = window.setInterval(() => setNow(new Date()), 60000);
-    return () => window.clearInterval(t);
+    const tick = () => setNow(new Date());
+    const t = window.setInterval(tick, 30000);
+    // The iPad app is suspended in the background: catch up as soon as it is back on screen.
+    const onVis = () => { if (document.visibilityState !== 'hidden') tick(); };
+    document.addEventListener('visibilitychange', onVis);
+    return () => { window.clearInterval(t); document.removeEventListener('visibilitychange', onVis); };
   }, []);
   const today = dateKey(now);
 
@@ -258,18 +262,20 @@ export default function ClassPage({ students = [], onSelectStudent }) {
     if (!dayUnits.length) return null;
     if (dayUnits[0].date !== today) return dayUnits[0];
     const mins = now.getHours() * 60 + now.getMinutes();
-    const running = dayUnits.find((u) => {
+    // The lesson running now (end time is exclusive, so at 11:00 the 9–11 lesson is over and the 11:00 one is on);
+    // between lessons, the next one; after the last, the last.
+    const running = dayUnits.filter((u) => {
       const st = parseClock(u.startTime); const en = parseClock(u.endTime) ?? (st != null ? st + 90 : null);
-      return st != null && mins >= st - 15 && mins <= en;
-    });
+      return st != null && mins >= st && mins < en;
+    }).pop();
     return running || dayUnits.find((u) => (parseClock(u.startTime) ?? 0) > mins) || dayUnits[dayUnits.length - 1];
   }, [dayUnits, now, today]);
 
-  const [pickedKey, setPickedKey] = useState('');
-  const unit = dayUnits.find((u) => u.key === pickedKey) || autoPick;
+  // A manual pick holds only while the automatic choice stays the same; when the clock moves on to the next lesson
+  // the page follows it again.
+  const [picked, setPicked] = useState({ key: '', auto: '' });
+  const unit = (picked.auto === autoPick?.key && dayUnits.find((u) => u.key === picked.key)) || autoPick;
   const [padOpen, setPadOpen] = useState(false);
-  // Trial of the soft "clay" look (CSS only, remembered per device, shared with the sidebar). Off by default.
-  const [clay, toggleClay] = useClayStyle();
   const note = useLessonNote(unit?.key || '');
 
   // History: the group's lessons (groupId) or the student's lessons.
@@ -353,7 +359,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const lessonNav = dayUnits.length > 1 && (
           <nav className="cls-day-list" aria-label="Lessons">
             {dayUnits.map((u) => (
-              <button key={u.key} type="button" className={`cls-day-item${u.key === unit.key ? ' is-on' : ''}`} onClick={() => { setPickedKey(u.key); setPadOpen(false); }}>
+              <button key={u.key} type="button" className={`cls-day-item${u.key === unit.key ? ' is-on' : ''}`} onClick={() => { setPicked({ key: u.key, auto: autoPick?.key || '' }); setPadOpen(false); }}>
                 <span>{u.startTime}</span>{unitLabel(u)}
               </button>
             ))}
@@ -362,10 +368,10 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const shared = { lessonNav, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
-    <div className={`cls${clay ? ' cls--clay' : ''}`}>
+    <div className="cls cls--clay">
       <header className="cls-top">
         <h2 className="cls-title">Class</h2>
-        <span className="cls-day">{unit.date === today ? 'Today' : shortDate(unit.date)}</span>
+        {unit.date !== today && <span className="cls-day">{shortDate(unit.date)}</span>}
         {historyFailed && (
           <span className="cls-sync" role="alert">
             Couldn’t load lessons.{' '}
@@ -378,7 +384,6 @@ export default function ClassPage({ students = [], onSelectStudent }) {
         <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.text ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
           Notes
         </button>
-        <button type="button" className="cls-pad-btn cls-style-btn" onClick={toggleClay} aria-pressed={clay}>{clay ? 'Clay style: on' : 'Clay style'}</button>
       </header>
 
       {padOpen && note.loaded && <NotePad key={unit.key} unit={unit} savedText={note.text} onClose={() => setPadOpen(false)} />}
