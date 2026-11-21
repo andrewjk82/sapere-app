@@ -562,7 +562,10 @@ function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHom
         defaultSubject={lesson.subject}
         onChange={patchSessions}
       >
-        <div className="cls-flow">
+        <ClassProgressCard student={student} sessions={sessions} />
+      </ClassMonthCalendar>
+
+      <div className="cls-flow3">
           <article className="cls-card">
             <h3>Last lesson{lastLesson ? <small>{shortDate(lastLesson.date)} · {relative(lastLesson.date)}</small> : null}</h3>
             {!sessions ? <p className="cls-muted">Loading…</p> : !lastLesson ? <p className="cls-muted">No earlier lesson recorded.</p> : (
@@ -602,11 +605,8 @@ function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHom
               : <p className="cls-muted">Not scheduled.</p>}
           </article>
         </div>
-      </ClassMonthCalendar>
 
         <aside className="cls-side cls-side--row">
-          <ClassProgressCard student={student} sessions={sessions} />
-
           <HomeworkCard
             title={studentName}
             sessions={sessions}

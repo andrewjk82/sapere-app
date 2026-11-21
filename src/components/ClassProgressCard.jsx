@@ -19,7 +19,7 @@ export default function ClassProgressCard({ student, sessions }) {
   const [error, setError] = useState('');
   const [expanded, setExpanded] = useState(null);       // chapterId
 
-  const { topics } = useMemo(() => courseTopics(student || {}), [student]);
+  const { topics, year } = useMemo(() => courseTopics(student || {}), [student]);
   const derived = useMemo(() => (sessions ? deriveTopicStates(sessions, todayKey()) : new Map()), [sessions]);
 
   const overrides = useMemo(() => {
@@ -77,21 +77,29 @@ export default function ClassProgressCard({ student, sessions }) {
       <article className="cls-card cls-card--link" role="button" tabIndex={0} onClick={() => setOpen(true)} onKeyDown={toggleKey} aria-label="Progress details">
         <h3>Progress<small>Details ›</small></h3>
         {!sessions ? <p className="cls-muted">Loading…</p> : sum.total === 0 ? <p className="cls-muted">No course set for this student.</p> : (
-          <>
-            {now && <p className="cls-big">{now.code || now.title}</p>}
-            {now && <p className="cls-muted">{now.chapterTitle}</p>}
-            <div className="cls-bar" role="img" aria-label={`${pct}% done`}><i style={{ width: `${pct}%` }} /></div>
-            <p className="cls-muted"><strong>{sum.count.done}</strong> of {sum.total} topics done · {pct}%</p>
-            {inProgress > 0 && (
-              <p className="cls-muted cls-prog-line">
-                {[
-                  sum.count.notin && `${sum.count.notin} not in`,
-                  sum.count.check && `${sum.count.check} to check`,
-                  sum.count.mistakes && `${sum.count.mistakes} mistakes to review`,
-                ].filter(Boolean).join(' · ')}
-              </p>
-            )}
-          </>
+          <div className="cls-prog-body">
+            <div className="cls-ring" role="img" aria-label={`${pct}% of ${year || 'the course'} done`}>
+              <svg viewBox="0 0 160 160" width="100%" height="100%">
+                <circle cx="80" cy="80" r="68" className="cls-ring-track" />
+                <circle cx="80" cy="80" r="68" className="cls-ring-fill" strokeDasharray={`${(2 * Math.PI * 68 * pct) / 100} ${2 * Math.PI * 68}`} transform="rotate(-90 80 80)" />
+              </svg>
+              <div className="cls-ring-center"><strong>{pct}%</strong><span>{year ? `of ${year} done` : 'done'}</span></div>
+            </div>
+            <div className="cls-prog-meta">
+              {now && <p className="cls-big">{now.code || now.title}</p>}
+              {now && <p className="cls-muted">{now.chapterTitle}</p>}
+              <p className="cls-muted"><strong>{sum.count.done}</strong> of {sum.total} topics done</p>
+              {inProgress > 0 && (
+                <p className="cls-muted cls-prog-line">
+                  {[
+                    sum.count.notin && `${sum.count.notin} not in`,
+                    sum.count.check && `${sum.count.check} to check`,
+                    sum.count.mistakes && `${sum.count.mistakes} mistakes to review`,
+                  ].filter(Boolean).join(' · ')}
+                </p>
+              )}
+            </div>
+          </div>
         )}
       </article>
 

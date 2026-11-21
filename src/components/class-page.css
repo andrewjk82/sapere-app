@@ -132,7 +132,7 @@
 }
 
 /* Month calendar */
-.cls-cal-row { display: grid; grid-template-columns: minmax(340px, 1fr) minmax(0, 1.25fr); gap: 14px; margin-bottom: 14px; align-items: stretch; }
+.cls-cal-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; margin-bottom: 14px; align-items: stretch; }
 .cls-cal { padding: 12px 14px; display: flex; flex-direction: column; }
 .cls-cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; font-family: var(--font-heading); font-size: 0.95rem; color: #4b4870; }
 .cls-cal-head button { border: 0; background: none; color: #6d6a85; font: 600 1.1rem var(--font-sans); cursor: pointer; padding: 2px 8px; }
@@ -330,3 +330,26 @@
 .cls-prog-btns button.is-on { background: #8a70d4; color: #fff; }
 .cls-prog-btns button:disabled { opacity: 0.45; cursor: default; }
 @media (max-width: 700px) { .cls-prog-row { grid-template-columns: minmax(0, 1fr); } }
+
+/* Calendar | Progress side by side, then Last / Today / Next in three equal columns */
+.cls-cal-side { display: flex; }
+.cls-cal-side > .cls-card { flex: 1; display: flex; flex-direction: column; }
+.cls-flow3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; align-items: stretch; }
+.cls-side--row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .cls-flow3 { grid-template-columns: minmax(0, 1fr); } .cls-side--row { grid-template-columns: minmax(0, 1fr); } }
+
+.cls-prog-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; text-align: center; }
+.cls-ring { position: relative; width: min(100%, 220px); aspect-ratio: 1; }
+.cls-ring-track { fill: none; stroke: #ece6f7; stroke-width: 14; }
+.cls-ring-fill { fill: none; stroke: #4cc283; stroke-width: 14; stroke-linecap: round; }
+.cls-ring-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.cls-ring-center strong { font: 800 2.6rem 'Nunito', var(--font-heading); color: #1e1b4b; line-height: 1; }
+.cls-ring-center span { margin-top: 4px; font-size: 0.8rem; font-weight: 700; color: #8b8aa3; }
+.cls-prog-meta p { margin: 0 0 2px; }
+.cls--clay .cls-cal-side > .cls-card { background: #cdeccf; }
+.cls--clay .cls-ring-track { stroke: rgba(255,255,255,0.8); }
+.cls--clay .cls-ring-fill { stroke: #3fae6c; }
+.cls--clay .cls-ring-center strong { color: var(--clay-ink); }
+.cls--clay .cls-ring-center span { color: #6b5a52; }
+.cls--clay .cls-side--row > .cls-card:nth-child(1) { background: #ffe9a6; }
+.cls--clay .cls-side--row > .cls-card:nth-child(2) { background: #fbc9dc; }
