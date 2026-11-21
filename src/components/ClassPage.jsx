@@ -13,8 +13,8 @@ import './class-page.css';
 // - A group (several session docs sharing groupId + time): every student at a glance, the papers worked through in
 //   class (saved on each member's session as `papersCovered`) and what the group did last time.
 // - Notes: a notepad on every lesson, autosaved to class_notes/{lesson key} — admin-only by rules, because students
-//   can read their own session docs (so private notes must not live there). Was
-//   apart from `notes`, which the schedule and parent emails use).
+//   can read their own session docs (private notes must not live there).
+// - Month calendar (one student): pick a day to see/change its lessons, or add one on an empty day, in a modal.
 // Reads: a live listener on the next 8 days of sessions, one getDocs for the lesson's history, the live
 // admin_daily_summary for today and the earlier days of this week (cached for the tab).
 
@@ -447,20 +447,17 @@ function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, week
 
       {lessonNav}
 
-      {sessions && (
-        <ClassMonthCalendar
-          studentId={studentId}
-          student={student}
-          studentName={studentName}
-          lessons={sessions}
-          currentId={lesson.id}
-          defaultDate={lesson.date}
-          defaultSubject={lesson.subject}
-          onChange={patchSessions}
-        />
-      )}
-
-      <div className="cls-grid">
+      <ClassMonthCalendar
+        studentId={studentId}
+        student={student}
+        studentName={studentName}
+        lessons={sessions || []}
+        loading={!sessions}
+        currentId={lesson.id}
+        defaultDate={lesson.date}
+        defaultSubject={lesson.subject}
+        onChange={patchSessions}
+      >
         <div className="cls-flow">
           <article className="cls-card">
             <h3>Last lesson{lastLesson ? <small>{shortDate(lastLesson.date)} · {relative(lastLesson.date)}</small> : null}</h3>
@@ -494,8 +491,9 @@ function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, week
               : <p className="cls-muted">Not scheduled.</p>}
           </article>
         </div>
+      </ClassMonthCalendar>
 
-        <aside className="cls-side">
+        <aside className="cls-side cls-side--row">
           <article className="cls-card">
             <h3>Progress</h3>
             {current ? (
@@ -529,7 +527,6 @@ function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, week
             <p className="cls-muted">Today: {todayDaily === 'done' ? 'done' : todayDaily === 'part' ? 'started' : 'not yet'}{offline ? ' · offline' : ''}</p>
           </article>
         </aside>
-      </div>
     </>
   );
 }

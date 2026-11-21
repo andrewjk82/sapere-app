@@ -23,12 +23,13 @@ const notify = (student, studentId, subject, text) => {
   } catch { /* best effort */ }
 };
 
-export default function ClassMonthCalendar({ studentId, student, studentName, lessons, currentId, defaultDate, defaultSubject, onChange }) {
+export default function ClassMonthCalendar({ studentId, student, studentName, lessons, loading = false, currentId, defaultDate, defaultSubject, onChange, children }) {
   const [month, setMonth] = useState(() => { const d = new Date(`${defaultDate}T12:00:00`); d.setDate(1); return d; });
   const [selected, setSelected] = useState(defaultDate);
   const [editing, setEditing] = useState('');
   const [adding, setAdding] = useState(false);
   const [form, setForm] = useState({ date: '', startTime: '', endTime: '' });
+  const [modalDay, setModalDay] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -51,8 +52,20 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
   }, [month]);
 
   const shiftMonth = (n) => setMonth((m) => new Date(m.getFullYear(), m.getMonth() + n, 1));
-  const pickDay = (k) => { setSelected(k); setEditing(''); setAdding(false); setError(''); };
-  const dayLessons = byDay.get(selected) || [];
+  // The student's usual lesson length: the time of their latest lesson, used as the starting point for a new one.
+  const usualTimes = useMemo(() => {
+    const latest = [...(lessons || [])].filter((x) => x.startTime && x.date).sort((x, y) => y.date.localeCompare(x.date))[0];
+    return { startTime: latest?.startTime || '4:00 PM', endTime: latest?.endTime || '5:30 PM' };
+  }, [lessons]);
+  const closeModal = () => { setModalDay(''); setEditing(''); setAdding(false); setError(''); };
+  // A day with lessons opens them; an empty day opens the new-lesson form for that day.
+  const pickDay = (k) => {
+    if (loading) return;
+    setSelected(k); setError(''); setEditing(''); setModalDay(k);
+    if (byDay.has(k)) setAdding(false);
+    else { setAdding(true); setForm({ date: k, ...usualTimes }); }
+  };
+  const dayLessons = byDay.get(modalDay || selected) || [];
 
   const startMove = (s) => {
     setAdding(false); setError('');
@@ -62,7 +75,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
   const startAdd = () => {
     setEditing(''); setError(''); setAdding(true);
     const last = dayLessons[dayLessons.length - 1];
-    setForm({ date: selected, startTime: last?.startTime || '4:00 PM', endTime: last?.endTime || '5:30 PM' });
+    setForm({ date: modalDay || selected, startTime: last?.startTime || usualTimes.startTime, endTime: last?.endTime || usualTimes.endTime });
   };
 
   const saveMove = async (s) => {
@@ -87,7 +100,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
         `Your ${s.subject || 'lesson'} session has moved to ${form.date} at ${form.startTime}.`);
       setSelected(form.date);
       { const d = new Date(`${form.date}T12:00:00`); setMonth(new Date(d.getFullYear(), d.getMonth(), 1)); }
-      setEditing('');
+      closeModal();
     } catch {
       setError('Could not save. Check the connection and try again.');
     } finally { setBusy(false); }
@@ -109,7 +122,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
       notify(student, studentId, 'Your schedule has been updated',
         `Your ${data.subject} session has been scheduled for ${data.date} at ${data.startTime}.`);
       setSelected(form.date);
-      setAdding(false);
+      closeModal();
     } catch {
       setError('Could not save. Check the connection and try again.');
     } finally { setBusy(false); }
@@ -122,7 +135,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
       <label>Start<select value={form.startTime} onChange={(e) => setForm({ ...form, startTime: e.target.value })}>{options.map((t) => <option key={t}>{t}</option>)}</select></label>
       <label>End<select value={form.endTime} onChange={(e) => setForm({ ...form, endTime: e.target.value })}>{options.map((t) => <option key={t}>{t}</option>)}</select></label>
       <div className="cls-edit-actions">
-        <button type="button" className="cls-link" onClick={() => { setEditing(''); setAdding(false); setError(''); }}>Cancel</button>
+        <button type="button" className="cls-link" onClick={() => { if (dayLessons.length === 0) closeModal(); else { setEditing(''); setAdding(false); setError(''); } }}>Cancel</button>
         <button type="button" className="cls-save" disabled={busy} onClick={onSave}>{busy ? 'Saving…' : label}</button>
       </div>
     </div>
@@ -135,7 +148,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
           <strong>{month.toLocaleDateString('en-AU', { month: 'long', year: 'numeric' })}</strong>
           <span>
             <button type="button" aria-label="Previous month" onClick={() => shiftMonth(-1)}>‹</button>
-            <button type="button" className="cls-cal-today" onClick={() => { setMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1)); pickDay(todayKey); }}>Today</button>
+            <button type="button" className="cls-cal-today" onClick={() => { setMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1)); setSelected(todayKey); }}>Today</button>
             <button type="button" aria-label="Next month" onClick={() => shiftMonth(1)}>›</button>
           </span>
         </div>
@@ -160,26 +173,37 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
         </div>
       </div>
 
-      <div className="cls-card cls-cal-day-panel">
-        <h3>{longDay(selected)}</h3>
-        {dayLessons.length === 0 && !adding && <p className="cls-muted">No lesson this day.</p>}
-        {dayLessons.map((s) => (
-          <div key={s.id} className="cls-cal-lesson">
-            <div className="cls-cal-lesson-row">
-              <span>
-                <strong>{s.startTime}{s.endTime ? `–${s.endTime}` : ''}</strong>
-                <span className="cls-muted"> · {s.subject || 'Lesson'}{s.groupId && (s.groupStudentNames || []).length > 1 ? ' · group' : ''}</span>
-                {s.id === currentId && <em className="cls-cal-cur">showing now</em>}
-              </span>
-              {editing !== s.id && <button type="button" className="cls-link" onClick={() => startMove(s)}>Change</button>}
+      <div className="cls-cal-side">{children}</div>
+
+      {modalDay && (
+        <div className="cls-modal-back" onMouseDown={(e) => { if (e.target === e.currentTarget) closeModal(); }}>
+          <div className="cls-modal" role="dialog" aria-modal="true" aria-label={longDay(modalDay)}>
+            <div className="cls-modal-head">
+              <h3>{longDay(modalDay)}</h3>
+              <button type="button" className="cls-x" aria-label="Close" onClick={closeModal}>×</button>
             </div>
-            {editing === s.id && editor(() => saveMove(s), 'Save change')}
+            <p className="cls-muted cls-modal-for">{studentName}</p>
+            {dayLessons.length === 0 && !adding && <p className="cls-muted">No lesson this day.</p>}
+            {dayLessons.map((s) => (
+              <div key={s.id} className="cls-cal-lesson">
+                <div className="cls-cal-lesson-row">
+                  <span>
+                    <strong>{s.startTime}{s.endTime ? `–${s.endTime}` : ''}</strong>
+                    <span className="cls-muted"> · {s.subject || 'Lesson'}{s.groupId && (s.groupStudentNames || []).length > 1 ? ' · group' : ''}</span>
+                    {s.id === currentId && <em className="cls-cal-cur">showing now</em>}
+                  </span>
+                  {editing !== s.id && <button type="button" className="cls-link" onClick={() => startMove(s)}>Change</button>}
+                </div>
+                {editing === s.id && editor(() => saveMove(s), 'Save change')}
+              </div>
+            ))}
+            {adding && (dayLessons.length === 0 ? <p className="cls-muted">New lesson</p> : null)}
+            {adding && editor(saveAdd, 'Add lesson')}
+            {error && <p className="cls-flag" role="alert">{error}</p>}
+            {!adding && !editing && <button type="button" className="cls-link cls-cal-add" onClick={startAdd}>+ Add another lesson this day</button>}
           </div>
-        ))}
-        {adding && editor(saveAdd, 'Add lesson')}
-        {error && <p className="cls-flag" role="alert">{error}</p>}
-        {!adding && !editing && <button type="button" className="cls-link cls-cal-add" onClick={startAdd}>+ Add lesson on this day</button>}
-      </div>
+        </div>
+      )}
     </section>
   );
 }
