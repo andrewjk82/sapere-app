@@ -30,6 +30,27 @@
         }, true);
       })();
     </script>
+    <script>
+      // Boot diagnostics: if React has put nothing in #root after 7s, show what failed (instead of a blank page).
+      (function () {
+        var errs = [];
+        function add(m) { errs.push(String(m).slice(0, 300)); }
+        window.addEventListener('error', function (e) {
+          var t = e.target;
+          add(t && (t.src || t.href) ? 'load failed: ' + (t.src || t.href) : (e.message || 'error') + ' @' + (e.filename || '') + ':' + (e.lineno || ''));
+        }, true);
+        window.addEventListener('unhandledrejection', function (e) { add('promise: ' + (e.reason && (e.reason.message || e.reason))); });
+        setTimeout(function () {
+          var r = document.getElementById('root');
+          if (!r || r.childNodes.length) return;
+          var d = document.createElement('div');
+          d.style.cssText = 'padding:24px;font:14px system-ui;color:#4a2f2a;word-break:break-all';
+          d.innerHTML = '<b>Could not start the app.</b><br>Pull down to reload, or send this to your teacher:<pre style="white-space:pre-wrap;font-size:11px"></pre>';
+          d.querySelector('pre').textContent = (errs.join('\n') || 'no error captured') + '\n' + navigator.userAgent;
+          r.appendChild(d);
+        }, 7000);
+      })();
+    </script>
     <link rel="icon" type="image/png" sizes="32x32" href="/logo.png?v=4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Secret Study | Student Management</title>
