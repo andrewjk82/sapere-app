@@ -152,8 +152,10 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
             <button type="button" aria-label="Next month" onClick={() => shiftMonth(1)}>›</button>
           </span>
         </div>
-        <div className="cls-cal-grid">
+        <div className="cls-cal-wdrow">
           {WEEK.map((w, i) => <span key={i} className="cls-cal-wd">{w}</span>)}
+        </div>
+        <div className="cls-cal-grid">
           {cells.map((k, i) => {
             if (!k) return <span key={`b${i}`} />;
             const has = byDay.has(k);
