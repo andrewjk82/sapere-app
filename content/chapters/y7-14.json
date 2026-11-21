@@ -3305,6 +3305,454 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "t3-2022-y7-pa-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(10\\%\\) of \\(\\$350\\).",
+          "options": [
+            "\\(\\$35\\)",
+            "\\(\\$3.50\\)",
+            "\\(\\$3500\\)",
+            "\\(\\$45\\)"
+          ],
+          "answer": 0,
+          "hint": "Ten percent means one tenth.",
+          "steps": [
+            {
+              "explain": "Write 10% as one tenth.",
+              "work": "\\(10\\%=\\frac1{10}\\)"
+            },
+            {
+              "explain": "Find one tenth of 350.",
+              "work": "\\(350\\div10=35\\)"
+            },
+            {
+              "explain": "The amount is $35.",
+              "work": "\\(\\$35\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Tom received a mark of \\(23\\) out of \\(25\\) in a mathematics assessment. Find his mark in the assessment as a percentage.",
+          "options": [
+            "\\(92\\%\\)",
+            "\\(88\\%\\)",
+            "\\(23\\%\\)",
+            "\\(115\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Turn the fraction 23/25 into an equivalent fraction out of 100.",
+          "steps": [
+            {
+              "explain": "Write the score as a fraction.",
+              "work": "\\(\\frac{23}{25}\\)"
+            },
+            {
+              "explain": "Multiply numerator and denominator by 4.",
+              "work": "\\(\\frac{23}{25}=\\frac{92}{100}\\)"
+            },
+            {
+              "explain": "A fraction out of 100 gives a percentage.",
+              "work": "\\(92\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q10c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The school hall has \\(650\\) seats. If it is \\(80\\%\\) full, how many seats are vacant?",
+          "options": [
+            "\\(130\\)",
+            "\\(520\\)",
+            "\\(80\\)",
+            "\\(570\\)"
+          ],
+          "answer": 0,
+          "hint": "First find how many seats are occupied, then subtract from the total.",
+          "steps": [
+            {
+              "explain": "Find 80% of 650.",
+              "work": "\\(0.8\\times650=520\\)"
+            },
+            {
+              "explain": "Subtract occupied seats from total seats.",
+              "work": "\\(650-520=130\\)"
+            },
+            {
+              "explain": "So 130 seats are vacant.",
+              "work": "\\(130\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q10d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sarah drank \\(750\\text{ mL}\\) of water from her drink bottle after finishing her netball game. If her drink bottle had \\(1.25\\text{ L}\\) of water before the game, what percentage of the water did she drink after the game?",
+          "options": [
+            "\\(60\\%\\)",
+            "\\(75\\%\\)",
+            "\\(50\\%\\)",
+            "\\(40\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert litres to millilitres so both quantities use the same unit.",
+          "steps": [
+            {
+              "explain": "Convert 1.25 L to millilitres.",
+              "work": "\\(1.25\\text{ L}=1250\\text{ mL}\\)"
+            },
+            {
+              "explain": "Form the fraction drunk.",
+              "work": "\\(\\frac{750}{1250}=\\frac35\\)"
+            },
+            {
+              "explain": "Convert three fifths to a percentage.",
+              "work": "\\(\\frac35\\times100\\%=60\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q10e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following numbers in ascending order: \\(\\frac58,\\ 61.7\\%,\\ 0.661,\\ \\frac{13}{20}\\).",
+          "options": [
+            "\\(61.7\\%,\\ \\frac58,\\ \\frac{13}{20},\\ 0.661\\)",
+            "\\(\\frac58,\\ 61.7\\%,\\ \\frac{13}{20},\\ 0.661\\)",
+            "\\(0.661,\\ \\frac{13}{20},\\ \\frac58,\\ 61.7\\%\\)",
+            "\\(61.7\\%,\\ \\frac{13}{20},\\ \\frac58,\\ 0.661\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert every value to a decimal before comparing.",
+          "steps": [
+            {
+              "explain": "Convert each value to a decimal.",
+              "work": "\\(\\frac58=0.625,\\quad61.7\\%=0.617,\\quad\\frac{13}{20}=0.65\\)"
+            },
+            {
+              "explain": "Compare all four decimals.",
+              "work": "\\(0.617<0.625<0.650<0.661\\)"
+            },
+            {
+              "explain": "Return to the original forms in that order.",
+              "work": "\\(61.7\\%,\\ \\frac58,\\ \\frac{13}{20},\\ 0.661\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Great Lakes Senior College only has students in Year 11 or Year 12. There are 70 teachers and 560 students. Of these, 320 students are in Year 12. Find the ratio of teachers to students.",
+          "options": [
+            "\\(1:8\\)",
+            "\\(7:56\\)",
+            "\\(8:1\\)",
+            "\\(70:560\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the ratio in the requested order, then divide both terms by their highest common factor.",
+          "steps": [
+            {
+              "explain": "Start with teachers to students.",
+              "work": "\\(70:560\\)"
+            },
+            {
+              "explain": "Divide both terms by 70.",
+              "work": "\\(70\\div70:560\\div70=1:8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Great Lakes Senior College only has students in Year 11 or Year 12. There are 70 teachers and 560 students. Of these, 320 students are in Year 12. Find the ratio of Year 12 students to teachers.",
+          "options": [
+            "\\(32:7\\)",
+            "\\(7:32\\)",
+            "\\(320:70\\)",
+            "\\(16:7\\)"
+          ],
+          "answer": 0,
+          "hint": "Put Year 12 students first, then simplify.",
+          "steps": [
+            {
+              "explain": "Write the requested ratio.",
+              "work": "\\(320:70\\)"
+            },
+            {
+              "explain": "Divide both terms by 10.",
+              "work": "\\(320\\div10:70\\div10=32:7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q10c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Great Lakes Senior College only has students in Year 11 or Year 12. There are 70 teachers and 560 students. Of these, 320 students are in Year 12. Find the ratio of Year 11 students to total students.",
+          "options": [
+            "\\(3:7\\)",
+            "\\(4:7\\)",
+            "\\(3:4\\)",
+            "\\(7:3\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number in Year 11 before forming the ratio.",
+          "steps": [
+            {
+              "explain": "Subtract Year 12 students from all students.",
+              "work": "\\(560-320=240\\)"
+            },
+            {
+              "explain": "Write and simplify the ratio.",
+              "work": "\\(240:560=3:7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Fully simplify the ratio 25 minutes to 2 hours.",
+          "options": [
+            "\\(5:24\\)",
+            "\\(25:2\\)",
+            "\\(5:12\\)",
+            "\\(12:5\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert both quantities to the same unit before simplifying.",
+          "steps": [
+            {
+              "explain": "Convert 2 hours to minutes.",
+              "work": "\\(2\\text{ h}=120\\text{ min}\\)"
+            },
+            {
+              "explain": "Simplify the ratio.",
+              "work": "\\(25:120=5:24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 6:35 pm in 24-hour time.",
+          "options": [
+            "\\(18:35\\)",
+            "\\(06:35\\)",
+            "\\(16:35\\)",
+            "\\(20:35\\)"
+          ],
+          "answer": 0,
+          "hint": "For a pm time other than 12 pm, add 12 to the hour.",
+          "steps": [
+            {
+              "explain": "Change the hour to 24-hour time.",
+              "work": "\\(6+12=18\\)"
+            },
+            {
+              "explain": "Keep the minutes unchanged.",
+              "work": "\\(18:35\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q11c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the time 6 hours and 48 minutes after 11:37 am.",
+          "options": [
+            "\\(6:25\\text{ pm}\\)",
+            "\\(5:25\\text{ pm}\\)",
+            "\\(6:15\\text{ pm}\\)",
+            "\\(5:15\\text{ pm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the minutes first; if they make 60 or more, exchange 60 minutes for one hour.",
+          "steps": [
+            {
+              "explain": "Add 48 minutes.",
+              "work": "\\(11{:}37+48\\text{ min}=12{:}25\\text{ pm}\\)"
+            },
+            {
+              "explain": "Add the remaining 6 hours.",
+              "work": "\\(12{:}25\\text{ pm}+6\\text{ h}=6{:}25\\text{ pm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Cici and Tom divide a prize in the ratio 3:2. If Tom receives $80, how much does Cici receive?",
+          "options": [
+            "\\(\\$120\\)",
+            "\\(\\$80\\)",
+            "\\(\\$200\\)",
+            "\\(\\$53.33\\)"
+          ],
+          "answer": 0,
+          "hint": "Tom’s 2 parts total $80; find one part first.",
+          "steps": [
+            {
+              "explain": "Find the value of one part.",
+              "work": "\\(\\$80\\div2=\\$40\\)"
+            },
+            {
+              "explain": "Cici receives 3 parts.",
+              "work": "\\(3\\times\\$40=\\$120\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many litres of petrol can you buy with $50 if petrol costs 212 cents/L. Round your answer to 1 decimal place.",
+          "options": [
+            "\\(23.6\\text{ L}\\)",
+            "\\(10.6\\text{ L}\\)",
+            "\\(2.4\\text{ L}\\)",
+            "\\(236\\text{ L}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert the price to dollars per litre, then divide the money by the price.",
+          "steps": [
+            {
+              "explain": "Convert cents to dollars.",
+              "work": "\\(212\\text{ cents}=\\$2.12\\)"
+            },
+            {
+              "explain": "Divide money by price per litre.",
+              "work": "\\(\\$50\\div\\$2.12=23.5849\\ldots\\text{ L}\\)"
+            },
+            {
+              "explain": "Round to one decimal place.",
+              "work": "\\(23.6\\text{ L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q12c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A car travels at 65km/h. How many minutes will it take to travel 14km? Round your answer to the nearest minute.",
+          "options": [
+            "\\(13\\text{ min}\\)",
+            "\\(11\\text{ min}\\)",
+            "\\(22\\text{ min}\\)",
+            "\\(14\\text{ min}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use time = distance ÷ speed, then convert hours to minutes.",
+          "steps": [
+            {
+              "explain": "Find the time in hours.",
+              "work": "\\(t=\\frac{14}{65}\\text{ h}=0.21538\\ldots\\text{ h}\\)"
+            },
+            {
+              "explain": "Convert hours to minutes.",
+              "work": "\\(0.21538\\ldots\\times60=12.923\\ldots\\text{ min}\\)"
+            },
+            {
+              "explain": "Round to the nearest minute.",
+              "work": "\\(13\\text{ min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
         }
       ]
     },

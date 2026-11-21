@@ -1,0 +1,2242 @@
+{
+  "chapterId": "y6-4",
+  "title": "Chapter 4: Multiplication and division",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-4a",
+      "code": "4A",
+      "title": "Mental strategies for multiplication",
+      "questions": [
+        {
+          "id": "y6-wn-q9a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the product:\n\\(13 \\times 5\\)",
+          "options": [
+            "\\(75\\)",
+            "\\(65\\)",
+            "\\(60\\)",
+            "\\(55\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 3 by 5, then multiply 10 by 5, and add the results.",
+          "solution": "13 x 5 = (10 + 3) x 5 = 50 + 15 = 65.",
+          "steps": [
+            {
+              "explain": "Decompose 13 into tens and units.",
+              "work": "\\(13 = 10 + 3\\)"
+            },
+            {
+              "explain": "Distribute the multiplication by 5.",
+              "work": "\\((10 \\times 5) + (3 \\times 5)\\)"
+            },
+            {
+              "explain": "Evaluate the products and add them together.",
+              "work": "\\(50 + 15 = 65\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the product:\n\\(16 \\times 7\\)",
+          "options": [
+            "\\(122\\)",
+            "\\(112\\)",
+            "\\(116\\)",
+            "\\(102\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 6 by 7 (42, carry 4), then multiply 1 by 7 and add the carry.",
+          "solution": "16 x 7 = (10 + 6) x 7 = 70 + 42 = 112.",
+          "steps": [
+            {
+              "explain": "Decompose 16 into tens and units.",
+              "work": "\\(16 = 10 + 6\\)"
+            },
+            {
+              "explain": "Distribute the multiplication by 7.",
+              "work": "\\((10 \\times 7) + (6 \\times 7)\\)"
+            },
+            {
+              "explain": "Evaluate the products and add them together.",
+              "work": "\\(70 + 42 = 112\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the product:\n\\(15 \\times 8\\)",
+          "options": [
+            "\\(130\\)",
+            "\\(120\\)",
+            "\\(100\\)",
+            "\\(110\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 15 by 8, or use doubling/halving: 15 x 8 = 30 x 4.",
+          "solution": "15 x 8 = (10 + 5) x 8 = 80 + 40 = 120.",
+          "steps": [
+            {
+              "explain": "Apply doubling and halving to simplify the multiplication.",
+              "work": "\\(15 \\times 8 = (15 \\times 2) \\times (8 \\div 2)\\)"
+            },
+            {
+              "explain": "Evaluate the simplified expression.",
+              "work": "\\(30 \\times 4 = 120\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the product:\n\\(37 \\times 6\\)",
+          "options": [
+            "\\(226\\)",
+            "\\(212\\)",
+            "\\(222\\)",
+            "\\(182\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 7 by 6, then multiply 30 by 6.",
+          "solution": "37 x 6 = 222.",
+          "steps": [
+            {
+              "explain": "Multiply units: 7 x 6 = 42 (carry 4).",
+              "work": "\\(7 \\times 6 = 42\\)"
+            },
+            {
+              "explain": "Multiply tens and add carry: (3 x 6) + 4 = 22.",
+              "work": "\\((3 \\times 6) + 4 = 22\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the product:\n\\(48 \\times 10\\)",
+          "options": [
+            "\\(480\\)",
+            "\\(48\\)",
+            "\\(4800\\)",
+            "\\(408\\)"
+          ],
+          "answer": 0,
+          "hint": "To multiply by 10, append a zero to the end of the number.",
+          "solution": "48 x 10 = 480.",
+          "steps": [
+            {
+              "explain": "Multiply by 10 by shifting decimal place.",
+              "work": "\\(48 \\times 10 = 480\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-4b",
+      "code": "4B",
+      "title": "Breaking a multiplication apart",
+      "questions": []
+    },
+    {
+      "topicId": "y6-4c",
+      "code": "4C",
+      "title": "The multiplication algorithm",
+      "questions": [
+        {
+          "id": "y6-wn-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: $2345 \\times 168$",
+          "options": [
+            "433356",
+            "413658",
+            "354564",
+            "393960"
+          ],
+          "answer": 3,
+          "hint": "Multiply $2345$ by each digit of $168$ ($8$, then $60$, then $100$) and add the partial products.",
+          "solution": "Partial products:\n- $2345 \\times 8 = 18\\,760$\n- $2345 \\times 60 = 140\\,700$\n- $2345 \\times 100 = 234\\,500$\n\nSum of partial products: $18\\,760 + 140\\,700 + 234\\,500 = 393\\,960$.",
+          "steps": [
+            {
+              "explain": "Multiply \\(2345\\) by the units digit (\\(8\\)).",
+              "work": "2345 \\times 8 = 18,760"
+            },
+            {
+              "explain": "Multiply \\(2345\\) by the tens digit (\\(6\\)), adding a zero placeholder.",
+              "work": "2345 \\times 60 = 140,700"
+            },
+            {
+              "explain": "Multiply \\(2345\\) by the hundreds digit (\\(1\\)), adding two zero placeholders.",
+              "work": "2345 \\times 100 = 234,500"
+            },
+            {
+              "explain": "Sum the three partial products.",
+              "work": "\\begin{array}{r l} 18,760 & \\\\ 140,700 & \\\\ + \\quad 234,500 & \\\\ \\hline \\mathbf{393,960} & \\end{array}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q36",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Multiply: $234 \\times 16$",
+          "options": [
+            "3370",
+            "4118",
+            "3744",
+            "3931"
+          ],
+          "answer": 2,
+          "hint": "Multiply $234$ by $6$, then multiply $234$ by $10$, and add the results.",
+          "solution": "1. $234 \\times 6 = 1\\,404$\n2. $234 \\times 10 = 2\\,340$\n\nSum: $1\\,404 + 2\\,340 = 3\\,744$.",
+          "steps": [
+            {
+              "explain": "Calculate the first partial product (\\(234 \\times 6\\)).",
+              "work": "234 \\times 6 = 1,404"
+            },
+            {
+              "explain": "Calculate the second partial product (\\(234 \\times 10\\)).",
+              "work": "234 \\times 10 = 2,340"
+            },
+            {
+              "explain": "Sum the two partial products.",
+              "work": "\\begin{array}{r l} 1,404 & \\\\ + \\quad 2,340 & \\\\ \\hline \\mathbf{3,744} & \\end{array}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q40",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Multiply: $84 \\times 13$",
+          "options": [
+            "1147",
+            "1092",
+            "1201",
+            "983"
+          ],
+          "answer": 1,
+          "hint": "You can multiply $84 \\times 10$ and $84 \\times 3$, then add them.",
+          "solution": "1. $84 \\times 10 = 840$\n2. $84 \\times 3 = 252$\n\nSum: $840 + 252 = 1\\,092$.",
+          "steps": [
+            {
+              "explain": "Multiply by the units digit (\\(84 \\times 3\\)).",
+              "work": "84 \\times 3 = 252"
+            },
+            {
+              "explain": "Multiply by the tens digit (\\(84 \\times 10\\)).",
+              "work": "84 \\times 10 = 840"
+            },
+            {
+              "explain": "Add the partial products.",
+              "work": "252 + 840 = 1,092"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the product:\n\\(59 \\times 13\\)",
+          "options": [
+            "\\(667\\)",
+            "\\(757\\)",
+            "\\(767\\)",
+            "\\(763\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up long multiplication.",
+          "solution": "59 x 13 = 767.",
+          "steps": [
+            {
+              "explain": "Multiply 59 by 3.",
+              "work": "\\(59 \\times 3 = 177\\)"
+            },
+            {
+              "explain": "Multiply 59 by 10.",
+              "work": "\\(59 \\times 10 = 590\\)"
+            },
+            {
+              "explain": "Add the two partial products.",
+              "work": "\\(177 + 590 = 767\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7a_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\n\\\\(73 \\\\times 14\\\\)",
+          "options": [
+            "\\\\(1032\\\\)",
+            "\\\\(922\\\\)",
+            "\\\\(1022\\\\)",
+            "\\\\(1012\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply \\\\(73\\\\) by \\\\(4\\\\), then multiply \\\\(73\\\\) by \\\\(10\\\\), and add the results.",
+          "solution": "Multiply: \n\\\\(73 \\\\times 4 = 292\\\\)\n\\\\(73 \\\\times 10 = 730\\\\)\n\\\\(292 + 730 = 1022\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply the units digit of the multiplier: \\\\(73 \\\\times 4\\\\).",
+              "work": "\\\\(73 \\\\times 4 = 292\\\\)"
+            },
+            {
+              "explain": "Multiply by the tens digit of the multiplier (adding a trailing zero): \\\\(73 \\\\times 10\\\\).",
+              "work": "\\\\(73 \\\\times 10 = 730\\\\)"
+            },
+            {
+              "explain": "Sum the two partial products.",
+              "work": "\\\\(292 + 730 = 1022\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7b_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\n\\\\(67 \\\\times 18\\\\)",
+          "options": [
+            "\\\\(1196\\\\)",
+            "\\\\(1206\\\\)",
+            "\\\\(1216\\\\)",
+            "\\\\(1226\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply \\\\(67\\\\) by \\\\(8\\\\) first, then multiply \\\\(67\\\\) by \\\\(10\\\\), and add the two sums.",
+          "solution": "Multiply:\n\\\\(67 \\\\times 8 = 536\\\\)\n\\\\(67 \\\\times 10 = 670\\\\)\n\\\\(536 + 670 = 1206\\\\).",
+          "steps": [
+            {
+              "explain": "Calculate the first partial product: \\\\(67 \\\\times 8\\\\).",
+              "work": "\\\\(67 \\\\times 8 = 536\\\\)"
+            },
+            {
+              "explain": "Calculate the second partial product: \\\\(67 \\\\times 10\\\\).",
+              "work": "\\\\(67 \\\\times 10 = 670\\\\)"
+            },
+            {
+              "explain": "Add the partial products to find the final result.",
+              "work": "\\\\(536 + 670 = 1206\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\n\\\\(45 \\\\times 23\\\\)",
+          "options": [
+            "\\\\(1025\\\\)",
+            "\\\\(935\\\\)",
+            "\\\\(1045\\\\)",
+            "\\\\(1035\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply \\\\(45\\\\) by \\\\(3\\\\), then multiply \\\\(45\\\\) by \\\\(20\\\\), and add the results.",
+          "solution": "Multiply:\n\\\\(45 \\\\times 3 = 135\\\\)\n\\\\(45 \\\\times 20 = 900\\\\)\n\\\\(135 + 900 = 1035\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply \\\\(45\\\\) by the units value \\\\(3\\\\).",
+              "work": "\\\\(45 \\\\times 3 = 135\\\\)"
+            },
+            {
+              "explain": "Multiply \\\\(45\\\\) by the tens value \\\\(20\\\\).",
+              "work": "\\\\(45 \\\\times 20 = 900\\\\)"
+            },
+            {
+              "explain": "Sum the two values to get the final product.",
+              "work": "\\\\(135 + 900 = 1035\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\\n\\\\(37 \\\\times 28\\\\)",
+          "options": [
+            "\\\\(936\\\\)",
+            "\\\\(1136\\\\)",
+            "\\\\(1036\\\\)",
+            "\\\\(1026\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 37 by 8, then by 20, and add the two products.",
+          "solution": "Multiply using partial products:\n- \\\\(37 \\\\times 8 = 296\\\\)\n- \\\\(37 \\\\times 20 = 740\\\\)\n\nAdd the results: \\\\(296 + 740 = 1036\\\\).",
+          "steps": [
+            {
+              "explain": "Break down 28 into place value components.",
+              "work": "\\\\(28 = 20 + 8\\\\)"
+            },
+            {
+              "explain": "Find partial products.",
+              "work": "\\\\(37 \\\\times 8 = 296, quad 37 \\\\times 20 = 740\\\\)"
+            },
+            {
+              "explain": "Sum partial products.",
+              "work": "\\\\(296 + 740 = 1036\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\\n\\\\(145 \\\\times 13\\\\)",
+          "options": [
+            "\\\\(1875\\\\)",
+            "\\\\(1785\\\\)",
+            "\\\\(1985\\\\)",
+            "\\\\(1885\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 145 by 3, then by 10, and sum the partial products.",
+          "solution": "Calculate the multiplication:\n- \\\\(145 \\\\times 3 = 435\\\\)\n- \\\\(145 \\\\times 10 = 1450\\\\)\n\nAdd: \\\\(435 + 1450 = 1885\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose 13 into tens and ones.",
+              "work": "\\\\(13 = 10 + 3\\\\)"
+            },
+            {
+              "explain": "Multiply 145 by each component.",
+              "work": "\\\\(145 \\\\times 3 = 435, quad 145 \\\\times 10 = 1450\\\\)"
+            },
+            {
+              "explain": "Add the two values.",
+              "work": "\\\\(435 + 1450 = 1885\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\\n\\\\(632 \\\\times 47\\\\)",
+          "options": [
+            "\\\\(30704\\\\)",
+            "\\\\(28704\\\\)",
+            "\\\\(29704\\\\)",
+            "\\\\(29604\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 632 by 7, then by 40, and add the two results.",
+          "solution": "Calculate partial products:\n- \\\\(632 \\\\times 7 = 4424\\\\)\n- \\\\(632 \\\\times 40 = 25280\\\\)\n\nAdd: \\\\(4424 + 25280 = 29704\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose 47 into place components.",
+              "work": "\\\\(47 = 40 + 7\\\\)"
+            },
+            {
+              "explain": "Determine both partial products.",
+              "work": "\\\\(632 \\\\times 7 = 4424, quad 632 \\\\times 40 = 25280\\\\)"
+            },
+            {
+              "explain": "Combine partial products.",
+              "work": "\\\\(4424 + 25280 = 29704\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\\n\\\\(1684 \\\\times 376\\\\)",
+          "options": [
+            "\\\\(633\\ 184\\\\)",
+            "\\\\(633\\ 284\\\\)",
+            "\\\\(533\\ 184\\\\)",
+            "\\\\(632\\ 184\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the partial products of 1684 with 6, 70, and 300, then sum them up.",
+          "solution": "Perform multiplication using partial products:\n- \\\\(1684 \\\\times 6 = 10104\\\\)\n- \\\\(1684 \\\\times 70 = 117880\\\\)\n- \\\\(1684 \\\\times 300 = 505200\\\\)\n\nSum: \\\\(10104 + 117880 + 505200 = 633184\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose the multiplier 376 into place value terms.",
+              "work": "\\\\(376 = 300 + 70 + 6\\\\)"
+            },
+            {
+              "explain": "Multiply 1684 by each component term.",
+              "work": "\\\\(\\begin{aligned} 1684 \\\\times 6 &= 10104 \\\\ 1684 \\\\times 70 &= 117880 \\\\ 1684 \\\\times 300 &= 505200 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Sum all partial products to find the final result.",
+              "work": "\\\\(10104 + 117880 + 505200 = 633184\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\\n\\\\(5972 \\\\times 403\\\\)",
+          "options": [
+            "\\\\(2\\ 406\\ 716\\\\)",
+            "\\\\(2\\ 396\\ 716\\\\)",
+            "\\\\(2\\ 416\\ 716\\\\)",
+            "\\\\(2\\ 406\\ 816\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 5972 by 3, and then 5972 by 400. Sum the results.",
+          "solution": "Perform multiplication using partial products:\n- \\\\(5972 \\\\times 3 = 17916\\\\)\n- \\\\(5972 \\\\times 400 = 2388800\\\\)\n\nSum: \\\\(17916 + 2388800 = 2406716\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose 403 into its place components, noting the zero tens.",
+              "work": "\\\\(403 = 400 + 3\\\\)"
+            },
+            {
+              "explain": "Calculate the partial products.",
+              "work": "\\\\(5972 \\\\times 3 = 17916, quad 5972 \\\\times 400 = 2388800\\\\)"
+            },
+            {
+              "explain": "Add the partial products to find the final product.",
+              "work": "\\\\(17916 + 2388800 = 2406716\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the product:\\n\\\\(8916 \\\\times 765\\\\)",
+          "options": [
+            "\\\\(6\\ 820\\ 840\\\\)",
+            "\\\\(6\\ 820\\ 740\\\\)",
+            "\\\\(6\\ 810\\ 740\\\\)",
+            "\\\\(7\\ 820\\ 740\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the partial products of 8916 with 5, 60, and 700, then sum them up.",
+          "solution": "Perform multiplication using partial products:\n- \\\\(8916 \\\\times 5 = 44580\\\\)\n- \\\\(8916 \\\\times 60 = 534960\\\\)\n- \\\\(8916 \\\\times 700 = 6241200\\\\)\n\nSum: \\\\(44580 + 534960 + 6241200 = 6820740\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose 765 into place values.",
+              "work": "\\\\(765 = 700 + 60 + 5\\\\)"
+            },
+            {
+              "explain": "Calculate each partial product.",
+              "work": "\\\\(\\begin{aligned} 8916 \\\\times 5 &= 44580 \\\\ 8916 \\\\times 60 &= 534960 \\\\ 8916 \\\\times 700 &= 6241200 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Sum all three partial products.",
+              "work": "\\\\(44580 + 534960 + 6241200 = 6820740\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-4d",
+      "code": "4D",
+      "title": "Connecting multiplication and division",
+      "questions": [
+        {
+          "id": "y6-wn-q10a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the quotient:\n\\(48 \\div 8\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(7\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Recall the multiplication facts for 8: what number multiplied by 8 equals 48?",
+          "solution": "8 x 6 = 48. Therefore, 48 / 8 = 6.",
+          "steps": [
+            {
+              "explain": "Recall related multiplication facts.",
+              "work": "\\(8 \\times 6 = 48\\)"
+            },
+            {
+              "explain": "Evaluate the division.",
+              "work": "\\(48 \\div 8 = 6\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the quotient:\n\\(54 \\div 3\\)",
+          "options": [
+            "\\(21\\)",
+            "\\(18\\)",
+            "\\(17\\)",
+            "\\(16\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 50 by 3 (gives 10 with remainder 2) and combine with the remaining units.",
+          "solution": "54 / 3 = (30 + 24) / 3 = 10 + 8 = 18.",
+          "steps": [
+            {
+              "explain": "Decompose 54 into multiples of 3.",
+              "work": "\\(54 = 30 + 24\\)"
+            },
+            {
+              "explain": "Divide each part by 3.",
+              "work": "\\((30 \\div 3) + (24 \\div 3)\\)"
+            },
+            {
+              "explain": "Sum the quotients.",
+              "work": "\\(10 + 8 = 18\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the quotient:\n\\(78 \\div 6\\)",
+          "options": [
+            "\\(13\\)",
+            "\\(16\\)",
+            "\\(14\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "Decompose 78 into 60 and 18, and divide both parts by 6.",
+          "solution": "78 / 6 = (60 + 18) / 6 = 10 + 3 = 13.",
+          "steps": [
+            {
+              "explain": "Decompose 78 into parts that are multiples of 6.",
+              "work": "\\(78 = 60 + 18\\)"
+            },
+            {
+              "explain": "Divide each part by 6.",
+              "work": "\\((60 \\div 6) + (18 \\div 6)\\)"
+            },
+            {
+              "explain": "Sum the quotients.",
+              "work": "\\(10 + 3 = 13\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the quotient:\n\\(51 \\div 3\\)",
+          "options": [
+            "\\(17\\)",
+            "\\(18\\)",
+            "\\(21\\)",
+            "\\(16\\)"
+          ],
+          "answer": 0,
+          "hint": "Use short division.",
+          "solution": "51 / 3 = 17.",
+          "steps": [
+            {
+              "explain": "Divide the tens: 5 / 3 = 1 with remainder 2.",
+              "work": "\\(5 \\div 3 = 1 \\text{ r } 2\\)"
+            },
+            {
+              "explain": "Divide the remaining units: 21 / 3 = 7.",
+              "work": "\\(21 \\div 3 = 7\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the quotient:\n\\(84 \\div 7\\)",
+          "options": [
+            "\\(13\\)",
+            "\\(12\\)",
+            "\\(11\\)",
+            "\\(14\\)"
+          ],
+          "answer": 1,
+          "hint": "Use standard division tables.",
+          "solution": "84 / 7 = 12.",
+          "steps": [
+            {
+              "explain": "Divide the tens: 8 / 7 = 1 with remainder 1.",
+              "work": "\\(8 \\div 7 = 1 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Divide the remaining units: 14 / 7 = 2.",
+              "work": "\\(14 \\div 7 = 2\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8a_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the quotient:\n\\\\(68 \\\\div 4\\\\)",
+          "options": [
+            "\\\\(18\\\\)",
+            "\\\\(15\\\\)",
+            "\\\\(16\\\\)",
+            "\\\\(17\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the tens column first: \\\\(6 \\\\div 4 = 1\\\\) remainder \\\\(2\\\\). Carry over the remainder to make \\\\(28\\\\).",
+          "solution": "Perform short division:\n1. Tens: \\\\(6 \\\\div 4 = 1\\\\) with remainder \\\\(2\\\\)\n2. Ones: \\\\(28 \\\\div 4 = 7\\\\)\n\n\\\\(68 \\\\div 4 = 17\\\\).",
+          "steps": [
+            {
+              "explain": "Divide the tens digit by 4. \\\\(6 \\\\div 4 = 1\\\\) with a remainder of 2.",
+              "work": "\\\\(6 \\\\div 4 = 1 \\\\text{ R } 2\\\\)"
+            },
+            {
+              "explain": "Combine the remainder 2 (which is 2 tens) with the units digit 8 to get 28, then divide by 4.",
+              "work": "\\\\(28 \\\\div 4 = 7\\\\)"
+            },
+            {
+              "explain": "Combine the quotient values.",
+              "work": "\\\\(68 \\\\div 4 = 17\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8b_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the quotient:\n\\\\(91 \\\\div 7\\\\)",
+          "options": [
+            "\\\\(13\\\\)",
+            "\\\\(14\\\\)",
+            "\\\\(15\\\\)",
+            "\\\\(12\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the tens digit first: \\\\(9 \\\\div 7 = 1\\\\) remainder \\\\(2\\\\). Carry the remainder to the units column to make \\\\(21\\\\).",
+          "solution": "Divide:\n1. Tens: \\\\(9 \\\\div 7 = 1\\\\) with remainder \\\\(2\\\\)\n2. Ones: \\\\(21 \\\\div 7 = 3\\\\)\n\n\\\\(91 \\\\div 7 = 13\\\\).",
+          "steps": [
+            {
+              "explain": "Divide the tens digit 9 by 7. This goes 1 time with a remainder of 2.",
+              "work": "\\\\(9 \\\\div 7 = 1 \\\\text{ R } 2\\\\)"
+            },
+            {
+              "explain": "Combine the remainder 2 with the units digit 1 to get 21. Divide 21 by 7.",
+              "work": "\\\\(21 \\\\div 7 = 3\\\\)"
+            },
+            {
+              "explain": "Combine the values to state the final quotient.",
+              "work": "\\\\(91 \\\\div 7 = 13\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-4e",
+      "code": "4E",
+      "title": "The long division algorithm",
+      "questions": [
+        {
+          "id": "y6-wn-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder of the division: $17\\,459 \\div 25$",
+          "options": [
+            "Quotient: 698, Remainder: 9",
+            "Quotient: 697, Remainder: 34",
+            "Quotient: 698, Remainder: 19",
+            "Quotient: 699, Remainder: 4"
+          ],
+          "answer": 0,
+          "hint": "Use long division. Find how many times $25$ goes into $174$, then pull down digits step by step.",
+          "solution": "1. $174 \\div 25 = 6$ remainder $24$\n2. Pull down $5 \\rightarrow 245 \\div 25 = 9$ remainder $20$\n3. Pull down $9 \\rightarrow 209 \\div 25 = 8$ remainder $9$\n\nThus, the quotient is $698$ and remainder is $9$. Check: $698 \\times 25 + 9 = 17\\,450 + 9 = 17\\,459$.",
+          "steps": [
+            {
+              "explain": "Perform long division step-by-step.",
+              "work": "\\begin{array}{r|l} \\mathbf{698} & \\text{quotient} \\\\ 25 \\overline{) 17,459} & \\\\ -150 & (25 \\times 6) \\\\ \\hline 245 & \\\\ -225 & (25 \\times 9) \\\\ \\hline 209 & \\\\ -200 & (25 \\times 8) \\\\ \\hline \\mathbf{9} & \\text{remainder} \\end{array}"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q37",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the remainder when $586$ is divided by $15$?",
+          "options": [
+            "1",
+            "3",
+            "2",
+            "4"
+          ],
+          "answer": 0,
+          "hint": "Find how many times $15$ goes into $586$ by performing division. The amount left over is the remainder.",
+          "solution": "1. $58 \\div 15 = 3$ remainder $13$\n2. Bring down $6 \\rightarrow 136 \\div 15 = 9$ remainder $1$\n\nSo $586 = 39 \\times 15 + 1$. The remainder is $1$.",
+          "steps": [
+            {
+              "explain": "Divide \\(586\\) by \\(15\\) using long or short division.",
+              "work": "586 \\div 15 = 39 \\quad \\text{with a remainder}"
+            },
+            {
+              "explain": "Find the remainder by calculating the difference from the nearest multiple of 15.",
+              "work": "\\begin{aligned} 15 \\times 39 &= 585 \\\\ \\text{Remainder} &= 586 - 585 = 1 \\end{aligned}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the quotient and remainder of the division:\\n\\\\(745 \\\\div 10\\\\)",
+          "options": [
+            "\\\\(74\\\\) remainder \\\\(5\\\\)",
+            "\\\\(7\\\\) remainder \\\\(45\\\\)",
+            "\\\\(74\\\\) remainder \\\\(0\\\\)",
+            "\\\\(75\\\\) remainder \\\\(5\\\\)"
+          ],
+          "answer": 0,
+          "hint": "When dividing by 10, the units digit is the remainder and the other digits form the quotient.",
+          "solution": "Divide 745 by 10:\n- \\\\(745 = 740 + 5 = 74 \\\\times 10 + 5\\\\).\n- Quotient is \\\\(74\\\\) and remainder is \\\\(5\\\\).",
+          "steps": [
+            {
+              "explain": "Represent the dividend as a sum of a multiple of 10 and a unit remainder.",
+              "work": "\\\\(745 = 740 + 5\\\\)"
+            },
+            {
+              "explain": "Divide the multiple of 10 by 10 to find the quotient.",
+              "work": "\\\\(740 \\div 10 = 74\\\\)"
+            },
+            {
+              "explain": "Identify the leftover units part as the remainder.",
+              "work": "\\\\(\\text{Remainder} = 5\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the quotient and remainder of the division:\\n\\\\(386 \\\\div 15\\\\)",
+          "options": [
+            "\\\\(26\\\\) remainder \\\\(11\\\\)",
+            "\\\\(25\\\\) remainder \\\\(6\\\\)",
+            "\\\\(25\\\\) remainder \\\\(11\\\\)",
+            "\\\\(24\\\\) remainder \\\\(11\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Use long division. Find how many times 15 goes into 38, then calculate the remaining division.",
+          "solution": "Perform long division:\n1. \\\\(38 \\div 15 = 2\\\\) remainder \\\\(8\\\\).\n2. Bring down 6 to make 86.\n3. \\\\(86 \\div 15 = 5\\\\) remainder \\\\(11\\\\) (since \\\\(15 \\\\times 5 = 75\\\\)).\n4. Quotient: \\\\(25\\\\), Remainder: \\\\(11\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the highest multiple of 15 that is less than 380.",
+              "work": "\\\\(15 \\\\times 20 = 300, quad 15 \\\\times 25 = 375\\\\)"
+            },
+            {
+              "explain": "Subtract the multiple value from the total dividend to find the remainder.",
+              "work": "\\\\(386 - 375 = 11\\\\)"
+            },
+            {
+              "explain": "Confirm that the remainder 11 is less than the divisor 15.",
+              "work": "\\\\(11 < 15 \\implies \\text{Quotient} = 25,\\ \\text{Remainder} = 11\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the quotient and remainder of the division:\\n\\\\(490 \\\\div 18\\\\)",
+          "options": [
+            "\\\\(27\\\\) remainder \\\\(2\\\\)",
+            "\\\\(26\\\\) remainder \\\\(8\\\\)",
+            "\\\\(27\\\\) remainder \\\\(4\\\\)",
+            "\\\\(28\\\\) remainder \\\\(4\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find how many times 18 goes into 49, then compute remainder step-by-step.",
+          "solution": "Perform long division:\n1. \\\\(49 \\div 18 = 2\\\\) remainder \\\\(13\\\\).\n2. Bring down 0 to make 130.\n3. \\\\(130 \\div 18 = 7\\\\) (since \\\\(18 \\\\times 7 = 126\\\\)).\n4. Remainder: \\\\(130 - 126 = 4\\\\).\n5. Quotient: \\\\(27\\\\), Remainder: \\\\(4\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the multiple of 18 that is close to 490.",
+              "work": "\\\\(18 \\\\times 20 = 360, quad 18 \\\\times 27 = 486\\\\)"
+            },
+            {
+              "explain": "Subtract this close multiple from the dividend.",
+              "work": "\\\\(490 - 486 = 4\\\\)"
+            },
+            {
+              "explain": "Synthesize the quotient and remainder details.",
+              "work": "\\\\(\\text{Quotient} = 27,\\ \\text{Remainder} = 4\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the quotient and remainder of the division:\\n\\\\(15 382 \\\\div 32\\\\)",
+          "options": [
+            "\\\\(480\\\\) remainder \\\\(12\\\\)",
+            "\\\\(480\\\\) remainder \\\\(22\\\\)",
+            "\\\\(481\\\\) remainder \\\\(22\\\\)",
+            "\\\\(48\\\\) remainder \\\\(22\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Use long division. Check how many times 32 goes into 153 first.",
+          "solution": "Divide 15382 by 32:\n1. \\\\(153 \\div 32 = 4\\\\) remainder \\\\(25\\\\) (since \\\\(32 \\\\times 4 = 128\\\\)).\n2. Bring down 8 to make 258.\n3. \\\\(258 \\div 32 = 8\\\\) remainder \\\\(2\\\\) (since \\\\(32 \\\\times 8 = 256\\\\)).\n4. Bring down 2 to make 22.\n5. \\\\(22 \\div 32 = 0\\\\) remainder \\\\(22\\\\).\n6. Quotient: \\\\(480\\\\), Remainder: \\\\(22\\\\).",
+          "steps": [
+            {
+              "explain": "Perform the first stage of division: divide 153 by 32.",
+              "work": "\\\\(153 \\div 32 = 4 \\quad \\text{remainder } 25\\\\)"
+            },
+            {
+              "explain": "Bring down the next digit (8) to divide 258 by 32.",
+              "work": "\\\\(258 \\div 32 = 8 \\quad \\text{remainder } 2\\\\)"
+            },
+            {
+              "explain": "Bring down the final digit (2) to find the final remainder.",
+              "work": "\\\\(22 \\div 32 = 0 \\quad \\text{remainder } 22 \\implies \\text{Quotient} = 480,\\ \\text{Remainder} = 22\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the quotient and remainder of the division:\\n\\\\(24 769 \\\\div 63\\\\)",
+          "options": [
+            "\\\\(392\\\\) remainder \\\\(10\\\\)",
+            "\\\\(393\\\\) remainder \\\\(0\\\\)",
+            "\\\\(3930\\\\) remainder \\\\(10\\\\)",
+            "\\\\(393\\\\) remainder \\\\(10\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Use long division. Determine how many times 63 goes into 247.",
+          "solution": "Divide 24769 by 63:\n1. \\\\(247 \\div 63 = 3\\\\) remainder \\\\(58\\\\) (since \\\\(63 \\\\times 3 = 189\\\\)).\n2. Bring down 6 to make 586.\n3. \\\\(586 \\div 63 = 9\\\\) remainder \\\\(19\\\\) (since \\\\(63 \\\\times 9 = 567\\\\)).\n4. Bring down 9 to make 199.\n5. \\\\(199 \\div 63 = 3\\\\) remainder \\\\(10\\\\) (since \\\\(63 \\\\times 3 = 189\\\\)).\n6. Quotient: \\\\(393\\\\), Remainder: \\\\(10\\\\).",
+          "steps": [
+            {
+              "explain": "Divide 247 by 63.",
+              "work": "\\\\(247 \\div 63 = 3 \\quad \\text{remainder } 58\\\\)"
+            },
+            {
+              "explain": "Divide 586 by 63.",
+              "work": "\\\\(586 \\div 63 = 9 \\quad \\text{remainder } 19\\\\)"
+            },
+            {
+              "explain": "Divide 199 by 63 to get the final quotient and remainder.",
+              "work": "\\\\(199 \\div 63 = 3 \\quad \\text{remainder } 10 \\implies \\text{Quotient} = 393,\\ \\text{Remainder} = 10\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the quotient and remainder of the division:\\n\\\\(72 083 \\\\div 17\\\\)",
+          "options": [
+            "\\\\(4240\\\\) remainder \\\\(13\\\\)",
+            "\\\\(4241\\\\) remainder \\\\(3\\\\)",
+            "\\\\(424\\\\) remainder \\\\(3\\\\)",
+            "\\\\(4240\\\\) remainder \\\\(3\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Use long division. Find how many times 17 goes into 72.",
+          "solution": "Divide 72083 by 17:\n1. \\\\(72 \\div 17 = 4\\\\) remainder \\\\(4\\\\) (since \\\\(17 \\\\times 4 = 68\\\\)).\n2. Bring down 0 to make 40.\n3. \\\\(40 \\div 17 = 2\\\\) remainder \\\\(6\\\\) (since \\\\(17 \\\\times 2 = 34\\\\)).\n4. Bring down 8 to make 68.\n5. \\\\(68 \\div 17 = 4\\\\) remainder \\\\(0\\\\) (since \\\\(17 \\\\times 4 = 68\\\\)).\n6. Bring down 3. \\\\(3 \\div 17 = 0\\\\) remainder \\\\(3\\\\).\n7. Quotient: \\\\(4240\\\\), Remainder: \\\\(3\\\\).",
+          "steps": [
+            {
+              "explain": "Divide 72 by 17, then bring down 0 to divide 40 by 17.",
+              "work": "\\\\(72 \\div 17 = 4 \\text{ rem } 4;\\quad 40 \\div 17 = 2 \\text{ rem } 6\\\\)"
+            },
+            {
+              "explain": "Bring down 8 and divide 68 by 17.",
+              "work": "\\\\(68 \\div 17 = 4 \\text{ rem } 0\\\\)"
+            },
+            {
+              "explain": "Bring down the last digit 3, and compute the final quotient digit and remainder.",
+              "work": "\\\\(3 \\div 17 = 0 \\text{ rem } 3 \\implies \\text{Quotient} = 4240,\\ \\text{Remainder} = 3\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-4f",
+      "code": "4F",
+      "title": "The short division algorithm",
+      "questions": [
+        {
+          "id": "y6-wn-q38",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Divide $149$ by $6$ and find the quotient and remainder.",
+          "options": [
+            "Quotient: 25, Remainder: 0",
+            "Quotient: 24, Remainder: 1",
+            "Quotient: 24, Remainder: 5",
+            "Quotient: 23, Remainder: 11"
+          ],
+          "answer": 2,
+          "hint": "Calculate how many times $6$ goes into $149$ (look at $14 \\div 6$, then the remaining units).",
+          "solution": "1. $14 \\div 6 = 2$ remainder $2$\n2. Bring down $9 \\rightarrow 29 \\div 6 = 4$ remainder $5$\n\nQuotient is $24$, remainder is $5$.",
+          "steps": [
+            {
+              "explain": "Divide \\(149\\) by \\(6\\) step-by-step.",
+              "work": "\\begin{aligned} 14 \\div 6 &= 2 \\text{ r } 2 \\\\ 29 \\div 6 &= 4 \\text{ r } 5 \\end{aligned}"
+            },
+            {
+              "explain": "State the quotient and remainder.",
+              "work": "\\text{Quotient} = 24, quad \\text{Remainder} = 5"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the division including remainder:\n\\(53 \\div 4\\)",
+          "options": [
+            "\\(13 \\text{ remainder } 1\\)",
+            "\\(14 \\text{ remainder } 1\\)",
+            "\\(13 \\text{ remainder } 2\\)",
+            "\\(12 \\text{ remainder } 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 53 by 4 and find the integer quotient and remainder.",
+          "solution": "53 / 4 = 13 with remainder 1.",
+          "steps": [
+            {
+              "explain": "Determine the highest multiple of 4 less than or equal to 53.",
+              "work": "\\(4 \\times 13 = 52\\)"
+            },
+            {
+              "explain": "Calculate the remainder.",
+              "work": "\\(53 - 52 = 1\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Perform the division and find the quotient and remainder:\n\\\\(139 \\\\div 6\\\\)",
+          "options": [
+            "\\\\(23 \\\\text{ remainder } 3\\\\)",
+            "\\\\(22 \\\\text{ remainder } 5\\\\)",
+            "\\\\(23 \\\\text{ remainder } 1\\\\)",
+            "\\\\(24 \\\\text{ remainder } 1\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide \\\\(13\\\\) by \\\\(6\\\\) first to get \\\\(2\\\\) remainder \\\\(1\\\\). Carry this over to make \\\\(19\\\\) in the ones place.",
+          "solution": "Divide:\n1. Hundreds/Tens: \\\\(13 \\\\div 6 = 2\\\\) with remainder \\\\(1\\\\)\n2. Ones: \\\\(19 \\\\div 6 = 3\\\\) with remainder \\\\(1\\\\)\n\n\\\\(139 \\\\div 6 = 23 \\\\text{ remainder } 1\\\\).",
+          "steps": [
+            {
+              "explain": "Divide the first two digits 13 by 6. This goes 2 times with a remainder of 1.",
+              "work": "\\\\(13 \\\\div 6 = 2 \\\\text{ R } 1\\\\)"
+            },
+            {
+              "explain": "Combine the remainder 1 with the units digit 9 to get 19. Divide 19 by 6.",
+              "work": "\\\\(19 \\\\div 6 = 3 \\\\text{ R } 1\\\\)"
+            },
+            {
+              "explain": "State the final quotient and remainder.",
+              "work": "\\\\(139 \\\\div 6 = 23 \\\\text{ remainder } 1\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-4g",
+      "code": "4G",
+      "title": "Tests for divisibility",
+      "questions": []
+    },
+    {
+      "topicId": "y6-4h",
+      "code": "4H",
+      "title": "Review questions",
+      "questions": [
+        {
+          "id": "y6-wn-q41",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate using the order of operations (BODMAS):\n$8 \\times 9 - (18 - 8 \\div 2)$",
+          "options": [
+            "58",
+            "61",
+            "52",
+            "64"
+          ],
+          "answer": 0,
+          "hint": "Always compute terms inside brackets first. Within brackets, division ($\\div$) takes priority over subtraction ($-$).",
+          "solution": "1. Brackets first: $18 - 8 \\div 2$\n   - Divide first: $8 \\div 2 = 4$\n   - Subtract: $18 - 4 = 14$\n2. Replace brackets: $8 \\times 9 - 14$\n3. Multiply: $8 \\times 9 = 72$\n4. Subtract: $72 - 14 = 58$.",
+          "steps": [
+            {
+              "explain": "Start inside the brackets and apply division priority.",
+              "work": "18 - (8 \\div 2) = 18 - 4"
+            },
+            {
+              "explain": "Complete the operation inside the brackets.",
+              "work": "18 - 4 = 14"
+            },
+            {
+              "explain": "Substitute this value back into the original expression: \\(8 \\times 9 - 14\\). Perform multiplication.",
+              "work": "8 \\times 9 = 72"
+            },
+            {
+              "explain": "Subtract to find the final result.",
+              "work": "72 - 14 = 58"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q42",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate using the order of operations:\n$85 - [(18 \\div 3) - (32 \\div 16)] \\times 12 + 6$",
+          "options": [
+            "43",
+            "39",
+            "45",
+            "47"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets outward. Calculate $(18 \\div 3)$ and $(32 \\div 16)$ first.",
+          "solution": "1. Inner brackets:\n   - $18 \\div 3 = 6$\n   - $32 \\div 16 = 2$\n2. Outer square brackets: $[6 - 2] = 4$\n3. Expression becomes: $85 - 4 \\times 12 + 6$\n4. Multiplication next: $4 \\times 12 = 48$\n5. Perform addition/subtraction from left to right:\n   - $85 - 48 = 37$\n   - $37 + 6 = 43$.",
+          "steps": [
+            {
+              "explain": "Evaluate the innermost divisions inside the brackets.",
+              "work": "\\begin{aligned} 18 \\div 3 &= 6 \\\\ 32 \\div 16 &= 2 \\end{aligned}"
+            },
+            {
+              "explain": "Evaluate the subtraction within the square brackets.",
+              "work": "[6 - 2] = 4"
+            },
+            {
+              "explain": "Substitute the brackets value back into the expression: \\(85 - 4 \\times 12 + 6\\). Perform multiplication.",
+              "work": "4 \\times 12 = 48"
+            },
+            {
+              "explain": "Solve the remaining addition and subtraction from left to right.",
+              "work": "\\begin{aligned} 85 - 48 + 6 &= 37 + 6 \\\\ &= 43 \\end{aligned}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q43",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: $(24 + 12) \\div 3 + 2$",
+          "options": [
+            "13",
+            "14",
+            "15",
+            "17"
+          ],
+          "answer": 1,
+          "hint": "Brackets are computed first, then division, and finally addition.",
+          "solution": "1. Brackets: $24 + 12 = 36$\n2. Division: $36 \\div 3 = 12$\n3. Addition: $12 + 2 = 14$.",
+          "steps": [
+            {
+              "explain": "Add inside the brackets first.",
+              "work": "(24 + 12) = 36"
+            },
+            {
+              "explain": "Perform the division (\\(36 \\div 3\\)).",
+              "work": "36 \\div 3 = 12"
+            },
+            {
+              "explain": "Add 2 to the result.",
+              "work": "12 + 2 = 14"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q44",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: $30 - 10 \\div (3 + 2)$",
+          "options": [
+            "25",
+            "28",
+            "29",
+            "31"
+          ],
+          "answer": 1,
+          "hint": "BODMAS order: Brackets first, then Division, then Subtraction.",
+          "solution": "1. Brackets: $3 + 2 = 5$\n2. Division: $10 \\div 5 = 2$\n3. Subtraction: $30 - 2 = 28$.",
+          "steps": [
+            {
+              "explain": "Evaluate the addition within brackets first.",
+              "work": "(3 + 2) = 5"
+            },
+            {
+              "explain": "Perform the division next.",
+              "work": "10 \\div 5 = 2"
+            },
+            {
+              "explain": "Perform the subtraction.",
+              "work": "30 - 2 = 28"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q49",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: $18 - 8 \\div 2 + 3$",
+          "options": [
+            "19",
+            "17",
+            "18",
+            "15"
+          ],
+          "answer": 1,
+          "hint": "BODMAS rule: Division comes before addition and subtraction. Subtraction and addition are then done from left to right.",
+          "solution": "1. Division: $8 \\div 2 = 4$\n2. Substitute back: $18 - 4 + 3$\n3. Left-to-right:\n   - $18 - 4 = 14$\n   - $14 + 3 = 17$.",
+          "steps": [
+            {
+              "explain": "Perform the division first.",
+              "work": "8 \\div 2 = 4"
+            },
+            {
+              "explain": "Substitute back and perform operations from left to right.",
+              "work": "\\begin{aligned} 18 - 4 + 3 &= 14 + 3 \\\\ &= 17 \\end{aligned}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q53",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Translate the following statement into a mathematical expression and evaluate:\n'The product of $8$ and $7$ is decreased by the quotient of $12$ and $4$.'",
+          "options": [
+            "48",
+            "58",
+            "53",
+            "56"
+          ],
+          "answer": 2,
+          "hint": "'Product' means multiply ($\\times$). 'Decreased by' means subtract ($-$). 'Quotient' means divide ($\\div$). Write it as $(8 \\times 7) - (12 \\div 4)$.",
+          "solution": "1. Translate: $(8 \\times 7) - (12 \\div 4)$\n2. Product: $8 \\times 7 = 56$\n3. Quotient: $12 \\div 4 = 3$\n4. Evaluate: $56 - 3 = 53$.",
+          "steps": [
+            {
+              "explain": "Translate verbal phrases to operations: 'product of 8 and 7' is \\(8 \\times 7\\), 'quotient of 12 and 4' is \\(12 \\div 4\\).",
+              "work": "(8 \\times 7) - (12 \\div 4)"
+            },
+            {
+              "explain": "Calculate the multiplication and division.",
+              "work": "\\begin{aligned} 8 \\times 7 &= 56 \\\\ 12 \\div 4 &= 3 \\end{aligned}"
+            },
+            {
+              "explain": "Subtract the quotient from the product.",
+              "work": "56 - 3 = 53"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q54",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Translate the following statement into a mathematical expression and evaluate:\n'$3$ times the square of $4$ is increased by the difference between $15$ and $6$.'",
+          "options": [
+            "51",
+            "57",
+            "63",
+            "60"
+          ],
+          "answer": 1,
+          "hint": "Write '3 times the square of 4' as $3 \\times 4^2$. 'Difference between 15 and 6' is $(15 - 6)$. 'Increased by' means add ($+$).",
+          "solution": "1. Translate: $3 \\times 4^2 + (15 - 6)$\n2. Exponent: $4^2 = 16$\n3. Multiplication: $3 \\times 16 = 48$\n4. Brackets: $15 - 6 = 9$\n5. Sum: $48 + 9 = 57$.",
+          "steps": [
+            {
+              "explain": "Write the verbal equation as a mathematical expression.",
+              "work": "3 \\times 4^2 + (15 - 6)"
+            },
+            {
+              "explain": "Compute the exponent first (\\(4^2 = 16\\)) and perform the multiplication.",
+              "work": "3 \\times 16 = 48"
+            },
+            {
+              "explain": "Calculate the difference inside the brackets.",
+              "work": "15 - 6 = 9"
+            },
+            {
+              "explain": "Add the two parts.",
+              "work": "48 + 9 = 57"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q55",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: **Decrease the quotient of $36$ and $4$ by $3$.**",
+          "options": [
+            "7",
+            "8",
+            "6",
+            "5"
+          ],
+          "answer": 2,
+          "hint": "First find the quotient of $36$ and $4$ (which is $36 \\div 4$). Then decrease (subtract) that value by $3$.",
+          "solution": "1. Quotient: $36 \\div 4 = 9$\n2. Decrease by 3: $9 - 3 = 6$.",
+          "steps": [
+            {
+              "explain": "Set up the math expression.",
+              "work": "(36 \\div 4) - 3"
+            },
+            {
+              "explain": "Find the quotient first.",
+              "work": "36 \\div 4 = 9"
+            },
+            {
+              "explain": "Subtract 3.",
+              "work": "9 - 3 = 6"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q56",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the difference between $12$ and the square of $4$?",
+          "options": [
+            "6",
+            "5",
+            "4",
+            "3"
+          ],
+          "answer": 2,
+          "hint": "First find the square of $4$ ($4^2 = 4 \\times 4$). Then find the positive difference between that result and $12$.",
+          "solution": "1. Square of 4: $4^2 = 16$\n2. Difference between 16 and 12: $16 - 12 = 4$.",
+          "steps": [
+            {
+              "explain": "Calculate the square of 4.",
+              "work": "4^2 = 16"
+            },
+            {
+              "explain": "Subtract 12 from 16 to find the difference.",
+              "work": "16 - 12 = 4"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q59",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: **Increase the product of $12$ and $4$ by $9$.**",
+          "options": [
+            "60",
+            "63",
+            "51",
+            "57"
+          ],
+          "answer": 3,
+          "hint": "First find the product (multiplication) of $12$ and $4$. Then increase (add) the result by $9$.",
+          "solution": "1. Product: $12 \\times 4 = 48$\n2. Increase by 9: $48 + 9 = 57$.",
+          "steps": [
+            {
+              "explain": "Write the expression mathematically.",
+              "work": "(12 \\times 4) + 9"
+            },
+            {
+              "explain": "Calculate the multiplication first.",
+              "work": "12 \\times 4 = 48"
+            },
+            {
+              "explain": "Add 9 to find the total.",
+              "work": "48 + 9 = 57"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(6 \\times 3 + 4\\)",
+          "options": [
+            "\\(42\\)",
+            "\\(22\\)",
+            "\\(24\\)",
+            "\\(18\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the multiplication first, then perform the addition.",
+          "solution": "According to BODMAS/BOMDAS, multiplication is done first: 6 x 3 = 18. Then add 4: 18 + 4 = 22.",
+          "steps": [
+            {
+              "explain": "Evaluate the multiplication first.",
+              "work": "\\(6 \\times 3 = 18\\)"
+            },
+            {
+              "explain": "Add 4 to the product.",
+              "work": "\\(18 + 4 = 22\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(7 + 3 \\times 4\\)",
+          "options": [
+            "\\(40\\)",
+            "\\(19\\)",
+            "\\(14\\)",
+            "\\(17\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the multiplication first, then perform the addition.",
+          "solution": "Perform multiplication first: 3 x 4 = 12. Then perform addition: 7 + 12 = 19.",
+          "steps": [
+            {
+              "explain": "Evaluate the multiplication first.",
+              "work": "\\(3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Add 7 to the product.",
+              "work": "\\(7 + 12 = 19\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(12 + 8 \\div 2\\)",
+          "options": [
+            "\\(16\\)",
+            "\\(18\\)",
+            "\\(14\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the division first, then perform the addition.",
+          "solution": "Perform division first: 8 / 2 = 4. Then perform addition: 12 + 4 = 16.",
+          "steps": [
+            {
+              "explain": "Evaluate the division first.",
+              "work": "\\(8 \\div 2 = 4\\)"
+            },
+            {
+              "explain": "Add 12 to the quotient.",
+              "work": "\\(12 + 4 = 16\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q12a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following terminology problem:\nWhat is the product of \\(4\\) and \\(5\\)?",
+          "options": [
+            "\\(1\\)",
+            "\\(20\\)",
+            "\\(25\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "The term 'product' means to multiply the two numbers.",
+          "solution": "The product of 4 and 5 is 4 x 5 = 20.",
+          "steps": [
+            {
+              "explain": "Understand that 'product' refers to multiplication.",
+              "work": "\\(4 \\times 5\\)"
+            },
+            {
+              "explain": "Evaluate the product.",
+              "work": "\\(20\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q12b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following terminology problem:\nWhat is the sum of \\(9\\) and \\(4\\)?",
+          "options": [
+            "\\(36\\)",
+            "\\(13\\)",
+            "\\(12\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "The term 'sum' means to add the two numbers.",
+          "solution": "The sum of 9 and 4 is 9 + 4 = 13.",
+          "steps": [
+            {
+              "explain": "Understand that 'sum' refers to addition.",
+              "work": "\\(9 + 4\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(13\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q12c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following terminology problem:\nWhat is the difference between \\(11\\) and \\(4\\)?",
+          "options": [
+            "\\(7\\)",
+            "\\(15\\)",
+            "\\(44\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "The term 'difference' means to subtract the smaller number from the larger number.",
+          "solution": "The difference between 11 and 4 is 11 - 4 = 7.",
+          "steps": [
+            {
+              "explain": "Understand that 'difference' refers to subtraction.",
+              "work": "\\(11 - 4\\)"
+            },
+            {
+              "explain": "Evaluate the subtraction.",
+              "work": "\\(7\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q12d_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following terminology problem:\nWhat is the quotient of \\(8\\) and \\(2\\)?",
+          "options": [
+            "\\(10\\)",
+            "\\(4\\)",
+            "\\(16\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "The term 'quotient' means the result of dividing the first number by the second.",
+          "solution": "The quotient of 8 and 2 is 8 / 2 = 4.",
+          "steps": [
+            {
+              "explain": "Understand that 'quotient' refers to division.",
+              "work": "\\(8 \\div 2\\)"
+            },
+            {
+              "explain": "Evaluate the division.",
+              "work": "\\(4\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(8 + 7 \\times 2\\)",
+          "options": [
+            "\\(30\\)",
+            "\\(24\\)",
+            "\\(22\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply before adding.",
+          "solution": "7 x 2 = 14. 8 + 14 = 22.",
+          "steps": [
+            {
+              "explain": "Perform the multiplication first.",
+              "work": "\\(7 \\times 2 = 14\\)"
+            },
+            {
+              "explain": "Add 8 to the product.",
+              "work": "\\(8 + 14 = 22\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(12 \\div (3 + 1)\\)",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate terms inside parentheses first.",
+          "solution": "(3 + 1) = 4. 12 / 4 = 3.",
+          "steps": [
+            {
+              "explain": "Evaluate the addition inside parentheses.",
+              "work": "\\(3 + 1 = 4\\)"
+            },
+            {
+              "explain": "Divide 12 by the sum.",
+              "work": "\\(12 \\div 4 = 3\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(10 - 3 \\times 2 + 1\\)",
+          "options": [
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(15\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply first, then perform addition and subtraction from left to right.",
+          "solution": "3 x 2 = 6. 10 - 6 = 4. 4 + 1 = 5.",
+          "steps": [
+            {
+              "explain": "Multiply first.",
+              "work": "\\(3 \\times 2 = 6\\)"
+            },
+            {
+              "explain": "Perform subtraction.",
+              "work": "\\(10 - 6 = 4\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\(4 + 1 = 5\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value based on the terminology:\nFind the product of \\\\(8\\\\) and \\\\(9\\\\).",
+          "options": [
+            "\\\\(89\\\\)",
+            "\\\\(72\\\\)",
+            "\\\\(17\\\\)",
+            "\\\\(73\\\\)"
+          ],
+          "answer": 1,
+          "hint": "The term 'product' means the result of multiplying the two numbers.",
+          "solution": "Multiply: \\\\(8 \\\\times 9 = 72\\\\).",
+          "steps": [
+            {
+              "explain": "Recall that 'product' refers to multiplication.",
+              "work": "\\\\(\\text{Product} = 8 \\\\times 9\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\\\(8 \\\\times 9 = 72\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10b_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value based on the terminology:\nFind the sum of \\\\(36\\\\) and \\\\(47\\\\).",
+          "options": [
+            "\\\\(83\\\\)",
+            "\\\\(11\\\\)",
+            "\\\\(73\\\\)",
+            "\\\\(81\\\\)"
+          ],
+          "answer": 0,
+          "hint": "The term 'sum' means the result of adding the two numbers.",
+          "solution": "Add: \\\\(36 + 47 = 83\\\\).",
+          "steps": [
+            {
+              "explain": "Recall that 'sum' refers to addition.",
+              "work": "\\\\(\\text{Sum} = 36 + 47\\\\)"
+            },
+            {
+              "explain": "Perform the addition.",
+              "work": "\\\\(36 + 47 = 83\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10c_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value based on the terminology:\nFind the quotient of \\\\(45\\\\) and \\\\(9\\\\).",
+          "options": [
+            "\\\\(54\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(405\\\\)",
+            "\\\\(36\\\\)"
+          ],
+          "answer": 1,
+          "hint": "The term 'quotient' means the result of dividing the first number by the second.",
+          "solution": "Divide: \\\\(45 \\\\div 9 = 5\\\\).",
+          "steps": [
+            {
+              "explain": "Recall that 'quotient' refers to division.",
+              "work": "\\\\(\\text{Quotient} = 45 \\\\div 9\\\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\\\(45 \\\\div 9 = 5\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10d_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value based on the terminology:\nFind the difference between \\\\(73\\\\) and \\\\(14\\\\).",
+          "options": [
+            "\\\\(59\\\\)",
+            "\\\\(49\\\\)",
+            "\\\\(87\\\\)",
+            "\\\\(69\\\\)"
+          ],
+          "answer": 0,
+          "hint": "The term 'difference' means subtracting the smaller number from the larger number.",
+          "solution": "Subtract: \\\\(73 - 14 = 59\\\\).",
+          "steps": [
+            {
+              "explain": "Recall that 'difference' refers to subtraction.",
+              "work": "\\\\(\\text{Difference} = 73 - 14\\\\)"
+            },
+            {
+              "explain": "Perform the subtraction.",
+              "work": "\\\\(73 - 14 = 59\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\(16 + 8 \\\\div 2 + 1\\\\)",
+          "options": [
+            "\\\\(13\\\\)",
+            "\\\\(21\\\\)",
+            "\\\\(25\\\\)",
+            "\\\\(17\\\\)"
+          ],
+          "answer": 1,
+          "hint": "According to the order of operations (BODMAS), perform division before addition.",
+          "solution": "Evaluate using order of operations:\n- Division first: \\\\(8 \\div 2 = 4\\\\).\n- Expression becomes: \\\\(16 + 4 + 1\\\\).\n- Addition: \\\\(20 + 1 = 21\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the operations in the expression and apply precedence rules (BODMAS).",
+              "work": "\\\\(\\text{Operations: addition and division. Precedence: division first.}\\\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\\\(8 \\div 2 = 4 \\implies 16 + 4 + 1\\\\)"
+            },
+            {
+              "explain": "Perform the additions from left to right.",
+              "work": "\\\\(16 + 4 + 1 = 20 + 1 = 21\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\((16 + 8) \\\\div 2 + 1\\\\)",
+          "options": [
+            "\\\\(8\\\\)",
+            "\\\\(12\\\\)",
+            "\\\\(13\\\\)",
+            "\\\\(21\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Brackets have the highest priority. Evaluate the brackets first.",
+          "solution": "Evaluate using order of operations:\n- Brackets first: \\\\(16 + 8 = 24\\\\).\n- Expression becomes: \\\\(24 \\div 2 + 1\\\\).\n- Division next: \\\\(24 \\div 2 = 12\\\\).\n- Addition last: \\\\(12 + 1 = 13\\\\).",
+          "steps": [
+            {
+              "explain": "Perform the operation inside the parentheses first.",
+              "work": "\\\\(16 + 8 = 24\\\\)"
+            },
+            {
+              "explain": "Perform the division next.",
+              "work": "\\\\(24 \\div 2 = 12\\\\)"
+            },
+            {
+              "explain": "Add 1 to the quotient to find the final result.",
+              "work": "\\\\(12 + 1 = 13\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\((16 + 8) \\\\div (2 + 1)\\\\)",
+          "options": [
+            "\\\\(8\\\\)",
+            "\\\\(24\\\\)",
+            "\\\\(9\\\\)",
+            "\\\\(13\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the expressions in both sets of brackets first.",
+          "solution": "Evaluate using order of operations:\n- First bracket: \\\\(16 + 8 = 24\\\\).\n- Second bracket: \\\\(2 + 1 = 3\\\\).\n- Expression becomes: \\\\(24 \\div 3\\\\).\n- Divide: \\\\(24 \\div 3 = 8\\\\).",
+          "steps": [
+            {
+              "explain": "Evaluate the content of the first set of brackets.",
+              "work": "\\\\(16 + 8 = 24\\\\)"
+            },
+            {
+              "explain": "Evaluate the content of the second set of brackets.",
+              "work": "\\\\(2 + 1 = 3\\\\)"
+            },
+            {
+              "explain": "Divide the first result by the second result.",
+              "work": "\\\\(24 \\div 3 = 8\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9d_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\(18 - 6 \\\\div 2 + 1\\\\)",
+          "options": [
+            "\\\\(15\\\\)",
+            "\\\\(16\\\\)",
+            "\\\\(9\\\\)",
+            "\\\\(7\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Division must be performed before subtraction and addition.",
+          "solution": "Evaluate using order of operations:\n- Division first: \\\\(6 \\div 2 = 3\\\\).\n- Expression becomes: \\\\(18 - 3 + 1\\\\).\n- Solve left to right: \\\\(15 + 1 = 16\\\\).",
+          "steps": [
+            {
+              "explain": "Perform the division first according to BODMAS guidelines.",
+              "work": "\\\\(6 \\div 2 = 3 \\implies 18 - 3 + 1\\\\)"
+            },
+            {
+              "explain": "Perform subtraction.",
+              "work": "\\\\(18 - 3 = 15\\\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\\\(15 + 1 = 16\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9e_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\(18 - 6 \\\\div (2 + 1)\\\\)",
+          "options": [
+            "\\\\(14\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(16\\\\)",
+            "\\\\(15\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the operation inside the bracket first, then division, then subtraction.",
+          "solution": "Evaluate using order of operations:\n- Bracket first: \\\\(2 + 1 = 3\\\\).\n- Expression becomes: \\\\(18 - 6 \\div 3\\\\).\n- Division: \\\\(6 \\div 3 = 2\\\\).\n- Subtraction: \\\\(18 - 2 = 16\\\\).",
+          "steps": [
+            {
+              "explain": "Evaluate the expression inside the brackets.",
+              "work": "\\\\(2 + 1 = 3\\\\)"
+            },
+            {
+              "explain": "Divide 6 by the result of the bracket evaluation.",
+              "work": "\\\\(6 \\div 3 = 2\\\\)"
+            },
+            {
+              "explain": "Subtract the quotient from 18.",
+              "work": "\\\\(18 - 2 = 16\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9f_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\((18 - 6) \\\\div (2 + 1)\\\\)",
+          "options": [
+            "\\\\(16\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(6\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate both brackets first before doing the division.",
+          "solution": "Evaluate using order of operations:\n- First bracket: \\\\(18 - 6 = 12\\\\).\n- Second bracket: \\\\(2 + 1 = 3\\\\).\n- Expression becomes: \\\\(12 \\div 3\\\\).\n- Divide: \\\\(12 \\div 3 = 4\\\\).",
+          "steps": [
+            {
+              "explain": "Evaluate the expression in the first set of brackets.",
+              "work": "\\\\(18 - 6 = 12\\\\)"
+            },
+            {
+              "explain": "Evaluate the expression in the second set of brackets.",
+              "work": "\\\\(2 + 1 = 3\\\\)"
+            },
+            {
+              "explain": "Divide the first result by the second result.",
+              "work": "\\\\(12 \\div 3 = 4\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q10a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Translate the sentence into a mathematical expression and find the value:\\nDecrease the quotient of \\\\(18\\\\) and \\\\(2\\\\) by \\\\(4\\\\).",
+          "options": [
+            "\\\\(8\\\\)",
+            "\\\\(14\\\\)",
+            "\\\\(1\\\\)",
+            "\\\\(5\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the quotient first (division), then decrease it (subtraction).",
+          "solution": "Translate the operations:\n- Quotient of \\\\(18\\\\) and \\\\(2\\\\): \\\\(18 \\div 2 = 9\\\\).\n- Decrease by \\\\(4\\\\): \\\\(9 - 4 = 5\\\\).\n- Expression: \\\\((18 \\div 2) - 4 = 5\\\\).",
+          "steps": [
+            {
+              "explain": "Translate the phrase 'quotient of 18 and 2' into a mathematical operation.",
+              "work": "\\\\(18 \\div 2\\\\)"
+            },
+            {
+              "explain": "Translate 'decrease by 4' into a subtraction operation on the quotient.",
+              "work": "\\\\((18 \\div 2) - 4\\\\)"
+            },
+            {
+              "explain": "Evaluate the expression step-by-step.",
+              "work": "\\\\(9 - 4 = 5\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Translate the sentence into a mathematical expression and find the value:\\nWhat is the difference between \\\\(8\\\\) and the square of \\\\(5\\\\)?",
+          "options": [
+            "\\\\(33\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(17\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Square of 5 is \\\\(5^2 = 25\\\\). Find the difference between 25 and 8.",
+          "solution": "Translate the operations:\n- Square of \\\\(5\\\\): \\\\(5^2 = 25\\\\).\n- Difference between \\\\(8\\\\) and \\\\(25\\\\): \\\\(25 - 8 = 17\\\\).\n- Expression: \\\\(5^2 - 8 = 17\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the value of 'the square of 5'.",
+              "work": "\\\\(5^2 = 25\\\\)"
+            },
+            {
+              "explain": "Translate 'difference between' to mean subtract the smaller number from the larger number.",
+              "work": "\\\\(25 - 8\\\\)"
+            },
+            {
+              "explain": "Find the final value of the difference.",
+              "work": "\\\\(17\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Translate the sentence into a mathematical expression and find the value:\\nIncrease the product of \\\\(15\\\\) and \\\\(2\\\\) by \\\\(7\\\\).",
+          "options": [
+            "\\\\(30\\\\)",
+            "\\\\(49\\\\)",
+            "\\\\(24\\\\)",
+            "\\\\(37\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the product first (multiplication), then increase it (addition).",
+          "solution": "Translate the operations:\n- Product of \\\\(15\\\\) and \\\\(2\\\\): \\\\(15 \\\\times 2 = 30\\\\).\n- Increase by \\\\(7\\\\): \\\\(30 + 7 = 37\\\\).\n- Expression: \\\\((15 \\\\times 2) + 7 = 37\\\\).",
+          "steps": [
+            {
+              "explain": "Translate 'product of 15 and 2' into a mathematical multiplication expression.",
+              "work": "\\\\(15 \\\\times 2\\\\)"
+            },
+            {
+              "explain": "Translate 'increase by 7' into an addition of 7.",
+              "work": "\\\\((15 \\\\times 2) + 7\\\\)"
+            },
+            {
+              "explain": "Evaluate the expression to get the final sum.",
+              "work": "\\\\(30 + 7 = 37\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\(7 \\\\times 8 - (16 - 6 \\\\div 2)\\\\)",
+          "options": [
+            "\\\\(45\\\\)",
+            "\\\\(51\\\\)",
+            "\\\\(39\\\\)",
+            "\\\\(43\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate operations inside the brackets first, noting that division inside brackets must be done before subtraction.",
+          "solution": "Calculate step-by-step:\n1. Inside bracket: \\\\(6 \\div 2 = 3\\\\).\n2. Bracket becomes: \\\\(16 - 3 = 13\\\\).\n3. Product: \\\\(7 \\\\times 8 = 56\\\\).\n4. Result: \\\\(56 - 13 = 43\\\\).",
+          "steps": [
+            {
+              "explain": "Evaluate the division inside the parentheses first.",
+              "work": "\\\\(16 - 6 \\div 2 = 16 - 3\\\\)"
+            },
+            {
+              "explain": "Subtract to find the final value of the expression inside the brackets.",
+              "work": "\\\\(16 - 3 = 13\\\\)"
+            },
+            {
+              "explain": "Calculate the multiplication term outside the brackets, then subtract the bracket value.",
+              "work": "\\\\(7 \\\\times 8 - 13 = 56 - 13 = 43\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q7b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the numerical expression:\\n\\\\(96 - [(15 \\\\div 3) - (45 \\\\div 15)] \\\\times 10 + 4\\\\)",
+          "options": [
+            "\\\\(84\\\\)",
+            "\\\\(90\\\\)",
+            "\\\\(76\\\\)",
+            "\\\\(80\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Solve the innermost brackets first, then perform the operations inside the square brackets.",
+          "solution": "Calculate step-by-step:\n1. Innermost brackets: \\\\(15 \\div 3 = 5\\\\) and \\\\(45 \\div 15 = 3\\\\).\n2. Square brackets: \\\\(5 - 3 = 2\\\\).\n3. Multiplication: \\\\(2 \\\\times 10 = 20\\\\).\n4. Solve additions and subtractions from left to right: \\\\(96 - 20 + 4 = 76 + 4 = 80\\\\).",
+          "steps": [
+            {
+              "explain": "Solve the divisions inside the parentheses.",
+              "work": "\\\\(15 \\div 3 = 5 \\quad \\text{and} \\quad 45 \\div 15 = 3\\\\)"
+            },
+            {
+              "explain": "Evaluate the subtraction inside the square brackets.",
+              "work": "\\\\(5 - 3 = 2\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication by 10, then evaluate additions/subtractions from left to right.",
+              "work": "\\\\(96 - (2 \\\\times 10) + 4 = 96 - 20 + 4 = 76 + 4 = 80\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q8a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Translate the sentence into a mathematical expression and find the value:\\nThe product of \\\\(6\\\\) and \\\\(9\\\\) is decreased by the quotient of \\\\(6\\\\) and \\\\(3\\\\).",
+          "options": [
+            "\\\\(52\\\\)",
+            "\\\\(56\\\\)",
+            "\\\\(50\\\\)",
+            "\\\\(16\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the product (multiplication) and the quotient (division), then subtract the quotient from the product.",
+          "solution": "Translate the operations:\n- Product of \\\\(6\\\\) and \\\\(9\\\\): \\\\(6 \\\\times 9 = 54\\\\).\n- Quotient of \\\\(6\\\\) and \\\\(3\\\\): \\\\(6 \\div 3 = 2\\\\).\n- Decreased by: \\\\(54 - 2 = 52\\\\).\n- Expression: \\\\((6 \\\\times 9) - (6 \\div 3) = 52\\\\).",
+          "steps": [
+            {
+              "explain": "Translate 'product of 6 and 9' into multiplication.",
+              "work": "\\\\(6 \\\\times 9 = 54\\\\)"
+            },
+            {
+              "explain": "Translate 'quotient of 6 and 3' into division.",
+              "work": "\\\\(6 \\div 3 = 2\\\\)"
+            },
+            {
+              "explain": "Subtract the quotient from the product to evaluate the final statement.",
+              "work": "\\\\(54 - 2 = 52\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Translate the sentence into a mathematical expression and find the value:\\n\\\\(4\\\\) times the square of \\\\(3\\\\) is increased by the difference of \\\\(9\\\\) and \\\\(2\\\\).",
+          "options": [
+            "\\\\(41\\\\)",
+            "\\\\(51\\\\)",
+            "\\\\(38\\\\)",
+            "\\\\(43\\\\)"
+          ],
+          "answer": 3,
+          "hint": "First calculate the square of 3, multiply it by 4, then add the difference of 9 and 2.",
+          "solution": "Translate and calculate:\n- Square of \\\\(3\\\\): \\\\(3^2 = 9\\\\).\n- \\\\(4\\\\) times the square of \\\\(3\\\\): \\\\(4 \\\\times 9 = 36\\\\).\n- Difference of \\\\(9\\\\) and \\\\(2\\\\): \\\\(9 - 2 = 7\\\\).\n- Increased by: \\\\(36 + 7 = 43\\\\).\n- Expression: \\\\(4 \\\\times 3^2 + (9 - 2) = 43\\\\).",
+          "steps": [
+            {
+              "explain": "Calculate 'the square of 3' and multiply it by 4.",
+              "work": "\\\\(3^2 = 9 \\implies 4 \\\\times 9 = 36\\\\)"
+            },
+            {
+              "explain": "Calculate 'the difference of 9 and 2'.",
+              "work": "\\\\(9 - 2 = 7\\\\)"
+            },
+            {
+              "explain": "Increase the first calculated value by the second value.",
+              "work": "\\\\(36 + 7 = 43\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    }
+  ]
+}

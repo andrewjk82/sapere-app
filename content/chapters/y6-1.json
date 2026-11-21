@@ -1,0 +1,3316 @@
+{
+  "chapterId": "y6-1",
+  "title": "Chapter 1: Positive and negative whole numbers",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-1a",
+      "code": "1A",
+      "title": "Place value",
+      "questions": [
+        {
+          "id": "y6-wn-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the number $3\\,482\\,905$ in words.",
+          "options": [
+            "Three hundred and forty-eight thousand, nine hundred and five",
+            "Three million, forty-eight thousand, nine hundred and five",
+            "Thirty-four million, eighty-two thousand, nine hundred and five",
+            "Three million, four hundred and eighty-two thousand, nine hundred and five"
+          ],
+          "answer": 3,
+          "hint": "Read the number in periods of three digits: Millions, Thousands, and Units. $3$ is in the millions period, $482$ is in the thousands, and $905$ is in the units.",
+          "solution": "The number $3\\,482\\,905$ is grouped as:\n- $3$: Three million\n- $482$: four hundred and eighty-two thousand\n- $905$: nine hundred and five.\n\nCombined: 'Three million, four hundred and eighty-two thousand, nine hundred and five'.",
+          "steps": [
+            {
+              "explain": "Group the digits by standard three-digit periods (Millions, Thousands, Units).",
+              "work": "\\text{Periods: } \\underbrace{3}_{\\text{Millions}} \\, underbrace{482}_{\\text{Thousands}} \\, underbrace{905}_{\\text{Units}}"
+            },
+            {
+              "explain": "Write out the value of each period in words.",
+              "work": "\\begin{aligned} 3 &\\rightarrow \\text{Three million} \\\\ 482 &\\rightarrow \\text{four hundred and eighty-two thousand} \\\\ 905 &\\rightarrow \\text{nine hundred and five} \\end{aligned}"
+            },
+            {
+              "explain": "Combine all parts with appropriate commas.",
+              "work": "\\text{Three million, four hundred and eighty-two thousand, nine hundred and five}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the number $97\\,003\\,002$ in words.",
+          "options": [
+            "Ninety-seven million, three hundred thousand and two",
+            "Nine million, seven hundred and three thousand and two",
+            "Ninety-seven million, three thousand and two",
+            "Ninety-seven million, thirty thousand and two"
+          ],
+          "answer": 2,
+          "hint": "Look at the periods of three. $97$ is in the millions period. In the thousands period, we have only $003$. In the units period, we have $002$.",
+          "solution": "The number $97\\,003\\,002$ is read as:\n- Millions period: $97 \\rightarrow$ Ninety-seven million\n- Thousands period: $003 \\rightarrow$ three thousand\n- Units period: $002 \\rightarrow$ two (and two).\n\nCombined: 'Ninety-seven million, three thousand and two'.",
+          "steps": [
+            {
+              "explain": "Group the number into three-digit periods.",
+              "work": "\\text{Periods: } \\underbrace{97}_{\\text{Millions}} \\, underbrace{003}_{\\text{Thousands}} \\, underbrace{002}_{\\text{Units}}"
+            },
+            {
+              "explain": "Convert each period to words. Note that empty placeholders (zeros) are skipped.",
+              "work": "\\begin{aligned} 97 &\\rightarrow \\text{Ninety-seven million} \\\\ 3 &\\rightarrow \\text{three thousand} \\\\ 2 &\\rightarrow \\text{two} \\end{aligned}"
+            },
+            {
+              "explain": "Combine into a single phrase.",
+              "work": "\\text{Ninety-seven million, three thousand and two}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit $7$ in the number $547\\,210$?",
+          "options": [
+            "7",
+            "700",
+            "70,000",
+            "7,000"
+          ],
+          "answer": 3,
+          "hint": "Identify which column the digit $7$ sits in (Units, Tens, Hundreds, Thousands, Ten Thousands, or Hundred Thousands).",
+          "solution": "In the number $547\\,210$, the digit $7$ is in the thousands place. Therefore, its place value is $7 \\times 1000 = 7,000$.",
+          "steps": [
+            {
+              "explain": "Assign place values to each digit of the number \\(547\\,210\\) from right to left.",
+              "work": "\\begin{aligned} 0 &\\rightarrow \\text{Units} \\\\ 1 &\\rightarrow \\text{Tens} \\\\ 2 &\\rightarrow \\text{Hundreds} \\\\ 7 &\\rightarrow \\text{Thousands} \\\\ 4 &\\rightarrow \\text{Ten Thousands} \\\\ 5 &\\rightarrow \\text{Hundred Thousands} \\end{aligned}"
+            },
+            {
+              "explain": "Multiply the digit \\(7\\) by its place value (\\(1000\\)).",
+              "work": "7 \\times 1000 = 7,000"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following expanded expression as an ordinary numeral:\n$(7 \\times 10^4) + (4 \\times 10^3) + (0 \\times 10^2) + (9 \\times 10^1) + (3 \\times 1)$",
+          "options": [
+            "66684",
+            "81502",
+            "74093",
+            "77798"
+          ],
+          "answer": 2,
+          "hint": "Calculate the value of each term ($10^4 = 10\\,000$, $10^3 = 1\\,000$, etc.) and add them together.",
+          "solution": "Calculating the terms:\n- $7 \\times 10^4 = 70\\,000$\n- $4 \\times 10^3 = 4\\,000$\n- $0 \\times 10^2 = 0$\n- $9 \\times 10^1 = 90$\n- $3 \\times 1 = 3$\n\nSumming these up: $70\\,000 + 4\\,000 + 0 + 90 + 3 = 74\\,093$.",
+          "steps": [
+            {
+              "explain": "Expand the powers of 10 into standard numerical values.",
+              "work": "\\begin{aligned} 10^4 &= 10,000 \\\\ 10^3 &= 1,000 \\\\ 10^2 &= 100 \\\\ 10^1 &= 10 \\end{aligned}"
+            },
+            {
+              "explain": "Multiply each digit by its place value.",
+              "work": "\\begin{aligned} 7 \\times 10,000 &= 70,000 \\\\ 4 \\times 1,000 &= 4,000 \\\\ 0 \\times 100 &= 0 \\\\ 9 \\times 10 &= 90 \\\\ 3 \\times 1 &= 3 \\end{aligned}"
+            },
+            {
+              "explain": "Sum all the expanded parts.",
+              "work": "70,000 + 4,000 + 0 + 90 + 3 = 74,093"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the number $8\\,352$ in expanded exponential notation.",
+          "options": [
+            "\\((8 \\times 1000) + (3 \\times 100) + (5 \\times 10) + 2\\)",
+            "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^2) + (2 \\times 1)\\)",
+            "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)\\)",
+            "\\((8 \\times 10^4) + (3 \\times 10^3) + (5 \\times 10^2) + (2 \\times 10)\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the place value of each digit using powers of $10$. E.g. Thousands place is $10^3$, Hundreds is $10^2$, Tens is $10^1$, and Units is $1$.",
+          "solution": "To express $8\\,352$:\n- $8$ is in Thousands ($8 \\times 10^3$)\n- $3$ is in Hundreds ($3 \\times 10^2$)\n- $5$ is in Tens ($5 \\times 10^1$)\n- $2$ is in Units ($2 \\times 1$)\n\nCombining these: $(8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)$.",
+          "steps": [
+            {
+              "explain": "Determine the place value of each digit in \\(8,352\\).",
+              "work": "\\begin{aligned} 8 &\\rightarrow 8,000 \\\\ 3 &\\rightarrow 300 \\\\ 5 &\\rightarrow 50 \\\\ 2 &\\rightarrow 2 \\end{aligned}"
+            },
+            {
+              "explain": "Represent each place value as a power of 10.",
+              "work": "\\begin{aligned} 8,000 &= 8 \\times 10^3 \\\\ 300 &= 3 \\times 10^2 \\\\ 50 &= 5 \\times 10^1 \\\\ 2 &= 2 \\times 1 \\end{aligned}"
+            },
+            {
+              "explain": "Combine the terms using addition.",
+              "work": "(8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the numerical place value of the digit $3$ in the number $27\\,318$?",
+          "options": [
+            "300",
+            "270",
+            "315",
+            "330"
+          ],
+          "answer": 0,
+          "hint": "Identify which column the digit $3$ sits in.",
+          "solution": "In the number $27\\,318$, the digit $3$ is in the hundreds place. Thus, its place value is $3 \\times 100 = 300$.",
+          "steps": [
+            {
+              "explain": "Locate the digit \\(3\\) in the place value chart.",
+              "work": "\\begin{array}{c|c|c|c|c} \\text{T.Th} & \\text{Th} & \\text{H} & \\text{T} & \\text{U} \\\\ \\hline 2 & 7 & \\mathbf{3} & 1 & 8 \\end{array}"
+            },
+            {
+              "explain": "Since \\(3\\) is in the Hundreds column, multiply the digit by 100.",
+              "work": "3 \\times 100 = 300"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the number **four hundred and five thousand, two hundred and twelve** in ordinary numerals.",
+          "options": [
+            "425473",
+            "445733",
+            "364691",
+            "405212"
+          ],
+          "answer": 3,
+          "hint": "Write the thousands period first (four hundred and five -> 405), then write the units period (two hundred and twelve -> 212). Join them.",
+          "solution": "1. The thousands period is 'four hundred and five thousand' $= 405\\,000$.\n2. The units period is 'two hundred and twelve' $= 212$.\n\nCombining these gives $405\\,212$.",
+          "steps": [
+            {
+              "explain": "Identify the number in two separate parts: thousands period and units period.",
+              "work": "\\begin{aligned} \\text{Thousands part} &= 405 \\\\ \\text{Units part} &= 212 \\end{aligned}"
+            },
+            {
+              "explain": "Combine these parts into a single numeric value.",
+              "work": "405,212"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the number **six million, seventy-two thousand and five** in ordinary numerals.",
+          "options": [
+            "5464805",
+            "6072005",
+            "6679206",
+            "6375605"
+          ],
+          "answer": 1,
+          "hint": "Break it down: Six million ($6\\,000\\,000$), seventy-two thousand ($72\\,000$), and five ($5$). Use placeholder zeros for columns with no values (like hundred thousands and hundreds/tens).",
+          "solution": "To write six million, seventy-two thousand and five:\n- Millions column: $6$\n- Hundreds thousands column: $0$ (no hundred thousands mentioned)\n- Ten thousands column: $7$\n- Thousands column: $2$\n- Hundreds column: $0$\n- Tens column: $0$\n- Units column: $5$\n\nCombined: $6\\,072\\,005$.",
+          "steps": [
+            {
+              "explain": "Write out the value of each period component.",
+              "work": "\\begin{aligned} \\text{Six million} &= 6,000,000 \\\\ \\text{Seventy-two thousand} &= 72,000 \\\\ \\text{Five} &= 5 \\end{aligned}"
+            },
+            {
+              "explain": "Add these numbers together, noting the zero placeholders.",
+              "work": "\\begin{array}{r l} 6,000,000 & \\\\ 72,000 & \\\\ + \\quad \\quad \\quad 5 & \\\\ \\hline \\mathbf{6,072,005} & \\end{array}"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the following expanded notation to an ordinary numeral:\n$(9 \\times 10^5) + (8 \\times 10^3) + (2 \\times 10^2) + (6 \\times 1)$",
+          "options": [
+            "953616",
+            "908206",
+            "999027",
+            "817385"
+          ],
+          "answer": 1,
+          "hint": "Note that there is no $10^4$ (ten thousands) or $10^1$ (tens) term. Use $0$ as a placeholder for these positions.",
+          "solution": "Expand the terms:\n- $9 \\times 10^5 = 900\\,000$\n- No $10^4$ term $= 0$\n- $8 \\times 10^3 = 8\\,000$\n- $2 \\times 10^2 = 200$\n- No $10^1$ term $= 0$\n- $6 \\times 1 = 6$\n\nSum: $900\\,000 + 8\\,000 + 200 + 6 = 908\\,206$.",
+          "steps": [
+            {
+              "explain": "Identify the digit for each place value power from \\(10^5\\) down to \\(10^0\\).",
+              "work": "\\begin{aligned} 10^5 &\\rightarrow 9 \\\\ 10^4 &\\rightarrow 0 \\quad (\\text{missing}) \\\\ 10^3 &\\rightarrow 8 \\\\ 10^2 &\\rightarrow 2 \\\\ 10^1 &\\rightarrow 0 \\quad (\\text{missing}) \\\\ 10^0 &\\rightarrow 6 \\end{aligned}"
+            },
+            {
+              "explain": "Assemble the digits in order of their place value columns.",
+              "work": "\\text{Result: } 908,206"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the numerical place value of the digit $9$ in the number $395\\,072$?",
+          "options": [
+            "94500",
+            "81000",
+            "90000",
+            "99000"
+          ],
+          "answer": 2,
+          "hint": "Find which position the digit $9$ holds. It is to the left of the thousands column.",
+          "solution": "In the number $395\\,072$, the digit $9$ is in the ten thousands place. Its value is $9 \\times 10\\,000 = 90\\,000$.",
+          "steps": [
+            {
+              "explain": "Align digits to their corresponding columns.",
+              "work": "\\begin{array}{c|c|c|c|c|c} \\text{H.Th} & \\text{T.Th} & \\text{Th} & \\text{H} & \\text{T} & \\text{U} \\\\ \\hline 3 & \\mathbf{9} & 5 & 0 & 7 & 2 \\end{array}"
+            },
+            {
+              "explain": "Multiply the digit \\(9\\) by its place value factor (\\(10,000\\)).",
+              "work": "9 \\times 10,000 = 90,000"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(143\\)",
+          "options": [
+            "One hundred and thirty-three",
+            "One hundred and thirty-four",
+            "One hundred and forty-two",
+            "One hundred and forty-three"
+          ],
+          "answer": 3,
+          "hint": "Break the number into hundreds, tens, and units.",
+          "solution": "143 consists of 1 hundred, 4 tens (forty), and 3 units (three).",
+          "steps": [
+            {
+              "explain": "Identify the place values of 143.",
+              "work": "100 \\implies \\text{One hundred}, quad 40 \\implies \\text{forty}, quad 3 \\implies \\text{three}"
+            },
+            {
+              "explain": "Combine the parts with 'and'.",
+              "work": "\\text{One hundred and forty-three}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(807\\)",
+          "options": [
+            "Eight hundred and seventy",
+            "Eight hundred and seven",
+            "Eighty-seven",
+            "Eight hundred and seventeen"
+          ],
+          "answer": 1,
+          "hint": "Break the number into hundreds and units, noting there are zero tens.",
+          "solution": "807 consists of 8 hundreds and 7 units. Written as: Eight hundred and seven.",
+          "steps": [
+            {
+              "explain": "Identify the place values of 807.",
+              "work": "800 \\implies \\text{Eight hundred}, quad 0 \\implies \\text{tens}, quad 7 \\implies \\text{seven}"
+            },
+            {
+              "explain": "Combine the parts with 'and'.",
+              "work": "\\text{Eight hundred and seven}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(650\\)",
+          "options": [
+            "Six hundred and fifteen",
+            "Six hundred and five",
+            "Six hundred and fifty-five",
+            "Six hundred and fifty"
+          ],
+          "answer": 3,
+          "hint": "Break the number into hundreds and tens, noting there are zero units.",
+          "solution": "650 consists of 6 hundreds and 5 tens. Written as: Six hundred and fifty.",
+          "steps": [
+            {
+              "explain": "Identify the place values of 650.",
+              "work": "600 \\implies \\text{Six hundred}, quad 50 \\implies \\text{fifty}"
+            },
+            {
+              "explain": "Combine the parts with 'and'.",
+              "work": "\\text{Six hundred and fifty}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3d_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(1\\ 634\\)",
+          "options": [
+            "One thousand, six hundred and thirty-four",
+            "One thousand, six hundred and thirty",
+            "One thousand, six hundred and forty-three",
+            "One thousand, six hundred and thirty-six"
+          ],
+          "answer": 0,
+          "hint": "Break the number into thousands, hundreds, tens, and units.",
+          "solution": "1 634 consists of 1 thousand, 6 hundreds, 3 tens (thirty), and 4 units (four).",
+          "steps": [
+            {
+              "explain": "Identify the place values of 1 634.",
+              "work": "1\\,000 \\implies \\text{One thousand}, quad 600 \\implies \\text{six hundred}, quad 34 \\implies \\text{thirty-four}"
+            },
+            {
+              "explain": "Combine the parts with proper commas and 'and'.",
+              "work": "\\text{One thousand, six hundred and thirty-four}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following word number as an ordinary numeral:\nFour hundred and eighty-seven",
+          "options": [
+            "\\(400\\ 87\\)",
+            "\\(4870\\)",
+            "\\(478\\)",
+            "\\(487\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify the value of each part: four hundred (400), eighty-seven (87).",
+          "solution": "Four hundred is 400. Eighty-seven is 87. Combining them gives 487.",
+          "steps": [
+            {
+              "explain": "Identify the numbers representing each word part.",
+              "work": "\\text{Four hundred} = 400, quad \\text{eighty-seven} = 87"
+            },
+            {
+              "explain": "Sum the values to find the standard numeral.",
+              "work": "\\(400 + 87 = 487\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following word number as an ordinary numeral:\nSix hundred and three",
+          "options": [
+            "\\(633\\)",
+            "\\(6003\\)",
+            "\\(630\\)",
+            "\\(603\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify the value of each part: six hundred (600), three (3). Use a zero in the tens place.",
+          "solution": "Six hundred is 600. Three is 3. Combining them gives 603.",
+          "steps": [
+            {
+              "explain": "Identify the numbers representing each word part.",
+              "work": "\\text{Six hundred} = 600, quad \\text{three} = 3"
+            },
+            {
+              "explain": "Sum the values to find the standard numeral.",
+              "work": "\\(600 + 3 = 603\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expanded expression to find the ordinary numeral:\n\\((8 \\times 100) + (6 \\times 10) + (3 \\times 1)\\)",
+          "options": [
+            "\\(800\\ 63\\)",
+            "\\(863\\)",
+            "\\(860\\)",
+            "\\(836\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the multiplication inside each set of parentheses first, then add them.",
+          "solution": "(8 x 100) = 800. (6 x 10) = 60. (3 x 1) = 3. Adding them gives: 800 + 60 + 3 = 863.",
+          "steps": [
+            {
+              "explain": "Evaluate the products within parentheses.",
+              "work": "\\(8 \\times 100 = 800\\), quad \\(6 \\times 10 = 60\\), quad \\(3 \\times 1 = 3\\)"
+            },
+            {
+              "explain": "Add the terms together.",
+              "work": "\\(800 + 60 + 3 = 863\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expanded expression to find the ordinary numeral:\n\\((4 \\times 100) + (0 \\times 10) + (9 \\times 1)\\)",
+          "options": [
+            "\\(409\\)",
+            "\\(490\\)",
+            "\\(49\\)",
+            "\\(4009\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply within the parentheses first, then add the results.",
+          "solution": "(4 x 100) = 400. (0 x 10) = 0. (9 x 1) = 9. Adding them gives: 400 + 0 + 9 = 409.",
+          "steps": [
+            {
+              "explain": "Evaluate the products within parentheses.",
+              "work": "\\(4 \\times 100 = 400\\), quad \\(0 \\times 10 = 0\\), quad \\(9 \\times 1 = 9\\)"
+            },
+            {
+              "explain": "Add the terms together.",
+              "work": "\\(400 + 0 + 9 = 409\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the place value of the digit \\(7\\) in the following number:\n\\(72\\)",
+          "options": [
+            "\\(700\\)",
+            "\\(70\\)",
+            "\\(7000\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify the place value column of the digit 7.",
+          "solution": "In 72, the digit 7 is in the tens position, so its value is 70.",
+          "steps": [
+            {
+              "explain": "Identify the position of 7 in 72.",
+              "work": "\\text{7 is in the tens column.}"
+            },
+            {
+              "explain": "Calculate the numerical place value.",
+              "work": "\\(7 \\times 10 = 70\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the place value of the digit \\(7\\) in the following number:\n\\(537\\)",
+          "options": [
+            "\\(7000\\)",
+            "\\(70\\)",
+            "\\(700\\)",
+            "\\(7\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify the place value column of the digit 7.",
+          "solution": "In 537, the digit 7 is in the units position, so its value is 7.",
+          "steps": [
+            {
+              "explain": "Identify the position of 7 in 537.",
+              "work": "\\text{7 is in the units column.}"
+            },
+            {
+              "explain": "Calculate the numerical place value.",
+              "work": "\\(7 \\times 1 = 7\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the place value of the digit \\(7\\) in the following number:\n\\(702\\)",
+          "options": [
+            "\\(70\\)",
+            "\\(700\\)",
+            "\\(7\\)",
+            "\\(7000\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify the place value column of the digit 7.",
+          "solution": "In 702, the digit 7 is in the hundreds position, so its value is 700.",
+          "steps": [
+            {
+              "explain": "Identify the position of 7 in 702.",
+              "work": "\\text{7 is in the hundreds column.}"
+            },
+            {
+              "explain": "Calculate the numerical place value.",
+              "work": "\\(7 \\times 100 = 700\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3d_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the place value of the digit \\(7\\) in the following number:\n\\(4\\ 672\\)",
+          "options": [
+            "\\(7000\\)",
+            "\\(7\\)",
+            "\\(70\\)",
+            "\\(700\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify the place value column of the digit 7.",
+          "solution": "In 4 672, the digit 7 is in the tens position, so its value is 70.",
+          "steps": [
+            {
+              "explain": "Identify the position of 7 in 4 672.",
+              "work": "\\text{7 is in the tens column.}"
+            },
+            {
+              "explain": "Calculate the numerical place value.",
+              "work": "\\(7 \\times 10 = 70\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(683\\)",
+          "options": [
+            "Six hundred and eighty-five",
+            "Six hundred and thirty-eight",
+            "Six hundred and eighty-three",
+            "Six hundred and eighty"
+          ],
+          "answer": 2,
+          "hint": "Identify place values: 6 hundreds, 8 tens, 3 units.",
+          "solution": "683 consists of 6 hundreds and 83. Written as: Six hundred and eighty-three.",
+          "steps": [
+            {
+              "explain": "Identify place values.",
+              "work": "600 \\implies \\text{Six hundred}, quad 80 \\implies \\text{eighty}, quad 3 \\implies \\text{three}"
+            },
+            {
+              "explain": "Combine with 'and'.",
+              "work": "\\text{Six hundred and eighty-three}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(4\\ 312\\)",
+          "options": [
+            "Four thousand, two hundred and twelve",
+            "Four thousand, three hundred and twelve",
+            "Four thousand, three hundred and twenty",
+            "Four thousand, three hundred and two"
+          ],
+          "answer": 1,
+          "hint": "Identify place values: 4 thousands, 3 hundreds, 12.",
+          "solution": "4 312 consists of 4 thousands, 3 hundreds, and 12. Written as: Four thousand, three hundred and twelve.",
+          "steps": [
+            {
+              "explain": "Identify place values.",
+              "work": "4\\,000 \\implies \\text{Four thousand}, quad 300 \\implies \\text{three hundred}, quad 12 \\implies \\text{twelve}"
+            },
+            {
+              "explain": "Combine with proper formatting.",
+              "work": "\\text{Four thousand, three hundred and twelve}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following number in words:\n\\(5\\ 072\\)",
+          "options": [
+            "Five thousand and seventy",
+            "Five thousand and twenty-seven",
+            "Five thousand, seven hundred and two",
+            "Five thousand and seventy-two"
+          ],
+          "answer": 3,
+          "hint": "Identify place values: 5 thousands, 0 hundreds, 72.",
+          "solution": "5 072 consists of 5 thousands and 72. Written as: Five thousand and seventy-two.",
+          "steps": [
+            {
+              "explain": "Identify place values.",
+              "work": "5\\,000 \\implies \\text{Five thousand}, quad 72 \\implies \\text{seventy-two}"
+            },
+            {
+              "explain": "Combine with 'and'.",
+              "work": "\\text{Five thousand and seventy-two}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expanded expression to find the ordinary numeral:\n\\((5 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
+          "options": [
+            "\\(5003\\)",
+            "\\(530\\)",
+            "\\(53\\)",
+            "\\(503\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply terms in parentheses first.",
+          "solution": "(5 x 100) = 500. (0 x 10) = 0. (3 x 1) = 3. 500 + 0 + 3 = 503.",
+          "steps": [
+            {
+              "explain": "Evaluate the products.",
+              "work": "\\(5 \\times 100 = 500\\), quad \\(0 \\times 10 = 0\\), quad \\(3 \\times 1 = 3\\)"
+            },
+            {
+              "explain": "Sum the components.",
+              "work": "\\(500 + 0 + 3 = 503\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q5b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expanded expression to find the ordinary numeral:\n\\((7 \\times 1000) + (0 \\times 100) + (8 \\times 10) + (6 \\times 1)\\)",
+          "options": [
+            "\\(7860\\)",
+            "\\(7086\\)",
+            "\\(70860\\)",
+            "\\(786\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply terms inside parentheses first.",
+          "solution": "7000 + 0 + 80 + 6 = 7086.",
+          "steps": [
+            {
+              "explain": "Evaluate the products.",
+              "work": "\\(7000 + 0 + 80 + 6\\)"
+            },
+            {
+              "explain": "Sum the values.",
+              "work": "\\(7086\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the place value of the digit \\\\(3\\\\) in the following number:\n\\\\(4307\\\\)",
+          "options": [
+            "\\\\(300\\\\)",
+            "\\\\(3000\\\\)",
+            "\\\\(30\\\\)",
+            "\\\\(3\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Determine the position of the digit \\\\(3\\\\) starting from the right (ones, tens, hundreds, thousands).",
+          "solution": "In \\\\(4307\\\\), the digit \\\\(3\\\\) is in the hundreds place. Thus, its place value is \\\\(3 \\\\times 100 = 300\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the columns for each digit in the number \\\\(4307\\\\).",
+              "work": "4 \\\\text{ (thousands)}, 3 \\\\text{ (hundreds)}, 0 \\\\text{ (tens)}, 7 \\\\text{ (ones)}"
+            },
+            {
+              "explain": "Calculate the value of the digit \\\\(3\\\\) in the hundreds place.",
+              "work": "\\\\(3 \\\\times 100 = 300\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q3b_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the place value of the digit \\\\(3\\\\) in the following number:\n\\\\(2731\\\\)",
+          "options": [
+            "\\\\(3000\\\\)",
+            "\\\\(30\\\\)",
+            "\\\\(300\\\\)",
+            "\\\\(3\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify the position of the digit \\\\(3\\\\) (ones, tens, hundreds, thousands).",
+          "solution": "In \\\\(2731\\\\), the digit \\\\(3\\\\) is in the tens place. Its place value is \\\\(3 \\\\times 10 = 30\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the columns for each digit in the number \\\\(2731\\\\).",
+              "work": "2 \\\\text{ (thousands)}, 7 \\\\text{ (hundreds)}, 3 \\\\text{ (tens)}, 1 \\\\text{ (ones)}"
+            },
+            {
+              "explain": "Calculate the value of the digit \\\\(3\\\\) in the tens place.",
+              "work": "\\\\(3 \\\\times 10 = 30\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q3c_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the place value of the digit \\\\(3\\\\) in the following number:\n\\\\(3914\\\\)",
+          "options": [
+            "\\\\(3000\\\\)",
+            "\\\\(30\\\\)",
+            "\\\\(300\\\\)",
+            "\\\\(3\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the position of the digit \\\\(3\\\\) (ones, tens, hundreds, thousands).",
+          "solution": "In \\\\(3914\\\\), the digit \\\\(3\\\\) is in the thousands place. Its place value is \\\\(3 \\\\times 1000 = 3000\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the columns for each digit in the number \\\\(3914\\\\).",
+              "work": "3 \\\\text{ (thousands)}, 9 \\\\text{ (hundreds)}, 1 \\\\text{ (tens)}, 4 \\\\text{ (ones)}"
+            },
+            {
+              "explain": "Calculate the value of the digit \\\\(3\\\\) in the thousands place.",
+              "work": "\\\\(3 \\\\times 1000 = 3000\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q3d_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the place value of the digit \\\\(3\\\\) in the following number:\n\\\\(6743\\\\)",
+          "options": [
+            "\\\\(3000\\\\)",
+            "\\\\(30\\\\)",
+            "\\\\(300\\\\)",
+            "\\\\(3\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify the position of the digit \\\\(3\\\\) (ones, tens, hundreds, thousands).",
+          "solution": "In \\\\(6743\\\\), the digit \\\\(3\\\\) is in the ones place. Its place value is \\\\(3 \\\\times 1 = 3\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the columns for each digit in the number \\\\(6743\\\\).",
+              "work": "6 \\\\text{ (thousands)}, 7 \\\\text{ (hundreds)}, 4 \\\\text{ (tens)}, 3 \\\\text{ (ones)}"
+            },
+            {
+              "explain": "Calculate the value of the digit \\\\(3\\\\) in the ones place.",
+              "work": "\\\\(3 \\\\times 1 = 3\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q4a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following number in expanded notation:\n\\\\(731\\\\)",
+          "options": [
+            "\\\\((7 \\\\times 10^3) + (3 \\\\times 10^2) + (1 \\\\times 10)\\\\)",
+            "\\\\((7 \\\\times 100) + (3 \\\\times 100) + (1 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^2) + (3 \\\\times 10^1) + (1 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^1) + (3 \\\\times 10^2) + (1 \\\\times 1)\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the place value of each digit and write the number as their sum: \\\\(731 = 700 + 30 + 1\\\\).",
+          "solution": "Multiply each digit by its power of 10:\n\\\\(731 = (7 \\\\times 100) + (3 \\\\times 10) + 1 = (7 \\\\times 10^2) + (3 \\\\times 10^1) + (1 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number into its place value components.",
+              "work": "\\\\(731 = 700 + 30 + 1\\\\)"
+            },
+            {
+              "explain": "Express the place values using powers of 10.",
+              "work": "\\\\(700 = 7 \\\\times 10^2, 30 = 3 \\\\times 10^1, 1 = 1 \\\\times 1\\\\)"
+            },
+            {
+              "explain": "Write the full expression as a sum of these parts.",
+              "work": "\\\\((7 \\\\times 10^2) + (3 \\\\times 10^1) + (1 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q4b_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded notation:\n\\\\(5713\\\\)",
+          "options": [
+            "\\\\((5 \\\\times 10^2) + (7 \\\\times 10^3) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)",
+            "\\\\((5 \\\\times 1000) + (7 \\\\times 10) + (1 \\\\times 10) + 3\\\\)",
+            "\\\\((5 \\\\times 10^4) + (7 \\\\times 10^3) + (1 \\\\times 10^2) + (3 \\\\times 10)\\\\)",
+            "\\\\((5 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the number as the sum of its place values: \\\\(5000 + 700 + 10 + 3\\\\).",
+          "solution": "Express each component using powers of 10:\n\\\\(5000 = 5 \\\\times 10^3\\\\)\n\\\\(700 = 7 \\\\times 10^2\\\\)\n\\\\(10 = 1 \\\\times 10^1\\\\)\n\\\\(3 = 3 \\\\times 1\\\\)\n\nCombine: \\\\((5 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose the number into the sum of its place values.",
+              "work": "\\\\(5713 = 5000 + 700 + 10 + 3\\\\)"
+            },
+            {
+              "explain": "Represent each place value as a digit multiplied by a power of 10.",
+              "work": "\\\\(5000 = 5 \\\\times 10^3, 700 = 7 \\\\times 10^2, 10 = 1 \\\\times 10^1, 3 = 3 \\\\times 1\\\\)"
+            },
+            {
+              "explain": "Combine into the final expanded sum.",
+              "work": "\\\\((5 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded notation:\n\\\\(95072\\\\)",
+          "options": [
+            "\\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^2) + (2 \\\\times 1)\\\\)",
+            "\\\\((9 \\\\times 10^5) + (5 \\\\times 10^4) + (7 \\\\times 10^2) + (2 \\\\times 10)\\\\)",
+            "\\\\((9 \\\\times 10^3) + (5 \\\\times 10^2) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\)",
+            "\\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Decompose into place values: \\\\(90000 + 5000 + 70 + 2\\\\) (note that the hundreds digit is 0).",
+          "solution": "Express using powers of 10:\n\\\\(90000 = 9 \\\\times 10^4\\\\)\n\\\\(5000 = 5 \\\\times 10^3\\\\)\n\\\\(70 = 7 \\\\times 10^1\\\\)\n\\\\(2 = 2 \\\\times 1\\\\)\n\nCombine (ignoring the 0 term): \\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number into its place value components, noting the 0 in the hundreds place.",
+              "work": "\\\\(95072 = 90000 + 5000 + 0 + 70 + 2\\\\)"
+            },
+            {
+              "explain": "Represent each non-zero place value as a product with a power of 10.",
+              "work": "\\\\(90000 = 9 \\\\times 10^4, 5000 = 5 \\\\times 10^3, 70 = 7 \\\\times 10^1, 2 = 2 \\\\times 1\\\\)"
+            },
+            {
+              "explain": "Sum the components together.",
+              "work": "\\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expanded exponential notation to find the value:\\n\\\\((5 \\\\times 10^3) + (3 \\\\times 10^2) + (9 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
+          "options": [
+            "\\\\(53096\\\\)",
+            "\\\\(50396\\\\)",
+            "\\\\(53960\\\\)",
+            "\\\\(5396\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate each multiplication first, then sum the results.",
+          "solution": "Calculate each term:\n- \\\\(5 \\\\times 10^3 = 5 \\\\times 1000 = 5000\\\\)\n- \\\\(3 \\\\times 10^2 = 3 \\\\times 100 = 300\\\\)\n- \\\\(9 \\\\times 10^1 = 9 \\\\times 10 = 90\\\\)\n- \\\\(6 \\\\times 1 = 6\\\\)\n\nSum them up: \\\\(5000 + 300 + 90 + 6 = 5396\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the values of the powers of 10.",
+              "work": "\\\\(10^3 = 1000, 10^2 = 100, 10^1 = 10\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication for each placeholder value term.",
+              "work": "\\\\(5000, 300, 90, 6\\\\)"
+            },
+            {
+              "explain": "Sum all terms to find the final value.",
+              "work": "\\\\(5000 + 300 + 90 + 6 = 5396\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expanded exponential notation to find the value:\\n\\\\((8 \\\\times 10^5) + (0 \\\\times 10^4) + (2 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
+          "options": [
+            "\\\\(827600\\\\)",
+            "\\\\(802076\\\\)",
+            "\\\\(820760\\\\)",
+            "\\\\(802760\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Be careful with terms containing 0, as they act as place holders.",
+          "solution": "Calculate each term:\n- \\\\(8 \\\\times 10^5 = 800000\\\\)\n- \\\\(0 \\\\times 10^4 = 0\\\\)\n- \\\\(2 \\\\times 10^3 = 2000\\\\)\n- \\\\(0 \\\\times 10^2 = 0\\\\)\n- \\\\(7 \\\\times 10^1 = 70\\\\)\n- \\\\(6 \\\\times 1 = 6\\\\)\n\nSum: \\\\(800000 + 0 + 2000 + 0 + 70 + 6 = 802076\\\\).",
+          "steps": [
+            {
+              "explain": "Write out the value of each term in the sum.",
+              "work": "\\\\(800000 + 0 + 2000 + 0 + 70 + 6\\\\)"
+            },
+            {
+              "explain": "Use a place-value grid to align the numbers correctly.",
+              "work": "\\\\(\\begin{aligned} 800000 & \\text{ (hundred thousands)} \\\\ 2000 & \\text{ (thousands)} \\\\ 70 & \\text{ (tens)} \\\\ 6 & \\text{ (ones)} \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Add all non-zero components together.",
+              "work": "\\\\(802076\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded exponential notation:\\n\\\\(971\\\\)",
+          "options": [
+            "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^2) + (1 \\\\times 1)\\\\)",
+            "\\\\((9 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1)\\\\)",
+            "\\\\((9 \\\\times 10^1) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)",
+            "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Break down 971 into place values: \\\\(900 + 70 + 1\\\\). Then write each part using powers of 10.",
+          "solution": "Convert \\\\(971\\\\) into expanded form:\n- \\\\(900 = 9 \\\\times 100 = 9 \\\\times 10^2\\\\)\n- \\\\(70 = 7 \\\\times 10 = 7 \\\\times 10^1\\\\)\n- \\\\(1 = 1 \\\\times 1\\\\)\n\nCombine: \\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose the number 971 into its place value parts.",
+              "work": "\\\\(971 = 900 + 70 + 1\\\\)"
+            },
+            {
+              "explain": "Write each digit multiplied by its position value.",
+              "work": "\\\\((9 \\\\times 100) + (7 \\\\times 10) + (1 \\\\times 1)\\\\)"
+            },
+            {
+              "explain": "Convert the position values 100 and 10 to powers of 10.",
+              "work": "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded exponential notation:\\n\\\\(3406\\\\)",
+          "options": [
+            "\\\\((3 \\\\times 10^2) + (4 \\\\times 10^1) + (0 \\\\times 1) + (6 \\\\times 1)\\\\)",
+            "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (0 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
+            "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (6 \\\\times 1)\\\\)",
+            "\\\\((3 \\\\times 10^4) + (4 \\\\times 10^3) + (0 \\\\times 10^2) + (6 \\\\times 1)\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Break down 3406 into place values: \\\\(3000 + 400 + 0 + 6\\\\). Use powers of 10 for each place.",
+          "solution": "Convert \\\\(3406\\\\) into expanded form:\n- \\\\(3000 = 3 \\\\times 1000 = 3 \\\\times 10^3\\\\)\n- \\\\(400 = 4 \\\\times 100 = 4 \\\\times 10^2\\\\)\n- \\\\(0 = 0 \\\\times 10 = 0 \\\\times 10^1\\\\)\n- \\\\(6 = 6 \\\\times 1\\\\)\n\nCombine: \\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (0 \\\\times 10^1) + (6 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose the number 3406 into place value terms, keeping the zero placeholder.",
+              "work": "\\\\(3406 = 3000 + 400 + 0 + 6\\\\)"
+            },
+            {
+              "explain": "Write each term using base-10 multiplier factors.",
+              "work": "\\\\((3 \\\\times 1000) + (4 \\\\times 100) + (0 \\\\times 10) + (6 \\\\times 1)\\\\)"
+            },
+            {
+              "explain": "Convert the base-10 factors into exponents.",
+              "work": "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (0 \\\\times 10^1) + (6 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q4c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded exponential notation:\\n\\\\(29037\\\\)",
+          "options": [
+            "\\\\((2 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (3 \\\\times 1) + (7 \\\\times 1)\\\\)",
+            "\\\\((2 \\\\times 10^5) + (9 \\\\times 10^4) + (0 \\\\times 10^3) + (3 \\\\times 10^2) + (7 \\\\times 10^1)\\\\)",
+            "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)",
+            "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Break down 29037 into place values: \\\\(20000 + 9000 + 0 + 30 + 7\\\\). Use powers of 10.",
+          "solution": "Convert \\\\(29037\\\\) into expanded form:\n- \\\\(20000 = 2 \\\\times 10^4\\\\)\n- \\\\(9000 = 9 \\\\times 10^3\\\\)\n- \\\\(0 = 0 \\\\times 10^2\\\\)\n- \\\\(30 = 3 \\\\times 10^1\\\\)\n- \\\\(7 = 7 \\\\times 1\\\\)\n\nCombine: \\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number 29037 down to its place values.",
+              "work": "\\\\(29037 = 20000 + 9000 + 0 + 30 + 7\\\\)"
+            },
+            {
+              "explain": "Express each place value part as a product of a single digit and its multiplier.",
+              "work": "\\\\((2 \\\\times 10000) + (9 \\\\times 1000) + (0 \\\\times 100) + (3 \\\\times 10) + (7 \\\\times 1)\\\\)"
+            },
+            {
+              "explain": "Express position values in exponent base-10 notation.",
+              "work": "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct word notation for the number:\\n\\\\(2\\ 473\\ 907\\\\)",
+          "options": [
+            "Two million, four hundred and seventy-three thousand, nine hundred and seven",
+            "Two million, four hundred and seventy-three thousand, nine hundred and seventy",
+            "Two million, four hundred and seventy-three thousand, ninety-seven",
+            "Twenty-four million, seventy-three thousand, nine hundred and seven"
+          ],
+          "answer": 0,
+          "hint": "Group the digits in periods of three: Millions (2), Thousands (473), and Ones (907).",
+          "solution": "Break down by periods:\n- Millions: \\\\(2\\\\) (two million)\n- Thousands: \\\\(473\\\\) (four hundred and seventy-three thousand)\n- Ones: \\\\(907\\\\) (nine hundred and seven)\n\nCombine: Two million, four hundred and seventy-three thousand, nine hundred and seven.",
+          "steps": [
+            {
+              "explain": "Divide the digits into place value periods using commas or spaces.",
+              "work": "\\\\(2 \\text{ (Millions)}, 473 \\text{ (Thousands)}, 907 \\text{ (Ones)}\\\\)"
+            },
+            {
+              "explain": "Convert each period to words.",
+              "work": "\\\\(\\begin{aligned} 2 &\\implies \\text{two million} \\\\ 473 &\\implies \\text{four hundred and seventy-three thousand} \\\\ 907 &\\implies \\text{nine hundred and seven} \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Assemble the full phrase.",
+              "work": "\\\\(\\text{Two million, four hundred and seventy-three thousand, nine hundred and seven}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct word notation for the number:\\n\\\\(97\\ 003\\ 002\\\\)",
+          "options": [
+            "Ninety-seven thousand, three hundred and two",
+            "Ninety-seven million, thirty thousand and two",
+            "Ninety-seven million, three thousand and two",
+            "Nine million, seven hundred and three thousand and two"
+          ],
+          "answer": 2,
+          "hint": "Identify the periods of the digits: Millions (97), Thousands (003), and Ones (002).",
+          "solution": "Break down by periods:\n- Millions: \\\\(97\\\\) (ninety-seven million)\n- Thousands: \\\\(003\\\\) (three thousand)\n- Ones: \\\\(002\\\\) (two)\n\nCombine: Ninety-seven million, three thousand and two.",
+          "steps": [
+            {
+              "explain": "Identify the periods of \\\\(97\\ 003\\ 002\\\\).",
+              "work": "\\\\(97 \\text{ (Millions)}, 003 \\text{ (Thousands)}, 002 \\text{ (Ones)}\\\\)"
+            },
+            {
+              "explain": "Write each period's value in words.",
+              "work": "\\\\(\\begin{aligned} 97 &\\implies \\text{ninety-seven million} \\\\ 003 &\\implies \\text{three thousand} \\\\ 002 &\\implies \\text{two} \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Join the parts with appropriate commas and conjunctions.",
+              "work": "\\\\(\\text{Ninety-seven million, three thousand and two}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct word notation for the number:\\n\\\\(817\\ 653\\\\)",
+          "options": [
+            "Eight hundred and seventy thousand, six hundred and fifty-three",
+            "Eight hundred and sixteen thousand, five hundred and sixty-three",
+            "Eight hundred and seventeen thousand, six hundred and fifty-three",
+            "Eight hundred and seventeen thousand, six hundred and thirty-five"
+          ],
+          "answer": 2,
+          "hint": "Identify the periods: Thousands (817) and Ones (653).",
+          "solution": "Break down by periods:\n- Thousands: \\\\(817\\\\) (eight hundred and seventeen thousand)\n- Ones: \\\\(653\\\\) (six hundred and fifty-three)\n\nCombine: Eight hundred and seventeen thousand, six hundred and fifty-three.",
+          "steps": [
+            {
+              "explain": "Identify the periods of the number \\\\(817\\ 653\\\\).",
+              "work": "\\\\(817 \\text{ (Thousands)}, 653 \\text{ (Ones)}\\\\)"
+            },
+            {
+              "explain": "Convert each group value to words.",
+              "work": "\\\\(\\begin{aligned} 817 &\\implies \\text{eight hundred and seventeen thousand} \\\\ 653 &\\implies \\text{six hundred and fifty-three} \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Assemble the completed phrase.",
+              "work": "\\\\(\\text{Eight hundred and seventeen thousand, six hundred and fifty-three}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded exponential notation:\\n\\\\(76\\ 015\\\\)",
+          "options": [
+            "\\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (0 \\\\times 10^2) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^3) + (6 \\\\times 10^2) + (0 \\\\times 10^1) + (1 \\\\times 1) + (5 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^5) + (6 \\\\times 10^4) + (0 \\\\times 10^3) + (1 \\\\times 10^2) + (5 \\\\times 10^1)\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Break down 76 015 into place values: \\\\(70000 + 6000 + 0 + 10 + 5\\\\). Write each using powers of 10.",
+          "solution": "Convert \\\\(76\\ 015\\\\) into expanded form:\n- \\\\(70000 = 7 \\\\times 10^4\\\\)\n- \\\\(6000 = 6 \\\\times 10^3\\\\)\n- \\\\(0 = 0 \\\\times 10^2\\\\)\n- \\\\(10 = 1 \\\\times 10^1\\\\)\n- \\\\(5 = 5 \\\\times 1\\\\)\n\nCombine: \\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (0 \\\\times 10^2) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose the number 76015 into place values.",
+              "work": "\\\\(76015 = 70000 + 6000 + 0 + 10 + 5\\\\)"
+            },
+            {
+              "explain": "Write each term as a digit multiplied by its position value.",
+              "work": "\\\\((7 \\\\times 10000) + (6 \\\\times 1000) + (0 \\\\times 100) + (1 \\\\times 10) + (5 \\\\times 1)\\\\)"
+            },
+            {
+              "explain": "Replace position values with base-10 powers.",
+              "work": "\\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (0 \\\\times 10^2) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded exponential notation:\\n\\\\(713\\ 860\\\\)",
+          "options": [
+            "\\\\((7 \\\\times 10^6) + (1 \\\\times 10^5) + (3 \\\\times 10^4) + (8 \\\\times 10^3) + (6 \\\\times 10^2) + (0 \\\\times 10^1)\\\\)",
+            "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1) + (0 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^4) + (1 \\\\times 10^3) + (3 \\\\times 10^2) + (8 \\\\times 10^1) + (6 \\\\times 1) + (0 \\\\times 1)\\\\)",
+            "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1)\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Break down 713 860 into place values: \\\\(700000 + 10000 + 3000 + 800 + 60 + 0\\\\). Write each using powers of 10.",
+          "solution": "Convert \\\\(713\\ 860\\\\) into expanded form:\n- \\\\(700000 = 7 \\\\times 10^5\\\\)\n- \\\\(10000 = 1 \\\\times 10^4\\\\)\n- \\\\(3000 = 3 \\\\times 10^3\\\\)\n- \\\\(800 = 8 \\\\times 10^2\\\\)\n- \\\\(60 = 6 \\\\times 10^1\\\\)\n- \\\\(0 = 0 \\\\times 1\\\\)\n\nCombine: \\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1) + (0 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose 713 860 by place values.",
+              "work": "\\\\(713860 = 700000 + 10000 + 3000 + 800 + 60 + 0\\\\)"
+            },
+            {
+              "explain": "Write as products of digits and place value factors.",
+              "work": "\\\\((7 \\\\times 100000) + (1 \\\\times 10000) + (3 \\\\times 1000) + (8 \\\\times 100) + (6 \\\\times 10) + (0 \\\\times 1)\\\\)"
+            },
+            {
+              "explain": "Convert place factors to base-10 powers.",
+              "work": "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1) + (0 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in expanded exponential notation:\\n\\\\(3\\ 421\\ 907\\\\)",
+          "options": [
+            "\\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (7 \\\\times 1)\\\\)",
+            "\\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (7 \\\\times 1)\\\\)",
+            "\\\\((3 \\\\times 10^7) + (4 \\\\times 10^6) + (2 \\\\times 10^5) + (1 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^1)\\\\)",
+            "\\\\((3 \\\\times 10^5) + (4 \\\\times 10^4) + (2 \\\\times 10^3) + (1 \\\\times 10^2) + (9 \\\\times 10^1) + (0 \\\\times 1) + (7 \\\\times 1)\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Break down 3 421 907 into place values: \\\\(3000000 + 400000 + 20000 + 1000 + 900 + 0 + 7\\\\). Write each using powers of 10.",
+          "solution": "Convert \\\\(3\\ 421\\ 907\\\\) into expanded form:\n- \\\\(3000000 = 3 \\\\times 10^6\\\\)\n- \\\\(400000 = 4 \\\\times 10^5\\\\)\n- \\\\(20000 = 2 \\\\times 10^4\\\\)\n- \\\\(1000 = 1 \\\\times 10^3\\\\)\n- \\\\(900 = 9 \\\\times 10^2\\\\)\n- \\\\(0 = 0 \\\\times 10^1\\\\)\n- \\\\(7 = 7 \\\\times 1\\\\)\n\nCombine: \\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (7 \\\\times 1)\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose 3 421 907 by place values.",
+              "work": "\\\\(3421907 = 3000000 + 400000 + 20000 + 1000 + 900 + 0 + 7\\\\)"
+            },
+            {
+              "explain": "Write as products of digits and place value factors.",
+              "work": "\\\\((3 \\\\times 1000000) + (4 \\\\times 100000) + (2 \\\\times 10000) + (1 \\\\times 1000) + (9 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1)\\\\)"
+            },
+            {
+              "explain": "Convert place factors to base-10 powers.",
+              "work": "\\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (7 \\\\times 1)\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-1b",
+      "code": "1B",
+      "title": "The number line",
+      "questions": [
+        {
+          "id": "y6-wn-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round off the number $83\\,642$ to the nearest $10\\,000$.",
+          "options": [
+            "80000",
+            "84000",
+            "88000",
+            "72000"
+          ],
+          "answer": 0,
+          "hint": "Look at the digit in the thousands place (which is $3$). If it is less than $5$, round down.",
+          "solution": "1. The digit in the ten-thousands place is $8$.\n2. The digit to its right (thousands place) is $3$.\n3. Since $3 < 5$, we round down. The $8$ remains, and all digits to the right become zero.\n\nResult: $80\\,000$.",
+          "steps": [
+            {
+              "explain": "Identify the digit in the rounding place (ten-thousands) and the digit immediately to its right (thousands).",
+              "work": "\\mathbf{8}\\underline{3},642"
+            },
+            {
+              "explain": "Compare the check digit (thousands place) to 5. Since \\(3 < 5\\), round down (keep the 8 and replace subsequent numbers with zeros).",
+              "work": "3 < 5 \\rightarrow 80,000"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Round off the number $4\\,517\\,380$ to the nearest $10\\,000$.",
+          "options": [
+            "4068000",
+            "4972000",
+            "4520000",
+            "4746000"
+          ],
+          "answer": 2,
+          "hint": "Identify the ten-thousands place (which has a $1$). Look at the digit to its right ($7$) to decide whether to round up or down.",
+          "solution": "1. The ten-thousands place is $1$.\n2. The digit to its right is $7$.\n3. Since $7 \\ge 5$, round up. Add $1$ to the ten-thousands place ($1 + 1 = 2$) and change all digits to the right to zero.\n\nResult: $4\\,520\\,000$.",
+          "steps": [
+            {
+              "explain": "Locate the ten-thousands digit and the indicator digit.",
+              "work": "4,5\\mathbf{1}\\underline{7},380"
+            },
+            {
+              "explain": "Since the indicator digit is \\(7\\), which is \\(5\\) or greater, round up by adding 1 to the ten-thousands place.",
+              "work": "7 \\ge 5 \\rightarrow 4,5(1+1)0,000 = 4,520,000"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round off the number $849$ to the nearest $100$.",
+          "options": [
+            "720",
+            "880",
+            "800",
+            "840"
+          ],
+          "answer": 2,
+          "hint": "Look at the tens place digit ($4$) to decide whether to round the hundreds digit up or down.",
+          "solution": "1. Rounding place (hundreds): $8$\n2. Deciding digit (tens): $4$\n3. Since $4 < 5$, round down.\n\nResult: $800$.",
+          "steps": [
+            {
+              "explain": "Underline the hundreds place and check the tens digit.",
+              "work": "\\mathbf{8}\\underline{4}9"
+            },
+            {
+              "explain": "Because the tens digit is \\(4\\) (less than 5), round down.",
+              "work": "4 < 5 \\rightarrow 800"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round off the number $750$ to the nearest $100$.",
+          "options": [
+            "840",
+            "800",
+            "720",
+            "880"
+          ],
+          "answer": 1,
+          "hint": "Look at the tens place digit ($5$). When the digit is exactly $5$, we round up.",
+          "solution": "1. Rounding place (hundreds): $7$\n2. Deciding digit (tens): $5$\n3. Since the tens digit is $5$, we round up. Add $1$ to $7$ to get $8$, and write zeros.\n\nResult: $800$.",
+          "steps": [
+            {
+              "explain": "Identify the digit to check.",
+              "work": "\\mathbf{7}\\underline{5}0"
+            },
+            {
+              "explain": "Since the deciding digit is exactly \\(5\\), round up by adding 1 to the hundreds place.",
+              "work": "5 \\ge 5 \\rightarrow 800"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q25",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the number $86$ closer to $80$ or to $90$? Choose the correct statement.",
+          "options": [
+            "Closer to 80; rounds to 90",
+            "Closer to 90; rounds to 90",
+            "Closer to 80; rounds to 80",
+            "Closer to 90; rounds to 80"
+          ],
+          "answer": 1,
+          "hint": "Find the distance from $86$ to $80$ and to $90$. The midpoint is $85$.",
+          "solution": "Distance to $80$: $86 - 80 = 6$\nDistance to $90$: $90 - 86 = 4$\n\nSince $4 < 6$, it is closer to $90$. Rounding $86$ to the nearest $10$ yields $90$.",
+          "steps": [
+            {
+              "explain": "Calculate the distance from \\(86\\) to the two boundary tens (\\(80\\) and \\(90\\)).",
+              "work": "\\begin{aligned} \\text{Distance to } 80 &= |86 - 80| = 6 \\\\ \\text{Distance to } 90 &= |86 - 90| = 4 \\end{aligned}"
+            },
+            {
+              "explain": "Compare the distances. The smaller distance indicates which number it is closer to.",
+              "work": "4 < 6 \\rightarrow \\text{Closer to } 90"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare $8^2$ and $60$ using the correct inequality symbol.",
+          "options": [
+            "8^2 < 60",
+            "None of the above",
+            "8^2 > 60",
+            "8^2 = 60"
+          ],
+          "answer": 2,
+          "hint": "First calculate the value of $8^2$ (which is $8 \\times 8$) and then compare it to $60$.",
+          "solution": "1. Calculate exponent: $8^2 = 8 \\times 8 = 64$\n2. Compare values: Since $64$ is greater than $60$, we write: $8^2 > 60$.",
+          "steps": [
+            {
+              "explain": "Evaluate the exponent \\(8^2\\).",
+              "work": "8^2 = 8 \\times 8 = 64"
+            },
+            {
+              "explain": "Compare the result with \\(60\\).",
+              "work": "64 > 60"
+            },
+            {
+              "explain": "Substitute the original expression back into the inequality.",
+              "work": "8^2 > 60"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare $3 \\times (4 + 2)$ and $20 - 2$ with the correct symbol.",
+          "options": [
+            "\\(3 \\times (4 + 2) = 20 - 2\\)",
+            "\\(3 \\times (4 + 2) > 20 - 2\\)",
+            "None of the above",
+            "\\(3 \\times (4 + 2) < 20 - 2\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate both sides of the expression first. Follow the order of operations (BODMAS) for the left side.",
+          "solution": "Left Side: $3 \\times (4 + 2) = 3 \\times 6 = 18$\nRight Side: $20 - 2 = 18$\n\nSince both sides equal $18$, the correct symbol is $=$.",
+          "steps": [
+            {
+              "explain": "Evaluate the left side, starting with the addition inside the brackets.",
+              "work": "\\begin{aligned} 3 \\times (4 + 2) &= 3 \\times 6 \\\\ &= 18 \\end{aligned}"
+            },
+            {
+              "explain": "Evaluate the right side.",
+              "work": "20 - 2 = 18"
+            },
+            {
+              "explain": "Compare the two final values.",
+              "work": "18 = 18 \\rightarrow 3 \\times (4 + 2) = 20 - 2"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q28",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round off $14\\,376$ to the nearest thousand ($1\\,000$).",
+          "options": [
+            "14000",
+            "14700",
+            "15400",
+            "12600"
+          ],
+          "answer": 0,
+          "hint": "Find the thousands digit ($4$) and check the hundreds digit ($3$) to its right.",
+          "solution": "1. Rounding place (thousands): $4$\n2. Checking digit (hundreds): $3$\n3. Since $3 < 5$, round down.\n\nResult: $14\\,000$.",
+          "steps": [
+            {
+              "explain": "Identify the digits.",
+              "work": "1\\mathbf{4}, underline{3}76"
+            },
+            {
+              "explain": "Because the hundreds digit is \\(3\\) (less than 5), round down.",
+              "work": "3 < 5 \\rightarrow 14,000"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare $2^4$ and $4^2$ with the correct symbol.",
+          "options": [
+            "2^4 < 4^2",
+            "None of the above",
+            "2^4 = 4^2",
+            "2^4 > 4^2"
+          ],
+          "answer": 2,
+          "hint": "Calculate $2^4$ ($2 \\times 2 \\times 2 \\times 2$) and $4^2$ ($4 \\times 4$) separately, then compare.",
+          "solution": "1. $2^4 = 2 \\times 2 \\times 2 \\times 2 = 16$\n2. $4^2 = 4 \\times 4 = 16$\n\nBoth values are equal, so $2^4 = 4^2$.",
+          "steps": [
+            {
+              "explain": "Evaluate the first power (\\(2^4\\)).",
+              "work": "2^4 = 2 \\times 2 \\times 2 \\times 2 = 16"
+            },
+            {
+              "explain": "Evaluate the second power (\\(4^2\\)).",
+              "work": "4^2 = 4 \\times 4 = 16"
+            },
+            {
+              "explain": "Compare the calculated values.",
+              "work": "16 = 16 \\rightarrow 2^4 = 4^2"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Round off the number $899\\,950$ to the nearest hundred ($100$).",
+          "options": [
+            "945000",
+            "900000",
+            "810000",
+            "990000"
+          ],
+          "answer": 1,
+          "hint": "Find the hundreds digit ($9$). Look at the tens digit ($5$). Notice how rounding up triggers a chain of carrying over.",
+          "solution": "1. Hundreds digit is $9$. Deciding digit (tens) is $5$, so round up.\n2. Add $1$ to the hundreds place: $9 + 1 = 10$ (write $0$, carry over $1$ to the thousands place).\n3. Thousands place: $9 + 1 = 10$ (write $0$, carry over $1$ to ten-thousands).\n4. Ten-thousands place: $9 + 1 = 10$ (write $0$, carry over $1$ to hundred-thousands).\n5. Hundred-thousands place: $8 + 1 = 9$.\n\nResult: $900\\,000$.",
+          "steps": [
+            {
+              "explain": "Identify the digit to round and the deciding digit.",
+              "work": "899, mathbf{9}\\underline{5}0"
+            },
+            {
+              "explain": "Since the deciding digit is \\(5\\), we round up. Add 1 to the hundreds place, which carries over repeatedly to the left.",
+              "work": "\\begin{aligned} 899,900 + 100 &= 900,000 \\end{aligned}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Determine the closer multiple of 10:\nIs \\(84\\) closer to \\(80\\) or \\(90\\)?",
+          "options": [
+            "\\(80\\)",
+            "\\(90\\)",
+            "It is exactly halfway between them",
+            "\\(85\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the units digit. If it is less than 5, it is closer to the lower multiple.",
+          "solution": "84 is 4 units away from 80 and 6 units away from 90. Therefore, it is closer to 80.",
+          "steps": [
+            {
+              "explain": "Find the distance from 84 to 80.",
+              "work": "\\(84 - 80 = 4\\)"
+            },
+            {
+              "explain": "Find the distance from 84 to 90.",
+              "work": "\\(90 - 84 = 6\\)"
+            },
+            {
+              "explain": "Compare the distances. Since 4 is less than 6, 84 is closer to 80.",
+              "work": "\\(4 < 6 \\implies 80\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Round off the following number to the nearest ten:\n\\(84\\)",
+          "options": [
+            "\\(90\\)",
+            "\\(84\\)",
+            "\\(85\\)",
+            "\\(80\\)"
+          ],
+          "answer": 3,
+          "hint": "Look at the units digit. If the units digit is less than 5, round down.",
+          "solution": "In 84, the units digit is 4. Since 4 is less than 5, we round down to 80.",
+          "steps": [
+            {
+              "explain": "Identify the units digit of 84.",
+              "work": "\\text{Units digit} = 4"
+            },
+            {
+              "explain": "Compare the units digit to 5. Since 4 is less than 5, round down.",
+              "work": "\\(4 < 5 \\implies\\text{round down}\\)"
+            },
+            {
+              "explain": "Change the units digit to zero.",
+              "work": "\\(84 \\approx 80\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Round off the following number to the nearest hundred:\n\\(749\\)",
+          "options": [
+            "\\(740\\)",
+            "\\(700\\)",
+            "\\(750\\)",
+            "\\(800\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the tens digit. If it is less than 5, round down.",
+          "solution": "The tens digit in 749 is 4. Since 4 is less than 5, we round down to 700.",
+          "steps": [
+            {
+              "explain": "Identify the tens digit of 749.",
+              "work": "\\text{Tens digit} = 4"
+            },
+            {
+              "explain": "Since 4 < 5, round down.",
+              "work": "\\(749 \\approx 700\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Round off the following number to the nearest hundred:\n\\(751\\)",
+          "options": [
+            "\\(800\\)",
+            "\\(750\\)",
+            "\\(700\\)",
+            "\\(760\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the tens digit. If it is 5 or more, round up.",
+          "solution": "The tens digit in 751 is 5. Since it is 5 or more, we round up to 800.",
+          "steps": [
+            {
+              "explain": "Identify the tens digit of 751.",
+              "work": "\\text{Tens digit} = 5"
+            },
+            {
+              "explain": "Since 5 \\ge 5, round up.",
+              "work": "\\(751 \\approx 800\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Round off the following number to the nearest hundred:\n\\(750\\)",
+          "options": [
+            "\\(760\\)",
+            "\\(700\\)",
+            "\\(750\\)",
+            "\\(800\\)"
+          ],
+          "answer": 3,
+          "hint": "Look at the tens digit. If it is 5 or more, round up.",
+          "solution": "The tens digit in 750 is 5. We round up to 800.",
+          "steps": [
+            {
+              "explain": "Identify the tens digit.",
+              "work": "\\text{Tens digit} = 5"
+            },
+            {
+              "explain": "Since 5 \\ge 5, round up.",
+              "work": "\\(750 \\approx 800\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q6d_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Round off the following number to the nearest hundred:\n\\(1\\ 432\\)",
+          "options": [
+            "\\(1\\ 430\\)",
+            "\\(1\\ 500\\)",
+            "\\(1\\ 000\\)",
+            "\\(1\\ 400\\)"
+          ],
+          "answer": 3,
+          "hint": "Look at the tens digit. If it is less than 5, round down.",
+          "solution": "The tens digit in 1 432 is 3. Since 3 is less than 5, we round down to 1 400.",
+          "steps": [
+            {
+              "explain": "Identify the tens digit of 1 432.",
+              "work": "\\text{Tens digit} = 3"
+            },
+            {
+              "explain": "Since 3 < 5, round down.",
+              "work": "\\(1432 \\approx 1400\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Choose the correct comparison symbol to place in the box:\n\\\\(7 \\\\quad \\\\square \\\\quad 6\\\\)",
+          "options": [
+            "\\\\(\\le\\\\)",
+            "\\\\(>\\\\)",
+            "\\\\(<\\\\)",
+            "\\\\(=\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Recall the meaning of the symbols: \\\\(>\\\\) means greater than, \\\\(<\\\\) means less than, and \\\\(=\\\\) means equal to.",
+          "solution": "Since \\\\(7\\\\) is larger than \\\\(6\\\\), the correct symbol is \\\\(>\\\\).",
+          "steps": [
+            {
+              "explain": "Compare the values of the two numbers on the number line.",
+              "work": "\\\\(7 > 6\\\\)"
+            }
+          ],
+          "timeLimit": 30,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9b_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Choose the correct comparison symbol to place in the box:\n\\\\(5^2 \\\\quad \\\\square \\\\quad 25\\\\)",
+          "options": [
+            "\\\\(<\\\\)",
+            "\\\\(=\\\\)",
+            "\\\\(>\\\\)",
+            "\\\\(\\ne\\\\)"
+          ],
+          "answer": 1,
+          "hint": "First evaluate the exponent: \\\\(5^2 = 5 \\\\times 5\\\\).",
+          "solution": "Evaluate and compare:\n\\\\(5^2 = 5 \\\\times 5 = 25\\\\)\nSince \\\\(25 = 25\\\\), the correct symbol is \\\\(=\\\\).",
+          "steps": [
+            {
+              "explain": "Evaluate the exponential term on the left side.",
+              "work": "\\\\(5^2 = 5 \\\\times 5 = 25\\\\)"
+            },
+            {
+              "explain": "Compare the evaluated left side with the right side.",
+              "work": "\\\\(25 = 25\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q9c_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Choose the correct comparison symbol to place in the box:\n\\\\(3 \\\\quad \\\\square \\\\quad 10\\\\)",
+          "options": [
+            "\\\\(\\ge\\\\)",
+            "\\\\(<\\\\)",
+            "\\\\(=\\\\)",
+            "\\\\(>\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare the relative size of \\\\(3\\\\) and \\\\(10\\\\).",
+          "solution": "Since \\\\(3\\\\) is smaller than \\\\(10\\\\), the correct symbol is \\\\(<\\\\).",
+          "steps": [
+            {
+              "explain": "Compare the values of the two numbers.",
+              "work": "\\\\(3 < 10\\\\)"
+            }
+          ],
+          "timeLimit": 30,
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q11a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the mathematical statement that represents the phrase:\\n\\\\(7\\\\) is not equal to \\\\(6\\\\).",
+          "options": [
+            "\\\\(7 > 6\\\\)",
+            "\\\\(7 \\\\neq 6\\\\)",
+            "\\\\(7 = 6\\\\)",
+            "\\\\(7 < 6\\\\)"
+          ],
+          "answer": 1,
+          "hint": "The symbol for 'not equal' is a slash through an equals sign: \\\\(\\neq\\\\).",
+          "solution": "Identify the symbols:\n- 'is not equal to' is represented by \\\\(\\neq\\\\).\n- Therefore, the statement is \\\\(7 \\\\neq 6\\\\).",
+          "steps": [
+            {
+              "explain": "Recall the symbols for mathematical relations.",
+              "work": "\\\\(\\begin{aligned} = &\\quad \\text{equal} \\\\ \\neq &\\quad \\text{not equal} \\\\ > &\\quad \\text{greater than} \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Write the numbers 7 and 6 on either side of the relation symbol.",
+              "work": "\\\\(7 \\quad \\text{[relation]} \\quad 6\\\\)"
+            },
+            {
+              "explain": "Insert the 'not equal to' symbol to complete the statement.",
+              "work": "\\\\(7 \\\\neq 6\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q11b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the mathematical statement that represents the phrase:\\nTherefore, the square of \\\\(6\\\\) is equal to \\\\(36\\\\).",
+          "options": [
+            "\\\\(\\therefore 6^2 \\\\neq 36\\\\)",
+            "\\\\(\\because 6^2 = 36\\\\)",
+            "\\\\(\\therefore 6 \\\\times 2 = 36\\\\)",
+            "\\\\(\\therefore 6^2 = 36\\\\)"
+          ],
+          "answer": 3,
+          "hint": "The symbol for 'therefore' is three dots forming a triangle: \\\\(\\therefore\\\\). 'Square of 6' is \\\\(6^2\\\\).",
+          "solution": "Identify the symbols:\n- 'Therefore' is \\\\(\\therefore\\\\).\n- 'Square of 6' is \\\\(6^2\\\\).\n- 'Is equal to' is \\\\(=\\\\).\n- The statement is \\\\(\\therefore 6^2 = 36\\\\).",
+          "steps": [
+            {
+              "explain": "Find the symbol representing the logical transition 'therefore'.",
+              "work": "\\\\(\\text{Therefore} \\implies \\therefore\\\\)"
+            },
+            {
+              "explain": "Translate the mathematical terms 'square of 6' and 'is equal to 36'.",
+              "work": "\\\\(\\text{Square of 6} = 6^2, quad \\text{is equal to 36} = 36\\\\)"
+            },
+            {
+              "explain": "Combine the logical symbol and the mathematical equation.",
+              "work": "\\\\(\\therefore 6^2 = 36\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q11c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the mathematical statement that represents the phrase:\\n\\\\(8\\\\) is less than the sum of \\\\(5\\\\) and \\\\(6\\\\).",
+          "options": [
+            "\\\\(8 = 5 + 6\\\\)",
+            "\\\\(8 < 5 + 6\\\\)",
+            "\\\\(8 > 5 + 6\\\\)",
+            "\\\\(8 < 5 \\\\times 6\\\\)"
+          ],
+          "answer": 1,
+          "hint": "The symbol for 'less than' is \\\\(<\\\\). The sum of 5 and 6 is written as \\\\(5 + 6\\\\).",
+          "solution": "Identify the symbols:\n- 'is less than' is \\\\(<\\\\).\n- 'sum of 5 and 6' is \\\\(5 + 6\\\\).\n- Combine: \\\\(8 < 5 + 6\\\\).",
+          "steps": [
+            {
+              "explain": "Translate the phrase 'the sum of 5 and 6' into math.",
+              "work": "\\\\(5 + 6\\\\)"
+            },
+            {
+              "explain": "Identify the inequality symbol for 'is less than'.",
+              "work": "\\\\(<\\\\)"
+            },
+            {
+              "explain": "Assemble the full inequality relation statement.",
+              "work": "\\\\(8 < 5 + 6\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3a_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Round off the following number to the nearest \\\\(10\\ 000\\\\):\\n\\\\(72\\ 506\\\\)",
+          "options": [
+            "\\\\(70\\ 000\\\\)",
+            "\\\\(72\\ 000\\\\)",
+            "\\\\(73\\ 000\\\\)",
+            "\\\\(80\\ 000\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the digit in the thousands place (2) to decide whether to round up or down.",
+          "solution": "Round to nearest 10 000:\n- The thousands digit is \\\\(2\\\\).\n- Since \\\\(2 < 5\\\\), round down.\n- The number becomes \\\\(70\\ 000\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the digit in the ten-thousands place and the thousands place.",
+              "work": "\\\\(\\text{Ten-thousands digit} = 7, quad \\text{Thousands digit} = 2\\\\)"
+            },
+            {
+              "explain": "Apply the rounding rule: if the thousands digit is less than 5, round down.",
+              "work": "\\\\(2 < 5 \\implies \\text{Round down}\\\\)"
+            },
+            {
+              "explain": "Replace all digits to the right of the ten-thousands place with zeros.",
+              "work": "\\\\(70\\ 000\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3b_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Round off the following number to the nearest \\\\(10\\ 000\\\\):\\n\\\\(3\\ 408\\ 500\\\\)",
+          "options": [
+            "\\\\(3\\ 410\\ 000\\\\)",
+            "\\\\(3\\ 400\\ 000\\\\)",
+            "\\\\(3\\ 420\\ 000\\\\)",
+            "\\\\(3\\ 500\\ 000\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the thousands digit (8) to decide whether to round up or down.",
+          "solution": "Round to nearest 10 000:\n- The thousands digit is \\\\(8\\\\).\n- Since \\\\(8 \\\\ge 5\\\\), round up.\n- Increase the ten-thousands digit (0) by 1 to make it 1.\n- The number becomes \\\\(3\\ 410\\ 000\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the target rounding column and the digit immediately to its right.",
+              "work": "\\\\(\\text{Ten-thousands digit} = 0, quad \\text{Thousands digit} = 8\\\\)"
+            },
+            {
+              "explain": "Apply the rounding rule: since the thousands digit is 8, which is greater than or equal to 5, round up.",
+              "work": "\\\\(8 \\ge 5 \\implies \\text{Round up}\\\\)"
+            },
+            {
+              "explain": "Increase the ten-thousands digit by 1 and replace all following digits with zero.",
+              "work": "\\\\(3\\ 400\\ 000 + 10\\ 000 = 3\\ 410\\ 000\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q3c_p20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Round off the following number to the nearest \\\\(10\\ 000\\\\):\\n\\\\(676\\ 403\\\\)",
+          "options": [
+            "\\\\(700\\ 000\\\\)",
+            "\\\\(676\\ 000\\\\)",
+            "\\\\(670\\ 000\\\\)",
+            "\\\\(680\\ 000\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Look at the thousands digit (6) to decide whether to round up or down.",
+          "solution": "Round to nearest 10 000:\n- The thousands digit is \\\\(6\\\\).\n- Since \\\\(6 \\\\ge 5\\\\), round up.\n- Increase the ten-thousands digit (7) by 1 to make it 8.\n- The number becomes \\\\(680\\ 000\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the digit in the ten-thousands column and the thousands column.",
+              "work": "\\\\(\\text{Ten-thousands digit} = 7, quad \\text{Thousands digit} = 6\\\\)"
+            },
+            {
+              "explain": "Evaluate the rounding condition based on the thousands digit.",
+              "work": "\\\\(6 \\ge 5 \\implies \\text{Round up}\\\\)"
+            },
+            {
+              "explain": "Add 1 to the ten-thousands digit and zero out the lower positions.",
+              "work": "\\\\(670\\ 000 + 10\\ 000 = 680\\ 000\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-1c",
+      "code": "1C",
+      "title": "Counting",
+      "questions": [
+        {
+          "id": "y6-wn-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the Roman numeral $CLXXIV$ to a Hindu-Arabic numeral (our standard number system).",
+          "options": [
+            "174",
+            "183",
+            "157",
+            "191"
+          ],
+          "answer": 0,
+          "hint": "Break the Roman numeral down from left to right: $C = 100$, $L = 50$, $X = 10$, and look out for subtractive pairs like $IV$.",
+          "solution": "To convert $CLXXIV$:\n1. $C = 100$\n2. $L = 50$\n3. $XX = 10 + 10 = 20$\n4. $IV = 5 - 1 = 4$\n\nAdding these together: $100 + 50 + 20 + 4 = 174$.",
+          "steps": [
+            {
+              "explain": "Identify the value of each individual Roman numeral symbol in the expression.",
+              "work": "\\begin{aligned} C &= 100 \\\\ L &= 50 \\\\ X &= 10 \\\\ V &= 5 \\\\ I &= 1 \\end{aligned}"
+            },
+            {
+              "explain": "Group the symbols and check for subtractive patterns. Since \\(I\\) (1) is placed before \\(V\\) (5), it represents subtraction: \\(5 - 1 = 4\\).",
+              "work": "\\begin{aligned} CLXXIV &= C + L + X + X + (V - I) \\\\ &= 100 + 50 + 10 + 10 + (5 - 1) \\end{aligned}"
+            },
+            {
+              "explain": "Sum the values to find the final Hindu-Arabic numeral.",
+              "work": "100 + 50 + 20 + 4 = 174"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the Roman numeral $CDLVI$ to a Hindu-Arabic numeral.",
+          "options": [
+            "502",
+            "479",
+            "456",
+            "410"
+          ],
+          "answer": 2,
+          "hint": "Note that $C$ (100) comes before $D$ (500), which forms the subtractive pair $CD = 400$.",
+          "solution": "To convert $CDLVI$:\n1. $CD = 500 - 100 = 400$\n2. $L = 50$\n3. $V = 5$\n4. $I = 1$\n\nSumming the values: $400 + 50 + 5 + 1 = 456$.",
+          "steps": [
+            {
+              "explain": "Identify standard values and detect the subtractive pair \\(CD\\).",
+              "work": "\\begin{aligned} CD &= 500 - 100 = 400 \\\\ L &= 50 \\\\ V &= 5 \\\\ I &= 1 \\end{aligned}"
+            },
+            {
+              "explain": "Sum the values of the grouped segments.",
+              "work": "\\begin{aligned} CDLVI &= CD + L + V + I \\\\ &= 400 + 50 + 5 + 1 \\\\ &= 456 \\end{aligned}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the Roman numeral $CMXCVIII$ to a Hindu-Arabic numeral.",
+          "options": [
+            "1098",
+            "998",
+            "1048",
+            "898"
+          ],
+          "answer": 1,
+          "hint": "Look for subtractive pairs: $CM$ (100 before 1000) and $XC$ (10 before 100).",
+          "solution": "To convert $CMXCVIII$:\n1. $CM = 1000 - 100 = 900$\n2. $XC = 100 - 10 = 90$\n3. $VIII = 5 + 3 = 8$\n\nSumming the values: $900 + 90 + 8 = 998$.",
+          "steps": [
+            {
+              "explain": "Identify the subtractive pairs \\(CM\\) and \\(XC\\) along with the basic numerals.",
+              "work": "\\begin{aligned} CM &= 1000 - 100 = 900 \\\\ XC &= 100 - 10 = 90 \\\\ VIII &= 5 + 3 = 8 \\end{aligned}"
+            },
+            {
+              "explain": "Sum the values of the segments together.",
+              "work": "\\begin{aligned} CMXCVIII &= 900 + 90 + 8 \\\\ &= 998 \\end{aligned}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the Roman numeral $CCLXIX$ to a Hindu-Arabic numeral.",
+          "options": [
+            "296",
+            "282",
+            "269",
+            "242"
+          ],
+          "answer": 2,
+          "hint": "Break down the parts: $CC = 200$, $LX = 60$, and $IX$ is a subtractive pair.",
+          "solution": "To convert $CCLXIX$:\n1. $CC = 200$\n2. $L = 50$\n3. $X = 10$\n4. $IX = 10 - 1 = 9$\n\nSumming the values: $200 + 50 + 10 + 9 = 269$.",
+          "steps": [
+            {
+              "explain": "Group the numeral symbols into hundreds, tens, and units.",
+              "work": "\\begin{aligned} CC &= 200 \\\\ LX &= 50 + 10 = 60 \\\\ IX &= 10 - 1 = 9 \\end{aligned}"
+            },
+            {
+              "explain": "Sum the grouped values.",
+              "work": "200 + 60 + 9 = 269"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the Roman numeral $DCCLX$ to a Hindu-Arabic numeral.",
+          "options": [
+            "684",
+            "760",
+            "836",
+            "798"
+          ],
+          "answer": 1,
+          "hint": "Break down the parts: $D = 500$, $CC = 200$, $L = 50$, and $X = 10$.",
+          "solution": "To convert $DCCLX$:\n- $DCC = 500 + 200 = 700$\n- $L = 50$\n- $X = 10$\n\nSumming these: $700 + 50 + 10 = 760$.",
+          "steps": [
+            {
+              "explain": "Group the numerals into their components.",
+              "work": "\\begin{aligned} DCC &= 500 + 100 + 100 = 700 \\\\ LX &= 50 + 10 = 60 \\end{aligned}"
+            },
+            {
+              "explain": "Add the components together.",
+              "work": "700 + 60 = 760"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the number $840$ in Roman numerals.",
+          "options": [
+            "DCCCXL",
+            "DCCXL",
+            "DCCCXC",
+            "CMXL"
+          ],
+          "answer": 0,
+          "hint": "Write the number by breaking it down into hundreds and tens: $800 + 40$. Remember $800 = 500 + 300$ and $40$ is written by subtracting $10$ from $50$.",
+          "solution": "To express $840$ in Roman numerals:\n1. Break it down: $800 + 40$\n2. $800 = DCCC$ (500 + 100 + 100 + 100)\n3. $40 = XL$ (10 subtracted from 50)\n\nCombine the parts: $DCCCXL$.",
+          "steps": [
+            {
+              "explain": "Separate the number into place value components.",
+              "work": "840 = 800 + 40"
+            },
+            {
+              "explain": "Find the Roman numeral representations for each part.",
+              "work": "\\begin{aligned} 800 &= DCCC \\\\ 40 &= XL \\quad (10 \\text{ before } 50) \\end{aligned}"
+            },
+            {
+              "explain": "Combine the components together.",
+              "work": "DCCC + XL = DCCCXL"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the number $946$ in Roman numerals.",
+          "options": [
+            "CMLXVI",
+            "CMXLVI",
+            "DCCCCXLVI",
+            "CMXVI"
+          ],
+          "answer": 1,
+          "hint": "Break the number into $900 + 40 + 6$. Note that $900$ is written as $100$ subtracted from $1000$, and $40$ is $10$ subtracted from $50$.",
+          "solution": "To express $946$ in Roman numerals:\n1. Break it down: $900 + 40 + 6$\n2. $900 = CM$ (1000 - 100)\n3. $40 = XL$ (50 - 10)\n4. $6 = VI$ (5 + 1)\n\nCombine the parts: $CMXLVI$.",
+          "steps": [
+            {
+              "explain": "Separate the number into hundreds, tens, and units.",
+              "work": "946 = 900 + 40 + 6"
+            },
+            {
+              "explain": "Find the Roman numeral equivalents for each place value.",
+              "work": "\\begin{aligned} 900 &= CM \\quad (1000 - 100) \\\\ 40 &= XL \\quad (50 - 10) \\\\ 6 &= VI \\quad (5 + 1) \\end{aligned}"
+            },
+            {
+              "explain": "Combine the parts in order.",
+              "work": "CM + XL + VI = CMXLVI"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Express the number $1996$ in Roman numerals.",
+          "options": [
+            "MXMXCVI",
+            "MCMLXXXXVI",
+            "MCMXCIV",
+            "MCMXCVI"
+          ],
+          "answer": 3,
+          "hint": "Break down into thousands, hundreds, tens, and units: $1000 + 900 + 90 + 6$. Check the subtractive notations for $900$ and $90$.",
+          "solution": "To express $1996$:\n1. $1000 = M$\n2. $900 = CM$ (1000 - 100)\n3. $90 = XC$ (100 - 10)\n4. $6 = VI$ (5 + 1)\n\nCombine: $MCMXCVI$.",
+          "steps": [
+            {
+              "explain": "Separate the number into its place value components.",
+              "work": "1996 = 1000 + 900 + 90 + 6"
+            },
+            {
+              "explain": "Translate each section into Roman numerals.",
+              "work": "\\begin{aligned} 1000 &= M \\\\ 900 &= CM \\\\ 90 &= XC \\\\ 6 &= VI \\end{aligned}"
+            },
+            {
+              "explain": "Combine all parts together.",
+              "work": "M + CM + XC + VI = MCMXCVI"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the number $439$ in Roman numerals.",
+          "options": [
+            "CDXLIX",
+            "CDXXXIX",
+            "CCCCXXXIX",
+            "CMXXXIX"
+          ],
+          "answer": 1,
+          "hint": "Break down the number into $400 + 30 + 9$. Remember that $400$ is $CD$ and $9$ is $IX$.",
+          "solution": "To express $439$:\n1. $400 = CD$\n2. $30 = XXX$\n3. $9 = IX$\n\nCombine: $CDXXXIX$.",
+          "steps": [
+            {
+              "explain": "Decompose the number into hundreds, tens, and units.",
+              "work": "439 = 400 + 30 + 9"
+            },
+            {
+              "explain": "Express each value using Roman numerals.",
+              "work": "\\begin{aligned} 400 &= CD \\\\ 30 &= XXX \\\\ 9 &= IX \\end{aligned}"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "CD + XXX + IX = CDXXXIX"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the number $88$ in Roman numerals.",
+          "options": [
+            "XXVIII",
+            "XCIII",
+            "LXXXVIII",
+            "LXXXVII"
+          ],
+          "answer": 2,
+          "hint": "Break down into $80 + 8$. $80$ is $L$ (50) plus three $X$'s, and $8$ is $V$ (5) plus three $I$'s.",
+          "solution": "To express $88$:\n1. $80 = LXXX$\n2. $8 = VIII$\n\nCombine: $LXXXVIII$.",
+          "steps": [
+            {
+              "explain": "Break the number into tens and units.",
+              "work": "88 = 80 + 8"
+            },
+            {
+              "explain": "Convert each part into Roman numerals.",
+              "work": "\\begin{aligned} 80 &= LXXX \\\\ 8 &= VIII \\end{aligned}"
+            },
+            {
+              "explain": "Add the numerals together.",
+              "work": "LXXX + VIII = LXXXVIII"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q1a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XII\\)",
+          "options": [
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(13\\)",
+            "\\(11\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the values of the symbols together: X = 10, I = 1.",
+          "solution": "X = 10, II = 2. Adding them together gives: 10 + 2 = 12.",
+          "steps": [
+            {
+              "explain": "Identify the values of individual Roman symbols.",
+              "work": "\\(X = 10\\), \\(I = 1\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\(10 + 1 + 1 = 12\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XV\\)",
+          "options": [
+            "\\(15\\)",
+            "\\(20\\)",
+            "\\(16\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the values of the symbols: X = 10, V = 5.",
+          "solution": "X = 10, V = 5. Adding them together gives: 10 + 5 = 15.",
+          "steps": [
+            {
+              "explain": "Identify the values of individual Roman symbols.",
+              "work": "\\(X = 10\\), \\(V = 5\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\(10 + 5 = 15\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XXVII\\)",
+          "options": [
+            "\\(37\\)",
+            "\\(27\\)",
+            "\\(28\\)",
+            "\\(26\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the values of the symbols: X = 10, V = 5, I = 1.",
+          "solution": "XX = 20, V = 5, II = 2. Adding them together gives: 20 + 5 + 2 = 27.",
+          "steps": [
+            {
+              "explain": "Identify the values of individual Roman symbols.",
+              "work": "\\(X = 10\\), \\(V = 5\\), \\(I = 1\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\(10 + 10 + 5 + 1 + 1 = 27\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1d_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(LIV\\)",
+          "options": [
+            "\\(44\\)",
+            "\\(64\\)",
+            "\\(56\\)",
+            "\\(54\\)"
+          ],
+          "answer": 3,
+          "hint": "Note that L = 50 and IV is a subtractive pair (5 - 1 = 4).",
+          "solution": "L = 50, IV = 5 - 1 = 4. Adding them together gives: 50 + 4 = 54.",
+          "steps": [
+            {
+              "explain": "Identify L and the subtractive pair IV.",
+              "work": "\\(L = 50\\), \\(IV = 5 - 1 = 4\\)"
+            },
+            {
+              "explain": "Sum the values.",
+              "work": "\\(50 + 4 = 54\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2a_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(14\\)",
+          "options": [
+            "\\(XIV\\)",
+            "\\(XVI\\)",
+            "\\(IXV\\)",
+            "\\(XIIII\\)"
+          ],
+          "answer": 0,
+          "hint": "Break the number into tens (10) and units (4). 10 is X, 4 is IV.",
+          "solution": "14 = 10 + 4. 10 is represented as X, and 4 is IV. Combined, they form XIV.",
+          "steps": [
+            {
+              "explain": "Decompose 14 into tens and units.",
+              "work": "\\(14 = 10 + 4\\)"
+            },
+            {
+              "explain": "Find the Roman numeral representations for 10 and 4.",
+              "work": "\\(10 = X\\), \\(4 = IV\\)"
+            },
+            {
+              "explain": "Combine the representations.",
+              "work": "\\text{XIV}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2b_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(17\\)",
+          "options": [
+            "\\(XVII\\)",
+            "\\(XIIV\\)",
+            "\\(XIVII\\)",
+            "\\(XVV\\)"
+          ],
+          "answer": 0,
+          "hint": "Break the number into 10 + 5 + 2. 10 is X, 5 is V, 2 is II.",
+          "solution": "17 = 10 + 5 + 2. 10 is X, 5 is V, 2 is II. Combined, they form XVII.",
+          "steps": [
+            {
+              "explain": "Decompose 17 into standard Roman place values.",
+              "work": "\\(17 = 10 + 5 + 2\\)"
+            },
+            {
+              "explain": "Convert each part to Roman symbols.",
+              "work": "\\(10 = X\\), \\(5 = V\\), \\(2 = II\\)"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "\\text{XVII}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2c_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(21\\)",
+          "options": [
+            "\\(XIX\\)",
+            "\\(LXXI\\)",
+            "\\(XXI\\)",
+            "\\(XIXI\\)"
+          ],
+          "answer": 2,
+          "hint": "Break 21 into 20 (XX) and 1 (I).",
+          "solution": "21 = 20 + 1. 20 is XX, 1 is I. Combined, they form XXI.",
+          "steps": [
+            {
+              "explain": "Decompose 21 into tens and units.",
+              "work": "\\(21 = 20 + 1\\)"
+            },
+            {
+              "explain": "Convert each part to Roman symbols.",
+              "work": "\\(20 = XX\\), \\(1 = I\\)"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "\\text{XXI}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2d_p16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(44\\)",
+          "options": [
+            "\\(XLIV\\)",
+            "\\(XLVI\\)",
+            "\\(XXXXIV\\)",
+            "\\(LXIV\\)"
+          ],
+          "answer": 0,
+          "hint": "Break 44 into 40 (XL) and 4 (IV).",
+          "solution": "44 = 40 + 4. 40 is represented as XL (10 before 50) and 4 as IV. Combined, they form XLIV.",
+          "steps": [
+            {
+              "explain": "Decompose 44 into tens and units.",
+              "work": "\\(44 = 40 + 4\\)"
+            },
+            {
+              "explain": "Represent 40 and 4 using subtractive Roman notation.",
+              "work": "\\(40 = XL\\), \\(4 = IV\\)"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "\\text{XLIV}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q1a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XVIII\\)",
+          "options": [
+            "\\(18\\)",
+            "\\(19\\)",
+            "\\(17\\)",
+            "\\(23\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the values of the symbols: X = 10, V = 5, I = 1.",
+          "solution": "X = 10, V = 5, III = 3. 10 + 5 + 3 = 18.",
+          "steps": [
+            {
+              "explain": "Identify the values of individual Roman symbols.",
+              "work": "\\(X = 10\\), \\(V = 5\\), \\(I = 1\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\(10 + 5 + 1 + 1 + 1 = 18\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XXIX\\)",
+          "options": [
+            "\\(29\\)",
+            "\\(28\\)",
+            "\\(31\\)",
+            "\\(39\\)"
+          ],
+          "answer": 0,
+          "hint": "X = 10. IX is a subtractive pair (10 - 1 = 9).",
+          "solution": "XX = 20. IX = 9. 20 + 9 = 29.",
+          "steps": [
+            {
+              "explain": "Identify individual symbols and subtractive pairs.",
+              "work": "\\(X = 10\\), \\(IX = 10 - 1 = 9\\)"
+            },
+            {
+              "explain": "Add the values.",
+              "work": "\\(10 + 10 + 9 = 29\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XLII\\)",
+          "options": [
+            "\\(62\\)",
+            "\\(42\\)",
+            "\\(52\\)",
+            "\\(43\\)"
+          ],
+          "answer": 1,
+          "hint": "XL is a subtractive pair (50 - 10 = 40).",
+          "solution": "XL = 40. II = 2. 40 + 2 = 42.",
+          "steps": [
+            {
+              "explain": "Identify individual symbols and subtractive pairs.",
+              "work": "\\(XL = 50 - 10 = 40\\), \\(I = 1\\)"
+            },
+            {
+              "explain": "Sum the values.",
+              "work": "\\(40 + 1 + 1 = 42\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1d_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(LXXII\\)",
+          "options": [
+            "\\(82\\)",
+            "\\(73\\)",
+            "\\(62\\)",
+            "\\(72\\)"
+          ],
+          "answer": 3,
+          "hint": "L = 50, X = 10, I = 1.",
+          "solution": "L = 50, XX = 20, II = 2. 50 + 20 + 2 = 72.",
+          "steps": [
+            {
+              "explain": "Identify the values of individual symbols.",
+              "work": "\\(L = 50\\), \\(X = 10\\), \\(I = 1\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\(50 + 10 + 10 + 1 + 1 = 72\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2a_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(24\\)",
+          "options": [
+            "\\(XXIIII\\)",
+            "\\(XXVI\\)",
+            "\\(XIV\\)",
+            "\\(XXIV\\)"
+          ],
+          "answer": 3,
+          "hint": "Break 24 into 20 (XX) and 4 (IV).",
+          "solution": "24 = 20 + 4. 20 is XX, 4 is IV. Combined: XXIV.",
+          "steps": [
+            {
+              "explain": "Decompose 24 into tens and units.",
+              "work": "\\(24 = 20 + 4\\)"
+            },
+            {
+              "explain": "Find the Roman numeral representation for each part.",
+              "work": "\\(20 = XX\\), \\(4 = IV\\)"
+            },
+            {
+              "explain": "Combine the representations.",
+              "work": "\\text{XXIV}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2b_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(39\\)",
+          "options": [
+            "\\(XLIX\\)",
+            "\\(XXXVII\\)",
+            "\\(XXIX\\)",
+            "\\(XXXIX\\)"
+          ],
+          "answer": 3,
+          "hint": "Break 39 into 30 (XXX) and 9 (IX).",
+          "solution": "39 = 30 + 9. 30 is XXX, 9 is IX. Combined: XXXIX.",
+          "steps": [
+            {
+              "explain": "Decompose 39 into tens and units.",
+              "work": "\\(39 = 30 + 9\\)"
+            },
+            {
+              "explain": "Convert each part to Roman symbols.",
+              "work": "\\(30 = XXX\\), \\(9 = IX\\)"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "\\text{XXXIX}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2c_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(64\\)",
+          "options": [
+            "\\(LXXIV\\)",
+            "\\(LXIV\\)",
+            "\\(XLIV\\)",
+            "\\(LXVI\\)"
+          ],
+          "answer": 1,
+          "hint": "Break 64 into 60 (LX) and 4 (IV).",
+          "solution": "64 = 60 + 4. 60 is LX, 4 is IV. Combined: LXIV.",
+          "steps": [
+            {
+              "explain": "Decompose 64 into tens and units.",
+              "work": "\\(64 = 60 + 4\\)"
+            },
+            {
+              "explain": "Convert each part to Roman symbols.",
+              "work": "\\(60 = LX\\), \\(4 = IV\\)"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "\\text{LXIV}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2d_p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the following number to Roman numerals:\n\\(95\\)",
+          "options": [
+            "\\(CXCV\\)",
+            "\\(XCV\\)",
+            "\\(CXV\\)",
+            "\\(LXXXXV\\)"
+          ],
+          "answer": 1,
+          "hint": "90 is represented as XC (10 before 100).",
+          "solution": "95 = 90 + 5. 90 is XC, 5 is V. Combined: XCV.",
+          "steps": [
+            {
+              "explain": "Decompose 95 into tens and units.",
+              "work": "\\(95 = 90 + 5\\)"
+            },
+            {
+              "explain": "Represent 90 using subtractive notation.",
+              "work": "\\(90 = XC\\), \\(5 = V\\)"
+            },
+            {
+              "explain": "Combine the symbols.",
+              "work": "\\text{XCV}"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q1a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(CLII\\\\)",
+          "options": [
+            "\\\\(102\\\\)",
+            "\\\\(142\\\\)",
+            "\\\\(162\\\\)",
+            "\\\\(152\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify the value of each symbol: \\\\(C = 100\\\\), \\\\(L = 50\\\\), and \\\\(II = 2\\\\).",
+          "solution": "Add the values of the symbols:\n1. \\\\(C = 100\\\\)\n2. \\\\(L = 50\\\\)\n3. \\\\(II = 2\\\\)\n\n\\\\(100 + 50 + 2 = 152\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of the individual Roman numeral symbols.",
+              "work": "\\\\(C = 100, L = 50, I = 1\\\\)"
+            },
+            {
+              "explain": "Sum the values from left to right as there are no subtractive pairs.",
+              "work": "\\\\(CLII = 100 + 50 + 1 + 1 = 152\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q1b_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(CCXXV\\\\)",
+          "options": [
+            "\\\\(225\\\\)",
+            "\\\\(215\\\\)",
+            "\\\\(235\\\\)",
+            "\\\\(205\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the value of each symbol: \\\\(C = 100\\\\), \\\\(X = 10\\\\), and \\\\(V = 5\\\\).",
+          "solution": "Add the values of the symbols:\n1. \\\\(CC = 100 + 100 = 200\\\\)\n2. \\\\(XX = 10 + 10 = 20\\\\)\n3. \\\\(V = 5\\\\)\n\n\\\\(200 + 20 + 5 = 225\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of the individual Roman numeral symbols.",
+              "work": "\\\\(C = 100, X = 10, V = 5\\\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\\\(CCXXV = 100 + 100 + 10 + 10 + 5 = 225\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q1c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(XCIX\\\\)",
+          "options": [
+            "\\\\(111\\\\)",
+            "\\\\(91\\\\)",
+            "\\\\(109\\\\)",
+            "\\\\(99\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Look for subtractive pairs: \\\\(XC\\\\) (10 before 100) and \\\\(IX\\\\) (1 before 10).",
+          "solution": "Identify subtractive pairs:\n1. \\\\(XC = 100 - 10 = 90\\\\)\n2. \\\\(IX = 10 - 1 = 9\\\\)\n\n\\\\(90 + 9 = 99\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of the symbols and locate any subtractive pairs where a smaller symbol precedes a larger one.",
+              "work": "\\\\(XC = 100 - 10 = 90, IX = 10 - 1 = 9\\\\)"
+            },
+            {
+              "explain": "Sum the grouped values.",
+              "work": "\\\\(XCIX = 90 + 9 = 99\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1d_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(DLV\\\\)",
+          "options": [
+            "\\\\(505\\\\)",
+            "\\\\(515\\\\)",
+            "\\\\(555\\\\)",
+            "\\\\(605\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify the value of each symbol: \\\\(D = 500\\\\), \\\\(L = 50\\\\), and \\\\(V = 5\\\\).",
+          "solution": "Add the values of the symbols:\n1. \\\\(D = 500\\\\)\n2. \\\\(L = 50\\\\)\n3. \\\\(V = 5\\\\)\n\n\\\\(500 + 50 + 5 = 555\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of the individual Roman numeral symbols.",
+              "work": "\\\\(D = 500, L = 50, V = 5\\\\)"
+            },
+            {
+              "explain": "Sum the values from left to right.",
+              "work": "\\\\(DLV = 500 + 50 + 5 = 555\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2a_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following number in Roman numerals:\n\\\\(123\\\\)",
+          "options": [
+            "\\\\(CIII\\\\)",
+            "\\\\(CLXXIII\\\\)",
+            "\\\\(CXXXIII\\\\)",
+            "\\\\(CXXIII\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Break the number down into hundreds, tens, and units: \\\\(123 = 100 + 20 + 3\\\\).",
+          "solution": "Convert each part:\n1. \\\\(100 = C\\\\)\n2. \\\\(20 = XX\\\\)\n3. \\\\(3 = III\\\\)\n\nCombine: \\\\(CXXIII\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number into place values.",
+              "work": "\\\\(123 = 100 + 20 + 3\\\\)"
+            },
+            {
+              "explain": "Convert each place value component into Roman numerals.",
+              "work": "\\\\(100 = C, 20 = XX, 3 = III\\\\)"
+            },
+            {
+              "explain": "Combine the Roman numeral symbols in order.",
+              "work": "\\\\(123 = CXXIII\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q2b_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in Roman numerals:\n\\\\(79\\\\)",
+          "options": [
+            "\\\\(LXXXIX\\\\)",
+            "\\\\(LXXIX\\\\)",
+            "\\\\(LXIX\\\\)",
+            "\\\\(LXXI\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Break the number down into tens and units: \\\\(79 = 70 + 9\\\\). Note that \\\\(9\\\\) is written as a subtractive pair \\\\(IX\\\\).",
+          "solution": "Convert each part:\n1. \\\\(70 = LXX\\\\)\n2. \\\\(9 = IX\\\\)\n\nCombine: \\\\(LXXIX\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number into tens and units.",
+              "work": "\\\\(79 = 70 + 9\\\\)"
+            },
+            {
+              "explain": "Convert 70 into Roman numerals \\\\(LXX\\\\) (50 + 10 + 10) and 9 into subtractive pair \\\\(IX\\\\) (10 - 1).",
+              "work": "\\\\(70 = LXX, 9 = IX\\\\)"
+            },
+            {
+              "explain": "Combine the components.",
+              "work": "\\\\(79 = LXXIX\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2c_p18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following number in Roman numerals:\n\\\\(327\\\\)",
+          "options": [
+            "\\\\(CCCXXVII\\\\)",
+            "\\\\(CCCXVIII\\\\)",
+            "\\\\(CCCXXII\\\\)",
+            "\\\\(CCXXVII\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Break \\\\(327\\\\) into place values: \\\\(300 + 20 + 7\\\\).",
+          "solution": "Convert each part:\n1. \\\\(300 = CCC\\\\)\n2. \\\\(20 = XX\\\\)\n3. \\\\(7 = VII\\\\)\n\nCombine: \\\\(CCCXXVII\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number into hundreds, tens, and units.",
+              "work": "\\\\(327 = 300 + 20 + 7\\\\)"
+            },
+            {
+              "explain": "Convert each part into Roman numerals.",
+              "work": "\\\\(300 = CCC, 20 = XX, 7 = VII\\\\)"
+            },
+            {
+              "explain": "Combine the parts.",
+              "work": "\\\\(327 = CCCXXVII\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2d_p18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following number in Roman numerals:\n\\\\(530\\\\)",
+          "options": [
+            "\\\\(DXXX\\\\)",
+            "\\\\(CXXX\\\\)",
+            "\\\\(DXX\\\\)",
+            "\\\\(DLXXX\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Break \\\\(530\\\\) into place values: \\\\(500 + 30\\\\).",
+          "solution": "Convert each part:\n1. \\\\(500 = D\\\\)\n2. \\\\(30 = XXX\\\\)\n\nCombine: \\\\(DXXX\\\\).",
+          "steps": [
+            {
+              "explain": "Break the number into place values.",
+              "work": "\\\\(530 = 500 + 30\\\\)"
+            },
+            {
+              "explain": "Convert 500 to \\\\(D\\\\) and 30 to \\\\(XXX\\\\).",
+              "work": "\\\\(500 = D, 30 = XXX\\\\)"
+            },
+            {
+              "explain": "Combine the components.",
+              "work": "\\\\(530 = DXXX\\\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-wn-q1a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the Roman numeral in Hindu-Arabic numerals:\\n\\\\(\\text{CCLXII}\\\\)",
+          "options": [
+            "\\\\(272\\\\)",
+            "\\\\(262\\\\)",
+            "\\\\(362\\\\)",
+            "\\\\(242\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Break down the Roman numeral into its individual values: \\\\(\\text{C}\\\\), \\\\(\\text{L}\\\\), \\\\(\\text{X}\\\\), and \\\\(\\text{I}\\\\).",
+          "solution": "Convert each part of the Roman numeral \\\\(\\text{CCLXII}\\\\):\n- \\\\(\\text{CC} = 100 + 100 = 200\\\\)\n- \\\\(\\text{L} = 50\\\\)\n- \\\\(\\text{X} = 10\\\\)\n- \\\\(\\text{II} = 1 + 1 = 2\\\\)\n\nAdd them together: \\\\(200 + 50 + 10 + 2 = 262\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of individual Roman symbols in the string.",
+              "work": "\\\\(\\text{C} = 100,\\ \\text{L} = 50,\\ \\text{X} = 10,\\ \\text{I} = 1\\\\)"
+            },
+            {
+              "explain": "Group the repeating and adjacent symbols to find their sum.",
+              "work": "\\\\(\\text{CC} = 200,\\ \\text{LX} = 60,\\ \\text{II} = 2\\\\)"
+            },
+            {
+              "explain": "Add all the component values together to get the final Hindu-Arabic numeral.",
+              "work": "\\\\(200 + 60 + 2 = 262\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the Roman numeral in Hindu-Arabic numerals:\\n\\\\(\\text{CDXLIV}\\\\)",
+          "options": [
+            "\\\\(446\\\\)",
+            "\\\\(444\\\\)",
+            "\\\\(644\\\\)",
+            "\\\\(464\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Look for subtractive pairs like \\\\(\\text{CD}\\\\) (100 before 500) and \\\\(\\text{XL}\\\\) (10 before 50).",
+          "solution": "Convert each part of the Roman numeral \\\\(\\text{CDXLIV}\\\\):\n- \\\\(\\text{CD} = 500 - 100 = 400\\\\)\n- \\\\(\\text{XL} = 50 - 10 = 40\\\\)\n- \\\\(\\text{IV} = 5 - 1 = 4\\\\)\n\nAdd them together: \\\\(400 + 40 + 4 = 444\\\\).",
+          "steps": [
+            {
+              "explain": "Identify subtractive pairs where a smaller value symbol is placed before a larger value symbol.",
+              "work": "\\\\(\\text{CD} = 500 - 100 = 400,\\ \\text{XL} = 50 - 10 = 40,\\ \\text{IV} = 5 - 1 = 4\\\\)"
+            },
+            {
+              "explain": "Sum the values of each processed group.",
+              "work": "\\\\(\\text{Total} = \\text{CD} + \\text{XL} + \\text{IV}\\\\)"
+            },
+            {
+              "explain": "Calculate the final Hindu-Arabic numeral value.",
+              "work": "\\\\(400 + 40 + 4 = 444\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q1c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the Roman numeral in Hindu-Arabic numerals:\\n\\\\(\\text{CMXCIX}\\\\)",
+          "options": [
+            "\\\\(909\\\\)",
+            "\\\\(999\\\\)",
+            "\\\\(990\\\\)",
+            "\\\\(1099\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Look for subtractive pairs like \\\\(\\text{CM}\\\\), \\\\(\\text{XC}\\\\), and \\\\(\\text{IX}\\\\).",
+          "solution": "Convert each part of the Roman numeral \\\\(\\text{CMXCIX}\\\\):\n- \\\\(\\text{CM} = 1000 - 100 = 900\\\\)\n- \\\\(\\text{XC} = 100 - 10 = 90\\\\)\n- \\\\(\\text{IX} = 10 - 1 = 9\\\\)\n\nAdd them together: \\\\(900 + 90 + 9 = 999\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of subtractive groups in \\\\(\\text{CMXCIX}\\\\).",
+              "work": "\\\\(\\text{CM} = 1000 - 100 = 900,\\ \\text{XC} = 100 - 10 = 90,\\ \\text{IX} = 10 - 1 = 9\\\\)"
+            },
+            {
+              "explain": "Express the total value as the sum of these grouped components.",
+              "work": "\\\\(\\text{Total} = 900 + 90 + 9\\\\)"
+            },
+            {
+              "explain": "Calculate the final result.",
+              "work": "\\\\(999\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2a_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the following number in Roman numerals:\\n\\\\(730\\\\)",
+          "options": [
+            "\\\\(\\text{DCCCXXX}\\\\)",
+            "\\\\(\\text{CDXXX}\\\\)",
+            "\\\\(\\text{DCCXX}\\\\)",
+            "\\\\(\\text{DCCXXX}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Break down 730 into hundreds and tens: \\\\(700 + 30\\\\).",
+          "solution": "Convert each part of \\\\(730\\\\) to Roman numerals:\n- \\\\(700 = 500 + 100 + 100 = \\text{DCC}\\\\)\n- \\\\(30 = 10 + 10 + 10 = \\text{XXX}\\\\)\n\nCombine them: \\\\(\\text{DCCXXX}\\\\).",
+          "steps": [
+            {
+              "explain": "Separate the decimal number into hundreds and tens.",
+              "work": "\\\\(730 = 700 + 30\\\\)"
+            },
+            {
+              "explain": "Find the Roman numeral equivalent for each component.",
+              "work": "\\\\(700 = \\text{DCC}, 30 = \\text{XXX}\\\\)"
+            },
+            {
+              "explain": "Combine the components to write the full Roman numeral.",
+              "work": "\\\\(\\text{DCC} + \\text{XXX} = \\text{DCCXXX}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2b_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the following number in Roman numerals:\\n\\\\(934\\\\)",
+          "options": [
+            "\\\\(\\text{DCCCXXXIV}\\\\)",
+            "\\\\(\\text{CMXXXIV}\\\\)",
+            "\\\\(\\text{CMXXXVI}\\\\)",
+            "\\\\(\\text{MCXXXIV}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Break down 934 into place values: \\\\(900 + 30 + 4\\\\). Note that 900 is written by subtracting 100 from 1000.",
+          "solution": "Convert each part of \\\\(934\\\\) to Roman numerals:\n- \\\\(900 = 1000 - 100 = \\text{CM}\\\\)\n- \\\\(30 = 10 + 10 + 10 = \\text{XXX}\\\\)\n- \\\\(4 = 5 - 1 = \\text{IV}\\\\)\n\nCombine them: \\\\(\\text{CMXXXIV}\\\\).",
+          "steps": [
+            {
+              "explain": "Separate the decimal number into place values.",
+              "work": "\\\\(934 = 900 + 30 + 4\\\\)"
+            },
+            {
+              "explain": "Determine the subtractive and additive representations for each place value.",
+              "work": "\\\\(900 = \\text{CM}, 30 = \\text{XXX}, 4 = \\text{IV}\\\\)"
+            },
+            {
+              "explain": "Assemble the final Roman numeral string.",
+              "work": "\\\\(\\text{CM} + \\text{XXX} + \\text{IV} = \\text{CMXXXIV}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-wn-q2c_p19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the following number in Roman numerals:\\n\\\\(1989\\\\)",
+          "options": [
+            "\\\\(\\text{MCMXCVII}\\\\)",
+            "\\\\(\\text{MCMLXXIX}\\\\)",
+            "\\\\(\\text{MCMLXXXIX}\\\\)",
+            "\\\\(\\text{MDCLXXXIX}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Break down 1989 into place values: \\\\(1000 + 900 + 80 + 9\\\\).",
+          "solution": "Convert each part of \\\\(1989\\\\) to Roman numerals:\n- \\\\(1000 = \\text{M}\\\\)\n- \\\\(900 = 1000 - 100 = \\text{CM}\\\\)\n- \\\\(80 = 50 + 10 + 10 + 10 = \\text{LXXX}\\\\)\n- \\\\(9 = 10 - 1 = \\text{IX}\\\\)\n\nCombine them: \\\\(\\text{MCMLXXXIX}\\\\).",
+          "steps": [
+            {
+              "explain": "Decompose the number into thousands, hundreds, tens, and units.",
+              "work": "\\\\(1989 = 1000 + 900 + 80 + 9\\\\)"
+            },
+            {
+              "explain": "Determine the Roman representation of each part.",
+              "work": "\\\\(1000 = \\text{M}, 900 = \\text{CM}, 80 = \\text{LXXX}, 9 = \\text{IX}\\\\)"
+            },
+            {
+              "explain": "Join the parts in order from largest value to smallest.",
+              "work": "\\\\(\\text{M} + \\text{CM} + \\text{LXXX} + \\text{IX} = \\text{MCMLXXXIX}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "alsoIn": [
+            "exam:year6wholenumber"
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-1d",
+      "code": "1D",
+      "title": "The integers",
+      "questions": []
+    },
+    {
+      "topicId": "y6-1e",
+      "code": "1E",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

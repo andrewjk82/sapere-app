@@ -1,0 +1,83 @@
+{
+  "chapterId": "y6-14",
+  "title": "Chapter 14: Maps and coordinates",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-14a",
+      "code": "14A",
+      "title": "Maps and grid references",
+      "questions": []
+    },
+    {
+      "topicId": "y6-14b",
+      "code": "14B",
+      "title": "The Cartesian plane",
+      "questions": [
+        {
+          "id": "y6-gm-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In which quadrant is the point \\(P(-3, 4)\\) located?",
+          "figure": {
+            "svg": "fig:fdd590b375"
+          },
+          "options": [
+            "Quadrant I",
+            "Quadrant III",
+            "Quadrant II",
+            "Quadrant IV"
+          ],
+          "answer": 2,
+          "hint": "The \\(x\\)-coordinate is negative and the \\(y\\)-coordinate is positive.",
+          "steps": [
+            {
+              "explain": "A negative \\(x\\) and positive \\(y\\) place the point to the left of the \\(y\\)-axis and above the \\(x\\)-axis.",
+              "work": "\\(x=-3 \\lt 0, \\quad y=4 \\gt 0\\)"
+            },
+            {
+              "explain": "This region is Quadrant II.",
+              "work": "\\(P(-3,4)\\) is in Quadrant II"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-gm-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A point is located 5 units to the left of the origin and 2 units below it. What are its coordinates?",
+          "options": [
+            "\\((-5, -2)\\)",
+            "\\((5, -2)\\)",
+            "\\((-5, 2)\\)",
+            "\\((-2, -5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Left of the origin means a negative \\(x\\); below the origin means a negative \\(y\\).",
+          "steps": [
+            {
+              "explain": "5 units left of the origin gives \\(x=-5\\).",
+              "work": "\\(x=-5\\)"
+            },
+            {
+              "explain": "2 units below the origin gives \\(y=-2\\).",
+              "work": "\\(y=-2\\)"
+            },
+            {
+              "explain": "Combine to state the coordinates.",
+              "work": "\\((-5,-2)\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-14c",
+      "code": "14C",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

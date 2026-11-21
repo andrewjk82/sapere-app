@@ -1,0 +1,187 @@
+{
+  "chapterId": "y6-10",
+  "title": "Chapter 10: Lines and angles",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-10a",
+      "code": "10A",
+      "title": "Lines and angles",
+      "questions": []
+    },
+    {
+      "topicId": "y6-10b",
+      "code": "10B",
+      "title": "Using a protractor",
+      "questions": []
+    },
+    {
+      "topicId": "y6-10c",
+      "code": "10C",
+      "title": "Finding unknown angles",
+      "questions": [
+        {
+          "id": "y6-gm-4-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(ABC\\) is a straight line. Find the value of \\(x\\).",
+          "figure": {
+            "svg": "fig:e6c8e3588f"
+          },
+          "options": [
+            "\\(65°\\)",
+            "\\(115°\\)",
+            "\\(25°\\)",
+            "\\(295°\\)"
+          ],
+          "answer": 1,
+          "hint": "Angles on a straight line add to \\(180°\\).",
+          "steps": [
+            {
+              "explain": "Since \\(ABC\\) is a straight line, \\(\\angle ABD\\) and \\(\\angle DBC\\) add to \\(180°\\).",
+              "work": "\\(65°+x=180°\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x=180°-65°=115°\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-gm-4-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two angles on a straight line are \\(38°\\) and \\(y°\\). Find \\(y\\).",
+          "options": [
+            "\\(38\\)",
+            "\\(52\\)",
+            "\\(142\\)",
+            "\\(322\\)"
+          ],
+          "answer": 2,
+          "hint": "Angles on a straight line add to \\(180°\\).",
+          "steps": [
+            {
+              "explain": "Set up the angle sum equation.",
+              "work": "\\(38+y=180\\)"
+            },
+            {
+              "explain": "Solve for \\(y\\).",
+              "work": "\\(y=180-38=142\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-gm-5-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, three angles meet at point \\(O\\). Find the value of \\(x\\).",
+          "figure": {
+            "svg": "fig:af58a12a83"
+          },
+          "options": [
+            "\\(150°\\)",
+            "\\(210°\\)",
+            "\\(140°\\)",
+            "\\(90°\\)"
+          ],
+          "answer": 0,
+          "hint": "Angles at a point add to \\(360°\\).",
+          "steps": [
+            {
+              "explain": "The three angles around point \\(O\\) add to \\(360°\\).",
+              "work": "\\(90°+120°+x=360°\\)"
+            },
+            {
+              "explain": "Simplify and solve for \\(x\\).",
+              "work": "\\(210°+x=360° \\Rightarrow x=150°\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-gm-5-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Four angles meet at a point: \\(70°\\), \\(95°\\), \\(110°\\) and \\(y°\\). Find \\(y\\).",
+          "options": [
+            "\\(95\\)",
+            "\\(360\\)",
+            "\\(275\\)",
+            "\\(85\\)"
+          ],
+          "answer": 3,
+          "hint": "Angles at a point add to \\(360°\\).",
+          "steps": [
+            {
+              "explain": "Add the three known angles.",
+              "work": "\\(70+95+110=275\\)"
+            },
+            {
+              "explain": "Subtract from \\(360°\\) to find \\(y\\).",
+              "work": "\\(y=360-275=85\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-gm-6-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two straight lines intersect as shown. Find the value of \\(x\\).",
+          "figure": {
+            "svg": "fig:ec803d539b"
+          },
+          "options": [
+            "\\(108°\\)",
+            "\\(72°\\)",
+            "\\(18°\\)",
+            "\\(288°\\)"
+          ],
+          "answer": 1,
+          "hint": "Vertically opposite angles (angles across the intersection point from each other) are always equal.",
+          "steps": [
+            {
+              "explain": "\\(x\\) and the \\(72°\\) angle are vertically opposite — they are formed on opposite sides of the point where the two lines cross.",
+              "work": "\\(x\\) and \\(72°\\) are vertically opposite angles"
+            },
+            {
+              "explain": "Vertically opposite angles are always equal.",
+              "work": "\\(x=72°\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y6-gm-6-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two straight lines cross at a point. One of the four angles formed is \\(115°\\). What is the size of the angle vertically opposite to it?",
+          "options": [
+            "\\(65°\\)",
+            "\\(245°\\)",
+            "\\(115°\\)",
+            "\\(90°\\)"
+          ],
+          "answer": 2,
+          "hint": "Vertically opposite angles are equal.",
+          "steps": [
+            {
+              "explain": "The angle vertically opposite a given angle is always equal to it.",
+              "work": "\\(\\text{Vertically opposite angle}=115°\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-10d",
+      "code": "10D",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

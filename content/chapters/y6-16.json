@@ -1,0 +1,25 @@
+{
+  "chapterId": "y6-16",
+  "title": "Chapter 16: Algebra",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-16a",
+      "code": "16A",
+      "title": "Finding an unknown",
+      "questions": []
+    },
+    {
+      "topicId": "y6-16b",
+      "code": "16B",
+      "title": "Pronumerals",
+      "questions": []
+    },
+    {
+      "topicId": "y6-16c",
+      "code": "16C",
+      "title": "Number patterns",
+      "questions": []
+    }
+  ]
+}

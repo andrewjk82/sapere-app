@@ -1,0 +1,736 @@
+{
+  "chapterId": "y6-9",
+  "title": "Chapter 9: Percentages",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-9a",
+      "code": "9A",
+      "title": "Converting fractions to percentages",
+      "questions": [
+        {
+          "id": "y6-rn-2-l1-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What percentage of the large grid below has been shaded?",
+          "figure": {
+            "svg": "fig:8177b9c159"
+          },
+          "options": [
+            "\\\\(40\\%\\\\)",
+            "\\\\(47\\%\\\\)",
+            "\\\\(50\\%\\\\)",
+            "\\\\(37\\%\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the number of fully shaded rows first. Each row represents 10% of the entire grid.",
+          "steps": [
+            {
+              "explain": "First, identify the size of the grid. The grid consists of 10 rows and 10 columns, which makes a total of 100 small squares.",
+              "work": "\\\\(\\text{Total squares} = 10 \\\\times 10 = 100\\\\)"
+            },
+            {
+              "explain": "Count the number of shaded squares. There are 4 full rows of 10 squares shaded at the bottom, plus 7 additional squares in the row above.",
+              "work": "\\\\(\\text{Shaded squares} = 40 + 7 = 47\\\\)"
+            },
+            {
+              "explain": "Convert this count into a percentage. Since the total is 100, the number of shaded squares is directly equivalent to the percentage.",
+              "work": "\\\\(\\frac{47}{100} \\\\times 100\\% = 47\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that 47% of the entire grid has been shaded. This matches our counts.",
+              "work": "\\\\(\\text{Percentage} = 47\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What percentage of the grid below has been shaded?",
+          "figure": {
+            "svg": "fig:c0cbae0163"
+          },
+          "options": [
+            "\\\\(60\\%\\\\)",
+            "\\\\(40\\%\\\\)",
+            "\\\\(70\\%\\\\)",
+            "\\\\(50\\%\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the number of shaded rows. Six out of ten rows are fully shaded green.",
+          "steps": [
+            {
+              "explain": "First, analyze the total number of rows. There are 10 rows in total, with each row representing 10% of the entire grid.",
+              "work": "\\\\(\\text{One row} = 10\\%\\\\)"
+            },
+            {
+              "explain": "Count the number of fully shaded rows. We observe that exactly 6 rows are colored in green.",
+              "work": "\\\\(\\text{Shaded rows} = 6\\\\)"
+            },
+            {
+              "explain": "Multiply the number of shaded rows by the percentage value of a single row to find the total percentage.",
+              "work": "\\\\(6 \\\\times 10\\% = 60\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that the green shaded portion of the grid represents exactly 60%.",
+              "work": "\\\\(\\text{Percentage} = 60\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What percentage of the circular diagram below has been shaded?",
+          "figure": {
+            "svg": "fig:d734e6fa46"
+          },
+          "options": [
+            "\\\\(25\\%\\\\)",
+            "\\\\(37.5\\%\\\\)",
+            "\\\\(50\\%\\\\)",
+            "\\\\(12.5\\%\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Count the number of equal sectors in the circle. Only one of these sectors is shaded red.",
+          "steps": [
+            {
+              "explain": "First, count the total number of equal sectors the circle is divided into. We find that the circle is split into 8 equal sectors.",
+              "work": "\\\\(\\text{Total sectors} = 8\\\\)"
+            },
+            {
+              "explain": "Identify the fraction of the circle that is shaded. Exactly 1 sector is shaded red out of the total of 8.",
+              "work": "\\\\(\\text{Shaded fraction} = \\\\frac{1}{8}\\\\)"
+            },
+            {
+              "explain": "Convert the fraction to a percentage by multiplying by 100%. Divide 100 by 8 to find the value.",
+              "work": "\\\\(\\frac{1}{8} \\\\times 100\\% = 12.5\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that the shaded sector represents exactly 12.5% of the circle.",
+              "work": "\\\\(\\text{Percentage} = 12.5\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Roger scored \\\\(74\\%\\\\) in his spelling test. What percentage of the questions did he get wrong?",
+          "options": [
+            "\\\\(36\\%\\\\)",
+            "\\\\(16\\%\\\\)",
+            "\\\\(26\\%\\\\)",
+            "\\\\(24\\%\\\\)"
+          ],
+          "answer": 2,
+          "hint": "The total percentage of the spelling test is 100%. Subtract his score from 100%.",
+          "steps": [
+            {
+              "explain": "First, establish that the total possible percentage in any full test is 100%. Roger's correct answers are given as a percentage of this total.",
+              "work": "\\\\(\\text{Total percentage} = 100\\%\\\\)"
+            },
+            {
+              "explain": "Set up the subtraction to find the percentage of incorrect answers. We subtract Roger's correct score from the total percentage.",
+              "work": "\\\\(\\text{Wrong percentage} = 100\\% - 74\\%\\\\)"
+            },
+            {
+              "explain": "Calculate the difference to find the percentage of wrong answers.",
+              "work": "\\\\(100 - 74 = 26\\\\)"
+            },
+            {
+              "explain": "Confirm that Roger got 26% of the spelling questions incorrect.",
+              "work": "\\\\(\\text{Incorrect percentage} = 26\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(31\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{3}{10}\\\\)",
+            "\\\\(\\frac{31}{100}\\\\)",
+            "\\\\(\\frac{13}{100}\\\\)",
+            "\\\\(\\frac{31}{10}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A percentage means 'out of 100'. Write 31 over 100.",
+          "steps": [
+            {
+              "explain": "First, write the percentage as a fraction with a denominator of 100.",
+              "work": "\\\\(31\\% = \\\\frac{31}{100}\\\\)"
+            },
+            {
+              "explain": "Determine if the fraction can be simplified. We check if 31 and 100 have any common factors other than 1. Since 31 is a prime number, it has no common factors with 100.",
+              "work": "\\\\(\\text{HCF}(31, 100) = 1\\\\)"
+            },
+            {
+              "explain": "Confirm that the fraction is already in its simplest form.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{31}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(49\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{9}{20}\\\\)",
+            "\\\\(\\frac{49}{100}\\\\)",
+            "\\\\(\\frac{49}{50}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Write 49 over 100 and check if they share any common factors like 7.",
+          "steps": [
+            {
+              "explain": "First, express the percentage as a fraction with a denominator of 100.",
+              "work": "\\\\(49\\% = \\\\frac{49}{100}\\\\)"
+            },
+            {
+              "explain": "Check for common factors between the numerator 49 and the denominator 100. The factors of 49 are 1, 7, and 49. None of these divide 100 evenly.",
+              "work": "\\\\(\\text{HCF}(49, 100) = 1\\\\)"
+            },
+            {
+              "explain": "Confirm that the fraction cannot be simplified further.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{49}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(7\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{7}{100}\\\\)",
+            "\\\\(\\frac{14}{100}\\\\)",
+            "\\\\(\\frac{7}{10}\\\\)",
+            "\\\\(\\frac{7}{1000}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 7 over 100. Since 7 is prime, check if it divides 100.",
+          "steps": [
+            {
+              "explain": "First, write the percentage value as a fraction out of 100.",
+              "work": "\\\\(7\\% = \\\\frac{7}{100}\\\\)"
+            },
+            {
+              "explain": "Check if 7 divides 100. Since 7 is a prime number and does not divide 100, the fraction cannot be simplified.",
+              "work": "\\\\(100 \\\\div 7 = 14\\\\text{ R } 2\\\\)"
+            },
+            {
+              "explain": "State the final simplified fraction.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{7}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(19\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{9}{50}\\\\)",
+            "\\\\(\\frac{19}{10}\\\\)",
+            "\\\\(\\frac{1}{5}\\\\)",
+            "\\\\(\\frac{19}{100}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Write 19 over 100. Since 19 is a prime number, it has no common factors with 100.",
+          "steps": [
+            {
+              "explain": "First, convert the percentage into a fraction with 100 as the denominator.",
+              "work": "\\\\(19\\% = \\\\frac{19}{100}\\\\)"
+            },
+            {
+              "explain": "Analyze if 19 and 100 share any common factors. Because 19 is prime and does not divide 100, the fraction is in its simplest form.",
+              "work": "\\\\(\\text{HCF}(19, 100) = 1\\\\)"
+            },
+            {
+              "explain": "Confirm that the simplest fractional representation of 19% is 19/100.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{19}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{17}{100}\\\\) to a percentage.",
+          "options": [
+            "\\\\(1.7\\%\\\\)",
+            "\\\\(71\\%\\\\)",
+            "\\\\(17\\%\\\\)",
+            "\\\\(0.17\\%\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Any fraction with a denominator of 100 is directly the percentage value of its numerator.",
+          "steps": [
+            {
+              "explain": "First, write down the fraction to convert.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{17}{100}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100% to convert it to a percentage format.",
+              "work": "\\\\(\\frac{17}{100} \\\\times 100\\%\\\\)"
+            },
+            {
+              "explain": "Cancel out the common factor of 100 from both the numerator and the denominator.",
+              "work": "\\\\(17\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that the final percentage is 17%.",
+              "work": "\\\\(\\text{Percentage} = 17\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{45}{100}\\\\) to a percentage.",
+          "options": [
+            "\\\\(54\\%\\\\)",
+            "\\\\(4.5\\%\\\\)",
+            "\\\\(9\\%\\\\)",
+            "\\\\(45\\%\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Since the denominator is already 100, the numerator is the percentage.",
+          "steps": [
+            {
+              "explain": "First, identify the fraction given for conversion.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{45}{100}\\\\)"
+            },
+            {
+              "explain": "Convert to a percentage by multiplying the fraction by 100%.",
+              "work": "\\\\(\\frac{45}{100} \\\\times 100\\%\\\\)"
+            },
+            {
+              "explain": "Simplify the equation by canceling the 100s.",
+              "work": "\\\\(45\\%\\\\)"
+            },
+            {
+              "explain": "Confirm the final percentage is 45%.",
+              "work": "\\\\(\\text{Percentage} = 45\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{1}{2}\\\\) to a percentage.",
+          "options": [
+            "\\\\(5\\%\\\\)",
+            "\\\\(20\\%\\\\)",
+            "\\\\(50\\%\\\\)",
+            "\\\\(25\\%\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 1/2 by 100, or find an equivalent fraction with a denominator of 100.",
+          "steps": [
+            {
+              "explain": "First, state the fraction to convert and prepare to multiply by 100%.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{1}{2}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100% to calculate the percentage value.",
+              "work": "\\\\(\\frac{1}{2} \\\\times 100\\% = \\\\frac{100}{2}\\%\\\\)"
+            },
+            {
+              "explain": "Perform the division of 100 by 2 to find the final percentage.",
+              "work": "\\\\(100 \\\\div 2 = 50\\\\)"
+            },
+            {
+              "explain": "State that half of a whole corresponds to exactly 50%.",
+              "work": "\\\\(\\text{Percentage} = 50\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{1}{4}\\\\) to a percentage.",
+          "options": [
+            "\\\\(40\\%\\\\)",
+            "\\\\(25\\%\\\\)",
+            "\\\\(75\\%\\\\)",
+            "\\\\(14\\%\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 1/4 by 100, or recall that a quarter of 100% is 25%.",
+          "steps": [
+            {
+              "explain": "First, identify the fraction given for conversion.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{1}{4}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100% to change it to a percentage.",
+              "work": "\\\\(\\frac{1}{4} \\\\times 100\\% = \\\\frac{100}{4}\\%\\\\)"
+            },
+            {
+              "explain": "Divide 100 by 4 to compute the percentage value.",
+              "work": "\\\\(100 \\\\div 4 = 25\\\\)"
+            },
+            {
+              "explain": "Confirm that one quarter of a whole is equal to 25%.",
+              "work": "\\\\(\\text{Percentage} = 25\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        }
+      ]
+    },
+    {
+      "topicId": "y6-9b",
+      "code": "9B",
+      "title": "Decimals and percentages",
+      "questions": [
+        {
+          "id": "y6-rn-2-l1-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(57\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(5.7\\\\)",
+            "\\\\(0.057\\\\)",
+            "\\\\(57.0\\\\)",
+            "\\\\(0.57\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the percentage number by 100 to convert it to a decimal.",
+          "steps": [
+            {
+              "explain": "First, write down the percentage. A percentage can be written as a fraction over 100.",
+              "work": "\\\\(57\\% = \\\\frac{57}{100}\\\\)"
+            },
+            {
+              "explain": "To divide by 100, shift the decimal point two places to the left.",
+              "work": "\\\\(57.0 \\\\div 100 = 0.57\\\\)"
+            },
+            {
+              "explain": "Confirm that the final decimal value is 0.57.",
+              "work": "\\\\(\\text{Decimal} = 0.57\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(62\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(6.2\\\\)",
+            "\\\\(0.62\\\\)",
+            "\\\\(0.062\\\\)",
+            "\\\\(0.602\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the percentage value by 100 to find the decimal equivalent.",
+          "steps": [
+            {
+              "explain": "First, express the percentage as a fraction out of 100.",
+              "work": "\\\\(62\\% = \\\\frac{62}{100}\\\\)"
+            },
+            {
+              "explain": "Perform the division by moving the decimal point two positions to the left.",
+              "work": "\\\\(62.0 \\\\div 100 = 0.62\\\\)"
+            },
+            {
+              "explain": "Confirm that the decimal representation of 62% is 0.62.",
+              "work": "\\\\(\\text{Decimal} = 0.62\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(8\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(0.8\\\\)",
+            "\\\\(8.0\\\\)",
+            "\\\\(0.008\\\\)",
+            "\\\\(0.08\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 8 by 100. Make sure to place the zero in the tenths place.",
+          "steps": [
+            {
+              "explain": "First, write down the percentage as a fraction with 100 as the denominator.",
+              "work": "\\\\(8\\% = \\\\frac{8}{100}\\\\)"
+            },
+            {
+              "explain": "Divide the single digit 8 by 100. This requires moving the decimal point two places to the left, which introduces a zero.",
+              "work": "\\\\(8.0 \\\\div 100 = 0.08\\\\)"
+            },
+            {
+              "explain": "Verify that 0.08 represents exactly eight hundredths.",
+              "work": "\\\\(\\text{Decimal} = 0.08\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(40\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(0.04\\\\)",
+            "\\\\(0.44\\\\)",
+            "\\\\(4.0\\\\)",
+            "\\\\(0.4\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 40 by 100, which is the same as dividing 4 by 10.",
+          "steps": [
+            {
+              "explain": "First, write the percentage as a fraction out of 100.",
+              "work": "\\\\(40\\% = \\\\frac{40}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 10 first.",
+              "work": "\\\\(\\frac{40}{100} = \\\\frac{4}{10}\\\\)"
+            },
+            {
+              "explain": "Divide 4 by 10 by moving the decimal point one place to the left.",
+              "work": "\\\\(4.0 \\\\div 10 = 0.4\\\\)"
+            },
+            {
+              "explain": "Confirm that 40% is equivalent to the decimal value of 0.4.",
+              "work": "\\\\(\\text{Decimal} = 0.4\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1
+        },
+        {
+          "id": "y6-rn-2-l1-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the equivalence row for a percentage value of \\\\(75\\%\\\\) by finding its corresponding decimal, fraction, and simplest fraction:\\n\\n| Percentage | Decimal | Fraction | Simplest fraction |\\n| :--- | :---: | :---: | :---: |\\n| 75% | ? | ? | ? |",
+          "options": [
+            "Decimal: \\\\(0.75\\\\), Fraction: \\\\(\\frac{75}{100}\\\\), Simplest: \\\\(\\frac{2}{3}\\\\)",
+            "Decimal: \\\\(0.75\\\\), Fraction: \\\\(\\frac{75}{100}\\\\), Simplest: \\\\(\\frac{3}{4}\\\\)",
+            "Decimal: \\\\(7.5\\\\), Fraction: \\\\(\\frac{75}{100}\\\\), Simplest: \\\\(\\frac{3}{4}\\\\)",
+            "Decimal: \\\\(0.075\\\\), Fraction: \\\\(\\frac{75}{1000}\\\\), Simplest: \\\\(\\frac{3}{40}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 75% to a decimal by dividing by 100. Then express it as a fraction and divide by the highest common factor, 25.",
+          "steps": [
+            {
+              "explain": "First, convert the percentage 75% into a decimal by dividing the number by 100.",
+              "work": "\\\\(75\\% = 75 \\\\div 100 = 0.75\\\\)"
+            },
+            {
+              "explain": "Next, write the percentage as a fraction out of 100. This is the unsimplified fraction representation.",
+              "work": "\\\\(75\\% = \\\\frac{75}{100}\\\\)"
+            },
+            {
+              "explain": "To simplify the fraction, find the Highest Common Factor (HCF) of 75 and 100. The HCF of both numbers is 25.",
+              "work": "\\\\(\\text{HCF}(75, 100) = 25\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 25 to reduce the fraction to its simplest form.",
+              "work": "\\\\(\\frac{75 \\\\div 25}{100 \\\\div 25} = \\\\frac{3}{4}\\\\)"
+            },
+            {
+              "explain": "Confirm that 75% corresponds to decimal 0.75, fraction 75/100, and simplest fraction 3/4.",
+              "work": "\\\\(\\text{Equivalents: } 0.75, \\\\frac{75}{100}, \\\\frac{3}{4}\\\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-9c",
+      "code": "9C",
+      "title": "Percentage 'of' a quantity",
+      "questions": [
+        {
+          "id": "y6-rn-3-l1-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(10\\%\\\\) of \\\\(1\\\\text{ kilogram}\\\\) (in grams).",
+          "options": [
+            "\\\\(50\\\\text{ g}\\\\)",
+            "\\\\(100\\\\text{ g}\\\\)",
+            "\\\\(1\\\\text{ g}\\\\)",
+            "\\\\(10\\\\text{ g}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 1 kilogram to grams first. Recall that 1 kg = 1000 grams.",
+          "steps": [
+            {
+              "explain": "First, identify the unit conversion required. We need the answer in grams, so we convert 1 kilogram into grams.",
+              "work": "\\\\(1\\\\text{ kg} = 1000\\\\text{ g}\\\\)"
+            },
+            {
+              "explain": "Set up the percentage calculation. We need to find 10% of 1000 grams.",
+              "work": "\\\\(10\\% \\\\text{ of } 1000\\\\text{ g} = \\\\frac{10}{100} \\\\times 1000\\\\)"
+            },
+            {
+              "explain": "Simplify the expression by dividing 1000 by 10 (since 10/100 is equivalent to 1/10).",
+              "work": "\\\\(\\frac{1}{10} \\\\times 1000 = 100\\\\)"
+            },
+            {
+              "explain": "Confirm that 10% of 1 kg is exactly 100 grams.",
+              "work": "\\\\(\\text{Result} = 100\\\\text{ g}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "solution": "\\\\(1\\\\text{ kg} = 1000\\\\text{ g}\\\\), and \\\\(10\\\\%\\\\) is one tenth, so \\\\(1000 \\\\div 10 = 100\\\\text{ g}\\\\)."
+        },
+        {
+          "id": "y6-rn-3-l1-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(25\\%\\\\) of \\\\(1\\\\text{ Litre}\\\\) (in mL).",
+          "options": [
+            "\\\\(25\\\\text{ mL}\\\\)",
+            "\\\\(500\\\\text{ mL}\\\\)",
+            "\\\\(125\\\\text{ mL}\\\\)",
+            "\\\\(250\\\\text{ mL}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert 1 Litre to mL first. Recall that 1 L = 1000 mL, and 25% is one quarter.",
+          "steps": [
+            {
+              "explain": "First, convert 1 Litre into millilitres (mL) to match the required units.",
+              "work": "\\\\(1\\\\text{ L} = 1000\\\\text{ mL}\\\\)"
+            },
+            {
+              "explain": "Express 25% as a fraction. 25% is equal to one quarter.",
+              "work": "\\\\(25\\% = \\\\frac{25}{100} = \\\\frac{1}{4}\\\\)"
+            },
+            {
+              "explain": "Find one quarter of 1000 mL by dividing 1000 by 4.",
+              "work": "\\\\(1000 \\\\div 4 = 250\\\\)"
+            },
+            {
+              "explain": "Confirm that 25% of 1 Litre is equal to 250 millilitres.",
+              "work": "\\\\(\\text{Result} = 250\\\\text{ mL}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "solution": "\\\\(1\\\\text{ L} = 1000\\\\text{ mL}\\\\), and \\\\(25\\\\% = \\\\frac{1}{4}\\\\), so \\\\(1000 \\\\div 4 = 250\\\\text{ mL}\\\\)."
+        },
+        {
+          "id": "y6-rn-3-l1-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(60\\%\\\\) of \\\\(\\$2.00\\\\) (in cents).",
+          "options": [
+            "\\\\(80\\\\text{ cents}\\\\)",
+            "\\\\(1200\\\\text{ cents}\\\\)",
+            "\\\\(60\\\\text{ cents}\\\\)",
+            "\\\\(120\\\\text{ cents}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert $2.00 to cents. Recall that $1.00 = 100 cents, so $2.00 = 200 cents.",
+          "steps": [
+            {
+              "explain": "First, convert the monetary value in dollars into cents.",
+              "work": "\\\\(\\$2.00 = 200\\\\text{ cents}\\\\)"
+            },
+            {
+              "explain": "Set up the equation to find 60% of 200 cents.",
+              "work": "\\\\(60\\% \\\\text{ of } 200 = \\\\frac{60}{100} \\\\times 200\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication. Divide 200 by 100 first, then multiply by 60.",
+              "work": "\\\\(60 \\\\times 2 = 120\\\\)"
+            },
+            {
+              "explain": "Confirm that 60% of $2.00 is equivalent to 120 cents (or $1.20).",
+              "work": "\\\\(\\text{Result} = 120\\\\text{ cents}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "solution": "\\\\(\\\\$2.00 = 200\\\\text{ cents}\\\\), and \\\\(60\\\\% = \\\\frac{60}{100}\\\\), so \\\\(\\\\frac{60}{100} \\\\times 200 = 120\\\\text{ cents}\\\\)."
+        },
+        {
+          "id": "y6-rn-3-l1-q7d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(75\\%\\\\) of \\\\(2\\\\text{ metres}\\\\) (in cm).",
+          "options": [
+            "\\\\(175\\\\text{ cm}\\\\)",
+            "\\\\(150\\\\text{ cm}\\\\)",
+            "\\\\(75\\\\text{ cm}\\\\)",
+            "\\\\(100\\\\text{ cm}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 2 metres to centimetres. Recall that 1 m = 100 cm, and 75% is three-quarters.",
+          "steps": [
+            {
+              "explain": "First, convert the length from metres into centimetres.",
+              "work": "\\\\(2\\\\text{ m} = 200\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Express 75% as a fraction. 75% is equivalent to three-quarters.",
+              "work": "\\\\(75\\% = \\\\frac{3}{4}\\\\)"
+            },
+            {
+              "explain": "Find three-quarters of 200 cm by dividing 200 by 4, then multiplying the result by 3.",
+              "work": "\\\\(\\begin{aligned} 200 \\\\div 4 &= 50 \\\\ 50 \\\\times 3 &= 150 \\\\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Confirm that 75% of 2 metres is exactly 150 centimetres.",
+              "work": "\\\\(\\text{Result} = 150\\\\text{ cm}\\\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 1,
+          "solution": "\\\\(2\\\\text{ m} = 200\\\\text{ cm}\\\\), and \\\\(75\\\\% = \\\\frac{3}{4}\\\\), so \\\\(200 \\\\div 4 \\\\times 3 = 150\\\\text{ cm}\\\\)."
+        }
+      ]
+    },
+    {
+      "topicId": "y6-9d",
+      "code": "9D",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "chapterId": "y6-12",
+  "title": "Chapter 12: Three-dimensional objects",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-12a",
+      "code": "12A",
+      "title": "Polyhedra, prisms, pyramids and cylinders",
+      "questions": [
+        {
+          "id": "y6-3ds-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many faces does a triangular prism have?",
+          "options": [
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(3\\)"
+          ],
+          "answer": 2,
+          "hint": "A triangular prism has 2 triangular ends and some rectangular sides connecting them.",
+          "steps": [
+            {
+              "explain": "A triangular prism has 2 triangular faces (the ends) and 3 rectangular faces (the sides).",
+              "work": "\\(2\\text{ triangles}+3\\text{ rectangles}\\)"
+            },
+            {
+              "explain": "Add the faces together.",
+              "work": "\\(2+3=5\\text{ faces}\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y6-3ds-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many vertices (corners) does a square pyramid have?",
+          "options": [
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the 4 corners of the square base, plus the apex at the top.",
+          "steps": [
+            {
+              "explain": "The square base has 4 corners.",
+              "work": "4 base vertices"
+            },
+            {
+              "explain": "Add the single apex point at the top.",
+              "work": "\\(4+1=5\\) vertices"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-12b",
+      "code": "12B",
+      "title": "Nets of three-dimensional objects",
+      "questions": [
+        {
+          "id": "y6-3ds-1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A cube is unfolded flat into its net. How many square faces does the net contain?",
+          "options": [
+            "\\(4\\)",
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "A cube has the same number of faces whether folded up or laid out flat as a net.",
+          "steps": [
+            {
+              "explain": "A cube has 6 identical square faces (top, bottom, and 4 sides).",
+              "work": "6 faces"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y6-12c",
+      "code": "12C",
+      "title": "Review questions",
+      "questions": []
+    }
+  ]
+}
