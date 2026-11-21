@@ -289,3 +289,17 @@
   box-shadow: inset 0 2px 3px rgba(255,255,255,0.8), inset 0 -3px 5px rgba(60,30,120,0.12), 0 6px 12px rgba(60,30,120,0.22);
 }
 .cls-card--today h3 .cls-open-pill { text-transform: none; }
+
+/* Homework actions */
+.cls-hw-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.cls-act {
+  border: 0; border-radius: 999px; background: #fff; color: #5b3fc4; padding: 8px 16px; cursor: pointer;
+  font: 800 0.85rem 'Nunito', var(--font-sans);
+  box-shadow: inset 0 2px 3px rgba(255,255,255,0.8), inset 0 -3px 5px rgba(90,60,40,0.10), 0 6px 12px rgba(140,100,170,0.18);
+}
+.cls-act:active { transform: translateY(1px); }
+.cls-act--mistake { background: #fff0ee; color: #b91c1c; }
+.cls-modal--wide { width: min(720px, 100%); }
+.cls-modal-label { margin: 14px 0 8px; font: 800 0.74rem 'Nunito', var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; color: #8b7a72; }
+.cls-modal-text { width: 100%; box-sizing: border-box; border: 0; border-radius: 18px; padding: 12px 14px; font: 600 0.95rem 'Nunito', var(--font-sans); color: #4a2f2a; background: #fff; box-shadow: inset 0 2px 5px rgba(90,60,40,0.14); resize: vertical; }
+.cls-modal-actions { margin: 16px 0 0; justify-content: flex-end; }

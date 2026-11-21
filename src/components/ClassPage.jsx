@@ -1,11 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, deleteDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, deleteDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import LessonWorkspace from './LessonWorkspace';
+import ClassHomeworkModal from './ClassHomeworkModal';
+import HomeworkRedo from './homework/HomeworkRedo';
+import { useAuth } from '../context/AuthContext';
+import { mistakesForLesson, MISTAKES_REVIEWED_FIELD } from '../utils/lessonMistakes';
 import '../utils/clayStyle';
 import './class-page.css';
 
@@ -230,6 +234,21 @@ function PapersEditor({ unit }) {
   );
 }
 
+const MistakeButtons = ({ mistakes, onCheck, showWho = false }) => (
+  <>
+    {mistakes.map((m) => {
+      const count = Object.keys(m.item.marks || {}).length;
+      const who = showWho ? ` · ${firstName(m.studentName)}` : '';
+      const when = mistakes.filter((o) => o.studentId === m.studentId).length > 1 ? ` · ${shortDate(m.item.date)}` : '';
+      return (
+        <button key={m.item.sessionId} type="button" className="cls-act cls-act--mistake" onClick={() => onCheck(m)}>
+          Check the mistake ({count}){who}{when}
+        </button>
+      );
+    })}
+  </>
+);
+
 const PaperList = ({ papers }) => (
   <ul className="cls-topics">
     {papers.map((p, i) => <li key={i}>{p.title}{p.detail ? <span className="cls-muted"> · {p.detail}</span> : null}</li>)}
@@ -299,6 +318,9 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const unit = (picked.auto === autoPick?.key && dayUnits.find((u) => u.key === picked.key)) || autoPick;
   const [padOpen, setPadOpen] = useState(false);
   const [lessonOpen, setLessonOpen] = useState(false);
+  const [hwOpen, setHwOpen] = useState(false);
+  const [mistakeReview, setMistakeReview] = useState(null);   // { item, studentId, studentName }
+  const { user } = useAuth();
   const note = useLessonNote(unit?.key || '');
 
   // History: the group's lessons (groupId) or the student's lessons.
@@ -389,7 +411,25 @@ export default function ClassPage({ students = [], onSelectStudent }) {
           </nav>
         );
   const openLesson = () => setLessonOpen(true);
-  const shared = { lessonNav, openLesson, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
+  // Earlier homework's wrong (✗ / ½) questions, to go through together in this lesson ("Check the mistake").
+  const mistakes = (() => {
+    if (!sessions || !unit) return [];
+    const ids = [...new Set(unit.sessions.map(sessionStudentId))].filter(Boolean);
+    return ids.flatMap((id) => mistakesForLesson(sessions, { studentId: id, lessonDate: unit.date })
+      .map((item) => ({ item, studentId: id, studentName: unit.sessions.find((x) => sessionStudentId(x) === id)?.studentName || '' })));
+  })();
+  const markMistakesDone = async ({ item }) => {
+    try {
+      const at = new Date().toISOString();
+      await updateDoc(doc(db, 'sessions', item.sessionId), { [MISTAKES_REVIEWED_FIELD]: at });
+      patchSessions((list) => list.map((x) => (x.id === item.sessionId ? { ...x, [MISTAKES_REVIEWED_FIELD]: at } : x)));
+      setMistakeReview(null);
+    } catch (err) {
+      console.error(err);
+      window.alert('Could not save. Try again.');
+    }
+  };
+  const shared = { lessonNav, openLesson, mistakes, onCheckMistake: setMistakeReview, onAssignHomework: () => setHwOpen(true), unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
     <div className="cls cls--clay">
@@ -414,6 +454,28 @@ export default function ClassPage({ students = [], onSelectStudent }) {
 
       {unit.isGroup ? <GroupView key={unit.key} {...shared} /> : <SoloView key={unit.key} {...shared} />}
 
+      {hwOpen && (
+        <ClassHomeworkModal
+          unit={unit}
+          student={findStudent(sessionStudentId(unit.sessions[0]))}
+          sessions={sessions || []}
+          onSaved={patchSessions}
+          onClose={() => setHwOpen(false)}
+        />
+      )}
+      {mistakeReview && (
+        <HomeworkRedo
+          item={mistakeReview.item}
+          user={user}
+          teacher={{
+            studentId: mistakeReview.studentId,
+            studentName: mistakeReview.studentName,
+            studentProfile: findStudent(mistakeReview.studentId),
+            onDone: () => markMistakesDone(mistakeReview),
+          }}
+          onClose={() => setMistakeReview(null)}
+        />
+      )}
       {lessonOpen && (
         <LessonWorkspace
           session={unit.isGroup ? { ...unit.sessions[0], isGroupedClass: true, groupStudents: unit.sessions } : unit.sessions[0]}
@@ -436,7 +498,7 @@ function LessonTime({ unit, isNow }) {
   );
 }
 
-function SoloView({ lessonNav, openLesson, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHomework, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const lesson = unit.sessions[0];
   const studentId = sessionStudentId(lesson);
   const student = findStudent(studentId);
@@ -559,6 +621,10 @@ function SoloView({ lessonNav, openLesson, unit, sessions, patchSessions, isNow,
                 ))}
               </ul>
             )}
+            <div className="cls-hw-actions">
+              <button type="button" className="cls-act" onClick={onAssignHomework}>Assign homework</button>
+              <MistakeButtons mistakes={mistakes} onCheck={onCheckMistake} />
+            </div>
           </article>
 
           <article className="cls-card">
@@ -571,7 +637,7 @@ function SoloView({ lessonNav, openLesson, unit, sessions, patchSessions, isNow,
   );
 }
 
-function GroupView({ lessonNav, openLesson, unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function GroupView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHomework, unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const members = unit.sessions.map((s) => {
     const id = sessionStudentId(s);
     const student = findStudent(id);
@@ -639,6 +705,10 @@ function GroupView({ lessonNav, openLesson, unit, sessions, isNow, today, weekFo
                 );
               })}
             </ul>
+            <div className="cls-hw-actions">
+              <button type="button" className="cls-act" onClick={onAssignHomework}>Assign homework</button>
+              <MistakeButtons mistakes={mistakes} onCheck={onCheckMistake} showWho />
+            </div>
             {offline && <p className="cls-muted">Offline — showing saved data.</p>}
           </article>
         </aside>
