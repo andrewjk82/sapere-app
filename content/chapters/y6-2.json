@@ -25,7 +25,7 @@
           "steps": [
             {
               "explain": "Set up the addition by aligning the place values.",
-              "work": "\\begin{array}{r@{\\quad}l} 46 \\\\ +\\quad 33 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 46 \\\\ +\\quad 33 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Add the units column.",
@@ -59,7 +59,7 @@
           "steps": [
             {
               "explain": "Set up the vertical column addition.",
-              "work": "\\begin{array}{r@{\\quad}l} 68 \\\\ +\\quad 25 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 68 \\\\ +\\quad 25 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Add the units place and carry over 1 to the tens place.",
@@ -93,7 +93,7 @@
           "steps": [
             {
               "explain": "Set up the vertical column addition.",
-              "work": "\\begin{array}{r@{\\quad}l} 83 \\\\ +\\quad 54 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 83 \\\\ +\\quad 54 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Add the units place.",
@@ -4967,7 +4967,7 @@
           "steps": [
             {
               "explain": "Set up column addition.",
-              "work": "\\begin{array}{r@{\\quad}l} 349 \\\\ +\\quad 62 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 349 \\\\ +\\quad 62 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Add the units: 9 + 2 = 11 (write 1, carry 1).",
@@ -5001,7 +5001,7 @@
           "steps": [
             {
               "explain": "Set up column addition.",
-              "work": "\\begin{array}{r@{\\quad}l} 423 \\\\ +\\quad 54 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 423 \\\\ +\\quad 54 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Add place values.",
@@ -5034,7 +5034,7 @@
           "steps": [
             {
               "explain": "Set up column addition.",
-              "work": "\\begin{array}{r@{\\quad}l} 742 \\\\ +\\quad 339 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 742 \\\\ +\\quad 339 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Add the units: 2 + 9 = 11 (carry 1).",
@@ -8497,7 +8497,7 @@
           "steps": [
             {
               "explain": "Set up the vertical column subtraction.",
-              "work": "\\begin{array}{r@{\\quad}l} 47 \\\\ -\\quad 24 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 47 \\\\ -\\quad 24 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Subtract the units place.",
@@ -8531,7 +8531,7 @@
           "steps": [
             {
               "explain": "Set up the vertical column subtraction.",
-              "work": "\\begin{array}{r@{\\quad}l} 58 \\\\ -\\quad 15 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 58 \\\\ -\\quad 15 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Subtract the units place.",
@@ -8565,7 +8565,7 @@
           "steps": [
             {
               "explain": "Set up the vertical column subtraction.",
-              "work": "\\begin{array}{r@{\\quad}l} 64 \\\\ -\\quad 18 \\\\ \\hline \\end{array}"
+              "work": "\\begin{array}{r} 64 \\\\ -\\quad 18 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Borrow 1 ten from the tens column to make 14 in the units column.",
