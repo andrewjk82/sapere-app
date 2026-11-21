@@ -37885,32 +37885,32 @@
           "id": "y12a-1g-hard-58",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "An optimization run of a Electric arc steel melting furnace yields daily electrode length consumption rate increments. The daily gains form a geometric series with first term \\(116\\) cm/hour and common ratio \\(3\\).\\nIf the cumulative gain over the run is exactly \\(14036\\) cm/hour, find the duration of the run \\(n\\) in days.",
+          "stem": "The daily amounts of steel produced by a furnace over a run form a geometric series. On day \\(1\\) it produces \\(116\\) tonnes and each day it produces \\(3\\) times as much as the day before. The total produced over the run is exactly \\(14036\\) tonnes. Find the number of days \\(n\\) in the run.",
           "options": [
-            "\\(7\\)",
             "\\(5\\)",
+            "\\(4\\)",
             "\\(6\\)",
-            "\\(4\\)"
+            "\\(121\\)"
           ],
-          "answer": 1,
-          "hint": "Set up the sum equation with a = 116 and r = 3, isolate the exponential term 3^n, and solve for n.",
+          "answer": 0,
+          "hint": "Use \\(S_n=\\dfrac{a(r^n-1)}{r-1}\\) with \\(a=116\\), \\(r=3\\), then solve \\(3^n\\) for \\(n\\).",
           "solution": "\\(5\\)",
           "steps": [
             {
-              "explain": "Substitute the known values into the geometric progression sum formula.",
-              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1} \\implies 14036 = \\frac{116(3^n - 1)}{3 - 1}\\)"
+              "explain": "Write the geometric series sum formula and substitute the first term, ratio and total.",
+              "work": "\\(S_n=\\dfrac{a(r^n-1)}{r-1}\\implies 14036=\\dfrac{116(3^n-1)}{3-1}\\)"
             },
             {
-              "explain": "Simplify the denominator and divide both sides of the equation to isolate the exponential expression.",
-              "work": "\\(14036 = \\frac{116(3^n - 1)}{2} \\implies 14036 = 58(3^n - 1) \\implies 3^n - 1 = \\frac{14036}{58} = 242\\)"
+              "explain": "Simplify the denominator, then divide both sides by 58.",
+              "work": "\\(14036=58(3^n-1)\\implies 3^n-1=\\dfrac{14036}{58}=242\\)"
             },
             {
-              "explain": "Add 1 to both sides and express the resulting number as a power of 3 to solve for n.",
-              "work": "\\(3^n = 243 \\implies n = 5\\)"
+              "explain": "Add 1 and write 243 as a power of 3.",
+              "work": "\\(3^n=243=3^5\\implies n=5\\)"
             },
             {
-              "explain": "Conclude the duration of the run.",
-              "work": "\\(n = 5\\) days"
+              "explain": "Check: the series is 116, 348, 1044, 3132, 9396, which adds to 14036. A common slip is to divide 14036 by 116 and answer 121.",
+              "work": "\\(n=5\\text{ days}\\)"
             }
           ],
           "xp": 3
