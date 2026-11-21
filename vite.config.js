@@ -8,6 +8,9 @@ export default defineConfig({
   // Honour the PORT env var (used by the local preview harness); default 5173.
   server: { port: Number(process.env.PORT) || 5173 },
   build: {
+    // Vite 8's default target (baseline-widely-available, ~Chrome 111+) leaves modern syntax untranspiled and
+    // blanks the page on older Android WebView / Samsung Internet. Transpile down to the old "modules" target.
+    target: ['chrome80', 'edge88', 'firefox78', 'safari14'],
     rollupOptions: {
       // These are server-only packages used in Vercel API routes (/api/).
       // Excluding them from the client bundle prevents build errors and
