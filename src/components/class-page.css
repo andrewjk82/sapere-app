@@ -310,3 +310,21 @@
 .cls-modal .cls-hw { margin: 0 0 4px; }
 .cls-modal .cls-hw-text { color: #4a2f2a; }
 .cls-modal .cls-hw-actions { margin-top: 8px; }
+
+/* Progress */
+.cls-prog-line { margin-top: 4px !important; font-weight: 700; }
+.cls-prog-list { display: grid; gap: 6px; margin-top: 8px; }
+.cls-prog-ch-head { display: flex; justify-content: space-between; width: 100%; border: 0; background: rgba(255,255,255,0.7); border-radius: 16px; padding: 10px 14px; cursor: pointer; font: 800 0.92rem 'Nunito', var(--font-sans); color: #4a2f2a; text-align: left; }
+.cls-prog-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 8px 8px 8px 14px; border-bottom: 1px solid #f3e6d2; font-size: 0.88rem; }
+.cls-prog-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cls-prog-state { font-size: 0.74rem; font-weight: 800; border-radius: 999px; padding: 3px 9px; background: #f1ece6; color: #7a6a64; white-space: nowrap; }
+.cls-prog-state.is-done { background: #cdeccf; color: #226b3a; }
+.cls-prog-state.is-mistakes { background: #fde1dc; color: #b91c1c; }
+.cls-prog-state.is-check { background: #dbe8fb; color: #1d4ed8; }
+.cls-prog-state.is-notin { background: #ffe9a6; color: #8a5a00; }
+.cls-prog-state.is-taught { background: #e4dcf7; color: #5b3fc4; }
+.cls-prog-btns { display: inline-flex; gap: 4px; }
+.cls-prog-btns button { border: 0; border-radius: 999px; padding: 5px 10px; font: 800 0.74rem 'Nunito', var(--font-sans); background: #fff; color: #6d5d56; cursor: pointer; box-shadow: inset 0 1px 2px rgba(255,255,255,0.9), 0 2px 5px rgba(140,100,170,0.18); }
+.cls-prog-btns button.is-on { background: #8a70d4; color: #fff; }
+.cls-prog-btns button:disabled { opacity: 0.45; cursor: default; }
+@media (max-width: 700px) { .cls-prog-row { grid-template-columns: minmax(0, 1fr); } }

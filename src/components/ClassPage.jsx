@@ -2,13 +2,14 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
 import { useLessonNote, useNoteFlush, saveNoteLocal, deleteNoteLocal, flushNotes } from '../utils/classNotes';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import LessonWorkspace from './LessonWorkspace';
 import ClassHomeworkModal from './ClassHomeworkModal';
+import ClassProgressCard from './ClassProgressCard';
+import { courseTopics } from '../utils/topicProgress';
 import HomeworkRedo from './homework/HomeworkRedo';
 import { useAuth } from '../context/AuthContext';
 import { mistakesForLesson, MISTAKES_REVIEWED_FIELD } from '../utils/lessonMistakes';
@@ -73,24 +74,6 @@ const relative = (key) => {
 const topicText = (t) => (t?.code ? `${t.code}${t.title ? ` ${t.title}` : ''}` : (t?.label || t?.title || t?.id || ''));
 const homeworkOpen = (s) => Boolean(String(s.homework || '').trim())
   && !['checked', 'excused', 'deleted'].includes(s.homeworkStatus) && s.isHomeworkCompleted !== true;
-
-const courseTopics = (student = {}) => {
-  const years = Array.isArray(student.assignedYear) ? student.assignedYear : [student.assignedYear || student.year || student.level];
-  const courses = Array.isArray(student.assignedCourse) ? student.assignedCourse : [student.assignedCourse || student.course];
-  const year = years.find((y) => typeof y === 'string' && CURRICULUM_DATA[y]);
-  if (!year) return { year: '', topics: [] };
-  const data = CURRICULUM_DATA[year];
-  let chapters;
-  if (Array.isArray(data)) chapters = data;
-  else {
-    const course = courses.find((c) => Array.isArray(data[c])) || Object.keys(data).find((k) => Array.isArray(data[k]));
-    chapters = course ? data[course] : [];
-  }
-  const topics = chapters.flatMap((chapter) => (Array.isArray(chapter.topics) && chapter.topics.length
-    ? chapter.topics.map((topic) => ({ id: topic.id, code: topic.code || '', title: topic.title || '', chapterTitle: chapter.title }))
-    : [{ id: chapter.id, code: '', title: chapter.title, chapterTitle: chapter.title }]));
-  return { year, topics };
-};
 
 const pastSummaryCache = new Map();
 const readPastSummary = async (key) => {
@@ -544,9 +527,7 @@ function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHom
     sessions.forEach((s) => (s.learnedTopics || []).forEach((t) => { const i = at.get(t?.id); if (i !== undefined && i > index) index = i; }));
     return { year, topics, index };
   })();
-  const current = progress.index >= 0 ? progress.topics[progress.index] : null;
   const suggested = progress.index >= 0 ? progress.topics[progress.index + 1] || null : null;
-  const pct = current ? Math.round(((progress.index + 1) / progress.topics.length) * 100) : 0;
 
   const week = weekFor(studentId, student?.calculationEnabled !== false);
   const todayDaily = week.find((d) => d.key === today)?.state || 'none';
@@ -624,17 +605,7 @@ function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHom
       </ClassMonthCalendar>
 
         <aside className="cls-side cls-side--row">
-          <article className="cls-card">
-            <h3>Progress</h3>
-            {current ? (
-              <>
-                <p className="cls-big">{current.code || current.title}</p>
-                <p className="cls-muted">{current.chapterTitle}</p>
-                <div className="cls-bar" role="img" aria-label={`${pct}% of the course`}><i style={{ width: `${pct}%` }} /></div>
-                <p className="cls-muted">{progress.index + 1} of {progress.topics.length} topics · {pct}%</p>
-              </>
-            ) : <p className="cls-muted">{sessions ? 'No topics recorded yet.' : 'Loading…'}</p>}
-          </article>
+          <ClassProgressCard student={student} sessions={sessions} />
 
           <HomeworkCard
             title={studentName}
