@@ -53,7 +53,9 @@ const toUnits = (sessions) => {
 const noteDocId = (key) => String(key || '').replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 300);
 const useLessonNote = (key) => {
   const live = useLiveDoc(['class_notes', noteDocId(key)], { enabled: Boolean(key) });
-  return { text: live.data?.text || '', loaded: live.data !== undefined || live.status === 'offline' };
+  // `loaded` waits for the server (or a saved copy that really has the note): a first, empty answer from the
+  // device's own cache would otherwise open the pad blank and then hide a note that exists.
+  return { text: live.data?.text || '', loaded: live.status === 'live' || live.status === 'offline' || Boolean(live.data) };
 };
 const LastNote = ({ lessonKey }) => {
   const note = useLessonNote(lessonKey);
@@ -129,31 +131,39 @@ function WeekDots({ week, small = false }) {
 }
 
 function NotePad({ unit, savedText, onClose }) {
-  const [text, setText] = useState(savedText);
+  // `draft` is what has been typed here; until something is typed the pad shows the saved note, so a note that
+  // arrives from the server a moment after the pad opened still appears.
+  const [draft, setDraft] = useState(null);
+  const text = draft ?? savedText;
   const [state, setState] = useState('saved');
   const timer = useRef(0);
-  const latest = useRef(text);
+  const latest = useRef(null);
   const ref = doc(db, 'class_notes', noteDocId(unit.key));
 
   const save = async (value) => {
     setState('saving');
     try {
-      await setDoc(ref, {
-        text: value, date: unit.date, startTime: unit.startTime || '', groupId: unit.groupId || '',
-        studentIds: unit.sessions.map(sessionStudentId), updatedAt: serverTimestamp(),
-      }, { merge: true });
-      setState('saved');
+      // The write is kept on the device and sent when the connection allows, so a slow server ack (the iPad's
+      // usual stall) never leaves the pad stuck on "Saving…".
+      const result = await Promise.race([
+        setDoc(ref, {
+          text: value, date: unit.date, startTime: unit.startTime || '', groupId: unit.groupId || '',
+          studentIds: unit.sessions.map(sessionStudentId), updatedAt: serverTimestamp(),
+        }, { merge: true }),
+        new Promise((resolve) => { window.setTimeout(() => resolve('queued'), 4000); }),
+      ]);
+      setState(result === 'queued' ? 'queued' : 'saved');
     } catch { setState('error'); }
   };
   const onChange = (e) => {
     const v = e.target.value;
-    setText(v); latest.current = v; setState('typing');
+    setDraft(v); latest.current = v; setState('typing');
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(() => save(v), 1500);
   };
   const close = () => {
     window.clearTimeout(timer.current);
-    if (state === 'typing') save(latest.current);
+    if (latest.current !== null && state === 'typing') save(latest.current);
     onClose();
   };
   useEffect(() => () => window.clearTimeout(timer.current), []);
@@ -163,7 +173,7 @@ function NotePad({ unit, savedText, onClose }) {
     setState('saving');
     try {
       await deleteDoc(ref);
-      setText(''); latest.current = '';
+      setDraft(null); latest.current = null;
       onClose();
     } catch { setState('error'); }
   };
@@ -173,7 +183,7 @@ function NotePad({ unit, savedText, onClose }) {
       <div className="cls-pad-head">
         <strong>Notes · {shortDate(unit.date)} {unit.startTime}</strong>
         <span className={`cls-pad-state is-${state}`}>
-          {state === 'saving' ? 'Saving…' : state === 'error' ? 'Not saved — check connection' : state === 'typing' ? '' : 'Saved'}
+          {state === 'saving' ? 'Saving…' : state === 'queued' ? 'Saved on this device' : state === 'error' ? 'Not saved — check connection' : state === 'typing' ? '' : 'Saved'}
         </span>
         {(text || savedText) && <button type="button" className="cls-link cls-link--danger" onClick={remove}>Delete note</button>}
         <button type="button" className="cls-link" onClick={close}>Done</button>
