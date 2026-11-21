@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, deleteDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
@@ -248,6 +249,58 @@ const MistakeButtons = ({ mistakes, onCheck, showWho = false }) => (
     })}
   </>
 );
+
+// Compact card: just whether there is homework / mistakes to go through. Tap it for the details (modal).
+function HomeworkCard({ title, sessions, openList, mistakes, onAssign, onCheck, showWho = false }) {
+  const [open, setOpen] = useState(false);
+  const toggleKey = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setOpen(true); } };
+  return (
+    <>
+      <article className="cls-card cls-card--link" role="button" tabIndex={0} onClick={() => setOpen(true)} onKeyDown={toggleKey} aria-label="Homework details">
+        <h3>Homework<small>Details ›</small></h3>
+        {!sessions ? <p className="cls-muted">Loading…</p> : (
+          <ul className="cls-hw-sum">
+            <li>{openList.length ? `${openList.length} open homework` : 'Nothing outstanding'}</li>
+            {mistakes.length > 0 && <li className="is-flag">{mistakes.length} to check together</li>}
+          </ul>
+        )}
+      </article>
+      {open && createPortal(
+        <div className="cls-modal-back" onMouseDown={(e) => { if (e.target === e.currentTarget) setOpen(false); }}>
+          <div className="cls-modal" role="dialog" aria-modal="true" aria-label="Homework">
+            <div className="cls-modal-head">
+              <h3>Homework</h3>
+              <button type="button" className="cls-x" aria-label="Close" onClick={() => setOpen(false)}>×</button>
+            </div>
+            {title && <p className="cls-muted cls-modal-for">{title}</p>}
+            <div className="cls-hw-actions">
+              <button type="button" className="cls-act" onClick={() => { setOpen(false); onAssign(); }}>Assign homework</button>
+            </div>
+            <p className="cls-modal-label">Open homework</p>
+            {openList.length === 0 ? <p className="cls-muted">Nothing outstanding.</p> : (
+              <ul className="cls-hw">
+                {openList.map((s) => (
+                  <li key={s.id}>
+                    <span className={`cls-hw-state${s.homeworkStatus === 'submitted' ? ' is-in' : ''}`}>{s.homeworkStatus === 'submitted' ? 'Submitted' : 'Not in'}</span>
+                    <span className="cls-hw-text">{String(s.homework).split('\n')[0]}</span>
+                    <span className="cls-muted">{shortDate(s.date)}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p className="cls-modal-label">Mistakes to check together</p>
+            {mistakes.length === 0 ? <p className="cls-muted">None.</p> : (
+              <div className="cls-hw-actions">
+                <MistakeButtons mistakes={mistakes} showWho={showWho} onCheck={(m) => { setOpen(false); onCheck(m); }} />
+              </div>
+            )}
+          </div>
+        </div>,
+        document.body,
+      )}
+    </>
+  );
+}
 
 const PaperList = ({ papers }) => (
   <ul className="cls-topics">
@@ -608,24 +661,14 @@ function SoloView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHom
             ) : <p className="cls-muted">{sessions ? 'No topics recorded yet.' : 'Loading…'}</p>}
           </article>
 
-          <article className="cls-card">
-            <h3>Homework{openHomework.length ? <small>{openHomework.length} open</small> : null}</h3>
-            {!sessions ? <p className="cls-muted">Loading…</p> : openHomework.length === 0 ? <p className="cls-muted">Nothing outstanding.</p> : (
-              <ul className="cls-hw">
-                {openHomework.slice(0, 4).map((s) => (
-                  <li key={s.id}>
-                    <span className={`cls-hw-state${s.homeworkStatus === 'submitted' ? ' is-in' : ''}`}>{s.homeworkStatus === 'submitted' ? 'Submitted' : 'Not in'}</span>
-                    <span className="cls-hw-text">{String(s.homework).split('\n')[0]}</span>
-                    <span className="cls-muted">{shortDate(s.date)}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-            <div className="cls-hw-actions">
-              <button type="button" className="cls-act" onClick={onAssignHomework}>Assign homework</button>
-              <MistakeButtons mistakes={mistakes} onCheck={onCheckMistake} />
-            </div>
-          </article>
+          <HomeworkCard
+            title={studentName}
+            sessions={sessions}
+            openList={openHomework}
+            mistakes={mistakes}
+            onAssign={onAssignHomework}
+            onCheck={onCheckMistake}
+          />
 
           <article className="cls-card">
             <h3>Daily Practice<small>{week.filter((d) => d.state === 'done').length}/{week.filter((d) => !d.future).length} this week</small></h3>
@@ -653,6 +696,8 @@ function GroupView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHo
   const lastPapers = lastUnit?.sessions.find((s) => Array.isArray(s.papersCovered) && s.papersCovered.length)?.papersCovered || [];
   const lastTopics = lastUnit?.sessions.find((s) => (s.learnedTopics || []).length)?.learnedTopics || [];
   const years = [...new Set(members.map((m) => m.student?.year || m.student?.level).filter(Boolean))];
+  const unitIds = new Set(unit.sessions.map((x) => x.id));
+  const groupOpenHomework = (sessions || []).filter((x) => !unitIds.has(x.id) && homeworkOpen(x)).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
   return (
     <>
@@ -705,12 +750,18 @@ function GroupView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHo
                 );
               })}
             </ul>
-            <div className="cls-hw-actions">
-              <button type="button" className="cls-act" onClick={onAssignHomework}>Assign homework</button>
-              <MistakeButtons mistakes={mistakes} onCheck={onCheckMistake} showWho />
-            </div>
             {offline && <p className="cls-muted">Offline — showing saved data.</p>}
           </article>
+
+          <HomeworkCard
+            title={`Group · ${members.length} students`}
+            sessions={sessions}
+            openList={groupOpenHomework}
+            mistakes={mistakes}
+            onAssign={onAssignHomework}
+            onCheck={onCheckMistake}
+            showWho
+          />
         </aside>
       </div>
     </>
