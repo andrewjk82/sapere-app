@@ -4,6 +4,17 @@ import {
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 
+// On an iPad (or any flaky connection) a Firestore call can wait forever for the server's answer, which left the
+// teacher's Reject / Approve stuck on "Grading…". Writes are kept on the device by Firestore and sent when the
+// connection allows, so we stop waiting for the acknowledgement after a few seconds and carry on; a real error
+// (e.g. permission) still comes back at once. A read that does not answer in time is skipped (it keeps running).
+const ACK_MS = 5000;
+const settleWithin = (promise, ms = ACK_MS) => {
+  const p = Promise.resolve(promise);
+  p.catch(() => {});                                   // a late failure after we stopped waiting is not fatal
+  return Promise.race([p, new Promise((resolve) => { setTimeout(resolve, ms); })]);
+};
+
 /**
  * Persist every manually-graded submission as a card in the student's Feedback
  * page store (users/{uid}/saved_feedback) and bump the unread badge counter.
@@ -13,7 +24,7 @@ import { db } from '../firebase/config';
  */
 const writeFeedbackCard = async (userRef, item, correct, feedback, annotation) => {
   try {
-    await addDoc(collection(userRef, 'saved_feedback'), {
+    const cardWrite = addDoc(collection(userRef, 'saved_feedback'), {
       questionId: item.questionId || '',
       questionText: item.questionText || '',
       // Persist the full question so the student can re-read what was asked —
@@ -42,7 +53,8 @@ const writeFeedbackCard = async (userRef, item, correct, feedback, annotation) =
       source: 'teacher',
       read: false,
     });
-    await updateDoc(userRef, { unreadFeedbackCount: increment(1) });
+    const badgeWrite = updateDoc(userRef, { unreadFeedbackCount: increment(1) });
+    await settleWithin(Promise.all([cardWrite, badgeWrite]));
   } catch (err) {
     console.warn('[grading] feedback card write failed (non-fatal):', err?.message || err);
   }
@@ -128,10 +140,12 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
     // Rejection finalises the answer as incorrect so it never lingers as
     // "Teacher marking" on the student's side. No score/XP changes — pending
     // answers were never counted as correct.
+    // Everything is started together and waited for at most ACK_MS in total (see settleWithin).
+    let finalize = Promise.resolve();
     if (type === 'curriculum') {
       // Topic practice keeps no server-side score — the feedback card below is the whole record.
     } else if (type === 'exam_prep') {
-      await updateDoc(doc(db, 'users', userId), {
+      finalize = updateDoc(doc(db, 'users', userId), {
         examPrepRejections: arrayUnion({
           questionId: item.questionId || '',
           topicId: item.topicId || '',
@@ -141,11 +155,12 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
         }),
       }).catch(() => {});
     } else {
-      await finalizeStatAnswer(item, false, feedback, annotation).catch(() => {});
+      finalize = finalizeStatAnswer(item, false, feedback, annotation).catch(() => {});
     }
     // Always record the graded result as a Feedback card so the student can see it.
-    await writeFeedbackCard(feedbackOwnerRef(userId), item, false, feedback, annotation);
-    await deleteDoc(doc(db, 'grading_queue', item.id));
+    const card = writeFeedbackCard(feedbackOwnerRef(userId), item, false, feedback, annotation);
+    const removal = deleteDoc(doc(db, 'grading_queue', item.id));
+    await settleWithin(Promise.all([finalize, card, removal]));
     return { xpAwarded: 0 };
   }
 
@@ -154,7 +169,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
   // The approval is queued on the student's user doc; their app applies it to
   // the local exam-prep stats on next load (see examPrepService.applyTeacherApprovals).
   if (type === 'exam_prep') {
-    await updateDoc(doc(db, 'users', userId), {
+    await settleWithin(updateDoc(doc(db, 'users', userId), {
       examPrepApprovals: arrayUnion({
         questionId: item.questionId || '',
         topicId: item.topicId || '',
@@ -162,15 +177,15 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
         approvedAt: new Date().toISOString(),
         ...(feedback ? { teacherFeedback: feedback } : {}),
       }),
-    });
+    }));
     await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
-    await deleteDoc(doc(db, 'grading_queue', item.id));
+    await settleWithin(deleteDoc(doc(db, 'grading_queue', item.id)));
     return { xpAwarded: 0 };
   }
   // Topic practice is unscored too: no XP, no stat doc — just the student's feedback card.
   if (type === 'curriculum') {
     await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
-    await deleteDoc(doc(db, 'grading_queue', item.id));
+    await settleWithin(deleteDoc(doc(db, 'grading_queue', item.id)));
     return { xpAwarded: 0 };
   }
   const colName = type === 'calc' ? 'calc_stats' : 'daily_stats';
@@ -255,7 +270,7 @@ export const gradeSubmission = async (item, approved, feedback = null, annotatio
   await writeFeedbackCard(feedbackOwnerRef(userId), item, true, feedback, annotation);
 
   // Credit fully applied — now it is safe to remove the queue item.
-  await deleteDoc(doc(db, 'grading_queue', item.id));
+  await settleWithin(deleteDoc(doc(db, 'grading_queue', item.id)));
 
   return { xpAwarded: xpPerQuestion };
 };

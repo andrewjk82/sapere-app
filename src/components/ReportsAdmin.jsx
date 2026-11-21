@@ -940,7 +940,11 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
       const typedComment = (comments[item.id] || '').trim();
       const feedback = typedComment || item.aiAssessment?.feedback || null;
       const annotation = item.teacherAnnotation || null;
-      await gradeSubmission(item, approved, feedback, annotation);
+      // Never sit on "Grading…" for good (iPad connection stalls): after 25 s say so and free the buttons.
+      await Promise.race([
+        gradeSubmission(item, approved, feedback, annotation),
+        new Promise((_, reject) => { window.setTimeout(() => reject(new Error('The server is slow to answer. Check the connection; if the item is still listed, try again.')), 25000); }),
+      ]);
       setComments(prev => { const next = { ...prev }; delete next[item.id]; return next; });
       showToast(approved ? 'Approved — points awarded.' : 'Rejected.', approved ? 'success' : 'info');
     } catch (err) {
