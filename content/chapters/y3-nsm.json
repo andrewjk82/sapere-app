@@ -1393,6 +1393,391 @@
               "note": "Compare the object against 1 kg benchmark weights."
             }
           ]
+        },
+        {
+          "id": "y3-nsm-1-mpdr3-p12",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "Match each grocery item to its most sensible mass: a can of baked beans, a packet of sugar, a large bag of potatoes, and a 2 L bottle of milk.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 100\" width=\"65%\" height=\"auto\" style=\"max-width:429px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"332\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"170\" y=\"38\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0f172a\">Items: Baked beans, Sugar, Potatoes, 2 L Milk</text><text x=\"170\" y=\"66\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#0369a1\">Masses: 1/2 kg,   1 kg,   2 kg,   5 kg</text></svg>"
+          },
+          "options": [
+            "Baked beans: 1/2 kg, Sugar: 1 kg, Milk: 2 kg, Potatoes: 5 kg",
+            "Baked beans: 5 kg, Sugar: 2 kg, Milk: 1 kg, Potatoes: 1/2 kg",
+            "Baked beans: 1 kg, Sugar: 1/2 kg, Milk: 5 kg, Potatoes: 2 kg",
+            "Baked beans: 2 kg, Sugar: 5 kg, Milk: 1/2 kg, Potatoes: 1 kg"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Recall that 1 L of water/milk has a mass of about 1 kg, so a 2 L bottle of milk has a mass of 2 kg.",
+              "work": "\\(2\\text{ L milk} \\approx 2\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"65%\" height=\"auto\" style=\"max-width:429px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"332\" height=\"88\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"170\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">2 L Milk = 2 kg   |   Standard Sugar = 1 kg</text></svg>"
+              }
+            },
+            {
+              "explain": "A small tin of baked beans is about half a kilogram (500 g = 1/2 kg), a packet of sugar is 1 kg, and a large bag of potatoes is the heaviest at 5 kg.",
+              "work": "\\(\\text{Beans}=\\dfrac{1}{2}\\text{ kg},\\; \\text{Sugar}=1\\text{ kg},\\; \\text{Milk}=2\\text{ kg},\\; \\text{Potatoes}=5\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"65%\" height=\"auto\" style=\"max-width:429px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"332\" height=\"88\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"170\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Beans 1/2 kg &lt; Sugar 1 kg &lt; Milk 2 kg &lt; Potatoes 5 kg</text></svg>"
+              }
+            },
+            {
+              "explain": "Order from lightest to heaviest: baked beans (1/2 kg) < sugar (1 kg) < 2 L milk (2 kg) < potatoes (5 kg).",
+              "work": "\\(\\dfrac{1}{2} < 1 < 2 < 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"65%\" height=\"auto\" style=\"max-width:429px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"332\" height=\"88\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"170\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Beans 1/2 kg &lt; Sugar 1 kg &lt; Milk 2 kg &lt; Potatoes 5 kg</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, Baked beans: 1/2 kg, Sugar: 1 kg, Milk: 2 kg, Potatoes: 5 kg is correct.",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{2}\\text{ kg},\\; 1\\text{ kg},\\; 2\\text{ kg},\\; 5\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"65%\" height=\"auto\" style=\"max-width:429px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"332\" height=\"88\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"170\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">Beans 1/2 kg &lt; Sugar 1 kg &lt; Milk 2 kg &lt; Potatoes 5 kg</text></svg>"
+              }
+            }
+          ],
+          "hint": "Order the four grocery items from lightest to heaviest and match them with 1/2 kg, 1 kg, 2 kg, and 5 kg.",
+          "keyPoints": [
+            {
+              "text": "most sensible mass",
+              "note": "1 L of milk/water weighs about 1 kg."
+            }
+          ]
+        },
+        {
+          "id": "y3-nsm-1-mp28-q12f",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "One litre of water has a mass of 1 kilogram (1 kg). What is the mass of \\(2\\dfrac{1}{2}\\) litres of water (in kg and in grams)?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 96\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"292\" height=\"88\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"150\" y=\"42\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#0369a1\">1 L water = 1 kg = 1000 g</text><text x=\"150\" y=\"70\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">2 1/2 L water = ? kg (? g)</text></svg>"
+          },
+          "options": [
+            "\\(2\\dfrac{1}{2}\\) kg (2500 g)",
+            "2 kg (2000 g)",
+            "5 kg (5000 g)",
+            "\\(1\\dfrac{1}{2}\\) kg (1500 g)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since 1 L of water has a mass of 1 kg, 2 L of water has a mass of 2 kg (2000 g).",
+              "work": "\\(2\\text{ L} = 2\\text{ kg} = 2000\\text{ g}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 96\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"292\" height=\"88\" rx=\"10\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"2\"/><text x=\"150\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#854d0e\">2 kg (2000 g) + 1/2 kg (500 g)</text></svg>"
+              }
+            },
+            {
+              "explain": "Half a litre of water has a mass of \\(\\dfrac{1}{2}\\) kg = 500 g.",
+              "work": "\\(\\dfrac{1}{2}\\text{ kg} = 500\\text{ g}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 96\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"292\" height=\"88\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"150\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#15803d\">2 1/2 kg = 2500 g</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine both parts: 2000 g + 500 g = 2500 g, or \\(2\\dfrac{1}{2}\\) kg.",
+              "work": "\\(2000 + 500 = 2500\\text{ g} = 2\\dfrac{1}{2}\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 96\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"292\" height=\"88\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"150\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#15803d\">2 1/2 kg = 2500 g</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, \\(2\\dfrac{1}{2}\\) litres of water has a mass of \\(2\\dfrac{1}{2}\\) kg (2500 g).",
+              "work": "\\(\\text{Answer: } 2\\dfrac{1}{2}\\text{ kg (2500 g)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 96\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"292\" height=\"88\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"150\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13.5\" font-weight=\"bold\" fill=\"#15803d\">2 1/2 kg = 2500 g</text></svg>"
+              }
+            }
+          ],
+          "hint": "Remember 1 L of water = 1 kg (1000 g) and half a kilogram = 500 g.",
+          "keyPoints": [
+            {
+              "text": "1 kilogram (1 kg)",
+              "note": "1 L of water has a mass of 1 kg (1000 g)."
+            }
+          ]
+        },
+        {
+          "id": "y3-nsm-1-mp28-q14a",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many 2 kg flour items can be packed into a bag that holds 24 kg?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#475569\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 2 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Flour</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">How many 2 kg packs fit in 24 kg?</text></svg>"
+          },
+          "options": [
+            "12 packs",
+            "10 packs",
+            "8 packs",
+            "6 packs"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Divide the 24 kg bag limit by the mass of one flour item (2 kg): 24 ÷ 2.",
+              "work": "\\(24 \\div 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 2 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Flour</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">24 kg ÷ 2 kg = 12</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate 24 ÷ 2 = 12.",
+              "work": "\\(24 \\div 2 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 2 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Flour</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">12</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 2 kg = 12</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with multiplication: 12 × 2 kg = 24 kg.",
+              "work": "\\(\\text{Check: } 12 \\times 2 = 24\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 2 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Flour</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">12</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 2 kg = 12</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 12 packs can be packed in the 24 kg bag.",
+              "work": "\\(\\text{Answer: 12 packs}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 2 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Flour</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">2 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">12</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 2 kg = 12</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide 24 kg by 2 kg.",
+          "keyPoints": [
+            {
+              "text": "bag that holds 24 kg",
+              "note": "Divide 24 by 2."
+            }
+          ]
+        },
+        {
+          "id": "y3-nsm-1-mp28-q14b",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many 3 kg sticky tape items can be packed into a bag that holds 24 kg?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#475569\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 3 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Sticky tape</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">3 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">How many 3 kg packs fit in 24 kg?</text></svg>"
+          },
+          "options": [
+            "6 boxes",
+            "8 boxes",
+            "9 boxes",
+            "12 boxes"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Divide the 24 kg bag limit by the mass of one sticky tape item (3 kg): 24 ÷ 3.",
+              "work": "\\(24 \\div 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 3 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Sticky tape</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">3 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">24 kg ÷ 3 kg = 8</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate 24 ÷ 3 = 8.",
+              "work": "\\(24 \\div 3 = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 3 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Sticky tape</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">3 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">8</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 3 kg = 8</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with multiplication: 8 × 3 kg = 24 kg.",
+              "work": "\\(\\text{Check: } 8 \\times 3 = 24\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 3 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Sticky tape</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">3 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">8</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 3 kg = 8</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 8 boxes can be packed in the 24 kg bag.",
+              "work": "\\(\\text{Answer: 8 boxes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 3 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Sticky tape</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">3 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">8</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 3 kg = 8</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide 24 kg by 3 kg.",
+          "keyPoints": [
+            {
+              "text": "bag that holds 24 kg",
+              "note": "Divide 24 by 3."
+            }
+          ]
+        },
+        {
+          "id": "y3-nsm-1-mp28-q14c",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many 4 kg nails items can be packed into a bag that holds 24 kg?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#475569\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 4 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Nails</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">4 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">How many 4 kg packs fit in 24 kg?</text></svg>"
+          },
+          "options": [
+            "4 boxes",
+            "8 boxes",
+            "6 boxes",
+            "5 boxes"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Divide the 24 kg bag limit by the mass of one nails item (4 kg): 24 ÷ 4.",
+              "work": "\\(24 \\div 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 4 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Nails</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">4 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">24 kg ÷ 4 kg = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate 24 ÷ 4 = 6.",
+              "work": "\\(24 \\div 4 = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 4 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Nails</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">4 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">6</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 4 kg = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with multiplication: 6 × 4 kg = 24 kg.",
+              "work": "\\(\\text{Check: } 6 \\times 4 = 24\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 4 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Nails</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">4 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">6</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 4 kg = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 6 boxes can be packed in the 24 kg bag.",
+              "work": "\\(\\text{Answer: 6 boxes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 4 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Nails</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">4 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">6</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 4 kg = 6</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide 24 kg by 4 kg.",
+          "keyPoints": [
+            {
+              "text": "bag that holds 24 kg",
+              "note": "Divide 24 by 4."
+            }
+          ]
+        },
+        {
+          "id": "y3-nsm-1-mp28-q14d",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many 6 kg glue items can be packed into a bag that holds 24 kg?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#475569\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 6 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Glue</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">6 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">How many 6 kg packs fit in 24 kg?</text></svg>"
+          },
+          "options": [
+            "6 tins",
+            "3 tins",
+            "8 tins",
+            "4 tins"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Divide the 24 kg bag limit by the mass of one glue item (6 kg): 24 ÷ 6.",
+              "work": "\\(24 \\div 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 6 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Glue</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">6 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">24 kg ÷ 6 kg = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate 24 ÷ 6 = 4.",
+              "work": "\\(24 \\div 6 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 6 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Glue</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">6 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">4</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 6 kg = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with multiplication: 4 × 6 kg = 24 kg.",
+              "work": "\\(\\text{Check: } 4 \\times 6 = 24\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 6 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Glue</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">6 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">4</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 6 kg = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 4 tins can be packed in the 24 kg bag.",
+              "work": "\\(\\text{Answer: 4 tins}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 6 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Glue</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">6 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">4</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 6 kg = 4</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide 24 kg by 6 kg.",
+          "keyPoints": [
+            {
+              "text": "bag that holds 24 kg",
+              "note": "Divide 24 by 6."
+            }
+          ]
+        },
+        {
+          "id": "y3-nsm-1-mp28-q14e",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "xp": 1,
+          "stem": "How many 8 kg pool salt items can be packed into a bag that holds 24 kg?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#475569\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 8 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Pool salt</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">8 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">How many 8 kg packs fit in 24 kg?</text></svg>"
+          },
+          "options": [
+            "3 tubs",
+            "4 tubs",
+            "6 tubs",
+            "2 tubs"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Divide the 24 kg bag limit by the mass of one pool salt item (8 kg): 24 ÷ 8.",
+              "work": "\\(24 \\div 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 8 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Pool salt</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">8 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#94a3b8\">?</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b45309\">24 kg ÷ 8 kg = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate 24 ÷ 8 = 3.",
+              "work": "\\(24 \\div 8 = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 8 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Pool salt</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">8 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">3</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 8 kg = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with multiplication: 3 × 8 kg = 24 kg.",
+              "work": "\\(\\text{Check: } 3 \\times 8 = 24\\text{ kg}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 8 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Pool salt</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">8 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">3</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 8 kg = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 3 tubs can be packed in the 24 kg bag.",
+              "work": "\\(\\text{Answer: 3 tubs}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 116\" width=\"65%\" height=\"auto\" style=\"max-width:410px;display:block;margin:0 auto;\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><rect x=\"20\" y=\"22\" width=\"76\" height=\"54\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.8\"/><text x=\"58\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\">Bag limit</text><text x=\"58\" y=\"65\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">24 kg</text><line x1=\"98\" y1=\"49\" x2=\"144\" y2=\"49\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"121\" y=\"40\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#b45309\">÷ 8 kg</text><rect x=\"148\" y=\"24\" width=\"68\" height=\"50\" rx=\"6\" fill=\"#fef08a\" stroke=\"#0284c7\" stroke-width=\"1.6\"/><text x=\"182\" y=\"46\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#0f172a\">Pool salt</text><text x=\"182\" y=\"64\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0369a1\">8 kg</text><rect x=\"230\" y=\"26\" width=\"72\" height=\"46\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"54\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#15803d\">3</text><text x=\"160\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#15803d\">24 kg ÷ 8 kg = 3</text></svg>"
+              }
+            }
+          ],
+          "hint": "Divide 24 kg by 8 kg.",
+          "keyPoints": [
+            {
+              "text": "bag that holds 24 kg",
+              "note": "Divide 24 by 8."
+            }
+          ]
         }
       ]
     },
