@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, doc, getDoc, onSnapshot, query, where, writeBatch, setDoc, deleteDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import useLiveDoc from '../hooks/useLiveDoc';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
+import LessonWorkspace from './LessonWorkspace';
 import '../utils/clayStyle';
 import './class-page.css';
 
@@ -156,6 +157,16 @@ function NotePad({ unit, savedText, onClose }) {
     onClose();
   };
   useEffect(() => () => window.clearTimeout(timer.current), []);
+  const remove = async () => {
+    if (!window.confirm('Delete this note? This cannot be undone.')) return;
+    window.clearTimeout(timer.current);
+    setState('saving');
+    try {
+      await deleteDoc(ref);
+      setText(''); latest.current = '';
+      onClose();
+    } catch { setState('error'); }
+  };
 
   return (
     <div className="cls-pad" role="dialog" aria-label="Lesson notes">
@@ -164,6 +175,7 @@ function NotePad({ unit, savedText, onClose }) {
         <span className={`cls-pad-state is-${state}`}>
           {state === 'saving' ? 'Saving…' : state === 'error' ? 'Not saved — check connection' : state === 'typing' ? '' : 'Saved'}
         </span>
+        {(text || savedText) && <button type="button" className="cls-link cls-link--danger" onClick={remove}>Delete note</button>}
         <button type="button" className="cls-link" onClick={close}>Done</button>
       </div>
       <textarea
@@ -276,6 +288,7 @@ export default function ClassPage({ students = [], onSelectStudent }) {
   const [picked, setPicked] = useState({ key: '', auto: '' });
   const unit = (picked.auto === autoPick?.key && dayUnits.find((u) => u.key === picked.key)) || autoPick;
   const [padOpen, setPadOpen] = useState(false);
+  const [lessonOpen, setLessonOpen] = useState(false);
   const note = useLessonNote(unit?.key || '');
 
   // History: the group's lessons (groupId) or the student's lessons.
@@ -365,7 +378,8 @@ export default function ClassPage({ students = [], onSelectStudent }) {
             ))}
           </nav>
         );
-  const shared = { lessonNav, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
+  const openLesson = () => setLessonOpen(true);
+  const shared = { lessonNav, openLesson, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline: todaySummary.status === 'offline' };
 
   return (
     <div className="cls cls--clay">
@@ -389,6 +403,15 @@ export default function ClassPage({ students = [], onSelectStudent }) {
       {padOpen && note.loaded && <NotePad key={unit.key} unit={unit} savedText={note.text} onClose={() => setPadOpen(false)} />}
 
       {unit.isGroup ? <GroupView key={unit.key} {...shared} /> : <SoloView key={unit.key} {...shared} />}
+
+      {lessonOpen && (
+        <LessonWorkspace
+          session={unit.isGroup ? { ...unit.sessions[0], isGroupedClass: true, groupStudents: unit.sessions } : unit.sessions[0]}
+          sessions={sessions || upcoming || []}
+          students={students}
+          onClose={() => setLessonOpen(false)}
+        />
+      )}
     </div>
   );
 }
@@ -403,7 +426,7 @@ function LessonTime({ unit, isNow }) {
   );
 }
 
-function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function SoloView({ lessonNav, openLesson, unit, sessions, patchSessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const lesson = unit.sessions[0];
   const studentId = sessionStudentId(lesson);
   const student = findStudent(studentId);
@@ -473,8 +496,15 @@ function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, week
             )}
           </article>
 
-          <article className="cls-card cls-card--today">
-            <h3>{unit.date === today ? 'Today' : shortDate(unit.date)}</h3>
+          <article
+            className="cls-card cls-card--today cls-card--link"
+            role="button"
+            tabIndex={0}
+            onClick={openLesson}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLesson(); } }}
+            aria-label="Open lesson"
+          >
+            <h3>{unit.date === today ? 'Today' : shortDate(unit.date)}<span className="cls-open-pill">Open lesson</span></h3>
             {(lesson.learnedTopics || []).length > 0 ? (
               <ul className="cls-topics">{lesson.learnedTopics.map((t) => <li key={t.id || topicText(t)}>{topicText(t)}</li>)}</ul>
             ) : suggested ? (
@@ -531,7 +561,7 @@ function SoloView({ lessonNav, unit, sessions, patchSessions, isNow, today, week
   );
 }
 
-function GroupView({ lessonNav, unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
+function GroupView({ lessonNav, openLesson, unit, sessions, isNow, today, weekFor, findStudent, onSelectStudent, offline }) {
   const members = unit.sessions.map((s) => {
     const id = sessionStudentId(s);
     const student = findStudent(id);
@@ -575,7 +605,7 @@ function GroupView({ lessonNav, unit, sessions, isNow, today, weekFor, findStude
           </article>
 
           <article className="cls-card cls-card--today">
-            <h3>Papers covered {unit.date === today ? 'today' : `· ${shortDate(unit.date)}`}</h3>
+            <h3>Papers covered {unit.date === today ? 'today' : `· ${shortDate(unit.date)}`}<button type="button" className="cls-open-pill" onClick={openLesson}>Open lesson</button></h3>
             <PapersEditor unit={unit} />
           </article>
         </div>

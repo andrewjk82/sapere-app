@@ -278,3 +278,14 @@
   box-shadow: inset 0 3px 4px rgba(255,255,255,0.35), inset 0 -5px 8px rgba(60,30,120,0.25), 0 8px 14px rgba(110,80,190,0.3);
 }
 .cls-modal .cls-save:disabled { background: #d9d0ee; box-shadow: none; }
+
+.cls-link--danger { color: #b91c1c !important; }
+.cls-card--link { cursor: pointer; }
+.cls-card--link:focus-visible { outline: 3px solid #c9b8f4; outline-offset: 2px; }
+.cls-card--link:active { transform: translateY(1px); }
+.cls-open-pill {
+  display: inline-flex; align-items: center; gap: 6px; border: 0; border-radius: 999px; background: #fff; color: #5b3fc4;
+  padding: 7px 14px; font: 800 0.82rem 'Nunito', var(--font-sans); cursor: pointer;
+  box-shadow: inset 0 2px 3px rgba(255,255,255,0.8), inset 0 -3px 5px rgba(60,30,120,0.12), 0 6px 12px rgba(60,30,120,0.22);
+}
+.cls-card--today h3 .cls-open-pill { text-transform: none; }
