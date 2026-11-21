@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect, useRef } from "react";
+import { Fragment, useState, useEffect, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TIME_OPTIONS } from "../constants/timeOptions";
 import {
@@ -84,6 +84,8 @@ import StudentDashboardCard from "./studentDetail/StudentDashboardCard";
 import ChallengeHistoryCard from "./ChallengeHistoryCard";
 import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
 import { markHomeworkChecked } from "../services/homeworkService";
+import useStudentSessions from "../hooks/useStudentSessions";
+import { courseTopics, deriveTopicStates, topicStatuses, summarize, byChapter } from "../utils/topicProgress";
 import "./student-detail.css";
 import { compressAvatarImage } from '../utils/avatarUtils';
 
@@ -1072,6 +1074,16 @@ const StudentDetail = ({ studentId, onBack }) => {
     }).catch(() => setHomeworkLoading(false));
   }, [activeTab, activeStudentId]);
 
+  // Progress by topic, worked out from the lessons (same rule as the Class page: taught → homework checked →
+  // mistakes reviewed = done; the teacher's own Done / Not done always wins).
+  const progressSessions = useStudentSessions(activeStudentId);
+  const topicProgress = useMemo(() => {
+    const { topics } = courseTopics(student || {});
+    const derived = progressSessions ? deriveTopicStates(progressSessions, new Date().toLocaleDateString('en-CA')) : new Map();
+    const statuses = topicStatuses(topics, derived, { completed: completedChapters, overrides: student?.progressOverrides || {} });
+    return { loaded: Boolean(progressSessions), sum: summarize(statuses), chapters: byChapter(statuses) };
+  }, [student, progressSessions, completedChapters]);
+
   // Toggle a homework session's completed flag (teacher checks off HW as done).
   const toggleHomeworkComplete = async (session) => {
     if (!session?.id) return;
@@ -1858,6 +1870,7 @@ const StudentDetail = ({ studentId, onBack }) => {
             chapters={chapters}
             assignedChapters={assignedChapters}
             completedChapters={completedChapters}
+            topicProgress={topicProgress}
             onToggleChapter={handleToggleChapter}
           />
         );
@@ -2385,6 +2398,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         onImageUpload={handleImageUpload}
         chapters={chapters}
         completedChapters={completedChapters}
+        topicProgress={topicProgress}
         editingTerm={editingTerm}
         setEditingTerm={setEditingTerm}
         showToast={showToast}

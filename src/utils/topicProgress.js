@@ -69,12 +69,14 @@ export const deriveTopicStates = (sessions = [], today = '9999-99-99') => {
 export const topicStatuses = (topics, derived, { completed = [], overrides = {} } = {}) => {
   const done = new Set(completed);
   return topics.map((topic) => {
-    const auto = derived.get(topic.id) || (done.has(topic.id) ? 'done' : 'none');
+    // Ticked done by hand the old way: the topic itself, or its whole chapter.
+    const manualDone = done.has(topic.id) || done.has(topic.chapterId);
+    const auto = derived.get(topic.id) || (manualDone ? 'done' : 'none');
     const override = overrides[topic.id] === 'done' || overrides[topic.id] === 'open' ? overrides[topic.id] : '';
     let state = auto;
     if (override === 'done') state = 'done';
     else if (override === 'open') state = auto === 'done' || auto === 'none' ? (derived.has(topic.id) ? 'taught' : 'none') : auto;
-    else if (done.has(topic.id) && auto !== 'done') state = 'done';
+    else if (manualDone && auto !== 'done') state = 'done';
     return { ...topic, state, auto, override };
   });
 };
@@ -84,4 +86,15 @@ export const summarize = (statuses) => {
   statuses.forEach((t) => { count[t.state] += 1; });
   const furthest = statuses.reduce((best, t, i) => (t.state !== 'none' ? i : best), -1);
   return { count, total: statuses.length, furthest };
+};
+
+/** chapterId → { done, total } from topicStatuses(). */
+export const byChapter = (statuses) => {
+  const map = {};
+  statuses.forEach((t) => {
+    const c = map[t.chapterId] || (map[t.chapterId] = { done: 0, total: 0 });
+    c.total += 1;
+    if (t.state === 'done') c.done += 1;
+  });
+  return map;
 };
