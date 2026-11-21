@@ -543,6 +543,8 @@ function SoloView({ openReports, pendingGrading, onOpenReports, lessonNav, openL
   const lastLesson = past[past.length - 1] || null;
   const nextLesson = useMemo(() => (sessions || []).filter((s) => s.id !== lesson.id && (s.date || '') > (lesson.date || '')).sort(byTime)[0] || null, [sessions, lesson]);
   const openHomework = useMemo(() => (sessions || []).filter((s) => s.id !== lesson.id && homeworkOpen(s)).sort((a, b) => (b.date || '').localeCompare(a.date || '')), [sessions, lesson]);
+  // The Homework card lists everything still open, including what was just set in this lesson.
+  const allOpenHomework = useMemo(() => (sessions || []).filter(homeworkOpen).sort((a, b) => (b.date || '').localeCompare(a.date || '')), [sessions]);
 
   const progress = (() => {
     const { year, topics } = courseTopics(student || {});
@@ -644,7 +646,7 @@ function SoloView({ openReports, pendingGrading, onOpenReports, lessonNav, openL
           <HomeworkCard
             title={studentName}
             sessions={sessions}
-            openList={openHomework}
+            openList={allOpenHomework}
             mistakes={mistakes}
             onAssign={onAssignHomework}
             onCheck={onCheckMistake}
@@ -676,8 +678,7 @@ function GroupView({ lessonNav, openLesson, mistakes, onCheckMistake, onAssignHo
   const lastPapers = lastUnit?.sessions.find((s) => Array.isArray(s.papersCovered) && s.papersCovered.length)?.papersCovered || [];
   const lastTopics = lastUnit?.sessions.find((s) => (s.learnedTopics || []).length)?.learnedTopics || [];
   const years = [...new Set(members.map((m) => m.student?.year || m.student?.level).filter(Boolean))];
-  const unitIds = new Set(unit.sessions.map((x) => x.id));
-  const groupOpenHomework = (sessions || []).filter((x) => !unitIds.has(x.id) && homeworkOpen(x)).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  const groupOpenHomework = (sessions || []).filter((x) => homeworkOpen(x)).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
   return (
     <>
