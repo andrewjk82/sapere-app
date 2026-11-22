@@ -30,6 +30,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
   const [adding, setAdding] = useState(false);
   const [form, setForm] = useState({ date: '', startTime: '', endTime: '' });
   const [modalDay, setModalDay] = useState('');
+  const [confirmCancel, setConfirmCancel] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -57,7 +58,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
     const latest = [...(lessons || [])].filter((x) => x.startTime && x.date).sort((x, y) => y.date.localeCompare(x.date))[0];
     return { startTime: latest?.startTime || '4:00 PM', endTime: latest?.endTime || '5:30 PM' };
   }, [lessons]);
-  const closeModal = () => { setModalDay(''); setEditing(''); setAdding(false); setError(''); };
+  const closeModal = () => { setModalDay(''); setEditing(''); setAdding(false); setError(''); setConfirmCancel(''); };
   // A day with lessons opens them; an empty day opens the new-lesson form for that day.
   const pickDay = (k) => {
     if (loading) return;
@@ -103,6 +104,33 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
       closeModal();
     } catch {
       setError('Could not save. Check the connection and try again.');
+    } finally { setBusy(false); }
+  };
+
+  // Cancel keeps the lesson record (attendance 'cancelled', like the Schedule page's Cancelled status) and drops it from
+  // the calendar. A group lesson cancels as one: every student's doc of the same class.
+  const cancelLesson = async (s) => {
+    setBusy(true); setError('');
+    try {
+      let docs = [s];
+      if (s.groupId) {
+        const snap = await getDocs(query(collection(db, 'sessions'), where('groupId', '==', s.groupId)));
+        docs = snap.docs.map((d) => ({ id: d.id, ...d.data() }))
+          .filter((x) => x.date === s.date && x.startTime === s.startTime && x.endTime === s.endTime);
+        if (!docs.some((x) => x.id === s.id)) docs.push(s);
+      }
+      const fields = { attendance: 'cancelled', updatedAt: new Date().toISOString() };
+      const batch = writeBatch(db);
+      docs.forEach((x) => batch.update(doc(db, 'sessions', x.id), fields));
+      await batch.commit();
+      const ids = new Set(docs.map((x) => x.id));
+      onChange((list) => list.map((x) => (ids.has(x.id) ? { ...x, ...fields } : x)));
+      notify(student, studentId, 'Your lesson has been cancelled',
+        `Your ${s.subject || 'lesson'} session on ${s.date} at ${s.startTime} has been cancelled.`);
+      setConfirmCancel('');
+      if (dayLessons.length <= 1) closeModal();
+    } catch {
+      setError('Could not cancel. Check the connection and try again.');
     } finally { setBusy(false); }
   };
 
@@ -194,8 +222,21 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
                     <span className="cls-muted"> · {s.subject || 'Lesson'}{s.groupId && (s.groupStudentNames || []).length > 1 ? ' · group' : ''}</span>
                     {s.id === currentId && <em className="cls-cal-cur">showing now</em>}
                   </span>
-                  {editing !== s.id && <button type="button" className="cls-link" onClick={() => startMove(s)}>Change</button>}
+                  {editing !== s.id && confirmCancel !== s.id && (
+                    <span>
+                      <button type="button" className="cls-link" onClick={() => startMove(s)}>Change</button>
+                      {' · '}
+                      <button type="button" className="cls-link" onClick={() => { setError(''); setConfirmCancel(s.id); }}>Cancel lesson</button>
+                    </span>
+                  )}
                 </div>
+                {confirmCancel === s.id && (
+                  <div className="cls-edit-actions">
+                    <span className="cls-muted">Cancel this lesson{s.groupId && (s.groupStudentNames || []).length > 1 ? ' for the whole group' : ''}? The student is notified.</span>
+                    <button type="button" className="cls-link" disabled={busy} onClick={() => setConfirmCancel('')}>Keep</button>
+                    <button type="button" className="cls-save" disabled={busy} onClick={() => cancelLesson(s)}>{busy ? 'Cancelling…' : 'Yes, cancel'}</button>
+                  </div>
+                )}
                 {editing === s.id && editor(() => saveMove(s), 'Save change')}
               </div>
             ))}
