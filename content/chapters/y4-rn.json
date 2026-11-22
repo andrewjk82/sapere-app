@@ -3097,13 +3097,909 @@
       "topicId": "y4-rn-4",
       "code": "MA2-RN-01",
       "title": "Decimals — tenths: Extend place value to tenths; represent tenths on a number line",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-rn-4-th16-p68-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"three-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{3}{10}\\) and \\(0.3\\)",
+            "\\(\\dfrac{3}{100}\\) and \\(0.03\\)",
+            "\\(\\dfrac{10}{3}\\) and \\(3.0\\)",
+            "\\(\\dfrac{3}{10}\\) and \\(0.03\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "three-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{3}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{3}{10} = 0.3\\)"
+            },
+            {
+              "explain": "Check that \\(0.03\\) would be 3 hundredths, NOT 3 tenths.",
+              "work": "\\(0.3 \\ne 0.03\\)"
+            },
+            {
+              "explain": "Therefore, \"three-tenths\" is written as \\(\\dfrac{3}{10}\\) and \\(0.3\\).",
+              "work": "\\(\\dfrac{3}{10} = 0.3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"four-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{4}{10}\\) and \\(0.4\\)",
+            "\\(\\dfrac{4}{100}\\) and \\(0.04\\)",
+            "\\(\\dfrac{10}{4}\\) and \\(4.0\\)",
+            "\\(\\dfrac{4}{10}\\) and \\(0.04\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "four-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{4}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{4}{10} = 0.4\\)"
+            },
+            {
+              "explain": "Check that \\(0.04\\) would be 4 hundredths, NOT 4 tenths.",
+              "work": "\\(0.4 \\ne 0.04\\)"
+            },
+            {
+              "explain": "Therefore, \"four-tenths\" is written as \\(\\dfrac{4}{10}\\) and \\(0.4\\).",
+              "work": "\\(\\dfrac{4}{10} = 0.4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"five-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{5}{10}\\) and \\(0.5\\)",
+            "\\(\\dfrac{5}{100}\\) and \\(0.05\\)",
+            "\\(\\dfrac{10}{5}\\) and \\(5.0\\)",
+            "\\(\\dfrac{5}{10}\\) and \\(0.05\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "five-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{5}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{5}{10} = 0.5\\)"
+            },
+            {
+              "explain": "Check that \\(0.05\\) would be 5 hundredths, NOT 5 tenths.",
+              "work": "\\(0.5 \\ne 0.05\\)"
+            },
+            {
+              "explain": "Therefore, \"five-tenths\" is written as \\(\\dfrac{5}{10}\\) and \\(0.5\\).",
+              "work": "\\(\\dfrac{5}{10} = 0.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"six-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{6}{10}\\) and \\(0.6\\)",
+            "\\(\\dfrac{6}{100}\\) and \\(0.06\\)",
+            "\\(\\dfrac{10}{6}\\) and \\(6.0\\)",
+            "\\(\\dfrac{6}{10}\\) and \\(0.06\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "six-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{6}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{6}{10} = 0.6\\)"
+            },
+            {
+              "explain": "Check that \\(0.06\\) would be 6 hundredths, NOT 6 tenths.",
+              "work": "\\(0.6 \\ne 0.06\\)"
+            },
+            {
+              "explain": "Therefore, \"six-tenths\" is written as \\(\\dfrac{6}{10}\\) and \\(0.6\\).",
+              "work": "\\(\\dfrac{6}{10} = 0.6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"seven-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{7}{10}\\) and \\(0.7\\)",
+            "\\(\\dfrac{7}{100}\\) and \\(0.07\\)",
+            "\\(\\dfrac{10}{7}\\) and \\(7.0\\)",
+            "\\(\\dfrac{7}{10}\\) and \\(0.07\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "seven-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{7}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{7}{10} = 0.7\\)"
+            },
+            {
+              "explain": "Check that \\(0.07\\) would be 7 hundredths, NOT 7 tenths.",
+              "work": "\\(0.7 \\ne 0.07\\)"
+            },
+            {
+              "explain": "Therefore, \"seven-tenths\" is written as \\(\\dfrac{7}{10}\\) and \\(0.7\\).",
+              "work": "\\(\\dfrac{7}{10} = 0.7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"eight-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{8}{10}\\) and \\(0.8\\)",
+            "\\(\\dfrac{8}{100}\\) and \\(0.08\\)",
+            "\\(\\dfrac{10}{8}\\) and \\(8.0\\)",
+            "\\(\\dfrac{8}{10}\\) and \\(0.08\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "eight-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{8}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{8}{10} = 0.8\\)"
+            },
+            {
+              "explain": "Check that \\(0.08\\) would be 8 hundredths, NOT 8 tenths.",
+              "work": "\\(0.8 \\ne 0.08\\)"
+            },
+            {
+              "explain": "Therefore, \"eight-tenths\" is written as \\(\\dfrac{8}{10}\\) and \\(0.8\\).",
+              "work": "\\(\\dfrac{8}{10} = 0.8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"nine-tenths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{9}{10}\\) and \\(0.9\\)",
+            "\\(\\dfrac{9}{100}\\) and \\(0.09\\)",
+            "\\(\\dfrac{10}{9}\\) and \\(9.0\\)",
+            "\\(\\dfrac{9}{10}\\) and \\(0.09\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Tenths have denominator 10 and sit in the FIRST place to the right of the decimal point (0.x).",
+          "keyPoints": [
+            {
+              "text": "nine-tenths",
+              "note": "One-tenth = 1/10 = 0.1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Tenths\" means a whole divided into 10 equal parts, so the denominator is 10.",
+              "work": "\\(\\text{Fraction} = \\dfrac{9}{10}\\)"
+            },
+            {
+              "explain": "In decimal notation, the first digit after the decimal point is the tenths place.",
+              "work": "\\(\\dfrac{9}{10} = 0.9\\)"
+            },
+            {
+              "explain": "Check that \\(0.09\\) would be 9 hundredths, NOT 9 tenths.",
+              "work": "\\(0.9 \\ne 0.09\\)"
+            },
+            {
+              "explain": "Therefore, \"nine-tenths\" is written as \\(\\dfrac{9}{10}\\) and \\(0.9\\).",
+              "work": "\\(\\dfrac{9}{10} = 0.9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which list orders the decimals 0.8, 1.7, 0.5, 2.4, 1.9 from smallest to largest?",
+          "options": [
+            "0.5, 0.8, 1.7, 1.9, 2.4",
+            "0.8, 0.5, 1.7, 1.9, 2.4",
+            "0.5, 0.8, 1.9, 1.7, 2.4",
+            "2.4, 1.9, 1.7, 0.8, 0.5"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the whole-number (ones) digit first; if two decimals have the same ones digit, compare their tenths digits.",
+          "keyPoints": [
+            {
+              "text": "smallest to largest",
+              "note": "Compare ones first, then tenths."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the whole-number (ones) digits first to find the smallest decimal: \\(0.5\\).",
+              "work": "\\(\\text{Smallest} = 0.5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.8</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.7</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.5</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.4</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.9</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Smallest: 0.5</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the largest decimal: \\(2.4\\).",
+              "work": "\\(\\text{Largest} = 2.4\\)"
+            },
+            {
+              "explain": "Order the middle three decimals by comparing ones and then tenths.",
+              "work": "\\(0.8 < 1.7 < 1.9\\)"
+            },
+            {
+              "explain": "Write all five decimals from smallest to largest.",
+              "work": "\\(0.5 < 0.8 < 1.7 < 1.9 < 2.4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.5</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.8</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1.7</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1.9</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.4</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Ordered smallest to largest</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 84\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.8</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.7</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.5</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.4</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.9</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which list orders the decimals 1.6, 2.3, 1.8, 2.2, 2.0 from smallest to largest?",
+          "options": [
+            "1.6, 1.8, 2.2, 2.0, 2.3",
+            "1.6, 1.8, 2.0, 2.2, 2.3",
+            "2.3, 2.2, 2.0, 1.8, 1.6",
+            "1.8, 1.6, 2.0, 2.2, 2.3"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the whole-number (ones) digit first; if two decimals have the same ones digit, compare their tenths digits.",
+          "keyPoints": [
+            {
+              "text": "smallest to largest",
+              "note": "Compare ones first, then tenths."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the whole-number (ones) digits first to find the smallest decimal: \\(1.6\\).",
+              "work": "\\(\\text{Smallest} = 1.6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1.6</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.3</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.8</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.2</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.0</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Smallest: 1.6</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the largest decimal: \\(2.3\\).",
+              "work": "\\(\\text{Largest} = 2.3\\)"
+            },
+            {
+              "explain": "Order the middle three decimals by comparing ones and then tenths.",
+              "work": "\\(1.8 < 2.0 < 2.2\\)"
+            },
+            {
+              "explain": "Write all five decimals from smallest to largest.",
+              "work": "\\(1.6 < 1.8 < 2.0 < 2.2 < 2.3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1.6</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1.8</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.0</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.2</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.3</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Ordered smallest to largest</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 84\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.6</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.3</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1.8</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.2</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.0</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which list orders the decimals 0.3, 2.8, 0.1, 2.5, 0.8 from smallest to largest?",
+          "options": [
+            "0.1, 0.3, 0.8, 2.5, 2.8",
+            "0.1, 0.8, 0.3, 2.5, 2.8",
+            "0.1, 0.3, 0.8, 2.8, 2.5",
+            "2.8, 2.5, 0.8, 0.3, 0.1"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the whole-number (ones) digit first; if two decimals have the same ones digit, compare their tenths digits.",
+          "keyPoints": [
+            {
+              "text": "smallest to largest",
+              "note": "Compare ones first, then tenths."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the whole-number (ones) digits first to find the smallest decimal: \\(0.1\\).",
+              "work": "\\(\\text{Smallest} = 0.1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.3</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.8</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.1</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.5</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.8</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Smallest: 0.1</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the largest decimal: \\(2.8\\).",
+              "work": "\\(\\text{Largest} = 2.8\\)"
+            },
+            {
+              "explain": "Order the middle three decimals by comparing ones and then tenths.",
+              "work": "\\(0.3 < 0.8 < 2.5\\)"
+            },
+            {
+              "explain": "Write all five decimals from smallest to largest.",
+              "work": "\\(0.1 < 0.3 < 0.8 < 2.5 < 2.8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.1</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.3</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">0.8</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.5</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.8</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Ordered smallest to largest</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 84\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.3</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.8</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.1</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.5</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">0.8</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which list orders the decimals 4.5, 3.2, 5.6, 2.7, 5.0 from smallest to largest?",
+          "options": [
+            "2.7, 3.2, 4.5, 5.6, 5.0",
+            "2.7, 3.2, 4.5, 5.0, 5.6",
+            "5.6, 5.0, 4.5, 3.2, 2.7",
+            "3.2, 2.7, 4.5, 5.0, 5.6"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the whole-number (ones) digit first; if two decimals have the same ones digit, compare their tenths digits.",
+          "keyPoints": [
+            {
+              "text": "smallest to largest",
+              "note": "Compare ones first, then tenths."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the whole-number (ones) digits first to find the smallest decimal: \\(2.7\\).",
+              "work": "\\(\\text{Smallest} = 2.7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4.5</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">3.2</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5.6</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.7</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5.0</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Smallest: 2.7</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the largest decimal: \\(5.6\\).",
+              "work": "\\(\\text{Largest} = 5.6\\)"
+            },
+            {
+              "explain": "Order the middle three decimals by comparing ones and then tenths.",
+              "work": "\\(3.2 < 4.5 < 5.0\\)"
+            },
+            {
+              "explain": "Write all five decimals from smallest to largest.",
+              "work": "\\(2.7 < 3.2 < 4.5 < 5.0 < 5.6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2.7</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">3.2</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4.5</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5.0</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5.6</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Ordered smallest to largest</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 84\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4.5</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">3.2</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5.6</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2.7</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5.0</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This number line counts forward by tenths (\\(+0.1\\)). What are the five missing decimals marked with \"?\" from left to right?",
+          "options": [
+            "0.1, 0.4, 0.6, 0.9, 1.0",
+            "0.1, 0.4, 0.6, 0.8, 0.9",
+            "0.1, 0.5, 0.6, 0.9, 1.0",
+            "0.2, 0.4, 0.6, 0.9, 1.0"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add 0.1 at every tick mark moving from left to right along the number line.",
+          "keyPoints": [
+            {
+              "text": "counts forward by tenths",
+              "note": "Each tick mark increases by 0.1 (one-tenth)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Confirm the step size between neighbouring ticks: each tick increases by \\(0.1\\).",
+              "work": "\\(\\text{Step} = +0.1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 104\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"26\" y1=\"34\" x2=\"414\" y2=\"34\" stroke=\"#d97706\" stroke-width=\"2.5\"/><line x1=\"26.0\" y1=\"26\" x2=\"26.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"26.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.0</text><line x1=\"64.8\" y1=\"26\" x2=\"64.8\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"64.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">0.1</text><line x1=\"103.6\" y1=\"26\" x2=\"103.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"103.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.2</text><line x1=\"142.4\" y1=\"26\" x2=\"142.4\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"142.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.3</text><line x1=\"181.2\" y1=\"26\" x2=\"181.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"181.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">0.4</text><line x1=\"220.0\" y1=\"26\" x2=\"220.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"220.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.5</text><line x1=\"258.8\" y1=\"26\" x2=\"258.8\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"258.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">0.6</text><line x1=\"297.6\" y1=\"26\" x2=\"297.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"297.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.7</text><line x1=\"336.4\" y1=\"26\" x2=\"336.4\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"336.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.8</text><line x1=\"375.2\" y1=\"26\" x2=\"375.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"375.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">0.9</text><line x1=\"414.0\" y1=\"26\" x2=\"414.0\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"414.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">1.0</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Filled: 0.1, 0.4, 0.6, 0.9, 1.0</text></svg>"
+              }
+            },
+            {
+              "explain": "Count forward by \\(0.1\\) from the left end to read each blue \"?\" mark in order.",
+              "work": "\\(\\text{Missing decimals: } 0.1, 0.4, 0.6, 0.9, 1.0\\)"
+            },
+            {
+              "explain": "Check that every filled number sits smoothly between its left and right neighbours.",
+              "work": "\\(\\text{Every consecutive gap equals } 0.1\\)"
+            },
+            {
+              "explain": "Therefore, the five missing decimals are \\(0.1, 0.4, 0.6, 0.9, 1.0\\).",
+              "work": "\\(\\text{Answer: } 0.1, 0.4, 0.6, 0.9, 1.0\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 82\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"82\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"26\" y1=\"34\" x2=\"414\" y2=\"34\" stroke=\"#d97706\" stroke-width=\"2.5\"/><line x1=\"26.0\" y1=\"26\" x2=\"26.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"26.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.0</text><line x1=\"64.8\" y1=\"26\" x2=\"64.8\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"64.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"103.6\" y1=\"26\" x2=\"103.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"103.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.2</text><line x1=\"142.4\" y1=\"26\" x2=\"142.4\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"142.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.3</text><line x1=\"181.2\" y1=\"26\" x2=\"181.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"181.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"220.0\" y1=\"26\" x2=\"220.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"220.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.5</text><line x1=\"258.8\" y1=\"26\" x2=\"258.8\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"258.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"297.6\" y1=\"26\" x2=\"297.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"297.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.7</text><line x1=\"336.4\" y1=\"26\" x2=\"336.4\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"336.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">0.8</text><line x1=\"375.2\" y1=\"26\" x2=\"375.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"375.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"414.0\" y1=\"26\" x2=\"414.0\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"414.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This number line counts forward by tenths (\\(+0.1\\)). What are the five missing decimals marked with \"?\" from left to right?",
+          "options": [
+            "2.2, 2.4, 2.7, 2.8, 2.9",
+            "2.2, 2.4, 2.6, 2.7, 2.8",
+            "2.2, 2.5, 2.7, 2.8, 2.9",
+            "2.1, 2.4, 2.7, 2.8, 2.9"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add 0.1 at every tick mark moving from left to right along the number line.",
+          "keyPoints": [
+            {
+              "text": "counts forward by tenths",
+              "note": "Each tick mark increases by 0.1 (one-tenth)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Confirm the step size between neighbouring ticks: each tick increases by \\(0.1\\).",
+              "work": "\\(\\text{Step} = +0.1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 104\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"26\" y1=\"34\" x2=\"414\" y2=\"34\" stroke=\"#d97706\" stroke-width=\"2.5\"/><line x1=\"26.0\" y1=\"26\" x2=\"26.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"26.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.0</text><line x1=\"69.1\" y1=\"26\" x2=\"69.1\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"69.1\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.1</text><line x1=\"112.2\" y1=\"26\" x2=\"112.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"112.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">2.2</text><line x1=\"155.3\" y1=\"26\" x2=\"155.3\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"155.3\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.3</text><line x1=\"198.4\" y1=\"26\" x2=\"198.4\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"198.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">2.4</text><line x1=\"241.6\" y1=\"26\" x2=\"241.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"241.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.5</text><line x1=\"284.7\" y1=\"26\" x2=\"284.7\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"284.7\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.6</text><line x1=\"327.8\" y1=\"26\" x2=\"327.8\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"327.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">2.7</text><line x1=\"370.9\" y1=\"26\" x2=\"370.9\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"370.9\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">2.8</text><line x1=\"414.0\" y1=\"26\" x2=\"414.0\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"414.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">2.9</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Filled: 2.2, 2.4, 2.7, 2.8, 2.9</text></svg>"
+              }
+            },
+            {
+              "explain": "Count forward by \\(0.1\\) from the left end to read each blue \"?\" mark in order.",
+              "work": "\\(\\text{Missing decimals: } 2.2, 2.4, 2.7, 2.8, 2.9\\)"
+            },
+            {
+              "explain": "Check that every filled number sits smoothly between its left and right neighbours.",
+              "work": "\\(\\text{Every consecutive gap equals } 0.1\\)"
+            },
+            {
+              "explain": "Therefore, the five missing decimals are \\(2.2, 2.4, 2.7, 2.8, 2.9\\).",
+              "work": "\\(\\text{Answer: } 2.2, 2.4, 2.7, 2.8, 2.9\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 82\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"82\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"26\" y1=\"34\" x2=\"414\" y2=\"34\" stroke=\"#d97706\" stroke-width=\"2.5\"/><line x1=\"26.0\" y1=\"26\" x2=\"26.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"26.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.0</text><line x1=\"69.1\" y1=\"26\" x2=\"69.1\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"69.1\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.1</text><line x1=\"112.2\" y1=\"26\" x2=\"112.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"112.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"155.3\" y1=\"26\" x2=\"155.3\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"155.3\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.3</text><line x1=\"198.4\" y1=\"26\" x2=\"198.4\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"198.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"241.6\" y1=\"26\" x2=\"241.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"241.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.5</text><line x1=\"284.7\" y1=\"26\" x2=\"284.7\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"284.7\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">2.6</text><line x1=\"327.8\" y1=\"26\" x2=\"327.8\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"327.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"370.9\" y1=\"26\" x2=\"370.9\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"370.9\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"414.0\" y1=\"26\" x2=\"414.0\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"414.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th16-p68-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This number line counts forward by tenths (\\(+0.1\\)). What are the five missing decimals marked with \"?\" from left to right?",
+          "options": [
+            "3.7, 3.8, 4.1, 4.3, 4.4",
+            "3.7, 3.8, 4.1, 4.2, 4.3",
+            "3.7, 3.9, 4.1, 4.3, 4.4",
+            "3.6, 3.8, 4.1, 4.3, 4.4"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add 0.1 at every tick mark moving from left to right along the number line.",
+          "keyPoints": [
+            {
+              "text": "counts forward by tenths",
+              "note": "Each tick mark increases by 0.1 (one-tenth)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Confirm the step size between neighbouring ticks: each tick increases by \\(0.1\\).",
+              "work": "\\(\\text{Step} = +0.1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 104\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"26\" y1=\"34\" x2=\"414\" y2=\"34\" stroke=\"#d97706\" stroke-width=\"2.5\"/><line x1=\"26.0\" y1=\"26\" x2=\"26.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"26.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">3.5</text><line x1=\"69.1\" y1=\"26\" x2=\"69.1\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"69.1\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">3.6</text><line x1=\"112.2\" y1=\"26\" x2=\"112.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"112.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">3.7</text><line x1=\"155.3\" y1=\"26\" x2=\"155.3\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"155.3\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">3.8</text><line x1=\"198.4\" y1=\"26\" x2=\"198.4\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"198.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">3.9</text><line x1=\"241.6\" y1=\"26\" x2=\"241.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"241.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">4.0</text><line x1=\"284.7\" y1=\"26\" x2=\"284.7\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"284.7\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">4.1</text><line x1=\"327.8\" y1=\"26\" x2=\"327.8\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"327.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">4.2</text><line x1=\"370.9\" y1=\"26\" x2=\"370.9\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"370.9\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">4.3</text><line x1=\"414.0\" y1=\"26\" x2=\"414.0\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"414.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#15803d\">4.4</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Filled: 3.7, 3.8, 4.1, 4.3, 4.4</text></svg>"
+              }
+            },
+            {
+              "explain": "Count forward by \\(0.1\\) from the left end to read each blue \"?\" mark in order.",
+              "work": "\\(\\text{Missing decimals: } 3.7, 3.8, 4.1, 4.3, 4.4\\)"
+            },
+            {
+              "explain": "Check that every filled number sits smoothly between its left and right neighbours.",
+              "work": "\\(\\text{Every consecutive gap equals } 0.1\\)"
+            },
+            {
+              "explain": "Therefore, the five missing decimals are \\(3.7, 3.8, 4.1, 4.3, 4.4\\).",
+              "work": "\\(\\text{Answer: } 3.7, 3.8, 4.1, 4.3, 4.4\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 82\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"82\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"26\" y1=\"34\" x2=\"414\" y2=\"34\" stroke=\"#d97706\" stroke-width=\"2.5\"/><line x1=\"26.0\" y1=\"26\" x2=\"26.0\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"26.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">3.5</text><line x1=\"69.1\" y1=\"26\" x2=\"69.1\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"69.1\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">3.6</text><line x1=\"112.2\" y1=\"26\" x2=\"112.2\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"112.2\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"155.3\" y1=\"26\" x2=\"155.3\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"155.3\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"198.4\" y1=\"26\" x2=\"198.4\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"198.4\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">3.9</text><line x1=\"241.6\" y1=\"26\" x2=\"241.6\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"241.6\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">4.0</text><line x1=\"284.7\" y1=\"26\" x2=\"284.7\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"284.7\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"327.8\" y1=\"26\" x2=\"327.8\" y2=\"42\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"327.8\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">4.2</text><line x1=\"370.9\" y1=\"26\" x2=\"370.9\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"370.9\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"414.0\" y1=\"26\" x2=\"414.0\" y2=\"42\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"414.0\" y=\"60\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">?</text></svg>"
+          }
+        }
+      ]
     },
     {
       "topicId": "y4-rn-5",
       "code": "MA2-RN-01",
       "title": "Decimals — hundredths: Place value to hundredths; hundredths on a number line; connect fractions and decimals",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-rn-5-th16-p68-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"four-hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{4}{100}\\) and \\(0.04\\)",
+            "\\(\\dfrac{4}{100}\\) and \\(0.4\\)",
+            "\\(\\dfrac{4}{10}\\) and \\(0.04\\)",
+            "\\(\\dfrac{100}{4}\\) and \\(4.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "four-hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{4}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{4}{100} = 0.04\\)"
+            },
+            {
+              "explain": "Notice the 0 in the tenths place: \\(0.04\\) is 4 hundredths, whereas \\(0.4\\) would be 4 tenths.",
+              "work": "\\(0.04 \\text{ has } 4 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"four-hundredths\" is written as \\(\\dfrac{4}{100}\\) and \\(0.04\\).",
+              "work": "\\(\\dfrac{4}{100} = 0.04\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-5-th16-p68-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"five-hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{5}{100}\\) and \\(0.05\\)",
+            "\\(\\dfrac{5}{100}\\) and \\(0.5\\)",
+            "\\(\\dfrac{5}{10}\\) and \\(0.05\\)",
+            "\\(\\dfrac{100}{5}\\) and \\(5.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "five-hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{5}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{5}{100} = 0.05\\)"
+            },
+            {
+              "explain": "Notice the 0 in the tenths place: \\(0.05\\) is 5 hundredths, whereas \\(0.5\\) would be 5 tenths.",
+              "work": "\\(0.05 \\text{ has } 5 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"five-hundredths\" is written as \\(\\dfrac{5}{100}\\) and \\(0.05\\).",
+              "work": "\\(\\dfrac{5}{100} = 0.05\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-5-th16-p68-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"six-hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{6}{100}\\) and \\(0.06\\)",
+            "\\(\\dfrac{6}{100}\\) and \\(0.6\\)",
+            "\\(\\dfrac{6}{10}\\) and \\(0.06\\)",
+            "\\(\\dfrac{100}{6}\\) and \\(6.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "six-hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{6}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{6}{100} = 0.06\\)"
+            },
+            {
+              "explain": "Notice the 0 in the tenths place: \\(0.06\\) is 6 hundredths, whereas \\(0.6\\) would be 6 tenths.",
+              "work": "\\(0.06 \\text{ has } 6 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"six-hundredths\" is written as \\(\\dfrac{6}{100}\\) and \\(0.06\\).",
+              "work": "\\(\\dfrac{6}{100} = 0.06\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-5-th16-p68-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"seven-hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{7}{100}\\) and \\(0.07\\)",
+            "\\(\\dfrac{7}{100}\\) and \\(0.7\\)",
+            "\\(\\dfrac{7}{10}\\) and \\(0.07\\)",
+            "\\(\\dfrac{100}{7}\\) and \\(7.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "seven-hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{7}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{7}{100} = 0.07\\)"
+            },
+            {
+              "explain": "Notice the 0 in the tenths place: \\(0.07\\) is 7 hundredths, whereas \\(0.7\\) would be 7 tenths.",
+              "work": "\\(0.07 \\text{ has } 7 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"seven-hundredths\" is written as \\(\\dfrac{7}{100}\\) and \\(0.07\\).",
+              "work": "\\(\\dfrac{7}{100} = 0.07\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-5-th16-p68-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"eight-hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{8}{100}\\) and \\(0.08\\)",
+            "\\(\\dfrac{8}{100}\\) and \\(0.8\\)",
+            "\\(\\dfrac{8}{10}\\) and \\(0.08\\)",
+            "\\(\\dfrac{100}{8}\\) and \\(8.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "eight-hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{8}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{8}{100} = 0.08\\)"
+            },
+            {
+              "explain": "Notice the 0 in the tenths place: \\(0.08\\) is 8 hundredths, whereas \\(0.8\\) would be 8 tenths.",
+              "work": "\\(0.08 \\text{ has } 8 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"eight-hundredths\" is written as \\(\\dfrac{8}{100}\\) and \\(0.08\\).",
+              "work": "\\(\\dfrac{8}{100} = 0.08\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-5-th16-p68-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"nine-hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{9}{100}\\) and \\(0.09\\)",
+            "\\(\\dfrac{9}{100}\\) and \\(0.9\\)",
+            "\\(\\dfrac{9}{10}\\) and \\(0.09\\)",
+            "\\(\\dfrac{100}{9}\\) and \\(9.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "nine-hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{9}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{9}{100} = 0.09\\)"
+            },
+            {
+              "explain": "Notice the 0 in the tenths place: \\(0.09\\) is 9 hundredths, whereas \\(0.9\\) would be 9 tenths.",
+              "work": "\\(0.09 \\text{ has } 9 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"nine-hundredths\" is written as \\(\\dfrac{9}{100}\\) and \\(0.09\\).",
+              "work": "\\(\\dfrac{9}{100} = 0.09\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-5-th16-p68-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"twenty-four hundredths\" as a fraction and as a decimal?",
+          "options": [
+            "\\(\\dfrac{24}{100}\\) and \\(0.24\\)",
+            "\\(\\dfrac{24}{100}\\) and \\(0.024\\)",
+            "\\(\\dfrac{24}{10}\\) and \\(0.24\\)",
+            "\\(\\dfrac{100}{24}\\) and \\(24.00\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Hundredths have denominator 100 and use TWO decimal places (for example, 4 hundredths = 0.04, 24 hundredths = 0.24).",
+          "keyPoints": [
+            {
+              "text": "twenty-four hundredths",
+              "note": "Hundredths = /100 and fill two decimal places after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "\"Hundredths\" means a whole divided into 100 equal parts, so the denominator is 100.",
+              "work": "\\(\\text{Fraction} = \\dfrac{24}{100}\\)"
+            },
+            {
+              "explain": "Write the decimal using TWO decimal places (tenths and hundredths).",
+              "work": "\\(\\dfrac{24}{100} = 0.24\\)"
+            },
+            {
+              "explain": "24 hundredths equals 2 tenths and 4 hundredths = 0.24.",
+              "work": "\\(0.24 \\text{ has } 24 \\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Therefore, \"twenty-four hundredths\" is written as \\(\\dfrac{24}{100}\\) and \\(0.24\\).",
+              "work": "\\(\\dfrac{24}{100} = 0.24\\)"
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y4-rn-6",

@@ -1161,6 +1161,246 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 178\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"178\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"16\" width=\"76\" height=\"46\" fill=\"#e0f2fe\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"78\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">×</text><rect x=\"116\" y=\"16\" width=\"76\" height=\"46\" fill=\"#e0f2fe\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"154\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">40</text><rect x=\"192\" y=\"16\" width=\"76\" height=\"46\" fill=\"#e0f2fe\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"230\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"40\" y=\"62\" width=\"76\" height=\"46\" fill=\"#e0f2fe\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"78\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">20</text><rect x=\"116\" y=\"62\" width=\"76\" height=\"46\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"154\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">?</text><rect x=\"192\" y=\"62\" width=\"76\" height=\"46\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"230\" y=\"91\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">?</text><rect x=\"40\" y=\"108\" width=\"76\" height=\"46\" fill=\"#e0f2fe\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"78\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">3</text><rect x=\"116\" y=\"108\" width=\"76\" height=\"46\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"154\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">?</text><rect x=\"192\" y=\"108\" width=\"76\" height=\"46\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"230\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\">?</text><line x1=\"40\" y1=\"62\" x2=\"268\" y2=\"62\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"2.5\"/></svg>"
           }
+        },
+        {
+          "id": "y4-mr-2-th12-p52-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Split the larger number into tens and ones to multiply: \\(6 \\times 49\\).",
+          "options": [
+            "284",
+            "294",
+            "304",
+            "249"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 49 into 40 + 9, multiply both parts by 6, then add the two products together.",
+          "keyPoints": [
+            {
+              "text": "Split the larger number into tens and ones",
+              "note": "49 = 40 + 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(49\\) into tens and ones: \\(49 = 40 + 9\\).",
+              "work": "\\(6 \\times 49 = (6 \\times 40) + (6 \\times 9)\\)"
+            },
+            {
+              "explain": "Multiply the tens part by \\(6\\): \\(6 \\times 40 = 240\\).",
+              "work": "\\(6 \\times 40 = 240\\)"
+            },
+            {
+              "explain": "Multiply the ones part by \\(6\\): \\(6 \\times 9 = 54\\).",
+              "work": "\\(6 \\times 9 = 54\\)"
+            },
+            {
+              "explain": "Add the two partial products together: \\(240 + 54 = 294\\).",
+              "work": "\\(240 + 54 = 294\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th12-p52-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Split the larger number into tens and ones to multiply: \\(4 \\times 68\\).",
+          "options": [
+            "262",
+            "272",
+            "282",
+            "248"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 68 into 60 + 8, multiply both parts by 4, then add the two products together.",
+          "keyPoints": [
+            {
+              "text": "Split the larger number into tens and ones",
+              "note": "68 = 60 + 8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(68\\) into tens and ones: \\(68 = 60 + 8\\).",
+              "work": "\\(4 \\times 68 = (4 \\times 60) + (4 \\times 8)\\)"
+            },
+            {
+              "explain": "Multiply the tens part by \\(4\\): \\(4 \\times 60 = 240\\).",
+              "work": "\\(4 \\times 60 = 240\\)"
+            },
+            {
+              "explain": "Multiply the ones part by \\(4\\): \\(4 \\times 8 = 32\\).",
+              "work": "\\(4 \\times 8 = 32\\)"
+            },
+            {
+              "explain": "Add the two partial products together: \\(240 + 32 = 272\\).",
+              "work": "\\(240 + 32 = 272\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th12-p52-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Split the larger number into tens and ones to multiply: \\(5 \\times 76\\).",
+          "options": [
+            "350",
+            "370",
+            "380",
+            "390"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 76 into 70 + 6, multiply both parts by 5, then add the two products together.",
+          "keyPoints": [
+            {
+              "text": "Split the larger number into tens and ones",
+              "note": "76 = 70 + 6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(76\\) into tens and ones: \\(76 = 70 + 6\\).",
+              "work": "\\(5 \\times 76 = (5 \\times 70) + (5 \\times 6)\\)"
+            },
+            {
+              "explain": "Multiply the tens part by \\(5\\): \\(5 \\times 70 = 350\\).",
+              "work": "\\(5 \\times 70 = 350\\)"
+            },
+            {
+              "explain": "Multiply the ones part by \\(5\\): \\(5 \\times 6 = 30\\).",
+              "work": "\\(5 \\times 6 = 30\\)"
+            },
+            {
+              "explain": "Add the two partial products together: \\(350 + 30 = 380\\).",
+              "work": "\\(350 + 30 = 380\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th12-p52-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Split the larger number into tens and ones to multiply: \\(7 \\times 59\\).",
+          "options": [
+            "403",
+            "413",
+            "423",
+            "359"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 59 into 50 + 9, multiply both parts by 7, then add the two products together.",
+          "keyPoints": [
+            {
+              "text": "Split the larger number into tens and ones",
+              "note": "59 = 50 + 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(59\\) into tens and ones: \\(59 = 50 + 9\\).",
+              "work": "\\(7 \\times 59 = (7 \\times 50) + (7 \\times 9)\\)"
+            },
+            {
+              "explain": "Multiply the tens part by \\(7\\): \\(7 \\times 50 = 350\\).",
+              "work": "\\(7 \\times 50 = 350\\)"
+            },
+            {
+              "explain": "Multiply the ones part by \\(7\\): \\(7 \\times 9 = 63\\).",
+              "work": "\\(7 \\times 9 = 63\\)"
+            },
+            {
+              "explain": "Add the two partial products together: \\(350 + 63 = 413\\).",
+              "work": "\\(350 + 63 = 413\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th12-p52-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Split the larger number into tens and ones to multiply: \\(8 \\times 87\\).",
+          "options": [
+            "686",
+            "696",
+            "706",
+            "647"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 87 into 80 + 7, multiply both parts by 8, then add the two products together.",
+          "keyPoints": [
+            {
+              "text": "Split the larger number into tens and ones",
+              "note": "87 = 80 + 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(87\\) into tens and ones: \\(87 = 80 + 7\\).",
+              "work": "\\(8 \\times 87 = (8 \\times 80) + (8 \\times 7)\\)"
+            },
+            {
+              "explain": "Multiply the tens part by \\(8\\): \\(8 \\times 80 = 640\\).",
+              "work": "\\(8 \\times 80 = 640\\)"
+            },
+            {
+              "explain": "Multiply the ones part by \\(8\\): \\(8 \\times 7 = 56\\).",
+              "work": "\\(8 \\times 7 = 56\\)"
+            },
+            {
+              "explain": "Add the two partial products together: \\(640 + 56 = 696\\).",
+              "work": "\\(640 + 56 = 696\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th12-p52-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Split the larger number into tens and ones to multiply: \\(9 \\times 43\\).",
+          "options": [
+            "367",
+            "377",
+            "387",
+            "397"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 43 into 40 + 3, multiply both parts by 9, then add the two products together.",
+          "keyPoints": [
+            {
+              "text": "Split the larger number into tens and ones",
+              "note": "43 = 40 + 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(43\\) into tens and ones: \\(43 = 40 + 3\\).",
+              "work": "\\(9 \\times 43 = (9 \\times 40) + (9 \\times 3)\\)"
+            },
+            {
+              "explain": "Multiply the tens part by \\(9\\): \\(9 \\times 40 = 360\\).",
+              "work": "\\(9 \\times 40 = 360\\)"
+            },
+            {
+              "explain": "Multiply the ones part by \\(9\\): \\(9 \\times 3 = 27\\).",
+              "work": "\\(9 \\times 3 = 27\\)"
+            },
+            {
+              "explain": "Add the two partial products together: \\(360 + 27 = 387\\).",
+              "work": "\\(360 + 27 = 387\\)"
+            }
+          ]
         }
       ]
     },
@@ -2815,6 +3055,86 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 528 84\" width=\"65%\" height=\"auto\" style=\"max-width:686px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"528\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">400</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">392</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">384</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">376</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"444\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"448\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"480\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
           }
+        },
+        {
+          "id": "y4-mr-3-th14-p60-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sam’s mum uses \\(6\\) small hearts on \\(1\\) birthday cake (so \\(12\\) for \\(2\\) cakes, \\(30\\) for \\(5\\) cakes). How many small hearts are needed for \\(3, 4,\\) and \\(6\\) cakes?",
+          "options": [
+            "18, 24, 36",
+            "16, 22, 34",
+            "18, 26, 36",
+            "15, 20, 30"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the 6 times table: multiply 3 × 6, 4 × 6, and 6 × 6.",
+          "keyPoints": [
+            {
+              "text": "small hearts",
+              "note": "Multiply the number of cakes by 6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule from the pattern: 1 cake = 6, 2 cakes = 12, 5 cakes = 30, so multiply by 6.",
+              "work": "\\(\\text{Small hearts} = \\text{cakes} \\times 6\\)"
+            },
+            {
+              "explain": "Calculate for 3 cakes: \\(3 \\times 6 = 18\\).",
+              "work": "\\(3 \\times 6 = 18\\)"
+            },
+            {
+              "explain": "Calculate for 4 cakes and 6 cakes: \\(4 \\times 6 = 24\\) and \\(6 \\times 6 = 36\\).",
+              "work": "\\(4 \\times 6 = 24, \\quad 6 \\times 6 = 36\\)"
+            },
+            {
+              "explain": "Therefore, 18, 24, and 36 small hearts are needed.",
+              "work": "\\(18, 24, 36\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-3-th14-p60-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sam’s mum uses \\(10\\) cream beads on \\(1\\) birthday cake (so \\(20\\) for \\(2\\) cakes, \\(60\\) for \\(6\\) cakes). How many cream beads are needed for \\(3, 4,\\) and \\(5\\) cakes?",
+          "options": [
+            "25, 35, 45",
+            "30, 40, 50",
+            "30, 35, 40",
+            "20, 30, 40"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the 10 times table: multiply 3 × 10, 4 × 10, and 5 × 10.",
+          "keyPoints": [
+            {
+              "text": "cream beads",
+              "note": "Multiply the number of cakes by 10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule: each cake uses 10 cream beads (multiply by 10).",
+              "work": "\\(\\text{Cream beads} = \\text{cakes} \\times 10\\)"
+            },
+            {
+              "explain": "Calculate for 3 cakes: \\(3 \\times 10 = 30\\).",
+              "work": "\\(3 \\times 10 = 30\\)"
+            },
+            {
+              "explain": "Calculate for 4 cakes and 5 cakes: \\(4 \\times 10 = 40\\) and \\(5 \\times 10 = 50\\).",
+              "work": "\\(4 \\times 10 = 40, \\quad 5 \\times 10 = 50\\)"
+            },
+            {
+              "explain": "Therefore, 30, 40, and 50 cream beads are needed.",
+              "work": "\\(30, 40, 50\\)"
+            }
+          ]
         }
       ]
     },
@@ -2822,7 +3142,248 @@
       "topicId": "y4-mr-4",
       "code": "MA2-MR-01",
       "title": "Multiples of 10: Operate with multiples of 10 using known number facts and strategies",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-mr-4-th12-p52-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(5 \\times 50\\).",
+          "options": [
+            "200",
+            "250",
+            "300",
+            "2500"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 5 × 5 first, then multiply by 10 (place one zero on the end).",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Think of 50 as 5 tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(50\\) as \\(5 \\times 10\\) (5 tens).",
+              "work": "\\(5 \\times 50 = (5 \\times 5) \\times 10\\)"
+            },
+            {
+              "explain": "Multiply the single-digit facts first: \\(5 \\times 5 = 25\\).",
+              "work": "\\(5 \\times 5 = 25\\)"
+            },
+            {
+              "explain": "Multiply by \\(10\\) by attaching a zero to the end: \\(25 \\times 10 = 250\\).",
+              "work": "\\(25 \\times 10 = 250\\)"
+            },
+            {
+              "explain": "Therefore, \\(5 \\times 50 = 250\\).",
+              "work": "\\(5 \\times 50 = 250\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-4-th12-p52-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(6 \\times 80\\).",
+          "options": [
+            "420",
+            "460",
+            "480",
+            "540"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 6 × 8 first, then multiply by 10 (place one zero on the end).",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Think of 80 as 8 tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(80\\) as \\(8 \\times 10\\) (8 tens).",
+              "work": "\\(6 \\times 80 = (6 \\times 8) \\times 10\\)"
+            },
+            {
+              "explain": "Multiply the single-digit facts first: \\(6 \\times 8 = 48\\).",
+              "work": "\\(6 \\times 8 = 48\\)"
+            },
+            {
+              "explain": "Multiply by \\(10\\) by attaching a zero to the end: \\(48 \\times 10 = 480\\).",
+              "work": "\\(48 \\times 10 = 480\\)"
+            },
+            {
+              "explain": "Therefore, \\(6 \\times 80 = 480\\).",
+              "work": "\\(6 \\times 80 = 480\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-4-th12-p52-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(7 \\times 40\\).",
+          "options": [
+            "240",
+            "280",
+            "320",
+            "2800"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 7 × 4 first, then multiply by 10 (place one zero on the end).",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Think of 40 as 4 tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(40\\) as \\(4 \\times 10\\) (4 tens).",
+              "work": "\\(7 \\times 40 = (7 \\times 4) \\times 10\\)"
+            },
+            {
+              "explain": "Multiply the single-digit facts first: \\(7 \\times 4 = 28\\).",
+              "work": "\\(7 \\times 4 = 28\\)"
+            },
+            {
+              "explain": "Multiply by \\(10\\) by attaching a zero to the end: \\(28 \\times 10 = 280\\).",
+              "work": "\\(28 \\times 10 = 280\\)"
+            },
+            {
+              "explain": "Therefore, \\(7 \\times 40 = 280\\).",
+              "work": "\\(7 \\times 40 = 280\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-4-th12-p52-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(9 \\times 40\\).",
+          "options": [
+            "320",
+            "340",
+            "360",
+            "400"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 9 × 4 first, then multiply by 10 (place one zero on the end).",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Think of 40 as 4 tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(40\\) as \\(4 \\times 10\\) (4 tens).",
+              "work": "\\(9 \\times 40 = (9 \\times 4) \\times 10\\)"
+            },
+            {
+              "explain": "Multiply the single-digit facts first: \\(9 \\times 4 = 36\\).",
+              "work": "\\(9 \\times 4 = 36\\)"
+            },
+            {
+              "explain": "Multiply by \\(10\\) by attaching a zero to the end: \\(36 \\times 10 = 360\\).",
+              "work": "\\(36 \\times 10 = 360\\)"
+            },
+            {
+              "explain": "Therefore, \\(9 \\times 40 = 360\\).",
+              "work": "\\(9 \\times 40 = 360\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-4-th12-p52-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(6 \\times 60\\).",
+          "options": [
+            "300",
+            "360",
+            "420",
+            "3600"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 6 × 6 first, then multiply by 10 (place one zero on the end).",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Think of 60 as 6 tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(60\\) as \\(6 \\times 10\\) (6 tens).",
+              "work": "\\(6 \\times 60 = (6 \\times 6) \\times 10\\)"
+            },
+            {
+              "explain": "Multiply the single-digit facts first: \\(6 \\times 6 = 36\\).",
+              "work": "\\(6 \\times 6 = 36\\)"
+            },
+            {
+              "explain": "Multiply by \\(10\\) by attaching a zero to the end: \\(36 \\times 10 = 360\\).",
+              "work": "\\(36 \\times 10 = 360\\)"
+            },
+            {
+              "explain": "Therefore, \\(6 \\times 60 = 360\\).",
+              "work": "\\(6 \\times 60 = 360\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-4-th12-p52-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(8 \\times 50\\).",
+          "options": [
+            "350",
+            "400",
+            "450",
+            "4000"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 8 × 5 first, then multiply by 10 (place one zero on the end).",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Think of 50 as 5 tens."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(50\\) as \\(5 \\times 10\\) (5 tens).",
+              "work": "\\(8 \\times 50 = (8 \\times 5) \\times 10\\)"
+            },
+            {
+              "explain": "Multiply the single-digit facts first: \\(8 \\times 5 = 40\\).",
+              "work": "\\(8 \\times 5 = 40\\)"
+            },
+            {
+              "explain": "Multiply by \\(10\\) by attaching a zero to the end: \\(40 \\times 10 = 400\\).",
+              "work": "\\(40 \\times 10 = 400\\)"
+            },
+            {
+              "explain": "Therefore, \\(8 \\times 50 = 400\\).",
+              "work": "\\(8 \\times 50 = 400\\)"
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y4-mr-5",
@@ -3767,6 +4328,126 @@
               "work": "\\(\\square = 5\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-5-th12-p52-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the split method to divide: \\(84 \\div 4\\).",
+          "options": [
+            "20",
+            "21",
+            "22",
+            "24"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 84 into 80 + 4, divide both parts by 4, then add the two quotients.",
+          "keyPoints": [
+            {
+              "text": "split method to divide",
+              "note": "(80 ÷ 4) + (4 ÷ 4)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(84\\) into tens and ones: \\(84 = 80 + 4\\).",
+              "work": "\\(84 \\div 4 = (80 \\div 4) + (4 \\div 4)\\)"
+            },
+            {
+              "explain": "Divide the tens part by \\(4\\): \\(80 \\div 4 = 20\\).",
+              "work": "\\(80 \\div 4 = 20\\)"
+            },
+            {
+              "explain": "Divide the ones part by \\(4\\): \\(4 \\div 4 = 1\\).",
+              "work": "\\(4 \\div 4 = 1\\)"
+            },
+            {
+              "explain": "Add the two quotients together: \\(20 + 1 = 21\\).",
+              "work": "\\(20 + 1 = 21\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th12-p52-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the split method to divide: \\(96 \\div 3\\).",
+          "options": [
+            "30",
+            "31",
+            "32",
+            "33"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 96 into 90 + 6, divide both parts by 3, then add the two quotients.",
+          "keyPoints": [
+            {
+              "text": "split method to divide",
+              "note": "(90 ÷ 3) + (6 ÷ 3)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(96\\) into tens and ones: \\(96 = 90 + 6\\).",
+              "work": "\\(96 \\div 3 = (90 \\div 3) + (6 \\div 3)\\)"
+            },
+            {
+              "explain": "Divide the tens part by \\(3\\): \\(90 \\div 3 = 30\\).",
+              "work": "\\(90 \\div 3 = 30\\)"
+            },
+            {
+              "explain": "Divide the ones part by \\(3\\): \\(6 \\div 3 = 2\\).",
+              "work": "\\(6 \\div 3 = 2\\)"
+            },
+            {
+              "explain": "Add the two quotients together: \\(30 + 2 = 32\\).",
+              "work": "\\(30 + 2 = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th12-p52-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the split method to divide: \\(63 \\div 3\\).",
+          "options": [
+            "20",
+            "21",
+            "22",
+            "23"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 63 into 60 + 3, divide both parts by 3, then add the two quotients.",
+          "keyPoints": [
+            {
+              "text": "split method to divide",
+              "note": "(60 ÷ 3) + (3 ÷ 3)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(63\\) into tens and ones: \\(63 = 60 + 3\\).",
+              "work": "\\(63 \\div 3 = (60 \\div 3) + (3 \\div 3)\\)"
+            },
+            {
+              "explain": "Divide the tens part by \\(3\\): \\(60 \\div 3 = 20\\).",
+              "work": "\\(60 \\div 3 = 20\\)"
+            },
+            {
+              "explain": "Divide the ones part by \\(3\\): \\(3 \\div 3 = 1\\).",
+              "work": "\\(3 \\div 3 = 1\\)"
+            },
+            {
+              "explain": "Add the two quotients together: \\(20 + 1 = 21\\).",
+              "work": "\\(20 + 1 = 21\\)"
+            }
+          ]
         }
       ]
     },
@@ -4367,6 +5048,86 @@
             {
               "explain": "Therefore, the answer is 8 groups.",
               "work": "\\(\\text{Answer: 8 groups}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th11-p49-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The baker packed \\(9\\) boxes with \\(24\\) cakes in each box. How many cakes did he pack altogether?",
+          "options": [
+            "186 cakes",
+            "206 cakes",
+            "216 cakes",
+            "224 cakes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 9 × 24 by splitting 24 into 20 + 4: (9 × 20) + (9 × 4).",
+          "keyPoints": [
+            {
+              "text": "in each box",
+              "note": "Equal groups in each box means multiply: 9 × 24."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Decide the operation: 9 equal boxes of 24 cakes each means multiplication (\\(9 \\times 24\\)).",
+              "work": "\\(9 \\times 24\\)"
+            },
+            {
+              "explain": "Split 24 into tens and ones: \\(24 = 20 + 4\\).",
+              "work": "\\(9 \\times (20 + 4) = (9 \\times 20) + (9 \\times 4)\\)"
+            },
+            {
+              "explain": "Multiply each part: \\(9 \\times 20 = 180\\) and \\(9 \\times 4 = 36\\).",
+              "work": "\\(180 + 36\\)"
+            },
+            {
+              "explain": "Add the two partial products: \\(180 + 36 = 216\\) cakes.",
+              "work": "\\(180 + 36 = 216\\text{ cakes}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th11-p49-ps2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tina’s school is having a concert. They have set out \\(85\\) chairs altogether, with \\(5\\) chairs in each row. How many rows of chairs are there?",
+          "options": [
+            "15 rows",
+            "16 rows",
+            "17 rows",
+            "18 rows"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 85 by 5 using the split method: 85 = 50 + 35, then (50 ÷ 5) + (35 ÷ 5).",
+          "keyPoints": [
+            {
+              "text": "How many rows",
+              "note": "Grouping 85 chairs into rows of 5 means divide: 85 ÷ 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Decide the operation: grouping 85 chairs into equal rows of 5 means division (\\(85 \\div 5\\)).",
+              "work": "\\(85 \\div 5\\)"
+            },
+            {
+              "explain": "Split 85 into two friendly multiples of 5: \\(85 = 50 + 35\\).",
+              "work": "\\((50 \\div 5) + (35 \\div 5)\\)"
+            },
+            {
+              "explain": "Divide each part by 5: \\(50 \\div 5 = 10\\) and \\(35 \\div 5 = 7\\).",
+              "work": "\\(10 + 7 = 17\\)"
+            },
+            {
+              "explain": "Check: \\(17 \\times 5 = 85\\). Therefore, there are 17 rows of chairs.",
+              "work": "\\(85 \\div 5 = 17\\text{ rows}\\)"
             }
           ]
         }

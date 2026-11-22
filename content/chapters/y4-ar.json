@@ -1027,6 +1027,46 @@
               "work": "\\(\\text{even} - \\text{odd} = \\text{odd}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-ar-2-th14-p61-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many different combinations of \\(3\\) different digits from \\(0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\) add up to \\(15\\) (for example, \\(1 + 5 + 9 = 15\\))?",
+          "options": [
+            "8 ways",
+            "9 ways",
+            "10 ways",
+            "12 ways"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "List the triples systematically from smallest digit to largest (starting with 0, then 1, then 2, then 3, then 4) so you never miss or repeat one!",
+          "keyPoints": [
+            {
+              "text": "add up to",
+              "note": "Keep the 3 digits in increasing order (a < b < c) to count every unique combination once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with smallest digit 0: the other two digits must add to 15, giving (0, 6, 9) and (0, 7, 8) — that is 2 ways.",
+              "work": "\\(0+6+9=15, \\quad 0+7+8=15 \\text{ (2 ways)}\\)"
+            },
+            {
+              "explain": "Next smallest digit 1: the other two digits add to 14, giving (1, 5, 9) and (1, 6, 8) — that is 2 more ways.",
+              "work": "\\(1+5+9=15, \\quad 1+6+8=15 \\text{ (2 ways)}\\)"
+            },
+            {
+              "explain": "Next smallest digit 2: (2, 4, 9), (2, 5, 8), (2, 6, 7) — 3 ways. Smallest digit 3: (3, 4, 8), (3, 5, 7) — 2 ways. Smallest digit 4: (4, 5, 6) — 1 way.",
+              "work": "\\(3 + 2 + 1 = 6 \\text{ more ways}\\)"
+            },
+            {
+              "explain": "Add all combinations together: \\(2 + 2 + 3 + 2 + 1 = 10\\) ways.",
+              "work": "\\(2 + 2 + 3 + 2 + 1 = 10 \\text{ ways}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1950,6 +1990,366 @@
               "work": "\\(\\text{Change} = \\$9.55\\)"
             }
           ]
+        },
+        {
+          "id": "y4-ar-3-th14-p60-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Bows cost \\(\\$7\\) per cake (\\(\\$14\\) for \\(2\\) cakes, \\(\\$21\\) for \\(3\\) cakes). What is the cost of bows for \\(4, 5,\\) and \\(6\\) cakes?",
+          "options": [
+            "\\(\\$28, \\$35, \\$42\\)",
+            "\\(\\$24, \\$30, \\$36\\)",
+            "\\(\\$28, \\$36, \\$44\\)",
+            "\\(\\$27, \\$34, \\$41\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count by 7s from $21: 21 + 7 = 28, 28 + 7 = 35, 35 + 7 = 42.",
+          "keyPoints": [
+            {
+              "text": "cost of bows",
+              "note": "Multiply the number of cakes by $7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply each number of cakes by \\(\\$7\\).",
+              "work": "\\(\\text{Cost} = \\text{cakes} \\times \\$7\\)"
+            },
+            {
+              "explain": "For 4 cakes: \\(4 \\times \\$7 = \\$28\\).",
+              "work": "\\(4 \\times \\$7 = \\$28\\)"
+            },
+            {
+              "explain": "For 5 cakes and 6 cakes: \\(5 \\times \\$7 = \\$35\\) and \\(6 \\times \\$7 = \\$42\\).",
+              "work": "\\(5 \\times \\$7 = \\$35, \\quad 6 \\times \\$7 = \\$42\\)"
+            },
+            {
+              "explain": "Therefore, the costs are \\(\\$28, \\$35,\\) and \\(\\$42\\).",
+              "work": "\\(\\$28, \\$35, \\$42\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th14-p60-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Cream beads cost \\(\\$0.05\\) per cake (\\(\\$0.10\\) for \\(2\\) cakes). What is the cost of cream beads for \\(3, 4, 5,\\) and \\(6\\) cakes?",
+          "options": [
+            "\\(\\$0.15, \\$0.20, \\$0.25, \\$0.30\\)",
+            "\\(\\$0.15, \\$0.25, \\$0.35, \\$0.45\\)",
+            "\\(\\$0.20, \\$0.30, \\$0.40, \\$0.50\\)",
+            "\\(\\$0.12, \\$0.16, \\$0.20, \\$0.24\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count up by 5 cents ($0.05) for each additional cake.",
+          "keyPoints": [
+            {
+              "text": "cost of cream beads",
+              "note": "Add $0.05 for each extra cake."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each cake adds \\(\\$0.05\\) (5 cents) for cream beads.",
+              "work": "\\(\\text{Step} = +\\$0.05\\)"
+            },
+            {
+              "explain": "For 3 and 4 cakes: \\(3 \\times 5\\text{ c} = 15\\text{ c} = \\$0.15\\), \\(4 \\times 5\\text{ c} = 20\\text{ c} = \\$0.20\\).",
+              "work": "\\(\\$0.15, \\quad \\$0.20\\)"
+            },
+            {
+              "explain": "For 5 and 6 cakes: \\(5 \\times 5\\text{ c} = 25\\text{ c} = \\$0.25\\), \\(6 \\times 5\\text{ c} = 30\\text{ c} = \\$0.30\\).",
+              "work": "\\(\\$0.25, \\quad \\$0.30\\)"
+            },
+            {
+              "explain": "Therefore, the costs are \\(\\$0.15, \\$0.20, \\$0.25,\\) and \\(\\$0.30\\).",
+              "work": "\\(\\$0.15, \\$0.20, \\$0.25, \\$0.30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th14-p60-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The total cost for decorating one cake is \\(\\$14.05\\). What is the total cost of decorating \\(2\\) cakes?",
+          "options": [
+            "\\(\\$28.05\\)",
+            "\\(\\$28.10\\)",
+            "\\(\\$28.50\\)",
+            "\\(\\$29.10\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split $14.05 into $14 + 5 cents, multiply both parts by 2, then combine dollars and cents.",
+          "keyPoints": [
+            {
+              "text": "decorating one cake",
+              "note": "Multiply $14 by the number of cakes, then multiply 5 cents by the number of cakes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(\\$14.05\\) into whole dollars (\\(\\$14\\)) and cents (\\(\\$0.05\\)).",
+              "work": "\\(\\$14.05 = \\$14 + \\$0.05\\)"
+            },
+            {
+              "explain": "Multiply the dollars by \\(2\\): \\(2 \\times \\$14 = \\$28\\).",
+              "work": "\\(2 \\times \\$14 = \\$28\\)"
+            },
+            {
+              "explain": "Multiply the cents by \\(2\\): \\(2 \\times 5\\text{ c} = 10\\text{ c} = \\$0.10\\).",
+              "work": "\\(2 \\times \\$0.05 = \\$0.10\\)"
+            },
+            {
+              "explain": "Combine dollars and cents: \\(\\$28 + \\$0.10 = \\$28.10\\).",
+              "work": "\\(\\text{Total cost} = \\$28.10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th14-p60-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The total cost for decorating one cake is \\(\\$14.05\\). What is the total cost of decorating \\(5\\) cakes?",
+          "options": [
+            "\\(\\$70.05\\)",
+            "\\(\\$70.25\\)",
+            "\\(\\$72.25\\)",
+            "\\(\\$65.25\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split $14.05 into $14 + 5 cents, multiply both parts by 5, then combine dollars and cents.",
+          "keyPoints": [
+            {
+              "text": "decorating one cake",
+              "note": "Multiply $14 by the number of cakes, then multiply 5 cents by the number of cakes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(\\$14.05\\) into whole dollars (\\(\\$14\\)) and cents (\\(\\$0.05\\)).",
+              "work": "\\(\\$14.05 = \\$14 + \\$0.05\\)"
+            },
+            {
+              "explain": "Multiply the dollars by \\(5\\): \\(5 \\times \\$14 = \\$70\\).",
+              "work": "\\(5 \\times \\$14 = \\$70\\)"
+            },
+            {
+              "explain": "Multiply the cents by \\(5\\): \\(5 \\times 5\\text{ c} = 25\\text{ c} = \\$0.25\\).",
+              "work": "\\(5 \\times \\$0.05 = \\$0.25\\)"
+            },
+            {
+              "explain": "Combine dollars and cents: \\(\\$70 + \\$0.25 = \\$70.25\\).",
+              "work": "\\(\\text{Total cost} = \\$70.25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th14-p60-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The total cost for decorating one cake is \\(\\$14.05\\). What is the total cost of decorating \\(6\\) cakes?",
+          "options": [
+            "\\(\\$84.05\\)",
+            "\\(\\$84.25\\)",
+            "\\(\\$84.30\\)",
+            "\\(\\$86.30\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split $14.05 into $14 + 5 cents, multiply both parts by 6, then combine dollars and cents.",
+          "keyPoints": [
+            {
+              "text": "decorating one cake",
+              "note": "Multiply $14 by the number of cakes, then multiply 5 cents by the number of cakes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(\\$14.05\\) into whole dollars (\\(\\$14\\)) and cents (\\(\\$0.05\\)).",
+              "work": "\\(\\$14.05 = \\$14 + \\$0.05\\)"
+            },
+            {
+              "explain": "Multiply the dollars by \\(6\\): \\(6 \\times \\$14 = \\$84\\).",
+              "work": "\\(6 \\times \\$14 = \\$84\\)"
+            },
+            {
+              "explain": "Multiply the cents by \\(6\\): \\(6 \\times 5\\text{ c} = 30\\text{ c} = \\$0.30\\).",
+              "work": "\\(6 \\times \\$0.05 = \\$0.30\\)"
+            },
+            {
+              "explain": "Combine dollars and cents: \\(\\$84 + \\$0.30 = \\$84.30\\).",
+              "work": "\\(\\text{Total cost} = \\$84.30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th15-p65-ps2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jesse’s bedroom needs \\(47\\text{ m}^2\\) of carpet. If the carpet costs \\(\\$40\\) per square metre, how much will the carpet cost?",
+          "options": [
+            "\\(\\$1680\\)",
+            "\\(\\$1840\\)",
+            "\\(\\$1880\\)",
+            "\\(\\$1920\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the multiplication or addition into place-value parts (tens and ones) so every step is clean.",
+          "keyPoints": [
+            {
+              "text": "cost",
+              "note": "Use split multiplication or place-value addition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the cost.",
+              "work": "\\(47 \\times 40 = (40 \\times 40) + (7 \\times 40)\\)"
+            },
+            {
+              "explain": "Calculate the partial products or subtotals.",
+              "work": "\\(1600 + 280 = \\$1880\\)"
+            },
+            {
+              "explain": "Double-check your arithmetic.",
+              "work": "\\(\\text{Verified: } 1600 + 280 = \\$1880\\)"
+            },
+            {
+              "explain": "Therefore, the cost is \\(\\$1880\\).",
+              "work": "\\(1600 + 280 = \\$1880\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th15-p65-ps3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jesse’s bedroom needs \\(47\\text{ m}^2\\) of underlay. If the underlay costs \\(\\$20\\) per square metre, how much will the underlay cost?",
+          "options": [
+            "\\(\\$840\\)",
+            "\\(\\$920\\)",
+            "\\(\\$940\\)",
+            "\\(\\$960\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the multiplication or addition into place-value parts (tens and ones) so every step is clean.",
+          "keyPoints": [
+            {
+              "text": "cost",
+              "note": "Use split multiplication or place-value addition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the cost.",
+              "work": "\\(47 \\times 20 = (40 \\times 20) + (7 \\times 20)\\)"
+            },
+            {
+              "explain": "Calculate the partial products or subtotals.",
+              "work": "\\(800 + 140 = \\$940\\)"
+            },
+            {
+              "explain": "Double-check your arithmetic.",
+              "work": "\\(\\text{Verified: } 800 + 140 = \\$940\\)"
+            },
+            {
+              "explain": "Therefore, the cost is \\(\\$940\\).",
+              "work": "\\(800 + 140 = \\$940\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th15-p65-ps4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The carpet fitter charges \\(\\$50\\) an hour to lay the carpet, and it will take \\(2\\) hours to fit. How much will the fitter cost?",
+          "options": [
+            "\\(\\$50\\)",
+            "\\(\\$75\\)",
+            "\\(\\$100\\)",
+            "\\(\\$150\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the multiplication or addition into place-value parts (tens and ones) so every step is clean.",
+          "keyPoints": [
+            {
+              "text": "cost",
+              "note": "Use split multiplication or place-value addition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the cost.",
+              "work": "\\(2 \\times \\$50\\)"
+            },
+            {
+              "explain": "Calculate the partial products or subtotals.",
+              "work": "\\(2 \\times \\$50 = \\$100\\)"
+            },
+            {
+              "explain": "Double-check your arithmetic.",
+              "work": "\\(\\text{Verified: } 2 \\times \\$50 = \\$100\\)"
+            },
+            {
+              "explain": "Therefore, the cost is \\(\\$100\\).",
+              "work": "\\(2 \\times \\$50 = \\$100\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th15-p65-ps5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For Jesse’s bedroom, the carpet costs \\(\\$1880\\), the underlay costs \\(\\$940\\), and the carpet fitter costs \\(\\$100\\). What is the total cost of laying the carpet?",
+          "options": [
+            "\\(\\$2820\\)",
+            "\\(\\$2920\\)",
+            "\\(\\$2940\\)",
+            "\\(\\$3020\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the multiplication or addition into place-value parts (tens and ones) so every step is clean.",
+          "keyPoints": [
+            {
+              "text": "cost",
+              "note": "Use split multiplication or place-value addition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the cost.",
+              "work": "\\(\\$1880 + \\$940 = \\$2820\\)"
+            },
+            {
+              "explain": "Calculate the partial products or subtotals.",
+              "work": "\\(\\$2820 + \\$100 = \\$2920\\)"
+            },
+            {
+              "explain": "Double-check your arithmetic.",
+              "work": "\\(\\text{Verified: } \\$2820 + \\$100 = \\$2920\\)"
+            },
+            {
+              "explain": "Therefore, the cost is \\(\\$2920\\).",
+              "work": "\\(\\$2820 + \\$100 = \\$2920\\)"
+            }
+          ]
         }
       ]
     },
@@ -2074,6 +2474,218 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 198\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"198\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">17</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-4-th15-p64-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "At \\(10\\) o’clock there were \\(80\\) people at the school fair. By \\(11\\) o’clock another \\(25\\) had arrived. How many people were at the fair at \\(11\\) o’clock?",
+          "options": [
+            "95 people",
+            "105 people",
+            "115 people",
+            "55 people"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add the 25 newly arrived people to the original 80 people.",
+          "keyPoints": [
+            {
+              "text": "At \\(10\\) o’clock there",
+              "note": "Add the 25 newly arrived people to the original 80 people."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Translate the word story into an equivalent number sentence.",
+              "work": "\\(80 + 25 = 105\\)"
+            },
+            {
+              "explain": "Use addition or inverse subtraction to find the unknown number.",
+              "work": "\\(80 + 25 = 105\\)"
+            },
+            {
+              "explain": "Check your answer by plugging it back into the original story.",
+              "work": "\\(\\text{Verified: } 80 + 25 = 105\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 105 people.",
+              "work": "\\(\\text{Answer: 105 people}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th15-p64-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number can be taken from \\(45\\) so that the answer is the same as \\(25\\) plus \\(12\\)?",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "12"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate 25 + 12 = 37, then find 45 - □ = 37.",
+          "keyPoints": [
+            {
+              "text": "What number can be",
+              "note": "First calculate 25 + 12 = 37, then find 45 - □ = 37."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Translate the word story into an equivalent number sentence.",
+              "work": "\\(25 + 12 = 37\\)"
+            },
+            {
+              "explain": "Use addition or inverse subtraction to find the unknown number.",
+              "work": "\\(25 + 12 = 37, \\quad 45 - 37 = 8\\)"
+            },
+            {
+              "explain": "Check your answer by plugging it back into the original story.",
+              "work": "\\(\\text{Verified: } 25 + 12 = 37, \\quad 45 - 37 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 8.",
+              "work": "\\(\\text{Answer: 8}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th15-p64-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Maree needs \\(12\\) more beads to finish making her bracelet. The bracelet will have a total of \\(60\\) beads. How many beads does the bracelet have already?",
+          "options": [
+            "42 beads",
+            "48 beads",
+            "52 beads",
+            "72 beads"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use inverse subtraction: total 60 minus 12 more needed.",
+          "keyPoints": [
+            {
+              "text": "Maree needs \\(12\\) more",
+              "note": "Use inverse subtraction: total 60 minus 12 more needed."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Translate the word story into an equivalent number sentence.",
+              "work": "\\(60 - 12 = 48\\)"
+            },
+            {
+              "explain": "Use addition or inverse subtraction to find the unknown number.",
+              "work": "\\(60 - 12 = 48\\)"
+            },
+            {
+              "explain": "Check your answer by plugging it back into the original story.",
+              "work": "\\(\\text{Verified: } 60 - 12 = 48\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 48 beads.",
+              "work": "\\(\\text{Answer: 48 beads}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th15-p64-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "When a number is added to \\(35\\), the answer is the same as \\(40\\) plus \\(10\\). What is the number?",
+          "options": [
+            "10",
+            "15",
+            "25",
+            "85"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate 40 + 10 = 50, then subtract 35 from 50.",
+          "keyPoints": [
+            {
+              "text": "When a number is",
+              "note": "First calculate 40 + 10 = 50, then subtract 35 from 50."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Translate the word story into an equivalent number sentence.",
+              "work": "\\(40 + 10 = 50\\)"
+            },
+            {
+              "explain": "Use addition or inverse subtraction to find the unknown number.",
+              "work": "\\(40 + 10 = 50, \\quad 50 - 35 = 15\\)"
+            },
+            {
+              "explain": "Check your answer by plugging it back into the original story.",
+              "work": "\\(\\text{Verified: } 40 + 10 = 50, \\quad 50 - 35 = 15\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 15.",
+              "work": "\\(\\text{Answer: 15}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th16-p69-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In this symbol grid, the sum of the symbols in each row and column is shown at the edge. What are the values of the diamond, star, and smiley face?",
+          "options": [
+            "Diamond = 3, Star = 4, Smiley = 5",
+            "Diamond = 4, Star = 3, Smiley = 5",
+            "Diamond = 3, Star = 5, Smiley = 4",
+            "Diamond = 2, Star = 4, Smiley = 6"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Start with Row 4 (four identical smiley faces = 20) to find the smiley face first, then use Row 2 to find the diamond, and Row 1 to find the star!",
+          "keyPoints": [
+            {
+              "text": "sum of the symbols in each row",
+              "note": "Always begin with the row that contains only ONE type of symbol (Row 4)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with Row 4 (highlighted): four identical smiley faces add up to \\(20\\), so divide \\(20 \\div 4 = 5\\).",
+              "work": "\\(4 \\times \\text{Smiley} = 20 \\Rightarrow \\text{Smiley} = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 242\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"242\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,24 72,35 61,46 50,35\" fill=\"#0284c7\"/><rect x=\"82\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,23 106.5,31.5 115,31.5 108,37 110.5,46 103,40.5 95.5,46 98,37 91,31.5 99.5,31.5\" fill=\"#0d9488\"/><rect x=\"124\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,23 148.5,31.5 157,31.5 150,37 152.5,46 145,40.5 137.5,46 140,37 133,31.5 141.5,31.5\" fill=\"#0d9488\"/><rect x=\"166\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"35\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,38 Q187,43 192,38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"41\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"77\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,80 Q61,85 66,80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,66 114,77 103,88 92,77\" fill=\"#0284c7\"/><rect x=\"124\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,66 156,77 145,88 134,77\" fill=\"#0284c7\"/><rect x=\"166\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,66 198,77 187,88 176,77\" fill=\"#0284c7\"/><text x=\"230\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">14</text><rect x=\"40\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,107 64.5,115.5 73,115.5 66,121 68.5,130 61,124.5 53.5,130 56,121 49,115.5 57.5,115.5\" fill=\"#0d9488\"/><rect x=\"82\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,108 114,119 103,130 92,119\" fill=\"#0284c7\"/><rect x=\"124\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"119\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,122 Q145,127 150,122\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,107 190.5,115.5 199,115.5 192,121 194.5,130 187,124.5 179.5,130 182,121 175,115.5 183.5,115.5\" fill=\"#0d9488\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"140\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><circle cx=\"61\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,164 Q61,169 66,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"140\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><circle cx=\"103\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"99\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M98,164 Q103,169 108,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"124\" y=\"140\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><circle cx=\"145\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,164 Q145,169 150,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"140\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><circle cx=\"187\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,164 Q187,169 192,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">20</text><text x=\"61\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"103\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">15</text><text x=\"145\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"187\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"145\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Row 4: 4 smileys = 20 -> Smiley = 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Now use Row 2 (1 smiley + 3 diamonds = 14): substitute Smiley = 5, so 3 diamonds = \\(14 - 5 = 9\\), giving Diamond = \\(9 \\div 3 = 3\\).",
+              "work": "\\(5 + 3 \\times \\text{Diamond} = 14 \\Rightarrow 3 \\times \\text{Diamond} = 9 \\Rightarrow \\text{Diamond} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 242\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"242\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,24 72,35 61,46 50,35\" fill=\"#0284c7\"/><rect x=\"82\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,23 106.5,31.5 115,31.5 108,37 110.5,46 103,40.5 95.5,46 98,37 91,31.5 99.5,31.5\" fill=\"#0d9488\"/><rect x=\"124\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,23 148.5,31.5 157,31.5 150,37 152.5,46 145,40.5 137.5,46 140,37 133,31.5 141.5,31.5\" fill=\"#0d9488\"/><rect x=\"166\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"35\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,38 Q187,43 192,38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"41\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"56\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><circle cx=\"61\" cy=\"77\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,80 Q61,85 66,80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"56\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"103,66 114,77 103,88 92,77\" fill=\"#0284c7\"/><rect x=\"124\" y=\"56\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"145,66 156,77 145,88 134,77\" fill=\"#0284c7\"/><rect x=\"166\" y=\"56\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"187,66 198,77 187,88 176,77\" fill=\"#0284c7\"/><text x=\"230\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">14</text><rect x=\"40\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,107 64.5,115.5 73,115.5 66,121 68.5,130 61,124.5 53.5,130 56,121 49,115.5 57.5,115.5\" fill=\"#0d9488\"/><rect x=\"82\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,108 114,119 103,130 92,119\" fill=\"#0284c7\"/><rect x=\"124\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"119\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,122 Q145,127 150,122\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,107 190.5,115.5 199,115.5 192,121 194.5,130 187,124.5 179.5,130 182,121 175,115.5 183.5,115.5\" fill=\"#0d9488\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,164 Q61,169 66,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"103\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"99\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M98,164 Q103,169 108,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"124\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,164 Q145,169 150,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,164 Q187,169 192,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">20</text><text x=\"61\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"103\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">15</text><text x=\"145\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"187\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"145\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Row 2: 5 + 3 diamonds = 14 -> Diamond = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Now use Row 1 (1 diamond + 2 stars + 1 smiley = 16): substitute \\(3 + 2 \\times \\text{Star} + 5 = 16\\), so \\(2 \\times \\text{Star} = 8\\), giving Star = \\(4\\).",
+              "work": "\\(3 + 5 + 2 \\times \\text{Star} = 16 \\Rightarrow 2 \\times \\text{Star} = 8 \\Rightarrow \\text{Star} = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 242\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"242\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"14\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"61,24 72,35 61,46 50,35\" fill=\"#0284c7\"/><rect x=\"82\" y=\"14\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"103,23 106.5,31.5 115,31.5 108,37 110.5,46 103,40.5 95.5,46 98,37 91,31.5 99.5,31.5\" fill=\"#0d9488\"/><rect x=\"124\" y=\"14\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><polygon points=\"145,23 148.5,31.5 157,31.5 150,37 152.5,46 145,40.5 137.5,46 140,37 133,31.5 141.5,31.5\" fill=\"#0d9488\"/><rect x=\"166\" y=\"14\" width=\"42\" height=\"42\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/><circle cx=\"187\" cy=\"35\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,38 Q187,43 192,38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"41\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">16</text><rect x=\"40\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"77\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,80 Q61,85 66,80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,66 114,77 103,88 92,77\" fill=\"#0284c7\"/><rect x=\"124\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,66 156,77 145,88 134,77\" fill=\"#0284c7\"/><rect x=\"166\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,66 198,77 187,88 176,77\" fill=\"#0284c7\"/><text x=\"230\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">14</text><rect x=\"40\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,107 64.5,115.5 73,115.5 66,121 68.5,130 61,124.5 53.5,130 56,121 49,115.5 57.5,115.5\" fill=\"#0d9488\"/><rect x=\"82\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,108 114,119 103,130 92,119\" fill=\"#0284c7\"/><rect x=\"124\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"119\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,122 Q145,127 150,122\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,107 190.5,115.5 199,115.5 192,121 194.5,130 187,124.5 179.5,130 182,121 175,115.5 183.5,115.5\" fill=\"#0d9488\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,164 Q61,169 66,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"103\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"99\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M98,164 Q103,169 108,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"124\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,164 Q145,169 150,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,164 Q187,169 192,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">20</text><text x=\"61\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"103\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">15</text><text x=\"145\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"187\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"145\" y=\"234\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Row 1: 3 + 2 stars + 5 = 16 -> Star = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check Row 3 (Star + Diamond + Smiley + Star): \\(4 + 3 + 5 + 4 = 16\\). Exact match!",
+              "work": "\\(\\text{Diamond} = 3,\\quad \\text{Star} = 4,\\quad \\text{Smiley} = 5\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 218\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"218\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,24 72,35 61,46 50,35\" fill=\"#0284c7\"/><rect x=\"82\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,23 106.5,31.5 115,31.5 108,37 110.5,46 103,40.5 95.5,46 98,37 91,31.5 99.5,31.5\" fill=\"#0d9488\"/><rect x=\"124\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,23 148.5,31.5 157,31.5 150,37 152.5,46 145,40.5 137.5,46 140,37 133,31.5 141.5,31.5\" fill=\"#0d9488\"/><rect x=\"166\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"35\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,38 Q187,43 192,38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"41\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"77\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,80 Q61,85 66,80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,66 114,77 103,88 92,77\" fill=\"#0284c7\"/><rect x=\"124\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,66 156,77 145,88 134,77\" fill=\"#0284c7\"/><rect x=\"166\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,66 198,77 187,88 176,77\" fill=\"#0284c7\"/><text x=\"230\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">14</text><rect x=\"40\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,107 64.5,115.5 73,115.5 66,121 68.5,130 61,124.5 53.5,130 56,121 49,115.5 57.5,115.5\" fill=\"#0d9488\"/><rect x=\"82\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,108 114,119 103,130 92,119\" fill=\"#0284c7\"/><rect x=\"124\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"119\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,122 Q145,127 150,122\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,107 190.5,115.5 199,115.5 192,121 194.5,130 187,124.5 179.5,130 182,121 175,115.5 183.5,115.5\" fill=\"#0d9488\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,164 Q61,169 66,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"103\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"99\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M98,164 Q103,169 108,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"124\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,164 Q145,169 150,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,164 Q187,169 192,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">20</text><text x=\"61\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"103\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">15</text><text x=\"145\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"187\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text></svg>"
           }
         }
       ]
@@ -2523,6 +3135,286 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">double 24</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
           }
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(24 + 8 = \\square - 8\\). What number belongs in the box?",
+          "options": [
+            "24",
+            "32",
+            "40",
+            "48"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(32\\).",
+              "work": "\\(\\text{Known side} = 32\\)"
+            },
+            {
+              "explain": "We need □ - 8 = 32, so add 8 to 32: 32 + 8 = 40.",
+              "work": "\\(32 + 8 = 40\\)"
+            },
+            {
+              "explain": "Substitute \\(40\\) back into the box to confirm both sides equal \\(32\\).",
+              "work": "\\(\\text{Both sides} = 32\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(40\\).",
+              "work": "\\(\\square = 40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(12 + \\square = 10 + 10\\). What number belongs in the box?",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(20\\).",
+              "work": "\\(\\text{Known side} = 20\\)"
+            },
+            {
+              "explain": "We need 12 + □ = 20, so subtract 12 from 20: 20 - 12 = 8.",
+              "work": "\\(20 - 12 = 8\\)"
+            },
+            {
+              "explain": "Substitute \\(8\\) back into the box to confirm both sides equal \\(20\\).",
+              "work": "\\(\\text{Both sides} = 20\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(8\\).",
+              "work": "\\(\\square = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(100 - 50 = 25 + \\square\\). What number belongs in the box?",
+          "options": [
+            "20",
+            "25",
+            "35",
+            "75"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(50\\).",
+              "work": "\\(\\text{Known side} = 50\\)"
+            },
+            {
+              "explain": "We need 25 + □ = 50, so subtract 25 from 50: 50 - 25 = 25.",
+              "work": "\\(50 - 25 = 25\\)"
+            },
+            {
+              "explain": "Substitute \\(25\\) back into the box to confirm both sides equal \\(50\\).",
+              "work": "\\(\\text{Both sides} = 50\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(25\\).",
+              "work": "\\(\\square = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(50 - 20 = 100 - \\square\\). What number belongs in the box?",
+          "options": [
+            "30",
+            "60",
+            "70",
+            "80"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(30\\).",
+              "work": "\\(\\text{Known side} = 30\\)"
+            },
+            {
+              "explain": "We need 100 - □ = 30, so subtract 30 from 100: 100 - 30 = 70.",
+              "work": "\\(100 - 30 = 70\\)"
+            },
+            {
+              "explain": "Substitute \\(70\\) back into the box to confirm both sides equal \\(30\\).",
+              "work": "\\(\\text{Both sides} = 30\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(70\\).",
+              "work": "\\(\\square = 70\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(36 - 6 = \\square - 30\\). What number belongs in the box?",
+          "options": [
+            "0",
+            "30",
+            "60",
+            "66"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(30\\).",
+              "work": "\\(\\text{Known side} = 30\\)"
+            },
+            {
+              "explain": "We need □ - 30 = 30, so add 30 to 30: 30 + 30 = 60.",
+              "work": "\\(30 + 30 = 60\\)"
+            },
+            {
+              "explain": "Substitute \\(60\\) back into the box to confirm both sides equal \\(30\\).",
+              "work": "\\(\\text{Both sides} = 30\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(60\\).",
+              "work": "\\(\\square = 60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(45 + 10 = 50 + \\square\\). What number belongs in the box?",
+          "options": [
+            "5",
+            "10",
+            "15",
+            "55"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(55\\).",
+              "work": "\\(\\text{Known side} = 55\\)"
+            },
+            {
+              "explain": "We need 50 + □ = 55, so subtract 50 from 55: 55 - 50 = 5.",
+              "work": "\\(55 - 50 = 5\\)"
+            },
+            {
+              "explain": "Substitute \\(5\\) back into the box to confirm both sides equal \\(55\\).",
+              "work": "\\(\\text{Both sides} = 55\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(5\\).",
+              "work": "\\(\\square = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th15-p64-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this equivalent number sentence: \\(28 - \\square = 30 - 9\\). What number belongs in the box?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the complete side of the equals sign, then find what number makes the other side equal that exact same value!",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of the = sign must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the equation first: it equals \\(21\\).",
+              "work": "\\(\\text{Known side} = 21\\)"
+            },
+            {
+              "explain": "We need 28 - □ = 21, so subtract 21 from 28: 28 - 21 = 7.",
+              "work": "\\(28 - 21 = 7\\)"
+            },
+            {
+              "explain": "Substitute \\(7\\) back into the box to confirm both sides equal \\(21\\).",
+              "work": "\\(\\text{Both sides} = 21\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(7\\).",
+              "work": "\\(\\square = 7\\)"
+            }
+          ]
         }
       ]
     }

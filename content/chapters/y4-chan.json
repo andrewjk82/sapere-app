@@ -995,6 +995,326 @@
               "work": "\\(\\text{Answer: Tanya takes out a green marble.}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-chan-2-th13-p56-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Yesterday, the teacher told off Thomas for making a mess in the art area.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "Thomas didn't go to school yesterday.",
+            "Thomas' favourite sport is football.",
+            "Thomas was absent from art class yesterday.",
+            "The art room was closed yesterday."
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Yesterday, the teacher told off Thomas for making a mess in the art area.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"Thomas' favourite sport is football.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"Thomas' favourite sport is football.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: Thomas' favourite sport is football.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p56-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Emma fixed the puncture in her bike's tyre.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "Emma learnt to ride last year.",
+            "Emma's dad taught her how to mend a puncture.",
+            "Emma has a puncture repair kit.",
+            "The bike tyre had a hole in it."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Emma fixed the puncture in her bike's tyre.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"Emma learnt to ride last year.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"Emma learnt to ride last year.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: Emma learnt to ride last year.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p57-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Tomorrow, Jake will fall and hurt his knee at the park.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "Jake's best friend is Paul.",
+            "Jake's mum is planning a surprise indoor outing for him tomorrow.",
+            "The park is closed for repairs tomorrow.",
+            "Jake stays home all day tomorrow."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Tomorrow, Jake will fall and hurt his knee at the park.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"Jake's best friend is Paul.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"Jake's best friend is Paul.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: Jake's best friend is Paul.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p57-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Mum discovered she had run out of potatoes.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "It was a lovely sunny day.",
+            "Mum decided she would cook some chips.",
+            "Mum looked inside the potato basket.",
+            "Mum checked the kitchen pantry before dinner."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Mum discovered she had run out of potatoes.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"It was a lovely sunny day.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"It was a lovely sunny day.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: It was a lovely sunny day.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p57-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Tomorrow, Dad will find his lost car keys.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "Dad looks for his keys.",
+            "Dad cooked spaghetti for tea.",
+            "Dad cleans out his coat pockets.",
+            "Dad searches under the couch cushions."
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Tomorrow, Dad will find his lost car keys.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"Dad cooked spaghetti for tea.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"Dad cooked spaghetti for tea.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: Dad cooked spaghetti for tea.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p57-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Tomorrow, we will go to the beach and have a swim.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "Our neighbour is a champion swimmer.",
+            "The forecast for tomorrow is for thunder, lightning and rain.",
+            "The beach is closed due to a storm.",
+            "Our car breaks down in the morning."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Tomorrow, we will go to the beach and have a swim.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"Our neighbour is a champion swimmer.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"Our neighbour is a champion swimmer.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: Our neighbour is a champion swimmer.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p57-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Tonight, I will watch my favourite TV program at 7 pm.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "My favourite TV program is Sneaky Peaky.",
+            "Tonight, my bus was late and I arrived home at 8 pm.",
+            "There is a power blackout at 7 pm.",
+            "Our TV stopped working this afternoon."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Tonight, I will watch my favourite TV program at 7 pm.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"My favourite TV program is Sneaky Peaky.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"My favourite TV program is Sneaky Peaky.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: My favourite TV program is Sneaky Peaky.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th13-p57-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "First event: \"Georgie made an apple pie for her nan.\" Which event CANNOT make any difference to the chances of the first event happening?",
+          "options": [
+            "Georgie loves baking.",
+            "Georgie's nan likes watching tennis.",
+            "Georgie had apples and pastry in the kitchen.",
+            "Georgie had time to bake after school."
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the completely unrelated (independent) fact — the other three options directly help or prevent the first event.",
+          "keyPoints": [
+            {
+              "text": "CANNOT make any difference",
+              "note": "Independent events have zero effect on each other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first event carefully: \"Georgie made an apple pie for her nan.\"",
+              "work": "\\(\\text{Test each option for cause-and-effect}\\)"
+            },
+            {
+              "explain": "Check \"Georgie's nan likes watching tennis.\": this fact is completely unrelated (independent) and does not change the chance of the first event.",
+              "work": "\\(\\text{Independent event found}\\)"
+            },
+            {
+              "explain": "Verify that the other three options WOULD either prevent or directly help the first event.",
+              "work": "\\(\\text{Other 3 options affect the outcome}\\)"
+            },
+            {
+              "explain": "Therefore, \"Georgie's nan likes watching tennis.\" cannot make any difference.",
+              "work": "\\(\\text{Answer: Georgie's nan likes watching tennis.}\\)"
+            }
+          ]
         }
       ]
     },

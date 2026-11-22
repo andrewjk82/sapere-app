@@ -590,6 +590,310 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"58\" width=\"97\" height=\"114.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"58\" x2=\"150.5\" y2=\"58\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
           }
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much liquid is in this \\(2000\\text{ mL}\\) container?",
+          "options": [
+            "1000 mL",
+            "1100 mL",
+            "1200 mL",
+            "1500 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Major labelled marks go up by 500 mL (500, 1000, 1500, 2000) and each minor tick between them is 100 mL.",
+          "keyPoints": [
+            {
+              "text": "container",
+              "note": "Major marks = 500 mL; each small tick = 100 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the scale: between 1000 mL and 1500 mL there are 5 equal intervals, so each small tick equals \\(100\\text{ mL}\\).",
+              "work": "\\(500 \\div 5 = 100\\text{ mL per tick}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 236\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"236\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"96.0\" width=\"73\" height=\"90.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"96.0\" x2=\"152.5\" y2=\"96.0\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text><polygon points=\"156,96.0 168,91.0 168,101.0\" fill=\"#dc2626\"/><text x=\"110\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Pointer reads 1100 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Count 1 minor tick (100 mL) above 1000 mL: 1000 + 100 = 1100 mL.",
+              "work": "\\(\\text{Volume} = 1100\\text{ mL}\\)"
+            },
+            {
+              "explain": "Check that \\(1100\\text{ mL}\\) lies accurately between its surrounding 500 mL marks.",
+              "work": "\\(1100\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, there is \\(1100\\text{ mL}\\) of liquid in the container.",
+              "work": "\\(\\text{Answer: } 1100\\text{ mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 214\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"214\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"96.0\" width=\"73\" height=\"90.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"96.0\" x2=\"152.5\" y2=\"96.0\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much liquid is in this \\(2000\\text{ mL}\\) container?",
+          "options": [
+            "1200 mL",
+            "1300 mL",
+            "1400 mL",
+            "1500 mL"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Major labelled marks go up by 500 mL (500, 1000, 1500, 2000) and each minor tick between them is 100 mL.",
+          "keyPoints": [
+            {
+              "text": "container",
+              "note": "Major marks = 500 mL; each small tick = 100 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the scale: between 1000 mL and 1500 mL there are 5 equal intervals, so each small tick equals \\(100\\text{ mL}\\).",
+              "work": "\\(500 \\div 5 = 100\\text{ mL per tick}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 236\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"236\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"72.0\" width=\"73\" height=\"114.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"72.0\" x2=\"152.5\" y2=\"72.0\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text><polygon points=\"156,72.0 168,67.0 168,77.0\" fill=\"#dc2626\"/><text x=\"110\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Pointer reads 1400 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Count 4 minor ticks above 1000 mL (or 1 tick below 1500 mL): 1500 - 100 = 1400 mL.",
+              "work": "\\(\\text{Volume} = 1400\\text{ mL}\\)"
+            },
+            {
+              "explain": "Check that \\(1400\\text{ mL}\\) lies accurately between its surrounding 500 mL marks.",
+              "work": "\\(1400\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, there is \\(1400\\text{ mL}\\) of liquid in the container.",
+              "work": "\\(\\text{Answer: } 1400\\text{ mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 214\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"214\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"72.0\" width=\"73\" height=\"114.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"72.0\" x2=\"152.5\" y2=\"72.0\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much liquid is in this \\(2000\\text{ mL}\\) container?",
+          "options": [
+            "1700 mL",
+            "1800 mL",
+            "1900 mL",
+            "2000 mL"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Major labelled marks go up by 500 mL (500, 1000, 1500, 2000) and each minor tick between them is 100 mL.",
+          "keyPoints": [
+            {
+              "text": "container",
+              "note": "Major marks = 500 mL; each small tick = 100 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the scale: between 1000 mL and 1500 mL there are 5 equal intervals, so each small tick equals \\(100\\text{ mL}\\).",
+              "work": "\\(500 \\div 5 = 100\\text{ mL per tick}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 236\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"236\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"32.0\" width=\"73\" height=\"154.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"32.0\" x2=\"152.5\" y2=\"32.0\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text><polygon points=\"156,32.0 168,27.0 168,37.0\" fill=\"#dc2626\"/><text x=\"110\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Pointer reads 1900 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "The water line is 1 minor tick (100 mL) below 2000 mL: 2000 - 100 = 1900 mL.",
+              "work": "\\(\\text{Volume} = 1900\\text{ mL}\\)"
+            },
+            {
+              "explain": "Check that \\(1900\\text{ mL}\\) lies accurately between its surrounding 500 mL marks.",
+              "work": "\\(1900\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, there is \\(1900\\text{ mL}\\) of liquid in the container.",
+              "work": "\\(\\text{Answer: } 1900\\text{ mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 214\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"214\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"32.0\" width=\"73\" height=\"154.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"32.0\" x2=\"152.5\" y2=\"32.0\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much liquid is in this \\(2000\\text{ mL}\\) container?",
+          "options": [
+            "1100 mL",
+            "1200 mL",
+            "1300 mL",
+            "1400 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Major labelled marks go up by 500 mL (500, 1000, 1500, 2000) and each minor tick between them is 100 mL.",
+          "keyPoints": [
+            {
+              "text": "container",
+              "note": "Major marks = 500 mL; each small tick = 100 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the scale: between 1000 mL and 1500 mL there are 5 equal intervals, so each small tick equals \\(100\\text{ mL}\\).",
+              "work": "\\(500 \\div 5 = 100\\text{ mL per tick}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 236\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"236\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"88.0\" width=\"73\" height=\"98.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"88.0\" x2=\"152.5\" y2=\"88.0\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text><polygon points=\"156,88.0 168,83.0 168,93.0\" fill=\"#dc2626\"/><text x=\"110\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Pointer reads 1200 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Count 2 minor ticks (2 × 100 mL) above 1000 mL: 1000 + 200 = 1200 mL.",
+              "work": "\\(\\text{Volume} = 1200\\text{ mL}\\)"
+            },
+            {
+              "explain": "Check that \\(1200\\text{ mL}\\) lies accurately between its surrounding 500 mL marks.",
+              "work": "\\(1200\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, there is \\(1200\\text{ mL}\\) of liquid in the container.",
+              "work": "\\(\\text{Answer: } 1200\\text{ mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 214\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"214\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"78\" y=\"20\" width=\"76\" height=\"168\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.2\"/><rect x=\"70\" y=\"186\" width=\"92\" height=\"10\" rx=\"2\" fill=\"#64748b\"/><rect x=\"79.5\" y=\"88.0\" width=\"73\" height=\"98.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"79.5\" y1=\"88.0\" x2=\"152.5\" y2=\"88.0\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"78\" y1=\"176.0\" x2=\"89\" y2=\"176.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"168.0\" x2=\"89\" y2=\"168.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"160.0\" x2=\"89\" y2=\"160.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"152.0\" x2=\"89\" y2=\"152.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"144.0\" x2=\"96\" y2=\"144.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"148.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500</text><line x1=\"78\" y1=\"136.0\" x2=\"89\" y2=\"136.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"128.0\" x2=\"89\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"120.0\" x2=\"89\" y2=\"120.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"112.0\" x2=\"89\" y2=\"112.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"104.0\" x2=\"96\" y2=\"104.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"108.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1000</text><line x1=\"78\" y1=\"96.0\" x2=\"89\" y2=\"96.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"88.0\" x2=\"89\" y2=\"88.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"80.0\" x2=\"89\" y2=\"80.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"72.0\" x2=\"89\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"64.0\" x2=\"96\" y2=\"64.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"68.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1500</text><line x1=\"78\" y1=\"56.0\" x2=\"89\" y2=\"56.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"48.0\" x2=\"89\" y2=\"48.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"40.0\" x2=\"89\" y2=\"40.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"32.0\" x2=\"89\" y2=\"32.0\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"78\" y1=\"24.0\" x2=\"96\" y2=\"24.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"72\" y=\"28.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"148\" y=\"34\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Michael drinks \\(2\\) litres of water every day. How much water does he drink in a week?",
+          "options": [
+            "10 litres",
+            "12 litres",
+            "14 litres",
+            "16 litres"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "There are 7 days in a week, so multiply 2 litres × 7.",
+          "keyPoints": [
+            {
+              "text": "Michael drinks \\(2\\) litres",
+              "note": "There are 7 days in a week, so multiply 2 litres × 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall that 1 week has 7 days.",
+              "work": "\\(1\\text{ week} = 7\\text{ days}\\)"
+            },
+            {
+              "explain": "Multiply 2 litres per day by 7 days.",
+              "work": "\\(2 \\times 7 = 14\\text{ litres}\\)"
+            },
+            {
+              "explain": "Check by counting by 2s seven times: 2, 4, 6, 8, 10, 12, 14.",
+              "work": "\\(14\\text{ litres verified}\\)"
+            },
+            {
+              "explain": "Therefore, Michael drinks 14 litres of water in a week.",
+              "work": "\\(\\text{Total} = 14\\text{ litres}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A medicine cup holds \\(10\\text{ mL}\\). How many medicine cups can you fill from a \\(250\\text{ mL}\\) bottle of cough medicine?",
+          "options": [
+            "20 cups",
+            "25 cups",
+            "30 cups",
+            "250 cups"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 250 mL by 10 mL per cup (drop one zero!).",
+          "keyPoints": [
+            {
+              "text": "A medicine cup holds",
+              "note": "Divide 250 mL by 10 mL per cup (drop one zero!)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division number sentence: 250 mL ÷ 10 mL.",
+              "work": "\\(250 \\div 10\\)"
+            },
+            {
+              "explain": "Dividing a multiple of 10 by 10 removes the trailing zero: 250 ÷ 10 = 25.",
+              "work": "\\(250 \\div 10 = 25\\)"
+            },
+            {
+              "explain": "Check: 25 cups × 10 mL = 250 mL.",
+              "work": "\\(25 \\times 10 = 250\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, you can fill 25 medicine cups.",
+              "work": "\\(\\text{Answer: } 25\\text{ cups}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th13-p57-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bucket holds \\(2\\) litres of water. How many buckets of water will it take to fill a \\(100\\)-litre water tank?",
+          "options": [
+            "25 buckets",
+            "40 buckets",
+            "50 buckets",
+            "200 buckets"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 100 litres by 2 litres per bucket (half of 100).",
+          "keyPoints": [
+            {
+              "text": "A bucket holds \\(2\\)",
+              "note": "Divide 100 litres by 2 litres per bucket (half of 100)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division number sentence: 100 L ÷ 2 L.",
+              "work": "\\(100 \\div 2\\)"
+            },
+            {
+              "explain": "Half of 100 is 50.",
+              "work": "\\(100 \\div 2 = 50\\)"
+            },
+            {
+              "explain": "Check: 50 buckets × 2 litres = 100 litres.",
+              "work": "\\(50 \\times 2 = 100\\text{ litres}\\)"
+            },
+            {
+              "explain": "Therefore, it takes 50 buckets of water.",
+              "work": "\\(\\text{Answer: } 50\\text{ buckets}\\)"
+            }
+          ]
         }
       ]
     }
