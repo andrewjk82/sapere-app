@@ -7,7 +7,657 @@
       "topicId": "y6-17a",
       "code": "17A",
       "title": "Symmetry of two-dimensional shapes",
-      "questions": []
+      "questions": [
+        {
+          "id": "y6ch17-17a-l1",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this isosceles triangle have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,20.0 100.0,180.0 200.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry",
+            "3 lines of symmetry",
+            "4 lines of symmetry"
+          ],
+          "answer": 1,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the isosceles triangle.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"150.0,20.0 100.0,180.0 200.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"150.0,20.0 100.0,180.0 200.0,180.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"10.0\" x2=\"150.0\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The fold line from the top corner straight down to the middle of the base is the only one. Folding from the base corners does not work because the three sides are not all the same.",
+              "work": "\\(1\\ \\text{line of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,20.0 100.0,180.0 200.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"10.0\" x2=\"150.0\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"100.0\" y1=\"180.0\" x2=\"175.0\" y2=\"100.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"200.0\" y1=\"180.0\" x2=\"125.0\" y2=\"100.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-l2",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this rhombus have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,35.0 225.0,100.0 150.0,165.0 75.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry",
+            "3 lines of symmetry"
+          ],
+          "answer": 3,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the rhombus.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"150.0,35.0 225.0,100.0 150.0,165.0 75.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"150.0,35.0 225.0,100.0 150.0,165.0 75.0,100.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"180.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{2 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,35.0 225.0,100.0 150.0,165.0 75.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"180.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"60.0\" y1=\"100.0\" x2=\"240.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The two diagonals (up-down and left-right) are fold lines. The lines through the middle of the sides are not.",
+              "work": "\\(2\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,35.0 225.0,100.0 150.0,165.0 75.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"180.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"60.0\" y1=\"100.0\" x2=\"240.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"115.0\" y1=\"70.0\" x2=\"185.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"115.0\" y1=\"135.0\" x2=\"185.0\" y2=\"60.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-l3",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this rectangle have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"65.0,60.0 235.0,60.0 235.0,140.0 65.0,140.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "3 lines of symmetry",
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry"
+          ],
+          "answer": 4,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the rectangle.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"65.0,60.0 235.0,60.0 235.0,140.0 65.0,140.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"65.0,60.0 235.0,60.0 235.0,140.0 65.0,140.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"45.0\" x2=\"150.0\" y2=\"155.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{2 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"65.0,60.0 235.0,60.0 235.0,140.0 65.0,140.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"45.0\" x2=\"150.0\" y2=\"155.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"50.0\" y1=\"100.0\" x2=\"250.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The vertical line and the horizontal line through the middle are fold lines. The diagonals are NOT, because the sides are different lengths.",
+              "work": "\\(2\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"65.0,60.0 235.0,60.0 235.0,140.0 65.0,140.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"45.0\" x2=\"150.0\" y2=\"155.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"50.0\" y1=\"100.0\" x2=\"250.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"65.0\" y1=\"60.0\" x2=\"235.0\" y2=\"140.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"65.0\" y1=\"140.0\" x2=\"235.0\" y2=\"60.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-l4",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this H-shaped figure have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"95.0,20.0 125.0,20.0 125.0,85.0 175.0,85.0 175.0,20.0 205.0,20.0 205.0,180.0 175.0,180.0 175.0,115.0 125.0,115.0 125.0,180.0 95.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "2 lines of symmetry",
+            "3 lines of symmetry",
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry"
+          ],
+          "answer": 0,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the H shape.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"95.0,20.0 125.0,20.0 125.0,85.0 175.0,85.0 175.0,20.0 205.0,20.0 205.0,180.0 175.0,180.0 175.0,115.0 125.0,115.0 125.0,180.0 95.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"95.0,20.0 125.0,20.0 125.0,85.0 175.0,85.0 175.0,20.0 205.0,20.0 205.0,180.0 175.0,180.0 175.0,115.0 125.0,115.0 125.0,180.0 95.0,180.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"5.0\" x2=\"150.0\" y2=\"195.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{2 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"95.0,20.0 125.0,20.0 125.0,85.0 175.0,85.0 175.0,20.0 205.0,20.0 205.0,180.0 175.0,180.0 175.0,115.0 125.0,115.0 125.0,180.0 95.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"5.0\" x2=\"150.0\" y2=\"195.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"80.0\" y1=\"100.0\" x2=\"220.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The vertical line down the middle and the horizontal line across the middle are fold lines.",
+              "work": "\\(2\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"95.0,20.0 125.0,20.0 125.0,85.0 175.0,85.0 175.0,20.0 205.0,20.0 205.0,180.0 175.0,180.0 175.0,115.0 125.0,115.0 125.0,180.0 95.0,180.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"5.0\" x2=\"150.0\" y2=\"195.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"80.0\" y1=\"100.0\" x2=\"220.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"95.0\" y1=\"20.0\" x2=\"205.0\" y2=\"180.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"205.0\" y1=\"20.0\" x2=\"95.0\" y2=\"180.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-l5",
+          "type": "mc",
+          "stem": "This triangle has three equal sides. How many lines of symmetry does it have?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,20.0 78.0,145.0 222.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "2 lines of symmetry",
+            "3 lines of symmetry",
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry"
+          ],
+          "answer": 1,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the equilateral triangle.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"150.0,20.0 78.0,145.0 222.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"150.0,20.0 78.0,145.0 222.0,145.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"5.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{3 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,20.0 78.0,145.0 222.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"5.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"50.0\" y1=\"170.0\" x2=\"186.0\" y2=\"92.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"250.0\" y1=\"170.0\" x2=\"114.0\" y2=\"92.0\" stroke=\"#7c3aed\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "There is one fold line from each corner to the middle of the opposite side: three in all.",
+              "work": "\\(3\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,20.0 78.0,145.0 222.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"5.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"50.0\" y1=\"170.0\" x2=\"186.0\" y2=\"92.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"250.0\" y1=\"170.0\" x2=\"114.0\" y2=\"92.0\" stroke=\"#7c3aed\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-1a",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this quadrilateral (a square) have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"95.0,35.0 205.0,35.0 205.0,145.0 95.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry",
+            "3 lines of symmetry",
+            "4 lines of symmetry"
+          ],
+          "answer": 4,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the square.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"95.0,35.0 205.0,35.0 205.0,145.0 95.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"95.0,35.0 205.0,35.0 205.0,145.0 95.0,145.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{4 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"95.0,35.0 205.0,35.0 205.0,145.0 95.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"80.0\" y1=\"90.0\" x2=\"220.0\" y2=\"90.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"85.0\" y1=\"25.0\" x2=\"215.0\" y2=\"155.0\" stroke=\"#7c3aed\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"215.0\" y1=\"25.0\" x2=\"85.0\" y2=\"155.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Two lines through the middles of opposite sides and two diagonals are fold lines: four in all.",
+              "work": "\\(4\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"95.0,35.0 205.0,35.0 205.0,145.0 95.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"80.0\" y1=\"90.0\" x2=\"220.0\" y2=\"90.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"85.0\" y1=\"25.0\" x2=\"215.0\" y2=\"155.0\" stroke=\"#7c3aed\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"215.0\" y1=\"25.0\" x2=\"85.0\" y2=\"155.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-1b",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this quadrilateral have? (A trapezium with a wide top, a narrow bottom and equal sloping sides.)",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"85.0,35.0 215.0,35.0 185.0,130.0 115.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry",
+            "3 lines of symmetry"
+          ],
+          "answer": 2,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the trapezium.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"85.0,35.0 215.0,35.0 185.0,130.0 115.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"85.0,35.0 215.0,35.0 185.0,130.0 115.0,130.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"145.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The vertical line down the middle is the only fold line (the two sloping sides are equal).",
+              "work": "\\(1\\ \\text{line of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"85.0,35.0 215.0,35.0 185.0,130.0 115.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"145.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"85.0\" y1=\"35.0\" x2=\"185.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"215.0\" y1=\"35.0\" x2=\"115.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-1c",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this quadrilateral (a parallelogram that is not a rectangle or rhombus) have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,45.0 235.0,45.0 190.0,155.0 65.0,155.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "3 lines of symmetry",
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry"
+          ],
+          "answer": 2,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the parallelogram.",
+              "work": ""
+            },
+            {
+              "explain": "Try possible fold lines: up and down, across, and along the corners (grey dotted). In each case the two halves do NOT match when folded, because the shape is slanted.",
+              "work": "\\(\\text{no fold matches}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,45.0 235.0,45.0 190.0,155.0 65.0,155.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"35.0\" x2=\"150.0\" y2=\"165.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"50.0\" y1=\"100.0\" x2=\"250.0\" y2=\"100.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"110.0\" y1=\"45.0\" x2=\"190.0\" y2=\"155.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"235.0\" y1=\"45.0\" x2=\"65.0\" y2=\"155.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "No fold line works: the slanted sides mean the two halves never match. A parallelogram like this has no lines of symmetry.",
+              "work": "\\(0\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,45.0 235.0,45.0 190.0,155.0 65.0,155.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"35.0\" x2=\"150.0\" y2=\"165.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"50.0\" y1=\"100.0\" x2=\"250.0\" y2=\"100.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"110.0\" y1=\"45.0\" x2=\"190.0\" y2=\"155.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"235.0\" y1=\"45.0\" x2=\"65.0\" y2=\"155.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-1d",
+          "type": "mc",
+          "stem": "How many lines of symmetry does this quadrilateral (a rectangle that is not a square) have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"70.0,70.0 230.0,70.0 230.0,130.0 70.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "2 lines of symmetry",
+            "3 lines of symmetry",
+            "4 lines of symmetry",
+            "0 lines of symmetry",
+            "1 line of symmetry"
+          ],
+          "answer": 0,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the rectangle.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"70.0,70.0 230.0,70.0 230.0,130.0 70.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"70.0,70.0 230.0,70.0 230.0,130.0 70.0,130.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"55.0\" x2=\"150.0\" y2=\"145.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{2 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"70.0,70.0 230.0,70.0 230.0,130.0 70.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"55.0\" x2=\"150.0\" y2=\"145.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"55.0\" y1=\"100.0\" x2=\"245.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The vertical and horizontal lines through the middle are fold lines. The diagonals are not.",
+              "work": "\\(2\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"70.0,70.0 230.0,70.0 230.0,130.0 70.0,130.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"55.0\" x2=\"150.0\" y2=\"145.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"55.0\" y1=\"100.0\" x2=\"245.0\" y2=\"100.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"70.0\" y1=\"70.0\" x2=\"230.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/><line x1=\"70.0\" y1=\"130.0\" x2=\"230.0\" y2=\"70.0\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"2 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17a-5",
+          "type": "mc",
+          "stem": "This shape is made from 4 identical small squares. How many lines of symmetry does it have?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"100.0,45.0 200.0,45.0 200.0,145.0 100.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "0 lines of symmetry",
+            "1 line of symmetry",
+            "2 lines of symmetry",
+            "3 lines of symmetry",
+            "4 lines of symmetry"
+          ],
+          "answer": 4,
+          "hint": "Imagine folding the shape: how many different fold lines make the two halves match?",
+          "steps": [
+            {
+              "explain": "A line of symmetry is a fold line: when you fold the shape along it, the two halves match exactly. Look at the 2 × 2 square.",
+              "work": ""
+            },
+            {
+              "explain": "Try the first fold line (red dashed). The part on one side (orange) lands exactly on the other side.",
+              "work": "\\(\\text{fold}\\Rightarrow\\text{halves match}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><clipPath id=\"cl1\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"200\"/></clipPath><polygon points=\"100.0,45.0 200.0,45.0 200.0,145.0 100.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><clipPath id=\"ch\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"200\"/></clipPath><g clip-path=\"url(#ch)\"><polygon points=\"100.0,45.0 200.0,45.0 200.0,145.0 100.0,145.0\" fill=\"#fde68a\" fill-opacity=\"0.85\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g><line x1=\"150.0\" y1=\"30.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Look for other fold lines: every line shown below is a line of symmetry.",
+              "work": "\\(\\text{4 lines}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"100.0,45.0 200.0,45.0 200.0,145.0 100.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"30.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"85.0\" y1=\"95.0\" x2=\"215.0\" y2=\"95.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"90.0\" y1=\"35.0\" x2=\"210.0\" y2=\"155.0\" stroke=\"#7c3aed\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"210.0\" y1=\"35.0\" x2=\"90.0\" y2=\"155.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Two fold lines through the middles of the sides and two diagonals: 4 lines of symmetry.",
+              "work": "\\(4\\ \\text{lines of symmetry}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"100.0,45.0 200.0,45.0 200.0,145.0 100.0,145.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"150.0\" y1=\"30.0\" x2=\"150.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"85.0\" y1=\"95.0\" x2=\"215.0\" y2=\"95.0\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"90.0\" y1=\"35.0\" x2=\"210.0\" y2=\"155.0\" stroke=\"#7c3aed\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/><line x1=\"210.0\" y1=\"35.0\" x2=\"90.0\" y2=\"155.0\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lines of symmetry",
+              "note": "A line of symmetry folds a shape into two halves that match exactly."
+            },
+            {
+              "text": "How many",
+              "note": "Fold the shape in your mind and count the fold lines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        }
+      ]
     },
     {
       "topicId": "y6-17b",
@@ -109,6 +759,723 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y6ch17-17b-wc1a",
+          "type": "mc",
+          "stem": "Describe the transformation (part a): the figure on the left is the original and the other figure is its image.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,170) rotate(0) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(260,170) rotate(0) scale(-0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"260.0\" y=\"188.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Reflection (a flip in a mirror line)",
+            "Rotation of 90° clockwise",
+            "Rotation of 180°",
+            "Translation (a slide)"
+          ],
+          "answer": 0,
+          "hint": "Ask: was it slid, flipped like a mirror, or turned? Follow the STOP sign.",
+          "steps": [
+            {
+              "explain": "Compare the original and the image. Look at which way the head and the STOP sign point.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the STOP sign: the orange dot is where it was and the purple dot is where it is now. The dashed arrow shows its path.",
+              "work": "\\(\\text{original}\\to\\text{image}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,170) rotate(0) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(260,170) rotate(0) scale(-0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"260.0\" y=\"188.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M106.5,108.4 Q175.0,68.4 243.5,108.4\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><polyline points=\"233.5,107.6 243.5,108.4 237.9,100.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"106.5\" cy=\"108.4\" r=\"5\" fill=\"#d97706\"/><circle cx=\"243.5\" cy=\"108.4\" r=\"5\" fill=\"#7c3aed\"/><line x1=\"175.0\" y1=\"20\" x2=\"175.0\" y2=\"230\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"8 5\"/></svg>"
+              }
+            },
+            {
+              "explain": "The image is the mirror image: the STOP sign is now on the left, and the figure faces the other way, like looking in a mirror. A vertical mirror line sits halfway between them.",
+              "work": "\\(\\text{reflection}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc1b",
+          "type": "mc",
+          "stem": "Describe the transformation (part b): the figure on the left is the original and the other figure is its image.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(110,120) rotate(0) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(240,175) rotate(180) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"240.0\" y=\"193.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Translation (a slide)",
+            "Reflection (a flip in a mirror line)",
+            "Rotation of 90° clockwise",
+            "Rotation of 180°"
+          ],
+          "answer": 3,
+          "hint": "Ask: was it slid, flipped like a mirror, or turned? Follow the STOP sign.",
+          "steps": [
+            {
+              "explain": "Compare the original and the image. Look at which way the head and the STOP sign point.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the STOP sign: the orange dot is where it was and the purple dot is where it is now. The dashed arrow shows its path.",
+              "work": "\\(\\text{original}\\to\\text{image}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(110,120) rotate(0) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(240,175) rotate(180) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"240.0\" y=\"193.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M126.5,58.4 Q104.7,185.7 223.5,236.6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><polyline points=\"213.5,237.1 223.5,236.6 216.9,229.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"126.5\" cy=\"58.4\" r=\"5\" fill=\"#d97706\"/><circle cx=\"223.5\" cy=\"236.6\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+              }
+            },
+            {
+              "explain": "The image is upside down: the head is at the bottom and the STOP sign is at the bottom left. Turning a shape half a turn (180°) gives this.",
+              "work": "\\(\\text{rotation}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc1c",
+          "type": "mc",
+          "stem": "Describe the transformation (part c): the figure on the left is the original and the other figure is its image.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,170) rotate(0) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(250,150) rotate(90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"250.0\" y=\"168.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Rotation of 180°",
+            "Translation (a slide)",
+            "Reflection (a flip in a mirror line)",
+            "Rotation of 90° clockwise"
+          ],
+          "answer": 3,
+          "hint": "Ask: was it slid, flipped like a mirror, or turned? Follow the STOP sign.",
+          "steps": [
+            {
+              "explain": "Compare the original and the image. Look at which way the head and the STOP sign point.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the STOP sign: the orange dot is where it was and the purple dot is where it is now. The dashed arrow shows its path.",
+              "work": "\\(\\text{original}\\to\\text{image}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,170) rotate(0) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(250,150) rotate(90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"250.0\" y=\"168.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M106.5,108.4 Q192.7,195.2 311.6,166.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><polyline points=\"303.9,172.8 311.6,166.5 301.8,164.4\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"106.5\" cy=\"108.4\" r=\"5\" fill=\"#d97706\"/><circle cx=\"311.6\" cy=\"166.5\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+              }
+            },
+            {
+              "explain": "The image is lying on its side with its head pointing to the right. Turning the upright figure a quarter turn clockwise (90°) does this.",
+              "work": "\\(\\text{rotation}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc1d",
+          "type": "mc",
+          "stem": "Describe the transformation (part d): the figure on the left is the original and the other figure is its image.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,150) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(250,100) rotate(90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"250.0\" y=\"118.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Rotation of 90° clockwise",
+            "Rotation of 180°",
+            "Translation (a slide)",
+            "Reflection (a flip in a mirror line)"
+          ],
+          "answer": 1,
+          "hint": "Ask: was it slid, flipped like a mirror, or turned? Follow the STOP sign.",
+          "steps": [
+            {
+              "explain": "Compare the original and the image. Look at which way the head and the STOP sign point.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the STOP sign: the orange dot is where it was and the purple dot is where it is now. The dashed arrow shows its path.",
+              "work": "\\(\\text{original}\\to\\text{image}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,150) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(250,100) rotate(90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"250.0\" y=\"118.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M28.4,133.5 Q174.8,204.9 311.6,116.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><polyline points=\"306.4,125.0 311.6,116.5 301.7,117.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"28.4\" cy=\"133.5\" r=\"5\" fill=\"#d97706\"/><circle cx=\"311.6\" cy=\"116.5\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+              }
+            },
+            {
+              "explain": "Both figures are lying down but they face opposite ways: the head is on the left in the original and on the right in the image, and the STOP sign swaps from the top to the bottom. That is a half turn (180°).",
+              "work": "\\(\\text{rotation}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc1e",
+          "type": "mc",
+          "stem": "Describe the transformation (part e): the figure on the left is the original and the other figure is its image.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(150,60) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(150,170) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"150.0\" y=\"188.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Reflection (a flip in a mirror line)",
+            "Rotation of 90° clockwise",
+            "Rotation of 180°",
+            "Translation (a slide)"
+          ],
+          "answer": 3,
+          "hint": "Ask: was it slid, flipped like a mirror, or turned? Follow the STOP sign.",
+          "steps": [
+            {
+              "explain": "Compare the original and the image. Look at which way the head and the STOP sign point.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the STOP sign: the orange dot is where it was and the purple dot is where it is now. The dashed arrow shows its path.",
+              "work": "\\(\\text{original}\\to\\text{image}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(150,60) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(150,170) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"150.0\" y=\"188.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M88.4,43.5 Q88.4,98.5 88.4,153.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><polyline points=\"84.1,144.5 88.4,153.5 92.7,144.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"88.4\" cy=\"43.5\" r=\"5\" fill=\"#d97706\"/><circle cx=\"88.4\" cy=\"153.5\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+              }
+            },
+            {
+              "explain": "The image looks exactly the same as the original, facing the same way, just lower down. It has slid straight down: a vertical translation.",
+              "work": "\\(\\text{translation}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc1f",
+          "type": "mc",
+          "stem": "Describe the transformation (part f): the figure on the left is the original and the other figure is its image.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,110) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(260,110) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"260.0\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Translation (a slide)",
+            "Reflection (a flip in a mirror line)",
+            "Rotation of 90° clockwise",
+            "Rotation of 180°"
+          ],
+          "answer": 0,
+          "hint": "Ask: was it slid, flipped like a mirror, or turned? Follow the STOP sign.",
+          "steps": [
+            {
+              "explain": "Compare the original and the image. Look at which way the head and the STOP sign point.",
+              "work": ""
+            },
+            {
+              "explain": "Follow the STOP sign: the orange dot is where it was and the purple dot is where it is now. The dashed arrow shows its path.",
+              "work": "\\(\\text{original}\\to\\text{image}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><g transform=\"translate(90,110) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><g transform=\"translate(260,110) rotate(-90) scale(0.55,0.55)\"><ellipse cx=\"0\" cy=\"-92\" rx=\"12\" ry=\"11\" fill=\"#fcd9b6\" stroke=\"#7c4a1e\" stroke-width=\"2\"/><rect x=\"-14\" y=\"-106\" width=\"28\" height=\"9\" rx=\"3\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"-15\" y=\"-80\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#fb923c\" stroke=\"#9a3412\" stroke-width=\"2\"/><rect x=\"-11\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><rect x=\"2\" y=\"-40\" width=\"9\" height=\"40\" fill=\"#60a5fa\" stroke=\"#1e3a8a\" stroke-width=\"1.6\"/><line x1=\"15\" y1=\"-70\" x2=\"30\" y2=\"-68\" stroke=\"#9a3412\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"30\" y1=\"-4\" x2=\"30\" y2=\"-108\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"30\" cy=\"-112\" r=\"13\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"2.5\"/><text x=\"30\" y=\"-109\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"7\" font-weight=\"800\" fill=\"#fff\">STOP</text></g><text x=\"260.0\" y=\"128.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M28.4,93.5 Q113.4,93.5 198.4,93.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"6 4\"/><polyline points=\"189.4,97.8 198.4,93.5 189.4,89.2\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"28.4\" cy=\"93.5\" r=\"5\" fill=\"#d97706\"/><circle cx=\"198.4\" cy=\"93.5\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+              }
+            },
+            {
+              "explain": "The image looks exactly the same as the original, facing the same way, just further to the right. It has slid horizontally: a horizontal translation.",
+              "work": "\\(\\text{translation}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-ex1",
+          "type": "mc",
+          "stem": "How has this shape been moved? (A rectangle and its image touch at the point O.)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,110.0 170.0,110.0 170.0,160.0 110.0,160.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"122\" cy=\"122\" r=\"5\" fill=\"#d97706\"/><polygon points=\"170.0,50.0 170.0,110.0 120.0,110.0 120.0,50.0\" fill=\"#e9d5ff\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"158.0\" cy=\"62.0\" r=\"5\" fill=\"#7c3aed\"/><circle cx=\"170\" cy=\"110\" r=\"5\" fill=\"#dc2626\"/><text x=\"182.0\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#111\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><text x=\"160.0\" y=\"204.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text></svg>"
+          },
+          "options": [
+            "Rotated 90° clockwise about O",
+            "Reflected in a vertical line",
+            "Translated horizontally",
+            "Rotated 90° anticlockwise about O"
+          ],
+          "answer": 0,
+          "hint": "Is the image flipped, slid or turned about O?",
+          "steps": [
+            {
+              "explain": "There are two rectangles: the original (blue, with an orange dot) and its image (purple, with a purple dot). The two touch at the point O.",
+              "work": ""
+            },
+            {
+              "explain": "The shape has not been flipped (the dot is on the same side of the rectangle) and it has not just slid: it has turned about O. The dashed arrow shows the turn of the lower rectangle up to the upper one.",
+              "work": "\\(\\text{turn about }O\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 210\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,110.0 170.0,110.0 170.0,160.0 110.0,160.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"122\" cy=\"122\" r=\"5\" fill=\"#d97706\"/><polygon points=\"170.0,50.0 170.0,110.0 120.0,110.0 120.0,50.0\" fill=\"#e9d5ff\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"158.0\" cy=\"62.0\" r=\"5\" fill=\"#7c3aed\"/><circle cx=\"170\" cy=\"110\" r=\"5\" fill=\"#dc2626\"/><text x=\"182.0\" y=\"104.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#111\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">O</text><text x=\"160.0\" y=\"204.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><path d=\"M108,114 A62,62 0 0 1 170,48\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"4 4\"/><polyline points=\"162,40 170,48 162,55\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Going from the original to the image the shape turned a quarter of a full turn (90°), in the same direction as the hands of a clock.",
+              "work": "\\(90^\\circ\\ \\text{clockwise}\\)"
+            },
+            {
+              "explain": "So the rectangle has been rotated 90° clockwise about O.",
+              "work": "\\(\\text{rotation of }90^\\circ\\text{ clockwise}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How",
+              "note": "Read what the question asks."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-ex2",
+          "type": "mc",
+          "stem": "Which transformation has been used to produce the image? (A pentagon and its mirror image on the other side of a dashed vertical line.)",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,62.0 155.7,95.2 138.2,148.8 81.8,148.8 64.3,95.2\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"260.0,62.0 214.3,95.2 231.8,148.8 288.2,148.8 305.7,95.2\" fill=\"#e9d5ff\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"185\" y1=\"20\" x2=\"185\" y2=\"190\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"8 5\"/><text x=\"110.0\" y=\"110.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"1\" font-weight=\"700\" fill=\"#111\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><circle cx=\"110.0\" cy=\"62.0\" r=\"5\" fill=\"#d97706\"/><circle cx=\"260.0\" cy=\"62.0\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+          },
+          "options": [
+            "Rotation of 180°",
+            "Reflection in the vertical line",
+            "Rotation of 90° clockwise",
+            "Translation (a slide)"
+          ],
+          "answer": 1,
+          "hint": "Is it a mirror image across the dashed line?",
+          "steps": [
+            {
+              "explain": "The dashed vertical line is between the two pentagons.",
+              "work": ""
+            },
+            {
+              "explain": "Join each corner to its partner in the image (grey dotted lines). Each pair is the same distance from the dashed line, and the lines cross it at right angles.",
+              "work": "\\(\\text{equal distances from the mirror line}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"110.0,62.0 155.7,95.2 138.2,148.8 81.8,148.8 64.3,95.2\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"260.0,62.0 214.3,95.2 231.8,148.8 288.2,148.8 305.7,95.2\" fill=\"#e9d5ff\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"185\" y1=\"20\" x2=\"185\" y2=\"190\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-dasharray=\"8 5\"/><text x=\"110.0\" y=\"110.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"1\" font-weight=\"700\" fill=\"#111\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><circle cx=\"110.0\" cy=\"62.0\" r=\"5\" fill=\"#d97706\"/><circle cx=\"260.0\" cy=\"62.0\" r=\"5\" fill=\"#7c3aed\"/><line x1=\"110.0\" y1=\"62.0\" x2=\"260.0\" y2=\"62.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\"/><line x1=\"155.7\" y1=\"95.2\" x2=\"214.3\" y2=\"95.2\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\"/><line x1=\"138.2\" y1=\"148.8\" x2=\"231.8\" y2=\"148.8\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\"/><line x1=\"81.8\" y1=\"148.8\" x2=\"288.2\" y2=\"148.8\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\"/><line x1=\"64.3\" y1=\"95.2\" x2=\"305.7\" y2=\"95.2\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\"/></svg>"
+              }
+            },
+            {
+              "explain": "Everything is a mirror image: left and right are swapped, just like looking in a mirror. The size and shape are the same.",
+              "work": "\\(\\text{mirror image}\\)"
+            },
+            {
+              "explain": "So the shape has been reflected in the vertical line.",
+              "work": "\\(\\text{reflection}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "transformation",
+              "note": "Describe how the shape moved: slide, flip or turn."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-ex3",
+          "type": "mc",
+          "stem": "How has this shape been moved? (A cross shape and its image to the right of it, facing the same way.)",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 180\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"60.0,90.0 80.0,90.0 80.0,70.0 100.0,70.0 100.0,90.0 120.0,90.0 120.0,110.0 100.0,110.0 100.0,130.0 80.0,130.0 80.0,110.0 60.0,110.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"210.0,90.0 230.0,90.0 230.0,70.0 250.0,70.0 250.0,90.0 270.0,90.0 270.0,110.0 250.0,110.0 250.0,130.0 230.0,130.0 230.0,110.0 210.0,110.0\" fill=\"#e9d5ff\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"205.0\" y=\"154.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><circle cx=\"60\" cy=\"90\" r=\"5\" fill=\"#d97706\"/><circle cx=\"210\" cy=\"90\" r=\"5\" fill=\"#7c3aed\"/></svg>"
+          },
+          "options": [
+            "Translated horizontally",
+            "Reflected in a vertical line",
+            "Rotated 180°",
+            "Rotated 90° clockwise"
+          ],
+          "answer": 0,
+          "hint": "Same way up and same facing means a slide.",
+          "steps": [
+            {
+              "explain": "Compare the two crosses: the original is blue and the image is purple.",
+              "work": ""
+            },
+            {
+              "explain": "The orange dot is on the same corner of both shapes, and the image faces the same way. Nothing has turned or flipped. The arrow shows the slide from the left shape to the right shape.",
+              "work": "\\(\\text{same orientation}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 180\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"60.0,90.0 80.0,90.0 80.0,70.0 100.0,70.0 100.0,90.0 120.0,90.0 120.0,110.0 100.0,110.0 100.0,130.0 80.0,130.0 80.0,110.0 60.0,110.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"210.0,90.0 230.0,90.0 230.0,70.0 250.0,70.0 250.0,90.0 270.0,90.0 270.0,110.0 250.0,110.0 250.0,130.0 230.0,130.0 230.0,110.0 210.0,110.0\" fill=\"#e9d5ff\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"205.0\" y=\"154.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">image</text><circle cx=\"60\" cy=\"90\" r=\"5\" fill=\"#d97706\"/><circle cx=\"210\" cy=\"90\" r=\"5\" fill=\"#7c3aed\"/><path d=\"M60.0,84.0 Q135.0,84.0 210.0,84.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><polyline points=\"201.0,88.3 210.0,84.0 201.0,79.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/></svg>"
+              }
+            },
+            {
+              "explain": "The arrow is straight across, so the shape slid sideways (horizontally).",
+              "work": "\\(\\text{slide left to right}\\)"
+            },
+            {
+              "explain": "So the shape has been translated horizontally.",
+              "work": "\\(\\text{translation}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How",
+              "note": "Read what the question asks."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-ex4",
+          "type": "mc",
+          "stem": "Will this shape tessellate? (A trapezium with a long top side, a shorter bottom side and two equal sloping sides.)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 110\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"30.0,20.0 110.0,20.0 94.0,60.0 46.0,60.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "Yes, it tessellates",
+            "No, there are gaps",
+            "No, the copies overlap",
+            "Only if the shape is a square"
+          ],
+          "answer": 0,
+          "hint": "Can copies fit together with no gaps or overlaps?",
+          "steps": [
+            {
+              "explain": "A shape tessellates if copies of it fit together with NO gaps and NO overlaps, so the pattern can go on forever. Try fitting copies of this trapezium together.",
+              "work": ""
+            },
+            {
+              "explain": "Take a copy and rotate it 180° (half a turn). The slanted side of the rotated copy fits exactly against the slanted side of the first. Slide copies next to each other to make a row.",
+              "work": "\\(\\text{rotate }180^\\circ\\text{ then slide}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 454 80\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"20.0,20.0 100.0,20.0 84.0,60.0 36.0,60.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"100.0,20.0 148.0,20.0 164.0,60.0 84.0,60.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"148.0,20.0 228.0,20.0 212.0,60.0 164.0,60.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"228.0,20.0 276.0,20.0 292.0,60.0 212.0,60.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"276.0,20.0 356.0,20.0 340.0,60.0 292.0,60.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"356.0,20.0 404.0,20.0 420.0,60.0 340.0,60.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Make more rows below, swapping which copies are turned. The long side of one row meets the long side of the next with no gaps or overlaps.",
+              "work": "\\(\\text{no gaps, no overlaps}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 454 160\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"20.0,20.0 100.0,20.0 84.0,60.0 36.0,60.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"100.0,20.0 148.0,20.0 164.0,60.0 84.0,60.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"148.0,20.0 228.0,20.0 212.0,60.0 164.0,60.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"228.0,20.0 276.0,20.0 292.0,60.0 212.0,60.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"276.0,20.0 356.0,20.0 340.0,60.0 292.0,60.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"356.0,20.0 404.0,20.0 420.0,60.0 340.0,60.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"36.0,60.0 84.0,60.0 100.0,100.0 20.0,100.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"84.0,60.0 164.0,60.0 148.0,100.0 100.0,100.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"164.0,60.0 212.0,60.0 228.0,100.0 148.0,100.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"212.0,60.0 292.0,60.0 276.0,100.0 228.0,100.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"292.0,60.0 340.0,60.0 356.0,100.0 276.0,100.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"340.0,60.0 420.0,60.0 404.0,100.0 356.0,100.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"20.0,100.0 100.0,100.0 84.0,140.0 36.0,140.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"100.0,100.0 148.0,100.0 164.0,140.0 84.0,140.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"148.0,100.0 228.0,100.0 212.0,140.0 164.0,140.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"228.0,100.0 276.0,100.0 292.0,140.0 212.0,140.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"276.0,100.0 356.0,100.0 340.0,140.0 292.0,140.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"356.0,100.0 404.0,100.0 420.0,140.0 340.0,140.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "The pattern can continue in every direction as far as you like, so the trapezium tessellates.",
+              "work": "\\(\\text{yes}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tessellat",
+              "note": "A tessellation covers a surface with no gaps or overlaps."
+            },
+            {
+              "text": "Will",
+              "note": "Check that the shapes fit with no gaps or overlaps."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-l2",
+          "type": "mc",
+          "stem": "Does an equilateral triangle tessellate (fit together with no gaps or overlaps so the pattern can go on forever)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 140 110\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"70.0,20.0 20.0,95.0 120.0,95.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg>"
+          },
+          "options": [
+            "Only if the triangles are small",
+            "Yes, it tessellates",
+            "No, it leaves gaps",
+            "No, the copies overlap"
+          ],
+          "answer": 1,
+          "hint": "Think about how many triangles meet at a point.",
+          "steps": [
+            {
+              "explain": "Start with one equilateral triangle (all sides equal, all angles 60°).",
+              "work": ""
+            },
+            {
+              "explain": "Rotate a copy 180° and slide it so a side of the new triangle sits exactly on a side of the first.",
+              "work": "\\(\\text{rotate }180^\\circ\\text{ then slide}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 92\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"20.0,72.0 80.0,72.0 50.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"50.0,20.0 110.0,20.0 80.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"80.0,72.0 140.0,72.0 110.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"110.0,20.0 170.0,20.0 140.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"140.0,72.0 200.0,72.0 170.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"170.0,20.0 230.0,20.0 200.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Keep adding triangles in rows. At every point where triangles meet there are 6 triangles with 6 × 60° = 360°, a complete turn, so there are no gaps and no overlaps.",
+              "work": "\\(6\\times60^\\circ=360^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 195.9\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"20.0,72.0 80.0,72.0 50.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"50.0,20.0 110.0,20.0 80.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"80.0,72.0 140.0,72.0 110.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"110.0,20.0 170.0,20.0 140.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"140.0,72.0 200.0,72.0 170.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"170.0,20.0 230.0,20.0 200.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"200.0,72.0 260.0,72.0 230.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"230.0,20.0 290.0,20.0 260.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"260.0,72.0 320.0,72.0 290.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"290.0,20.0 350.0,20.0 320.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"320.0,72.0 380.0,72.0 350.0,20.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"350.0,20.0 410.0,20.0 380.0,72.0\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"50.0,123.9 110.0,123.9 80.0,72.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"80.0,72.0 140.0,72.0 110.0,123.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"110.0,123.9 170.0,123.9 140.0,72.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"140.0,72.0 200.0,72.0 170.0,123.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"170.0,123.9 230.0,123.9 200.0,72.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"200.0,72.0 260.0,72.0 230.0,123.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"230.0,123.9 290.0,123.9 260.0,72.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"260.0,72.0 320.0,72.0 290.0,123.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"290.0,123.9 350.0,123.9 320.0,72.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"320.0,72.0 380.0,72.0 350.0,123.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"350.0,123.9 410.0,123.9 380.0,72.0\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"380.0,72.0 440.0,72.0 410.0,123.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"80.0,175.9 140.0,175.9 110.0,123.9\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"110.0,123.9 170.0,123.9 140.0,175.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"140.0,175.9 200.0,175.9 170.0,123.9\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"170.0,123.9 230.0,123.9 200.0,175.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"200.0,175.9 260.0,175.9 230.0,123.9\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"230.0,123.9 290.0,123.9 260.0,175.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"260.0,175.9 320.0,175.9 290.0,123.9\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"290.0,123.9 350.0,123.9 320.0,175.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"320.0,175.9 380.0,175.9 350.0,123.9\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"350.0,123.9 410.0,123.9 380.0,175.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"380.0,175.9 440.0,175.9 410.0,123.9\" fill=\"#86efac\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"410.0,123.9 470.0,123.9 440.0,175.9\" fill=\"#c4b5fd\" fill-opacity=\"0.9\" stroke=\"#3b4ea8\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "So the equilateral triangle tessellates.",
+              "work": "\\(\\text{yes}\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tessellat",
+              "note": "A tessellation covers a surface with no gaps or overlaps."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc3d",
+          "type": "mc",
+          "stem": "Three hexagons are drawn in a tessellating pattern and the angles A, B and C are marked where they meet at a point. What is the sum of the angles A, B and C?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,155.0 102.4,182.5 54.7,155.0 54.7,100.0 102.4,72.5 150.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"197.6,72.5 150.0,100.0 102.4,72.5 102.4,17.5 150.0,-10.0 197.6,17.5\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"245.3,155.0 197.6,182.5 150.0,155.0 150.0,100.0 197.6,72.5 245.3,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"100\" r=\"3.5\" fill=\"#111\"/></svg>"
+          },
+          "options": [
+            "360°",
+            "180°",
+            "270°",
+            "120°"
+          ],
+          "answer": 0,
+          "hint": "The angles fill the whole space around the point.",
+          "steps": [
+            {
+              "explain": "Three regular hexagons fit together around a point. The angles A, B and C fill all the space around that point.",
+              "work": ""
+            },
+            {
+              "explain": "The three angles are equal (the hexagons are the same), and together they make a complete turn around the point.",
+              "work": "\\(A+B+C=\\text{full turn}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,155.0 102.4,182.5 54.7,155.0 54.7,100.0 102.4,72.5 150.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"197.6,72.5 150.0,100.0 102.4,72.5 102.4,17.5 150.0,-10.0 197.6,17.5\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"245.3,155.0 197.6,182.5 150.0,155.0 150.0,100.0 197.6,72.5 245.3,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M150,100 L150.0,124.0 A24,24 0 0 1 129.2,88.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.45\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"115.4\" y=\"124.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><path d=\"M150,100 L129.2,88.0 A24,24 0 0 1 170.8,88.0 Z\" fill=\"#047857\" fill-opacity=\"0.45\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"150.0\" y=\"64.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><path d=\"M150,100 L170.8,88.0 A24,24 0 0 1 150.0,124.0 Z\" fill=\"#d97706\" fill-opacity=\"0.45\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"184.6\" y=\"124.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><circle cx=\"150\" cy=\"100\" r=\"3.5\" fill=\"#111\"/></svg>"
+              }
+            },
+            {
+              "explain": "A full turn is 360°, so each angle is 360° ÷ 3.",
+              "work": "\\(360^\\circ\\div3=120^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,155.0 102.4,182.5 54.7,155.0 54.7,100.0 102.4,72.5 150.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"197.6,72.5 150.0,100.0 102.4,72.5 102.4,17.5 150.0,-10.0 197.6,17.5\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"245.3,155.0 197.6,182.5 150.0,155.0 150.0,100.0 197.6,72.5 245.3,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M150,100 L150.0,124.0 A24,24 0 0 1 129.2,88.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.45\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"115.4\" y=\"124.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A=120°</text><path d=\"M150,100 L129.2,88.0 A24,24 0 0 1 170.8,88.0 Z\" fill=\"#047857\" fill-opacity=\"0.45\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"150.0\" y=\"64.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B=120°</text><path d=\"M150,100 L170.8,88.0 A24,24 0 0 1 150.0,124.0 Z\" fill=\"#d97706\" fill-opacity=\"0.45\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"184.6\" y=\"124.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C=120°</text><circle cx=\"150\" cy=\"100\" r=\"3.5\" fill=\"#111\"/></svg>"
+              }
+            },
+            {
+              "explain": "Add the three angles: 120° + 120° + 120° = 360°.",
+              "work": "\\(120^\\circ+120^\\circ+120^\\circ=360^\\circ\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tessellat",
+              "note": "A tessellation covers a surface with no gaps or overlaps."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6ch17-17b-wc3e",
+          "type": "mc",
+          "stem": "Complete this sentence: in a tessellation the angles about a point sum to ________ degrees.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,155.0 102.4,182.5 54.7,155.0 54.7,100.0 102.4,72.5 150.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"197.6,72.5 150.0,100.0 102.4,72.5 102.4,17.5 150.0,-10.0 197.6,17.5\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"245.3,155.0 197.6,182.5 150.0,155.0 150.0,100.0 197.6,72.5 245.3,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"150\" cy=\"100\" r=\"3.5\" fill=\"#111\"/></svg>"
+          },
+          "options": [
+            "720",
+            "360",
+            "180",
+            "90"
+          ],
+          "answer": 1,
+          "hint": "Think of a full turn around the point.",
+          "steps": [
+            {
+              "explain": "In a tessellation the shapes fit around a point with no gaps and no overlaps.",
+              "work": ""
+            },
+            {
+              "explain": "So the angles around the point fill a complete turn.",
+              "work": "\\(\\text{full turn}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 220\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"150.0,155.0 102.4,182.5 54.7,155.0 54.7,100.0 102.4,72.5 150.0,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"197.6,72.5 150.0,100.0 102.4,72.5 102.4,17.5 150.0,-10.0 197.6,17.5\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><polygon points=\"245.3,155.0 197.6,182.5 150.0,155.0 150.0,100.0 197.6,72.5 245.3,100.0\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M150,100 L150.0,124.0 A24,24 0 0 1 129.2,88.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.45\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"115.4\" y=\"124.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><path d=\"M150,100 L129.2,88.0 A24,24 0 0 1 170.8,88.0 Z\" fill=\"#047857\" fill-opacity=\"0.45\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"150.0\" y=\"64.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><path d=\"M150,100 L170.8,88.0 A24,24 0 0 1 150.0,124.0 Z\" fill=\"#d97706\" fill-opacity=\"0.45\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"184.6\" y=\"124.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><circle cx=\"150\" cy=\"100\" r=\"3.5\" fill=\"#111\"/></svg>"
+              }
+            },
+            {
+              "explain": "A full turn is 360°.",
+              "work": "\\(360^\\circ\\)"
+            },
+            {
+              "explain": "Why the other answers are wrong: they describe a different movement or count the lines of symmetry wrongly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tessellat",
+              "note": "A tessellation covers a surface with no gaps or overlaps."
+            },
+            {
+              "text": "angles about a point",
+              "note": "Angles about a point add up to 360 degrees."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "ICE-EM Mathematics Year 6 (3rd ed.) Chapter 17: Symmetry and transformation",
+            "school": "ICE-EM Mathematics (Cambridge University Press)",
+            "grade": "6",
+            "origin": "teacher"
+          }
         }
       ]
     }
