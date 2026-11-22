@@ -223,6 +223,14 @@ that were not between the two segments; `wghs2015-y10`/`abbotsleigh2024` figures
   extra lines you draw (tangents, AB, highlights) as obstacles. Then render and look at every figure before committing.
 - `width="100%"` + `style="max-width:Npx"`, text with a white halo, no label overlapping a line or another label.
 
+## Test papers (시험지) — standard Secret Study format (2026-11-22)
+
+When the user asks for a test paper for any year ("Y8 시험지 만들어줘"), follow
+`.agents/skills/sapere-test-paper/SKILL.md` and build with `tools/test-paper/build.py`. Standing
+format, never needs to be repeated: two papers (A = real bank questions, B = a little harder) + answer
+keys, 60 min, 10 MC + 40 written parts, cover page with the Secret Study logo, questions from page 2,
+ruled working space. Only content students have learned, natural wording, every answer re-computed.
+
 ## Question DNA reasoning-blueprint authoring
 
 See the `sapere-question-dna` skill (`.agents/skills/sapere-question-dna/SKILL.md`)
