@@ -2425,6 +2425,86 @@
               "work": "\\(\\text{Answer: } 1\\dfrac{4}{5}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-pf-3-th-rev3-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(1\\dfrac{3}{4}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{5}{4}\\)",
+            "\\(\\dfrac{7}{4}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{13}{4}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply whole number × denominator, add the numerator, and keep the denominator the same.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number by the denominator.",
+              "work": "\\((1 \\times 4) + 3 = 7 \\)"
+            },
+            {
+              "explain": "Add the numerator and place over the same denominator.",
+              "work": "\\((1 \\times 4) + 3 = 7 \\Rightarrow \\dfrac{7}{4}\\)"
+            },
+            {
+              "explain": "Verify by converting back to a mixed number.",
+              "work": "\\(\\text{Verified: } (1 \\times 4) + 3 = 7 \\Rightarrow \\dfrac{7}{4}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{7}{4}\\).",
+              "work": "\\((1 \\times 4) + 3 = 7 \\Rightarrow \\dfrac{7}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th-rev3-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(2\\dfrac{2}{3}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{6}{3}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(\\dfrac{8}{3}\\)",
+            "\\(\\dfrac{9}{3}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply whole number × denominator, add the numerator, and keep the denominator the same.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number by the denominator.",
+              "work": "\\((2 \\times 3) + 2 = 8 \\)"
+            },
+            {
+              "explain": "Add the numerator and place over the same denominator.",
+              "work": "\\((2 \\times 3) + 2 = 8 \\Rightarrow \\dfrac{8}{3}\\)"
+            },
+            {
+              "explain": "Verify by converting back to a mixed number.",
+              "work": "\\(\\text{Verified: } (2 \\times 3) + 2 = 8 \\Rightarrow \\dfrac{8}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{8}{3}\\).",
+              "work": "\\((2 \\times 3) + 2 = 8 \\Rightarrow \\dfrac{8}{3}\\)"
+            }
+          ]
         }
       ]
     },

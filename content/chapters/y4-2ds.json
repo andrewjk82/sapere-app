@@ -829,7 +829,94 @@
       "topicId": "y4-2ds-2",
       "code": "MA2-2DS-02",
       "title": "Symmetry and tessellation: Create symmetrical patterns and shapes; tessellate shapes",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-2ds-2-th24-p104-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The red dashed line is a vertical line of symmetry. In Row 1, the three left squares (from left to right) are Green, Red, Yellow. What colours must go in the three right squares of Row 1 (from left to right) to make the pattern symmetrical?",
+          "options": [
+            "Yellow, Red, Green",
+            "Green, Red, Yellow",
+            "Red, Yellow, Green",
+            "Yellow, Green, Red"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "A line of symmetry acts like a mirror! The square closest to the red line (Yellow) must reflect directly across to be closest to the red line on the right.",
+          "keyPoints": [
+            {
+              "text": "vertical line of symmetry",
+              "note": "Mirror reflection reverses the left-to-right order of colours."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at Row 1 on the left of the red symmetry line: moving outward from the line, the colours are Yellow, then Red, then Green.",
+              "work": "\\(\\text{Left of line: Green | Red | Yellow}\\)"
+            },
+            {
+              "explain": "Reflect each square across the red mirror line: the square immediately to the right of the line must match Yellow.",
+              "work": "\\(\\text{Nearest to line: Yellow} \\leftrightarrow \\text{Yellow}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 214\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"214\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"52\" y=\"16\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"16\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"16\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"16\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"16\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"16\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"42\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"42\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"42\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"42\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"42\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"42\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"68\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"68\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"68\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"68\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"68\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"68\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"94\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"94\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"94\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"94\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"94\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"94\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"120\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"120\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"120\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"120\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"120\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"120\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"146\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"146\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"146\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"146\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"146\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"146\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"178\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"5,3\"/><text x=\"130\" y=\"206\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Reflected right half: Row 1 is Yellow, Red, Green</text></svg>"
+              }
+            },
+            {
+              "explain": "Continue reflecting outward: next is Red, and the outermost right square is Green.",
+              "work": "\\(\\text{Right of line: Yellow | Red | Green}\\)"
+            },
+            {
+              "explain": "Therefore, Row 1 on the right must be coloured Yellow, Red, Green.",
+              "work": "\\(\\text{Answer: Yellow, Red, Green}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 192\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"192\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"52\" y=\"16\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"16\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"16\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"16\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"16\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"16\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"42\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"42\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"42\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"42\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"42\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"42\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"68\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"68\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"68\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"68\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"68\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"68\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"94\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"94\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"94\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"94\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"94\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"94\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"120\" width=\"26\" height=\"26\" fill=\"#f97316\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"120\" width=\"26\" height=\"26\" fill=\"#ef4444\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"120\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"120\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"120\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"120\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"52\" y=\"146\" width=\"26\" height=\"26\" fill=\"#fde047\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"146\" width=\"26\" height=\"26\" fill=\"#84cc16\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"104\" y=\"146\" width=\"26\" height=\"26\" fill=\"#38bdf8\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"130\" y=\"146\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"156\" y=\"146\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"182\" y=\"146\" width=\"26\" height=\"26\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"178\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"5,3\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-2ds-2-th24-p105-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the 4×4 Coloured Squares Puzzle, you use red, blue, green, and yellow tiles so that NO two tiles of the same colour share an edge (touch horizontally or vertically). If a square touches a Red tile on its left, a Blue tile above it, and a Green tile on its right, what colour MUST that square be?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Eliminate the three colours already touching that square (Red, Blue, Green). Only one colour from the four remains!",
+          "keyPoints": [
+            {
+              "text": "NO two tiles of the same colour share an edge",
+              "note": "Check all neighbouring squares to eliminate forbidden colours."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the four available tile colours: Red, Blue, Green, and Yellow.",
+              "work": "\\(\\text{Available: Red, Blue, Green, Yellow}\\)"
+            },
+            {
+              "explain": "Eliminate the colours of the three touching neighbours: Red (left), Blue (above), and Green (right).",
+              "work": "\\(\\text{Forbidden: Red, Blue, Green}\\)"
+            },
+            {
+              "explain": "The only remaining legal colour is Yellow.",
+              "work": "\\(\\text{Remaining colour} = \\text{Yellow}\\)"
+            },
+            {
+              "explain": "Therefore, the square MUST be coloured Yellow.",
+              "work": "\\(\\text{Answer: Yellow}\\)"
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y4-2ds-3",
@@ -1418,7 +1505,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 162\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"44,96 64,62 84,96\" fill=\"#84cc16\" stroke=\"#3f6212\" stroke-width=\"1.6\"/><polygon points=\"200,24 180,58.6 220,58.6\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"180,58.6 160,93.2 200,93.2\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"180,58.6 220,58.6 200,93.2\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"220,58.6 200,93.2 240,93.2\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"180,93.2 220,93.2 200,127.80000000000001\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"200,24 240,93.2 220,93.2 200,127.80000000000001 180,93.2 160,93.2\" fill=\"none\" stroke=\"#3f6212\" stroke-width=\"2.2\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 162\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"44,96 64,62 84,96\" fill=\"#84cc16\" stroke=\"#3f6212\" stroke-width=\"1.6\"/><polygon points=\"200,24 240,93.2 220,93.2 200,127.80000000000001 180,93.2 160,93.2\" fill=\"#dcfce7\" stroke=\"#3f6212\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></svg>"
           }
         },
         {
@@ -1510,7 +1597,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 162\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"52,58 76,58 66,104 42,104\" fill=\"#84cc16\" stroke=\"#3f6212\" stroke-width=\"1.6\"/><polygon points=\"174,36 198,36 188,82 164,82\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"198,36 222,36 212,82 188,82\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"164,82 188,82 178,128 154,128\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"174,36 222,36 212,82 188,82 178,128 154,128\" fill=\"none\" stroke=\"#3f6212\" stroke-width=\"2.2\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 162\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"52,58 76,58 66,104 42,104\" fill=\"#84cc16\" stroke=\"#3f6212\" stroke-width=\"1.6\"/><polygon points=\"174,36 222,36 212,82 188,82 178,128 154,128\" fill=\"#dcfce7\" stroke=\"#3f6212\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></svg>"
           }
         },
         {
@@ -1556,7 +1643,7 @@
             }
           ],
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 162\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"44,56 44,94 82,94\" fill=\"#84cc16\" stroke=\"#3f6212\" stroke-width=\"1.6\"/><polygon points=\"148,36 186,36 186,74\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"186,36 224,36 186,74\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"224,36 224,74 186,74\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"224,36 262,74 224,74\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"186,74 224,74 186,112\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"224,74 224,112 186,112\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"0.8\"/><polygon points=\"148,36 224,36 262,74 224,74 224,112 186,112 186,74\" fill=\"none\" stroke=\"#3f6212\" stroke-width=\"2.2\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 162\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"44,56 44,94 82,94\" fill=\"#84cc16\" stroke=\"#3f6212\" stroke-width=\"1.6\"/><polygon points=\"148,36 224,36 262,74 224,74 224,112 186,112 186,74\" fill=\"#dcfce7\" stroke=\"#3f6212\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></svg>"
           }
         },
         {

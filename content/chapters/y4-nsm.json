@@ -3484,6 +3484,486 @@
               "work": "\\(\\text{New mass} = 1955\\text{ kg}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-nsm-1-th22-p97-ps1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The temperature in Sydney is \\(25^\\circ\\text{C}\\). Brisbane is \\(6\\) degrees warmer than Sydney, and Melbourne is \\(8\\) degrees cooler than Brisbane. What are the temperatures in Brisbane and Melbourne?",
+          "options": [
+            "Brisbane 31 °C, Melbourne 23 °C",
+            "Brisbane 31 °C, Melbourne 17 °C",
+            "Brisbane 19 °C, Melbourne 27 °C",
+            "Brisbane 30 °C, Melbourne 22 °C"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "\"Warmer\" means add; \"cooler / turned down / reduced / difference\" means subtract.",
+          "keyPoints": [
+            {
+              "text": "The temperature in Sydney",
+              "note": "Translate warmer (+) or cooler/difference (−) into a number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting temperature and whether it increases (+) or decreases (−).",
+              "work": "\\(25 + 6 = 31^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtraction carefully.",
+              "work": "\\(25 + 6 = 31^\\circ\\text{C}, \\quad 31 - 8 = 23^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Check by using the inverse operation.",
+              "work": "\\(\\text{Verified: } 25 + 6 = 31^\\circ\\text{C}, \\quad 31 - 8 = 23^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Brisbane 31 °C, Melbourne 23 °C.",
+              "work": "\\(\\text{Answer: Brisbane 31 °C, Melbourne 23 °C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th22-p97-ps2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The weather for Saturday was predicted to be \\(18^\\circ\\text{C}\\). It turned out to be \\(7\\) degrees warmer on the day. What was the actual temperature on Saturday?",
+          "options": [
+            "11 °C",
+            "24 °C",
+            "25 °C",
+            "26 °C"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "\"Warmer\" means add; \"cooler / turned down / reduced / difference\" means subtract.",
+          "keyPoints": [
+            {
+              "text": "The weather for Saturday",
+              "note": "Translate warmer (+) or cooler/difference (−) into a number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting temperature and whether it increases (+) or decreases (−).",
+              "work": "\\(18 + 7 = 25^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtraction carefully.",
+              "work": "\\(18 + 7 = 25^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Check by using the inverse operation.",
+              "work": "\\(\\text{Verified: } 18 + 7 = 25^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 25 °C.",
+              "work": "\\(\\text{Answer: 25 °C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th22-p97-ps3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Mum baked a cake at \\(180^\\circ\\text{C}\\). Just before it was cooked, she turned the oven down by \\(60\\) degrees. What was the new oven temperature?",
+          "options": [
+            "110 °C",
+            "120 °C",
+            "140 °C",
+            "240 °C"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "\"Warmer\" means add; \"cooler / turned down / reduced / difference\" means subtract.",
+          "keyPoints": [
+            {
+              "text": "Mum baked a cake",
+              "note": "Translate warmer (+) or cooler/difference (−) into a number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting temperature and whether it increases (+) or decreases (−).",
+              "work": "\\(180 - 60 = 120^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtraction carefully.",
+              "work": "\\(180 - 60 = 120^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Check by using the inverse operation.",
+              "work": "\\(\\text{Verified: } 180 - 60 = 120^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 120 °C.",
+              "work": "\\(\\text{Answer: 120 °C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th22-p97-ps4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The lowest temperature overnight was \\(9^\\circ\\text{C}\\). During the day, the temperature peaked at \\(26^\\circ\\text{C}\\). By how many degrees did the temperature rise during the day?",
+          "options": [
+            "15 °C",
+            "16 °C",
+            "17 °C",
+            "35 °C"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "\"Warmer\" means add; \"cooler / turned down / reduced / difference\" means subtract.",
+          "keyPoints": [
+            {
+              "text": "The lowest temperature overnight",
+              "note": "Translate warmer (+) or cooler/difference (−) into a number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting temperature and whether it increases (+) or decreases (−).",
+              "work": "\\(26 - 9 = 17^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtraction carefully.",
+              "work": "\\(26 - 9 = 17^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Check by using the inverse operation.",
+              "work": "\\(\\text{Verified: } 26 - 9 = 17^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 17 °C.",
+              "work": "\\(\\text{Answer: 17 °C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th22-p97-ps5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The weather for Sunday was predicted to be \\(24^\\circ\\text{C}\\), but a cool change reduced the maximum by \\(9^\\circ\\text{C}\\). What was the actual temperature on Sunday?",
+          "options": [
+            "14 °C",
+            "15 °C",
+            "16 °C",
+            "33 °C"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "\"Warmer\" means add; \"cooler / turned down / reduced / difference\" means subtract.",
+          "keyPoints": [
+            {
+              "text": "The weather for Sunday",
+              "note": "Translate warmer (+) or cooler/difference (−) into a number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting temperature and whether it increases (+) or decreases (−).",
+              "work": "\\(24 - 9 = 15^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtraction carefully.",
+              "work": "\\(24 - 9 = 15^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Check by using the inverse operation.",
+              "work": "\\(\\text{Verified: } 24 - 9 = 15^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 15 °C.",
+              "work": "\\(\\text{Answer: 15 °C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th22-p97-ps6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "When Tracy left Sydney, the temperature was \\(29^\\circ\\text{C}\\). When she arrived in London, the temperature was only \\(8^\\circ\\text{C}\\). What was the difference in temperature between Sydney and London?",
+          "options": [
+            "19 °C",
+            "21 °C",
+            "22 °C",
+            "37 °C"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "\"Warmer\" means add; \"cooler / turned down / reduced / difference\" means subtract.",
+          "keyPoints": [
+            {
+              "text": "When Tracy left Sydney,",
+              "note": "Translate warmer (+) or cooler/difference (−) into a number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting temperature and whether it increases (+) or decreases (−).",
+              "work": "\\(29 - 8 = 21^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtraction carefully.",
+              "work": "\\(29 - 8 = 21^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Check by using the inverse operation.",
+              "work": "\\(\\text{Verified: } 29 - 8 = 21^\\circ\\text{C}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 21 °C.",
+              "work": "\\(\\text{Answer: 21 °C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th-rev3-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this mass measurement: \\(1300\\text{ g} = \\square\\text{ kg}\\).",
+          "options": [
+            "1.3 kg",
+            "13 kg",
+            "0.13 kg",
+            "1.03 kg"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 1 kg = 1000 g (shift the decimal point 3 places).",
+          "keyPoints": [
+            {
+              "text": "Convert this mass",
+              "note": "1000 g = 1 kg."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall 1 kg = 1000 g.",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Multiply or divide by 1000.",
+              "work": "\\(1300 \\div 1000 = 1.3\\text{ kg}\\)"
+            },
+            {
+              "explain": "Check by converting back.",
+              "work": "\\(\\text{Verified: } 1300 \\div 1000 = 1.3\\text{ kg}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1.3 kg.",
+              "work": "\\(\\text{Answer: 1.3 kg}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th-rev3-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this mass measurement: \\(2500\\text{ g} = \\square\\text{ kg}\\).",
+          "options": [
+            "0.25 kg",
+            "2.5 kg",
+            "25 kg",
+            "2.05 kg"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 1 kg = 1000 g (shift the decimal point 3 places).",
+          "keyPoints": [
+            {
+              "text": "Convert this mass",
+              "note": "1000 g = 1 kg."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall 1 kg = 1000 g.",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Multiply or divide by 1000.",
+              "work": "\\(2500 \\div 1000 = 2.5\\text{ kg}\\)"
+            },
+            {
+              "explain": "Check by converting back.",
+              "work": "\\(\\text{Verified: } 2500 \\div 1000 = 2.5\\text{ kg}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2.5 kg.",
+              "work": "\\(\\text{Answer: 2.5 kg}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th-rev3-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this mass measurement: \\(3300\\text{ g} = \\square\\text{ kg}\\).",
+          "options": [
+            "0.33 kg",
+            "3.03 kg",
+            "3.3 kg",
+            "33 kg"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 1 kg = 1000 g (shift the decimal point 3 places).",
+          "keyPoints": [
+            {
+              "text": "Convert this mass",
+              "note": "1000 g = 1 kg."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall 1 kg = 1000 g.",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Multiply or divide by 1000.",
+              "work": "\\(3300 \\div 1000 = 3.3\\text{ kg}\\)"
+            },
+            {
+              "explain": "Check by converting back.",
+              "work": "\\(\\text{Verified: } 3300 \\div 1000 = 3.3\\text{ kg}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 3.3 kg.",
+              "work": "\\(\\text{Answer: 3.3 kg}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th-rev3-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this mass measurement: \\(2.8\\text{ kg} = \\square\\text{ g}\\).",
+          "options": [
+            "280 g",
+            "2080 g",
+            "2800 g",
+            "28 000 g"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 1 kg = 1000 g (shift the decimal point 3 places).",
+          "keyPoints": [
+            {
+              "text": "Convert this mass",
+              "note": "1000 g = 1 kg."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall 1 kg = 1000 g.",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Multiply or divide by 1000.",
+              "work": "\\(2.8 \\times 1000 = 2800\\text{ g}\\)"
+            },
+            {
+              "explain": "Check by converting back.",
+              "work": "\\(\\text{Verified: } 2.8 \\times 1000 = 2800\\text{ g}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2800 g.",
+              "work": "\\(\\text{Answer: 2800 g}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th-rev3-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this mass measurement: \\(5.5\\text{ kg} = \\square\\text{ g}\\).",
+          "options": [
+            "550 g",
+            "5050 g",
+            "5500 g",
+            "55 000 g"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 1 kg = 1000 g (shift the decimal point 3 places).",
+          "keyPoints": [
+            {
+              "text": "Convert this mass",
+              "note": "1000 g = 1 kg."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall 1 kg = 1000 g.",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Multiply or divide by 1000.",
+              "work": "\\(5.5 \\times 1000 = 5500\\text{ g}\\)"
+            },
+            {
+              "explain": "Check by converting back.",
+              "work": "\\(\\text{Verified: } 5.5 \\times 1000 = 5500\\text{ g}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 5500 g.",
+              "work": "\\(\\text{Answer: 5500 g}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-1-th-rev3-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this mass measurement: \\(1.4\\text{ kg} = \\square\\text{ g}\\).",
+          "options": [
+            "140 g",
+            "1040 g",
+            "1400 g",
+            "14 000 g"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 1 kg = 1000 g (shift the decimal point 3 places).",
+          "keyPoints": [
+            {
+              "text": "Convert this mass",
+              "note": "1000 g = 1 kg."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall 1 kg = 1000 g.",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Multiply or divide by 1000.",
+              "work": "\\(1.4 \\times 1000 = 1400\\text{ g}\\)"
+            },
+            {
+              "explain": "Check by converting back.",
+              "work": "\\(\\text{Verified: } 1.4 \\times 1000 = 1400\\text{ g}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1400 g.",
+              "work": "\\(\\text{Answer: 1400 g}\\)"
+            }
+          ]
         }
       ]
     },
@@ -7255,6 +7735,512 @@
               "work": "\\(\\text{Answer: 1st: Feed cat (8:30 am), 2nd: Walk dog (9:00 am)}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-nsm-4-th26-p116-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the Springtown bus timetable to answer: You catch the bus at Springtown at \\(2:50\\text{ pm}\\). What time do you arrive at the bus station?",
+          "options": [
+            "3:15 pm",
+            "3:20 pm",
+            "3:25 pm",
+            "3:35 pm"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(2:50\\text{ pm} \\to 3:25\\text{ pm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">2:50 pm bus arrives at 3:25 pm</text></svg>"
+              }
+            },
+            {
+              "explain": "2:50 pm bus arrives at 3:25 pm.",
+              "work": "\\(2:50\\text{ pm} \\to 3:25\\text{ pm}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 3:25 pm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 3:25 pm.",
+              "work": "\\(\\text{Answer: 3:25 pm}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p116-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the Springtown bus timetable to answer: You need to be at the bus station by \\(10:30\\text{ am}\\). Which bus should you catch at Springtown?",
+          "options": [
+            "8:10 am",
+            "9:30 am",
+            "10:50 am",
+            "12:10 pm"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(9:30\\text{ am} \\to 10:05\\text{ am} < 10:30\\text{ am}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">9:30 am bus arrives at 10:05 am (before 10:30 am)</text></svg>"
+              }
+            },
+            {
+              "explain": "9:30 am bus arrives at 10:05 am (before 10:30 am).",
+              "work": "\\(9:30\\text{ am} \\to 10:05\\text{ am} < 10:30\\text{ am}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 9:30 am}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 9:30 am.",
+              "work": "\\(\\text{Answer: 9:30 am}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p116-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the Springtown bus timetable to answer: How long does the journey take from Springtown to the bus station?",
+          "options": [
+            "25 minutes",
+            "30 minutes",
+            "35 minutes",
+            "45 minutes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(8:45 - 8:10 = 35\\text{ minutes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">8:10 am to 8:45 am = 35 minutes</text></svg>"
+              }
+            },
+            {
+              "explain": "8:10 am to 8:45 am = 35 minutes.",
+              "work": "\\(8:45 - 8:10 = 35\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 35 minutes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 35 minutes.",
+              "work": "\\(\\text{Answer: 35 minutes}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the Springtown bus timetable to answer: How long is there between one bus and the next?",
+          "options": [
+            "1 hour 10 minutes",
+            "1 hour 15 minutes",
+            "1 hour 20 minutes",
+            "1 hour 30 minutes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(8:10 \\to 9:30 = 1\\text{ hr } 20\\text{ min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">8:10 am to 9:30 am = 1 hr 20 min</text></svg>"
+              }
+            },
+            {
+              "explain": "8:10 am to 9:30 am = 1 hr 20 min.",
+              "work": "\\(8:10 \\to 9:30 = 1\\text{ hr } 20\\text{ min}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 1 hour 20 minutes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1 hour 20 minutes.",
+              "work": "\\(\\text{Answer: 1 hour 20 minutes}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the Springtown bus timetable to answer: The \\(2:50\\text{ pm}\\) bus is \\(5\\) minutes late. What time will it arrive at the bus station?",
+          "options": [
+            "3:20 pm",
+            "3:25 pm",
+            "3:30 pm",
+            "3:35 pm"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(3:25\\text{ pm} + 5\\text{ min} = 3:30\\text{ pm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Usual 3:25 pm + 5 min late = 3:30 pm</text></svg>"
+              }
+            },
+            {
+              "explain": "Usual 3:25 pm + 5 min late = 3:30 pm.",
+              "work": "\\(3:25\\text{ pm} + 5\\text{ min} = 3:30\\text{ pm}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 3:30 pm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 3:30 pm.",
+              "work": "\\(\\text{Answer: 3:30 pm}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the Springtown bus timetable to answer: You arrive at the Springtown bus stop at \\(11:45\\text{ am}\\). How long will you have to wait for the next bus?",
+          "options": [
+            "15 minutes",
+            "25 minutes",
+            "35 minutes",
+            "45 minutes"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(11:45 \\to 12:00\\text{ (15 min)} + 10\\text{ min} = 25\\text{ min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Next bus is 12:10 pm -> 15 min + 10 min = 25 min wait</text></svg>"
+              }
+            },
+            {
+              "explain": "Next bus is 12:10 pm -> 15 min + 10 min = 25 min wait.",
+              "work": "\\(11:45 \\to 12:00\\text{ (15 min)} + 10\\text{ min} = 25\\text{ min}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 25 minutes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 25 minutes.",
+              "work": "\\(\\text{Answer: 25 minutes}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The bus journey takes \\(35\\) minutes each way. If a bus departs the bus station at \\(8:50\\text{ am}\\), what time will it arrive back at Springtown?",
+          "options": [
+            "9:15 am",
+            "9:20 am",
+            "9:25 am",
+            "9:35 am"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "bus",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(8:50 + 10\\text{ min} = 9:00\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">8:50 am + 35 min = 9:25 am</text></svg>"
+              }
+            },
+            {
+              "explain": "8:50 am + 35 min = 9:25 am.",
+              "work": "\\(8:50 + 10\\text{ min} = 9:00, \\quad 9:00 + 25\\text{ min} = 9:25\\text{ am}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 9:25 am}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 9:25 am.",
+              "work": "\\(\\text{Answer: 9:25 am}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:10 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:45 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:30 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:05 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:50 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:25 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:10 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:45 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:30 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:05 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:50 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:25 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:10 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:45 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The bus company shifted every bus 10 minutes later (new timetable shown). The \\(1:40\\text{ pm}\\) bus is \\(10\\) minutes late. What time will it arrive at the bus station?",
+          "options": [
+            "2:15 pm",
+            "2:25 pm",
+            "2:35 pm",
+            "2:05 pm"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(2:15\\text{ pm} + 10\\text{ min} = 2:25\\text{ pm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Scheduled 2:15 pm + 10 min late = 2:25 pm</text></svg>"
+              }
+            },
+            {
+              "explain": "Scheduled 2:15 pm + 10 min late = 2:25 pm.",
+              "work": "\\(2:15\\text{ pm} + 10\\text{ min} = 2:25\\text{ pm}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 2:25 pm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2:25 pm.",
+              "work": "\\(\\text{Answer: 2:25 pm}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the altered bus timetable, you arrive at Springtown bus stop at \\(2:20\\text{ pm}\\). How long will you need to wait for the next bus?",
+          "options": [
+            "20 minutes",
+            "30 minutes",
+            "40 minutes",
+            "50 minutes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(2:20\\text{ pm} \\to 3:00\\text{ pm} = 40\\text{ minutes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Next bus is 3:00 pm -> 60 - 20 = 40 min wait</text></svg>"
+              }
+            },
+            {
+              "explain": "Next bus is 3:00 pm -> 60 - 20 = 40 min wait.",
+              "work": "\\(2:20\\text{ pm} \\to 3:00\\text{ pm} = 40\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 40 minutes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 40 minutes.",
+              "work": "\\(\\text{Answer: 40 minutes}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the altered bus timetable, the \\(11:00\\text{ am}\\) bus broke down. How long will passengers have to wait for the next bus?",
+          "options": [
+            "1 hour 10 minutes",
+            "1 hour 20 minutes",
+            "1 hour 30 minutes",
+            "40 minutes"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(11:00\\text{ am} \\to 12:20\\text{ pm} = 1\\text{ hr } 20\\text{ min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">11:00 am to 12:20 pm = 1 hour 20 minutes</text></svg>"
+              }
+            },
+            {
+              "explain": "11:00 am to 12:20 pm = 1 hour 20 minutes.",
+              "work": "\\(11:00\\text{ am} \\to 12:20\\text{ pm} = 1\\text{ hr } 20\\text{ min}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 1 hour 20 minutes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1 hour 20 minutes.",
+              "work": "\\(\\text{Answer: 1 hour 20 minutes}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text></svg>"
+          }
+        },
+        {
+          "id": "y4-nsm-4-th26-p117-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the altered bus timetable, the \\(9:40\\text{ am}\\) bus was held up in traffic for \\(10\\) minutes. What time did it arrive at the bus station?",
+          "options": [
+            "10:05 am",
+            "10:15 am",
+            "10:25 am",
+            "10:35 am"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the matching bus row on the timetable (every journey takes 35 minutes and buses run every 1 hour 20 minutes).",
+          "keyPoints": [
+            {
+              "text": "timetable",
+              "note": "Read departure and arrival times from the same row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus row on the Springtown timetable.",
+              "work": "\\(10:15\\text{ am} + 10\\text{ min} = 10:25\\text{ am}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 228\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Scheduled 10:15 am + 10 min delay = 10:25 am</text></svg>"
+              }
+            },
+            {
+              "explain": "Scheduled 10:15 am + 10 min delay = 10:25 am.",
+              "work": "\\(10:15\\text{ am} + 10\\text{ min} = 10:25\\text{ am}\\)"
+            },
+            {
+              "explain": "Check by bridging across the nearest whole hour.",
+              "work": "\\(\\text{Verified: 10:25 am}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 10:25 am.",
+              "work": "\\(\\text{Answer: 10:25 am}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text></svg>"
+          }
         }
       ]
     }

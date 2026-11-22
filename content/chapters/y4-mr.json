@@ -1345,6 +1345,126 @@
               "work": "\\(8 \\times 10 = 80\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-1-th23-p101-ps1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On the \\(\\times 6\\) multiplication wheel, multiply the five spokes \\(7, 0, 2, 8,\\) and \\(5\\) by \\(6\\). What are the five answers in order?",
+          "options": [
+            "42, 0, 12, 48, 30",
+            "42, 6, 12, 48, 30",
+            "42, 0, 12, 46, 30",
+            "36, 0, 12, 48, 30"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply each number (7, 0, 2, 8, 5) by 6 — remember any number multiplied by 0 equals 0!",
+          "keyPoints": [
+            {
+              "text": "multiplication wheel",
+              "note": "Multiply each spoke by the centre number; anything × 0 = 0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the first two spokes: \\(7 \\times 6 = 42\\) and \\(0 \\times 6 = 0\\).",
+              "work": "\\(7 \\times 6 = 42, \\quad 0 \\times 6 = 0\\)"
+            },
+            {
+              "explain": "Multiply the next two spokes: \\(2 \\times 6 = 12\\) and \\(8 \\times 6 = 48\\).",
+              "work": "\\(2 \\times 6 = 12, \\quad 8 \\times 6 = 48\\)"
+            },
+            {
+              "explain": "Multiply the fifth spoke: \\(5 \\times 6 = 30\\).",
+              "work": "\\(5 \\times 6 = 30\\)"
+            },
+            {
+              "explain": "Write all five products in order: \\(42, 0, 12, 48, 30\\).",
+              "work": "\\(42, 0, 12, 48, 30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th23-p101-ps2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On the \\(\\times 7\\) multiplication wheel, multiply the five spokes \\(7, 0, 2, 8,\\) and \\(5\\) by \\(7\\). What are the five answers in order?",
+          "options": [
+            "49, 7, 14, 56, 35",
+            "49, 0, 14, 56, 35",
+            "49, 0, 14, 54, 35",
+            "42, 0, 14, 56, 35"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply each number (7, 0, 2, 8, 5) by 7 — remember any number multiplied by 0 equals 0!",
+          "keyPoints": [
+            {
+              "text": "multiplication wheel",
+              "note": "Multiply each spoke by the centre number; anything × 0 = 0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the first two spokes: \\(7 \\times 7 = 49\\) and \\(0 \\times 7 = 0\\).",
+              "work": "\\(7 \\times 7 = 49, \\quad 0 \\times 7 = 0\\)"
+            },
+            {
+              "explain": "Multiply the next two spokes: \\(2 \\times 7 = 14\\) and \\(8 \\times 7 = 56\\).",
+              "work": "\\(2 \\times 7 = 14, \\quad 8 \\times 7 = 56\\)"
+            },
+            {
+              "explain": "Multiply the fifth spoke: \\(5 \\times 7 = 35\\).",
+              "work": "\\(5 \\times 7 = 35\\)"
+            },
+            {
+              "explain": "Write all five products in order: \\(49, 0, 14, 56, 35\\).",
+              "work": "\\(49, 0, 14, 56, 35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th23-p101-ps3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On the \\(\\times 9\\) multiplication wheel, multiply the five spokes \\(7, 0, 2, 8,\\) and \\(5\\) by \\(9\\). What are the five answers in order?",
+          "options": [
+            "63, 9, 18, 72, 45",
+            "63, 0, 18, 74, 45",
+            "63, 0, 18, 72, 45",
+            "54, 0, 18, 72, 45"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply each number (7, 0, 2, 8, 5) by 9 — remember any number multiplied by 0 equals 0!",
+          "keyPoints": [
+            {
+              "text": "multiplication wheel",
+              "note": "Multiply each spoke by the centre number; anything × 0 = 0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the first two spokes: \\(7 \\times 9 = 63\\) and \\(0 \\times 9 = 0\\).",
+              "work": "\\(7 \\times 9 = 63, \\quad 0 \\times 9 = 0\\)"
+            },
+            {
+              "explain": "Multiply the next two spokes: \\(2 \\times 9 = 18\\) and \\(8 \\times 9 = 72\\).",
+              "work": "\\(2 \\times 9 = 18, \\quad 8 \\times 9 = 72\\)"
+            },
+            {
+              "explain": "Multiply the fifth spoke: \\(5 \\times 9 = 45\\).",
+              "work": "\\(5 \\times 9 = 45\\)"
+            },
+            {
+              "explain": "Write all five products in order: \\(63, 0, 18, 72, 45\\).",
+              "work": "\\(63, 0, 18, 72, 45\\)"
+            }
+          ]
         }
       ]
     },
@@ -1879,6 +1999,46 @@
             {
               "explain": "Therefore, double \\(458\\) is \\(916\\).",
               "work": "\\(\\text{Answer} = 916\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th-rev3-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate double \\(36\\) using the split method.",
+          "options": [
+            "62",
+            "72",
+            "76",
+            "82"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use place value (hundreds, tens, ones) to calculate mentally without errors.",
+          "keyPoints": [
+            {
+              "text": "Calculate double \\(36\\)",
+              "note": "Break the number into place-value parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the place-value calculation.",
+              "work": "\\((30 \\times 2) + (6 \\times 2) \\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\((30 \\times 2) + (6 \\times 2) = 60 + 12 = 72\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } (30 \\times 2) + (6 \\times 2) = 60 + 12 = 72\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 72.",
+              "work": "\\(\\text{Answer: 72}\\)"
             }
           ]
         }
@@ -4255,6 +4415,273 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 194\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"194\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><circle cx=\"110\" cy=\"96\" r=\"68\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"110\" cy=\"28\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"168.9\" cy=\"62\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"168.9\" cy=\"130\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"110\" cy=\"164\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"51.1\" cy=\"130\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"51.1\" cy=\"62\" r=\"4.5\" fill=\"#dc2626\"/></svg>"
           }
+        },
+        {
+          "id": "y4-mr-3-th23-p100-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On a 1 to 100 number square, which numbers are multiples of BOTH \\(8\\) and \\(10\\)?",
+          "options": [
+            "40 and 80",
+            "20, 40, 60, 80, 100",
+            "18, 40, 80",
+            "80 only"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "On a 10×10 hundred-square, each row has 10 numbers, so adding 10 moves straight DOWN one row (keeping the same ones digit)!",
+          "keyPoints": [
+            {
+              "text": "1 to 100 number square",
+              "note": "Adding 10 moves straight down in the same column."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the numbers in the pattern up to 100.",
+              "work": "\\(\\text{Multiples of 8 ending in 0: } 40 \\text{ and } 80\\)"
+            },
+            {
+              "explain": "Observe their positions on the 10-column hundred-square.",
+              "work": "\\(\\text{Matches: 40 and 80}\\)"
+            },
+            {
+              "explain": "Eliminate the three incorrect descriptions.",
+              "work": "\\(\\text{Other 3 options do not fit}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"40 and 80\".",
+              "work": "\\(\\text{Answer: 40 and 80}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-3-th23-p100-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On a 1 to 100 number square, if you start at \\(3\\) and count by tens (\\(3, 13, 23, \\dots\\)), what pattern do you see?",
+          "options": [
+            "A vertical column of numbers that all end in 3",
+            "A horizontal row of numbers",
+            "A diagonal line going down-right",
+            "All even numbers"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "On a 10×10 hundred-square, each row has 10 numbers, so adding 10 moves straight DOWN one row (keeping the same ones digit)!",
+          "keyPoints": [
+            {
+              "text": "1 to 100 number square",
+              "note": "Adding 10 moves straight down in the same column."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the numbers in the pattern up to 100.",
+              "work": "\\(3, 13, 23, 33, 43, 53, 63, 73, 83, 93\\)"
+            },
+            {
+              "explain": "Observe their positions on the 10-column hundred-square.",
+              "work": "\\(\\text{Matches: A vertical column of numbers that all end in 3}\\)"
+            },
+            {
+              "explain": "Eliminate the three incorrect descriptions.",
+              "work": "\\(\\text{Other 3 options do not fit}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"A vertical column of numbers that all end in 3\".",
+              "work": "\\(\\text{Answer: A vertical column of numbers that all end in 3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-3-th23-p100-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On a 1 to 100 number square, if you start at \\(7\\) and count by tens (\\(7, 17, 27, \\dots\\)), what pattern do you see?",
+          "options": [
+            "A horizontal row",
+            "A vertical column of numbers that all end in 7",
+            "A diagonal line going down-left",
+            "Multiples of 7"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "On a 10×10 hundred-square, each row has 10 numbers, so adding 10 moves straight DOWN one row (keeping the same ones digit)!",
+          "keyPoints": [
+            {
+              "text": "1 to 100 number square",
+              "note": "Adding 10 moves straight down in the same column."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the numbers in the pattern up to 100.",
+              "work": "\\(7, 17, 27, 37, 47, 57, 67, 77, 87, 97\\)"
+            },
+            {
+              "explain": "Observe their positions on the 10-column hundred-square.",
+              "work": "\\(\\text{Matches: A vertical column of numbers that all end in 7}\\)"
+            },
+            {
+              "explain": "Eliminate the three incorrect descriptions.",
+              "work": "\\(\\text{Other 3 options do not fit}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"A vertical column of numbers that all end in 7\".",
+              "work": "\\(\\text{Answer: A vertical column of numbers that all end in 7}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-3-th-rev3-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers in this pattern.",
+          "options": [
+            "1176, 1168, 1160",
+            "1178, 1170, 1162",
+            "1176, 1166, 1156",
+            "1174, 1166, 1158"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the constant jump (-8) and apply it three times.",
+          "keyPoints": [
+            {
+              "text": "next three numbers",
+              "note": "Apply -8 each step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each number changes by \\(-8\\).",
+              "work": "\\(\\text{Rule: } -8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1200</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1192</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1184</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: -8</text></svg>"
+              }
+            },
+            {
+              "explain": "First missing term: \\(1176\\).",
+              "work": "\\(1184 -8 = 1176\\)"
+            },
+            {
+              "explain": "Next two terms: \\(1168\\) and \\(1160\\).",
+              "work": "\\(1176, 1168, 1160\\)"
+            },
+            {
+              "explain": "Complete sequence: \\(1176, 1168, 1160\\).",
+              "work": "\\(1176, 1168, 1160\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1200</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1192</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1184</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1176</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1168</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1160</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete: 1176, 1168, 1160</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1200</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1192</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1184</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th-rev3-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers in this pattern.",
+          "options": [
+            "908, 917, 926 (rule +9)",
+            "907, 916, 925 (rule +9)",
+            "908, 918, 928 (rule +10)",
+            "909, 918, 927 (rule +9)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the constant jump (+9) and apply it three times.",
+          "keyPoints": [
+            {
+              "text": "next three numbers",
+              "note": "Apply +9 each step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each number changes by \\(+9\\).",
+              "work": "\\(\\text{Rule: } +9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">881</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">890</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">899</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +9</text></svg>"
+              }
+            },
+            {
+              "explain": "First missing term: \\(908\\).",
+              "work": "\\(899 +9 = 908\\)"
+            },
+            {
+              "explain": "Next two terms: \\(917\\) and \\(926\\).",
+              "work": "\\(908, 917, 926\\)"
+            },
+            {
+              "explain": "Complete sequence: \\(908, 917, 926\\).",
+              "work": "\\(908, 917, 926\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">881</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">890</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">899</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">908</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">917</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">926</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete: 908, 917, 926</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">881</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">890</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">899</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th-rev3-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers in this pattern.",
+          "options": [
+            "4985, 4980, 4975 (rule -5)",
+            "4980, 4970, 4960 (rule -10)",
+            "4985, 4975, 4965 (rule -5)",
+            "4995, 5000, 5005 (rule +5)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the constant jump (-5) and apply it three times.",
+          "keyPoints": [
+            {
+              "text": "next three numbers",
+              "note": "Apply -5 each step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Each number changes by \\(-5\\).",
+              "work": "\\(\\text{Rule: } -5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4995</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4990</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: -5</text></svg>"
+              }
+            },
+            {
+              "explain": "First missing term: \\(4985\\).",
+              "work": "\\(4990 -5 = 4985\\)"
+            },
+            {
+              "explain": "Next two terms: \\(4980\\) and \\(4975\\).",
+              "work": "\\(4985, 4980, 4975\\)"
+            },
+            {
+              "explain": "Complete sequence: \\(4985, 4980, 4975\\).",
+              "work": "\\(4985, 4980, 4975\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4995</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4990</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4985</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4980</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4975</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete: 4985, 4980, 4975</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4995</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4990</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
         }
       ]
     },
@@ -5728,6 +6155,46 @@
               "work": "\\(\\text{Answer} = 321\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-5-th-rev3-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate half of \\(482\\) using the split method.",
+          "options": [
+            "231",
+            "241",
+            "242",
+            "281"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use place value (hundreds, tens, ones) to calculate mentally without errors.",
+          "keyPoints": [
+            {
+              "text": "Calculate half of",
+              "note": "Break the number into place-value parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the place-value calculation.",
+              "work": "\\(200 + 40 + 1 \\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(200 + 40 + 1 = 241\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 200 + 40 + 1 = 241\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 241.",
+              "work": "\\(\\text{Answer: 241}\\)"
+            }
+          ]
         }
       ]
     },
@@ -6408,6 +6875,766 @@
             {
               "explain": "Check: \\(17 \\times 5 = 85\\). Therefore, there are 17 rows of chairs.",
               "work": "\\(85 \\div 5 = 17\\text{ rows}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many toy cars does Paul have if he has \\(6\\) times as many as Sam, who has \\(9\\) cars?",
+          "options": [
+            "45 cars",
+            "54 cars",
+            "56 cars",
+            "63 cars"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "How many toy cars",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(6 \\times 9 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(6 \\times 9 = 54\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 6 \\times 9 = 54\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 54 cars.",
+              "work": "\\(\\text{Answer: 54 cars}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ross sorted his \\(40\\) sports cards evenly into \\(5\\) containers. How many cards are in each container?",
+          "options": [
+            "6 cards",
+            "7 cards",
+            "8 cards",
+            "9 cards"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "Ross sorted his \\(40\\)",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(40 \\div 5 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(40 \\div 5 = 8\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 40 \\div 5 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 8 cards.",
+              "work": "\\(\\text{Answer: 8 cards}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There are \\(8\\) rows of chairs with \\(10\\) chairs in each row. How many chairs are there altogether?",
+          "options": [
+            "18 chairs",
+            "70 chairs",
+            "80 chairs",
+            "90 chairs"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "There are \\(8\\) rows",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(8 \\times 10 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(8 \\times 10 = 80\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 8 \\times 10 = 80\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 80 chairs.",
+              "work": "\\(\\text{Answer: 80 chairs}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Max bought \\(32\\) cupcakes for his birthday. He ate one-quarter of them. How many cupcakes did he eat?",
+          "options": [
+            "4 cupcakes",
+            "6 cupcakes",
+            "8 cupcakes",
+            "16 cupcakes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "Max bought \\(32\\) cupcakes",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(32 \\div 4 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(32 \\div 4 = 8\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 32 \\div 4 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 8 cupcakes.",
+              "work": "\\(\\text{Answer: 8 cupcakes}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Fifty horses trotted past the guard on duty. How many horse legs trotted past?",
+          "options": [
+            "100 legs",
+            "150 legs",
+            "200 legs",
+            "250 legs"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "Fifty horses trotted past",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(50 \\times 4 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(50 \\times 4 = 200\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 50 \\times 4 = 200\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 200 legs.",
+              "work": "\\(\\text{Answer: 200 legs}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Half of the \\(88\\) party balloons blew away. How many balloons were left?",
+          "options": [
+            "40 balloons",
+            "42 balloons",
+            "44 balloons",
+            "46 balloons"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "Half of the \\(88\\)",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(88 \\div 2 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(88 \\div 2 = 44\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 88 \\div 2 = 44\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 44 balloons.",
+              "work": "\\(\\text{Answer: 44 balloons}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many cousins does Jude have if she has \\(4\\) times as many as Sara, who has \\(9\\) cousins?",
+          "options": [
+            "27 cousins",
+            "32 cousins",
+            "36 cousins",
+            "40 cousins"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "How many cousins does",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(4 \\times 9 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(4 \\times 9 = 36\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 4 \\times 9 = 36\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 36 cousins.",
+              "work": "\\(\\text{Answer: 36 cousins}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th24-p104-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many sides are there in \\(8\\) squares altogether?",
+          "options": [
+            "24 sides",
+            "28 sides",
+            "32 sides",
+            "36 sides"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the matching multiplication or division sentence and solve it using known times-table facts.",
+          "keyPoints": [
+            {
+              "text": "How many sides are",
+              "note": "Translate the story into a multiplication or division equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the multiplication or division number sentence for the story.",
+              "work": "\\(8 \\times 4 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(8 \\times 4 = 32\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 8 \\times 4 = 32\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 32 sides.",
+              "work": "\\(\\text{Answer: 32 sides}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th-rev3-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many football cards does Ryan have if he has \\(10\\) times as many as Jack, who has \\(12\\) football cards?",
+          "options": [
+            "22 cards",
+            "102 cards",
+            "120 cards",
+            "1200 cards"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use place value (hundreds, tens, ones) to calculate mentally without errors.",
+          "keyPoints": [
+            {
+              "text": "How many football",
+              "note": "Break the number into place-value parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the place-value calculation.",
+              "work": "\\(10 \\times 12 \\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(10 \\times 12 = 120\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 10 \\times 12 = 120\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 120 cards.",
+              "work": "\\(\\text{Answer: 120 cards}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There are \\(8\\) rows of chairs in a hall with \\(9\\) chairs in each row. How many chairs are there altogether?",
+          "options": [
+            "63 chairs",
+            "72 chairs",
+            "81 chairs",
+            "17 chairs"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "There are \\(8\\) rows",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(8 \\times 9 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(8 \\times 9 = 72\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 8 \\times 9 = 72\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 72 chairs.",
+              "work": "\\(8 \\times 9 = 72\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Seven people shared \\(35\\) party pies equally. How many pies did they have each?",
+          "options": [
+            "4 pies",
+            "5 pies",
+            "6 pies",
+            "7 pies"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Seven people shared \\(35\\)",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(35 \\div 7 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(35 \\div 7 = 5\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 35 \\div 7 = 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 5 pies.",
+              "work": "\\(35 \\div 7 = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ten dogs had their toenails clipped. How many dog paws got clipped in total?",
+          "options": [
+            "20 paws",
+            "30 paws",
+            "40 paws",
+            "50 paws"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Ten dogs had their",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(10 \\times 4 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(10 \\times 4 = 40\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 10 \\times 4 = 40\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 40 paws.",
+              "work": "\\(10 \\times 4 = 40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Nine people each donated \\(\\$7\\) to a charity. How much money was donated altogether?",
+          "options": [
+            "\\(\\$56\\)",
+            "\\(\\$63\\)",
+            "\\(\\$72\\)",
+            "\\(\\$16\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Nine people each donated",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(9 \\times \\$7 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(9 \\times \\$7 = \\$63\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 9 \\times \\$7 = \\$63\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$63\\).",
+              "work": "\\(9 \\times \\$7 = \\$63\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Nine children equally shared \\(45\\) balloons. How many balloons did they each have?",
+          "options": [
+            "4 balloons",
+            "5 balloons",
+            "6 balloons",
+            "9 balloons"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Nine children equally shared",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(45 \\div 9 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(45 \\div 9 = 5\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 45 \\div 9 = 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 5 balloons.",
+              "work": "\\(45 \\div 9 = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Six cooks each baked \\(9\\) cupcakes. How many cupcakes were baked in total?",
+          "options": [
+            "45 cupcakes",
+            "48 cupcakes",
+            "54 cupcakes",
+            "63 cupcakes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Six cooks each baked",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(6 \\times 9 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(6 \\times 9 = 54\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 6 \\times 9 = 54\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 54 cupcakes.",
+              "work": "\\(6 \\times 9 = 54\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A monster with \\(8\\) hands grabbed \\(4\\) children in each hand. How many children did the monster grab?",
+          "options": [
+            "12 children",
+            "28 children",
+            "32 children",
+            "36 children"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "A monster with \\(8\\)",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(8 \\times 4 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(8 \\times 4 = 32\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 8 \\times 4 = 32\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 32 children.",
+              "work": "\\(8 \\times 4 = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A centipede has \\(9\\) pairs of legs. How many legs does it have altogether?",
+          "options": [
+            "11 legs",
+            "16 legs",
+            "18 legs",
+            "20 legs"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "A centipede has \\(9\\)",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(9 \\times 2 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(9 \\times 2 = 18\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 9 \\times 2 = 18\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 18 legs.",
+              "work": "\\(9 \\times 2 = 18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Max had double the number of marbles as Hal, who had \\(9\\) marbles. Max then bought five more. How many marbles did Max have in total?",
+          "options": [
+            "16 marbles",
+            "18 marbles",
+            "23 marbles",
+            "28 marbles"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Max had double the",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\((2 \\times 9) + 5 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\((2 \\times 9) + 5 = 18 + 5 = 23\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } (2 \\times 9) + 5 = 18 + 5 = 23\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 23 marbles.",
+              "work": "\\((2 \\times 9) + 5 = 18 + 5 = 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th26-p116-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ten people shared \\(100\\) pizza slices equally. How many slices did they have each?",
+          "options": [
+            "5 slices",
+            "10 slices",
+            "15 slices",
+            "20 slices"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Write the multiplication or division number sentence (watch out for 2-step clues like \"double\" then \"five more\").",
+          "keyPoints": [
+            {
+              "text": "Ten people shared \\(100\\)",
+              "note": "Translate the story into a clear number sentence."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the number sentence for the word problem.",
+              "work": "\\(100 \\div 10 \\)"
+            },
+            {
+              "explain": "Calculate the exact answer.",
+              "work": "\\(100 \\div 10 = 10\\)"
+            },
+            {
+              "explain": "Check your arithmetic using the inverse operation.",
+              "work": "\\(\\text{Verified: } 100 \\div 10 = 10\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 10 slices.",
+              "work": "\\(100 \\div 10 = 10\\)"
             }
           ]
         }

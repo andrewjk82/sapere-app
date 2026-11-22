@@ -2925,6 +2925,446 @@
               "work": "\\(\\$2820 + \\$100 = \\$2920\\)"
             }
           ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the pet shop, a dog lead costs \\(\\$3.55\\). How much change from \\(\\$5.00\\) do you receive if you buy one lead?",
+          "options": [
+            "\\(\\$1.35\\)",
+            "\\(\\$1.45\\)",
+            "\\(\\$1.55\\)",
+            "\\(\\$2.45\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "At the pet shop,",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$5.00 - \\$3.55 = \\$1.45\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$5.00 - \\$3.55 = \\$1.45\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$5.00 - \\$3.55 = \\$1.45\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$1.45\\).",
+              "work": "\\(\\$5.00 - \\$3.55 = \\$1.45\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the pet shop, flea spray costs \\(\\$5.64\\). Rounded to the nearest \\(5\\) cents, how much change from \\(\\$10.00\\) do you receive if you buy flea spray?",
+          "options": [
+            "\\(\\$4.30\\)",
+            "\\(\\$4.35\\)",
+            "\\(\\$4.40\\)",
+            "\\(\\$5.35\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "At the pet shop,",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$5.64 \\to \\$5.65\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$5.64 \\to \\$5.65, \\quad \\$10.00 - \\$5.65 = \\$4.35\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$5.64 \\to \\$5.65, \\quad \\$10.00 - \\$5.65 = \\$4.35\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$4.35\\).",
+              "work": "\\(\\$5.64 \\to \\$5.65, \\quad \\$10.00 - \\$5.65 = \\$4.35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the pet shop, a ball costs \\(\\$2.49\\) and dog biscuits cost \\(\\$0.15\\) each. Rounded to the nearest \\(5\\) cents, how much change from \\(\\$5.00\\) do you receive if you buy a ball and two dog biscuits?",
+          "options": [
+            "\\(\\$2.15\\)",
+            "\\(\\$2.20\\)",
+            "\\(\\$2.25\\)",
+            "\\(\\$2.35\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "At the pet shop,",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$2.49 + \\$0.30 = \\$2.79 \\to \\$2.80\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$2.49 + \\$0.30 = \\$2.79 \\to \\$2.80, \\quad \\$5.00 - \\$2.80 = \\$2.20\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$2.49 + \\$0.30 = \\$2.79 \\to \\$2.80, \\quad \\$5.00 - \\$2.80 = \\$2.20\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$2.20\\).",
+              "work": "\\(\\$2.49 + \\$0.30 = \\$2.79 \\to \\$2.80, \\quad \\$5.00 - \\$2.80 = \\$2.20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the pet shop, a dog bowl costs \\(\\$8.98\\) and a pet carrier costs \\(\\$19.99\\). What is the total cost of a dog bowl and a pet carrier (rounded to the nearest \\(5\\) cents)?",
+          "options": [
+            "\\(\\$28.90\\)",
+            "\\(\\$28.95\\)",
+            "\\(\\$29.00\\)",
+            "\\(\\$27.95\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "At the pet shop,",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$8.98 + \\$19.99 = \\$28.97 \\to \\$28.95\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$8.98 + \\$19.99 = \\$28.97 \\to \\$28.95\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$8.98 + \\$19.99 = \\$28.97 \\to \\$28.95\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$28.95\\).",
+              "work": "\\(\\$8.98 + \\$19.99 = \\$28.97 \\to \\$28.95\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the pet shop: dog bowl \\(\\$8.98\\), pet carrier \\(\\$19.99\\), bird cage \\(\\$18.89\\), hamster wheel \\(\\$6.09\\), lead \\(\\$3.55\\), ball \\(\\$2.49\\), flea spray \\(\\$5.64\\). Which two items cost \\(\\$25.00\\) altogether (rounded to the nearest \\(5\\) cents)?",
+          "options": [
+            "Pet carrier and flea spray",
+            "Bird cage and hamster wheel",
+            "Bird cage and flea spray",
+            "Pet carrier and dog bowl"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "At the pet shop:",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$18.89 + \\$6.09 = \\$24.98 \\to \\$25.00\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$18.89 + \\$6.09 = \\$24.98 \\to \\$25.00\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$18.89 + \\$6.09 = \\$24.98 \\to \\$25.00\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Bird cage and hamster wheel.",
+              "work": "\\(\\$18.89 + \\$6.09 = \\$24.98 \\to \\$25.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Dog biscuits cost \\(\\$0.15\\) each. How many dog biscuits can you buy for \\(\\$1.50\\)?",
+          "options": [
+            "8 biscuits",
+            "9 biscuits",
+            "10 biscuits",
+            "15 biscuits"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "Dog biscuits cost \\(\\$0.15\\)",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$1.50 \\div \\$0.15 = 150 \\div 15 = 10\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$1.50 \\div \\$0.15 = 150 \\div 15 = 10\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$1.50 \\div \\$0.15 = 150 \\div 15 = 10\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 10 biscuits.",
+              "work": "\\(\\$1.50 \\div \\$0.15 = 150 \\div 15 = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The pet carrier normally sells for \\(\\$25.00\\). Today it is priced at \\(\\$19.99\\) (\\(\\$20.00\\) cash rounded). How much money would you save (rounded to the nearest \\(5\\) cents) if you bought it today?",
+          "options": [
+            "\\(\\$4.95\\)",
+            "\\(\\$5.00\\)",
+            "\\(\\$5.05\\)",
+            "\\(\\$6.00\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "The pet carrier normally",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$25.00 - \\$20.00 = \\$5.00\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$25.00 - \\$20.00 = \\$5.00\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$25.00 - \\$20.00 = \\$5.00\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$5.00\\).",
+              "work": "\\(\\$25.00 - \\$20.00 = \\$5.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dog bowl costs \\(\\$8.98\\) and flea spray costs \\(\\$5.64\\). Which costs more: two dog bowls or three flea sprays?",
+          "options": [
+            "Two dog bowls (\\(\\$17.96\\) vs \\(\\$16.92\\))",
+            "Three flea sprays (\\(\\$18.92\\) vs \\(\\$17.96\\))",
+            "Both cost the exact same amount",
+            "Three flea sprays (\\(\\$17.96\\) vs \\(\\$16.92\\))"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "A dog bowl costs",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(2 \\times \\$8.98 = \\$17.96 > \\$16.92 = 3 \\times \\$5.64\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(2 \\times \\$8.98 = \\$17.96 > \\$16.92 = 3 \\times \\$5.64\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } 2 \\times \\$8.98 = \\$17.96 > \\$16.92 = 3 \\times \\$5.64\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Two dog bowls (\\(\\$17.96\\) vs \\(\\$16.92\\)).",
+              "work": "\\(2 \\times \\$8.98 = \\$17.96 > \\$16.92 = 3 \\times \\$5.64\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th22-p96-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The pet shop owner will sell the \\(\\$18.89\\) bird cage for \\(\\$5.00\\) less than the listed price. How much would you pay (rounded to the nearest \\(5\\) cents)?",
+          "options": [
+            "\\(\\$13.85\\)",
+            "\\(\\$13.90\\)",
+            "\\(\\$14.90\\)",
+            "\\(\\$12.90\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total or difference first, then apply Australian 5-cent rounding (1-2 down to 0, 3-4 up to 5, 6-7 down to 5, 8-9 up to 10).",
+          "keyPoints": [
+            {
+              "text": "The pet shop owner",
+              "note": "Calculate carefully and round to the nearest 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the money number sentence from the listed pet shop prices.",
+              "work": "\\(\\$18.89 - \\$5.00 = \\$13.89 \\to \\$13.90\\)"
+            },
+            {
+              "explain": "Apply 5-cent rounding and complete the addition or subtraction.",
+              "work": "\\(\\$18.89 - \\$5.00 = \\$13.89 \\to \\$13.90\\)"
+            },
+            {
+              "explain": "Double-check dollars and cents separately.",
+              "work": "\\(\\text{Verified: } \\$18.89 - \\$5.00 = \\$13.89 \\to \\$13.90\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$13.90\\).",
+              "work": "\\(\\$18.89 - \\$5.00 = \\$13.89 \\to \\$13.90\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th-rev3-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much change from \\(\\$10.00\\) (rounded to the nearest \\(5\\) cents) do you get if you buy a book for \\(\\$8.99\\)?",
+          "options": [
+            "\\(\\$0.95\\)",
+            "\\(\\$1.00\\)",
+            "\\(\\$1.05\\)",
+            "\\(\\$1.10\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the total cost first, round to the nearest 5 cents, then subtract.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the total to the nearest 5 cents before finding change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total cost and round to the nearest 5 cents.",
+              "work": "\\(\\$8.99 \\to \\$9.00\\)"
+            },
+            {
+              "explain": "Subtract the rounded cost from the money tendered.",
+              "work": "\\(\\$8.99 \\to \\$9.00, \\quad \\$10.00 - \\$9.00 = \\$1.00\\)"
+            },
+            {
+              "explain": "Check by adding the change back to the rounded cost.",
+              "work": "\\(\\text{Verified: } \\$8.99 \\to \\$9.00, \\quad \\$10.00 - \\$9.00 = \\$1.00\\)"
+            },
+            {
+              "explain": "Therefore, the change is \\(\\$1.00\\).",
+              "work": "\\(\\$8.99 \\to \\$9.00, \\quad \\$10.00 - \\$9.00 = \\$1.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th-rev3-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much change from \\(\\$5.00\\) (rounded to the nearest \\(5\\) cents) do you get if you buy two cakes that cost \\(\\$0.12\\) each?",
+          "options": [
+            "\\(\\$4.70\\)",
+            "\\(\\$4.75\\)",
+            "\\(\\$4.80\\)",
+            "\\(\\$4.85\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the total cost first, round to the nearest 5 cents, then subtract.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the total to the nearest 5 cents before finding change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total cost and round to the nearest 5 cents.",
+              "work": "\\(2 \\times \\$0.12 = \\$0.24 \\to \\$0.25\\)"
+            },
+            {
+              "explain": "Subtract the rounded cost from the money tendered.",
+              "work": "\\(2 \\times \\$0.12 = \\$0.24 \\to \\$0.25, \\quad \\$5.00 - \\$0.25 = \\$4.75\\)"
+            },
+            {
+              "explain": "Check by adding the change back to the rounded cost.",
+              "work": "\\(\\text{Verified: } 2 \\times \\$0.12 = \\$0.24 \\to \\$0.25, \\quad \\$5.00 - \\$0.25 = \\$4.75\\)"
+            },
+            {
+              "explain": "Therefore, the change is \\(\\$4.75\\).",
+              "work": "\\(2 \\times \\$0.12 = \\$0.24 \\to \\$0.25, \\quad \\$5.00 - \\$0.25 = \\$4.75\\)"
+            }
+          ]
         }
       ]
     },
@@ -3342,6 +3782,292 @@
               "work": "\\(\\text{Safe code: } 9, 6, 5, 8, 7, 3\\)"
             }
           ]
+        },
+        {
+          "id": "y4-ar-4-th25-p112-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number can be taken from \\(35\\) so that the answer is the same as \\(15\\) plus \\(12\\)?",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Calculate the known side first, then use inverse addition or subtraction to find the mystery number.",
+          "keyPoints": [
+            {
+              "text": "same",
+              "note": "Set both sides equal and solve for the unknown."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the known side of the balanced number sentence.",
+              "work": "\\(15 + 12 = 27\\)"
+            },
+            {
+              "explain": "Use the inverse operation to find the mystery number.",
+              "work": "\\(15 + 12 = 27, \\quad 35 - 27 = 8\\)"
+            },
+            {
+              "explain": "Check by substituting the answer back into the wording.",
+              "work": "\\(\\text{Verified: } 15 + 12 = 27, \\quad 35 - 27 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the number is 8.",
+              "work": "\\(\\text{Answer} = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th25-p112-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "When a number is added to \\(30\\), the answer is the same as \\(40\\) plus \\(10\\). What is the number?",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "80"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Calculate the known side first, then use inverse addition or subtraction to find the mystery number.",
+          "keyPoints": [
+            {
+              "text": "same",
+              "note": "Set both sides equal and solve for the unknown."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the known side of the balanced number sentence.",
+              "work": "\\(40 + 10 = 50\\)"
+            },
+            {
+              "explain": "Use the inverse operation to find the mystery number.",
+              "work": "\\(40 + 10 = 50, \\quad 50 - 30 = 20\\)"
+            },
+            {
+              "explain": "Check by substituting the answer back into the wording.",
+              "work": "\\(\\text{Verified: } 40 + 10 = 50, \\quad 50 - 30 = 20\\)"
+            },
+            {
+              "explain": "Therefore, the number is 20.",
+              "work": "\\(\\text{Answer} = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th25-p112-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Take \\(15\\) away from \\(30\\) and you get the same answer as taking what number from \\(40\\)?",
+          "options": [
+            "15",
+            "20",
+            "25",
+            "35"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Calculate the known side first, then use inverse addition or subtraction to find the mystery number.",
+          "keyPoints": [
+            {
+              "text": "same",
+              "note": "Set both sides equal and solve for the unknown."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the known side of the balanced number sentence.",
+              "work": "\\(30 - 15 = 15\\)"
+            },
+            {
+              "explain": "Use the inverse operation to find the mystery number.",
+              "work": "\\(30 - 15 = 15, \\quad 40 - 15 = 25\\)"
+            },
+            {
+              "explain": "Check by substituting the answer back into the wording.",
+              "work": "\\(\\text{Verified: } 30 - 15 = 15, \\quad 40 - 15 = 25\\)"
+            },
+            {
+              "explain": "Therefore, the number is 25.",
+              "work": "\\(\\text{Answer} = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th25-p112-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number can be added to \\(45\\) so that the answer is the same as \\(200\\) minus \\(100\\)?",
+          "options": [
+            "45",
+            "55",
+            "65",
+            "145"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Calculate the known side first, then use inverse addition or subtraction to find the mystery number.",
+          "keyPoints": [
+            {
+              "text": "same",
+              "note": "Set both sides equal and solve for the unknown."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the known side of the balanced number sentence.",
+              "work": "\\(200 - 100 = 100\\)"
+            },
+            {
+              "explain": "Use the inverse operation to find the mystery number.",
+              "work": "\\(200 - 100 = 100, \\quad 100 - 45 = 55\\)"
+            },
+            {
+              "explain": "Check by substituting the answer back into the wording.",
+              "work": "\\(\\text{Verified: } 200 - 100 = 100, \\quad 100 - 45 = 55\\)"
+            },
+            {
+              "explain": "Therefore, the number is 55.",
+              "work": "\\(\\text{Answer} = 55\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th25-p112-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If a number has \\(10\\) added to it, the answer will be the same as \\(34 + 6\\). What is the number?",
+          "options": [
+            "20",
+            "30",
+            "40",
+            "50"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Calculate the known side first, then use inverse addition or subtraction to find the mystery number.",
+          "keyPoints": [
+            {
+              "text": "same",
+              "note": "Set both sides equal and solve for the unknown."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the known side of the balanced number sentence.",
+              "work": "\\(34 + 6 = 40\\)"
+            },
+            {
+              "explain": "Use the inverse operation to find the mystery number.",
+              "work": "\\(34 + 6 = 40, \\quad 40 - 10 = 30\\)"
+            },
+            {
+              "explain": "Check by substituting the answer back into the wording.",
+              "work": "\\(\\text{Verified: } 34 + 6 = 40, \\quad 40 - 10 = 30\\)"
+            },
+            {
+              "explain": "Therefore, the number is 30.",
+              "work": "\\(\\text{Answer} = 30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th25-p112-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number can be taken from \\(100\\) so that the answer is the same as double \\(30\\)?",
+          "options": [
+            "30",
+            "40",
+            "60",
+            "70"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Calculate the known side first, then use inverse addition or subtraction to find the mystery number.",
+          "keyPoints": [
+            {
+              "text": "same",
+              "note": "Set both sides equal and solve for the unknown."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the known side of the balanced number sentence.",
+              "work": "\\(2 \\times 30 = 60\\)"
+            },
+            {
+              "explain": "Use the inverse operation to find the mystery number.",
+              "work": "\\(2 \\times 30 = 60, \\quad 100 - 60 = 40\\)"
+            },
+            {
+              "explain": "Check by substituting the answer back into the wording.",
+              "work": "\\(\\text{Verified: } 2 \\times 30 = 60, \\quad 100 - 60 = 40\\)"
+            },
+            {
+              "explain": "Therefore, the number is 40.",
+              "work": "\\(\\text{Answer} = 40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th25-p113-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Look at the first two balanced scales: Scale 1 shows \\(2\\) triangles balance \\(1\\) square, and Scale 2 shows \\(1\\) circle balances \\(1\\) square. How many triangles are needed to balance \\(2\\) squares and \\(1\\) circle on Scale 3?",
+          "options": [
+            "4 triangles",
+            "5 triangles",
+            "6 triangles",
+            "8 triangles"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Replace every square with 2 triangles, and since 1 circle = 1 square, replace the circle with 2 triangles too!",
+          "keyPoints": [
+            {
+              "text": "balanced scales",
+              "note": "1 square = 2 triangles, and 1 circle = 1 square = 2 triangles."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From Scale 1: \\(1\\text{ square} = 2\\text{ triangles}\\).",
+              "work": "\\(1\\text{ square} = 2\\text{ triangles}\\)"
+            },
+            {
+              "explain": "From Scale 2: \\(1\\text{ circle} = 1\\text{ square}\\), so \\(1\\text{ circle}\\) also equals \\(2\\text{ triangles}\\).",
+              "work": "\\(1\\text{ circle} = 2\\text{ triangles}\\)"
+            },
+            {
+              "explain": "Substitute into Scale 3 (2 squares + 1 circle): \\((2 \\times 2) + 2 = 4 + 2 = 6\\) triangles.",
+              "work": "\\(2 + 2 + 2 = 6\\text{ triangles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 236\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"236\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"20\" y=\"34\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#334155\">1.</text><polygon points=\"54,36 65,16 76,36\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"80,36 91,16 102,36\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"16\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><line x1=\"42\" y1=\"40\" x2=\"298\" y2=\"40\" stroke=\"#475569\" stroke-width=\"3\"/><polygon points=\"170,41 160,55 180,55\" fill=\"#22c55e\"/><text x=\"20\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#334155\">2.</text><circle cx=\"80\" cy=\"88\" r=\"10\" fill=\"#eab308\" stroke=\"#854d0e\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"78\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><line x1=\"42\" y1=\"102\" x2=\"298\" y2=\"102\" stroke=\"#475569\" stroke-width=\"3\"/><polygon points=\"170,103 160,117 180,117\" fill=\"#22c55e\"/><text x=\"20\" y=\"160\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">3.</text><rect x=\"48\" y=\"142\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><circle cx=\"110\" cy=\"152\" r=\"10\" fill=\"#eab308\" stroke=\"#854d0e\" stroke-width=\"1.3\"/><polygon points=\"182,162 193,142 204,162\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"202,162 213,142 224,162\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"222,162 233,142 244,162\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"242,162 253,142 264,162\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"262,162 273,142 284,162\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"282,162 293,142 304,162\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><line x1=\"42\" y1=\"166\" x2=\"298\" y2=\"166\" stroke=\"#475569\" stroke-width=\"3\"/><polygon points=\"170,167 160,181 180,181\" fill=\"#22c55e\"/><text x=\"170\" y=\"228\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Scale 3 balances with 6 triangles!</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, 6 triangles are needed to balance Scale 3.",
+              "work": "\\(\\text{Answer: } 6\\text{ triangles}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 214\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"214\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"20\" y=\"34\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#334155\">1.</text><polygon points=\"54,36 65,16 76,36\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><polygon points=\"80,36 91,16 102,36\" fill=\"#f97316\" stroke=\"#9a3412\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"16\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><line x1=\"42\" y1=\"40\" x2=\"298\" y2=\"40\" stroke=\"#475569\" stroke-width=\"3\"/><polygon points=\"170,41 160,55 180,55\" fill=\"#22c55e\"/><text x=\"20\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#334155\">2.</text><circle cx=\"80\" cy=\"88\" r=\"10\" fill=\"#eab308\" stroke=\"#854d0e\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"78\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><line x1=\"42\" y1=\"102\" x2=\"298\" y2=\"102\" stroke=\"#475569\" stroke-width=\"3\"/><polygon points=\"170,103 160,117 180,117\" fill=\"#22c55e\"/><text x=\"20\" y=\"160\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">3.</text><rect x=\"48\" y=\"142\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"20\" height=\"20\" fill=\"#3b82f6\" stroke=\"#1e3a8a\" stroke-width=\"1.3\"/><circle cx=\"110\" cy=\"152\" r=\"10\" fill=\"#eab308\" stroke=\"#854d0e\" stroke-width=\"1.3\"/><text x=\"234\" y=\"158\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#2563eb\">? triangles</text><line x1=\"42\" y1=\"166\" x2=\"298\" y2=\"166\" stroke=\"#475569\" stroke-width=\"3\"/><polygon points=\"170,167 160,181 180,181\" fill=\"#22c55e\"/></svg>"
+          }
         }
       ]
     },
@@ -4425,6 +5151,190 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">(7 × 10) + 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th25-p112-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number makes this balanced number sentence equal on both sides?",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out the complete side of the balance scale first, then find what makes the other side equal the exact same number.",
+          "keyPoints": [
+            {
+              "text": "balanced number sentence",
+              "note": "Both sides of the balance beam must equal the same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the balance scale: it equals \\(40\\).",
+              "work": "\\(\\text{Known side} = 40\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">25 + 15</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">30 + 10</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/><text x=\"160\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Both sides balance at 40</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the missing number so the other side also equals \\(40\\).",
+              "work": "\\(30 + 10 = 40, \\quad 40 - 25 = 15\\)"
+            },
+            {
+              "explain": "Substitute \\(15\\) back to verify both sides equal \\(40\\).",
+              "work": "\\(\\text{Left} = 40 = \\text{Right}\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(15\\).",
+              "work": "\\(\\text{Answer} = 15\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">25 + ?</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">30 + 10</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th25-p112-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number makes this balanced number sentence equal on both sides?",
+          "options": [
+            "2",
+            "4",
+            "12",
+            "20"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out the complete side of the balance scale first, then find what makes the other side equal the exact same number.",
+          "keyPoints": [
+            {
+              "text": "balanced number sentence",
+              "note": "Both sides of the balance beam must equal the same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the balance scale: it equals \\(40\\).",
+              "work": "\\(\\text{Known side} = 40\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">38 + 2</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">58 - 18</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/><text x=\"160\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Both sides balance at 40</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the missing number so the other side also equals \\(40\\).",
+              "work": "\\(58 - 18 = 40, \\quad 40 - 38 = 2\\)"
+            },
+            {
+              "explain": "Substitute \\(2\\) back to verify both sides equal \\(40\\).",
+              "work": "\\(\\text{Left} = 40 = \\text{Right}\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(2\\).",
+              "work": "\\(\\text{Answer} = 2\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">38 + ?</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">58 - 18</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th25-p112-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number makes this balanced number sentence equal on both sides?",
+          "options": [
+            "20",
+            "25",
+            "30",
+            "35"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out the complete side of the balance scale first, then find what makes the other side equal the exact same number.",
+          "keyPoints": [
+            {
+              "text": "balanced number sentence",
+              "note": "Both sides of the balance beam must equal the same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the balance scale: it equals \\(20\\).",
+              "work": "\\(\\text{Known side} = 20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">50 - 30</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">17 + 3</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/><text x=\"160\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Both sides balance at 20</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the missing number so the other side also equals \\(20\\).",
+              "work": "\\(17 + 3 = 20, \\quad 50 - 20 = 30\\)"
+            },
+            {
+              "explain": "Substitute \\(30\\) back to verify both sides equal \\(20\\).",
+              "work": "\\(\\text{Left} = 20 = \\text{Right}\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(30\\).",
+              "work": "\\(\\text{Answer} = 30\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">50 - ?</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">17 + 3</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th25-p112-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number makes this balanced number sentence equal on both sides?",
+          "options": [
+            "15",
+            "20",
+            "25",
+            "35"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out the complete side of the balance scale first, then find what makes the other side equal the exact same number.",
+          "keyPoints": [
+            {
+              "text": "balanced number sentence",
+              "note": "Both sides of the balance beam must equal the same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side of the balance scale: it equals \\(90\\).",
+              "work": "\\(\\text{Known side} = 90\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">100 - 10</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">115 - 25</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/><text x=\"160\" y=\"128\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Both sides balance at 90</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the missing number so the other side also equals \\(90\\).",
+              "work": "\\(100 - 10 = 90, \\quad 115 - 90 = 25\\)"
+            },
+            {
+              "explain": "Substitute \\(25\\) back to verify both sides equal \\(90\\).",
+              "work": "\\(\\text{Left} = 90 = \\text{Right}\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(25\\).",
+              "work": "\\(\\text{Answer} = 25\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"90\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">100 - 10</text><rect x=\"174\" y=\"24\" width=\"112\" height=\"36\" rx=\"6\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"230\" y=\"48\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">115 - ?</text><line x1=\"24\" y1=\"68\" x2=\"296\" y2=\"68\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"160,70 144,96 176,96\" fill=\"#22c55e\" stroke=\"#15803d\" stroke-width=\"1.6\"/></svg>"
           }
         }
       ]
