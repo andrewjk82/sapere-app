@@ -14,6 +14,8 @@ export default function StudentHeaderCard({
   onOpenMessage,
   onSendReport,
   sendingReport,
+  onSendParentReport,
+  sendingParentReport,
   onExportDailyPdf,
   exportingDailyPdf,
   onEditProfile,
@@ -117,6 +119,26 @@ export default function StudentHeaderCard({
           >
             {sendingReport ? "Sending…" : "Weekly Report"}
           </button>
+          {["en", "ko"].map((lang) => (
+            <button
+              key={lang}
+              onClick={() => onSendParentReport?.(lang)}
+              disabled={sendingParentReport}
+              className="app-button"
+              title={`Email this week's report to the parent (${lang === "ko" ? "Korean" : "English"}). Parent email is set in Edit profile.`}
+              style={{
+                padding: "8px 16px",
+                borderRadius: "12px",
+                background: sendingParentReport ? "#f1f5f9" : "#f0f9ff",
+                color: sendingParentReport ? "#94a3b8" : "#0369a1",
+                fontWeight: 700,
+                border: "1px solid #bae6fd",
+                cursor: sendingParentReport ? "default" : "pointer",
+              }}
+            >
+              {sendingParentReport ? "Sending…" : lang === "ko" ? "Parent 한국어" : "Parent EN"}
+            </button>
+          ))}
           <button
             onClick={onExportDailyPdf}
             disabled={exportingDailyPdf}

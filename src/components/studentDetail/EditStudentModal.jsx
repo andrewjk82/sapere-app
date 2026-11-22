@@ -194,6 +194,33 @@ export default function EditStudentModal({
               />
             </div>
           </div>
+          <div style={{ gridColumn: "1 / -1", display: "grid", gridTemplateColumns: "2fr 1fr", gap: "16px" }}>
+            <div>
+              <label style={{ display: "block", marginBottom: "8px", fontWeight: 800, fontSize: "0.8rem", color: "#64748b" }}>
+                Parent email (weekly report)
+              </label>
+              <input
+                type="email"
+                value={editForm.parentEmail || ""}
+                onChange={(e) => setEditForm({ ...editForm, parentEmail: e.target.value })}
+                placeholder="parent@example.com"
+                style={{ width: "100%", padding: "14px", borderRadius: "14px", border: "1px solid #e2e8f0", fontWeight: 700 }}
+              />
+            </div>
+            <div>
+              <label style={{ display: "block", marginBottom: "8px", fontWeight: 800, fontSize: "0.8rem", color: "#64748b" }}>
+                Report language
+              </label>
+              <select
+                value={editForm.parentLang === "ko" ? "ko" : "en"}
+                onChange={(e) => setEditForm({ ...editForm, parentLang: e.target.value })}
+                style={{ width: "100%", padding: "14px", borderRadius: "14px", border: "1px solid #e2e8f0", fontWeight: 700, background: "#fff" }}
+              >
+                <option value="en">English</option>
+                <option value="ko">한국어</option>
+              </select>
+            </div>
+          </div>
           <div
             onClick={() =>
               setEditForm({

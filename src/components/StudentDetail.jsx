@@ -196,6 +196,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [messageText, setMessageText] = useState("");
   const [sendingMessage, setSendingMessage] = useState(false);
   const [sendingReport, setSendingReport] = useState(false);
+  const [sendingParentReport, setSendingParentReport] = useState(false);
   const [exportingDailyPdf, setExportingDailyPdf] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [hscRecords, setHscRecords] = useState([]);
@@ -381,6 +382,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     year: "",
     dreamJob: "",
     address: "",
+    parentEmail: "",
+    parentLang: "en",
     role: "",
     assignedYear: ["Year 11"],
     assignedCourse: ["Advanced"],
@@ -481,6 +484,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         year: data.year || "",
         dreamJob: data.dreamJob || "",
         address: data.address || "",
+        parentEmail: data.parentEmail || "",
+        parentLang: data.parentLang === "ko" ? "ko" : "en",
         role: data.role || "",
         assignedYear: Array.isArray(data.assignedYear)
           ? data.assignedYear
@@ -731,6 +736,38 @@ const StudentDetail = ({ studentId, onBack }) => {
       showToast(e.message, "error");
     } finally {
       setSendingReport(false);
+    }
+  };
+
+  // Email this week's report to the student's parent, in the language saved on the profile (or the one picked).
+  const handleSendParentReport = async (lang) => {
+    const reportUid = challengeResultsUid;
+    if (!reportUid) {
+      showToast("Parent reports are only available for registered students (this profile has no linked account).", "warning", 7000);
+      return;
+    }
+    if (!(student?.parentEmail || "").trim()) {
+      showToast("No parent email saved. Add it in Edit profile first.", "warning", 7000);
+      return;
+    }
+    try {
+      setSendingParentReport(true);
+      const response = await fetch("/api/send-parent-report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ studentId: reportUid, lang }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(data.error || "Failed to send parent report");
+      if (data.success) {
+        showToast(`Parent report (${lang === "ko" ? "한국어" : "English"}) sent to ${data.email}.`, "success");
+      } else {
+        showToast(`Parent report not sent: ${data.emailError || "unknown error"}`, "error", 7000);
+      }
+    } catch (e) {
+      showToast(e.message, "error");
+    } finally {
+      setSendingParentReport(false);
     }
   };
 
@@ -1126,6 +1163,13 @@ const StudentDetail = ({ studentId, onBack }) => {
         role: normalizedRole,
         status: "Active",
       });
+      // The student's registered account (users/{uid}) is where the parent-report API reads these from.
+      if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
+        await updateDoc(doc(db, "users", challengeResultsUid), {
+          parentEmail: (editForm.parentEmail || "").trim(),
+          parentLang: editForm.parentLang === "ko" ? "ko" : "en",
+        }).catch(() => {});
+      }
       touchStudentListMeta();
       setIsEditModalOpen(false);
       showToast("Profile updated successfully!", "success");
@@ -2381,6 +2425,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         onOpenMessage={() => setMessageOpen(true)}
         onSendReport={handleSendReport}
         sendingReport={sendingReport}
+        onSendParentReport={handleSendParentReport}
+        sendingParentReport={sendingParentReport}
         onExportDailyPdf={handleExportDailyPdf}
         exportingDailyPdf={exportingDailyPdf}
         onEditProfile={() => setIsEditModalOpen(true)}
