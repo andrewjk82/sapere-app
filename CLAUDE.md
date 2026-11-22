@@ -188,6 +188,10 @@ bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say
 four-paper set has **35 questions** — verbatim, new hard, common mistakes and multi-step. If the bank cannot
 supply 35 distinct verbatim questions, say so and fill from related chapters or report the shortfall.
 
+**Answer-key sheet (2026-11-22, user request, every paper from now on):** the LAST page of every paper is a single
+one-page "Answer Key" — question numbers and final answers only (no working), in 2 columns, small enough to fit on
+one page — so it can be handed to students on its own. Build scripts add it after "Answers & Worked Solutions".
+
 **Printable-paper wording and layout rules (2026-11-07, after review feedback — apply to every paper, never needs repeating):**
 
 - **Be self-contained: no term or formula a student has not been taught.** If a question uses a concept
