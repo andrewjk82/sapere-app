@@ -54,3 +54,5 @@ scratch/
 /output/
 /tmp/
 /.tmp/
+tools/test-paper/out/
+tools/test-paper/**/__pycache__/
