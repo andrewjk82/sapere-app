@@ -12,12 +12,12 @@
           "id": "y6-frac-q2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "A circle is divided into \\\\\\\\(6\\\\) equal sectors and \\\\\\\\(5\\\\) sectors are shaded. What fraction of the circle is shaded?",
+          "stem": "A circle is divided into \\(6\\) equal sectors and \\(5\\) sectors are shaded. What fraction of the circle is shaded?",
           "options": [
-            "\\\\(\\frac{5}{6}\\\\)",
-            "\\\\(\\frac{1}{6}\\\\)",
-            "\\\\(\\frac{6}{5}\\\\)",
-            "\\\\(\\frac{1}{5}\\\\)"
+            "\\(\\dfrac{5}{6}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{6}{5}\\)",
+            "\\(\\dfrac{1}{5}\\)"
           ],
           "answer": 0,
           "hint": "The denominator is the total number of sectors, and the numerator is the shaded sectors.",
@@ -25,15 +25,15 @@
           "steps": [
             {
               "explain": "Identify the total number of equal sectors.",
-              "work": "\\text{Total sectors} = 6"
+              "work": "\\(\\text{Total sectors} = 6\\)"
             },
             {
               "explain": "Identify the number of shaded sectors.",
-              "work": "\\text{Shaded sectors} = 5"
+              "work": "\\(\\text{Shaded sectors} = 5\\)"
             },
             {
               "explain": "Write the fraction as Shaded sectors / Total sectors.",
-              "work": "\\frac{5}{6}"
+              "work": "\\(\\dfrac{5}{6}\\)"
             }
           ],
           "meta": {
@@ -45,12 +45,12 @@
           "id": "y6-frac-q1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "A rectangle is divided into \\\\\\\\(8\\\\) equal parts and \\\\\\\\(3\\\\) parts are shaded. What fraction of the rectangle is shaded?",
+          "stem": "A rectangle is divided into \\(8\\) equal parts and \\(3\\) parts are shaded. What fraction of the rectangle is shaded?",
           "options": [
-            "\\\\(\\frac{3}{8}\\\\)",
-            "\\\\(\\frac{5}{8}\\\\)",
-            "\\\\(\\frac{1}{3}\\\\)",
-            "\\\\(\\frac{3}{5}\\\\)"
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{3}{5}\\)"
           ],
           "answer": 0,
           "hint": "The denominator is the total number of parts, and the numerator is the shaded parts.",
@@ -58,15 +58,15 @@
           "steps": [
             {
               "explain": "Identify the total number of parts the shape is divided into.",
-              "work": "\\text{Total parts} = 8"
+              "work": "\\(\\text{Total parts} = 8\\)"
             },
             {
               "explain": "Identify the number of shaded parts.",
-              "work": "\\text{Shaded parts} = 3"
+              "work": "\\(\\text{Shaded parts} = 3\\)"
             },
             {
               "explain": "Write the fraction as Shaded parts / Total parts.",
-              "work": "\\frac{3}{8}"
+              "work": "\\(\\dfrac{3}{8}\\)"
             }
           ],
           "xp": 1
@@ -75,28 +75,28 @@
           "id": "y6-frac-q22",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "What fraction is \\\\\\\\(15\\\\) minutes of \\\\(1\\\\) hour?",
+          "stem": "What fraction is \\(15\\) minutes of \\(1\\) hour?",
           "options": [
-            "\\\\(\\frac{1}{4}\\\\)",
-            "\\\\(\\frac{1}{3}\\\\)",
-            "\\\\(\\frac{15}{100}\\\\)",
-            "\\\\(\\frac{3}{10}\\\\)"
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{15}{100}\\)",
+            "\\(\\dfrac{3}{10}\\)"
           ],
           "answer": 0,
-          "hint": "There are \\\\\\\\(60\\\\) minutes in \\\\(1\\\\) hour. Put the minutes over \\\\\\\\(60\\\\) and simplify.",
+          "hint": "There are \\(60\\) minutes in \\(1\\) hour. Put the minutes over \\(60\\) and simplify.",
           "solution": "\\\\(1\\\\) hour \\\\(= 60\\\\) minutes. The fraction is \\\\(\\frac{15}{60}\\\\). Divide the numerator and denominator by \\\\\\\\(15\\\\) to simplify: \\\\(\\frac{1}{4}\\\\).",
           "steps": [
             {
               "explain": "Convert the total time unit to the same smaller unit. (1 hour = 60 minutes).",
-              "work": "\\text{Total} = 60"
+              "work": "\\(\\text{Total} = 60\\)"
             },
             {
               "explain": "Write the given amount over the total amount.",
-              "work": "\\frac{15}{60}"
+              "work": "\\(\\dfrac{15}{60}\\)"
             },
             {
               "explain": "Simplify the fraction.",
-              "work": "\\frac{15 \\div 15}{60 \\div 15} = \\frac{1}{4}"
+              "work": "\\(\\dfrac{15 \\div 15}{60 \\div 15} = \\dfrac{1}{4}\\)"
             }
           ],
           "xp": 1
@@ -105,12 +105,12 @@
           "id": "y6-frac-q23",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "What fraction is \\\\\\\\(4\\\\) days of \\\\(1\\\\) week?",
+          "stem": "What fraction is \\(4\\) days of \\(1\\) week?",
           "options": [
-            "\\\\(\\frac{4}{7}\\\\)",
-            "\\\\(\\frac{1}{2}\\\\)",
-            "\\\\(\\frac{2}{3}\\\\)",
-            "\\\\(\\frac{4}{5}\\\\)"
+            "\\(\\dfrac{4}{7}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{4}{5}\\)"
           ],
           "answer": 0,
           "hint": "How many days are in a week? Use that as the denominator.",
@@ -118,11 +118,11 @@
           "steps": [
             {
               "explain": "Identify the total number of days in one week.",
-              "work": "\\text{Total days} = 7"
+              "work": "\\(\\text{Total days} = 7\\)"
             },
             {
               "explain": "Write the given days over the total days.",
-              "work": "\\frac{4}{7}"
+              "work": "\\(\\dfrac{4}{7}\\)"
             }
           ],
           "xp": 1
@@ -4525,64 +4525,66 @@
           "id": "y6-frac-q3",
           "type": "short",
           "difficulty": "easy",
-          "stem": "Find the missing number to make the fractions equivalent: \\\\(\\frac{1}{3} = \\frac{?}{15}\\\\)",
+          "stem": "Find the missing number to make the fractions equivalent: \\(\\dfrac{1}{3} = \\dfrac{?}{15}\\)",
           "answer": "5",
-          "hint": "What do you multiply \\\\\\\\(3\\\\) by to get \\\\\\\\(15\\\\)? Multiply the numerator by the same amount.",
+          "hint": "What do you multiply \\(3\\) by to get \\(15\\)? Multiply the numerator by the same amount.",
           "solution": "To get from \\\\\\\\(3\\\\) to \\\\\\\\(15\\\\), multiply by \\\\\\\\(5\\\\). Therefore, multiply the numerator by \\\\\\\\(5\\\\): \\\\\\\\(1 \\times 5 = 5\\\\). The missing number is \\\\\\\\(5\\\\).",
           "steps": [
             {
               "explain": "Determine the multiplier for the denominators.",
-              "work": "15 \\div 3 = 5"
+              "work": "\\(15 \\div 3 = 5\\)"
             },
             {
               "explain": "Multiply the numerator by the same multiplier.",
-              "work": "1 \\times 5 = 5"
+              "work": "\\(1 \\times 5 = 5\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "options": []
         },
         {
           "id": "y6-frac-q4",
           "type": "short",
           "difficulty": "medium",
-          "stem": "Find the missing number to make the fractions equivalent: \\\\(\\frac{2}{5} = \\frac{6}{?}\\\\)",
+          "stem": "Find the missing number to make the fractions equivalent: \\(\\dfrac{2}{5} = \\dfrac{6}{?}\\)",
           "answer": "15",
-          "hint": "What do you multiply \\\\\\\\(2\\\\) by to get \\\\\\\\(6\\\\)? Multiply the denominator by the same amount.",
+          "hint": "What do you multiply \\(2\\) by to get \\(6\\)? Multiply the denominator by the same amount.",
           "solution": "To get from \\\\\\\\(2\\\\) to \\\\\\\\(6\\\\), multiply by \\\\\\\\(3\\\\). Therefore, multiply the denominator by \\\\\\\\(3\\\\): \\\\\\\\(5 \\times 3 = 15\\\\). The missing number is \\\\\\\\(15\\\\).",
           "steps": [
             {
               "explain": "Determine the multiplier for the numerators.",
-              "work": "6 \\div 2 = 3"
+              "work": "\\(6 \\div 2 = 3\\)"
             },
             {
               "explain": "Multiply the denominator by the same multiplier.",
-              "work": "5 \\times 3 = 15"
+              "work": "\\(5 \\times 3 = 15\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "options": []
         },
         {
           "id": "y6-frac-q5",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Write the fraction \\\\(\\frac{18}{24}\\\\) in its simplest form.",
+          "stem": "Write the fraction \\(\\dfrac{18}{24}\\) in its simplest form.",
           "options": [
-            "\\\\(\\frac{3}{4}\\\\)",
-            "\\\\(\\frac{9}{12}\\\\)",
-            "\\\\(\\frac{6}{8}\\\\)",
-            "\\\\(\\frac{2}{3}\\\\)"
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{9}{12}\\)",
+            "\\(\\dfrac{6}{8}\\)",
+            "\\(\\dfrac{2}{3}\\)"
           ],
           "answer": 0,
-          "hint": "Find the highest common factor (HCF) of \\\\\\\\(18\\\\) and \\\\\\\\(24\\\\) and divide both numbers by it.",
+          "hint": "Find the highest common factor (HCF) of \\(18\\) and \\(24\\) and divide both numbers by it.",
           "solution": "The highest common factor of \\\\\\\\(18\\\\) and \\\\\\\\(24\\\\) is \\\\\\\\(6\\\\). Dividing both the numerator and denominator by \\\\\\\\(6\\\\) gives \\\\(\\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}\\\\).",
           "steps": [
             {
               "explain": "Find the Highest Common Factor (HCF) of the numerator and denominator.",
-              "work": "\\text{Factors of } 18: 1, 2, 3, 6, 9, 18 \\\\ \\text{Factors of } 24: 1, 2, 3, 4, 6, 8, 12, 24 \\\\ \\text{HCF} = 6"
+              "work": "\\(\\text{Factors of } 18: 1, 2, 3, 6, 9, 18 \\\\ \\text{Factors of } 24: 1, 2, 3, 4, 6, 8, 12, 24 \\\\ \\text{HCF} = 6\\)"
             },
             {
               "explain": "Divide both the top and bottom by the HCF.",
-              "work": "\\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}"
+              "work": "\\(\\dfrac{18 \\div 6}{24 \\div 6} = \\dfrac{3}{4}\\)"
             }
           ],
           "xp": 2
@@ -10136,12 +10138,12 @@
           "id": "y6-frac-q6",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Change the mixed fraction \\\\\\\\(2\\frac{3}{4}\\\\) to an improper fraction.",
+          "stem": "Change the mixed fraction \\(2\\dfrac{3}{4}\\) to an improper fraction.",
           "options": [
-            "\\\\(\\frac{11}{4}\\\\)",
-            "\\\\(\\frac{9}{4}\\\\)",
-            "\\\\(\\frac{10}{4}\\\\)",
-            "\\\\(\\frac{5}{4}\\\\)"
+            "\\(\\dfrac{11}{4}\\)",
+            "\\(\\dfrac{9}{4}\\)",
+            "\\(\\dfrac{10}{4}\\)",
+            "\\(\\dfrac{5}{4}\\)"
           ],
           "answer": 0,
           "hint": "Multiply the whole number by the denominator, then add the numerator.",
@@ -10149,15 +10151,15 @@
           "steps": [
             {
               "explain": "Multiply the whole number by the denominator.",
-              "work": "2 \\times 4 = 8"
+              "work": "\\(2 \\times 4 = 8\\)"
             },
             {
               "explain": "Add the numerator to this product.",
-              "work": "8 + 3 = 11"
+              "work": "\\(8 + 3 = 11\\)"
             },
             {
               "explain": "Write this result over the original denominator.",
-              "work": "\\frac{11}{4}"
+              "work": "\\(\\dfrac{11}{4}\\)"
             }
           ],
           "xp": 1
@@ -10166,12 +10168,12 @@
           "id": "y6-frac-q7",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Change the improper fraction \\\\(\\frac{17}{5}\\\\) to a mixed fraction.",
+          "stem": "Change the improper fraction \\(\\dfrac{17}{5}\\) to a mixed fraction.",
           "options": [
-            "\\\\\\\\(3\\frac{2}{5}\\\\)",
-            "\\\\\\\\(3\\frac{3}{5}\\\\)",
-            "\\\\\\\\(2\\frac{7}{5}\\\\)",
-            "\\\\\\\\(4\\frac{2}{5}\\\\)"
+            "\\(3\\dfrac{2}{5}\\)",
+            "\\(3\\dfrac{3}{5}\\)",
+            "\\(2\\dfrac{7}{5}\\)",
+            "\\(4\\dfrac{2}{5}\\)"
           ],
           "answer": 0,
           "hint": "Divide the numerator by the denominator to find the whole number and the remainder.",
@@ -10179,11 +10181,11 @@
           "steps": [
             {
               "explain": "Divide the numerator by the denominator to find the whole number.",
-              "work": "17 \\div 5 = 3 \\text{ remainder } 2"
+              "work": "\\(17 \\div 5 = 3 \\text{ remainder } 2\\)"
             },
             {
               "explain": "The quotient becomes the whole number, and the remainder becomes the new numerator.",
-              "work": "3\\frac{2}{5}"
+              "work": "\\(3\\dfrac{2}{5}\\)"
             }
           ],
           "xp": 1

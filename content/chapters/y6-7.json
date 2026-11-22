@@ -12,12 +12,12 @@
           "id": "y6-frac-q9",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the sum: \\\\(\\frac{2}{9} + \\frac{5}{9}\\\\)",
+          "stem": "Find the sum: \\(\\dfrac{2}{9} + \\dfrac{5}{9}\\)",
           "options": [
-            "\\\\(\\frac{7}{9}\\\\)",
-            "\\\\(\\frac{7}{18}\\\\)",
-            "\\\\(\\frac{10}{81}\\\\)",
-            "\\\\(\\frac{3}{9}\\\\)"
+            "\\(\\dfrac{7}{9}\\)",
+            "\\(\\dfrac{7}{18}\\)",
+            "\\(\\dfrac{10}{81}\\)",
+            "\\(\\dfrac{3}{9}\\)"
           ],
           "answer": 0,
           "hint": "When adding fractions with the same denominator, just add the numerators.",
@@ -25,11 +25,11 @@
           "steps": [
             {
               "explain": "Check if the denominators are the same.",
-              "work": "\\text{Denominators are both } 9"
+              "work": "\\(\\text{Denominators are both } 9\\)"
             },
             {
               "explain": "Add the numerators and keep the denominator.",
-              "work": "\\frac{2 + 5}{9} = \\frac{7}{9}"
+              "work": "\\(\\dfrac{2 + 5}{9} = \\dfrac{7}{9}\\)"
             }
           ],
           "xp": 1
@@ -45,12 +45,12 @@
           "id": "y6-frac-q10",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Find the sum: \\\\\\\\(2\\frac{1}{3} + 1\\frac{1}{4}\\\\)",
+          "stem": "Find the sum: \\(2\\dfrac{1}{3} + 1\\dfrac{1}{4}\\)",
           "options": [
-            "\\\\\\\\(3\\frac{7}{12}\\\\)",
-            "\\\\\\\\(3\\frac{2}{7}\\\\)",
-            "\\\\\\\\(4\\frac{1}{12}\\\\)",
-            "\\\\\\\\(3\\frac{5}{12}\\\\)"
+            "\\(3\\dfrac{7}{12}\\)",
+            "\\(3\\dfrac{2}{7}\\)",
+            "\\(4\\dfrac{1}{12}\\)",
+            "\\(3\\dfrac{5}{12}\\)"
           ],
           "answer": 0,
           "hint": "Add the whole numbers together, then add the fractions by finding a common denominator.",
@@ -58,19 +58,19 @@
           "steps": [
             {
               "explain": "Add the whole number parts.",
-              "work": "2 + 1 = 3"
+              "work": "\\(2 + 1 = 3\\)"
             },
             {
-              "explain": "Find a common denominator for the fractional parts (\\\\\\\\(3\\\\) and \\\\\\\\(4\\\\)).",
-              "work": "\\text{LCM of 3 and 4 is 12}"
+              "explain": "Find a common denominator for the fractional parts (\\(3\\) and \\(4\\)).",
+              "work": "\\(\\text{LCM of 3 and 4 is 12}\\)"
             },
             {
               "explain": "Convert the fractions to equivalent fractions with denominator 12.",
-              "work": "\\begin{aligned} \\frac{1}{3} &= \\frac{4}{12} \\\\ \\frac{1}{4} &= \\frac{3}{12} \\end{aligned}"
+              "work": "\\(\\begin{aligned} \\dfrac{1}{3} &= \\dfrac{4}{12} \\\\ \\dfrac{1}{4} &= \\dfrac{3}{12} \\end{aligned}\\)"
             },
             {
               "explain": "Add the fractions and combine with the whole number.",
-              "work": "3 + \\left( \\frac{4}{12} + \\frac{3}{12} \\right) = 3\\frac{7}{12}"
+              "work": "\\(3 + \\left( \\dfrac{4}{12} + \\dfrac{3}{12} \\right) = 3\\dfrac{7}{12}\\)"
             }
           ],
           "xp": 2
@@ -136,28 +136,28 @@
           "id": "y6-frac-q16",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Mark spends \\\\(\\frac{2}{7}\\\\) of his pocket money on food and \\\\(\\frac{1}{4}\\\\) of it on a present for his brother. What fraction of his pocket money remains?",
+          "stem": "Mark spends \\(\\dfrac{2}{7}\\) of his pocket money on food and \\(\\dfrac{1}{4}\\) of it on a present for his brother. What fraction of his pocket money remains?",
           "options": [
-            "\\\\(\\frac{13}{28}\\\\)",
-            "\\\\(\\frac{15}{28}\\\\)",
-            "\\\\(\\frac{3}{11}\\\\)",
-            "\\\\(\\frac{11}{28}\\\\)"
+            "\\(\\dfrac{13}{28}\\)",
+            "\\(\\dfrac{15}{28}\\)",
+            "\\(\\dfrac{3}{11}\\)",
+            "\\(\\dfrac{11}{28}\\)"
           ],
           "answer": 0,
-          "hint": "Add the two fractions together to find the total fraction spent, then subtract from \\\\(1\\\\) whole.",
+          "hint": "Add the two fractions together to find the total fraction spent, then subtract from \\(1\\) whole.",
           "solution": "Add \\\\(\\frac{2}{7}\\\\) and \\\\(\\frac{1}{4}\\\\). Common denominator is \\\\\\\\(28\\\\). \\\\(\\frac{2}{7} = \\frac{8}{28}\\\\) and \\\\(\\frac{1}{4} = \\frac{7}{28}\\\\). Total spent = \\\\(\\frac{8}{28} + \\frac{7}{28} = \\frac{15}{28}\\\\). Fraction remaining = \\\\\\\\(1 - \\frac{15}{28} = \\frac{28}{28} - \\frac{15}{28} = \\frac{13}{28}\\\\).",
           "steps": [
             {
-              "explain": "Find the total fraction spent by adding the two fractions. Convert them to a common denominator (\\\\\\\\(28\\\\)).",
-              "work": "\\begin{aligned} \\frac{2}{7} &= \\frac{8}{28} \\\\ \\frac{1}{4} &= \\frac{7}{28} \\end{aligned}"
+              "explain": "Find the total fraction spent by adding the two fractions. Convert them to a common denominator (\\(28\\)).",
+              "work": "\\(\\begin{aligned} \\dfrac{2}{7} &= \\dfrac{8}{28} \\\\ \\dfrac{1}{4} &= \\dfrac{7}{28} \\end{aligned}\\)"
             },
             {
               "explain": "Add the converted fractions.",
-              "work": "\\frac{8}{28} + \\frac{7}{28} = \\frac{15}{28}"
+              "work": "\\(\\dfrac{8}{28} + \\dfrac{7}{28} = \\dfrac{15}{28}\\)"
             },
             {
-              "explain": "Subtract the total spent from the whole (\\\\(1\\\\) or \\\\(\\frac{28}{28}\\\\)) to find the remaining fraction.",
-              "work": "\\frac{28}{28} - \\frac{15}{28} = \\frac{13}{28}"
+              "explain": "Subtract the total spent from the whole (\\(1\\) or \\(\\dfrac{28}{28}\\)) to find the remaining fraction.",
+              "work": "\\(\\dfrac{28}{28} - \\dfrac{15}{28} = \\dfrac{13}{28}\\)"
             }
           ],
           "meta": {
@@ -169,28 +169,28 @@
           "id": "y6-frac-q11",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the difference: \\\\(\\frac{7}{8} - \\frac{1}{4}\\\\)",
+          "stem": "Find the difference: \\(\\dfrac{7}{8} - \\dfrac{1}{4}\\)",
           "options": [
-            "\\\\(\\frac{5}{8}\\\\)",
-            "\\\\(\\frac{6}{4}\\\\)",
-            "\\\\(\\frac{3}{8}\\\\)",
-            "\\\\(\\frac{1}{2}\\\\)"
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{6}{4}\\)",
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{1}{2}\\)"
           ],
           "answer": 0,
           "hint": "Find a common denominator before subtracting.",
           "solution": "The lowest common denominator for \\\\\\\\(8\\\\) and \\\\\\\\(4\\\\) is \\\\\\\\(8\\\\). Convert \\\\(\\frac{1}{4}\\\\) to \\\\(\\frac{2}{8}\\\\). Now subtract: \\\\(\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}\\\\).",
           "steps": [
             {
-              "explain": "Find a common denominator for \\\\\\\\(8\\\\) and \\\\\\\\(4\\\\).",
-              "work": "\\text{Common denominator is 8}"
+              "explain": "Find a common denominator for \\(8\\) and \\(4\\).",
+              "work": "\\(\\text{Common denominator is 8}\\)"
             },
             {
-              "explain": "Convert \\\\(\\frac{1}{4}\\\\) to an equivalent fraction with a denominator of \\\\\\\\(8\\\\).",
-              "work": "\\frac{1}{4} = \\frac{2}{8}"
+              "explain": "Convert \\(\\dfrac{1}{4}\\) to an equivalent fraction with a denominator of \\(8\\).",
+              "work": "\\(\\dfrac{1}{4} = \\dfrac{2}{8}\\)"
             },
             {
               "explain": "Subtract the numerators.",
-              "work": "\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}"
+              "work": "\\(\\dfrac{7}{8} - \\dfrac{2}{8} = \\dfrac{5}{8}\\)"
             }
           ],
           "xp": 2
@@ -199,12 +199,12 @@
           "id": "y6-frac-q12",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Find the difference: \\\\\\\\(4\\frac{1}{5} - 1\\frac{1}{2}\\\\)",
+          "stem": "Find the difference: \\(4\\dfrac{1}{5} - 1\\dfrac{1}{2}\\)",
           "options": [
-            "\\\\\\\\(2\\frac{7}{10}\\\\)",
-            "\\\\\\\\(3\\frac{3}{10}\\\\)",
-            "\\\\\\\\(2\\frac{3}{10}\\\\)",
-            "\\\\\\\\(3\\frac{7}{10}\\\\)"
+            "\\(2\\dfrac{7}{10}\\)",
+            "\\(3\\dfrac{3}{10}\\)",
+            "\\(2\\dfrac{3}{10}\\)",
+            "\\(3\\dfrac{7}{10}\\)"
           ],
           "answer": 0,
           "hint": "Convert both mixed numbers to improper fractions, then find a common denominator.",
@@ -212,19 +212,19 @@
           "steps": [
             {
               "explain": "Convert both mixed numbers to improper fractions.",
-              "work": "\\begin{aligned} 4\\frac{1}{5} &= \\frac{21}{5} \\\\ 1\\frac{1}{2} &= \\frac{3}{2} \\end{aligned}"
+              "work": "\\(\\begin{aligned} 4\\dfrac{1}{5} &= \\dfrac{21}{5} \\\\ 1\\dfrac{1}{2} &= \\dfrac{3}{2} \\end{aligned}\\)"
             },
             {
               "explain": "Find a common denominator and convert.",
-              "work": "\\begin{aligned} \\frac{21}{5} &= \\frac{42}{10} \\\\ \\frac{3}{2} &= \\frac{15}{10} \\end{aligned}"
+              "work": "\\(\\begin{aligned} \\dfrac{21}{5} &= \\dfrac{42}{10} \\\\ \\dfrac{3}{2} &= \\dfrac{15}{10} \\end{aligned}\\)"
             },
             {
               "explain": "Subtract the numerators.",
-              "work": "\\frac{42}{10} - \\frac{15}{10} = \\frac{27}{10}"
+              "work": "\\(\\dfrac{42}{10} - \\dfrac{15}{10} = \\dfrac{27}{10}\\)"
             },
             {
               "explain": "Convert the resulting improper fraction back to a mixed number.",
-              "work": "\\frac{27}{10} = 2\\frac{7}{10}"
+              "work": "\\(\\dfrac{27}{10} = 2\\dfrac{7}{10}\\)"
             }
           ],
           "xp": 2
@@ -265,7 +265,7 @@
           "id": "y6-frac-q14",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find: \\\\(\\frac{2}{3} \\text{ of } 24\\\\)",
+          "stem": "Find: \\(\\dfrac{2}{3} \\text{ of } 24\\)",
           "options": [
             "16",
             "18",
@@ -278,11 +278,11 @@
           "steps": [
             {
               "explain": "Divide the whole number by the denominator to find one fractional part.",
-              "work": "24 \\div 3 = 8"
+              "work": "\\(24 \\div 3 = 8\\)"
             },
             {
               "explain": "Multiply the result by the numerator.",
-              "work": "8 \\times 2 = 16"
+              "work": "\\(8 \\times 2 = 16\\)"
             }
           ],
           "xp": 2
@@ -291,12 +291,12 @@
           "id": "y6-frac-q15",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Lily has \\\\\\\\(30 and spends \\\\)\\frac{1}{3}\\\\( of it on a movie and \\\\)\\frac{2}{5}$ of it on a t-shirt. How much money does she have left?",
+          "stem": "Lily has \\(\\$30\\) and spends \\(\\dfrac{1}{3}\\) of it on a movie and \\(\\dfrac{2}{5}\\) of it on a t-shirt. How much money does she have left?",
           "options": [
-            "\\\\$8",
-            "\\\\$10",
-            "\\\\$12",
-            "\\\\$18"
+            "\\(\\$8\\)",
+            "\\(\\$10\\)",
+            "\\(\\$12\\)",
+            "\\(\\$18\\)"
           ],
           "answer": 0,
           "hint": "Calculate how much she spent on the movie and t-shirt, then subtract the total spent from \\\\$30.",
@@ -304,19 +304,19 @@
           "steps": [
             {
               "explain": "Calculate the amount spent on the movie.",
-              "work": "\\frac{1}{3} \\times 30 = \\\\$10"
+              "work": "\\(\\dfrac{1}{3} \\times 30 = \\\\$10\\)"
             },
             {
               "explain": "Calculate the amount spent on the t-shirt.",
-              "work": "\\frac{2}{5} \\times 30 = \\frac{60}{5} = \\\\$12"
+              "work": "\\(\\dfrac{2}{5} \\times 30 = \\dfrac{60}{5} = \\\\$12\\)"
             },
             {
               "explain": "Add the expenses to find the total amount spent.",
-              "work": "10 + 12 = \\\\$22"
+              "work": "\\(10 + 12 = \\\\$22\\)"
             },
             {
               "explain": "Subtract the total spent from the original amount to find the money left.",
-              "work": "30 - 22 = \\\\$8"
+              "work": "\\(30 - 22 = \\\\$8\\)"
             }
           ],
           "xp": 2
@@ -325,12 +325,12 @@
           "id": "y6-frac-q19",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Sam takes \\\\(\\frac{2}{3}\\\\) of an hour to write one page of an essay. How long will it take him to write \\\\\\\\(5\\\\) pages?",
+          "stem": "Sam takes \\(\\dfrac{2}{3}\\) of an hour to write one page of an essay. How long will it take him to write \\(5\\) pages?",
           "options": [
-            "\\\\\\\\(3\\frac{1}{3} \\text{ hours}\\\\)",
-            "\\\\\\\\(3\\frac{2}{3} \\text{ hours}\\\\)",
-            "\\\\\\\\(2\\frac{1}{3} \\text{ hours}\\\\)",
-            "\\\\\\\\(1\\frac{2}{3} \\text{ hours}\\\\)"
+            "\\(3\\dfrac{1}{3} \\text{ hours}\\)",
+            "\\(3\\dfrac{2}{3} \\text{ hours}\\)",
+            "\\(2\\dfrac{1}{3} \\text{ hours}\\)",
+            "\\(1\\dfrac{2}{3} \\text{ hours}\\)"
           ],
           "answer": 0,
           "hint": "Multiply the time taken for one page by the total number of pages.",
@@ -338,15 +338,15 @@
           "steps": [
             {
               "explain": "Set up a multiplication problem: time per page multiplied by number of pages.",
-              "work": "\\frac{2}{3} \\times 5"
+              "work": "\\(\\dfrac{2}{3} \\times 5\\)"
             },
             {
               "explain": "Multiply the whole number by the numerator.",
-              "work": "\\frac{2 \\times 5}{3} = \\frac{10}{3}"
+              "work": "\\(\\dfrac{2 \\times 5}{3} = \\dfrac{10}{3}\\)"
             },
             {
               "explain": "Convert the improper fraction to a mixed number.",
-              "work": "10 \\div 3 = 3 \\text{ remainder } 1 \\implies 3\\frac{1}{3}"
+              "work": "\\(10 \\div 3 = 3 \\text{ remainder } 1 \\implies 3\\dfrac{1}{3}\\)"
             }
           ],
           "xp": 2
@@ -462,12 +462,12 @@
           "id": "y6-frac-q13",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Do the multiplication and write the answer in simplest form: \\\\(\\frac{4}{5} \\times \\frac{3}{8}\\\\)",
+          "stem": "Do the multiplication and write the answer in simplest form: \\(\\dfrac{4}{5} \\times \\dfrac{3}{8}\\)",
           "options": [
-            "\\\\(\\frac{3}{10}\\\\)",
-            "\\\\(\\frac{12}{40}\\\\)",
-            "\\\\(\\frac{7}{13}\\\\)",
-            "\\\\(\\frac{3}{5}\\\\)"
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{12}{40}\\)",
+            "\\(\\dfrac{7}{13}\\)",
+            "\\(\\dfrac{3}{5}\\)"
           ],
           "answer": 0,
           "hint": "Multiply the numerators together and the denominators together, then simplify.",
@@ -475,15 +475,15 @@
           "steps": [
             {
               "explain": "Multiply the numerators together.",
-              "work": "4 \\times 3 = 12"
+              "work": "\\(4 \\times 3 = 12\\)"
             },
             {
               "explain": "Multiply the denominators together.",
-              "work": "5 \\times 8 = 40"
+              "work": "\\(5 \\times 8 = 40\\)"
             },
             {
               "explain": "Simplify the resulting fraction by dividing by the highest common factor.",
-              "work": "\\frac{12 \\div 4}{40 \\div 4} = \\frac{3}{10}"
+              "work": "\\(\\dfrac{12 \\div 4}{40 \\div 4} = \\dfrac{3}{10}\\)"
             }
           ],
           "xp": 2
@@ -492,12 +492,12 @@
           "id": "y6-frac-q20",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Emma saves \\\\(\\frac{3}{5}\\\\) of her weekly allowance. Of the remainder, she spends \\\\(\\frac{1}{3}\\\\) on snacks. What fraction of her total weekly allowance does she spend on snacks?",
+          "stem": "Emma saves \\(\\dfrac{3}{5}\\) of her weekly allowance. Of the remainder, she spends \\(\\dfrac{1}{3}\\) on snacks. What fraction of her total weekly allowance does she spend on snacks?",
           "options": [
-            "\\\\(\\frac{2}{15}\\\\)",
-            "\\\\(\\frac{1}{5}\\\\)",
-            "\\\\(\\frac{4}{15}\\\\)",
-            "\\\\(\\frac{1}{3}\\\\)"
+            "\\(\\dfrac{2}{15}\\)",
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{4}{15}\\)",
+            "\\(\\dfrac{1}{3}\\)"
           ],
           "answer": 0,
           "hint": "First, find the fraction that is the 'remainder'. Then multiply that remainder by the fraction she spends on snacks.",
@@ -505,15 +505,15 @@
           "steps": [
             {
               "explain": "Calculate the remaining fraction of her allowance after saving.",
-              "work": "1 - \\frac{3}{5} = \\frac{2}{5}"
+              "work": "\\(1 - \\dfrac{3}{5} = \\dfrac{2}{5}\\)"
             },
             {
               "explain": "Calculate what fraction of the total allowance is spent on snacks by multiplying the spent fraction by the remainder.",
-              "work": "\\frac{1}{3} \\times \\frac{2}{5}"
+              "work": "\\(\\dfrac{1}{3} \\times \\dfrac{2}{5}\\)"
             },
             {
               "explain": "Multiply numerators and denominators.",
-              "work": "\\frac{1 \\times 2}{3 \\times 5} = \\frac{2}{15}"
+              "work": "\\(\\dfrac{1 \\times 2}{3 \\times 5} = \\dfrac{2}{15}\\)"
             }
           ],
           "xp": 2
@@ -522,12 +522,12 @@
           "id": "y6-frac-q24",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "The Tigers basketball team won \\\\\\\\(16\\\\) out of \\\\\\\\(24\\\\) matches. If \\\\(\\frac{3}{4}\\\\) of these wins were by more than \\\\\\\\(5\\\\) points, what fraction of all the matches were won by more than \\\\\\\\(5\\\\) points?",
+          "stem": "The Tigers basketball team won \\(16\\) out of \\(24\\) matches. If \\(\\dfrac{3}{4}\\) of these wins were by more than \\(5\\) points, what fraction of all the matches were won by more than \\(5\\) points?",
           "options": [
-            "\\\\(\\frac{1}{2}\\\\)",
-            "\\\\(\\frac{3}{4}\\\\)",
-            "\\\\(\\frac{2}{3}\\\\)",
-            "\\\\(\\frac{1}{3}\\\\)"
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{1}{3}\\)"
           ],
           "answer": 0,
           "hint": "First, find the total fraction of games won. Then multiply it by the fraction of wins that were by more than 5 points.",
@@ -535,15 +535,15 @@
           "steps": [
             {
               "explain": "Find the fraction of total matches won and simplify it.",
-              "work": "\\frac{16}{24} = \\frac{2}{3}"
+              "work": "\\(\\dfrac{16}{24} = \\dfrac{2}{3}\\)"
             },
             {
               "explain": "Multiply this fraction by the fraction of wins that were by >5 points.",
-              "work": "\\frac{2}{3} \\times \\frac{3}{4}"
+              "work": "\\(\\dfrac{2}{3} \\times \\dfrac{3}{4}\\)"
             },
             {
               "explain": "Multiply and simplify.",
-              "work": "\\frac{6}{12} = \\frac{1}{2}"
+              "work": "\\(\\dfrac{6}{12} = \\dfrac{1}{2}\\)"
             }
           ],
           "xp": 2
@@ -591,7 +591,7 @@
           "id": "y6-frac-q17",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "It takes \\\\(\\frac{2}{5}\\\\) of a bottle of juice to fill a large glass. How many glasses can be filled from \\\\\\\\(10\\\\) bottles?",
+          "stem": "It takes \\(\\dfrac{2}{5}\\) of a bottle of juice to fill a large glass. How many glasses can be filled from \\(10\\) bottles?",
           "options": [
             "25",
             "4",
@@ -599,20 +599,20 @@
             "50"
           ],
           "answer": 0,
-          "hint": "Divide the total number of bottles (\\\\\\\\(10\\\\)) by the fraction it takes to fill one glass.",
+          "hint": "Divide the total number of bottles (\\(10\\)) by the fraction it takes to fill one glass.",
           "solution": "We need to find \\\\\\\\(10 \\div \\frac{2}{5}\\\\). This is the same as \\\\\\\\(10 \\times \\frac{5}{2}\\\\). Multiply: \\\\(\\frac{50}{2} = 25\\\\). So, \\\\\\\\(25\\\\) glasses can be filled.",
           "steps": [
             {
               "explain": "Set up a division problem: Total bottles divided by the amount needed for one glass.",
-              "work": "10 \\div \\frac{2}{5}"
+              "work": "\\(10 \\div \\dfrac{2}{5}\\)"
             },
             {
               "explain": "To divide by a fraction, multiply by its reciprocal.",
-              "work": "10 \\times \\frac{5}{2}"
+              "work": "\\(10 \\times \\dfrac{5}{2}\\)"
             },
             {
               "explain": "Multiply and simplify.",
-              "work": "\\frac{50}{2} = 25"
+              "work": "\\(\\dfrac{50}{2} = 25\\)"
             }
           ],
           "xp": 2
