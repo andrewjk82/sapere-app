@@ -20,7 +20,7 @@ import {
   CheckCircle2,
   Circle,
 } from "lucide-react";
-import { db } from "../firebase/config";
+import { db, auth } from "../firebase/config";
 import {
   doc,
   updateDoc,
@@ -197,6 +197,8 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [sendingMessage, setSendingMessage] = useState(false);
   const [sendingReport, setSendingReport] = useState(false);
   const [sendingParentReport, setSendingParentReport] = useState(false);
+  // Parent contact lives in parent_contacts/{uid} (admin-only in firestore.rules), never on the student's own doc.
+  const [parentContact, setParentContact] = useState({ parentEmail: "", parentLang: "en" });
   const [exportingDailyPdf, setExportingDailyPdf] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
   const [hscRecords, setHscRecords] = useState([]);
@@ -463,6 +465,19 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   useEffect(() => {
+    if (!challengeResultsUid) return undefined;
+    let cancelled = false;
+    getDoc(doc(db, "parent_contacts", challengeResultsUid)).then((snap) => {
+      if (cancelled) return;
+      const d = snap.exists() ? snap.data() : {};
+      const contact = { parentEmail: d.parentEmail || "", parentLang: d.parentLang === "ko" ? "ko" : "en" };
+      setParentContact(contact);
+      setEditForm((f) => ({ ...f, ...contact }));
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [challengeResultsUid]);
+
+  useEffect(() => {
     if (!studentId) return;
     let cancelled = false;
     let unsubManual = null;
@@ -484,8 +499,6 @@ const StudentDetail = ({ studentId, onBack }) => {
         year: data.year || "",
         dreamJob: data.dreamJob || "",
         address: data.address || "",
-        parentEmail: data.parentEmail || "",
-        parentLang: data.parentLang === "ko" ? "ko" : "en",
         role: data.role || "",
         assignedYear: Array.isArray(data.assignedYear)
           ? data.assignedYear
@@ -746,15 +759,16 @@ const StudentDetail = ({ studentId, onBack }) => {
       showToast("Parent reports are only available for registered students (this profile has no linked account).", "warning", 7000);
       return;
     }
-    if (!(student?.parentEmail || "").trim()) {
+    if (!(parentContact.parentEmail || "").trim()) {
       showToast("No parent email saved. Add it in Edit profile first.", "warning", 7000);
       return;
     }
     try {
       setSendingParentReport(true);
+      const idToken = await auth.currentUser?.getIdToken();
       const response = await fetch("/api/send-parent-report", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${idToken}` },
         body: JSON.stringify({ studentId: reportUid, lang }),
       });
       const data = await response.json().catch(() => ({}));
@@ -1152,23 +1166,23 @@ const StudentDetail = ({ studentId, onBack }) => {
   const handleUpdateProfile = async () => {
     try {
       const normalizedRole = editForm.role || "";
+      // Parent contact details are kept out of the student's own document.
+      const { parentEmail, parentLang, ...profileFields } = editForm;
       await updateDoc(doc(db, activeStudentCollection, activeStudentId), {
-        ...editForm,
+        ...profileFields,
         role: normalizedRole,
         status: "Active",
         updatedAt: serverTimestamp(),
       });
       updateLocalStudentProfileCache({
-        ...editForm,
+        ...profileFields,
         role: normalizedRole,
         status: "Active",
       });
-      // The student's registered account (users/{uid}) is where the parent-report API reads these from.
-      if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
-        await updateDoc(doc(db, "users", challengeResultsUid), {
-          parentEmail: (editForm.parentEmail || "").trim(),
-          parentLang: editForm.parentLang === "ko" ? "ko" : "en",
-        }).catch(() => {});
+      if (challengeResultsUid) {
+        const contact = { parentEmail: (parentEmail || "").trim(), parentLang: parentLang === "ko" ? "ko" : "en" };
+        await setDoc(doc(db, "parent_contacts", challengeResultsUid), { ...contact, updatedAt: serverTimestamp() }, { merge: true });
+        setParentContact(contact);
       }
       touchStudentListMeta();
       setIsEditModalOpen(false);

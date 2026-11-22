@@ -10,6 +10,12 @@ service cloud.firestore {
       return request.auth != null;
     }
 
+    // Parent contact details (email + report language) for the weekly parent report.
+    // Admin-only: students must not read or change where their parents' reports go.
+    match /parent_contacts/{uid} {
+      allow read, write: if isAdmin();
+    }
+
     // homework_submissions/{sessionId} as it will be after the current batch:
     // owned by the caller and still 'submitted' (not checked). One access call.
     function ownsOpenSubmissionAfter(sessionId) {

@@ -6,11 +6,25 @@ import { buildParentReport } from './_lib/parentWeeklyReport.js';
 /**
  * Parent weekly report — triggered by the teacher from a student's profile.
  * POST { studentId, lang?: 'en' | 'ko', preview?: boolean }
- *   - sends this week's report to the parent email saved on the student (users/{id}.parentEmail),
- *     in `lang` (default: users/{id}.parentLang, else 'en').
+ *   - sends this week's report to the parent email saved on the student (parent_contacts/{id}.parentEmail),
+ *     in `lang` (default: parent_contacts/{id}.parentLang, else 'en').
  *   - preview: true → returns { subject, html } and sends nothing.
  */
 const EMAIL_RE = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/;
+
+// Same rule as firestore.rules isAdmin(): the teacher's own account only.
+const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || 'andrewjk82@gmail.com').toLowerCase();
+
+async function verifyAdmin(req) {
+  const token = (req.headers.authorization || '').replace('Bearer ', '').trim();
+  if (!token) return false;
+  try {
+    const decoded = await admin.auth().verifyIdToken(token);
+    return String(decoded.email || '').toLowerCase() === ADMIN_EMAIL;
+  } catch {
+    return false;
+  }
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
@@ -24,6 +38,7 @@ export default async function handler(req, res) {
         }),
       });
     }
+    if (!(await verifyAdmin(req))) return res.status(401).json({ error: 'Unauthorized' });
     const db = admin.firestore();
     const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
     const { studentId, preview = false } = body;
@@ -34,8 +49,10 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: 'Student account not found. Parent reports need a registered student.' });
     }
     const student = userSnap.data();
-    const parentEmail = String(student.parentEmail || '').trim();
-    const lang = (body.lang || student.parentLang) === 'ko' ? 'ko' : 'en';
+    // Parent contact is in parent_contacts/{uid} (admin-only), not on the student's own document.
+    const contact = (await db.collection('parent_contacts').doc(studentId).get()).data() || {};
+    const parentEmail = String(contact.parentEmail || '').trim();
+    const lang = (body.lang || contact.parentLang) === 'ko' ? 'ko' : 'en';
     if (!preview && !EMAIL_RE.test(parentEmail)) {
       return res.status(200).json({ success: false, emailError: 'No valid parent email saved for this student (add it in Edit profile).' });
     }
@@ -84,7 +101,7 @@ export default async function handler(req, res) {
     } catch (e) {
       return res.status(200).json({ success: false, emailError: e.message });
     }
-    return res.status(200).json({ success: true, email: parentEmail, lang });
+    return res.status(200).json({ success: true, lang });
   } catch (error) {
     console.error('send-parent-report error:', error);
     return res.status(500).json({ error: error.message });
