@@ -21,19 +21,42 @@ export function drawPenSegments(ctx, pts, startIdx, color, dpr, includeTip) {
     return;
   }
 
+  // Each piece is the quadratic from the previous midpoint, through p0, to the next midpoint. Its width runs smoothly
+  // from the width at the start midpoint to the width at the end midpoint (sub-divided only when the width changes),
+  // so pressure changes taper along the line instead of stepping at every sample.
   const from = Math.max(1, startIdx);
   for (let i = from; i < pts.length; i++) {
     const p0 = pts[i - 1];
     const p1 = pts[i];
-    const fromX = i === 1 ? p0[0] : (pts[i - 2][0] + p0[0]) / 2;
-    const fromY = i === 1 ? p0[1] : (pts[i - 2][1] + p0[1]) / 2;
+    const pm = i === 1 ? null : pts[i - 2];
+    const fromX = pm ? (pm[0] + p0[0]) / 2 : p0[0];
+    const fromY = pm ? (pm[1] + p0[1]) / 2 : p0[1];
     const toX = (p0[0] + p1[0]) / 2;
     const toY = (p0[1] + p1[1]) / 2;
-    ctx.lineWidth = Math.max(0.4, p0[2]) * dpr;
-    ctx.beginPath();
-    ctx.moveTo(fromX * dpr, fromY * dpr);
-    ctx.quadraticCurveTo(p0[0] * dpr, p0[1] * dpr, toX * dpr, toY * dpr);
-    ctx.stroke();
+    const w0 = Math.max(0.4, pm ? (pm[2] + p0[2]) / 2 : p0[2]);
+    const w1 = Math.max(0.4, (p0[2] + p1[2]) / 2);
+    const len = Math.hypot(toX - fromX, toY - fromY);
+    const n = Math.abs(w1 - w0) * dpr < 0.15 ? 1 : Math.max(1, Math.min(6, Math.ceil(len / 1.5)));
+    if (n === 1) {
+      ctx.lineWidth = ((w0 + w1) / 2) * dpr;
+      ctx.beginPath();
+      ctx.moveTo(fromX * dpr, fromY * dpr);
+      ctx.quadraticCurveTo(p0[0] * dpr, p0[1] * dpr, toX * dpr, toY * dpr);
+      ctx.stroke();
+      continue;
+    }
+    let px = fromX, py = fromY;
+    for (let k = 1; k <= n; k++) {
+      const t = k / n, u = 1 - t;
+      const x = u * u * fromX + 2 * u * t * p0[0] + t * t * toX;
+      const y = u * u * fromY + 2 * u * t * p0[1] + t * t * toY;
+      ctx.lineWidth = (w0 + (w1 - w0) * (k - 0.5) / n) * dpr;
+      ctx.beginPath();
+      ctx.moveTo(px * dpr, py * dpr);
+      ctx.lineTo(x * dpr, y * dpr);
+      ctx.stroke();
+      px = x; py = y;
+    }
   }
 
   if (includeTip && pts.length >= 2) {
@@ -78,10 +101,14 @@ export function drawTip(ctx, stroke, dpr, predicted) {
   ctx.lineWidth = Math.max(0.4, b[2]) * dpr;
   ctx.beginPath();
   ctx.moveTo(((a[0] + b[0]) / 2) * dpr, ((a[1] + b[1]) / 2) * dpr);
-  ctx.lineTo(b[0] * dpr, b[1] * dpr);
-  for (let i = 0; i < predicted.length; i++) {
-    ctx.lineTo(predicted[i][0] * dpr, predicted[i][1] * dpr);
+  // Curve through the real nib point and on through the predicted ones (midpoint smoothing, like the settled ink).
+  const ahead = [b, ...predicted];
+  for (let i = 0; i < ahead.length - 1; i++) {
+    const c = ahead[i], d = ahead[i + 1];
+    ctx.quadraticCurveTo(c[0] * dpr, c[1] * dpr, ((c[0] + d[0]) / 2) * dpr, ((c[1] + d[1]) / 2) * dpr);
   }
+  const end = ahead[ahead.length - 1];
+  ctx.lineTo(end[0] * dpr, end[1] * dpr);
   ctx.stroke();
   ctx.restore();
 }
