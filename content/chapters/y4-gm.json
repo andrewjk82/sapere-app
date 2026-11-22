@@ -1,0 +1,191 @@
+{
+  "chapterId": "y4-gm",
+  "title": "Geometric Measure (B)",
+  "year": "Year 4",
+  "topics": [
+    {
+      "topicId": "y4-gm-1",
+      "code": "MA2-GM-01",
+      "title": "Perimeter: Measure and calculate perimeter of rectangles and irregular shapes using mm, cm and m",
+      "questions": []
+    },
+    {
+      "topicId": "y4-gm-2",
+      "code": "MA2-GM-01",
+      "title": "Millimetres: Measure with millimetres; convert between mm, cm and m using scaled instruments",
+      "questions": [
+        {
+          "id": "y4-gm-2-th1-p5-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which is the best estimate for the length of an ironing board?",
+          "options": [
+            "115 mm",
+            "115 cm",
+            "115 m",
+            "115 km"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare each unit with a 30 cm school ruler: 115 mm is only 11.5 cm (too short), and 115 m is longer than a football field (too long)!",
+          "keyPoints": [
+            {
+              "text": "best estimate",
+              "note": "Use benchmarks: 10 mm = 1 cm, a school ruler = 30 cm, 100 cm = 1 m."
+            },
+            {
+              "text": "ironing board",
+              "note": "Compare each unit with a 30 cm school ruler: 115 mm is only 11.5 cm (too short), and 115 m is longer than a football field (too long)!"
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert 115 mm to centimetres by dividing by 10: 115 mm = 11.5 cm, which is shorter than a pencil — far too small for an ironing board.",
+              "work": "\\(115\\text{ mm} = 11.5\\text{ cm (too small)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 172\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"172\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Ironing board</text><path d=\"M55,54 L245,54 Q285,54 285,66 Q285,78 245,78 L55,78 Z\" fill=\"#93c5fd\" stroke=\"#1e40af\" stroke-width=\"2\"/><line x1=\"95\" y1=\"78\" x2=\"215\" y2=\"132\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"215\" y1=\"78\" x2=\"95\" y2=\"132\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"38\" x2=\"285\" y2=\"38\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"55,38 63,34 63,42\" fill=\"#dc2626\"/><polygon points=\"285,38 277,34 277,42\" fill=\"#dc2626\"/><text x=\"170\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Eliminate units that are too small</text></svg>"
+              }
+            },
+            {
+              "explain": "Check 115 cm: since 100 cm = 1 m, 115 cm is 1.15 m (just over 1 metre long), which matches a real ironing board.",
+              "work": "\\(115\\text{ cm} = 1.15\\text{ m (reasonable)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 172\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"172\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Ironing board</text><path d=\"M55,54 L245,54 Q285,54 285,66 Q285,78 245,78 L55,78 Z\" fill=\"#93c5fd\" stroke=\"#1e40af\" stroke-width=\"2\"/><line x1=\"95\" y1=\"78\" x2=\"215\" y2=\"132\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"215\" y1=\"78\" x2=\"95\" y2=\"132\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"38\" x2=\"285\" y2=\"38\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"55,38 63,34 63,42\" fill=\"#dc2626\"/><polygon points=\"285,38 277,34 277,42\" fill=\"#dc2626\"/><text x=\"170\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">115 cm = 1.15 m (about 4 school rulers)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check 115 m and 115 km: 115 m is longer than a soccer field, and 115 km is the distance between cities — both are far too large.",
+              "work": "\\(115\\text{ m and } 115\\text{ km are far too long}\\)"
+            },
+            {
+              "explain": "Therefore, 115 cm is the best estimate for the length of an ironing board.",
+              "work": "\\(\\text{Best estimate} = 115\\text{ cm}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 148\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"148\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Ironing board</text><path d=\"M55,54 L245,54 Q285,54 285,66 Q285,78 245,78 L55,78 Z\" fill=\"#93c5fd\" stroke=\"#1e40af\" stroke-width=\"2\"/><line x1=\"95\" y1=\"78\" x2=\"215\" y2=\"132\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"215\" y1=\"78\" x2=\"95\" y2=\"132\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"38\" x2=\"285\" y2=\"38\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"55,38 63,34 63,42\" fill=\"#dc2626\"/><polygon points=\"285,38 277,34 277,42\" fill=\"#dc2626\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-2-th1-p5-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which is the best estimate for the length of a small car?",
+          "options": [
+            "4 mm",
+            "4 cm",
+            "4 m",
+            "4 km"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 m = 100 cm (a big adult stride). A small car is about 4 metres long.",
+          "keyPoints": [
+            {
+              "text": "best estimate",
+              "note": "Use benchmarks: 10 mm = 1 cm, a school ruler = 30 cm, 100 cm = 1 m."
+            },
+            {
+              "text": "small car",
+              "note": "Remember 1 m = 100 cm (a big adult stride). A small car is about 4 metres long."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check 4 mm and 4 cm: 4 mm is the thickness of a coin stack and 4 cm is about the width of two fingers — far too small for a real car.",
+              "work": "\\(4\\text{ mm and } 4\\text{ cm are tiny}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 172\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"172\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Small car</text><path d=\"M55,105 L65,78 L115,58 L215,58 L258,78 L285,84 L285,112 L55,112 Z\" fill=\"#f87171\" stroke=\"#991b1b\" stroke-width=\"2\"/><polygon points=\"118,64 166,64 166,82 95,82\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"1.5\"/><polygon points=\"174,64 212,64 242,82 174,82\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"112\" r=\"18\" fill=\"#1e293b\"/><circle cx=\"105\" cy=\"112\" r=\"8\" fill=\"#cbd5e1\"/><circle cx=\"235\" cy=\"112\" r=\"18\" fill=\"#1e293b\"/><circle cx=\"235\" cy=\"112\" r=\"8\" fill=\"#cbd5e1\"/><line x1=\"55\" y1=\"40\" x2=\"285\" y2=\"40\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"55,40 63,36 63,44\" fill=\"#2563eb\"/><polygon points=\"285,40 277,36 277,44\" fill=\"#2563eb\"/><text x=\"170\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Eliminate units that are too small</text></svg>"
+              }
+            },
+            {
+              "explain": "Check 4 m: 4 metres equals 400 cm (about 4 big strides), which is the realistic length of a small family car.",
+              "work": "\\(4\\text{ m} = 400\\text{ cm (reasonable)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 172\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"172\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Small car</text><path d=\"M55,105 L65,78 L115,58 L215,58 L258,78 L285,84 L285,112 L55,112 Z\" fill=\"#f87171\" stroke=\"#991b1b\" stroke-width=\"2\"/><polygon points=\"118,64 166,64 166,82 95,82\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"1.5\"/><polygon points=\"174,64 212,64 242,82 174,82\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"112\" r=\"18\" fill=\"#1e293b\"/><circle cx=\"105\" cy=\"112\" r=\"8\" fill=\"#cbd5e1\"/><circle cx=\"235\" cy=\"112\" r=\"18\" fill=\"#1e293b\"/><circle cx=\"235\" cy=\"112\" r=\"8\" fill=\"#cbd5e1\"/><line x1=\"55\" y1=\"40\" x2=\"285\" y2=\"40\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"55,40 63,36 63,44\" fill=\"#2563eb\"/><polygon points=\"285,40 277,36 277,44\" fill=\"#2563eb\"/><text x=\"170\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">4 m = 400 cm (realistic car length)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check 4 km: 4 kilometres is 4000 m, which is a long driving distance, not the length of a car.",
+              "work": "\\(4\\text{ km} = 4000\\text{ m (far too long)}\\)"
+            },
+            {
+              "explain": "Therefore, 4 m is the best estimate for the length of a small car.",
+              "work": "\\(\\text{Best estimate} = 4\\text{ m}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 148\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"148\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Small car</text><path d=\"M55,105 L65,78 L115,58 L215,58 L258,78 L285,84 L285,112 L55,112 Z\" fill=\"#f87171\" stroke=\"#991b1b\" stroke-width=\"2\"/><polygon points=\"118,64 166,64 166,82 95,82\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"1.5\"/><polygon points=\"174,64 212,64 242,82 174,82\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"112\" r=\"18\" fill=\"#1e293b\"/><circle cx=\"105\" cy=\"112\" r=\"8\" fill=\"#cbd5e1\"/><circle cx=\"235\" cy=\"112\" r=\"18\" fill=\"#1e293b\"/><circle cx=\"235\" cy=\"112\" r=\"8\" fill=\"#cbd5e1\"/><line x1=\"55\" y1=\"40\" x2=\"285\" y2=\"40\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"55,40 63,36 63,44\" fill=\"#2563eb\"/><polygon points=\"285,40 277,36 277,44\" fill=\"#2563eb\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-2-th1-p5-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which is the best estimate for the length of a birthday card?",
+          "options": [
+            "18 mm",
+            "18 cm",
+            "18 m",
+            "18 km"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare with a 30 cm school ruler: a birthday card is a bit more than half the length of a 30 cm ruler.",
+          "keyPoints": [
+            {
+              "text": "best estimate",
+              "note": "Use benchmarks: 10 mm = 1 cm, a school ruler = 30 cm, 100 cm = 1 m."
+            },
+            {
+              "text": "birthday card",
+              "note": "Compare with a 30 cm school ruler: a birthday card is a bit more than half the length of a 30 cm ruler."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert 18 mm to centimetres: 18 mm = 1.8 cm, about the width of a fingernail — too small for a birthday card.",
+              "work": "\\(18\\text{ mm} = 1.8\\text{ cm (too small)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 172\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"172\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Birthday card</text><rect x=\"112\" y=\"42\" width=\"116\" height=\"86\" rx=\"4\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"76\" r=\"14\" fill=\"#f472b6\" stroke=\"#be185d\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"90\" x2=\"170\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">Happy Birthday!</text><line x1=\"246\" y1=\"42\" x2=\"246\" y2=\"128\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"246,42 242,50 250,50\" fill=\"#16a34a\"/><polygon points=\"246,128 242,120 250,120\" fill=\"#16a34a\"/><text x=\"170\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Eliminate units that are too small</text></svg>"
+              }
+            },
+            {
+              "explain": "Check 18 cm: 18 cm is a little over half of a 30 cm school ruler, which is the exact size of a standard birthday card.",
+              "work": "\\(18\\text{ cm (reasonable for a card)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 172\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"172\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Birthday card</text><rect x=\"112\" y=\"42\" width=\"116\" height=\"86\" rx=\"4\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"76\" r=\"14\" fill=\"#f472b6\" stroke=\"#be185d\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"90\" x2=\"170\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">Happy Birthday!</text><line x1=\"246\" y1=\"42\" x2=\"246\" y2=\"128\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"246,42 242,50 250,50\" fill=\"#16a34a\"/><polygon points=\"246,128 242,120 250,120\" fill=\"#16a34a\"/><text x=\"170\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">18 cm (just over half a 30 cm ruler)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check 18 m and 18 km: 18 m is longer than a bus, and 18 km is a town-to-town distance — far too large.",
+              "work": "\\(18\\text{ m and } 18\\text{ km are far too large}\\)"
+            },
+            {
+              "explain": "Therefore, 18 cm is the best estimate for the length of a birthday card.",
+              "work": "\\(\\text{Best estimate} = 18\\text{ cm}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 148\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"148\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"170\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">Birthday card</text><rect x=\"112\" y=\"42\" width=\"116\" height=\"86\" rx=\"4\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"76\" r=\"14\" fill=\"#f472b6\" stroke=\"#be185d\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"90\" x2=\"170\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#92400e\">Happy Birthday!</text><line x1=\"246\" y1=\"42\" x2=\"246\" y2=\"128\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"246,42 242,50 250,50\" fill=\"#16a34a\"/><polygon points=\"246,128 242,120 250,120\" fill=\"#16a34a\"/></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y4-gm-3",
+      "code": "MA2-GM-02",
+      "title": "Angles — compare: Compare and classify angles as acute, right, obtuse or straight",
+      "questions": []
+    },
+    {
+      "topicId": "y4-gm-4",
+      "code": "MA2-GM-03",
+      "title": "Grid maps — create: Create and interpret grid maps; use grid references and directional language to describe routes",
+      "questions": []
+    }
+  ]
+}

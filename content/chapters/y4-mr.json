@@ -1,0 +1,284 @@
+{
+  "chapterId": "y4-mr",
+  "title": "Multiplicative Relations (B)",
+  "year": "Year 4",
+  "topics": [
+    {
+      "topicId": "y4-mr-1",
+      "code": "MA2-MR-01",
+      "title": "All multiplication facts to 10×10: Recall facts for 2, 3, 4, 5, 6, 8, 9 and 10; use known facts to find related facts",
+      "questions": [
+        {
+          "id": "y4-mr-1-th3-p12-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{even} \\times \\text{even}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of even × even and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{even} \\times \\text{even}\\) and calculate the result.",
+              "work": "\\(4 \\times 6 = 24\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is even.",
+              "work": "\\(\\text{Result 1 is even}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(2 \\times 8 = 16 \\quad (\\text{also even})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{even} \\times \\text{even}\\) is always even.",
+              "work": "\\(\\text{even} \\times \\text{even} = \\text{even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th3-p12-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{odd} \\times \\text{odd}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of odd × odd and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{odd} \\times \\text{odd}\\) and calculate the result.",
+              "work": "\\(3 \\times 5 = 15\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is odd.",
+              "work": "\\(\\text{Result 1 is odd}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(7 \\times 9 = 63 \\quad (\\text{also odd})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{odd} \\times \\text{odd}\\) is always odd.",
+              "work": "\\(\\text{odd} \\times \\text{odd} = \\text{odd}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th3-p12-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{even} \\times \\text{odd}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of even × odd and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{even} \\times \\text{odd}\\) and calculate the result.",
+              "work": "\\(4 \\times 5 = 20\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is even.",
+              "work": "\\(\\text{Result 1 is even}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(6 \\times 7 = 42 \\quad (\\text{also even})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{even} \\times \\text{odd}\\) is always even.",
+              "work": "\\(\\text{even} \\times \\text{odd} = \\text{even}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y4-mr-2",
+      "code": "MA2-MR-01",
+      "title": "Area model: Use the structure of the area model to represent multiplication and division",
+      "questions": []
+    },
+    {
+      "topicId": "y4-mr-3",
+      "code": "MA2-MR-01",
+      "title": "Factors and multiples: Identify factors of numbers; investigate number sequences of related multiples",
+      "questions": []
+    },
+    {
+      "topicId": "y4-mr-4",
+      "code": "MA2-MR-01",
+      "title": "Multiples of 10: Operate with multiples of 10 using known number facts and strategies",
+      "questions": []
+    },
+    {
+      "topicId": "y4-mr-5",
+      "code": "MA2-MR-02",
+      "title": "All division facts to 10×10: Recall division facts for 2, 3, 4, 5, 6, 8, 9 and 10; inverse operations",
+      "questions": [
+        {
+          "id": "y4-mr-5-th2-p9-ps3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In this multiplication square, each inside number is the product of its row header and column header. What number belongs in the bottom-right square (?)?",
+          "options": [
+            "15",
+            "16",
+            "18",
+            "24"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find a common factor of 15 and 12 for the top-row header, then divide to find the column headers and the bottom-row header.",
+          "keyPoints": [
+            {
+              "text": "multiplication square",
+              "note": "Each inside cell equals its row header multiplied by its column header."
+            },
+            {
+              "text": "bottom-right square",
+              "note": "Use common factors of 15 and 12, and of 15 and 20, to unlock all four headers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the top row: \\(15\\) and \\(12\\) share the common factor \\(3\\). Place \\(3\\) as the top-row header.",
+              "work": "\\(15 = 3 \\times 5, \\quad 12 = 3 \\times 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">×</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">3</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">20</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Common factor of 15 and 12 is 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide \\(15\\) and \\(12\\) by \\(3\\) to find the two column headers: \\(5\\) and \\(4\\).",
+              "work": "\\(15 \\div 3 = 5, \\quad 12 \\div 3 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">×</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">5</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">4</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">3</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">20</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Column headers are 5 and 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Now use the bottom-left cell \\(20\\) and column 1 header \\(5\\) to find the bottom-row header.",
+              "work": "\\(20 \\div 5 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">×</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">4</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">3</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">4</text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">20</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Bottom-row header = 20 ÷ 5 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the bottom-row header \\(4\\) by the second column header \\(4\\) to find the missing number.",
+              "work": "\\(4 \\times 4 = 16\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">×</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">4</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">3</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">4</text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">20</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">16</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Bottom-right = 4 × 4 = 16</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 198\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"198\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">×</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">20</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y4-mr-6",
+      "code": "MA2-MR-02",
+      "title": "Word problems: Represent and solve word problems with number sentences involving multiplication or division",
+      "questions": [
+        {
+          "id": "y4-mr-6-th3-p13-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using each of the digits \\(5, 8,\\) and \\(4\\) once, and using addition or multiplication, what is the largest number you can make?",
+          "options": [
+            "420",
+            "432",
+            "360",
+            "160"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiplying a 2-digit number by a 1-digit number beats adding or multiplying three 1-digit numbers. Compare 8 × 54 and 5 × 84 carefully!",
+          "keyPoints": [
+            {
+              "text": "each of the digits",
+              "note": "Use 5, 8, and 4 once each; you can combine two digits into a 2-digit number."
+            },
+            {
+              "text": "largest number",
+              "note": "Test the top multiplication combinations: 8 × 54 and 5 × 84."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare multiplying three 1-digit numbers against multiplying a 2-digit number by a 1-digit number. Making a 2-digit number gives a much larger product.",
+              "work": "\\(8 \\times 5 \\times 4 = 160 \\text{ (smaller than 2-digit } \\times \\text{ 1-digit)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"62\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">5</text><rect x=\"136\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"162\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">8</text><rect x=\"210\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"236\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">4</text><text x=\"160\" y=\"96\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0369a1\">Try 2-digit × 1-digit combinations</text></svg>"
+              }
+            },
+            {
+              "explain": "Test putting the largest digit \\(8\\) as the tens digit of the 2-digit number: \\(5 \\times 84\\).",
+              "work": "\\(5 \\times 84 = (5 \\times 80) + (5 \\times 4) = 400 + 20 = 420\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"62\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">5</text><rect x=\"136\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#2563eb\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"162\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">8</text><rect x=\"210\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#0891b2\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"236\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">4</text><text x=\"160\" y=\"96\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0369a1\">Test 1: 5 × 84 = 420</text></svg>"
+              }
+            },
+            {
+              "explain": "Now test putting the largest digit \\(8\\) as the single-digit multiplier and arranging the other two digits as \\(54\\): \\(8 \\times 54\\).",
+              "work": "\\(8 \\times 54 = (8 \\times 50) + (8 \\times 4) = 400 + 32 = 432\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"62\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#7c3aed\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">5</text><rect x=\"136\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"162\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">8</text><rect x=\"210\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#0891b2\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"236\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">4</text><text x=\"160\" y=\"96\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0369a1\">Test 2: 8 × 54 = 432</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare all top combinations (\\(432 > 420 > 360 > 340 > 160\\)). The largest number you can make is \\(432\\).",
+              "work": "\\(8 \\times 54 = 432\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 114\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"114\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"62\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">5</text><rect x=\"136\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"162\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">8</text><rect x=\"210\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#f59e0b\" stroke=\"#b45309\" stroke-width=\"3\"/><text x=\"236\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">4</text><text x=\"160\" y=\"96\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0369a1\">Largest: 8 × 54 = 432</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"62\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#7c3aed\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">5</text><rect x=\"136\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#2563eb\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"162\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">8</text><rect x=\"210\" y=\"16\" width=\"52\" height=\"52\" rx=\"8\" fill=\"#0891b2\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"236\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#ffffff\">4</text></svg>"
+          }
+        }
+      ]
+    }
+  ]
+}

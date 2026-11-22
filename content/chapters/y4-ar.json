@@ -1,0 +1,792 @@
+{
+  "chapterId": "y4-ar",
+  "title": "Additive Relations (B)",
+  "year": "Year 4",
+  "topics": [
+    {
+      "topicId": "y4-ar-1",
+      "code": "MA2-AR-01",
+      "title": "Regroup to 1000+: Partition, rearrange and regroup numbers to at least 1000 to solve additive problems",
+      "questions": [
+        {
+          "id": "y4-ar-1-th2-p8-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Split the numbers into their place values to add: \\(312 + 186\\). What is the answer?",
+          "options": [
+            "488",
+            "498",
+            "508",
+            "496"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each place-value column separately, then add the three results together.",
+          "keyPoints": [
+            {
+              "text": "Split the numbers into their place values",
+              "note": "Break each 3-digit number into hundreds + tens + ones."
+            },
+            {
+              "text": "312 + 186",
+              "note": "Work on hundreds, tens, and ones separately, then combine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both \\(312\\) and \\(186\\) into hundreds, tens, and ones.",
+              "work": "\\(312 = 300 + 10 + 2, \\quad 186 = 100 + 80 + 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">312 + 186 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">300 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 312 = 300+10+2 and 186 = 100+80+6</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together.",
+              "work": "\\(300 + 100 = 400, \\quad 10 + 80 = 90\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">312 + 186 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">300 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 400</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Now add the ones digits.",
+              "work": "\\(2 + 6 = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">312 + 186 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">300 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 400</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 8</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Recombine the hundreds, tens, and ones results to get the final answer.",
+              "work": "\\(400 + 90 + 8 = 498\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">312 + 186 = 498</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">300 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 400</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 8</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 400 + 90 + 8 = 498</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">312 + 186 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th2-p8-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Split the numbers into their place values to add: \\(541 + 357\\). What is the answer?",
+          "options": [
+            "888",
+            "897",
+            "898",
+            "908"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each place-value column separately, then add the three results together.",
+          "keyPoints": [
+            {
+              "text": "Split the numbers into their place values",
+              "note": "Break each 3-digit number into hundreds + tens + ones."
+            },
+            {
+              "text": "541 + 357",
+              "note": "Work on hundreds, tens, and ones separately, then combine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both \\(541\\) and \\(357\\) into hundreds, tens, and ones.",
+              "work": "\\(541 = 500 + 40 + 1, \\quad 357 = 300 + 50 + 7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">541 + 357 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 50</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 541 = 500+40+1 and 357 = 300+50+7</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together.",
+              "work": "\\(500 + 300 = 800, \\quad 40 + 50 = 90\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">541 + 357 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 800</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 50</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Now add the ones digits.",
+              "work": "\\(1 + 7 = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">541 + 357 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 800</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 50</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 8</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Recombine the hundreds, tens, and ones results to get the final answer.",
+              "work": "\\(800 + 90 + 8 = 898\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">541 + 357 = 898</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 800</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 50</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 8</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 800 + 90 + 8 = 898</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">541 + 357 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th2-p8-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Split the numbers into their place values to add: \\(730 + 269\\). What is the answer?",
+          "options": [
+            "989",
+            "990",
+            "999",
+            "1009"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each place-value column separately, then add the three results together.",
+          "keyPoints": [
+            {
+              "text": "Split the numbers into their place values",
+              "note": "Break each 3-digit number into hundreds + tens + ones."
+            },
+            {
+              "text": "730 + 269",
+              "note": "Work on hundreds, tens, and ones separately, then combine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both \\(730\\) and \\(269\\) into hundreds, tens, and ones.",
+              "work": "\\(730 = 700 + 30 + 0, \\quad 269 = 200 + 60 + 9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">730 + 269 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 + 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">0 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 730 = 700+30+0 and 269 = 200+60+9</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together.",
+              "work": "\\(700 + 200 = 900, \\quad 30 + 60 = 90\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">730 + 269 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 900</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 + 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">0 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Now add the ones digits.",
+              "work": "\\(0 + 9 = 9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">730 + 269 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 900</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 + 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">0 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 9</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Recombine the hundreds, tens, and ones results to get the final answer.",
+              "work": "\\(900 + 90 + 9 = 999\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">730 + 269 = 999</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 900</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 + 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 90</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">0 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 9</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 900 + 90 + 9 = 999</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">730 + 269 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th2-p8-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Split the numbers into their place values to subtract: \\(785 - 463\\). What is the answer?",
+          "options": [
+            "322",
+            "312",
+            "332",
+            "222"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, subtract each place-value column separately, then add the three results together.",
+          "keyPoints": [
+            {
+              "text": "Split the numbers into their place values",
+              "note": "Break each 3-digit number into hundreds + tens + ones."
+            },
+            {
+              "text": "785 - 463",
+              "note": "Work on hundreds, tens, and ones separately, then combine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both \\(785\\) and \\(463\\) into hundreds, tens, and ones.",
+              "work": "\\(785 = 700 + 80 + 5, \\quad 463 = 400 + 60 + 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">785 − 463 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 − 400</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5 − 3</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 785 = 700+80+5 and 463 = 400+60+3</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the hundreds together and the tens together.",
+              "work": "\\(700 - 400 = 300, \\quad 80 - 60 = 20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">785 − 463 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 − 400</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 300</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 20</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5 − 3</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Now subtract the ones digits.",
+              "work": "\\(5 - 3 = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">785 − 463 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 − 400</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 300</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 20</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5 − 3</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 2</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Recombine the hundreds, tens, and ones results to get the final answer.",
+              "work": "\\(300 + 20 + 2 = 322\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">785 − 463 = 322</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">700 − 400</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 300</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 20</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5 − 3</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 2</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 300 + 20 + 2 = 322</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">785 − 463 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th2-p8-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Split the numbers into their place values to subtract: \\(498 - 164\\). What is the answer?",
+          "options": [
+            "324",
+            "334",
+            "344",
+            "234"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, subtract each place-value column separately, then add the three results together.",
+          "keyPoints": [
+            {
+              "text": "Split the numbers into their place values",
+              "note": "Break each 3-digit number into hundreds + tens + ones."
+            },
+            {
+              "text": "498 - 164",
+              "note": "Work on hundreds, tens, and ones separately, then combine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both \\(498\\) and \\(164\\) into hundreds, tens, and ones.",
+              "work": "\\(498 = 400 + 90 + 8, \\quad 164 = 100 + 60 + 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">498 − 164 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 4</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 498 = 400+90+8 and 164 = 100+60+4</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the hundreds together and the tens together.",
+              "work": "\\(400 - 100 = 300, \\quad 90 - 60 = 30\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">498 − 164 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 300</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 30</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 4</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Now subtract the ones digits.",
+              "work": "\\(8 - 4 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">498 − 164 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 300</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 30</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 4</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 4</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Recombine the hundreds, tens, and ones results to get the final answer.",
+              "work": "\\(300 + 30 + 4 = 334\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">498 − 164 = 334</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 300</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 60</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 30</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 4</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 4</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 300 + 30 + 4 = 334</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">498 − 164 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th2-p8-q24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Split the numbers into their place values to subtract: \\(668 - 102\\). What is the answer?",
+          "options": [
+            "564",
+            "556",
+            "566",
+            "576"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, subtract each place-value column separately, then add the three results together.",
+          "keyPoints": [
+            {
+              "text": "Split the numbers into their place values",
+              "note": "Break each 3-digit number into hundreds + tens + ones."
+            },
+            {
+              "text": "668 - 102",
+              "note": "Work on hundreds, tens, and ones separately, then combine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both \\(668\\) and \\(102\\) into hundreds, tens, and ones.",
+              "work": "\\(668 = 600 + 60 + 8, \\quad 102 = 100 + 0 + 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">668 − 102 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">60 − 0</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 668 = 600+60+8 and 102 = 100+0+2</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the hundreds together and the tens together.",
+              "work": "\\(600 - 100 = 500, \\quad 60 - 0 = 60\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">668 − 102 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 500</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">60 − 0</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 60</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Now subtract the ones digits.",
+              "work": "\\(8 - 2 = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">668 − 102 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 500</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">60 − 0</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 60</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 6</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Recombine the hundreds, tens, and ones results to get the final answer.",
+              "work": "\\(500 + 60 + 6 = 566\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">668 − 102 = 566</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 500</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">60 − 0</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 60</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 6</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 500 + 60 + 6 = 566</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">668 − 102 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y4-ar-2",
+      "code": "MA2-AR-01",
+      "title": "Efficient strategies: Turnarounds, friendly pairs, estimation; choose and apply strategies flexibly",
+      "questions": [
+        {
+          "id": "y4-ar-2-th3-p12-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{odd} + \\text{odd}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of odd + odd and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{odd} + \\text{odd}\\) and calculate the result.",
+              "work": "\\(3 + 5 = 8\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is even.",
+              "work": "\\(\\text{Result 1 is even}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(7 + 9 = 16 \\quad (\\text{also even})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{odd} + \\text{odd}\\) is always even.",
+              "work": "\\(\\text{odd} + \\text{odd} = \\text{even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th3-p12-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{even} + \\text{even}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of even + even and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{even} + \\text{even}\\) and calculate the result.",
+              "work": "\\(4 + 6 = 10\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is even.",
+              "work": "\\(\\text{Result 1 is even}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(8 + 12 = 20 \\quad (\\text{also even})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{even} + \\text{even}\\) is always even.",
+              "work": "\\(\\text{even} + \\text{even} = \\text{even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th3-p12-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{odd} + \\text{even}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of odd + even and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{odd} + \\text{even}\\) and calculate the result.",
+              "work": "\\(3 + 4 = 7\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is odd.",
+              "work": "\\(\\text{Result 1 is odd}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(9 + 6 = 15 \\quad (\\text{also odd})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{odd} + \\text{even}\\) is always odd.",
+              "work": "\\(\\text{odd} + \\text{even} = \\text{odd}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th3-p12-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{odd} - \\text{odd}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of odd - odd and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{odd} - \\text{odd}\\) and calculate the result.",
+              "work": "\\(9 - 5 = 4\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is even.",
+              "work": "\\(\\text{Result 1 is even}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(13 - 7 = 6 \\quad (\\text{also even})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{odd} - \\text{odd}\\) is always even.",
+              "work": "\\(\\text{odd} - \\text{odd} = \\text{even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th3-p12-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{even} - \\text{even}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of even - even and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{even} - \\text{even}\\) and calculate the result.",
+              "work": "\\(10 - 4 = 6\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is even.",
+              "work": "\\(\\text{Result 1 is even}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(16 - 8 = 8 \\quad (\\text{also even})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{even} - \\text{even}\\) is always even.",
+              "work": "\\(\\text{even} - \\text{even} = \\text{even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th3-p12-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{odd} - \\text{even}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of odd - even and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{odd} - \\text{even}\\) and calculate the result.",
+              "work": "\\(9 - 4 = 5\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is odd.",
+              "work": "\\(\\text{Result 1 is odd}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(15 - 6 = 9 \\quad (\\text{also odd})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{odd} - \\text{even}\\) is always odd.",
+              "work": "\\(\\text{odd} - \\text{even} = \\text{odd}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th3-p12-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Will the answer to \\(\\text{even} - \\text{odd}\\) be odd or even?",
+          "options": [
+            "Always even",
+            "Always odd",
+            "Sometimes odd, sometimes even",
+            "Always zero"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test two simple examples of even - odd and check whether the results end in an even digit (0, 2, 4, 6, 8) or an odd digit (1, 3, 5, 7, 9).",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Try two small number examples to verify the parity rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose a first pair of small numbers that match \\(\\text{even} - \\text{odd}\\) and calculate the result.",
+              "work": "\\(10 - 3 = 7\\)"
+            },
+            {
+              "explain": "Check the last digit of the first result to see if it is even or odd. It is odd.",
+              "work": "\\(\\text{Result 1 is odd}\\)"
+            },
+            {
+              "explain": "Test a second pair of numbers to confirm the pattern always holds.",
+              "work": "\\(14 - 5 = 9 \\quad (\\text{also odd})\\)"
+            },
+            {
+              "explain": "Both tests confirm the general rule: \\(\\text{even} - \\text{odd}\\) is always odd.",
+              "work": "\\(\\text{even} - \\text{odd} = \\text{odd}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y4-ar-3",
+      "code": "MA2-AR-01",
+      "title": "Money and budgeting: Apply addition and subtraction to money and budgeting contexts",
+      "questions": []
+    },
+    {
+      "topicId": "y4-ar-4",
+      "code": "MA2-AR-02",
+      "title": "Inverse operations: Use inverse operations to check solutions; find unknown quantities in number sentences",
+      "questions": [
+        {
+          "id": "y4-ar-4-th2-p9-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In this addition square, each inside number is the sum of its row header and column header. What number belongs in the bottom-right square (?)?",
+          "options": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the two numbers in the top row (10 and 12) to find how much larger the second column header is than the first.",
+          "keyPoints": [
+            {
+              "text": "addition square",
+              "note": "Every cell equals its row header plus its column header."
+            },
+            {
+              "text": "bottom-right square",
+              "note": "The difference between columns stays the same in every row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the top row of inside numbers: \\(10\\) and \\(12\\). Both cells share the same first-row header, so the second column header is \\(2\\) more than the first column header.",
+              "work": "\\(12 - 10 = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">10</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Column 2 is 2 more than Column 1</text></svg>"
+              }
+            },
+            {
+              "explain": "Choose any matching pair of headers that satisfies the top row, for example column headers \\(4\\) and \\(6\\) with top-row header \\(6\\) (since \\(6 + 4 = 10\\) and \\(6 + 6 = 12\\)).",
+              "work": "\\(6 + 4 = 10, \\quad 6 + 6 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">4</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">6</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">6</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">10</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Example headers: top 4, 6; row 1 = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the bottom-left cell \\(11\\) and column 1 header \\(4\\) to find the bottom-row header: \\(11 - 4 = 7\\).",
+              "work": "\\(11 - 4 = 7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">4</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">6</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">6</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">10</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">7</text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">11</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Row 2 header = 11 - 4 = 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the bottom-row header \\(7\\) and second column header \\(6\\) (or simply add \\(2\\) to \\(11\\)) to get \\(13\\).",
+              "work": "\\(7 + 6 = 13 \\quad (\\text{also } 11 + 2 = 13)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">4</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">6</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">6</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">10</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">7</text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">13</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Bottom-right = 7 + 6 = 13</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 198\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"198\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">10</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">12</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-4-th2-p9-ps2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In this addition square, each inside number is the sum of its row header and column header. What number belongs in the bottom-left square (?)?",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "13"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare 15 and 17 in the top row to see how much smaller column 1 is than column 2, then apply that same difference to 11.",
+          "keyPoints": [
+            {
+              "text": "addition square",
+              "note": "Each inside number is the sum of its row and column headers."
+            },
+            {
+              "text": "bottom-left square",
+              "note": "Column 1 is always the same amount less than Column 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the top row numbers \\(15\\) and \\(17\\). Column 2 is \\(2\\) more than Column 1, so Column 1 is \\(2\\) less than Column 2.",
+              "work": "\\(17 - 15 = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">17</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Column 1 is 2 less than Column 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Pick example headers for the top row: column headers \\(5\\) and \\(7\\) with top-row header \\(10\\) (since \\(10 + 5 = 15\\) and \\(10 + 7 = 17\\)).",
+              "work": "\\(10 + 5 = 15, \\quad 10 + 7 = 17\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">5</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">7</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">10</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">17</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Example headers: top 5, 7; row 1 = 10</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the bottom-row header using the bottom-right cell \\(11\\) and column 2 header \\(7\\): \\(11 - 7 = 4\\).",
+              "work": "\\(11 - 7 = 4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">7</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">10</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">17</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">4</text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">11</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Row 2 header = 11 - 7 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the bottom-row header \\(4\\) and column 1 header \\(5\\) (or subtract \\(2\\) from \\(11\\)) to get \\(9\\).",
+              "work": "\\(4 + 5 = 9 \\quad (\\text{also } 11 - 2 = 9)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"222\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">7</text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">10</text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">17</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">4</text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#b45309\">9</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><text x=\"145\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0369a1\">Bottom-left = 4 + 5 = 9</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 198\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"198\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"60\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">+</text><rect x=\"116\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"172\" y=\"16\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"60\" y=\"72\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">15</text><rect x=\"172\" y=\"72\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">17</text><rect x=\"60\" y=\"128\" width=\"56\" height=\"56\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"88\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\"></text><rect x=\"116\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"144\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#2563eb\">?</text><rect x=\"172\" y=\"128\" width=\"56\" height=\"56\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"20\" font-weight=\"800\" fill=\"#0f172a\">11</text><line x1=\"60\" y1=\"72\" x2=\"228\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2.8\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"184\" stroke=\"#0f172a\" stroke-width=\"2.8\"/></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y4-ar-5",
+      "code": "MA2-AR-02",
+      "title": "Equivalent sentences: Complete number sentences involving additive relations; equivalent values",
+      "questions": []
+    }
+  ]
+}
