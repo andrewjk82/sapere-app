@@ -1105,6 +1105,246 @@
               "work": "\\(\\square = 30\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-1-th17-p76-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(546 \\times 321\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(546 \\times 321\\)"
+            },
+            {
+              "explain": "Apply the parity rule: even times odd = even.",
+              "work": "\\(\\text{Rule: even times odd = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th17-p76-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(655 \\times 787\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(655 \\times 787\\)"
+            },
+            {
+              "explain": "Apply the parity rule: odd times odd = odd.",
+              "work": "\\(\\text{Rule: odd times odd = odd}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Odd}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Odd.",
+              "work": "\\(\\text{Answer: Odd}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th17-p76-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(1258 \\times 1356\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(1258 \\times 1356\\)"
+            },
+            {
+              "explain": "Apply the parity rule: even times even = even.",
+              "work": "\\(\\text{Rule: even times even = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th18-p80-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which pair of numbers correctly completes \\(\\square \\times \\square = 36\\)?",
+          "options": [
+            "4 and 9",
+            "4 and 8",
+            "5 and 7",
+            "6 and 7"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each pair of numbers in the equation to find the exact match.",
+          "keyPoints": [
+            {
+              "text": "correctly completes",
+              "note": "Multiply or divide each candidate pair to check."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test the candidate pairs in \\(\\square \\times \\square = 36\\).",
+              "work": "\\(4 \\times 9 = 36\\)"
+            },
+            {
+              "explain": "Confirm the other three pairs do NOT equal the target.",
+              "work": "\\(\\text{Other 3 pairs give different values}\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 4 \\times 9 = 36\\)"
+            },
+            {
+              "explain": "Therefore, 4 and 9 completes the equation.",
+              "work": "\\(4 \\times 9 = 36\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th18-p80-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which pair of numbers correctly completes \\(\\square \\times \\square = 56\\)?",
+          "options": [
+            "6 and 9",
+            "7 and 8",
+            "6 and 8",
+            "7 and 9"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each pair of numbers in the equation to find the exact match.",
+          "keyPoints": [
+            {
+              "text": "correctly completes",
+              "note": "Multiply or divide each candidate pair to check."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test the candidate pairs in \\(\\square \\times \\square = 56\\).",
+              "work": "\\(7 \\times 8 = 56\\)"
+            },
+            {
+              "explain": "Confirm the other three pairs do NOT equal the target.",
+              "work": "\\(\\text{Other 3 pairs give different values}\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 7 \\times 8 = 56\\)"
+            },
+            {
+              "explain": "Therefore, 7 and 8 completes the equation.",
+              "work": "\\(7 \\times 8 = 56\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th18-p80-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which pair of numbers correctly completes \\(\\square \\times \\square = 80\\)?",
+          "options": [
+            "8 and 9",
+            "7 and 10",
+            "8 and 10",
+            "6 and 12"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each pair of numbers in the equation to find the exact match.",
+          "keyPoints": [
+            {
+              "text": "correctly completes",
+              "note": "Multiply or divide each candidate pair to check."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test the candidate pairs in \\(\\square \\times \\square = 80\\).",
+              "work": "\\(8 \\times 10 = 80\\)"
+            },
+            {
+              "explain": "Confirm the other three pairs do NOT equal the target.",
+              "work": "\\(\\text{Other 3 pairs give different values}\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 8 \\times 10 = 80\\)"
+            },
+            {
+              "explain": "Therefore, 8 and 10 completes the equation.",
+              "work": "\\(8 \\times 10 = 80\\)"
+            }
+          ]
         }
       ]
     },
@@ -1399,6 +1639,246 @@
             {
               "explain": "Add the two partial products together: \\(360 + 27 = 387\\).",
               "work": "\\(360 + 27 = 387\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th-rev2-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the split method to multiply \\(6 \\times 48\\).",
+          "options": [
+            "278",
+            "288",
+            "298",
+            "248"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 48 into 40 + 8, multiply both parts by 6, then add 240 + 48.",
+          "keyPoints": [
+            {
+              "text": "split method to multiply",
+              "note": "6 × 48 = (6 × 40) + (6 × 8)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split 48 into tens and ones: \\(48 = 40 + 8\\).",
+              "work": "\\(6 \\times 48 = (6 \\times 40) + (6 \\times 8)\\)"
+            },
+            {
+              "explain": "Calculate \\(6 \\times 40 = 240\\).",
+              "work": "\\(6 \\times 40 = 240\\)"
+            },
+            {
+              "explain": "Calculate \\(6 \\times 8 = 48\\).",
+              "work": "\\(6 \\times 8 = 48\\)"
+            },
+            {
+              "explain": "Add the partial products: \\(240 + 48 = 288\\).",
+              "work": "\\(240 + 48 = 288\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th19-p84-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate double \\(47\\) using the split method.",
+          "options": [
+            "84",
+            "94",
+            "96",
+            "104"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 47 into its place-value parts, multiply each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Double each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(47\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(47 \\times 2\\)"
+            },
+            {
+              "explain": "Multiply each part by 2.",
+              "work": "\\((40 \\times 2) + (7 \\times 2) = 80 + 14 = 94\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 94\\)"
+            },
+            {
+              "explain": "Therefore, double \\(47\\) is \\(94\\).",
+              "work": "\\(\\text{Answer} = 94\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th19-p84-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate double \\(59\\) using the split method.",
+          "options": [
+            "108",
+            "116",
+            "118",
+            "128"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 59 into its place-value parts, multiply each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Double each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(59\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(59 \\times 2\\)"
+            },
+            {
+              "explain": "Multiply each part by 2.",
+              "work": "\\((50 \\times 2) + (9 \\times 2) = 100 + 18 = 118\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 118\\)"
+            },
+            {
+              "explain": "Therefore, double \\(59\\) is \\(118\\).",
+              "work": "\\(\\text{Answer} = 118\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th19-p84-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate double \\(64\\) using the split method.",
+          "options": [
+            "118",
+            "124",
+            "128",
+            "138"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 64 into its place-value parts, multiply each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Double each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(64\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(64 \\times 2\\)"
+            },
+            {
+              "explain": "Multiply each part by 2.",
+              "work": "\\((60 \\times 2) + (4 \\times 2) = 120 + 8 = 128\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 128\\)"
+            },
+            {
+              "explain": "Therefore, double \\(64\\) is \\(128\\).",
+              "work": "\\(\\text{Answer} = 128\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th19-p84-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate double \\(153\\) using the split method.",
+          "options": [
+            "206",
+            "296",
+            "306",
+            "316"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 153 into its place-value parts, multiply each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Double each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(153\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(153 \\times 2\\)"
+            },
+            {
+              "explain": "Multiply each part by 2.",
+              "work": "\\(200 + 100 + 6 = 306\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 306\\)"
+            },
+            {
+              "explain": "Therefore, double \\(153\\) is \\(306\\).",
+              "work": "\\(\\text{Answer} = 306\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-2-th19-p84-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate double \\(458\\) using the split method.",
+          "options": [
+            "816",
+            "906",
+            "916",
+            "926"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 458 into its place-value parts, multiply each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Double each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(458\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(458 \\times 2\\)"
+            },
+            {
+              "explain": "Multiply each part by 2.",
+              "work": "\\(800 + 100 + 16 = 916\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 916\\)"
+            },
+            {
+              "explain": "Therefore, double \\(458\\) is \\(916\\).",
+              "work": "\\(\\text{Answer} = 916\\)"
             }
           ]
         }
@@ -3135,6 +3615,594 @@
               "work": "\\(30, 40, 50\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((+6)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "96, 102, 108",
+            "94, 100, 106",
+            "96, 104, 112",
+            "95, 101, 107"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+6) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by +6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+6\\).",
+              "work": "\\(\\text{Rule: } +6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">78</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">84</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">90</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +6</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(96\\).",
+              "work": "\\(\\text{First blank} = 96\\)"
+            },
+            {
+              "explain": "Continue applying \\(+6\\) to get \\(102\\) and \\(108\\).",
+              "work": "\\(96, 102, 108\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 96, 102, 108\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">78</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">84</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">90</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">96</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">102</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">108</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+6): 96, 102, 108</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">78</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">84</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">90</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((+7)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "139, 146, 153",
+            "140, 147, 154",
+            "140, 148, 156",
+            "141, 148, 155"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+7) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by +7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+7\\).",
+              "work": "\\(\\text{Rule: } +7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">126</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">133</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">161</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +7</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(140\\).",
+              "work": "\\(\\text{First blank} = 140\\)"
+            },
+            {
+              "explain": "Continue applying \\(+7\\) to get \\(147\\) and \\(154\\).",
+              "work": "\\(140, 147, 154\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 140, 147, 154\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">126</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">133</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">140</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">147</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">154</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">161</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+7): 140, 147, 154</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">126</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">133</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">161</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((-6)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "1182, 1176, 1170",
+            "1184, 1178, 1172",
+            "1182, 1174, 1166",
+            "1180, 1174, 1168"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (-6) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by -6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(-6\\).",
+              "work": "\\(\\text{Rule: } -6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1200</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1194</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1188</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: -6</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(1182\\).",
+              "work": "\\(\\text{First blank} = 1182\\)"
+            },
+            {
+              "explain": "Continue applying \\(-6\\) to get \\(1176\\) and \\(1170\\).",
+              "work": "\\(1182, 1176, 1170\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 1182, 1176, 1170\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1200</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1194</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1188</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1182</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1176</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1170</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (-6): 1182, 1176, 1170</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1200</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1194</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1188</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((+8)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "1272, 1280, 1288",
+            "1274, 1282, 1290",
+            "1274, 1280, 1286",
+            "1276, 1284, 1292"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+8) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by +8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+8\\).",
+              "work": "\\(\\text{Rule: } +8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1250</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1258</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1266</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +8</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(1274\\).",
+              "work": "\\(\\text{First blank} = 1274\\)"
+            },
+            {
+              "explain": "Continue applying \\(+8\\) to get \\(1282\\) and \\(1290\\).",
+              "work": "\\(1274, 1282, 1290\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 1274, 1282, 1290\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1250</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1258</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1266</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1274</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1282</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1290</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+8): 1274, 1282, 1290</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1250</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1258</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1266</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((-8)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "2992, 2984, 2976",
+            "2994, 2986, 2978",
+            "2992, 2982, 2972",
+            "2990, 2982, 2974"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (-8) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by -8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(-8\\).",
+              "work": "\\(\\text{Rule: } -8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">3000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">?</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2968</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: -8</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(2992\\).",
+              "work": "\\(\\text{First blank} = 2992\\)"
+            },
+            {
+              "explain": "Continue applying \\(-8\\) to get \\(2984\\) and \\(2976\\).",
+              "work": "\\(2992, 2984, 2976\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 2992, 2984, 2976\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 104\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">3000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2992</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2984</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2976</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2968</text><text x=\"192\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (-8): 2992, 2984, 2976</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 84\" width=\"65%\" height=\"auto\" style=\"max-width:499px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"384\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">3000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2968</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((+10)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "1345, 1355, 1365",
+            "1350, 1360, 1370",
+            "1350, 1370, 1390",
+            "1340, 1350, 1360"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+10) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by +10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+10\\).",
+              "work": "\\(\\text{Rule: } +10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1320</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1330</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1340</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +10</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(1350\\).",
+              "work": "\\(\\text{First blank} = 1350\\)"
+            },
+            {
+              "explain": "Continue applying \\(+10\\) to get \\(1360\\) and \\(1370\\).",
+              "work": "\\(1350, 1360, 1370\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 1350, 1360, 1370\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1320</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1330</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1340</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1350</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1360</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">1370</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+10): 1350, 1360, 1370</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1320</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1330</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">1340</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\((+9)\\) to fill in the three missing numbers in this pattern.",
+          "options": [
+            "2027, 2036, 2045",
+            "2026, 2035, 2044",
+            "2027, 2035, 2043",
+            "2028, 2037, 2046"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+9) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "Use the rule",
+              "note": "Each step changes by +9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+9\\).",
+              "work": "\\(\\text{Rule: } +9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2009</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2018</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +9</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(2027\\).",
+              "work": "\\(\\text{First blank} = 2027\\)"
+            },
+            {
+              "explain": "Continue applying \\(+9\\) to get \\(2036\\) and \\(2045\\).",
+              "work": "\\(2027, 2036, 2045\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 2027, 2036, 2045\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2009</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2018</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2027</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2036</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">2045</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+9): 2027, 2036, 2045</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2009</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">2018</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers and the rule for this number pattern.",
+          "options": [
+            "917, 926, 935 (rule +9)",
+            "916, 925, 934 (rule +9)",
+            "917, 927, 937 (rule +10)",
+            "918, 927, 936 (rule +9)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+9) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "number pattern",
+              "note": "Each step changes by +9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+9\\).",
+              "work": "\\(\\text{Rule: } +9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">890</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">899</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">908</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +9</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(917\\).",
+              "work": "\\(\\text{First blank} = 917\\)"
+            },
+            {
+              "explain": "Continue applying \\(+9\\) to get \\(926\\) and \\(935\\).",
+              "work": "\\(917, 926, 935\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 917, 926, 935\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">890</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">899</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">908</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">917</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">926</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">935</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+9): 917, 926, 935</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">890</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">899</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">908</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers and the rule for this number pattern.",
+          "options": [
+            "4970, 4960, 4950 (rule -10)",
+            "4975, 4965, 4955 (rule -10)",
+            "4970, 4950, 4930 (rule -20)",
+            "4990, 5000, 5010 (rule +10)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (-10) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "number pattern",
+              "note": "Each step changes by -10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(-10\\).",
+              "work": "\\(\\text{Rule: } -10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4990</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4980</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: -10</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(4970\\).",
+              "work": "\\(\\text{First blank} = 4970\\)"
+            },
+            {
+              "explain": "Continue applying \\(-10\\) to get \\(4960\\) and \\(4950\\).",
+              "work": "\\(4970, 4960, 4950\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 4970, 4960, 4950\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4990</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4980</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4970</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4960</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">4950</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (-10): 4970, 4960, 4950</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5000</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4990</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">4980</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers and the rule for this number pattern.",
+          "options": [
+            "12 118, 12 124, 12 130 (rule +6)",
+            "12 116, 12 122, 12 128 (rule +6)",
+            "12 118, 12 126, 12 134 (rule +8)",
+            "12 120, 12 126, 12 132 (rule +6)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+6) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "number pattern",
+              "note": "Each step changes by +6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+6\\).",
+              "work": "\\(\\text{Rule: } +6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">12 100</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">12 106</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 112</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +6</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(12\\,118\\).",
+              "work": "\\(\\text{First blank} = 12\\,118\\)"
+            },
+            {
+              "explain": "Continue applying \\(+6\\) to get \\(12\\,124\\) and \\(12\\,130\\).",
+              "work": "\\(12\\,118, 12\\,124, 12\\,130\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 12\\,118, 12\\,124, 12\\,130\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 100</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 106</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 112</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">12 118</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">12 124</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">12 130</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+6): 12 118, 12 124, 12 130</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 100</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 106</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 112</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers and the rule for this number pattern.",
+          "options": [
+            "779, 772, 765 (rule -7)",
+            "780, 773, 766 (rule -7)",
+            "779, 771, 763 (rule -8)",
+            "778, 771, 764 (rule -7)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (-7) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "number pattern",
+              "note": "Each step changes by -7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(-7\\).",
+              "work": "\\(\\text{Rule: } -7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">800</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">793</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">786</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: -7</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(779\\).",
+              "work": "\\(\\text{First blank} = 779\\)"
+            },
+            {
+              "explain": "Continue applying \\(-7\\) to get \\(772\\) and \\(765\\).",
+              "work": "\\(779, 772, 765\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 779, 772, 765\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">800</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">793</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">786</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">779</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">772</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">765</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (-7): 779, 772, 765</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">800</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">793</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">786</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-3-th18-p80-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the next three numbers and the rule for this number pattern.",
+          "options": [
+            "5060, 5070, 5080 (rule +10)",
+            "5055, 5065, 5075 (rule +10)",
+            "5060, 5080, 5100 (rule +20)",
+            "5040, 5030, 5020 (rule -10)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Apply the constant step (+10) from each known number to fill every blank.",
+          "keyPoints": [
+            {
+              "text": "number pattern",
+              "note": "Each step changes by +10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the constant rule between consecutive terms: \\(+10\\).",
+              "work": "\\(\\text{Rule: } +10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5030</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5040</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5050</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Rule: +10</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the first missing number: \\(5060\\).",
+              "work": "\\(\\text{First blank} = 5060\\)"
+            },
+            {
+              "explain": "Continue applying \\(+10\\) to get \\(5070\\) and \\(5080\\).",
+              "work": "\\(5060, 5070, 5080\\)"
+            },
+            {
+              "explain": "Check every consecutive jump in the completed sequence.",
+              "work": "\\(\\text{Missing numbers: } 5060, 5070, 5080\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 104\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"104\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5030</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5040</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5050</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5060</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5070</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#b45309\">5080</text><text x=\"228\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Complete (+10): 5060, 5070, 5080</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 456 84\" width=\"65%\" height=\"auto\" style=\"max-width:593px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"456\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5030</text><text x=\"84\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"88\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"120\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5040</text><text x=\"156\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"160\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"192\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">5050</text><text x=\"228\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"232\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"264\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"300\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"304\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"336\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"372\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">,</text><rect x=\"376\" y=\"18\" width=\"64\" height=\"44\" rx=\"7\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"408\" y=\"46\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
         }
       ]
     },
@@ -4446,6 +5514,166 @@
             {
               "explain": "Add the two quotients together: \\(20 + 1 = 21\\).",
               "work": "\\(20 + 1 = 21\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th18-p80-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which pair of numbers correctly completes \\(\\square \\div \\square = 7\\)?",
+          "options": [
+            "42 and 6",
+            "48 and 6",
+            "35 and 7",
+            "54 and 9"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each pair of numbers in the equation to find the exact match.",
+          "keyPoints": [
+            {
+              "text": "correctly completes",
+              "note": "Multiply or divide each candidate pair to check."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test the candidate pairs in \\(\\square \\div \\square = 7\\).",
+              "work": "\\(42 \\div 6 = 7\\)"
+            },
+            {
+              "explain": "Confirm the other three pairs do NOT equal the target.",
+              "work": "\\(\\text{Other 3 pairs give different values}\\)"
+            },
+            {
+              "explain": "Check using the inverse operation.",
+              "work": "\\(\\text{Verified: } 42 \\div 6 = 7\\)"
+            },
+            {
+              "explain": "Therefore, 42 and 6 completes the equation.",
+              "work": "\\(42 \\div 6 = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th19-p84-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate half of \\(264\\) using the split method.",
+          "options": [
+            "122",
+            "132",
+            "134",
+            "142"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 264 into its place-value parts, divide each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Halve each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(264\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(264 \\div 2\\)"
+            },
+            {
+              "explain": "Divide each part by 2.",
+              "work": "\\(100 + 30 + 2 = 132\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 132\\)"
+            },
+            {
+              "explain": "Therefore, half of \\(264\\) is \\(132\\).",
+              "work": "\\(\\text{Answer} = 132\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th19-p84-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate half of \\(428\\) using the split method.",
+          "options": [
+            "204",
+            "214",
+            "224",
+            "244"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 428 into its place-value parts, divide each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Halve each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(428\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(428 \\div 2\\)"
+            },
+            {
+              "explain": "Divide each part by 2.",
+              "work": "\\(200 + 10 + 4 = 214\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 214\\)"
+            },
+            {
+              "explain": "Therefore, half of \\(428\\) is \\(214\\).",
+              "work": "\\(\\text{Answer} = 214\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th19-p84-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate half of \\(642\\) using the split method.",
+          "options": [
+            "311",
+            "320",
+            "321",
+            "341"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 642 into its place-value parts, divide each part by 2, then add the results.",
+          "keyPoints": [
+            {
+              "text": "split method",
+              "note": "Halve each place-value part separately, then add."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(642\\) into its place-value parts (hundreds, tens, ones).",
+              "work": "\\(642 \\div 2\\)"
+            },
+            {
+              "explain": "Divide each part by 2.",
+              "work": "\\(300 + 20 + 1 = 321\\)"
+            },
+            {
+              "explain": "Add the partial results together.",
+              "work": "\\(\\text{Result} = 321\\)"
+            },
+            {
+              "explain": "Therefore, half of \\(642\\) is \\(321\\).",
+              "work": "\\(\\text{Answer} = 321\\)"
             }
           ]
         }

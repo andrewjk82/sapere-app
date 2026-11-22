@@ -733,6 +733,166 @@
               "work": "\\(\\text{Each piece} = 7\\text{ cm}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-gm-2-th-rev2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this measurement: \\(60\\text{ mm} = \\square\\text{ cm}\\).",
+          "options": [
+            "6 cm",
+            "60 cm",
+            "600 cm",
+            "0.6 cm"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 10 mm = 1 cm, 100 cm = 1 m, and 1000 m = 1 km.",
+          "keyPoints": [
+            {
+              "text": "Convert this measurement",
+              "note": "Multiply when converting to a smaller unit; divide when converting to a larger unit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric conversion factor (10, 100, or 1000).",
+              "work": "\\(1\\text{ cm}=10\\text{ mm},\\ 1\\text{ m}=100\\text{ cm},\\ 1\\text{ km}=1000\\text{ m}\\)"
+            },
+            {
+              "explain": "Apply the conversion calculation.",
+              "work": "\\(60 \\div 10 = 6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Check by reversing the calculation.",
+              "work": "\\(\\text{Verified: } 60 \\div 10 = 6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 6 cm.",
+              "work": "\\(\\text{Answer: 6 cm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-gm-2-th-rev2-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this measurement: \\(4\\text{ m} = \\square\\text{ cm}\\).",
+          "options": [
+            "40 cm",
+            "400 cm",
+            "4000 cm",
+            "4 cm"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 10 mm = 1 cm, 100 cm = 1 m, and 1000 m = 1 km.",
+          "keyPoints": [
+            {
+              "text": "Convert this measurement",
+              "note": "Multiply when converting to a smaller unit; divide when converting to a larger unit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric conversion factor (10, 100, or 1000).",
+              "work": "\\(1\\text{ cm}=10\\text{ mm},\\ 1\\text{ m}=100\\text{ cm},\\ 1\\text{ km}=1000\\text{ m}\\)"
+            },
+            {
+              "explain": "Apply the conversion calculation.",
+              "work": "\\(4 \\times 100 = 400\\text{ cm}\\)"
+            },
+            {
+              "explain": "Check by reversing the calculation.",
+              "work": "\\(\\text{Verified: } 4 \\times 100 = 400\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 400 cm.",
+              "work": "\\(\\text{Answer: 400 cm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-gm-2-th-rev2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this measurement: \\(5000\\text{ m} = \\square\\text{ km}\\).",
+          "options": [
+            "5 km",
+            "50 km",
+            "500 km",
+            "0.5 km"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 10 mm = 1 cm, 100 cm = 1 m, and 1000 m = 1 km.",
+          "keyPoints": [
+            {
+              "text": "Convert this measurement",
+              "note": "Multiply when converting to a smaller unit; divide when converting to a larger unit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric conversion factor (10, 100, or 1000).",
+              "work": "\\(1\\text{ cm}=10\\text{ mm},\\ 1\\text{ m}=100\\text{ cm},\\ 1\\text{ km}=1000\\text{ m}\\)"
+            },
+            {
+              "explain": "Apply the conversion calculation.",
+              "work": "\\(5000 \\div 1000 = 5\\text{ km}\\)"
+            },
+            {
+              "explain": "Check by reversing the calculation.",
+              "work": "\\(\\text{Verified: } 5000 \\div 1000 = 5\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 5 km.",
+              "work": "\\(\\text{Answer: 5 km}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-gm-2-th-rev2-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert this measurement: \\(7\\text{ cm} = \\square\\text{ mm}\\).",
+          "options": [
+            "7 mm",
+            "70 mm",
+            "700 mm",
+            "0.7 mm"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use 10 mm = 1 cm, 100 cm = 1 m, and 1000 m = 1 km.",
+          "keyPoints": [
+            {
+              "text": "Convert this measurement",
+              "note": "Multiply when converting to a smaller unit; divide when converting to a larger unit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric conversion factor (10, 100, or 1000).",
+              "work": "\\(1\\text{ cm}=10\\text{ mm},\\ 1\\text{ m}=100\\text{ cm},\\ 1\\text{ km}=1000\\text{ m}\\)"
+            },
+            {
+              "explain": "Apply the conversion calculation.",
+              "work": "\\(7 \\times 10 = 70\\text{ mm}\\)"
+            },
+            {
+              "explain": "Check by reversing the calculation.",
+              "work": "\\(\\text{Verified: } 7 \\times 10 = 70\\text{ mm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 70 mm.",
+              "work": "\\(\\text{Answer: 70 mm}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1527,6 +1687,374 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 226\" width=\"65%\" height=\"auto\" style=\"max-width:494px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"380\" height=\"226\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"190\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Mainton and its Surrounding Towns (Scale: 1 cm = 1 km)</text><line x1=\"86\" y1=\"68\" x2=\"56\" y2=\"176\" stroke=\"#ef4444\" stroke-width=\"2.2\"/><rect x=\"53\" y=\"113\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"71\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">3 cm</text><line x1=\"56\" y1=\"176\" x2=\"134\" y2=\"176\" stroke=\"#ef4444\" stroke-width=\"2.2\"/><rect x=\"77\" y=\"167\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"95\" y=\"179\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">2 cm</text><line x1=\"86\" y1=\"68\" x2=\"134\" y2=\"176\" stroke=\"#ef4444\" stroke-width=\"2.2\"/><rect x=\"92\" y=\"113\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"110\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">4 cm</text><line x1=\"134\" y1=\"176\" x2=\"216\" y2=\"66\" stroke=\"#ef4444\" stroke-width=\"2.2\"/><rect x=\"157\" y=\"112\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"175\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">4 cm</text><line x1=\"134\" y1=\"176\" x2=\"294\" y2=\"182\" stroke=\"#ef4444\" stroke-width=\"2.2\"/><rect x=\"196\" y=\"170\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"214\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">4 cm</text><line x1=\"294\" y1=\"182\" x2=\"332\" y2=\"92\" stroke=\"#ef4444\" stroke-width=\"2.2\"/><rect x=\"295\" y=\"128\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"313\" y=\"140\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">4 cm</text><circle cx=\"86\" cy=\"68\" r=\"5\" fill=\"#0f172a\"/><text x=\"86\" y=\"59\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Riverview</text><circle cx=\"56\" cy=\"176\" r=\"5\" fill=\"#0f172a\"/><text x=\"56\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Mainton</text><circle cx=\"134\" cy=\"176\" r=\"5\" fill=\"#0f172a\"/><text x=\"134\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Forest</text><circle cx=\"216\" cy=\"66\" r=\"5\" fill=\"#0f172a\"/><text x=\"216\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Lakeside</text><circle cx=\"294\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/><text x=\"294\" y=\"198\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Hilltop</text><circle cx=\"332\" cy=\"92\" r=\"5\" fill=\"#0f172a\"/><text x=\"332\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Railton</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th-rev2-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the map of Redtown and its Surrounding Towns (Scale: \\(1\\text{ cm} = 2\\text{ km}\\)). What is the distance between Bluetown and Redtown?",
+          "options": [
+            "3 km",
+            "5 km",
+            "6 km",
+            "9 km"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Read the map distance in cm (3 cm) and multiply by 2 because 1 cm = 2 km!",
+          "keyPoints": [
+            {
+              "text": "Scale:",
+              "note": "Multiply centimetres by 2 to convert to kilometres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the road between Bluetown and Redtown: it measures \\(3\\text{ cm}\\) on the map.",
+              "work": "\\(\\text{Map length} = 3\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 176\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"180\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Redtown and its Surrounding Towns (Scale: 1 cm = 2 km)</text><line x1=\"52\" y1=\"114\" x2=\"154\" y2=\"46\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><rect x=\"85\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1\"/><text x=\"103\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">3 cm</text><line x1=\"52\" y1=\"114\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"162\" y=\"105\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">7 cm</text><line x1=\"154\" y1=\"46\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><rect x=\"213\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"231\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">5 cm</text><circle cx=\"52\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"52\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Bluetown</text><circle cx=\"154\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"154\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Redtown</text><circle cx=\"308\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"308\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Pinktown</text><text x=\"180\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">3 cm × 2 km/cm = 6 km</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the scale \\(1\\text{ cm} = 2\\text{ km}\\) by multiplying by 2.",
+              "work": "\\(3 \\times 2\\text{ km} = 6\\text{ km}\\)"
+            },
+            {
+              "explain": "Verify you multiplied by 2 (not 1).",
+              "work": "\\(\\text{Actual distance} = 6\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the distance is \\(6\\text{ km}\\).",
+              "work": "\\(\\text{Answer: } 6\\text{ km}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 154\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"180\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Redtown and its Surrounding Towns (Scale: 1 cm = 2 km)</text><line x1=\"52\" y1=\"114\" x2=\"154\" y2=\"46\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"85\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"103\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">3 cm</text><line x1=\"52\" y1=\"114\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"162\" y=\"105\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">7 cm</text><line x1=\"154\" y1=\"46\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><rect x=\"213\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"231\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">5 cm</text><circle cx=\"52\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"52\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Bluetown</text><circle cx=\"154\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"154\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Redtown</text><circle cx=\"308\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"308\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Pinktown</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th-rev2-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the map of Redtown and its Surrounding Towns (Scale: \\(1\\text{ cm} = 2\\text{ km}\\)). What is the distance between Bluetown and Pinktown?",
+          "options": [
+            "7 km",
+            "12 km",
+            "14 km",
+            "16 km"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Read the map distance in cm (7 cm) and multiply by 2 because 1 cm = 2 km!",
+          "keyPoints": [
+            {
+              "text": "Scale:",
+              "note": "Multiply centimetres by 2 to convert to kilometres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the road between Bluetown and Pinktown: it measures \\(7\\text{ cm}\\) on the map.",
+              "work": "\\(\\text{Map length} = 7\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 176\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"180\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Redtown and its Surrounding Towns (Scale: 1 cm = 2 km)</text><line x1=\"52\" y1=\"114\" x2=\"154\" y2=\"46\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"85\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"103\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">3 cm</text><line x1=\"52\" y1=\"114\" x2=\"308\" y2=\"114\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><rect x=\"162\" y=\"105\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">7 cm</text><line x1=\"154\" y1=\"46\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><rect x=\"213\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"231\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">5 cm</text><circle cx=\"52\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"52\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Bluetown</text><circle cx=\"154\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"154\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Redtown</text><circle cx=\"308\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"308\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Pinktown</text><text x=\"180\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">7 cm × 2 km/cm = 14 km</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the scale \\(1\\text{ cm} = 2\\text{ km}\\) by multiplying by 2.",
+              "work": "\\(7 \\times 2\\text{ km} = 14\\text{ km}\\)"
+            },
+            {
+              "explain": "Verify you multiplied by 2 (not 1).",
+              "work": "\\(\\text{Actual distance} = 14\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the distance is \\(14\\text{ km}\\).",
+              "work": "\\(\\text{Answer: } 14\\text{ km}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 154\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"180\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Redtown and its Surrounding Towns (Scale: 1 cm = 2 km)</text><line x1=\"52\" y1=\"114\" x2=\"154\" y2=\"46\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"85\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"103\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">3 cm</text><line x1=\"52\" y1=\"114\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"162\" y=\"105\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">7 cm</text><line x1=\"154\" y1=\"46\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><rect x=\"213\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"231\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">5 cm</text><circle cx=\"52\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"52\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Bluetown</text><circle cx=\"154\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"154\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Redtown</text><circle cx=\"308\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"308\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Pinktown</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th-rev2-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the map of Redtown and its Surrounding Towns (Scale: \\(1\\text{ cm} = 2\\text{ km}\\)). What is the distance between Redtown and Pinktown (direct)?",
+          "options": [
+            "5 km",
+            "8 km",
+            "10 km",
+            "12 km"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Read the map distance in cm (5 cm) and multiply by 2 because 1 cm = 2 km!",
+          "keyPoints": [
+            {
+              "text": "Scale:",
+              "note": "Multiply centimetres by 2 to convert to kilometres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the road between Redtown and Pinktown (direct): it measures \\(5\\text{ cm}\\) on the map.",
+              "work": "\\(\\text{Map length} = 5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 176\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"180\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Redtown and its Surrounding Towns (Scale: 1 cm = 2 km)</text><line x1=\"52\" y1=\"114\" x2=\"154\" y2=\"46\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"85\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"103\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">3 cm</text><line x1=\"52\" y1=\"114\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"162\" y=\"105\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">7 cm</text><line x1=\"154\" y1=\"46\" x2=\"308\" y2=\"114\" stroke=\"#2563eb\" stroke-width=\"3.5\" stroke-dasharray=\"5,3\"/><rect x=\"213\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#fef08a\" stroke=\"#d97706\" stroke-width=\"1\"/><text x=\"231\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">5 cm</text><circle cx=\"52\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"52\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Bluetown</text><circle cx=\"154\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"154\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Redtown</text><circle cx=\"308\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"308\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Pinktown</text><text x=\"180\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">5 cm × 2 km/cm = 10 km</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the scale \\(1\\text{ cm} = 2\\text{ km}\\) by multiplying by 2.",
+              "work": "\\(5 \\times 2\\text{ km} = 10\\text{ km}\\)"
+            },
+            {
+              "explain": "Verify you multiplied by 2 (not 1).",
+              "work": "\\(\\text{Actual distance} = 10\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the distance is \\(10\\text{ km}\\).",
+              "work": "\\(\\text{Answer: } 10\\text{ km}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 154\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"180\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Redtown and its Surrounding Towns (Scale: 1 cm = 2 km)</text><line x1=\"52\" y1=\"114\" x2=\"154\" y2=\"46\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"85\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"103\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">3 cm</text><line x1=\"52\" y1=\"114\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\"/><rect x=\"162\" y=\"105\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"180\" y=\"117\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">7 cm</text><line x1=\"154\" y1=\"46\" x2=\"308\" y2=\"114\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><rect x=\"213\" y=\"71\" width=\"36\" height=\"16\" rx=\"4\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"231\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">5 cm</text><circle cx=\"52\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"52\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Bluetown</text><circle cx=\"154\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"154\" y=\"37\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Redtown</text><circle cx=\"308\" cy=\"114\" r=\"5\" fill=\"#0f172a\"/><text x=\"308\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">Pinktown</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th17-p77-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Look at Sara’s map (Sara lives at X on Walker Street). For Route 1, Sara crosses Walker Street heading north into Centenary Park, exits onto Merrifield Street, walks up Cross Road, and turns which way into School Road?",
+          "options": [
+            "Turns right (east) into School Road",
+            "Turns left (west) into School Road",
+            "Walks south down Richard Street",
+            "Turns onto Bunker Street"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Trace Sara’s path step by step from X using the compass (N=up, S=down, E=right, W=left) and imagine facing the direction she walks.",
+          "keyPoints": [
+            {
+              "text": "map",
+              "note": "Follow the street names and compass directions carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the starting point and landmarks on Sara’s neighbourhood map.",
+              "work": "\\(\\text{Start at X (16 Walker Street)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 356\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"356\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><path d=\"M116,210 L116,42 L150,42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"348\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Route 1: North through Centenary Park -> Cross Rd -> Right into School Rd</text></svg>"
+              }
+            },
+            {
+              "explain": "Route 1: North through Centenary Park -> Cross Rd -> Right into School Rd.",
+              "work": "\\(\\text{Matches: Turns right (east) into School Road}\\)"
+            },
+            {
+              "explain": "Verify left/right turns from the walker’s facing direction.",
+              "work": "\\(\\text{Direction verified on compass}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"Turns right (east) into School Road\".",
+              "work": "\\(\\text{Answer: Turns right (east) into School Road}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 334\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"334\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th17-p77-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For Route 2 from X on Walker Street, Sara turns left heading west, turns right into Richard Street, walks north to Merrifield Street, turns right, turns left into Cross Road, and then turns which way into School Road?",
+          "options": [
+            "Turns left into School Road",
+            "Turns right into School Road",
+            "Turns south into Baker Street",
+            "Turns onto Malden Street"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Trace Sara’s path step by step from X using the compass (N=up, S=down, E=right, W=left) and imagine facing the direction she walks.",
+          "keyPoints": [
+            {
+              "text": "Walker Street",
+              "note": "Follow the street names and compass directions carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the starting point and landmarks on Sara’s neighbourhood map.",
+              "work": "\\(\\text{Start at X (16 Walker Street)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 356\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"356\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><path d=\"M116,198 L43,198 L43,104 L116,104 L116,42 L150,42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"348\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Route 2: West -> Richard St -> Merrifield St -> Cross Rd -> Right into School Rd</text></svg>"
+              }
+            },
+            {
+              "explain": "Route 2: West -> Richard St -> Merrifield St -> Cross Rd -> Right into School Rd.",
+              "work": "\\(\\text{Matches: Turns right into School Road}\\)"
+            },
+            {
+              "explain": "Verify left/right turns from the walker’s facing direction.",
+              "work": "\\(\\text{Direction verified on compass}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"Turns right into School Road\".",
+              "work": "\\(\\text{Answer: Turns right into School Road}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 334\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"334\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th17-p77-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For Route 3 from X on Walker Street, Sara turns right heading east, turns left into Baker Street, walks north, and then turns which way into School Road?",
+          "options": [
+            "Turns left (west) into School Road",
+            "Turns right (east) into School Road",
+            "Turns south into Forest Street",
+            "Turns onto Gattney Street"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Trace Sara’s path step by step from X using the compass (N=up, S=down, E=right, W=left) and imagine facing the direction she walks.",
+          "keyPoints": [
+            {
+              "text": "Walker Street",
+              "note": "Follow the street names and compass directions carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the starting point and landmarks on Sara’s neighbourhood map.",
+              "work": "\\(\\text{Start at X (16 Walker Street)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 356\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"356\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><path d=\"M116,198 L213,198 L213,42 L180,42\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"348\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Route 3: East -> Baker St -> Left (west) into School Rd</text></svg>"
+              }
+            },
+            {
+              "explain": "Route 3: East -> Baker St -> Left (west) into School Rd.",
+              "work": "\\(\\text{Matches: Turns left (west) into School Road}\\)"
+            },
+            {
+              "explain": "Verify left/right turns from the walker’s facing direction.",
+              "work": "\\(\\text{Direction verified on compass}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"Turns left (west) into School Road\".",
+              "work": "\\(\\text{Answer: Turns left (west) into School Road}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 334\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"334\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th17-p77-q4to8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There are \\(5\\) railway bridges on Sara’s map where the railway line crosses a street. Which five streets do the railway bridges cross?",
+          "options": [
+            "School Rd, Merrifield St, Walker St, Gattney St, and Malden St",
+            "Richard St, Baker St, Bunker St, Forest St, and Cross Rd",
+            "School Rd, Cross Rd, Walker St, Forest St, and Malden St",
+            "Merrifield St, Walker St, Gattney St, Baker St, and Bunker St"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Trace Sara’s path step by step from X using the compass (N=up, S=down, E=right, W=left) and imagine facing the direction she walks.",
+          "keyPoints": [
+            {
+              "text": "map",
+              "note": "Follow the street names and compass directions carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the starting point and landmarks on Sara’s neighbourhood map.",
+              "work": "\\(\\text{Start at X (16 Walker Street)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 356\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"356\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><circle cx=\"164\" cy=\"42\" r=\"9\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"164\" y=\"45.5\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">1</text><circle cx=\"164\" cy=\"104\" r=\"9\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"164\" y=\"107.5\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">2</text><circle cx=\"164\" cy=\"198\" r=\"9\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"164\" y=\"201.5\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">3</text><circle cx=\"164\" cy=\"248\" r=\"9\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"164\" y=\"251.5\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">4</text><circle cx=\"164\" cy=\"298\" r=\"9\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"164\" y=\"301.5\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">5</text><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"348\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">5 bridges numbered 1-5 along the railway line</text></svg>"
+              }
+            },
+            {
+              "explain": "5 bridges numbered 1-5 along the railway line.",
+              "work": "\\(\\text{Matches: School Rd, Merrifield St, Walker St, Gattney St, and Malden St}\\)"
+            },
+            {
+              "explain": "Verify left/right turns from the walker’s facing direction.",
+              "work": "\\(\\text{Direction verified on compass}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"School Rd, Merrifield St, Walker St, Gattney St, and Malden St\".",
+              "work": "\\(\\text{Answer: School Rd, Merrifield St, Walker St, Gattney St, and Malden St}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 334\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"334\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-4-th17-p77-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the church (+) on Sara’s map. It is on the corner of which two streets?",
+          "options": [
+            "Baker Street and Forest Street",
+            "Walker Street and Richard Street",
+            "Merrifield Street and Cross Road",
+            "Gattney Street and Bunker Street"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Trace Sara’s path step by step from X using the compass (N=up, S=down, E=right, W=left) and imagine facing the direction she walks.",
+          "keyPoints": [
+            {
+              "text": "map",
+              "note": "Follow the street names and compass directions carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the starting point and landmarks on Sara’s neighbourhood map.",
+              "work": "\\(\\text{Start at X (16 Walker Street)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 356\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"356\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"348\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Church (+) sits at the corner of Baker St and Forest St</text></svg>"
+              }
+            },
+            {
+              "explain": "Church (+) sits at the corner of Baker St and Forest St.",
+              "work": "\\(\\text{Matches: Baker Street and Forest Street}\\)"
+            },
+            {
+              "explain": "Verify left/right turns from the walker’s facing direction.",
+              "work": "\\(\\text{Direction verified on compass}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \"Baker Street and Forest Street\".",
+              "work": "\\(\\text{Answer: Baker Street and Forest Street}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 334\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"334\" rx=\"10\" fill=\"#dcfce7\" stroke=\"#475569\" stroke-width=\"1.8\"/><rect x=\"34\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"16\" height=\"68\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"304\" y=\"10\" width=\"18\" height=\"314\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"108\" y=\"34\" width=\"114\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"96\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"190\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"240\" width=\"188\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"290\" width=\"288\" height=\"16\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"204\" y=\"220\" width=\"118\" height=\"14\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"1.2\"/><path d=\"M164,14 L164,320\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-dasharray=\"4,4\"/><rect x=\"130\" y=\"12\" width=\"70\" height=\"20\" rx=\"3\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"165\" y=\"26\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL</text><rect x=\"58\" y=\"116\" width=\"98\" height=\"70\" rx=\"6\" fill=\"#86efac\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"107\" y=\"142\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">CENTENARY</text><text x=\"107\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#14532d\">PARK</text><text x=\"107\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#14532d\">SOUTH GATE</text><text x=\"116\" y=\"224\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"900\" fill=\"#dc2626\">X</text><text x=\"116\" y=\"236\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"700\" fill=\"#991b1b\">Sara (16 Walker)</text><rect x=\"228\" y=\"194\" width=\"24\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.3\"/><text x=\"240\" y=\"210\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">+</text><text x=\"165\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">SCHOOL RD</text><text x=\"120\" y=\"107\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MERRIFIELD ST</text><text x=\"120\" y=\"201\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">WALKER ST</text><text x=\"120\" y=\"251\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">GATTNEY ST</text><text x=\"120\" y=\"301\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">MALDEN ST</text><text x=\"264\" y=\"230\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\">FOREST ST</text><text x=\"46\" y=\"246\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 46 246)\">RICHARD ST</text><text x=\"216\" y=\"150\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.5\" font-weight=\"800\" fill=\"#0f172a\" transform=\"rotate(-90 216 150)\">BAKER ST</text><text x=\"274\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">N</text><line x1=\"274\" y1=\"58\" x2=\"274\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"260\" y1=\"72\" x2=\"288\" y2=\"72\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"274\" y=\"98\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#0f172a\">S</text><text x=\"252\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">W</text><text x=\"296\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#0f172a\">E</text></svg>"
           }
         }
       ]

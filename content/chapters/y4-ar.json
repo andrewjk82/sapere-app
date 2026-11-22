@@ -740,6 +740,61 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">587 + 146 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
           }
+        },
+        {
+          "id": "y4-ar-1-th-rev2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the split place-value method to calculate \\(648 + 337\\).",
+          "options": [
+            "975",
+            "985",
+            "995",
+            "885"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split 648 = 600 + 40 + 8 and 337 = 300 + 30 + 7, add each column, and regroup 8 + 7 = 15.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Add hundreds, tens, and ones separately, then regroup."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split both numbers: \\(648 = 600 + 40 + 8\\) and \\(337 = 300 + 30 + 7\\).",
+              "work": "\\((600+300)+(40+30)+(8+7)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">648 + 337 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 648 = 600+40+8 and 337 = 300+30+7</text></svg>"
+              }
+            },
+            {
+              "explain": "Add hundreds (\\(900\\)) and tens (\\(70\\)).",
+              "work": "\\(600 + 300 = 900, \\quad 40 + 30 = 70\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">648 + 337 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 900</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Add ones: \\(8 + 7 = 15 = 10 + 5\\). Add the new ten to 70 to get 80.",
+              "work": "\\(8 + 7 = 15, \\quad 70 + 10 = 80\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">648 + 337 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 900</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 15</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine: \\(900 + 80 + 5 = 985\\).",
+              "work": "\\(648 + 337 = 985\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">648 + 337 = 985</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 300</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 900</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 15</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 900 + 70 + 15 = 985</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">648 + 337 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
         }
       ]
     },
@@ -1065,6 +1120,526 @@
             {
               "explain": "Add all combinations together: \\(2 + 2 + 3 + 2 + 1 = 10\\) ways.",
               "work": "\\(2 + 2 + 3 + 2 + 1 = 10 \\text{ ways}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is this statement true or false: \"If you double any odd number, the answer is always an even number.\"",
+          "options": [
+            "True, because odd + odd is always even (e.g. 5 + 5 = 10)",
+            "False, because doubling an odd number gives an odd number",
+            "False, because sometimes it is odd and sometimes even",
+            "True, because every multiple of 3 is even"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test the statement with small odd/even numbers and apply the parity rules (odd + odd = even, even + even = even, even + odd = odd).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Test with small examples and check with parity rules."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the addition parity rules: even + even = even, odd + odd = even, even + odd = odd.",
+              "work": "\\(\\text{E}+\\text{E}=\\text{E},\\ \\text{O}+\\text{O}=\\text{E},\\ \\text{E}+\\text{O}=\\text{O}\\)"
+            },
+            {
+              "explain": "Test with a simple numerical example.",
+              "work": "\\(2 \\times 7 = 14 \\text{ (even)}\\)"
+            },
+            {
+              "explain": "Check whether the rule holds for EVERY choice of numbers.",
+              "work": "\\(\\text{Result is always } even (True)\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{Answer: True}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is this statement true or false: \"If you double any even number, the answer is always an even number.\"",
+          "options": [
+            "True, because even + even is always even (e.g. 6 + 6 = 12)",
+            "False, because doubling an even number gives an odd number",
+            "False, because 0 doubled is odd",
+            "False, because half of even is always odd"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test the statement with small odd/even numbers and apply the parity rules (odd + odd = even, even + even = even, even + odd = odd).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Test with small examples and check with parity rules."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the addition parity rules: even + even = even, odd + odd = even, even + odd = odd.",
+              "work": "\\(\\text{E}+\\text{E}=\\text{E},\\ \\text{O}+\\text{O}=\\text{E},\\ \\text{E}+\\text{O}=\\text{O}\\)"
+            },
+            {
+              "explain": "Test with a simple numerical example.",
+              "work": "\\(2 \\times 8 = 16 \\text{ (even)}\\)"
+            },
+            {
+              "explain": "Check whether the rule holds for EVERY choice of numbers.",
+              "work": "\\(\\text{Result is always } even (True)\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{Answer: True}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is this statement true or false: \"The sum of three odd numbers is always an even number.\"",
+          "options": [
+            "True, because odd + odd = even",
+            "False, because odd + odd + odd = even + odd = odd (e.g. 1 + 3 + 5 = 9)",
+            "True, because 3 × 2 = 6",
+            "False, because the sum is sometimes even"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test the statement with small odd/even numbers and apply the parity rules (odd + odd = even, even + even = even, even + odd = odd).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Test with small examples and check with parity rules."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the addition parity rules: even + even = even, odd + odd = even, even + odd = odd.",
+              "work": "\\(\\text{E}+\\text{E}=\\text{E},\\ \\text{O}+\\text{O}=\\text{E},\\ \\text{E}+\\text{O}=\\text{O}\\)"
+            },
+            {
+              "explain": "Test with a simple numerical example.",
+              "work": "\\(1 + 3 + 5 = 9 \\text{ (odd)}\\)"
+            },
+            {
+              "explain": "Check whether the rule holds for EVERY choice of numbers.",
+              "work": "\\(\\text{Result is always } odd (False)\\)"
+            },
+            {
+              "explain": "Therefore, the statement is False.",
+              "work": "\\(\\text{Answer: False}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is this statement true or false: \"The sum of two odd numbers and one even number is always an even number.\"",
+          "options": [
+            "True, because (odd + odd) + even = even + even = even",
+            "False, because two odd numbers make an odd number",
+            "False, because adding an even number changes parity",
+            "False, because 3 + 5 + 2 = 11"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test the statement with small odd/even numbers and apply the parity rules (odd + odd = even, even + even = even, even + odd = odd).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Test with small examples and check with parity rules."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the addition parity rules: even + even = even, odd + odd = even, even + odd = odd.",
+              "work": "\\(\\text{E}+\\text{E}=\\text{E},\\ \\text{O}+\\text{O}=\\text{E},\\ \\text{E}+\\text{O}=\\text{O}\\)"
+            },
+            {
+              "explain": "Test with a simple numerical example.",
+              "work": "\\(3 + 5 + 2 = 10 \\text{ (even)}\\)"
+            },
+            {
+              "explain": "Check whether the rule holds for EVERY choice of numbers.",
+              "work": "\\(\\text{Result is always } even (True)\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{Answer: True}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is this statement true or false: \"The sum of two even numbers and one odd number is always an even number.\"",
+          "options": [
+            "True, because two even numbers outweigh one odd number",
+            "False, because (even + even) + odd = even + odd = odd (e.g. 2 + 4 + 3 = 9)",
+            "True, because 2 + 4 + 3 = 8",
+            "False, because even + even is odd"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test the statement with small odd/even numbers and apply the parity rules (odd + odd = even, even + even = even, even + odd = odd).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Test with small examples and check with parity rules."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the addition parity rules: even + even = even, odd + odd = even, even + odd = odd.",
+              "work": "\\(\\text{E}+\\text{E}=\\text{E},\\ \\text{O}+\\text{O}=\\text{E},\\ \\text{E}+\\text{O}=\\text{O}\\)"
+            },
+            {
+              "explain": "Test with a simple numerical example.",
+              "work": "\\(2 + 4 + 3 = 9 \\text{ (odd)}\\)"
+            },
+            {
+              "explain": "Check whether the rule holds for EVERY choice of numbers.",
+              "work": "\\(\\text{Result is always } odd (False)\\)"
+            },
+            {
+              "explain": "Therefore, the statement is False.",
+              "work": "\\(\\text{Answer: False}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(156 + 156\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(156 + 156\\)"
+            },
+            {
+              "explain": "Apply the parity rule: even + even = even.",
+              "work": "\\(\\text{Rule: even + even = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(403 + 609 + 800\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(403 + 609 + 800\\)"
+            },
+            {
+              "explain": "Apply the parity rule: odd + odd + even = even.",
+              "work": "\\(\\text{Rule: odd + odd + even = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(720 + 1000 + 533\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(720 + 1000 + 533\\)"
+            },
+            {
+              "explain": "Apply the parity rule: even + even + odd = odd.",
+              "work": "\\(\\text{Rule: even + even + odd = odd}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Odd}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Odd.",
+              "work": "\\(\\text{Answer: Odd}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(539 + 253 + 125\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(539 + 253 + 125\\)"
+            },
+            {
+              "explain": "Apply the parity rule: odd + odd + odd = odd.",
+              "work": "\\(\\text{Rule: odd + odd + odd = odd}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Odd}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Odd.",
+              "work": "\\(\\text{Answer: Odd}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(933 + 933\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(933 + 933\\)"
+            },
+            {
+              "explain": "Apply the parity rule: odd + odd = even.",
+              "work": "\\(\\text{Rule: odd + odd = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(4563 - 2375\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(4563 - 2375\\)"
+            },
+            {
+              "explain": "Apply the parity rule: odd - odd = even.",
+              "work": "\\(\\text{Rule: odd - odd = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(2000 - 630\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(2000 - 630\\)"
+            },
+            {
+              "explain": "Apply the parity rule: even - even = even.",
+              "work": "\\(\\text{Rule: even - even = even}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Even}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Even.",
+              "work": "\\(\\text{Answer: Even}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-2-th17-p76-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Without working out the exact answer, will \\(782 - 453\\) be odd or even?",
+          "options": [
+            "Even",
+            "Odd",
+            "Zero",
+            "Cannot be determined"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check only the LAST digit of each number to see whether it is odd or even, then apply the odd/even rule.",
+          "keyPoints": [
+            {
+              "text": "odd or even",
+              "note": "Only the ones digit determines whether a whole number is odd or even."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the ones (last) digit of each number to classify it as odd (1,3,5,7,9) or even (0,2,4,6,8).",
+              "work": "\\(782 - 453\\)"
+            },
+            {
+              "explain": "Apply the parity rule: even - odd = odd.",
+              "work": "\\(\\text{Rule: even - odd = odd}\\)"
+            },
+            {
+              "explain": "Notice we do not need the full calculation because the last digit alone guarantees the parity.",
+              "work": "\\(\\text{Result parity} = \\text{Odd}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Odd.",
+              "work": "\\(\\text{Answer: Odd}\\)"
             }
           ]
         }
@@ -2687,6 +3262,86 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 218\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"218\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,24 72,35 61,46 50,35\" fill=\"#0284c7\"/><rect x=\"82\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,23 106.5,31.5 115,31.5 108,37 110.5,46 103,40.5 95.5,46 98,37 91,31.5 99.5,31.5\" fill=\"#0d9488\"/><rect x=\"124\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,23 148.5,31.5 157,31.5 150,37 152.5,46 145,40.5 137.5,46 140,37 133,31.5 141.5,31.5\" fill=\"#0d9488\"/><rect x=\"166\" y=\"14\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"35\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"32\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,38 Q187,43 192,38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"41\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"77\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"74\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,80 Q61,85 66,80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,66 114,77 103,88 92,77\" fill=\"#0284c7\"/><rect x=\"124\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"145,66 156,77 145,88 134,77\" fill=\"#0284c7\"/><rect x=\"166\" y=\"56\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,66 198,77 187,88 176,77\" fill=\"#0284c7\"/><text x=\"230\" y=\"83\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">14</text><rect x=\"40\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"61,107 64.5,115.5 73,115.5 66,121 68.5,130 61,124.5 53.5,130 56,121 49,115.5 57.5,115.5\" fill=\"#0d9488\"/><rect x=\"82\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"103,108 114,119 103,130 92,119\" fill=\"#0284c7\"/><rect x=\"124\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"119\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"116\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,122 Q145,127 150,122\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"98\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><polygon points=\"187,107 190.5,115.5 199,115.5 192,121 194.5,130 187,124.5 179.5,130 182,121 175,115.5 183.5,115.5\" fill=\"#0d9488\"/><text x=\"230\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">16</text><rect x=\"40\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"61\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"57\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"65\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M56,164 Q61,169 66,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"82\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"103\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"99\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"107\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M98,164 Q103,169 108,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"124\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"145\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"141\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"149\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M140,164 Q145,169 150,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"166\" y=\"140\" width=\"42\" height=\"42\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.1\"/><circle cx=\"187\" cy=\"161\" r=\"11\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><circle cx=\"183\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><circle cx=\"191\" cy=\"158\" r=\"1.5\" fill=\"#0f172a\"/><path d=\"M182,164 Q187,169 192,164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"230\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">20</text><text x=\"61\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"103\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">15</text><text x=\"145\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text><text x=\"187\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">17</text></svg>"
           }
+        },
+        {
+          "id": "y4-ar-4-th-rev2-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What number can be taken from \\(55\\) so that the answer is the same as \\(25\\) plus \\(15\\)?",
+          "options": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First add 25 + 15 = 40, then find 55 - □ = 40.",
+          "keyPoints": [
+            {
+              "text": "taken from",
+              "note": "Write 55 - □ = 25 + 15 and solve."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the right-hand side: \\(25 + 15 = 40\\).",
+              "work": "\\(25 + 15 = 40\\)"
+            },
+            {
+              "explain": "Write the equivalent equation: \\(55 - \\square = 40\\).",
+              "work": "\\(55 - \\square = 40\\)"
+            },
+            {
+              "explain": "Subtract 40 from 55: \\(55 - 40 = 15\\).",
+              "work": "\\(55 - 40 = 15\\)"
+            },
+            {
+              "explain": "Check: \\(55 - 15 = 40 = 25 + 15\\). The number is 15.",
+              "work": "\\(\\square = 15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-4-th17-p77-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve these 6 clues in order to crack open the safe: (1) \\(63 \\div 7\\), (2) double \\(7\\) minus \\(8\\), (3) \\(\\dfrac{1}{4}\\) of \\(100\\) subtract \\(20\\), (4) \\((2 \\times 2) + (2 \\times 2)\\), (5) \\(60\\) chickens minus \\(53\\), (6) hours in \\(180\\) minutes. What is the 6-digit safe code?",
+          "options": [
+            "9, 6, 5, 8, 7, 3",
+            "9, 6, 5, 4, 7, 3",
+            "8, 6, 5, 8, 7, 3",
+            "9, 6, 5, 8, 7, 2"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out each of the 6 clues one by one: 63÷7=9, 14-8=6, 25-20=5, 4+4=8, 60-53=7, 180÷60=3.",
+          "keyPoints": [
+            {
+              "text": "crack open the safe",
+              "note": "Solve all six short clues in exact order."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Solve Clues 1 and 2: \\(63 \\div 7 = 9\\), and double 7 minus 8 = \\(14 - 8 = 6\\).",
+              "work": "\\(63 \\div 7 = 9, \\quad (2 \\times 7) - 8 = 6\\)"
+            },
+            {
+              "explain": "Solve Clues 3 and 4: \\(\\dfrac{1}{4}\\) of \\(100\\) is \\(25\\), minus \\(20 = 5\\); and \\((2 \\times 2) + (2 \\times 2) = 4 + 4 = 8\\).",
+              "work": "\\(25 - 20 = 5, \\quad 4 + 4 = 8\\)"
+            },
+            {
+              "explain": "Solve Clues 5 and 6: \\(60 - 53 = 7\\) chickens left, and \\(180 \\div 60 = 3\\) hours.",
+              "work": "\\(60 - 53 = 7, \\quad 180 \\div 60 = 3\\)"
+            },
+            {
+              "explain": "Put all 6 digits together in order: \\(9, 6, 5, 8, 7, 3\\).",
+              "work": "\\(\\text{Safe code: } 9, 6, 5, 8, 7, 3\\)"
+            }
+          ]
         }
       ]
     },
@@ -3415,6 +4070,362 @@
               "work": "\\(\\square = 7\\)"
             }
           ]
+        },
+        {
+          "id": "y4-ar-5-th-rev2-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent number sentence: \\(36 + 8 = \\square - 8\\).",
+          "options": [
+            "36",
+            "44",
+            "52",
+            "56"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Evaluate the complete side first, then find the number that makes the other side equal the same total.",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of = must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side: it equals \\(44\\).",
+              "work": "\\(\\text{Known side} = 44\\)"
+            },
+            {
+              "explain": "Solve for the box so the other side also equals \\(44\\).",
+              "work": "\\(44 + 8 = 52\\)"
+            },
+            {
+              "explain": "Check by substituting \\(52\\) into the equation.",
+              "work": "\\(\\text{Both sides} = 44\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(52\\).",
+              "work": "\\(\\square = 52\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th-rev2-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent number sentence: \\(12 + \\square = 30 + 10\\).",
+          "options": [
+            "26",
+            "28",
+            "32",
+            "52"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Evaluate the complete side first, then find the number that makes the other side equal the same total.",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of = must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side: it equals \\(40\\).",
+              "work": "\\(\\text{Known side} = 40\\)"
+            },
+            {
+              "explain": "Solve for the box so the other side also equals \\(40\\).",
+              "work": "\\(40 - 12 = 28\\)"
+            },
+            {
+              "explain": "Check by substituting \\(28\\) into the equation.",
+              "work": "\\(\\text{Both sides} = 40\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(28\\).",
+              "work": "\\(\\square = 28\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th-rev2-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent number sentence: \\(100 - 25 = 50 + \\square\\).",
+          "options": [
+            "15",
+            "25",
+            "35",
+            "75"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Evaluate the complete side first, then find the number that makes the other side equal the same total.",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of = must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side: it equals \\(75\\).",
+              "work": "\\(\\text{Known side} = 75\\)"
+            },
+            {
+              "explain": "Solve for the box so the other side also equals \\(75\\).",
+              "work": "\\(75 - 50 = 25\\)"
+            },
+            {
+              "explain": "Check by substituting \\(25\\) into the equation.",
+              "work": "\\(\\text{Both sides} = 75\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(25\\).",
+              "work": "\\(\\square = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th-rev2-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent number sentence: \\(50 - 16 = 100 - \\square\\).",
+          "options": [
+            "34",
+            "56",
+            "66",
+            "76"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Evaluate the complete side first, then find the number that makes the other side equal the same total.",
+          "keyPoints": [
+            {
+              "text": "equivalent number sentence",
+              "note": "Both sides of = must have the exact same value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the complete side: it equals \\(34\\).",
+              "work": "\\(\\text{Known side} = 34\\)"
+            },
+            {
+              "explain": "Solve for the box so the other side also equals \\(34\\).",
+              "work": "\\(100 - 34 = 66\\)"
+            },
+            {
+              "explain": "Check by substituting \\(66\\) into the equation.",
+              "work": "\\(\\text{Both sides} = 34\\)"
+            },
+            {
+              "explain": "Therefore, the missing number is \\(66\\).",
+              "work": "\\(\\square = 66\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-5-th18-p80-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same answer as \"double 9\"?",
+          "options": [
+            "9 lots of 2",
+            "36 ÷ 6",
+            "half of 28",
+            "the product of 9 and 8"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out \"double 9\" first, then evaluate the four choices to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate both expressions to check if they are equal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of \"double 9\".",
+              "work": "\\(9 \\times 2 = 18\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">double 9</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 18</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"9 lots of 2\".",
+              "work": "\\(9 \\times 2 = 18\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">9 lots of 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 18!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other options produce different values.",
+              "work": "\\(\\text{Both equal } 18\\)"
+            },
+            {
+              "explain": "Therefore, \"double 9\" matches \"9 lots of 2\".",
+              "work": "\\(9 \\times 2 = 18\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">double 9</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th18-p80-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same answer as \"one sixth of 36\"?",
+          "options": [
+            "9 lots of 2",
+            "36 ÷ 6",
+            "half of 28",
+            "the product of 9 and 8"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out \"one sixth of 36\" first, then evaluate the four choices to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate both expressions to check if they are equal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of \"one sixth of 36\".",
+              "work": "\\(36 \\div 6 = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">one sixth of 36</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"36 ÷ 6\".",
+              "work": "\\(36 \\div 6 = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">36 ÷ 6</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 6!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other options produce different values.",
+              "work": "\\(\\text{Both equal } 6\\)"
+            },
+            {
+              "explain": "Therefore, \"one sixth of 36\" matches \"36 ÷ 6\".",
+              "work": "\\(36 \\div 6 = 6\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">one sixth of 36</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th18-p80-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same answer as \"140 divided by 10\"?",
+          "options": [
+            "9 lots of 2",
+            "36 ÷ 6",
+            "half of 28",
+            "the product of 9 and 8"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out \"140 divided by 10\" first, then evaluate the four choices to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate both expressions to check if they are equal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of \"140 divided by 10\".",
+              "work": "\\(140 \\div 10 = 14\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">140 divided by 10</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 14</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"half of 28\".",
+              "work": "\\(28 \\div 2 = 14\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">half of 28</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 14!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other options produce different values.",
+              "work": "\\(\\text{Both equal } 14\\)"
+            },
+            {
+              "explain": "Therefore, \"140 divided by 10\" matches \"half of 28\".",
+              "work": "\\(28 \\div 2 = 14\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">140 divided by 10</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th18-p80-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same answer as \"(7 × 10) + 2\"?",
+          "options": [
+            "9 lots of 2",
+            "36 ÷ 6",
+            "half of 28",
+            "the product of 9 and 8"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Work out \"(7 × 10) + 2\" first, then evaluate the four choices to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate both expressions to check if they are equal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of \"(7 × 10) + 2\".",
+              "work": "\\((7 \\times 10) + 2 = 72\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">(7 × 10) + 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 72</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"the product of 9 and 8\".",
+              "work": "\\(9 \\times 8 = 72\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">the product of 9 and 8</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 72!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other options produce different values.",
+              "work": "\\(\\text{Both equal } 72\\)"
+            },
+            {
+              "explain": "Therefore, \"(7 × 10) + 2\" matches \"the product of 9 and 8\".",
+              "work": "\\(9 \\times 8 = 72\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">(7 × 10) + 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
         }
       ]
     }

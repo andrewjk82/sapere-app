@@ -1109,6 +1109,98 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 162\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"70.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"100.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"130.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"160.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"190.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/></svg>"
           }
+        },
+        {
+          "id": "y4-pf-1-th-rev2-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the two equal-sized circles to find the equivalent fraction: \\(\\dfrac{4}{12} = \\square\\) (in thirds).",
+          "options": [
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{6}\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide both numerator and denominator of 4/12 by 4.",
+          "keyPoints": [
+            {
+              "text": "equivalent fraction",
+              "note": "Multiply or divide top and bottom by the same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The left circle shows \\(\\dfrac{4}{12}\\) shaded; the right circle is divided into \\(3\\) equal parts.",
+              "work": "\\(\\dfrac{4}{12} = \\dfrac{\\square}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 156\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"156\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 82 66 L 82.0 20.0 A 46 46 0 0 1 105.0 26.2 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 105.0 26.2 A 46 46 0 0 1 121.8 43.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 121.8 43.0 A 46 46 0 0 1 128.0 66.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 128.0 66.0 A 46 46 0 0 1 121.8 89.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 121.8 89.0 A 46 46 0 0 1 105.0 105.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 105.0 105.8 A 46 46 0 0 1 82.0 112.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 82.0 112.0 A 46 46 0 0 1 59.0 105.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 59.0 105.8 A 46 46 0 0 1 42.2 89.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 42.2 89.0 A 46 46 0 0 1 36.0 66.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 36.0 66.0 A 46 46 0 0 1 42.2 43.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 42.2 43.0 A 46 46 0 0 1 59.0 26.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 59.0 26.2 A 46 46 0 0 1 82.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"150\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">=</text><path d=\"M 218 66 L 218.0 20.0 A 46 46 0 0 1 257.8 89.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 257.8 89.0 A 46 46 0 0 1 178.2 89.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 178.2 89.0 A 46 46 0 0 1 218.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"150\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Same shaded area: 4/12 = 1/3</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide numerator and denominator by \\(4\\).",
+              "work": "\\(\\dfrac{4 \\div 4}{12 \\div 4} = \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Confirm both shaded regions cover the exact same angle of the circle.",
+              "work": "\\(\\dfrac{4}{12} = \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the equivalent fraction is \\(\\dfrac{1}{3}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{3}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 134\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 82 66 L 82.0 20.0 A 46 46 0 0 1 105.0 26.2 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 105.0 26.2 A 46 46 0 0 1 121.8 43.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 121.8 43.0 A 46 46 0 0 1 128.0 66.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 128.0 66.0 A 46 46 0 0 1 121.8 89.0 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 121.8 89.0 A 46 46 0 0 1 105.0 105.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 105.0 105.8 A 46 46 0 0 1 82.0 112.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 82.0 112.0 A 46 46 0 0 1 59.0 105.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 59.0 105.8 A 46 46 0 0 1 42.2 89.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 42.2 89.0 A 46 46 0 0 1 36.0 66.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 36.0 66.0 A 46 46 0 0 1 42.2 43.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 42.2 43.0 A 46 46 0 0 1 59.0 26.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 59.0 26.2 A 46 46 0 0 1 82.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"150\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">=</text><path d=\"M 218 66 L 218.0 20.0 A 46 46 0 0 1 257.8 89.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 257.8 89.0 A 46 46 0 0 1 178.2 89.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 178.2 89.0 A 46 46 0 0 1 218.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-pf-1-th-rev2-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the two equal-sized circles to find the equivalent fraction: \\(\\dfrac{1}{5} = \\square\\) (in tenths).",
+          "options": [
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{2}{10}\\)",
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{5}{10}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply both numerator and denominator of 1/5 by 2.",
+          "keyPoints": [
+            {
+              "text": "equivalent fraction",
+              "note": "Multiply or divide top and bottom by the same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The left circle shows \\(\\dfrac{1}{5}\\) shaded; the right circle is divided into \\(10\\) equal parts.",
+              "work": "\\(\\dfrac{1}{5} = \\dfrac{\\square}{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 156\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"156\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 82 66 L 82.0 20.0 A 46 46 0 0 1 125.7 51.8 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 125.7 51.8 A 46 46 0 0 1 109.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 109.0 103.2 A 46 46 0 0 1 55.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 55.0 103.2 A 46 46 0 0 1 38.3 51.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 38.3 51.8 A 46 46 0 0 1 82.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"150\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">=</text><path d=\"M 218 66 L 218.0 20.0 A 46 46 0 0 1 245.0 28.8 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 245.0 28.8 A 46 46 0 0 1 261.7 51.8 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 261.7 51.8 A 46 46 0 0 1 261.7 80.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 261.7 80.2 A 46 46 0 0 1 245.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 245.0 103.2 A 46 46 0 0 1 218.0 112.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 218.0 112.0 A 46 46 0 0 1 191.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 191.0 103.2 A 46 46 0 0 1 174.3 80.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 174.3 80.2 A 46 46 0 0 1 174.3 51.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 174.3 51.8 A 46 46 0 0 1 191.0 28.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 191.0 28.8 A 46 46 0 0 1 218.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"150\" y=\"146\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Same shaded area: 1/5 = 2/10</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply numerator and denominator by \\(2\\).",
+              "work": "\\(\\dfrac{1 \\times 2}{5 \\times 2} = \\dfrac{2}{10}\\)"
+            },
+            {
+              "explain": "Confirm both shaded regions cover the exact same angle of the circle.",
+              "work": "\\(\\dfrac{1}{5} = \\dfrac{2}{10}\\)"
+            },
+            {
+              "explain": "Therefore, the equivalent fraction is \\(\\dfrac{2}{10}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{2}{10}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 134\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 82 66 L 82.0 20.0 A 46 46 0 0 1 125.7 51.8 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 125.7 51.8 A 46 46 0 0 1 109.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 109.0 103.2 A 46 46 0 0 1 55.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 55.0 103.2 A 46 46 0 0 1 38.3 51.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 82 66 L 38.3 51.8 A 46 46 0 0 1 82.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"150\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">=</text><path d=\"M 218 66 L 218.0 20.0 A 46 46 0 0 1 245.0 28.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 245.0 28.8 A 46 46 0 0 1 261.7 51.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 261.7 51.8 A 46 46 0 0 1 261.7 80.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 261.7 80.2 A 46 46 0 0 1 245.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 245.0 103.2 A 46 46 0 0 1 218.0 112.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 218.0 112.0 A 46 46 0 0 1 191.0 103.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 191.0 103.2 A 46 46 0 0 1 174.3 80.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 174.3 80.2 A 46 46 0 0 1 174.3 51.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 174.3 51.8 A 46 46 0 0 1 191.0 28.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 218 66 L 191.0 28.8 A 46 46 0 0 1 218.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
         }
       ]
     },
@@ -1695,6 +1787,642 @@
             {
               "explain": "Therefore, \\(\\dfrac{8}{4} = 2\\).",
               "work": "\\(\\text{Answer: } 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th-rev2-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{5}{4}\\) as a mixed numeral.",
+          "options": [
+            "\\(1\\dfrac{1}{4}\\)",
+            "\\(1\\dfrac{2}{4}\\)",
+            "\\(1\\dfrac{3}{4}\\)",
+            "\\(2\\dfrac{1}{4}\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 5 by 4: 4 fits into 5 once with 1 quarter left over.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "4/4 = 1 whole, leaving 1/4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide numerator 5 by denominator 4: \\(5 \\div 4 = 1\\) remainder \\(1\\).",
+              "work": "\\(5 \\div 4 = 1 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Write 4/4 as 1 whole.",
+              "work": "\\(\\dfrac{5}{4} = \\dfrac{4}{4} + \\dfrac{1}{4} = 1 + \\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Combine into a mixed numeral: \\(1\\dfrac{1}{4}\\).",
+              "work": "\\(1\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{5}{4} = 1\\dfrac{1}{4}\\).",
+              "work": "\\(\\text{Answer: } 1\\dfrac{1}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What are the improper fraction AND mixed number shown by this diagram?",
+          "options": [
+            "\\(\\dfrac{14}{6}\\) and \\(2\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{12}{6}\\) and \\(2\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{14}{6}\\) and \\(2\\dfrac{4}{6}\\)",
+            "\\(\\dfrac{16}{6}\\) and \\(2\\dfrac{2}{6}\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count total shaded pieces over 6 for the improper fraction, and count whole shapes + leftover fraction for the mixed number.",
+          "keyPoints": [
+            {
+              "text": "improper fraction AND mixed number",
+              "note": "Both represent the exact same shaded amount."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the completely shaded whole shapes: \\(2\\) wholes (each has \\(6\\) equal parts).",
+              "work": "\\(2 \\times 6 = 12 \\text{ parts}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 274 124\" width=\"65%\" height=\"auto\" style=\"max-width:356px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"274\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 53 50 L 53.0 20.0 A 30 30 0 0 1 79.0 35.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 79.0 35.0 A 30 30 0 0 1 79.0 65.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 79.0 65.0 A 30 30 0 0 1 53.0 80.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 53.0 80.0 A 30 30 0 0 1 27.0 65.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 27.0 65.0 A 30 30 0 0 1 27.0 35.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 27.0 35.0 A 30 30 0 0 1 53.0 20.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 20.0 A 30 30 0 0 1 163.0 35.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 163.0 35.0 A 30 30 0 0 1 163.0 65.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 163.0 65.0 A 30 30 0 0 1 137.0 80.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 80.0 A 30 30 0 0 1 111.0 65.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 111.0 65.0 A 30 30 0 0 1 111.0 35.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 111.0 35.0 A 30 30 0 0 1 137.0 20.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 20.0 A 30 30 0 0 1 247.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 247.0 35.0 A 30 30 0 0 1 247.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 247.0 65.0 A 30 30 0 0 1 221.0 80.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 80.0 A 30 30 0 0 1 195.0 65.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 195.0 65.0 A 30 30 0 0 1 195.0 35.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 195.0 35.0 A 30 30 0 0 1 221.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"137\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">2 wholes = 12/6</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the shaded parts in the partial shape: \\(2\\) out of \\(6\\).",
+              "work": "\\(\\text{Mixed number} = 2\\dfrac{2}{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 274 124\" width=\"65%\" height=\"auto\" style=\"max-width:356px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"274\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 53 50 L 53.0 20.0 A 30 30 0 0 1 79.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 79.0 35.0 A 30 30 0 0 1 79.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 79.0 65.0 A 30 30 0 0 1 53.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 53.0 80.0 A 30 30 0 0 1 27.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 27.0 65.0 A 30 30 0 0 1 27.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 27.0 35.0 A 30 30 0 0 1 53.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 20.0 A 30 30 0 0 1 163.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 163.0 35.0 A 30 30 0 0 1 163.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 163.0 65.0 A 30 30 0 0 1 137.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 80.0 A 30 30 0 0 1 111.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 111.0 65.0 A 30 30 0 0 1 111.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 111.0 35.0 A 30 30 0 0 1 137.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 20.0 A 30 30 0 0 1 247.0 35.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 247.0 35.0 A 30 30 0 0 1 247.0 65.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 247.0 65.0 A 30 30 0 0 1 221.0 80.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 80.0 A 30 30 0 0 1 195.0 65.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 195.0 65.0 A 30 30 0 0 1 195.0 35.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 195.0 35.0 A 30 30 0 0 1 221.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"137\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Plus 2/6 -> Total 14/6</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all shaded parts for the improper fraction numerator: \\(12 + 2 = 14\\).",
+              "work": "\\(\\text{Improper fraction} = \\dfrac{14}{6}\\)"
+            },
+            {
+              "explain": "Therefore, the diagram shows \\(\\dfrac{14}{6}\\) and \\(2\\dfrac{2}{6}\\).",
+              "work": "\\(\\dfrac{14}{6} = 2\\dfrac{2}{6}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 274 102\" width=\"65%\" height=\"auto\" style=\"max-width:356px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"274\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 53 50 L 53.0 20.0 A 30 30 0 0 1 79.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 79.0 35.0 A 30 30 0 0 1 79.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 79.0 65.0 A 30 30 0 0 1 53.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 53.0 80.0 A 30 30 0 0 1 27.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 27.0 65.0 A 30 30 0 0 1 27.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 27.0 35.0 A 30 30 0 0 1 53.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 20.0 A 30 30 0 0 1 163.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 163.0 35.0 A 30 30 0 0 1 163.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 163.0 65.0 A 30 30 0 0 1 137.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 80.0 A 30 30 0 0 1 111.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 111.0 65.0 A 30 30 0 0 1 111.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 111.0 35.0 A 30 30 0 0 1 137.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 20.0 A 30 30 0 0 1 247.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 247.0 35.0 A 30 30 0 0 1 247.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 247.0 65.0 A 30 30 0 0 1 221.0 80.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 80.0 A 30 30 0 0 1 195.0 65.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 195.0 65.0 A 30 30 0 0 1 195.0 35.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 195.0 35.0 A 30 30 0 0 1 221.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What are the improper fraction AND mixed number shown by this diagram?",
+          "options": [
+            "\\(\\dfrac{6}{2}\\) and \\(3\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{7}{2}\\) and \\(3\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{7}{2}\\) and \\(4\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{5}{2}\\) and \\(2\\dfrac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count total shaded pieces over 2 for the improper fraction, and count whole shapes + leftover fraction for the mixed number.",
+          "keyPoints": [
+            {
+              "text": "improper fraction AND mixed number",
+              "note": "Both represent the exact same shaded amount."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the completely shaded whole shapes: \\(3\\) wholes (each has \\(2\\) equal parts).",
+              "work": "\\(3 \\times 2 = 6 \\text{ parts}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 124\" width=\"65%\" height=\"auto\" style=\"max-width:465px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"358\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 53 50 L 53.0 20.0 A 30 30 0 0 1 53.0 80.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 53.0 80.0 A 30 30 0 0 1 53.0 20.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 20.0 A 30 30 0 0 1 137.0 80.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 80.0 A 30 30 0 0 1 137.0 20.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 20.0 A 30 30 0 0 1 221.0 80.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 80.0 A 30 30 0 0 1 221.0 20.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 305 50 L 305.0 20.0 A 30 30 0 0 1 305.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 305 50 L 305.0 80.0 A 30 30 0 0 1 305.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"179\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">3 wholes = 6/2</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the shaded parts in the partial shape: \\(1\\) out of \\(2\\).",
+              "work": "\\(\\text{Mixed number} = 3\\dfrac{1}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 124\" width=\"65%\" height=\"auto\" style=\"max-width:465px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"358\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 53 50 L 53.0 20.0 A 30 30 0 0 1 53.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 53.0 80.0 A 30 30 0 0 1 53.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 20.0 A 30 30 0 0 1 137.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 80.0 A 30 30 0 0 1 137.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 20.0 A 30 30 0 0 1 221.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 80.0 A 30 30 0 0 1 221.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 305 50 L 305.0 20.0 A 30 30 0 0 1 305.0 80.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 305 50 L 305.0 80.0 A 30 30 0 0 1 305.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"179\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Plus 1/2 -> Total 7/2</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all shaded parts for the improper fraction numerator: \\(6 + 1 = 7\\).",
+              "work": "\\(\\text{Improper fraction} = \\dfrac{7}{2}\\)"
+            },
+            {
+              "explain": "Therefore, the diagram shows \\(\\dfrac{7}{2}\\) and \\(3\\dfrac{1}{2}\\).",
+              "work": "\\(\\dfrac{7}{2} = 3\\dfrac{1}{2}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 102\" width=\"65%\" height=\"auto\" style=\"max-width:465px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"358\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 53 50 L 53.0 20.0 A 30 30 0 0 1 53.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 53 50 L 53.0 80.0 A 30 30 0 0 1 53.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 20.0 A 30 30 0 0 1 137.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 137 50 L 137.0 80.0 A 30 30 0 0 1 137.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 20.0 A 30 30 0 0 1 221.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 221 50 L 221.0 80.0 A 30 30 0 0 1 221.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 305 50 L 305.0 20.0 A 30 30 0 0 1 305.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 305 50 L 305.0 80.0 A 30 30 0 0 1 305.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What are the improper fraction AND mixed number shown by this diagram?",
+          "options": [
+            "\\(\\dfrac{10}{6}\\) and \\(1\\dfrac{4}{6}\\)",
+            "\\(\\dfrac{10}{6}\\) and \\(1\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{8}{6}\\) and \\(1\\dfrac{4}{6}\\)",
+            "\\(\\dfrac{11}{6}\\) and \\(1\\dfrac{5}{6}\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count total shaded pieces over 6 for the improper fraction, and count whole shapes + leftover fraction for the mixed number.",
+          "keyPoints": [
+            {
+              "text": "improper fraction AND mixed number",
+              "note": "Both represent the exact same shaded amount."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the completely shaded whole shapes: \\(1\\) wholes (each has \\(6\\) equal parts).",
+              "work": "\\(1 \\times 6 = 6 \\text{ parts}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 88 50 L 88.0 20.0 A 30 30 0 0 1 114.0 35.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 114.0 35.0 A 30 30 0 0 1 114.0 65.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 114.0 65.0 A 30 30 0 0 1 88.0 80.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 88.0 80.0 A 30 30 0 0 1 62.0 65.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 62.0 65.0 A 30 30 0 0 1 62.0 35.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 62.0 35.0 A 30 30 0 0 1 88.0 20.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 172.0 20.0 A 30 30 0 0 1 198.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 198.0 35.0 A 30 30 0 0 1 198.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 198.0 65.0 A 30 30 0 0 1 172.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 172.0 80.0 A 30 30 0 0 1 146.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 146.0 65.0 A 30 30 0 0 1 146.0 35.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 146.0 35.0 A 30 30 0 0 1 172.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"130\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">1 wholes = 6/6</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the shaded parts in the partial shape: \\(4\\) out of \\(6\\).",
+              "work": "\\(\\text{Mixed number} = 1\\dfrac{4}{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 88 50 L 88.0 20.0 A 30 30 0 0 1 114.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 114.0 35.0 A 30 30 0 0 1 114.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 114.0 65.0 A 30 30 0 0 1 88.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 88.0 80.0 A 30 30 0 0 1 62.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 62.0 65.0 A 30 30 0 0 1 62.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 62.0 35.0 A 30 30 0 0 1 88.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 172.0 20.0 A 30 30 0 0 1 198.0 35.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 198.0 35.0 A 30 30 0 0 1 198.0 65.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 198.0 65.0 A 30 30 0 0 1 172.0 80.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 172.0 80.0 A 30 30 0 0 1 146.0 65.0 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 146.0 65.0 A 30 30 0 0 1 146.0 35.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 146.0 35.0 A 30 30 0 0 1 172.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"130\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Plus 4/6 -> Total 10/6</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all shaded parts for the improper fraction numerator: \\(6 + 4 = 10\\).",
+              "work": "\\(\\text{Improper fraction} = \\dfrac{10}{6}\\)"
+            },
+            {
+              "explain": "Therefore, the diagram shows \\(\\dfrac{10}{6}\\) and \\(1\\dfrac{4}{6}\\).",
+              "work": "\\(\\dfrac{10}{6} = 1\\dfrac{4}{6}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 102\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 88 50 L 88.0 20.0 A 30 30 0 0 1 114.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 114.0 35.0 A 30 30 0 0 1 114.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 114.0 65.0 A 30 30 0 0 1 88.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 88.0 80.0 A 30 30 0 0 1 62.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 62.0 65.0 A 30 30 0 0 1 62.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 88 50 L 62.0 35.0 A 30 30 0 0 1 88.0 20.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 172.0 20.0 A 30 30 0 0 1 198.0 35.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 198.0 35.0 A 30 30 0 0 1 198.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 198.0 65.0 A 30 30 0 0 1 172.0 80.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 172.0 80.0 A 30 30 0 0 1 146.0 65.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 146.0 65.0 A 30 30 0 0 1 146.0 35.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M 172 50 L 146.0 35.0 A 30 30 0 0 1 172.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What are the improper fraction AND mixed number shown by this diagram?",
+          "options": [
+            "\\(\\dfrac{12}{4}\\) and \\(3\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{13}{4}\\) and \\(3\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{13}{4}\\) and \\(3\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{14}{4}\\) and \\(3\\dfrac{2}{4}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count total shaded pieces over 4 for the improper fraction, and count whole shapes + leftover fraction for the mixed number.",
+          "keyPoints": [
+            {
+              "text": "improper fraction AND mixed number",
+              "note": "Both represent the exact same shaded amount."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the completely shaded whole shapes: \\(3\\) wholes (each has \\(4\\) equal parts).",
+              "work": "\\(3 \\times 4 = 12 \\text{ parts}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 124\" width=\"65%\" height=\"auto\" style=\"max-width:465px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"358\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"34.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"53.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"71.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"100.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"118.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"137.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"155.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"184.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"202.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"221.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"239.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"268.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"286.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"305.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"323.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"179\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">3 wholes = 12/4</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the shaded parts in the partial shape: \\(1\\) out of \\(4\\).",
+              "work": "\\(\\text{Mixed number} = 3\\dfrac{1}{4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 124\" width=\"65%\" height=\"auto\" style=\"max-width:465px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"358\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"34.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"53.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"71.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"100.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"118.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"137.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"155.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"184.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"202.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"221.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"239.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"268.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"286.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"305.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"323.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"179\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Plus 1/4 -> Total 13/4</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all shaded parts for the improper fraction numerator: \\(12 + 1 = 13\\).",
+              "work": "\\(\\text{Improper fraction} = \\dfrac{13}{4}\\)"
+            },
+            {
+              "explain": "Therefore, the diagram shows \\(\\dfrac{13}{4}\\) and \\(3\\dfrac{1}{4}\\).",
+              "work": "\\(\\dfrac{13}{4} = 3\\dfrac{1}{4}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 102\" width=\"65%\" height=\"auto\" style=\"max-width:465px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"358\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"16.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"34.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"53.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"71.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"100.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"118.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"137.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"155.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"184.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"202.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"221.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"239.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"268.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"286.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"305.0\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"323.5\" y=\"26\" width=\"18.5\" height=\"48\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(2\\dfrac{3}{4}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{9}{4}\\)",
+            "\\(\\dfrac{11}{4}\\)",
+            "\\(\\dfrac{10}{4}\\)",
+            "\\(\\dfrac{14}{4}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the whole number (2) by the denominator (4), add the numerator (3), and keep the same denominator (4).",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator; denominator stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number \\(2\\) by the denominator \\(4\\).",
+              "work": "\\(2 \\times 4 = 8\\)"
+            },
+            {
+              "explain": "Add the numerator \\(3\\) to \\(8\\).",
+              "work": "\\(8 + 3 = 11\\)"
+            },
+            {
+              "explain": "Place \\(11\\) over the original denominator \\(4\\).",
+              "work": "\\(\\dfrac{11}{4}\\)"
+            },
+            {
+              "explain": "Therefore, \\(2\\dfrac{3}{4} = \\dfrac{11}{4}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{11}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(3\\dfrac{1}{3}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{9}{3}\\)",
+            "\\(\\dfrac{10}{3}\\)",
+            "\\(\\dfrac{11}{3}\\)",
+            "\\(\\dfrac{7}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the whole number (3) by the denominator (3), add the numerator (1), and keep the same denominator (3).",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator; denominator stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number \\(3\\) by the denominator \\(3\\).",
+              "work": "\\(3 \\times 3 = 9\\)"
+            },
+            {
+              "explain": "Add the numerator \\(1\\) to \\(9\\).",
+              "work": "\\(9 + 1 = 10\\)"
+            },
+            {
+              "explain": "Place \\(10\\) over the original denominator \\(3\\).",
+              "work": "\\(\\dfrac{10}{3}\\)"
+            },
+            {
+              "explain": "Therefore, \\(3\\dfrac{1}{3} = \\dfrac{10}{3}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{10}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(4\\dfrac{1}{2}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{7}{2}\\)",
+            "\\(\\dfrac{8}{2}\\)",
+            "\\(\\dfrac{9}{2}\\)",
+            "\\(\\dfrac{11}{2}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the whole number (4) by the denominator (2), add the numerator (1), and keep the same denominator (2).",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator; denominator stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number \\(4\\) by the denominator \\(2\\).",
+              "work": "\\(4 \\times 2 = 8\\)"
+            },
+            {
+              "explain": "Add the numerator \\(1\\) to \\(8\\).",
+              "work": "\\(8 + 1 = 9\\)"
+            },
+            {
+              "explain": "Place \\(9\\) over the original denominator \\(2\\).",
+              "work": "\\(\\dfrac{9}{2}\\)"
+            },
+            {
+              "explain": "Therefore, \\(4\\dfrac{1}{2} = \\dfrac{9}{2}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{9}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(5\\dfrac{3}{5}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{23}{5}\\)",
+            "\\(\\dfrac{25}{5}\\)",
+            "\\(\\dfrac{28}{5}\\)",
+            "\\(\\dfrac{30}{5}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the whole number (5) by the denominator (5), add the numerator (3), and keep the same denominator (5).",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator; denominator stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number \\(5\\) by the denominator \\(5\\).",
+              "work": "\\(5 \\times 5 = 25\\)"
+            },
+            {
+              "explain": "Add the numerator \\(3\\) to \\(25\\).",
+              "work": "\\(25 + 3 = 28\\)"
+            },
+            {
+              "explain": "Place \\(28\\) over the original denominator \\(5\\).",
+              "work": "\\(\\dfrac{28}{5}\\)"
+            },
+            {
+              "explain": "Therefore, \\(5\\dfrac{3}{5} = \\dfrac{28}{5}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{28}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(2\\dfrac{5}{6}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{15}{6}\\)",
+            "\\(\\dfrac{17}{6}\\)",
+            "\\(\\dfrac{19}{6}\\)",
+            "\\(\\dfrac{21}{6}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the whole number (2) by the denominator (6), add the numerator (5), and keep the same denominator (6).",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator; denominator stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number \\(2\\) by the denominator \\(6\\).",
+              "work": "\\(2 \\times 6 = 12\\)"
+            },
+            {
+              "explain": "Add the numerator \\(5\\) to \\(12\\).",
+              "work": "\\(12 + 5 = 17\\)"
+            },
+            {
+              "explain": "Place \\(17\\) over the original denominator \\(6\\).",
+              "work": "\\(\\dfrac{17}{6}\\)"
+            },
+            {
+              "explain": "Therefore, \\(2\\dfrac{5}{6} = \\dfrac{17}{6}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{17}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed number \\(4\\dfrac{3}{4}\\) into an improper fraction.",
+          "options": [
+            "\\(\\dfrac{15}{4}\\)",
+            "\\(\\dfrac{17}{4}\\)",
+            "\\(\\dfrac{19}{4}\\)",
+            "\\(\\dfrac{20}{4}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply the whole number (4) by the denominator (4), add the numerator (3), and keep the same denominator (4).",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Numerator = (whole × denominator) + numerator; denominator stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the whole number \\(4\\) by the denominator \\(4\\).",
+              "work": "\\(4 \\times 4 = 16\\)"
+            },
+            {
+              "explain": "Add the numerator \\(3\\) to \\(16\\).",
+              "work": "\\(16 + 3 = 19\\)"
+            },
+            {
+              "explain": "Place \\(19\\) over the original denominator \\(4\\).",
+              "work": "\\(\\dfrac{19}{4}\\)"
+            },
+            {
+              "explain": "Therefore, \\(4\\dfrac{3}{4} = \\dfrac{19}{4}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{19}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the improper fraction \\(\\dfrac{7}{5}\\) into a mixed number.",
+          "options": [
+            "\\(1\\dfrac{1}{5}\\)",
+            "\\(1\\dfrac{2}{5}\\)",
+            "\\(1\\dfrac{3}{5}\\)",
+            "\\(2\\dfrac{2}{5}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 7 by 5: the quotient is the whole number and the remainder stays over 5.",
+          "keyPoints": [
+            {
+              "text": "mixed number",
+              "note": "Divide numerator by denominator; write remainder over the same denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide numerator \\(7\\) by denominator \\(5\\).",
+              "work": "\\(7 \\div 5 = 1 \\text{ remainder } 2\\)"
+            },
+            {
+              "explain": "The quotient \\(1\\) is the whole-number part.",
+              "work": "\\(1 \\times 5 = 5\\)"
+            },
+            {
+              "explain": "Write the remainder \\(2\\) over the denominator \\(5\\): \\(\\dfrac{2}{5}\\).",
+              "work": "\\(1 + \\dfrac{2}{5} = 1\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{7}{5} = 1\\dfrac{2}{5}\\).",
+              "work": "\\(\\text{Answer: } 1\\dfrac{2}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the improper fraction \\(\\dfrac{8}{3}\\) into a mixed number.",
+          "options": [
+            "\\(2\\dfrac{1}{3}\\)",
+            "\\(2\\dfrac{2}{3}\\)",
+            "\\(3\\dfrac{1}{3}\\)",
+            "\\(1\\dfrac{2}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 8 by 3: the quotient is the whole number and the remainder stays over 3.",
+          "keyPoints": [
+            {
+              "text": "mixed number",
+              "note": "Divide numerator by denominator; write remainder over the same denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide numerator \\(8\\) by denominator \\(3\\).",
+              "work": "\\(8 \\div 3 = 2 \\text{ remainder } 2\\)"
+            },
+            {
+              "explain": "The quotient \\(2\\) is the whole-number part.",
+              "work": "\\(2 \\times 3 = 6\\)"
+            },
+            {
+              "explain": "Write the remainder \\(2\\) over the denominator \\(3\\): \\(\\dfrac{2}{3}\\).",
+              "work": "\\(2 + \\dfrac{2}{3} = 2\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{8}{3} = 2\\dfrac{2}{3}\\).",
+              "work": "\\(\\text{Answer: } 2\\dfrac{2}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the improper fraction \\(\\dfrac{5}{2}\\) into a mixed number.",
+          "options": [
+            "\\(1\\dfrac{1}{2}\\)",
+            "\\(2\\dfrac{1}{2}\\)",
+            "\\(3\\dfrac{1}{2}\\)",
+            "\\(2\\dfrac{1}{4}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 5 by 2: the quotient is the whole number and the remainder stays over 2.",
+          "keyPoints": [
+            {
+              "text": "mixed number",
+              "note": "Divide numerator by denominator; write remainder over the same denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide numerator \\(5\\) by denominator \\(2\\).",
+              "work": "\\(5 \\div 2 = 2 \\text{ remainder } 1\\)"
+            },
+            {
+              "explain": "The quotient \\(2\\) is the whole-number part.",
+              "work": "\\(2 \\times 2 = 4\\)"
+            },
+            {
+              "explain": "Write the remainder \\(1\\) over the denominator \\(2\\): \\(\\dfrac{1}{2}\\).",
+              "work": "\\(2 + \\dfrac{1}{2} = 2\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{5}{2} = 2\\dfrac{1}{2}\\).",
+              "work": "\\(\\text{Answer: } 2\\dfrac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th20-p88-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the improper fraction \\(\\dfrac{9}{5}\\) into a mixed number.",
+          "options": [
+            "\\(1\\dfrac{3}{5}\\)",
+            "\\(1\\dfrac{4}{5}\\)",
+            "\\(2\\dfrac{1}{5}\\)",
+            "\\(2\\dfrac{4}{5}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 9 by 5: the quotient is the whole number and the remainder stays over 5.",
+          "keyPoints": [
+            {
+              "text": "mixed number",
+              "note": "Divide numerator by denominator; write remainder over the same denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide numerator \\(9\\) by denominator \\(5\\).",
+              "work": "\\(9 \\div 5 = 1 \\text{ remainder } 4\\)"
+            },
+            {
+              "explain": "The quotient \\(1\\) is the whole-number part.",
+              "work": "\\(1 \\times 5 = 5\\)"
+            },
+            {
+              "explain": "Write the remainder \\(4\\) over the denominator \\(5\\): \\(\\dfrac{4}{5}\\).",
+              "work": "\\(1 + \\dfrac{4}{5} = 1\\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{9}{5} = 1\\dfrac{4}{5}\\).",
+              "work": "\\(\\text{Answer: } 1\\dfrac{4}{5}\\)"
             }
           ]
         }
