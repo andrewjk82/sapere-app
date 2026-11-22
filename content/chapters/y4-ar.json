@@ -361,6 +361,55 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">668 − 102 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
           }
+        },
+        {
+          "id": "y4-ar-1-th5-p21-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the \"Down to zero\" puzzle, each midpoint is the difference between the two corner numbers beside it (starting with corners \\(720, 120, 909, 321\\)). What are the four numbers on the first inner diamond (top, right, bottom, left)?",
+          "options": [
+            "600, 789, 588, 399",
+            "600, 789, 588, 401",
+            "600, 809, 588, 399",
+            "840, 1029, 1230, 1041"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Subtract the smaller corner from the larger corner along each of the four outer edges: top (720-120), right (909-120), bottom (909-321), left (720-321).",
+          "keyPoints": [
+            {
+              "text": "difference between the two corner numbers",
+              "note": "Always subtract the smaller number from the larger number on each side."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the top midpoint (\\(720 - 120\\)) and right midpoint (\\(909 - 120\\)).",
+              "work": "\\(720 - 120 = 600, \\quad 909 - 120 = 789\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 256\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"256\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"26\" width=\"192\" height=\"192\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><polygon points=\"140,26 236,122 140,218 44,122\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><rect x=\"92\" y=\"74\" width=\"96\" height=\"96\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><polygon points=\"140,74 188,122 140,170 92,122\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"38\" y=\"22\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">720</text><text x=\"242\" y=\"22\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">120</text><text x=\"38\" y=\"224\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">321</text><text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">909</text><text x=\"140\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">600</text><text x=\"242\" y=\"126\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">789</text><text x=\"140\" y=\"232\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">588</text><text x=\"38\" y=\"126\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">399</text><text x=\"140\" y=\"248\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Layer 1 differences: 600, 789, 588, 399</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the bottom midpoint (\\(909 - 321\\)) and left midpoint (\\(720 - 321\\)).",
+              "work": "\\(909 - 321 = 588, \\quad 720 - 321 = 399\\)"
+            },
+            {
+              "explain": "Notice how taking differences again gives \\(201, 189, 201, 189\\), then \\(12, 12, 12, 12\\), and finally \\(0, 0, 0, 0\\)!",
+              "work": "\\(789 - 600 = 189,\\ 600 - 399 = 201 \\Rightarrow 201 - 189 = 12 \\Rightarrow 12 - 12 = 0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 256\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"256\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"26\" width=\"192\" height=\"192\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><polygon points=\"140,26 236,122 140,218 44,122\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"92\" y=\"74\" width=\"96\" height=\"96\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><polygon points=\"140,74 188,122 140,170 92,122\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.5\"/><text x=\"38\" y=\"22\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">720</text><text x=\"242\" y=\"22\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">120</text><text x=\"38\" y=\"224\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">321</text><text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">909</text><text x=\"140\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">600</text><text x=\"242\" y=\"126\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">789</text><text x=\"140\" y=\"232\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">588</text><text x=\"38\" y=\"126\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">399</text><text x=\"88\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">201</text><text x=\"192\" y=\"70\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">189</text><text x=\"192\" y=\"182\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">201</text><text x=\"88\" y=\"182\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">189</text><text x=\"140\" y=\"69\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#16a34a\">12</text><text x=\"195\" y=\"126\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#16a34a\">12</text><text x=\"140\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#16a34a\">12</text><text x=\"85\" y=\"126\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#16a34a\">12</text><text x=\"140\" y=\"126\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#15803d\">0, 0, 0, 0</text><text x=\"140\" y=\"248\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Every layer shrinks down to 0, 0, 0, 0!</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, the four numbers on the first inner diamond are \\(600, 789, 588,\\) and \\(399\\).",
+              "work": "\\(\\text{First inner diamond: } 600, 789, 588, 399\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 232\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"232\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"26\" width=\"192\" height=\"192\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><polygon points=\"140,26 236,122 140,218 44,122\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"92\" y=\"74\" width=\"96\" height=\"96\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><polygon points=\"140,74 188,122 140,170 92,122\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"38\" y=\"22\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">720</text><text x=\"242\" y=\"22\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">120</text><text x=\"38\" y=\"224\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">321</text><text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">909</text></svg>"
+          }
         }
       ]
     },
@@ -655,7 +704,844 @@
       "topicId": "y4-ar-3",
       "code": "MA2-AR-01",
       "title": "Money and budgeting: Apply addition and subtraction to money and budgeting contexts",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-ar-3-th7-p28-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$3.61\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$3.65\\)",
+            "\\(\\$3.60\\)",
+            "\\(\\$3.55\\)",
+            "\\(\\$3.70\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$3.61\\). The last digit is \\(1\\).",
+              "work": "\\(\\text{Last cent digit} = 1\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(1\\) rounds down to 0 cents.",
+              "work": "\\(\\text{Digit } 1 \\Rightarrow \\text{round down to 0 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$3.61\\) accordingly to get \\(\\$3.60\\).",
+              "work": "\\(\\$3.61 \\to \\$3.60\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$3.60\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$3.61\\).",
+              "work": "\\(\\text{Rounded amount} = \\$3.60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$12.52\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$12.50\\)",
+            "\\(\\$12.55\\)",
+            "\\(\\$12.60\\)",
+            "\\(\\$12.45\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$12.52\\). The last digit is \\(2\\).",
+              "work": "\\(\\text{Last cent digit} = 2\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(2\\) rounds down to 0 cents.",
+              "work": "\\(\\text{Digit } 2 \\Rightarrow \\text{round down to 0 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$12.52\\) accordingly to get \\(\\$12.50\\).",
+              "work": "\\(\\$12.52 \\to \\$12.50\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$12.50\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$12.52\\).",
+              "work": "\\(\\text{Rounded amount} = \\$12.50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$22.74\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$22.70\\)",
+            "\\(\\$22.75\\)",
+            "\\(\\$22.80\\)",
+            "\\(\\$22.65\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$22.74\\). The last digit is \\(4\\).",
+              "work": "\\(\\text{Last cent digit} = 4\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(4\\) rounds up to 5 cents.",
+              "work": "\\(\\text{Digit } 4 \\Rightarrow \\text{round up to 5 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$22.74\\) accordingly to get \\(\\$22.75\\).",
+              "work": "\\(\\$22.74 \\to \\$22.75\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$22.75\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$22.74\\).",
+              "work": "\\(\\text{Rounded amount} = \\$22.75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$61.83\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$61.80\\)",
+            "\\(\\$61.85\\)",
+            "\\(\\$61.90\\)",
+            "\\(\\$61.75\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$61.83\\). The last digit is \\(3\\).",
+              "work": "\\(\\text{Last cent digit} = 3\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(3\\) rounds up to 5 cents.",
+              "work": "\\(\\text{Digit } 3 \\Rightarrow \\text{round up to 5 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$61.83\\) accordingly to get \\(\\$61.85\\).",
+              "work": "\\(\\$61.83 \\to \\$61.85\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$61.85\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$61.83\\).",
+              "work": "\\(\\text{Rounded amount} = \\$61.85\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$80.26\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$80.30\\)",
+            "\\(\\$80.25\\)",
+            "\\(\\$80.20\\)",
+            "\\(\\$80.35\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$80.26\\). The last digit is \\(6\\).",
+              "work": "\\(\\text{Last cent digit} = 6\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(6\\) rounds down to 5 cents.",
+              "work": "\\(\\text{Digit } 6 \\Rightarrow \\text{round down to 5 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$80.26\\) accordingly to get \\(\\$80.25\\).",
+              "work": "\\(\\$80.26 \\to \\$80.25\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$80.25\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$80.26\\).",
+              "work": "\\(\\text{Rounded amount} = \\$80.25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$104.49\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$104.50\\)",
+            "\\(\\$104.45\\)",
+            "\\(\\$104.40\\)",
+            "\\(\\$104.55\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$104.49\\). The last digit is \\(9\\).",
+              "work": "\\(\\text{Last cent digit} = 9\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(9\\) rounds up to 10 cents.",
+              "work": "\\(\\text{Digit } 9 \\Rightarrow \\text{round up to 10 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$104.49\\) accordingly to get \\(\\$104.50\\).",
+              "work": "\\(\\$104.49 \\to \\$104.50\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$104.50\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$104.49\\).",
+              "work": "\\(\\text{Rounded amount} = \\$104.50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$238.77\\) to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$238.80\\)",
+            "\\(\\$238.75\\)",
+            "\\(\\$238.70\\)",
+            "\\(\\$238.85\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look at the final cent digit: 1 or 2 rounds down to 0; 3 or 4 rounds up to 5; 6 or 7 rounds down to 5; 8 or 9 rounds up to 10.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Use the last cent digit to round to the closest multiple of 5 cents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look at the last cent digit of \\(\\$238.77\\). The last digit is \\(7\\).",
+              "work": "\\(\\text{Last cent digit} = 7\\)"
+            },
+            {
+              "explain": "Apply the Australian 5-cent rounding rule: a last digit of \\(7\\) rounds down to 5 cents.",
+              "work": "\\(\\text{Digit } 7 \\Rightarrow \\text{round down to 5 cents}\\)"
+            },
+            {
+              "explain": "Adjust the cents of \\(\\$238.77\\) accordingly to get \\(\\$238.75\\).",
+              "work": "\\(\\$238.77 \\to \\$238.75\\)"
+            },
+            {
+              "explain": "Confirm that \\(\\$238.75\\) ends in \\(0\\) or \\(5\\) cents and is the closest 5-cent amount to \\(\\$238.77\\).",
+              "work": "\\(\\text{Rounded amount} = \\$238.75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$5.31\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$14.70\\)",
+            "\\(\\$14.65\\)",
+            "\\(\\$15.70\\)",
+            "\\(\\$14.75\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$5.31\\) to the nearest \\(5\\) cents (last cent digit is \\(1\\)).",
+              "work": "\\(\\$5.31 \\to \\$5.30\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$5.30\\) to the next whole dollar (\\(\\$6.00\\)): add \\(70\\) cents.",
+              "work": "\\(\\$5.30 + \\$0.70 = \\$6.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$6.00\\) to \\(\\$20.00\\): add \\(\\$14.00\\).",
+              "work": "\\(\\$20.00 - \\$6.00 = \\$14.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$14.00 + \\$0.70 = \\$14.70\\).",
+              "work": "\\(\\$20.00 - \\$5.30 = \\$14.70\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$8.59\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$11.45\\)",
+            "\\(\\$11.40\\)",
+            "\\(\\$12.40\\)",
+            "\\(\\$11.50\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$8.59\\) to the nearest \\(5\\) cents (last cent digit is \\(9\\)).",
+              "work": "\\(\\$8.59 \\to \\$8.60\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$8.60\\) to the next whole dollar (\\(\\$9.00\\)): add \\(40\\) cents.",
+              "work": "\\(\\$8.60 + \\$0.40 = \\$9.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$9.00\\) to \\(\\$20.00\\): add \\(\\$11.00\\).",
+              "work": "\\(\\$20.00 - \\$9.00 = \\$11.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$11.00 + \\$0.40 = \\$11.40\\).",
+              "work": "\\(\\$20.00 - \\$8.60 = \\$11.40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$10.75\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$9.25\\)",
+            "\\(\\$9.35\\)",
+            "\\(\\$10.25\\)",
+            "\\(\\$9.75\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$10.75\\) to the nearest \\(5\\) cents (last cent digit is \\(5\\)).",
+              "work": "\\(\\$10.75 \\to \\$10.75\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$10.75\\) to the next whole dollar (\\(\\$11.00\\)): add \\(25\\) cents.",
+              "work": "\\(\\$10.75 + \\$0.25 = \\$11.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$11.00\\) to \\(\\$20.00\\): add \\(\\$9.00\\).",
+              "work": "\\(\\$20.00 - \\$11.00 = \\$9.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$9.00 + \\$0.25 = \\$9.25\\).",
+              "work": "\\(\\$20.00 - \\$10.75 = \\$9.25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$16.49\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$3.55\\)",
+            "\\(\\$4.50\\)",
+            "\\(\\$3.50\\)",
+            "\\(\\$3.45\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$16.49\\) to the nearest \\(5\\) cents (last cent digit is \\(9\\)).",
+              "work": "\\(\\$16.49 \\to \\$16.50\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$16.50\\) to the next whole dollar (\\(\\$17.00\\)): add \\(50\\) cents.",
+              "work": "\\(\\$16.50 + \\$0.50 = \\$17.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$17.00\\) to \\(\\$20.00\\): add \\(\\$3.00\\).",
+              "work": "\\(\\$20.00 - \\$17.00 = \\$3.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$3.00 + \\$0.50 = \\$3.50\\).",
+              "work": "\\(\\$20.00 - \\$16.50 = \\$3.50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$11.27\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$8.70\\)",
+            "\\(\\$8.75\\)",
+            "\\(\\$9.75\\)",
+            "\\(\\$8.85\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$11.27\\) to the nearest \\(5\\) cents (last cent digit is \\(7\\)).",
+              "work": "\\(\\$11.27 \\to \\$11.25\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$11.25\\) to the next whole dollar (\\(\\$12.00\\)): add \\(75\\) cents.",
+              "work": "\\(\\$11.25 + \\$0.75 = \\$12.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$12.00\\) to \\(\\$20.00\\): add \\(\\$8.00\\).",
+              "work": "\\(\\$20.00 - \\$12.00 = \\$8.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$8.00 + \\$0.75 = \\$8.75\\).",
+              "work": "\\(\\$20.00 - \\$11.25 = \\$8.75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$17.18\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$2.85\\)",
+            "\\(\\$3.80\\)",
+            "\\(\\$2.80\\)",
+            "\\(\\$2.75\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$17.18\\) to the nearest \\(5\\) cents (last cent digit is \\(8\\)).",
+              "work": "\\(\\$17.18 \\to \\$17.20\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$17.20\\) to the next whole dollar (\\(\\$18.00\\)): add \\(80\\) cents.",
+              "work": "\\(\\$17.20 + \\$0.80 = \\$18.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$18.00\\) to \\(\\$20.00\\): add \\(\\$2.00\\).",
+              "work": "\\(\\$20.00 - \\$18.00 = \\$2.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$2.00 + \\$0.80 = \\$2.80\\).",
+              "work": "\\(\\$20.00 - \\$17.20 = \\$2.80\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$14.36\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$5.60\\)",
+            "\\(\\$5.65\\)",
+            "\\(\\$6.65\\)",
+            "\\(\\$5.75\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$14.36\\) to the nearest \\(5\\) cents (last cent digit is \\(6\\)).",
+              "work": "\\(\\$14.36 \\to \\$14.35\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$14.35\\) to the next whole dollar (\\(\\$15.00\\)): add \\(65\\) cents.",
+              "work": "\\(\\$14.35 + \\$0.65 = \\$15.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$15.00\\) to \\(\\$20.00\\): add \\(\\$5.00\\).",
+              "work": "\\(\\$20.00 - \\$15.00 = \\$5.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$5.00 + \\$0.65 = \\$5.65\\).",
+              "work": "\\(\\$20.00 - \\$14.35 = \\$5.65\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$10.33\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$9.70\\)",
+            "\\(\\$9.65\\)",
+            "\\(\\$10.65\\)",
+            "\\(\\$9.55\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$10.33\\) to the nearest \\(5\\) cents (last cent digit is \\(3\\)).",
+              "work": "\\(\\$10.33 \\to \\$10.35\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$10.35\\) to the next whole dollar (\\(\\$11.00\\)): add \\(65\\) cents.",
+              "work": "\\(\\$10.35 + \\$0.65 = \\$11.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$11.00\\) to \\(\\$20.00\\): add \\(\\$9.00\\).",
+              "work": "\\(\\$20.00 - \\$11.00 = \\$9.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$9.00 + \\$0.65 = \\$9.65\\).",
+              "work": "\\(\\$20.00 - \\$10.35 = \\$9.65\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item costs \\(\\$8.84\\). After rounding the price to the nearest \\(5\\) cents, how much change should you receive from \\(\\$20.00\\)?",
+          "options": [
+            "\\(\\$11.20\\)",
+            "\\(\\$12.15\\)",
+            "\\(\\$11.15\\)",
+            "\\(\\$11.25\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Step 1: Round the price to the nearest 5 cents. Step 2: Count up from the rounded price to the next whole dollar, then up to $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the price to the nearest 5 cents before calculating change."
+            },
+            {
+              "text": "change",
+              "note": "Add up from the rounded price to $20.00 to avoid borrowing errors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First round \\(\\$8.84\\) to the nearest \\(5\\) cents (last cent digit is \\(4\\)).",
+              "work": "\\(\\$8.84 \\to \\$8.85\\)"
+            },
+            {
+              "explain": "Count up from \\(\\$8.85\\) to the next whole dollar (\\(\\$9.00\\)): add \\(15\\) cents.",
+              "work": "\\(\\$8.85 + \\$0.15 = \\$9.00\\)"
+            },
+            {
+              "explain": "Now count up from \\(\\$9.00\\) to \\(\\$20.00\\): add \\(\\$11.00\\).",
+              "work": "\\(\\$20.00 - \\$9.00 = \\$11.00\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents added: \\(\\$11.00 + \\$0.15 = \\$11.15\\).",
+              "work": "\\(\\$20.00 - \\$8.85 = \\$11.15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Ben bought \\(3\\) pens for \\(\\$1.99\\) each. He paid with \\(\\$10.00\\). Calculate his change to the nearest \\(5\\) cents.",
+          "options": [
+            "\\(\\$4.00\\)",
+            "\\(\\$4.05\\)",
+            "\\(\\$4.10\\)",
+            "\\(\\$3.95\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the total cost of 3 pens first (3 × $2.00 - 3c = $5.97), round $5.97 to the nearest 5 cents ($5.95), then subtract from $10.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Always find the exact total first, THEN round to the nearest 5 cents, THEN find the change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the total cost of 3 pens at $1.99 each (use $2.00 - 1 cent × 3).",
+              "work": "\\(3 \\times \\$1.99 = (3 \\times \\$2.00) - \\$0.03 = \\$6.00 - \\$0.03 = \\$5.97\\)"
+            },
+            {
+              "explain": "Round the total cost $5.97 to the nearest 5 cents (last digit 7 rounds down to 5 cents).",
+              "work": "\\(\\$5.97 \\to \\$5.95\\)"
+            },
+            {
+              "explain": "Subtract $5.95 from $10.00 by counting up: $5.95 + $0.05 = $6.00, then $6.00 + $4.00 = $10.00.",
+              "work": "\\(\\$10.00 - \\$5.95 = \\$4.05\\)"
+            },
+            {
+              "explain": "Therefore, Ben received $4.05 in change.",
+              "work": "\\(\\text{Change} = \\$4.05\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dozen eggs costs \\(\\$6.29\\). How much change from \\(\\$20.00\\) (to the nearest \\(5\\) cents) do you receive if you buy two dozen eggs?",
+          "options": [
+            "\\(\\$7.40\\)",
+            "\\(\\$7.45\\)",
+            "\\(\\$7.50\\)",
+            "\\(\\$8.40\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Double $6.29 to find the cost of 2 dozen ($12.58), round $12.58 to the nearest 5 cents ($12.60), then subtract from $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Always find the exact total first, THEN round to the nearest 5 cents, THEN find the change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total cost of 2 dozen eggs by doubling $6.29.",
+              "work": "\\(2 \\times \\$6.29 = \\$12.00 + \\$0.58 = \\$12.58\\)"
+            },
+            {
+              "explain": "Round $12.58 to the nearest 5 cents (last digit 8 rounds up to 10 cents).",
+              "work": "\\(\\$12.58 \\to \\$12.60\\)"
+            },
+            {
+              "explain": "Subtract $12.60 from $20.00: $12.60 + $0.40 = $13.00, and $13.00 + $7.00 = $20.00.",
+              "work": "\\(\\$20.00 - \\$12.60 = \\$7.40\\)"
+            },
+            {
+              "explain": "Therefore, the change from $20.00 is $7.40.",
+              "work": "\\(\\text{Change} = \\$7.40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Apples cost \\(57\\) cents each. How much change from \\(\\$10.00\\) (to the nearest \\(5\\) cents) do you receive if you buy \\(4\\) apples?",
+          "options": [
+            "\\(\\$7.65\\)",
+            "\\(\\$7.70\\)",
+            "\\(\\$7.75\\)",
+            "\\(\\$7.80\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Multiply 57 cents × 4 = 228 cents ($2.28), round $2.28 to the nearest 5 cents ($2.30), then subtract from $10.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Always find the exact total first, THEN round to the nearest 5 cents, THEN find the change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply 57 cents by 4: (50 × 4) + (7 × 4) = 200 + 28 = 228 cents = $2.28.",
+              "work": "\\(4 \\times 57\\text{ c} = 228\\text{ c} = \\$2.28\\)"
+            },
+            {
+              "explain": "Round $2.28 to the nearest 5 cents (last digit 8 rounds up to 10 cents).",
+              "work": "\\(\\$2.28 \\to \\$2.30\\)"
+            },
+            {
+              "explain": "Subtract $2.30 from $10.00: $2.30 + $0.70 = $3.00, and $3.00 + $7.00 = $10.00.",
+              "work": "\\(\\$10.00 - \\$2.30 = \\$7.70\\)"
+            },
+            {
+              "explain": "Therefore, the change from $10.00 is $7.70.",
+              "work": "\\(\\text{Change} = \\$7.70\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th7-p28-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jade bought a book for \\(\\$5.99\\), a pen for \\(\\$4.58\\), and a writing pad for \\(\\$1.97\\). How much change did Jade get from \\(\\$20.00\\) (to the nearest \\(5\\) cents)?",
+          "options": [
+            "\\(\\$7.40\\)",
+            "\\(\\$7.45\\)",
+            "\\(\\$7.50\\)",
+            "\\(\\$7.55\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Add all three exact prices first ($5.99 + $4.58 + $1.97 = $12.54), round the total to $12.55, then subtract from $20.00.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Always find the exact total first, THEN round to the nearest 5 cents, THEN find the change."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the book ($5.99) and writing pad ($1.97) first using compensation ($6.00 + $2.00 - 4c).",
+              "work": "\\(\\$5.99 + \\$1.97 = \\$8.00 - \\$0.04 = \\$7.96\\)"
+            },
+            {
+              "explain": "Now add the pen ($4.58) to $7.96: $7.96 + $4.00 = $11.96, then + $0.58 = $12.54.",
+              "work": "\\(\\$7.96 + \\$4.58 = \\$12.54\\)"
+            },
+            {
+              "explain": "Round $12.54 to the nearest 5 cents (last digit 4 rounds up to 5 cents): $12.55. Subtract from $20.00.",
+              "work": "\\(\\$12.54 \\to \\$12.55, \\quad \\$20.00 - \\$12.55 = \\$7.45\\)"
+            },
+            {
+              "explain": "Therefore, Jade received $7.45 in change.",
+              "work": "\\(\\text{Change} = \\$7.45\\)"
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y4-ar-4",
@@ -786,7 +1672,204 @@
       "topicId": "y4-ar-5",
       "code": "MA2-AR-02",
       "title": "Equivalent sentences: Complete number sentences involving additive relations; equivalent values",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-ar-5-th5-p20-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression has the exact same answer as \"(2 × 10) + 1\"?",
+          "options": [
+            "double 8",
+            "7 × 3",
+            "half of 72",
+            "9 times 4"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First work out the exact value of \"(2 × 10) + 1\", then calculate each option to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate the given expression first, then match it to the option with the identical value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of the given expression \"(2 × 10) + 1\".",
+              "work": "\\((2 \\times 10) + 1 = 20 + 1 = 21\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">(2 × 10) + 1</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 21</text></svg>"
+              }
+            },
+            {
+              "explain": "Now evaluate the matching option \"7 × 3\".",
+              "work": "\\(7 \\times 3 = 21\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">7 × 3</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 21!</text></svg>"
+              }
+            },
+            {
+              "explain": "Verify that the other options give different values (\\(16, 21, 12, 36\\) are all distinct).",
+              "work": "\\(\\text{Both equal } 21\\)"
+            },
+            {
+              "explain": "Therefore, \"(2 × 10) + 1\" matches \"7 × 3\".",
+              "work": "\\(7 \\times 3 = 21\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">(2 × 10) + 1</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th5-p20-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression has the exact same answer as \"8 lots of 2\"?",
+          "options": [
+            "double 8",
+            "7 × 3",
+            "24 ÷ 2",
+            "9 times 4"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First work out the exact value of \"8 lots of 2\", then calculate each option to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate the given expression first, then match it to the option with the identical value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of the given expression \"8 lots of 2\".",
+              "work": "\\(8 \\times 2 = 16\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">8 lots of 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 16</text></svg>"
+              }
+            },
+            {
+              "explain": "Now evaluate the matching option \"double 8\".",
+              "work": "\\(\\text{double } 8 = 8 + 8 = 16\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">double 8</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 16!</text></svg>"
+              }
+            },
+            {
+              "explain": "Verify that the other options give different values (\\(16, 21, 12, 36\\) are all distinct).",
+              "work": "\\(\\text{Both equal } 16\\)"
+            },
+            {
+              "explain": "Therefore, \"8 lots of 2\" matches \"double 8\".",
+              "work": "\\(\\text{double } 8 = 8 + 8 = 16\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">8 lots of 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th5-p20-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression has the exact same answer as \"half of 24\"?",
+          "options": [
+            "double 8",
+            "7 × 3",
+            "24 ÷ 2",
+            "half of 72"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First work out the exact value of \"half of 24\", then calculate each option to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate the given expression first, then match it to the option with the identical value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of the given expression \"half of 24\".",
+              "work": "\\(24 \\div 2 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">half of 24</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 12</text></svg>"
+              }
+            },
+            {
+              "explain": "Now evaluate the matching option \"24 ÷ 2\".",
+              "work": "\\(24 \\div 2 = 12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">24 ÷ 2</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 12!</text></svg>"
+              }
+            },
+            {
+              "explain": "Verify that the other options give different values (\\(16, 21, 12, 36\\) are all distinct).",
+              "work": "\\(\\text{Both equal } 12\\)"
+            },
+            {
+              "explain": "Therefore, \"half of 24\" matches \"24 ÷ 2\".",
+              "work": "\\(24 \\div 2 = 12\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">half of 24</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th5-p20-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression has the exact same answer as \"half of 72\"?",
+          "options": [
+            "double 8",
+            "7 × 3",
+            "24 ÷ 2",
+            "9 times 4"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First work out the exact value of \"half of 72\", then calculate each option to find the matching value.",
+          "keyPoints": [
+            {
+              "text": "same answer",
+              "note": "Evaluate the given expression first, then match it to the option with the identical value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the value of the given expression \"half of 72\".",
+              "work": "\\(72 \\div 2 = 36\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">half of 72</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 36</text></svg>"
+              }
+            },
+            {
+              "explain": "Now evaluate the matching option \"9 times 4\".",
+              "work": "\\(9 \\times 4 = 36\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">9 times 4</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 36!</text></svg>"
+              }
+            },
+            {
+              "explain": "Verify that the other options give different values (\\(16, 21, 12, 36\\) are all distinct).",
+              "work": "\\(\\text{Both equal } 36\\)"
+            },
+            {
+              "explain": "Therefore, \"half of 72\" matches \"9 times 4\".",
+              "work": "\\(9 \\times 4 = 36\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">half of 72</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,738 @@
+{
+  "chapterId": "y4-chan",
+  "title": "Chance (B)",
+  "year": "Year 4",
+  "topics": [
+    {
+      "topicId": "y4-chan-1",
+      "code": "MA2-CHAN-01",
+      "title": "Likelihood of outcomes: Describe and compare the likelihood of outcomes using everyday language",
+      "questions": [
+        {
+          "id": "y4-chan-1-th5-p20-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"You will ride an elephant to school tomorrow.\"",
+          "options": [
+            "impossible",
+            "likely",
+            "very likely",
+            "certain"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"You will ride an elephant to school tomorrow.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: impossible</text></svg>"
+              }
+            },
+            {
+              "explain": "Elephants are not a mode of school transport, so this will not happen.",
+              "work": "\\(\\text{Best position on scale: impossible}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"impossible\".",
+              "work": "\\(\\text{Answer: impossible}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"You will do some writing at school this week.\"",
+          "options": [
+            "impossible",
+            "very unlikely",
+            "very likely",
+            "never"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"You will do some writing at school this week.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: very likely</text></svg>"
+              }
+            },
+            {
+              "explain": "Students write in class almost every school day, making it very likely.",
+              "work": "\\(\\text{Best position on scale: very likely}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"very likely\".",
+              "work": "\\(\\text{Answer: very likely}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"You will talk to someone today.\"",
+          "options": [
+            "impossible",
+            "very unlikely",
+            "unlikely",
+            "certain"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"You will talk to someone today.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: certain</text></svg>"
+              }
+            },
+            {
+              "explain": "You speak with family, friends, or teachers every day, so it is certain (or nearly certain).",
+              "work": "\\(\\text{Best position on scale: certain}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"certain\".",
+              "work": "\\(\\text{Answer: certain}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"You will eat some fruit this week.\"",
+          "options": [
+            "impossible",
+            "very unlikely",
+            "likely",
+            "never"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"You will eat some fruit this week.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: likely</text></svg>"
+              }
+            },
+            {
+              "explain": "Eating fruit at least once during a whole week is a common everyday event, so it is likely.",
+              "work": "\\(\\text{Best position on scale: likely}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"likely\".",
+              "work": "\\(\\text{Answer: likely}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"An alien spaceship will land in the school grounds.\"",
+          "options": [
+            "impossible",
+            "likely",
+            "very likely",
+            "certain"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"An alien spaceship will land in the school grounds.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: impossible</text></svg>"
+              }
+            },
+            {
+              "explain": "An alien spaceship landing at school is imaginary and cannot happen.",
+              "work": "\\(\\text{Best position on scale: impossible}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"impossible\".",
+              "work": "\\(\\text{Answer: impossible}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"Your parents will receive some mail today.\"",
+          "options": [
+            "impossible",
+            "likely",
+            "certain",
+            "never"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"Your parents will receive some mail today.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: likely</text></svg>"
+              }
+            },
+            {
+              "explain": "Mail arrives on many weekdays, though not guaranteed every single day, so it is likely.",
+              "work": "\\(\\text{Best position on scale: likely}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"likely\".",
+              "work": "\\(\\text{Answer: likely}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"You will go to the beach this summer.\"",
+          "options": [
+            "impossible",
+            "likely",
+            "certain",
+            "never"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"You will go to the beach this summer.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: likely</text></svg>"
+              }
+            },
+            {
+              "explain": "Going to the beach during summer is a common possibility, though not guaranteed, so it is likely.",
+              "work": "\\(\\text{Best position on scale: likely}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"likely\".",
+              "work": "\\(\\text{Answer: likely}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the likely scale, which label best describes the chance of this event happening: \"You will get younger every day.\"",
+          "options": [
+            "impossible",
+            "likely",
+            "very likely",
+            "certain"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide first whether the event can happen at all (impossible), must happen (certain), or sits somewhere in between.",
+          "keyPoints": [
+            {
+              "text": "likely scale",
+              "note": "Scale from least to most likely: impossible -> very unlikely -> likely -> very likely -> certain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the event carefully: \"You will get younger every day.\"",
+              "work": "\\(\\text{Assess how often or whether this event can happen}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Matches: impossible</text></svg>"
+              }
+            },
+            {
+              "explain": "Time only moves forward, so every person gets older every day — getting younger is impossible.",
+              "work": "\\(\\text{Best position on scale: impossible}\\)"
+            },
+            {
+              "explain": "Check the other options and confirm they are at the wrong end of the probability scale.",
+              "work": "\\(\\text{Other choices do not fit the real-world likelihood}\\)"
+            },
+            {
+              "explain": "Therefore, the best label on the likely scale is \"impossible\".",
+              "work": "\\(\\text{Answer: impossible}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q9to13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider these events for a Year 4 student this year: (A) You will grow older, (B) Your family will win the lottery, (C) You will become Prime Minister, (D) You will meet someone new. Which event should be numbered \\(5\\) (certain)?",
+          "options": [
+            "This year you will grow older",
+            "This year your family will win the lottery",
+            "This year you will become Prime Minister",
+            "This year you will meet someone new"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "An event numbered 5 (certain) MUST happen with 100% guarantee — there is no chance it fails to happen.",
+          "keyPoints": [
+            {
+              "text": "certain",
+              "note": "Certain means it is 100% guaranteed to happen."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Understand what 5 (certain) means on the scale: the event is 100% guaranteed to happen.",
+              "work": "\\(5 = \\text{certain (must happen)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">5 = certain (rightmost point)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check \"become Prime Minister\" (impossible for a Year 4 child = 1) and \"win the lottery\" (very unlikely = 2).",
+              "work": "\\(\\text{Prime Minister} = 1, \\quad \\text{Lottery} = 2\\)"
+            },
+            {
+              "explain": "Compare \"meet someone new\" (very likely = 4) and \"grow older\" (guaranteed as time passes = 5).",
+              "work": "\\(\\text{Grow older} = 5 \\text{ (certain)}\\)"
+            },
+            {
+              "explain": "Therefore, \"This year you will grow older\" is numbered 5 (certain).",
+              "work": "\\(\\text{Answer: This year you will grow older}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        },
+        {
+          "id": "y4-chan-1-th5-p20-q9to13b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which list correctly orders these five events from \\(1\\) (impossible) to \\(5\\) (certain) for a Year 4 student this year?",
+          "options": [
+            "Become Prime Minister, win the lottery, go on a family outing, meet someone new, grow older",
+            "Win the lottery, become Prime Minister, go on a family outing, grow older, meet someone new",
+            "Grow older, meet someone new, go on a family outing, win the lottery, become Prime Minister",
+            "Become Prime Minister, go on a family outing, win the lottery, meet someone new, grow older"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Start with the impossible event (1 = become Prime Minister) and end with the certain event (5 = grow older).",
+          "keyPoints": [
+            {
+              "text": "(impossible) to",
+              "note": "Put the least likely event first (1) and the guaranteed event last (5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place the two endpoints first: 1 (impossible) = become Prime Minister; 5 (certain) = grow older.",
+              "work": "\\(1: \\text{Prime Minister}, \\quad 5: \\text{grow older}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Start at 1 (impossible) and move to 5 (certain)</text></svg>"
+              }
+            },
+            {
+              "explain": "Next is 2 (very unlikely): winning the lottery has a tiny chance of happening.",
+              "work": "\\(2: \\text{win the lottery}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 102\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"10\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#b45309\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text><text x=\"220\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">2 = very unlikely (win the lottery)</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare the remaining two events: going on a family outing (3, likely) and meeting someone new over an entire year (4, very likely).",
+              "work": "\\(3: \\text{family outing}, \\quad 4: \\text{meet someone new}\\)"
+            },
+            {
+              "explain": "Combine all five events in order from 1 to 5.",
+              "work": "\\(\\text{1. Prime Minister, 2. lottery, 3. family outing, 4. meet someone new, 5. grow older}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 78\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"78\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"32\" x2=\"392\" y2=\"32\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"48\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"48\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">impossible</text><circle cx=\"134\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"134\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very unlikely</text><circle cx=\"220\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">likely</text><circle cx=\"306\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"306\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">very likely</text><circle cx=\"392\" cy=\"32\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"392\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">certain</text></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y4-chan-2",
+      "code": "MA2-CHAN-01",
+      "title": "Dependent and independent: Identify when events are affected or not affected by previous events",
+      "questions": [
+        {
+          "id": "y4-chan-2-th7-p28-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which event CANNOT happen at the same time as: \"I will buy some red shoes from my favourite shoe shop.\"?",
+          "options": [
+            "No new cars come in blue.",
+            "I only have yellow and green pencils.",
+            "My favourite shoe shop doesn't sell red shoes.",
+            "My teacher cancelled the maths test this week."
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the statement that directly contradicts or makes the given event impossible.",
+          "keyPoints": [
+            {
+              "text": "CANNOT happen at the same time",
+              "note": "Mutually exclusive events cannot both be true together."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the given event carefully and identify what must be true for it to happen.",
+              "work": "\\(\\text{Check what condition is required}\\)"
+            },
+            {
+              "explain": "If your favourite shoe shop does not sell red shoes, it is impossible to buy red shoes there.",
+              "work": "\\(\\text{Direct contradiction found}\\)"
+            },
+            {
+              "explain": "Verify that the other three statements talk about unrelated situations and do not prevent the given event.",
+              "work": "\\(\\text{Other 3 options do not conflict}\\)"
+            },
+            {
+              "explain": "Therefore, \"My favourite shoe shop doesn't sell red shoes.\" cannot happen at the same time.",
+              "work": "\\(\\text{Answer: My favourite shoe shop doesn't sell red shoes.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th7-p28-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which event CANNOT happen at the same time as: \"I will draw a red car.\"?",
+          "options": [
+            "No new cars come in blue.",
+            "I only have yellow and green pencils.",
+            "My favourite shoe shop doesn't sell red shoes.",
+            "My teacher cancelled the maths test this week."
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the statement that directly contradicts or makes the given event impossible.",
+          "keyPoints": [
+            {
+              "text": "CANNOT happen at the same time",
+              "note": "Mutually exclusive events cannot both be true together."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the given event carefully and identify what must be true for it to happen.",
+              "work": "\\(\\text{Check what condition is required}\\)"
+            },
+            {
+              "explain": "If you only have yellow and green pencils, you have no red pencil to draw a red car.",
+              "work": "\\(\\text{Direct contradiction found}\\)"
+            },
+            {
+              "explain": "Verify that the other three statements talk about unrelated situations and do not prevent the given event.",
+              "work": "\\(\\text{Other 3 options do not conflict}\\)"
+            },
+            {
+              "explain": "Therefore, \"I only have yellow and green pencils.\" cannot happen at the same time.",
+              "work": "\\(\\text{Answer: I only have yellow and green pencils.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th7-p28-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which event CANNOT happen at the same time as: \"I will get 10 out of 10 in my maths test this week.\"?",
+          "options": [
+            "My teacher cancelled the maths test this week.",
+            "I only have yellow and green pencils.",
+            "No new cars come in blue.",
+            "My favourite shoe shop doesn't sell red shoes."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the statement that directly contradicts or makes the given event impossible.",
+          "keyPoints": [
+            {
+              "text": "CANNOT happen at the same time",
+              "note": "Mutually exclusive events cannot both be true together."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the given event carefully and identify what must be true for it to happen.",
+              "work": "\\(\\text{Check what condition is required}\\)"
+            },
+            {
+              "explain": "If the maths test is cancelled this week, you cannot take it or score 10 out of 10 in it.",
+              "work": "\\(\\text{Direct contradiction found}\\)"
+            },
+            {
+              "explain": "Verify that the other three statements talk about unrelated situations and do not prevent the given event.",
+              "work": "\\(\\text{Other 3 options do not conflict}\\)"
+            },
+            {
+              "explain": "Therefore, \"My teacher cancelled the maths test this week.\" cannot happen at the same time.",
+              "work": "\\(\\text{Answer: My teacher cancelled the maths test this week.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th7-p28-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which event CANNOT happen at the same time as: \"Dad will buy a new blue car.\"?",
+          "options": [
+            "I only have yellow and green pencils.",
+            "My favourite shoe shop doesn't sell red shoes.",
+            "My teacher cancelled the maths test this week.",
+            "No new cars come in blue."
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Look for the statement that directly contradicts or makes the given event impossible.",
+          "keyPoints": [
+            {
+              "text": "CANNOT happen at the same time",
+              "note": "Mutually exclusive events cannot both be true together."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the given event carefully and identify what must be true for it to happen.",
+              "work": "\\(\\text{Check what condition is required}\\)"
+            },
+            {
+              "explain": "If no new cars come in blue, Dad cannot buy a new blue car.",
+              "work": "\\(\\text{Direct contradiction found}\\)"
+            },
+            {
+              "explain": "Verify that the other three statements talk about unrelated situations and do not prevent the given event.",
+              "work": "\\(\\text{Other 3 options do not conflict}\\)"
+            },
+            {
+              "explain": "Therefore, \"No new cars come in blue.\" cannot happen at the same time.",
+              "work": "\\(\\text{Answer: No new cars come in blue.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th7-p29-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There are \\(5\\) coloured marbles in a bag: \\(3\\) red ones, \\(1\\) green one, and \\(1\\) blue one. Abby takes a blue marble out of the bag (and does not put it back). What CANNOT happen next?",
+          "options": [
+            "Ben takes out a blue marble.",
+            "Ben takes out a red marble.",
+            "Ben takes out a green marble.",
+            "Ben takes out either a red or a green marble."
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count how many blue marbles are LEFT in the bag after Abby takes the only blue marble out!",
+          "keyPoints": [
+            {
+              "text": "blue marble out of the bag",
+              "note": "There was only 1 blue marble to begin with, so 0 blue marbles remain."
+            },
+            {
+              "text": "CANNOT happen next",
+              "note": "This is a dependent event: removing a marble changes what is left."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the marbles in the bag at the start: \\(3\\) red, \\(1\\) green, and \\(1\\) blue (\\(5\\) total).",
+              "work": "\\(\\text{Start: } 3\\text{ red},\\ 1\\text{ green},\\ 1\\text{ blue}\\)"
+            },
+            {
+              "explain": "Subtract the \\(1\\) blue marble that Abby removes from the bag.",
+              "work": "\\(1\\text{ blue} - 1\\text{ blue} = 0\\text{ blue remaining}\\)"
+            },
+            {
+              "explain": "List what remains in the bag for Ben: \\(3\\) red and \\(1\\) green (\\(4\\) marbles). Ben can still draw red or green, but NOT blue.",
+              "work": "\\(\\text{Remaining: } 3\\text{ red},\\ 1\\text{ green},\\ 0\\text{ blue}\\)"
+            },
+            {
+              "explain": "Therefore, \"Ben takes out a blue marble\" cannot happen next.",
+              "work": "\\(\\text{Answer: Ben takes out a blue marble.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th7-p29-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "I own three pairs of shoes: one black pair, one white pair, and one red pair. I pack two pairs of my shoes to go away on holiday. What CANNOT happen?",
+          "options": [
+            "I pack one white and one black pair of shoes.",
+            "I pack one pink and one black pair of shoes.",
+            "I pack one red and one black pair of shoes.",
+            "I pack one white and one red pair of shoes."
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check the three colours of shoes you actually own (black, white, red). Which option mentions a colour you do NOT own?",
+          "keyPoints": [
+            {
+              "text": "one black pair, one white pair, and one red pair",
+              "note": "You can only pack colours from this exact set."
+            },
+            {
+              "text": "CANNOT happen",
+              "note": "Look for a colour that is not among the three pairs you own."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the exact three pairs of shoes owned: black, white, and red.",
+              "work": "\\(\\text{Owned colours: black, white, red}\\)"
+            },
+            {
+              "explain": "List all possible ways to pack 2 of the 3 pairs: (black + white), (black + red), or (white + red).",
+              "work": "\\(\\text{Possible pairs: (W, B), (R, B), (W, R)}\\)"
+            },
+            {
+              "explain": "Notice that pink is NOT one of the colours owned, so packing a pink pair is impossible.",
+              "work": "\\(\\text{Pink} \\notin \\{\\text{black, white, red}\\}\\)"
+            },
+            {
+              "explain": "Therefore, \"I pack one pink and one black pair of shoes\" cannot happen.",
+              "work": "\\(\\text{Answer: I pack one pink and one black pair of shoes.}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y4-chan-3",
+      "code": "MA2-CHAN-01",
+      "title": "Predict and compare: Predict possible outcomes; conduct experiments and compare results",
+      "questions": []
+    }
+  ]
+}

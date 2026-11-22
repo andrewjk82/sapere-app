@@ -1,0 +1,551 @@
+{
+  "chapterId": "y4-3ds",
+  "title": "3D Spatial Structure (B)",
+  "year": "Year 4",
+  "topics": [
+    {
+      "topicId": "y4-3ds-1",
+      "code": "MA2-3DS-01",
+      "title": "Nets of 3D objects: Connect 3D objects with 2D representations; sketch and construct nets of prisms",
+      "questions": []
+    },
+    {
+      "topicId": "y4-3ds-2",
+      "code": "MA2-3DS-02",
+      "title": "Volume — litres and mL: Measure and compare capacities using litres and millilitres; convert L and mL",
+      "questions": [
+        {
+          "id": "y4-3ds-2-th5-p21-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much water is in this measuring jug (in mL)?",
+          "options": [
+            "50 mL",
+            "100 mL",
+            "150 mL",
+            "200 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Each major labelled mark increases by 100 mL, and each smaller tick halfway between is 50 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"142\" width=\"97\" height=\"30.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"142\" x2=\"150.5\" y2=\"142\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,142 166,137 166,147\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 100 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The water line sits directly on the 100 mL major mark.",
+              "work": "\\(\\text{Water level} = 100\\text{ mL}\\)"
+            },
+            {
+              "explain": "Confirm that \\(100\\text{ mL}\\) sits accurately between the surrounding ticks on the scale.",
+              "work": "\\(100\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 100 mL.",
+              "work": "\\(\\text{Answer: 100 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"142\" width=\"97\" height=\"30.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"142\" x2=\"150.5\" y2=\"142\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much water is in this measuring jug (in mL)?",
+          "options": [
+            "400 mL",
+            "425 mL",
+            "450 mL",
+            "500 mL"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Each major labelled mark increases by 100 mL, and each smaller tick halfway between is 50 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"44\" width=\"97\" height=\"128.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"44\" x2=\"150.5\" y2=\"44\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,44 166,39 166,49\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 450 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The water line is on the 50 mL halfway tick between 400 mL and 500 mL, which is 450 mL.",
+              "work": "\\(\\text{Water level} = 450\\text{ mL}\\)"
+            },
+            {
+              "explain": "Confirm that \\(450\\text{ mL}\\) sits accurately between the surrounding ticks on the scale.",
+              "work": "\\(450\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 450 mL.",
+              "work": "\\(\\text{Answer: 450 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"44\" width=\"97\" height=\"128.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"44\" x2=\"150.5\" y2=\"44\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much water is in this measuring jug (in mL)?",
+          "options": [
+            "250 mL",
+            "300 mL",
+            "350 mL",
+            "400 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Each major labelled mark increases by 100 mL, and each smaller tick halfway between is 50 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"86\" width=\"97\" height=\"86.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"86\" x2=\"150.5\" y2=\"86\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,86 166,81 166,91\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 300 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The water line sits directly on the 300 mL major mark.",
+              "work": "\\(\\text{Water level} = 300\\text{ mL}\\)"
+            },
+            {
+              "explain": "Confirm that \\(300\\text{ mL}\\) sits accurately between the surrounding ticks on the scale.",
+              "work": "\\(300\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 300 mL.",
+              "work": "\\(\\text{Answer: 300 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"86\" width=\"97\" height=\"86.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"86\" x2=\"150.5\" y2=\"86\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How much water is in this measuring jug (in mL)?",
+          "options": [
+            "425 mL",
+            "450 mL",
+            "475 mL",
+            "500 mL"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Each major labelled mark increases by 100 mL, and each smaller tick halfway between is 50 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"37\" width=\"97\" height=\"135.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"37\" x2=\"150.5\" y2=\"37\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,37 166,32 166,42\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 475 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The water line is halfway between the 450 mL tick and the 500 mL mark: 450 + 25 = 475 mL.",
+              "work": "\\(\\text{Water level} = 475\\text{ mL}\\)"
+            },
+            {
+              "explain": "Confirm that \\(475\\text{ mL}\\) sits accurately between the surrounding ticks on the scale.",
+              "work": "\\(475\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 475 mL.",
+              "work": "\\(\\text{Answer: 475 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"37\" width=\"97\" height=\"135.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"37\" x2=\"150.5\" y2=\"37\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This \\(500\\text{ mL}\\) measuring jug contains \\(100\\text{ mL}\\) of water. How much more water is needed to fill it to \\(500\\text{ mL}\\)?",
+          "options": [
+            "300 mL",
+            "350 mL",
+            "400 mL",
+            "450 mL"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Subtract the current water level (100 mL) from the jug’s full capacity (500 mL).",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"142\" width=\"97\" height=\"30.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"142\" x2=\"150.5\" y2=\"142\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,142 166,137 166,147\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 100 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The jug holds 500 mL and currently has 100 mL, so 500 - 100 = 400 mL more is needed.",
+              "work": "\\(500\\text{ mL} - 100\\text{ mL} = 400\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"142\" width=\"97\" height=\"30.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"142\" x2=\"150.5\" y2=\"142\" stroke=\"#dc2626\" stroke-width=\"3\"/><rect x=\"53.5\" y=\"30\" width=\"97\" height=\"112\" fill=\"#fef3c7\" opacity=\"0.55\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,142 166,137 166,147\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Empty space = 400 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Check by adding back: \\(100\\text{ mL} + 400\\text{ mL} = 500\\text{ mL}\\).",
+              "work": "\\(100 + 400 = 500\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 400 mL.",
+              "work": "\\(\\text{Answer: 400 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"142\" width=\"97\" height=\"30.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"142\" x2=\"150.5\" y2=\"142\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How much water is in this measuring jug (in mL)?",
+          "options": [
+            "300 mL",
+            "325 mL",
+            "350 mL",
+            "375 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Each major labelled mark increases by 100 mL, and each smaller tick halfway between is 50 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"79\" width=\"97\" height=\"93.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"79\" x2=\"150.5\" y2=\"79\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,79 166,74 166,84\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 325 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The water line sits halfway between 300 mL and 350 mL, which is 300 + 25 = 325 mL.",
+              "work": "\\(\\text{Water level} = 325\\text{ mL}\\)"
+            },
+            {
+              "explain": "Confirm that \\(325\\text{ mL}\\) sits accurately between the surrounding ticks on the scale.",
+              "work": "\\(325\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 325 mL.",
+              "work": "\\(\\text{Answer: 325 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"79\" width=\"97\" height=\"93.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"79\" x2=\"150.5\" y2=\"79\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This measuring jug shows \\(250\\text{ mL}\\) of water. What fraction of \\(1\\text{ litre}\\) is this?",
+          "options": [
+            "1/2 litre",
+            "1/4 litre",
+            "1/5 litre",
+            "1 litre"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL. Find how many lots of 250 mL make 1000 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"100\" width=\"97\" height=\"72.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"100\" x2=\"150.5\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,100 166,95 166,105\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 250 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The jug holds 250 mL, and since 1000 ÷ 4 = 250, 250 mL equals 1/4 litre.",
+              "work": "\\(1000 \\div 250 = 4 \\Rightarrow 250\\text{ mL} = \\dfrac{1}{4}\\text{ litre}\\)"
+            },
+            {
+              "explain": "Check: \\(4 \\times 250\\text{ mL} = 1000\\text{ mL} = 1\\text{ litre}\\).",
+              "work": "\\(4 \\times 250\\text{ mL} = 1000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1/4 litre.",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{4}\\text{ litre}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"100\" width=\"97\" height=\"72.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"100\" x2=\"150.5\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much water is in this measuring jug (in mL)?",
+          "options": [
+            "25 mL",
+            "50 mL",
+            "75 mL",
+            "100 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Each major labelled mark increases by 100 mL, and each smaller tick halfway between is 50 mL.",
+          "keyPoints": [
+            {
+              "text": "measuring jug",
+              "note": "Major marks are every 100 mL; minor ticks are every 50 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the scale on the measuring jug: the labelled marks go up by \\(100\\text{ mL}\\) (\\(100, 200, 300, 400, 500\\)), and each tick halfway between them represents \\(50\\text{ mL}\\).",
+              "work": "\\(\\text{Major mark} = 100\\text{ mL}, \\quad \\text{Minor tick} = 50\\text{ mL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 228\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"228\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"156\" width=\"97\" height=\"16.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"156\" x2=\"150.5\" y2=\"156\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text><polygon points=\"154,156 166,151 166,161\" fill=\"#dc2626\"/><text x=\"115\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Water level arrow at 50 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Follow the red arrow at the top of the blue water surface: The water line sits on the halfway tick between 0 mL and 100 mL, which is 50 mL.",
+              "work": "\\(\\text{Water level} = 50\\text{ mL}\\)"
+            },
+            {
+              "explain": "Confirm that \\(50\\text{ mL}\\) sits accurately between the surrounding ticks on the scale.",
+              "work": "\\(50\\text{ mL verified}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 50 mL.",
+              "work": "\\(\\text{Answer: 50 mL}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 230 204\" width=\"65%\" height=\"auto\" style=\"max-width:299px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"204\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#475569\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M152,48 Q194,48 194,104 Q194,158 152,158\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M36,24 L52,32 L52,174 L152,174 L152,24 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><rect x=\"53.5\" y=\"156\" width=\"97\" height=\"16.5\" fill=\"#93c5fd\" opacity=\"0.85\"/><line x1=\"53.5\" y1=\"156\" x2=\"150.5\" y2=\"156\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"96\" y1=\"156.0\" x2=\"107\" y2=\"156.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"142.0\" x2=\"114\" y2=\"142.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"146.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100</text><line x1=\"96\" y1=\"128.0\" x2=\"107\" y2=\"128.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"114.0\" x2=\"114\" y2=\"114.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"118.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">200</text><line x1=\"96\" y1=\"100.0\" x2=\"107\" y2=\"100.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"86.0\" x2=\"114\" y2=\"86.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"90.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">300</text><line x1=\"96\" y1=\"72.0\" x2=\"107\" y2=\"72.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"58.0\" x2=\"114\" y2=\"58.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"62.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">400</text><line x1=\"96\" y1=\"44.0\" x2=\"107\" y2=\"44.0\" stroke=\"#0f172a\" stroke-width=\"1.1\"/><line x1=\"96\" y1=\"30.0\" x2=\"114\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"90\" y=\"34.0\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">500 mL</text></svg>"
+          }
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the statement \\(\\dfrac{1}{2}\\text{ litre} = 250\\text{ mL}\\) true or false?",
+          "options": [
+            "False, because half of 1000 mL is 500 mL (not 250 mL)",
+            "True, because 1 litre equals 500 mL",
+            "True, because half of 500 mL is 250 mL",
+            "False, because half a litre is 100 mL"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Convert litres to millilitres using 1 litre = 1000 mL so both sides use the same unit before comparing.",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Always convert to mL (1 L = 1000 mL) to check equality."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the base conversion: 1 litre = 1000 mL.",
+              "work": "\\(1\\text{ litre} = 1000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Find half of 1 litre by dividing 1000 mL by 2.",
+              "work": "\\(\\dfrac{1}{2}\\text{ litre} = 1000 \\div 2 = 500\\text{ mL}\\)"
+            },
+            {
+              "explain": "Compare 500 mL with 250 mL: they are NOT equal (250 mL is 1/4 litre).",
+              "work": "\\(500\\text{ mL} \\ne 250\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is False.",
+              "work": "\\(\\text{False: } \\dfrac{1}{2}\\text{ litre} = 500\\text{ mL}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the statement \\(1\\text{ litre} = 1000\\text{ mL}\\) true or false?",
+          "options": [
+            "True, because \"milli\" means one thousandth, so 1000 mL makes 1 litre",
+            "False, because 1 litre equals 100 mL",
+            "False, because 1 litre equals 500 mL",
+            "False, because 1 litre equals 10 000 mL"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Convert litres to millilitres using 1 litre = 1000 mL so both sides use the same unit before comparing.",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Always convert to mL (1 L = 1000 mL) to check equality."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Remember the metric prefix \"milli-\", which means one thousandth (1/1000).",
+              "work": "\\(1000 \\text{ millilitres} = 1 \\text{ litre}\\)"
+            },
+            {
+              "explain": "Therefore, 1 litre contains exactly 1000 mL.",
+              "work": "\\(1\\text{ L} = 1000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Check with halves and quarters: 1/2 L = 500 mL and 1/4 L = 250 mL, which confirms 1 L = 1000 mL.",
+              "work": "\\(500 + 500 = 1000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{True: } 1\\text{ litre} = 1000\\text{ mL}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the statement \\(250\\text{ mL} + 250\\text{ mL} = \\dfrac{1}{2}\\text{ litre}\\) true or false?",
+          "options": [
+            "False, because 250 mL + 250 mL = 1 litre",
+            "True, because 250 mL + 250 mL = 500 mL, which equals 1/2 litre",
+            "False, because 1/2 litre = 250 mL",
+            "False, because 250 mL + 250 mL = 400 mL"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Convert litres to millilitres using 1 litre = 1000 mL so both sides use the same unit before comparing.",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Always convert to mL (1 L = 1000 mL) to check equality."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the left-hand side: 250 mL + 250 mL.",
+              "work": "\\(250\\text{ mL} + 250\\text{ mL} = 500\\text{ mL}\\)"
+            },
+            {
+              "explain": "Convert the right-hand side (1/2 litre) into millilitres using 1 litre = 1000 mL.",
+              "work": "\\(\\dfrac{1}{2}\\text{ litre} = 1000 \\div 2 = 500\\text{ mL}\\)"
+            },
+            {
+              "explain": "Compare both sides: 500 mL = 500 mL.",
+              "work": "\\(500\\text{ mL} = 500\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{True}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th5-p21-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the statement \\(3\\text{ litres} + 200\\text{ mL} = 3200\\text{ mL}\\) true or false?",
+          "options": [
+            "False, because 3 litres + 200 mL = 500 mL",
+            "False, because 3 litres + 200 mL = 3020 mL",
+            "True, because 3 litres = 3000 mL and 3000 + 200 = 3200 mL",
+            "False, because 3 litres = 300 mL"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Convert litres to millilitres using 1 litre = 1000 mL so both sides use the same unit before comparing.",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Always convert to mL (1 L = 1000 mL) to check equality."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert 3 litres into millilitres using 1 litre = 1000 mL.",
+              "work": "\\(3\\text{ litres} = 3 \\times 1000\\text{ mL} = 3000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Add 200 mL to 3000 mL.",
+              "work": "\\(3000\\text{ mL} + 200\\text{ mL} = 3200\\text{ mL}\\)"
+            },
+            {
+              "explain": "Compare with the right-hand side: 3200 mL = 3200 mL.",
+              "work": "\\(3200\\text{ mL} = 3200\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{True}\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
