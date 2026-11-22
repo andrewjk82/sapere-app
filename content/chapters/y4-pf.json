@@ -1011,6 +1011,104 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 220\" width=\"65%\" height=\"auto\" style=\"max-width:520px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"220\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20.0\" y=\"12\" width=\"360.0\" height=\"24\" fill=\"#eff6ff\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"200.0\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">1</text><rect x=\"20.0\" y=\"36\" width=\"180.0\" height=\"24\" fill=\"#eff6ff\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"110.0\" y=\"52\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">1/2</text><rect x=\"200.0\" y=\"36\" width=\"180.0\" height=\"24\" fill=\"#eff6ff\" stroke=\"#dc2626\" stroke-width=\"1\"/><text x=\"290.0\" y=\"52\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">1/2</text><rect x=\"20.0\" y=\"60\" width=\"120.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"140.0\" y=\"60\" width=\"120.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"260.0\" y=\"60\" width=\"120.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"20.0\" y=\"84\" width=\"90.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"110.0\" y=\"84\" width=\"90.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"200.0\" y=\"84\" width=\"90.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"290.0\" y=\"84\" width=\"90.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"20.0\" y=\"108\" width=\"72.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"92.0\" y=\"108\" width=\"72.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"164.0\" y=\"108\" width=\"72.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"236.0\" y=\"108\" width=\"72.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"308.0\" y=\"108\" width=\"72.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"20.0\" y=\"132\" width=\"60.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"80.0\" y=\"132\" width=\"60.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"140.0\" y=\"132\" width=\"60.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"200.0\" y=\"132\" width=\"60.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"260.0\" y=\"132\" width=\"60.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"320.0\" y=\"132\" width=\"60.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"20.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"65.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"110.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"155.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"200.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"245.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"290.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"335.0\" y=\"156\" width=\"45.0\" height=\"24\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1\"/><rect x=\"20.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><text x=\"38.0\" y=\"196\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#b45309\">?</text><rect x=\"56.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"92.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"128.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"164.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"200.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"236.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"272.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"308.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><rect x=\"344.0\" y=\"180\" width=\"36.0\" height=\"24\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/></svg>"
           }
+        },
+        {
+          "id": "y4-pf-1-th-rev1-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction of this shape is coloured?",
+          "options": [
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{3}{6}\\)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count the total equal parts for the denominator (bottom) and the coloured parts for the numerator (top).",
+          "keyPoints": [
+            {
+              "text": "fraction of this shape is coloured",
+              "note": "Fraction = (coloured parts) / (total equal parts)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count all equal parts in the shape: there are \\(8\\) equal parts.",
+              "work": "\\(\\text{Denominator} = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 186\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"186\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 130 82 L 130.0 20.0 A 62 62 0 0 1 173.8 38.2 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"144.2\" y=\"51.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">1</text><path d=\"M 130 82 L 173.8 38.2 A 62 62 0 0 1 192.0 82.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"164.4\" y=\"71.8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">2</text><path d=\"M 130 82 L 192.0 82.0 A 62 62 0 0 1 173.8 125.8 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"164.4\" y=\"100.2\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">3</text><path d=\"M 130 82 L 173.8 125.8 A 62 62 0 0 1 130.0 144.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"144.2\" y=\"120.4\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">4</text><path d=\"M 130 82 L 130.0 144.0 A 62 62 0 0 1 86.2 125.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"115.8\" y=\"120.4\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">5</text><path d=\"M 130 82 L 86.2 125.8 A 62 62 0 0 1 68.0 82.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"95.6\" y=\"100.2\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">6</text><path d=\"M 130 82 L 68.0 82.0 A 62 62 0 0 1 86.2 38.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"95.6\" y=\"71.8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">7</text><path d=\"M 130 82 L 86.2 38.2 A 62 62 0 0 1 130.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"115.8\" y=\"51.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">8</text><text x=\"130\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Total = 8 equal parts</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the coloured parts: there are \\(3\\) coloured parts.",
+              "work": "\\(\\text{Numerator} = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 186\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"186\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 130 82 L 130.0 20.0 A 62 62 0 0 1 173.8 38.2 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"144.2\" y=\"51.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">1</text><path d=\"M 130 82 L 173.8 38.2 A 62 62 0 0 1 192.0 82.0 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"164.4\" y=\"71.8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">2</text><path d=\"M 130 82 L 192.0 82.0 A 62 62 0 0 1 173.8 125.8 Z\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"164.4\" y=\"100.2\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#ffffff\">3</text><path d=\"M 130 82 L 173.8 125.8 A 62 62 0 0 1 130.0 144.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"144.2\" y=\"120.4\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">4</text><path d=\"M 130 82 L 130.0 144.0 A 62 62 0 0 1 86.2 125.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"115.8\" y=\"120.4\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">5</text><path d=\"M 130 82 L 86.2 125.8 A 62 62 0 0 1 68.0 82.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"95.6\" y=\"100.2\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">6</text><path d=\"M 130 82 L 68.0 82.0 A 62 62 0 0 1 86.2 38.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"95.6\" y=\"71.8\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">7</text><path d=\"M 130 82 L 86.2 38.2 A 62 62 0 0 1 130.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"115.8\" y=\"51.6\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\">8</text><text x=\"130\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">3 out of 8 coloured</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the fraction as numerator over denominator: \\(\\dfrac{3}{8}\\).",
+              "work": "\\(\\dfrac{3}{8}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{3}{8}\\) of the shape is coloured.",
+              "work": "\\(\\text{Answer: } \\dfrac{3}{8}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 162\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 130 82 L 130.0 20.0 A 62 62 0 0 1 173.8 38.2 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 173.8 38.2 A 62 62 0 0 1 192.0 82.0 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 192.0 82.0 A 62 62 0 0 1 173.8 125.8 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 173.8 125.8 A 62 62 0 0 1 130.0 144.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 130.0 144.0 A 62 62 0 0 1 86.2 125.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 86.2 125.8 A 62 62 0 0 1 68.0 82.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 68.0 82.0 A 62 62 0 0 1 86.2 38.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M 130 82 L 86.2 38.2 A 62 62 0 0 1 130.0 20.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-pf-1-th-rev1-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction of this shape is coloured?",
+          "options": [
+            "\\(\\dfrac{2}{4}\\)",
+            "\\(\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{4}{6}\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Count the total equal parts for the denominator (bottom) and the coloured parts for the numerator (top).",
+          "keyPoints": [
+            {
+              "text": "fraction of this shape is coloured",
+              "note": "Fraction = (coloured parts) / (total equal parts)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count all equal parts in the shape: there are \\(6\\) equal parts.",
+              "work": "\\(\\text{Denominator} = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 186\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"186\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"55.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#ffffff\">1</text><rect x=\"70.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"85.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#ffffff\">2</text><rect x=\"100.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"115.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">3</text><rect x=\"130.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"145.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">4</text><rect x=\"160.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"175.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">5</text><rect x=\"190.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"205.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">6</text><text x=\"130\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Total = 6 equal parts</text></svg>"
+              }
+            },
+            {
+              "explain": "Count the coloured parts: there are \\(2\\) coloured parts.",
+              "work": "\\(\\text{Numerator} = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 186\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"186\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"55.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#ffffff\">1</text><rect x=\"70.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"85.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#ffffff\">2</text><rect x=\"100.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"115.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">3</text><rect x=\"130.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"145.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">4</text><rect x=\"160.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"175.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">5</text><rect x=\"190.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"205.0\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#64748b\">6</text><text x=\"130\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">2 out of 6 coloured</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the fraction as numerator over denominator: \\(\\dfrac{2}{6}\\).",
+              "work": "\\(\\dfrac{2}{6}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{2}{6}\\) of the shape is coloured.",
+              "work": "\\(\\text{Answer: } \\dfrac{2}{6}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 162\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"162\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"40.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"70.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"100.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"130.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"160.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"190.0\" y=\"48\" width=\"30.0\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/></svg>"
+          }
         }
       ]
     },

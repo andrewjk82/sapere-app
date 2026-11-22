@@ -1574,6 +1574,322 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 392 84\" width=\"65%\" height=\"auto\" style=\"max-width:510px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"392\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">8</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">9</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">0</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text><rect x=\"308\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"340\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">6</text></svg>"
           }
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"seventy-nine\" as a numeral?",
+          "options": [
+            "97",
+            "79",
+            "709",
+            "790"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the words into place-value parts and keep 0 as a placeholder in any empty column.",
+          "keyPoints": [
+            {
+              "text": "seventy-nine",
+              "note": "Match each place-value group from largest to ones."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Break \"seventy-nine\" into place-value parts.",
+              "work": "\\(70 + 9 = 79\\)"
+            },
+            {
+              "explain": "Check whether any column (like tens or ones) has zero and place 0 there.",
+              "work": "\\(\\text{Keep 0 in every empty place-value column}\\)"
+            },
+            {
+              "explain": "Combine the digits in order to form \\(79\\).",
+              "work": "\\(\\text{Numeral} = 79\\)"
+            },
+            {
+              "explain": "Read \\(79\\) aloud to confirm it matches \"seventy-nine\".",
+              "work": "\\(\\text{Answer: } 79\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"one thousand, six hundred\" as a numeral?",
+          "options": [
+            "1060",
+            "1006",
+            "1600",
+            "160"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the words into place-value parts and keep 0 as a placeholder in any empty column.",
+          "keyPoints": [
+            {
+              "text": "one thousand, six hundred",
+              "note": "Match each place-value group from largest to ones."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Break \"one thousand, six hundred\" into place-value parts.",
+              "work": "\\(1000 + 600 = 1600\\)"
+            },
+            {
+              "explain": "Check whether any column (like tens or ones) has zero and place 0 there.",
+              "work": "\\(\\text{Keep 0 in every empty place-value column}\\)"
+            },
+            {
+              "explain": "Combine the digits in order to form \\(1600\\).",
+              "work": "\\(\\text{Numeral} = 1600\\)"
+            },
+            {
+              "explain": "Read \\(1600\\) aloud to confirm it matches \"one thousand, six hundred\".",
+              "work": "\\(\\text{Answer: } 1600\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How do you write \"forty-four thousand, eight hundred and six\" as a numeral?",
+          "options": [
+            "44 806",
+            "44 860",
+            "44 680",
+            "44 086"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Break the words into place-value parts and keep 0 as a placeholder in any empty column.",
+          "keyPoints": [
+            {
+              "text": "forty-four thousand, eight hundred and six",
+              "note": "Match each place-value group from largest to ones."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Break \"forty-four thousand, eight hundred and six\" into place-value parts.",
+              "work": "\\(40\\,000 + 4000 + 800 + 0 + 6 = 44\\,806\\)"
+            },
+            {
+              "explain": "Check whether any column (like tens or ones) has zero and place 0 there.",
+              "work": "\\(\\text{Keep 0 in every empty place-value column}\\)"
+            },
+            {
+              "explain": "Combine the digits in order to form \\(44\\,806\\).",
+              "work": "\\(\\text{Numeral} = 44\\,806\\)"
+            },
+            {
+              "explain": "Read \\(44\\,806\\) aloud to confirm it matches \"forty-four thousand, eight hundred and six\".",
+              "work": "\\(\\text{Answer: } 44\\,806\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit shown in red in \\(29\\)?",
+          "options": [
+            "9",
+            "90",
+            "20",
+            "29"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find which place-value column the red digit 9 sits in, then multiply 9 by that place value.",
+          "keyPoints": [
+            {
+              "text": "value of the digit",
+              "note": "Multiply the digit by its place value (1, 10, 100, 1000, or 10 000)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the red digit in \\(29\\): it is \\(9\\).",
+              "work": "\\(\\text{Red digit} = 9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 102\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">9</text><text x=\"160\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Target digit: 9</text></svg>"
+              }
+            },
+            {
+              "explain": "Count place-value columns from right to left: \\(9\\) sits in the ones column.",
+              "work": "\\(\\text{Column: ones} (1)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><text x=\"124\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Tens</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">9</text><text x=\"196\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Ones</text><text x=\"160\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">9 is in the ones column</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(9\\) by \\(1\\) to find its value.",
+              "work": "\\(9 \\times 1 = 9\\)"
+            },
+            {
+              "explain": "Therefore, the value of the red digit is \\(9\\).",
+              "work": "\\(\\text{Value} = 9\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">9</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit shown in red in \\(765\\)?",
+          "options": [
+            "6",
+            "60",
+            "600",
+            "65"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find which place-value column the red digit 6 sits in, then multiply 6 by that place value.",
+          "keyPoints": [
+            {
+              "text": "value of the digit",
+              "note": "Multiply the digit by its place value (1, 10, 100, 1000, or 10 000)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the red digit in \\(765\\): it is \\(6\\).",
+              "work": "\\(\\text{Red digit} = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 102\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"56\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"88\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">7</text><rect x=\"128\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"160\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">6</text><rect x=\"200\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"232\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text><text x=\"160\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Target digit: 6</text></svg>"
+              }
+            },
+            {
+              "explain": "Count place-value columns from right to left: \\(6\\) sits in the tens column.",
+              "work": "\\(\\text{Column: tens} (10)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"56\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"88\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">7</text><text x=\"88\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Hundreds</text><rect x=\"128\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"160\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">6</text><text x=\"160\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Tens</text><rect x=\"200\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"232\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text><text x=\"232\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Ones</text><text x=\"160\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">6 is in the tens column</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(6\\) by \\(10\\) to find its value.",
+              "work": "\\(6 \\times 10 = 60\\)"
+            },
+            {
+              "explain": "Therefore, the value of the red digit is \\(60\\).",
+              "work": "\\(\\text{Value} = 60\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"56\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"88\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">7</text><rect x=\"128\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"160\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">6</text><rect x=\"200\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"232\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit shown in red in \\(5602\\)?",
+          "options": [
+            "50",
+            "500",
+            "5000",
+            "50 000"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find which place-value column the red digit 5 sits in, then multiply 5 by that place value.",
+          "keyPoints": [
+            {
+              "text": "value of the digit",
+              "note": "Multiply the digit by its place value (1, 10, 100, 1000, or 10 000)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the red digit in \\(5602\\): it is \\(5\\).",
+              "work": "\\(\\text{Red digit} = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 102\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">6</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><text x=\"160\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Target digit: 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Count place-value columns from right to left: \\(5\\) sits in the thousands column.",
+              "work": "\\(\\text{Column: thousands} (1000)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 136\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><text x=\"52\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Thousands</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">6</text><text x=\"124\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Hundreds</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text><text x=\"196\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Tens</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><text x=\"268\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Ones</text><text x=\"160\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">5 is in the thousands column</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(5\\) by \\(1000\\) to find its value.",
+              "work": "\\(5 \\times 1000 = 5000\\)"
+            },
+            {
+              "explain": "Therefore, the value of the red digit is \\(5000\\).",
+              "work": "\\(\\text{Value} = 5000\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">6</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-1-th-rev1-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit shown in red in \\(58\\,520\\)?",
+          "options": [
+            "500",
+            "5000",
+            "50 000",
+            "500 000"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find which place-value column the red digit 5 sits in, then multiply 5 by that place value.",
+          "keyPoints": [
+            {
+              "text": "value of the digit",
+              "note": "Multiply the digit by its place value (1, 10, 100, 1000, or 10 000)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the red digit in \\(58\\,520\\): it is \\(5\\).",
+              "work": "\\(\\text{Red digit} = 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 392 102\" width=\"65%\" height=\"auto\" style=\"max-width:510px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"392\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">8</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><rect x=\"308\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"340\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text><text x=\"196\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Target digit: 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Count place-value columns from right to left: \\(5\\) sits in the ten thousands column.",
+              "work": "\\(\\text{Column: ten thousands} (10\\,000)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 392 136\" width=\"65%\" height=\"auto\" style=\"max-width:510px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"392\" height=\"136\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><text x=\"52\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">Ten th.</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">8</text><text x=\"124\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Thousands</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text><text x=\"196\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Hundreds</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><text x=\"268\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Tens</text><rect x=\"308\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"340\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text><text x=\"340\" y=\"86\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\">Ones</text><text x=\"196\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">5 is in the ten thousands column</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(5\\) by \\(10\\,000\\) to find its value.",
+              "work": "\\(5 \\times 10\\,000 = 50\\,000\\)"
+            },
+            {
+              "explain": "Therefore, the value of the red digit is \\(50\\,000\\).",
+              "work": "\\(\\text{Value} = 50\\,000\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 392 84\" width=\"65%\" height=\"auto\" style=\"max-width:510px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"392\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">8</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><rect x=\"308\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"340\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text></svg>"
+          }
         }
       ]
     },
@@ -2728,6 +3044,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 438 106\" width=\"65%\" height=\"auto\" style=\"max-width:569px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"438\" height=\"106\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"55\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">5687</text><rect x=\"96\" y=\"14\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"137\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">4500</text><rect x=\"178\" y=\"14\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"219\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">12 679</text><rect x=\"260\" y=\"14\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"301\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">24 562</text><rect x=\"342\" y=\"14\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"383\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">3843</text><rect x=\"14\" y=\"52\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"55\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">456</text><rect x=\"96\" y=\"52\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"137\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">24</text><rect x=\"178\" y=\"52\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"219\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">805</text><rect x=\"260\" y=\"52\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"301\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">5901</text><rect x=\"342\" y=\"52\" width=\"82\" height=\"38\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"383\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">766</text></svg>"
           }
+        },
+        {
+          "id": "y4-rn-2-th-rev1-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which list shows all the odd numbers between \\(5410\\) and \\(5420\\)?",
+          "options": [
+            "5411, 5413, 5415, 5417, 5419",
+            "5410, 5412, 5414, 5416, 5418, 5420",
+            "5411, 5413, 5415, 5417",
+            "5411, 5412, 5415, 5417, 5419"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Odd numbers end in 1, 3, 5, 7, or 9. Start at 5411 and count by +2 up to 5419.",
+          "keyPoints": [
+            {
+              "text": "odd numbers",
+              "note": "Odd numbers end in 1, 3, 5, 7, or 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall that odd numbers end in 1, 3, 5, 7, or 9.",
+              "work": "\\(\\text{Last digit: } 1, 3, 5, 7, 9\\)"
+            },
+            {
+              "explain": "Find the first odd number after 5410: it is 5411.",
+              "work": "\\(\\text{First odd number} = 5411\\)"
+            },
+            {
+              "explain": "Count forward by 2s until just below 5420: 5411, 5413, 5415, 5417, 5419.",
+              "work": "\\(5411, 5413, 5415, 5417, 5419\\)"
+            },
+            {
+              "explain": "Therefore, all five odd numbers between 5410 and 5420 are 5411, 5413, 5415, 5417, 5419.",
+              "work": "\\(5411, 5413, 5415, 5417, 5419\\)"
+            }
+          ]
         }
       ]
     },

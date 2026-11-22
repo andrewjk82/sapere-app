@@ -410,6 +410,336 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 232\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"232\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"26\" width=\"192\" height=\"192\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><polygon points=\"140,26 236,122 140,218 44,122\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><rect x=\"92\" y=\"74\" width=\"96\" height=\"96\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><polygon points=\"140,74 188,122 140,170 92,122\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"38\" y=\"22\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">720</text><text x=\"242\" y=\"22\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">120</text><text x=\"38\" y=\"224\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">321</text><text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">909</text></svg>"
           }
+        },
+        {
+          "id": "y4-ar-1-th-rev1-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the split place-value method to calculate \\(512 + 175\\).",
+          "options": [
+            "677",
+            "687",
+            "697",
+            "787"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, calculate each column, then add the three results.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Separate hundreds, tens, and ones before calculating."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(512\\) and \\(175\\) into hundreds, tens, and ones.",
+              "work": "\\(512=500+10+2,\\quad 175=100+70+5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">512 + 175 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 70</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 512 = 500+10+2 and 175 = 100+70+5</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the hundreds and tens columns.",
+              "work": "\\(500 + 100 = 600, \\quad 10 + 70 = 80\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">512 + 175 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 70</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 80</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the ones column.",
+              "work": "\\(2 + 5 = 7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">512 + 175 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 70</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 80</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 7</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine the three parts to find the answer.",
+              "work": "\\(600 + 80 + 7 = 687\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">512 + 175 = 687</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 + 70</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 80</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 7</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 600 + 80 + 7 = 687</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">512 + 175 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th-rev1-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the split place-value method to calculate \\(694 - 232\\).",
+          "options": [
+            "452",
+            "462",
+            "472",
+            "362"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, calculate each column, then add the three results.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Separate hundreds, tens, and ones before calculating."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(694\\) and \\(232\\) into hundreds, tens, and ones.",
+              "work": "\\(694=600+90+4,\\quad 232=200+30+2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">694 − 232 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 694 = 600+90+4 and 232 = 200+30+2</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the hundreds and tens columns.",
+              "work": "\\(600 - 200 = 400, \\quad 90 - 30 = 60\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">694 − 232 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 400</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 60</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the ones column.",
+              "work": "\\(4 - 2 = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">694 − 232 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 400</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 60</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 2</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine the three parts to find the answer.",
+              "work": "\\(400 + 60 + 2 = 462\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">694 − 232 = 462</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 − 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 400</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">90 − 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 60</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 − 2</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 2</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 400 + 60 + 2 = 462</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">694 − 232 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th9-p40-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the split place-value method (with regrouping) to calculate \\(548 + 237\\).",
+          "options": [
+            "775",
+            "785",
+            "795",
+            "885"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each column, then regroup any extra ten (or hundred) before adding the parts together.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Add hundreds, tens, and ones separately, then regroup 10 ones = 1 ten and 10 tens = 1 hundred."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(548\\) and \\(237\\) into hundreds, tens, and ones.",
+              "work": "\\(548 = 500 + 40 + 8, \\quad 237 = 200 + 30 + 7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">548 + 237 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 548 = 500+40+8 and 237 = 200+30+7</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together: \\(500 + 200 = 700\\) and \\(40 + 30 = 70\\).",
+              "work": "\\(500 + 200 = 700, \\quad 40 + 30 = 70\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">548 + 237 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 700</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the ones: \\(8 + 7 = 15\\). Regroup \\(15\\) into \\(10 + 5\\) and add \\(10\\) to the tens (\\(70 + 10 = 80\\)).",
+              "work": "\\(8 + 7 = 15 = 10 + 5, \\quad 70 + 10 = 80\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">548 + 237 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 700</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 15</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine all parts to get the final sum: \\(700 + 80 + 5 = 785\\).",
+              "work": "\\(700 + 80 + 5 = 785\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">548 + 237 = 785</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 700</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">40 + 30</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 7</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 15</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 700 + 70 + 15 = 785</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">548 + 237 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th9-p40-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the split place-value method (with regrouping) to calculate \\(652 + 229\\).",
+          "options": [
+            "871",
+            "881",
+            "891",
+            "981"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each column, then regroup any extra ten (or hundred) before adding the parts together.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Add hundreds, tens, and ones separately, then regroup 10 ones = 1 ten and 10 tens = 1 hundred."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(652\\) and \\(229\\) into hundreds, tens, and ones.",
+              "work": "\\(652 = 600 + 50 + 2, \\quad 229 = 200 + 20 + 9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">652 + 229 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">50 + 20</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 652 = 600+50+2 and 229 = 200+20+9</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together: \\(600 + 200 = 800\\) and \\(50 + 20 = 70\\).",
+              "work": "\\(600 + 200 = 800, \\quad 50 + 20 = 70\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">652 + 229 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 800</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">50 + 20</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the ones: \\(2 + 9 = 11\\). Regroup \\(11\\) into \\(10 + 1\\) and add \\(10\\) to the tens (\\(70 + 10 = 80\\)).",
+              "work": "\\(2 + 9 = 11 = 10 + 1, \\quad 70 + 10 = 80\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">652 + 229 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 800</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">50 + 20</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 11</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine all parts to get the final sum: \\(800 + 80 + 1 = 881\\).",
+              "work": "\\(800 + 80 + 1 = 881\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">652 + 229 = 881</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">600 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 800</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">50 + 20</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 70</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2 + 9</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 11</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 800 + 70 + 11 = 881</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">652 + 229 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th9-p40-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the split place-value method (with regrouping) to calculate \\(428 + 285\\).",
+          "options": [
+            "613",
+            "703",
+            "713",
+            "723"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each column, then regroup any extra ten (or hundred) before adding the parts together.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Add hundreds, tens, and ones separately, then regroup 10 ones = 1 ten and 10 tens = 1 hundred."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(428\\) and \\(285\\) into hundreds, tens, and ones.",
+              "work": "\\(428 = 400 + 20 + 8, \\quad 285 = 200 + 80 + 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">428 + 285 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">20 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 428 = 400+20+8 and 285 = 200+80+5</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together: \\(400 + 200 = 600\\) and \\(20 + 80 = 100\\).",
+              "work": "\\(400 + 200 = 600, \\quad 20 + 80 = 100\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">428 + 285 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">20 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 100</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the ones: \\(8 + 5 = 13\\). Regroup \\(13\\) into \\(10 + 3\\) and add \\(10\\) to the tens (\\(100 + 10 = 110\\)).",
+              "work": "\\(8 + 5 = 13 = 10 + 3, \\quad 100 + 10 = 110\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">428 + 285 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">20 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 100</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 13</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine all parts to get the final sum: \\(600 + 110 + 3 = 713\\).",
+              "work": "\\(600 + 110 + 3 = 713\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">428 + 285 = 713</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">400 + 200</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">20 + 80</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 100</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8 + 5</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 13</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 600 + 100 + 13 = 713</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">428 + 285 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-1-th9-p40-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the split place-value method (with regrouping) to calculate \\(587 + 146\\).",
+          "options": [
+            "723",
+            "733",
+            "743",
+            "633"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Split both numbers into hundreds, tens, and ones, add each column, then regroup any extra ten (or hundred) before adding the parts together.",
+          "keyPoints": [
+            {
+              "text": "split place-value method",
+              "note": "Add hundreds, tens, and ones separately, then regroup 10 ones = 1 ten and 10 tens = 1 hundred."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(587\\) and \\(146\\) into hundreds, tens, and ones.",
+              "work": "\\(587 = 500 + 80 + 7, \\quad 146 = 100 + 40 + 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">587 + 146 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 + 40</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">7 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Split: 587 = 500+80+7 and 146 = 100+40+6</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the hundreds together and the tens together: \\(500 + 100 = 600\\) and \\(80 + 40 = 120\\).",
+              "work": "\\(500 + 100 = 600, \\quad 80 + 40 = 120\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">587 + 146 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 + 40</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 120</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">7 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#94a3b8\">= ?</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the ones: \\(7 + 6 = 13\\). Regroup \\(13\\) into \\(10 + 3\\) and add \\(10\\) to the tens (\\(120 + 10 = 130\\)).",
+              "work": "\\(7 + 6 = 13 = 10 + 3, \\quad 120 + 10 = 130\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">587 + 146 = ?</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 + 40</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 120</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">7 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 13</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Calculate each place-value column</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine all parts to get the final sum: \\(600 + 130 + 3 = 733\\).",
+              "work": "\\(600 + 130 + 3 = 733\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">587 + 146 = 733</text><rect x=\"18\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Hundreds</text><text x=\"81\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">500 + 100</text><text x=\"81\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 600</text><rect x=\"156\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"219\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Tens</text><text x=\"219\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">80 + 40</text><text x=\"219\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 120</text><rect x=\"294\" y=\"74\" width=\"126\" height=\"72\" rx=\"8\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"357\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Ones</text><text x=\"357\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">7 + 6</text><text x=\"357\" y=\"137\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#15803d\">= 13</text><text x=\"220\" y=\"172\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\">Combine: 600 + 120 + 13 = 733</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 92\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"92\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"16\" width=\"220\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"220\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#0f172a\">587 + 146 = ?</text><text x=\"220\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">Use the split place-value strategy (Hundreds, Tens, Ones)</text></svg>"
+          }
         }
       ]
     },
@@ -1540,6 +1870,86 @@
               "work": "\\(\\text{Change} = \\$7.45\\)"
             }
           ]
+        },
+        {
+          "id": "y4-ar-3-th-rev1-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jaz bought \\(3\\) books for \\(\\$1.49\\) each. She paid the shopkeeper \\(\\$10.00\\). How much change did she receive (to the nearest \\(5\\) cents)?",
+          "options": [
+            "\\(\\$5.50\\)",
+            "\\(\\$5.55\\)",
+            "\\(\\$5.60\\)",
+            "\\(\\$4.55\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total cost first, round to the nearest 5 cents, then count up to find the change.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the total to the nearest 5 cents before subtracting."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply 3 × $1.49 using $1.50 - 1c: 3 × $1.50 = $4.50, minus 3c = $4.47.",
+              "work": "\\(3 \\times \\$1.49 = \\$4.50 - \\$0.03 = \\$4.47\\)"
+            },
+            {
+              "explain": "Round $4.47 to the nearest 5 cents (7 rounds down to 5): $4.45.",
+              "work": "\\(\\$4.47 \\to \\$4.45\\)"
+            },
+            {
+              "explain": "Subtract $4.45 from $10.00: $4.45 + $0.55 = $5.00, then + $5.00 = $10.00.",
+              "work": "\\(\\$10.00 - \\$4.45 = \\$5.55\\)"
+            },
+            {
+              "explain": "Therefore, Jaz received $5.55 in change.",
+              "work": "\\(\\text{Change} = \\$5.55\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-ar-3-th-rev1-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dozen eggs costs \\(\\$5.23\\). How much change from \\(\\$20.00\\) (to the nearest \\(5\\) cents) do you receive if you buy two dozen?",
+          "options": [
+            "\\(\\$9.50\\)",
+            "\\(\\$9.55\\)",
+            "\\(\\$9.60\\)",
+            "\\(\\$10.55\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the exact total cost first, round to the nearest 5 cents, then count up to find the change.",
+          "keyPoints": [
+            {
+              "text": "nearest",
+              "note": "Round the total to the nearest 5 cents before subtracting."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Double $5.23 to find the cost of 2 dozen: $10.46.",
+              "work": "\\(2 \\times \\$5.23 = \\$10.46\\)"
+            },
+            {
+              "explain": "Round $10.46 to the nearest 5 cents (6 rounds down to 5): $10.45.",
+              "work": "\\(\\$10.46 \\to \\$10.45\\)"
+            },
+            {
+              "explain": "Subtract $10.45 from $20.00: $10.45 + $0.55 = $11.00, then + $9.00 = $20.00.",
+              "work": "\\(\\$20.00 - \\$10.45 = \\$9.55\\)"
+            },
+            {
+              "explain": "Therefore, the change from $20.00 is $9.55.",
+              "work": "\\(\\text{Change} = \\$9.55\\)"
+            }
+          ]
         }
       ]
     },
@@ -1867,6 +2277,251 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">half of 72</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th9-p41-ps1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same value as \"the sum of 12 and 13\"?",
+          "options": [
+            "quarter of 100",
+            "10 × 10",
+            "160 − 40",
+            "100 ÷ 5"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the value of \"the sum of 12 and 13\", then evaluate each option to find the matching answer.",
+          "keyPoints": [
+            {
+              "text": "same value",
+              "note": "Calculate both sides to confirm they produce the exact same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out the value of \"the sum of 12 and 13\".",
+              "work": "\\(12 + 13 = 25\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">the sum of 12 and 13</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 25</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"quarter of 100\" to see if it gives \\(25\\).",
+              "work": "\\(100 \\div 4 = 25\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">quarter of 100</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 25!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other three options give different values.",
+              "work": "\\(\\text{Both equal } 25\\)"
+            },
+            {
+              "explain": "Therefore, \"the sum of 12 and 13\" matches \"quarter of 100\".",
+              "work": "\\(100 \\div 4 = 25\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">the sum of 12 and 13</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th9-p41-ps2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same value as \"50 + 50 + 20\"?",
+          "options": [
+            "quarter of 100",
+            "10 × 10",
+            "160 − 40",
+            "100 − 52"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the value of \"50 + 50 + 20\", then evaluate each option to find the matching answer.",
+          "keyPoints": [
+            {
+              "text": "same value",
+              "note": "Calculate both sides to confirm they produce the exact same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out the value of \"50 + 50 + 20\".",
+              "work": "\\(50 + 50 + 20 = 120\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">50 + 50 + 20</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 120</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"160 − 40\" to see if it gives \\(120\\).",
+              "work": "\\(160 - 40 = 120\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">160 − 40</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 120!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other three options give different values.",
+              "work": "\\(\\text{Both equal } 120\\)"
+            },
+            {
+              "explain": "Therefore, \"50 + 50 + 20\" matches \"160 − 40\".",
+              "work": "\\(160 - 40 = 120\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">50 + 50 + 20</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th9-p41-ps3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same value as \"half of 200\"?",
+          "options": [
+            "10 × 10",
+            "160 − 40",
+            "100 ÷ 5",
+            "100 − 52"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the value of \"half of 200\", then evaluate each option to find the matching answer.",
+          "keyPoints": [
+            {
+              "text": "same value",
+              "note": "Calculate both sides to confirm they produce the exact same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out the value of \"half of 200\".",
+              "work": "\\(200 \\div 2 = 100\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">half of 200</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 100</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"10 × 10\" to see if it gives \\(100\\).",
+              "work": "\\(10 \\times 10 = 100\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">10 × 10</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 100!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other three options give different values.",
+              "work": "\\(\\text{Both equal } 100\\)"
+            },
+            {
+              "explain": "Therefore, \"half of 200\" matches \"10 × 10\".",
+              "work": "\\(10 \\times 10 = 100\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">half of 200</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th9-p41-ps4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same value as \"5 × 4\"?",
+          "options": [
+            "quarter of 100",
+            "100 ÷ 5",
+            "100 − 52",
+            "10 × 10"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the value of \"5 × 4\", then evaluate each option to find the matching answer.",
+          "keyPoints": [
+            {
+              "text": "same value",
+              "note": "Calculate both sides to confirm they produce the exact same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out the value of \"5 × 4\".",
+              "work": "\\(5 \\times 4 = 20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">5 × 4</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 20</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"100 ÷ 5\" to see if it gives \\(20\\).",
+              "work": "\\(100 \\div 5 = 20\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">100 ÷ 5</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 20!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other three options give different values.",
+              "work": "\\(\\text{Both equal } 20\\)"
+            },
+            {
+              "explain": "Therefore, \"5 × 4\" matches \"100 ÷ 5\".",
+              "work": "\\(100 \\div 5 = 20\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">5 × 4</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-ar-5-th9-p41-ps5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which box has the exact same value as \"double 24\"?",
+          "options": [
+            "quarter of 100",
+            "100 ÷ 5",
+            "160 − 40",
+            "100 − 52"
+          ],
+          "answer": 3,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "First calculate the value of \"double 24\", then evaluate each option to find the matching answer.",
+          "keyPoints": [
+            {
+              "text": "same value",
+              "note": "Calculate both sides to confirm they produce the exact same number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Work out the value of \"double 24\".",
+              "work": "\\(24 \\times 2 = 48\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">double 24</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Value = 48</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate \"100 − 52\" to see if it gives \\(48\\).",
+              "work": "\\(100 - 52 = 48\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 124\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"124\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#fef3c7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#b45309\">100 − 52</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/><text x=\"130\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0369a1\">Also equals 48!</text></svg>"
+              }
+            },
+            {
+              "explain": "Confirm the other three options give different values.",
+              "work": "\\(\\text{Both equal } 48\\)"
+            },
+            {
+              "explain": "Therefore, \"double 24\" matches \"100 − 52\".",
+              "work": "\\(100 - 52 = 48\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 100\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"100\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"34\" y=\"14\" width=\"192\" height=\"62\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"44\" y=\"22\" width=\"172\" height=\"46\" rx=\"4\" fill=\"#a855f7\"/><text x=\"130\" y=\"51\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#ffffff\">double 24</text><rect x=\"114\" y=\"76\" width=\"32\" height=\"8\" fill=\"#475569\"/><rect x=\"92\" y=\"84\" width=\"76\" height=\"6\" rx=\"3\" fill=\"#64748b\"/></svg>"
           }
         }
       ]
