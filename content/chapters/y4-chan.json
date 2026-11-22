@@ -1315,6 +1315,366 @@
               "work": "\\(\\text{Answer: Georgie's nan likes watching tennis.}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-chan-2-th21-p92-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Mike and Sam are playing a game with a standard 6-sided die. Mike throws a six. Is it true or false that Sam has a 1 in 6 chance of throwing a six too?",
+          "options": [
+            "True, because each roll of a fair die is independent and always has a 1 in 6 chance of rolling 6",
+            "False, because Mike already rolled the six",
+            "False, because Sam now has a 2 in 6 chance",
+            "False, because two sixes can never be rolled in a row"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide whether the first event changes what is left (dependent, like removing a marble) or does NOT change the next trial (independent, like rolling a die).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Check whether the outcome is independent or dependent."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check whether the first event changes the possible outcomes for the second event.",
+              "work": "\\(\\text{Check independence vs dependence}\\)"
+            },
+            {
+              "explain": "True, because each roll of a fair die is independent and always has a 1 in 6 chance of rolling 6.",
+              "work": "\\(\\text{Result: True}\\)"
+            },
+            {
+              "explain": "Eliminate the three incorrect explanations.",
+              "work": "\\(\\text{Other 3 options contain chance misconceptions}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{Answer: True}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p92-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sarah’s mum is expecting a baby. Because she already had a girl, is it true or false that this baby will DEFINITELY be a boy?",
+          "options": [
+            "True, because families must alternate girl and boy",
+            "False, because each baby is an independent event and could be either a boy or a girl",
+            "True, because having two girls is impossible",
+            "False, because the baby must be a girl"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide whether the first event changes what is left (dependent, like removing a marble) or does NOT change the next trial (independent, like rolling a die).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Check whether the outcome is independent or dependent."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check whether the first event changes the possible outcomes for the second event.",
+              "work": "\\(\\text{Check independence vs dependence}\\)"
+            },
+            {
+              "explain": "False, because each baby is an independent event and could be either a boy or a girl.",
+              "work": "\\(\\text{Result: False}\\)"
+            },
+            {
+              "explain": "Eliminate the three incorrect explanations.",
+              "work": "\\(\\text{Other 3 options contain chance misconceptions}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is False.",
+              "work": "\\(\\text{Answer: False}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There are \\(6\\) marbles in a bag: \\(3\\) blue, \\(2\\) red, and \\(1\\) green. Without looking, Max pulls a blue marble out (and keeps it out). For his next turn, is it true or false that Max has a greater chance of pulling a blue or red marble than a green one?",
+          "options": [
+            "True, because 2 blue and 2 red remain (4 total), compared with only 1 green marble",
+            "False, because all colours now have an equal chance",
+            "False, because green is now the most common colour",
+            "False, because no blue marbles remain"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Decide whether the first event changes what is left (dependent, like removing a marble) or does NOT change the next trial (independent, like rolling a die).",
+          "keyPoints": [
+            {
+              "text": "true or false",
+              "note": "Check whether the outcome is independent or dependent."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check whether the first event changes the possible outcomes for the second event.",
+              "work": "\\(\\text{Check independence vs dependence}\\)"
+            },
+            {
+              "explain": "True, because 2 blue and 2 red remain (4 total), compared with only 1 green marble.",
+              "work": "\\(\\text{Result: True}\\)"
+            },
+            {
+              "explain": "Eliminate the three incorrect explanations.",
+              "work": "\\(\\text{Other 3 options contain chance misconceptions}\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "\\(\\text{Answer: True}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this mutually exclusive event statement: \"If the television is on, it cannot be ___.\"",
+          "options": [
+            "off",
+            "closed",
+            "cold",
+            "tails"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the exact opposite state that cannot happen at the same time.",
+          "keyPoints": [
+            {
+              "text": "cannot",
+              "note": "Mutually exclusive states cannot both be true at once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the condition in \"If the television is on, it cannot be ___.\".",
+              "work": "\\(\\text{Find the opposite mutually exclusive state}\\)"
+            },
+            {
+              "explain": "The exact opposite state that cannot occur simultaneously is \"off\".",
+              "work": "\\(\\text{Opposite} = \\text{off}\\)"
+            },
+            {
+              "explain": "Confirm the other three words do not describe the opposite of the given condition.",
+              "work": "\\(\\text{Other 3 words do not match}\\)"
+            },
+            {
+              "explain": "Therefore, the missing word is \"off\".",
+              "work": "\\(\\text{Answer: off}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this mutually exclusive event statement: \"If a coin lands on heads, it cannot show ___.\"",
+          "options": [
+            "off",
+            "tails",
+            "closed",
+            "summer"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the exact opposite state that cannot happen at the same time.",
+          "keyPoints": [
+            {
+              "text": "cannot",
+              "note": "Mutually exclusive states cannot both be true at once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the condition in \"If a coin lands on heads, it cannot show ___.\".",
+              "work": "\\(\\text{Find the opposite mutually exclusive state}\\)"
+            },
+            {
+              "explain": "The exact opposite state that cannot occur simultaneously is \"tails\".",
+              "work": "\\(\\text{Opposite} = \\text{tails}\\)"
+            },
+            {
+              "explain": "Confirm the other three words do not describe the opposite of the given condition.",
+              "work": "\\(\\text{Other 3 words do not match}\\)"
+            },
+            {
+              "explain": "Therefore, the missing word is \"tails\".",
+              "work": "\\(\\text{Answer: tails}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this mutually exclusive event statement: \"If it is hot outside, it cannot be ___ outside.\"",
+          "options": [
+            "summer",
+            "cold",
+            "closed",
+            "off"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the exact opposite state that cannot happen at the same time.",
+          "keyPoints": [
+            {
+              "text": "cannot",
+              "note": "Mutually exclusive states cannot both be true at once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the condition in \"If it is hot outside, it cannot be ___ outside.\".",
+              "work": "\\(\\text{Find the opposite mutually exclusive state}\\)"
+            },
+            {
+              "explain": "The exact opposite state that cannot occur simultaneously is \"cold\".",
+              "work": "\\(\\text{Opposite} = \\text{cold}\\)"
+            },
+            {
+              "explain": "Confirm the other three words do not describe the opposite of the given condition.",
+              "work": "\\(\\text{Other 3 words do not match}\\)"
+            },
+            {
+              "explain": "Therefore, the missing word is \"cold\".",
+              "work": "\\(\\text{Answer: cold}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this mutually exclusive event statement: \"If Grant is a child, he cannot be an ___.\"",
+          "options": [
+            "adult",
+            "summer",
+            "off",
+            "tails"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the exact opposite state that cannot happen at the same time.",
+          "keyPoints": [
+            {
+              "text": "cannot",
+              "note": "Mutually exclusive states cannot both be true at once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the condition in \"If Grant is a child, he cannot be an ___.\".",
+              "work": "\\(\\text{Find the opposite mutually exclusive state}\\)"
+            },
+            {
+              "explain": "The exact opposite state that cannot occur simultaneously is \"adult\".",
+              "work": "\\(\\text{Opposite} = \\text{adult}\\)"
+            },
+            {
+              "explain": "Confirm the other three words do not describe the opposite of the given condition.",
+              "work": "\\(\\text{Other 3 words do not match}\\)"
+            },
+            {
+              "explain": "Therefore, the missing word is \"adult\".",
+              "work": "\\(\\text{Answer: adult}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this mutually exclusive event statement: \"If it is winter, it cannot be ___.\"",
+          "options": [
+            "cold",
+            "closed",
+            "summer",
+            "adult"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the exact opposite state that cannot happen at the same time.",
+          "keyPoints": [
+            {
+              "text": "cannot",
+              "note": "Mutually exclusive states cannot both be true at once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the condition in \"If it is winter, it cannot be ___.\".",
+              "work": "\\(\\text{Find the opposite mutually exclusive state}\\)"
+            },
+            {
+              "explain": "The exact opposite state that cannot occur simultaneously is \"summer\".",
+              "work": "\\(\\text{Opposite} = \\text{summer}\\)"
+            },
+            {
+              "explain": "Confirm the other three words do not describe the opposite of the given condition.",
+              "work": "\\(\\text{Other 3 words do not match}\\)"
+            },
+            {
+              "explain": "Therefore, the missing word is \"summer\".",
+              "work": "\\(\\text{Answer: summer}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-chan-2-th21-p93-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete this mutually exclusive event statement: \"If the window is open, it cannot be ___.\"",
+          "options": [
+            "off",
+            "cold",
+            "closed",
+            "tails"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Choose the exact opposite state that cannot happen at the same time.",
+          "keyPoints": [
+            {
+              "text": "cannot",
+              "note": "Mutually exclusive states cannot both be true at once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the condition in \"If the window is open, it cannot be ___.\".",
+              "work": "\\(\\text{Find the opposite mutually exclusive state}\\)"
+            },
+            {
+              "explain": "The exact opposite state that cannot occur simultaneously is \"closed\".",
+              "work": "\\(\\text{Opposite} = \\text{closed}\\)"
+            },
+            {
+              "explain": "Confirm the other three words do not describe the opposite of the given condition.",
+              "work": "\\(\\text{Other 3 words do not match}\\)"
+            },
+            {
+              "explain": "Therefore, the missing word is \"closed\".",
+              "work": "\\(\\text{Answer: closed}\\)"
+            }
+          ]
         }
       ]
     },

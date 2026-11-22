@@ -900,7 +900,652 @@
       "topicId": "y4-gm-3",
       "code": "MA2-GM-02",
       "title": "Angles — compare: Compare and classify angles as acute, right, obtuse or straight",
-      "questions": []
+      "questions": [
+        {
+          "id": "y4-gm-3-th20-p89-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"38.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"134.0,96.0 134.0,82.0 120.0,82.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 142.0 96.0 A 22 22 0 0 0 134.1 79.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"184.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"161.1\" y2=\"47.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (50°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm sits INSIDE the red \\(90^\\circ\\) reference (about \\(50^\\circ < 90^\\circ\\)).",
+              "work": "\\(50^\\circ < 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Less than a right angle (acute).",
+              "work": "\\(\\text{Classification: Less than a right angle (acute)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is less than a right angle (acute).",
+              "work": "\\(\\text{Answer: Less than a right angle (acute)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 142.0 96.0 A 22 22 0 0 0 134.1 79.1\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"184.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"161.1\" y2=\"47.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"174.5\" y2=\"76.2\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"115.2,82.8 128.4,78.1 133.2,91.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 112.5 75.3 A 22 22 0 0 1 140.7 88.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"98.1\" y2=\"35.9\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"180.1\" y2=\"74.1\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (90°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm lines up EXACTLY on top of the red \\(90^\\circ\\) reference line.",
+              "work": "\\(\\text{Angle} = 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Equal to a right angle (90°).",
+              "work": "\\(\\text{Classification: Equal to a right angle (90°)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is equal to a right angle (90°).",
+              "work": "\\(\\text{Answer: Equal to a right angle (90°)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 112.5 75.3 A 22 22 0 0 1 140.7 88.5\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"98.1\" y2=\"35.9\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"180.1\" y2=\"74.1\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"38.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"106.0,96.0 106.0,82.0 120.0,82.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 98.0 96.0 A 22 22 0 0 1 100.9 85.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"64.6\" y2=\"64.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (30°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm sits INSIDE the red \\(90^\\circ\\) reference (about \\(30^\\circ < 90^\\circ\\)).",
+              "work": "\\(30^\\circ < 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Less than a right angle (acute).",
+              "work": "\\(\\text{Classification: Less than a right angle (acute)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is less than a right angle (acute).",
+              "work": "\\(\\text{Answer: Less than a right angle (acute)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 98.0 96.0 A 22 22 0 0 1 100.9 85.0\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"64.6\" y2=\"64.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"154.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"106.0,96.0 106.0,110.0 120.0,110.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 98.0 96.0 A 22 22 0 0 0 138.0 108.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"172.4\" y2=\"132.7\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (145°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm opens WIDER than the red \\(90^\\circ\\) reference (about \\(145^\\circ > 90^\\circ\\)).",
+              "work": "\\(145^\\circ > 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Greater than a right angle (obtuse).",
+              "work": "\\(\\text{Classification: Greater than a right angle (obtuse)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is greater than a right angle (obtuse).",
+              "work": "\\(\\text{Answer: Greater than a right angle (obtuse)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 98.0 96.0 A 22 22 0 0 0 138.0 108.6\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"172.4\" y2=\"132.7\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"38.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"106.0,96.0 106.0,82.0 120.0,82.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 98.0 96.0 A 22 22 0 0 1 129.3 76.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"147.0\" y2=\"38.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (115°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm opens WIDER than the red \\(90^\\circ\\) reference (about \\(115^\\circ > 90^\\circ\\)).",
+              "work": "\\(115^\\circ > 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Greater than a right angle (obtuse).",
+              "work": "\\(\\text{Classification: Greater than a right angle (obtuse)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is greater than a right angle (obtuse).",
+              "work": "\\(\\text{Answer: Greater than a right angle (obtuse)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 98.0 96.0 A 22 22 0 0 1 129.3 76.1\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"147.0\" y2=\"38.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"176.0\" y2=\"111.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"116.4,109.5 129.9,113.1 133.5,99.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 114.3 117.3 A 22 22 0 0 0 123.8 117.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"103.4\" y2=\"157.8\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"131.1\" y2=\"159.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (25°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm sits INSIDE the red \\(90^\\circ\\) reference (about \\(25^\\circ < 90^\\circ\\)).",
+              "work": "\\(25^\\circ < 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Less than a right angle (acute).",
+              "work": "\\(\\text{Classification: Less than a right angle (acute)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is less than a right angle (acute).",
+              "work": "\\(\\text{Answer: Less than a right angle (acute)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 114.3 117.3 A 22 22 0 0 0 123.8 117.7\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"103.4\" y2=\"157.8\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"131.1\" y2=\"159.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"38.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"106.0,96.0 106.0,82.0 120.0,82.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 98.0 96.0 A 22 22 0 0 1 120.0 74.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"32.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (90°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm lines up EXACTLY on top of the red \\(90^\\circ\\) reference line.",
+              "work": "\\(\\text{Angle} = 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Equal to a right angle (90°).",
+              "work": "\\(\\text{Classification: Equal to a right angle (90°)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is equal to a right angle (90°).",
+              "work": "\\(\\text{Answer: Equal to a right angle (90°)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 98.0 96.0 A 22 22 0 0 1 120.0 74.0\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"56.0\" y2=\"96.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"120.0\" y2=\"32.0\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare this angle with a right angle (a square corner, \\(90^\\circ\\)). Is it equal to, less than, or greater than a right angle?",
+          "options": [
+            "Equal to a right angle (90°)",
+            "Less than a right angle (acute)",
+            "Greater than a right angle (obtuse)",
+            "Straight angle (180°)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Imagine placing the square corner of a book or ruler into the vertex: smaller than the corner = acute, exact match = right angle, wider than the corner = obtuse.",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "A right angle is a quarter turn (90°), matching the square corner of a page."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place a red dashed \\(90^\\circ\\) right-angle reference (square corner) along one arm of the angle.",
+              "work": "\\(\\text{Right angle reference} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 176\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"96\" x2=\"130.1\" y2=\"38.9\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polyline points=\"133.8,98.4 136.2,84.6 122.4,82.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><path d=\"M 141.7 99.8 A 22 22 0 0 0 141.7 92.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"120\" y1=\"96\" x2=\"183.0\" y2=\"107.1\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"183.0\" y2=\"84.9\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/><text x=\"120\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Compare purple arm with red 90° reference (20°)</text></svg>"
+              }
+            },
+            {
+              "explain": "The second purple arm sits INSIDE the red \\(90^\\circ\\) reference (about \\(20^\\circ < 90^\\circ\\)).",
+              "work": "\\(20^\\circ < 90^\\circ\\)"
+            },
+            {
+              "explain": "Classify the angle: Less than a right angle (acute).",
+              "work": "\\(\\text{Classification: Less than a right angle (acute)}\\)"
+            },
+            {
+              "explain": "Therefore, this angle is less than a right angle (acute).",
+              "work": "\\(\\text{Answer: Less than a right angle (acute)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 154\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M 141.7 99.8 A 22 22 0 0 0 141.7 92.2\" fill=\"none\" stroke=\"#9333ea\" stroke-width=\"2\"/><line x1=\"120\" y1=\"96\" x2=\"183.0\" y2=\"107.1\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"96\" x2=\"183.0\" y2=\"84.9\" stroke=\"#7e22ce\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"96\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is exactly ONE right angle (\\(90^\\circ\\)) in this shape. Which letter marks the right angle?",
+          "options": [
+            "Angle a",
+            "Angle b",
+            "Angle c",
+            "None of them"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each corner (a, b, c) against a square corner (90°); remember a right angle can be tilted!",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "Look for the exact 90° square corner (even if rotated)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect all three labelled angles (a, b, and c) and check which pair of arms meets at a square \\(90^\\circ\\) corner.",
+              "work": "\\(\\text{Check angles } a, b, c \\text{ for } 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"64\" y1=\"86\" x2=\"130\" y2=\"86\" stroke=\"#0284c7\" stroke-width=\"3\"/><line x1=\"130\" y1=\"24\" x2=\"130\" y2=\"86\" stroke=\"#0284c7\" stroke-width=\"3\"/><line x1=\"130\" y1=\"86\" x2=\"188\" y2=\"126\" stroke=\"#0284c7\" stroke-width=\"3\"/><rect x=\"114\" y=\"70\" width=\"16\" height=\"16\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"116\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">a</text><text x=\"142\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"118\" y=\"106\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Red square marks Angle a = 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Angle a sits between the horizontal left ray and the vertical up ray, forming an exact 90° square corner.",
+              "work": "\\(\\text{Angle } a = 90^\\circ\\)"
+            },
+            {
+              "explain": "Confirm the other two labelled angles are either narrower (acute) or wider (obtuse) than 90°.",
+              "work": "\\(\\text{Other two angles} \\ne 90^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, Angle a is the right angle.",
+              "work": "\\(\\text{Answer: Angle } a\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 154\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"64\" y1=\"86\" x2=\"130\" y2=\"86\" stroke=\"#0284c7\" stroke-width=\"3\"/><line x1=\"130\" y1=\"24\" x2=\"130\" y2=\"86\" stroke=\"#0284c7\" stroke-width=\"3\"/><line x1=\"130\" y1=\"86\" x2=\"188\" y2=\"126\" stroke=\"#0284c7\" stroke-width=\"3\"/><text x=\"116\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"142\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"118\" y=\"106\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is exactly ONE right angle (\\(90^\\circ\\)) in this shape. Which letter marks the right angle?",
+          "options": [
+            "Angle a",
+            "Angle b",
+            "Angle c",
+            "None of them"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each corner (a, b, c) against a square corner (90°); remember a right angle can be tilted!",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "Look for the exact 90° square corner (even if rotated)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect all three labelled angles (a, b, and c) and check which pair of arms meets at a square \\(90^\\circ\\) corner.",
+              "work": "\\(\\text{Check angles } a, b, c \\text{ for } 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"56,56 116,56 116,118 168,66 216,66\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><rect x=\"100\" y=\"56\" width=\"16\" height=\"16\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"100\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">a</text><text x=\"124\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"172\" y=\"84\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Red square marks Angle a = 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Angle a sits between the horizontal top-left ray and the vertical downward ray, forming an exact 90° square corner.",
+              "work": "\\(\\text{Angle } a = 90^\\circ\\)"
+            },
+            {
+              "explain": "Confirm the other two labelled angles are either narrower (acute) or wider (obtuse) than 90°.",
+              "work": "\\(\\text{Other two angles} \\ne 90^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, Angle a is the right angle.",
+              "work": "\\(\\text{Answer: Angle } a\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 154\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"56,56 116,56 116,118 168,66 216,66\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"100\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"124\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"172\" y=\"84\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is exactly ONE right angle (\\(90^\\circ\\)) in this shape. Which letter marks the right angle?",
+          "options": [
+            "Angle a",
+            "Angle b",
+            "Angle c",
+            "None of them"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each corner (a, b, c) against a square corner (90°); remember a right angle can be tilted!",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "Look for the exact 90° square corner (even if rotated)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect all three labelled angles (a, b, and c) and check which pair of arms meets at a square \\(90^\\circ\\) corner.",
+              "work": "\\(\\text{Check angles } a, b, c \\text{ for } 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"70,68 184,66 142,122\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"142,122 130,113 139,101 151,110\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"92\" y=\"80\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"166\" y=\"80\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"138\" y=\"114\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">c</text><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Red square marks Angle c = 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Angle c at the bottom corner of the triangle is a 90° square corner, while angles a and b are both acute.",
+              "work": "\\(\\text{Angle } c = 90^\\circ\\)"
+            },
+            {
+              "explain": "Confirm the other two labelled angles are either narrower (acute) or wider (obtuse) than 90°.",
+              "work": "\\(\\text{Other two angles} \\ne 90^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, Angle c is the right angle.",
+              "work": "\\(\\text{Answer: Angle } c\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 154\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"70,68 184,66 142,122\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"92\" y=\"80\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"166\" y=\"80\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"138\" y=\"114\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is exactly ONE right angle (\\(90^\\circ\\)) in this shape. Which letter marks the right angle?",
+          "options": [
+            "Angle a",
+            "Angle b",
+            "Angle c",
+            "None of them"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each corner (a, b, c) against a square corner (90°); remember a right angle can be tilted!",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "Look for the exact 90° square corner (even if rotated)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect all three labelled angles (a, b, and c) and check which pair of arms meets at a square \\(90^\\circ\\) corner.",
+              "work": "\\(\\text{Check angles } a, b, c \\text{ for } 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"186,62 118,34 118,118 188,118\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"78\" y1=\"86\" x2=\"118\" y2=\"118\" stroke=\"#0284c7\" stroke-width=\"3\"/><rect x=\"118\" y=\"102\" width=\"16\" height=\"16\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"128\" y=\"54\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"100\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"126\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">c</text><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Red square marks Angle c = 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Angle c sits between the vertical line and the horizontal bottom-right line, forming an exact 90° square corner.",
+              "work": "\\(\\text{Angle } c = 90^\\circ\\)"
+            },
+            {
+              "explain": "Confirm the other two labelled angles are either narrower (acute) or wider (obtuse) than 90°.",
+              "work": "\\(\\text{Other two angles} \\ne 90^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, Angle c is the right angle.",
+              "work": "\\(\\text{Answer: Angle } c\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 154\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"186,62 118,34 118,118 188,118\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"78\" y1=\"86\" x2=\"118\" y2=\"118\" stroke=\"#0284c7\" stroke-width=\"3\"/><text x=\"128\" y=\"54\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"100\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"126\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is exactly ONE right angle (\\(90^\\circ\\)) in this shape. Which letter marks the right angle?",
+          "options": [
+            "Angle a",
+            "Angle b",
+            "Angle c",
+            "None of them"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each corner (a, b, c) against a square corner (90°); remember a right angle can be tilted!",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "Look for the exact 90° square corner (even if rotated)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect all three labelled angles (a, b, and c) and check which pair of arms meets at a square \\(90^\\circ\\) corner.",
+              "work": "\\(\\text{Check angles } a, b, c \\text{ for } 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"64,88 134,88 64,44 194,44 194,118\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><rect x=\"178\" y=\"44\" width=\"16\" height=\"16\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"106\" y=\"60\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"178\" y=\"66\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">b</text><text x=\"104\" y=\"83\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Red square marks Angle b = 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Angle b at the top-right corner sits between the horizontal top line and vertical right line (90°).",
+              "work": "\\(\\text{Angle } b = 90^\\circ\\)"
+            },
+            {
+              "explain": "Confirm the other two labelled angles are either narrower (acute) or wider (obtuse) than 90°.",
+              "work": "\\(\\text{Other two angles} \\ne 90^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, Angle b is the right angle.",
+              "work": "\\(\\text{Answer: Angle } b\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 154\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"64,88 134,88 64,44 194,44 194,118\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"106\" y=\"60\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"178\" y=\"66\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"104\" y=\"83\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text></svg>"
+          }
+        },
+        {
+          "id": "y4-gm-3-th20-p89-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is exactly ONE right angle (\\(90^\\circ\\)) in this shape. Which letter marks the right angle?",
+          "options": [
+            "Angle a",
+            "Angle b",
+            "Angle c",
+            "None of them"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Test each corner (a, b, c) against a square corner (90°); remember a right angle can be tilted!",
+          "keyPoints": [
+            {
+              "text": "right angle",
+              "note": "Look for the exact 90° square corner (even if rotated)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect all three labelled angles (a, b, and c) and check which pair of arms meets at a square \\(90^\\circ\\) corner.",
+              "work": "\\(\\text{Check angles } a, b, c \\text{ for } 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 176\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"176\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"72,42 96,122 176,98 136,54 192,54\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"96,122 92,107 107,103 111,118\" fill=\"#fef08a\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"154\" y=\"69\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"104\" y=\"114\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">b</text><text x=\"150\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text><text x=\"130\" y=\"166\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Red square marks Angle b = 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Angle b at the bottom-left is a tilted 90° square corner, while a and c are acute.",
+              "work": "\\(\\text{Angle } b = 90^\\circ\\)"
+            },
+            {
+              "explain": "Confirm the other two labelled angles are either narrower (acute) or wider (obtuse) than 90°.",
+              "work": "\\(\\text{Other two angles} \\ne 90^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, Angle b is the right angle.",
+              "work": "\\(\\text{Answer: Angle } b\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 154\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"154\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polyline points=\"72,42 96,122 176,98 136,54 192,54\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"154\" y=\"69\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">a</text><text x=\"104\" y=\"114\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">b</text><text x=\"150\" y=\"96\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">c</text></svg>"
+          }
+        }
+      ]
     },
     {
       "topicId": "y4-gm-4",
