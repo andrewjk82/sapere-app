@@ -16320,25 +16320,3683 @@
       "topicId": "sch-acer-edutest-verbal",
       "code": "",
       "title": "Edutest Verbal Reasoning",
-      "questions": []
+      "questions": [
+        {
+          "id": "sch-acer-edutest-verbal-t2-q1",
+          "type": "mc",
+          "stem": "Which of the following words is similar to FRUSTRATING?",
+          "difficulty": "easy",
+          "options": [
+            "annoying",
+            "satisfied",
+            "sufficient",
+            "angry",
+            "furtive"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 1
+          },
+          "hint": "A word that means the same (a synonym) as 'frustrating'.",
+          "steps": [
+            {
+              "explain": "'Frustrating' describes something that makes you feel upset or irritated because it stops you doing what you want.",
+              "work": ""
+            },
+            {
+              "explain": "Look for the option with the same meaning: 'annoying' means causing irritation. 'Angry' describes a feeling, not a thing that causes it; 'satisfied' and 'sufficient' mean the opposite or something else; 'furtive' means sneaky.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: annoying.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "similar to",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q2",
+          "type": "mc",
+          "stem": "SURRENDER means:",
+          "difficulty": "easy",
+          "options": [
+            "fight",
+            "continue",
+            "give up",
+            "persevere",
+            "survive"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 2
+          },
+          "hint": "Think of what it means when someone surrenders in a game or battle.",
+          "steps": [
+            {
+              "explain": "To surrender is to stop resisting and admit defeat.",
+              "work": ""
+            },
+            {
+              "explain": "'Give up' has this meaning. 'Fight', 'persevere' and 'continue' are the opposite; 'survive' means to stay alive.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: give up.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "SURRENDER",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q3",
+          "type": "mc",
+          "stem": "Which of the following words is opposite to DREARY?",
+          "difficulty": "easy",
+          "options": [
+            "rainy",
+            "exciting",
+            "boring",
+            "dull",
+            "dream"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 3
+          },
+          "hint": "Opposite means the word with the reverse meaning.",
+          "steps": [
+            {
+              "explain": "'Dreary' means dull, gloomy and boring.",
+              "work": ""
+            },
+            {
+              "explain": "The opposite is 'exciting'. 'Boring' and 'dull' are similar to dreary, 'rainy' is only a kind of weather and 'dream' is unrelated.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: exciting.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "opposite",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q4",
+          "type": "mc",
+          "stem": "What is another word for CUNNING?",
+          "difficulty": "easy",
+          "options": [
+            "intelligent",
+            "sly",
+            "truthful",
+            "imitate",
+            "honest"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 4
+          },
+          "hint": "Find a synonym for 'cunning'.",
+          "steps": [
+            {
+              "explain": "'Cunning' means clever in a sneaky or crafty way.",
+              "work": ""
+            },
+            {
+              "explain": "'Sly' has this meaning. 'Intelligent' is only clever (not sneaky); 'truthful' and 'honest' are opposites; 'imitate' means copy.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: sly.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "CUNNING",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q5",
+          "type": "mc",
+          "stem": "HAPPY is to HAPPIEST as SAD is to:",
+          "difficulty": "easy",
+          "options": [
+            "sad",
+            "sadder",
+            "saddest",
+            "happier",
+            "happiest"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 5
+          },
+          "hint": "Find the relationship in the first pair, then apply it to the second.",
+          "steps": [
+            {
+              "explain": "HAPPY → HAPPIEST: the word is changed to its superlative (the 'most' form).",
+              "work": ""
+            },
+            {
+              "explain": "Do the same to SAD: sad → saddest. 'Sadder' is the comparative, not the superlative.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: saddest.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "as",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q6",
+          "type": "mc",
+          "stem": "CLOTHES are to WARDROBE as ICE CUBES are to:",
+          "difficulty": "easy",
+          "options": [
+            "cold",
+            "freezer",
+            "fridge",
+            "drink",
+            "frozen"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 6
+          },
+          "hint": "Ask: where do we keep the first item?",
+          "steps": [
+            {
+              "explain": "CLOTHES are kept in a WARDROBE: the second word is where the first is stored.",
+              "work": ""
+            },
+            {
+              "explain": "ICE CUBES are kept in a freezer (a fridge keeps things cool but does not make ice cubes).",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: freezer.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "WARDROBE",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q7",
+          "type": "mc",
+          "stem": "DROUGHT is to SHORTAGE as FLOOD is to:",
+          "difficulty": "easy",
+          "options": [
+            "desert",
+            "damage",
+            "rain",
+            "excess",
+            "water"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 7
+          },
+          "hint": "Find how the first two words are linked.",
+          "steps": [
+            {
+              "explain": "DROUGHT is a SHORTAGE (of water): the second word is the idea of 'not enough'.",
+              "work": ""
+            },
+            {
+              "explain": "The opposite problem, a FLOOD, is an excess (too much) of water. 'Water' and 'rain' are what causes it, not the idea of too much.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option D: excess.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "SHORTAGE",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q8",
+          "type": "mc",
+          "stem": "GLOVE is to HAND as SOCK is to:",
+          "difficulty": "easy",
+          "options": [
+            "shoe",
+            "foot",
+            "toes",
+            "leg",
+            "pair"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 8
+          },
+          "hint": "What does each item cover or go on?",
+          "steps": [
+            {
+              "explain": "A GLOVE goes on a HAND.",
+              "work": ""
+            },
+            {
+              "explain": "A SOCK goes on a foot.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: foot.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "GLOVE",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q9",
+          "type": "mc",
+          "stem": "POEM is to POET as PERFORMANCE is to:",
+          "difficulty": "medium",
+          "options": [
+            "stage",
+            "music",
+            "entertainment",
+            "actor",
+            "painter"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 9
+          },
+          "hint": "Think of who does the first thing.",
+          "steps": [
+            {
+              "explain": "A POEM is written by a POET: the second word is the person who creates the first.",
+              "work": ""
+            },
+            {
+              "explain": "A PERFORMANCE is given by an actor. A painter makes paintings, not performances.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option D: actor.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "POEM",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q10",
+          "type": "mc",
+          "stem": "Please select TWO options which together most strongly suggest that: YESTERDAY WAS SUNDAY.\n\n1: Geoff had yesterday off from school.\n2: Yesterday was not Monday.\n3: Holly had her dancing concert last night.\n4: Geoff does not have to go to school on the weekend.\n5: Holly's dancing concert was on the day after Saturday.",
+          "difficulty": "medium",
+          "options": [
+            "1 & 2",
+            "3 & 5",
+            "2 & 4",
+            "2 & 3",
+            "2 & 5"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 10
+          },
+          "hint": "Look for two statements that, together, make 'yesterday was Sunday' very likely.",
+          "steps": [
+            {
+              "explain": "Statement 3 says Holly's concert was last night.",
+              "work": ""
+            },
+            {
+              "explain": "Statement 5 says the concert was on the day after Saturday, which is Sunday. Together they show yesterday (last night) was Sunday.",
+              "work": ""
+            },
+            {
+              "explain": "The other pairs are true about Geoff or about not being Monday, but do not point to Sunday.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: 3 & 5.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "YESTERDAY WAS SUNDAY",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q11",
+          "type": "mc",
+          "stem": "Please select TWO options which together most strongly suggest that: KELLY IS HAPPY.\n\n1: Kelly is happy when she can play with her big sister Susan.\n2: Kelly is smiling.\n3: Kelly is not sad.\n4: Kelly is playing games with Susan.\n5: Kelly is not crying.",
+          "difficulty": "medium",
+          "options": [
+            "2 & 5",
+            "2 & 3",
+            "1 & 4",
+            "2 & 4",
+            "1 & 5"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 11
+          },
+          "hint": "Choose two statements that each say Kelly is happy in different ways.",
+          "steps": [
+            {
+              "explain": "Statement 1 only says when Kelly is happy, not that she is happy now. Statement 4 just says she is playing.",
+              "work": ""
+            },
+            {
+              "explain": "Statements 2 (smiling) and 5 (not crying) are both signs of being happy and together suggest it most strongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: 1 & 4.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "KELLY IS HAPPY",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q12",
+          "type": "mc",
+          "stem": "Please select TWO options which together most strongly suggest that: FRANK IS WEARING BLUE JEANS.\n\n1: Frank's favourite pants are his blue jeans.\n2: Frank is wearing a red jumper.\n3: Colin is wearing his blue jeans.\n4: Colin is wearing a red jumper.\n5: Frank is wearing the same pants as Colin.",
+          "difficulty": "medium",
+          "options": [
+            "3 & 5",
+            "1 & 5",
+            "1 & 2",
+            "2 & 4",
+            "1 & 3"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 12
+          },
+          "hint": "Which two statements together tell us Frank wears blue jeans?",
+          "steps": [
+            {
+              "explain": "Statement 3 says Colin is wearing blue jeans.",
+              "work": ""
+            },
+            {
+              "explain": "Statement 5 says Frank wears the same pants as Colin. So Frank wears blue jeans.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: 3 & 5.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "FRANK IS WEARING BLUE JEANS",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q13",
+          "type": "mc",
+          "stem": "Four of the following words are alike in some way. Which of the following words is the odd one out?",
+          "difficulty": "medium",
+          "options": [
+            "wet",
+            "damp",
+            "soaked",
+            "sodden",
+            "dry"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 13
+          },
+          "hint": "Look for the word that does not fit the group.",
+          "steps": [
+            {
+              "explain": "Wet, damp, soaked and sodden all mean having water on or in something.",
+              "work": ""
+            },
+            {
+              "explain": "'Dry' means the opposite, so it is the odd one out.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option E: dry.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "odd one out",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q14",
+          "type": "mc",
+          "stem": "Four of the following words are alike in some way. Which of the following words is the odd one out?",
+          "difficulty": "medium",
+          "options": [
+            "mountain",
+            "flat",
+            "hill",
+            "dune",
+            "rise"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 14
+          },
+          "hint": "Which word is not a raised piece of land?",
+          "steps": [
+            {
+              "explain": "Mountain, hill, dune and rise are all raised areas of land.",
+              "work": ""
+            },
+            {
+              "explain": "'Flat' is level land, so it is the odd one out.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: flat.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "odd one out",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q15",
+          "type": "mc",
+          "stem": "Four of the following words are alike in some way. Which of the following words is the odd one out?",
+          "difficulty": "medium",
+          "options": [
+            "difficult",
+            "straightforward",
+            "easy",
+            "uncomplicated",
+            "simple"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 15
+          },
+          "hint": "Look for the word that is not like the others.",
+          "steps": [
+            {
+              "explain": "Straightforward, easy, uncomplicated and simple all mean not hard.",
+              "work": ""
+            },
+            {
+              "explain": "'Difficult' means the opposite.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: difficult.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "odd one out",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q16",
+          "type": "mc",
+          "stem": "Box A is bigger than box C. Box E is smaller than box V but bigger than box P. If box P is bigger than box A, which is true?",
+          "difficulty": "medium",
+          "options": [
+            "Box A is the biggest box.",
+            "Box P is the smallest box",
+            "Boxes E and P are the second and third largest boxes.",
+            "Boxes C and V are the second and third largest boxes.",
+            "Box C is the second smallest box."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 16
+          },
+          "hint": "Write the boxes in order of size.",
+          "steps": [
+            {
+              "explain": "Given: A > C, V > E > P, and P > A.",
+              "work": ""
+            },
+            {
+              "explain": "Put them together: V > E > P > A > C.",
+              "work": ""
+            },
+            {
+              "explain": "So E and P are the second and third largest boxes.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: Boxes E and P are the second and third largest boxes..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "box",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q17",
+          "type": "mc",
+          "stem": "The local swimming complex is 5 km north of Brett's home, and 5 km east of his friend Julie's house. Brett's grandmother lives 6 kms north of Helen, who lives 1 km west of Brett. Whose house is closest to the swimming complex?",
+          "difficulty": "medium",
+          "options": [
+            "Brett",
+            "Julie",
+            "Brett's grandmother",
+            "Helen",
+            "Helen and Brett's houses are both closest."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 17
+          },
+          "hint": "Put Brett's home at a starting point and use north (up) and east (right).",
+          "steps": [
+            {
+              "explain": "Take Brett's home as the origin. The swimming complex is 5 km north of Brett: it is 5 km directly above him.",
+              "work": ""
+            },
+            {
+              "explain": "Julie lives 5 km west of the complex (the complex is 5 km east of her). Helen lives 1 km west of Brett. Brett's grandmother lives 6 km north of Helen, so she is 1 km west and 6 km north of Brett.",
+              "work": ""
+            },
+            {
+              "explain": "Distances to the complex: Brett 5 km; Julie 5 km; Helen is 1 km west and 5 km south of it, about 5.1 km; Brett's grandmother is only 1 km west and 1 km north of it, about 1.4 km. Brett's grandmother is closest.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: Brett's grandmother.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "swimming complex",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q18",
+          "type": "mc",
+          "stem": "In a recent soccer training exercise the coach announced that the player to kick the first goal would receive a prize. Ken kicked a goal before Max but not before Joey. Billy kicked his goal before Matthew and Luke but not before Max. Who received the prize?",
+          "difficulty": "medium",
+          "options": [
+            "Joey",
+            "Billy",
+            "Craig",
+            "Ken",
+            "Matthew"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 18
+          },
+          "hint": "Order the goals from first to last.",
+          "steps": [
+            {
+              "explain": "Ken before Max, and Ken not before Joey: so Joey kicked before Ken (Joey < Ken < Max).",
+              "work": ""
+            },
+            {
+              "explain": "Billy before Matthew and Luke but not before Max: so Max came before Billy (Max < Billy).",
+              "work": ""
+            },
+            {
+              "explain": "Order: Joey, Ken, Max, Billy, then Matthew and Luke. Joey was first.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: Joey.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prize",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q19",
+          "type": "mc",
+          "stem": "George is a baker and works at his own bakery. Over the years, he has noticed that some items sell better than others. That is, doughnuts sell better than cakes but not as well as meat pies. Sausage rolls sell less well than doughnuts but better than cakes, and fresh bread sells less well than cakes. To avoid wasting unsold products he has started baking more of the popular items and less of the unpopular items. What product should George bake the most of?",
+          "difficulty": "medium",
+          "options": [
+            "meat pies",
+            "doughnuts",
+            "sausage rolls",
+            "cakes",
+            "fresh bread"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 19
+          },
+          "hint": "Order the products by how well they sell.",
+          "steps": [
+            {
+              "explain": "Meat pies > doughnuts > cakes, and doughnuts > sausage rolls > cakes > fresh bread.",
+              "work": ""
+            },
+            {
+              "explain": "Combine: meat pies > doughnuts > sausage rolls > cakes > fresh bread.",
+              "work": ""
+            },
+            {
+              "explain": "He should bake the most of the best seller: meat pies.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: meat pies.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "most of",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-verbal-t2-q20",
+          "type": "mc",
+          "stem": "Renee has an older sister, a younger sister and a twin brother. All four children have a bike. The oldest has a green bike, the red bike does not belong to the twins, the purple bike does not belong to a boy, and the black bike does not belong to a girl. What colour is Renee's bike?",
+          "difficulty": "medium",
+          "options": [
+            "green",
+            "purple",
+            "black",
+            "red",
+            "none of these"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Verbal Reasoning",
+            "number": 20
+          },
+          "hint": "Use the clues to match each bike to a person.",
+          "steps": [
+            {
+              "explain": "Renee has an older sister, a younger sister and a twin brother. The oldest (older sister) has the green bike.",
+              "work": ""
+            },
+            {
+              "explain": "The black bike does not belong to a girl, so it belongs to the brother; the red bike is not the twins', so red belongs to the younger sister. The purple bike is not a boy's, so purple is Renee's.",
+              "work": ""
+            },
+            {
+              "explain": "Renee's bike is purple.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: purple.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What colour",
+              "note": "Work out the relationship or meaning first, then test each option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        }
+      ]
     },
     {
       "topicId": "sch-acer-edutest-numerical",
       "code": "",
       "title": "Edutest Numerical Reasoning",
-      "questions": []
+      "questions": [
+        {
+          "id": "sch-acer-edutest-numerical-t2-q1",
+          "type": "mc",
+          "stem": "The first set of items in this Numerical Reasoning Test are called Number Series. The idea is to find a pattern when looking at each series of numbers. In each series, you will find one or more numbers missing, and in place of the missing number or numbers will be a question mark (?). In your answer, you will need to indicate which number (or numbers) should be in place of the question mark.\n\nFind the missing number in this series:\n\n4, 200, 8, ?, 12, 100, 16, 50, 20, 0",
+          "difficulty": "easy",
+          "options": [
+            "150",
+            "175",
+            "10",
+            "11",
+            "50"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 1
+          },
+          "hint": "Split the series into two interleaved patterns.",
+          "steps": [
+            {
+              "explain": "Look at the 1st, 3rd, 5th... numbers: 4, 8, 12, 16, 20: add 4 each time.",
+              "work": ""
+            },
+            {
+              "explain": "The other numbers: 200, ?, 100, 50, 0: take away 50 each time. So ? = 150.",
+              "work": "\\(200-50=150\\)"
+            },
+            {
+              "explain": "So the answer is option A: 150.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q2",
+          "type": "mc",
+          "stem": "Find the missing number in this series:\n\n40, ?, 38, 31, 36, 29, 34",
+          "difficulty": "easy",
+          "options": [
+            "39",
+            "33",
+            "35",
+            "37",
+            "45"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 2
+          },
+          "hint": "Split the series into two interleaved patterns.",
+          "steps": [
+            {
+              "explain": "1st, 3rd, 5th, 7th numbers: 40, 38, 36, 34: take away 2.",
+              "work": ""
+            },
+            {
+              "explain": "2nd, 4th, 6th: ?, 31, 29: take away 2 each time, so the ? is 33.",
+              "work": "\\(31+2=33\\)"
+            },
+            {
+              "explain": "So the answer is option B: 33.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q3",
+          "type": "mc",
+          "stem": "Find the two missing numbers in this series:\n\n5, 6, 8, ?, 15, 20, 26, ?",
+          "difficulty": "easy",
+          "options": [
+            "11 & 33",
+            "12 & 33",
+            "11 & 34",
+            "12 & 34",
+            "11 & 32"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 3
+          },
+          "hint": "Look at the differences between neighbours.",
+          "steps": [
+            {
+              "explain": "Differences: 6−5=1, 8−6=2, then ?−8, 15−?, 20−15=5, 26−20=6.",
+              "work": ""
+            },
+            {
+              "explain": "The differences go up by 1 each time: 1, 2, 3, 4, 5, 6.",
+              "work": ""
+            },
+            {
+              "explain": "So the first ? is 8+3=11 and the last ? is 26+7=33.",
+              "work": "\\(8+3=11,\\ 26+7=33\\)"
+            },
+            {
+              "explain": "So the answer is option A: 11 & 33.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two missing numbers",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q4",
+          "type": "mc",
+          "stem": "Find the two missing numbers in this series:\n\n6, ?, 8, 5, 10, 7, ?, 9",
+          "difficulty": "easy",
+          "options": [
+            "3 & 11",
+            "4 & 12",
+            "3 & 12",
+            "4 & 11",
+            "4 & 13"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 4
+          },
+          "hint": "Split the series into two interleaved patterns.",
+          "steps": [
+            {
+              "explain": "1st, 3rd, 5th, 7th numbers: 6, 8, 10, ?: add 2, so ? = 12.",
+              "work": ""
+            },
+            {
+              "explain": "2nd, 4th, 6th, 8th numbers: ?, 5, 7, 9: add 2, so ? = 3.",
+              "work": "\\(\\text{3 and 12}\\)"
+            },
+            {
+              "explain": "So the answer is option C: 3 & 12.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two missing numbers",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q5",
+          "type": "mc",
+          "stem": "Find the missing number in this series:\n\nZ, 6, Y, 9, X, 12, W, ?, V",
+          "difficulty": "easy",
+          "options": [
+            "12",
+            "18",
+            "9",
+            "15",
+            "5"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 5
+          },
+          "hint": "There are letters and numbers mixed.",
+          "steps": [
+            {
+              "explain": "The letters go Z, Y, X, W, V (backwards).",
+              "work": ""
+            },
+            {
+              "explain": "The numbers are 6, 9, 12, ?: add 3 each time, so the next is 15.",
+              "work": "\\(12+3=15\\)"
+            },
+            {
+              "explain": "So the answer is option D: 15.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q6",
+          "type": "mc",
+          "stem": "Find the missing number in this series:\n\n15, 13, 11, 9, 7, 5, 3, ?",
+          "difficulty": "easy",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "0",
+            "1"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 6
+          },
+          "hint": "Look at the difference between neighbours.",
+          "steps": [
+            {
+              "explain": "15, 13, 11, 9, 7, 5, 3: take away 2 each time.",
+              "work": ""
+            },
+            {
+              "explain": "The next number is 3 − 2 = 1.",
+              "work": "\\(3-2=1\\)"
+            },
+            {
+              "explain": "So the answer is option E: 1.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q7",
+          "type": "mc",
+          "stem": "Find the missing number in this series:\n\n20, 10, 18, ?, 16, 6, 14",
+          "difficulty": "easy",
+          "options": [
+            "8",
+            "9",
+            "7",
+            "10",
+            "12"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 7
+          },
+          "hint": "Split the series into two interleaved patterns.",
+          "steps": [
+            {
+              "explain": "1st, 3rd, 5th, 7th numbers: 20, 18, 16, 14: take away 2.",
+              "work": ""
+            },
+            {
+              "explain": "2nd, 4th, 6th numbers: 10, ?, 6: take away 2, so ? = 8.",
+              "work": "\\(10-2=8\\)"
+            },
+            {
+              "explain": "So the answer is option A: 8.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q8",
+          "type": "mc",
+          "stem": "NUMBER MATRICES\n\nThe next set of items is referred to as Number Matrices. The idea is to find patterns in each matrix, by looking for what happens to numbers as they go down or across. In each matrix you will find one or more numbers missing – however, the only missing number you need to find is the one in the square with the question mark. The numbers in the grid go together in a certain way. Which number should be in the square marked by the question mark?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">10</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">20</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">20</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">30</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">40</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">30</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">40</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">50</text></svg>"
+          },
+          "options": [
+            "30",
+            "40",
+            "50",
+            "20",
+            "10"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 8
+          },
+          "hint": "Look at what happens across a row.",
+          "steps": [
+            {
+              "explain": "Row 1 goes 10, 20, ?. Row 2 goes 20, 30, 40: add 10 each step.",
+              "work": ""
+            },
+            {
+              "explain": "So the ? is 20 + 10 = 30.",
+              "work": "\\(20+10=30\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">10</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">20</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#fde68a\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">20</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">30</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">40</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">30</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">40</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">50</text></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is option A: 30.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "question mark",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q9",
+          "type": "mc",
+          "stem": "NUMBER MATRICES\n\nThe numbers in the grid go together in a certain way. Which number should be in the square marked by the question mark?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">28</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">24</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">20</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">14</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">6</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">7</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">3</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">−1</text></svg>"
+          },
+          "options": [
+            "4",
+            "11",
+            "12",
+            "5",
+            "10"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 9
+          },
+          "hint": "Look at the first row and the last row.",
+          "steps": [
+            {
+              "explain": "Row 1: 28, 24, 20: take away 4 each step. Row 3: 7, 3, −1: take away 4 each step.",
+              "work": ""
+            },
+            {
+              "explain": "Row 2: 14, ?, 6: take away 4 twice makes 8 in all, 14 − 4 = 10, 10 − 4 = 6.",
+              "work": "\\(14-4=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">28</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">24</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">20</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">14</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#fde68a\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">6</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">7</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">3</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">−1</text></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is option E: 10.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "question mark",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q10",
+          "type": "mc",
+          "stem": "NUMBER MATRICES\n\nThe numbers in the grid go together in a certain way. The * has been placed in one square to hide the number underneath. Which number should be in the square marked by the question mark?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">13</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">11</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">15</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">*</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">11</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">17</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">15</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">13</text></svg>"
+          },
+          "options": [
+            "9",
+            "15",
+            "17",
+            "7",
+            "10"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 10
+          },
+          "hint": "Look at how each row changes.",
+          "steps": [
+            {
+              "explain": "Row 1: 13, 11, ?: take away 2 each step, so ? = 9. Row 3: 17, 15, 13 confirms take away 2.",
+              "work": ""
+            },
+            {
+              "explain": "Row 2: 15, *, 11 has * = 13 (15 − 2).",
+              "work": ""
+            },
+            {
+              "explain": "So the number in the ? square is 9.",
+              "work": "\\(11-2=9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">13</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">11</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#fde68a\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">15</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">*</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">11</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">17</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">15</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">13</text></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is option A: 9.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "question mark",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q11",
+          "type": "mc",
+          "stem": "NUMBER MATRICES\n\nWhich number should be in the square marked by the question mark?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">13</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">11</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">12</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">10</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">8</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">9</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">7</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">5</text></svg>"
+          },
+          "options": [
+            "13",
+            "11",
+            "15",
+            "17",
+            "10"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 11
+          },
+          "hint": "Look at the second row and the third row.",
+          "steps": [
+            {
+              "explain": "Row 2: 12, 10, 8 and Row 3: 9, 7, 5: take away 2 each step.",
+              "work": ""
+            },
+            {
+              "explain": "Row 1: ?, 13, 11: take away 2 each step, so ? = 13 + 2 = 15.",
+              "work": "\\(13+2=15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#fde68a\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">13</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">11</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">12</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">10</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">8</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">9</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">7</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">5</text></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is option C: 15.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "question mark",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q12",
+          "type": "mc",
+          "stem": "NUMBER MATRICES\n\nThe numbers in the grid go together in a certain way. The * has been placed in two squares to hide the numbers underneath. Which number should be in the square marked by the question mark?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">2</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">*</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">8</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">4</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#fef3c7\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">16</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">6</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">12</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">*</text></svg>"
+          },
+          "options": [
+            "15",
+            "8",
+            "11",
+            "12",
+            "20"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 12
+          },
+          "hint": "Look at how each row grows.",
+          "steps": [
+            {
+              "explain": "Row 3 is 6, 12, *. Row 1 is 2, *, 8: the numbers in each row are multiplied by the same amount each step.",
+              "work": ""
+            },
+            {
+              "explain": "Row 2 is 4, ?, 16. If we multiply by 2 each step: 4 × 2 = 8 and 8 × 2 = 16. This also fits row 1 (2, 4, 8) and row 3 (6, 12, 24).",
+              "work": "\\(4\\times2=8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">2</text><rect x=\"80\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">*</text><rect x=\"140\" y=\"10\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">8</text><rect x=\"20\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">4</text><rect x=\"80\" y=\"70\" width=\"60\" height=\"60\" fill=\"#fde68a\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#b45309\">?</text><rect x=\"140\" y=\"70\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">16</text><rect x=\"20\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"50.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">6</text><rect x=\"80\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"110.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">12</text><rect x=\"140\" y=\"130\" width=\"60\" height=\"60\" fill=\"#dbeafe\" fill-opacity=\"0.8\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"170.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"20\" font-weight=\"700\" fill=\"#1e293b\">*</text></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is option B: 8.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "question mark",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q13",
+          "type": "mc",
+          "stem": "If Betty cuts a tomato into four pieces, another tomato into eight pieces and another tomato into ten pieces, how many pieces of tomato will she have?",
+          "difficulty": "medium",
+          "options": [
+            "28",
+            "18",
+            "20",
+            "22",
+            "24"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 13
+          },
+          "hint": "Cut each tomato into pieces, then add all the pieces.",
+          "steps": [
+            {
+              "explain": "The tomatoes give 4, 8 and 10 pieces.",
+              "work": ""
+            },
+            {
+              "explain": "Add them.",
+              "work": "\\(4+8+10=22\\)"
+            },
+            {
+              "explain": "So the answer is option D: 22.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "tomato",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q14",
+          "type": "mc",
+          "stem": "If a certain number plus 4 equals 16 then the value of that certain number is?",
+          "difficulty": "medium",
+          "options": [
+            "9",
+            "10",
+            "11",
+            "13",
+            "12"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 14
+          },
+          "hint": "Subtract 4 from 16 to undo the addition.",
+          "steps": [
+            {
+              "explain": "The statement is: number + 4 = 16.",
+              "work": ""
+            },
+            {
+              "explain": "Number = 16 − 4.",
+              "work": "\\(16-4=12\\)"
+            },
+            {
+              "explain": "So the answer is option E: 12.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "plus 4 equals 16",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q15",
+          "type": "mc",
+          "stem": "There are three containers of biscuits, each with an equal number of biscuits each. All together there are nine chocolate biscuits and twelve lemon biscuits. Container A's biscuits are all the same flavour. Container B has three chocolate biscuits. How many lemon biscuits does Container C have?",
+          "difficulty": "medium",
+          "options": [
+            "1",
+            "4",
+            "6",
+            "8",
+            "7"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 15
+          },
+          "hint": "Find the number of biscuits in each container first.",
+          "steps": [
+            {
+              "explain": "There are 9 + 12 = 21 biscuits in 3 equal containers, so each holds 7.",
+              "work": "\\(21\\div3=7\\)"
+            },
+            {
+              "explain": "Container B has 3 chocolate, so 4 lemon. Container A is one flavour: if A were chocolate, chocolate would total 10, which is too many; so A is all lemon (7 lemon).",
+              "work": "\\(7+4=11\\text{ lemon so far}\\)"
+            },
+            {
+              "explain": "Total lemon is 12, so Container C has 12 − 11 = 1 lemon.",
+              "work": "\\(12-11=1\\)"
+            },
+            {
+              "explain": "So the answer is option A: 1.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Container C",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q16",
+          "type": "mc",
+          "stem": "If Beatrice had one more apple she would have three times the amount of Bella. If she had six fewer apples she would have one less apple than Bella. How many apples does Beatrice have?",
+          "difficulty": "medium",
+          "options": [
+            "11",
+            "9",
+            "8",
+            "5",
+            "6"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 16
+          },
+          "hint": "Let Bella have b apples and Beatrice a. Write two equations.",
+          "steps": [
+            {
+              "explain": "a + 1 = 3 × b and a − 6 = b − 1, so a = b + 5.",
+              "work": ""
+            },
+            {
+              "explain": "Put the second result into the first equation: six more than Bella equals three times Bella, so Bella has 3 apples.",
+              "work": "\\(b+6=3b\\Rightarrow b=3\\)"
+            },
+            {
+              "explain": "Beatrice has a = b + 5 = 8 apples. Check: 8+1=9=3×3, and 8−6=2=3−1.",
+              "work": "\\(a=3+5=8\\)"
+            },
+            {
+              "explain": "So the answer is option C: 8.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Beatrice",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q17",
+          "type": "mc",
+          "stem": "Brett's little brother takes two bites of his food to every one of Jake's bites. If Jake takes three bites and then one more, how many will Brett's little brother need to take to keep up?",
+          "difficulty": "medium",
+          "options": [
+            "7",
+            "8",
+            "6",
+            "5",
+            "9"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 17
+          },
+          "hint": "Make a ratio: Brett's brother bites twice for each of Jake's.",
+          "steps": [
+            {
+              "explain": "Jake takes 3 + 1 = 4 bites in all.",
+              "work": "\\(3+1=4\\)"
+            },
+            {
+              "explain": "The little brother takes twice as many.",
+              "work": "\\(4\\times2=8\\)"
+            },
+            {
+              "explain": "So the answer is option B: 8.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "two bites",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q18",
+          "type": "mc",
+          "stem": "Dresses cost \\(\\$6\\). How many dresses can I buy if I have \\(\\$25\\)?",
+          "difficulty": "medium",
+          "options": [
+            "6",
+            "3",
+            "5",
+            "4",
+            "7"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 18
+          },
+          "hint": "Divide 25 by 6 and round down (you cannot buy part of a dress).",
+          "steps": [
+            {
+              "explain": "25 ÷ 6 = 4 remainder 1.",
+              "work": "\\(6\\times4=24\\)"
+            },
+            {
+              "explain": "4 dresses cost 24 and 5 would cost 30 (too much), so I can buy 4 dresses.",
+              "work": "\\(6\\times5=30>25\\)"
+            },
+            {
+              "explain": "So the answer is option D: 4.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "dresses",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q19",
+          "type": "mc",
+          "stem": "My office clock is 15 minutes fast. If my office clock says it is 5pm, what will be the real time be in 5 minutes from now?",
+          "difficulty": "medium",
+          "options": [
+            "5.05pm",
+            "4.50pm",
+            "5.15pm",
+            "4.55pm",
+            "5.00pm"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 19
+          },
+          "hint": "The clock runs fast, so the real time is earlier than the clock.",
+          "steps": [
+            {
+              "explain": "Clock = real time + 15 minutes. If the clock says 5:00 pm, the real time is 4:45 pm.",
+              "work": "\\(5{:}00-15\\text{ min}=4{:}45\\)"
+            },
+            {
+              "explain": "In 5 minutes the real time will be 4:50 pm.",
+              "work": "\\(4{:}45+5=4{:}50\\)"
+            },
+            {
+              "explain": "So the answer is option B: 4.50pm.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "office clock",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-numerical-t2-q20",
+          "type": "mc",
+          "stem": "A milk chocolate bar costs three times as much as a packet of mixed lollies. I can buy three packets of chips for the same price as a chocolate bar. If a packet of chips costs \\(\\$3\\), how much will one chocolate bar cost me?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\$9\\)",
+            "\\(\\$6\\)",
+            "\\(\\$12\\)",
+            "\\(\\$1\\)",
+            "\\(\\$8\\)"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Numerical Reasoning",
+            "number": 20
+          },
+          "hint": "Work out the chocolate bar price from the chips.",
+          "steps": [
+            {
+              "explain": "Three packets of chips cost the same as one chocolate bar.",
+              "work": "\\(3\\times\\$3=\\$9\\)"
+            },
+            {
+              "explain": "So one chocolate bar costs dollars 9. (The lollies are dollars 9 ÷ 3 = dollars 3, which also works.)",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: \\(\\$9\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "chocolate bar",
+              "note": "Look for the rule: a constant step, two interleaved patterns, or changing differences."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        }
+      ]
     },
     {
       "topicId": "sch-acer-edutest-maths",
       "code": "",
       "title": "Edutest Mathematics",
-      "questions": []
+      "questions": [
+        {
+          "id": "sch-acer-edutest-maths-t2-q1",
+          "type": "mc",
+          "stem": "46 + 62 + 25 =",
+          "difficulty": "easy",
+          "options": [
+            "123",
+            "133",
+            "233",
+            "134",
+            "144"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 1
+          },
+          "hint": "Add the numbers.",
+          "steps": [
+            {
+              "explain": "Add 46 and 62 first, then add 25.",
+              "work": "\\(46+62=108\\)"
+            },
+            {
+              "explain": "108 + 25 = 133.",
+              "work": "\\(108+25=133\\)"
+            },
+            {
+              "explain": "So the answer is option B: 133.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "46 + 62 + 25",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q2",
+          "type": "mc",
+          "stem": "How many months in 14 and a half years?",
+          "difficulty": "easy",
+          "options": [
+            "174",
+            "94",
+            "173",
+            "163",
+            "147"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 2
+          },
+          "hint": "There are 12 months in one year.",
+          "steps": [
+            {
+              "explain": "14 years is 14 × 12 months. Half a year is 6 months.",
+              "work": "\\(14\\times12=168\\)"
+            },
+            {
+              "explain": "168 + 6 = 174.",
+              "work": "\\(168+6=174\\)"
+            },
+            {
+              "explain": "So the answer is option A: 174.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "14 and a half years",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q3",
+          "type": "mc",
+          "stem": "Which is not a unit of length?",
+          "difficulty": "easy",
+          "options": [
+            "cm",
+            "mm",
+            "kg",
+            "km",
+            "m"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 3
+          },
+          "hint": "Units of length: mm, cm, m, km.",
+          "steps": [
+            {
+              "explain": "cm, mm, km and m are all units of length.",
+              "work": ""
+            },
+            {
+              "explain": "kg is a unit of mass (weight), so it is not a unit of length.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: kg.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "unit of length",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q4",
+          "type": "mc",
+          "stem": "\\(\\$18.69\\) divided by 3 =",
+          "difficulty": "easy",
+          "options": [
+            "$5.33",
+            "$5.23",
+            "$6.23",
+            "$5.13",
+            "$6.13"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 4
+          },
+          "hint": "Divide the dollars by 3.",
+          "steps": [
+            {
+              "explain": "18 ÷ 3 = 6 and 0.69 ÷ 3 = 0.23.",
+              "work": "\\(18.69\\div3=6.23\\)"
+            },
+            {
+              "explain": "So the answer is option C: $6.23.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "divided by 3",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q5",
+          "type": "mc",
+          "stem": "How many hundreds in 596520?",
+          "difficulty": "easy",
+          "options": [
+            "59652",
+            "59650",
+            "5965",
+            "5960",
+            "596.52"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 5
+          },
+          "hint": "A hundred is 100: remove the last two digits.",
+          "steps": [
+            {
+              "explain": "Dividing by 100 moves the decimal point two places to the left.",
+              "work": "\\(596520\\div100=5965.2\\)"
+            },
+            {
+              "explain": "So there are 5965 whole hundreds.",
+              "work": "\\(5965\\)"
+            },
+            {
+              "explain": "So the answer is option C: 5965.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "hundreds",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q6",
+          "type": "mc",
+          "stem": "275 divided into 25 equal parts =",
+          "difficulty": "easy",
+          "options": [
+            "12",
+            "11",
+            "10",
+            "9",
+            "8"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 6
+          },
+          "hint": "Divide 275 by 25.",
+          "steps": [
+            {
+              "explain": "25 × 10 = 250 and 25 × 1 = 25, so 25 × 11 = 275.",
+              "work": "\\(275\\div25=11\\)"
+            },
+            {
+              "explain": "So the answer is option B: 11.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "275 divided",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q7",
+          "type": "mc",
+          "stem": "210 - 27 - 56 =",
+          "difficulty": "easy",
+          "options": [
+            "137",
+            "127",
+            "147",
+            "117",
+            "107"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 7
+          },
+          "hint": "Subtract step by step.",
+          "steps": [
+            {
+              "explain": "210 − 27 = 183.",
+              "work": "\\(210-27=183\\)"
+            },
+            {
+              "explain": "183 − 56 = 127.",
+              "work": "\\(183-56=127\\)"
+            },
+            {
+              "explain": "So the answer is option B: 127.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "210 - 27 - 56",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q8",
+          "type": "mc",
+          "stem": "\\(8+6\\div2=\\)",
+          "difficulty": "easy",
+          "options": [
+            "7",
+            "10",
+            "8",
+            "11",
+            "14"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 8
+          },
+          "hint": "Use order of operations: divide before you add.",
+          "steps": [
+            {
+              "explain": "First 6 ÷ 2 = 3.",
+              "work": "\\(6\\div2=3\\)"
+            },
+            {
+              "explain": "Then 8 + 3 = 11.",
+              "work": "\\(8+3=11\\)"
+            },
+            {
+              "explain": "So the answer is option D: 11.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q9",
+          "type": "mc",
+          "stem": "\\(\\dfrac{156}{1000}\\) written as a decimal =",
+          "difficulty": "medium",
+          "options": [
+            "15.6",
+            "1.56",
+            "0.156",
+            "0.0156",
+            "156.00"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 9
+          },
+          "hint": "Thousandths: divide by 1000.",
+          "steps": [
+            {
+              "explain": "Dividing by 1000 moves the decimal point three places left.",
+              "work": "\\(156\\div1000=0.156\\)"
+            },
+            {
+              "explain": "So the answer is option C: 0.156.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "written as a decimal",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q10",
+          "type": "mc",
+          "stem": "163 × 4 =",
+          "difficulty": "medium",
+          "options": [
+            "553",
+            "551",
+            "651",
+            "653",
+            "652"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 10
+          },
+          "hint": "Multiply by 4 in parts.",
+          "steps": [
+            {
+              "explain": "160 × 4 = 640 and 3 × 4 = 12.",
+              "work": "\\(640+12\\)"
+            },
+            {
+              "explain": "640 + 12 = 652.",
+              "work": "\\(652\\)"
+            },
+            {
+              "explain": "So the answer is option E: 652.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "163 × 4",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q11",
+          "type": "mc",
+          "stem": "One hundred, four tenths and six hundredths written as a decimal is:",
+          "difficulty": "medium",
+          "options": [
+            "104.6",
+            "10.46",
+            "100.46",
+            "1046",
+            "10.046"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 11
+          },
+          "hint": "Hundreds: 100. Tenths: 0.4. Hundredths: 0.06.",
+          "steps": [
+            {
+              "explain": "100 + 0.4 + 0.06.",
+              "work": "\\(100+0.4+0.06=100.46\\)"
+            },
+            {
+              "explain": "So the answer is option C: 100.46.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "decimal",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q12",
+          "type": "mc",
+          "stem": "How many metres in 80000cm?",
+          "difficulty": "medium",
+          "options": [
+            "800",
+            "80",
+            "8",
+            "8000",
+            "880"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 12
+          },
+          "hint": "There are 100 centimetres in a metre.",
+          "steps": [
+            {
+              "explain": "Divide the centimetres by 100.",
+              "work": "\\(80000\\div100=800\\)"
+            },
+            {
+              "explain": "So the answer is option A: 800.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "metres",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q13",
+          "type": "mc",
+          "stem": "Which angle is likely to be 68 degrees?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 140\" width=\"100%\" height=\"auto\" style=\"max-width:620px;display:block;margin:0 auto\"><rect x=\"2\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"100\" x2=\"106\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"100\" x2=\"20.6\" y2=\"64.6\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M72,100 A16,16 0 0 0 44.7,88.7\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"60.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">A</text><rect x=\"126\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"100\" x2=\"190\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"100\" x2=\"140.0\" y2=\"50.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M150,100 v-10 h-10\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"184.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">B</text><rect x=\"250\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"264\" y1=\"100\" x2=\"314\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"264\" y1=\"100\" x2=\"305.0\" y2=\"71.3\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M280,100 A16,16 0 0 0 277.1,90.8\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"308.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">C</text><rect x=\"374\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"388\" y1=\"100\" x2=\"438\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"388\" y1=\"100\" x2=\"406.7\" y2=\"53.6\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M404,100 A16,16 0 0 0 394.0,85.2\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"432.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">D</text><rect x=\"498\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"552\" y1=\"100\" x2=\"602\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"552\" y1=\"100\" x2=\"502.5\" y2=\"93.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M568,100 A16,16 0 0 0 536.2,97.8\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"556.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">E</text></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 13
+          },
+          "hint": "68° is a bit less than 90° (a right angle) but clearly more than 45°.",
+          "steps": [
+            {
+              "explain": "A right angle is 90°. An angle of 68° is smaller than that, so it is acute and fairly wide: between 45° and 90°.",
+              "work": ""
+            },
+            {
+              "explain": "Compare the pictures: A is obtuse, B is a right angle, C is narrow (about 35°), D is slightly less than a right angle (about 68°), and E is almost flat. Angle D matches.",
+              "work": "",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 140\" width=\"100%\" height=\"auto\" style=\"max-width:620px;display:block;margin:0 auto\"><rect x=\"2\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"100\" x2=\"106\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"100\" x2=\"20.6\" y2=\"64.6\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M72,100 A16,16 0 0 0 44.7,88.7\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"60.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">A</text><rect x=\"126\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"100\" x2=\"190\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"100\" x2=\"140.0\" y2=\"50.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M150,100 v-10 h-10\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"184.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">B</text><rect x=\"250\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"264\" y1=\"100\" x2=\"314\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"264\" y1=\"100\" x2=\"305.0\" y2=\"71.3\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M280,100 A16,16 0 0 0 277.1,90.8\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"308.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">C</text><rect x=\"374\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#ecfdf5\" stroke=\"#047857\" stroke-width=\"3\"/><line x1=\"388\" y1=\"100\" x2=\"438\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"388\" y1=\"100\" x2=\"406.7\" y2=\"53.6\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M404,100 A16,16 0 0 0 394.0,85.2\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"432.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#047857\">D</text><rect x=\"498\" y=\"8\" width=\"116\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"552\" y1=\"100\" x2=\"602\" y2=\"100\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"552\" y1=\"100\" x2=\"502.5\" y2=\"93.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M568,100 A16,16 0 0 0 536.2,97.8\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.6\"/><text x=\"556.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\">E</text></svg>"
+              }
+            },
+            {
+              "explain": "So the answer is option D: D.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "68 degrees",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q14",
+          "type": "mc",
+          "stem": "The perimeter of this shape is?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 150\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"60,30 204,30 204,90 264,90 264,150 60,150\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"132.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">24 cm</text><text x=\"52.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">20 cm</text><text x=\"234.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">10 cm</text><text x=\"272.0\" y=\"124.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">10 cm</text></svg>"
+          },
+          "options": [
+            "64cm",
+            "108cm",
+            "84cm",
+            "98cm"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 14
+          },
+          "hint": "The perimeter is the distance all the way round.",
+          "steps": [
+            {
+              "explain": "The top is 24 cm and the step across is 10 cm, so the bottom edge is 24 + 10 = 34 cm. The left side is 20 cm.",
+              "work": "\\(24+10=34\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 150\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"60\" y=\"30\" width=\"204\" height=\"120\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><polygon points=\"60,30 204,30 204,90 264,90 264,150 60,150\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"162.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#92400e\">34 cm (24 + 10)</text><text x=\"52.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#92400e\">20 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Going round an L-shape that is a 34 by 20 rectangle with a corner cut out, the perimeter equals the perimeter of the whole 34 by 20 rectangle (the cut-out corner replaces the same length of edge).",
+              "work": "\\(2\\times(34+20)=108\\text{ cm}\\)"
+            },
+            {
+              "explain": "So the answer is option B: 108cm.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q15",
+          "type": "mc",
+          "stem": "The area of this shape is?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 150\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"60,30 204,30 204,90 264,90 264,150 60,150\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"132.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">24 cm</text><text x=\"52.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">20 cm</text><text x=\"234.0\" y=\"82.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">10 cm</text><text x=\"272.0\" y=\"124.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">10 cm</text></svg>"
+          },
+          "options": [
+            "480cm²",
+            "500cm²",
+            "580cm²",
+            "680cm²",
+            "440cm²"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 15
+          },
+          "hint": "Split the L-shape into two rectangles.",
+          "steps": [
+            {
+              "explain": "Top rectangle: 24 cm by 10 cm.",
+              "work": "\\(24\\times10=240\\)"
+            },
+            {
+              "explain": "Bottom rectangle: 34 cm by 10 cm.",
+              "work": "\\(34\\times10=340\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 150\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><rect x=\"60\" y=\"30\" width=\"144\" height=\"60\" fill=\"#fde68a\" fill-opacity=\"0.8\" stroke=\"#d97706\" stroke-width=\"2.5\"/><rect x=\"60\" y=\"90\" width=\"204\" height=\"60\" fill=\"#bbf7d0\" fill-opacity=\"0.8\" stroke=\"#047857\" stroke-width=\"2.5\"/><text x=\"132.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#92400e\">24 × 10 = 240</text><text x=\"162.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#065f46\">34 × 10 = 340</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two areas.",
+              "work": "\\(240+340=580\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "So the answer is option C: 580cm².",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "area",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q16",
+          "type": "mc",
+          "stem": "7.3 + 2.6 + 3.9 =",
+          "difficulty": "medium",
+          "options": [
+            "13.8",
+            "12.8",
+            "12.1",
+            "11.6",
+            "11.1"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 16
+          },
+          "hint": "Add the decimals, lining up the points.",
+          "steps": [
+            {
+              "explain": "7.3 + 2.6 = 9.9.",
+              "work": "\\(7.3+2.6=9.9\\)"
+            },
+            {
+              "explain": "9.9 + 3.9 = 13.8.",
+              "work": "\\(9.9+3.9=13.8\\)"
+            },
+            {
+              "explain": "So the answer is option A: 13.8.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "7.3 + 2.6 + 3.9",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q17",
+          "type": "mc",
+          "stem": "875 divided 25 =",
+          "difficulty": "medium",
+          "options": [
+            "335",
+            "35",
+            "34",
+            "36",
+            "32"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 17
+          },
+          "hint": "Divide 875 by 25.",
+          "steps": [
+            {
+              "explain": "25 × 30 = 750; 875 − 750 = 125; 125 ÷ 25 = 5.",
+              "work": "\\(30+5=35\\)"
+            },
+            {
+              "explain": "So the answer is option B: 35.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "875 divided 25",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q18",
+          "type": "mc",
+          "stem": "If \\(\\$-83=251\\), then \\(\\$\\) equals?",
+          "difficulty": "medium",
+          "options": [
+            "342",
+            "242",
+            "442",
+            "324",
+            "334"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 18
+          },
+          "hint": "Add 83 to both sides to undo the subtraction.",
+          "steps": [
+            {
+              "explain": "$ − 83 = 251, so $ = 251 + 83.",
+              "work": "\\(251+83=334\\)"
+            },
+            {
+              "explain": "So the answer is option E: 334.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "then",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q19",
+          "type": "mc",
+          "stem": "\\(\\dfrac{81}{9}-\\dfrac{24}{3}=\\)",
+          "difficulty": "medium",
+          "options": [
+            "1",
+            "0",
+            "81",
+            "10",
+            "5"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 19
+          },
+          "hint": "Simplify each fraction first.",
+          "steps": [
+            {
+              "explain": "81 ÷ 9 = 9 and 24 ÷ 3 = 8.",
+              "work": "\\(9-8=1\\)"
+            },
+            {
+              "explain": "So the answer is option A: 1.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "dfrac",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-maths-t2-q20",
+          "type": "mc",
+          "stem": "\\(\\dfrac{3}{6}+\\dfrac{4}{6}+\\dfrac{4}{12}=\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{13}{6}\\)",
+            "\\(\\dfrac{9}{6}\\)",
+            "\\(\\dfrac{13}{24}\\)",
+            "\\(\\dfrac{28}{5}\\)",
+            "\\(\\dfrac{12}{6}\\)"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Mathematics",
+            "number": 20
+          },
+          "hint": "Use a common denominator of 12.",
+          "steps": [
+            {
+              "explain": "Change sixths to twelfths: multiply the top and bottom by 2.",
+              "work": "\\(\\dfrac{3}{6}=\\dfrac{6}{12},\\ \\dfrac{4}{6}=\\dfrac{8}{12}\\)"
+            },
+            {
+              "explain": "Add the numerators and keep the denominator 12, then simplify by dividing top and bottom by 2.",
+              "work": "\\(\\dfrac{6+8+4}{12}=\\dfrac{18}{12}=\\dfrac{9}{6}\\)"
+            },
+            {
+              "explain": "So the answer is option B: \\(\\dfrac{9}{6}\\).",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "dfrac",
+              "note": "Do each calculation carefully step by step and check the answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        }
+      ]
     },
     {
       "topicId": "sch-acer-edutest-reading",
       "code": "",
       "title": "Edutest Reading Comprehension",
-      "questions": []
+      "questions": [
+        {
+          "id": "sch-acer-edutest-reading-t2-q1",
+          "type": "mc",
+          "stem": "Select the option which will best replace the words underlined in the sentence to make it correct.\n\nWhen we went to the supermarket, the man [giving us our] change.",
+          "difficulty": "easy",
+          "options": [
+            "gave us our",
+            "give us our",
+            "giving our",
+            "gave them our",
+            "gived us our"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 1
+          },
+          "hint": "The sentence needs a past-tense verb.",
+          "steps": [
+            {
+              "explain": "'The man giving us our change' should be in the past tense after 'When we went...'.",
+              "work": ""
+            },
+            {
+              "explain": "'Gave us our' is the correct past-tense form.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: gave us our.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "supermarket",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q2",
+          "type": "mc",
+          "stem": "Select the option which will best replace the words underlined in the sentence to make it correct.\n\nOn the weekend [wear gone] to the carnival.",
+          "difficulty": "easy",
+          "options": [
+            "were going",
+            "we're going",
+            "where going",
+            "we're gone",
+            "where gone"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 2
+          },
+          "hint": "'We're' is short for 'we are'.",
+          "steps": [
+            {
+              "explain": "'Wear' (clothes) and 'where' (place) are the wrong words here; the sentence needs 'we are'.",
+              "work": ""
+            },
+            {
+              "explain": "'We're going to the carnival' is correct. 'We're gone' would mean they have already left.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: we're going.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "weekend",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q3",
+          "type": "mc",
+          "stem": "Select the option which will best replace the words underlined in the sentence to make it correct.\n\nNeil and Tracy [has to makes arrange] for the party.",
+          "difficulty": "easy",
+          "options": [
+            "has to makes arrangements",
+            "have to make arrange",
+            "have to make arrangements",
+            "has to make arrange",
+            "have arranging"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 3
+          },
+          "hint": "Match the verb to the subject (Neil and Tracy is plural).",
+          "steps": [
+            {
+              "explain": "'Neil and Tracy' is plural, so 'have' not 'has'.",
+              "work": ""
+            },
+            {
+              "explain": "'Make arrangements' is the correct phrase.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: have to make arrangements.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Neil and Tracy",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q4",
+          "type": "mc",
+          "stem": "Select the option which will best replace the words underlined in the sentence to make it correct.\n\n[They're is to many] people to fit into one car.",
+          "difficulty": "easy",
+          "options": [
+            "They're are two many",
+            "There is too many",
+            "There are too many",
+            "They're are too many",
+            "Their are too many"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 4
+          },
+          "hint": "Check 'there/their/they're' and 'to/too/two'.",
+          "steps": [
+            {
+              "explain": "The sentence says there are people, so it needs 'There are'. 'Too many' means more than can fit.",
+              "work": ""
+            },
+            {
+              "explain": "'They're' means 'they are' and 'their' means belonging to them, so neither fits.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: There are too many.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "people to fit",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q5",
+          "type": "mc",
+          "stem": "In this section, you are given a sentence. The sentence has then been re-written, but only the first half of the new sentence has been provided. Choose the best ending so the new sentence tells us the same thing.\n\nBill couldn't find the remote when he wanted to change the channel.\n\nIf we rewrite the beginning with: When Bill wanted to change the channel, ...\n\nWhat will the ending be?",
+          "difficulty": "easy",
+          "options": [
+            "he lost the remote.",
+            "he couldn't find the remote.",
+            "he couldn't use the remote.",
+            "he could find the remote.",
+            "the remote was missing."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 5
+          },
+          "hint": "The rewritten sentence has the same meaning.",
+          "steps": [
+            {
+              "explain": "The original said Bill couldn't find the remote when he wanted to change the channel.",
+              "work": ""
+            },
+            {
+              "explain": "'When Bill wanted to change the channel, he couldn't find the remote.' keeps the same meaning.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: he couldn't find the remote..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "remote",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q6",
+          "type": "mc",
+          "stem": "In this section, you are given a sentence. The sentence has then been re-written, but only the first half of the new sentence has been provided. Choose the best ending so the new sentence tells us the same thing.\n\nWhen the racing cars started their engines, everyone stood up to watch.\n\nIf we rewrite the beginning with: Everyone stood up to watch ...\n\nWhat will the ending be?",
+          "difficulty": "easy",
+          "options": [
+            "when the race started.",
+            "when the racing cars started.",
+            "when the engines started.",
+            "when the racing cars started their engines.",
+            "when the cars took off."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 6
+          },
+          "hint": "Swap the order of the two parts without changing the meaning.",
+          "steps": [
+            {
+              "explain": "The original: 'When the racing cars started their engines, everyone stood up to watch.'",
+              "work": ""
+            },
+            {
+              "explain": "Swapping the parts: 'Everyone stood up to watch when the racing cars started their engines.'",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option D: when the racing cars started their engines..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "racing cars",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q7",
+          "type": "mc",
+          "stem": "In this section, you are given a sentence. The sentence has then been re-written, but only the first half of the new sentence has been provided. Choose the best ending so the new sentence tells us the same thing.\n\nThe dog always eats the left-overs after dinner.\n\nIf we rewrite the beginning with: After dinner, the dog ...\n\nWhat will the ending be?",
+          "difficulty": "easy",
+          "options": [
+            "always eats the left-overs.",
+            "always eats their dessert.",
+            "sometimes eats all the left-overs.",
+            "eats what is left over from lunch.",
+            "begs for scraps."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 7
+          },
+          "hint": "Rewrite the sentence in a different order.",
+          "steps": [
+            {
+              "explain": "The original: 'The dog always eats the left-overs after dinner.'",
+              "work": ""
+            },
+            {
+              "explain": "'After dinner, the dog always eats the left-overs.' means the same.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: always eats the left-overs..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "left-overs",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q8",
+          "type": "mc",
+          "stem": "In this section, you are given a sentence. The sentence has then been re-written, but only the first half of the new sentence has been provided. Choose the best ending so the new sentence tells us the same thing.\n\nAfter the rain, our water tank was nearly full.\n\nIf we rewrite the beginning with: Our water tank was nearly full...\n\nWhat will the ending be?",
+          "difficulty": "easy",
+          "options": [
+            "when the thunderstorm came.",
+            "after the rain.",
+            "before it rained.",
+            "because it rained in Melbourne.",
+            "when the rains came."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 8
+          },
+          "hint": "Both parts must say the same thing.",
+          "steps": [
+            {
+              "explain": "The original says the tank was nearly full after the rain.",
+              "work": ""
+            },
+            {
+              "explain": "'Our water tank was nearly full after the rain.' keeps that meaning.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: after the rain..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "water tank",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q9",
+          "type": "mc",
+          "stem": "In this section, the sentence does not have any punctuation. You need to choose the correctly re-written sentence.\n\nred blue and pink are the three colours in the box",
+          "difficulty": "medium",
+          "options": [
+            "Red, blue, and pink are the three colours in the box.",
+            "Red and Blue and Pink are the three colours in the box.",
+            "red, blue and pink are the three colours in the box.",
+            "Red, blue and pink are the three colours in the box.",
+            "Red, blue, and, pink are the 3 colours in the box."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 9
+          },
+          "hint": "Use a capital letter at the start, commas in a list and a full stop at the end.",
+          "steps": [
+            {
+              "explain": "A list of three items needs commas between items and 'and' before the last.",
+              "work": ""
+            },
+            {
+              "explain": "'Red, blue and pink are the three colours in the box.' has the correct punctuation.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option D: Red, blue and pink are the three colours in the box..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "red blue and pink",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q10",
+          "type": "mc",
+          "stem": "In this section, the sentence does not have any punctuation. You need to choose the correctly re-written sentence.\n\nim not allowed outside today because i have been naughty",
+          "difficulty": "medium",
+          "options": [
+            "I'm not allowed outside today because I have been naughty.",
+            "Im not allowed outside today because I have been naughty.",
+            "i'm not allowed outside today because I have been naughty",
+            "I'm not allowed outside today because i have been naughty.",
+            "Im not allowed outside today because I've been bad."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 10
+          },
+          "hint": "Capitalise 'I', add an apostrophe to I'm and end with a full stop.",
+          "steps": [
+            {
+              "explain": "'im' should be 'I'm' and 'i' should be 'I'.",
+              "work": ""
+            },
+            {
+              "explain": "'I'm not allowed outside today because I have been naughty.' is correct.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: I'm not allowed outside today because I have been naughty..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "naughty",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q11",
+          "type": "mc",
+          "stem": "Hunting is an [instinctive] characteristic of the lion species.\n\nThe word [instinctive] in this sentence means:",
+          "difficulty": "medium",
+          "options": [
+            "extinct",
+            "distinct",
+            "inborn",
+            "particular",
+            "instant"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 11
+          },
+          "hint": "Think of what a lion does without being taught.",
+          "steps": [
+            {
+              "explain": "'Instinctive' means natural or done without learning, like hunting for a lion.",
+              "work": ""
+            },
+            {
+              "explain": "'Inborn' means born with, so it matches.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: inborn.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "instinctive",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q12",
+          "type": "mc",
+          "stem": "Everybody at the party commented that Emily was very [vivacious].*\n\nThe word [vivacious] in this sentence means:",
+          "difficulty": "medium",
+          "options": [
+            "A person who is lively.",
+            "A person who is shy.",
+            "A person who is negative.",
+            "A person who is rude.",
+            "A person who dances a lot."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 12
+          },
+          "hint": "A word for someone full of energy.",
+          "steps": [
+            {
+              "explain": "'Vivacious' describes someone who is lively and full of life.",
+              "work": ""
+            },
+            {
+              "explain": "So Emily is lively.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: A person who is lively..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "vivacious",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q13",
+          "type": "mc",
+          "stem": "Before becoming an astronaut, one must spend many years at university, then train for years before going into space.\n\nWhat can you infer from this paragraph?",
+          "difficulty": "medium",
+          "options": [
+            "Becoming an astronaut is difficult.",
+            "Becoming an astronaut is easy.",
+            "Becoming an astronaut requires hard work and self discipline.",
+            "Astronauts are in high demand.",
+            "Only people who can fly can be astronauts."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 13
+          },
+          "hint": "An inference is something that must be true from what is written.",
+          "steps": [
+            {
+              "explain": "To become an astronaut you need years at university and years of training, so it takes hard work and self discipline.",
+              "work": ""
+            },
+            {
+              "explain": "The paragraph does not say anything about demand, flying or easiness.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: Becoming an astronaut requires hard work and self discipline..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "infer",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q14",
+          "type": "mc",
+          "stem": "Racing car driving is a popular spectator sport. However, there are many factors that must be considered when making sure it is safe to drive. For example, the car has to be safety checked, the driver must wear protective clothing and a helmet, and special seatbelts must be fastened at all times.\n\nWhat is the main theme in this paragraph?",
+          "difficulty": "medium",
+          "options": [
+            "Racing car driving is popular.",
+            "Driving a racing car requires skill and training.",
+            "Without a safety check, a racing car cannot be driven.",
+            "Without the correct safety equipment, racing car driving can be dangerous.",
+            "Racing car drivers have a death wish."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 14
+          },
+          "hint": "The main theme is what the whole paragraph is about.",
+          "steps": [
+            {
+              "explain": "The paragraph lists safety checks, protective clothing, helmets and seatbelts.",
+              "work": ""
+            },
+            {
+              "explain": "The main theme is that without proper safety equipment, racing is dangerous.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option D: Without the correct safety equipment, racing car driving can be dangerous..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "main theme",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q15",
+          "type": "mc",
+          "stem": "The Campbelltown triathlon was three weeks away, and Jason decided that he was going to take part this year. He sent in the registration form and made a promise to himself that he would do his best to win the race. He knew it was not going to be easy, understanding he would have to train every day right up until the race day.\n\nA triathlon is a sport with three events: running, swimming and cycling. Jason had a regime to train in all three events throughout the week; two days of cycling, two days of swimming and three days of running. By the end of the three weeks, he felt as though he was ready to take on his competitors. When he arrived on race day, he noticed there were many people taking part in the competition. He began to worry that he would not do so well. However, he convinced himself that he was just as good, if not better than, the other competitors and so prepared himself at the starting line.\n\n\"On your marks, get set, go!\" he heard from the loud speakers, and before he knew it, the race had begun. The first leg of the race was this running component. Jason was a strong runner, so he went well in this leg, finishing third and not far from the lead. The next leg was the swimming component and made Jason nervous, as this was his weakest leg of the three. As much as he tried to keep up, Jason just couldn't keep up with the pack, falling back to sixth place. Although he was disappointed, he was hoping he could make up for lost time in the final leg of the race, the cycling. This was Jason's last chance to get to the front of the pack, so he rode as fast as he could. He got up to second place with five hundred metres remaining. Although he tried to pass the leader, he wasn't fast enough so he finished in second place. Although Jason wanted to win, he wasn't disappointed with the silver medal. It was his first time in the competition and he figured he could try again next year, hopefully coming first.\n\nWhat is the main theme of this story?",
+          "difficulty": "medium",
+          "options": [
+            "Coming second is being the first loser.",
+            "Winning is everything.",
+            "Winning isn't everything.",
+            "Coming second is worse than coming last.",
+            "If you train it is expected that you will win."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 15
+          },
+          "hint": "Think about what Jason learned.",
+          "steps": [
+            {
+              "explain": "Jason did not win, but he was not disappointed with the silver medal. He hopes to win next year.",
+              "work": ""
+            },
+            {
+              "explain": "The theme is that winning is not the only thing that matters: winning isn't everything.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option C: Winning isn't everything..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "main theme",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q16",
+          "type": "mc",
+          "stem": "The Campbelltown triathlon was three weeks away, and Jason decided that he was going to take part this year. He sent in the registration form and made a promise to himself that he would do his best to win the race. He knew it was not going to be easy, understanding he would have to train every day right up until the race day.\n\nA triathlon is a sport with three events: running, swimming and cycling. Jason had a regime to train in all three events throughout the week; two days of cycling, two days of swimming and three days of running. By the end of the three weeks, he felt as though he was ready to take on his competitors. When he arrived on race day, he noticed there were many people taking part in the competition. He began to worry that he would not do so well. However, he convinced himself that he was just as good, if not better than, the other competitors and so prepared himself at the starting line.\n\n\"On your marks, get set, go!\" he heard from the loud speakers, and before he knew it, the race had begun. The first leg of the race was this running component. Jason was a strong runner, so he went well in this leg, finishing third and not far from the lead. The next leg was the swimming component and made Jason nervous, as this was his weakest leg of the three. As much as he tried to keep up, Jason just couldn't keep up with the pack, falling back to sixth place. Although he was disappointed, he was hoping he could make up for lost time in the final leg of the race, the cycling. This was Jason's last chance to get to the front of the pack, so he rode as fast as he could. He got up to second place with five hundred metres remaining. Although he tried to pass the leader, he wasn't fast enough so he finished in second place. Although Jason wanted to win, he wasn't disappointed with the silver medal. It was his first time in the competition and he figured he could try again next year, hopefully coming first.\n\nIn this story, what is a triathlon?",
+          "difficulty": "medium",
+          "options": [
+            "a bicycle",
+            "swimming goggles",
+            "a training program",
+            "running shoes",
+            "none of these"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 16
+          },
+          "hint": "The story says what a triathlon is.",
+          "steps": [
+            {
+              "explain": "The story says a triathlon is a sport with three events: running, swimming and cycling.",
+              "work": ""
+            },
+            {
+              "explain": "None of the options (bicycle, goggles, training program, running shoes) is a sport, so the answer is none of these.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option E: none of these.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "triathlon",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q17",
+          "type": "mc",
+          "stem": "The Campbelltown triathlon was three weeks away, and Jason decided that he was going to take part this year. He sent in the registration form and made a promise to himself that he would do his best to win the race. He knew it was not going to be easy, understanding he would have to train every day right up until the race day.\n\nA triathlon is a sport with three events: running, swimming and cycling. Jason had a regime to train in all three events throughout the week; two days of cycling, two days of swimming and three days of running. By the end of the three weeks, he felt as though he was ready to take on his competitors. When he arrived on race day, he noticed there were many people taking part in the competition. He began to worry that he would not do so well. However, he convinced himself that he was just as good, if not better than, the other competitors and so prepared himself at the starting line.\n\n\"On your marks, get set, go!\" he heard from the loud speakers, and before he knew it, the race had begun. The first leg of the race was this running component. Jason was a strong runner, so he went well in this leg, finishing third and not far from the lead. The next leg was the swimming component and made Jason nervous, as this was his weakest leg of the three. As much as he tried to keep up, Jason just couldn't keep up with the pack, falling back to sixth place. Although he was disappointed, he was hoping he could make up for lost time in the final leg of the race, the cycling. This was Jason's last chance to get to the front of the pack, so he rode as fast as he could. He got up to second place with five hundred metres remaining. Although he tried to pass the leader, he wasn't fast enough so he finished in second place. Although Jason wanted to win, he wasn't disappointed with the silver medal. It was his first time in the competition and he figured he could try again next year, hopefully coming first.\n\nThe main character of this story:",
+          "difficulty": "medium",
+          "options": [
+            "had never been in a triathlon.",
+            "had been in a triathlon.",
+            "was a professional runner.",
+            "was a professional swimmer.",
+            "was an Olympic champion."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 17
+          },
+          "hint": "Read what the story says about Jason.",
+          "steps": [
+            {
+              "explain": "This was his first time in the competition.",
+              "work": ""
+            },
+            {
+              "explain": "So Jason had never been in a triathlon before.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option A: had never been in a triathlon..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "main character",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q18",
+          "type": "mc",
+          "stem": "The Campbelltown triathlon was three weeks away, and Jason decided that he was going to take part this year. He sent in the registration form and made a promise to himself that he would do his best to win the race. He knew it was not going to be easy, understanding he would have to train every day right up until the race day.\n\nA triathlon is a sport with three events: running, swimming and cycling. Jason had a regime to train in all three events throughout the week; two days of cycling, two days of swimming and three days of running. By the end of the three weeks, he felt as though he was ready to take on his competitors. When he arrived on race day, he noticed there were many people taking part in the competition. He began to worry that he would not do so well. However, he convinced himself that he was just as good, if not better than, the other competitors and so prepared himself at the starting line.\n\n\"On your marks, get set, go!\" he heard from the loud speakers, and before he knew it, the race had begun. The first leg of the race was this running component. Jason was a strong runner, so he went well in this leg, finishing third and not far from the lead. The next leg was the swimming component and made Jason nervous, as this was his weakest leg of the three. As much as he tried to keep up, Jason just couldn't keep up with the pack, falling back to sixth place. Although he was disappointed, he was hoping he could make up for lost time in the final leg of the race, the cycling. This was Jason's last chance to get to the front of the pack, so he rode as fast as he could. He got up to second place with five hundred metres remaining. Although he tried to pass the leader, he wasn't fast enough so he finished in second place. Although Jason wanted to win, he wasn't disappointed with the silver medal. It was his first time in the competition and he figured he could try again next year, hopefully coming first.\n\nWhich three events make up a triathlon?",
+          "difficulty": "medium",
+          "options": [
+            "run, dive, bike",
+            "run, swim, drive",
+            "run, swim, ski",
+            "run, swim, bike",
+            "walk, run, jump"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 18
+          },
+          "hint": "The three events are stated in the story.",
+          "steps": [
+            {
+              "explain": "A triathlon is a sport with three events: running, swimming and cycling.",
+              "work": ""
+            },
+            {
+              "explain": "In order: run, swim, bike.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option D: run, swim, bike.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "triathlon",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q19",
+          "type": "mc",
+          "stem": "Greg and his family took a trip to the zoo. When they arrived, they headed straight to the reptile handling area where animal experts allowed people to hold and pat the reptiles. Greg wanted to feed the snakes, and the zookeeper said he could, as long as he followed some basic rules. Instead of listening to the zookeeper, Greg grabbed the snake, which turned and bit him on the arm, giving him a nasty wound.\n\nThe main theme of this story is:",
+          "difficulty": "medium",
+          "options": [
+            "never handle snakes.",
+            "always listen to experts.",
+            "never go to the zoo.",
+            "never listen to experts.",
+            "Greg was an expert."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 19
+          },
+          "hint": "Think what happened to Greg and why.",
+          "steps": [
+            {
+              "explain": "Greg did not listen to the zookeeper and was bitten.",
+              "work": ""
+            },
+            {
+              "explain": "The lesson: always listen to experts.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: always listen to experts..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "main theme",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sch-acer-edutest-reading-t2-q20",
+          "type": "mc",
+          "stem": "Greg and his family took a trip to the zoo. When they arrived, they headed straight to the reptile handling area where animal experts allowed people to hold and pat the reptiles. Greg wanted to feed the snakes, and the zookeeper said he could, as long as he followed some basic rules. Instead of listening to the zookeeper, Greg grabbed the snake, which turned and bit him on the arm, giving him a nasty wound.\n\nFrom the paragraph above, which statement does not follow?",
+          "difficulty": "medium",
+          "options": [
+            "The snake gave Greg an injury.",
+            "Greg wanted to work at the zoo.",
+            "Greg didn't listen to instructions.",
+            "Greg grabbed the snake.",
+            "Greg wanted to feed the snakes."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Edutest practice test for year 5-2",
+            "school": "Edutest",
+            "grade": "5",
+            "origin": "teacher",
+            "test": "Test 2 · Reading Comprehension",
+            "number": 20
+          },
+          "hint": "Find the statement the story does not say.",
+          "steps": [
+            {
+              "explain": "The snake gave Greg an injury, Greg didn't listen, Greg grabbed the snake and he wanted to feed the snakes are all in the paragraph.",
+              "work": ""
+            },
+            {
+              "explain": "It never says Greg wanted to work at the zoo.",
+              "work": ""
+            },
+            {
+              "explain": "So the answer is option B: Greg wanted to work at the zoo..",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "does not follow",
+              "note": "Re-read the sentence or passage and choose the option that fits the text."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        }
+      ]
     }
   ]
 }
