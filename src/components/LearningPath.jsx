@@ -497,14 +497,14 @@ const LearningPath = ({ profile }) => {
   const pill = (label, value, sub, { lead = false, icon = null } = {}) => (
     <div style={{
       padding: '18px 20px', borderRadius: '20px', position: 'relative', overflow: 'hidden', minWidth: 0,
-      background: lead ? 'linear-gradient(135deg, #1e1b4b, #312e81)' : 'rgba(255,255,255,0.9)',
+      background: lead ? '#efeaff' : 'rgba(255,255,255,0.9)',
       border: lead ? 'none' : '1px solid rgba(167,139,250,0.18)',
-      boxShadow: lead ? '0 18px 40px rgba(30,27,75,0.25)' : '0 8px 24px rgba(91,33,182,0.05)',
+      boxShadow: '0 8px 24px rgba(91,33,182,0.07)',
     }}>
-      {icon && <div style={{ position: 'absolute', right: '16px', top: '14px', color: lead ? 'rgba(245,208,254,0.55)' : 'rgba(139,92,246,0.32)' }}>{icon}</div>}
-      <div style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: lead ? 'rgba(255,255,255,0.7)' : '#8b7aa7' }}>{label}</div>
-      <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: '2rem', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: lead ? '#fff' : '#1e1b4b' }}>{value}</div>
-      <div style={{ fontSize: '0.8rem', fontWeight: 700, marginTop: '6px', color: lead ? 'rgba(255,255,255,0.8)' : '#6d6a85' }}>{sub}</div>
+      {icon && <div style={{ position: 'absolute', right: '16px', top: '14px', color: 'rgba(139,92,246,0.4)' }}>{icon}</div>}
+      <div style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#8b7aa7' }}>{label}</div>
+      <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: '2rem', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: '#1e1b4b' }}>{value}</div>
+      <div style={{ fontSize: '0.8rem', fontWeight: 700, marginTop: '6px', color: '#6d6a85' }}>{sub}</div>
     </div>
   );
 
@@ -517,7 +517,7 @@ const LearningPath = ({ profile }) => {
   };
 
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <div style={{ width: '100%' }}>
       {/* Top-left row: year/course track toggle (multi-year or multi-course students) + subject switch */}
       {(tracks.length > 1 || availableSubjects.length > 1) && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', flexWrap: 'wrap' }}>
@@ -596,9 +596,9 @@ const LearningPath = ({ profile }) => {
           style={{
             display: 'inline-flex', alignItems: 'center', gap: '7px',
             padding: '8px 16px', borderRadius: '12px', border: 'none', cursor: 'pointer',
-            background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
-            color: '#fff', fontSize: '0.82rem', fontWeight: 700,
-            boxShadow: '0 2px 12px rgba(99,102,241,0.35)',
+            background: '#ddd6fe',
+            color: '#4c1d95', fontSize: '0.82rem', fontWeight: 800,
+            boxShadow: 'none',
           }}
         >
           <Network size={15} />
@@ -675,8 +675,8 @@ const LearningPath = ({ profile }) => {
                       padding: '9px 14px', borderRadius: '12px', border: 'none',
                       fontSize: '0.8rem', fontWeight: 800,
                       cursor: n.state === 'locked' ? 'not-allowed' : 'pointer',
-                      background: n.state === 'locked' ? '#f1f5f9' : s.accent,
-                      color: n.state === 'locked' ? '#94a3b8' : '#fff',
+                      background: n.state === 'locked' ? '#f1f5f9' : `color-mix(in srgb, ${s.accent} 24%, #fff)`,
+                      color: n.state === 'locked' ? '#94a3b8' : `color-mix(in srgb, ${s.accent} 80%, #000)`,
                     }}
                   >
                     <s.CtaIcon size={14} /> {s.cta}
