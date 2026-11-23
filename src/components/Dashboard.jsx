@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText, Award } from 'lucide-react';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine, Zap, Calculator, FileText, Award } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
@@ -41,45 +41,51 @@ const liftHover = {
   onMouseLeave: (e) => { e.currentTarget.style.transform = ''; },
 };
 
-// Student "Today's plan" checklist — sits where the big dream-image hero used to.
+// Student "Today's plan": one equal-size tile per task. Finished = green + check, the next unfinished one gets a purple
+// ring, tasks that are not once-a-day (done === null, e.g. Exam Prep) stay neutral.
 const TodayPlanCard = ({ items }) => {
   const tracked = items.filter((i) => i.done !== null);
   const doneCount = tracked.filter((i) => i.done).length;
   const pct = tracked.length ? Math.round((doneCount / tracked.length) * 100) : 0;
+  const nextKey = (items.find((i) => i.done === false) || {}).key;
   return (
-    <div style={{ height: '100%', boxSizing: 'border-box', background: '#fff', borderRadius: '28px', padding: '28px', border: '1px solid #f1f5f9', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '12px', flexWrap: 'wrap', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0, fontFamily: "'Poppins', sans-serif", fontSize: '1.6rem', fontWeight: 800, color: '#0f172a' }}>Today&apos;s plan</h2>
+    <div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '14px', flexWrap: 'wrap' }}>
+        <h2 style={{ margin: 0, fontFamily: "'Poppins', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: '#0f172a' }}>Today&apos;s plan</h2>
+        <div style={{ flex: '1 1 160px', height: 8, borderRadius: 999, background: '#eef2ff', overflow: 'hidden' }}>
+          <div style={{ width: `${pct}%`, height: '100%', background: '#4f46e5', borderRadius: 999, transition: 'width 0.35s ease' }} />
+        </div>
         <span style={{ fontSize: '0.95rem', fontWeight: 700, color: '#475569' }}>{doneCount} of {tracked.length} done</span>
       </div>
-      <div style={{ height: 8, borderRadius: 999, background: '#eef2ff', marginBottom: '22px', overflow: 'hidden' }}>
-        <div style={{ width: `${pct}%`, height: '100%', background: '#4f46e5', borderRadius: 999, transition: 'width 0.35s ease' }} />
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
-        {items.map(({ key, icon: Icon, title, sub, cta, done, onClick }) => (
-          <button
-            key={key}
-            type="button"
-            onClick={onClick}
-            {...liftHover}
-            style={{ flex: 1, display: 'flex', alignItems: 'center', gap: '18px', width: '100%', minHeight: '76px', padding: '14px 20px', borderRadius: '18px', border: '1px solid #e2e8f0', background: done ? '#f8fafc' : '#fff', cursor: 'pointer', textAlign: 'left', transition: 'transform 0.15s' }}
-          >
-            {done ? (
-              <span style={{ width: 32, height: 32, borderRadius: 999, background: '#4f46e5', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                <Check size={16} color="#fff" strokeWidth={3} />
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '14px' }}>
+        {items.map(({ key, icon: Icon, title, sub, cta, done, onClick }) => {
+          const isDone = done === true;
+          const isNext = key === nextKey;
+          return (
+            <button
+              key={key}
+              type="button"
+              onClick={onClick}
+              {...liftHover}
+              style={{
+                position: 'relative', textAlign: 'left', cursor: 'pointer', minHeight: 150, boxSizing: 'border-box',
+                padding: '16px 18px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: 4,
+                background: isDone ? '#ecfdf5' : '#ffffff',
+                border: isDone ? '2px solid #a7f3d0' : (isNext ? '2px solid #4f46e5' : '1px solid #f1f5f9'),
+                boxShadow: isDone ? 'none' : (isNext ? '0 0 0 3px rgba(79,70,229,0.18), 0 10px 24px rgba(0,0,0,0.06)' : '0 10px 24px rgba(0,0,0,0.06)'),
+                transition: 'transform 0.15s',
+              }}
+            >
+              {isNext && <span style={{ position: 'absolute', top: 12, right: 14, fontSize: '0.68rem', fontWeight: 800, color: '#fff', background: '#4f46e5', borderRadius: 999, padding: '2px 10px' }}>Next</span>}
+              <span style={{ width: 44, height: 44, borderRadius: isDone ? 999 : 14, background: isDone ? '#059669' : '#eef2ff', display: 'grid', placeItems: 'center', marginBottom: 6 }}>
+                {isDone ? <Check size={22} color="#fff" strokeWidth={3} /> : <Icon size={20} color="#4f46e5" strokeWidth={2.4} />}
               </span>
-            ) : (
-              <span style={{ width: 32, height: 32, borderRadius: 999, border: '2px solid #cbd5e1', boxSizing: 'border-box', display: 'grid', placeItems: 'center', flexShrink: 0, color: '#64748b' }}>
-                {done === null && <Icon size={15} strokeWidth={2.4} />}
-              </span>
-            )}
-            <span style={{ flex: 1, minWidth: 0 }}>
-              <span style={{ display: 'block', fontWeight: 800, fontSize: '1.05rem', color: '#0f172a' }}>{title}</span>
-              <span style={{ display: 'block', fontSize: '0.85rem', color: '#475569', marginTop: 3, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{sub}</span>
-            </span>
-            <span style={{ fontSize: '0.92rem', fontWeight: 800, color: '#4338ca', flexShrink: 0 }}>{cta}</span>
-          </button>
-        ))}
+              <span style={{ fontWeight: 800, fontSize: '1.05rem', color: isDone ? '#065f46' : '#0f172a' }}>{title}</span>
+              <span style={{ fontSize: '0.82rem', color: isDone ? '#047857' : '#475569', overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{sub}</span>
+              <span style={{ marginTop: 'auto', paddingTop: 8, fontSize: '0.88rem', fontWeight: 800, color: isDone ? '#059669' : '#4338ca' }}>{isDone ? 'Done ✓' : cta}</span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
@@ -562,14 +568,32 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 {userName}
               </h1>
             </div>
+            <div style={{ marginLeft: 'auto', display: 'flex', gap: isMobile ? 8 : 14, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+              <div title="Consecutive days of Daily Practice" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: isMobile ? '8px 14px' : '12px 22px', borderRadius: 999, background: '#fff7ed', border: '2px solid #fdba74' }}>
+                <span style={{ fontSize: isMobile ? '1.3rem' : '1.7rem', lineHeight: 1 }} aria-hidden="true">🔥</span>
+                <div>
+                  <div style={{ fontWeight: 900, fontSize: isMobile ? '1.1rem' : '1.5rem', lineHeight: 1, color: '#c2410c' }}>
+                    {practiceStreak > 0 ? `${practiceStreak} day${practiceStreak === 1 ? '' : 's'}` : 'Start today'}
+                  </div>
+                  <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', color: '#c2410c' }}>STREAK</div>
+                </div>
+              </div>
+              <div title="Total XP" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: isMobile ? '8px 14px' : '12px 22px', borderRadius: 999, background: '#fffbeb', border: '2px solid #fcd34d' }}>
+                <span style={{ fontSize: isMobile ? '1.3rem' : '1.7rem', lineHeight: 1 }} aria-hidden="true">⭐</span>
+                <div>
+                  <div style={{ fontWeight: 900, fontSize: isMobile ? '1.1rem' : '1.5rem', lineHeight: 1, color: '#92400e' }}>{(Number(profile?.totalXP) || 0).toLocaleString()}</div>
+                  <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', color: '#92400e' }}>XP</div>
+                </div>
+              </div>
+            </div>
           </header>
         )}
         {!isAdmin && (
           <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
-            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7' }}>
+            <div style={{ gridColumn: '1 / -1' }}>
               <TodayPlanCard items={todayPlan} />
             </div>
-            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: 0 }}>
+            <div style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(auto-fit, minmax(300px, 1fr))', gap: isMobile ? '16px' : '20px', alignItems: 'start', padding: 0 }}>
               {/* Journey Map snapshot */}
               <JourneyMapSnapshot
                 profile={profile}
@@ -668,53 +692,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', margin: 0 }}>
                     Daily Practice
                   </label>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
-                    {/* Shared pill metrics — same height/padding so XP + streak feel like a pair */}
-                    {(() => {
-                      const pillBase = {
-                        boxSizing: 'border-box',
-                        height: '28px',
-                        minHeight: '28px',
-                        padding: '0 12px',
-                        borderRadius: '999px',
-                        fontSize: '0.72rem',
-                        fontWeight: 800,
-                        lineHeight: 1,
-                        whiteSpace: 'nowrap',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '5px',
-                      };
-                      return (
-                        <>
-                          <span
-                            style={{
-                              ...pillBase,
-                              color: '#4f46e5',
-                              background: 'linear-gradient(135deg, #eef2ff, #e0e7ff)',
-                            }}
-                            title="Total XP"
-                          >
-                            <Trophy size={12} strokeWidth={2.5} style={{ flexShrink: 0 }} />
-                            {(Number(profile?.totalXP) || 0).toLocaleString()} XP
-                          </span>
-                          <span
-                            style={{
-                              ...pillBase,
-                              color: practiceStreak > 0 ? '#ea580c' : '#6366f1',
-                              background: practiceStreak > 0 ? '#fff7ed' : '#eef2ff',
-                            }}
-                            title="Consecutive days of Daily Practice"
-                          >
-                            {practiceStreak > 0
-                              ? `${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
-                              : 'No streak yet'}
-                          </span>
-                        </>
-                      );
-                    })()}
-                  </div>
                 </div>
 
                 <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '5px', minHeight: 0, paddingTop: '2px' }}>
