@@ -1,0 +1,25 @@
+/* ───────── Student menu = floating pill dock at the bottom (wide screens only) ─────────
+   Same Sidebar component and same items; below 920px the existing phone layout is untouched. The teacher keeps the
+   left sidebar. Only the open page shows its name, the rest are icons (hover/long-press shows the name). */
+@media (min-width: 921px) {
+  html[data-clay="1"] .app-sidebar.app-sidebar--dock,
+  .app-sidebar.app-sidebar--dock {
+    position: fixed; left: 50%; transform: translateX(-50%); bottom: 16px; top: auto;
+    width: auto; max-width: calc(100vw - 32px); height: auto; padding: 8px 12px; gap: 6px; z-index: 60;
+    flex-direction: row; align-items: center; border: 0; border-radius: 999px;
+    background: var(--clay-card, #fffaf2); box-shadow: 0 14px 30px rgba(120, 80, 40, 0.22), inset 0 2px 0 #fff;
+  }
+  .app-sidebar--dock .app-sidebar__brand { display: none; }
+  .app-sidebar--dock .app-sidebar__nav { flex-direction: row; gap: 2px; align-items: center; }
+  .app-sidebar--dock .app-sidebar__item { width: auto; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
+  .app-sidebar--dock .app-sidebar__item.is-active { padding: 10px 16px; }
+  .app-sidebar--dock .app-sidebar__item-inner { flex: 0 0 auto; gap: 8px; }
+  .app-sidebar--dock .app-sidebar__item span { display: none; font-size: 0.88rem; }
+  .app-sidebar--dock .app-sidebar__item.is-active span { display: inline; }
+  .app-sidebar--dock .app-sidebar__footer { margin: 0; flex-direction: row; gap: 0; }
+  /* Leaderboard / notifications / sign-out stay; the profile card and version line are not part of the dock */
+  .app-sidebar--dock .app-sidebar__footer > div:first-child { margin: 0 !important; padding: 0 4px !important; background: transparent !important; box-shadow: none !important; border: 0 !important; border-left: 2px solid rgba(120, 90, 70, 0.12) !important; border-radius: 0 !important; }
+  .app-sidebar--dock .app-sidebar__footer > div:not(:first-child) { display: none; }
+  /* room for the dock under the page */
+  .app-shell:has(.app-sidebar--dock) .app-shell__main { padding-bottom: 104px; }
+}

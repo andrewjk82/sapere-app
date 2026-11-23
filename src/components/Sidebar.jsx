@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import '../utils/clayStyle';
 import './clay-sidebar.css';
+import './sidebar-dock.css';
 import {
   LayoutDashboard,
   Presentation,
@@ -37,6 +38,8 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) =>
   <button 
     onClick={disabled ? undefined : onClick}
     className={`app-sidebar__item ${active ? 'is-active' : ''} ${disabled ? 'is-disabled' : ''}`}
+    title={label}
+    aria-label={label}
     style={{ 
       opacity: disabled ? 0.5 : 1, 
       cursor: disabled ? 'not-allowed' : 'pointer',
@@ -89,7 +92,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
     : fallbackUrl);
 
   return (
-    <aside className="app-sidebar">
+    <aside className={`app-sidebar${isAdmin ? '' : ' app-sidebar--dock'}`}>
       <motion.div 
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
