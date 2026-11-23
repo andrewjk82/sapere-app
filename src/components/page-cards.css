@@ -50,8 +50,11 @@ html[data-clay="1"] .cs__test-card--loading,
 html[data-clay="1"] .cs__test-card--neutral { background: var(--clay-card); }
 html[data-clay="1"] .cs__test-card--completed { background: #e3f4e8; box-shadow: none; border: 2px solid #bfe3c9 !important; }
 html[data-clay="1"] .cs__test-card--with-note .cs__tile-title { transform: none; }
-html[data-clay="1"] .cs__tile-main { align-items: flex-end; justify-content: flex-start; text-align: left; padding: 14px 18px; }
-html[data-clay="1"] .cs__tile-title { font-size: 1.12rem; font-weight: 800; letter-spacing: -0.01em; }
+html[data-clay="1"] .cs__tile-main { text-align: center; padding: 14px 18px; }
+/* Every title sits at the same height, centred, whether or not the tile has a note strip under it */
+html[data-clay="1"] .cs__tile-title {
+  position: absolute; left: 12px; right: 12px; top: 82px; text-align: center; font-size: 1.12rem; font-weight: 800; letter-spacing: -0.01em;
+}
 html[data-clay="1"] .cs__tile-watermark {
   top: 16px; left: 18px; right: auto; width: 44px; height: 44px; padding: 10px; box-sizing: border-box; border-radius: 14px;
   background: var(--clay-purple); color: #fff !important; opacity: 1 !important; stroke-width: 2.2; z-index: 0;
@@ -73,3 +76,5 @@ html[data-clay="1"] .tts-hub-card__tries { font-size: 0.78rem; font-weight: 700;
 html[data-clay="1"] .tts-hub-card__play {
   margin-top: auto; padding: 9px 26px; border-radius: 999px; background: var(--hub-accent); color: #fff; font-weight: 800; font-size: 0.95rem; box-shadow: var(--clay-puff-sm);
 }
+/* the finished tile has a 2px border, so its title starts 2px higher to line up with the others */
+html[data-clay="1"] .cs__test-card--completed .cs__tile-title { top: 80px; }
