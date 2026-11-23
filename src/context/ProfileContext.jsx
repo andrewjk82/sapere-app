@@ -5,6 +5,7 @@ import { useAuth } from './AuthContext';
 import { recoverMissingXP } from '../services/xpRecoveryService';
 import { tryAwardSecretNoteClearBonus } from '../services/secretNoteBonusService';
 import { flushExtraRounds } from '../services/extraRoundService';
+import { applyTheme } from '../utils/themeStyle';
 
 /**
  * Single shared realtime listener for the signed-in user's own
@@ -27,6 +28,10 @@ export const ProfileProvider = ({ children }) => {
   // registered students to the Create account wizard (2026-10 Riel and 24 others).
   const [profileMissing, setProfileMissing] = useState(false);
   const recoveryRanRef = useRef(false);
+
+  // The theme saved on the account follows the student to every device (this device's copy paints first, no flash).
+  const accountTheme = profile?.theme;
+  useEffect(() => { if (accountTheme) applyTheme(accountTheme); }, [accountTheme]);
 
   // Run XP recovery once per session after sign-in.
   // Probes last 7 days by direct doc ID — no collection scans.

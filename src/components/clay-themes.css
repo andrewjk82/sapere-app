@@ -1,0 +1,30 @@
+/* ───────── Colour themes (students pick one in Settings) ─────────
+   Default (no data-theme) is the original cream + purple. A theme only re-declares the palette; the rules below swap the
+   few colours that clay-app.css / clay-sidebar.css hard-code. Inline indigo accents inside some pages keep their colour. */
+html[data-clay="1"][data-theme="mint"] {
+  --clay-bg: #eaf7ef; --clay-card: #f7fdf9; --clay-inset: #dcf0e4; --clay-purple: #2f9e6e; --clay-active: #bfe8d0; --clay-active-ink: #1d5c40;
+}
+html[data-clay="1"][data-theme="sky"] {
+  --clay-bg: #eaf3fc; --clay-card: #f7fbff; --clay-inset: #dbeaf8; --clay-purple: #3b82d6; --clay-active: #c3dcf6; --clay-active-ink: #1f4f8f;
+}
+html[data-clay="1"][data-theme="rose"] {
+  --clay-bg: #fdecef; --clay-card: #fff8f9; --clay-inset: #fadbe1; --clay-purple: #d9577a; --clay-active: #f8c9d4; --clay-active-ink: #8f2f4a;
+}
+html[data-clay="1"][data-theme="lemon"] {
+  --clay-bg: #fff8dc; --clay-card: #fffdf2; --clay-inset: #fcf0bd; --clay-purple: #c99a0a; --clay-active: #f8e9a6; --clay-active-ink: #7a5c00;
+}
+html[data-clay="1"][data-theme="lilac"] {
+  --clay-bg: #f3eefc; --clay-card: #fbf9ff; --clay-inset: #e8dffa; --clay-purple: #8a5be0; --clay-active: #d9cbf6; --clay-active-ink: #4b2f8f;
+}
+
+html[data-clay="1"][data-theme] body,
+html[data-clay="1"][data-theme] .app-shell,
+html[data-clay="1"][data-theme] .app-shell__main,
+html[data-clay="1"][data-theme] .app-sidebar { background: var(--clay-bg); }
+html[data-clay="1"][data-theme] .app-sidebar__logo { background: var(--clay-card); }
+html[data-clay="1"][data-theme] .app-sidebar__footer > div:first-child,
+html[data-clay="1"][data-theme] .app-sidebar__profile { background: var(--clay-card) !important; }
+html[data-clay="1"][data-theme] .app-sidebar__item.is-active,
+html[data-clay="1"][data-theme] .app-sidebar__item.is-active:hover { background: var(--clay-active); color: var(--clay-active-ink); }
+html[data-clay="1"][data-theme] .app-sidebar__profile-meta { color: var(--clay-purple); }
+html[data-clay="1"][data-theme] .app-button--primary { background: var(--clay-purple); }

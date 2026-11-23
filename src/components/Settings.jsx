@@ -15,6 +15,7 @@ import { isHoldToShapeOn, setHoldToShapeOn } from '../utils/shapeSnap';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
 import { compressAvatarImage } from '../utils/avatarUtils';
+import { THEMES, getTheme, applyTheme } from '../utils/themeStyle';
 
 // Extra QR codes in the teacher's Share dialog (students only see the app's own).
 const TEACHER_QR_LINKS = [{ id: 'jjmoney', label: 'JJ Money', url: 'https://jjmoney-public.vercel.app', display: 'jjmoney-public.vercel.app' }];
@@ -37,8 +38,15 @@ const Settings = () => {
   const [answerSoundOn, setAnswerSoundState] = useState(() => isAnswerSoundOn());
   const [scribbleEraseOn, setScribbleEraseState] = useState(() => isScribbleEraseOn());
   const [holdToShapeOn, setHoldToShapeState] = useState(() => isHoldToShapeOn());
+  const [themeId, setThemeId] = useState(() => getTheme());
   const { showToast } = useToast();
   const [loading, setLoading] = useState(false);
+  const pickTheme = async (id) => {
+    setThemeId(applyTheme(id));
+    if (!user?.uid) return;
+    try { await setDoc(doc(db, 'users', user.uid), { theme: id }, { merge: true }); }
+    catch { showToast('Saved on this device only — check your connection to keep it on every device.', 'error'); }
+  };
   const [avatarOpen, setAvatarOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const { profile } = useProfile();
@@ -460,6 +468,29 @@ const Settings = () => {
                   <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>A ding-dong for a correct answer and a low buzz for a wrong one. Saved on this device.</span>
                 </span>
               </label>
+            </section>
+          )}
+
+          {!isAdmin && (
+            <section className="app-panel page-card" style={{ marginTop: '24px' }}>
+              <div className="page-card__header">
+                <h3>Colour theme</h3>
+              </div>
+              <p className="settings-muted" style={{ marginTop: 8 }}>Pick the colours you like. It stays on every device you sign in on.</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 16 }}>
+                {THEMES.map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    onClick={() => pickTheme(t.id)}
+                    aria-pressed={themeId === t.id}
+                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, padding: '12px 14px', borderRadius: 22, cursor: 'pointer', background: t.bg, border: themeId === t.id ? `3px solid ${t.accent}` : '3px solid transparent', minWidth: 92, fontWeight: 800, color: '#4a2f2a' }}
+                  >
+                    <span style={{ width: 40, height: 40, borderRadius: 999, background: t.accent, display: 'grid', placeItems: 'center', color: '#fff', fontWeight: 900 }}>{themeId === t.id ? '✓' : ''}</span>
+                    {t.name}
+                  </button>
+                ))}
+              </div>
             </section>
           )}
 
