@@ -1324,7 +1324,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             typeof opt === 'string' ? opt : (opt?.text || String(opt))
           ) : [],
           graphData: currentQ?.graphData || null,
-          answerImage: canvasDataUrl || null,
+          // One copy only when page images exist: every reader uses answerImages first (the admin feed downloads this doc in full).
+          answerImage: (canvasPageImages || []).some(url => url && url.length > 100) ? null : (canvasDataUrl || null),
           // Filter out empty/falsy pages so the grading view doesn't render blank image slots
           answerImages: (canvasPageImages || []).filter(url => url && url.length > 100),
           // Always save typed text — shown alongside or instead of the drawing

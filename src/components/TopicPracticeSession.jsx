@@ -301,7 +301,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
       options: [],
       graphData: q.graphData || null,
       answerText: null,
-      answerImage: answerImages[0] || null,
+      // One copy only: every reader uses answerImages first (this doc is downloaded in full by the admin feed).
+      answerImage: null,
       answerImages,
       hasDrawing: answerImages.length > 0,
       status: 'pending',

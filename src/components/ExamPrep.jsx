@@ -281,7 +281,8 @@ const QuizView = ({
         questionType: q.type || 'short_answer',
         options: Array.isArray(q.options) ? q.options.map(o => typeof o === 'string' ? o : (o?.text || String(o))) : [],
         answerText: typeof userAnswer === 'string' ? userAnswer.trim() : null,
-        answerImage: canvasDataUrl,
+        // One copy only: every reader uses answerImages first (this doc is downloaded in full by the admin feed).
+        answerImage: answerImages.length ? null : canvasDataUrl,
         answerImages,
         hasDrawing: answerImages.length > 0,
         status: 'pending',
