@@ -1,0 +1,40 @@
+/* ───────── Same cards and buttons on every page ─────────
+   Panels: 28px corners, no border, the soft puffy shadow. Tiles (the clickable picks on Daily Study / Daily Challenge):
+   24px corners, same shadow, flat card colour (no gradient). Main buttons: purple pill in the theme colour.
+   Only looks are set here; layout and behaviour of each page are untouched. */
+html[data-clay="1"] .cs__panel,
+html[data-clay="1"] .cs__rec,
+html[data-clay="1"] .xh-hero,
+html[data-clay="1"] .xh-sec,
+html[data-clay="1"] .xh-card,
+html[data-clay="1"] .xh-stat,
+html[data-clay="1"] .xh-next {
+  border: 0 !important; border-radius: 28px; box-shadow: var(--clay-puff);
+}
+html[data-clay="1"] .cs__test-card,
+html[data-clay="1"] .tts-hub-card {
+  border: 0 !important; border-radius: 24px; box-shadow: var(--clay-puff-sm);
+}
+html[data-clay="1"] .tts-hub-card { background: var(--clay-card) !important; }
+/* inline white cards at 22px / 26px corners (the skin in clay-app.css already handles 20 / 24 / 28 / 32) */
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"][style*="border-radius: 22px"],
+html[data-clay="1"] .app-shell__main [style*="background: rgb(255, 255, 255)"][style*="border-radius: 26px"] {
+  box-shadow: var(--clay-puff) !important; border-radius: 28px !important;
+}
+/* Main button: purple pill (Exam Prep / OC) */
+html[data-clay="1"] .xh-btn { border-radius: 999px; }
+html[data-clay="1"] .xh-btn--primary { background: var(--clay-purple); box-shadow: var(--clay-puff-sm); }
+html[data-clay="1"] .xh-btn:not(.xh-btn--primary) { background: var(--clay-card); border-color: transparent; box-shadow: var(--clay-puff-sm); }
+html[data-clay="1"] .app-shell__main .exam-prep-start { background: var(--clay-purple) !important; border-radius: 999px !important; box-shadow: var(--clay-puff-sm) !important; }
+
+/* ───────── Same page width and left edge on every student page (wide screens) ─────────
+   One column, 1240px, centred. Before this each page had its own width (900 / 960 / 980 / 1080 / 1240 / full). */
+@media (min-width: 921px) {
+  .app-shell:has(.app-sidebar--dock) .app-shell__main > .app-page,
+  .app-shell:has(.app-sidebar--dock) .app-shell__main > .xh {
+    max-width: 1240px; width: 100%; margin-left: auto; margin-right: auto; box-sizing: border-box;
+  }
+  .app-shell:has(.app-sidebar--dock) .app-shell__main > .xh { padding: 0; }
+  .app-shell:has(.app-sidebar--dock) .app-shell__main .cs,
+  .app-shell:has(.app-sidebar--dock) .app-shell__main .tts-hub { max-width: none; }
+}

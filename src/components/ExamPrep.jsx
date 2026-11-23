@@ -1084,7 +1084,7 @@ const ResultPanel = ({ result, onRestart, onExit, onReview, cumulativeAnalysis, 
       <button onClick={onExit} className="app-button" style={{ padding: '16px', borderRadius: '18px', background: '#fff', color: '#475569', fontWeight: 800, border: '1px solid #e2e8f0', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
         <ArrowLeft size={16} /> Back to setup
       </button>
-      <button onClick={onRestart} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+      <button onClick={onRestart} className="app-button app-button--primary exam-prep-start" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
         <Play size={16} /> Continue practice
       </button>
     </div>
@@ -1309,7 +1309,7 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
   };
 
   return (
-    <div style={{ maxWidth: '960px', width: '100%', minWidth: 0, margin: '0 auto' }}>
+    <div style={{ width: '100%', minWidth: 0 }}>
       {/* Shared SVG gradients for rings */}
       <svg width={0} height={0} style={{ position: 'absolute', overflow: 'hidden' }} aria-hidden>
         <defs>
@@ -1439,6 +1439,7 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
                   <button
                     onClick={onStart}
                     disabled={!hasTopics || loading}
+                    className={hasTopics && !loading ? 'exam-prep-start' : undefined}
                     style={{
                       ...btnBase,
                       background: !hasTopics || loading
@@ -2028,8 +2029,8 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   const inQuiz = stage === 'quiz';
 
   return (
-    <div className="app-page" style={{ padding: inQuiz ? 'clamp(8px, 1.5vw, 16px)' : 'clamp(16px, 3vw, 28px) clamp(12px, 3vw, 28px) 80px', minHeight: inQuiz ? '100vh' : undefined }}>
-      <div style={{ maxWidth: inQuiz ? '100%' : 'min(1080px, 100%)', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <div className="app-page" style={{ padding: inQuiz ? 'clamp(8px, 1.5vw, 16px)' : '0 0 80px', minHeight: inQuiz ? '100vh' : undefined }}>
+      <div style={{ width: '100%', maxWidth: '100%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
         {/* ── Exam Prep content ── */}
         {true && (

@@ -21,12 +21,14 @@ const SprintHub = ({ uid, onPick, onBack }) => {
 
   return (
     <div className="tts-hub">
-      <button type="button" className="tts-hub__back" onClick={onBack}>
-        <ArrowLeft size={18} /> Back
-      </button>
       <div className="tts-hub__head">
-        <h2>Daily Challenge</h2>
-        <p>Five weekly sprints · resets in {formatResetCountdown(msLeft)}</p>
+        <button type="button" className="tts-hub__back" onClick={onBack} aria-label="Back">
+          <ArrowLeft size={18} />
+        </button>
+        <div>
+          <h2>Daily Challenge</h2>
+          <p>Five weekly sprints · resets in {formatResetCountdown(msLeft)}</p>
+        </div>
       </div>
       <div className="tts-hub__grid">
         {SPRINT_TYPES.map((type) => {

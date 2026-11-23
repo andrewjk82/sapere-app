@@ -13,10 +13,12 @@ html[data-clay="1"] .tts-hub__head p {
 }
 html[data-clay="1"] .app-page__header { align-items: center; margin-bottom: 4px; }
 html[data-clay="1"] .cs__head { align-items: center; }
-html[data-clay="1"] .tts-hub__head p { margin-bottom: 18px; }
+html[data-clay="1"] .tts-hub__head { display: flex; align-items: center; gap: 14px; }
+html[data-clay="1"] .tts-hub__head p { margin-bottom: 0; }
+html[data-clay="1"] .tts-hub__head { margin-bottom: 18px; }
 /* Back link on Daily Challenge: a round button, like a back arrow next to the title */
 html[data-clay="1"] .tts-hub__back {
-  width: 40px; height: 40px; padding: 0; justify-content: center; border-radius: 50%; margin-bottom: 12px;
+  width: 40px; height: 40px; padding: 0; justify-content: center; border-radius: 50%; margin: 0; flex: none;
   background: var(--clay-card); color: var(--clay-ink); box-shadow: var(--clay-puff-sm); font-size: 0;
 }
 html[data-clay="1"] .tts-hub__back svg { width: 20px; height: 20px; }
