@@ -1,0 +1,6 @@
+/* ───────── One font everywhere: Nunito ─────────
+   Pages used to mix Poppins, Outfit, Inter, Lora and a monospace face through inline styles. Everything now uses the
+   app font, except maths (KaTeX), which must keep its own glyphs. Looks only: sizes, weights and layout are untouched. */
+html[data-clay="1"] body :not(.katex):not(.katex *):not(.katex-display *):not(canvas) {
+  font-family: var(--font-sans) !important;
+}
