@@ -43,7 +43,7 @@ const liftHover = {
 
 // Student "Today's plan": one equal-size tile per task. Finished = green + check, the next unfinished one gets a purple
 // ring, tasks that are not once-a-day (done === null, e.g. Exam Prep) stay neutral.
-const TodayPlanCard = ({ items }) => {
+const TodayPlanCard = ({ items, children }) => {
   const tracked = items.filter((i) => i.done !== null);
   const doneCount = tracked.filter((i) => i.done).length;
   const pct = tracked.length ? Math.round((doneCount / tracked.length) * 100) : 0;
@@ -86,6 +86,7 @@ const TodayPlanCard = ({ items }) => {
             </button>
           );
         })}
+        {children}
       </div>
     </div>
   );
@@ -591,7 +592,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         {!isAdmin && (
           <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
             <div style={{ gridColumn: '1 / -1' }}>
-              <TodayPlanCard items={todayPlan} />
+              <TodayPlanCard items={todayPlan}><OnlineStudySessionCard /></TodayPlanCard>
             </div>
             <div style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(auto-fit, minmax(300px, 1fr))', gap: isMobile ? '16px' : '20px', alignItems: 'start', padding: 0 }}>
               {/* Journey Map snapshot */}
@@ -760,7 +761,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </div>
         )}
 
-        {!isAdmin && <OnlineStudySessionCard />}
 
         {!isAdmin && (() => {
           // Collect every upcoming exam (term D-Day + per-subject study exams)

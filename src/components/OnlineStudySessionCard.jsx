@@ -44,64 +44,40 @@ const OnlineStudySessionCard = () => {
   // The second (Zoom) room only runs until 10:30 PM, even when the main room is opened manually.
   const zoomRoomOpen = Boolean(config?.zoomLink2) && nowMin < END_MIN && nowMin >= 6 * 60;
 
+  // Same size and look as the "Today's plan" tiles (rendered inside that grid, see Dashboard).
+  const tileBase = {
+    position: 'relative', textAlign: 'left', cursor: 'pointer', minHeight: 150, boxSizing: 'border-box',
+    padding: '16px 18px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: 4,
+    background: '#ffffff', boxShadow: '0 10px 24px rgba(0,0,0,0.06)', color: '#0f172a',
+  };
+  const mainSub = config?.manualOpen && !inWindow ? 'Join the study room' : 'Open until 10:30 PM';
+
   return (
     <>
     <button
       type="button"
       onClick={() => setShowGuidelines(config.zoomLink)}
-      style={{
-        display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
-        margin: '0 0 24px', maxWidth: '100%',
-        padding: '20px 24px', borderRadius: '28px',
-        background: 'linear-gradient(110deg, #ffffff, #f6f3ff)',
-        color: '#1e1b4b', textDecoration: 'none', cursor: 'pointer', border: '1px solid #e7e0f7', textAlign: 'left',
-        boxShadow: '0 8px 24px rgba(79,70,229,0.09)',
-        position: 'relative', overflow: 'hidden',
-        transition: 'transform 0.15s, box-shadow 0.15s',
-      }}
-      onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.99)'; }}
-      onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-      onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+      style={{ ...tileBase, border: '2px solid #d9d0ff' }}
     >
-      <div style={{ position: 'absolute', top: '-32px', right: '-14px', width: '130px', height: '130px', borderRadius: '50%', background: 'rgba(124,58,237,0.045)' }} />
-      <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: '#eee9ff', color: '#6d5efc', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-        <Video size={22} />
-      </div>
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8278a7', marginBottom: '3px' }}>
-          Online Study Session · Live now
-        </div>
-        <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#27224e' }}>
-          {config?.manualOpen && !inWindow
-            ? 'Tap to join the Online Study Room'
-            : 'Tap to join the Online Study Room · open until 10:30 PM'}
-        </div>
-      </div>
+      <span style={{ position: 'absolute', top: 12, right: 14, fontSize: '0.68rem', fontWeight: 800, color: '#fff', background: '#ef4444', borderRadius: 999, padding: '2px 10px' }}>Live</span>
+      <span style={{ width: 44, height: 44, borderRadius: 14, background: '#eee9ff', color: '#6d5efc', display: 'grid', placeItems: 'center', marginBottom: 6 }}><Video size={22} /></span>
+      <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0f172a' }}>Online Study Room</span>
+      <span style={{ fontSize: '0.82rem', color: '#475569' }}>{mainSub}</span>
+      <span style={{ marginTop: 'auto', paddingTop: 8, fontSize: '0.88rem', fontWeight: 800, color: '#6d5efc' }}>Join</span>
     </button>
 
     {zoomRoomOpen && (
-      <button
-        type="button"
-        onClick={() => setShowGuidelines(config.zoomLink2)}
-        style={{
-          display: 'flex', alignItems: 'center', gap: '16px', width: '100%', maxWidth: '100%',
-          margin: '-12px 0 24px', padding: '16px 24px', borderRadius: '28px',
-          background: 'linear-gradient(110deg, #ffffff, #eef6ff)', color: '#1e1b4b', cursor: 'pointer',
-          border: '1px solid #dbe7f7', textAlign: 'left', boxShadow: '0 8px 24px rgba(37,99,235,0.08)',
-        }}
-      >
-        <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: '#e0edff', color: '#2563eb', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-          <Video size={22} />
-        </div>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#64748b', marginBottom: '3px' }}>
-            Zoom Study Room
-          </div>
-          <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#27224e' }}>
-            Tap to join on Zoom · open until 10:30 PM only
-          </div>
-        </div>
-      </button>
+    <button
+      type="button"
+      onClick={() => setShowGuidelines(config.zoomLink2)}
+      style={{ ...tileBase, border: '2px solid #bcd4fa' }}
+    >
+      <span style={{ position: 'absolute', top: 12, right: 14, fontSize: '0.68rem', fontWeight: 800, color: '#fff', background: '#ef4444', borderRadius: 999, padding: '2px 10px' }}>Live</span>
+      <span style={{ width: 44, height: 44, borderRadius: 14, background: '#e0edff', color: '#2563eb', display: 'grid', placeItems: 'center', marginBottom: 6 }}><Video size={22} /></span>
+      <span style={{ fontWeight: 800, fontSize: '1.05rem', color: '#0f172a' }}>Zoom Study Room</span>
+      <span style={{ fontSize: '0.82rem', color: '#475569' }}>Open until 10:30 PM only</span>
+      <span style={{ marginTop: 'auto', paddingTop: 8, fontSize: '0.88rem', fontWeight: 800, color: '#2563eb' }}>Join</span>
+    </button>
     )}
 
     <FilmingGuidelinesModal
