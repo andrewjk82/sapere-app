@@ -28,13 +28,14 @@ html[data-clay="1"] .xh-btn:not(.xh-btn--primary) { background: var(--clay-card)
 html[data-clay="1"] .app-shell__main .exam-prep-start { background: var(--clay-purple) !important; border-radius: 999px !important; box-shadow: var(--clay-puff-sm) !important; }
 
 /* ───────── Same page width and left edge on every student page (wide screens) ─────────
-   One column, 1240px, centred. Before this each page had its own width (900 / 960 / 980 / 1080 / 1240 / full). */
+   Every page uses the full width next to the menu, like the Schedule. Before this each page had its own cap
+   (900 / 960 / 980 / 1080 / 1240) and sat centred, so the left edge and the width changed from page to page. */
 @media (min-width: 921px) {
   .app-shell:has(.app-sidebar--dock) .app-shell__main > .app-page,
   .app-shell:has(.app-sidebar--dock) .app-shell__main > .xh {
-    max-width: 1240px; width: 100%; margin-left: auto; margin-right: auto; box-sizing: border-box;
+    max-width: none; width: 100%; margin-left: 0; margin-right: 0; box-sizing: border-box;
   }
   .app-shell:has(.app-sidebar--dock) .app-shell__main > .xh { padding: 0; }
   .app-shell:has(.app-sidebar--dock) .app-shell__main .cs,
-  .app-shell:has(.app-sidebar--dock) .app-shell__main .tts-hub { max-width: none; }
+  .app-shell:has(.app-sidebar--dock) .app-shell__main .tts-hub { max-width: none; margin-left: 0; margin-right: 0; }
 }
