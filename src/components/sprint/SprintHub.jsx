@@ -23,8 +23,9 @@ const SprintHub = ({ uid, onPick }) => {
       <div className="tts-hub__head">
         <div>
           <h2>Daily Challenge</h2>
-          <p>Five weekly sprints · resets in {formatResetCountdown(msLeft)}</p>
+          <p>Five weekly sprints</p>
         </div>
+        <span className="tts-hub__reset">Resets in {formatResetCountdown(msLeft)}</span>
       </div>
       <div className="tts-hub__grid">
         {SPRINT_TYPES.map((type) => {
@@ -42,6 +43,12 @@ const SprintHub = ({ uid, onPick }) => {
               <span className="tts-hub-card__best">
                 {best ? `Best ${formatSprintTime(Number(best.bestTimeMs))}` : 'Not played yet'}
               </span>
+              {best && Number(best.attemptsCount) > 0 && (
+                <span className="tts-hub-card__tries">
+                  {Number(best.attemptsCount)} {Number(best.attemptsCount) === 1 ? 'try' : 'tries'} this week
+                </span>
+              )}
+              <span className="tts-hub-card__play">{best ? 'Play again' : 'Play'}</span>
             </button>
           );
         })}

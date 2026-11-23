@@ -39,3 +39,37 @@ html[data-clay="1"] .app-shell__main .exam-prep-start { background: var(--clay-p
   html.has-dock .app-shell .app-shell__main .cs,
   html.has-dock .app-shell .app-shell__main .tts-hub { max-width: none; margin-left: 0; margin-right: 0; }
 }
+
+/* ───────── Daily Study tiles: same look as the dashboard tiles ─────────
+   Icon in a colour square (top-left), title and status left-aligned, soft card colour; finished = green.
+   CSS only: the tile markup and click behaviour of ChallengeStartView are untouched. */
+html[data-clay="1"] .cs__test-card { background: var(--clay-card); height: 190px; }
+html[data-clay="1"] .cs__test-card--pending,
+html[data-clay="1"] .cs__test-card--ended,
+html[data-clay="1"] .cs__test-card--loading,
+html[data-clay="1"] .cs__test-card--neutral { background: var(--clay-card); }
+html[data-clay="1"] .cs__test-card--completed { background: #e3f4e8; box-shadow: none; border: 2px solid #bfe3c9 !important; }
+html[data-clay="1"] .cs__test-card--with-note .cs__tile-title { transform: none; }
+html[data-clay="1"] .cs__tile-main { align-items: flex-end; justify-content: flex-start; text-align: left; padding: 14px 18px; }
+html[data-clay="1"] .cs__tile-title { font-size: 1.12rem; font-weight: 800; letter-spacing: -0.01em; }
+html[data-clay="1"] .cs__tile-watermark {
+  top: 16px; left: 18px; right: auto; width: 44px; height: 44px; padding: 10px; box-sizing: border-box; border-radius: 14px;
+  background: var(--clay-purple); color: #fff !important; opacity: 1 !important; stroke-width: 2.2; z-index: 0;
+}
+html[data-clay="1"] .cs__test-card--completed .cs__tile-watermark { background: #2fa764; }
+html[data-clay="1"] .cs__tile-status { left: auto; right: 14px; top: 14px; }
+html[data-clay="1"] .cs__note-strip { background: var(--clay-inset); border-top: 0; justify-content: flex-start; padding-left: 18px; }
+
+/* ───────── Daily Challenge hub: big icon cards ───────── */
+html[data-clay="1"] .tts-hub__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+html[data-clay="1"] .tts-hub__reset { padding: 8px 16px; border-radius: 999px; background: var(--clay-inset); color: var(--clay-soft); font-weight: 800; font-size: 0.85rem; white-space: nowrap; }
+html[data-clay="1"] .tts-hub-card { aspect-ratio: auto; min-height: 250px; padding: 20px 14px; gap: 6px; justify-content: flex-start; }
+html[data-clay="1"] .tts-hub-card__glyph {
+  width: 80px; height: 80px; margin-bottom: 8px; display: grid; place-items: center; border-radius: 28px;
+  background: var(--hub-accent); color: #fff; font-size: 2.4rem; box-shadow: var(--clay-puff-sm);
+}
+html[data-clay="1"] .tts-hub-card__name { font-size: 1.2rem; font-weight: 800; color: var(--clay-ink); }
+html[data-clay="1"] .tts-hub-card__tries { font-size: 0.78rem; font-weight: 700; color: var(--clay-soft); }
+html[data-clay="1"] .tts-hub-card__play {
+  margin-top: auto; padding: 9px 26px; border-radius: 999px; background: var(--hub-accent); color: #fff; font-weight: 800; font-size: 0.95rem; box-shadow: var(--clay-puff-sm);
+}
