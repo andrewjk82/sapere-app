@@ -3311,6 +3311,10 @@ export const CURRICULUM_DATA = {
         { id: 'sch-acer-reading', title: 'ACER Reading and Viewing' },
         { id: 'sch-acer-writing', title: 'ACER Writing' },
         { id: 'sch-acer-maths', title: 'ACER Mathematics' },
+        { id: 'sch-acer-edutest-verbal', title: 'Edutest Verbal Reasoning' },
+        { id: 'sch-acer-edutest-numerical', title: 'Edutest Numerical Reasoning' },
+        { id: 'sch-acer-edutest-maths', title: 'Edutest Mathematics' },
+        { id: 'sch-acer-edutest-reading', title: 'Edutest Reading Comprehension' },
       ],
     },
     {

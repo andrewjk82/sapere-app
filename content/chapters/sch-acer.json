@@ -16315,6 +16315,30 @@
           "xp": 1
         }
       ]
+    },
+    {
+      "topicId": "sch-acer-edutest-verbal",
+      "code": "",
+      "title": "Edutest Verbal Reasoning",
+      "questions": []
+    },
+    {
+      "topicId": "sch-acer-edutest-numerical",
+      "code": "",
+      "title": "Edutest Numerical Reasoning",
+      "questions": []
+    },
+    {
+      "topicId": "sch-acer-edutest-maths",
+      "code": "",
+      "title": "Edutest Mathematics",
+      "questions": []
+    },
+    {
+      "topicId": "sch-acer-edutest-reading",
+      "code": "",
+      "title": "Edutest Reading Comprehension",
+      "questions": []
     }
   ]
 }
