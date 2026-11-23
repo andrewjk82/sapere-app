@@ -190,19 +190,19 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
   const kpiCard = (children, lead = false) => (
     <div style={{
       padding: '18px 20px', borderRadius: '20px', position: 'relative', overflow: 'hidden',
-      background: lead ? 'linear-gradient(135deg, #1e1b4b, #312e81)' : 'rgba(255,255,255,0.9)',
+      background: lead ? '#efeaff' : 'rgba(255,255,255,0.9)',
       border: lead ? 'none' : '1px solid rgba(167,139,250,0.18)',
-      boxShadow: lead ? '0 18px 40px rgba(30,27,75,0.25)' : '0 8px 24px rgba(91,33,182,0.05)',
-      color: lead ? '#fff' : '#1e1b4b',
+      boxShadow: '0 8px 24px rgba(91,33,182,0.07)',
+      color: '#1e1b4b',
     }}>
       {children}
     </div>
   );
-  const lbl = (text, lead) => (
-    <div style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: lead ? 'rgba(255,255,255,0.7)' : '#8b7aa7' }}>{text}</div>
+  const lbl = (text) => (
+    <div style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#8b7aa7' }}>{text}</div>
   );
-  const val = (text, lead) => (
-    <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: '2rem', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: lead ? '#fff' : '#1e1b4b' }}>{text}</div>
+  const val = (text) => (
+    <div style={{ fontFamily: '"Outfit", sans-serif', fontSize: '2rem', fontWeight: 800, lineHeight: 1.05, marginTop: '4px', color: '#1e1b4b' }}>{text}</div>
   );
 
   const kpiStrip = (
@@ -211,13 +211,13 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
         <>
           {lbl('Projected HSC Band', true)}
           {val(displayBandLabel, true)}
-          <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'rgba(255,255,255,0.8)', marginTop: '6px' }}>
+          <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#6d6a85', marginTop: '6px' }}>
             {modResult
               ? `HSC aligned mark: ${modResult.projectedMark.toFixed(0)}`
               : displayBand >= 6 ? 'Top band — hold it steady' : `Band ${displayBand + 1} in reach`}
           </div>
           {modResult && (
-            <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.6)', fontWeight: 600, marginTop: '2px' }}>
+            <div style={{ fontSize: '0.72rem', color: '#8b7aa7', fontWeight: 600, marginTop: '2px' }}>
               Internal {modResult.moderatedInternal.toFixed(0)} · External {modResult.externalEstimate.toFixed(0)}
               {modResult.rawExternalPct !== modResult.externalEstimate && (
                 <span style={{ opacity: 0.7 }}> (raw {modResult.rawExternalPct.toFixed(0)}%)</span>
@@ -230,9 +230,9 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
                 width: '26px', height: '26px', borderRadius: '8px', display: 'grid', placeItems: 'center',
                 fontFamily: '"Outfit", sans-serif', fontSize: '0.72rem', fontWeight: 800,
                 background: b === displayBand
-                  ? 'linear-gradient(135deg, #c4b5fd, #f5d0fe)'
-                  : b < displayBand ? 'rgba(245,208,254,0.32)' : 'rgba(255,255,255,0.08)',
-                color: b === displayBand ? '#4c1d95' : b < displayBand ? '#fff' : 'rgba(255,255,255,0.4)',
+                  ? '#c4b5fd'
+                  : b < displayBand ? 'rgba(124,58,237,0.16)' : 'rgba(124,58,237,0.06)',
+                color: b === displayBand ? '#4c1d95' : b < displayBand ? '#5b43a8' : '#a89bd0',
               }}>{b}</div>
             ))}
           </div>
