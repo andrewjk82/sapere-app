@@ -31,11 +31,11 @@ html[data-clay="1"] .app-shell__main .exam-prep-start { background: var(--clay-p
    Every page uses the full width next to the menu, like the Schedule. Before this each page had its own cap
    (900 / 960 / 980 / 1080 / 1240) and sat centred, so the left edge and the width changed from page to page. */
 @media (min-width: 921px) {
-  .app-shell:has(.app-sidebar--dock) .app-shell__main > .app-page,
-  .app-shell:has(.app-sidebar--dock) .app-shell__main > .xh {
+  html.has-dock .app-shell .app-shell__main > .app-page,
+  html.has-dock .app-shell .app-shell__main > .xh {
     max-width: none; width: 100%; margin-left: 0; margin-right: 0; box-sizing: border-box;
   }
-  .app-shell:has(.app-sidebar--dock) .app-shell__main > .xh { padding: 0; }
-  .app-shell:has(.app-sidebar--dock) .app-shell__main .cs,
-  .app-shell:has(.app-sidebar--dock) .app-shell__main .tts-hub { max-width: none; margin-left: 0; margin-right: 0; }
+  html.has-dock .app-shell .app-shell__main > .xh { padding: 0; }
+  html.has-dock .app-shell .app-shell__main .cs,
+  html.has-dock .app-shell .app-shell__main .tts-hub { max-width: none; margin-left: 0; margin-right: 0; }
 }

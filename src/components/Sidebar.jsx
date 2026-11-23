@@ -73,6 +73,11 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
   const [avatarOpen, setAvatarOpen] = useState(false);
   const { profile } = useProfile();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+  // The student dock: tell the page CSS (no :has(), which some iPad/Safari versions ignore).
+  useEffect(() => {
+    document.documentElement.classList.toggle('has-dock', !isAdmin);
+    return () => document.documentElement.classList.remove('has-dock');
+  }, [isAdmin]);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1024);

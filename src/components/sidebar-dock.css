@@ -21,5 +21,5 @@
   .app-sidebar--dock .app-sidebar__footer > div:first-child { margin: 0 !important; padding: 0 4px !important; background: transparent !important; box-shadow: none !important; border: 0 !important; border-left: 2px solid rgba(120, 90, 70, 0.12) !important; border-radius: 0 !important; }
   .app-sidebar--dock .app-sidebar__footer > div:not(:first-child) { display: none; }
   /* room for the dock under the page */
-  .app-shell:has(.app-sidebar--dock) .app-shell__main { padding-bottom: 104px; }
+  html.has-dock .app-shell .app-shell__main { padding-bottom: 104px; }
 }
