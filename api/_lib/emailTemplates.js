@@ -20,26 +20,26 @@ export function emailShell(previewText, innerHtml) {
   <meta name="supported-color-schemes" content="light">
   <title>Secret Study</title>
 </head>
-<body style="margin:0;padding:0;background:#f3f1fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+<body style="margin:0;padding:0;background:#fdeedd;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(previewText)}</div>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f3f1fb" style="background:#f3f1fb;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fdeedd" style="background:#fdeedd;">
     <tr><td align="center" style="padding:32px 16px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;">
         <!-- Brand row -->
         <tr><td style="padding:0 4px 16px;">
           <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-            <td style="width:34px;height:34px;background:#7c3aed;border-radius:9px;text-align:center;vertical-align:middle;color:#fff;font-weight:800;font-size:16px;">S</td>
-            <td style="padding-left:10px;font-weight:800;font-size:15px;color:#1e1b4b;">Secret Study</td>
+            <td style="width:34px;height:34px;background:#6d4ed8;border-radius:12px;box-shadow:0 3px 6px rgba(80,50,180,0.35);text-align:center;vertical-align:middle;color:#fff;font-weight:800;font-size:16px;">S</td>
+            <td style="padding-left:10px;font-weight:800;font-size:13px;letter-spacing:0.18em;color:#1d1747;">SECRET STUDY</td>
           </tr></table>
         </td></tr>
         <!-- Card -->
-        <tr><td style="background:#ffffff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(76,29,149,0.10);">
+        <tr><td style="background:#fffaf3;border-radius:32px;overflow:hidden;box-shadow:0 14px 34px rgba(150,100,50,0.18),inset 0 2px 0 #ffffff;">
           ${innerHtml}
         </td></tr>
         <!-- Footer -->
         <tr><td style="padding:22px 8px 0;text-align:center;color:#9890b5;font-size:12px;line-height:1.6;font-weight:500;">
           Sent because you're enrolled at Secret Study · North Sydney NSW<br>
-          <a href="${APP_URL}" style="color:#7c3aed;text-decoration:none;font-weight:700;">Open the app</a>
+          <a href="${APP_URL}" style="color:#6d4ed8;text-decoration:none;font-weight:700;">Open the app</a>
         </td></tr>
       </table>
     </td></tr>
@@ -49,9 +49,9 @@ export function emailShell(previewText, innerHtml) {
 }
 
 // Shared button.
-const button = (label, href = APP_URL, color = '#7c3aed') =>
+const button = (label, href = APP_URL, color = '#6d4ed8') =>
   `<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="background:${color};border-radius:13px;">
+    <td style="background:${color};border-radius:99px;box-shadow:0 6px 12px rgba(80,50,180,0.35),inset 0 2px 0 rgba(255,255,255,0.3);">
       <a href="${href}" style="display:inline-block;padding:15px 30px;color:#ffffff;text-decoration:none;font-size:15px;font-weight:800;">${esc(label)}</a>
     </td></tr></table>`;
 
@@ -74,7 +74,7 @@ export function dailyChallengeEmail({ name = 'there', topic = 'today\'s topics',
       <div style="font-size:10px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#9890b5;margin-top:4px;">${lbl}</div>
     </td>`;
   const inner = `
-    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:30px 32px;">
+    <div style="background:#7c5ce0;background-image:linear-gradient(160deg,#9276ec,#6a49d6);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:30px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Daily challenge</div>
       <div style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:800;color:#fff;margin-top:6px;">Today's practice is ready</div>
     </div>
@@ -83,7 +83,7 @@ export function dailyChallengeEmail({ name = 'there', topic = 'today\'s topics',
       <p style="margin:0 0 22px;font-size:14px;line-height:1.6;color:#6d6a85;">
         ${questionCount} questions on <strong style="color:#1e1b4b;">${esc(topic)}</strong>, calibrated from your recent practice. About ${minutes} minutes.
       </p>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5fd;border-radius:16px;margin-bottom:22px;"><tr>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f1ebff;border-radius:22px;box-shadow:0 5px 10px rgba(110,80,200,0.15),inset 0 2px 0 rgba(255,255,255,0.9);margin-bottom:22px;"><tr>
         ${stat(questionCount, 'Questions')}
         ${stat(`~${minutes} min`, 'Time')}
         ${stat(`+${xp} XP`, 'Up for grabs')}
@@ -110,7 +110,7 @@ export function classReminderEmail({ name = 'there', subjectLabel = 'your class'
     bring && infoRow('Bring', esc(bring)),
   ].filter(Boolean).join('');
   const inner = `
-    <div style="background:linear-gradient(135deg,#312e81,#4338ca);padding:30px 32px;">
+    <div style="background:#4a3fb0;background-image:linear-gradient(160deg,#5b50c8,#3b2f9c);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:30px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Class reminder · in ${hoursAway === 1 ? '1 hour' : `${hoursAway} hours`}</div>
       <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">${esc(subjectLabel)}</div>
     </div>
@@ -119,7 +119,7 @@ export function classReminderEmail({ name = 'there', subjectLabel = 'your class'
       <p style="margin:0 0 20px;font-size:14px;line-height:1.6;color:#6d6a85;">
         A quick reminder that your next class is coming up. Here are the details:
       </p>
-      <div style="background:#f7f5fd;border-radius:16px;padding:6px 18px;margin-bottom:22px;">
+      <div style="background:#f1ebff;border-radius:22px;box-shadow:0 5px 10px rgba(110,80,200,0.15),inset 0 2px 0 rgba(255,255,255,0.9);padding:6px 18px;margin-bottom:22px;">
         ${rows}
       </div>
       ${button('View lesson', APP_URL, '#4338ca')}
@@ -136,7 +136,7 @@ export function classReminderEmail({ name = 'there', subjectLabel = 'your class'
 export function onlineStudySessionEmail({ name = 'there', zoomLink = '', startLabel = '7:30 PM', endLabel = '10:30 PM' }) {
   const first = esc(String(name).split(' ')[0]);
   const inner = `
-    <div style="background:linear-gradient(135deg,#312e81,#4338ca);padding:30px 32px;">
+    <div style="background:#4a3fb0;background-image:linear-gradient(160deg,#5b50c8,#3b2f9c);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:30px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Online study session · tonight</div>
       <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">Study room opens at ${esc(startLabel)}</div>
     </div>
@@ -178,7 +178,7 @@ export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, c
     </div>`;
   }
   if (tomorrowClasses.length > 0) {
-    cards += `<div style="background:#f7f5fd;border-radius:16px;padding:6px 18px;">`
+    cards += `<div style="background:#f1ebff;border-radius:22px;box-shadow:0 5px 10px rgba(110,80,200,0.15),inset 0 2px 0 rgba(255,255,255,0.9);padding:6px 18px;">`
       + tomorrowClasses.map((c, i) => `
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
           <td style="padding:11px 0;${i < tomorrowClasses.length - 1 ? 'border-bottom:1px solid #f1f0f8;' : ''}">
@@ -189,7 +189,7 @@ export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, c
   }
 
   const inner = `
-    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:30px 32px;">
+    <div style="background:#7c5ce0;background-image:linear-gradient(160deg,#9276ec,#6a49d6);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:30px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Evening check-in</div>
       <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">${headline}</div>
     </div>
@@ -233,7 +233,7 @@ export function challengeCompleteEmail({ studentName = 'A student', label = 'Dai
   if (reportCount > 0) attention.push(`${reportCount} question${reportCount === 1 ? '' : 's'} reported`);
 
   const inner = `
-    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:28px 32px;">
+    <div style="background:#7c5ce0;background-image:linear-gradient(160deg,#9276ec,#6a49d6);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:28px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">${esc(label)} complete</div>
       <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">${name}</div>
     </div>
@@ -246,7 +246,7 @@ export function challengeCompleteEmail({ studentName = 'A student', label = 'Dai
       <div style="text-align:center;font-size:13px;font-weight:800;color:${accentColor};letter-spacing:0.04em;margin-bottom:14px;">${pct}% ACCURACY</div>
       ${scoreBar}
       <!-- Stat tiles -->
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5fd;border-radius:16px;margin-top:22px;"><tr>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f1ebff;border-radius:22px;box-shadow:0 5px 10px rgba(110,80,200,0.15),inset 0 2px 0 rgba(255,255,255,0.9);margin-top:22px;"><tr>
         ${stat(`${score}/${total}`, 'Score')}
         ${stat(`${pct}%`, 'Accuracy', accentColor)}
         ${stat(`+${xpEarned}`, 'XP earned', '#7c3aed')}
@@ -269,7 +269,7 @@ export function challengeCompleteEmail({ studentName = 'A student', label = 'Dai
    ────────────────────────────────────────────────────────────────────────── */
 export function genericEmail({ title = 'Secret Study', body = '', ctaLabel = 'Open the app', ctaHref = APP_URL }) {
   const inner = `
-    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:28px 32px;">
+    <div style="background:#7c5ce0;background-image:linear-gradient(160deg,#9276ec,#6a49d6);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:28px 32px;">
       <div style="font-family:'Outfit',sans-serif;font-size:21px;font-weight:800;color:#fff;line-height:1.3;">${esc(title)}</div>
     </div>
     <div style="padding:28px 32px;">
@@ -293,16 +293,18 @@ export function adminSummaryEmail({ title = 'Summary', rows = [], note = '' }) {
       </td>
     </tr></table>`).join('');
   const inner = `
-    <div style="background:linear-gradient(135deg,#312e81,#4338ca);padding:26px 32px;">
+    <div style="background:#4a3fb0;background-image:linear-gradient(160deg,#5b50c8,#3b2f9c);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:26px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7);">Admin · automated report</div>
       <div style="font-family:'Outfit',sans-serif;font-size:21px;font-weight:800;color:#fff;margin-top:6px;">${esc(title)}</div>
     </div>
     <div style="padding:26px 32px;">
-      <div style="background:#f7f5fd;border-radius:16px;padding:6px 18px;">${rowHtml}</div>
+      <div style="background:#f1ebff;border-radius:22px;box-shadow:0 5px 10px rgba(110,80,200,0.15),inset 0 2px 0 rgba(255,255,255,0.9);padding:6px 18px;">${rowHtml}</div>
       ${note ? `<p style="margin:16px 0 0;font-size:13px;font-weight:600;color:#6d6a85;">${esc(note)}</p>` : ''}
     </div>`;
   return emailShell(title, inner);
 }
+
+const row = (label, value) => infoRow(label, value);
 
 /* ──────────────────────────────────────────────────────────────────────────
    Teacher · pending review notification
@@ -310,7 +312,7 @@ export function adminSummaryEmail({ title = 'Summary', rows = [], note = '' }) {
 export function pendingReviewEmail({ studentName = 'A student', source = 'Daily Challenge', topicTitle = '', chapterTitle = '', questionPreview = '' }) {
   const context = [topicTitle, chapterTitle].filter(Boolean).join(' · ');
   const inner = `
-    <div style="background:linear-gradient(135deg,#f59e0b,#fbbf24);padding:28px 32px;">
+    <div style="background:#f5a524;background-image:linear-gradient(160deg,#ffc14d,#f29a14);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:28px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(0,0,0,0.55);">Grading Required</div>
       <div style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:900;color:#1e1b4b;margin-top:6px;">📝 ${esc(studentName)} submitted for marking</div>
     </div>

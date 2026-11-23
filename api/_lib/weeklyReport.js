@@ -449,7 +449,7 @@ export function renderWeeklyReportBody({ name, label, days, dailyByDate, calcByD
 // Weekly report email — uses the shared branded shell.
 export function buildEmailShell(title, body) {
   const inner = `
-    <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:28px 32px;">
+    <div style="background:#7c5ce0;background-image:linear-gradient(160deg,#9276ec,#6a49d6);border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);padding:28px 32px;">
       <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Weekly report</div>
       <div style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:800;color:#ffffff;margin-top:6px;">${esc(title)}</div>
     </div>

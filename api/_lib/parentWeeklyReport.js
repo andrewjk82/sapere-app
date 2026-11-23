@@ -67,22 +67,22 @@ const utc = (s) => new Date(`${s}T00:00:00Z`);
 
 // ── layout pieces ──────────────────────────────────────────────────────────
 const chip = (t, bg, fg) => `<span style="display:inline-block;background:${bg};color:${fg};font-size:11px;font-weight:800;padding:3px 9px;border-radius:99px;">${esc(t)}</span>`;
-const sec = (t) => `<div style="margin:34px 0 14px;"><div style="font-size:11.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#4f46e5;">${esc(t)}</div><div style="height:1px;background:#e5e7eb;margin-top:10px;"></div></div>`;
-const tile = (v, l) => `<td width="25%" style="padding:0 3px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f5f3ff;border-radius:14px;"><tr><td style="padding:14px 6px;text-align:center;"><div style="font-size:24px;font-weight:800;color:#4c1d95;">${esc(v)}</div><div style="font-size:11px;font-weight:700;color:#7c3aed;margin-top:2px;">${esc(l)}</div></td></tr></table></td>`;
-const bar = (p, color = '#4f46e5') => {
+const sec = (t) => `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:34px 0 14px;"><tr><td width="22" valign="middle" style="width:22px;"><div style="width:22px;height:3px;background:#ff6b4a;font-size:0;line-height:0;border-radius:2px;">&nbsp;</div></td><td style="padding-left:10px;font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#6d4ed8;">${esc(t)}</td></tr></table>`;
+const tile = (v, l) => `<td width="25%" style="padding:0 3px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f1ebff;border-radius:20px;box-shadow:0 5px 10px rgba(110,80,200,0.18),inset 0 2px 0 rgba(255,255,255,0.9);"><tr><td style="padding:16px 6px;text-align:center;"><div style="font-size:24px;font-weight:800;color:#1d1747;">${esc(v)}</div><div style="font-size:11px;font-weight:700;color:#6d4ed8;margin-top:2px;">${esc(l)}</div></td></tr></table></td>`;
+const bar = (p, color = '#6d4ed8') => {
   const w = Math.max(0, Math.min(100, Math.round(p)));
-  if (w <= 0) return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#e5e7eb;height:8px;border-radius:99px;font-size:0;line-height:0;">&nbsp;</td></tr></table>';
-  if (w >= 100) return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${color};height:8px;border-radius:99px;font-size:0;line-height:0;">&nbsp;</td></tr></table>`;
-  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="${w}%" style="background:${color};height:8px;border-radius:99px 0 0 99px;font-size:0;line-height:0;">&nbsp;</td><td style="background:#e5e7eb;height:8px;border-radius:0 99px 99px 0;font-size:0;line-height:0;">&nbsp;</td></tr></table>`;
+  if (w <= 0) return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#f0e2d0;height:10px;border-radius:99px;font-size:0;line-height:0;">&nbsp;</td></tr></table>';
+  if (w >= 100) return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${color};height:10px;border-radius:99px;font-size:0;line-height:0;">&nbsp;</td></tr></table>`;
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="${w}%" style="background:${color};height:10px;border-radius:99px 0 0 99px;font-size:0;line-height:0;">&nbsp;</td><td style="background:#f0e2d0;height:10px;border-radius:0 99px 99px 0;font-size:0;line-height:0;">&nbsp;</td></tr></table>`;
 };
-const row = (label, p, val, color = '#4f46e5', vcolor = '#0f172a', bold = false) =>
+const row = (label, p, val, color = '#6d4ed8', vcolor = '#0f172a', bold = false) =>
   `<tr><td width="42%" style="padding:6px 0;">${bold ? `<b style="color:#0f172a;">${esc(label)}</b>` : esc(label)}</td><td style="padding:6px 8px;">${bar(p, color)}</td><td width="56" align="right" style="padding:6px 0;font-weight:800;color:${vcolor};white-space:nowrap;">${esc(val)}</td></tr>`;
 const dayCell = (l, v) => {
   const on = v != null;
-  return `<td align="center" width="14.28%" style="padding:0 2px;"><div style="font-size:11px;font-weight:700;color:#94a3b8;padding-bottom:6px;">${esc(l)}</div><div style="background:${on ? '#4f46e5' : '#f1f5f9'};color:${on ? '#fff' : '#cbd5e1'};border-radius:10px;padding:9px 0;font-size:13px;font-weight:800;">${on ? esc(v) : '–'}</div></td>`;
+  return `<td align="center" width="14.28%" style="padding:0 2px;"><div style="font-size:11px;font-weight:700;color:#94a3b8;padding-bottom:6px;">${esc(l)}</div><div style="background:${on ? '#6d4ed8' : '#f3e9db'};color:${on ? '#fff' : '#cbd5e1'};border-radius:14px;padding:10px 0;font-size:13px;font-weight:800;${on ? 'box-shadow:0 4px 8px rgba(80,50,180,0.3),inset 0 2px 0 rgba(255,255,255,0.3);' : ''}">${on ? esc(v) : '–'}</div></td>`;
 };
 
-const pctColor = (p) => (p >= 70 ? ['#4f46e5', '#0f172a'] : p >= 40 ? ['#f59e0b', '#b45309'] : ['#ef4444', '#b91c1c']);
+const pctColor = (p) => (p >= 70 ? ['#6d4ed8', '#0f172a'] : p >= 40 ? ['#f59e0b', '#b45309'] : ['#ef4444', '#b91c1c']);
 
 const isCancelled = (s) => /cancel/i.test(String(s.attendance || s.status || ''));
 
@@ -119,7 +119,7 @@ export function buildParentReport({ lang = 'en', name, subtitle = '', days, dail
       ? groups.map((g) => `<b style="color:#0f172a;">${esc(g.chNum ? L.chapterHead(g.course, g.chNum) : g.course)}</b><br>${g.lines.join('<br>')}`).join('<br><br>')
       : `<b style="color:#0f172a;">${esc(s.subject || 'Maths')}</b>`;
     const time = [s.startTime, s.endTime].filter(Boolean).map(L.time).join(' – ');
-    return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:${i < live.length - 1 ? 14 : 0}px;"><tr><td width="118" valign="top" style="font-size:13px;font-weight:800;color:#1e1b4b;line-height:1.5;">${esc(L.dateFmt(utc(s.date)))}<br><span style="font-weight:600;color:#94a3b8;">${esc(time)}</span></td><td valign="top" style="font-size:14px;line-height:1.6;color:#334155;">${body}</td></tr></table>`;
+    return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:${i < live.length - 1 ? 14 : 0}px;"><tr><td width="118" valign="top" style="font-size:13px;font-weight:800;color:#1d1747;line-height:1.5;">${esc(L.dateFmt(utc(s.date)))}<br><span style="font-weight:600;color:#94a3b8;">${esc(time)}</span></td><td valign="top" style="font-size:14px;line-height:1.6;color:#334155;">${body}</td></tr></table>`;
   }).join('') : `<div style="font-size:14px;color:#94a3b8;">${L.noLessons}</div>`;
 
   // ── homework (one line per session's set) ──
@@ -201,11 +201,11 @@ ${topTopics.length ? `<div style="margin-top:20px;font-size:12px;font-weight:800
       const num = (String(c.title || '').match(/Chapter\s+(\d+)/i) || [])[1] || i + 1;
       const title = String(c.title || '').replace(/^Chapter\s+\d+:\s*/i, '');
       const cur2 = c.id === currentChapter;
-      return row(`${L.chapter(num)} ${title}`, (100 * n) / tot, `${n}/${tot}`, '#4f46e5', cur2 ? '#4f46e5' : '#0f172a', cur2);
+      return row(`${L.chapter(num)} ${title}`, (100 * n) / tot, `${n}/${tot}`, '#6d4ed8', cur2 ? '#6d4ed8' : '#0f172a', cur2);
     }).join('');
     const bname = [cur.year, cur.course].filter(Boolean).join(' ') || k.replace('|', ' ');
-    return `<div style="margin-top:6px;padding:16px;border:1px solid #e5e7eb;border-radius:14px;margin-bottom:14px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="font-size:14px;font-weight:800;color:#4c1d95;">${esc(bname)}</td>${wk ? `<td align="right" style="font-size:12px;font-weight:800;color:#16a34a;white-space:nowrap;">${L.week(wk)}</td>` : ''}</tr></table>
+    return `<div style="margin-top:6px;padding:16px;background:#fff6ea;border-radius:22px;box-shadow:0 6px 14px rgba(150,100,50,0.14),inset 0 2px 0 #ffffff;margin-bottom:14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="font-size:14px;font-weight:800;color:#1d1747;">${esc(bname)}</td>${wk ? `<td align="right" style="font-size:12px;font-weight:800;color:#16a34a;white-space:nowrap;">${L.week(wk)}</td>` : ''}</tr></table>
 <div style="margin-top:8px;font-size:14px;color:#334155;"><b style="color:#0f172a;font-size:22px;">${pct}%</b> &nbsp;${L.ofBook} <span style="color:#94a3b8;">· ${L.topics(done, all.length)}</span></div>
 <div style="margin-top:8px;">${bar(pct)}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;font-size:13px;color:#334155;">${rows}</table></div>`;
@@ -217,20 +217,20 @@ ${topTopics.length ? `<div style="margin-top:20px;font-size:12px;font-weight:800
   const next = [];
   if (pendCodes.length) next.push(L.nHw(`<b>${esc(pendCodes.join(', '))}</b>`).replace('{d}', dueDates.length ? L.dueFmt(utc(dueDates[0])) : '—'));
   if (active.length) next.push(L.nPrac + (bestDay && bestDay.correct / bestDay.total >= 0.5 ? ` ${L.nBest(Math.round((100 * bestDay.correct) / bestDay.total), L.dayShort[days.indexOf(bestDay.d)])}` : ''));
-  const nextHtml = next.length ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:14px;line-height:1.65;color:#334155;">${next.map((t, i) => `<tr><td width="22" valign="top" style="color:#7c3aed;font-weight:800;">${i + 1}.</td><td style="padding-bottom:6px;">${t}</td></tr>`).join('')}</table>` : '';
+  const nextHtml = next.length ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:14px;line-height:1.65;color:#334155;">${next.map((t, i) => `<tr><td width="22" valign="top" style="color:#ff6b4a;font-weight:800;">${i + 1}.</td><td style="padding-bottom:6px;">${t}</td></tr>`).join('')}</table>` : '';
 
   const html = `<!DOCTYPE html>
 <html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="color-scheme" content="light only"><title>${esc(L.subject(name, range))}</title></head>
-<body style="margin:0;padding:0;background:#f3f1fb;font-family:${FONT};color:#0f172a;word-break:keep-all;">
+<body style="margin:0;padding:0;background:#fdeedd;font-family:${FONT};color:#0f172a;word-break:keep-all;">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(L.intro(first))}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f3f1fb"><tr><td align="center" style="padding:32px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fdeedd"><tr><td align="center" style="padding:32px 16px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
-<tr><td style="padding:0 4px 16px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:34px;height:34px;background:#7c3aed;border-radius:9px;text-align:center;vertical-align:middle;color:#fff;font-weight:800;font-size:16px;">S</td><td style="padding-left:10px;font-weight:800;font-size:15px;color:#1e1b4b;">Secret Study</td></tr></table></td></tr>
-<tr><td style="background:#ffffff;border-radius:22px;overflow:hidden;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#4c1d95;padding:30px 32px 28px;">
-<div style="font-size:11.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#c4b5fd;">${esc(L.kicker(range))}</div>
-<div style="font-size:26px;line-height:1.25;font-weight:800;color:#ffffff;margin-top:8px;">${esc(name)}</div>
-${subtitle ? `<div style="font-size:14px;color:#ddd6fe;margin-top:4px;">${esc(subtitle)}</div>` : ''}</td></tr></table>
+<tr><td style="padding:0 4px 16px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="width:34px;height:34px;background:#6d4ed8;border-radius:12px;box-shadow:0 3px 6px rgba(80,50,180,0.35);text-align:center;vertical-align:middle;color:#fff;font-weight:800;font-size:16px;">S</td><td style="padding-left:10px;font-weight:800;font-size:13px;letter-spacing:0.18em;color:#1d1747;">SECRET STUDY</td></tr></table></td></tr>
+<tr><td style="background:#fffaf3;border-radius:32px;overflow:hidden;box-shadow:0 14px 34px rgba(150,100,50,0.18),inset 0 2px 0 #ffffff;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#7c5ce0;background-image:linear-gradient(160deg,#9276ec,#6a49d6);padding:30px 32px 30px;border-radius:32px 32px 28px 28px;box-shadow:inset 0 3px 0 rgba(255,255,255,0.25),inset 0 -6px 12px rgba(60,30,140,0.25);">
+<div style="font-size:11.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#e4dbff;">${esc(L.kicker(range))}</div>
+<div style="font-size:30px;line-height:1.2;font-weight:800;color:#ffffff;margin-top:10px;">${esc(name)}</div>
+${subtitle ? `<div style="font-size:14px;color:#efe9ff;margin-top:4px;">${esc(subtitle)}</div>` : ''}</td></tr></table>
 <div style="padding:8px 32px 32px;">
 <p style="margin:22px 0 0;font-size:15px;line-height:1.65;color:#334155;">${esc(L.intro(first))}</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:22px;"><tr>${tile(live.length, L.tLessons)}${tile(hwItems.length ? pendingTopics : '–', L.tHw)}${tile(`${active.length}/7`, L.tDays)}${tile(accPct != null ? `${accPct}%` : '–', L.tAcc)}</tr></table>
