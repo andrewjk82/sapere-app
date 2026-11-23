@@ -1541,17 +1541,22 @@ function FlameSvg({ idPrefix = '' } = {}) {
           </feMerge>
         </filter>
         <linearGradient id={`${p}fb-outerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#6E1A08" />
-          <stop offset="30%" stopColor="#C43D12" />
-          <stop offset="60%" stopColor="#F0872A" />
-          <stop offset="85%" stopColor="#FFC93C" />
-          <stop offset="100%" stopColor="#FFE9A8" />
+          <stop offset="0%" stopColor="#4A1204" />
+          <stop offset="18%" stopColor="#B52D0A" />
+          <stop offset="45%" stopColor="#EE6A18" />
+          <stop offset="75%" stopColor="#FFB429" />
+          <stop offset="100%" stopColor="#FFE27A" />
         </linearGradient>
         <linearGradient id={`${p}fb-innerGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
-          <stop offset="0%" stopColor="#C43D12" />
-          <stop offset="40%" stopColor="#F0872A" />
-          <stop offset="70%" stopColor="#FFD24C" />
-          <stop offset="100%" stopColor="#FFFBEF" />
+          <stop offset="0%" stopColor="#E8590F" />
+          <stop offset="40%" stopColor="#FF9A1F" />
+          <stop offset="80%" stopColor="#FFD34A" />
+          <stop offset="100%" stopColor="#FFF3B0" />
+        </linearGradient>
+        <linearGradient id={`${p}fb-coreGrad`} x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.15" />
+          <stop offset="55%" stopColor="#FFF6C8" stopOpacity="0.85" />
+          <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0.95" />
         </linearGradient>
         <radialGradient id={`${p}fb-sheenGrad`} cx="35%" cy="30%" r="45%">
           <stop offset="0%" stopColor="rgba(255,255,255,0.55)" />
@@ -1606,18 +1611,25 @@ function FlameSvg({ idPrefix = '' } = {}) {
         </linearGradient>
       </defs>
       <g filter={`url(#${p}fb-softGlow)`}>
-        <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M30,40 C15.6,61 10,76.4 10,86 C10,97.1 18.3,110 30,110 C41.7,110 50,97.1 50,86 C50,76.4 44.4,61 30,40 Z" />
-        <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M70,28 C55.6,54.4 50,73.8 50,85.8 C50,99.8 58.3,116 70,116 C81.7,116 90,99.8 90,85.8 C90,73.8 84.4,54.4 70,28 Z" />
-        <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,6 C26,42 16,68 16,85 C16,105 30,126 50,126 C70,126 84,105 84,85 C84,68 74,42 50,6 Z" />
+        <g transform="scale(1 0.9286)">
+          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,2 C52,18 66,28 68,46 C70,58 82,60 80,84 C79,108 66,132 50,132 C34,132 20,108 21,84 C22,66 32,60 33,46 C34,34 44,26 46,14 C47,8 49,5 50,2 Z" />
+          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M24,52 C30,66 22,74 20,88 C19,100 26,112 34,118 C26,104 28,94 30,84 C32,74 28,62 24,52 Z" />
+          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M78,46 C74,60 82,70 80,84 C79,98 72,110 66,118 C76,108 84,94 83,82 C82,68 76,58 78,46 Z" />
+        </g>
       </g>
     </svg>
     <svg {...box} className="fb-outer">
-        <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M30,40 C15.6,61 10,76.4 10,86 C10,97.1 18.3,110 30,110 C41.7,110 50,97.1 50,86 C50,76.4 44.4,61 30,40 Z" />
-        <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M70,28 C55.6,54.4 50,73.8 50,85.8 C50,99.8 58.3,116 70,116 C81.7,116 90,99.8 90,85.8 C90,73.8 84.4,54.4 70,28 Z" />
-        <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,6 C26,42 16,68 16,85 C16,105 30,126 50,126 C70,126 84,105 84,85 C84,68 74,42 50,6 Z" />
+        <g transform="scale(1 0.9286)">
+          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M50,2 C52,18 66,28 68,46 C70,58 82,60 80,84 C79,108 66,132 50,132 C34,132 20,108 21,84 C22,66 32,60 33,46 C34,34 44,26 46,14 C47,8 49,5 50,2 Z" />
+          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M24,52 C30,66 22,74 20,88 C19,100 26,112 34,118 C26,104 28,94 30,84 C32,74 28,62 24,52 Z" />
+          <path className="fb-flamePath" fill={`url(#${p}fb-outerGrad)`} d="M78,46 C74,60 82,70 80,84 C79,98 72,110 66,118 C76,108 84,94 83,82 C82,68 76,58 78,46 Z" />
+        </g>
     </svg>
     <svg {...box} className="fb-inner">
-        <path className="fb-flamePath" fill={`url(#${p}fb-innerGrad)`} d="M50,44 C31.3,67.4 24,84.6 24,95.2 C24,107.6 34.8,122 50,122 C65.2,122 76,107.6 76,95.2 C76,84.6 68.7,67.4 50,44 Z" />
+        <g transform="scale(1 0.9286)">
+          <path className="fb-flamePath" fill={`url(#${p}fb-innerGrad)`} d="M50,26 C52,40 64,48 65,66 C66,86 62,112 50,122 C38,112 34,86 35,66 C36,50 48,42 50,26 Z" />
+          <path className="fb-flameCore" fill={`url(#${p}fb-coreGrad)`} d="M50,58 C54,70 58,80 57,96 C56,110 54,116 50,119 C46,116 44,110 43,96 C42,80 46,70 50,58 Z" />
+        </g>
     </svg>
     <svg {...box}>
       <ellipse cx="38" cy="75" rx="8" ry="14" fill={`url(#${p}fb-sheenGrad)`} opacity="0.6" />
