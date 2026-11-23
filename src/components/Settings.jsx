@@ -295,6 +295,7 @@ const Settings = () => {
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Settings</h2>
+          <p>Your profile, colours, sounds and account</p>
         </div>
       </div>
 

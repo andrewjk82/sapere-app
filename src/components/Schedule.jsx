@@ -1151,10 +1151,8 @@ const Schedule = ({ students = [] }) => {
       {/* ── Header ── */}
       <div className="app-page__header" style={{ marginBottom: 0, flexShrink: 0 }}>
         <div className="app-page__title">
-          <p style={{ margin: '0 0 6px', fontSize: '0.75rem', color: '#64748b', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-            {weekRangeLabel}
-          </p>
           <h2>Schedule</h2>
+          <p>{weekRangeLabel}</p>
         </div>
 
         <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: isMobile ? 'wrap' : 'nowrap' }}>

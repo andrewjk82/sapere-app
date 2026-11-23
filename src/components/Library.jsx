@@ -110,6 +110,7 @@ const Library = () => {
       <div className="app-page__header">
         <div className="app-page__title">
           <h2>Library</h2>
+          <p>Notes and resources from your teacher</p>
         </div>
         {isAdmin && (
           <button

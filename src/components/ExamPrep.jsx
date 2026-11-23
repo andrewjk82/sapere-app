@@ -1265,7 +1265,6 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
   }, []);
   const selectedChips = selection.chapters.map((id) => allChapters.find((c) => c.id === id)).filter(Boolean);
   const hasTopics = selectedChips.length > 0;
-  const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
 
   // Topics from pool analysis (deck progress + lifetime accuracy)
   const topicRows = useMemo(() => {
@@ -1323,24 +1322,10 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
       </svg>
 
       {/* ── Header ── */}
-      <div style={{
-        display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
-        gap: '16px', flexWrap: 'wrap', marginBottom: '22px',
-      }}>
-        <div>
-          <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7c3aed' }}>
-            Exam Prep
-          </div>
-          <h1 style={{
-            fontWeight: 800, fontSize: isNarrow ? '1.75rem' : '2rem', lineHeight: 1.15,
-            color: '#0f172a', margin: '6px 0 0', letterSpacing: '-0.03em',
-          }}>
-            Practice deck
-          </h1>
-        </div>
-        <div style={{ textAlign: isNarrow ? 'left' : 'right', fontSize: '0.8rem', color: '#94a3b8', fontWeight: 600, lineHeight: 1.5, paddingTop: '4px' }}>
-          <div>{today}</div>
-          <div>{stats.sessions || 0} session{(stats.sessions || 0) === 1 ? '' : 's'} · quit anytime</div>
+      <div className="app-page__header" style={{ marginBottom: '22px' }}>
+        <div className="app-page__title">
+          <h2>Exam Prep</h2>
+          <p>Practice deck · {stats.sessions || 0} session{(stats.sessions || 0) === 1 ? '' : 's'} · quit anytime</p>
         </div>
       </div>
 

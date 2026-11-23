@@ -1,0 +1,27 @@
+/* ───────── One page header for every page ─────────
+   Big title, one muted line under it, the page's main button on the right (class names: app-page__header /
+   app-page__title; the Daily Study and Daily Challenge pages use their own classes, styled the same here). */
+html[data-clay="1"] .app-page__title h2,
+html[data-clay="1"] .cs__head h2,
+html[data-clay="1"] .tts-hub__head h2 {
+  font-size: 2.3rem; line-height: 1.05; font-weight: 800; letter-spacing: -0.01em; margin: 0; color: var(--clay-ink);
+}
+html[data-clay="1"] .app-page__title p,
+html[data-clay="1"] .cs__head p,
+html[data-clay="1"] .tts-hub__head p {
+  margin: 4px 0 0; font-size: 1rem; font-weight: 500; line-height: 1.4; color: var(--clay-soft);
+}
+html[data-clay="1"] .app-page__header { align-items: center; margin-bottom: 4px; }
+html[data-clay="1"] .cs__head { align-items: center; }
+html[data-clay="1"] .tts-hub__head p { margin-bottom: 18px; }
+/* Back link on Daily Challenge: a round button, like a back arrow next to the title */
+html[data-clay="1"] .tts-hub__back {
+  width: 40px; height: 40px; padding: 0; justify-content: center; border-radius: 50%; margin-bottom: 12px;
+  background: var(--clay-card); color: var(--clay-ink); box-shadow: var(--clay-puff-sm); font-size: 0;
+}
+html[data-clay="1"] .tts-hub__back svg { width: 20px; height: 20px; }
+@media (max-width: 720px) {
+  html[data-clay="1"] .app-page__title h2,
+  html[data-clay="1"] .cs__head h2,
+  html[data-clay="1"] .tts-hub__head h2 { font-size: 1.8rem; }
+}

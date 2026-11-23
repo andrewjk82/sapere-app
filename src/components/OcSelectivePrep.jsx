@@ -250,6 +250,12 @@ const OcSelectivePrep = ({ examId, profile }) => {
 
   return (
     <div className="xh">
+      <div className="app-page__header">
+        <div className="app-page__title">
+          <h2>{active?.title || active?.name || 'Exam practice'}</h2>
+          <p>Practice questions and mock exams</p>
+        </div>
+      </div>
       <Hero sitting={sitting} yearNum={yearNum} isScholarship={isScholarship} />
 
       {ready && (
