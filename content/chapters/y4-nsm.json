@@ -8241,6 +8241,126 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 206\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><rect x=\"140\" y=\"14\" width=\"120\" height=\"24\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.2\"/><text x=\"80\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Springtown</text><text x=\"200\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">Bus station</text><rect x=\"20\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"38\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:20 am</text><text x=\"200\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">8:55 am</text><rect x=\"20\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"60\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">9:40 am</text><text x=\"200\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">10:15 am</text><rect x=\"20\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"82\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:00 am</text><text x=\"200\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">11:35 am</text><rect x=\"20\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"104\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:20 pm</text><text x=\"200\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">12:55 pm</text><rect x=\"20\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"126\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">1:40 pm</text><text x=\"200\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">2:15 pm</text><rect x=\"20\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"148\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:00 pm</text><text x=\"200\" y=\"163\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">3:35 pm</text><rect x=\"20\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"140\" y=\"170\" width=\"120\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:20 pm</text><text x=\"200\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#0f172a\">4:55 pm</text></svg>"
           }
+        },
+        {
+          "id": "y4-nsm-4-th-rev4-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Red Springs bus timetable: 7:10->7:45 am, 8:30->9:05 am, 9:50->10:25 am, 11:10->11:45 am, 12:30->1:05 pm, 1:50->2:25 pm, 3:10->3:45 pm. You catch the bus at Red Springs at \\(1:50\\text{ pm}\\). What time do you arrive at the bus station?",
+          "options": [
+            "2:15 pm",
+            "2:25 pm",
+            "2:35 pm",
+            "3:45 pm"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Match the departure time at Red Springs with the arrival time at the bus station (each trip takes 35 minutes).",
+          "keyPoints": [
+            {
+              "text": "Red Springs",
+              "note": "Every bus trip on this timetable takes 35 minutes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus trip on the Red Springs timetable.",
+              "work": "\\(1:50\\text{ pm} + 35\\text{ min} = 2:25\\text{ pm}\\)"
+            },
+            {
+              "explain": "Verify the arrival time or journey duration.",
+              "work": "\\(1:50\\text{ pm} + 35\\text{ min} = 2:25\\text{ pm}\\)"
+            },
+            {
+              "explain": "Confirm the result satisfies the time requirement.",
+              "work": "\\(\\text{Verified: 2:25 pm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2:25 pm.",
+              "work": "\\(\\text{Answer: 2:25 pm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-4-th-rev4-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Red Springs bus timetable: 7:10->7:45 am, 8:30->9:05 am, 9:50->10:25 am. You need to be at the bus station by \\(9:30\\text{ am}\\). Which bus should you catch at Red Springs?",
+          "options": [
+            "7:10 am",
+            "8:30 am",
+            "9:50 am",
+            "11:10 am"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Match the departure time at Red Springs with the arrival time at the bus station (each trip takes 35 minutes).",
+          "keyPoints": [
+            {
+              "text": "Red Springs",
+              "note": "Every bus trip on this timetable takes 35 minutes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus trip on the Red Springs timetable.",
+              "work": "\\(8:30\\text{ am} \\to 9:05\\text{ am} < 9:30\\text{ am}\\)"
+            },
+            {
+              "explain": "Verify the arrival time or journey duration.",
+              "work": "\\(8:30\\text{ am} \\to 9:05\\text{ am} < 9:30\\text{ am}\\)"
+            },
+            {
+              "explain": "Confirm the result satisfies the time requirement.",
+              "work": "\\(\\text{Verified: 8:30 am}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 8:30 am.",
+              "work": "\\(\\text{Answer: 8:30 am}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-nsm-4-th-rev4-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On the Red Springs bus timetable (e.g. departs \\(7:10\\text{ am}\\), arrives \\(7:45\\text{ am}\\)), how long does the journey take from Red Springs to the bus station?",
+          "options": [
+            "25 minutes",
+            "30 minutes",
+            "35 minutes",
+            "45 minutes"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Match the departure time at Red Springs with the arrival time at the bus station (each trip takes 35 minutes).",
+          "keyPoints": [
+            {
+              "text": "Red Springs",
+              "note": "Every bus trip on this timetable takes 35 minutes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the relevant bus trip on the Red Springs timetable.",
+              "work": "\\(7:45 - 7:10 = 35\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Verify the arrival time or journey duration.",
+              "work": "\\(7:45 - 7:10 = 35\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Confirm the result satisfies the time requirement.",
+              "work": "\\(\\text{Verified: 35 minutes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 35 minutes.",
+              "work": "\\(\\text{Answer: 35 minutes}\\)"
+            }
+          ]
         }
       ]
     }

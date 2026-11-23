@@ -1248,6 +1248,126 @@
               "work": "\\(2,\\ 2\\dfrac{1}{4},\\ 2\\dfrac{2}{4}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-pf-2-th30-p133-ps1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "\\(\\dfrac{1}{10}\\) of the jelly beans in a bag are red and \\(\\dfrac{4}{10}\\) are blue. What fraction of the jelly beans are colours OTHER than red or blue?",
+          "options": [
+            "\\(\\dfrac{3}{10}\\)",
+            "\\(\\dfrac{4}{10}\\)",
+            "\\(\\dfrac{5}{10}\\)",
+            "\\(\\dfrac{6}{10}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "When fractions have the same denominator, add or subtract only the numerators and keep the denominator the same (1 whole = n/n).",
+          "keyPoints": [
+            {
+              "text": "fraction",
+              "note": "Keep the common denominator and combine the numerators."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the given fractions with the same denominator.",
+              "work": "\\(\\dfrac{1}{10} + \\dfrac{4}{10} = \\dfrac{5}{10}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtract from 1 whole.",
+              "work": "\\(\\dfrac{1}{10} + \\dfrac{4}{10} = \\dfrac{5}{10}, \\quad \\dfrac{10}{10} - \\dfrac{5}{10} = \\dfrac{5}{10}\\)"
+            },
+            {
+              "explain": "Check that all parts sum back to the whole.",
+              "work": "\\(\\text{Verified: } \\dfrac{1}{10} + \\dfrac{4}{10} = \\dfrac{5}{10}, \\quad \\dfrac{10}{10} - \\dfrac{5}{10} = \\dfrac{5}{10}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{5}{10}\\).",
+              "work": "\\(\\dfrac{1}{10} + \\dfrac{4}{10} = \\dfrac{5}{10}, \\quad \\dfrac{10}{10} - \\dfrac{5}{10} = \\dfrac{5}{10}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-2-th30-p133-ps2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A cake recipe requires \\(1\\dfrac{1}{3}\\) cups of sugar for the cake and \\(\\dfrac{2}{3}\\) cup of sugar for the icing. How much sugar is needed altogether?",
+          "options": [
+            "\\(1\\dfrac{2}{3}\\) cups",
+            "\\(2\\) cups",
+            "\\(2\\dfrac{1}{3}\\) cups",
+            "\\(3\\) cups"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "When fractions have the same denominator, add or subtract only the numerators and keep the denominator the same (1 whole = n/n).",
+          "keyPoints": [
+            {
+              "text": "altogether",
+              "note": "Keep the common denominator and combine the numerators."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the given fractions with the same denominator.",
+              "work": "\\(1\\dfrac{1}{3} + \\dfrac{2}{3} = 1\\dfrac{3}{3} = 2\\text{ cups}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtract from 1 whole.",
+              "work": "\\(1\\dfrac{1}{3} + \\dfrac{2}{3} = 1\\dfrac{3}{3} = 2\\text{ cups}\\)"
+            },
+            {
+              "explain": "Check that all parts sum back to the whole.",
+              "work": "\\(\\text{Verified: } 1\\dfrac{1}{3} + \\dfrac{2}{3} = 1\\dfrac{3}{3} = 2\\text{ cups}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2\\) cups.",
+              "work": "\\(1\\dfrac{1}{3} + \\dfrac{2}{3} = 1\\dfrac{3}{3} = 2\\text{ cups}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-2-th30-p133-ps3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "You give \\(\\dfrac{2}{8}\\) of some cookies to Trixie and \\(\\dfrac{3}{8}\\) of the cookies to Ria. What fraction of the cookies do you have left?",
+          "options": [
+            "\\(\\dfrac{2}{8}\\)",
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{6}{8}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "When fractions have the same denominator, add or subtract only the numerators and keep the denominator the same (1 whole = n/n).",
+          "keyPoints": [
+            {
+              "text": "fraction",
+              "note": "Keep the common denominator and combine the numerators."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the given fractions with the same denominator.",
+              "work": "\\(\\dfrac{2}{8} + \\dfrac{3}{8} = \\dfrac{5}{8}\\)"
+            },
+            {
+              "explain": "Complete the addition or subtract from 1 whole.",
+              "work": "\\(\\dfrac{2}{8} + \\dfrac{3}{8} = \\dfrac{5}{8}, \\quad \\dfrac{8}{8} - \\dfrac{5}{8} = \\dfrac{3}{8}\\)"
+            },
+            {
+              "explain": "Check that all parts sum back to the whole.",
+              "work": "\\(\\text{Verified: } \\dfrac{2}{8} + \\dfrac{3}{8} = \\dfrac{5}{8}, \\quad \\dfrac{8}{8} - \\dfrac{5}{8} = \\dfrac{3}{8}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{3}{8}\\).",
+              "work": "\\(\\dfrac{2}{8} + \\dfrac{3}{8} = \\dfrac{5}{8}, \\quad \\dfrac{8}{8} - \\dfrac{5}{8} = \\dfrac{3}{8}\\)"
+            }
+          ]
         }
       ]
     },
@@ -2503,6 +2623,326 @@
             {
               "explain": "Therefore, the answer is \\(\\dfrac{8}{3}\\).",
               "work": "\\((2 \\times 3) + 2 = 8 \\Rightarrow \\dfrac{8}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{11}{2}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(4\\dfrac{1}{2}\\)",
+            "\\(5\\dfrac{1}{2}\\)",
+            "\\(6\\dfrac{1}{2}\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 11 by 2: the quotient is the whole number and any remainder stays over 2.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(11\\) by \\(2\\): \\(11 \\div 2 = 5\\) remainder \\(1\\).",
+              "work": "\\(11 \\div 2 = 5 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(5\\) (from \\(10/2\\)).",
+              "work": "\\(5 \\times 2 = 10\\)"
+            },
+            {
+              "explain": "Write the remainder \\(1\\) over \\(2\\).",
+              "work": "\\(\\dfrac{11}{2} = 5\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5\\dfrac{1}{2}\\).",
+              "work": "\\(\\text{Answer: } 5\\dfrac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{15}{2}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(6\\dfrac{1}{2}\\)",
+            "\\(7\\dfrac{1}{2}\\)",
+            "\\(8\\dfrac{1}{2}\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 15 by 2: the quotient is the whole number and any remainder stays over 2.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(15\\) by \\(2\\): \\(15 \\div 2 = 7\\) remainder \\(1\\).",
+              "work": "\\(15 \\div 2 = 7 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(7\\) (from \\(14/2\\)).",
+              "work": "\\(7 \\times 2 = 14\\)"
+            },
+            {
+              "explain": "Write the remainder \\(1\\) over \\(2\\).",
+              "work": "\\(\\dfrac{15}{2} = 7\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(7\\dfrac{1}{2}\\).",
+              "work": "\\(\\text{Answer: } 7\\dfrac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{7}{3}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(1\\dfrac{2}{3}\\)",
+            "\\(2\\dfrac{1}{3}\\)",
+            "\\(2\\dfrac{2}{3}\\)",
+            "\\(3\\dfrac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 7 by 3: the quotient is the whole number and any remainder stays over 3.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(7\\) by \\(3\\): \\(7 \\div 3 = 2\\) remainder \\(1\\).",
+              "work": "\\(7 \\div 3 = 2 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(2\\) (from \\(6/3\\)).",
+              "work": "\\(2 \\times 3 = 6\\)"
+            },
+            {
+              "explain": "Write the remainder \\(1\\) over \\(3\\).",
+              "work": "\\(\\dfrac{7}{3} = 2\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2\\dfrac{1}{3}\\).",
+              "work": "\\(\\text{Answer: } 2\\dfrac{1}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{14}{3}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(4\\dfrac{1}{3}\\)",
+            "\\(4\\dfrac{2}{3}\\)",
+            "\\(5\\dfrac{1}{3}\\)",
+            "\\(3\\dfrac{2}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 14 by 3: the quotient is the whole number and any remainder stays over 3.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(14\\) by \\(3\\): \\(14 \\div 3 = 4\\) remainder \\(2\\).",
+              "work": "\\(14 \\div 3 = 4 \\text{ r } 2\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(4\\) (from \\(12/3\\)).",
+              "work": "\\(4 \\times 3 = 12\\)"
+            },
+            {
+              "explain": "Write the remainder \\(2\\) over \\(3\\).",
+              "work": "\\(\\dfrac{14}{3} = 4\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(4\\dfrac{2}{3}\\).",
+              "work": "\\(\\text{Answer: } 4\\dfrac{2}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{16}{3}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(4\\dfrac{2}{3}\\)",
+            "\\(5\\dfrac{1}{3}\\)",
+            "\\(5\\dfrac{2}{3}\\)",
+            "\\(6\\dfrac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 16 by 3: the quotient is the whole number and any remainder stays over 3.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(16\\) by \\(3\\): \\(16 \\div 3 = 5\\) remainder \\(1\\).",
+              "work": "\\(16 \\div 3 = 5 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(5\\) (from \\(15/3\\)).",
+              "work": "\\(5 \\times 3 = 15\\)"
+            },
+            {
+              "explain": "Write the remainder \\(1\\) over \\(3\\).",
+              "work": "\\(\\dfrac{16}{3} = 5\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5\\dfrac{1}{3}\\).",
+              "work": "\\(\\text{Answer: } 5\\dfrac{1}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{12}{5}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(2\\dfrac{1}{5}\\)",
+            "\\(2\\dfrac{2}{5}\\)",
+            "\\(2\\dfrac{3}{5}\\)",
+            "\\(3\\dfrac{2}{5}\\)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 12 by 5: the quotient is the whole number and any remainder stays over 5.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(12\\) by \\(5\\): \\(12 \\div 5 = 2\\) remainder \\(2\\).",
+              "work": "\\(12 \\div 5 = 2 \\text{ r } 2\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(2\\) (from \\(10/5\\)).",
+              "work": "\\(2 \\times 5 = 10\\)"
+            },
+            {
+              "explain": "Write the remainder \\(2\\) over \\(5\\).",
+              "work": "\\(\\dfrac{12}{5} = 2\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2\\dfrac{2}{5}\\).",
+              "work": "\\(\\text{Answer: } 2\\dfrac{2}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{14}{5}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(2\\dfrac{2}{5}\\)",
+            "\\(2\\dfrac{3}{5}\\)",
+            "\\(2\\dfrac{4}{5}\\)",
+            "\\(3\\dfrac{4}{5}\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 14 by 5: the quotient is the whole number and any remainder stays over 5.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(14\\) by \\(5\\): \\(14 \\div 5 = 2\\) remainder \\(4\\).",
+              "work": "\\(14 \\div 5 = 2 \\text{ r } 4\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(2\\) (from \\(10/5\\)).",
+              "work": "\\(2 \\times 5 = 10\\)"
+            },
+            {
+              "explain": "Write the remainder \\(4\\) over \\(5\\).",
+              "work": "\\(\\dfrac{14}{5} = 2\\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2\\dfrac{4}{5}\\).",
+              "work": "\\(\\text{Answer: } 2\\dfrac{4}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-pf-3-th31-p136-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the improper fraction \\(\\dfrac{15}{3}\\) as a whole or mixed numeral.",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Divide 15 by 3: the quotient is the whole number and any remainder stays over 3.",
+          "keyPoints": [
+            {
+              "text": "improper fraction",
+              "note": "Divide numerator by denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide \\(15\\) by \\(3\\): \\(15 \\div 3 = 5\\) remainder \\(0\\).",
+              "work": "\\(15 \\div 3 = 5 \\text{ r } 0\\)"
+            },
+            {
+              "explain": "Write the whole-number part \\(5\\) (from \\(15/3\\)).",
+              "work": "\\(5 \\times 3 = 15\\)"
+            },
+            {
+              "explain": "There is no remainder, so it is an exact whole number.",
+              "work": "\\(\\dfrac{15}{3} = 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5\\).",
+              "work": "\\(\\text{Answer: } 5\\)"
             }
           ]
         }

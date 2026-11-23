@@ -1262,6 +1262,366 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 146\" width=\"65%\" height=\"auto\" style=\"max-width:494px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"380\" height=\"146\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"95\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Shape A</text><text x=\"285\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Shape B</text><polygon points=\"34,110 41.92,103.84 63.92,103.84 56,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"56,110 63.92,103.84 63.92,125.84 56,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"34\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"56,110 63.92,103.84 85.92,103.84 78,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"78,110 85.92,103.84 85.92,125.84 78,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"56\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"78,110 85.92,103.84 107.92,103.84 100,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"100,110 107.92,103.84 107.92,125.84 100,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"100,110 107.92,103.84 129.92,103.84 122,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"122,110 129.92,103.84 129.92,125.84 122,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"100\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"122,110 129.92,103.84 151.92,103.84 144,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"144,110 151.92,103.84 151.92,125.84 144,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"122\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"56,88 63.92,81.84 85.92,81.84 78,88\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"78,88 85.92,81.84 85.92,103.84 78,110\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"56\" y=\"88\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"100,88 107.92,81.84 129.92,81.84 122,88\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"122,88 129.92,81.84 129.92,103.84 122,110\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"100\" y=\"88\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"56,66 63.92,59.84 85.92,59.84 78,66\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"78,66 85.92,59.84 85.92,81.84 78,88\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"56\" y=\"66\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"78,66 85.92,59.84 107.92,59.84 100,66\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"100,66 107.92,59.84 107.92,81.84 100,88\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"78\" y=\"66\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"100,66 107.92,59.84 129.92,59.84 122,66\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"122,66 129.92,59.84 129.92,81.84 122,88\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"100\" y=\"66\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"232,110 239.92,103.84 261.92,103.84 254,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"254,110 261.92,103.84 261.92,125.84 254,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"232\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"276,110 283.92,103.84 305.92,103.84 298,110\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"298,110 305.92,103.84 305.92,125.84 298,132\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"276\" y=\"110\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"232,88 239.92,81.84 261.92,81.84 254,88\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"254,88 261.92,81.84 261.92,103.84 254,110\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"232\" y=\"88\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"254,88 261.92,81.84 283.92,81.84 276,88\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"276,88 283.92,81.84 283.92,103.84 276,110\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"254\" y=\"88\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"276,88 283.92,81.84 305.92,81.84 298,88\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"298,88 305.92,81.84 305.92,103.84 298,110\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"276\" y=\"88\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"232,66 239.92,59.84 261.92,59.84 254,66\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"254,66 261.92,59.84 261.92,81.84 254,88\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"232\" y=\"66\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"276,66 283.92,59.84 305.92,59.84 298,66\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"298,66 305.92,59.84 305.92,81.84 298,88\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"276\" y=\"66\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"232,44 239.92,37.84 261.92,37.84 254,44\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"254,44 261.92,37.84 261.92,59.84 254,66\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"232\" y=\"44\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/><polygon points=\"276,44 283.92,37.84 305.92,37.84 298,44\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"298,44 305.92,37.84 305.92,59.84 298,66\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"276\" y=\"44\" width=\"22\" height=\"22\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/></svg>"
           }
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many \\(250\\text{ mL}\\) measures of water do you need to fill a \\(\\dfrac{1}{2}\\)-litre container?",
+          "options": [
+            "1 measure",
+            "2 measures",
+            "4 measures",
+            "5 measures"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "How many \\(250\\text{ mL}\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(500 \\div 250 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(500 \\div 250 = 2\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 500 \\div 250 = 2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2 measures.",
+              "work": "\\(\\text{Answer: 2 measures}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many \\(250\\text{ mL}\\) measures of water do you need to fill a \\(1\\)-litre container?",
+          "options": [
+            "2 measures",
+            "4 measures",
+            "5 measures",
+            "10 measures"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "How many \\(250\\text{ mL}\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(1000 \\div 250 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(1000 \\div 250 = 4\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 1000 \\div 250 = 4\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 4 measures.",
+              "work": "\\(\\text{Answer: 4 measures}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many \\(250\\text{ mL}\\) measures of water do you need to fill a \\(3\\)-litre watering can?",
+          "options": [
+            "8 measures",
+            "10 measures",
+            "12 measures",
+            "15 measures"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "How many \\(250\\text{ mL}\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(3 \\times 4 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 12 measures.",
+              "work": "\\(\\text{Answer: 12 measures}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many \\(250\\text{ mL}\\) measures of water do you need to fill a \\(10\\)-litre drum?",
+          "options": [
+            "25 measures",
+            "30 measures",
+            "40 measures",
+            "50 measures"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "How many \\(250\\text{ mL}\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(10 \\times 4 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(10 \\times 4 = 40\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 10 \\times 4 = 40\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 40 measures.",
+              "work": "\\(\\text{Answer: 40 measures}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bucket holds \\(25\\) litres of water. How many buckets of water will it take to fill a \\(100\\)-litre drum?",
+          "options": [
+            "2 buckets",
+            "4 buckets",
+            "5 buckets",
+            "10 buckets"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "A bucket holds \\(25\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(100 \\div 25 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(100 \\div 25 = 4\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 100 \\div 25 = 4\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 4 buckets.",
+              "work": "\\(\\text{Answer: 4 buckets}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bucket holds \\(25\\) litres of water. How many buckets of water will it take to fill a \\(400\\)-litre drum?",
+          "options": [
+            "8 buckets",
+            "12 buckets",
+            "16 buckets",
+            "20 buckets"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "A bucket holds \\(25\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(400 \\div 25 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(400 \\div 25 = 4 \\times 4 = 16\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 400 \\div 25 = 4 \\times 4 = 16\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 16 buckets.",
+              "work": "\\(\\text{Answer: 16 buckets}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bucket holds \\(25\\) litres of water. How many buckets of water will it take to fill a \\(1000\\)-litre drum?",
+          "options": [
+            "20 buckets",
+            "25 buckets",
+            "40 buckets",
+            "50 buckets"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "A bucket holds \\(25\\)",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(1000 \\div 25 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(1000 \\div 25 = 10 \\times 4 = 40\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 1000 \\div 25 = 10 \\times 4 = 40\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 40 buckets.",
+              "work": "\\(\\text{Answer: 40 buckets}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A new \\(350\\)-litre drum of kerosene had \\(125\\) litres taken out of it. How much kerosene was left in the drum?",
+          "options": [
+            "215 litres",
+            "225 litres",
+            "235 litres",
+            "475 litres"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "A new \\(350\\)-litre drum",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(350 - 125 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(350 - 125 = 225\\text{ litres}\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 350 - 125 = 225\\text{ litres}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 225 litres.",
+              "work": "\\(\\text{Answer: 225 litres}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-3ds-2-th29-p129-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Thirty students were each given \\(3\\) litres of juice. How much juice was given out altogether?",
+          "options": [
+            "33 litres",
+            "60 litres",
+            "90 litres",
+            "120 litres"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Remember 1 litre = 1000 mL = four 250 mL measures, and 100 L = four 25 L buckets.",
+          "keyPoints": [
+            {
+              "text": "Thirty students were each",
+              "note": "Use 1 L = 4 × 250 mL and 100 L = 4 × 25 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division, multiplication, or subtraction sentence.",
+              "work": "\\(30 \\times 3 \\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(30 \\times 3 = 90\\text{ litres}\\)"
+            },
+            {
+              "explain": "Check by multiplying or adding back.",
+              "work": "\\(\\text{Verified: } 30 \\times 3 = 90\\text{ litres}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 90 litres.",
+              "work": "\\(\\text{Answer: 90 litres}\\)"
+            }
+          ]
         }
       ]
     }

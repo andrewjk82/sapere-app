@@ -1465,6 +1465,356 @@
               "work": "\\(63, 0, 18, 72, 45\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-1-th28-p124-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(9 \\times 2 = \\square\\).",
+          "options": [
+            "16",
+            "18",
+            "20",
+            "11"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(9 \\times 2 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(9 \\times 2 = 18\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 9 \\times 2 = 18\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 18.",
+              "work": "\\(\\square = 18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th28-p124-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(10 \\times 5 = \\square\\).",
+          "options": [
+            "15",
+            "45",
+            "50",
+            "55"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(10 \\times 5 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(10 \\times 5 = 50\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 10 \\times 5 = 50\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 50.",
+              "work": "\\(\\square = 50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th28-p124-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(5 \\times 5 = \\square\\).",
+          "options": [
+            "10",
+            "20",
+            "25",
+            "30"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(5 \\times 5 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(5 \\times 5 = 25\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 5 \\times 5 = 25\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 25.",
+              "work": "\\(\\square = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-1-th32-p140-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \"× 5\" on this function machine to find the two missing OUT values.",
+          "options": [
+            "30 and 50",
+            "25 and 50",
+            "30 and 45",
+            "35 and 50"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare IN and OUT on the completed rows to find or check the multiplication rule, then apply it to the missing row(s).",
+          "keyPoints": [
+            {
+              "text": "function machine",
+              "note": "Every row multiplies IN by the exact same rule to produce OUT."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect the completed IN -> OUT rows to identify or confirm the multiplication rule.",
+              "work": "\\(6 \\times 5 = 30\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 210\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: × 5</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">15</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">7</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">35</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Apply rule to highlighted row</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the rule to compute the missing OUT value(s).",
+              "work": "\\(6 \\times 5 = 30, \\quad 10 \\times 5 = 50\\)"
+            },
+            {
+              "explain": "Check every row using inverse division (OUT ÷ IN).",
+              "work": "\\(\\text{Verified: } 6 \\times 5 = 30, \\quad 10 \\times 5 = 50\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 30 and 50.",
+              "work": "\\(\\text{Answer: } 30 \\text{ and } 50\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 188\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: × 5</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">15</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">7</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">35</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-1-th32-p140-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \"× 6\" on this function machine to find the two missing OUT values.",
+          "options": [
+            "42 and 30",
+            "48 and 30",
+            "48 and 36",
+            "54 and 30"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare IN and OUT on the completed rows to find or check the multiplication rule, then apply it to the missing row(s).",
+          "keyPoints": [
+            {
+              "text": "function machine",
+              "note": "Every row multiplies IN by the exact same rule to produce OUT."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect the completed IN -> OUT rows to identify or confirm the multiplication rule.",
+              "work": "\\(8 \\times 6 = 48\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 210\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: × 6</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">12</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">60</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Apply rule to highlighted row</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the rule to compute the missing OUT value(s).",
+              "work": "\\(8 \\times 6 = 48, \\quad 5 \\times 6 = 30\\)"
+            },
+            {
+              "explain": "Check every row using inverse division (OUT ÷ IN).",
+              "work": "\\(\\text{Verified: } 8 \\times 6 = 48, \\quad 5 \\times 6 = 30\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 48 and 30.",
+              "work": "\\(\\text{Answer: } 48 \\text{ and } 30\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 188\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: × 6</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">12</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">60</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-1-th32-p140-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the multiplication rule for this function machine and calculate the missing OUT value.",
+          "options": [
+            "Rule × 3; OUT = 27",
+            "Rule × 4; OUT = 36",
+            "Rule × 3; OUT = 24",
+            "Rule + 10; OUT = 19"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare IN and OUT on the completed rows to find or check the multiplication rule, then apply it to the missing row(s).",
+          "keyPoints": [
+            {
+              "text": "function machine",
+              "note": "Every row multiplies IN by the exact same rule to produce OUT."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect the completed IN -> OUT rows to identify or confirm the multiplication rule.",
+              "work": "\\(15 \\div 5 = 3 \\Rightarrow 9 \\times 3 = 27\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 210\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: ?</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">15</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">30</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">24</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">9</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Apply rule to highlighted row</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the rule to compute the missing OUT value(s).",
+              "work": "\\(15 \\div 5 = 3 \\Rightarrow 9 \\times 3 = 27\\)"
+            },
+            {
+              "explain": "Check every row using inverse division (OUT ÷ IN).",
+              "work": "\\(\\text{Verified: } 15 \\div 5 = 3 \\Rightarrow 9 \\times 3 = 27\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Rule × 3; OUT = 27.",
+              "work": "\\(\\text{Answer: } \\text{Rule } \\times 3; \\; \\text{OUT} = 27\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 188\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: ?</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">15</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">30</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">24</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">9</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-1-th32-p140-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the multiplication rule for this function machine and calculate the missing OUT value.",
+          "options": [
+            "Rule × 6; OUT = 42",
+            "Rule × 7; OUT = 49",
+            "Rule × 7; OUT = 48",
+            "Rule × 8; OUT = 56"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare IN and OUT on the completed rows to find or check the multiplication rule, then apply it to the missing row(s).",
+          "keyPoints": [
+            {
+              "text": "function machine",
+              "note": "Every row multiplies IN by the exact same rule to produce OUT."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect the completed IN -> OUT rows to identify or confirm the multiplication rule.",
+              "work": "\\(56 \\div 8 = 7 \\Rightarrow 7 \\times 7 = 49\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 210\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: ?</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">56</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">70</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">35</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">7</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Apply rule to highlighted row</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the rule to compute the missing OUT value(s).",
+              "work": "\\(56 \\div 8 = 7 \\Rightarrow 7 \\times 7 = 49\\)"
+            },
+            {
+              "explain": "Check every row using inverse division (OUT ÷ IN).",
+              "work": "\\(\\text{Verified: } 56 \\div 8 = 7 \\Rightarrow 7 \\times 7 = 49\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Rule × 7; OUT = 49.",
+              "work": "\\(\\text{Answer: } \\text{Rule } \\times 7; \\; \\text{OUT} = 49\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 188\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: ?</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">56</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">10</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">70</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">35</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">7</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
+        },
+        {
+          "id": "y4-mr-1-th32-p140-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the multiplication rule for this function machine and calculate the missing OUT value.",
+          "options": [
+            "Rule × 8; OUT = 48",
+            "Rule × 7; OUT = 42",
+            "Rule × 8; OUT = 54",
+            "Rule × 9; OUT = 54"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare IN and OUT on the completed rows to find or check the multiplication rule, then apply it to the missing row(s).",
+          "keyPoints": [
+            {
+              "text": "function machine",
+              "note": "Every row multiplies IN by the exact same rule to produce OUT."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Inspect the completed IN -> OUT rows to identify or confirm the multiplication rule.",
+              "work": "\\(40 \\div 5 = 8 \\Rightarrow 6 \\times 8 = 48\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 210\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: ?</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">40</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">9</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">72</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">7</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">56</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#fef3c7\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text><text x=\"110\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Apply rule to highlighted row</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the rule to compute the missing OUT value(s).",
+              "work": "\\(40 \\div 5 = 8 \\Rightarrow 6 \\times 8 = 48\\)"
+            },
+            {
+              "explain": "Check every row using inverse division (OUT ÷ IN).",
+              "work": "\\(\\text{Verified: } 40 \\div 5 = 8 \\Rightarrow 6 \\times 8 = 48\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Rule × 8; OUT = 48.",
+              "work": "\\(\\text{Answer: } \\text{Rule } \\times 8; \\; \\text{OUT} = 48\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 188\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"14\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"110\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#991b1b\">Rule: ?</text><rect x=\"30\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><rect x=\"110\" y=\"38\" width=\"80\" height=\"22\" fill=\"#e0f2fe\" stroke=\"#475569\" stroke-width=\"1.1\"/><text x=\"70\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">IN</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0c4a6e\">OUT</text><rect x=\"30\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"60\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"150\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">40</text><rect x=\"30\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"82\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">9</text><text x=\"150\" y=\"97\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">72</text><rect x=\"30\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"104\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">7</text><text x=\"150\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">56</text><rect x=\"30\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><rect x=\"110\" y=\"126\" width=\"80\" height=\"22\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"70\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">6</text><text x=\"150\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">?</text></svg>"
+          }
         }
       ]
     },
@@ -6195,6 +6545,246 @@
               "work": "\\(\\text{Answer: 241}\\)"
             }
           ]
+        },
+        {
+          "id": "y4-mr-5-th28-p124-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(72 \\div 8 = 9 \\Rightarrow 8 \\times \\square = 72\\).",
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(72 \\div 8 = 9 \\Rightarrow 8 \\times \\square = 72\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(8 \\times 9 = 72\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 8 \\times 9 = 72\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 9.",
+              "work": "\\(\\square = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th28-p124-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(90 \\div 10 = 9 \\Rightarrow 90 \\div 9 = \\square\\).",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(90 \\div 10 = 9 \\Rightarrow 90 \\div 9 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(90 \\div 9 = 10\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 90 \\div 9 = 10\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 10.",
+              "work": "\\(\\square = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th28-p124-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(24 \\div 6 = \\square\\).",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(24 \\div 6 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(24 \\div 6 = 4\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 24 \\div 6 = 4\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 4.",
+              "work": "\\(\\square = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th28-p124-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(5 \\div 5 = \\square\\).",
+          "options": [
+            "0",
+            "1",
+            "5",
+            "25"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(5 \\div 5 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(5 \\div 5 = 1\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 5 \\div 5 = 1\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1.",
+              "work": "\\(\\square = 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th28-p124-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(45 \\div 9 = \\square\\).",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(45 \\div 9 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(45 \\div 9 = 5\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 45 \\div 9 = 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 5.",
+              "work": "\\(\\square = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-5-th28-p124-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing number: \\(64 \\div 8 = \\square\\).",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Use the inverse multiplication/division fact family to solve and check.",
+          "keyPoints": [
+            {
+              "text": "missing number",
+              "note": "Check division with multiplication."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the related multiplication/division fact family.",
+              "work": "\\(64 \\div 8 = \\square\\)"
+            },
+            {
+              "explain": "Solve for the missing number.",
+              "work": "\\(64 \\div 8 = 8\\)"
+            },
+            {
+              "explain": "Verify using the inverse fact.",
+              "work": "\\(\\text{Verified: } 64 \\div 8 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 8.",
+              "work": "\\(\\square = 8\\)"
+            }
+          ]
         }
       ]
     },
@@ -7635,6 +8225,126 @@
             {
               "explain": "Therefore, the answer is 10 slices.",
               "work": "\\(100 \\div 10 = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th28-p125-ps1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There are \\(10\\) biscuits in a pack. Melanie buys \\(14\\) packs and shares all the biscuits equally among \\(70\\) people at a meeting. How many biscuits does each person get?",
+          "options": [
+            "1 biscuit",
+            "2 biscuits",
+            "3 biscuits",
+            "4 biscuits"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Solve one step at a time and check the total carefully.",
+          "keyPoints": [
+            {
+              "text": "There are \\(10\\) biscuits",
+              "note": "Break 2-step problems into two clear calculations."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the first-step calculation from the word problem.",
+              "work": "\\(14 \\times 10 = 140\\)"
+            },
+            {
+              "explain": "Use that result to complete the second step.",
+              "work": "\\(14 \\times 10 = 140, \\quad 140 \\div 70 = 2\\)"
+            },
+            {
+              "explain": "Double-check every number.",
+              "work": "\\(\\text{Verified: } 14 \\times 10 = 140, \\quad 140 \\div 70 = 2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2 biscuits.",
+              "work": "\\(\\text{Answer: 2 biscuits}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th28-p125-ps2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a parade, \\(100\\) horses each wear red covers on their \\(4\\) hooves and blue covers on their \\(2\\) ears. How many red covers and blue covers are there altogether?",
+          "options": [
+            "400 red and 200 blue",
+            "200 red and 400 blue",
+            "400 red and 100 blue",
+            "200 red and 200 blue"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Solve one step at a time and check the total carefully.",
+          "keyPoints": [
+            {
+              "text": "In a parade, \\(100\\)",
+              "note": "Break 2-step problems into two clear calculations."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the first-step calculation from the word problem.",
+              "work": "\\(100 \\times 4 = 400\\text{ red}\\)"
+            },
+            {
+              "explain": "Use that result to complete the second step.",
+              "work": "\\(100 \\times 4 = 400\\text{ red}, \\quad 100 \\times 2 = 200\\text{ blue}\\)"
+            },
+            {
+              "explain": "Double-check every number.",
+              "work": "\\(\\text{Verified: } 100 \\times 4 = 400\\text{ red}, \\quad 100 \\times 2 = 200\\text{ blue}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 400 red and 200 blue.",
+              "work": "\\(\\text{Answer: 400 red and 200 blue}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-mr-6-th28-p125-ps2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At the end of the parade, half of the \\(400\\) red hoof covers and one-quarter of the \\(200\\) blue ear covers are removed. How many covers are still on the horses?",
+          "options": [
+            "250 covers",
+            "300 covers",
+            "350 covers",
+            "400 covers"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Solve one step at a time and check the total carefully.",
+          "keyPoints": [
+            {
+              "text": "At the end of",
+              "note": "Break 2-step problems into two clear calculations."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the first-step calculation from the word problem.",
+              "work": "\\(200\\text{ red left} + 150\\text{ blue left} = 350\\text{ covers}\\)"
+            },
+            {
+              "explain": "Use that result to complete the second step.",
+              "work": "\\(200\\text{ red left} + 150\\text{ blue left} = 350\\text{ covers}\\)"
+            },
+            {
+              "explain": "Double-check every number.",
+              "work": "\\(\\text{Verified: } 200\\text{ red left} + 150\\text{ blue left} = 350\\text{ covers}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 350 covers.",
+              "work": "\\(\\text{Answer: 350 covers}\\)"
             }
           ]
         }

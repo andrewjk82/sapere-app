@@ -1890,6 +1890,166 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 392 84\" width=\"65%\" height=\"auto\" style=\"max-width:510px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"392\" height=\"84\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"52\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#dc2626\">5</text><rect x=\"92\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"124\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">8</text><rect x=\"164\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"196\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">5</text><rect x=\"236\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"268\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">2</text><rect x=\"308\" y=\"14\" width=\"64\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"340\" y=\"49\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"28\" font-weight=\"800\" fill=\"#0f172a\">0</text></svg>"
           }
+        },
+        {
+          "id": "y4-rn-1-th30-p132-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the digit \\(6\\) in \\(23\\,682\\) is changed to a \\(9\\), by how much does the value increase?",
+          "options": [
+            "3",
+            "30",
+            "300",
+            "3000"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the place value of 6 (100), multiply both digits by 100, and subtract!",
+          "keyPoints": [
+            {
+              "text": "by how much does the value increase",
+              "note": "Find the difference between the new place value and old place value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the current value of \\(6\\): \\(6 \\times 100 = 600\\).",
+              "work": "\\(6 \\times 100 = 600\\)"
+            },
+            {
+              "explain": "Find the new value when changed to \\(9\\): \\(9 \\times 100 = 900\\).",
+              "work": "\\(9 \\times 100 = 900\\)"
+            },
+            {
+              "explain": "Subtract to find the increase: \\(900 - 600 = 300\\).",
+              "work": "\\(900 - 600 = 300\\)"
+            },
+            {
+              "explain": "Therefore, the value increases by \\(300\\).",
+              "work": "\\(\\text{Increase} = 300\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-1-th30-p132-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the digit \\(2\\) in \\(42\\,567\\) is changed to a \\(5\\), by how much does the value increase?",
+          "options": [
+            "30",
+            "300",
+            "3000",
+            "30 000"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the place value of 2 (1000), multiply both digits by 1000, and subtract!",
+          "keyPoints": [
+            {
+              "text": "by how much does the value increase",
+              "note": "Find the difference between the new place value and old place value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the current value of \\(2\\): \\(2 \\times 1000 = 2000\\).",
+              "work": "\\(2 \\times 1000 = 2000\\)"
+            },
+            {
+              "explain": "Find the new value when changed to \\(5\\): \\(5 \\times 1000 = 5000\\).",
+              "work": "\\(5 \\times 1000 = 5000\\)"
+            },
+            {
+              "explain": "Subtract to find the increase: \\(5000 - 2000 = 3000\\).",
+              "work": "\\(5000 - 2000 = 3000\\)"
+            },
+            {
+              "explain": "Therefore, the value increases by \\(3000\\).",
+              "work": "\\(\\text{Increase} = 3000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-1-th30-p132-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the digit \\(4\\) in \\(45\\,690\\) is changed to a \\(6\\), by how much does the value increase?",
+          "options": [
+            "200",
+            "2000",
+            "20 000",
+            "200 000"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the place value of 4 (10000), multiply both digits by 10000, and subtract!",
+          "keyPoints": [
+            {
+              "text": "by how much does the value increase",
+              "note": "Find the difference between the new place value and old place value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the current value of \\(4\\): \\(4 \\times 10000 = 40000\\).",
+              "work": "\\(4 \\times 10000 = 40000\\)"
+            },
+            {
+              "explain": "Find the new value when changed to \\(6\\): \\(6 \\times 10000 = 60000\\).",
+              "work": "\\(6 \\times 10000 = 60000\\)"
+            },
+            {
+              "explain": "Subtract to find the increase: \\(60000 - 40000 = 20000\\).",
+              "work": "\\(60000 - 40000 = 20000\\)"
+            },
+            {
+              "explain": "Therefore, the value increases by \\(20000\\).",
+              "work": "\\(\\text{Increase} = 20000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-1-th30-p132-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the digit \\(3\\) in \\(43\\,776\\) is changed to a \\(9\\), by how much does the value increase?",
+          "options": [
+            "60",
+            "600",
+            "6000",
+            "60 000"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Find the place value of 3 (1000), multiply both digits by 1000, and subtract!",
+          "keyPoints": [
+            {
+              "text": "by how much does the value increase",
+              "note": "Find the difference between the new place value and old place value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the current value of \\(3\\): \\(3 \\times 1000 = 3000\\).",
+              "work": "\\(3 \\times 1000 = 3000\\)"
+            },
+            {
+              "explain": "Find the new value when changed to \\(9\\): \\(9 \\times 1000 = 9000\\).",
+              "work": "\\(9 \\times 1000 = 9000\\)"
+            },
+            {
+              "explain": "Subtract to find the increase: \\(9000 - 3000 = 6000\\).",
+              "work": "\\(9000 - 3000 = 6000\\)"
+            },
+            {
+              "explain": "Therefore, the value increases by \\(6000\\).",
+              "work": "\\(\\text{Increase} = 6000\\)"
+            }
+          ]
         }
       ]
     },
@@ -3084,6 +3244,406 @@
               "work": "\\(5411, 5413, 5415, 5417, 5419\\)"
             }
           ]
+        },
+        {
+          "id": "y4-rn-2-th30-p132-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Populations (June 2015): Mackay 85 455, Tamworth 42 255, Ballarat 99 841, Bundaberg 70 588, Cairns 147 993, Devonport 30 497, Hervey Bay 52 288, Bendigo 92 888, Hobart 209 254, Alice Springs 27 972. Which place had the HIGHEST population?",
+          "options": [
+            "Cairns (147 993)",
+            "Hobart (209 254)",
+            "Ballarat (99 841)",
+            "Bendigo (92 888)"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the hundred-thousands and ten-thousands digits first, or count up to the nearest thousand.",
+          "keyPoints": [
+            {
+              "text": "Populations (June 2015):",
+              "note": "Compare 5- and 6-digit numbers from left to right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Extract the relevant population numbers from the problem.",
+              "work": "\\(209\\\\)"
+            },
+            {
+              "explain": "Perform the comparison or calculation.",
+              "work": "\\(209\\,254 > 147\\,993 > 99\\,841\\)"
+            },
+            {
+              "explain": "Double-check place values carefully.",
+              "work": "\\(\\text{Verified: } 209\\,254 > 147\\,993 > 99\\,841\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Hobart (209 254).",
+              "work": "\\(\\text{Answer: Hobart (209 254)}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th30-p132-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Populations (June 2015): Mackay 85 455, Tamworth 42 255, Ballarat 99 841, Bundaberg 70 588, Cairns 147 993, Devonport 30 497, Hervey Bay 52 288, Bendigo 92 888, Hobart 209 254, Alice Springs 27 972. Which place had the LOWEST population?",
+          "options": [
+            "Devonport (30 497)",
+            "Tamworth (42 255)",
+            "Alice Springs (27 972)",
+            "Hervey Bay (52 288)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the hundred-thousands and ten-thousands digits first, or count up to the nearest thousand.",
+          "keyPoints": [
+            {
+              "text": "Populations (June 2015):",
+              "note": "Compare 5- and 6-digit numbers from left to right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Extract the relevant population numbers from the problem.",
+              "work": "\\(27\\\\)"
+            },
+            {
+              "explain": "Perform the comparison or calculation.",
+              "work": "\\(27\\,972 < 30\\,497 < 42\\,255\\)"
+            },
+            {
+              "explain": "Double-check place values carefully.",
+              "work": "\\(\\text{Verified: } 27\\,972 < 30\\,497 < 42\\,255\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Alice Springs (27 972).",
+              "work": "\\(\\text{Answer: Alice Springs (27 972)}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th30-p132-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ballarat had a population of \\(99\\,841\\) and Bendigo had a population of \\(92\\,888\\). Which place had a population closer to \\(100\\,000\\)?",
+          "options": [
+            "Ballarat (only 159 away from 100 000)",
+            "Bendigo (only 7112 away from 100 000)",
+            "Both are the same distance from 100 000",
+            "Neither is near 100 000"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the hundred-thousands and ten-thousands digits first, or count up to the nearest thousand.",
+          "keyPoints": [
+            {
+              "text": "Ballarat had a",
+              "note": "Compare 5- and 6-digit numbers from left to right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Extract the relevant population numbers from the problem.",
+              "work": "\\(100\\\\)"
+            },
+            {
+              "explain": "Perform the comparison or calculation.",
+              "work": "\\(100\\,000 - 99\\,841 = 159 < 7112 = 100\\,000 - 92\\,888\\)"
+            },
+            {
+              "explain": "Double-check place values carefully.",
+              "work": "\\(\\text{Verified: } 100\\,000 - 99\\,841 = 159 < 7112 = 100\\,000 - 92\\,888\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Ballarat (only 159 away from 100 000).",
+              "work": "\\(\\text{Answer: Ballarat (only 159 away from 100 000)}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th30-p132-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Cairns had a population of \\(147\\,993\\). How many more people need to live in Cairns to make \\(148\\,000\\)?",
+          "options": [
+            "5 people",
+            "7 people",
+            "13 people",
+            "17 people"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the hundred-thousands and ten-thousands digits first, or count up to the nearest thousand.",
+          "keyPoints": [
+            {
+              "text": "Cairns had a",
+              "note": "Compare 5- and 6-digit numbers from left to right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Extract the relevant population numbers from the problem.",
+              "work": "\\(148\\\\)"
+            },
+            {
+              "explain": "Perform the comparison or calculation.",
+              "work": "\\(148\\,000 - 147\\,993 = 7\\)"
+            },
+            {
+              "explain": "Double-check place values carefully.",
+              "work": "\\(\\text{Verified: } 148\\,000 - 147\\,993 = 7\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 7 people.",
+              "work": "\\(\\text{Answer: 7 people}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th30-p132-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Hervey Bay had a population of \\(52\\,288\\). If \\(12\\) more people lived in Hervey Bay, what would the new population be?",
+          "options": [
+            "52 290",
+            "52 300",
+            "52 310",
+            "53 000"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Compare the hundred-thousands and ten-thousands digits first, or count up to the nearest thousand.",
+          "keyPoints": [
+            {
+              "text": "Hervey Bay had",
+              "note": "Compare 5- and 6-digit numbers from left to right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Extract the relevant population numbers from the problem.",
+              "work": "\\(52\\\\)"
+            },
+            {
+              "explain": "Perform the comparison or calculation.",
+              "work": "\\(52\\,288 + 12 = 52\\,300\\)"
+            },
+            {
+              "explain": "Double-check place values carefully.",
+              "work": "\\(\\text{Verified: } 52\\,288 + 12 = 52\\,300\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 52 300.",
+              "work": "\\(\\text{Answer: 52 300}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th32-p141-ps3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the number sort box (60, 85, 13, 32, 81, 100, 236, 567, 708, 892, 1340, 2500, 8914, 7833, 9015), which list shows ALL the multiples of \\(5\\)?",
+          "options": [
+            "60, 85, 100, 1340, 2500, 9015",
+            "60, 100, 1340, 2500",
+            "85, 567, 9015",
+            "60, 85, 100, 2500, 9015"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check the exact condition against every number in the list carefully.",
+          "keyPoints": [
+            {
+              "text": "number sort box",
+              "note": "Filter the 15 numbers using the exact rule given."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the exact rule or calculation required.",
+              "work": "\\(\\text{Ends in 0 or 5\\)"
+            },
+            {
+              "explain": "Test the numbers in the box to find the exact match(es).",
+              "work": "\\(\\text{Ends in 0 or 5: } 60, 85, 100, 1340, 2500, 9015\\)"
+            },
+            {
+              "explain": "Double-check no valid number was missed.",
+              "work": "\\(\\text{Verified: 60, 85, 100, 1340, 2500, 9015}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 60, 85, 100, 1340, 2500, 9015.",
+              "work": "\\(\\text{Answer: 60, 85, 100, 1340, 2500, 9015}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th32-p141-ps4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the number sort box (60, 85, 13, 32, 81, 100, 236, 567, 708, 892, 1340, 2500, 8914, 7833, 9015), which numbers are larger than \\(1300\\) and less than \\(7000\\)?",
+          "options": [
+            "1340 and 2500",
+            "892, 1340, and 2500",
+            "1340, 2500, and 7833",
+            "2500 only"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check the exact condition against every number in the list carefully.",
+          "keyPoints": [
+            {
+              "text": "number sort box",
+              "note": "Filter the 15 numbers using the exact rule given."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the exact rule or calculation required.",
+              "work": "\\(1300 < 1340 < 2500 < 7000\\)"
+            },
+            {
+              "explain": "Test the numbers in the box to find the exact match(es).",
+              "work": "\\(1300 < 1340 < 2500 < 7000\\)"
+            },
+            {
+              "explain": "Double-check no valid number was missed.",
+              "work": "\\(\\text{Verified: 1340 and 2500}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1340 and 2500.",
+              "work": "\\(\\text{Answer: 1340 and 2500}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th32-p141-ps6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the number sort box (60, 85, 13, 32, 81, 100, 236, 567, 708, 892, 1340, 2500, 8914, 7833, 9015), which number is \\(8\\) less than \\(900\\)?",
+          "options": [
+            "892",
+            "708",
+            "8914",
+            "81"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check the exact condition against every number in the list carefully.",
+          "keyPoints": [
+            {
+              "text": "number sort box",
+              "note": "Filter the 15 numbers using the exact rule given."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the exact rule or calculation required.",
+              "work": "\\(900 - 8 = 892\\)"
+            },
+            {
+              "explain": "Test the numbers in the box to find the exact match(es).",
+              "work": "\\(900 - 8 = 892\\)"
+            },
+            {
+              "explain": "Double-check no valid number was missed.",
+              "work": "\\(\\text{Verified: 892}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 892.",
+              "work": "\\(\\text{Answer: 892}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th32-p141-ps7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the number sort box (60, 85, 13, 32, 81, 100, 236, 567, 708, 892, 1340, 2500, 8914, 7833, 9015), which number is \\(50\\) greater than \\(186\\)?",
+          "options": [
+            "236",
+            "136",
+            "567",
+            "2500"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check the exact condition against every number in the list carefully.",
+          "keyPoints": [
+            {
+              "text": "number sort box",
+              "note": "Filter the 15 numbers using the exact rule given."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the exact rule or calculation required.",
+              "work": "\\(186 + 50 = 236\\)"
+            },
+            {
+              "explain": "Test the numbers in the box to find the exact match(es).",
+              "work": "\\(186 + 50 = 236\\)"
+            },
+            {
+              "explain": "Double-check no valid number was missed.",
+              "work": "\\(\\text{Verified: 236}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 236.",
+              "work": "\\(\\text{Answer: 236}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y4-rn-2-th32-p141-ps8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the number sort box (60, 85, 13, 32, 81, 100, 236, 567, 708, 892, 1340, 2500, 8914, 7833, 9015), which number is double \\(1250\\)?",
+          "options": [
+            "1340",
+            "2500",
+            "236",
+            "7833"
+          ],
+          "answer": 1,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "Check the exact condition against every number in the list carefully.",
+          "keyPoints": [
+            {
+              "text": "number sort box",
+              "note": "Filter the 15 numbers using the exact rule given."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the exact rule or calculation required.",
+              "work": "\\(2 \\times 1250 = 2500\\)"
+            },
+            {
+              "explain": "Test the numbers in the box to find the exact match(es).",
+              "work": "\\(2 \\times 1250 = 2500\\)"
+            },
+            {
+              "explain": "Double-check no valid number was missed.",
+              "work": "\\(\\text{Verified: 2500}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 2500.",
+              "work": "\\(\\text{Answer: 2500}\\)"
+            }
+          ]
         }
       ]
     },
@@ -4202,6 +4762,190 @@
               "work": "\\(\\dfrac{3}{10} = 0.3, \\quad 0.7 > 0.3\\)"
             }
           ]
+        },
+        {
+          "id": "y4-rn-4-th27-p121-ps2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the 100 m sprint (A: 9.8 s, B: 11 s, C: 10.2 s, D: 10.8 s, E: 10.5 s, F: 10 s), which runner was the FASTEST?",
+          "options": [
+            "Runner A (9.8 s)",
+            "Runner B (11 s)",
+            "Runner F (10 s)",
+            "Runner D (10.8 s)"
+          ],
+          "answer": 0,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "In a race, a SMALLER time means FASTER, and a LARGER time means SLOWER!",
+          "keyPoints": [
+            {
+              "text": "100 m sprint",
+              "note": "Smaller time = faster runner; larger time = slower runner."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the runners’ times on the decimal timeline (each small tick = 0.1 s).",
+              "work": "\\(9.8 < 10.0 < 10.2 < 10.5 < 10.8 < 11.0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 132\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"132\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"200.8\" cy=\"68\" r=\"5\" fill=\"#dc2626\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">A(9.8)</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"316.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">B</text><text x=\"220\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Fastest = shortest time -> Runner A (9.8 s)</text></svg>"
+              }
+            },
+            {
+              "explain": "Fastest = shortest time -> Runner A (9.8 s).",
+              "work": "\\(9.8 < 10.0 < 10.2 < 10.5 < 10.8 < 11.0\\)"
+            },
+            {
+              "explain": "Check by counting tenths along the timeline.",
+              "work": "\\(\\text{Verified: Runner A (9.8 s)}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Runner A (9.8 s).",
+              "work": "\\(\\text{Answer: Runner A (9.8 s)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 108\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"200.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">A</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"316.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">B</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th27-p121-ps3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the 100 m sprint (A: 9.8 s, B: 11 s, C: 10.2 s, D: 10.8 s, E: 10.5 s, F: 10 s), which runner was the SLOWEST?",
+          "options": [
+            "Runner A (9.8 s)",
+            "Runner D (10.8 s)",
+            "Runner B (11 s)",
+            "Runner E (10.5 s)"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "In a race, a SMALLER time means FASTER, and a LARGER time means SLOWER!",
+          "keyPoints": [
+            {
+              "text": "100 m sprint",
+              "note": "Smaller time = faster runner; larger time = slower runner."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the runners’ times on the decimal timeline (each small tick = 0.1 s).",
+              "work": "\\(11.0 > 10.8 > 10.5 > 10.2 > 10.0 > 9.8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 132\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"132\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"200.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">A</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"316.0\" cy=\"68\" r=\"5\" fill=\"#dc2626\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">B(11)</text><text x=\"220\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Slowest = longest time -> Runner B (11 s)</text></svg>"
+              }
+            },
+            {
+              "explain": "Slowest = longest time -> Runner B (11 s).",
+              "work": "\\(11.0 > 10.8 > 10.5 > 10.2 > 10.0 > 9.8\\)"
+            },
+            {
+              "explain": "Check by counting tenths along the timeline.",
+              "work": "\\(\\text{Verified: Runner B (11 s)}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Runner B (11 s).",
+              "work": "\\(\\text{Answer: Runner B (11 s)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 108\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"200.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">A</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"316.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">B</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th27-p121-ps4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the 100 m sprint, Runner A finished in \\(9.8\\text{ s}\\) (fastest) and Runner B finished in \\(11\\text{ s}\\) (slowest). How many seconds faster was the fastest runner than the slowest runner?",
+          "options": [
+            "0.8 s",
+            "1.0 s",
+            "1.2 s",
+            "2.2 s"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "In a race, a SMALLER time means FASTER, and a LARGER time means SLOWER!",
+          "keyPoints": [
+            {
+              "text": "100 m sprint",
+              "note": "Smaller time = faster runner; larger time = slower runner."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the runners’ times on the decimal timeline (each small tick = 0.1 s).",
+              "work": "\\(11.0 - 9.8 = 1.2\\text{ s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 132\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"132\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"200.8\" cy=\"68\" r=\"5\" fill=\"#dc2626\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">A(9.8)</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"316.0\" cy=\"68\" r=\"5\" fill=\"#dc2626\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">B(11)</text><text x=\"220\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">11.0 s - 9.8 s = 1.2 s faster</text></svg>"
+              }
+            },
+            {
+              "explain": "11.0 s - 9.8 s = 1.2 s faster.",
+              "work": "\\(11.0 - 9.8 = 1.2\\text{ s}\\)"
+            },
+            {
+              "explain": "Check by counting tenths along the timeline.",
+              "work": "\\(\\text{Verified: 1.2 s}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 1.2 s.",
+              "work": "\\(\\text{Answer: 1.2 s}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 108\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"200.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">A</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"316.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">B</text></svg>"
+          }
+        },
+        {
+          "id": "y4-rn-4-th27-p121-ps5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the 100 m sprint, Runner F ran \\(10\\text{ s}\\) and Runner D ran \\(10.8\\text{ s}\\). How much slower than Runner F was Runner D?",
+          "options": [
+            "0.2 s",
+            "0.5 s",
+            "0.8 s",
+            "1.8 s"
+          ],
+          "answer": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "hint": "In a race, a SMALLER time means FASTER, and a LARGER time means SLOWER!",
+          "keyPoints": [
+            {
+              "text": "100 m sprint",
+              "note": "Smaller time = faster runner; larger time = slower runner."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the runners’ times on the decimal timeline (each small tick = 0.1 s).",
+              "work": "\\(10.8 - 10.0 = 0.8\\text{ s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 132\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"132\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"200.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">A</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"220.0\" cy=\"68\" r=\"5\" fill=\"#dc2626\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">F(10)</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"296.8\" cy=\"68\" r=\"5\" fill=\"#dc2626\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">D(10.8)</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"316.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">B</text><text x=\"220\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">10.8 s - 10.0 s = 0.8 s slower</text></svg>"
+              }
+            },
+            {
+              "explain": "10.8 s - 10.0 s = 0.8 s slower.",
+              "work": "\\(10.8 - 10.0 = 0.8\\text{ s}\\)"
+            },
+            {
+              "explain": "Check by counting tenths along the timeline.",
+              "work": "\\(\\text{Verified: 0.8 s}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is 0.8 s.",
+              "work": "\\(\\text{Answer: 0.8 s}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 108\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"108\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"28\" y1=\"68\" x2=\"412\" y2=\"68\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"28.0\" y1=\"54\" x2=\"28.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"28.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">8 s</text><line x1=\"37.6\" y1=\"63\" x2=\"37.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"47.2\" y1=\"63\" x2=\"47.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"56.8\" y1=\"63\" x2=\"56.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"66.4\" y1=\"63\" x2=\"66.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"76.0\" y1=\"59\" x2=\"76.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"85.6\" y1=\"63\" x2=\"85.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"95.2\" y1=\"63\" x2=\"95.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"104.8\" y1=\"63\" x2=\"104.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"114.4\" y1=\"63\" x2=\"114.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"124.0\" y1=\"54\" x2=\"124.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"124.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 s</text><line x1=\"133.6\" y1=\"63\" x2=\"133.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"143.2\" y1=\"63\" x2=\"143.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"152.8\" y1=\"63\" x2=\"152.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"162.4\" y1=\"63\" x2=\"162.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"172.0\" y1=\"59\" x2=\"172.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"63\" x2=\"181.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"191.2\" y1=\"63\" x2=\"191.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"200.8\" y1=\"63\" x2=\"200.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"210.4\" y1=\"63\" x2=\"210.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"220.0\" y1=\"54\" x2=\"220.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"220.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">10 s</text><line x1=\"229.6\" y1=\"63\" x2=\"229.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"239.2\" y1=\"63\" x2=\"239.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"63\" x2=\"248.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"258.4\" y1=\"63\" x2=\"258.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"268.0\" y1=\"59\" x2=\"268.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"277.6\" y1=\"63\" x2=\"277.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"287.2\" y1=\"63\" x2=\"287.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"296.8\" y1=\"63\" x2=\"296.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"306.4\" y1=\"63\" x2=\"306.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"316.0\" y1=\"54\" x2=\"316.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"316.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">11 s</text><line x1=\"325.6\" y1=\"63\" x2=\"325.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"335.2\" y1=\"63\" x2=\"335.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"344.8\" y1=\"63\" x2=\"344.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"354.4\" y1=\"63\" x2=\"354.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"364.0\" y1=\"59\" x2=\"364.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"373.6\" y1=\"63\" x2=\"373.6\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"383.2\" y1=\"63\" x2=\"383.2\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"392.8\" y1=\"63\" x2=\"392.8\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"402.4\" y1=\"63\" x2=\"402.4\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"412.0\" y1=\"54\" x2=\"412.0\" y2=\"68\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"412.0\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">12 s</text><line x1=\"200.8\" y1=\"26\" x2=\"200.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"200.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"200.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">A</text><line x1=\"220.0\" y1=\"42\" x2=\"220.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"220.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"220.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">F</text><line x1=\"239.2\" y1=\"26\" x2=\"239.2\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"239.2\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">C</text><line x1=\"268.0\" y1=\"42\" x2=\"268.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"268.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"268.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">E</text><line x1=\"296.8\" y1=\"26\" x2=\"296.8\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"296.8\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"296.8\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">D</text><line x1=\"316.0\" y1=\"42\" x2=\"316.0\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\"/><circle cx=\"316.0\" cy=\"68\" r=\"3.5\" fill=\"#2563eb\"/><text x=\"316.0\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e3a8a\">B</text></svg>"
+          }
         }
       ]
     },
