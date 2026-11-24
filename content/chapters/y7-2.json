@@ -2437,6 +2437,46 @@
             "grade": "7"
           },
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List ALL the factors of \\(24\\).",
+          "options": [
+            "\\(1, 2, 3, 4, 6, 8, 12, 24\\)",
+            "\\(1, 2, 3, 4, 6, 12, 24\\)",
+            "\\(2, 3, 4, 6, 8, 12\\)",
+            "\\(1, 2, 4, 6, 8, 12, 24\\)"
+          ],
+          "answer": 0,
+          "hint": "Find factor pairs of 24: 1×24, 2×12, 3×8, 4×6 (8 factors in total!).",
+          "keyPoints": [
+            {
+              "text": "List ALL",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(1\\times 24, \\; 2\\times 12, \\; 3\\times 8, \\; 4\\times 6\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(1, 2, 3, 4, 6, 8, 12, 24\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 1, 2, 3, 4, 6, 8, 12, 24\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1, 2, 3, 4, 6, 8, 12, 24\\).",
+              "work": "\\(\\text{Answer: } 1, 2, 3, 4, 6, 8, 12, 24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4046,6 +4086,46 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Non-calculator Q7"
           }
+        },
+        {
+          "id": "khs23-y7-t2-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List ALL the prime numbers between \\(30\\) and \\(40\\).",
+          "options": [
+            "\\(31 \\text{ and } 37\\)",
+            "\\(31, 33, 37, 39\\)",
+            "\\(31, 37, 39\\)",
+            "\\(31, 35, 37\\)"
+          ],
+          "answer": 0,
+          "hint": "Test odd numbers between 30 and 40: 33 = 3×11, 35 = 5×7, 39 = 3×13 — only 31 and 37 are prime!",
+          "keyPoints": [
+            {
+              "text": "List ALL",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(33=3\\times 11, \\; 35=5\\times 7, \\; 39=3\\times 13\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\text{Primes: } 31 \\text{ and } 37\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 31 \\text{ and } 37\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(31 \\text{ and } 37\\).",
+              "work": "\\(31 \\text{ and } 37\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6135,6 +6215,86 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y7-t2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(5 \\times 5 \\times 5\\) using index notation.",
+          "options": [
+            "\\(5^3\\)",
+            "\\(3^5\\)",
+            "\\(5 \\times 3\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "5 is multiplied by itself 3 times, so the base is 5 and the index is 3.",
+          "keyPoints": [
+            {
+              "text": "Write \\(5",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(5 \\times 5 \\times 5 \\text{ (3 factors of 5)}\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(5^3\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 5^3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5^3\\).",
+              "work": "\\(\\text{Answer: } 5^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q14d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(2^3 \\times 3^2\\).",
+          "options": [
+            "\\(36\\)",
+            "\\(54\\)",
+            "\\(72\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate each power first: 2³ = 8 and 3² = 9, then multiply 8 × 9!",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(2^3",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(2^3 = 8, \\quad 3^2 = 9\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(8 \\times 9 = 72\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 72\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(72\\).",
+              "work": "\\(72\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -7832,6 +7992,98 @@
             "\\(\\text{432}=2^3\\times3^4;\\quad \\text{500}=2^3\\times5^2\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "khs23-y7-t2-q21a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factor tree of \\(70\\) shown (where \\(70\\) branches into a circle and \\(10\\), and \\(10\\) branches into two circles). What are the three missing prime numbers?",
+          "options": [
+            "7 (left of 10), and 2 and 5 (below 10)",
+            "7 (left of 10), and 1 and 10 (below 10)",
+            "60 (left of 10), and 2 and 5 (below 10)",
+            "14 (left of 10), and 2 and 5 (below 10)"
+          ],
+          "answer": 0,
+          "hint": "What times 10 equals 70? (7!). Then split 10 into its two prime factors (2 × 5).",
+          "keyPoints": [
+            {
+              "text": "factor tree of \\(70\\)",
+              "note": "70 = 7 × 10, and 10 = 2 × 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the missing factor paired with \\(10\\): \\(70 \\div 10 = 7\\) (which is prime).",
+              "work": "\\(70 = 7 \\times 10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 200\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"112\" y=\"34\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">70</text><line x1=\"106\" y1=\"42\" x2=\"72\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"42\" x2=\"148\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"68\" cy=\"100\" r=\"15\" fill=\"#fef3c7\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"68\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">7</text><text x=\"152\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0f172a\">10</text><line x1=\"146\" y1=\"112\" x2=\"116\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"158\" y1=\"112\" x2=\"188\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"112\" cy=\"156\" r=\"15\" fill=\"#fef3c7\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"192\" cy=\"156\" r=\"15\" fill=\"#fef3c7\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"112\" y=\"161\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">2</text><text x=\"192\" y=\"161\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">5</text><text x=\"120\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Completed factor tree: 70 = 7 × 10 = 7 × 2 × 5</text></svg>"
+              }
+            },
+            {
+              "explain": "Split \\(10\\) into its two prime factors: \\(10 = 2 \\times 5\\).",
+              "work": "\\(10 = 2 \\times 5\\)"
+            },
+            {
+              "explain": "Check all three circled numbers are prime: \\(7, 2,\\) and \\(5\\) are all prime.",
+              "work": "\\(7 \\times 2 \\times 5 = 70\\)"
+            },
+            {
+              "explain": "Therefore, the three missing prime numbers are \\(7\\), \\(2\\), and \\(5\\).",
+              "work": "\\(\\text{Answer: } 7, 2, 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 174\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"112\" y=\"34\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">70</text><line x1=\"106\" y1=\"42\" x2=\"72\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"42\" x2=\"148\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"68\" cy=\"100\" r=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"152\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0f172a\">10</text><line x1=\"146\" y1=\"112\" x2=\"116\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"158\" y1=\"112\" x2=\"188\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"112\" cy=\"156\" r=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"192\" cy=\"156\" r=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t2-q21b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the factor tree of \\(70\\), write \\(70\\) as the product of its prime factors.",
+          "options": [
+            "\\(7 \\times 10\\)",
+            "\\(2 \\times 5 \\times 7\\)",
+            "\\(2 + 5 + 7\\)",
+            "\\(1 \\times 2 \\times 5 \\times 7\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply ONLY the prime numbers at the ends of the factor tree (do not include 10 or 1!).",
+          "keyPoints": [
+            {
+              "text": "product of its prime factors",
+              "note": "Multiply the prime leaves: 2 × 5 × 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the three prime numbers at the bottom/ends of the completed factor tree: \\(2, 5,\\) and \\(7\\).",
+              "work": "\\(\\text{Prime leaves: } 2, 5, 7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 200\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"112\" y=\"34\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">70</text><line x1=\"106\" y1=\"42\" x2=\"72\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"42\" x2=\"148\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"68\" cy=\"100\" r=\"15\" fill=\"#fef3c7\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"68\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">7</text><text x=\"152\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0f172a\">10</text><line x1=\"146\" y1=\"112\" x2=\"116\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"158\" y1=\"112\" x2=\"188\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"112\" cy=\"156\" r=\"15\" fill=\"#fef3c7\" stroke=\"#dc2626\" stroke-width=\"2\"/><circle cx=\"192\" cy=\"156\" r=\"15\" fill=\"#fef3c7\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"112\" y=\"161\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">2</text><text x=\"192\" y=\"161\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">5</text><text x=\"120\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Product of prime factors = 2 × 5 × 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Write them as a product in ascending order: \\(2 \\times 5 \\times 7\\).",
+              "work": "\\(70 = 2 \\times 5 \\times 7\\)"
+            },
+            {
+              "explain": "Check by multiplying: \\(2 \\times 5 = 10\\), and \\(10 \\times 7 = 70\\).",
+              "work": "\\(10 \\times 7 = 70\\)"
+            },
+            {
+              "explain": "Therefore, \\(70 = 2 \\times 5 \\times 7\\).",
+              "work": "\\(\\text{Answer: } 2 \\times 5 \\times 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 174\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"112\" y=\"34\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#0f172a\">70</text><line x1=\"106\" y1=\"42\" x2=\"72\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"42\" x2=\"148\" y2=\"86\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"68\" cy=\"100\" r=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"152\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#0f172a\">10</text><line x1=\"146\" y1=\"112\" x2=\"116\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"158\" y1=\"112\" x2=\"188\" y2=\"144\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"112\" cy=\"156\" r=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"192\" cy=\"156\" r=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/></svg>"
+          }
         }
       ]
     },
@@ -9075,6 +9327,46 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y7-t2-q23d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(6^2 - \\sqrt{16}\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(20\\)",
+            "\\(32\\)",
+            "\\(40\\)"
+          ],
+          "answer": 2,
+          "hint": "Compute 6² = 36 and √16 = 4 first, then subtract 36 - 4 = 32!",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(6^2 -",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(6^2 = 36, \\quad \\sqrt{16} = 4\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(36 - 4 = 32\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } 32\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(32\\).",
+              "work": "\\(32\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -10373,6 +10665,380 @@
             "\\(\\text{HCF}= 2^2;\\quad \\text{LCM}= 2^4\\times3^3\\times5^3\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "t3-2022-y7-pa-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor of \\(24\\) and \\(40\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(4\\)",
+            "\\(12\\)",
+            "\\(120\\)"
+          ],
+          "answer": 0,
+          "hint": "List the factors of each number and select the largest common one.",
+          "steps": [
+            {
+              "explain": "The common factors are 1, 2, 4 and 8.",
+              "work": "\\(24:1,2,3,4,6,8,12,24;\\quad40:1,2,4,5,8,10,20,40\\)"
+            },
+            {
+              "explain": "The greatest common factor is 8.",
+              "work": "\\(\\operatorname{HCF}(24,40)=8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down all the prime numbers between \\(20\\) and \\(30\\).",
+          "options": [
+            "\\(23,29\\)",
+            "\\(21,23,29\\)",
+            "\\(22,23,29\\)",
+            "\\(23,27,29\\)"
+          ],
+          "answer": 0,
+          "hint": "A prime number has exactly two positive factors: 1 and itself.",
+          "steps": [
+            {
+              "explain": "Remove even numbers and multiples of 3 or 5.",
+              "work": "\\(21,22,24,25,26,27,28,30\\text{ are composite}\\)"
+            },
+            {
+              "explain": "23 and 29 have no factors other than 1 and themselves.",
+              "work": "\\(23,29\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down a number greater than \\(6\\) that has an odd number of factors.",
+          "options": [
+            "\\(9\\)",
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "A perfect square has an odd number of factors because its square root is unpaired.",
+          "steps": [
+            {
+              "explain": "Use a perfect square greater than 6.",
+              "work": "\\(9=3^2\\)"
+            },
+            {
+              "explain": "Its factors are 1, 3 and 9.",
+              "work": "\\(9:1,3,9\\)"
+            },
+            {
+              "explain": "There are three factors, which is odd.",
+              "work": "\\(3\\text{ factors}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q7d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(\\sqrt{400}+\\sqrt[3]{27}\\).",
+          "options": [
+            "\\(23\\)",
+            "\\(17\\)",
+            "\\(47\\)",
+            "\\(13\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number that squares to 400 and the number that cubes to 27.",
+          "steps": [
+            {
+              "explain": "Evaluate the square root.",
+              "work": "\\(\\sqrt{400}=20\\)"
+            },
+            {
+              "explain": "Evaluate the cube root.",
+              "work": "\\(\\sqrt[3]{27}=3\\)"
+            },
+            {
+              "explain": "Add the two values.",
+              "work": "\\(20+3=23\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q7e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(2^3+3^2\\).",
+          "options": [
+            "\\(17\\)",
+            "\\(25\\)",
+            "\\(36\\)",
+            "\\(13\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate each power before adding.",
+          "steps": [
+            {
+              "explain": "Evaluate both powers.",
+              "work": "\\(2^3=8,\\quad3^2=9\\)"
+            },
+            {
+              "explain": "Add the results.",
+              "work": "\\(8+9=17\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Draw a factor tree for \\(72\\).",
+          "options": [
+            "\\(72=2^3\\times3^2\\)",
+            "\\(72=2^2\\times3^3\\)",
+            "\\(72=2\\times3^2\\)",
+            "\\(72=6\\times12\\)"
+          ],
+          "answer": 0,
+          "hint": "Keep splitting composite factors until every end factor is prime.",
+          "steps": [
+            {
+              "explain": "Split 72 into factors, then split each composite factor.",
+              "work": "\\(72=8\\times9\\)"
+            },
+            {
+              "explain": "Write each factor as primes.",
+              "work": "\\(8=2\\times2\\times2,\\quad9=3\\times3\\)"
+            },
+            {
+              "explain": "The completed factor tree has the prime leaves shown.",
+              "work": "\\(72=2^3\\times3^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(72\\) as a product of its prime factors.",
+          "options": [
+            "\\(2^3\\times3^2\\)",
+            "\\(2^2\\times3^3\\)",
+            "\\(2\\times3^2\\)",
+            "\\(6\\times12\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the prime factors at the ends of a factor tree, then collect matching factors.",
+          "steps": [
+            {
+              "explain": "Use a factor tree to find only prime factors.",
+              "work": "\\(72=2\\times2\\times2\\times3\\times3\\)"
+            },
+            {
+              "explain": "Collect equal prime factors as powers.",
+              "work": "\\(2\\times2\\times2=2^3,\\quad3\\times3=3^2\\)"
+            },
+            {
+              "explain": "The prime factorisation is therefore shown.",
+              "work": "\\(72=2^3\\times3^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q8c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the lowest common multiple of \\(12\\) and \\(16\\).",
+          "options": [
+            "\\(48\\)",
+            "\\(24\\)",
+            "\\(96\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "Use prime factors and include each prime at its greatest required power.",
+          "steps": [
+            {
+              "explain": "Write each number as prime factors.",
+              "work": "\\(12=2^2\\times3,\\quad16=2^4\\)"
+            },
+            {
+              "explain": "Use the greatest power of each required prime.",
+              "work": "\\(\\operatorname{LCM}=2^4\\times3\\)"
+            },
+            {
+              "explain": "Calculate the product.",
+              "work": "\\(16\\times3=48\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q8d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the smallest number greater than \\(500\\) that is divisible by \\(9\\).",
+          "options": [
+            "\\(504\\)",
+            "\\(501\\)",
+            "\\(509\\)",
+            "\\(495\\)"
+          ],
+          "answer": 0,
+          "hint": "The digit sum of a multiple of 9 is itself a multiple of 9.",
+          "steps": [
+            {
+              "explain": "Check the first numbers greater than 500.",
+              "work": "\\(5+0+1=6,\\quad5+0+2=7,\\quad5+0+3=8\\)"
+            },
+            {
+              "explain": "The digit sum of 504 is 9.",
+              "work": "\\(5+0+4=9\\)"
+            },
+            {
+              "explain": "Therefore 504 is the first multiple of 9 after 500.",
+              "work": "\\(504\\div9=56\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "khs23-y7-t2-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor (HCF) of \\(6\\) and \\(18\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(6\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Since 6 divides evenly into 18 (18 = 6 × 3), 6 itself is the highest common factor!",
+          "keyPoints": [
+            {
+              "text": "Find the",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(\\text{Factors of 6: } 1,2,3,6; \\; \\text{Factors of 18: } 1,2,3,6,9,18\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(\\text{HCF} = 6\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 6\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(6\\).",
+              "work": "\\(\\text{Answer: } 6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the lowest common multiple (LCM) of \\(5\\) and \\(15\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(15\\)",
+            "\\(30\\)",
+            "\\(75\\)"
+          ],
+          "answer": 1,
+          "hint": "Since 15 is already a multiple of 5 (5 × 3 = 15), 15 is the lowest common multiple!",
+          "keyPoints": [
+            {
+              "text": "Find the",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(\\text{Multiples of 5: } 5, 10, 15; \\; \\text{Multiples of 15: } 15, 30\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(\\text{LCM} = 15\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 15\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(15\\).",
+              "work": "\\(\\text{Answer: } 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -11422,6 +12088,46 @@
             "\\(1006\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "khs23-y7-t2-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is \\(2562\\) divisible by \\(3\\)? Choose the correct answer and justification.",
+          "options": [
+            "Yes, because the sum of its digits (2 + 5 + 6 + 2 = 15) is divisible by 3.",
+            "Yes, because it ends in an even digit (2).",
+            "No, because it does not end in 3, 6, or 9.",
+            "No, because 2 + 5 + 6 + 2 = 14 is not divisible by 3."
+          ],
+          "answer": 0,
+          "hint": "Use the divisibility test for 3: add ALL the digits of 2562 and check whether that sum is a multiple of 3!",
+          "keyPoints": [
+            {
+              "text": "Is \\(2562\\)",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(2 + 5 + 6 + 2 = 15\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(15 \\div 3 = 5 \\text{ (no remainder)}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\text{Yes (digit sum } 15 \\text{ is divisible by } 3\\text{)}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Yes, because the sum of its digits (2 + 5 + 6 + 2 = 15) is divisible by 3..",
+              "work": "\\(\\text{Yes (digit sum } 15 \\text{ is divisible by } 3\\text{)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

@@ -2070,6 +2070,86 @@
             "sourcePaper": "Sydney Grammar School Year 7 Mathematics Task 3 (2013)",
             "sourceQuestion": "Calculator Q6"
           }
+        },
+        {
+          "id": "khs23-y7-t2-q26a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which symbol makes the statement \\(-\\dfrac{1}{3} \\; \\square \\; -\\dfrac{1}{2}\\) true?",
+          "options": [
+            "\\(>\\)",
+            "\\(<\\)",
+            "\\(=\\)",
+            "\\(\\le\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful with negative numbers! -1/3 = -0.333... is closer to 0 (further RIGHT on the number line) than -1/2 = -0.5, so -1/3 > -1/2!",
+          "keyPoints": [
+            {
+              "text": "Which symbol makes",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(-\\dfrac{1}{3} = -\\dfrac{2}{6}, \\quad -\\dfrac{1}{2} = -\\dfrac{3}{6}\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(-\\dfrac{2}{6} > -\\dfrac{3}{6} \\implies -\\dfrac{1}{3} > -\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } >\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(>\\).",
+              "work": "\\(>\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q26b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which symbol makes the statement \\(-2\\dfrac{1}{4} \\; \\square \\; -\\dfrac{7}{2}\\) true?",
+          "options": [
+            "\\(>\\)",
+            "\\(<\\)",
+            "\\(=\\)",
+            "\\(\\le\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert both to decimals or quarters: -2 1/4 = -2.25 and -7/2 = -3.5. On the number line, -2.25 is to the RIGHT of -3.5!",
+          "keyPoints": [
+            {
+              "text": "Which symbol makes",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(-2\\dfrac{1}{4} = -2.25, \\quad -\\dfrac{7}{2} = -3.5\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(-2.25 > -3.5\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } >\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(>\\).",
+              "work": "\\(>\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

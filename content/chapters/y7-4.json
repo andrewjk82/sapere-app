@@ -1233,6 +1233,52 @@
               "note": "Count shaded equal-area pieces in each option, rather than comparing the outlines."
             }
           ]
+        },
+        {
+          "id": "khs23-y7-t2-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction of the regular hexagon shown is shaded (in simplest form)?",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Count how many of the 6 equal triangles are shaded (4 out of 6), then simplify 4/6 by dividing top and bottom by 2!",
+          "keyPoints": [
+            {
+              "text": "fraction",
+              "note": "Shaded parts ÷ Total equal parts, then simplify."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the total number of congruent triangles inside the hexagon: \\(6\\) equal triangles.",
+              "work": "\\(\\text{Total parts} = 6\\)"
+            },
+            {
+              "explain": "Count the shaded triangles: \\(4\\) triangles are shaded (numbered 1–4 in blue).",
+              "work": "\\(\\text{Shaded fraction} = \\dfrac{4}{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 175\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,74 166.0,74.0 138.0,122.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"138.0\" y=\"94.2\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e3a8a\">1</text><polygon points=\"110,74 138.0,122.5 82.0,122.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"110.0\" y=\"110.3\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e3a8a\">2</text><polygon points=\"110,74 82.0,122.5 54.0,74.0\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"82.0\" y=\"94.2\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e3a8a\">3</text><polygon points=\"110,74 54.0,74.0 82.0,25.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"110,74 82.0,25.5 138.0,25.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"110.0\" y=\"45.7\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e3a8a\">4</text><polygon points=\"110,74 138.0,25.5 166.0,74.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><text x=\"110\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">4 shaded triangles out of 6 equal triangles = 4/6 = 2/3</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{4}{6}\\) by dividing numerator and denominator by \\(2\\).",
+              "work": "\\(\\dfrac{4 \\div 2}{6 \\div 2} = \\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{2}{3}\\) of the shape is shaded.",
+              "work": "\\(\\text{Answer: } \\dfrac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 148\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,74 166.0,74.0 138.0,122.5\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"110,74 138.0,122.5 82.0,122.5\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"110,74 82.0,122.5 54.0,74.0\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"110,74 54.0,74.0 82.0,25.5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"110,74 82.0,25.5 138.0,25.5\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"110,74 138.0,25.5 166.0,74.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg>"
+          }
         }
       ]
     },
@@ -2418,6 +2464,166 @@
               "note": "Divide both parts of the fraction by their greatest common factor."
             }
           ]
+        },
+        {
+          "id": "khs23-y7-t2-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{12}{27}\\).",
+          "options": [
+            "\\(\\dfrac{4}{9}\\)",
+            "\\(\\dfrac{3}{9}\\)",
+            "\\(\\dfrac{6}{9}\\)",
+            "\\(\\dfrac{4}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide numerator and denominator by their HCF (3).",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac{12}{27}\\).",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(\\dfrac{12 \\div 3}{27 \\div 3}\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\dfrac{4}{9}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\dfrac{4}{9}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{4}{9}\\).",
+              "work": "\\(\\dfrac{4}{9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent fraction: \\(\\dfrac{5}{13} = \\dfrac{15}{\\square}\\).",
+          "options": [
+            "\\(26\\)",
+            "\\(39\\)",
+            "\\(45\\)",
+            "\\(23\\)"
+          ],
+          "answer": 1,
+          "hint": "To get from 5 to 15, multiply by 3 — so multiply the denominator 13 by 3 as well!",
+          "keyPoints": [
+            {
+              "text": "Complete the",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(5 \\times 3 = 15 \\implies 13 \\times 3 = 39\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\dfrac{15}{39}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 39\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(39\\).",
+              "work": "\\(39\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q15b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent fraction: \\(\\dfrac{\\square}{35} = \\dfrac{54}{70}\\).",
+          "options": [
+            "\\(24\\)",
+            "\\(27\\)",
+            "\\(28\\)",
+            "\\(108\\)"
+          ],
+          "answer": 1,
+          "hint": "To get from 70 down to 35, divide by 2 — so divide 54 by 2 as well!",
+          "keyPoints": [
+            {
+              "text": "Complete the",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(70 \\div 2 = 35 \\implies 54 \\div 2 = 27\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\dfrac{27}{35}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 27\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(27\\).",
+              "work": "\\(27\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a group of \\(40\\) students, \\(24\\) wear sport shoes. What fraction of the group wear sport shoes? Express your answer in simplest form.",
+          "options": [
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{6}{10}\\)",
+            "\\(\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 24/40 and divide numerator and denominator by their HCF (8)!",
+          "keyPoints": [
+            {
+              "text": "In a",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(\\dfrac{24}{40}\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\dfrac{24 \\div 8}{40 \\div 8} = \\dfrac{3}{5}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\dfrac{3}{5}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{3}{5}\\).",
+              "work": "\\(\\dfrac{3}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2912,6 +3118,46 @@
               "note": "Use division to find the number of complete groups of four and the leftover amount."
             }
           ]
+        },
+        {
+          "id": "khs23-y7-t2-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed numeral \\(2\\dfrac{3}{4}\\) to an improper fraction.",
+          "options": [
+            "\\(\\dfrac{9}{4}\\)",
+            "\\(\\dfrac{11}{4}\\)",
+            "\\(\\dfrac{10}{4}\\)",
+            "\\(\\dfrac{23}{4}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the whole number by the denominator and add the numerator: (2 × 4 + 3) / 4 = 11/4.",
+          "keyPoints": [
+            {
+              "text": "Convert the",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(\\dfrac{(2 \\times 4) + 3}{4}\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(\\dfrac{11}{4}\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } \\dfrac{11}{4}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{11}{4}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{11}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5296,6 +5542,288 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "t3-2022-y7-pa-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\frac{5}{6}-\\frac{4}{6}\\).",
+          "options": [
+            "\\(\\frac16\\)",
+            "\\(\\frac96\\)",
+            "\\(\\frac19\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominators are already the same, so subtract the numerators.",
+          "steps": [
+            {
+              "explain": "Keep the common denominator 6.",
+              "work": "\\(\\frac{5}{6}-\\frac{4}{6}=\\frac{5-4}{6}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{1}{6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(1\\frac34+\\frac12\\).",
+          "options": [
+            "\\(2\\frac14\\)",
+            "\\(2\\frac34\\)",
+            "\\(1\\frac54\\)",
+            "\\(2\\frac12\\)"
+          ],
+          "answer": 0,
+          "hint": "Use quarters as a common denominator.",
+          "steps": [
+            {
+              "explain": "Convert one half to quarters.",
+              "work": "\\(\\frac12=\\frac24\\)"
+            },
+            {
+              "explain": "Add the fractional parts.",
+              "work": "\\(\\frac34+\\frac24=\\frac54=1\\frac14\\)"
+            },
+            {
+              "explain": "Add the whole number.",
+              "work": "\\(1+1\\frac14=2\\frac14\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\frac23\\times\\frac32\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(\\frac49\\)",
+            "\\(\\frac56\\)",
+            "\\(\\frac{12}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply numerators and denominators, then simplify.",
+          "steps": [
+            {
+              "explain": "Multiply across.",
+              "work": "\\(\\frac23\\times\\frac32=\\frac{2\\times3}{3\\times2}\\)"
+            },
+            {
+              "explain": "Cancel equal factors.",
+              "work": "\\(\\frac66=1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q9d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(1\\frac13\\div5\\).",
+          "options": [
+            "\\(\\frac4{15}\\)",
+            "\\(\\frac{20}{3}\\)",
+            "\\(\\frac{15}{4}\\)",
+            "\\(\\frac43\\)"
+          ],
+          "answer": 0,
+          "hint": "Change the mixed number to an improper fraction, then multiply by the reciprocal of 5.",
+          "steps": [
+            {
+              "explain": "Convert the mixed number.",
+              "work": "\\(1\\frac13=\\frac43\\)"
+            },
+            {
+              "explain": "Divide by 5 by multiplying by its reciprocal.",
+              "work": "\\(\\frac43\\div5=\\frac43\\times\\frac15\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(\\frac4{15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q9e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(3-\\left(\\frac12\\right)^2\\).",
+          "options": [
+            "\\(\\frac{11}{4}\\)",
+            "\\(\\frac54\\)",
+            "\\(\\frac94\\)",
+            "\\(\\frac52\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the power inside the brackets before subtracting.",
+          "steps": [
+            {
+              "explain": "Square one half.",
+              "work": "\\(\\left(\\frac12\\right)^2=\\frac14\\)"
+            },
+            {
+              "explain": "Write 3 in quarters.",
+              "work": "\\(3=\\frac{12}{4}\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(\\frac{12}{4}-\\frac14=\\frac{11}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "khs23-y7-t2-q14a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate and simplify \\(\\dfrac{3}{7} - \\dfrac{1}{7}\\).",
+          "options": [
+            "\\(\\dfrac{2}{7}\\)",
+            "\\(\\dfrac{2}{14}\\)",
+            "\\(\\dfrac{4}{7}\\)",
+            "\\(\\dfrac{1}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Keep the common denominator 7 and subtract the numerators (3 - 1).",
+          "keyPoints": [
+            {
+              "text": "Evaluate and",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(\\dfrac{3 - 1}{7}\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\dfrac{2}{7}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\dfrac{2}{7}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{2}{7}\\).",
+              "work": "\\(\\dfrac{2}{7}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q14b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate and simplify \\(\\dfrac{2}{5} + \\dfrac{1}{3}\\).",
+          "options": [
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{11}{15}\\)",
+            "\\(\\dfrac{7}{15}\\)",
+            "\\(\\dfrac{3}{15}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the lowest common denominator 15: 2/5 = 6/15 and 1/3 = 5/15, then add!",
+          "keyPoints": [
+            {
+              "text": "Evaluate and",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(\\dfrac{6}{15} + \\dfrac{5}{15}\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(\\dfrac{11}{15}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\dfrac{11}{15}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{11}{15}\\).",
+              "work": "\\(\\dfrac{11}{15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q23c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate and simplify \\(\\dfrac{3}{4} - \\dfrac{1}{3}\\).",
+          "options": [
+            "\\(\\dfrac{2}{1}\\)",
+            "\\(\\dfrac{5}{12}\\)",
+            "\\(\\dfrac{7}{12}\\)",
+            "\\(\\dfrac{1}{6}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the common denominator 12: 3/4 = 9/12 and 1/3 = 4/12, then subtract 9/12 - 4/12!",
+          "keyPoints": [
+            {
+              "text": "Evaluate and simplify",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(\\dfrac{9}{12} - \\dfrac{4}{12}\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(\\dfrac{5}{12}\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } \\dfrac{5}{12}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{5}{12}\\).",
+              "work": "\\(\\dfrac{5}{12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5965,6 +6493,86 @@
             "20",
             "30",
             "40"
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q25a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Chloe, Arthur, Ben and Quince ordered three large pizzas, each cut into \\(6\\) equal slices. Chloe ate \\(5\\) slices, Arthur ate \\(4\\), Ben ate \\(2\\), and Quince ate \\(5\\). How much of the three pizzas did they eat in total (as a simplified mixed numeral)?",
+          "options": [
+            "\\(2\\dfrac{1}{3}\\)",
+            "\\(2\\dfrac{2}{3}\\)",
+            "\\(2\\dfrac{5}{6}\\)",
+            "\\(3\\dfrac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add all slices eaten (5 + 4 + 2 + 5 = 16 slices), write over 6 (16/6), convert to a mixed numeral (2 4/6), and simplify!",
+          "keyPoints": [
+            {
+              "text": "Chloe, Arthur, Ben",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(\\dfrac{5 + 4 + 2 + 5}{6} = \\dfrac{16}{6}\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(2\\dfrac{4}{6} = 2\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } 2\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2\\dfrac{2}{3}\\).",
+              "work": "\\(2\\dfrac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q25b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Chloe, Arthur, Ben and Quince ordered three large pizzas (\\(18\\) slices in total, \\(6\\) slices per pizza) and ate \\(16\\) slices altogether. What fraction of a single pizza is left uneaten (in simplest form)?",
+          "options": [
+            "\\(\\dfrac{1}{9}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 18 - 16 = 2 slices left. Since 1 single pizza has 6 slices, 2 slices = 2/6 = 1/3 of a single pizza!",
+          "keyPoints": [
+            {
+              "text": "Chloe, Arthur, Ben",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(18 - 16 = 2\\text{ slices left}\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(\\dfrac{2}{6} = \\dfrac{1}{3}\\text{ of a pizza}\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{1}{3}\\).",
+              "work": "\\(\\dfrac{1}{3}\\)"
+            }
           ],
           "timeLimit": 60,
           "xp": 1

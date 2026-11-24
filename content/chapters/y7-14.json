@@ -4033,6 +4033,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which number has the smallest value: \\(35\\%\\), \\(0.4\\), or \\(\\dfrac{1}{3}\\)?",
+          "options": [
+            "\\(35\\%\\)",
+            "\\(0.4\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "All three are equal"
+          ],
+          "answer": 2,
+          "hint": "Convert all three to decimals: 35% = 0.35, 0.4 = 0.40, and 1/3 = 0.333...!",
+          "keyPoints": [
+            {
+              "text": "Which number",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(35\\% = 0.35, \\; 0.4 = 0.40, \\; \\dfrac{1}{3} \\approx 0.333\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(0.333 < 0.35 < 0.40\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{1}{3}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing number to make the statement true: \\(70\\% = \\dfrac{\\square}{50}\\).",
+          "options": [
+            "\\(35\\)",
+            "\\(70\\)",
+            "\\(14\\)",
+            "\\(25\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 70% as 70/100, then divide top and bottom by 2 to get a denominator of 50!",
+          "keyPoints": [
+            {
+              "text": "Find the",
+              "note": "Apply the core fraction, index, or number property."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion or calculation.",
+              "work": "\\(70\\% = \\dfrac{70}{100}\\)"
+            },
+            {
+              "explain": "Evaluate to find the exact answer.",
+              "work": "\\(\\dfrac{70 \\div 2}{100 \\div 2} = \\dfrac{35}{50}\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 35\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(35\\).",
+              "work": "\\(\\text{Answer: } 35\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(83\\%\\) as a decimal.",
+          "options": [
+            "\\(8.3\\)",
+            "\\(0.83\\)",
+            "\\(0.083\\)",
+            "\\(83.0\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide by 100 (move the decimal point 2 places to the left).",
+          "keyPoints": [
+            {
+              "text": "Express \\(83\\%\\)",
+              "note": "Show each fraction, decimal, or divisibility step clearly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the first step carefully.",
+              "work": "\\(83 \\div 100\\)"
+            },
+            {
+              "explain": "Simplify or evaluate to find the result.",
+              "work": "\\(0.83\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 0.83\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(0.83\\).",
+              "work": "\\(0.83\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5088,6 +5208,138 @@
             "school": "Form II Half-Yearly",
             "grade": "7",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "khs23-y7-t2-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Out of \\(240\\) students, \\(12.5\\%\\) failed a fitness assessment. How many students passed the assessment?",
+          "options": [
+            "\\(30\\)",
+            "\\(210\\)",
+            "\\(220\\)",
+            "\\(227.5\\)"
+          ],
+          "answer": 1,
+          "hint": "Remember 12.5% = 1/8! Find 1/8 of 240 (= 30 who failed), then subtract 30 from 240 to get the number who PASSED!",
+          "keyPoints": [
+            {
+              "text": "Out of \\(240\\)",
+              "note": "Watch signs, denominators, and what the question asks for (e.g. passed vs failed)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the conversion, common denominator, or percentage step.",
+              "work": "\\(12.5\\% \\text{ of } 240 = \\dfrac{1}{8} \\times 240 = 30\\text{ failed}\\)"
+            },
+            {
+              "explain": "Complete the calculation and simplify fully.",
+              "work": "\\(240 - 30 = 210\\text{ passed}\\)"
+            },
+            {
+              "explain": "Double-check your result against the wording of the problem.",
+              "work": "\\(\\text{Verified: } 210\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(210\\).",
+              "work": "\\(210\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t2-q30a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A Family Discount Card gives \\(20\\%\\) off all adult tickets and \\(50\\%\\) off all child tickets. An adult ticket normally costs \\(\\$15\\) and a child ticket normally costs \\(\\$8\\). How much will it cost to buy \\(2\\) adult tickets and \\(3\\) child tickets with the discount card?",
+          "options": [
+            "\\(\\$36\\)",
+            "\\(\\$42\\)",
+            "\\(\\$54\\)",
+            "\\(\\$30\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the discounted price of 1 adult ticket (80% of $15 = $12) and 1 child ticket (50% of $8 = $4), then calculate 2($12) + 3($4)!",
+          "keyPoints": [
+            {
+              "text": "2\\) adult tickets and \\(3\\) child tickets",
+              "note": "Adult: $15 × 0.8 = $12; Child: $8 × 0.5 = $4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the discounted price of \\(1\\) adult ticket (\\(20\\%\\) off \\(\\$15\\)): \\(\\$15 - \\$3 = \\$12\\).",
+              "work": "\\(\\text{Adult} = \\$15 \\times 0.8 = \\$12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 132\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"14\" width=\"238\" height=\"78\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"145\" y=\"34\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" text-decoration=\"underline\" fill=\"#0f172a\">Family Discount Card</text><text x=\"145\" y=\"56\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">20% off all adult tickets</text><text x=\"145\" y=\"76\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\">50% off all child tickets</text><text x=\"145\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Discounted prices: Adult = $12 (blue), Child = $4 (red)</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the discounted price of \\(1\\) child ticket (\\(50\\%\\) off \\(\\$8\\)): \\(\\$8 \\div 2 = \\$4\\).",
+              "work": "\\(\\text{Child} = \\$8 \\times 0.5 = \\$4\\)"
+            },
+            {
+              "explain": "Find the total for \\(2\\) adults and \\(3\\) children: \\(2(\\$12) + 3(\\$4) = \\$24 + \\$12 = \\$36\\).",
+              "work": "\\(\\$24 + \\$12 = \\$36\\)"
+            },
+            {
+              "explain": "Therefore, the total cost with the discount card is \\(\\$36\\).",
+              "work": "\\(\\text{Answer: } \\$36\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 106\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"106\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"14\" width=\"238\" height=\"78\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"145\" y=\"34\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" text-decoration=\"underline\" fill=\"#0f172a\">Family Discount Card</text><text x=\"145\" y=\"56\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\">20% off all adult tickets</text><text x=\"145\" y=\"76\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\">50% off all child tickets</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t2-q30b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The Family Discount Card costs \\(\\$60\\) per year. For a family of \\(2\\) adults (\\(\\$15\\) each) and \\(3\\) children (\\(\\$8\\) each), one cinema trip costs \\(\\$54\\) normally or \\(\\$36\\) with the card. How many times in the same year must they go to the cinema before they start to save money on the cost of the card?",
+          "options": [
+            "\\(3\\text{ times}\\)",
+            "\\(4\\text{ times}\\)",
+            "\\(5\\text{ times}\\)",
+            "\\(2\\text{ times}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find how much they save per trip ($54 - $36 = $18). Divide the $60 card cost by $18 (3.33... trips) and round UP to the next whole trip!",
+          "keyPoints": [
+            {
+              "text": "start to save money",
+              "note": "Total savings must strictly EXCEED the $60 card cost."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the savings on each cinema trip: \\(\\$54 - \\$36 = \\$18\\) saved per trip.",
+              "work": "\\(\\text{Saving per trip} = \\$54 - \\$36 = \\$18\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 132\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"14\" width=\"238\" height=\"78\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"145\" y=\"34\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" text-decoration=\"underline\" fill=\"#0f172a\">Family Discount Card</text><text x=\"145\" y=\"56\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">20% off all adult tickets</text><text x=\"145\" y=\"76\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\">50% off all child tickets</text><text x=\"145\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Saves $18 per trip -> 3 trips = $54 (< $60); 4 trips = $72 (> $60)!</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide the \\(\\$60\\) card cost by \\(\\$18\\) per trip: \\(60 \\div 18 = 3\\dfrac{1}{3}\\) trips.",
+              "work": "\\(\\dfrac{60}{18} = 3.33...\\text{ trips}\\)"
+            },
+            {
+              "explain": "Check \\(3\\) trips: \\(3 \\times \\$18 = \\$54 < \\$60\\) (not yet saving). Check \\(4\\) trips: \\(4 \\times \\$18 = \\$72 > \\$60\\) (net saving of \\(\\$12\\)).",
+              "work": "\\(4 \\times \\$18 = \\$72 > \\$60\\)"
+            },
+            {
+              "explain": "Therefore, they must go \\(4\\) times in the same year to start saving money.",
+              "work": "\\(\\text{Answer: } 4\\text{ times}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 106\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"106\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"26\" y=\"14\" width=\"238\" height=\"78\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"145\" y=\"34\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" text-decoration=\"underline\" fill=\"#0f172a\">Family Discount Card</text><text x=\"145\" y=\"56\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\">20% off all adult tickets</text><text x=\"145\" y=\"76\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\">50% off all child tickets</text></svg>"
           }
         }
       ]
