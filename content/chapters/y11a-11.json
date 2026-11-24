@@ -4676,6 +4676,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-y11a-q3",
+          "type": "mc",
+          "stem": "In radians, what is the exact value of \\(210^{\\circ}\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(1.047\\)",
+            "\\(\\dfrac{\\pi}{3}\\)",
+            "\\(3.665\\)",
+            "\\(\\dfrac{7\\pi}{6}\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert with \\(180^{\\circ}=\\pi\\) radians: multiply the degrees by \\(\\dfrac{\\pi}{180}\\). \\\"Exact\\\" means leave \\(\\pi\\) in the answer (not a decimal).",
+          "steps": [
+            {
+              "explain": "Multiply by \\(\\dfrac{\\pi}{180}\\).",
+              "work": "\\(210^{\\circ}\\times\\dfrac{\\pi}{180}=\\dfrac{210\\pi}{180}\\)"
+            },
+            {
+              "explain": "Simplify the fraction (divide top and bottom by 30).",
+              "work": "\\(\\dfrac{210\\pi}{180}=\\dfrac{7\\pi}{6}\\)"
+            },
+            {
+              "explain": "Check: \\(210^{\\circ}=180^{\\circ}+30^{\\circ}=\\pi+\\dfrac{\\pi}{6}=\\dfrac{7\\pi}{6}\\) ✓. Option C, \\(3.665\\), is the same number as a rounded decimal (not exact); A and B are \\(60^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In radians, what is the exact value of",
+              "note": "Degrees times pi over 180; keep pi for an exact answer."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

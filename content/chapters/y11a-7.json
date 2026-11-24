@@ -9777,6 +9777,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-y11a-q2",
+          "type": "mc",
+          "stem": "Which equation represents the line perpendicular to \\(2x-3y=8\\), passing through the point \\((2,0)\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(3x+2y=4\\)",
+            "\\(3x+2y=6\\)",
+            "\\(3x-2y=-4\\)",
+            "\\(3x-2y=6\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the gradient of \\(2x-3y=8\\) (make \\(y\\) the subject), take the NEGATIVE RECIPROCAL for the perpendicular gradient, then use the point \\((2,0)\\).",
+          "steps": [
+            {
+              "explain": "Make \\(y\\) the subject of \\(2x-3y=8\\).",
+              "work": "\\(-3y=-2x+8\\ \\Rightarrow\\ y=\\dfrac{2}{3}x-\\dfrac{8}{3}\\ \\Rightarrow\\ m_{1}=\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Perpendicular lines satisfy \\(m_{1}m_{2}=-1\\): negative reciprocal.",
+              "work": "\\(m_{2}=-\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Point-gradient form through \\((2,0)\\).",
+              "work": "\\(y-0=-\\dfrac{3}{2}(x-2)\\)"
+            },
+            {
+              "explain": "Multiply by 2 and rearrange to the form \\(ax+by=c\\).",
+              "work": "\\(2y=-3(x-2)=-3x+6\\ \\Rightarrow\\ 3x+2y=6\\)"
+            },
+            {
+              "explain": "Check: \\((2,0)\\): \\(3(2)+2(0)=6\\) ✓. Options C and D have gradient \\(\\dfrac{3}{2}\\) (the reciprocal only, without the negative sign); A does not pass through \\((2,0)\\) (\\(6\\ne4\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which equation represents the line perpendicular to",
+              "note": "Perpendicular gradient is the negative reciprocal; use the point (2, 0)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }

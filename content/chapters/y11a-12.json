@@ -2106,6 +2106,224 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-y11a-q8",
+          "type": "mc",
+          "stem": "A deck of 52 playing cards contains 12 picture cards. A card is chosen from the deck at random. What is the probability, correct to four decimal places, that a picture card or black card is chosen?",
+          "difficulty": "medium",
+          "options": [
+            "\\(0.5340\\)",
+            "\\(0.3787\\)",
+            "\\(0.7308\\)",
+            "\\(0.6154\\)"
+          ],
+          "answer": 3,
+          "hint": "Addition rule: \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\). Picture cards and black cards OVERLAP (black picture cards), so subtract the overlap. There are 26 black cards, and 6 black picture cards (half of the 12 picture cards).",
+          "steps": [
+            {
+              "explain": "\\(P(\\text{picture})=\\dfrac{12}{52}\\) and \\(P(\\text{black})=\\dfrac{26}{52}\\).",
+              "work": "\\(P(P)=\\dfrac{12}{52},\\qquad P(B)=\\dfrac{26}{52}\\)"
+            },
+            {
+              "explain": "Both picture AND black: 3 picture cards in each suit, 2 black suits: \\(3\\times2=6\\) cards.",
+              "work": "\\(P(P\\cap B)=\\dfrac{6}{52}\\)"
+            },
+            {
+              "explain": "Addition rule.",
+              "work": "\\(P(P\\cup B)=\\dfrac{12}{52}+\\dfrac{26}{52}-\\dfrac{6}{52}=\\dfrac{32}{52}\\)"
+            },
+            {
+              "explain": "Convert to a decimal.",
+              "work": "\\(\\dfrac{32}{52}=\\dfrac{8}{13}=0.6154\\)"
+            },
+            {
+              "explain": "Why not the others: 0.7308 \\(=\\dfrac{38}{52}\\) forgets to subtract the overlap; 0.3787 and 0.5340 are other slips.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "that a picture card or black card is chosen",
+              "note": "Add the two probabilities and subtract the overlap of 6 black picture cards."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12a1",
+          "type": "mc",
+          "stem": "The Venn diagram shows the results of a survey about whether students do Biology (B), Sport Science (S) or neither: only B \\(=16\\), both \\(=18\\), only S \\(=4\\), neither \\(=2\\) (total 40). Find the probability that a student selected at random does not do Sport Science.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"224.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"98.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"160.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><text x=\"224.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{9}{20}\\)",
+            "\\(\\dfrac{11}{20}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{3}{10}\\)"
+          ],
+          "answer": 0,
+          "hint": "Total students \\(=16+18+4+2=40\\). \\\"Does NOT do Sport Science\\\" means NOT in the circle S: only B plus neither.",
+          "steps": [
+            {
+              "explain": "Total: \\(16+18+4+2=40\\).",
+              "work": "\\(n(\\text{total})=40\\)"
+            },
+            {
+              "explain": "Not in circle S: only B (16) and neither (2).",
+              "work": "\\(n(S')=16+2=18\\)"
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(P(S')=\\dfrac{18}{40}=\\dfrac{9}{20}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"224.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"98.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"160.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><text x=\"224.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(P(S)=\\dfrac{18+4}{40}=\\dfrac{22}{40}\\) and \\(1-\\dfrac{22}{40}=\\dfrac{18}{40}\\) ✓. Option B is \\(P(S)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "does not do Sport Science",
+              "note": "Count everything outside circle S, divided by 40."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12a2",
+          "type": "mc",
+          "stem": "The Venn diagram shows the results of a survey about whether students do Biology (B), Sport Science (S) or neither: only B \\(=16\\), both \\(=18\\), only S \\(=4\\), neither \\(=2\\) (total 40). Find \\(P(S\\cap B)+P\\left(S'\\cap B\\right)\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"224.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"98.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"160.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><text x=\"224.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{17}{20}\\)",
+            "\\(\\dfrac{9}{20}\\)",
+            "\\(\\dfrac{11}{20}\\)",
+            "\\(\\dfrac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(S\\cap B\\) means in BOTH circles; \\(S'\\cap B\\) means in B but NOT in S (only B). Find each count and add (then notice what the sum is).",
+          "steps": [
+            {
+              "explain": "\\(S\\cap B\\): in both circles.",
+              "work": "\\(P(S\\cap B)=\\dfrac{18}{40}\\)"
+            },
+            {
+              "explain": "\\(S'\\cap B\\): in B but not S, i.e. only B.",
+              "work": "\\(P(S'\\cap B)=\\dfrac{16}{40}\\)"
+            },
+            {
+              "explain": "Add: \\(\\dfrac{18+16}{40}=\\dfrac{34}{40}=\\dfrac{17}{20}\\).",
+              "work": "\\(\\dfrac{18}{40}+\\dfrac{16}{40}=\\dfrac{17}{20}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"224.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"98.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"160.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><text x=\"224.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+              }
+            },
+            {
+              "explain": "Notice: the two parts together make the whole circle B, so the sum is \\(P(B)=\\dfrac{34}{40}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "S and B plus not-S and B is just all of circle B."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12a3",
+          "type": "mc",
+          "stem": "The Venn diagram shows the results of a survey about whether students do Biology (B), Sport Science (S) or neither: only B \\(=16\\), both \\(=18\\), only S \\(=4\\), neither \\(=2\\) (total 40). Is doing Biology mutually exclusive to doing Sport Science? Give a reason for your answer.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"224.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"98.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"160.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><text x=\"224.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+          },
+          "options": [
+            "No: they are NOT mutually exclusive, because \\(P(S\\cap B)\\ne0\\) (18 students do both).",
+            "Yes: they are mutually exclusive, because \\(P(S)+P(B)\\) is less than 1.",
+            "Yes: they are mutually exclusive, because some students do neither subject.",
+            "No: they are not mutually exclusive, because \\(P(S)\\ne P(B)\\)."
+          ],
+          "answer": 0,
+          "hint": "Two events are MUTUALLY EXCLUSIVE if they cannot happen at the same time: \\(P(A\\cap B)=0\\) (the circles do not overlap). Look at the overlap of the Venn diagram.",
+          "steps": [
+            {
+              "explain": "The circles B and S overlap: 18 students do both.",
+              "work": "\\(P(S\\cap B)=\\dfrac{18}{40}\\ne0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"224.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"98.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><text x=\"160.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">18</text><text x=\"224.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+              }
+            },
+            {
+              "explain": "Since \\(P(S\\cap B)\\ne0\\), the events CAN happen together: NOT mutually exclusive.",
+              "work": "\\(\\text{not mutually exclusive}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C give reasons unrelated to the overlap (a sum below 1 or some students doing neither does not prove exclusivity); D: unequal probabilities say nothing about exclusivity.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Is doing Biology mutually exclusive to doing Sport Science",
+              "note": "Mutually exclusive means no overlap; here 18 students do both."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2575,6 +2793,151 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
             "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q7",
+          "type": "mc",
+          "stem": "Lou and Ali are on a fitness program for one month. The probability that Lou and Ali will finish the program successfully is 0.7 and 0.6 respectively. What is the probability that only one of them will be successful?",
+          "difficulty": "medium",
+          "options": [
+            "\\(0.18\\)",
+            "\\(0.28\\)",
+            "\\(0.42\\)",
+            "\\(0.46\\)"
+          ],
+          "answer": 3,
+          "hint": "\\\"Only one\\\" has TWO cases: (Lou succeeds AND Ali fails) OR (Lou fails AND Ali succeeds). Assume the two are independent, so multiply along each case, then ADD the cases.",
+          "steps": [
+            {
+              "explain": "Failure probabilities: \\(P(\\text{Lou fails})=1-0.7=0.3\\) and \\(P(\\text{Ali fails})=1-0.6=0.4\\).",
+              "work": "\\(P(\\overline{L})=0.3,\\qquad P(\\overline{A})=0.4\\)"
+            },
+            {
+              "explain": "Case 1: Lou succeeds and Ali fails. Case 2: Lou fails and Ali succeeds.",
+              "work": "\\(P(L\\cap\\overline{A})=0.7\\times0.4=0.28,\\qquad P(\\overline{L}\\cap A)=0.3\\times0.6=0.18\\)"
+            },
+            {
+              "explain": "The two cases cannot happen together, so add.",
+              "work": "\\(P(\\text{only one})=0.28+0.18=0.46\\)"
+            },
+            {
+              "explain": "Why not the others: 0.28 and 0.18 are only one of the two cases; 0.42 is \\(0.7\\times0.6\\) (BOTH succeed).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that only one of them will be successful",
+              "note": "Two cases: Lou only plus Ali only, each a product."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12d1",
+          "type": "mc",
+          "stem": "Pat and Chris each throw a fair die. Find the probability that they both throw the same number.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{36}\\)",
+            "\\(\\dfrac{1}{12}\\)",
+            "\\(\\dfrac{5}{36}\\)"
+          ],
+          "answer": 0,
+          "hint": "Whatever Pat throws, Chris must match it: Chris has 1 chance in 6. (Or: 6 matching outcomes out of \\(6\\times6=36\\).)",
+          "steps": [
+            {
+              "explain": "Pat can throw anything. Chris must throw the SAME number: probability \\(\\dfrac{1}{6}\\).",
+              "work": "\\(P(\\text{same})=1\\times\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Check with the sample space: 36 equally likely pairs; the matching pairs are \\((1,1),(2,2),\\dots,(6,6)\\): 6 pairs.",
+              "work": "\\(P=\\dfrac{6}{36}=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{36}\\) is the chance of ONE specific pair, e.g. both throwing a 3.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that they both throw the same number",
+              "note": "Chris must match Pat: one in six."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12d2",
+          "type": "mc",
+          "stem": "Pat and Chris each throw a fair die. Find the probability that the number thrown by Chris is greater than the number thrown by Pat.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5}{12}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{7}{12}\\)",
+            "\\(\\dfrac{5}{36}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use a table of all \\(6\\times6=36\\) equally likely outcomes and mark those where Chris's number is BIGGER than Pat's. Or: by symmetry, \\(P(\\text{Chris}>\\text{Pat})=\\dfrac{1-P(\\text{same})}{2}\\).",
+          "steps": [
+            {
+              "explain": "Count the favourable outcomes in the table (green ticks: Chris > Pat). If Pat throws 1, Chris can throw 2–6 (5 ways); Pat 2: 4 ways; Pat 3: 3; Pat 4: 2; Pat 5: 1; Pat 6: 0.",
+              "work": "\\(5+4+3+2+1+0=15\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><text x=\"170.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Chris</text><text transform=\"translate(14,160.0) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\">Pat</text><rect x=\"80\" y=\"34\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"98.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><rect x=\"116\" y=\"34\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"134.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"152\" y=\"34\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"170.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><rect x=\"188\" y=\"34\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"206.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"224\" y=\"34\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"242.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"260\" y=\"34\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"278.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><rect x=\"44\" y=\"70\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><rect x=\"80\" y=\"70\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"116\" y=\"70\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"134.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"152\" y=\"70\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"170.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"188\" y=\"70\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"206.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"224\" y=\"70\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"242.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"260\" y=\"70\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"278.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"44\" y=\"106\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"80\" y=\"106\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"116\" y=\"106\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"152\" y=\"106\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"170.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"188\" y=\"106\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"206.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"224\" y=\"106\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"242.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"260\" y=\"106\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"278.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"44\" y=\"142\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><rect x=\"80\" y=\"142\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"116\" y=\"142\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"152\" y=\"142\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"188\" y=\"142\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"206.0\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"224\" y=\"142\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"242.0\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"260\" y=\"142\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"278.0\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"44\" y=\"178\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"80\" y=\"178\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"116\" y=\"178\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"152\" y=\"178\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"188\" y=\"178\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"178\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"242.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"260\" y=\"178\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"278.0\" y=\"197.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"44\" y=\"214\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"80\" y=\"214\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"116\" y=\"214\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"152\" y=\"214\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"188\" y=\"214\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"214\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"260\" y=\"214\" width=\"36\" height=\"29\" fill=\"#bbf7d0\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"278.0\" y=\"233.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><rect x=\"44\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><text x=\"62.0\" y=\"269.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><rect x=\"80\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"116\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"152\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"188\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"224\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><rect x=\"260\" y=\"250\" width=\"36\" height=\"29\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.3\"/></svg>"
+              }
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(P(\\text{Chris}>\\text{Pat})=\\dfrac{15}{36}=\\dfrac{5}{12}\\)"
+            },
+            {
+              "explain": "Check by symmetry: \\(P(\\text{same})=\\dfrac{1}{6}\\), and the remaining \\(\\dfrac{5}{6}\\) splits equally between \\(\\text{Chris}>\\text{Pat}\\) and \\(\\text{Chris}<\\text{Pat}\\): \\(\\dfrac{5}{12}\\) each ✓. Option B forgets the equal case (it gives \\(\\dfrac{1}{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that the number thrown by Chris is greater than the number thrown by Pat",
+              "note": "Table of 36 outcomes: 15 have Chris higher."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -7477,6 +7840,155 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12b1",
+          "type": "mc",
+          "stem": "A bag contains two red balls, one black ball and one white ball. Andrew selects one ball from the bag and keeps it hidden. He then selects a second ball, also keeping it hidden. Draw a probability tree diagram to show all the possible outcomes. Which tree is correct? (R = red, B = black, W = white; the second selection is WITHOUT replacement.)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 674 674\" width=\"100%\" height=\"auto\" style=\"max-width:674px;display:block;margin:0 auto\"><g transform=\"translate(3,3)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"330\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"64.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"68.9\" x2=\"70.7\" y2=\"68.9\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"78.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"105.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"27.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"24.0\" x2=\"260.1\" y2=\"24.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"58.0\" x2=\"260.1\" y2=\"58.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"95.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"92.0\" x2=\"260.1\" y2=\"92.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"146.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"152.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"156.6\" x2=\"70.7\" y2=\"156.6\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"105.0\" y=\"151.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"146.0\" x2=\"240.0\" y2=\"129.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"247.9\" y1=\"126.0\" x2=\"260.1\" y2=\"126.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"146.0\" x2=\"240.0\" y2=\"163.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"160.0\" x2=\"260.1\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"214.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"194.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"198.8\" x2=\"70.7\" y2=\"198.8\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"208.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"105.0\" y=\"219.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"116.0\" y1=\"214.0\" x2=\"240.0\" y2=\"197.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"247.9\" y1=\"194.0\" x2=\"260.1\" y2=\"194.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"202.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"214.0\" x2=\"240.0\" y2=\"231.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"228.0\" x2=\"260.1\" y2=\"228.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"236.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(347,3)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"330\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.0\" y1=\"158.0\" x2=\"96.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"77.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"81.9\" x2=\"70.7\" y2=\"81.9\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"91.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"105.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"27.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"24.0\" x2=\"260.1\" y2=\"24.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"276.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"58.0\" x2=\"260.1\" y2=\"58.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"276.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"95.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"92.0\" x2=\"260.1\" y2=\"92.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"276.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"158.0\" x2=\"96.0\" y2=\"163.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"176.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"180.1\" x2=\"70.7\" y2=\"180.1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"190.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"105.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"163.0\" x2=\"240.0\" y2=\"129.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"126.0\" x2=\"260.1\" y2=\"126.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"276.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"163.0\" x2=\"240.0\" y2=\"163.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"160.0\" x2=\"260.1\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"276.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"163.0\" x2=\"240.0\" y2=\"197.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"194.0\" x2=\"260.1\" y2=\"194.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"276.0\" y=\"202.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"158.0\" x2=\"96.0\" y2=\"265.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"239.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"243.3\" x2=\"70.7\" y2=\"243.3\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"253.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"105.0\" y=\"270.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"116.0\" y1=\"265.0\" x2=\"240.0\" y2=\"231.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"228.0\" x2=\"260.1\" y2=\"228.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"276.0\" y=\"236.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"265.0\" x2=\"240.0\" y2=\"265.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"258.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"262.0\" x2=\"260.1\" y2=\"262.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"272.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"276.0\" y=\"270.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"265.0\" x2=\"240.0\" y2=\"299.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"292.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"296.0\" x2=\"260.1\" y2=\"296.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"306.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"276.0\" y=\"304.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(3,347)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"330\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"64.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"68.9\" x2=\"70.7\" y2=\"68.9\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"78.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"105.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"27.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"24.0\" x2=\"260.1\" y2=\"24.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"58.0\" x2=\"260.1\" y2=\"58.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"95.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"92.0\" x2=\"260.1\" y2=\"92.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"146.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"152.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"156.6\" x2=\"70.7\" y2=\"156.6\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"105.0\" y=\"151.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"146.0\" x2=\"240.0\" y2=\"129.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"126.0\" x2=\"260.1\" y2=\"126.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"146.0\" x2=\"240.0\" y2=\"163.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"160.0\" x2=\"260.1\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"214.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"194.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"198.8\" x2=\"70.7\" y2=\"198.8\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"208.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"105.0\" y=\"219.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"116.0\" y1=\"214.0\" x2=\"240.0\" y2=\"197.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"194.0\" x2=\"260.1\" y2=\"194.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"202.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"214.0\" x2=\"240.0\" y2=\"231.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"228.0\" x2=\"260.1\" y2=\"228.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"236.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(347,347)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"330\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"64.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"68.9\" x2=\"70.7\" y2=\"68.9\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"78.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"105.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"27.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"24.0\" x2=\"260.1\" y2=\"24.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"61.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"58.0\" x2=\"260.1\" y2=\"58.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"68.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"61.0\" x2=\"240.0\" y2=\"95.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"92.0\" x2=\"260.1\" y2=\"92.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"146.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"152.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"156.6\" x2=\"70.7\" y2=\"156.6\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"166.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"105.0\" y=\"151.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><line x1=\"116.0\" y1=\"146.0\" x2=\"240.0\" y2=\"129.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"247.9\" y1=\"126.0\" x2=\"260.1\" y2=\"126.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"146.0\" x2=\"240.0\" y2=\"163.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"160.0\" x2=\"260.1\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"24.0\" y1=\"124.0\" x2=\"96.0\" y2=\"214.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"194.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"58.5\" y1=\"198.8\" x2=\"70.7\" y2=\"198.8\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"64.6\" y=\"208.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"105.0\" y=\"219.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"116.0\" y1=\"214.0\" x2=\"240.0\" y2=\"197.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"247.9\" y1=\"194.0\" x2=\"260.1\" y2=\"194.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"202.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R</text><line x1=\"116.0\" y1=\"214.0\" x2=\"240.0\" y2=\"231.0\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"224.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"247.9\" y1=\"228.0\" x2=\"260.1\" y2=\"228.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"254.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"276.0\" y=\"236.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "First selection: \\(P(R)=\\dfrac{2}{4}\\), \\(P(B)=\\dfrac{1}{4}\\), \\(P(W)=\\dfrac{1}{4}\\). Because the first ball is kept (NOT replaced), the second selection is from 3 balls: update the numbers. The probabilities from each branch point must add to 1.",
+          "steps": [
+            {
+              "explain": "First stage: 4 balls: 2 red, 1 black, 1 white.",
+              "work": "\\(P(R)=\\dfrac{1}{2},\\quad P(B)=\\dfrac{1}{4},\\quad P(W)=\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "After a RED first: 3 balls left (1 red, 1 black, 1 white), each with probability \\(\\dfrac{1}{3}\\).",
+              "work": "\\(R\\to R:\\ \\dfrac{1}{3},\\quad R\\to B:\\ \\dfrac{1}{3},\\quad R\\to W:\\ \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "After a BLACK first: 3 balls left (2 red, 1 white): \\(P(R)=\\dfrac{2}{3}\\), \\(P(W)=\\dfrac{1}{3}\\). After a WHITE first: 2 red, 1 black: \\(P(R)=\\dfrac{2}{3}\\), \\(P(B)=\\dfrac{1}{3}\\). (There is no B after B and no W after W.)",
+              "work": "\\(B\\to R:\\ \\dfrac{2}{3},\\ B\\to W:\\ \\dfrac{1}{3};\\qquad W\\to R:\\ \\dfrac{2}{3},\\ W\\to B:\\ \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B repeats the first-stage probabilities (with replacement, and allows B then B); C has branches that add to \\(\\dfrac{2}{3}\\) (not 1); D starts with \\(\\dfrac{1}{3}\\) each (it ignores that there are 2 red balls).",
+              "work": "\\(\\text{Answer: tree }A\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Draw a probability tree diagram",
+              "note": "Without replacement: second-stage fractions have denominator 3 and each branch point sums to 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12b2",
+          "type": "mc",
+          "stem": "A bag contains two red balls, one black ball and one white ball. Andrew selects one ball from the bag and keeps it hidden. He then selects a second ball, also keeping it hidden. Find the probability that both the selected balls are red.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply along the branches of the tree: \\(P(R\\text{ first})\\times P(R\\text{ second}\\mid R\\text{ first})\\).",
+          "steps": [
+            {
+              "explain": "First red: \\(\\dfrac{2}{4}\\). After one red is gone, 1 red remains among 3 balls.",
+              "work": "\\(P(R_{1})=\\dfrac{1}{2},\\qquad P(R_{2}\\mid R_{1})=\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Multiply along the branch R-R.",
+              "work": "\\(P(RR)=\\dfrac{1}{2}\\times\\dfrac{1}{3}=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Why not the others: B, \\(\\dfrac{1}{2}\\times\\dfrac{1}{2}\\), is WITH replacement.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that both the selected balls are red",
+              "note": "Multiply along the R-R branch: 1/2 times 1/3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12b3",
+          "type": "mc",
+          "stem": "A bag contains two red balls, one black ball and one white ball. Andrew selects one ball from the bag and keeps it hidden. He then selects a second ball, also keeping it hidden. Find the probability that at least one of the selected balls is red.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5}{6}\\)",
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"At least one\\\": use the complement. \\(P(\\text{at least one red})=1-P(\\text{no red})\\). No red means the two balls are black and white (in either order).",
+          "steps": [
+            {
+              "explain": "No red: black then white, OR white then black.",
+              "work": "\\(P(\\text{no red})=P(B,W)+P(W,B)=\\dfrac{1}{4}\\times\\dfrac{1}{3}+\\dfrac{1}{4}\\times\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Add: \\(\\dfrac{1}{12}+\\dfrac{1}{12}=\\dfrac{1}{6}\\).",
+              "work": "\\(P(\\text{no red})=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Subtract from 1.",
+              "work": "\\(P(\\text{at least one red})=1-\\dfrac{1}{6}=\\dfrac{5}{6}\\)"
+            },
+            {
+              "explain": "Check by combinations: 6 equally likely PAIRS of balls; only the pair \\(\\{B,W\\}\\) has no red, so \\(\\dfrac{5}{6}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that at least one of the selected balls is red",
+              "note": "Complement: one minus the probability of black and white."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8667,6 +9179,106 @@
           "meta": {
             "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12b4",
+          "type": "mc",
+          "stem": "A bag contains two red balls, one black ball and one white ball. Andrew selects one ball from the bag and keeps it hidden. He then selects a second ball, also keeping it hidden. Andrew drops one of the selected balls and we can see that it is red. What is the probability that the ball that is still hidden is also red?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "This is CONDITIONAL probability: \\(P(\\text{both red}\\mid\\text{dropped ball is red})=\\dfrac{P(\\text{both red})}{P(\\text{dropped ball is red})}\\). The dropped ball is equally likely to be either of the two selected balls.",
+          "steps": [
+            {
+              "explain": "Label the balls \\(R_{1},R_{2},B,W\\). Choosing 2 balls gives 6 equally likely PAIRS: \\(R_{1}R_{2}\\), \\(R_{1}B\\), \\(R_{1}W\\), \\(R_{2}B\\), \\(R_{2}W\\), \\(BW\\).",
+              "work": "\\(\\binom{4}{2}=6\\ \\text{pairs}\\)"
+            },
+            {
+              "explain": "Probability the DROPPED ball is red: pair \\(R_{1}R_{2}\\): always red (1); four pairs with exactly one red: red dropped with probability \\(\\dfrac{1}{2}\\); pair \\(BW\\): never.",
+              "work": "\\(P(\\text{dropped red})=\\dfrac{1}{6}(1)+\\dfrac{4}{6}\\left(\\dfrac{1}{2}\\right)+\\dfrac{1}{6}(0)=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Probability the dropped ball is red AND the hidden one is red: the pair must be \\(R_{1}R_{2}\\).",
+              "work": "\\(P(\\text{both red})=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Conditional probability.",
+              "work": "\\(P=\\dfrac{\\frac{1}{6}}{\\frac{1}{2}}=\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{6}\\) is the unconditional chance of two reds; \\(\\dfrac{1}{2}\\) wrongly treats the hidden ball as a fresh 50% draw; \\(\\dfrac{2}{3}\\) is too high.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that the ball that is still hidden is also red",
+              "note": "Conditional: P(both red) divided by P(dropped ball is red)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12c",
+          "type": "mc",
+          "stem": "Suppose \\(P(A)=\\dfrac{2}{5}\\) and \\(P(A\\mid B)=\\dfrac{1}{3}\\). Are \\(A\\) and \\(B\\) independent events? Give a reason for your answer.",
+          "difficulty": "medium",
+          "options": [
+            "No: they are not independent, because \\(P(A)\\ne P(A\\mid B)\\).",
+            "Yes: they are independent, because \\(P(A\\mid B)<P(A)\\).",
+            "Yes: they are independent, because \\(P(A)+P(A\\mid B)=\\dfrac{11}{15}<1\\).",
+            "No: they are not independent, because \\(P(A\\mid B)\\ne1\\)."
+          ],
+          "answer": 0,
+          "hint": "\\(A\\) and \\(B\\) are INDEPENDENT exactly when knowing \\(B\\) happened does not change the probability of \\(A\\): \\(P(A\\mid B)=P(A)\\).",
+          "steps": [
+            {
+              "explain": "Compare the two probabilities: \\(P(A)=\\dfrac{2}{5}=0.4\\) and \\(P(A\\mid B)=\\dfrac{1}{3}\\approx0.33\\).",
+              "work": "\\(P(A\\mid B)=\\dfrac{1}{3}\\ne\\dfrac{2}{5}=P(A)\\)"
+            },
+            {
+              "explain": "They are different, so the event \\(B\\) CHANGES the chance of \\(A\\): the events are NOT independent (dependent).",
+              "work": "\\(\\text{not independent}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C give wrong tests; D: independence does not need \\(P(A\\mid B)=1\\) (that would mean \\(B\\) forces \\(A\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Are \\(A\\) and \\(B\\) independent events",
+              "note": "Independent means P(A given B) equals P(A)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
             "grade": "11",
             "origin": "teacher"
           }

@@ -2687,6 +2687,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-y11a-q6",
+          "type": "mc",
+          "stem": "For the function \\(f(x)=x+\\dfrac{1}{x}\\), which of the following is true at \\(x=3\\)?",
+          "difficulty": "easy",
+          "options": [
+            "The graph is increasing",
+            "The graph is decreasing",
+            "The graph is stationary",
+            "The graph is discontinuous."
+          ],
+          "answer": 0,
+          "hint": "The sign of the derivative at a point tells you the behaviour: \\(f'>0\\) increasing, \\(f'<0\\) decreasing, \\(f'=0\\) stationary. Continuity: the only problem point of \\(x+\\dfrac{1}{x}\\) is \\(x=0\\).",
+          "steps": [
+            {
+              "explain": "Differentiate: write \\(\\dfrac{1}{x}=x^{-1}\\).",
+              "work": "\\(f(x)=x+x^{-1}\\ \\Rightarrow\\ f'(x)=1-x^{-2}=1-\\dfrac{1}{x^{2}}\\)"
+            },
+            {
+              "explain": "Substitute \\(x=3\\).",
+              "work": "\\(f'(3)=1-\\dfrac{1}{9}=\\dfrac{8}{9}>0\\)"
+            },
+            {
+              "explain": "\\(f'(3)>0\\): the gradient is positive, so the graph is INCREASING at \\(x=3\\).",
+              "work": "\\(f'(3)>0\\ \\Rightarrow\\ \\text{increasing}\\)"
+            },
+            {
+              "explain": "Why not the others: B would need \\(f'<0\\); C would need \\(f'=0\\) (that happens at \\(x=\\pm1\\)); D: the function is only discontinuous at \\(x=0\\), not at \\(x=3\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "which of the following is true at",
+              "note": "Sign of f dash at x = 3: positive means increasing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

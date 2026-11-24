@@ -2009,6 +2009,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hurlstone2020-y11a-q12e",
+          "type": "mc",
+          "stem": "An eight sided die is biased, so that the probability of a score \\(x\\) is given by \\(P(x)=k^{2}x\\), where \\(x=1,2,3,4,5,6,7,8\\). Find \\(k\\), giving a reason for your answer.",
+          "difficulty": "hard",
+          "options": [
+            "\\(k=\\pm\\dfrac{1}{6}\\)",
+            "\\(k=\\dfrac{1}{6}\\) only",
+            "\\(k=\\pm\\dfrac{1}{36}\\)",
+            "\\(k=\\dfrac{1}{36}\\) only"
+          ],
+          "answer": 0,
+          "hint": "The probabilities of all outcomes add to 1. The \\(k^{2}\\) is the SAME for every \\(x\\): take it out of the sum. Solve for \\(k^{2}\\), then take the square root (positive AND negative).",
+          "steps": [
+            {
+              "explain": "Sum of all probabilities \\(=1\\).",
+              "work": "\\(P(1)+P(2)+\\cdots+P(8)=1\\)"
+            },
+            {
+              "explain": "Substitute \\(P(x)=k^{2}x\\) and factorise out \\(k^{2}\\).",
+              "work": "\\(k^{2}(1+2+3+4+5+6+7+8)=1\\)"
+            },
+            {
+              "explain": "Add: \\(1+2+\\cdots+8=36\\).",
+              "work": "\\(36k^{2}=1\\ \\Rightarrow\\ k^{2}=\\dfrac{1}{36}\\)"
+            },
+            {
+              "explain": "Square root: BOTH signs work, because the probability uses \\(k^{2}\\) (always positive): \\(P(x)=k^{2}x>0\\) for either sign of \\(k\\).",
+              "work": "\\(k=\\pm\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Why not the others: B misses the negative root (\\(k\\) itself is not a probability, \\(k^{2}\\) is); C and D forget to take the square root (\\(\\dfrac{1}{36}\\) is \\(k^{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(k\\)",
+              "note": "Probabilities sum to 1: 36 k squared = 1, so k = ± 1/6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
+            "school": "Hurlstone Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
