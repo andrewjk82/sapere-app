@@ -959,6 +959,46 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs22-y7-t2-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression \\((c + 5) \\div 3c\\) fully.",
+          "options": [
+            "\\(\\dfrac{c + 5}{3c}\\)",
+            "\\(c + \\dfrac{5}{3c}\\)",
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(\\dfrac{3c}{c + 5}\\)"
+          ],
+          "answer": 0,
+          "hint": "In algebra, division is written as a fraction: put the whole bracket (c + 5) in the numerator and 3c in the denominator.",
+          "keyPoints": [
+            {
+              "text": "(c + 5)",
+              "note": "The brackets mean the entire sum c + 5 is divided by 3c."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the division using a fraction bar, placing the first quantity \\((c + 5)\\) on top and \\(3c\\) on the bottom.",
+              "work": "\\(\\dfrac{c + 5}{3c}\\)"
+            },
+            {
+              "explain": "Once written over a fraction bar, the brackets around \\(c + 5\\) are no longer needed.",
+              "work": "\\(\\dfrac{c + 5}{3c}\\)"
+            },
+            {
+              "explain": "Check whether you can cancel \\(c\\): you CANNOT cancel \\(c\\) because \\(c\\) is added to \\(5\\), not a common factor of the whole numerator.",
+              "work": "\\(\\dfrac{c + 5}{3c} \\text{ (already simplest form)}\\)"
+            },
+            {
+              "explain": "Therefore, the fully simplified expression is \\(\\dfrac{c + 5}{3c}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{c + 5}{3c}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

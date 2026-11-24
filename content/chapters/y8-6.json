@@ -3420,6 +3420,126 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(6x + 4 = 28\\).",
+          "options": [
+            "\\(x = 3\\)",
+            "\\(x = 4\\)",
+            "\\(x = 5\\)",
+            "\\(x = 6\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 4 from both sides first to get 6x = 24, then divide both sides by 6.",
+          "keyPoints": [
+            {
+              "text": "6x + 4 = 28",
+              "note": "Undo +4 first, then undo ×6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(4\\) from both sides of \\(6x + 4 = 28\\).",
+              "work": "\\(6x = 28 - 4 = 24\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(6\\) to isolate \\(x\\).",
+              "work": "\\(x = \\dfrac{24}{6} = 4\\)"
+            },
+            {
+              "explain": "Check by substituting \\(x = 4\\): \\(6(4) + 4 = 24 + 4 = 28\\).",
+              "work": "\\(6(4) + 4 = 28\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 4\\).",
+              "work": "\\(\\text{Answer: } x = 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(5a - 3 = 12\\).",
+          "options": [
+            "\\(a = 1.8\\)",
+            "\\(a = 3\\)",
+            "\\(a = 5\\)",
+            "\\(a = 15\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 3 to both sides first to get 5a = 15, then divide both sides by 5.",
+          "keyPoints": [
+            {
+              "text": "5a - 3 = 12",
+              "note": "Add 3 to both sides before dividing by 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(3\\) to both sides of \\(5a - 3 = 12\\).",
+              "work": "\\(5a = 12 + 3 = 15\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(5\\) to solve for \\(a\\).",
+              "work": "\\(a = \\dfrac{15}{5} = 3\\)"
+            },
+            {
+              "explain": "Check by substituting \\(a = 3\\): \\(5(3) - 3 = 15 - 3 = 12\\).",
+              "work": "\\(5(3) - 3 = 12\\)"
+            },
+            {
+              "explain": "Therefore, \\(a = 3\\).",
+              "work": "\\(\\text{Answer: } a = 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(\\dfrac{2h}{5} - 7 = 3\\).",
+          "options": [
+            "\\(h = 10\\)",
+            "\\(h = 20\\)",
+            "\\(h = 25\\)",
+            "\\(h = 50\\)"
+          ],
+          "answer": 2,
+          "hint": "Add 7 to both sides first (giving 2h/5 = 10), then multiply by 5 (giving 2h = 50), then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "- 7 = 3",
+              "note": "Undo -7 first, then ×5, then ÷2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(7\\) to both sides to isolate the fraction term.",
+              "work": "\\(\\dfrac{2h}{5} = 3 + 7 = 10\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(5\\) to clear the denominator.",
+              "work": "\\(2h = 10 \\times 5 = 50\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\) to solve for \\(h\\).",
+              "work": "\\(h = \\dfrac{50}{2} = 25\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{2(25)}{5} - 7 = \\dfrac{50}{5} - 7 = 10 - 7 = 3\\). Correct!",
+              "work": "\\(\\text{Answer: } h = 25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3547,6 +3667,126 @@
               "note": "Add 5y to both sides and subtract 18 from both sides to gather the y-term."
             }
           ]
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1aiv",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(2a + 1 = a + 7\\).",
+          "options": [
+            "\\(a = 2\\)",
+            "\\(a = 6\\)",
+            "\\(a = 8\\)",
+            "\\(a = \\dfrac{8}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract a from both sides to collect pronumerals on the left, then subtract 1 from both sides.",
+          "keyPoints": [
+            {
+              "text": "2a + 1 = a + 7",
+              "note": "Collect pronumerals on one side and constants on the other."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(a\\) from both sides so all \\(a\\) terms are on the left.",
+              "work": "\\(2a - a + 1 = 7 \\implies a + 1 = 7\\)"
+            },
+            {
+              "explain": "Subtract \\(1\\) from both sides to isolate \\(a\\).",
+              "work": "\\(a = 7 - 1 = 6\\)"
+            },
+            {
+              "explain": "Check: LHS \\(= 2(6) + 1 = 13\\), RHS \\(= 6 + 7 = 13\\). Both sides match!",
+              "work": "\\(\\text{LHS} = \\text{RHS} = 13\\)"
+            },
+            {
+              "explain": "Therefore, \\(a = 6\\).",
+              "work": "\\(\\text{Answer: } a = 6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1av",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(5(a - 7) = 2(7a - 4)\\).",
+          "options": [
+            "\\(a = -3\\)",
+            "\\(a = 3\\)",
+            "\\(a = -\\dfrac{27}{19}\\)",
+            "\\(a = -4\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand both brackets first: 5a - 35 = 14a - 8. Then subtract 5a from both sides and add 8 to both sides.",
+          "keyPoints": [
+            {
+              "text": "5(a - 7) = 2(7a - 4)",
+              "note": "Expand both brackets completely before collecting like terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand both brackets carefully: \\(5(a - 7) = 5a - 35\\) and \\(2(7a - 4) = 14a - 8\\).",
+              "work": "\\(5a - 35 = 14a - 8\\)"
+            },
+            {
+              "explain": "Subtract \\(5a\\) from both sides so the \\(a\\) term stays positive on the right.",
+              "work": "\\(-35 = 9a - 8\\)"
+            },
+            {
+              "explain": "Add \\(8\\) to both sides: \\(-35 + 8 = -27\\).",
+              "work": "\\(-27 = 9a\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(9\\): \\(a = \\dfrac{-27}{9} = -3\\). Check: \\(5(-10) = -50\\) and \\(2(-25) = -50\\).",
+              "work": "\\(a = -3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the equation \\(2(3x + 4) + 5(6x + 7) = 64x + 1\\).",
+          "options": [
+            "\\(x = 1.5\\)",
+            "\\(x = 2\\)",
+            "\\(x = -1.5\\)",
+            "\\(x = \\dfrac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand both brackets on the left (6x + 8 + 30x + 35), collect like terms to get 36x + 43 = 64x + 1, then solve for x.",
+          "keyPoints": [
+            {
+              "text": "2(3x + 4) + 5(6x + 7)",
+              "note": "Expand both brackets and simplify the LHS before moving terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand both brackets on the left-hand side: \\(2(3x + 4) = 6x + 8\\) and \\(5(6x + 7) = 30x + 35\\).",
+              "work": "\\(6x + 8 + 30x + 35 = 64x + 1\\)"
+            },
+            {
+              "explain": "Collect like terms on the left-hand side: \\(6x + 30x = 36x\\) and \\(8 + 35 = 43\\).",
+              "work": "\\(36x + 43 = 64x + 1\\)"
+            },
+            {
+              "explain": "Subtract \\(36x\\) and subtract \\(1\\) from both sides.",
+              "work": "\\(43 - 1 = 64x - 36x \\implies 42 = 28x\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(28\\) and simplify: \\(x = \\dfrac{42}{28} = \\dfrac{3}{2} = 1.5\\).",
+              "work": "\\(x = \\dfrac{42}{28} = 1.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6370,6 +6610,206 @@
             "part": "",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q2ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the quadratic equation \\(x^2 = 100\\).",
+          "options": [
+            "\\(x = 10\\) only",
+            "\\(x = \\pm 10\\)",
+            "\\(x = \\pm 50\\)",
+            "\\(x = -10\\) only"
+          ],
+          "answer": 1,
+          "hint": "Remember that BOTH (+10)² = 100 and (-10)² = 100! Include both the positive and negative square root (±).",
+          "keyPoints": [
+            {
+              "text": "x^2 = 100",
+              "note": "Taking the square root of a positive number gives two solutions: + and -."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take the square root of both sides, remembering to include both \\(+\\) and \\(-\\).",
+              "work": "\\(x = \\pm\\sqrt{100}\\)"
+            },
+            {
+              "explain": "Evaluate \\(\\sqrt{100} = 10\\).",
+              "work": "\\(x = \\pm 10\\)"
+            },
+            {
+              "explain": "Check both solutions: \\((10)^2 = 100\\) and \\((-10)^2 = 100\\).",
+              "work": "\\(x = 10 \\text{ or } x = -10\\)"
+            },
+            {
+              "explain": "Therefore, the solutions are \\(x = \\pm 10\\).",
+              "work": "\\(\\text{Answer: } x = \\pm 10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q2aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the quadratic equation \\(b^2 = 0\\).",
+          "options": [
+            "\\(b = 0\\)",
+            "\\(b = \\pm 1\\)",
+            "\\(b = 1\\)",
+            "No real solution"
+          ],
+          "answer": 0,
+          "hint": "What number multiplied by itself equals 0? Zero is neither positive nor negative, so there is only one solution.",
+          "keyPoints": [
+            {
+              "text": "b^2 = 0",
+              "note": "0 is the only number whose square is 0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take the square root of both sides of \\(b^2 = 0\\).",
+              "work": "\\(b = \\pm\\sqrt{0}\\)"
+            },
+            {
+              "explain": "Since \\(+0\\) and \\(-0\\) are both equal to \\(0\\), there is a single solution.",
+              "work": "\\(b = 0\\)"
+            },
+            {
+              "explain": "Check: \\(0^2 = 0\\). Correct!",
+              "work": "\\(0^2 = 0\\)"
+            },
+            {
+              "explain": "Therefore, \\(b = 0\\).",
+              "work": "\\(\\text{Answer: } b = 0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q2aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic equation \\(p^2 = 39\\), rounding to \\(2\\) decimal places.",
+          "options": [
+            "\\(p = 6.24\\) only",
+            "\\(p = \\pm 6.24\\)",
+            "\\(p = \\pm 6.25\\)",
+            "\\(p = \\pm 19.50\\)"
+          ],
+          "answer": 1,
+          "hint": "Take ±√39 on your calculator (6.24499...) and round to 2 decimal places — do not forget the ± sign!",
+          "keyPoints": [
+            {
+              "text": "2\\) decimal places",
+              "note": "√39 ≈ 6.24499..., which rounds to 6.24 (not 6.25)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take the positive and negative square roots of both sides.",
+              "work": "\\(p = \\pm\\sqrt{39}\\)"
+            },
+            {
+              "explain": "Calculate \\(\\sqrt{39}\\) to several decimal places: \\(\\sqrt{39} \\approx 6.244997...\\)",
+              "work": "\\(p \\approx \\pm 6.24499...\\)"
+            },
+            {
+              "explain": "Round to \\(2\\) decimal places: the third decimal digit is \\(4 < 5\\), so round down to \\(6.24\\).",
+              "work": "\\(p \\approx \\pm 6.24\\)"
+            },
+            {
+              "explain": "Therefore, \\(p = \\pm 6.24\\) (to 2 decimal places).",
+              "work": "\\(\\text{Answer: } p = \\pm 6.24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q2aiv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic equation \\(-2w^2 = -50\\).",
+          "options": [
+            "\\(w = 5\\) only",
+            "\\(w = \\pm 5\\)",
+            "\\(w = \\pm 25\\)",
+            "No real solution"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by -2 FIRST! A negative divided by a negative gives positive 25 (w² = 25), then take ±√25.",
+          "keyPoints": [
+            {
+              "text": "-2w^2 = -50",
+              "note": "Divide by -2 first: (-50) ÷ (-2) = +25."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide both sides by \\(-2\\) to isolate \\(w^2\\).",
+              "work": "\\(w^2 = \\dfrac{-50}{-2} = 25\\)"
+            },
+            {
+              "explain": "Take the square root of both sides, including both \\(+\\) and \\(-\\).",
+              "work": "\\(w = \\pm\\sqrt{25} = \\pm 5\\)"
+            },
+            {
+              "explain": "Check both solutions: \\(-2(5)^2 = -50\\) and \\(-2(-5)^2 = -2(25) = -50\\).",
+              "work": "\\(-2(\\pm 5)^2 = -50\\)"
+            },
+            {
+              "explain": "Therefore, \\(w = \\pm 5\\).",
+              "work": "\\(\\text{Answer: } w = \\pm 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Why does the equation \\(y^2 = -3\\) have no real solution?",
+          "options": [
+            "The square of any real number is always zero or positive, so negative numbers have no real square roots.",
+            "Because 3 is a prime number and cannot be divided by 2.",
+            "Because y must always be a positive integer.",
+            "Because -3 is an odd number."
+          ],
+          "answer": 0,
+          "hint": "Think about what happens when you square a positive number, zero, or a negative number. Can y × y ever be negative?",
+          "keyPoints": [
+            {
+              "text": "y^2 = -3",
+              "note": "Positive × positive = positive, and negative × negative = positive."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test squaring a positive number: \\((+) \\times (+) = (+)> 0\\).",
+              "work": "\\(y > 0 \\implies y^2 > 0\\)"
+            },
+            {
+              "explain": "Test squaring zero or a negative number: \\(0^2 = 0\\), and \\((-) \\times (-) = (+) > 0\\).",
+              "work": "\\(y \\le 0 \\implies y^2 \\ge 0\\)"
+            },
+            {
+              "explain": "Therefore, for every real number \\(y\\), \\(y^2 \\ge 0\\), so \\(y^2\\) can never equal \\(-3\\).",
+              "work": "\\(y^2 \\ge 0 \\neq -3\\)"
+            },
+            {
+              "explain": "Hence, negative numbers have no real square roots, so \\(y^2 = -3\\) has no real solution.",
+              "work": "\\(\\text{No real solution}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

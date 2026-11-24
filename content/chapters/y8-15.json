@@ -1913,6 +1913,52 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q3ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the perimeter of the kite shown in the diagram.",
+          "options": [
+            "\\(8\\text{ cm}\\)",
+            "\\(15\\text{ cm}\\)",
+            "\\(16\\text{ cm}\\)",
+            "\\(18\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "Matching tick marks mean equal side lengths! There are TWO 5 cm sides (triple ticks) and TWO 3 cm sides (double ticks). Add all four sides.",
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Use the tick marks to find the lengths of the two unlabelled sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the tick marks on the kite: the two sides with triple ticks are both \\(5\\text{ cm}\\) (red), and the two sides with double ticks are both \\(3\\text{ cm}\\) (blue).",
+              "work": "\\(\\text{Sides} = 5\\text{ cm}, 5\\text{ cm}, 3\\text{ cm}, 3\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"98,42 224,42 152,138 74,112\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"98\" y1=\"42\" x2=\"224\" y2=\"42\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"224\" y1=\"42\" x2=\"152\" y2=\"138\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"98\" y1=\"42\" x2=\"74\" y2=\"112\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"74\" y1=\"112\" x2=\"152\" y2=\"138\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"156.0\" y1=\"36.5\" x2=\"156.0\" y2=\"47.5\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><line x1=\"161.0\" y1=\"36.5\" x2=\"161.0\" y2=\"47.5\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><line x1=\"166.0\" y1=\"36.5\" x2=\"166.0\" y2=\"47.5\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><line x1=\"195.4\" y1=\"89.3\" x2=\"186.6\" y2=\"82.7\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><line x1=\"192.4\" y1=\"93.3\" x2=\"183.6\" y2=\"86.7\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><line x1=\"189.4\" y1=\"97.3\" x2=\"180.6\" y2=\"90.7\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><line x1=\"92.0\" y1=\"76.4\" x2=\"81.6\" y2=\"72.9\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"90.4\" y1=\"81.1\" x2=\"80.0\" y2=\"77.6\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"112.4\" y1=\"119.0\" x2=\"108.9\" y2=\"129.4\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"117.1\" y1=\"120.6\" x2=\"113.6\" y2=\"131.0\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"160\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\">5 cm</text><text x=\"112\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">3 cm</text><text x=\"208\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">5 cm</text><text x=\"104\" y=\"144\" font-family=\"Arial,sans-serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">3 cm</text><text x=\"150\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Triple ticks = 5 cm each (red); double ticks = 3 cm each (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the perimeter as the sum of all four outer sides.",
+              "work": "\\(P = 5 + 5 + 3 + 3 = 2 \\times (3 + 5)\\)"
+            },
+            {
+              "explain": "Calculate the total: \\(2 \\times 8 = 16\\text{ cm}\\).",
+              "work": "\\(P = 16\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the perimeter of the kite is \\(16\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 16\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 164\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"98,42 224,42 152,138 74,112\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"156.0\" y1=\"36.5\" x2=\"156.0\" y2=\"47.5\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"161.0\" y1=\"36.5\" x2=\"161.0\" y2=\"47.5\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"166.0\" y1=\"36.5\" x2=\"166.0\" y2=\"47.5\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"195.4\" y1=\"89.3\" x2=\"186.6\" y2=\"82.7\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"192.4\" y1=\"93.3\" x2=\"183.6\" y2=\"86.7\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"189.4\" y1=\"97.3\" x2=\"180.6\" y2=\"90.7\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"92.0\" y1=\"76.4\" x2=\"81.6\" y2=\"72.9\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"90.4\" y1=\"81.1\" x2=\"80.0\" y2=\"77.6\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"112.4\" y1=\"119.0\" x2=\"108.9\" y2=\"129.4\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"117.1\" y1=\"120.6\" x2=\"113.6\" y2=\"131.0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"160\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text><text x=\"112\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3 cm</text></svg>"
+          }
         }
       ]
     },
@@ -2835,6 +2881,98 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q4ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the volume of the pentagonal prism shown, with base area \\(32\\text{ cm}^2\\) and height \\(h = 8\\text{ cm}\\).",
+          "options": [
+            "\\(40\\text{ cm}^3\\)",
+            "\\(128\\text{ cm}^3\\)",
+            "\\(256\\text{ cm}^3\\)",
+            "\\(512\\text{ cm}^3\\)"
+          ],
+          "answer": 2,
+          "hint": "For ANY prism, Volume = Area of base × height (V = Ah). Multiply 32 cm² by 8 cm.",
+          "keyPoints": [
+            {
+              "text": "volume",
+              "note": "Use V = A × h for any prism."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the base area \\(A = 32\\text{ cm}^2\\) (highlighted in red/amber) and height \\(h = 8\\text{ cm}\\) (blue).",
+              "work": "\\(A = 32\\text{ cm}^2, \\quad h = 8\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"116,102 156,114 148,140 100,142 86,120\" fill=\"#fef3c7\" stroke=\"none\"/><line x1=\"116\" y1=\"102\" x2=\"156\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"116\" y1=\"102\" x2=\"86\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"116\" y1=\"28\" x2=\"116\" y2=\"102\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"114\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><line x1=\"148\" y1=\"66\" x2=\"148\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"100\" y1=\"68\" x2=\"100\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"86\" y1=\"46\" x2=\"86\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"86,120 100,142 148,140 156,114\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.8\"/><polygon points=\"116,28 156,40 148,66 100,68 86,46\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><text x=\"174\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">h = 8 cm</text><text x=\"155\" y=\"164\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">Area of base = 32 cm²</text><text x=\"155\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Highlighted base area A = 32 cm² and vertical height h = 8 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the prism volume formula \\(V = A \\times h\\).",
+              "work": "\\(V = 32 \\times 8\\)"
+            },
+            {
+              "explain": "Multiply \\(32 \\times 8 = 256\\).",
+              "work": "\\(V = 256\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Therefore, the volume of the prism is \\(256\\text{ cm}^3\\).",
+              "work": "\\(\\text{Answer: } 256\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"116,102 156,114 148,140 100,142 86,120\" fill=\"#f1f5f9\" stroke=\"none\"/><line x1=\"116\" y1=\"102\" x2=\"156\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"116\" y1=\"102\" x2=\"86\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"116\" y1=\"28\" x2=\"116\" y2=\"102\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"114\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"148\" y1=\"66\" x2=\"148\" y2=\"140\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"100\" y1=\"68\" x2=\"100\" y2=\"142\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"86\" y1=\"46\" x2=\"86\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"86,120 100,142 148,140 156,114\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polygon points=\"116,28 156,40 148,66 100,68 86,46\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><text x=\"174\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">h = 8 cm</text><text x=\"155\" y=\"164\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">Area of base = 32 cm²</text></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q4aiii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the volume of the composite house-shaped prism shown (base width \\(4\\text{ m}\\), wall height \\(3\\text{ m}\\), triangular roof height \\(2\\text{ m}\\), prism length \\(10\\text{ m}\\)).",
+          "options": [
+            "\\(120\\text{ m}^3\\)",
+            "\\(160\\text{ m}^3\\)",
+            "\\(200\\text{ m}^3\\)",
+            "\\(240\\text{ m}^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the front cross-sectional area first by splitting it into a rectangle (4 × 3) plus a triangle (1/2 × 4 × 2), then multiply the total cross-section area by the length 10 m!",
+          "keyPoints": [
+            {
+              "text": "volume",
+              "note": "V = (Rectangle area + Triangle area) × Prism length (10 m)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split the front cross-section into a rectangle (blue: \\(4\\text{ m} \\times 3\\text{ m}\\)) and a triangle (amber: base \\(4\\text{ m}\\), height \\(2\\text{ m}\\)).",
+              "work": "\\(A_{\\text{rect}} = 4 \\times 3 = 12\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 225\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"225\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"54\" y=\"108\" width=\"88\" height=\"54\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"54,108 142,108 98,74\" fill=\"#fef3c7\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"142,162 210,114 210,60 142,108\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"142,108 210,60 166,26 98,74\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"98\" y1=\"74\" x2=\"98\" y2=\"108\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-dasharray=\"3,2\"/><polyline points=\"98,100 106,100 106,108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"54,154 62,154 62,162\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"142\" y1=\"162\" x2=\"210\" y2=\"114\" stroke=\"#16a34a\" stroke-width=\"3.6\"/><text x=\"98\" y=\"178\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">4 m</text><text x=\"220\" y=\"92\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4ed8\">3 m</text><text x=\"72\" y=\"88\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">2 m</text><text x=\"190\" y=\"152\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#15803d\">10 m</text><text x=\"160\" y=\"215\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Front cross-section = rectangle (blue) + triangle (amber); depth = 10 m (green)</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the area of the triangular roof: \\(A_{\\text{tri}} = \\dfrac{1}{2} \\times b \\times h = \\dfrac{1}{2} \\times 4 \\times 2 = 4\\text{ m}^2\\).",
+              "work": "\\(A_{\\text{tri}} = \\dfrac{1}{2} \\times 4 \\times 2 = 4\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Add the two areas to get the total cross-sectional area: \\(A = 12 + 4 = 16\\text{ m}^2\\).",
+              "work": "\\(A = 12 + 4 = 16\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Multiply the cross-sectional area by the prism length \\(10\\text{ m}\\) (green): \\(V = 16 \\times 10 = 160\\text{ m}^3\\).",
+              "work": "\\(V = 16 \\times 10 = 160\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 198\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"198\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"54\" y=\"108\" width=\"88\" height=\"54\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"54,108 142,108 98,74\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"142,162 210,114 210,60 142,108\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"142,108 210,60 166,26 98,74\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"98\" y1=\"74\" x2=\"98\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><polyline points=\"98,100 106,100 106,108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"54,154 62,154 62,162\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"98\" y=\"178\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">4 m</text><text x=\"220\" y=\"92\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">3 m</text><text x=\"72\" y=\"88\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">2 m</text><text x=\"190\" y=\"152\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">10 m</text></svg>"
+          }
         }
       ]
     },
@@ -3073,6 +3211,52 @@
             "school": "Form II Annual",
             "grade": "8",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q4aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the volume of the cylinder shown, with \\(\\text{diameter} = 21\\text{ m}\\) and height \\(h = 11\\text{ m}\\), rounded to \\(2\\) decimal places.",
+          "options": [
+            "\\(725.71\\text{ m}^3\\)",
+            "\\(3809.97\\text{ m}^3\\)",
+            "\\(15\\,239.87\\text{ m}^3\\)",
+            "\\(1451.42\\text{ m}^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Be careful! You are given the DIAMETER (21 m), so halve it first to get the radius r = 10.5 m. Then use V = πr²h.",
+          "keyPoints": [
+            {
+              "text": "diameter} = 21\\text{ m}",
+              "note": "Halve the diameter first: r = 21 ÷ 2 = 10.5 m."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the radius \\(r\\) by halving the diameter: \\(r = \\dfrac{21}{2} = 10.5\\text{ m}\\) (red), with height \\(h = 11\\text{ m}\\) (blue).",
+              "work": "\\(r = \\dfrac{21}{2} = 10.5\\text{ m}, \\quad h = 11\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 200\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 72 50 L 72 118 A 56 20 0 0 0 184 118 L 184 50 Z\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.6\"/><ellipse cx=\"128\" cy=\"50\" rx=\"56\" ry=\"20\" fill=\"#94a3b8\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 72 118 A 56 20 0 0 1 184 118\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"128\" y1=\"50\" x2=\"184\" y2=\"50\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><circle cx=\"128\" cy=\"50\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"156\" y=\"43\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">r = 10.5 m</text><line x1=\"184\" y1=\"50\" x2=\"184\" y2=\"118\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"196\" y=\"89\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">h = 11 m</text><text x=\"128\" y=\"156\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">diameter = 21 m</text><text x=\"155\" y=\"190\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Radius r = 21 ÷ 2 = 10.5 m (red) and height h = 11 m (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the cylinder volume formula \\(V = \\pi r^2 h\\) and substitute \\(r = 10.5\\) and \\(h = 11\\).",
+              "work": "\\(V = \\pi \\times (10.5)^2 \\times 11\\)"
+            },
+            {
+              "explain": "Square the radius first (\\(10.5^2 = 110.25\\)), then multiply by \\(11\\) and \\(\\pi\\).",
+              "work": "\\(V = \\pi \\times 110.25 \\times 11 = 1212.75\\pi \\approx 3809.966\\text{ m}^3\\)"
+            },
+            {
+              "explain": "Round to \\(2\\) decimal places: \\(3809.97\\text{ m}^3\\).",
+              "work": "\\(V \\approx 3809.97\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 172\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"172\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 72 50 L 72 118 A 56 20 0 0 0 184 118 L 184 50 Z\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.6\"/><ellipse cx=\"128\" cy=\"50\" rx=\"56\" ry=\"20\" fill=\"#94a3b8\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 72 118 A 56 20 0 0 1 184 118\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><text x=\"196\" y=\"89\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">h = 11 m</text><text x=\"128\" y=\"156\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">diameter = 21 m</text></svg>"
           }
         }
       ]
@@ -3647,6 +3831,166 @@
             "sourceMarks": 1,
             "page": 14
           }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q2ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(4\\text{ cm}^2\\) to \\(\\text{mm}^2\\).",
+          "options": [
+            "\\(40\\text{ mm}^2\\)",
+            "\\(400\\text{ mm}^2\\)",
+            "\\(4000\\text{ mm}^2\\)",
+            "\\(0.04\\text{ mm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "For AREA units, square the length conversion factor! Since 1 cm = 10 mm, 1 cm² = 10² = 100 mm².",
+          "keyPoints": [
+            {
+              "text": "4\\text{ cm}^2",
+              "note": "1 cm² = 10 × 10 = 100 mm²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the length conversion: \\(1\\text{ cm} = 10\\text{ mm}\\).",
+              "work": "\\(1\\text{ cm} = 10\\text{ mm}\\)"
+            },
+            {
+              "explain": "Square the conversion factor for area: \\(1\\text{ cm}^2 = 10^2\\text{ mm}^2 = 100\\text{ mm}^2\\).",
+              "work": "\\(1\\text{ cm}^2 = 100\\text{ mm}^2\\)"
+            },
+            {
+              "explain": "Multiply \\(4\\) by \\(100\\).",
+              "work": "\\(4 \\times 100 = 400\\text{ mm}^2\\)"
+            },
+            {
+              "explain": "Therefore, \\(4\\text{ cm}^2 = 400\\text{ mm}^2\\).",
+              "work": "\\(\\text{Answer: } 400\\text{ mm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q2aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\(5600\\text{ cm}^2\\) to \\(\\text{m}^2\\).",
+          "options": [
+            "\\(56\\text{ m}^2\\)",
+            "\\(5.6\\text{ m}^2\\)",
+            "\\(0.56\\text{ m}^2\\)",
+            "\\(0.056\\text{ m}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Since 1 m = 100 cm, 1 m² = 100² = 10 000 cm². Divide 5600 by 10 000 (move the decimal point 4 places left).",
+          "keyPoints": [
+            {
+              "text": "5600\\text{ cm}^2",
+              "note": "1 m² = 100 × 100 = 10 000 cm²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall \\(1\\text{ m} = 100\\text{ cm}\\), so for area \\(1\\text{ m}^2 = 100^2\\text{ cm}^2 = 10\\,000\\text{ cm}^2\\).",
+              "work": "\\(1\\text{ m}^2 = 10\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "To convert from smaller units (\\(\\text{cm}^2\\)) to larger units (\\(\\text{m}^2\\)), divide by \\(10\\,000\\).",
+              "work": "\\(\\dfrac{5600}{10\\,000}\\)"
+            },
+            {
+              "explain": "Move the decimal point \\(4\\) places to the left: \\(5600 \\div 10\\,000 = 0.56\\).",
+              "work": "\\(0.56\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Therefore, \\(5600\\text{ cm}^2 = 0.56\\text{ m}^2\\).",
+              "work": "\\(\\text{Answer: } 0.56\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q2bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(5\\text{ cm}^3\\) to \\(\\text{mL}\\).",
+          "options": [
+            "\\(5\\text{ mL}\\)",
+            "\\(50\\text{ mL}\\)",
+            "\\(500\\text{ mL}\\)",
+            "\\(5000\\text{ mL}\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember the key volume-to-capacity identity: 1 cm³ = 1 mL!",
+          "keyPoints": [
+            {
+              "text": "5\\text{ cm}^3",
+              "note": "1 cm³ is defined as exactly 1 mL."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric volume-to-capacity conversion: \\(1\\text{ cm}^3 = 1\\text{ mL}\\).",
+              "work": "\\(1\\text{ cm}^3 = 1\\text{ mL}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(5\\).",
+              "work": "\\(5\\text{ cm}^3 = 5 \\times 1\\text{ mL} = 5\\text{ mL}\\)"
+            },
+            {
+              "explain": "Verify that no extra power of \\(10\\) is needed because \\(\\text{cm}^3\\) and \\(\\text{mL}\\) are 1-to-1.",
+              "work": "\\(5\\text{ cm}^3 = 5\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, \\(5\\text{ cm}^3 = 5\\text{ mL}\\).",
+              "work": "\\(\\text{Answer: } 5\\text{ mL}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q2bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(7\\text{ m}^3\\) to \\(\\text{L}\\).",
+          "options": [
+            "\\(7\\text{ L}\\)",
+            "\\(700\\text{ L}\\)",
+            "\\(7000\\text{ L}\\)",
+            "\\(70\\,000\\text{ L}\\)"
+          ],
+          "answer": 2,
+          "hint": "Remember that 1 m³ = 1000 L (1 kilolitre). Multiply 7 by 1000.",
+          "keyPoints": [
+            {
+              "text": "7\\text{ m}^3",
+              "note": "1 m³ holds exactly 1000 litres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric volume-to-capacity identity: \\(1\\text{ m}^3 = 1000\\text{ L}\\).",
+              "work": "\\(1\\text{ m}^3 = 1000\\text{ L}\\)"
+            },
+            {
+              "explain": "Multiply \\(7\\) by \\(1000\\) to convert cubic metres into litres.",
+              "work": "\\(7 \\times 1000 = 7000\\text{ L}\\)"
+            },
+            {
+              "explain": "Check: \\(7\\text{ m}^3\\) is a large tank holding \\(7\\) kilolitres \\(= 7000\\text{ L}\\).",
+              "work": "\\(7\\text{ m}^3 = 7000\\text{ L}\\)"
+            },
+            {
+              "explain": "Therefore, \\(7\\text{ m}^3 = 7000\\text{ L}\\).",
+              "work": "\\(\\text{Answer: } 7000\\text{ L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5463,6 +5807,206 @@
               "note": "The formula gives radius squared; diameter is twice the radius."
             }
           ]
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(3:44\\text{ pm}\\) in 24-hour time.",
+          "options": [
+            "\\(0344\\)",
+            "\\(1344\\)",
+            "\\(1544\\)",
+            "\\(1644\\)"
+          ],
+          "answer": 2,
+          "hint": "For pm times from 1:00 pm to 11:59 pm, add 12 to the hours and keep the minutes the same.",
+          "keyPoints": [
+            {
+              "text": "3:44\\text{ pm}",
+              "note": "Add 12 hours to pm times: 3 + 12 = 15."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since \\(3:44\\text{ pm}\\) is in the afternoon (pm), add \\(12\\) to the hour.",
+              "work": "\\(3 + 12 = 15\\)"
+            },
+            {
+              "explain": "Keep the minutes unchanged (\\(44\\)).",
+              "work": "\\(15\\text{ hours } 44\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Write in 4-digit 24-hour format without am/pm.",
+              "work": "\\(1544\\)"
+            },
+            {
+              "explain": "Therefore, \\(3:44\\text{ pm}\\) in 24-hour time is \\(1544\\).",
+              "work": "\\(\\text{Answer: } 1544\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(2130\\) (24-hour time) to 12-hour format.",
+          "options": [
+            "\\(9:30\\text{ am}\\)",
+            "\\(9:30\\text{ pm}\\)",
+            "\\(11:30\\text{ pm}\\)",
+            "\\(8:30\\text{ pm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Since 21 is greater than 12, subtract 12 from 21 hours and label the time pm.",
+          "keyPoints": [
+            {
+              "text": "2130",
+              "note": "21 - 12 = 9, so 2130 is 9:30 pm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(2130\\) into \\(21\\) hours and \\(30\\) minutes. Since \\(21 \\ge 12\\), it is a pm time.",
+              "work": "\\(21\\text{ h } 30\\text{ min} \\to \\text{pm}\\)"
+            },
+            {
+              "explain": "Subtract \\(12\\) from \\(21\\) hours: \\(21 - 12 = 9\\).",
+              "work": "\\(21 - 12 = 9\\)"
+            },
+            {
+              "explain": "Keep the minutes (\\(30\\)) and attach \\(\\text{pm}\\).",
+              "work": "\\(9:30\\text{ pm}\\)"
+            },
+            {
+              "explain": "Therefore, \\(2130\\) in 12-hour format is \\(9:30\\text{ pm}\\).",
+              "work": "\\(\\text{Answer: } 9:30\\text{ pm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q5ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the difference in time from \\(7:30\\text{ am}\\) to \\(1:05\\text{ pm}\\).",
+          "options": [
+            "\\(5\\text{ hours } 25\\text{ minutes}\\)",
+            "\\(5\\text{ hours } 35\\text{ minutes}\\)",
+            "\\(6\\text{ hours } 25\\text{ minutes}\\)",
+            "\\(6\\text{ hours } 35\\text{ minutes}\\)"
+          ],
+          "answer": 1,
+          "hint": "Bridge across 12:30 pm: 7:30 am to 12:30 pm is 5 hours, then count the minutes from 12:30 pm to 1:05 pm.",
+          "keyPoints": [
+            {
+              "text": "7:30\\text{ am}\\) to \\(1:05\\text{ pm}",
+              "note": "Count whole hours to 12:30 pm (5 h), then add 35 minutes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count whole hours from \\(7:30\\text{ am}\\) to \\(12:30\\text{ pm}\\): \\(12 - 7 = 5\\) hours.",
+              "work": "\\(7:30\\text{ am} \\to 12:30\\text{ pm} = 5\\text{ hours}\\)"
+            },
+            {
+              "explain": "Count from \\(12:30\\text{ pm}\\) to \\(1:00\\text{ pm}\\): \\(30\\) minutes.",
+              "work": "\\(12:30\\text{ pm} \\to 1:00\\text{ pm} = 30\\text{ min}\\)"
+            },
+            {
+              "explain": "Add the final \\(5\\) minutes from \\(1:00\\text{ pm}\\) to \\(1:05\\text{ pm}\\): \\(30 + 5 = 35\\) minutes.",
+              "work": "\\(30 + 5 = 35\\text{ min}\\)"
+            },
+            {
+              "explain": "Combine the hours and minutes: \\(5\\text{ hours } 35\\text{ minutes}\\).",
+              "work": "\\(\\text{Answer: } 5\\text{ hours } 35\\text{ minutes}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q5di",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Perth is \\(2\\) hours behind Sydney and \\(8\\) hours ahead of the time in London. What time is it in Sydney when it is \\(9\\text{ am}\\) in Perth?",
+          "options": [
+            "\\(7\\text{ am}\\)",
+            "\\(11\\text{ am}\\)",
+            "\\(1\\text{ am}\\)",
+            "\\(5\\text{ pm}\\)"
+          ],
+          "answer": 1,
+          "hint": "If Perth is 2 hours BEHIND Sydney, then Sydney is 2 hours AHEAD of Perth. Add 2 hours to 9 am!",
+          "keyPoints": [
+            {
+              "text": "2\\) hours behind Sydney",
+              "note": "Sydney is 2 hours ahead of Perth (+2 h)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since Perth is \\(2\\) hours behind Sydney, Sydney is \\(2\\) hours ahead of Perth.",
+              "work": "\\(\\text{Sydney} = \\text{Perth} + 2\\text{ hours}\\)"
+            },
+            {
+              "explain": "Add \\(2\\) hours to \\(9\\text{ am}\\).",
+              "work": "\\(9\\text{ am} + 2\\text{ hours} = 11\\text{ am}\\)"
+            },
+            {
+              "explain": "Check: \\(9\\text{ am}\\) in Perth is indeed \\(2\\) hours behind \\(11\\text{ am}\\) in Sydney.",
+              "work": "\\(11 - 2 = 9\\text{ am}\\)"
+            },
+            {
+              "explain": "Therefore, it is \\(11\\text{ am}\\) in Sydney.",
+              "work": "\\(\\text{Answer: } 11\\text{ am}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q5dii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Perth is \\(2\\) hours behind Sydney and \\(8\\) hours ahead of the time in London. What time is it in London when it is \\(2\\text{ pm}\\) in Sydney?",
+          "options": [
+            "\\(4\\text{ am}\\)",
+            "\\(6\\text{ am}\\)",
+            "\\(8\\text{ am}\\)",
+            "\\(12\\text{ midnight}\\)"
+          ],
+          "answer": 0,
+          "hint": "Step through Perth: 2 pm in Sydney -> subtract 2 hours -> 12 noon in Perth -> subtract 8 hours -> London time (total 10 hours behind Sydney).",
+          "keyPoints": [
+            {
+              "text": "2\\text{ pm}\\) in Sydney",
+              "note": "London is 2 + 8 = 10 hours behind Sydney."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "First find the time in Perth (\\(2\\) hours behind Sydney): \\(2\\text{ pm} - 2\\text{ hours} = 12\\text{ noon}\\).",
+              "work": "\\(\\text{Perth} = 2\\text{ pm} - 2\\text{ h} = 12:00\\text{ pm}\\)"
+            },
+            {
+              "explain": "Since Perth is \\(8\\) hours ahead of London, London is \\(8\\) hours behind Perth.",
+              "work": "\\(\\text{London} = 12:00\\text{ pm} - 8\\text{ h}\\)"
+            },
+            {
+              "explain": "Subtract \\(8\\) hours from \\(12\\text{ noon}\\): \\(12 - 8 = 4\\text{ am}\\).",
+              "work": "\\(12 - 8 = 4\\text{ am}\\)"
+            },
+            {
+              "explain": "Check directly: London is \\(2 + 8 = 10\\) hours behind Sydney, and \\(1400 - 10\\text{ h} = 0400 = 4\\text{ am}\\).",
+              "work": "\\(\\text{Answer: } 4\\text{ am}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

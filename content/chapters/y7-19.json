@@ -362,6 +362,454 @@
             }
           ],
           "hint": "Complete a tally table first to find the frequencies, then look for gaps and peaks."
+        },
+        {
+          "id": "wghs22-y7-t2-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The stem-and-leaf plot shows the heights (in centimetres) of the girls in a Year 10 class. What is the height of the shortest student?",
+          "options": [
+            "\\(14\\text{ cm}\\)",
+            "\\(140\\text{ cm}\\)",
+            "\\(147\\text{ cm}\\)",
+            "\\(148\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "In an ordered stem-and-leaf plot, the smallest value is the first leaf in the top row. Combine stem 14 with leaf 7.",
+          "keyPoints": [
+            {
+              "text": "shortest student",
+              "note": "Look at the smallest stem (14) and its first leaf (7)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the top row (smallest stem), which is stem \\(14\\) (representing \\(140\\text{ cm}\\)).",
+              "work": "\\(\\text{Smallest stem} = 14\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"38\" y=\"43\" width=\"28\" height=\"20\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">14</text><circle cx=\"88\" cy=\"53\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"155\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Shortest student: Stem 14, first leaf 7 -> 147 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the first leaf in row \\(14\\), which is \\(7\\).",
+              "work": "\\(\\text{First leaf} = 7\\)"
+            },
+            {
+              "explain": "Combine the stem and leaf: \\(14 \\mid 7\\) represents \\(147\\text{ cm}\\).",
+              "work": "\\(14 \\mid 7 = 147\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the height of the shortest student is \\(147\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 147\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The stem-and-leaf plot shows the heights (in centimetres) of the girls in a Year 10 class. How many students were surveyed?",
+          "options": [
+            "\\(5\\)",
+            "\\(20\\)",
+            "\\(22\\)",
+            "\\(27\\)"
+          ],
+          "answer": 2,
+          "hint": "Count only the leaves (each leaf represents one student), NOT the stems. Add the number of leaves in each row.",
+          "keyPoints": [
+            {
+              "text": "How many students",
+              "note": "Each single leaf digit represents 1 student."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the number of leaves in each row (remember not to count the stem numbers).",
+              "work": "\\(\\text{Row 14: } 3, \\; \\text{Row 15: } 7, \\; \\text{Row 16: } 6, \\; \\text{Row 17: } 4, \\; \\text{Row 18: } 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"286\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"274\" y=\"58\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">(3)</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"274\" y=\"82\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">(7)</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"274\" y=\"106\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">(6)</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"274\" y=\"130\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">(4)</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"274\" y=\"154\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">(2)</text><text x=\"155\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Count the leaves in each row: 3 + 7 + 6 + 4 + 2 = 22</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the first three rows: \\(3 + 7 + 6 = 16\\).",
+              "work": "\\(3 + 7 + 6 = 16\\)"
+            },
+            {
+              "explain": "Add the remaining two rows: \\(16 + 4 + 2 = 22\\).",
+              "work": "\\(16 + 4 + 2 = 22\\)"
+            },
+            {
+              "explain": "Therefore, \\(22\\) students were surveyed.",
+              "work": "\\(\\text{Total students} = 22\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The stem-and-leaf plot shows the heights (in centimetres) of the girls in a Year 10 class. Find the median height.",
+          "options": [
+            "\\(161\\text{ cm}\\)",
+            "\\(163\\text{ cm}\\)",
+            "\\(165\\text{ cm}\\)",
+            "\\(169\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "There are 22 students (an even number), so the median is halfway between the 11th and 12th values in order. Count 11 leaves from the start to find both middle values.",
+          "keyPoints": [
+            {
+              "text": "median height",
+              "note": "For n = 22, average the 11th and 12th ordered values."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the median position for \\(n = 22\\) values: \\(\\dfrac{22 + 1}{2} = 11.5\\), which means the average of the 11th and 12th values.",
+              "work": "\\(\\text{Position} = \\dfrac{22 + 1}{2} = 11.5\\)"
+            },
+            {
+              "explain": "Count leaves from the smallest: Row 14 has \\(3\\), Row 15 has \\(7\\) (cumulative \\(10\\)). So the 11th value is \\(161\\) and the 12th value is \\(165\\).",
+              "work": "\\(\\text{11th} = 161, \\; \\text{12th} = 165\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><rect x=\"38\" y=\"91\" width=\"28\" height=\"20\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">16</text><circle cx=\"88\" cy=\"101\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">1</text><circle cx=\"110\" cy=\"101\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><line x1=\"99\" y1=\"90\" x2=\"99\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-dasharray=\"3,2\"/><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"155\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">11th value = 161 cm, 12th value = 165 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the average of \\(161\\) and \\(165\\): add them together and divide by \\(2\\).",
+              "work": "\\(\\text{Median} = \\dfrac{161 + 165}{2} = \\dfrac{326}{2} = 163\\)"
+            },
+            {
+              "explain": "Therefore, the median height is \\(163\\text{ cm}\\).",
+              "work": "\\(\\text{Median} = 163\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q7d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The stem-and-leaf plot shows the heights (in centimetres) of the girls in a Year 10 class. Find the range of the heights.",
+          "options": [
+            "\\(4\\text{ cm}\\)",
+            "\\(33\\text{ cm}\\)",
+            "\\(34\\text{ cm}\\)",
+            "\\(35\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "Range = Highest value - Lowest value. Read the very last leaf (18|1 = 181) and subtract the very first leaf (14|7 = 147).",
+          "keyPoints": [
+            {
+              "text": "range",
+              "note": "Range = Maximum - Minimum."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the highest value (last leaf in the bottom row): \\(18 \\mid 1 = 181\\text{ cm}\\).",
+              "work": "\\(\\text{Maximum} = 181\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"38\" y=\"43\" width=\"28\" height=\"20\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">14</text><circle cx=\"88\" cy=\"53\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><rect x=\"38\" y=\"139\" width=\"28\" height=\"20\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"110\" cy=\"149\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">1</text><text x=\"155\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Minimum = 147 cm, Maximum = 181 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the lowest value (first leaf in the top row): \\(14 \\mid 7 = 147\\text{ cm}\\).",
+              "work": "\\(\\text{Minimum} = 147\\text{ cm}\\)"
+            },
+            {
+              "explain": "Subtract the minimum from the maximum: \\(181 - 147 = 34\\).",
+              "work": "\\(\\text{Range} = 181 - 147 = 34\\)"
+            },
+            {
+              "explain": "Therefore, the range of the heights is \\(34\\text{ cm}\\).",
+              "work": "\\(\\text{Range} = 34\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q7e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The stem-and-leaf plot shows the heights (in centimetres) of the girls in a Year 10 class. Find the mode.",
+          "options": [
+            "\\(156\\text{ cm}\\)",
+            "\\(169\\text{ cm}\\)",
+            "\\(173\\text{ cm}\\)",
+            "\\(9\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "The mode is the value that appears most often. Look for the leaf repeated the most times on the SAME stem, then include its stem!",
+          "keyPoints": [
+            {
+              "text": "mode",
+              "note": "Remember to include the stem (16) with the repeated leaf (9) to get 169."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Scan each row for repeated leaves: row 14 has two 8s, row 15 has two 6s, row 16 has three 9s, row 17 has two 3s, and row 18 has two 1s.",
+              "work": "\\(\\text{Most repeated leaf: three 9s in row 16}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><rect x=\"38\" y=\"91\" width=\"28\" height=\"20\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.2\"/><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"154\" cy=\"101\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">9</text><circle cx=\"176\" cy=\"101\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">9</text><circle cx=\"198\" cy=\"101\" r=\"10\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"155\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Three 9s on stem 16 -> Mode = 169 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine stem \\(16\\) with the repeated leaf \\(9\\) to get \\(169\\text{ cm}\\).",
+              "work": "\\(16 \\mid 9 = 169\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify that no other height appears \\(3\\) or more times.",
+              "work": "\\(\\text{Frequency of } 169 = 3\\)"
+            },
+            {
+              "explain": "Therefore, the mode is \\(169\\text{ cm}\\).",
+              "work": "\\(\\text{Mode} = 169\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"64\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"82\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"22\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"72\" y1=\"14\" x2=\"72\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">14</text><text x=\"88\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"110\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"132\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">15</text><text x=\"88\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"110\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"132\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"176\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"198\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"220\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"62\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">16</text><text x=\"88\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"132\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"154\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"176\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"198\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"62\" y=\"130\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">17</text><text x=\"88\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"132\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"154\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"62\" y=\"154\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">18</text><text x=\"88\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"110\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The heights (in centimetres) of the boys in a Year 9 French class are: \\(167, 193, 179, 186, 191, 174, 174, 184, 190\\). Find the mean, rounded to \\(1\\) decimal place.",
+          "options": [
+            "\\(180.0\\text{ cm}\\)",
+            "\\(182.0\\text{ cm}\\)",
+            "\\(184.0\\text{ cm}\\)",
+            "\\(182.5\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add all 9 heights together carefully to find the total, then divide the total by 9.",
+          "keyPoints": [
+            {
+              "text": "mean",
+              "note": "Mean = (Sum of all values) ÷ (Number of values)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count how many heights are given: there are \\(9\\) boys in the list.",
+              "work": "\\(n = 9\\)"
+            },
+            {
+              "explain": "Add all \\(9\\) heights together: \\(167 + 193 + 179 + 186 + 191 + 174 + 174 + 184 + 190 = 1638\\).",
+              "work": "\\(\\text{Sum} = 1638\\)"
+            },
+            {
+              "explain": "Divide the sum by \\(9\\) to calculate the mean.",
+              "work": "\\(\\text{Mean} = \\dfrac{1638}{9} = 182\\)"
+            },
+            {
+              "explain": "Write the exact answer to \\(1\\) decimal place as requested: \\(182.0\\text{ cm}\\).",
+              "work": "\\(\\text{Mean} = 182.0\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The heights (in centimetres) of the boys in a Year 9 French class are: \\(167, 193, 179, 186, 191, 174, 174, 184, 190\\). Find the median height.",
+          "options": [
+            "\\(174\\text{ cm}\\)",
+            "\\(182\\text{ cm}\\)",
+            "\\(184\\text{ cm}\\)",
+            "\\(191\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "Sort all 9 heights from smallest to largest first! With 9 values, the median is the 5th value in the ordered list.",
+          "keyPoints": [
+            {
+              "text": "median height",
+              "note": "Always arrange the data in ascending order before finding the middle value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Arrange all \\(9\\) heights in ascending order from shortest to tallest.",
+              "work": "\\(167, 174, 174, 179, 184, 186, 190, 191, 193\\)"
+            },
+            {
+              "explain": "Find the middle position for \\(n = 9\\): \\(\\dfrac{9 + 1}{2} = 5\\text{th value}\\).",
+              "work": "\\(\\text{Middle position} = \\dfrac{9 + 1}{2} = 5\\)"
+            },
+            {
+              "explain": "Count to the 5th number in the sorted list (4 values below it, 4 values above it): \\(184\\).",
+              "work": "\\(\\text{5th value} = 184\\)"
+            },
+            {
+              "explain": "Therefore, the median height is \\(184\\text{ cm}\\).",
+              "work": "\\(\\text{Median} = 184\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The ages of children at a park are shown in the dot plot. Find the range of their ages.",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "hint": "Look closely at age 7 — are there any dots above 7? Subtract the smallest age that HAS a dot (8) from the largest age that HAS a dot (12).",
+          "keyPoints": [
+            {
+              "text": "range",
+              "note": "Only use values that actually have dots above them (7 has 0 dots!)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the dot plot for the smallest age with at least one dot: age \\(7\\) has no dots, so the minimum age is \\(8\\).",
+              "work": "\\(\\text{Minimum age} = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 155\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"96\" x2=\"294\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"26,96 34,92 34,100\" fill=\"#0f172a\"/><polygon points=\"294,96 286,92 286,100\" fill=\"#0f172a\"/><line x1=\"56\" y1=\"96\" x2=\"56\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"56\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><line x1=\"98\" y1=\"96\" x2=\"98\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"98\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">8</text><circle cx=\"98\" cy=\"82\" r=\"4.8\" fill=\"#dc2626\"/><circle cx=\"98\" cy=\"64\" r=\"4.8\" fill=\"#dc2626\"/><circle cx=\"98\" cy=\"46\" r=\"4.8\" fill=\"#dc2626\"/><rect x=\"86\" y=\"36\" width=\"24\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><line x1=\"140\" y1=\"96\" x2=\"140\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"140\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">9</text><circle cx=\"140\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"140\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"182\" y1=\"96\" x2=\"182\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"182\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">10</text><circle cx=\"182\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"224\" y1=\"96\" x2=\"224\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"224\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">11</text><circle cx=\"224\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"224\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"224\" cy=\"46\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"266\" y1=\"96\" x2=\"266\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">12</text><circle cx=\"266\" cy=\"82\" r=\"4.8\" fill=\"#dc2626\"/><rect x=\"254\" y=\"72\" width=\"24\" height=\"24\" rx=\"6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><line x1=\"98\" y1=\"24\" x2=\"266\" y2=\"24\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><line x1=\"98\" y1=\"19\" x2=\"98\" y2=\"29\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><line x1=\"266\" y1=\"19\" x2=\"266\" y2=\"29\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"182\" y=\"18\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">Range = 12 - 8 = 4</text><text x=\"160\" y=\"145\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Smallest dot at 8, largest dot at 12 -> Range = 12 - 8 = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the largest age with at least one dot: the maximum age is \\(12\\).",
+              "work": "\\(\\text{Maximum age} = 12\\)"
+            },
+            {
+              "explain": "Subtract the minimum from the maximum: \\(12 - 8 = 4\\).",
+              "work": "\\(\\text{Range} = 12 - 8 = 4\\)"
+            },
+            {
+              "explain": "Therefore, the range of the children's ages is \\(4\\).",
+              "work": "\\(\\text{Range} = 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"96\" x2=\"294\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"26,96 34,92 34,100\" fill=\"#0f172a\"/><polygon points=\"294,96 286,92 286,100\" fill=\"#0f172a\"/><line x1=\"56\" y1=\"96\" x2=\"56\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"56\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><line x1=\"98\" y1=\"96\" x2=\"98\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"98\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"98\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"98\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"98\" cy=\"46\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"140\" y1=\"96\" x2=\"140\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"140\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">9</text><circle cx=\"140\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"140\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"182\" y1=\"96\" x2=\"182\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"182\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">10</text><circle cx=\"182\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"224\" y1=\"96\" x2=\"224\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"224\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">11</text><circle cx=\"224\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"224\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"224\" cy=\"46\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"266\" y1=\"96\" x2=\"266\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">12</text><circle cx=\"266\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The ages of children at a park are shown in the dot plot. Find the mode.",
+          "options": [
+            "\\(8\\) only",
+            "\\(11\\) only",
+            "\\(8\\) and \\(11\\)",
+            "\\(9\\) and \\(10\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the tallest column(s) of dots on the dot plot. If two ages tie for the most dots, BOTH are modes!",
+          "keyPoints": [
+            {
+              "text": "mode",
+              "note": "A data set can have two modes (bimodal) if two values tie for highest frequency."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the number of dots above each age: \\(8\\) has \\(3\\), \\(9\\) has \\(2\\), \\(10\\) has \\(1\\), \\(11\\) has \\(3\\), and \\(12\\) has \\(1\\).",
+              "work": "\\(8: 3\\text{ dots}, \\; 9: 2, \\; 10: 1, \\; 11: 3\\text{ dots}, \\; 12: 1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 155\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"96\" x2=\"294\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"26,96 34,92 34,100\" fill=\"#0f172a\"/><polygon points=\"294,96 286,92 286,100\" fill=\"#0f172a\"/><line x1=\"56\" y1=\"96\" x2=\"56\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"56\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><line x1=\"98\" y1=\"96\" x2=\"98\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"98\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">8</text><circle cx=\"98\" cy=\"82\" r=\"4.8\" fill=\"#dc2626\"/><circle cx=\"98\" cy=\"64\" r=\"4.8\" fill=\"#dc2626\"/><circle cx=\"98\" cy=\"46\" r=\"4.8\" fill=\"#dc2626\"/><rect x=\"86\" y=\"36\" width=\"24\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><line x1=\"140\" y1=\"96\" x2=\"140\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"140\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">9</text><circle cx=\"140\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"140\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"182\" y1=\"96\" x2=\"182\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"182\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">10</text><circle cx=\"182\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"224\" y1=\"96\" x2=\"224\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"224\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">11</text><circle cx=\"224\" cy=\"82\" r=\"4.8\" fill=\"#dc2626\"/><circle cx=\"224\" cy=\"64\" r=\"4.8\" fill=\"#dc2626\"/><circle cx=\"224\" cy=\"46\" r=\"4.8\" fill=\"#dc2626\"/><rect x=\"212\" y=\"36\" width=\"24\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><line x1=\"266\" y1=\"96\" x2=\"266\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">12</text><circle cx=\"266\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><text x=\"160\" y=\"145\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Tallest columns are at 8 (3 dots) and 11 (3 dots)</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the highest frequency: \\(3\\) dots.",
+              "work": "\\(\\text{Highest frequency} = 3\\)"
+            },
+            {
+              "explain": "Both age \\(8\\) and age \\(11\\) have \\(3\\) dots, so the data set is bimodal.",
+              "work": "\\(\\text{Modes} = 8 \\text{ and } 11\\)"
+            },
+            {
+              "explain": "Therefore, the mode is \\(8\\) and \\(11\\).",
+              "work": "\\(\\text{Answer: } 8 \\text{ and } 11\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 130\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"96\" x2=\"294\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"26,96 34,92 34,100\" fill=\"#0f172a\"/><polygon points=\"294,96 286,92 286,100\" fill=\"#0f172a\"/><line x1=\"56\" y1=\"96\" x2=\"56\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"56\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><line x1=\"98\" y1=\"96\" x2=\"98\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"98\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"98\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"98\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"98\" cy=\"46\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"140\" y1=\"96\" x2=\"140\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"140\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">9</text><circle cx=\"140\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"140\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"182\" y1=\"96\" x2=\"182\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"182\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">10</text><circle cx=\"182\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"224\" y1=\"96\" x2=\"224\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"224\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">11</text><circle cx=\"224\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"224\" cy=\"64\" r=\"4.8\" fill=\"#1e293b\"/><circle cx=\"224\" cy=\"46\" r=\"4.8\" fill=\"#1e293b\"/><line x1=\"266\" y1=\"96\" x2=\"266\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"266\" y=\"120\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\">12</text><circle cx=\"266\" cy=\"82\" r=\"4.8\" fill=\"#1e293b\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two different brands of batteries (Dynamo and Energy Plus) were tested to determine which lasted longer. The results, to the nearest hour, are shown in the back-to-back stem-and-leaf plot. Which battery is better based on average lifespan (mean and median)?",
+          "options": [
+            "Dynamo is better, with a higher median (31 h vs 26 h) and higher mean (30.1 h vs 26.2 h).",
+            "Energy Plus is better, with a higher median (31 h vs 26 h) and higher mean (30.1 h vs 26.2 h).",
+            "Energy Plus is better, because it has more batteries tested (13 vs 12).",
+            "Both batteries are equal, because both have a median of 28 hours."
+          ],
+          "answer": 0,
+          "hint": "Read Dynamo leaves outward from the centre stem (11, 14, 23, 26, 28, 28, 34, 34, 35, 36, 42, 50) and compare its median (12 values -> average of 6th and 7th) with Energy Plus (13 values -> 7th value).",
+          "keyPoints": [
+            {
+              "text": "which lasted longer",
+              "note": "Higher mean and higher median indicate longer average battery life."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List Dynamo's \\(12\\) lifetimes from the left side (reading outward from the stem): \\(11, 14, 23, 26, 28, 28, 34, 34, 35, 36, 42, 50\\).",
+              "work": "\\(\\text{Dynamo } (n=12): \\text{Sum} = 361 \\implies \\text{Mean} \\approx 30.1\\text{ h}\\)"
+            },
+            {
+              "explain": "Find Dynamo's median (average of 6th value \\(28\\) and 7th value \\(34\\)): \\(\\dfrac{28 + 34}{2} = 31\\text{ h}\\).",
+              "work": "\\(\\text{Dynamo Median} = \\dfrac{28 + 34}{2} = 31\\text{ h}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 210\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"108\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">Dynamo</text><text x=\"252\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">Energy Plus</text><line x1=\"28\" y1=\"36\" x2=\"332\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"162\" y1=\"14\" x2=\"162\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"194\" y1=\"14\" x2=\"194\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"178\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"148\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"126\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"208\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"230\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"252\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"274\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"296\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"178\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"148\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"126\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"104\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"82\" cy=\"77\" r=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"82\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">8</text><text x=\"208\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><circle cx=\"230\" cy=\"77\" r=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.8\"/><text x=\"230\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b45309\">6</text><text x=\"252\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"178\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><circle cx=\"148\" cy=\"101\" r=\"10\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><text x=\"148\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">4</text><text x=\"126\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"104\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"82\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"208\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"230\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"252\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"178\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"148\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"208\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"230\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"178\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"148\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"180\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Dynamo median = (28 + 34)/2 = 31 h (blue); Energy Plus median = 26 h (amber)</text></svg>"
+              }
+            },
+            {
+              "explain": "List Energy Plus's \\(13\\) lifetimes: \\(13, 13, 17, 17, 18, 25, 26, 29, 32, 34, 36, 40, 41\\). Its sum is \\(341\\), mean is \\(\\dfrac{341}{13} \\approx 26.2\\text{ h}\\), and median (7th value) is \\(26\\text{ h}\\).",
+              "work": "\\(\\text{Energy Plus } (n=13): \\text{Mean} \\approx 26.2\\text{ h}, \\; \\text{Median} = 26\\text{ h}\\)"
+            },
+            {
+              "explain": "Since Dynamo has both a higher mean (\\(30.1\\text{ h} > 26.2\\text{ h}\\)) and a higher median (\\(31\\text{ h} > 26\\text{ h}\\)), Dynamo lasts longer on average.",
+              "work": "\\(\\text{Dynamo is better (31 h vs 26 h median)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 182\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"182\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"108\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">Dynamo</text><text x=\"252\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">Energy Plus</text><line x1=\"28\" y1=\"36\" x2=\"332\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"162\" y1=\"14\" x2=\"162\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"194\" y1=\"14\" x2=\"194\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"178\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"148\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"126\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"208\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"230\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"252\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"274\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"296\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"178\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"148\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"126\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"104\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"82\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"208\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"230\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"252\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"178\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"148\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"126\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"104\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"82\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"208\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"230\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"252\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"178\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"148\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"208\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"230\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"178\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"148\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text></svg>"
+          }
         }
       ]
     }

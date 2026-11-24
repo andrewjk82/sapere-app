@@ -1477,6 +1477,52 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to choose the equation that shows how the sides of this right-angled triangle relate to each other.",
+          "options": [
+            "\\(34^2 = 30^2 + y^2\\)",
+            "\\(y^2 = 34^2 + 30^2\\)",
+            "\\(30^2 = 34^2 + y^2\\)",
+            "\\(34 = 30 + y\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the side directly OPPOSITE the right-angle square (34 m) — that is the hypotenuse c! Pythagoras' theorem says c² = a² + b².",
+          "keyPoints": [
+            {
+              "text": "Pythagoras' theorem",
+              "note": "Hypotenuse squared equals the sum of the squares of the two shorter sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the right-angle symbol and identify the side directly opposite it: \\(34\\text{ m}\\) is the hypotenuse (longest side, \\(c\\)).",
+              "work": "\\(c = 34\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"46,128 190,32 241.2,108.8\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"179.2,39.2 186.4,50.0 197.2,42.8\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"46\" y1=\"128\" x2=\"241.2\" y2=\"108.8\" stroke=\"#dc2626\" stroke-width=\"4\"/><line x1=\"46\" y1=\"128\" x2=\"190\" y2=\"32\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"190\" y1=\"32\" x2=\"241.2\" y2=\"108.8\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"98\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">30 m</text><text x=\"234\" y=\"62\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">y m</text><text x=\"156\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">34 m</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Hypotenuse 34 m (red) is opposite the right angle; legs 30 m & y m (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the two shorter sides (legs) that meet at the right angle: \\(a = 30\\text{ m}\\) and \\(b = y\\text{ m}\\).",
+              "work": "\\(a = 30, \\quad b = y\\)"
+            },
+            {
+              "explain": "Substitute \\(c = 34\\), \\(a = 30\\), and \\(b = y\\) into Pythagoras' theorem \\(c^2 = a^2 + b^2\\).",
+              "work": "\\(34^2 = 30^2 + y^2\\)"
+            },
+            {
+              "explain": "Therefore, the correct Pythagorean equation is \\(34^2 = 30^2 + y^2\\).",
+              "work": "\\(\\text{Answer: } 34^2 = 30^2 + y^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 164\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"46,128 190,32 241.2,108.8\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"179.2,39.2 186.4,50.0 197.2,42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"98\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 m</text><text x=\"234\" y=\"62\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y m</text><text x=\"156\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">34 m</text></svg>"
+          }
         }
       ]
     },
@@ -1831,6 +1877,52 @@
             "sourceQuestion": "Section 1 Q1(c)",
             "sourceMarks": 3,
             "page": 2
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q1ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use Pythagoras' theorem to find the length of the unknown side \\(y\\) in this right-angled triangle.",
+          "options": [
+            "\\(4\\text{ m}\\)",
+            "\\(16\\text{ m}\\)",
+            "\\(20\\text{ m}\\)",
+            "\\(45.3\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "Because y is a SHORTER side (not the hypotenuse 34 m), subtract the squares: y² = 34² - 30², then take the square root.",
+          "keyPoints": [
+            {
+              "text": "unknown side \\(y\\)",
+              "note": "For a shorter side: y² = c² - a² = 34² - 30²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with Pythagoras' theorem from the right-angled triangle: \\(34^2 = 30^2 + y^2\\).",
+              "work": "\\(34^2 = 30^2 + y^2\\)"
+            },
+            {
+              "explain": "Rearrange to isolate the shorter side \\(y^2\\) by subtracting \\(30^2\\) from both sides.",
+              "work": "\\(y^2 = 34^2 - 30^2\\)"
+            },
+            {
+              "explain": "Calculate the squares: \\(34^2 = 1156\\) and \\(30^2 = 900\\), then subtract.",
+              "work": "\\(y^2 = 1156 - 900 = 256\\)"
+            },
+            {
+              "explain": "Take the positive square root (since length must be positive): \\(y = \\sqrt{256} = 16\\text{ m}\\).",
+              "work": "\\(y = \\sqrt{256} = 16\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"46,128 190,32 241.2,108.8\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"179.2,39.2 186.4,50.0 197.2,42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"46\" y1=\"128\" x2=\"241.2\" y2=\"108.8\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><line x1=\"190\" y1=\"32\" x2=\"241.2\" y2=\"108.8\" stroke=\"#16a34a\" stroke-width=\"4\"/><text x=\"98\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 m</text><text x=\"234\" y=\"62\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#15803d\">y = 16 m</text><text x=\"156\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">34 m</text><text x=\"160\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Unknown shorter side y = 16 m (highlighted in green)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 164\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"46,128 190,32 241.2,108.8\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"179.2,39.2 186.4,50.0 197.2,42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"98\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 m</text><text x=\"234\" y=\"62\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y m</text><text x=\"156\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">34 m</text></svg>"
           }
         }
       ]

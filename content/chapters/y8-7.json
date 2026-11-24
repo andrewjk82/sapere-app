@@ -4196,6 +4196,46 @@
             "sourceMarks": 1,
             "page": 6
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Karen has seen a second-hand car she wants to buy. She organises a loan through the bank, borrowing \\(\\$5600\\) for \\(3\\) years at \\(11.5\\%\\text{ p.a.}\\) simple interest. How much interest needs to be paid?",
+          "options": [
+            "\\(\\$644\\)",
+            "\\(\\$1932\\)",
+            "\\(\\$7532\\)",
+            "\\(\\$1848\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the simple interest formula I = P × r × n, with P = 5600, r = 0.115 (11.5%), and n = 3 years.",
+          "keyPoints": [
+            {
+              "text": "simple interest",
+              "note": "Use I = P × r × n with r as a decimal (0.115)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the simple interest formula \\(I = P \\times r \\times n\\) and identify \\(P = 5600\\), \\(r = 11.5\\% = 0.115\\), and \\(n = 3\\).",
+              "work": "\\(I = P \\times r \\times n\\)"
+            },
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(I = 5600 \\times 0.115 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply step by step: \\(5600 \\times 0.115 = 644\\) (interest for 1 year), then \\(644 \\times 3 = 1932\\).",
+              "work": "\\(I = 644 \\times 3 = \\$1932\\)"
+            },
+            {
+              "explain": "Therefore, Karen needs to pay \\(\\$1932\\) in simple interest.",
+              "work": "\\(\\text{Answer: } \\$1932\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4597,6 +4637,86 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q1bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A new plasma television was valued at \\(\\$3999\\). During an end of year sale it was discounted by \\(9\\%\\). What was the discount?",
+          "options": [
+            "\\(\\$35.99\\)",
+            "\\(\\$359.91\\)",
+            "\\(\\$360.00\\)",
+            "\\(\\$399.90\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 9% to the decimal 0.09 and multiply by $3999.",
+          "keyPoints": [
+            {
+              "text": "discounted by \\(9\\%\\)",
+              "note": "Discount = 9% of $3999 = 0.09 × 3999."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(9\\%\\) to a decimal by dividing by \\(100\\): \\(9\\% = 0.09\\).",
+              "work": "\\(9\\% = 0.09\\)"
+            },
+            {
+              "explain": "Multiply the original price \\(\\$3999\\) by \\(0.09\\).",
+              "work": "\\(\\text{Discount} = \\$3999 \\times 0.09\\)"
+            },
+            {
+              "explain": "Calculate the product: \\(3999 \\times 0.09 = 359.91\\).",
+              "work": "\\(\\text{Discount} = \\$359.91\\)"
+            },
+            {
+              "explain": "Therefore, the discount was \\(\\$359.91\\).",
+              "work": "\\(\\text{Answer: } \\$359.91\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q1bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A new plasma television was valued at \\(\\$3999\\) and discounted by \\(9\\%\\) (a discount of \\(\\$359.91\\)). What was the sale price?",
+          "options": [
+            "\\(\\$3639.09\\)",
+            "\\(\\$3639.91\\)",
+            "\\(\\$3640.09\\)",
+            "\\(\\$4358.91\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the discount ($359.91) from the original price ($3999), OR multiply $3999 by 0.91. Watch the cents carefully: 3999.00 - 359.91!",
+          "keyPoints": [
+            {
+              "text": "sale price",
+              "note": "Sale price = Original price - Discount = $3999 - $359.91."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the sale price formula: \\(\\text{Sale price} = \\text{Original price} - \\text{Discount}\\).",
+              "work": "\\(\\text{Sale price} = \\$3999.00 - \\$359.91\\)"
+            },
+            {
+              "explain": "Subtract the cents first: \\(1.00 - 0.91 = 0.09\\), leaving \\(3998 - 359\\) for the dollars.",
+              "work": "\\(3998 - 359 = 3639\\text{ dollars, } 09\\text{ cents}\\)"
+            },
+            {
+              "explain": "Check using the multiplier method (\\(100\\% - 9\\% = 91\\% = 0.91\\)): \\(3999 \\times 0.91 = 3639.09\\).",
+              "work": "\\(\\$3999 \\times 0.91 = \\$3639.09\\)"
+            },
+            {
+              "explain": "Therefore, the sale price of the television was \\(\\$3639.09\\).",
+              "work": "\\(\\text{Answer: } \\$3639.09\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5217,6 +5337,126 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q1ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A painting is purchased for \\(\\$8000\\) and sold for \\(\\$10\\,000\\). What is the profit made on the painting?",
+          "options": [
+            "\\(\\$1000\\)",
+            "\\(\\$2000\\)",
+            "\\(\\$8000\\)",
+            "\\(\\$18\\,000\\)"
+          ],
+          "answer": 1,
+          "hint": "Profit = Selling price - Cost price.",
+          "keyPoints": [
+            {
+              "text": "profit",
+              "note": "Subtract the purchase price ($8000) from the selling price ($10 000)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the cost price (\\(\\$8000\\)) and the selling price (\\(\\$10\\,000\\)).",
+              "work": "\\(\\text{Cost} = \\$8000, \\quad \\text{Selling price} = \\$10\\,000\\)"
+            },
+            {
+              "explain": "Use the profit formula: \\(\\text{Profit} = \\text{Selling price} - \\text{Cost price}\\).",
+              "work": "\\(\\text{Profit} = \\$10\\,000 - \\$8000\\)"
+            },
+            {
+              "explain": "Subtract to find the profit: \\(10\\,000 - 8000 = 2000\\).",
+              "work": "\\(\\text{Profit} = \\$2000\\)"
+            },
+            {
+              "explain": "Therefore, the profit made on the painting is \\(\\$2000\\).",
+              "work": "\\(\\text{Answer: } \\$2000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q1aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A painting is purchased for \\(\\$8000\\) and sold for \\(\\$10\\,000\\) (a profit of \\(\\$2000\\)). What is the profit as a percentage of the cost price?",
+          "options": [
+            "\\(20\\%\\)",
+            "\\(25\\%\\)",
+            "\\(80\\%\\)",
+            "\\(125\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "Percentage profit = (Profit ÷ Cost price) × 100%. Be sure to divide by the COST price ($8000), not the selling price!",
+          "keyPoints": [
+            {
+              "text": "percentage of the cost price",
+              "note": "Divide $2000 by $8000, then multiply by 100%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the percentage profit formula using the cost price as the denominator.",
+              "work": "\\(\\%\\text{ Profit} = \\dfrac{\\text{Profit}}{\\text{Cost price}} \\times 100\\%\\)"
+            },
+            {
+              "explain": "Substitute \\(\\text{Profit} = \\$2000\\) and \\(\\text{Cost price} = \\$8000\\).",
+              "work": "\\(\\dfrac{2000}{8000} \\times 100\\%\\)"
+            },
+            {
+              "explain": "Simplify the fraction \\(\\dfrac{2000}{8000} = \\dfrac{1}{4} = 0.25\\), then multiply by \\(100\\%\\).",
+              "work": "\\(0.25 \\times 100\\% = 25\\%\\)"
+            },
+            {
+              "explain": "Therefore, the profit is \\(25\\%\\) of the cost price.",
+              "work": "\\(\\text{Answer: } 25\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Kaia is paid \\(\\$735\\) per week. At Christmas she takes her annual \\(4\\) weeks leave. If she receives \\(17.5\\%\\) annual leave loading, calculate Kaia's total holiday pay to the nearest dollar.",
+          "options": [
+            "\\(\\$515\\)",
+            "\\(\\$2940\\)",
+            "\\(\\$3455\\)",
+            "\\(\\$3500\\)"
+          ],
+          "answer": 2,
+          "hint": "Total holiday pay = 4 weeks normal pay + 17.5% of that 4 weeks normal pay. First find 4 × $735, then multiply by 1.175 (or add 17.5%).",
+          "keyPoints": [
+            {
+              "text": "total holiday pay",
+              "note": "Include BOTH the 4 weeks normal wage AND the 17.5% leave loading."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate Kaia's normal pay for \\(4\\) weeks: \\(4 \\times \\$735 = \\$2940\\).",
+              "work": "\\(4 \\times \\$735 = \\$2940\\)"
+            },
+            {
+              "explain": "Calculate the \\(17.5\\%\\) annual leave loading on \\(\\$2940\\): \\(0.175 \\times \\$2940 = \\$514.50\\).",
+              "work": "\\(\\text{Leave loading} = \\$2940 \\times 0.175 = \\$514.50\\)"
+            },
+            {
+              "explain": "Add the leave loading to her \\(4\\) weeks normal pay: \\(\\$2940 + \\$514.50 = \\$3454.50\\).",
+              "work": "\\(\\$2940 + \\$514.50 = \\$3454.50\\)"
+            },
+            {
+              "explain": "Round \\(\\$3454.50\\) to the nearest dollar: \\(\\$3455\\).",
+              "work": "\\(\\text{Total holiday pay} \\approx \\$3455\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5489,6 +5729,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the GST on an item marked as \\(\\$1980\\) including \\(10\\%\\) GST.",
+          "options": [
+            "\\(\\$180\\)",
+            "\\(\\$198\\)",
+            "\\(\\$200\\)",
+            "\\(\\$1800\\)"
+          ],
+          "answer": 0,
+          "hint": "The marked price ALREADY includes 10% GST, so $1980 represents 110% (not 100%)! Divide $1980 by 11 to find the 10% GST.",
+          "keyPoints": [
+            {
+              "text": "including \\(10\\%\\) GST",
+              "note": "Price including 10% GST = 110%, so GST = Price ÷ 11."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise that the marked price equals \\(100\\%\\) (pre-GST price) \\(+ 10\\%\\) (GST) \\(= 110\\%\\).",
+              "work": "\\(110\\% = \\$1980\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(11\\) to find \\(10\\%\\) (which is the GST).",
+              "work": "\\(10\\% = \\dfrac{\\$1980}{11}\\)"
+            },
+            {
+              "explain": "Compute the division: \\(1980 \\div 11 = 180\\).",
+              "work": "\\(\\text{GST} = \\$180\\)"
+            },
+            {
+              "explain": "Check: pre-GST price is \\(\\$1800\\), plus \\(10\\%\\) (\\(\\$180\\)) gives \\(\\$1980\\). Correct!",
+              "work": "\\(\\text{Answer: } \\$180\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5644,6 +5924,86 @@
               }
             }
           ]
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q5i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Elizabeth invests \\(\\$5600\\) at \\(3.5\\%\\text{ p.a.}\\) for \\(2\\) years compounding annually. Using the compound interest formula, calculate the value of her investment at the end of the second year.",
+          "options": [
+            "\\(\\$5796.00\\)",
+            "\\(\\$5992.00\\)",
+            "\\(\\$5998.86\\)",
+            "\\(\\$6000.00\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the compound interest formula A = P(1 + r)^n with P = 5600, r = 0.035, and n = 2.",
+          "keyPoints": [
+            {
+              "text": "compounding annually",
+              "note": "Use A = P(1 + r)^n with r = 0.035 and n = 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the compound interest formula \\(A = P(1 + r)^n\\) and list \\(P = 5600\\), \\(r = 3.5\\% = 0.035\\), \\(n = 2\\).",
+              "work": "\\(A = 5600(1 + 0.035)^2\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets: \\(1 + 0.035 = 1.035\\).",
+              "work": "\\(A = 5600 \\times (1.035)^2\\)"
+            },
+            {
+              "explain": "Square \\(1.035\\) first: \\(1.035^2 = 1.071225\\), then multiply by \\(5600\\).",
+              "work": "\\(A = 5600 \\times 1.071225 = 5998.86\\)"
+            },
+            {
+              "explain": "Therefore, the value of Elizabeth's investment after \\(2\\) years is \\(\\$5998.86\\).",
+              "work": "\\(\\text{Answer: } \\$5998.86\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q5ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Elizabeth invests \\(\\$5600\\) at \\(3.5\\%\\text{ p.a.}\\) for \\(2\\) years compounding annually, reaching a final value of \\(\\$5998.86\\). How much interest has been earned?",
+          "options": [
+            "\\(\\$196.00\\)",
+            "\\(\\$392.00\\)",
+            "\\(\\$398.86\\)",
+            "\\(\\$408.86\\)"
+          ],
+          "answer": 2,
+          "hint": "Compound interest earned = Final Amount (A) - Initial Principal (P).",
+          "keyPoints": [
+            {
+              "text": "How much interest",
+              "note": "Subtract the original $5600 principal from the final amount $5998.86."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the formula relating interest earned to final amount and principal.",
+              "work": "\\(\\text{Interest} = A - P\\)"
+            },
+            {
+              "explain": "Substitute \\(A = \\$5998.86\\) and \\(P = \\$5600\\).",
+              "work": "\\(\\text{Interest} = \\$5998.86 - \\$5600\\)"
+            },
+            {
+              "explain": "Subtract carefully: \\(5998.86 - 5600 = 398.86\\).",
+              "work": "\\(\\text{Interest} = \\$398.86\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\$398.86\\) of compound interest has been earned.",
+              "work": "\\(\\text{Answer: } \\$398.86\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -7202,6 +7562,224 @@
             "marks": 5,
             "part": "",
             "origin": "exam-import"
+          }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q2ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Nicki is a junior and works a \\(36\\)-hour week at a pay rate of \\(\\$16.80\\) per hour. What is her total wage for a week?",
+          "options": [
+            "\\(\\$576.00\\)",
+            "\\(\\$604.80\\)",
+            "\\(\\$612.80\\)",
+            "\\(\\$638.40\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the number of hours worked (36) by her hourly pay rate ($16.80).",
+          "keyPoints": [
+            {
+              "text": "36\\)-hour week",
+              "note": "Weekly wage = Hours worked × Hourly rate."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the formula for weekly wage: \\(\\text{Wage} = \\text{Hours} \\times \\text{Hourly rate}\\).",
+              "work": "\\(\\text{Wage} = 36 \\times \\$16.80\\)"
+            },
+            {
+              "explain": "Multiply \\(36 \\times 16.80\\) (e.g. \\(36 \\times 16 = 576\\) and \\(36 \\times 0.80 = 28.80\\)).",
+              "work": "\\(576 + 28.80 = 604.80\\)"
+            },
+            {
+              "explain": "Write the dollar amount to two decimal places.",
+              "work": "\\(\\$604.80\\)"
+            },
+            {
+              "explain": "Therefore, Nicki's total weekly wage is \\(\\$604.80\\).",
+              "work": "\\(\\text{Answer: } \\$604.80\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q2aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Nicki's normal pay rate is \\(\\$16.80\\) per hour. How much extra will she earn if she works an additional \\(5\\) hours at time-and-a-half?",
+          "options": [
+            "\\(\\$84.00\\)",
+            "\\(\\$126.00\\)",
+            "\\(\\$168.00\\)",
+            "\\(\\$109.20\\)"
+          ],
+          "answer": 1,
+          "hint": "Time-and-a-half means 1.5 times the normal hourly rate. Multiply $16.80 × 1.5 × 5.",
+          "keyPoints": [
+            {
+              "text": "time-and-a-half",
+              "note": "Time-and-a-half multiplier is 1.5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find Nicki's time-and-a-half hourly rate by multiplying \\(\\$16.80\\) by \\(1.5\\).",
+              "work": "\\(\\$16.80 \\times 1.5 = \\$25.20\\text{ per hour}\\)"
+            },
+            {
+              "explain": "Multiply the overtime hourly rate by the \\(5\\) additional hours.",
+              "work": "\\(\\text{Extra earnings} = \\$25.20 \\times 5\\)"
+            },
+            {
+              "explain": "Calculate \\(25.20 \\times 5 = 126.00\\).",
+              "work": "\\(\\$25.20 \\times 5 = \\$126.00\\)"
+            },
+            {
+              "explain": "Therefore, she will earn an extra \\(\\$126.00\\).",
+              "work": "\\(\\text{Answer: } \\$126.00\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q3ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Peta has a part-time job washing dishes at a local café. She earns \\(\\$480.60\\) each week and last tax year worked \\(42\\) weeks. Calculate her total earnings for the tax year, to the nearest dollar.",
+          "options": [
+            "\\(\\$20\\,185\\)",
+            "\\(\\$20\\,186\\)",
+            "\\(\\$24\\,991\\)",
+            "\\(\\$19\\,224\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply her weekly pay ($480.60) by the number of weeks she worked (42), then round to the nearest whole dollar.",
+          "keyPoints": [
+            {
+              "text": "worked \\(42\\) weeks",
+              "note": "Total earnings = Weekly pay × 42 weeks (NOT 52 weeks!)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify her weekly pay (\\(\\$480.60\\)) and the number of weeks worked (\\(42\\)).",
+              "work": "\\(\\text{Total earnings} = \\$480.60 \\times 42\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 228\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"136\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"148\" y=\"12\" width=\"280\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"20\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Taxable income</text><text x=\"156\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Tax on this income</text><rect x=\"12\" y=\"36\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"36\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0–$18 200</text><text x=\"156\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Nil</text><rect x=\"12\" y=\"60\" width=\"136\" height=\"24\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"60\" width=\"280\" height=\"24\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">$18 201–$37 000</text><text x=\"156\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">19c for each dollar over $18 200</text><rect x=\"12\" y=\"84\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"84\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$37 001–$80 000</text><text x=\"156\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"12\" y=\"108\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"108\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$80 001–$180 000</text><text x=\"156\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"12\" y=\"132\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"132\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$180 001 and over</text><text x=\"156\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$54 547 plus 45c for each $1 over $180 000</text><rect x=\"12\" y=\"156\" width=\"416\" height=\"36\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"171\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Plus Medicare levy of 1.5% for incomes less than $50 000 and</text><text x=\"20\" y=\"185\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2.5% of taxable incomes over $50 000</text><text x=\"220\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Her annual income falls in the $18 201–$37 000 bracket</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(480.60 \\times 42 = 20\\,185.20\\).",
+              "work": "\\(\\$480.60 \\times 42 = \\$20\\,185.20\\)"
+            },
+            {
+              "explain": "Round \\(\\$20\\,185.20\\) to the nearest dollar: since \\(.20 < .50\\), round down to \\(\\$20\\,185\\).",
+              "work": "\\(\\$20\\,185.20 \\approx \\$20\\,185\\)"
+            },
+            {
+              "explain": "Therefore, Peta's total earnings for the tax year were \\(\\$20\\,185\\).",
+              "work": "\\(\\text{Answer: } \\$20\\,185\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 204\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"204\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"136\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"148\" y=\"12\" width=\"280\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"20\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Taxable income</text><text x=\"156\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Tax on this income</text><rect x=\"12\" y=\"36\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"36\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0–$18 200</text><text x=\"156\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Nil</text><rect x=\"12\" y=\"60\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"60\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$18 201–$37 000</text><text x=\"156\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">19c for each dollar over $18 200</text><rect x=\"12\" y=\"84\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"84\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$37 001–$80 000</text><text x=\"156\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"12\" y=\"108\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"108\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$80 001–$180 000</text><text x=\"156\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"12\" y=\"132\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"132\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$180 001 and over</text><text x=\"156\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$54 547 plus 45c for each $1 over $180 000</text><rect x=\"12\" y=\"156\" width=\"416\" height=\"36\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"171\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Plus Medicare levy of 1.5% for incomes less than $50 000 and</text><text x=\"20\" y=\"185\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2.5% of taxable incomes over $50 000</text></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q3cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Peta's total taxable income for the year was \\(\\$20\\,185\\). Using the tax table, calculate the amount of income tax she is supposed to pay, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$377\\)",
+            "\\(\\$378\\)",
+            "\\(\\$3835\\)",
+            "\\(\\$1985\\)"
+          ],
+          "answer": 0,
+          "hint": "$20 185 lies in the $18 201–$37 000 bracket (\"19c for each dollar over $18 200\"). Subtract $18 200 from $20 185 first, then multiply by $0.19.",
+          "keyPoints": [
+            {
+              "text": "income tax",
+              "note": "Pay 19c ($0.19) ONLY on the amount OVER $18 200."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate \\(\\$20\\,185\\) in the tax table: it lies in the second bracket (\\(\\$18\\,201\\)–\\(\\$37\\,000\\)), where tax is \\(19\\text{c}\\) for each dollar over \\(\\$18\\,200\\).",
+              "work": "\\(\\text{Bracket: } \\$18\\,201\\text{–}\\$37\\,000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 228\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"136\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"148\" y=\"12\" width=\"280\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"20\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Taxable income</text><text x=\"156\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Tax on this income</text><rect x=\"12\" y=\"36\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"36\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0–$18 200</text><text x=\"156\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Nil</text><rect x=\"12\" y=\"60\" width=\"136\" height=\"24\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"60\" width=\"280\" height=\"24\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">$18 201–$37 000</text><text x=\"156\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#b45309\">19c for each dollar over $18 200</text><rect x=\"12\" y=\"84\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"84\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$37 001–$80 000</text><text x=\"156\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"12\" y=\"108\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"108\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$80 001–$180 000</text><text x=\"156\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"12\" y=\"132\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"132\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$180 001 and over</text><text x=\"156\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$54 547 plus 45c for each $1 over $180 000</text><rect x=\"12\" y=\"156\" width=\"416\" height=\"36\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"171\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Plus Medicare levy of 1.5% for incomes less than $50 000 and</text><text x=\"20\" y=\"185\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2.5% of taxable incomes over $50 000</text><text x=\"220\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Highlighted bracket: 19c for each dollar over $18 200</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the amount over \\(\\$18\\,200\\): \\(\\$20\\,185 - \\$18\\,200 = \\$1985\\).",
+              "work": "\\(\\$20\\,185 - \\$18\\,200 = \\$1985\\)"
+            },
+            {
+              "explain": "Multiply \\(\\$1985\\) by \\(\\$0.19\\) (19 cents per dollar): \\(1985 \\times 0.19 = 377.15\\).",
+              "work": "\\(\\text{Tax} = \\$1985 \\times 0.19 = \\$377.15\\)"
+            },
+            {
+              "explain": "Round \\(\\$377.15\\) to the nearest dollar: \\(\\$377\\).",
+              "work": "\\(\\text{Income tax} \\approx \\$377\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 204\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"204\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"136\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"148\" y=\"12\" width=\"280\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"20\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Taxable income</text><text x=\"156\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Tax on this income</text><rect x=\"12\" y=\"36\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"36\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0–$18 200</text><text x=\"156\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Nil</text><rect x=\"12\" y=\"60\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"60\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$18 201–$37 000</text><text x=\"156\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">19c for each dollar over $18 200</text><rect x=\"12\" y=\"84\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"84\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$37 001–$80 000</text><text x=\"156\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"12\" y=\"108\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"108\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$80 001–$180 000</text><text x=\"156\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"12\" y=\"132\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"132\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$180 001 and over</text><text x=\"156\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$54 547 plus 45c for each $1 over $180 000</text><rect x=\"12\" y=\"156\" width=\"416\" height=\"36\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"171\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Plus Medicare levy of 1.5% for incomes less than $50 000 and</text><text x=\"20\" y=\"185\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2.5% of taxable incomes over $50 000</text></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p1-s2-q3ciii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Peta's taxable income for the year was \\(\\$20\\,185\\). Using the tax table, calculate the Medicare levy she is required to pay on her taxable income, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$303\\)",
+            "\\(\\$505\\)",
+            "\\(\\$30\\)",
+            "\\(\\$202\\)"
+          ],
+          "answer": 0,
+          "hint": "Since $20 185 is less than $50 000, the Medicare levy rate is 1.5% of her taxable income ($20 185 × 0.015).",
+          "keyPoints": [
+            {
+              "text": "Medicare levy",
+              "note": "Medicare levy is 1.5% of taxable income for incomes under $50 000."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the Medicare levy rule at the bottom of the table: since \\(\\$20\\,185 < \\$50\\,000\\), the rate is \\(1.5\\%\\).",
+              "work": "\\(\\text{Medicare levy rate} = 1.5\\% = 0.015\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 228\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"228\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"136\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"148\" y=\"12\" width=\"280\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"20\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Taxable income</text><text x=\"156\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Tax on this income</text><rect x=\"12\" y=\"36\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"36\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0–$18 200</text><text x=\"156\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Nil</text><rect x=\"12\" y=\"60\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"60\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$18 201–$37 000</text><text x=\"156\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">19c for each dollar over $18 200</text><rect x=\"12\" y=\"84\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"84\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$37 001–$80 000</text><text x=\"156\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"12\" y=\"108\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"108\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$80 001–$180 000</text><text x=\"156\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"12\" y=\"132\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"132\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$180 001 and over</text><text x=\"156\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$54 547 plus 45c for each $1 over $180 000</text><rect x=\"12\" y=\"156\" width=\"416\" height=\"36\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"20\" y=\"171\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1d4ed8\">Plus Medicare levy of 1.5% for incomes less than $50 000 and</text><text x=\"20\" y=\"185\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1d4ed8\">2.5% of taxable incomes over $50 000</text><text x=\"220\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Income < $50 000 -> Medicare levy = 1.5% of taxable income</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply her taxable income \\(\\$20\\,185\\) by \\(0.015\\).",
+              "work": "\\(\\text{Medicare levy} = \\$20\\,185 \\times 0.015\\)"
+            },
+            {
+              "explain": "Compute the product: \\(20\\,185 \\times 0.015 = 302.775\\).",
+              "work": "\\(\\$302.775\\)"
+            },
+            {
+              "explain": "Round \\(\\$302.775\\) to the nearest dollar: \\(\\$303\\).",
+              "work": "\\(\\text{Medicare levy} \\approx \\$303\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 204\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"204\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"136\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><rect x=\"148\" y=\"12\" width=\"280\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"20\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Taxable income</text><text x=\"156\" y=\"28\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#0f172a\">Tax on this income</text><rect x=\"12\" y=\"36\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"36\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0–$18 200</text><text x=\"156\" y=\"52\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Nil</text><rect x=\"12\" y=\"60\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"60\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$18 201–$37 000</text><text x=\"156\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">19c for each dollar over $18 200</text><rect x=\"12\" y=\"84\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"84\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$37 001–$80 000</text><text x=\"156\" y=\"100\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$3 572 plus 32.5c for each $1 over $37 000</text><rect x=\"12\" y=\"108\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"108\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$80 001–$180 000</text><text x=\"156\" y=\"124\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$17 547 plus 37c for each $1 over $80 000</text><rect x=\"12\" y=\"132\" width=\"136\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"148\" y=\"132\" width=\"280\" height=\"24\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$180 001 and over</text><text x=\"156\" y=\"148\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">$54 547 plus 45c for each $1 over $180 000</text><rect x=\"12\" y=\"156\" width=\"416\" height=\"36\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"20\" y=\"171\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">Plus Medicare levy of 1.5% for incomes less than $50 000 and</text><text x=\"20\" y=\"185\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2.5% of taxable incomes over $50 000</text></svg>"
           }
         }
       ]

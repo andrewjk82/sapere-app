@@ -1528,6 +1528,46 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs22-y7-t2-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(\\dfrac{m}{3} = 10\\).",
+          "options": [
+            "\\(m = \\dfrac{10}{3}\\)",
+            "\\(m = 7\\)",
+            "\\(m = 13\\)",
+            "\\(m = 30\\)"
+          ],
+          "answer": 3,
+          "hint": "The opposite (inverse) of dividing by 3 is multiplying by 3. Multiply both sides by 3.",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Multiply both sides by 3 to cancel the denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise that \\(\\dfrac{m}{3}\\) means \\(m\\) divided by \\(3\\).",
+              "work": "\\(\\dfrac{m}{3} = 10\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(3\\) to undo dividing by \\(3\\).",
+              "work": "\\(\\dfrac{m}{3} \\times 3 = 10 \\times 3\\)"
+            },
+            {
+              "explain": "Simplify both sides: the \\(3\\)s cancel on the left, and \\(10 \\times 3 = 30\\) on the right.",
+              "work": "\\(m = 30\\)"
+            },
+            {
+              "explain": "Check by substituting \\(m = 30\\): \\(\\dfrac{30}{3} = 10\\). Correct!",
+              "work": "\\(m = 30\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2921,6 +2961,236 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "t3-2022-y7-pa-q11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(7+x=12\\).",
+          "options": [
+            "\\(x=5\\)",
+            "\\(x=19\\)",
+            "\\(x=-5\\)",
+            "\\(x=7\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo the addition of 7 by subtracting 7 from both sides.",
+          "steps": [
+            {
+              "explain": "Subtract 7 from both sides.",
+              "work": "\\(7+x-7=12-7\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x=5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(4+2x=23\\).",
+          "options": [
+            "\\(x=9.5\\)",
+            "\\(x=13.5\\)",
+            "\\(x=19\\)",
+            "\\(x=8.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Remove 4 first, then divide by the coefficient of x.",
+          "steps": [
+            {
+              "explain": "Subtract 4 from both sides.",
+              "work": "\\(2x=23-4=19\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x=\\frac{19}{2}=9.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q11c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(-4=x+15\\).",
+          "options": [
+            "\\(x=-19\\)",
+            "\\(x=11\\)",
+            "\\(x=19\\)",
+            "\\(x=-11\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 15 from both sides.",
+          "steps": [
+            {
+              "explain": "Subtract 15 from both sides.",
+              "work": "\\(-4-15=x+15-15\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x=-19\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q11d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(\\frac{x}{3}-5=6\\).",
+          "options": [
+            "\\(x=33\\)",
+            "\\(x=3\\)",
+            "\\(x=11\\)",
+            "\\(x=-33\\)"
+          ],
+          "answer": 0,
+          "hint": "First add 5, then multiply both sides by 3.",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides.",
+              "work": "\\(\\frac{x}{3}=11\\)"
+            },
+            {
+              "explain": "Multiply both sides by 3.",
+              "work": "\\(x=33\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pa-q11e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(4=1-x\\).",
+          "options": [
+            "\\(x=-3\\)",
+            "\\(x=3\\)",
+            "\\(x=-5\\)",
+            "\\(x=5\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 1 first, then multiply by negative 1.",
+          "steps": [
+            {
+              "explain": "Subtract 1 from both sides.",
+              "work": "\\(3=-x\\)"
+            },
+            {
+              "explain": "Multiply both sides by −1.",
+              "work": "\\(x=-3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part A",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "wghs22-y7-t2-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(2m - 1 = 13\\).",
+          "options": [
+            "\\(m = 6\\)",
+            "\\(m = 7\\)",
+            "\\(m = 12\\)",
+            "\\(m = 14\\)"
+          ],
+          "answer": 1,
+          "hint": "Undo the operations in reverse order: add 1 to both sides first, then divide both sides by 2.",
+          "keyPoints": [
+            {
+              "text": "2m - 1 = 13",
+              "note": "Add 1 to both sides to isolate the 2m term first."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with the equation \\(2m - 1 = 13\\). Undo subtracting \\(1\\) by adding \\(1\\) to both sides.",
+              "work": "\\(2m - 1 + 1 = 13 + 1\\)"
+            },
+            {
+              "explain": "Simplify both sides to get \\(2m = 14\\).",
+              "work": "\\(2m = 14\\)"
+            },
+            {
+              "explain": "Undo multiplying by \\(2\\) by dividing both sides by \\(2\\).",
+              "work": "\\(m = \\dfrac{14}{2} = 7\\)"
+            },
+            {
+              "explain": "Check by substituting \\(m = 7\\): \\(2(7) - 1 = 14 - 1 = 13\\). Correct!",
+              "work": "\\(m = 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(\\dfrac{m}{2} - 4 = -3\\).",
+          "options": [
+            "\\(m = -14\\)",
+            "\\(m = -2\\)",
+            "\\(m = 2\\)",
+            "\\(m = 14\\)"
+          ],
+          "answer": 2,
+          "hint": "Add 4 to both sides first (-3 + 4 = 1), then multiply both sides by 2.",
+          "keyPoints": [
+            {
+              "text": "- 4 = -3",
+              "note": "Undo the -4 before undoing the division by 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(4\\) to both sides to isolate the fraction \\(\\dfrac{m}{2}\\).",
+              "work": "\\(\\dfrac{m}{2} - 4 + 4 = -3 + 4\\)"
+            },
+            {
+              "explain": "Simplify the right-hand side: \\(-3 + 4 = 1\\).",
+              "work": "\\(\\dfrac{m}{2} = 1\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(2\\) to undo dividing by \\(2\\).",
+              "work": "\\(m = 1 \\times 2 = 2\\)"
+            },
+            {
+              "explain": "Check by substituting \\(m = 2\\): \\(\\dfrac{2}{2} - 4 = 1 - 4 = -3\\). Correct!",
+              "work": "\\(m = 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3124,6 +3394,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 210\" width=\"50%\" height=\"auto\" role=\"img\"><rect width=\"360\" height=\"210\" fill=\"#fff\"/><rect x=\"100\" y=\"45\" width=\"160\" height=\"115\" fill=\"#dbeafe\" fill-opacity=\".65\" stroke=\"#334155\" stroke-width=\"2.6\"/><path d=\"M100 57h12v-12 M248 45v12h12 M100 148h12v12 M248 160v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"45\" x2=\"190\" y2=\"45\" stroke=\"#f97316\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"160\" x2=\"190\" y2=\"160\" stroke=\"#f97316\" stroke-width=\"2.5\"/><text x=\"180\" y=\"31\" text-anchor=\"middle\" font-size=\"17\" fill=\"#1e293b\">10</text><text x=\"180\" y=\"190\" text-anchor=\"middle\" font-size=\"17\" fill=\"#1e293b\">4 − 2x</text><text x=\"280\" y=\"95\" font-size=\"13\" fill=\"#64748b\">not to scale</text></svg>"
           }
+        },
+        {
+          "id": "wghs22-y7-t2-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(6 - m = 17\\).",
+          "options": [
+            "\\(m = -23\\)",
+            "\\(m = -11\\)",
+            "\\(m = 11\\)",
+            "\\(m = 23\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 6 from both sides to get -m = 11, then divide (or multiply) both sides by -1 to find m.",
+          "keyPoints": [
+            {
+              "text": "6 - m = 17",
+              "note": "Keep the minus sign attached to m when subtracting 6 from both sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(6\\) from both sides of \\(6 - m = 17\\) to isolate the \\(-m\\) term.",
+              "work": "\\(6 - m - 6 = 17 - 6\\)"
+            },
+            {
+              "explain": "Simplify both sides carefully, keeping the negative sign in front of \\(m\\).",
+              "work": "\\(-m = 11\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-1\\) to change \\(-m\\) into positive \\(m\\).",
+              "work": "\\(m = \\dfrac{11}{-1} = -11\\)"
+            },
+            {
+              "explain": "Check by substituting \\(m = -11\\): \\(6 - (-11) = 6 + 11 = 17\\). Correct!",
+              "work": "\\(m = -11\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3285,6 +3595,86 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs22-y7-t2-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify first and then solve the equation \\(2x - 1 + x = 35\\).",
+          "options": [
+            "\\(x = 11\\)",
+            "\\(x = 12\\)",
+            "\\(x = 17\\)",
+            "\\(x = 18\\)"
+          ],
+          "answer": 1,
+          "hint": "Collect the like terms 2x + x on the left side first to get 3x - 1 = 35, then add 1 and divide by 3.",
+          "keyPoints": [
+            {
+              "text": "Simplify first",
+              "note": "Combine 2x and +x before solving the equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Collect like terms on the left-hand side: \\(2x + x = 3x\\).",
+              "work": "\\(3x - 1 = 35\\)"
+            },
+            {
+              "explain": "Add \\(1\\) to both sides to isolate \\(3x\\).",
+              "work": "\\(3x = 35 + 1 = 36\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\) to find \\(x\\).",
+              "work": "\\(x = \\dfrac{36}{3} = 12\\)"
+            },
+            {
+              "explain": "Check by substituting \\(x = 12\\): \\(2(12) - 1 + 12 = 24 - 1 + 12 = 35\\). Correct!",
+              "work": "\\(x = 12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q5b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify first and then solve the equation \\(6 = 5 - m - 3m\\).",
+          "options": [
+            "\\(m = -\\dfrac{1}{4}\\)",
+            "\\(m = \\dfrac{1}{4}\\)",
+            "\\(m = -4\\)",
+            "\\(m = -\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine -m - 3m to get -4m on the right side, subtract 5 from both sides to get 1 = -4m, then divide both sides by -4.",
+          "keyPoints": [
+            {
+              "text": "5 - m - 3m",
+              "note": "Both -m and -3m are negative, so -1m - 3m = -4m."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Collect the like terms \\(-m\\) and \\(-3m\\) on the right-hand side: \\(-1m - 3m = -4m\\).",
+              "work": "\\(6 = 5 - 4m\\)"
+            },
+            {
+              "explain": "Subtract \\(5\\) from both sides to isolate the \\(-4m\\) term.",
+              "work": "\\(6 - 5 = -4m \\implies 1 = -4m\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-4\\) to solve for \\(m\\).",
+              "work": "\\(m = \\dfrac{1}{-4} = -\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(5 - (-\\dfrac{1}{4}) - 3(-\\dfrac{1}{4}) = 5 + \\dfrac{1}{4} + \\dfrac{3}{4} = 5 + 1 = 6\\). Correct!",
+              "work": "\\(m = -\\dfrac{1}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3970,6 +4360,55 @@
             "\\(3\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "wghs22-y7-t2-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The perimeter of a rectangle is \\(28\\text{ cm}\\). The width \\(w\\) is \\(3\\text{ cm}\\) shorter than the length (so the length is \\(w + 3\\)). Find the length and width of the rectangle.",
+          "options": [
+            "Width = 5.5 cm, Length = 8.5 cm",
+            "Width = 6 cm, Length = 9 cm",
+            "Width = 5 cm, Length = 8 cm",
+            "Width = 12.5 cm, Length = 15.5 cm"
+          ],
+          "answer": 0,
+          "hint": "Add all four sides of the rectangle: w + w + (w + 3) + (w + 3) = 28. Simplify to 4w + 6 = 28 and solve for w, then add 3 to get the length.",
+          "keyPoints": [
+            {
+              "text": "perimeter of a rectangle is \\(28\\text{ cm}\\)",
+              "note": "Perimeter is the sum of all 4 sides: 2 widths + 2 lengths."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Label all four sides of the rectangle: two widths of \\(w\\) (blue) and two lengths of \\(w + 3\\) (red).",
+              "work": "\\(P = w + w + (w + 3) + (w + 3) = 28\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 175\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"170\" height=\"86\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"68\" y1=\"36\" x2=\"238\" y2=\"36\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><line x1=\"68\" y1=\"122\" x2=\"238\" y2=\"122\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><line x1=\"68\" y1=\"36\" x2=\"68\" y2=\"122\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><line x1=\"238\" y1=\"36\" x2=\"238\" y2=\"122\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"252\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">w</text><text x=\"54\" y=\"84\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">w</text><text x=\"153\" y=\"142\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">w + 3</text><text x=\"153\" y=\"26\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">w + 3</text><text x=\"160\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Perimeter = w + w + (w + 3) + (w + 3) = 28 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect like terms on the left side: four \\(w\\) terms give \\(4w\\), and \\(3 + 3 = 6\\).",
+              "work": "\\(4w + 6 = 28\\)"
+            },
+            {
+              "explain": "Subtract \\(6\\) from both sides, then divide by \\(4\\) to find the width \\(w\\).",
+              "work": "\\(4w = 22 \\implies w = \\dfrac{22}{4} = 5.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Add \\(3\\) to find the length: \\(5.5 + 3 = 8.5\\text{ cm}\\). Check perimeter: \\(5.5 + 5.5 + 8.5 + 8.5 = 28\\text{ cm}\\).",
+              "work": "\\(\\text{Width} = 5.5\\text{ cm}, \\; \\text{Length} = 8.5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 175\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"170\" height=\"86\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"68\" y1=\"36\" x2=\"238\" y2=\"36\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><line x1=\"68\" y1=\"122\" x2=\"238\" y2=\"122\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><line x1=\"68\" y1=\"36\" x2=\"68\" y2=\"122\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><line x1=\"238\" y1=\"36\" x2=\"238\" y2=\"122\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><text x=\"252\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">5.5 cm</text><text x=\"54\" y=\"84\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#2563eb\">5.5 cm</text><text x=\"153\" y=\"142\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">8.5 cm</text><text x=\"153\" y=\"26\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"15\" font-weight=\"700\" fill=\"#dc2626\">8.5 cm</text><text x=\"160\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0369a1\">Check: 5.5 + 5.5 + 8.5 + 8.5 = 28 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 148\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"170\" height=\"86\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"252\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">w</text></svg>"
+          }
         }
       ]
     }
