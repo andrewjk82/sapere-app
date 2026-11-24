@@ -199,7 +199,13 @@ const ScholarshipTest = ({ topic, chapter, profile, onBack, size: sizeProp = TES
     let cancelled = false;
     // `loadQuestions` lets a test draw from several topics (the Daily Study set); otherwise it is this topic's questions.
     (loadQuestions ? loadQuestions() : getTopicQuestions(topic.id, { chapterId: chapter.id }))
-      .then((qs) => { if (!cancelled) setAll(qs || []); })
+      .then((qs) => {
+        // One teacher-marked question (no options) in a topic used to send the whole topic to the practice screen.
+        // Keep the ones a test can run; a topic with none (Writing) still goes to practice.
+        const list = qs || [];
+        const runnable = list.filter((q) => isTestable([q]));
+        if (!cancelled) setAll(runnable.length ? runnable : list);
+      })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
   }, [chapter.id, topic.id]);
