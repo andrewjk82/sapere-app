@@ -856,6 +856,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 170\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 185 136 L 87 136 A 98 98 0 0 1 185 38 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"173,136 173,124 185,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"197\" y=\"92\" font-family=\"Arial,sans-serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">12 m</text></svg>"
           }
+        },
+        {
+          "id": "sgs18-y8-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the circumference of a circle with diameter \\(28\\text{ cm}\\). Use the approximation \\(\\pi \\approx \\dfrac{22}{7}\\).",
+          "options": [
+            "\\(44\\text{ cm}\\)",
+            "\\(88\\text{ cm}\\)",
+            "\\(176\\text{ cm}\\)",
+            "\\(616\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use C = πd = (22/7) × 28. Cancel 28 ÷ 7 = 4 first, then multiply 22 × 4!",
+          "keyPoints": [
+            {
+              "text": "Find the circumference",
+              "note": "Work carefully through each term and sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the expansion, substitution, or formula carefully.",
+              "work": "\\(C = \\pi d = \\dfrac{22}{7} \\times 28\\)"
+            },
+            {
+              "explain": "Simplify step by step without skipping signs.",
+              "work": "\\(22 \\times 4 = 88\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify the result.",
+              "work": "\\(\\text{Verified: } 88\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(88\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 88\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -1093,6 +1133,52 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 190\" width=\"50%\" height=\"auto\"><path d=\"M35 150 A120 120 0 0 1 275 150\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M83 150 A72 72 0 0 1 227 150\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2\"/><path d=\"M131 150 A24 24 0 0 1 179 150\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\"/><line x1=\"35\" y1=\"150\" x2=\"275\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"35\" y1=\"26\" x2=\"35\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.3\"/><g stroke=\"#f59e0b\" stroke-width=\"1.4\"><line x1=\"213.3\" y1=\"107.7\" x2=\"252.1\" y2=\"79.4\"/><line x1=\"197.4\" y1=\"91.7\" x2=\"225.6\" y2=\"52.9\"/><line x1=\"112.6\" y1=\"91.7\" x2=\"84.4\" y2=\"52.9\"/><line x1=\"96.7\" y1=\"107.7\" x2=\"57.9\" y2=\"79.4\"/></g><g stroke=\"#7c3aed\" stroke-width=\"1.4\"><line x1=\"167\" y1=\"129.2\" x2=\"191\" y2=\"87.6\"/><line x1=\"143\" y1=\"129.2\" x2=\"119\" y2=\"87.6\"/></g><g font-size=\"11\" font-weight=\"bold\"><text x=\"149\" y=\"111\" fill=\"#6d28d9\">A</text><text x=\"124\" y=\"124\" fill=\"#6d28d9\">A</text><text x=\"181\" y=\"124\" fill=\"#6d28d9\">A</text><text x=\"66\" y=\"115\" fill=\"#b45309\">B</text><text x=\"94\" y=\"66\" fill=\"#b45309\">B</text><text x=\"150\" y=\"49\" fill=\"#b45309\">B</text><text x=\"212\" y=\"66\" fill=\"#b45309\">B</text><text x=\"239\" y=\"115\" fill=\"#b45309\">B</text></g><text x=\"23\" y=\"170\" font-size=\"10\" fill=\"#334155\">0</text><text x=\"75\" y=\"170\" font-size=\"10\" fill=\"#334155\">2</text><text x=\"123\" y=\"170\" font-size=\"10\" fill=\"#334155\">4</text><text x=\"171\" y=\"170\" font-size=\"10\" fill=\"#334155\">6</text><text x=\"219\" y=\"170\" font-size=\"10\" fill=\"#334155\">8</text><text x=\"267\" y=\"170\" font-size=\"10\" fill=\"#334155\">10</text></svg>"
+          }
+        },
+        {
+          "id": "sgs18-y8-q7fi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The diagram shows two concentric circles. The radius of the larger circle is \\(10\\text{ metres}\\) and the radius of the smaller circle is \\(r\\text{ metres}\\). Find the exact area of the larger circle.",
+          "options": [
+            "\\(20\\pi\\text{ m}^2\\)",
+            "\\(100\\pi\\text{ m}^2\\)",
+            "\\(10\\pi\\text{ m}^2\\)",
+            "\\(400\\pi\\text{ m}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Use A = πr² with r = 10 m, and leave π in your answer for the exact area!",
+          "keyPoints": [
+            {
+              "text": "exact area of the larger circle",
+              "note": "A = π × 10² = 100π m²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the radius of the larger circle: \\(R = 10\\text{ m}\\) (highlighted in red).",
+              "work": "\\(R = 10\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 210\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"130\" cy=\"92\" r=\"72\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"130\" cy=\"92\" r=\"36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><line x1=\"130\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><line x1=\"130\" y1=\"92\" x2=\"181\" y2=\"41\" stroke=\"#dc2626\" stroke-width=\"2.8\"/><text x=\"112\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">r = 6</text><text x=\"168\" y=\"74\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\" transform=\"rotate(-45 168 74)\">10 m</text><text x=\"130\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Outer radius R = 10 m (red) -> Area = π(10)² = 100π m²</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the circle area formula: \\(A = \\pi R^2\\).",
+              "work": "\\(A = \\pi \\times 10^2\\)"
+            },
+            {
+              "explain": "Square \\(10\\): \\(10^2 = 100\\), keeping \\(\\pi\\) exact.",
+              "work": "\\(A = 100\\pi\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Therefore, the exact area of the larger circle is \\(100\\pi\\text{ m}^2\\).",
+              "work": "\\(\\text{Answer: } 100\\pi\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"130\" cy=\"92\" r=\"72\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"130\" cy=\"92\" r=\"36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><line x1=\"130\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"92\" x2=\"181\" y2=\"41\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"112\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">r</text><text x=\"168\" y=\"74\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-45 168 74)\">10 m</text></svg>"
           }
         }
       ]
@@ -1560,6 +1646,52 @@
             "school": "Form II Annual",
             "grade": "8",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sgs18-y8-q7fii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the concentric circles diagram (larger radius \\(10\\text{ m}\\), smaller radius \\(r\\text{ m}\\)), the area of the shaded region is \\(64\\pi\\text{ m}^2\\). Determine the value of \\(r\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(36\\)"
+          ],
+          "answer": 1,
+          "hint": "Shaded area = Large circle (100π) - Small circle (πr²) = 64π! Subtract to find πr² = 36π, so r² = 36.",
+          "keyPoints": [
+            {
+              "text": "shaded region is \\(64\\pi\\text{ m}^2\\)",
+              "note": "100π - πr² = 64π -> r² = 36 -> r = 6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the equation for the shaded ring (annulus): \\(\\text{Large area} - \\text{Small area} = 64\\pi\\).",
+              "work": "\\(100\\pi - \\pi r^2 = 64\\pi\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 210\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"130\" cy=\"92\" r=\"72\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"130\" cy=\"92\" r=\"36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><line x1=\"130\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><line x1=\"130\" y1=\"92\" x2=\"181\" y2=\"41\" stroke=\"#dc2626\" stroke-width=\"2.8\"/><text x=\"112\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">r = 6</text><text x=\"168\" y=\"74\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\" transform=\"rotate(-45 168 74)\">10 m</text><text x=\"130\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Small circle area = 100π - 64π = 36π -> r = 6 m (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Divide every term by \\(\\pi\\) to simplify: \\(100 - r^2 = 64\\).",
+              "work": "\\(100 - r^2 = 64\\)"
+            },
+            {
+              "explain": "Solve for \\(r^2\\): \\(r^2 = 100 - 64 = 36\\).",
+              "work": "\\(r^2 = 36\\)"
+            },
+            {
+              "explain": "Take the positive square root (radius is positive): \\(r = \\sqrt{36} = 6\\).",
+              "work": "\\(\\text{Answer: } r = 6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"130\" cy=\"92\" r=\"72\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"130\" cy=\"92\" r=\"36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><line x1=\"130\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"92\" x2=\"181\" y2=\"41\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"112\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">r</text><text x=\"168\" y=\"74\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-45 168 74)\">10 m</text></svg>"
           }
         }
       ]

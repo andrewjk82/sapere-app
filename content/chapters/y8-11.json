@@ -2653,6 +2653,166 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q1bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(3m + 6m\\).",
+          "options": [
+            "\\(9m\\)",
+            "\\(9m^2\\)",
+            "\\(18m\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Both terms are like terms with m: add the coefficients 3 + 6 and keep m.",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(3m",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\((3 + 6)m\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(9m\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 9m\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(9m\\).",
+              "work": "\\(\\text{Answer: } 9m\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(3(6 - 4x)\\).",
+          "options": [
+            "\\(18 - 4x\\)",
+            "\\(18 - 12x\\)",
+            "\\(9 - 12x\\)",
+            "\\(18 + 12x\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 3 by BOTH terms inside the brackets: 3 × 6 and 3 × (-4x).",
+          "keyPoints": [
+            {
+              "text": "Expand \\(3(6",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(3 \\times 6 - 3 \\times 4x\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(18 - 12x\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 18 - 12x\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(18 - 12x\\).",
+              "work": "\\(\\text{Answer: } 18 - 12x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q2bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(r + r + 3r\\).",
+          "options": [
+            "\\(4r\\)",
+            "\\(5r\\)",
+            "\\(3r^3\\)",
+            "\\(5r^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Write each r as 1r and add the coefficients: 1 + 1 + 3 = 5.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Perform each algebraic or arithmetic step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the key operation or inverse step first.",
+              "work": "\\(1r + 1r + 3r\\)"
+            },
+            {
+              "explain": "Simplify to obtain the exact result.",
+              "work": "\\(5r\\)"
+            },
+            {
+              "explain": "Verify the answer by reversing or checking the calculation.",
+              "work": "\\(\\text{Verified: } 5r\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5r\\).",
+              "work": "\\(\\text{Answer: } 5r\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q3ai",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\(3(x + 2) + 2(4 - x)\\).",
+          "options": [
+            "\\(x + 14\\)",
+            "\\(5x + 14\\)",
+            "\\(x + 10\\)",
+            "\\(5x + 10\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand both brackets first (3x + 6 + 8 - 2x), then collect like terms (3x - 2x and 6 + 8).",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Work carefully through each term and sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the expansion, substitution, or formula carefully.",
+              "work": "\\(3x + 6 + 8 - 2x\\)"
+            },
+            {
+              "explain": "Simplify step by step without skipping signs.",
+              "work": "\\(x + 14\\)"
+            },
+            {
+              "explain": "Verify the result.",
+              "work": "\\(\\text{Verified: } x + 14\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x + 14\\).",
+              "work": "\\(\\text{Answer: } x + 14\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

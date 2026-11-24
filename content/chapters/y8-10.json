@@ -3630,6 +3630,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
           }
+        },
+        {
+          "id": "sgs18-y8-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Trevor's car travelled \\(140\\text{ kilometres}\\) in \\(2\\text{ hours}\\). What is the average speed of the car in kilometres per hour?",
+          "options": [
+            "\\(60\\text{ km/h}\\)",
+            "\\(70\\text{ km/h}\\)",
+            "\\(142\\text{ km/h}\\)",
+            "\\(280\\text{ km/h}\\)"
+          ],
+          "answer": 1,
+          "hint": "Average speed = Distance ÷ Time = 140 ÷ 2.",
+          "keyPoints": [
+            {
+              "text": "Trevor's car travelled",
+              "note": "Follow the exact formula or conversion."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the calculation or substitution.",
+              "work": "\\(\\text{Speed} = \\dfrac{140\\text{ km}}{2\\text{ h}}\\)"
+            },
+            {
+              "explain": "Compute the simplified result.",
+              "work": "\\(70\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 70\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(70\\text{ km/h}\\).",
+              "work": "\\(\\text{Answer: } 70\\text{ km/h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4736,6 +4776,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the ratio \\(15 : 12\\).",
+          "options": [
+            "\\(5 : 4\\)",
+            "\\(4 : 5\\)",
+            "\\(3 : 2\\)",
+            "\\(5 : 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both sides of the ratio by their HCF (3).",
+          "keyPoints": [
+            {
+              "text": "Simplify the",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\((15 \\div 3) : (12 \\div 3)\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(5 : 4\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 5 : 4\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5 : 4\\).",
+              "work": "\\(\\text{Answer: } 5 : 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q4ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the ratio \\(10\\text{ minutes} : 2\\text{ hours}\\).",
+          "options": [
+            "\\(5 : 1\\)",
+            "\\(1 : 12\\)",
+            "\\(1 : 6\\)",
+            "\\(1 : 20\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 2 hours to minutes first (2 × 60 = 120 minutes), then simplify 10 : 120.",
+          "keyPoints": [
+            {
+              "text": "Simplify the ratio",
+              "note": "Follow the exact formula or conversion."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the calculation or substitution.",
+              "work": "\\(10\\text{ min} : 120\\text{ min} = 10 : 120\\)"
+            },
+            {
+              "explain": "Compute the simplified result.",
+              "work": "\\(1 : 12\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 1 : 12\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1 : 12\\).",
+              "work": "\\(\\text{Answer: } 1 : 12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q4cii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the ratio \\(0.6 : 1.5\\).",
+          "options": [
+            "\\(2 : 5\\)",
+            "\\(3 : 5\\)",
+            "\\(6 : 15\\)",
+            "\\(2 : 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 10 to clear decimals (6 : 15), then divide both sides by 3!",
+          "keyPoints": [
+            {
+              "text": "Simplify the ratio",
+              "note": "Follow the exact formula or conversion."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the calculation or substitution.",
+              "work": "\\(0.6 : 1.5 = 6 : 15\\)"
+            },
+            {
+              "explain": "Compute the simplified result.",
+              "work": "\\((6 \\div 3) : (15 \\div 3) = 2 : 5\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 2 : 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2 : 5\\).",
+              "work": "\\(\\text{Answer: } 2 : 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5431,6 +5591,126 @@
             {
               "explain": "Therefore, \\(5\\text{ litres}\\) of orange juice is required.",
               "work": "\\(\\text{Answer: } 5\\text{ litres}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Jack and Jill split a pack of \\(60\\) jelly beans between themselves in the ratio of \\(2 : 3\\) respectively. How many jelly beans does Jack receive?",
+          "options": [
+            "\\(12\\)",
+            "\\(20\\)",
+            "\\(24\\)",
+            "\\(36\\)"
+          ],
+          "answer": 2,
+          "hint": "Total parts = 2 + 3 = 5. Divide 60 by 5 to find 1 part (12), then multiply by Jack's 2 parts!",
+          "keyPoints": [
+            {
+              "text": "Jack and Jill",
+              "note": "Work carefully through each term and sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the expansion, substitution, or formula carefully.",
+              "work": "\\(\\text{Total parts} = 2 + 3 = 5 \\implies 1\\text{ part} = \\dfrac{60}{5} = 12\\)"
+            },
+            {
+              "explain": "Simplify step by step without skipping signs.",
+              "work": "\\(\\text{Jack} = 2 \\times 12 = 24\\)"
+            },
+            {
+              "explain": "Verify the result.",
+              "work": "\\(\\text{Verified: } 24\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(24\\).",
+              "work": "\\(\\text{Answer: } 24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The scale on a map of Australia is \\(1 : 10\\,000\\,000\\). If the actual distance from Melbourne to Sydney is \\(900\\text{ km}\\), determine the distance on the map in centimetres.",
+          "options": [
+            "\\(0.9\\text{ cm}\\)",
+            "\\(9\\text{ cm}\\)",
+            "\\(90\\text{ cm}\\)",
+            "\\(900\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 900 km to centimetres (1 km = 100 000 cm -> 90 000 000 cm), then divide by 10 000 000!",
+          "keyPoints": [
+            {
+              "text": "in centimetres",
+              "note": "1 km = 1000 m = 100 000 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(900\\text{ km}\\) to metres (\\(\\times 1000\\)) and then to centimetres (\\(\\times 100\\)).",
+              "work": "\\(900\\text{ km} = 900 \\times 100\\,000 = 90\\,000\\,000\\text{ cm}\\)"
+            },
+            {
+              "explain": "Divide the actual distance in cm by the map scale factor \\(10\\,000\\,000\\).",
+              "work": "\\(\\text{Map distance} = \\dfrac{90\\,000\\,000}{10\\,000\\,000}\\text{ cm}\\)"
+            },
+            {
+              "explain": "Cancel seven zeros from top and bottom: \\(\\dfrac{90}{10} = 9\\text{ cm}\\).",
+              "work": "\\(9\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the distance on the map is \\(9\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 9\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q9d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "At the local co-educational school, the ratio of boys to girls is \\(4 : 3\\). Meanwhile, a local girls school closes. The \\(60\\) girls in that school join the co-educational school and the ratio of boys to girls changes to \\(12 : 11\\). Find the number of boys in the co-educational school.",
+          "options": [
+            "\\(240\\)",
+            "\\(300\\)",
+            "\\(360\\)",
+            "\\(480\\)"
+          ],
+          "answer": 2,
+          "hint": "The number of BOYS did not change! Rewrite the old ratio 4 : 3 with 12 parts for boys -> 12 : 9. Now girls went from 9 parts to 11 parts (+2 parts = 60 girls)!",
+          "keyPoints": [
+            {
+              "text": "60\\) girls",
+              "note": "Keep boys constant: 4 : 3 = 12 : 9, so +60 girls = 11 - 9 = 2 parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since the number of boys does not change, scale the original ratio \\(4 : 3\\) so boys have \\(12\\) parts: \\(4 : 3 = 12 : 9\\).",
+              "work": "\\(\\text{Before: } 12 : 9, \\quad \\text{After: } 12 : 11\\)"
+            },
+            {
+              "explain": "Compare the girls' parts before and after: girls increased by \\(11 - 9 = 2\\) parts, which equals \\(60\\) girls.",
+              "work": "\\(2\\text{ parts} = 60 \\implies 1\\text{ part} = 30\\)"
+            },
+            {
+              "explain": "Multiply \\(1\\) part (\\(30\\)) by the boys' \\(12\\) parts: \\(12 \\times 30 = 360\\) boys.",
+              "work": "\\(\\text{Boys} = 12 \\times 30 = 360\\)"
+            },
+            {
+              "explain": "Check: before \\(360 : 270 = 4 : 3\\); after adding \\(60\\) girls, \\(360 : 330 = 12 : 11\\). Exact!",
+              "work": "\\(\\text{Answer: } 360\\)"
             }
           ],
           "timeLimit": 60,

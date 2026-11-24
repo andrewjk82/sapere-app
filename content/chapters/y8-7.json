@@ -3689,6 +3689,126 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(0.42\\) as a percentage.",
+          "options": [
+            "\\(4.2\\%\\)",
+            "\\(42\\%\\)",
+            "\\(420\\%\\)",
+            "\\(0.42\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "To convert a decimal to a percentage, multiply by 100% (move decimal point 2 places right).",
+          "keyPoints": [
+            {
+              "text": "Write \\(0.42\\)",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(0.42 \\times 100\\%\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(42\\%\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 42\\%\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(42\\%\\).",
+              "work": "\\(\\text{Answer: } 42\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(20\\%\\) of \\(1500\\).",
+          "options": [
+            "\\(150\\)",
+            "\\(300\\)",
+            "\\(350\\)",
+            "\\(75\\)"
+          ],
+          "answer": 1,
+          "hint": "10% of 1500 is 150, so 20% is double that (2 × 150 = 300)!",
+          "keyPoints": [
+            {
+              "text": "Find \\(20\\%\\)",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(10\\% \\text{ of } 1500 = 150\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(20\\% = 2 \\times 150 = 300\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 300\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(300\\).",
+              "work": "\\(\\text{Answer: } 300\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(15\\%\\) of \\(2400\\).",
+          "options": [
+            "\\(240\\)",
+            "\\(360\\)",
+            "\\(480\\)",
+            "\\(320\\)"
+          ],
+          "answer": 1,
+          "hint": "Find 10% (240) and 5% (half of 240 = 120), then add 240 + 120 = 360!",
+          "keyPoints": [
+            {
+              "text": "Find \\(15\\%\\) of",
+              "note": "Follow the exact formula or conversion."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the calculation or substitution.",
+              "work": "\\(10\\% = 240, \\quad 5\\% = 120\\)"
+            },
+            {
+              "explain": "Compute the simplified result.",
+              "work": "\\(15\\% = 240 + 120 = 360\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 360\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(360\\).",
+              "work": "\\(\\text{Answer: } 360\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3953,6 +4073,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(\\dfrac{7}{40}\\) to a percentage.",
+          "options": [
+            "\\(17.5\\%\\)",
+            "\\(14\\%\\)",
+            "\\(17\\%\\)",
+            "\\(28\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 7/40 by 100%: simplify 100/40 = 5/2, then compute 7 × 5 ÷ 2 = 35 ÷ 2 = 17.5%.",
+          "keyPoints": [
+            {
+              "text": "percentage",
+              "note": "Multiply the fraction by 100%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply \\(\\dfrac{7}{40}\\) by \\(100\\%\\).",
+              "work": "\\(\\dfrac{7}{40} \\times 100\\%\\)"
+            },
+            {
+              "explain": "Cancel \\(20\\) from \\(100\\) and \\(40\\) to get \\(\\dfrac{7 \\times 5}{2}\\%\\).",
+              "work": "\\(\\dfrac{35}{2}\\%\\)"
+            },
+            {
+              "explain": "Divide \\(35\\) by \\(2\\): \\(35 \\div 2 = 17.5\\%\\).",
+              "work": "\\(17.5\\%\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{7}{40} = 17.5\\%\\).",
+              "work": "\\(\\text{Answer: } 17.5\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5453,6 +5613,46 @@
             {
               "explain": "Round \\(\\$3454.50\\) to the nearest dollar: \\(\\$3455\\).",
               "work": "\\(\\text{Total holiday pay} \\approx \\$3455\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Increase \\(\\$240\\) by \\(20\\%\\).",
+          "options": [
+            "\\(\\$48\\)",
+            "\\(\\$260\\)",
+            "\\(\\$288\\)",
+            "\\(\\$192\\)"
+          ],
+          "answer": 2,
+          "hint": "Find 20% of $240 (10% = $24, so 20% = $48), then ADD $48 to $240!",
+          "keyPoints": [
+            {
+              "text": "Increase",
+              "note": "New amount = Original + 20% of Original."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find \\(10\\%\\) of \\(\\$240\\): \\(\\$24\\).",
+              "work": "\\(10\\% \\text{ of } \\$240 = \\$24\\)"
+            },
+            {
+              "explain": "Double to get \\(20\\%\\): \\(2 \\times \\$24 = \\$48\\).",
+              "work": "\\(20\\% \\text{ of } \\$240 = \\$48\\)"
+            },
+            {
+              "explain": "Add the increase to the original amount: \\(\\$240 + \\$48 = \\$288\\).",
+              "work": "\\(\\$240 + \\$48 = \\$288\\)"
+            },
+            {
+              "explain": "Therefore, increasing \\(\\$240\\) by \\(20\\%\\) gives \\(\\$288\\).",
+              "work": "\\(\\text{Answer: } \\$288\\)"
             }
           ],
           "timeLimit": 60,

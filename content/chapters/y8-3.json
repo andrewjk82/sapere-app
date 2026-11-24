@@ -1813,6 +1813,46 @@
             "sourceMarks": 2,
             "page": 3
           }
+        },
+        {
+          "id": "sgs18-y8-q10b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given that \\(p\\) and \\(q\\) are distinct prime numbers less than \\(10\\), what is the largest possible numerical value of the highest common factor of \\(5p^4q^3\\) and \\(3pq^2\\)?",
+          "options": [
+            "\\(98\\)",
+            "\\(245\\)",
+            "\\(441\\)",
+            "\\(343\\)"
+          ],
+          "answer": 2,
+          "hint": "Primes less than 10 are 2, 3, 5, 7. Don't assume the HCF is just pq² — what happens if p = 3? Then 3pq² = 3²q² and 5p⁴q³ = 5·3⁴q³, so an EXTRA factor of 3 enters the HCF!",
+          "keyPoints": [
+            {
+              "text": "distinct prime numbers less than \\(10\\)",
+              "note": "Test p = 3, q = 7 so the coefficient 3 combines with p to give 3² in the HCF!"
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the primes less than \\(10\\): \\(\\{2, 3, 5, 7\\}\\). Normally \\(\\text{HCF}(5p^4q^3, 3pq^2) = pq^2\\), which is maximised when \\(q = 7\\).",
+              "work": "\\(\\text{Primes} < 10: 2, 3, 5, 7\\)"
+            },
+            {
+              "explain": "Test \\(q = 7\\) with \\(p = 5\\): \\(\\text{HCF}(5^5 \\cdot 7^3, 3 \\cdot 5 \\cdot 7^2) = 5 \\cdot 7^2 = 245\\).",
+              "work": "\\(p = 5, q = 7 \\implies \\text{HCF} = 245\\)"
+            },
+            {
+              "explain": "Now test \\(q = 7\\) with \\(p = 3\\): \\(5p^4q^3 = 5 \\cdot 3^4 \\cdot 7^3\\) and \\(3pq^2 = 3^2 \\cdot 7^2\\), so the factor \\(3\\) boosts the HCF to \\(3^2 \\cdot 7^2\\)!",
+              "work": "\\(p = 3, q = 7 \\implies \\text{HCF} = 3^2 \\times 7^2 = 9 \\times 49 = 441\\)"
+            },
+            {
+              "explain": "Check all other pairs (e.g. \\(p = 7, q = 3 \\to 189\\)): \\(441\\) is the largest possible HCF.",
+              "work": "\\(\\text{Answer: } 441\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2678,6 +2718,166 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q1bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(a^2 \\times a^5\\).",
+          "options": [
+            "\\(a^7\\)",
+            "\\(a^{10}\\)",
+            "\\(2a^7\\)",
+            "\\(a^3\\)"
+          ],
+          "answer": 0,
+          "hint": "When multiplying powers with the same base, ADD the indices: a^m × a^n = a^(m+n).",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(a^2",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(a^{2 + 5}\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(a^7\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } a^7\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(a^7\\).",
+              "work": "\\(\\text{Answer: } a^7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q1biii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{12r^3}{2r}\\).",
+          "options": [
+            "\\(6r^2\\)",
+            "\\(6r^3\\)",
+            "\\(10r^2\\)",
+            "\\(6r^4\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the numbers (12 ÷ 2 = 6) and subtract the powers of r (r^3 ÷ r^1 = r^2).",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac{12r^3}{2r}\\).",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(\\dfrac{12}{2} \\times r^{3 - 1}\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(6r^2\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 6r^2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(6r^2\\).",
+              "work": "\\(\\text{Answer: } 6r^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q2bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(2x^2 \\times 5x^3\\).",
+          "options": [
+            "\\(7x^5\\)",
+            "\\(10x^5\\)",
+            "\\(10x^6\\)",
+            "\\(7x^6\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the coefficients (2 × 5 = 10) and ADD the indices (2 + 3 = 5).",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Perform each algebraic or arithmetic step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the key operation or inverse step first.",
+              "work": "\\((2 \\times 5) \\times x^{2 + 3}\\)"
+            },
+            {
+              "explain": "Simplify to obtain the exact result.",
+              "work": "\\(10x^5\\)"
+            },
+            {
+              "explain": "Verify the answer by reversing or checking the calculation.",
+              "work": "\\(\\text{Verified: } 10x^5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(10x^5\\).",
+              "work": "\\(\\text{Answer: } 10x^5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\dfrac{2^3 \\times 3^4}{12^2}\\).",
+          "options": [
+            "\\(\\dfrac{9}{2}\\)",
+            "\\(9\\)",
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(18\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 12 as 2² × 3, so 12² = (2² × 3)² = 2⁴ × 3², then cancel matching powers of 2 and 3!",
+          "keyPoints": [
+            {
+              "text": "12^2",
+              "note": "Prime factorise 12 = 2² × 3 so 12² = 2⁴ × 3²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Express \\(12\\) as prime factors: \\(12 = 2^2 \\times 3\\), so \\(12^2 = (2^2 \\times 3)^2 = 2^4 \\times 3^2\\).",
+              "work": "\\(\\dfrac{2^3 \\times 3^4}{2^4 \\times 3^2}\\)"
+            },
+            {
+              "explain": "Apply the index law for division: \\(\\dfrac{2^3}{2^4} = \\dfrac{1}{2}\\) and \\(\\dfrac{3^4}{3^2} = 3^2\\).",
+              "work": "\\(\\dfrac{3^2}{2}\\)"
+            },
+            {
+              "explain": "Evaluate \\(3^2 = 9\\), giving \\(\\dfrac{9}{2}\\) (or \\(4.5\\)).",
+              "work": "\\(\\dfrac{9}{2}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{2^3 \\times 3^4}{12^2} = \\dfrac{9}{2}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{9}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4414,6 +4614,46 @@
             "sourceMarks": 1,
             "page": 3
           }
+        },
+        {
+          "id": "sgs18-y8-q10e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the largest two-digit integer \\(n\\) such that \\(68\\) is a factor of the sum of the digits of \\(10^n - n\\).",
+          "options": [
+            "\\(77\\)",
+            "\\(88\\)",
+            "\\(92\\)",
+            "\\(68\\)"
+          ],
+          "answer": 0,
+          "hint": "For a two-digit number n, 10^n - n starts with (n - 2) nines followed by the two digits of (100 - n). Test multiples of 68 down from 874 (816, 748, 680) — check n = 77!",
+          "keyPoints": [
+            {
+              "text": "sum of the digits of \\(10^n - n\\)",
+              "note": "10^n - n consists of (n - 2) nines followed by (100 - n)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For any two-digit integer \\(n = 10a + b\\) (\\(b \\neq 0\\)), \\(10^n - n\\) has \\((n - 2)\\) nines followed by the two-digit number \\(100 - n\\), whose digits are \\((9 - a)\\) and \\((10 - b)\\).",
+              "work": "\\(S(n) = 9(n - 2) + (19 - a - b) = 89a + 8b + 1\\)"
+            },
+            {
+              "explain": "The maximum digit sum (at \\(n = 99\\)) is \\(874\\). Check multiples of \\(68\\) below \\(874\\): \\(816, 748, 680, ...\\)",
+              "work": "\\(68 \\times 12 = 816, \\; 68 \\times 11 = 748, \\; 68 \\times 10 = 680\\)"
+            },
+            {
+              "explain": "Solve \\(89a + 8b = 815\\) (no digit solution) and \\(89a + 8b = 747\\) (no digit solution). For \\(680\\): \\(89a + 8b = 679 \\implies a = 7, b = 7\\) (since \\(89 \\times 7 = 623\\) and \\(679 - 623 = 56 = 8 \\times 7\\)).",
+              "work": "\\(n = 77 \\implies S(77) = 75 \\times 9 + (2 + 3) = 675 + 5 = 680\\)"
+            },
+            {
+              "explain": "Since \\(680 = 68 \\times 10\\) and no larger two-digit \\(n\\) works, the largest two-digit integer is \\(n = 77\\).",
+              "work": "\\(\\text{Answer: } n = 77\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

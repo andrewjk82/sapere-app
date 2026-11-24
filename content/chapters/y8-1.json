@@ -4336,6 +4336,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs18-y8-q1ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(8 + 3\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(24\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 8 and 3 together.",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(8",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(8 + 2 = 10\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(10 + 1 = 11\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 11\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(11\\).",
+              "work": "\\(\\text{Answer: } 11\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6583,6 +6623,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q1aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(12 + 3 \\times 5\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(75\\)",
+            "\\(20\\)",
+            "\\(63\\)"
+          ],
+          "answer": 0,
+          "hint": "Follow BODMAS: multiply 3 × 5 BEFORE adding 12!",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(12",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(3 \\times 5 = 15\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(12 + 15 = 27\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 27\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(27\\).",
+              "work": "\\(\\text{Answer: } 27\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

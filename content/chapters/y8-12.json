@@ -4654,6 +4654,52 @@
             "origin": "teacher",
             "note": "Open response: teacher review."
           }
+        },
+        {
+          "id": "sgs18-y8-q5dii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the parallelogram \\(ABCD\\) with diagonal \\(AC\\) (where \\(\\angle BAC = \\angle DCA = 50^\\circ\\) and \\(\\angle ACB = \\angle CAD = 30^\\circ\\)), which congruency test directly proves \\(\\triangle ABC \\equiv \\triangle CDA\\) from these angles and the shared diagonal \\(AC\\)?",
+          "options": [
+            "AAS (two pairs of equal alternate angles and the common side AC)",
+            "RHS (both triangles contain a right angle)",
+            "AAA (three pairs of equal angles alone proves congruence)",
+            "ASS (one angle and two non-included sides)"
+          ],
+          "answer": 0,
+          "hint": "You have two pairs of equal angles (50° and 30°) plus the shared side AC between them — which valid congruency test uses two angles and a corresponding side?",
+          "keyPoints": [
+            {
+              "text": "\\triangle ABC \\equiv \\triangle CDA",
+              "note": "AAS (two equal angles and one matching side) proves congruence; AAA does not!"
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List the three matching pairs in \\(\\triangle ABC\\) and \\(\\triangle CDA\\): \\(\\angle BAC = \\angle DCA = 50^\\circ\\) (alternate angles, \\(AB \\parallel DC\\)).",
+              "work": "\\(\\angle BAC = \\angle DCA = 50^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 205\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"205\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,34 212,34 242,146 94,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"34\" x2=\"242\" y2=\"146\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polyline points=\"130,29 138,34 130,39\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"136,29 144,34 136,39\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"160,141 168,146 160,151\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"166,141 174,146 166,151\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"73,94 78,86 84,94\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"221,94 226,86 232,94\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"116\" y=\"52\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">30°</text><text x=\"98\" y=\"84\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">50°</text><text x=\"192\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">x = 30°</text><text x=\"210\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#15803d\">y = 50°</text><text x=\"50\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"218\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"248\" y=\"156\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"158\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"155\" y=\"197\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Common side AC (red) + equal alternate angles 30° (blue) & 50° (green) -> AAS</text></svg>"
+              }
+            },
+            {
+              "explain": "Second equal angle pair: \\(\\angle ACB = \\angle CAD = 30^\\circ\\) (alternate angles, \\(AD \\parallel BC\\)).",
+              "work": "\\(\\angle ACB = \\angle CAD = 30^\\circ\\)"
+            },
+            {
+              "explain": "Equal corresponding side: \\(AC\\) is a common side (highlighted in red).",
+              "work": "\\(AC = CA \\text{ (common side)}\\)"
+            },
+            {
+              "explain": "Two angles and a corresponding side match, so \\(\\triangle ABC \\equiv \\triangle CDA\\) by the AAS test.",
+              "work": "\\(\\triangle ABC \\equiv \\triangle CDA \\text{ (AAS)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 178\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,34 212,34 242,146 94,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"34\" x2=\"242\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"130,29 138,34 130,39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"136,29 144,34 136,39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"160,141 168,146 160,151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"166,141 174,146 166,151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"73,94 78,86 84,94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"221,94 226,86 232,94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"116\" y=\"52\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">30°</text><text x=\"98\" y=\"84\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">50°</text><text x=\"192\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">x°</text><text x=\"210\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">y°</text><text x=\"50\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"218\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"248\" y=\"156\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"158\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text></svg>"
+          }
         }
       ]
     },

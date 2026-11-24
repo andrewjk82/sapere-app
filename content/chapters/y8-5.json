@@ -1525,6 +1525,52 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the diagram, line \\(AB\\) is parallel to line \\(CD\\). Find the value of \\(x\\) and the geometric reason.",
+          "options": [
+            "x = 70 (co-interior angles on parallel lines are supplementary)",
+            "x = 110 (corresponding angles on parallel lines are equal)",
+            "x = 110 (alternate angles on parallel lines are equal)",
+            "x = 70 (vertically opposite angles are equal)"
+          ],
+          "answer": 0,
+          "hint": "Both 110° and x° lie BETWEEN the parallel lines AB and CD on the SAME side of the transversal — they are co-interior angles, which add to 180°!",
+          "keyPoints": [
+            {
+              "text": "parallel",
+              "note": "Co-interior angles between parallel lines sum to 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the parallel lines \\(AB \\parallel CD\\) (blue) and notice that \\(110^\\circ\\) and \\(x^\\circ\\) lie on the same side of the transversal between the parallel lines.",
+              "work": "\\(110^\\circ \\text{ and } x^\\circ \\text{ are co-interior angles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 195\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"76\" y1=\"112\" x2=\"176\" y2=\"28\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><line x1=\"146\" y1=\"144\" x2=\"246\" y2=\"60\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><line x1=\"64\" y1=\"42\" x2=\"246\" y2=\"132\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"140,48 150,50 148,60\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><polyline points=\"210,80 220,82 218,92\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><circle cx=\"115\" cy=\"79\" r=\"16\" fill=\"#fef3c7\" fill-opacity=\"0.75\" stroke=\"#d97706\" stroke-width=\"1.8\"/><circle cx=\"187\" cy=\"110\" r=\"16\" fill=\"#fee2e2\" fill-opacity=\"0.75\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"112\" y=\"104\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">110°</text><text x=\"160\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">x = 70°</text><text x=\"64\" y=\"122\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"180\" y=\"28\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"132\" y=\"154\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"250\" y=\"60\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"150\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Co-interior angles between AB || CD add to 180° -> x = 70°</text></svg>"
+              }
+            },
+            {
+              "explain": "Co-interior angles on parallel lines are supplementary (sum to \\(180^\\circ\\)).",
+              "work": "\\(x + 110 = 180\\)"
+            },
+            {
+              "explain": "Subtract \\(110\\) from \\(180\\): \\(x = 180 - 110 = 70\\).",
+              "work": "\\(x = 70\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 70\\) (co-interior angles on parallel lines are supplementary).",
+              "work": "\\(\\text{Answer: } x = 70\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 168\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"76\" y1=\"112\" x2=\"176\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"146\" y1=\"144\" x2=\"246\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"42\" x2=\"246\" y2=\"132\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"140,48 150,50 148,60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"210,80 220,82 218,92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"112\" y=\"104\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">110°</text><text x=\"160\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"800\" fill=\"#0f172a\">x°</text><text x=\"64\" y=\"122\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"180\" y=\"28\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"132\" y=\"154\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"250\" y=\"60\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text></svg>"
+          }
         }
       ]
     },
@@ -2068,6 +2114,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An isosceles triangle has angles \\(\\alpha\\), \\(\\beta\\), and \\(\\gamma\\). If \\(\\alpha = 50^\\circ\\), find the largest possible value of \\(\\gamma\\).",
+          "options": [
+            "\\(50^\\circ\\)",
+            "\\(65^\\circ\\)",
+            "\\(80^\\circ\\)",
+            "\\(130^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "Test BOTH cases for an isosceles triangle: Case 1: 50° is the apex angle -> base angles are (180-50)/2 = 65°. Case 2: 50° is one of the two equal base angles -> apex is 180 - 100 = 80°!",
+          "keyPoints": [
+            {
+              "text": "largest possible value",
+              "note": "Check both possible positions of 50° (apex vs base angle) in an isosceles triangle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Case 1: Suppose \\(\\alpha = 50^\\circ\\) is the apex angle (the non-equal angle). Then the two equal base angles are \\(\\dfrac{180^\\circ - 50^\\circ}{2} = 65^\\circ\\).",
+              "work": "\\(\\text{Case 1: angles } 50^\\circ, 65^\\circ, 65^\\circ\\)"
+            },
+            {
+              "explain": "Case 2: Suppose \\(\\alpha = 50^\\circ\\) is one of the two equal base angles. Then the second base angle is \\(50^\\circ\\) and the third angle is \\(180^\\circ - 50^\\circ - 50^\\circ = 80^\\circ\\).",
+              "work": "\\(\\text{Case 2: angles } 50^\\circ, 50^\\circ, 80^\\circ\\)"
+            },
+            {
+              "explain": "Compare the possible values for \\(\\gamma\\): \\(50^\\circ, 65^\\circ,\\) or \\(80^\\circ\\).",
+              "work": "\\(\\max(50^\\circ, 65^\\circ, 80^\\circ) = 80^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, the largest possible value of \\(\\gamma\\) is \\(80^\\circ\\).",
+              "work": "\\(\\text{Answer: } 80^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3767,6 +3853,52 @@
           "mc": true,
           "hint": "Use the circle theorem that the angle at the centre is twice the angle at the circumference.",
           "solution": "Refer to the worked solutions inside each sub-question."
+        },
+        {
+          "id": "sgs18-y8-q10d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Triangles \\(ABC\\) and \\(CDE\\) are equilateral with side lengths \\(2\\text{ cm}\\). If \\(AD = 3\\text{ cm}\\), which geometric argument proves that \\(\\angle BCE\\) is obtuse?",
+          "options": [
+            "∠BCE = 60° + ∠ACE = ∠ACD, and in △ACD we have AC² + CD² = 8 < 9 = AD², so ∠ACD > 90° (obtuse).",
+            "∠BCE = 60° + 60° = 120°, because B, C, and D must lie on a straight line.",
+            "Because AD = 3 cm is greater than 2 cm, △ACD must be equilateral with 60° angles.",
+            "∠BCE = 180° - 60° = 120° directly from the angle sum of △ABC."
+          ],
+          "answer": 0,
+          "hint": "Compare ∠BCE = 60° + ∠ACE with ∠ACD = ∠ACE + 60° — they are EQUAL! Now test △ACD (sides 2, 2, 3) with Pythagoras: 2² + 2² = 8 < 3² = 9, so ∠ACD > 90°!",
+          "keyPoints": [
+            {
+              "text": "\\angle BCE\\) is obtuse",
+              "note": "∠BCE = ∠ACD, and 2² + 2² < 3² proves ∠ACD > 90°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since \\(\\triangle ABC\\) and \\(\\triangle CDE\\) are equilateral, \\(\\angle BCA = 60^\\circ\\) and \\(\\angle ECD = 60^\\circ\\).",
+              "work": "\\(\\angle BCA = \\angle ECD = 60^\\circ\\)"
+            },
+            {
+              "explain": "Add the shared angle \\(\\angle ACE\\) to both: \\(\\angle BCE = 60^\\circ + \\angle ACE = \\angle ECD + \\angle ACE = \\angle ACD\\).",
+              "work": "\\(\\angle BCE = \\angle ACD\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 175\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"106,64 70,126 142,126\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polygon points=\"142,126 211,106 160,56\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"106\" y1=\"64\" x2=\"211\" y2=\"106\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-dasharray=\"4,3\"/><text x=\"166\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">AD = 3</text><path d=\"M 120 126 A 22 22 0 0 1 148 105\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><text x=\"102\" y=\"56\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"58\" y=\"130\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"142\" y=\"142\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"221\" y=\"110\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"162\" y=\"48\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">E</text><text x=\"145\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">∠BCE = ∠ACD; in △ACD, 2² + 2² = 8 < 3² = 9 -> ∠ACD > 90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the converse of Pythagoras' theorem to \\(\\triangle ACD\\) (sides \\(2, 2, 3\\)): \\(2^2 + 2^2 = 8 < 9 = 3^2\\).",
+              "work": "\\(AC^2 + CD^2 = 8 < 9 = AD^2\\)"
+            },
+            {
+              "explain": "Because \\(AD^2 > AC^2 + CD^2\\), the opposite angle \\(\\angle ACD > 90^\\circ\\), so \\(\\angle BCE = \\angle ACD\\) is obtuse!",
+              "work": "\\(\\angle BCE = \\angle ACD > 90^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 148\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"106,64 70,126 142,126\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polygon points=\"142,126 211,106 160,56\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"102\" y=\"56\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"58\" y=\"130\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"142\" y=\"142\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"221\" y=\"110\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"162\" y=\"48\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">E</text></svg>"
+          }
         }
       ]
     }
