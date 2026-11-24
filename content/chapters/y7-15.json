@@ -1648,6 +1648,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(x + 2 = 10\\).",
+          "options": [
+            "\\(x = 5\\)",
+            "\\(x = 8\\)",
+            "\\(x = 12\\)",
+            "\\(x = 20\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 2 from both sides.",
+          "keyPoints": [
+            {
+              "text": "Solve the",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(x = 10 - 2\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(x = 8\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } x = 8\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x = 8\\).",
+              "work": "\\(x = 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(\\dfrac{x}{4} = 12\\).",
+          "options": [
+            "\\(x = 3\\)",
+            "\\(x = 8\\)",
+            "\\(x = 16\\)",
+            "\\(x = 48\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply both sides by 4 to undo dividing by 4.",
+          "keyPoints": [
+            {
+              "text": "Solve the",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(x = 12 \\times 4\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(x = 48\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } x = 48\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x = 48\\).",
+              "work": "\\(x = 48\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q18c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(5m = 45\\).",
+          "options": [
+            "\\(m = 8\\)",
+            "\\(m = 9\\)",
+            "\\(m = 40\\)",
+            "\\(m = 225\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by 5.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(m = \\dfrac{45}{5}\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(m = 9\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } m = 9\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(m = 9\\).",
+              "work": "\\(\\text{Answer: } m = 9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3271,6 +3391,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q18a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(9 + 4q = 13\\).",
+          "options": [
+            "\\(q = 1\\)",
+            "\\(q = 4\\)",
+            "\\(q = 5.5\\)",
+            "\\(q = -1\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 9 from both sides (4q = 4), then divide by 4.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(4q = 13 - 9 = 4\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(q = \\dfrac{4}{4} = 1\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } q = 1\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(q = 1\\).",
+              "work": "\\(\\text{Answer: } q = 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q18b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(30 - 4y = 6\\).",
+          "options": [
+            "\\(y = 6\\)",
+            "\\(y = -6\\)",
+            "\\(y = 9\\)",
+            "\\(y = 4\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 30 from both sides (-4y = -24), then divide both sides by -4 (negative ÷ negative = positive!).",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(-4y = 6 - 30 = -24\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(y = \\dfrac{-24}{-4} = 6\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } y = 6\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(y = 6\\).",
+              "work": "\\(\\text{Answer: } y = 6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q22c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(\\dfrac{2x + 5}{3} = 10\\).",
+          "options": [
+            "\\(x = 12.5\\)",
+            "\\(x = 17.5\\)",
+            "\\(x = 2.5\\)",
+            "\\(x = 15\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 3 FIRST to clear the denominator (2x + 5 = 30), then subtract 5 and divide by 2!",
+          "keyPoints": [
+            {
+              "text": "= 10",
+              "note": "Multiply by 3 first because the entire numerator (2x + 5) is divided by 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(3\\) to undo dividing by \\(3\\).",
+              "work": "\\(2x + 5 = 10 \\times 3 = 30\\)"
+            },
+            {
+              "explain": "Subtract \\(5\\) from both sides: \\(2x = 25\\).",
+              "work": "\\(2x = 25\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\): \\(x = \\dfrac{25}{2} = 12.5\\).",
+              "work": "\\(x = 12.5\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{2(12.5) + 5}{3} = \\dfrac{30}{3} = 10\\). Correct!",
+              "work": "\\(\\text{Answer: } x = 12.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3756,6 +3996,46 @@
               "note": "The negative factor −2 multiplies each term in the bracket; track both resulting signs."
             }
           ]
+        },
+        {
+          "id": "khs23-y7-t3-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(3(2p - 6) = -24\\).",
+          "options": [
+            "\\(p = -1\\)",
+            "\\(p = 1\\)",
+            "\\(p = -7\\)",
+            "\\(p = -5\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both sides by 3 first (2p - 6 = -8) OR expand to 6p - 18 = -24, then add and divide!",
+          "keyPoints": [
+            {
+              "text": "3(2p - 6) = -24",
+              "note": "Dividing both sides by 3 first keeps the numbers smaller."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide both sides by \\(3\\): \\(2p - 6 = \\dfrac{-24}{3} = -8\\).",
+              "work": "\\(2p - 6 = -8\\)"
+            },
+            {
+              "explain": "Add \\(6\\) to both sides: \\(2p = -8 + 6 = -2\\).",
+              "work": "\\(2p = -2\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\): \\(p = -1\\).",
+              "work": "\\(p = -1\\)"
+            },
+            {
+              "explain": "Check: \\(3(2(-1) - 6) = 3(-8) = -24\\). Correct!",
+              "work": "\\(\\text{Answer: } p = -1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4013,6 +4293,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "khs23-y7-t3-q22a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(10y - 4 = 2y + 17\\).",
+          "options": [
+            "\\(y = \\dfrac{21}{8}\\)",
+            "\\(y = \\dfrac{13}{8}\\)",
+            "\\(y = \\dfrac{21}{12}\\)",
+            "\\(y = 2\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 2y from both sides (8y - 4 = 17), add 4 to both sides (8y = 21), then divide by 8.",
+          "keyPoints": [
+            {
+              "text": "10y - 4 = 2y + 17",
+              "note": "Collect y terms on the left and constants on the right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(2y\\) from both sides: \\(10y - 2y - 4 = 17\\).",
+              "work": "\\(8y - 4 = 17\\)"
+            },
+            {
+              "explain": "Add \\(4\\) to both sides: \\(8y = 17 + 4 = 21\\).",
+              "work": "\\(8y = 21\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(8\\).",
+              "work": "\\(y = \\dfrac{21}{8} = 2.625\\)"
+            },
+            {
+              "explain": "Therefore, \\(y = \\dfrac{21}{8}\\).",
+              "work": "\\(\\text{Answer: } y = \\dfrac{21}{8}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4649,6 +4969,126 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 148\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"170\" height=\"86\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"252\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">w</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y7-t3-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(5\\) is added to a certain number \\(p\\) and this is then multiplied by \\(4\\). The result is \\(28\\). Which equation represents this and what is the value of \\(p\\)?",
+          "options": [
+            "\\(4(p + 5) = 28, \\; p = 2\\)",
+            "\\(4p + 5 = 28, \\; p = 5.75\\)",
+            "\\(4(p - 5) = 28, \\; p = 12\\)",
+            "\\(p + 20 = 28, \\; p = 8\\)"
+          ],
+          "answer": 0,
+          "hint": "Because 5 is added FIRST and the whole sum is multiplied by 4, you MUST use brackets: 4(p + 5) = 28!",
+          "keyPoints": [
+            {
+              "text": "this is then multiplied by \\(4\\)",
+              "note": "Use brackets around (p + 5) before multiplying by 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(5\\) to \\(p\\) to get \\((p + 5)\\), then multiply the entire sum by \\(4\\) and set equal to \\(28\\).",
+              "work": "\\(4(p + 5) = 28\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(4\\): \\(p + 5 = \\dfrac{28}{4} = 7\\).",
+              "work": "\\(p + 5 = 7\\)"
+            },
+            {
+              "explain": "Subtract \\(5\\) from both sides: \\(p = 2\\).",
+              "work": "\\(p = 2\\)"
+            },
+            {
+              "explain": "Check: \\((2 + 5) \\times 4 = 7 \\times 4 = 28\\). Correct!",
+              "work": "\\(\\text{Answer: } 4(p + 5) = 28, \\; p = 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The perimeter of a rectangle is \\(58\\text{ cm}\\), and the width is \\(5\\text{ cm}\\) shorter than the length. Find the dimensions of the rectangle.",
+          "options": [
+            "Length = 17 cm, Width = 12 cm",
+            "Length = 16 cm, Width = 11 cm",
+            "Length = 18 cm, Width = 13 cm",
+            "Length = 31.5 cm, Width = 26.5 cm"
+          ],
+          "answer": 0,
+          "hint": "Let length = l, so width = l - 5. Perimeter = 2l + 2(l - 5) = 58 -> 4l - 10 = 58 -> solve for l!",
+          "keyPoints": [
+            {
+              "text": "perimeter of a rectangle is \\(58\\text{ cm}\\)",
+              "note": "Perimeter = 2(length + width) = 58."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the length be \\(l\\text{ cm}\\), so the width is \\((l - 5)\\text{ cm}\\). Write the perimeter equation.",
+              "work": "\\(2l + 2(l - 5) = 58\\)"
+            },
+            {
+              "explain": "Expand and collect like terms: \\(2l + 2l - 10 = 58 \\implies 4l - 10 = 58\\).",
+              "work": "\\(4l - 10 = 58\\)"
+            },
+            {
+              "explain": "Add \\(10\\) to both sides and divide by \\(4\\): \\(4l = 68 \\implies l = 17\\text{ cm}\\).",
+              "work": "\\(l = \\dfrac{68}{4} = 17\\text{ cm}\\)"
+            },
+            {
+              "explain": "Find the width: \\(17 - 5 = 12\\text{ cm}\\). Check: \\(2(17 + 12) = 58\\text{ cm}\\).",
+              "work": "\\(\\text{Length} = 17\\text{ cm}, \\; \\text{Width} = 12\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Connor is four times as old as Raphael. In \\(12\\) years' time, Connor will only be twice as old as Raphael. Find their present ages.",
+          "options": [
+            "Raphael is 6 years old and Connor is 24 years old",
+            "Raphael is 8 years old and Connor is 32 years old",
+            "Raphael is 12 years old and Connor is 48 years old",
+            "Raphael is 4 years old and Connor is 16 years old"
+          ],
+          "answer": 0,
+          "hint": "Let Raphael's age be r, so Connor is 4r. In 12 years, Raphael is (r + 12) and Connor is (4r + 12). Solve 4r + 12 = 2(r + 12)!",
+          "keyPoints": [
+            {
+              "text": "In \\(12\\) years' time",
+              "note": "Add 12 to BOTH ages: 4r + 12 = 2(r + 12)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let Raphael's present age be \\(r\\); then Connor's present age is \\(4r\\).",
+              "work": "\\(\\text{Now: Raphael} = r, \\; \\text{Connor} = 4r\\)"
+            },
+            {
+              "explain": "In \\(12\\) years, their ages are \\(r + 12\\) and \\(4r + 12\\), and Connor is twice Raphael's age.",
+              "work": "\\(4r + 12 = 2(r + 12)\\)"
+            },
+            {
+              "explain": "Expand and solve: \\(4r + 12 = 2r + 24 \\implies 2r = 12 \\implies r = 6\\).",
+              "work": "\\(2r = 12 \\implies r = 6\\)"
+            },
+            {
+              "explain": "Find Connor's age: \\(4 \\times 6 = 24\\). Check: in 12 years, \\(18\\) and \\(36\\) (\\(36 = 2 \\times 18\\)).",
+              "work": "\\(\\text{Raphael} = 6, \\; \\text{Connor} = 24\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

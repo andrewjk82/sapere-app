@@ -2955,6 +2955,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(x(x + y)\\) if \\(x = 3\\) and \\(y = -4\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(21\\)",
+            "\\(-21\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate inside the brackets first: 3 + (-4) = -1, then multiply by x = 3!",
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(3(3 + (-4)) = 3(-1)\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(-3\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } -3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(-3\\).",
+              "work": "\\(\\text{Answer: } -3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

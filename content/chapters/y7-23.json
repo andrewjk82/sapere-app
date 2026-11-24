@@ -903,6 +903,86 @@
             "exam:year7ch23a"
           ],
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many terms are in the expression \\(2x - 5 + 2y\\)?",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Terms are separated by + and - signs: count 2x, -5, and +2y.",
+          "keyPoints": [
+            {
+              "text": "How many",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(\\text{Terms: } 2x, \\; -5, \\; 2y\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(3\\text{ terms}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(3\\).",
+              "work": "\\(3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Identify the coefficient of the term \\(45p^2q\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(45\\)",
+            "\\(p^2q\\)",
+            "\\(90\\)"
+          ],
+          "answer": 1,
+          "hint": "The coefficient is the numerical factor sitting in front of the pronumerals.",
+          "keyPoints": [
+            {
+              "text": "Identify the",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(\\text{Numerical factor of } 45p^2q\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(45\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 45\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(45\\).",
+              "work": "\\(45\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2090,6 +2170,46 @@
           "alsoIn": [
             "exam:year7ch23b"
           ],
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Identify ALL of the like terms from the list: \\(4x, \\; 10xy, \\; -x, \\; 15x, \\; 4y\\).",
+          "options": [
+            "\\(4x, \\; -x, \\; 15x\\)",
+            "\\(4x, \\; 10xy, \\; -x, \\; 15x\\)",
+            "\\(4x, \\; 4y\\)",
+            "\\(4x, \\; 15x\\)"
+          ],
+          "answer": 0,
+          "hint": "Like terms must have the EXACT same pronumeral part (x only — not xy or y!).",
+          "keyPoints": [
+            {
+              "text": "Identify ALL",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(\\text{Same variable } x: 4x, -x, 15x\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(4x, -x, 15x\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 4x, -x, 15x\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(4x, \\; -x, \\; 15x\\).",
+              "work": "\\(4x, -x, 15x\\)"
+            }
+          ],
+          "timeLimit": 60,
           "xp": 1
         }
       ]
@@ -4050,6 +4170,46 @@
           "alsoIn": [
             "exam:year7ch23c"
           ],
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q15c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(3x + 2x \\times 5\\) fully.",
+          "options": [
+            "\\(25x\\)",
+            "\\(13x\\)",
+            "\\(10x\\)",
+            "\\(15x\\)"
+          ],
+          "answer": 1,
+          "hint": "Follow BODMAS! Multiply 2x × 5 = 10x BEFORE adding 3x!",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(2x \\times 5 = 10x\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(3x + 10x = 13x\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } 13x\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(13x\\).",
+              "work": "\\(\\text{Answer: } 13x\\)"
+            }
+          ],
+          "timeLimit": 60,
           "xp": 1
         }
       ]
@@ -14476,6 +14636,86 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(x + x + y + y + 3\\).",
+          "options": [
+            "\\(2x + 2y + 3\\)",
+            "\\(4xy + 3\\)",
+            "\\(x^2 + y^2 + 3\\)",
+            "\\(7xy\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine the x terms (x + x = 2x), the y terms (y + y = 2y), and keep +3 separate.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\((x + x) + (y + y) + 3\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(2x + 2y + 3\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } 2x + 2y + 3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2x + 2y + 3\\).",
+              "work": "\\(\\text{Answer: } 2x + 2y + 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(3g - 10g + g\\).",
+          "options": [
+            "\\(-6g\\)",
+            "\\(-7g\\)",
+            "\\(-8g\\)",
+            "\\(14g\\)"
+          ],
+          "answer": 0,
+          "hint": "Work left to right: 3g - 10g = -7g, then add 1g: -7g + 1g = -6g!",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(3g - 10g = -7g\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(-7g + 1g = -6g\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } -6g\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(-6g\\).",
+              "work": "\\(\\text{Answer: } -6g\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -16482,6 +16722,46 @@
             {
               "explain": "Therefore, the expression is \\(t - 7\\).",
               "work": "\\(\\text{Answer: } t - 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down an algebraic expression for \\(5\\) less than \\(2x\\).",
+          "options": [
+            "\\(5 - 2x\\)",
+            "\\(2x - 5\\)",
+            "\\(2x + 5\\)",
+            "\\(10x\\)"
+          ],
+          "answer": 1,
+          "hint": "\"5 less than 2x\" means start with 2x and subtract 5 -> 2x - 5.",
+          "keyPoints": [
+            {
+              "text": "Write down",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(2x - 5\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(2x - 5\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 2x - 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2x - 5\\).",
+              "work": "\\(2x - 5\\)"
             }
           ],
           "timeLimit": 60,
@@ -22351,6 +22631,46 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y7-t3-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(4y\\) if \\(y = 3\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(12\\)",
+            "\\(43\\)",
+            "\\(1\\)"
+          ],
+          "answer": 1,
+          "hint": "4y means 4 × y. Multiply 4 by 3.",
+          "keyPoints": [
+            {
+              "text": "Find \\(4y\\)",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(4 \\times 3\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 12\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(12\\).",
+              "work": "\\(12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -41221,6 +41541,166 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(3(x - 2)\\).",
+          "options": [
+            "\\(3x - 2\\)",
+            "\\(3x - 6\\)",
+            "\\(3x + 6\\)",
+            "\\(x - 6\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 3 by BOTH x and -2 inside the brackets.",
+          "keyPoints": [
+            {
+              "text": "Expand \\(3(x",
+              "note": "Apply the core algebra or equation definition carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation needed.",
+              "work": "\\(3 \\times x - 3 \\times 2\\)"
+            },
+            {
+              "explain": "Complete the simplification or calculation.",
+              "work": "\\(3x - 6\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 3x - 6\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(3x - 6\\).",
+              "work": "\\(3x - 6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(p \\times p\\) fully.",
+          "options": [
+            "\\(2p\\)",
+            "\\(p^2\\)",
+            "\\(p + 2\\)",
+            "\\(2p^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiplying a letter by itself gives a power of 2 (p²).",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(p \\times p\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(p^2\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } p^2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(p^2\\).",
+              "work": "\\(\\text{Answer: } p^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q15b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(4ab \\times 3bc\\) fully.",
+          "options": [
+            "\\(7ab^2c\\)",
+            "\\(12abc\\)",
+            "\\(12ab^2c\\)",
+            "\\(12a^2b^2c\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 4 × 3 = 12, and notice b appears TWICE (b × b = b²), giving 12ab²c!",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\((4 \\times 3) \\times a \\times (b \\times b) \\times c\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(12ab^2c\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } 12ab^2c\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(12ab^2c\\).",
+              "work": "\\(\\text{Answer: } 12ab^2c\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify \\(11 - 2(w - 5)\\).",
+          "options": [
+            "\\(1 - 2w\\)",
+            "\\(21 - 2w\\)",
+            "\\(6 - 2w\\)",
+            "\\(9w - 45\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply -2 by BOTH w and -5! Watch the double negative: (-2) × (-5) = +10, then 11 + 10 = 21!",
+          "keyPoints": [
+            {
+              "text": "Expand",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(11 - 2w + 10\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(21 - 2w\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } 21 - 2w\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(21 - 2w\\).",
+              "work": "\\(\\text{Answer: } 21 - 2w\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -41812,6 +42292,52 @@
             "exam:year7ch23i"
           ],
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a trapezium is given by \\(A = \\dfrac{h}{2}(p + q)\\), where \\(p\\) and \\(q\\) are the parallel sides. Find a simplified expression for the area of the trapezium shown (parallel sides \\((a - b)\\text{ cm}\\) and \\((a + b)\\text{ cm}\\), height \\(2b\\text{ cm}\\)).",
+          "options": [
+            "\\(2ab\\text{ cm}^2\\)",
+            "\\(4ab\\text{ cm}^2\\)",
+            "\\(ab\\text{ cm}^2\\)",
+            "\\(2a + 2b\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the two parallel sides first: (a - b) + (a + b) = 2a (the -b and +b cancel!). Then multiply by h/2 = 2b/2 = b!",
+          "keyPoints": [
+            {
+              "text": "simplified expression for the area",
+              "note": "(a - b) + (a + b) = 2a, and h/2 = 2b/2 = b."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute the two parallel sides (blue: \\(a - b\\) and \\(a + b\\)) and height (red: \\(h = 2b\\)) into the trapezium formula.",
+              "work": "\\(A = \\dfrac{2b}{2}\\big((a - b) + (a + b)\\big)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 155\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"52,96 212,96 160,40 84,40\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"84\" y1=\"40\" x2=\"160\" y2=\"40\" stroke=\"#2563eb\" stroke-width=\"3.2\"/><line x1=\"52\" y1=\"96\" x2=\"212\" y2=\"96\" stroke=\"#2563eb\" stroke-width=\"3.2\"/><line x1=\"226\" y1=\"40\" x2=\"226\" y2=\"96\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"122\" y=\"30\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">(a − b) cm</text><text x=\"132\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">(a + b) cm</text><text x=\"234\" y=\"72\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">2b cm</text><text x=\"150\" y=\"147\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Parallel sides sum to 2a (blue); height/2 = b (red) -> Area = 2ab cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{2b}{2} = b\\).",
+              "work": "\\(A = b(a - b + a + b)\\)"
+            },
+            {
+              "explain": "Collect like terms inside the bracket: \\(-b + b = 0\\) and \\(a + a = 2a\\).",
+              "work": "\\(A = b(2a) = 2ab\\)"
+            },
+            {
+              "explain": "Therefore, the area of the trapezium is \\(2ab\\text{ cm}^2\\).",
+              "work": "\\(\\text{Answer: } 2ab\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 128\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"128\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"52,96 212,96 160,40 84,40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"226\" y1=\"40\" x2=\"226\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"122\" y=\"30\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">(a − b) cm</text><text x=\"132\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">(a + b) cm</text><text x=\"234\" y=\"72\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">2b cm</text></svg>"
+          }
         }
       ]
     },
@@ -42896,6 +43422,46 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y7-t3-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A water tank is \\(\\dfrac{1}{a}\\) full of water. When \\(12\\text{ litres}\\) are added, the tank is \\(\\dfrac{1}{b}\\) full. Find the capacity of the tank in terms of \\(a\\) and \\(b\\).",
+          "options": [
+            "\\(\\dfrac{12ab}{a - b}\\text{ litres}\\)",
+            "\\(\\dfrac{12ab}{b - a}\\text{ litres}\\)",
+            "\\(\\dfrac{12(a - b)}{ab}\\text{ litres}\\)",
+            "\\(12(b - a)\\text{ litres}\\)"
+          ],
+          "answer": 0,
+          "hint": "The fraction of the tank filled by the 12 litres is (1/b - 1/a) = (a - b)/(ab). Divide 12 by that fraction (multiply by its reciprocal)!",
+          "keyPoints": [
+            {
+              "text": "capacity of the tank",
+              "note": "(1/b - 1/a) × Capacity = 12 -> Capacity = 12ab / (a - b)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the full capacity be \\(C\\) litres. The \\(12\\text{ litres}\\) increases the tank from \\(\\dfrac{1}{a}C\\) to \\(\\dfrac{1}{b}C\\).",
+              "work": "\\(\\left(\\dfrac{1}{b} - \\dfrac{1}{a}\\right)C = 12\\)"
+            },
+            {
+              "explain": "Combine the two fractions over the common denominator \\(ab\\).",
+              "work": "\\(\\left(\\dfrac{a - b}{ab}\\right)C = 12\\)"
+            },
+            {
+              "explain": "Multiply both sides by the reciprocal \\(\\dfrac{ab}{a - b}\\) to isolate \\(C\\).",
+              "work": "\\(C = \\dfrac{12ab}{a - b}\\)"
+            },
+            {
+              "explain": "Check with \\(a = 4, b = 2\\): \\(\\dfrac{1}{4}\\) to \\(\\dfrac{1}{2}\\) adds \\(\\dfrac{1}{4}C = 12 \\implies C = 48\\), and \\(\\dfrac{12(4)(2)}{4 - 2} = 48\\). Exact!",
+              "work": "\\(\\text{Answer: } \\dfrac{12ab}{a - b}\\text{ litres}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
