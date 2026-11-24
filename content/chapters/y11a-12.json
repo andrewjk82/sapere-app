@@ -1888,6 +1888,62 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kings2022-y12a-q7",
+          "type": "mc",
+          "stem": "In a classroom, students were asked what sports club they are members of and the results are shown in the Venn diagram below. A student who is a member of a soccer club is chosen at random. What is the probability that they are also a member of the surf club?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 285\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><circle cx=\"200\" cy=\"100\" r=\"75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"145\" cy=\"180\" r=\"75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"255\" cy=\"180\" r=\"75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"200.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Surf Club</text><text x=\"75.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AFL</text><text x=\"325.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Soccer</text><text x=\"200.0\" y=\"77.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"150.0\" y=\"127.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"250.0\" y=\"127.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"200.0\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"100.0\" y=\"210.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"200.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"305.0\" y=\"210.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{2}{9}\\)",
+            "\\(\\dfrac{4}{11}\\)",
+            "\\(\\dfrac{7}{18}\\)",
+            "\\(\\dfrac{2}{5}\\)"
+          ],
+          "answer": 2,
+          "hint": "This is conditional probability: the sample space is only the SOCCER circle. Add the four numbers in the soccer circle, then pick out those also in the surf circle.",
+          "steps": [
+            {
+              "explain": "We are told the student plays soccer, so only the soccer circle matters (yellow). Add its four regions: only soccer 6, soccer and AFL only 5, all three 3, soccer and surf only 4.",
+              "work": "\\(n(\\text{Soccer})=6+5+3+4=18\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 285\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><circle cx=\"255\" cy=\"180\" r=\"75\" fill=\"#fde68a\" fill-opacity=\"0.55\"/><circle cx=\"200\" cy=\"100\" r=\"75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"145\" cy=\"180\" r=\"75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"255\" cy=\"180\" r=\"75\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"200.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Surf Club</text><text x=\"75.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AFL</text><text x=\"325.0\" y=\"262.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Soccer</text><text x=\"200.0\" y=\"77.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"150.0\" y=\"127.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"250.0\" y=\"127.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"200.0\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"100.0\" y=\"210.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"200.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"305.0\" y=\"210.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"330.0\" y=\"240.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Soccer = 4+3+5+6</text><circle cx=\"250\" cy=\"122\" r=\"15\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.6\"/><circle cx=\"200\" cy=\"150\" r=\"15\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.6\"/><text x=\"55.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Soccer AND Surf = 4+3</text></svg>"
+              }
+            },
+            {
+              "explain": "Of these 18, the ones who are also in the surf club are the two regions where the soccer and surf circles overlap (green rings): soccer and surf only 4, and all three clubs 3.",
+              "work": "\\(n(\\text{Soccer}\\cap\\text{Surf})=4+3=7\\)"
+            },
+            {
+              "explain": "Conditional probability: \\(P(\\text{Surf}\\mid\\text{Soccer})=\\dfrac{n(\\text{Soccer}\\cap\\text{Surf})}{n(\\text{Soccer})}\\).",
+              "work": "\\(P=\\dfrac{7}{18}\\)"
+            },
+            {
+              "explain": "Option D \\(\\dfrac{2}{5}\\) would use the wrong total; A and B use incomplete counts.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that they are also a member of the surf club",
+              "note": "Given soccer: count the soccer circle as the total and the overlap with surf as the favourable."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2246,6 +2302,60 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kings2022-y12a-q15",
+          "type": "mc",
+          "stem": "James and Kyle are both goal kickers for their respective teams. The probability that James kicks a goal is \\(\\dfrac{2}{7}\\) and the probability that Kyle kicks a goal is \\(\\dfrac{5}{8}\\). What is the probability that, on their next 3 attempts at goal, at least one of the them kicks a goal?",
+          "difficulty": "hard",
+          "options": [
+            "\\(0.98\\)",
+            "\\(0.73\\)",
+            "\\(0.82\\)",
+            "\\(0.02\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"At least one\\\" is easiest as \\(1-P(\\text{none})\\). First find the probability that BOTH miss on one attempt, then cube it for three attempts.",
+          "steps": [
+            {
+              "explain": "Use the complement: \\(P(\\text{at least one goal})=1-P(\\text{no goals at all})\\).",
+              "work": "\\(P(\\text{at least one})=1-P(\\text{none})\\)"
+            },
+            {
+              "explain": "On one attempt each, James misses with probability \\(1-\\dfrac{2}{7}=\\dfrac{5}{7}\\) and Kyle misses with probability \\(1-\\dfrac{5}{8}=\\dfrac{3}{8}\\). They kick independently, so multiply.",
+              "work": "\\(P(\\text{both miss})=\\dfrac{5}{7}\\times\\dfrac{3}{8}=\\dfrac{15}{56}\\)"
+            },
+            {
+              "explain": "For 3 attempts each, EVERY attempt has to be a double miss; the attempts are independent, so cube.",
+              "work": "\\(P(\\text{none in 3 attempts})=\\left(\\dfrac{15}{56}\\right)^{3}=\\dfrac{3375}{175\\,616}\\approx0.0192\\)"
+            },
+            {
+              "explain": "Subtract from 1.",
+              "work": "\\(P(\\text{at least one})=1-0.0192=0.9808\\approx0.98\\)"
+            },
+            {
+              "explain": "Option B (0.73) is only for ONE attempt (\\(1-\\dfrac{15}{56}\\)); option D is \\(P(\\text{none})\\) itself.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "at least one of the them kicks a goal",
+              "note": "At least one means one minus the probability of none; cube for three independent attempts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -5872,6 +5982,60 @@
           "meta": {
             "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
             "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kings2022-y12a-q9",
+          "type": "mc",
+          "stem": "A box contains \\(n\\) marbles. Let \\(k\\) represent the red marbles and the remaining marbles are blue. Two marbles are chosen from the box. If the first marble is not replaced after the second is chosen, then what is probability that both marbles are the same colour?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{k^{2}+(n-k)^{2}}{n^{2}}\\)",
+            "\\(\\dfrac{2k(n-k-1)}{n(n-1)}\\)",
+            "\\(\\dfrac{k^{2}+(n-k-1)^{2}}{n^{2}}\\)",
+            "\\(\\dfrac{k(k-1)+(n-k)(n-k-1)}{n(n-1)}\\)"
+          ],
+          "answer": 3,
+          "hint": "Same colour means RED then RED, or BLUE then BLUE. Without replacement, both the numerator and the denominator drop by 1 for the second pick.",
+          "steps": [
+            {
+              "explain": "Number of blue marbles \\(=n-k\\). Two ways to get the same colour: both red or both blue. Add the two probabilities (the ways are mutually exclusive).",
+              "work": "\\(P(\\text{same})=P(RR)+P(BB)\\)"
+            },
+            {
+              "explain": "Both red: first pick \\(\\dfrac{k}{n}\\); the red is NOT replaced, so there are \\(k-1\\) red among \\(n-1\\) marbles.",
+              "work": "\\(P(RR)=\\dfrac{k}{n}\\times\\dfrac{k-1}{n-1}=\\dfrac{k(k-1)}{n(n-1)}\\)"
+            },
+            {
+              "explain": "Both blue: \\(n-k\\) blue among \\(n\\), then \\(n-k-1\\) blue among \\(n-1\\).",
+              "work": "\\(P(BB)=\\dfrac{n-k}{n}\\times\\dfrac{n-k-1}{n-1}=\\dfrac{(n-k)(n-k-1)}{n(n-1)}\\)"
+            },
+            {
+              "explain": "Add (same denominator).",
+              "work": "\\(P(\\text{same})=\\dfrac{k(k-1)+(n-k)(n-k-1)}{n(n-1)}\\)"
+            },
+            {
+              "explain": "Check with \\(n=4\\), \\(k=2\\): \\(\\dfrac{2\\cdot1+2\\cdot1}{4\\cdot3}=\\dfrac{1}{3}\\). Options A and C have denominator \\(n^{2}\\) (that is for picking WITH replacement).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is probability that both marbles are the same colour",
+              "note": "Without replacement: second pick has one fewer marble of the colour and one fewer in total."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
             "grade": "11",
             "origin": "teacher"
           }

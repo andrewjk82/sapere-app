@@ -23562,6 +23562,70 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kings2022-y12a-q20",
+          "type": "mc",
+          "stem": "The circle \\(x^{2}-4x+y^{2}+2y-5=0\\) is reflected in the \\(y\\)-axis. Determine the coordinates of the centre and radius of the reflected circle.",
+          "difficulty": "hard",
+          "options": [
+            "Centre \\((-2,-1)\\), radius \\(\\sqrt{10}\\)",
+            "Centre \\((2,-1)\\), radius \\(\\sqrt{10}\\)",
+            "Centre \\((-2,1)\\), radius \\(\\sqrt{10}\\)",
+            "Centre \\((-2,-1)\\), radius \\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square to get \\((x-a)^{2}+(y-b)^{2}=r^{2}\\). Reflecting in the \\(y\\)-axis changes the SIGN of the \\(x\\)-coordinate of the centre only; the radius stays the same.",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\) terms and the \\(y\\) terms and move the constant to the right.",
+              "work": "\\(x^{2}-4x+y^{2}+2y=5\\)"
+            },
+            {
+              "explain": "Complete the square: add \\(\\left(\\dfrac{4}{2}\\right)^{2}=4\\) for \\(x\\) and \\(\\left(\\dfrac{2}{2}\\right)^{2}=1\\) for \\(y\\) to BOTH sides.",
+              "work": "\\(x^{2}-4x+4+y^{2}+2y+1=5+4+1\\)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\((x-2)^{2}+(y+1)^{2}=10\\)"
+            },
+            {
+              "explain": "The original circle has centre \\((2,-1)\\) and radius \\(\\sqrt{10}\\) (orange).",
+              "work": "\\(\\text{centre }(2,-1),\\quad r=\\sqrt{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 290\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"26.0\" x2=\"32.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"26.0\" x2=\"60.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"26.0\" x2=\"88.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"26.0\" x2=\"116.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"144.0\" y1=\"26.0\" x2=\"144.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"26.0\" x2=\"172.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"26.0\" x2=\"200.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"228.0\" y1=\"26.0\" x2=\"228.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"26.0\" x2=\"256.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"284.0\" y1=\"26.0\" x2=\"284.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"312.0\" y1=\"26.0\" x2=\"312.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"340.0\" y1=\"26.0\" x2=\"340.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"368.0\" y1=\"26.0\" x2=\"368.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"250.0\" x2=\"368.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"222.0\" x2=\"368.0\" y2=\"222.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"194.0\" x2=\"368.0\" y2=\"194.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"166.0\" x2=\"368.0\" y2=\"166.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"138.0\" x2=\"368.0\" y2=\"138.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"110.0\" x2=\"368.0\" y2=\"110.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"82.0\" x2=\"368.0\" y2=\"82.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"54.0\" x2=\"368.0\" y2=\"54.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"26.0\" x2=\"368.0\" y2=\"26.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20.8\" y1=\"110.0\" x2=\"384.8\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"255.6\" x2=\"200.0\" y2=\"14.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"384.8\" y1=\"110.0\" x2=\"377.9\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"384.8\" y1=\"110.0\" x2=\"377.9\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"14.8\" x2=\"196.0\" y2=\"21.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"14.8\" x2=\"204.0\" y2=\"21.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"382.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"210.0\" y=\"14.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"256\" cy=\"138\" r=\"88.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><circle cx=\"256\" cy=\"138\" r=\"4.5\" fill=\"#d97706\"/><text x=\"264.0\" y=\"156.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, −1)</text></svg>"
+              }
+            },
+            {
+              "explain": "Reflect in the \\(y\\)-axis: \\((x,y)\\to(-x,y)\\). The centre moves to \\((-2,-1)\\) (green); a reflection does not change size, so \\(r=\\sqrt{10}\\).",
+              "work": "\\(\\text{reflected centre }(-2,-1),\\quad r=\\sqrt{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 290\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"26.0\" x2=\"32.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"26.0\" x2=\"60.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"26.0\" x2=\"88.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"116.0\" y1=\"26.0\" x2=\"116.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"144.0\" y1=\"26.0\" x2=\"144.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"26.0\" x2=\"172.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"26.0\" x2=\"200.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"228.0\" y1=\"26.0\" x2=\"228.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"26.0\" x2=\"256.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"284.0\" y1=\"26.0\" x2=\"284.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"312.0\" y1=\"26.0\" x2=\"312.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"340.0\" y1=\"26.0\" x2=\"340.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"368.0\" y1=\"26.0\" x2=\"368.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"250.0\" x2=\"368.0\" y2=\"250.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"222.0\" x2=\"368.0\" y2=\"222.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"194.0\" x2=\"368.0\" y2=\"194.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"166.0\" x2=\"368.0\" y2=\"166.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"138.0\" x2=\"368.0\" y2=\"138.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"110.0\" x2=\"368.0\" y2=\"110.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"82.0\" x2=\"368.0\" y2=\"82.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"54.0\" x2=\"368.0\" y2=\"54.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"26.0\" x2=\"368.0\" y2=\"26.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"20.8\" y1=\"110.0\" x2=\"384.8\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"255.6\" x2=\"200.0\" y2=\"14.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"384.8\" y1=\"110.0\" x2=\"377.9\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"384.8\" y1=\"110.0\" x2=\"377.9\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"14.8\" x2=\"196.0\" y2=\"21.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"14.8\" x2=\"204.0\" y2=\"21.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"382.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"210.0\" y=\"14.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"256\" cy=\"138\" r=\"88.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><circle cx=\"256\" cy=\"138\" r=\"4.5\" fill=\"#d97706\"/><text x=\"264.0\" y=\"156.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, −1)</text><circle cx=\"144\" cy=\"138\" r=\"88.5\" fill=\"#a7f3d0\" fill-opacity=\"0.3\" stroke=\"#047857\" stroke-width=\"3.2\"/><circle cx=\"144\" cy=\"138\" r=\"4.5\" fill=\"#047857\"/><text x=\"136.0\" y=\"156.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(−2, −1)</text><line x1=\"200.0\" y1=\"255.6\" x2=\"200.0\" y2=\"14.8\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"206.0\" y=\"37.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">mirror: y-axis</text><text x=\"99.7\" y=\"132.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r = √10</text></svg>"
+              }
+            },
+            {
+              "explain": "Option B is the original circle; option C reflects in the \\(x\\)-axis; option D gives the radius squared.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine the coordinates of the centre and radius of the reflected circle",
+              "note": "Complete the square, then reflect only the centre; the radius is unchanged."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

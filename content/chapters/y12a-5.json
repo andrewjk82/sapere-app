@@ -6842,6 +6842,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kings2022-y12a-q19",
+          "type": "mc",
+          "stem": "Differentiate \\(\\ln(\\sin x)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\cot x\\)",
+            "\\(-\\cot x\\)",
+            "\\(\\dfrac{1}{\\sin x}\\)",
+            "\\(\\cos x\\ln(\\sin x)\\)"
+          ],
+          "answer": 0,
+          "hint": "Chain rule for logs: \\(\\dfrac{d}{dx}\\ln u=\\dfrac{u'}{u}\\). Here \\(u=\\sin x\\).",
+          "steps": [
+            {
+              "explain": "Identify the inside function \\(u=\\sin x\\) and its derivative \\(u'=\\cos x\\).",
+              "work": "\\(u=\\sin x,\\qquad u'=\\cos x\\)"
+            },
+            {
+              "explain": "Use \\(\\dfrac{d}{dx}\\ln u=\\dfrac{u'}{u}\\) (derivative of the inside divided by the inside).",
+              "work": "\\(\\dfrac{d}{dx}\\ln(\\sin x)=\\dfrac{\\cos x}{\\sin x}\\)"
+            },
+            {
+              "explain": "Recognise \\(\\dfrac{\\cos x}{\\sin x}=\\cot x\\).",
+              "work": "\\(=\\cot x\\)"
+            },
+            {
+              "explain": "Option C forgets the \\(\\cos x\\) (differentiating \\(\\ln x\\) instead of \\(\\ln u\\)); option D treats it as a product.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate",
+              "note": "Derivative of ln u is u dash over u; cos over sin is cot."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -14236,6 +14286,60 @@
           "meta": {
             "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kings2022-y12a-q16",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{2}^{3}\\dfrac{6x^{2}}{x^{3}-2}\\,dx\\). Give your answer in exact form.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\ln\\dfrac{625}{36}\\)",
+            "\\(\\ln\\dfrac{25}{6}\\)",
+            "\\(\\ln\\dfrac{625}{6}\\)",
+            "\\(2\\ln19\\)"
+          ],
+          "answer": 0,
+          "hint": "The top is a multiple of the derivative of the bottom: \\(\\dfrac{d}{dx}(x^{3}-2)=3x^{2}\\). Use \\(\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|\\).",
+          "steps": [
+            {
+              "explain": "Compare numerator and denominator: the derivative of \\(x^{3}-2\\) is \\(3x^{2}\\), and \\(6x^{2}=2\\times3x^{2}\\).",
+              "work": "\\(\\dfrac{6x^{2}}{x^{3}-2}=2\\times\\dfrac{3x^{2}}{x^{3}-2}\\)"
+            },
+            {
+              "explain": "Use \\(\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|\\) (or the substitution \\(u=x^{3}-2\\), \\(du=3x^{2}dx\\)).",
+              "work": "\\(\\int_{2}^{3}\\dfrac{6x^{2}}{x^{3}-2}dx=2\\left[\\ln|x^{3}-2|\\right]_{2}^{3}\\)"
+            },
+            {
+              "explain": "Substitute the limits: \\(3^{3}-2=25\\) and \\(2^{3}-2=6\\).",
+              "work": "\\(=2\\ln25-2\\ln6\\)"
+            },
+            {
+              "explain": "Use the log law \\(\\ln a-\\ln b=\\ln\\dfrac{a}{b}\\) and \\(2\\ln a=\\ln a^{2}\\).",
+              "work": "\\(=2\\ln\\dfrac{25}{6}=\\ln\\left(\\dfrac{25}{6}\\right)^{2}=\\ln\\dfrac{625}{36}\\)"
+            },
+            {
+              "explain": "Option B forgets the factor 2; option D subtracts inside (\\(25-6=19\\)) which the log law does not allow.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Numerator is a multiple of the derivative of the denominator, so the answer is a log."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
             "grade": "12",
             "origin": "teacher"
           }

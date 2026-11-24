@@ -8560,6 +8560,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kings2022-y12a-q14",
+          "type": "mc",
+          "stem": "Show that when \\(f(x)=e^{x}(x^{2}+9)^{3}\\) is differentiated, it becomes \\(f'(x)=e^{x}(x^{2}+9)^{2}(x+3)^{2}\\). Which working correctly shows this?",
+          "difficulty": "hard",
+          "options": [
+            "\\(f'(x)=e^{x}\\cdot6x(x^{2}+9)^{2}+e^{x}(x^{2}+9)^{3}=e^{x}(x^{2}+9)^{2}\\left[6x+(x^{2}+9)\\right]=e^{x}(x^{2}+9)^{2}(x+3)^{2}\\)",
+            "\\(f'(x)=e^{x}\\cdot3(x^{2}+9)^{2}+e^{x}(x^{2}+9)^{3}=e^{x}(x^{2}+9)^{2}\\left[3+(x^{2}+9)\\right]=e^{x}(x^{2}+9)^{2}(x^{2}+12)\\)",
+            "\\(f'(x)=e^{x}\\cdot6x(x^{2}+9)^{2}=e^{x}(x^{2}+9)^{2}\\cdot6x\\)",
+            "\\(f'(x)=e^{x}\\cdot6x(x^{2}+9)^{2}+e^{x}(x^{2}+9)^{3}=e^{x}(x^{2}+9)^{2}\\left[6x-(x^{2}+9)\\right]=e^{x}(x^{2}+9)^{2}(x-3)^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the product rule \\(f'=u'v+uv'\\) with \\(u=e^{x}\\) and \\(v=(x^{2}+9)^{3}\\) (chain rule for \\(v'\\)). Then take out the common factor \\(e^{x}(x^{2}+9)^{2}\\).",
+          "steps": [
+            {
+              "explain": "Choose the two factors.",
+              "work": "\\(u=e^{x},\\qquad v=(x^{2}+9)^{3}\\)"
+            },
+            {
+              "explain": "Differentiate each. \\(u'=e^{x}\\). For \\(v\\) use the chain rule: bring down the power 3, reduce the power to 2, and multiply by the derivative of the inside \\(x^{2}+9\\), which is \\(2x\\).",
+              "work": "\\(u'=e^{x},\\qquad v'=3(x^{2}+9)^{2}\\cdot2x=6x(x^{2}+9)^{2}\\)"
+            },
+            {
+              "explain": "Product rule: \\(f'(x)=u'v+uv'\\).",
+              "work": "\\(f'(x)=e^{x}(x^{2}+9)^{3}+e^{x}\\cdot6x(x^{2}+9)^{2}\\)"
+            },
+            {
+              "explain": "Both terms contain \\(e^{x}(x^{2}+9)^{2}\\); factorise it out (the first term keeps one factor \\(x^{2}+9\\), the second keeps \\(6x\\)).",
+              "work": "\\(f'(x)=e^{x}(x^{2}+9)^{2}\\left[(x^{2}+9)+6x\\right]\\)"
+            },
+            {
+              "explain": "Rearrange the bracket: \\(x^{2}+6x+9\\) is a perfect square \\((x+3)^{2}\\).",
+              "work": "\\(f'(x)=e^{x}(x^{2}+9)^{2}(x+3)^{2}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(2x\\) from the chain rule (\\(v'=3(x^{2}+9)^{2}\\)); C leaves out the \\(u'v\\) term; D has a sign error in the bracket.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that when",
+              "note": "Product rule, chain rule for the cube, then factor out the common terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -15670,6 +15728,60 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kings2022-y12a-q1",
+          "type": "mc",
+          "stem": "What is \\(\\int e^{2x}-e\\,dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{e^{2x}}{2}-e+c\\)",
+            "\\(\\dfrac{e^{2x}}{2}-ex+c\\)",
+            "\\(2e^{2x}-e+c\\)",
+            "\\(2e^{2x}-ex+c\\)"
+          ],
+          "answer": 1,
+          "hint": "Integrate each term separately. For \\(e^{ax}\\) divide by \\(a\\); remember \\(e\\) on its own is just a number (a constant), like 3.",
+          "steps": [
+            {
+              "explain": "Split the integral into two terms.",
+              "work": "\\(\\int e^{2x}-e\\,dx=\\int e^{2x}\\,dx-\\int e\\,dx\\)"
+            },
+            {
+              "explain": "First term: \\(\\int e^{ax}dx=\\dfrac{e^{ax}}{a}+c\\) (the reverse of the chain rule: differentiating \\(e^{2x}\\) gives \\(2e^{2x}\\), so we must DIVIDE by 2).",
+              "work": "\\(\\int e^{2x}\\,dx=\\dfrac{e^{2x}}{2}\\)"
+            },
+            {
+              "explain": "Second term: \\(e\\approx2.718\\) is a constant (it has no \\(x\\)), so \\(\\int e\\,dx=e\\cdot x\\), just like \\(\\int 3\\,dx=3x\\).",
+              "work": "\\(\\int e\\,dx=ex\\)"
+            },
+            {
+              "explain": "Combine and add the constant of integration.",
+              "work": "\\(\\dfrac{e^{2x}}{2}-ex+c\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\left(\\dfrac{e^{2x}}{2}-ex\\right)=e^{2x}-e\\) ✓. Options C and D multiply by 2 instead of dividing; option A forgets the \\(x\\) in \\(ex\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is",
+              "note": "Divide e to the power ax by a; the constant e integrates to e times x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
             "grade": "12",
             "origin": "teacher"
           }

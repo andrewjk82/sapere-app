@@ -30535,6 +30535,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kings2022-y12a-q11",
+          "type": "mc",
+          "stem": "Calculate the sum of the arithmetic series \\(6+13+20+\\cdots+1105\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(87\\,769\\)",
+            "\\(86\\,664\\)",
+            "\\(175\\,538\\)",
+            "\\(87\\,058\\)"
+          ],
+          "answer": 0,
+          "hint": "First find how many terms there are using \\(T_{n}=a+(n-1)d\\), then use \\(S_{n}=\\dfrac{n}{2}(a+l)\\).",
+          "steps": [
+            {
+              "explain": "Identify the first term and common difference: \\(a=6\\), \\(d=13-6=7\\), last term \\(l=1105\\).",
+              "work": "\\(a=6,\\quad d=7,\\quad l=1105\\)"
+            },
+            {
+              "explain": "Find the number of terms by setting the general term equal to the last term.",
+              "work": "\\(1105=6+(n-1)\\times7\\)"
+            },
+            {
+              "explain": "Subtract 6, then divide by 7: \\(1099=7(n-1)\\), so \\(n-1=157\\).",
+              "work": "\\(n=158\\)"
+            },
+            {
+              "explain": "Use the sum formula \\(S_{n}=\\dfrac{n}{2}(a+l)\\).",
+              "work": "\\(S_{158}=\\dfrac{158}{2}(6+1105)=79\\times1111\\)"
+            },
+            {
+              "explain": "Multiply: \\(79\\times1111=79\\times1000+79\\times111=79\\,000+8769\\).",
+              "work": "\\(S_{158}=87\\,769\\)"
+            },
+            {
+              "explain": "Option C forgot to halve (\\(158\\times1111\\)); option B uses 157 terms.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the sum of the arithmetic series",
+              "note": "Find n from the last term, then half n times (first plus last)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

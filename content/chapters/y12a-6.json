@@ -3416,6 +3416,59 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kings2022-y12a-q27a",
+          "type": "mc",
+          "stem": "The hours of screen time a student spends in a fortnight can be modelled by \\(h(t)=a\\sin\\dfrac{\\pi t}{7}+b\\) where \\(t\\) is time in days and \\(0\\le t\\le14\\). The hours of screen time reaches a maximum of 5 hours half way through day 3 and a minimum of 1 hour half way through day 10. The graph of \\(h(t)\\) is shown below. What are the values of \\(a\\) and \\(b\\)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"70.0\" y1=\"220.0\" x2=\"265.6\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"220.0\" x2=\"70.0\" y2=\"114.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"265.6\" y1=\"220.0\" x2=\"259.6\" y2=\"216.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"265.6\" y1=\"220.0\" x2=\"259.6\" y2=\"223.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"114.4\" x2=\"66.5\" y2=\"120.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"114.4\" x2=\"73.5\" y2=\"120.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"132.0\" x2=\"70.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"62.0\" y=\"136.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"257.6\" y=\"236.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><text x=\"268.3\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"78.0\" y=\"110.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h(t)</text><text x=\"163.8\" y=\"254.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">days</text><text transform=\"translate(26,176.0) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#475569\">hours of screen time</text><polyline points=\"70.0,193.6 70.9,193.0 71.9,192.5 72.8,191.9 73.8,191.4 74.7,190.8 75.6,190.3 76.6,189.8 77.5,189.2 78.4,188.7 79.4,188.2 80.3,187.6 81.3,187.1 82.2,186.6 83.1,186.1 84.1,185.6 85.0,185.1 85.9,184.6 86.9,184.2 87.8,183.7 88.8,183.3 89.7,182.8 90.6,182.4 91.6,182.0 92.5,181.6 93.5,181.2 94.4,180.8 95.3,180.4 96.3,180.0 97.2,179.7 98.1,179.4 99.1,179.0 100.0,178.7 101.0,178.5 101.9,178.2 102.8,177.9 103.8,177.7 104.7,177.4 105.6,177.2 106.6,177.0 107.5,176.9 108.5,176.7 109.4,176.6 110.3,176.4 111.3,176.3 112.2,176.2 113.1,176.1 114.1,176.1 115.0,176.0 116.0,176.0 116.9,176.0 117.8,176.0 118.8,176.0 119.7,176.1 120.7,176.1 121.6,176.2 122.5,176.3 123.5,176.4 124.4,176.6 125.3,176.7 126.3,176.9 127.2,177.0 128.2,177.2 129.1,177.4 130.0,177.7 131.0,177.9 131.9,178.2 132.8,178.5 133.8,178.7 134.7,179.0 135.7,179.4 136.6,179.7 137.5,180.0 138.5,180.4 139.4,180.8 140.4,181.2 141.3,181.6 142.2,182.0 143.2,182.4 144.1,182.8 145.0,183.3 146.0,183.7 146.9,184.2 147.9,184.6 148.8,185.1 149.7,185.6 150.7,186.1 151.6,186.6 152.5,187.1 153.5,187.6 154.4,188.2 155.4,188.7 156.3,189.2 157.2,189.8 158.2,190.3 159.1,190.8 160.0,191.4 161.0,191.9 161.9,192.5 162.9,193.0 163.8,193.6 164.7,194.2 165.7,194.7 166.6,195.3 167.6,195.8 168.5,196.4 169.4,196.9 170.4,197.4 171.3,198.0 172.2,198.5 173.2,199.0 174.1,199.6 175.1,200.1 176.0,200.6 176.9,201.1 177.9,201.6 178.8,202.1 179.7,202.6 180.7,203.0 181.6,203.5 182.6,203.9 183.5,204.4 184.4,204.8 185.4,205.2 186.3,205.6 187.2,206.0 188.2,206.4 189.1,206.8 190.1,207.2 191.0,207.5 191.9,207.8 192.9,208.2 193.8,208.5 194.8,208.7 195.7,209.0 196.6,209.3 197.6,209.5 198.5,209.8 199.4,210.0 200.4,210.2 201.3,210.3 202.3,210.5 203.2,210.6 204.1,210.8 205.1,210.9 206.0,211.0 206.9,211.1 207.9,211.1 208.8,211.2 209.8,211.2 210.7,211.2 211.6,211.2 212.6,211.2 213.5,211.1 214.5,211.1 215.4,211.0 216.3,210.9 217.3,210.8 218.2,210.6 219.1,210.5 220.1,210.3 221.0,210.2 222.0,210.0 222.9,209.8 223.8,209.5 224.8,209.3 225.7,209.0 226.6,208.7 227.6,208.5 228.5,208.2 229.5,207.8 230.4,207.5 231.3,207.2 232.3,206.8 233.2,206.4 234.2,206.0 235.1,205.6 236.0,205.2 237.0,204.8 237.9,204.4 238.8,203.9 239.8,203.5 240.7,203.0 241.7,202.6 242.6,202.1 243.5,201.6 244.5,201.1 245.4,200.6 246.3,200.1 247.3,199.6 248.2,199.0 249.2,198.5 250.1,198.0 251.0,197.4 252.0,196.9 252.9,196.4 253.8,195.8 254.8,195.3 255.7,194.7 256.7,194.2 257.6,193.6\" fill=\"none\" stroke=\"#c0504d\" stroke-width=\"2.4\"/></svg>"
+          },
+          "options": [
+            "\\(a=2,\\ b=3\\)",
+            "\\(a=3,\\ b=2\\)",
+            "\\(a=4,\\ b=3\\)",
+            "\\(a=2,\\ b=5\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(y=a\\sin(\\ldots)+b\\): the amplitude \\(a=\\dfrac{\\max-\\min}{2}\\) and the centre line \\(b=\\dfrac{\\max+\\min}{2}\\).",
+          "steps": [
+            {
+              "explain": "The maximum is 5 and the minimum is 1.",
+              "work": "\\(\\max=5,\\qquad\\min=1\\)"
+            },
+            {
+              "explain": "Amplitude: half the distance from minimum to maximum.",
+              "work": "\\(a=\\dfrac{5-1}{2}=2\\)"
+            },
+            {
+              "explain": "Centre line: the midpoint of the maximum and the minimum.",
+              "work": "\\(b=\\dfrac{5+1}{2}=3\\)"
+            },
+            {
+              "explain": "Check: \\(h(t)=2\\sin\\dfrac{\\pi t}{7}+3\\) has maximum \\(2+3=5\\) when \\(\\dfrac{\\pi t}{7}=\\dfrac{\\pi}{2}\\), i.e. \\(t=3.5\\) (half way through day 3) ✓, and minimum \\(-2+3=1\\) at \\(t=10.5\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What are the values of",
+              "note": "Amplitude is half of max minus min; b is the midpoint of max and min."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -12891,6 +12944,67 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 420\" style=\"max-width:480px\"><rect width=\"480\" height=\"420\" fill=\"white\"/><path d=\"M30 250H436M200 274V74\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"439.8\" y=\"255.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\">x</text><text x=\"208.0\" y=\"74.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"14\" fill=\"#1e293b\">y</text><circle cx=\"200\" cy=\"250\" r=\"150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><path d=\"M200.0 100.0L319.9 100.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" fill=\"none\" stroke-dasharray=\"6 4\"/><text x=\"323.9\" y=\"104.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">y = 1</text><path d=\"M395.8 250.0L269.9 100.0\" stroke=\"#475569\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M200.0 250.0L314.9 153.6\" stroke=\"#475569\" stroke-width=\"2.2\" fill=\"none\"/><circle cx=\"200.0\" cy=\"250.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"314.9\" cy=\"153.6\" r=\"4\" fill=\"#334155\"/><circle cx=\"395.8\" cy=\"250.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"269.9\" cy=\"100.0\" r=\"4\" fill=\"#334155\"/><circle cx=\"200.0\" cy=\"100.0\" r=\"4\" fill=\"#334155\"/><text x=\"190.0\" y=\"268.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"15\" fill=\"#1e293b\" font-weight=\"700\">O</text><text x=\"324.9\" y=\"149.6\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"15\" fill=\"#1e293b\" font-weight=\"700\">T</text><text x=\"399.8\" y=\"270.0\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#1e293b\" font-weight=\"700\">P</text><text x=\"277.9\" y=\"92.0\" text-anchor=\"start\" font-family=\"Arial\" font-size=\"15\" fill=\"#1e293b\" font-weight=\"700\">Q</text><text x=\"190.0\" y=\"104.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"15\" fill=\"#1e293b\" font-weight=\"700\">B</text><text x=\"246.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" fill=\"#b45309\" font-weight=\"700\">θ</text></svg>"
           }
+        },
+        {
+          "id": "kings2022-y12a-q27b",
+          "type": "mc",
+          "stem": "The hours of screen time a student spends in a fortnight can be modelled by \\(h(t)=a\\sin\\dfrac{\\pi t}{7}+b\\) where \\(t\\) is time in days and \\(0\\le t\\le14\\). The hours of screen time reaches a maximum of 5 hours half way through day 3 and a minimum of 1 hour half way through day 10. The graph of \\(h(t)\\) is shown below. With \\(h(t)=2\\sin\\dfrac{\\pi t}{7}+3\\), on what days is the screen time increasing by half an hour?",
+          "difficulty": "hard",
+          "options": [
+            "\\(t\\approx2.18\\) and \\(t\\approx11.8\\) days",
+            "\\(t\\approx2.33\\) and \\(t\\approx11.7\\) days",
+            "\\(t\\approx3.5\\) and \\(t\\approx10.5\\) days",
+            "\\(t\\approx7.0\\) days only"
+          ],
+          "answer": 0,
+          "hint": "\\\"Increasing by half an hour\\\" (per day) means the RATE of change is 0.5, so solve \\(h'(t)=0.5\\) for \\(0\\le t\\le14\\).",
+          "steps": [
+            {
+              "explain": "Differentiate: the derivative of \\(\\sin\\dfrac{\\pi t}{7}\\) is \\(\\dfrac{\\pi}{7}\\cos\\dfrac{\\pi t}{7}\\) (chain rule).",
+              "work": "\\(h'(t)=2\\cdot\\dfrac{\\pi}{7}\\cos\\dfrac{\\pi t}{7}=\\dfrac{2\\pi}{7}\\cos\\dfrac{\\pi t}{7}\\)"
+            },
+            {
+              "explain": "Rate of change is 0.5 hours per day. Set \\(h'(t)=0.5\\) and isolate the cosine.",
+              "work": "\\(\\dfrac{2\\pi}{7}\\cos\\dfrac{\\pi t}{7}=0.5\\ \\Rightarrow\\ \\cos\\dfrac{\\pi t}{7}=\\dfrac{7}{4\\pi}=0.557\\)"
+            },
+            {
+              "explain": "First solution (quadrant 1): \\(\\dfrac{\\pi t}{7}=\\cos^{-1}(0.557)=0.9808\\).",
+              "work": "\\(t=\\dfrac{7\\times0.9808}{\\pi}=2.185\\)"
+            },
+            {
+              "explain": "Second solution: cosine is also positive in quadrant 4, so \\(\\dfrac{\\pi t}{7}=2\\pi-0.9808=5.302\\).",
+              "work": "\\(t=\\dfrac{7\\times5.302}{\\pi}=11.81\\)"
+            },
+            {
+              "explain": "Both lie in \\(0\\le t\\le14\\) and the graph rises (slope \\(+0.5\\)) at both points (green tangents). So \\(t\\approx2.18\\) days (during the 3rd day) and \\(t\\approx11.8\\) days (the printed solution quotes these as 'Day 2' and 'Day 11').",
+              "work": "\\(t\\approx2.18\\ \\text{and}\\ t\\approx11.8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"70.0\" y1=\"220.0\" x2=\"265.6\" y2=\"220.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"220.0\" x2=\"70.0\" y2=\"114.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"265.6\" y1=\"220.0\" x2=\"259.6\" y2=\"216.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"265.6\" y1=\"220.0\" x2=\"259.6\" y2=\"223.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"114.4\" x2=\"66.5\" y2=\"120.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"114.4\" x2=\"73.5\" y2=\"120.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"132.0\" x2=\"70.0\" y2=\"132.0\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"62.0\" y=\"136.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"257.6\" y=\"236.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14</text><text x=\"268.3\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"78.0\" y=\"110.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h(t)</text><text x=\"163.8\" y=\"254.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">days</text><text transform=\"translate(26,176.0) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#475569\">hours of screen time</text><polyline points=\"70.0,193.6 70.9,193.0 71.9,192.5 72.8,191.9 73.8,191.4 74.7,190.8 75.6,190.3 76.6,189.8 77.5,189.2 78.4,188.7 79.4,188.2 80.3,187.6 81.3,187.1 82.2,186.6 83.1,186.1 84.1,185.6 85.0,185.1 85.9,184.6 86.9,184.2 87.8,183.7 88.8,183.3 89.7,182.8 90.6,182.4 91.6,182.0 92.5,181.6 93.5,181.2 94.4,180.8 95.3,180.4 96.3,180.0 97.2,179.7 98.1,179.4 99.1,179.0 100.0,178.7 101.0,178.5 101.9,178.2 102.8,177.9 103.8,177.7 104.7,177.4 105.6,177.2 106.6,177.0 107.5,176.9 108.5,176.7 109.4,176.6 110.3,176.4 111.3,176.3 112.2,176.2 113.1,176.1 114.1,176.1 115.0,176.0 116.0,176.0 116.9,176.0 117.8,176.0 118.8,176.0 119.7,176.1 120.7,176.1 121.6,176.2 122.5,176.3 123.5,176.4 124.4,176.6 125.3,176.7 126.3,176.9 127.2,177.0 128.2,177.2 129.1,177.4 130.0,177.7 131.0,177.9 131.9,178.2 132.8,178.5 133.8,178.7 134.7,179.0 135.7,179.4 136.6,179.7 137.5,180.0 138.5,180.4 139.4,180.8 140.4,181.2 141.3,181.6 142.2,182.0 143.2,182.4 144.1,182.8 145.0,183.3 146.0,183.7 146.9,184.2 147.9,184.6 148.8,185.1 149.7,185.6 150.7,186.1 151.6,186.6 152.5,187.1 153.5,187.6 154.4,188.2 155.4,188.7 156.3,189.2 157.2,189.8 158.2,190.3 159.1,190.8 160.0,191.4 161.0,191.9 161.9,192.5 162.9,193.0 163.8,193.6 164.7,194.2 165.7,194.7 166.6,195.3 167.6,195.8 168.5,196.4 169.4,196.9 170.4,197.4 171.3,198.0 172.2,198.5 173.2,199.0 174.1,199.6 175.1,200.1 176.0,200.6 176.9,201.1 177.9,201.6 178.8,202.1 179.7,202.6 180.7,203.0 181.6,203.5 182.6,203.9 183.5,204.4 184.4,204.8 185.4,205.2 186.3,205.6 187.2,206.0 188.2,206.4 189.1,206.8 190.1,207.2 191.0,207.5 191.9,207.8 192.9,208.2 193.8,208.5 194.8,208.7 195.7,209.0 196.6,209.3 197.6,209.5 198.5,209.8 199.4,210.0 200.4,210.2 201.3,210.3 202.3,210.5 203.2,210.6 204.1,210.8 205.1,210.9 206.0,211.0 206.9,211.1 207.9,211.1 208.8,211.2 209.8,211.2 210.7,211.2 211.6,211.2 212.6,211.2 213.5,211.1 214.5,211.1 215.4,211.0 216.3,210.9 217.3,210.8 218.2,210.6 219.1,210.5 220.1,210.3 221.0,210.2 222.0,210.0 222.9,209.8 223.8,209.5 224.8,209.3 225.7,209.0 226.6,208.7 227.6,208.5 228.5,208.2 229.5,207.8 230.4,207.5 231.3,207.2 232.3,206.8 233.2,206.4 234.2,206.0 235.1,205.6 236.0,205.2 237.0,204.8 237.9,204.4 238.8,203.9 239.8,203.5 240.7,203.0 241.7,202.6 242.6,202.1 243.5,201.6 244.5,201.1 245.4,200.6 246.3,200.1 247.3,199.6 248.2,199.0 249.2,198.5 250.1,198.0 251.0,197.4 252.0,196.9 252.9,196.4 253.8,195.8 254.8,195.3 255.7,194.7 256.7,194.2 257.6,193.6\" fill=\"none\" stroke=\"#c0504d\" stroke-width=\"2.4\"/><line x1=\"72.5\" y1=\"187.8\" x2=\"126.1\" y2=\"170.2\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"99.3\" cy=\"179.0\" r=\"4.5\" fill=\"#dc2626\"/><line x1=\"99.3\" y1=\"179.0\" x2=\"99.3\" y2=\"220.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"99.3\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t ≈ 2.18</text><line x1=\"201.3\" y1=\"217.1\" x2=\"254.9\" y2=\"199.5\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"228.1\" cy=\"208.3\" r=\"4.5\" fill=\"#dc2626\"/><line x1=\"228.1\" y1=\"208.3\" x2=\"228.1\" y2=\"220.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"228.1\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t ≈ 11.8</text><text x=\"163.8\" y=\"146.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">slope = 0.5 hours per day</text></svg>"
+              }
+            },
+            {
+              "explain": "Option C gives the times of the maximum and minimum, where the rate is 0.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "on what days is the screen time increasing by half an hour",
+              "note": "Set the derivative equal to 0.5 and use both cosine solutions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -16783,6 +16897,60 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kings2022-y12a-q12",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}}\\dfrac{\\sin^{2}x}{\\cos^{2}x}+\\sin^{2}x+\\cos^{2}x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(1-\\dfrac{\\sqrt{3}}{3}\\approx0.42\\)",
+            "\\(1-\\sqrt{3}\\approx-0.73\\)",
+            "\\(\\dfrac{\\sqrt{3}}{3}\\approx0.58\\)",
+            "\\(\\dfrac{\\pi}{12}\\approx0.26\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify the integrand first with the identities \\(\\dfrac{\\sin^{2}x}{\\cos^{2}x}=\\tan^{2}x\\), \\(\\sin^{2}x+\\cos^{2}x=1\\) and \\(\\tan^{2}x+1=\\sec^{2}x\\).",
+          "steps": [
+            {
+              "explain": "Rewrite each part: \\(\\dfrac{\\sin^{2}x}{\\cos^{2}x}=\\tan^{2}x\\) and \\(\\sin^{2}x+\\cos^{2}x=1\\).",
+              "work": "\\(\\tan^{2}x+1\\)"
+            },
+            {
+              "explain": "Use the identity \\(\\tan^{2}x+1=\\sec^{2}x\\).",
+              "work": "\\(\\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}}\\sec^{2}x\\,dx\\)"
+            },
+            {
+              "explain": "\\(\\int\\sec^{2}x\\,dx=\\tan x\\) (since \\(\\dfrac{d}{dx}\\tan x=\\sec^{2}x\\)).",
+              "work": "\\(\\left[\\tan x\\right]_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}}=\\tan\\dfrac{\\pi}{4}-\\tan\\dfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Exact values: \\(\\tan\\dfrac{\\pi}{4}=1\\) and \\(\\tan\\dfrac{\\pi}{6}=\\dfrac{1}{\\sqrt{3}}=\\dfrac{\\sqrt{3}}{3}\\).",
+              "work": "\\(1-\\dfrac{\\sqrt{3}}{3}\\approx1-0.5774=0.42\\)"
+            },
+            {
+              "explain": "Option D is what you get by forgetting the first term (only \\(\\int1\\,dx\\)); option B uses \\(\\tan\\dfrac{\\pi}{6}=\\sqrt{3}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Simplify with tan squared plus 1 equals sec squared, then integrate to tan x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
             "grade": "12",
             "origin": "teacher"
           }

@@ -1521,6 +1521,56 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "kings2022-y12a-q3",
+          "type": "mc",
+          "stem": "How many significant figures are there in the first 6 digits of \\(\\sin 45^{\\circ}\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Write out \\(\\sin45^{\\circ}\\) on a calculator, take the first 6 digits (starting from the 0 before the decimal point), then cross out the zeros that are not significant.",
+          "steps": [
+            {
+              "explain": "Evaluate on a calculator: \\(\\sin45^{\\circ}=0.70710678\\ldots\\)",
+              "work": "\\(\\sin45^{\\circ}=0.7071067\\ldots\\)"
+            },
+            {
+              "explain": "The first 6 digits are \\(0,\\ 7,\\ 0,\\ 7,\\ 1,\\ 0\\), so the number is \\(0.70710\\).",
+              "work": "\\(0.70710\\)"
+            },
+            {
+              "explain": "Significant figures start at the first NON-ZERO digit, so the leading 0 (before the decimal point) is NOT significant. The zero between 7 and 7 IS significant (it is trapped between non-zero digits), and the last 0 after the decimal point is significant too.",
+              "work": "\\(0.\\underline{7\\,0\\,7\\,1\\,0}\\ \\to\\ 5\\ \\text{significant figures}\\)"
+            },
+            {
+              "explain": "Option D (6) wrongly counts the leading 0.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many significant figures",
+              "note": "Leading zeros are not significant; zeros between or after non-zero digits are."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8443,6 +8493,60 @@
           "meta": {
             "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
             "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kings2022-y12a-q2",
+          "type": "mc",
+          "stem": "Which of the following is equal to \\(\\dfrac{1}{3\\sqrt{5}-\\sqrt{2}}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3\\sqrt{5}-\\sqrt{2}}{13}\\)",
+            "\\(\\dfrac{3\\sqrt{5}+\\sqrt{2}}{13}\\)",
+            "\\(\\dfrac{3\\sqrt{5}-\\sqrt{2}}{43}\\)",
+            "\\(\\dfrac{3\\sqrt{5}+\\sqrt{2}}{43}\\)"
+          ],
+          "answer": 3,
+          "hint": "Rationalise the denominator: multiply top and bottom by the CONJUGATE \\(3\\sqrt{5}+\\sqrt{2}\\), then use \\((a-b)(a+b)=a^{2}-b^{2}\\).",
+          "steps": [
+            {
+              "explain": "The denominator \\(3\\sqrt{5}-\\sqrt{2}\\) has surds. Its conjugate (change the middle sign) is \\(3\\sqrt{5}+\\sqrt{2}\\). Multiply top and bottom by it (this multiplies by 1, so the value is unchanged).",
+              "work": "\\(\\dfrac{1}{3\\sqrt{5}-\\sqrt{2}}\\times\\dfrac{3\\sqrt{5}+\\sqrt{2}}{3\\sqrt{5}+\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Denominator: difference of two squares \\((a-b)(a+b)=a^{2}-b^{2}\\) with \\(a=3\\sqrt{5}\\), \\(b=\\sqrt{2}\\).",
+              "work": "\\((3\\sqrt{5})^{2}-(\\sqrt{2})^{2}\\)"
+            },
+            {
+              "explain": "\\((3\\sqrt{5})^{2}=9\\times5=45\\) (square the 3 AND the \\(\\sqrt{5}\\)) and \\((\\sqrt{2})^{2}=2\\).",
+              "work": "\\(45-2=43\\)"
+            },
+            {
+              "explain": "The numerator is just \\(1\\times(3\\sqrt{5}+\\sqrt{2})\\).",
+              "work": "\\(\\dfrac{3\\sqrt{5}+\\sqrt{2}}{43}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac{1}{6.708-1.414}=0.1889\\) and \\(\\dfrac{6.708+1.414}{43}=0.1889\\) ✓. Options A and B use 13 (from wrongly squaring \\(3\\sqrt{5}\\) as \\(3\\times5-2\\)); options A and C keep the wrong sign in the numerator.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is equal to",
+              "note": "Multiply by the conjugate, then a squared minus b squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
+            "school": "The King's School",
             "grade": "11",
             "origin": "teacher"
           }
