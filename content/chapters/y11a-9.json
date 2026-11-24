@@ -3751,6 +3751,64 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-q11",
+          "type": "mc",
+          "stem": "Differentiate the following with respect to \\(x\\): \\(\\dfrac{\\sin x}{x^{2}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x\\cos x-2\\sin x}{x^{3}}\\)",
+            "\\(\\dfrac{x\\cos x+2\\sin x}{x^{3}}\\)",
+            "\\(\\dfrac{\\cos x}{2x}\\)",
+            "\\(\\dfrac{x^{2}\\cos x-\\sin x}{x^{4}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Quotient rule: \\(\\left(\\dfrac{u}{v}\\right)'=\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=\\sin x\\) and \\(v=x^{2}\\). Then cancel a common factor of \\(x\\).",
+          "steps": [
+            {
+              "explain": "Name the top and the bottom of the fraction.",
+              "work": "\\(u=\\sin x,\\qquad v=x^{2}\\)"
+            },
+            {
+              "explain": "Differentiate each one separately (\\(\\dfrac{d}{dx}\\sin x=\\cos x\\); power rule for \\(x^{2}\\)).",
+              "work": "\\(u'=\\cos x,\\qquad v'=2x\\)"
+            },
+            {
+              "explain": "Write the quotient rule \\(\\dfrac{vu'-uv'}{v^{2}}\\) — note the order: bottom times derivative of top, MINUS top times derivative of bottom.",
+              "work": "\\(f'(x)=\\dfrac{vu'-uv'}{v^{2}}=\\dfrac{x^{2}\\cos x-\\sin x\\cdot 2x}{\\left(x^{2}\\right)^{2}}\\)"
+            },
+            {
+              "explain": "Simplify the denominator: \\(\\left(x^{2}\\right)^{2}=x^{4}\\).",
+              "work": "\\(f'(x)=\\dfrac{x^{2}\\cos x-2x\\sin x}{x^{4}}\\)"
+            },
+            {
+              "explain": "Every term on top has a factor \\(x\\) and the bottom is \\(x^{4}\\): take out the common factor \\(x\\) and cancel it with one \\(x\\) on the bottom.",
+              "work": "\\(=\\dfrac{x\\left(x\\cos x-2\\sin x\\right)}{x\\cdot x^{3}}=\\dfrac{x\\cos x-2\\sin x}{x^{3}}\\)"
+            },
+            {
+              "explain": "Check by the product rule on \\(\\sin x\\cdot x^{-2}\\): \\(\\cos x\\cdot x^{-2}+\\sin x\\cdot(-2x^{-3})=\\dfrac{x\\cos x-2\\sin x}{x^{3}}\\) ✓. Option B has a plus sign (quotient rule has a MINUS) and option D forgot the \\(2x\\) from \\(v'\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate the following with respect to",
+              "note": "Quotient rule: bottom × top' − top × bottom', all over bottom squared; simplify at the end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

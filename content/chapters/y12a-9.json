@@ -1846,6 +1846,62 @@
             "origin": "teacher",
             "note": "Open response: teacher review."
           }
+        },
+        {
+          "id": "killara2020-y12a-q13a",
+          "type": "mc",
+          "stem": "The random variable \\(X\\) has the probability distribution shown in the table. Find \\(P(1<X\\le 3)\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 110\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"50\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"60.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"60.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"110\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"110\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"142.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><text x=\"142.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><rect x=\"174\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"174\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"206.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"206.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"238\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"238\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"270.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"270.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.4</text><rect x=\"302\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"302\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"334.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"334.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"366\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"366\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"398.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"398.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text></svg>"
+          },
+          "options": [
+            "\\(0.6\\)",
+            "\\(0.8\\)",
+            "\\(0.4\\)",
+            "\\(0.2\\)"
+          ],
+          "answer": 0,
+          "hint": "Read which values of \\(x\\) are included: \\(1<X\\) EXCLUDES 1, and \\(X\\le 3\\) INCLUDES 3. Add those probabilities.",
+          "steps": [
+            {
+              "explain": "The inequality \\(1<X\\le 3\\) means \\(X\\) is bigger than 1 (so 1 itself is NOT included) and at most 3 (so 3 IS included). The possible values are 0, 1, 2, 3, 4, so the values that fit are \\(X=2\\) and \\(X=3\\) (highlighted).",
+              "work": "\\(1<X\\le 3\\ \\Rightarrow\\ X=2\\ \\text{or}\\ 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 110\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"50\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"60.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"60.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"110\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"110\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"142.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><text x=\"142.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><rect x=\"174\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"174\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"206.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"206.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"238\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fde68a\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"238\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fde68a\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"270.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"270.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.4</text><rect x=\"302\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fde68a\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"302\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fde68a\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"334.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"334.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"366\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"366\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"398.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"398.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text></svg>"
+              }
+            },
+            {
+              "explain": "Read their probabilities from the table.",
+              "work": "\\(P(X=2)=0.4,\\qquad P(X=3)=0.2\\)"
+            },
+            {
+              "explain": "The values are different outcomes that cannot happen together, so add the probabilities.",
+              "work": "\\(P(1<X\\le 3)=0.4+0.2=0.6\\)"
+            },
+            {
+              "explain": "Option B (0.8) wrongly includes \\(X=1\\) (0.2); option C and D are just single entries.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(P(1<X\\le 3)\\)",
+              "note": "Strict < excludes the end value, ≤ includes it; add the probabilities of the values that fit."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3179,6 +3235,59 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y12a-q13b",
+          "type": "mc",
+          "stem": "The random variable \\(X\\) has the probability distribution shown in the table (\\(x=0,1,2,3,4\\) with \\(P(X=x)=0.1,\\ 0.2,\\ 0.4,\\ 0.2,\\ 0.1\\)). Find \\(E(X)\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 110\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"50\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"60.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"60.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"110\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"110\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"142.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><text x=\"142.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><rect x=\"174\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"174\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"206.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"206.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"238\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"238\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"270.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"270.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.4</text><rect x=\"302\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"302\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"334.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"334.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"366\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"366\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"398.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"398.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text></svg>"
+          },
+          "options": [
+            "\\(2\\)",
+            "\\(1.2\\)",
+            "\\(2.4\\)",
+            "\\(0.4\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(E(X)=\\sum x\\,P(X=x)\\): multiply each value by its probability, then add all five products.",
+          "steps": [
+            {
+              "explain": "The expected value is the probability-weighted average: \\(E(X)=\\mu=\\sum x\\,P(X=x)\\). Make a row of products \\(x\\,P(X=x)\\) under the table.",
+              "work": "\\(E(X)=\\sum x\\,P(X=x)\\)"
+            },
+            {
+              "explain": "Multiply each \\(x\\) by its probability.",
+              "work": "\\(0\\times0.1=0,\\quad 1\\times0.2=0.2,\\quad 2\\times0.4=0.8,\\quad 3\\times0.2=0.6,\\quad 4\\times0.1=0.4\\)"
+            },
+            {
+              "explain": "Add the five products.",
+              "work": "\\(E(X)=0+0.2+0.8+0.6+0.4=2\\)"
+            },
+            {
+              "explain": "Check: the distribution is symmetric about \\(x=2\\) (0.1, 0.2, 0.4, 0.2, 0.1), so the mean must be 2 ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(E(X)\\)",
+              "note": "Expected value = sum of each value times its probability."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4527,6 +4636,63 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y12a-q13c",
+          "type": "mc",
+          "stem": "The random variable \\(X\\) has the probability distribution shown in the table (\\(x=0,1,2,3,4\\) with \\(P(X=x)=0.1,\\ 0.2,\\ 0.4,\\ 0.2,\\ 0.1\\)). Find the variance of \\(X\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 110\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"50\" width=\"100\" height=\"40\" fill=\"#dbeafe\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"60.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"60.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(X = x)</text><rect x=\"110\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"110\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"142.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><text x=\"142.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><rect x=\"174\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"174\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"206.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"206.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"238\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"238\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"270.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"270.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.4</text><rect x=\"302\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"302\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"334.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"334.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><rect x=\"366\" y=\"10\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"366\" y=\"50\" width=\"64\" height=\"40\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"398.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"398.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text></svg>"
+          },
+          "options": [
+            "\\(1.2\\)",
+            "\\(5.2\\)",
+            "\\(1.1\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "First \\(\\mu=E(X)=2\\). Then \\(\\text{Var}(X)=\\sum(x-\\mu)^{2}P(X=x)\\), or \\(E(X^{2})-\\mu^{2}\\).",
+          "steps": [
+            {
+              "explain": "From part (b), the mean is \\(\\mu=2\\). The variance measures the average squared distance from the mean: \\(\\text{Var}(X)=\\sum (x-\\mu)^{2}\\,P(X=x)\\).",
+              "work": "\\(\\mu=2\\)"
+            },
+            {
+              "explain": "Find \\((x-\\mu)^{2}\\) for each value of \\(x\\).",
+              "work": "\\((0-2)^{2}=4,\\ (1-2)^{2}=1,\\ (2-2)^{2}=0,\\ (3-2)^{2}=1,\\ (4-2)^{2}=4\\)"
+            },
+            {
+              "explain": "Multiply each by its probability.",
+              "work": "\\(4(0.1)=0.4,\\quad 1(0.2)=0.2,\\quad 0(0.4)=0,\\quad 1(0.2)=0.2,\\quad 4(0.1)=0.4\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(\\text{Var}(X)=0.4+0.2+0+0.2+0.4=1.2\\)"
+            },
+            {
+              "explain": "Second method check: \\(E(X^{2})=\\sum x^{2}P=0+0.2+1.6+1.8+1.6=5.2\\), so \\(\\text{Var}(X)=E(X^{2})-\\mu^{2}=5.2-4=1.2\\) ✓. Option B (5.2) is \\(E(X^{2})\\) without subtracting \\(\\mu^{2}\\), and option C is the standard deviation \\(\\sqrt{1.2}\\approx 1.1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the variance of",
+              "note": "Variance = average of (x − mean) squared, or E(X squared) minus mean squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }

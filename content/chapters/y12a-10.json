@@ -8556,6 +8556,135 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-q24a",
+          "type": "mc",
+          "stem": "The queueing time, \\(X\\) minutes, of a customer at the checkout of a supermarket has the probability density function \\(f(x)=\\dfrac{12}{625}x^{2}(k-x)\\) for \\(0\\le x\\le k\\), and \\(f(x)=0\\) otherwise. Show that the value of \\(k\\) is 5. Which working correctly shows this?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\displaystyle\\int_{0}^{k}\\dfrac{12}{625}x^{2}(k-x)\\,dx=1\\Rightarrow\\dfrac{12}{625}\\left[\\dfrac{kx^{3}}{3}-\\dfrac{x^{4}}{4}\\right]_{0}^{k}=\\dfrac{12}{625}\\cdot\\dfrac{k^{4}}{12}=1\\Rightarrow k^{4}=625\\Rightarrow k=5\\) (\\(k>0\\))",
+            "\\(\\displaystyle\\int_{0}^{k}\\dfrac{12}{625}x^{2}(k-x)\\,dx=1\\Rightarrow\\dfrac{12}{625}\\left[\\dfrac{kx^{3}}{3}+\\dfrac{x^{4}}{4}\\right]_{0}^{k}=\\dfrac{12}{625}\\cdot\\dfrac{7k^{4}}{12}=1\\Rightarrow k^{4}=\\dfrac{625}{7}\\)",
+            "\\(f(k)=1\\Rightarrow\\dfrac{12}{625}k^{2}(k-k)=1\\), which gives \\(0=1\\), so \\(k=5\\) cannot be shown",
+            "\\(\\displaystyle\\int_{0}^{k}\\dfrac{12}{625}x^{2}(k-x)\\,dx=0\\Rightarrow k^{4}=0\\Rightarrow k=0\\)"
+          ],
+          "answer": 0,
+          "hint": "For a probability density function the total area under the curve is 1: \\(\\int_{0}^{k}f(x)\\,dx=1\\). Expand \\(x^{2}(k-x)\\), integrate, and solve for \\(k\\).",
+          "steps": [
+            {
+              "explain": "A probability density function must have total area 1 (the probability of ALL possible queueing times is 1). The function is non-zero only on \\([0,k]\\).",
+              "work": "\\(\\int_{0}^{k}f(x)\\,dx=1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><polygon points=\"60.0,235 60.0,235.0 63.8,234.8 67.5,234.3 71.2,233.4 75.0,232.2 78.8,230.6 82.5,228.8 86.2,226.6 90.0,224.2 93.8,221.5 97.5,218.6 101.2,215.4 105.0,212.1 108.8,208.5 112.5,204.7 116.2,200.7 120.0,196.6 123.8,192.3 127.5,187.9 131.2,183.4 135.0,178.8 138.8,174.0 142.5,169.2 146.2,164.3 150.0,159.4 153.8,154.4 157.5,149.4 161.2,144.4 165.0,139.4 168.8,134.5 172.5,129.5 176.2,124.6 180.0,119.8 183.8,115.0 187.5,110.4 191.2,105.8 195.0,101.4 198.8,97.0 202.5,92.9 206.2,88.8 210.0,85.0 213.8,81.3 217.5,77.9 221.2,74.7 225.0,71.7 228.8,68.9 232.5,66.4 236.2,64.1 240.0,62.2 243.8,60.6 247.5,59.2 251.2,58.2 255.0,57.6 258.8,57.2 262.5,57.3 266.2,57.8 270.0,58.6 273.8,59.9 277.5,61.5 281.2,63.7 285.0,66.3 288.8,69.3 292.5,72.8 296.2,76.9 300.0,81.4 303.8,86.5 307.5,92.1 311.2,98.2 315.0,105.0 318.8,112.3 322.5,120.2 326.2,128.7 330.0,137.8 333.8,147.6 337.5,158.0 341.2,169.1 345.0,180.8 348.8,193.3 352.5,206.5 356.2,220.4 360.0,235.0 360.0,235\" fill=\"#34d399\" fill-opacity=\"0.55\"/><line x1=\"48.0\" y1=\"235.0\" x2=\"408.0\" y2=\"235.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"241.0\" x2=\"60.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"408.0\" y1=\"235.0\" x2=\"401.1\" y2=\"231.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"408.0\" y1=\"235.0\" x2=\"401.1\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"40.0\" x2=\"56.0\" y2=\"46.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"40.0\" x2=\"64.0\" y2=\"46.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"406.0\" y=\"227.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"72.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">f(x)</text><line x1=\"60.0\" y1=\"231.0\" x2=\"60.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"120.0\" y1=\"231.0\" x2=\"120.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"180.0\" y1=\"231.0\" x2=\"180.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"240.0\" y1=\"231.0\" x2=\"240.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"300.0\" y1=\"231.0\" x2=\"300.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"360.0\" y1=\"231.0\" x2=\"360.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"56.0\" y1=\"185.0\" x2=\"64.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><line x1=\"56.0\" y1=\"135.0\" x2=\"64.0\" y2=\"135.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"139.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><line x1=\"56.0\" y1=\"85.0\" x2=\"64.0\" y2=\"85.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.3</text><polyline points=\"60.0,235.0 63.0,234.9 66.0,234.5 69.0,234.0 72.0,233.2 75.0,232.2 78.0,230.9 81.0,229.5 84.0,227.9 87.0,226.2 90.0,224.2 93.0,222.1 96.0,219.8 99.0,217.4 102.0,214.8 105.0,212.1 108.0,209.2 111.0,206.2 114.0,203.1 117.0,199.9 120.0,196.6 123.0,193.2 126.0,189.7 129.0,186.1 132.0,182.5 135.0,178.8 138.0,175.0 141.0,171.1 144.0,167.3 147.0,163.3 150.0,159.4 153.0,155.4 156.0,151.4 159.0,147.4 162.0,143.4 165.0,139.4 168.0,135.5 171.0,131.5 174.0,127.6 177.0,123.7 180.0,119.8 183.0,116.0 186.0,112.2 189.0,108.5 192.0,104.9 195.0,101.4 198.0,97.9 201.0,94.5 204.0,91.2 207.0,88.1 210.0,85.0 213.0,82.1 216.0,79.2 219.0,76.6 222.0,74.0 225.0,71.7 228.0,69.4 231.0,67.4 234.0,65.5 237.0,63.7 240.0,62.2 243.0,60.9 246.0,59.7 249.0,58.8 252.0,58.1 255.0,57.6 258.0,57.3 261.0,57.2 264.0,57.4 267.0,57.9 270.0,58.6 273.0,59.6 276.0,60.8 279.0,62.3 282.0,64.1 285.0,66.3 288.0,68.7 291.0,71.4 294.0,74.4 297.0,77.7 300.0,81.4 303.0,85.4 306.0,89.8 309.0,94.5 312.0,99.5 315.0,105.0 318.0,110.7 321.0,116.9 324.0,123.5 327.0,130.4 330.0,137.8 333.0,145.6 336.0,153.7 339.0,162.3 342.0,171.4 345.0,180.8 348.0,190.8 351.0,201.1 354.0,212.0 357.0,223.2 360.0,235.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Expand the bracket: \\(x^{2}(k-x)=kx^{2}-x^{3}\\), and take out the constant \\(\\dfrac{12}{625}\\).",
+              "work": "\\(\\dfrac{12}{625}\\int_{0}^{k}\\left(kx^{2}-x^{3}\\right)dx=1\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(x\\) (treat \\(k\\) as a constant): \\(\\int kx^{2}dx=\\dfrac{kx^{3}}{3}\\) and \\(\\int x^{3}dx=\\dfrac{x^{4}}{4}\\).",
+              "work": "\\(\\dfrac{12}{625}\\left[\\dfrac{kx^{3}}{3}-\\dfrac{x^{4}}{4}\\right]_{0}^{k}=1\\)"
+            },
+            {
+              "explain": "Substitute the limits. At \\(x=0\\) everything is 0, so only \\(x=k\\) matters.",
+              "work": "\\(\\dfrac{12}{625}\\left(\\dfrac{k\\cdot k^{3}}{3}-\\dfrac{k^{4}}{4}\\right)=\\dfrac{12}{625}\\left(\\dfrac{k^{4}}{3}-\\dfrac{k^{4}}{4}\\right)=1\\)"
+            },
+            {
+              "explain": "Combine the fractions: \\(\\dfrac{1}{3}-\\dfrac{1}{4}=\\dfrac{4-3}{12}=\\dfrac{1}{12}\\).",
+              "work": "\\(\\dfrac{12}{625}\\cdot\\dfrac{k^{4}}{12}=\\dfrac{k^{4}}{625}=1\\)"
+            },
+            {
+              "explain": "Multiply by 625 and take the fourth root. \\(k\\) is the upper end of the time interval so it must be positive: \\(k=\\sqrt[4]{625}=5\\) (since \\(5^{4}=625\\)).",
+              "work": "\\(k^{4}=625\\ \\Rightarrow\\ k=5\\quad(k>0)\\)"
+            },
+            {
+              "explain": "Why not the others: B has a sign error (\\(+\\dfrac{x^{4}}{4}\\)); C substitutes \\(x=k\\) into \\(f\\), but \\(f(k)\\) is a density (height), not a probability; D sets the area to 0.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the value of \\(k\\) is 5",
+              "note": "Total area under a probability density function is 1: integrate from 0 to k and set equal to 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y12a-q24b",
+          "type": "mc",
+          "stem": "The queueing time, \\(X\\) minutes, of a customer at the checkout of a supermarket has the probability density function \\(f(x)=\\dfrac{12}{625}x^{2}(5-x)\\) for \\(0\\le x\\le 5\\), and \\(f(x)=0\\) otherwise. Is a customer more likely to wait less than 3 minutes, or more than 3 minutes? Justify your answer with calculations. Which conclusion is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"48.0\" y1=\"235.0\" x2=\"408.0\" y2=\"235.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"241.0\" x2=\"60.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"408.0\" y1=\"235.0\" x2=\"401.1\" y2=\"231.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"408.0\" y1=\"235.0\" x2=\"401.1\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"40.0\" x2=\"56.0\" y2=\"46.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"40.0\" x2=\"64.0\" y2=\"46.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"406.0\" y=\"227.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"72.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">f(x)</text><line x1=\"60.0\" y1=\"231.0\" x2=\"60.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"120.0\" y1=\"231.0\" x2=\"120.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"180.0\" y1=\"231.0\" x2=\"180.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"240.0\" y1=\"231.0\" x2=\"240.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"300.0\" y1=\"231.0\" x2=\"300.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"360.0\" y1=\"231.0\" x2=\"360.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"56.0\" y1=\"185.0\" x2=\"64.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><line x1=\"56.0\" y1=\"135.0\" x2=\"64.0\" y2=\"135.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"139.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><line x1=\"56.0\" y1=\"85.0\" x2=\"64.0\" y2=\"85.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.3</text><polyline points=\"60.0,235.0 63.0,234.9 66.0,234.5 69.0,234.0 72.0,233.2 75.0,232.2 78.0,230.9 81.0,229.5 84.0,227.9 87.0,226.2 90.0,224.2 93.0,222.1 96.0,219.8 99.0,217.4 102.0,214.8 105.0,212.1 108.0,209.2 111.0,206.2 114.0,203.1 117.0,199.9 120.0,196.6 123.0,193.2 126.0,189.7 129.0,186.1 132.0,182.5 135.0,178.8 138.0,175.0 141.0,171.1 144.0,167.3 147.0,163.3 150.0,159.4 153.0,155.4 156.0,151.4 159.0,147.4 162.0,143.4 165.0,139.4 168.0,135.5 171.0,131.5 174.0,127.6 177.0,123.7 180.0,119.8 183.0,116.0 186.0,112.2 189.0,108.5 192.0,104.9 195.0,101.4 198.0,97.9 201.0,94.5 204.0,91.2 207.0,88.1 210.0,85.0 213.0,82.1 216.0,79.2 219.0,76.6 222.0,74.0 225.0,71.7 228.0,69.4 231.0,67.4 234.0,65.5 237.0,63.7 240.0,62.2 243.0,60.9 246.0,59.7 249.0,58.8 252.0,58.1 255.0,57.6 258.0,57.3 261.0,57.2 264.0,57.4 267.0,57.9 270.0,58.6 273.0,59.6 276.0,60.8 279.0,62.3 282.0,64.1 285.0,66.3 288.0,68.7 291.0,71.4 294.0,74.4 297.0,77.7 300.0,81.4 303.0,85.4 306.0,89.8 309.0,94.5 312.0,99.5 315.0,105.0 318.0,110.7 321.0,116.9 324.0,123.5 327.0,130.4 330.0,137.8 333.0,145.6 336.0,153.7 339.0,162.3 342.0,171.4 345.0,180.8 348.0,190.8 351.0,201.1 354.0,212.0 357.0,223.2 360.0,235.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\"/></svg>"
+          },
+          "options": [
+            "More than 3 minutes, because \\(P(X\\ge 3)=\\dfrac{328}{625}\\approx 0.525\\), which is greater than 0.5.",
+            "Less than 3 minutes, because \\(P(X\\ge 3)=\\dfrac{328}{625}\\approx 0.525\\), which is greater than 0.5.",
+            "More than 3 minutes, because \\(P(X\\ge 3)=\\dfrac{297}{625}\\approx 0.475\\), which is less than 0.5.",
+            "They are equally likely, because 3 is the middle of the interval from 1 to 5."
+          ],
+          "answer": 0,
+          "hint": "Calculate \\(P(X\\ge 3)=\\int_{3}^{5}f(x)\\,dx\\). If it is more than 0.5, waiting longer than 3 minutes is more likely.",
+          "steps": [
+            {
+              "explain": "The probability of waiting more than 3 minutes is the area under the density curve from \\(x=3\\) to \\(x=5\\) (green).",
+              "work": "\\(P(X\\ge 3)=\\int_{3}^{5}\\dfrac{12}{625}x^{2}(5-x)\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><polygon points=\"240.0,235 240.0,62.2 241.5,61.5 243.0,60.9 244.5,60.3 246.0,59.7 247.5,59.2 249.0,58.8 250.5,58.4 252.0,58.1 253.5,57.8 255.0,57.6 256.5,57.4 258.0,57.3 259.5,57.2 261.0,57.2 262.5,57.3 264.0,57.4 265.5,57.6 267.0,57.9 268.5,58.2 270.0,58.6 271.5,59.1 273.0,59.6 274.5,60.2 276.0,60.8 277.5,61.5 279.0,62.3 280.5,63.2 282.0,64.1 283.5,65.2 285.0,66.3 286.5,67.4 288.0,68.7 289.5,70.0 291.0,71.4 292.5,72.8 294.0,74.4 295.5,76.0 297.0,77.7 298.5,79.5 300.0,81.4 301.5,83.4 303.0,85.4 304.5,87.5 306.0,89.8 307.5,92.1 309.0,94.5 310.5,96.9 312.0,99.5 313.5,102.2 315.0,105.0 316.5,107.8 318.0,110.7 319.5,113.8 321.0,116.9 322.5,120.2 324.0,123.5 325.5,126.9 327.0,130.4 328.5,134.1 330.0,137.8 331.5,141.6 333.0,145.6 334.5,149.6 336.0,153.7 337.5,158.0 339.0,162.3 340.5,166.8 342.0,171.4 343.5,176.1 345.0,180.8 346.5,185.8 348.0,190.8 349.5,195.9 351.0,201.1 352.5,206.5 354.0,212.0 355.5,217.5 357.0,223.2 358.5,229.1 360.0,235.0 360.0,235\" fill=\"#34d399\" fill-opacity=\"0.55\"/><line x1=\"48.0\" y1=\"235.0\" x2=\"408.0\" y2=\"235.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"241.0\" x2=\"60.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"408.0\" y1=\"235.0\" x2=\"401.1\" y2=\"231.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"408.0\" y1=\"235.0\" x2=\"401.1\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"40.0\" x2=\"56.0\" y2=\"46.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"40.0\" x2=\"64.0\" y2=\"46.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"406.0\" y=\"227.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"72.0\" y=\"44.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">f(x)</text><line x1=\"60.0\" y1=\"231.0\" x2=\"60.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"120.0\" y1=\"231.0\" x2=\"120.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"180.0\" y1=\"231.0\" x2=\"180.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"240.0\" y1=\"231.0\" x2=\"240.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"300.0\" y1=\"231.0\" x2=\"300.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"360.0\" y1=\"231.0\" x2=\"360.0\" y2=\"239.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"56.0\" y1=\"185.0\" x2=\"64.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1</text><line x1=\"56.0\" y1=\"135.0\" x2=\"64.0\" y2=\"135.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"139.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.2</text><line x1=\"56.0\" y1=\"85.0\" x2=\"64.0\" y2=\"85.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.3</text><polyline points=\"60.0,235.0 63.0,234.9 66.0,234.5 69.0,234.0 72.0,233.2 75.0,232.2 78.0,230.9 81.0,229.5 84.0,227.9 87.0,226.2 90.0,224.2 93.0,222.1 96.0,219.8 99.0,217.4 102.0,214.8 105.0,212.1 108.0,209.2 111.0,206.2 114.0,203.1 117.0,199.9 120.0,196.6 123.0,193.2 126.0,189.7 129.0,186.1 132.0,182.5 135.0,178.8 138.0,175.0 141.0,171.1 144.0,167.3 147.0,163.3 150.0,159.4 153.0,155.4 156.0,151.4 159.0,147.4 162.0,143.4 165.0,139.4 168.0,135.5 171.0,131.5 174.0,127.6 177.0,123.7 180.0,119.8 183.0,116.0 186.0,112.2 189.0,108.5 192.0,104.9 195.0,101.4 198.0,97.9 201.0,94.5 204.0,91.2 207.0,88.1 210.0,85.0 213.0,82.1 216.0,79.2 219.0,76.6 222.0,74.0 225.0,71.7 228.0,69.4 231.0,67.4 234.0,65.5 237.0,63.7 240.0,62.2 243.0,60.9 246.0,59.7 249.0,58.8 252.0,58.1 255.0,57.6 258.0,57.3 261.0,57.2 264.0,57.4 267.0,57.9 270.0,58.6 273.0,59.6 276.0,60.8 279.0,62.3 282.0,64.1 285.0,66.3 288.0,68.7 291.0,71.4 294.0,74.4 297.0,77.7 300.0,81.4 303.0,85.4 306.0,89.8 309.0,94.5 312.0,99.5 315.0,105.0 318.0,110.7 321.0,116.9 324.0,123.5 327.0,130.4 330.0,137.8 333.0,145.6 336.0,153.7 339.0,162.3 342.0,171.4 345.0,180.8 348.0,190.8 351.0,201.1 354.0,212.0 357.0,223.2 360.0,235.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\"/><line x1=\"240.0\" y1=\"235.0\" x2=\"240.0\" y2=\"62.2\" stroke=\"#047857\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/></svg>"
+              }
+            },
+            {
+              "explain": "Expand and integrate: \\(x^{2}(5-x)=5x^{2}-x^{3}\\) with antiderivative \\(\\dfrac{5x^{3}}{3}-\\dfrac{x^{4}}{4}\\).",
+              "work": "\\(=\\dfrac{12}{625}\\left[\\dfrac{5x^{3}}{3}-\\dfrac{x^{4}}{4}\\right]_{3}^{5}\\)"
+            },
+            {
+              "explain": "Upper limit \\(x=5\\): \\(\\dfrac{5(125)}{3}-\\dfrac{625}{4}=\\dfrac{625}{3}-\\dfrac{625}{4}=\\dfrac{625}{12}\\).",
+              "work": "\\(\\left.\\dfrac{5x^{3}}{3}-\\dfrac{x^{4}}{4}\\right|_{x=5}=\\dfrac{625}{12}\\)"
+            },
+            {
+              "explain": "Lower limit \\(x=3\\): \\(\\dfrac{5(27)}{3}-\\dfrac{81}{4}=45-\\dfrac{81}{4}=\\dfrac{99}{4}\\).",
+              "work": "\\(\\left.\\dfrac{5x^{3}}{3}-\\dfrac{x^{4}}{4}\\right|_{x=3}=\\dfrac{99}{4}=\\dfrac{297}{12}\\)"
+            },
+            {
+              "explain": "Subtract (upper minus lower) and multiply by \\(\\dfrac{12}{625}\\).",
+              "work": "\\(P(X\\ge 3)=\\dfrac{12}{625}\\left(\\dfrac{625}{12}-\\dfrac{297}{12}\\right)=\\dfrac{12}{625}\\cdot\\dfrac{328}{12}=\\dfrac{328}{625}=0.5248\\)"
+            },
+            {
+              "explain": "Since \\(0.5248>0.5\\), the customer is more likely to wait MORE than 3 minutes. (Check: \\(P(X<3)=1-0.5248=0.4752=\\dfrac{297}{625}\\), which is option C's number.)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Is a customer more likely to wait less than 3 minutes, or more than 3 minutes?",
+              "note": "Probability = area under the density curve; compare P(X ≥ 3) with 0.5."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -11978,6 +12107,116 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-q21a",
+          "type": "mc",
+          "stem": "The Year 12 students at Koolara High School were surveyed on the number of hours of sleep they get per week. The results are normally distributed. The survey indicated that 95% of students had between 42 and 54 hours of sleep per week. Determine the mean number of hours of sleep per week.",
+          "difficulty": "easy",
+          "options": [
+            "\\(48\\) hours",
+            "\\(42\\) hours",
+            "\\(54\\) hours",
+            "\\(12\\) hours"
+          ],
+          "answer": 0,
+          "hint": "In a normal distribution about 95% of values lie within 2 standard deviations of the mean, symmetric about the mean.",
+          "steps": [
+            {
+              "explain": "The 68–95–99.7 rule: about 95% of the data lie within 2 standard deviations of the mean, i.e. between \\(\\mu-2\\sigma\\) and \\(\\mu+2\\sigma\\). The interval 42 to 54 is this 95% region (shaded green).",
+              "work": "\\(\\mu-2\\sigma=42,\\qquad \\mu+2\\sigma=54\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 240\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><polygon points=\"133.6,190 133.6,169.7 136.5,166.9 139.4,163.7 142.3,160.3 145.2,156.6 148.0,152.6 150.9,148.3 153.8,143.7 156.7,138.8 159.5,133.7 162.4,128.3 165.3,122.8 168.2,117.0 171.1,111.1 173.9,105.1 176.8,99.0 179.7,93.0 182.6,87.0 185.5,81.1 188.3,75.4 191.2,69.9 194.1,64.7 197.0,59.9 199.8,55.5 202.7,51.5 205.6,48.1 208.5,45.2 211.4,43.0 214.2,41.3 217.1,40.3 220.0,40.0 222.9,40.3 225.8,41.3 228.6,43.0 231.5,45.2 234.4,48.1 237.3,51.5 240.2,55.5 243.0,59.9 245.9,64.7 248.8,69.9 251.7,75.4 254.5,81.1 257.4,87.0 260.3,93.0 263.2,99.0 266.1,105.1 268.9,111.1 271.8,117.0 274.7,122.8 277.6,128.3 280.5,133.7 283.3,138.8 286.2,143.7 289.1,148.3 292.0,152.6 294.8,156.6 297.7,160.3 300.6,163.7 303.5,166.9 306.4,169.7 306.4,190\" fill=\"#34d399\" fill-opacity=\"0.55\"/><polyline points=\"30.0,190.0 34.3,190.0 38.6,190.0 43.0,190.0 47.3,189.9 51.6,189.9 55.9,189.9 60.2,189.8 64.5,189.8 68.9,189.7 73.2,189.5 77.5,189.4 81.8,189.1 86.1,188.8 90.5,188.3 94.8,187.8 99.1,187.0 103.4,186.1 107.7,184.9 112.0,183.4 116.4,181.6 120.7,179.3 125.0,176.7 129.3,173.5 133.6,169.7 138.0,165.3 142.3,160.3 146.6,154.6 150.9,148.3 155.2,141.3 159.5,133.7 163.9,125.6 168.2,117.0 172.5,108.1 176.8,99.0 181.1,90.0 185.5,81.1 189.8,72.6 194.1,64.7 198.4,57.6 202.7,51.5 207.0,46.6 211.4,43.0 215.7,40.7 220.0,40.0 224.3,40.7 228.6,43.0 233.0,46.6 237.3,51.5 241.6,57.6 245.9,64.7 250.2,72.6 254.5,81.1 258.9,90.0 263.2,99.0 267.5,108.1 271.8,117.0 276.1,125.6 280.5,133.7 284.8,141.3 289.1,148.3 293.4,154.6 297.7,160.3 302.0,165.3 306.4,169.7 310.7,173.5 315.0,176.7 319.3,179.3 323.6,181.6 328.0,183.4 332.3,184.9 336.6,186.1 340.9,187.0 345.2,187.8 349.5,188.3 353.9,188.8 358.2,189.1 362.5,189.4 366.8,189.5 371.1,189.7 375.5,189.8 379.8,189.8 384.1,189.9 388.4,189.9 392.7,189.9 397.0,190.0 401.4,190.0 405.7,190.0 410.0,190.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"30.0\" y1=\"190.0\" x2=\"410.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"47.3\" y1=\"186.0\" x2=\"47.3\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47.3\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">36</text><text x=\"47.3\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−4</text><line x1=\"90.5\" y1=\"186.0\" x2=\"90.5\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"90.5\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">39</text><text x=\"90.5\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−3</text><line x1=\"133.6\" y1=\"186.0\" x2=\"133.6\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"133.6\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">42</text><text x=\"133.6\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−2</text><line x1=\"176.8\" y1=\"186.0\" x2=\"176.8\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"176.8\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45</text><text x=\"176.8\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−1</text><line x1=\"220.0\" y1=\"186.0\" x2=\"220.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">48</text><text x=\"220.0\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=0</text><line x1=\"263.2\" y1=\"186.0\" x2=\"263.2\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"263.2\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">51</text><text x=\"263.2\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=1</text><line x1=\"306.4\" y1=\"186.0\" x2=\"306.4\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"306.4\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">54</text><text x=\"306.4\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=2</text><line x1=\"349.5\" y1=\"186.0\" x2=\"349.5\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"349.5\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">57</text><text x=\"349.5\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=3</text><line x1=\"392.7\" y1=\"186.0\" x2=\"392.7\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"392.7\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><text x=\"392.7\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=4</text><line x1=\"220.0\" y1=\"190.0\" x2=\"220.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"220.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">μ = 48</text></svg>"
+              }
+            },
+            {
+              "explain": "The mean is exactly in the middle of the interval, so average the two ends.",
+              "work": "\\(\\mu=\\dfrac{42+54}{2}=\\dfrac{96}{2}=48\\)"
+            },
+            {
+              "explain": "Also find \\(\\sigma\\) for later parts: the width of the interval is \\(4\\sigma\\) (from \\(-2\\sigma\\) to \\(+2\\sigma\\)).",
+              "work": "\\(4\\sigma=54-42=12\\ \\Rightarrow\\ \\sigma=3\\)"
+            },
+            {
+              "explain": "Check: \\(48-2(3)=42\\) ✓ and \\(48+2(3)=54\\) ✓. Option D (12) is the width of the interval, not the mean.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine the mean number of hours of sleep per week",
+              "note": "95% lies within 2 standard deviations: the mean is the midpoint of the interval."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y12a-q21b",
+          "type": "mc",
+          "stem": "The Year 12 students at Koolara High School were surveyed on the number of hours of sleep they get per week. The results are normally distributed with mean 48 hours and standard deviation 3 hours (95% of students had between 42 and 54 hours). What percentage of students would have indicated they had between 51 and 57 hours of sleep per week?",
+          "difficulty": "medium",
+          "options": [
+            "\\(15.85\\%\\)",
+            "\\(16\\%\\)",
+            "\\(13.5\\%\\)",
+            "\\(34\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert 51 and 57 to numbers of standard deviations from the mean, then use the 68–95–99.7 rule on the tails.",
+          "steps": [
+            {
+              "explain": "With \\(\\mu=48\\) and \\(\\sigma=3\\): \\(51=\\mu+1\\sigma\\) and \\(57=\\mu+3\\sigma\\). So we want the area from 1 to 3 standard deviations above the mean (green).",
+              "work": "\\(51=48+3=\\mu+\\sigma,\\qquad 57=48+9=\\mu+3\\sigma\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 240\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><polygon points=\"263.2,190 263.2,99.0 264.6,102.1 266.1,105.1 267.5,108.1 268.9,111.1 270.4,114.0 271.8,117.0 273.3,119.9 274.7,122.8 276.1,125.6 277.6,128.3 279.0,131.0 280.5,133.7 281.9,136.3 283.3,138.8 284.8,141.3 286.2,143.7 287.7,146.0 289.1,148.3 290.5,150.5 292.0,152.6 293.4,154.6 294.8,156.6 296.3,158.5 297.7,160.3 299.2,162.1 300.6,163.7 302.0,165.3 303.5,166.9 304.9,168.3 306.4,169.7 307.8,171.0 309.2,172.3 310.7,173.5 312.1,174.6 313.6,175.7 315.0,176.7 316.4,177.6 317.9,178.5 319.3,179.3 320.8,180.1 322.2,180.9 323.6,181.6 325.1,182.2 326.5,182.8 328.0,183.4 329.4,183.9 330.8,184.4 332.3,184.9 333.7,185.3 335.2,185.7 336.6,186.1 338.0,186.4 339.5,186.7 340.9,187.0 342.3,187.3 343.8,187.5 345.2,187.8 346.7,188.0 348.1,188.2 349.5,188.3 349.5,190\" fill=\"#34d399\" fill-opacity=\"0.55\"/><polyline points=\"30.0,190.0 34.3,190.0 38.6,190.0 43.0,190.0 47.3,189.9 51.6,189.9 55.9,189.9 60.2,189.8 64.5,189.8 68.9,189.7 73.2,189.5 77.5,189.4 81.8,189.1 86.1,188.8 90.5,188.3 94.8,187.8 99.1,187.0 103.4,186.1 107.7,184.9 112.0,183.4 116.4,181.6 120.7,179.3 125.0,176.7 129.3,173.5 133.6,169.7 138.0,165.3 142.3,160.3 146.6,154.6 150.9,148.3 155.2,141.3 159.5,133.7 163.9,125.6 168.2,117.0 172.5,108.1 176.8,99.0 181.1,90.0 185.5,81.1 189.8,72.6 194.1,64.7 198.4,57.6 202.7,51.5 207.0,46.6 211.4,43.0 215.7,40.7 220.0,40.0 224.3,40.7 228.6,43.0 233.0,46.6 237.3,51.5 241.6,57.6 245.9,64.7 250.2,72.6 254.5,81.1 258.9,90.0 263.2,99.0 267.5,108.1 271.8,117.0 276.1,125.6 280.5,133.7 284.8,141.3 289.1,148.3 293.4,154.6 297.7,160.3 302.0,165.3 306.4,169.7 310.7,173.5 315.0,176.7 319.3,179.3 323.6,181.6 328.0,183.4 332.3,184.9 336.6,186.1 340.9,187.0 345.2,187.8 349.5,188.3 353.9,188.8 358.2,189.1 362.5,189.4 366.8,189.5 371.1,189.7 375.5,189.8 379.8,189.8 384.1,189.9 388.4,189.9 392.7,189.9 397.0,190.0 401.4,190.0 405.7,190.0 410.0,190.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"30.0\" y1=\"190.0\" x2=\"410.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"47.3\" y1=\"186.0\" x2=\"47.3\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"47.3\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">36</text><text x=\"47.3\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−4</text><line x1=\"90.5\" y1=\"186.0\" x2=\"90.5\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"90.5\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">39</text><text x=\"90.5\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−3</text><line x1=\"133.6\" y1=\"186.0\" x2=\"133.6\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"133.6\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">42</text><text x=\"133.6\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−2</text><line x1=\"176.8\" y1=\"186.0\" x2=\"176.8\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"176.8\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45</text><text x=\"176.8\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=−1</text><line x1=\"220.0\" y1=\"186.0\" x2=\"220.0\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">48</text><text x=\"220.0\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=0</text><line x1=\"263.2\" y1=\"186.0\" x2=\"263.2\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"263.2\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">51</text><text x=\"263.2\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=1</text><line x1=\"306.4\" y1=\"186.0\" x2=\"306.4\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"306.4\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">54</text><text x=\"306.4\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=2</text><line x1=\"349.5\" y1=\"186.0\" x2=\"349.5\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"349.5\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">57</text><text x=\"349.5\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=3</text><line x1=\"392.7\" y1=\"186.0\" x2=\"392.7\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"392.7\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><text x=\"392.7\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z=4</text><line x1=\"220.0\" y1=\"190.0\" x2=\"220.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"220.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">μ = 48</text></svg>"
+              }
+            },
+            {
+              "explain": "The rule: \\(68\\%\\) within 1\\(\\sigma\\), \\(99.7\\%\\) within 3\\(\\sigma\\). The tails are symmetric, so the area ABOVE \\(\\mu+\\sigma\\) is half of what is outside 1σ.",
+              "work": "\\(P(X\\ge 51)=\\dfrac{100\\%-68\\%}{2}=16\\%\\)"
+            },
+            {
+              "explain": "Likewise the area above \\(\\mu+3\\sigma\\) is half of what is outside 3σ.",
+              "work": "\\(P(X\\ge 57)=\\dfrac{100\\%-99.7\\%}{2}=0.15\\%\\)"
+            },
+            {
+              "explain": "The part between 51 and 57 is the larger tail minus the smaller tail.",
+              "work": "\\(P(51\\le X\\le 57)=16\\%-0.15\\%=15.85\\%\\)"
+            },
+            {
+              "explain": "Option B (16%) forgets to remove the tail above 57; option C (13.5%) is the area between \\(\\mu+\\sigma\\) and \\(\\mu+2\\sigma\\); option D (34%) is the area from \\(\\mu\\) to \\(\\mu+\\sigma\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What percentage of students would have indicated",
+              "note": "Use tails: P(above μ+σ) = 16%, P(above μ+3σ) = 0.15%; subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -13023,6 +13262,63 @@
             "grade": "12",
             "origin": "teacher",
             "note": "The standard normal tables (pages 33–34 of the source) are not reproduced; the relevant row (z = −2.3) is shown in the solution."
+          }
+        },
+        {
+          "id": "killara2020-y12a-q21c",
+          "type": "mc",
+          "stem": "The Year 12 students at Koolara High School (mean 48 hours, standard deviation 3 hours of sleep per week) were surveyed. The Year 12 students at a nearby school, Chetswood High, were also surveyed. The results are also normally distributed with a mean of 50 hours and standard deviation of 2 hours. Chetswood High boast they have a greater percentage of Year 12 students that get more than 54 hours of sleep per week. Are they correct? Justify your answer with relevant calculations. Which conclusion is correct?",
+          "difficulty": "hard",
+          "options": [
+            "No: the \\(z\\)-score of 54 hours is 2 at both schools, so the same percentage (about 2.5%) get more than 54 hours.",
+            "Yes: Chetswood's mean is higher, so a greater percentage get more than 54 hours.",
+            "Yes: Chetswood's standard deviation is smaller, so the \\(z\\)-score of 54 is larger.",
+            "No: Koolara has the larger standard deviation, so Koolara has the greater percentage."
+          ],
+          "answer": 0,
+          "hint": "Compare the \\(z\\)-score of 54 hours at each school: \\(z=\\dfrac{x-\\mu}{\\sigma}\\). The same \\(z\\)-score means the same percentage above that value.",
+          "steps": [
+            {
+              "explain": "The \\(z\\)-score says how many standard deviations a value is above the mean: \\(z=\\dfrac{x-\\mu}{\\sigma}\\). The same \\(z\\)-score gives the same proportion of students above it, whatever the school's mean and spread.",
+              "work": "\\(z=\\dfrac{x-\\mu}{\\sigma}\\)"
+            },
+            {
+              "explain": "Chetswood (\\(\\mu=50,\\ \\sigma=2\\)).",
+              "work": "\\(z_{C}=\\dfrac{54-50}{2}=\\dfrac{4}{2}=2\\)"
+            },
+            {
+              "explain": "Koolara (\\(\\mu=48,\\ \\sigma=3\\)).",
+              "work": "\\(z_{K}=\\dfrac{54-48}{3}=\\dfrac{6}{3}=2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 260\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><polygon points=\"165.0,170 165.0,155.1 167.5,157.9 170.0,160.2 172.5,162.2 175.0,163.8 177.5,165.2 180.0,166.3 182.5,167.1 185.0,167.8 187.5,168.4 190.0,168.8 192.5,169.1 195.0,169.3 197.5,169.5 200.0,169.7 202.5,169.8 205.0,169.8 207.5,169.9 210.0,169.9 212.5,169.9 215.0,170.0 215.0,170\" fill=\"#dc2626\" fill-opacity=\"0.5\"/><polyline points=\"15.0,170.0 17.5,169.9 20.0,169.9 22.5,169.9 25.0,169.8 27.5,169.8 30.0,169.7 32.5,169.5 35.0,169.3 37.5,169.1 40.0,168.8 42.5,168.4 45.0,167.8 47.5,167.1 50.0,166.3 52.5,165.2 55.0,163.8 57.5,162.2 60.0,160.2 62.5,157.9 65.0,155.1 67.5,151.9 70.0,148.2 72.5,144.1 75.0,139.4 77.5,134.3 80.0,128.7 82.5,122.7 85.0,116.5 87.5,109.9 90.0,103.3 92.5,96.6 95.0,90.1 97.5,83.9 100.0,78.1 102.5,72.9 105.0,68.5 107.5,64.8 110.0,62.2 112.5,60.5 115.0,60.0 117.5,60.5 120.0,62.2 122.5,64.8 125.0,68.5 127.5,72.9 130.0,78.1 132.5,83.9 135.0,90.1 137.5,96.6 140.0,103.3 142.5,109.9 145.0,116.5 147.5,122.7 150.0,128.7 152.5,134.3 155.0,139.4 157.5,144.1 160.0,148.2 162.5,151.9 165.0,155.1 167.5,157.9 170.0,160.2 172.5,162.2 175.0,163.8 177.5,165.2 180.0,166.3 182.5,167.1 185.0,167.8 187.5,168.4 190.0,168.8 192.5,169.1 195.0,169.3 197.5,169.5 200.0,169.7 202.5,169.8 205.0,169.8 207.5,169.9 210.0,169.9 212.5,169.9 215.0,170.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"15.0\" y1=\"170.0\" x2=\"215.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"65.0\" y1=\"166.0\" x2=\"65.0\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"65.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">42</text><line x1=\"115.0\" y1=\"166.0\" x2=\"115.0\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">48</text><line x1=\"165.0\" y1=\"166.0\" x2=\"165.0\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"165.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">54</text><text x=\"115.0\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Koolara</text><text x=\"115.0\" y=\"46.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">μ = 48,  σ = 3</text><text x=\"195.0\" y=\"142.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z = 2</text><line x1=\"165.0\" y1=\"170.0\" x2=\"165.0\" y2=\"155.1\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polygon points=\"405.0,170 405.0,155.1 407.5,157.9 410.0,160.2 412.5,162.2 415.0,163.8 417.5,165.2 420.0,166.3 422.5,167.1 425.0,167.8 427.5,168.4 430.0,168.8 432.5,169.1 435.0,169.3 437.5,169.5 440.0,169.7 442.5,169.8 445.0,169.8 447.5,169.9 450.0,169.9 452.5,169.9 455.0,170.0 455.0,170\" fill=\"#dc2626\" fill-opacity=\"0.5\"/><polyline points=\"255.0,170.0 257.5,169.9 260.0,169.9 262.5,169.9 265.0,169.8 267.5,169.8 270.0,169.7 272.5,169.5 275.0,169.3 277.5,169.1 280.0,168.8 282.5,168.4 285.0,167.8 287.5,167.1 290.0,166.3 292.5,165.2 295.0,163.8 297.5,162.2 300.0,160.2 302.5,157.9 305.0,155.1 307.5,151.9 310.0,148.2 312.5,144.1 315.0,139.4 317.5,134.3 320.0,128.7 322.5,122.7 325.0,116.5 327.5,109.9 330.0,103.3 332.5,96.6 335.0,90.1 337.5,83.9 340.0,78.1 342.5,72.9 345.0,68.5 347.5,64.8 350.0,62.2 352.5,60.5 355.0,60.0 357.5,60.5 360.0,62.2 362.5,64.8 365.0,68.5 367.5,72.9 370.0,78.1 372.5,83.9 375.0,90.1 377.5,96.6 380.0,103.3 382.5,109.9 385.0,116.5 387.5,122.7 390.0,128.7 392.5,134.3 395.0,139.4 397.5,144.1 400.0,148.2 402.5,151.9 405.0,155.1 407.5,157.9 410.0,160.2 412.5,162.2 415.0,163.8 417.5,165.2 420.0,166.3 422.5,167.1 425.0,167.8 427.5,168.4 430.0,168.8 432.5,169.1 435.0,169.3 437.5,169.5 440.0,169.7 442.5,169.8 445.0,169.8 447.5,169.9 450.0,169.9 452.5,169.9 455.0,170.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"3\"/><line x1=\"255.0\" y1=\"170.0\" x2=\"455.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"305.0\" y1=\"166.0\" x2=\"305.0\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"305.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">46</text><line x1=\"355.0\" y1=\"166.0\" x2=\"355.0\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"355.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><line x1=\"405.0\" y1=\"166.0\" x2=\"405.0\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"405.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">54</text><text x=\"355.0\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Chetswood</text><text x=\"355.0\" y=\"46.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">μ = 50,  σ = 2</text><text x=\"435.0\" y=\"142.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">z = 2</text><line x1=\"405.0\" y1=\"170.0\" x2=\"405.0\" y2=\"155.1\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/></svg>"
+              }
+            },
+            {
+              "explain": "Both schools have \\(z=2\\): 54 hours is exactly 2 standard deviations above the mean in both. The shaded tails above \\(z=2\\) are the same size, about \\(2.5\\%\\) each (half of \\(100\\%-95\\%\\)).",
+              "work": "\\(\\dfrac{100\\%-95\\%}{2}=2.5\\%\\ \\text{at each school}\\)"
+            },
+            {
+              "explain": "So Chetswood is NOT correct: the percentages are the same. A higher mean (option B) is cancelled out by the smaller spread, and a smaller standard deviation alone (option C) does not decide it.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Are they correct?",
+              "note": "Compare z-scores, not means: equal z-scores mean equal percentages above that value."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

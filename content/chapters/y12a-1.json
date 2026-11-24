@@ -12801,6 +12801,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-mc1",
+          "type": "mc",
+          "stem": "The 7\\(^{\\text{th}}\\) term of an arithmetic sequence is 45 and the 11\\(^{\\text{th}}\\) term is 77. Find the first term (\\(a\\)) and the common difference (\\(d\\)).",
+          "difficulty": "easy",
+          "options": [
+            "\\(a=-3\\) and \\(d=8\\)",
+            "\\(a=3\\) and \\(d=8\\)",
+            "\\(a=8\\) and \\(d=-3\\)",
+            "\\(a=8\\) and \\(d=3\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(T_{n}=a+(n-1)d\\) for both terms to get two equations in \\(a\\) and \\(d\\), then subtract them.",
+          "steps": [
+            {
+              "explain": "The \\(n\\)th term of an arithmetic sequence is \\(T_{n}=a+(n-1)d\\). Write this for the 7th term (\\(n=7\\)).",
+              "work": "\\(T_{7}=a+6d=45\\qquad(1)\\)"
+            },
+            {
+              "explain": "Write it for the 11th term (\\(n=11\\)).",
+              "work": "\\(T_{11}=a+10d=77\\qquad(2)\\)"
+            },
+            {
+              "explain": "Subtract equation (1) from equation (2) so that \\(a\\) cancels.",
+              "work": "\\((a+10d)-(a+6d)=77-45\\ \\Rightarrow\\ 4d=32\\)"
+            },
+            {
+              "explain": "Divide by 4 to find the common difference.",
+              "work": "\\(d=\\dfrac{32}{4}=8\\)"
+            },
+            {
+              "explain": "Substitute \\(d=8\\) into equation (1) to find \\(a\\).",
+              "work": "\\(a+6(8)=45\\ \\Rightarrow\\ a+48=45\\ \\Rightarrow\\ a=-3\\)"
+            },
+            {
+              "explain": "Check with equation (2): \\(a+10d=-3+80=77\\) ✓. Options C and D have \\(a=8\\), which would make the 7th term \\(8+6(3)=26\\) or \\(8-18=-10\\), not 45.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the first term",
+              "note": "Two terms given: write two equations a + (n−1)d, subtract to get d, then back-substitute for a."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -6313,6 +6313,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-q16",
+          "type": "mc",
+          "stem": "Given that \\(\\log_{a}b=3.14\\) and \\(\\log_{a}c=2.45\\), find the value of \\(\\log_{a}\\sqrt{bc}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2.795\\)",
+            "\\(5.59\\)",
+            "\\(7.693\\)",
+            "\\(1.57\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the square root as the power \\(\\dfrac{1}{2}\\), then use \\(\\log x^{n}=n\\log x\\) and \\(\\log(bc)=\\log b+\\log c\\).",
+          "steps": [
+            {
+              "explain": "A square root is the power \\(\\dfrac{1}{2}\\): \\(\\sqrt{bc}=(bc)^{\\frac{1}{2}}\\).",
+              "work": "\\(\\log_{a}\\sqrt{bc}=\\log_{a}(bc)^{\\frac{1}{2}}\\)"
+            },
+            {
+              "explain": "Power law: \\(\\log_{a}x^{n}=n\\log_{a}x\\), so the \\(\\dfrac{1}{2}\\) comes out the front.",
+              "work": "\\(=\\dfrac{1}{2}\\log_{a}(bc)\\)"
+            },
+            {
+              "explain": "Product law: \\(\\log_{a}(bc)=\\log_{a}b+\\log_{a}c\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left(\\log_{a}b+\\log_{a}c\\right)\\)"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(=\\dfrac{1}{2}(3.14+2.45)=\\dfrac{1}{2}(5.59)=2.795\\)"
+            },
+            {
+              "explain": "Option B forgets the \\(\\dfrac{1}{2}\\) (it is \\(\\log_{a}(bc)\\)); option C multiplies \\(3.14\\times 2.45\\) (the product law ADDS logs); option D is \\(\\dfrac{1}{2}\\times 3.14\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of",
+              "note": "A root is a half power; then use the power law and the product law of logs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

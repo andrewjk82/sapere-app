@@ -10405,6 +10405,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-q12",
+          "type": "mc",
+          "stem": "Determine whether the function \\(f(x)=\\dfrac{x^{3}}{x^{2}-1}\\) is odd, even or neither.",
+          "difficulty": "easy",
+          "options": [
+            "Odd",
+            "Even",
+            "Neither",
+            "Both odd and even"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(x\\) by \\(-x\\) and compare: \\(f(-x)=f(x)\\) means even, \\(f(-x)=-f(x)\\) means odd.",
+          "steps": [
+            {
+              "explain": "Tests: EVEN if \\(f(-x)=f(x)\\); ODD if \\(f(-x)=-f(x)\\). Start by replacing every \\(x\\) with \\((-x)\\).",
+              "work": "\\(f(-x)=\\dfrac{(-x)^{3}}{(-x)^{2}-1}\\)"
+            },
+            {
+              "explain": "Simplify the powers: an odd power keeps the minus sign, \\((-x)^{3}=-x^{3}\\); an even power removes it, \\((-x)^{2}=x^{2}\\).",
+              "work": "\\(f(-x)=\\dfrac{-x^{3}}{x^{2}-1}\\)"
+            },
+            {
+              "explain": "Take the minus sign out the front and recognise the original function.",
+              "work": "\\(f(-x)=-\\dfrac{x^{3}}{x^{2}-1}=-f(x)\\)"
+            },
+            {
+              "explain": "\\(f(-x)=-f(x)\\), so the function is odd (its graph has half-turn symmetry about the origin).",
+              "work": ""
+            },
+            {
+              "explain": "Numerical check: \\(f(2)=\\dfrac{8}{3}\\) and \\(f(-2)=\\dfrac{-8}{3}\\), so \\(f(-2)=-f(2)\\) ✓. It is not even (that would need \\(f(-2)=f(2)\\)) and it is not 'both' because \\(f(x)\\) is not zero for all \\(x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is odd, even or neither",
+              "note": "Substitute −x; if the whole function changes sign it is odd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -19723,6 +19777,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-mc8",
+          "type": "mc",
+          "stem": "Let \\(f(x)=\\dfrac{1}{x}\\) and \\(g(x)=x+2\\). The domain of \\(f\\left(g(x)\\right)\\) is",
+          "difficulty": "easy",
+          "options": [
+            "All real \\(x\\)",
+            "\\(x\\ne -2\\)",
+            "\\(x\\ne 0\\)",
+            "\\(x\\ne 2\\)"
+          ],
+          "answer": 1,
+          "hint": "Find \\(f(g(x))\\) by substituting \\(g(x)\\) into \\(f\\); the domain excludes any \\(x\\) that makes the denominator zero.",
+          "steps": [
+            {
+              "explain": "\\(f(g(x))\\) means: put \\(g(x)\\) wherever \\(x\\) appears in \\(f\\).",
+              "work": "\\(f\\left(g(x)\\right)=f(x+2)=\\dfrac{1}{x+2}\\)"
+            },
+            {
+              "explain": "A fraction is undefined when its denominator is 0. Find the \\(x\\) that does this.",
+              "work": "\\(x+2=0\\ \\Rightarrow\\ x=-2\\)"
+            },
+            {
+              "explain": "So \\(x=-2\\) must be excluded and every other real number is allowed.",
+              "work": "\\(\\text{Domain: }x\\ne -2\\)"
+            },
+            {
+              "explain": "Why not \\(x\\ne 0\\)? That is the domain of \\(f(x)=\\dfrac{1}{x}\\) alone; but \\(g(x)=x+2\\) feeds \\(f\\) the value \\(x+2\\), and \\(f\\) fails only when that input is 0, i.e. when \\(x=-2\\). Check \\(x=0\\): \\(f(g(0))=\\dfrac{1}{2}\\), which works.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The domain of",
+              "note": "For a composite function, substitute first, then exclude values that make the denominator zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -23068,6 +23172,60 @@
             "grade": "11",
             "origin": "teacher",
             "note": "The four printed graphs are combined into one labelled figure A–D (text options 'A'–'D')."
+          }
+        },
+        {
+          "id": "killara2020-y12a-mc2",
+          "type": "mc",
+          "stem": "The function \\(y=\\ln x\\) is transformed by first being dilated vertically by a scale factor of 3 and then translated horizontally 4 units to the left. Find the equation of the transformed function.",
+          "difficulty": "easy",
+          "options": [
+            "\\(y=3\\ln x^{4}\\)",
+            "\\(y=4\\ln x^{3}\\)",
+            "\\(y=3\\ln(x-4)\\)",
+            "\\(y=3\\ln(x+4)\\)"
+          ],
+          "answer": 3,
+          "hint": "Do the transformations in the order given. A vertical dilation multiplies the whole function by 3; moving left by 4 replaces \\(x\\) with \\(x+4\\).",
+          "steps": [
+            {
+              "explain": "Start with the original function.",
+              "work": "\\(y=\\ln x\\)"
+            },
+            {
+              "explain": "Step 1 — vertical dilation by scale factor 3: every \\(y\\)-value is multiplied by 3, so multiply the whole function by 3.",
+              "work": "\\(y=3\\ln x\\)"
+            },
+            {
+              "explain": "Step 2 — translate 4 units to the LEFT. A shift left by 4 replaces \\(x\\) with \\((x+4)\\) (the graph of \\(f(x+4)\\) is \\(f(x)\\) moved 4 units left, because the new graph reaches each \\(y\\)-value 4 sooner).",
+              "work": "\\(y=3\\ln(x+4)\\)"
+            },
+            {
+              "explain": "Check one point: \\(y=3\\ln x\\) passes through \\((1,0)\\). After moving left 4 it should pass through \\((-3,0)\\): \\(3\\ln(-3+4)=3\\ln 1=0\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(y=3\\ln(x-4)\\) moves the graph 4 units to the RIGHT. \\(y=3\\ln x^{4}=12\\ln x\\) (log law \\(\\ln x^{n}=n\\ln x\\)) is a vertical dilation by 12 with no translation, and \\(y=4\\ln x^{3}=12\\ln x\\) is the same.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "translated horizontally 4 units to the left",
+              "note": "Left by 4 means x becomes x + 4; dilate vertically by multiplying the whole function."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]

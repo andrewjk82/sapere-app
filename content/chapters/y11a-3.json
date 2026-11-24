@@ -14597,6 +14597,62 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-mc9",
+          "type": "mc",
+          "stem": "Consider the set of coordinates below: \\((2,3),\\ (5,7),\\ (-6,2),\\ (-8,3),\\ (1,9)\\). This set of coordinates represent a relationship that is",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 380\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"90.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x (inputs)</text><text x=\"290.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y (outputs)</text><ellipse cx=\"90\" cy=\"180\" rx=\"55\" ry=\"160\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#334155\" stroke-width=\"1.6\"/><ellipse cx=\"290\" cy=\"190\" rx=\"55\" ry=\"150\" fill=\"#fef3c7\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"110.0\" y1=\"232.0\" x2=\"270.0\" y2=\"158.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"284.0\" x2=\"270.0\" y2=\"224.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"128.0\" x2=\"270.0\" y2=\"92.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"76.0\" x2=\"270.0\" y2=\"158.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"180.0\" x2=\"270.0\" y2=\"290.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"95\" cy=\"76\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"81.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−8</text><circle cx=\"95\" cy=\"128\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"133.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><circle cx=\"95\" cy=\"180\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"185.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><circle cx=\"95\" cy=\"232\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"237.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"95\" cy=\"284\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"289.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><circle cx=\"285\" cy=\"92\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"97.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"285\" cy=\"158\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"163.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><circle cx=\"285\" cy=\"224\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><circle cx=\"285\" cy=\"290\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"295.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text></svg>"
+          },
+          "options": [
+            "One-to-one",
+            "One-to-many",
+            "Many-to-one",
+            "Many-to-many"
+          ],
+          "answer": 2,
+          "hint": "Check the \\(x\\)-values first (does any \\(x\\) repeat?), then the \\(y\\)-values (does any \\(y\\) repeat?).",
+          "steps": [
+            {
+              "explain": "List the \\(x\\)-values and the \\(y\\)-values of the five points.",
+              "work": "\\(x:\\ 2,\\ 5,\\ -6,\\ -8,\\ 1\\qquad y:\\ 3,\\ 7,\\ 2,\\ 3,\\ 9\\)"
+            },
+            {
+              "explain": "Does any \\(x\\)-value repeat? No: all five \\(x\\)-values are different. So each input has exactly ONE output (it is a function). That rules out 'one-to-many' and 'many-to-many'.",
+              "work": ""
+            },
+            {
+              "explain": "Does any \\(y\\)-value repeat? Yes: \\(y=3\\) is used twice, by \\((2,3)\\) and by \\((-8,3)\\). Two different inputs share the same output (red arrows).",
+              "work": "\\(2\\to 3\\quad\\text{and}\\quad -8\\to 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 380\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><text x=\"90.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x (inputs)</text><text x=\"290.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y (outputs)</text><ellipse cx=\"90\" cy=\"180\" rx=\"55\" ry=\"160\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#334155\" stroke-width=\"1.6\"/><ellipse cx=\"290\" cy=\"190\" rx=\"55\" ry=\"150\" fill=\"#fef3c7\" fill-opacity=\"0.6\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"110.0\" y1=\"232.0\" x2=\"270.0\" y2=\"158.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"284.0\" x2=\"270.0\" y2=\"224.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"128.0\" x2=\"270.0\" y2=\"92.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"76.0\" x2=\"270.0\" y2=\"158.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"180.0\" x2=\"270.0\" y2=\"290.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"95\" cy=\"76\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"81.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−8</text><circle cx=\"95\" cy=\"128\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"133.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><circle cx=\"95\" cy=\"180\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"185.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><circle cx=\"95\" cy=\"232\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"237.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"95\" cy=\"284\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"75.0\" y=\"289.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><circle cx=\"285\" cy=\"92\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"97.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"285\" cy=\"158\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"163.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><circle cx=\"285\" cy=\"224\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><circle cx=\"285\" cy=\"290\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"305.0\" y=\"295.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"190.0\" y=\"368.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">two different x-values (2 and −8) both map to y = 3</text></svg>"
+              }
+            },
+            {
+              "explain": "One output shared by several inputs, with each input having one output, is called many-to-one. (If no \\(y\\) repeated it would be one-to-one.)",
+              "work": "\\(\\text{many-to-one}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "This set of coordinates represent a relationship that is",
+              "note": "Repeated x makes one-to-many; repeated y with distinct x makes many-to-one."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -23228,6 +23284,67 @@
             "grade": "11",
             "origin": "teacher",
             "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "killara2020-y12a-mc4",
+          "type": "mc",
+          "stem": "The radius and centre of a circle with equation \\(x^{2}-6x+y^{2}+10y+18=0\\) is",
+          "difficulty": "medium",
+          "options": [
+            "Radius \\(=3\\sqrt{2}\\), Centre \\((-3,5)\\)",
+            "Radius \\(=3\\sqrt{2}\\), Centre \\((3,-5)\\)",
+            "Radius \\(=4\\), Centre \\((-3,5)\\)",
+            "Radius \\(=4\\), Centre \\((3,-5)\\)"
+          ],
+          "answer": 3,
+          "hint": "Complete the square in \\(x\\) and in \\(y\\) to reach \\((x-a)^{2}+(y-b)^{2}=r^{2}\\); the centre is \\((a,b)\\), the radius is \\(r\\).",
+          "steps": [
+            {
+              "explain": "Move the constant to the right-hand side and group the \\(x\\) terms and the \\(y\\) terms.",
+              "work": "\\(\\left(x^{2}-6x\\right)+\\left(y^{2}+10y\\right)=-18\\)"
+            },
+            {
+              "explain": "Complete the square in \\(x\\): half of \\(-6\\) is \\(-3\\), and \\((-3)^{2}=9\\). Add 9 to BOTH sides.",
+              "work": "\\(x^{2}-6x+9=(x-3)^{2}\\)"
+            },
+            {
+              "explain": "Complete the square in \\(y\\): half of \\(10\\) is \\(5\\), and \\(5^{2}=25\\). Add 25 to BOTH sides.",
+              "work": "\\(y^{2}+10y+25=(y+5)^{2}\\)"
+            },
+            {
+              "explain": "Write the completed equation and add up the right-hand side: \\(-18+9+25=16\\).",
+              "work": "\\((x-3)^{2}+(y+5)^{2}=16\\)"
+            },
+            {
+              "explain": "Compare with \\((x-a)^{2}+(y-b)^{2}=r^{2}\\): \\(a=3\\), \\(b=-5\\) (note \\(y+5=y-(-5)\\)), \\(r^{2}=16\\) so \\(r=4\\) (a radius is positive).",
+              "work": "\\(\\text{centre }(3,-5),\\quad r=\\sqrt{16}=4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 380\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"84.0\" y1=\"20.0\" x2=\"84.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"20.0\" x2=\"106.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"128.0\" y1=\"20.0\" x2=\"128.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"20.0\" x2=\"150.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"20.0\" x2=\"172.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"20.0\" x2=\"194.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"20.0\" x2=\"216.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"238.0\" y1=\"20.0\" x2=\"238.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"20.0\" x2=\"260.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"20.0\" x2=\"282.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"304.0\" y1=\"20.0\" x2=\"304.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"326.0\" y1=\"20.0\" x2=\"326.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"348.0\" y1=\"20.0\" x2=\"348.0\" y2=\"360.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"323.0\" x2=\"320.0\" y2=\"323.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"301.0\" x2=\"320.0\" y2=\"301.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"279.0\" x2=\"320.0\" y2=\"279.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"257.0\" x2=\"320.0\" y2=\"257.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"235.0\" x2=\"320.0\" y2=\"235.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"213.0\" x2=\"320.0\" y2=\"213.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"191.0\" x2=\"320.0\" y2=\"191.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"169.0\" x2=\"320.0\" y2=\"169.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"147.0\" x2=\"320.0\" y2=\"147.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"125.0\" x2=\"320.0\" y2=\"125.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"103.0\" x2=\"320.0\" y2=\"103.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"81.0\" x2=\"320.0\" y2=\"81.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"59.0\" x2=\"320.0\" y2=\"59.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"37.0\" x2=\"320.0\" y2=\"37.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"10.0\" y1=\"125.0\" x2=\"320.0\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"368.0\" x2=\"150.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"125.0\" x2=\"313.1\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"125.0\" x2=\"313.1\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"10.0\" x2=\"146.0\" y2=\"16.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"10.0\" x2=\"154.0\" y2=\"16.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"318.0\" y=\"117.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"216\" cy=\"235\" r=\"88\" fill=\"#34d399\" fill-opacity=\"0.18\" stroke=\"#047857\" stroke-width=\"3\"/><line x1=\"216.0\" y1=\"235.0\" x2=\"304.0\" y2=\"235.0\" stroke=\"#d97706\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"216\" cy=\"235\" r=\"5\" fill=\"#1e293b\"/><text x=\"216.0\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">centre (3, −5)</text><text x=\"260.0\" y=\"227.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Options A and B use \\(r=3\\sqrt{2}\\approx 4.24\\), which comes from forgetting to add 9 and 25 (e.g. \\(r^{2}=18\\)); options A and C have the centre's signs wrong.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The radius and centre of a circle with equation",
+              "note": "Complete the square twice; the centre has the OPPOSITE signs of the numbers inside the brackets."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]

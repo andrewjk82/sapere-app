@@ -6784,6 +6784,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2020-y12a-q30a",
+          "type": "mc",
+          "stem": "Show that the derivative of \\(\\ln\\left(\\dfrac{3+x}{3-x}\\right)\\) is \\(\\dfrac{6}{9-x^{2}}\\). Which working correctly shows this?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{d}{dx}\\left[\\ln(3+x)-\\ln(3-x)\\right]=\\dfrac{1}{3+x}-\\dfrac{-1}{3-x}=\\dfrac{1}{3+x}+\\dfrac{1}{3-x}=\\dfrac{(3-x)+(3+x)}{9-x^{2}}=\\dfrac{6}{9-x^{2}}\\)",
+            "\\(\\dfrac{d}{dx}\\left[\\ln(3+x)-\\ln(3-x)\\right]=\\dfrac{1}{3+x}-\\dfrac{1}{3-x}=\\dfrac{(3-x)-(3+x)}{9-x^{2}}=\\dfrac{-2x}{9-x^{2}}\\)",
+            "\\(\\dfrac{d}{dx}\\ln u=\\dfrac{1}{u}\\), so the derivative is \\(\\dfrac{1}{\\left(\\dfrac{3+x}{3-x}\\right)}=\\dfrac{3-x}{3+x}\\)",
+            "\\(\\dfrac{d}{dx}\\left[\\ln(3+x)-\\ln(3-x)\\right]=\\dfrac{1}{3+x}+\\dfrac{1}{3-x}=\\dfrac{2}{6}=\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the log law \\(\\ln\\dfrac{a}{b}=\\ln a-\\ln b\\) first, then \\(\\dfrac{d}{dx}\\ln f(x)=\\dfrac{f'(x)}{f(x)}\\). The derivative of \\((3-x)\\) is \\(-1\\).",
+          "steps": [
+            {
+              "explain": "Split the log of a quotient into a difference: \\(\\ln\\dfrac{a}{b}=\\ln a-\\ln b\\).",
+              "work": "\\(\\ln\\left(\\dfrac{3+x}{3-x}\\right)=\\ln(3+x)-\\ln(3-x)\\)"
+            },
+            {
+              "explain": "Differentiate each log: \\(\\dfrac{d}{dx}\\ln f(x)=\\dfrac{f'(x)}{f(x)}\\). For \\(\\ln(3+x)\\), \\(f'=1\\). For \\(\\ln(3-x)\\), \\(f'=-1\\) (the derivative of \\(3-x\\)).",
+              "work": "\\(\\dfrac{d}{dx}\\ln(3+x)=\\dfrac{1}{3+x},\\qquad \\dfrac{d}{dx}\\ln(3-x)=\\dfrac{-1}{3-x}\\)"
+            },
+            {
+              "explain": "Subtract: \\(\\dfrac{1}{3+x}-\\left(\\dfrac{-1}{3-x}\\right)\\). Two minus signs make a plus.",
+              "work": "\\(\\dfrac{1}{3+x}-\\dfrac{-1}{3-x}=\\dfrac{1}{3+x}+\\dfrac{1}{3-x}\\)"
+            },
+            {
+              "explain": "Common denominator \\((3+x)(3-x)\\). Multiply the first fraction's top and bottom by \\((3-x)\\) and the second by \\((3+x)\\).",
+              "work": "\\(=\\dfrac{(3-x)+(3+x)}{(3+x)(3-x)}\\)"
+            },
+            {
+              "explain": "Numerator: \\(-x+x=0\\), leaving 6. Denominator: difference of two squares, \\((3+x)(3-x)=9-x^{2}\\).",
+              "work": "\\(=\\dfrac{6}{9-x^{2}}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets that \\(\\dfrac{d}{dx}(3-x)=-1\\); C differentiates \\(\\ln u\\) without multiplying by \\(u'\\) (and its answer is not even close); D adds the fractions' tops and bottoms separately.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the derivative of",
+              "note": "Log of a quotient splits into a difference; remember the chain-rule factor −1 for (3 − x)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -14128,6 +14186,56 @@
           "meta": {
             "source": "James Ruse Agricultural High School 2020 Mathematics Advanced Trial HSC Examination",
             "school": "James Ruse Agricultural High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2020-y12a-q30b",
+          "type": "mc",
+          "stem": "Hence, or otherwise, find \\(\\displaystyle\\int\\dfrac{1}{9-x^{2}}\\,dx\\). (Use \\(\\dfrac{d}{dx}\\ln\\left(\\dfrac{3+x}{3-x}\\right)=\\dfrac{6}{9-x^{2}}\\).)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{6}\\ln\\left(\\dfrac{3+x}{3-x}\\right)+c\\)",
+            "\\(\\ln\\left(\\dfrac{3+x}{3-x}\\right)+c\\)",
+            "\\(6\\ln\\left(\\dfrac{3+x}{3-x}\\right)+c\\)",
+            "\\(\\dfrac{1}{6}\\ln\\left(9-x^{2}\\right)+c\\)"
+          ],
+          "answer": 0,
+          "hint": "From part (a), \\(\\dfrac{6}{9-x^{2}}\\) is the derivative of \\(\\ln\\left(\\dfrac{3+x}{3-x}\\right)\\). Our integrand is \\(\\dfrac{1}{6}\\) of that. Don't forget \\(+c\\).",
+          "steps": [
+            {
+              "explain": "Part (a) says \\(\\int\\dfrac{6}{9-x^{2}}\\,dx=\\ln\\left(\\dfrac{3+x}{3-x}\\right)+c\\) (integration undoes differentiation).",
+              "work": "\\(\\int\\dfrac{6}{9-x^{2}}\\,dx=\\ln\\left(\\dfrac{3+x}{3-x}\\right)+c\\)"
+            },
+            {
+              "explain": "Our integrand \\(\\dfrac{1}{9-x^{2}}\\) is the integrand above divided by 6, i.e. \\(\\dfrac{1}{9-x^{2}}=\\dfrac{1}{6}\\times\\dfrac{6}{9-x^{2}}\\). Take the \\(\\dfrac{1}{6}\\) outside the integral.",
+              "work": "\\(\\int\\dfrac{1}{9-x^{2}}\\,dx=\\dfrac{1}{6}\\int\\dfrac{6}{9-x^{2}}\\,dx\\)"
+            },
+            {
+              "explain": "Substitute the result from part (a) and add the constant of integration.",
+              "work": "\\(=\\dfrac{1}{6}\\ln\\left(\\dfrac{3+x}{3-x}\\right)+c\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{1}{6}\\times\\dfrac{6}{9-x^{2}}=\\dfrac{1}{9-x^{2}}\\) ✓. Option B forgets the \\(\\dfrac{1}{6}\\), option C multiplies by 6 instead of dividing, and option D is a different function whose derivative is \\(\\dfrac{1}{6}\\cdot\\dfrac{-2x}{9-x^{2}}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise, find",
+              "note": "Adjust the constant factor to match the derivative from part (a), then add +c."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Killara High School",
             "grade": "12",
             "origin": "teacher"
           }
