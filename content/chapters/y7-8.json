@@ -3312,6 +3312,46 @@
               "note": "Choose the listed mixed number with the smallest distance from the measured position."
             }
           ]
+        },
+        {
+          "id": "wghs22-y7-t2-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The heights (in centimetres) of the boys in a Year 9 French class are: \\(167, 193, 179, 186, 191, 174, 174, 184, 190\\). Geoff is the tallest boy in the class. Geoff's brother Scott is in Year 12 and is \\(85\\text{ mm}\\) taller than him. How tall is Scott?",
+          "options": [
+            "\\(193.85\\text{ cm}\\)",
+            "\\(201.5\\text{ cm}\\)",
+            "\\(278\\text{ cm}\\)",
+            "\\(198.5\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the tallest height in the list (193 cm). Convert 85 mm to centimetres by dividing by 10, then add!",
+          "keyPoints": [
+            {
+              "text": "85\\text{ mm}\\) taller",
+              "note": "Convert 85 mm into cm first: 10 mm = 1 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the tallest boy in the class (Geoff) from the list: \\(193\\text{ cm}\\).",
+              "work": "\\(\\text{Geoff} = 193\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert \\(85\\text{ mm}\\) to centimetres by dividing by \\(10\\) (since \\(10\\text{ mm} = 1\\text{ cm}\\)).",
+              "work": "\\(85\\text{ mm} = \\dfrac{85}{10}\\text{ cm} = 8.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Add \\(8.5\\text{ cm}\\) to Geoff's height of \\(193\\text{ cm}\\).",
+              "work": "\\(193 + 8.5 = 201.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, Scott is \\(201.5\\text{ cm}\\) tall.",
+              "work": "\\(\\text{Scott} = 201.5\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4470,6 +4510,126 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs22-y7-t2-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine which is the better buy, A or B: Option A is \\(1250\\text{ mL}\\) of milk for \\(\\$2.50\\), and Option B is \\(2\\text{ Litres}\\) of milk for \\(\\$4.20\\).",
+          "options": [
+            "Option A, because it costs $2.00 per litre compared to $2.10 per litre for Option B.",
+            "Option B, because it costs $2.00 per litre compared to $2.10 per litre for Option A.",
+            "Option B, because 2 Litres is more milk than 1250 mL.",
+            "Both options cost the exact same price per litre."
+          ],
+          "answer": 0,
+          "hint": "Convert both to the same unit (litres or mL) and find the unit price (cost per 1 L or cost per 1 mL). The lower unit price is the better buy!",
+          "keyPoints": [
+            {
+              "text": "better buy",
+              "note": "Compare the cost per 1 Litre (or per 1 mL) for both options."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert Option A's volume to litres: \\(1250\\text{ mL} = 1.25\\text{ L}\\).",
+              "work": "\\(1250\\text{ mL} = 1.25\\text{ L}\\)"
+            },
+            {
+              "explain": "Find the cost per litre for Option A by dividing \\(\\$2.50\\) by \\(1.25\\text{ L}\\) (or \\(\\$2.50 \\div 1250\\text{ mL} = \\$0.002/\\text{mL}\\)).",
+              "work": "\\(\\text{Option A: } \\dfrac{\\$2.50}{1.25\\text{ L}} = \\$2.00\\text{ per L}\\)"
+            },
+            {
+              "explain": "Find the cost per litre for Option B by dividing \\(\\$4.20\\) by \\(2\\text{ L}\\) (or \\(\\$4.20 \\div 2000\\text{ mL} = \\$0.0021/\\text{mL}\\)).",
+              "work": "\\(\\text{Option B: } \\dfrac{\\$4.20}{2\\text{ L}} = \\$2.10\\text{ per L}\\)"
+            },
+            {
+              "explain": "Compare unit prices: \\(\\$2.00/\\text{L} < \\$2.10/\\text{L}\\), so Option A is cheaper (the better buy).",
+              "work": "\\(\\text{Option A is the better buy}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The price of petrol at a service station was \\(\\$2.19\\) per litre. Find the cost of \\(48.6\\) Litres (rounded to the nearest cent).",
+          "options": [
+            "\\(\\$105.43\\)",
+            "\\(\\$106.43\\)",
+            "\\(\\$106.44\\)",
+            "\\(\\$22.19\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the number of litres (48.6) by the price per litre ($2.19), then round to 2 decimal places (nearest cent).",
+          "keyPoints": [
+            {
+              "text": "\\$2.19\\) per litre",
+              "note": "Total cost = Litres × Price per litre."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the formula for total cost: \\(\\text{Cost} = \\text{Litres} \\times \\text{Price per litre}\\).",
+              "work": "\\(\\text{Cost} = 48.6 \\times \\$2.19\\)"
+            },
+            {
+              "explain": "Multiply \\(48.6 \\times 2.19\\) to get the exact amount.",
+              "work": "\\(48.6 \\times 2.19 = 106.434\\)"
+            },
+            {
+              "explain": "Round \\(\\$106.434\\) to the nearest cent (2 decimal places): the third decimal digit is \\(4 < 5\\), so round down.",
+              "work": "\\(\\$106.434 \\approx \\$106.43\\)"
+            },
+            {
+              "explain": "Therefore, \\(48.6\\) Litres of petrol costs \\(\\$106.43\\).",
+              "work": "\\(\\text{Answer: } \\$106.43\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q15b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The price of petrol at a service station was \\(\\$2.19\\) per litre. How many litres would you get for \\(\\$30\\)? Round your answer to \\(1\\) decimal place.",
+          "options": [
+            "\\(13.6\\text{ L}\\)",
+            "\\(13.7\\text{ L}\\)",
+            "\\(14.0\\text{ L}\\)",
+            "\\(65.7\\text{ L}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the total money ($30) by the price of 1 litre ($2.19), then round to 1 decimal place.",
+          "keyPoints": [
+            {
+              "text": "for \\(\\$30\\)",
+              "note": "Litres = Total money ÷ Price per litre."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the division to find how many litres fit into \\(\\$30\\) at \\(\\$2.19\\) per litre.",
+              "work": "\\(\\text{Litres} = \\dfrac{30}{2.19}\\)"
+            },
+            {
+              "explain": "Perform the division: \\(30 \\div 2.19 = 13.6986...\\)",
+              "work": "\\(30 \\div 2.19 \\approx 13.6986\\text{ L}\\)"
+            },
+            {
+              "explain": "Round to \\(1\\) decimal place: the second decimal digit is \\(9 \\ge 5\\), so round \\(13.69...\\) up to \\(13.7\\).",
+              "work": "\\(13.6986 \\approx 13.7\\text{ L}\\)"
+            },
+            {
+              "explain": "Therefore, you would get \\(13.7\\text{ L}\\) of petrol for \\(\\$30\\).",
+              "work": "\\(\\text{Answer: } 13.7\\text{ L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -9879,6 +10039,86 @@
               "note": "Convert the hours to minutes before forming the fraction."
             }
           ]
+        },
+        {
+          "id": "wghs22-y7-t2-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the time of day that is \\(5\\) hours and \\(20\\) minutes after \\(3:00\\text{ p.m.}\\).",
+          "options": [
+            "\\(8:00\\text{ p.m.}\\)",
+            "\\(8:20\\text{ p.m.}\\)",
+            "\\(8:20\\text{ a.m.}\\)",
+            "\\(7:20\\text{ p.m.}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 5 hours to 3:00 p.m. first to reach 8:00 p.m., then add the remaining 20 minutes.",
+          "keyPoints": [
+            {
+              "text": "after \\(3:00\\text{ p.m.}\\)",
+              "note": "Add hours first, then minutes, keeping p.m."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start at \\(3:00\\text{ p.m.}\\) and add \\(5\\) hours.",
+              "work": "\\(3:00\\text{ p.m.} + 5\\text{ hours} = 8:00\\text{ p.m.}\\)"
+            },
+            {
+              "explain": "Now add the remaining \\(20\\) minutes to \\(8:00\\text{ p.m.}\\).",
+              "work": "\\(8:00\\text{ p.m.} + 20\\text{ minutes} = 8:20\\text{ p.m.}\\)"
+            },
+            {
+              "explain": "Check whether we crossed midnight: \\(8:20\\) is before \\(12:00\\), so it stays \\(\\text{p.m.}\\).",
+              "work": "\\(\\text{Stays p.m.}\\)"
+            },
+            {
+              "explain": "Therefore, the time of day is \\(8:20\\text{ p.m.}\\).",
+              "work": "\\(\\text{Answer: } 8:20\\text{ p.m.}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs22-y7-t2-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the time of day that is \\(8\\) hours and \\(5\\) minutes before \\(2345\\) (in 24-hour time).",
+          "options": [
+            "\\(1540\\) (\\(3:40\\text{ p.m.}\\))",
+            "\\(1550\\) (\\(3:50\\text{ p.m.}\\))",
+            "\\(1440\\) (\\(2:40\\text{ p.m.}\\))",
+            "\\(1640\\) (\\(4:40\\text{ p.m.}\\))"
+          ],
+          "answer": 0,
+          "hint": "2345 means 23 hours and 45 minutes. Subtract 8 from 23 hours and subtract 5 from 45 minutes.",
+          "keyPoints": [
+            {
+              "text": "before \\(2345\\)",
+              "note": "Subtract 8 hours from 23 and 5 minutes from 45."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split \\(2345\\) into \\(23\\) hours and \\(45\\) minutes.",
+              "work": "\\(23\\text{ h } 45\\text{ min}\\)"
+            },
+            {
+              "explain": "Subtract \\(8\\) hours from \\(23\\) hours: \\(23 - 8 = 15\\) hours.",
+              "work": "\\(23 - 8 = 15\\text{ hours}\\)"
+            },
+            {
+              "explain": "Subtract \\(5\\) minutes from \\(45\\) minutes: \\(45 - 5 = 40\\) minutes.",
+              "work": "\\(45 - 5 = 40\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Combine to get \\(1540\\) in 24-hour time, which is \\(3:40\\text{ p.m.}\\).",
+              "work": "\\(1540 \\text{ or } 3:40\\text{ p.m.}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }
