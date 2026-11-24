@@ -770,6 +770,64 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "frensham2021-y12e1-q11b",
+          "type": "mc",
+          "stem": "Prove by mathematical induction that \\(2^{2n}+6n-1\\) is divisible by 3 for all integers \\(n\\ge1\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(n=1\\): \\(2^{2}+6-1=9=3\\times3\\) ✓. Assume true for \\(n=k\\): \\(2^{2k}+6k-1=3M\\), so \\(2^{2k}=3M-6k+1\\). For \\(n=k+1\\): \\(2^{2(k+1)}+6(k+1)-1=4\\cdot2^{2k}+6k+5=4(3M-6k+1)+6k+5=12M-18k+9=3(4M-6k+3)\\), a multiple of 3. True for \\(n=1\\) and \\(k\\Rightarrow k+1\\), so true for all \\(n\\ge1\\).",
+            "\\(n=1\\): \\(2^{2}+6-1=9\\) ✓. Assume true for \\(n=k\\): \\(2^{2k}+6k-1=3M\\). For \\(n=k+1\\): \\(2^{2(k+1)}+6(k+1)-1=2\\cdot2^{2k}+6k+5=2(3M-6k+1)+6k+5=6M-6k+7\\), which is divisible by 3.",
+            "\\(n=1\\): \\(2^{2}+6-1=9\\) ✓. Assume true for \\(n=k+1\\): \\(2^{2(k+1)}+6(k+1)-1=3M\\). Then show it for \\(n=k\\) by subtraction. So true for all \\(n\\).",
+            "\\(n=1\\): \\(2^{2}+6-1=9=3\\times3\\) ✓. Also true for \\(n=2\\): \\(2^{4}+12-1=27=3\\times9\\) ✓, and \\(n=3\\): \\(2^{6}+18-1=81\\) ✓. So it is true for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Four steps: BASE CASE \\(n=1\\); ASSUME \\(2^{2k}+6k-1=3M\\) (\\(M\\) an integer) and rearrange for \\(2^{2k}\\); PROVE the \\(k+1\\) case, using \\(2^{2(k+1)}=4\\cdot2^{2k}\\) and substituting; CONCLUDE.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\).",
+              "work": "\\(2^{2(1)}+6(1)-1=4+6-1=9=3\\times3\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\): the expression is a multiple of 3 (\\(M\\) an integer). Rearrange for \\(2^{2k}\\).",
+              "work": "\\(2^{2k}+6k-1=3M\\ \\Rightarrow\\ 2^{2k}=3M-6k+1\\quad(\\ast)\\)"
+            },
+            {
+              "explain": "Goal: \\(2^{2(k+1)}+6(k+1)-1=3Q\\) for an integer \\(Q\\). Use \\(2^{2(k+1)}=2^{2k+2}=2^{2k}\\cdot2^{2}=4\\cdot2^{2k}\\).",
+              "work": "\\(2^{2(k+1)}+6(k+1)-1=4\\cdot2^{2k}+6k+5\\)"
+            },
+            {
+              "explain": "Substitute \\((\\ast)\\) and expand.",
+              "work": "\\(=4(3M-6k+1)+6k+5=12M-24k+4+6k+5=12M-18k+9\\)"
+            },
+            {
+              "explain": "Factor out 3: \\(Q=4M-6k+3\\) is an integer because \\(M\\) and \\(k\\) are integers.",
+              "work": "\\(=3(4M-6k+3)=3Q\\)"
+            },
+            {
+              "explain": "Conclusion: true for \\(n=1\\), and true for \\(k\\) implies true for \\(k+1\\), so by mathematical induction it is true for all integers \\(n\\ge1\\). Why not the others: B uses \\(2\\cdot2^{2k}\\) (wrong: \\(2^{2}=4\\)); C assumes the \\(k+1\\) case; D checks a few values only (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction",
+              "note": "Base n = 1; replace 2 to the 2k using the hypothesis, and 2 to the 2(k+1) is 4 times 2 to the 2k."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

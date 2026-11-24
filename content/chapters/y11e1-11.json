@@ -1133,6 +1133,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "frensham2021-y12e1-q1",
+          "type": "mc",
+          "stem": "Which of the following is NOT a factor of the polynomial \\(P(x)=x^{3}-x^{2}-8x+12\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\((x+3)\\)",
+            "\\((x+3)^{2}\\)",
+            "\\((x-2)\\)",
+            "\\((x-2)^{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the factor theorem: \\((x-a)\\) is a factor when \\(P(a)=0\\). Then use the product (or sum) of roots to see which factor is repeated. Remember: if \\((x+3)^{2}\\) is a factor then so is \\((x+3)\\), so only ONE of the four options can be false.",
+          "steps": [
+            {
+              "explain": "Test \\(x=2\\) (factor theorem).",
+              "work": "\\(P(2)=8-4-16+12=0\\ \\Rightarrow\\ (x-2)\\ \\text{is a factor}\\)"
+            },
+            {
+              "explain": "Test \\(x=-3\\).",
+              "work": "\\(P(-3)=-27-9+24+12=0\\ \\Rightarrow\\ (x+3)\\ \\text{is a factor}\\)"
+            },
+            {
+              "explain": "A cubic has three roots. Two of them are \\(2\\) and \\(-3\\); call the third \\(r\\). For \\(x^{3}-x^{2}-8x+12\\) the sum of the roots is \\(-\\dfrac{b}{a}=1\\) and the product is \\(-\\dfrac{d}{a}=-12\\).",
+              "work": "\\(2+(-3)+r=1\\ \\Rightarrow\\ r=2,\\qquad 2\\cdot(-3)\\cdot2=-12\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So the roots are \\(2,\\ 2,\\ -3\\) and the polynomial factorises as",
+              "work": "\\(P(x)=(x-2)^{2}(x+3)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\((x^{2}-4x+4)(x+3)=x^{3}-x^{2}-8x+12\\) ✓. \\((x+3)\\) appears only ONCE, so \\((x+3)^{2}\\) is NOT a factor. (A, C, D are all factors.)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is NOT a factor of the polynomial",
+              "note": "Factor theorem, then sum or product of roots tells you which factor repeats."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1777,6 +1831,114 @@
           "meta": {
             "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
             "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q11c1",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(x)=x^{3}-2px+q\\) where \\(p\\) and \\(q\\) are constants and \\(p\\ne0\\). It is given that \\(\\alpha,\\ \\beta\\) and \\(\\alpha+\\beta\\) are roots of the equation \\(P(x)=0\\). Prove that \\(\\alpha=-\\beta\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(P(x)=x^{3}+0x^{2}-2px+q\\), so the sum of the roots is \\(-\\dfrac{0}{1}=0\\). Hence \\(\\alpha+\\beta+(\\alpha+\\beta)=0\\), so \\(2\\alpha+2\\beta=0\\) and \\(\\alpha=-\\beta\\).",
+            "The product of the roots is \\(-q\\), so \\(\\alpha\\beta(\\alpha+\\beta)=-q\\), which gives \\(\\alpha=-\\beta\\).",
+            "The sum of the roots is \\(-2p\\), so \\(\\alpha+\\beta+(\\alpha+\\beta)=-2p\\), and therefore \\(\\alpha=-\\beta\\).",
+            "The roots are \\(\\alpha,\\beta\\) and \\(\\alpha+\\beta\\), so \\(\\alpha=\\beta\\) and each root is repeated."
+          ],
+          "answer": 0,
+          "hint": "For \\(ax^{3}+bx^{2}+cx+d\\) the sum of the roots is \\(-\\dfrac{b}{a}\\). The \\(x^{2}\\) term is MISSING (coefficient 0), so the sum of the roots is 0.",
+          "steps": [
+            {
+              "explain": "Write the missing \\(x^{2}\\) term explicitly.",
+              "work": "\\(P(x)=x^{3}+0\\cdot x^{2}-2px+q\\)"
+            },
+            {
+              "explain": "Sum of the roots \\(=-\\dfrac{b}{a}=-\\dfrac{0}{1}=0\\).",
+              "work": "\\(\\alpha+\\beta+(\\alpha+\\beta)=0\\)"
+            },
+            {
+              "explain": "Simplify and divide by 2.",
+              "work": "\\(2\\alpha+2\\beta=0\\ \\Rightarrow\\ \\alpha=-\\beta\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the product of roots (which involves \\(q\\), but that does not give \\(\\alpha=-\\beta\\)); C uses \\(-2p\\), which is the coefficient of \\(x\\) (sum of pairs of roots), not the sum of the roots; D is not a valid deduction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Missing x squared term means the sum of the roots is zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q11c2",
+          "type": "mc",
+          "stem": "Consider the polynomial \\(P(x)=x^{3}-2px+q\\) where \\(p\\) and \\(q\\) are constants and \\(p\\ne0\\), with roots \\(\\alpha,\\ \\beta\\) and \\(\\alpha+\\beta\\), where \\(\\alpha=-\\beta\\). Hence, or otherwise, find all the roots of \\(P(x)=0\\) in terms of \\(p\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(0,\\ \\sqrt{2p},\\ -\\sqrt{2p}\\)",
+            "\\(0,\\ \\sqrt{p},\\ -\\sqrt{p}\\)",
+            "\\(0,\\ 2p,\\ -2p\\)",
+            "\\(\\sqrt{2p},\\ -\\sqrt{2p}\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(\\beta=-\\alpha\\) the three roots are \\(\\alpha,\\ -\\alpha\\) and \\(\\alpha+\\beta=0\\). Use the sum of the products of roots in pairs: \\(\\dfrac{c}{a}=-2p\\).",
+          "steps": [
+            {
+              "explain": "Since \\(\\alpha=-\\beta\\), the third root is \\(\\alpha+\\beta=0\\). The roots are \\(\\alpha,\\ -\\alpha,\\ 0\\).",
+              "work": "\\(\\text{roots: }\\alpha,\\ \\beta=-\\alpha,\\ \\alpha+\\beta=0\\)"
+            },
+            {
+              "explain": "For \\(x^{3}+0x^{2}+cx+d\\) the sum of the products of the roots in pairs is \\(\\dfrac{c}{a}=-2p\\).",
+              "work": "\\(\\alpha\\beta+\\alpha(\\alpha+\\beta)+\\beta(\\alpha+\\beta)=-2p\\)"
+            },
+            {
+              "explain": "Substitute \\(\\beta=-\\alpha\\) and \\(\\alpha+\\beta=0\\): the last two products are 0.",
+              "work": "\\(\\alpha(-\\alpha)+0+0=-2p\\ \\Rightarrow\\ -\\alpha^{2}=-2p\\)"
+            },
+            {
+              "explain": "So \\(\\alpha^{2}=2p\\) and \\(\\alpha=\\pm\\sqrt{2p}\\) (so \\(p>0\\) for real roots).",
+              "work": "\\(\\alpha=\\sqrt{2p}\\ \\ \\text{or}\\ \\ -\\sqrt{2p}\\)"
+            },
+            {
+              "explain": "The roots of \\(P(x)=0\\) are",
+              "work": "\\(x=0,\\ \\sqrt{2p},\\ -\\sqrt{2p}\\)"
+            },
+            {
+              "explain": "Check: \\(x=\\sqrt{2p}\\Rightarrow x^{3}-2px=x\\left(x^{2}-2p\\right)=0\\), so \\(q=0\\) ✓. Option B forgets the 2; option D forgets the root 0.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find all the roots of",
+              "note": "Roots are alpha, minus alpha and 0; use the sum of products in pairs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
             "grade": "11",
             "origin": "teacher"
           }

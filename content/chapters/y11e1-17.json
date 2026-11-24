@@ -1192,6 +1192,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "frensham2021-y12e1-q12d",
+          "type": "mc",
+          "stem": "In how many different ways can 6 runners finish \\(1^{\\mathrm{st}},\\ 2^{\\mathrm{nd}}\\) and \\(3^{\\mathrm{rd}}\\) in a race? (assume no equal placings)",
+          "difficulty": "easy",
+          "options": [
+            "\\(20\\)",
+            "\\(120\\)",
+            "\\(216\\)",
+            "\\(720\\)"
+          ],
+          "answer": 1,
+          "hint": "Order matters (1st, 2nd, 3rd are different places) and a runner cannot take two places: use \\(6\\times5\\times4\\) (or \\({}^{6}P_{3}\\)).",
+          "steps": [
+            {
+              "explain": "Choose the runner for 1st place: any of the 6.",
+              "work": "\\(6\\ \\text{ways}\\)"
+            },
+            {
+              "explain": "Choose 2nd place: one runner has already finished, so 5 remain. Then 3rd place: 4 remain.",
+              "work": "\\(5\\ \\text{ways},\\qquad4\\ \\text{ways}\\)"
+            },
+            {
+              "explain": "Multiply (multiplication principle).",
+              "work": "\\(6\\times5\\times4=120={}^{6}P_{3}\\)"
+            },
+            {
+              "explain": "Why not the others: 20 is \\(\\dbinom{6}{3}\\) (order ignored); 216 is \\(6^{3}\\) (a runner could repeat); 720 is \\(6!\\) (all six places).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many different ways",
+              "note": "Ordered selection without repeats: 6 times 5 times 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2273,6 +2323,56 @@
           "meta": {
             "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
             "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q4",
+          "type": "mc",
+          "stem": "A bag contains 2 red, 5 blue, 6 white, 11 green and 14 yellow marbles. What is the minimum number of marbles that need to be chosen randomly from the bag to ensure that 6 marbles of the same colour have been chosen?",
+          "difficulty": "hard",
+          "options": [
+            "\\(16\\)",
+            "\\(17\\)",
+            "\\(23\\)",
+            "\\(34\\)"
+          ],
+          "answer": 2,
+          "hint": "Pigeonhole principle: think of the WORST case, where you avoid getting 6 of any colour for as long as possible. Then one more marble forces it.",
+          "steps": [
+            {
+              "explain": "Worst case: take as many marbles as possible with NO colour reaching 6. Red has only 2 marbles in the bag, so all 2 can be taken. Every other colour can contribute at most 5 (blue has exactly 5, white 6, green 11, yellow 14).",
+              "work": "\\(\\text{red: }2,\\quad\\text{blue: }5,\\quad\\text{white: }5,\\quad\\text{green: }5,\\quad\\text{yellow: }5\\)"
+            },
+            {
+              "explain": "Add them: the largest number you can choose without having 6 of one colour.",
+              "work": "\\(2+5+5+5+5=22\\)"
+            },
+            {
+              "explain": "The very next marble must be blue, white, green or yellow, and that colour already has 5 chosen, so it makes 6 of the same colour.",
+              "work": "\\(22+1=23\\)"
+            },
+            {
+              "explain": "So 23 marbles guarantee 6 of the same colour. Why not the others: 16 comes from forgetting that red only has 2 marbles; 34 is the total number of marbles (you do not need all of them).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the minimum number of marbles that need to be chosen",
+              "note": "Worst case: 5 of each colour (red only 2), then one more."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
             "grade": "11",
             "origin": "teacher"
           }

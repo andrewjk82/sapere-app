@@ -254,6 +254,126 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "frensham2021-y12e1-q11d1",
+          "type": "mc",
+          "stem": "\\(PQRS\\) is a trapezium with \\(A\\) and \\(B\\) being the midpoints of the parallel sides \\(PQ\\) and \\(RS\\) respectively. Let \\(\\overrightarrow{PA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{SB}=\\underset{\\sim}{b}\\). Express \\(\\overrightarrow{QR}\\) in terms of \\(\\underset{\\sim}{a},\\ \\underset{\\sim}{b}\\) and \\(\\overrightarrow{AB}\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 290\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><polygon points=\"191.6,38 401.5,38 456.3,248 123.2,248\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"191.6\" y1=\"38.0\" x2=\"296.6\" y2=\"38.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"33.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"42.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"123.2\" y1=\"248.0\" x2=\"289.8\" y2=\"248.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"252.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"185.6\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"409.5\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"296.6\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"115.2\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><text x=\"464.3\" y=\"264.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R</text><text x=\"289.8\" y=\"266.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"296.6\" cy=\"38.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"289.8\" cy=\"248.0\" r=\"4\" fill=\"#1e293b\"/></svg>"
+          },
+          "options": [
+            "\\(\\overrightarrow{AB}+\\underset{\\sim}{b}-\\underset{\\sim}{a}\\)",
+            "\\(\\overrightarrow{AB}+\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+            "\\(\\overrightarrow{AB}-\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+            "\\(\\overrightarrow{AB}+\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)"
+          ],
+          "answer": 0,
+          "hint": "Go from \\(Q\\) to \\(R\\) along a path using known vectors: \\(Q\\to A\\to B\\to R\\). \\(A\\) is the midpoint of \\(PQ\\), so \\(\\overrightarrow{AQ}=\\underset{\\sim}{a}\\) (the same as \\(\\overrightarrow{PA}\\)); similarly \\(\\overrightarrow{BR}=\\underset{\\sim}{b}\\).",
+          "steps": [
+            {
+              "explain": "\\(A\\) is the midpoint of \\(PQ\\) so \\(\\overrightarrow{AQ}=\\overrightarrow{PA}=\\underset{\\sim}{a}\\), and therefore \\(\\overrightarrow{QA}=-\\underset{\\sim}{a}\\) (the reverse direction). \\(B\\) is the midpoint of \\(SR\\) so \\(\\overrightarrow{BR}=\\overrightarrow{SB}=\\underset{\\sim}{b}\\).",
+              "work": "\\(\\overrightarrow{QA}=-\\underset{\\sim}{a},\\qquad\\overrightarrow{BR}=\\underset{\\sim}{b}\\)"
+            },
+            {
+              "explain": "Path from \\(Q\\) to \\(R\\): \\(Q\\to A\\to B\\to R\\) (coloured on the diagram).",
+              "work": "\\(\\overrightarrow{QR}=\\overrightarrow{QA}+\\overrightarrow{AB}+\\overrightarrow{BR}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 290\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><polygon points=\"191.6,38 401.5,38 456.3,248 123.2,248\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"191.6\" y1=\"38.0\" x2=\"296.6\" y2=\"38.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"33.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"42.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"123.2\" y1=\"248.0\" x2=\"289.8\" y2=\"248.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"252.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"185.6\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"409.5\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"296.6\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"115.2\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><text x=\"464.3\" y=\"264.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R</text><text x=\"289.8\" y=\"266.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"296.6\" cy=\"38.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"289.8\" cy=\"248.0\" r=\"4\" fill=\"#1e293b\"/><line x1=\"401.5\" y1=\"38.0\" x2=\"296.6\" y2=\"38.0\" stroke=\"#7c3aed\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"296.6\" y1=\"38.0\" x2=\"289.8\" y2=\"248.0\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"289.8\" y1=\"248.0\" x2=\"456.3\" y2=\"248.0\" stroke=\"#d97706\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"401.5\" y1=\"38.0\" x2=\"456.3\" y2=\"248.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"349.0\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−a</text><text x=\"373.0\" y=\"236.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">b</text><text x=\"318.6\" y=\"143.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB</text><text x=\"446.9\" y=\"143.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">QR</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\overrightarrow{QR}=-\\underset{\\sim}{a}+\\overrightarrow{AB}+\\underset{\\sim}{b}=\\overrightarrow{AB}+\\underset{\\sim}{b}-\\underset{\\sim}{a}\\)"
+            },
+            {
+              "explain": "Why not the others: B has \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\) swapped in sign (that is \\(\\overrightarrow{PS}\\)-type), C and D lose the correct direction of \\(\\overrightarrow{QA}\\) or \\(\\overrightarrow{BR}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express",
+              "note": "Path Q to A to B to R; QA is minus a."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q11d2",
+          "type": "mc",
+          "stem": "\\(PQRS\\) is a trapezium with \\(A\\) and \\(B\\) being the midpoints of the parallel sides \\(PQ\\) and \\(RS\\) respectively. Let \\(\\overrightarrow{PA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{SB}=\\underset{\\sim}{b}\\). Hence, or otherwise, show that \\(\\overrightarrow{AB}=\\dfrac{1}{2}\\left(\\overrightarrow{PS}+\\overrightarrow{QR}\\right)\\). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 290\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><polygon points=\"191.6,38 401.5,38 456.3,248 123.2,248\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"191.6\" y1=\"38.0\" x2=\"296.6\" y2=\"38.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"33.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"42.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"123.2\" y1=\"248.0\" x2=\"289.8\" y2=\"248.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"252.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"185.6\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"409.5\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"296.6\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"115.2\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><text x=\"464.3\" y=\"264.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R</text><text x=\"289.8\" y=\"266.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"296.6\" cy=\"38.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"289.8\" cy=\"248.0\" r=\"4\" fill=\"#1e293b\"/></svg>"
+          },
+          "options": [
+            "\\(\\overrightarrow{PS}=\\overrightarrow{PA}+\\overrightarrow{AB}+\\overrightarrow{BS}=\\underset{\\sim}{a}+\\overrightarrow{AB}-\\underset{\\sim}{b}\\), so \\(\\overrightarrow{AB}=\\overrightarrow{PS}-(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\). From (i), \\(\\overrightarrow{AB}=\\overrightarrow{QR}-(\\underset{\\sim}{b}-\\underset{\\sim}{a})\\). Add: \\(2\\overrightarrow{AB}=\\overrightarrow{PS}+\\overrightarrow{QR}-(\\underset{\\sim}{a}-\\underset{\\sim}{b})-(\\underset{\\sim}{b}-\\underset{\\sim}{a})=\\overrightarrow{PS}+\\overrightarrow{QR}\\). So \\(\\overrightarrow{AB}=\\dfrac{1}{2}\\left(\\overrightarrow{PS}+\\overrightarrow{QR}\\right)\\).",
+            "\\(\\overrightarrow{PS}=\\overrightarrow{PA}+\\overrightarrow{AB}+\\overrightarrow{BS}=\\underset{\\sim}{a}+\\overrightarrow{AB}-\\underset{\\sim}{b}\\) and \\(\\overrightarrow{QR}=\\overrightarrow{AB}+\\underset{\\sim}{b}-\\underset{\\sim}{a}\\). Subtract: \\(\\overrightarrow{PS}-\\overrightarrow{QR}=2\\underset{\\sim}{a}-2\\underset{\\sim}{b}\\), so \\(\\overrightarrow{AB}=\\dfrac{1}{2}\\left(\\overrightarrow{PS}-\\overrightarrow{QR}\\right)\\).",
+            "\\(\\overrightarrow{PS}=\\overrightarrow{PA}+\\overrightarrow{AB}+\\overrightarrow{BS}=\\underset{\\sim}{a}+\\overrightarrow{AB}+\\underset{\\sim}{b}\\) and \\(\\overrightarrow{QR}=\\overrightarrow{AB}+\\underset{\\sim}{b}-\\underset{\\sim}{a}\\). Add: \\(\\overrightarrow{PS}+\\overrightarrow{QR}=2\\overrightarrow{AB}+2\\underset{\\sim}{b}\\), so \\(\\overrightarrow{AB}=\\dfrac{1}{2}\\left(\\overrightarrow{PS}+\\overrightarrow{QR}\\right)-\\underset{\\sim}{b}\\).",
+            "The midpoints \\(A\\) and \\(B\\) join the midpoints of the parallel sides, so \\(AB\\) is the average of \\(PS\\) and \\(QR\\). Hence the result."
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\overrightarrow{PS}\\) in the same way as part (i), using the path \\(P\\to A\\to B\\to S\\). Then ADD the two expressions so that the \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\) terms cancel.",
+          "steps": [
+            {
+              "explain": "Path \\(P\\to A\\to B\\to S\\) (coloured): \\(\\overrightarrow{PA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{BS}=-\\overrightarrow{SB}=-\\underset{\\sim}{b}\\).",
+              "work": "\\(\\overrightarrow{PS}=\\overrightarrow{PA}+\\overrightarrow{AB}+\\overrightarrow{BS}=\\underset{\\sim}{a}+\\overrightarrow{AB}-\\underset{\\sim}{b}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 480 290\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><polygon points=\"191.6,38 401.5,38 456.3,248 123.2,248\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"191.6\" y1=\"38.0\" x2=\"296.6\" y2=\"38.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"33.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"294.6\" y1=\"38.0\" x2=\"286.8\" y2=\"42.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"123.2\" y1=\"248.0\" x2=\"289.8\" y2=\"248.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"243.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"248.0\" x2=\"280.0\" y2=\"252.5\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"185.6\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"409.5\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"296.6\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"115.2\" y=\"264.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><text x=\"464.3\" y=\"264.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R</text><text x=\"289.8\" y=\"266.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"296.6\" cy=\"38.0\" r=\"4\" fill=\"#1e293b\"/><circle cx=\"289.8\" cy=\"248.0\" r=\"4\" fill=\"#1e293b\"/><line x1=\"191.6\" y1=\"38.0\" x2=\"296.6\" y2=\"38.0\" stroke=\"#7c3aed\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"296.6\" y1=\"38.0\" x2=\"289.8\" y2=\"248.0\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"289.8\" y1=\"248.0\" x2=\"123.2\" y2=\"248.0\" stroke=\"#d97706\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"191.6\" y1=\"38.0\" x2=\"123.2\" y2=\"248.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"244.1\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"206.5\" y=\"236.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−b</text><text x=\"272.6\" y=\"143.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB</text><text x=\"143.4\" y=\"143.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">PS</text></svg>"
+              }
+            },
+            {
+              "explain": "Make \\(\\overrightarrow{AB}\\) the subject.",
+              "work": "\\(\\overrightarrow{AB}=\\overrightarrow{PS}-(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\quad(1)\\)"
+            },
+            {
+              "explain": "From part (i): \\(\\overrightarrow{QR}=\\overrightarrow{AB}+\\underset{\\sim}{b}-\\underset{\\sim}{a}\\), so",
+              "work": "\\(\\overrightarrow{AB}=\\overrightarrow{QR}-(\\underset{\\sim}{b}-\\underset{\\sim}{a})\\quad(2)\\)"
+            },
+            {
+              "explain": "Add (1) and (2). The extra terms are \\(-(\\underset{\\sim}{a}-\\underset{\\sim}{b})-(\\underset{\\sim}{b}-\\underset{\\sim}{a})=-\\underset{\\sim}{a}+\\underset{\\sim}{b}-\\underset{\\sim}{b}+\\underset{\\sim}{a}=0\\).",
+              "work": "\\(2\\overrightarrow{AB}=\\overrightarrow{PS}+\\overrightarrow{QR}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\overrightarrow{AB}=\\dfrac{1}{2}\\left(\\overrightarrow{PS}+\\overrightarrow{QR}\\right)\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B subtracts (the \\(\\underset{\\sim}{a},\\underset{\\sim}{b}\\) terms do not cancel); C has the wrong sign for \\(\\overrightarrow{BS}\\); D quotes the conclusion without vector working.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Write PS via P, A, B, S, then add the two equations so a and b cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1506,6 +1626,124 @@
           "meta": {
             "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
             "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q6",
+          "type": "mc",
+          "stem": "The vectors \\(4\\underset{\\sim}{i}-\\underset{\\sim}{j}\\) and \\(3\\underset{\\sim}{i}+m\\underset{\\sim}{j}\\) are perpendicular. What is the value of \\(m\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-12\\)",
+            "\\(-1\\)",
+            "\\(3\\)",
+            "\\(12\\)"
+          ],
+          "answer": 3,
+          "hint": "Perpendicular vectors have dot product zero: \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=a_{1}b_{1}+a_{2}b_{2}=0\\).",
+          "steps": [
+            {
+              "explain": "Write the vectors as components: \\(\\begin{pmatrix}4\\\\-1\\end{pmatrix}\\) and \\(\\begin{pmatrix}3\\\\ m\\end{pmatrix}\\).",
+              "work": "\\(\\underset{\\sim}{a}=(4,-1),\\qquad\\underset{\\sim}{b}=(3,m)\\)"
+            },
+            {
+              "explain": "Dot product: multiply the \\(i\\)-components and the \\(j\\)-components, then add.",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=(4)(3)+(-1)(m)=12-m\\)"
+            },
+            {
+              "explain": "Perpendicular means the dot product is 0.",
+              "work": "\\(12-m=0\\ \\Rightarrow\\ m=12\\)"
+            },
+            {
+              "explain": "Check: \\((4,-1)\\cdot(3,12)=12-12=0\\) ✓. Option A, \\(-12\\), would give \\(12+12=24\\ne0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of",
+              "note": "Perpendicular means the dot product is zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q13a",
+          "type": "mc",
+          "stem": "\\(OACB\\) is a rhombus with \\(\\overrightarrow{OA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{OB}=\\underset{\\sim}{b}\\). Using vector methods, prove that the diagonal \\(OC\\) bisects angle \\(AOB\\). Which proof is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"150,34 310,34 248,190 88,190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"230.0\" y1=\"40.0\" x2=\"230.0\" y2=\"28.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"113.4\" y1=\"109.8\" x2=\"124.6\" y2=\"114.2\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"273.4\" y1=\"109.8\" x2=\"284.6\" y2=\"114.2\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"196.0\" x2=\"168.0\" y2=\"184.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"308.0\" y1=\"34.0\" x2=\"300.2\" y2=\"29.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"308.0\" y1=\"34.0\" x2=\"300.2\" y2=\"38.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"144.0\" y=\"26.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"318.0\" y=\"26.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"80.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"256.0\" y=\"206.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\). \\(\\overrightarrow{OC}\\cdot\\overrightarrow{OA}=|\\underset{\\sim}{a}|^{2}+|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\angle AOB\\) and \\(\\overrightarrow{OC}\\cdot\\overrightarrow{OB}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\angle AOB+|\\underset{\\sim}{b}|^{2}\\). As \\(|\\underset{\\sim}{a}|=|\\underset{\\sim}{b}|\\), the two dot products are equal, so \\(|\\overrightarrow{OC}||\\underset{\\sim}{a}|\\cos\\angle AOC=|\\overrightarrow{OC}||\\underset{\\sim}{b}|\\cos\\angle BOC\\), giving \\(\\cos\\angle AOC=\\cos\\angle BOC\\). Both angles lie in \\([0^{\\circ},180^{\\circ}]\\), so \\(\\angle AOC=\\angle BOC\\).",
+            "\\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\) and \\(\\overrightarrow{AB}=\\underset{\\sim}{b}-\\underset{\\sim}{a}\\). \\(\\overrightarrow{OC}\\cdot\\overrightarrow{AB}=|\\underset{\\sim}{b}|^{2}-|\\underset{\\sim}{a}|^{2}=0\\), so \\(OC\\perp AB\\). Hence \\(OC\\) bisects angle \\(AOB\\).",
+            "\\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\). Since \\(OACB\\) is a rhombus, all four sides are equal, so \\(OC\\) bisects angle \\(AOB\\).",
+            "\\(\\overrightarrow{OC}\\cdot\\overrightarrow{OA}=\\overrightarrow{OC}\\cdot\\overrightarrow{OB}\\), so \\(\\angle AOC=\\angle BOC\\) (equal dot products mean equal angles)."
+          ],
+          "answer": 0,
+          "hint": "Show \\(\\cos\\angle AOC=\\cos\\angle BOC\\) with dot products. First \\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\). Then compute \\(\\overrightarrow{OC}\\cdot\\overrightarrow{OA}\\) and \\(\\overrightarrow{OC}\\cdot\\overrightarrow{OB}\\), using \\(|\\underset{\\sim}{a}|=|\\underset{\\sim}{b}|\\) (equal sides of a rhombus).",
+          "steps": [
+            {
+              "explain": "Opposite sides of the rhombus are parallel and equal, so \\(\\overrightarrow{AC}=\\overrightarrow{OB}=\\underset{\\sim}{b}\\). Then \\(\\overrightarrow{OC}=\\overrightarrow{OA}+\\overrightarrow{AC}\\) (the red diagonal).",
+              "work": "\\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"150,34 310,34 248,190 88,190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"230.0\" y1=\"40.0\" x2=\"230.0\" y2=\"28.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"113.4\" y1=\"109.8\" x2=\"124.6\" y2=\"114.2\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"273.4\" y1=\"109.8\" x2=\"284.6\" y2=\"114.2\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"168.0\" y1=\"196.0\" x2=\"168.0\" y2=\"184.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"308.0\" y1=\"34.0\" x2=\"300.2\" y2=\"29.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"308.0\" y1=\"34.0\" x2=\"300.2\" y2=\"38.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"144.0\" y=\"26.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"318.0\" y=\"26.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"80.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"256.0\" y=\"206.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><line x1=\"150.0\" y1=\"34.0\" x2=\"248.0\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"310.0\" y2=\"34.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"88.0\" y2=\"190.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M184.0,34.0 A34,34 0 0 1 168.1,62.8\" fill=\"none\" stroke=\"#047857\" stroke-width=\"3\"/><path d=\"M168.1,62.8 A34,34 0 0 1 137.4,65.6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"196.0\" y=\"74.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">∠AOC</text><text x=\"144.0\" y=\"100.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">∠BOC</text><text x=\"280.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"120.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">b</text><text x=\"221.0\" y=\"116.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OC = a + b</text></svg>"
+              }
+            },
+            {
+              "explain": "Dot product with \\(\\overrightarrow{OA}=\\underset{\\sim}{a}\\). Use \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{a}=|\\underset{\\sim}{a}|^{2}\\) and \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\angle AOB\\); then \\(|\\underset{\\sim}{b}|=|\\underset{\\sim}{a}|\\) (rhombus).",
+              "work": "\\(\\overrightarrow{OC}\\cdot\\overrightarrow{OA}=(\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot\\underset{\\sim}{a}=|\\underset{\\sim}{a}|^{2}+|\\underset{\\sim}{a}|^{2}\\cos\\angle AOB\\quad(1)\\)"
+            },
+            {
+              "explain": "Dot product with \\(\\overrightarrow{OB}=\\underset{\\sim}{b}\\), in the same way.",
+              "work": "\\(\\overrightarrow{OC}\\cdot\\overrightarrow{OB}=(\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}|^{2}\\cos\\angle AOB+|\\underset{\\sim}{b}|^{2}=|\\underset{\\sim}{a}|^{2}+|\\underset{\\sim}{a}|^{2}\\cos\\angle AOB\\quad(2)\\)"
+            },
+            {
+              "explain": "(1) and (2) are equal. Write each dot product with the angle formula \\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=|\\underset{\\sim}{u}||\\underset{\\sim}{v}|\\cos\\theta\\).",
+              "work": "\\(|\\overrightarrow{OC}||\\underset{\\sim}{a}|\\cos\\angle AOC=|\\overrightarrow{OC}||\\underset{\\sim}{b}|\\cos\\angle BOC\\)"
+            },
+            {
+              "explain": "Cancel \\(|\\overrightarrow{OC}|\\) and \\(|\\underset{\\sim}{a}|=|\\underset{\\sim}{b}|\\) (non-zero).",
+              "work": "\\(\\cos\\angle AOC=\\cos\\angle BOC\\)"
+            },
+            {
+              "explain": "Both angles are between \\(0^{\\circ}\\) and \\(180^{\\circ}\\), where cosine is one-to-one, so the angles are equal: \\(OC\\) bisects \\(\\angle AOB\\) (green and orange arcs).",
+              "work": "\\(\\angle AOC=\\angle BOC\\)"
+            },
+            {
+              "explain": "Why not the others: B only shows the diagonals are perpendicular; C is a statement, not a proof; D skips the step that turns equal dot products into equal angles (it needs \\(|\\underset{\\sim}{a}|=|\\underset{\\sim}{b}|\\) and the range of the angles).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using vector methods, prove that",
+              "note": "OC = a + b; show OC dot OA equals OC dot OB, then equal cosines."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
             "grade": "12",
             "origin": "teacher"
           }

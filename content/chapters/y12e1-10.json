@@ -1598,6 +1598,70 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "frensham2021-y12e1-q14c1",
+          "type": "mc",
+          "stem": "Initially a golf ball was hit from the ground at \\(90\\ \\text{m s}^{-1}\\) at an angle of \\(30^{\\circ}\\) to the horizontal and \\(g=10\\ \\text{m s}^{-2}\\). Show that the position vector of the golf ball after \\(t\\) seconds is given by \\(\\underset{\\sim}{s}(t)=\\left(45\\sqrt{3}\\,t\\right)\\underset{\\sim}{i}+\\left(45t-5t^{2}\\right)\\underset{\\sim}{j}\\). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 330\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"290.0\" x2=\"350.0\" y2=\"290.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"304.0\" x2=\"70.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"290.0\" x2=\"343.1\" y2=\"286.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"290.0\" x2=\"343.1\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"26.0\" x2=\"66.0\" y2=\"32.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"26.0\" x2=\"74.0\" y2=\"32.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"306.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"80.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"350.0\" y=\"308.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"62.0\" y=\"306.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"65.0\" y1=\"230.0\" x2=\"75.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"58.0\" y=\"234.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 m</text><line x1=\"70.0\" y1=\"230.0\" x2=\"104.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"230.0\" x2=\"97.1\" y2=\"226.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"230.0\" x2=\"97.1\" y2=\"234.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"98.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><polyline points=\"70.0,290.0 72.0,288.9 74.0,287.7 76.0,286.6 78.0,285.5 80.0,284.4 82.0,283.3 83.9,282.3 85.9,281.2 87.9,280.2 89.9,279.1 91.9,278.1 93.9,277.1 95.9,276.1 97.9,275.1 99.9,274.2 101.9,273.2 103.9,272.3 105.9,271.4 107.8,270.4 109.8,269.5 111.8,268.6 113.8,267.8 115.8,266.9 117.8,266.1 119.8,265.2 121.8,264.4 123.8,263.6 125.8,262.8 127.8,262.0 129.8,261.2 131.7,260.5 133.7,259.7 135.7,259.0 137.7,258.2 139.7,257.5 141.7,256.8 143.7,256.1 145.7,255.5 147.7,254.8 149.7,254.2 151.7,253.5 153.7,252.9 155.6,252.3 157.6,251.7 159.6,251.1 161.6,250.5 163.6,250.0 165.6,249.4 167.6,248.9 169.6,248.4 171.6,247.9 173.6,247.4 175.6,246.9 177.6,246.4 179.6,246.0 181.5,245.5 183.5,245.1 185.5,244.7 187.5,244.2 189.5,243.9 191.5,243.5 193.5,243.1 195.5,242.7 197.5,242.4 199.5,242.1 201.5,241.8 203.5,241.4 205.4,241.2 207.4,240.9 209.4,240.6 211.4,240.4 213.4,240.1 215.4,239.9 217.4,239.7 219.4,239.5 221.4,239.3 223.4,239.1 225.4,238.9 227.4,238.8 229.3,238.6 231.3,238.5 233.3,238.4 235.3,238.3 237.3,238.2 239.3,238.1 241.3,238.0 243.3,238.0 245.3,238.0 247.3,237.9 249.3,237.9 251.3,237.9 253.3,237.9 255.2,238.0 257.2,238.0 259.2,238.0 261.2,238.1 263.2,238.2 265.2,238.3 267.2,238.4 269.2,238.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"70.0\" y1=\"290.0\" x2=\"178.0\" y2=\"104.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"178.0\" y1=\"104.0\" x2=\"171.1\" y2=\"108.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"178.0\" y1=\"104.0\" x2=\"178.0\" y2=\"112.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"94.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90 m/s</text><path d=\"M116,290 A46,46 0 0 0 93.0,250.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"124.0\" y=\"276.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text></svg>"
+          },
+          "options": [
+            "\\(\\underset{\\sim}{a}=-10\\underset{\\sim}{j}\\). \\(\\underset{\\sim}{v}=-10t\\underset{\\sim}{j}+\\underset{\\sim}{c}\\); at \\(t=0\\), \\(\\underset{\\sim}{v}=90\\cos30^{\\circ}\\underset{\\sim}{i}+90\\sin30^{\\circ}\\underset{\\sim}{j}=45\\sqrt{3}\\underset{\\sim}{i}+45\\underset{\\sim}{j}\\), so \\(\\underset{\\sim}{v}=45\\sqrt{3}\\underset{\\sim}{i}+(45-10t)\\underset{\\sim}{j}\\). Integrate: \\(\\underset{\\sim}{s}=45\\sqrt{3}t\\underset{\\sim}{i}+(45t-5t^{2})\\underset{\\sim}{j}+\\underset{\\sim}{c}\\); at \\(t=0\\), \\(\\underset{\\sim}{s}=\\underset{\\sim}{0}\\) (ground), so \\(\\underset{\\sim}{c}=\\underset{\\sim}{0}\\).",
+            "\\(\\underset{\\sim}{a}=-10\\underset{\\sim}{j}\\). Initial velocity \\(90\\sin30^{\\circ}\\underset{\\sim}{i}+90\\cos30^{\\circ}\\underset{\\sim}{j}=45\\underset{\\sim}{i}+45\\sqrt{3}\\underset{\\sim}{j}\\), so \\(\\underset{\\sim}{s}=45t\\underset{\\sim}{i}+\\left(45\\sqrt{3}t-5t^{2}\\right)\\underset{\\sim}{j}\\).",
+            "\\(\\underset{\\sim}{a}=-10\\underset{\\sim}{j}\\), \\(\\underset{\\sim}{v}=-10t\\underset{\\sim}{j}\\), \\(\\underset{\\sim}{s}=-5t^{2}\\underset{\\sim}{j}\\), and the initial velocity \\(\\left(45\\sqrt{3},45\\right)\\) is then added at the end: \\(\\underset{\\sim}{s}=45\\sqrt{3}\\underset{\\sim}{i}+\\left(45-5t^{2}\\right)\\underset{\\sim}{j}\\).",
+            "\\(\\underset{\\sim}{a}=-9.8\\underset{\\sim}{j}\\). \\(\\underset{\\sim}{v}=45\\sqrt{3}\\underset{\\sim}{i}+(45-9.8t)\\underset{\\sim}{j}\\), \\(\\underset{\\sim}{s}=45\\sqrt{3}t\\underset{\\sim}{i}+\\left(45t-4.9t^{2}\\right)\\underset{\\sim}{j}\\)."
+          ],
+          "answer": 0,
+          "hint": "Start from the acceleration \\(\\underset{\\sim}{a}=-10\\underset{\\sim}{j}\\) (only gravity). INTEGRATE to get velocity (use the initial velocity components \\(90\\cos30^{\\circ}\\) horizontal and \\(90\\sin30^{\\circ}\\) vertical to find the constant), INTEGRATE again to get position (the ball starts on the ground, \\(\\underset{\\sim}{s}(0)=\\underset{\\sim}{0}\\)).",
+          "steps": [
+            {
+              "explain": "Acceleration: no horizontal acceleration, and gravity \\(g=10\\) acts downwards.",
+              "work": "\\(\\underset{\\sim}{a}(t)=0\\underset{\\sim}{i}-10\\underset{\\sim}{j}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 330\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"290.0\" x2=\"350.0\" y2=\"290.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"304.0\" x2=\"70.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"290.0\" x2=\"343.1\" y2=\"286.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"290.0\" x2=\"343.1\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"26.0\" x2=\"66.0\" y2=\"32.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"26.0\" x2=\"74.0\" y2=\"32.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"306.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"80.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"350.0\" y=\"308.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"62.0\" y=\"306.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"65.0\" y1=\"230.0\" x2=\"75.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"58.0\" y=\"234.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 m</text><line x1=\"70.0\" y1=\"230.0\" x2=\"104.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"230.0\" x2=\"97.1\" y2=\"226.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"230.0\" x2=\"97.1\" y2=\"234.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"98.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><polyline points=\"70.0,290.0 72.0,288.9 74.0,287.7 76.0,286.6 78.0,285.5 80.0,284.4 82.0,283.3 83.9,282.3 85.9,281.2 87.9,280.2 89.9,279.1 91.9,278.1 93.9,277.1 95.9,276.1 97.9,275.1 99.9,274.2 101.9,273.2 103.9,272.3 105.9,271.4 107.8,270.4 109.8,269.5 111.8,268.6 113.8,267.8 115.8,266.9 117.8,266.1 119.8,265.2 121.8,264.4 123.8,263.6 125.8,262.8 127.8,262.0 129.8,261.2 131.7,260.5 133.7,259.7 135.7,259.0 137.7,258.2 139.7,257.5 141.7,256.8 143.7,256.1 145.7,255.5 147.7,254.8 149.7,254.2 151.7,253.5 153.7,252.9 155.6,252.3 157.6,251.7 159.6,251.1 161.6,250.5 163.6,250.0 165.6,249.4 167.6,248.9 169.6,248.4 171.6,247.9 173.6,247.4 175.6,246.9 177.6,246.4 179.6,246.0 181.5,245.5 183.5,245.1 185.5,244.7 187.5,244.2 189.5,243.9 191.5,243.5 193.5,243.1 195.5,242.7 197.5,242.4 199.5,242.1 201.5,241.8 203.5,241.4 205.4,241.2 207.4,240.9 209.4,240.6 211.4,240.4 213.4,240.1 215.4,239.9 217.4,239.7 219.4,239.5 221.4,239.3 223.4,239.1 225.4,238.9 227.4,238.8 229.3,238.6 231.3,238.5 233.3,238.4 235.3,238.3 237.3,238.2 239.3,238.1 241.3,238.0 243.3,238.0 245.3,238.0 247.3,237.9 249.3,237.9 251.3,237.9 253.3,237.9 255.2,238.0 257.2,238.0 259.2,238.0 261.2,238.1 263.2,238.2 265.2,238.3 267.2,238.4 269.2,238.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"70.0\" y1=\"290.0\" x2=\"178.0\" y2=\"104.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"178.0\" y1=\"104.0\" x2=\"171.1\" y2=\"108.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"178.0\" y1=\"104.0\" x2=\"178.0\" y2=\"112.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"94.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90 m/s</text><path d=\"M116,290 A46,46 0 0 0 93.0,250.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"124.0\" y=\"276.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate for velocity: \\(\\underset{\\sim}{v}=\\int\\underset{\\sim}{a}\\,dt=-10t\\underset{\\sim}{j}+\\underset{\\sim}{c}_{1}\\). Initial velocity: \\(90\\) at \\(30^{\\circ}\\) to the horizontal has components \\(90\\cos30^{\\circ}=90\\cdot\\dfrac{\\sqrt{3}}{2}=45\\sqrt{3}\\) (horizontal) and \\(90\\sin30^{\\circ}=90\\cdot\\dfrac{1}{2}=45\\) (vertical).",
+              "work": "\\(\\underset{\\sim}{v}(0)=45\\sqrt{3}\\underset{\\sim}{i}+45\\underset{\\sim}{j}\\ \\Rightarrow\\ \\underset{\\sim}{c}_{1}=45\\sqrt{3}\\underset{\\sim}{i}+45\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Velocity vector.",
+              "work": "\\(\\underset{\\sim}{v}(t)=45\\sqrt{3}\\underset{\\sim}{i}+(45-10t)\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Integrate again for position: \\(\\int45\\sqrt{3}\\,dt=45\\sqrt{3}\\,t\\) and \\(\\int(45-10t)\\,dt=45t-5t^{2}\\), plus a constant vector \\(\\underset{\\sim}{c}_{2}\\).",
+              "work": "\\(\\underset{\\sim}{s}(t)=45\\sqrt{3}t\\underset{\\sim}{i}+\\left(45t-5t^{2}\\right)\\underset{\\sim}{j}+\\underset{\\sim}{c}_{2}\\)"
+            },
+            {
+              "explain": "The ball is hit from the ground at the origin: \\(\\underset{\\sim}{s}(0)=\\underset{\\sim}{0}\\), so \\(\\underset{\\sim}{c}_{2}=\\underset{\\sim}{0}\\).",
+              "work": "\\(\\underset{\\sim}{s}(t)=\\left(45\\sqrt{3}\\,t\\right)\\underset{\\sim}{i}+\\left(45t-5t^{2}\\right)\\underset{\\sim}{j}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps \\(\\sin\\) and \\(\\cos\\); C adds the initial velocity as a position (it must be multiplied by \\(t\\)); D uses \\(g=9.8\\) (the question gives \\(g=10\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the position vector of the golf ball after",
+              "note": "Integrate acceleration twice, using initial velocity components 90cos30 and 90sin30."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2140,6 +2204,117 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q14c2",
+          "type": "mc",
+          "stem": "Initially a golf ball was hit from the ground at \\(90\\ \\text{m s}^{-1}\\) at an angle of \\(30^{\\circ}\\) to the horizontal and \\(g=10\\ \\text{m s}^{-2}\\). Five seconds after the golf ball was hit, a small stone was fired with velocity \\(V\\) horizontally from a point \\(20\\ \\text{m}\\) above the ground. By finding the position vector of the stone, or otherwise, show that the two objects collide after the golf ball has travelled for \\(21\\) seconds. Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 330\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"290.0\" x2=\"350.0\" y2=\"290.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"304.0\" x2=\"70.0\" y2=\"26.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"290.0\" x2=\"343.1\" y2=\"286.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"290.0\" x2=\"343.1\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"26.0\" x2=\"66.0\" y2=\"32.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"26.0\" x2=\"74.0\" y2=\"32.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"306.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"80.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"350.0\" y=\"308.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"62.0\" y=\"306.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"65.0\" y1=\"230.0\" x2=\"75.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"58.0\" y=\"234.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20 m</text><line x1=\"70.0\" y1=\"230.0\" x2=\"104.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"230.0\" x2=\"97.1\" y2=\"226.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"104.0\" y1=\"230.0\" x2=\"97.1\" y2=\"234.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"98.0\" y=\"220.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><polyline points=\"70.0,290.0 72.0,288.9 74.0,287.7 76.0,286.6 78.0,285.5 80.0,284.4 82.0,283.3 83.9,282.3 85.9,281.2 87.9,280.2 89.9,279.1 91.9,278.1 93.9,277.1 95.9,276.1 97.9,275.1 99.9,274.2 101.9,273.2 103.9,272.3 105.9,271.4 107.8,270.4 109.8,269.5 111.8,268.6 113.8,267.8 115.8,266.9 117.8,266.1 119.8,265.2 121.8,264.4 123.8,263.6 125.8,262.8 127.8,262.0 129.8,261.2 131.7,260.5 133.7,259.7 135.7,259.0 137.7,258.2 139.7,257.5 141.7,256.8 143.7,256.1 145.7,255.5 147.7,254.8 149.7,254.2 151.7,253.5 153.7,252.9 155.6,252.3 157.6,251.7 159.6,251.1 161.6,250.5 163.6,250.0 165.6,249.4 167.6,248.9 169.6,248.4 171.6,247.9 173.6,247.4 175.6,246.9 177.6,246.4 179.6,246.0 181.5,245.5 183.5,245.1 185.5,244.7 187.5,244.2 189.5,243.9 191.5,243.5 193.5,243.1 195.5,242.7 197.5,242.4 199.5,242.1 201.5,241.8 203.5,241.4 205.4,241.2 207.4,240.9 209.4,240.6 211.4,240.4 213.4,240.1 215.4,239.9 217.4,239.7 219.4,239.5 221.4,239.3 223.4,239.1 225.4,238.9 227.4,238.8 229.3,238.6 231.3,238.5 233.3,238.4 235.3,238.3 237.3,238.2 239.3,238.1 241.3,238.0 243.3,238.0 245.3,238.0 247.3,237.9 249.3,237.9 251.3,237.9 253.3,237.9 255.2,238.0 257.2,238.0 259.2,238.0 261.2,238.1 263.2,238.2 265.2,238.3 267.2,238.4 269.2,238.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\"/><line x1=\"70.0\" y1=\"290.0\" x2=\"178.0\" y2=\"104.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"178.0\" y1=\"104.0\" x2=\"171.1\" y2=\"108.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"178.0\" y1=\"104.0\" x2=\"178.0\" y2=\"112.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"94.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90 m/s</text><path d=\"M116,290 A46,46 0 0 0 93.0,250.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"124.0\" y=\"276.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text></svg>"
+          },
+          "options": [
+            "Stone (time since firing \\(t-5\\)): \\(\\underset{\\sim}{s}=V(t-5)\\underset{\\sim}{i}+\\left(20-5(t-5)^{2}\\right)\\underset{\\sim}{j}\\). Golf ball: \\(\\underset{\\sim}{s}=45\\sqrt{3}t\\underset{\\sim}{i}+\\left(45t-5t^{2}\\right)\\underset{\\sim}{j}\\). Equate the \\(\\underset{\\sim}{j}\\) components: \\(20-5(t^{2}-10t+25)=45t-5t^{2}\\Rightarrow20-5t^{2}+50t-125=45t-5t^{2}\\Rightarrow5t=105\\Rightarrow t=21\\).",
+            "Stone: \\(\\underset{\\sim}{s}=Vt\\underset{\\sim}{i}+\\left(20-5t^{2}\\right)\\underset{\\sim}{j}\\) (using \\(t\\) as the stone's own time). Equate \\(\\underset{\\sim}{j}\\) components: \\(20-5t^{2}=45t-5t^{2}\\Rightarrow t=\\dfrac{20}{45}=0.44\\).",
+            "Stone: \\(\\underset{\\sim}{s}=V(t-5)\\underset{\\sim}{i}+\\left(20+5(t-5)^{2}\\right)\\underset{\\sim}{j}\\). Equate \\(\\underset{\\sim}{j}\\): \\(20+5(t-5)^{2}=45t-5t^{2}\\), which has no real solution.",
+            "Stone: \\(\\underset{\\sim}{s}=V(t-5)\\underset{\\sim}{i}+\\left(20-5(t-5)^{2}\\right)\\underset{\\sim}{j}\\). Equate \\(\\underset{\\sim}{i}\\) components only: \\(V(t-5)=45\\sqrt{3}t\\), which gives \\(t=21\\) for every \\(V\\)."
+          ],
+          "answer": 0,
+          "hint": "Collision means the SAME position at the SAME time. Measure all times from when the golf ball was hit: the stone has flown for \\(t-5\\) seconds. Equate the \\(\\underset{\\sim}{j}\\) components (they do not involve the unknown \\(V\\)).",
+          "steps": [
+            {
+              "explain": "Stone: horizontal launch, so \\(\\underset{\\sim}{v}=V\\underset{\\sim}{i}-10\\tau\\underset{\\sim}{j}\\) and, with \\(\\tau\\) the time since the stone was fired, \\(\\underset{\\sim}{s}=V\\tau\\underset{\\sim}{i}+\\left(20-5\\tau^{2}\\right)\\underset{\\sim}{j}\\) (starting at height 20 m).",
+              "work": "\\(\\underset{\\sim}{s}_{\\text{stone}}=V\\tau\\underset{\\sim}{i}+\\left(20-5\\tau^{2}\\right)\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "The stone is fired 5 s AFTER the golf ball was hit. If \\(t\\) is the time since the ball was hit, then \\(\\tau=t-5\\).",
+              "work": "\\(\\underset{\\sim}{s}_{\\text{stone}}=V(t-5)\\underset{\\sim}{i}+\\left(20-5(t-5)^{2}\\right)\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Collision: positions are equal. Equate the \\(\\underset{\\sim}{j}\\)-components of stone and golf ball (the \\(\\underset{\\sim}{i}\\)-equation contains the unknown \\(V\\)).",
+              "work": "\\(20-5(t-5)^{2}=45t-5t^{2}\\)"
+            },
+            {
+              "explain": "Expand \\((t-5)^{2}=t^{2}-10t+25\\): \\(20-5t^{2}+50t-125=45t-5t^{2}\\). The \\(-5t^{2}\\) terms cancel.",
+              "work": "\\(50t-105=45t\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(5t=105\\ \\Rightarrow\\ t=21\\ \\text{seconds}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the 5 s delay; C has the wrong sign for gravity; D uses only the \\(\\underset{\\sim}{i}\\) equation (it contains the unknown \\(V\\) and cannot give \\(t\\) on its own).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that the two objects collide after the golf ball has travelled for",
+              "note": "Stone's time is t − 5; equate the j components, the t squared terms cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "frensham2021-y12e1-q14c3",
+          "type": "mc",
+          "stem": "Initially a golf ball was hit from the ground at \\(90\\ \\text{m s}^{-1}\\) at an angle of \\(30^{\\circ}\\) to the horizontal and \\(g=10\\ \\text{m s}^{-2}\\). Five seconds after the golf ball was hit, a small stone was fired with velocity \\(V\\) horizontally from a point \\(20\\ \\text{m}\\) above the ground, and the two objects collide when the golf ball has travelled for \\(21\\) seconds. What is the stone’s speed at collision? Give your answer to 3 significant figures.",
+          "difficulty": "hard",
+          "options": [
+            "\\(190\\ \\text{m s}^{-1}\\)",
+            "\\(102\\ \\text{m s}^{-1}\\)",
+            "\\(160\\ \\text{m s}^{-1}\\)",
+            "\\(210\\ \\text{m s}^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "At the collision the \\(\\underset{\\sim}{i}\\)-components of position are equal: find \\(V\\) from \\(V(t-5)=45\\sqrt{3}\\,t\\) with \\(t=21\\). Then the stone's velocity after \\(16\\) s of flight is \\(V\\underset{\\sim}{i}-10(16)\\underset{\\sim}{j}\\); its speed is the magnitude.",
+          "steps": [
+            {
+              "explain": "At \\(t=21\\) the horizontal positions are equal.",
+              "work": "\\(V(21-5)=45\\sqrt{3}(21)\\ \\Rightarrow\\ 16V=945\\sqrt{3}\\ \\Rightarrow\\ V=\\dfrac{945\\sqrt{3}}{16}\\approx102.3\\ \\text{m s}^{-1}\\)"
+            },
+            {
+              "explain": "The stone has been flying for \\(\\tau=21-5=16\\) s. Its velocity: horizontal \\(V\\) (constant), vertical \\(-10\\tau\\).",
+              "work": "\\(\\underset{\\sim}{v}=\\dfrac{945\\sqrt{3}}{16}\\underset{\\sim}{i}-10(16)\\underset{\\sim}{j}=102.3\\underset{\\sim}{i}-160\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Speed \\(=|\\underset{\\sim}{v}|=\\sqrt{v_{x}^{2}+v_{y}^{2}}\\).",
+              "work": "\\(|\\underset{\\sim}{v}|=\\sqrt{102.3^{2}+160^{2}}=\\sqrt{10\\,465+25\\,600}=\\sqrt{36\\,065}=189.9\\)"
+            },
+            {
+              "explain": "To 3 significant figures: \\(190\\ \\text{m s}^{-1}\\). Check: option B is only the horizontal speed \\(V\\), option C only the vertical component.",
+              "work": "\\(\\text{speed}\\approx190\\ \\text{m s}^{-1}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the stone’s speed at collision",
+              "note": "Speed is the magnitude of horizontal V and vertical minus 10 times 16."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
+            "school": "Frensham School",
             "grade": "12",
             "origin": "teacher"
           }
