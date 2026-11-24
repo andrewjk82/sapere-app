@@ -3660,6 +3660,86 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(x\\): \\(3x = 6\\).",
+          "options": [
+            "\\(x = 2\\)",
+            "\\(x = 3\\)",
+            "\\(x = 9\\)",
+            "\\(x = 18\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both sides by 3.",
+          "keyPoints": [
+            {
+              "text": "Solve for",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(x = \\dfrac{6}{3}\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(x = 2\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } x = 2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x = 2\\).",
+              "work": "\\(\\text{Answer: } x = 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q16a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(x\\): \\(2x + 7 = -3\\).",
+          "options": [
+            "\\(x = -5\\)",
+            "\\(x = 5\\)",
+            "\\(x = 2\\)",
+            "\\(x = -2\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 7 from both sides (-3 - 7 = -10), then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\(2x = -3 - 7 = -10\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(x = \\dfrac{-10}{2} = -5\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } x = -5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x = -5\\).",
+              "work": "\\(\\text{Answer: } x = -5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3943,6 +4023,46 @@
             {
               "explain": "Divide both sides by \\(3\\): \\(x = \\dfrac{7}{3}\\).",
               "work": "\\(\\text{Answer: } x = \\dfrac{7}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q16b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(x\\): \\(4x - 2 = 2x + 28\\).",
+          "options": [
+            "\\(x = 13\\)",
+            "\\(x = 15\\)",
+            "\\(x = 5\\)",
+            "\\(x = 30\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 2x from both sides (2x - 2 = 28), add 2 (2x = 30), then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\(4x - 2x = 28 + 2 \\implies 2x = 30\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(x = 15\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } x = 15\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x = 15\\).",
+              "work": "\\(\\text{Answer: } x = 15\\)"
             }
           ],
           "timeLimit": 60,
@@ -4338,6 +4458,92 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y8-t4b-q23b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The interior angles of a triangle are \\(x^\\circ\\), \\((x + 25)^\\circ\\), and \\((x - 40)^\\circ\\) (so \\(3x - 15 = 180\\)). Solve for \\(x\\).",
+          "options": [
+            "\\(x = 55\\)",
+            "\\(x = 65\\)",
+            "\\(x = 70\\)",
+            "\\(x = 125\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 15 to both sides of 3x - 15 = 180 to get 3x = 195, then divide both sides by 3!",
+          "keyPoints": [
+            {
+              "text": "3x - 15 = 180",
+              "note": "Add 15 first, then divide by 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(15\\) to both sides of \\(3x - 15 = 180\\).",
+              "work": "\\(3x = 180 + 15 = 195\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\): \\(x = \\dfrac{195}{3} = 65\\).",
+              "work": "\\(x = 65\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 195\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,24 56,146 262,86\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">65°</text><text x=\"94\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">90°</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">25°</text><text x=\"155\" y=\"187\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">x = 65 gives angles 65°, 90°, and 25° (sum = 180°)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check all three angles: \\(65^\\circ\\), \\(65 + 25 = 90^\\circ\\), and \\(65 - 40 = 25^\\circ\\).",
+              "work": "\\(65^\\circ + 90^\\circ + 25^\\circ = 180^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 65\\).",
+              "work": "\\(\\text{Answer: } x = 65\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 168\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,24 56,146 262,86\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">x°</text><text x=\"94\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">(x + 25)°</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">(x − 40)°</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find three consecutive odd numbers such that seven times the middle number is eleven more than three times the sum of the first and third numbers.",
+          "options": [
+            "\\(9, 11, 13\\)",
+            "\\(7, 9, 11\\)",
+            "\\(11, 13, 15\\)",
+            "\\(5, 7, 9\\)"
+          ],
+          "answer": 0,
+          "hint": "Represent the three consecutive odd numbers symmetrically as (x - 2), x, and (x + 2)! Then the sum of the first and third is simply 2x, giving 7x = 3(2x) + 11!",
+          "keyPoints": [
+            {
+              "text": "three consecutive odd numbers",
+              "note": "Use (x - 2), x, (x + 2) so the first + third = 2x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the three consecutive odd numbers be \\(x - 2\\), \\(x\\), and \\(x + 2\\).",
+              "work": "\\((x - 2) + (x + 2) = 2x\\)"
+            },
+            {
+              "explain": "Translate the sentence into an equation: \\(7x = 3(2x) + 11\\).",
+              "work": "\\(7x = 6x + 11\\)"
+            },
+            {
+              "explain": "Subtract \\(6x\\) from both sides: \\(x = 11\\) (the middle odd number).",
+              "work": "\\(x = 11\\)"
+            },
+            {
+              "explain": "Write all three numbers: \\(9, 11, 13\\). Check: \\(7(11) = 77\\) and \\(3(9 + 13) + 11 = 66 + 11 = 77\\). Exact!",
+              "work": "\\(\\text{Answer: } 9, 11, 13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -7298,6 +7504,46 @@
             {
               "explain": "Therefore, the solution is \\(x \\le 30\\).",
               "work": "\\(\\text{Answer: } x \\le 30\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q16c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(x\\): \\(2x^2 = 200\\).",
+          "options": [
+            "\\(x = 10\\) only",
+            "\\(x = \\pm 10\\)",
+            "\\(x = \\pm 50\\)",
+            "\\(x = \\pm 100\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by 2 first (x² = 100), then take BOTH + and - square roots!",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\(x^2 = \\dfrac{200}{2} = 100\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(x = \\pm\\sqrt{100} = \\pm 10\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } x = \\pm 10\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x = \\pm 10\\).",
+              "work": "\\(\\text{Answer: } x = \\pm 10\\)"
             }
           ],
           "timeLimit": 60,

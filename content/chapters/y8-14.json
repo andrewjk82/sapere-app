@@ -896,6 +896,52 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the perimeter of the \\(60^\\circ\\) sector shown (radius \\(5\\text{ cm}\\)), correct to \\(2\\) decimal places.",
+          "options": [
+            "\\(5.24\\text{ cm}\\)",
+            "\\(10.24\\text{ cm}\\)",
+            "\\(15.24\\text{ cm}\\)",
+            "\\(20.47\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "Perimeter = curved arc (60/360 × 2πr) PLUS the TWO straight 5 cm radii!",
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Include the 60° arc AND both 5 cm straight radii."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Break the perimeter into the \\(60^\\circ\\) curved arc (red) plus the two \\(5\\text{ cm}\\) straight radii (blue).",
+              "work": "\\(P = \\dfrac{60}{360} \\times 2\\pi r + 2r\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 190\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 74 126 L 185.4 137.7 A 112 112 0 0 0 139.8 35.4 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><path d=\"M 185.4 137.7 A 112 112 0 0 0 139.8 35.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"74\" y1=\"126\" x2=\"185.4\" y2=\"137.7\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"74\" y1=\"126\" x2=\"139.8\" y2=\"35.4\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M 99.9 128.7 A 26 26 0 0 0 89.3 105.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"116\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">60°</text><line x1=\"130\" y1=\"126\" x2=\"130\" y2=\"138\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"103\" y1=\"77\" x2=\"112\" y2=\"85\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"132\" y=\"150\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">5 cm</text><text x=\"92\" y=\"72\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">5 cm</text><text x=\"135\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">60° arc (red) + two 5 cm radii (blue) ≈ 5.24 + 10 = 15.24 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(r = 5\\text{ cm}\\): \\(P = \\dfrac{1}{6} \\times 10\\pi + 10 = \\dfrac{5\\pi}{3} + 10\\).",
+              "work": "\\(P = \\dfrac{5\\pi}{3} + 10\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\dfrac{5\\pi}{3} \\approx 5.23599\\), so \\(P \\approx 15.23599\\text{ cm}\\).",
+              "work": "\\(P \\approx 15.24\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the perimeter to \\(2\\) decimal places is \\(15.24\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 15.24\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 164\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 74 126 L 185.4 137.7 A 112 112 0 0 0 139.8 35.4 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><path d=\"M 99.9 128.7 A 26 26 0 0 0 89.3 105.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"116\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">60°</text><line x1=\"130\" y1=\"126\" x2=\"130\" y2=\"138\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"103\" y1=\"77\" x2=\"112\" y2=\"85\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"132\" y=\"150\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text></svg>"
+          }
         }
       ]
     },
@@ -1693,6 +1739,52 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"130\" cy=\"92\" r=\"72\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"130\" cy=\"92\" r=\"36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><line x1=\"130\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"92\" x2=\"181\" y2=\"41\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"112\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">r</text><text x=\"168\" y=\"74\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-45 168 74)\">10 m</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4b-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the area of the composite shape shown (a right-angled isosceles triangle with legs \\(4\\text{ cm}\\) joined to a semicircle along its hypotenuse), correct to \\(2\\) decimal places.",
+          "options": [
+            "\\(14.28\\text{ cm}^2\\)",
+            "\\(20.57\\text{ cm}^2\\)",
+            "\\(33.13\\text{ cm}^2\\)",
+            "\\(16.00\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "1) Triangle area = 1/2 × 4 × 4 = 8 cm². 2) Hypotenuse (diameter) = √(4² + 4²) = √32, so radius r = √32 ÷ 2 = √8 (meaning r² = 8!). 3) Semicircle area = 1/2 π r² = 4π!",
+          "keyPoints": [
+            {
+              "text": "composite shape",
+              "note": "Area = Triangle (8) + Semicircle (4π) ≈ 20.57 cm²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the area of the right isosceles triangle (blue): \\(A_{\\text{tri}} = \\dfrac{1}{2} \\times 4 \\times 4 = 8\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{tri}} = 8\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 210\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 72 46 A 70.7 70.7 0 0 1 172 146 Z\" fill=\"#fef3c7\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"72,46 72,146 172,146\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"72,135 83,135 83,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><line x1=\"66\" y1=\"96\" x2=\"78\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"122\" y1=\"140\" x2=\"122\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"122\" y=\"166\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">4 cm</text><text x=\"104\" y=\"124\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1d4ed8\">8 cm²</text><text x=\"150\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#b45309\">4π cm²</text><text x=\"130\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Triangle = 8 cm² (blue) + Semicircle = 4π cm² (amber) ≈ 20.57 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras to find the hypotenuse (semicircle diameter): \\(d^2 = 4^2 + 4^2 = 32 \\implies d = \\sqrt{32}\\), so \\(r = \\dfrac{\\sqrt{32}}{2}\\) and \\(r^2 = \\dfrac{32}{4} = 8\\).",
+              "work": "\\(r^2 = 8\\)"
+            },
+            {
+              "explain": "Calculate the semicircle area (amber): \\(A_{\\text{semi}} = \\dfrac{1}{2}\\pi r^2 = \\dfrac{1}{2}\\pi(8) = 4\\pi \\approx 12.566\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{semi}} = 4\\pi \\approx 12.566\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Add both areas and round to \\(2\\) decimal places: \\(8 + 12.566 = 20.57\\text{ cm}^2\\).",
+              "work": "\\(A \\approx 20.57\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 72 46 A 70.7 70.7 0 0 1 172 146 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"72,46 72,146 172,146\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"72,135 83,135 83,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><line x1=\"66\" y1=\"96\" x2=\"78\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"122\" y1=\"140\" x2=\"122\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"122\" y=\"166\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">4 cm</text></svg>"
+          }
         }
       ]
     },
@@ -2274,6 +2366,52 @@
           "xp": 1,
           "meta": {
             "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The shape comprises a rectangle of width \\(2\\text{ cm}\\) joined to a semicircle. If the total area of the shape is \\(\\left(6 + \\dfrac{1}{2}\\pi\\right)\\text{ cm}^2\\), calculate the perimeter (leaving your answer in terms of \\(\\pi\\)).",
+          "options": [
+            "\\((8 + \\pi)\\text{ cm}\\)",
+            "\\((8 + 2\\pi)\\text{ cm}\\)",
+            "\\((6 + \\pi)\\text{ cm}\\)",
+            "\\((10 + \\pi)\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The semicircle diameter is 2 cm (radius r = 1 cm), so its area is 1/2 π(1)² = 1/2 π cm². That leaves 6 cm² for the rectangle, so its length is 6 ÷ 2 = 3 cm! Now add the outer boundary!",
+          "keyPoints": [
+            {
+              "text": "calculate the perimeter",
+              "note": "Find rectangle length = 3 cm first, then add 2 + 3 + 3 + semicircle arc (π)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the semicircle radius: \\(r = \\dfrac{2}{2} = 1\\text{ cm}\\), so semicircle area \\(= \\dfrac{1}{2}\\pi(1)^2 = \\dfrac{1}{2}\\pi\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{semi}} = \\dfrac{1}{2}\\pi\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Subtract from total area to get rectangle area: \\(A_{\\text{rect}} = 6\\text{ cm}^2\\), so rectangle length \\(= \\dfrac{6}{2} = 3\\text{ cm}\\).",
+              "work": "\\(l = \\dfrac{6}{2} = 3\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 165\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"165\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 68 36 L 182 36 A 38 38 0 0 1 182 112 L 68 112 Z\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"182\" y1=\"36\" x2=\"182\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><text x=\"58\" y=\"78\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\">2 cm</text><path d=\"M 182 36 A 38 38 0 0 1 182 112\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.4\"/><text x=\"125\" y=\"28\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#2563eb\">3 cm</text><text x=\"125\" y=\"126\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#2563eb\">3 cm</text><text x=\"234\" y=\"78\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">π cm</text><text x=\"140\" y=\"157\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Rectangle length = 3 cm (blue), semicircle arc = π cm (red) -> P = 8 + π cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the curved semicircle arc length (red): \\(\\dfrac{1}{2}(2\\pi r) = \\pi(1) = \\pi\\text{ cm}\\).",
+              "work": "\\(\\text{Arc} = \\pi\\text{ cm}\\)"
+            },
+            {
+              "explain": "Add ONLY the outer edges (left \\(2\\), top \\(3\\), bottom \\(3\\), curved arc \\(\\pi\\)): \\(P = 2 + 3 + 3 + \\pi = (8 + \\pi)\\text{ cm}\\).",
+              "work": "\\(P = (8 + \\pi)\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 138\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"138\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 68 36 L 182 36 A 38 38 0 0 1 182 112 L 68 112 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"182\" y1=\"36\" x2=\"182\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><text x=\"58\" y=\"78\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\">2 cm</text></svg>"
           }
         }
       ]

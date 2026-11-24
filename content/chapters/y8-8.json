@@ -1563,6 +1563,144 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the right-angled triangle shown, which side is the hypotenuse (\\(H\\))?",
+          "options": [
+            "The longest slanted side directly opposite the right angle",
+            "The horizontal bottom side next to the right angle",
+            "The vertical right side next to the right angle",
+            "Any of the three sides can be the hypotenuse"
+          ],
+          "answer": 0,
+          "hint": "The hypotenuse is ALWAYS the longest side of a right-angled triangle and always sits directly OPPOSITE the 90° right-angle square!",
+          "keyPoints": [
+            {
+              "text": "hypotenuse",
+              "note": "Always opposite the right angle and always the longest side."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the right-angle square at the bottom-right corner.",
+              "work": "\\(\\text{Right angle} = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 175\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"62,124 174,124 174,28\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"162,124 162,112 174,112\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"62\" y1=\"124\" x2=\"174\" y2=\"28\" stroke=\"#dc2626\" stroke-width=\"3.8\"/><text x=\"106\" y=\"68\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">H</text><text x=\"120\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Hypotenuse H (red) is directly opposite the 90° right angle</text></svg>"
+              }
+            },
+            {
+              "explain": "Look directly across from the right angle to find the slanted longest side.",
+              "work": "\\(\\text{Opposite } 90^\\circ \\implies \\text{Hypotenuse } H\\)"
+            },
+            {
+              "explain": "Verify it is strictly longer than both the horizontal and vertical legs.",
+              "work": "\\(H > \\text{either leg}\\)"
+            },
+            {
+              "explain": "Therefore, the hypotenuse is the longest slanted side directly opposite the right angle.",
+              "work": "\\(\\text{Answer: Slanted side opposite } 90^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 148\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"62,124 174,124 174,28\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"162,124 162,112 174,112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q18a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the value of \\(x\\) in the right-angled triangle shown (legs \\(9\\text{ cm}\\) and \\(12\\text{ cm}\\)).",
+          "options": [
+            "\\(15\\)",
+            "\\(21\\)",
+            "\\(\\sqrt{63}\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "x is the hypotenuse opposite the right angle: x² = 9² + 12² = 81 + 144 = 225, then take √225!",
+          "keyPoints": [
+            {
+              "text": "Pythagoras' theorem",
+              "note": "Hypotenuse squared = 9² + 12² = 225."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify \\(x\\) as the hypotenuse (red) opposite the right angle, with legs \\(9\\text{ cm}\\) and \\(12\\text{ cm}\\) (blue).",
+              "work": "\\(x^2 = 9^2 + 12^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 195\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,140 184,140 184,28\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"172,140 172,128 184,128\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"64\" y1=\"140\" x2=\"184\" y2=\"28\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"64\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"184\" y1=\"140\" x2=\"184\" y2=\"28\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"114\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">x = 15 cm</text><text x=\"196\" y=\"88\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">12 cm</text><text x=\"124\" y=\"158\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">9 cm</text><text x=\"135\" y=\"187\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">x² = 9² + 12² = 225 -> x = 15 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Square both legs and add: \\(81 + 144 = 225\\).",
+              "work": "\\(x^2 = 81 + 144 = 225\\)"
+            },
+            {
+              "explain": "Take the positive square root: \\(x = \\sqrt{225} = 15\\).",
+              "work": "\\(x = 15\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 15\\).",
+              "work": "\\(\\text{Answer: } x = 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 168\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,140 184,140 184,28\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"172,140 172,128 184,128\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">x cm</text><text x=\"196\" y=\"88\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">12 cm</text><text x=\"124\" y=\"158\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "John needs a new television for his lounge room wall with a gap of \\(5\\text{ cm}\\) from each edge of the wall. The rectangular wall is \\(5.5\\text{ metres}\\) long and \\(3\\text{ metres}\\) high. The screen size is the length of the diagonal. Calculate the largest screen size to the nearest centimetre.",
+          "options": [
+            "\\(613\\text{ cm}\\)",
+            "\\(626\\text{ cm}\\)",
+            "\\(620\\text{ cm}\\)",
+            "\\(540\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert 5.5 m = 550 cm and 3 m = 300 cm. Subtract 10 cm (5 cm on BOTH ends!) from each dimension to get 540 cm × 290 cm, then use Pythagoras for the diagonal!",
+          "keyPoints": [
+            {
+              "text": "gap of \\(5\\text{ cm}\\) from each edge",
+              "note": "Subtract 5 + 5 = 10 cm from both wall length and wall height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert wall dimensions to cm and subtract two \\(5\\text{ cm}\\) gaps from each side: TV length \\(= 550 - 10 = 540\\text{ cm}\\), TV height \\(= 300 - 10 = 290\\text{ cm}\\).",
+              "work": "\\(l = 540\\text{ cm}, \\; h = 290\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 185\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"20\" width=\"252\" height=\"122\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><rect x=\"58\" y=\"38\" width=\"204\" height=\"86\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"58\" y1=\"124\" x2=\"262\" y2=\"38\" stroke=\"#dc2626\" stroke-width=\"2.8\" stroke-dasharray=\"5,3\"/><text x=\"160\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">540 cm</text><text x=\"242\" y=\"86\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\">290 cm</text><text x=\"150\" y=\"96\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">d ≈ 613 cm</text><text x=\"46\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"700\">5 cm</text><text x=\"160\" y=\"136\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"700\">5 cm</text><text x=\"160\" y=\"177\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Max TV box: 540 cm × 290 cm (blue); diagonal d ≈ 613 cm (red)</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply Pythagoras' theorem to find the diagonal \\(d\\) (red).",
+              "work": "\\(d^2 = 540^2 + 290^2 = 291\\,600 + 84\\,100 = 375\\,700\\)"
+            },
+            {
+              "explain": "Take the square root: \\(d = \\sqrt{375\\,700} \\approx 612.94\\text{ cm}\\).",
+              "work": "\\(d \\approx 612.94\\text{ cm}\\)"
+            },
+            {
+              "explain": "Round to the nearest centimetre: \\(613\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 613\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 158\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"158\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"34\" y=\"20\" width=\"252\" height=\"122\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><rect x=\"58\" y=\"38\" width=\"204\" height=\"86\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"46\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"700\">5 cm</text><text x=\"160\" y=\"136\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"700\">5 cm</text></svg>"
+          }
         }
       ]
     },
@@ -2009,6 +2147,52 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"104,24 104,148 176,148\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"104,136 116,136 116,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"92\" y=\"90\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">h cm</text><text x=\"152\" y=\"84\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text><text x=\"140\" y=\"168\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use Pythagoras' theorem to find the value of \\(x\\) in the right-angled triangle shown (hypotenuse \\(15\\text{ cm}\\), base \\(13\\text{ cm}\\)), rounded to \\(2\\) decimal places.",
+          "options": [
+            "\\(7.48\\)",
+            "\\(19.85\\)",
+            "\\(2.00\\)",
+            "\\(8.00\\)"
+          ],
+          "answer": 0,
+          "hint": "x is a SHORTER side (not the 15 cm hypotenuse!), so subtract the squares: x² = 15² - 13² = 225 - 169 = 56, then take √56!",
+          "keyPoints": [
+            {
+              "text": "value of \\(x\\)",
+              "note": "Shorter side: x² = 15² - 13² = 56 -> x = √56 ≈ 7.48."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify hypotenuse \\(15\\text{ cm}\\) (red), known leg \\(13\\text{ cm}\\) (blue), and unknown shorter leg \\(x\\) (green).",
+              "work": "\\(x^2 + 13^2 = 15^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 195\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,140 184,140 184,28\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"172,140 172,128 184,128\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"64\" y1=\"140\" x2=\"184\" y2=\"28\" stroke=\"#dc2626\" stroke-width=\"3.4\"/><line x1=\"184\" y1=\"140\" x2=\"184\" y2=\"28\" stroke=\"#16a34a\" stroke-width=\"3.6\"/><line x1=\"64\" y1=\"140\" x2=\"184\" y2=\"140\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"114\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">15 cm</text><text x=\"196\" y=\"88\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#15803d\">x ≈ 7.48 cm</text><text x=\"124\" y=\"158\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">13 cm</text><text x=\"135\" y=\"187\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Shorter side x = √(15² - 13²) = √56 ≈ 7.48 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Rearrange to subtract: \\(x^2 = 15^2 - 13^2 = 225 - 169 = 56\\).",
+              "work": "\\(x^2 = 56\\)"
+            },
+            {
+              "explain": "Take the positive square root: \\(x = \\sqrt{56} \\approx 7.4833...\\)",
+              "work": "\\(x = \\sqrt{56} \\approx 7.48\\)"
+            },
+            {
+              "explain": "Therefore, \\(x \\approx 7.48\\) (to 2 decimal places).",
+              "work": "\\(\\text{Answer: } 7.48\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 168\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,140 184,140 184,28\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"172,140 172,128 184,128\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">15 cm</text><text x=\"196\" y=\"88\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">x cm</text><text x=\"124\" y=\"158\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">13 cm</text></svg>"
           }
         }
       ]

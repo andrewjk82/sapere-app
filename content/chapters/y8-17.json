@@ -1902,6 +1902,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The formula \\(C = \\dfrac{5}{9}(F - 32)\\) converts temperature from Fahrenheit (\\(F\\)) to Celsius (\\(C\\)). Solve for \\(F\\) when \\(C = 42\\).",
+          "options": [
+            "\\(F = 75.6\\)",
+            "\\(F = 107.6\\)",
+            "\\(F = 55.3\\)",
+            "\\(F = 112.0\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute C = 42, multiply both sides by 9/5 (42 × 9 ÷ 5 = 75.6), then ADD 32!",
+          "keyPoints": [
+            {
+              "text": "C = 42",
+              "note": "Multiply by 9/5 first to undo 5/9, then add 32."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(C = 42\\) into the formula: \\(42 = \\dfrac{5}{9}(F - 32)\\).",
+              "work": "\\(42 = \\dfrac{5}{9}(F - 32)\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(9\\) and divide by \\(5\\): \\(F - 32 = \\dfrac{42 \\times 9}{5} = \\dfrac{378}{5} = 75.6\\).",
+              "work": "\\(F - 32 = 75.6\\)"
+            },
+            {
+              "explain": "Add \\(32\\) to both sides: \\(F = 75.6 + 32 = 107.6\\).",
+              "work": "\\(F = 107.6\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{5}{9}(107.6 - 32) = \\dfrac{5}{9}(75.6) = 42\\). Exact!",
+              "work": "\\(\\text{Answer: } F = 107.6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2682,6 +2722,46 @@
             {
               "explain": "Therefore, \\((x + y)^2 - (x - y)^2 = 4xy\\).",
               "work": "\\(\\text{Answer: } 4xy\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise \\(3m + 6m^2\\).",
+          "options": [
+            "\\(3m(1 + 2m)\\)",
+            "\\(3m(2m)\\)",
+            "\\(3(m + 2m^2)\\)",
+            "\\(m(3 + 6m)\\)"
+          ],
+          "answer": 0,
+          "hint": "The HCF of 3m and 6m² is 3m! Remember 3m ÷ 3m = 1 (don't drop the 1 inside the bracket!).",
+          "keyPoints": [
+            {
+              "text": "Factorise",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\(\\text{HCF} = 3m\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(3m(1 + 2m)\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } 3m(1 + 2m)\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(3m(1 + 2m)\\).",
+              "work": "\\(\\text{Answer: } 3m(1 + 2m)\\)"
             }
           ],
           "timeLimit": 60,

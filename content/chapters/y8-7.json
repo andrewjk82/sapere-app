@@ -3809,6 +3809,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(0.018\\) as a percentage.",
+          "options": [
+            "\\(0.18\\%\\)",
+            "\\(1.8\\%\\)",
+            "\\(18\\%\\)",
+            "\\(180\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by 100% (move decimal point 2 places to the right).",
+          "keyPoints": [
+            {
+              "text": "Write \\(0.018\\)",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(0.018 \\times 100\\%\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(1.8\\%\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 1.8\\%\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1.8\\%\\).",
+              "work": "\\(\\text{Answer: } 1.8\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4109,6 +4149,46 @@
             {
               "explain": "Therefore, \\(\\dfrac{7}{40} = 17.5\\%\\).",
               "work": "\\(\\text{Answer: } 17.5\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the missing entries in the Percentage / Decimal / Fraction table: (1) Decimal for \\(25\\%\\), (2) Percentage for \\(0.35\\), and (3) Decimal and simplified fraction for \\(140\\%\\).",
+          "options": [
+            "0.25; 35%; 1.4 and 7/5",
+            "2.5; 35%; 1.4 and 7/5",
+            "0.25; 3.5%; 1.4 and 14/10",
+            "0.25; 35%; 0.14 and 7/50"
+          ],
+          "answer": 0,
+          "hint": "Divide percentages by 100 to get decimals (25% = 0.25, 140% = 1.4), multiply decimals by 100 to get percentages (0.35 = 35%), and simplify 140/100 = 7/5!",
+          "keyPoints": [
+            {
+              "text": "140\\%",
+              "note": "140% = 1.4 = 140/100 = 7/5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(25\\%\\) to a decimal by dividing by \\(100\\): \\(25 \\div 100 = 0.25\\).",
+              "work": "\\(25\\% = 0.25\\)"
+            },
+            {
+              "explain": "Convert \\(0.35\\) to a percentage by multiplying by \\(100\\%\\): \\(0.35 \\times 100\\% = 35\\%\\).",
+              "work": "\\(0.35 = 35\\%\\)"
+            },
+            {
+              "explain": "Convert \\(140\\%\\) to a decimal (\\(140 \\div 100 = 1.4\\)) and simplified fraction (\\(\\dfrac{140}{100} = \\dfrac{7}{5}\\)).",
+              "work": "\\(140\\% = 1.4 = \\dfrac{7}{5}\\)"
+            },
+            {
+              "explain": "Therefore, the missing entries are \\(0.25\\), \\(35\\%\\), \\(1.4\\), and \\(\\dfrac{7}{5}\\).",
+              "work": "\\(0.25, \\; 35\\%, \\; 1.4, \\; \\dfrac{7}{5}\\)"
             }
           ],
           "timeLimit": 60,
@@ -5653,6 +5733,86 @@
             {
               "explain": "Therefore, increasing \\(\\$240\\) by \\(20\\%\\) gives \\(\\$288\\).",
               "work": "\\(\\text{Answer: } \\$288\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A portable air conditioner has an original price of \\(\\$680\\) excluding GST (\\(10\\%\\)). The manager adds \\(10\\%\\) GST, and it is then sold at the end-of-year sale for \"10% off\". Is the final sale price more than, less than, or equal to \\(\\$680\\)?",
+          "options": [
+            "Less than the original price ($673.20, which is $6.80 less than $680)",
+            "Equal to the original price ($680.00), because +10% and -10% cancel out",
+            "More than the original price ($686.80)",
+            "Less than the original price ($612.00)"
+          ],
+          "answer": 0,
+          "hint": "Add 10% to $680 first ($748), then take 10% OFF $748! Since 10% of $748 ($74.80) is bigger than 10% of $680 ($68), the final price drops BELOW $680!",
+          "keyPoints": [
+            {
+              "text": "10\\%\\) GST",
+              "note": "1.10 × 0.90 = 0.99, so +10% then -10% reduces the price by 1%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(10\\%\\) GST to \\(\\$680\\): \\(\\$680 \\times 1.10 = \\$748\\).",
+              "work": "\\(\\$680 + \\$68 = \\$748\\)"
+            },
+            {
+              "explain": "Apply the \\(10\\%\\) sale discount to \\(\\$748\\): \\(10\\%\\) of \\(\\$748\\) is \\(\\$74.80\\).",
+              "work": "\\(\\$748 - \\$74.80 = \\$673.20\\)"
+            },
+            {
+              "explain": "Compare with the original price: \\(\\$673.20 < \\$680\\) (\\(\\$6.80\\) cheaper).",
+              "work": "\\(\\$673.20 < \\$680\\)"
+            },
+            {
+              "explain": "Therefore, the sale price (\\(\\$673.20\\)) is LESS than the original price.",
+              "work": "\\(\\text{Answer: Less than (}\\$673.20\\text{)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Lily purchases a car for \\(\\$37\\,000\\). She later sells it for \\(\\$20\\,350\\). Calculate her percentage loss.",
+          "options": [
+            "\\(45\\%\\)",
+            "\\(55\\%\\)",
+            "\\(40\\%\\)",
+            "\\(81.8\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the dollar loss ($37 000 - $20 350 = $16 650), then divide by the ORIGINAL cost price ($37 000) and multiply by 100%!",
+          "keyPoints": [
+            {
+              "text": "percentage loss",
+              "note": "% Loss = (Loss ÷ Cost price) × 100%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the dollar loss: \\(\\$37\\,000 - \\$20\\,350 = \\$16\\,650\\).",
+              "work": "\\(\\text{Loss} = \\$16\\,650\\)"
+            },
+            {
+              "explain": "Divide the loss by the original purchase price (\\(\\$37\\,000\\)) and multiply by \\(100\\%\\).",
+              "work": "\\(\\%\\text{ Loss} = \\dfrac{16\\,650}{37\\,000} \\times 100\\%\\)"
+            },
+            {
+              "explain": "Compute the division: \\(16\\,650 \\div 37\\,000 = 0.45\\), so \\(0.45 \\times 100\\% = 45\\%\\).",
+              "work": "\\(0.45 \\times 100\\% = 45\\%\\)"
+            },
+            {
+              "explain": "Therefore, Lily's percentage loss is \\(45\\%\\).",
+              "work": "\\(\\text{Answer: } 45\\%\\)"
             }
           ],
           "timeLimit": 60,

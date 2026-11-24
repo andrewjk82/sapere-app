@@ -1205,6 +1205,46 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{24}{30}\\).",
+          "options": [
+            "\\(\\dfrac{4}{5}\\)",
+            "\\(\\dfrac{12}{15}\\)",
+            "\\(\\dfrac{6}{5}\\)",
+            "\\(\\dfrac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide numerator and denominator by their HCF (6).",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\dfrac{24}{30}\\).",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(\\dfrac{24 \\div 6}{30 \\div 6}\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(\\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } \\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\dfrac{4}{5}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{4}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5142,6 +5182,46 @@
             {
               "explain": "Add both parts together: \\(10 + 0.01 = 10.01\\).",
               "work": "\\(\\text{Answer: } 10.01\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(6.2 \\div 8\\).",
+          "options": [
+            "\\(0.75\\)",
+            "\\(0.775\\)",
+            "\\(0.825\\)",
+            "\\(7.75\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 6.200 by 8 carefully: 8 into 62 goes 7 (rem 6), into 60 goes 7 (rem 4), into 40 goes 5.",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(6.2",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(6.200 \\div 8\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(0.775\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 0.775\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(0.775\\).",
+              "work": "\\(\\text{Answer: } 0.775\\)"
             }
           ],
           "timeLimit": 60,

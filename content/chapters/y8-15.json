@@ -2005,6 +2005,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 184\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"74\" y=\"64\" width=\"96\" height=\"96\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\"/><polygon points=\"74,64 170,64 122,32\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"84,64 84,74 74,74\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"160,64 160,74 170,74\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"84,160 84,150 74,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><polyline points=\"160,160 160,150 170,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><line x1=\"122\" y1=\"58\" x2=\"122\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"122\" y1=\"154\" x2=\"122\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"68\" y1=\"112\" x2=\"80\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"164\" y1=\"112\" x2=\"176\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"122\" y1=\"32\" x2=\"210\" y2=\"32\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"170\" y1=\"64\" x2=\"210\" y2=\"64\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"170\" y1=\"160\" x2=\"210\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"202\" y1=\"32\" x2=\"202\" y2=\"64\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"202\" y1=\"64\" x2=\"202\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"212\" y=\"52\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">x cm</text><text x=\"212\" y=\"116\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">3x cm</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4b-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the perimeter of a square with a side length of \\(5\\text{ cm}\\)?",
+          "options": [
+            "\\(10\\text{ cm}\\)",
+            "\\(15\\text{ cm}\\)",
+            "\\(20\\text{ cm}\\)",
+            "\\(25\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "A square has 4 equal sides: Perimeter = 4 × 5 cm.",
+          "keyPoints": [
+            {
+              "text": "What is",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(P = 4 \\times 5\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(20\\text{ cm}\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 20\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(20\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 20\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2722,6 +2762,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y8-t4b-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The surface areas of three different faces of a rectangular prism are \\(42\\text{ cm}^2\\), \\(24\\text{ cm}^2\\), and \\(28\\text{ cm}^2\\). Calculate the volume of the prism.",
+          "options": [
+            "\\(94\\text{ cm}^3\\)",
+            "\\(168\\text{ cm}^3\\)",
+            "\\(196\\text{ cm}^3\\)",
+            "\\(336\\text{ cm}^3\\)"
+          ],
+          "answer": 1,
+          "hint": "If the edges are l, w, h, then lw = 42, wh = 24, lh = 28! Multiply all three together: (lwh)² = 42 × 24 × 28, and take the square root (OR spot the factors 7, 6, and 4)!",
+          "keyPoints": [
+            {
+              "text": "three different faces",
+              "note": "V² = (lw)(wh)(lh) = 42 × 24 × 28 = 28 224 -> V = 168 cm³."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the three edge lengths be \\(l, w, h\\): then \\(lw = 42\\), \\(wh = 24\\), and \\(lh = 28\\).",
+              "work": "\\(lw = 42, \\; wh = 24, \\; lh = 28\\)"
+            },
+            {
+              "explain": "Multiply all three equations together: \\((lw)(wh)(lh) = (lwh)^2 = V^2\\).",
+              "work": "\\(V^2 = 42 \\times 24 \\times 28 = 28\\,224\\)"
+            },
+            {
+              "explain": "Take the square root: \\(V = \\sqrt{28\\,224} = 168\\text{ cm}^3\\).",
+              "work": "\\(V = 168\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Check by finding the edges: \\(l = 7\\text{ cm}, w = 6\\text{ cm}, h = 4\\text{ cm}\\) gives faces \\(42, 24, 28\\) and \\(V = 7 \\times 6 \\times 4 = 168\\text{ cm}^3\\).",
+              "work": "\\(\\text{Answer: } 168\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3432,6 +3512,138 @@
             {
               "explain": "Therefore, the volume of the tank is \\(60.76\\text{ m}^3\\).",
               "work": "\\(\\text{Answer: } 60.76\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the volume of the cylinder shown, with diameter \\(10\\text{ cm}\\) and height \\(12\\text{ cm}\\), correct to \\(2\\) decimal places.",
+          "options": [
+            "\\(376.99\\text{ cm}^3\\)",
+            "\\(942.48\\text{ cm}^3\\)",
+            "\\(3769.91\\text{ cm}^3\\)",
+            "\\(471.24\\text{ cm}^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Halve the diameter FIRST to get radius r = 5 cm! Then use V = πr²h = π × 5² × 12.",
+          "keyPoints": [
+            {
+              "text": "diameter \\(10\\text{ cm}\\)",
+              "note": "Radius r = 10 ÷ 2 = 5 cm; use V = πr²h."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the radius by halving the diameter: \\(r = \\dfrac{10}{2} = 5\\text{ cm}\\) (red), with height \\(h = 12\\text{ cm}\\) (blue).",
+              "work": "\\(r = 5\\text{ cm}, \\; h = 12\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 205\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"205\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 68 56 L 68 136 A 44 18 0 0 0 156 136 L 156 56 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><ellipse cx=\"112\" cy=\"56\" rx=\"44\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><path d=\"M 68 136 A 44 18 0 0 1 156 136\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"68\" y1=\"26\" x2=\"156\" y2=\"26\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"26\" x2=\"68\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"156\" y1=\"26\" x2=\"156\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"112\" y=\"20\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">d = 10 cm (r = 5)</text><line x1=\"182\" y1=\"56\" x2=\"182\" y2=\"136\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"190\" y=\"100\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">12 cm</text><line x1=\"112\" y1=\"56\" x2=\"156\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"112\" cy=\"56\" r=\"3\" fill=\"#dc2626\"/><text x=\"130\" y=\"197\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Radius r = 5 cm (red), height h = 12 cm (blue) -> V = 300π ≈ 942.48 cm³</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into \\(V = \\pi r^2 h\\): \\(V = \\pi \\times 5^2 \\times 12\\).",
+              "work": "\\(V = \\pi \\times 25 \\times 12 = 300\\pi\\)"
+            },
+            {
+              "explain": "Evaluate to \\(2\\) decimal places: \\(300\\pi \\approx 942.4778 \\approx 942.48\\text{ cm}^3\\).",
+              "work": "\\(V \\approx 942.48\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Therefore, the volume of the cylinder is \\(942.48\\text{ cm}^3\\).",
+              "work": "\\(\\text{Answer: } 942.48\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 178\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 68 56 L 68 136 A 44 18 0 0 0 156 136 L 156 56 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><ellipse cx=\"112\" cy=\"56\" rx=\"44\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><path d=\"M 68 136 A 44 18 0 0 1 156 136\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"68\" y1=\"26\" x2=\"156\" y2=\"26\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"68\" y1=\"26\" x2=\"68\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"156\" y1=\"26\" x2=\"156\" y2=\"56\" stroke=\"#94a3b8\" stroke-width=\"1\"/><text x=\"112\" y=\"20\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">10 cm</text><line x1=\"182\" y1=\"56\" x2=\"182\" y2=\"136\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"190\" y=\"100\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">12 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hollow metal pipe is \\(45\\text{ cm}\\) in length and has an external diameter of \\(10\\text{ cm}\\). If the thickness of the pipe is \\(0.5\\text{ cm}\\) and the metal has a mass of \\(11\\text{ grams/cm}^3\\), calculate the total mass of the pipe to the nearest kilogram.",
+          "options": [
+            "\\(7\\text{ kg}\\)",
+            "\\(14\\text{ kg}\\)",
+            "\\(39\\text{ kg}\\)",
+            "\\(5\\text{ kg}\\)"
+          ],
+          "answer": 0,
+          "hint": "Outer radius R = 5 cm, inner radius r = 5 - 0.5 = 4.5 cm. Metal volume = π(R² - r²) × 45 ≈ 671.52 cm³. Multiply by 11 g/cm³ and divide by 1000 to convert to kg!",
+          "keyPoints": [
+            {
+              "text": "thickness of the pipe is \\(0.5\\text{ cm}\\)",
+              "note": "Inner radius r = 5 - 0.5 = 4.5 cm; Volume = π(5² - 4.5²) × 45."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the outer radius \\(R = \\dfrac{10}{2} = 5\\text{ cm}\\) and inner radius \\(r = 5 - 0.5 = 4.5\\text{ cm}\\).",
+              "work": "\\(R = 5\\text{ cm}, \\; r = 4.5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 200\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"114\" cy=\"86\" r=\"64\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><circle cx=\"114\" cy=\"86\" r=\"54\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"114\" cy=\"86\" r=\"2.5\" fill=\"#0f172a\"/><line x1=\"114\" y1=\"22\" x2=\"218\" y2=\"22\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"114\" y1=\"150\" x2=\"218\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"210\" y1=\"22\" x2=\"210\" y2=\"150\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"220\" y=\"90\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">10 cm</text><text x=\"174\" y=\"164\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#2563eb\">0.5 cm thick</text><line x1=\"114\" y1=\"86\" x2=\"178\" y2=\"86\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"140\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">R=5, r=4.5</text><text x=\"140\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Annulus cross-section (amber): R = 5 cm, r = 4.5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the volume of metal: \\(V = \\pi(R^2 - r^2)h = \\pi(25 - 20.25) \\times 45 = 213.75\\pi \\approx 671.52\\text{ cm}^3\\).",
+              "work": "\\(V = 213.75\\pi \\approx 671.52\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Multiply volume by density (\\(11\\text{ g/cm}^3\\)) to get mass in grams: \\(671.52 \\times 11 \\approx 7386.7\\text{ g}\\).",
+              "work": "\\(\\text{Mass} \\approx 7386.7\\text{ g}\\)"
+            },
+            {
+              "explain": "Convert grams to kilograms (\\(\\div 1000\\)) and round to the nearest kilogram: \\(7.39\\text{ kg} \\approx 7\\text{ kg}\\).",
+              "work": "\\(\\text{Answer: } 7\\text{ kg}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 174\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"114\" cy=\"86\" r=\"64\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><circle cx=\"114\" cy=\"86\" r=\"54\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"114\" cy=\"86\" r=\"2.5\" fill=\"#0f172a\"/><line x1=\"114\" y1=\"22\" x2=\"218\" y2=\"22\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"114\" y1=\"150\" x2=\"218\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"210\" y1=\"22\" x2=\"210\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"220\" y=\"90\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">10 cm</text><text x=\"174\" y=\"164\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0.5 cm thick</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4b-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A water tank in the shape of a cylinder has a base diameter of \\(1.8\\text{ m}\\) and a height of \\(2\\text{ m}\\). Calculate the capacity of the tank to the nearest litre (given \\(1\\text{ m}^3 = 1\\text{ kL} = 1000\\text{ L}\\)).",
+          "options": [
+            "\\(5089\\text{ L}\\)",
+            "\\(20\\,358\\text{ L}\\)",
+            "\\(5655\\text{ L}\\)",
+            "\\(2545\\text{ L}\\)"
+          ],
+          "answer": 0,
+          "hint": "Halve the diameter to get radius r = 0.9 m! Calculate V = π(0.9)²(2) in m³, then multiply by 1000 to convert m³ to litres!",
+          "keyPoints": [
+            {
+              "text": "nearest litre",
+              "note": "r = 0.9 m, V = πr²h m³, then × 1000 L/m³."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Halve the diameter to find the radius: \\(r = \\dfrac{1.8}{2} = 0.9\\text{ m}\\).",
+              "work": "\\(r = 0.9\\text{ m}, \\; h = 2\\text{ m}\\)"
+            },
+            {
+              "explain": "Calculate the volume in cubic metres: \\(V = \\pi(0.9)^2(2) = 1.62\\pi \\approx 5.08938\\text{ m}^3\\).",
+              "work": "\\(V = 1.62\\pi \\approx 5.08938\\text{ m}^3\\)"
+            },
+            {
+              "explain": "Convert cubic metres to litres by multiplying by \\(1000\\): \\(5.08938 \\times 1000 = 5089.38\\text{ L}\\).",
+              "work": "\\(5089.38\\text{ L}\\)"
+            },
+            {
+              "explain": "Round to the nearest litre: \\(5089\\text{ L}\\).",
+              "work": "\\(\\text{Answer: } 5089\\text{ L}\\)"
             }
           ],
           "timeLimit": 60,
@@ -4165,6 +4377,46 @@
             {
               "explain": "Therefore, \\(7\\text{ m}^3 = 7000\\text{ L}\\).",
               "work": "\\(\\text{Answer: } 7000\\text{ L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the conversion: \\(1\\text{ m}^2 = \\square\\text{ cm}^2\\).",
+          "options": [
+            "\\(100\\)",
+            "\\(1000\\)",
+            "\\(10\\,000\\)",
+            "\\(100\\,000\\)"
+          ],
+          "answer": 2,
+          "hint": "Since 1 m = 100 cm, square the conversion factor for area: 1 m² = 100² = 10 000 cm²!",
+          "keyPoints": [
+            {
+              "text": "Complete the",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(1\\text{ m}^2 = (100\\text{ cm})^2\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(10\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 10\\,000\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(10\\,000\\).",
+              "work": "\\(\\text{Answer: } 10\\,000\\)"
             }
           ],
           "timeLimit": 60,
