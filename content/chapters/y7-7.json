@@ -2431,6 +2431,312 @@
               "note": "Write the values from greatest to least; convert them to decimals to compare."
             }
           ]
+        },
+        {
+          "id": "t3-2022-y7-pb-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(0.4\\text{ L}\\) to \\(\\text{mL}\\).",
+          "options": [
+            "\\(400\\text{ mL}\\)",
+            "\\(40\\text{ mL}\\)",
+            "\\(4000\\text{ mL}\\)",
+            "\\(0.04\\text{ mL}\\)"
+          ],
+          "answer": 0,
+          "hint": "One litre is 1000 mL.",
+          "steps": [
+            {
+              "explain": "Use the litre to millilitre conversion.",
+              "work": "\\(1\\text{ L}=1000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Multiply by 1000.",
+              "work": "\\(0.4\\times1000=400\\text{ mL}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(234\\text{ mm}\\) to \\(\\text{m}\\).",
+          "options": [
+            "\\(0.234\\text{ m}\\)",
+            "\\(2.34\\text{ m}\\)",
+            "\\(0.0234\\text{ m}\\)",
+            "\\(2340\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 1000 millimetres in one metre.",
+          "steps": [
+            {
+              "explain": "Use the conversion.",
+              "work": "\\(1\\text{ m}=1000\\text{ mm}\\)"
+            },
+            {
+              "explain": "Divide by 1000.",
+              "work": "\\(234\\div1000=0.234\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(25\\,000\\text{ cm}\\) to \\(\\text{km}\\).",
+          "options": [
+            "\\(0.25\\text{ km}\\)",
+            "\\(2.5\\text{ km}\\)",
+            "\\(25\\text{ km}\\)",
+            "\\(0.025\\text{ km}\\)"
+          ],
+          "answer": 0,
+          "hint": "One kilometre is 100,000 centimetres.",
+          "steps": [
+            {
+              "explain": "Use the conversion.",
+              "work": "\\(1\\text{ km}=100000\\text{ cm}\\)"
+            },
+            {
+              "explain": "Divide by 100,000.",
+              "work": "\\(25000\\div100000=0.25\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rectangle has an area of \\(0.52\\) square metres. Find the area of the rectangle in square centimetres.",
+          "options": [
+            "\\(5200\\text{ cm}^2\\)",
+            "\\(52\\text{ cm}^2\\)",
+            "\\(520\\text{ cm}^2\\)",
+            "\\(52000\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "For area, square the length conversion: 1 m² = 10,000 cm².",
+          "steps": [
+            {
+              "explain": "Square the length conversion.",
+              "work": "\\(1\\text{ m}^2=10000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Multiply the area.",
+              "work": "\\(0.52\\times10000=5200\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(0.45\\) as a fraction in simplest form.",
+          "options": [
+            "\\(\\frac9{20}\\)",
+            "\\(\\frac{45}{100}\\)",
+            "\\(\\frac45\\)",
+            "\\(\\frac{11}{20}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the decimal over 100, then divide top and bottom by their highest common factor.",
+          "steps": [
+            {
+              "explain": "Write the decimal as hundredths.",
+              "work": "\\(0.45=\\frac{45}{100}\\)"
+            },
+            {
+              "explain": "Divide numerator and denominator by 5.",
+              "work": "\\(\\frac{45}{100}=\\frac9{20}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(238.492\\) to the nearest tenth.",
+          "options": [
+            "\\(238.5\\)",
+            "\\(238.4\\)",
+            "\\(238.49\\)",
+            "\\(238.50\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the hundredths digit when rounding to tenths.",
+          "steps": [
+            {
+              "explain": "The tenths digit is 4 and the hundredths digit is 9.",
+              "work": "\\(238.\\underline4\\underline9 2\\)"
+            },
+            {
+              "explain": "Since 9 is at least 5, round the tenths digit up.",
+              "work": "\\(238.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Arrange the following decimals in ascending order: \\(1.2301, \\; 1.246, \\; 1.330, \\; 1.24\\).",
+          "options": [
+            "1.24, 1.2301, 1.246, 1.330",
+            "1.2301, 1.24, 1.246, 1.330",
+            "1.2301, 1.246, 1.24, 1.330",
+            "1.330, 1.246, 1.24, 1.2301"
+          ],
+          "answer": 1,
+          "hint": "Pad every decimal with trailing zeros to 4 decimal places (1.2301, 1.2460, 1.3300, 1.2400) so you can compare them digit by digit from left to right!",
+          "keyPoints": [
+            {
+              "text": "ascending order",
+              "note": "Ascending means smallest to largest; pad with zeros to compare place values."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write all four decimals with \\(4\\) decimal places so each column aligns.",
+              "work": "\\(1.2301, \\; 1.2460, \\; 1.3300, \\; 1.2400\\)"
+            },
+            {
+              "explain": "Compare tenths first: \\(1.3300\\) has \\(3\\) tenths (largest), while the others all have \\(2\\) tenths.",
+              "work": "\\(\\text{Largest} = 1.330\\)"
+            },
+            {
+              "explain": "Compare hundredths and thousandths among the remaining three: \\(1.2301 < 1.2400 < 1.2460\\).",
+              "work": "\\(1.2301 < 1.24 < 1.246 < 1.330\\)"
+            },
+            {
+              "explain": "Therefore, in ascending order: \\(1.2301, 1.24, 1.246, 1.330\\).",
+              "work": "\\(\\text{Answer: } 1.2301, 1.24, 1.246, 1.330\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which symbol makes the statement \\(0.2203 \\; \\square \\; 0.23\\) true?",
+          "options": [
+            "\\(<\\)",
+            "\\(>\\)",
+            "\\(=\\)",
+            "\\(\\ge\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 0.23 as 0.2300 and compare the hundredths digits: 2 hundredths vs 3 hundredths!",
+          "keyPoints": [
+            {
+              "text": "0.2203",
+              "note": "Compare place values from left to right (0.2203 vs 0.2300)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write both decimals with \\(4\\) decimal places: \\(0.2203\\) and \\(0.2300\\).",
+              "work": "\\(0.2203 \\text{ vs } 0.2300\\)"
+            },
+            {
+              "explain": "Compare the tenths digits: both are \\(2\\).",
+              "work": "\\(\\text{Tenths: } 2 = 2\\)"
+            },
+            {
+              "explain": "Compare the hundredths digits: \\(2 < 3\\), so \\(0.2203\\) is smaller than \\(0.23\\).",
+              "work": "\\(0.2203 < 0.23\\)"
+            },
+            {
+              "explain": "Therefore, the correct symbol is \\(<\\).",
+              "work": "\\(\\text{Answer: } <\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the number line shown to find the value of \\(x\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(7.5\\)",
+            "\\(10\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many equal spaces lie between 0 and 5 (2 spaces!), so each tick mark increases by 5 ÷ 2 = 2.5. Add 2.5 to 5!",
+          "keyPoints": [
+            {
+              "text": "value of \\(x\\)",
+              "note": "Find the step size per tick mark: 5 ÷ 2 = 2.5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the number of equal intervals between \\(0\\) and \\(5\\): there are \\(2\\) equal intervals.",
+              "work": "\\(\\text{Step size} = \\dfrac{5 - 0}{2} = 2.5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 102\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"102\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"36\" x2=\"340\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"28,30 20,36 28,42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"332,30 340,36 332,42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"30\" x2=\"42\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"42\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"normal\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">-5</text><line x1=\"86\" y1=\"30\" x2=\"86\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"130\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"normal\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">0</text><line x1=\"174\" y1=\"30\" x2=\"174\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"218\" y1=\"30\" x2=\"218\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"218\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"normal\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5</text><line x1=\"262\" y1=\"30\" x2=\"262\" y2=\"42\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"262\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">x = 7.5</text><line x1=\"306\" y1=\"30\" x2=\"306\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 218 28 Q 240 12 262 28\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"240\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">+2.5</text><text x=\"180\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Each tick mark is +2.5, so x = 5 + 2.5 = 7.5</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the tick marks using step size \\(2.5\\): \\(-5, -2.5, 0, 2.5, 5\\).",
+              "work": "\\(0, \\; 2.5, \\; 5, \\; x\\)"
+            },
+            {
+              "explain": "Since \\(x\\) is \\(1\\) interval to the right of \\(5\\), add \\(2.5\\) to \\(5\\).",
+              "work": "\\(x = 5 + 2.5 = 7.5\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 7.5\\).",
+              "work": "\\(\\text{Answer: } 7.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 78\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"78\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"36\" x2=\"340\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"28,30 20,36 28,42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"332,30 340,36 332,42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"42\" y1=\"30\" x2=\"42\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"42\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"normal\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">-5</text><line x1=\"86\" y1=\"30\" x2=\"86\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"130\" y1=\"30\" x2=\"130\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"130\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"normal\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">0</text><line x1=\"174\" y1=\"30\" x2=\"174\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"218\" y1=\"30\" x2=\"218\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"218\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"normal\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5</text><line x1=\"262\" y1=\"30\" x2=\"262\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"262\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">x</text><line x1=\"306\" y1=\"30\" x2=\"306\" y2=\"42\" stroke=\"#0f172a\" stroke-width=\"1.6\"/></svg>"
+          }
         }
       ]
     },
@@ -4230,6 +4536,86 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(1.23 + 1.99\\).",
+          "options": [
+            "\\(3.12\\)",
+            "\\(3.22\\)",
+            "\\(3.32\\)",
+            "\\(2.22\\)"
+          ],
+          "answer": 1,
+          "hint": "Line up the decimal points and add column by column (or add 2.00 to 1.23 to get 3.23, then subtract 0.01!).",
+          "keyPoints": [
+            {
+              "text": "1.23 + 1.99",
+              "note": "Align decimal points, or use mental compensation: 1.99 = 2.00 - 0.01."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the hundredths column: \\(3 + 9 = 12\\) (write \\(2\\), carry \\(1\\) tenth).",
+              "work": "\\(0.03 + 0.09 = 0.12\\)"
+            },
+            {
+              "explain": "Add the tenths column with the carried \\(1\\): \\(2 + 9 + 1 = 12\\) (write \\(2\\), carry \\(1\\) whole).",
+              "work": "\\(0.2 + 0.9 + 0.1 = 1.2\\)"
+            },
+            {
+              "explain": "Add the ones column with the carried \\(1\\): \\(1 + 1 + 1 = 3\\).",
+              "work": "\\(1.23 + 1.99 = 3.22\\)"
+            },
+            {
+              "explain": "Mental check: \\(1.23 + 2.00 - 0.01 = 3.23 - 0.01 = 3.22\\).",
+              "work": "\\(\\text{Answer: } 3.22\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(1.2 - 0.73\\).",
+          "options": [
+            "\\(0.47\\)",
+            "\\(0.53\\)",
+            "\\(0.57\\)",
+            "\\(0.43\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 1.2 as 1.20 so both numbers have two decimal places, then subtract 1.20 - 0.73 carefully with borrowing!",
+          "keyPoints": [
+            {
+              "text": "1.2 - 0.73",
+              "note": "Rewrite 1.2 as 1.20 before subtracting 0.73."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write \\(1.2\\) as \\(1.20\\) so the decimal points and hundredths align.",
+              "work": "\\(1.20 - 0.73\\)"
+            },
+            {
+              "explain": "Subtract the hundredths: borrow \\(1\\) tenth so \\(10 - 3 = 7\\) hundredths (leaving \\(1\\) tenth).",
+              "work": "\\(10 - 3 = 7\\text{ hundredths}\\)"
+            },
+            {
+              "explain": "Borrow \\(1\\) whole so \\(11 - 7 = 4\\) tenths, leaving \\(0\\) wholes.",
+              "work": "\\(11 - 7 = 4\\text{ tenths}\\)"
+            },
+            {
+              "explain": "Check by adding back: \\(0.47 + 0.73 = 1.20\\). Therefore, the answer is \\(0.47\\).",
+              "work": "\\(\\text{Answer: } 0.47\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4479,6 +4865,46 @@
             "section": "Section 3 (Decimals)",
             "marks": 1
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(5.43 \\times 1000\\).",
+          "options": [
+            "\\(54.3\\)",
+            "\\(543\\)",
+            "\\(5430\\)",
+            "\\(54\\,300\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiplying by 1000 (3 zeros) moves the decimal point 3 places to the RIGHT! Fill the empty space with a zero.",
+          "keyPoints": [
+            {
+              "text": "1000",
+              "note": "Move the decimal point 3 places to the right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the zeros in \\(1000\\): there are \\(3\\) zeros, so move the decimal point \\(3\\) places right.",
+              "work": "\\(5.43 \\times 1000\\)"
+            },
+            {
+              "explain": "Move \\(2\\) places right to get \\(543\\), then \\(1\\) more place right by appending a zero.",
+              "work": "\\(5.43 \\to 54.3 \\to 543 \\to 5430\\)"
+            },
+            {
+              "explain": "Confirm the size: \\(5 \\times 1000 = 5000\\), so \\(5430\\) is completely reasonable.",
+              "work": "\\(5430\\)"
+            },
+            {
+              "explain": "Therefore, \\(5.43 \\times 1000 = 5430\\).",
+              "work": "\\(\\text{Answer: } 5430\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5262,6 +5688,86 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(0.02 \\times 0.23\\).",
+          "options": [
+            "\\(0.46\\)",
+            "\\(0.046\\)",
+            "\\(0.0046\\)",
+            "\\(0.00046\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 2 × 23 = 46 first, then count the TOTAL number of decimal places in both factors (2 + 2 = 4 decimal places!).",
+          "keyPoints": [
+            {
+              "text": "0.02",
+              "note": "2 decimal places + 2 decimal places = 4 decimal places in the answer."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Ignore the decimal points and multiply the whole numbers: \\(2 \\times 23 = 46\\).",
+              "work": "\\(2 \\times 23 = 46\\)"
+            },
+            {
+              "explain": "Count the total number of decimal places: \\(0.02\\) has \\(2\\) d.p. and \\(0.23\\) has \\(2\\) d.p., giving \\(2 + 2 = 4\\) decimal places.",
+              "work": "\\(2 + 2 = 4\\text{ decimal places}\\)"
+            },
+            {
+              "explain": "Place the decimal point \\(4\\) places from the right of \\(46\\) by adding leading zeros: \\(0.0046\\).",
+              "work": "\\(0.0046\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.02 \\times 0.23 = 0.0046\\).",
+              "work": "\\(\\text{Answer: } 0.0046\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(23 \\times 32 = 736\\), find \\(0.23 \\times 0.32\\).",
+          "options": [
+            "\\(7.36\\)",
+            "\\(0.736\\)",
+            "\\(0.0736\\)",
+            "\\(0.00736\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the given digits 736 and count the total decimal places in 0.23 (2 d.p.) and 0.32 (2 d.p.) -> 4 decimal places total!",
+          "keyPoints": [
+            {
+              "text": "23 \\times 32 = 736",
+              "note": "Same digits 736, placed with 2 + 2 = 4 decimal places."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the given whole-number product: the significant digits are \\(736\\).",
+              "work": "\\(23 \\times 32 = 736\\)"
+            },
+            {
+              "explain": "Count decimal places: \\(0.23\\) has \\(2\\) decimal places and \\(0.32\\) has \\(2\\) decimal places, totalling \\(4\\) decimal places.",
+              "work": "\\(2 + 2 = 4\\text{ decimal places}\\)"
+            },
+            {
+              "explain": "Move the decimal point \\(4\\) places left from the end of \\(736\\) (adding a zero before \\(7\\)).",
+              "work": "\\(736 \\to 0.0736\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.23 \\times 0.32 = 0.0736\\).",
+              "work": "\\(\\text{Answer: } 0.0736\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5848,6 +6354,126 @@
               "note": "Round this to \\(0.2\\) grams to estimate the number of seeds."
             }
           ]
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(1.6 \\div 4\\).",
+          "options": [
+            "\\(0.04\\)",
+            "\\(0.4\\)",
+            "\\(4\\)",
+            "\\(0.25\\)"
+          ],
+          "answer": 1,
+          "hint": "Think of 1.6 as 16 tenths: 16 tenths ÷ 4 = 4 tenths = 0.4.",
+          "keyPoints": [
+            {
+              "text": "1.6",
+              "note": "Keep the decimal point aligned directly above the decimal point in 1.6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide the whole number part: \\(4\\) goes into \\(1\\) zero times, so write \\(0.\\) in the quotient.",
+              "work": "\\(1 \\div 4 = 0\\text{ remainder } 1\\)"
+            },
+            {
+              "explain": "Combine the remainder \\(1\\) with \\(6\\) tenths to make \\(16\\) tenths.",
+              "work": "\\(16\\text{ tenths} \\div 4 = 4\\text{ tenths}\\)"
+            },
+            {
+              "explain": "Write \\(4\\) in the tenths place: \\(0.4\\).",
+              "work": "\\(1.6 \\div 4 = 0.4\\)"
+            },
+            {
+              "explain": "Check: \\(0.4 \\times 4 = 1.6\\). Therefore, the answer is \\(0.4\\).",
+              "work": "\\(\\text{Answer: } 0.4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(1.24 \\div 0.4\\).",
+          "options": [
+            "\\(0.31\\)",
+            "\\(3.1\\)",
+            "\\(31\\)",
+            "\\(3.01\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply BOTH numbers by 10 to make the divisor a whole number: 1.24 ÷ 0.4 becomes 12.4 ÷ 4!",
+          "keyPoints": [
+            {
+              "text": "0.4",
+              "note": "Multiply both dividend and divisor by 10 -> 12.4 ÷ 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply both \\(1.24\\) and \\(0.4\\) by \\(10\\) so the divisor becomes a whole number (\\(4\\)).",
+              "work": "\\(1.24 \\div 0.4 = 12.4 \\div 4\\)"
+            },
+            {
+              "explain": "Divide \\(12\\) by \\(4\\): \\(12 \\div 4 = 3\\).",
+              "work": "\\(12 \\div 4 = 3\\)"
+            },
+            {
+              "explain": "Divide \\(0.4\\) by \\(4\\): \\(0.4 \\div 4 = 0.1\\), giving \\(3.1\\).",
+              "work": "\\(12.4 \\div 4 = 3.1\\)"
+            },
+            {
+              "explain": "Check: \\(3.1 \\times 0.4 = 1.24\\). Therefore, the answer is \\(3.1\\).",
+              "work": "\\(\\text{Answer: } 3.1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A family receives \\(\\$15.95\\) of donations from Esther every month. There are \\(5\\) members in the family. How much does each member receive every month if the proceeds are shared evenly?",
+          "options": [
+            "\\(\\$3.09\\)",
+            "\\(\\$3.15\\)",
+            "\\(\\$3.19\\)",
+            "\\(\\$3.29\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide $15.95 by 5 using short division: 15 ÷ 5 = 3, then 9 ÷ 5 = 1 remainder 4, then 45 ÷ 5 = 9.",
+          "keyPoints": [
+            {
+              "text": "shared evenly",
+              "note": "Divide the total ($15.95) by 5 family members."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the division: \\(\\$15.95 \\div 5\\).",
+              "work": "\\(15.95 \\div 5\\)"
+            },
+            {
+              "explain": "Divide the dollars: \\(15 \\div 5 = 3\\) (exact, remainder \\(0\\)).",
+              "work": "\\(15 \\div 5 = 3\\)"
+            },
+            {
+              "explain": "Divide the tenths: \\(9 \\div 5 = 1\\) with remainder \\(4\\). Bring down \\(5\\) to make \\(45\\), then \\(45 \\div 5 = 9\\).",
+              "work": "\\(0.95 \\div 5 = 0.19\\)"
+            },
+            {
+              "explain": "Combine dollars and cents: \\(\\$3.19\\). Check: \\(5 \\times \\$3.19 = \\$15.95\\).",
+              "work": "\\(\\text{Answer: } \\$3.19\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6487,6 +7113,46 @@
               "note": "Compare consecutive groups of digits to identify the repeating block."
             }
           ]
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(\\dfrac{1}{9}\\) into a recurring decimal.",
+          "options": [
+            "\\(0.1\\)",
+            "\\(0.\\dot{1}\\)",
+            "\\(0.0\\dot{9}\\)",
+            "\\(0.\\dot{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 1 by 9 using short division: 1.000... ÷ 9 gives 0.1111... forever, written with a dot over the repeating 1.",
+          "keyPoints": [
+            {
+              "text": "recurring decimal",
+              "note": "Perform 1 ÷ 9 to see which digit repeats endlessly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up short division for \\(1 \\div 9\\) by writing \\(1\\) as \\(1.000...\\).",
+              "work": "\\(1.000... \\div 9\\)"
+            },
+            {
+              "explain": "Divide \\(10\\) tenths by \\(9\\): \\(9\\) goes into \\(10\\) once (\\(1\\)) with remainder \\(1\\).",
+              "work": "\\(10 \\div 9 = 1 \\text{ r } 1\\)"
+            },
+            {
+              "explain": "Every next place repeats \\(10 \\div 9 = 1\\) remainder \\(1\\), giving \\(0.1111...\\).",
+              "work": "\\(\\dfrac{1}{9} = 0.1111...\\)"
+            },
+            {
+              "explain": "Write the repeating digit \\(1\\) using dot notation: \\(0.\\dot{1}\\).",
+              "work": "\\(\\text{Answer: } 0.\\dot{1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6751,6 +7417,180 @@
               "note": "Use the hundredths digit to decide whether the tenths digit stays the same or increases."
             }
           ]
+        },
+        {
+          "id": "t3-2022-y7-pb-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down a decimal number that is greater than \\(\\frac18\\) and less than \\(\\frac16\\).",
+          "options": [
+            "\\(0.15\\)",
+            "\\(0.12\\)",
+            "\\(0.17\\)",
+            "\\(0.20\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert the two fractions to decimals, then choose a value between them.",
+          "steps": [
+            {
+              "explain": "Convert the bounds.",
+              "work": "\\(\\frac18=0.125,\\quad\\frac16=0.1666\\ldots\\)"
+            },
+            {
+              "explain": "Choose a decimal between the bounds.",
+              "work": "\\(0.125<0.15<0.1666\\ldots\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(1\\,234\\,654\\) to the nearest thousand.",
+          "options": [
+            "\\(1\\,235\\,000\\)",
+            "\\(1\\,234\\,000\\)",
+            "\\(1\\,235\\,654\\)",
+            "\\(1\\,230\\,000\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the hundreds digit to round to the nearest thousand.",
+          "steps": [
+            {
+              "explain": "The thousands digit is 4 and the hundreds digit is 6.",
+              "work": "\\(1\\,234\\,654\\)"
+            },
+            {
+              "explain": "Since 6 is at least 5, round up the thousands.",
+              "work": "\\(1\\,235\\,000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "t3-2022-y7-pb-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(0.2\\dot{3}7\\dot{4}\\) correct to 10 decimal places.",
+          "options": [
+            "\\(0.2374237424\\)",
+            "\\(0.2374237423\\)",
+            "\\(0.2374000000\\)",
+            "\\(0.237423742\\)"
+          ],
+          "answer": 0,
+          "hint": "Repeat the block 374 until you have 11 decimal places, then round to 10.",
+          "steps": [
+            {
+              "explain": "The repeating block is 374.",
+              "work": "\\(0.2\\overline{374}=0.237423742374\\ldots\\)"
+            },
+            {
+              "explain": "Keep ten decimal places and check the next digit.",
+              "work": "\\(0.237423742\\underline3\\,7\\ldots\\)"
+            },
+            {
+              "explain": "Round the tenth decimal place up.",
+              "work": "\\(0.2374237424\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3-Year 7 2022, Part B",
+            "school": "Great Lakes Senior College"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(0.307\\) to \\(2\\) decimal places.",
+          "options": [
+            "\\(0.30\\)",
+            "\\(0.31\\)",
+            "\\(0.3\\)",
+            "\\(0.40\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the 3rd decimal digit (7). Since 7 is 5 or more, round the 2nd decimal digit (0) UP by 1!",
+          "keyPoints": [
+            {
+              "text": "2\\) decimal places",
+              "note": "Check the 3rd decimal digit (7 >= 5) to decide whether to round up."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the 2nd decimal place (the hundredths digit): \\(0\\) in \\(0.3\\underline{0}7\\).",
+              "work": "\\(0.3\\underline{0}7\\)"
+            },
+            {
+              "explain": "Inspect the next digit to the right (thousandths digit): \\(7\\).",
+              "work": "\\(\\text{3rd decimal digit} = 7 \\ge 5\\)"
+            },
+            {
+              "explain": "Since \\(7 \\ge 5\\), round the hundredths digit \\(0\\) up to \\(1\\) and drop the \\(7\\).",
+              "work": "\\(0.307 \\approx 0.31\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.307\\) rounded to \\(2\\) decimal places is \\(0.31\\).",
+              "work": "\\(\\text{Answer: } 0.31\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s2-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(0.995\\) rounded to \\(2\\) decimal places is:",
+          "options": [
+            "\\(1.00\\)",
+            "\\(0.99\\)",
+            "\\(0.90\\)",
+            "\\(1.01\\)"
+          ],
+          "answer": 0,
+          "hint": "The 3rd decimal digit is 5, so 0.99 rounds UP by 0.01 -> 1.00! Keep the two zeros to show 2 decimal places.",
+          "keyPoints": [
+            {
+              "text": "0.995",
+              "note": "Rounding 0.99 up carries across to 1.00 (keep two decimal places)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the 2nd decimal place in \\(0.9\\underline{9}5\\) and look at the 3rd decimal digit (\\(5\\)).",
+              "work": "\\(\\text{3rd digit} = 5 \\ge 5\\)"
+            },
+            {
+              "explain": "Since the 3rd digit is \\(5\\), add \\(0.01\\) to \\(0.99\\).",
+              "work": "\\(0.99 + 0.01 = 1.00\\)"
+            },
+            {
+              "explain": "Keep the two trailing zeros (\\(1.00\\)) because the question asks for \\(2\\) decimal places.",
+              "work": "\\(1.00\\)"
+            },
+            {
+              "explain": "Therefore, \\(0.995\\) rounded to \\(2\\) decimal places is \\(1.00\\).",
+              "work": "\\(\\text{Answer: } 1.00\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

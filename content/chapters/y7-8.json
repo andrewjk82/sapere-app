@@ -3352,6 +3352,166 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(2.8\\text{ km}\\) to \\(\\text{m}\\).",
+          "options": [
+            "\\(280\\text{ m}\\)",
+            "\\(2800\\text{ m}\\)",
+            "\\(28\\,000\\text{ m}\\)",
+            "\\(0.0028\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "1 km = 1000 m. Multiply 2.8 by 1000.",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Use the exact metric/time conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the unit conversion relationship: \\(1\\text{ km} = 1000\\text{ m}\\).",
+              "work": "\\(1\\text{ km} = 1000\\text{ m}\\)"
+            },
+            {
+              "explain": "Apply the multiplication or division conversion factor.",
+              "work": "\\(2.8 \\times 1000 = 2800\\text{ m}\\)"
+            },
+            {
+              "explain": "Check whether the answer should be larger or smaller than the starting number.",
+              "work": "\\(\\text{Verified: } 2.8 \\times 1000 = 2800\\text{ m}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2800\\text{ m}\\).",
+              "work": "\\(2.8 \\times 1000 = 2800\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(2400\\text{ cm}^2\\) to \\(\\text{m}^2\\).",
+          "options": [
+            "\\(24\\text{ m}^2\\)",
+            "\\(2.4\\text{ m}^2\\)",
+            "\\(0.24\\text{ m}^2\\)",
+            "\\(0.024\\text{ m}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "For area, 1 m² = 100² = 10 000 cm². Divide 2400 by 10 000!",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Use the exact metric/time conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the unit conversion relationship: \\(1\\text{ m}^2 = 10\\,000\\text{ cm}^2\\).",
+              "work": "\\(1\\text{ m}^2 = 10\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Apply the multiplication or division conversion factor.",
+              "work": "\\(2400 \\div 10\\,000 = 0.24\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Check whether the answer should be larger or smaller than the starting number.",
+              "work": "\\(\\text{Verified: } 2400 \\div 10\\,000 = 0.24\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(0.24\\text{ m}^2\\).",
+              "work": "\\(2400 \\div 10\\,000 = 0.24\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(560\\text{ g}\\) to \\(\\text{kg}\\).",
+          "options": [
+            "\\(5.6\\text{ kg}\\)",
+            "\\(0.56\\text{ kg}\\)",
+            "\\(0.056\\text{ kg}\\)",
+            "\\(560\\,000\\text{ kg}\\)"
+          ],
+          "answer": 1,
+          "hint": "1 kg = 1000 g. Divide 560 by 1000.",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Use the exact metric/time conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the unit conversion relationship: \\(1\\text{ kg} = 1000\\text{ g}\\).",
+              "work": "\\(1\\text{ kg} = 1000\\text{ g}\\)"
+            },
+            {
+              "explain": "Apply the multiplication or division conversion factor.",
+              "work": "\\(560 \\div 1000 = 0.56\\text{ kg}\\)"
+            },
+            {
+              "explain": "Check whether the answer should be larger or smaller than the starting number.",
+              "work": "\\(\\text{Verified: } 560 \\div 1000 = 0.56\\text{ kg}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(0.56\\text{ kg}\\).",
+              "work": "\\(560 \\div 1000 = 0.56\\text{ kg}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(52\\text{ L}\\) to \\(\\text{mL}\\).",
+          "options": [
+            "\\(520\\text{ mL}\\)",
+            "\\(5200\\text{ mL}\\)",
+            "\\(52\\,000\\text{ mL}\\)",
+            "\\(0.052\\text{ mL}\\)"
+          ],
+          "answer": 2,
+          "hint": "1 L = 1000 mL. Multiply 52 by 1000.",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Use the exact metric/time conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the unit conversion relationship: \\(1\\text{ L} = 1000\\text{ mL}\\).",
+              "work": "\\(1\\text{ L} = 1000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Apply the multiplication or division conversion factor.",
+              "work": "\\(52 \\times 1000 = 52\\,000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Check whether the answer should be larger or smaller than the starting number.",
+              "work": "\\(\\text{Verified: } 52 \\times 1000 = 52\\,000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(52\\,000\\text{ mL}\\).",
+              "work": "\\(52 \\times 1000 = 52\\,000\\text{ mL}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -7438,6 +7598,52 @@
             "number": "1 (a)",
             "page": 2
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the area AND perimeter of the \\(12\\text{ m} \\times 4\\text{ m}\\) rectangle shown.",
+          "options": [
+            "Area = 48 m², Perimeter = 32 m",
+            "Area = 32 m², Perimeter = 48 m",
+            "Area = 48 m², Perimeter = 16 m",
+            "Area = 16 m², Perimeter = 32 m"
+          ],
+          "answer": 0,
+          "hint": "Area = length × width (12 × 4). Perimeter = sum of ALL FOUR sides = 2 × (12 + 4).",
+          "keyPoints": [
+            {
+              "text": "area AND perimeter",
+              "note": "Area uses m² (12 × 4); Perimeter uses m (12 + 4 + 12 + 4)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the area of the rectangle: \\(A = l \\times w = 12 \\times 4 = 48\\text{ m}^2\\).",
+              "work": "\\(A = 12 \\times 4 = 48\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"34\" width=\"168\" height=\"66\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><polyline points=\"74,34 74,44 64,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"222,34 222,44 232,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"74,100 74,90 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"222,100 222,90 232,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"148\" y=\"25\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\">12 m</text><text x=\"48\" y=\"72\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">4 m</text><text x=\"148\" y=\"116\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">12 m</text><text x=\"242\" y=\"72\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">4 m</text><text x=\"145\" y=\"147\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Area = 12 × 4 = 48 m²; Perimeter = 12 + 4 + 12 + 4 = 32 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Label the two opposite sides of the rectangle: \\(12\\text{ m}\\) and \\(4\\text{ m}\\).",
+              "work": "\\(P = 12 + 4 + 12 + 4\\)"
+            },
+            {
+              "explain": "Calculate the perimeter: \\(P = 2(12 + 4) = 2 \\times 16 = 32\\text{ m}\\).",
+              "work": "\\(P = 32\\text{ m}\\)"
+            },
+            {
+              "explain": "Therefore, Area \\(= 48\\text{ m}^2\\) and Perimeter \\(= 32\\text{ m}\\).",
+              "work": "\\(A = 48\\text{ m}^2, \\; P = 32\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 130\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"34\" width=\"168\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><polyline points=\"74,34 74,44 64,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"222,34 222,44 232,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"74,100 74,90 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"222,100 222,90 232,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"148\" y=\"25\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">12 m</text><text x=\"48\" y=\"72\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 m</text></svg>"
+          }
         }
       ]
     },
@@ -8141,6 +8347,98 @@
               }
             }
           ]
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area AND perimeter of the L-shaped figure shown (outer sides \\(12\\text{ m}\\) and \\(12\\text{ m}\\), inner cut-out sides \\(8\\text{ m}\\) and \\(8\\text{ m}\\), arm widths \\(4\\text{ m}\\)).",
+          "options": [
+            "Area = 80 m², Perimeter = 48 m",
+            "Area = 80 m², Perimeter = 40 m",
+            "Area = 96 m², Perimeter = 48 m",
+            "Area = 64 m², Perimeter = 48 m"
+          ],
+          "answer": 0,
+          "hint": "Area = full 12×12 square minus the cut-out 8×8 square! Perimeter = sum of all 6 outer sides (12 + 12 + 4 + 8 + 8 + 4 = 48 m).",
+          "keyPoints": [
+            {
+              "text": "area AND perimeter",
+              "note": "Subtract the 8×8 cut-out from the 12×12 square; add all 6 edges for perimeter."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the area by subtracting the cut-out \\(8\\text{ m} \\times 8\\text{ m}\\) square (red) from the full \\(12\\text{ m} \\times 12\\text{ m}\\) square.",
+              "work": "\\(A = (12 \\times 12) - (8 \\times 8) = 144 - 64 = 80\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 210\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"120\" y=\"20\" width=\"88\" height=\"88\" fill=\"#fee2e2\" fill-opacity=\"0.65\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/><text x=\"164\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">Cut: 8×8 = 64</text><polygon points=\"76,20 120,20 120,108 208,108 208,152 76,152\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"170\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">12 m</text><text x=\"164\" y=\"102\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">8 m</text><text x=\"218\" y=\"134\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">4 m</text><text x=\"64\" y=\"90\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">12 m</text><text x=\"98\" y=\"15\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"800\" fill=\"#2563eb\">4 m</text><text x=\"140\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Area = 144 - 64 = 80 m²; Perimeter = 12 + 12 + 4 + 8 + 8 + 4 = 48 m</text></svg>"
+              }
+            },
+            {
+              "explain": "List all \\(6\\) outer side lengths around the L-shape: \\(12, 12, 4, 8, 8,\\) and \\(4\\).",
+              "work": "\\(P = 12 + 12 + 4 + 8 + 8 + 4\\)"
+            },
+            {
+              "explain": "Add all six sides (note: it equals the perimeter of the full \\(12 \\times 12\\) square): \\(48\\text{ m}\\).",
+              "work": "\\(P = 48\\text{ m}\\)"
+            },
+            {
+              "explain": "Therefore, Area \\(= 80\\text{ m}^2\\) and Perimeter \\(= 48\\text{ m}\\).",
+              "work": "\\(A = 80\\text{ m}^2, \\; P = 48\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 186\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"186\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"76,20 120,20 120,108 208,108 208,152 76,152\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"142\" y=\"170\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">12 m</text><text x=\"164\" y=\"102\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">8 m</text><text x=\"218\" y=\"134\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">4 m</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q3b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the area of the composite pentagon shown (left side \\(8\\text{ m}\\), bottom \\(17\\text{ m}\\), top \\(7.5\\text{ m}\\), right side \\(3\\text{ m}\\)).",
+          "options": [
+            "\\(100.1\\text{ m}^2\\)",
+            "\\(112.25\\text{ m}^2\\)",
+            "\\(136\\text{ m}^2\\)",
+            "\\(88.5\\text{ m}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Enclose the shape in a full 17 m × 8 m rectangle (area 136 m²), then subtract the missing top-right triangle (base = 17 - 7.5 = 9.5 m, height = 8 - 3 = 5 m)!",
+          "keyPoints": [
+            {
+              "text": "composite pentagon",
+              "note": "Full rectangle (17 × 8) minus cut-out right triangle (1/2 × 9.5 × 5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the area of the full enclosing \\(17\\text{ m} \\times 8\\text{ m}\\) rectangle.",
+              "work": "\\(A_{\\text{rect}} = 17 \\times 8 = 136\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 190\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"142.5,46 247,46 247,101\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\"/><text x=\"196\" y=\"40\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">9.5 m</text><text x=\"255\" y=\"76\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">5 m</text><polygon points=\"60,46 142.5,46 247,101 247,134 60,134\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"60,56 70,56 70,46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"60,124 70,124 70,134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"237,134 237,124 247,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"48\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">8 m</text><text x=\"102\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">7.5 m</text><text x=\"154\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">17 m</text><text x=\"256\" y=\"122\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">3 m</text><text x=\"155\" y=\"182\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Missing top-right triangle (red): base 9.5 m, height 5 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the dimensions of the missing top-right triangle (red): base \\(= 17 - 7.5 = 9.5\\text{ m}\\), height \\(= 8 - 3 = 5\\text{ m}\\).",
+              "work": "\\(b = 9.5\\text{ m}, \\quad h = 5\\text{ m}\\)"
+            },
+            {
+              "explain": "Calculate the area of the missing triangle: \\(A_{\\text{tri}} = \\dfrac{1}{2} \\times 9.5 \\times 5 = 23.75\\text{ m}^2\\).",
+              "work": "\\(A_{\\text{tri}} = 23.75\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Subtract the triangle from the full rectangle: \\(136 - 23.75 = 112.25\\text{ m}^2\\).",
+              "work": "\\(A = 136 - 23.75 = 112.25\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 164\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"60,46 142.5,46 247,101 247,134 60,134\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"60,56 70,56 70,46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"60,124 70,124 70,134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"237,134 237,124 247,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"48\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">8 m</text><text x=\"102\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">7.5 m</text><text x=\"154\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">17 m</text><text x=\"256\" y=\"122\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">3 m</text></svg>"
+          }
         }
       ]
     },
@@ -8967,6 +9265,98 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the area of the triangle shown (base \\(10\\text{ cm}\\), perpendicular height \\(4\\text{ cm}\\)).",
+          "options": [
+            "\\(14\\text{ cm}^2\\)",
+            "\\(20\\text{ cm}^2\\)",
+            "\\(40\\text{ cm}^2\\)",
+            "\\(28\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Use Area of a triangle = 1/2 × base × perpendicular height. Even for an obtuse triangle whose height lies outside, the formula is still 1/2 × b × h!",
+          "keyPoints": [
+            {
+              "text": "area of the triangle",
+              "note": "A = 1/2 × base × perpendicular height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the base \\(b = 10\\text{ cm}\\) (blue) and the perpendicular height \\(h = 4\\text{ cm}\\) (red).",
+              "work": "\\(b = 10\\text{ cm}, \\quad h = 4\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"44,96 164,96 208,36\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"44\" y1=\"96\" x2=\"164\" y2=\"96\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"164\" y1=\"96\" x2=\"208\" y2=\"96\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"3,2\"/><line x1=\"222\" y1=\"36\" x2=\"222\" y2=\"96\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polygon points=\"222,36 218,44 226,44\" fill=\"#dc2626\"/><polygon points=\"222,96 218,88 226,88\" fill=\"#dc2626\"/><text x=\"104\" y=\"116\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">10 cm</text><text x=\"232\" y=\"70\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\">4 cm</text><text x=\"145\" y=\"147\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Base b = 10 cm (blue) and perpendicular height h = 4 cm (red)</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the triangle area formula: \\(A = \\dfrac{1}{2} \\times b \\times h\\).",
+              "work": "\\(A = \\dfrac{1}{2} \\times 10 \\times 4\\)"
+            },
+            {
+              "explain": "Compute: \\(\\dfrac{1}{2} \\times 10 = 5\\), then \\(5 \\times 4 = 20\\text{ cm}^2\\).",
+              "work": "\\(A = 20\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the area of the triangle is \\(20\\text{ cm}^2\\).",
+              "work": "\\(\\text{Answer: } 20\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 130\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"44,96 164,96 208,36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"222\" y1=\"36\" x2=\"222\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polygon points=\"222,36 218,44 226,44\" fill=\"#0f172a\"/><polygon points=\"222,96 218,88 226,88\" fill=\"#0f172a\"/><text x=\"104\" y=\"116\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">10 cm</text><text x=\"232\" y=\"70\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 cm</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the area of the parallelogram shown (base \\(17\\text{ mm}\\), perpendicular height \\(5.3\\text{ mm}\\)).",
+          "options": [
+            "\\(45.05\\text{ mm}^2\\)",
+            "\\(90.1\\text{ mm}^2\\)",
+            "\\(22.3\\text{ mm}^2\\)",
+            "\\(44.6\\text{ mm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Area of a parallelogram = base × perpendicular height (do NOT divide by 2!).",
+          "keyPoints": [
+            {
+              "text": "parallelogram",
+              "note": "A = base × perpendicular height = 17 × 5.3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the base \\(b = 17\\text{ mm}\\) (blue) and the perpendicular height \\(h = 5.3\\text{ mm}\\) (red).",
+              "work": "\\(b = 17\\text{ mm}, \\quad h = 5.3\\text{ mm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 155\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"54,98 194,98 224,34 84,34\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"54\" y1=\"98\" x2=\"194\" y2=\"98\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"126\" y1=\"34\" x2=\"126\" y2=\"98\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-dasharray=\"4,3\"/><polyline points=\"126,88 136,88 136,98\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"124\" y=\"116\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">17 mm</text><text x=\"134\" y=\"70\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">5.3 mm</text><text x=\"140\" y=\"147\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Base b = 17 mm (blue) × perpendicular height h = 5.3 mm (red)</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the parallelogram area formula: \\(A = b \\times h\\).",
+              "work": "\\(A = 17 \\times 5.3\\)"
+            },
+            {
+              "explain": "Multiply \\(17 \\times 5.3 = 90.1\\text{ mm}^2\\).",
+              "work": "\\(A = 90.1\\text{ mm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the area of the parallelogram is \\(90.1\\text{ mm}^2\\).",
+              "work": "\\(\\text{Answer: } 90.1\\text{ mm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 130\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"54,98 194,98 224,34 84,34\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"126\" y1=\"34\" x2=\"126\" y2=\"98\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><polyline points=\"126,88 136,88 136,98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"124\" y=\"116\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">17 mm</text><text x=\"134\" y=\"70\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5.3 mm</text></svg>"
+          }
         }
       ]
     },
@@ -9506,6 +9896,132 @@
             "number": "41",
             "napId": "NAP-37743"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the volume of the rectangular prism shown (\\(8\\text{ cm} \\times 4\\text{ cm} \\times 3\\text{ cm}\\)).",
+          "options": [
+            "\\(15\\text{ cm}^3\\)",
+            "\\(48\\text{ cm}^3\\)",
+            "\\(96\\text{ cm}^3\\)",
+            "\\(128\\text{ cm}^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Volume of a rectangular prism = length × width × height (8 × 4 × 3).",
+          "keyPoints": [
+            {
+              "text": "volume of the rectangular prism",
+              "note": "V = l × w × h."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the three perpendicular dimensions: length \\(8\\text{ cm}\\) (red), width \\(4\\text{ cm}\\) (green), and height \\(3\\text{ cm}\\) (blue).",
+              "work": "\\(l = 8, \\; w = 4, \\; h = 3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 175\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"56\" width=\"132\" height=\"68\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"64,56 96,32 228,32 196,56\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"196,56 228,32 228,100 196,124\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"96\" y1=\"32\" x2=\"96\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"96\" y1=\"100\" x2=\"228\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"64\" y1=\"124\" x2=\"96\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"96\" y1=\"32\" x2=\"228\" y2=\"32\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"64\" y1=\"56\" x2=\"64\" y2=\"124\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"196\" y1=\"124\" x2=\"228\" y2=\"100\" stroke=\"#16a34a\" stroke-width=\"3.6\"/><text x=\"162\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">8 cm</text><text x=\"54\" y=\"94\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">3 cm</text><text x=\"224\" y=\"122\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#15803d\">4 cm</text><text x=\"145\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Highlighted dimensions: 8 cm (red) × 4 cm (green) × 3 cm (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the volume formula: \\(V = l \\times w \\times h\\).",
+              "work": "\\(V = 8 \\times 4 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply step by step: \\(8 \\times 4 = 32\\), then \\(32 \\times 3 = 96\\text{ cm}^3\\).",
+              "work": "\\(V = 32 \\times 3 = 96\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Therefore, the volume is \\(96\\text{ cm}^3\\).",
+              "work": "\\(\\text{Answer: } 96\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 150\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"56\" width=\"132\" height=\"68\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"64,56 96,32 228,32 196,56\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"196,56 228,32 228,100 196,124\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"96\" y1=\"32\" x2=\"96\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"96\" y1=\"100\" x2=\"228\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><line x1=\"64\" y1=\"124\" x2=\"96\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,3\"/><text x=\"162\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">8 cm</text><text x=\"54\" y=\"94\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">3 cm</text><text x=\"224\" y=\"122\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">4 cm</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The dimensions of a swimming pool are \\(11\\text{ metres}\\) long, \\(4\\text{ metres}\\) wide, and \\(1.8\\text{ metres}\\) deep. Find its volume.",
+          "options": [
+            "\\(16.8\\text{ m}^3\\)",
+            "\\(44\\text{ m}^3\\)",
+            "\\(79.2\\text{ m}^3\\)",
+            "\\(88.2\\text{ m}^3\\)"
+          ],
+          "answer": 2,
+          "hint": "A rectangular swimming pool is a rectangular prism: Volume = length × width × depth = 11 × 4 × 1.8.",
+          "keyPoints": [
+            {
+              "text": "volume",
+              "note": "Multiply 11 m × 4 m × 1.8 m."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the volume formula for a rectangular prism: \\(V = l \\times w \\times d\\).",
+              "work": "\\(V = 11 \\times 4 \\times 1.8\\)"
+            },
+            {
+              "explain": "Multiply length by width first: \\(11 \\times 4 = 44\\text{ m}^2\\).",
+              "work": "\\(V = 44 \\times 1.8\\)"
+            },
+            {
+              "explain": "Multiply \\(44 \\times 1.8 = 79.2\\text{ m}^3\\).",
+              "work": "\\(V = 79.2\\text{ m}^3\\)"
+            },
+            {
+              "explain": "Therefore, the volume of the swimming pool is \\(79.2\\text{ m}^3\\).",
+              "work": "\\(\\text{Answer: } 79.2\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A swimming pool has a volume of \\(79.2\\text{ m}^3\\). Find its capacity in litres.",
+          "options": [
+            "\\(792\\text{ L}\\)",
+            "\\(7920\\text{ L}\\)",
+            "\\(79\\,200\\text{ L}\\)",
+            "\\(792\\,000\\text{ L}\\)"
+          ],
+          "answer": 2,
+          "hint": "Remember that 1 m³ = 1000 L (1 kL)! Multiply 79.2 by 1000.",
+          "keyPoints": [
+            {
+              "text": "capacity in litres",
+              "note": "1 m³ = 1000 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the metric conversion: \\(1\\text{ m}^3 = 1000\\text{ L}\\) (or \\(1\\text{ kL}\\)).",
+              "work": "\\(1\\text{ m}^3 = 1000\\text{ L}\\)"
+            },
+            {
+              "explain": "Multiply \\(79.2\\text{ m}^3\\) by \\(1000\\).",
+              "work": "\\(79.2 \\times 1000 = 79\\,200\\text{ L}\\)"
+            },
+            {
+              "explain": "Check by moving the decimal point \\(3\\) places right: \\(79.2 \\to 792 \\to 7920 \\to 79\\,200\\).",
+              "work": "\\(79\\,200\\text{ L}\\)"
+            },
+            {
+              "explain": "Therefore, the swimming pool holds \\(79\\,200\\text{ L}\\).",
+              "work": "\\(\\text{Answer: } 79\\,200\\text{ L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -10115,6 +10631,46 @@
             {
               "explain": "Combine to get \\(1540\\) in 24-hour time, which is \\(3:40\\text{ p.m.}\\).",
               "work": "\\(1540 \\text{ or } 3:40\\text{ p.m.}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s3-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(1\\text{ week}\\) to \\(\\text{hours}\\).",
+          "options": [
+            "\\(84\\text{ hours}\\)",
+            "\\(144\\text{ hours}\\)",
+            "\\(168\\text{ hours}\\)",
+            "\\(180\\text{ hours}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 7 days in 1 week and 24 hours in 1 day. Multiply 7 × 24.",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Use the exact metric/time conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the unit conversion relationship: \\(1\\text{ week} = 7\\text{ days}, \\; 1\\text{ day} = 24\\text{ hours}\\).",
+              "work": "\\(1\\text{ week} = 7\\text{ days}, \\; 1\\text{ day} = 24\\text{ hours}\\)"
+            },
+            {
+              "explain": "Apply the multiplication or division conversion factor.",
+              "work": "\\(7 \\times 24 = 168\\text{ hours}\\)"
+            },
+            {
+              "explain": "Check whether the answer should be larger or smaller than the starting number.",
+              "work": "\\(\\text{Verified: } 7 \\times 24 = 168\\text{ hours}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(168\\text{ hours}\\).",
+              "work": "\\(7 \\times 24 = 168\\text{ hours}\\)"
             }
           ],
           "timeLimit": 60,

@@ -999,6 +999,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(7 \\div a\\).",
+          "options": [
+            "\\(7a\\)",
+            "\\(\\dfrac{7}{a}\\)",
+            "\\(\\dfrac{a}{7}\\)",
+            "\\(7 - a\\)"
+          ],
+          "answer": 1,
+          "hint": "In algebra, division is written as a fraction with the first number on top and the divisor on the bottom.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Place the dividend \\(7\\) in the numerator.",
+              "work": "\\(7 \\div a\\)"
+            },
+            {
+              "explain": "Place the divisor \\(a\\) in the denominator to form \\(\\dfrac{7}{a}\\).",
+              "work": "\\(7 \\div a = \\dfrac{7}{a}\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(\\dfrac{7}{a}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(\\dfrac{7}{a}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{7}{a}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
