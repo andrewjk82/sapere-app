@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import { takePlanStart } from '../utils/planStart';
 import { getTopicQuestions } from '../services/contentLoader';
 import { DAILY_SET_QUESTIONS, DAILY_SET_TOPIC, HUB_PAGES, OPEN_DAILY_SET_KEY, dailySetToday, dailySetStorageId, dailySetFor, dailySetExamsFor, pickDailySet } from '../utils/examHub';
+import { isTestable } from '../utils/scholarshipTest';
 import ScholarshipTest from './ScholarshipTest';
 
 /**
@@ -71,7 +72,9 @@ const SpecialDailyCards = ({ profile }) => {
             initialResultId={todayAttempt ? todayAttempt.id : null}
             loadQuestions={() => Promise.all(plan.sections.map((s) => getTopicQuestions(s.topicId, { chapterId: openId })
               .then((qs) => (qs || []).map((q) => ({ ...q, _topicId: s.topicId })))))
-              .then((lists) => lists.flat())}
+              // Only questions the test screen can run: one teacher-marked question in the bank used to send the whole set to
+              // the topic practice screen, which has nothing to show for the daily set ("No practice questions yet").
+              .then((lists) => lists.flat().filter((q) => isTestable([q])))}
             pickQuestions={({ questions, state }) => {
               const doneSet = new Set(state.done.map(String));
               const set = pickDailySet({ examId: openId, questions, done: state.done, sections: plan.sections });

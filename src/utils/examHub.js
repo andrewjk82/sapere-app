@@ -322,6 +322,7 @@ export const DAILY_SOLO_QUESTIONS = {
   'sch-oc-english': 6, 'sch-oc-maths': 10, 'sch-oc-thinking': 10,
   'sch-selective-reading': 6, 'sch-selective-maths': 10, 'sch-selective-thinking': 10,
   'sch-acer-reading': 2, 'sch-acer-maths': 10,
+  'sch-acer-edutest-verbal': 10, 'sch-acer-edutest-numerical': 10, 'sch-acer-edutest-maths': 10, 'sch-acer-edutest-reading': 10,
 };
 
 /**
@@ -338,11 +339,13 @@ export const dailySetFor = (examId, profile) => {
   if (!topics.length) return null;
   return {
     label: base.label,
-    sections: topics.map((t) => ({
-      topicId: t.id,
-      name: MOCK_FORMATS[t.id]?.name || t.title,
-      want: Math.max(1, Math.round(DAILY_SOLO_QUESTIONS[t.id] / topics.length)),
-    })),
+    sections: topics.map((t, i) => {
+      // Shares add up to the day's total: 10 over 3 subjects is 4 + 3 + 3, not 3 + 3 + 3.
+      const total = Math.max(...topics.map((x) => DAILY_SOLO_QUESTIONS[x.id]));
+      const base = Math.floor(DAILY_SOLO_QUESTIONS[t.id] / topics.length);
+      const extra = i < (total % topics.length) && DAILY_SOLO_QUESTIONS[t.id] === total ? 1 : 0;
+      return { topicId: t.id, name: MOCK_FORMATS[t.id]?.name || t.title, want: Math.max(1, base + extra) };
+    }),
   };
 };
 
