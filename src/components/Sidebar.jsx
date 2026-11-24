@@ -23,6 +23,7 @@ import {
   Shuffle,
   ListChecks,
   Target,
+  MoreHorizontal,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
@@ -67,12 +68,71 @@ const SidebarItem = ({ icon: Icon, label, active, onClick, disabled, badge }) =>
   </button>
 );
 
+// Phone menu for students: a floating pill dock with 4 main pages + More (sheet with everything else).
+const PhoneDock = ({ activeTab, setActiveTab, isLocked, profile, onShowLeaderboard, onShowNotifs, unreadCount, logout }) => {
+  const [moreOpen, setMoreOpen] = useState(false);
+  const main = [
+    { tab: 'Dashboard', label: 'Home', Icon: LayoutDashboard },
+    { tab: 'Challenge', label: 'Study', Icon: Trophy },
+    { tab: 'TimesTableSprint', label: 'Challenge', Icon: Timer },
+    { tab: 'StudyTimer', label: 'Planner', Icon: Clock },
+  ];
+  const more = [
+    { tab: 'Schedule', label: 'Schedule', Icon: Calendar },
+    ...(profile?.examPrepEnabled === true ? [{ tab: 'ExamPrep', label: 'Exam Prep', Icon: GraduationCap }] : []),
+    ...hubExamsFor(profile).map((examId) => ({ tab: HUB_PAGES[examId].tab, label: HUB_PAGES[examId].label, Icon: examId === 'sch-acer' ? Award : Target })),
+    { tab: 'Curriculum', label: 'Curriculum', Icon: BookOpen },
+    { tab: 'Library', label: 'Library', Icon: BookMarked },
+    { tab: 'Settings', label: 'Settings', Icon: Settings },
+  ];
+  const mainTabs = main.map((m) => m.tab);
+  const moreActive = !mainTabs.includes(activeTab);
+  const go = (tab) => { setMoreOpen(false); if (!isLocked || tab === activeTab) setActiveTab(tab); };
+  return (
+    <>
+      <nav className="phone-dock" aria-label="Main menu">
+        {main.map(({ tab, label, Icon }) => (
+          <button key={tab} type="button" aria-label={label} title={label} disabled={isLocked && activeTab !== tab}
+            className={`phone-dock__item${activeTab === tab ? ' is-active' : ''}`} onClick={() => go(tab)}>
+            <Icon size={22} />{activeTab === tab && <span>{label}</span>}
+          </button>
+        ))}
+        <button type="button" aria-label="More" title="More" className={`phone-dock__item${moreActive || moreOpen ? ' is-active' : ''}`} onClick={() => setMoreOpen((o) => !o)}>
+          <MoreHorizontal size={22} />{(moreActive || moreOpen) && <span>More</span>}
+        </button>
+      </nav>
+      {moreOpen && (
+        <>
+          <div className="phone-sheet__backdrop" onClick={() => setMoreOpen(false)} />
+          <div className="phone-sheet" role="dialog" aria-label="More">
+            <div className="phone-sheet__grip" />
+            <b className="phone-sheet__title">More</b>
+            <div className="phone-sheet__grid">
+              {more.map(({ tab, label, Icon }) => (
+                <button key={tab} type="button" className={`phone-sheet__item${activeTab === tab ? ' is-active' : ''}`} onClick={() => go(tab)}>
+                  <Icon size={24} /><span>{label}</span>
+                </button>
+              ))}
+            </div>
+            <div className="phone-sheet__row">
+              {onShowLeaderboard && <button type="button" onClick={() => { setMoreOpen(false); onShowLeaderboard(); }}><Trophy size={18} /> Leaderboard</button>}
+              {onShowNotifs && <button type="button" onClick={() => { setMoreOpen(false); onShowNotifs(); }}><Bell size={18} /> Notifications{unreadCount > 0 ? ` (${unreadCount})` : ''}</button>}
+              <button type="button" onClick={logout}><LogOut size={18} /> Sign out</button>
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+};
+
 const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowNotifs, unreadCount = 0 }) => {
   const { user, isAdmin, logout } = useAuth();
   const { gradingCount, reportCount } = useAdminFeed();
   const [avatarOpen, setAvatarOpen] = useState(false);
   const { profile } = useProfile();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+  const [isPhone, setIsPhone] = useState(window.innerWidth <= 720);
   // The student dock: tell the page CSS (no :has(), which some iPad/Safari versions ignore).
   useEffect(() => {
     document.documentElement.classList.toggle('has-dock', !isAdmin);
@@ -80,7 +140,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
   }, [isAdmin]);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 1024);
+    const handleResize = () => { setIsMobile(window.innerWidth <= 1024); setIsPhone(window.innerWidth <= 720); };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -95,6 +155,10 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
   const avatarUrl = profile?.avatarUrl || (profile?.avatarStyle && profile?.avatarSeed
     ? `https://api.dicebear.com/7.x/${profile.avatarStyle}/svg?seed=${encodeURIComponent(profile.avatarSeed)}`
     : fallbackUrl);
+
+  if (!isAdmin && isPhone) {
+    return <PhoneDock activeTab={activeTab} setActiveTab={setActiveTab} isLocked={isLocked} profile={profile} onShowLeaderboard={onShowLeaderboard} onShowNotifs={onShowNotifs} unreadCount={unreadCount} logout={logout} />;
+  }
 
   return (
     <aside className={`app-sidebar${isAdmin ? '' : ' app-sidebar--dock'}`}>

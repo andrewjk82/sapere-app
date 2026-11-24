@@ -43,21 +43,21 @@ const liftHover = {
 
 // Student "Today's plan": one equal-size tile per task. Finished = green + check, the next unfinished one gets a purple
 // ring, tasks that are not once-a-day (done === null, e.g. Exam Prep) stay neutral.
-const TodayPlanCard = ({ items, children }) => {
+const TodayPlanCard = ({ items, children, compact = false }) => {
   const tracked = items.filter((i) => i.done !== null);
   const doneCount = tracked.filter((i) => i.done).length;
   const pct = tracked.length ? Math.round((doneCount / tracked.length) * 100) : 0;
   const nextKey = (items.find((i) => i.done === false) || {}).key;
   return (
     <div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '14px', flexWrap: 'wrap' }}>
-        <h2 style={{ margin: 0, fontFamily: "'Poppins', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: '#0f172a' }}>Today&apos;s plan</h2>
-        <div style={{ flex: '1 1 160px', height: 8, borderRadius: 999, background: '#eef2ff', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: compact ? '10px' : '16px', marginBottom: '14px', flexWrap: compact ? 'nowrap' : 'wrap' }}>
+        <h2 style={{ margin: 0, fontFamily: "'Poppins', sans-serif", fontSize: compact ? '1.1rem' : '1.4rem', whiteSpace: 'nowrap', fontWeight: 800, color: '#0f172a' }}>Today&apos;s plan</h2>
+        <div style={{ flex: compact ? '1 1 40px' : '1 1 160px', height: 8, borderRadius: 999, background: '#eef2ff', overflow: 'hidden' }}>
           <div style={{ width: `${pct}%`, height: '100%', background: '#4f46e5', borderRadius: 999, transition: 'width 0.35s ease' }} />
         </div>
-        <span style={{ fontSize: '0.95rem', fontWeight: 700, color: '#475569' }}>{doneCount} of {tracked.length} done</span>
+        <span style={{ fontSize: compact ? '0.78rem' : '0.95rem', fontWeight: 700, color: '#475569', whiteSpace: 'nowrap' }}>{doneCount} of {tracked.length} done</span>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '14px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: compact ? 'repeat(2, minmax(0, 1fr))' : 'repeat(auto-fill, minmax(210px, 1fr))', gap: compact ? '10px' : '14px' }}>
         {items.map(({ key, icon: Icon, title, sub, cta, done, onClick }) => {
           const isDone = done === true;
           const isNext = key === nextKey;
@@ -68,8 +68,8 @@ const TodayPlanCard = ({ items, children }) => {
               onClick={onClick}
               {...liftHover}
               style={{
-                position: 'relative', textAlign: 'left', cursor: 'pointer', minHeight: 150, boxSizing: 'border-box',
-                padding: '16px 18px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: 4,
+                position: 'relative', textAlign: 'left', cursor: 'pointer', minHeight: compact ? 118 : 150, boxSizing: 'border-box',
+                padding: compact ? '12px 14px' : '16px 18px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: 4,
                 background: isDone ? '#ecfdf5' : '#ffffff',
                 border: isDone ? '2px solid #a7f3d0' : (isNext ? '2px solid #4f46e5' : '1px solid #f1f5f9'),
                 boxShadow: isDone ? 'none' : (isNext ? '0 0 0 3px rgba(79,70,229,0.18), 0 10px 24px rgba(0,0,0,0.06)' : '0 10px 24px rgba(0,0,0,0.06)'),
@@ -557,33 +557,33 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         className="app-page"
       >
         {!isAdmin && (
-          <header style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '16px' : '24px', margin: isMobile ? '0 0 16px' : '0 0 24px' }}>
+          <header style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '12px' : '24px', margin: isMobile ? '0 0 12px' : '0 0 24px' }}>
             <img
               src={profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=600'}
               alt="My dream"
-              style={{ width: isMobile ? 88 : 128, height: isMobile ? 88 : 128, objectFit: 'cover', objectPosition: 'center top', borderRadius: isMobile ? '22px' : '28px', flexShrink: 0, boxShadow: '0 10px 30px rgba(15,23,42,0.15)' }}
+              style={{ width: isMobile ? 56 : 128, height: isMobile ? 56 : 128, objectFit: 'cover', objectPosition: 'center top', borderRadius: isMobile ? '18px' : '28px', flexShrink: 0, boxShadow: '0 10px 30px rgba(15,23,42,0.15)' }}
             />
             <div style={{ minWidth: 0 }}>
-              <div style={{ fontSize: isMobile ? '0.75rem' : '0.85rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#475569' }}>{getGreeting()}</div>
-              <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '1.9rem' : '2.6rem', fontWeight: 900, margin: '2px 0 0', lineHeight: 1.1, color: '#0f172a', letterSpacing: '-0.02em', overflowWrap: 'anywhere' }}>
+              <div style={{ fontSize: isMobile ? '0.65rem' : '0.85rem', fontWeight: 700, letterSpacing: isMobile ? '0.08em' : '0.14em', textTransform: 'uppercase', color: '#475569', whiteSpace: 'nowrap' }}>{getGreeting()}</div>
+              <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '1.5rem' : '2.6rem', fontWeight: 900, margin: '2px 0 0', lineHeight: 1.1, color: '#0f172a', letterSpacing: '-0.02em', overflowWrap: 'anywhere' }}>
                 {userName}
               </h1>
             </div>
-            <div style={{ marginLeft: 'auto', display: 'flex', gap: isMobile ? 8 : 14, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
-              <div title="Consecutive days of Daily Practice" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: isMobile ? '8px 14px' : '12px 22px', borderRadius: 999, background: '#fff7ed', border: '2px solid #fdba74' }}>
+            <div style={{ marginLeft: 'auto', display: 'flex', gap: isMobile ? 6 : 14, flexDirection: 'row', flexWrap: 'nowrap', justifyContent: 'flex-end' }}>
+              <div title="Consecutive days of Daily Practice" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: isMobile ? '6px 10px' : '12px 22px', borderRadius: 999, background: '#fff7ed', border: '2px solid #fdba74' }}>
                 <span style={{ fontSize: isMobile ? '1.3rem' : '1.7rem', lineHeight: 1 }} aria-hidden="true">🔥</span>
                 <div>
-                  <div style={{ fontWeight: 900, fontSize: isMobile ? '1.1rem' : '1.5rem', lineHeight: 1, color: '#c2410c' }}>
-                    {practiceStreak > 0 ? `${practiceStreak} day${practiceStreak === 1 ? '' : 's'}` : 'Start today'}
+                  <div style={{ fontWeight: 900, fontSize: isMobile ? '0.9rem' : '1.5rem', lineHeight: 1, color: '#c2410c' }}>
+                    {isMobile ? practiceStreak : (practiceStreak > 0 ? `${practiceStreak} day${practiceStreak === 1 ? '' : 's'}` : 'Start today')}
                   </div>
-                  <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', color: '#c2410c' }}>STREAK</div>
+                  <div style={{ display: isMobile ? 'none' : 'block', fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', color: '#c2410c' }}>STREAK</div>
                 </div>
               </div>
-              <div title="Total XP" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: isMobile ? '8px 14px' : '12px 22px', borderRadius: 999, background: '#fffbeb', border: '2px solid #fcd34d' }}>
+              <div title="Total XP" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: isMobile ? '6px 10px' : '12px 22px', borderRadius: 999, background: '#fffbeb', border: '2px solid #fcd34d' }}>
                 <span style={{ fontSize: isMobile ? '1.3rem' : '1.7rem', lineHeight: 1 }} aria-hidden="true">⭐</span>
                 <div>
-                  <div style={{ fontWeight: 900, fontSize: isMobile ? '1.1rem' : '1.5rem', lineHeight: 1, color: '#92400e' }}>{(Number(profile?.totalXP) || 0).toLocaleString()}</div>
-                  <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', color: '#92400e' }}>XP</div>
+                  <div style={{ fontWeight: 900, fontSize: isMobile ? '0.9rem' : '1.5rem', lineHeight: 1, color: '#92400e' }}>{(Number(profile?.totalXP) || 0).toLocaleString()}</div>
+                  <div style={{ display: isMobile ? 'none' : 'block', fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', color: '#92400e' }}>XP</div>
                 </div>
               </div>
             </div>
@@ -592,7 +592,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
         {!isAdmin && (
           <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
             <div style={{ gridColumn: '1 / -1' }}>
-              <TodayPlanCard items={todayPlan}><OnlineStudySessionCard /></TodayPlanCard>
+              <TodayPlanCard items={todayPlan} compact={isMobile}><OnlineStudySessionCard /></TodayPlanCard>
             </div>
             <div style={{ gridColumn: '1 / -1', display: 'grid', gridTemplateColumns: isMobile ? 'minmax(0, 1fr)' : 'repeat(auto-fit, minmax(300px, 1fr))', gap: isMobile ? '16px' : '20px', alignItems: 'start', padding: 0 }}>
               {/* Journey Map snapshot */}
