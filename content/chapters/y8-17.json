@@ -1822,6 +1822,46 @@
               21
             ]
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s3-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(S = ut + \\dfrac{1}{2}at^2\\), find \\(S\\) when \\(u = -4\\), \\(t = 3\\), and \\(a = 10\\).",
+          "options": [
+            "\\(S = 3\\)",
+            "\\(S = 33\\)",
+            "\\(S = 57\\)",
+            "\\(S = 18\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute u = -4, t = 3, a = 10 carefully. Square t first (3^2 = 9), then multiply each term before adding!",
+          "keyPoints": [
+            {
+              "text": "u = -4",
+              "note": "Keep the negative sign on u when computing ut = (-4)(3) = -12."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(u = -4\\), \\(t = 3\\), and \\(a = 10\\) into the formula.",
+              "work": "\\(S = (-4)(3) + \\dfrac{1}{2}(10)(3)^2\\)"
+            },
+            {
+              "explain": "Evaluate the exponent first: \\(3^2 = 9\\).",
+              "work": "\\(S = (-4)(3) + \\dfrac{1}{2}(10)(9)\\)"
+            },
+            {
+              "explain": "Multiply each term: \\((-4)(3) = -12\\) and \\(\\dfrac{1}{2} \\times 10 \\times 9 = 5 \\times 9 = 45\\).",
+              "work": "\\(S = -12 + 45\\)"
+            },
+            {
+              "explain": "Add the two terms: \\(-12 + 45 = 33\\).",
+              "work": "\\(S = 33\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

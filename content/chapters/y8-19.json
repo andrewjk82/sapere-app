@@ -1838,6 +1838,636 @@
             "part": "10(b)",
             "origin": "exam-import"
           }
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the variable \"Daily temperature\" as categorical, discrete numerical, or continuous numerical.",
+          "options": [
+            "Categorical",
+            "Discrete numerical",
+            "Continuous numerical",
+            "Bivariate categorical"
+          ],
+          "answer": 2,
+          "hint": "Ask: is it words/labels (categorical), countable separate numbers (discrete numerical), or measured on a continuous scale with decimals (continuous numerical)?",
+          "keyPoints": [
+            {
+              "text": "Daily temperature",
+              "note": "Measured quantities are continuous; counted/stepped numbers are discrete."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine whether \"Daily temperature\" produces words/categories or numbers.",
+              "work": "\\(\\text{Produces numerical values}\\)"
+            },
+            {
+              "explain": "Check whether the numerical values are counted/stepped (discrete) or measured on a continuous scale (continuous).",
+              "work": "\\(\\text{Type: Continuous numerical}\\)"
+            },
+            {
+              "explain": "Temperature is measured on a continuous scale and can take any decimal value (e.g. 21.4 °C).",
+              "work": "\\(\\text{Verified}\\)"
+            },
+            {
+              "explain": "Therefore, \"Daily temperature\" is continuous numerical.",
+              "work": "\\(\\text{Answer: Continuous numerical}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q1ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the variable \"Types of coins in a purse (by coin denomination/value)\" as categorical, discrete numerical, or continuous numerical.",
+          "options": [
+            "Categorical",
+            "Discrete numerical",
+            "Continuous numerical",
+            "Bivariate categorical"
+          ],
+          "answer": 1,
+          "hint": "Ask: is it words/labels (categorical), countable separate numbers (discrete numerical), or measured on a continuous scale with decimals (continuous numerical)?",
+          "keyPoints": [
+            {
+              "text": "Types of coins in a purse (by coin denomination/value)",
+              "note": "Measured quantities are continuous; counted/stepped numbers are discrete."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine whether \"Types of coins in a purse (by coin denomination/value)\" produces words/categories or numbers.",
+              "work": "\\(\\text{Produces numerical values}\\)"
+            },
+            {
+              "explain": "Check whether the numerical values are counted/stepped (discrete) or measured on a continuous scale (continuous).",
+              "work": "\\(\\text{Type: Discrete numerical}\\)"
+            },
+            {
+              "explain": "Coin values take specific separate numerical values (5c, 10c, 20c, 50c, $1, $2) with no values in between.",
+              "work": "\\(\\text{Verified}\\)"
+            },
+            {
+              "explain": "Therefore, \"Types of coins in a purse (by coin denomination/value)\" is discrete numerical.",
+              "work": "\\(\\text{Answer: Discrete numerical}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q1iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the variable \"Energy star ratings of air conditioners\" as categorical, discrete numerical, or continuous numerical.",
+          "options": [
+            "Categorical",
+            "Discrete numerical",
+            "Continuous numerical",
+            "Bivariate categorical"
+          ],
+          "answer": 1,
+          "hint": "Ask: is it words/labels (categorical), countable separate numbers (discrete numerical), or measured on a continuous scale with decimals (continuous numerical)?",
+          "keyPoints": [
+            {
+              "text": "Energy star ratings of air conditioners",
+              "note": "Measured quantities are continuous; counted/stepped numbers are discrete."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine whether \"Energy star ratings of air conditioners\" produces words/categories or numbers.",
+              "work": "\\(\\text{Produces numerical values}\\)"
+            },
+            {
+              "explain": "Check whether the numerical values are counted/stepped (discrete) or measured on a continuous scale (continuous).",
+              "work": "\\(\\text{Type: Discrete numerical}\\)"
+            },
+            {
+              "explain": "Star ratings take distinct countable steps (e.g. 1, 2, 3, 4, 5 stars) rather than any continuous measurement.",
+              "work": "\\(\\text{Verified}\\)"
+            },
+            {
+              "explain": "Therefore, \"Energy star ratings of air conditioners\" is discrete numerical.",
+              "work": "\\(\\text{Answer: Discrete numerical}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q1iv",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the variable \"Length of metal bars\" as categorical, discrete numerical, or continuous numerical.",
+          "options": [
+            "Categorical",
+            "Discrete numerical",
+            "Continuous numerical",
+            "Bivariate categorical"
+          ],
+          "answer": 2,
+          "hint": "Ask: is it words/labels (categorical), countable separate numbers (discrete numerical), or measured on a continuous scale with decimals (continuous numerical)?",
+          "keyPoints": [
+            {
+              "text": "Length of metal bars",
+              "note": "Measured quantities are continuous; counted/stepped numbers are discrete."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine whether \"Length of metal bars\" produces words/categories or numbers.",
+              "work": "\\(\\text{Produces numerical values}\\)"
+            },
+            {
+              "explain": "Check whether the numerical values are counted/stepped (discrete) or measured on a continuous scale (continuous).",
+              "work": "\\(\\text{Type: Continuous numerical}\\)"
+            },
+            {
+              "explain": "Length is measured on a continuous scale and can take any decimal value depending on measuring accuracy.",
+              "work": "\\(\\text{Verified}\\)"
+            },
+            {
+              "explain": "Therefore, \"Length of metal bars\" is continuous numerical.",
+              "work": "\\(\\text{Answer: Continuous numerical}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "This sector graph shows the area of crops planted in a particular region. The angle of the sector for Oats is \\(72^\\circ\\). What percentage of the crop area is oats?",
+          "options": [
+            "\\(15\\%\\)",
+            "\\(20\\%\\)",
+            "\\(25\\%\\)",
+            "\\(72\\%\\)"
+          ],
+          "answer": 1,
+          "hint": "A full circle has 360°. Divide 72° by 360° and multiply by 100%!",
+          "keyPoints": [
+            {
+              "text": "72^\\circ",
+              "note": "Percentage = (Sector angle ÷ 360°) × 100%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall that a full circle (sector graph) totals \\(360^\\circ\\), and the highlighted Oats sector is \\(72^\\circ\\).",
+              "work": "\\(\\text{Fraction} = \\dfrac{72^\\circ}{360^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 215\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"215\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 140 92 L 157.9 163.8 A 74 74 0 1 1 140.0 18.0 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 210.4 69.1 A 74 74 0 0 1 157.9 163.8 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 140.0 18.0 A 74 74 0 0 1 210.4 69.1 Z\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><path d=\"M 140 70 A 22 22 0 0 1 160.9 85.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"162\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">72°</text><text x=\"106\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Wheat</text><text x=\"170\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#b91c1c\">Oats</text><text x=\"174\" y=\"120\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Barley</text><text x=\"140\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Highlighted Oats sector = 72° out of 360°</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify the fraction: \\(\\dfrac{72}{360} = \\dfrac{1}{5} = 0.2\\).",
+              "work": "\\(\\dfrac{72}{360} = \\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Multiply by \\(100\\%\\) to convert to a percentage: \\(\\dfrac{1}{5} \\times 100\\% = 20\\%\\).",
+              "work": "\\(\\dfrac{72}{360} \\times 100\\% = 20\\%\\)"
+            },
+            {
+              "explain": "Therefore, \\(20\\%\\) of the crop area is oats.",
+              "work": "\\(\\text{Answer: } 20\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 190\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 140 92 L 157.9 163.8 A 74 74 0 1 1 140.0 18.0 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 210.4 69.1 A 74 74 0 0 1 157.9 163.8 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 140.0 18.0 A 74 74 0 0 1 210.4 69.1 Z\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"106\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Wheat</text><text x=\"170\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Oats</text><text x=\"174\" y=\"120\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Barley</text></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q2ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In this sector graph, Oats has a sector angle of \\(72^\\circ\\) (\\(20\\%\\) of the crop area). Find the area planted with oats if the total area is \\(300\\,000\\text{ hectares}\\).",
+          "options": [
+            "\\(30\\,000\\text{ hectares}\\)",
+            "\\(60\\,000\\text{ hectares}\\)",
+            "\\(72\\,000\\text{ hectares}\\)",
+            "\\(150\\,000\\text{ hectares}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find 20% of 300 000 hectares by multiplying 300 000 × 0.2 (or dividing by 5).",
+          "keyPoints": [
+            {
+              "text": "300\\,000\\text{ hectares}",
+              "note": "Oats area = 20% × 300 000."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the percentage of Oats from the \\(72^\\circ\\) sector: \\(20\\% = 0.2\\).",
+              "work": "\\(20\\% = 0.2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 215\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"215\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 140 92 L 157.9 163.8 A 74 74 0 1 1 140.0 18.0 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 210.4 69.1 A 74 74 0 0 1 157.9 163.8 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 140.0 18.0 A 74 74 0 0 1 210.4 69.1 Z\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><path d=\"M 140 70 A 22 22 0 0 1 160.9 85.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"162\" y=\"74\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">72°</text><text x=\"106\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Wheat</text><text x=\"170\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#b91c1c\">Oats</text><text x=\"174\" y=\"120\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Barley</text><text x=\"140\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Oats = 20% of 300 000 hectares = 60 000 hectares</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the total area (\\(300\\,000\\text{ hectares}\\)) by \\(0.2\\).",
+              "work": "\\(300\\,000 \\times 0.2\\)"
+            },
+            {
+              "explain": "Calculate the product: \\(300\\,000 \\times 0.2 = 60\\,000\\text{ hectares}\\).",
+              "work": "\\(60\\,000\\text{ hectares}\\)"
+            },
+            {
+              "explain": "Therefore, \\(60\\,000\\text{ hectares}\\) are planted with oats.",
+              "work": "\\(\\text{Answer: } 60\\,000\\text{ hectares}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 190\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 140 92 L 157.9 163.8 A 74 74 0 1 1 140.0 18.0 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 210.4 69.1 A 74 74 0 0 1 157.9 163.8 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M 140 92 L 140.0 18.0 A 74 74 0 0 1 210.4 69.1 Z\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"106\" y=\"88\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Wheat</text><text x=\"170\" y=\"58\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Oats</text><text x=\"174\" y=\"120\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">Barley</text></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q3ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the data set: \\(0, 4, 2, 9, 3, 7, 3, 12\\). State the range.",
+          "options": [
+            "\\(10\\)",
+            "\\(12\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Range = Maximum - Minimum. Remember 0 is part of the data set!",
+          "keyPoints": [
+            {
+              "text": "range",
+              "note": "Range = Highest value (12) - Lowest value (0)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the largest value in the data set: \\(12\\).",
+              "work": "\\(\\text{Maximum} = 12\\)"
+            },
+            {
+              "explain": "Identify the smallest value in the data set: \\(0\\).",
+              "work": "\\(\\text{Minimum} = 0\\)"
+            },
+            {
+              "explain": "Subtract minimum from maximum: \\(12 - 0 = 12\\).",
+              "work": "\\(\\text{Range} = 12 - 0 = 12\\)"
+            },
+            {
+              "explain": "Therefore, the range is \\(12\\).",
+              "work": "\\(\\text{Answer: } 12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q3aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the data set: \\(0, 4, 2, 9, 3, 7, 3, 12\\). State the mean.",
+          "options": [
+            "\\(3.5\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(5.7\\)"
+          ],
+          "answer": 2,
+          "hint": "Add all 8 numbers (do NOT forget to include 0 in the count of 8 numbers!) and divide the sum by 8.",
+          "keyPoints": [
+            {
+              "text": "mean",
+              "note": "Count 0 as one of the 8 data values: Mean = Sum ÷ 8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the total number of values (including \\(0\\)): \\(n = 8\\).",
+              "work": "\\(n = 8\\)"
+            },
+            {
+              "explain": "Add all \\(8\\) values together: \\(0 + 4 + 2 + 9 + 3 + 7 + 3 + 12 = 40\\).",
+              "work": "\\(\\Sigma x = 40\\)"
+            },
+            {
+              "explain": "Divide the sum by \\(8\\): \\(\\bar{x} = \\dfrac{40}{8} = 5\\).",
+              "work": "\\(\\bar{x} = \\dfrac{40}{8} = 5\\)"
+            },
+            {
+              "explain": "Therefore, the mean is \\(5\\).",
+              "work": "\\(\\text{Answer: } 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q3aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the data set: \\(0, 4, 2, 9, 3, 7, 3, 12\\). State the median.",
+          "options": [
+            "\\(3\\)",
+            "\\(3.5\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Sort the 8 numbers from smallest to largest first! With 8 values, average the 4th and 5th values.",
+          "keyPoints": [
+            {
+              "text": "median",
+              "note": "Sort first: 0, 2, 3, 3, 4, 7, 9, 12 -> average 4th and 5th."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Arrange all \\(8\\) numbers in ascending order.",
+              "work": "\\(0, 2, 3, 3, 4, 7, 9, 12\\)"
+            },
+            {
+              "explain": "Since \\(n = 8\\) is even, identify the two middle values (4th and 5th): \\(3\\) and \\(4\\).",
+              "work": "\\(\\text{4th} = 3, \\quad \\text{5th} = 4\\)"
+            },
+            {
+              "explain": "Find the average of \\(3\\) and \\(4\\): \\(\\dfrac{3 + 4}{2} = \\dfrac{7}{2} = 3.5\\).",
+              "work": "\\(\\text{Median} = \\dfrac{3 + 4}{2} = 3.5\\)"
+            },
+            {
+              "explain": "Therefore, the median is \\(3.5\\).",
+              "work": "\\(\\text{Answer: } 3.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q3aiv",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Consider the data set: \\(0, 4, 2, 9, 3, 7, 3, 12\\). State the mode.",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "No mode"
+          ],
+          "answer": 1,
+          "hint": "The mode is the number that appears most frequently in the list.",
+          "keyPoints": [
+            {
+              "text": "mode",
+              "note": "Look for the value that occurs more than once."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the frequency of each value in \\(0, 2, 3, 3, 4, 7, 9, 12\\).",
+              "work": "\\(3\\text{ appears twice; all others appear once}\\)"
+            },
+            {
+              "explain": "Identify the most frequent value: \\(3\\).",
+              "work": "\\(\\text{Mode} = 3\\)"
+            },
+            {
+              "explain": "Confirm no other value repeats.",
+              "work": "\\(\\text{Verified: } 3\\)"
+            },
+            {
+              "explain": "Therefore, the mode is \\(3\\).",
+              "work": "\\(\\text{Answer: } 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q3bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Zoe scored the following marks out of \\(10\\) in six topic tests in Mathematics: \\(4, 5, 2, 5, 5, 3\\). The teacher reported that Zoe's average mark was \\(4\\), but Zoe said her average was \\(5\\). Which measures of central tendency have the teacher and Zoe used?",
+          "options": [
+            "Teacher used the mean (4); Zoe used the mode (5).",
+            "Teacher used the median (4); Zoe used the mean (5).",
+            "Teacher used the mode (4); Zoe used the median (5).",
+            "Teacher used the range (4); Zoe used the mode (5)."
+          ],
+          "answer": 0,
+          "hint": "Calculate all three measures for 2, 3, 4, 5, 5, 5: mean = sum ÷ 6, median = average of 3rd & 4th, mode = most frequent.",
+          "keyPoints": [
+            {
+              "text": "teacher and Zoe used",
+              "note": "Compute mean, median, and mode for 2, 3, 4, 5, 5, 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Sort Zoe's \\(6\\) marks in ascending order: \\(2, 3, 4, 5, 5, 5\\).",
+              "work": "\\(2, 3, 4, 5, 5, 5\\)"
+            },
+            {
+              "explain": "Calculate the mean: \\(\\dfrac{2 + 3 + 4 + 5 + 5 + 5}{6} = \\dfrac{24}{6} = 4\\) (this is what the teacher reported).",
+              "work": "\\(\\text{Mean} = \\dfrac{24}{6} = 4\\)"
+            },
+            {
+              "explain": "Find the median (\\(\\dfrac{4 + 5}{2} = 4.5\\)) and the mode (\\(5\\), appearing three times — this is what Zoe reported).",
+              "work": "\\(\\text{Median} = 4.5, \\quad \\text{Mode} = 5\\)"
+            },
+            {
+              "explain": "Therefore, the teacher used the mean (\\(4\\)) and Zoe used the mode (\\(5\\)).",
+              "work": "\\(\\text{Teacher: Mean, Zoe: Mode}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q3bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Zoe's six Mathematics test marks are \\(2, 3, 4, 5, 5, 5\\) (mean \\(= 4\\), median \\(= 4.5\\), mode \\(= 5\\)). Which measure of central tendency is most representative of this data, and why?",
+          "options": [
+            "The median (4.5), because 50% of the marks are above it and 50% are below it, whereas the mode (5) is the highest mark.",
+            "The mode (5), because it is the highest mark she achieved.",
+            "The range (3), because it shows the spread of all marks.",
+            "None of them can be calculated for six marks."
+          ],
+          "answer": 0,
+          "hint": "Compare how well 4.5 (median) represents the middle of 2, 3, 4, 5, 5, 5 compared to the mode 5 (which is the maximum score!).",
+          "keyPoints": [
+            {
+              "text": "most representative",
+              "note": "The mode (5) sits at the very top end; the median (4.5) splits the scores 50% / 50%."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Review the three measures for \\(2, 3, 4, 5, 5, 5\\): mean \\(= 4\\), median \\(= 4.5\\), mode \\(= 5\\).",
+              "work": "\\(\\text{Mean} = 4, \\; \\text{Median} = 4.5, \\; \\text{Mode} = 5\\)"
+            },
+            {
+              "explain": "Notice why the mode (\\(5\\)) is misleading: \\(5\\) is Zoe's highest possible score and ignores the lower half (\\(2, 3, 4\\)).",
+              "work": "\\(\\text{Mode } 5 \\text{ ignores } 50\\% \\text{ of scores}\\)"
+            },
+            {
+              "explain": "The median (\\(4.5\\)) sits right in the middle, with \\(50\\%\\) of her marks above (\\(5, 5, 5\\)) and \\(50\\%\\) below (\\(2, 3, 4\\)).",
+              "work": "\\(\\text{Median} = 4.5 \\; (50\\%\\text{ above, } 50\\%\\text{ below})\\)"
+            },
+            {
+              "explain": "Therefore, the median (\\(4.5\\)) is the most representative measure of Zoe's data.",
+              "work": "\\(\\text{Answer: Median (4.5)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q4i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Some students were asked how many hours of study they did before their yearly maths exam. Using the tally table shown, what are the correct frequencies for \\(0, 1, 2, 3, 4\\) hours?",
+          "options": [
+            "2, 5, 3, 3, 8",
+            "2, 6, 3, 3, 8",
+            "2, 6, 3, 3, 7",
+            "2, 6, 2, 3, 8"
+          ],
+          "answer": 1,
+          "hint": "Each crossed bundle of tallies equals 5! Count carefully: 0 hours = ||, 1 hour = 5 + 1, 2 hours = |||, 3 hours = |||, 4 hours = 5 + 3.",
+          "keyPoints": [
+            {
+              "text": "correct frequencies",
+              "note": "A crossed tally bundle represents 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count each tally column: \\(0\\text{ h} = 2\\), \\(1\\text{ h} = 5 + 1 = 6\\), \\(2\\text{ h} = 3\\), \\(3\\text{ h} = 3\\), and \\(4\\text{ h} = 5 + 3 = 8\\).",
+              "work": "\\(2, 6, 3, 3, 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 132\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"129\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">2</text><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"191\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">6</text><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"253\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"315\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"377\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">8</text><text x=\"210\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Completed frequency row: 2, 6, 3, 3, 8</text></svg>"
+              }
+            },
+            {
+              "explain": "Double-check the crossed bundles: \\(1\\text{ hour}\\) has one bundle (\\(5\\)) plus \\(1 = 6\\).",
+              "work": "\\(5 + 1 = 6\\)"
+            },
+            {
+              "explain": "Double-check \\(4\\text{ hours}\\): one bundle (\\(5\\)) plus \\(3 = 8\\).",
+              "work": "\\(5 + 3 = 8\\)"
+            },
+            {
+              "explain": "Therefore, the frequencies are \\(2, 6, 3, 3, 8\\).",
+              "work": "\\(\\text{Answer: } 2, 6, 3, 3, 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 108\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"108\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q4ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Some students were asked how many hours of study they did before their yearly maths exam (tally table shown). How many students are in the class?",
+          "options": [
+            "\\(20\\)",
+            "\\(21\\)",
+            "\\(22\\)",
+            "\\(24\\)"
+          ],
+          "answer": 2,
+          "hint": "Add all five frequencies together: 2 + 6 + 3 + 3 + 8.",
+          "keyPoints": [
+            {
+              "text": "How many students",
+              "note": "Total students = sum of all frequencies."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the five frequencies from the tally table: \\(2, 6, 3, 3,\\) and \\(8\\).",
+              "work": "\\(\\text{Frequencies: } 2, 6, 3, 3, 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 132\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"129\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">2</text><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"191\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">6</text><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"253\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"315\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"377\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">8</text><text x=\"210\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Sum all frequencies: 2 + 6 + 3 + 3 + 8 = 22</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the first three frequencies: \\(2 + 6 + 3 = 11\\).",
+              "work": "\\(2 + 6 + 3 = 11\\)"
+            },
+            {
+              "explain": "Add the remaining two frequencies: \\(11 + 3 + 8 = 22\\).",
+              "work": "\\(11 + 3 + 8 = 22\\)"
+            },
+            {
+              "explain": "Therefore, there are \\(22\\) students in the class.",
+              "work": "\\(\\text{Total students} = 22\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 108\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"108\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q4iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A frequency histogram is constructed for the study-hours data (frequencies: \\(0\\text{ h} = 2\\), \\(1\\text{ h} = 6\\), \\(2\\text{ h} = 3\\), \\(3\\text{ h} = 3\\), \\(4\\text{ h} = 8\\)). Which statement correctly describes the valid frequency histogram?",
+          "options": [
+            "Columns touch with no gaps between them, start with a half-column gap from the vertical axis, are centred over 0–4, and peak at 4 hours (height 8).",
+            "Columns have full-column gaps between every bar and peak at 1 hour (height 6).",
+            "The first column (0 hours) touches the vertical axis directly with no half-column gap, and columns do not touch each other.",
+            "The horizontal axis shows Frequency (0–8) and the vertical axis shows Hours (0–4)."
+          ],
+          "answer": 0,
+          "hint": "Recall the rules of a NSW frequency histogram: half-column gap at the vertical axis, touching equal-width columns centred on each score, Frequency on the vertical axis!",
+          "keyPoints": [
+            {
+              "text": "frequency histogram",
+              "note": "Touching columns, half-column gap from vertical axis, centred labels."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the axes: Hours (\\(0, 1, 2, 3, 4\\)) go on the horizontal axis and Frequency (\\(0\\) to \\(8\\)) goes on the vertical axis.",
+              "work": "\\(x\\text{-axis: Hours}, \\quad y\\text{-axis: Frequency}\\)"
+            },
+            {
+              "explain": "Apply histogram formatting rules: leave a half-column width gap before the first column, make all columns touch with no gaps between them, and centre each column over its score.",
+              "work": "\\(\\text{Half-column gap + touching centred columns}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"235\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"170\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Student Study Hours</text><line x1=\"56\" y1=\"170\" x2=\"296\" y2=\"170\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"174\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><line x1=\"56\" y1=\"155\" x2=\"296\" y2=\"155\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"159\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><line x1=\"56\" y1=\"140\" x2=\"296\" y2=\"140\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"144\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><line x1=\"56\" y1=\"125\" x2=\"296\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"129\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><line x1=\"56\" y1=\"110\" x2=\"296\" y2=\"110\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"114\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><line x1=\"56\" y1=\"95\" x2=\"296\" y2=\"95\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"99\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><line x1=\"56\" y1=\"80\" x2=\"296\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"84\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><line x1=\"56\" y1=\"65\" x2=\"296\" y2=\"65\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"69\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><line x1=\"56\" y1=\"50\" x2=\"296\" y2=\"50\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"48\" y=\"54\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><line x1=\"56\" y1=\"36\" x2=\"56\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"56\" y1=\"170\" x2=\"300\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"77\" y=\"140\" width=\"42\" height=\"30\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"98\" y=\"186\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">0</text><text x=\"98\" y=\"135\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1e40af\">2</text><rect x=\"119\" y=\"80\" width=\"42\" height=\"90\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"140\" y=\"186\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"140\" y=\"75\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1e40af\">6</text><rect x=\"161\" y=\"125\" width=\"42\" height=\"45\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"182\" y=\"186\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"182\" y=\"120\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1e40af\">3</text><rect x=\"203\" y=\"125\" width=\"42\" height=\"45\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"224\" y=\"186\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"224\" y=\"120\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1e40af\">3</text><rect x=\"245\" y=\"50\" width=\"42\" height=\"120\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"266\" y=\"186\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"266\" y=\"45\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">8</text><text x=\"16\" y=\"106\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 106)\">Frequency</text><text x=\"182\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Hours</text><text x=\"170\" y=\"227\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Completed frequency histogram: half-column gap, touching columns, peak at 4 h (8)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the column heights match the frequencies \\(2, 6, 3, 3, 8\\), with the tallest column at \\(4\\text{ hours}\\) (height \\(8\\)).",
+              "work": "\\(\\text{Heights: } 2, 6, 3, 3, 8\\)"
+            },
+            {
+              "explain": "Therefore, the first option accurately describes the frequency histogram.",
+              "work": "\\(\\text{Verified histogram properties}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 108\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"108\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"129\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">2</text><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"191\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">6</text><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"253\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"315\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"377\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">8</text></svg>"
+          }
         }
       ]
     },
@@ -1891,6 +2521,52 @@
           ],
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"50%\" height=\"auto\"><rect width=\"340\" height=\"220\" fill=\"#fff\"/><line x1=\"42\" y1=\"178\" x2=\"320\" y2=\"178\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"182\" font-size=\"10\" fill=\"#64748b\">0</text><line x1=\"42\" y1=\"162\" x2=\"320\" y2=\"162\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"166\" font-size=\"10\" fill=\"#64748b\">2</text><line x1=\"42\" y1=\"146\" x2=\"320\" y2=\"146\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"150\" font-size=\"10\" fill=\"#64748b\">4</text><line x1=\"42\" y1=\"130\" x2=\"320\" y2=\"130\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"134\" font-size=\"10\" fill=\"#64748b\">6</text><line x1=\"42\" y1=\"114\" x2=\"320\" y2=\"114\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"118\" font-size=\"10\" fill=\"#64748b\">8</text><line x1=\"42\" y1=\"98\" x2=\"320\" y2=\"98\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"102\" font-size=\"10\" fill=\"#64748b\">10</text><line x1=\"42\" y1=\"82\" x2=\"320\" y2=\"82\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"86\" font-size=\"10\" fill=\"#64748b\">12</text><line x1=\"42\" y1=\"66\" x2=\"320\" y2=\"66\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"70\" font-size=\"10\" fill=\"#64748b\">14</text><line x1=\"42\" y1=\"50\" x2=\"320\" y2=\"50\" stroke=\"#dbe3ee\" stroke-width=\"1\"/><text x=\"17\" y=\"54\" font-size=\"10\" fill=\"#64748b\">16</text><rect x=\"70\" y=\"146\" width=\"18\" height=\"32\" fill=\"#94a3b8\"/><rect x=\"90\" y=\"162\" width=\"18\" height=\"16\" fill=\"#475569\"/><text x=\"66\" y=\"197\" font-size=\"9\" fill=\"#334155\">7 yr</text><rect x=\"135\" y=\"58\" width=\"18\" height=\"120\" fill=\"#94a3b8\"/><rect x=\"155\" y=\"138\" width=\"18\" height=\"40\" fill=\"#475569\"/><text x=\"131\" y=\"197\" font-size=\"9\" fill=\"#334155\">8 yr</text><rect x=\"200\" y=\"66\" width=\"18\" height=\"112\" fill=\"#94a3b8\"/><rect x=\"220\" y=\"82\" width=\"18\" height=\"96\" fill=\"#475569\"/><text x=\"196\" y=\"197\" font-size=\"9\" fill=\"#334155\">9 yr</text><rect x=\"265\" y=\"98\" width=\"18\" height=\"80\" fill=\"#94a3b8\"/><rect x=\"285\" y=\"90\" width=\"18\" height=\"88\" fill=\"#475569\"/><text x=\"261\" y=\"197\" font-size=\"9\" fill=\"#334155\">10 yr</text><line x1=\"42\" y1=\"178\" x2=\"320\" y2=\"178\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"72\" y=\"14\" font-size=\"10\" fill=\"#64748b\">Boys</text><rect x=\"54\" y=\"6\" width=\"12\" height=\"9\" fill=\"#94a3b8\"/><text x=\"145\" y=\"14\" font-size=\"10\" fill=\"#64748b\">Girls</text><rect x=\"123\" y=\"6\" width=\"12\" height=\"9\" fill=\"#475569\"/><text x=\"42\" y=\"214\" font-size=\"10\" fill=\"#334155\">Number of children by age group</text></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s2-q4iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the study-hours tally table (total \\(22\\) students), what proportion of the class did NOT study for the exam? Give your answer as a simplified fraction.",
+          "options": [
+            "\\(\\dfrac{1}{11}\\)",
+            "\\(\\dfrac{2}{11}\\)",
+            "\\(\\dfrac{1}{22}\\)",
+            "\\(\\dfrac{3}{11}\\)"
+          ],
+          "answer": 0,
+          "hint": "\"Did not study\" means 0 hours (frequency = 2). Write 2 over the total (22) and simplify by dividing top and bottom by 2.",
+          "keyPoints": [
+            {
+              "text": "did NOT study",
+              "note": "0 hours frequency = 2 out of 22 total students."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the \\(0\\text{ hours}\\) column in the table: \\(2\\) students did not study.",
+              "work": "\\(\\text{0 hours frequency} = 2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 132\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"129\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">2</text><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"191\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">6</text><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"253\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"315\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"377\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">8</text><text x=\"210\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Highlighted 0 hours column: 2 out of 22 students</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the proportion as a fraction of the \\(22\\) students in the class.",
+              "work": "\\(\\dfrac{2}{22}\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing numerator and denominator by \\(2\\).",
+              "work": "\\(\\dfrac{2 \\div 2}{22 \\div 2} = \\dfrac{1}{11}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\dfrac{1}{11}\\) of the class did not study for the exam.",
+              "work": "\\(\\text{Answer: } \\dfrac{1}{11}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 108\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"108\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
           }
         }
       ]

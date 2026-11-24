@@ -810,6 +810,52 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q3aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the perimeter of the quadrant (quarter circle) with radius \\(12\\text{ m}\\), rounded to \\(2\\) decimal places.",
+          "options": [
+            "\\(18.85\\text{ m}\\)",
+            "\\(30.85\\text{ m}\\)",
+            "\\(42.85\\text{ m}\\)",
+            "\\(113.10\\text{ m}\\)"
+          ],
+          "answer": 2,
+          "hint": "Do NOT forget the two straight radius edges! Perimeter = (1/4 of full circumference 2πr) + r + r.",
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Include BOTH the quarter-circle curved arc AND the two straight 12 m radii."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Break the perimeter into the curved quarter-circle arc (red) plus the two straight radius edges of \\(12\\text{ m}\\) each (blue).",
+              "work": "\\(P = \\dfrac{1}{4}(2\\pi r) + 2r\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 196\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"196\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 185 136 L 87 136 A 98 98 0 0 1 185 38 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"173,136 173,124 185,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><path d=\"M 87 136 A 98 98 0 0 1 185 38\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"4\"/><line x1=\"185\" y1=\"136\" x2=\"185\" y2=\"38\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"185\" y1=\"136\" x2=\"87\" y2=\"136\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><text x=\"136\" y=\"154\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">12 m</text><text x=\"108\" y=\"62\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\">Arc = 6π m</text><text x=\"197\" y=\"92\" font-family=\"Arial,sans-serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#2563eb\">12 m</text><text x=\"145\" y=\"186\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Curved arc (red) + two 12 m radii (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(r = 12\\text{ m}\\) into the formula.",
+              "work": "\\(P = \\dfrac{1}{4} \\times 2 \\times \\pi \\times 12 + 2 \\times 12\\)"
+            },
+            {
+              "explain": "Simplify the exact expression: \\(\\dfrac{24\\pi}{4} + 24 = 6\\pi + 24\\).",
+              "work": "\\(P = 6\\pi + 24 \\approx 18.8496 + 24 = 42.8496\\text{ m}\\)"
+            },
+            {
+              "explain": "Round to \\(2\\) decimal places: \\(42.85\\text{ m}\\).",
+              "work": "\\(P \\approx 42.85\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 170\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 185 136 L 87 136 A 98 98 0 0 1 185 38 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"173,136 173,124 185,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"197\" y=\"92\" font-family=\"Arial,sans-serif\" font-size=\"14.5\" font-weight=\"700\" fill=\"#0f172a\">12 m</text></svg>"
+          }
         }
       ]
     },

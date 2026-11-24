@@ -1643,6 +1643,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the better buy: a \\(2\\text{ kg}\\) box of Tim Tams for \\(\\$23.40\\) or \\(3\\text{ kg}\\) for \\(\\$32.40\\)?",
+          "options": [
+            "3 kg for $32.40 ($10.80/kg vs $11.70/kg)",
+            "2 kg for $23.40 ($10.80/kg vs $11.70/kg)",
+            "2 kg for $23.40 ($11.70/kg vs $12.40/kg)",
+            "Both cost the exact same price per kilogram"
+          ],
+          "answer": 0,
+          "hint": "Find the cost per 1 kg for each option by dividing the price by the mass in kilograms. The lower price per kg is the better buy.",
+          "keyPoints": [
+            {
+              "text": "better buy",
+              "note": "Compare the unit price ($ per kg) of both boxes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the unit price for the \\(2\\text{ kg}\\) box by dividing \\(\\$23.40\\) by \\(2\\).",
+              "work": "\\(\\dfrac{\\$23.40}{2\\text{ kg}} = \\$11.70/\\text{kg}\\)"
+            },
+            {
+              "explain": "Calculate the unit price for the \\(3\\text{ kg}\\) box by dividing \\(\\$32.40\\) by \\(3\\).",
+              "work": "\\(\\dfrac{\\$32.40}{3\\text{ kg}} = \\$10.80/\\text{kg}\\)"
+            },
+            {
+              "explain": "Compare the two unit prices: \\(\\$10.80/\\text{kg} < \\$11.70/\\text{kg}\\).",
+              "work": "\\(\\$10.80/\\text{kg} < \\$11.70/\\text{kg}\\)"
+            },
+            {
+              "explain": "Therefore, \\(3\\text{ kg}\\) for \\(\\$32.40\\) is the better buy (saving \\(\\$0.90\\) per kg).",
+              "work": "\\(\\text{Better buy: 3 kg for } \\$32.40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3234,6 +3274,362 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the rate \\(150\\text{ km}\\) in \\(10\\text{ hours}\\) in simplest form.",
+          "options": [
+            "\\(15\\text{ km/h}\\)",
+            "\\(150\\text{ km/h}\\)",
+            "\\(1.5\\text{ km/h}\\)",
+            "\\(1500\\text{ km/h}\\)"
+          ],
+          "answer": 0,
+          "hint": "A rate in simplest form is per 1 unit of time. Divide 150 km by 10 hours.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Divide the distance by the time to find km per 1 hour."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the rate as a fraction with distance over time.",
+              "work": "\\(\\dfrac{150\\text{ km}}{10\\text{ hours}}\\)"
+            },
+            {
+              "explain": "Divide numerator and denominator by \\(10\\) to find the distance per \\(1\\) hour.",
+              "work": "\\(\\dfrac{150 \\div 10}{10 \\div 10} = \\dfrac{15\\text{ km}}{1\\text{ hour}}\\)"
+            },
+            {
+              "explain": "Write using standard rate notation (km/h).",
+              "work": "\\(15\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Therefore, the rate in simplest form is \\(15\\text{ km/h}\\).",
+              "work": "\\(\\text{Answer: } 15\\text{ km/h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1di",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(1\\text{ m/s}\\) into \\(\\text{m/h}\\).",
+          "options": [
+            "\\(60\\text{ m/h}\\)",
+            "\\(600\\text{ m/h}\\)",
+            "\\(3600\\text{ m/h}\\)",
+            "\\(36\\,000\\text{ m/h}\\)"
+          ],
+          "answer": 2,
+          "hint": "There are 60 seconds in a minute and 60 minutes in an hour, so multiply 1 m/s by 60 × 60 = 3600.",
+          "keyPoints": [
+            {
+              "text": "1\\text{ m/s}",
+              "note": "1 hour = 60 × 60 = 3600 seconds."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(1\\text{ m/s}\\) to metres per minute by multiplying by \\(60\\) (since \\(1\\text{ min} = 60\\text{ s}\\)).",
+              "work": "\\(1\\text{ m/s} = 1 \\times 60 = 60\\text{ m/min}\\)"
+            },
+            {
+              "explain": "Convert metres per minute to metres per hour by multiplying by \\(60\\) again (since \\(1\\text{ h} = 60\\text{ min}\\)).",
+              "work": "\\(60 \\times 60 = 3600\\text{ m/h}\\)"
+            },
+            {
+              "explain": "Confirm directly: \\(1\\text{ hour} = 3600\\text{ seconds}\\), so in one hour you travel \\(3600\\text{ m}\\).",
+              "work": "\\(1 \\times 3600 = 3600\\text{ m/h}\\)"
+            },
+            {
+              "explain": "Therefore, \\(1\\text{ m/s} = 3600\\text{ m/h}\\).",
+              "work": "\\(\\text{Answer: } 3600\\text{ m/h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q6ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A snail was placed at one end of a \\(5\\text{ cm}\\) long stick. Use the graph of the snail's travels to find how far from the start the snail was after \\(2\\) minutes.",
+          "options": [
+            "\\(2\\text{ cm}\\)",
+            "\\(3\\text{ cm}\\)",
+            "\\(4\\text{ cm}\\)",
+            "\\(5\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find 2 on the horizontal \"Minutes after starting\" axis, go straight up to the line, and read across to the vertical distance axis.",
+          "keyPoints": [
+            {
+              "text": "after \\(2\\) minutes",
+              "note": "Read the point on the graph directly above t = 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate \\(2\\) minutes on the horizontal axis.",
+              "work": "\\(t = 2\\text{ min}\\)"
+            },
+            {
+              "explain": "Move vertically up to the graph line and horizontally across to the vertical axis.",
+              "work": "\\((2\\text{ min}, 4\\text{ cm})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 255\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"255\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"124\" y1=\"186\" x2=\"124\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-dasharray=\"4,2\"/><line x1=\"64\" y1=\"90\" x2=\"124\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-dasharray=\"4,2\"/><circle cx=\"124\" cy=\"90\" r=\"5\" fill=\"#dc2626\"/><text x=\"180\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">At 2 minutes, the snail is 4 cm from the start</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the vertical value: \\(4\\text{ cm}\\).",
+              "work": "\\(\\text{Distance} = 4\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the snail was \\(4\\text{ cm}\\) from the start after \\(2\\) minutes.",
+              "work": "\\(\\text{Answer: } 4\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q6aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the graph of the snail's travels to find how far from the start the snail was after \\(6\\) minutes.",
+          "options": [
+            "\\(0\\text{ cm}\\)",
+            "\\(3\\text{ cm}\\)",
+            "\\(4\\text{ cm}\\)",
+            "\\(8\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at 6 on the horizontal axis. The graph meets the horizontal axis there, meaning the snail returned to the start!",
+          "keyPoints": [
+            {
+              "text": "after \\(6\\) minutes",
+              "note": "At t = 6, the line sits on the horizontal axis (0 cm)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate \\(6\\) minutes on the horizontal axis.",
+              "work": "\\(t = 6\\text{ min}\\)"
+            },
+            {
+              "explain": "Check the height of the graph at \\(t = 6\\): it touches the horizontal axis at \\(0\\text{ cm}\\).",
+              "work": "\\((6\\text{ min}, 0\\text{ cm})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 255\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"255\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"244\" cy=\"186\" r=\"6\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><text x=\"244\" y=\"176\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">(6 min, 0 cm)</text><text x=\"180\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">At 6 minutes, the snail is back at 0 cm (the start)</text></svg>"
+              }
+            },
+            {
+              "explain": "This means the snail has crawled all the way back to the starting end of the stick.",
+              "work": "\\(\\text{Distance from start} = 0\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the snail was \\(0\\text{ cm}\\) from the start after \\(6\\) minutes.",
+              "work": "\\(\\text{Answer: } 0\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q6bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the graph of the snail's travels to find when the snail was \\(3\\text{ cm}\\) from the start.",
+          "options": [
+            "At 1.5 minutes and 5 minutes",
+            "At 1 minute and 5 minutes",
+            "At 5 minutes only",
+            "At 1.5 minutes and 4 minutes"
+          ],
+          "answer": 0,
+          "hint": "Draw a horizontal line across from 3 cm on the vertical axis — notice it crosses the snail's path TWICE (once going out, once coming back)!",
+          "keyPoints": [
+            {
+              "text": "3\\text{ cm}\\) from the start",
+              "note": "The horizontal line at 3 cm intersects the graph at two different times."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Trace horizontally across from \\(3\\text{ cm}\\) on the vertical axis to find EVERY point where the graph reaches \\(3\\text{ cm}\\).",
+              "work": "\\(d = 3\\text{ cm}\\text{ crosses twice}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 255\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"255\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"114\" x2=\"229\" y2=\"114\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/><line x1=\"109\" y1=\"114\" x2=\"109\" y2=\"186\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/><line x1=\"214\" y1=\"114\" x2=\"214\" y2=\"186\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/><circle cx=\"109\" cy=\"114\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"214\" cy=\"114\" r=\"5\" fill=\"#dc2626\"/><text x=\"180\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Horizontal line at 3 cm meets the graph at t = 1.5 min and t = 5 min</text></svg>"
+              }
+            },
+            {
+              "explain": "First intersection (going out): halfway between \\(1\\) and \\(2\\) minutes, which is \\(1.5\\) minutes (\\(1\\dfrac{1}{2}\\text{ min}\\)).",
+              "work": "\\(t_1 = 1.5\\text{ min}\\)"
+            },
+            {
+              "explain": "Second intersection (coming back): directly above \\(5\\) minutes.",
+              "work": "\\(t_2 = 5\\text{ min}\\)"
+            },
+            {
+              "explain": "Therefore, the snail was \\(3\\text{ cm}\\) from the start at \\(1.5\\text{ minutes}\\) and \\(5\\text{ minutes}\\).",
+              "work": "\\(\\text{Answer: } 1.5\\text{ min and } 5\\text{ min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q6bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the graph of the snail's travels to find when the snail was NOT moving.",
+          "options": [
+            "Between 0 minutes and 2 minutes",
+            "Between 2 minutes and 4 minutes",
+            "Between 4 minutes and 5 minutes",
+            "Between 5 minutes and 6 minutes"
+          ],
+          "answer": 1,
+          "hint": "On a distance-time graph, \"not moving\" means distance stays constant, which appears as a flat horizontal line segment.",
+          "keyPoints": [
+            {
+              "text": "NOT moving",
+              "note": "A horizontal (flat) segment means zero change in distance."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for the flat horizontal section of the graph where distance from the start does not change.",
+              "work": "\\(\\text{Constant distance} = 4\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 255\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"255\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"124\" y1=\"90\" x2=\"184\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"4.5\"/><text x=\"154\" y=\"82\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">Flat = Not moving (2–4 min)</text><text x=\"180\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Flat red segment between 2 min and 4 min = snail is stationary</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the start time of the flat section: \\(2\\) minutes.",
+              "work": "\\(t_{\\text{start}} = 2\\text{ min}\\)"
+            },
+            {
+              "explain": "Read the end time of the flat section: \\(4\\) minutes.",
+              "work": "\\(t_{\\text{end}} = 4\\text{ min}\\)"
+            },
+            {
+              "explain": "Therefore, the snail was not moving between \\(2\\text{ minutes}\\) and \\(4\\text{ minutes}\\).",
+              "work": "\\(\\text{Answer: Between 2 min and 4 min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q6ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the graph of the snail's travels to find how far the snail travelled in the first minute.",
+          "options": [
+            "\\(1\\text{ cm}\\)",
+            "\\(2\\text{ cm}\\)",
+            "\\(3\\text{ cm}\\)",
+            "\\(4\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Read the distance at t = 1 minute on the straight line from (0, 0) to (2, 4).",
+          "keyPoints": [
+            {
+              "text": "first minute",
+              "note": "Check the graph height at t = 1 minute."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate \\(1\\) minute on the horizontal axis and trace vertically up to the graph.",
+              "work": "\\(t = 1\\text{ min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 255\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"255\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"186\" x2=\"94\" y2=\"138\" stroke=\"#dc2626\" stroke-width=\"3.8\"/><circle cx=\"94\" cy=\"138\" r=\"5\" fill=\"#dc2626\"/><line x1=\"64\" y1=\"138\" x2=\"94\" y2=\"138\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><text x=\"180\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">From 0 min to 1 min, the snail crawls from 0 cm to 2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Read across to the vertical axis: the graph passes exactly through \\((1, 2)\\).",
+              "work": "\\(\\text{Distance at } 1\\text{ min} = 2\\text{ cm}\\)"
+            },
+            {
+              "explain": "Subtract the starting distance (\\(0\\text{ cm}\\)): \\(2 - 0 = 2\\text{ cm}\\).",
+              "work": "\\(2 - 0 = 2\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the snail travelled \\(2\\text{ cm}\\) in the first minute.",
+              "work": "\\(\\text{Answer: } 2\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs16-y8-p2-s1-q6cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Use the graph of the snail's travels to find the total distance the snail travelled in the first six minutes.",
+          "options": [
+            "\\(0\\text{ cm}\\)",
+            "\\(4\\text{ cm}\\)",
+            "\\(6\\text{ cm}\\)",
+            "\\(8\\text{ cm}\\)"
+          ],
+          "answer": 3,
+          "hint": "Total distance travelled includes BOTH going away from the start (4 cm) AND crawling back to the start (4 cm)!",
+          "keyPoints": [
+            {
+              "text": "total distance",
+              "note": "Add the outward journey (4 cm) and the return journey (4 cm)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From \\(0\\) to \\(2\\) minutes (blue), the snail travels \\(4\\text{ cm}\\) away from the start.",
+              "work": "\\(\\text{Outward} = 4\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 255\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"255\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"186\" x2=\"124\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><polyline points=\"184,90 214,114 244,186\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><text x=\"94\" y=\"114\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">+4 cm</text><text x=\"226\" y=\"133.2\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">+4 cm back</text><text x=\"180\" y=\"245\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Total distance = 4 cm out (blue) + 0 cm rest + 4 cm back (red) = 8 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "From \\(2\\) to \\(4\\) minutes, the snail rests (\\(0\\text{ cm}\\) travelled).",
+              "work": "\\(\\text{Rest} = 0\\text{ cm}\\)"
+            },
+            {
+              "explain": "From \\(4\\) to \\(6\\) minutes (red), the snail crawls from \\(4\\text{ cm}\\) back to \\(0\\text{ cm}\\), covering another \\(4\\text{ cm}\\).",
+              "work": "\\(\\text{Return} = 4\\text{ cm}\\)"
+            },
+            {
+              "explain": "Add all distances together: \\(4 + 0 + 4 = 8\\text{ cm}\\).",
+              "work": "\\(\\text{Total distance} = 8\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"230\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"184\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">Snail's travels</text><line x1=\"64\" y1=\"42\" x2=\"64\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"94\" y1=\"42\" x2=\"94\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"124\" y1=\"42\" x2=\"124\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"42\" x2=\"154\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"184\" y1=\"42\" x2=\"184\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"214\" y1=\"42\" x2=\"214\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"244\" y1=\"42\" x2=\"244\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"42\" x2=\"274\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"304\" y1=\"42\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"186\" x2=\"304\" y2=\"186\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"162\" x2=\"304\" y2=\"162\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"138\" x2=\"304\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"114\" x2=\"304\" y2=\"114\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"90\" x2=\"304\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"66\" x2=\"304\" y2=\"66\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"42\" x2=\"304\" y2=\"42\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"64\" y1=\"32\" x2=\"64\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"56\" y=\"190\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0 cm</text><text x=\"56\" y=\"166\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1 cm</text><text x=\"56\" y=\"142\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2 cm</text><text x=\"56\" y=\"118\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3 cm</text><text x=\"56\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4 cm</text><text x=\"56\" y=\"70\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5 cm</text><text x=\"56\" y=\"46\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6 cm</text><text x=\"64\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"94\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"124\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"154\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"184\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"214\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"244\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"274\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"304\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"16\" y=\"114\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 16 114)\">Distance from the start</text><text x=\"184\" y=\"220\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Minutes after starting</text><polyline points=\"64,186 124,90 184,90 214,114 244,186\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/></svg>"
+          }
         }
       ]
     },
@@ -4220,6 +4616,126 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the ratio \\(10 : 4\\).",
+          "options": [
+            "\\(5 : 2\\)",
+            "\\(2 : 5\\)",
+            "\\(5 : 4\\)",
+            "\\(10 : 2\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) of 10 and 4, which is 2, and divide both numbers by 2.",
+          "keyPoints": [
+            {
+              "text": "10 : 4",
+              "note": "Divide both parts by their HCF (2)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor (HCF) of \\(10\\) and \\(4\\): both are even, so \\(\\text{HCF} = 2\\).",
+              "work": "\\(\\text{HCF}(10, 4) = 2\\)"
+            },
+            {
+              "explain": "Divide both sides of the ratio by \\(2\\).",
+              "work": "\\((10 \\div 2) : (4 \\div 2)\\)"
+            },
+            {
+              "explain": "Compute each division: \\(10 \\div 2 = 5\\) and \\(4 \\div 2 = 2\\).",
+              "work": "\\(5 : 2\\)"
+            },
+            {
+              "explain": "Since \\(5\\) and \\(2\\) have no common factor greater than \\(1\\), the simplest form is \\(5 : 2\\).",
+              "work": "\\(\\text{Answer: } 5 : 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the ratio \\(1\\dfrac{1}{2} : 2\\dfrac{1}{4}\\).",
+          "options": [
+            "\\(2 : 3\\)",
+            "\\(3 : 2\\)",
+            "\\(1 : 2\\)",
+            "\\(4 : 9\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert both mixed numerals to improper fractions first (3/2 and 9/4), multiply both sides by 4 to clear denominators, then divide by the HCF.",
+          "keyPoints": [
+            {
+              "text": "Simplify the ratio",
+              "note": "Convert mixed numerals to improper fractions, then clear denominators."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert both mixed numerals to improper fractions: \\(1\\dfrac{1}{2} = \\dfrac{3}{2}\\) and \\(2\\dfrac{1}{4} = \\dfrac{9}{4}\\).",
+              "work": "\\(\\dfrac{3}{2} : \\dfrac{9}{4}\\)"
+            },
+            {
+              "explain": "Write both fractions with the common denominator \\(4\\) (or multiply both sides by \\(4\\)): \\(\\dfrac{3}{2} = \\dfrac{6}{4}\\).",
+              "work": "\\(\\dfrac{6}{4} : \\dfrac{9}{4} = 6 : 9\\)"
+            },
+            {
+              "explain": "Divide both whole numbers by their HCF (\\(3\\)): \\(6 \\div 3 = 2\\) and \\(9 \\div 3 = 3\\).",
+              "work": "\\(6 : 9 = 2 : 3\\)"
+            },
+            {
+              "explain": "Therefore, the fully simplified ratio is \\(2 : 3\\).",
+              "work": "\\(\\text{Answer: } 2 : 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q2ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A drawing has a scale of \\(1\\text{ cm} : 500\\text{ m}\\). Simplify the drawing scale.",
+          "options": [
+            "\\(1 : 500\\)",
+            "\\(1 : 5000\\)",
+            "\\(1 : 50\\,000\\)",
+            "\\(1 : 500\\,000\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 500 m to centimetres (1 m = 100 cm) so both sides have the same unit, then remove the units.",
+          "keyPoints": [
+            {
+              "text": "1\\text{ cm} : 500\\text{ m}",
+              "note": "Convert 500 m to cm by multiplying by 100."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(500\\text{ m}\\) into centimetres using \\(1\\text{ m} = 100\\text{ cm}\\).",
+              "work": "\\(500\\text{ m} = 500 \\times 100 = 50\\,000\\text{ cm}\\)"
+            },
+            {
+              "explain": "Write both sides of the scale in centimetres.",
+              "work": "\\(1\\text{ cm} : 50\\,000\\text{ cm}\\)"
+            },
+            {
+              "explain": "Remove the matching units to write the scale as a simplified ratio.",
+              "work": "\\(1 : 50\\,000\\)"
+            },
+            {
+              "explain": "Therefore, the simplified drawing scale is \\(1 : 50\\,000\\).",
+              "work": "\\(\\text{Answer: } 1 : 50\\,000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4719,6 +5235,206 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Divide \\(\\$15\\) into a ratio of \\(3 : 2\\).",
+          "options": [
+            "\\(\\$9 : \\$6\\)",
+            "\\(\\$10 : \\$5\\)",
+            "\\(\\$6 : \\$9\\)",
+            "\\(\\$12 : \\$3\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the ratio parts together (3 + 2 = 5 parts), divide $15 by 5 to find 1 part ($3), then multiply by 3 and by 2.",
+          "keyPoints": [
+            {
+              "text": "ratio of \\(3 : 2\\)",
+              "note": "Total parts = 3 + 2 = 5 parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total number of parts in the ratio: \\(3 + 2 = 5\\) parts.",
+              "work": "\\(\\text{Total parts} = 3 + 2 = 5\\)"
+            },
+            {
+              "explain": "Find the value of \\(1\\) part by dividing \\(\\$15\\) by \\(5\\).",
+              "work": "\\(1\\text{ part} = \\dfrac{\\$15}{5} = \\$3\\)"
+            },
+            {
+              "explain": "Multiply by each share: \\(3 \\times \\$3 = \\$9\\) and \\(2 \\times \\$3 = \\$6\\).",
+              "work": "\\(3\\text{ parts} = \\$9, \\quad 2\\text{ parts} = \\$6\\)"
+            },
+            {
+              "explain": "Check that the shares sum back to \\(\\$15\\): \\(\\$9 + \\$6 = \\$15\\).",
+              "work": "\\(\\$9 : \\$6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q2aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A drawing has a scale of \\(1\\text{ cm} : 500\\text{ m}\\) (or \\(1 : 50\\,000\\)). If the scale distance is \\(3\\text{ cm}\\), what is the real distance?",
+          "options": [
+            "\\(150\\text{ m}\\)",
+            "\\(1500\\text{ m}\\) (\\(1.5\\text{ km}\\))",
+            "\\(15\\text{ km}\\)",
+            "\\(503\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "Every 1 cm on the drawing represents 500 m in real life. Multiply 3 by 500 m!",
+          "keyPoints": [
+            {
+              "text": "scale distance is \\(3\\text{ cm}\\)",
+              "note": "Multiply the scale distance by 500 m per cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the scale \\(1\\text{ cm} = 500\\text{ m}\\).",
+              "work": "\\(1\\text{ cm} \\to 500\\text{ m}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(3\\) to find the real distance for \\(3\\text{ cm}\\).",
+              "work": "\\(3 \\times 500\\text{ m} = 1500\\text{ m}\\)"
+            },
+            {
+              "explain": "Convert to kilometres as well (\\(1000\\text{ m} = 1\\text{ km}\\)): \\(1500\\text{ m} = 1.5\\text{ km}\\).",
+              "work": "\\(1500\\text{ m} = 1.5\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the real distance is \\(1500\\text{ m}\\) (or \\(1.5\\text{ km}\\)).",
+              "work": "\\(\\text{Answer: } 1500\\text{ m } (1.5\\text{ km})\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q2aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A drawing has a scale of \\(1\\text{ cm} : 500\\text{ m}\\). If the real distance is \\(6\\text{ km}\\), what is the scaled distance?",
+          "options": [
+            "\\(3\\text{ cm}\\)",
+            "\\(12\\text{ cm}\\)",
+            "\\(30\\text{ cm}\\)",
+            "\\(120\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 6 km to metres (6000 m), then divide by 500 m to see how many centimetres that is on the drawing.",
+          "keyPoints": [
+            {
+              "text": "real distance is \\(6\\text{ km}\\)",
+              "note": "6 km = 6000 m; divide by 500 m per cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert the real distance from kilometres to metres: \\(6\\text{ km} = 6 \\times 1000 = 6000\\text{ m}\\).",
+              "work": "\\(6\\text{ km} = 6000\\text{ m}\\)"
+            },
+            {
+              "explain": "Since \\(1\\text{ cm}\\) represents \\(500\\text{ m}\\), divide \\(6000\\text{ m}\\) by \\(500\\text{ m}\\).",
+              "work": "\\(\\text{Scaled distance} = \\dfrac{6000}{500}\\text{ cm}\\)"
+            },
+            {
+              "explain": "Simplify the division: \\(6000 \\div 500 = 60 \\div 5 = 12\\text{ cm}\\).",
+              "work": "\\(6000 \\div 500 = 12\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the scaled distance is \\(12\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 12\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q2bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A fruit punch drink is made from orange juice, ginger ale and passionfruit nectar in the ratio \\(2 : 5 : 1\\). How much ginger ale is needed if \\(1\\text{ litre}\\) of orange juice is used?",
+          "options": [
+            "\\(2\\text{ litres}\\)",
+            "\\(2.5\\text{ litres}\\)",
+            "\\(5\\text{ litres}\\)",
+            "\\(0.4\\text{ litres}\\)"
+          ],
+          "answer": 1,
+          "hint": "Orange juice is 2 parts = 1 litre, so 1 part = 0.5 litres. Multiply 0.5 litres by ginger ale's 5 parts!",
+          "keyPoints": [
+            {
+              "text": "2 : 5 : 1",
+              "note": "Orange juice = 2 parts, ginger ale = 5 parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Match the ratio \\(2 : 5 : 1\\) to the ingredients: orange juice is \\(2\\) parts and ginger ale is \\(5\\) parts.",
+              "work": "\\(\\text{Orange : Ginger ale} = 2 : 5\\)"
+            },
+            {
+              "explain": "Since \\(2\\) parts of orange juice equals \\(1\\text{ litre}\\), divide by \\(2\\) to find \\(1\\) part.",
+              "work": "\\(1\\text{ part} = \\dfrac{1}{2}\\text{ L} = 0.5\\text{ L}\\)"
+            },
+            {
+              "explain": "Multiply \\(0.5\\text{ L}\\) by ginger ale's \\(5\\) parts.",
+              "work": "\\(\\text{Ginger ale} = 5 \\times 0.5\\text{ L} = 2.5\\text{ L}\\)"
+            },
+            {
+              "explain": "Therefore, \\(2.5\\text{ litres}\\) of ginger ale is needed.",
+              "work": "\\(\\text{Answer: } 2.5\\text{ litres}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q2bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A fruit punch drink is made from orange juice, ginger ale and passionfruit nectar in the ratio \\(2 : 5 : 1\\). How much orange juice is required to make \\(20\\text{ litres}\\) of fruit punch?",
+          "options": [
+            "\\(2.5\\text{ litres}\\)",
+            "\\(4\\text{ litres}\\)",
+            "\\(5\\text{ litres}\\)",
+            "\\(10\\text{ litres}\\)"
+          ],
+          "answer": 2,
+          "hint": "Add all parts of the ratio first (2 + 5 + 1 = 8 parts). Divide 20 litres by 8 to find 1 part, then multiply by orange juice's 2 parts.",
+          "keyPoints": [
+            {
+              "text": "20\\text{ litres}\\) of fruit punch",
+              "note": "Total parts = 2 + 5 + 1 = 8 parts."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total number of parts in the fruit punch: \\(2 + 5 + 1 = 8\\) parts.",
+              "work": "\\(\\text{Total parts} = 2 + 5 + 1 = 8\\)"
+            },
+            {
+              "explain": "Divide \\(20\\text{ litres}\\) by \\(8\\) parts to find the volume of \\(1\\) part.",
+              "work": "\\(1\\text{ part} = \\dfrac{20}{8} = 2.5\\text{ L}\\)"
+            },
+            {
+              "explain": "Orange juice makes up \\(2\\) parts, so multiply \\(2.5\\text{ L}\\) by \\(2\\).",
+              "work": "\\(\\text{Orange juice} = 2 \\times 2.5\\text{ L} = 5\\text{ L}\\)"
+            },
+            {
+              "explain": "Therefore, \\(5\\text{ litres}\\) of orange juice is required.",
+              "work": "\\(\\text{Answer: } 5\\text{ litres}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -7056,6 +7772,86 @@
           "meta": {
             "source": "Task 3 2022.pdf"
           }
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the rate \\(3000\\text{ revolutions}\\) in \\(1\\dfrac{1}{2}\\text{ minutes}\\) in simplest form.",
+          "options": [
+            "\\(1500\\text{ revs/min}\\)",
+            "\\(2000\\text{ revs/min}\\)",
+            "\\(3000\\text{ revs/min}\\)",
+            "\\(4500\\text{ revs/min}\\)"
+          ],
+          "answer": 1,
+          "hint": "Write 1 1/2 minutes as 1.5 minutes, then divide 3000 by 1.5 to find revolutions per 1 minute.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Divide 3000 revolutions by 1.5 minutes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(1\\dfrac{1}{2}\\text{ minutes}\\) to the decimal \\(1.5\\text{ minutes}\\).",
+              "work": "\\(1\\dfrac{1}{2}\\text{ min} = 1.5\\text{ min}\\)"
+            },
+            {
+              "explain": "Divide \\(3000\\text{ revolutions}\\) by \\(1.5\\text{ minutes}\\) to find revolutions per minute.",
+              "work": "\\(\\dfrac{3000}{1.5}\\)"
+            },
+            {
+              "explain": "Multiply top and bottom by \\(2\\) (or use a calculator): \\(\\dfrac{6000}{3} = 2000\\).",
+              "work": "\\(\\dfrac{3000}{1.5} = 2000\\text{ revs/min}\\)"
+            },
+            {
+              "explain": "Therefore, the rate in simplest form is \\(2000\\text{ revs/min}\\).",
+              "work": "\\(\\text{Answer: } 2000\\text{ revs/min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs16-y8-p1-s1-q1dii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\(6\\text{ L/h}\\) into \\(\\text{mL/min}\\).",
+          "options": [
+            "\\(10\\text{ mL/min}\\)",
+            "\\(100\\text{ mL/min}\\)",
+            "\\(360\\text{ mL/min}\\)",
+            "\\(600\\text{ mL/min}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 6 L into mL (multiply by 1000 -> 6000 mL), then divide by 60 minutes in 1 hour.",
+          "keyPoints": [
+            {
+              "text": "6\\text{ L/h}",
+              "note": "1 L = 1000 mL and 1 hour = 60 minutes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(6\\text{ L}\\) into millilitres using \\(1\\text{ L} = 1000\\text{ mL}\\).",
+              "work": "\\(6\\text{ L} = 6 \\times 1000 = 6000\\text{ mL}\\)"
+            },
+            {
+              "explain": "Rewrite the rate as \\(6000\\text{ mL}\\) per \\(60\\text{ minutes}\\) (since \\(1\\text{ hour} = 60\\text{ min}\\)).",
+              "work": "\\(\\dfrac{6000\\text{ mL}}{60\\text{ min}}\\)"
+            },
+            {
+              "explain": "Divide \\(6000\\) by \\(60\\) to find millilitres per minute.",
+              "work": "\\(6000 \\div 60 = 100\\text{ mL/min}\\)"
+            },
+            {
+              "explain": "Therefore, \\(6\\text{ L/h} = 100\\text{ mL/min}\\).",
+              "work": "\\(\\text{Answer: } 100\\text{ mL/min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }
