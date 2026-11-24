@@ -5418,6 +5418,52 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 178\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,34 212,34 242,146 94,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"34\" x2=\"242\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"130,29 138,34 130,39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"136,29 144,34 136,39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"160,141 168,146 160,151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"166,141 174,146 166,151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"73,94 78,86 84,94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"221,94 226,86 232,94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"116\" y=\"52\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">30°</text><text x=\"98\" y=\"84\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">50°</text><text x=\"192\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">x°</text><text x=\"210\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">y°</text><text x=\"50\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"218\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"248\" y=\"156\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"158\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4a-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the pronumeral \\(x\\) in the parallelogram shown (with adjacent angle \\(33^\\circ\\)).",
+          "options": [
+            "\\(33^\\circ\\)",
+            "\\(57^\\circ\\)",
+            "\\(147^\\circ\\)",
+            "\\(157^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "Adjacent (co-interior) angles in a parallelogram lie between parallel sides, so they add to 180°: x + 33° = 180°!",
+          "keyPoints": [
+            {
+              "text": "parallelogram",
+              "note": "Co-interior angles on parallel lines sum to 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since opposite sides of a parallelogram are parallel, \\(x\\) and \\(33^\\circ\\) are co-interior angles and sum to \\(180^\\circ\\).",
+              "work": "\\(x + 33^\\circ = 180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 155\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"155\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"42,102 164,102 248,34 126,34\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"86\" y=\"92\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">33°</text><text x=\"136\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">x = 147°</text><text x=\"145\" y=\"147\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Co-interior angles in parallelogram: x = 180° - 33° = 147°</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(33^\\circ\\) from \\(180^\\circ\\).",
+              "work": "\\(x = 180^\\circ - 33^\\circ = 147^\\circ\\)"
+            },
+            {
+              "explain": "Check: \\(147^\\circ + 33^\\circ = 180^\\circ\\).",
+              "work": "\\(147^\\circ + 33^\\circ = 180^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 147^\\circ\\).",
+              "work": "\\(\\text{Answer: } 147^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 128\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"128\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"42,102 164,102 248,34 126,34\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"86\" y=\"92\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">33°</text><text x=\"136\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">x</text></svg>"
+          }
         }
       ]
     },
@@ -13644,6 +13690,46 @@
             "exam:year8ch13d"
           ],
           "xp": 2
+        },
+        {
+          "id": "khs23-y8-t4a-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What type of quadrilateral has diagonals that are ALWAYS perpendicular to each other?",
+          "options": [
+            "Kite",
+            "Rectangle",
+            "Parallelogram",
+            "Trapezium"
+          ],
+          "answer": 0,
+          "hint": "A kite (and rhombus/square) always has diagonals intersecting at 90°; a general rectangle, parallelogram, or trapezium does not.",
+          "keyPoints": [
+            {
+              "text": "What type",
+              "note": "Apply the core concept carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or first step.",
+              "work": "\\(\\text{Diagonals meet at } 90^\\circ\\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(\\text{Kite}\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\text{Kite}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Kite.",
+              "work": "\\(\\text{Kite}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

@@ -2468,6 +2468,504 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 108\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"108\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"129\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">2</text><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"191\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">6</text><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"253\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"315\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">3</text><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"377\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">8</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the variable \"The weight in grams of a book\" as either categorical or numerical.",
+          "options": [
+            "Numerical (continuous)",
+            "Categorical (nominal)",
+            "Categorical (ordinal)",
+            "Non-statistical"
+          ],
+          "answer": 0,
+          "hint": "Weight in grams is a measured number (e.g. 425.6 g), not a word or label!",
+          "keyPoints": [
+            {
+              "text": "weight in grams",
+              "note": "Measured quantities with units are numerical (continuous)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check what kind of values \"weight in grams\" takes: measurements such as \\(350\\text{ g}\\) or \\(412.5\\text{ g}\\).",
+              "work": "\\(\\text{Values are measured numbers}\\)"
+            },
+            {
+              "explain": "Measured numbers are numerical data (specifically continuous numerical).",
+              "work": "\\(\\text{Variable type} = \\text{Numerical}\\)"
+            },
+            {
+              "explain": "Confirm it is not a category/label like colour or genre.",
+              "work": "\\(\\text{Not categorical}\\)"
+            },
+            {
+              "explain": "Therefore, the variable is numerical.",
+              "work": "\\(\\text{Answer: Numerical}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the mode of the data set shown in the dot plot.",
+          "options": [
+            "\\(35\\)",
+            "\\(38\\)",
+            "\\(9\\)",
+            "\\(36\\)"
+          ],
+          "answer": 1,
+          "hint": "The mode is the horizontal score under the tallest column of dots (not the height 9 itself!).",
+          "keyPoints": [
+            {
+              "text": "mode",
+              "note": "Read the score on the horizontal axis with the highest frequency."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the tallest column of dots: the column above \\(38\\) has \\(9\\) dots.",
+              "work": "\\(\\text{Tallest column at } 38 \\text{ (9 dots)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 210\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"28\" y1=\"152\" x2=\"264\" y2=\"152\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"46\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">35</text><circle cx=\"46\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"129\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"116\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"103\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"90\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"79\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">36</text><circle cx=\"79\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"79\" cy=\"129\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"112\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">37</text><text x=\"145\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">38</text><circle cx=\"145\" cy=\"142\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"129\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"116\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"103\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"90\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"77\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"64\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"51\" r=\"4.2\" fill=\"#dc2626\"/><circle cx=\"145\" cy=\"38\" r=\"4.2\" fill=\"#dc2626\"/><rect x=\"135\" y=\"30\" width=\"20\" height=\"123\" rx=\"6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><text x=\"178\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">39</text><text x=\"211\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">40</text><circle cx=\"211\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"244\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">41</text><circle cx=\"244\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"145\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Tallest column is at 38 (9 dots) -> Mode = 38</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the score on the horizontal axis (\\(38\\)), not the frequency (\\(9\\)).",
+              "work": "\\(\\text{Mode} = 38\\)"
+            },
+            {
+              "explain": "Verify no other value has \\(9\\) or more dots.",
+              "work": "\\(\\text{Verified: } 38\\)"
+            },
+            {
+              "explain": "Therefore, the mode is \\(38\\).",
+              "work": "\\(\\text{Answer: } 38\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 184\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"28\" y1=\"152\" x2=\"264\" y2=\"152\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"46\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">35</text><circle cx=\"46\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"129\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"116\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"103\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"46\" cy=\"90\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"79\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">36</text><circle cx=\"79\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"79\" cy=\"129\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"112\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">37</text><text x=\"145\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">38</text><circle cx=\"145\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"129\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"116\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"103\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"90\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"77\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"64\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"51\" r=\"4.2\" fill=\"#7f1d1d\"/><circle cx=\"145\" cy=\"38\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"178\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">39</text><text x=\"211\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">40</text><circle cx=\"211\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/><text x=\"244\" y=\"168\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#0f172a\">41</text><circle cx=\"244\" cy=\"142\" r=\"4.2\" fill=\"#7f1d1d\"/></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which one of the following values would be best described as an outlier: \\(3, 5, 6, 10, 12, 16, 80\\)?",
+          "options": [
+            "\\(3\\)",
+            "\\(10\\)",
+            "\\(16\\)",
+            "\\(80\\)"
+          ],
+          "answer": 3,
+          "hint": "An outlier is a value far away from the rest of the data cluster (3 to 16).",
+          "keyPoints": [
+            {
+              "text": "Which one",
+              "note": "Apply the core concept carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or first step.",
+              "work": "\\(\\text{Cluster: } 3\\text{ to } 16\\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(\\text{Extreme value: } 80\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 80\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(80\\).",
+              "work": "\\(80\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Eight students measured their heights (in cm): \\(164, 164, 164, 166, 167, 168, 170, 170\\). Calculate the mean to \\(2\\) decimal places.",
+          "options": [
+            "\\(166.50\\text{ cm}\\)",
+            "\\(166.63\\text{ cm}\\)",
+            "\\(166.62\\text{ cm}\\)",
+            "\\(167.00\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add all 8 heights (1333) and divide by 8 (166.625), then round to 2 decimal places!",
+          "keyPoints": [
+            {
+              "text": "Eight students measured",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\text{Sum} = 1333, \\; n = 8\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(\\dfrac{1333}{8} = 166.625 \\approx 166.63\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 166.63\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(166.63\\text{ cm}\\).",
+              "work": "\\(166.63\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Eight students measured their heights (in cm): \\(164, 164, 164, 166, 167, 168, 170, 170\\). Find the median height.",
+          "options": [
+            "\\(166\\text{ cm}\\)",
+            "\\(166.5\\text{ cm}\\)",
+            "\\(167\\text{ cm}\\)",
+            "\\(164\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "The 8 heights are already sorted! Average the 4th value (166) and 5th value (167).",
+          "keyPoints": [
+            {
+              "text": "Eight students measured",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\text{4th} = 166, \\; \\text{5th} = 167\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(\\dfrac{166 + 167}{2} = 166.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 166.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(166.5\\text{ cm}\\).",
+              "work": "\\(166.5\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q12c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Eight students measured their heights (in cm): \\(164, 164, 164, 166, 167, 168, 170, 170\\). Find the modal height.",
+          "options": [
+            "\\(164\\text{ cm}\\)",
+            "\\(170\\text{ cm}\\)",
+            "\\(166.5\\text{ cm}\\)",
+            "\\(164\\text{ and } 170\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The mode is the height that occurs most often (164 appears 3 times!).",
+          "keyPoints": [
+            {
+              "text": "Eight students measured",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(164\\text{ appears 3 times (170 appears twice)}\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(\\text{Mode} = 164\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 164\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(164\\text{ cm}\\).",
+              "work": "\\(164\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q12d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Eight students measured their heights (in cm): \\(164, 164, 164, 166, 167, 168, 170, 170\\). Find the range of the heights.",
+          "options": [
+            "\\(5\\text{ cm}\\)",
+            "\\(6\\text{ cm}\\)",
+            "\\(7\\text{ cm}\\)",
+            "\\(8\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Range = Maximum - Minimum = 170 - 164.",
+          "keyPoints": [
+            {
+              "text": "Eight students measured",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\text{Max} = 170, \\; \\text{Min} = 164\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(170 - 164 = 6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(6\\text{ cm}\\).",
+              "work": "\\(6\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q19a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Twelve backpack prices (in dollars) are: \\(78, 48, 75, 89, 60, 73, 77, 89, 51, 55, 41, 80\\). Complete the stem-and-leaf plot shown by identifying the two missing leaf digits.",
+          "options": [
+            "5 (in row 5) and 8 (in row 7)",
+            "5 (in row 5) and 9 (in row 7)",
+            "4 (in row 5) and 8 (in row 7)",
+            "6 (in row 5) and 8 (in row 7)"
+          ],
+          "answer": 0,
+          "hint": "Cross off each of the 12 prices against the plot: $55 is missing from stem 5, and $78 is missing from stem 7!",
+          "keyPoints": [
+            {
+              "text": "two missing leaf digits",
+              "note": "Match all 12 prices against the stems 4–8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the 50s in the list: \\(51\\) and \\(55\\). Leaf \\(1\\) is shown, so the missing leaf on stem \\(5\\) is \\(5\\).",
+              "work": "\\(5 \\mid 5 = \\$55\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 195\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"80\" y1=\"18\" x2=\"80\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"68\" y=\"38\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">4</text><text x=\"98\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"68\" y=\"62\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">5</text><text x=\"98\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><rect x=\"111\" y=\"48\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"120\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">5</text><text x=\"68\" y=\"86\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">6</text><text x=\"98\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"68\" y=\"110\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">7</text><text x=\"98\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"120\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"142\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><rect x=\"155\" y=\"96\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"164\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">8</text><text x=\"68\" y=\"134\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">8</text><text x=\"98\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"120\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"142\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"192\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\">Key: 5 | 1 = $51</text><text x=\"125\" y=\"187\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Missing leaves (blue): 5 in row 5 ($55) and 8 in row 7 ($78)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the 70s in the list: \\(73, 75, 77, 78\\). Leaves \\(3, 5, 7\\) are shown, so the missing leaf on stem \\(7\\) is \\(8\\).",
+              "work": "\\(7 \\mid 8 = \\$78\\)"
+            },
+            {
+              "explain": "Count all leaves to verify \\(12\\) prices in total.",
+              "work": "\\(2 + 2 + 1 + 4 + 3 = 12\\)"
+            },
+            {
+              "explain": "Therefore, the missing leaves are \\(5\\) (in row 5) and \\(8\\) (in row 7).",
+              "work": "\\(\\text{Answer: } 5 \\text{ and } 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 170\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"80\" y1=\"18\" x2=\"80\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"68\" y=\"38\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">4</text><text x=\"98\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"68\" y=\"62\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">5</text><text x=\"98\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">□</text><text x=\"68\" y=\"86\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">6</text><text x=\"98\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"68\" y=\"110\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">7</text><text x=\"98\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"120\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"142\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"164\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">□</text><text x=\"68\" y=\"134\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">8</text><text x=\"98\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"120\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"142\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"192\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\">Key: 5 | 1 = $51</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4a-q19b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the completed stem-and-leaf plot of the \\(12\\) backpack prices, what is the median price?",
+          "options": [
+            "\\(\\$73\\)",
+            "\\(\\$74\\)",
+            "\\(\\$75\\)",
+            "\\(\\$76\\)"
+          ],
+          "answer": 1,
+          "hint": "With 12 prices, average the 6th value ($73) and the 7th value ($75)!",
+          "keyPoints": [
+            {
+              "text": "median price",
+              "note": "For n = 12, average the 6th and 7th ordered prices."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count from the smallest price to locate the 6th and 7th values: rows 4, 5, 6 have \\(2 + 2 + 1 = 5\\) values, so the 6th is \\(\\$73\\) and 7th is \\(\\$75\\).",
+              "work": "\\(\\text{6th} = \\$73, \\; \\text{7th} = \\$75\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 195\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"80\" y1=\"18\" x2=\"80\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"68\" y=\"38\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">4</text><text x=\"98\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"68\" y=\"62\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">5</text><text x=\"98\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><rect x=\"111\" y=\"48\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"120\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">5</text><text x=\"68\" y=\"86\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">6</text><text x=\"98\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"68\" y=\"110\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">7</text><circle cx=\"98\" cy=\"105\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"98\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">3</text><circle cx=\"120\" cy=\"105\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"120\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">5</text><text x=\"142\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><rect x=\"155\" y=\"96\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"164\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">8</text><text x=\"68\" y=\"134\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">8</text><text x=\"98\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"120\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"142\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"192\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\">Key: 5 | 1 = $51</text><text x=\"125\" y=\"187\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">6th = $73, 7th = $75 -> Median = ($73 + $75)/2 = $74</text></svg>"
+              }
+            },
+            {
+              "explain": "Average the two middle prices: \\(\\dfrac{73 + 75}{2} = \\dfrac{148}{2} = 74\\).",
+              "work": "\\(\\text{Median} = \\$74\\)"
+            },
+            {
+              "explain": "Verify 6 values are below \\(\\$74\\) and 6 values are above \\(\\$74\\).",
+              "work": "\\(\\text{Verified: } \\$74\\)"
+            },
+            {
+              "explain": "Therefore, the median price is \\(\\$74\\).",
+              "work": "\\(\\text{Answer: } \\$74\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 170\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"80\" y1=\"18\" x2=\"80\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"68\" y=\"38\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">4</text><text x=\"98\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"38\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"68\" y=\"62\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">5</text><text x=\"98\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><rect x=\"111\" y=\"48\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"120\" y=\"62\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">5</text><text x=\"68\" y=\"86\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">6</text><text x=\"98\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"68\" y=\"110\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">7</text><text x=\"98\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"120\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"142\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><rect x=\"155\" y=\"96\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"164\" y=\"110\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\">8</text><text x=\"68\" y=\"134\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\">8</text><text x=\"98\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"120\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"142\" y=\"134\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"192\" y=\"156\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\">Key: 5 | 1 = $51</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4a-q19c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The price of another backpack was recorded as \\(\\$73\\) and added to the \\(12\\) prices (current median \\(\\$74\\)). Does this new price increase or decrease the median?",
+          "options": [
+            "Decrease, because the 7th (middle) of the 13 prices is now $73 (down from $74).",
+            "Increase, because adding a positive price always raises the median.",
+            "Stay the same at $74.",
+            "Decrease to $72."
+          ],
+          "answer": 0,
+          "hint": "With 13 prices now, the median is the 7th value! Inserting another $73 gives ..., 60, 73, 73, 75, ... — what is the 7th value now?",
+          "keyPoints": [
+            {
+              "text": "increase or decrease",
+              "note": "With 13 values, the 7th ordered value becomes $73 < $74."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "With \\(13\\) prices, the median is the \\(\\dfrac{13 + 1}{2} = 7\\text{th}\\) ordered value.",
+              "work": "\\(n = 13 \\implies \\text{7th value}\\)"
+            },
+            {
+              "explain": "Insert \\(\\$73\\) into the ordered list around the middle: positions 5–8 are now \\(60, 73, 73, 75\\).",
+              "work": "\\(\\text{6th} = 73, \\; \\text{7th} = 73, \\; \\text{8th} = 75\\)"
+            },
+            {
+              "explain": "Compare the new median (\\(\\$73\\)) with the old median (\\(\\$74\\)): \\(\\$73 < \\$74\\).",
+              "work": "\\(\\$73 < \\$74\\)"
+            },
+            {
+              "explain": "Therefore, the new price decreases the current median to \\(\\$73\\).",
+              "work": "\\(\\text{Answer: Decrease (to } \\$73\\text{)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A soccer team had averaged \\(2.6\\) goals per match after \\(5\\) matches. After their sixth match, the average dropped to \\(2.5\\). How many goals did they score in that latest match?",
+          "options": [
+            "\\(1\\text{ goal}\\)",
+            "\\(2\\text{ goals}\\)",
+            "\\(3\\text{ goals}\\)",
+            "\\(0\\text{ goals}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find total goals after 5 matches (2.6 × 5 = 13) and total goals after 6 matches (2.5 × 6 = 15), then subtract!",
+          "keyPoints": [
+            {
+              "text": "A soccer team",
+              "note": "Work step by step and check units."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the key relationship or unit conversion.",
+              "work": "\\(5\\text{ matches: } 2.6 \\times 5 = 13; \\; 6\\text{ matches: } 2.5 \\times 6 = 15\\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(15 - 13 = 2\\text{ goals}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 2\\text{ goals}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2\\text{ goals}\\).",
+              "work": "\\(2\\text{ goals}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A list of integers has a mode of \\(32\\), mean \\(22\\), and median \\(m\\) (where \\(m\\) is in the list). The smallest number is \\(10\\). If \\(m\\) is replaced with \\(m + 10\\), the mean becomes \\(24\\). If \\(m\\) is replaced with \\(m - 8\\), the median becomes \\(m - 4\\). What is \\(m\\)?",
+          "options": [
+            "\\(18\\)",
+            "\\(20\\)",
+            "\\(22\\)",
+            "\\(24\\)"
+          ],
+          "answer": 1,
+          "hint": "Adding 10 to the sum raised the mean by 2 (from 22 to 24), so there are 10 ÷ 2 = 5 numbers (total sum = 5 × 22 = 110)! With mode 32 and median shifting to m - 4, the 5 numbers must be 10, m - 4, m, 32, 32!",
+          "keyPoints": [
+            {
+              "text": "mean becomes \\(24\\)",
+              "note": "Increase of 10 in sum ÷ increase of 2 in mean -> n = 5 numbers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Replacing \\(m\\) by \\(m + 10\\) adds \\(10\\) to the total sum and increases the mean by \\(24 - 22 = 2\\), so there are \\(n = \\dfrac{10}{2} = 5\\) numbers with original sum \\(5 \\times 22 = 110\\).",
+              "work": "\\(n = \\dfrac{10}{2} = 5, \\quad \\text{Sum} = 5 \\times 22 = 110\\)"
+            },
+            {
+              "explain": "Since \\(32\\) is the mode and \\(m\\) is the 3rd (middle) number, the two largest numbers must both be \\(32\\): \\(10, \\; \\square, \\; m, \\; 32, \\; 32\\).",
+              "work": "\\(10, \\; \\square, \\; m, \\; 32, \\; 32\\)"
+            },
+            {
+              "explain": "When \\(m\\) is replaced by \\(m - 8\\), the new median is \\(m - 4\\) (between \\(m - 8\\) and \\(m\\)), so the 2nd number MUST be \\(m - 4\\)!",
+              "work": "\\(10 + (m - 4) + m + 32 + 32 = 110\\)"
+            },
+            {
+              "explain": "Solve for \\(m\\): \\(2m + 70 = 110 \\implies 2m = 40 \\implies m = 20\\).",
+              "work": "\\(m = 20\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2568,6 +3066,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 108\" width=\"65%\" height=\"auto\" style=\"max-width:546px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"420\" height=\"108\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"12\" y=\"12\" width=\"86\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"38\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"12\" y=\"66\" width=\"86\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"55\" y=\"56\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Tally</text><text x=\"55\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#0f172a\">Frequency</text><rect x=\"98\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"98\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"129\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">0 hours</text><line x1=\"124\" y1=\"44\" x2=\"124\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"128.5\" y1=\"44\" x2=\"128.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"160\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"160\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"191\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">1 hour</text><line x1=\"179.5\" y1=\"44\" x2=\"179.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"183.5\" y1=\"44\" x2=\"183.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"187.5\" y1=\"44\" x2=\"187.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"191.5\" y1=\"44\" x2=\"191.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"177.5\" y1=\"59\" x2=\"193.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"199.5\" y1=\"44\" x2=\"199.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"222\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"222\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"253\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">2 hours</text><line x1=\"245.5\" y1=\"44\" x2=\"245.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"254.5\" y1=\"44\" x2=\"254.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"284\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"284\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"315\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">3 hours</text><line x1=\"307.5\" y1=\"44\" x2=\"307.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"312\" y1=\"44\" x2=\"312\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"316.5\" y1=\"44\" x2=\"316.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"346\" y=\"12\" width=\"62\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"38\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><rect x=\"346\" y=\"66\" width=\"62\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"377\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">4 hours</text><line x1=\"360.5\" y1=\"44\" x2=\"360.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"364.5\" y1=\"44\" x2=\"364.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"368.5\" y1=\"44\" x2=\"368.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"372.5\" y1=\"44\" x2=\"372.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"358.5\" y1=\"59\" x2=\"374.5\" y2=\"45\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"380.5\" y1=\"44\" x2=\"380.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"385\" y1=\"44\" x2=\"385\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"389.5\" y1=\"44\" x2=\"389.5\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.4\"/></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4a-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether this investigation is a census or a survey: \"The average price of petrol in Sydney was estimated by averaging the price at 40 petrol stations.\"",
+          "options": [
+            "Survey, because only a sample of 40 petrol stations was checked rather than every station in Sydney.",
+            "Census, because 40 is a large number of petrol stations.",
+            "Census, because an average was calculated.",
+            "Neither a census nor a survey."
+          ],
+          "answer": 0,
+          "hint": "A census collects data from the ENTIRE population; a survey collects data from a sample (subset).",
+          "keyPoints": [
+            {
+              "text": "State whether this",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\text{40 stations is a sample of all Sydney stations}\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(\\text{Survey}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } \\text{Survey}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Survey, because only a sample of 40 petrol stations was checked rather than every station in Sydney..",
+              "work": "\\(\\text{Survey}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

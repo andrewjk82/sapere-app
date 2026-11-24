@@ -2446,6 +2446,172 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the value of \\(y\\) when \\(x = 0\\) for \\(y = 2x + 3\\).",
+          "options": [
+            "\\(y = 0\\)",
+            "\\(y = 2\\)",
+            "\\(y = 3\\)",
+            "\\(y = 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute x = 0 into y = 2(0) + 3.",
+          "keyPoints": [
+            {
+              "text": "Calculate the",
+              "note": "Apply the core concept carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or first step.",
+              "work": "\\(y = 2(0) + 3\\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(y = 3\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } y = 3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(y = 3\\).",
+              "work": "\\(y = 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What are the coordinates of point \\(A\\) on the number plane shown?",
+          "options": [
+            "\\((-2, 3)\\)",
+            "\\((3, -2)\\)",
+            "\\((2, 3)\\)",
+            "\\((-2, -3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Read x (horizontal) first: 2 units LEFT = -2. Read y (vertical) second: 3 units UP = 3.",
+          "keyPoints": [
+            {
+              "text": "point \\(A\\)",
+              "note": "Always write (x, y) with x first."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Trace vertically down from \\(A\\) to the \\(x\\)-axis: \\(x = -2\\).",
+              "work": "\\(x = -2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"37\" y1=\"24\" x2=\"37\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"200\" x2=\"213\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"59\" y1=\"24\" x2=\"59\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"178\" x2=\"213\" y2=\"178\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"81\" y1=\"24\" x2=\"81\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"156\" x2=\"213\" y2=\"156\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"103\" y1=\"24\" x2=\"103\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"134\" x2=\"213\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"125\" y1=\"24\" x2=\"125\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"112\" x2=\"213\" y2=\"112\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"147\" y1=\"24\" x2=\"147\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"90\" x2=\"213\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"169\" y1=\"24\" x2=\"169\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"68\" x2=\"213\" y2=\"68\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"191\" y1=\"24\" x2=\"191\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"46\" x2=\"213\" y2=\"46\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"213\" y1=\"24\" x2=\"213\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"24\" x2=\"213\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"30.400000000000006\" y1=\"112\" x2=\"219.6\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"125\" y1=\"17.400000000000006\" x2=\"125\" y2=\"206.6\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"37\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-4</text><text x=\"117\" y=\"203\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-4</text><text x=\"59\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-3</text><text x=\"117\" y=\"181\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-3</text><text x=\"81\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-2</text><text x=\"117\" y=\"159\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-2</text><text x=\"103\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-1</text><text x=\"117\" y=\"137\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-1</text><text x=\"147\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">1</text><text x=\"117\" y=\"93\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">1</text><text x=\"169\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2</text><text x=\"117\" y=\"71\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2</text><text x=\"191\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">3</text><text x=\"117\" y=\"49\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">3</text><text x=\"213\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4</text><text x=\"117\" y=\"27\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4</text><line x1=\"81\" y1=\"112\" x2=\"81\" y2=\"46\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><line x1=\"125\" y1=\"46\" x2=\"81\" y2=\"46\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><circle cx=\"81\" cy=\"46\" r=\"5\" fill=\"#dc2626\"/><text x=\"71\" y=\"40\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">A</text><text x=\"221.8\" y=\"116\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">x</text><text x=\"130\" y=\"17.400000000000006\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">y</text><text x=\"125\" y=\"242\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Point A: x = -2 (left 2), y = 3 (up 3) -> (-2, 3)</text></svg>"
+              }
+            },
+            {
+              "explain": "Trace horizontally right from \\(A\\) to the \\(y\\)-axis: \\(y = 3\\).",
+              "work": "\\(y = 3\\)"
+            },
+            {
+              "explain": "Combine as \\((x, y) = (-2, 3)\\).",
+              "work": "\\(A = (-2, 3)\\)"
+            },
+            {
+              "explain": "Therefore, the coordinates of point \\(A\\) are \\((-2, 3)\\).",
+              "work": "\\(\\text{Answer: } (-2, 3)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 224\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"224\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"37\" y1=\"24\" x2=\"37\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"200\" x2=\"213\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"59\" y1=\"24\" x2=\"59\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"178\" x2=\"213\" y2=\"178\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"81\" y1=\"24\" x2=\"81\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"156\" x2=\"213\" y2=\"156\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"103\" y1=\"24\" x2=\"103\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"134\" x2=\"213\" y2=\"134\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"125\" y1=\"24\" x2=\"125\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"112\" x2=\"213\" y2=\"112\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"147\" y1=\"24\" x2=\"147\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"90\" x2=\"213\" y2=\"90\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"169\" y1=\"24\" x2=\"169\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"68\" x2=\"213\" y2=\"68\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"191\" y1=\"24\" x2=\"191\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"46\" x2=\"213\" y2=\"46\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"213\" y1=\"24\" x2=\"213\" y2=\"200\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"37\" y1=\"24\" x2=\"213\" y2=\"24\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"30.400000000000006\" y1=\"112\" x2=\"219.6\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"125\" y1=\"17.400000000000006\" x2=\"125\" y2=\"206.6\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"37\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-4</text><text x=\"117\" y=\"203\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-4</text><text x=\"59\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-3</text><text x=\"117\" y=\"181\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-3</text><text x=\"81\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-2</text><text x=\"117\" y=\"159\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-2</text><text x=\"103\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-1</text><text x=\"117\" y=\"137\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">-1</text><text x=\"147\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">1</text><text x=\"117\" y=\"93\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">1</text><text x=\"169\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2</text><text x=\"117\" y=\"71\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2</text><text x=\"191\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">3</text><text x=\"117\" y=\"49\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">3</text><text x=\"213\" y=\"125\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4</text><text x=\"117\" y=\"27\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4</text><circle cx=\"81\" cy=\"46\" r=\"5\" fill=\"#0f172a\"/><text x=\"71\" y=\"40\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">A</text><text x=\"221.8\" y=\"116\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">x</text><text x=\"130\" y=\"17.400000000000006\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">y</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4a-q16a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the table of values for \\(y = -x - 1\\) at \\(x = -2, -1, 0, 1, 2\\). What are the five \\(y\\)-values?",
+          "options": [
+            "\\(1, 0, -1, -2, -3\\)",
+            "\\(-3, -2, -1, 0, 1\\)",
+            "\\(1, 0, 1, 2, 3\\)",
+            "\\(-1, 0, -1, -2, -3\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember -(-2) = +2! So at x = -2, y = 2 - 1 = 1; at x = -1, y = 1 - 1 = 0; and y drops by 1 each step.",
+          "keyPoints": [
+            {
+              "text": "Complete the table",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(y(-2)=1, \\; y(-1)=0, \\; y(0)=-1\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(1, 0, -1, -2, -3\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 1, 0, -1, -2, -3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1, 0, -1, -2, -3\\).",
+              "work": "\\(1, 0, -1, -2, -3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q17b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Does the point \\((-6, -13)\\) lie on the line \\(y = 2x - 1\\)?",
+          "options": [
+            "Yes, because substituting x = -6 gives y = 2(-6) - 1 = -13.",
+            "No, because substituting x = -6 gives y = -11.",
+            "No, because substituting x = -6 gives y = 11.",
+            "Yes, because -6 and -13 are both negative."
+          ],
+          "answer": 0,
+          "hint": "Substitute x = -6 into y = 2x - 1 and check whether it equals -13!",
+          "keyPoints": [
+            {
+              "text": "Does the point",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(y = 2(-6) - 1 = -12 - 1\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(y = -13 \\implies \\text{Yes}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } \\text{Yes}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is Yes, because substituting x = -6 gives y = 2(-6) - 1 = -13..",
+              "work": "\\(\\text{Yes}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5123,6 +5289,172 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 184\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"120\" x2=\"254\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"100\" y1=\"16\" x2=\"100\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"260\" y=\"124\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">x</text><text x=\"88\" y=\"22\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">y</text><line x1=\"112\" y1=\"168\" x2=\"224.8\" y2=\"17.599999999999994\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"172\" cy=\"88\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"196\" cy=\"56\" r=\"4\" fill=\"#0f172a\"/><text x=\"180\" y=\"84\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">A(3, 2)</text><text x=\"204\" y=\"54\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">B(4, 4)</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4a-q17a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the linear rule representing the table: \\(x = -2, -1, 0, 1, 2\\) and \\(y = -5, -3, -1, 1, 3\\).",
+          "options": [
+            "\\(y = 2x - 1\\)",
+            "\\(y = 2x + 1\\)",
+            "\\(y = -2x - 1\\)",
+            "\\(y = x - 1\\)"
+          ],
+          "answer": 0,
+          "hint": "As x increases by 1, y increases by 2 (so gradient m = 2). At x = 0, y = -1 (so b = -1).",
+          "keyPoints": [
+            {
+              "text": "Find the linear",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(m = +2, \\quad b = -1\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(y = 2x - 1\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } y = 2x - 1\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(y = 2x - 1\\).",
+              "work": "\\(y = 2x - 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q16c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the graphs of \\(y = -x - 1\\) and \\(y = \\dfrac{1}{2}\\) shown on the Cartesian plane, solve \\(-x - 1 = \\dfrac{1}{2}\\) graphically.",
+          "options": [
+            "\\(x = -1.5\\)",
+            "\\(x = -2\\)",
+            "\\(x = -0.5\\)",
+            "\\(x = 1.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the point where the red line (y = -x - 1) crosses the blue horizontal line (y = 1/2), and read its x-coordinate directly below on the x-axis!",
+          "keyPoints": [
+            {
+              "text": "graphically",
+              "note": "Read the x-coordinate of the intersection point (-1.5, 0.5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the intersection point of \\(y = -x - 1\\) (red) and \\(y = \\dfrac{1}{2}\\) (blue): it sits at \\((-1.5, 0.5)\\).",
+              "work": "\\(\\text{Intersection} = (-1.5, 0.5)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 260\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"260\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"45\" y1=\"26\" x2=\"45\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"206\" x2=\"225\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"75\" y1=\"26\" x2=\"75\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"176\" x2=\"225\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"26\" x2=\"105\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"146\" x2=\"225\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"135\" y1=\"26\" x2=\"135\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"116\" x2=\"225\" y2=\"116\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"165\" y1=\"26\" x2=\"165\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"86\" x2=\"225\" y2=\"86\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"195\" y1=\"26\" x2=\"195\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"56\" x2=\"225\" y2=\"56\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"225\" y1=\"26\" x2=\"225\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"26\" x2=\"225\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"116\" x2=\"234\" y2=\"116\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"135\" y1=\"17\" x2=\"135\" y2=\"215\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"45\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-3</text><text x=\"127\" y=\"209\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-3</text><text x=\"75\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-2</text><text x=\"127\" y=\"179\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-2</text><text x=\"105\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-1</text><text x=\"127\" y=\"149\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-1</text><text x=\"165\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">1</text><text x=\"127\" y=\"89\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">1</text><text x=\"195\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">2</text><text x=\"127\" y=\"59\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">2</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">3</text><text x=\"127\" y=\"29\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">3</text><line x1=\"51\" y1=\"62\" x2=\"198\" y2=\"209\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"42\" y1=\"101\" x2=\"228\" y2=\"101\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"201\" y=\"95\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">y = 1/2</text><text x=\"174\" y=\"194\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">y = -x - 1</text><line x1=\"90\" y1=\"101\" x2=\"90\" y2=\"116\" stroke=\"#16a34a\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/><circle cx=\"90\" cy=\"101\" r=\"5\" fill=\"#16a34a\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><text x=\"84\" y=\"91\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#15803d\">(-1.5, 0.5)</text><text x=\"135\" y=\"252\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Intersection at (-1.5, 0.5) -> x = -1.5</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the \\(x\\)-coordinate of the intersection point: \\(x = -1.5\\).",
+              "work": "\\(x = -1.5\\)"
+            },
+            {
+              "explain": "Verify algebraically: \\(-(-1.5) - 1 = 1.5 - 1 = 0.5 = \\dfrac{1}{2}\\). Exact!",
+              "work": "\\(1.5 - 1 = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Therefore, the solution is \\(x = -1.5\\).",
+              "work": "\\(\\text{Answer: } x = -1.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 234\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"234\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"45\" y1=\"26\" x2=\"45\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"206\" x2=\"225\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"75\" y1=\"26\" x2=\"75\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"176\" x2=\"225\" y2=\"176\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"26\" x2=\"105\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"146\" x2=\"225\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"135\" y1=\"26\" x2=\"135\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"116\" x2=\"225\" y2=\"116\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"165\" y1=\"26\" x2=\"165\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"86\" x2=\"225\" y2=\"86\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"195\" y1=\"26\" x2=\"195\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"56\" x2=\"225\" y2=\"56\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"225\" y1=\"26\" x2=\"225\" y2=\"206\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"45\" y1=\"26\" x2=\"225\" y2=\"26\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"36\" y1=\"116\" x2=\"234\" y2=\"116\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"135\" y1=\"17\" x2=\"135\" y2=\"215\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"45\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-3</text><text x=\"127\" y=\"209\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-3</text><text x=\"75\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-2</text><text x=\"127\" y=\"179\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-2</text><text x=\"105\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-1</text><text x=\"127\" y=\"149\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">-1</text><text x=\"165\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">1</text><text x=\"127\" y=\"89\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">1</text><text x=\"195\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">2</text><text x=\"127\" y=\"59\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">2</text><text x=\"225\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">3</text><text x=\"127\" y=\"29\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" fill=\"#334155\">3</text><line x1=\"51\" y1=\"62\" x2=\"198\" y2=\"209\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"42\" y1=\"101\" x2=\"228\" y2=\"101\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><text x=\"201\" y=\"95\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">y = 1/2</text><text x=\"174\" y=\"194\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">y = -x - 1</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4a-q23a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The cost \\(C\\) (in dollars) of a hire car for distance \\(d\\) (in km) is: \\(d = 0, 5, 10, 15, 20\\) and \\(C = \\$10.00, \\$15.50, \\$21.00, \\$26.50, \\$32.00\\). Find the rule relating \\(C\\) and \\(d\\).",
+          "options": [
+            "\\(C = 1.1d + 10\\)",
+            "\\(C = 5.5d + 10\\)",
+            "\\(C = 1.5d + 10\\)",
+            "\\(C = 1.1d\\)"
+          ],
+          "answer": 0,
+          "hint": "Every +5 km adds +$5.50, so the rate per 1 km is 5.50 ÷ 5 = $1.10! The starting fee at d = 0 is $10.",
+          "keyPoints": [
+            {
+              "text": "The cost \\(C\\)",
+              "note": "Work step by step and check units."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the key relationship or unit conversion.",
+              "work": "\\(m = \\dfrac{5.50}{5} = 1.1, \\quad b = 10\\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(C = 1.1d + 10\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } C = 1.1d + 10\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(C = 1.1d + 10\\).",
+              "work": "\\(C = 1.1d + 10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q23b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the hire car cost rule \\(C = 1.1d + 10\\), find the cost in dollars to travel \\(80\\text{ km}\\).",
+          "options": [
+            "\\(\\$88\\)",
+            "\\(\\$98\\)",
+            "\\(\\$90\\)",
+            "\\(\\$108\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute d = 80 into C = 1.1(80) + 10!",
+          "keyPoints": [
+            {
+              "text": "Using the hire",
+              "note": "Work step by step and check units."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the key relationship or unit conversion.",
+              "work": "\\(C = 1.1 \\times 80 + 10\\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(88 + 10 = \\$98\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } \\$98\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$98\\).",
+              "work": "\\(\\$98\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

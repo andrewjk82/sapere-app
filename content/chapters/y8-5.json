@@ -1571,6 +1571,52 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 168\" width=\"65%\" height=\"auto\" style=\"max-width:390px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"76\" y1=\"112\" x2=\"176\" y2=\"28\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"146\" y1=\"144\" x2=\"246\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"64\" y1=\"42\" x2=\"246\" y2=\"132\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"140,48 150,50 148,60\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"210,80 220,82 218,92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"112\" y=\"104\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">110°</text><text x=\"160\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"800\" fill=\"#0f172a\">x°</text><text x=\"64\" y=\"122\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"180\" y=\"28\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"132\" y=\"154\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"250\" y=\"60\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y8-t4a-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the values of both pronumerals \\(x\\) and \\(y\\) in the parallel-lines diagram shown.",
+          "options": [
+            "\\(x = 108^\\circ, \\; y = 59^\\circ\\)",
+            "\\(x = 72^\\circ, \\; y = 59^\\circ\\)",
+            "\\(x = 108^\\circ, \\; y = 121^\\circ\\)",
+            "\\(x = 121^\\circ, \\; y = 59^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Find y using angles on a straight line (180° - 121° = 59°), and find x using co-interior angles between the parallel vertical lines (180° - 72° = 108°)!",
+          "keyPoints": [
+            {
+              "text": "both pronumerals",
+              "note": "y + 121° = 180° (straight line); x + 72° = 180° (co-interior)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find \\(y\\) using supplementary angles on a straight line with \\(121^\\circ\\): \\(y = 180^\\circ - 121^\\circ = 59^\\circ\\).",
+              "work": "\\(y = 180^\\circ - 121^\\circ = 59^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 210\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"76\" y1=\"26\" x2=\"76\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><line x1=\"166\" y1=\"58\" x2=\"166\" y2=\"166\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><line x1=\"76\" y1=\"26\" x2=\"166\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"150\" x2=\"232\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"71,92 76,84 81,92\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><polyline points=\"161,84 166,76 171,84\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.7\"/><text x=\"98\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">72°</text><text x=\"148\" y=\"72\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\">x=108°</text><text x=\"96\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">59°</text><text x=\"148\" y=\"128\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#15803d\">y=59°</text><text x=\"188\" y=\"114\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">121°</text><text x=\"135\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">y = 180° - 121° = 59° (green); x = 180° - 72° = 108° (red, co-interior)</text></svg>"
+              }
+            },
+            {
+              "explain": "Find \\(x\\) using co-interior angles between the two parallel vertical lines (blue) with \\(72^\\circ\\).",
+              "work": "\\(x + 72^\\circ = 180^\\circ\\)"
+            },
+            {
+              "explain": "Subtract \\(72^\\circ\\) from \\(180^\\circ\\): \\(x = 108^\\circ\\).",
+              "work": "\\(x = 108^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 108^\\circ\\) and \\(y = 59^\\circ\\).",
+              "work": "\\(x = 108^\\circ, \\; y = 59^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 184\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"76\" y1=\"26\" x2=\"76\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"166\" y1=\"58\" x2=\"166\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"26\" x2=\"166\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"150\" x2=\"232\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"71,92 76,84 81,92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"161,84 166,76 171,84\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"98\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">72°</text><text x=\"148\" y=\"72\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">x</text><text x=\"96\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">59°</text><text x=\"148\" y=\"128\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">y</text><text x=\"188\" y=\"114\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">121°</text></svg>"
+          }
         }
       ]
     },
@@ -1813,6 +1859,52 @@
             "page": 11,
             "note": "The apex angle label is read as m (the answer key uses m = 70)."
           }
+        },
+        {
+          "id": "khs23-y8-t4a-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the diagram, both \\(ABDC\\) and \\(EFGH\\) are rectangles, and points \\(B, F, D\\) are collinear. Find the sum of \\(\\angle CIG\\) and \\(\\angle GFD\\).",
+          "options": [
+            "\\(45^\\circ\\)",
+            "\\(90^\\circ\\)",
+            "\\(120^\\circ\\)",
+            "\\(180^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "Draw a horizontal construction line XY through G parallel to AC and BD! By alternate angles, ∠CIG = ∠IGX and ∠GFD = ∠XGF — and together they form corner ∠IGF of rectangle EFGH!",
+          "keyPoints": [
+            {
+              "text": "sum of \\(\\angle CIG\\) and \\(\\angle GFD\\)",
+              "note": "Add a parallel line XY through G so alternate angles split the 90° corner ∠IGF."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add a horizontal construction line \\(XY\\) through \\(G\\) parallel to \\(AC\\) and \\(BD\\) (red dashed line).",
+              "work": "\\(XY \\parallel AC \\parallel BD\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"74\" width=\"180\" height=\"84\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polygon points=\"80,54 144,158 196,126 132,22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"82\" r=\"7\" fill=\"#64748b\" fill-opacity=\"0.5\"/><circle cx=\"158\" cy=\"153\" r=\"7\" fill=\"#64748b\" fill-opacity=\"0.5\"/><line x1=\"36\" y1=\"126\" x2=\"262\" y2=\"126\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-dasharray=\"5,3\"/><text x=\"26\" y=\"130\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">X</text><text x=\"270\" y=\"130\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">Y</text><text x=\"170\" y=\"122\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#2563eb\">90°</text><text x=\"44\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">A</text><text x=\"44\" y=\"162\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">B</text><text x=\"244\" y=\"76\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">C</text><text x=\"244\" y=\"162\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">D</text><text x=\"72\" y=\"54\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">E</text><text x=\"136\" y=\"172\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">F</text><text x=\"206\" y=\"130\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">G</text><text x=\"132\" y=\"16\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">H</text><text x=\"172\" y=\"68\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">I</text><text x=\"155\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Construction line XY || AC || BD splits 90° corner ∠IGF into ∠CIG + ∠GFD!</text></svg>"
+              }
+            },
+            {
+              "explain": "By alternate angles on \\(AC \\parallel XY\\), \\(\\angle IGX = \\angle CIG\\).",
+              "work": "\\(\\angle IGX = \\angle CIG\\)"
+            },
+            {
+              "explain": "By alternate angles on \\(XY \\parallel BD\\), \\(\\angle XGF = \\angle GFD\\).",
+              "work": "\\(\\angle XGF = \\angle GFD\\)"
+            },
+            {
+              "explain": "Since \\(EFGH\\) is a rectangle, \\(\\angle IGF = 90^\\circ\\), so \\(\\angle CIG + \\angle GFD = \\angle IGX + \\angle XGF = 90^\\circ\\).",
+              "work": "\\(\\angle CIG + \\angle GFD = 90^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"74\" width=\"180\" height=\"84\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polygon points=\"80,54 144,158 196,126 132,22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"82\" r=\"7\" fill=\"#64748b\" fill-opacity=\"0.5\"/><circle cx=\"158\" cy=\"153\" r=\"7\" fill=\"#64748b\" fill-opacity=\"0.5\"/><text x=\"44\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">A</text><text x=\"44\" y=\"162\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">B</text><text x=\"244\" y=\"76\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">C</text><text x=\"244\" y=\"162\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">D</text><text x=\"72\" y=\"54\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">E</text><text x=\"136\" y=\"172\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">F</text><text x=\"206\" y=\"130\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">G</text><text x=\"132\" y=\"16\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">H</text><text x=\"172\" y=\"68\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">I</text></svg>"
+          }
         }
       ]
     },
@@ -1998,6 +2090,52 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 168\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,24 56,146 262,86\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">x°</text><text x=\"94\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">(x + 25)°</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">(x − 40)°</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y8-t4a-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the size of \\(\\angle ABC\\) in triangle \\(ABC\\) shown (\\(\\angle A = 35^\\circ\\), \\(\\angle C = 27^\\circ\\)).",
+          "options": [
+            "\\(62^\\circ\\)",
+            "\\(118^\\circ\\)",
+            "\\(128^\\circ\\)",
+            "\\(108^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "The angles in a triangle sum to 180°. Subtract 35° and 27° from 180°!",
+          "keyPoints": [
+            {
+              "text": "\\angle ABC",
+              "note": "∠ABC = 180° - 35° - 27°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the angle sum of a triangle (\\(180^\\circ\\)): \\(\\angle ABC + 35^\\circ + 27^\\circ = 180^\\circ\\).",
+              "work": "\\(\\angle ABC = 180^\\circ - 35^\\circ - 27^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 175\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,30 114,122 238,122\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><path d=\"M 106 107 A 17 17 0 0 1 131 122 L 114 122 Z\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.2\"/><text x=\"92\" y=\"66\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">35°</text><text x=\"192\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">27°</text><text x=\"128\" y=\"112\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">118°</text><text x=\"52\" y=\"32\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"106\" y=\"138\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"246\" y=\"132\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"145\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">180° - (35° + 27°) = 180° - 62° = 118°</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two known angles: \\(35^\\circ + 27^\\circ = 62^\\circ\\).",
+              "work": "\\(35^\\circ + 27^\\circ = 62^\\circ\\)"
+            },
+            {
+              "explain": "Subtract from \\(180^\\circ\\): \\(180^\\circ - 62^\\circ = 118^\\circ\\).",
+              "work": "\\(\\angle ABC = 118^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\angle ABC = 118^\\circ\\).",
+              "work": "\\(\\text{Answer: } 118^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 148\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,30 114,122 238,122\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><path d=\"M 106 107 A 17 17 0 0 1 131 122 L 114 122 Z\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"92\" y=\"66\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">35°</text><text x=\"192\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">27°</text><text x=\"52\" y=\"32\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"106\" y=\"138\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"246\" y=\"132\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text></svg>"
           }
         }
       ]
