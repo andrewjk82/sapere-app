@@ -3205,6 +3205,56 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q1b",
+          "type": "mc",
+          "stem": "Simplify \\(2y-y(3-4y)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-y+4y^{2}\\)",
+            "\\(-y-4y^{2}\\)",
+            "\\(5y-4y^{2}\\)",
+            "\\(-y^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the bracket first: \\(-y(3-4y)\\) multiplies BOTH terms inside by \\(-y\\) (watch the signs), then collect like terms.",
+          "steps": [
+            {
+              "explain": "Expand \\(-y(3-4y)\\): \\(-y\\times 3=-3y\\) and \\(-y\\times(-4y)=+4y^{2}\\) (a negative times a negative is positive).",
+              "work": "\\(-y(3-4y)=-3y+4y^{2}\\)"
+            },
+            {
+              "explain": "Write the whole expression.",
+              "work": "\\(2y-3y+4y^{2}\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(2y-3y=-y\\).",
+              "work": "\\(=-y+4y^{2}\\)"
+            },
+            {
+              "explain": "Option B has the wrong sign on \\(4y^{2}\\) (a common error from \\(-y\\times-4y\\)); option C adds instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Expand the bracket carefully with the negative sign, then collect like terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8565,6 +8615,106 @@
           ],
           "answer": 0,
           "solution": "The correct answer is \\(\\frac{44}{7}\\)."
+        },
+        {
+          "id": "bhhs2010-y10-q1c",
+          "type": "mc",
+          "stem": "Solve \\(\\dfrac{3x-2}{5}=2+x\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=-6\\)",
+            "\\(x=6\\)",
+            "\\(x=-\\dfrac{12}{8}\\)",
+            "\\(x=-\\dfrac{8}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Clear the fraction by multiplying BOTH sides by 5 (every term on the right too), then collect the \\(x\\) terms.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 5. The right side \\(2+x\\) must be multiplied as a whole: \\(5(2+x)=10+5x\\).",
+              "work": "\\(3x-2=5(2+x)=10+5x\\)"
+            },
+            {
+              "explain": "Subtract \\(5x\\) from both sides to collect the \\(x\\) terms on the left, and add 2 to both sides.",
+              "work": "\\(3x-5x=10+2\\ \\Rightarrow\\ -2x=12\\)"
+            },
+            {
+              "explain": "Divide by \\(-2\\).",
+              "work": "\\(x=-6\\)"
+            },
+            {
+              "explain": "Check: LHS \\(=\\dfrac{3(-6)-2}{5}=\\dfrac{-20}{5}=-4\\); RHS \\(=2+(-6)=-4\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Multiply every term by the denominator, then collect x terms on one side."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q4a",
+          "type": "mc",
+          "stem": "Solve \\(|3x-2|=5\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=\\dfrac{7}{3}\\) or \\(x=-1\\)",
+            "\\(x=\\dfrac{7}{3}\\) only",
+            "\\(x=-1\\) only",
+            "\\(x=\\dfrac{3}{7}\\) or \\(x=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(|A|=5\\) means \\(A=5\\) OR \\(A=-5\\): solve both equations.",
+          "steps": [
+            {
+              "explain": "The absolute value equals 5 when the inside is 5 or \\(-5\\).",
+              "work": "\\(3x-2=5\\quad\\text{or}\\quad 3x-2=-5\\)"
+            },
+            {
+              "explain": "Case 1: add 2, divide by 3.",
+              "work": "\\(3x=7\\ \\Rightarrow\\ x=\\dfrac{7}{3}\\)"
+            },
+            {
+              "explain": "Case 2: add 2, divide by 3.",
+              "work": "\\(3x=-3\\ \\Rightarrow\\ x=-1\\)"
+            },
+            {
+              "explain": "Check: \\(\\left|3\\cdot\\dfrac{7}{3}-2\\right|=5\\) ✓ and \\(|3(-1)-2|=|-5|=5\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Absolute value equals a positive number: two cases, plus and minus."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -13504,6 +13654,56 @@
           "meta": {
             "source": "Fort St High School Year 10 Common Task 2 2023",
             "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q3f",
+          "type": "mc",
+          "stem": "Factorise completely \\(4x^{2}-16\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(4(x-2)(x+2)\\)",
+            "\\((2x-4)(2x+4)\\)",
+            "\\(4(x-4)(x+4)\\)",
+            "\\(4(x-2)^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Take out the highest common factor 4 FIRST, then use the difference of two squares \\(a^{2}-b^{2}=(a-b)(a+b)\\).",
+          "steps": [
+            {
+              "explain": "Take out the common factor 4 from both terms.",
+              "work": "\\(4x^{2}-16=4\\left(x^{2}-4\\right)\\)"
+            },
+            {
+              "explain": "\\(x^{2}-4=x^{2}-2^{2}\\) is a difference of two squares.",
+              "work": "\\(x^{2}-4=(x-2)(x+2)\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(4x^{2}-16=4(x-2)(x+2)\\)"
+            },
+            {
+              "explain": "'Completely' means no further factorising is possible. Option B is a correct factorisation of the expression but NOT complete (each bracket still has a common factor 2); option C uses 16 instead of 4 (\\(\\sqrt{4}=2\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Factorise completely",
+              "note": "Highest common factor first, then the difference of two squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
             "grade": "10",
             "origin": "teacher"
           }

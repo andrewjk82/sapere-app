@@ -2669,6 +2669,66 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q5bii",
+          "type": "mc",
+          "stem": "The solid is formed by joining a cone (radius 2, height \\(2\\sqrt{3}\\)) and a hemisphere (radius 2). Calculate the volume of the solid correct to 2 decimal places.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 340\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><path d=\"M90,110 A100,100 0 0 1 290,110\" fill=\"#fef3c7\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"110\" rx=\"100\" ry=\"22\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"90,110 290,110 190,300\" fill=\"#dbeafe\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"190.0\" y2=\"300.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"290.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polyline points=\"190,124 204,124 204,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"182.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><path d=\"M190.0,256 A44,44 0 0 1 190.0,256\" fill=\"none\" stroke=\"none\"/><path d=\"M190,250 A50,50 0 0 0 166.7,255.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"330.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to Scale</text></svg>"
+          },
+          "options": [
+            "\\(31.27\\)",
+            "\\(14.51\\)",
+            "\\(48.02\\)",
+            "\\(16.76\\)"
+          ],
+          "answer": 0,
+          "hint": "Volume \\(=\\) cone \\(\\dfrac{1}{3}\\pi r^{2}h\\) \\(+\\) hemisphere \\(\\dfrac{1}{2}\\left(\\dfrac{4}{3}\\pi r^{3}\\right)\\). Add them.",
+          "steps": [
+            {
+              "explain": "The solid is a cone with a hemisphere on top, with the same radius \\(r=2\\). Add the two volumes.",
+              "work": "\\(V=V_{\\text{cone}}+V_{\\text{hemisphere}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 340\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><path d=\"M90,110 A100,100 0 0 1 290,110\" fill=\"#fef3c7\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"110\" rx=\"100\" ry=\"22\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"90,110 290,110 190,300\" fill=\"#dbeafe\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"190.0\" y2=\"300.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"290.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polyline points=\"190,124 204,124 204,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"182.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><path d=\"M190.0,256 A44,44 0 0 1 190.0,256\" fill=\"none\" stroke=\"none\"/><path d=\"M190,250 A50,50 0 0 0 166.7,255.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"190.0\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">hemisphere</text><text x=\"190.0\" y=\"176.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1d4ed8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cone</text><text x=\"330.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to Scale</text></svg>"
+              }
+            },
+            {
+              "explain": "Cone: \\(V_{1}=\\dfrac{1}{3}\\pi r^{2}h\\) with \\(r=2\\), \\(h=2\\sqrt{3}\\).",
+              "work": "\\(V_{1}=\\dfrac{1}{3}\\pi(2)^{2}(2\\sqrt{3})=\\dfrac{8\\sqrt{3}\\pi}{3}\\approx 14.51\\)"
+            },
+            {
+              "explain": "Hemisphere: HALF of a sphere, \\(V_{2}=\\dfrac{1}{2}\\times\\dfrac{4}{3}\\pi r^{3}=\\dfrac{2}{3}\\pi r^{3}\\).",
+              "work": "\\(V_{2}=\\dfrac{2}{3}\\pi(2)^{3}=\\dfrac{16\\pi}{3}\\approx 16.76\\)"
+            },
+            {
+              "explain": "Add and round to 2 decimal places.",
+              "work": "\\(V=14.51+16.76=31.27\\)"
+            },
+            {
+              "explain": "Option B is only the cone, option D only the hemisphere, option C uses a whole sphere (\\(\\dfrac{32\\pi}{3}=33.51\\)) instead of a hemisphere (\\(14.51+33.51=48.02\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the volume of the solid",
+              "note": "Cone volume plus half a sphere volume; same radius."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2796,6 +2856,52 @@
               "note": "Use a cubic scale factor for volume."
             }
           ]
+        },
+        {
+          "id": "bhhs2010-y10-q4c",
+          "type": "mc",
+          "stem": "If the height of a smaller cone is half the height of a larger similar cone, what is the ratio of their volumes?",
+          "difficulty": "medium",
+          "options": [
+            "\\(1:8\\)",
+            "\\(1:2\\)",
+            "\\(1:4\\)",
+            "\\(1:6\\)"
+          ],
+          "answer": 0,
+          "hint": "For similar solids with ratio of lengths \\(a:b\\), the ratio of areas is \\(a^{2}:b^{2}\\) and the ratio of VOLUMES is \\(a^{3}:b^{3}\\).",
+          "steps": [
+            {
+              "explain": "The heights are in the ratio 1 : 2, so the scale factor of lengths is \\(\\dfrac{1}{2}\\).",
+              "work": "\\(\\text{length ratio}=1:2\\)"
+            },
+            {
+              "explain": "Volume is three-dimensional: cube the scale factor.",
+              "work": "\\(\\text{volume ratio}=1^{3}:2^{3}=1:8\\)"
+            },
+            {
+              "explain": "Check with numbers: a cone with \\(r=1,h=2\\) has volume \\(\\dfrac{2\\pi}{3}\\) and the cone with \\(r=2,h=4\\) has volume \\(\\dfrac{16\\pi}{3}\\): ratio \\(\\dfrac{2}{16}=1:8\\) ✓. Option B is the length ratio and option C is the AREA ratio.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the ratio of their volumes",
+              "note": "Volumes of similar solids: cube the length ratio."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

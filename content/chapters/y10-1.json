@@ -37433,6 +37433,56 @@
           ],
           "answer": 0,
           "solution": "The correct answer is \\(13.000\\%\\)."
+        },
+        {
+          "id": "bhhs2010-y10-q3a",
+          "type": "mc",
+          "stem": "A computer valued at 2200 dollars depreciates at a rate of 15% per annum. Find the value of the computer after 5 years.",
+          "difficulty": "medium",
+          "options": [
+            "\\(976.15\\) dollars",
+            "\\(550.00\\) dollars",
+            "\\(4425.00\\) dollars",
+            "\\(1870.00\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Compound depreciation (a percentage of the CURRENT value each year): \\(V=V_{0}(1-r)^{n}\\). The multiplier is \\(1-0.15=0.85\\).",
+          "steps": [
+            {
+              "explain": "Each year the value is multiplied by \\(100\\%-15\\%=85\\%=0.85\\). After 5 years it is multiplied by 0.85 five times.",
+              "work": "\\(V=V_{0}(1-r)^{n}=2200(1-0.15)^{5}=2200(0.85)^{5}\\)"
+            },
+            {
+              "explain": "Powers first: \\(0.85^{5}=0.85\\times0.85\\times0.85\\times0.85\\times0.85\\approx 0.4437\\).",
+              "work": "\\(0.85^{5}=0.44370\\ldots\\)"
+            },
+            {
+              "explain": "Multiply by 2200.",
+              "work": "\\(V=2200\\times 0.4437=976.15\\)"
+            },
+            {
+              "explain": "The value after 5 years is 976.15 dollars. Check the size: each year it loses about a sixth of its value, so about \\(2200\\to1870\\to1590\\to1351\\to1148\\to976\\) ✓. Option B subtracts 15% of the ORIGINAL value each year (simple depreciation, \\(2200-5\\times330\\)), option C is growth (1.15).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of the computer after 5 years",
+              "note": "Compound depreciation: multiply by 0.85 each year, so use 0.85 to the power 5."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

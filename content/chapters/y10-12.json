@@ -2128,6 +2128,174 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q5bi",
+          "type": "mc",
+          "stem": "The solid shown is formed by joining a cone and a hemisphere (cone radius 2, with an angle of \\(30^{\\circ}\\) between the slant side and the axis of the cone). Find the exact height \\(h\\) of the cone.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 340\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><path d=\"M90,110 A100,100 0 0 1 290,110\" fill=\"#fef3c7\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"110\" rx=\"100\" ry=\"22\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"90,110 290,110 190,300\" fill=\"#dbeafe\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"190.0\" y2=\"300.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"290.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polyline points=\"190,124 204,124 204,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"182.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><path d=\"M190.0,256 A44,44 0 0 1 190.0,256\" fill=\"none\" stroke=\"none\"/><path d=\"M190,250 A50,50 0 0 0 166.7,255.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"330.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to Scale</text></svg>"
+          },
+          "options": [
+            "\\(2\\sqrt{3}\\)",
+            "\\(\\dfrac{2}{\\sqrt{3}}\\)",
+            "\\(4\\)",
+            "\\(\\dfrac{4}{\\sqrt{3}}\\)"
+          ],
+          "answer": 0,
+          "hint": "In the right triangle formed by the radius (2), the height \\(h\\) and the slant side: the \\(30^{\\circ}\\) angle is at the apex, so the radius 2 is OPPOSITE it and \\(h\\) is ADJACENT. Use \\(\\tan 30^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Take the right triangle inside the cone: the radius \\(r=2\\) (green, opposite the \\(30^{\\circ}\\) angle), the height \\(h\\) (red, adjacent to the \\(30^{\\circ}\\) angle).",
+              "work": "\\(\\text{opp}=2,\\quad\\text{adj}=h\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 340\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><path d=\"M90,110 A100,100 0 0 1 290,110\" fill=\"#fef3c7\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"190\" cy=\"110\" rx=\"100\" ry=\"22\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"90,110 290,110 190,300\" fill=\"#dbeafe\" fill-opacity=\"0.65\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"190.0\" y2=\"300.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"290.0\" y2=\"110.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><polyline points=\"190,124 204,124 204,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"240.0\" y=\"104.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"182.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><path d=\"M190.0,256 A44,44 0 0 1 190.0,256\" fill=\"none\" stroke=\"none\"/><path d=\"M190,250 A50,50 0 0 0 166.7,255.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"128.0\" y=\"242.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><line x1=\"190.0\" y1=\"110.0\" x2=\"190.0\" y2=\"300.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"110.0\" x2=\"290.0\" y2=\"110.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"300.0\" x2=\"290.0\" y2=\"110.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r = 2</text><text x=\"182.0\" y=\"205.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><text x=\"330.0\" y=\"30.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to Scale</text></svg>"
+              }
+            },
+            {
+              "explain": "Opposite and adjacent: \\(\\tan\\theta=\\dfrac{\\text{opp}}{\\text{adj}}\\).",
+              "work": "\\(\\tan 30^{\\circ}=\\dfrac{2}{h}\\)"
+            },
+            {
+              "explain": "Make \\(h\\) the subject and use the exact value \\(\\tan 30^{\\circ}=\\dfrac{1}{\\sqrt{3}}\\).",
+              "work": "\\(h=\\dfrac{2}{\\tan 30^{\\circ}}=2\\div\\dfrac{1}{\\sqrt{3}}=2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Check: \\(2\\sqrt{3}\\approx 3.46\\) and \\(\\tan^{-1}\\dfrac{2}{3.46}=30^{\\circ}\\) ✓. Option B comes from \\(\\tan 30^{\\circ}=\\dfrac{h}{2}\\) (opposite and adjacent swapped).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact height",
+              "note": "The 30 degree angle is at the apex: radius is opposite, height is adjacent, use tan."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q6di",
+          "type": "mc",
+          "stem": "A ship leaves port \\(P\\) and sails on a bearing of \\(305^{\\circ}\\) for 200 km to get to point \\(B\\). At \\(B\\) it changes course to \\(060^{\\circ}\\) and sails for a further 100 km to get to point \\(C\\). How far is the ship west of the port at point \\(B\\)?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"270.0\" x2=\"400.0\" y2=\"270.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"310.0\" x2=\"300.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"296.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"304.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"91.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"152.4\" y=\"101.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"300.0\" y1=\"270.0\" x2=\"144.4\" y2=\"161.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"238.2\" y=\"215.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200</text><text x=\"185.5\" y=\"125.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100</text><text x=\"308.0\" y=\"288.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"136.4\" y=\"165.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"226.6\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(163.83\\ \\text{km}\\)",
+            "\\(114.72\\ \\text{km}\\)",
+            "\\(200\\ \\text{km}\\)",
+            "\\(139.98\\ \\text{km}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw the bearing: \\(305^{\\circ}\\) is measured clockwise from North, so it is \\(360^{\\circ}-305^{\\circ}=55^{\\circ}\\) WEST of north. The angle from the west direction is \\(90^{\\circ}-55^{\\circ}=35^{\\circ}\\). Use cosine with 35° (or sine with 55°).",
+          "steps": [
+            {
+              "explain": "\\(305^{\\circ}\\) clockwise from North is in the north-west. The angle between the ship's path \\(PB\\) and the WEST line is \\(305^{\\circ}-270^{\\circ}=35^{\\circ}\\) (West is \\(270^{\\circ}\\)).",
+              "work": "\\(305^{\\circ}-270^{\\circ}=35^{\\circ}\\ \\text{(from the west line)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"270.0\" x2=\"400.0\" y2=\"270.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"310.0\" x2=\"300.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"296.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"304.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"91.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"152.4\" y=\"101.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"300.0\" y1=\"270.0\" x2=\"144.4\" y2=\"161.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"270.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><line x1=\"144.4\" y1=\"270.0\" x2=\"300.0\" y2=\"270.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"222.2\" y=\"290.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">w = west distance</text><path d=\"M254,270 A46,46 0 0 1 262.3,243.6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"236.0\" y=\"258.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35°</text><text x=\"238.2\" y=\"211.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200</text><text x=\"308.0\" y=\"288.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"136.4\" y=\"165.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"226.6\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Let \\(w\\) be the distance west. In the right triangle: the hypotenuse is \\(PB=200\\) and \\(w\\) is ADJACENT to the \\(35^{\\circ}\\) angle.",
+              "work": "\\(\\cos 35^{\\circ}=\\dfrac{w}{200}\\)"
+            },
+            {
+              "explain": "Multiply by 200 (degree mode).",
+              "work": "\\(w=200\\cos 35^{\\circ}=200\\times 0.81915=163.83\\ \\text{km}\\)"
+            },
+            {
+              "explain": "Check with the 55° angle from North: \\(w=200\\sin 55^{\\circ}=163.83\\) ✓. Option B uses \\(\\sin 35^{\\circ}\\) (the northward distance \\(=114.72\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How far is the ship west of the port at point \\(B\\)",
+              "note": "Convert the bearing to an angle in the right triangle; west distance is hypotenuse times the cosine of the angle from the west line."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q6dii",
+          "type": "mc",
+          "stem": "A ship leaves port \\(P\\) and sails on a bearing of \\(305^{\\circ}\\) for 200 km to get to point \\(B\\). At \\(B\\) it changes course to \\(060^{\\circ}\\) and sails for a further 100 km to get to point \\(C\\). Find \\(\\angle PBC\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"270.0\" x2=\"400.0\" y2=\"270.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"310.0\" x2=\"300.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"296.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"304.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"91.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"152.4\" y=\"101.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"300.0\" y1=\"270.0\" x2=\"144.4\" y2=\"161.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"238.2\" y=\"215.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200</text><text x=\"185.5\" y=\"125.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100</text><text x=\"308.0\" y=\"288.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"136.4\" y=\"165.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"226.6\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(65^{\\circ}\\)",
+            "\\(85^{\\circ}\\)",
+            "\\(30^{\\circ}\\)",
+            "\\(125^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the North lines at \\(P\\) and \\(B\\) (parallel): the bearing of \\(P\\) FROM \\(B\\) is the back-bearing \\(305^{\\circ}-180^{\\circ}=125^{\\circ}\\). Then \\(\\angle PBC\\) is the angle between the directions \\(125^{\\circ}\\) and \\(060^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "At \\(B\\), the direction back to \\(P\\) (the back-bearing) is \\(305^{\\circ}-180^{\\circ}=125^{\\circ}\\) (bearings at \\(P\\) and \\(B\\) differ by \\(180^{\\circ}\\) because the North lines are parallel).",
+              "work": "\\(\\text{bearing of }P\\text{ from }B=125^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"270.0\" x2=\"400.0\" y2=\"270.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"310.0\" x2=\"300.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"296.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"304.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"91.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"152.4\" y=\"101.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"300.0\" y1=\"270.0\" x2=\"144.4\" y2=\"161.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><path d=\"M177.1,184.0 A40,40 0 0 0 179.0,141.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"198.4\" y=\"175.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">65°</text><text x=\"185.5\" y=\"125.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100</text><text x=\"238.2\" y=\"215.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200</text><text x=\"277.3\" y=\"191.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">CP = ?</text><text x=\"308.0\" y=\"288.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"136.4\" y=\"165.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"226.6\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "The direction \\(BC\\) is \\(060^{\\circ}\\). The angle between the directions \\(BP\\) (\\(125^{\\circ}\\)) and \\(BC\\) (\\(60^{\\circ}\\)) is the difference.",
+              "work": "\\(\\angle PBC=125^{\\circ}-60^{\\circ}=65^{\\circ}\\)"
+            },
+            {
+              "explain": "Check with the angles measured from the EAST horizontal line at \\(B\\): \\(BC\\) (bearing \\(060^{\\circ}\\)) is \\(90^{\\circ}-60^{\\circ}=30^{\\circ}\\) ABOVE it, and \\(BP\\) (bearing \\(125^{\\circ}\\)) is \\(125^{\\circ}-90^{\\circ}=35^{\\circ}\\) BELOW it, so \\(\\angle PBC=30^{\\circ}+35^{\\circ}=65^{\\circ}\\) ✓.",
+              "work": "\\(\\angle PBC=30^{\\circ}+35^{\\circ}=65^{\\circ}\\)"
+            },
+            {
+              "explain": "Option D (125°) is just the back-bearing, option C only the angle above the west line.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\angle PBC\\)",
+              "note": "Back-bearing is the bearing plus or minus 180; the angle between two bearings is their difference."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9785,6 +9953,70 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q3b",
+          "type": "mc",
+          "stem": "In triangle \\(ABC\\), \\(\\angle A=52^{\\circ}\\), \\(\\angle C=80^{\\circ}\\) and \\(AC=7.5\\) cm. Find the value of \\(x=BC\\) correct to 2 decimal places.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"40,190 340,190 284.8,-123.3\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><path d=\"M84,190 A44,44 0 0 0 67.1,155.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"104.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">52°</text><path d=\"M300,190 A40,40 0 0 1 333.1,150.6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"280.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80°</text><text x=\"190.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7.5 cm</text><text x=\"322.4\" y=\"25.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"32.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"350.0\" y=\"196.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"284.8\" y=\"-133.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "\\(7.95\\)",
+            "\\(6.00\\)",
+            "\\(9.37\\)",
+            "\\(5.66\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the third angle \\(\\angle B=180^{\\circ}-52^{\\circ}-80^{\\circ}\\). Then use the sine rule, matching each side with the angle OPPOSITE to it.",
+          "steps": [
+            {
+              "explain": "Angle sum of a triangle is \\(180^{\\circ}\\): find \\(\\angle B\\).",
+              "work": "\\(\\angle B=180^{\\circ}-52^{\\circ}-80^{\\circ}=48^{\\circ}\\)"
+            },
+            {
+              "explain": "Match sides with their OPPOSITE angles: \\(x=BC\\) is opposite \\(\\angle A=52^{\\circ}\\) (red); \\(AC=7.5\\) is opposite \\(\\angle B=48^{\\circ}\\) (green).",
+              "work": "\\(x\\leftrightarrow 52^{\\circ},\\qquad 7.5\\leftrightarrow 48^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"40,190 340,190 284.8,-123.3\" fill=\"#e0e7ff\" fill-opacity=\"0.55\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><path d=\"M84,190 A44,44 0 0 0 67.1,155.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"104.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">52°</text><path d=\"M300,190 A40,40 0 0 1 333.1,150.6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"280.0\" y=\"180.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80°</text><line x1=\"40.0\" y1=\"190.0\" x2=\"340.0\" y2=\"190.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"284.8\" y1=\"-123.3\" x2=\"340.0\" y2=\"190.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M276.8,-93.3 A30,30 0 0 0 306.8,-97.3\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"290.8\" y=\"-71.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">48°</text><text x=\"190.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7.5 cm  (opposite 48°)</text><text x=\"328.4\" y=\"25.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x  (opposite 52°)</text><text x=\"32.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"350.0\" y=\"196.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"284.8\" y=\"-133.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Sine rule: \\(\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}\\).",
+              "work": "\\(\\dfrac{x}{\\sin 52^{\\circ}}=\\dfrac{7.5}{\\sin 48^{\\circ}}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(\\sin 52^{\\circ}\\).",
+              "work": "\\(x=\\dfrac{7.5\\sin 52^{\\circ}}{\\sin 48^{\\circ}}=\\dfrac{7.5\\times 0.78801}{0.74314}\\)"
+            },
+            {
+              "explain": "Calculate (calculator in degree mode) and round to 2 decimal places.",
+              "work": "\\(x\\approx 7.9527\\approx 7.95\\)"
+            },
+            {
+              "explain": "Check: the angles \\(48^{\\circ}<52^{\\circ}\\) so the side opposite 52° (x) must be longer than 7.5 ✓ (7.95). Option B uses the 80° angle by mistake.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "correct to 2 decimal places",
+              "note": "Find the third angle, match each side with its opposite angle, then use the sine rule."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10970,6 +11202,109 @@
           "meta": {
             "source": "Fort St High School Year 10 Common Task 2 2023",
             "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q4d",
+          "type": "mc",
+          "stem": "Solve \\(2\\cos\\theta=1\\) for \\(0^{\\circ}\\le\\theta\\le 360^{\\circ}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\theta=60^{\\circ},\\ 300^{\\circ}\\)",
+            "\\(\\theta=60^{\\circ},\\ 120^{\\circ}\\)",
+            "\\(\\theta=60^{\\circ}\\) only",
+            "\\(\\theta=30^{\\circ},\\ 330^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "Get \\(\\cos\\theta\\) on its own: \\(\\cos\\theta=\\dfrac{1}{2}\\). Cosine is POSITIVE in quadrants 1 and 4. Use the related angle \\(60^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(\\cos\\theta=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Related acute angle: \\(\\cos 60^{\\circ}=\\dfrac{1}{2}\\), so the related angle is \\(60^{\\circ}\\).",
+              "work": "\\(\\text{related angle}=60^{\\circ}\\)"
+            },
+            {
+              "explain": "Cosine is positive in quadrant 1 (angle \\(=60^{\\circ}\\)) and quadrant 4 (angle \\(=360^{\\circ}-60^{\\circ}\\)).",
+              "work": "\\(\\theta=60^{\\circ}\\quad\\text{and}\\quad\\theta=360^{\\circ}-60^{\\circ}=300^{\\circ}\\)"
+            },
+            {
+              "explain": "Check: \\(\\cos 300^{\\circ}=\\cos 60^{\\circ}=\\dfrac{1}{2}\\) ✓ (option B's \\(120^{\\circ}\\) has cosine \\(-\\dfrac{1}{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Isolate cosine, find the related angle, then use quadrants 1 and 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q7b",
+          "type": "mc",
+          "stem": "Given that \\(\\alpha\\) is obtuse and \\(\\sin\\alpha=\\dfrac{1}{\\sqrt{5}}\\), find the exact value of \\(\\cos\\alpha\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{2}{\\sqrt{5}}\\)",
+            "\\(\\dfrac{2}{\\sqrt{5}}\\)",
+            "\\(-\\dfrac{1}{\\sqrt{5}}\\)",
+            "\\(-\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Obtuse means \\(90^{\\circ}<\\alpha<180^{\\circ}\\) (quadrant 2): sine is positive and COSINE IS NEGATIVE. Draw a right triangle for the size.",
+          "steps": [
+            {
+              "explain": "Draw the reference right triangle: \\(\\sin=\\dfrac{\\text{opp}}{\\text{hyp}}=\\dfrac{1}{\\sqrt{5}}\\), so opposite \\(=1\\) and hypotenuse \\(=\\sqrt{5}\\). The adjacent side by Pythagoras.",
+              "work": "\\(\\text{adj}=\\sqrt{(\\sqrt{5})^{2}-1^{2}}=\\sqrt{4}=2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><polygon points=\"40,170 180,170 180,100\" fill=\"#e0e7ff\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polyline points=\"168,170 168,158 180,158\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"40.0\" y1=\"170.0\" x2=\"180.0\" y2=\"100.0\" stroke=\"#7c3aed\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"170.0\" x2=\"180.0\" y2=\"100.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"170.0\" x2=\"180.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"102.0\" y=\"125.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√5 (hyp)</text><text x=\"190.0\" y=\"139.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1 (opp)</text><text x=\"110.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2 (adj)</text><path d=\"M76,170 A36,36 0 0 0 72.2,153.9\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"96.0\" y=\"164.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">ref</text></svg>"
+              }
+            },
+            {
+              "explain": "The size of the cosine is \\(\\dfrac{\\text{adj}}{\\text{hyp}}=\\dfrac{2}{\\sqrt{5}}\\).",
+              "work": "\\(|\\cos\\alpha|=\\dfrac{2}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "\\(\\alpha\\) is obtuse (quadrant 2), where cosine is NEGATIVE.",
+              "work": "\\(\\cos\\alpha=-\\dfrac{2}{\\sqrt{5}}\\)"
+            },
+            {
+              "explain": "Check: \\(\\sin^{2}\\alpha+\\cos^{2}\\alpha=\\dfrac{1}{5}+\\dfrac{4}{5}=1\\) ✓. Option B forgets the negative sign.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact value of",
+              "note": "Obtuse angle: cosine is negative; draw a triangle to get the size."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
             "grade": "10",
             "origin": "teacher"
           }
@@ -12817,6 +13152,66 @@
           "meta": {
             "source": "Fort St High School Year 10 Common Task 2 2023",
             "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q6diii",
+          "type": "mc",
+          "stem": "A ship leaves port \\(P\\) and sails on a bearing of \\(305^{\\circ}\\) for 200 km to get to point \\(B\\). At \\(B\\) it changes course to \\(060^{\\circ}\\) and sails for a further 100 km to get to point \\(C\\), with \\(\\angle PBC=65^{\\circ}\\). How far is \\(C\\) from the port?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"270.0\" x2=\"400.0\" y2=\"270.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"310.0\" x2=\"300.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"296.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"304.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"91.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"152.4\" y=\"101.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"300.0\" y1=\"270.0\" x2=\"144.4\" y2=\"161.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"238.2\" y=\"215.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200</text><text x=\"185.5\" y=\"125.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100</text><text x=\"308.0\" y=\"288.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"136.4\" y=\"165.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"226.6\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(181.92\\ \\text{km}\\)",
+            "\\(223.61\\ \\text{km}\\)",
+            "\\(300\\ \\text{km}\\)",
+            "\\(100\\ \\text{km}\\)"
+          ],
+          "answer": 0,
+          "hint": "Triangle \\(PBC\\) has two known sides (200 and 100) and the INCLUDED angle \\(65^{\\circ}\\): use the cosine rule \\(CP^{2}=PB^{2}+BC^{2}-2(PB)(BC)\\cos 65^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Triangle \\(PBC\\): \\(PB=200\\), \\(BC=100\\), and the angle at \\(B\\) between them is \\(65^{\\circ}\\). Two sides and the included angle, find the third side: COSINE RULE.",
+              "work": "\\(CP^{2}=BC^{2}+PB^{2}-2\\,(BC)(PB)\\cos 65^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"270.0\" x2=\"400.0\" y2=\"270.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"310.0\" x2=\"300.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"296.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"20.0\" x2=\"304.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"144.4\" y1=\"161.0\" x2=\"144.4\" y2=\"91.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"152.4\" y=\"101.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"300.0\" y1=\"270.0\" x2=\"144.4\" y2=\"161.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"144.4\" y1=\"161.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"270.0\" x2=\"226.6\" y2=\"113.5\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><path d=\"M177.1,184.0 A40,40 0 0 0 179.0,141.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"198.4\" y=\"175.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">65°</text><text x=\"185.5\" y=\"125.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100</text><text x=\"238.2\" y=\"215.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200</text><text x=\"277.3\" y=\"191.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">CP = ?</text><text x=\"308.0\" y=\"288.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"136.4\" y=\"165.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"226.6\" y=\"103.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute (square the sides).",
+              "work": "\\(CP^{2}=100^{2}+200^{2}-2(100)(200)\\cos 65^{\\circ}=10\\,000+40\\,000-40\\,000\\cos 65^{\\circ}\\)"
+            },
+            {
+              "explain": "\\(\\cos 65^{\\circ}=0.42262\\), so \\(40\\,000\\times0.42262=16\\,905\\).",
+              "work": "\\(CP^{2}=50\\,000-16\\,905=33\\,095\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(CP=\\sqrt{33\\,095}=181.92\\ \\text{km}\\)"
+            },
+            {
+              "explain": "Option B (223.61) is \\(\\sqrt{100^{2}+200^{2}}\\), using Pythagoras (the triangle is NOT right-angled).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How far is \\(C\\) from the port?",
+              "note": "Two sides and the included angle: cosine rule; the triangle is not right-angled."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
             "grade": "10",
             "origin": "teacher"
           }

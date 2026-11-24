@@ -6268,6 +6268,60 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q4e",
+          "type": "mc",
+          "stem": "Simplify \\(\\sqrt{x^{3}}+\\sqrt{x}-\\sqrt{9x}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(x\\sqrt{x}-2\\sqrt{x}\\)",
+            "\\(x\\sqrt{x}-\\sqrt{x}\\)",
+            "\\(x\\sqrt{x}+4\\sqrt{x}\\)",
+            "\\(\\sqrt{x}-2x\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify each root into a multiple of \\(\\sqrt{x}\\): \\(\\sqrt{x^{3}}=x\\sqrt{x}\\) and \\(\\sqrt{9x}=3\\sqrt{x}\\). Then collect the \\(\\sqrt{x}\\) terms.",
+          "steps": [
+            {
+              "explain": "\\(\\sqrt{x^{3}}=\\sqrt{x^{2}\\times x}=\\sqrt{x^{2}}\\times\\sqrt{x}=x\\sqrt{x}\\).",
+              "work": "\\(\\sqrt{x^{3}}=x\\sqrt{x}\\)"
+            },
+            {
+              "explain": "\\(\\sqrt{9x}=\\sqrt{9}\\times\\sqrt{x}=3\\sqrt{x}\\).",
+              "work": "\\(\\sqrt{9x}=3\\sqrt{x}\\)"
+            },
+            {
+              "explain": "Rewrite the whole expression.",
+              "work": "\\(x\\sqrt{x}+\\sqrt{x}-3\\sqrt{x}\\)"
+            },
+            {
+              "explain": "Collect the like terms \\(\\sqrt{x}-3\\sqrt{x}=-2\\sqrt{x}\\) (the \\(x\\sqrt{x}\\) term is not like them).",
+              "work": "\\(=x\\sqrt{x}-2\\sqrt{x}=\\sqrt{x}(x-2)\\)"
+            },
+            {
+              "explain": "Option B forgets that \\(\\sqrt{9x}=3\\sqrt{x}\\) (not \\(\\sqrt{x}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Write each root as a multiple of the square root of x, then collect like terms."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18611,6 +18665,56 @@
           "meta": {
             "source": "Fort St High School Year 10 Common Task 2 2023",
             "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q1e",
+          "type": "mc",
+          "stem": "Rationalise the denominator, leaving your answer in simplest form: \\(\\dfrac{3\\sqrt{5}}{\\sqrt{8}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3\\sqrt{10}}{4}\\)",
+            "\\(\\dfrac{3\\sqrt{40}}{8}\\)",
+            "\\(\\dfrac{3\\sqrt{5}}{2\\sqrt{2}}\\)",
+            "\\(\\dfrac{3\\sqrt{10}}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by \\(\\sqrt{8}\\) (or by \\(\\sqrt{2}\\), which gives smaller numbers). Then simplify the surd and cancel.",
+          "steps": [
+            {
+              "explain": "To remove the root from the denominator, multiply top and bottom by \\(\\sqrt{8}\\) (this is multiplying by 1, so the value does not change).",
+              "work": "\\(\\dfrac{3\\sqrt{5}}{\\sqrt{8}}\\times\\dfrac{\\sqrt{8}}{\\sqrt{8}}=\\dfrac{3\\sqrt{40}}{8}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{40}=\\sqrt{4\\times 10}=2\\sqrt{10}\\).",
+              "work": "\\(=\\dfrac{3\\times 2\\sqrt{10}}{8}=\\dfrac{6\\sqrt{10}}{8}\\)"
+            },
+            {
+              "explain": "Cancel the common factor 2 on top and bottom.",
+              "work": "\\(=\\dfrac{3\\sqrt{10}}{4}\\)"
+            },
+            {
+              "explain": "Option B is correct but NOT in simplest form (\\(\\sqrt{40}\\) can be simplified and the fraction cancelled); option C still has a root in the denominator.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator",
+              "note": "Multiply top and bottom by the root, then simplify the surd and cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
             "grade": "10",
             "origin": "teacher"
           }

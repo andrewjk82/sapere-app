@@ -357,6 +357,106 @@
             "origin": "teacher",
             "note": "Open response: teacher review."
           }
+        },
+        {
+          "id": "bhhs2010-y10-q1fi",
+          "type": "mc",
+          "stem": "Given \\(f(x)=x^{2}-5\\), find \\(f(2)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-1\\)",
+            "\\(-9\\)",
+            "\\(9\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace every \\(x\\) in the formula by 2, then follow the order of operations (power before subtraction).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=2\\).",
+              "work": "\\(f(2)=2^{2}-5\\)"
+            },
+            {
+              "explain": "Powers first: \\(2^{2}=4\\).",
+              "work": "\\(=4-5\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(=-1\\)"
+            },
+            {
+              "explain": "Option B (\\(-9\\)) comes from \\((-2)^{2}\\) or wrong sign handling; option D is \\(2-5\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(f(2)\\)",
+              "note": "Substitute the number for x and use the order of operations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q1fii",
+          "type": "mc",
+          "stem": "Given \\(f(x)=x^{2}-5\\), find \\(f(x+h)\\). Simplify your answer.",
+          "difficulty": "medium",
+          "options": [
+            "\\(x^{2}+2xh+h^{2}-5\\)",
+            "\\(x^{2}+h^{2}-5\\)",
+            "\\(x^{2}+h-5\\)",
+            "\\(x^{2}+2xh+h^{2}+5\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace every \\(x\\) by the whole bracket \\((x+h)\\), then expand \\((x+h)^{2}\\) = \\(x^{2}+2xh+h^{2}\\) (it has a MIDDLE term).",
+          "steps": [
+            {
+              "explain": "Replace \\(x\\) by \\((x+h)\\) (keep the bracket).",
+              "work": "\\(f(x+h)=(x+h)^{2}-5\\)"
+            },
+            {
+              "explain": "Expand the perfect square: \\((x+h)^{2}=(x+h)(x+h)=x^{2}+xh+hx+h^{2}=x^{2}+2xh+h^{2}\\).",
+              "work": "\\((x+h)^{2}=x^{2}+2xh+h^{2}\\)"
+            },
+            {
+              "explain": "Write the answer (the \\(-5\\) stays).",
+              "work": "\\(f(x+h)=x^{2}+2xh+h^{2}-5\\)"
+            },
+            {
+              "explain": "Option B forgets the middle term \\(2xh\\) (the most common error); option C changes \\(h^{2}\\) to \\(h\\); option D changes the sign of 5.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(f(x+h)\\)",
+              "note": "Expand the whole bracket squared: there is a middle term 2xh."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     }

@@ -3270,6 +3270,56 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q1d",
+          "type": "mc",
+          "stem": "Solve \\((x+5)(2x-3)=0\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=-5\\) or \\(x=\\dfrac{3}{2}\\)",
+            "\\(x=5\\) or \\(x=-\\dfrac{3}{2}\\)",
+            "\\(x=-5\\) or \\(x=-\\dfrac{3}{2}\\)",
+            "\\(x=5\\) or \\(x=\\dfrac{3}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "If a product is 0, one of the factors must be 0 (null factor law). Set each bracket equal to 0 separately.",
+          "steps": [
+            {
+              "explain": "Null factor law: \\(A\\times B=0\\) means \\(A=0\\) or \\(B=0\\).",
+              "work": "\\(x+5=0\\quad\\text{or}\\quad 2x-3=0\\)"
+            },
+            {
+              "explain": "First bracket: subtract 5.",
+              "work": "\\(x=-5\\)"
+            },
+            {
+              "explain": "Second bracket: add 3 then divide by 2.",
+              "work": "\\(2x=3\\ \\Rightarrow\\ x=\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Check \\(x=\\dfrac{3}{2}\\): \\(2\\left(\\dfrac{3}{2}\\right)-3=0\\) ✓. The signs of the solutions are the OPPOSITE of the numbers in the brackets for \\(x+5\\), but for \\(2x-3\\) divide by the coefficient 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Null factor law: set each bracket to zero and solve."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },

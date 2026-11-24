@@ -3783,6 +3783,114 @@
             "grade": "10",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhhs2010-y10-q1a",
+          "type": "mc",
+          "stem": "Evaluate \\(\\sqrt{\\dfrac{3.74^{4}}{32.5-1.12^{2}}}\\) correct to 2 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "\\(2.50\\)",
+            "\\(6.26\\)",
+            "\\(3.12\\)",
+            "\\(2.73\\)"
+          ],
+          "answer": 0,
+          "hint": "Work out the top and the bottom separately (powers first), divide, then take the square root LAST. Keep extra decimals until the end.",
+          "steps": [
+            {
+              "explain": "Top (numerator): \\(3.74^{4}\\) means \\(3.74\\times3.74\\times3.74\\times3.74\\).",
+              "work": "\\(3.74^{4}\\approx 195.65\\)"
+            },
+            {
+              "explain": "Bottom (denominator): powers before subtraction: \\(1.12^{2}=1.2544\\), then \\(32.5-1.2544\\).",
+              "work": "\\(32.5-1.12^{2}=32.5-1.2544=31.2456\\)"
+            },
+            {
+              "explain": "Divide top by bottom.",
+              "work": "\\(\\dfrac{195.65}{31.2456}\\approx 6.2618\\)"
+            },
+            {
+              "explain": "Take the square root of the whole fraction (the root covers both top and bottom).",
+              "work": "\\(\\sqrt{6.2618}\\approx 2.5024\\)"
+            },
+            {
+              "explain": "Round to 2 decimal places: the third decimal is 2, so round down.",
+              "work": "\\(2.50\\)"
+            },
+            {
+              "explain": "Option B (6.26) forgot the square root; option C is \\(\\sqrt{\\ }\\) applied only to part of the fraction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Powers first, subtract on the bottom, divide, then the square root; round at the very end."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q3e",
+          "type": "mc",
+          "stem": "Simplify, giving your answers without negative indices: \\(\\dfrac{a^{3}b^{-1}}{(ab)^{2}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{a}{b^{3}}\\)",
+            "\\(\\dfrac{a}{b}\\)",
+            "\\(ab^{3}\\)",
+            "\\(\\dfrac{a^{5}}{b}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\((ab)^{2}=a^{2}b^{2}\\) first, then subtract the indices of each letter separately: \\(a^{3}\\div a^{2}\\) and \\(b^{-1}\\div b^{2}\\). Finish with a positive power.",
+          "steps": [
+            {
+              "explain": "Expand the bracket in the denominator: \\((ab)^{2}=a^{2}b^{2}\\).",
+              "work": "\\(\\dfrac{a^{3}b^{-1}}{a^{2}b^{2}}\\)"
+            },
+            {
+              "explain": "Divide like bases: subtract the indices. For \\(a\\): \\(a^{3-2}=a^{1}\\). For \\(b\\): \\(b^{-1-2}=b^{-3}\\).",
+              "work": "\\(=a^{3-2}\\times b^{-1-2}=a\\,b^{-3}\\)"
+            },
+            {
+              "explain": "Remove the negative index: \\(b^{-3}=\\dfrac{1}{b^{3}}\\).",
+              "work": "\\(=\\dfrac{a}{b^{3}}\\)"
+            },
+            {
+              "explain": "Check with numbers \\(a=2,b=1\\): original \\(\\dfrac{8\\times 1}{4}=2\\); answer \\(\\dfrac{2}{1}=2\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify, giving your answers without negative indices",
+              "note": "Index laws: expand the bracket, subtract indices, then turn negatives into fractions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5262,6 +5370,60 @@
           "meta": {
             "source": "Fort St High School Year 10 Common Task 2 2023",
             "school": "Fort St Yearly",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q7a",
+          "type": "mc",
+          "stem": "Solve \\(4^{x}-5(2^{x})+4=0\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=2\\) or \\(x=0\\)",
+            "\\(x=4\\) or \\(x=1\\)",
+            "\\(x=2\\) only",
+            "\\(x=0\\) only"
+          ],
+          "answer": 0,
+          "hint": "Write \\(4^{x}=(2^{2})^{x}=(2^{x})^{2}\\), then let \\(m=2^{x}\\) to get an ordinary quadratic in \\(m\\).",
+          "steps": [
+            {
+              "explain": "Rewrite \\(4^{x}\\) with base 2: \\(4^{x}=\\left(2^{2}\\right)^{x}=\\left(2^{x}\\right)^{2}\\). Let \\(m=2^{x}\\).",
+              "work": "\\(4^{x}=m^{2},\\quad 2^{x}=m\\)"
+            },
+            {
+              "explain": "Substitute to get a quadratic in \\(m\\).",
+              "work": "\\(m^{2}-5m+4=0\\)"
+            },
+            {
+              "explain": "Factorise: two numbers with product 4 and sum \\(-5\\) are \\(-4\\) and \\(-1\\).",
+              "work": "\\((m-4)(m-1)=0\\ \\Rightarrow\\ m=4\\ \\ \\text{or}\\ \\ m=1\\)"
+            },
+            {
+              "explain": "Replace \\(m\\) by \\(2^{x}\\) and solve each exponential equation by writing both sides with base 2.",
+              "work": "\\(2^{x}=4=2^{2}\\Rightarrow x=2;\\qquad 2^{x}=1=2^{0}\\Rightarrow x=0\\)"
+            },
+            {
+              "explain": "Check: \\(x=2\\): \\(16-5(4)+4=0\\) ✓; \\(x=0\\): \\(1-5+4=0\\) ✓. Option B gives the values of \\(m\\), not \\(x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Let m equal 2 to the x, solve the quadratic in m, then go back to x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
             "grade": "10",
             "origin": "teacher"
           }

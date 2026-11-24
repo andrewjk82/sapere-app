@@ -5601,6 +5601,62 @@
             "grade": "10"
           },
           "xp": 2
+        },
+        {
+          "id": "bhhs2010-y10-q6ci",
+          "type": "mc",
+          "stem": "Given the radius \\(r=5\\) cm and the length of the chord \\(AB=6\\) cm. Find the distance of \\(O\\) from the chord \\(AB\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><circle cx=\"190\" cy=\"170\" r=\"110\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"124.0\" y1=\"82.0\" x2=\"256.0\" y2=\"82.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"170.0\" x2=\"190.0\" y2=\"82.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"198.0\" y=\"126.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">d</text><text x=\"190.0\" y=\"74.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><polyline points=\"180,82.0 180,92.0 190,92.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"190\" cy=\"170\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"182.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"118.0\" y=\"76.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"262.0\" y=\"76.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "\\(4\\ \\text{cm}\\)",
+            "\\(3\\ \\text{cm}\\)",
+            "\\(\\sqrt{34}\\ \\text{cm}\\)",
+            "\\(8\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The perpendicular from the centre to a chord BISECTS the chord. This makes a right triangle with hypotenuse \\(r=5\\) and one side half the chord \\(=3\\).",
+          "steps": [
+            {
+              "explain": "The distance from \\(O\\) to the chord is the PERPENDICULAR distance \\(d\\). A perpendicular from the centre bisects the chord, so the half-chord is \\(\\dfrac{6}{2}=3\\) cm.",
+              "work": "\\(\\text{half-chord}=3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><circle cx=\"190\" cy=\"170\" r=\"110\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"124.0\" y1=\"82.0\" x2=\"256.0\" y2=\"82.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"190,170 124.0,82.0 190,82.0\" fill=\"#fde68a\" fill-opacity=\"0.6\"/><polygon points=\"190,170 256.0,82.0 190,82.0\" fill=\"#bfdbfe\" fill-opacity=\"0.6\"/><line x1=\"190.0\" y1=\"170.0\" x2=\"190.0\" y2=\"82.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"82.0\" x2=\"256.0\" y2=\"82.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"170.0\" x2=\"256.0\" y2=\"82.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"198.0\" y=\"126.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">d = ?</text><text x=\"223.0\" y=\"74.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"237.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">r = 5</text><polyline points=\"180,82.0 180,92.0 190,92.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"190\" cy=\"170\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"182.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"118.0\" y=\"76.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"262.0\" y=\"76.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Right triangle: hypotenuse \\(OB=r=5\\) (purple), sides \\(d\\) (red) and 3 (green). Pythagoras.",
+              "work": "\\(d^{2}+3^{2}=5^{2}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(d^{2}=25-9=16\\ \\Rightarrow\\ d=4\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "This is the 3–4–5 triangle. Option B (3) is the half-chord; option C adds instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the distance of \\(O\\) from the chord",
+              "note": "Perpendicular from the centre bisects the chord: Pythagoras with half the chord."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5755,6 +5811,133 @@
               "xp": 1
             }
           ]
+        },
+        {
+          "id": "bhhs2010-y10-q6cii",
+          "type": "mc",
+          "stem": "A secant \\(PAB\\) and a tangent \\(PT\\) are drawn from the external point \\(P\\) to a circle (\\(AB=12\\), \\(BP=8\\), \\(PT=x\\)). Find \\(x\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"150\" r=\"90\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"67.3\" y1=\"94.5\" x2=\"370.0\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"170.0\" x2=\"150.4\" y2=\"245.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"158.2\" y=\"103.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"304.6\" y=\"139.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><text x=\"284.5\" y=\"218.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"71.3\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"239.1\" y=\"129.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"378.0\" y=\"174.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"173.1\" y=\"251.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text></svg>"
+          },
+          "options": [
+            "\\(12.65\\)",
+            "\\(9.80\\)",
+            "\\(20\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Tangent–secant theorem: the square of the tangent \\(=\\) (whole secant from \\(P\\)) \\(\\times\\) (the outside part): \\(PT^{2}=PA\\times PB\\).",
+          "steps": [
+            {
+              "explain": "Tangent-secant theorem: \\(PT^{2}=PB\\times PA\\), where \\(PB\\) is the part of the secant OUTSIDE the circle (8) and \\(PA\\) is the WHOLE secant from \\(P\\) to the far point \\(A\\).",
+              "work": "\\(PT^{2}=PB\\times PA\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"150\" r=\"90\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"67.3\" y1=\"94.5\" x2=\"370.0\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"170.0\" x2=\"150.4\" y2=\"245.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"170.0\" x2=\"239.1\" y2=\"137.4\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"170.0\" x2=\"77.3\" y2=\"97.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"170.0\" x2=\"179.1\" y2=\"235.2\" stroke=\"#7c3aed\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"304.6\" y=\"139.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">PB = 8</text><text x=\"158.2\" y=\"103.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB = 12</text><text x=\"286.5\" y=\"218.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = PT</text><text x=\"71.3\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"239.1\" y=\"129.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"378.0\" y=\"174.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"173.1\" y=\"251.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text></svg>"
+              }
+            },
+            {
+              "explain": "The whole secant: \\(PA=PB+BA=8+12=20\\).",
+              "work": "\\(PA=20\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(x^{2}=8\\times 20=160\\)"
+            },
+            {
+              "explain": "Take the positive square root (a length can't be negative).",
+              "work": "\\(x=\\sqrt{160}=12.649\\ldots\\approx 12.65\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(8\\times 12\\) (forgetting that the whole secant is 20); C is \\(PA\\); D is not from the theorem.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(x\\)",
+              "note": "Tangent squared equals outside part times the whole secant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhhs2010-y10-q7d",
+          "type": "mc",
+          "stem": "Given is a circle with centre \\(O\\) and radius 2 units. If \\(PD=2\\) units and \\(PA=AB\\), show \\(\\cos\\theta=\\dfrac{1}{4}\\) (where \\(\\theta=\\angle AOB\\); \\(P\\), \\(D\\), \\(O\\), \\(C\\) are on one line and \\(P\\), \\(A\\), \\(B\\) are on another). Which working correctly shows this?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 360\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><circle cx=\"280\" cy=\"200\" r=\"120\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"400.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"175.0\" y2=\"141.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"107.5\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><text x=\"242.5\" y=\"102.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text><text x=\"100.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"220.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"340.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><path d=\"M253.8,185.5 A30,30 0 0 0 287.5,171.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"284.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><circle cx=\"40.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"32.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"160.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"154.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"280.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"284.0\" y=\"218.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"400.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"410.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"175.0\" cy=\"141.9\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"167.0\" y=\"135.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"310.0\" cy=\"83.8\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"316.0\" y=\"75.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+          },
+          "options": [
+            "Let \\(PA=AB=x\\). Secants theorem: \\(PA\\cdot PB=PD\\cdot PC\\), so \\(x\\cdot 2x=2\\times 6\\), \\(x^{2}=6\\). In \\(\\triangle OAB\\): \\(\\cos\\theta=\\dfrac{2^{2}+2^{2}-x^{2}}{2\\times2\\times2}=\\dfrac{8-6}{8}=\\dfrac{1}{4}\\).",
+            "Let \\(PA=AB=x\\). Secants theorem: \\(x\\cdot x=2\\times 6\\), \\(x^{2}=12\\). Then \\(\\cos\\theta=\\dfrac{8-12}{8}=-\\dfrac{1}{2}\\).",
+            "Let \\(PA=AB=x\\). Secants theorem: \\(x\\cdot 2x=2\\times 4\\), \\(x^{2}=4\\). Then \\(\\cos\\theta=\\dfrac{8-4}{8}=\\dfrac{1}{2}\\).",
+            "Use \\(\\cos\\theta=\\dfrac{PD}{PO}=\\dfrac{2}{4}=\\dfrac{1}{2}\\) since \\(\\theta\\) is at \\(O\\)."
+          ],
+          "answer": 0,
+          "hint": "Two steps: (1) Intersecting secants theorem to find \\(x^{2}\\); (2) the cosine rule in the isosceles triangle \\(OAB\\) (\\(OA=OB=2\\) radii). Note \\(PC=PD+DC=2+4=6\\).",
+          "steps": [
+            {
+              "explain": "Let \\(PA=AB=x\\), so the whole secant \\(PB=PA+AB=2x\\). The other secant is \\(PDOC\\): \\(PD=2\\) and \\(PC=PD+DC=2+4=6\\) (\\(DC\\) is a diameter \\(=2\\times2\\)).",
+              "work": "\\(PB=2x,\\qquad PC=2+4=6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 360\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><circle cx=\"280\" cy=\"200\" r=\"120\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"400.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"175.0\" y2=\"141.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"280,200 175.0,141.9 310.0,83.8\" fill=\"#fde68a\" fill-opacity=\"0.6\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"175.0\" y2=\"141.9\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"175.0\" y1=\"141.9\" x2=\"310.0\" y2=\"83.8\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"219.5\" y=\"187.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"303.0\" y=\"141.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"242.5\" y=\"100.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB = x</text><line x1=\"40.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"400.0\" y2=\"200.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"36.0\" y=\"240.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">PB = 2x (red)</text><text x=\"36.0\" y=\"258.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">PC = 6 (green)</text><path d=\"M253.8,185.5 A30,30 0 0 0 287.5,171.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"284.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><circle cx=\"40.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"32.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"160.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"154.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"280.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"284.0\" y=\"218.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"400.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"410.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"175.0\" cy=\"141.9\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"167.0\" y=\"135.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"310.0\" cy=\"83.8\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"316.0\" y=\"75.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Secants theorem: (part outside) \\(\\times\\) (whole secant) is equal for both secants: \\(PA\\times PB=PD\\times PC\\).",
+              "work": "\\(x\\times 2x=2\\times 6\\)"
+            },
+            {
+              "explain": "Solve: \\(2x^{2}=12\\).",
+              "work": "\\(x^{2}=6\\)"
+            },
+            {
+              "explain": "Now triangle \\(OAB\\): \\(OA=OB=2\\) (radii, green) and \\(AB=x\\) (red) opposite \\(\\theta\\). Cosine rule for the angle.",
+              "work": "\\(\\cos\\theta=\\dfrac{OA^{2}+OB^{2}-AB^{2}}{2(OA)(OB)}=\\dfrac{2^{2}+2^{2}-x^{2}}{2\\times 2\\times 2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 360\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><circle cx=\"280\" cy=\"200\" r=\"120\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"400.0\" y2=\"200.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"175.0\" y2=\"141.9\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"280,200 175.0,141.9 310.0,83.8\" fill=\"#fde68a\" fill-opacity=\"0.6\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"175.0\" y2=\"141.9\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"200.0\" x2=\"310.0\" y2=\"83.8\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"175.0\" y1=\"141.9\" x2=\"310.0\" y2=\"83.8\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"219.5\" y=\"187.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"303.0\" y=\"141.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"242.5\" y=\"100.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB = x</text><path d=\"M253.8,185.5 A30,30 0 0 0 287.5,171.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"284.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><circle cx=\"40.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"32.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"160.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"154.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"280.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"284.0\" y=\"218.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"400.0\" cy=\"200.0\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"410.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"175.0\" cy=\"141.9\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"167.0\" y=\"135.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"310.0\" cy=\"83.8\" r=\"3.5\" fill=\"#1e293b\"/><text x=\"316.0\" y=\"75.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(x^{2}=6\\).",
+              "work": "\\(\\cos\\theta=\\dfrac{4+4-6}{8}=\\dfrac{2}{8}=\\dfrac{1}{4}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets that \\(PB=2x\\); C uses \\(PC=4\\) instead of 6 (the secant goes right through to \\(C\\)); D treats \\(\\theta\\) as an angle in a right triangle with \\(P\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show \\(\\cos\\theta=\\dfrac{1}{4}\\)",
+              "note": "Secants theorem gives x squared, then the cosine rule in triangle OAB with two radii."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Baulkham Hills High School Year 10 Yearly Mathematics Examination (October 2010)",
+            "school": "Baulkham Hills High School",
+            "grade": "10",
+            "origin": "teacher"
+          }
         }
       ]
     }
