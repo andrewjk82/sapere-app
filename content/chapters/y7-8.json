@@ -3512,6 +3512,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(13.4\\text{ m}\\) to \\(\\text{cm}\\).",
+          "options": [
+            "\\(134\\text{ cm}\\)",
+            "\\(1340\\text{ cm}\\)",
+            "\\(13\\,400\\text{ cm}\\)",
+            "\\(0.134\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "1 m = 100 cm. Multiply 13.4 by 100 (move decimal point 2 places right).",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(1\\text{ m} = 100\\text{ cm}\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(13.4 \\times 100 = 1340\\text{ cm}\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } 1340\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1340\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 1340\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(10\\text{ cm}^2\\) to \\(\\text{mm}^2\\).",
+          "options": [
+            "\\(100\\text{ mm}^2\\)",
+            "\\(1000\\text{ mm}^2\\)",
+            "\\(10\\,000\\text{ mm}^2\\)",
+            "\\(1\\text{ mm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "For area units, 1 cm² = 10² = 100 mm²! Multiply 10 by 100.",
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Follow order of operations and sign rules step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Perform the first algebraic, conversion, or inverse step.",
+              "work": "\\(1\\text{ cm}^2 = 100\\text{ mm}^2\\)"
+            },
+            {
+              "explain": "Complete the calculation carefully.",
+              "work": "\\(10 \\times 100 = 1000\\text{ mm}^2\\)"
+            },
+            {
+              "explain": "Double-check by reversing or testing.",
+              "work": "\\(\\text{Verified: } 1000\\text{ mm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1000\\text{ mm}^2\\).",
+              "work": "\\(\\text{Answer: } 1000\\text{ mm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y7-t3-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A man plants \\(12\\) rows of beans in rows that are \\(10\\text{ m}\\) long. The plants in each row are spaced \\(50\\text{ cm}\\) apart. If the first and last plants in a row are \\(25\\text{ cm}\\) from the ends of the row, what is the total number of plants?",
+          "options": [
+            "\\(228\\)",
+            "\\(240\\)",
+            "\\(252\\)",
+            "\\(216\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 10 m to 1000 cm, subtract BOTH 25 cm margins (950 cm), divide by 50 cm to get 19 spaces, and ADD 1 (fencepost rule!) for 20 plants per row!",
+          "keyPoints": [
+            {
+              "text": "25\\text{ cm}\\) from the ends",
+              "note": "Usable length = 1000 - 25 - 25 = 950 cm; plants = (950 ÷ 50) + 1 = 20 per row."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert each row length to centimetres and subtract both \\(25\\text{ cm}\\) end margins: \\(1000 - 25 - 25 = 950\\text{ cm}\\).",
+              "work": "\\(10\\text{ m} = 1000\\text{ cm} \\implies 1000 - 50 = 950\\text{ cm}\\)"
+            },
+            {
+              "explain": "Divide \\(950\\text{ cm}\\) by the \\(50\\text{ cm}\\) spacing to find the number of gaps per row: \\(950 \\div 50 = 19\\) gaps.",
+              "work": "\\(950 \\div 50 = 19\\text{ gaps}\\)"
+            },
+            {
+              "explain": "Add \\(1\\) to count both the first and last plant in the row: \\(19 + 1 = 20\\) plants per row.",
+              "work": "\\(19 + 1 = 20\\text{ plants per row}\\)"
+            },
+            {
+              "explain": "Multiply by \\(12\\) rows: \\(12 \\times 20 = 240\\) plants in total.",
+              "work": "\\(12 \\times 20 = 240\\text{ plants}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6544,6 +6664,144 @@
             "number": "(c)",
             "page": 1
           }
+        },
+        {
+          "id": "khs23-y7-t3-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the perimeter of an equilateral triangle with side length \\(5\\text{ cm}\\).",
+          "options": [
+            "\\(10\\text{ cm}\\)",
+            "\\(15\\text{ cm}\\)",
+            "\\(20\\text{ cm}\\)",
+            "\\(25\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "All 3 sides of an equilateral triangle are equal (marked with matching ticks): 5 + 5 + 5 = 15 cm.",
+          "keyPoints": [
+            {
+              "text": "equilateral triangle",
+              "note": "All three sides have equal length 5 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the matching tick marks: all three sides equal \\(5\\text{ cm}\\).",
+              "work": "\\(P = 5 + 5 + 5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 175\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,26 56,120 164,120\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"77\" y1=\"69\" x2=\"89\" y2=\"77\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"143\" y1=\"69\" x2=\"131\" y2=\"77\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"110\" y1=\"114\" x2=\"110\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"156\" y=\"76\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">5 cm</text><text x=\"64\" y=\"76\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">5 cm</text><text x=\"110\" y=\"140\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"800\" fill=\"#2563eb\">5 cm</text><text x=\"120\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">All 3 equal sides (blue) = 5 cm each -> Perimeter = 15 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(3 \\times 5 = 15\\text{ cm}\\).",
+              "work": "\\(P = 3 \\times 5 = 15\\text{ cm}\\)"
+            },
+            {
+              "explain": "Confirm the unit is cm (length, not cm²).",
+              "work": "\\(15\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the perimeter is \\(15\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 15\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 148\" width=\"65%\" height=\"auto\" style=\"max-width:312px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"240\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,26 56,120 164,120\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"77\" y1=\"69\" x2=\"89\" y2=\"77\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"143\" y1=\"69\" x2=\"131\" y2=\"77\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"110\" y1=\"114\" x2=\"110\" y2=\"126\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"156\" y=\"76\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q17a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the perimeter of the isosceles triangle shown (top side \\(12\\text{ cm}\\), two equal sides \\(9\\text{ cm}\\)).",
+          "options": [
+            "\\(21\\text{ cm}\\)",
+            "\\(30\\text{ cm}\\)",
+            "\\(33\\text{ cm}\\)",
+            "\\(54\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "The matching tick marks show BOTH slanted sides are 9 cm! Add all three sides: 12 + 9 + 9.",
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Add all three sides: 12 + 9 + 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the tick marks: both slanted sides (blue) equal \\(9\\text{ cm}\\), and the top side (red) is \\(12\\text{ cm}\\).",
+              "work": "\\(P = 12 + 9 + 9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 170\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"48,36 212,36 130,122\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"48\" y1=\"36\" x2=\"130\" y2=\"122\" stroke=\"#2563eb\" stroke-width=\"3.4\"/><line x1=\"212\" y1=\"36\" x2=\"130\" y2=\"122\" stroke=\"#2563eb\" stroke-width=\"3.4\"/><line x1=\"48\" y1=\"36\" x2=\"212\" y2=\"36\" stroke=\"#dc2626\" stroke-width=\"3.2\"/><line x1=\"83\" y1=\"84\" x2=\"95\" y2=\"74\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"177\" y1=\"84\" x2=\"165\" y2=\"74\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"130\" y=\"26\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">12 cm</text><text x=\"184\" y=\"92\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">9 cm</text><text x=\"76\" y=\"92\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">9 cm</text><text x=\"135\" y=\"162\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Two equal 9 cm sides (blue) + 12 cm top (red) = 30 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two equal sides: \\(9 + 9 = 18\\text{ cm}\\).",
+              "work": "\\(12 + 18 = 30\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify: \\(12 + 9 + 9 = 30\\text{ cm}\\).",
+              "work": "\\(P = 30\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the perimeter is \\(30\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 30\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 144\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"144\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"48,36 212,36 130,122\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"83\" y1=\"84\" x2=\"95\" y2=\"74\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><line x1=\"177\" y1=\"84\" x2=\"165\" y2=\"74\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"130\" y=\"26\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">12 cm</text><text x=\"184\" y=\"92\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q17b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the perimeter of the five-sided figure shown (side lengths \\(3\\text{ m}, 2\\text{ m}, 9\\text{ m}, 11\\text{ m}, 1\\text{ m}\\)).",
+          "options": [
+            "\\(24\\text{ m}\\)",
+            "\\(25\\text{ m}\\)",
+            "\\(26\\text{ m}\\)",
+            "\\(27\\text{ m}\\)"
+          ],
+          "answer": 2,
+          "hint": "Add all FIVE outer side lengths carefully (don't miss the short 1 m edge at the bottom-left!).",
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Sum all five side lengths around the boundary."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List all \\(5\\) side lengths going clockwise around the polygon: \\(3, 2, 9, 11,\\) and \\(1\\).",
+              "work": "\\(P = 3 + 2 + 9 + 11 + 1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 185\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"185\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"70,126 88,66 134,28 214,102 96,134\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><text x=\"68\" y=\"94\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">3 m</text><text x=\"104\" y=\"46\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">2 m</text><text x=\"186\" y=\"60\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">9 m</text><text x=\"166\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">11 m</text><text x=\"76\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">1 m</text><text x=\"135\" y=\"177\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Sum all 5 boundary edges (blue): 3 + 2 + 9 + 11 + 1 = 26 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Group convenient pairs: \\((9 + 11) = 20\\) and \\((3 + 2 + 1) = 6\\).",
+              "work": "\\(20 + 6 = 26\\text{ m}\\)"
+            },
+            {
+              "explain": "Double-check every edge was counted exactly once.",
+              "work": "\\(P = 26\\text{ m}\\)"
+            },
+            {
+              "explain": "Therefore, the perimeter is \\(26\\text{ m}\\).",
+              "work": "\\(\\text{Answer: } 26\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 158\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"158\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"70,126 88,66 134,28 214,102 96,134\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"68\" y=\"94\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">3 m</text><text x=\"104\" y=\"46\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">2 m</text><text x=\"186\" y=\"60\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">9 m</text><text x=\"166\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">11 m</text><text x=\"76\" y=\"146\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">1 m</text></svg>"
+          }
         }
       ]
     },
@@ -7644,6 +7902,98 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 130\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"34\" width=\"168\" height=\"66\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><polyline points=\"74,34 74,44 64,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"222,34 222,44 232,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"74,100 74,90 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"222,100 222,90 232,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"148\" y=\"25\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">12 m</text><text x=\"48\" y=\"72\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4 m</text></svg>"
           }
+        },
+        {
+          "id": "khs23-y7-t3-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the area of a rectangle with length \\(5\\text{ cm}\\) and breadth \\(6\\text{ cm}\\)?",
+          "options": [
+            "\\(11\\text{ cm}^2\\)",
+            "\\(22\\text{ cm}^2\\)",
+            "\\(30\\text{ cm}^2\\)",
+            "\\(36\\text{ cm}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Area of a rectangle = length × breadth = 5 × 6.",
+          "keyPoints": [
+            {
+              "text": "area of a rectangle",
+              "note": "A = l × b = 5 × 6 = 30 cm²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two perpendicular side lengths: \\(5\\text{ cm}\\) (blue) and \\(6\\text{ cm}\\) (red).",
+              "work": "\\(l = 5\\text{ cm}, \\; b = 6\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 165\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"165\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"34\" width=\"112\" height=\"78\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"1.9\"/><line x1=\"120\" y1=\"28\" x2=\"120\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"106\" x2=\"120\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"71\" x2=\"70\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"75\" x2=\"70\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"71\" x2=\"182\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"75\" x2=\"182\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"120\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">6 cm</text><text x=\"188\" y=\"78\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">5 cm</text><text x=\"120\" y=\"78\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1d4ed8\">5 × 6 = 30 cm²</text><text x=\"130\" y=\"157\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Area = 5 cm × 6 cm = 30 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply length by breadth: \\(A = 5 \\times 6 = 30\\text{ cm}^2\\).",
+              "work": "\\(A = 30\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Check the unit: area is measured in square centimetres (\\(\\text{cm}^2\\)).",
+              "work": "\\(30\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the area of the rectangle is \\(30\\text{ cm}^2\\).",
+              "work": "\\(\\text{Answer: } 30\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 138\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"138\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"34\" width=\"112\" height=\"78\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\"/><line x1=\"120\" y1=\"28\" x2=\"120\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"106\" x2=\"120\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"71\" x2=\"70\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"75\" x2=\"70\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"71\" x2=\"182\" y2=\"71\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"75\" x2=\"182\" y2=\"75\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"120\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">6 cm</text><text x=\"188\" y=\"78\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q19b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the area of the rectangle shown (\\(9\\text{ cm} \\times 8\\text{ cm}\\)).",
+          "options": [
+            "\\(17\\text{ cm}^2\\)",
+            "\\(34\\text{ cm}^2\\)",
+            "\\(72\\text{ cm}^2\\)",
+            "\\(81\\text{ cm}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Area of a rectangle = length × width = 9 × 8.",
+          "keyPoints": [
+            {
+              "text": "area of the rectangle",
+              "note": "Multiply 9 cm × 8 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the length (\\(9\\text{ cm}\\), red) and width (\\(8\\text{ cm}\\), blue).",
+              "work": "\\(l = 9\\text{ cm}, \\; w = 8\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 175\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"74\" y=\"34\" width=\"124\" height=\"90\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"74,112 86,112 86,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polyline points=\"186,124 186,112 198,112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"136\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">9 cm</text><text x=\"64\" y=\"84\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">8 cm</text><text x=\"136\" y=\"84\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1d4ed8\">9 × 8 = 72 cm²</text><text x=\"130\" y=\"167\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Area = 9 cm × 8 cm = 72 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply \\(A = l \\times w = 9 \\times 8\\).",
+              "work": "\\(A = 72\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Confirm the area unit is \\(\\text{cm}^2\\).",
+              "work": "\\(72\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the area is \\(72\\text{ cm}^2\\).",
+              "work": "\\(\\text{Answer: } 72\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 148\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"74\" y=\"34\" width=\"124\" height=\"90\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"74,112 86,112 86,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><polyline points=\"186,124 186,112 198,112\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"136\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text><text x=\"64\" y=\"84\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">8 cm</text></svg>"
+          }
         }
       ]
     },
@@ -8438,6 +8788,144 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 164\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"60,46 142.5,46 247,101 247,134 60,134\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"60,56 70,56 70,46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"60,124 70,124 70,134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"237,134 237,124 247,124\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><text x=\"48\" y=\"94\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">8 m</text><text x=\"102\" y=\"38\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">7.5 m</text><text x=\"154\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">17 m</text><text x=\"256\" y=\"122\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">3 m</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q20a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the composite rectilinear shape shown.",
+          "options": [
+            "\\(13\\text{ cm}^2\\)",
+            "\\(15\\text{ cm}^2\\)",
+            "\\(19\\text{ cm}^2\\)",
+            "\\(25\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Enclose the shape in a full 5 cm × 5 cm square (area 25 cm²), then subtract the two empty corner rectangles: bottom-left (2 × 2 = 4 cm²) and bottom-right (2 × 3 = 6 cm²)!",
+          "keyPoints": [
+            {
+              "text": "composite rectilinear shape",
+              "note": "Full 5×5 square minus the 2×2 and 2×3 cut-out corners."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total height: \\(3 + 2 = 5\\text{ cm}\\) (also \\(2 + 3 = 5\\text{ cm}\\) on the right), so the shape fits inside a \\(5\\text{ cm} \\times 5\\text{ cm}\\) square of area \\(25\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{full}} = 5 \\times 5 = 25\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 220\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"220\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"74\" y=\"114\" width=\"56\" height=\"56\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4,2\"/><rect x=\"158\" y=\"86\" width=\"56\" height=\"84\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4,2\"/><text x=\"102\" y=\"147.60000000000002\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">4 cm²</text><text x=\"186\" y=\"133.60000000000002\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">6 cm²</text><polygon points=\"74,30 214,30 214,86 158,86 158,170 130,170 130,114 74,114\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"144\" y=\"22\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">5 cm</text><text x=\"66\" y=\"72\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">3 cm</text><text x=\"222\" y=\"58\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">2 cm</text><text x=\"186\" y=\"100\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">2 cm</text><text x=\"166\" y=\"128\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">3 cm</text><text x=\"102\" y=\"128\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">2 cm</text><text x=\"122\" y=\"144.79999999999998\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">2 cm</text><text x=\"145\" y=\"212\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Full 5×5 square (25 cm²) minus red cut-outs (4 cm² + 6 cm²) = 15 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the area of the bottom-left cut-out rectangle (red): \\(2 \\times 2 = 4\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{left cut}} = 2 \\times 2 = 4\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Calculate the area of the bottom-right cut-out rectangle (red): \\(2 \\times 3 = 6\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{right cut}} = 2 \\times 3 = 6\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Subtract both cut-outs from the full square: \\(25 - 4 - 6 = 15\\text{ cm}^2\\).",
+              "work": "\\(A = 25 - 10 = 15\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 194\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"194\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"74,30 214,30 214,86 158,86 158,170 130,170 130,114 74,114\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"144\" y=\"22\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">5 cm</text><text x=\"66\" y=\"72\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">3 cm</text><text x=\"222\" y=\"58\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">2 cm</text><text x=\"186\" y=\"100\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">2 cm</text><text x=\"166\" y=\"128\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">3 cm</text><text x=\"102\" y=\"128\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">2 cm</text><text x=\"122\" y=\"144.79999999999998\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">2 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q20b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the composite five-sided shape shown (top \\(7\\text{ cm}\\), right \\(11\\text{ cm}\\), bottom \\(12\\text{ cm}\\), left \\(5\\text{ cm}\\)).",
+          "options": [
+            "\\(102\\text{ cm}^2\\)",
+            "\\(117\\text{ cm}^2\\)",
+            "\\(120\\text{ cm}^2\\)",
+            "\\(132\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Enclose the shape in a 12 cm × 11 cm rectangle (132 cm²), then subtract the missing top-left triangle (base = 12 - 7 = 5 cm, height = 11 - 5 = 6 cm)!",
+          "keyPoints": [
+            {
+              "text": "composite five-sided shape",
+              "note": "Full 12×11 rectangle minus missing top-left right triangle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the area of the full enclosing \\(12\\text{ cm} \\times 11\\text{ cm}\\) rectangle.",
+              "work": "\\(A_{\\text{rect}} = 12 \\times 11 = 132\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 200\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"76,30 126,30 76,90\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4,2\"/><text x=\"101\" y=\"24\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">5 cm</text><text x=\"68\" y=\"62\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">6 cm</text><polygon points=\"76,140 196,140 196,30 126,30 76,90\" fill=\"#dbeafe\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"161\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">7 cm</text><text x=\"206\" y=\"88\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">11 cm</text><text x=\"136\" y=\"158\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">12 cm</text><text x=\"68\" y=\"120\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">5 cm</text><text x=\"135\" y=\"192\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Missing top-left triangle (red): 5 cm × 6 cm -> Area = 15 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the base and height of the missing top-left triangle (red): base \\(= 12 - 7 = 5\\text{ cm}\\), height \\(= 11 - 5 = 6\\text{ cm}\\).",
+              "work": "\\(b = 5\\text{ cm}, \\; h = 6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Calculate the area of the missing triangle: \\(\\dfrac{1}{2} \\times 5 \\times 6 = 15\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{tri}} = 15\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Subtract the triangle from the rectangle: \\(132 - 15 = 117\\text{ cm}^2\\).",
+              "work": "\\(A = 132 - 15 = 117\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 174\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"76,140 196,140 196,30 126,30 76,90\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"161\" y=\"24\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">7 cm</text><text x=\"206\" y=\"88\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">11 cm</text><text x=\"136\" y=\"158\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">12 cm</text><text x=\"68\" y=\"120\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">5 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "\\(ABCD\\) is a square with side length \\(3\\text{ cm}\\). \\(X\\) is the midpoint of side \\(CD\\) and \\(Y\\) is a point on \\(BC\\) such that \\(BY = 2\\text{ cm}\\) (with \\(WY \\perp BC\\)). Find the shaded area \\(AWXD\\).",
+          "options": [
+            "\\(3.5\\text{ cm}^2\\)",
+            "\\(3.75\\text{ cm}^2\\)",
+            "\\(4.0\\text{ cm}^2\\)",
+            "\\(4.5\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the half-square △ACD (area = 1/2 × 3 × 3 = 4.5 cm²)! The shaded region is △ACD MINUS the small unshaded triangle △CWX (base CX = 1.5 cm, height YC = 3 - 2 = 1 cm)!",
+          "keyPoints": [
+            {
+              "text": "shaded area",
+              "note": "Shaded AWXD = Area(△ACD) - Area(△CWX)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the area of half-square \\(\\triangle ACD\\): \\(\\text{Area}(\\triangle ACD) = \\dfrac{1}{2} \\times 3 \\times 3 = 4.5\\text{ cm}^2\\).",
+              "work": "\\(\\text{Area}(\\triangle ACD) = 4.5\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Find the dimensions of the unshaded triangle \\(\\triangle CWX\\) (red): base \\(CX = \\dfrac{3}{2} = 1.5\\text{ cm}\\) (since \\(X\\) is midpoint of \\(CD\\)), and perpendicular height from \\(W\\) to \\(CD\\) equals \\(YC = 3 - 2 = 1\\text{ cm}\\).",
+              "work": "\\(CX = 1.5\\text{ cm}, \\; YC = 1\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 215\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"215\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"126\" height=\"126\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"68,162 152,78 194,99 194,162\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"194,36 152,78 194,99\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"178\" y=\"76\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">0.75</text><text x=\"172\" y=\"30\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\">1 cm</text><line x1=\"68\" y1=\"162\" x2=\"194\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"68\" y1=\"36\" x2=\"194\" y2=\"99\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"152\" y1=\"36\" x2=\"152\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-dasharray=\"3,2\"/><polyline points=\"160,36 160,44 152,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"64\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"152\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">Y</text><text x=\"198\" y=\"30\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">C</text><text x=\"202\" y=\"104\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">X</text><text x=\"198\" y=\"176\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">D</text><text x=\"64\" y=\"176\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"148\" y=\"96\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\">W</text><text x=\"130\" y=\"207\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Shaded AWXD = △ACD (4.5 cm²) - red △CWX (0.75 cm²) = 3.75 cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the area of \\(\\triangle CWX\\): \\(\\dfrac{1}{2} \\times 1.5 \\times 1 = 0.75\\text{ cm}^2\\).",
+              "work": "\\(\\text{Area}(\\triangle CWX) = 0.75\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Subtract from \\(\\triangle ACD\\): \\(4.5 - 0.75 = 3.75\\text{ cm}^2\\).",
+              "work": "\\(\\text{Shaded area} = 4.5 - 0.75 = 3.75\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 188\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"126\" height=\"126\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"68,162 152,78 194,99 194,162\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"68\" y1=\"162\" x2=\"194\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"68\" y1=\"36\" x2=\"194\" y2=\"99\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"152\" y1=\"36\" x2=\"152\" y2=\"78\" stroke=\"#0f172a\" stroke-width=\"1.3\" stroke-dasharray=\"3,2\"/><polyline points=\"160,36 160,44 152,44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"64\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">B</text><text x=\"152\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">Y</text><text x=\"198\" y=\"30\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">C</text><text x=\"202\" y=\"104\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">X</text><text x=\"198\" y=\"176\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">D</text><text x=\"64\" y=\"176\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">A</text><text x=\"148\" y=\"96\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\">W</text></svg>"
           }
         }
       ]
@@ -9356,6 +9844,98 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 130\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"54,98 194,98 224,34 84,34\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"126\" y1=\"34\" x2=\"126\" y2=\"98\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><polyline points=\"126,88 136,88 136,98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"124\" y=\"116\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">17 mm</text><text x=\"134\" y=\"70\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5.3 mm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q19a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the area of the right-angled triangle shown (perpendicular sides \\(12\\text{ cm}\\) and \\(5\\text{ cm}\\), hypotenuse \\(13\\text{ cm}\\)).",
+          "options": [
+            "\\(30\\text{ cm}^2\\)",
+            "\\(32.5\\text{ cm}^2\\)",
+            "\\(60\\text{ cm}^2\\)",
+            "\\(78\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use ONLY the two perpendicular sides meeting at the right-angle square (12 cm and 5 cm) — ignore the slanted 13 cm hypotenuse!",
+          "keyPoints": [
+            {
+              "text": "area",
+              "note": "A = 1/2 × base × height using the two perpendicular sides (12 and 5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two sides that meet at the right angle: base \\(= 12\\text{ cm}\\) (blue) and height \\(= 5\\text{ cm}\\) (red). Ignore the \\(13\\text{ cm}\\) hypotenuse.",
+              "work": "\\(b = 12\\text{ cm}, \\; h = 5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 160\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"160\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"52,38 202,38 202,104\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"191,38 191,49 202,49\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"52\" y1=\"38\" x2=\"202\" y2=\"38\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"202\" y1=\"38\" x2=\"202\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><text x=\"127\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">12 cm</text><text x=\"214\" y=\"76\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">5 cm</text><text x=\"108\" y=\"96\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\">13 cm</text><text x=\"140\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Use perpendicular legs 12 cm (blue) & 5 cm (red), NOT 13 cm!</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the triangle area formula: \\(A = \\dfrac{1}{2} \\times b \\times h\\).",
+              "work": "\\(A = \\dfrac{1}{2} \\times 12 \\times 5\\)"
+            },
+            {
+              "explain": "Compute \\(\\dfrac{1}{2} \\times 12 = 6\\), then \\(6 \\times 5 = 30\\text{ cm}^2\\).",
+              "work": "\\(A = 30\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the area of the triangle is \\(30\\text{ cm}^2\\).",
+              "work": "\\(\\text{Answer: } 30\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 134\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"134\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"52,38 202,38 202,104\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"191,38 191,49 202,49\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"127\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">12 cm</text><text x=\"214\" y=\"76\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text><text x=\"108\" y=\"96\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#64748b\">13 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs23-y7-t3-q20c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The area of a kite is given by \\(A = \\dfrac{1}{2}xy\\). Find the area of the kite shown with diagonals \\(9\\text{ m}\\) and \\(18\\text{ m}\\).",
+          "options": [
+            "\\(27\\text{ m}^2\\)",
+            "\\(81\\text{ m}^2\\)",
+            "\\(162\\text{ m}^2\\)",
+            "\\(54\\text{ m}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute x = 9 m and y = 18 m into A = 1/2 × x × y.",
+          "keyPoints": [
+            {
+              "text": "A = \\dfrac{1}{2}xy",
+              "note": "Multiply 1/2 × 9 × 18."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two perpendicular diagonals: \\(x = 9\\text{ m}\\) (red) and \\(y = 18\\text{ m}\\) (blue).",
+              "work": "\\(x = 9\\text{ m}, \\; y = 18\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 215\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"215\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"114,34 154,68 114,162 74,68\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"74\" y1=\"68\" x2=\"154\" y2=\"68\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-dasharray=\"4,2\"/><line x1=\"114\" y1=\"34\" x2=\"114\" y2=\"162\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-dasharray=\"4,2\"/><text x=\"114\" y=\"22\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">9 m</text><text x=\"172\" y=\"102\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">18 m</text><text x=\"125\" y=\"207\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Diagonals x = 9 m (red) and y = 18 m (blue) -> A = 1/2 × 9 × 18 = 81 m²</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the kite area formula: \\(A = \\dfrac{1}{2} \\times 9 \\times 18\\).",
+              "work": "\\(A = \\dfrac{1}{2} \\times 9 \\times 18\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{1}{2} \\times 18 = 9\\), then multiply \\(9 \\times 9 = 81\\text{ m}^2\\).",
+              "work": "\\(A = 81\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Therefore, the area of the kite is \\(81\\text{ m}^2\\).",
+              "work": "\\(\\text{Answer: } 81\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 188\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"188\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"114,34 154,68 114,162 74,68\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"74\" y1=\"68\" x2=\"154\" y2=\"68\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,2\"/><line x1=\"114\" y1=\"34\" x2=\"114\" y2=\"162\" stroke=\"#64748b\" stroke-width=\"1.3\" stroke-dasharray=\"4,2\"/><text x=\"114\" y=\"22\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">9 m</text><text x=\"172\" y=\"102\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">18 m</text></svg>"
           }
         }
       ]
