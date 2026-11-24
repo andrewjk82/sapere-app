@@ -191,6 +191,64 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12d",
+          "type": "mc",
+          "stem": "Find the constant term of \\(\\left(4x^{3}+\\dfrac{3}{x}\\right)^{8}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(326\\,592\\)",
+            "\\(^{8}C_{4}\\times 4^{4}\\times 3^{4}\\)",
+            "\\(1\\,306\\,368\\)",
+            "\\(^{8}C_{6}\\times 4^{6}\\times 3^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the general term \\(^{8}C_{k}(4x^{3})^{8-k}\\left(3x^{-1}\\right)^{k}\\), find the power of \\(x\\), and set it equal to 0.",
+          "steps": [
+            {
+              "explain": "Write \\(\\dfrac{3}{x}=3x^{-1}\\). The general term of \\((a+b)^{8}\\) is \\(^{8}C_{k}\\,a^{8-k}b^{k}\\) with \\(a=4x^{3}\\) and \\(b=3x^{-1}\\).",
+              "work": "\\(T_{k+1}={}^{8}C_{k}\\left(4x^{3}\\right)^{8-k}\\left(3x^{-1}\\right)^{k}\\)"
+            },
+            {
+              "explain": "Separate numbers and powers of \\(x\\): \\((4x^{3})^{8-k}=4^{8-k}x^{3(8-k)}=4^{8-k}x^{24-3k}\\) and \\((3x^{-1})^{k}=3^{k}x^{-k}\\).",
+              "work": "\\(T_{k+1}={}^{8}C_{k}\\,4^{8-k}\\,3^{k}\\,x^{24-3k}x^{-k}={}^{8}C_{k}\\,4^{8-k}\\,3^{k}\\,x^{24-4k}\\)"
+            },
+            {
+              "explain": "A CONSTANT term has \\(x^{0}\\), so the power of \\(x\\) must be 0.",
+              "work": "\\(24-4k=0\\ \\Rightarrow\\ k=6\\)"
+            },
+            {
+              "explain": "Substitute \\(k=6\\): \\(4^{8-6}=4^{2}=16\\) and \\(3^{6}=729\\), and \\(^{8}C_{6}=\\dfrac{8\\times7}{2}=28\\).",
+              "work": "\\(T_{7}={}^{8}C_{6}\\times 4^{2}\\times 3^{6}=28\\times 16\\times 729\\)"
+            },
+            {
+              "explain": "Multiply: \\(28\\times 16=448\\) and \\(448\\times 729=326\\,592\\).",
+              "work": "\\(=326\\,592\\)"
+            },
+            {
+              "explain": "Options B and D use the wrong \\(k\\) (the powers of \\(x\\) would not cancel); option C is \\(^{8}C_{6}\\) with a wrong power of 4.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the constant term of",
+              "note": "General term: find k so that the power of x is zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -904,6 +962,236 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-mc5",
+          "type": "mc",
+          "stem": "What is the minimum number of people required in a room to guarantee that 3 of them were born in the same month?",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(13\\)",
+            "\\(25\\)",
+            "\\(37\\)"
+          ],
+          "answer": 2,
+          "hint": "Pigeonhole principle: think of the worst case, where as many people as possible are born in different months with no month having 3 people.",
+          "steps": [
+            {
+              "explain": "There are 12 months (the 'pigeonholes'). We want to guarantee 3 people in some month.",
+              "work": "\\(12\\ \\text{months}\\)"
+            },
+            {
+              "explain": "Worst case: each month has as many people as possible WITHOUT reaching 3, that is exactly 2 people per month.",
+              "work": "\\(12\\times 2=24\\ \\text{people, with no month having 3}\\)"
+            },
+            {
+              "explain": "With 24 people it is still possible that no month has 3. The very next person (the 25th) must go into a month that already has 2, making 3.",
+              "work": "\\(24+1=25\\)"
+            },
+            {
+              "explain": "Check: \\(\\left\\lceil\\dfrac{25}{12}\\right\\rceil=3\\), because \\(\\dfrac{25}{12}=2\\dfrac{1}{12}\\). Option B (13) only guarantees 2 people in one month; option D (37) guarantees 4.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the minimum number of people required",
+              "note": "Worst case: fill every month with 2 people, then one more person forces a third."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12bi",
+          "type": "mc",
+          "stem": "How many odd 4 digit numbers can be made from the digits 2, 3, 4, 5, 6, if none of the digits are repeated?",
+          "difficulty": "medium",
+          "options": [
+            "\\(48\\)",
+            "\\(24\\)",
+            "\\(120\\)",
+            "\\(60\\)"
+          ],
+          "answer": 0,
+          "hint": "Fill the restricted place first: an odd number must END in an odd digit. Then fill the other places from what is left.",
+          "steps": [
+            {
+              "explain": "Draw four boxes for the digits: thousands, hundreds, tens, units. The number is odd only if the last digit (units) is odd. From 2, 3, 4, 5, 6 the odd digits are 3 and 5.",
+              "work": "\\(\\underline{\\ \\ }\\ \\ \\underline{\\ \\ }\\ \\ \\underline{\\ \\ }\\ \\ \\underline{\\ 2\\ }\\ \\text{(units: 3 or 5)}\\)"
+            },
+            {
+              "explain": "Units digit: 2 choices (3 or 5). Fill this place FIRST.",
+              "work": "\\(\\text{units}:\\ 2\\)"
+            },
+            {
+              "explain": "Thousands digit: any of the 4 digits left (one has been used).",
+              "work": "\\(\\text{thousands}:\\ 4\\)"
+            },
+            {
+              "explain": "Hundreds digit: 3 digits left. Tens digit: 2 digits left.",
+              "work": "\\(\\text{hundreds}:\\ 3,\\qquad\\text{tens}:\\ 2\\)"
+            },
+            {
+              "explain": "Multiply the choices for the four places.",
+              "work": "\\(4\\times 3\\times 2\\times 2=48\\)"
+            },
+            {
+              "explain": "Option C (120) is \\(^{5}P_{4}\\), which counts all 4-digit numbers, even and odd; option B (24) forgets there are TWO odd digits.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many odd 4 digit numbers can be made",
+              "note": "Fill the restricted position (the last digit) first, then the others."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12ci",
+          "type": "mc",
+          "stem": "A table has 4 boys and 4 girls sitting around it and the seating is arranged at random. Find the number of ways of sitting around the table so that the boys and girls alternate.",
+          "difficulty": "hard",
+          "options": [
+            "\\(144\\)",
+            "\\(576\\)",
+            "\\(1152\\)",
+            "\\(40\\,320\\)"
+          ],
+          "answer": 0,
+          "hint": "Around a table, rotations of the same arrangement are NOT different. Fix one boy's seat to remove rotations, then arrange the others.",
+          "steps": [
+            {
+              "explain": "Seating around a circle: rotating everybody one seat gives the SAME arrangement. To handle this, fix one person (a boy) in one seat. Then the seats are all distinguishable.",
+              "work": "\\(\\text{fix 1 boy}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><circle cx=\"180\" cy=\"165\" r=\"76\" fill=\"#fef3c7\" stroke=\"#a16207\" stroke-width=\"3\"/><text x=\"180.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#a16207\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">table</text><circle cx=\"180.0\" cy=\"55.0\" r=\"22\" fill=\"#60a5fa\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"180.0\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"257.8\" cy=\"87.2\" r=\"22\" fill=\"#f9a8d4\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"257.8\" y=\"92.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"290.0\" cy=\"165.0\" r=\"22\" fill=\"#60a5fa\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"290.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"257.8\" cy=\"242.8\" r=\"22\" fill=\"#f9a8d4\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"257.8\" y=\"247.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"180.0\" cy=\"275.0\" r=\"22\" fill=\"#60a5fa\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"180.0\" y=\"280.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"102.2\" cy=\"242.8\" r=\"22\" fill=\"#f9a8d4\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"102.2\" y=\"247.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"70.0\" cy=\"165.0\" r=\"22\" fill=\"#60a5fa\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"70.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"102.2\" cy=\"87.2\" r=\"22\" fill=\"#f9a8d4\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"102.2\" y=\"92.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><text x=\"180.0\" y=\"302.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">first boy fixed in one seat;</text><text x=\"180.0\" y=\"320.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">other boys: 3! ways, girls: 4! ways</text></svg>"
+              }
+            },
+            {
+              "explain": "Alternating means the seats go B, G, B, G, B, G, B, G round the table. After fixing the first boy, the other 3 boys must sit in the 3 remaining 'boy seats': \\(3!\\) ways.",
+              "work": "\\(3!=6\\)"
+            },
+            {
+              "explain": "The 4 girls fill the 4 'girl seats' (between the boys): \\(4!\\) ways.",
+              "work": "\\(4!=24\\)"
+            },
+            {
+              "explain": "Multiply (independent choices).",
+              "work": "\\(3!\\times 4!=6\\times 24=144\\)"
+            },
+            {
+              "explain": "Option B (\\(4!\\times 4!=576\\)) forgets that rotations are the same; option D (\\(8!\\)) ignores both the alternating rule and the rotations.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the number of ways of sitting around the table so that the boys and girls alternate",
+              "note": "Circular arrangements: fix one person, then arrange the rest."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12cii",
+          "type": "mc",
+          "stem": "A table has 4 boys and 4 girls sitting around it and the seating is arranged at random. Find the number of ways of sitting around the table if 2 particular people will sit apart.",
+          "difficulty": "hard",
+          "options": [
+            "\\(3600\\)",
+            "\\(5040\\)",
+            "\\(1440\\)",
+            "\\(30\\,240\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the complement: (all arrangements) minus (arrangements where the 2 particular people sit TOGETHER). Treat the pair as one block.",
+          "steps": [
+            {
+              "explain": "Total arrangements of 8 people around a table: fix one person and arrange the other 7.",
+              "work": "\\((8-1)!=7!=5040\\)"
+            },
+            {
+              "explain": "'Sit apart' is the opposite of 'sit together', so find the 'together' case and subtract. Treat the 2 particular people as ONE block. Then there are 7 'objects' around the table: \\((7-1)!=6!\\) arrangements.",
+              "work": "\\(6!=720\\)"
+            },
+            {
+              "explain": "Inside the block the 2 people can swap places: \\(2!\\) ways.",
+              "work": "\\(2!=2\\)"
+            },
+            {
+              "explain": "Number of ways they sit together \\(=6!\\times 2!\\).",
+              "work": "\\(720\\times 2=1440\\)"
+            },
+            {
+              "explain": "Number of ways they sit apart \\(=\\) total \\(-\\) together.",
+              "work": "\\(7!-2!\\times 6!=5040-1440=3600\\)"
+            },
+            {
+              "explain": "Cross-check by seating one of them first (rotations fixed). The other person may then sit in 5 of the 7 remaining seats (not either neighbour), and the other 6 people fill the remaining 6 seats in \\(6!\\) ways: \\(5\\times 720=3600\\) ✓.",
+              "work": "\\(5\\times 6!=3600\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 330\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><circle cx=\"180\" cy=\"165\" r=\"76\" fill=\"#fef3c7\" stroke=\"#a16207\" stroke-width=\"3\"/><text x=\"180.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#a16207\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">table</text><circle cx=\"180.0\" cy=\"55.0\" r=\"22\" fill=\"#fbbf24\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"180.0\" y=\"60.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><circle cx=\"257.8\" cy=\"87.2\" r=\"22\" fill=\"#fca5a5\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"257.8\" y=\"92.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✖</text><circle cx=\"290.0\" cy=\"165.0\" r=\"22\" fill=\"#86efac\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"290.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><circle cx=\"257.8\" cy=\"242.8\" r=\"22\" fill=\"#86efac\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"257.8\" y=\"247.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><circle cx=\"180.0\" cy=\"275.0\" r=\"22\" fill=\"#86efac\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"180.0\" y=\"280.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><circle cx=\"102.2\" cy=\"242.8\" r=\"22\" fill=\"#86efac\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"102.2\" y=\"247.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><circle cx=\"70.0\" cy=\"165.0\" r=\"22\" fill=\"#86efac\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"70.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✓</text><circle cx=\"102.2\" cy=\"87.2\" r=\"22\" fill=\"#fca5a5\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"102.2\" y=\"92.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">✖</text><text x=\"180.0\" y=\"302.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A is fixed; B may sit in any of the 5</text><text x=\"180.0\" y=\"320.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">green seats, not next to A (red)</text></svg>"
+              }
+            },
+            {
+              "explain": "Option B (\\(7!\\)) is the total; option C (\\(1440\\)) is the 'together' case.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the number of ways of sitting around the table if 2 particular people will sit apart",
+              "note": "Apart = total minus together; treat the pair as a block and allow it to swap."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1184,6 +1472,60 @@
           "meta": {
             "source": "Baulkham Hills High School 2020 Year 11 Yearly Examination Mathematics Extension 1",
             "school": "Baulkham Hills High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-mc2",
+          "type": "mc",
+          "stem": "How many ten-letter arrangements can be made using letters of the word STATISTICS?",
+          "difficulty": "medium",
+          "options": [
+            "\\(5!\\)",
+            "\\(10!\\)",
+            "\\(\\dfrac{10!}{3!\\times 2!}\\)",
+            "\\(\\dfrac{10!}{3!\\times 3!\\times 2!}\\)"
+          ],
+          "answer": 3,
+          "hint": "Count how many times each letter appears. Divide \\(10!\\) by the factorial of each repeated letter's count.",
+          "steps": [
+            {
+              "explain": "Write out the word and count each letter: S-T-A-T-I-S-T-I-C-S has 10 letters.",
+              "work": "\\(S\\times 3,\\quad T\\times 3,\\quad I\\times 2,\\quad A\\times 1,\\quad C\\times 1\\)"
+            },
+            {
+              "explain": "Check the total: \\(3+3+2+1+1=10\\) ✓.",
+              "work": "\\(3+3+2+1+1=10\\)"
+            },
+            {
+              "explain": "If all 10 letters were different there would be \\(10!\\) arrangements. But swapping the 3 S's among themselves gives the same word (\\(3!\\) ways), the 3 T's (\\(3!\\) ways) and the 2 I's (\\(2!\\) ways). Each word has been counted \\(3!\\times 3!\\times 2!\\) times, so divide.",
+              "work": "\\(\\dfrac{10!}{3!\\times 3!\\times 2!}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\dfrac{3\\,628\\,800}{6\\times 6\\times 2}=\\dfrac{3\\,628\\,800}{72}=50\\,400\\).",
+              "work": "\\(=50\\,400\\)"
+            },
+            {
+              "explain": "Option C forgets one of the repeated groups (there are THREE repeated letters: S, T and I); option B treats all letters as different; option A is just \\(5!\\) (the number of different letters).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How many ten-letter arrangements",
+              "note": "Count each letter, then divide 10 factorial by the factorial of each repeat."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -1517,6 +1859,110 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12ai",
+          "type": "mc",
+          "stem": "From a group of 7 cats and 8 dogs, 10 are chosen at random as a pet package to go to a nursing home. In how many ways can this pet package be chosen?",
+          "difficulty": "easy",
+          "options": [
+            "\\(3003\\)",
+            "\\(360\\,360\\)",
+            "\\(10!\\)",
+            "\\(30\\,030\\)"
+          ],
+          "answer": 0,
+          "hint": "The order of choosing does not matter, so it is a combination: choose 10 animals from 15 in total (cats and dogs together).",
+          "steps": [
+            {
+              "explain": "Total animals: \\(7+8=15\\). The package is a selection of 10 animals, and the order they are chosen in does not matter (the same group of 10 is the same package), so use combinations \\(^{n}C_{r}\\).",
+              "work": "\\(^{15}C_{10}\\)"
+            },
+            {
+              "explain": "Use \\(^{n}C_{r}=\\dfrac{n!}{r!(n-r)!}\\) with \\(n=15\\), \\(r=10\\), \\(n-r=5\\).",
+              "work": "\\(^{15}C_{10}=\\dfrac{15!}{10!\\,5!}=\\dfrac{15\\times14\\times13\\times12\\times11}{5\\times4\\times3\\times2\\times1}\\)"
+            },
+            {
+              "explain": "Cancel: \\(\\dfrac{360\\,360}{120}=3003\\).",
+              "work": "\\(=\\dfrac{360\\,360}{120}=3003\\)"
+            },
+            {
+              "explain": "Option B (\\(360\\,360\\)) is \\(^{15}P_{10}\\)'s starting product \\(15\\times14\\times13\\times12\\times11\\) without dividing by \\(5!\\), i.e. it treats the order as important.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can this pet package be chosen?",
+              "note": "Order does not matter: choose 10 from 15 with a combination."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12aii",
+          "type": "mc",
+          "stem": "From a group of 7 cats and 8 dogs, 10 are chosen at random as a pet package to go to a nursing home. In how many ways can this pet package be chosen if there are exactly 6 cats and 4 dogs?",
+          "difficulty": "medium",
+          "options": [
+            "\\(490\\)",
+            "\\(^{15}C_{10}\\)",
+            "\\(^{7}C_{6}+{}^{8}C_{4}=77\\)",
+            "\\(7\\times 8=56\\)"
+          ],
+          "answer": 0,
+          "hint": "Choose the cats and the dogs separately, then MULTIPLY the numbers of ways (an 'and' situation).",
+          "steps": [
+            {
+              "explain": "The package has two parts: 6 cats from the 7 cats AND 4 dogs from the 8 dogs. These choices are independent, so multiply.",
+              "work": "\\(^{7}C_{6}\\times{}^{8}C_{4}\\)"
+            },
+            {
+              "explain": "Cats: choosing 6 of 7 is the same as leaving out 1 of the 7, so \\(^{7}C_{6}=7\\).",
+              "work": "\\(^{7}C_{6}=\\dfrac{7!}{6!\\,1!}=7\\)"
+            },
+            {
+              "explain": "Dogs: \\(^{8}C_{4}=\\dfrac{8\\times 7\\times 6\\times 5}{4\\times3\\times2\\times1}=\\dfrac{1680}{24}=70\\).",
+              "work": "\\(^{8}C_{4}=70\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(7\\times 70=490\\)"
+            },
+            {
+              "explain": "Check: 6 cats + 4 dogs \\(=10\\) animals ✓. Option C ADDS the two numbers (adding is for 'or' situations).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can this pet package be chosen if there are exactly 6 cats and 4 dogs?",
+              "note": "Cats and dogs: multiply separate combinations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1712,6 +2158,122 @@
             "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
             "school": "Danebank School",
             "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12aiii",
+          "type": "mc",
+          "stem": "From a group of 7 cats and 8 dogs, 10 are chosen at random as a pet package to go to a nursing home. What is the probability that this pet package will consist of at least 6 cats?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{2}{11}\\)",
+            "\\(\\dfrac{70}{429}\\)",
+            "\\(\\dfrac{8}{429}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "'At least 6 cats' means 6 cats OR 7 cats. Count each case, ADD them, and divide by the total number of packages, \\(^{15}C_{10}=3003\\).",
+          "steps": [
+            {
+              "explain": "With 10 animals and only 7 cats, 'at least 6 cats' means exactly 6 cats (and 4 dogs) or exactly 7 cats (and 3 dogs).",
+              "work": "\\(\\text{6 cats, 4 dogs}\\quad\\text{or}\\quad\\text{7 cats, 3 dogs}\\)"
+            },
+            {
+              "explain": "6 cats and 4 dogs (from the previous part): \\(^{7}C_{6}\\times{}^{8}C_{4}=7\\times 70=490\\).",
+              "work": "\\(^{7}C_{6}\\times{}^{8}C_{4}=490\\)"
+            },
+            {
+              "explain": "7 cats and 3 dogs: all 7 cats (\\(^{7}C_{7}=1\\) way) and 3 of the 8 dogs (\\(^{8}C_{3}=\\dfrac{8\\times7\\times6}{3\\times2\\times1}=56\\)).",
+              "work": "\\(^{7}C_{7}\\times{}^{8}C_{3}=1\\times 56=56\\)"
+            },
+            {
+              "explain": "The cases cannot happen together, so ADD them: favourable packages \\(=490+56=546\\).",
+              "work": "\\(490+56=546\\)"
+            },
+            {
+              "explain": "The total number of packages is \\(^{15}C_{10}=3003\\) (part (i)). Probability \\(=\\dfrac{\\text{favourable}}{\\text{total}}\\).",
+              "work": "\\(P=\\dfrac{546}{3003}\\)"
+            },
+            {
+              "explain": "Simplify: divide top and bottom by 273 (\\(546=2\\times 273\\), \\(3003=11\\times 273\\)).",
+              "work": "\\(P=\\dfrac{2}{11}\\approx 0.18\\)"
+            },
+            {
+              "explain": "Option B is only the 6-cat case (\\(\\dfrac{490}{3003}=\\dfrac{70}{429}\\)); option C is only the 7-cat case (\\(\\dfrac{56}{3003}=\\dfrac{8}{429}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that this pet package will consist of at least 6 cats?",
+              "note": "At least 6 cats means 6 or 7 cats: add the cases, divide by the total number of packages."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12bii",
+          "type": "mc",
+          "stem": "What is the probability of an odd number being selected if the digits 2, 3, 4, 5, 6 may be repeated (4 digit numbers)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{48}{120}\\)"
+          ],
+          "answer": 0,
+          "hint": "With repetition each place has all 5 choices. Total \\(=5^{4}\\). Odd numbers: the last place has only 2 choices (3 or 5).",
+          "steps": [
+            {
+              "explain": "Digits may be repeated, so every place can be any of the 5 digits. Total number of 4-digit numbers:",
+              "work": "\\(5\\times5\\times5\\times5=5^{4}=625\\)"
+            },
+            {
+              "explain": "Odd numbers: the units digit must be 3 or 5 (2 choices); the other three places have 5 choices each.",
+              "work": "\\(5\\times5\\times5\\times2=2\\times 5^{3}=250\\)"
+            },
+            {
+              "explain": "Probability \\(=\\dfrac{\\text{odd numbers}}{\\text{all numbers}}\\).",
+              "work": "\\(P=\\dfrac{2\\times 5^{3}}{5^{4}}=\\dfrac{250}{625}\\)"
+            },
+            {
+              "explain": "Cancel \\(5^{3}\\) top and bottom.",
+              "work": "\\(P=\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "Check: 2 of the 5 digits are odd, so a random last digit is odd with probability \\(\\dfrac{2}{5}\\) ✓. Option D uses the no-repetition counts from part (i), but here repetition IS allowed.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability of an odd number being selected",
+              "note": "Repeats allowed: total 5 to the power 4; only the last digit is restricted."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
             "origin": "teacher"
           }
         }

@@ -95,6 +95,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-q13bi",
+          "type": "mc",
+          "stem": "\\(N\\) is the number of finches in a certain population at time \\(t\\) years. The population size \\(N\\) satisfies the equation \\(\\dfrac{dN}{dt}=-k(N-1500)\\), for some constant \\(k\\). Verify that \\(N=1500+Ae^{-kt}\\) (where \\(A\\) is a constant) is a solution of the equation \\(\\dfrac{dN}{dt}=-k(N-1500)\\). Which working correctly verifies this?",
+          "difficulty": "medium",
+          "options": [
+            "\\(N-1500=Ae^{-kt}\\) and \\(\\dfrac{dN}{dt}=-kAe^{-kt}=-k\\left(Ae^{-kt}\\right)=-k(N-1500)\\)",
+            "\\(\\dfrac{dN}{dt}=kAe^{-kt}=k(N-1500)\\)",
+            "\\(\\dfrac{dN}{dt}=-kAe^{-kt}=-kN\\)",
+            "\\(\\dfrac{dN}{dt}=1500-kAe^{-kt}=-k(N-1500)\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate \\(N=1500+Ae^{-kt}\\) (the derivative of the constant 1500 is 0), then rewrite \\(Ae^{-kt}\\) as \\(N-1500\\).",
+          "steps": [
+            {
+              "explain": "Start with the proposed solution and differentiate with respect to \\(t\\). The derivative of a constant (1500) is 0, and \\(\\dfrac{d}{dt}e^{-kt}=-ke^{-kt}\\) (chain rule: multiply by the derivative \\(-k\\) of the power).",
+              "work": "\\(N=1500+Ae^{-kt}\\ \\Rightarrow\\ \\dfrac{dN}{dt}=0+A\\left(-ke^{-kt}\\right)=-kAe^{-kt}\\)"
+            },
+            {
+              "explain": "Now express the right-hand side of the differential equation. From \\(N=1500+Ae^{-kt}\\), subtract 1500: \\(N-1500=Ae^{-kt}\\).",
+              "work": "\\(N-1500=Ae^{-kt}\\)"
+            },
+            {
+              "explain": "Substitute \\(Ae^{-kt}=N-1500\\) into the derivative.",
+              "work": "\\(\\dfrac{dN}{dt}=-k\\left(Ae^{-kt}\\right)=-k(N-1500)\\)"
+            },
+            {
+              "explain": "This is exactly the given equation, so \\(N=1500+Ae^{-kt}\\) is a solution for any constant \\(A\\) ✓.",
+              "work": "\\(\\dfrac{dN}{dt}=-k(N-1500)\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (the derivative of \\(e^{-kt}\\) is NEGATIVE); C replaces \\(Ae^{-kt}\\) by \\(N\\) instead of \\(N-1500\\); D thinks the derivative of 1500 is 1500 (it is 0).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Verify that",
+              "note": "Differentiate, then replace A e to the minus kt by N minus 1500."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1039,6 +1093,70 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-q13bii",
+          "type": "mc",
+          "stem": "\\(N\\) is the number of finches in a certain population at time \\(t\\) years, with \\(N=1500+Ae^{-kt}\\). Initially there are 3500 finches but after 2 years there are only 2800 left. Find the exact values of \\(A\\) and \\(k\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"215.0\" x2=\"390.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"215.0\" x2=\"60.0\" y2=\"15.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"215.0\" x2=\"383.1\" y2=\"211.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"215.0\" x2=\"383.1\" y2=\"219.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"15.0\" x2=\"56.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"15.0\" x2=\"64.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"404.0\" y=\"219.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"60.0\" y1=\"180.0\" x2=\"380.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"54.0\" y=\"184.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1500</text><polyline points=\"60.0,40.0 64.0,43.0 68.0,45.9 72.0,48.8 76.0,51.6 80.0,54.3 84.0,57.0 88.0,59.6 92.0,62.2 96.0,64.7 100.0,67.1 104.0,69.5 108.0,71.9 112.0,74.2 116.0,76.4 120.0,78.7 124.0,80.8 128.0,82.9 132.0,85.0 136.0,87.0 140.0,89.0 144.0,90.9 148.0,92.8 152.0,94.7 156.0,96.5 160.0,98.3 164.0,100.0 168.0,101.7 172.0,103.4 176.0,105.0 180.0,106.6 184.0,108.2 188.0,109.7 192.0,111.2 196.0,112.7 200.0,114.1 204.0,115.5 208.0,116.9 212.0,118.2 216.0,119.6 220.0,120.8 224.0,122.1 228.0,123.3 232.0,124.6 236.0,125.7 240.0,126.9 244.0,128.0 248.0,129.1 252.0,130.2 256.0,131.3 260.0,132.3 264.0,133.3 268.0,134.3 272.0,135.3 276.0,136.2 280.0,137.2 284.0,138.1 288.0,139.0 292.0,139.9 296.0,140.7 300.0,141.6 304.0,142.4 308.0,143.2 312.0,144.0 316.0,144.7 320.0,145.5 324.0,146.2 328.0,146.9 332.0,147.6 336.0,148.3 340.0,149.0 344.0,149.7 348.0,150.3 352.0,150.9 356.0,151.6 360.0,152.2 364.0,152.8 368.0,153.3 372.0,153.9 376.0,154.5 380.0,155.0 384.0,155.5 388.0,156.1 392.0,156.6 396.0,157.1 400.0,157.6\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"60.0\" y1=\"212.0\" x2=\"60.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"100.0\" y1=\"212.0\" x2=\"100.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"100.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"140.0\" y1=\"212.0\" x2=\"140.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"180.0\" y1=\"212.0\" x2=\"180.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"220.0\" y1=\"212.0\" x2=\"220.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"260.0\" y1=\"212.0\" x2=\"260.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"300.0\" y1=\"212.0\" x2=\"300.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"340.0\" y1=\"212.0\" x2=\"340.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"340.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><line x1=\"380.0\" y1=\"212.0\" x2=\"380.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"380.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text></svg>"
+          },
+          "options": [
+            "\\(A=2000,\\ k=\\dfrac{1}{2}\\ln\\left(\\dfrac{20}{13}\\right)\\)",
+            "\\(A=2000,\\ k=\\dfrac{1}{2}\\ln\\left(\\dfrac{13}{20}\\right)\\)",
+            "\\(A=3500,\\ k=\\dfrac{1}{2}\\ln\\left(\\dfrac{20}{13}\\right)\\)",
+            "\\(A=2000,\\ k=2\\ln\\left(\\dfrac{20}{13}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the two data points in \\(N=1500+Ae^{-kt}\\): first \\(t=0\\), \\(N=3500\\) to get \\(A\\), then \\(t=2\\), \\(N=2800\\) to get \\(k\\).",
+          "steps": [
+            {
+              "explain": "'Initially' means \\(t=0\\), \\(N=3500\\). Substitute (and use \\(e^{0}=1\\)).",
+              "work": "\\(3500=1500+Ae^{0}=1500+A\\ \\Rightarrow\\ A=2000\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"215.0\" x2=\"390.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"215.0\" x2=\"60.0\" y2=\"15.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"215.0\" x2=\"383.1\" y2=\"211.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"215.0\" x2=\"383.1\" y2=\"219.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"15.0\" x2=\"56.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"15.0\" x2=\"64.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"404.0\" y=\"219.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"60.0\" y1=\"180.0\" x2=\"380.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"54.0\" y=\"184.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1500</text><polyline points=\"60.0,40.0 64.0,43.0 68.0,45.9 72.0,48.8 76.0,51.6 80.0,54.3 84.0,57.0 88.0,59.6 92.0,62.2 96.0,64.7 100.0,67.1 104.0,69.5 108.0,71.9 112.0,74.2 116.0,76.4 120.0,78.7 124.0,80.8 128.0,82.9 132.0,85.0 136.0,87.0 140.0,89.0 144.0,90.9 148.0,92.8 152.0,94.7 156.0,96.5 160.0,98.3 164.0,100.0 168.0,101.7 172.0,103.4 176.0,105.0 180.0,106.6 184.0,108.2 188.0,109.7 192.0,111.2 196.0,112.7 200.0,114.1 204.0,115.5 208.0,116.9 212.0,118.2 216.0,119.6 220.0,120.8 224.0,122.1 228.0,123.3 232.0,124.6 236.0,125.7 240.0,126.9 244.0,128.0 248.0,129.1 252.0,130.2 256.0,131.3 260.0,132.3 264.0,133.3 268.0,134.3 272.0,135.3 276.0,136.2 280.0,137.2 284.0,138.1 288.0,139.0 292.0,139.9 296.0,140.7 300.0,141.6 304.0,142.4 308.0,143.2 312.0,144.0 316.0,144.7 320.0,145.5 324.0,146.2 328.0,146.9 332.0,147.6 336.0,148.3 340.0,149.0 344.0,149.7 348.0,150.3 352.0,150.9 356.0,151.6 360.0,152.2 364.0,152.8 368.0,153.3 372.0,153.9 376.0,154.5 380.0,155.0 384.0,155.5 388.0,156.1 392.0,156.6 396.0,157.1 400.0,157.6\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"60.0\" y1=\"212.0\" x2=\"60.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"100.0\" y1=\"212.0\" x2=\"100.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"100.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"140.0\" y1=\"212.0\" x2=\"140.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"180.0\" y1=\"212.0\" x2=\"180.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"220.0\" y1=\"212.0\" x2=\"220.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"260.0\" y1=\"212.0\" x2=\"260.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"300.0\" y1=\"212.0\" x2=\"300.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"340.0\" y1=\"212.0\" x2=\"340.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"340.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><line x1=\"380.0\" y1=\"212.0\" x2=\"380.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"380.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><circle cx=\"60.0\" cy=\"40.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"70.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(0, 3500)</text><circle cx=\"140.0\" cy=\"89.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"150.0\" y=\"81.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 2800)</text></svg>"
+              }
+            },
+            {
+              "explain": "Now \\(t=2\\), \\(N=2800\\), with \\(A=2000\\).",
+              "work": "\\(2800=1500+2000e^{-2k}\\)"
+            },
+            {
+              "explain": "Subtract 1500 and divide by 2000 to isolate the exponential.",
+              "work": "\\(1300=2000e^{-2k}\\ \\Rightarrow\\ e^{-2k}=\\dfrac{1300}{2000}=\\dfrac{13}{20}\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides (\\(\\ln e^{x}=x\\)).",
+              "work": "\\(-2k=\\ln\\left(\\dfrac{13}{20}\\right)\\)"
+            },
+            {
+              "explain": "Divide by \\(-2\\) and use \\(-\\ln\\dfrac{a}{b}=\\ln\\dfrac{b}{a}\\) to get a positive value.",
+              "work": "\\(k=-\\dfrac{1}{2}\\ln\\left(\\dfrac{13}{20}\\right)=\\dfrac{1}{2}\\ln\\left(\\dfrac{20}{13}\\right)\\approx 0.215\\)"
+            },
+            {
+              "explain": "Check: \\(k>0\\) is needed for the population to decrease towards 1500 ✓ (option B has \\(k<0\\)). Option C uses 3500 for \\(A\\) (forgetting the 1500); option D has the factor 2 instead of \\(\\dfrac{1}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact values of",
+              "note": "Use t equals 0 for A, then t equals 2 for k; isolate the exponential before taking ln."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1625,6 +1743,127 @@
           "meta": {
             "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
             "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-mc6",
+          "type": "mc",
+          "stem": "The diagram shows the number of pelicans, \\(P(t)\\), on an island at time \\(t\\) (the graph starts at 3000 and levels off towards 1500). Which equation best represents this graph?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"190.0\" x2=\"380.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"60.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"190.0\" x2=\"373.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"190.0\" x2=\"373.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"20.0\" x2=\"56.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"20.0\" x2=\"64.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><line x1=\"60.0\" y1=\"122.5\" x2=\"370.0\" y2=\"122.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"52.0\" y=\"59.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3000</text><text x=\"52.0\" y=\"126.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1500</text><polyline points=\"60.0,55.0 64.0,58.0 68.0,60.8 72.0,63.5 76.0,66.1 80.0,68.6 84.0,71.0 88.0,73.2 92.0,75.4 96.0,77.5 100.0,79.5 104.0,81.4 108.0,83.2 112.0,84.9 116.0,86.6 120.0,88.1 124.0,89.6 128.0,91.1 132.0,92.5 136.0,93.8 140.0,95.1 144.0,96.3 148.0,97.4 152.0,98.5 156.0,99.6 160.0,100.6 164.0,101.6 168.0,102.5 172.0,103.4 176.0,104.2 180.0,105.0 184.0,105.8 188.0,106.5 192.0,107.2 196.0,107.9 200.0,108.5 204.0,109.1 208.0,109.7 212.0,110.3 216.0,110.8 220.0,111.3 224.0,111.8 228.0,112.3 232.0,112.8 236.0,113.2 240.0,113.6 244.0,114.0 248.0,114.4 252.0,114.7 256.0,115.1 260.0,115.4 264.0,115.7 268.0,116.0 272.0,116.3 276.0,116.6 280.0,116.8 284.0,117.1 288.0,117.3 292.0,117.5 296.0,117.8 300.0,118.0 304.0,118.2 308.0,118.4 312.0,118.5 316.0,118.7 320.0,118.9 324.0,119.0 328.0,119.2 332.0,119.3 336.0,119.5 340.0,119.6 344.0,119.7 348.0,119.9 352.0,120.0 356.0,120.1 360.0,120.2 364.0,120.3 368.0,120.4 372.0,120.5 376.0,120.6 380.0,120.7\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><line x1=\"380.0\" y1=\"120.7\" x2=\"372.5\" y2=\"115.6\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"120.7\" x2=\"371.9\" y2=\"124.6\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(P(t)=1500e^{-kt}\\)",
+            "\\(P(t)=1500+1500e^{-kt}\\)",
+            "\\(P(t)=3000-1500e^{-kt}\\)",
+            "\\(P(t)=4500-1500e^{-kt}\\)"
+          ],
+          "answer": 1,
+          "hint": "Check two things in each equation: the value at \\(t=0\\) (use \\(e^{0}=1\\)) and the limit as \\(t\\to\\infty\\) (use \\(e^{-kt}\\to 0\\)).",
+          "steps": [
+            {
+              "explain": "Read the graph: it starts at \\(P=3000\\) when \\(t=0\\), and it decreases towards the dashed line \\(P=1500\\) but never reaches it (a horizontal asymptote).",
+              "work": "\\(P(0)=3000,\\qquad P(t)\\to 1500\\ \\text{as}\\ t\\to\\infty\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 230\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"190.0\" x2=\"380.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"60.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"190.0\" x2=\"373.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"190.0\" x2=\"373.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"20.0\" x2=\"56.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"20.0\" x2=\"64.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><line x1=\"60.0\" y1=\"122.5\" x2=\"370.0\" y2=\"122.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"52.0\" y=\"59.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3000</text><text x=\"52.0\" y=\"126.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1500</text><polyline points=\"60.0,55.0 64.0,58.0 68.0,60.8 72.0,63.5 76.0,66.1 80.0,68.6 84.0,71.0 88.0,73.2 92.0,75.4 96.0,77.5 100.0,79.5 104.0,81.4 108.0,83.2 112.0,84.9 116.0,86.6 120.0,88.1 124.0,89.6 128.0,91.1 132.0,92.5 136.0,93.8 140.0,95.1 144.0,96.3 148.0,97.4 152.0,98.5 156.0,99.6 160.0,100.6 164.0,101.6 168.0,102.5 172.0,103.4 176.0,104.2 180.0,105.0 184.0,105.8 188.0,106.5 192.0,107.2 196.0,107.9 200.0,108.5 204.0,109.1 208.0,109.7 212.0,110.3 216.0,110.8 220.0,111.3 224.0,111.8 228.0,112.3 232.0,112.8 236.0,113.2 240.0,113.6 244.0,114.0 248.0,114.4 252.0,114.7 256.0,115.1 260.0,115.4 264.0,115.7 268.0,116.0 272.0,116.3 276.0,116.6 280.0,116.8 284.0,117.1 288.0,117.3 292.0,117.5 296.0,117.8 300.0,118.0 304.0,118.2 308.0,118.4 312.0,118.5 316.0,118.7 320.0,118.9 324.0,119.0 328.0,119.2 332.0,119.3 336.0,119.5 340.0,119.6 344.0,119.7 348.0,119.9 352.0,120.0 356.0,120.1 360.0,120.2 364.0,120.3 368.0,120.4 372.0,120.5 376.0,120.6 380.0,120.7\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><line x1=\"380.0\" y1=\"120.7\" x2=\"372.5\" y2=\"115.6\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"120.7\" x2=\"371.9\" y2=\"124.6\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"60\" cy=\"55.0\" r=\"6\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"74.0\" y=\"43.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 0:  P = 3000</text><line x1=\"60.0\" y1=\"122.5\" x2=\"370.0\" y2=\"122.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"290.0\" y=\"142.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P → 1500 as t → ∞</text><text x=\"150.0\" y=\"75.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P = 1500 + 1500e^(−kt)</text></svg>"
+              }
+            },
+            {
+              "explain": "Test the equations at \\(t=0\\), where \\(e^{-k\\cdot 0}=e^{0}=1\\).",
+              "work": "\\(A:\\ 1500\\ \\ \\ B:\\ 1500+1500=3000\\ \\ \\ C:\\ 3000-1500=1500\\ \\ \\ D:\\ 4500-1500=3000\\)"
+            },
+            {
+              "explain": "Only B and D give 3000 at \\(t=0\\). Now the long-term value: as \\(t\\to\\infty\\), \\(e^{-kt}\\to 0\\) (for \\(k>0\\)).",
+              "work": "\\(B:\\ P\\to 1500+0=1500\\ \\checkmark\\qquad D:\\ P\\to 4500-0=4500\\ \\times\\)"
+            },
+            {
+              "explain": "B starts at 3000 and levels off at 1500 ✓. The \\(+1500e^{-kt}\\) term is positive and shrinks, so \\(P\\) decreases from above toward 1500, just like the graph.",
+              "work": "\\(P(t)=1500+1500e^{-kt}\\)"
+            },
+            {
+              "explain": "Option A starts at 1500 and goes to 0; option C starts at 1500 and increases toward 3000; option D heads to 4500 (it increases).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which equation best represents this graph?",
+              "note": "Test t equals 0 and the long-term limit: e to the minus kt goes to zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q13biii",
+          "type": "mc",
+          "stem": "\\(N\\) is the number of finches at time \\(t\\) years, with \\(N=1500+2000e^{-kt}\\) and \\(k=\\dfrac{1}{2}\\ln\\left(\\dfrac{20}{13}\\right)\\approx 0.2154\\). How long will it take for the population to drop to 2100, correct to one decimal place?",
+          "difficulty": "medium",
+          "options": [
+            "\\(5.6\\) years",
+            "\\(2.8\\) years",
+            "\\(10.6\\) years",
+            "\\(0.3\\) years"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(N=2100\\), isolate \\(e^{-kt}\\), then take the natural log and divide by \\(-k\\).",
+          "steps": [
+            {
+              "explain": "Put \\(N=2100\\) into \\(N=1500+2000e^{-kt}\\).",
+              "work": "\\(2100=1500+2000e^{-kt}\\)"
+            },
+            {
+              "explain": "Subtract 1500, then divide by 2000: \\(\\dfrac{600}{2000}=0.3\\).",
+              "work": "\\(600=2000e^{-kt}\\ \\Rightarrow\\ e^{-kt}=0.3=\\dfrac{3}{10}\\)"
+            },
+            {
+              "explain": "Take natural logs: \\(\\ln e^{-kt}=-kt\\).",
+              "work": "\\(-kt=\\ln\\left(\\dfrac{3}{10}\\right)\\)"
+            },
+            {
+              "explain": "Solve for \\(t\\): divide by \\(-k\\). Use the exact value \\(k=\\dfrac{1}{2}\\ln\\dfrac{20}{13}\\).",
+              "work": "\\(t=\\dfrac{\\ln 0.3}{-k}=\\dfrac{-1.20397}{-0.21539}\\)"
+            },
+            {
+              "explain": "Calculate and round to 1 decimal place.",
+              "work": "\\(t\\approx 5.589\\ldots\\approx 5.6\\ \\text{years}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"215.0\" x2=\"390.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"215.0\" x2=\"60.0\" y2=\"15.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"215.0\" x2=\"383.1\" y2=\"211.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"215.0\" x2=\"383.1\" y2=\"219.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"15.0\" x2=\"56.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"15.0\" x2=\"64.0\" y2=\"21.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"404.0\" y=\"219.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><line x1=\"60.0\" y1=\"180.0\" x2=\"380.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"54.0\" y=\"184.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1500</text><polyline points=\"60.0,40.0 64.0,43.0 68.0,45.9 72.0,48.8 76.0,51.6 80.0,54.3 84.0,57.0 88.0,59.6 92.0,62.2 96.0,64.7 100.0,67.1 104.0,69.5 108.0,71.9 112.0,74.2 116.0,76.4 120.0,78.7 124.0,80.8 128.0,82.9 132.0,85.0 136.0,87.0 140.0,89.0 144.0,90.9 148.0,92.8 152.0,94.7 156.0,96.5 160.0,98.3 164.0,100.0 168.0,101.7 172.0,103.4 176.0,105.0 180.0,106.6 184.0,108.2 188.0,109.7 192.0,111.2 196.0,112.7 200.0,114.1 204.0,115.5 208.0,116.9 212.0,118.2 216.0,119.6 220.0,120.8 224.0,122.1 228.0,123.3 232.0,124.6 236.0,125.7 240.0,126.9 244.0,128.0 248.0,129.1 252.0,130.2 256.0,131.3 260.0,132.3 264.0,133.3 268.0,134.3 272.0,135.3 276.0,136.2 280.0,137.2 284.0,138.1 288.0,139.0 292.0,139.9 296.0,140.7 300.0,141.6 304.0,142.4 308.0,143.2 312.0,144.0 316.0,144.7 320.0,145.5 324.0,146.2 328.0,146.9 332.0,147.6 336.0,148.3 340.0,149.0 344.0,149.7 348.0,150.3 352.0,150.9 356.0,151.6 360.0,152.2 364.0,152.8 368.0,153.3 372.0,153.9 376.0,154.5 380.0,155.0 384.0,155.5 388.0,156.1 392.0,156.6 396.0,157.1 400.0,157.6\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"60.0\" y1=\"212.0\" x2=\"60.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"100.0\" y1=\"212.0\" x2=\"100.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"100.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"140.0\" y1=\"212.0\" x2=\"140.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"180.0\" y1=\"212.0\" x2=\"180.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"220.0\" y1=\"212.0\" x2=\"220.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"260.0\" y1=\"212.0\" x2=\"260.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"300.0\" y1=\"212.0\" x2=\"300.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"340.0\" y1=\"212.0\" x2=\"340.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"340.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><line x1=\"380.0\" y1=\"212.0\" x2=\"380.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"380.0\" y=\"231.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><circle cx=\"60.0\" cy=\"40.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"70.0\" y=\"32.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(0, 3500)</text><circle cx=\"140.0\" cy=\"89.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"150.0\" y=\"81.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(2, 2800)</text><line x1=\"60.0\" y1=\"138.0\" x2=\"283.6\" y2=\"138.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"283.6\" y1=\"138.0\" x2=\"283.6\" y2=\"215.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"283.6\" cy=\"138.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"291.6\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N = 2100 at t ≈ 5.6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(N(5.6)=1500+2000e^{-0.2154(5.6)}=1500+2000(0.2994)=2099\\approx 2100\\) ✓. Option B (2.8) is half the answer; option C forgets that \\(-k\\) is negative in \\(t=\\dfrac{\\ln 0.3}{-k}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How long will it take for the population to drop to 2100",
+              "note": "Isolate e to the minus kt, take ln, then divide by minus k."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
             "grade": "12",
             "origin": "teacher"
           }

@@ -490,6 +490,129 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-mc1",
+          "type": "mc",
+          "stem": "Which expression is equivalent to \\(\\cos 5x-\\cos 7x\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\cos 6x\\cos x\\)",
+            "\\(2\\sin 6x\\sin x\\)",
+            "\\(2\\cos 6x\\sin x\\)",
+            "\\(2\\sin 6x\\cos x\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(5x\\) and \\(7x\\) as \\(6x-x\\) and \\(6x+x\\), expand both with the compound-angle formulae and subtract.",
+          "steps": [
+            {
+              "explain": "The angles \\(5x\\) and \\(7x\\) are each one \\(x\\) away from the middle angle \\(6x\\). Write \\(5x=6x-x\\) and \\(7x=6x+x\\).",
+              "work": "\\(\\cos 5x-\\cos 7x=\\cos(6x-x)-\\cos(6x+x)\\)"
+            },
+            {
+              "explain": "Expand the first with \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\).",
+              "work": "\\(\\cos(6x-x)=\\cos 6x\\cos x+\\sin 6x\\sin x\\)"
+            },
+            {
+              "explain": "Expand the second with \\(\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B\\).",
+              "work": "\\(\\cos(6x+x)=\\cos 6x\\cos x-\\sin 6x\\sin x\\)"
+            },
+            {
+              "explain": "Subtract the second from the first (careful with the minus sign in front of the whole bracket).",
+              "work": "\\(\\left(\\cos 6x\\cos x+\\sin 6x\\sin x\\right)-\\left(\\cos 6x\\cos x-\\sin 6x\\sin x\\right)\\)"
+            },
+            {
+              "explain": "The \\(\\cos 6x\\cos x\\) terms cancel and the two \\(\\sin 6x\\sin x\\) terms add.",
+              "work": "\\(=2\\sin 6x\\sin x\\)"
+            },
+            {
+              "explain": "Check with \\(x=\\dfrac{\\pi}{6}\\): LHS \\(=\\cos\\dfrac{5\\pi}{6}-\\cos\\dfrac{7\\pi}{6}=-\\dfrac{\\sqrt{3}}{2}-\\left(-\\dfrac{\\sqrt{3}}{2}\\right)=0\\); RHS \\(=2\\sin\\pi\\sin\\dfrac{\\pi}{6}=0\\) ✓. Option A fails with \\(x=\\dfrac{\\pi}{12}\\): \\(2\\cos\\dfrac{\\pi}{2}\\cos\\dfrac{\\pi}{12}=0\\) but LHS \\(=\\cos\\dfrac{5\\pi}{12}-\\cos\\dfrac{7\\pi}{12}=0.259+0.259\\ne 0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which expression is equivalent to",
+              "note": "Write the two angles as 6x minus x and 6x plus x, then use the compound-angle formulae."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q12e",
+          "type": "mc",
+          "stem": "If \\(\\alpha=\\sin^{-1}\\left(\\dfrac{3}{5}\\right)\\) and \\(\\beta=\\sin^{-1}\\left(\\dfrac{4}{7}\\right)\\), find the exact value of \\(\\sin(\\alpha-\\beta)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{3\\sqrt{33}-16}{35}\\)",
+            "\\(\\dfrac{3\\sqrt{33}+16}{35}\\)",
+            "\\(\\dfrac{3}{5}-\\dfrac{4}{7}=\\dfrac{1}{35}\\)",
+            "\\(\\dfrac{12-4\\sqrt{33}}{35}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta\\). You know \\(\\sin\\alpha\\) and \\(\\sin\\beta\\); find \\(\\cos\\alpha\\) and \\(\\cos\\beta\\) from right-angled triangles.",
+          "steps": [
+            {
+              "explain": "\\(\\alpha=\\sin^{-1}\\left(\\dfrac{3}{5}\\right)\\) means \\(\\sin\\alpha=\\dfrac{3}{5}\\) with \\(\\alpha\\) acute. Draw a right triangle with opposite side 3 and hypotenuse 5. The adjacent side is \\(\\sqrt{5^{2}-3^{2}}=4\\), so \\(\\cos\\alpha=\\dfrac{4}{5}\\).",
+              "work": "\\(\\sin\\alpha=\\dfrac{3}{5},\\qquad\\cos\\alpha=\\dfrac{4}{5}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 230\" width=\"100%\" height=\"auto\" style=\"max-width:660px;display:block;margin:0 auto\"><polygon points=\"20,195 156,195 156,93\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polyline points=\"144,195 144,183 156,183\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M56,195 A36,36 0 0 0 48.8,173.4\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"72.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">α</text><line x1=\"20.0\" y1=\"195.0\" x2=\"156.0\" y2=\"93.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"20.0\" y1=\"195.0\" x2=\"156.0\" y2=\"195.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"156.0\" y1=\"195.0\" x2=\"156.0\" y2=\"93.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"74.0\" y=\"136.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"88.0\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"166.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"90.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin α = 3/5,  cos α = 4/5</text><polygon points=\"260,195 386.4,195 386.4,107.0\" fill=\"#fef3c7\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polyline points=\"374.4,195 374.4,183 386.4,183\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M302,195 A42,42 0 0 0 294.5,171.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"320.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">β</text><line x1=\"260.0\" y1=\"195.0\" x2=\"386.4\" y2=\"107.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"195.0\" x2=\"386.4\" y2=\"195.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"386.4\" y1=\"195.0\" x2=\"386.4\" y2=\"107.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"309.2\" y=\"143.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><text x=\"323.2\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√33</text><text x=\"396.4\" y=\"155.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"330.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin β = 4/7,  cos β = √33/7</text></svg>"
+              }
+            },
+            {
+              "explain": "Likewise \\(\\sin\\beta=\\dfrac{4}{7}\\): opposite 4, hypotenuse 7, adjacent \\(\\sqrt{7^{2}-4^{2}}=\\sqrt{49-16}=\\sqrt{33}\\), so \\(\\cos\\beta=\\dfrac{\\sqrt{33}}{7}\\).",
+              "work": "\\(\\sin\\beta=\\dfrac{4}{7},\\qquad\\cos\\beta=\\dfrac{\\sqrt{33}}{7}\\)"
+            },
+            {
+              "explain": "Write the compound-angle formula (note the MINUS between the products, because it is \\(\\sin(\\alpha-\\beta)\\)).",
+              "work": "\\(\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta\\)"
+            },
+            {
+              "explain": "Substitute the four values.",
+              "work": "\\(=\\dfrac{3}{5}\\times\\dfrac{\\sqrt{33}}{7}-\\dfrac{4}{5}\\times\\dfrac{4}{7}\\)"
+            },
+            {
+              "explain": "Multiply the fractions: \\(5\\times 7=35\\) in each denominator.",
+              "work": "\\(=\\dfrac{3\\sqrt{33}}{35}-\\dfrac{16}{35}\\)"
+            },
+            {
+              "explain": "Combine over the common denominator.",
+              "work": "\\(\\sin(\\alpha-\\beta)=\\dfrac{3\\sqrt{33}-16}{35}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\alpha=36.87^{\\circ}\\), \\(\\beta=34.85^{\\circ}\\), so \\(\\alpha-\\beta=2.02^{\\circ}\\) and \\(\\sin 2.02^{\\circ}=0.0353\\). Also \\(\\dfrac{3(5.745)-16}{35}=\\dfrac{1.235}{35}=0.0353\\) ✓. Option C is \\(\\sin\\alpha-\\sin\\beta\\), which is not the same as \\(\\sin(\\alpha-\\beta)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact value of",
+              "note": "Draw a right triangle for each inverse sine to get the cosines, then use the compound-angle formula."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1032,6 +1155,64 @@
           "meta": {
             "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
             "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q11e",
+          "type": "mc",
+          "stem": "Show that \\(\\dfrac{\\cos 2x-\\cos x}{\\sin 2x+\\sin x}=\\cot x-\\operatorname{cosec}x\\). Which working correctly proves this?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\text{LHS}=\\dfrac{2\\cos^{2}x-1-\\cos x}{2\\sin x\\cos x+\\sin x}=\\dfrac{(2\\cos x+1)(\\cos x-1)}{\\sin x(2\\cos x+1)}=\\dfrac{\\cos x-1}{\\sin x}=\\cot x-\\operatorname{cosec}x\\)",
+            "\\(\\text{LHS}=\\dfrac{2\\cos^{2}x-1-\\cos x}{2\\sin x\\cos x+\\sin x}=\\dfrac{(2\\cos x-1)(\\cos x+1)}{\\sin x(2\\cos x+1)}=\\cot x-\\operatorname{cosec}x\\)",
+            "\\(\\text{LHS}=\\dfrac{\\cos 2x-\\cos x}{\\sin 2x+\\sin x}=\\dfrac{\\cos x}{\\sin x}=\\cot x\\)",
+            "\\(\\text{LHS}=\\dfrac{1-2\\sin^{2}x-\\cos x}{2\\sin x\\cos x+\\sin x}=\\dfrac{\\cos x+\\sin x}{\\sin x}=\\cot x+1\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(\\cos 2x=2\\cos^{2}x-1\\) and \\(\\sin 2x=2\\sin x\\cos x\\), factorise top and bottom, cancel the common factor, then split the fraction.",
+          "steps": [
+            {
+              "explain": "Start with the left-hand side only. Replace the double angles with the identities \\(\\cos 2x=2\\cos^{2}x-1\\) and \\(\\sin 2x=2\\sin x\\cos x\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{2\\cos^{2}x-1-\\cos x}{2\\sin x\\cos x+\\sin x}\\)"
+            },
+            {
+              "explain": "Factorise the numerator. Reorder \\(2\\cos^{2}x-\\cos x-1\\): it is a quadratic in \\(\\cos x\\) with factors \\((2\\cos x+1)(\\cos x-1)\\). Check: \\((2\\cos x+1)(\\cos x-1)=2\\cos^{2}x-2\\cos x+\\cos x-1=2\\cos^{2}x-\\cos x-1\\) ✓.",
+              "work": "\\(\\text{numerator}=(2\\cos x+1)(\\cos x-1)\\)"
+            },
+            {
+              "explain": "Factorise the denominator by taking out the common factor \\(\\sin x\\): \\(2\\sin x\\cos x+\\sin x=\\sin x(2\\cos x+1)\\).",
+              "work": "\\(\\text{denominator}=\\sin x\\,(2\\cos x+1)\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((2\\cos x+1)\\) from top and bottom.",
+              "work": "\\(\\text{LHS}=\\dfrac{(2\\cos x+1)(\\cos x-1)}{\\sin x\\,(2\\cos x+1)}=\\dfrac{\\cos x-1}{\\sin x}\\)"
+            },
+            {
+              "explain": "Split into two fractions and use \\(\\cot x=\\dfrac{\\cos x}{\\sin x}\\) and \\(\\operatorname{cosec}x=\\dfrac{1}{\\sin x}\\).",
+              "work": "\\(=\\dfrac{\\cos x}{\\sin x}-\\dfrac{1}{\\sin x}=\\cot x-\\operatorname{cosec}x=\\text{RHS}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B factorises incorrectly (it does not expand back to the numerator); C cancels the \\(\\cos x\\) terms wrongly; D uses \\(1-2\\sin^{2}x\\) correctly but then makes an algebra error (the numerator is not \\(\\cos x+\\sin x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Replace double angles, factorise top and bottom, cancel, then split into cot minus cosec."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
             "grade": "11",
             "origin": "teacher"
           }

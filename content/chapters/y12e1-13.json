@@ -506,6 +506,142 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "blacktown2020-y11e1-q13di",
+          "type": "mc",
+          "stem": "A balloon in the shape of a cylinder, with height \\(h\\) and radius \\(r\\), expands so that \\(h\\) is always proportional to \\(r\\), that is \\(h=kr\\) for some constant \\(k\\). When \\(r=5\\ \\text{cm}\\), the volume of expanding at the rate of \\(0.25\\ \\text{cm}^{3}\\text{ s}^{-1}\\). Show that when \\(r=5\\ \\text{cm}\\) the rate of change of the radius is given by \\(\\dfrac{dr}{dt}=\\dfrac{1}{300\\pi k}\\). Which working correctly shows this?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 280\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"95\" y=\"60\" width=\"140\" height=\"170\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"none\"/><line x1=\"95.0\" y1=\"60.0\" x2=\"95.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"60.0\" x2=\"235.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"165\" cy=\"60\" rx=\"70\" ry=\"18\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"165.0\" y1=\"60.0\" x2=\"235.0\" y2=\"60.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"257.0\" y1=\"60.0\" x2=\"257.0\" y2=\"230.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"253.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"261.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"261.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"253.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"265.0\" y=\"145.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h = kr</text></svg>"
+          },
+          "options": [
+            "\\(V=\\pi r^{2}(kr)=\\pi kr^{3}\\), \\(\\dfrac{dV}{dr}=3\\pi kr^{2}\\). \\(\\dfrac{dr}{dt}=\\dfrac{dV}{dt}\\div\\dfrac{dV}{dr}=\\dfrac{0.25}{3\\pi k(5)^{2}}=\\dfrac{1}{300\\pi k}\\)",
+            "\\(V=\\pi r^{2}h\\), \\(\\dfrac{dV}{dr}=2\\pi rh=2\\pi kr^{2}\\). \\(\\dfrac{dr}{dt}=\\dfrac{0.25}{2\\pi k(5)^{2}}=\\dfrac{1}{200\\pi k}\\)",
+            "\\(V=\\pi kr^{3}\\), \\(\\dfrac{dV}{dr}=3\\pi kr^{2}\\). \\(\\dfrac{dr}{dt}=\\dfrac{dV}{dr}\\times\\dfrac{dV}{dt}=3\\pi k(25)(0.25)=\\dfrac{75\\pi k}{4}\\)",
+            "\\(V=\\pi kr^{3}\\), \\(\\dfrac{dV}{dr}=\\pi k r^{3}\\). \\(\\dfrac{dr}{dt}=\\dfrac{0.25}{\\pi k(125)}=\\dfrac{1}{500\\pi k}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the volume of a cylinder using only \\(r\\) (replace \\(h\\) by \\(kr\\)), find \\(\\dfrac{dV}{dr}\\), then use \\(\\dfrac{dr}{dt}=\\dfrac{dr}{dV}\\times\\dfrac{dV}{dt}\\).",
+          "steps": [
+            {
+              "explain": "The volume of a cylinder is \\(V=\\pi r^{2}h\\). Replace \\(h\\) by \\(kr\\) so that \\(V\\) depends only on \\(r\\) (the balloon keeps \\(h=kr\\) as it grows).",
+              "work": "\\(V=\\pi r^{2}h=\\pi r^{2}(kr)=\\pi kr^{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 280\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"95\" y=\"60\" width=\"140\" height=\"170\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"none\"/><line x1=\"95.0\" y1=\"60.0\" x2=\"95.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"60.0\" x2=\"235.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"165\" cy=\"60\" rx=\"70\" ry=\"18\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"165.0\" y1=\"60.0\" x2=\"235.0\" y2=\"60.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"257.0\" y1=\"60.0\" x2=\"257.0\" y2=\"230.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"253.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"261.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"261.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"253.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"265.0\" y=\"145.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h = kr</text><text x=\"165.0\" y=\"266.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">V = πr²h = πr²(kr) = πkr³</text></svg>"
+              }
+            },
+            {
+              "explain": "Differentiate with respect to \\(r\\) (\\(\\pi k\\) is a constant).",
+              "work": "\\(\\dfrac{dV}{dr}=3\\pi kr^{2}\\)"
+            },
+            {
+              "explain": "We know \\(\\dfrac{dV}{dt}=0.25\\) and want \\(\\dfrac{dr}{dt}\\). Chain rule: \\(\\dfrac{dr}{dt}=\\dfrac{dr}{dV}\\times\\dfrac{dV}{dt}\\), and \\(\\dfrac{dr}{dV}=1\\div\\dfrac{dV}{dr}\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{1}{3\\pi kr^{2}}\\times 0.25\\)"
+            },
+            {
+              "explain": "Substitute \\(r=5\\): \\(r^{2}=25\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{0.25}{3\\pi k(25)}=\\dfrac{0.25}{75\\pi k}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{0.25}{75}=\\dfrac{1}{300}\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{1}{300\\pi k}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B treats \\(h\\) as a constant when differentiating; C MULTIPLIES by \\(\\dfrac{dV}{dr}\\) instead of dividing; D differentiates \\(\\pi kr^{3}\\) wrongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that when \\(r=5\\ \\text{cm}\\) the rate of change of the radius is given",
+              "note": "Substitute h equals kr first, then chain rule: dr/dt equals (dr/dV)(dV/dt)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "blacktown2020-y11e1-q13dii",
+          "type": "mc",
+          "stem": "A balloon in the shape of a cylinder, with height \\(h\\) and radius \\(r\\), expands so that \\(h=kr\\) for some constant \\(k\\). When \\(r=5\\ \\text{cm}\\), \\(\\dfrac{dr}{dt}=\\dfrac{1}{300\\pi k}\\) (from the volume rate \\(0.25\\ \\text{cm}^{3}\\text{ s}^{-1}\\)). If the surface area of the balloon is expanding at the rate of \\(0.15\\ \\text{cm}^{2}\\text{ s}^{-1}\\) when \\(r=5\\ \\text{cm}\\), find the constant of proportionality \\(k\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 280\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"95\" y=\"60\" width=\"140\" height=\"170\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"none\"/><line x1=\"95.0\" y1=\"60.0\" x2=\"95.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"60.0\" x2=\"235.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"165\" cy=\"60\" rx=\"70\" ry=\"18\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"165.0\" y1=\"60.0\" x2=\"235.0\" y2=\"60.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"257.0\" y1=\"60.0\" x2=\"257.0\" y2=\"230.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"253.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"261.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"261.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"253.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"265.0\" y=\"145.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h = kr</text></svg>"
+          },
+          "options": [
+            "\\(k=\\dfrac{4}{5}\\)",
+            "\\(k=\\dfrac{5}{4}\\)",
+            "\\(k=\\dfrac{9}{4}\\)",
+            "\\(k=\\dfrac{3}{400}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the surface area using only \\(r\\) (include both circular ends), find \\(\\dfrac{dr}{dt}\\) from the area rate, then equate it with the \\(\\dfrac{dr}{dt}\\) from the volume rate and solve for \\(k\\).",
+          "steps": [
+            {
+              "explain": "Surface area of a closed cylinder: two circular ends (\\(2\\pi r^{2}\\)) plus the curved side (\\(2\\pi rh\\)). Replace \\(h\\) by \\(kr\\).",
+              "work": "\\(A=2\\pi rh+2\\pi r^{2}=2\\pi r(kr)+2\\pi r^{2}=2\\pi kr^{2}+2\\pi r^{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 280\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"95\" y=\"60\" width=\"140\" height=\"170\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"none\"/><line x1=\"95.0\" y1=\"60.0\" x2=\"95.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"60.0\" x2=\"235.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"165\" cy=\"230\" rx=\"70\" ry=\"18\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><ellipse cx=\"165\" cy=\"60\" rx=\"70\" ry=\"18\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"165.0\" y1=\"60.0\" x2=\"235.0\" y2=\"60.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"257.0\" y1=\"60.0\" x2=\"257.0\" y2=\"230.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"253.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"60.0\" x2=\"261.0\" y2=\"66.9\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"261.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"257.0\" y1=\"230.0\" x2=\"253.0\" y2=\"223.1\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"265.0\" y=\"145.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h = kr</text><text x=\"165.0\" y=\"266.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">V = πr²h = πr²(kr) = πkr³</text></svg>"
+              }
+            },
+            {
+              "explain": "Differentiate with respect to \\(r\\).",
+              "work": "\\(\\dfrac{dA}{dr}=4\\pi kr+4\\pi r=4\\pi r(k+1)\\)"
+            },
+            {
+              "explain": "Chain rule with \\(\\dfrac{dA}{dt}=0.15\\): \\(\\dfrac{dr}{dt}=\\dfrac{dr}{dA}\\times\\dfrac{dA}{dt}=\\dfrac{1}{4\\pi r(k+1)}\\times 0.15\\). Substitute \\(r=5\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{0.15}{4\\pi(5)(k+1)}=\\dfrac{0.15}{20\\pi(k+1)}\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{0.15}{20}=\\dfrac{3}{400}\\).",
+              "work": "\\(\\dfrac{dr}{dt}=\\dfrac{3}{400\\pi(k+1)}\\)"
+            },
+            {
+              "explain": "The radius changes at only ONE rate at \\(r=5\\), so this equals the value found from the volume: \\(\\dfrac{dr}{dt}=\\dfrac{1}{300\\pi k}\\).",
+              "work": "\\(\\dfrac{3}{400\\pi(k+1)}=\\dfrac{1}{300\\pi k}\\)"
+            },
+            {
+              "explain": "Cross-multiply (the \\(\\pi\\) cancels): \\(3\\cdot 300k=1\\cdot 400(k+1)\\).",
+              "work": "\\(900k=400(k+1)\\ \\Rightarrow\\ 9k=4(k+1)\\)"
+            },
+            {
+              "explain": "Expand and solve.",
+              "work": "\\(9k=4k+4\\ \\Rightarrow\\ 5k=4\\ \\Rightarrow\\ k=\\dfrac{4}{5}\\)"
+            },
+            {
+              "explain": "Check: with \\(k=\\dfrac{4}{5}\\): volume gives \\(\\dfrac{1}{300\\pi(0.8)}=\\dfrac{1}{240\\pi}\\) and area gives \\(\\dfrac{3}{400\\pi(1.8)}=\\dfrac{3}{720\\pi}=\\dfrac{1}{240\\pi}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the constant of proportionality",
+              "note": "Surface area with both ends in terms of r; equate the two expressions for dr/dt and solve for k."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
+            "school": "Blacktown Boys High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
