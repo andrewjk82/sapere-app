@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { loadCurriculumNoteChecked, loadLegacyCurriculumNote, saveCurriculumNote, migrateRenumberedNotes } from './curriculumLocalNotes';
 import { requestPersistentStorage } from './homeworkLocalStore';
+import { withTimeout } from './withTimeout';
+
+// A stuck IndexedDB read (iPad Safari) must end in "couldn't open the notes" instead of a pad that never becomes usable.
+const NOTE_READ_TIMEOUT_MS = 6000;
 
 // The curriculum worksheet's personal notes: one notepad, one saved note per topic (`noteKey`), kept on this device.
 //
@@ -39,12 +43,12 @@ export const useCurriculumNote = (canvasRef, noteKey, enabled, topicId = null) =
     canvasRef.current?.clear();
     requestPersistentStorage();
     (async () => {
-      await migrateRenumberedNotes();   // notes of re-laid-out courses follow their topics to the new ids (once per device)
-      let result = await loadCurriculumNoteChecked(noteKey);
+      await withTimeout(migrateRenumberedNotes(), NOTE_READ_TIMEOUT_MS).catch(() => null);   // notes of re-laid-out courses follow their topics to the new ids (once per device)
+      let result = await withTimeout(loadCurriculumNoteChecked(noteKey), NOTE_READ_TIMEOUT_MS).catch(() => ({ ok: false }));
       if (!result.ok && !cancelled) {
         // One retry, a moment later (iPadOS sometimes drops the database connection in the background).
         await new Promise((resolve) => { setTimeout(resolve, 300); });
-        if (!cancelled) result = await loadCurriculumNoteChecked(noteKey);
+        if (!cancelled) result = await withTimeout(loadCurriculumNoteChecked(noteKey), NOTE_READ_TIMEOUT_MS).catch(() => ({ ok: false }));
       }
       if (cancelled) return;
       if (result.ok) {
@@ -102,7 +106,7 @@ export const useCurriculumNote = (canvasRef, noteKey, enabled, topicId = null) =
     const owner = ownerRef.current;
     if (!owner) return Promise.resolve(false);
     const data = canvasRef.current?.getPagesData();
-    return data ? saveCurriculumNote(owner, data) : Promise.resolve(false);
+    return data ? saveCurriculumNote(owner, data).catch(() => false) : Promise.resolve(false);
   }, [canvasRef]);
 
   const onInkChange = useCallback(() => {

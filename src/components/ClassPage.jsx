@@ -7,6 +7,7 @@ import { useLessonNote, useNoteFlush, saveNoteLocal, deleteNoteLocal, flushNotes
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
 import LessonWorkspace from './LessonWorkspace';
+import ErrorBoundary from './ErrorBoundary';
 import ClassHomeworkModal from './ClassHomeworkModal';
 import ClassProgressCard from './ClassProgressCard';
 import { courseTopics } from '../utils/topicProgress';
@@ -512,13 +513,15 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
           onClose={() => setMistakeReview(null)}
         />
       )}
-      {lessonOpen && (
-        <LessonWorkspace
-          session={unit.isGroup ? { ...unit.sessions[0], isGroupedClass: true, groupStudents: unit.sessions } : unit.sessions[0]}
-          sessions={sessions || upcoming || []}
-          students={students}
-          onClose={() => setLessonOpen(false)}
-        />
+      {lessonOpen && unit?.sessions?.[0] && (
+        <ErrorBoundary>
+          <LessonWorkspace
+            session={unit.isGroup ? { ...unit.sessions[0], isGroupedClass: true, groupStudents: unit.sessions } : unit.sessions[0]}
+            sessions={sessions || upcoming || []}
+            students={students}
+            onClose={() => setLessonOpen(false)}
+          />
+        </ErrorBoundary>
       )}
     </div>
   );

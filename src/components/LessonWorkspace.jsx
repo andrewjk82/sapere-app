@@ -281,10 +281,13 @@ const LessonWorkspace = ({ session, students: profiles = [], sessions = [], onCl
     }
   };
 
-  const close = async () => { await saveNow(); onClose(); };
+  // Saving the notes must never be able to block the screen: IndexedDB on iPad Safari can stop answering, and a
+  // Close / tab tap that waits on it forever looked like a frozen lesson that only a page refresh fixed.
+  const saveQuietly = () => withTimeout(Promise.resolve().then(saveNow), 2500).catch(() => false);
+  const close = async () => { await saveQuietly(); onClose(); };
   const switchStudent = async (id) => {
     if (id === activeId) return;
-    await saveNow();
+    await saveQuietly();
     setPdf({ status: 'loading', record: null, url: '' });
     setActiveId(id);
   };
