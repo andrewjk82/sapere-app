@@ -1304,6 +1304,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girr2020-y12e2-q11aii",
+          "type": "mc",
+          "stem": "If \\(z=1-i\\sqrt{3}\\), find \\(z^{3}\\) and show that it is real.",
+          "difficulty": "easy",
+          "options": [
+            "\\(z^{3}=8i\\)",
+            "\\(z^{3}=-8\\)",
+            "\\(z^{3}=8\\)",
+            "\\(z^{3}=-8i\\)"
+          ],
+          "answer": 1,
+          "hint": "Use de Moivre's theorem on the modulus-argument form \\(z=2\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Start from the modulus-argument form found in part (i).",
+              "work": "\\(z=2\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "De Moivre's theorem: \\(\\left[r\\operatorname{cis}\\theta\\right]^{n}=r^{n}\\operatorname{cis}(n\\theta)\\). Cube the modulus and triple the angle.",
+              "work": "\\(z^{3}=2^{3}\\operatorname{cis}\\left(3\\times-\\dfrac{\\pi}{3}\\right)=8\\operatorname{cis}(-\\pi)\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\cos(-\\pi)=-1\\) and \\(\\sin(-\\pi)=0\\).",
+              "work": "\\(8\\left(\\cos(-\\pi)+i\\sin(-\\pi)\\right)=8(-1+0i)=-8\\)"
+            },
+            {
+              "explain": "The imaginary part is 0, so \\(z^{3}=-8\\) is a real number.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(z^{3}\\)",
+              "note": "De Moivre: cube the modulus, multiply the argument by 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3535,6 +3585,210 @@
             "grade": "12",
             "origin": "teacher",
             "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16bi",
+          "type": "mc",
+          "stem": "Solve \\(z^{5}-1=0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(z=1,\\ \\operatorname{cis}\\dfrac{2\\pi}{5},\\ \\operatorname{cis}\\dfrac{4\\pi}{5},\\ \\operatorname{cis}\\dfrac{6\\pi}{5},\\ \\operatorname{cis}\\dfrac{8\\pi}{5}\\)",
+            "\\(z=1,\\ \\operatorname{cis}\\dfrac{\\pi}{5},\\ \\operatorname{cis}\\dfrac{2\\pi}{5},\\ \\operatorname{cis}\\dfrac{3\\pi}{5},\\ \\operatorname{cis}\\dfrac{4\\pi}{5}\\)",
+            "\\(z=1,\\ -1\\) only",
+            "\\(z=\\operatorname{cis}\\dfrac{\\pi}{5},\\ \\operatorname{cis}\\dfrac{3\\pi}{5},\\ \\operatorname{cis}\\pi,\\ \\operatorname{cis}\\dfrac{7\\pi}{5},\\ \\operatorname{cis}\\dfrac{9\\pi}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(z^{5}=1=\\operatorname{cis}(2\\pi k)\\) and use de Moivre: \\(z=\\operatorname{cis}\\dfrac{2\\pi k}{5}\\). The 5 roots are equally spaced around the unit circle.",
+          "steps": [
+            {
+              "explain": "Write 1 in modulus-argument form, allowing for full turns: \\(1=\\operatorname{cis}(2\\pi k)\\), \\(k\\) an integer.",
+              "work": "\\(z^{5}=\\operatorname{cis}(2\\pi k)\\)"
+            },
+            {
+              "explain": "Take the fifth root using de Moivre: \\(|z|=1\\) and \\(\\arg z=\\dfrac{2\\pi k}{5}\\).",
+              "work": "\\(z=\\operatorname{cis}\\dfrac{2\\pi k}{5}\\)"
+            },
+            {
+              "explain": "Take \\(k=0,1,2,3,4\\) (five different roots; \\(k=5\\) repeats \\(k=0\\)). The roots are spaced \\(\\dfrac{2\\pi}{5}=72^\\circ\\) apart.",
+              "work": "\\(z=1,\\ \\operatorname{cis}\\dfrac{2\\pi}{5},\\ \\operatorname{cis}\\dfrac{4\\pi}{5},\\ \\operatorname{cis}\\dfrac{6\\pi}{5},\\ \\operatorname{cis}\\dfrac{8\\pi}{5}\\)"
+            },
+            {
+              "explain": "Option 1 uses spacing \\(\\dfrac{\\pi}{5}\\) (too close) and option 4 starts at the wrong angle.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Fifth roots of 1 are equally spaced at 72 degrees."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16bii",
+          "type": "mc",
+          "stem": "If \\(w\\) is the root of \\(z^{5}-1=0\\) with the smallest positive argument, show that \\(w^{2}+\\dfrac{1}{w^{2}}+w+\\dfrac{1}{w}=-1\\). Which statements start the proof?",
+          "difficulty": "hard",
+          "options": [
+            "\\(w=1\\), so the sum is \\(1+1+1+1=4\\)",
+            "\\(w=\\operatorname{cis}\\dfrac{2\\pi}{5}\\), the other roots are \\(w^{2},w^{3},w^{4},1\\), so \\(1+w+w^{2}+w^{3}+w^{4}=0\\); and \\(\\dfrac{1}{w}=w^{4}\\), \\(\\dfrac{1}{w^{2}}=w^{3}\\)",
+            "\\(w=\\operatorname{cis}\\dfrac{\\pi}{5}\\), and \\(1+w+w^{2}+w^{3}+w^{4}=1\\)",
+            "\\(w=\\operatorname{cis}\\dfrac{2\\pi}{5}\\), and \\(\\dfrac{1}{w}=w^{2}\\), \\(\\dfrac{1}{w^{2}}=w\\)"
+          ],
+          "answer": 1,
+          "hint": "The sum of the roots of \\(z^{5}-1=0\\) is 0 (the \\(z^{4}\\) coefficient is 0). Also \\(w^{5}=1\\), so \\(\\dfrac{1}{w}=w^{4}\\).",
+          "steps": [
+            {
+              "explain": "The root with the smallest positive argument is \\(w=\\operatorname{cis}\\dfrac{2\\pi}{5}\\). The other roots are its powers: \\(w^{2},w^{3},w^{4}\\) and \\(w^{5}=1\\).",
+              "work": "\\(\\text{roots: }1,\\ w,\\ w^{2},\\ w^{3},\\ w^{4}\\)"
+            },
+            {
+              "explain": "The sum of the roots of \\(z^{5}-1=0\\) is 0 (the coefficient of \\(z^{4}\\) is 0).",
+              "work": "\\(1+w+w^{2}+w^{3}+w^{4}=0\\ \\Rightarrow\\ w+w^{2}+w^{3}+w^{4}=-1\\)"
+            },
+            {
+              "explain": "Use \\(w^{5}=1\\): \\(\\dfrac{1}{w}=\\dfrac{w^{4}}{w^{5}}=w^{4}\\) and \\(\\dfrac{1}{w^{2}}=\\dfrac{w^{3}}{w^{5}}=w^{3}\\).",
+              "work": "\\(\\dfrac{1}{w}=w^{4},\\quad \\dfrac{1}{w^{2}}=w^{3}\\)"
+            },
+            {
+              "explain": "Substitute into the left side: \\(w^{2}+w^{3}+w+w^{4}\\).",
+              "work": "\\(w^{2}+\\dfrac{1}{w^{2}}+w+\\dfrac{1}{w}=w^{2}+w^{3}+w+w^{4}=-1\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Sum of the roots is zero; 1 over w equals w to the fourth since w to the fifth is 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16biii",
+          "type": "mc",
+          "stem": "Hence show that \\(x=\\cos\\dfrac{2\\pi}{5}\\) is a root of the equation \\(4x^{2}+2x-1=0\\). Which equation do you get after substituting \\(w+\\dfrac{1}{w}=2\\cos\\dfrac{2\\pi}{5}\\) and \\(w^{2}+\\dfrac{1}{w^{2}}=2\\cos\\dfrac{4\\pi}{5}\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\cos\\dfrac{4\\pi}{5}+2\\cos\\dfrac{2\\pi}{5}=1\\), so \\(4x^{2}+2x-3=0\\)",
+            "\\(\\cos\\dfrac{4\\pi}{5}+\\cos\\dfrac{2\\pi}{5}=-1\\), so \\(2x^{2}+x-1=0\\)",
+            "\\(2\\cos\\dfrac{4\\pi}{5}+2\\cos\\dfrac{2\\pi}{5}=-1\\), and with \\(\\cos\\dfrac{4\\pi}{5}=2x^{2}-1\\), \\(4x^{2}+2x-1=0\\)",
+            "\\(2\\cos\\dfrac{4\\pi}{5}-2\\cos\\dfrac{2\\pi}{5}=-1\\), so \\(4x^{2}-2x-1=0\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(w+\\dfrac{1}{w}=\\operatorname{cis}\\theta+\\operatorname{cis}(-\\theta)=2\\cos\\theta\\), then the double angle formula \\(\\cos2\\theta=2\\cos^{2}\\theta-1\\).",
+          "steps": [
+            {
+              "explain": "With \\(w=\\operatorname{cis}\\dfrac{2\\pi}{5}\\), \\(\\dfrac{1}{w}=\\operatorname{cis}\\left(-\\dfrac{2\\pi}{5}\\right)\\). The sine parts cancel (sine is odd, cosine is even).",
+              "work": "\\(w+\\dfrac{1}{w}=\\cos\\dfrac{2\\pi}{5}+i\\sin\\dfrac{2\\pi}{5}+\\cos\\dfrac{2\\pi}{5}-i\\sin\\dfrac{2\\pi}{5}=2\\cos\\dfrac{2\\pi}{5}\\)"
+            },
+            {
+              "explain": "Similarly, \\(w^{2}+\\dfrac{1}{w^{2}}=2\\cos\\dfrac{4\\pi}{5}\\). Substitute both into part (ii).",
+              "work": "\\(2\\cos\\dfrac{4\\pi}{5}+2\\cos\\dfrac{2\\pi}{5}=-1\\)"
+            },
+            {
+              "explain": "Use the double angle formula \\(\\cos2\\theta=2\\cos^{2}\\theta-1\\) with \\(\\theta=\\dfrac{2\\pi}{5}\\): \\(\\cos\\dfrac{4\\pi}{5}=2\\cos^{2}\\dfrac{2\\pi}{5}-1\\).",
+              "work": "\\(2\\left(2x^{2}-1\\right)+2x=-1\\quad\\left(x=\\cos\\dfrac{2\\pi}{5}\\right)\\)"
+            },
+            {
+              "explain": "Expand and rearrange.",
+              "work": "\\(4x^{2}-2+2x+1=0\\ \\Rightarrow\\ 4x^{2}+2x-1=0\\)"
+            },
+            {
+              "explain": "So \\(x=\\cos\\dfrac{2\\pi}{5}\\) is a root of \\(4x^{2}+2x-1=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence show",
+              "note": "Use the fact that a root plus its reciprocal is twice the cosine, then the double angle formula."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16biv",
+          "type": "mc",
+          "stem": "Hence find the exact value of \\(\\cos\\dfrac{2\\pi}{5}\\). (Use that \\(\\cos\\dfrac{2\\pi}{5}\\) is a root of \\(4x^{2}+2x-1=0\\).)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{-1-\\sqrt{5}}{4}\\)",
+            "\\(\\dfrac{1+\\sqrt{5}}{4}\\)",
+            "\\(\\dfrac{-1+\\sqrt{5}}{2}\\)",
+            "\\(\\dfrac{-1+\\sqrt{5}}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Solve the quadratic with the quadratic formula, then choose the root with the correct sign for the quadrant of \\(\\dfrac{2\\pi}{5}\\).",
+          "steps": [
+            {
+              "explain": "Apply the quadratic formula to \\(4x^{2}+2x-1=0\\) (\\(a=4,\\ b=2,\\ c=-1\\)).",
+              "work": "\\(x=\\dfrac{-2\\pm\\sqrt{2^{2}-4(4)(-1)}}{2(4)}=\\dfrac{-2\\pm\\sqrt{20}}{8}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{20}=2\\sqrt{5}\\) and divide top and bottom by 2.",
+              "work": "\\(x=\\dfrac{-2\\pm2\\sqrt{5}}{8}=\\dfrac{-1\\pm\\sqrt{5}}{4}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{2\\pi}{5}=72^\\circ\\) is in the FIRST quadrant, so its cosine is POSITIVE. Only \\(\\dfrac{-1+\\sqrt{5}}{4}\\approx0.309\\) is positive; \\(\\dfrac{-1-\\sqrt{5}}{4}\\approx-0.809\\) is negative.",
+              "work": "\\(\\cos\\dfrac{2\\pi}{5}=\\dfrac{-1+\\sqrt{5}}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(\\cos72^\\circ\\approx0.309\\) \\(\\checkmark\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "Quadratic formula, then choose the positive root (first quadrant)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

@@ -837,6 +837,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girr2020-y12e2-mc10",
+          "type": "mc",
+          "stem": "The Cartesian equation of the line \\(\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}+\\lambda\\left(2\\underset{\\sim}{i}+3\\underset{\\sim}{j}+4\\underset{\\sim}{k}\\right)\\) is",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{x+1}{2}=\\dfrac{y+2}{3}=\\dfrac{z+1}{4}\\)",
+            "\\(\\dfrac{x-1}{2}=\\dfrac{y-2}{3}=\\dfrac{z+1}{4}\\)",
+            "\\(x-2=\\dfrac{y-2}{3}=z+4\\)",
+            "\\(x+2=\\dfrac{y+2}{3}=z+4\\)"
+          ],
+          "answer": 1,
+          "hint": "A line through \\((x_{0},y_{0},z_{0})\\) with direction \\((a,b,c)\\) has Cartesian form \\(\\dfrac{x-x_{0}}{a}=\\dfrac{y-y_{0}}{b}=\\dfrac{z-z_{0}}{c}\\).",
+          "steps": [
+            {
+              "explain": "Read off the point and direction. The point is \\((1,2,-1)\\) and the direction vector is \\((2,3,4)\\).",
+              "work": "\\((x_{0},y_{0},z_{0})=(1,2,-1),\\quad (a,b,c)=(2,3,4)\\)"
+            },
+            {
+              "explain": "Write the parametric equations from the vector equation.",
+              "work": "\\(x=1+2\\lambda,\\quad y=2+3\\lambda,\\quad z=-1+4\\lambda\\)"
+            },
+            {
+              "explain": "Make \\(\\lambda\\) the subject of each equation.",
+              "work": "\\(\\lambda=\\dfrac{x-1}{2},\\quad \\lambda=\\dfrac{y-2}{3},\\quad \\lambda=\\dfrac{z+1}{4}\\)"
+            },
+            {
+              "explain": "Set them equal. Note \\(z-(-1)=z+1\\) (a double negative), so the \\(z\\) part is \\(\\dfrac{z+1}{4}\\).",
+              "work": "\\(\\dfrac{x-1}{2}=\\dfrac{y-2}{3}=\\dfrac{z+1}{4}\\)"
+            },
+            {
+              "explain": "Option A has the wrong signs on \\(x\\) and \\(y\\); options C and D divide by the wrong numbers.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Cartesian equation",
+              "note": "Make lambda the subject in each of x, y and z, then set them equal."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1283,6 +1337,64 @@
           "meta": {
             "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14biii",
+          "type": "mc",
+          "stem": "Show that the line \\(\\begin{pmatrix}-8\\\\ 12\\\\ 2\\end{pmatrix}+\\lambda\\begin{pmatrix}6\\\\-8\\\\ 5\\end{pmatrix}\\) is skew to the line \\(\\begin{pmatrix}12\\\\-6\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\ 3\\\\-4\\end{pmatrix}\\). Which statement correctly shows the lines are skew?",
+          "difficulty": "hard",
+          "options": [
+            "The direction vectors are parallel, so the lines are skew",
+            "Solving two equations gives \\(\\lambda_{1}=-2\\), \\(\\lambda_{2}=3\\), which also satisfy the third, so the lines meet",
+            "The direction vectors are not parallel, and solving two of the equations gives \\(\\lambda_{1}=-2\\), \\(\\lambda_{2}=3\\), which fail the third (\\(4(-2)+5(3)=7\\ne4\\)), so they never meet",
+            "The direction vectors are not parallel, so the lines must intersect"
+          ],
+          "answer": 2,
+          "hint": "Skew lines are NOT parallel and do NOT intersect. Equate the two lines, solve two equations, and test the answer in the third.",
+          "steps": [
+            {
+              "explain": "Check the direction vectors: \\((1,3,-4)\\) and \\((6,-8,5)\\). Neither is a multiple of the other, so the lines are NOT parallel.",
+              "work": "\\(\\begin{pmatrix}6\\\\-8\\\\ 5\\end{pmatrix}\\ne k\\begin{pmatrix}1\\\\ 3\\\\-4\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Look for an intersection: equate the lines (use \\(\\lambda_{1}\\) and \\(\\lambda_{2}\\) for the two parameters), giving three equations.",
+              "work": "\\(12+\\lambda_{1}=-8+6\\lambda_{2},\\ \\ -6+3\\lambda_{1}=12-8\\lambda_{2},\\ \\ 6-4\\lambda_{1}=2+5\\lambda_{2}\\)"
+            },
+            {
+              "explain": "Tidy: (1) \\(\\lambda_{1}-6\\lambda_{2}=-20\\); (2) \\(3\\lambda_{1}+8\\lambda_{2}=18\\); (3) \\(4\\lambda_{1}+5\\lambda_{2}=4\\).",
+              "work": "\\((1)\\ \\lambda_{1}-6\\lambda_{2}=-20\\quad(2)\\ 3\\lambda_{1}+8\\lambda_{2}=18\\quad(3)\\ 4\\lambda_{1}+5\\lambda_{2}=4\\)"
+            },
+            {
+              "explain": "Solve (1) and (2): from (1) \\(\\lambda_{1}=6\\lambda_{2}-20\\), so \\(3(6\\lambda_{2}-20)+8\\lambda_{2}=18\\), giving \\(26\\lambda_{2}=78\\).",
+              "work": "\\(\\lambda_{2}=3,\\quad \\lambda_{1}=6(3)-20=-2\\)"
+            },
+            {
+              "explain": "Test in equation (3): \\(4(-2)+5(3)=-8+15=7\\), but the right side is 4. The values do not satisfy (3), so there is NO common point.",
+              "work": "\\(4(-2)+5(3)=7\\ne4\\)"
+            },
+            {
+              "explain": "The lines are not parallel and do not intersect: they are skew.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "skew",
+              "note": "Skew means not parallel and never meeting: solve two equations, test the third."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -1811,6 +1923,222 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14bi",
+          "type": "mc",
+          "stem": "Show that the point \\(\\begin{pmatrix}12\\\\-6\\\\ 6\\end{pmatrix}\\) lies on the sphere \\((x-10)^{2}+(y+12)^{2}+(z-14)^{2}=104\\). What does the left side equal when \\((x,y,z)=(12,-6,6)\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(104\\)",
+            "\\(4\\)",
+            "\\(100\\)",
+            "\\(108\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(x=12\\), \\(y=-6\\), \\(z=6\\) into the left side of the sphere equation.",
+          "steps": [
+            {
+              "explain": "Substitute the coordinates.",
+              "work": "\\((12-10)^{2}+(-6+12)^{2}+(6-14)^{2}\\)"
+            },
+            {
+              "explain": "Simplify each bracket: \\(12-10=2\\), \\(-6+12=6\\), \\(6-14=-8\\).",
+              "work": "\\(=2^{2}+6^{2}+(-8)^{2}\\)"
+            },
+            {
+              "explain": "Square and add.",
+              "work": "\\(=4+36+64=104\\)"
+            },
+            {
+              "explain": "The left side equals the right side (104), so the point lies on the sphere.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lies on the sphere",
+              "note": "Substitute the point into the sphere equation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14bii",
+          "type": "mc",
+          "stem": "Show that the line \\(\\begin{pmatrix}12\\\\-6\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\ 3\\\\-4\\end{pmatrix}\\) forms a diameter of the sphere \\((x-10)^{2}+(y+12)^{2}+(z-14)^{2}=104\\) and find the other point at which the line intersects with the sphere.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{pmatrix}14\\\\-6\\\\ 22\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}8\\\\-18\\\\ 22\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}11\\\\-9\\\\ 10\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}8\\\\-18\\\\ 2\\end{pmatrix}\\)"
+          ],
+          "answer": 1,
+          "hint": "A line that passes through the CENTRE of a sphere gives a diameter. The centre is the midpoint of the two end points.",
+          "steps": [
+            {
+              "explain": "Read the centre from the equation: \\((x-10)^{2}+(y+12)^{2}+(z-14)^{2}=104\\) has centre \\((10,-12,14)\\).",
+              "work": "\\(\\text{centre }C=(10,-12,14)\\)"
+            },
+            {
+              "explain": "The line passes through the centre if some \\(\\lambda\\) gives the centre. Solve each coordinate.",
+              "work": "\\(12+\\lambda=10\\Rightarrow\\lambda=-2;\\ \\ -6+3\\lambda=-12\\Rightarrow\\lambda=-2;\\ \\ 6-4\\lambda=14\\Rightarrow\\lambda=-2\\)"
+            },
+            {
+              "explain": "All three give \\(\\lambda=-2\\), so the line passes through the centre: it contains a diameter. One end is \\((12,-6,6)\\) (from part (i)).",
+              "work": "\\(\\lambda=-2\\ \\text{in all three}\\)"
+            },
+            {
+              "explain": "The centre is the MIDPOINT of the diameter, so the other end is \\(2C-A\\), where \\(A=(12,-6,6)\\).",
+              "work": "\\(2\\begin{pmatrix}10\\\\-12\\\\ 14\\end{pmatrix}-\\begin{pmatrix}12\\\\-6\\\\ 6\\end{pmatrix}=\\begin{pmatrix}8\\\\-18\\\\ 22\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check (the point is also the line at \\(\\lambda=-4\\)): \\(12-4=8\\), \\(-6-12=-18\\), \\(6+16=22\\) \\(\\checkmark\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "forms a diameter",
+              "note": "Show the line goes through the centre; the other end is the reflection of the first in the centre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14biv",
+          "type": "mc",
+          "stem": "Find the points of intersection of \\(\\begin{pmatrix}-8\\\\ 12\\\\ 2\\end{pmatrix}+\\lambda\\begin{pmatrix}6\\\\-8\\\\ 5\\end{pmatrix}\\) and the sphere \\((x-10)^{2}+(y+12)^{2}+(z-14)^{2}=104\\). What are the two values of \\(\\lambda\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\lambda=2\\) and \\(\\lambda=\\dfrac{25}{94}\\)",
+            "\\(\\lambda=3\\) and \\(\\lambda=\\dfrac{94}{25}\\)",
+            "\\(\\lambda=-2\\) and \\(\\lambda=\\dfrac{94}{25}\\)",
+            "\\(\\lambda=2\\) and \\(\\lambda=\\dfrac{94}{25}\\)"
+          ],
+          "answer": 3,
+          "hint": "Write \\(x,y,z\\) in terms of \\(\\lambda\\), substitute into the sphere equation and solve the quadratic in \\(\\lambda\\).",
+          "steps": [
+            {
+              "explain": "Write the point on the line: \\(x=-8+6\\lambda\\), \\(y=12-8\\lambda\\), \\(z=2+5\\lambda\\).",
+              "work": "\\((x,y,z)=(-8+6\\lambda,\\ 12-8\\lambda,\\ 2+5\\lambda)\\)"
+            },
+            {
+              "explain": "Substitute into the sphere equation.",
+              "work": "\\((6\\lambda-18)^{2}+(24-8\\lambda)^{2}+(5\\lambda-12)^{2}=104\\)"
+            },
+            {
+              "explain": "Note \\((6\\lambda-18)^{2}+(24-8\\lambda)^{2}=36(\\lambda-3)^{2}+64(\\lambda-3)^{2}=100(\\lambda-3)^{2}\\). Expand all.",
+              "work": "\\(100\\left(\\lambda^{2}-6\\lambda+9\\right)+25\\lambda^{2}-120\\lambda+144=104\\)"
+            },
+            {
+              "explain": "Collect terms to get a quadratic in \\(\\lambda\\).",
+              "work": "\\(125\\lambda^{2}-720\\lambda+1044=104\\ \\Rightarrow\\ 25\\lambda^{2}-144\\lambda+188=0\\)"
+            },
+            {
+              "explain": "Quadratic formula: discriminant \\(144^{2}-4(25)(188)=20736-18800=1936=44^{2}\\).",
+              "work": "\\(\\lambda=\\dfrac{144\\pm44}{50}=\\dfrac{94}{25}\\ \\text{or}\\ 2\\)"
+            },
+            {
+              "explain": "The points are \\(\\lambda=2\\): \\((4,-4,12)\\), and \\(\\lambda=\\dfrac{94}{25}\\): \\(\\left(\\dfrac{364}{25},-\\dfrac{452}{25},\\dfrac{104}{5}\\right)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "points of intersection",
+              "note": "Substitute the parametric coordinates into the sphere equation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14bv",
+          "type": "mc",
+          "stem": "Show that the line \\(\\begin{pmatrix}-8\\\\ 12\\\\ 2\\end{pmatrix}+\\lambda\\begin{pmatrix}6\\\\-8\\\\ 5\\end{pmatrix}\\) passes directly above the centre of the sphere \\((x-10)^{2}+(y+12)^{2}+(z-14)^{2}=104\\) and find the point at which this happens.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{pmatrix}10\\\\-12\\\\ 17\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}10\\\\-12\\\\ 14\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}10\\\\-12\\\\ 11\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-8\\\\ 12\\\\ 17\\end{pmatrix}\\)"
+          ],
+          "answer": 0,
+          "hint": "'Directly above the centre' means the same \\(x\\) and \\(y\\) as the centre \\((10,-12)\\) but a larger \\(z\\).",
+          "steps": [
+            {
+              "explain": "The centre is \\((10,-12,14)\\). A point directly above it has \\(x=10\\) and \\(y=-12\\).",
+              "work": "\\(x=10,\\quad y=-12\\)"
+            },
+            {
+              "explain": "Find \\(\\lambda\\) from \\(x\\): \\(-8+6\\lambda=10\\).",
+              "work": "\\(6\\lambda=18\\ \\Rightarrow\\ \\lambda=3\\)"
+            },
+            {
+              "explain": "Check \\(y\\): \\(12-8(3)=12-24=-12\\) \\(\\checkmark\\). The same \\(\\lambda=3\\) works, so the line IS directly above the centre.",
+              "work": "\\(12-8(3)=-12\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Find \\(z\\) at \\(\\lambda=3\\).",
+              "work": "\\(z=2+5(3)=17\\)"
+            },
+            {
+              "explain": "\\(17>14\\), so the point is above the centre. The point is \\((10,-12,17)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "directly above",
+              "note": "Same x and y as the centre: find lambda from x, check y, then find z."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2938,6 +3266,148 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14ai",
+          "type": "mc",
+          "stem": "If \\(\\underset{\\sim}{p}=\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{q}=2\\underset{\\sim}{i}-\\underset{\\sim}{j}+\\underset{\\sim}{k}\\), find \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(-3\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "The dot product multiplies matching components and adds: \\(p_{1}q_{1}+p_{2}q_{2}+p_{3}q_{3}\\).",
+          "steps": [
+            {
+              "explain": "Write the components: \\(\\underset{\\sim}{p}=(1,2,-1)\\) and \\(\\underset{\\sim}{q}=(2,-1,1)\\).",
+              "work": "\\(\\underset{\\sim}{p}=\\begin{pmatrix}1\\\\ 2\\\\-1\\end{pmatrix},\\quad \\underset{\\sim}{q}=\\begin{pmatrix}2\\\\-1\\\\ 1\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Multiply matching components.",
+              "work": "\\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=(1)(2)+(2)(-1)+(-1)(1)\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(=2-2-1=-1\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}\\)",
+              "note": "Multiply the i, j and k components and add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14aii",
+          "type": "mc",
+          "stem": "If \\(\\underset{\\sim}{p}=\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{q}=2\\underset{\\sim}{i}-\\underset{\\sim}{j}+\\underset{\\sim}{k}\\), find the angle between \\(\\underset{\\sim}{p}\\) and \\(\\underset{\\sim}{q}\\) (to the nearest minute).",
+          "difficulty": "medium",
+          "options": [
+            "\\(120^\\circ\\)",
+            "\\(99^\\circ36'\\)",
+            "\\(80^\\circ24'\\)",
+            "\\(9^\\circ36'\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\cos\\theta=\\dfrac{\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}}{|\\underset{\\sim}{p}||\\underset{\\sim}{q}|}\\) with \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=-1\\) from part (i).",
+          "steps": [
+            {
+              "explain": "Use the angle formula between two vectors.",
+              "work": "\\(\\cos\\theta=\\dfrac{\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}}{|\\underset{\\sim}{p}||\\underset{\\sim}{q}|}\\)"
+            },
+            {
+              "explain": "Find the lengths: \\(|\\underset{\\sim}{p}|=\\sqrt{1+4+1}=\\sqrt{6}\\) and \\(|\\underset{\\sim}{q}|=\\sqrt{4+1+1}=\\sqrt{6}\\).",
+              "work": "\\(|\\underset{\\sim}{p}|=\\sqrt{6},\\quad |\\underset{\\sim}{q}|=\\sqrt{6}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=-1\\).",
+              "work": "\\(\\cos\\theta=\\dfrac{-1}{\\sqrt{6}\\times\\sqrt{6}}=-\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Take the inverse cosine (a negative cosine gives an OBTUSE angle). \\(\\theta\\approx99.59^\\circ\\), and \\(0.59\\times60\\approx36'\\).",
+              "work": "\\(\\theta=\\cos^{-1}\\left(-\\dfrac{1}{6}\\right)\\approx99^\\circ36'\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the angle",
+              "note": "cos of the angle = dot product over the product of the lengths."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q14aiii",
+          "type": "mc",
+          "stem": "If \\(\\underset{\\sim}{p}=\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{q}=2\\underset{\\sim}{i}-\\underset{\\sim}{j}+\\underset{\\sim}{k}\\), find \\(\\operatorname{Proj}_{\\underset{\\sim}{p}}\\underset{\\sim}{q}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{6}\\left(\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\right)\\)",
+            "\\(-\\left(\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\right)\\)",
+            "\\(-\\dfrac{1}{6}\\left(\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\right)\\)",
+            "\\(-\\dfrac{1}{6}\\left(2\\underset{\\sim}{i}-\\underset{\\sim}{j}+\\underset{\\sim}{k}\\right)\\)"
+          ],
+          "answer": 2,
+          "hint": "The projection of \\(\\underset{\\sim}{q}\\) on \\(\\underset{\\sim}{p}\\) is a multiple of \\(\\underset{\\sim}{p}\\): \\(\\dfrac{\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}}{|\\underset{\\sim}{p}|^{2}}\\underset{\\sim}{p}\\).",
+          "steps": [
+            {
+              "explain": "Use the projection formula (the result points along \\(\\underset{\\sim}{p}\\)).",
+              "work": "\\(\\operatorname{Proj}_{\\underset{\\sim}{p}}\\underset{\\sim}{q}=\\dfrac{\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}}{|\\underset{\\sim}{p}|^{2}}\\,\\underset{\\sim}{p}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}=-1\\) and \\(|\\underset{\\sim}{p}|^{2}=6\\).",
+              "work": "\\(=\\dfrac{-1}{6}\\left(\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\right)\\)"
+            },
+            {
+              "explain": "The negative sign shows the projection points OPPOSITE to \\(\\underset{\\sim}{p}\\), as expected since the angle is obtuse.",
+              "work": "\\(-\\dfrac{1}{6}\\left(\\underset{\\sim}{i}+2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\right)\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find",
+              "note": "The projection of q on p is the dot product over the length of p squared, times p."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }

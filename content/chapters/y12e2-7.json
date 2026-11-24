@@ -511,6 +511,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girr2020-y12e2-mc8",
+          "type": "mc",
+          "stem": "A particle moves in a straight line. At one point, \\(x=6\\), \\(v=8\\) and \\(a=18\\). An equation of motion for the particle could be",
+          "difficulty": "hard",
+          "options": [
+            "\\(v^{2}=\\dfrac{x^{3}}{3}-8\\)",
+            "\\(v^{2}=x^{2}+28\\)",
+            "\\(v=x+2\\)",
+            "\\(v^{2}=3x^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(a=\\dfrac{d}{dx}\\left(\\dfrac{1}{2}v^{2}\\right)\\) and test each option at \\(x=6\\): it must give BOTH \\(v=8\\) and \\(a=18\\).",
+          "steps": [
+            {
+              "explain": "Use the acceleration formula in terms of position: \\(a=\\dfrac{d}{dx}\\left(\\dfrac{1}{2}v^{2}\\right)\\). Each option must satisfy \\(v=8\\) and \\(a=18\\) when \\(x=6\\).",
+              "work": "\\(a=\\dfrac{d}{dx}\\left(\\dfrac{1}{2}v^{2}\\right)\\)"
+            },
+            {
+              "explain": "Test A: \\(v^{2}=\\dfrac{x^{3}}{3}-8\\). At \\(x=6\\): \\(v^{2}=\\dfrac{216}{3}-8=64\\), so \\(v=8\\) \\(\\checkmark\\). Then \\(\\dfrac{1}{2}v^{2}=\\dfrac{x^{3}}{6}-4\\).",
+              "work": "\\(v^{2}=\\dfrac{6^{3}}{3}-8=72-8=64\\ \\Rightarrow\\ v=8\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Differentiate: \\(a=\\dfrac{d}{dx}\\left(\\dfrac{x^{3}}{6}-4\\right)=\\dfrac{x^{2}}{2}\\). At \\(x=6\\):",
+              "work": "\\(a=\\dfrac{6^{2}}{2}=18\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Check the others quickly. B: \\(v^{2}=36+28=64\\) gives \\(v=8\\) but \\(a=\\dfrac{d}{dx}\\left(\\dfrac{x^{2}+28}{2}\\right)=x=6\\neq18\\). C: \\(v=8\\) but \\(a=v\\dfrac{dv}{dx}=8\\neq18\\). D: \\(v^{2}=108\\neq64\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "equation of motion",
+              "note": "Differentiate v squared over 2 with respect to x to get the acceleration."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1132,6 +1182,118 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15ai",
+          "type": "mc",
+          "stem": "The depth of the water at a wharf is regulated by the tide and can be modelled using simple harmonic motion. If at low tide at 7:00 a.m. the depth is 5 m and at high tide at 1:30 p.m. the depth is 13 m, letting the time be measured in hours and \\(t=0\\) hours to be 7:00 a.m., write a rule for the depth \\((x)\\) in terms of time \\((t)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=-4\\cos\\left(\\dfrac{\\pi t}{6.5}\\right)+9\\), that is \\(x=-4\\cos\\left(\\dfrac{2\\pi t}{13}\\right)+9\\)",
+            "\\(x=4\\cos\\left(\\dfrac{2\\pi t}{13}\\right)+9\\)",
+            "\\(x=-4\\cos\\left(\\dfrac{\\pi t}{13}\\right)+9\\)",
+            "\\(x=-9\\cos\\left(\\dfrac{2\\pi t}{13}\\right)+4\\)"
+          ],
+          "answer": 0,
+          "hint": "Centre = average of low and high, amplitude = half the difference, period = twice the time from low to high tide. It STARTS at the minimum, so use \\(-\\cos\\).",
+          "steps": [
+            {
+              "explain": "The centre of the motion is halfway between the low and high depths.",
+              "work": "\\(\\text{centre}=\\dfrac{5+13}{2}=9\\ \\text{m}\\)"
+            },
+            {
+              "explain": "The amplitude is half the difference.",
+              "work": "\\(\\text{amplitude}=\\dfrac{13-5}{2}=4\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Low tide at 7:00 a.m. to high tide at 1:30 p.m. is 6.5 hours, which is HALF a period. So the period is 13 hours and \\(n=\\dfrac{2\\pi}{13}\\).",
+              "work": "\\(T=2\\times6.5=13\\ \\text{h},\\quad n=\\dfrac{2\\pi}{13}\\)"
+            },
+            {
+              "explain": "At \\(t=0\\) the depth is at its MINIMUM, so the cosine is reflected: use \\(-\\cos\\).",
+              "work": "\\(x=-4\\cos\\left(\\dfrac{2\\pi t}{13}\\right)+9\\)"
+            },
+            {
+              "explain": "Check: \\(t=0\\) gives \\(-4+9=5\\) \\(\\checkmark\\); \\(t=6.5\\) gives \\(-4\\cos\\pi+9=13\\) \\(\\checkmark\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "write a rule",
+              "note": "Centre, amplitude, period; it starts at the minimum so use minus cosine."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15aii",
+          "type": "mc",
+          "stem": "A certain boat can only reach the wharf when the depth is \\(\\textit{greater}\\) than 8 m. What are the times this can happen between 7:00 a.m. and the next low tide? (Depth: \\(x=-4\\cos\\dfrac{2\\pi t}{13}+9\\), \\(t\\) hours after 7:00 a.m.)",
+          "difficulty": "hard",
+          "options": [
+            "From 1:30 p.m. to 8:00 p.m.",
+            "From 9:44 a.m. to 5:16 p.m.",
+            "From 7:00 a.m. to 9:44 a.m.",
+            "From 9:44 p.m. to 5:16 a.m."
+          ],
+          "answer": 1,
+          "hint": "Solve \\(-4\\cos\\dfrac{2\\pi t}{13}+9=8\\) for the two boundary times, then decide which side is deeper than 8 m.",
+          "steps": [
+            {
+              "explain": "Find when the depth is exactly 8 m.",
+              "work": "\\(-4\\cos\\dfrac{2\\pi t}{13}+9=8\\ \\Rightarrow\\ \\cos\\dfrac{2\\pi t}{13}=\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Solve for the first angle in the first quadrant (calculator in radians).",
+              "work": "\\(\\dfrac{2\\pi t}{13}=\\cos^{-1}\\left(\\dfrac{1}{4}\\right)\\approx1.3181\\)"
+            },
+            {
+              "explain": "So \\(t\\approx\\dfrac{1.3181\\times13}{2\\pi}\\approx2.727\\) hours, which is 2 h 44 min after 7:00 a.m., that is about 9:44 a.m.",
+              "work": "\\(t\\approx2.727\\ \\text{h}\\ \\to\\ 9{:}44\\ \\text{a.m.}\\)"
+            },
+            {
+              "explain": "By symmetry of cosine, the other solution in one period has \\(\\dfrac{2\\pi t}{13}=2\\pi-1.3181\\approx4.9651\\).",
+              "work": "\\(t\\approx\\dfrac{4.9651\\times13}{2\\pi}\\approx10.273\\ \\text{h}\\ \\to\\ 5{:}16\\ \\text{p.m.}\\)"
+            },
+            {
+              "explain": "Depth is GREATER than 8 m near high tide (1:30 p.m. is \\(t=6.5\\), between these two times). Test \\(t=6.5\\): depth 13 m \\(>8\\).",
+              "work": "\\(2.727<t<10.273\\)"
+            },
+            {
+              "explain": "So the boat can reach the wharf from 9:44 a.m. to 5:16 p.m.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "greater",
+              "note": "Solve for depth = 8, then check which side is deeper (near high tide)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -1933,6 +2095,60 @@
           "meta": {
             "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-mc9",
+          "type": "mc",
+          "stem": "A particle moves with simple harmonic motion so that \\(v^{2}=27-18x-9x^{2}\\). The period and amplitude of the motion are",
+          "difficulty": "hard",
+          "options": [
+            "Period \\(=\\dfrac{\\pi\\sqrt{2}}{3}\\) seconds, amplitude \\(=3\\,\\text{m}\\)",
+            "Period \\(=\\dfrac{2\\pi}{3}\\) seconds, amplitude \\(=2\\,\\text{m}\\)",
+            "Period \\(=\\dfrac{3\\pi}{2}\\) seconds, amplitude \\(=3\\,\\text{m}\\)",
+            "Period \\(=\\dfrac{\\pi\\sqrt{2}}{3}\\) seconds, amplitude \\(=2\\,\\text{m}\\)"
+          ],
+          "answer": 1,
+          "hint": "Amplitude: the particle stops when \\(v=0\\). Period: differentiate to get \\(\\ddot{x}=-n^{2}(x-c)\\), then \\(T=\\dfrac{2\\pi}{n}\\).",
+          "steps": [
+            {
+              "explain": "Amplitude: the particle is at the extremes of its motion when \\(v=0\\). Solve \\(27-18x-9x^{2}=0\\).",
+              "work": "\\(27-18x-9x^{2}=0\\ \\Rightarrow\\ x^{2}+2x-3=0\\)"
+            },
+            {
+              "explain": "Factorise: \\((x+3)(x-1)=0\\), so the extremes are \\(x=-3\\) and \\(x=1\\). The centre is halfway: \\(x=-1\\). The amplitude is half the distance between the extremes.",
+              "work": "\\(\\text{amplitude}=\\dfrac{1-(-3)}{2}=2\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Period: use \\(\\ddot{x}=\\dfrac{d}{dx}\\left(\\dfrac{1}{2}v^{2}\\right)\\).",
+              "work": "\\(\\ddot{x}=\\dfrac{d}{dx}\\left(\\dfrac{27-18x-9x^{2}}{2}\\right)=-9-9x=-9(x+1)\\)"
+            },
+            {
+              "explain": "This is \\(\\ddot{x}=-n^{2}(x+1)\\) with \\(n^{2}=9\\), so \\(n=3\\). (It also confirms the centre \\(x=-1\\).) The period is \\(\\dfrac{2\\pi}{n}\\).",
+              "work": "\\(T=\\dfrac{2\\pi}{3}\\ \\text{seconds}\\)"
+            },
+            {
+              "explain": "Period \\(\\dfrac{2\\pi}{3}\\) s and amplitude 2 m.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "period and amplitude",
+              "note": "Amplitude: find where the velocity is zero. Period: write the acceleration as minus n squared times the distance from the centre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3016,6 +3232,218 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girr2020-y12e2-q16ai",
+          "type": "mc",
+          "stem": "A projectile is launched vertically upwards from the ground at a speed of \\(U\\) m/s. It experiences acceleration due to gravity of \\(g\\) m/s\\(^{2}\\) and acceleration due to air resistance of \\(kv^{2}\\) m/s\\(^{2}\\). If \\(x\\) is the vertical height of the projectile above the ground, show that \\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kU^{2}}{g+kv^{2}}\\right)\\). Which equation of motion and integral start the working?",
+          "difficulty": "hard",
+          "options": [
+            "\\(v\\dfrac{dv}{dx}=-g-kv^{2}\\), so \\(\\dfrac{dx}{dv}=-\\dfrac{v}{g+kv^{2}}\\)",
+            "\\(v\\dfrac{dv}{dx}=g-kv^{2}\\), so \\(\\dfrac{dx}{dv}=\\dfrac{v}{g-kv^{2}}\\)",
+            "\\(\\dfrac{dv}{dt}=-g-kv^{2}\\), so \\(\\dfrac{dx}{dv}=-\\dfrac{1}{g+kv^{2}}\\)",
+            "\\(v\\dfrac{dv}{dx}=-g+kv^{2}\\), so \\(\\dfrac{dx}{dv}=-\\dfrac{v}{g-kv^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Going UP, both gravity and air resistance act DOWN. Use \\(\\ddot{x}=v\\dfrac{dv}{dx}\\) because the question asks for \\(x\\) in terms of \\(v\\).",
+          "steps": [
+            {
+              "explain": "Going up, gravity AND air resistance both act downwards (negative direction). The acceleration is",
+              "work": "\\(\\ddot{x}=-g-kv^{2}\\)"
+            },
+            {
+              "explain": "We want \\(x\\) in terms of \\(v\\), so write the acceleration as \\(v\\dfrac{dv}{dx}\\).",
+              "work": "\\(v\\dfrac{dv}{dx}=-g-kv^{2}\\)"
+            },
+            {
+              "explain": "Invert to get \\(\\dfrac{dx}{dv}\\).",
+              "work": "\\(\\dfrac{dx}{dv}=-\\dfrac{v}{g+kv^{2}}\\)"
+            },
+            {
+              "explain": "Integrate: the numerator is nearly the derivative of the denominator (\\(\\dfrac{d}{dv}\\left(g+kv^{2}\\right)=2kv\\)).",
+              "work": "\\(x=-\\dfrac{1}{2k}\\int\\dfrac{2kv}{g+kv^{2}}dv=-\\dfrac{1}{2k}\\ln\\left(g+kv^{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Use \\(x=0\\) when \\(v=U\\): \\(C=\\dfrac{1}{2k}\\ln\\left(g+kU^{2}\\right)\\).",
+              "work": "\\(x=\\dfrac{1}{2k}\\ln\\left(g+kU^{2}\\right)-\\dfrac{1}{2k}\\ln\\left(g+kv^{2}\\right)=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kU^{2}}{g+kv^{2}}\\right)\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Going up: gravity and resistance both act down; use v dv/dx."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16aii",
+          "type": "mc",
+          "stem": "Show that the maximum height reached is \\(\\dfrac{1}{2k}\\ln\\left(1+\\dfrac{kU^{2}}{g}\\right)\\) metres. What value of \\(v\\) is used at the maximum height, and what does \\(x\\) become?",
+          "difficulty": "medium",
+          "options": [
+            "\\(v=\\sqrt{\\dfrac{g}{k}}\\), so \\(x=\\dfrac{1}{2k}\\ln2\\)",
+            "\\(v=0\\), so \\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kU^{2}}{g}\\right)\\)",
+            "\\(v=U\\), so \\(x=0\\)",
+            "\\(v=0\\), so \\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g+kU^{2}}\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "At the top of the flight the particle is momentarily at rest. Put \\(v=0\\) into \\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kU^{2}}{g+kv^{2}}\\right)\\).",
+          "steps": [
+            {
+              "explain": "At the maximum height the projectile stops for an instant, so \\(v=0\\).",
+              "work": "\\(v=0\\)"
+            },
+            {
+              "explain": "Substitute \\(v=0\\) into \\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kU^{2}}{g+kv^{2}}\\right)\\).",
+              "work": "\\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kU^{2}}{g}\\right)\\)"
+            },
+            {
+              "explain": "Split the fraction: \\(\\dfrac{g+kU^{2}}{g}=1+\\dfrac{kU^{2}}{g}\\).",
+              "work": "\\(x_{\\max}=\\dfrac{1}{2k}\\ln\\left(1+\\dfrac{kU^{2}}{g}\\right)\\)"
+            },
+            {
+              "explain": "Option 3 uses the terminal velocity, which is for falling, not rising; option 2 has the fraction upside down (it would give a negative height).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum height",
+              "note": "At the top, v equals 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16aiii",
+          "type": "mc",
+          "stem": "The projectile starts to fall from its maximum height. It continues to experience acceleration due to gravity of \\(g\\) m/s\\(^{2}\\) and air resistance \\(\\textit{against}\\) its motion of \\(kv^{2}\\) m/s\\(^{2}\\). Letting down be positive, and the point where the projectile reaches its maximum height be \\(x=0\\), find the \\(\\textit{terminal velocity}\\) of the projectile in terms of \\(k\\) and \\(g\\) and show that \\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g-kv^{2}}\\right)\\).",
+          "difficulty": "medium",
+          "options": [
+            "Terminal velocity \\(\\sqrt{gk}\\)",
+            "Terminal velocity \\(\\dfrac{k}{g}\\)",
+            "Terminal velocity \\(\\sqrt{\\dfrac{g}{k}}\\) (acceleration \\(g-kv^{2}=0\\))",
+            "Terminal velocity \\(\\dfrac{g}{k}\\)"
+          ],
+          "answer": 2,
+          "hint": "Terminal velocity is reached when the acceleration is zero: gravity down equals air resistance up.",
+          "steps": [
+            {
+              "explain": "Falling (down positive): gravity \\(g\\) acts down (positive) and air resistance \\(kv^{2}\\) acts up (negative).",
+              "work": "\\(\\ddot{x}=g-kv^{2}\\)"
+            },
+            {
+              "explain": "Terminal velocity is when the net acceleration is zero.",
+              "work": "\\(g-kv^{2}=0\\)"
+            },
+            {
+              "explain": "Solve: \\(v^{2}=\\dfrac{g}{k}\\), so (taking the positive speed)",
+              "work": "\\(T=\\sqrt{\\dfrac{g}{k}}\\)"
+            },
+            {
+              "explain": "For the displacement: \\(v\\dfrac{dv}{dx}=g-kv^{2}\\) gives \\(\\dfrac{dx}{dv}=\\dfrac{v}{g-kv^{2}}\\). Then \\(x=-\\dfrac{1}{2k}\\ln\\left(g-kv^{2}\\right)+C\\), and \\(x=0\\) when \\(v=0\\) gives \\(C=\\dfrac{1}{2k}\\ln g\\).",
+              "work": "\\(x=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g-kv^{2}}\\right)\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "terminal velocity",
+              "note": "Terminal velocity: acceleration is zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q16aiv",
+          "type": "mc",
+          "stem": "Letting \\(T\\) be the terminal velocity, \\(W\\) be the impact velocity (the speed at which the projectile hits the ground) and keeping \\(U\\) as the initial launch velocity, show that \\(\\dfrac{1}{U^{2}}+\\dfrac{1}{T^{2}}=\\dfrac{1}{W^{2}}\\). Which equation links \\(U\\) and \\(W\\) through the height?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g-kW^{2}}\\right)=\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g+kU^{2}}\\right)\\)",
+            "\\(\\dfrac{1}{2k}\\ln\\left(\\dfrac{g+kW^{2}}{g}\\right)=\\dfrac{1}{2k}\\ln\\left(1+\\dfrac{kU^{2}}{g}\\right)\\)",
+            "\\(W=U\\), because the projectile returns with the same speed",
+            "\\(\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g-kW^{2}}\\right)=\\dfrac{1}{2k}\\ln\\left(1+\\dfrac{kU^{2}}{g}\\right)\\)"
+          ],
+          "answer": 3,
+          "hint": "The height fallen on the way down equals the height risen on the way up. Equate the two expressions for the maximum height, then rearrange and use \\(T^{2}=\\dfrac{g}{k}\\).",
+          "steps": [
+            {
+              "explain": "The projectile falls back through the SAME height it rose, so the two height expressions are equal: the fall formula with \\(v=W\\) equals the rise formula.",
+              "work": "\\(\\dfrac{1}{2k}\\ln\\left(\\dfrac{g}{g-kW^{2}}\\right)=\\dfrac{1}{2k}\\ln\\left(1+\\dfrac{kU^{2}}{g}\\right)\\)"
+            },
+            {
+              "explain": "Cancel \\(\\dfrac{1}{2k}\\) and remove the logs.",
+              "work": "\\(\\dfrac{g}{g-kW^{2}}=1+\\dfrac{kU^{2}}{g}=\\dfrac{g+kU^{2}}{g}\\)"
+            },
+            {
+              "explain": "Cross-multiply.",
+              "work": "\\(g^{2}=\\left(g+kU^{2}\\right)\\left(g-kW^{2}\\right)=g^{2}-gkW^{2}+gkU^{2}-k^{2}U^{2}W^{2}\\)"
+            },
+            {
+              "explain": "Cancel \\(g^{2}\\) and rearrange: \\(gkW^{2}+k^{2}U^{2}W^{2}=gkU^{2}\\).",
+              "work": "\\(gkW^{2}+k^{2}U^{2}W^{2}=gkU^{2}\\)"
+            },
+            {
+              "explain": "Divide every term by \\(gkU^{2}W^{2}\\).",
+              "work": "\\(\\dfrac{1}{U^{2}}+\\dfrac{k}{g}=\\dfrac{1}{W^{2}}\\)"
+            },
+            {
+              "explain": "Since \\(T^{2}=\\dfrac{g}{k}\\), \\(\\dfrac{1}{T^{2}}=\\dfrac{k}{g}\\). Substitute.",
+              "work": "\\(\\dfrac{1}{U^{2}}+\\dfrac{1}{T^{2}}=\\dfrac{1}{W^{2}}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show that",
+              "note": "Equal heights up and down; use T squared = g over k."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3473,6 +3901,326 @@
           "meta": {
             "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15bi",
+          "type": "mc",
+          "stem": "A 5 kg projectile is launched at a speed of 600 m/s at an angle of \\(30^\\circ\\) up from the horizontal. It experiences gravity of 50 Newtons and air resistance opposite to its direction of motion of \\(\\dfrac{5}{6}v\\) Newtons. Show that \\(\\ddot{x}=-\\dfrac{1}{6}\\dot{x}\\) and \\(\\ddot{y}=-10-\\dfrac{1}{6}\\dot{y}\\), where \\(x\\) is horizontal displacement and \\(y\\) is vertical displacement. Which equations of motion result from \\(F=ma\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\ddot{x}=-\\dfrac{5}{6}\\dot{x}\\) and \\(\\ddot{y}=-50-\\dfrac{5}{6}\\dot{y}\\)",
+            "\\(5\\ddot{x}=-\\dfrac{5}{6}\\dot{x}\\) and \\(5\\ddot{y}=50-\\dfrac{5}{6}\\dot{y}\\)",
+            "\\(5\\ddot{x}=-\\dfrac{5}{6}\\dot{x}\\) and \\(5\\ddot{y}=-50-\\dfrac{5}{6}\\dot{y}\\)",
+            "\\(5\\ddot{x}=\\dfrac{5}{6}\\dot{x}\\) and \\(5\\ddot{y}=-50+\\dfrac{5}{6}\\dot{y}\\)"
+          ],
+          "answer": 2,
+          "hint": "Apply \\(F=ma\\) separately in the horizontal and vertical directions. Air resistance opposes the motion: its components are \\(-\\dfrac{5}{6}\\dot{x}\\) and \\(-\\dfrac{5}{6}\\dot{y}\\). Gravity acts down.",
+          "steps": [
+            {
+              "explain": "Horizontal direction: the only force is the air resistance component, which opposes the motion, so it acts in the NEGATIVE \\(x\\) direction.",
+              "work": "\\(m\\ddot{x}=-\\dfrac{5}{6}\\dot{x},\\qquad m=5\\)"
+            },
+            {
+              "explain": "Divide by \\(m=5\\).",
+              "work": "\\(\\ddot{x}=-\\dfrac{1}{6}\\dot{x}\\)"
+            },
+            {
+              "explain": "Vertical direction: gravity (50 N) acts DOWN and the air resistance component \\(-\\dfrac{5}{6}\\dot{y}\\) opposes the motion.",
+              "work": "\\(5\\ddot{y}=-50-\\dfrac{5}{6}\\dot{y}\\)"
+            },
+            {
+              "explain": "Divide by 5.",
+              "work": "\\(\\ddot{y}=-10-\\dfrac{1}{6}\\dot{y}\\)"
+            },
+            {
+              "explain": "Option 1 has the wrong signs, option 2 forgets to divide by \\(m\\), and option 3 has gravity acting upwards.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "F = ma in each direction: gravity down, air resistance opposes motion."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15bii",
+          "type": "mc",
+          "stem": "Show that the initial velocities in the horizontal and vertical directions are \\(300\\sqrt{3}\\) m/s and 300 m/s respectively (launch speed 600 m/s at \\(30^\\circ\\) above the horizontal). Which resolution is correct?",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dot{x}(0)=600\\sin30^\\circ=300\\) and \\(\\dot{y}(0)=600\\cos30^\\circ=300\\sqrt{3}\\)",
+            "\\(\\dot{x}(0)=600\\cos60^\\circ=300\\sqrt{3}\\) and \\(\\dot{y}(0)=600\\sin60^\\circ=300\\)",
+            "\\(\\dot{x}(0)=600\\tan30^\\circ=200\\sqrt{3}\\) and \\(\\dot{y}(0)=600\\)",
+            "\\(\\dot{x}(0)=600\\cos30^\\circ=300\\sqrt{3}\\) and \\(\\dot{y}(0)=600\\sin30^\\circ=300\\)"
+          ],
+          "answer": 3,
+          "hint": "Resolve the velocity: the horizontal component is next to the \\(30^\\circ\\) angle (use cos), the vertical component is opposite it (use sin).",
+          "steps": [
+            {
+              "explain": "Draw a right-angled triangle with hypotenuse 600 m/s and the angle \\(30^\\circ\\) between it and the horizontal.",
+              "work": "\\(v=600,\\ \\theta=30^\\circ\\)"
+            },
+            {
+              "explain": "Horizontal component is ADJACENT to the angle: use cosine.",
+              "work": "\\(\\dot{x}(0)=600\\cos30^\\circ=600\\times\\dfrac{\\sqrt{3}}{2}=300\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Vertical component is OPPOSITE the angle: use sine.",
+              "work": "\\(\\dot{y}(0)=600\\sin30^\\circ=600\\times\\dfrac{1}{2}=300\\)"
+            },
+            {
+              "explain": "Option 2 uses the wrong trig function for the angle; option 1 swaps the components; option 3 uses tangent.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Adjacent side to the angle is cos, opposite side is sin."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15biii",
+          "type": "mc",
+          "stem": "Show that \\(\\dot{x}=300\\sqrt{3}\\,e^{-\\frac{t}{6}}\\) and \\(x=1800\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\). Given \\(\\ddot{x}=-\\dfrac{1}{6}\\dot{x}\\), which is the correct expression for \\(x\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=1800\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\)",
+            "\\(x=1800\\sqrt{3}\\,e^{-\\frac{t}{6}}\\)",
+            "\\(x=300\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\)",
+            "\\(x=1800\\sqrt{3}\\left(e^{-\\frac{t}{6}}-1\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\ddot{x}=\\dfrac{d\\dot{x}}{dt}\\), separate the variables and integrate to get \\(\\dot{x}\\); integrate again to get \\(x\\) and use \\(x(0)=0\\).",
+          "steps": [
+            {
+              "explain": "Write the acceleration as a derivative of velocity with \\(v=\\dot{x}\\).",
+              "work": "\\(\\dfrac{dv}{dt}=-\\dfrac{1}{6}v\\ \\Rightarrow\\ \\dfrac{dt}{dv}=-\\dfrac{6}{v}\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(v\\).",
+              "work": "\\(t=-6\\ln v+C\\)"
+            },
+            {
+              "explain": "Use \\(v=300\\sqrt{3}\\) when \\(t=0\\): \\(0=-6\\ln\\left(300\\sqrt{3}\\right)+C\\), so \\(C=6\\ln\\left(300\\sqrt{3}\\right)\\).",
+              "work": "\\(t=-6\\ln\\left(\\dfrac{v}{300\\sqrt{3}}\\right)\\)"
+            },
+            {
+              "explain": "Make \\(v\\) the subject: \\(-\\dfrac{t}{6}=\\ln\\dfrac{v}{300\\sqrt{3}}\\).",
+              "work": "\\(\\dot{x}=v=300\\sqrt{3}\\,e^{-\\frac{t}{6}}\\)"
+            },
+            {
+              "explain": "Integrate again with respect to \\(t\\).",
+              "work": "\\(x=\\int300\\sqrt{3}\\,e^{-\\frac{t}{6}}dt=-1800\\sqrt{3}\\,e^{-\\frac{t}{6}}+C\\)"
+            },
+            {
+              "explain": "Use \\(x=0\\) when \\(t=0\\): \\(0=-1800\\sqrt{3}+C\\), so \\(C=1800\\sqrt{3}\\).",
+              "work": "\\(x=1800\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Separate variables to get the velocity, then integrate again; use the starting conditions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15biv",
+          "type": "mc",
+          "stem": "Find the maximum possible horizontal range of the projectile (the range it can never quite reach). Use \\(x=1800\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(0\\) m",
+            "\\(1800\\sqrt{3}\\) m",
+            "\\(300\\sqrt{3}\\) m",
+            "\\(1800\\) m"
+          ],
+          "answer": 1,
+          "hint": "Let \\(t\\to\\infty\\) in the expression for \\(x\\) and see what \\(e^{-\\frac{t}{6}}\\) tends to.",
+          "steps": [
+            {
+              "explain": "The horizontal displacement is \\(x=1800\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\). The range it can never quite reach is the limit as \\(t\\to\\infty\\).",
+              "work": "\\(x=1800\\sqrt{3}\\left(1-e^{-\\frac{t}{6}}\\right)\\)"
+            },
+            {
+              "explain": "As \\(t\\to\\infty\\), \\(e^{-\\frac{t}{6}}\\to0\\).",
+              "work": "\\(e^{-\\frac{t}{6}}\\to0\\)"
+            },
+            {
+              "explain": "So \\(x\\to1800\\sqrt{3}\\times(1-0)\\).",
+              "work": "\\(x\\to1800\\sqrt{3}\\approx3118\\ \\text{m}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum possible horizontal range",
+              "note": "Let t tend to infinity: the exponential term tends to zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15bv",
+          "type": "mc",
+          "stem": "Show that \\(\\dot{y}=360e^{-\\frac{t}{6}}-60\\) and \\(y=-2160e^{-\\frac{t}{6}}-60t+2160\\). Given \\(\\ddot{y}=-10-\\dfrac{1}{6}\\dot{y}\\) and \\(\\dot{y}(0)=300\\), which is the correct expression for \\(y\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(y=-360e^{-\\frac{t}{6}}-60t+360\\)",
+            "\\(y=-2160e^{-\\frac{t}{6}}+60t+2160\\)",
+            "\\(y=-2160e^{-\\frac{t}{6}}-60t+2160\\)",
+            "\\(y=2160e^{-\\frac{t}{6}}-60t-2160\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(\\ddot{y}=\\dfrac{dv}{dt}=-\\dfrac{60+v}{6}\\), separate the variables, integrate for \\(v\\), then integrate again for \\(y\\).",
+          "steps": [
+            {
+              "explain": "Combine the terms: \\(\\ddot{y}=-10-\\dfrac{v}{6}=-\\dfrac{60+v}{6}\\) where \\(v=\\dot{y}\\).",
+              "work": "\\(\\dfrac{dv}{dt}=-\\dfrac{60+v}{6}\\ \\Rightarrow\\ \\dfrac{dt}{dv}=-\\dfrac{6}{60+v}\\)"
+            },
+            {
+              "explain": "Integrate with respect to \\(v\\).",
+              "work": "\\(t=-6\\ln(60+v)+C\\)"
+            },
+            {
+              "explain": "Use \\(v=300\\) at \\(t=0\\): \\(0=-6\\ln360+C\\), so \\(C=6\\ln360\\).",
+              "work": "\\(t=-6\\ln\\left(\\dfrac{60+v}{360}\\right)\\)"
+            },
+            {
+              "explain": "Make \\(v\\) the subject: \\(e^{-\\frac{t}{6}}=\\dfrac{60+v}{360}\\), so \\(v=360e^{-\\frac{t}{6}}-60\\).",
+              "work": "\\(\\dot{y}=360e^{-\\frac{t}{6}}-60\\)"
+            },
+            {
+              "explain": "Integrate again.",
+              "work": "\\(y=\\int\\left(360e^{-\\frac{t}{6}}-60\\right)dt=-2160e^{-\\frac{t}{6}}-60t+C\\)"
+            },
+            {
+              "explain": "Use \\(y=0\\) when \\(t=0\\): \\(0=-2160+C\\), so \\(C=2160\\).",
+              "work": "\\(y=-2160e^{-\\frac{t}{6}}-60t+2160\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Combine the 10 with v over 6 to get minus (60 + v) over 6; same method as for x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q15bvi",
+          "type": "mc",
+          "stem": "Find the maximum height of the projectile. (Use \\(\\dot{y}=360e^{-\\frac{t}{6}}-60\\) and \\(y=-2160e^{-\\frac{t}{6}}-60t+2160\\).)",
+          "difficulty": "hard",
+          "options": [
+            "\\(1800+360\\ln6\\approx2445\\) m",
+            "\\(360\\ln6\\approx645\\) m",
+            "\\(2160\\) m",
+            "\\(1800-360\\ln6\\approx1155\\) m"
+          ],
+          "answer": 3,
+          "hint": "The maximum height occurs when \\(\\dot{y}=0\\). Find that time \\(t\\), then substitute into \\(y\\).",
+          "steps": [
+            {
+              "explain": "The projectile is at its highest point when the vertical velocity is zero.",
+              "work": "\\(360e^{-\\frac{t}{6}}-60=0\\)"
+            },
+            {
+              "explain": "Solve for the exponential: \\(e^{-\\frac{t}{6}}=\\dfrac{60}{360}=\\dfrac{1}{6}\\).",
+              "work": "\\(e^{-\\frac{t}{6}}=\\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Take logs to find the time: \\(-\\dfrac{t}{6}=\\ln\\dfrac{1}{6}=-\\ln6\\), so \\(t=6\\ln6\\approx10.75\\) s.",
+              "work": "\\(t=6\\ln6\\approx10.75\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Substitute into \\(y\\), using \\(e^{-\\frac{t}{6}}=\\dfrac{1}{6}\\).",
+              "work": "\\(y=-2160\\times\\dfrac{1}{6}-60(6\\ln6)+2160=-360-360\\ln6+2160\\)"
+            },
+            {
+              "explain": "Simplify and evaluate (\\(\\ln6\\approx1.7918\\)).",
+              "work": "\\(y=1800-360\\ln6\\approx1154.97\\approx1155\\ \\text{m}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum height",
+              "note": "Set the vertical velocity to zero to find the time, then substitute into y."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
             "grade": "12",
             "origin": "teacher"
           }

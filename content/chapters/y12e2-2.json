@@ -757,6 +757,56 @@
             "sourceMarks": 3,
             "page": 11
           }
+        },
+        {
+          "id": "girr2020-y12e2-mc6",
+          "type": "mc",
+          "stem": "Which of the following is true?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\forall a\\in\\mathbb{Z}^{+}\\ \\exists b\\in\\mathbb{Z}^{+}:\\ b=a^{3}\\)",
+            "\\(\\forall a\\in\\mathbb{Z}^{+}\\ \\exists b\\in\\mathbb{Z}^{+}:\\ b=\\sqrt[3]{a}\\)",
+            "\\(\\forall a\\in\\mathbb{Z}^{+}\\ \\exists b\\in\\mathbb{Z}^{+}:\\ a=b^{3}\\)",
+            "\\(\\forall a\\ \\exists b\\in\\mathbb{Z}^{+}:\\ b=a^{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Read each statement in words and test it with a small number such as \\(a=2\\).",
+          "steps": [
+            {
+              "explain": "Read option A in words: \\(\\text{\"for every positive integer }a\\text{ there is a positive integer }b\\text{ with }b=a^{3}.\\text{\"}\\) Take \\(b=a^{3}\\): the cube of a positive integer is always a positive integer.",
+              "work": "\\(a=2\\Rightarrow b=8\\in\\mathbb{Z}^{+}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Test option B: \\(b=\\sqrt[3]{a}\\). For \\(a=2\\), \\(b=\\sqrt[3]{2}\\approx1.26\\) is not an integer, so B is false.",
+              "work": "\\(a=2\\Rightarrow b=\\sqrt[3]{2}\\notin\\mathbb{Z}^{+}\\)"
+            },
+            {
+              "explain": "Option C says every positive integer is a perfect cube \\(a=b^{3}\\). For \\(a=2\\) no integer \\(b\\) works, so C is false.",
+              "work": "\\(2=b^{3}\\ \\text{has no integer solution}\\)"
+            },
+            {
+              "explain": "Option D does not say what kind of number \\(a\\) is. If \\(a=-1\\) then \\(b=a^{3}=-1\\), which is not positive, so D is false.",
+              "work": "\\(a=-1\\Rightarrow b=-1\\notin\\mathbb{Z}^{+}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is true",
+              "note": "Test each statement with a small positive integer for a."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1057,6 +1107,60 @@
             "sourceQuestion": "Section II Q11(d)",
             "sourceMarks": 3,
             "page": 8
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13d",
+          "type": "mc",
+          "stem": "Prove for all integers \\(x,y\\) that if \\(10x+y\\) is divisible by 17, \\(3y-4x\\) is also divisible by 17. If \\(10x+y=17k\\), what is \\(3y-4x\\) in terms of \\(k\\) and \\(x\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(17(3-2x)\\)",
+            "\\(17(3k+2x)\\)",
+            "\\(51k-4x\\)",
+            "\\(17(3k-2x)\\)"
+          ],
+          "answer": 3,
+          "hint": "Make \\(y\\) the subject of \\(10x+y=17k\\), substitute into \\(3y-4x\\) and take out a factor of 17.",
+          "steps": [
+            {
+              "explain": "Let \\(10x+y=17k\\) where \\(k\\) is an integer (divisible by 17).",
+              "work": "\\(10x+y=17k\\)"
+            },
+            {
+              "explain": "Make \\(y\\) the subject.",
+              "work": "\\(y=17k-10x\\)"
+            },
+            {
+              "explain": "Substitute into \\(3y-4x\\).",
+              "work": "\\(3y-4x=3(17k-10x)-4x=51k-30x-4x=51k-34x\\)"
+            },
+            {
+              "explain": "Factorise out 17: \\(51=17\\times3\\) and \\(34=17\\times2\\).",
+              "work": "\\(51k-34x=17(3k-2x)\\)"
+            },
+            {
+              "explain": "Since \\(k\\) and \\(x\\) are integers, \\(3k-2x\\) is an integer, so \\(3y-4x\\) is a multiple of 17. (Notice the factor is \\(3k-2x\\), not \\(3-2x\\): the \\(k\\) from \\(17k\\) must stay.)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "divisible by 17",
+              "note": "Write the expression as 17 times an integer and substitute for y."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -1598,6 +1702,164 @@
             }
           ],
           "answer": "Assuming \\(\\log_2 5=\\frac{p}{q}\\) in lowest terms gives \\(2^p=5^q\\), an even number equal to an odd number. This contradiction proves \\(\\log_2 5\\) is irrational."
+        },
+        {
+          "id": "girr2020-y12e2-mc5",
+          "type": "mc",
+          "stem": "The contrapositive of \\(\\text{\\textquotedblleft}\\)If it barks it's a dog\\(\\text{\\textquotedblright}\\) is",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\text{\"If it doesn't bark it isn't a dog\"}\\)",
+            "\\(\\text{\"If it's a dog it will bark\"}\\)",
+            "\\(\\text{\"If it doesn't bark it's a dog\"}\\)",
+            "\\(\\text{\"If it isn't a dog it doesn't bark\"}\\)"
+          ],
+          "answer": 3,
+          "hint": "The contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\): swap the two parts AND negate both.",
+          "steps": [
+            {
+              "explain": "Identify \\(P\\) and \\(Q\\) in \\(P\\Rightarrow Q\\): \\(P=\\) \\(\\text{\"it barks\"}\\) and \\(Q=\\) \\(\\text{\"it's a dog\"}\\).",
+              "work": "\\(P:\\ \\text{it barks},\\quad Q:\\ \\text{it's a dog}\\)"
+            },
+            {
+              "explain": "The contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\): negate each part and swap them.",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P:\\ \\text{if it isn't a dog, it doesn't bark}\\)"
+            },
+            {
+              "explain": "Compare with the options: B is the converse (swap only). C and A do not negate both parts properly (A is the inverse, which negates but does not swap). Only D is \\(\\neg Q\\Rightarrow\\neg P\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "contrapositive",
+              "note": "Contrapositive: not Q implies not P."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13a",
+          "type": "mc",
+          "stem": "Prove \\(\\textit{by contraposition}\\) that if \\(n^{2}+6n\\) is even, then \\(n\\) is even. Which statement must be proved, and what does it show?",
+          "difficulty": "medium",
+          "options": [
+            "Prove: if \\(n\\) is odd then \\(n^{2}+6n\\) is odd; with \\(n=2k-1\\), \\(n^{2}+6n=2\\left(2k^{2}+4k-2\\right)-1\\), which is odd",
+            "Prove: if \\(n\\) is odd then \\(n^{2}+6n\\) is even; with \\(n=2k+1\\), \\(n^{2}+6n=2\\left(2k^{2}+5k+3\\right)\\), which is even",
+            "Prove: if \\(n^{2}+6n\\) is odd then \\(n\\) is even, by letting \\(n=2k\\)",
+            "Prove: if \\(n\\) is even then \\(n^{2}+6n\\) is even; with \\(n=2k\\), \\(n^{2}+6n=2\\left(2k^{2}+6k\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "The contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\). Here \\(\\neg Q\\) is '\\(n\\) is odd' and \\(\\neg P\\) is '\\(n^{2}+6n\\) is odd'.",
+          "steps": [
+            {
+              "explain": "Write the statement as \\(P\\Rightarrow Q\\): \\(P\\) is '\\(n^{2}+6n\\) is even' and \\(Q\\) is '\\(n\\) is even'.",
+              "work": "\\(P:\\ n^{2}+6n\\ \\text{even},\\quad Q:\\ n\\ \\text{even}\\)"
+            },
+            {
+              "explain": "The contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\): 'if \\(n\\) is odd, then \\(n^{2}+6n\\) is odd'. Proving this proves the original statement.",
+              "work": "\\(n\\ \\text{odd}\\ \\Rightarrow\\ n^{2}+6n\\ \\text{odd}\\)"
+            },
+            {
+              "explain": "Let \\(n\\) be odd: \\(n=2k-1\\) for some integer \\(k\\). Substitute.",
+              "work": "\\(n^{2}+6n=(2k-1)^{2}+6(2k-1)\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\(=4k^{2}-4k+1+12k-6=4k^{2}+8k-5\\)"
+            },
+            {
+              "explain": "Write it as \\(2\\times(\\text{integer})-1\\) to show it is odd: \\(4k^{2}+8k-5=2\\left(2k^{2}+4k-2\\right)-1\\).",
+              "work": "\\(=2\\left(2k^{2}+4k-2\\right)-1\\ \\text{which is odd}\\)"
+            },
+            {
+              "explain": "So if \\(n\\) is odd then \\(n^{2}+6n\\) is odd. By contraposition, if \\(n^{2}+6n\\) is even then \\(n\\) is even.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by contraposition",
+              "note": "Prove the contrapositive: not Q implies not P."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13b",
+          "type": "mc",
+          "stem": "Prove \\(\\textit{by contradiction}\\) that \\(\\log_{3}11\\) is irrational. Which is the correct way to start and finish the proof?",
+          "difficulty": "hard",
+          "options": [
+            "Assume \\(\\log_{3}11=\\dfrac{p}{q}\\). Then \\(3^{p}=11^{q}\\), which is true when \\(p=q\\)",
+            "Assume \\(\\log_{3}11=\\dfrac{p}{q}\\) with \\(p,q\\) integers. Then \\(3^{p}=11^{q}\\), impossible by unique prime factorisation (3 and 11 are different primes)",
+            "Assume \\(\\log_{3}11\\) is irrational. Then \\(3^{p}=11^{q}\\), which is impossible",
+            "Assume \\(\\log_{3}11=\\dfrac{p}{q}\\). Then \\(3^{q}=11^{p}\\), which is always true"
+          ],
+          "answer": 1,
+          "hint": "Assume the OPPOSITE of what you want to prove (that it is rational), write it as \\(\\dfrac{p}{q}\\), convert the logarithm to an index equation and find a contradiction.",
+          "steps": [
+            {
+              "explain": "A proof by contradiction assumes the opposite. Assume \\(\\log_{3}11\\) is RATIONAL.",
+              "work": "\\(\\log_{3}11=\\dfrac{p}{q},\\quad p,q\\in\\mathbb{Z},\\ q\\ne0\\)"
+            },
+            {
+              "explain": "Convert the logarithm to index form: \\(\\log_{3}11=\\dfrac{p}{q}\\) means \\(3^{\\frac{p}{q}}=11\\).",
+              "work": "\\(3^{\\frac{p}{q}}=11\\)"
+            },
+            {
+              "explain": "Raise both sides to the power \\(q\\) (so that there are no fractional powers).",
+              "work": "\\(3^{p}=11^{q}\\)"
+            },
+            {
+              "explain": "The left side is a power of 3 and the right side is a power of 11. By the Fundamental Theorem of Arithmetic, every whole number has exactly ONE prime factorisation, but \\(3^{p}\\) has only the prime 3 and \\(11^{q}\\) only the prime 11 (with \\(p,q>0\\)).",
+              "work": "\\(3^{p}\\ne11^{q}\\ \\text{(contradiction)}\\)"
+            },
+            {
+              "explain": "The assumption led to a contradiction, so \\(\\log_{3}11\\) is irrational.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by contradiction",
+              "note": "Assume rational p over q, rewrite as 3 to the p equals 11 to the q, use prime factorisation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2279,6 +2541,214 @@
             "sourceQuestion": "Section II Q15(a)",
             "sourceMarks": 3,
             "page": 12
+          }
+        },
+        {
+          "id": "girr2020-y12e2-mc7",
+          "type": "mc",
+          "stem": "If \\(a\\) and \\(b\\) are \\(\\textit{entirely imaginary}\\) then which of the following is true?",
+          "difficulty": "hard",
+          "options": [
+            "\\(a^{2}+b^{2}\\ge 2ab\\)",
+            "\\(a^{2}+b^{2}\\le 2ab\\)",
+            "\\(a^{2}+b^{2}=2ab\\)",
+            "Any of the above can happen."
+          ],
+          "answer": 1,
+          "hint": "Write \\(a=xi\\) and \\(b=yi\\) with \\(x,y\\) real, then compare \\(a^{2}+b^{2}\\) with \\(2ab\\).",
+          "steps": [
+            {
+              "explain": "Entirely imaginary means \\(a=xi\\) and \\(b=yi\\) with \\(x\\) and \\(y\\) real numbers.",
+              "work": "\\(a=xi,\\quad b=yi,\\quad x,y\\in\\mathbb{R}\\)"
+            },
+            {
+              "explain": "Work out \\(a^{2}+b^{2}\\) using \\(i^{2}=-1\\).",
+              "work": "\\(a^{2}+b^{2}=(xi)^{2}+(yi)^{2}=-x^{2}-y^{2}=-(x^{2}+y^{2})\\)"
+            },
+            {
+              "explain": "Work out \\(2ab\\).",
+              "work": "\\(2ab=2(xi)(yi)=2xy\\,i^{2}=-2xy\\)"
+            },
+            {
+              "explain": "Use the real inequality \\(x^{2}+y^{2}\\ge 2xy\\) (since \\((x-y)^{2}\\ge0\\)). Multiplying both sides by \\(-1\\) REVERSES the inequality.",
+              "work": "\\(x^{2}+y^{2}\\ge 2xy\\ \\Rightarrow\\ -(x^{2}+y^{2})\\le -2xy\\)"
+            },
+            {
+              "explain": "So \\(a^{2}+b^{2}\\le 2ab\\) always (equal only when \\(x=y\\)).",
+              "work": "\\(a^{2}+b^{2}\\le 2ab\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "entirely imaginary",
+              "note": "Entirely imaginary numbers square to negatives, which reverses the inequality."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13ei",
+          "type": "mc",
+          "stem": "Prove \\(a^{2}+b^{2}\\ge2ab\\) for all \\(a,b\\in\\mathbb{R}\\). Which expression is always \\(\\ge0\\) and leads to this result?",
+          "difficulty": "easy",
+          "options": [
+            "\\((a-b)^{2}\\ge0\\)",
+            "\\((a+b)^{2}\\ge0\\), so \\(a^{2}+b^{2}\\ge-2ab\\)",
+            "\\(a^{2}-b^{2}\\ge0\\)",
+            "\\((a-b)^{2}\\le0\\)"
+          ],
+          "answer": 0,
+          "hint": "A real number squared is never negative. Which square, when expanded, contains \\(a^{2}+b^{2}-2ab\\)?",
+          "steps": [
+            {
+              "explain": "Start with the square of the difference, which is never negative for real \\(a,b\\).",
+              "work": "\\((a-b)^{2}\\ge0\\)"
+            },
+            {
+              "explain": "Expand the square.",
+              "work": "\\(a^{2}-2ab+b^{2}\\ge0\\)"
+            },
+            {
+              "explain": "Add \\(2ab\\) to both sides.",
+              "work": "\\(a^{2}+b^{2}\\ge2ab\\)"
+            },
+            {
+              "explain": "Equality holds only when \\(a=b\\). (Using \\((a+b)^{2}\\) would give \\(a^{2}+b^{2}\\ge-2ab\\), a different inequality.)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove",
+              "note": "Start from (a minus b) squared is at least zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13eii",
+          "type": "mc",
+          "stem": "Hence or otherwise prove \\(a^{4}+b^{4}+c^{4}+d^{4}\\ge4abcd\\) for all \\(a,b,c,d\\in\\mathbb{R}\\). Which chain of inequalities proves it?",
+          "difficulty": "medium",
+          "options": [
+            "\\(a^{4}+b^{4}\\ge2a^{2}b^{2}\\) and \\(c^{4}+d^{4}\\ge2c^{2}d^{2}\\), so the sum \\(\\ge2\\left(a^{2}b^{2}-c^{2}d^{2}\\right)\\)",
+            "\\(a^{4}+b^{4}\\ge2a^{2}b^{2}\\) and \\(c^{4}+d^{4}\\ge2c^{2}d^{2}\\), so the sum \\(\\ge2\\left(a^{2}b^{2}+c^{2}d^{2}\\right)\\ge2(2abcd)=4abcd\\)",
+            "\\(a^{4}+b^{4}\\ge2ab\\) and \\(c^{4}+d^{4}\\ge2cd\\), so the sum \\(\\ge2ab+2cd\\ge4abcd\\)",
+            "\\(a^{4}+b^{4}\\ge a^{2}b^{2}\\) and \\(c^{4}+d^{4}\\ge c^{2}d^{2}\\), so the sum \\(\\ge2abcd\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply part (i) with \\(a\\to a^{2}\\), \\(b\\to b^{2}\\) (and \\(c\\to c^{2}\\), \\(d\\to d^{2}\\)), then use part (i) once more on \\(a^{2}b^{2}+c^{2}d^{2}\\).",
+          "steps": [
+            {
+              "explain": "Apply part (i) \\(x^{2}+y^{2}\\ge2xy\\) to \\(x=a^{2}\\), \\(y=b^{2}\\).",
+              "work": "\\(a^{4}+b^{4}\\ge2a^{2}b^{2}\\)"
+            },
+            {
+              "explain": "Apply it again to \\(x=c^{2}\\), \\(y=d^{2}\\).",
+              "work": "\\(c^{4}+d^{4}\\ge2c^{2}d^{2}\\)"
+            },
+            {
+              "explain": "Add the two inequalities.",
+              "work": "\\(a^{4}+b^{4}+c^{4}+d^{4}\\ge2\\left(a^{2}b^{2}+c^{2}d^{2}\\right)\\)"
+            },
+            {
+              "explain": "Apply part (i) once more to \\(x=ab\\), \\(y=cd\\): \\(a^{2}b^{2}+c^{2}d^{2}\\ge2abcd\\).",
+              "work": "\\(a^{2}b^{2}+c^{2}d^{2}\\ge2(ab)(cd)=2abcd\\)"
+            },
+            {
+              "explain": "Substitute into the previous line.",
+              "work": "\\(a^{4}+b^{4}+c^{4}+d^{4}\\ge2(2abcd)=4abcd\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence or otherwise",
+              "note": "Use the previous result twice, then once more on a squared b squared plus c squared d squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13eiii",
+          "type": "mc",
+          "stem": "Hence or otherwise prove \\(\\dfrac{w+x+y+z}{4}\\ge\\sqrt[4]{wxyz}\\) for all \\(w,x,y,z>0\\). Which substitution into the result \\(a^{4}+b^{4}+c^{4}+d^{4}\\ge4abcd\\) proves it?",
+          "difficulty": "medium",
+          "options": [
+            "Let \\(w=a\\), \\(x=b\\), \\(y=c\\), \\(z=d\\) (no substitution needed)",
+            "Let \\(w=a^{4}\\), \\(x=b^{4}\\), \\(y=c^{4}\\), \\(z=d^{4}\\) and allow \\(w,x,y,z<0\\)",
+            "Let \\(w=a^{4}\\), \\(x=b^{4}\\), \\(y=c^{4}\\), \\(z=d^{4}\\) (so \\(a=\\sqrt[4]{w}\\), etc.)",
+            "Let \\(w=a^{2}\\), \\(x=b^{2}\\), \\(y=c^{2}\\), \\(z=d^{2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Make the left side of the previous inequality look like \\(w+x+y+z\\): let each of \\(w,x,y,z\\) be a fourth power.",
+          "steps": [
+            {
+              "explain": "In \\(a^{4}+b^{4}+c^{4}+d^{4}\\ge4abcd\\), replace each fourth power by a new letter: \\(w=a^{4}\\), \\(x=b^{4}\\), \\(y=c^{4}\\), \\(z=d^{4}\\). Since \\(w,x,y,z>0\\), the fourth roots exist and are real.",
+              "work": "\\(a=\\sqrt[4]{w},\\ b=\\sqrt[4]{x},\\ c=\\sqrt[4]{y},\\ d=\\sqrt[4]{z}\\)"
+            },
+            {
+              "explain": "Substitute into the inequality.",
+              "work": "\\(w+x+y+z\\ge4\\sqrt[4]{w}\\,\\sqrt[4]{x}\\,\\sqrt[4]{y}\\,\\sqrt[4]{z}\\)"
+            },
+            {
+              "explain": "Combine the roots: \\(\\sqrt[4]{w}\\sqrt[4]{x}\\sqrt[4]{y}\\sqrt[4]{z}=\\sqrt[4]{wxyz}\\).",
+              "work": "\\(w+x+y+z\\ge4\\sqrt[4]{wxyz}\\)"
+            },
+            {
+              "explain": "Divide both sides by 4.",
+              "work": "\\(\\dfrac{w+x+y+z}{4}\\ge\\sqrt[4]{wxyz}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence or otherwise",
+              "note": "Let each letter be a fourth power, then divide by 4 (the AM-GM idea)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -3028,6 +3498,64 @@
             "sourceQuestion": "Section II Q15(c)(iii)",
             "sourceMarks": 1,
             "page": 12
+          }
+        },
+        {
+          "id": "girr2020-y12e2-q13c",
+          "type": "mc",
+          "stem": "Prove by induction that \\(3^{n}\\ge n^{2}\\) for all positive integers \\(n\\ge1\\). In the inductive step, assuming \\(3^{k}\\ge k^{2}\\), \\(3^{k+1}\\ge 3k^{2}\\), and which condition on \\(k\\) makes \\(3k^{2}\\ge(k+1)^{2}\\) true?",
+          "difficulty": "hard",
+          "options": [
+            "\\(k\\ge3\\) only",
+            "\\(k\\le2\\)",
+            "\\(k\\ge2\\) (so check \\(n=1\\) and \\(n=2\\) directly)",
+            "All \\(k\\ge1\\)"
+          ],
+          "answer": 2,
+          "hint": "Solve \\(3k^{2}\\ge(k+1)^{2}\\), i.e. \\(2k^{2}-2k-1\\ge0\\), and see which integers \\(k\\) satisfy it. Check small cases separately.",
+          "steps": [
+            {
+              "explain": "Step 1: show it is true for \\(n=1\\).",
+              "work": "\\(3^{1}=3\\ge1^{2}=1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Step 2: assume true for \\(n=k\\), \\(k\\ge1\\): \\(3^{k}\\ge k^{2}\\).",
+              "work": "\\(3^{k}\\ge k^{2}\\)"
+            },
+            {
+              "explain": "Step 3: prove it for \\(n=k+1\\). Multiply the assumption by 3.",
+              "work": "\\(3^{k+1}=3\\cdot3^{k}\\ge3k^{2}\\)"
+            },
+            {
+              "explain": "We need \\(3k^{2}\\ge(k+1)^{2}\\). Rearrange: \\(3k^{2}-(k+1)^{2}\\ge0\\).",
+              "work": "\\(3k^{2}-k^{2}-2k-1\\ge0\\ \\Rightarrow\\ 2k^{2}-2k-1\\ge0\\)"
+            },
+            {
+              "explain": "Solve \\(2k^{2}-2k-1=0\\): \\(k=\\dfrac{1\\pm\\sqrt{3}}{2}\\approx1.37\\) or \\(-0.37\\). The parabola is \\(\\ge0\\) for \\(k\\ge\\dfrac{1+\\sqrt{3}}{2}\\approx1.37\\), so for all INTEGERS \\(k\\ge2\\). (For \\(k=1\\): \\(3\\ge4\\) is false, so \\(n=2\\) must be checked separately: \\(9\\ge4\\).)",
+              "work": "\\(k\\ge2:\\ \\ 3^{k+1}\\ge3k^{2}\\ge(k+1)^{2}\\)"
+            },
+            {
+              "explain": "So the statement is true for \\(n=1\\) and \\(n=2\\), and if it is true for \\(n=k\\) (\\(k\\ge2\\)) it is true for \\(n=k+1\\). By induction it is true for all \\(n\\ge1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by induction",
+              "note": "Find when 3 k squared is at least (k + 1) squared; small k need a direct check."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
