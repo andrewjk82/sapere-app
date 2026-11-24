@@ -160,6 +160,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "girr2020-y12e2-q12b",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{1}{\\sin x-\\cos x-1}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln\\left|\\tan\\dfrac{x}{2}+1\\right|+C\\)",
+            "\\(2\\ln\\left|\\tan\\dfrac{x}{2}-1\\right|+C\\)",
+            "\\(\\ln\\left|\\tan\\dfrac{x}{2}-1\\right|+C\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left|\\tan\\dfrac{x}{2}-1\\right|+C\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the \\(t\\)-substitution \\(t=\\tan\\dfrac{x}{2}\\): \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\), \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\).",
+          "steps": [
+            {
+              "explain": "Let \\(t=\\tan\\dfrac{x}{2}\\). Then \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\), \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\) and \\(dx=\\dfrac{2}{1+t^{2}}dt\\).",
+              "work": "\\(\\sin x=\\dfrac{2t}{1+t^{2}},\\ \\cos x=\\dfrac{1-t^{2}}{1+t^{2}},\\ dx=\\dfrac{2\\,dt}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Simplify the denominator over \\(1+t^{2}\\). Write \\(1=\\dfrac{1+t^{2}}{1+t^{2}}\\).",
+              "work": "\\(\\sin x-\\cos x-1=\\dfrac{2t-(1-t^{2})-(1+t^{2})}{1+t^{2}}=\\dfrac{2t-2}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Substitute into the integral and cancel the factor \\(1+t^{2}\\).",
+              "work": "\\(\\int\\dfrac{1+t^{2}}{2t-2}\\cdot\\dfrac{2}{1+t^{2}}\\,dt=\\int\\dfrac{2}{2t-2}\\,dt=\\int\\dfrac{1}{t-1}\\,dt\\)"
+            },
+            {
+              "explain": "Integrate and substitute back \\(t=\\tan\\dfrac{x}{2}\\).",
+              "work": "\\(=\\ln|t-1|+C=\\ln\\left|\\tan\\dfrac{x}{2}-1\\right|+C\\)"
+            },
+            {
+              "explain": "Check by differentiating: using the chain rule, the derivative simplifies to the original integrand (shown below). A factor of one half in front of the logarithm would NOT give the right derivative.",
+              "work": "\\(\\dfrac{d}{dx}\\ln\\left|\\tan\\dfrac{x}{2}-1\\right|=\\dfrac{\\dfrac{1}{2}\\sec^{2}\\dfrac{x}{2}}{\\tan\\dfrac{x}{2}-1}=\\dfrac{1}{\\sin x-(1+\\cos x)}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "t-substitution; simplify the denominator carefully."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
+            "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
