@@ -188,6 +188,11 @@ bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say
 four-paper set has **35 questions** — verbatim, new hard, common mistakes and multi-step. If the bank cannot
 supply 35 distinct verbatim questions, say so and fill from related chapters or report the shortfall.
 
+**Sub-questions get their own answer space (2026-11-24, user feedback):** every "(a) (b) (c)" sub-question on a
+printable paper must be a separate `parts` entry so it has its own working lines — never leave "(a)…(b)…(c)…" inline
+in one stem with a single answer area. Author new questions with `parts: [{pm, t}]`; the build scripts also run
+`splitparts.js` (scratch helper) to convert any leftover inline "(a) … (b) …" stems into parts, sharing the marks.
+
 **Variety within a paper (2026-11-24, user feedback on Y9 Ch13 — applies to every newly authored paper):** the
 digits-masked duplicate scan only catches identical stems. Also keep **at most 3 questions of any one problem type**
 per paper (e.g. bearings, elevation/depression, "find a side/angle from a given triangle", slope/ramp/roof word
