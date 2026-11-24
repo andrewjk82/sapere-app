@@ -3670,6 +3670,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A train travelling at \\(100\\text{ km/h}\\) catches up to a car travelling at \\(64\\text{ km/h}\\) on a road parallel to the railway track. If it takes \\(40\\text{ seconds}\\) for the whole train to pass the driver of the car, what is the length of the train?",
+          "options": [
+            "\\(200\\text{ m}\\)",
+            "\\(360\\text{ m}\\)",
+            "\\(400\\text{ m}\\)",
+            "\\(440\\text{ m}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the relative speed of the train compared to the car (100 - 64 = 36 km/h), convert 36 km/h to m/s (divide by 3.6 -> 10 m/s), and multiply by 40 seconds!",
+          "keyPoints": [
+            {
+              "text": "40\\text{ seconds}",
+              "note": "Relative speed = 100 - 64 = 36 km/h = 10 m/s; Length = 10 m/s × 40 s."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the relative speed of the train passing the car in the same direction: \\(100 - 64 = 36\\text{ km/h}\\).",
+              "work": "\\(\\text{Relative speed} = 100 - 64 = 36\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Convert \\(36\\text{ km/h}\\) to metres per second by dividing by \\(3.6\\) (since \\(36\\,000\\text{ m} \\div 3600\\text{ s} = 10\\text{ m/s}\\)).",
+              "work": "\\(36\\text{ km/h} = 10\\text{ m/s}\\)"
+            },
+            {
+              "explain": "Multiply relative speed by time (\\(40\\text{ s}\\)) to find the length of the train.",
+              "work": "\\(\\text{Length} = 10\\text{ m/s} \\times 40\\text{ s} = 400\\text{ m}\\)"
+            },
+            {
+              "explain": "Therefore, the length of the train is \\(400\\text{ m}\\).",
+              "work": "\\(\\text{Answer: } 400\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4896,6 +4936,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Reduce the ratio \\(12 : 18\\) to its simplest form.",
+          "options": [
+            "\\(2 : 3\\)",
+            "\\(3 : 2\\)",
+            "\\(4 : 6\\)",
+            "\\(6 : 9\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both sides by their HCF (6).",
+          "keyPoints": [
+            {
+              "text": "Reduce the",
+              "note": "Apply the core concept carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or first step.",
+              "work": "\\((12 \\div 6) : (18 \\div 6)\\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(2 : 3\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 2 : 3\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2 : 3\\).",
+              "work": "\\(2 : 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the scale \\(1\\text{ cm} : 4\\text{ m}\\) to a simplified ratio.",
+          "options": [
+            "\\(1 : 4\\)",
+            "\\(1 : 40\\)",
+            "\\(1 : 400\\)",
+            "\\(1 : 4000\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 4 m to centimetres (4 × 100 = 400 cm) and drop the units!",
+          "keyPoints": [
+            {
+              "text": "Convert the",
+              "note": "Apply the core concept carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or first step.",
+              "work": "\\(4\\text{ m} = 400\\text{ cm}\\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(1 : 400\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } 1 : 400\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1 : 400\\).",
+              "work": "\\(1 : 400\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(2\\dfrac{1}{2} : 7\\) in its simplest form.",
+          "options": [
+            "\\(5 : 14\\)",
+            "\\(5 : 7\\)",
+            "\\(2 : 7\\)",
+            "\\(10 : 14\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert 2 1/2 to 5/2, then multiply BOTH sides of the ratio by 2 to clear the fraction!",
+          "keyPoints": [
+            {
+              "text": "Express the ratio",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\dfrac{5}{2} : 7\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(\\left(2 \\times \\dfrac{5}{2}\\right) : (2 \\times 7) = 5 : 14\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 5 : 14\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5 : 14\\).",
+              "work": "\\(5 : 14\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5711,6 +5871,126 @@
             {
               "explain": "Check: before \\(360 : 270 = 4 : 3\\); after adding \\(60\\) girls, \\(360 : 330 = 12 : 11\\). Exact!",
               "work": "\\(\\text{Answer: } 360\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Divide \\(\\$30\\) in the ratio of \\(1 : 5\\).",
+          "options": [
+            "\\(\\$5 : \\$25\\)",
+            "\\(\\$6 : \\$24\\)",
+            "\\(\\$10 : \\$20\\)",
+            "\\(\\$1 : \\$29\\)"
+          ],
+          "answer": 0,
+          "hint": "Total parts = 1 + 5 = 6. Divide $30 by 6 ($5 per part), then multiply by 1 and 5!",
+          "keyPoints": [
+            {
+              "text": "Divide \\(\\$30\\)",
+              "note": "Apply the core concept carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or first step.",
+              "work": "\\(1\\text{ part} = \\dfrac{\\$30}{6} = \\$5\\)"
+            },
+            {
+              "explain": "Compute the exact result.",
+              "work": "\\(1 \\times \\$5 : 5 \\times \\$5 = \\$5 : \\$25\\)"
+            },
+            {
+              "explain": "Verify your answer.",
+              "work": "\\(\\text{Verified: } \\$5 : \\$25\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(\\$5 : \\$25\\).",
+              "work": "\\(\\$5 : \\$25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The lengths of a triangle are in the ratio \\(5 : 7 : 12\\). If the perimeter of the triangle is \\(72\\text{ cm}\\), what is the length of the longest side?",
+          "options": [
+            "\\(15\\text{ cm}\\)",
+            "\\(21\\text{ cm}\\)",
+            "\\(36\\text{ cm}\\)",
+            "\\(48\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the ratio parts (5 + 7 + 12 = 24 parts). Divide 72 cm by 24 (= 3 cm per part), then multiply by 12!",
+          "keyPoints": [
+            {
+              "text": "The lengths of",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\text{Total parts} = 5 + 7 + 12 = 24\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(\\dfrac{12}{24} \\times 72 = 36\\text{ cm}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 36\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(36\\text{ cm}\\).",
+              "work": "\\(36\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The ratio, by weight, of flour to cocoa powder in a chocolate cupcake mixture is \\(7 : 2\\). How many grams of cocoa powder is required if \\(84\\text{ grams}\\) of flour are used?",
+          "options": [
+            "\\(12\\text{ g}\\)",
+            "\\(24\\text{ g}\\)",
+            "\\(28\\text{ g}\\)",
+            "\\(42\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "7 parts = 84 g, so 1 part = 84 ÷ 7 = 12 g. Multiply by cocoa's 2 parts!",
+          "keyPoints": [
+            {
+              "text": "The ratio, by",
+              "note": "Work step by step and check units."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the key relationship or unit conversion.",
+              "work": "\\(1\\text{ part} = 84 \\div 7 = 12\\text{ g}\\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(2 \\times 12 = 24\\text{ g}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 24\\text{ g}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(24\\text{ g}\\).",
+              "work": "\\(24\\text{ g}\\)"
             }
           ],
           "timeLimit": 60,
@@ -8128,6 +8408,126 @@
             {
               "explain": "Therefore, \\(6\\text{ L/h} = 100\\text{ mL/min}\\).",
               "work": "\\(\\text{Answer: } 100\\text{ mL/min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A car uses \\(50\\text{ L}\\) of petrol to travel \\(475\\text{ km}\\). Find the fuel consumption in \\(\\text{km/L}\\).",
+          "options": [
+            "\\(9.5\\text{ km/L}\\)",
+            "\\(9.0\\text{ km/L}\\)",
+            "\\(10.5\\text{ km/L}\\)",
+            "\\(42.5\\text{ km/L}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide kilometres (475) by litres (50): 475 ÷ 50 = 9.5 km/L.",
+          "keyPoints": [
+            {
+              "text": "A car uses",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(475\\text{ km} \\div 50\\text{ L}\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(9.5\\text{ km/L}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 9.5\\text{ km/L}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(9.5\\text{ km/L}\\).",
+              "work": "\\(9.5\\text{ km/L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q15b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A car travels \\(9.5\\text{ km/L}\\) and its fuel tank holds a maximum of \\(60\\text{ L}\\) of petrol. How far can it travel if the tank is full?",
+          "options": [
+            "\\(540\\text{ km}\\)",
+            "\\(570\\text{ km}\\)",
+            "\\(600\\text{ km}\\)",
+            "\\(510\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 60 L by 9.5 km/L!",
+          "keyPoints": [
+            {
+              "text": "A car travels",
+              "note": "Follow each calculation step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the formula, substitution, or ratio.",
+              "work": "\\(\\text{Distance} = 60 \\times 9.5\\)"
+            },
+            {
+              "explain": "Evaluate to obtain the exact result.",
+              "work": "\\(570\\text{ km}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 570\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(570\\text{ km}\\).",
+              "work": "\\(570\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4a-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\(108\\text{ mL/min}\\) to \\(\\text{L/h}\\).",
+          "options": [
+            "\\(0.648\\text{ L/h}\\)",
+            "\\(6.48\\text{ L/h}\\)",
+            "\\(64.8\\text{ L/h}\\)",
+            "\\(1.8\\text{ L/h}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by 60 to get mL per hour (6480 mL/h), then divide by 1000 to convert mL to litres!",
+          "keyPoints": [
+            {
+              "text": "Convert \\(108\\text{ mL/min}\\)",
+              "note": "Work step by step and check units."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the key relationship or unit conversion.",
+              "work": "\\(108 \\times 60 = 6480\\text{ mL/h}\\)"
+            },
+            {
+              "explain": "Complete the calculation.",
+              "work": "\\(6480 \\div 1000 = 6.48\\text{ L/h}\\)"
+            },
+            {
+              "explain": "Verify your result.",
+              "work": "\\(\\text{Verified: } 6.48\\text{ L/h}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(6.48\\text{ L/h}\\).",
+              "work": "\\(6.48\\text{ L/h}\\)"
             }
           ],
           "timeLimit": 60,
