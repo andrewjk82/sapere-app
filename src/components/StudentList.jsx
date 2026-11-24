@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Plus, MoreVertical, Mail, BookOpen, AlertCircle, CheckCircle, Trophy, RefreshCw, BellRing, RotateCcw } from 'lucide-react';
 import { studentService } from '../services/studentService';
-import { db } from '../firebase/config';
+import { db, requestForcedLongPolling, wantsForcedLongPolling } from '../firebase/config';
 import { collection, doc, getDoc, getDocs, setDoc, writeBatch } from 'firebase/firestore';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import useLiveDoc from '../hooks/useLiveDoc';
@@ -169,6 +169,12 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       await onRefreshStudents(false, true);
     } catch (err) {
       console.error('Refresh failed:', err);
+      // Installed app (no address bar): switch this device to the slower but sturdier connection and reload.
+      if (!wantsForcedLongPolling() && window.confirm('Sync failed — this network may be blocking the data connection.\n\nSwitch to the compatibility connection and reload?')) {
+        requestForcedLongPolling();
+        window.location.reload();
+        return;
+      }
       window.alert('Sync failed — the student list could not be fully loaded. Check the connection and try again.');
     } finally {
       setIsRefreshing(false);

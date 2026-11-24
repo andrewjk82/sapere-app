@@ -43,6 +43,7 @@ export const wantsForcedLongPolling = () => {
   } catch { return false; }
 };
 export const requestForcedLongPolling = () => { try { window.localStorage.setItem(LONG_POLL_KEY, '1'); } catch { /* ignore */ } };
+export const clearForcedLongPolling = () => { try { window.localStorage.removeItem(LONG_POLL_KEY); } catch { /* ignore */ } };
 const forceLongPolling = wantsForcedLongPolling();
 
 let firestoreDb;

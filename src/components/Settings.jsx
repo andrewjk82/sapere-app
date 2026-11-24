@@ -3,7 +3,7 @@ import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Came
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useProfile } from '../context/ProfileContext';
-import { db, requestNotificationPermission } from '../firebase/config';
+import { db, requestNotificationPermission, wantsForcedLongPolling, requestForcedLongPolling, clearForcedLongPolling } from '../firebase/config';
 import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import FilmingGuidelinesModal from './FilmingGuidelinesModal';
@@ -494,6 +494,26 @@ const Settings = () => {
               </div>
             </section>
           )}
+
+          <section className="app-panel page-card" style={{ marginTop: '24px' }}>
+            <div className="page-card__header">
+              <h3>Connection</h3>
+            </div>
+            <p className="settings-muted" style={{ marginTop: 8 }}>
+              If lists, lessons or sync keep failing on this device (some school or centre Wi-Fi blocks the data connection), switch to the compatibility connection. It is a little slower but gets through.
+            </p>
+            <div className="settings-actions" style={{ marginTop: 12 }}>
+              {wantsForcedLongPolling() ? (
+                <button type="button" className="app-button" onClick={() => { clearForcedLongPolling(); window.location.reload(); }}>
+                  Compatibility connection is ON — turn off
+                </button>
+              ) : (
+                <button type="button" className="app-button app-button--primary" onClick={() => { requestForcedLongPolling(); window.location.reload(); }}>
+                  Use compatibility connection
+                </button>
+              )}
+            </div>
+          </section>
 
           <section className="app-panel page-card" style={{ marginTop: '24px' }}>
             <div className="page-card__header">
