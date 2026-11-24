@@ -699,6 +699,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "caringbah2020-y11e1-q9",
+          "type": "mc",
+          "stem": "Which parametric equations represent a circle?",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=2t\\) and \\(y=t^{2}\\)",
+            "\\(x=2t\\) and \\(y=t+2\\)",
+            "\\(x=2\\cos(t)\\) and \\(y=\\sin(t)\\)",
+            "\\(x=2\\cos(t)+2\\sin(t)\\) and \\(y=2\\cos(t)-2\\sin(t)\\)"
+          ],
+          "answer": 3,
+          "hint": "A circle centred at the origin satisfies \\(x^{2}+y^{2}=r^{2}\\) with the same \\(r\\) for every \\(t\\). ELIMINATE the parameter \\(t\\) in each option.",
+          "steps": [
+            {
+              "explain": "A: \\(t=\\dfrac{x}{2}\\Rightarrow y=\\dfrac{x^{2}}{4}\\), a PARABOLA. B: \\(t=\\dfrac{x}{2}\\Rightarrow y=\\dfrac{x}{2}+2\\), a LINE.",
+              "work": "\\(\\text{A: }y=\\dfrac{x^{2}}{4},\\qquad\\text{B: }y=\\dfrac{x}{2}+2\\)"
+            },
+            {
+              "explain": "C: \\(\\dfrac{x}{2}=\\cos t\\) and \\(y=\\sin t\\), so \\(\\left(\\dfrac{x}{2}\\right)^{2}+y^{2}=1\\): an ELLIPSE (the \\(x\\)-radius is 2 but the \\(y\\)-radius is 1).",
+              "work": "\\(\\dfrac{x^{2}}{4}+y^{2}=1\\)"
+            },
+            {
+              "explain": "D: square and add. The cross terms \\(\\pm8\\sin t\\cos t\\) cancel.",
+              "work": "\\(x^{2}+y^{2}=(2\\cos t+2\\sin t)^{2}+(2\\cos t-2\\sin t)^{2}=8\\cos^{2}t+8\\sin^{2}t\\)"
+            },
+            {
+              "explain": "Use \\(\\cos^{2}t+\\sin^{2}t=1\\).",
+              "work": "\\(x^{2}+y^{2}=8\\ \\Rightarrow\\ \\text{a circle of radius }2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Answer: D.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which parametric equations represent a circle",
+              "note": "Eliminate t: a circle needs x squared plus y squared constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

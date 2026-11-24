@@ -2750,6 +2750,106 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "caringbah2020-y11e1-q14b1",
+          "type": "mc",
+          "stem": "Find a simplified expression for \\(\\operatorname{cosec}\\theta\\,(\\cos\\theta-1)\\) in terms of \\(t\\) where \\(t=\\tan\\dfrac{\\theta}{2}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-t\\)",
+            "\\(t\\)",
+            "\\(-\\dfrac{2t^{2}}{1+t^{2}}\\)",
+            "\\(\\dfrac{1+t^{2}}{2t}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(t\\)-formulas: \\(\\sin\\theta=\\dfrac{2t}{1+t^{2}}\\) (so \\(\\operatorname{cosec}\\theta=\\dfrac{1+t^{2}}{2t}\\)) and \\(\\cos\\theta=\\dfrac{1-t^{2}}{1+t^{2}}\\). Substitute, put \\(\\cos\\theta-1\\) over \\(1+t^{2}\\) and simplify.",
+          "steps": [
+            {
+              "explain": "\\(t\\)-formulas.",
+              "work": "\\(\\operatorname{cosec}\\theta=\\dfrac{1+t^{2}}{2t},\\qquad\\cos\\theta=\\dfrac{1-t^{2}}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Compute \\(\\cos\\theta-1\\) over a common denominator.",
+              "work": "\\(\\cos\\theta-1=\\dfrac{1-t^{2}}{1+t^{2}}-\\dfrac{1+t^{2}}{1+t^{2}}=\\dfrac{-2t^{2}}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Multiply: the factors \\(1+t^{2}\\) cancel.",
+              "work": "\\(\\dfrac{1+t^{2}}{2t}\\times\\dfrac{-2t^{2}}{1+t^{2}}=\\dfrac{-2t^{2}}{2t}=-t\\)"
+            },
+            {
+              "explain": "Check with \\(\\theta=90^{\\circ}\\): \\(t=\\tan45^{\\circ}=1\\). Left: \\(\\operatorname{cosec}90^{\\circ}(\\cos90^{\\circ}-1)=1\\cdot(-1)=-1\\); right: \\(-t=-1\\) ✓. Option C is just \\(\\cos\\theta-1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find a simplified expression for",
+              "note": "t-formulas for cosec and cos; the factors 1 + t squared cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q14b2",
+          "type": "mc",
+          "stem": "Hence solve \\(\\operatorname{cosec}\\theta\\,(\\cos\\theta-1)=-1\\) for \\(0^{\\circ}\\le\\theta\\le180^{\\circ}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\theta=90^{\\circ}\\)",
+            "\\(\\theta=45^{\\circ}\\)",
+            "\\(\\theta=135^{\\circ}\\)",
+            "\\(\\theta=180^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (i): the left side equals \\(-t\\) where \\(t=\\tan\\dfrac{\\theta}{2}\\). Solve \\(-t=-1\\), then double the angle (\\(\\theta=2\\times\\) the angle in \\(\\tan\\dfrac{\\theta}{2}\\)).",
+          "steps": [
+            {
+              "explain": "By part (i), \\(\\operatorname{cosec}\\theta(\\cos\\theta-1)=-t\\). The equation becomes",
+              "work": "\\(-t=-1\\ \\Rightarrow\\ t=1\\)"
+            },
+            {
+              "explain": "Substitute back \\(t=\\tan\\dfrac{\\theta}{2}\\).",
+              "work": "\\(\\tan\\dfrac{\\theta}{2}=1\\ \\Rightarrow\\ \\dfrac{\\theta}{2}=45^{\\circ}\\)"
+            },
+            {
+              "explain": "Double. The domain \\(0^{\\circ}\\le\\theta\\le180^{\\circ}\\) means \\(0^{\\circ}\\le\\dfrac{\\theta}{2}\\le90^{\\circ}\\): only one solution.",
+              "work": "\\(\\theta=90^{\\circ}\\)"
+            },
+            {
+              "explain": "Check: \\(\\operatorname{cosec}90^{\\circ}(\\cos90^{\\circ}-1)=1\\times(-1)=-1\\) ✓. Option B forgets to double.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence solve",
+              "note": "Left side is minus t: tan of half-theta equals 1, then double."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

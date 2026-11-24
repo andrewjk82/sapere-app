@@ -2149,6 +2149,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "caringbah2020-y11e1-q12d",
+          "type": "mc",
+          "stem": "A certain chemical treatment of blue-green algae in a river causes it to decrease based on the equation \\(A=A_{0}\\times e^{kt}\\), where \\(A\\) is the kilograms of algae and \\(t\\) is time in months. If 250 kg of blue-green algae reduces to 150 kg after 3 months, find how long it will take, to the nearest month, to reduce the blue-green algae to 10 kg.",
+          "difficulty": "hard",
+          "options": [
+            "\\(19\\) months",
+            "\\(18\\) months",
+            "\\(25\\) months",
+            "\\(12\\) months"
+          ],
+          "answer": 0,
+          "hint": "Step 1: \\(A_{0}=250\\) (the starting amount). Step 2: use \\(A=150\\) at \\(t=3\\) to find \\(k\\) (it will be NEGATIVE: decay). Step 3: solve \\(250e^{kt}=10\\) for \\(t\\).",
+          "steps": [
+            {
+              "explain": "Initial amount \\(A_{0}=250\\). At \\(t=3\\), \\(A=150\\).",
+              "work": "\\(150=250e^{3k}\\ \\Rightarrow\\ e^{3k}=\\dfrac{150}{250}=0.6\\)"
+            },
+            {
+              "explain": "Take natural logs and divide by 3.",
+              "work": "\\(3k=\\ln0.6\\ \\Rightarrow\\ k=\\dfrac{\\ln0.6}{3}=-0.1703\\)"
+            },
+            {
+              "explain": "Now \\(A=10\\): \\(10=250e^{kt}\\Rightarrow e^{kt}=\\dfrac{10}{250}=0.04\\).",
+              "work": "\\(kt=\\ln0.04\\)"
+            },
+            {
+              "explain": "Solve for \\(t\\) (the two negatives cancel).",
+              "work": "\\(t=\\dfrac{\\ln0.04}{k}=\\dfrac{-3.2189}{-0.1703}=18.9\\)"
+            },
+            {
+              "explain": "To the nearest month: 19 months. Check: \\(250e^{-0.1703\\times19}=250\\times0.0393=9.8\\approx10\\) ✓. Option B truncates 18.9 instead of rounding.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find how long it will take",
+              "note": "Find k from 250 to 150 in 3 months, then solve 250 e to the kt = 10."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     }

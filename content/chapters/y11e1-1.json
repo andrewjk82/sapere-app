@@ -1777,6 +1777,60 @@
           ],
           "manual": true,
           "xp": 4
+        },
+        {
+          "id": "caringbah2020-y11e1-q2",
+          "type": "mc",
+          "stem": "What are the integers \\(x\\) and \\(y\\) such that \\(\\dfrac{\\sqrt{3}}{2\\sqrt{3}+3}=x+y\\sqrt{3}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=-1\\) and \\(y=2\\)",
+            "\\(x=1\\) and \\(y=-2\\)",
+            "\\(x=2\\) and \\(y=-1\\)",
+            "\\(x=-2\\) and \\(y=1\\)"
+          ],
+          "answer": 2,
+          "hint": "Rationalise the denominator: multiply top and bottom by the CONJUGATE \\(2\\sqrt{3}-3\\), then use \\((a+b)(a-b)=a^{2}-b^{2}\\).",
+          "steps": [
+            {
+              "explain": "The denominator is \\(2\\sqrt{3}+3\\); its conjugate is \\(2\\sqrt{3}-3\\).",
+              "work": "\\(\\dfrac{\\sqrt{3}}{2\\sqrt{3}+3}\\times\\dfrac{2\\sqrt{3}-3}{2\\sqrt{3}-3}\\)"
+            },
+            {
+              "explain": "Numerator: expand \\(\\sqrt{3}(2\\sqrt{3}-3)=2\\cdot3-3\\sqrt{3}=6-3\\sqrt{3}\\).",
+              "work": "\\(\\text{numerator}=6-3\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Denominator: difference of two squares \\(\\left(2\\sqrt{3}\\right)^{2}-3^{2}=12-9=3\\).",
+              "work": "\\(\\text{denominator}=3\\)"
+            },
+            {
+              "explain": "Divide each term by 3.",
+              "work": "\\(\\dfrac{6-3\\sqrt{3}}{3}=2-\\sqrt{3}=2+(-1)\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Compare with \\(x+y\\sqrt{3}\\): \\(x=2\\) and \\(y=-1\\). Check numerically: LHS \\(=\\dfrac{1.732}{6.464}=0.268\\) and \\(2-1.732=0.268\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What are the integers",
+              "note": "Multiply by the conjugate; the denominator becomes 12 − 9 = 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5558,6 +5612,60 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "caringbah2020-y11e1-q15a",
+          "type": "mc",
+          "stem": "Solve: \\(2\\times4^{x}-3\\times2^{x}+1=0\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=-1\\) or \\(x=0\\)",
+            "\\(x=\\dfrac{1}{2}\\) or \\(x=1\\)",
+            "\\(x=1\\) or \\(x=2\\)",
+            "\\(x=-1\\) only"
+          ],
+          "answer": 0,
+          "hint": "Write \\(4^{x}=\\left(2^{2}\\right)^{x}=\\left(2^{x}\\right)^{2}\\). Then the equation is a QUADRATIC in \\(u=2^{x}\\). Solve for \\(u\\), then go back to \\(x\\).",
+          "steps": [
+            {
+              "explain": "Rewrite \\(4^{x}\\) with base 2: \\(4^{x}=\\left(2^{2}\\right)^{x}=\\left(2^{x}\\right)^{2}\\).",
+              "work": "\\(2\\left(2^{x}\\right)^{2}-3\\left(2^{x}\\right)+1=0\\)"
+            },
+            {
+              "explain": "Substitute \\(u=2^{x}\\) (note \\(u>0\\)).",
+              "work": "\\(2u^{2}-3u+1=0\\)"
+            },
+            {
+              "explain": "Factorise: two numbers multiplying to \\(2\\times1=2\\) and adding to \\(-3\\): \\(-2\\) and \\(-1\\).",
+              "work": "\\((2u-1)(u-1)=0\\ \\Rightarrow\\ u=\\dfrac{1}{2}\\ \\text{or}\\ u=1\\)"
+            },
+            {
+              "explain": "Back-substitute \\(2^{x}=u\\).",
+              "work": "\\(2^{x}=\\dfrac{1}{2}=2^{-1}\\Rightarrow x=-1,\\qquad2^{x}=1=2^{0}\\Rightarrow x=0\\)"
+            },
+            {
+              "explain": "Check \\(x=-1\\): \\(2\\cdot\\dfrac{1}{4}-3\\cdot\\dfrac{1}{2}+1=0\\) ✓; \\(x=0\\): \\(2-3+1=0\\) ✓. Option B gives \\(u\\) values as \\(x\\) values.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Let u = 2 to the x: it becomes a quadratic 2u squared − 3u + 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     }

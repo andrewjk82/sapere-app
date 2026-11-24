@@ -613,6 +613,114 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "caringbah2020-y11e1-q6",
+          "type": "mc",
+          "stem": "Which expression is equivalent to \\(\\dfrac{2\\cos^{2}\\theta}{1-\\sin\\theta}\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(2-2\\sin\\theta\\)",
+            "\\(2+2\\sin\\theta\\)",
+            "\\(2-2\\cos\\theta\\)",
+            "\\(2+2\\cos\\theta\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\cos^{2}\\theta=1-\\sin^{2}\\theta\\) (Pythagorean identity), then factorise the difference of two squares \\(1-\\sin^{2}\\theta=(1-\\sin\\theta)(1+\\sin\\theta)\\) and cancel \\(1-\\sin\\theta\\).",
+          "steps": [
+            {
+              "explain": "Replace \\(\\cos^{2}\\theta\\) using \\(\\sin^{2}\\theta+\\cos^{2}\\theta=1\\).",
+              "work": "\\(\\dfrac{2\\cos^{2}\\theta}{1-\\sin\\theta}=\\dfrac{2\\left(1-\\sin^{2}\\theta\\right)}{1-\\sin\\theta}\\)"
+            },
+            {
+              "explain": "\\(1-\\sin^{2}\\theta\\) is a difference of two squares.",
+              "work": "\\(=\\dfrac{2(1-\\sin\\theta)(1+\\sin\\theta)}{1-\\sin\\theta}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\(1-\\sin\\theta\\) (valid when \\(\\sin\\theta\\ne1\\)).",
+              "work": "\\(=2(1+\\sin\\theta)=2+2\\sin\\theta\\)"
+            },
+            {
+              "explain": "Check with \\(\\theta=30^{\\circ}\\): left \\(\\dfrac{2(0.75)}{0.5}=3\\); right \\(2+2(0.5)=3\\) ✓. Option A has the wrong sign. (In the original paper options C and D were both \\(2-2\\cos\\theta\\); here option D has been changed to \\(2+2\\cos\\theta\\) so that the four options are different.)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which expression is equivalent to",
+              "note": "cos squared = 1 − sin squared, then cancel 1 − sin."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q15d",
+          "type": "mc",
+          "stem": "If \\(\\sec x+\\tan x=k\\), find an expression for \\(\\sec x\\) in terms of \\(k\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2}\\left(k+\\dfrac{1}{k}\\right)\\)",
+            "\\(\\dfrac{1}{2}\\left(k-\\dfrac{1}{k}\\right)\\)",
+            "\\(k-\\dfrac{1}{k}\\)",
+            "\\(2k\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the identity \\(\\sec^{2}x-\\tan^{2}x=1\\) (from \\(1+\\tan^{2}x=\\sec^{2}x\\)). Factorise it as \\((\\sec x-\\tan x)(\\sec x+\\tan x)=1\\), then find \\(\\sec x-\\tan x\\) in terms of \\(k\\) and ADD the two expressions to eliminate \\(\\tan x\\).",
+          "steps": [
+            {
+              "explain": "Start from \\(1+\\tan^{2}x=\\sec^{2}x\\) and rearrange.",
+              "work": "\\(\\sec^{2}x-\\tan^{2}x=1\\)"
+            },
+            {
+              "explain": "Difference of two squares.",
+              "work": "\\((\\sec x-\\tan x)(\\sec x+\\tan x)=1\\)"
+            },
+            {
+              "explain": "Substitute \\(\\sec x+\\tan x=k\\) and solve for the other factor.",
+              "work": "\\(k(\\sec x-\\tan x)=1\\ \\Rightarrow\\ \\sec x-\\tan x=\\dfrac{1}{k}\\quad(2)\\)"
+            },
+            {
+              "explain": "Add the given equation \\(\\sec x+\\tan x=k\\quad(1)\\) and (2): \\(\\tan x\\) cancels.",
+              "work": "\\(2\\sec x=k+\\dfrac{1}{k}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(\\sec x=\\dfrac{1}{2}\\left(k+\\dfrac{1}{k}\\right)\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Check with \\(x=0\\): \\(\\sec0+\\tan0=1=k\\), and \\(\\dfrac{1}{2}\\left(1+\\dfrac{1}{1}\\right)=1=\\sec0\\) ✓. Option B subtracts (that gives \\(\\tan x\\), not \\(\\sec x\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find an expression for",
+              "note": "Sec squared minus tan squared is 1; add the two linear equations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1320,6 +1428,63 @@
           "meta": {
             "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
             "school": "Frensham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q11c",
+          "type": "mc",
+          "stem": "If \\(\\sin x=\\dfrac{2}{3}\\), where \\(90^{\\circ}\\le x\\le180^{\\circ}\\) and \\(\\cos y=\\dfrac{3}{4}\\), where \\(0^{\\circ}\\le y\\le90^{\\circ}\\), what is the exact value of \\(\\sin(x+y)\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{6-\\sqrt{35}}{12}\\)",
+            "\\(\\dfrac{6+\\sqrt{35}}{12}\\)",
+            "\\(\\dfrac{\\sqrt{35}-6}{12}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\sin(x+y)=\\sin x\\cos y+\\cos x\\sin y\\). You are given \\(\\sin x\\) and \\(\\cos y\\); find \\(\\cos x\\) and \\(\\sin y\\) with Pythagoras, choosing the SIGN from the quadrant (\\(x\\) is in the 2nd quadrant, so \\(\\cos x<0\\)).",
+          "steps": [
+            {
+              "explain": "Triangle for \\(x\\): opposite 2, hypotenuse 3, so adjacent \\(=\\sqrt{9-4}=\\sqrt{5}\\). In the 2nd quadrant cosine is NEGATIVE.",
+              "work": "\\(\\cos x=-\\dfrac{\\sqrt{5}}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"150.0\" x2=\"180.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"160.0\" x2=\"120.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"150.0\" x2=\"47.0\" y2=\"84.7\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"47.0\" y1=\"84.7\" x2=\"47.0\" y2=\"150.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"47.0\" y1=\"150.0\" x2=\"120.0\" y2=\"150.0\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"51.0\" y=\"117.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"83.5\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√5</text><text x=\"101.5\" y=\"103.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><path d=\"M94,150 A26,26 0 0 0 100.6,132.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"102.0\" y=\"142.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"30.0\" y=\"52.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin x = 2/3 (2nd quadrant)</text><line x1=\"280.0\" y1=\"150.0\" x2=\"400.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"160.0\" x2=\"290.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"150.0\" x2=\"368.8\" y2=\"80.5\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"368.8\" y1=\"80.5\" x2=\"368.8\" y2=\"150.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"150.0\" x2=\"368.8\" y2=\"150.0\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"329.4\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"374.8\" y=\"115.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√7</text><text x=\"317.4\" y=\"101.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><path d=\"M316,150 A26,26 0 0 0 309.5,132.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"326.0\" y=\"142.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"280.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos y = 3/4 (1st quadrant)</text></svg>"
+              }
+            },
+            {
+              "explain": "Triangle for \\(y\\): adjacent 3, hypotenuse 4, so opposite \\(=\\sqrt{16-9}=\\sqrt{7}\\). In the 1st quadrant sine is positive.",
+              "work": "\\(\\sin y=\\dfrac{\\sqrt{7}}{4}\\)"
+            },
+            {
+              "explain": "Compound angle formula.",
+              "work": "\\(\\sin(x+y)=\\sin x\\cos y+\\cos x\\sin y=\\dfrac{2}{3}\\times\\dfrac{3}{4}+\\left(-\\dfrac{\\sqrt{5}}{3}\\right)\\left(\\dfrac{\\sqrt{7}}{4}\\right)\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{6}{12}-\\dfrac{\\sqrt{35}}{12}\\).",
+              "work": "\\(=\\dfrac{1}{2}-\\dfrac{\\sqrt{35}}{12}=\\dfrac{6-\\sqrt{35}}{12}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(x=138.2^{\\circ}\\), \\(y=41.4^{\\circ}\\), so \\(x+y=179.6^{\\circ}\\) and \\(\\sin179.6^{\\circ}=0.007\\); \\(\\dfrac{6-5.916}{12}=0.007\\) ✓. Option B takes \\(\\cos x\\) positive (wrong quadrant).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the exact value of",
+              "note": "Pythagoras for the missing sides; cos x is negative in the second quadrant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
             "grade": "11",
             "origin": "teacher"
           }

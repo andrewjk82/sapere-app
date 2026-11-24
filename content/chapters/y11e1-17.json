@@ -1242,6 +1242,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "caringbah2020-y11e1-q13d1",
+          "type": "mc",
+          "stem": "A Maths test is to consist of ten questions. In how many ways can it be arranged so that the shortest question is first and the longest question is last?",
+          "difficulty": "easy",
+          "options": [
+            "\\(40\\,320\\)",
+            "\\(80\\,640\\)",
+            "\\(3\\,628\\,800\\)",
+            "\\(20\\,160\\)"
+          ],
+          "answer": 0,
+          "hint": "Two questions are FIXED (shortest first, longest last), so only the other \\(10-2=8\\) questions can be rearranged freely in the 8 middle positions: \\(8!\\) ways.",
+          "steps": [
+            {
+              "explain": "Position 1 is the shortest and position 10 is the longest: 1 way each.",
+              "work": "\\(1\\times\\_\\_\\_\\_\\_\\_\\_\\_\\times1\\)"
+            },
+            {
+              "explain": "The remaining 8 questions fill the 8 middle places in any order.",
+              "work": "\\(8!=8\\times7\\times6\\times5\\times4\\times3\\times2\\times1=40\\,320\\)"
+            },
+            {
+              "explain": "Total: \\(1\\times1\\times8!=40\\,320\\). Why not the others: \\(10!=3\\,628\\,800\\) ignores the restriction; \\(2\\times8!=80\\,640\\) swaps the two end questions (the order is fixed).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "In how many ways can it be arranged",
+              "note": "Fix the two ends; arrange the other 8 questions: 8 factorial."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1576,6 +1622,156 @@
           "meta": {
             "source": "Blacktown Boys High School 2020 Year 11 Mathematics Extension 1 Yearly Examination (Assessment Task 2)",
             "school": "Blacktown Boys High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q13d2",
+          "type": "mc",
+          "stem": "A Maths test is to consist of ten questions. What is the probability that the shortest and longest questions are next to one another?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{5}\\)",
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{1}{45}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P=\\dfrac{\\text{arrangements with the two next to each other}}{\\text{all arrangements}}\\). Treat the two questions as ONE block (and remember the block can be in 2 orders).",
+          "steps": [
+            {
+              "explain": "All arrangements of 10 questions.",
+              "work": "\\(10!\\)"
+            },
+            {
+              "explain": "Together: glue the shortest and longest into one block. That gives \\(9\\) objects to arrange (\\(9!\\)), and inside the block the two can be in \\(2!\\) orders.",
+              "work": "\\(\\text{together}=9!\\times2!\\)"
+            },
+            {
+              "explain": "Probability.",
+              "work": "\\(P=\\dfrac{9!\\times2!}{10!}=\\dfrac{2}{10}=\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Check another way: if the shortest question is at an END of the test (2 of the 10 places) it has 1 neighbour among the other 9 places; if it is in a MIDDLE place (8 of 10) it has 2 neighbours. \\(P=\\dfrac{2}{10}\\cdot\\dfrac{1}{9}+\\dfrac{8}{10}\\cdot\\dfrac{2}{9}=\\dfrac{18}{90}=\\dfrac{1}{5}\\) ✓. Option B forgets the \\(2!\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that the shortest and longest questions are next to one another",
+              "note": "Glue the two into a block: 9 factorial times 2 over 10 factorial."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q15b1",
+          "type": "mc",
+          "stem": "Find the number of ways in which the letters of the word TRIANGLE can be arranged in a line so that all the vowels are next to each other.",
+          "difficulty": "hard",
+          "options": [
+            "\\(4320\\)",
+            "\\(1440\\)",
+            "\\(720\\)",
+            "\\(5040\\)"
+          ],
+          "answer": 0,
+          "hint": "TRIANGLE has 8 different letters: vowels I, A, E (3) and consonants T, R, N, G, L (5). Glue the 3 vowels into ONE BLOCK: you arrange \\(5+1=6\\) objects, and the vowels can be arranged inside the block in \\(3!\\) ways.",
+          "steps": [
+            {
+              "explain": "Treat the vowels I, A, E as one block. Objects to arrange: the block plus the 5 consonants \\(=6\\) objects.",
+              "work": "\\(6!=720\\ \\text{arrangements of the 6 objects}\\)"
+            },
+            {
+              "explain": "Inside the block the 3 vowels can be ordered in \\(3!\\) ways.",
+              "work": "\\(3!=6\\)"
+            },
+            {
+              "explain": "Multiply (multiplication principle).",
+              "work": "\\(6!\\times3!=720\\times6=4320\\)"
+            },
+            {
+              "explain": "Why not the others: \\(2!\\times3!\\times5!=1440\\) (the printed solution) uses \\(5!\\) and \\(2!\\) incorrectly (there are 6 objects, not 5); \\(5040\\) is \\(7!\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "so that all the vowels are next to each other",
+              "note": "Block the vowels: 6 factorial times 3 factorial."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q15b2",
+          "type": "mc",
+          "stem": "Find the number of ways in which the letters of the word TRIANGLE can be arranged in a line so that consonants are in the two end positions.",
+          "difficulty": "hard",
+          "options": [
+            "\\(14\\,400\\)",
+            "\\(28\\,800\\)",
+            "\\(720\\)",
+            "\\(1440\\)"
+          ],
+          "answer": 0,
+          "hint": "Fill the two END positions first from the 5 consonants (order matters: first and last are different places), then arrange the other 6 letters in the middle.",
+          "steps": [
+            {
+              "explain": "First position: any of the 5 consonants; last position: any of the 4 remaining consonants.",
+              "work": "\\(5\\times4=20\\)"
+            },
+            {
+              "explain": "The remaining 6 letters (3 vowels and 3 consonants) fill the 6 middle places in any order.",
+              "work": "\\(6!=720\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(5\\times4\\times6!=20\\times720=14\\,400\\)"
+            },
+            {
+              "explain": "Why not the others: 28 800 doubles the ends (the places are already ordered); 720 forgets the choice of end letters.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "so that consonants are in the two end positions",
+              "note": "Choose the ends 5 times 4, then arrange the other 6 letters."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -2373,6 +2569,259 @@
           "meta": {
             "source": "Frensham School 2021 Year 12 Trial HSC Examination Mathematics Extension 1",
             "school": "Frensham School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q3",
+          "type": "mc",
+          "stem": "A six-sided die has one side with a value of 1, two sides each with a value of 2 and three sides each with a value of 3. On rolling this die what would be the expected value?",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(2\\dfrac{1}{3}\\)",
+            "\\(2\\dfrac{1}{2}\\)",
+            "\\(2\\dfrac{2}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Expected value \\(\\mathrm{E}(X)=\\sum x\\cdot P(X=x)\\). Find the probability of each value first (favourable faces out of 6).",
+          "steps": [
+            {
+              "explain": "Probabilities: one face shows 1, two faces show 2, three faces show 3.",
+              "work": "\\(P(1)=\\dfrac{1}{6},\\qquad P(2)=\\dfrac{2}{6},\\qquad P(3)=\\dfrac{3}{6}\\)"
+            },
+            {
+              "explain": "Multiply each value by its probability and add.",
+              "work": "\\(\\mathrm{E}(X)=1\\left(\\dfrac{1}{6}\\right)+2\\left(\\dfrac{2}{6}\\right)+3\\left(\\dfrac{3}{6}\\right)\\)"
+            },
+            {
+              "explain": "Add: \\(\\dfrac{1+4+9}{6}=\\dfrac{14}{6}\\).",
+              "work": "\\(=\\dfrac{14}{6}=\\dfrac{7}{3}=2\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Check: the faces total \\(1+2+2+3+3+3=14\\) and \\(\\dfrac{14}{6}=2\\dfrac{1}{3}\\) ✓. Option A, 2, is the average of the three VALUES \\(1,2,3\\) (it ignores the unequal chances).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what would be the expected value",
+              "note": "Value times probability, summed: 14 over 6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q10",
+          "type": "mc",
+          "stem": "Three girls and three boys sit around a round table. What is the probability that they sit boy-girl-boy-girl-boy-girl?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{10}\\)",
+            "\\(\\dfrac{3}{20}\\)",
+            "\\(\\dfrac{1}{120}\\)",
+            "\\(\\dfrac{1}{20}\\)"
+          ],
+          "answer": 0,
+          "hint": "Around a ROUND table, rotations of the same seating are the same arrangement: \\(n\\) people can be arranged in \\((n-1)!\\) ways. Count the favourable arrangements and the total arrangements.",
+          "steps": [
+            {
+              "explain": "Total arrangements of 6 people around a round table (fix one person's seat to remove rotations).",
+              "work": "\\((6-1)!=5!=120\\)"
+            },
+            {
+              "explain": "Favourable (alternating): seat the 3 boys with one fixed, \\((3-1)!=2!=2\\) ways; the 3 girls then go into the 3 gaps between the boys in \\(3!=6\\) ways (the diagram shows B and G alternating).",
+              "work": "\\(\\text{favourable}=2!\\times3!=12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"150.0\" cy=\"50.0\" r=\"22\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150.0\" y=\"55.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"236.6\" cy=\"100.0\" r=\"22\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"236.6\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"236.6\" cy=\"200.0\" r=\"22\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"236.6\" y=\"205.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"150.0\" cy=\"250.0\" r=\"22\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"150.0\" y=\"255.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><circle cx=\"63.4\" cy=\"200.0\" r=\"22\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"63.4\" y=\"205.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"63.4\" cy=\"100.0\" r=\"22\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"63.4\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">G</text><text x=\"150.0\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">boy–girl–boy–girl…</text></svg>"
+              }
+            },
+            {
+              "explain": "Probability \\(=\\dfrac{\\text{favourable}}{\\text{total}}\\).",
+              "work": "\\(P=\\dfrac{12}{120}=\\dfrac{1}{10}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{120}\\) counts one specific seating out of 120; \\(\\dfrac{1}{20}\\) and \\(\\dfrac{3}{20}\\) come from miscounting the favourable arrangements.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the probability that they sit boy-girl-boy-girl-boy-girl",
+              "note": "Round table: total (6−1)! = 120; alternating is 2! times 3! = 12."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q11b1",
+          "type": "mc",
+          "stem": "A bag contains three red, four yellow and five blue balls. If three balls are drawn from the bag simultaneously, find the probability that: all three balls are red.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{220}\\)",
+            "\\(\\dfrac{1}{64}\\)",
+            "\\(\\dfrac{3}{220}\\)",
+            "\\(\\dfrac{1}{36}\\)"
+          ],
+          "answer": 0,
+          "hint": "Balls are drawn at once, so none can be chosen twice: it is WITHOUT replacement. After each red ball is taken, there is one fewer red AND one fewer ball in total.",
+          "steps": [
+            {
+              "explain": "There are \\(3+4+5=12\\) balls. First ball red: 3 reds out of 12.",
+              "work": "\\(P(R_{1})=\\dfrac{3}{12}\\)"
+            },
+            {
+              "explain": "Second ball red: now 2 reds out of 11 balls. Third: 1 red out of 10.",
+              "work": "\\(P(R_{2}\\mid R_{1})=\\dfrac{2}{11},\\qquad P(R_{3}\\mid R_{1}R_{2})=\\dfrac{1}{10}\\)"
+            },
+            {
+              "explain": "Multiply along the path.",
+              "work": "\\(P=\\dfrac{3}{12}\\times\\dfrac{2}{11}\\times\\dfrac{1}{10}=\\dfrac{6}{1320}=\\dfrac{1}{220}\\)"
+            },
+            {
+              "explain": "Check with combinations: \\(\\dfrac{\\binom{3}{3}}{\\binom{12}{3}}=\\dfrac{1}{220}\\) ✓. Option B, \\(\\left(\\dfrac{3}{12}\\right)^{3}\\), would be with replacement.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "all three balls are red",
+              "note": "Without replacement: 3/12 times 2/11 times 1/10."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q11b2",
+          "type": "mc",
+          "stem": "A bag contains three red, four yellow and five blue balls. If three balls are drawn from the bag simultaneously, find the probability that: At least one of the balls are yellow?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{41}{55}\\)",
+            "\\(\\dfrac{14}{55}\\)",
+            "\\(\\dfrac{19}{27}\\)",
+            "\\(\\dfrac{1}{55}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"At least one\\\" is easiest with the COMPLEMENT: \\(P(\\text{at least one yellow})=1-P(\\text{no yellow})\\). No yellow means all three come from the 8 non-yellow balls (3 red + 5 blue).",
+          "steps": [
+            {
+              "explain": "No yellow: all 3 balls come from the \\(3+5=8\\) non-yellow balls, drawn without replacement.",
+              "work": "\\(P(\\text{no yellow})=\\dfrac{8}{12}\\times\\dfrac{7}{11}\\times\\dfrac{6}{10}\\)"
+            },
+            {
+              "explain": "Multiply: \\(\\dfrac{336}{1320}=\\dfrac{14}{55}\\) (divide by 24).",
+              "work": "\\(=\\dfrac{336}{1320}=\\dfrac{14}{55}\\)"
+            },
+            {
+              "explain": "Subtract from 1.",
+              "work": "\\(P(\\text{at least one yellow})=1-\\dfrac{14}{55}=\\dfrac{41}{55}\\)"
+            },
+            {
+              "explain": "Check with combinations: \\(1-\\dfrac{\\binom{8}{3}}{\\binom{12}{3}}=1-\\dfrac{56}{220}=\\dfrac{41}{55}\\) ✓. Option B is \\(P(\\text{no yellow})\\); C uses \\(\\left(\\dfrac{8}{12}\\right)^{3}\\) (with replacement).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "At least one of the balls are yellow",
+              "note": "At least one: one minus the probability of no yellow."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "caringbah2020-y11e1-q14a",
+          "type": "mc",
+          "stem": "The numbers 1 to 20 are either odd or even as wells as being prime, composite or neither. If an odd number is chosen at random what is the probability that it is also prime?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{7}{10}\\)",
+            "\\(\\dfrac{7}{20}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "This is conditional: you are TOLD the number is odd, so the sample space is only the ODD numbers from 1 to 20. Count the primes among them (2 is prime but it is even, and 1 is not prime).",
+          "steps": [
+            {
+              "explain": "Odd numbers from 1 to 20: \\(1,3,5,7,9,11,13,15,17,19\\): there are 10.",
+              "work": "\\(n(\\text{odd})=10\\)"
+            },
+            {
+              "explain": "Which are prime? \\(3,5,7,11,13,17,19\\) (1 is neither prime nor composite; 9 and 15 are composite).",
+              "work": "\\(n(\\text{odd and prime})=7\\)"
+            },
+            {
+              "explain": "Conditional probability: \\(\\dfrac{\\text{odd and prime}}{\\text{odd}}\\).",
+              "work": "\\(P=\\dfrac{7}{10}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{7}{20}\\) divides by all 20 numbers (it forgets the condition); the prime 2 is even, so it is not counted.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If an odd number is chosen at random what is the probability that it is also prime",
+              "note": "Given odd: 7 odd primes out of 10 odd numbers."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Caringbah High School 2020 Preliminary Task 3 Mathematics Extension 1",
+            "school": "Caringbah High School",
             "grade": "11",
             "origin": "teacher"
           }
