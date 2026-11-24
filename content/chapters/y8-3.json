@@ -2878,6 +2878,366 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\((3x)^0\\) (for \\(x \\neq 0\\)).",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(3\\)",
+            "\\(3x\\)"
+          ],
+          "answer": 1,
+          "hint": "By the zero index law, any non-zero expression raised to the power of 0 equals 1!",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\((3x)^0\\)",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(a^0 = 1 \\text{ for } a \\neq 0\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\((3x)^0 = 1\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 1\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1\\).",
+              "work": "\\(\\text{Answer: } 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the base for the term \\(5^3\\)?",
+          "options": [
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(15\\)",
+            "\\(125\\)"
+          ],
+          "answer": 1,
+          "hint": "In 5³, 5 is the BASE (the number being multiplied) and 3 is the index/exponent.",
+          "keyPoints": [
+            {
+              "text": "What is",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(\\text{base}^{\\text{index}} = 5^3\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(\\text{Base} = 5\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(5\\).",
+              "work": "\\(\\text{Answer: } 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(2x^2y\\) in expanded form.",
+          "options": [
+            "\\(2 \\times x \\times x \\times y\\)",
+            "\\(2 \\times x \\times 2 \\times y\\)",
+            "\\(2x \\times 2x \\times y\\)",
+            "\\(2 + x + x + y\\)"
+          ],
+          "answer": 0,
+          "hint": "The power 2 applies ONLY to x (not to 2!), so x² = x × x.",
+          "keyPoints": [
+            {
+              "text": "Express \\(2x^2y\\)",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(2 \\times x^2 \\times y\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(2 \\times x \\times x \\times y\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 2 \\times x \\times x \\times y\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2 \\times x \\times x \\times y\\).",
+              "work": "\\(\\text{Answer: } 2 \\times x \\times x \\times y\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q14c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(m^2 \\times m^3\\).",
+          "options": [
+            "\\(m^5\\)",
+            "\\(m^6\\)",
+            "\\(2m^5\\)",
+            "\\(m^1\\)"
+          ],
+          "answer": 0,
+          "hint": "Same base multiplication: ADD the indices (2 + 3 = 5).",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\(m^{2 + 3}\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(m^5\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } m^5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(m^5\\).",
+              "work": "\\(\\text{Answer: } m^5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q14d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(y^{10} \\div y^5\\).",
+          "options": [
+            "\\(y^2\\)",
+            "\\(y^5\\)",
+            "\\(y^{15}\\)",
+            "\\(y^{50}\\)"
+          ],
+          "answer": 1,
+          "hint": "Same base division: SUBTRACT the indices (10 - 5 = 5, NOT 10 ÷ 5!).",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\(y^{10 - 5}\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(y^5\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } y^5\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(y^5\\).",
+              "work": "\\(\\text{Answer: } y^5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate \\((-2)^3 \\times \\dfrac{1}{2}(-2)^6\\), leaving your answer in index form.",
+          "options": [
+            "\\(-2^8\\)",
+            "\\((-2)^8\\)",
+            "\\(-2^9\\)",
+            "\\(2^8\\)"
+          ],
+          "answer": 0,
+          "hint": "Check the sign! (-2)³ is NEGATIVE (-2³) and (-2)⁶ is POSITIVE (+2⁶), so the overall answer is NEGATIVE! Dividing by 2 lowers the power from 9 to 8 -> -2⁸.",
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\((-2^3) \\times 2^{-1} \\times 2^6\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(-2^{3 - 1 + 6} = -2^8\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } -2^8\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(-2^8\\).",
+              "work": "\\(\\text{Answer: } -2^8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q24a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{8x^5}{24x^3}\\).",
+          "options": [
+            "\\(\\dfrac{x^2}{3}\\)",
+            "\\(3x^2\\)",
+            "\\(\\dfrac{x^8}{3}\\)",
+            "\\(\\dfrac{1}{3x^2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify 8/24 = 1/3 (3 stays in the denominator!) and subtract powers of x: x^(5-3) = x².",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "8/24 = 1/3 and x^5 ÷ x^3 = x^2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Simplify the numerical fraction \\(\\dfrac{8}{24}\\) by dividing top and bottom by \\(8\\): \\(\\dfrac{1}{3}\\).",
+              "work": "\\(\\dfrac{8}{24} = \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Subtract the indices of \\(x\\): \\(\\dfrac{x^5}{x^3} = x^{5 - 3} = x^2\\).",
+              "work": "\\(x^{5 - 3} = x^2\\)"
+            },
+            {
+              "explain": "Combine both parts: \\(\\dfrac{x^2}{3}\\).",
+              "work": "\\(\\dfrac{x^2}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(\\dfrac{x^2}{3}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{x^2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q24b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\((3w^2)^3\\).",
+          "options": [
+            "\\(9w^6\\)",
+            "\\(27w^5\\)",
+            "\\(27w^6\\)",
+            "\\(3w^6\\)"
+          ],
+          "answer": 2,
+          "hint": "Raise BOTH the coefficient 3 AND w² to the power of 3: 3³ = 27 (NOT 9!), and (w²)³ = w^(2×3) = w⁶!",
+          "keyPoints": [
+            {
+              "text": "(3w^2)^3",
+              "note": "Cube the coefficient 3 (3³ = 27) and multiply indices (2 × 3 = 6)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the power of a product rule: cube both \\(3\\) and \\(w^2\\).",
+              "work": "\\(3^3 \\times (w^2)^3\\)"
+            },
+            {
+              "explain": "Evaluate \\(3^3 = 3 \\times 3 \\times 3 = 27\\).",
+              "work": "\\(3^3 = 27\\)"
+            },
+            {
+              "explain": "Multiply the indices for \\((w^2)^3 = w^{2 \\times 3} = w^6\\).",
+              "work": "\\(27w^6\\)"
+            },
+            {
+              "explain": "Therefore, \\((3w^2)^3 = 27w^6\\).",
+              "work": "\\(\\text{Answer: } 27w^6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify \\(\\dfrac{2^n \\times 4^{n+1}}{8^{n-2}}\\).",
+          "options": [
+            "\\(2^8\\) (or \\(256\\))",
+            "\\(2^{-4}\\)",
+            "\\(2^{3n+8}\\)",
+            "\\(2^4\\) (or \\(16\\))"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 4 as 2² and 8 as 2³ so EVERY base is 2! Then combine powers: 2^(n + 2n + 2) ÷ 2^(3n - 6). Watch the 3n cancel completely!",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Convert 4 = 2² and 8 = 2³ to get a common base of 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(4\\) and \\(8\\) to powers of \\(2\\): \\(4^{n+1} = (2^2)^{n+1} = 2^{2n+2}\\) and \\(8^{n-2} = (2^3)^{n-2} = 2^{3n-6}\\).",
+              "work": "\\(\\dfrac{2^n \\times 2^{2n+2}}{2^{3n-6}}\\)"
+            },
+            {
+              "explain": "Add the indices in the numerator: \\(n + (2n + 2) = 3n + 2\\).",
+              "work": "\\(\\dfrac{2^{3n+2}}{2^{3n-6}}\\)"
+            },
+            {
+              "explain": "Subtract the denominator index from the numerator index: \\((3n + 2) - (3n - 6) = 3n + 2 - 3n + 6 = 8\\).",
+              "work": "\\(2^8 = 256\\)"
+            },
+            {
+              "explain": "Therefore, the expression simplifies to \\(2^8\\) (which equals \\(256\\)).",
+              "work": "\\(\\text{Answer: } 2^8 = 256\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

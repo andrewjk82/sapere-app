@@ -1953,6 +1953,52 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "khs23-y8-t4b-q23a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The interior angles of the triangle shown are \\(x^\\circ\\), \\((x + 25)^\\circ\\), and \\((x - 40)^\\circ\\). Which equation represents the sum of the internal angles of the triangle?",
+          "options": [
+            "\\(x + (x + 25) + (x - 40) = 180\\) (which simplifies to \\(3x - 15 = 180\\))",
+            "\\(x + (x + 25) + (x - 40) = 360\\)",
+            "\\(3x + 65 = 180\\)",
+            "\\(x + 25 + x - 40 = 180\\)"
+          ],
+          "answer": 0,
+          "hint": "Add all THREE interior angles together and set them equal to 180° (the angle sum of a triangle)!",
+          "keyPoints": [
+            {
+              "text": "sum of the internal angles",
+              "note": "Angle sum of any triangle is 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall that the three interior angles of any triangle sum to \\(180^\\circ\\).",
+              "work": "\\(\\text{Angle 1} + \\text{Angle 2} + \\text{Angle 3} = 180\\)"
+            },
+            {
+              "explain": "Substitute all three angles from the diagram: \\(x + (x + 25) + (x - 40) = 180\\).",
+              "work": "\\(x + (x + 25) + (x - 40) = 180\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 195\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,24 56,146 262,86\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">65°</text><text x=\"94\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">90°</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">25°</text><text x=\"155\" y=\"187\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Angles sum to 180° -> 3x - 15 = 180 -> 65°, 90°, 25°</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect like terms: \\(x + x + x = 3x\\) and \\(25 - 40 = -15\\).",
+              "work": "\\(3x - 15 = 180\\)"
+            },
+            {
+              "explain": "Therefore, the equation is \\(x + (x + 25) + (x - 40) = 180\\) (or \\(3x - 15 = 180\\)).",
+              "work": "\\(3x - 15 = 180\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 168\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,24 56,146 262,86\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"82\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">x°</text><text x=\"94\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">(x + 25)°</text><text x=\"206\" y=\"90\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">(x − 40)°</text></svg>"
+          }
         }
       ]
     },

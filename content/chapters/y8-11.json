@@ -2813,6 +2813,166 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(3a^2 + 5a^2\\).",
+          "options": [
+            "\\(8a^2\\)",
+            "\\(8a^4\\)",
+            "\\(15a^2\\)",
+            "\\(8a\\)"
+          ],
+          "answer": 0,
+          "hint": "Both terms are like terms (a²): add 3 + 5 and keep a² unchanged!",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(3a^2",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\((3 + 5)a^2\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(8a^2\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } 8a^2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(8a^2\\).",
+              "work": "\\(\\text{Answer: } 8a^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Identify the like terms in the list: \\(x^2, \\; 3x, \\; 3xy, \\; 5x^2, \\; 6xy^2\\).",
+          "options": [
+            "\\(x^2 \\text{ and } 5x^2\\)",
+            "\\(3x \\text{ and } 3xy\\)",
+            "\\(x^2, \\; 3x, \\; 5x^2\\)",
+            "\\(3xy \\text{ and } 6xy^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Like terms must have the EXACT same letters raised to the EXACT same powers!",
+          "keyPoints": [
+            {
+              "text": "Identify the",
+              "note": "Apply the fundamental rule accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "State the rule or first step.",
+              "work": "\\(\\text{Same variable power } x^2\\)"
+            },
+            {
+              "explain": "Evaluate or simplify.",
+              "work": "\\(x^2 \\text{ and } 5x^2\\)"
+            },
+            {
+              "explain": "Double-check your result.",
+              "work": "\\(\\text{Verified: } x^2 \\text{ and } 5x^2\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(x^2 \\text{ and } 5x^2\\).",
+              "work": "\\(\\text{Answer: } x^2 \\text{ and } 5x^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q14a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(4d \\times 6c\\).",
+          "options": [
+            "\\(10cd\\)",
+            "\\(24cd\\)",
+            "\\(24c + d\\)",
+            "\\(46cd\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 4 × 6 = 24 and write the letters alphabetically (cd).",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\((4 \\times 6) \\times c \\times d\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(24cd\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } 24cd\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(24cd\\).",
+              "work": "\\(\\text{Answer: } 24cd\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs23-y8-t4b-q14b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(3a + 2b - a\\).",
+          "options": [
+            "\\(2a + 2b\\)",
+            "\\(4a + 2b\\)",
+            "\\(4ab\\)",
+            "\\(2 + 2b\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine the like a terms (3a - 1a = 2a) and keep +2b separate.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Apply index laws, factorisation, or inverse operations carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the primary law or inverse operation.",
+              "work": "\\((3a - a) + 2b\\)"
+            },
+            {
+              "explain": "Simplify to the final result.",
+              "work": "\\(2a + 2b\\)"
+            },
+            {
+              "explain": "Verify signs and powers.",
+              "work": "\\(\\text{Verified: } 2a + 2b\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(2a + 2b\\).",
+              "work": "\\(\\text{Answer: } 2a + 2b\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
