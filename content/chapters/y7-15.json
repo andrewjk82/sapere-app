@@ -1568,6 +1568,86 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(n - 21 = 56\\).",
+          "options": [
+            "\\(n = 35\\)",
+            "\\(n = 77\\)",
+            "\\(n = -35\\)",
+            "\\(n = 67\\)"
+          ],
+          "answer": 1,
+          "hint": "Undo -21 by adding 21 to both sides.",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Use inverse operations on both sides to isolate the pronumeral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(21\\) to both sides of \\(n - 21 = 56\\).",
+              "work": "\\(n = 56 + 21\\)"
+            },
+            {
+              "explain": "Complete the arithmetic to isolate the pronumeral.",
+              "work": "\\(n = 77\\)"
+            },
+            {
+              "explain": "Check by substituting the solution back into the original equation.",
+              "work": "\\(77 - 21 = 56\\)"
+            },
+            {
+              "explain": "Therefore, \\(n = 77\\).",
+              "work": "\\(\\text{Answer: } n = 77\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation \\(6x = 564\\).",
+          "options": [
+            "\\(x = 84\\)",
+            "\\(x = 94\\)",
+            "\\(x = 96\\)",
+            "\\(x = 558\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by 6: 564 ÷ 6 = 94.",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Use inverse operations on both sides to isolate the pronumeral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide both sides by \\(6\\) to undo multiplying by \\(6\\).",
+              "work": "\\(x = \\dfrac{564}{6}\\)"
+            },
+            {
+              "explain": "Complete the arithmetic to isolate the pronumeral.",
+              "work": "\\(x = 94\\)"
+            },
+            {
+              "explain": "Check by substituting the solution back into the original equation.",
+              "work": "\\(6 \\times 94 = 564\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 94\\).",
+              "work": "\\(\\text{Answer: } x = 94\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3430,6 +3510,166 @@
             {
               "explain": "Check by substituting \\(m = -11\\): \\(6 - (-11) = 6 + 11 = 17\\). Correct!",
               "work": "\\(m = -11\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(g + 17 = -14\\).",
+          "options": [
+            "\\(g = 3\\)",
+            "\\(g = -3\\)",
+            "\\(g = -31\\)",
+            "\\(g = 31\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract 17 from both sides: starting at -14 and moving 17 further left gives -31.",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Use inverse operations on both sides to isolate the pronumeral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(17\\) from both sides of \\(g + 17 = -14\\).",
+              "work": "\\(g = -14 - 17\\)"
+            },
+            {
+              "explain": "Complete the arithmetic to isolate the pronumeral.",
+              "work": "\\(g = -31\\)"
+            },
+            {
+              "explain": "Check by substituting the solution back into the original equation.",
+              "work": "\\(-31 + 17 = -14\\)"
+            },
+            {
+              "explain": "Therefore, \\(g = -31\\).",
+              "work": "\\(\\text{Answer: } g = -31\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(\\dfrac{x}{-5} = 23\\).",
+          "options": [
+            "\\(x = 115\\)",
+            "\\(x = -115\\)",
+            "\\(x = -4.6\\)",
+            "\\(x = 28\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply both sides by -5: 23 × (-5) = -115.",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Use inverse operations on both sides to isolate the pronumeral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(-5\\) to undo dividing by \\(-5\\).",
+              "work": "\\(x = 23 \\times (-5)\\)"
+            },
+            {
+              "explain": "Complete the arithmetic to isolate the pronumeral.",
+              "work": "\\(x = -115\\)"
+            },
+            {
+              "explain": "Check by substituting the solution back into the original equation.",
+              "work": "\\(\\dfrac{-115}{-5} = 23\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = -115\\).",
+              "work": "\\(\\text{Answer: } x = -115\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(6x - 24 = -42\\).",
+          "options": [
+            "\\(x = -11\\)",
+            "\\(x = -3\\)",
+            "\\(x = 3\\)",
+            "\\(x = 11\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 24 to both sides first (-42 + 24 = -18), then divide both sides by 6!",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Use inverse operations on both sides to isolate the pronumeral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add \\(24\\) to both sides: \\(6x = -42 + 24 = -18\\).",
+              "work": "\\(6x = -18\\)"
+            },
+            {
+              "explain": "Complete the arithmetic to isolate the pronumeral.",
+              "work": "\\(x = \\dfrac{-18}{6} = -3\\)"
+            },
+            {
+              "explain": "Check by substituting the solution back into the original equation.",
+              "work": "\\(6(-3) - 24 = -18 - 24 = -42\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = -3\\).",
+              "work": "\\(\\text{Answer: } x = -3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation \\(\\dfrac{x}{9} + 11 = 8\\).",
+          "options": [
+            "\\(x = -27\\)",
+            "\\(x = 27\\)",
+            "\\(x = -3\\)",
+            "\\(x = 171\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 11 from both sides first (8 - 11 = -3), then multiply both sides by 9!",
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "Use inverse operations on both sides to isolate the pronumeral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(11\\) from both sides: \\(\\dfrac{x}{9} = 8 - 11 = -3\\).",
+              "work": "\\(\\dfrac{x}{9} = -3\\)"
+            },
+            {
+              "explain": "Complete the arithmetic to isolate the pronumeral.",
+              "work": "\\(x = -3 \\times 9 = -27\\)"
+            },
+            {
+              "explain": "Check by substituting the solution back into the original equation.",
+              "work": "\\(\\dfrac{-27}{9} + 11 = -3 + 11 = 8\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = -27\\).",
+              "work": "\\(\\text{Answer: } x = -27\\)"
             }
           ],
           "timeLimit": 60,

@@ -14356,6 +14356,126 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(m + m + m\\).",
+          "options": [
+            "\\(3m\\)",
+            "\\(m^3\\)",
+            "\\(3 + m\\)",
+            "\\(2m\\)"
+          ],
+          "answer": 0,
+          "hint": "Adding m three times (1m + 1m + 1m) gives 3m (NOT m³).",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write each term with its hidden coefficient \\(1\\): \\(1m + 1m + 1m\\).",
+              "work": "\\(m + m + m\\)"
+            },
+            {
+              "explain": "Add the coefficients: \\(1 + 1 + 1 = 3\\).",
+              "work": "\\(1m + 1m + 1m = 3m\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(3m\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(3m\\).",
+              "work": "\\(\\text{Answer: } 3m\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(12a - 7a\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(5a\\)",
+            "\\(19a\\)",
+            "\\(5a^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Both terms are like terms with a. Subtract the coefficients (12 - 7) and keep the variable a.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Confirm both terms have the same pronumeral \\(a\\).",
+              "work": "\\(12a - 7a\\)"
+            },
+            {
+              "explain": "Subtract the coefficients: \\(12 - 7 = 5\\), keeping \\(a\\).",
+              "work": "\\(12a - 7a = 5a\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(5a\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(5a\\).",
+              "work": "\\(\\text{Answer: } 5a\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(7x + 6y - 2x\\).",
+          "options": [
+            "\\(5x + 6y\\)",
+            "\\(11xy\\)",
+            "\\(9x + 6y\\)",
+            "\\(5x - 6y\\)"
+          ],
+          "answer": 0,
+          "hint": "Only combine like terms (7x - 2x = 5x). Leave +6y separate because x and y are unlike terms!",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the like \\(x\\) terms together: \\((7x - 2x) + 6y\\).",
+              "work": "\\(7x + 6y - 2x\\)"
+            },
+            {
+              "explain": "Subtract \\(7x - 2x = 5x\\) and keep \\(+6y\\) unchanged.",
+              "work": "\\(7x - 2x + 6y = 5x + 6y\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(5x + 6y\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(5x + 6y\\).",
+              "work": "\\(\\text{Answer: } 5x + 6y\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -16206,6 +16326,166 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 148\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"68\" y=\"36\" width=\"170\" height=\"86\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"252\" y=\"84\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\">w</text></svg>"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an algebraic expression in simplest form for: \"The product of \\(a\\) and \\(b\\)\".",
+          "options": [
+            "\\(a + b\\)",
+            "\\(ab\\)",
+            "\\(a - b\\)",
+            "\\(\\dfrac{a}{b}\\)"
+          ],
+          "answer": 1,
+          "hint": "\"Product\" means multiply! Drop the multiplication sign between a and b.",
+          "keyPoints": [
+            {
+              "text": "algebraic expression",
+              "note": "Translate key operation words (product, sum, squared, less than) accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation described by the wording.",
+              "work": "\\(a \\times b = ab\\)"
+            },
+            {
+              "explain": "Check the order of terms and simplify using standard algebraic notation.",
+              "work": "\\(ab\\)"
+            },
+            {
+              "explain": "Test with a simple number (e.g. \\(t = 10\\) or \\(p = 3\\)) to verify the expression matches the phrase.",
+              "work": "\\(\\text{Verified: } ab\\)"
+            },
+            {
+              "explain": "Therefore, the expression is \\(ab\\).",
+              "work": "\\(\\text{Answer: } ab\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an algebraic expression in simplest form for: \"The sum of \\(5\\) and \\(r\\)\".",
+          "options": [
+            "\\(5r\\)",
+            "\\(5 + r\\)",
+            "\\(5 - r\\)",
+            "\\(\\dfrac{5}{r}\\)"
+          ],
+          "answer": 1,
+          "hint": "\"Sum\" means add! Add 5 and r together.",
+          "keyPoints": [
+            {
+              "text": "algebraic expression",
+              "note": "Translate key operation words (product, sum, squared, less than) accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation described by the wording.",
+              "work": "\\(5 + r\\)"
+            },
+            {
+              "explain": "Check the order of terms and simplify using standard algebraic notation.",
+              "work": "\\(5 + r\\)"
+            },
+            {
+              "explain": "Test with a simple number (e.g. \\(t = 10\\) or \\(p = 3\\)) to verify the expression matches the phrase.",
+              "work": "\\(\\text{Verified: } 5 + r\\)"
+            },
+            {
+              "explain": "Therefore, the expression is \\(5 + r\\).",
+              "work": "\\(\\text{Answer: } 5 + r\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an algebraic expression in simplest form for: \"\\(p\\) squared\".",
+          "options": [
+            "\\(2p\\)",
+            "\\(p^2\\)",
+            "\\(p + 2\\)",
+            "\\(\\dfrac{p}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "\"Squared\" means multiplied by itself (raised to the power of 2).",
+          "keyPoints": [
+            {
+              "text": "algebraic expression",
+              "note": "Translate key operation words (product, sum, squared, less than) accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation described by the wording.",
+              "work": "\\(p \\times p = p^2\\)"
+            },
+            {
+              "explain": "Check the order of terms and simplify using standard algebraic notation.",
+              "work": "\\(p^2\\)"
+            },
+            {
+              "explain": "Test with a simple number (e.g. \\(t = 10\\) or \\(p = 3\\)) to verify the expression matches the phrase.",
+              "work": "\\(\\text{Verified: } p^2\\)"
+            },
+            {
+              "explain": "Therefore, the expression is \\(p^2\\).",
+              "work": "\\(\\text{Answer: } p^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an algebraic expression in simplest form for: \"\\(7\\) less than \\(t\\)\".",
+          "options": [
+            "\\(7 - t\\)",
+            "\\(t - 7\\)",
+            "\\(7t\\)",
+            "\\(t + 7\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the order! \"7 less than t\" means start with t and subtract 7 (t - 7, NOT 7 - t).",
+          "keyPoints": [
+            {
+              "text": "algebraic expression",
+              "note": "Translate key operation words (product, sum, squared, less than) accurately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation described by the wording.",
+              "work": "\\(t - 7\\)"
+            },
+            {
+              "explain": "Check the order of terms and simplify using standard algebraic notation.",
+              "work": "\\(t - 7\\)"
+            },
+            {
+              "explain": "Test with a simple number (e.g. \\(t = 10\\) or \\(p = 3\\)) to verify the expression matches the phrase.",
+              "work": "\\(\\text{Verified: } t - 7\\)"
+            },
+            {
+              "explain": "Therefore, the expression is \\(t - 7\\).",
+              "work": "\\(\\text{Answer: } t - 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -40817,6 +41097,126 @@
             {
               "explain": "Therefore, the fully simplified expression is \\(12b^3c^2\\).",
               "work": "\\(\\text{Answer: } 12b^3c^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(a \\times m \\times n\\).",
+          "options": [
+            "\\(a + m + n\\)",
+            "\\(amn\\)",
+            "\\(3amn\\)",
+            "\\(a^3mn\\)"
+          ],
+          "answer": 1,
+          "hint": "Remove the multiplication signs and write the pronumerals in alphabetical order.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the letters are in alphabetical order: \\(a, m, n\\).",
+              "work": "\\(a \\times m \\times n\\)"
+            },
+            {
+              "explain": "Drop the multiplication signs in algebraic notation.",
+              "work": "\\(a \\times m \\times n = amn\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(amn\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(amn\\).",
+              "work": "\\(\\text{Answer: } amn\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(f \\times f\\).",
+          "options": [
+            "\\(2f\\)",
+            "\\(f^2\\)",
+            "\\(f + 2\\)",
+            "\\(2f^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiplying a pronumeral by itself uses an index (power of 2), NOT 2f!",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise repeated multiplication of \\(f\\) by itself (2 factors).",
+              "work": "\\(f \\times f\\)"
+            },
+            {
+              "explain": "Write in index form: \\(f \\times f = f^2\\).",
+              "work": "\\(f \\times f = f^2\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(f^2\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(f^2\\).",
+              "work": "\\(\\text{Answer: } f^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s1-q1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(4 \\times p \\times (-5) \\times q\\).",
+          "options": [
+            "\\(-pq\\)",
+            "\\(20pq\\)",
+            "\\(-20pq\\)",
+            "\\(-9pq\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the numbers first: 4 × (-5) = -20, then attach pq in alphabetical order.",
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "Use standard algebraic notation and combine like terms/factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the numbers at the front: \\(4 \\times (-5) \\times p \\times q\\).",
+              "work": "\\(4 \\times p \\times (-5) \\times q\\)"
+            },
+            {
+              "explain": "Multiply \\(4 \\times (-5) = -20\\) and remove multiplication signs.",
+              "work": "\\(4 \\times (-5) \\times p \\times q = -20pq\\)"
+            },
+            {
+              "explain": "Confirm the expression cannot be simplified any further.",
+              "work": "\\(-20pq\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(-20pq\\).",
+              "work": "\\(\\text{Answer: } -20pq\\)"
             }
           ],
           "timeLimit": 60,

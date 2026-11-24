@@ -5344,6 +5344,236 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In triangle \\(ABC\\), \\(AB = BC\\), \\(\\angle ABC = 90^\\circ\\), and \\(\\angle BAC = 45^\\circ\\). Find the size of angle \\(\\angle ACB\\).",
+          "options": [
+            "\\(30^\\circ\\)",
+            "\\(45^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(90^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "The tick marks show AB = BC (isosceles triangle), so the base angles opposite those equal sides are equal — OR subtract 90° and 45° from 180°!",
+          "keyPoints": [
+            {
+              "text": "\\angle ACB",
+              "note": "Base angles of an isosceles triangle are equal (and angles in a triangle sum to 180°)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Notice the single tick marks on sides \\(AB\\) and \\(BC\\), meaning \\(\\triangle ABC\\) is isosceles with \\(AB = BC\\).",
+              "work": "\\(AB = BC\\)"
+            },
+            {
+              "explain": "The angles opposite the equal sides are equal, so \\(\\angle ACB = \\angle BAC = 45^\\circ\\) (base angles of an isosceles triangle).",
+              "work": "\\(\\angle ACB = 45^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 210\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"88,30 88,150 208,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"88,136 102,136 102,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"82\" y1=\"90\" x2=\"94\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"148\" y1=\"144\" x2=\"148\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"106\" y=\"66\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">45°</text><path d=\"M 88 54 A 24 24 0 0 0 105 47\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><path d=\"M 184 150 A 24 24 0 0 1 191 133\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"172\" y=\"142\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\">45°</text><text x=\"74\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"160\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"218\" y=\"160\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 64 94)\">15 cm</text><text x=\"145\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Equal base angles opposite equal sides: ∠ACB = ∠BAC = 45°</text></svg>"
+              }
+            },
+            {
+              "explain": "Verify using the angle sum of a triangle (\\(180^\\circ\\)): \\(180^\\circ - 90^\\circ - 45^\\circ = 45^\\circ\\).",
+              "work": "\\(180^\\circ - 90^\\circ - 45^\\circ = 45^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\angle ACB = 45^\\circ\\).",
+              "work": "\\(\\text{Answer: } 45^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 184\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"88,30 88,150 208,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"88,136 102,136 102,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"82\" y1=\"90\" x2=\"94\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"148\" y1=\"144\" x2=\"148\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"106\" y=\"66\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">45°</text><text x=\"74\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"160\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"218\" y=\"160\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 64 94)\">15 cm</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q1ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In triangle \\(ABC\\), side \\(AB = 15\\text{ cm}\\) and sides \\(AB\\) and \\(BC\\) have matching tick marks. Find the length of side \\(BC\\).",
+          "options": [
+            "\\(7.5\\text{ cm}\\)",
+            "\\(15\\text{ cm}\\)",
+            "\\(30\\text{ cm}\\)",
+            "\\(45\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Matching tick marks on two sides of a triangle mean those two sides have the exact same length!",
+          "keyPoints": [
+            {
+              "text": "length of side \\(BC\\)",
+              "note": "Single tick marks on AB and BC indicate AB = BC."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Observe the single tick mark on side \\(AB\\) and the matching single tick mark on side \\(BC\\).",
+              "work": "\\(BC = AB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 210\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"88,30 88,150 208,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"88,136 102,136 102,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"88\" y1=\"150\" x2=\"208\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"82\" y1=\"90\" x2=\"94\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"148\" y1=\"144\" x2=\"148\" y2=\"156\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"106\" y=\"66\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">45°</text><text x=\"74\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"160\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"218\" y=\"160\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\" transform=\"rotate(-90 64 94)\">15 cm</text><text x=\"148\" y=\"170\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"800\" fill=\"#2563eb\">BC = 15 cm</text><text x=\"145\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Matching tick marks (blue) show BC = AB = 15 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the given length \\(AB = 15\\text{ cm}\\).",
+              "work": "\\(BC = 15\\text{ cm}\\)"
+            },
+            {
+              "explain": "Check: since \\(\\angle A = \\angle C = 45^\\circ\\), the sides opposite them must indeed be equal.",
+              "work": "\\(\\text{Verified: } BC = 15\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the length of side \\(BC\\) is \\(15\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 15\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 184\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"88,30 88,150 208,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"88,136 102,136 102,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"82\" y1=\"90\" x2=\"94\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"148\" y1=\"144\" x2=\"148\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"106\" y=\"66\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">45°</text><text x=\"74\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"160\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"218\" y=\"160\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 64 94)\">15 cm</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q1iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the triangle \\(\\triangle ABC\\) shown in the diagram.",
+          "options": [
+            "It is a right-angled isosceles triangle",
+            "It is a right-angled scalene triangle",
+            "It is an acute-angled isosceles triangle",
+            "It is an obtuse-angled isosceles triangle"
+          ],
+          "answer": 0,
+          "hint": "Classify by BOTH angle (look at the right-angle square at B) AND side length (two equal sides marked with ticks).",
+          "keyPoints": [
+            {
+              "text": "Classify the triangle",
+              "note": "Right angle at B -> right-angled; two equal sides -> isosceles."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Classify by angles: the square symbol at vertex \\(B\\) shows \\(\\angle B = 90^\\circ\\), so it is a right-angled triangle.",
+              "work": "\\(\\angle B = 90^\\circ \\implies \\text{right-angled}\\)"
+            },
+            {
+              "explain": "Classify by sides: the matching tick marks show two equal sides (\\(AB = BC\\)), so it is an isosceles triangle.",
+              "work": "\\(AB = BC \\implies \\text{isosceles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 210\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"88,30 88,150 208,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"88,136 102,136 102,150\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><line x1=\"88\" y1=\"30\" x2=\"88\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"88\" y1=\"150\" x2=\"208\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"3.6\"/><line x1=\"82\" y1=\"90\" x2=\"94\" y2=\"90\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"148\" y1=\"144\" x2=\"148\" y2=\"156\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"106\" y=\"66\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">45°</text><text x=\"74\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"160\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"218\" y=\"160\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 64 94)\">15 cm</text><text x=\"145\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Right angle at B (red) + two equal sides AB = BC (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine both classifications: right-angled isosceles triangle.",
+              "work": "\\(\\text{Right-angled isosceles triangle}\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\triangle ABC\\) is a right-angled isosceles triangle.",
+              "work": "\\(\\text{Answer: Right-angled isosceles triangle}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 184\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"88,30 88,150 208,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"88,136 102,136 102,150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"82\" y1=\"90\" x2=\"94\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"2\"/><line x1=\"148\" y1=\"144\" x2=\"148\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"106\" y=\"66\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">45°</text><text x=\"74\" y=\"30\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"74\" y=\"160\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"218\" y=\"160\" font-family=\"Georgia,serif\" font-size=\"15\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"64\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-90 64 94)\">15 cm</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the missing angle \\(a\\) in the right-angled triangle shown.",
+          "options": [
+            "\\(19\\)",
+            "\\(29\\)",
+            "\\(71\\)",
+            "\\(109\\)"
+          ],
+          "answer": 0,
+          "hint": "The angles in any triangle add up to 180°. Subtract the right angle (90°) and 71° from 180°.",
+          "keyPoints": [
+            {
+              "text": "missing angle \\(a\\)",
+              "note": "Angle sum of a triangle = 180° (right angle = 90°)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify all three interior angles of the triangle: \\(a^\\circ\\), \\(71^\\circ\\), and the right angle \\(90^\\circ\\).",
+              "work": "\\(a + 90 + 71 = 180\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 195\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"195\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"54,24 202,72 178,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"190.6,68.3 186.9,79.7 198.3,83.4\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"100\" y=\"54\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">a = 19°</text><text x=\"172\" y=\"122\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\">71°</text><text x=\"180\" y=\"76\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\">90°</text><text x=\"135\" y=\"185\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">90° + 71° + a° = 180° -> a = 19°</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two known angles: \\(90 + 71 = 161\\).",
+              "work": "\\(a + 161 = 180\\)"
+            },
+            {
+              "explain": "Subtract \\(161\\) from \\(180\\): \\(a = 180 - 161 = 19\\).",
+              "work": "\\(a = 180 - 161 = 19\\)"
+            },
+            {
+              "explain": "Check: \\(19^\\circ + 90^\\circ + 71^\\circ = 180^\\circ\\). Therefore, \\(a = 19\\).",
+              "work": "\\(\\text{Answer: } a = 19\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 170\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"170\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"54,24 202,72 178,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"190.6,68.3 186.9,79.7 198.3,83.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"100\" y=\"54\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">a°</text><text x=\"172\" y=\"122\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">71°</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the missing exterior angle \\(x\\) in the triangle shown.",
+          "options": [
+            "\\(30\\)",
+            "\\(130\\)",
+            "\\(150\\)",
+            "\\(160\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the exterior angle theorem: the exterior angle of a triangle equals the SUM of the two interior opposite angles (80° + 70°)!",
+          "keyPoints": [
+            {
+              "text": "exterior angle \\(x\\)",
+              "note": "Exterior angle = sum of the two opposite interior angles."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the exterior angle theorem: an exterior angle of a triangle equals the sum of the two opposite interior angles (blue).",
+              "work": "\\(x = 80 + 70\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 190\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,84 118,142 174,46\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"174\" y1=\"46\" x2=\"242\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"2\"/><circle cx=\"74\" cy=\"86\" r=\"14\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><circle cx=\"118\" cy=\"124\" r=\"14\" fill=\"#dbeafe\" fill-opacity=\"0.7\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><path d=\"M 166 64 A 20 20 0 0 0 193 39\" fill=\"#fee2e2\" fill-opacity=\"0.7\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"86\" y=\"92\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1d4ed8\">80°</text><text x=\"108\" y=\"126\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1d4ed8\">70°</text><text x=\"192\" y=\"72\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">x = 150°</text><text x=\"145\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Exterior angle x (red) = 80° + 70° (blue) = 150°</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two interior opposite angles: \\(80 + 70 = 150\\).",
+              "work": "\\(x = 150\\)"
+            },
+            {
+              "explain": "Alternative check: third interior angle \\(= 180^\\circ - 80^\\circ - 70^\\circ = 30^\\circ\\), then straight line gives \\(x = 180^\\circ - 30^\\circ = 150^\\circ\\).",
+              "work": "\\(180 - 30 = 150\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 150\\).",
+              "work": "\\(\\text{Answer: } x = 150\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 164\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,84 118,142 174,46\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"174\" y1=\"46\" x2=\"242\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"86\" y=\"92\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">80°</text><text x=\"108\" y=\"126\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">70°</text><text x=\"192\" y=\"72\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">x°</text></svg>"
+          }
         }
       ]
     },
@@ -6256,6 +6486,190 @@
             "number": "36",
             "napId": "NAP-84787",
             "sourcePage": 8
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which special type of quadrilateral is \\(ABCD\\)?",
+          "options": [
+            "Trapezium",
+            "Parallelogram",
+            "Rhombus",
+            "Kite"
+          ],
+          "answer": 0,
+          "hint": "Count how many pairs of parallel sides ABCD has: top side BC and bottom side AD are parallel, while slanted sides AB and DC are NOT parallel.",
+          "keyPoints": [
+            {
+              "text": "special type of quadrilateral",
+              "note": "A quadrilateral with exactly one pair of parallel sides is a trapezium."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check opposite sides for parallelism: horizontal sides \\(BC\\) and \\(AD\\) are parallel (highlighted in red).",
+              "work": "\\(BC \\parallel AD\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"16\" x2=\"26\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"44\" y1=\"16\" x2=\"44\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"62\" y1=\"16\" x2=\"62\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"80\" y1=\"16\" x2=\"80\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"98\" y1=\"16\" x2=\"98\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"134\" y1=\"16\" x2=\"134\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"152\" y1=\"16\" x2=\"152\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"170\" y1=\"16\" x2=\"170\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"188\" y1=\"16\" x2=\"188\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"206\" y1=\"16\" x2=\"206\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"224\" y1=\"16\" x2=\"224\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"242\" y1=\"16\" x2=\"242\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"260\" y1=\"16\" x2=\"260\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"278\" y1=\"16\" x2=\"278\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"296\" y1=\"16\" x2=\"296\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"314\" y1=\"16\" x2=\"314\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"16\" x2=\"314\" y2=\"16\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"34\" x2=\"314\" y2=\"34\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"52\" x2=\"314\" y2=\"52\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"70\" x2=\"314\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"88\" x2=\"314\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"106\" x2=\"314\" y2=\"106\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"124\" x2=\"314\" y2=\"124\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"142\" x2=\"314\" y2=\"142\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"160\" x2=\"314\" y2=\"160\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"178\" x2=\"314\" y2=\"178\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"196\" x2=\"314\" y2=\"196\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"214\" x2=\"314\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><polygon points=\"98,106 134,52 188,52 224,106\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><line x1=\"134\" y1=\"52\" x2=\"188\" y2=\"52\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"98\" y1=\"106\" x2=\"224\" y2=\"106\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><text x=\"88\" y=\"118\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"126\" y=\"47\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"192\" y=\"47\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"230\" y=\"118\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">D</text><text x=\"170\" y=\"240\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Exactly one pair of parallel sides (BC || AD) -> Trapezium</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the other pair of opposite sides (\\(AB\\) and \\(DC\\)): they slant toward each other and are NOT parallel.",
+              "work": "\\(AB \\nparallel DC\\)"
+            },
+            {
+              "explain": "Recall that a quadrilateral with exactly one pair of parallel sides is a trapezium.",
+              "work": "\\(\\text{1 pair of parallel sides} = \\text{Trapezium}\\)"
+            },
+            {
+              "explain": "Therefore, \\(ABCD\\) is a trapezium.",
+              "work": "\\(\\text{Answer: Trapezium}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 224\" width=\"65%\" height=\"auto\" style=\"max-width:442px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"340\" height=\"224\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"16\" x2=\"26\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"44\" y1=\"16\" x2=\"44\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"62\" y1=\"16\" x2=\"62\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"80\" y1=\"16\" x2=\"80\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"98\" y1=\"16\" x2=\"98\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"116\" y1=\"16\" x2=\"116\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"134\" y1=\"16\" x2=\"134\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"152\" y1=\"16\" x2=\"152\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"170\" y1=\"16\" x2=\"170\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"188\" y1=\"16\" x2=\"188\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"206\" y1=\"16\" x2=\"206\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"224\" y1=\"16\" x2=\"224\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"242\" y1=\"16\" x2=\"242\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"260\" y1=\"16\" x2=\"260\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"278\" y1=\"16\" x2=\"278\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"296\" y1=\"16\" x2=\"296\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"314\" y1=\"16\" x2=\"314\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"16\" x2=\"314\" y2=\"16\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"34\" x2=\"314\" y2=\"34\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"52\" x2=\"314\" y2=\"52\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"70\" x2=\"314\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"88\" x2=\"314\" y2=\"88\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"106\" x2=\"314\" y2=\"106\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"124\" x2=\"314\" y2=\"124\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"142\" x2=\"314\" y2=\"142\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"160\" x2=\"314\" y2=\"160\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"178\" x2=\"314\" y2=\"178\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"196\" x2=\"314\" y2=\"196\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><line x1=\"26\" y1=\"214\" x2=\"314\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"0.9\"/><polygon points=\"98,106 134,52 188,52 224,106\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"88\" y=\"118\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"126\" y=\"47\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"192\" y=\"47\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">C</text><text x=\"230\" y=\"118\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">D</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the missing interior angle \\(b\\) in the quadrilateral shown.",
+          "options": [
+            "\\(160\\)",
+            "\\(170\\)",
+            "\\(180\\)",
+            "\\(190\\)"
+          ],
+          "answer": 1,
+          "hint": "The interior angles of ANY quadrilateral add up to 360°. Add 80° + 35° + 75° and subtract from 360°.",
+          "keyPoints": [
+            {
+              "text": "quadrilateral",
+              "note": "Angle sum of a quadrilateral = 360°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the sides: the shape has \\(4\\) sides (a quadrilateral), so its four interior angles sum to \\(360^\\circ\\).",
+              "work": "\\(b + 80 + 35 + 75 = 360\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 190\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"62,42 214,24 102,146 74,104\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"76\" y=\"60\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">80°</text><text x=\"172\" y=\"46\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">35°</text><text x=\"98\" y=\"132\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\">75°</text><text x=\"90\" y=\"102\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">b = 170°</text><text x=\"140\" y=\"180\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0369a1\">Angle sum of quadrilateral = 360° -> b = 360 - 190 = 170°</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the three known angles: \\(80 + 35 = 115\\), then \\(115 + 75 = 190\\).",
+              "work": "\\(b + 190 = 360\\)"
+            },
+            {
+              "explain": "Subtract \\(190\\) from \\(360\\): \\(b = 360 - 190 = 170\\).",
+              "work": "\\(b = 360 - 190 = 170\\)"
+            },
+            {
+              "explain": "Check: \\(170^\\circ + 80^\\circ + 35^\\circ + 75^\\circ = 360^\\circ\\). Therefore, \\(b = 170\\).",
+              "work": "\\(\\text{Answer: } b = 170\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 164\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"62,42 214,24 102,146 74,104\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"76\" y=\"60\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">80°</text><text x=\"172\" y=\"46\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">35°</text><text x=\"98\" y=\"132\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">75°</text><text x=\"90\" y=\"102\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">b°</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the quadrilateral properties table shown, which quadrilateral has ALL FIVE listed properties (both opposite sides parallel, all sides equal, adjacent sides perpendicular, opposite sides equal, and diagonals equal)?",
+          "options": [
+            "Rectangle",
+            "Rhombus",
+            "Square",
+            "Trapezium"
+          ],
+          "answer": 2,
+          "hint": "Check which shape combines EVERY property of both a rectangle (90° corners & equal diagonals) and a rhombus (all 4 sides equal)!",
+          "keyPoints": [
+            {
+              "text": "ALL FIVE listed properties",
+              "note": "Only a square has all sides equal AND adjacent sides perpendicular AND equal diagonals."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check Rectangle: it has parallel/equal opposite sides, perpendicular adjacent sides, and equal diagonals, but NOT all sides equal.",
+              "work": "\\(\\text{Rectangle: 4 of 5 properties}\\)"
+            },
+            {
+              "explain": "Check Rhombus: it has parallel/equal opposite sides and all sides equal, but NOT perpendicular adjacent sides or equal diagonals.",
+              "work": "\\(\\text{Rhombus: 3 of 5 properties}\\)"
+            },
+            {
+              "explain": "Check Square: it satisfies every single one of the \\(5\\) properties (all 5 ticks in the table).",
+              "work": "\\(\\text{Square: all 5 properties}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 215\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"215\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"10\" y=\"12\" width=\"152\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"86\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">Property</text><rect x=\"162\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"189\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Parallelogram</text><rect x=\"216\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"243\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rectangle</text><rect x=\"270\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"297\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Trapezium</text><rect x=\"324\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"351\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rhombus</text><rect x=\"378\" y=\"12\" width=\"54\" height=\"26\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"405\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#b45309\">Square</text><rect x=\"10\" y=\"38\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"56\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Both opposite sides parallel</text><rect x=\"162\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"351\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"378\" y=\"38\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"66\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"84\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">All sides are equal</text><rect x=\"162\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"351\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"378\" y=\"66\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"94\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Adjacent sides perpendicular</text><rect x=\"162\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"113\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"94\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"113\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"122\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Opposite sides are equal</text><rect x=\"162\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"351\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"378\" y=\"122\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"150\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"168\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Diagonals are equal</text><rect x=\"162\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"169\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"150\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"169\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><text x=\"220\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Completed table: Square (highlighted) has all 5 ticks!</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, the Square has all five properties.",
+              "work": "\\(\\text{Answer: Square}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"10\" y=\"12\" width=\"152\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"86\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">Property</text><rect x=\"162\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"189\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Parallelogram</text><rect x=\"216\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"243\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rectangle</text><rect x=\"270\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"297\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Trapezium</text><rect x=\"324\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"351\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rhombus</text><rect x=\"378\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"405\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Square</text><rect x=\"10\" y=\"38\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"56\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Both opposite sides parallel</text><rect x=\"162\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"66\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"84\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">All sides are equal</text><rect x=\"162\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"94\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Adjacent sides perpendicular</text><rect x=\"162\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"122\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Opposite sides are equal</text><rect x=\"162\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"150\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"168\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Diagonals are equal</text><rect x=\"162\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p1-s1-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "From the quadrilateral properties table, which property is ALWAYS true for a Rhombus, but NOT always true for a Rectangle?",
+          "options": [
+            "All sides are equal",
+            "The diagonals are equal",
+            "The adjacent sides are perpendicular",
+            "Both opposite sides are parallel"
+          ],
+          "answer": 0,
+          "hint": "Compare the Rhombus and Rectangle columns: what defines a rhombus that a general rectangle does not have?",
+          "keyPoints": [
+            {
+              "text": "Rhombus",
+              "note": "A rhombus always has all 4 sides equal; a rectangle does not."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the three properties true for every Rhombus: both opposite sides parallel, all sides equal, opposite sides equal.",
+              "work": "\\(\\text{Rhombus: parallel, opposite equal, all sides equal}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 215\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"215\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"10\" y=\"12\" width=\"152\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"86\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">Property</text><rect x=\"162\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"189\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Parallelogram</text><rect x=\"216\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"243\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rectangle</text><rect x=\"270\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"297\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Trapezium</text><rect x=\"324\" y=\"12\" width=\"54\" height=\"26\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"351\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#b45309\">Rhombus</text><rect x=\"378\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"405\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Square</text><rect x=\"10\" y=\"38\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"56\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Both opposite sides parallel</text><rect x=\"162\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"38\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"351\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"378\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"66\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"84\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">All sides are equal</text><rect x=\"162\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"66\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"351\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"378\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"85\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"94\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Adjacent sides perpendicular</text><rect x=\"162\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"113\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"94\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"113\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"122\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Opposite sides are equal</text><rect x=\"162\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"122\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"351\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"378\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"10\" y=\"150\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"168\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Diagonals are equal</text><rect x=\"162\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"243\" y=\"169\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><rect x=\"270\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"150\" width=\"54\" height=\"28\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"405\" y=\"169\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">✓</text><text x=\"220\" y=\"205\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Rhombus column highlighted: \"All sides are equal\" is NOT ticked for Rectangle</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the four properties true for every Rectangle: both opposite sides parallel, opposite sides equal, adjacent sides perpendicular, diagonals equal.",
+              "work": "\\(\\text{Rectangle: does NOT require all sides equal}\\)"
+            },
+            {
+              "explain": "Identify the property ticked for Rhombus but NOT for Rectangle: \"All sides are equal\".",
+              "work": "\\(\\text{Difference: All sides are equal}\\)"
+            },
+            {
+              "explain": "Therefore, \"All sides are equal\" is always true for a rhombus but not for a general rectangle.",
+              "work": "\\(\\text{Answer: All sides are equal}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 190\" width=\"65%\" height=\"auto\" style=\"max-width:572px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"440\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"10\" y=\"12\" width=\"152\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"86\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#0f172a\">Property</text><rect x=\"162\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"189\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Parallelogram</text><rect x=\"216\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"243\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rectangle</text><rect x=\"270\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"297\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Trapezium</text><rect x=\"324\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"351\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Rhombus</text><rect x=\"378\" y=\"12\" width=\"54\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.1\"/><text x=\"405\" y=\"29\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"8.8\" font-weight=\"800\" fill=\"#0f172a\">Square</text><rect x=\"10\" y=\"38\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"56\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Both opposite sides parallel</text><rect x=\"162\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"57\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"38\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"66\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"84\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">All sides are equal</text><rect x=\"162\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"66\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"94\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"112\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Adjacent sides perpendicular</text><rect x=\"162\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"94\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"122\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"140\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Opposite sides are equal</text><rect x=\"162\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"189\" y=\"141\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">✓</text><rect x=\"216\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"122\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"10\" y=\"150\" width=\"152\" height=\"28\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"16\" y=\"168\" font-family=\"Arial,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#0f172a\">Diagonals are equal</text><rect x=\"162\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"216\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"270\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"324\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/><rect x=\"378\" y=\"150\" width=\"54\" height=\"28\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1\"/></svg>"
           }
         }
       ]

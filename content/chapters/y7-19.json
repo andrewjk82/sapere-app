@@ -810,6 +810,408 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 182\" width=\"65%\" height=\"auto\" style=\"max-width:468px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"182\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"108\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">Dynamo</text><text x=\"252\" y=\"28\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">Energy Plus</text><line x1=\"28\" y1=\"36\" x2=\"332\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"162\" y1=\"14\" x2=\"162\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"194\" y1=\"14\" x2=\"194\" y2=\"168\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"178\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">1</text><text x=\"148\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"126\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"208\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"230\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"252\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"274\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"296\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"178\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2</text><text x=\"148\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">3</text><text x=\"126\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"104\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"82\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"208\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"230\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"252\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"178\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"148\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"126\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"104\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"82\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"208\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"230\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text><text x=\"252\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"178\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"148\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"208\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text><text x=\"230\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"178\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"148\" y=\"154\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">0</text></svg>"
           }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A class was surveyed about how many pets they have, and the results are shown in the dot plot. How many students were in the class?",
+          "options": [
+            "\\(9\\)",
+            "\\(20\\)",
+            "\\(22\\)",
+            "\\(24\\)"
+          ],
+          "answer": 2,
+          "hint": "Each dot represents 1 student. Count the dots in every column and add them: 4 + 9 + 4 + 3 + 1 + 1.",
+          "keyPoints": [
+            {
+              "text": "How many students",
+              "note": "Total students = total number of dots."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the dots in each column: \\(0\\) pets (\\(4\\)), \\(1\\) pet (\\(9\\)), \\(2\\) pets (\\(4\\)), \\(3\\) pets (\\(3\\)), \\(4\\) pets (\\(1\\)), \\(8\\) pets (\\(1\\)).",
+              "work": "\\(4 + 9 + 4 + 3 + 1 + 1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 226\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"226\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"56\" y=\"102\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">4</text><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"32\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">9</text><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"104\" y=\"102\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">4</text><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"116\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">3</text><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">1</text><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"248\" y=\"144\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">1</text><text x=\"155\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Column counts: 4 + 9 + 4 + 3 + 1 + 1 = 22 students</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the first three columns: \\(4 + 9 + 4 = 17\\).",
+              "work": "\\(4 + 9 + 4 = 17\\)"
+            },
+            {
+              "explain": "Add the remaining columns: \\(17 + 3 + 1 + 1 = 22\\).",
+              "work": "\\(17 + 5 = 22\\)"
+            },
+            {
+              "explain": "Therefore, there were \\(22\\) students in the class.",
+              "work": "\\(\\text{Answer: } 22\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 200\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the \"Pets at home survey\" dot plot, what was the modal (mode) score for the number of pets?",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "The mode is the SCORE on the horizontal axis with the tallest stack of dots (not the number of dots itself!).",
+          "keyPoints": [
+            {
+              "text": "modal (mode) score",
+              "note": "Read the horizontal axis value under the tallest column of dots."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the tallest column of dots on the dot plot: the column above \\(1\\) pet has \\(9\\) dots.",
+              "work": "\\(\\text{Tallest column is at } 1\\text{ pet (9 dots)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 226\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"226\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#dc2626\"/><rect x=\"71\" y=\"36\" width=\"18\" height=\"130\" rx=\"5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"155\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Tallest column is at 1 pet (9 dots) -> Mode = 1</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the score on the horizontal axis (not the frequency \\(9\\)): \\(1\\).",
+              "work": "\\(\\text{Mode} = 1\\)"
+            },
+            {
+              "explain": "Confirm no other column has \\(9\\) or more dots.",
+              "work": "\\(\\text{Verified: Mode} = 1\\)"
+            },
+            {
+              "explain": "Therefore, the modal score is \\(1\\).",
+              "work": "\\(\\text{Answer: } 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 200\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the \"Pets at home survey\" dot plot, are there any outliers, and if so, what score is the outlier?",
+          "options": [
+            "Yes, 8",
+            "Yes, 4",
+            "Yes, 0",
+            "No, there are no outliers"
+          ],
+          "answer": 0,
+          "hint": "An outlier is a score separated by a wide gap from the rest of the data cluster (0 to 4).",
+          "keyPoints": [
+            {
+              "text": "outliers",
+              "note": "Look for a dot isolated far away from the main cluster."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Observe the main cluster of scores: \\(21\\) of the \\(22\\) students have between \\(0\\) and \\(4\\) pets.",
+              "work": "\\(\\text{Main cluster: } 0\\text{ to } 4\\)"
+            },
+            {
+              "explain": "Notice the wide empty gap at \\(5, 6,\\) and \\(7\\), followed by a single isolated dot at \\(8\\).",
+              "work": "\\(\\text{Isolated score} = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 226\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"226\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#dc2626\"/><rect x=\"239\" y=\"148\" width=\"18\" height=\"18\" rx=\"5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><text x=\"155\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Score 8 is isolated far from 0–4 -> Outlier = 8</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, \\(8\\) is an outlier.",
+              "work": "\\(\\text{Outlier} = 8\\)"
+            },
+            {
+              "explain": "Hence, the answer is: Yes, \\(8\\).",
+              "work": "\\(\\text{Answer: Yes, } 8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 200\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "From the \"Pets at home survey\" dot plot (\\(22\\) students), find the median number of pets.",
+          "options": [
+            "\\(0.5\\)",
+            "\\(1\\)",
+            "\\(1.5\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "hint": "With 22 students, the median is the average of the 11th and 12th values in order. Count dots from the left: column 0 has 4 dots (1st–4th), column 1 has 9 dots (5th–13th)!",
+          "keyPoints": [
+            {
+              "text": "median number of pets",
+              "note": "For n = 22, find the 11th and 12th ordered values."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the median position for \\(n = 22\\): \\(\\dfrac{22 + 1}{2} = 11.5\\) (average of the 11th and 12th values).",
+              "work": "\\(\\text{Position} = 11.5\\text{ (11th and 12th)}\\)"
+            },
+            {
+              "explain": "Count dots from left to right: column \\(0\\) holds positions \\(1\\text{–}4\\); column \\(1\\) holds positions \\(5\\text{–}13\\).",
+              "work": "\\(\\text{11th} = 1, \\quad \\text{12th} = 1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 226\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"226\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#dc2626\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#dc2626\"/><rect x=\"71\" y=\"36\" width=\"18\" height=\"130\" rx=\"5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"155\" y=\"218\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Both the 11th and 12th dots lie in column 1 -> Median = 1</text></svg>"
+              }
+            },
+            {
+              "explain": "Average the 11th and 12th values: \\(\\dfrac{1 + 1}{2} = 1\\).",
+              "work": "\\(\\text{Median} = \\dfrac{1 + 1}{2} = 1\\)"
+            },
+            {
+              "explain": "Therefore, the median number of pets is \\(1\\).",
+              "work": "\\(\\text{Answer: } 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 200\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"155\" y=\"20\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">Pets at home survey</text><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"166\" x2=\"274\" y2=\"166\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"56\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">0</text><circle cx=\"56\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"56\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"80\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"80\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"86\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"72\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"58\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"80\" cy=\"44\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"104\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">2</text><circle cx=\"104\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"104\" cy=\"114\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"128\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">3</text><circle cx=\"128\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"142\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"128\" cy=\"128\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"152\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">4</text><circle cx=\"152\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/><text x=\"176\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"200\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">6</text><text x=\"224\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"248\" y=\"182\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\">8</text><circle cx=\"248\" cy=\"156\" r=\"3.8\" fill=\"#0f172a\"/></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the data set \\(4, 5, 9, 3, 7, 8, 4, 10, 6, 4, 3\\), calculate the range and mode.",
+          "options": [
+            "Range = 7, Mode = 4",
+            "Range = 7, Mode = 3",
+            "Range = 6, Mode = 4",
+            "Range = 10, Mode = 4"
+          ],
+          "answer": 0,
+          "hint": "Sort the data first (3, 3, 4, 4, 4, 5, 6, 7, 8, 9, 10). Range = Max - Min; Mode = most frequent score.",
+          "keyPoints": [
+            {
+              "text": "range and mode",
+              "note": "Range = 10 - 3; Mode is the number appearing three times."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Arrange the \\(11\\) scores in ascending order.",
+              "work": "\\(3, 3, 4, 4, 4, 5, 6, 7, 8, 9, 10\\)"
+            },
+            {
+              "explain": "Calculate the range: \\(\\text{Maximum} - \\text{Minimum} = 10 - 3 = 7\\).",
+              "work": "\\(\\text{Range} = 10 - 3 = 7\\)"
+            },
+            {
+              "explain": "Find the mode: \\(4\\) appears \\(3\\) times (more than any other value).",
+              "work": "\\(\\text{Mode} = 4\\)"
+            },
+            {
+              "explain": "Therefore, Range \\(= 7\\) and Mode \\(= 4\\).",
+              "work": "\\(\\text{Range} = 7, \\; \\text{Mode} = 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the data set \\(4, 5, 9, 3, 7, 8, 4, 10, 6, 4, 3\\), calculate the mean (to \\(2\\) decimal places) and median.",
+          "options": [
+            "Mean = 5.73, Median = 5",
+            "Mean = 5.73, Median = 4",
+            "Mean = 6.30, Median = 5",
+            "Mean = 5.00, Median = 5"
+          ],
+          "answer": 0,
+          "hint": "Sum all 11 values (63) and divide by 11 for the mean. For the median of 11 sorted values, pick the 6th value!",
+          "keyPoints": [
+            {
+              "text": "mean (to \\(2\\) decimal places) and median",
+              "note": "Mean = 63 ÷ 11 = 5.7272...; Median = 6th sorted value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Sort the \\(11\\) values: \\(3, 3, 4, 4, 4, 5, 6, 7, 8, 9, 10\\).",
+              "work": "\\(n = 11\\)"
+            },
+            {
+              "explain": "Sum all \\(11\\) values: \\(3 + 3 + 4 + 4 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 63\\).",
+              "work": "\\(\\text{Mean} = \\dfrac{63}{11} = 5.7272... \\approx 5.73\\)"
+            },
+            {
+              "explain": "Find the median position: \\(\\dfrac{11 + 1}{2} = 6\\text{th value}\\), which is \\(5\\).",
+              "work": "\\(\\text{Median} = 5\\)"
+            },
+            {
+              "explain": "Therefore, Mean \\(\\approx 5.73\\) (\\(5.\\dot{7}\\dot{2}\\)) and Median \\(= 5\\).",
+              "work": "\\(\\text{Mean} = 5.73, \\; \\text{Median} = 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the stem-and-leaf plot shown, find the maximum score, minimum score, and range.",
+          "options": [
+            "Maximum = 57, Minimum = 35, Range = 22",
+            "Maximum = 57, Minimum = 35, Range = 20",
+            "Maximum = 51, Minimum = 35, Range = 16",
+            "Maximum = 7, Minimum = 5, Range = 2"
+          ],
+          "answer": 0,
+          "hint": "Read the last leaf (5|7 = 57) for the maximum and the first leaf (3|5 = 35) for the minimum, then subtract!",
+          "keyPoints": [
+            {
+              "text": "maximum score, minimum score, and range",
+              "note": "Max = 57, Min = 35, Range = 57 - 35."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the largest score from the bottom row: \\(5 \\mid 7 = 57\\).",
+              "work": "\\(\\text{Maximum} = 57\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 158\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"158\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"72\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"90\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"26\" y1=\"36\" x2=\"210\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"14\" x2=\"80\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"70\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><circle cx=\"98\" cy=\"53\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"98\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">5</text><text x=\"120\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"142\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"164\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"70\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"98\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"70\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"98\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><circle cx=\"120\" cy=\"101\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"120\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">7</text><text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Minimum = 35, Maximum = 57 -> Range = 57 - 35 = 22</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the smallest score from the top row: \\(3 \\mid 5 = 35\\).",
+              "work": "\\(\\text{Minimum} = 35\\)"
+            },
+            {
+              "explain": "Subtract to find the range: \\(57 - 35 = 22\\).",
+              "work": "\\(\\text{Range} = 57 - 35 = 22\\)"
+            },
+            {
+              "explain": "Therefore, Maximum \\(= 57\\), Minimum \\(= 35\\), and Range \\(= 22\\).",
+              "work": "\\(\\text{Max} = 57, \\; \\text{Min} = 35, \\; \\text{Range} = 22\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 132\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"72\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"90\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"26\" y1=\"36\" x2=\"210\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"14\" x2=\"80\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"70\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"98\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"120\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"142\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"164\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"70\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"98\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"70\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"98\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the stem-and-leaf plot shown, find the median and mode.",
+          "options": [
+            "Median = 40.5, Mode = 37",
+            "Median = 42, Mode = 37",
+            "Median = 39, Mode = 37",
+            "Median = 40.5, Mode = 7"
+          ],
+          "answer": 0,
+          "hint": "There are 8 scores (35, 37, 37, 39, 42, 48, 51, 57). Average the 4th (39) and 5th (42) for the median; include the stem for the mode!",
+          "keyPoints": [
+            {
+              "text": "median and mode",
+              "note": "Median = (39 + 42) ÷ 2 = 40.5; Mode = 37."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List all \\(8\\) ordered scores: \\(35, 37, 37, 39, 42, 48, 51, 57\\).",
+              "work": "\\(n = 8\\)"
+            },
+            {
+              "explain": "Find the median by averaging the 4th value (\\(39\\)) and 5th value (\\(42\\)): \\(\\dfrac{39 + 42}{2} = \\dfrac{81}{2} = 40.5\\).",
+              "work": "\\(\\text{Median} = \\dfrac{39 + 42}{2} = 40.5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 158\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"158\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"72\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"90\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"26\" y1=\"36\" x2=\"210\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"14\" x2=\"80\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"70\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"98\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"120\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"142\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><circle cx=\"164\" cy=\"53\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"164\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">9</text><text x=\"70\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><circle cx=\"98\" cy=\"77\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"98\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">2</text><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"70\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"98\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">4th value = 39, 5th value = 42 -> Median = 40.5; Mode = 37</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the mode: leaf \\(7\\) repeats twice on stem \\(3\\), giving \\(37\\).",
+              "work": "\\(\\text{Mode} = 37\\)"
+            },
+            {
+              "explain": "Therefore, Median \\(= 40.5\\) and Mode \\(= 37\\).",
+              "work": "\\(\\text{Median} = 40.5, \\; \\text{Mode} = 37\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 132\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"72\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"90\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"26\" y1=\"36\" x2=\"210\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"14\" x2=\"80\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"70\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"98\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"120\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"142\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"164\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"70\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"98\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"70\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"98\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text></svg>"
+          }
+        },
+        {
+          "id": "wghs20-y7-yr-p2-s2-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the stem-and-leaf plot shown, find the mean.",
+          "options": [
+            "\\(40.5\\)",
+            "\\(43.25\\)",
+            "\\(44.5\\)",
+            "\\(43.5\\)"
+          ],
+          "answer": 1,
+          "hint": "Add all 8 scores (35 + 37 + 37 + 39 + 42 + 48 + 51 + 57 = 346) and divide by 8.",
+          "keyPoints": [
+            {
+              "text": "mean",
+              "note": "Mean = Sum of all 8 values ÷ 8."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "List all \\(8\\) values: \\(35, 37, 37, 39, 42, 48, 51, 57\\).",
+              "work": "\\(n = 8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 158\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"158\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"72\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"90\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"26\" y1=\"36\" x2=\"210\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"14\" x2=\"80\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"70\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><circle cx=\"98\" cy=\"53\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"98\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">5</text><circle cx=\"120\" cy=\"53\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"120\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">7</text><circle cx=\"142\" cy=\"53\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"142\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">7</text><circle cx=\"164\" cy=\"53\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"164\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">9</text><text x=\"70\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><circle cx=\"98\" cy=\"77\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"98\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">2</text><circle cx=\"120\" cy=\"77\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">8</text><text x=\"70\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><circle cx=\"98\" cy=\"101\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"98\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">1</text><circle cx=\"120\" cy=\"101\" r=\"9.5\" fill=\"#fde68a\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"120\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"800\" fill=\"#b91c1c\">7</text><text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Sum all 8 values = 346; Mean = 346 ÷ 8 = 43.25</text></svg>"
+              }
+            },
+            {
+              "explain": "Add all \\(8\\) values: \\(35 + 37 + 37 + 39 + 42 + 48 + 51 + 57 = 346\\).",
+              "work": "\\(\\text{Sum} = 346\\)"
+            },
+            {
+              "explain": "Divide the sum by \\(8\\): \\(346 \\div 8 = 43.25\\).",
+              "work": "\\(\\text{Mean} = \\dfrac{346}{8} = 43.25\\)"
+            },
+            {
+              "explain": "Therefore, the mean is \\(43.25\\).",
+              "work": "\\(\\text{Answer: } 43.25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 132\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"132\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><text x=\"72\" y=\"28\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Stem</text><text x=\"90\" y=\"28\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Leaf</text><line x1=\"26\" y1=\"36\" x2=\"210\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"14\" x2=\"80\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"70\" y=\"58\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">3</text><text x=\"98\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text><text x=\"120\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"142\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text><text x=\"164\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">9</text><text x=\"70\" y=\"82\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">4</text><text x=\"98\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">2</text><text x=\"120\" y=\"82\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">8</text><text x=\"70\" y=\"106\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">5</text><text x=\"98\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">1</text><text x=\"120\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">7</text></svg>"
+          }
         }
       ]
     }
