@@ -448,6 +448,276 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-e1-mc4",
+          "type": "mc",
+          "stem": "Two forces \\(\\underset{\\sim}{P}\\) and \\(\\underset{\\sim}{Q}\\) act on a body. \\(\\underset{\\sim}{P}\\) acts in the direction \\(\\underset{\\sim}{i}\\) with magnitude one newton and \\(\\underset{\\sim}{Q}\\) acts in the direction of \\(\\underset{\\sim}{i}+\\sqrt{3}\\,\\underset{\\sim}{j}\\) with magnitude four newtons. The magnitude of the total force acting on the body, in newtons, is",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\)",
+            "\\(\\sqrt{15}\\)",
+            "\\(\\sqrt{17}\\)",
+            "\\(\\sqrt{21}\\)"
+          ],
+          "answer": 3,
+          "hint": "Make \\(Q\\) a vector: divide \\(\\underset{\\sim}{i}+\\sqrt{3}\\underset{\\sim}{j}\\) by its length 2 (unit vector) and multiply by 4.",
+          "steps": [
+            {
+              "explain": "\\(P\\) has magnitude 1 and direction \\(\\underset{\\sim}{i}\\).",
+              "work": "\\(P=1\\cdot\\begin{pmatrix}1\\\\ 0\\end{pmatrix}=\\begin{pmatrix}1\\\\ 0\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "The direction \\(i+\\sqrt{3}j\\) has length \\(\\sqrt{1+3}=2\\), so the unit vector is \\(\\dfrac{1}{2}(i+\\sqrt{3}j)\\). Multiply by the magnitude 4.",
+              "work": "\\(Q=4\\times\\dfrac{1}{2}\\begin{pmatrix}1\\\\ \\sqrt{3}\\end{pmatrix}=\\begin{pmatrix}2\\\\ 2\\sqrt{3}\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Add the forces to get the resultant.",
+              "work": "\\(P+Q=\\begin{pmatrix}1+2\\\\ 0+2\\sqrt{3}\\end{pmatrix}=\\begin{pmatrix}3\\\\ 2\\sqrt{3}\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "The magnitude is \\(\\sqrt{x^{2}+y^{2}}\\).",
+              "work": "\\(|P+Q|=\\sqrt{3^{2}+\\left(2\\sqrt{3}\\right)^{2}}=\\sqrt{9+12}=\\sqrt{21}\\ \\text{N}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "magnitude of the total force",
+              "note": "Resultant = vector sum. Turn a direction into a force by scaling the unit vector."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14b",
+          "type": "mc",
+          "stem": "Fred, Mario and Romeo are fighting over a crown. The three of them are holding on to the crown in the formation as shown in the diagram. If no one manages to pull the crown in their direction (i.e. the crown does not move) and Fred is applying a force of 40 N, exactly how much force are Mario and Romeo applying to the crown?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 270\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"80.0\" y1=\"140.0\" x2=\"320.0\" y2=\"140.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"40.0\" x2=\"200.0\" y2=\"240.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"200\" cy=\"140\" r=\"20\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"4\"/><line x1=\"200.0\" y1=\"140.0\" x2=\"250.0\" y2=\"226.6\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"226.6\" x2=\"250.0\" y2=\"215.6\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"226.6\" x2=\"240.5\" y2=\"221.1\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"140.0\" x2=\"129.3\" y2=\"69.3\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"129.3\" y1=\"69.3\" x2=\"132.1\" y2=\"79.9\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"129.3\" y1=\"69.3\" x2=\"139.9\" y2=\"72.1\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"140.0\" x2=\"200.0\" y2=\"40.0\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"40.0\" x2=\"194.5\" y2=\"49.5\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"40.0\" x2=\"205.5\" y2=\"49.5\" stroke=\"#1e293b\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M200,92 A48,48 0 0 0 166.1,106.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"176.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M200,192 A52,52 0 0 0 226.0,185.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"214.0\" y=\"212.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"208.0\" y=\"44.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Mario</text><text x=\"123.3\" y=\"61.3\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Romeo</text><text x=\"258.0\" y=\"244.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Fred</text></svg>"
+          },
+          "options": [
+            "Mario: \\(20(\\sqrt{3}-1)\\) N, Romeo: \\(20\\sqrt{2}\\) N",
+            "Mario: \\(20(\\sqrt{3}+1)\\) N, Romeo: \\(20\\sqrt{2}\\) N",
+            "Mario: \\(20\\sqrt{3}\\) N, Romeo: \\(40\\) N",
+            "Mario: \\(20(\\sqrt{3}-1)\\) N, Romeo: \\(20\\) N"
+          ],
+          "answer": 0,
+          "hint": "The crown is in equilibrium: the three force vectors add to zero. Resolve each force into horizontal and vertical components.",
+          "steps": [
+            {
+              "explain": "Let \\(F\\), \\(M\\), \\(R\\) be the forces of Fred, Mario and Romeo (\\(F=40\\)). Use \\(i\\) to the right and \\(j\\) up. Fred's force makes \\(30^{\\circ}\\) with the downward vertical, so it points right and down.",
+              "work": "\\(F=\\left(40\\sin 30^{\\circ}\\right)\\underset{\\sim}{i}-\\left(40\\cos 30^{\\circ}\\right)\\underset{\\sim}{j}=20\\,\\underset{\\sim}{i}-20\\sqrt{3}\\,\\underset{\\sim}{j}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"80.0\" y1=\"140.0\" x2=\"320.0\" y2=\"140.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"40.0\" x2=\"200.0\" y2=\"240.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"200\" cy=\"140\" r=\"20\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"4\"/><line x1=\"200.0\" y1=\"140.0\" x2=\"252.0\" y2=\"230.1\" stroke=\"#1e293b\" stroke-width=\"3.8\" stroke-linecap=\"round\"/><line x1=\"252.0\" y1=\"230.1\" x2=\"252.0\" y2=\"218.1\" stroke=\"#1e293b\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"252.0\" y1=\"230.1\" x2=\"241.6\" y2=\"224.1\" stroke=\"#1e293b\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"262.0\" y=\"252.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">F = 40 N</text><line x1=\"200.0\" y1=\"140.0\" x2=\"148.0\" y2=\"88.0\" stroke=\"#dc2626\" stroke-width=\"3.8\" stroke-linecap=\"round\"/><line x1=\"148.0\" y1=\"88.0\" x2=\"151.1\" y2=\"99.6\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"148.0\" y1=\"88.0\" x2=\"159.6\" y2=\"91.1\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"78.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R = 20√2 N</text><line x1=\"200.0\" y1=\"140.0\" x2=\"200.0\" y2=\"101.9\" stroke=\"#047857\" stroke-width=\"3.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"101.9\" x2=\"194.0\" y2=\"112.3\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"101.9\" x2=\"206.0\" y2=\"112.3\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><text x=\"214.0\" y=\"95.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M = 20(√3 − 1) N</text><line x1=\"200.0\" y1=\"140.0\" x2=\"252.0\" y2=\"140.0\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"252.0\" y1=\"140.0\" x2=\"252.0\" y2=\"230.1\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"244.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"262.0\" y=\"185.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20√3</text><line x1=\"200.0\" y1=\"140.0\" x2=\"148.0\" y2=\"140.0\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"148.0\" y1=\"140.0\" x2=\"148.0\" y2=\"88.0\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"156.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"140.0\" y=\"118.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text></svg>"
+              }
+            },
+            {
+              "explain": "The crown does not move, so the total force is zero: \\(F+M+R=0\\). Mario pulls straight up (only a \\(j\\)-component), so the \\(i\\)-components must cancel between Fred and Romeo: Romeo's \\(i\\)-component is \\(-20\\).",
+              "work": "\\(R_{i}+20=0\\ \\Rightarrow\\ R_{i}=-20\\)"
+            },
+            {
+              "explain": "Romeo's force is at \\(45^{\\circ}\\) to the vertical (up and left), so its \\(j\\)-component has the same size as its \\(i\\)-component: \\(R_{j}=+20\\). Its magnitude is",
+              "work": "\\(R=\\sqrt{(-20)^{2}+20^{2}}=\\sqrt{800}=20\\sqrt{2}\\ \\text{N}\\)"
+            },
+            {
+              "explain": "Now the \\(j\\)-components: Fred's \\(-20\\sqrt{3}\\), Romeo's \\(+20\\), Mario's \\(M\\) must sum to zero.",
+              "work": "\\(-20\\sqrt{3}+20+M=0\\ \\Rightarrow\\ M=20\\sqrt{3}-20=20(\\sqrt{3}-1)\\ \\text{N}\\)"
+            },
+            {
+              "explain": "Answer: Mario \\(20(\\sqrt{3}-1)\\approx 14.6\\) N, Romeo \\(20\\sqrt{2}\\approx 28.3\\) N. Option B adds 20 instead of subtracting, C ignores Romeo's vertical component, D mistakes Romeo's magnitude for one component.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "exactly how much force are Mario and Romeo applying",
+              "note": "Equilibrium: forces sum to zero; resolve into i and j components."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14ci",
+          "type": "mc",
+          "stem": "Sienna intends to row her boat from the south bank of a river to meet with her friends on the north bank. The river is 100 metres wide. Sienna's rowing speed is 5 metres per second when the water is still. The river is flowing east at a rate of 4 metres per second. Sienna's boat is also being impacted by a wind blowing from the south-west, which pushed the boat at 8 metres per second. She starts rowing across the river by steering the boat such that it is perpendicular to the south bank. Show that the velocity of Sienna's boat can be expressed as the component vector \\((4+4\\sqrt{2})\\underset{\\sim}{i}+(5+4\\sqrt{2})\\underset{\\sim}{j}\\). Which vector gives the contribution of the wind?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><rect x=\"20\" y=\"62\" width=\"320\" height=\"130\" fill=\"#dbeafe\" fill-opacity=\"0.6\"/><line x1=\"20.0\" y1=\"62.0\" x2=\"340.0\" y2=\"62.0\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"20.0\" y1=\"192.0\" x2=\"340.0\" y2=\"192.0\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North bank</text><text x=\"80.0\" y=\"212.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">South bank</text><line x1=\"30.0\" y1=\"62.0\" x2=\"30.0\" y2=\"192.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"62.0\" x2=\"26.0\" y2=\"68.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"62.0\" x2=\"34.0\" y2=\"68.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"192.0\" x2=\"34.0\" y2=\"185.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"192.0\" x2=\"26.0\" y2=\"185.1\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"56.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100 m</text><circle cx=\"160\" cy=\"192\" r=\"5.5\" fill=\"#1e293b\"/><text x=\"160.0\" y=\"216.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Boat starts here</text><line x1=\"160.0\" y1=\"192.0\" x2=\"160.0\" y2=\"112.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"112.0\" x2=\"154.5\" y2=\"121.5\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"112.0\" x2=\"165.5\" y2=\"121.5\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"148.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rowing 5 m/s</text><line x1=\"230.0\" y1=\"84.0\" x2=\"290.0\" y2=\"84.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"84.0\" x2=\"280.5\" y2=\"78.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"290.0\" y1=\"84.0\" x2=\"280.5\" y2=\"89.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"74.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">flow 4 m/s</text><line x1=\"204.0\" y1=\"162.0\" x2=\"246.4\" y2=\"119.6\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"246.4\" y1=\"119.6\" x2=\"235.8\" y2=\"122.4\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"246.4\" y1=\"119.6\" x2=\"243.6\" y2=\"130.2\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"256.4\" y=\"113.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">wind 8 m/s</text><line x1=\"372.0\" y1=\"60.0\" x2=\"372.0\" y2=\"100.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"372.0\" y1=\"60.0\" x2=\"368.0\" y2=\"66.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"372.0\" y1=\"60.0\" x2=\"376.0\" y2=\"66.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"372.0\" y=\"52.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"352.0\" y1=\"80.0\" x2=\"392.0\" y2=\"80.0\" stroke=\"#1e293b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"400.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"344.0\" y=\"84.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><text x=\"372.0\" y=\"116.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text></svg>"
+          },
+          "options": [
+            "\\(\\left(8\\cos 45^{\\circ}\\right)\\underset{\\sim}{i}+\\left(8\\sin 45^{\\circ}\\right)\\underset{\\sim}{j}=4\\sqrt{2}\\,\\underset{\\sim}{i}+4\\sqrt{2}\\,\\underset{\\sim}{j}\\)",
+            "\\(-4\\sqrt{2}\\,\\underset{\\sim}{i}-4\\sqrt{2}\\,\\underset{\\sim}{j}\\)",
+            "\\(8\\,\\underset{\\sim}{i}+8\\,\\underset{\\sim}{j}\\)",
+            "\\(4\\sqrt{2}\\,\\underset{\\sim}{i}-4\\sqrt{2}\\,\\underset{\\sim}{j}\\)"
+          ],
+          "answer": 0,
+          "hint": "Take \\(i\\) = east and \\(j\\) = north. A wind blowing FROM the south-west pushes the boat TOWARDS the north-east, at \\(45^{\\circ}\\) to both axes.",
+          "steps": [
+            {
+              "explain": "Set up axes: \\(i\\) east, \\(j\\) north. The three velocities add as vectors: current + rowing + wind.",
+              "work": ""
+            },
+            {
+              "explain": "Current: 4 m/s east. Rowing: 5 m/s perpendicular to the south bank, i.e. north.",
+              "work": "\\(\\text{current}=4\\,\\underset{\\sim}{i},\\qquad \\text{rowing}=5\\,\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "The wind blows FROM the south-west, so it pushes the boat TOWARDS the north-east: components \\(8\\cos 45^{\\circ}\\) east and \\(8\\sin 45^{\\circ}\\) north.",
+              "work": "\\(\\text{wind}=\\left(8\\cos 45^{\\circ}\\right)\\underset{\\sim}{i}+\\left(8\\sin 45^{\\circ}\\right)\\underset{\\sim}{j}=\\dfrac{8}{\\sqrt{2}}\\underset{\\sim}{i}+\\dfrac{8}{\\sqrt{2}}\\underset{\\sim}{j}=4\\sqrt{2}\\,\\underset{\\sim}{i}+4\\sqrt{2}\\,\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Add the three velocities (vector diagram: head to tail).",
+              "work": "\\(v=(4+4\\sqrt{2})\\underset{\\sim}{i}+(5+4\\sqrt{2})\\underset{\\sim}{j}\\ \\checkmark\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 310\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"278.0\" x2=\"120.0\" y2=\"278.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"278.0\" x2=\"110.5\" y2=\"272.5\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"278.0\" x2=\"110.5\" y2=\"283.5\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"278.0\" x2=\"120.0\" y2=\"178.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"178.0\" x2=\"114.5\" y2=\"187.5\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"178.0\" x2=\"125.5\" y2=\"187.5\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"178.0\" x2=\"233.1\" y2=\"64.9\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"233.1\" y1=\"64.9\" x2=\"222.5\" y2=\"67.7\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"233.1\" y1=\"64.9\" x2=\"230.3\" y2=\"75.5\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"278.0\" x2=\"233.1\" y2=\"64.9\" stroke=\"#1e293b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"233.1\" y1=\"64.9\" x2=\"220.8\" y2=\"68.8\" stroke=\"#1e293b\" stroke-width=\"3.8\" stroke-linecap=\"round\"/><line x1=\"233.1\" y1=\"64.9\" x2=\"230.4\" y2=\"77.6\" stroke=\"#1e293b\" stroke-width=\"3.8\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"178.0\" x2=\"233.1\" y2=\"178.0\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"233.1\" y1=\"178.0\" x2=\"233.1\" y2=\"64.9\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"120.0\" y=\"294.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"132.0\" y=\"232.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"164.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4√2</text><text x=\"249.1\" y=\"128.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4√2</text><text x=\"120.6\" y=\"161.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">v</text><text x=\"239.1\" y=\"54.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(4+4√2, 5+4√2)</text><circle cx=\"40\" cy=\"278\" r=\"5\" fill=\"#1e293b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Option B is the wind blowing TOWARDS the south-west (wrong direction); C forgets to resolve at \\(45^{\\circ}\\); D points south-east.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the velocity of Sienna's boat can be expressed as",
+              "note": "Resolve the wind at 45 degrees; a wind from the south-west pushes towards the north-east."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14cii",
+          "type": "mc",
+          "stem": "Sienna rows across a river with velocity \\((4+4\\sqrt{2})\\underset{\\sim}{i}+(5+4\\sqrt{2})\\underset{\\sim}{j}\\) m/s (\\(i\\) east, \\(j\\) north). Calculate the speed of the boat, correct to 2 decimal places.",
+          "difficulty": "medium",
+          "options": [
+            "\\(14.38\\ \\text{m s}^{-1}\\)",
+            "\\(6.40\\ \\text{m s}^{-1}\\)",
+            "\\(20.31\\ \\text{m s}^{-1}\\)",
+            "\\(9.66\\ \\text{m s}^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Speed is the magnitude of the velocity vector: \\(\\sqrt{x^{2}+y^{2}}\\) (not the sum of the components).",
+          "steps": [
+            {
+              "explain": "Evaluate the components: \\(4+4\\sqrt{2}\\approx 9.657\\) and \\(5+4\\sqrt{2}\\approx 10.657\\).",
+              "work": "\\(v\\approx 9.657\\,\\underset{\\sim}{i}+10.657\\,\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Speed is the magnitude.",
+              "work": "\\(|v|=\\sqrt{\\left(4+4\\sqrt{2}\\right)^{2}+\\left(5+4\\sqrt{2}\\right)^{2}}\\approx\\sqrt{93.25+113.57}=\\sqrt{206.82}\\)"
+            },
+            {
+              "explain": "Round to 2 decimal places.",
+              "work": "\\(|v|\\approx 14.38\\ \\text{m s}^{-1}\\)"
+            },
+            {
+              "explain": "Option B is \\(\\sqrt{4^{2}+5^{2}}\\) (no wind); C adds the components instead of using Pythagoras; D is the wrong combination of values.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the speed of the boat",
+              "note": "Speed is the length of the velocity vector: use Pythagoras on its components."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14ciii",
+          "type": "mc",
+          "stem": "Sienna rows across a river 100 metres wide with velocity \\((4+4\\sqrt{2})\\underset{\\sim}{i}+(5+4\\sqrt{2})\\underset{\\sim}{j}\\) m/s (\\(i\\) east, \\(j\\) north), so her speed is about \\(14.38\\) m/s. Determine the distance rowed from Sienna's starting point to her landing point and how long it will take her to reach the north bank.",
+          "difficulty": "hard",
+          "options": [
+            "\\(134.95\\) m in \\(9.38\\) s",
+            "\\(100\\) m in \\(6.95\\) s",
+            "\\(134.95\\) m in \\(6.95\\) s",
+            "\\(148.92\\) m in \\(10.36\\) s"
+          ],
+          "answer": 0,
+          "hint": "Find the angle \\(\\theta\\) of motion from the north, then \\(\\cos\\theta=\\dfrac{100}{d}\\); time \\(=\\dfrac{\\text{distance}}{\\text{speed}}\\).",
+          "steps": [
+            {
+              "explain": "The boat moves in the direction of its velocity. Let \\(\\theta\\) be the angle from the northward direction (the 100 m across the river).",
+              "work": "\\(\\tan\\theta=\\dfrac{4+4\\sqrt{2}}{5+4\\sqrt{2}}\\approx 0.906\\ \\Rightarrow\\ \\theta\\approx 42.18^{\\circ}\\)"
+            },
+            {
+              "explain": "In the right triangle with \\(100\\) m across the river (adjacent side) and \\(d\\) the distance rowed (hypotenuse):",
+              "work": "\\(\\cos\\theta=\\dfrac{100}{d}\\ \\Rightarrow\\ d=\\dfrac{100}{\\cos\\theta}\\approx 134.95\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Time \\(=\\dfrac{\\text{distance}}{\\text{speed}}\\).",
+              "work": "\\(T=\\dfrac{134.95}{14.38}\\approx 9.38\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Check using the northward speed only: \\(T=\\dfrac{100}{5+4\\sqrt{2}}=\\dfrac{100}{10.657}\\approx 9.38\\) s ✓ (the boat crosses 100 m north at 10.657 m/s). Option B divides 100 m by the full speed (ignoring the sideways drift); C pairs the correct distance with that wrong time; D uses \\(\\sin\\theta\\) instead of \\(\\cos\\theta\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine the distance rowed",
+              "note": "Use the northward component for crossing time; the distance is 100 divided by cosine of the angle from north."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1109,6 +1379,222 @@
           "meta": {
             "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
             "school": "Danebank School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-mc9",
+          "type": "mc",
+          "stem": "A cricket ball is hit from an origin at ground level so that its position vector at time \\(t\\) is given by \\(\\underset{\\sim}{r}(t)=15t\\,\\underset{\\sim}{i}+\\left(20t-5t^{2}\\right)\\underset{\\sim}{j}\\) for \\(t\\ge 0\\), where \\(\\underset{\\sim}{i}\\) is the unit vector in the forward direction and \\(\\underset{\\sim}{j}\\) is a unit vector vertically up. When the cricket ball reaches its maximum height, its position vector is",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\underset{\\sim}{r}=30\\underset{\\sim}{i}+20\\underset{\\sim}{j}\\)",
+            "\\(\\underset{\\sim}{r}=15\\underset{\\sim}{i}+20\\underset{\\sim}{j}\\)",
+            "\\(\\underset{\\sim}{r}=60\\underset{\\sim}{i}\\)",
+            "\\(\\underset{\\sim}{r}=30\\underset{\\sim}{i}+10\\underset{\\sim}{j}\\)"
+          ],
+          "answer": 0,
+          "hint": "Maximum height is when the vertical velocity is zero (or half-way between the two times the height is 0).",
+          "steps": [
+            {
+              "explain": "Vertical position: \\(y=20t-5t^{2}\\). Maximum height occurs when \\(\\dfrac{dy}{dt}=0\\).",
+              "work": "\\(\\dfrac{dy}{dt}=20-10t=0\\ \\Rightarrow\\ t=2\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Cross-check: \\(y=5t(4-t)=0\\) at \\(t=0\\) and \\(t=4\\); the maximum is half-way, \\(t=2\\).",
+              "work": "\\(y=5t(4-t)=0\\ \\Rightarrow\\ t=0,\\ 4\\)"
+            },
+            {
+              "explain": "Substitute \\(t=2\\) into the position vector.",
+              "work": "\\(\\underset{\\sim}{r}(2)=15(2)\\,\\underset{\\sim}{i}+\\left(20(2)-5(2)^{2}\\right)\\underset{\\sim}{j}=30\\,\\underset{\\sim}{i}+20\\,\\underset{\\sim}{j}\\)"
+            },
+            {
+              "explain": "Option C (\\(60i\\)) is the position when the ball lands at \\(t=4\\); option B uses \\(t=1\\) for the \\(i\\)-part with \\(t=2\\) for the \\(j\\)-part.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "maximum height",
+              "note": "At maximum height the vertical velocity is zero; then use the same t in BOTH components."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q13ci",
+          "type": "mc",
+          "stem": "A golf ball is hit at a velocity of \\(55\\ \\text{m s}^{-1}\\) at an angle \\(\\theta\\) to the horizontal, with an acceleration due to gravity of \\(9.8\\ \\text{m s}^{-2}\\) being applied to the ball. The position vector \\(\\underset{\\sim}{s}(t)\\), from the starting point, of the ball after \\(t\\) seconds is given by \\(\\underset{\\sim}{s}=55t\\cos\\theta\\,\\underset{\\sim}{i}+\\left(55t\\sin\\theta-4.9t^{2}\\right)\\underset{\\sim}{j}\\). Show that the ball travels \\(\\dfrac{3025\\sin 2\\theta}{9.8}\\) metres before hitting the ground. Which of the following is the time of flight \\(t>0\\) used in the working?",
+          "difficulty": "medium",
+          "options": [
+            "\\(t=\\dfrac{55\\sin\\theta}{4.9}\\)",
+            "\\(t=\\dfrac{55\\cos\\theta}{4.9}\\)",
+            "\\(t=\\dfrac{55\\sin\\theta}{9.8}\\)",
+            "\\(t=\\dfrac{4.9}{55\\sin\\theta}\\)"
+          ],
+          "answer": 0,
+          "hint": "The ball hits the ground when the vertical component is zero: \\(55t\\sin\\theta-4.9t^{2}=0\\). Factorise and ignore \\(t=0\\).",
+          "steps": [
+            {
+              "explain": "On the ground the \\(j\\)-component (height) is zero.",
+              "work": "\\(55t\\sin\\theta-4.9t^{2}=0\\)"
+            },
+            {
+              "explain": "Factorise out \\(t\\).",
+              "work": "\\(t\\left(55\\sin\\theta-4.9t\\right)=0\\ \\Rightarrow\\ t=0\\ \\text{or}\\ t=\\dfrac{55\\sin\\theta}{4.9}\\)"
+            },
+            {
+              "explain": "\\(t=0\\) is the start of the motion, so the time of flight is \\(t=\\dfrac{55\\sin\\theta}{4.9}\\) seconds.",
+              "work": "\\(t=\\dfrac{55\\sin\\theta}{4.9}\\)"
+            },
+            {
+              "explain": "Distance travelled = horizontal displacement at that time: substitute into the \\(i\\)-component.",
+              "work": "\\(x=55\\cos\\theta\\times\\dfrac{55\\sin\\theta}{4.9}=\\dfrac{3025\\sin\\theta\\cos\\theta}{4.9}\\)"
+            },
+            {
+              "explain": "Multiply top and bottom by 2 and use \\(2\\sin\\theta\\cos\\theta=\\sin 2\\theta\\).",
+              "work": "\\(x=\\dfrac{3025\\times 2\\sin\\theta\\cos\\theta}{9.8}=\\dfrac{3025\\sin 2\\theta}{9.8}\\ \\text{m}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Option B would use the horizontal speed; C forgets that the coefficient of \\(t^{2}\\) is already \\(4.9\\) (not \\(9.8\\)); D is upside-down.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the ball travels",
+              "note": "Hits the ground when the height is zero; then use the horizontal component with that time and the double-angle identity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q13cii",
+          "type": "mc",
+          "stem": "A golf ball is hit at a velocity of \\(55\\ \\text{m s}^{-1}\\) at an angle \\(\\theta\\) to the horizontal, with an acceleration due to gravity of \\(9.8\\ \\text{m s}^{-2}\\). The horizontal distance travelled before hitting the ground is \\(\\dfrac{3025\\sin 2\\theta}{9.8}\\) metres. To ensure that the ball lands on the green, it must travel between 200 and 250 metres. What values of \\(\\theta\\), correct to the nearest minute, would allow this to happen?",
+          "difficulty": "hard",
+          "options": [
+            "\\(20^{\\circ}12'\\le\\theta\\le 27^{\\circ}3'\\) (and, by symmetry, \\(62^{\\circ}57'\\le\\theta\\le 69^{\\circ}48'\\))",
+            "\\(40^{\\circ}23'\\le\\theta\\le 54^{\\circ}5'\\)",
+            "\\(9^{\\circ}27'\\le\\theta\\le 11^{\\circ}57'\\)",
+            "\\(\\theta\\le 20^{\\circ}12'\\) or \\(\\theta\\ge 27^{\\circ}3'\\)"
+          ],
+          "answer": 0,
+          "hint": "Solve \\(\\dfrac{3025\\sin 2\\theta}{9.8}=200\\) and \\(=250\\) for \\(2\\theta\\), then HALVE to get \\(\\theta\\).",
+          "steps": [
+            {
+              "explain": "Lower end of the range: distance \\(=200\\).",
+              "work": "\\(\\dfrac{3025\\sin 2\\theta}{9.8}=200\\ \\Rightarrow\\ \\sin 2\\theta=\\dfrac{200\\times 9.8}{3025}\\approx 0.6479\\)"
+            },
+            {
+              "explain": "Solve for \\(2\\theta\\) then halve (calculator in degrees): \\(2\\theta\\approx 40.39^{\\circ}\\).",
+              "work": "\\(2\\theta\\approx 40^{\\circ}23'\\ \\Rightarrow\\ \\theta\\approx 20^{\\circ}12'\\)"
+            },
+            {
+              "explain": "Upper end: distance \\(=250\\).",
+              "work": "\\(\\sin 2\\theta=\\dfrac{250\\times 9.8}{3025}\\approx 0.8099\\ \\Rightarrow\\ 2\\theta\\approx 54^{\\circ}5'\\ \\Rightarrow\\ \\theta\\approx 27^{\\circ}3'\\)"
+            },
+            {
+              "explain": "As the angle increases from \\(20^{\\circ}12'\\) to \\(27^{\\circ}3'\\) (below \\(45^{\\circ}\\), where the range is increasing) the distance rises from 200 m to 250 m.",
+              "work": "\\(20^{\\circ}12'\\le\\theta\\le 27^{\\circ}3'\\)"
+            },
+            {
+              "explain": "Because \\(\\sin 2\\theta=\\sin\\left(180^{\\circ}-2\\theta\\right)\\), the complementary angles \\(90^{\\circ}-\\theta\\) work as well: \\(62^{\\circ}57'\\le\\theta\\le 69^{\\circ}48'\\) (a high lob). Option B forgets to halve; C uses 4.9 instead of 9.8; D is the region outside the green.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What values of",
+              "note": "Solve for double the angle, then halve it; the range is symmetric about 45 degrees."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q13ciii",
+          "type": "mc",
+          "stem": "A golf ball is hit at \\(55\\ \\text{m s}^{-1}\\) at an angle \\(\\theta\\) with \\(\\underset{\\sim}{s}=55t\\cos\\theta\\,\\underset{\\sim}{i}+\\left(55t\\sin\\theta-4.9t^{2}\\right)\\underset{\\sim}{j}\\). To land on the green it must travel between 200 and 250 metres, which requires \\(20^{\\circ}12'\\le\\theta\\le 27^{\\circ}3'\\). The golfer aims accurately and hits the ball directly towards the green. After 3.4 seconds of flight, at a point 8 metres above the ground, the ball hits a low flying TV drone. If it had not hit the drone or any other obstacles, would the ball have landed on the green?",
+          "difficulty": "hard",
+          "options": [
+            "Yes: \\(\\theta\\approx 20^{\\circ}13'\\), which lies between \\(20^{\\circ}12'\\) and \\(27^{\\circ}3'\\).",
+            "No: \\(\\theta\\approx 20^{\\circ}13'\\), which is less than the minimum angle \\(20^{\\circ}12'\\).",
+            "No: \\(\\theta\\approx 27^{\\circ}13'\\), which is greater than the maximum angle \\(27^{\\circ}3'\\).",
+            "Yes: the ball was 8 metres above the ground after 3.4 seconds."
+          ],
+          "answer": 0,
+          "hint": "Put \\(t=3.4\\) and height \\(8\\) in the \\(j\\)-component and solve for \\(\\sin\\theta\\); compare \\(\\theta\\) with the allowed range.",
+          "steps": [
+            {
+              "explain": "The height after 3.4 s is 8 m.",
+              "work": "\\(55(3.4)\\sin\\theta-4.9(3.4)^{2}=8\\)"
+            },
+            {
+              "explain": "Isolate \\(\\sin\\theta\\): \\(4.9(3.4)^{2}=56.644\\) and \\(55\\times 3.4=187\\).",
+              "work": "\\(\\sin\\theta=\\dfrac{8+4.9(3.4)^{2}}{55(3.4)}=\\dfrac{64.644}{187}\\approx 0.3457\\)"
+            },
+            {
+              "explain": "Calculator in degrees.",
+              "work": "\\(\\theta\\approx 20.22^{\\circ}\\approx 20^{\\circ}13'\\)"
+            },
+            {
+              "explain": "Compare with the range for the green from part (ii).",
+              "work": "\\(20^{\\circ}12'\\le 20^{\\circ}13'\\le 27^{\\circ}3'\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So yes, the ball would have landed on the green (just inside the minimum range, \\(\\approx 200.3\\) m). Option D reasons from the drone's height only, which proves nothing.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "would the ball have landed on the green",
+              "note": "Use the drone point to find theta, then compare theta with the interval from the previous part."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
             "grade": "12",
             "origin": "teacher"
           }

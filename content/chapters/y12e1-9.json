@@ -202,6 +202,58 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-e1-q13di",
+          "type": "mc",
+          "stem": "\\(\\triangle ABC\\) is right-angled with \\(M\\) being the midpoint of the hypotenuse \\(AC\\), as shown. Let \\(\\overrightarrow{AM}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{BM}=\\underset{\\sim}{b}\\). Find \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{BC}\\) in terms of \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"255.0\" y1=\"20.0\" x2=\"25.0\" y2=\"105.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"105.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"153.8\" y2=\"57.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"153.8\" y1=\"57.0\" x2=\"164.6\" y2=\"58.9\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"153.8\" y1=\"57.0\" x2=\"160.9\" y2=\"48.5\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"181.9\" y1=\"177.2\" x2=\"145.0\" y2=\"75.8\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"145.0\" y1=\"75.8\" x2=\"143.1\" y2=\"86.7\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"145.0\" y1=\"75.8\" x2=\"153.5\" y2=\"82.9\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><polyline points=\"187.0,166.3 176.1,161.3 171.0,172.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"255.0\" cy=\"20.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"267.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><circle cx=\"25.0\" cy=\"105.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"11.0\" y=\"111.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><circle cx=\"181.9\" cy=\"177.2\" r=\"4\" fill=\"#1e293b\"/><text x=\"195.9\" y=\"193.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"140\" cy=\"62\" r=\"4\" fill=\"#1e293b\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><text x=\"149.8\" y=\"33.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"165.0\" y=\"91.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">b</text></svg>"
+          },
+          "options": [
+            "\\(\\overrightarrow{AB}=\\underset{\\sim}{a}-\\underset{\\sim}{b},\\ \\ \\overrightarrow{BC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)",
+            "\\(\\overrightarrow{AB}=\\underset{\\sim}{a}+\\underset{\\sim}{b},\\ \\ \\overrightarrow{BC}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+            "\\(\\overrightarrow{AB}=\\underset{\\sim}{b}-\\underset{\\sim}{a},\\ \\ \\overrightarrow{BC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)",
+            "\\(\\overrightarrow{AB}=\\underset{\\sim}{a}-\\underset{\\sim}{b},\\ \\ \\overrightarrow{BC}=\\underset{\\sim}{b}-\\underset{\\sim}{a}\\)"
+          ],
+          "answer": 0,
+          "hint": "Go from the start to the end via \\(M\\): \\(\\overrightarrow{AB}=\\overrightarrow{AM}+\\overrightarrow{MB}\\). Remember \\(\\overrightarrow{MB}=-\\overrightarrow{BM}\\) and \\(\\overrightarrow{MC}=\\overrightarrow{AM}\\).",
+          "steps": [
+            {
+              "explain": "\\(\\overrightarrow{AB}\\): travel \\(A\\to M\\) then \\(M\\to B\\). \\(\\overrightarrow{MB}\\) is the reverse of \\(\\overrightarrow{BM}\\), so it equals \\(-\\underset{\\sim}{b}\\).",
+              "work": "\\(\\overrightarrow{AB}=\\overrightarrow{AM}+\\overrightarrow{MB}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"255.0\" y1=\"20.0\" x2=\"25.0\" y2=\"105.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"105.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"255,20 140,62 181.9,177.2\" fill=\"#fbbf24\" fill-opacity=\"0.45\"/><polygon points=\"25,105 140,62 181.9,177.2\" fill=\"#34d399\" fill-opacity=\"0.4\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"25.0\" y2=\"105.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"105.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"153.8\" y2=\"57.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"153.8\" y1=\"57.0\" x2=\"164.6\" y2=\"58.9\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"153.8\" y1=\"57.0\" x2=\"160.9\" y2=\"48.5\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"181.9\" y1=\"177.2\" x2=\"145.0\" y2=\"75.8\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"145.0\" y1=\"75.8\" x2=\"143.1\" y2=\"86.7\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"145.0\" y1=\"75.8\" x2=\"153.5\" y2=\"82.9\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><polyline points=\"187.0,166.3 176.1,161.3 171.0,172.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"255.0\" cy=\"20.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"267.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><circle cx=\"25.0\" cy=\"105.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"11.0\" y=\"111.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><circle cx=\"181.9\" cy=\"177.2\" r=\"4\" fill=\"#1e293b\"/><text x=\"195.9\" y=\"193.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"140\" cy=\"62\" r=\"4\" fill=\"#1e293b\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><text x=\"149.8\" y=\"33.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"165.0\" y=\"91.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">b</text><text x=\"238.5\" y=\"102.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB</text><text x=\"83.5\" y=\"155.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BC</text><text x=\"174.0\" y=\"70.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">MC = AM</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\overrightarrow{BC}\\): travel \\(B\\to M\\) then \\(M\\to C\\). \\(M\\) is the midpoint of \\(AC\\), so \\(\\overrightarrow{MC}=\\overrightarrow{AM}=\\underset{\\sim}{a}\\) (same length AND same direction).",
+              "work": "\\(\\overrightarrow{BC}=\\overrightarrow{BM}+\\overrightarrow{MC}=\\underset{\\sim}{b}+\\underset{\\sim}{a}\\)"
+            },
+            {
+              "explain": "Result: \\(\\overrightarrow{AB}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) and \\(\\overrightarrow{BC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\). Options B and C swap or reverse the vectors (wrong directions); D reverses \\(\\overrightarrow{BC}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{BC}\\) in terms of",
+              "note": "Add vectors head-to-tail through M; reversing a vector flips its sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -477,6 +529,56 @@
               }
             }
           ]
+        },
+        {
+          "id": "fortst2020-e1-q13aii",
+          "type": "mc",
+          "stem": "Given the vectors \\(\\underset{\\sim}{a}=2\\underset{\\sim}{i}+3\\underset{\\sim}{j}\\) and \\(\\underset{\\sim}{b}=-3\\underset{\\sim}{i}-5\\underset{\\sim}{j}\\), find \\(4\\underset{\\sim}{a}-3\\underset{\\sim}{b}\\) in column vector form.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{pmatrix}17\\\\ 27\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-1\\\\ -3\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}17\\\\ -3\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-17\\\\ -27\\end{pmatrix}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply each vector by its scalar first, then subtract component by component (watch the double negative).",
+          "steps": [
+            {
+              "explain": "Write both vectors in column form.",
+              "work": "\\(a=\\begin{pmatrix}2\\\\ 3\\end{pmatrix},\\qquad b=\\begin{pmatrix}-3\\\\ -5\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Multiply by the scalars: \\(4a=\\begin{pmatrix}8\\\\ 12\\end{pmatrix}\\) and \\(3b=\\begin{pmatrix}-9\\\\ -15\\end{pmatrix}\\).",
+              "work": "\\(4a-3b=\\begin{pmatrix}8\\\\ 12\\end{pmatrix}-\\begin{pmatrix}-9\\\\ -15\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Subtract each component; subtracting a negative is adding: \\(8-(-9)=17\\), \\(12-(-15)=27\\).",
+              "work": "\\(=\\begin{pmatrix}8+9\\\\ 12+15\\end{pmatrix}=\\begin{pmatrix}17\\\\ 27\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Option B is \\(4a+3b\\); option C has one component wrong; option D is the negative.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(4\\underset{\\sim}{a}-3\\underset{\\sim}{b}\\) in column vector form",
+              "note": "Scalar multiply first, then subtract component by component."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1304,6 +1406,109 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-e1-q13ai",
+          "type": "mc",
+          "stem": "Given the vectors \\(\\underset{\\sim}{a}=2\\underset{\\sim}{i}+3\\underset{\\sim}{j}\\) and \\(\\underset{\\sim}{b}=-3\\underset{\\sim}{i}-5\\underset{\\sim}{j}\\), calculate the dot product \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-21\\)",
+            "\\(21\\)",
+            "\\(-9\\)",
+            "\\(-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Dot product: multiply the \\(i\\)-components, multiply the \\(j\\)-components, then ADD the two products.",
+          "steps": [
+            {
+              "explain": "Write the components: \\(a=(2,3)\\) and \\(b=(-3,-5)\\).",
+              "work": "\\(a=\\begin{pmatrix}2\\\\ 3\\end{pmatrix},\\qquad b=\\begin{pmatrix}-3\\\\ -5\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Multiply matching components and add.",
+              "work": "\\(a\\cdot b=(2)(-3)+(3)(-5)=-6-15=-21\\)"
+            },
+            {
+              "explain": "The dot product is a scalar (a single number), not a vector. Options B, C and D come from sign errors or adding components instead of multiplying.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "calculate the dot product",
+              "note": "Dot product of two vectors is a number: sum of products of matching components."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q13dii",
+          "type": "mc",
+          "stem": "\\(\\triangle ABC\\) is right-angled with \\(M\\) being the midpoint of the hypotenuse \\(AC\\), as shown. Let \\(\\overrightarrow{AM}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{BM}=\\underset{\\sim}{b}\\), so \\(\\overrightarrow{AB}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) and \\(\\overrightarrow{BC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\). Prove that \\(M\\) is equidistant from the three vertices of \\(\\triangle ABC\\). Which argument is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"255.0\" y1=\"20.0\" x2=\"25.0\" y2=\"105.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"25.0\" y1=\"105.0\" x2=\"181.9\" y2=\"177.2\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"20.0\" x2=\"153.8\" y2=\"57.0\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"153.8\" y1=\"57.0\" x2=\"164.6\" y2=\"58.9\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"153.8\" y1=\"57.0\" x2=\"160.9\" y2=\"48.5\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"181.9\" y1=\"177.2\" x2=\"145.0\" y2=\"75.8\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"145.0\" y1=\"75.8\" x2=\"143.1\" y2=\"86.7\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"145.0\" y1=\"75.8\" x2=\"153.5\" y2=\"82.9\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><polyline points=\"187.0,166.3 176.1,161.3 171.0,172.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"255.0\" cy=\"20.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"267.0\" y=\"14.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><circle cx=\"25.0\" cy=\"105.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"11.0\" y=\"111.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><circle cx=\"181.9\" cy=\"177.2\" r=\"4\" fill=\"#1e293b\"/><text x=\"195.9\" y=\"193.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><circle cx=\"140\" cy=\"62\" r=\"4\" fill=\"#1e293b\"/><text x=\"136.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">M</text><text x=\"149.8\" y=\"33.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">a</text><text x=\"165.0\" y=\"91.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">b</text></svg>"
+          },
+          "options": [
+            "The angle at \\(B\\) is a right angle, so \\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\). Expanding, \\((a-b)\\cdot(a+b)=|a|^{2}-|b|^{2}=0\\), so \\(|a|=|b|\\). Hence \\(|AM|=|BM|=|MC|\\).",
+            "The angle at \\(B\\) is a right angle, so \\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\). Expanding, \\((a-b)\\cdot(a+b)=|a|^{2}+|b|^{2}=0\\), so \\(a=b=0\\).",
+            "\\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=|a||b|\\cos B\\) with \\(B=60^{\\circ}\\), so \\(|a|=2|b|\\).",
+            "Since \\(M\\) is the midpoint of \\(AC\\), \\(|AM|=|MC|\\); nothing more is needed to show \\(|BM|=|AM|\\)."
+          ],
+          "answer": 0,
+          "hint": "Perpendicular vectors have dot product zero: use \\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\) and expand with \\(a\\cdot b=b\\cdot a\\).",
+          "steps": [
+            {
+              "explain": "The right angle is at \\(B\\), so \\(\\overrightarrow{AB}\\perp\\overrightarrow{BC}\\) and their dot product is 0.",
+              "work": "\\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\)"
+            },
+            {
+              "explain": "Substitute \\(\\overrightarrow{AB}=a-b\\), \\(\\overrightarrow{BC}=a+b\\) and expand. The cross terms \\(a\\cdot b\\) and \\(-b\\cdot a\\) cancel since \\(a\\cdot b=b\\cdot a\\).",
+              "work": "\\((a-b)\\cdot(a+b)=a\\cdot a+a\\cdot b-b\\cdot a-b\\cdot b=|a|^{2}-|b|^{2}\\)"
+            },
+            {
+              "explain": "Set equal to 0.",
+              "work": "\\(|a|^{2}-|b|^{2}=0\\ \\Rightarrow\\ |a|=|b|\\quad(\\text{lengths are positive})\\)"
+            },
+            {
+              "explain": "Interpret: \\(|a|=|AM|\\), \\(|b|=|BM|\\), and since \\(M\\) is the midpoint of \\(AC\\), \\(|MC|=|AM|=|a|\\).",
+              "work": "\\(|AM|=|BM|=|MC|\\)"
+            },
+            {
+              "explain": "So \\(M\\) is the same distance from \\(A\\), \\(B\\) and \\(C\\): it is equidistant from the three vertices. ✓ Option B has a sign error (the cross terms cancel; \\(|b|^{2}\\) is subtracted), C invents an angle, and D never uses the right angle at \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(M\\) is equidistant from the three vertices",
+              "note": "Right angle means dot product zero; expand to |a| squared minus |b| squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1645,6 +1850,60 @@
             "number": "2",
             "sourceFile": "/Users/andrewkim/Desktop/Paperdone/ Done/Trail E1/Cheltenham Girls 2020 3U Trials & Solutions.pdf",
             "sourcePages": "2"
+          }
+        },
+        {
+          "id": "fortst2020-e1-mc2",
+          "type": "mc",
+          "stem": "Find the vector projection of \\(\\underset{\\sim}{p}=\\begin{pmatrix}4\\\\ -3\\end{pmatrix}\\) onto \\(\\underset{\\sim}{q}=\\begin{pmatrix}-1\\\\ 2\\end{pmatrix}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{pmatrix}-2\\\\ 4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}2\\\\ -4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-2\\sqrt{5}\\\\ 4\\sqrt{5}\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}2\\sqrt{5}\\\\ -4\\sqrt{5}\\end{pmatrix}\\)"
+          ],
+          "answer": 1,
+          "hint": "Vector projection of \\(\\underset{\\sim}{p}\\) onto \\(\\underset{\\sim}{q}\\) is \\(\\dfrac{\\underset{\\sim}{p}\\cdot\\underset{\\sim}{q}}{\\left|\\underset{\\sim}{q}\\right|^{2}}\\,\\underset{\\sim}{q}\\) (NOT divided by \\(|q|\\) once).",
+          "steps": [
+            {
+              "explain": "Write the formula for the vector projection of \\(p\\) onto \\(q\\).",
+              "work": "\\(\\operatorname{proj}_{q}p=\\dfrac{p\\cdot q}{|q|^{2}}\\,q\\)"
+            },
+            {
+              "explain": "Calculate the dot product.",
+              "work": "\\(p\\cdot q=(4)(-1)+(-3)(2)=-4-6=-10\\)"
+            },
+            {
+              "explain": "Calculate \\(|q|^{2}\\) (squared length, so no square root is needed).",
+              "work": "\\(|q|^{2}=(-1)^{2}+2^{2}=5\\)"
+            },
+            {
+              "explain": "Substitute the scalar \\(\\dfrac{-10}{5}=-2\\) and multiply the vector \\(q\\).",
+              "work": "\\(\\operatorname{proj}_{q}p=\\dfrac{-10}{5}\\begin{pmatrix}-1\\\\ 2\\end{pmatrix}=-2\\begin{pmatrix}-1\\\\ 2\\end{pmatrix}=\\begin{pmatrix}2\\\\ -4\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Check: the projection must be parallel to \\(q\\). \\(\\begin{pmatrix}2\\\\ -4\\end{pmatrix}=-2q\\) is parallel; options C and D contain \\(\\sqrt{5}\\) which come from dividing by \\(|q|\\) once instead of \\(|q|^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the vector projection",
+              "note": "Vector projection formula: (p dot q) divided by |q| squared, times q."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]

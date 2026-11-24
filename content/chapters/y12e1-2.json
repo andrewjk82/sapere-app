@@ -238,6 +238,168 @@
             "origin": "teacher",
             "note": "Open response: teacher review."
           }
+        },
+        {
+          "id": "fortst2020-e1-q12b",
+          "type": "mc",
+          "stem": "Malek was asked to prove \\(\\cos(\\pi-\\theta)=-\\cos\\theta\\) for all real \\(\\theta\\). He attempts his proof using mathematical induction. Explain why his method would not yield an appropriate proof. Which explanation is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Mathematical induction proves a statement for every positive integer \\(n\\) (the statement must be indexed by integers), but \\(\\theta\\) is a real number, so induction cannot prove it for all real \\(\\theta\\).",
+            "Mathematical induction can only be used to prove inequalities, not trigonometric identities.",
+            "Mathematical induction needs the statement to be false for \\(n=1\\) before the inductive step can be done.",
+            "The identity \\(\\cos(\\pi-\\theta)=-\\cos\\theta\\) is not true for any real value of \\(\\theta\\)."
+          ],
+          "answer": 0,
+          "hint": "Induction works by stepping \\(n=1\\to2\\to3\\to\\cdots\\). What kind of numbers does that cover?",
+          "steps": [
+            {
+              "explain": "The principle of mathematical induction: (1) prove the statement for the first integer (e.g. \\(n=1\\)); (2) prove that if it is true for \\(n=k\\) then it is true for \\(n=k+1\\). Then it is true for all integers \\(n\\ge 1\\) (the first case, then the next, then the next...).",
+              "work": ""
+            },
+            {
+              "explain": "The required condition: the statement must be about a whole-number variable \\(n=1,2,3,\\dots\\) so that \\(k\\to k+1\\) reaches every case.",
+              "work": ""
+            },
+            {
+              "explain": "The identity is stated for ALL REAL \\(\\theta\\), e.g. \\(\\theta=0.5\\) or \\(\\theta=\\sqrt{2}\\). These values can never be reached by starting at an integer and adding 1 each time, so induction cannot prove the statement for all real \\(\\theta\\).",
+              "work": ""
+            },
+            {
+              "explain": "Options B and C are false statements about induction, and D is false (the identity is a standard true result), so only A is correct.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why his method would not yield an appropriate proof",
+              "note": "Induction only works for whole-number cases (first, second, third and so on); real numbers cannot be reached."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14di",
+          "type": "mc",
+          "stem": "By considering the terms of an arithmetic series, show that \\((1+2+\\cdots+n)^{2}=\\dfrac{1}{4}n^{2}(n+1)^{2}\\). Which expression gives the sum \\(1+2+\\cdots+n\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{n(n+1)}{2}\\)",
+            "\\(\\dfrac{n(n-1)}{2}\\)",
+            "\\(n(n+1)\\)",
+            "\\(\\dfrac{n^{2}(n+1)}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(1+2+\\cdots+n\\) is an arithmetic series with \\(a=1\\), \\(d=1\\). Use \\(S_{n}=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]\\).",
+          "steps": [
+            {
+              "explain": "Identify the series: first term \\(a=1\\), common difference \\(d=1\\), \\(n\\) terms.",
+              "work": "\\(a=1,\\quad d=1\\)"
+            },
+            {
+              "explain": "Use the sum formula.",
+              "work": "\\(S_{n}=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]=\\dfrac{n}{2}\\left[2+(n-1)\\right]=\\dfrac{n}{2}(n+1)\\)"
+            },
+            {
+              "explain": "So \\(1+2+\\cdots+n=\\dfrac{n(n+1)}{2}\\). Square both sides to finish the proof.",
+              "work": "\\((1+2+\\cdots+n)^{2}=\\left(\\dfrac{n(n+1)}{2}\\right)^{2}=\\dfrac{n^{2}(n+1)^{2}}{4}=\\dfrac{1}{4}n^{2}(n+1)^{2}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Check \\(n=3\\): \\(1+2+3=6=\\dfrac{3\\times 4}{2}\\) ✓. Option B is the sum to \\(n-1\\); C forgets the division by 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By considering the terms of an arithmetic series",
+              "note": "Sum of 1 to n is an arithmetic series; apply the sum formula then square."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14dii",
+          "type": "mc",
+          "stem": "By using the Principle of Mathematical Induction prove that \\(1^{3}+2^{3}+\\cdots+n^{3}=(1+2+\\cdots+n)^{2}\\) for all \\(n\\ge 1\\). In the inductive step, assume the result for \\(n=k\\) and use part (i). Then \\(1^{3}+2^{3}+\\cdots+k^{3}+(k+1)^{3}\\) equals",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{(k+1)^{2}(k+2)^{2}}{4}\\)",
+            "\\(\\dfrac{(k+1)^{2}\\left(k^{2}+4\\right)}{4}\\)",
+            "\\(\\dfrac{(k+1)^{4}}{4}\\)",
+            "\\(\\dfrac{k^{2}(k+1)^{3}}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(1^{3}+\\cdots+k^{3}\\) with \\((1+\\cdots+k)^{2}=\\dfrac{k^{2}(k+1)^{2}}{4}\\) (part (i)), then factor out \\((k+1)^{2}\\).",
+          "steps": [
+            {
+              "explain": "Step 1 (\\(n=1\\)): LHS \\(=1^{3}=1\\), RHS \\(=(1)^{2}=1\\). True for \\(n=1\\).",
+              "work": "\\(\\text{LHS}=1,\\quad \\text{RHS}=1\\)"
+            },
+            {
+              "explain": "Step 2 (assumption): assume true for \\(n=k\\).",
+              "work": "\\(1^{3}+2^{3}+\\cdots+k^{3}=(1+2+\\cdots+k)^{2}\\)"
+            },
+            {
+              "explain": "Step 3: to prove for \\(n=k+1\\), start with the LHS and use the assumption.",
+              "work": "\\(\\text{LHS}=\\underbrace{1^{3}+\\cdots+k^{3}}_{=(1+\\cdots+k)^{2}}+(k+1)^{3}=(1+\\cdots+k)^{2}+(k+1)^{3}\\)"
+            },
+            {
+              "explain": "Use part (i): \\((1+\\cdots+k)^{2}=\\dfrac{k^{2}(k+1)^{2}}{4}\\).",
+              "work": "\\(=\\dfrac{k^{2}(k+1)^{2}}{4}+(k+1)^{3}\\)"
+            },
+            {
+              "explain": "Factor out the common \\((k+1)^{2}\\) and put over a common denominator 4.",
+              "work": "\\(=(k+1)^{2}\\left[\\dfrac{k^{2}}{4}+(k+1)\\right]=(k+1)^{2}\\cdot\\dfrac{k^{2}+4k+4}{4}\\)"
+            },
+            {
+              "explain": "\\(k^{2}+4k+4=(k+2)^{2}\\), so the LHS equals \\(\\dfrac{(k+1)^{2}(k+2)^{2}}{4}\\).",
+              "work": "\\(=\\dfrac{1}{4}(k+1)^{2}(k+2)^{2}\\)"
+            },
+            {
+              "explain": "By part (i) with \\(n=k+1\\) this is exactly \\((1+2+\\cdots+k+(k+1))^{2}\\), the RHS. Conclusion: true for \\(n=1\\); true for \\(n=k\\) implies true for \\(n=k+1\\); so true for all \\(n\\ge 1\\) by induction. ✓",
+              "work": "\\(=\\left(1+2+\\cdots+k+(k+1)\\right)^{2}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By using the Principle of Mathematical Induction prove that",
+              "note": "Induction on sum of cubes: use the part (i) formula for the sum of the first k integers, then factorise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -547,6 +709,64 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 1 HSC Assessment Task 4",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q12c",
+          "type": "mc",
+          "stem": "Use mathematical induction to prove that, for every positive integer \\(n\\), \\(13\\times 6^{n}+2\\) is divisible by 5. In the inductive step, assume \\(13\\cdot 6^{k}+2=5N\\) where \\(N\\) is an integer. Then \\(13\\cdot 6^{k+1}+2\\) equals",
+          "difficulty": "hard",
+          "options": [
+            "\\(5(6N-2)\\)",
+            "\\(5(6N+2)\\)",
+            "\\(5(N-12)\\)",
+            "\\(5(N+6)\\)"
+          ],
+          "answer": 0,
+          "hint": "From the assumption, \\(13\\cdot 6^{k}=5N-2\\). Write \\(6^{k+1}=6\\cdot 6^{k}\\) and substitute.",
+          "steps": [
+            {
+              "explain": "Step 1 (base case, \\(n=1\\)): \\(13\\times 6^{1}+2=80=5\\times 16\\), which is divisible by 5. ✓",
+              "work": "\\(13\\times 6+2=80=5\\times 16\\)"
+            },
+            {
+              "explain": "Step 2 (assumption): assume the result is true for \\(n=k\\), so \\(13\\cdot 6^{k}+2=5N\\) for some integer \\(N\\). Rearrange to isolate \\(13\\cdot 6^{k}\\).",
+              "work": "\\(13\\cdot 6^{k}=5N-2\\)"
+            },
+            {
+              "explain": "Step 3 (prove for \\(n=k+1\\)): use \\(6^{k+1}=6\\cdot 6^{k}\\) and substitute \\(13\\cdot 6^{k}=5N-2\\).",
+              "work": "\\(13\\cdot 6^{k+1}+2=6\\left(13\\cdot 6^{k}\\right)+2=6(5N-2)+2\\)"
+            },
+            {
+              "explain": "Expand and simplify (watch the signs: \\(-12+2=-10\\)).",
+              "work": "\\(=30N-12+2=30N-10\\)"
+            },
+            {
+              "explain": "Factor out 5.",
+              "work": "\\(=5(6N-2)\\)"
+            },
+            {
+              "explain": "\\(6N-2\\) is an integer (call it \\(M\\)), so \\(13\\cdot 6^{k+1}+2=5M\\) is divisible by 5. Conclusion: true for \\(n=1\\); if true for \\(n=k\\) then true for \\(n=k+1\\); so by mathematical induction it is true for all positive integers \\(n\\). Option B has a sign slip \\(-12+2=+2\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is divisible by 5",
+              "note": "Induction for divisibility: substitute the assumption for the 6 to the power k term, expand, factor out the divisor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
             "grade": "12",
             "origin": "teacher"
           }

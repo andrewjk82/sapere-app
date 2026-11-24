@@ -1872,6 +1872,114 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-e1-q11ei",
+          "type": "mc",
+          "stem": "Consider the function \\(f(x)=2-\\log_{e}x\\). Find the equation of the inverse function \\(f^{-1}(x)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(f^{-1}(x)=e^{2-x}\\)",
+            "\\(f^{-1}(x)=2-e^{x}\\)",
+            "\\(f^{-1}(x)=e^{x-2}\\)",
+            "\\(f^{-1}(x)=\\ln(2-x)\\)"
+          ],
+          "answer": 0,
+          "hint": "Swap \\(x\\) and \\(y\\), then make \\(y\\) the subject (undo the \\(\\ln\\) with \\(e\\)).",
+          "steps": [
+            {
+              "explain": "Write \\(y=f(x)\\) and swap \\(x\\) and \\(y\\).",
+              "work": "\\(y=2-\\ln x\\ \\to\\ x=2-\\ln y\\)"
+            },
+            {
+              "explain": "Rearrange to isolate \\(\\ln y\\).",
+              "work": "\\(\\ln y=2-x\\)"
+            },
+            {
+              "explain": "Undo the logarithm by writing both sides as powers of \\(e\\).",
+              "work": "\\(y=e^{2-x}\\ \\Rightarrow\\ f^{-1}(x)=e^{2-x}\\)"
+            },
+            {
+              "explain": "Check: \\(f\\left(f^{-1}(x)\\right)=2-\\ln e^{2-x}=2-(2-x)=x\\). ✓",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the equation of the inverse function",
+              "note": "Inverse: swap x and y, rearrange, undo ln with e."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q11eii",
+          "type": "mc",
+          "stem": "Consider the function \\(f(x)=2-\\log_{e}x\\). Explain why the coordinate of the point of intersection \\(P\\) of the graphs \\(y=f(x)\\) and \\(y=f^{-1}(x)\\) satisfies the equation \\(e^{2-x}-x=0\\). Which explanation is correct?",
+          "difficulty": "hard",
+          "options": [
+            "At \\(P\\) both \\(y=2-\\ln x\\) and \\(y=e^{2-x}\\) hold. Rearranging: \\(y+\\ln x=2\\) and \\(x+\\ln y=2\\), so \\(y+\\ln x=x+\\ln y\\), which is satisfied by \\(x=y\\). So \\(P\\) lies on \\(y=x\\) and \\(e^{2-x}=x\\), i.e. \\(e^{2-x}-x=0\\).",
+            "At \\(P\\) the function \\(f(x)\\) equals 0, so \\(2-\\ln x=0\\) and therefore \\(e^{2-x}-x=0\\).",
+            "At \\(P\\) the two graphs have the same gradient, so \\(f'(x)=\\left(f^{-1}\\right)'(x)\\), which gives \\(e^{2-x}-x=0\\).",
+            "\\(P\\) lies on the \\(x\\)-axis, so \\(f^{-1}(x)=0\\), which gives \\(e^{2-x}-x=0\\)."
+          ],
+          "answer": 0,
+          "hint": "Both graphs pass through \\(P\\): equate the two expressions for \\(y\\) and look for the solution with \\(x=y\\) (a graph and its inverse are reflections in \\(y=x\\)).",
+          "steps": [
+            {
+              "explain": "Because \\(P\\) is on both graphs, its coordinates satisfy both equations.",
+              "work": "\\(y=2-\\ln x\\quad(1),\\qquad y=e^{2-x}\\quad(2)\\)"
+            },
+            {
+              "explain": "Rearrange (1) and (2) so that both equal 2.",
+              "work": "\\((1):\\ y+\\ln x=2,\\qquad (2):\\ \\ln y=2-x\\ \\Rightarrow\\ x+\\ln y=2\\)"
+            },
+            {
+              "explain": "Equate the two left-hand sides (both equal 2).",
+              "work": "\\(y+\\ln x=x+\\ln y\\)"
+            },
+            {
+              "explain": "This equation is satisfied by \\(x=y\\) (the symmetric solution, since swapping \\(x\\) and \\(y\\) leaves it unchanged), so \\(P\\) lies on the line \\(y=x\\).",
+              "work": "\\(x=y\\)"
+            },
+            {
+              "explain": "Substitute \\(y=x\\) into (2).",
+              "work": "\\(x=e^{2-x}\\ \\Rightarrow\\ e^{2-x}-x=0\\)"
+            },
+            {
+              "explain": "B is wrong (\\(P\\) is not where \\(f\\) is zero), C is wrong (equal gradients is not the condition for meeting), D is wrong (\\(P\\) is not on the \\(x\\)-axis).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Explain why the coordinate of the point of intersection",
+              "note": "Intersection of a function and its inverse: use that the graphs are symmetric in y = x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

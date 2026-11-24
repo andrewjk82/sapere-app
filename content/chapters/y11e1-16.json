@@ -989,6 +989,52 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "fortst2020-e1-mc3",
+          "type": "mc",
+          "stem": "Give that \\(t=\\tan\\dfrac{\\theta}{2}\\), then \\(\\tan\\theta\\sin\\theta\\) is equal to",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{4t^{2}}{1-t^{4}}\\)",
+            "\\(\\dfrac{2t^{2}}{1-t^{4}}\\)",
+            "\\(\\dfrac{4t^{2}}{1+t^{4}}\\)",
+            "\\(\\dfrac{2t^{2}}{1+t^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the \\(t\\)-formulae \\(\\tan\\theta=\\dfrac{2t}{1-t^{2}}\\) and \\(\\sin\\theta=\\dfrac{2t}{1+t^{2}}\\), then multiply.",
+          "steps": [
+            {
+              "explain": "Recall the \\(t\\)-formulae for \\(t=\\tan\\dfrac{\\theta}{2}\\).",
+              "work": "\\(\\tan\\theta=\\dfrac{2t}{1-t^{2}},\\qquad \\sin\\theta=\\dfrac{2t}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Multiply the two fractions (numerators together, denominators together).",
+              "work": "\\(\\tan\\theta\\sin\\theta=\\dfrac{2t}{1-t^{2}}\\times\\dfrac{2t}{1+t^{2}}=\\dfrac{4t^{2}}{\\left(1-t^{2}\\right)\\left(1+t^{2}\\right)}\\)"
+            },
+            {
+              "explain": "Use the difference of two squares \\((1-t^{2})(1+t^{2})=1-t^{4}\\).",
+              "work": "\\(=\\dfrac{4t^{2}}{1-t^{4}}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "then \\(\\tan\\theta\\sin\\theta\\) is equal to",
+              "note": "t-formulae: tan theta is 2t over 1 minus t squared; sin theta is 2t over 1 plus t squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1523,6 +1569,64 @@
           "meta": {
             "source": "Barker College 2023 Year 11 Preliminary Mathematics Extension 1",
             "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-q14a",
+          "type": "mc",
+          "stem": "Use the \\(t\\)-formula to solve the equation \\(\\cos x-\\sin x=1\\), where \\(0\\le x\\le 2\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(x=0,\\ \\dfrac{3\\pi}{2},\\ 2\\pi\\)",
+            "\\(x=0,\\ \\dfrac{\\pi}{2},\\ 2\\pi\\)",
+            "\\(x=0,\\ \\dfrac{3\\pi}{2}\\)",
+            "\\(x=\\dfrac{3\\pi}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(t=\\tan\\dfrac{x}{2}\\): \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\), \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\). Then convert back with \\(x=2\\tan^{-1}t\\) in \\(0\\le x\\le 2\\pi\\).",
+          "steps": [
+            {
+              "explain": "Substitute the \\(t\\)-formulae.",
+              "work": "\\(\\dfrac{1-t^{2}}{1+t^{2}}-\\dfrac{2t}{1+t^{2}}=1\\)"
+            },
+            {
+              "explain": "Multiply by \\(1+t^{2}\\) (never zero).",
+              "work": "\\(1-t^{2}-2t=1+t^{2}\\)"
+            },
+            {
+              "explain": "Collect terms and factorise.",
+              "work": "\\(2t^{2}+2t=0\\ \\Rightarrow\\ 2t(t+1)=0\\ \\Rightarrow\\ t=0\\ \\text{or}\\ t=-1\\)"
+            },
+            {
+              "explain": "Convert back: \\(t=\\tan\\dfrac{x}{2}\\) with \\(0\\le\\dfrac{x}{2}\\le\\pi\\). \\(\\tan\\dfrac{x}{2}=0\\) gives \\(\\dfrac{x}{2}=0\\) or \\(\\pi\\), so \\(x=0\\) or \\(2\\pi\\).",
+              "work": "\\(\\tan\\dfrac{x}{2}=0\\ \\Rightarrow\\ x=0,\\ 2\\pi\\)"
+            },
+            {
+              "explain": "\\(\\tan\\dfrac{x}{2}=-1\\) gives \\(\\dfrac{x}{2}=\\dfrac{3\\pi}{4}\\) (second quadrant) so \\(x=\\dfrac{3\\pi}{2}\\).",
+              "work": "\\(\\tan\\dfrac{x}{2}=-1\\ \\Rightarrow\\ \\dfrac{x}{2}=\\dfrac{3\\pi}{4}\\ \\Rightarrow\\ x=\\dfrac{3\\pi}{2}\\)"
+            },
+            {
+              "explain": "Check each: \\(x=0\\): \\(1-0=1\\) ✓; \\(x=\\dfrac{3\\pi}{2}\\): \\(0-(-1)=1\\) ✓; \\(x=2\\pi\\): \\(1-0=1\\) ✓. (\\(x=\\dfrac{\\pi}{2}\\) gives \\(0-1=-1\\) ✗.) So \\(x=0,\\ \\dfrac{3\\pi}{2},\\ 2\\pi\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the \\(t\\)-formula to solve the equation",
+              "note": "t-formulae turn the equation into a quadratic in t; convert back and check the domain."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -2532,6 +2636,64 @@
             "source": "Danebank School 2021 Trial HSC Examination Mathematics Extension 1",
             "school": "Danebank School",
             "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fortst2020-e1-mc1",
+          "type": "mc",
+          "stem": "\\(\\sqrt{3}\\sin x-\\cos x\\) is equal to",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\sin\\left(x-\\dfrac{\\pi}{3}\\right)\\)",
+            "\\(2\\sin\\left(x-\\dfrac{\\pi}{6}\\right)\\)",
+            "\\(2\\cos\\left(x-\\dfrac{\\pi}{3}\\right)\\)",
+            "\\(2\\cos\\left(x-\\dfrac{\\pi}{6}\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(\\sqrt{3}\\sin x-\\cos x=R\\sin(x-\\alpha)\\), expand and compare coefficients of \\(\\sin x\\) and \\(\\cos x\\).",
+          "steps": [
+            {
+              "explain": "Expand the target form \\(R\\sin(x-\\alpha)=R\\sin x\\cos\\alpha-R\\cos x\\sin\\alpha\\).",
+              "work": "\\(\\sqrt{3}\\sin x-\\cos x=R\\sin x\\cos\\alpha-R\\cos x\\sin\\alpha\\)"
+            },
+            {
+              "explain": "Compare the coefficients of \\(\\sin x\\) and of \\(\\cos x\\).",
+              "work": "\\(R\\cos\\alpha=\\sqrt{3},\\qquad R\\sin\\alpha=1\\)"
+            },
+            {
+              "explain": "Square and add to find \\(R\\) (using \\(\\sin^{2}\\alpha+\\cos^{2}\\alpha=1\\)).",
+              "work": "\\(R^{2}=\\left(\\sqrt{3}\\right)^{2}+1^{2}=4\\ \\Rightarrow\\ R=2\\)"
+            },
+            {
+              "explain": "Divide the two equations to find \\(\\alpha\\).",
+              "work": "\\(\\tan\\alpha=\\dfrac{R\\sin\\alpha}{R\\cos\\alpha}=\\dfrac{1}{\\sqrt{3}}\\ \\Rightarrow\\ \\alpha=\\dfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Both \\(R\\cos\\alpha\\) and \\(R\\sin\\alpha\\) are positive so \\(\\alpha\\) is acute (first quadrant). Write the result.",
+              "work": "\\(\\sqrt{3}\\sin x-\\cos x=2\\sin\\left(x-\\dfrac{\\pi}{6}\\right)\\)"
+            },
+            {
+              "explain": "Check with \\(x=\\dfrac{\\pi}{2}\\): LHS \\(=\\sqrt{3}\\), RHS \\(=2\\sin\\dfrac{\\pi}{3}=\\sqrt{3}\\). Option A gives \\(2\\sin\\dfrac{\\pi}{6}=1\\), so it fails.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is equal to",
+              "note": "Auxiliary-angle form: match R sin x cos a and R cos x sin a, then use R squared and tan a."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Fort Street High School 2020 Trial HSC Examination Mathematics Extension 1",
+            "school": "Fort Street High School",
+            "grade": "11",
             "origin": "teacher"
           }
         }
