@@ -1887,6 +1887,250 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2020-y11a-mc10",
+          "type": "mc",
+          "stem": "The displacement-time graph of an object's motion is shown, where displacement \\(x\\) is measured in metres, and time \\(t\\) in seconds (straight lines through \\((0,0)\\), \\((4,4)\\), \\((7,4)\\), \\((9,0)\\) and \\((10,-2)\\)). The distance travelled by the object in the first 10 seconds is:",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"46.0\" y1=\"170.0\" x2=\"430.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"248.0\" x2=\"60.0\" y2=\"21.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"170.0\" x2=\"423.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"170.0\" x2=\"423.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"21.8\" x2=\"56.0\" y2=\"28.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"21.8\" x2=\"64.0\" y2=\"28.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"426.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"72.0\" y=\"27.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"60.0\" y1=\"167.0\" x2=\"60.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"90.0\" y1=\"167.0\" x2=\"90.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"90.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"120.0\" y1=\"167.0\" x2=\"120.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"150.0\" y1=\"167.0\" x2=\"150.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"180.0\" y1=\"167.0\" x2=\"180.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"210.0\" y1=\"167.0\" x2=\"210.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"240.0\" y1=\"167.0\" x2=\"240.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"270.0\" y1=\"167.0\" x2=\"270.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><line x1=\"300.0\" y1=\"167.0\" x2=\"300.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><line x1=\"330.0\" y1=\"167.0\" x2=\"330.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"330.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><line x1=\"360.0\" y1=\"167.0\" x2=\"360.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"390.0\" y1=\"167.0\" x2=\"390.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"390.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11</text><line x1=\"57.0\" y1=\"222.0\" x2=\"63.0\" y2=\"222.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"226.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"57.0\" y1=\"196.0\" x2=\"63.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"200.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"57.0\" y1=\"144.0\" x2=\"63.0\" y2=\"144.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"57.0\" y1=\"118.0\" x2=\"63.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"57.0\" y1=\"92.0\" x2=\"63.0\" y2=\"92.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"96.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"57.0\" y1=\"66.0\" x2=\"63.0\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"57.0\" y1=\"40.0\" x2=\"63.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><polyline points=\"60.0,170.0 180.0,66.0 270.0,66.0 360.0,222.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/></svg>"
+          },
+          "options": [
+            "\\(-2\\) metres",
+            "\\(4\\) metres",
+            "\\(8\\) metres",
+            "\\(10\\) metres"
+          ],
+          "answer": 3,
+          "hint": "DISTANCE adds up the total length of path travelled (always positive); DISPLACEMENT is the final position. Split the motion into stages.",
+          "steps": [
+            {
+              "explain": "Read the displacement at the turning points. From \\(t=0\\) to 4 the displacement increases from 0 to 4 m (moving forward 4 m). From 4 to 7 it stays at 4 m (stationary). From 7 to 10 it falls from 4 m to \\(-2\\) m (moving backward).",
+              "work": "\\(x(0)=0,\\ x(4)=4,\\ x(7)=4,\\ x(10)=-2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"46.0\" y1=\"170.0\" x2=\"430.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"248.0\" x2=\"60.0\" y2=\"21.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"170.0\" x2=\"423.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"430.0\" y1=\"170.0\" x2=\"423.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"21.8\" x2=\"56.0\" y2=\"28.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"21.8\" x2=\"64.0\" y2=\"28.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"426.0\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"72.0\" y=\"27.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"60.0\" y1=\"167.0\" x2=\"60.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"90.0\" y1=\"167.0\" x2=\"90.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"90.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"120.0\" y1=\"167.0\" x2=\"120.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"150.0\" y1=\"167.0\" x2=\"150.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"150.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"180.0\" y1=\"167.0\" x2=\"180.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"210.0\" y1=\"167.0\" x2=\"210.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"240.0\" y1=\"167.0\" x2=\"240.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"270.0\" y1=\"167.0\" x2=\"270.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><line x1=\"300.0\" y1=\"167.0\" x2=\"300.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><line x1=\"330.0\" y1=\"167.0\" x2=\"330.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"330.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><line x1=\"360.0\" y1=\"167.0\" x2=\"360.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"390.0\" y1=\"167.0\" x2=\"390.0\" y2=\"173.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"390.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11</text><line x1=\"57.0\" y1=\"222.0\" x2=\"63.0\" y2=\"222.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"226.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"57.0\" y1=\"196.0\" x2=\"63.0\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"200.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"57.0\" y1=\"144.0\" x2=\"63.0\" y2=\"144.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"57.0\" y1=\"118.0\" x2=\"63.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"57.0\" y1=\"92.0\" x2=\"63.0\" y2=\"92.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"96.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"57.0\" y1=\"66.0\" x2=\"63.0\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"57.0\" y1=\"40.0\" x2=\"63.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"60.0\" y1=\"170.0\" x2=\"180.0\" y2=\"66.0\" stroke=\"#047857\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"66.0\" x2=\"270.0\" y2=\"66.0\" stroke=\"#94a3b8\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"66.0\" x2=\"330.0\" y2=\"170.0\" stroke=\"#dc2626\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"170.0\" x2=\"360.0\" y2=\"222.0\" stroke=\"#7c3aed\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><text x=\"96.0\" y=\"86.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0–4 s: +4 m</text><text x=\"198.0\" y=\"53.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#6b7280\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4–7 s: 0 m (still)</text><text x=\"279.0\" y=\"105.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7–9 s: 4 m</text><text x=\"336.0\" y=\"232.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9–10 s: 2 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Distance in each stage \\(=\\) |change in displacement|: stage 1: \\(|4-0|=4\\); stage 2: \\(|4-4|=0\\); stage 3: \\(|{-2}-4|=6\\) (split as \\(4\\) m to reach 0 at \\(t=9\\) and 2 m more to \\(-2\\)).",
+              "work": "\\(4+0+6=10\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Distance \\(=4+4+2=10\\) metres (forward 4, back 4 to the start, then 2 more past it).",
+              "work": "\\(4+4+2=10\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Option A (\\(-2\\)) is the final DISPLACEMENT (not a distance, and distance is never negative); option B (4) is only the first stage; option C (8) forgets the extra 2 m below the axis.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The distance travelled by the object in the first 10 seconds is",
+              "note": "Distance adds every stage of movement (positive); displacement is only start to finish."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q27a",
+          "type": "mc",
+          "stem": "A football is kicked vertically upwards. Its height \\(h\\) metres above the ground after \\(t\\) seconds is described by \\(h=14t-5t^{2}\\). Differentiate \\(h\\) with respect to \\(t\\) to find \\(\\dfrac{dh}{dt}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(14-10t\\)",
+            "\\(14t-10\\)",
+            "\\(14-5t\\)",
+            "\\(14t-10t^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Power rule on each term: the derivative of \\(14t\\) is 14 and of \\(5t^{2}\\) is \\(10t\\).",
+          "steps": [
+            {
+              "explain": "Differentiate term by term with the power rule: multiply by the power, then reduce the power by 1.",
+              "work": "\\(\\dfrac{d}{dt}(14t)=14,\\qquad\\dfrac{d}{dt}\\left(-5t^{2}\\right)=-5(2)t=-10t\\)"
+            },
+            {
+              "explain": "Add the results.",
+              "work": "\\(\\dfrac{dh}{dt}=14-10t\\)"
+            },
+            {
+              "explain": "This is the velocity function (part (b)). Option B mixes up the terms; option D did not differentiate the second power.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate \\(h\\) with respect to \\(t\\)",
+              "note": "Power rule on each term of the height formula."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q27b",
+          "type": "mc",
+          "stem": "A football is kicked vertically upwards. Its height \\(h\\) metres above the ground after \\(t\\) seconds is described by \\(h=14t-5t^{2}\\). Given that \\(\\dfrac{dh}{dt}\\) represents the velocity of the ball at a given instant, find the velocity of the ball after 0.5 seconds.",
+          "difficulty": "easy",
+          "options": [
+            "\\(9\\ \\text{m s}^{-1}\\)",
+            "\\(6.75\\ \\text{m s}^{-1}\\)",
+            "\\(-9\\ \\text{m s}^{-1}\\)",
+            "\\(4\\ \\text{m s}^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Velocity is \\(\\dfrac{dh}{dt}=14-10t\\). Substitute \\(t=0.5\\).",
+          "steps": [
+            {
+              "explain": "From part (a), the velocity at time \\(t\\) is \\(v=\\dfrac{dh}{dt}=14-10t\\).",
+              "work": "\\(v=14-10t\\)"
+            },
+            {
+              "explain": "Substitute \\(t=0.5\\).",
+              "work": "\\(v=14-10(0.5)=14-5\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(v=9\\ \\text{m s}^{-1}\\)"
+            },
+            {
+              "explain": "Positive means the ball is still moving UPWARDS. (Option B is the height \\(h(0.5)=14(0.5)-5(0.25)=5.75\\) mixed up with other numbers.)",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the velocity of the ball after 0.5 seconds",
+              "note": "Velocity is the derivative: substitute the time into dh/dt."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q27d",
+          "type": "mc",
+          "stem": "A football is kicked vertically upwards. Its height \\(h\\) metres above the ground after \\(t\\) seconds is described by \\(h=14t-5t^{2}\\). At what time is the ball travelling upwards with a velocity of 3 metres per second?",
+          "difficulty": "easy",
+          "options": [
+            "\\(t=1.1\\ \\text{s}\\)",
+            "\\(t=1.7\\ \\text{s}\\)",
+            "\\(t=0.3\\ \\text{s}\\)",
+            "\\(t=1.4\\ \\text{s}\\)"
+          ],
+          "answer": 0,
+          "hint": "Velocity \\(=\\dfrac{dh}{dt}=14-10t\\). Set it equal to \\(+3\\) (upwards is positive).",
+          "steps": [
+            {
+              "explain": "Velocity is \\(v=\\dfrac{dh}{dt}=14-10t\\). 'Upwards with velocity 3 m/s' means \\(v=+3\\).",
+              "work": "\\(14-10t=3\\)"
+            },
+            {
+              "explain": "Subtract 14 from both sides, then divide by \\(-10\\).",
+              "work": "\\(-10t=-11\\ \\Rightarrow\\ t=1.1\\)"
+            },
+            {
+              "explain": "Check: \\(v(1.1)=14-11=3\\) ✓ (positive: moving up). The other time with speed 3 is \\(t=1.7\\) (\\(v=-3\\)), but then the ball is moving DOWN (option B).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "At what time is the ball travelling upwards with a velocity of 3 metres per second?",
+              "note": "Set the velocity formula equal to 3 (positive means upwards)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q27e",
+          "type": "mc",
+          "stem": "A football is kicked vertically upwards. Its height \\(h\\) metres above the ground after \\(t\\) seconds is described by \\(h=14t-5t^{2}\\). What is the acceleration of the ball?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-10\\ \\text{m s}^{-2}\\)",
+            "\\(10\\ \\text{m s}^{-2}\\)",
+            "\\(14-10t\\ \\text{m s}^{-2}\\)",
+            "\\(-5\\ \\text{m s}^{-2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Acceleration is the derivative of velocity: \\(\\dfrac{dv}{dt}\\), with \\(v=14-10t\\).",
+          "steps": [
+            {
+              "explain": "Acceleration is the rate of change of velocity. Velocity is \\(v=14-10t\\).",
+              "work": "\\(a=\\dfrac{dv}{dt}=\\dfrac{d}{dt}(14-10t)\\)"
+            },
+            {
+              "explain": "The derivative of 14 is 0 and of \\(-10t\\) is \\(-10\\).",
+              "work": "\\(a=-10\\ \\text{m s}^{-2}\\)"
+            },
+            {
+              "explain": "The acceleration is constant and negative (downwards): this is gravity (about \\(10\\ \\text{m s}^{-2}\\)). Option D is the velocity, not the acceleration.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the acceleration of the ball?",
+              "note": "Acceleration is the derivative of velocity (second derivative of height)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -1935,6 +1935,64 @@
               "note": "Substitute \\(x+h\\), expand, subtract \\(f(x)\\), cancel \\(h\\), then take the limit."
             }
           ]
+        },
+        {
+          "id": "hornsby2020-y11a-q16",
+          "type": "mc",
+          "stem": "Find the derivative of \\(f(x)=x^{2}+3x+2\\) by first principles. Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(f(x+h)-f(x)=2xh+h^{2}+3h\\). So \\(\\dfrac{f(x+h)-f(x)}{h}=2x+h+3\\), and as \\(h\\to 0\\), \\(f'(x)=2x+3\\).",
+            "\\(f(x+h)=x^{2}+h^{2}+3x+3h+2\\), so \\(\\dfrac{f(x+h)-f(x)}{h}=h+3\\), and as \\(h\\to 0\\), \\(f'(x)=3\\).",
+            "\\(\\dfrac{f(x+h)-f(x)}{h}=2x+h+3\\), and as \\(h\\to 0\\), \\(f'(x)=2x+h+3\\).",
+            "\\(f(x+h)-f(x)=2xh+h^{2}+3h\\). So \\(\\dfrac{f(x+h)-f(x)}{h}=2x+h^{2}+3\\), and as \\(h\\to 0\\), \\(f'(x)=2x+3\\)."
+          ],
+          "answer": 0,
+          "hint": "Use \\(f'(x)=\\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}\\). Expand \\((x+h)^{2}\\) carefully (it has a middle term \\(2xh\\)), subtract, factor out \\(h\\), cancel, then let \\(h\\to 0\\).",
+          "steps": [
+            {
+              "explain": "Write the definition of the derivative from first principles.",
+              "work": "\\(f'(x)=\\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}\\)"
+            },
+            {
+              "explain": "Find \\(f(x+h)\\): replace every \\(x\\) by \\((x+h)\\) and expand \\((x+h)^{2}=x^{2}+2xh+h^{2}\\).",
+              "work": "\\(f(x+h)=(x+h)^{2}+3(x+h)+2=x^{2}+2xh+h^{2}+3x+3h+2\\)"
+            },
+            {
+              "explain": "Subtract \\(f(x)=x^{2}+3x+2\\) (put it in brackets to subtract EVERY term): the \\(x^{2}\\), \\(3x\\) and 2 cancel.",
+              "work": "\\(f(x+h)-f(x)=2xh+h^{2}+3h\\)"
+            },
+            {
+              "explain": "Divide by \\(h\\): every term has a factor \\(h\\), so take it out and cancel.",
+              "work": "\\(\\dfrac{2xh+h^{2}+3h}{h}=\\dfrac{h(2x+h+3)}{h}=2x+h+3\\)"
+            },
+            {
+              "explain": "Take the limit: as \\(h\\to 0\\), the \\(h\\) term disappears.",
+              "work": "\\(f'(x)=\\lim_{h\\to 0}(2x+h+3)=2x+3\\)"
+            },
+            {
+              "explain": "Why not the others: B forgot the middle term \\(2xh\\); C left \\(h\\) in the final answer (the limit must be taken); D wrote \\(h^{2}\\) instead of \\(h\\) after dividing.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by first principles",
+              "note": "Expand f(x+h), subtract f(x), divide by h, cancel, then let h go to 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2345,6 +2403,59 @@
               "note": "Differentiate each term separately; constants have derivative zero."
             }
           ]
+        },
+        {
+          "id": "hornsby2020-y11a-mc6",
+          "type": "mc",
+          "stem": "The volume of water, \\(V\\) litres, in a tank after \\(t\\) minutes, is given by \\(V=4-t^{2}\\), then after five minutes:",
+          "difficulty": "medium",
+          "options": [
+            "The volume of water is decreasing at a rate of 21 litres per minute.",
+            "The volume of water is increasing at a rate of 21 litres per minute.",
+            "The volume of water is decreasing at a rate 10 litres per minute.",
+            "The volume of water is increasing at a rate of 10 litres per minute."
+          ],
+          "answer": 2,
+          "hint": "The RATE of change of volume is the derivative \\(\\dfrac{dV}{dt}\\). Evaluate it at \\(t=5\\). A negative derivative means decreasing.",
+          "steps": [
+            {
+              "explain": "'Rate of change' of the volume with time means the derivative \\(\\dfrac{dV}{dt}\\) (not the volume \\(V\\) itself). Differentiate \\(V=4-t^{2}\\): the derivative of 4 is 0 and of \\(t^{2}\\) is \\(2t\\).",
+              "work": "\\(\\dfrac{dV}{dt}=-2t\\)"
+            },
+            {
+              "explain": "Substitute \\(t=5\\) minutes.",
+              "work": "\\(\\dfrac{dV}{dt}=-2(5)=-10\\)"
+            },
+            {
+              "explain": "The sign tells the direction: \\(-10<0\\) means \\(V\\) is DECREASING, and the size 10 is the rate in litres per minute (red tangent on the graph has slope \\(-10\\)).",
+              "work": "\\(\\text{decreasing at 10 litres per minute}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"54.0\" y1=\"70.0\" x2=\"406.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"286.5\" x2=\"60.0\" y2=\"11.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"406.0\" y1=\"70.0\" x2=\"399.1\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"406.0\" y1=\"70.0\" x2=\"399.1\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"11.0\" x2=\"56.0\" y2=\"17.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"11.0\" x2=\"64.0\" y2=\"17.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"404.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"17.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">V</text><polyline points=\"60.0,36.0 60.8,36.0 61.7,36.0 62.5,36.0 63.4,36.0 64.2,36.0 65.0,36.1 65.9,36.1 66.7,36.1 67.6,36.1 68.4,36.2 69.2,36.2 70.1,36.2 70.9,36.3 71.8,36.3 72.6,36.4 73.4,36.4 74.3,36.5 75.1,36.5 76.0,36.6 76.8,36.7 77.6,36.7 78.5,36.8 79.3,36.9 80.2,37.0 81.0,37.0 81.8,37.1 82.7,37.2 83.5,37.3 84.4,37.4 85.2,37.5 86.0,37.6 86.9,37.7 87.7,37.8 88.6,37.9 89.4,38.0 90.2,38.2 91.1,38.3 91.9,38.4 92.8,38.5 93.6,38.7 94.4,38.8 95.3,38.9 96.1,39.1 97.0,39.2 97.8,39.4 98.6,39.5 99.5,39.7 100.3,39.8 101.2,40.0 102.0,40.2 102.8,40.3 103.7,40.5 104.5,40.7 105.4,40.9 106.2,41.0 107.0,41.2 107.9,41.4 108.7,41.6 109.6,41.8 110.4,42.0 111.2,42.2 112.1,42.4 112.9,42.6 113.8,42.8 114.6,43.0 115.4,43.3 116.3,43.5 117.1,43.7 118.0,43.9 118.8,44.2 119.6,44.4 120.5,44.6 121.3,44.9 122.2,45.1 123.0,45.4 123.8,45.6 124.7,45.9 125.5,46.1 126.4,46.4 127.2,46.7 128.0,46.9 128.9,47.2 129.7,47.5 130.6,47.8 131.4,48.0 132.2,48.3 133.1,48.6 133.9,48.9 134.8,49.2 135.6,49.5 136.4,49.8 137.3,50.1 138.1,50.4 139.0,50.7 139.8,51.0 140.6,51.4 141.5,51.7 142.3,52.0 143.2,52.3 144.0,52.7 144.8,53.0 145.7,53.3 146.5,53.7 147.4,54.0 148.2,54.4 149.0,54.7 149.9,55.1 150.7,55.4 151.6,55.8 152.4,56.2 153.2,56.5 154.1,56.9 154.9,57.3 155.8,57.7 156.6,58.0 157.4,58.4 158.3,58.8 159.1,59.2 160.0,59.6 160.8,60.0 161.6,60.4 162.5,60.8 163.3,61.2 164.2,61.6 165.0,62.0 165.8,62.4 166.7,62.9 167.5,63.3 168.4,63.7 169.2,64.2 170.0,64.6 170.9,65.0 171.7,65.5 172.6,65.9 173.4,66.4 174.2,66.8 175.1,67.3 175.9,67.7 176.8,68.2 177.6,68.7 178.4,69.1 179.3,69.6 180.1,70.1 181.0,70.5 181.8,71.0 182.6,71.5 183.5,72.0 184.3,72.5 185.2,73.0 186.0,73.5 186.8,74.0 187.7,74.5 188.5,75.0 189.4,75.5 190.2,76.0 191.0,76.5 191.9,77.1 192.7,77.6 193.6,78.1 194.4,78.6 195.2,79.2 196.1,79.7 196.9,80.3 197.8,80.8 198.6,81.4 199.4,81.9 200.3,82.5 201.1,83.0 202.0,83.6 202.8,84.1 203.6,84.7 204.5,85.3 205.3,85.9 206.2,86.4 207.0,87.0 207.8,87.6 208.7,88.2 209.5,88.8 210.4,89.4 211.2,90.0 212.0,90.6 212.9,91.2 213.7,91.8 214.6,92.4 215.4,93.0 216.2,93.6 217.1,94.3 217.9,94.9 218.8,95.5 219.6,96.1 220.4,96.8 221.3,97.4 222.1,98.1 223.0,98.7 223.8,99.3 224.6,100.0 225.5,100.7 226.3,101.3 227.2,102.0 228.0,102.6 228.8,103.3 229.7,104.0 230.5,104.7 231.4,105.3 232.2,106.0 233.0,106.7 233.9,107.4 234.7,108.1 235.6,108.8 236.4,109.5 237.2,110.2 238.1,110.9 238.9,111.6 239.8,112.3 240.6,113.0 241.4,113.7 242.3,114.5 243.1,115.2 244.0,115.9 244.8,116.6 245.6,117.4 246.5,118.1 247.3,118.8 248.2,119.6 249.0,120.3 249.8,121.1 250.7,121.8 251.5,122.6 252.4,123.4 253.2,124.1 254.0,124.9 254.9,125.7 255.7,126.4 256.6,127.2 257.4,128.0 258.2,128.8 259.1,129.6 259.9,130.4 260.8,131.2 261.6,132.0 262.4,132.8 263.3,133.6 264.1,134.4 265.0,135.2 265.8,136.0 266.6,136.8 267.5,137.6 268.3,138.5 269.2,139.3 270.0,140.1 270.8,141.0 271.7,141.8 272.5,142.6 273.4,143.5 274.2,144.3 275.0,145.2 275.9,146.0 276.7,146.9 277.6,147.8 278.4,148.6 279.2,149.5 280.1,150.4 280.9,151.2 281.8,152.1 282.6,153.0 283.4,153.9 284.3,154.8 285.1,155.7 286.0,156.6 286.8,157.5 287.6,158.4 288.5,159.3 289.3,160.2 290.2,161.1 291.0,162.0 291.8,162.9 292.7,163.8 293.5,164.8 294.4,165.7 295.2,166.6 296.0,167.5 296.9,168.5 297.7,169.4 298.6,170.4 299.4,171.3 300.2,172.3 301.1,173.2 301.9,174.2 302.8,175.1 303.6,176.1 304.4,177.1 305.3,178.0 306.1,179.0 307.0,180.0 307.8,181.0 308.6,182.0 309.5,183.0 310.3,183.9 311.2,184.9 312.0,185.9 312.8,186.9 313.7,187.9 314.5,189.0 315.4,190.0 316.2,191.0 317.0,192.0 317.9,193.0 318.7,194.0 319.6,195.1 320.4,196.1 321.2,197.1 322.1,198.2 322.9,199.2 323.8,200.3 324.6,201.3 325.4,202.4 326.3,203.4 327.1,204.5 328.0,205.5 328.8,206.6 329.6,207.7 330.5,208.7 331.3,209.8 332.2,210.9 333.0,212.0 333.8,213.1 334.7,214.1 335.5,215.2 336.4,216.3 337.2,217.4 338.0,218.5 338.9,219.6 339.7,220.7 340.6,221.9 341.4,223.0 342.2,224.1 343.1,225.2 343.9,226.3 344.8,227.5 345.6,228.6 346.4,229.7 347.3,230.9 348.1,232.0 349.0,233.1 349.8,234.3 350.6,235.4 351.5,236.6 352.3,237.8 353.2,238.9 354.0,240.1 354.8,241.3 355.7,242.4 356.5,243.6 357.4,244.8 358.2,246.0 359.0,247.1 359.9,248.3 360.7,249.5 361.6,250.7 362.4,251.9 363.2,253.1 364.1,254.3 364.9,255.5 365.8,256.7 366.6,258.0 367.4,259.2 368.3,260.4 369.1,261.6 370.0,262.8 370.8,264.1 371.6,265.3 372.5,266.5 373.3,267.8 374.2,269.0 375.0,270.3 375.8,271.5 376.7,272.8 377.5,274.0 378.4,275.3 379.2,276.6 380.0,277.8 380.9,279.1 381.7,280.4 382.6,281.7\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linejoin=\"round\"/><line x1=\"120.0\" y1=\"66.0\" x2=\"120.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"120.0\" y=\"87.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"180.0\" y1=\"66.0\" x2=\"180.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"87.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"240.0\" y1=\"66.0\" x2=\"240.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"87.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"300.0\" y1=\"66.0\" x2=\"300.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"87.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"360.0\" y1=\"66.0\" x2=\"360.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"87.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"56.0\" y1=\"36.0\" x2=\"64.0\" y2=\"36.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"51.0\" y=\"40.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"56.0\" y1=\"155.0\" x2=\"64.0\" y2=\"155.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"51.0\" y=\"159.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−10</text><line x1=\"56.0\" y1=\"240.0\" x2=\"64.0\" y2=\"240.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"51.0\" y=\"244.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−20</text><line x1=\"276.0\" y1=\"129.5\" x2=\"402.0\" y2=\"308.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"360.0\" cy=\"248.5\" r=\"5.5\" fill=\"#fff\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"350.0\" y=\"236.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 5, V = −21</text><text x=\"252.0\" y=\"288.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">tangent slope = −10</text></svg>"
+              }
+            },
+            {
+              "explain": "Option A/B use 21, which is \\(|V(5)|=|4-25|\\), the VOLUME at 5 minutes, not the rate. Option D has the wrong direction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "then after five minutes",
+              "note": "Rate of change means the derivative; a negative sign means decreasing."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3269,6 +3380,120 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2020-y11a-q20a",
+          "type": "mc",
+          "stem": "Consider the function \\(f(x)=x^{3}-3x^{2}\\). Show that the equation of the normal to the curve \\(y=f(x)\\) at the point \\((1,-2)\\) is \\(x-3y-7=0\\). Which working correctly shows this?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"34.0\" y1=\"150.0\" x2=\"300.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"284.0\" x2=\"110.0\" y2=\"-14.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"150.0\" x2=\"293.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"150.0\" x2=\"293.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"-14.0\" x2=\"106.0\" y2=\"-7.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"-14.0\" x2=\"114.0\" y2=\"-7.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"298.0\" y=\"142.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"120.0\" y=\"-8.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"55.0,279.0 55.6,275.7 56.2,272.4 56.9,269.2 57.5,266.1 58.1,263.0 58.8,259.9 59.4,256.9 60.0,254.0 60.6,251.1 61.3,248.2 61.9,245.4 62.5,242.7 63.1,240.0 63.8,237.3 64.4,234.7 65.0,232.1 65.6,229.6 66.2,227.1 66.9,224.7 67.5,222.3 68.1,220.0 68.8,217.7 69.4,215.4 70.0,213.2 70.6,211.1 71.2,209.0 71.9,206.9 72.5,204.8 73.1,202.9 73.8,200.9 74.4,199.0 75.0,197.1 75.6,195.3 76.2,193.5 76.9,191.8 77.5,190.1 78.1,188.4 78.8,186.8 79.4,185.2 80.0,183.7 80.6,182.2 81.2,180.7 81.9,179.3 82.5,177.9 83.1,176.6 83.8,175.3 84.4,174.0 85.0,172.8 85.6,171.5 86.2,170.4 86.9,169.3 87.5,168.2 88.1,167.1 88.8,166.1 89.4,165.1 90.0,164.1 90.6,163.2 91.2,162.3 91.9,161.5 92.5,160.7 93.1,159.9 93.8,159.1 94.4,158.4 95.0,157.7 95.6,157.1 96.2,156.4 96.9,155.8 97.5,155.3 98.1,154.7 98.8,154.2 99.4,153.8 100.0,153.3 100.6,152.9 101.3,152.5 101.9,152.2 102.5,151.8 103.1,151.5 103.8,151.3 104.4,151.0 105.0,150.8 105.6,150.6 106.2,150.4 106.9,150.3 107.5,150.2 108.1,150.1 108.8,150.0 109.4,150.0 110.0,150.0 110.6,150.0 111.2,150.0 111.9,150.1 112.5,150.2 113.1,150.3 113.8,150.4 114.4,150.6 115.0,150.8 115.6,151.0 116.2,151.2 116.9,151.4 117.5,151.7 118.1,151.9 118.8,152.2 119.4,152.6 120.0,152.9 120.6,153.3 121.2,153.7 121.9,154.1 122.5,154.5 123.1,154.9 123.8,155.4 124.4,155.8 125.0,156.3 125.6,156.8 126.2,157.3 126.9,157.9 127.5,158.4 128.1,159.0 128.8,159.6 129.4,160.2 130.0,160.8 130.6,161.4 131.2,162.1 131.9,162.8 132.5,163.4 133.1,164.1 133.8,164.8 134.4,165.5 135.0,166.2 135.6,167.0 136.2,167.7 136.9,168.5 137.5,169.3 138.1,170.1 138.8,170.8 139.4,171.6 140.0,172.5 140.6,173.3 141.2,174.1 141.9,175.0 142.5,175.8 143.1,176.7 143.8,177.5 144.4,178.4 145.0,179.3 145.6,180.2 146.2,181.1 146.9,182.0 147.5,182.9 148.1,183.8 148.8,184.7 149.4,185.7 150.0,186.6 150.6,187.5 151.2,188.5 151.9,189.4 152.5,190.4 153.1,191.3 153.8,192.3 154.4,193.3 155.0,194.2 155.6,195.2 156.2,196.2 156.9,197.1 157.5,198.1 158.1,199.1 158.8,200.1 159.4,201.0 160.0,202.0 160.6,203.0 161.2,203.9 161.9,204.9 162.5,205.9 163.1,206.9 163.8,207.8 164.4,208.8 165.0,209.8 165.6,210.7 166.2,211.7 166.9,212.7 167.5,213.6 168.1,214.6 168.8,215.5 169.4,216.5 170.0,217.4 170.6,218.3 171.2,219.3 171.9,220.2 172.5,221.1 173.1,222.0 173.8,222.9 174.4,223.8 175.0,224.7 175.6,225.6 176.2,226.5 176.9,227.3 177.5,228.2 178.1,229.0 178.8,229.9 179.4,230.7 180.0,231.5 180.6,232.4 181.2,233.2 181.9,233.9 182.5,234.7 183.1,235.5 183.8,236.3 184.4,237.0 185.0,237.8 185.6,238.5 186.2,239.2 186.9,239.9 187.5,240.6 188.1,241.2 188.8,241.9 189.4,242.6 190.0,243.2 190.6,243.8 191.2,244.4 191.9,245.0 192.5,245.6 193.1,246.1 193.8,246.7 194.4,247.2 195.0,247.7 195.6,248.2 196.2,248.6 196.9,249.1 197.5,249.5 198.1,249.9 198.8,250.3 199.4,250.7 200.0,251.1 200.6,251.4 201.2,251.8 201.9,252.1 202.5,252.3 203.1,252.6 203.8,252.8 204.4,253.0 205.0,253.2 205.6,253.4 206.2,253.6 206.9,253.7 207.5,253.8 208.1,253.9 208.8,254.0 209.4,254.0 210.0,254.0 210.6,254.0 211.2,254.0 211.9,253.9 212.5,253.8 213.1,253.7 213.8,253.6 214.4,253.4 215.0,253.2 215.6,253.0 216.2,252.7 216.9,252.5 217.5,252.2 218.1,251.8 218.8,251.5 219.4,251.1 220.0,250.7 220.6,250.2 221.2,249.8 221.9,249.3 222.5,248.7 223.1,248.2 223.8,247.6 224.4,246.9 225.0,246.3 225.6,245.6 226.2,244.9 226.9,244.1 227.5,243.3 228.1,242.5 228.8,241.7 229.4,240.8 230.0,239.9 230.6,238.9 231.2,237.9 231.9,236.9 232.5,235.8 233.1,234.7 233.8,233.6 234.4,232.5 235.0,231.2 235.6,230.0 236.2,228.7 236.9,227.4 237.5,226.1 238.1,224.7 238.8,223.3 239.4,221.8 240.0,220.3 240.6,218.8 241.3,217.2 241.9,215.6 242.5,213.9 243.1,212.2 243.8,210.5 244.4,208.7 245.0,206.9 245.6,205.0 246.2,203.1 246.9,201.1 247.5,199.2 248.1,197.1 248.8,195.0 249.4,192.9 250.0,190.8 250.6,188.6 251.2,186.3 251.9,184.0 252.5,181.7 253.1,179.3 253.8,176.9 254.4,174.4 255.0,171.9 255.6,169.3 256.2,166.7 256.9,164.0 257.5,161.3 258.1,158.6 258.8,155.8 259.4,152.9 260.0,150.0 260.6,147.1 261.2,144.1 261.9,141.0 262.5,137.9 263.1,134.8 263.8,131.6 264.4,128.3 265.0,125.0 265.6,121.7 266.2,118.3 266.9,114.8 267.5,111.3 268.1,107.7 268.8,104.1 269.4,100.5 270.0,96.8 270.6,93.0 271.2,89.2 271.9,85.3 272.5,81.3 273.1,77.4 273.8,73.3 274.4,69.2 275.0,65.1 275.6,60.8 276.2,56.6 276.9,52.3 277.5,47.9 278.1,43.4 278.8,38.9 279.4,34.4 280.0,29.8 280.6,25.1 281.2,20.4 281.9,15.6 282.5,10.7 283.1,5.8 283.8,0.9 284.4,-4.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"146.0\" x2=\"60.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"160.0\" y1=\"146.0\" x2=\"160.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"210.0\" y1=\"146.0\" x2=\"210.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"260.0\" y1=\"146.0\" x2=\"260.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"106.0\" y1=\"202.0\" x2=\"114.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"101.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"106.0\" y1=\"254.0\" x2=\"114.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"101.0\" y=\"258.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−4</text><line x1=\"106.0\" y1=\"98.0\" x2=\"114.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"101.0\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+          },
+          "options": [
+            "\\(f'(x)=3x^{2}-6x\\), \\(f'(1)=-3\\). Gradient of normal \\(=\\dfrac{1}{3}\\). \\(y+2=\\dfrac{1}{3}(x-1)\\Rightarrow 3y+6=x-1\\Rightarrow x-3y-7=0\\).",
+            "\\(f'(x)=3x^{2}-6x\\), \\(f'(1)=-3\\). Use \\(m=-3\\) for the normal: \\(y+2=-3(x-1)\\Rightarrow 3x+y-1=0\\).",
+            "\\(f'(x)=3x^{2}-6x\\), \\(f'(1)=-3\\). Gradient of normal \\(=3\\). \\(y+2=3(x-1)\\Rightarrow 3x-y-5=0\\).",
+            "\\(f'(x)=3x^{2}-3x\\), \\(f'(1)=0\\), so the normal is vertical: \\(x=1\\)."
+          ],
+          "answer": 0,
+          "hint": "Differentiate, find the tangent gradient at \\(x=1\\), take the negative reciprocal for the normal, and use \\(y-y_{1}=m(x-x_{1})\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(f(x)=x^{3}-3x^{2}\\) with the power rule.",
+              "work": "\\(f'(x)=3x^{2}-6x\\)"
+            },
+            {
+              "explain": "Gradient of the TANGENT at \\(x=1\\) (red line).",
+              "work": "\\(m_{T}=f'(1)=3(1)^{2}-6(1)=-3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"34.0\" y1=\"150.0\" x2=\"300.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"284.0\" x2=\"110.0\" y2=\"-14.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"150.0\" x2=\"293.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"150.0\" x2=\"293.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"-14.0\" x2=\"106.0\" y2=\"-7.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"-14.0\" x2=\"114.0\" y2=\"-7.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"298.0\" y=\"142.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"120.0\" y=\"-8.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"55.0,279.0 55.6,275.7 56.2,272.4 56.9,269.2 57.5,266.1 58.1,263.0 58.8,259.9 59.4,256.9 60.0,254.0 60.6,251.1 61.3,248.2 61.9,245.4 62.5,242.7 63.1,240.0 63.8,237.3 64.4,234.7 65.0,232.1 65.6,229.6 66.2,227.1 66.9,224.7 67.5,222.3 68.1,220.0 68.8,217.7 69.4,215.4 70.0,213.2 70.6,211.1 71.2,209.0 71.9,206.9 72.5,204.8 73.1,202.9 73.8,200.9 74.4,199.0 75.0,197.1 75.6,195.3 76.2,193.5 76.9,191.8 77.5,190.1 78.1,188.4 78.8,186.8 79.4,185.2 80.0,183.7 80.6,182.2 81.2,180.7 81.9,179.3 82.5,177.9 83.1,176.6 83.8,175.3 84.4,174.0 85.0,172.8 85.6,171.5 86.2,170.4 86.9,169.3 87.5,168.2 88.1,167.1 88.8,166.1 89.4,165.1 90.0,164.1 90.6,163.2 91.2,162.3 91.9,161.5 92.5,160.7 93.1,159.9 93.8,159.1 94.4,158.4 95.0,157.7 95.6,157.1 96.2,156.4 96.9,155.8 97.5,155.3 98.1,154.7 98.8,154.2 99.4,153.8 100.0,153.3 100.6,152.9 101.3,152.5 101.9,152.2 102.5,151.8 103.1,151.5 103.8,151.3 104.4,151.0 105.0,150.8 105.6,150.6 106.2,150.4 106.9,150.3 107.5,150.2 108.1,150.1 108.8,150.0 109.4,150.0 110.0,150.0 110.6,150.0 111.2,150.0 111.9,150.1 112.5,150.2 113.1,150.3 113.8,150.4 114.4,150.6 115.0,150.8 115.6,151.0 116.2,151.2 116.9,151.4 117.5,151.7 118.1,151.9 118.8,152.2 119.4,152.6 120.0,152.9 120.6,153.3 121.2,153.7 121.9,154.1 122.5,154.5 123.1,154.9 123.8,155.4 124.4,155.8 125.0,156.3 125.6,156.8 126.2,157.3 126.9,157.9 127.5,158.4 128.1,159.0 128.8,159.6 129.4,160.2 130.0,160.8 130.6,161.4 131.2,162.1 131.9,162.8 132.5,163.4 133.1,164.1 133.8,164.8 134.4,165.5 135.0,166.2 135.6,167.0 136.2,167.7 136.9,168.5 137.5,169.3 138.1,170.1 138.8,170.8 139.4,171.6 140.0,172.5 140.6,173.3 141.2,174.1 141.9,175.0 142.5,175.8 143.1,176.7 143.8,177.5 144.4,178.4 145.0,179.3 145.6,180.2 146.2,181.1 146.9,182.0 147.5,182.9 148.1,183.8 148.8,184.7 149.4,185.7 150.0,186.6 150.6,187.5 151.2,188.5 151.9,189.4 152.5,190.4 153.1,191.3 153.8,192.3 154.4,193.3 155.0,194.2 155.6,195.2 156.2,196.2 156.9,197.1 157.5,198.1 158.1,199.1 158.8,200.1 159.4,201.0 160.0,202.0 160.6,203.0 161.2,203.9 161.9,204.9 162.5,205.9 163.1,206.9 163.8,207.8 164.4,208.8 165.0,209.8 165.6,210.7 166.2,211.7 166.9,212.7 167.5,213.6 168.1,214.6 168.8,215.5 169.4,216.5 170.0,217.4 170.6,218.3 171.2,219.3 171.9,220.2 172.5,221.1 173.1,222.0 173.8,222.9 174.4,223.8 175.0,224.7 175.6,225.6 176.2,226.5 176.9,227.3 177.5,228.2 178.1,229.0 178.8,229.9 179.4,230.7 180.0,231.5 180.6,232.4 181.2,233.2 181.9,233.9 182.5,234.7 183.1,235.5 183.8,236.3 184.4,237.0 185.0,237.8 185.6,238.5 186.2,239.2 186.9,239.9 187.5,240.6 188.1,241.2 188.8,241.9 189.4,242.6 190.0,243.2 190.6,243.8 191.2,244.4 191.9,245.0 192.5,245.6 193.1,246.1 193.8,246.7 194.4,247.2 195.0,247.7 195.6,248.2 196.2,248.6 196.9,249.1 197.5,249.5 198.1,249.9 198.8,250.3 199.4,250.7 200.0,251.1 200.6,251.4 201.2,251.8 201.9,252.1 202.5,252.3 203.1,252.6 203.8,252.8 204.4,253.0 205.0,253.2 205.6,253.4 206.2,253.6 206.9,253.7 207.5,253.8 208.1,253.9 208.8,254.0 209.4,254.0 210.0,254.0 210.6,254.0 211.2,254.0 211.9,253.9 212.5,253.8 213.1,253.7 213.8,253.6 214.4,253.4 215.0,253.2 215.6,253.0 216.2,252.7 216.9,252.5 217.5,252.2 218.1,251.8 218.8,251.5 219.4,251.1 220.0,250.7 220.6,250.2 221.2,249.8 221.9,249.3 222.5,248.7 223.1,248.2 223.8,247.6 224.4,246.9 225.0,246.3 225.6,245.6 226.2,244.9 226.9,244.1 227.5,243.3 228.1,242.5 228.8,241.7 229.4,240.8 230.0,239.9 230.6,238.9 231.2,237.9 231.9,236.9 232.5,235.8 233.1,234.7 233.8,233.6 234.4,232.5 235.0,231.2 235.6,230.0 236.2,228.7 236.9,227.4 237.5,226.1 238.1,224.7 238.8,223.3 239.4,221.8 240.0,220.3 240.6,218.8 241.3,217.2 241.9,215.6 242.5,213.9 243.1,212.2 243.8,210.5 244.4,208.7 245.0,206.9 245.6,205.0 246.2,203.1 246.9,201.1 247.5,199.2 248.1,197.1 248.8,195.0 249.4,192.9 250.0,190.8 250.6,188.6 251.2,186.3 251.9,184.0 252.5,181.7 253.1,179.3 253.8,176.9 254.4,174.4 255.0,171.9 255.6,169.3 256.2,166.7 256.9,164.0 257.5,161.3 258.1,158.6 258.8,155.8 259.4,152.9 260.0,150.0 260.6,147.1 261.2,144.1 261.9,141.0 262.5,137.9 263.1,134.8 263.8,131.6 264.4,128.3 265.0,125.0 265.6,121.7 266.2,118.3 266.9,114.8 267.5,111.3 268.1,107.7 268.8,104.1 269.4,100.5 270.0,96.8 270.6,93.0 271.2,89.2 271.9,85.3 272.5,81.3 273.1,77.4 273.8,73.3 274.4,69.2 275.0,65.1 275.6,60.8 276.2,56.6 276.9,52.3 277.5,47.9 278.1,43.4 278.8,38.9 279.4,34.4 280.0,29.8 280.6,25.1 281.2,20.4 281.9,15.6 282.5,10.7 283.1,5.8 283.8,0.9 284.4,-4.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linejoin=\"round\"/><line x1=\"60.0\" y1=\"146.0\" x2=\"60.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"160.0\" y1=\"146.0\" x2=\"160.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"210.0\" y1=\"146.0\" x2=\"210.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"260.0\" y1=\"146.0\" x2=\"260.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"260.0\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"106.0\" y1=\"202.0\" x2=\"114.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"101.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"106.0\" y1=\"254.0\" x2=\"114.0\" y2=\"254.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"101.0\" y=\"258.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−4</text><line x1=\"106.0\" y1=\"98.0\" x2=\"114.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"101.0\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"110.0\" y1=\"124.0\" x2=\"210.0\" y2=\"280.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"85.0\" y1=\"202.0\" x2=\"110.0\" y2=\"150.0\" stroke=\"#fff\" stroke-width=\"0.01\" stroke-linecap=\"round\"/><line x1=\"65.0\" y1=\"218.5\" x2=\"285.0\" y2=\"180.3\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"139.6\" x2=\"200.0\" y2=\"264.4\" stroke=\"#dc2626\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"202\" r=\"5.5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><text x=\"170.0\" y=\"224.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1, −2)</text><text x=\"235.0\" y=\"131.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">normal: slope 1/3</text><text x=\"205.0\" y=\"264.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">tangent: slope −3</text><circle cx=\"110\" cy=\"150\" r=\"5\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"2.6\"/><circle cx=\"210\" cy=\"254\" r=\"5\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"2.6\"/></svg>"
+              }
+            },
+            {
+              "explain": "The normal is perpendicular to the tangent, so \\(m_{N}=-\\dfrac{1}{m_{T}}\\) (green line).",
+              "work": "\\(m_{N}=-\\dfrac{1}{-3}=\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Equation through \\((1,-2)\\): \\(y-y_{1}=m(x-x_{1})\\).",
+              "work": "\\(y-(-2)=\\dfrac{1}{3}(x-1)\\ \\Rightarrow\\ y+2=\\dfrac{1}{3}(x-1)\\)"
+            },
+            {
+              "explain": "Multiply by 3 to clear the fraction, then collect everything on the left.",
+              "work": "\\(3y+6=x-1\\ \\Rightarrow\\ x-3y-7=0\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Important: you must DIFFERENTIATE to find the gradient (starting from \\(x-3y-7=0\\) is not a valid method for a 'show' question). Option B uses the tangent gradient for the normal.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the equation of the normal",
+              "note": "Normal gradient is the negative reciprocal of f-prime; differentiate first."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q20b",
+          "type": "mc",
+          "stem": "Consider the function \\(f(x)=x^{3}-3x^{2}\\). Find the \\(x\\)-values of the point(s) on the curve \\(y=f(x)\\) where the tangent to the curve is horizontal.",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=0\\) and \\(x=2\\)",
+            "\\(x=0\\) and \\(x=3\\)",
+            "\\(x=2\\) only",
+            "\\(x=-2\\) and \\(x=0\\)"
+          ],
+          "answer": 0,
+          "hint": "A horizontal tangent has gradient 0: solve \\(f'(x)=0\\) (NOT \\(f(x)=0\\)).",
+          "steps": [
+            {
+              "explain": "A horizontal line has gradient 0, so the tangent is horizontal where \\(f'(x)=0\\).",
+              "work": "\\(f'(x)=3x^{2}-6x=0\\)"
+            },
+            {
+              "explain": "Factorise: take out the common factor \\(3x\\).",
+              "work": "\\(3x(x-2)=0\\)"
+            },
+            {
+              "explain": "Each factor can be zero.",
+              "work": "\\(x=0\\quad\\text{or}\\quad x=2\\)"
+            },
+            {
+              "explain": "These are the turning points (orange points on the graph): \\((0,0)\\) and \\((2,-4)\\). Option B solves \\(f(x)=0\\) (the \\(x\\)-intercepts), which is a different question.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the \\(x\\)-values of the point(s)",
+              "note": "Horizontal tangent means f-prime equals zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3809,6 +4034,106 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2020-y11a-q17a",
+          "type": "mc",
+          "stem": "Differentiate the following function: \\(y=\\dfrac{x-2}{x^{2}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{4-x}{x^{3}}\\)",
+            "\\(\\dfrac{x-4}{x^{3}}\\)",
+            "\\(\\dfrac{1}{x^{2}}\\)",
+            "\\(\\dfrac{x+4}{x^{3}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Either use the quotient rule \\(\\dfrac{vu'-uv'}{v^{2}}\\) or split the fraction into \\(x^{-1}-2x^{-2}\\) and use the power rule. The derivative of \\(-2\\) (a constant) is 0.",
+          "steps": [
+            {
+              "explain": "Split the fraction into two terms (divide each term on top by \\(x^{2}\\)).",
+              "work": "\\(y=\\dfrac{x}{x^{2}}-\\dfrac{2}{x^{2}}=x^{-1}-2x^{-2}\\)"
+            },
+            {
+              "explain": "Power rule: multiply by the power, then reduce the power by 1. \\(\\dfrac{d}{dx}x^{-1}=-x^{-2}\\) and \\(\\dfrac{d}{dx}\\left(-2x^{-2}\\right)=-2(-2)x^{-3}=4x^{-3}\\).",
+              "work": "\\(\\dfrac{dy}{dx}=-x^{-2}+4x^{-3}\\)"
+            },
+            {
+              "explain": "Write with positive powers: \\(-\\dfrac{1}{x^{2}}+\\dfrac{4}{x^{3}}\\), and use the common denominator \\(x^{3}\\).",
+              "work": "\\(=-\\dfrac{x}{x^{3}}+\\dfrac{4}{x^{3}}=\\dfrac{4-x}{x^{3}}\\)"
+            },
+            {
+              "explain": "Check with the quotient rule: \\(u=x-2\\), \\(u'=1\\); \\(v=x^{2}\\), \\(v'=2x\\): \\(\\dfrac{x^{2}(1)-(x-2)(2x)}{x^{4}}=\\dfrac{x^{2}-2x^{2}+4x}{x^{4}}=\\dfrac{-x^{2}+4x}{x^{4}}=\\dfrac{4-x}{x^{3}}\\) ✓. Option B has the opposite sign (a common quotient rule error).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate the following",
+              "note": "Split the fraction into powers of x, or use the quotient rule with the correct sign order."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q17d",
+          "type": "mc",
+          "stem": "Differentiate the following function: \\(y=\\dfrac{x}{2x+5}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{5}{(2x+5)^{2}}\\)",
+            "\\(\\dfrac{-5}{(2x+5)^{2}}\\)",
+            "\\(\\dfrac{4x+5}{(2x+5)^{2}}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Quotient rule \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=x\\), \\(v=2x+5\\): bottom times derivative of top MINUS top times derivative of bottom.",
+          "steps": [
+            {
+              "explain": "Identify the top and bottom and their derivatives.",
+              "work": "\\(u=x,\\ u'=1;\\qquad v=2x+5,\\ v'=2\\)"
+            },
+            {
+              "explain": "Quotient rule: \\(\\dfrac{dy}{dx}=\\dfrac{vu'-uv'}{v^{2}}\\).",
+              "work": "\\(\\dfrac{dy}{dx}=\\dfrac{(2x+5)(1)-x(2)}{(2x+5)^{2}}\\)"
+            },
+            {
+              "explain": "Expand the top: \\(2x+5-2x=5\\).",
+              "work": "\\(=\\dfrac{2x+5-2x}{(2x+5)^{2}}=\\dfrac{5}{(2x+5)^{2}}\\)"
+            },
+            {
+              "explain": "Check at \\(x=0\\): \\(y=\\dfrac{x}{2x+5}\\) is increasing near 0, and \\(\\dfrac{5}{25}=\\dfrac{1}{5}>0\\) ✓. Option B has a sign error and option C uses a plus in the quotient rule.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate the following",
+              "note": "Quotient rule: bottom times derivative of top minus top times derivative of bottom."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4139,6 +4464,56 @@
           "meta": {
             "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
             "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q17c",
+          "type": "mc",
+          "stem": "Differentiate the following function: \\(f(x)=\\dfrac{4}{\\sqrt{x}}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{2}{x\\sqrt{x}}\\)",
+            "\\(-\\dfrac{2}{\\sqrt{x}}\\)",
+            "\\(\\dfrac{2}{x\\sqrt{x}}\\)",
+            "\\(-\\dfrac{4}{2\\sqrt{x}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite as a power: \\(\\dfrac{4}{\\sqrt{x}}=4x^{-\\frac{1}{2}}\\), then use the power rule.",
+          "steps": [
+            {
+              "explain": "Write the root as a power \\(\\sqrt{x}=x^{\\frac{1}{2}}\\) and move it to the top by making the power negative.",
+              "work": "\\(f(x)=\\dfrac{4}{x^{\\frac{1}{2}}}=4x^{-\\frac{1}{2}}\\)"
+            },
+            {
+              "explain": "Power rule: multiply by \\(-\\dfrac{1}{2}\\), then subtract 1 from the power: \\(-\\dfrac{1}{2}-1=-\\dfrac{3}{2}\\).",
+              "work": "\\(f'(x)=4\\times\\left(-\\dfrac{1}{2}\\right)x^{-\\frac{3}{2}}=-2x^{-\\frac{3}{2}}\\)"
+            },
+            {
+              "explain": "Write with a positive power: \\(x^{\\frac{3}{2}}=x\\sqrt{x}\\).",
+              "work": "\\(f'(x)=-\\dfrac{2}{x^{\\frac{3}{2}}}=-\\dfrac{2}{x\\sqrt{x}}\\)"
+            },
+            {
+              "explain": "The 4 is a constant multiplier (not differentiated to 1). Check at \\(x=4\\): \\(f'(4)=-\\dfrac{2}{4\\cdot 2}=-\\dfrac{1}{4}\\) and a small step shows \\(f\\) decreasing ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate the following",
+              "note": "Write the root as a fractional power, then the power rule; keep the constant multiplier."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -5029,6 +5404,60 @@
             "grade": "11",
             "origin": "teacher",
             "note": "Open response: teacher review (either method is accepted)."
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q17b",
+          "type": "mc",
+          "stem": "Differentiate the following function: \\(y=x^{2}(3x-2)^{2}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(4x(3x-2)(3x-1)\\)",
+            "\\(2x(3x-2)^{2}\\)",
+            "\\(6x^{2}(3x-2)\\)",
+            "\\(4x(3x-2)(3x+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Product rule: \\(u=x^{2}\\), \\(v=(3x-2)^{2}\\) (chain rule for \\(v'\\)). Then FACTORISE the answer instead of expanding.",
+          "steps": [
+            {
+              "explain": "Name the two factors and differentiate each. For \\(v=(3x-2)^{2}\\) use the chain rule: bring down the 2, reduce the power, multiply by the derivative of the inside (3).",
+              "work": "\\(u=x^{2},\\ u'=2x;\\qquad v=(3x-2)^{2},\\ v'=2(3x-2)(3)=6(3x-2)\\)"
+            },
+            {
+              "explain": "Product rule \\(\\dfrac{dy}{dx}=u'v+uv'\\).",
+              "work": "\\(\\dfrac{dy}{dx}=2x(3x-2)^{2}+x^{2}\\cdot 6(3x-2)\\)"
+            },
+            {
+              "explain": "Take out the common factor \\(2x(3x-2)\\) from both terms.",
+              "work": "\\(=2x(3x-2)\\left[(3x-2)+3x\\right]\\)"
+            },
+            {
+              "explain": "Simplify the bracket: \\(3x-2+3x=6x-2=2(3x-1)\\).",
+              "work": "\\(=2x(3x-2)(6x-2)=4x(3x-2)(3x-1)\\)"
+            },
+            {
+              "explain": "Check at \\(x=1\\): original derivative by the product rule: \\(2(1)(1)^{2}+1\\cdot6(1)=8\\); answer: \\(4(1)(1)(2)=8\\) ✓. Option D has \\(3x+1\\) (sign slip in the bracket).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate the following",
+              "note": "Product rule with the chain rule inside; factorise rather than expand."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]

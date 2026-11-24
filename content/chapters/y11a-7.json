@@ -6113,6 +6113,62 @@
             "grade": "12"
           },
           "xp": 1
+        },
+        {
+          "id": "hornsby2020-y11a-q24a",
+          "type": "mc",
+          "stem": "The straight-line \\(l_{1}\\) passes through the points \\(A\\) and \\(B\\) with coordinates \\((0,-2)\\) and \\((6,7)\\) respectively. The straight line \\(l_{2}\\) with equation \\(x+y=8\\) cuts the \\(y\\)-axis at the point \\(C\\). The lines \\(l_{1}\\) and \\(l_{2}\\) intersect at the point \\(D\\). Find the equation of the line \\(l_{1}\\) in the form \\(y=mx+c\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 360\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"220.0\" x2=\"390.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"340.0\" x2=\"140.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"136.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"144.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"150.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"130.0\" y=\"236.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"115.3\" y1=\"323.6\" x2=\"282.5\" y2=\"44.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"49.0\" x2=\"301.5\" y2=\"229.5\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"288.2\" y=\"43.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">l₁</text><text x=\"303.4\" y=\"235.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">l₂: x + y = 8</text><circle cx=\"140\" cy=\"258\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"148.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(0, −2)</text><circle cx=\"254\" cy=\"87\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"262.0\" y=\"79.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(6, 7)</text><circle cx=\"140\" cy=\"68\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"216\" cy=\"144\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"224.0\" y=\"136.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text></svg>"
+          },
+          "options": [
+            "\\(y=\\dfrac{3}{2}x-2\\)",
+            "\\(y=\\dfrac{2}{3}x-2\\)",
+            "\\(y=\\dfrac{3}{2}x+2\\)",
+            "\\(y=-\\dfrac{3}{2}x-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Gradient \\(m=\\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}\\). The point \\(A(0,-2)\\) is on the \\(y\\)-axis, so its \\(y\\)-value is the intercept \\(c\\).",
+          "steps": [
+            {
+              "explain": "Gradient between \\(A(0,-2)\\) and \\(B(6,7)\\): rise over run (the line goes UP as it goes right, so \\(m>0\\)).",
+              "work": "\\(m=\\dfrac{7-(-2)}{6-0}=\\dfrac{9}{6}=\\dfrac{3}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 360\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"220.0\" x2=\"390.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"340.0\" x2=\"140.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"136.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"144.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"150.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"130.0\" y=\"236.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"115.3\" y1=\"323.6\" x2=\"282.5\" y2=\"44.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"49.0\" x2=\"301.5\" y2=\"229.5\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"288.2\" y=\"43.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">l₁</text><text x=\"303.4\" y=\"235.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">l₂: x + y = 8</text><circle cx=\"140\" cy=\"258\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"148.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(0, −2)</text><circle cx=\"254\" cy=\"87\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"262.0\" y=\"79.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(6, 7)</text><circle cx=\"140\" cy=\"68\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"216\" cy=\"144\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"224.0\" y=\"136.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><line x1=\"140.0\" y1=\"258.0\" x2=\"254.0\" y2=\"258.0\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><line x1=\"254.0\" y1=\"258.0\" x2=\"254.0\" y2=\"87.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><text x=\"197.0\" y=\"292.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">run = 6</text><text x=\"262.0\" y=\"172.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rise = 9</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(A\\) lies on the \\(y\\)-axis (\\(x=0\\)), so the \\(y\\)-intercept is \\(c=-2\\).",
+              "work": "\\(c=-2\\)"
+            },
+            {
+              "explain": "Write the equation \\(y=mx+c\\).",
+              "work": "\\(y=\\dfrac{3}{2}x-2\\)"
+            },
+            {
+              "explain": "Check with \\(B\\): \\(\\dfrac{3}{2}(6)-2=9-2=7\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the equation of the line",
+              "note": "Gradient from rise over run; the y-intercept is the point on the y-axis."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9527,6 +9583,127 @@
           "meta": {
             "source": "Barker College 2021 Year 11 Preliminary Mathematics Advanced",
             "school": "Barker College",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q24b",
+          "type": "mc",
+          "stem": "The straight-line \\(l_{1}\\) has equation \\(y=\\dfrac{3}{2}x-2\\) and the straight line \\(l_{2}\\) has equation \\(x+y=8\\). The lines \\(l_{1}\\) and \\(l_{2}\\) intersect at the point \\(D\\). Find the coordinates of \\(D\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 360\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"220.0\" x2=\"390.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"340.0\" x2=\"140.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"136.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"144.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"150.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"130.0\" y=\"236.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"115.3\" y1=\"323.6\" x2=\"282.5\" y2=\"44.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"49.0\" x2=\"301.5\" y2=\"229.5\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"288.2\" y=\"43.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">l₁</text><text x=\"303.4\" y=\"235.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">l₂: x + y = 8</text><circle cx=\"140\" cy=\"258\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"148.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(0, −2)</text><circle cx=\"254\" cy=\"87\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"262.0\" y=\"79.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(6, 7)</text><circle cx=\"140\" cy=\"68\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"216\" cy=\"144\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"224.0\" y=\"136.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text></svg>"
+          },
+          "options": [
+            "\\(D(4,4)\\)",
+            "\\(D(4,-4)\\)",
+            "\\(D(8,0)\\)",
+            "\\(D(2,6)\\)"
+          ],
+          "answer": 0,
+          "hint": "The intersection point lies on BOTH lines: solve the two equations simultaneously (substitution).",
+          "steps": [
+            {
+              "explain": "Point \\(D\\) is on both lines, so its coordinates satisfy both equations. Label them.",
+              "work": "\\(y=\\dfrac{3}{2}x-2\\quad(1),\\qquad x+y=8\\quad(2)\\)"
+            },
+            {
+              "explain": "From (2) make \\(x\\) the subject: \\(x=8-y\\). Substitute into (1).",
+              "work": "\\(y=\\dfrac{3}{2}(8-y)-2\\)"
+            },
+            {
+              "explain": "Multiply every term by 2 to clear the fraction, then expand.",
+              "work": "\\(2y=3(8-y)-4=24-3y-4\\ \\Rightarrow\\ 2y=20-3y\\)"
+            },
+            {
+              "explain": "Collect the \\(y\\) terms and solve.",
+              "work": "\\(5y=20\\ \\Rightarrow\\ y=4\\)"
+            },
+            {
+              "explain": "Substitute \\(y=4\\) back into (2) to find \\(x\\).",
+              "work": "\\(x=8-4=4\\)"
+            },
+            {
+              "explain": "\\(D=(4,4)\\). Check in (1): \\(\\dfrac{3}{2}(4)-2=4\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the coordinates of",
+              "note": "Intersection: solve the two equations simultaneously by substitution."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q24c",
+          "type": "mc",
+          "stem": "The straight-line \\(l_{1}\\) passes through \\(A(0,-2)\\) and \\(B(6,7)\\). The straight line \\(l_{2}\\) with equation \\(x+y=8\\) cuts the \\(y\\)-axis at the point \\(C\\). The lines \\(l_{1}\\) and \\(l_{2}\\) intersect at the point \\(D(4,4)\\). Calculate the area of \\(\\triangle ACD\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 360\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"220.0\" x2=\"390.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"340.0\" x2=\"140.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"136.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"144.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"150.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"130.0\" y=\"236.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"115.3\" y1=\"323.6\" x2=\"282.5\" y2=\"44.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"49.0\" x2=\"301.5\" y2=\"229.5\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"288.2\" y=\"43.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">l₁</text><text x=\"303.4\" y=\"235.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">l₂: x + y = 8</text><circle cx=\"140\" cy=\"258\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"148.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(0, −2)</text><circle cx=\"254\" cy=\"87\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"262.0\" y=\"79.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(6, 7)</text><circle cx=\"140\" cy=\"68\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"216\" cy=\"144\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"224.0\" y=\"136.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text></svg>"
+          },
+          "options": [
+            "\\(20\\ \\text{units}^{2}\\)",
+            "\\(40\\ \\text{units}^{2}\\)",
+            "\\(16\\ \\text{units}^{2}\\)",
+            "\\(10\\ \\text{units}^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(A=\\dfrac{1}{2}\\times\\text{base}\\times\\text{height}\\). Both \\(A\\) and \\(C\\) are on the \\(y\\)-axis, so take \\(AC\\) as the base and the horizontal distance of \\(D\\) as the height.",
+          "steps": [
+            {
+              "explain": "Find \\(C\\): \\(l_{2}\\) cuts the \\(y\\)-axis where \\(x=0\\): \\(0+y=8\\), so \\(C=(0,8)\\).",
+              "work": "\\(C=(0,8)\\)"
+            },
+            {
+              "explain": "Take \\(AC\\) as the base (it lies along the \\(y\\)-axis, red). Its length is the difference of the \\(y\\)-coordinates.",
+              "work": "\\(AC=8-(-2)=10\\)"
+            },
+            {
+              "explain": "The height is the perpendicular distance from \\(D\\) to the line \\(AC\\) (the \\(y\\)-axis): that is the \\(x\\)-coordinate of \\(D\\), 4 (purple).",
+              "work": "\\(\\text{height}=4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 360\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"220.0\" x2=\"390.0\" y2=\"220.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"340.0\" x2=\"140.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"220.0\" x2=\"383.1\" y2=\"224.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"136.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"20.0\" x2=\"144.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"150.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"130.0\" y=\"236.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"115.3\" y1=\"323.6\" x2=\"282.5\" y2=\"44.2\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"49.0\" x2=\"301.5\" y2=\"229.5\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"288.2\" y=\"43.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">l₁</text><text x=\"303.4\" y=\"235.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">l₂: x + y = 8</text><circle cx=\"140\" cy=\"258\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"148.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(0, −2)</text><circle cx=\"254\" cy=\"87\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"262.0\" y=\"79.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(6, 7)</text><circle cx=\"140\" cy=\"68\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"216\" cy=\"144\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"224.0\" y=\"136.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><polygon points=\"140,258 140,68 216,144\" fill=\"#34d399\" fill-opacity=\"0.45\" stroke=\"#047857\" stroke-width=\"2\"/><line x1=\"140.0\" y1=\"258.0\" x2=\"140.0\" y2=\"68.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"144.0\" x2=\"216.0\" y2=\"144.0\" stroke=\"#7c3aed\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><text x=\"128.0\" y=\"163.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">base AC = 10</text><text x=\"178.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">height = 4</text></svg>"
+              }
+            },
+            {
+              "explain": "Area \\(=\\dfrac{1}{2}\\times\\text{base}\\times\\text{height}\\).",
+              "work": "\\(A=\\dfrac{1}{2}\\times 10\\times 4=20\\ \\text{units}^{2}\\)"
+            },
+            {
+              "explain": "Do NOT assume the two lines are perpendicular (they are not), so \\(AD\\) and \\(CD\\) cannot be used as base and height. Option B (40) forgets the \\(\\dfrac{1}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the area of",
+              "note": "Choose a base along an axis; the height is the perpendicular distance to the opposite vertex."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
             "grade": "11",
             "origin": "teacher"
           }

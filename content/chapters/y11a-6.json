@@ -3073,6 +3073,66 @@
               "note": "First use the 30° angle and diameter to find XY. For the shaded area, subtract the triangle from the semicircle."
             }
           ]
+        },
+        {
+          "id": "hornsby2020-y11a-mc3",
+          "type": "mc",
+          "stem": "Uma is lying down on flat ground. The distance from Uma to the top of the television antenna, \\(AT\\), is 350 m (the line from \\(U\\) to the top \\(T\\), with a right angle at \\(A\\)). If the angle of elevation from Uma to the top of the mast is \\(13^{\\circ}\\), then the height of the antenna is closest to:",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 170\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"30,130 380,130 380,70\" fill=\"none\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polyline points=\"368,130 368,118 380,118\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M90,130 A60,60 0 0 0 89.1,119.9\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"114.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13°</text><text x=\"205.0\" y=\"86.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">350 m</text><text x=\"24.0\" y=\"146.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">U</text><text x=\"386.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"384.0\" y=\"62.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text></svg>"
+          },
+          "options": [
+            "\\(80\\ \\text{m}\\)",
+            "\\(81\\ \\text{m}\\)",
+            "\\(78\\ \\text{m}\\)",
+            "\\(79\\ \\text{m}\\)"
+          ],
+          "answer": 3,
+          "hint": "Label the sides from the \\(13^{\\circ}\\) angle: the 350 m line is the hypotenuse and the antenna height is the OPPOSITE side. Use \\(\\sin\\).",
+          "steps": [
+            {
+              "explain": "Mark the sides relative to the \\(13^{\\circ}\\) angle at \\(U\\): the 350 m line \\(UT\\) is the HYPOTENUSE (opposite the right angle, purple); the height \\(AT\\) is OPPOSITE the \\(13^{\\circ}\\) angle (red).",
+              "work": "\\(\\text{hyp}=350,\\ \\ \\text{opp}=AT\\ (\\text{unknown})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 170\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"30,130 380,130 380,70\" fill=\"#e0e7ff\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polyline points=\"368,130 368,118 380,118\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M90,130 A60,60 0 0 0 89.1,119.9\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"114.0\" y=\"124.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13°</text><line x1=\"30.0\" y1=\"130.0\" x2=\"380.0\" y2=\"70.0\" stroke=\"#7c3aed\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"130.0\" x2=\"380.0\" y2=\"70.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"130.0\" x2=\"380.0\" y2=\"130.0\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"197.0\" y=\"86.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">hypotenuse UT = 350</text><text x=\"372.0\" y=\"104.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AT = ?</text><text x=\"205.0\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">UA (adjacent)</text><text x=\"24.0\" y=\"146.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">U</text><text x=\"386.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"384.0\" y=\"62.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text></svg>"
+              }
+            },
+            {
+              "explain": "Opposite and hypotenuse: use \\(\\sin\\theta=\\dfrac{\\text{opposite}}{\\text{hypotenuse}}\\) (SOH).",
+              "work": "\\(\\sin 13^{\\circ}=\\dfrac{AT}{350}\\)"
+            },
+            {
+              "explain": "Multiply both sides by 350.",
+              "work": "\\(AT=350\\sin 13^{\\circ}\\)"
+            },
+            {
+              "explain": "Use the calculator in DEGREE mode: \\(\\sin 13^{\\circ}=0.22495\\).",
+              "work": "\\(AT=350\\times 0.22495=78.73\\ldots\\approx 79\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Check: using \\(\\cos 13^{\\circ}\\) (adjacent over hypotenuse) would give the base \\(UA\\approx 341\\) m, not the height. Option B (81) would come from the radian mode error.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "the height of the antenna is closest to",
+              "note": "Opposite over hypotenuse is sine; make sure the calculator is in degree mode."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5450,6 +5510,66 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Mathematics Advanced Trial HSC",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q30a",
+          "type": "mc",
+          "stem": "A vertical tree of height 38 metres stands on horizontal ground. The bottom of the tree is at the point \\(B\\). Observer \\(A\\), standing on the ground, sees the top of the tree, \\(T\\), at an angle of elevation of \\(14^{\\circ}\\). Show that \\(AB=38\\cot 14^{\\circ}\\). Which working correctly shows this?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"250.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"250.0\" x2=\"60.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"60.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"250.0\" x2=\"235.0\" y2=\"155.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"155.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"60,236 74,236 74,250\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M330,250 A60,60 0 0 1 338.0,220.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"306.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14°</text><text x=\"56.0\" y=\"52.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text><text x=\"52.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"398.0\" y=\"266.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"239.0\" y=\"145.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><text x=\"50.0\" y=\"155.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">38 m</text></svg>"
+          },
+          "options": [
+            "In \\(\\triangle BAT\\) (right angle at \\(B\\)): \\(\\tan 14^{\\circ}=\\dfrac{BT}{AB}=\\dfrac{38}{AB}\\), so \\(AB=\\dfrac{38}{\\tan 14^{\\circ}}=38\\cot 14^{\\circ}\\).",
+            "In \\(\\triangle BAT\\): \\(\\tan 14^{\\circ}=\\dfrac{AB}{BT}=\\dfrac{AB}{38}\\), so \\(AB=38\\tan 14^{\\circ}\\).",
+            "In \\(\\triangle BAT\\): \\(\\sin 14^{\\circ}=\\dfrac{38}{AB}\\), so \\(AB=38\\cot 14^{\\circ}\\).",
+            "Start from \\(AB=38\\cot 14^{\\circ}\\) and work backwards to \\(\\tan 14^{\\circ}=\\dfrac{38}{AB}\\)."
+          ],
+          "answer": 0,
+          "hint": "Label the sides of right triangle \\(BAT\\) from the \\(14^{\\circ}\\) angle at \\(A\\): \\(BT=38\\) is OPPOSITE and \\(AB\\) is ADJACENT. Use \\(\\tan\\), then rearrange, and \\(\\dfrac{1}{\\tan}=\\cot\\).",
+          "steps": [
+            {
+              "explain": "Triangle \\(BAT\\) has a right angle at \\(B\\) (the tree is vertical). From the \\(14^{\\circ}\\) angle at \\(A\\): the tree \\(BT=38\\) is OPPOSITE the angle (red) and \\(AB\\) is ADJACENT (green).",
+              "work": "\\(\\text{opp}=BT=38,\\quad\\text{adj}=AB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"250.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"250.0\" x2=\"60.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"60.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"250.0\" x2=\"235.0\" y2=\"155.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"155.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"60,236 74,236 74,250\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M330,250 A60,60 0 0 1 338.0,220.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"306.0\" y=\"238.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14°</text><text x=\"56.0\" y=\"52.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text><text x=\"52.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"398.0\" y=\"266.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"239.0\" y=\"145.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><text x=\"50.0\" y=\"155.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">38 m</text><line x1=\"60.0\" y1=\"250.0\" x2=\"60.0\" y2=\"60.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"250.0\" x2=\"390.0\" y2=\"250.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"74.0\" y=\"155.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">opposite = 38</text><text x=\"225.0\" y=\"272.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">adjacent = AB</text></svg>"
+              }
+            },
+            {
+              "explain": "Opposite and adjacent: \\(\\tan\\theta=\\dfrac{\\text{opp}}{\\text{adj}}\\) (TOA).",
+              "work": "\\(\\tan 14^{\\circ}=\\dfrac{BT}{AB}=\\dfrac{38}{AB}\\)"
+            },
+            {
+              "explain": "Rearrange: multiply by \\(AB\\), then divide by \\(\\tan 14^{\\circ}\\).",
+              "work": "\\(AB=\\dfrac{38}{\\tan 14^{\\circ}}\\)"
+            },
+            {
+              "explain": "Use \\(\\cot\\theta=\\dfrac{1}{\\tan\\theta}\\).",
+              "work": "\\(AB=38\\cot 14^{\\circ}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "In a 'show' question you must start from known facts and arrive at the given result (not 'work backwards', option D). Option B has opposite and adjacent swapped; option C uses \\(\\sin\\) (hypotenuse).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Right triangle: opposite is 38, adjacent is AB: use tangent, then cot is 1 over tan."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -14571,6 +14691,113 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "hornsby2020-y11a-mc9",
+          "type": "mc",
+          "stem": "Given that \\(\\cos 40^{\\circ}=0.766\\), which of the following statements are true?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cos 140^{\\circ}=-0.766\\) and \\(\\sin 130^{\\circ}=0.766\\)",
+            "\\(\\cos 140^{\\circ}=-0.766\\) and \\(\\sin 50^{\\circ}=-0.766\\)",
+            "\\(\\cos 320^{\\circ}=0.766\\) and \\(\\sin 130^{\\circ}=-0.766\\)",
+            "\\(\\cos 220^{\\circ}=0.766\\) and \\(\\sin 50^{\\circ}=0.766\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the CAST diagram: find the quadrant of each angle, the related acute angle, and the sign. Also \\(\\sin(90^{\\circ}-\\theta)=\\cos\\theta\\).",
+          "steps": [
+            {
+              "explain": "Each statement involves a related acute angle and a sign from the quadrant (CAST: S for sin, A for all, T for tan, C for cos positive).",
+              "work": "\\(\\text{CAST}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><circle cx=\"210\" cy=\"165\" r=\"120\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"76.0\" y1=\"165.0\" x2=\"344.0\" y2=\"165.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"31.0\" x2=\"210.0\" y2=\"299.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"165.0\" x2=\"301.9\" y2=\"87.9\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"301.9\" cy=\"87.9\" r=\"5\" fill=\"#047857\"/><text x=\"324.9\" y=\"72.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><line x1=\"210.0\" y1=\"165.0\" x2=\"118.1\" y2=\"87.9\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"118.1\" cy=\"87.9\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"95.1\" y=\"72.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">140°</text><line x1=\"210.0\" y1=\"165.0\" x2=\"118.1\" y2=\"242.1\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"118.1\" cy=\"242.1\" r=\"5\" fill=\"#dc2626\"/><text x=\"95.1\" y=\"265.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">220°</text><line x1=\"210.0\" y1=\"165.0\" x2=\"301.9\" y2=\"242.1\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"301.9\" cy=\"242.1\" r=\"5\" fill=\"#d97706\"/><text x=\"324.9\" y=\"265.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">320°</text><text x=\"270.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A: all +</text><text x=\"148.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S: sin +</text><text x=\"148.0\" y=\"245.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">T: tan +</text><text x=\"272.0\" y=\"245.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C: cos +</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\cos 140^{\\circ}\\): \\(140^{\\circ}\\) is in quadrant 2 where cosine is NEGATIVE. Related acute angle \\(=180^{\\circ}-140^{\\circ}=40^{\\circ}\\). So \\(\\cos 140^{\\circ}=-\\cos 40^{\\circ}=-0.766\\) ✓.",
+              "work": "\\(\\cos 140^{\\circ}=-\\cos 40^{\\circ}=-0.766\\)"
+            },
+            {
+              "explain": "\\(\\sin 130^{\\circ}\\): quadrant 2 where sine is POSITIVE; related angle \\(180^{\\circ}-130^{\\circ}=50^{\\circ}\\); and \\(\\sin 50^{\\circ}=\\cos(90^{\\circ}-50^{\\circ})=\\cos 40^{\\circ}=0.766\\). So \\(\\sin 130^{\\circ}=0.766\\) ✓.",
+              "work": "\\(\\sin 130^{\\circ}=\\sin 50^{\\circ}=\\cos 40^{\\circ}=0.766\\)"
+            },
+            {
+              "explain": "Statement A has both parts true. Why not the others: B says \\(\\sin 50^{\\circ}=-0.766\\) (sine of an acute angle is positive); C says \\(\\sin 130^{\\circ}\\) is negative (quadrant 2 sine is positive); D says \\(\\cos 220^{\\circ}=+0.766\\) (quadrant 3 cosine is negative: \\(-0.766\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "which of the following statements are true?",
+              "note": "CAST gives the sign; use the related acute angle; sin of 90 minus theta equals cos theta."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q11",
+          "type": "mc",
+          "stem": "Show that \\(2\\sin 210^{\\circ}+\\tan 225^{\\circ}=0\\). Which working correctly shows this?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sin 210^{\\circ}=-\\sin 30^{\\circ}=-\\dfrac{1}{2}\\) and \\(\\tan 225^{\\circ}=\\tan 45^{\\circ}=1\\). So \\(2\\left(-\\dfrac{1}{2}\\right)+1=-1+1=0\\).",
+            "\\(\\sin 210^{\\circ}=\\sin 30^{\\circ}=\\dfrac{1}{2}\\) and \\(\\tan 225^{\\circ}=\\tan 45^{\\circ}=1\\). So \\(2\\left(\\dfrac{1}{2}\\right)+1=2\\ne 0\\).",
+            "\\(\\sin 210^{\\circ}=-\\sin 30^{\\circ}=-\\dfrac{1}{2}\\) and \\(\\tan 225^{\\circ}=-\\tan 45^{\\circ}=-1\\). So \\(-1-1=-2\\ne 0\\).",
+            "\\(\\sin 210^{\\circ}=-\\sin 60^{\\circ}=-\\dfrac{\\sqrt{3}}{2}\\) and \\(\\tan 225^{\\circ}=1\\). So \\(-\\sqrt{3}+1\\ne 0\\)."
+          ],
+          "answer": 0,
+          "hint": "Both angles are in the THIRD quadrant (180° to 270°). Find the related acute angle and the sign using CAST: only tangent is positive in quadrant 3.",
+          "steps": [
+            {
+              "explain": "Both \\(210^{\\circ}\\) and \\(225^{\\circ}\\) lie between \\(180^{\\circ}\\) and \\(270^{\\circ}\\): the THIRD quadrant, where only \\(\\tan\\) is positive (CAST: T). So \\(\\sin\\) is negative and \\(\\tan\\) is positive.",
+              "work": "\\(210^{\\circ},\\ 225^{\\circ}\\in\\text{Q3}:\\ \\sin<0,\\ \\tan>0\\)"
+            },
+            {
+              "explain": "\\(\\sin 210^{\\circ}\\): related acute angle \\(=210^{\\circ}-180^{\\circ}=30^{\\circ}\\). Sine is negative in Q3.",
+              "work": "\\(\\sin 210^{\\circ}=-\\sin 30^{\\circ}=-\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "\\(\\tan 225^{\\circ}\\): related acute angle \\(=225^{\\circ}-180^{\\circ}=45^{\\circ}\\). Tangent is POSITIVE in Q3.",
+              "work": "\\(\\tan 225^{\\circ}=+\\tan 45^{\\circ}=1\\)"
+            },
+            {
+              "explain": "Substitute into the left-hand side (work on the LHS only).",
+              "work": "\\(2\\sin 210^{\\circ}+\\tan 225^{\\circ}=2\\left(-\\dfrac{1}{2}\\right)+1=-1+1=0\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B takes \\(\\sin 210^{\\circ}\\) positive; C takes \\(\\tan 225^{\\circ}\\) negative; D uses the wrong acute angle \\(60^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Third quadrant: only tangent is positive; use the related acute angle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -17652,6 +17879,63 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2020-y11a-q18",
+          "type": "mc",
+          "stem": "Find the exact value of \\(\\cos x\\), given that \\(\\sin x=\\dfrac{1}{5}\\) and \\(\\tan x<0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{2\\sqrt{6}}{5}\\)",
+            "\\(\\dfrac{2\\sqrt{6}}{5}\\)",
+            "\\(-\\dfrac{\\sqrt{24}}{25}\\)",
+            "\\(-\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the quadrant first: \\(\\sin>0\\) and \\(\\tan<0\\) tells you the sign of \\(\\cos\\). Then use \\(\\cos^{2}x=1-\\sin^{2}x\\) or a right triangle.",
+          "steps": [
+            {
+              "explain": "\\(\\sin x>0\\) (it equals \\(\\dfrac{1}{5}\\)) means quadrant 1 or 2. \\(\\tan x=\\dfrac{\\sin x}{\\cos x}<0\\) with \\(\\sin x>0\\) means \\(\\cos x<0\\). So \\(x\\) is in QUADRANT 2 and cosine is NEGATIVE.",
+              "work": "\\(\\sin x>0,\\ \\tan x<0\\ \\Rightarrow\\ \\cos x<0\\)"
+            },
+            {
+              "explain": "Draw the reference right triangle with \\(\\sin=\\dfrac{\\text{opp}}{\\text{hyp}}=\\dfrac{1}{5}\\): opposite 1, hypotenuse 5. Pythagoras for the adjacent side.",
+              "work": "\\(\\text{adj}=\\sqrt{5^{2}-1^{2}}=\\sqrt{24}=2\\sqrt{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"60,200 256.0,200 256.0,160.0\" fill=\"#d1fae5\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polyline points=\"244.0,200 244.0,188 256.0,188\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"256.0\" y2=\"160.0\" stroke=\"#7c3aed\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"256.0\" y1=\"200.0\" x2=\"256.0\" y2=\"160.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"256.0\" y2=\"200.0\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"150.0\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">hyp = 5</text><text x=\"266.0\" y=\"184.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">opp = 1</text><text x=\"158.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">adj = √24 = 2√6</text><path d=\"M96,200 A36,36 0 0 0 95.3,192.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"120.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">ref. angle</text></svg>"
+              }
+            },
+            {
+              "explain": "Positive value of cosine from the triangle: \\(\\dfrac{\\text{adj}}{\\text{hyp}}=\\dfrac{2\\sqrt{6}}{5}\\). (Or: \\(\\cos^{2}x=1-\\dfrac{1}{25}=\\dfrac{24}{25}\\).)",
+              "work": "\\(\\left|\\cos x\\right|=\\dfrac{2\\sqrt{6}}{5}\\)"
+            },
+            {
+              "explain": "Apply the sign from quadrant 2 (negative).",
+              "work": "\\(\\cos x=-\\dfrac{2\\sqrt{6}}{5}\\)"
+            },
+            {
+              "explain": "The most common error is forgetting the negative sign (option B). Option C does not simplify \\(\\sqrt{\\dfrac{24}{25}}\\) correctly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact value of",
+              "note": "Use the signs to pick the quadrant, then a right triangle for the size."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -20092,6 +20376,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2020-y11a-q21",
+          "type": "mc",
+          "stem": "Prove the identity \\(\\sin x\\cos x=\\dfrac{\\tan x}{1+\\tan^{2}x}\\). Which working correctly proves this?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\text{RHS}=\\dfrac{\\tan x}{1+\\tan^{2}x}=\\dfrac{\\tan x}{\\sec^{2}x}=\\tan x\\cos^{2}x=\\dfrac{\\sin x}{\\cos x}\\times\\cos^{2}x=\\sin x\\cos x=\\text{LHS}\\)",
+            "\\(\\text{RHS}=\\dfrac{\\tan x}{1+\\tan^{2}x}=\\dfrac{\\tan x}{\\tan^{2}x}\\cdot 1=\\dfrac{1}{\\tan x}=\\cot x\\)",
+            "\\(\\text{RHS}=\\dfrac{\\tan x}{1+\\tan^{2}x}=\\dfrac{\\tan x}{\\sec x}=\\sin x\\)",
+            "\\(\\text{RHS}=\\dfrac{\\tan x}{1+\\tan^{2}x}=\\tan x\\cdot\\sec^{2}x=\\dfrac{\\sin x}{\\cos^{3}x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Start from the more complicated side (the RHS) and use the identity \\(1+\\tan^{2}x=\\sec^{2}x\\) and \\(\\sec x=\\dfrac{1}{\\cos x}\\).",
+          "steps": [
+            {
+              "explain": "Work with one side at a time. The right-hand side is more complicated, so start there. Replace the denominator using the identity \\(1+\\tan^{2}x=\\sec^{2}x\\) (a Pythagorean identity).",
+              "work": "\\(\\text{RHS}=\\dfrac{\\tan x}{1+\\tan^{2}x}=\\dfrac{\\tan x}{\\sec^{2}x}\\)"
+            },
+            {
+              "explain": "Dividing by \\(\\sec^{2}x\\) is the same as multiplying by its reciprocal \\(\\cos^{2}x\\) (since \\(\\sec x=\\dfrac{1}{\\cos x}\\)).",
+              "work": "\\(=\\tan x\\times\\cos^{2}x\\)"
+            },
+            {
+              "explain": "Replace \\(\\tan x=\\dfrac{\\sin x}{\\cos x}\\).",
+              "work": "\\(=\\dfrac{\\sin x}{\\cos x}\\times\\cos^{2}x\\)"
+            },
+            {
+              "explain": "Cancel one \\(\\cos x\\).",
+              "work": "\\(=\\sin x\\cos x=\\text{LHS}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the 1 in \\(1+\\tan^{2}x\\); C uses \\(\\sec x\\) instead of \\(\\sec^{2}x\\); D multiplies by \\(\\sec^{2}x\\) instead of dividing.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove the identity",
+              "note": "Use 1 plus tan squared equals sec squared, then cos and sin; work on one side only."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -22019,6 +22357,121 @@
           "meta": {
             "source": "Abbotsleigh 2024 Year 11 Preliminary Mathematics Advanced Task 3",
             "school": "Abbotsleigh",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q23",
+          "type": "mc",
+          "stem": "Solve \\(\\sin 2\\theta=\\dfrac{1}{2}\\) for \\(0^{\\circ}\\le\\theta\\le 360^{\\circ}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=15^{\\circ},\\ 75^{\\circ},\\ 195^{\\circ},\\ 255^{\\circ}\\)",
+            "\\(\\theta=15^{\\circ},\\ 75^{\\circ}\\)",
+            "\\(\\theta=30^{\\circ},\\ 150^{\\circ},\\ 390^{\\circ},\\ 510^{\\circ}\\)",
+            "\\(\\theta=15^{\\circ},\\ 165^{\\circ},\\ 195^{\\circ},\\ 345^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "First change the domain: \\(0^{\\circ}\\le 2\\theta\\le 720^{\\circ}\\) (two full turns). Find ALL angles for \\(2\\theta\\), then halve.",
+          "steps": [
+            {
+              "explain": "Let \\(2\\theta\\) be the angle. If \\(0^{\\circ}\\le\\theta\\le 360^{\\circ}\\) then \\(0^{\\circ}\\le 2\\theta\\le 720^{\\circ}\\): the angle goes round TWICE, so you will find 4 solutions.",
+              "work": "\\(0^{\\circ}\\le 2\\theta\\le 720^{\\circ}\\)"
+            },
+            {
+              "explain": "Related acute angle: \\(\\sin^{-1}\\dfrac{1}{2}=30^{\\circ}\\). Sine is positive in quadrants 1 and 2.",
+              "work": "\\(2\\theta=30^{\\circ}\\ \\ \\text{and}\\ \\ 180^{\\circ}-30^{\\circ}=150^{\\circ}\\)"
+            },
+            {
+              "explain": "Add \\(360^{\\circ}\\) to go round a second time (both are still \\(\\le 720^{\\circ}\\)).",
+              "work": "\\(2\\theta=30^{\\circ}+360^{\\circ}=390^{\\circ},\\quad 150^{\\circ}+360^{\\circ}=510^{\\circ}\\)"
+            },
+            {
+              "explain": "List all four and divide each by 2 to get \\(\\theta\\).",
+              "work": "\\(2\\theta=30^{\\circ},150^{\\circ},390^{\\circ},510^{\\circ}\\ \\Rightarrow\\ \\theta=15^{\\circ},75^{\\circ},195^{\\circ},255^{\\circ}\\)"
+            },
+            {
+              "explain": "On the graph \\(y=\\sin 2\\theta\\) (period \\(180^{\\circ}\\)) crosses \\(y=\\dfrac{1}{2}\\) four times in \\(0^{\\circ}\\)–\\(360^{\\circ}\\) at exactly these values (green). Option C forgot to divide by 2; option B missed the second turn.",
+              "work": "\\(4\\ \\text{solutions}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 220\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"44.0\" y1=\"120.0\" x2=\"420.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"208.0\" x2=\"50.0\" y2=\"22.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"420.0\" y1=\"120.0\" x2=\"413.1\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"420.0\" y1=\"120.0\" x2=\"413.1\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"22.0\" x2=\"46.0\" y2=\"28.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"22.0\" x2=\"54.0\" y2=\"28.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"418.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"60.0\" y=\"28.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"50.0,120.0 50.9,118.1 51.8,116.2 52.7,114.4 53.6,112.5 54.5,110.6 55.4,108.8 56.3,106.9 57.2,105.1 58.1,103.3 59.0,101.5 59.9,99.7 60.8,97.9 61.7,96.2 62.6,94.5 63.5,92.8 64.4,91.1 65.3,89.5 66.2,87.9 67.1,86.3 68.0,84.7 68.9,83.2 69.8,81.8 70.7,80.3 71.6,78.9 72.5,77.6 73.4,76.3 74.3,75.0 75.2,73.8 76.1,72.6 77.0,71.5 77.9,70.4 78.8,69.3 79.7,68.4 80.6,67.4 81.5,66.5 82.4,65.7 83.3,64.9 84.2,64.2 85.1,63.5 86.0,62.9 86.9,62.4 87.8,61.9 88.7,61.4 89.6,61.1 90.5,60.7 91.4,60.5 92.3,60.3 93.2,60.1 94.1,60.0 95.0,60.0 95.9,60.0 96.8,60.1 97.7,60.3 98.6,60.5 99.5,60.7 100.4,61.1 101.3,61.4 102.2,61.9 103.1,62.4 104.0,62.9 104.9,63.5 105.8,64.2 106.7,64.9 107.6,65.7 108.5,66.5 109.4,67.4 110.3,68.4 111.2,69.3 112.1,70.4 113.0,71.5 113.9,72.6 114.8,73.8 115.7,75.0 116.6,76.3 117.5,77.6 118.4,78.9 119.3,80.3 120.2,81.8 121.1,83.2 122.0,84.7 122.9,86.3 123.8,87.9 124.7,89.5 125.6,91.1 126.5,92.8 127.4,94.5 128.3,96.2 129.2,97.9 130.1,99.7 131.0,101.5 131.9,103.3 132.8,105.1 133.7,106.9 134.6,108.8 135.5,110.6 136.4,112.5 137.3,114.4 138.2,116.2 139.1,118.1 140.0,120.0 140.9,121.9 141.8,123.8 142.7,125.6 143.6,127.5 144.5,129.4 145.4,131.2 146.3,133.1 147.2,134.9 148.1,136.7 149.0,138.5 149.9,140.3 150.8,142.1 151.7,143.8 152.6,145.5 153.5,147.2 154.4,148.9 155.3,150.5 156.2,152.1 157.1,153.7 158.0,155.3 158.9,156.8 159.8,158.2 160.7,159.7 161.6,161.1 162.5,162.4 163.4,163.7 164.3,165.0 165.2,166.2 166.1,167.4 167.0,168.5 167.9,169.6 168.8,170.7 169.7,171.6 170.6,172.6 171.5,173.5 172.4,174.3 173.3,175.1 174.2,175.8 175.1,176.5 176.0,177.1 176.9,177.6 177.8,178.1 178.7,178.6 179.6,178.9 180.5,179.3 181.4,179.5 182.3,179.7 183.2,179.9 184.1,180.0 185.0,180.0 185.9,180.0 186.8,179.9 187.7,179.7 188.6,179.5 189.5,179.3 190.4,178.9 191.3,178.6 192.2,178.1 193.1,177.6 194.0,177.1 194.9,176.5 195.8,175.8 196.7,175.1 197.6,174.3 198.5,173.5 199.4,172.6 200.3,171.6 201.2,170.7 202.1,169.6 203.0,168.5 203.9,167.4 204.8,166.2 205.7,165.0 206.6,163.7 207.5,162.4 208.4,161.1 209.3,159.7 210.2,158.2 211.1,156.8 212.0,155.3 212.9,153.7 213.8,152.1 214.7,150.5 215.6,148.9 216.5,147.2 217.4,145.5 218.3,143.8 219.2,142.1 220.1,140.3 221.0,138.5 221.9,136.7 222.8,134.9 223.7,133.1 224.6,131.2 225.5,129.4 226.4,127.5 227.3,125.6 228.2,123.8 229.1,121.9 230.0,120.0 230.9,118.1 231.8,116.2 232.7,114.4 233.6,112.5 234.5,110.6 235.4,108.8 236.3,106.9 237.2,105.1 238.1,103.3 239.0,101.5 239.9,99.7 240.8,97.9 241.7,96.2 242.6,94.5 243.5,92.8 244.4,91.1 245.3,89.5 246.2,87.9 247.1,86.3 248.0,84.7 248.9,83.2 249.8,81.8 250.7,80.3 251.6,78.9 252.5,77.6 253.4,76.3 254.3,75.0 255.2,73.8 256.1,72.6 257.0,71.5 257.9,70.4 258.8,69.3 259.7,68.4 260.6,67.4 261.5,66.5 262.4,65.7 263.3,64.9 264.2,64.2 265.1,63.5 266.0,62.9 266.9,62.4 267.8,61.9 268.7,61.4 269.6,61.1 270.5,60.7 271.4,60.5 272.3,60.3 273.2,60.1 274.1,60.0 275.0,60.0 275.9,60.0 276.8,60.1 277.7,60.3 278.6,60.5 279.5,60.7 280.4,61.1 281.3,61.4 282.2,61.9 283.1,62.4 284.0,62.9 284.9,63.5 285.8,64.2 286.7,64.9 287.6,65.7 288.5,66.5 289.4,67.4 290.3,68.4 291.2,69.3 292.1,70.4 293.0,71.5 293.9,72.6 294.8,73.8 295.7,75.0 296.6,76.3 297.5,77.6 298.4,78.9 299.3,80.3 300.2,81.8 301.1,83.2 302.0,84.7 302.9,86.3 303.8,87.9 304.7,89.5 305.6,91.1 306.5,92.8 307.4,94.5 308.3,96.2 309.2,97.9 310.1,99.7 311.0,101.5 311.9,103.3 312.8,105.1 313.7,106.9 314.6,108.8 315.5,110.6 316.4,112.5 317.3,114.4 318.2,116.2 319.1,118.1 320.0,120.0 320.9,121.9 321.8,123.8 322.7,125.6 323.6,127.5 324.5,129.4 325.4,131.2 326.3,133.1 327.2,134.9 328.1,136.7 329.0,138.5 329.9,140.3 330.8,142.1 331.7,143.8 332.6,145.5 333.5,147.2 334.4,148.9 335.3,150.5 336.2,152.1 337.1,153.7 338.0,155.3 338.9,156.8 339.8,158.2 340.7,159.7 341.6,161.1 342.5,162.4 343.4,163.7 344.3,165.0 345.2,166.2 346.1,167.4 347.0,168.5 347.9,169.6 348.8,170.7 349.7,171.6 350.6,172.6 351.5,173.5 352.4,174.3 353.3,175.1 354.2,175.8 355.1,176.5 356.0,177.1 356.9,177.6 357.8,178.1 358.7,178.6 359.6,178.9 360.5,179.3 361.4,179.5 362.3,179.7 363.2,179.9 364.1,180.0 365.0,180.0 365.9,180.0 366.8,179.9 367.7,179.7 368.6,179.5 369.5,179.3 370.4,178.9 371.3,178.6 372.2,178.1 373.1,177.6 374.0,177.1 374.9,176.5 375.8,175.8 376.7,175.1 377.6,174.3 378.5,173.5 379.4,172.6 380.3,171.6 381.2,170.7 382.1,169.6 383.0,168.5 383.9,167.4 384.8,166.2 385.7,165.0 386.6,163.7 387.5,162.4 388.4,161.1 389.3,159.7 390.2,158.2 391.1,156.8 392.0,155.3 392.9,153.7 393.8,152.1 394.7,150.5 395.6,148.9 396.5,147.2 397.4,145.5 398.3,143.8 399.2,142.1 400.1,140.3 401.0,138.5 401.9,136.7 402.8,134.9 403.7,133.1 404.6,131.2 405.5,129.4 406.4,127.5 407.3,125.6 408.2,123.8 409.1,121.9 410.0,120.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linejoin=\"round\"/><line x1=\"140.0\" y1=\"116.0\" x2=\"140.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90°</text><line x1=\"230.0\" y1=\"116.0\" x2=\"230.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"230.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180°</text><line x1=\"320.0\" y1=\"116.0\" x2=\"320.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">270°</text><line x1=\"410.0\" y1=\"116.0\" x2=\"410.0\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"410.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">360°</text><line x1=\"46.0\" y1=\"60.0\" x2=\"54.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"41.0\" y=\"64.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"46.0\" y1=\"180.0\" x2=\"54.0\" y2=\"180.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"41.0\" y=\"184.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"50.0\" y1=\"90.0\" x2=\"410.0\" y2=\"90.0\" stroke=\"#d97706\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><line x1=\"65.0\" y1=\"90.0\" x2=\"65.0\" y2=\"134.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"65.0\" cy=\"90.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"65.0\" y=\"154.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15°</text><line x1=\"125.0\" y1=\"90.0\" x2=\"125.0\" y2=\"134.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"125.0\" cy=\"90.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"125.0\" y=\"154.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">75°</text><line x1=\"245.0\" y1=\"90.0\" x2=\"245.0\" y2=\"134.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"245.0\" cy=\"90.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"245.0\" y=\"154.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">195°</text><line x1=\"305.0\" y1=\"90.0\" x2=\"305.0\" y2=\"134.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"305.0\" cy=\"90.0\" r=\"5.5\" fill=\"#fff\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"305.0\" y=\"154.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">255°</text><text x=\"70.0\" y=\"82.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = 1/2</text></svg>"
+              }
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Double angle: extend the domain to 720 degrees, find all solutions, then divide by 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q29",
+          "type": "mc",
+          "stem": "Solve \\(2\\cos^{2}\\theta+3\\cos\\theta-2=0\\) for \\(0^{\\circ}\\le\\theta\\le 180^{\\circ}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=60^{\\circ}\\)",
+            "\\(\\theta=60^{\\circ}\\) or \\(\\theta=120^{\\circ}\\)",
+            "\\(\\theta=60^{\\circ}\\) or \\(\\cos\\theta=-2\\)",
+            "\\(\\theta=30^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "It is a quadratic in \\(\\cos\\theta\\): let \\(c=\\cos\\theta\\), factorise, solve for \\(c\\), and reject any value outside \\(-1\\le\\cos\\theta\\le 1\\).",
+          "steps": [
+            {
+              "explain": "Let \\(c=\\cos\\theta\\) to see the quadratic: \\(2c^{2}+3c-2=0\\).",
+              "work": "\\(2c^{2}+3c-2=0\\)"
+            },
+            {
+              "explain": "Factorise: find two numbers with product \\(2\\times(-2)=-4\\) and sum 3: they are 4 and \\(-1\\). Split the middle term and group.",
+              "work": "\\(2c^{2}+4c-c-2=2c(c+2)-(c+2)=(2c-1)(c+2)\\)"
+            },
+            {
+              "explain": "Set each factor to 0.",
+              "work": "\\(2c-1=0\\ \\Rightarrow\\ c=\\dfrac{1}{2},\\qquad c+2=0\\ \\Rightarrow\\ c=-2\\)"
+            },
+            {
+              "explain": "Replace \\(c\\) by \\(\\cos\\theta\\). \\(\\cos\\theta=-2\\) has NO solution because cosine is always between \\(-1\\) and 1. Reject it (and say why).",
+              "work": "\\(\\cos\\theta=-2\\ \\text{impossible since }-1\\le\\cos\\theta\\le 1\\)"
+            },
+            {
+              "explain": "Solve \\(\\cos\\theta=\\dfrac{1}{2}\\) in \\(0^{\\circ}\\le\\theta\\le 180^{\\circ}\\): cosine is positive in quadrant 1 (quadrant 4 is outside the domain). Related angle \\(60^{\\circ}\\).",
+              "work": "\\(\\theta=60^{\\circ}\\)"
+            },
+            {
+              "explain": "Option B wrongly includes \\(120^{\\circ}\\) (there \\(\\cos=-\\dfrac{1}{2}\\)); option C keeps the impossible equation.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Treat cos theta as a variable, factorise, and reject any value outside minus 1 to 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -29951,6 +30404,127 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2020-y11a-mc8",
+          "type": "mc",
+          "stem": "The size of the largest angle in triangle \\(ABC\\) is closest to: (the triangle has sides 7, 8 and 9)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"80,220 288,220 132.0,45.6\" fill=\"#fff\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><text x=\"222.0\" y=\"126.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"94.0\" y=\"132.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><text x=\"184.0\" y=\"242.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text></svg>"
+          },
+          "options": [
+            "\\(48^{\\circ}\\)",
+            "\\(58^{\\circ}\\)",
+            "\\(73^{\\circ}\\)",
+            "\\(110^{\\circ}\\)"
+          ],
+          "answer": 2,
+          "hint": "The largest angle is OPPOSITE the longest side (9). Use the cosine rule \\(\\cos\\theta=\\dfrac{a^{2}+b^{2}-c^{2}}{2ab}\\) with \\(c=9\\).",
+          "steps": [
+            {
+              "explain": "In any triangle the largest angle is opposite the longest side. The longest side is 9, so the largest angle \\(\\theta\\) is the angle between the sides 7 and 8 (the orange angle).",
+              "work": "\\(\\text{largest angle }\\theta\\ \\text{is opposite the side }9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"80,220 288,220 132.0,45.6\" fill=\"#fef3c7\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"132.0\" y1=\"45.6\" x2=\"288.0\" y2=\"220.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"220.0\" x2=\"132.0\" y2=\"45.6\" stroke=\"#047857\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"220.0\" x2=\"288.0\" y2=\"220.0\" stroke=\"#3b4ea8\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M116,220 A36,36 0 0 0 90.3,185.5\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"138.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"222.0\" y=\"126.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"94.0\" y=\"132.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><text x=\"184.0\" y=\"242.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><text x=\"180.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">largest angle is opposite the longest side (9)</text></svg>"
+              }
+            },
+            {
+              "explain": "Three sides known and an angle wanted: use the cosine rule in the form \\(\\cos\\theta=\\dfrac{a^{2}+b^{2}-c^{2}}{2ab}\\), where \\(c\\) is the side OPPOSITE \\(\\theta\\): \\(c=9\\), and \\(a=7\\), \\(b=8\\).",
+              "work": "\\(\\cos\\theta=\\dfrac{7^{2}+8^{2}-9^{2}}{2\\times 7\\times 8}\\)"
+            },
+            {
+              "explain": "Evaluate the top: \\(49+64-81=32\\). Bottom: \\(2\\times 7\\times 8=112\\).",
+              "work": "\\(\\cos\\theta=\\dfrac{32}{112}=\\dfrac{2}{7}=0.2857\\)"
+            },
+            {
+              "explain": "Use inverse cosine (degree mode).",
+              "work": "\\(\\theta=\\cos^{-1}(0.2857)=73.4^{\\circ}\\approx 73^{\\circ}\\)"
+            },
+            {
+              "explain": "Check: the angle sum must be \\(180^{\\circ}\\): the other angles are about \\(58^{\\circ}\\) and \\(48^{\\circ}\\) (options B and A), and \\(73.4+58.4+48.2=180\\) ✓. Option D (110) is too big for these sides.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The size of the largest angle in triangle",
+              "note": "Largest angle faces the longest side; use the cosine rule with that side as c."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q30d",
+          "type": "mc",
+          "stem": "A vertical tree of height 38 metres stands at \\(B\\). Observer \\(A\\) sees the top at \\(14^{\\circ}\\), so \\(AB=38\\cot 14^{\\circ}\\). Observer \\(M\\) is due North of \\(B\\) with \\(BM=BA\\), and \\(\\angle MBA=40^{\\circ}\\). Find the distance between \\(A\\) and \\(M\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(104\\ \\text{m}\\)",
+            "\\(152\\ \\text{m}\\)",
+            "\\(98\\ \\text{m}\\)",
+            "\\(38\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Triangle \\(BAM\\) has two equal sides \\(BA=BM=38\\cot14^{\\circ}\\) with the included angle \\(40^{\\circ}\\): use the cosine rule \\(AM^{2}=BM^{2}+BA^{2}-2(BM)(BA)\\cos 40^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Find \\(BA\\) first (calculator in degrees): \\(\\cot 14^{\\circ}=\\dfrac{1}{\\tan 14^{\\circ}}=4.0108\\).",
+              "work": "\\(BA=BM=38\\cot 14^{\\circ}=38(4.0108)=152.4\\ \\text{m}\\)"
+            },
+            {
+              "explain": "We know two sides (\\(BM\\), \\(BA\\)) and the INCLUDED angle \\(\\angle MBA=40^{\\circ}\\), and want the third side \\(AM\\): use the cosine rule.",
+              "work": "\\(AM^{2}=BM^{2}+BA^{2}-2\\,(BM)(BA)\\cos 40^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"140.0\" x2=\"60.0\" y2=\"80.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"80.0\" x2=\"55.5\" y2=\"87.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"80.0\" x2=\"64.5\" y2=\"87.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"120.0\" y1=\"280.0\" x2=\"120.0\" y2=\"130.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"280.0\" x2=\"216.4\" y2=\"165.1\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"216.4\" y1=\"165.1\" x2=\"120.0\" y2=\"130.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M120,220 A60,60 0 0 1 158.6,234.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"168.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><line x1=\"216.4\" y1=\"165.1\" x2=\"216.4\" y2=\"95.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"216.4\" y=\"89.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><path d=\"M216.4,125.1 A40,40 0 1 1 178.8,151.4\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"274.4\" y=\"185.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">290°</text><circle cx=\"120.0\" cy=\"280.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"296.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"120.0\" cy=\"130.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"134.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"216.4\" cy=\"165.1\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"230.4\" y=\"175.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"330.0\" y=\"60.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BA = BM</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute (don't forget to square each side).",
+              "work": "\\(AM^{2}=(152.4)^{2}+(152.4)^{2}-2(152.4)(152.4)\\cos 40^{\\circ}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(152.4^{2}=23\\,226\\); \\(2\\times 23\\,226\\times\\cos 40^{\\circ}=2\\times 23\\,226\\times 0.7660=35\\,584\\); \\(2\\times 23\\,226=46\\,452\\).",
+              "work": "\\(AM^{2}=46\\,452-35\\,584=10\\,868\\ldots\\approx 104.25^{2}\\)"
+            },
+            {
+              "explain": "Take the square root and round to the nearest metre.",
+              "work": "\\(AM=\\sqrt{10\\,868}\\approx 104.25\\approx 104\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Check with the sine rule or the isosceles formula: \\(AM=2(152.4)\\sin 20^{\\circ}=304.8\\times 0.3420=104.2\\) ✓. Common errors: typing \\(\\cot 14^{\\circ}\\) into the calculator wrongly, or leaving off a square in the formula.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the distance between",
+              "note": "Two equal sides and the included angle: cosine rule; be careful to square both sides."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -34845,6 +35419,123 @@
           "meta": {
             "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Killara High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q30b",
+          "type": "mc",
+          "stem": "A vertical tree of height 38 metres stands on horizontal ground. The bottom of the tree is at the point \\(B\\). Observer \\(M\\), standing on the ground, is due North of the bottom of the tree. The true bearing of Observer \\(M\\) from Observer \\(A\\) is \\(290^{\\circ}\\). Observers \\(A\\) and \\(M\\) are standing the same distance away from the tree. Complete the diagram of the top view of the scenario, showing the point \\(A\\) and the bearing of \\(M\\) from \\(A\\). Which diagram (A, B, C or D in the figure; each shows the bearing of \\(M\\) from its \\(A\\)) is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 660 600\" width=\"100%\" height=\"auto\" style=\"max-width:700px;display:block;margin:0 auto\"><rect x=\"3\" y=\"3\" width=\"324\" height=\"288\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"95.0\" y1=\"35.0\" x2=\"95.0\" y2=\"-5.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"-5.0\" x2=\"91.0\" y2=\"1.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"-5.0\" x2=\"99.0\" y2=\"1.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"95.0\" y=\"-13.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"165.0\" y1=\"165.0\" x2=\"165.0\" y2=\"65.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"165.0\" x2=\"229.3\" y2=\"88.4\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"229.3\" y1=\"88.4\" x2=\"165.0\" y2=\"65.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"165.0\" cy=\"165.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"151.0\" y=\"181.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"165.0\" cy=\"65.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"151.0\" y=\"69.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"229.3\" cy=\"88.4\" r=\"4\" fill=\"#1e293b\"/><text x=\"241.3\" y=\"94.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><line x1=\"229.3\" y1=\"88.4\" x2=\"229.3\" y2=\"43.4\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M229.3,58.4 A30,30 0 1 1 201.1,78.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"274.3\" y=\"118.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">290°</text><text x=\"22.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"333\" y=\"3\" width=\"324\" height=\"288\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"425.0\" y1=\"35.0\" x2=\"425.0\" y2=\"-5.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"425.0\" y1=\"-5.0\" x2=\"421.0\" y2=\"1.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"425.0\" y1=\"-5.0\" x2=\"429.0\" y2=\"1.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"425.0\" y=\"-13.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"495.0\" y1=\"165.0\" x2=\"495.0\" y2=\"65.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"495.0\" y1=\"165.0\" x2=\"430.7\" y2=\"88.4\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"430.7\" y1=\"88.4\" x2=\"495.0\" y2=\"65.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"495.0\" cy=\"165.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"481.0\" y=\"181.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"495.0\" cy=\"65.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"481.0\" y=\"69.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"430.7\" cy=\"88.4\" r=\"4\" fill=\"#1e293b\"/><text x=\"442.7\" y=\"94.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><line x1=\"430.7\" y1=\"88.4\" x2=\"430.7\" y2=\"43.4\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M430.7,58.4 A30,30 0 0 1 458.9,78.1\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"385.7\" y=\"118.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">70°</text><text x=\"352.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><rect x=\"3\" y=\"303\" width=\"324\" height=\"288\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"95.0\" y1=\"335.0\" x2=\"95.0\" y2=\"295.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"295.0\" x2=\"91.0\" y2=\"301.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"295.0\" x2=\"99.0\" y2=\"301.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"95.0\" y=\"287.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"165.0\" y1=\"465.0\" x2=\"165.0\" y2=\"365.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"465.0\" x2=\"229.3\" y2=\"541.6\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"229.3\" y1=\"541.6\" x2=\"165.0\" y2=\"365.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"165.0\" cy=\"465.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"151.0\" y=\"481.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"165.0\" cy=\"365.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"151.0\" y=\"369.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"229.3\" cy=\"541.6\" r=\"4\" fill=\"#1e293b\"/><text x=\"241.3\" y=\"547.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><line x1=\"229.3\" y1=\"541.6\" x2=\"229.3\" y2=\"496.6\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M229.3,511.6 A30,30 0 1 1 219.0,513.4\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"274.3\" y=\"563.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">340°</text><text x=\"22.0\" y=\"330.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><rect x=\"333\" y=\"303\" width=\"324\" height=\"288\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"425.0\" y1=\"335.0\" x2=\"425.0\" y2=\"295.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"425.0\" y1=\"295.0\" x2=\"421.0\" y2=\"301.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"425.0\" y1=\"295.0\" x2=\"429.0\" y2=\"301.9\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"425.0\" y=\"287.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"495.0\" y1=\"465.0\" x2=\"495.0\" y2=\"365.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"495.0\" y1=\"465.0\" x2=\"595.0\" y2=\"465.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"595.0\" y1=\"465.0\" x2=\"495.0\" y2=\"365.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"495.0\" cy=\"465.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"481.0\" y=\"481.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"495.0\" cy=\"365.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"481.0\" y=\"369.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"595.0\" cy=\"465.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"607.0\" y=\"471.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><line x1=\"595.0\" y1=\"465.0\" x2=\"595.0\" y2=\"420.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><path d=\"M595.0,435.0 A30,30 0 1 1 573.8,443.8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"640.0\" y=\"495.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">315°</text><text x=\"352.0\" y=\"330.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">D</text></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "The bearing of \\(M\\) from \\(A\\) is measured at \\(A\\), clockwise from North, to the direction of \\(M\\). Also \\(A\\) and \\(M\\) are the same distance from \\(B\\), so \\(BA=BM\\).",
+          "steps": [
+            {
+              "explain": "A bearing is measured at the observer, clockwise from North. 'Bearing of \\(M\\) from \\(A\\)' means stand at \\(A\\), face North, turn clockwise to face \\(M\\): \\(290^{\\circ}\\) is a large turn (more than \\(180^{\\circ}\\)), so \\(M\\) is to the WEST-north-west of \\(A\\).",
+              "work": "\\(\\text{bearing}=290^{\\circ}\\ \\Rightarrow\\ M\\text{ is to the north-west of }A\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"140.0\" x2=\"60.0\" y2=\"80.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"80.0\" x2=\"55.5\" y2=\"87.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"80.0\" x2=\"64.5\" y2=\"87.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"120.0\" y1=\"280.0\" x2=\"120.0\" y2=\"130.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"280.0\" x2=\"216.4\" y2=\"165.1\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"216.4\" y1=\"165.1\" x2=\"120.0\" y2=\"130.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M120,220 A60,60 0 0 1 158.6,234.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"168.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><line x1=\"216.4\" y1=\"165.1\" x2=\"216.4\" y2=\"95.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"216.4\" y=\"89.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><path d=\"M216.4,125.1 A40,40 0 1 1 178.8,151.4\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"274.4\" y=\"185.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">290°</text><circle cx=\"120.0\" cy=\"280.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"296.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"120.0\" cy=\"130.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"134.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"216.4\" cy=\"165.1\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"230.4\" y=\"175.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"330.0\" y=\"60.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BA = BM</text></svg>"
+              }
+            },
+            {
+              "explain": "So \\(A\\) is EAST (and a little north) of \\(M\\)'s side: \\(A\\) must be to the right of the line \\(BM\\), and since \\(BA=BM\\) the triangle \\(BAM\\) is isosceles with apex \\(B\\).",
+              "work": "\\(BA=BM\\)"
+            },
+            {
+              "explain": "Check each diagram by reading its bearing at \\(A\\): only the diagram where the arc from North at \\(A\\) turns clockwise to \\(290^{\\circ}\\) to reach \\(M\\) is correct. Diagram A has \\(A\\) up-right of \\(B\\), and the bearing of \\(M\\) from \\(A\\) is \\(290^{\\circ}\\) ✓.",
+              "work": "\\(\\text{diagram A: bearing }290^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B puts \\(A\\) on the left side (the bearing of \\(M\\) from \\(A\\) would be \\(70^{\\circ}\\)); C puts \\(A\\) south-east of \\(B\\) (bearing \\(340^{\\circ}\\)); D puts \\(A\\) due east of \\(B\\) (bearing \\(315^{\\circ}\\), a right angle at \\(B\\), which does not give \\(40^{\\circ}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Complete the diagram of the top view",
+              "note": "A bearing is measured at the observer clockwise from North; use BA = BM for the isosceles triangle."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2020-y11a-q30c",
+          "type": "mc",
+          "stem": "A vertical tree stands at \\(B\\). Observer \\(M\\) is due North of \\(B\\). The true bearing of \\(M\\) from \\(A\\) is \\(290^{\\circ}\\), and \\(BA=BM\\). Show that \\(\\angle MBA=40^{\\circ}\\). Which working correctly shows this?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\angle N_{2}AM=360^{\\circ}-290^{\\circ}=70^{\\circ}\\) (angles at a point). \\(\\angle N_{1}MA=180^{\\circ}-70^{\\circ}=110^{\\circ}\\) (co-interior angles, parallel North lines). \\(\\angle BMA=180^{\\circ}-110^{\\circ}=70^{\\circ}=\\angle BAM\\) (straight line; base angles of an isosceles triangle). \\(\\angle MBA=180^{\\circ}-70^{\\circ}-70^{\\circ}=40^{\\circ}\\) (angle sum of a triangle).",
+            "\\(\\angle MBA=290^{\\circ}-250^{\\circ}=40^{\\circ}\\) (bearing difference).",
+            "\\(\\angle MBA=360^{\\circ}-290^{\\circ}-70^{\\circ}=0^{\\circ}\\), which does not give \\(40^{\\circ}\\).",
+            "\\(\\angle MBA=290^{\\circ}-180^{\\circ}=110^{\\circ}\\)."
+          ],
+          "answer": 0,
+          "hint": "Use parallel North lines at \\(M\\) and \\(A\\) (co-interior angles add to \\(180^{\\circ}\\)), then the isosceles triangle \\(BAM\\) (\\(BA=BM\\)) and the angle sum \\(180^{\\circ}\\). Give a reason for every step.",
+          "steps": [
+            {
+              "explain": "Mark the North line at \\(A\\). The bearing \\(290^{\\circ}\\) is measured clockwise, so the angle between the North line at \\(A\\) and \\(AM\\), measured the short way (anticlockwise), is \\(360^{\\circ}-290^{\\circ}=70^{\\circ}\\) (angles at a point).",
+              "work": "\\(\\angle N_{2}AM=360^{\\circ}-290^{\\circ}=70^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"140.0\" x2=\"60.0\" y2=\"80.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"80.0\" x2=\"55.5\" y2=\"87.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"80.0\" x2=\"64.5\" y2=\"87.8\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">North</text><line x1=\"120.0\" y1=\"280.0\" x2=\"120.0\" y2=\"130.0\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"280.0\" x2=\"216.4\" y2=\"165.1\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"216.4\" y1=\"165.1\" x2=\"120.0\" y2=\"130.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M120,220 A60,60 0 0 1 158.6,234.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"168.0\" y=\"204.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><line x1=\"216.4\" y1=\"165.1\" x2=\"216.4\" y2=\"95.1\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"216.4\" y=\"89.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><path d=\"M216.4,125.1 A40,40 0 1 1 178.8,151.4\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"274.4\" y=\"185.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">290°</text><circle cx=\"120.0\" cy=\"280.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"296.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"120.0\" cy=\"130.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"134.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"216.4\" cy=\"165.1\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"230.4\" y=\"175.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"330.0\" y=\"60.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BA = BM</text></svg>"
+              }
+            },
+            {
+              "explain": "The North lines at \\(M\\) and at \\(A\\) are parallel. Co-interior angles between parallel lines add to \\(180^{\\circ}\\): \\(\\angle N_{1}MA+\\angle N_{2}AM=180^{\\circ}\\).",
+              "work": "\\(\\angle N_{1}MA=180^{\\circ}-70^{\\circ}=110^{\\circ}\\)"
+            },
+            {
+              "explain": "\\(B\\), \\(M\\) and \\(N_{1}\\) are on one straight line (North), so \\(\\angle BMA\\) and \\(\\angle N_{1}MA\\) are supplementary (angles on a straight line).",
+              "work": "\\(\\angle BMA=180^{\\circ}-110^{\\circ}=70^{\\circ}\\)"
+            },
+            {
+              "explain": "\\(BA=BM\\), so triangle \\(BAM\\) is isosceles and its base angles are equal (the angles opposite equal sides).",
+              "work": "\\(\\angle BAM=\\angle BMA=70^{\\circ}\\)"
+            },
+            {
+              "explain": "Angle sum of a triangle is \\(180^{\\circ}\\).",
+              "work": "\\(\\angle MBA=180^{\\circ}-70^{\\circ}-70^{\\circ}=40^{\\circ}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B and D do not use geometry facts (subtracting bearings is not valid here); C has an arithmetic nonsense. Every step needs a reason, and every angle needs a labelled point (do not use undefined letters).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Parallel North lines give co-interior angles; isosceles triangle base angles; angle sum 180."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
+            "school": "Hornsby Girls High School",
             "grade": "11",
             "origin": "teacher"
           }
