@@ -1862,6 +1862,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(v = u + at\\), find \\(t\\) when \\(v = 32\\), \\(u = -3\\), and \\(a = 3\\dfrac{1}{2}\\).",
+          "options": [
+            "\\(t = 8\\)",
+            "\\(t = 10\\)",
+            "\\(t = 12\\)",
+            "\\(t = \\dfrac{29}{3.5}\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute 32 = -3 + (7/2)t, add 3 to both sides to get 35 = (7/2)t, then multiply by 2/7!",
+          "keyPoints": [
+            {
+              "text": "find \\(t\\)",
+              "note": "Add 3 to both sides first: 32 + 3 = 35."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(v = 32\\), \\(u = -3\\), and \\(a = 3\\dfrac{1}{2} = \\dfrac{7}{2}\\) into \\(v = u + at\\).",
+              "work": "\\(32 = -3 + \\dfrac{7}{2}t\\)"
+            },
+            {
+              "explain": "Add \\(3\\) to both sides to isolate the \\(t\\) term.",
+              "work": "\\(35 = \\dfrac{7}{2}t\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(\\dfrac{2}{7}\\): \\(t = 35 \\times \\dfrac{2}{7} = 5 \\times 2 = 10\\).",
+              "work": "\\(t = 10\\)"
+            },
+            {
+              "explain": "Check: \\(-3 + 3.5(10) = -3 + 35 = 32\\). Correct!",
+              "work": "\\(\\text{Answer: } t = 10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2446,6 +2486,206 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q3aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((s + 3)(s - 2)\\).",
+          "options": [
+            "\\(s^2 + s - 6\\)",
+            "\\(s^2 - s - 6\\)",
+            "\\(s^2 + 5s - 6\\)",
+            "\\(s^2 - 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Use FOIL: s·s - 2s + 3s - 6, then simplify -2s + 3s = +s.",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Work carefully through each term and sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the expansion, substitution, or formula carefully.",
+              "work": "\\(s^2 - 2s + 3s - 6\\)"
+            },
+            {
+              "explain": "Simplify step by step without skipping signs.",
+              "work": "\\(s^2 + s - 6\\)"
+            },
+            {
+              "explain": "Verify the result.",
+              "work": "\\(\\text{Verified: } s^2 + s - 6\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(s^2 + s - 6\\).",
+              "work": "\\(\\text{Answer: } s^2 + s - 6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q3aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((t + 3)^2\\).",
+          "options": [
+            "\\(t^2 + 9\\)",
+            "\\(t^2 + 3t + 9\\)",
+            "\\(t^2 + 6t + 9\\)",
+            "\\(t^2 + 6t + 6\\)"
+          ],
+          "answer": 2,
+          "hint": "Write (t + 3)(t + 3) and expand ALL four products — do NOT forget the middle term 6t!",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify",
+              "note": "Work carefully through each term and sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the expansion, substitution, or formula carefully.",
+              "work": "\\((t + 3)(t + 3) = t^2 + 3t + 3t + 9\\)"
+            },
+            {
+              "explain": "Simplify step by step without skipping signs.",
+              "work": "\\(t^2 + 6t + 9\\)"
+            },
+            {
+              "explain": "Verify the result.",
+              "work": "\\(\\text{Verified: } t^2 + 6t + 9\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(t^2 + 6t + 9\\).",
+              "work": "\\(\\text{Answer: } t^2 + 6t + 9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q6ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Fully factorise \\(3x + 2xy\\).",
+          "options": [
+            "\\(x(3 + 2y)\\)",
+            "\\(3x(1 + 2y)\\)",
+            "\\(xy(3 + 2)\\)",
+            "\\(x(3 + 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor of 3x and 2xy (which is x) and place it outside the brackets.",
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "Take out the HCF (x) from both terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the highest common factor (HCF) of \\(3x\\) and \\(2xy\\): \\(x\\).",
+              "work": "\\(\\text{HCF} = x\\)"
+            },
+            {
+              "explain": "Divide each term by \\(x\\): \\(3x \\div x = 3\\) and \\(2xy \\div x = 2y\\).",
+              "work": "\\(x(3 + 2y)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(x(3 + 2y) = 3x + 2xy\\).",
+              "work": "\\(\\text{Verified: } x(3 + 2y)\\)"
+            },
+            {
+              "explain": "Therefore, the factorised form is \\(x(3 + 2y)\\).",
+              "work": "\\(\\text{Answer: } x(3 + 2y)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q6cii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Fully factorise \\(6a^2b + 15ac\\).",
+          "options": [
+            "\\(3a(2ab + 5c)\\)",
+            "\\(3(2a^2b + 5ac)\\)",
+            "\\(a(6ab + 15c)\\)",
+            "\\(3a(2b + 5c)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of both the numbers (HCF of 6 and 15 is 3) AND the letters (common letter a), giving 3a!",
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "Take out BOTH the numerical HCF (3) and the common pronumeral (a)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the HCF of \\(6a^2b\\) and \\(15ac\\): \\(\\text{HCF}(6, 15) = 3\\) and common letter is \\(a\\), so \\(\\text{HCF} = 3a\\).",
+              "work": "\\(\\text{HCF} = 3a\\)"
+            },
+            {
+              "explain": "Divide each term by \\(3a\\): \\(6a^2b \\div 3a = 2ab\\) and \\(15ac \\div 3a = 5c\\).",
+              "work": "\\(3a(2ab + 5c)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(3a(2ab) + 3a(5c) = 6a^2b + 15ac\\).",
+              "work": "\\(\\text{Verified: } 3a(2ab + 5c)\\)"
+            },
+            {
+              "explain": "Therefore, the fully factorised expression is \\(3a(2ab + 5c)\\).",
+              "work": "\\(\\text{Answer: } 3a(2ab + 5c)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((x + y)^2 - (x - y)^2\\).",
+          "options": [
+            "\\(0\\)",
+            "\\(2y^2\\)",
+            "\\(4xy\\)",
+            "\\(2x^2 + 2y^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Expand BOTH squares with brackets around the second one: (x² + 2xy + y²) - (x² - 2xy + y²). Watch the signs when subtracting!",
+          "keyPoints": [
+            {
+              "text": "(x + y)^2 - (x - y)^2",
+              "note": "Keep brackets around (x² - 2xy + y²) when subtracting."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand each perfect square separately: \\((x + y)^2 = x^2 + 2xy + y^2\\) and \\((x - y)^2 = x^2 - 2xy + y^2\\).",
+              "work": "\\((x^2 + 2xy + y^2) - (x^2 - 2xy + y^2)\\)"
+            },
+            {
+              "explain": "Distribute the minus sign across the second bracket.",
+              "work": "\\(x^2 + 2xy + y^2 - x^2 + 2xy - y^2\\)"
+            },
+            {
+              "explain": "Cancel \\(x^2 - x^2 = 0\\) and \\(y^2 - y^2 = 0\\), leaving \\(2xy + 2xy = 4xy\\).",
+              "work": "\\(4xy\\)"
+            },
+            {
+              "explain": "Therefore, \\((x + y)^2 - (x - y)^2 = 4xy\\).",
+              "work": "\\(\\text{Answer: } 4xy\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

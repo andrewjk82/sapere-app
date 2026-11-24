@@ -1523,6 +1523,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 164\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"46,128 190,32 241.2,108.8\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"179.2,39.2 186.4,50.0 197.2,42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"98\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 m</text><text x=\"234\" y=\"62\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y m</text><text x=\"156\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">34 m</text></svg>"
           }
+        },
+        {
+          "id": "sgs18-y8-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the length of the hypotenuse in a right-angled triangle with shorter sides \\(6\\text{ cm}\\) and \\(8\\text{ cm}\\).",
+          "options": [
+            "\\(10\\text{ cm}\\)",
+            "\\(14\\text{ cm}\\)",
+            "\\(12\\text{ cm}\\)",
+            "\\(\\sqrt{28}\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use Pythagoras' theorem c² = a² + b² = 6² + 8², then take the square root.",
+          "keyPoints": [
+            {
+              "text": "Find the",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(c^2 = 6^2 + 8^2 = 36 + 64 = 100\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(c = \\sqrt{100} = 10\\text{ cm}\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 10\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(10\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 10\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -1923,6 +1963,52 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 164\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"46,128 190,32 241.2,108.8\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"179.2,39.2 186.4,50.0 197.2,42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"98\" y=\"68\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">30 m</text><text x=\"234\" y=\"62\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">y m</text><text x=\"156\" y=\"138\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">34 m</text></svg>"
+          }
+        },
+        {
+          "id": "sgs18-y8-q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the right-angled triangle shown (hypotenuse \\(9\\text{ cm}\\), base \\(5\\text{ cm}\\)), find the exact value of \\(h\\).",
+          "options": [
+            "\\(\\sqrt{56}\\) (or \\(2\\sqrt{14}\\))",
+            "\\(\\sqrt{106}\\)",
+            "\\(4\\)",
+            "\\(\\sqrt{14}\\)"
+          ],
+          "answer": 0,
+          "hint": "h is a SHORTER side (opposite the right angle is 9 cm), so h² = 9² - 5² = 81 - 25. Leave your answer in exact surd form!",
+          "keyPoints": [
+            {
+              "text": "exact value of \\(h\\)",
+              "note": "Exact value means keep the square root sign (do not round to a decimal)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the hypotenuse opposite the right angle (\\(9\\text{ cm}\\), red) and the two shorter sides (\\(5\\text{ cm}\\), blue; \\(h\\text{ cm}\\), green).",
+              "work": "\\(h^2 + 5^2 = 9^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 210\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"104,24 104,148 176,148\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"104,136 116,136 116,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"104\" y1=\"24\" x2=\"176\" y2=\"148\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"104\" y1=\"24\" x2=\"104\" y2=\"148\" stroke=\"#16a34a\" stroke-width=\"3.6\"/><line x1=\"104\" y1=\"148\" x2=\"176\" y2=\"148\" stroke=\"#2563eb\" stroke-width=\"3.2\"/><text x=\"92\" y=\"90\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#15803d\">h = √56 cm</text><text x=\"152\" y=\"84\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#dc2626\">9 cm</text><text x=\"140\" y=\"168\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#2563eb\">5 cm</text><text x=\"130\" y=\"200\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Hypotenuse 9 cm (red), base 5 cm (blue), unknown side h = √56 cm (green)</text></svg>"
+              }
+            },
+            {
+              "explain": "Rearrange to solve for \\(h^2\\): \\(h^2 = 9^2 - 5^2\\).",
+              "work": "\\(h^2 = 81 - 25 = 56\\)"
+            },
+            {
+              "explain": "Take the positive square root to keep the exact value: \\(h = \\sqrt{56}\\) (which also simplifies to \\(2\\sqrt{14}\\)).",
+              "work": "\\(h = \\sqrt{56} = 2\\sqrt{14}\\)"
+            },
+            {
+              "explain": "Therefore, the exact value of \\(h\\) is \\(\\sqrt{56}\\) (or \\(2\\sqrt{14}\\)).",
+              "work": "\\(\\text{Answer: } \\sqrt{56}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"104,24 104,148 176,148\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polyline points=\"104,136 116,136 116,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"92\" y=\"90\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">h cm</text><text x=\"152\" y=\"84\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text><text x=\"140\" y=\"168\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text></svg>"
           }
         }
       ]
@@ -3461,6 +3547,190 @@
               }
             }
           ]
+        },
+        {
+          "id": "sgs18-y8-q8f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the exact value of \\(x\\) in the composite right-angled triangle diagram shown.",
+          "options": [
+            "\\(\\sqrt{90}\\text{ m}\\) (or \\(3\\sqrt{10}\\text{ m}\\))",
+            "\\(\\sqrt{41}\\text{ m}\\)",
+            "\\(\\sqrt{65}\\text{ m}\\)",
+            "\\(10\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply Pythagoras TWICE! First find the base of the lower-left right triangle (12 - 7 = 5 m) and its hypotenuse (√(5² + 4²) = √41 m). Then use √41 m and 7 m (double ticks!) to find x!",
+          "keyPoints": [
+            {
+              "text": "exact value of \\(x\\)",
+              "note": "Two-step Pythagoras: first find the shared diagonal √(5²+4²) = √41, then x = √(41 + 7²)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the base of the bottom-left right triangle: \\(12 - 7 = 5\\text{ m}\\), with height \\(4\\text{ m}\\).",
+              "work": "\\(\\text{Base} = 12 - 7 = 5\\text{ m}, \\; \\text{Height} = 4\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 225\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"225\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"84,158 216,158 216,114 139,114 91,54\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"84\" y1=\"158\" x2=\"139\" y2=\"114\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"139\" y1=\"114\" x2=\"139\" y2=\"158\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"84\" y1=\"158\" x2=\"91\" y2=\"54\" stroke=\"#dc2626\" stroke-width=\"3.6\"/><line x1=\"139\" y1=\"114\" x2=\"91\" y2=\"54\" stroke=\"#16a34a\" stroke-width=\"3.2\"/><text x=\"112\" y=\"152\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">5 m</text><text x=\"122\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">√41</text><polyline points=\"129,158 129,148 139,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"206,158 206,148 216,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"131,120 124,112 132,106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"176\" y1=\"108\" x2=\"176\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"108\" x2=\"180\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"110\" y1=\"88\" x2=\"119\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"113\" y1=\"91\" x2=\"122\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"178\" y=\"102\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">7 m</text><text x=\"226\" y=\"140\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">4 m</text><text x=\"150\" y=\"178\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 m</text><text x=\"72\" y=\"108\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\">x = √90</text><text x=\"155\" y=\"217\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Step 1: blue diagonal = √(5²+4²) = √41; Step 2: x = √(41 + 7²) = √90</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply Pythagoras to find the square of the shared diagonal (blue): \\(d^2 = 5^2 + 4^2 = 25 + 16 = 41\\).",
+              "work": "\\(d^2 = 41 \\implies d = \\sqrt{41}\\text{ m}\\)"
+            },
+            {
+              "explain": "The double tick marks show the top leg (green) is \\(7\\text{ m}\\). Apply Pythagoras to the upper right triangle for hypotenuse \\(x\\) (red).",
+              "work": "\\(x^2 = d^2 + 7^2 = 41 + 49 = 90\\)"
+            },
+            {
+              "explain": "Take the positive square root: \\(x = \\sqrt{90}\\text{ m}\\) (or \\(3\\sqrt{10}\\text{ m}\\)).",
+              "work": "\\(\\text{Answer: } \\sqrt{90}\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 198\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"198\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"84,158 216,158 216,114 139,114 91,54\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><line x1=\"84\" y1=\"158\" x2=\"139\" y2=\"114\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"139\" y1=\"114\" x2=\"139\" y2=\"158\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><polyline points=\"129,158 129,148 139,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"206,158 206,148 216,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><polyline points=\"131,120 124,112 132,106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"176\" y1=\"108\" x2=\"176\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"108\" x2=\"180\" y2=\"120\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"110\" y1=\"88\" x2=\"119\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"113\" y1=\"91\" x2=\"122\" y2=\"83\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"178\" y=\"102\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">7 m</text><text x=\"226\" y=\"140\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">4 m</text><text x=\"150\" y=\"178\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">12 m</text><text x=\"72\" y=\"108\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"14\" font-weight=\"800\" fill=\"#0f172a\">x</text></svg>"
+          }
+        },
+        {
+          "id": "sgs18-y8-q9ei",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Points \\(A\\), \\(B\\), and \\(C\\) lie on a circle with centre \\(O\\). Triangle \\(ABC\\) is isosceles with \\(AB = AC\\), \\(BC = 6\\text{ cm}\\), and \\(\\angle BOC = 90^\\circ\\). Which equation correctly finds the radius \\(r = \\sqrt{18}\\text{ cm}\\)?",
+          "options": [
+            "r² + r² = 6², giving 2r² = 36, so r² = 18 and r = √18 cm",
+            "r + r = 6, giving 2r = 6, so r = 3 cm",
+            "r² + 6² = r², giving r = √18 cm",
+            "r² = 6² + 6², giving r = √72 cm"
+          ],
+          "answer": 0,
+          "hint": "Both OB and OC are radii (length r) of the circle, and ∠BOC = 90°! Apply Pythagoras' theorem to right triangle OBC.",
+          "keyPoints": [
+            {
+              "text": "\\angle BOC = 90^\\circ",
+              "note": "In right triangle OBC, OB = OC = r and hypotenuse BC = 6 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Note that \\(OB\\) and \\(OC\\) are both radii of the circle (red), so \\(OB = OC = r\\).",
+              "work": "\\(OB = OC = r\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 225\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"225\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"135\" cy=\"102\" r=\"74\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"135,28 82.7,154.3 135,102 187.3,154.3\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"82.7\" y1=\"154.3\" x2=\"187.3\" y2=\"154.3\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\"/><polyline points=\"126,111 135,120 144,111\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><line x1=\"135\" y1=\"102\" x2=\"82.7\" y2=\"154.3\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"135\" y1=\"102\" x2=\"187.3\" y2=\"154.3\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"102\" y=\"130\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">r</text><text x=\"168\" y=\"130\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\">r</text><text x=\"135\" y=\"20\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"135\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">O</text><text x=\"70.7\" y=\"166.3\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"193.3\" y=\"166.3\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"135\" y=\"148.3\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">6 cm</text><text x=\"135\" y=\"217\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Right isosceles △OBC: r² + r² = 6² -> 2r² = 36 -> r = √18 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply Pythagoras' theorem to right-angled \\(\\triangle OBC\\) with hypotenuse \\(BC = 6\\text{ cm}\\).",
+              "work": "\\(r^2 + r^2 = 6^2\\)"
+            },
+            {
+              "explain": "Simplify and divide by \\(2\\): \\(2r^2 = 36 \\implies r^2 = 18\\).",
+              "work": "\\(2r^2 = 36 \\implies r^2 = 18\\)"
+            },
+            {
+              "explain": "Take the positive square root: \\(r = \\sqrt{18}\\text{ cm}\\) (or \\(3\\sqrt{2}\\text{ cm}\\)).",
+              "work": "\\(r = \\sqrt{18}\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 198\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"198\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"135\" cy=\"102\" r=\"74\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"135,28 82.7,154.3 135,102 187.3,154.3\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"82.7\" y1=\"154.3\" x2=\"187.3\" y2=\"154.3\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"4,3\"/><polyline points=\"126,111 135,120 144,111\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"135\" y=\"20\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"135\" y=\"94\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">O</text><text x=\"70.7\" y=\"166.3\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"193.3\" y=\"166.3\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"135\" y=\"148.3\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">6 cm</text></svg>"
+          }
+        },
+        {
+          "id": "sgs18-y8-q10ci",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A circle of radius \\(3\\) has centre \\(Q(5, 0)\\). Point \\(P\\) lies on the circle such that \\(OP \\perp PQ\\), where \\(O\\) is the origin. Find the length \\(OP\\) and the area of \\(\\triangle OPQ\\).",
+          "options": [
+            "OP = 4 units and Area = 6 units²",
+            "OP = 4 units and Area = 12 units²",
+            "OP = 8 units and Area = 12 units²",
+            "OP = √34 units and Area = 6 units²"
+          ],
+          "answer": 0,
+          "hint": "In right-angled △OPQ, hypotenuse OQ = 5 and radius PQ = 3. Use Pythagoras to find OP = 4, then Area = 1/2 × OP × PQ!",
+          "keyPoints": [
+            {
+              "text": "OP \\perp PQ",
+              "note": "Right triangle OPQ is a 3-4-5 triangle with Area = 1/2 × 4 × 3 = 6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the sides of right-angled \\(\\triangle OPQ\\): hypotenuse \\(OQ = 5\\) (distance from origin to \\(Q(5,0)\\)) and radius \\(PQ = 3\\).",
+              "work": "\\(OQ = 5, \\quad PQ = 3\\)"
+            },
+            {
+              "explain": "Apply Pythagoras' theorem to find \\(OP\\): \\(OP^2 = 5^2 - 3^2 = 25 - 9 = 16 \\implies OP = 4\\).",
+              "work": "\\(OP = \\sqrt{25 - 9} = 4\\)"
+            },
+            {
+              "explain": "Calculate the area using perpendicular legs \\(OP = 4\\) and \\(PQ = 3\\).",
+              "work": "\\(\\text{Area} = \\dfrac{1}{2} \\times 4 \\times 3 = 6\\text{ units}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"104\" x2=\"286\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"16\" x2=\"56\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"166\" cy=\"104\" r=\"66\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"56,104 126.4,51.2 166,104\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"118.4,57.2 124.4,65.2 132.4,59.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"126.4\" y1=\"51.2\" x2=\"126.4\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-dasharray=\"4,2\"/><text x=\"118.4\" y=\"77.6\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">y = 2.4</text><text x=\"91.2\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">x = 3.2</text><text x=\"44\" y=\"120\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\">O</text><text x=\"166\" y=\"122\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">Q(5, 0)</text><text x=\"120.4\" y=\"43.2\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">P</text><text x=\"154.2\" y=\"73.6\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"292\" y=\"108\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">x</text><text x=\"44\" y=\"22\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">y</text><text x=\"155\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Right △OPQ: OP = 4, PQ = 3, OQ = 5 -> Area = 6 units²</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, \\(OP = 4\\text{ units}\\) and \\(\\text{Area}(\\triangle OPQ) = 6\\text{ units}^2\\).",
+              "work": "\\(\\text{Answer: } OP = 4, \\; \\text{Area} = 6\\text{ units}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"104\" x2=\"286\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"16\" x2=\"56\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"166\" cy=\"104\" r=\"66\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"56,104 126.4,51.2 166,104\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"118.4,57.2 124.4,65.2 132.4,59.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"44\" y=\"120\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\">O</text><text x=\"166\" y=\"122\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">Q(5, 0)</text><text x=\"120.4\" y=\"43.2\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">P</text><text x=\"154.2\" y=\"73.6\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"292\" y=\"108\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">x</text><text x=\"44\" y=\"22\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">y</text></svg>"
+          }
+        },
+        {
+          "id": "sgs18-y8-q10cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the circle diagram (centre \\(Q(5, 0)\\), radius \\(PQ = 3\\), \\(OP = 4\\), \\(\\text{Area}(\\triangle OPQ) = 6\\text{ units}^2\\), with \\(P\\) in the first quadrant), find the coordinates of point \\(P\\).",
+          "options": [
+            "\\((3.2, \\; 2.4)\\) (or \\(\\left(\\dfrac{16}{5}, \\dfrac{12}{5}\\right)\\))",
+            "\\((2.4, \\; 3.2)\\)",
+            "\\((3, \\; 2.5)\\)",
+            "\\((4, \\; 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Write Area(△OPQ) using horizontal base OQ = 5 and vertical height y: 1/2 × 5 × y = 6 -> y = 2.4! Then use x² + y² = OP² = 16 to find x!",
+          "keyPoints": [
+            {
+              "text": "coordinates of point \\(P\\)",
+              "note": "Use Area = 1/2 × OQ × y = 6 to find y = 2.4, then Pythagoras for x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Drop a perpendicular from \\(P(x, y)\\) to the \\(x\\)-axis (red): its height is \\(y\\) and base \\(OQ = 5\\).",
+              "work": "\\(\\dfrac{1}{2} \\times 5 \\times y = 6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"104\" x2=\"286\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"16\" x2=\"56\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"166\" cy=\"104\" r=\"66\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"56,104 126.4,51.2 166,104\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"118.4,57.2 124.4,65.2 132.4,59.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><line x1=\"126.4\" y1=\"51.2\" x2=\"126.4\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-dasharray=\"4,2\"/><text x=\"118.4\" y=\"77.6\" text-anchor=\"end\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#dc2626\">y = 2.4</text><text x=\"91.2\" y=\"119\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#2563eb\">x = 3.2</text><text x=\"44\" y=\"120\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\">O</text><text x=\"166\" y=\"122\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">Q(5, 0)</text><text x=\"120.4\" y=\"43.2\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">P</text><text x=\"154.2\" y=\"73.6\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"292\" y=\"108\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">x</text><text x=\"44\" y=\"22\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">y</text><text x=\"155\" y=\"202\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Height y = 2.4 (red) from Area = 6; x = 3.2 (blue) from x² + 2.4² = 4²</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve for \\(y\\): \\(5y = 12 \\implies y = \\dfrac{12}{5} = 2.4\\).",
+              "work": "\\(y = \\dfrac{12}{5} = 2.4\\)"
+            },
+            {
+              "explain": "Use Pythagoras in the left right-triangle (\\(OP = 4\\)): \\(x^2 + (2.4)^2 = 4^2 \\implies x^2 = 16 - 5.76 = 10.24\\).",
+              "work": "\\(x = \\sqrt{10.24} = \\dfrac{16}{5} = 3.2\\)"
+            },
+            {
+              "explain": "Therefore, the coordinates of \\(P\\) are \\((3.2, 2.4)\\) (or \\(\\left(\\dfrac{16}{5}, \\dfrac{12}{5}\\right)\\)).",
+              "work": "\\(\\text{Answer: } (3.2, 2.4)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 184\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"20\" y1=\"104\" x2=\"286\" y2=\"104\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"16\" x2=\"56\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><circle cx=\"166\" cy=\"104\" r=\"66\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polygon points=\"56,104 126.4,51.2 166,104\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><polyline points=\"118.4,57.2 124.4,65.2 132.4,59.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"44\" y=\"120\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\">O</text><text x=\"166\" y=\"122\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\">Q(5, 0)</text><text x=\"120.4\" y=\"43.2\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">P</text><text x=\"154.2\" y=\"73.6\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">3</text><text x=\"292\" y=\"108\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">x</text><text x=\"44\" y=\"22\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\">y</text></svg>"
+          }
         }
       ]
     }

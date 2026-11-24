@@ -3154,6 +3154,46 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q1aiii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\dfrac{2}{3} + \\dfrac{1}{3}\\).",
+          "options": [
+            "\\(\\dfrac{3}{6}\\)",
+            "\\(\\dfrac{2}{9}\\)",
+            "\\(1\\)",
+            "\\(\\dfrac{3}{2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Both fractions share the denominator 3: add the numerators and keep the denominator.",
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\dfrac{2}{3}",
+              "note": "Apply the core arithmetic/algebra rule carefully step by step."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the rule or operation required and write out the first step.",
+              "work": "\\(\\dfrac{2 + 1}{3} = \\dfrac{3}{3}\\)"
+            },
+            {
+              "explain": "Complete the calculation or simplification.",
+              "work": "\\(\\dfrac{3}{3} = 1\\)"
+            },
+            {
+              "explain": "Double-check your result against the original question.",
+              "work": "\\(\\text{Verified: } 1\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1\\).",
+              "work": "\\(\\text{Answer: } 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4781,6 +4821,86 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q2ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(2.5 \\times 6\\).",
+          "options": [
+            "\\(12.5\\)",
+            "\\(15\\)",
+            "\\(15.5\\)",
+            "\\(1.5\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 2 × 6 = 12 and 0.5 × 6 = 3, then add 12 + 3 = 15!",
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Perform each algebraic or arithmetic step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the key operation or inverse step first.",
+              "work": "\\((2 \\times 6) + (0.5 \\times 6)\\)"
+            },
+            {
+              "explain": "Simplify to obtain the exact result.",
+              "work": "\\(12 + 3 = 15\\)"
+            },
+            {
+              "explain": "Verify the answer by reversing or checking the calculation.",
+              "work": "\\(\\text{Verified: } 15\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(15\\).",
+              "work": "\\(\\text{Answer: } 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q2aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\dfrac{2}{3} \\div \\dfrac{1}{6}\\).",
+          "options": [
+            "\\(\\dfrac{1}{9}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(4\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Keep, Change, Flip: multiply 2/3 by the reciprocal 6/1!",
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Perform each algebraic or arithmetic step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the key operation or inverse step first.",
+              "work": "\\(\\dfrac{2}{3} \\times \\dfrac{6}{1}\\)"
+            },
+            {
+              "explain": "Simplify to obtain the exact result.",
+              "work": "\\(\\dfrac{12}{3} = 4\\)"
+            },
+            {
+              "explain": "Verify the answer by reversing or checking the calculation.",
+              "work": "\\(\\text{Verified: } 4\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(4\\).",
+              "work": "\\(\\text{Answer: } 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4946,6 +5066,86 @@
             "grade": "8",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgs18-y8-q2aiii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\((1.2)^2\\).",
+          "options": [
+            "\\(1.44\\)",
+            "\\(2.4\\)",
+            "\\(14.4\\)",
+            "\\(1.04\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 12 × 12 = 144, then place 1 + 1 = 2 decimal places -> 1.44.",
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "Perform each algebraic or arithmetic step carefully."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the key operation or inverse step first.",
+              "work": "\\(1.2 \\times 1.2 \\text{ (12} \\times \\text{12 = 144)}\\)"
+            },
+            {
+              "explain": "Simplify to obtain the exact result.",
+              "work": "\\(1.44\\)"
+            },
+            {
+              "explain": "Verify the answer by reversing or checking the calculation.",
+              "work": "\\(\\text{Verified: } 1.44\\)"
+            },
+            {
+              "explain": "Therefore, the answer is \\(1.44\\).",
+              "work": "\\(\\text{Answer: } 1.44\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "sgs18-y8-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\((1230 + 1.23) \\div 123\\).",
+          "options": [
+            "\\(10.1\\)",
+            "\\(10.01\\)",
+            "\\(1.01\\)",
+            "\\(100.01\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide EACH term inside the brackets by 123 separately: 1230 ÷ 123 = 10, and 1.23 ÷ 123 = 0.01!",
+          "keyPoints": [
+            {
+              "text": "123",
+              "note": "Use the distributive property: (1230 ÷ 123) + (1.23 ÷ 123)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split the division across the addition: \\(\\dfrac{1230}{123} + \\dfrac{1.23}{123}\\).",
+              "work": "\\(\\dfrac{1230}{123} + \\dfrac{1.23}{123}\\)"
+            },
+            {
+              "explain": "Evaluate the first quotient: \\(1230 \\div 123 = 10\\).",
+              "work": "\\(1230 \\div 123 = 10\\)"
+            },
+            {
+              "explain": "Evaluate the second quotient: \\(1.23 \\div 123 = 0.01\\).",
+              "work": "\\(1.23 \\div 123 = 0.01\\)"
+            },
+            {
+              "explain": "Add both parts together: \\(10 + 0.01 = 10.01\\).",
+              "work": "\\(\\text{Answer: } 10.01\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

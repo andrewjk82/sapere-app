@@ -5326,6 +5326,98 @@
             "All angles in a parallelogram are equal."
           ],
           "answer": 0
+        },
+        {
+          "id": "sgs18-y8-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In parallelogram \\(ABCD\\), side \\(AB\\) is extended to \\(E\\) and \\(\\angle ADC = 110^\\circ\\). Find the value of \\(x\\).",
+          "options": [
+            "\\(70\\)",
+            "\\(110\\)",
+            "\\(80\\)",
+            "\\(55\\)"
+          ],
+          "answer": 0,
+          "hint": "Opposite angles in a parallelogram are equal, so ∠ABC = 110°. Since ABE is a straight line, x° and 110° are supplementary (sum to 180°)!",
+          "keyPoints": [
+            {
+              "text": "parallelogram",
+              "note": "Opposite angles of a parallelogram are equal, and angles on a straight line sum to 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In parallelogram \\(ABCD\\), opposite angles are equal, so \\(\\angle ABC = \\angle ADC = 110^\\circ\\).",
+              "work": "\\(\\angle ABC = 110^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 175\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"175\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"62,118 194,118 224,42 92,42\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"194\" y1=\"118\" x2=\"262\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"148,37 156,42 148,47\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"154,37 162,42 154,47\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"118,113 126,118 118,123\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"124,113 132,118 124,123\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"72,84 78,76 82,86\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"204,84 210,76 214,86\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><path d=\"M 84 62 A 22 22 0 0 0 114 42\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.2\"/><text x=\"114\" y=\"68\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">110°</text><path d=\"M 202 98 A 22 22 0 0 1 216 118\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"234\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"800\" fill=\"#dc2626\">x = 70°</text><text x=\"174\" y=\"106\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#2563eb\">110°</text><text x=\"50\" y=\"132\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"190\" y=\"136\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"270\" y=\"124\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">E</text><text x=\"230\" y=\"38\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"38\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"160\" y=\"165\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Opposite angle ∠ABC = 110° (blue); straight line ABE -> x = 180° - 110° = 70°</text></svg>"
+              }
+            },
+            {
+              "explain": "Since \\(ABE\\) is a straight line, \\(\\angle ABC\\) and \\(x^\\circ\\) are supplementary (sum to \\(180^\\circ\\)).",
+              "work": "\\(x + 110 = 180\\)"
+            },
+            {
+              "explain": "Subtract \\(110\\) from \\(180\\): \\(x = 70\\).",
+              "work": "\\(x = 180 - 110 = 70\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 70\\).",
+              "work": "\\(\\text{Answer: } x = 70\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 148\" width=\"65%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"62,118 194,118 224,42 92,42\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"194\" y1=\"118\" x2=\"262\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"2\"/><polyline points=\"148,37 156,42 148,47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"154,37 162,42 154,47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"118,113 126,118 118,123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"124,113 132,118 124,123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"72,84 78,76 82,86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"204,84 210,76 214,86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><path d=\"M 84 62 A 22 22 0 0 0 114 42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"114\" y=\"68\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">110°</text><path d=\"M 202 98 A 22 22 0 0 1 216 118\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"234\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"800\" fill=\"#0f172a\">x°</text><text x=\"50\" y=\"132\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"190\" y=\"136\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"270\" y=\"124\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">E</text><text x=\"230\" y=\"38\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"38\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text></svg>"
+          }
+        },
+        {
+          "id": "sgs18-y8-q5di",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The diagram shows parallelogram \\(ABCD\\) with diagonal \\(AC\\), \\(\\angle DAC = 30^\\circ\\), and \\(\\angle BAC = 50^\\circ\\). State the values of \\(x\\) and \\(y\\).",
+          "options": [
+            "\\(x = 30, \\; y = 50\\)",
+            "\\(x = 50, \\; y = 30\\)",
+            "\\(x = 30, \\; y = 30\\)",
+            "\\(x = 50, \\; y = 50\\)"
+          ],
+          "answer": 0,
+          "hint": "Use alternate angles (Z-angles) on the two pairs of parallel sides! AD || BC pairs 30° with x°, and AB || DC pairs 50° with y°.",
+          "keyPoints": [
+            {
+              "text": "parallelogram \\(ABCD\\)",
+              "note": "Alternate angles on parallel lines are equal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since \\(AD \\parallel BC\\) (blue), \\(\\angle ACB = \\angle DAC\\) (alternate angles on parallel lines), so \\(x = 30\\).",
+              "work": "\\(x = 30 \\text{ (alternate angles, } AD \\parallel BC\\text{)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 205\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"205\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,34 212,34 242,146 94,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"34\" x2=\"242\" y2=\"146\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><polyline points=\"130,29 138,34 130,39\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"136,29 144,34 136,39\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"160,141 168,146 160,151\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"166,141 174,146 166,151\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"73,94 78,86 84,94\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><polyline points=\"221,94 226,86 232,94\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><text x=\"116\" y=\"52\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#2563eb\">30°</text><text x=\"98\" y=\"84\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">50°</text><text x=\"192\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\">x = 30°</text><text x=\"210\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#15803d\">y = 50°</text><text x=\"50\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"218\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"248\" y=\"156\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"158\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"155\" y=\"197\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Alternate angles: x = 30° (blue, AD || BC) and y = 50° (green, AB || DC)</text></svg>"
+              }
+            },
+            {
+              "explain": "Since \\(AB \\parallel DC\\), \\(\\angle ACD = \\angle BAC\\) (alternate angles on parallel lines), so \\(y = 50\\).",
+              "work": "\\(y = 50 \\text{ (alternate angles, } AB \\parallel DC\\text{)}\\)"
+            },
+            {
+              "explain": "Check: both triangles \\(\\triangle ABC\\) and \\(\\triangle CDA\\) have angles \\(30^\\circ, 50^\\circ,\\) and \\(100^\\circ\\).",
+              "work": "\\(30^\\circ + 50^\\circ + 100^\\circ = 180^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 30\\) and \\(y = 50\\).",
+              "work": "\\(\\text{Answer: } x = 30, \\; y = 50\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 178\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"178\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,34 212,34 242,146 94,146\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"64\" y1=\"34\" x2=\"242\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"130,29 138,34 130,39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"136,29 144,34 136,39\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"160,141 168,146 160,151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"166,141 174,146 166,151\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"73,94 78,86 84,94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><polyline points=\"221,94 226,86 232,94\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"116\" y=\"52\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">30°</text><text x=\"98\" y=\"84\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">50°</text><text x=\"192\" y=\"138\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">x°</text><text x=\"210\" y=\"106\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">y°</text><text x=\"50\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"218\" y=\"34\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">D</text><text x=\"248\" y=\"156\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text><text x=\"80\" y=\"158\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text></svg>"
+          }
         }
       ]
     },
