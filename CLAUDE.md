@@ -193,6 +193,13 @@ printable paper must be a separate `parts` entry so it has its own working lines
 in one stem with a single answer area. Author new questions with `parts: [{pm, t}]`; the build scripts also run
 `splitparts.js` (scratch helper) to convert any leftover inline "(a) … (b) …" stems into parts, sharing the marks.
 
+**Never print the sub-question text twice (2026-11-24, user feedback):** when a question has `parts`, its stem is only the
+shared lead-in ("Factorise each expression.", "A rectangle has area … and width …") — it must NOT also list "(a) … (b) …".
+The text of each sub-question appears once, as its own part, directly above its own answer lines. Before delivering,
+scan every paper: no stem may contain "(a)" when the question has parts, and no stem with "(a)" may lack parts. The
+build scripts' `splitparts.js` enforces both (it splits inline stems and strips duplicated inline text), but still
+author new questions correctly so the stem reads naturally on its own.
+
 **Variety within a paper (2026-11-24, user feedback on Y9 Ch13 — applies to every newly authored paper):** the
 digits-masked duplicate scan only catches identical stems. Also keep **at most 3 questions of any one problem type**
 per paper (e.g. bearings, elevation/depression, "find a side/angle from a given triangle", slope/ramp/roof word
