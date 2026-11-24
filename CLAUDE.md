@@ -188,6 +188,14 @@ bank has too few questions for (1) — e.g. Ch 9 has one, Ch 10 has none — say
 four-paper set has **35 questions** — verbatim, new hard, common mistakes and multi-step. If the bank cannot
 supply 35 distinct verbatim questions, say so and fill from related chapters or report the shortfall.
 
+**Variety within a paper (2026-11-24, user feedback on Y9 Ch13 — applies to every newly authored paper):** the
+digits-masked duplicate scan only catches identical stems. Also keep **at most 3 questions of any one problem type**
+per paper (e.g. bearings, elevation/depression, "find a side/angle from a given triangle", slope/ramp/roof word
+problems). Before writing, list the chapter's distinct types and spread the 35 questions across them (aim for 8–12
+types); then count questions per type and rewrite any type with more than 3. For a verbatim-from-bank paper, prefer
+bank questions of under-used types when the bank offers a choice, and say in the delivery note if the bank itself is
+repetitive.
+
 **Answer-key sheet (2026-11-22, user request, every paper from now on):** the LAST page of every paper is a single
 one-page "Answer Key" — question numbers and final answers only (no working), in 2 columns, small enough to fit on
 one page — so it can be handed to students on its own. Build scripts add it after "Answers & Worked Solutions".
