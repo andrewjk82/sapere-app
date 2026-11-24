@@ -1099,6 +1099,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q11c1",
+          "type": "mc",
+          "stem": "Find the square roots of \\(-3-4i\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(1-2i\\) and \\(-1+2i\\)",
+            "\\(1+2i\\) and \\(-1-2i\\)",
+            "\\(2-i\\) and \\(-2+i\\)",
+            "\\(1-2i\\) and \\(1+2i\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\((x+iy)^{2}=-3-4i\\), expand, then equate real and imaginary parts and solve the simultaneous equations.",
+          "steps": [
+            {
+              "explain": "Let the square root be \\(x+iy\\) with \\(x,y\\) real, and expand \\((x+iy)^{2}=x^{2}-y^{2}+2xyi\\).",
+              "work": "\\(x^{2}-y^{2}+2xy\\,i=-3-4i\\)"
+            },
+            {
+              "explain": "Equate real parts and imaginary parts.",
+              "work": "\\(x^{2}-y^{2}=-3,\\qquad 2xy=-4\\ \\Rightarrow\\ xy=-2\\)"
+            },
+            {
+              "explain": "From \\(xy=-2\\): \\(y=-\\dfrac{2}{x}\\). Substitute: \\(x^{2}-\\dfrac{4}{x^{2}}=-3\\), multiply by \\(x^{2}\\): \\(x^{4}+3x^{2}-4=0\\), i.e. \\((x^{2}+4)(x^{2}-1)=0\\). Real \\(x\\) needs \\(x^{2}=1\\).",
+              "work": "\\(x=\\pm1\\)"
+            },
+            {
+              "explain": "Find \\(y\\) from \\(xy=-2\\): \\(x=1\\Rightarrow y=-2\\); \\(x=-1\\Rightarrow y=2\\) (the signs of \\(x\\) and \\(y\\) are OPPOSITE).",
+              "work": "\\(1-2i\\quad\\text{and}\\quad-1+2i\\)"
+            },
+            {
+              "explain": "Check: \\((1-2i)^{2}=1-4i+4i^{2}=1-4i-4=-3-4i\\) ✓. Option B squares to \\(-3+4i\\); option C squares to \\(3-4i\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the square roots of",
+              "note": "Equate real and imaginary parts; xy must be negative here."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1518,6 +1572,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q11c2",
+          "type": "mc",
+          "stem": "Hence, or otherwise, solve the equation \\(z^{2}-3z+(3+i)=0\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(z=2-i\\) or \\(z=1+i\\)",
+            "\\(z=2+i\\) or \\(z=1-i\\)",
+            "\\(z=4-2i\\) or \\(z=2+2i\\)",
+            "\\(z=1-2i\\) or \\(z=-1+2i\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the quadratic formula. The discriminant \\(\\Delta=b^{2}-4ac\\) is \\(-3-4i\\), whose square roots you found in part (i).",
+          "steps": [
+            {
+              "explain": "Quadratic formula with \\(a=1,\\ b=-3,\\ c=3+i\\).",
+              "work": "\\(z=\\dfrac{3\\pm\\sqrt{(-3)^{2}-4(1)(3+i)}}{2}\\)"
+            },
+            {
+              "explain": "Discriminant: \\(9-12-4i=-3-4i\\).",
+              "work": "\\(\\Delta=9-4(3+i)=-3-4i\\)"
+            },
+            {
+              "explain": "From part (i), \\(\\sqrt{-3-4i}=\\pm(1-2i)\\).",
+              "work": "\\(z=\\dfrac{3\\pm(1-2i)}{2}\\)"
+            },
+            {
+              "explain": "Take the two signs separately.",
+              "work": "\\(z=\\dfrac{3+1-2i}{2}=2-i\\qquad\\text{or}\\qquad z=\\dfrac{3-1+2i}{2}=1+i\\)"
+            },
+            {
+              "explain": "Check with sum and product of roots: \\((2-i)+(1+i)=3\\) ✓ (equals \\(-b\\)) and \\((2-i)(1+i)=2+2i-i-i^{2}=3+i\\) ✓ (equals \\(c\\)). Option C forgets to divide by 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "solve the equation",
+              "note": "Quadratic formula, then use the square root from part (i)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1649,6 +1757,72 @@
           "meta": {
             "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q7",
+          "type": "mc",
+          "stem": "The complex number \\(z\\) is shown below. Which of the following is the graph of \\(i\\bar{z}\\)?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 674 792\" width=\"100%\" height=\"auto\" style=\"max-width:700px;display:block;margin:0 auto\"><g transform=\"translate(172,0)\"><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"63.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"63.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"204.0\" y=\"61.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text></g><g transform=\"translate(0,264)\"><g transform=\"translate(3,3)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"250\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"187.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"187.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(347,3)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"250\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"103.0\" y2=\"156.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"103.0\" cy=\"156.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(3,267)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"250\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"227.0\" y2=\"94.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"227.0\" cy=\"94.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(347,267)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"250\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"134.0\" y2=\"63.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"134.0\" cy=\"63.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "Do it in two moves: \\(\\bar{z}\\) reflects \\(z\\) in the real axis; multiplying by \\(i\\) rotates by \\(90^{\\circ}\\) anticlockwise. Or use \\(z=x+iy\\) and work out \\(i\\bar{z}\\) algebraically.",
+          "steps": [
+            {
+              "explain": "Read \\(z\\) from the diagram: it is in the first quadrant, roughly \\(z=x+iy\\) with \\(x\\approx0.5\\) and \\(y\\approx1\\).",
+              "work": "\\(z=x+iy,\\quad x>0,\\ y>0,\\ y>x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"63.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"63.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"204.0\" y=\"61.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text></svg>"
+              }
+            },
+            {
+              "explain": "The conjugate \\(\\bar{z}=x-iy\\) is the reflection of \\(z\\) in the real axis (blue point, fourth quadrant).",
+              "work": "\\(\\bar{z}=x-iy\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"63.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"63.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"204.0\" y=\"61.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"187.0\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"187.0\" r=\"4.6\" fill=\"#2563eb\"/><text x=\"204.0\" y=\"201.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z̄</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply by \\(i\\): \\(i\\bar{z}=i(x-iy)=ix-i^{2}y=y+ix\\).",
+              "work": "\\(i\\bar{z}=y+ix\\)"
+            },
+            {
+              "explain": "So the real part is \\(y\\) and the imaginary part is \\(x\\): the point \\((x,y)\\) becomes \\((y,x)\\). With \\(x\\approx0.5\\), \\(y\\approx1\\): \\(i\\bar{z}\\approx1+0.5i\\), in the first quadrant, flatter than \\(z\\) (green).",
+              "work": "\\(i\\bar{z}\\approx1+0.5i\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"24.6\" y1=\"125.0\" x2=\"309.4\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"228.2\" x2=\"165.0\" y2=\"17.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"121.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"309.4\" y1=\"125.0\" x2=\"302.5\" y2=\"129.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"161.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"17.8\" x2=\"169.0\" y2=\"24.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"305.4\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"23.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"63.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"63.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"204.0\" y=\"61.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"165.0\" y1=\"125.0\" x2=\"196.0\" y2=\"187.0\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"196.0\" cy=\"187.0\" r=\"4.6\" fill=\"#2563eb\"/><text x=\"204.0\" y=\"201.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#2563eb\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z̄</text><line x1=\"165.0\" y1=\"125.0\" x2=\"227.0\" y2=\"94.0\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"227.0\" cy=\"94.0\" r=\"4.6\" fill=\"#047857\"/><text x=\"235.0\" y=\"88.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">iz̄</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare with the options: A is \\(\\bar{z}\\); B is \\(-i\\bar{z}\\) (rotated the other way); D is \\(-\\bar{z}=-x+iy\\). Only C is in the first quadrant and flatter than \\(z\\).",
+              "work": "\\(\\text{Answer: graph }C\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is the graph of",
+              "note": "Conjugate reflects in the real axis; multiplying by i rotates 90 degrees anticlockwise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2293,6 +2467,124 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q1",
+          "type": "mc",
+          "stem": "Which of the following is a solution to the equation \\(\\left|e^{-i\\theta}-1\\right|=2\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\theta=-\\dfrac{\\pi}{2}\\)",
+            "\\(\\theta=0\\)",
+            "\\(\\theta=\\dfrac{\\pi}{2}\\)",
+            "\\(\\theta=\\pi\\)"
+          ],
+          "answer": 3,
+          "hint": "Write \\(e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\), find the modulus squared, and solve for \\(\\cos\\theta\\). Or test the four options.",
+          "steps": [
+            {
+              "explain": "Write \\(e^{-i\\theta}\\) in cartesian form: \\(e^{-i\\theta}=\\cos\\theta-i\\sin\\theta\\) (it is a point on the unit circle).",
+              "work": "\\(e^{-i\\theta}-1=(\\cos\\theta-1)-i\\sin\\theta\\)"
+            },
+            {
+              "explain": "Modulus squared \\(=(\\text{real part})^{2}+(\\text{imaginary part})^{2}\\).",
+              "work": "\\(\\left|e^{-i\\theta}-1\\right|^{2}=(\\cos\\theta-1)^{2}+\\sin^{2}\\theta=\\cos^{2}\\theta-2\\cos\\theta+1+\\sin^{2}\\theta\\)"
+            },
+            {
+              "explain": "Use \\(\\sin^{2}\\theta+\\cos^{2}\\theta=1\\).",
+              "work": "\\(=2-2\\cos\\theta\\)"
+            },
+            {
+              "explain": "The modulus is 2, so the modulus squared is 4.",
+              "work": "\\(2-2\\cos\\theta=4\\ \\Rightarrow\\ \\cos\\theta=-1\\ \\Rightarrow\\ \\theta=\\pi\\)"
+            },
+            {
+              "explain": "Picture: \\(e^{-i\\theta}\\) lies on the unit circle and subtracting 1 shifts the circle left to centre \\(-1\\) (orange). The farthest point from the origin is \\(-2\\), at distance 2, reached when \\(e^{-i\\theta}=-1\\), i.e. \\(\\theta=\\pi\\).",
+              "work": "\\(\\left|e^{-i\\pi}-1\\right|=|-1-1|=2\\ \\checkmark\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"-15.0\" y1=\"202.0\" x2=\"-15.0\" y2=\"-2.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"45.0\" y1=\"202.0\" x2=\"45.0\" y2=\"-2.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"202.0\" x2=\"105.0\" y2=\"-2.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"202.0\" x2=\"165.0\" y2=\"-2.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"225.0\" y1=\"202.0\" x2=\"225.0\" y2=\"-2.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-33.0\" y1=\"160.0\" x2=\"255.0\" y2=\"160.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-33.0\" y1=\"100.0\" x2=\"255.0\" y2=\"100.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-33.0\" y1=\"40.0\" x2=\"255.0\" y2=\"40.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-37.0\" y1=\"100.0\" x2=\"263.0\" y2=\"100.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"206.0\" x2=\"165.0\" y2=\"-10.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"263.0\" y1=\"100.0\" x2=\"256.1\" y2=\"96.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"263.0\" y1=\"100.0\" x2=\"256.1\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"-10.0\" x2=\"161.0\" y2=\"-3.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"-10.0\" x2=\"169.0\" y2=\"-3.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"259.0\" y=\"116.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"-4.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"105.0\" cy=\"100.0\" r=\"60.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><circle cx=\"105.0\" cy=\"100.0\" r=\"4.6\" fill=\"#047857\"/><text x=\"105.0\" y=\"118.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−1</text><circle cx=\"45.0\" cy=\"100.0\" r=\"4.6\" fill=\"#dc2626\"/><text x=\"45.0\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−2 (θ = π)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check the others: \\(\\theta=0\\) gives \\(|1-1|=0\\); \\(\\theta=\\pm\\dfrac{\\pi}{2}\\) gives \\(|\\mp i-1|=\\sqrt{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is a solution to the equation",
+              "note": "Expand the modulus squared and use the Pythagorean identity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q11a1",
+          "type": "mc",
+          "stem": "Express \\(z=\\dfrac{1+\\sqrt{3}i}{1+i}\\) in the form \\(r(\\cos\\theta+i\\sin\\theta)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sqrt{2}\\left(\\cos\\dfrac{\\pi}{12}+i\\sin\\dfrac{\\pi}{12}\\right)\\)",
+            "\\(\\sqrt{2}\\left(\\cos\\dfrac{7\\pi}{12}+i\\sin\\dfrac{7\\pi}{12}\\right)\\)",
+            "\\(2\\sqrt{2}\\left(\\cos\\dfrac{\\pi}{12}+i\\sin\\dfrac{\\pi}{12}\\right)\\)",
+            "\\(\\dfrac{\\sqrt{2}}{2}\\left(\\cos\\dfrac{\\pi}{12}+i\\sin\\dfrac{\\pi}{12}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the top and bottom in modulus-argument form separately, then DIVIDE the moduli and SUBTRACT the arguments.",
+          "steps": [
+            {
+              "explain": "Top: \\(1+\\sqrt{3}i\\) has modulus \\(\\sqrt{1+3}=2\\) and argument \\(\\tan^{-1}\\sqrt{3}=\\dfrac{\\pi}{3}\\).",
+              "work": "\\(1+\\sqrt{3}i=2\\left(\\cos\\dfrac{\\pi}{3}+i\\sin\\dfrac{\\pi}{3}\\right)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"16.0\" y1=\"200.0\" x2=\"308.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"239.0\" x2=\"90.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"308.0\" y1=\"200.0\" x2=\"301.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"308.0\" y1=\"200.0\" x2=\"301.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"24.0\" x2=\"86.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"24.0\" x2=\"94.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"304.0\" y=\"216.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"98.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"90.0\" y1=\"200.0\" x2=\"160.0\" y2=\"78.8\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"160.0\" cy=\"78.8\" r=\"4.6\" fill=\"#d97706\"/><text x=\"168.0\" y=\"74.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">1+√3i</text><line x1=\"90.0\" y1=\"200.0\" x2=\"160.0\" y2=\"130.0\" stroke=\"#047857\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"160.0\" cy=\"130.0\" r=\"4.6\" fill=\"#047857\"/><text x=\"168.0\" y=\"146.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">1+i</text></svg>"
+              }
+            },
+            {
+              "explain": "Bottom: \\(1+i\\) has modulus \\(\\sqrt{2}\\) and argument \\(\\dfrac{\\pi}{4}\\).",
+              "work": "\\(1+i=\\sqrt{2}\\left(\\cos\\dfrac{\\pi}{4}+i\\sin\\dfrac{\\pi}{4}\\right)\\)"
+            },
+            {
+              "explain": "Dividing complex numbers: divide the moduli and subtract the arguments.",
+              "work": "\\(\\dfrac{2}{\\sqrt{2}}=\\sqrt{2},\\qquad \\dfrac{\\pi}{3}-\\dfrac{\\pi}{4}=\\dfrac{4\\pi-3\\pi}{12}=\\dfrac{\\pi}{12}\\)"
+            },
+            {
+              "explain": "Write the result.",
+              "work": "\\(z=\\sqrt{2}\\left(\\cos\\dfrac{\\pi}{12}+i\\sin\\dfrac{\\pi}{12}\\right)\\)"
+            },
+            {
+              "explain": "Check numerically: \\(z=\\dfrac{(1+\\sqrt{3}i)(1-i)}{2}=\\dfrac{1+\\sqrt{3}}{2}+\\dfrac{\\sqrt{3}-1}{2}i=1.366+0.366i\\) and \\(\\sqrt{2}\\cos15^{\\circ}=1.366\\) ✓. Option B adds the arguments.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express",
+              "note": "Divide moduli, subtract arguments."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4425,6 +4717,70 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q13c",
+          "type": "mc",
+          "stem": "The complex number \\(z\\) is represented by the point \\(P\\). Given that \\(P\\) moves in a way such that \\(\\dfrac{z-2}{z-i}\\) is purely imaginary, sketch the locus of \\(P\\), show any intercepts and any key features. Which sketch is correct? (An open circle means the point is excluded.)",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 674 554\" width=\"100%\" height=\"auto\" style=\"max-width:674px;display:block;margin:0 auto\"><g transform=\"translate(3,3)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"270\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"37.0\" y1=\"242.8\" x2=\"37.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"242.8\" x2=\"95.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153.0\" y1=\"242.8\" x2=\"153.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"211.0\" y1=\"242.8\" x2=\"211.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.0\" y1=\"242.8\" x2=\"269.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"208.0\" x2=\"280.6\" y2=\"208.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"150.0\" x2=\"280.6\" y2=\"150.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"92.0\" x2=\"280.6\" y2=\"92.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"34.0\" x2=\"280.6\" y2=\"34.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"2.2\" y1=\"150.0\" x2=\"292.2\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"248.6\" x2=\"95.0\" y2=\"16.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"91.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"99.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"292.2\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"101.0\" y=\"14.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"153\" cy=\"121.0\" r=\"64.8\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"211\" cy=\"150\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"92\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"150\" r=\"5\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"221.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2</text><text x=\"83.0\" y=\"88.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"87.0\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(347,3)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"270\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"37.0\" y1=\"242.8\" x2=\"37.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"242.8\" x2=\"95.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153.0\" y1=\"242.8\" x2=\"153.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"211.0\" y1=\"242.8\" x2=\"211.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.0\" y1=\"242.8\" x2=\"269.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"208.0\" x2=\"280.6\" y2=\"208.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"150.0\" x2=\"280.6\" y2=\"150.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"92.0\" x2=\"280.6\" y2=\"92.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"34.0\" x2=\"280.6\" y2=\"34.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"2.2\" y1=\"150.0\" x2=\"292.2\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"248.6\" x2=\"95.0\" y2=\"16.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"91.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"99.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"292.2\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"101.0\" y=\"14.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"153\" cy=\"121.0\" r=\"64.8\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"211\" cy=\"150\" r=\"5\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"92\" r=\"5\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"150\" r=\"5\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"221.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2</text><text x=\"83.0\" y=\"88.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"87.0\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(3,287)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"270\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"37.0\" y1=\"242.8\" x2=\"37.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"242.8\" x2=\"95.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153.0\" y1=\"242.8\" x2=\"153.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"211.0\" y1=\"242.8\" x2=\"211.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.0\" y1=\"242.8\" x2=\"269.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"208.0\" x2=\"280.6\" y2=\"208.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"150.0\" x2=\"280.6\" y2=\"150.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"92.0\" x2=\"280.6\" y2=\"92.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"34.0\" x2=\"280.6\" y2=\"34.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"2.2\" y1=\"150.0\" x2=\"292.2\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"248.6\" x2=\"95.0\" y2=\"16.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"91.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"99.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"292.2\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"101.0\" y=\"14.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"60.2\" y1=\"74.6\" x2=\"257.4\" y2=\"173.2\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"211\" cy=\"150\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"92\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"221.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2</text><text x=\"83.0\" y=\"88.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(347,287)\"><rect x=\"-3\" y=\"-3\" width=\"330\" height=\"270\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"37.0\" y1=\"242.8\" x2=\"37.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"242.8\" x2=\"95.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153.0\" y1=\"242.8\" x2=\"153.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"211.0\" y1=\"242.8\" x2=\"211.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.0\" y1=\"242.8\" x2=\"269.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"208.0\" x2=\"280.6\" y2=\"208.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"150.0\" x2=\"280.6\" y2=\"150.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"92.0\" x2=\"280.6\" y2=\"92.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"34.0\" x2=\"280.6\" y2=\"34.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"2.2\" y1=\"150.0\" x2=\"292.2\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"248.6\" x2=\"95.0\" y2=\"16.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"91.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"99.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"292.2\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"101.0\" y=\"14.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"153\" cy=\"179.0\" r=\"64.8\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"211\" cy=\"150\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"208\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"150\" r=\"5\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"221.0\" y=\"142.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2</text><text x=\"83.0\" y=\"224.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−i</text><text x=\"87.0\" y=\"142.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Put \\(z=x+iy\\), multiply top and bottom by the conjugate of the denominator, and set the REAL part to zero. Then complete the square to get a circle, and exclude the points where the fraction is not purely imaginary (\\(z=2\\) gives 0, and \\(z=i\\) is undefined).",
+          "steps": [
+            {
+              "explain": "Let \\(z=x+iy\\) and multiply top and bottom by the conjugate of the denominator, \\(x-i(y-1)\\).",
+              "work": "\\(\\dfrac{z-2}{z-i}=\\dfrac{(x-2)+iy}{x+i(y-1)}\\times\\dfrac{x-i(y-1)}{x-i(y-1)}\\)"
+            },
+            {
+              "explain": "Real part of the numerator: \\((x-2)x+y(y-1)\\). The denominator \\(x^{2}+(y-1)^{2}\\) is real, so the fraction is purely imaginary when the real part is 0.",
+              "work": "\\(x(x-2)+y(y-1)=0\\ \\Rightarrow\\ x^{2}-2x+y^{2}-y=0\\)"
+            },
+            {
+              "explain": "Complete the square for \\(x\\) and \\(y\\): add \\(1\\) and \\(\\dfrac{1}{4}\\) to both sides.",
+              "work": "\\((x-1)^{2}+\\left(y-\\dfrac{1}{2}\\right)^{2}=\\dfrac{5}{4}=\\left(\\dfrac{\\sqrt{5}}{2}\\right)^{2}\\)"
+            },
+            {
+              "explain": "A circle with centre \\(\\left(1,\\dfrac{1}{2}\\right)\\) and radius \\(\\dfrac{\\sqrt{5}}{2}\\approx1.12\\). Intercepts: \\(y=0\\Rightarrow(x-1)^{2}=1\\Rightarrow x=0,2\\); \\(x=0\\Rightarrow\\left(y-\\dfrac{1}{2}\\right)^{2}=\\dfrac{1}{4}\\Rightarrow y=0,1\\). So it passes through \\(O\\), \\(2\\) and \\(i\\).",
+              "work": "\\((0,0),\\ (2,0),\\ (0,1)\\ \\text{on the circle}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 270\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"37.0\" y1=\"242.8\" x2=\"37.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"242.8\" x2=\"95.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"153.0\" y1=\"242.8\" x2=\"153.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"211.0\" y1=\"242.8\" x2=\"211.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"269.0\" y1=\"242.8\" x2=\"269.0\" y2=\"28.2\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"208.0\" x2=\"280.6\" y2=\"208.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"150.0\" x2=\"280.6\" y2=\"150.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"92.0\" x2=\"280.6\" y2=\"92.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"8.0\" y1=\"34.0\" x2=\"280.6\" y2=\"34.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"2.2\" y1=\"150.0\" x2=\"292.2\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"248.6\" x2=\"95.0\" y2=\"16.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.2\" y1=\"150.0\" x2=\"285.3\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"91.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"16.6\" x2=\"99.0\" y2=\"23.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"292.2\" y=\"166.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"101.0\" y=\"14.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"153\" cy=\"121.0\" r=\"64.8\" fill=\"#e0f2fe\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"211\" cy=\"150\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"92\" r=\"5\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"150\" r=\"5\" fill=\"#1e293b\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"221.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">2</text><text x=\"83.0\" y=\"88.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">i</text><text x=\"87.0\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"153.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">centre (1, ½)</text></svg>"
+              }
+            },
+            {
+              "explain": "Exclusions: at \\(z=2\\) the fraction is 0 (zero is not purely imaginary) and at \\(z=i\\) it is undefined. Draw OPEN circles at \\(2\\) and \\(i\\); \\(O\\) is included (there the value is \\(\\dfrac{-2}{-i}=-2i\\)).",
+              "work": "\\(\\text{open at }z=2\\text{ and }z=i\\)"
+            },
+            {
+              "explain": "Why not the others: B has closed points at \\(2\\) and \\(i\\); C is a straight line (the locus for \\(\\dfrac{z-2}{z-i}\\) being real); D is centred at \\(\\left(1,-\\dfrac{1}{2}\\right)\\).",
+              "work": "\\(\\text{Answer: graph }A\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "sketch the locus of",
+              "note": "Real part of the fraction equals zero gives a circle; exclude 2 and i."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }

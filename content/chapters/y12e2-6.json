@@ -1573,6 +1573,121 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q5",
+          "type": "mc",
+          "stem": "\\(\\int\\tan^{3}x\\,dx\\) can be evaluated as:",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{2}\\tan^{2}x-\\ln|\\cos x|+C\\)",
+            "\\(\\dfrac{1}{2}\\tan^{2}x+\\ln|\\cos x|+C\\)",
+            "\\(\\dfrac{1}{2}\\tan^{2}x+C\\)",
+            "\\(\\dfrac{1}{4}\\tan^{4}x+C\\)"
+          ],
+          "answer": 1,
+          "hint": "Split \\(\\tan^{3}x=\\tan x\\left(\\tan^{2}x\\right)=\\tan x(\\sec^{2}x-1)\\). One part is of the form \\(f\\,f'\\); the other is \\(\\int\\tan x\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Use the identity \\(\\tan^{2}x=\\sec^{2}x-1\\) to write \\(\\tan^{3}x=\\tan x\\sec^{2}x-\\tan x\\).",
+              "work": "\\(\\int\\tan^{3}x\\,dx=\\int\\tan x\\sec^{2}x\\,dx-\\int\\tan x\\,dx\\)"
+            },
+            {
+              "explain": "First integral: \\(\\dfrac{d}{dx}\\tan x=\\sec^{2}x\\), so with \\(u=\\tan x\\), \\(du=\\sec^{2}x\\,dx\\), \\(\\int u\\,du=\\dfrac{u^{2}}{2}\\).",
+              "work": "\\(\\int\\tan x\\sec^{2}x\\,dx=\\dfrac{\\tan^{2}x}{2}\\)"
+            },
+            {
+              "explain": "Second integral: \\(\\int\\tan x\\,dx=-\\ln|\\cos x|\\) (since \\(\\dfrac{d}{dx}\\cos x=-\\sin x\\)), so subtracting it gives \\(+\\ln|\\cos x|\\).",
+              "work": "\\(-\\int\\tan x\\,dx=+\\ln|\\cos x|\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\dfrac{1}{2}\\tan^{2}x+\\ln|\\cos x|+C\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\tan x\\sec^{2}x-\\tan x=\\tan x(\\sec^{2}x-1)=\\tan^{3}x\\) ✓. Option A has the wrong sign on the log; D wrongly uses the power rule on \\(\\tan x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "can be evaluated as",
+              "note": "Write tan cubed as tan times (sec squared minus 1)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q13b",
+          "type": "mc",
+          "stem": "Using an appropriate substitution, evaluate \\(\\displaystyle\\int\\dfrac{3}{x^{2}\\sqrt{x^{2}-9}}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\sqrt{x^{2}-9}}{3x}+C\\)",
+            "\\(\\dfrac{\\sqrt{x^{2}-9}}{9x}+C\\)",
+            "\\(\\dfrac{x}{3\\sqrt{x^{2}-9}}+C\\)",
+            "\\(-\\dfrac{\\sqrt{x^{2}-9}}{3x}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\sqrt{x^{2}-9}\\) suggests \\(x=3\\sec\\theta\\) (because \\(\\sec^{2}\\theta-1=\\tan^{2}\\theta\\)). Substitute, simplify, integrate, then use a right-angled triangle to go back to \\(x\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=3\\sec\\theta\\). Then \\(\\dfrac{dx}{d\\theta}=3\\sec\\theta\\tan\\theta\\), and \\(x^{2}-9=9\\sec^{2}\\theta-9=9\\tan^{2}\\theta\\), so \\(\\sqrt{x^{2}-9}=3\\tan\\theta\\) (taking \\(\\tan\\theta>0\\)).",
+              "work": "\\(x=3\\sec\\theta,\\quad dx=3\\sec\\theta\\tan\\theta\\,d\\theta,\\quad\\sqrt{x^{2}-9}=3\\tan\\theta\\)"
+            },
+            {
+              "explain": "Replace everything in the integral.",
+              "work": "\\(\\int\\dfrac{3\\cdot3\\sec\\theta\\tan\\theta}{9\\sec^{2}\\theta\\cdot3\\tan\\theta}d\\theta=\\int\\dfrac{9\\sec\\theta\\tan\\theta}{27\\sec^{2}\\theta\\tan\\theta}d\\theta\\)"
+            },
+            {
+              "explain": "Cancel \\(\\tan\\theta\\) and one \\(\\sec\\theta\\): \\(\\dfrac{9}{27}\\cdot\\dfrac{1}{\\sec\\theta}=\\dfrac{1}{3}\\cos\\theta\\).",
+              "work": "\\(=\\dfrac{1}{3}\\int\\cos\\theta\\,d\\theta=\\dfrac{1}{3}\\sin\\theta+C\\)"
+            },
+            {
+              "explain": "Go back to \\(x\\): \\(\\sec\\theta=\\dfrac{x}{3}\\) means hypotenuse \\(x\\), adjacent 3, so the opposite side is \\(\\sqrt{x^{2}-9}\\) (Pythagoras). Then \\(\\sin\\theta=\\dfrac{\\text{opp}}{\\text{hyp}}\\).",
+              "work": "\\(\\sin\\theta=\\dfrac{\\sqrt{x^{2}-9}}{x}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 230\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"60,190 250,190 250,50\" fill=\"#e0e7ff\" fill-opacity=\"0.6\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><polyline points=\"238,190 238,178 250,178\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"250.0\" y2=\"50.0\" stroke=\"#7c3aed\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"250.0\" y2=\"190.0\" stroke=\"#047857\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><line x1=\"250.0\" y1=\"190.0\" x2=\"250.0\" y2=\"50.0\" stroke=\"#dc2626\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><text x=\"143.0\" y=\"112.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x (hypotenuse)</text><text x=\"155.0\" y=\"212.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3 (adjacent)</text><text x=\"260.0\" y=\"120.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√(x²−9) (opposite)</text><path d=\"M100,190 A40,40 0 0 0 92.2,166.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"116.0\" y=\"176.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\dfrac{1}{3}\\cdot\\dfrac{\\sqrt{x^{2}-9}}{x}+C=\\dfrac{\\sqrt{x^{2}-9}}{3x}+C\\)"
+            },
+            {
+              "explain": "Check: differentiating \\(\\dfrac{\\sqrt{x^{2}-9}}{3x}\\) gives \\(\\dfrac{3}{x^{2}\\sqrt{x^{2}-9}}\\) ✓. Option B has 9 (a slip in \\(\\dfrac{1}{3}\\)), D has a wrong sign and C used \\(\\cos\\theta\\)'s reciprocal.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using an appropriate substitution, evaluate",
+              "note": "x = 3 sec theta, then a right-angled triangle to return to x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2549,6 +2664,56 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q12d1",
+          "type": "mc",
+          "stem": "Determine the values \\(a,b\\) and \\(c\\) such that \\(\\dfrac{1}{x(1+x^{2})}\\equiv\\dfrac{a}{x}+\\dfrac{bx+c}{1+x^{2}}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=1,\\ b=-1,\\ c=0\\)",
+            "\\(a=1,\\ b=1,\\ c=0\\)",
+            "\\(a=-1,\\ b=1,\\ c=0\\)",
+            "\\(a=1,\\ b=-1,\\ c=1\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\(x(1+x^{2})\\) to clear the fractions, expand, and EQUATE COEFFICIENTS of \\(x^{2}\\), \\(x\\) and the constant (it is an identity: true for all \\(x\\)).",
+          "steps": [
+            {
+              "explain": "Put the right side over the common denominator \\(x(1+x^{2})\\).",
+              "work": "\\(\\dfrac{a}{x}+\\dfrac{bx+c}{1+x^{2}}=\\dfrac{a(1+x^{2})+x(bx+c)}{x(1+x^{2})}\\)"
+            },
+            {
+              "explain": "The denominators are equal, so the numerators are equal for all \\(x\\). Expand.",
+              "work": "\\(1\\equiv a+ax^{2}+bx^{2}+cx=(a+b)x^{2}+cx+a\\)"
+            },
+            {
+              "explain": "Equate coefficients. Constant term: \\(a=1\\). Coefficient of \\(x\\): \\(c=0\\). Coefficient of \\(x^{2}\\): \\(a+b=0\\).",
+              "work": "\\(a=1,\\quad c=0,\\quad a+b=0\\Rightarrow b=-1\\)"
+            },
+            {
+              "explain": "Check at \\(x=1\\): left \\(\\dfrac{1}{1\\cdot2}=\\dfrac{1}{2}\\); right \\(\\dfrac{1}{1}+\\dfrac{-1}{2}=\\dfrac{1}{2}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine the values",
+              "note": "Clear the fractions and equate coefficients."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3866,6 +4031,121 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q12d2",
+          "type": "mc",
+          "stem": "Hence, find \\(\\displaystyle\\int\\dfrac{\\arctan x}{x^{2}}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac{\\tan^{-1}x}{x}+\\ln|x|-\\dfrac{1}{2}\\ln\\left(1+x^{2}\\right)+C\\)",
+            "\\(-\\dfrac{\\tan^{-1}x}{x}-\\ln|x|+\\dfrac{1}{2}\\ln\\left(1+x^{2}\\right)+C\\)",
+            "\\(\\dfrac{\\tan^{-1}x}{x}+\\ln|x|-\\dfrac{1}{2}\\ln\\left(1+x^{2}\\right)+C\\)",
+            "\\(-\\dfrac{\\tan^{-1}x}{x}+\\ln|x|-\\ln\\left(1+x^{2}\\right)+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integration by parts with \\(u=\\tan^{-1}x\\) and \\(v'=\\dfrac{1}{x^{2}}\\). The new integral is \\(\\int\\dfrac{1}{x(1+x^{2})}dx\\), which is exactly part (i).",
+          "steps": [
+            {
+              "explain": "Choose \\(u=\\tan^{-1}x\\) (it gets simpler when differentiated) and \\(v'=\\dfrac{1}{x^{2}}\\).",
+              "work": "\\(u=\\tan^{-1}x,\\ u'=\\dfrac{1}{1+x^{2}};\\qquad v'=\\dfrac{1}{x^{2}},\\ v=-\\dfrac{1}{x}\\)"
+            },
+            {
+              "explain": "By parts: \\(\\int uv'dx=uv-\\int u'v\\,dx\\).",
+              "work": "\\(\\int\\dfrac{\\tan^{-1}x}{x^{2}}dx=-\\dfrac{\\tan^{-1}x}{x}+\\int\\dfrac{1}{x(1+x^{2})}dx\\)"
+            },
+            {
+              "explain": "Use part (i): \\(\\dfrac{1}{x(1+x^{2})}=\\dfrac{1}{x}-\\dfrac{x}{1+x^{2}}\\).",
+              "work": "\\(=-\\dfrac{\\tan^{-1}x}{x}+\\int\\dfrac{1}{x}-\\dfrac{x}{1+x^{2}}\\,dx\\)"
+            },
+            {
+              "explain": "\\(\\int\\dfrac{1}{x}dx=\\ln|x|\\) and \\(\\int\\dfrac{x}{1+x^{2}}dx=\\dfrac{1}{2}\\ln(1+x^{2})\\) (the numerator is half the derivative of the denominator).",
+              "work": "\\(=-\\dfrac{\\tan^{-1}x}{x}+\\ln|x|-\\dfrac{1}{2}\\ln\\left(1+x^{2}\\right)+C\\)"
+            },
+            {
+              "explain": "Why not the others: B flips the signs of both log terms; C has the wrong sign on the first term (\\(v=-\\dfrac{1}{x}\\)); D forgets the \\(\\dfrac{1}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, find",
+              "note": "Integration by parts with arctan as u; the leftover integral is part (i)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q15a",
+          "type": "mc",
+          "stem": "Find the exact area bounded by the curve \\(y=2x\\ln x\\), the \\(x\\)-axis and the lines \\(x=\\dfrac{1}{e}\\) and \\(x=e\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{e^{2}}{2}+1-\\dfrac{3}{2e^{2}}\\)",
+            "\\(\\dfrac{e^{2}}{2}+\\dfrac{3}{2e^{2}}\\)",
+            "\\(\\dfrac{e^{2}}{2}+\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{e^{2}}{2}-1+\\dfrac{3}{2e^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "First find where the curve crosses the \\(x\\)-axis (\\(\\ln x=0\\), \\(x=1\\)). The curve is BELOW the axis on \\(\\left(\\dfrac{1}{e},1\\right)\\) and ABOVE on \\((1,e)\\): find the two areas separately (count the below-axis area as positive) and add them. Use integration by parts for \\(\\int2x\\ln x\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Where does \\(y=0\\)? \\(2x\\ln x=0\\Rightarrow x=0\\) or \\(\\ln x=0\\), so \\(x=1\\). For \\(\\dfrac{1}{e}<x<1\\), \\(\\ln x<0\\) so \\(y<0\\) (red region, below the axis); for \\(1<x<e\\), \\(y>0\\) (green region).",
+              "work": "\\(x=1\\ \\text{(crossing)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"71.3,220.6 71.8,220.6 72.3,220.6 72.9,220.6 73.4,220.6 74.0,220.5 74.5,220.5 75.0,220.5 75.6,220.4 76.1,220.4 76.6,220.3 77.2,220.3 77.7,220.2 78.3,220.1 78.8,220.0 79.3,220.0 79.9,219.9 80.4,219.8 80.9,219.7 81.5,219.6 82.0,219.5 82.6,219.4 83.1,219.3 83.6,219.2 84.2,219.1 84.7,218.9 85.2,218.8 85.8,218.7 86.3,218.5 86.9,218.4 87.4,218.2 87.9,218.1 88.5,217.9 89.0,217.8 89.5,217.6 90.1,217.5 90.6,217.3 91.1,217.1 91.7,216.9 92.2,216.8 92.8,216.6 93.3,216.4 93.8,216.2 94.4,216.0 94.9,215.8 95.4,215.6 96.0,215.4 96.5,215.2 97.1,215.0 97.6,214.8 98.1,214.5 98.7,214.3 99.2,214.1 99.7,213.9 100.3,213.6 100.8,213.4 101.4,213.2 101.9,212.9 102.4,212.7 103.0,212.4 103.5,212.2 104.0,211.9 104.6,211.7 105.1,211.4 105.7,211.2 106.2,210.9 106.7,210.6 107.3,210.4 107.8,210.1 108.3,209.8 108.9,209.5 109.4,209.3 110.0,209.0 110.5,208.7 111.0,208.4 111.6,208.1 112.1,207.8 112.6,207.5 113.2,207.2 113.7,206.9 114.3,206.6 114.8,206.3 115.3,206.0 115.9,205.7 116.4,205.4 116.9,205.0 117.5,204.7 118.0,204.4 118.6,204.1 119.1,203.8 119.6,203.4 120.2,203.1 120.7,202.8 121.2,202.4 121.8,202.1 122.3,201.7 122.9,201.4 123.4,201.1 123.9,200.7 124.5,200.4 125.0,200.0 125.0,200.0 71.3,200.0\" fill=\"#fecaca\" fill-opacity=\"0.9\"/><polygon points=\"125.0,200.0 125.7,199.5 126.5,199.0 127.2,198.5 127.9,198.0 128.7,197.5 129.4,197.0 130.1,196.5 130.8,196.0 131.6,195.5 132.3,195.0 133.0,194.5 133.8,193.9 134.5,193.4 135.2,192.9 136.0,192.3 136.7,191.8 137.4,191.3 138.1,190.7 138.9,190.2 139.6,189.6 140.3,189.0 141.1,188.5 141.8,187.9 142.5,187.3 143.3,186.8 144.0,186.2 144.7,185.6 145.4,185.0 146.2,184.4 146.9,183.8 147.6,183.3 148.4,182.7 149.1,182.1 149.8,181.5 150.6,180.9 151.3,180.2 152.0,179.6 152.8,179.0 153.5,178.4 154.2,177.8 154.9,177.1 155.7,176.5 156.4,175.9 157.1,175.3 157.9,174.6 158.6,174.0 159.3,173.3 160.1,172.7 160.8,172.0 161.5,171.4 162.2,170.7 163.0,170.1 163.7,169.4 164.4,168.8 165.2,168.1 165.9,167.4 166.6,166.7 167.4,166.1 168.1,165.4 168.8,164.7 169.5,164.0 170.3,163.4 171.0,162.7 171.7,162.0 172.5,161.3 173.2,160.6 173.9,159.9 174.7,159.2 175.4,158.5 176.1,157.8 176.8,157.1 177.6,156.4 178.3,155.6 179.0,154.9 179.8,154.2 180.5,153.5 181.2,152.8 182.0,152.0 182.7,151.3 183.4,150.6 184.2,149.8 184.9,149.1 185.6,148.4 186.3,147.6 187.1,146.9 187.8,146.1 188.5,145.4 189.3,144.6 190.0,143.9 190.7,143.1 191.5,142.4 192.2,141.6 192.9,140.8 193.6,140.1 194.4,139.3 195.1,138.5 195.8,137.8 196.6,137.0 197.3,136.2 198.0,135.4 198.8,134.7 199.5,133.9 200.2,133.1 200.9,132.3 201.7,131.5 202.4,130.7 203.1,129.9 203.9,129.1 204.6,128.3 205.3,127.5 206.1,126.7 206.8,125.9 207.5,125.1 208.3,124.3 209.0,123.5 209.7,122.7 210.4,121.9 211.2,121.1 211.9,120.2 212.6,119.4 213.4,118.6 214.1,117.8 214.8,116.9 215.6,116.1 216.3,115.3 217.0,114.4 217.7,113.6 218.5,112.8 219.2,111.9 219.9,111.1 220.7,110.3 221.4,109.4 222.1,108.6 222.9,107.7 223.6,106.9 224.3,106.0 225.0,105.2 225.8,104.3 226.5,103.4 227.2,102.6 228.0,101.7 228.7,100.9 229.4,100.0 230.2,99.1 230.9,98.3 231.6,97.4 232.3,96.5 233.1,95.6 233.8,94.8 234.5,93.9 235.3,93.0 236.0,92.1 236.7,91.2 237.5,90.3 238.2,89.5 238.9,88.6 239.7,87.7 240.4,86.8 241.1,85.9 241.8,85.0 242.6,84.1 243.3,83.2 244.0,82.3 244.8,81.4 245.5,80.5 246.2,79.6 247.0,78.7 247.7,77.8 248.4,76.8 249.1,75.9 249.9,75.0 250.6,74.1 251.3,73.2 252.1,72.3 252.8,71.3 253.5,70.4 254.3,69.5 255.0,68.6 255.7,67.6 256.4,66.7 257.2,65.8 257.9,64.8 258.6,63.9 259.4,63.0 260.1,62.0 260.8,61.1 261.6,60.2 262.3,59.2 263.0,58.3 263.8,57.3 264.5,56.4 265.2,55.4 265.9,54.5 266.7,53.5 267.4,52.6 268.1,51.6 268.9,50.7 269.6,49.7 270.3,48.7 271.1,47.8 271.1,200.0 270.3,200.0 269.6,200.0 268.9,200.0 268.1,200.0 267.4,200.0 266.7,200.0 265.9,200.0 265.2,200.0 264.5,200.0 263.8,200.0 263.0,200.0 262.3,200.0 261.6,200.0 260.8,200.0 260.1,200.0 259.4,200.0 258.6,200.0 257.9,200.0 257.2,200.0 256.4,200.0 255.7,200.0 255.0,200.0 254.3,200.0 253.5,200.0 252.8,200.0 252.1,200.0 251.3,200.0 250.6,200.0 249.9,200.0 249.1,200.0 248.4,200.0 247.7,200.0 247.0,200.0 246.2,200.0 245.5,200.0 244.8,200.0 244.0,200.0 243.3,200.0 242.6,200.0 241.8,200.0 241.1,200.0 240.4,200.0 239.7,200.0 238.9,200.0 238.2,200.0 237.5,200.0 236.7,200.0 236.0,200.0 235.3,200.0 234.5,200.0 233.8,200.0 233.1,200.0 232.3,200.0 231.6,200.0 230.9,200.0 230.2,200.0 229.4,200.0 228.7,200.0 228.0,200.0 227.2,200.0 226.5,200.0 225.8,200.0 225.0,200.0 224.3,200.0 223.6,200.0 222.9,200.0 222.1,200.0 221.4,200.0 220.7,200.0 219.9,200.0 219.2,200.0 218.5,200.0 217.7,200.0 217.0,200.0 216.3,200.0 215.6,200.0 214.8,200.0 214.1,200.0 213.4,200.0 212.6,200.0 211.9,200.0 211.2,200.0 210.4,200.0 209.7,200.0 209.0,200.0 208.3,200.0 207.5,200.0 206.8,200.0 206.1,200.0 205.3,200.0 204.6,200.0 203.9,200.0 203.1,200.0 202.4,200.0 201.7,200.0 200.9,200.0 200.2,200.0 199.5,200.0 198.8,200.0 198.0,200.0 197.3,200.0 196.6,200.0 195.8,200.0 195.1,200.0 194.4,200.0 193.6,200.0 192.9,200.0 192.2,200.0 191.5,200.0 190.7,200.0 190.0,200.0 189.3,200.0 188.5,200.0 187.8,200.0 187.1,200.0 186.3,200.0 185.6,200.0 184.9,200.0 184.2,200.0 183.4,200.0 182.7,200.0 182.0,200.0 181.2,200.0 180.5,200.0 179.8,200.0 179.0,200.0 178.3,200.0 177.6,200.0 176.8,200.0 176.1,200.0 175.4,200.0 174.7,200.0 173.9,200.0 173.2,200.0 172.5,200.0 171.7,200.0 171.0,200.0 170.3,200.0 169.5,200.0 168.8,200.0 168.1,200.0 167.4,200.0 166.6,200.0 165.9,200.0 165.2,200.0 164.4,200.0 163.7,200.0 163.0,200.0 162.2,200.0 161.5,200.0 160.8,200.0 160.1,200.0 159.3,200.0 158.6,200.0 157.9,200.0 157.1,200.0 156.4,200.0 155.7,200.0 154.9,200.0 154.2,200.0 153.5,200.0 152.8,200.0 152.0,200.0 151.3,200.0 150.6,200.0 149.8,200.0 149.1,200.0 148.4,200.0 147.6,200.0 146.9,200.0 146.2,200.0 145.4,200.0 144.7,200.0 144.0,200.0 143.3,200.0 142.5,200.0 141.8,200.0 141.1,200.0 140.3,200.0 139.6,200.0 138.9,200.0 138.1,200.0 137.4,200.0 136.7,200.0 136.0,200.0 135.2,200.0 134.5,200.0 133.8,200.0 133.0,200.0 132.3,200.0 131.6,200.0 130.8,200.0 130.1,200.0 129.4,200.0 128.7,200.0 127.9,200.0 127.2,200.0 126.5,200.0 125.7,200.0 125.0,200.0\" fill=\"#bbf7d0\" fill-opacity=\"0.85\"/><line x1=\"44.2\" y1=\"200.0\" x2=\"296.5\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"243.2\" x2=\"40.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"200.0\" x2=\"289.6\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"200.0\" x2=\"289.6\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"24.0\" x2=\"36.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"24.0\" x2=\"44.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"294.5\" y=\"192.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"50.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"50.2,214.2 50.8,214.7 51.4,215.1 52.0,215.5 52.6,215.8 53.2,216.2 53.7,216.5 54.3,216.8 54.9,217.1 55.5,217.4 56.1,217.7 56.7,217.9 57.3,218.1 57.9,218.4 58.5,218.6 59.1,218.8 59.7,219.0 60.2,219.1 60.8,219.3 61.4,219.5 62.0,219.6 62.6,219.7 63.2,219.8 63.8,220.0 64.4,220.1 65.0,220.2 65.6,220.2 66.2,220.3 66.7,220.4 67.3,220.4 67.9,220.5 68.5,220.5 69.1,220.6 69.7,220.6 70.3,220.6 70.9,220.6 71.5,220.6 72.1,220.6 72.6,220.6 73.2,220.6 73.8,220.5 74.4,220.5 75.0,220.5 75.6,220.4 76.2,220.4 76.8,220.3 77.4,220.2 78.0,220.2 78.6,220.1 79.1,220.0 79.7,219.9 80.3,219.8 80.9,219.7 81.5,219.6 82.1,219.5 82.7,219.4 83.3,219.2 83.9,219.1 84.5,219.0 85.1,218.8 85.6,218.7 86.2,218.5 86.8,218.4 87.4,218.2 88.0,218.1 88.6,217.9 89.2,217.7 89.8,217.5 90.4,217.4 91.0,217.2 91.6,217.0 92.1,216.8 92.7,216.6 93.3,216.4 93.9,216.2 94.5,216.0 95.1,215.7 95.7,215.5 96.3,215.3 96.9,215.1 97.5,214.8 98.1,214.6 98.6,214.3 99.2,214.1 99.8,213.8 100.4,213.6 101.0,213.3 101.6,213.1 102.2,212.8 102.8,212.5 103.4,212.3 104.0,212.0 104.5,211.7 105.1,211.4 105.7,211.1 106.3,210.8 106.9,210.5 107.5,210.3 108.1,209.9 108.7,209.6 109.3,209.3 109.9,209.0 110.5,208.7 111.0,208.4 111.6,208.1 112.2,207.7 112.8,207.4 113.4,207.1 114.0,206.8 114.6,206.4 115.2,206.1 115.8,205.7 116.4,205.4 117.0,205.0 117.5,204.7 118.1,204.3 118.7,204.0 119.3,203.6 119.9,203.3 120.5,202.9 121.1,202.5 121.7,202.1 122.3,201.8 122.9,201.4 123.5,201.0 124.0,200.6 124.6,200.2 125.2,199.9 125.8,199.5 126.4,199.1 127.0,198.7 127.6,198.3 128.2,197.9 128.8,197.5 129.4,197.1 130.0,196.6 130.5,196.2 131.1,195.8 131.7,195.4 132.3,195.0 132.9,194.6 133.5,194.1 134.1,193.7 134.7,193.3 135.3,192.8 135.9,192.4 136.4,192.0 137.0,191.5 137.6,191.1 138.2,190.6 138.8,190.2 139.4,189.7 140.0,189.3 140.6,188.8 141.2,188.4 141.8,187.9 142.4,187.5 142.9,187.0 143.5,186.5 144.1,186.1 144.7,185.6 145.3,185.1 145.9,184.7 146.5,184.2 147.1,183.7 147.7,183.2 148.3,182.7 148.9,182.3 149.4,181.8 150.0,181.3 150.6,180.8 151.2,180.3 151.8,179.8 152.4,179.3 153.0,178.8 153.6,178.3 154.2,177.8 154.8,177.3 155.4,176.8 155.9,176.3 156.5,175.8 157.1,175.3 157.7,174.7 158.3,174.2 158.9,173.7 159.5,173.2 160.1,172.7 160.7,172.1 161.3,171.6 161.9,171.1 162.4,170.6 163.0,170.0 163.6,169.5 164.2,169.0 164.8,168.4 165.4,167.9 166.0,167.3 166.6,166.8 167.2,166.2 167.8,165.7 168.3,165.2 168.9,164.6 169.5,164.0 170.1,163.5 170.7,162.9 171.3,162.4 171.9,161.8 172.5,161.3 173.1,160.7 173.7,160.1 174.3,159.6 174.8,159.0 175.4,158.4 176.0,157.9 176.6,157.3 177.2,156.7 177.8,156.1 178.4,155.6 179.0,155.0 179.6,154.4 180.2,153.8 180.8,153.2 181.3,152.6 181.9,152.1 182.5,151.5 183.1,150.9 183.7,150.3 184.3,149.7 184.9,149.1 185.5,148.5 186.1,147.9 186.7,147.3 187.3,146.7 187.8,146.1 188.4,145.5 189.0,144.9 189.6,144.3 190.2,143.7 190.8,143.0 191.4,142.4 192.0,141.8 192.6,141.2 193.2,140.6 193.8,140.0 194.3,139.3 194.9,138.7 195.5,138.1 196.1,137.5 196.7,136.8 197.3,136.2 197.9,135.6 198.5,135.0 199.1,134.3 199.7,133.7 200.3,133.1 200.8,132.4 201.4,131.8 202.0,131.1 202.6,130.5 203.2,129.9 203.8,129.2 204.4,128.6 205.0,127.9 205.6,127.3 206.2,126.6 206.7,126.0 207.3,125.3 207.9,124.7 208.5,124.0 209.1,123.4 209.7,122.7 210.3,122.0 210.9,121.4 211.5,120.7 212.1,120.1 212.7,119.4 213.2,118.7 213.8,118.1 214.4,117.4 215.0,116.7 215.6,116.0 216.2,115.4 216.8,114.7 217.4,114.0 218.0,113.4 218.6,112.7 219.2,112.0 219.7,111.3 220.3,110.6 220.9,110.0 221.5,109.3 222.1,108.6 222.7,107.9 223.3,107.2 223.9,106.5 224.5,105.8 225.1,105.1 225.7,104.4 226.2,103.8 226.8,103.1 227.4,102.4 228.0,101.7 228.6,101.0 229.2,100.3 229.8,99.6 230.4,98.9 231.0,98.2 231.6,97.5 232.2,96.7 232.7,96.0 233.3,95.3 233.9,94.6 234.5,93.9 235.1,93.2 235.7,92.5 236.3,91.8 236.9,91.1 237.5,90.3 238.1,89.6 238.6,88.9 239.2,88.2 239.8,87.5 240.4,86.7 241.0,86.0 241.6,85.3 242.2,84.6 242.8,83.8 243.4,83.1 244.0,82.4 244.6,81.6 245.1,80.9 245.7,80.2 246.3,79.5 246.9,78.7 247.5,78.0 248.1,77.2 248.7,76.5 249.3,75.8 249.9,75.0 250.5,74.3 251.1,73.5 251.6,72.8 252.2,72.1 252.8,71.3 253.4,70.6 254.0,69.8 254.6,69.1 255.2,68.3 255.8,67.6 256.4,66.8 257.0,66.1 257.6,65.3 258.1,64.5 258.7,63.8 259.3,63.0 259.9,62.3 260.5,61.5 261.1,60.8 261.7,60.0 262.3,59.2 262.9,58.5 263.5,57.7 264.1,56.9 264.6,56.2 265.2,55.4 265.8,54.6 266.4,53.9 267.0,53.1 267.6,52.3 268.2,51.5 268.8,50.8 269.4,50.0 270.0,49.2 270.5,48.4 271.1,47.7 271.7,46.9 272.3,46.1 272.9,45.3 273.5,44.5 274.1,43.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125.0\" y1=\"196.0\" x2=\"125.0\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"125.0\" y=\"217.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"210.0\" y1=\"196.0\" x2=\"210.0\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"217.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"36.0\" y1=\"144.0\" x2=\"44.0\" y2=\"144.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"31.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"36.0\" y1=\"88.0\" x2=\"44.0\" y2=\"88.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"31.0\" y=\"92.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"92.7\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A₁ (below axis)</text><text x=\"210.0\" y=\"158.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A₂ (above)</text><text x=\"71.3\" y=\"234.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = 1/e</text><text x=\"271.1\" y=\"217.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">e</text></svg>"
+              }
+            },
+            {
+              "explain": "Antiderivative by parts: \\(u=\\ln x,\\ v'=2x\\), so \\(u'=\\dfrac{1}{x},\\ v=x^{2}\\).",
+              "work": "\\(\\int2x\\ln x\\,dx=x^{2}\\ln x-\\int x^{2}\\cdot\\dfrac{1}{x}dx=x^{2}\\ln x-\\dfrac{x^{2}}{2}\\)"
+            },
+            {
+              "explain": "Region below the axis, from \\(\\dfrac{1}{e}\\) to 1: evaluate the antiderivative \\(F(x)=x^{2}\\ln x-\\dfrac{x^{2}}{2}\\). \\(F(1)=0-\\dfrac{1}{2}=-\\dfrac{1}{2}\\); \\(F\\left(\\dfrac{1}{e}\\right)=\\dfrac{1}{e^{2}}(-1)-\\dfrac{1}{2e^{2}}=-\\dfrac{3}{2e^{2}}\\).",
+              "work": "\\(\\int_{\\frac{1}{e}}^{1}2x\\ln x\\,dx=-\\dfrac{1}{2}+\\dfrac{3}{2e^{2}}\\ \\ (\\text{negative})\\ \\Rightarrow\\ A_{1}=\\dfrac{1}{2}-\\dfrac{3}{2e^{2}}\\)"
+            },
+            {
+              "explain": "Region above the axis, from 1 to \\(e\\): \\(F(e)=e^{2}(1)-\\dfrac{e^{2}}{2}=\\dfrac{e^{2}}{2}\\) and \\(F(1)=-\\dfrac{1}{2}\\).",
+              "work": "\\(A_{2}=\\dfrac{e^{2}}{2}-\\left(-\\dfrac{1}{2}\\right)=\\dfrac{e^{2}}{2}+\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Total area \\(=A_{1}+A_{2}\\) (areas are positive).",
+              "work": "\\(A=\\dfrac{1}{2}-\\dfrac{3}{2e^{2}}+\\dfrac{e^{2}}{2}+\\dfrac{1}{2}=\\dfrac{e^{2}}{2}+1-\\dfrac{3}{2e^{2}}\\approx4.49\\)"
+            },
+            {
+              "explain": "Why not the others: B is the SIGNED integral \\(\\int_{\\frac{1}{e}}^{e}\\) (the below-axis part cancels); C leaves out \\(A_{1}\\); D has the wrong signs.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact area bounded by the curve",
+              "note": "Split at the x-intercept x = 1 and add the two areas as positives; use integration by parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4204,6 +4484,59 @@
               ]
             }
           ]
+        },
+        {
+          "id": "glenwood2023-y12e2-q14c3",
+          "type": "mc",
+          "stem": "Hence, evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\cos^{4}\\theta\\,d\\theta\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{3\\pi}{16}\\)",
+            "\\(\\dfrac{3\\pi}{8}\\)",
+            "\\(\\dfrac{3\\pi}{32}\\)",
+            "\\(\\dfrac{\\pi}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(\\cos^{4}\\theta\\) by the identity from part (ii), then integrate term by term: \\(\\int\\cos k\\theta\\,d\\theta=\\dfrac{\\sin k\\theta}{k}\\).",
+          "steps": [
+            {
+              "explain": "Use \\(\\cos^{4}\\theta=\\dfrac{1}{8}\\cos4\\theta+\\dfrac{1}{2}\\cos2\\theta+\\dfrac{3}{8}\\).",
+              "work": "\\(\\int_{0}^{\\frac{\\pi}{2}}\\cos^{4}\\theta\\,d\\theta=\\int_{0}^{\\frac{\\pi}{2}}\\left(\\dfrac{1}{8}\\cos4\\theta+\\dfrac{1}{2}\\cos2\\theta+\\dfrac{3}{8}\\right)d\\theta\\)"
+            },
+            {
+              "explain": "Integrate each term (divide by the coefficient of \\(\\theta\\)).",
+              "work": "\\(=\\left[\\dfrac{\\sin4\\theta}{32}+\\dfrac{\\sin2\\theta}{4}+\\dfrac{3}{8}\\theta\\right]_{0}^{\\frac{\\pi}{2}}\\)"
+            },
+            {
+              "explain": "Upper limit \\(\\theta=\\dfrac{\\pi}{2}\\): \\(\\sin2\\pi=0\\), \\(\\sin\\pi=0\\), \\(\\dfrac{3}{8}\\cdot\\dfrac{\\pi}{2}=\\dfrac{3\\pi}{16}\\). Lower limit \\(\\theta=0\\): everything is 0.",
+              "work": "\\(=\\left(0+0+\\dfrac{3\\pi}{16}\\right)-0=\\dfrac{3\\pi}{16}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 260\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"40.0,40.0 41.2,40.0 42.4,40.1 43.5,40.2 44.7,40.3 45.9,40.5 47.1,40.7 48.2,41.0 49.4,41.3 50.6,41.6 51.8,42.0 53.0,42.4 54.1,42.8 55.3,43.3 56.5,43.8 57.7,44.4 58.8,45.0 60.0,45.6 61.2,46.3 62.4,47.0 63.6,47.7 64.7,48.5 65.9,49.3 67.1,50.2 68.3,51.0 69.5,51.9 70.6,52.9 71.8,53.9 73.0,54.9 74.2,55.9 75.3,57.0 76.5,58.1 77.7,59.2 78.9,60.3 80.1,61.5 81.2,62.7 82.4,63.9 83.6,65.2 84.8,66.5 85.9,67.8 87.1,69.1 88.3,70.4 89.5,71.8 90.7,73.2 91.8,74.6 93.0,76.0 94.2,77.5 95.4,78.9 96.5,80.4 97.7,81.9 98.9,83.4 100.1,85.0 101.3,86.5 102.4,88.0 103.6,89.6 104.8,91.2 106.0,92.8 107.2,94.3 108.3,95.9 109.5,97.5 110.7,99.2 111.9,100.8 113.0,102.4 114.2,104.0 115.4,105.6 116.6,107.3 117.8,108.9 118.9,110.5 120.1,112.2 121.3,113.8 122.5,115.4 123.6,117.1 124.8,118.7 126.0,120.3 127.2,121.9 128.4,123.5 129.5,125.1 130.7,126.7 131.9,128.3 133.1,129.9 134.2,131.5 135.4,133.0 136.6,134.6 137.8,136.1 139.0,137.6 140.1,139.1 141.3,140.6 142.5,142.1 143.7,143.6 144.9,145.1 146.0,146.5 147.2,147.9 148.4,149.3 149.6,150.7 150.7,152.1 151.9,153.5 153.1,154.8 154.3,156.1 155.5,157.4 156.6,158.7 157.8,160.0 159.0,161.2 160.2,162.5 161.3,163.7 162.5,164.9 163.7,166.0 164.9,167.2 166.1,168.3 167.2,169.4 168.4,170.5 169.6,171.5 170.8,172.6 171.9,173.6 173.1,174.6 174.3,175.5 175.5,176.5 176.7,177.4 177.8,178.3 179.0,179.2 180.2,180.1 181.4,180.9 182.5,181.7 183.7,182.5 184.9,183.3 186.1,184.0 187.3,184.8 188.4,185.5 189.6,186.1 190.8,186.8 192.0,187.5 193.2,188.1 194.3,188.7 195.5,189.3 196.7,189.8 197.9,190.4 199.0,190.9 200.2,191.4 201.4,191.9 202.6,192.3 203.8,192.8 204.9,193.2 206.1,193.6 207.3,194.0 208.5,194.4 209.6,194.7 210.8,195.1 212.0,195.4 213.2,195.7 214.4,196.0 215.5,196.3 216.7,196.6 217.9,196.8 219.1,197.1 220.2,197.3 221.4,197.5 222.6,197.7 223.8,197.9 225.0,198.1 226.1,198.2 227.3,198.4 228.5,198.5 229.7,198.7 230.9,198.8 232.0,198.9 233.2,199.0 234.4,199.1 235.6,199.2 236.7,199.3 237.9,199.4 239.1,199.5 240.3,199.5 241.5,199.6 242.6,199.6 243.8,199.7 245.0,199.7 246.2,199.8 247.3,199.8 248.5,199.8 249.7,199.9 250.9,199.9 252.1,199.9 253.2,199.9 254.4,199.9 255.6,199.9 256.8,200.0 257.9,200.0 259.1,200.0 260.3,200.0 261.5,200.0 262.7,200.0 263.8,200.0 265.0,200.0 266.2,200.0 267.4,200.0 268.6,200.0 269.7,200.0 270.9,200.0 272.1,200.0 273.3,200.0 274.4,200.0 275.6,200.0 275.6,200.0 274.4,200.0 273.3,200.0 272.1,200.0 270.9,200.0 269.7,200.0 268.6,200.0 267.4,200.0 266.2,200.0 265.0,200.0 263.8,200.0 262.7,200.0 261.5,200.0 260.3,200.0 259.1,200.0 257.9,200.0 256.8,200.0 255.6,200.0 254.4,200.0 253.2,200.0 252.1,200.0 250.9,200.0 249.7,200.0 248.5,200.0 247.3,200.0 246.2,200.0 245.0,200.0 243.8,200.0 242.6,200.0 241.5,200.0 240.3,200.0 239.1,200.0 237.9,200.0 236.7,200.0 235.6,200.0 234.4,200.0 233.2,200.0 232.0,200.0 230.9,200.0 229.7,200.0 228.5,200.0 227.3,200.0 226.1,200.0 225.0,200.0 223.8,200.0 222.6,200.0 221.4,200.0 220.2,200.0 219.1,200.0 217.9,200.0 216.7,200.0 215.5,200.0 214.4,200.0 213.2,200.0 212.0,200.0 210.8,200.0 209.6,200.0 208.5,200.0 207.3,200.0 206.1,200.0 204.9,200.0 203.8,200.0 202.6,200.0 201.4,200.0 200.2,200.0 199.0,200.0 197.9,200.0 196.7,200.0 195.5,200.0 194.3,200.0 193.2,200.0 192.0,200.0 190.8,200.0 189.6,200.0 188.4,200.0 187.3,200.0 186.1,200.0 184.9,200.0 183.7,200.0 182.5,200.0 181.4,200.0 180.2,200.0 179.0,200.0 177.8,200.0 176.7,200.0 175.5,200.0 174.3,200.0 173.1,200.0 171.9,200.0 170.8,200.0 169.6,200.0 168.4,200.0 167.2,200.0 166.1,200.0 164.9,200.0 163.7,200.0 162.5,200.0 161.3,200.0 160.2,200.0 159.0,200.0 157.8,200.0 156.6,200.0 155.5,200.0 154.3,200.0 153.1,200.0 151.9,200.0 150.7,200.0 149.6,200.0 148.4,200.0 147.2,200.0 146.0,200.0 144.9,200.0 143.7,200.0 142.5,200.0 141.3,200.0 140.1,200.0 139.0,200.0 137.8,200.0 136.6,200.0 135.4,200.0 134.2,200.0 133.1,200.0 131.9,200.0 130.7,200.0 129.5,200.0 128.4,200.0 127.2,200.0 126.0,200.0 124.8,200.0 123.6,200.0 122.5,200.0 121.3,200.0 120.1,200.0 118.9,200.0 117.8,200.0 116.6,200.0 115.4,200.0 114.2,200.0 113.0,200.0 111.9,200.0 110.7,200.0 109.5,200.0 108.3,200.0 107.2,200.0 106.0,200.0 104.8,200.0 103.6,200.0 102.4,200.0 101.3,200.0 100.1,200.0 98.9,200.0 97.7,200.0 96.5,200.0 95.4,200.0 94.2,200.0 93.0,200.0 91.8,200.0 90.7,200.0 89.5,200.0 88.3,200.0 87.1,200.0 85.9,200.0 84.8,200.0 83.6,200.0 82.4,200.0 81.2,200.0 80.1,200.0 78.9,200.0 77.7,200.0 76.5,200.0 75.3,200.0 74.2,200.0 73.0,200.0 71.8,200.0 70.6,200.0 69.5,200.0 68.3,200.0 67.1,200.0 65.9,200.0 64.7,200.0 63.6,200.0 62.4,200.0 61.2,200.0 60.0,200.0 58.8,200.0 57.7,200.0 56.5,200.0 55.3,200.0 54.1,200.0 53.0,200.0 51.8,200.0 50.6,200.0 49.4,200.0 48.2,200.0 47.1,200.0 45.9,200.0 44.7,200.0 43.5,200.0 42.4,200.0 41.2,200.0 40.0,200.0\" fill=\"#fde68a\" fill-opacity=\"0.8\"/><line x1=\"34.0\" y1=\"200.0\" x2=\"312.5\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"204.0\" x2=\"40.0\" y2=\"0.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"312.5\" y1=\"200.0\" x2=\"305.6\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"312.5\" y1=\"200.0\" x2=\"305.6\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"0.0\" x2=\"36.0\" y2=\"6.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"0.0\" x2=\"44.0\" y2=\"6.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"310.5\" y=\"192.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">θ</text><text x=\"50.0\" y=\"6.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"40.0,40.0 40.7,40.0 41.3,40.0 42.0,40.1 42.6,40.1 43.3,40.2 43.9,40.2 44.6,40.3 45.2,40.4 45.9,40.5 46.6,40.6 47.2,40.7 47.9,40.9 48.5,41.0 49.2,41.2 49.8,41.4 50.5,41.6 51.2,41.8 51.8,42.0 52.5,42.2 53.1,42.4 53.8,42.7 54.4,42.9 55.1,43.2 55.8,43.5 56.4,43.8 57.1,44.1 57.7,44.4 58.4,44.7 59.0,45.1 59.7,45.4 60.3,45.8 61.0,46.2 61.7,46.6 62.3,47.0 63.0,47.4 63.6,47.8 64.3,48.2 64.9,48.6 65.6,49.1 66.2,49.6 66.9,50.0 67.6,50.5 68.2,51.0 68.9,51.5 69.5,52.0 70.2,52.5 70.8,53.1 71.5,53.6 72.2,54.2 72.8,54.7 73.5,55.3 74.1,55.9 74.8,56.5 75.4,57.1 76.1,57.7 76.8,58.3 77.4,58.9 78.1,59.5 78.7,60.2 79.4,60.8 80.0,61.5 80.7,62.1 81.3,62.8 82.0,63.5 82.7,64.2 83.3,64.9 84.0,65.6 84.6,66.3 85.3,67.0 85.9,67.8 86.6,68.5 87.2,69.2 87.9,70.0 88.6,70.7 89.2,71.5 89.9,72.3 90.5,73.1 91.2,73.8 91.8,74.6 92.5,75.4 93.2,76.2 93.8,77.0 94.5,77.8 95.1,78.6 95.8,79.5 96.4,80.3 97.1,81.1 97.8,82.0 98.4,82.8 99.1,83.6 99.7,84.5 100.4,85.3 101.0,86.2 101.7,87.1 102.3,87.9 103.0,88.8 103.7,89.7 104.3,90.5 105.0,91.4 105.6,92.3 106.3,93.2 106.9,94.1 107.6,94.9 108.2,95.8 108.9,96.7 109.6,97.6 110.2,98.5 110.9,99.4 111.5,100.3 112.2,101.2 112.8,102.1 113.5,103.0 114.2,103.9 114.8,104.8 115.5,105.7 116.1,106.7 116.8,107.6 117.4,108.5 118.1,109.4 118.8,110.3 119.4,111.2 120.1,112.1 120.7,113.0 121.4,113.9 122.0,114.8 122.7,115.7 123.3,116.6 124.0,117.6 124.7,118.5 125.3,119.4 126.0,120.3 126.6,121.2 127.3,122.1 127.9,123.0 128.6,123.8 129.2,124.7 129.9,125.6 130.6,126.5 131.2,127.4 131.9,128.3 132.5,129.2 133.2,130.0 133.8,130.9 134.5,131.8 135.2,132.7 135.8,133.5 136.5,134.4 137.1,135.2 137.8,136.1 138.4,137.0 139.1,137.8 139.8,138.6 140.4,139.5 141.1,140.3 141.7,141.2 142.4,142.0 143.0,142.8 143.7,143.6 144.3,144.4 145.0,145.2 145.7,146.1 146.3,146.9 147.0,147.6 147.6,148.4 148.3,149.2 148.9,150.0 149.6,150.8 150.2,151.5 150.9,152.3 151.6,153.1 152.2,153.8 152.9,154.6 153.5,155.3 154.2,156.0 154.8,156.8 155.5,157.5 156.2,158.2 156.8,158.9 157.5,159.6 158.1,160.3 158.8,161.0 159.4,161.7 160.1,162.4 160.8,163.1 161.4,163.7 162.1,164.4 162.7,165.1 163.4,165.7 164.0,166.4 164.7,167.0 165.3,167.6 166.0,168.2 166.7,168.9 167.3,169.5 168.0,170.1 168.6,170.7 169.3,171.3 169.9,171.8 170.6,172.4 171.2,173.0 171.9,173.6 172.6,174.1 173.2,174.7 173.9,175.2 174.5,175.7 175.2,176.3 175.8,176.8 176.5,177.3 177.2,177.8 177.8,178.3 178.5,178.8 179.1,179.3 179.8,179.8 180.4,180.2 181.1,180.7 181.8,181.2 182.4,181.6 183.1,182.1 183.7,182.5 184.4,182.9 185.0,183.4 185.7,183.8 186.3,184.2 187.0,184.6 187.7,185.0 188.3,185.4 189.0,185.8 189.6,186.2 190.3,186.5 190.9,186.9 191.6,187.2 192.2,187.6 192.9,187.9 193.6,188.3 194.2,188.6 194.9,188.9 195.5,189.3 196.2,189.6 196.8,189.9 197.5,190.2 198.2,190.5 198.8,190.8 199.5,191.1 200.1,191.3 200.8,191.6 201.4,191.9 202.1,192.1 202.8,192.4 203.4,192.6 204.1,192.9 204.7,193.1 205.4,193.4 206.0,193.6 206.7,193.8 207.3,194.0 208.0,194.2 208.7,194.4 209.3,194.6 210.0,194.8 210.6,195.0 211.3,195.2 211.9,195.4 212.6,195.6 213.2,195.7 213.9,195.9 214.6,196.1 215.2,196.2 215.9,196.4 216.5,196.5 217.2,196.7 217.8,196.8 218.5,196.9 219.2,197.1 219.8,197.2 220.5,197.3 221.1,197.4 221.8,197.6 222.4,197.7 223.1,197.8 223.8,197.9 224.4,198.0 225.1,198.1 225.7,198.2 226.4,198.3 227.0,198.4 227.7,198.4 228.3,198.5 229.0,198.6 229.7,198.7 230.3,198.7 231.0,198.8 231.6,198.9 232.3,198.9 232.9,199.0 233.6,199.1 234.2,199.1 234.9,199.2 235.6,199.2 236.2,199.3 236.9,199.3 237.5,199.4 238.2,199.4 238.8,199.4 239.5,199.5 240.2,199.5 240.8,199.6 241.5,199.6 242.1,199.6 242.8,199.6 243.4,199.7 244.1,199.7 244.8,199.7 245.4,199.7 246.1,199.8 246.7,199.8 247.4,199.8 248.0,199.8 248.7,199.8 249.3,199.9 250.0,199.9 250.7,199.9 251.3,199.9 252.0,199.9 252.6,199.9 253.3,199.9 253.9,199.9 254.6,199.9 255.2,199.9 255.9,200.0 256.6,200.0 257.2,200.0 257.9,200.0 258.5,200.0 259.2,200.0 259.8,200.0 260.5,200.0 261.2,200.0 261.8,200.0 262.5,200.0 263.1,200.0 263.8,200.0 264.4,200.0 265.1,200.0 265.8,200.0 266.4,200.0 267.1,200.0 267.7,200.0 268.4,200.0 269.0,200.0 269.7,200.0 270.3,200.0 271.0,200.0 271.7,200.0 272.3,200.0 273.0,200.0 273.6,200.0 274.3,200.0 274.9,200.0 275.6,200.0 276.2,200.0 276.9,200.0 277.6,200.0 278.2,200.0 278.9,200.0 279.5,200.0 280.2,200.0 280.8,200.0 281.5,200.0 282.2,200.0 282.8,200.0 283.5,200.0 284.1,200.0 284.8,200.0 285.4,200.0 286.1,200.0 286.8,200.0 287.4,200.0 288.1,200.0 288.7,200.0 289.4,200.0 290.0,200.0 290.7,200.0 291.3,200.0 292.0,200.0 292.7,200.0 293.3,200.0 294.0,200.0 294.6,200.0 295.3,200.0 295.9,199.9 296.6,199.9 297.2,199.9 297.9,199.9 298.6,199.9 299.2,199.9 299.9,199.9 300.5,199.9 301.2,199.9 301.8,199.9 302.5,199.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"190.0\" y1=\"196.0\" x2=\"190.0\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"217.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"36.0\" y1=\"40.0\" x2=\"44.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"31.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"275.6\" y=\"221.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"268.9\" y1=\"225.0\" x2=\"282.3\" y2=\"225.0\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"275.6\" y=\"237.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"107.5\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">area =</text><text x=\"157.0\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3π</text><line x1=\"146.6\" y1=\"165.0\" x2=\"167.4\" y2=\"165.0\" stroke=\"#92400e\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"157.0\" y=\"177.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text></svg>"
+              }
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac{3\\pi}{16}=0.589\\), plausible since \\(\\cos^{4}\\theta\\) falls quickly from 1 to 0 over \\([0,1.57]\\) (area smaller than the \\(\\dfrac{\\pi}{4}=0.785\\) of \\(\\cos^{2}\\theta\\)). Option D is \\(\\int\\cos^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate",
+              "note": "Use the cosine identity then integrate term by term; sin at multiples of pi is 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5313,6 +5646,176 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q16b1",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{a}x^{n}\\sqrt{a^{2}-x^{2}}\\,dx,\\ a\\in\\mathbb{R}^{+}\\) and \\(n=0,1,2,\\dots\\) Prove that, for \\(n=2,3,4,\\dots\\), \\(I_{n}=\\dfrac{a^{2}(n-1)}{n+2}I_{n-2}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "By parts: \\(u=x^{n-1},\\ v'=x\\sqrt{a^{2}-x^{2}}\\), so \\(u'=(n-1)x^{n-2}\\) and \\(v=-\\dfrac{1}{3}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}\\). \\(I_{n}=\\left[-\\dfrac{x^{n-1}}{3}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}\\right]_{0}^{a}+\\dfrac{n-1}{3}\\int_{0}^{a}x^{n-2}\\left(a^{2}-x^{2}\\right)\\sqrt{a^{2}-x^{2}}\\,dx\\). The bracket is 0 at both limits. So \\(I_{n}=\\dfrac{n-1}{3}\\left[a^{2}I_{n-2}-I_{n}\\right]\\Rightarrow(n+2)I_{n}=a^{2}(n-1)I_{n-2}\\).",
+            "By parts with \\(u=\\sqrt{a^{2}-x^{2}},\\ v'=x^{n}\\): \\(I_{n}=\\left[\\dfrac{x^{n+1}}{n+1}\\sqrt{a^{2}-x^{2}}\\right]_{0}^{a}+\\dfrac{1}{n+1}\\int_{0}^{a}\\dfrac{x^{n+2}}{\\sqrt{a^{2}-x^{2}}}dx\\), which is not in terms of \\(I_{n-2}\\), so the method fails.",
+            "By parts: \\(u=x^{n-1},\\ v=-\\dfrac{1}{3}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}\\). \\(I_{n}=\\dfrac{n-1}{3}\\left[a^{2}I_{n-2}-I_{n}\\right]\\), so \\(\\dfrac{n+2}{3}I_{n}=\\dfrac{n-1}{3}a^{2}I_{n-2}\\) and \\(I_{n}=\\dfrac{a^{2}(n-1)}{n-2}I_{n-2}\\).",
+            "By parts: \\(u=x^{n-1},\\ v=-\\dfrac{1}{3}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}\\). Ignoring the boundary term (it is not zero): \\(I_{n}=\\dfrac{n-1}{3}\\left[a^{2}I_{n-2}-I_{n}\\right]\\) and the result follows."
+          ],
+          "answer": 0,
+          "hint": "Split \\(x^{n}\\sqrt{a^{2}-x^{2}}=x^{n-1}\\cdot x\\sqrt{a^{2}-x^{2}}\\). Integrate \\(x\\sqrt{a^{2}-x^{2}}\\) (reverse chain rule) and differentiate \\(x^{n-1}\\). Show the boundary term is zero, then rewrite \\(a^{2}-x^{2}\\) using \\(a^{2}-x^{2}\\) times \\(\\sqrt{\\cdot}\\).",
+          "steps": [
+            {
+              "explain": "Choose \\(u=x^{n-1}\\) (differentiate down to \\(x^{n-2}\\)) and \\(v'=x\\sqrt{a^{2}-x^{2}}\\) (integrate by reverse chain rule: \\(\\dfrac{d}{dx}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}=-3x\\sqrt{a^{2}-x^{2}}\\)).",
+              "work": "\\(u=x^{n-1},\\ u'=(n-1)x^{n-2};\\qquad v=-\\dfrac{1}{3}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}\\)"
+            },
+            {
+              "explain": "By parts: \\(I_{n}=\\left[uv\\right]_{0}^{a}-\\int u'v\\,dx\\).",
+              "work": "\\(I_{n}=\\left[-\\dfrac{x^{n-1}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}}{3}\\right]_{0}^{a}+\\dfrac{n-1}{3}\\int_{0}^{a}x^{n-2}\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}dx\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=a\\), \\(\\left(a^{2}-a^{2}\\right)^{\\frac{3}{2}}=0\\); at \\(x=0\\), \\(x^{n-1}=0\\) (since \\(n\\ge2\\)). Both are 0, so the bracket is 0.",
+              "work": "\\(\\left[\\ \\right]_{0}^{a}=0\\)"
+            },
+            {
+              "explain": "Write \\(\\left(a^{2}-x^{2}\\right)^{\\frac{3}{2}}=\\left(a^{2}-x^{2}\\right)\\sqrt{a^{2}-x^{2}}\\) and split.",
+              "work": "\\(I_{n}=\\dfrac{n-1}{3}\\int_{0}^{a}\\left(a^{2}x^{n-2}-x^{n}\\right)\\sqrt{a^{2}-x^{2}}\\,dx=\\dfrac{n-1}{3}\\left[a^{2}I_{n-2}-I_{n}\\right]\\)"
+            },
+            {
+              "explain": "Solve for \\(I_{n}\\): multiply by 3 and bring the \\(I_{n}\\) terms together: \\(3I_{n}+(n-1)I_{n}=(n-1)a^{2}I_{n-2}\\).",
+              "work": "\\((n+2)I_{n}=a^{2}(n-1)I_{n-2}\\ \\Rightarrow\\ I_{n}=\\dfrac{a^{2}(n-1)}{n+2}I_{n-2}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B picks the wrong \\(u\\) and \\(v'\\); C gets \\(n-2\\) (a slip: \\(3+(n-1)=n+2\\)); D claims the boundary term is not zero (it is).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that, for",
+              "note": "By parts with u = x to the n minus 1; boundary term vanishes; then rewrite with a squared minus x squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q16b2",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{a}x^{n}\\sqrt{a^{2}-x^{2}}\\,dx,\\ a\\in\\mathbb{R}^{+}\\) and \\(n=0,1,2,\\dots\\) Prove that, for \\(n=0,1,2,\\dots\\), \\(I_{2n}=\\pi\\left(\\dfrac{a}{2}\\right)^{2n+2}\\dfrac{(2n)!}{n!\\,(n+1)!}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Apply \\(I_{2n}=\\dfrac{a^{2}(2n-1)}{2n+2}I_{2n-2}\\) repeatedly down to \\(I_{0}\\): \\(I_{2n}=\\dfrac{a^{2n}(2n-1)(2n-3)\\cdots1}{(2n+2)(2n)\\cdots4}I_{0}\\), with \\(I_{0}=\\dfrac{1}{4}\\pi a^{2}\\) (a quarter circle). \\((2n-1)(2n-3)\\cdots1=\\dfrac{(2n)!}{2^{n}n!}\\) and \\((2n+2)(2n)\\cdots4=2^{n}(n+1)!\\). So \\(I_{2n}=\\dfrac{a^{2n}(2n)!}{2^{n}n!\\cdot2^{n}(n+1)!}\\cdot\\dfrac{\\pi a^{2}}{4}=\\pi\\dfrac{a^{2n+2}}{2^{2n+2}}\\dfrac{(2n)!}{n!(n+1)!}=\\pi\\left(\\dfrac{a}{2}\\right)^{2n+2}\\dfrac{(2n)!}{n!(n+1)!}\\).",
+            "Apply the recurrence down to \\(I_{0}\\) as before but use \\(I_{0}=\\dfrac{1}{2}\\pi a^{2}\\) (a semicircle). The result is \\(I_{2n}=2\\pi\\left(\\dfrac{a}{2}\\right)^{2n+2}\\dfrac{(2n)!}{n!(n+1)!}\\), which is twice the required value.",
+            "Apply \\(I_{n}=\\dfrac{a^{2}(n-1)}{n+2}I_{n-2}\\) with \\(n\\) instead of \\(2n\\): \\(I_{2n}=\\dfrac{a^{2}(n-1)}{n+2}I_{2n-2}\\), and continue until \\(I_{0}\\).",
+            "Work out \\(I_{0},I_{2},I_{4}\\) by integration by parts and notice the pattern; this proves the formula for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Use the reduction formula from (i) repeatedly: \\(I_{2n}\\to I_{2n-2}\\to\\cdots\\to I_{0}\\). Evaluate \\(I_{0}=\\int_{0}^{a}\\sqrt{a^{2}-x^{2}}dx\\) as a geometric area (a quarter circle). Then turn the products of odd and even numbers into factorials.",
+          "steps": [
+            {
+              "explain": "Apply the reduction formula with \\(n\\to2n\\): \\(I_{2n}=\\dfrac{a^{2}(2n-1)}{2n+2}I_{2n-2}\\), then \\(I_{2n-2}=\\dfrac{a^{2}(2n-3)}{2n}I_{2n-4}\\), and so on down to \\(I_{2}=\\dfrac{a^{2}(1)}{4}I_{0}\\).",
+              "work": "\\(I_{2n}=\\dfrac{a^{2}(2n-1)}{2n+2}\\cdot\\dfrac{a^{2}(2n-3)}{2n}\\cdots\\dfrac{a^{2}(1)}{4}\\,I_{0}\\)"
+            },
+            {
+              "explain": "There are \\(n\\) factors, so the \\(a^{2}\\)s combine to \\(a^{2n}\\). Numerator: odd numbers \\(1\\cdot3\\cdots(2n-1)\\); denominator: even numbers \\(4\\cdot6\\cdots(2n+2)\\).",
+              "work": "\\(I_{2n}=\\dfrac{a^{2n}(2n-1)(2n-3)\\cdots1}{(2n+2)(2n)\\cdots4}I_{0}\\)"
+            },
+            {
+              "explain": "\\(I_{0}=\\int_{0}^{a}\\sqrt{a^{2}-x^{2}}\\,dx\\) is the area of a QUARTER circle of radius \\(a\\).",
+              "work": "\\(I_{0}=\\dfrac{1}{4}\\pi a^{2}\\)"
+            },
+            {
+              "explain": "Convert to factorials: \\(1\\cdot3\\cdots(2n-1)=\\dfrac{(2n)!}{2\\cdot4\\cdots2n}=\\dfrac{(2n)!}{2^{n}n!}\\) and \\(4\\cdot6\\cdots(2n+2)=2^{n}\\cdot2\\cdot3\\cdots(n+1)=2^{n}(n+1)!\\).",
+              "work": "\\(I_{2n}=\\dfrac{a^{2n}(2n)!}{2^{n}n!\\cdot2^{n}(n+1)!}\\cdot\\dfrac{\\pi a^{2}}{4}\\)"
+            },
+            {
+              "explain": "Combine the powers: \\(2^{n}\\cdot2^{n}\\cdot4=2^{2n+2}\\) and \\(a^{2n}\\cdot a^{2}=a^{2n+2}\\).",
+              "work": "\\(I_{2n}=\\pi\\,\\dfrac{a^{2n+2}}{2^{2n+2}}\\cdot\\dfrac{(2n)!}{n!(n+1)!}=\\pi\\left(\\dfrac{a}{2}\\right)^{2n+2}\\dfrac{(2n)!}{n!(n+1)!}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B uses a semicircle for \\(I_{0}\\); C does not replace \\(n\\) by \\(2n\\) consistently; D checks a few cases (not a proof).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that, for",
+              "note": "Apply the reduction formula repeatedly; I zero is a quarter circle; use factorials."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q16b3",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{a}x^{n}\\sqrt{a^{2}-x^{2}}\\,dx,\\ a\\in\\mathbb{R}^{+}\\) and \\(n=0,1,2,\\dots\\) \\(C_{n}=\\dfrac{1}{n+1}\\dbinom{2n}{n}\\) denotes the Catalan numbers. Prove that \\(C_{n}=\\dfrac{1}{\\pi}\\displaystyle\\int_{0}^{2}x^{2n}\\sqrt{4-x^{2}}\\,dx\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(C_{n}=\\dfrac{1}{n+1}\\cdot\\dfrac{(2n)!}{n!\\,(2n-n)!}=\\dfrac{(2n)!}{n!\\,(n+1)!}\\). From (ii) with \\(a=2\\): \\(I_{2n}=\\pi\\left(\\dfrac{2}{2}\\right)^{2n+2}\\dfrac{(2n)!}{n!(n+1)!}=\\pi\\dfrac{(2n)!}{n!(n+1)!}\\). So \\(\\dfrac{1}{\\pi}\\int_{0}^{2}x^{2n}\\sqrt{4-x^{2}}dx=\\dfrac{1}{\\pi}I_{2n}=\\dfrac{(2n)!}{n!(n+1)!}=C_{n}\\).",
+            "From (ii) with \\(a=2\\): \\(I_{2n}=\\pi\\dfrac{(2n)!}{n!(n+1)!}\\). Since \\(\\dbinom{2n}{n}=\\dfrac{(2n)!}{n!\\,n!}\\), \\(C_{n}=\\dfrac{1}{\\pi}I_{2n}\\) follows immediately with no further working.",
+            "From (ii) with \\(a=4\\): \\(I_{2n}=\\pi\\left(\\dfrac{4}{2}\\right)^{2n+2}\\dfrac{(2n)!}{n!(n+1)!}\\), so \\(\\dfrac{1}{\\pi}I_{2n}=2^{2n+2}C_{n}\\).",
+            "\\(C_{n}=\\dfrac{1}{n+1}\\dbinom{2n}{n}=\\dfrac{(2n)!}{(n+1)!\\,(n+1)!}\\). With \\(a=2\\) in (ii), \\(\\dfrac{1}{\\pi}I_{2n}=\\dfrac{(2n)!}{n!(n+1)!}\\), so these are equal."
+          ],
+          "answer": 0,
+          "hint": "Write \\(C_{n}\\) with factorials: \\(\\dbinom{2n}{n}=\\dfrac{(2n)!}{n!\\,n!}\\), then combine \\(\\dfrac{1}{n+1}\\) with one \\(n!\\) to get \\((n+1)!\\). Compare with part (ii) where \\(a=2\\) (since \\(\\sqrt{4-x^{2}}=\\sqrt{2^{2}-x^{2}}\\)).",
+          "steps": [
+            {
+              "explain": "Write the Catalan number in factorial form: \\(\\dbinom{2n}{n}=\\dfrac{(2n)!}{n!\\,(2n-n)!}=\\dfrac{(2n)!}{n!\\,n!}\\).",
+              "work": "\\(C_{n}=\\dfrac{1}{n+1}\\cdot\\dfrac{(2n)!}{n!\\,n!}\\)"
+            },
+            {
+              "explain": "Combine \\(\\dfrac{1}{n+1}\\) with \\(\\dfrac{1}{n!}\\): \\((n+1)\\cdot n!=(n+1)!\\).",
+              "work": "\\(C_{n}=\\dfrac{(2n)!}{n!\\,(n+1)!}\\)"
+            },
+            {
+              "explain": "Part (ii) with \\(a=2\\): \\(\\dfrac{a}{2}=1\\), and \\(\\sqrt{4-x^{2}}=\\sqrt{2^{2}-x^{2}}\\), so \\(I_{2n}=\\int_{0}^{2}x^{2n}\\sqrt{4-x^{2}}dx\\).",
+              "work": "\\(I_{2n}=\\pi(1)^{2n+2}\\dfrac{(2n)!}{n!\\,(n+1)!}=\\pi\\dfrac{(2n)!}{n!\\,(n+1)!}\\)"
+            },
+            {
+              "explain": "Divide by \\(\\pi\\) and compare.",
+              "work": "\\(\\dfrac{1}{\\pi}\\int_{0}^{2}x^{2n}\\sqrt{4-x^{2}}\\,dx=\\dfrac{(2n)!}{n!\\,(n+1)!}=C_{n}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B skips the factorial manipulation; C uses \\(a=4\\) (the integral has \\(\\sqrt{4-x^{2}}\\), so \\(a=2\\)); D simplifies \\(C_{n}\\) incorrectly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "denotes the Catalan numbers",
+              "note": "Express the Catalan number with factorials, then use part (ii) with a = 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5539,6 +6042,64 @@
           "meta": {
             "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q10",
+          "type": "mc",
+          "stem": "\\(f(x)\\) and \\(g(x)\\) are continuous functions such that: \\(f(x)=f(1-x)\\), \\(g(x)+g(1-x)=2\\) and \\(\\displaystyle\\int_{0}^{1}f(x)\\,dx=\\int_{0}^{1}f(1-x)\\,dx\\). Which one of the following is equivalent to \\(\\displaystyle\\int_{0}^{1}f(x)g(x)\\,dx\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\displaystyle\\int_{0}^{1}f(x)\\,dx\\)",
+            "\\(2\\displaystyle\\int_{0}^{1}f(x)\\,dx\\)",
+            "\\(3\\displaystyle\\int_{0}^{1}f(x)\\,dx\\)",
+            "\\(4\\displaystyle\\int_{0}^{1}f(x)\\,dx\\)"
+          ],
+          "answer": 0,
+          "hint": "Call the integral \\(I\\). Replace \\(f(x)\\) by \\(f(1-x)\\) and \\(g(x)\\) by \\(2-g(1-x)\\). Then use the substitution \\(u=1-x\\) to bring back an \\(I\\), and solve for \\(I\\).",
+          "steps": [
+            {
+              "explain": "Let \\(I=\\int_{0}^{1}f(x)g(x)\\,dx\\). Use \\(f(x)=f(1-x)\\) and \\(g(x)=2-g(1-x)\\) (from \\(g(x)+g(1-x)=2\\)).",
+              "work": "\\(I=\\int_{0}^{1}f(1-x)\\left[2-g(1-x)\\right]dx\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(I=\\int_{0}^{1}2f(1-x)\\,dx-\\int_{0}^{1}f(1-x)g(1-x)\\,dx\\)"
+            },
+            {
+              "explain": "Use the given \\(\\int_{0}^{1}f(1-x)dx=\\int_{0}^{1}f(x)dx\\) for the first part. For the second part substitute \\(u=1-x\\): \\(du=-dx\\), limits \\(x=0\\to u=1\\), \\(x=1\\to u=0\\); flipping the limits cancels the minus sign.",
+              "work": "\\(\\int_{0}^{1}f(1-x)g(1-x)dx=\\int_{1}^{0}f(u)g(u)(-du)=\\int_{0}^{1}f(x)g(x)dx=I\\)"
+            },
+            {
+              "explain": "So \\(I=2\\int_{0}^{1}f(x)dx-I\\).",
+              "work": "\\(2I=2\\int_{0}^{1}f(x)\\,dx\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(I=\\int_{0}^{1}f(x)\\,dx\\ \\ (\\text{option A})\\)"
+            },
+            {
+              "explain": "Check with \\(f(x)=1,\\ g(x)=1\\): \\(f(x)=f(1-x)\\) ✓, \\(g(x)+g(1-x)=2\\) ✓ and \\(\\int_{0}^{1}fg=1=\\int_{0}^{1}f\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which one of the following is equivalent to",
+              "note": "Use the symmetry conditions, then the substitution u = 1 − x to get an equation for I."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }

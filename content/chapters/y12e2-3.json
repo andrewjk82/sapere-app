@@ -1354,6 +1354,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q11a2",
+          "type": "mc",
+          "stem": "Given \\(z=\\sqrt{2}\\left(\\cos\\dfrac{\\pi}{12}+i\\sin\\dfrac{\\pi}{12}\\right)\\), find the smallest positive integer \\(n\\) such that \\(z^{n}\\) is a real number.",
+          "difficulty": "medium",
+          "options": [
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(24\\)",
+            "\\(3\\)"
+          ],
+          "answer": 1,
+          "hint": "De Moivre: \\(z^{n}=r^{n}\\left(\\cos n\\theta+i\\sin n\\theta\\right)\\). It is real when the imaginary part \\(\\sin n\\theta=0\\), i.e. \\(n\\theta\\) is a multiple of \\(\\pi\\).",
+          "steps": [
+            {
+              "explain": "Apply De Moivre's theorem.",
+              "work": "\\(z^{n}=\\left(\\sqrt{2}\\right)^{n}\\left(\\cos\\dfrac{n\\pi}{12}+i\\sin\\dfrac{n\\pi}{12}\\right)\\)"
+            },
+            {
+              "explain": "\\(z^{n}\\) is real when its imaginary part is zero. \\(\\left(\\sqrt{2}\\right)^{n}\\ne0\\), so we need",
+              "work": "\\(\\sin\\dfrac{n\\pi}{12}=0\\)"
+            },
+            {
+              "explain": "\\(\\sin\\) is zero at \\(0,\\ \\pi,\\ 2\\pi,\\ \\dots\\), so \\(\\dfrac{n\\pi}{12}=k\\pi\\), giving \\(n=12k\\).",
+              "work": "\\(n=0,\\ 12,\\ 24,\\ \\dots\\)"
+            },
+            {
+              "explain": "The smallest POSITIVE integer is \\(n=12\\) (\\(k=1\\)).",
+              "work": "\\(n=12:\\ \\ z^{12}=\\left(\\sqrt{2}\\right)^{12}(\\cos\\pi+i\\sin\\pi)=-64\\)"
+            },
+            {
+              "explain": "Check smaller: \\(n=6\\) gives \\(z^{6}=8\\left(\\cos\\dfrac{\\pi}{2}+i\\sin\\dfrac{\\pi}{2}\\right)=8i\\), which is imaginary, not real.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the smallest positive integer",
+              "note": "Real means the imaginary part sin(n times theta) equals zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2253,6 +2307,226 @@
             "grade": "12",
             "origin": "teacher",
             "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q14c1",
+          "type": "mc",
+          "stem": "Given \\(z=\\cos\\theta+i\\sin\\theta\\), prove that \\(z^{n}+\\dfrac{1}{z^{n}}=2\\cos n\\theta\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "By De Moivre's theorem \\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\), and \\(\\dfrac{1}{z^{n}}=z^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)=\\cos n\\theta-i\\sin n\\theta\\). Adding, \\(z^{n}+\\dfrac{1}{z^{n}}=2\\cos n\\theta\\).",
+            "By De Moivre's theorem \\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\) and \\(\\dfrac{1}{z^{n}}=\\cos n\\theta+i\\sin n\\theta\\). Adding gives \\(2\\cos n\\theta+2i\\sin n\\theta\\).",
+            "\\(z^{n}=\\cos^{n}\\theta+i^{n}\\sin^{n}\\theta\\) and \\(\\dfrac{1}{z^{n}}=\\cos^{n}\\theta-i^{n}\\sin^{n}\\theta\\). Adding gives \\(2\\cos^{n}\\theta\\).",
+            "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\) and \\(\\dfrac{1}{z^{n}}=-\\cos n\\theta-i\\sin n\\theta\\). Adding gives 0."
+          ],
+          "answer": 0,
+          "hint": "Use De Moivre's theorem for \\(z^{n}\\), then for \\(z^{-n}\\) (negative index), and use that cos is even and sin is odd.",
+          "steps": [
+            {
+              "explain": "De Moivre's theorem: \\((\\cos\\theta+i\\sin\\theta)^{n}=\\cos n\\theta+i\\sin n\\theta\\).",
+              "work": "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{1}{z^{n}}=z^{-n}\\), and De Moivre's theorem also holds for \\(-n\\).",
+              "work": "\\(z^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)\\)"
+            },
+            {
+              "explain": "Cosine is even (\\(\\cos(-x)=\\cos x\\)) and sine is odd (\\(\\sin(-x)=-\\sin x\\)).",
+              "work": "\\(z^{-n}=\\cos n\\theta-i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Add: the imaginary parts cancel.",
+              "work": "\\(z^{n}+\\dfrac{1}{z^{n}}=2\\cos n\\theta\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the sign change of the sine; C wrongly applies the power to each part; D treats \\(\\dfrac{1}{z^{n}}\\) as \\(-z^{n}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that",
+              "note": "De Moivre for z to the n and z to the minus n; sine is odd so the imaginary parts cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q14c2",
+          "type": "mc",
+          "stem": "Hence, by considering the expansion of \\(\\left(z+\\dfrac{1}{z}\\right)^{4}\\), show that \\(\\cos^{4}\\theta=\\dfrac{1}{8}\\cos4\\theta+\\dfrac{1}{2}\\cos2\\theta+\\dfrac{3}{8}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\left(z+\\dfrac{1}{z}\\right)^{4}=z^{4}+4z^{2}+6+\\dfrac{4}{z^{2}}+\\dfrac{1}{z^{4}}=\\left(z^{4}+\\dfrac{1}{z^{4}}\\right)+4\\left(z^{2}+\\dfrac{1}{z^{2}}\\right)+6\\). Using part (i): \\((2\\cos\\theta)^{4}=2\\cos4\\theta+8\\cos2\\theta+6\\), so \\(16\\cos^{4}\\theta=2\\cos4\\theta+8\\cos2\\theta+6\\) and \\(\\cos^{4}\\theta=\\dfrac{1}{8}\\cos4\\theta+\\dfrac{1}{2}\\cos2\\theta+\\dfrac{3}{8}\\).",
+            "\\(\\left(z+\\dfrac{1}{z}\\right)^{4}=z^{4}+4z^{3}+6z^{2}+4z+1\\). Using part (i): \\(\\cos^{4}\\theta=\\cos4\\theta+4\\cos3\\theta+6\\cos2\\theta+4\\cos\\theta+1\\).",
+            "\\(\\left(z+\\dfrac{1}{z}\\right)^{4}=\\left(z^{4}+\\dfrac{1}{z^{4}}\\right)+4\\left(z^{2}+\\dfrac{1}{z^{2}}\\right)+6\\). Using part (i): \\(\\cos^{4}\\theta=2\\cos4\\theta+8\\cos2\\theta+6\\).",
+            "\\(\\left(z+\\dfrac{1}{z}\\right)^{4}=\\left(z^{4}+\\dfrac{1}{z^{4}}\\right)+4\\left(z^{2}+\\dfrac{1}{z^{2}}\\right)+3\\). Using part (i): \\(16\\cos^{4}\\theta=2\\cos4\\theta+8\\cos2\\theta+3\\), so \\(\\cos^{4}\\theta=\\dfrac{1}{8}\\cos4\\theta+\\dfrac{1}{2}\\cos2\\theta+\\dfrac{3}{16}\\)."
+          ],
+          "answer": 0,
+          "hint": "From part (i), \\(z+\\dfrac{1}{z}=2\\cos\\theta\\). Expand \\(\\left(z+\\dfrac{1}{z}\\right)^{4}\\) with the binomial coefficients 1, 4, 6, 4, 1, GROUP the pairs \\(z^{k}+\\dfrac{1}{z^{k}}\\), then replace each pair by \\(2\\cos k\\theta\\).",
+          "steps": [
+            {
+              "explain": "Left side: \\(z+\\dfrac{1}{z}=2\\cos\\theta\\) (part (i) with \\(n=1\\)), so \\(\\left(z+\\dfrac{1}{z}\\right)^{4}=(2\\cos\\theta)^{4}=16\\cos^{4}\\theta\\).",
+              "work": "\\(\\left(z+\\dfrac{1}{z}\\right)^{4}=16\\cos^{4}\\theta\\)"
+            },
+            {
+              "explain": "Binomial expansion (coefficients 1, 4, 6, 4, 1), simplifying each power of \\(z\\) against \\(\\dfrac{1}{z}\\).",
+              "work": "\\(\\left(z+\\dfrac{1}{z}\\right)^{4}=z^{4}+4z^{3}\\cdot\\dfrac{1}{z}+6z^{2}\\cdot\\dfrac{1}{z^{2}}+4z\\cdot\\dfrac{1}{z^{3}}+\\dfrac{1}{z^{4}}=z^{4}+4z^{2}+6+\\dfrac{4}{z^{2}}+\\dfrac{1}{z^{4}}\\)"
+            },
+            {
+              "explain": "Group the matching pairs.",
+              "work": "\\(=\\left(z^{4}+\\dfrac{1}{z^{4}}\\right)+4\\left(z^{2}+\\dfrac{1}{z^{2}}\\right)+6\\)"
+            },
+            {
+              "explain": "Replace each pair using part (i): \\(z^{4}+\\dfrac{1}{z^{4}}=2\\cos4\\theta\\) and \\(z^{2}+\\dfrac{1}{z^{2}}=2\\cos2\\theta\\).",
+              "work": "\\(16\\cos^{4}\\theta=2\\cos4\\theta+4(2\\cos2\\theta)+6=2\\cos4\\theta+8\\cos2\\theta+6\\)"
+            },
+            {
+              "explain": "Divide by 16.",
+              "work": "\\(\\cos^{4}\\theta=\\dfrac{1}{8}\\cos4\\theta+\\dfrac{1}{2}\\cos2\\theta+\\dfrac{3}{8}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B expands without simplifying \\(\\dfrac{1}{z}\\) (powers of \\(z\\) alone are not cosines); C forgets to divide by 16; D has the middle term wrong (it is 6, not 3).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by considering the expansion of",
+              "note": "Pair z to the k with its reciprocal and use 2 cos k theta."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q15b3",
+          "type": "mc",
+          "stem": "Show that, when \\(z\\ne0\\), \\(1+2z+3z^{2}+\\cdots+nz^{n-1}=\\dfrac{z^{-1}-(n+1)z^{n-1}+nz^{n}}{z^{-1}-2+z}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "From (i): \\(\\dfrac{1-(n+1)z^{n}+nz^{n+1}}{(1-z)^{2}}\\). Divide the numerator and the denominator by \\(z\\): numerator \\(\\to z^{-1}-(n+1)z^{n-1}+nz^{n}\\); denominator \\(\\dfrac{(1-z)^{2}}{z}=\\dfrac{1-2z+z^{2}}{z}=z^{-1}-2+z\\).",
+            "From (i): divide only the numerator by \\(z\\), giving \\(z^{-1}-(n+1)z^{n-1}+nz^{n}\\), and leave the denominator \\((1-z)^{2}\\) unchanged.",
+            "From (i): multiply the numerator and the denominator by \\(z\\): numerator \\(\\to z-(n+1)z^{n+1}+nz^{n+2}\\); denominator \\(\\to z(1-z)^{2}=z-2z^{2}+z^{3}\\).",
+            "From (i): divide by \\(z^{2}\\): numerator \\(\\to z^{-2}-(n+1)z^{n-2}+nz^{n-1}\\); denominator \\(\\to z^{-2}-2z^{-1}+1\\)."
+          ],
+          "answer": 0,
+          "hint": "Take the result of (i) and divide the TOP and the BOTTOM of the fraction by \\(z\\) (allowed because \\(z\\ne0\\); this multiplies the fraction by \\(\\dfrac{1}{1}=1\\)).",
+          "steps": [
+            {
+              "explain": "Start with the result of part (i), for \\(z\\ne1\\).",
+              "work": "\\(1+2z+\\cdots+nz^{n-1}=\\dfrac{1-(n+1)z^{n}+nz^{n+1}}{(1-z)^{2}}\\)"
+            },
+            {
+              "explain": "Divide the numerator by \\(z\\) term by term: \\(\\dfrac{1}{z}=z^{-1}\\), \\(\\dfrac{z^{n}}{z}=z^{n-1}\\), \\(\\dfrac{z^{n+1}}{z}=z^{n}\\).",
+              "work": "\\(\\dfrac{1-(n+1)z^{n}+nz^{n+1}}{z}=z^{-1}-(n+1)z^{n-1}+nz^{n}\\)"
+            },
+            {
+              "explain": "Divide the denominator by \\(z\\): expand \\((1-z)^{2}=1-2z+z^{2}\\) first.",
+              "work": "\\(\\dfrac{(1-z)^{2}}{z}=\\dfrac{1-2z+z^{2}}{z}=z^{-1}-2+z\\)"
+            },
+            {
+              "explain": "Put the two together (we divided top and bottom by the same non-zero \\(z\\), so the value is unchanged).",
+              "work": "\\(1+2z+\\cdots+nz^{n-1}=\\dfrac{z^{-1}-(n+1)z^{n-1}+nz^{n}}{z^{-1}-2+z}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B divides only the top (changing the value); C multiplies instead of dividing; D divides by \\(z^{2}\\) (wrong powers).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that, when",
+              "note": "Divide numerator and denominator of the part (i) result by z."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q15b4",
+          "type": "mc",
+          "stem": "Hence, by writing \\(z=\\cos\\theta+i\\sin\\theta\\) and using De Moivre’s Theorem, show that \\(\\displaystyle\\sum_{k=1}^{n}k\\cos(k-1)\\theta=\\dfrac{(n+1)\\cos(n-1)\\theta-n\\cos n\\theta-\\cos\\theta}{2(1-\\cos\\theta)}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Put \\(z=\\text{cis}\\,\\theta\\) in (iii): LHS \\(=\\sum k\\,\\text{cis}(k-1)\\theta\\); RHS \\(=\\dfrac{\\text{cis}(-\\theta)-(n+1)\\text{cis}(n-1)\\theta+n\\,\\text{cis}\\,n\\theta}{\\text{cis}(-\\theta)-2+\\text{cis}\\,\\theta}\\) with denominator \\(2\\cos\\theta-2\\). Equate REAL parts: \\(\\sum k\\cos(k-1)\\theta=\\dfrac{\\cos\\theta-(n+1)\\cos(n-1)\\theta+n\\cos n\\theta}{2\\cos\\theta-2}=\\dfrac{(n+1)\\cos(n-1)\\theta-n\\cos n\\theta-\\cos\\theta}{2(1-\\cos\\theta)}\\).",
+            "Put \\(z=\\text{cis}\\,\\theta\\) in (iii) and equate IMAGINARY parts: \\(\\sum k\\sin(k-1)\\theta=\\dfrac{-\\sin\\theta-(n+1)\\sin(n-1)\\theta+n\\sin n\\theta}{2\\cos\\theta-2}\\).",
+            "Put \\(z=\\text{cis}\\,\\theta\\) in (iii) and equate real parts, but write the denominator as \\(2\\cos\\theta+2\\): \\(\\sum k\\cos(k-1)\\theta=\\dfrac{\\cos\\theta-(n+1)\\cos(n-1)\\theta+n\\cos n\\theta}{2(1+\\cos\\theta)}\\).",
+            "Put \\(z=\\text{cis}\\,\\theta\\) in (iii) and divide the real part of the numerator by the real part of the denominator separately: \\(\\sum k\\cos(k-1)\\theta=\\dfrac{\\cos\\theta-(n+1)\\cos(n-1)\\theta+n\\cos n\\theta}{\\cos\\theta-2}\\)."
+          ],
+          "answer": 0,
+          "hint": "De Moivre: \\(z^{m}=\\cos m\\theta+i\\sin m\\theta\\). Put \\(z=\\text{cis}\\,\\theta\\) in part (iii). The denominator \\(z^{-1}-2+z\\) is REAL (\\(2\\cos\\theta-2\\)), so equating real parts of both sides is easy: real part of the left side is \\(\\sum k\\cos(k-1)\\theta\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(z=\\text{cis}\\,\\theta=\\cos\\theta+i\\sin\\theta\\) into (iii). By De Moivre's theorem \\(z^{m}=\\text{cis}\\,m\\theta\\), so the left side is \\(1+2\\text{cis}\\,\\theta+3\\text{cis}\\,2\\theta+\\cdots+n\\,\\text{cis}(n-1)\\theta\\).",
+              "work": "\\(\\sum_{k=1}^{n}k\\,\\text{cis}(k-1)\\theta=\\dfrac{\\text{cis}(-\\theta)-(n+1)\\text{cis}(n-1)\\theta+n\\,\\text{cis}\\,n\\theta}{\\text{cis}(-\\theta)-2+\\text{cis}\\,\\theta}\\)"
+            },
+            {
+              "explain": "Simplify the denominator: \\(\\text{cis}(-\\theta)+\\text{cis}\\,\\theta=2\\cos\\theta\\) (the imaginary parts cancel), so it is the REAL number \\(2\\cos\\theta-2\\).",
+              "work": "\\(\\text{cis}(-\\theta)-2+\\text{cis}\\,\\theta=2\\cos\\theta-2=-2(1-\\cos\\theta)\\)"
+            },
+            {
+              "explain": "Since the denominator is real, take the real part of each side: the real part of \\(\\text{cis}\\,m\\theta\\) is \\(\\cos m\\theta\\).",
+              "work": "\\(\\sum_{k=1}^{n}k\\cos(k-1)\\theta=\\dfrac{\\cos(-\\theta)-(n+1)\\cos(n-1)\\theta+n\\cos n\\theta}{2\\cos\\theta-2}\\)"
+            },
+            {
+              "explain": "Use \\(\\cos(-\\theta)=\\cos\\theta\\) and multiply top and bottom by \\(-1\\) to turn \\(2\\cos\\theta-2\\) into \\(2(1-\\cos\\theta)\\).",
+              "work": "\\(=\\dfrac{(n+1)\\cos(n-1)\\theta-n\\cos n\\theta-\\cos\\theta}{2(1-\\cos\\theta)}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B takes the imaginary parts (gives a \\(\\sin\\) series); C has the wrong sign in the denominator; D divides real parts separately (not allowed).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by writing",
+              "note": "Put z = cis theta, note the denominator is real, then take real parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -3787,6 +4061,118 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q13d1",
+          "type": "mc",
+          "stem": "Let \\(\\omega\\) be a non-real fifth root of unity. Show that \\(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1=0\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\omega^{5}=1\\Rightarrow\\omega^{5}-1=0\\Rightarrow(\\omega-1)\\left(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1\\right)=0\\). Since \\(\\omega\\) is non-real, \\(\\omega\\ne1\\), so \\(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1=0\\).",
+            "\\(\\omega^{5}=1\\Rightarrow\\omega^{5}-1=0\\Rightarrow(\\omega-1)\\left(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1\\right)=0\\Rightarrow\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1=0\\) (divide both sides by \\(\\omega-1\\)).",
+            "\\(\\omega^{5}=1\\), so \\(\\omega^{4}=\\dfrac{1}{\\omega},\\ \\omega^{3}=\\dfrac{1}{\\omega^{2}}\\), and the five terms add to \\(\\omega^{5}=1\\ne0\\).",
+            "Let \\(\\omega=\\text{cis}\\dfrac{2\\pi}{5}\\). Then \\(\\omega+\\omega^{4}=2\\cos\\dfrac{2\\pi}{5}\\) and the sum equals \\(0\\) for this one root only."
+          ],
+          "answer": 0,
+          "hint": "Start from \\(\\omega^{5}=1\\), move everything to one side and FACTORISE \\(\\omega^{5}-1=(\\omega-1)(\\cdots)\\). State why you may divide by \\(\\omega-1\\).",
+          "steps": [
+            {
+              "explain": "A fifth root of unity satisfies \\(\\omega^{5}=1\\). Rearrange to \\(\\omega^{5}-1=0\\).",
+              "work": "\\(\\omega^{5}-1=0\\)"
+            },
+            {
+              "explain": "Factorise the difference of fifth powers: \\(a^{5}-1=(a-1)(a^{4}+a^{3}+a^{2}+a+1)\\).",
+              "work": "\\((\\omega-1)\\left(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1\\right)=0\\)"
+            },
+            {
+              "explain": "A product is zero only if a factor is zero. \\(\\omega\\) is NON-REAL, so \\(\\omega\\ne1\\) and \\(\\omega-1\\ne0\\).",
+              "work": "\\(\\omega\\ne1\\ \\Rightarrow\\ \\omega-1\\ne0\\)"
+            },
+            {
+              "explain": "Therefore the other factor is zero.",
+              "work": "\\(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1=0\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B never justifies dividing by \\(\\omega-1\\); C is not a valid algebraic argument; D proves it for one specific root only (the question says ANY non-real fifth root).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Factorise omega to the fifth minus 1 and explain why omega minus 1 is not zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q13d2",
+          "type": "mc",
+          "stem": "Let \\(\\omega\\) be a non-real fifth root of unity, so \\(\\omega^{5}=1\\) and \\(\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1=0\\). Prove that \\(\\omega-\\omega^{4}\\) is a root of the equation \\(z^{4}+5z^{2}+5=0\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\((\\omega-\\omega^{4})^{2}=\\omega^{2}-2\\omega^{5}+\\omega^{8}=\\omega^{2}+\\omega^{3}-2\\). Then \\(z^{4}+5z^{2}+5=(\\omega^{2}+\\omega^{3}-2)^{2}+5(\\omega^{2}+\\omega^{3}-2)+5=\\omega^{4}+\\omega+6-4\\omega^{2}-4\\omega^{3}+5\\omega^{2}+5\\omega^{3}-5=\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1=0\\).",
+            "\\((\\omega-\\omega^{4})^{2}=\\omega^{2}-\\omega^{8}=\\omega^{2}-\\omega^{3}\\). Then \\(z^{4}+5z^{2}+5=(\\omega^{2}-\\omega^{3})^{2}+5(\\omega^{2}-\\omega^{3})+5=\\omega^{4}-2\\omega^{5}+\\omega^{6}+5\\omega^{2}-5\\omega^{3}+5\\), which does not simplify to 0.",
+            "Let \\(\\omega=\\text{cis}\\dfrac{2\\pi}{5}\\). Substituting numerically gives a value near 0, so \\(\\omega-\\omega^{4}\\) is a root.",
+            "Since \\(\\omega^{5}=0\\): \\((\\omega-\\omega^{4})^{2}=\\omega^{2}+\\omega^{3}\\), and so \\(z^{4}+5z^{2}+5=\\omega^{4}+2\\omega^{5}+\\omega^{6}+5\\omega^{2}+5\\omega^{3}+5=\\omega^{4}+\\omega^{6}+5\\), which is 0."
+          ],
+          "answer": 0,
+          "hint": "Square \\(z=\\omega-\\omega^{4}\\) first, reducing powers with \\(\\omega^{5}=1\\) (so \\(\\omega^{6}=\\omega,\\ \\omega^{8}=\\omega^{3}\\)). Then substitute into \\(z^{4}+5z^{2}+5\\) and use part (i).",
+          "steps": [
+            {
+              "explain": "Let \\(z=\\omega-\\omega^{4}\\) and square it, using \\(\\omega^{5}=1\\) and \\(\\omega^{8}=\\omega^{5}\\cdot\\omega^{3}=\\omega^{3}\\).",
+              "work": "\\(z^{2}=\\omega^{2}-2\\omega^{5}+\\omega^{8}=\\omega^{2}-2+\\omega^{3}\\)"
+            },
+            {
+              "explain": "So \\(z^{2}=\\omega^{2}+\\omega^{3}-2\\). Now \\(z^{4}=\\left(z^{2}\\right)^{2}\\); expand with the pattern \\((a+b-2)^{2}=a^{2}+b^{2}+4+2ab-4a-4b\\), \\(a=\\omega^{2},\\ b=\\omega^{3}\\).",
+              "work": "\\(z^{4}=\\omega^{4}+\\omega^{6}+4+2\\omega^{5}-4\\omega^{2}-4\\omega^{3}=\\omega^{4}+\\omega+6-4\\omega^{2}-4\\omega^{3}\\)"
+            },
+            {
+              "explain": "Reduce \\(\\omega^{6}=\\omega\\) and \\(\\omega^{5}=1\\) (done above). Now form \\(z^{4}+5z^{2}+5\\).",
+              "work": "\\(z^{4}+5z^{2}+5=\\left(\\omega^{4}+\\omega+6-4\\omega^{2}-4\\omega^{3}\\right)+5\\omega^{2}+5\\omega^{3}-10+5\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(\\omega^{2}:\\ -4+5=1\\); \\(\\omega^{3}:\\ -4+5=1\\); constants \\(6-10+5=1\\).",
+              "work": "\\(=\\omega^{4}+\\omega^{3}+\\omega^{2}+\\omega+1\\)"
+            },
+            {
+              "explain": "By part (i) this is 0, so \\(z=\\omega-\\omega^{4}\\) satisfies \\(z^{4}+5z^{2}+5=0\\).",
+              "work": "\\(=0\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the cross-term \\(-2\\omega^{5}\\); C is numerical, not a proof, and only for one root; D wrongly uses \\(\\omega^{5}=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Square the expression, reduce powers with omega to the fifth equals 1, then use part (i)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }

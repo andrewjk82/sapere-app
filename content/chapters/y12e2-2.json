@@ -807,6 +807,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q12a1",
+          "type": "mc",
+          "stem": "Write the following mathematical statement in words. \\(\\forall k\\in\\mathbb{Z}^{+},\\ \\exists x\\in\\mathbb{Z}\\) such that \\(x^{2}+x-k=0\\)",
+          "difficulty": "easy",
+          "options": [
+            "For all positive integers \\(k\\), there exists some integer \\(x\\) such that \\(x^{2}+x-k=0\\).",
+            "There exists a positive integer \\(k\\) such that, for all integers \\(x\\), \\(x^{2}+x-k=0\\).",
+            "For some positive integers \\(k\\), there is an integer \\(x\\) with \\(x^{2}+x-k=0\\).",
+            "For all integers \\(x\\), there exists a positive integer \\(k\\) such that \\(x^{2}+x-k=0\\)."
+          ],
+          "answer": 0,
+          "hint": "Read the symbols in order: \\(\\forall\\) means \\\"for all\\\", \\(\\exists\\) means \\\"there exists\\\", \\(\\mathbb{Z}^{+}\\) is the positive integers, \\(\\mathbb{Z}\\) the integers. The ORDER of the quantifiers matters.",
+          "steps": [
+            {
+              "explain": "\\(\\forall k\\in\\mathbb{Z}^{+}\\) reads \\\"for all positive integers \\(k\\)\\\".",
+              "work": "\\(\\forall k\\in\\mathbb{Z}^{+}\\)"
+            },
+            {
+              "explain": "\\(\\exists x\\in\\mathbb{Z}\\) reads \\\"there exists an integer \\(x\\)\\\" (\\\"some\\\" integer, at least one).",
+              "work": "\\(\\exists x\\in\\mathbb{Z}\\)"
+            },
+            {
+              "explain": "\\\"such that \\(x^{2}+x-k=0\\)\\\" is the condition. Keeping the order (first \\(k\\), then \\(x\\)): \\\"For all positive integers \\(k\\), there exists some integer \\(x\\) such that \\(x^{2}+x-k=0\\).\\\"",
+              "work": "\\(\\forall k\\ \\exists x:\\ x^{2}+x-k=0\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps the order (one \\(x\\) that works for every \\(k\\)); C weakens \\\"for all\\\" to \\\"for some\\\"; D swaps the roles of \\(k\\) and \\(x\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write the following mathematical statement in words",
+              "note": "Read the quantifiers in order: for all k, there exists x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -942,6 +992,60 @@
               "note": "'∀x ∃y' lets y depend on x; '∃x ∀y' needs one x that works for every y."
             }
           ]
+        },
+        {
+          "id": "glenwood2023-y12e2-q2",
+          "type": "mc",
+          "stem": "What is the contrapositive of the following statement? “If you’re happy and you know it, then you will clap your hands.”",
+          "difficulty": "medium",
+          "options": [
+            "If you clap your hands, then you’re happy and you know it.",
+            "If you clap your hands, then you’re either not happy or you don’t know it.",
+            "If you don’t clap your hands, then you’re not happy and you don’t know it.",
+            "If you don’t clap your hands, then you’re either not happy or you don’t know it."
+          ],
+          "answer": 3,
+          "hint": "The contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\): swap the two parts AND negate both. Remember De Morgan's law when negating \\\"and\\\".",
+          "steps": [
+            {
+              "explain": "Identify the two parts. \\(P\\): \\\"you’re happy AND you know it\\\". \\(Q\\): \\\"you will clap your hands\\\".",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "The contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\). Negate \\(Q\\): \\\"you don’t clap your hands\\\".",
+              "work": "\\(\\neg Q:\\ \\text{you don't clap your hands}\\)"
+            },
+            {
+              "explain": "Negate \\(P\\) using De Morgan's law: the negation of \\\"A and B\\\" is \\\"not A OR not B\\\", so \\(\\neg P\\): \\\"you’re not happy OR you don’t know it\\\".",
+              "work": "\\(\\neg(A\\wedge B)=\\neg A\\vee\\neg B\\)"
+            },
+            {
+              "explain": "Put them together: \\\"If you don’t clap your hands, then you’re either not happy or you don’t know it.\\\"",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "A is the converse (swap only); B swaps but does not negate \\(Q\\); C negates \\(P\\) as \\\"not happy AND don't know it\\\" (wrong De Morgan).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the contrapositive of the following statement",
+              "note": "Swap and negate both parts; \"and\" becomes \"or\" when negated."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1159,6 +1263,114 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q3",
+          "type": "mc",
+          "stem": "It is given that \\(a,b,c\\) and \\(d\\) are consecutive integers. Which of the following statements may be false?",
+          "difficulty": "medium",
+          "options": [
+            "\\(abcd\\) is divisible by 3",
+            "\\(abcd\\) is divisible by 8",
+            "\\(a+b+c+d\\) is divisible by 2",
+            "\\(a+b+c+d\\) is divisible by 4"
+          ],
+          "answer": 3,
+          "hint": "Write the four integers as \\(k,\\ k+1,\\ k+2,\\ k+3\\). Test the sum algebraically, and for the product think about multiples of 2, 3 and 4 among four consecutive numbers.",
+          "steps": [
+            {
+              "explain": "Let the integers be \\(k,\\ k+1,\\ k+2,\\ k+3\\). Their sum is",
+              "work": "\\(a+b+c+d=k+(k+1)+(k+2)+(k+3)=4k+6\\)"
+            },
+            {
+              "explain": "\\(4k+6=2(2k+3)\\) is always even, so statement C is always true.",
+              "work": "\\(4k+6=2(2k+3)\\)"
+            },
+            {
+              "explain": "\\(4k+6=4(k+1)+2\\) leaves remainder 2 when divided by 4, so it is NEVER divisible by 4: statement D is false (so it \\\"may be false\\\").",
+              "work": "\\(4k+6=4(k+1)+2\\)"
+            },
+            {
+              "explain": "Statements A and B are always true: among 4 consecutive integers one is a multiple of 3, and there are two even numbers, one of which is a multiple of 4, so the product has a factor \\(2\\times4=8\\).",
+              "work": "\\(3\\mid abcd,\\qquad 8\\mid abcd\\)"
+            },
+            {
+              "explain": "Answer: D is the statement that may be false.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following statements may be false",
+              "note": "Write consecutive integers as k, k+1, k+2, k+3 and simplify the sum."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q12a2",
+          "type": "mc",
+          "stem": "Use proof by contradiction to prove the following statement: “If \\(p\\) is odd, then \\(x^{2}+x-p^{2}=0\\) has no integer solution.” Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Assume \\(p\\) is odd and \\(x^{2}+x-p^{2}=0\\) has an integer solution. Let \\(p=2k+1\\), so \\(p^{2}=4k^{2}+4k+1\\) is odd. If \\(x=2m\\): \\(x^{2}+x=4m^{2}+2m\\) is even, so \\(x^{2}+x-p^{2}\\) is even \\(-\\) odd \\(=\\) odd \\(\\ne0\\). If \\(x=2n+1\\): \\(x^{2}+x=4n^{2}+6n+2\\) is even, so again the expression is odd \\(\\ne0\\). So \\(x\\) is neither even nor odd, a contradiction.",
+            "Assume \\(p\\) is even and \\(x^{2}+x-p^{2}=0\\) has an integer solution. Let \\(p=2k\\), so \\(p^{2}\\) is even. Then \\(x^{2}+x\\) is even, which is possible for any integer \\(x\\), so there is no contradiction and the statement is true.",
+            "Assume \\(p\\) is odd and \\(x^{2}+x-p^{2}=0\\) has an integer solution. If \\(x=2m\\) then \\(x^{2}+x-p^{2}\\) is odd \\(\\ne0\\). So \\(x\\) cannot be even, which is a contradiction.",
+            "Assume \\(p\\) is odd and \\(x^{2}+x-p^{2}=0\\) has an integer solution. For \\(x=2n+1\\): \\(x^{2}+x\\) is odd, and odd \\(-\\) odd \\(=0\\), so a solution exists, which contradicts the statement."
+          ],
+          "answer": 0,
+          "hint": "Contradiction: assume the statement is FALSE, i.e. \\(p\\) odd AND an integer \\(x\\) solves the equation. Split into cases (\\(x\\) even, \\(x\\) odd), show the left side is odd in both, so it can never equal 0.",
+          "steps": [
+            {
+              "explain": "Negate the statement. \\\"If \\(P\\) then \\(Q\\)\\\" is false when \\(P\\) is true and \\(Q\\) is false: assume \\(p\\) is odd AND \\(x^{2}+x-p^{2}=0\\) HAS an integer solution \\(x\\).",
+              "work": "\\(p=2k+1,\\ k\\in\\mathbb{Z}\\ \\Rightarrow\\ p^{2}=4k^{2}+4k+1=2(2k^{2}+2k)+1\\ (\\text{odd})\\)"
+            },
+            {
+              "explain": "Case I: \\(x\\) even, \\(x=2m\\). Then \\(x^{2}+x=4m^{2}+2m=2(2m^{2}+m)\\) is even, so even \\(-\\) odd \\(=\\) odd.",
+              "work": "\\(x^{2}+x-p^{2}=\\text{even}-\\text{odd}=\\text{odd}\\ne0\\)"
+            },
+            {
+              "explain": "Case II: \\(x\\) odd, \\(x=2n+1\\). Then \\(x^{2}+x=4n^{2}+4n+1+2n+1=2(2n^{2}+3n+1)\\) is even (note \\(x(x+1)\\) is always even), so again even \\(-\\) odd \\(=\\) odd.",
+              "work": "\\(x^{2}+x-p^{2}=\\text{odd}\\ne0\\)"
+            },
+            {
+              "explain": "Every integer is even or odd, and both cases give a nonzero value, so no integer \\(x\\) satisfies the equation. This contradicts our assumption, so the original statement is true.",
+              "work": "\\(\\therefore\\ p\\text{ odd}\\Rightarrow x^{2}+x-p^{2}=0\\text{ has no integer solution}\\)"
+            },
+            {
+              "explain": "Why not the others: B assumes the wrong thing (\\(p\\) even); C checks only the case \\(x\\) even; D wrongly claims \\(x^{2}+x\\) is odd (it is always even).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use proof by contradiction to prove the following statement",
+              "note": "Assume p odd and an integer solution exists; show x(x+1) is even but p squared is odd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2750,6 +2962,164 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "glenwood2023-y12e2-q16a1",
+          "type": "mc",
+          "stem": "Given that \\(a>0,\\ b>0\\), prove that \\(a+b\\ge2\\sqrt{ab}\\). Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\left(\\sqrt{a}-\\sqrt{b}\\right)^{2}\\ge0\\Rightarrow a-2\\sqrt{a}\\sqrt{b}+b\\ge0\\Rightarrow a+b\\ge2\\sqrt{ab}\\).",
+            "\\((a-b)^{2}\\ge0\\Rightarrow a^{2}-2ab+b^{2}\\ge0\\Rightarrow a^{2}+b^{2}\\ge2ab\\), so \\(a+b\\ge2\\sqrt{ab}\\).",
+            "The arithmetic mean \\(\\dfrac{a+b}{2}\\) is always at least the geometric mean \\(\\sqrt{ab}\\) (AM-GM inequality), so \\(a+b\\ge2\\sqrt{ab}\\).",
+            "Try \\(a=4,\\ b=1\\): \\(4+1=5\\ge2\\sqrt{4}=4\\). It works, so it is always true."
+          ],
+          "answer": 0,
+          "hint": "Start from something that is always true, a square is never negative: \\(\\left(\\sqrt{a}-\\sqrt{b}\\right)^{2}\\ge0\\). Expand and rearrange.",
+          "steps": [
+            {
+              "explain": "Because \\(a>0\\) and \\(b>0\\), \\(\\sqrt{a}\\) and \\(\\sqrt{b}\\) are real, and the square of any real number is \\(\\ge0\\).",
+              "work": "\\(\\left(\\sqrt{a}-\\sqrt{b}\\right)^{2}\\ge0\\)"
+            },
+            {
+              "explain": "Expand: \\(\\left(\\sqrt{a}\\right)^{2}=a\\), \\(\\left(\\sqrt{b}\\right)^{2}=b\\) and the middle term is \\(-2\\sqrt{a}\\sqrt{b}=-2\\sqrt{ab}\\).",
+              "work": "\\(a-2\\sqrt{ab}+b\\ge0\\)"
+            },
+            {
+              "explain": "Add \\(2\\sqrt{ab}\\) to both sides.",
+              "work": "\\(a+b\\ge2\\sqrt{ab}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B proves a different inequality (\\(a^{2}+b^{2}\\ge2ab\\)); C quotes the very statement we have to prove (circular); D tests one example, which is not a proof.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that",
+              "note": "Start with a square that is at least zero: root a minus root b, squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q16a2",
+          "type": "mc",
+          "stem": "Hence, show that \\(\\sec^{2}x\\ge2\\tan x\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "Let \\(a=\\tan^{2}x\\) and \\(b=1\\) in part (i): \\(\\tan^{2}x+1\\ge2\\sqrt{\\tan^{2}x\\cdot1}\\), so \\(\\sec^{2}x\\ge2|\\tan x|\\ge2\\tan x\\).",
+            "Let \\(a=\\sec^{2}x\\) and \\(b=1\\) in part (i): \\(\\sec^{2}x+1\\ge2\\sqrt{\\sec^{2}x}=2\\sec x\\).",
+            "Let \\(a=\\tan x\\) and \\(b=1\\) in part (i): \\(\\tan x+1\\ge2\\sqrt{\\tan x}\\), so \\(\\sec^{2}x\\ge2\\tan x\\).",
+            "Let \\(a=\\sin^{2}x\\) and \\(b=\\cos^{2}x\\) in part (i): \\(\\sin^{2}x+\\cos^{2}x\\ge2\\sin x\\cos x\\), so \\(\\sec^{2}x\\ge2\\tan x\\)."
+          ],
+          "answer": 0,
+          "hint": "Choose \\(a\\) and \\(b\\) in part (i) so that \\(a+b\\) becomes \\(\\sec^{2}x\\). The identity \\(\\tan^{2}x+1=\\sec^{2}x\\) suggests \\(a=\\tan^{2}x\\), \\(b=1\\). Remember \\(\\sqrt{\\tan^{2}x}=|\\tan x|\\).",
+          "steps": [
+            {
+              "explain": "We want \\(a+b=\\sec^{2}x\\). Use \\(\\sec^{2}x=\\tan^{2}x+1\\), so take \\(a=\\tan^{2}x\\) and \\(b=1\\) (both positive or non-negative; \\(\\tan^{2}x>0\\) when \\(\\tan x\\ne0\\)).",
+              "work": "\\(a=\\tan^{2}x,\\qquad b=1\\)"
+            },
+            {
+              "explain": "Apply \\(a+b\\ge2\\sqrt{ab}\\).",
+              "work": "\\(\\tan^{2}x+1\\ge2\\sqrt{\\tan^{2}x\\times1}=2|\\tan x|\\)"
+            },
+            {
+              "explain": "Replace the left side by \\(\\sec^{2}x\\). Finally \\(|\\tan x|\\ge\\tan x\\) (the absolute value is never smaller), so \\(2|\\tan x|\\ge2\\tan x\\).",
+              "work": "\\(\\sec^{2}x\\ge2|\\tan x|\\ge2\\tan x\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B gives \\(\\sec^{2}x+1\\), not \\(\\sec^{2}x\\); C does not produce \\(\\sec^{2}x\\) on the left; D produces \\(1\\ge\\sin2x\\), a different inequality.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, show that",
+              "note": "Take a = tan squared x and b = 1, and remember root of tan squared is |tan x|."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q16a3",
+          "type": "mc",
+          "stem": "Prove that, for all integers \\(n\\ge0\\) and \\(x\\in\\left(0,\\dfrac{\\pi}{2}\\right)\\), \\(\\sec^{2n}x+\\operatorname{cosec}^{2n}x\\ge2^{n+1}\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "From (ii): \\(\\sec^{2}x\\ge2\\tan x\\) and (by the same working with \\(\\cot x\\)) \\(\\operatorname{cosec}^{2}x\\ge2\\cot x\\). All terms are positive for \\(x\\in\\left(0,\\dfrac{\\pi}{2}\\right)\\), so raise to the power \\(n\\): \\(\\sec^{2n}x\\ge2^{n}\\tan^{n}x\\) and \\(\\operatorname{cosec}^{2n}x\\ge2^{n}\\cot^{n}x\\). Add: \\(\\sec^{2n}x+\\operatorname{cosec}^{2n}x\\ge2^{n}\\left(\\tan^{n}x+\\cot^{n}x\\right)\\ge2^{n}\\cdot2\\sqrt{\\tan^{n}x\\cot^{n}x}=2^{n}\\cdot2=2^{n+1}\\).",
+            "Since \\(\\sec x\\ge1\\) and \\(\\operatorname{cosec}x\\ge1\\), we get \\(\\sec^{2n}x\\ge1\\) and \\(\\operatorname{cosec}^{2n}x\\ge1\\). Adding, \\(\\sec^{2n}x+\\operatorname{cosec}^{2n}x\\ge2\\), which is at least \\(2^{n+1}\\) for all \\(n\\).",
+            "By part (ii) with \\(n=1\\): \\(\\sec^{2}x+\\operatorname{cosec}^{2}x\\ge2\\tan x+2\\cot x\\ge4=2^{2}\\). So the statement is true for all \\(n\\).",
+            "Using AM-GM only: \\(\\sec^{2n}x+\\operatorname{cosec}^{2n}x\\ge2\\sqrt{\\sec^{2n}x\\operatorname{cosec}^{2n}x}\\). This is always at least \\(2^{n+1}\\)."
+          ],
+          "answer": 0,
+          "hint": "Use part (ii) twice (once for \\(\\sec^{2}x\\) and once for \\(\\operatorname{cosec}^{2}x\\) with \\(\\cot x\\)), raise the inequalities to the power \\(n\\), add them, and use part (i) (AM-GM) on \\(\\tan^{n}x+\\cot^{n}x\\). Note \\(\\tan x\\cot x=1\\).",
+          "steps": [
+            {
+              "explain": "Part (ii) gives \\(\\sec^{2}x\\ge2\\tan x\\). Similarly with \\(a=\\cot^{2}x,\\ b=1\\): \\(\\operatorname{cosec}^{2}x\\ge2\\cot x\\). For \\(x\\in\\left(0,\\dfrac{\\pi}{2}\\right)\\) all these quantities are POSITIVE.",
+              "work": "\\(\\sec^{2}x\\ge2\\tan x,\\qquad\\operatorname{cosec}^{2}x\\ge2\\cot x\\)"
+            },
+            {
+              "explain": "Both sides are positive, so we can raise both sides to the power \\(n\\) (the inequality is preserved).",
+              "work": "\\(\\sec^{2n}x\\ge2^{n}\\tan^{n}x,\\qquad\\operatorname{cosec}^{2n}x\\ge2^{n}\\cot^{n}x\\)"
+            },
+            {
+              "explain": "Add the two inequalities and take out the common factor \\(2^{n}\\).",
+              "work": "\\(\\sec^{2n}x+\\operatorname{cosec}^{2n}x\\ge2^{n}\\left(\\tan^{n}x+\\cot^{n}x\\right)\\)"
+            },
+            {
+              "explain": "Part (i) with \\(a=\\tan^{n}x,\\ b=\\cot^{n}x\\) (positive): \\(\\tan^{n}x+\\cot^{n}x\\ge2\\sqrt{\\tan^{n}x\\cot^{n}x}\\). Since \\(\\tan x\\cot x=1\\), the product is 1, so the right side is \\(2\\).",
+              "work": "\\(\\tan^{n}x+\\cot^{n}x\\ge2\\sqrt{(\\tan x\\cot x)^{n}}=2\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(\\sec^{2n}x+\\operatorname{cosec}^{2n}x\\ge2^{n}\\times2=2^{n+1}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B proves only \\(\\ge2\\) (too weak for \\(n\\ge1\\)); C covers only \\(n=1\\); D does not give the power of 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that, for all integers",
+              "note": "Use part (ii) for sec and cosec, raise to the power n, then AM-GM on tan to the n plus cot to the n."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3554,6 +3924,188 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q14a",
+          "type": "mc",
+          "stem": "Let \\(a_{n}\\) be the sequence defined recursively by \\(a_{0}=0\\) and \\(a_{n}=a_{n-1}+3n^{2}\\) for all \\(n\\ge1\\). Use mathematical induction to prove that for all integers \\(n\\ge0\\), \\(a_{n}=\\dfrac{n(n+1)(2n+1)}{2}\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Base case \\(n=0\\): \\(a_{0}=0\\) and \\(\\dfrac{0(1)(1)}{2}=0\\) ✓. Assume true for \\(n=k\\): \\(a_{k}=\\dfrac{k(k+1)(2k+1)}{2}\\). For \\(n=k+1\\): \\(a_{k+1}=a_{k}+3(k+1)^{2}=\\dfrac{k(k+1)(2k+1)}{2}+3(k+1)^{2}=\\dfrac{(k+1)\\left[k(2k+1)+6(k+1)\\right]}{2}=\\dfrac{(k+1)(2k^{2}+7k+6)}{2}=\\dfrac{(k+1)(k+2)(2k+3)}{2}\\), which is the formula for \\(n=k+1\\). True for \\(n=0\\) and \\(k\\Rightarrow k+1\\), so true for all \\(n\\ge0\\) by induction.",
+            "Base case \\(n=1\\): \\(a_{1}=0+3=3\\) and \\(\\dfrac{1(2)(3)}{2}=3\\) ✓. The inductive step is the same as for the other proof. Hence true for all \\(n\\ge1\\) by induction.",
+            "Base case \\(n=0\\) ✓. Assume true for \\(n=k\\). For \\(n=k+1\\): \\(a_{k+1}=\\dfrac{k(k+1)(2k+1)}{2}+3(k+1)^{2}=\\dfrac{(k+1)\\left[k(2k+1)+6(k+1)\\right]}{2}=\\dfrac{(k+1)(2k^{2}+7k+6)}{2}\\). This is the same as the formula for \\(n=k+1\\), so it is true.",
+            "Base case \\(n=0\\) ✓. Assume true for \\(n=k+1\\): \\(a_{k+1}=\\dfrac{(k+1)(k+2)(2k+3)}{2}\\). Then \\(a_{k}=a_{k+1}-3(k+1)^{2}=\\dfrac{k(k+1)(2k+1)}{2}\\), which is the formula for \\(n=k\\). So true for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Four parts: (1) BASE CASE \\(n=0\\) (the statement is for \\(n\\ge0\\)); (2) ASSUME true for \\(n=k\\); (3) PROVE for \\(n=k+1\\) using the recursion \\(a_{k+1}=a_{k}+3(k+1)^{2}\\), factorising \\((k+1)\\); (4) CONCLUDE.",
+          "steps": [
+            {
+              "explain": "Base case. The claim is for ALL \\(n\\ge0\\), so the base case is \\(n=0\\), not \\(n=1\\).",
+              "work": "\\(a_{0}=0,\\qquad\\dfrac{0(0+1)(2\\cdot0+1)}{2}=0\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Inductive hypothesis: assume the formula is true for \\(n=k\\) (some integer \\(k\\ge0\\)).",
+              "work": "\\(a_{k}=\\dfrac{k(k+1)(2k+1)}{2}\\)"
+            },
+            {
+              "explain": "Goal: show \\(a_{k+1}=\\dfrac{(k+1)(k+2)(2k+3)}{2}\\). Start from the recursive definition and use the hypothesis for \\(a_{k}\\).",
+              "work": "\\(a_{k+1}=a_{k}+3(k+1)^{2}=\\dfrac{k(k+1)(2k+1)}{2}+3(k+1)^{2}\\)"
+            },
+            {
+              "explain": "Take out the common factor \\((k+1)\\) and put over a common denominator (\\(3(k+1)^{2}=\\dfrac{6(k+1)^{2}}{2}\\)).",
+              "work": "\\(=\\dfrac{(k+1)\\left[k(2k+1)+6(k+1)\\right]}{2}=\\dfrac{(k+1)\\left(2k^{2}+k+6k+6\\right)}{2}\\)"
+            },
+            {
+              "explain": "Factorise \\(2k^{2}+7k+6=(2k+3)(k+2)\\) (check: \\(2k^{2}+4k+3k+6\\)).",
+              "work": "\\(a_{k+1}=\\dfrac{(k+1)(k+2)(2k+3)}{2}=\\dfrac{(k+1)\\left((k+1)+1\\right)\\left(2(k+1)+1\\right)}{2}\\)"
+            },
+            {
+              "explain": "This is the formula with \\(n=k+1\\). Conclusion: true for \\(n=0\\), and if true for \\(k\\) then true for \\(k+1\\), so by mathematical induction true for all integers \\(n\\ge0\\).",
+              "work": "\\(\\therefore\\ a_{n}=\\dfrac{n(n+1)(2n+1)}{2}\\ \\ \\forall n\\ge0\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the wrong base case (\\(n=0\\) is part of the claim); C never writes the final factorisation, so the result is not shown to match; D assumes the \\(k+1\\) case (circular).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use mathematical induction to prove that",
+              "note": "Base case n = 0, assume n = k, prove n = k + 1 by factorising (k + 1)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q15b1",
+          "type": "mc",
+          "stem": "Prove by mathematical induction, for \\(z\\ne1\\), that \\(1+2z+3z^{2}+\\cdots+nz^{n-1}=\\dfrac{1-(n+1)z^{n}+nz^{n+1}}{(1-z)^{2}}\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(n=1\\): RHS \\(=\\dfrac{1-2z+z^{2}}{(1-z)^{2}}=\\dfrac{(1-z)^{2}}{(1-z)^{2}}=1=\\) LHS ✓. Assume true for \\(n=k\\). For \\(n=k+1\\): LHS \\(=\\dfrac{1-(k+1)z^{k}+kz^{k+1}}{(1-z)^{2}}+(k+1)z^{k}=\\dfrac{1-(k+1)z^{k}+kz^{k+1}+(k+1)z^{k}(1-2z+z^{2})}{(1-z)^{2}}=\\dfrac{1-(k+2)z^{k+1}+(k+1)z^{k+2}}{(1-z)^{2}}\\), which is the RHS for \\(n=k+1\\). So true for all \\(n\\ge1\\) by induction.",
+            "\\(n=0\\): LHS \\(=0\\) and RHS \\(=\\dfrac{1-z^{0}+0}{(1-z)^{2}}=0\\) ✓. The inductive step as in the other proof. True for all \\(n\\ge0\\).",
+            "\\(n=1\\) ✓. Assume true for \\(n=k\\). For \\(n=k+1\\): LHS \\(=\\dfrac{1-(k+1)z^{k}+kz^{k+1}}{(1-z)^{2}}+(k+1)z^{k}=\\dfrac{1-(k+1)z^{k}+kz^{k+1}+(k+1)z^{k}(1-z)^{2}}{(1-z)^{2}}\\). This is the required result.",
+            "\\(n=1\\) ✓. Assume true for \\(n=k+1\\): \\(1+2z+\\cdots+(k+1)z^{k}=\\dfrac{1-(k+2)z^{k+1}+(k+1)z^{k+2}}{(1-z)^{2}}\\). Remove the last term to get the case \\(n=k\\). So true for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Base case \\(n=1\\) (the sum starts at 1 term). Assume for \\(n=k\\); for \\(n=k+1\\) ADD the next term \\((k+1)z^{k}\\) to the left side, put everything over \\((1-z)^{2}\\), expand \\((1-z)^{2}=1-2z+z^{2}\\), and simplify to the required form.",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\) (not \\(n=0\\)): LHS is the single term 1. RHS: \\(\\dfrac{1-2z+z^{2}}{(1-z)^{2}}\\).",
+              "work": "\\(\\dfrac{1-(1+1)z^{1}+1\\cdot z^{2}}{(1-z)^{2}}=\\dfrac{(1-z)^{2}}{(1-z)^{2}}=1=\\text{LHS}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Assume true for \\(n=k\\).",
+              "work": "\\(1+2z+\\cdots+kz^{k-1}=\\dfrac{1-(k+1)z^{k}+kz^{k+1}}{(1-z)^{2}}\\quad(\\ast)\\)"
+            },
+            {
+              "explain": "For \\(n=k+1\\) add the next term \\((k+1)z^{k}\\) to the LHS and use \\((\\ast)\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{1-(k+1)z^{k}+kz^{k+1}}{(1-z)^{2}}+(k+1)z^{k}\\)"
+            },
+            {
+              "explain": "Common denominator \\((1-z)^{2}\\): multiply the extra term by \\((1-z)^{2}=1-2z+z^{2}\\).",
+              "work": "\\(=\\dfrac{1-(k+1)z^{k}+kz^{k+1}+(k+1)z^{k}\\left(1-2z+z^{2}\\right)}{(1-z)^{2}}\\)"
+            },
+            {
+              "explain": "Expand the last product and cancel the \\(\\pm(k+1)z^{k}\\) terms.",
+              "work": "\\(=\\dfrac{1-(k+1)z^{k}+kz^{k+1}+(k+1)z^{k}-2(k+1)z^{k+1}+(k+1)z^{k+2}}{(1-z)^{2}}\\)"
+            },
+            {
+              "explain": "Collect \\(z^{k+1}\\): \\(k-2(k+1)=-(k+2)\\).",
+              "work": "\\(=\\dfrac{1-(k+2)z^{k+1}+(k+1)z^{k+2}}{(1-z)^{2}}=\\text{RHS for }n=k+1\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Conclusion: true for \\(n=1\\) and \\(k\\Rightarrow k+1\\), so true for all integers \\(n\\ge1\\) by mathematical induction. Why not the others: B uses the wrong base case; C stops before simplifying; D assumes the \\(k+1\\) case.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction",
+              "note": "Base n = 1, add the next term to the hypothesis, common denominator, expand and collect."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "glenwood2023-y12e2-q15b2",
+          "type": "mc",
+          "stem": "Hence, or otherwise, prove that \\(2+\\dfrac{3}{2}+\\dfrac{4}{2^{2}}+\\cdots+\\dfrac{n}{2^{n-2}}=6-\\dfrac{n+2}{2^{n-2}}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Put \\(z=\\dfrac{1}{2}\\): \\(S=1+\\dfrac{2}{2}+\\dfrac{3}{2^{2}}+\\cdots+\\dfrac{n}{2^{n-1}}=4\\left[1-\\dfrac{n+1}{2^{n}}+\\dfrac{n}{2^{n+1}}\\right]=4-\\dfrac{n+2}{2^{n-1}}\\). Remove the first term and double: \\(2(S-1)=2\\left(3-\\dfrac{n+2}{2^{n-1}}\\right)=6-\\dfrac{n+2}{2^{n-2}}\\).",
+            "Put \\(z=2\\): \\(1+4+12+\\cdots\\) does not give the series, so the formula cannot be used.",
+            "Put \\(z=\\dfrac{1}{2}\\): \\(S=4-\\dfrac{n+2}{2^{n-1}}\\), and this is the required series, so \\(2+\\dfrac{3}{2}+\\cdots+\\dfrac{n}{2^{n-2}}=4-\\dfrac{n+2}{2^{n-1}}\\).",
+            "Put \\(z=\\dfrac{1}{2}\\): \\(S=4-\\dfrac{n+2}{2^{n-1}}\\). Remove the first term: \\(S-1=3-\\dfrac{n+2}{2^{n-1}}\\), which is the required series."
+          ],
+          "answer": 0,
+          "hint": "Use the formula from (i) with \\(z=\\dfrac{1}{2}\\) to get \\(S=1+\\dfrac{2}{2}+\\dfrac{3}{2^{2}}+\\cdots\\). The target series is NOT \\(S\\): it starts at the second term of \\(S\\) and every term is doubled.",
+          "steps": [
+            {
+              "explain": "Substitute \\(z=\\dfrac{1}{2}\\) into the left side of (i).",
+              "work": "\\(S=1+2\\left(\\dfrac{1}{2}\\right)+3\\left(\\dfrac{1}{2}\\right)^{2}+\\cdots+n\\left(\\dfrac{1}{2}\\right)^{n-1}=1+\\dfrac{2}{2}+\\dfrac{3}{2^{2}}+\\cdots+\\dfrac{n}{2^{n-1}}\\)"
+            },
+            {
+              "explain": "Right side with \\(z=\\dfrac{1}{2}\\): \\((1-z)^{2}=\\dfrac{1}{4}\\), so dividing by it multiplies by 4.",
+              "work": "\\(S=4\\left[1-\\dfrac{n+1}{2^{n}}+\\dfrac{n}{2^{n+1}}\\right]=4-\\dfrac{4(n+1)}{2^{n}}+\\dfrac{4n}{2^{n+1}}\\)"
+            },
+            {
+              "explain": "Common denominator \\(2^{n+1}\\): \\(\\dfrac{4(n+1)}{2^{n}}=\\dfrac{8(n+1)}{2^{n+1}}\\).",
+              "work": "\\(S=4-\\dfrac{8(n+1)-4n}{2^{n+1}}=4-\\dfrac{4n+8}{2^{n+1}}=4-\\dfrac{n+2}{2^{n-1}}\\)"
+            },
+            {
+              "explain": "The target series starts at \\(\\dfrac{2}{2^{0}}\\) which is the SECOND term of \\(S\\) doubled: each term \\(\\dfrac{k}{2^{k-2}}=2\\cdot\\dfrac{k}{2^{k-1}}\\). So remove the first term (1) from \\(S\\) and double.",
+              "work": "\\(2+\\dfrac{3}{2}+\\cdots+\\dfrac{n}{2^{n-2}}=2(S-1)\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(2(S-1)=2\\left(3-\\dfrac{n+2}{2^{n-1}}\\right)=6-\\dfrac{n+2}{2^{n-2}}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Check \\(n=2\\): LHS \\(=2\\); RHS \\(=6-\\dfrac{4}{1}=2\\) ✓. \\(n=3\\): LHS \\(=2+\\dfrac{3}{2}=3.5\\); RHS \\(=6-\\dfrac{5}{2}=3.5\\) ✓. Option C forgets to remove the first term and double; option D forgets to double.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise, prove that",
+              "note": "Put z = 1/2 in the sum formula, then remove the first term and double."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
+            "school": "Glenwood High School",
             "grade": "12",
             "origin": "teacher"
           }
