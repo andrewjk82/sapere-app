@@ -11790,6 +11790,106 @@
             "course": "Advanced",
             "sourceQuestion": "Q12c, 2019 HSC"
           }
+        },
+        {
+          "id": "knox2021-y12a-q15b1",
+          "type": "mc",
+          "stem": "An iron has accidentally been left on. Fortunately, it switches itself off after a period of time. The temperature of the iron can be modelled by the equation \\(T=22+162(1.2)^{-0.5t}\\), where \\(T\\) is the temperature of the iron’s surface, in degrees Celsius, \\(t\\) minutes after the iron switches itself off. What is the temperature of the iron 6 minutes after it has switched off? Give your answer to the nearest degree.",
+          "difficulty": "easy",
+          "options": [
+            "\\(116^{\\circ}\\mathrm{C}\\)",
+            "\\(184^{\\circ}\\mathrm{C}\\)",
+            "\\(94^{\\circ}\\mathrm{C}\\)",
+            "\\(100^{\\circ}\\mathrm{C}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(t=6\\) into the formula and evaluate with a calculator (watch the NEGATIVE index).",
+          "steps": [
+            {
+              "explain": "Substitute \\(t=6\\): the index is \\(-0.5\\times6=-3\\).",
+              "work": "\\(T=22+162(1.2)^{-0.5(6)}=22+162(1.2)^{-3}\\)"
+            },
+            {
+              "explain": "\\((1.2)^{-3}=\\dfrac{1}{1.2^{3}}=\\dfrac{1}{1.728}=0.5787\\).",
+              "work": "\\(T=22+162\\times0.5787=22+93.75\\)"
+            },
+            {
+              "explain": "Add and round.",
+              "work": "\\(T=115.75\\approx116^{\\circ}\\mathrm{C}\\)"
+            },
+            {
+              "explain": "Check: at \\(t=0\\), \\(T=22+162=184\\) (option B, the starting temperature), and the iron cools towards 22°C, so a value between 22 and 184 ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the temperature of the iron 6 minutes after",
+              "note": "Substitute t = 6; the index is −3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q15b2",
+          "type": "mc",
+          "stem": "An iron has accidentally been left on. Fortunately, it switches itself off after a period of time. The temperature of the iron can be modelled by the equation \\(T=22+162(1.2)^{-0.5t}\\), where \\(T\\) is the temperature of the iron’s surface, in degrees Celsius, \\(t\\) minutes after the iron switches itself off. At what rate is the temperature of the iron’s surface changing after 6 minutes?",
+          "difficulty": "hard",
+          "options": [
+            "\\(-8.5^{\\circ}\\mathrm{C}\\) per minute",
+            "\\(8.5^{\\circ}\\mathrm{C}\\) per minute",
+            "\\(-46.9^{\\circ}\\mathrm{C}\\) per minute",
+            "\\(-1.5^{\\circ}\\mathrm{C}\\) per minute"
+          ],
+          "answer": 0,
+          "hint": "Rate of change means the DERIVATIVE \\(\\dfrac{dT}{dt}\\). For \\(a^{kt}\\) the derivative is \\(k\\ln a\\cdot a^{kt}\\) (do not forget \\(\\ln1.2\\)). Then substitute \\(t=6\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(T=22+162(1.2)^{-0.5t}\\): \\(\\dfrac{d}{dt}a^{kt}=k\\ln a\\cdot a^{kt}\\) with \\(a=1.2\\) and \\(k=-0.5\\). The constant 22 disappears.",
+              "work": "\\(\\dfrac{dT}{dt}=162(-0.5)(1.2)^{-0.5t}\\ln1.2=-81(1.2)^{-0.5t}\\ln1.2\\)"
+            },
+            {
+              "explain": "Substitute \\(t=6\\): \\((1.2)^{-3}=0.5787\\) and \\(\\ln1.2=0.18232\\).",
+              "work": "\\(\\dfrac{dT}{dt}=-81\\times0.5787\\times0.18232\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(\\dfrac{dT}{dt}\\approx-8.5\\ ^{\\circ}\\mathrm{C}\\ \\text{per minute}\\)"
+            },
+            {
+              "explain": "The NEGATIVE sign means the iron is COOLING. Why not the others: B has the wrong sign; C omits \\(\\ln1.2\\) (the printed marking scheme notes this error gives \\(-46.9\\)); D is an arithmetic slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "At what rate is the temperature of the iron’s surface changing",
+              "note": "Derivative of an exponential with base 1.2 includes ln 1.2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

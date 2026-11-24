@@ -1944,6 +1944,168 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q12c1",
+          "type": "mc",
+          "stem": "Eighty people were asked if they had holidayed interstate (I) or within NSW (N) in the past five years. The results showed that, 12 people had not holidayed at all, 42 people had holidayed interstate (I), and 36 people had holidayed within NSW (N). Complete the Venn diagram by finding values for \\(x\\), \\(y\\) and \\(z\\) (\\(x\\) is I only, \\(y\\) is both, \\(z\\) is N only). Which values are correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><text x=\"95.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">I</text><text x=\"232.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"97.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"160.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"222.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text></svg>"
+          },
+          "options": [
+            "\\(x=32,\\ y=10,\\ z=26\\)",
+            "\\(x=42,\\ y=36,\\ z=12\\)",
+            "\\(x=10,\\ y=32,\\ z=26\\)",
+            "\\(x=32,\\ y=26,\\ z=10\\)"
+          ],
+          "answer": 0,
+          "hint": "Total in the circles \\(=80-12=68\\). The circle I contains \\(x+y=42\\); the circle N contains \\(y+z=36\\). Add the two: it counts the overlap \\(y\\) twice, so \\(42+36-y=68\\).",
+          "steps": [
+            {
+              "explain": "People who holidayed at all: \\(80-12=68\\) (inside the circles).",
+              "work": "\\(x+y+z=68\\)"
+            },
+            {
+              "explain": "Interstate total (the whole circle I): \\(x+y=42\\). NSW total (the whole circle N): \\(y+z=36\\). Add these two equations: \\(x+2y+z=78\\). Subtract \\(x+y+z=68\\).",
+              "work": "\\((x+y)+(y+z)-(x+y+z)=42+36-68\\ \\Rightarrow\\ y=10\\)"
+            },
+            {
+              "explain": "Find \\(x\\) and \\(z\\).",
+              "work": "\\(x=42-10=32,\\qquad z=36-10=26\\)"
+            },
+            {
+              "explain": "Check: \\(32+10+26+12=80\\) ✓.",
+              "work": "\\(x=32,\\ y=10,\\ z=26\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><text x=\"95.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">I</text><text x=\"232.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"97.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">32</text><text x=\"160.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"222.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B puts the totals (42 and 36) in the single-region labels (it forgets the overlap).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Complete the Venn diagram by finding values for",
+              "note": "The circles total 80 − 12 = 68; the overlap is 42 + 36 − 68."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q12c2",
+          "type": "mc",
+          "stem": "Eighty people were asked if they had holidayed interstate (I) or within NSW (N) in the past five years. The results showed that, 12 people had not holidayed at all, 42 people had holidayed interstate (I), and 36 people had holidayed within NSW (N). One of the surveyed people is selected at random. Find the probability that the person selected has holidayed both interstate and within NSW.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{8}\\)",
+            "\\(\\dfrac{5}{34}\\)",
+            "\\(\\dfrac{9}{20}\\)",
+            "\\(\\dfrac{21}{40}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P=\\dfrac{\\text{number in both}}{\\text{total surveyed}}\\). The number in both circles is \\(y=10\\); the total is 80 (all surveyed, including the 12 who did not travel).",
+          "steps": [
+            {
+              "explain": "People in both circles (the overlap).",
+              "work": "\\(n(I\\cap N)=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><text x=\"95.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">I</text><text x=\"232.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"97.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">32</text><text x=\"160.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"222.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text></svg>"
+              }
+            },
+            {
+              "explain": "Probability \\(=\\dfrac{10}{80}\\). The denominator is ALL 80 people.",
+              "work": "\\(P(I\\cap N)=\\dfrac{10}{80}=\\dfrac{1}{8}\\)"
+            },
+            {
+              "explain": "Why not the others: B divides by 68 (only travellers, which is a conditional probability); C is \\(\\dfrac{36}{80}\\) (all NSW); D is \\(\\dfrac{42}{80}\\) (all interstate).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "holidayed both interstate and within NSW",
+              "note": "Overlap over the whole survey of 80."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q12c3",
+          "type": "mc",
+          "stem": "Eighty people were asked if they had holidayed interstate (I) or within NSW (N) in the past five years. The results showed that, 12 people had not holidayed at all, 42 people had holidayed interstate (I), and 36 people had holidayed within NSW (N). A randomly selected person is known to have travelled. Find the probability that this person holidayed within NSW.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{9}{17}\\)",
+            "\\(\\dfrac{9}{20}\\)",
+            "\\(\\dfrac{13}{34}\\)",
+            "\\(\\dfrac{6}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"Known to have travelled\\\" means the sample space is only the 68 travellers (the 12 non-travellers are removed). \\(P(N\\mid\\text{traveller})=\\dfrac{n(N)}{68}\\).",
+          "steps": [
+            {
+              "explain": "Given that the person travelled, only the \\(32+10+26=68\\) people inside the circles can be chosen (the 12 outside are excluded).",
+              "work": "\\(\\text{sample space}=68\\)"
+            },
+            {
+              "explain": "People who holidayed within NSW: the whole circle N, \\(10+26=36\\) (yellow/green region).",
+              "work": "\\(n(N)=36\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"#bbf7d0\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><text x=\"95.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">I</text><text x=\"232.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"97.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">32</text><text x=\"160.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"222.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text></svg>"
+              }
+            },
+            {
+              "explain": "Conditional probability.",
+              "work": "\\(P(N\\mid\\text{traveller})=\\dfrac{36}{68}=\\dfrac{9}{17}\\)"
+            },
+            {
+              "explain": "Why not the others: B divides by 80 (forgetting the condition); C uses 26 (N only); D is \\(\\dfrac{36}{42}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that this person holidayed within NSW",
+              "note": "Given travelled: divide by 68, not 80."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2356,6 +2518,63 @@
           "meta": {
             "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
             "school": "The King's School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q12c4",
+          "type": "mc",
+          "stem": "Eighty people were asked if they had holidayed interstate (I) or within NSW (N) in the past five years. The results showed that, 12 people had not holidayed at all, 42 people had holidayed interstate (I), and 36 people had holidayed within NSW (N). Two people are chosen, in turn, at random. Find the probability that exactly one of those chosen holidayed interstate.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{399}{790}\\)",
+            "\\(\\dfrac{399}{800}\\)",
+            "\\(\\dfrac{399}{1580}\\)",
+            "\\(\\dfrac{1}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Without replacement (two different people): the second probability has 79 in the denominator. \\\"Exactly one\\\" means (interstate then NOT) OR (NOT then interstate). \\(42\\) people holidayed interstate and \\(80-42=38\\) did not.",
+          "steps": [
+            {
+              "explain": "Interstate (I): 42 people (the whole circle I, \\(32+10\\)). NOT interstate: \\(80-42=38\\) people.",
+              "work": "\\(P(I)=\\dfrac{42}{80},\\qquad P(\\overline{I})=\\dfrac{38}{80}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"290\" height=\"190\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"100\" r=\"62\" fill=\"#fde68a\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><circle cx=\"195\" cy=\"100\" r=\"62\" fill=\"none\" fill-opacity=\"0.55\" stroke=\"#1d4ed8\" stroke-width=\"2.4\"/><text x=\"95.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">I</text><text x=\"232.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><text x=\"290.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"97.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">32</text><text x=\"160.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"222.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26</text></svg>"
+              }
+            },
+            {
+              "explain": "Two people are chosen in turn and cannot be chosen twice, so after the first the totals drop to 79.",
+              "work": "\\(P(I,\\overline{I})=\\dfrac{42}{80}\\times\\dfrac{38}{79}\\)"
+            },
+            {
+              "explain": "The other order: NOT interstate first, then interstate.",
+              "work": "\\(P(\\overline{I},I)=\\dfrac{38}{80}\\times\\dfrac{42}{79}\\)"
+            },
+            {
+              "explain": "Add the two (mutually exclusive) cases: they are equal, so double.",
+              "work": "\\(P=2\\times\\dfrac{42\\times38}{80\\times79}=\\dfrac{3192}{6320}=\\dfrac{399}{790}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses 80 in both denominators (with replacement); C counts only one order; D is unrelated.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the probability that exactly one of those chosen holidayed interstate",
+              "note": "Two orders: I then not, or not then I; denominators 80 and 79."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

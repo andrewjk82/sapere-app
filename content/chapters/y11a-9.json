@@ -4134,6 +4134,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q11b",
+          "type": "mc",
+          "stem": "Find \\(\\dfrac{d}{dx}\\left(\\dfrac{x^{2}}{x+1}\\right)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x^{2}+2x}{(x+1)^{2}}\\)",
+            "\\(\\dfrac{3x^{2}+2x}{(x+1)^{2}}\\)",
+            "\\(\\dfrac{2x}{1}\\)",
+            "\\(\\dfrac{2x}{(x+1)^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Quotient rule: \\(\\dfrac{d}{dx}\\dfrac{u}{v}=\\dfrac{u'v-uv'}{v^{2}}\\) with \\(u=x^{2}\\) and \\(v=x+1\\). Careful: it is a SUBTRACTION.",
+          "steps": [
+            {
+              "explain": "Identify \\(u\\) and \\(v\\) and differentiate each.",
+              "work": "\\(u=x^{2},\\ u'=2x;\\qquad v=x+1,\\ v'=1\\)"
+            },
+            {
+              "explain": "Substitute into \\(\\dfrac{u'v-uv'}{v^{2}}\\).",
+              "work": "\\(\\dfrac{d}{dx}\\left(\\dfrac{x^{2}}{x+1}\\right)=\\dfrac{2x(x+1)-x^{2}\\cdot1}{(x+1)^{2}}\\)"
+            },
+            {
+              "explain": "Expand the top and simplify: \\(2x^{2}+2x-x^{2}=x^{2}+2x\\).",
+              "work": "\\(=\\dfrac{x^{2}+2x}{(x+1)^{2}}\\)"
+            },
+            {
+              "explain": "Check at \\(x=1\\): numerically \\(\\dfrac{x^{2}}{x+1}\\) at \\(x=1\\) is \\(0.5\\) and at \\(x=1.01\\) is \\(0.5075\\), a gradient \\(\\approx0.75\\); formula: \\(\\dfrac{1+2}{4}=0.75\\) ✓. Option B ADDS (wrong sign); D forgets the \\(u'v\\) part.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Quotient rule: bottom times top-dash minus top times bottom-dash, over bottom squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5456,6 +5506,56 @@
           "meta": {
             "source": "Hornsby Girls High School 2020 Year 11 Mathematics Advanced Yearly Examination (Assessment 3 Term 3)",
             "school": "Hornsby Girls High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q11c",
+          "type": "mc",
+          "stem": "Differentiate the function, \\(y=x^{2}e^{2x}\\) leaving your answer in simplest factored form.",
+          "difficulty": "medium",
+          "options": [
+            "\\(2xe^{2x}(x+1)\\)",
+            "\\(2xe^{2x}\\)",
+            "\\(2x^{2}e^{2x}\\)",
+            "\\(2xe^{2x}(x+2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Product rule: \\(y'=u'v+uv'\\) with \\(u=x^{2}\\), \\(v=e^{2x}\\) (chain rule gives \\(v'=2e^{2x}\\)). Then take out the common factor \\(2xe^{2x}\\).",
+          "steps": [
+            {
+              "explain": "Choose and differentiate: \\(\\dfrac{d}{dx}e^{2x}=2e^{2x}\\) (chain rule).",
+              "work": "\\(u=x^{2},\\ u'=2x;\\qquad v=e^{2x},\\ v'=2e^{2x}\\)"
+            },
+            {
+              "explain": "Product rule.",
+              "work": "\\(y'=u'v+uv'=2x\\cdot e^{2x}+x^{2}\\cdot2e^{2x}\\)"
+            },
+            {
+              "explain": "Common factor \\(2xe^{2x}\\): the first term leaves 1, the second leaves \\(x\\).",
+              "work": "\\(y'=2xe^{2x}(1+x)=2xe^{2x}(x+1)\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the second product; C forgets \\(u'v\\); D has \\(x+2\\) (a slip combining like terms).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Differentiate the function",
+              "note": "Product rule, then factor out 2x e to the 2x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

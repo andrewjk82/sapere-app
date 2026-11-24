@@ -2131,6 +2131,67 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q9",
+          "type": "mc",
+          "stem": "The displacement of a particle moving in a straight line is given by the equation \\(x=2t-\\dfrac{1}{2}t^{2}\\), where \\(x\\) is in metres, \\(t\\) is in seconds and \\(t\\ge0\\). Which of the following statements is FALSE?",
+          "difficulty": "medium",
+          "options": [
+            "The particle is initially moving to the left.",
+            "The particle is at the origin after 4 seconds.",
+            "The acceleration of the particle is constant.",
+            "The speed of the particle increases indefinitely."
+          ],
+          "answer": 0,
+          "hint": "Find velocity \\(v=\\dfrac{dx}{dt}\\) and acceleration \\(a=\\dfrac{dv}{dt}\\). Then test each statement: initial velocity (sign gives the direction), \\(x\\) at \\(t=4\\), the form of \\(a\\), and the behaviour of \\(|v|\\) as \\(t\\to\\infty\\).",
+          "steps": [
+            {
+              "explain": "Differentiate.",
+              "work": "\\(v=\\dfrac{dx}{dt}=2-t,\\qquad a=\\dfrac{dv}{dt}=-1\\)"
+            },
+            {
+              "explain": "A: initially (\\(t=0\\)): \\(v=2-0=2>0\\). A positive velocity means moving to the RIGHT (the orange start of the graph rises). So 'moving to the left' is FALSE.",
+              "work": "\\(v(0)=2>0\\ \\Rightarrow\\ \\text{moving right}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"28.0\" y1=\"190.0\" x2=\"340.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"240.0\" x2=\"40.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"340.0\" y1=\"190.0\" x2=\"333.1\" y2=\"186.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"340.0\" y1=\"190.0\" x2=\"333.1\" y2=\"194.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"24.0\" x2=\"36.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"24.0\" x2=\"44.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"338.0\" y=\"206.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"50.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"40.0,190.0 40.7,189.1 41.3,188.2 42.0,187.4 42.6,186.5 43.3,185.7 44.0,184.8 44.6,184.0 45.3,183.1 45.9,182.3 46.6,181.4 47.3,180.6 47.9,179.8 48.6,179.0 49.2,178.2 49.9,177.3 50.6,176.5 51.2,175.7 51.9,174.9 52.5,174.2 53.2,173.4 53.9,172.6 54.5,171.8 55.2,171.0 55.8,170.3 56.5,169.5 57.2,168.8 57.8,168.0 58.5,167.3 59.1,166.5 59.8,165.8 60.5,165.0 61.1,164.3 61.8,163.6 62.4,162.9 63.1,162.2 63.8,161.5 64.4,160.8 65.1,160.1 65.7,159.4 66.4,158.7 67.1,158.0 67.7,157.3 68.4,156.6 69.0,156.0 69.7,155.3 70.4,154.6 71.0,154.0 71.7,153.3 72.3,152.7 73.0,152.1 73.7,151.4 74.3,150.8 75.0,150.2 75.6,149.5 76.3,148.9 77.0,148.3 77.6,147.7 78.3,147.1 78.9,146.5 79.6,145.9 80.3,145.3 80.9,144.7 81.6,144.2 82.2,143.6 82.9,143.0 83.6,142.5 84.2,141.9 84.9,141.4 85.5,140.8 86.2,140.3 86.9,139.7 87.5,139.2 88.2,138.7 88.8,138.1 89.5,137.6 90.2,137.1 90.8,136.6 91.5,136.1 92.1,135.6 92.8,135.1 93.5,134.6 94.1,134.1 94.8,133.6 95.4,133.2 96.1,132.7 96.8,132.2 97.4,131.8 98.1,131.3 98.7,130.8 99.4,130.4 100.1,130.0 100.7,129.5 101.4,129.1 102.0,128.7 102.7,128.2 103.4,127.8 104.0,127.4 104.7,127.0 105.3,126.6 106.0,126.2 106.7,125.8 107.3,125.4 108.0,125.0 108.6,124.7 109.3,124.3 110.0,123.9 110.6,123.5 111.3,123.2 111.9,122.8 112.6,122.5 113.3,122.1 113.9,121.8 114.6,121.5 115.2,121.1 115.9,120.8 116.6,120.5 117.2,120.2 117.9,119.9 118.5,119.5 119.2,119.2 119.9,119.0 120.5,118.7 121.2,118.4 121.8,118.1 122.5,117.8 123.2,117.5 123.8,117.3 124.5,117.0 125.1,116.8 125.8,116.5 126.5,116.2 127.1,116.0 127.8,115.8 128.4,115.5 129.1,115.3 129.8,115.1 130.4,114.9 131.1,114.6 131.7,114.4 132.4,114.2 133.1,114.0 133.7,113.8 134.4,113.6 135.0,113.5 135.7,113.3 136.4,113.1 137.0,112.9 137.7,112.8 138.3,112.6 139.0,112.5 139.7,112.3 140.3,112.2 141.0,112.0 141.6,111.9 142.3,111.7 143.0,111.6 143.6,111.5 144.3,111.4 144.9,111.3 145.6,111.2 146.3,111.0 146.9,111.0 147.6,110.9 148.2,110.8 148.9,110.7 149.6,110.6 150.2,110.5 150.9,110.5 151.5,110.4 152.2,110.3 152.9,110.3 153.5,110.2 154.2,110.2 154.8,110.1 155.5,110.1 156.2,110.1 156.8,110.1 157.5,110.0 158.1,110.0 158.8,110.0 159.5,110.0 160.1,110.0 160.8,110.0 161.4,110.0 162.1,110.0 162.8,110.0 163.4,110.1 164.1,110.1 164.7,110.1 165.4,110.2 166.1,110.2 166.7,110.3 167.4,110.3 168.0,110.4 168.7,110.4 169.4,110.5 170.0,110.6 170.7,110.6 171.3,110.7 172.0,110.8 172.7,110.9 173.3,111.0 174.0,111.1 174.6,111.2 175.3,111.3 176.0,111.4 176.6,111.5 177.3,111.7 177.9,111.8 178.6,111.9 179.3,112.1 179.9,112.2 180.6,112.4 181.2,112.5 181.9,112.7 182.6,112.8 183.2,113.0 183.9,113.2 184.5,113.3 185.2,113.5 185.9,113.7 186.5,113.9 187.2,114.1 187.8,114.3 188.5,114.5 189.2,114.7 189.8,114.9 190.5,115.2 191.1,115.4 191.8,115.6 192.5,115.9 193.1,116.1 193.8,116.3 194.4,116.6 195.1,116.8 195.8,117.1 196.4,117.4 197.1,117.6 197.7,117.9 198.4,118.2 199.1,118.5 199.7,118.8 200.4,119.1 201.0,119.4 201.7,119.7 202.4,120.0 203.0,120.3 203.7,120.6 204.3,120.9 205.0,121.2 205.7,121.6 206.3,121.9 207.0,122.3 207.6,122.6 208.3,123.0 209.0,123.3 209.6,123.7 210.3,124.0 210.9,124.4 211.6,124.8 212.3,125.2 212.9,125.6 213.6,125.9 214.2,126.3 214.9,126.7 215.6,127.1 216.2,127.6 216.9,128.0 217.5,128.4 218.2,128.8 218.9,129.2 219.5,129.7 220.2,130.1 220.8,130.6 221.5,131.0 222.2,131.5 222.8,131.9 223.5,132.4 224.1,132.9 224.8,133.3 225.5,133.8 226.1,134.3 226.8,134.8 227.4,135.3 228.1,135.8 228.8,136.3 229.4,136.8 230.1,137.3 230.7,137.8 231.4,138.3 232.1,138.8 232.7,139.4 233.4,139.9 234.0,140.5 234.7,141.0 235.4,141.6 236.0,142.1 236.7,142.7 237.3,143.2 238.0,143.8 238.7,144.4 239.3,145.0 240.0,145.5 240.6,146.1 241.3,146.7 242.0,147.3 242.6,147.9 243.3,148.5 243.9,149.1 244.6,149.8 245.3,150.4 245.9,151.0 246.6,151.6 247.2,152.3 247.9,152.9 248.6,153.6 249.2,154.2 249.9,154.9 250.5,155.5 251.2,156.2 251.9,156.9 252.5,157.6 253.2,158.2 253.8,158.9 254.5,159.6 255.2,160.3 255.8,161.0 256.5,161.7 257.1,162.4 257.8,163.1 258.5,163.9 259.1,164.6 259.8,165.3 260.4,166.0 261.1,166.8 261.8,167.5 262.4,168.3 263.1,169.0 263.7,169.8 264.4,170.6 265.1,171.3 265.7,172.1 266.4,172.9 267.0,173.7 267.7,174.4 268.4,175.2 269.0,176.0 269.7,176.8 270.3,177.6 271.0,178.5 271.7,179.3 272.3,180.1 273.0,180.9 273.6,181.7 274.3,182.6 275.0,183.4 275.6,184.3 276.3,185.1 276.9,186.0 277.6,186.8 278.3,187.7 278.9,188.6 279.6,189.4 280.2,190.3 280.9,191.2 281.6,192.1 282.2,193.0 282.9,193.9 283.5,194.8 284.2,195.7 284.9,196.6 285.5,197.5 286.2,198.5 286.8,199.4 287.5,200.3 288.2,201.2 288.8,202.2 289.5,203.1 290.1,204.1 290.8,205.0 291.5,206.0 292.1,207.0 292.8,207.9 293.4,208.9 294.1,209.9 294.8,210.9 295.4,211.9 296.1,212.9 296.7,213.9 297.4,214.9 298.1,215.9 298.7,216.9 299.4,217.9 300.0,219.0 300.7,220.0 301.4,221.0 302.0,222.1 302.7,223.1 303.3,224.1 304.0,225.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"280\" cy=\"190\" r=\"5.5\" fill=\"#dc2626\"/><text x=\"280.0\" y=\"178.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 4: x = 0</text><circle cx=\"160\" cy=\"110\" r=\"5.5\" fill=\"#047857\"/><text x=\"170.0\" y=\"102.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 2: x = 2</text><line x1=\"40.0\" y1=\"190.0\" x2=\"88.0\" y2=\"138.8\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"94.0\" y=\"142.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">initial slope +2 (moving right)</text><line x1=\"100.0\" y1=\"187.0\" x2=\"100.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"100.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"160.0\" y1=\"187.0\" x2=\"160.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"220.0\" y1=\"187.0\" x2=\"220.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"280.0\" y1=\"187.0\" x2=\"280.0\" y2=\"193.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"280.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text></svg>"
+              }
+            },
+            {
+              "explain": "B: \\(t=4\\): \\(x=2(4)-\\dfrac{1}{2}(16)=8-8=0\\): at the origin. TRUE (red point).",
+              "work": "\\(x(4)=8-8=0\\)"
+            },
+            {
+              "explain": "C: \\(a=-1\\) m s\\(^{-2}\\) never changes: constant. TRUE.",
+              "work": "\\(a=-1\\)"
+            },
+            {
+              "explain": "D: \\(v=2-t\\) gets more and more negative, so \\(|v|=|2-t|\\to\\infty\\): the speed increases without limit. TRUE.",
+              "work": "\\(|v|=|2-t|\\to\\infty\\ \\text{as}\\ t\\to\\infty\\)"
+            },
+            {
+              "explain": "The FALSE statement is A.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following statements is FALSE",
+              "note": "Velocity is the derivative; the sign of v(0) gives the initial direction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2939,6 +3000,214 @@
           "meta": {
             "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
             "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13a1",
+          "type": "mc",
+          "stem": "A particle, initially at the origin, is moving in a straight line. Its velocity, \\(v\\ \\text{m s}^{-1}\\), after \\(t\\) seconds is given by \\(v=2-2t\\). Find the initial velocity.",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\ \\text{m s}^{-1}\\)",
+            "\\(0\\ \\text{m s}^{-1}\\)",
+            "\\(-2\\ \\text{m s}^{-1}\\)",
+            "\\(1\\ \\text{m s}^{-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"Initial\\\" means at \\(t=0\\). Substitute \\(t=0\\) into \\(v=2-2t\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(t=0\\).",
+              "work": "\\(v(0)=2-2(0)=2\\ \\text{m s}^{-1}\\)"
+            },
+            {
+              "explain": "Positive, so initially the particle moves to the RIGHT (positive direction).",
+              "work": "\\(v(0)=2>0\\)"
+            },
+            {
+              "explain": "Why not the others: 0 is the velocity at \\(t=1\\) (at rest); \\(-2\\) would be the velocity at \\(t=2\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the initial velocity",
+              "note": "Initial means t = 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13a2",
+          "type": "mc",
+          "stem": "A particle, initially at the origin, is moving in a straight line. Its velocity, \\(v\\ \\text{m s}^{-1}\\), after \\(t\\) seconds is given by \\(v=2-2t\\). Find when the particle is at rest.",
+          "difficulty": "easy",
+          "options": [
+            "\\(t=1\\)",
+            "\\(t=2\\)",
+            "\\(t=0\\)",
+            "\\(t=\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "At rest means the velocity is zero: solve \\(v=0\\).",
+          "steps": [
+            {
+              "explain": "Set \\(v=0\\).",
+              "work": "\\(2-2t=0\\)"
+            },
+            {
+              "explain": "Solve for \\(t\\).",
+              "work": "\\(2t=2\\ \\Rightarrow\\ t=1\\ \\text{second}\\)"
+            },
+            {
+              "explain": "Check: \\(v(1)=2-2=0\\) ✓. On the displacement graph \\(x=2t-t^{2}\\), this is the highest point (red), where the particle turns round.",
+              "work": "\\(v(1)=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"48.0\" y1=\"70.0\" x2=\"382.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"300.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"382.0\" y1=\"70.0\" x2=\"375.1\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"382.0\" y1=\"70.0\" x2=\"375.1\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"380.0\" y=\"86.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,70.0 60.7,69.5 61.5,69.0 62.2,68.5 62.9,68.0 63.7,67.5 64.4,67.1 65.1,66.6 65.9,66.1 66.6,65.7 67.3,65.2 68.1,64.8 68.8,64.3 69.6,63.9 70.3,63.5 71.0,63.0 71.8,62.6 72.5,62.2 73.2,61.8 74.0,61.4 74.7,61.0 75.4,60.6 76.2,60.2 76.9,59.8 77.6,59.4 78.4,59.1 79.1,58.7 79.8,58.3 80.6,58.0 81.3,57.6 82.0,57.3 82.8,56.9 83.5,56.6 84.3,56.2 85.0,55.9 85.7,55.6 86.5,55.3 87.2,55.0 87.9,54.7 88.7,54.4 89.4,54.1 90.1,53.8 90.9,53.5 91.6,53.2 92.3,52.9 93.1,52.7 93.8,52.4 94.5,52.2 95.3,51.9 96.0,51.7 96.8,51.4 97.5,51.2 98.2,50.9 99.0,50.7 99.7,50.5 100.4,50.3 101.2,50.1 101.9,49.9 102.6,49.7 103.4,49.5 104.1,49.3 104.8,49.1 105.6,48.9 106.3,48.7 107.0,48.6 107.8,48.4 108.5,48.3 109.2,48.1 110.0,48.0 110.7,47.8 111.4,47.7 112.2,47.6 112.9,47.4 113.7,47.3 114.4,47.2 115.1,47.1 115.9,47.0 116.6,46.9 117.3,46.8 118.1,46.7 118.8,46.6 119.5,46.5 120.3,46.5 121.0,46.4 121.7,46.3 122.5,46.3 123.2,46.2 123.9,46.2 124.7,46.1 125.4,46.1 126.1,46.1 126.9,46.0 127.6,46.0 128.4,46.0 129.1,46.0 129.8,46.0 130.6,46.0 131.3,46.0 132.0,46.0 132.8,46.0 133.5,46.1 134.2,46.1 135.0,46.1 135.7,46.2 136.4,46.2 137.2,46.3 137.9,46.3 138.6,46.4 139.4,46.4 140.1,46.5 140.9,46.6 141.6,46.7 142.3,46.7 143.1,46.8 143.8,46.9 144.5,47.0 145.3,47.1 146.0,47.3 146.7,47.4 147.5,47.5 148.2,47.6 148.9,47.8 149.7,47.9 150.4,48.0 151.1,48.2 151.9,48.3 152.6,48.5 153.3,48.7 154.1,48.8 154.8,49.0 155.6,49.2 156.3,49.4 157.0,49.6 157.8,49.8 158.5,50.0 159.2,50.2 160.0,50.4 160.7,50.6 161.4,50.8 162.2,51.1 162.9,51.3 163.6,51.5 164.4,51.8 165.1,52.0 165.8,52.3 166.6,52.6 167.3,52.8 168.0,53.1 168.8,53.4 169.5,53.6 170.2,53.9 171.0,54.2 171.7,54.5 172.5,54.8 173.2,55.1 173.9,55.5 174.7,55.8 175.4,56.1 176.1,56.4 176.9,56.8 177.6,57.1 178.3,57.4 179.1,57.8 179.8,58.1 180.5,58.5 181.3,58.9 182.0,59.2 182.7,59.6 183.5,60.0 184.2,60.4 184.9,60.8 185.7,61.2 186.4,61.6 187.2,62.0 187.9,62.4 188.6,62.8 189.4,63.3 190.1,63.7 190.8,64.1 191.6,64.6 192.3,65.0 193.0,65.5 193.8,65.9 194.5,66.4 195.2,66.8 196.0,67.3 196.7,67.8 197.4,68.3 198.2,68.8 198.9,69.3 199.7,69.8 200.4,70.3 201.1,70.8 201.9,71.3 202.6,71.8 203.3,72.3 204.1,72.9 204.8,73.4 205.5,73.9 206.3,74.5 207.0,75.0 207.7,75.6 208.5,76.2 209.2,76.7 209.9,77.3 210.7,77.9 211.4,78.5 212.1,79.1 212.9,79.6 213.6,80.2 214.3,80.8 215.1,81.5 215.8,82.1 216.6,82.7 217.3,83.3 218.0,84.0 218.8,84.6 219.5,85.2 220.2,85.9 221.0,86.5 221.7,87.2 222.4,87.8 223.2,88.5 223.9,89.2 224.6,89.9 225.4,90.6 226.1,91.2 226.8,91.9 227.6,92.6 228.3,93.3 229.1,94.1 229.8,94.8 230.5,95.5 231.3,96.2 232.0,96.9 232.7,97.7 233.5,98.4 234.2,99.2 234.9,99.9 235.7,100.7 236.4,101.4 237.1,102.2 237.9,103.0 238.6,103.8 239.3,104.6 240.1,105.3 240.8,106.1 241.5,106.9 242.3,107.7 243.0,108.6 243.8,109.4 244.5,110.2 245.2,111.0 246.0,111.9 246.7,112.7 247.4,113.5 248.2,114.4 248.9,115.2 249.6,116.1 250.4,117.0 251.1,117.8 251.8,118.7 252.6,119.6 253.3,120.5 254.0,121.4 254.8,122.3 255.5,123.2 256.2,124.1 257.0,125.0 257.7,125.9 258.4,126.8 259.2,127.7 259.9,128.7 260.7,129.6 261.4,130.6 262.1,131.5 262.9,132.5 263.6,133.4 264.3,134.4 265.1,135.4 265.8,136.3 266.5,137.3 267.3,138.3 268.0,139.3 268.7,140.3 269.5,141.3 270.2,142.3 270.9,143.3 271.7,144.3 272.4,145.3 273.1,146.4 273.9,147.4 274.6,148.4 275.4,149.5 276.1,150.5 276.8,151.6 277.6,152.6 278.3,153.7 279.0,154.8 279.8,155.9 280.5,156.9 281.2,158.0 282.0,159.1 282.7,160.2 283.4,161.3 284.2,162.4 284.9,163.5 285.6,164.7 286.4,165.8 287.1,166.9 287.9,168.0 288.6,169.2 289.3,170.3 290.1,171.5 290.8,172.6 291.5,173.8 292.3,175.0 293.0,176.1 293.7,177.3 294.5,178.5 295.2,179.7 295.9,180.9 296.7,182.1 297.4,183.3 298.1,184.5 298.9,185.7 299.6,186.9 300.3,188.1 301.1,189.4 301.8,190.6 302.5,191.8 303.3,193.1 304.0,194.3 304.8,195.6 305.5,196.8 306.2,198.1 307.0,199.4 307.7,200.7 308.4,201.9 309.2,203.2 309.9,204.5 310.6,205.8 311.4,207.1 312.1,208.4 312.8,209.7 313.6,211.1 314.3,212.4 315.0,213.7 315.8,215.0 316.5,216.4 317.2,217.7 318.0,219.1 318.7,220.4 319.5,221.8 320.2,223.2 320.9,224.5 321.7,225.9 322.4,227.3 323.1,228.7 323.9,230.1 324.6,231.5 325.3,232.9 326.1,234.3 326.8,235.7 327.5,237.1 328.3,238.6 329.0,240.0 329.7,241.4 330.5,242.9 331.2,244.3 331.9,245.8 332.7,247.2 333.4,248.7 334.2,250.1 334.9,251.6 335.6,253.1 336.4,254.6 337.1,256.1 337.8,257.6 338.6,259.1 339.3,260.6 340.0,262.1 340.8,263.6 341.5,265.1 342.2,266.6 343.0,268.2 343.7,269.7 344.4,271.2 345.2,272.8 345.9,274.3 346.6,275.9 347.4,277.5 348.1,279.0 348.9,280.6 349.6,282.2 350.3,283.8 351.1,285.4 351.8,286.9 352.5,288.5 353.3,290.1 354.0,291.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"130.0\" y1=\"67.0\" x2=\"130.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"200.0\" y1=\"67.0\" x2=\"200.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"270.0\" y1=\"67.0\" x2=\"270.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"340.0\" y1=\"67.0\" x2=\"340.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"340.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"57.0\" y1=\"262.0\" x2=\"63.0\" y2=\"262.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−8</text><line x1=\"57.0\" y1=\"214.0\" x2=\"63.0\" y2=\"214.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"218.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><line x1=\"57.0\" y1=\"166.0\" x2=\"63.0\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−4</text><line x1=\"57.0\" y1=\"118.0\" x2=\"63.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"57.0\" y1=\"22.0\" x2=\"63.0\" y2=\"22.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"26.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"130\" cy=\"46\" r=\"5.5\" fill=\"#dc2626\"/><text x=\"140.0\" y=\"42.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 1: at rest, x = 1</text></svg>"
+              }
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find when the particle is at rest",
+              "note": "At rest means velocity zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13a3",
+          "type": "mc",
+          "stem": "A particle, initially at the origin, is moving in a straight line. Its velocity, \\(v\\ \\text{m s}^{-1}\\), after \\(t\\) seconds is given by \\(v=2-2t\\). Find when the particle is next at the origin.",
+          "difficulty": "medium",
+          "options": [
+            "\\(t=2\\)",
+            "\\(t=1\\)",
+            "\\(t=4\\)",
+            "\\(t=3\\)"
+          ],
+          "answer": 0,
+          "hint": "At the origin means displacement \\(x=0\\). Integrate \\(v\\) to get \\(x\\) (use the initial condition \\(x=0\\) at \\(t=0\\) to find the constant), then solve \\(x=0\\) for \\(t\\neq0\\).",
+          "steps": [
+            {
+              "explain": "Integrate velocity to get displacement.",
+              "work": "\\(x=\\int(2-2t)\\,dt=2t-t^{2}+C\\)"
+            },
+            {
+              "explain": "Initially at the origin: \\(x=0\\) when \\(t=0\\), so \\(C=0\\).",
+              "work": "\\(x=2t-t^{2}\\)"
+            },
+            {
+              "explain": "Set \\(x=0\\) and factorise: \\(t=0\\) is the START; we want the NEXT time.",
+              "work": "\\(2t-t^{2}=0\\ \\Rightarrow\\ t(2-t)=0\\ \\Rightarrow\\ t=0\\ \\text{or}\\ t=2\\)"
+            },
+            {
+              "explain": "The particle is next at the origin when \\(t=2\\) seconds (green point).",
+              "work": "\\(t=2\\ \\text{s}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"48.0\" y1=\"70.0\" x2=\"382.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"300.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"382.0\" y1=\"70.0\" x2=\"375.1\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"382.0\" y1=\"70.0\" x2=\"375.1\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"380.0\" y=\"86.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,70.0 60.7,69.5 61.5,69.0 62.2,68.5 62.9,68.0 63.7,67.5 64.4,67.1 65.1,66.6 65.9,66.1 66.6,65.7 67.3,65.2 68.1,64.8 68.8,64.3 69.6,63.9 70.3,63.5 71.0,63.0 71.8,62.6 72.5,62.2 73.2,61.8 74.0,61.4 74.7,61.0 75.4,60.6 76.2,60.2 76.9,59.8 77.6,59.4 78.4,59.1 79.1,58.7 79.8,58.3 80.6,58.0 81.3,57.6 82.0,57.3 82.8,56.9 83.5,56.6 84.3,56.2 85.0,55.9 85.7,55.6 86.5,55.3 87.2,55.0 87.9,54.7 88.7,54.4 89.4,54.1 90.1,53.8 90.9,53.5 91.6,53.2 92.3,52.9 93.1,52.7 93.8,52.4 94.5,52.2 95.3,51.9 96.0,51.7 96.8,51.4 97.5,51.2 98.2,50.9 99.0,50.7 99.7,50.5 100.4,50.3 101.2,50.1 101.9,49.9 102.6,49.7 103.4,49.5 104.1,49.3 104.8,49.1 105.6,48.9 106.3,48.7 107.0,48.6 107.8,48.4 108.5,48.3 109.2,48.1 110.0,48.0 110.7,47.8 111.4,47.7 112.2,47.6 112.9,47.4 113.7,47.3 114.4,47.2 115.1,47.1 115.9,47.0 116.6,46.9 117.3,46.8 118.1,46.7 118.8,46.6 119.5,46.5 120.3,46.5 121.0,46.4 121.7,46.3 122.5,46.3 123.2,46.2 123.9,46.2 124.7,46.1 125.4,46.1 126.1,46.1 126.9,46.0 127.6,46.0 128.4,46.0 129.1,46.0 129.8,46.0 130.6,46.0 131.3,46.0 132.0,46.0 132.8,46.0 133.5,46.1 134.2,46.1 135.0,46.1 135.7,46.2 136.4,46.2 137.2,46.3 137.9,46.3 138.6,46.4 139.4,46.4 140.1,46.5 140.9,46.6 141.6,46.7 142.3,46.7 143.1,46.8 143.8,46.9 144.5,47.0 145.3,47.1 146.0,47.3 146.7,47.4 147.5,47.5 148.2,47.6 148.9,47.8 149.7,47.9 150.4,48.0 151.1,48.2 151.9,48.3 152.6,48.5 153.3,48.7 154.1,48.8 154.8,49.0 155.6,49.2 156.3,49.4 157.0,49.6 157.8,49.8 158.5,50.0 159.2,50.2 160.0,50.4 160.7,50.6 161.4,50.8 162.2,51.1 162.9,51.3 163.6,51.5 164.4,51.8 165.1,52.0 165.8,52.3 166.6,52.6 167.3,52.8 168.0,53.1 168.8,53.4 169.5,53.6 170.2,53.9 171.0,54.2 171.7,54.5 172.5,54.8 173.2,55.1 173.9,55.5 174.7,55.8 175.4,56.1 176.1,56.4 176.9,56.8 177.6,57.1 178.3,57.4 179.1,57.8 179.8,58.1 180.5,58.5 181.3,58.9 182.0,59.2 182.7,59.6 183.5,60.0 184.2,60.4 184.9,60.8 185.7,61.2 186.4,61.6 187.2,62.0 187.9,62.4 188.6,62.8 189.4,63.3 190.1,63.7 190.8,64.1 191.6,64.6 192.3,65.0 193.0,65.5 193.8,65.9 194.5,66.4 195.2,66.8 196.0,67.3 196.7,67.8 197.4,68.3 198.2,68.8 198.9,69.3 199.7,69.8 200.4,70.3 201.1,70.8 201.9,71.3 202.6,71.8 203.3,72.3 204.1,72.9 204.8,73.4 205.5,73.9 206.3,74.5 207.0,75.0 207.7,75.6 208.5,76.2 209.2,76.7 209.9,77.3 210.7,77.9 211.4,78.5 212.1,79.1 212.9,79.6 213.6,80.2 214.3,80.8 215.1,81.5 215.8,82.1 216.6,82.7 217.3,83.3 218.0,84.0 218.8,84.6 219.5,85.2 220.2,85.9 221.0,86.5 221.7,87.2 222.4,87.8 223.2,88.5 223.9,89.2 224.6,89.9 225.4,90.6 226.1,91.2 226.8,91.9 227.6,92.6 228.3,93.3 229.1,94.1 229.8,94.8 230.5,95.5 231.3,96.2 232.0,96.9 232.7,97.7 233.5,98.4 234.2,99.2 234.9,99.9 235.7,100.7 236.4,101.4 237.1,102.2 237.9,103.0 238.6,103.8 239.3,104.6 240.1,105.3 240.8,106.1 241.5,106.9 242.3,107.7 243.0,108.6 243.8,109.4 244.5,110.2 245.2,111.0 246.0,111.9 246.7,112.7 247.4,113.5 248.2,114.4 248.9,115.2 249.6,116.1 250.4,117.0 251.1,117.8 251.8,118.7 252.6,119.6 253.3,120.5 254.0,121.4 254.8,122.3 255.5,123.2 256.2,124.1 257.0,125.0 257.7,125.9 258.4,126.8 259.2,127.7 259.9,128.7 260.7,129.6 261.4,130.6 262.1,131.5 262.9,132.5 263.6,133.4 264.3,134.4 265.1,135.4 265.8,136.3 266.5,137.3 267.3,138.3 268.0,139.3 268.7,140.3 269.5,141.3 270.2,142.3 270.9,143.3 271.7,144.3 272.4,145.3 273.1,146.4 273.9,147.4 274.6,148.4 275.4,149.5 276.1,150.5 276.8,151.6 277.6,152.6 278.3,153.7 279.0,154.8 279.8,155.9 280.5,156.9 281.2,158.0 282.0,159.1 282.7,160.2 283.4,161.3 284.2,162.4 284.9,163.5 285.6,164.7 286.4,165.8 287.1,166.9 287.9,168.0 288.6,169.2 289.3,170.3 290.1,171.5 290.8,172.6 291.5,173.8 292.3,175.0 293.0,176.1 293.7,177.3 294.5,178.5 295.2,179.7 295.9,180.9 296.7,182.1 297.4,183.3 298.1,184.5 298.9,185.7 299.6,186.9 300.3,188.1 301.1,189.4 301.8,190.6 302.5,191.8 303.3,193.1 304.0,194.3 304.8,195.6 305.5,196.8 306.2,198.1 307.0,199.4 307.7,200.7 308.4,201.9 309.2,203.2 309.9,204.5 310.6,205.8 311.4,207.1 312.1,208.4 312.8,209.7 313.6,211.1 314.3,212.4 315.0,213.7 315.8,215.0 316.5,216.4 317.2,217.7 318.0,219.1 318.7,220.4 319.5,221.8 320.2,223.2 320.9,224.5 321.7,225.9 322.4,227.3 323.1,228.7 323.9,230.1 324.6,231.5 325.3,232.9 326.1,234.3 326.8,235.7 327.5,237.1 328.3,238.6 329.0,240.0 329.7,241.4 330.5,242.9 331.2,244.3 331.9,245.8 332.7,247.2 333.4,248.7 334.2,250.1 334.9,251.6 335.6,253.1 336.4,254.6 337.1,256.1 337.8,257.6 338.6,259.1 339.3,260.6 340.0,262.1 340.8,263.6 341.5,265.1 342.2,266.6 343.0,268.2 343.7,269.7 344.4,271.2 345.2,272.8 345.9,274.3 346.6,275.9 347.4,277.5 348.1,279.0 348.9,280.6 349.6,282.2 350.3,283.8 351.1,285.4 351.8,286.9 352.5,288.5 353.3,290.1 354.0,291.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"130.0\" y1=\"67.0\" x2=\"130.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"200.0\" y1=\"67.0\" x2=\"200.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"270.0\" y1=\"67.0\" x2=\"270.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"340.0\" y1=\"67.0\" x2=\"340.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"340.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"57.0\" y1=\"262.0\" x2=\"63.0\" y2=\"262.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−8</text><line x1=\"57.0\" y1=\"214.0\" x2=\"63.0\" y2=\"214.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"218.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><line x1=\"57.0\" y1=\"166.0\" x2=\"63.0\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−4</text><line x1=\"57.0\" y1=\"118.0\" x2=\"63.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"57.0\" y1=\"22.0\" x2=\"63.0\" y2=\"22.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"26.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"200\" cy=\"70\" r=\"5.5\" fill=\"#047857\"/><text x=\"208.0\" y=\"60.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 2: back at the origin</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: \\(t=1\\) is where it stops (at \\(x=1\\), not the origin); \\(t=4\\) is where \\(x=-8\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find when the particle is next at the origin",
+              "note": "Integrate velocity with C = 0, then solve x = 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13a4",
+          "type": "mc",
+          "stem": "A particle, initially at the origin, is moving in a straight line. Its velocity, \\(v\\ \\text{m s}^{-1}\\), after \\(t\\) seconds is given by \\(v=2-2t\\). Find the distance travelled in the first 4 seconds.",
+          "difficulty": "hard",
+          "options": [
+            "\\(10\\ \\text{m}\\)",
+            "\\(8\\ \\text{m}\\)",
+            "\\(9\\ \\text{m}\\)",
+            "\\(7\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "DISTANCE counts all the movement, not just the final displacement. The particle turns round at \\(t=1\\) (at rest), so split the motion into two parts: \\(t=0\\) to 1, and \\(t=1\\) to 4. Use \\(x=2t-t^{2}\\).",
+          "steps": [
+            {
+              "explain": "Positions at the key times: start \\(x(0)=0\\); turning point \\(x(1)=2-1=1\\); end \\(x(4)=8-16=-8\\).",
+              "work": "\\(x(0)=0,\\qquad x(1)=1,\\qquad x(4)=-8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"48.0\" y1=\"70.0\" x2=\"382.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"300.0\" x2=\"60.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"382.0\" y1=\"70.0\" x2=\"375.1\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"382.0\" y1=\"70.0\" x2=\"375.1\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"56.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"24.0\" x2=\"64.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"380.0\" y=\"86.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">t</text><text x=\"70.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><polyline points=\"60.0,70.0 60.7,69.5 61.5,69.0 62.2,68.5 62.9,68.0 63.7,67.5 64.4,67.1 65.1,66.6 65.9,66.1 66.6,65.7 67.3,65.2 68.1,64.8 68.8,64.3 69.6,63.9 70.3,63.5 71.0,63.0 71.8,62.6 72.5,62.2 73.2,61.8 74.0,61.4 74.7,61.0 75.4,60.6 76.2,60.2 76.9,59.8 77.6,59.4 78.4,59.1 79.1,58.7 79.8,58.3 80.6,58.0 81.3,57.6 82.0,57.3 82.8,56.9 83.5,56.6 84.3,56.2 85.0,55.9 85.7,55.6 86.5,55.3 87.2,55.0 87.9,54.7 88.7,54.4 89.4,54.1 90.1,53.8 90.9,53.5 91.6,53.2 92.3,52.9 93.1,52.7 93.8,52.4 94.5,52.2 95.3,51.9 96.0,51.7 96.8,51.4 97.5,51.2 98.2,50.9 99.0,50.7 99.7,50.5 100.4,50.3 101.2,50.1 101.9,49.9 102.6,49.7 103.4,49.5 104.1,49.3 104.8,49.1 105.6,48.9 106.3,48.7 107.0,48.6 107.8,48.4 108.5,48.3 109.2,48.1 110.0,48.0 110.7,47.8 111.4,47.7 112.2,47.6 112.9,47.4 113.7,47.3 114.4,47.2 115.1,47.1 115.9,47.0 116.6,46.9 117.3,46.8 118.1,46.7 118.8,46.6 119.5,46.5 120.3,46.5 121.0,46.4 121.7,46.3 122.5,46.3 123.2,46.2 123.9,46.2 124.7,46.1 125.4,46.1 126.1,46.1 126.9,46.0 127.6,46.0 128.4,46.0 129.1,46.0 129.8,46.0 130.6,46.0 131.3,46.0 132.0,46.0 132.8,46.0 133.5,46.1 134.2,46.1 135.0,46.1 135.7,46.2 136.4,46.2 137.2,46.3 137.9,46.3 138.6,46.4 139.4,46.4 140.1,46.5 140.9,46.6 141.6,46.7 142.3,46.7 143.1,46.8 143.8,46.9 144.5,47.0 145.3,47.1 146.0,47.3 146.7,47.4 147.5,47.5 148.2,47.6 148.9,47.8 149.7,47.9 150.4,48.0 151.1,48.2 151.9,48.3 152.6,48.5 153.3,48.7 154.1,48.8 154.8,49.0 155.6,49.2 156.3,49.4 157.0,49.6 157.8,49.8 158.5,50.0 159.2,50.2 160.0,50.4 160.7,50.6 161.4,50.8 162.2,51.1 162.9,51.3 163.6,51.5 164.4,51.8 165.1,52.0 165.8,52.3 166.6,52.6 167.3,52.8 168.0,53.1 168.8,53.4 169.5,53.6 170.2,53.9 171.0,54.2 171.7,54.5 172.5,54.8 173.2,55.1 173.9,55.5 174.7,55.8 175.4,56.1 176.1,56.4 176.9,56.8 177.6,57.1 178.3,57.4 179.1,57.8 179.8,58.1 180.5,58.5 181.3,58.9 182.0,59.2 182.7,59.6 183.5,60.0 184.2,60.4 184.9,60.8 185.7,61.2 186.4,61.6 187.2,62.0 187.9,62.4 188.6,62.8 189.4,63.3 190.1,63.7 190.8,64.1 191.6,64.6 192.3,65.0 193.0,65.5 193.8,65.9 194.5,66.4 195.2,66.8 196.0,67.3 196.7,67.8 197.4,68.3 198.2,68.8 198.9,69.3 199.7,69.8 200.4,70.3 201.1,70.8 201.9,71.3 202.6,71.8 203.3,72.3 204.1,72.9 204.8,73.4 205.5,73.9 206.3,74.5 207.0,75.0 207.7,75.6 208.5,76.2 209.2,76.7 209.9,77.3 210.7,77.9 211.4,78.5 212.1,79.1 212.9,79.6 213.6,80.2 214.3,80.8 215.1,81.5 215.8,82.1 216.6,82.7 217.3,83.3 218.0,84.0 218.8,84.6 219.5,85.2 220.2,85.9 221.0,86.5 221.7,87.2 222.4,87.8 223.2,88.5 223.9,89.2 224.6,89.9 225.4,90.6 226.1,91.2 226.8,91.9 227.6,92.6 228.3,93.3 229.1,94.1 229.8,94.8 230.5,95.5 231.3,96.2 232.0,96.9 232.7,97.7 233.5,98.4 234.2,99.2 234.9,99.9 235.7,100.7 236.4,101.4 237.1,102.2 237.9,103.0 238.6,103.8 239.3,104.6 240.1,105.3 240.8,106.1 241.5,106.9 242.3,107.7 243.0,108.6 243.8,109.4 244.5,110.2 245.2,111.0 246.0,111.9 246.7,112.7 247.4,113.5 248.2,114.4 248.9,115.2 249.6,116.1 250.4,117.0 251.1,117.8 251.8,118.7 252.6,119.6 253.3,120.5 254.0,121.4 254.8,122.3 255.5,123.2 256.2,124.1 257.0,125.0 257.7,125.9 258.4,126.8 259.2,127.7 259.9,128.7 260.7,129.6 261.4,130.6 262.1,131.5 262.9,132.5 263.6,133.4 264.3,134.4 265.1,135.4 265.8,136.3 266.5,137.3 267.3,138.3 268.0,139.3 268.7,140.3 269.5,141.3 270.2,142.3 270.9,143.3 271.7,144.3 272.4,145.3 273.1,146.4 273.9,147.4 274.6,148.4 275.4,149.5 276.1,150.5 276.8,151.6 277.6,152.6 278.3,153.7 279.0,154.8 279.8,155.9 280.5,156.9 281.2,158.0 282.0,159.1 282.7,160.2 283.4,161.3 284.2,162.4 284.9,163.5 285.6,164.7 286.4,165.8 287.1,166.9 287.9,168.0 288.6,169.2 289.3,170.3 290.1,171.5 290.8,172.6 291.5,173.8 292.3,175.0 293.0,176.1 293.7,177.3 294.5,178.5 295.2,179.7 295.9,180.9 296.7,182.1 297.4,183.3 298.1,184.5 298.9,185.7 299.6,186.9 300.3,188.1 301.1,189.4 301.8,190.6 302.5,191.8 303.3,193.1 304.0,194.3 304.8,195.6 305.5,196.8 306.2,198.1 307.0,199.4 307.7,200.7 308.4,201.9 309.2,203.2 309.9,204.5 310.6,205.8 311.4,207.1 312.1,208.4 312.8,209.7 313.6,211.1 314.3,212.4 315.0,213.7 315.8,215.0 316.5,216.4 317.2,217.7 318.0,219.1 318.7,220.4 319.5,221.8 320.2,223.2 320.9,224.5 321.7,225.9 322.4,227.3 323.1,228.7 323.9,230.1 324.6,231.5 325.3,232.9 326.1,234.3 326.8,235.7 327.5,237.1 328.3,238.6 329.0,240.0 329.7,241.4 330.5,242.9 331.2,244.3 331.9,245.8 332.7,247.2 333.4,248.7 334.2,250.1 334.9,251.6 335.6,253.1 336.4,254.6 337.1,256.1 337.8,257.6 338.6,259.1 339.3,260.6 340.0,262.1 340.8,263.6 341.5,265.1 342.2,266.6 343.0,268.2 343.7,269.7 344.4,271.2 345.2,272.8 345.9,274.3 346.6,275.9 347.4,277.5 348.1,279.0 348.9,280.6 349.6,282.2 350.3,283.8 351.1,285.4 351.8,286.9 352.5,288.5 353.3,290.1 354.0,291.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"130.0\" y1=\"67.0\" x2=\"130.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"130.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"200.0\" y1=\"67.0\" x2=\"200.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><line x1=\"270.0\" y1=\"67.0\" x2=\"270.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"270.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"340.0\" y1=\"67.0\" x2=\"340.0\" y2=\"73.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"340.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><line x1=\"57.0\" y1=\"262.0\" x2=\"63.0\" y2=\"262.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−8</text><line x1=\"57.0\" y1=\"214.0\" x2=\"63.0\" y2=\"214.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"218.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−6</text><line x1=\"57.0\" y1=\"166.0\" x2=\"63.0\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"170.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−4</text><line x1=\"57.0\" y1=\"118.0\" x2=\"63.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2</text><line x1=\"57.0\" y1=\"22.0\" x2=\"63.0\" y2=\"22.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"26.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><circle cx=\"130\" cy=\"46\" r=\"5.5\" fill=\"#dc2626\"/><text x=\"140.0\" y=\"42.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 1: at rest, x = 1</text><circle cx=\"200\" cy=\"70\" r=\"5.5\" fill=\"#047857\"/><text x=\"208.0\" y=\"60.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 2: back at the origin</text><circle cx=\"340\" cy=\"262\" r=\"5.5\" fill=\"#7c3aed\"/><text x=\"332.0\" y=\"278.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t = 4: x = −8</text></svg>"
+              }
+            },
+            {
+              "explain": "First part (moving right): from \\(0\\) to \\(1\\): distance \\(=1\\) m. Second part (moving left): from \\(1\\) to \\(-8\\): distance \\(=|-8-1|=9\\) m.",
+              "work": "\\(1+9=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 130\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"70.0\" x2=\"400.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"400.0\" y1=\"70.0\" x2=\"393.1\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"400.0\" y1=\"70.0\" x2=\"393.1\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"108.0\" y1=\"62.0\" x2=\"108.0\" y2=\"78.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"108.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−8</text><line x1=\"300.0\" y1=\"62.0\" x2=\"300.0\" y2=\"78.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"324.0\" y1=\"62.0\" x2=\"324.0\" y2=\"78.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"324.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><path d=\"M300,58 Q312.0,36 324,58\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.6\"/><text x=\"312.0\" y=\"24.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#2563eb\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1 m right</text><path d=\"M324,50 Q216.0,-6 108,50\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"216.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9 m left</text></svg>"
+              }
+            },
+            {
+              "explain": "Total distance travelled in the first 4 seconds.",
+              "work": "\\(10\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: 8 m is only the final displacement from the origin (it forgets the 1 m to the right and back); 9 m forgets the first part.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the distance travelled in the first 4 seconds",
+              "note": "Distance counts the turn: 1 m right then 9 m left."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

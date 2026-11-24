@@ -12859,6 +12859,62 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q15c1",
+          "type": "mc",
+          "stem": "The diagram shows the beginning of a series of concentric circles. The radius of the inner most circle is 1 unit. The radius of each circle moving outwards, is 1 more than the previous circle. The area between two concentric circles is called an annulus. The area of the annulus marked \\(A\\) is \\(3\\pi\\) square units. The area of the annulus marked \\(B\\) is \\(5\\pi\\) square units. The area of the annulus marked \\(C\\) is \\(7\\pi\\) square units and so on. Find the area of the \\(10^{\\text{th}}\\) annulus.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"165\" r=\"136\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"102\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"68\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"34\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"2.5\" fill=\"#1e293b\"/><text x=\"205.1\" y=\"125.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"227.9\" y=\"99.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"250.6\" y=\"74.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(21\\pi\\)",
+            "\\(19\\pi\\)",
+            "\\(23\\pi\\)",
+            "\\(441\\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "The annulus areas \\(3\\pi,\\ 5\\pi,\\ 7\\pi,\\dots\\) form an ARITHMETIC sequence (first term \\(a=3\\pi\\), common difference \\(d=2\\pi\\)). Use \\(T_{n}=a+(n-1)d\\).",
+          "steps": [
+            {
+              "explain": "Identify the sequence: \\(5\\pi-3\\pi=2\\pi\\) and \\(7\\pi-5\\pi=2\\pi\\) (constant difference).",
+              "work": "\\(a=3\\pi,\\qquad d=2\\pi\\)"
+            },
+            {
+              "explain": "Check with geometry: the annulus between circles of radius \\(n\\) and \\(n+1\\) has area \\(\\pi(n+1)^{2}-\\pi n^{2}=\\pi(2n+1)\\); for A (\\(n=1\\)) that is \\(3\\pi\\) ✓.",
+              "work": "\\(T_{n}=\\pi(2n+1)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"165\" r=\"136\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"102\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"68\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"34\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"2.5\" fill=\"#1e293b\"/><text x=\"205.1\" y=\"125.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"227.9\" y=\"99.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"250.6\" y=\"74.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "General term and substitute \\(n=10\\) (the 10th annulus).",
+              "work": "\\(T_{10}=a+(10-1)d=3\\pi+9(2\\pi)=3\\pi+18\\pi=21\\pi\\)"
+            },
+            {
+              "explain": "Check with \\(\\pi(2n+1)\\): \\(\\pi(21)=21\\pi\\) ✓. Option D is \\(21^{2}\\pi\\) (confusing area with radius squared).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the area of the",
+              "note": "Annulus areas form an arithmetic sequence with a = 3 pi and d = 2 pi."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -30590,6 +30646,116 @@
           "meta": {
             "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
             "school": "The King's School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q15c2",
+          "type": "mc",
+          "stem": "The diagram shows the beginning of a series of concentric circles. The radius of the inner most circle is 1 unit. The radius of each circle moving outwards, is 1 more than the previous circle. The area between two concentric circles is called an annulus. The area of the annulus marked \\(A\\) is \\(3\\pi\\) square units. The area of the annulus marked \\(B\\) is \\(5\\pi\\) square units. The area of the annulus marked \\(C\\) is \\(7\\pi\\) square units and so on. Show that the sum of the first \\(n\\) annuli is found by \\(S_{n}=\\pi n^{2}+2n\\pi\\). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"165\" r=\"136\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"102\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"68\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"34\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"2.5\" fill=\"#1e293b\"/><text x=\"205.1\" y=\"125.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"227.9\" y=\"99.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"250.6\" y=\"74.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+          },
+          "options": [
+            "\\(S_{n}=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]=\\dfrac{n}{2}\\left[2(3\\pi)+(n-1)2\\pi\\right]=n\\left[3\\pi+(n-1)\\pi\\right]=n\\left[n\\pi+2\\pi\\right]=\\pi n^{2}+2n\\pi\\)",
+            "\\(S_{n}=\\dfrac{n}{2}\\left[a+(n-1)d\\right]=\\dfrac{n}{2}\\left[3\\pi+(n-1)2\\pi\\right]=\\dfrac{n}{2}(2n\\pi+\\pi)=\\pi n^{2}+\\dfrac{n\\pi}{2}\\)",
+            "\\(S_{n}=\\dfrac{n}{2}\\left[2a+nd\\right]=\\dfrac{n}{2}\\left[6\\pi+2n\\pi\\right]=3n\\pi+\\pi n^{2}\\)",
+            "\\(S_{n}=a\\dfrac{r^{n}-1}{r-1}\\) with \\(a=3\\pi\\) and \\(r=\\dfrac{5}{3}\\), which gives a different formula."
+          ],
+          "answer": 0,
+          "hint": "Sum of an arithmetic series: \\(S_{n}=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]\\) with \\(a=3\\pi\\) and \\(d=2\\pi\\). Expand carefully.",
+          "steps": [
+            {
+              "explain": "The areas form an arithmetic series (part (i)): \\(a=3\\pi\\), \\(d=2\\pi\\). Use \\(S_{n}=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]\\) (the sum of the first \\(n\\) annuli = the area of the circle of radius \\(n+1\\) minus the central disc: the yellow region).",
+              "work": "\\(S_{n}=\\dfrac{n}{2}\\left[2(3\\pi)+(n-1)(2\\pi)\\right]\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><circle cx=\"165\" cy=\"165\" r=\"136\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"102\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"68\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"34\" fill=\"#9ca3af\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"136\" fill=\"#fde68a\" fill-opacity=\"0.7\"/><circle cx=\"165\" cy=\"165\" r=\"102\" fill=\"#9ca3af\"/><circle cx=\"165\" cy=\"165\" r=\"68\" fill=\"#fff\"/><circle cx=\"165\" cy=\"165\" r=\"34\" fill=\"#9ca3af\"/><circle cx=\"165\" cy=\"165\" r=\"136\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"102\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"68\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"34\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><circle cx=\"165\" cy=\"165\" r=\"2.5\" fill=\"#1e293b\"/><text x=\"205.1\" y=\"125.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"227.9\" y=\"99.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"250.6\" y=\"74.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify inside the bracket: \\(6\\pi+2n\\pi-2\\pi=4\\pi+2n\\pi\\) and take out the factor 2.",
+              "work": "\\(S_{n}=\\dfrac{n}{2}\\left[2\\left(3\\pi+(n-1)\\pi\\right)\\right]=n\\left[3\\pi+n\\pi-\\pi\\right]\\)"
+            },
+            {
+              "explain": "Combine: \\(3\\pi-\\pi=2\\pi\\).",
+              "work": "\\(S_{n}=n\\left[n\\pi+2\\pi\\right]=\\pi n^{2}+2n\\pi\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Check geometrically: total area of the \\(n\\) annuli \\(=\\pi(n+1)^{2}-\\pi(1)^{2}=\\pi n^{2}+2n\\pi\\) ✓. Why not the others: B uses the wrong formula (missing the 2); C forgets that \\(n-1\\) multiplies \\(d\\); D treats it as geometric (the ratio is not constant).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the sum of the first",
+              "note": "Arithmetic series sum formula with a = 3 pi and d = 2 pi."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q15c3",
+          "type": "mc",
+          "stem": "The diagram shows the beginning of a series of concentric circles. The radius of the inner most circle is 1 unit. The radius of each circle moving outwards, is 1 more than the previous circle. The area between two concentric circles is called an annulus. The area of the annulus marked \\(A\\) is \\(3\\pi\\) square units. The area of the annulus marked \\(B\\) is \\(5\\pi\\) square units. The area of the annulus marked \\(C\\) is \\(7\\pi\\) square units and so on. What is the minimum number of annuli needed for a combined area of \\(300\\ \\text{u}^{2}\\)?",
+          "difficulty": "hard",
+          "options": [
+            "\\(9\\)",
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(100\\)"
+          ],
+          "answer": 0,
+          "hint": "Solve \\(S_{n}\\ge300\\), where \\(S_{n}=\\pi n^{2}+2n\\pi\\). Use the quadratic formula, then round UP (you need whole annuli, and the area must reach at least 300).",
+          "steps": [
+            {
+              "explain": "Set up the inequality.",
+              "work": "\\(\\pi n^{2}+2\\pi n\\ge300\\ \\Rightarrow\\ \\pi n^{2}+2\\pi n-300\\ge0\\)"
+            },
+            {
+              "explain": "Solve the equation \\(\\pi n^{2}+2\\pi n-300=0\\) with the quadratic formula (\\(a=\\pi,\\ b=2\\pi,\\ c=-300\\)).",
+              "work": "\\(n=\\dfrac{-2\\pi\\pm\\sqrt{4\\pi^{2}+1200\\pi}}{2\\pi}\\)"
+            },
+            {
+              "explain": "\\(n>0\\), so take the plus sign.",
+              "work": "\\(n=\\dfrac{-2\\pi+\\sqrt{4\\pi^{2}+1200\\pi}}{2\\pi}\\approx8.8\\)"
+            },
+            {
+              "explain": "The parabola \\(\\pi n^{2}+2\\pi n-300\\) is concave up, so it is \\(\\ge0\\) for \\(n\\ge8.8\\). \\(n\\) must be a whole number, so the minimum is \\(n=9\\).",
+              "work": "\\(S_{8}=\\pi(64+16)=251<300,\\qquad S_{9}=\\pi(81+18)=311\\ge300\\)"
+            },
+            {
+              "explain": "Check: 8 annuli give only \\(251\\) (too small) and 9 give \\(311\\) ✓. Option D is \\(300\\div3\\) (a slip).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the minimum number of annuli needed",
+              "note": "Solve the inequality with the quadratic formula and round up."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

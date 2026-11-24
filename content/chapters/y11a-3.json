@@ -14713,6 +14713,52 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q2",
+          "type": "mc",
+          "stem": "Which inequality gives the domain of \\(y=\\sqrt{6-x}\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(x<6\\)",
+            "\\(x>6\\)",
+            "\\(x\\le6\\)",
+            "\\(x\\ge6\\)"
+          ],
+          "answer": 2,
+          "hint": "A square root is only defined when what is under it is \\(\\ge0\\) (zero is allowed because \\(\\sqrt{0}=0\\)). Solve \\(6-x\\ge0\\).",
+          "steps": [
+            {
+              "explain": "The expression under the root must not be negative.",
+              "work": "\\(6-x\\ge0\\)"
+            },
+            {
+              "explain": "Add \\(x\\) to both sides (no sign flip is needed).",
+              "work": "\\(6\\ge x\\ \\Rightarrow\\ x\\le6\\)"
+            },
+            {
+              "explain": "Check: \\(x=6\\) gives \\(\\sqrt{0}=0\\) (defined, so 6 is included: \\(\\le\\)); \\(x=7\\) gives \\(\\sqrt{-1}\\) (not real). Options A and B leave out/flip the boundary incorrectly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which inequality gives the domain of",
+              "note": "Under the square root must be zero or positive."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -17446,6 +17492,210 @@
               "note": "Substitute x=3 and y=2 into the line equation, then solve for k."
             }
           ]
+        },
+        {
+          "id": "knox2021-y12a-q12a1",
+          "type": "mc",
+          "stem": "Jamjet Industries produce galvanised bolts for the roofing industry. Due to manufacturing constraints, the maximum number of bolts they can produce in a month is 120 000. The cost of production is 50 000 dollars plus 95 cents per bolt. The bolts are sold for 1.75 dollars each and the graph that represents Jamjet’s revenue, \\(R\\), appears on the axes below (\\(R=1.75n\\)). Find the linear equation for the cost, \\(C\\), of producing \\(n\\) bolts.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 330\" width=\"100%\" height=\"auto\" style=\"max-width:490px;display:block;margin:0 auto\"><line x1=\"70.0\" y1=\"285.0\" x2=\"70.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"100.8\" y1=\"285.0\" x2=\"100.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"131.7\" y1=\"285.0\" x2=\"131.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"162.5\" y1=\"285.0\" x2=\"162.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"193.3\" y1=\"285.0\" x2=\"193.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.2\" y1=\"285.0\" x2=\"224.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"285.0\" x2=\"255.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"285.8\" y1=\"285.0\" x2=\"285.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"316.7\" y1=\"285.0\" x2=\"316.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"347.5\" y1=\"285.0\" x2=\"347.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"378.3\" y1=\"285.0\" x2=\"378.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"409.2\" y1=\"285.0\" x2=\"409.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"440.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"285.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"257.0\" x2=\"440.0\" y2=\"257.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"229.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"201.1\" x2=\"440.0\" y2=\"201.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"173.1\" x2=\"440.0\" y2=\"173.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"145.1\" x2=\"440.0\" y2=\"145.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"117.1\" x2=\"440.0\" y2=\"117.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"89.2\" x2=\"440.0\" y2=\"89.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"61.2\" x2=\"440.0\" y2=\"61.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"285.0\" x2=\"452.3\" y2=\"285.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"291.0\" x2=\"70.0\" y2=\"36.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"282.0\" x2=\"70.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"131.7\" y1=\"282.0\" x2=\"131.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"131.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20000</text><line x1=\"193.3\" y1=\"282.0\" x2=\"193.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"193.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40000</text><line x1=\"255.0\" y1=\"282.0\" x2=\"255.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"255.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60000</text><line x1=\"316.7\" y1=\"282.0\" x2=\"316.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"316.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80000</text><line x1=\"378.3\" y1=\"282.0\" x2=\"378.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"378.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"440.0\" y1=\"282.0\" x2=\"440.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"440.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120000</text><line x1=\"67.0\" y1=\"229.0\" x2=\"73.0\" y2=\"229.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"232.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50000</text><line x1=\"67.0\" y1=\"173.1\" x2=\"73.0\" y2=\"173.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"176.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"67.0\" y1=\"117.1\" x2=\"73.0\" y2=\"117.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"120.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150000</text><line x1=\"67.0\" y1=\"61.2\" x2=\"73.0\" y2=\"61.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"64.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200000</text><text x=\"255.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of bolts (n)</text><text transform=\"translate(18,167.5) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">Cost (C) $</text><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"440.0\" cy=\"50.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"403.0\" y=\"46.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R = 1.75n</text></svg>"
+          },
+          "options": [
+            "\\(C=50\\,000+0.95n\\)",
+            "\\(C=50\\,000+95n\\)",
+            "\\(C=0.95n\\)",
+            "\\(C=50\\,000n+0.95\\)"
+          ],
+          "answer": 0,
+          "hint": "A linear cost equation is \\(C=\\text{fixed cost}+(\\text{cost per item})\\times n\\). Be careful with the units: 95 CENTS is 0.95 DOLLARS.",
+          "steps": [
+            {
+              "explain": "Fixed cost (paid even if \\(n=0\\)): 50 000 dollars. Variable cost: 95 cents \\(=0.95\\) dollars for EACH bolt, so \\(0.95n\\) for \\(n\\) bolts.",
+              "work": "\\(\\text{fixed}=50\\,000,\\qquad\\text{per bolt}=0.95\\)"
+            },
+            {
+              "explain": "Add the fixed and variable parts (green line: starts at 50 000 on the vertical axis and rises 0.95 for every bolt).",
+              "work": "\\(C=50\\,000+0.95n\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 330\" width=\"100%\" height=\"auto\" style=\"max-width:490px;display:block;margin:0 auto\"><line x1=\"70.0\" y1=\"285.0\" x2=\"70.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"100.8\" y1=\"285.0\" x2=\"100.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"131.7\" y1=\"285.0\" x2=\"131.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"162.5\" y1=\"285.0\" x2=\"162.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"193.3\" y1=\"285.0\" x2=\"193.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.2\" y1=\"285.0\" x2=\"224.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"285.0\" x2=\"255.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"285.8\" y1=\"285.0\" x2=\"285.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"316.7\" y1=\"285.0\" x2=\"316.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"347.5\" y1=\"285.0\" x2=\"347.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"378.3\" y1=\"285.0\" x2=\"378.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"409.2\" y1=\"285.0\" x2=\"409.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"440.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"285.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"257.0\" x2=\"440.0\" y2=\"257.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"229.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"201.1\" x2=\"440.0\" y2=\"201.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"173.1\" x2=\"440.0\" y2=\"173.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"145.1\" x2=\"440.0\" y2=\"145.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"117.1\" x2=\"440.0\" y2=\"117.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"89.2\" x2=\"440.0\" y2=\"89.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"61.2\" x2=\"440.0\" y2=\"61.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"285.0\" x2=\"452.3\" y2=\"285.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"291.0\" x2=\"70.0\" y2=\"36.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"282.0\" x2=\"70.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"131.7\" y1=\"282.0\" x2=\"131.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"131.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20000</text><line x1=\"193.3\" y1=\"282.0\" x2=\"193.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"193.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40000</text><line x1=\"255.0\" y1=\"282.0\" x2=\"255.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"255.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60000</text><line x1=\"316.7\" y1=\"282.0\" x2=\"316.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"316.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80000</text><line x1=\"378.3\" y1=\"282.0\" x2=\"378.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"378.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"440.0\" y1=\"282.0\" x2=\"440.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"440.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120000</text><line x1=\"67.0\" y1=\"229.0\" x2=\"73.0\" y2=\"229.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"232.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50000</text><line x1=\"67.0\" y1=\"173.1\" x2=\"73.0\" y2=\"173.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"176.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"67.0\" y1=\"117.1\" x2=\"73.0\" y2=\"117.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"120.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150000</text><line x1=\"67.0\" y1=\"61.2\" x2=\"73.0\" y2=\"61.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"64.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200000</text><text x=\"255.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of bolts (n)</text><text transform=\"translate(18,167.5) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">Cost (C) $</text><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"440.0\" cy=\"50.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"403.0\" y=\"46.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R = 1.75n</text><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"101.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"229.04761904761904\" r=\"4.5\" fill=\"#047857\"/><text x=\"78.0\" y=\"223.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(0, 50 000)</text><text x=\"366.0\" y=\"149.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C = 50 000 + 0.95n</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: 1000 bolts cost \\(50\\,000+950=50\\,950\\) dollars ✓. Option B uses 95 dollars per bolt (not cents); C leaves out the fixed cost; D multiplies the wrong term.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the linear equation for the cost",
+              "note": "Cost = fixed cost + cost per bolt times n; 95 cents is 0.95 dollars."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q12a2",
+          "type": "mc",
+          "stem": "Jamjet Industries produce galvanised bolts for the roofing industry. Due to manufacturing constraints, the maximum number of bolts they can produce in a month is 120 000. The cost of production is 50 000 dollars plus 95 cents per bolt. The bolts are sold for 1.75 dollars each and the graph that represents Jamjet’s revenue, \\(R\\), appears on the axes below (\\(R=1.75n\\)). What is the practical significance of the gradient of the line in (i)?",
+          "difficulty": "easy",
+          "options": [
+            "The cost of producing each extra bolt (0.95 dollars per bolt).",
+            "The fixed cost of 50 000 dollars before any bolts are made.",
+            "The selling price of each bolt (1.75 dollars).",
+            "The profit made on each bolt."
+          ],
+          "answer": 0,
+          "hint": "The gradient is the rate of change: how much the cost \\(C\\) increases for each EXTRA bolt. Look at the units: dollars per bolt.",
+          "steps": [
+            {
+              "explain": "In \\(C=50\\,000+0.95n\\) the gradient is \\(m=0.95\\).",
+              "work": "\\(m=0.95=\\dfrac{\\text{change in }C}{\\text{change in }n}\\)"
+            },
+            {
+              "explain": "Units: dollars (on the cost axis) per bolt (on the \\(n\\) axis). For every extra bolt, the cost rises by 0.95 dollars. So the gradient is the production cost per bolt.",
+              "work": "\\(\\text{0.95 dollars per bolt}\\)"
+            },
+            {
+              "explain": "Why not the others: the fixed cost 50 000 is the \\(C\\)-INTERCEPT, not the gradient; the selling price 1.75 is the gradient of the REVENUE line; profit per bolt would be \\(1.75-0.95=0.80\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the practical significance of the gradient",
+              "note": "Gradient is the cost per extra bolt (dollars per bolt)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q12a3",
+          "type": "mc",
+          "stem": "Jamjet Industries produce galvanised bolts for the roofing industry. Due to manufacturing constraints, the maximum number of bolts they can produce in a month is 120 000. The cost of production is 50 000 dollars plus 95 cents per bolt. The bolts are sold for 1.75 dollars each and the graph that represents Jamjet’s revenue, \\(R\\), appears on the axes below (\\(R=1.75n\\)). Find the number of bolts Jamjet must sell in a month to break even.",
+          "difficulty": "medium",
+          "options": [
+            "\\(62\\,500\\)",
+            "\\(50\\,000\\)",
+            "\\(120\\,000\\)",
+            "\\(28\\,571\\)"
+          ],
+          "answer": 0,
+          "hint": "Break even means revenue equals cost: \\(R=C\\). Set \\(1.75n=50\\,000+0.95n\\) and solve for \\(n\\) (graphically, where the two lines cross).",
+          "steps": [
+            {
+              "explain": "Break-even: revenue \\(=\\) cost (the lines intersect at the red point).",
+              "work": "\\(1.75n=50\\,000+0.95n\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 330\" width=\"100%\" height=\"auto\" style=\"max-width:490px;display:block;margin:0 auto\"><line x1=\"70.0\" y1=\"285.0\" x2=\"70.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"100.8\" y1=\"285.0\" x2=\"100.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"131.7\" y1=\"285.0\" x2=\"131.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"162.5\" y1=\"285.0\" x2=\"162.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"193.3\" y1=\"285.0\" x2=\"193.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.2\" y1=\"285.0\" x2=\"224.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"285.0\" x2=\"255.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"285.8\" y1=\"285.0\" x2=\"285.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"316.7\" y1=\"285.0\" x2=\"316.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"347.5\" y1=\"285.0\" x2=\"347.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"378.3\" y1=\"285.0\" x2=\"378.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"409.2\" y1=\"285.0\" x2=\"409.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"440.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"285.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"257.0\" x2=\"440.0\" y2=\"257.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"229.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"201.1\" x2=\"440.0\" y2=\"201.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"173.1\" x2=\"440.0\" y2=\"173.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"145.1\" x2=\"440.0\" y2=\"145.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"117.1\" x2=\"440.0\" y2=\"117.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"89.2\" x2=\"440.0\" y2=\"89.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"61.2\" x2=\"440.0\" y2=\"61.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"285.0\" x2=\"452.3\" y2=\"285.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"291.0\" x2=\"70.0\" y2=\"36.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"282.0\" x2=\"70.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"131.7\" y1=\"282.0\" x2=\"131.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"131.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20000</text><line x1=\"193.3\" y1=\"282.0\" x2=\"193.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"193.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40000</text><line x1=\"255.0\" y1=\"282.0\" x2=\"255.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"255.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60000</text><line x1=\"316.7\" y1=\"282.0\" x2=\"316.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"316.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80000</text><line x1=\"378.3\" y1=\"282.0\" x2=\"378.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"378.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"440.0\" y1=\"282.0\" x2=\"440.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"440.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120000</text><line x1=\"67.0\" y1=\"229.0\" x2=\"73.0\" y2=\"229.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"232.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50000</text><line x1=\"67.0\" y1=\"173.1\" x2=\"73.0\" y2=\"173.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"176.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"67.0\" y1=\"117.1\" x2=\"73.0\" y2=\"117.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"120.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150000</text><line x1=\"67.0\" y1=\"61.2\" x2=\"73.0\" y2=\"61.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"64.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200000</text><text x=\"255.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of bolts (n)</text><text transform=\"translate(18,167.5) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">Cost (C) $</text><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"440.0\" cy=\"50.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"403.0\" y=\"46.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R = 1.75n</text><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"101.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"229.04761904761904\" r=\"4.5\" fill=\"#047857\"/><text x=\"78.0\" y=\"223.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(0, 50 000)</text><text x=\"366.0\" y=\"149.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C = 50 000 + 0.95n</text><line x1=\"262.7\" y1=\"285.0\" x2=\"262.7\" y2=\"162.6\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><circle cx=\"262.7\" cy=\"162.6\" r=\"6\" fill=\"#dc2626\"/><text x=\"254.7\" y=\"150.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">break-even: n = 62 500</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(0.95n\\) from both sides: \\(1.75-0.95=0.80\\).",
+              "work": "\\(0.80n=50\\,000\\)"
+            },
+            {
+              "explain": "Divide by 0.80.",
+              "work": "\\(n=\\dfrac{50\\,000}{0.80}=62\\,500\\)"
+            },
+            {
+              "explain": "Check: \\(R=1.75\\times62\\,500=109\\,375\\) and \\(C=50\\,000+0.95\\times62\\,500=109\\,375\\) ✓. Option D is \\(\\dfrac{50\\,000}{1.75}\\) (it ignores the 0.95 cost).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the number of bolts Jamjet must sell in a month to break even",
+              "note": "Break even: revenue equals cost."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q12a4",
+          "type": "mc",
+          "stem": "Jamjet Industries produce galvanised bolts for the roofing industry. Due to manufacturing constraints, the maximum number of bolts they can produce in a month is 120 000. The cost of production is 50 000 dollars plus 95 cents per bolt. The bolts are sold for 1.75 dollars each and the graph that represents Jamjet’s revenue, \\(R\\), appears on the axes below (\\(R=1.75n\\)). What is the maximum monthly profit attainable by Jamjet?",
+          "difficulty": "medium",
+          "options": [
+            "\\(46\\,000\\) dollars",
+            "\\(96\\,000\\) dollars",
+            "\\(160\\,000\\) dollars",
+            "\\(210\\,000\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Profit \\(=\\) revenue \\(-\\) cost. Profit grows with \\(n\\) (because 1.75 is more than 0.95 per bolt), so the maximum is at the maximum production \\(n=120\\,000\\).",
+          "steps": [
+            {
+              "explain": "Profit function.",
+              "work": "\\(P=R-C=1.75n-(50\\,000+0.95n)=0.80n-50\\,000\\)"
+            },
+            {
+              "explain": "Each extra bolt adds 0.80 to the profit, so profit is greatest when \\(n\\) is as large as possible: \\(n=120\\,000\\) (the monthly limit).",
+              "work": "\\(P(120\\,000)=0.80\\times120\\,000-50\\,000=96\\,000-50\\,000\\)"
+            },
+            {
+              "explain": "On the graph, it is the gap between the revenue line and the cost line at \\(n=120\\,000\\) (red segment): \\(210\\,000-164\\,000\\).",
+              "work": "\\(P_{\\max}=46\\,000\\ \\text{dollars}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 330\" width=\"100%\" height=\"auto\" style=\"max-width:490px;display:block;margin:0 auto\"><line x1=\"70.0\" y1=\"285.0\" x2=\"70.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"100.8\" y1=\"285.0\" x2=\"100.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"131.7\" y1=\"285.0\" x2=\"131.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"162.5\" y1=\"285.0\" x2=\"162.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"193.3\" y1=\"285.0\" x2=\"193.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"224.2\" y1=\"285.0\" x2=\"224.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"255.0\" y1=\"285.0\" x2=\"255.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"285.8\" y1=\"285.0\" x2=\"285.8\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"316.7\" y1=\"285.0\" x2=\"316.7\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"347.5\" y1=\"285.0\" x2=\"347.5\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"378.3\" y1=\"285.0\" x2=\"378.3\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"409.2\" y1=\"285.0\" x2=\"409.2\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"440.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"285.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"257.0\" x2=\"440.0\" y2=\"257.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"229.0\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"201.1\" x2=\"440.0\" y2=\"201.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"173.1\" x2=\"440.0\" y2=\"173.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"145.1\" x2=\"440.0\" y2=\"145.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"117.1\" x2=\"440.0\" y2=\"117.1\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"89.2\" x2=\"440.0\" y2=\"89.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"61.2\" x2=\"440.0\" y2=\"61.2\" stroke=\"#e5e7eb\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"64.0\" y1=\"285.0\" x2=\"452.3\" y2=\"285.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"291.0\" x2=\"70.0\" y2=\"36.6\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"282.0\" x2=\"70.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"70.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"131.7\" y1=\"282.0\" x2=\"131.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"131.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20000</text><line x1=\"193.3\" y1=\"282.0\" x2=\"193.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"193.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40000</text><line x1=\"255.0\" y1=\"282.0\" x2=\"255.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"255.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60000</text><line x1=\"316.7\" y1=\"282.0\" x2=\"316.7\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"316.7\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80000</text><line x1=\"378.3\" y1=\"282.0\" x2=\"378.3\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"378.3\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"440.0\" y1=\"282.0\" x2=\"440.0\" y2=\"288.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"440.0\" y=\"300.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120000</text><line x1=\"67.0\" y1=\"229.0\" x2=\"73.0\" y2=\"229.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"232.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50000</text><line x1=\"67.0\" y1=\"173.1\" x2=\"73.0\" y2=\"173.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"176.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100000</text><line x1=\"67.0\" y1=\"117.1\" x2=\"73.0\" y2=\"117.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"120.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150000</text><line x1=\"67.0\" y1=\"61.2\" x2=\"73.0\" y2=\"61.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"64.0\" y=\"64.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"8.5\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">200000</text><text x=\"255.0\" y=\"315.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of bolts (n)</text><text transform=\"translate(18,167.5) rotate(-90)\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"600\" fill=\"#1e293b\">Cost (C) $</text><line x1=\"70.0\" y1=\"285.0\" x2=\"440.0\" y2=\"50.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"440.0\" cy=\"50.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"403.0\" y=\"46.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R = 1.75n</text><line x1=\"70.0\" y1=\"229.0\" x2=\"440.0\" y2=\"101.5\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"229.04761904761904\" r=\"4.5\" fill=\"#047857\"/><text x=\"78.0\" y=\"223.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(0, 50 000)</text><text x=\"366.0\" y=\"149.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C = 50 000 + 0.95n</text><line x1=\"440.0\" y1=\"101.5\" x2=\"440.0\" y2=\"50.0\" stroke=\"#dc2626\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"432.0\" y=\"79.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">profit = 46 000</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B forgets the fixed cost; D is the revenue; C is revenue minus the fixed cost only.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the maximum monthly profit attainable by Jamjet",
+              "note": "Profit is 0.80n − 50 000; use the maximum n = 120 000."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -1902,6 +1902,113 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q6",
+          "type": "mc",
+          "stem": "Which of the following is an example of a discrete random variable?",
+          "difficulty": "easy",
+          "options": [
+            "The time needed to run one kilometre.",
+            "The heights of trees in a local park.",
+            "The mass of all parcels delivered by Australia Post on a particular day.",
+            "The number of visits made by 100 patients to their doctor in a year."
+          ],
+          "answer": 3,
+          "hint": "A DISCRETE random variable takes separate (countable) values, usually whole numbers: it is COUNTED. A continuous variable is MEASURED (time, height, mass).",
+          "steps": [
+            {
+              "explain": "Test each option: ask 'is this counted or measured?'",
+              "work": "\\(\\text{discrete}=\\text{counted},\\quad\\text{continuous}=\\text{measured}\\)"
+            },
+            {
+              "explain": "A: time is measured (any value, e.g. 3 min 41.7 s). B: height is measured. C: mass is measured. All three can take any value in an interval, so they are CONTINUOUS.",
+              "work": "\\(\\text{A, B, C: continuous}\\)"
+            },
+            {
+              "explain": "D: the number of doctor visits can only be \\(0,1,2,3,\\dots\\) (whole numbers): we COUNT visits. It is DISCRETE.",
+              "work": "\\(\\text{D: }X\\in\\{0,1,2,3,\\dots\\}\\)"
+            },
+            {
+              "explain": "Answer: D.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is an example of a discrete random variable",
+              "note": "Discrete means counted whole numbers; continuous means measured."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13b1",
+          "type": "mc",
+          "stem": "The spinner is divided into three sectors of equal area. They are coloured red, yellow and green as shown. Rachel spins the spinner 5 times and lets the random variable, \\(X\\), be the number of times the spinner lands on red. This discrete random variable has the following probability distribution: \\(P(X=0)=\\dfrac{32}{243}\\), \\(P(X=1)=k\\), \\(P(X=2)=k\\), \\(P(X=3)=\\dfrac{40}{243}\\), \\(P(X=4)=\\dfrac{10}{243}\\), \\(P(X=5)=\\dfrac{1}{243}\\). Find the value of \\(k\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"130\" r=\"105\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"150.0\" y2=\"25.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"240.9\" y2=\"182.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"59.1\" y2=\"182.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">RED</text><text x=\"198.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">YELLOW</text><text x=\"150.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">GREEN</text><circle cx=\"150\" cy=\"130\" r=\"3.5\" fill=\"#1e293b\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"208.0\" y2=\"124.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"208.0\" y1=\"124.0\" x2=\"201.5\" y2=\"119.3\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"208.0\" y1=\"124.0\" x2=\"200.7\" y2=\"127.3\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{80}{243}\\)",
+            "\\(\\dfrac{40}{243}\\)",
+            "\\(\\dfrac{160}{243}\\)",
+            "\\(\\dfrac{83}{243}\\)"
+          ],
+          "answer": 0,
+          "hint": "All the probabilities in a distribution add to 1.",
+          "steps": [
+            {
+              "explain": "Add all the probabilities (two of them are \\(k\\)).",
+              "work": "\\(\\dfrac{32}{243}+k+k+\\dfrac{40}{243}+\\dfrac{10}{243}+\\dfrac{1}{243}=1\\)"
+            },
+            {
+              "explain": "Combine the known fractions: \\(32+40+10+1=83\\).",
+              "work": "\\(2k+\\dfrac{83}{243}=1\\)"
+            },
+            {
+              "explain": "Subtract \\(\\dfrac{83}{243}\\): \\(1-\\dfrac{83}{243}=\\dfrac{160}{243}\\).",
+              "work": "\\(2k=\\dfrac{160}{243}\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(k=\\dfrac{80}{243}\\)"
+            },
+            {
+              "explain": "Check with the binomial \\(X\\sim B\\left(5,\\dfrac{1}{3}\\right)\\): \\(P(X=1)=5\\cdot\\dfrac{1}{3}\\cdot\\left(\\dfrac{2}{3}\\right)^{4}=\\dfrac{80}{243}\\) ✓. Option C forgets to divide by 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of",
+              "note": "Probabilities add to 1; two of the entries are k."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3288,6 +3395,59 @@
           "meta": {
             "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13b2",
+          "type": "mc",
+          "stem": "The spinner is divided into three sectors of equal area. They are coloured red, yellow and green as shown. Rachel spins the spinner 5 times and lets the random variable, \\(X\\), be the number of times the spinner lands on red. This discrete random variable has the following probability distribution: \\(P(X=0)=\\dfrac{32}{243}\\), \\(P(X=1)=k\\), \\(P(X=2)=k\\), \\(P(X=3)=\\dfrac{40}{243}\\), \\(P(X=4)=\\dfrac{10}{243}\\), \\(P(X=5)=\\dfrac{1}{243}\\). Find \\(\\mathrm{E}(X)\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"150\" cy=\"130\" r=\"105\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"150.0\" y2=\"25.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"240.9\" y2=\"182.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"59.1\" y2=\"182.5\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"105.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">RED</text><text x=\"198.0\" y=\"95.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">YELLOW</text><text x=\"150.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">GREEN</text><circle cx=\"150\" cy=\"130\" r=\"3.5\" fill=\"#1e293b\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"208.0\" y2=\"124.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"208.0\" y1=\"124.0\" x2=\"201.5\" y2=\"119.3\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"208.0\" y1=\"124.0\" x2=\"200.7\" y2=\"127.3\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(\\dfrac{5}{9}\\)",
+            "\\(3\\)",
+            "\\(\\dfrac{80}{243}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expected value \\(\\mathrm{E}(X)=\\sum x\\,P(X=x)\\): multiply each value by its probability and add.",
+          "steps": [
+            {
+              "explain": "Use \\(k=\\dfrac{80}{243}\\) from part (i) and multiply each \\(x\\) by its probability.",
+              "work": "\\(\\mathrm{E}(X)=0\\left(\\dfrac{32}{243}\\right)+1\\left(\\dfrac{80}{243}\\right)+2\\left(\\dfrac{80}{243}\\right)+3\\left(\\dfrac{40}{243}\\right)+4\\left(\\dfrac{10}{243}\\right)+5\\left(\\dfrac{1}{243}\\right)\\)"
+            },
+            {
+              "explain": "Add the numerators: \\(0+80+160+120+40+5=405\\).",
+              "work": "\\(=\\dfrac{405}{243}\\)"
+            },
+            {
+              "explain": "Simplify: divide numerator and denominator by 81.",
+              "work": "\\(=\\dfrac{5}{3}\\)"
+            },
+            {
+              "explain": "Check: \\(X\\) is the number of reds in 5 spins with \\(P(\\text{red})=\\dfrac{1}{3}\\), so \\(\\mathrm{E}(X)=np=5\\times\\dfrac{1}{3}=\\dfrac{5}{3}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Multiply each x by its probability and add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4693,6 +4853,60 @@
           "meta": {
             "source": "Killara High School 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Killara High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q13b3",
+          "type": "mc",
+          "stem": "The spinner is divided into three sectors of equal area. They are coloured red, yellow and green as shown. Rachel spins the spinner 5 times and lets the random variable, \\(X\\), be the number of times the spinner lands on red. This discrete random variable has the following probability distribution: \\(P(X=0)=\\dfrac{32}{243}\\), \\(P(X=1)=k\\), \\(P(X=2)=k\\), \\(P(X=3)=\\dfrac{40}{243}\\), \\(P(X=4)=\\dfrac{10}{243}\\), \\(P(X=5)=\\dfrac{1}{243}\\). Find the standard deviation of the distribution.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\sqrt{10}}{3}\\)",
+            "\\(\\dfrac{10}{9}\\)",
+            "\\(\\dfrac{\\sqrt{10}}{9}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\mathrm{Var}(X)=\\mathrm{E}(X^{2})-\\mu^{2}\\), then \\(\\sigma=\\sqrt{\\mathrm{Var}(X)}\\). Find \\(\\mathrm{E}(X^{2})=\\sum x^{2}P(X=x)\\) first. Use \\(\\mu=\\dfrac{5}{3}\\) from part (ii).",
+          "steps": [
+            {
+              "explain": "Compute \\(\\mathrm{E}(X^{2})\\): square each \\(x\\) before multiplying by its probability.",
+              "work": "\\(\\mathrm{E}(X^{2})=0+1\\left(\\dfrac{80}{243}\\right)+4\\left(\\dfrac{80}{243}\\right)+9\\left(\\dfrac{40}{243}\\right)+16\\left(\\dfrac{10}{243}\\right)+25\\left(\\dfrac{1}{243}\\right)\\)"
+            },
+            {
+              "explain": "Numerators: \\(80+320+360+160+25=945\\).",
+              "work": "\\(=\\dfrac{945}{243}=\\dfrac{35}{9}\\)"
+            },
+            {
+              "explain": "Variance \\(=\\mathrm{E}(X^{2})-\\mu^{2}\\) with \\(\\mu=\\dfrac{5}{3}\\), so \\(\\mu^{2}=\\dfrac{25}{9}\\).",
+              "work": "\\(\\mathrm{Var}(X)=\\dfrac{35}{9}-\\dfrac{25}{9}=\\dfrac{10}{9}\\)"
+            },
+            {
+              "explain": "Standard deviation \\(=\\sqrt{\\text{variance}}\\).",
+              "work": "\\(\\sigma=\\sqrt{\\dfrac{10}{9}}=\\dfrac{\\sqrt{10}}{3}\\approx1.05\\)"
+            },
+            {
+              "explain": "Check with the binomial formula: \\(npq=5\\times\\dfrac{1}{3}\\times\\dfrac{2}{3}=\\dfrac{10}{9}\\) ✓. Option B is the variance, not the standard deviation.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the standard deviation of the distribution",
+              "note": "Variance is E of X squared minus the mean squared; then take the square root."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

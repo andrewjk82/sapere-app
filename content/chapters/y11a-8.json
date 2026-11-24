@@ -4944,6 +4944,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "knox2021-y12a-q1",
+          "type": "mc",
+          "stem": "\\(\\dfrac{(2p)^{3}}{\\sqrt{p}}=\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(8\\sqrt{p^{5}}\\)",
+            "\\(8\\sqrt[5]{p^{2}}\\)",
+            "\\(6\\sqrt{p^{5}}\\)",
+            "\\(6\\sqrt[5]{p^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Cube the bracket (cube BOTH the 2 and the \\(p\\)), write \\(\\sqrt{p}\\) as \\(p^{\\frac{1}{2}}\\), then subtract indices when dividing: \\(\\dfrac{p^{3}}{p^{\\frac{1}{2}}}=p^{3-\\frac{1}{2}}\\).",
+          "steps": [
+            {
+              "explain": "Expand the cube: \\((2p)^{3}=2^{3}p^{3}=8p^{3}\\) (the 2 is cubed too, giving 8, not 6).",
+              "work": "\\((2p)^{3}=8p^{3}\\)"
+            },
+            {
+              "explain": "Write the root as an index: \\(\\sqrt{p}=p^{\\frac{1}{2}}\\).",
+              "work": "\\(\\dfrac{(2p)^{3}}{\\sqrt{p}}=\\dfrac{8p^{3}}{p^{\\frac{1}{2}}}\\)"
+            },
+            {
+              "explain": "Index law for division: subtract the powers, \\(3-\\dfrac{1}{2}=\\dfrac{5}{2}\\).",
+              "work": "\\(8p^{3-\\frac{1}{2}}=8p^{\\frac{5}{2}}\\)"
+            },
+            {
+              "explain": "Convert \\(p^{\\frac{5}{2}}\\) back to a root: \\(p^{\\frac{m}{n}}=\\sqrt[n]{p^{m}}\\) with \\(m=5,\\ n=2\\).",
+              "work": "\\(8p^{\\frac{5}{2}}=8\\sqrt{p^{5}}\\)"
+            },
+            {
+              "explain": "Why not the others: C and D use 6 (they multiplied \\(2\\times3\\) instead of cubing 2); B and D have a fifth root (they swapped the numerator and denominator of the index).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\dfrac{(2p)^{3}}{\\sqrt{p}}",
+              "note": "Cube the 2 as well, then subtract indices."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5539,6 +5593,56 @@
             "sourceQuestion": "18",
             "course": "Advanced",
             "grade": "12"
+          }
+        },
+        {
+          "id": "knox2021-y12a-q4",
+          "type": "mc",
+          "stem": "When evaluated, \\(\\log_{3}100\\) lies between which pair of consecutive integers?",
+          "difficulty": "medium",
+          "options": [
+            "\\(0\\) and \\(1\\)",
+            "\\(1\\) and \\(2\\)",
+            "\\(4\\) and \\(5\\)",
+            "\\(33\\) and \\(34\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(\\log_{3}100=x\\) means \\(3^{x}=100\\). Find the two powers of 3 on either side of 100.",
+          "steps": [
+            {
+              "explain": "Convert to index form.",
+              "work": "\\(\\log_{3}100=x\\iff3^{x}=100\\)"
+            },
+            {
+              "explain": "Powers of 3: \\(3^{1}=3,\\ 3^{2}=9,\\ 3^{3}=27,\\ 3^{4}=81,\\ 3^{5}=243\\). 100 is between \\(81\\) and \\(243\\).",
+              "work": "\\(3^{4}=81<100<243=3^{5}\\)"
+            },
+            {
+              "explain": "So \\(4<x<5\\).",
+              "work": "\\(4<\\log_{3}100<5\\)"
+            },
+            {
+              "explain": "Check by change of base: \\(\\log_{3}100=\\dfrac{\\ln100}{\\ln3}=\\dfrac{4.605}{1.0986}\\approx4.19\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "lies between which pair of consecutive integers",
+              "note": "Compare 100 with powers of 3: 81 and 243."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
+            "school": "Knox Grammar School",
+            "grade": "11",
+            "origin": "teacher"
           }
         }
       ]
