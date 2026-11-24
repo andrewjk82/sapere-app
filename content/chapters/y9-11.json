@@ -4646,6 +4646,56 @@
             "\\((5,-6)\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "killara2022-y9-4b-q4",
+          "type": "mc",
+          "stem": "Find the midpoint of the interval AB formed with the following two endpoints: \\(A(1,4)\\) and \\(B(-3,8)\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\((-1,6)\\)",
+            "\\((-2,12)\\)",
+            "\\((2,-2)\\)",
+            "\\((-1,2)\\)"
+          ],
+          "answer": 0,
+          "hint": "The midpoint is the AVERAGE of the \\(x\\)-coordinates and the AVERAGE of the \\(y\\)-coordinates: \\(\\left(\\dfrac{x_{1}+x_{2}}{2},\\dfrac{y_{1}+y_{2}}{2}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Average the \\(x\\)-coordinates (add them, then halve): \\(1+(-3)=-2\\).",
+              "work": "\\(x_{M}=\\dfrac{1+(-3)}{2}=\\dfrac{-2}{2}=-1\\)"
+            },
+            {
+              "explain": "Average the \\(y\\)-coordinates: \\(4+8=12\\).",
+              "work": "\\(y_{M}=\\dfrac{4+8}{2}=\\dfrac{12}{2}=6\\)"
+            },
+            {
+              "explain": "Write as a point.",
+              "work": "\\(M=(-1,6)\\)"
+            },
+            {
+              "explain": "Check: \\(M\\) is exactly half-way: from \\(A\\) to \\(M\\) the \\(x\\) goes \\(1\\to-1\\) (down 2) and from \\(M\\) to \\(B\\) it goes \\(-1\\to-3\\) (down 2) ✓. Option B forgot to divide by 2.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the midpoint of the interval AB",
+              "note": "Midpoint: average the x values and average the y values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7052,6 +7102,62 @@
             "\\(-\\frac65\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "killara2022-y9-4b-q14a",
+          "type": "mc",
+          "stem": "Given the linear relationship shown (the line passes through \\((0,-200)\\) and \\((1,200)\\)), find the gradient of the line.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"62.0\" y1=\"34.0\" x2=\"62.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"34.0\" x2=\"84.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"34.0\" x2=\"106.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"128.0\" y1=\"34.0\" x2=\"128.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"150.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"34.0\" x2=\"172.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"34.0\" x2=\"194.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"34.0\" x2=\"216.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"238.0\" y1=\"34.0\" x2=\"238.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"34.0\" x2=\"260.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"34.0\" x2=\"282.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"304.0\" y1=\"34.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"306.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"272.0\" x2=\"304.0\" y2=\"272.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"238.0\" x2=\"304.0\" y2=\"238.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"204.0\" x2=\"304.0\" y2=\"204.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"170.0\" x2=\"304.0\" y2=\"170.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"136.0\" x2=\"304.0\" y2=\"136.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"102.0\" x2=\"304.0\" y2=\"102.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"68.0\" x2=\"304.0\" y2=\"68.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"34.0\" x2=\"304.0\" y2=\"34.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"312.8\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"150.0\" y2=\"27.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"145.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"154.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"154.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"145.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"308.8\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"162.0\" y=\"30.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"138.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"123.6\" y1=\"319.6\" x2=\"209.4\" y2=\"54.4\" stroke=\"#1f78b4\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"194\" cy=\"102.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1, 200)</text><circle cx=\"150\" cy=\"238.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"243.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−200</text></svg>"
+          },
+          "options": [
+            "\\(400\\)",
+            "\\(\\dfrac{1}{400}\\)",
+            "\\(200\\)",
+            "\\(-400\\)"
+          ],
+          "answer": 0,
+          "hint": "Gradient \\(=\\dfrac{\\text{rise}}{\\text{run}}=\\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}\\). Use the two marked points; be careful with the double negative.",
+          "steps": [
+            {
+              "explain": "Read the two points from the graph: \\((0,-200)\\) and \\((1,200)\\).",
+              "work": "\\((x_{1},y_{1})=(0,-200),\\quad (x_{2},y_{2})=(1,200)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"62.0\" y1=\"34.0\" x2=\"62.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"34.0\" x2=\"84.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"34.0\" x2=\"106.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"128.0\" y1=\"34.0\" x2=\"128.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"150.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"34.0\" x2=\"172.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"34.0\" x2=\"194.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"34.0\" x2=\"216.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"238.0\" y1=\"34.0\" x2=\"238.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"34.0\" x2=\"260.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"34.0\" x2=\"282.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"304.0\" y1=\"34.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"306.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"272.0\" x2=\"304.0\" y2=\"272.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"238.0\" x2=\"304.0\" y2=\"238.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"204.0\" x2=\"304.0\" y2=\"204.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"170.0\" x2=\"304.0\" y2=\"170.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"136.0\" x2=\"304.0\" y2=\"136.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"102.0\" x2=\"304.0\" y2=\"102.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"68.0\" x2=\"304.0\" y2=\"68.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"34.0\" x2=\"304.0\" y2=\"34.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"312.8\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"150.0\" y2=\"27.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"145.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"154.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"154.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"145.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"308.8\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"162.0\" y=\"30.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"138.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"123.6\" y1=\"319.6\" x2=\"209.4\" y2=\"54.4\" stroke=\"#1f78b4\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"194\" cy=\"102.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1, 200)</text><circle cx=\"150\" cy=\"238.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"243.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−200</text><line x1=\"150.0\" y1=\"238.0\" x2=\"194.0\" y2=\"238.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><line x1=\"194.0\" y1=\"238.0\" x2=\"194.0\" y2=\"102.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><text x=\"172.0\" y=\"256.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">run = 1</text><text x=\"202.0\" y=\"170.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rise = 400</text></svg>"
+              }
+            },
+            {
+              "explain": "Rise (change in \\(y\\)): \\(200-(-200)=200+200=400\\) (subtracting a negative adds). Run (change in \\(x\\)): \\(1-0=1\\).",
+              "work": "\\(\\text{rise}=400,\\qquad\\text{run}=1\\)"
+            },
+            {
+              "explain": "Divide rise by run.",
+              "work": "\\(m=\\dfrac{200-(-200)}{1-0}=\\dfrac{400}{1}=400\\)"
+            },
+            {
+              "explain": "Positive gradient: the line goes UP to the right ✓. Option C (200) forgets the double negative; option B is run over rise.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the gradient of the line",
+              "note": "Gradient is rise over run; subtracting a negative adds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10520,6 +10626,207 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q1",
+          "type": "mc",
+          "stem": "What is the gradient of the linear relationship below? \\(y=3-x\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(3\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 0,
+          "hint": "Rearrange into \\(y=mx+c\\): the gradient \\(m\\) is the number multiplying \\(x\\) (with its sign).",
+          "steps": [
+            {
+              "explain": "The gradient-intercept form is \\(y=mx+c\\), where \\(m\\) is the gradient and \\(c\\) is the \\(y\\)-intercept.",
+              "work": "\\(y=mx+c\\)"
+            },
+            {
+              "explain": "Rewrite \\(y=3-x\\) with the \\(x\\) term first (a subtraction means a NEGATIVE term): \\(3-x=-x+3\\).",
+              "work": "\\(y=-x+3=-1\\cdot x+3\\)"
+            },
+            {
+              "explain": "Compare: the number multiplying \\(x\\) is \\(-1\\), so the gradient is \\(-1\\) (the line goes DOWN as \\(x\\) increases).",
+              "work": "\\(m=-1\\)"
+            },
+            {
+              "explain": "Option D (\\(-3\\)) mixes up the gradient with the intercept; option C (3) is the \\(y\\)-intercept.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the gradient",
+              "note": "Write y = mx + c; the gradient is the coefficient of x including its sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q10",
+          "type": "mc",
+          "stem": "Re-arrange the following linear relationship into its general form: \\(y=\\dfrac{2}{3}x-3\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(2x-3y-9=0\\)",
+            "\\(2x-3y-6=0\\)",
+            "\\(2x+3y-9=0\\)",
+            "\\(3x-2y-9=0\\)"
+          ],
+          "answer": 0,
+          "hint": "General form is \\(ax+by+c=0\\) with whole-number coefficients. Clear the fraction by multiplying EVERY term by 3, then move everything to one side.",
+          "steps": [
+            {
+              "explain": "Multiply every term of \\(y=\\dfrac{2}{3}x-3\\) by 3 to remove the fraction (including the \\(-3\\)).",
+              "work": "\\(3y=2x-9\\)"
+            },
+            {
+              "explain": "Move all the terms to one side so the other side is 0. Keep the \\(x\\) term positive: subtract \\(3y\\) from the right side, i.e. write \\(0=2x-3y-9\\).",
+              "work": "\\(0=2x-9-3y\\)"
+            },
+            {
+              "explain": "Write in the order \\(ax+by+c=0\\).",
+              "work": "\\(2x-3y-9=0\\)"
+            },
+            {
+              "explain": "Check with the point \\((0,-3)\\): \\(2(0)-3(-3)-9=9-9=0\\) ✓. Option B multiplies the \\(-3\\) by 2 instead of 3 (the paper's printed solution shows \\(3y=2x-6\\), but \\(3\\times(-3)=-9\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Re-arrange the following linear relationship into its general form",
+              "note": "Multiply every term by the denominator, then bring everything to one side."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q14b",
+          "type": "mc",
+          "stem": "Given the linear relationship shown (the line passes through \\((0,-200)\\) and \\((1,200)\\)), what is the \\(y\\)-intercept?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"62.0\" y1=\"34.0\" x2=\"62.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"34.0\" x2=\"84.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"34.0\" x2=\"106.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"128.0\" y1=\"34.0\" x2=\"128.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"150.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"34.0\" x2=\"172.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"34.0\" x2=\"194.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"34.0\" x2=\"216.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"238.0\" y1=\"34.0\" x2=\"238.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"34.0\" x2=\"260.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"34.0\" x2=\"282.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"304.0\" y1=\"34.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"306.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"272.0\" x2=\"304.0\" y2=\"272.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"238.0\" x2=\"304.0\" y2=\"238.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"204.0\" x2=\"304.0\" y2=\"204.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"170.0\" x2=\"304.0\" y2=\"170.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"136.0\" x2=\"304.0\" y2=\"136.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"102.0\" x2=\"304.0\" y2=\"102.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"68.0\" x2=\"304.0\" y2=\"68.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"34.0\" x2=\"304.0\" y2=\"34.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"312.8\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"150.0\" y2=\"27.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"145.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"154.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"154.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"145.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"308.8\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"162.0\" y=\"30.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"138.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"123.6\" y1=\"319.6\" x2=\"209.4\" y2=\"54.4\" stroke=\"#1f78b4\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"194\" cy=\"102.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1, 200)</text><circle cx=\"150\" cy=\"238.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"243.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−200</text></svg>"
+          },
+          "options": [
+            "\\(-200\\)",
+            "\\(200\\)",
+            "\\(400\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "The \\(y\\)-intercept is where the line crosses the \\(y\\)-axis, i.e. where \\(x=0\\).",
+          "steps": [
+            {
+              "explain": "Find where the line meets the \\(y\\)-axis (the vertical axis): the marked point on the axis is \\((0,-200)\\) (orange circle).",
+              "work": "\\(x=0:\\ \\ y=-200\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"62.0\" y1=\"34.0\" x2=\"62.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"34.0\" x2=\"84.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"34.0\" x2=\"106.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"128.0\" y1=\"34.0\" x2=\"128.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"150.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"34.0\" x2=\"172.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"34.0\" x2=\"194.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"34.0\" x2=\"216.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"238.0\" y1=\"34.0\" x2=\"238.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"34.0\" x2=\"260.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"34.0\" x2=\"282.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"304.0\" y1=\"34.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"306.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"272.0\" x2=\"304.0\" y2=\"272.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"238.0\" x2=\"304.0\" y2=\"238.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"204.0\" x2=\"304.0\" y2=\"204.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"170.0\" x2=\"304.0\" y2=\"170.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"136.0\" x2=\"304.0\" y2=\"136.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"102.0\" x2=\"304.0\" y2=\"102.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"68.0\" x2=\"304.0\" y2=\"68.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"34.0\" x2=\"304.0\" y2=\"34.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"312.8\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"150.0\" y2=\"27.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"145.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"154.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"154.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"145.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"308.8\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"162.0\" y=\"30.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"138.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"123.6\" y1=\"319.6\" x2=\"209.4\" y2=\"54.4\" stroke=\"#1f78b4\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"194\" cy=\"102.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1, 200)</text><circle cx=\"150\" cy=\"238.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"243.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−200</text><circle cx=\"150\" cy=\"238.0\" r=\"8\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"164.0\" y=\"260.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y-intercept (0, −200)</text></svg>"
+              }
+            },
+            {
+              "explain": "The \\(y\\)-intercept is the \\(y\\)-value there: \\(-200\\) (negative, because the point is BELOW the origin).",
+              "work": "\\(y\\text{-intercept}=-200\\)"
+            },
+            {
+              "explain": "Option B (200) is the \\(y\\)-value at \\(x=1\\); option C is the gradient.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the \\(y\\)-intercept",
+              "note": "The y-intercept is the y value where the line crosses the y-axis (x equals 0)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q14c",
+          "type": "mc",
+          "stem": "Given the linear relationship shown (gradient 400 and \\(y\\)-intercept \\(-200\\)), write the equation of the line in the gradient-intercept form.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"62.0\" y1=\"34.0\" x2=\"62.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"34.0\" x2=\"84.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"34.0\" x2=\"106.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"128.0\" y1=\"34.0\" x2=\"128.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"34.0\" x2=\"150.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"172.0\" y1=\"34.0\" x2=\"172.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"194.0\" y1=\"34.0\" x2=\"194.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"34.0\" x2=\"216.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"238.0\" y1=\"34.0\" x2=\"238.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"34.0\" x2=\"260.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"282.0\" y1=\"34.0\" x2=\"282.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"304.0\" y1=\"34.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"306.0\" x2=\"304.0\" y2=\"306.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"272.0\" x2=\"304.0\" y2=\"272.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"238.0\" x2=\"304.0\" y2=\"238.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"204.0\" x2=\"304.0\" y2=\"204.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"170.0\" x2=\"304.0\" y2=\"170.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"136.0\" x2=\"304.0\" y2=\"136.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"102.0\" x2=\"304.0\" y2=\"102.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"68.0\" x2=\"304.0\" y2=\"68.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"34.0\" x2=\"304.0\" y2=\"34.0\" stroke=\"#bae6fd\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"312.8\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"150.0\" y2=\"27.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"312.8\" y1=\"170.0\" x2=\"305.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"174.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"9.2\" y1=\"170.0\" x2=\"17.0\" y2=\"165.5\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"145.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"27.2\" x2=\"154.5\" y2=\"35.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"154.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"312.8\" x2=\"145.5\" y2=\"305.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"308.8\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"162.0\" y=\"30.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"138.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"123.6\" y1=\"319.6\" x2=\"209.4\" y2=\"54.4\" stroke=\"#1f78b4\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"194\" cy=\"102.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(1, 200)</text><circle cx=\"150\" cy=\"238.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"140.0\" y=\"243.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−200</text></svg>"
+          },
+          "options": [
+            "\\(y=400x-200\\)",
+            "\\(y=-200x+400\\)",
+            "\\(y=400x+200\\)",
+            "\\(y=200x-400\\)"
+          ],
+          "answer": 0,
+          "hint": "Gradient-intercept form is \\(y=mx+c\\): put \\(m\\) (gradient) in front of \\(x\\) and \\(c\\) (the \\(y\\)-intercept) at the end.",
+          "steps": [
+            {
+              "explain": "From the previous parts: \\(m=400\\) and \\(c=-200\\).",
+              "work": "\\(m=400,\\qquad c=-200\\)"
+            },
+            {
+              "explain": "Substitute into \\(y=mx+c\\).",
+              "work": "\\(y=400x+(-200)=400x-200\\)"
+            },
+            {
+              "explain": "Check with the point \\((1,200)\\): \\(400(1)-200=200\\) ✓. Option B swaps \\(m\\) and \\(c\\); option C has the wrong sign for the intercept.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "write the equation of the line in the gradient-intercept form",
+              "note": "y = mx + c: gradient in front of x, intercept at the end with its sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
           }
         }
       ]
@@ -18527,6 +18834,127 @@
             "\\(6x-5y-34=0\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "killara2022-y9-4b-q17",
+          "type": "mc",
+          "stem": "Find the equation of the line parallel to \\(y=\\dfrac{1}{2}x+4\\) and has an \\(x\\)-intercept of 3.",
+          "difficulty": "medium",
+          "options": [
+            "\\(y=\\dfrac{1}{2}x-\\dfrac{3}{2}\\)",
+            "\\(y=\\dfrac{1}{2}x+3\\)",
+            "\\(y=2x-6\\)",
+            "\\(y=\\dfrac{1}{2}x+\\dfrac{3}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Parallel lines have the SAME gradient. The \\(x\\)-intercept 3 means the line passes through \\((3,0)\\): substitute to find the \\(y\\)-intercept.",
+          "steps": [
+            {
+              "explain": "Parallel lines have equal gradients. The given line has \\(m=\\dfrac{1}{2}\\), so our line is \\(y=\\dfrac{1}{2}x+b\\).",
+              "work": "\\(y=\\dfrac{1}{2}x+b\\)"
+            },
+            {
+              "explain": "An \\(x\\)-intercept of 3 means the line goes through the point \\((3,0)\\) (the \\(y\\)-value is 0 there). Substitute \\(x=3\\), \\(y=0\\).",
+              "work": "\\(0=\\dfrac{1}{2}(3)+b=\\dfrac{3}{2}+b\\)"
+            },
+            {
+              "explain": "Solve for \\(b\\): subtract \\(\\dfrac{3}{2}\\).",
+              "work": "\\(b=-\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Write the equation.",
+              "work": "\\(y=\\dfrac{1}{2}x-\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Check: at \\(y=0\\): \\(0=\\dfrac{1}{2}x-\\dfrac{3}{2}\\Rightarrow x=3\\) ✓. Option B treats the \\(x\\)-intercept as the \\(y\\)-intercept; option C has the gradient 2 (not parallel).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the equation of the line parallel to",
+              "note": "Parallel lines share the gradient; substitute the intercept point to find the constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q24",
+          "type": "mc",
+          "stem": "The coordinates of the vertices \\(\\triangle PQR\\) are \\(P(1,-2)\\), \\(Q(3,6)\\) and \\(R(7,0)\\). Point \\(S\\) is the midpoint of \\(PQ\\). Find the equation of the line through \\(S\\) that is perpendicular to \\(PQ\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"200.0\" x2=\"390.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"320.0\" x2=\"70.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"200.0\" x2=\"383.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"200.0\" x2=\"383.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"20.0\" x2=\"66.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"20.0\" x2=\"74.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"80.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"94,248 142,56 238,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><circle cx=\"94\" cy=\"248\" r=\"4\" fill=\"#1e293b\"/><text x=\"88.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P(1, −2)</text><circle cx=\"142\" cy=\"56\" r=\"4\" fill=\"#1e293b\"/><text x=\"150.0\" y=\"50.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q(3, 6)</text><circle cx=\"238\" cy=\"200\" r=\"4\" fill=\"#1e293b\"/><text x=\"248.0\" y=\"216.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R(7, 0)</text></svg>"
+          },
+          "options": [
+            "\\(y=-\\dfrac{1}{4}x+\\dfrac{5}{2}\\)",
+            "\\(y=4x-6\\)",
+            "\\(y=-4x+10\\)",
+            "\\(y=-\\dfrac{1}{4}x+2\\)"
+          ],
+          "answer": 0,
+          "hint": "Three steps: (1) midpoint \\(S\\); (2) gradient of \\(PQ\\), then the PERPENDICULAR gradient (negative reciprocal); (3) point-gradient to get the equation.",
+          "steps": [
+            {
+              "explain": "Midpoint \\(S\\) of \\(PQ\\): average the coordinates.",
+              "work": "\\(S=\\left(\\dfrac{1+3}{2},\\dfrac{-2+6}{2}\\right)=(2,2)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"200.0\" x2=\"390.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"320.0\" x2=\"70.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"200.0\" x2=\"383.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"200.0\" x2=\"383.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"20.0\" x2=\"66.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"20.0\" x2=\"74.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"80.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"94,248 142,56 238,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><circle cx=\"118\" cy=\"152\" r=\"5.5\" fill=\"#047857\"/><text x=\"108.0\" y=\"144.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S(2, 2)</text><circle cx=\"94\" cy=\"248\" r=\"4\" fill=\"#1e293b\"/><text x=\"88.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P(1, −2)</text><circle cx=\"142\" cy=\"56\" r=\"4\" fill=\"#1e293b\"/><text x=\"150.0\" y=\"50.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q(3, 6)</text><circle cx=\"238\" cy=\"200\" r=\"4\" fill=\"#1e293b\"/><text x=\"248.0\" y=\"216.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R(7, 0)</text></svg>"
+              }
+            },
+            {
+              "explain": "Gradient of \\(PQ\\) (orange): rise over run.",
+              "work": "\\(m_{PQ}=\\dfrac{6-(-2)}{3-1}=\\dfrac{8}{2}=4\\)"
+            },
+            {
+              "explain": "Perpendicular gradient: the NEGATIVE RECIPROCAL (flip and change sign).",
+              "work": "\\(m=-\\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Equation \\(y=mx+b\\) through \\(S(2,2)\\): substitute to find \\(b\\).",
+              "work": "\\(2=-\\dfrac{1}{4}(2)+b\\ \\Rightarrow\\ b=2+\\dfrac{1}{2}=\\dfrac{5}{2}\\)"
+            },
+            {
+              "explain": "Write the equation (red line, perpendicular to \\(PQ\\) at \\(S\\)).",
+              "work": "\\(y=-\\dfrac{1}{4}x+\\dfrac{5}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"200.0\" x2=\"390.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"320.0\" x2=\"70.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"200.0\" x2=\"383.1\" y2=\"196.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"390.0\" y1=\"200.0\" x2=\"383.1\" y2=\"204.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"20.0\" x2=\"66.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"70.0\" y1=\"20.0\" x2=\"74.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"396.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"80.0\" y=\"26.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polygon points=\"94,248 142,56 238,200\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><circle cx=\"118\" cy=\"152\" r=\"5.5\" fill=\"#047857\"/><text x=\"108.0\" y=\"144.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S(2, 2)</text><line x1=\"55.6\" y1=\"136.4\" x2=\"286.0\" y2=\"194.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"247.6\" y=\"174.4\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = −x/4 + 5/2</text><polyline points=\"128,149 132,161 121,165\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\" opacity=\"0\"/><line x1=\"94.0\" y1=\"248.0\" x2=\"142.0\" y2=\"56.0\" stroke=\"#d97706\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"94\" cy=\"248\" r=\"4\" fill=\"#1e293b\"/><text x=\"88.0\" y=\"266.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P(1, −2)</text><circle cx=\"142\" cy=\"56\" r=\"4\" fill=\"#1e293b\"/><text x=\"150.0\" y=\"50.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q(3, 6)</text><circle cx=\"238\" cy=\"200\" r=\"4\" fill=\"#1e293b\"/><text x=\"248.0\" y=\"216.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R(7, 0)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(m_{PQ}\\times m=4\\times\\left(-\\dfrac{1}{4}\\right)=-1\\) ✓. Option B is parallel to \\(PQ\\) (same gradient 4); option C uses \\(-4\\) (changed the sign only); option D has the wrong \\(b\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the equation of the line through",
+              "note": "Midpoint, then negative reciprocal gradient, then substitute the point."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

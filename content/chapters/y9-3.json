@@ -5749,6 +5749,438 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-4b-q7",
+          "type": "mc",
+          "stem": "The pre-GST price of a TV unit is 550 dollars. What is the sales price?",
+          "difficulty": "easy",
+          "options": [
+            "\\(605\\) dollars",
+            "\\(55\\) dollars",
+            "\\(500\\) dollars",
+            "\\(660\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "GST (Goods and Services Tax) in Australia is 10% of the pre-GST price. Sales price \\(=\\) pre-GST price \\(+\\) GST (that is \\(110\\%\\) of the price).",
+          "steps": [
+            {
+              "explain": "GST is 10% of the pre-GST price.",
+              "work": "\\(\\text{GST}=10\\%\\times 550=0.1\\times 550=55\\)"
+            },
+            {
+              "explain": "The sales price includes the GST: add it on.",
+              "work": "\\(550+55=605\\)"
+            },
+            {
+              "explain": "Shortcut: multiply by \\(1.1\\) (\\(110\\%\\)): \\(550\\times1.1=605\\) ✓. Option B (55) is only the GST.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the sales price?",
+              "note": "Sales price equals the price plus 10 percent GST."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q16a",
+          "type": "mc",
+          "stem": "Kieran works as a hairdresser and is paid a normal rate of 29.70 dollars per hour for a 38-hour working week. Calculate Kieran's normal weekly wage.",
+          "difficulty": "easy",
+          "options": [
+            "\\(1128.60\\) dollars",
+            "\\(67.70\\) dollars",
+            "\\(1128.00\\) dollars",
+            "\\(11\\,286.00\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Weekly wage \\(=\\) hourly rate \\(\\times\\) hours worked in the week.",
+          "steps": [
+            {
+              "explain": "Multiply the rate by the number of hours.",
+              "work": "\\(29.70\\times 38\\)"
+            },
+            {
+              "explain": "\\(29.70\\times 38=29.70\\times 40-29.70\\times 2=1188-59.40\\).",
+              "work": "\\(=1128.60\\ \\text{dollars}\\)"
+            },
+            {
+              "explain": "Money is written with 2 decimal places. Option D has the decimal point in the wrong place.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate Kieran's normal weekly wage",
+              "note": "Weekly wage is the hourly rate times the hours per week."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q16b",
+          "type": "mc",
+          "stem": "For his 4 weeks annual leave, Kieran (normal weekly wage 1128.60 dollars) is paid a loading of 17.5%. Calculate the amount that Kieran receives in holiday loading.",
+          "difficulty": "medium",
+          "options": [
+            "\\(790.02\\) dollars",
+            "\\(197.51\\) dollars",
+            "\\(5304.42\\) dollars",
+            "\\(4514.40\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Holiday loading is 17.5% of the pay for the 4 weeks (not of one week). First find 4 weeks' pay, then take 17.5%.",
+          "steps": [
+            {
+              "explain": "Pay for 4 weeks of leave.",
+              "work": "\\(1128.60\\times 4=4514.40\\)"
+            },
+            {
+              "explain": "Loading is 17.5% of that: \\(17.5\\%=\\dfrac{17.5}{100}=0.175\\).",
+              "work": "\\(4514.40\\times 0.175=790.02\\)"
+            },
+            {
+              "explain": "Loading \\(=790.02\\) dollars. Option B (197.51) is 17.5% of ONE week; option D is just the normal 4 weeks' pay.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the amount that Kieran receives in holiday loading",
+              "note": "Loading is a percentage of the pay for all the leave weeks."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q16c",
+          "type": "mc",
+          "stem": "Kieran takes 4 weeks annual leave: his normal pay for the 4 weeks is 4514.40 dollars and his holiday loading is 790.02 dollars. Calculate the total amount that Kieran receives for his 4 weeks annual leave.",
+          "difficulty": "easy",
+          "options": [
+            "\\(5304.42\\) dollars",
+            "\\(790.02\\) dollars",
+            "\\(4514.40\\) dollars",
+            "\\(5304.02\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Total \\(=\\) normal pay for the 4 weeks \\(+\\) holiday loading.",
+          "steps": [
+            {
+              "explain": "Add the two amounts.",
+              "work": "\\(4514.40+790.02=5304.42\\)"
+            },
+            {
+              "explain": "Check: \\(4514.40\\times 1.175=5304.42\\) ✓ (adding 17.5% is multiplying by 1.175).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the total amount that Kieran receives",
+              "note": "Total leave pay is normal pay plus the loading."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q19",
+          "type": "mc",
+          "stem": "Kevin owns a sport store and has seven staff working for him. He retains 5.5% of all profit over 100 000 dollars to distribute equally as a bonus. The store profit for this year is 275 000 dollars. If one employee earned 64 625 dollars including bonuses for this year, what was their base salary?",
+          "difficulty": "hard",
+          "options": [
+            "\\(63\\,250\\) dollars",
+            "\\(55\\,000\\) dollars",
+            "\\(1375\\) dollars",
+            "\\(64\\,625\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Step 1: profit OVER 100 000. Step 2: 5.5% of that is the bonus pool. Step 3: divide equally among 7 staff. Step 4: subtract one share from the total earned.",
+          "steps": [
+            {
+              "explain": "Profit over 100 000: \\(275\\,000-100\\,000=175\\,000\\).",
+              "work": "\\(275\\,000-100\\,000=175\\,000\\)"
+            },
+            {
+              "explain": "Bonus pool \\(=5.5\\%\\) of this: \\(0.055\\times175\\,000\\).",
+              "work": "\\(0.055\\times 175\\,000=9625\\)"
+            },
+            {
+              "explain": "Share the pool equally between the 7 staff.",
+              "work": "\\(9625\\div 7=1375\\)"
+            },
+            {
+              "explain": "Total earned \\(=\\) base salary \\(+\\) bonus, so base salary \\(=\\) total \\(-\\) bonus.",
+              "work": "\\(64\\,625-1375=63\\,250\\)"
+            },
+            {
+              "explain": "Check: \\(63\\,250+1375=64\\,625\\) ✓. Option B subtracts the whole pool 9625 (not one share); option C is just the bonus share.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what was their base salary?",
+              "note": "Find the bonus pool, divide equally, then subtract one share from the total."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q21a",
+          "type": "mc",
+          "stem": "Jenny has a gross wage of 1250 dollars per week. She has worked for the entire 2021-2022 financial year. Calculate Jenny's gross annual income for 2021-2022 financial year.",
+          "difficulty": "easy",
+          "options": [
+            "\\(65\\,000\\) dollars",
+            "\\(15\\,000\\) dollars",
+            "\\(60\\,000\\) dollars",
+            "\\(1302\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "There are 52 weeks in a year: annual income \\(=\\) weekly wage \\(\\times\\) 52.",
+          "steps": [
+            {
+              "explain": "Multiply the weekly wage by the number of weeks in a year.",
+              "work": "\\(1250\\times 52=65\\,000\\)"
+            },
+            {
+              "explain": "\\(1250\\times 50=62\\,500\\) and \\(1250\\times 2=2500\\), total \\(65\\,000\\) ✓. Option B uses 12 (months) instead of 52 (weeks).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate Jenny's gross annual income",
+              "note": "Gross annual income is the weekly wage times 52 weeks."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q21b",
+          "type": "mc",
+          "stem": "Jenny's gross annual income is 65 000 dollars. She has tax deductions of 1000 dollars for work-related travel and 500 dollars for union fee. Calculate Jenny's taxable income.",
+          "difficulty": "easy",
+          "options": [
+            "\\(63\\,500\\) dollars",
+            "\\(66\\,500\\) dollars",
+            "\\(64\\,000\\) dollars",
+            "\\(1500\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Taxable income \\(=\\) gross income \\(-\\) allowable deductions.",
+          "steps": [
+            {
+              "explain": "Add up the deductions: \\(1000+500=1500\\).",
+              "work": "\\(\\text{deductions}=1500\\)"
+            },
+            {
+              "explain": "Subtract from the gross income.",
+              "work": "\\(65\\,000-1500=63\\,500\\)"
+            },
+            {
+              "explain": "Option B ADDS the deductions instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate Jenny's taxable income",
+              "note": "Taxable income is gross income minus deductions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q21c",
+          "type": "mc",
+          "stem": "The Medicare levy that Jenny pays is calculated at 2% of her taxable income of 63 500 dollars. Calculate the Medicare levy she needs to pay.",
+          "difficulty": "easy",
+          "options": [
+            "\\(1270\\) dollars",
+            "\\(1300\\) dollars",
+            "\\(12\\,700\\) dollars",
+            "\\(127\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "2% means \\(\\dfrac{2}{100}=0.02\\). Multiply the taxable income by 0.02.",
+          "steps": [
+            {
+              "explain": "Convert the percentage and multiply.",
+              "work": "\\(63\\,500\\times\\dfrac{2}{100}=63\\,500\\times 0.02\\)"
+            },
+            {
+              "explain": "\\(63\\,500\\div 100=635\\), then \\(\\times 2\\).",
+              "work": "\\(=1270\\)"
+            },
+            {
+              "explain": "Medicare levy \\(=1270\\) dollars. Option C is 20% (decimal slip).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Calculate the Medicare levy she needs to pay",
+              "note": "Percentage of an amount: divide by 100 and multiply."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q21d",
+          "type": "mc",
+          "stem": "Jenny has already paid 12100 dollars in tax. Her taxable income is 63 500 dollars and her Medicare levy is 1270 dollars. Use the following income tax table to determine whether Jenny will receive a tax refund, or she will owe money to the Australian Taxation Office?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 260\" width=\"100%\" height=\"auto\" style=\"max-width:480px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"420\" height=\"34\" fill=\"#d1d5db\"/><text x=\"100.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Taxable income</text><text x=\"330.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Tax on this income</text><rect x=\"20\" y=\"44\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"69.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0 – $18,200</text><text x=\"170.0\" y=\"69.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Nil</text><rect x=\"20\" y=\"84\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"109.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$18,201 – $45,000</text><text x=\"170.0\" y=\"109.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">19 cents for each $1 over $18,200</text><rect x=\"20\" y=\"124\" width=\"420\" height=\"40\" fill=\"#fef3c7\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"149.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$45,001 – $120,000</text><text x=\"170.0\" y=\"149.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$5,092 plus 32.5 cents for each $1 over $45,000</text><rect x=\"20\" y=\"164\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"189.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$120,001 – $180,000</text><text x=\"170.0\" y=\"189.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$29,467 plus 37 cents for each $1 over $120,000</text><rect x=\"20\" y=\"204\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$180,001 and over</text><text x=\"170.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$51,667 plus 45 cents for each $1 over $180,000</text></svg>"
+          },
+          "options": [
+            "She owes \\(274.50\\) dollars",
+            "She receives a refund of \\(274.50\\) dollars",
+            "She receives a refund of \\(995.50\\) dollars",
+            "She owes \\(11\\,104.50\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Find which row of the table applies, calculate the income tax, ADD the Medicare levy, then compare the total with the 12 100 dollars already paid.",
+          "steps": [
+            {
+              "explain": "Find the row: \\(63\\,500\\) is between 45 001 and 120 000 (highlighted row): 5092 plus 32.5 cents for each dollar over 45 000.",
+              "work": "\\(\\text{tax}=5092+0.325\\times(63\\,500-45\\,000)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 260\" width=\"100%\" height=\"auto\" style=\"max-width:480px;display:block;margin:0 auto\"><rect x=\"20\" y=\"10\" width=\"420\" height=\"34\" fill=\"#d1d5db\"/><text x=\"100.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Taxable income</text><text x=\"330.0\" y=\"32.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Tax on this income</text><rect x=\"20\" y=\"44\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"69.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0 – $18,200</text><text x=\"170.0\" y=\"69.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Nil</text><rect x=\"20\" y=\"84\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"109.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$18,201 – $45,000</text><text x=\"170.0\" y=\"109.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">19 cents for each $1 over $18,200</text><rect x=\"20\" y=\"124\" width=\"420\" height=\"40\" fill=\"#fef3c7\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"149.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$45,001 – $120,000</text><text x=\"170.0\" y=\"149.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$5,092 plus 32.5 cents for each $1 over $45,000</text><rect x=\"20\" y=\"164\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"189.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$120,001 – $180,000</text><text x=\"170.0\" y=\"189.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$29,467 plus 37 cents for each $1 over $120,000</text><rect x=\"20\" y=\"204\" width=\"420\" height=\"40\" fill=\"#fff\" stroke=\"#d1d5db\" stroke-width=\"1.4\"/><text x=\"32.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$180,001 and over</text><text x=\"170.0\" y=\"229.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">$51,667 plus 45 cents for each $1 over $180,000</text></svg>"
+              }
+            },
+            {
+              "explain": "Dollars over 45 000: \\(63\\,500-45\\,000=18\\,500\\). Then 32.5 cents each \\(=0.325\\).",
+              "work": "\\(0.325\\times 18\\,500=6012.50\\)"
+            },
+            {
+              "explain": "Income tax \\(=5092+6012.50=11\\,104.50\\).",
+              "work": "\\(\\text{income tax}=11\\,104.50\\)"
+            },
+            {
+              "explain": "Add the Medicare levy.",
+              "work": "\\(11\\,104.50+1270=12\\,374.50\\)"
+            },
+            {
+              "explain": "Compare with the tax already paid: she has paid LESS than she owes.",
+              "work": "\\(12\\,374.50-12\\,100=274.50\\)"
+            },
+            {
+              "explain": "She still owes \\(274.50\\) dollars to the Australian Taxation Office. Option C forgets the Medicare levy (\\(12\\,100-11\\,104.50=995.50\\) refund).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "determine whether Jenny will receive a tax refund",
+              "note": "Tax from the table plus Medicare levy, then compare with tax already paid."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6094,6 +6526,56 @@
             "\\(\\$399.80\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "killara2022-y9-4b-q8",
+          "type": "mc",
+          "stem": "Zoe borrows 3000 dollars for 2 years at 9% p.a. simple interest. How much interest is she charged?",
+          "difficulty": "easy",
+          "options": [
+            "\\(540\\) dollars",
+            "\\(3540\\) dollars",
+            "\\(270\\) dollars",
+            "\\(5400\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "Simple interest formula \\(I=PRN\\): \\(P\\) = principal, \\(R\\) = rate per year (as a decimal), \\(N\\) = number of years.",
+          "steps": [
+            {
+              "explain": "Identify the values: \\(P=3000\\), \\(R=9\\%=\\dfrac{9}{100}=0.09\\), \\(N=2\\) years.",
+              "work": "\\(P=3000,\\quad R=0.09,\\quad N=2\\)"
+            },
+            {
+              "explain": "Substitute into \\(I=PRN\\).",
+              "work": "\\(I=3000\\times 0.09\\times 2\\)"
+            },
+            {
+              "explain": "\\(3000\\times0.09=270\\) per year, times 2 years.",
+              "work": "\\(I=270\\times 2=540\\ \\text{dollars}\\)"
+            },
+            {
+              "explain": "Option B (3540) is the total owed (principal + interest); option C (270) is only one year's interest.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How much interest is she charged?",
+              "note": "Simple interest: I equals P times R times N."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },

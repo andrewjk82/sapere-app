@@ -3974,6 +3974,65 @@
             "\\(160+16\\sqrt{194}+10\\sqrt{233}\\text{ cm}^2\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "killara2022-y9-4b-q3",
+          "type": "mc",
+          "stem": "Draw a net diagram for the following shape (a triangular prism, with a triangle at each end and three rectangles). Which diagram (A, B, C or D in the figure) is a correct net?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 400\" width=\"100%\" height=\"auto\" style=\"max-width:660px;display:block;margin:0 auto\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"192\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"130\" y=\"42\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"130\" y=\"80\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"130\" y=\"118\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"130,80 85,99.0 130,118\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"180,80 225,99.0 180,118\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"22.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><rect x=\"324\" y=\"4\" width=\"312\" height=\"192\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"450\" y=\"42\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"450\" y=\"80\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"450\" y=\"118\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"450,80 405,99.0 450,118\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"342.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><rect x=\"4\" y=\"204\" width=\"312\" height=\"192\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"130\" y=\"261.0\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"130\" y=\"299.0\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"130,280 85,299.0 130,318\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"180,280 225,299.0 180,318\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"22.0\" y=\"230.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><rect x=\"324\" y=\"204\" width=\"312\" height=\"192\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"450\" y=\"242\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"450\" y=\"280\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"450\" y=\"318\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"400\" y=\"280\" width=\"50\" height=\"38\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"500\" y=\"280\" width=\"50\" height=\"38\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"342.0\" y=\"230.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">D</text></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "List the faces of the solid: how many triangles and how many rectangles? A net is all the faces laid flat and joined along edges.",
+          "steps": [
+            {
+              "explain": "Count the faces of the prism: 2 triangular ends (pink) and 3 rectangular sides (yellow). So a net needs 5 faces: 2 triangles and 3 rectangles.",
+              "work": "\\(2\\ \\text{triangles}+3\\ \\text{rectangles}=5\\ \\text{faces}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"60,190 130,60 200,190\" fill=\"#ec4899\" fill-opacity=\"0.9\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"130,60 200,190 250,170 190,50\" fill=\"#facc15\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"130,60 190,50 250,170 200,190\" fill=\"#facc15\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><line x1=\"200.0\" y1=\"190.0\" x2=\"250.0\" y2=\"170.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"60,190 130,60 200,190\" fill=\"#ec4899\" fill-opacity=\"0.95\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"130,60 190,50 250,170 200,190\" fill=\"#fde047\" stroke=\"#1e293b\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Lay the three rectangles in a strip (they wrap around the prism): the three side faces joined along their long edges.",
+              "work": "\\(\\text{strip of 3 rectangles}\\)"
+            },
+            {
+              "explain": "Each triangle must be attached to the edge of a rectangle that has the same length as one side of the triangle: put one triangle on each side of the middle rectangle.",
+              "work": "\\(\\text{triangle left},\\ \\text{triangle right of the middle rectangle}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><rect x=\"150\" y=\"50\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"150\" y=\"88\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"150\" y=\"126\" width=\"50\" height=\"38\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"150,88 105,107.0 150,126\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"200,88 245,107.0 200,126\" fill=\"#fbcfe8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"215.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rectangle (back/top)</text><text x=\"215.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rectangle</text><text x=\"60.0\" y=\"126.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#9d174d\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">triangle</text><text x=\"300.0\" y=\"126.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#9d174d\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">triangle</text><text x=\"175.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rectangle</text></svg>"
+              }
+            },
+            {
+              "explain": "Fold check: folding the strip into a triangular tube and the triangles inwards closes the two ends ✓. Why not the others: B has only ONE triangle; C has only 2 rectangles; D has rectangles where the two triangles should be.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Draw a net diagram for the following shape",
+              "note": "A prism net has 2 end faces and one rectangle for each side face."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4830,6 +4889,124 @@
             "\\(157\\text{ cm}^3\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "killara2022-y9-4b-q25b",
+          "type": "mc",
+          "stem": "A can of baked beans is in the shape of a closed cylinder with height \\(h\\ \\text{cm}\\) and radius \\(r\\ \\text{cm}\\), with \\(h=\\dfrac{500}{\\pi r^{2}}\\). Show that the area of metal used to make the can, \\(S\\ \\text{cm}^{2}\\), is \\(S=2\\pi r^{2}+\\dfrac{1000}{r}\\). Which working correctly shows this?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"#f1f5f9\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"80\" y=\"70\" width=\"180\" height=\"200\" fill=\"#f1f5f9\" stroke=\"none\"/><line x1=\"80.0\" y1=\"70.0\" x2=\"80.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"70.0\" x2=\"260.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><ellipse cx=\"170\" cy=\"70\" rx=\"90\" ry=\"26\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"100\" y=\"130\" width=\"140\" height=\"80\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"170.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BAKED</text><text x=\"170.0\" y=\"195.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BEANS</text><line x1=\"170.0\" y1=\"70.0\" x2=\"260.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"276.0\" y1=\"70.0\" x2=\"276.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"273.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"279.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"279.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"273.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"170.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text></svg>"
+          },
+          "options": [
+            "\\(S=2\\pi r^{2}+2\\pi rh=2\\pi r^{2}+2\\pi r\\times\\dfrac{500}{\\pi r^{2}}=2\\pi r^{2}+\\dfrac{1000}{r}\\)",
+            "\\(S=\\pi r^{2}+2\\pi rh=\\pi r^{2}+\\dfrac{1000}{r}\\)",
+            "\\(S=2\\pi r^{2}+\\pi rh=2\\pi r^{2}+\\dfrac{500}{r}\\)",
+            "\\(S=2\\pi r^{2}h=2\\pi r^{2}\\times\\dfrac{500}{\\pi r^{2}}=1000\\)"
+          ],
+          "answer": 0,
+          "hint": "Closed cylinder = 2 circular ends \\(+\\) curved side. Surface area \\(=2\\pi r^{2}+2\\pi rh\\). Then substitute \\(h\\) and cancel.",
+          "steps": [
+            {
+              "explain": "A CLOSED can has a top and a bottom circle (\\(2\\times\\pi r^{2}\\)) and a curved side that unrolls into a rectangle of length \\(2\\pi r\\) and height \\(h\\) (area \\(2\\pi rh\\)).",
+              "work": "\\(S=2\\pi r^{2}+2\\pi rh\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"#f1f5f9\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"80\" y=\"70\" width=\"180\" height=\"200\" fill=\"#f1f5f9\" stroke=\"none\"/><line x1=\"80.0\" y1=\"70.0\" x2=\"80.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"70.0\" x2=\"260.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><ellipse cx=\"170\" cy=\"70\" rx=\"90\" ry=\"26\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"100\" y=\"130\" width=\"140\" height=\"80\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"170.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BAKED</text><text x=\"170.0\" y=\"195.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BEANS</text><line x1=\"170.0\" y1=\"70.0\" x2=\"260.0\" y2=\"70.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"276.0\" y1=\"70.0\" x2=\"276.0\" y2=\"270.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"273.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"279.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"279.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"273.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"170.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text><ellipse cx=\"170\" cy=\"70\" rx=\"90\" ry=\"26\" fill=\"#fbbf24\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"2.4\"/><text x=\"170.0\" y=\"74.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2 circles: 2πr²</text><text x=\"170.0\" y=\"318.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">curved side: 2πrh</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(h=\\dfrac{500}{\\pi r^{2}}\\) (from part (a)).",
+              "work": "\\(S=2\\pi r^{2}+2\\pi r\\times\\dfrac{500}{\\pi r^{2}}\\)"
+            },
+            {
+              "explain": "Cancel: \\(\\pi\\) cancels with \\(\\pi\\), and one \\(r\\) cancels with one \\(r\\) from \\(r^{2}\\): \\(\\dfrac{2\\pi r\\times 500}{\\pi r^{2}}=\\dfrac{1000}{r}\\).",
+              "work": "\\(S=2\\pi r^{2}+\\dfrac{2\\times 500\\cdot\\pi r}{\\pi r^{2}}=2\\pi r^{2}+\\dfrac{1000}{r}\\quad\\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B has only ONE circle; C uses \\(\\pi rh\\) instead of \\(2\\pi rh\\) for the side; D multiplies by \\(h\\) incorrectly and loses the side.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the area of metal used to make the can",
+              "note": "Closed cylinder: two circles plus the curved side; substitute h and cancel pi and r."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q25c",
+          "type": "mc",
+          "stem": "A can of baked beans has radius \\(r\\ \\text{cm}\\) and height \\(h\\ \\text{cm}\\) with volume \\(500\\ \\text{cm}^{3}\\), so \\(h=\\dfrac{500}{\\pi r^{2}}\\) and \\(S=2\\pi r^{2}+\\dfrac{1000}{r}\\). Given that the radius \\((r)\\) and the height \\((h)\\) have the following relationship, \\(rh=10\\), find the exact area of the metal used in \\(\\text{cm}^{2}\\). Leave your answer in terms of \\(\\pi\\). (You may use the results in Part a) and b).)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{5000}{\\pi}+20\\pi\\ \\text{cm}^{2}\\)",
+            "\\(\\dfrac{2500}{\\pi}+20\\pi\\ \\text{cm}^{2}\\)",
+            "\\(\\dfrac{5000}{\\pi}+10\\pi\\ \\text{cm}^{2}\\)",
+            "\\(100\\pi\\ \\text{cm}^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use BOTH expressions for \\(h\\): \\(h=\\dfrac{10}{r}\\) (from \\(rh=10\\)) and \\(h=\\dfrac{500}{\\pi r^{2}}\\). Equate them to find \\(r\\), then substitute into \\(S\\).",
+          "steps": [
+            {
+              "explain": "From \\(rh=10\\): \\(h=\\dfrac{10}{r}\\). From part (a): \\(h=\\dfrac{500}{\\pi r^{2}}\\). The height is one number, so the two expressions are equal.",
+              "work": "\\(\\dfrac{10}{r}=\\dfrac{500}{\\pi r^{2}}\\)"
+            },
+            {
+              "explain": "Cross-multiply: \\(10\\times\\pi r^{2}=500\\times r\\).",
+              "work": "\\(10\\pi r^{2}=500r\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(10r\\) (\\(r\\ne0\\)).",
+              "work": "\\(r=\\dfrac{500}{10\\pi}=\\dfrac{50}{\\pi}\\)"
+            },
+            {
+              "explain": "Substitute \\(r=\\dfrac{50}{\\pi}\\) into \\(S=2\\pi r^{2}+\\dfrac{1000}{r}\\). First term: \\(r^{2}=\\dfrac{2500}{\\pi^{2}}\\).",
+              "work": "\\(2\\pi\\left(\\dfrac{50}{\\pi}\\right)^{2}=2\\pi\\times\\dfrac{2500}{\\pi^{2}}=\\dfrac{5000}{\\pi}\\)"
+            },
+            {
+              "explain": "Second term: dividing by \\(\\dfrac{50}{\\pi}\\) is multiplying by \\(\\dfrac{\\pi}{50}\\).",
+              "work": "\\(\\dfrac{1000}{r}=1000\\times\\dfrac{\\pi}{50}=20\\pi\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(S=\\dfrac{5000}{\\pi}+20\\pi\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(r=15.92\\) cm, \\(h=0.628\\) cm, \\(S=2\\pi(253.3)+62.8=1591.5+62.8\\approx1654\\); and \\(\\dfrac{5000}{\\pi}+20\\pi=1591.5+62.8\\) ✓. Option B forgot the 2 in \\(2\\pi r^{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact area of the metal used",
+              "note": "Equate the two expressions for h to find r, then substitute into the surface area."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -11537,6 +11714,70 @@
             "\\(136\\text{ cm}^3\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "killara2022-y9-4b-q20",
+          "type": "mc",
+          "stem": "An above-ground swimming pool has the following shape, with semicircular ends (width 4.5 m, depth 1.5 m, and the straight length between the semicircles 6.2 m). How much water in kilolitres would be needed to fill up the swimming pool, correct to the nearest kL?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><rect x=\"70\" y=\"80\" width=\"290\" height=\"80\" fill=\"#e0f2fe\" fill-opacity=\"0.0\"/><path d=\"M110,170 L320,170 A40,40 0 0 1 320,250 L110,250 A40,40 0 0 1 110,170 Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><line x1=\"70.0\" y1=\"100.0\" x2=\"70.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"360.0\" y1=\"100.0\" x2=\"360.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"60.0\" x2=\"180.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"1\" stroke-linecap=\"round\"/><path d=\"M110,70 L320,70 A40,40 0 0 1 320,150 L110,150 A40,40 0 0 1 110,70 Z\" fill=\"#e0f2fe\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"88.0\" y1=\"70.0\" x2=\"88.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"70.0\" x2=\"85.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"70.0\" x2=\"91.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"150.0\" x2=\"91.0\" y2=\"144.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"150.0\" x2=\"85.0\" y2=\"144.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"70.0\" y=\"108.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4.5 m</text><line x1=\"380.0\" y1=\"110.0\" x2=\"380.0\" y2=\"210.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"110.0\" x2=\"377.0\" y2=\"115.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"110.0\" x2=\"383.0\" y2=\"115.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"210.0\" x2=\"383.0\" y2=\"204.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"210.0\" x2=\"377.0\" y2=\"204.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"388.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5 m</text><line x1=\"110.0\" y1=\"260.0\" x2=\"320.0\" y2=\"260.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"260.0\" x2=\"115.2\" y2=\"263.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"260.0\" x2=\"115.2\" y2=\"257.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"260.0\" x2=\"314.8\" y2=\"257.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"260.0\" x2=\"314.8\" y2=\"263.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"280.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2 m</text></svg>"
+          },
+          "options": [
+            "\\(66\\ \\text{kL}\\)",
+            "\\(65.7\\ \\text{kL}\\)",
+            "\\(24\\ \\text{kL}\\)",
+            "\\(110\\ \\text{kL}\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the pool into a rectangular prism in the middle and a cylinder (two half-cylinders at the ends). Volume \\(=\\) base area \\(\\times\\) depth. \\(1\\ \\text{m}^{3}=1\\ \\text{kL}\\).",
+          "steps": [
+            {
+              "explain": "The top view is a rectangle \\(6.2\\times4.5\\) (orange) with a semicircle (green) at each end. The two semicircles together make ONE full circle of diameter 4.5, so radius \\(r=\\dfrac{4.5}{2}=2.25\\) m.",
+              "work": "\\(r=\\dfrac{4.5}{2}=2.25\\ \\text{m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><rect x=\"70\" y=\"80\" width=\"290\" height=\"80\" fill=\"#e0f2fe\" fill-opacity=\"0.0\"/><path d=\"M110,170 L320,170 A40,40 0 0 1 320,250 L110,250 A40,40 0 0 1 110,170 Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><line x1=\"70.0\" y1=\"100.0\" x2=\"70.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"360.0\" y1=\"100.0\" x2=\"360.0\" y2=\"190.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"180.0\" y1=\"60.0\" x2=\"180.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"1\" stroke-linecap=\"round\"/><path d=\"M110,70 L320,70 A40,40 0 0 1 320,150 L110,150 A40,40 0 0 1 110,70 Z\" fill=\"#bfdbfe\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"110\" y=\"70\" width=\"210\" height=\"80\" fill=\"#fde68a\" fill-opacity=\"0.7\" stroke=\"#d97706\" stroke-width=\"2.4\"/><path d=\"M110,70 A40,40 0 0 0 110,150 Z\" fill=\"#a7f3d0\" fill-opacity=\"0.8\" stroke=\"#047857\" stroke-width=\"2.4\"/><path d=\"M320,70 A40,40 0 0 1 320,150 Z\" fill=\"#a7f3d0\" fill-opacity=\"0.8\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"215.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#92400e\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">rectangle 6.2 × 4.5</text><text x=\"80.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#065f46\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">½ circle</text><text x=\"345.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#065f46\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">½ circle</text><line x1=\"88.0\" y1=\"70.0\" x2=\"88.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"70.0\" x2=\"85.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"70.0\" x2=\"91.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"150.0\" x2=\"91.0\" y2=\"144.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"150.0\" x2=\"85.0\" y2=\"144.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"70.0\" y=\"108.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4.5 m</text><line x1=\"380.0\" y1=\"110.0\" x2=\"380.0\" y2=\"210.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"110.0\" x2=\"377.0\" y2=\"115.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"110.0\" x2=\"383.0\" y2=\"115.2\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"210.0\" x2=\"383.0\" y2=\"204.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"380.0\" y1=\"210.0\" x2=\"377.0\" y2=\"204.8\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"388.0\" y=\"166.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5 m</text><line x1=\"110.0\" y1=\"260.0\" x2=\"320.0\" y2=\"260.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"260.0\" x2=\"115.2\" y2=\"263.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"260.0\" x2=\"115.2\" y2=\"257.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"260.0\" x2=\"314.8\" y2=\"257.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"260.0\" x2=\"314.8\" y2=\"263.0\" stroke=\"#1e293b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"280.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Volume of the rectangular part \\(=\\) length \\(\\times\\) width \\(\\times\\) depth.",
+              "work": "\\(V_{1}=6.2\\times 4.5\\times 1.5=41.85\\ \\text{m}^{3}\\)"
+            },
+            {
+              "explain": "Volume of the cylinder part (two half-cylinders) \\(=\\pi r^{2}h\\) with \\(h=1.5\\).",
+              "work": "\\(V_{2}=\\pi(2.25)^{2}(1.5)=\\pi(5.0625)(1.5)=23.86\\ \\text{m}^{3}\\)"
+            },
+            {
+              "explain": "Add the two volumes.",
+              "work": "\\(V=41.85+23.86=65.71\\ \\text{m}^{3}\\)"
+            },
+            {
+              "explain": "Convert: \\(1\\ \\text{m}^{3}=1000\\) litres \\(=1\\) kilolitre, so \\(65.71\\ \\text{m}^{3}=65.71\\ \\text{kL}\\approx 66\\ \\text{kL}\\).",
+              "work": "\\(V\\approx 66\\ \\text{kL}\\)"
+            },
+            {
+              "explain": "Option C (24) is only the cylinder part; option B (65.7) is not rounded to the nearest kL.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "How much water in kilolitres would be needed to fill up the swimming pool",
+              "note": "Split into a prism plus a cylinder; one cubic metre is one kilolitre."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -13141,6 +13382,52 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q6",
+          "type": "mc",
+          "stem": "Convert \\(125\\ \\text{cm}^{2}\\) to \\(\\text{m}^{2}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(0.0125\\ \\text{m}^{2}\\)",
+            "\\(1.25\\ \\text{m}^{2}\\)",
+            "\\(0.125\\ \\text{m}^{2}\\)",
+            "\\(12\\,500\\ \\text{m}^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "For AREA units, the conversion factor is SQUARED: \\(1\\ \\text{m}=100\\ \\text{cm}\\) so \\(1\\ \\text{m}^{2}=100^{2}=10\\,000\\ \\text{cm}^{2}\\).",
+          "steps": [
+            {
+              "explain": "\\(1\\ \\text{m}=100\\ \\text{cm}\\). An area unit is a square: \\(1\\ \\text{m}^{2}=100\\ \\text{cm}\\times 100\\ \\text{cm}=10\\,000\\ \\text{cm}^{2}\\).",
+              "work": "\\(1\\ \\text{m}^{2}=100^{2}\\ \\text{cm}^{2}=10\\,000\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Going from the SMALLER unit (\\(\\text{cm}^{2}\\)) to the LARGER unit (\\(\\text{m}^{2}\\)): divide by 10 000.",
+              "work": "\\(125\\div 10\\,000=0.0125\\)"
+            },
+            {
+              "explain": "So \\(125\\ \\text{cm}^{2}=0.0125\\ \\text{m}^{2}\\). Option C divides by only 1000 and B divides by 100 (forgetting to square).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Convert",
+              "note": "Area units: divide by the square of the length conversion factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
           }
         }
       ]

@@ -1429,6 +1429,267 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-4b-q2",
+          "type": "mc",
+          "stem": "Which one of the following is a measure of spread?",
+          "difficulty": "easy",
+          "options": [
+            "Mean",
+            "Range",
+            "Mode",
+            "Median"
+          ],
+          "answer": 1,
+          "hint": "Measures of CENTRE tell you the typical value; measures of SPREAD tell you how far apart the data are.",
+          "steps": [
+            {
+              "explain": "Measures of centre (where the middle of the data is): mean (average), median (middle value), mode (most common value).",
+              "work": "\\(\\text{centre: mean, median, mode}\\)"
+            },
+            {
+              "explain": "Measures of spread (how spread out the data are): range (highest \\(-\\) lowest), interquartile range, standard deviation.",
+              "work": "\\(\\text{spread: range}=\\text{highest}-\\text{lowest}\\)"
+            },
+            {
+              "explain": "Only the range is a measure of spread, so the answer is B.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which one of the following is a measure of spread?",
+              "note": "Mean, median and mode are measures of centre; range measures spread."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q5",
+          "type": "mc",
+          "stem": "What is the value of the upper quartile (\\(Q_{3}\\)) in the following box-and-whisker plot? (box from 10 to 35 with the median at 25, whiskers from 5 to 60)",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 160\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"116.0\" x2=\"462.4\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"462.4\" y1=\"116.0\" x2=\"455.5\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"462.4\" y1=\"116.0\" x2=\"455.5\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"26.0\" y1=\"116.0\" x2=\"32.9\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"26.0\" y1=\"116.0\" x2=\"32.9\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"112.0\" x2=\"40.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"104.0\" y1=\"112.0\" x2=\"104.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"104.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"168.0\" y1=\"112.0\" x2=\"168.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"168.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"232.0\" y1=\"112.0\" x2=\"232.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"232.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30</text><line x1=\"296.0\" y1=\"112.0\" x2=\"296.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"296.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"360.0\" y1=\"112.0\" x2=\"360.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><line x1=\"424.0\" y1=\"112.0\" x2=\"424.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"424.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"72.0\" y1=\"80.0\" x2=\"104.0\" y2=\"80.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"264.0\" y1=\"80.0\" x2=\"424.0\" y2=\"80.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"72.0\" y1=\"70.0\" x2=\"72.0\" y2=\"90.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"424.0\" y1=\"70.0\" x2=\"424.0\" y2=\"90.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"104.0\" y=\"60\" width=\"160.0\" height=\"40\" fill=\"none\" fill-opacity=\"0.7\" stroke=\"#2d4aa3\" stroke-width=\"2.4\"/><line x1=\"200.0\" y1=\"60.0\" x2=\"200.0\" y2=\"100.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+          },
+          "options": [
+            "\\(35\\)",
+            "\\(25\\)",
+            "\\(10\\)",
+            "\\(60\\)"
+          ],
+          "answer": 0,
+          "hint": "In a box plot the box runs from \\(Q_{1}\\) to \\(Q_{3}\\), the line inside is the median, and the whiskers go to the minimum and maximum. \\(Q_{3}\\) is the RIGHT end of the box.",
+          "steps": [
+            {
+              "explain": "Identify the five parts of the box plot from left to right: minimum (left whisker end), \\(Q_{1}\\) (left edge of the box), median (line in the box), \\(Q_{3}\\) (right edge of the box), maximum (right whisker end).",
+              "work": "\\(\\text{min},\\ Q_{1},\\ \\text{median},\\ Q_{3},\\ \\text{max}\\)"
+            },
+            {
+              "explain": "Read the scale under the right edge of the box (red line): halfway between 30 and 40, that is 35.",
+              "work": "\\(Q_{3}=35\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 160\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"116.0\" x2=\"462.4\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"462.4\" y1=\"116.0\" x2=\"455.5\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"462.4\" y1=\"116.0\" x2=\"455.5\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"26.0\" y1=\"116.0\" x2=\"32.9\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"26.0\" y1=\"116.0\" x2=\"32.9\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"112.0\" x2=\"40.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"40.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"104.0\" y1=\"112.0\" x2=\"104.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"104.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"168.0\" y1=\"112.0\" x2=\"168.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"168.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"232.0\" y1=\"112.0\" x2=\"232.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"232.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30</text><line x1=\"296.0\" y1=\"112.0\" x2=\"296.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"296.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"360.0\" y1=\"112.0\" x2=\"360.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"360.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><line x1=\"424.0\" y1=\"112.0\" x2=\"424.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"424.0\" y=\"136.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"72.0\" y1=\"80.0\" x2=\"104.0\" y2=\"80.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"264.0\" y1=\"80.0\" x2=\"424.0\" y2=\"80.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"72.0\" y1=\"70.0\" x2=\"72.0\" y2=\"90.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"424.0\" y1=\"70.0\" x2=\"424.0\" y2=\"90.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><rect x=\"104.0\" y=\"60\" width=\"160.0\" height=\"40\" fill=\"#bfdbfe\" fill-opacity=\"0.7\" stroke=\"#2d4aa3\" stroke-width=\"2.4\"/><line x1=\"200.0\" y1=\"60.0\" x2=\"200.0\" y2=\"100.0\" stroke=\"#2d4aa3\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"264.0\" y1=\"60.0\" x2=\"264.0\" y2=\"116.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"264.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Q3 = right end of the box = 35</text></svg>"
+              }
+            },
+            {
+              "explain": "Option B (25) is the median, option C (10) is \\(Q_{1}\\), option D (60) is the maximum.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of the upper quartile",
+              "note": "Q3 is the right edge of the box in a box plot."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q22a",
+          "type": "mc",
+          "stem": "The following data shows the heights of 20 primary school students (in centimetres): 120, 120, 128, 129, 129, 130, 131, 131, 134, 135, 136, 137, 139, 140, 142, 143, 144, 151, 152, 159. Complete the following grouped data frequency table (class intervals 120-129, 130-139, 140-149, 150-159) using the data set. Which completed row set is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"110\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Class Interval</text><rect x=\"120\" y=\"10\" width=\"105\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Class centre (x)</text><rect x=\"225\" y=\"10\" width=\"100\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Frequency (f)</text><rect x=\"325\" y=\"10\" width=\"105\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">f × x</text><rect x=\"10\" y=\"50\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120-129</text><rect x=\"120\" y=\"50\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"50\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"50\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"84\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">130-139</text><rect x=\"120\" y=\"84\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"84\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"84\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"118\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">140-149</text><rect x=\"120\" y=\"118\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"118\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"118\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"152\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150-159</text><rect x=\"120\" y=\"152\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"152\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"152\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"186\" width=\"215\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"186\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"186\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Sum Σ =</text><text x=\"377.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Sum Σ =</text></svg>"
+          },
+          "options": [
+            "Class centres 124.5, 134.5, 144.5, 155.5; frequencies 5, 8, 4, 3; \\(fx\\) = 622.5, 1076, 578, 466.5; \\(\\sum f=20\\), \\(\\sum fx=2743\\)",
+            "Class centres 120, 130, 140, 150; frequencies 5, 8, 4, 3; \\(fx\\) = 600, 1040, 560, 450; \\(\\sum f=20\\), \\(\\sum fx=2650\\)",
+            "Class centres 124.5, 134.5, 144.5, 155.5; frequencies 5, 7, 5, 3; \\(fx\\) = 622.5, 941.5, 722.5, 466.5; \\(\\sum f=20\\), \\(\\sum fx=2753\\)",
+            "Class centres 129, 139, 149, 159; frequencies 5, 8, 4, 3; \\(fx\\) = 645, 1112, 596, 477; \\(\\sum f=20\\), \\(\\sum fx=2830\\)"
+          ],
+          "answer": 0,
+          "hint": "Frequency = count the data values in each class. Class centre = middle of the class: (lowest + highest) ÷ 2. Then \\(fx=f\\times x\\) and add the columns.",
+          "steps": [
+            {
+              "explain": "Class centre \\(x\\) = middle of each class interval: \\(\\dfrac{120+129}{2}=124.5\\) (so 134.5, 144.5, 155.5 by adding 10 each time).",
+              "work": "\\(x=\\dfrac{120+129}{2}=124.5,\\ 134.5,\\ 144.5,\\ 155.5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"110\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Class Interval</text><rect x=\"120\" y=\"10\" width=\"105\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Class centre (x)</text><rect x=\"225\" y=\"10\" width=\"100\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Frequency (f)</text><rect x=\"325\" y=\"10\" width=\"105\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">f × x</text><rect x=\"10\" y=\"50\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120-129</text><rect x=\"120\" y=\"50\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"50\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"50\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"84\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">130-139</text><rect x=\"120\" y=\"84\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"84\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"84\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"118\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">140-149</text><rect x=\"120\" y=\"118\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"118\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"118\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"152\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150-159</text><rect x=\"120\" y=\"152\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"152\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"152\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"10\" y=\"186\" width=\"215\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"186\" width=\"100\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"186\" width=\"105\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Sum Σ =</text><text x=\"377.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Sum Σ =</text></svg>"
+              }
+            },
+            {
+              "explain": "Frequency \\(f\\) = how many data values lie in each class. 120–129: 120, 120, 128, 129, 129 \\(\\to 5\\). 130–139: 130, 131, 131, 134, 135, 136, 137, 139 \\(\\to 8\\). 140–149: 140, 142, 143, 144 \\(\\to 4\\). 150–159: 151, 152, 159 \\(\\to 3\\).",
+              "work": "\\(f=5,\\ 8,\\ 4,\\ 3\\qquad\\sum f=20\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Multiply \\(f\\times x\\) in each row.",
+              "work": "\\(5\\times124.5=622.5,\\ \\ 8\\times134.5=1076,\\ \\ 4\\times144.5=578,\\ \\ 3\\times155.5=466.5\\)"
+            },
+            {
+              "explain": "Add each column (the check \\(\\sum f=20\\) matches the 20 students).",
+              "work": "\\(\\sum f=20,\\qquad\\sum fx=622.5+1076+578+466.5=2743\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 230\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:0 auto\"><rect x=\"10\" y=\"10\" width=\"110\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Class Interval</text><rect x=\"120\" y=\"10\" width=\"105\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Class centre (x)</text><rect x=\"225\" y=\"10\" width=\"100\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Frequency (f)</text><rect x=\"325\" y=\"10\" width=\"105\" height=\"40\" fill=\"#e0e7ff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"36.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">f × x</text><rect x=\"10\" y=\"50\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120-129</text><rect x=\"120\" y=\"50\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">124.5</text><rect x=\"225\" y=\"50\" width=\"100\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"325\" y=\"50\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"72.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">622.5</text><rect x=\"10\" y=\"84\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">130-139</text><rect x=\"120\" y=\"84\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">134.5</text><rect x=\"225\" y=\"84\" width=\"100\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><rect x=\"325\" y=\"84\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"106.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1076</text><rect x=\"10\" y=\"118\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">140-149</text><rect x=\"120\" y=\"118\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"140.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">144.5</text><rect x=\"225\" y=\"118\" width=\"100\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"140.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"325\" y=\"118\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"140.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">578</text><rect x=\"10\" y=\"152\" width=\"110\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"65.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">150-159</text><rect x=\"120\" y=\"152\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"172.5\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">155.5</text><rect x=\"225\" y=\"152\" width=\"100\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><rect x=\"325\" y=\"152\" width=\"105\" height=\"34\" fill=\"#fef3c7\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"377.5\" y=\"174.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">466.5</text><rect x=\"10\" y=\"186\" width=\"215\" height=\"34\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"225\" y=\"186\" width=\"100\" height=\"34\" fill=\"#d1fae5\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><rect x=\"325\" y=\"186\" width=\"105\" height=\"34\" fill=\"#d1fae5\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"275.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"377.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2743</text><text x=\"110.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Sum</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B uses the lower end of each class as the centre; C miscounts the frequencies (7 and 5); D uses the upper end of each class.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Complete the following grouped data frequency table",
+              "note": "Class centre is the middle of the class; count frequencies carefully and check they add to 20."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q22b",
+          "type": "mc",
+          "stem": "Using the completed table (\\(\\sum fx=2743\\), \\(\\sum f=20\\)), or otherwise, find the mean of the data.",
+          "difficulty": "medium",
+          "options": [
+            "\\(137.15\\)",
+            "\\(130.15\\)",
+            "\\(2743\\)",
+            "\\(137\\)"
+          ],
+          "answer": 0,
+          "hint": "Mean of grouped data \\(=\\dfrac{\\sum fx}{\\sum f}\\).",
+          "steps": [
+            {
+              "explain": "Use the grouped-data mean formula: total of \\(f\\times x\\) divided by the total frequency.",
+              "work": "\\(\\bar{x}=\\dfrac{\\sum fx}{\\sum f}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\sum fx=2743\\) and \\(\\sum f=20\\).",
+              "work": "\\(\\bar{x}=\\dfrac{2743}{20}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\bar{x}=137.15\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Check with the raw data: the raw heights add to 2730 (mean 136.5), so 137.15 from class centres is a close estimate ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the mean of the data",
+              "note": "Grouped mean: sum of f times x divided by sum of f."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q23",
+          "type": "mc",
+          "stem": "7 students did a difficult spelling test and 6 of their results are 4, 4, 5, 5, 5, 6. Find the score of the 7th student if the mean is equal to the mode. Suppose there is only one mode.",
+          "difficulty": "hard",
+          "options": [
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(7\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the mode of the 6 known scores, then write an equation: the mean of all 7 scores equals that mode, and solve for the missing score \\(x\\).",
+          "steps": [
+            {
+              "explain": "The mode is the most common score. In 4, 4, 5, 5, 5, 6 the score 5 appears 3 times (most). The 7th score must not create a second mode, so the mode stays 5.",
+              "work": "\\(\\text{mode}=5\\)"
+            },
+            {
+              "explain": "The mean equals the mode: \\(\\dfrac{\\text{sum of the 7 scores}}{7}=5\\). The sum of the 6 known scores is \\(4+4+5+5+5+6=29\\).",
+              "work": "\\(\\dfrac{29+x}{7}=5\\)"
+            },
+            {
+              "explain": "Multiply by 7 and solve for \\(x\\).",
+              "work": "\\(29+x=35\\ \\Rightarrow\\ x=6\\)"
+            },
+            {
+              "explain": "Check: scores 4, 4, 5, 5, 5, 6, 6: mean \\(=\\dfrac{35}{7}=5\\) ✓; the mode is still only 5 (three times, more than 4 and 6 which appear twice) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the score of the 7th student",
+              "note": "Mean equals mode: set up an equation for the missing value."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

@@ -2604,6 +2604,66 @@
             "\\(1080^\\circ\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "killara2022-y9-4b-q18",
+          "type": "mc",
+          "stem": "Find the angle marked with pronumeral \\(\\theta\\). (\\(AB\\parallel DE\\), with \\(\\angle ABC=45^{\\circ}\\) and \\(\\angle CDE=60^{\\circ}\\).)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"120.0\" y1=\"40.0\" x2=\"310.0\" y2=\"40.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"230.0\" x2=\"300.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40.0\" x2=\"210.0\" y2=\"130.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"130.0\" x2=\"110.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"40.0\" x2=\"206.3\" y2=\"35.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"40.0\" x2=\"206.3\" y2=\"45.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"205.0\" y1=\"230.0\" x2=\"196.3\" y2=\"225.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"205.0\" y1=\"230.0\" x2=\"196.3\" y2=\"235.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M160,40 A40,40 0 0 1 148.3,68.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"174.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M128.0,198.8 A36,36 0 0 1 146,230\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"160.0\" y=\"214.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"222.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"110.0\" y=\"34.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"320.0\" y=\"34.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"222.0\" y=\"124.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><text x=\"100.0\" y=\"246.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">D</text><text x=\"310.0\" y=\"246.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text></svg>"
+          },
+          "options": [
+            "\\(105^{\\circ}\\)",
+            "\\(15^{\\circ}\\)",
+            "\\(75^{\\circ}\\)",
+            "\\(135^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw a line through \\(C\\) parallel to \\(AB\\) and \\(DE\\). It splits \\(\\theta\\) into two parts, each equal to an ALTERNATE angle with a given angle.",
+          "steps": [
+            {
+              "explain": "Draw a dashed line through \\(C\\) parallel to \\(AB\\) (and so also to \\(DE\\)). It divides \\(\\theta\\) into an upper part and a lower part.",
+              "work": "\\(\\theta=\\text{upper part}+\\text{lower part}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 300\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"120.0\" y1=\"40.0\" x2=\"310.0\" y2=\"40.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"230.0\" x2=\"300.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"40.0\" x2=\"210.0\" y2=\"130.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"130.0\" x2=\"110.0\" y2=\"230.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"40.0\" x2=\"206.3\" y2=\"35.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"215.0\" y1=\"40.0\" x2=\"206.3\" y2=\"45.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"205.0\" y1=\"230.0\" x2=\"196.3\" y2=\"225.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"205.0\" y1=\"230.0\" x2=\"196.3\" y2=\"235.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M160,40 A40,40 0 0 1 148.3,68.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"174.0\" y=\"66.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M128.0,198.8 A36,36 0 0 1 146,230\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"160.0\" y=\"214.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"222.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"17\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><line x1=\"120.0\" y1=\"130.0\" x2=\"300.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"176.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><text x=\"244.0\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"310.0\" y=\"134.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">dashed line parallel to AB</text><text x=\"110.0\" y=\"34.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">B</text><text x=\"320.0\" y=\"34.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">A</text><text x=\"222.0\" y=\"124.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">C</text><text x=\"100.0\" y=\"246.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">D</text><text x=\"310.0\" y=\"246.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text></svg>"
+              }
+            },
+            {
+              "explain": "Upper part: alternate angles between parallel lines are equal, so it equals the \\(45^{\\circ}\\) at \\(B\\) (green).",
+              "work": "\\(\\text{upper}=45^{\\circ}\\ \\text{(alternate angles, parallel lines)}\\)"
+            },
+            {
+              "explain": "Lower part: alternate angles again, so it equals the \\(60^{\\circ}\\) at \\(D\\) (purple).",
+              "work": "\\(\\text{lower}=60^{\\circ}\\ \\text{(alternate angles, parallel lines)}\\)"
+            },
+            {
+              "explain": "Add the two parts.",
+              "work": "\\(\\theta=45^{\\circ}+60^{\\circ}=105^{\\circ}\\)"
+            },
+            {
+              "explain": "Check: option B (15°) is the difference; option D (135°) comes from \\(180^{\\circ}-45^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the angle marked with pronumeral",
+              "note": "Draw a parallel through the vertex; alternate angles make theta the sum of the two given angles."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2863,6 +2923,73 @@
             "grade": "9",
             "origin": "teacher",
             "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q13",
+          "type": "mc",
+          "stem": "In the following two triangles, it is given that \\(\\angle ABD=\\angle DBC=90^{\\circ}\\) and \\(AB=BC\\). Prove \\(\\triangle ABE\\equiv\\triangle CBD\\). (The diagram has the points \\(A,B,C,D\\); the triangles are \\(\\triangle ABD\\) and \\(\\triangle CBD\\).) Which proof is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"40,200 380,200 210,60\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"210.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polyline points=\"198,200 198,188 210,188\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"125.0\" y1=\"192.0\" x2=\"125.0\" y2=\"208.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"295.0\" y1=\"192.0\" x2=\"295.0\" y2=\"208.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"32.0\" y=\"214.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"210.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"388.0\" y=\"214.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"210.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text></svg>"
+          },
+          "options": [
+            "In \\(\\triangle ABD\\) and \\(\\triangle CBD\\): \\(AB=BC\\) (given); \\(\\angle ABD=\\angle DBC=90^{\\circ}\\) (given); \\(BD\\) is common. So \\(\\triangle ABD\\equiv\\triangle CBD\\) (SAS).",
+            "In \\(\\triangle ABD\\) and \\(\\triangle CBD\\): \\(AB=BC\\) (given); \\(BD\\) is common; \\(\\angle BAD=\\angle BCD\\). So \\(\\triangle ABD\\equiv\\triangle CBD\\) (SSA).",
+            "In \\(\\triangle ABD\\) and \\(\\triangle CBD\\): \\(\\angle ABD=\\angle DBC=90^{\\circ}\\); \\(\\angle BAD=\\angle BCD\\). So \\(\\triangle ABD\\equiv\\triangle CBD\\) (AAA).",
+            "In \\(\\triangle ABD\\) and \\(\\triangle CBD\\): \\(AB=BC\\) (given); \\(AD=CD\\). So \\(\\triangle ABD\\equiv\\triangle CBD\\) (SS)."
+          ],
+          "answer": 0,
+          "hint": "Write one line per fact, each with a reason. The three facts must be: Side, then the angle BETWEEN the two sides (Included angle), then Side: SAS.",
+          "steps": [
+            {
+              "explain": "Choose the two triangles: \\(\\triangle ABD\\) (left) and \\(\\triangle CBD\\) (right). They share the side \\(BD\\).",
+              "work": "\\(\\triangle ABD\\ \\ \\text{and}\\ \\ \\triangle CBD\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"40,200 380,200 210,60\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"210.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polyline points=\"198,200 198,188 210,188\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"125.0\" y1=\"192.0\" x2=\"125.0\" y2=\"208.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"295.0\" y1=\"192.0\" x2=\"295.0\" y2=\"208.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"32.0\" y=\"214.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"210.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"388.0\" y=\"214.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"210.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Fact 1 (SIDE): \\(AB=BC\\) (given, shown by the matching tick marks) (green).",
+              "work": "\\(AB=BC\\ \\text{(given)}\\)"
+            },
+            {
+              "explain": "Fact 2 (INCLUDED ANGLE): \\(\\angle ABD=\\angle DBC=90^{\\circ}\\) (given). This angle is BETWEEN the sides \\(AB\\) and \\(BD\\) (and between \\(CB\\) and \\(BD\\)), so it is the included angle (red).",
+              "work": "\\(\\angle ABD=\\angle DBC=90^{\\circ}\\ \\text{(given)}\\)"
+            },
+            {
+              "explain": "Fact 3 (SIDE): \\(BD\\) is a side of BOTH triangles, so it is common (purple).",
+              "work": "\\(BD=BD\\ \\text{(common)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"40,200 380,200 210,60\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"210.0\" y2=\"60.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polyline points=\"198,200 198,188 210,188\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"125.0\" y1=\"192.0\" x2=\"125.0\" y2=\"208.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"295.0\" y1=\"192.0\" x2=\"295.0\" y2=\"208.0\" stroke=\"#1e293b\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"200.0\" x2=\"210.0\" y2=\"200.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"380.0\" y2=\"200.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"210.0\" y2=\"60.0\" stroke=\"#7c3aed\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"125.0\" y=\"226.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AB = BC (S)</text><text x=\"218.0\" y=\"130.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BD common (S)</text><text x=\"180.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90°</text><text x=\"240.0\" y=\"180.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90°</text><text x=\"32.0\" y=\"214.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"210.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"388.0\" y=\"214.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"210.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Conclusion: two sides and the included angle are equal, so the triangles are congruent by the SAS test.",
+              "work": "\\(\\triangle ABD\\equiv\\triangle CBD\\ \\ (\\text{SAS})\\)"
+            },
+            {
+              "explain": "Why not the others: B uses SSA (not a valid test) with an angle that was not given; C uses AAA (angles alone prove similarity, never congruence); D has only two sides.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove",
+              "note": "Congruence proof: write each fact with a reason, then name the test (SAS here)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
           }
         }
       ]

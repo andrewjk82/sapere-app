@@ -414,6 +414,110 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-4b-q11",
+          "type": "mc",
+          "stem": "Express the following ratio in the simplest form: \\(3\\dfrac{1}{4}:\\dfrac{2}{5}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(65:8\\)",
+            "\\(13:2\\)",
+            "\\(13:8\\)",
+            "\\(65:2\\)"
+          ],
+          "answer": 0,
+          "hint": "Turn the mixed number into an improper fraction, then multiply both parts by the common denominator (20) to remove the fractions.",
+          "steps": [
+            {
+              "explain": "Convert \\(3\\dfrac{1}{4}\\) to an improper fraction: \\(3\\times 4+1=13\\), so \\(\\dfrac{13}{4}\\).",
+              "work": "\\(3\\dfrac{1}{4}=\\dfrac{13}{4}\\)"
+            },
+            {
+              "explain": "Write the ratio with both parts as fractions.",
+              "work": "\\(\\dfrac{13}{4}:\\dfrac{2}{5}\\)"
+            },
+            {
+              "explain": "The denominators are 4 and 5: multiply BOTH sides of the ratio by their lowest common multiple, 20.",
+              "work": "\\(\\dfrac{13}{4}\\times 20=65,\\qquad \\dfrac{2}{5}\\times 20=8\\)"
+            },
+            {
+              "explain": "The ratio is \\(65:8\\). It cannot be simplified further (65 and 8 have no common factor).",
+              "work": "\\(65:8\\)"
+            },
+            {
+              "explain": "Option B forgot to multiply the second part by 20 properly; the check \\(\\dfrac{65}{8}=8.125\\) equals \\(\\dfrac{13}{4}\\div\\dfrac{2}{5}=\\dfrac{13}{4}\\times\\dfrac{5}{2}=\\dfrac{65}{8}\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express the following ratio in the simplest form",
+              "note": "Make both parts whole numbers by multiplying by the common denominator."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q12",
+          "type": "mc",
+          "stem": "If a scale of \\(1:50\\) is used to make the following drawing, what is the actual height of a tree whose height in the drawing is \\(10\\ \\text{cm}\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(5\\ \\text{m}\\)",
+            "\\(500\\ \\text{m}\\)",
+            "\\(0.2\\ \\text{m}\\)",
+            "\\(50\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Scale \\(1:50\\) means 1 cm on the drawing is 50 cm in real life. Multiply the drawing length by 50, then convert to metres (\\(100\\ \\text{cm}=1\\ \\text{m}\\)).",
+          "steps": [
+            {
+              "explain": "Set up equal ratios: drawing : actual \\(=1:50\\) so \\(10:x\\) has the same ratio.",
+              "work": "\\(1:50=10:x\\)"
+            },
+            {
+              "explain": "The drawing length is multiplied by 50 to get the real length.",
+              "work": "\\(x=10\\times 50=500\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Convert to metres: divide by 100.",
+              "work": "\\(500\\ \\text{cm}=500\\div 100=5\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Option B (500 m) forgets to convert from cm; option D (50 m) is a factor-of-10 slip.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what is the actual height of a tree",
+              "note": "Multiply the drawing length by the scale, then convert the units."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

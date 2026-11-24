@@ -313,6 +313,178 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-4b-q9",
+          "type": "mc",
+          "stem": "What is the scale factor for the enlargement? (Object triangle ABC has sides \\(AB=12\\), \\(BC=6\\), \\(AC=9\\); the image triangle DEF has sides \\(DE=20\\), \\(EF=10\\), \\(DF=15\\).)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" width=\"100%\" height=\"auto\" style=\"max-width:450px;display:block;margin:0 auto\"><polygon points=\"30,200 124.5,147.7 111.0,200\" fill=\"#bbf7d0\" fill-opacity=\"0.7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"215,205 348.9,130.9 329.8,205\" fill=\"#d1d5db\" fill-opacity=\"0.8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"65.2\" y=\"173.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"129.8\" y=\"173.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"70.5\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"269.9\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"351.3\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"272.4\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><text x=\"22.0\" y=\"210.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"122.5\" y=\"139.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"119.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"207.0\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"346.9\" y=\"122.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"337.8\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"95.0\" y=\"228.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Object</text><text x=\"300.0\" y=\"228.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Image</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{5}{3}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Scale factor \\(=\\dfrac{\\text{image length}}{\\text{object length}}\\): pick a pair of MATCHING sides and divide image by object.",
+          "steps": [
+            {
+              "explain": "Match corresponding sides (same position in the two triangles): \\(BC\\leftrightarrow EF\\) (the shortest sides), \\(AB\\leftrightarrow DE\\) (longest), \\(AC\\leftrightarrow DF\\).",
+              "work": "\\(BC=6\\ \\longleftrightarrow\\ EF=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" width=\"100%\" height=\"auto\" style=\"max-width:450px;display:block;margin:0 auto\"><polygon points=\"30,200 124.5,147.7 111.0,200\" fill=\"#bbf7d0\" fill-opacity=\"0.7\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><polygon points=\"215,205 348.9,130.9 329.8,205\" fill=\"#d1d5db\" fill-opacity=\"0.8\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"65.2\" y=\"173.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"129.8\" y=\"173.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"70.5\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"269.9\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><text x=\"351.3\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><text x=\"272.4\" y=\"223.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><text x=\"22.0\" y=\"210.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"122.5\" y=\"139.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"119.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"207.0\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"346.9\" y=\"122.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><text x=\"337.8\" y=\"211.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">F</text><text x=\"95.0\" y=\"228.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Object</text><text x=\"300.0\" y=\"228.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Image</text><line x1=\"124.5\" y1=\"147.7\" x2=\"111.0\" y2=\"200.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"348.9\" y1=\"130.9\" x2=\"329.8\" y2=\"205.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"205.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">matching sides: BC = 6 → EF = 10</text></svg>"
+              }
+            },
+            {
+              "explain": "Scale factor \\(=\\dfrac{\\text{image}}{\\text{object}}\\) (image is the new, bigger one).",
+              "work": "\\(\\text{SF}=\\dfrac{10}{6}=\\dfrac{5}{3}\\)"
+            },
+            {
+              "explain": "Check with the other pairs: \\(\\dfrac{20}{12}=\\dfrac{5}{3}\\) ✓ and \\(\\dfrac{15}{9}=\\dfrac{5}{3}\\) ✓ (all pairs give the same factor). Option B is object over image (upside down).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the scale factor for the enlargement?",
+              "note": "Scale factor is image divided by object using matching sides."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q15a",
+          "type": "mc",
+          "stem": "In the following diagram, \\(PQ\\parallel XY\\). Prove that \\(\\triangle POQ\\) is similar to \\(\\triangle XOY\\). Which proof is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"210,30 90,260 330,260\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"162.0\" y1=\"122.0\" x2=\"258.0\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"117.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"127.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"255.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"265.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"152.0\" y=\"126.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"268.0\" y=\"126.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"82.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">X</text><text x=\"338.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Y</text></svg>"
+          },
+          "options": [
+            "\\(\\angle OPQ=\\angle OXY\\) (corresponding angles, \\(PQ\\parallel XY\\)); \\(\\angle OQP=\\angle OYX\\) (corresponding angles, \\(PQ\\parallel XY\\)); \\(\\angle POQ\\) is common. So \\(\\triangle POQ\\sim\\triangle XOY\\) (AAA: three pairs of equal angles).",
+            "\\(PQ=XY\\) (parallel lines are equal). So \\(\\triangle POQ\\sim\\triangle XOY\\).",
+            "\\(\\angle POQ\\) is common. So the triangles are similar.",
+            "\\(OP=OX\\) and \\(OQ=OY\\). So \\(\\triangle POQ\\sim\\triangle XOY\\) (SSS)."
+          ],
+          "answer": 0,
+          "hint": "Use the parallel lines \\(PQ\\parallel XY\\) to find equal angles (corresponding angles), and the shared angle at \\(O\\). Three pairs of equal angles prove similarity.",
+          "steps": [
+            {
+              "explain": "The lines \\(PQ\\) and \\(XY\\) are PARALLEL (marked with arrows), and \\(OX\\) is a transversal cutting them. The angles at \\(P\\) and \\(X\\) are in matching positions (CORRESPONDING angles), so they are equal (red).",
+              "work": "\\(\\angle OPQ=\\angle OXY\\ \\text{(corresponding angles, }PQ\\parallel XY)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"210,30 90,260 330,260\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"162.0\" y1=\"122.0\" x2=\"258.0\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"117.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"127.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"255.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"265.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M174.0,144.0 A24,24 0 0 0 188.0,120.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M112.0,256.0 A24,24 0 0 0 120.0,236.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M196.0,66.0 A30,30 0 0 0 224.0,66.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"210.0\" y=\"88.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">common</text><text x=\"132.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">∠OPQ = ∠OXY</text><text x=\"132.0\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(corresponding)</text><text x=\"210.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"152.0\" y=\"126.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"268.0\" y=\"126.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"82.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">X</text><text x=\"338.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Y</text></svg>"
+              }
+            },
+            {
+              "explain": "The same reasoning with the transversal \\(OY\\): \\(\\angle OQP=\\angle OYX\\) (corresponding angles).",
+              "work": "\\(\\angle OQP=\\angle OYX\\)"
+            },
+            {
+              "explain": "The angle at \\(O\\) belongs to both triangles: \\(\\angle POQ=\\angle XOY\\) (common angle) (green).",
+              "work": "\\(\\angle POQ\\ \\text{is common}\\)"
+            },
+            {
+              "explain": "Three pairs of equal angles: the triangles are similar (AAA test).",
+              "work": "\\(\\triangle POQ\\sim\\triangle XOY\\)"
+            },
+            {
+              "explain": "Note: the angle pair at \\(P\\) and \\(X\\) is a pair of CORRESPONDING angles (the printed school solution calls them 'alternate', which is not the right name). Why not the others: B claims \\(PQ=XY\\) (false: \\(PQ=3\\), \\(XY=4.5\\)); C has only one pair; D claims \\(OP=OX\\) (false).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Parallel lines give corresponding angles; add the common angle: AAA similarity."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2022-y9-4b-q15b",
+          "type": "mc",
+          "stem": "In the following diagram, \\(PQ\\parallel XY\\) and \\(\\triangle POQ\\sim\\triangle XOY\\). If \\(OP=4\\ \\text{cm}\\), \\(OX=6\\ \\text{cm}\\) and \\(PQ=3\\ \\text{cm}\\), find the length of \\(XY\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"210,30 90,260 330,260\" fill=\"none\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"162.0\" y1=\"122.0\" x2=\"258.0\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"117.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"127.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"255.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"265.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"210.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"152.0\" y=\"126.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"268.0\" y=\"126.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"82.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">X</text><text x=\"338.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Y</text></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{9}{2}\\ \\text{cm}\\)",
+            "\\(2\\ \\text{cm}\\)",
+            "\\(\\dfrac{9}{4}\\ \\text{cm}\\)",
+            "\\(8\\ \\text{cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "In similar triangles corresponding sides are in the same ratio. Match \\(OP\\leftrightarrow OX\\) and \\(PQ\\leftrightarrow XY\\).",
+          "steps": [
+            {
+              "explain": "Corresponding sides (same position): \\(OP\\leftrightarrow OX\\) and \\(PQ\\leftrightarrow XY\\) (the sides opposite the matching angles).",
+              "work": "\\(\\dfrac{OP}{OX}=\\dfrac{PQ}{XY}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><polygon points=\"210,30 90,260 330,260\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"162.0\" y1=\"122.0\" x2=\"258.0\" y2=\"122.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"117.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"122.0\" x2=\"205.3\" y2=\"127.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"255.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"214.0\" y1=\"260.0\" x2=\"205.3\" y2=\"265.0\" stroke=\"#1d4ed8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"30.0\" x2=\"162.0\" y2=\"122.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"210.0\" y1=\"30.0\" x2=\"90.0\" y2=\"260.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"162.0\" y1=\"122.0\" x2=\"258.0\" y2=\"122.0\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"260.0\" x2=\"330.0\" y2=\"260.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"148.0\" y=\"76.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OP = 4</text><text x=\"78.0\" y=\"185.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">OX = 6</text><text x=\"210.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">PQ = 3</text><text x=\"210.0\" y=\"282.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">XY = ?</text><text x=\"210.0\" y=\"20.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"152.0\" y=\"126.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"268.0\" y=\"126.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"82.0\" y=\"274.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">X</text><text x=\"338.0\" y=\"274.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"15\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Y</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the lengths.",
+              "work": "\\(\\dfrac{4}{6}=\\dfrac{3}{XY}\\)"
+            },
+            {
+              "explain": "Cross-multiply: \\(4\\times XY=6\\times 3\\).",
+              "work": "\\(4\\times XY=18\\)"
+            },
+            {
+              "explain": "Divide by 4.",
+              "work": "\\(XY=\\dfrac{18}{4}=\\dfrac{9}{2}=4.5\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Check: scale factor \\(\\dfrac{6}{4}=1.5\\) and \\(3\\times1.5=4.5\\) ✓. Option B (2) multiplies instead: \\(\\dfrac{3\\times4}{6}\\) (upside-down ratio).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the length of",
+              "note": "Similar triangles: set the ratios of corresponding sides equal and cross-multiply."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

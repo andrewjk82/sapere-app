@@ -4291,6 +4291,58 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "killara2022-y9-4b-q25a",
+          "type": "mc",
+          "stem": "A can of baked beans is in the shape of a closed cylinder with height \\(h\\ \\text{cm}\\) and radius \\(r\\ \\text{cm}\\), as shown in the diagram. The volume of the can is \\(500\\ \\text{cm}^{3}\\). Find an expression for \\(h\\) in terms of \\(r\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"#f1f5f9\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"80\" y=\"70\" width=\"180\" height=\"200\" fill=\"#f1f5f9\" stroke=\"none\"/><line x1=\"80.0\" y1=\"70.0\" x2=\"80.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"70.0\" x2=\"260.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><ellipse cx=\"170\" cy=\"70\" rx=\"90\" ry=\"26\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"100\" y=\"130\" width=\"140\" height=\"80\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"170.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BAKED</text><text x=\"170.0\" y=\"195.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BEANS</text><line x1=\"170.0\" y1=\"70.0\" x2=\"260.0\" y2=\"70.0\" stroke=\"#1e293b\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"276.0\" y1=\"70.0\" x2=\"276.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"273.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"279.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"279.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"273.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"170.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text></svg>"
+          },
+          "options": [
+            "\\(h=\\dfrac{500}{\\pi r^{2}}\\)",
+            "\\(h=\\dfrac{500}{\\pi r}\\)",
+            "\\(h=500\\pi r^{2}\\)",
+            "\\(h=\\dfrac{\\pi r^{2}}{500}\\)"
+          ],
+          "answer": 0,
+          "hint": "Volume of a cylinder \\(V=\\pi r^{2}h\\). Make \\(h\\) the subject by DIVIDING both sides by \\(\\pi r^{2}\\).",
+          "steps": [
+            {
+              "explain": "Write the volume formula and substitute \\(V=500\\).",
+              "work": "\\(500=\\pi r^{2}h\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 330\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"#f1f5f9\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><rect x=\"80\" y=\"70\" width=\"180\" height=\"200\" fill=\"#f1f5f9\" stroke=\"none\"/><line x1=\"80.0\" y1=\"70.0\" x2=\"80.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"70.0\" x2=\"260.0\" y2=\"270.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><ellipse cx=\"170\" cy=\"270\" rx=\"90\" ry=\"26\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><ellipse cx=\"170\" cy=\"70\" rx=\"90\" ry=\"26\" fill=\"#e2e8f0\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><rect x=\"100\" y=\"130\" width=\"140\" height=\"80\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"170.0\" y=\"165.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BAKED</text><text x=\"170.0\" y=\"195.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BEANS</text><line x1=\"170.0\" y1=\"70.0\" x2=\"260.0\" y2=\"70.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><line x1=\"276.0\" y1=\"70.0\" x2=\"276.0\" y2=\"270.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"273.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"70.0\" x2=\"279.0\" y2=\"75.2\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"279.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"270.0\" x2=\"273.0\" y2=\"264.8\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"170.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"16\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">h</text></svg>"
+              }
+            },
+            {
+              "explain": "To get \\(h\\) alone, divide both sides by everything multiplying it: \\(\\pi r^{2}\\).",
+              "work": "\\(h=\\dfrac{500}{\\pi r^{2}}\\)"
+            },
+            {
+              "explain": "Check with \\(r=5\\): \\(h=\\dfrac{500}{25\\pi}=6.37\\) cm, and \\(\\pi(25)(6.37)=500\\) ✓. Option B forgets to square \\(r\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find an expression for \\(h\\) in terms of \\(r\\)",
+              "note": "Make h the subject: divide the volume by pi r squared."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 9 Mathematics Task 4B (2022)",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }
