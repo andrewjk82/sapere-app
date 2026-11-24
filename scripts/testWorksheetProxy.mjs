@@ -5,7 +5,7 @@
  * Usage: node scripts/testWorksheetProxy.mjs
  */
 import assert from 'node:assert';
-import { createWorksheetHandler, MAX_WORKSHEET_BYTES } from '../api/_lib/worksheetProxy.js';
+import { createWorksheetHandler, MAX_WORKSHEET_BYTES, MAX_STREAM_BYTES } from '../api/_lib/worksheetProxy.js';
 
 const PDF = Buffer.concat([Buffer.from('%PDF-1.7\n'), Buffer.alloc(100, 0x20)]);
 const HTML = Buffer.from('<html>quota exceeded</html>');
@@ -47,7 +47,7 @@ await test('serves an allowed PDF with CDN cache headers', async () => {
   assert.equal(res.headers['content-type'], 'application/pdf');
   assert.match(res.headers['cache-control'], /s-maxage=\d+/);
   assert.ok(Buffer.isBuffer(res.body) && res.body.equals(PDF));
-  assert.deepEqual(fetched, [`https://drive.usercontent.google.com/download?id=${ALLOWED}&export=download`]);
+  assert.deepEqual(fetched, [`https://drive.usercontent.google.com/download?id=${ALLOWED}&export=download&confirm=t`]);
 });
 
 await test('rejects malformed ids without fetching', async () => {
@@ -86,12 +86,25 @@ await test('passes on upstream failures as 502', async () => {
 
 await test('refuses files over the size cap (by header and by body)', async () => {
   const r1 = mockRes();
-  await make({ upstreamOpts: { length: MAX_WORKSHEET_BYTES + 1 } })({ method: 'GET', query: { id: ALLOWED } }, r1);
+  await make({ upstreamOpts: { length: MAX_STREAM_BYTES + 1 } })({ method: 'GET', query: { id: ALLOWED } }, r1);
   assert.equal(r1.statusCode, 413);
   const big = Buffer.concat([Buffer.from('%PDF-'), Buffer.alloc(MAX_WORKSHEET_BYTES)]);
   const r2 = mockRes();
   await make({ body: big, upstreamOpts: { length: 0 } })({ method: 'GET', query: { id: ALLOWED } }, r2);
   assert.equal(r2.statusCode, 413);
+});
+
+await test('streams a PDF bigger than the buffered cap instead of failing', async () => {
+  const big = Buffer.concat([Buffer.from('%PDF-1.7\n'), Buffer.alloc(MAX_WORKSHEET_BYTES + 10, 0x20)]);
+  const chunks = [big.subarray(0, 1000), big.subarray(1000)];
+  let i = 0;
+  const up = { ok: true, status: 200, headers: { get: (k) => (k.toLowerCase() === 'content-length' ? String(big.length) : null) }, body: { getReader: () => ({ read: async () => (i < chunks.length ? { done: false, value: new Uint8Array(chunks[i++]) } : { done: true }), cancel: async () => {} }) } };
+  const written = [];
+  const res = mockRes(); res.write = (b) => { written.push(b); return true; };
+  await createWorksheetHandler({ getAllowedIds: async () => new Set([ALLOWED]), fetchImpl: async () => up })({ method: 'GET', query: { id: ALLOWED } }, res);
+  assert.equal(res.statusCode, 200);
+  assert.equal(res.headers['content-type'], 'application/pdf');
+  assert.ok(Buffer.concat(written).equals(big));
 });
 
 await test('only GET', async () => {

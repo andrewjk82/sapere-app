@@ -5,7 +5,8 @@
 // Only Drive ids registered as a curriculum topic's homeworkPdfUrl are served,
 // so this can't be used as a general proxy.
 
-export const MAX_WORKSHEET_BYTES = 4 * 1024 * 1024; // Vercel function responses cap at 4.5MB
+export const MAX_WORKSHEET_BYTES = 4 * 1024 * 1024; // buffered responses cap at 4.5MB on Vercel; bigger files are streamed
+export const MAX_STREAM_BYTES = 80 * 1024 * 1024;   // streamed responses have no 4.5MB cap
 const UPSTREAM_TIMEOUT_MS = 20000;
 const ID_RE = /^[A-Za-z0-9_-]{10,128}$/;
 
@@ -13,6 +14,38 @@ const fail = (res, status, error) => {
   res.setHeader('Cache-Control', 'no-store');
   return res.status(status).json({ error });
 };
+
+async function streamPdf(res, upstream, declared) {
+  const reader = upstream.body.getReader();
+  let first;
+  try {
+    first = await reader.read();
+  } catch (err) {
+    console.error('[worksheet] drive stream failed:', err?.message || err);
+    return fail(res, 504, 'drive timed out');
+  }
+  const head = first.value ? Buffer.from(first.value.subarray(0, 5)).toString('latin1') : '';
+  if (head !== '%PDF-') { reader.cancel().catch(() => {}); return fail(res, 502, 'not a pdf'); }
+  res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Length', String(declared));
+  res.setHeader('Cache-Control', 'public, max-age=3600');
+  res.status(200);
+  try {
+    let chunk = first;
+    let sent = 0;
+    while (chunk && !chunk.done) {
+      sent += chunk.value.length;
+      if (sent > MAX_STREAM_BYTES) throw new Error('too large');
+      res.write(Buffer.from(chunk.value));
+      chunk = await reader.read();
+    }
+  } catch (err) {
+    console.error('[worksheet] drive stream broke:', err?.message || err);
+    reader.cancel().catch(() => {});
+    return res.destroy ? res.destroy(err) : res.end();
+  }
+  return res.end();
+}
 
 export function createWorksheetHandler({ getAllowedIds, fetchImpl = fetch }) {
   return async function worksheetHandler(req, res) {
@@ -38,13 +71,16 @@ export function createWorksheetHandler({ getAllowedIds, fetchImpl = fetch }) {
       // Drive sometimes accepts the connection and then never sends the body; without a limit the student's
       // "Loading worksheet…" waited the function's full 60s before falling back to Drive's viewer.
       const signal = typeof AbortSignal?.timeout === 'function' ? AbortSignal.timeout(UPSTREAM_TIMEOUT_MS) : undefined;
-      upstream = await fetchImpl(`https://drive.usercontent.google.com/download?id=${id}&export=download`, { redirect: 'follow', signal });
+      upstream = await fetchImpl(`https://drive.usercontent.google.com/download?id=${id}&export=download&confirm=t`, { redirect: 'follow', signal });
     } catch (err) {
       console.error('[worksheet] drive fetch failed:', err?.message || err);
       return fail(res, 502, 'drive unavailable');
     }
     if (!upstream.ok) return fail(res, 502, `drive responded ${upstream.status}`);
-    if (Number(upstream.headers.get('content-length') || 0) > MAX_WORKSHEET_BYTES) return fail(res, 413, 'too large');
+    const declared = Number(upstream.headers.get('content-length') || 0);
+    if (declared > MAX_STREAM_BYTES) return fail(res, 413, 'too large');
+    // Over the buffered cap: stream it through instead of sending the student to Drive's slow page-by-page viewer.
+    if (declared > MAX_WORKSHEET_BYTES && typeof upstream.body?.getReader === 'function') return streamPdf(res, upstream, declared);
 
     let body;
     try {
