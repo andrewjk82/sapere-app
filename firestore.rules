@@ -153,6 +153,11 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Make-up lessons still owed (Class page). Admin-only: names students.
+    match /makeup_classes/{entryId} {
+      allow read, write: if isAdmin();
+    }
+
     // System config — read for all authenticated, write for admin only
     match /system_config/{docId} {
       allow read: if isSignedIn();

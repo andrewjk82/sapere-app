@@ -6,6 +6,7 @@ import useLiveDoc from '../hooks/useLiveDoc';
 import { useLessonNote, useNoteFlush, saveNoteLocal, deleteNoteLocal, flushNotes } from '../utils/classNotes';
 import { localCache } from '../services/localCacheService';
 import ClassMonthCalendar from './ClassMonthCalendar';
+import MakeupClasses from './MakeupClasses';
 import LessonWorkspace from './LessonWorkspace';
 import ErrorBoundary from './ErrorBoundary';
 import ClassHomeworkModal from './ClassHomeworkModal';
@@ -292,6 +293,7 @@ const PaperList = ({ papers }) => (
 
 export default function ClassPage({ students = [], onSelectStudent, onOpenReports }) {
   const [now, setNow] = useState(() => new Date());
+  const [makeupOpen, setMakeupOpen] = useState(false);
   useEffect(() => {
     const tick = () => setNow(new Date());
     const t = window.setInterval(tick, 30000);
@@ -416,11 +418,12 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
     return { key: k, future: k > today, state: k > today ? 'future' : dailyState(summary[studentId], calcEnabled) };
   });
 
+  if (makeupOpen) return <MakeupClasses students={students} onBack={() => setMakeupOpen(false)} />;
   if (upcoming === null) return <div className="cls"><div className="cls-empty">Loading lessons…</div></div>;
   if (!unit) {
     return (
       <div className="cls">
-        <header className="cls-top"><h2 className="cls-title">Class</h2></header>
+        <header className="cls-top"><h2 className="cls-title">Class</h2><button type="button" className="cls-pad-btn" onClick={() => setMakeupOpen(true)}>Make-up</button></header>
         <div className="cls-empty">No lessons in the next 7 days.</div>
       </div>
     );
@@ -485,6 +488,7 @@ export default function ClassPage({ students = [], onSelectStudent, onOpenReport
         <button type="button" className={`cls-pad-btn${padOpen ? ' is-on' : ''}${note.exists ? ' has-notes' : ''}`} onClick={() => setPadOpen((v) => !v)}>
           Notes
         </button>
+        <button type="button" className="cls-pad-btn cls-makeup-btn" onClick={() => setMakeupOpen(true)}>Make-up</button>
       </header>
 
       {padOpen && <NotePad key={`pad:${unit.key}`} unit={unit} onClose={() => setPadOpen(false)} />}

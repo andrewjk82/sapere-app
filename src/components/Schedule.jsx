@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
-import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List, BookOpen, PenLine } from 'lucide-react';
+import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, RotateCcw, X, Save, Check, List, BookOpen, PenLine } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, writeBatch } from 'firebase/firestore';
+import { addMakeupFromSession } from '../services/makeupService';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useProfile } from '../context/ProfileContext';
@@ -660,6 +661,13 @@ const Schedule = ({ students = [] }) => {
     }
   };
 
+  // ── Add to the Make-up list (Class page). The lesson itself is left as it is. ──
+  const handleMakeup = (session) => {
+    if (!isAdmin) return;
+    showToast(`${session.studentName || session.groupStudentNames?.[0] || 'Student'} added to Make-up.`, 'success');
+    addMakeupFromSession(session).catch((e) => { console.error(e); showToast('Could not add to Make-up.', 'error'); });
+  };
+
   // ── Delete session ─────────────────────────────────────────────────────────
   const handleDeleteSession = async (session, choice) => {
     if (!isAdmin) return;
@@ -1316,6 +1324,13 @@ const Schedule = ({ students = [] }) => {
                             >
                               {s.studentName}
                               {isAdmin && (
+                                <button type="button" title="Add to Make-up" aria-label={`Add ${s.studentName} to Make-up`}
+                                  onClick={(e) => { e.stopPropagation(); handleMakeup(s); }}
+                                  style={{ marginLeft: '8px', background: 'rgba(255,255,255,0.25)', border: 'none', borderRadius: '8px', color: 'white', padding: '3px 8px', fontSize: '0.7rem', fontWeight: 800, cursor: 'pointer' }}>
+                                  Make-up
+                                </button>
+                              )}
+                              {isAdmin && (
                                 <button
                                   onClick={async (e) => {
                                     e.stopPropagation();
@@ -1581,6 +1596,11 @@ const Schedule = ({ students = [] }) => {
                     >
                       <Save size={20} /> {isSaving ? 'Saving...' : 'Save Changes'}
                     </button>
+                    {!selectedSession.isGroupedClass && (
+                      <button type="button" disabled={isSaving} onClick={() => handleMakeup(selectedSession)} style={{ padding: '18px', backgroundColor: '#eef2ff', color: '#4f46e5', borderRadius: '18px', border: 'none', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '6px', cursor: isSaving ? 'not-allowed' : 'pointer' }}>
+                        <RotateCcw size={18} /> Make-up
+                      </button>
+                    )}
                     <button disabled={isSaving} onClick={() => selectedSession.groupId ? setDeleteChoiceOpen(selectedSession) : handleDeleteSession(selectedSession, 'single')} style={{ padding: '18px', backgroundColor: '#fff1f2', color: '#f43f5e', borderRadius: '18px', border: 'none', cursor: isSaving ? 'not-allowed' : 'pointer' }}>
                       <Trash2 size={20} />
                     </button>
