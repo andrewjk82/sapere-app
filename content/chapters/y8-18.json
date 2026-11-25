@@ -2612,6 +2612,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Among the four points \\(A(0, 0), \\; B(2, 0), \\; C(0, -2), \\; D(-3, 4)\\), which point lies in the second quadrant (left of the \\(y\\)-axis and above the \\(x\\)-axis)?",
+          "options": [
+            "\\(A(0, 0)\\)",
+            "\\(B(2, 0)\\)",
+            "\\(C(0, -2)\\)",
+            "\\(D(-3, 4)\\)"
+          ],
+          "answer": 3,
+          "hint": "Points in the second quadrant have a NEGATIVE \\(x\\)-coordinate and a POSITIVE \\(y\\)-coordinate: \\((-, +)\\)!",
+          "keyPoints": [
+            {
+              "text": "second quadrant",
+              "note": "Q2 has x < 0 and y > 0 → D(−3, 4)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the signs of each point: \\(A(0, 0)\\) is at the origin, \\(B(2, 0)\\) lies on the \\(x\\)-axis, and \\(C(0, -2)\\) lies on the \\(y\\)-axis.",
+              "work": "\\(A: \\text{origin}, \\; B: x\\text{-axis}, \\; C: y\\text{-axis}\\)"
+            },
+            {
+              "explain": "The second quadrant contains points with \\(x < 0\\) (left) and \\(y > 0\\) (up).",
+              "work": "\\(D(-3, 4): x = -3 < 0, \\; y = 4 > 0\\)"
+            },
+            {
+              "explain": "Thus \\(D(-3, 4)\\) is \\(3\\) units left and \\(4\\) units up, squarely in Quadrant 2.",
+              "work": "\\(D(-3, 4) \\in \\text{Quadrant 2}\\)"
+            },
+            {
+              "explain": "Therefore, the correct point is \\(D(-3, 4)\\).",
+              "work": "\\(\\text{Answer: } D(-3, 4)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -5451,6 +5491,252 @@
             {
               "explain": "Therefore, the answer is \\(\\$98\\).",
               "work": "\\(\\$98\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is NOT a linear relationship?",
+          "options": [
+            "\\(y = x\\)",
+            "\\(y = 2x - 1\\)",
+            "\\(x = 3x + 1\\)",
+            "\\(y = x^2\\)"
+          ],
+          "answer": 3,
+          "hint": "A linear equation only has variables to the power \\(1\\) — which option has a squared term (\\(x^2\\))?",
+          "keyPoints": [
+            {
+              "text": "NOT a linear relationship",
+              "note": "y = x² has power 2 (parabola/quadratic), not linear."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In a linear relationship, every variable has an index (power) of at most \\(1\\).",
+              "work": "\\(\\text{Linear: highest power} = 1\\)"
+            },
+            {
+              "explain": "Check each option: \\(y = x\\), \\(y = 2x - 1\\), and \\(x = 3x + 1\\) (which simplifies to vertical line \\(x = -\\tfrac{1}{2}\\)) all have degree \\(1\\).",
+              "work": "\\(y = x^2 \\text{ has power } 2\\)"
+            },
+            {
+              "explain": "\\(y = x^2\\) is quadratic (graphs as a curved parabola, not a straight line).",
+              "work": "\\(y = x^2 \\text{ is non-linear}\\)"
+            },
+            {
+              "explain": "Therefore, \\(y = x^2\\) is NOT a linear relationship.",
+              "work": "\\(\\text{Answer: } y = x^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q18a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(y = 3x - 1\\), complete the table of values for \\(x = -1, \\; 0, \\; 1, \\; 2\\). What are the corresponding \\(y\\) values?",
+          "options": [
+            "\\(-4, \\; -1, \\; 2, \\; 5\\)",
+            "\\(-2, \\; -1, \\; 2, \\; 5\\)",
+            "\\(-4, \\; 1, \\; 2, \\; 5\\)",
+            "\\(-4, \\; -1, \\; 3, \\; 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute each \\(x\\) into \\(y = 3x - 1\\) (start with \\(x = -1 \\implies 3(-1) - 1 = -4\\), and add \\(+3\\) each step)!",
+          "keyPoints": [
+            {
+              "text": "y = 3x - 1",
+              "note": "x = −1,0,1,2 → y = −4,−1,2,5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(x = -1\\): \\(y = 3(-1) - 1 = -3 - 1 = -4\\).",
+              "work": "\\(x = -1 \\implies y = -4\\)"
+            },
+            {
+              "explain": "Substitute \\(x = 0\\): \\(y = 3(0) - 1 = -1\\).",
+              "work": "\\(x = 0 \\implies y = -1\\)"
+            },
+            {
+              "explain": "Substitute \\(x = 1\\) and \\(x = 2\\): \\(3(1) - 1 = 2\\) and \\(3(2) - 1 = 5\\).",
+              "work": "\\(x = 1 \\implies y = 2; \\quad x = 2 \\implies y = 5\\)"
+            },
+            {
+              "explain": "Therefore, the \\(y\\) values are \\(-4, -1, 2, 5\\).",
+              "work": "\\(-4, \\; -1, \\; 2, \\; 5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the points \\((-1, -4), (0, -1), (1, 2), (2, 5)\\) for \\(y = 3x - 1\\), which statement correctly describes its graph?",
+          "options": [
+            "A straight line crossing the \\(y\\)-axis at \\((0, -1)\\) with gradient \\(3\\).",
+            "A straight line crossing the \\(y\\)-axis at \\((0, 3)\\) with gradient \\(-1\\).",
+            "A straight line crossing the \\(y\\)-axis at \\((0, 1)\\) with gradient \\(3\\).",
+            "A straight line passing through the origin \\((0, 0)\\) with gradient \\(3\\)."
+          ],
+          "answer": 0,
+          "hint": "In \\(y = mx + b\\), \\(b = -1\\) gives the \\(y\\)-intercept \\((0, -1)\\) and \\(m = 3\\) is the gradient!",
+          "keyPoints": [
+            {
+              "text": "y = 3x - 1",
+              "note": "y-intercept (0, −1) and gradient m = 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Plot \\((-1, -4), (0, -1), (1, 2), (2, 5)\\) on the Cartesian plane and join them with a straight line.",
+              "work": "\\(y = 3x - 1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 250\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"250\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"34\" y1=\"28\" x2=\"34\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"66\" y1=\"28\" x2=\"66\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"98\" y1=\"28\" x2=\"98\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"130\" y1=\"28\" x2=\"130\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"162\" y1=\"28\" x2=\"162\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"194\" y1=\"28\" x2=\"194\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"226\" y1=\"28\" x2=\"226\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"208\" x2=\"226\" y2=\"208\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"178\" x2=\"226\" y2=\"178\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"148\" x2=\"226\" y2=\"148\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"118\" x2=\"226\" y2=\"118\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"88\" x2=\"226\" y2=\"88\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"58\" x2=\"226\" y2=\"58\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"34\" y1=\"28\" x2=\"226\" y2=\"28\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"24.400000000000006\" y1=\"118\" x2=\"235.6\" y2=\"118\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"130\" y1=\"22\" x2=\"130\" y2=\"214\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"242\" y=\"122\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">x</text><text x=\"137\" y=\"26\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">y</text><text x=\"66\" y=\"131\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"98\" y=\"131\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−1</text><text x=\"162\" y=\"131\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">1</text><text x=\"194\" y=\"131\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"124\" y=\"181\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−4</text><text x=\"124\" y=\"151\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">−2</text><text x=\"124\" y=\"91\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">2</text><text x=\"124\" y=\"61\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">4</text><text x=\"124\" y=\"31\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9\" fill=\"#475569\">6</text><line x1=\"78.8\" y1=\"205\" x2=\"203.6\" y2=\"29.5\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><circle cx=\"98\" cy=\"178\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"130\" cy=\"133\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"162\" cy=\"88\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><circle cx=\"194\" cy=\"43\" r=\"4\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.2\"/><rect x=\"162\" y=\"64\" width=\"66\" height=\"19\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"195\" y=\"78\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" fill=\"#1d4ed8\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">y</tspan> = 3<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> − 1</text><text x=\"130\" y=\"243\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">y-intercept (0, −1), gradient +3</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the \\(y\\)-intercept where \\(x = 0\\): \\((0, -1)\\).",
+              "work": "\\(y\\text{-intercept} = (0, -1)\\)"
+            },
+            {
+              "explain": "Calculate the gradient: for every \\(+1\\) in \\(x\\), \\(y\\) increases by \\(+3\\), so \\(m = 3\\).",
+              "work": "\\(m = \\dfrac{2 - (-1)}{1 - 0} = 3\\)"
+            },
+            {
+              "explain": "Therefore, it is a straight line crossing the \\(y\\)-axis at \\((0, -1)\\) with gradient \\(3\\).",
+              "work": "\\(\\text{y-intercept } (0, -1), \\text{ gradient } 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q25a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Moash is walking to school. He starts \\(1800\\text{ m}\\) away from school and walks at \\(90\\text{ m/min}\\). Using \\(t\\) for time in minutes and \\(d\\) for distance from school in metres, what are the values of \\(d\\) at \\(t = 0, \\; 5, \\; 10, \\; 15, \\; 20\\)?",
+          "options": [
+            "\\(1800, \\; 1350, \\; 900, \\; 450, \\; 0\\)",
+            "\\(1800, \\; 1710, \\; 1620, \\; 1530, \\; 1440\\)",
+            "\\(0, \\; 450, \\; 900, \\; 1350, \\; 1800\\)",
+            "\\(1800, \\; 1400, \\; 1000, \\; 600, \\; 200\\)"
+          ],
+          "answer": 0,
+          "hint": "In every \\(5\\) minutes, Moash walks \\(5 \\times 90 = 450\\text{ m}\\) closer to school — subtract \\(450\\) each step starting from \\(1800\\)!",
+          "keyPoints": [
+            {
+              "text": "1800\\text{ m}\\) away",
+              "note": "Every 5 min subtracts 450 m: 1800, 1350, 900, 450, 0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate how far Moash walks in \\(5\\text{ minutes}\\): \\(5 \\times 90 = 450\\text{ m}\\).",
+              "work": "\\(5 \\times 90 = 450\\text{ m per 5 min}\\)"
+            },
+            {
+              "explain": "Start at \\(t = 0 \\implies d = 1800\\text{ m}\\), and subtract \\(450\\text{ m}\\) for each \\(5\\text{-minute}\\) step.",
+              "work": "\\(t = 5 \\to 1350; \\quad t = 10 \\to 900\\)"
+            },
+            {
+              "explain": "Continue to \\(t = 15\\) and \\(t = 20\\): \\(900 - 450 = 450\\) and \\(450 - 450 = 0\\text{ m}\\) (arrives at school!).",
+              "work": "\\(t = 15 \\to 450; \\quad t = 20 \\to 0\\)"
+            },
+            {
+              "explain": "Therefore, the distances are \\(1800, 1350, 900, 450, 0\\).",
+              "work": "\\(1800, \\; 1350, \\; 900, \\; 450, \\; 0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q25c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Moash starts \\(1800\\text{ m}\\) away from school and walks toward school at \\(90\\text{ m/min}\\). Find an equation that relates his distance \\(d\\) (in metres) from school and time \\(t\\) (in minutes).",
+          "options": [
+            "\\(d = 1800 - 90t\\)",
+            "\\(d = 1800 + 90t\\)",
+            "\\(d = 90t\\)",
+            "\\(d = 90 - 1800t\\)"
+          ],
+          "answer": 0,
+          "hint": "Start at \\(1800\\text{ m}\\) (vertical intercept) and SUBTRACT \\(90\\text{ m}\\) for each minute \\(t\\) walked!",
+          "keyPoints": [
+            {
+              "text": "relates his distance \\(d\\)",
+              "note": "Starts at 1800, decreases by 90 per min → d = 1800 − 90t."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the starting distance at \\(t = 0\\): \\(b = 1800\\text{ m}\\).",
+              "work": "\\(b = 1800\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 196\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"196\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"96.4\" y1=\"26\" x2=\"96.4\" y2=\"152\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"138.8\" y1=\"26\" x2=\"138.8\" y2=\"152\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"181.2\" y1=\"26\" x2=\"181.2\" y2=\"152\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"223.6\" y1=\"26\" x2=\"223.6\" y2=\"152\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"266.0\" y1=\"26\" x2=\"266.0\" y2=\"152\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"120.5\" x2=\"266\" y2=\"120.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"89.0\" x2=\"266\" y2=\"89.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"57.5\" x2=\"266\" y2=\"57.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"26.0\" x2=\"266\" y2=\"26.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"54\" y1=\"152\" x2=\"272\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"54\" y1=\"152\" x2=\"54\" y2=\"20\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"96.4\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">5</text><text x=\"138.8\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">10</text><text x=\"181.2\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">15</text><text x=\"223.6\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">20</text><text x=\"266.0\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">25</text><text x=\"48\" y=\"124.0\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">500</text><text x=\"48\" y=\"92.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">1000</text><text x=\"48\" y=\"61.0\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">1500</text><text x=\"48\" y=\"29.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">2000</text><line x1=\"54\" y1=\"38.599999999999994\" x2=\"223.60000000000002\" y2=\"152\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><circle cx=\"54.0\" cy=\"38.6\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"96.4\" cy=\"66.9\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"138.8\" cy=\"95.3\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"181.2\" cy=\"123.7\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"223.6\" cy=\"152.0\" r=\"3.5\" fill=\"#dc2626\"/><rect x=\"136\" y=\"42\" width=\"88\" height=\"19\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"180\" y=\"56\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" fill=\"#1d4ed8\"><tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">d</tspan> = 1800 − 90<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">t</tspan></text><text x=\"145\" y=\"189\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Starts at 1800 m, decreases by 90 m/min</text></svg>"
+              }
+            },
+            {
+              "explain": "Since Moash walks TOWARD school at \\(90\\text{ m/min}\\), his distance decreases by \\(90\\) every minute (gradient \\(m = -90\\)).",
+              "work": "\\(m = -90\\text{ m/min}\\)"
+            },
+            {
+              "explain": "Combine into \\(d = b + mt\\): \\(d = 1800 - 90t\\).",
+              "work": "\\(d = 1800 - 90t\\)"
+            },
+            {
+              "explain": "Check at \\(t = 20\\): \\(d = 1800 - 90(20) = 0\\text{ m}\\). Exact!",
+              "work": "\\(\\text{Answer: } d = 1800 - 90t\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q25d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using Moash's distance rule \\(d = 1800 - 90t\\), how far is Moash from school after walking for \\(1.5\\text{ minutes}\\)?",
+          "options": [
+            "\\(1665\\text{ m}\\)",
+            "\\(1710\\text{ m}\\)",
+            "\\(135\\text{ m}\\)",
+            "\\(1650\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(t = 1.5\\) into \\(d = 1800 - 90t\\): first multiply \\(90 \\times 1.5 = 135\\), then subtract from \\(1800\\)!",
+          "keyPoints": [
+            {
+              "text": "1.5\\text{ minutes}",
+              "note": "d = 1800 − 90(1.5) = 1800 − 135 = 1665 m."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(t = 1.5\\) into \\(d = 1800 - 90t\\).",
+              "work": "\\(d = 1800 - 90 \\times 1.5\\)"
+            },
+            {
+              "explain": "Multiply first (BODMAS): \\(90 \\times 1.5 = 90 + 45 = 135\\text{ m}\\).",
+              "work": "\\(90 \\times 1.5 = 135\\)"
+            },
+            {
+              "explain": "Subtract from \\(1800\\): \\(1800 - 135 = 1665\\text{ m}\\).",
+              "work": "\\(1800 - 135 = 1665\\text{ m}\\)"
+            },
+            {
+              "explain": "Therefore, Moash is \\(1665\\text{ m}\\) from school.",
+              "work": "\\(\\text{Answer: } 1665\\text{ m}\\)"
             }
           ],
           "timeLimit": 60,

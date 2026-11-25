@@ -5464,6 +5464,138 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 128\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"128\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"42,102 164,102 248,34 126,34\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><text x=\"86\" y=\"92\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">33°</text><text x=\"136\" y=\"58\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"800\" fill=\"#0f172a\">x</text></svg>"
           }
+        },
+        {
+          "id": "khs22-y8-t4a-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What type of quadrilateral has all sides equal in length?",
+          "options": [
+            "A kite",
+            "A rhombus",
+            "A rectangle",
+            "A trapezium"
+          ],
+          "answer": 1,
+          "hint": "A rhombus (and a square) has all \\(4\\) sides equal in length!",
+          "keyPoints": [
+            {
+              "text": "all sides equal",
+              "note": "A rhombus has 4 equal sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Review side properties: a kite has \\(2\\) pairs of equal adjacent sides; a rectangle has opposite sides equal; a trapezium only needs \\(1\\) pair of parallel sides.",
+              "work": "\\(\\text{Rhombus: all 4 sides equal}\\)"
+            },
+            {
+              "explain": "A rhombus is defined as a quadrilateral with all four sides equal in length.",
+              "work": "\\(AB = BC = CD = DA\\)"
+            },
+            {
+              "explain": "Select \"A rhombus\".",
+              "work": "\\(\\text{A rhombus}\\)"
+            },
+            {
+              "explain": "Therefore, the correct answer is A rhombus.",
+              "work": "\\(\\text{Answer: A rhombus}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q22a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "\\(RICE\\) is a rhombus whose diagonals \\(CR\\) and \\(EI\\) meet at \\(O\\), with \\(CO = 12\\text{ cm}\\) and \\(OI = 5\\text{ cm}\\). What is the value of \\(y\\), the length of \\(OR\\)?",
+          "options": [
+            "\\(y = 5\\text{ cm}\\)",
+            "\\(y = 12\\text{ cm}\\)",
+            "\\(y = 13\\text{ cm}\\)",
+            "\\(y = 24\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "The diagonals of a rhombus BISECT each other at \\(O\\), so \\(OR\\) equals \\(CO\\)!",
+          "keyPoints": [
+            {
+              "text": "length of \\(OR\\)",
+              "note": "Diagonals of a rhombus bisect each other: OR = CO = 12 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Since a rhombus is a parallelogram, its diagonals bisect each other at their intersection point \\(O\\).",
+              "work": "\\(OR = CO\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 206\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,90 156,90 110,156\" fill=\"#dbeafe\" fill-opacity=\"0.7\"/><polygon points=\"110,24 156,90 110,156 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"24\" x2=\"110\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"64\" y1=\"90\" x2=\"156\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><rect x=\"110\" y=\"90\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"110\" y=\"17\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"166\" y=\"94\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">I</text><text x=\"110\" y=\"172\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">R</text><text x=\"54\" y=\"94\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"103\" y=\"102\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">O</text><text x=\"118\" y=\"62\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">12</text><text x=\"132\" y=\"104\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">5</text><text x=\"118\" y=\"126\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">y=12</text><text x=\"144\" y=\"132\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">z=13</text><text x=\"110\" y=\"199\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Diagonals bisect at 90°: y = 12 cm, z = √(12² + 5²) = 13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the given length \\(CO = 12\\text{ cm}\\).",
+              "work": "\\(y = 12\\text{ cm}\\)"
+            },
+            {
+              "explain": "Confirm: diagonal \\(CR\\) has total length \\(24\\text{ cm}\\), split into \\(12\\text{ cm}\\) and \\(12\\text{ cm}\\).",
+              "work": "\\(CO = OR = 12\\text{ cm}\\)"
+            },
+            {
+              "explain": "Therefore, \\(y = 12\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } y = 12\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 180\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"180\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,24 156,90 110,156 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"24\" x2=\"110\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"64\" y1=\"90\" x2=\"156\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><text x=\"110\" y=\"17\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"166\" y=\"94\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">I</text><text x=\"110\" y=\"172\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">R</text><text x=\"54\" y=\"94\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"103\" y=\"102\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">O</text><text x=\"118\" y=\"62\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">12</text><text x=\"132\" y=\"104\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">5</text><text x=\"118\" y=\"126\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">y</text><text x=\"144\" y=\"132\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">z</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y8-t4a-q22b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In rhombus \\(RICE\\) where diagonals \\(CR\\) and \\(EI\\) intersect at \\(O\\), why is \\(\\triangle ROI\\) a right-angled triangle?",
+          "options": [
+            "Because the diagonals of a rhombus are perpendicular (meet at \\(90^\\circ\\)).",
+            "Because all interior angles of a rhombus are \\(90^\\circ\\).",
+            "Because the diagonals of a rhombus are equal in length.",
+            "Because \\(OI = OR\\)."
+          ],
+          "answer": 0,
+          "hint": "Think about the angle at which the two diagonals \\(CR\\) and \\(EI\\) cross inside a rhombus!",
+          "keyPoints": [
+            {
+              "text": "right-angled triangle",
+              "note": "Diagonals of a rhombus are perpendicular → ∠ROI = 90°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the diagonal property of a rhombus: the two diagonals bisect each other at right angles (\\(90^\\circ\\)).",
+              "work": "\\(CR \\perp EI \\implies \\angle ROI = 90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 206\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"206\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,90 156,90 110,156\" fill=\"#dbeafe\" fill-opacity=\"0.7\"/><polygon points=\"110,24 156,90 110,156 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"24\" x2=\"110\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"64\" y1=\"90\" x2=\"156\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><rect x=\"110\" y=\"90\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><text x=\"110\" y=\"17\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"166\" y=\"94\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">I</text><text x=\"110\" y=\"172\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">R</text><text x=\"54\" y=\"94\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"103\" y=\"102\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">O</text><text x=\"118\" y=\"62\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">12</text><text x=\"132\" y=\"104\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">5</text><text x=\"118\" y=\"126\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">y=12</text><text x=\"144\" y=\"132\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">z=13</text><text x=\"110\" y=\"199\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Diagonals CR and EI meet at 90° → ΔROI is right-angled at O</text></svg>"
+              }
+            },
+            {
+              "explain": "Therefore, \\(\\angle ROI = 90^\\circ\\) (red right-angle square at \\(O\\)).",
+              "work": "\\(\\angle ROI = 90^\\circ\\)"
+            },
+            {
+              "explain": "A triangle with a \\(90^\\circ\\) angle is a right-angled triangle.",
+              "work": "\\(\\triangle ROI \\text{ is right-angled at } O\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\triangle ROI\\) is right-angled because the diagonals of a rhombus are perpendicular.",
+              "work": "\\(\\text{Answer: Diagonals are perpendicular}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 180\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"180\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"110,24 156,90 110,156 64,90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"24\" x2=\"110\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><line x1=\"64\" y1=\"90\" x2=\"156\" y2=\"90\" stroke=\"#0f172a\" stroke-width=\"1.4\" stroke-dasharray=\"4,3\"/><text x=\"110\" y=\"17\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"166\" y=\"94\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">I</text><text x=\"110\" y=\"172\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">R</text><text x=\"54\" y=\"94\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"103\" y=\"102\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\">O</text><text x=\"118\" y=\"62\" text-anchor=\"start\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">12</text><text x=\"132\" y=\"104\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">5</text><text x=\"118\" y=\"126\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">y</text><text x=\"144\" y=\"132\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\">z</text></svg>"
+          }
         }
       ]
     },
@@ -13726,6 +13858,86 @@
             {
               "explain": "Therefore, the answer is Kite.",
               "work": "\\(\\text{Kite}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q15c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Since quadrilateral \\(BCDE\\) has exactly one pair of parallel sides (\\(BE \\parallel CD\\)), what is the name of this quadrilateral?",
+          "options": [
+            "Trapezium",
+            "Parallelogram",
+            "Rhombus",
+            "Kite"
+          ],
+          "answer": 0,
+          "hint": "A quadrilateral with ONE pair of parallel sides is called a trapezium!",
+          "keyPoints": [
+            {
+              "text": "one pair of parallel sides",
+              "note": "Trapezium has one pair of parallel sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall quadrilateral definitions: a parallelogram has \\(2\\) pairs of parallel sides, while a trapezium has \\(1\\) pair of parallel sides.",
+              "work": "\\(BE \\parallel CD, \\quad BC \\nparallel ED\\)"
+            },
+            {
+              "explain": "Since \\(BCDE\\) has only \\(BE \\parallel CD\\), it is a trapezium.",
+              "work": "\\(\\text{Trapezium}\\)"
+            },
+            {
+              "explain": "Eliminate parallelogram, rhombus (both need \\(2\\) parallel pairs), and kite.",
+              "work": "\\(\\text{Trapezium}\\)"
+            },
+            {
+              "explain": "Therefore, quadrilateral \\(BCDE\\) is a trapezium.",
+              "work": "\\(\\text{Answer: Trapezium}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine whether each statement is True (T) or False (F), in order: (1) The diagonals of a rectangle are always perpendicular; (2) The diagonals of a rectangle are always equal in length; (3) The diagonals of a kite are always perpendicular; (4) The diagonals of a rhombus are always equal in length.",
+          "options": [
+            "F, T, T, F",
+            "T, T, T, F",
+            "F, T, F, F",
+            "F, T, T, T"
+          ],
+          "answer": 0,
+          "hint": "Test a long thin rectangle (diagonals equal but NOT \\(90^\\circ\\)) and a skinny rhombus (diagonals \\(90^\\circ\\) but NOT equal)!",
+          "keyPoints": [
+            {
+              "text": "True (T) or False (F)",
+              "note": "(1) F, (2) T, (3) T, (4) F."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Statement (1): A non-square rectangle's diagonals do NOT meet at \\(90^\\circ\\) → False (F).",
+              "work": "\\((1) \\text{ False (only squares have } \\perp \\text{ rectangle diagonals)}\\)"
+            },
+            {
+              "explain": "Statement (2): Every rectangle's diagonals are equal in length (by Pythagoras on matching sides) → True (T).",
+              "work": "\\((2) \\text{ True}\\)"
+            },
+            {
+              "explain": "Statement (3): A kite's diagonals ALWAYS intersect at \\(90^\\circ\\) → True (T).",
+              "work": "\\((3) \\text{ True}\\)"
+            },
+            {
+              "explain": "Statement (4): A non-square rhombus has one longer and one shorter diagonal → False (F). Order: F, T, T, F.",
+              "work": "\\(\\text{Answer: F, T, T, F}\\)"
             }
           ],
           "timeLimit": 60,

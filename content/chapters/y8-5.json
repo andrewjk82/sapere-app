@@ -1617,6 +1617,98 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 184\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"76\" y1=\"26\" x2=\"76\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"166\" y1=\"58\" x2=\"166\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"26\" x2=\"166\" y2=\"58\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"76\" y1=\"150\" x2=\"232\" y2=\"63\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"71,92 76,84 81,92\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><polyline points=\"161,84 166,76 171,84\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.7\"/><text x=\"98\" y=\"54\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">72°</text><text x=\"148\" y=\"72\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">x</text><text x=\"96\" y=\"130\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">59°</text><text x=\"148\" y=\"128\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"800\" fill=\"#0f172a\">y</text><text x=\"188\" y=\"114\" font-family=\"Georgia,serif\" font-size=\"12\" font-weight=\"700\">121°</text></svg>"
           }
+        },
+        {
+          "id": "khs22-y8-t4a-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the pronumeral \\(a\\) in the parallel-lines diagram shown.",
+          "options": [
+            "\\(a = 40^\\circ\\)",
+            "\\(a = 50^\\circ\\)",
+            "\\(a = 130^\\circ\\)",
+            "\\(a = 140^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(50^\\circ\\) and \\(a\\) occupy the exact same matching position (above each parallel line, right of the transversal) — corresponding angles on parallel lines are EQUAL!",
+          "keyPoints": [
+            {
+              "text": "pronumeral \\(a\\)",
+              "note": "Corresponding angles on parallel lines are equal: a = 50°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the angle pair: \\(a\\) (green) and \\(50^\\circ\\) (blue) are in matching upper-right positions at the two parallel lines.",
+              "work": "\\(a = 50^\\circ \\quad (\\text{corresponding angles on } \\parallel\\text{ lines})\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 168\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 118.0 52.0 L 140.0 52.0 A 22 22 0 0 0 132.1 35.1 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 140.0 52.0 A 22 22 0 0 0 132.1 35.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 76.0 102.0 L 98.0 102.0 A 22 22 0 0 0 90.1 85.1 Z\" fill=\"#10b981\" fill-opacity=\"0.34\"/><path d=\"M 98.0 102.0 A 22 22 0 0 0 90.1 85.1\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"36\" y1=\"52\" x2=\"214\" y2=\"52\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"36\" y1=\"102\" x2=\"214\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"176,48 182,52 176,56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"176,98 182,102 176,106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"126\" x2=\"146\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"150\" y=\"46\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">50°</text><text x=\"108\" y=\"96\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">a = 50°</text><text x=\"125\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Corresponding (F) angles on parallel lines are equal: a = 50°</text></svg>"
+              }
+            },
+            {
+              "explain": "Corresponding angles on parallel lines are always equal.",
+              "work": "\\(a = 50^\\circ\\)"
+            },
+            {
+              "explain": "Verify: both angles are acute and identical.",
+              "work": "\\(50^\\circ = 50^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(a = 50^\\circ\\).",
+              "work": "\\(\\text{Answer: } a = 50^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 142\" width=\"65%\" height=\"auto\" style=\"max-width:325px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"250\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 118.0 52.0 L 140.0 52.0 A 22 22 0 0 0 132.1 35.1 Z\" fill=\"#3b82f6\" fill-opacity=\"0.22\"/><path d=\"M 140.0 52.0 A 22 22 0 0 0 132.1 35.1\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 76.0 102.0 L 98.0 102.0 A 22 22 0 0 0 90.1 85.1 Z\" fill=\"#10b981\" fill-opacity=\"0.22\"/><path d=\"M 98.0 102.0 A 22 22 0 0 0 90.1 85.1\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"36\" y1=\"52\" x2=\"214\" y2=\"52\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"36\" y1=\"102\" x2=\"214\" y2=\"102\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polyline points=\"176,48 182,52 176,56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><polyline points=\"176,98 182,102 176,106\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"56\" y1=\"126\" x2=\"146\" y2=\"18\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"150\" y=\"46\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">50°</text><text x=\"108\" y=\"96\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\">a</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y8-t4a-q15b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In quadrilateral \\(BCDE\\) (with \\(\\angle B = 70^\\circ, \\; \\angle E = 100^\\circ, \\; \\angle D = 80^\\circ, \\; \\angle C = 110^\\circ\\)), which pair of sides are parallel?",
+          "options": [
+            "\\(BE \\parallel CD\\), because co-interior angles \\(\\angle BED + \\angle EDC = 100^\\circ + 80^\\circ = 180^\\circ\\).",
+            "\\(BC \\parallel ED\\), because \\(70^\\circ + 100^\\circ = 170^\\circ\\).",
+            "Both pairs of opposite sides are parallel.",
+            "No sides are parallel."
+          ],
+          "answer": 0,
+          "hint": "Check which adjacent pair of angles adds to \\(180^\\circ\\) (co-interior angles): \\(100^\\circ + 80^\\circ = 180^\\circ\\) and \\(70^\\circ + 110^\\circ = 180^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "pair of sides are parallel",
+              "note": "∠E + ∠D = 100° + 80° = 180° (co-interior) → BE ∥ CD."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the adjacent angles along side \\(ED\\): \\(\\angle BED + \\angle EDC = 100^\\circ + 80^\\circ = 180^\\circ\\).",
+              "work": "\\(\\angle BED + \\angle EDC = 100^\\circ + 80^\\circ = 180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 176\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,48 184,30 212,108 96,124\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"56\" y1=\"48\" x2=\"184\" y2=\"30\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"96\" y1=\"124\" x2=\"212\" y2=\"108\" stroke=\"#2563eb\" stroke-width=\"3\"/><text x=\"74\" y=\"64\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">70°</text><text x=\"172\" y=\"50\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">100°</text><text x=\"192\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">80°</text><text x=\"44\" y=\"52\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"220\" y=\"114\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"90\" y=\"138\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"135\" y=\"169\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">100° + 80° = 180° (co-interior) → BE ∥ CD (blue)</text></svg>"
+              }
+            },
+            {
+              "explain": "Since these co-interior angles are supplementary (\\(180^\\circ\\)), the two sides \\(BE\\) and \\(CD\\) (blue) are parallel.",
+              "work": "\\(BE \\parallel CD\\)"
+            },
+            {
+              "explain": "Check the other pair \\(BC\\) and \\(ED\\): \\(70^\\circ + 100^\\circ = 170^\\circ \\neq 180^\\circ\\), so \\(BC \\nparallel ED\\).",
+              "work": "\\(70^\\circ + 100^\\circ = 170^\\circ \\neq 180^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(BE \\parallel CD\\).",
+              "work": "\\(\\text{Answer: } BE \\parallel CD\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 150\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,48 184,30 212,108 96,124\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"64\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">70°</text><text x=\"172\" y=\"50\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">100°</text><text x=\"192\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">80°</text><text x=\"44\" y=\"52\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"220\" y=\"114\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"90\" y=\"138\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text></svg>"
+          }
         }
       ]
     },
@@ -2146,6 +2238,138 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 148\" width=\"65%\" height=\"auto\" style=\"max-width:377px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"290\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,30 114,122 238,122\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><path d=\"M 106 107 A 17 17 0 0 1 131 122 L 114 122 Z\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"1.2\"/><text x=\"92\" y=\"66\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">35°</text><text x=\"192\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">27°</text><text x=\"52\" y=\"32\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">A</text><text x=\"106\" y=\"138\" text-anchor=\"end\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">B</text><text x=\"246\" y=\"132\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13.5\" font-weight=\"700\">C</text></svg>"
           }
+        },
+        {
+          "id": "khs22-y8-t4a-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the interior angle sum of a triangle?",
+          "options": [
+            "\\(90^\\circ\\)",
+            "\\(180^\\circ\\)",
+            "\\(270^\\circ\\)",
+            "\\(360^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "The three interior angles of ANY triangle always add up to a straight angle (\\(180^\\circ\\))!",
+          "keyPoints": [
+            {
+              "text": "interior angle sum of a triangle",
+              "note": "Angle sum of any triangle is 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For any polygon with \\(n\\) sides, the interior angle sum is \\((n - 2) \\times 180^\\circ\\).",
+              "work": "\\(S = (n - 2) \\times 180^\\circ\\)"
+            },
+            {
+              "explain": "A triangle has \\(n = 3\\) sides.",
+              "work": "\\(S = (3 - 2) \\times 180^\\circ\\)"
+            },
+            {
+              "explain": "Calculate \\(1 \\times 180^\\circ = 180^\\circ\\).",
+              "work": "\\(S = 180^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, the interior angle sum of a triangle is \\(180^\\circ\\).",
+              "work": "\\(\\text{Answer: } 180^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the pronumeral \\(x\\) in the triangle shown.",
+          "options": [
+            "\\(x = 50^\\circ\\)",
+            "\\(x = 120^\\circ\\)",
+            "\\(x = 130^\\circ\\)",
+            "\\(x = 140^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "The interior angles of a triangle sum to \\(180^\\circ\\): subtract \\(30^\\circ\\) and \\(20^\\circ\\) from \\(180^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "pronumeral \\(x\\)",
+              "note": "180° − 30° − 20° = 130° (angle sum of a triangle)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the angle sum of a triangle (\\(180^\\circ\\)): \\(x + 30^\\circ + 20^\\circ = 180^\\circ\\).",
+              "work": "\\(x + 30^\\circ + 20^\\circ = 180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 156\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"156\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 44.0 102.0 L 71.9 99.3 A 28 28 0 0 0 69.5 90.5 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 71.9 99.3 A 28 28 0 0 0 69.5 90.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 212.0 26.0 L 190.1 35.9 A 24 24 0 0 0 194.8 42.7 Z\" fill=\"#3b82f6\" fill-opacity=\"0.34\"/><path d=\"M 190.1 35.9 A 24 24 0 0 0 194.8 42.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 148.0 92.0 L 162.4 78.1 A 20 20 0 0 0 128.1 93.9 Z\" fill=\"#10b981\" fill-opacity=\"0.34\"/><path d=\"M 162.4 78.1 A 20 20 0 0 0 128.1 93.9\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"44,102 148,92 212,26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"94\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">30°</text><text x=\"184\" y=\"48\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">20°</text><text x=\"142\" y=\"83\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\">130°</text><text x=\"130\" y=\"148\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Interior angle sum of a triangle = 180° → x = 130°</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two known angles: \\(30^\\circ + 20^\\circ = 50^\\circ\\).",
+              "work": "\\(x + 50^\\circ = 180^\\circ\\)"
+            },
+            {
+              "explain": "Subtract \\(50^\\circ\\) from \\(180^\\circ\\): \\(x = 130^\\circ\\).",
+              "work": "\\(x = 180^\\circ - 50^\\circ = 130^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 130^\\circ\\).",
+              "work": "\\(\\text{Answer: } x = 130^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 130\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 44.0 102.0 L 71.9 99.3 A 28 28 0 0 0 69.5 90.5 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><path d=\"M 71.9 99.3 A 28 28 0 0 0 69.5 90.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 212.0 26.0 L 190.1 35.9 A 24 24 0 0 0 194.8 42.7 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><path d=\"M 190.1 35.9 A 24 24 0 0 0 194.8 42.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 148.0 92.0 L 162.4 78.1 A 20 20 0 0 0 128.1 93.9 Z\" fill=\"#10b981\" fill-opacity=\"0.22\"/><path d=\"M 162.4 78.1 A 20 20 0 0 0 128.1 93.9\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"44,102 148,92 212,26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"89\" y=\"94\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">30°</text><text x=\"184\" y=\"48\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">20°</text><text x=\"142\" y=\"83\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\">x</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y8-t4a-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve for \\(x\\) in the triangle diagram shown.",
+          "options": [
+            "\\(x = 2\\)",
+            "\\(x = 4\\)",
+            "\\(x = 20\\)",
+            "\\(x = 26\\)"
+          ],
+          "answer": 0,
+          "hint": "The exterior angle of a triangle (\\(140^\\circ\\)) equals the SUM of the two interior opposite angles: \\(140 = 120 + 10x\\)!",
+          "keyPoints": [
+            {
+              "text": "Solve for \\(x\\)",
+              "note": "Exterior angle theorem: 120 + 10x = 140 → 10x = 20 → x = 2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the exterior angle theorem: the exterior angle (\\(140^\\circ\\), red) equals the sum of the two opposite interior angles (\\(120^\\circ\\) blue and \\(10x\\) green).",
+              "work": "\\(140 = 120 + 10x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 156\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"156\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 80.0 46.0 L 62.3 36.6 A 20 20 0 0 0 88.8 64.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.34\"/><path d=\"M 62.3 36.6 A 20 20 0 0 0 88.8 64.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M 106.0 100.0 L 124.0 100.0 A 18 18 0 0 0 98.1 83.8 Z\" fill=\"#3b82f6\" fill-opacity=\"0.32\"/><path d=\"M 124.0 100.0 A 18 18 0 0 0 98.1 83.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 238.0 100.0 L 215.0 87.8 A 26 26 0 0 0 212.0 100.0 Z\" fill=\"#10b981\" fill-opacity=\"0.32\"/><path d=\"M 215.0 87.8 A 26 26 0 0 0 212.0 100.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"106,100 238,100 80,46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"80\" y1=\"46\" x2=\"36\" y2=\"31\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"66\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">140°</text><text x=\"122\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><text x=\"184\" y=\"94\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#047857\">10<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan></text><text x=\"140\" y=\"148\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Exterior angle = sum of interior opposite: 140 = 120 + 10x → x = 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract \\(120\\) from both sides: \\(140 - 120 = 20\\).",
+              "work": "\\(10x = 20\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(10\\): \\(x = 2\\).",
+              "work": "\\(x = \\dfrac{20}{10} = 2\\)"
+            },
+            {
+              "explain": "Check: \\(120^\\circ + 10(2)^\\circ = 140^\\circ\\). Therefore, \\(x = 2\\).",
+              "work": "\\(\\text{Answer: } x = 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 130\" width=\"65%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"130\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 80.0 46.0 L 62.3 36.6 A 20 20 0 0 0 88.8 64.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.2\"/><path d=\"M 62.3 36.6 A 20 20 0 0 0 88.8 64.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><path d=\"M 106.0 100.0 L 124.0 100.0 A 18 18 0 0 0 98.1 83.8 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><path d=\"M 124.0 100.0 A 18 18 0 0 0 98.1 83.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><path d=\"M 238.0 100.0 L 215.0 87.8 A 26 26 0 0 0 212.0 100.0 Z\" fill=\"#10b981\" fill-opacity=\"0.2\"/><path d=\"M 215.0 87.8 A 26 26 0 0 0 212.0 100.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2\"/><polygon points=\"106,100 238,100 80,46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"80\" y1=\"46\" x2=\"36\" y2=\"31\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><text x=\"62\" y=\"66\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">140°</text><text x=\"122\" y=\"92\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">120°</text><text x=\"184\" y=\"94\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#047857\">10<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan></text></svg>"
+          }
         }
       ]
     },
@@ -2347,6 +2571,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What type of triangle has three sides of different lengths?",
+          "options": [
+            "An isosceles triangle",
+            "A scalene triangle",
+            "An equilateral triangle",
+            "A right-angled triangle"
+          ],
+          "answer": 1,
+          "hint": "Equilateral = \\(3\\) equal sides, Isosceles = \\(2\\) equal sides, Scalene = NO equal sides (all \\(3\\) different)!",
+          "keyPoints": [
+            {
+              "text": "three sides of different lengths",
+              "note": "Scalene triangle has all 3 sides different."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall triangle classification by side lengths: equilateral (\\(3\\) equal), isosceles (\\(2\\) equal), scalene (all \\(3\\) different).",
+              "work": "\\(\\text{Equilateral: 3 equal; Isosceles: 2 equal; Scalene: 0 equal}\\)"
+            },
+            {
+              "explain": "A triangle with three sides of different lengths has no equal sides.",
+              "work": "\\(a \\neq b \\neq c\\)"
+            },
+            {
+              "explain": "Match this property to \"A scalene triangle\".",
+              "work": "\\(\\text{Scalene triangle}\\)"
+            },
+            {
+              "explain": "Therefore, the correct answer is A scalene triangle.",
+              "work": "\\(\\text{Answer: A scalene triangle}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2407,6 +2671,178 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "khs22-y8-t4a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many sides does a quadrilateral have?",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "The prefix \"quad-\" means FOUR (like quad bike or quadrant)!",
+          "keyPoints": [
+            {
+              "text": "quadrilateral",
+              "note": "Quad = 4 sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The Latin prefix \"quadri-\" means four, and \"-lateral\" means side.",
+              "work": "\\(\\text{Quadrilateral} = 4\\text{ sides}\\)"
+            },
+            {
+              "explain": "Examples include squares, rectangles, parallelograms, rhombuses, kites, and trapeziums.",
+              "work": "\\(n = 4\\)"
+            },
+            {
+              "explain": "Confirm: triangles have \\(3\\), quadrilaterals have \\(4\\), pentagons have \\(5\\).",
+              "work": "\\(4\\text{ sides}\\)"
+            },
+            {
+              "explain": "Therefore, a quadrilateral has \\(4\\) sides.",
+              "work": "\\(\\text{Answer: } 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the interior angle sum of a quadrilateral?",
+          "options": [
+            "\\(180^\\circ\\)",
+            "\\(270^\\circ\\)",
+            "\\(360^\\circ\\)",
+            "\\(540^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "A diagonal splits any quadrilateral into \\(2\\) triangles: \\(2 \\times 180^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "interior angle sum of a quadrilateral",
+              "note": "2 triangles × 180° = 360°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Draw one diagonal inside any quadrilateral to divide it into \\(2\\) triangles.",
+              "work": "\\(n = 4 \\implies 2\\text{ triangles}\\)"
+            },
+            {
+              "explain": "Each triangle has an interior angle sum of \\(180^\\circ\\).",
+              "work": "\\(2 \\times 180^\\circ = 360^\\circ\\)"
+            },
+            {
+              "explain": "Check with the polygon formula: \\((4 - 2) \\times 180^\\circ = 360^\\circ\\).",
+              "work": "\\((4 - 2) \\times 180^\\circ = 360^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, the interior angle sum of a quadrilateral is \\(360^\\circ\\).",
+              "work": "\\(\\text{Answer: } 360^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the quadrilateral \\(EFGH\\) shown convex or non-convex?",
+          "options": [
+            "Non-convex",
+            "Convex",
+            "Regular",
+            "Equiangular"
+          ],
+          "answer": 0,
+          "hint": "Look at vertex \\(G\\): it caves INWARD so its interior angle is a reflex angle (greater than \\(180^\\circ\\)) — that makes it non-convex!",
+          "keyPoints": [
+            {
+              "text": "convex or non-convex",
+              "note": "Interior angle at G > 180° (caves inward) → non-convex."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A polygon is convex only if ALL of its interior angles are less than \\(180^\\circ\\).",
+              "work": "\\(\\text{Convex: all interior angles } < 180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 174\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"174\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 108.0 76.0 L 119.3 62.0 A 18 18 0 1 0 112.7 93.4 Z\" fill=\"#fca5a5\" fill-opacity=\"0.42\"/><path d=\"M 119.3 62.0 A 18 18 0 1 0 112.7 93.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><polygon points=\"64,88 122,128 108,76 148,26\" fill=\"#f8fafc\" fill-opacity=\"0.6\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"52\" y=\"92\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"130\" y=\"138\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">F</text><text x=\"122\" y=\"80\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">G</text><text x=\"156\" y=\"28\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">H</text><text x=\"80\" y=\"72\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">&gt;180°</text><text x=\"110\" y=\"166\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Interior angle at G is reflex (> 180°) → Non-convex</text></svg>"
+              }
+            },
+            {
+              "explain": "Inspect vertex \\(G\\) (highlighted red): it points inward, creating a reflex interior angle greater than \\(180^\\circ\\).",
+              "work": "\\(\\text{Interior } \\angle G > 180^\\circ\\)"
+            },
+            {
+              "explain": "Equivalently, diagonal \\(FH\\) lies outside the quadrilateral.",
+              "work": "\\(\\text{Non-convex (concave)}\\)"
+            },
+            {
+              "explain": "Therefore, the quadrilateral is non-convex.",
+              "work": "\\(\\text{Answer: Non-convex}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 148\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"148\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"64,88 122,128 108,76 148,26\" fill=\"#ffffff\" fill-opacity=\"0.6\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"52\" y=\"92\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"130\" y=\"138\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">F</text><text x=\"122\" y=\"80\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"400\" fill=\"#0f172a\">G</text><text x=\"156\" y=\"28\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">H</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y8-t4a-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "\\(BCDE\\) is a quadrilateral shown with \\(\\angle B = 70^\\circ\\), \\(\\angle E = 100^\\circ\\), and \\(\\angle D = 80^\\circ\\). Calculate \\(\\angle BCD\\).",
+          "options": [
+            "\\(100^\\circ\\)",
+            "\\(110^\\circ\\)",
+            "\\(120^\\circ\\)",
+            "\\(70^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "The interior angles of a quadrilateral sum to \\(360^\\circ\\): subtract \\(70^\\circ + 100^\\circ + 80^\\circ = 250^\\circ\\) from \\(360^\\circ\\)!",
+          "keyPoints": [
+            {
+              "text": "\\angle BCD",
+              "note": "360° − (70° + 100° + 80°) = 110°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the interior angle sum of a quadrilateral (\\(360^\\circ\\)).",
+              "work": "\\(\\angle BCD + 70^\\circ + 100^\\circ + 80^\\circ = 360^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 176\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,48 184,30 212,108 96,124\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"64\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">70°</text><text x=\"172\" y=\"50\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">100°</text><text x=\"192\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">80°</text><text x=\"114\" y=\"112\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#15803d\">110°</text><text x=\"44\" y=\"52\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"220\" y=\"114\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"90\" y=\"138\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text><text x=\"135\" y=\"169\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">360° − (70° + 100° + 80°) = 110°</text></svg>"
+              }
+            },
+            {
+              "explain": "Sum the three given angles: \\(70^\\circ + 100^\\circ + 80^\\circ = 250^\\circ\\).",
+              "work": "\\(\\angle BCD + 250^\\circ = 360^\\circ\\)"
+            },
+            {
+              "explain": "Subtract \\(250^\\circ\\) from \\(360^\\circ\\): \\(360^\\circ - 250^\\circ = 110^\\circ\\).",
+              "work": "\\(\\angle BCD = 110^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\angle BCD = 110^\\circ\\).",
+              "work": "\\(\\text{Answer: } 110^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 150\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"150\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><polygon points=\"56,48 184,30 212,108 96,124\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"64\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">70°</text><text x=\"172\" y=\"50\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">100°</text><text x=\"192\" y=\"101\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">80°</text><text x=\"44\" y=\"52\" text-anchor=\"end\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">B</text><text x=\"188\" y=\"22\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">E</text><text x=\"220\" y=\"114\" text-anchor=\"start\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">D</text><text x=\"90\" y=\"138\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"13\">C</text></svg>"
+          }
         }
       ]
     },
