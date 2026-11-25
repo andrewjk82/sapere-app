@@ -3448,6 +3448,86 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise \\(9a - 36\\).",
+          "options": [
+            "\\(9(a - 4)\\)",
+            "\\(9(a - 36)\\)",
+            "\\(3(3a - 12)\\)",
+            "\\(9(a + 4)\\)"
+          ],
+          "answer": 0,
+          "hint": "Take out the HIGHEST common factor of \\(9a\\) and \\(36\\) (which is \\(9\\), not \\(3\\))!",
+          "keyPoints": [
+            {
+              "text": "9a - 36",
+              "note": "HCF = 9 → 9(a − 4)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor of \\(9a\\) and \\(36\\): \\(\\text{HCF}(9, 36) = 9\\).",
+              "work": "\\(\\text{HCF} = 9\\)"
+            },
+            {
+              "explain": "Divide each term by \\(9\\): \\(9a \\div 9 = a\\) and \\(-36 \\div 9 = -4\\).",
+              "work": "\\(9a - 36 = 9(a - 4)\\)"
+            },
+            {
+              "explain": "Check by expanding back: \\(9(a - 4) = 9a - 36\\). Exact!",
+              "work": "\\(9(a - 4) = 9a - 36\\)"
+            },
+            {
+              "explain": "Therefore, the fully factorised form is \\(9(a - 4)\\).",
+              "work": "\\(\\text{Answer: } 9(a - 4)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(-16x^2 + 12x\\).",
+          "options": [
+            "\\(-4x(4x - 3)\\)",
+            "\\(-4x(4x + 3)\\)",
+            "\\(4x(4x - 3)\\)",
+            "\\(-4(4x^2 - 3x)\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor out the full HCF \\(-4x\\) (both the number \\(4\\) and the variable \\(x\\)) — remember factoring out a negative flips \\(+12x\\) to \\(-3\\)!",
+          "keyPoints": [
+            {
+              "text": "-16x^2 + 12x",
+              "note": "Factor out −4x: −4x(4x − 3)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor of \\(-16x^2\\) and \\(12x\\): both share \\(4\\) and \\(x\\). Factor out \\(-4x\\).",
+              "work": "\\(\\text{Common factor} = -4x\\)"
+            },
+            {
+              "explain": "Divide each term by \\(-4x\\): \\(\\dfrac{-16x^2}{-4x} = 4x\\) and \\(\\dfrac{+12x}{-4x} = -3\\).",
+              "work": "\\(-16x^2 + 12x = -4x(4x - 3)\\)"
+            },
+            {
+              "explain": "Verify by expanding: \\(-4x(4x) - 4x(-3) = -16x^2 + 12x\\). Exact!",
+              "work": "\\(-4x(4x - 3) = -16x^2 + 12x\\)"
+            },
+            {
+              "explain": "Therefore, the fully factorised form is \\(-4x(4x - 3)\\).",
+              "work": "\\(\\text{Answer: } -4x(4x - 3)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -3802,6 +3882,86 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p14b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise \\(x^2 - 25\\).",
+          "options": [
+            "\\((x - 5)(x + 5)\\)",
+            "\\((x - 5)^2\\)",
+            "\\((x + 5)^2\\)",
+            "\\((x - 25)(x + 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Notice \\(25 = 5^2\\), so \\(x^2 - 25 = x^2 - 5^2\\) is a difference of two squares: \\((a - b)(a + b)\\)!",
+          "keyPoints": [
+            {
+              "text": "x^2 - 25",
+              "note": "x² − 5² = (x − 5)(x + 5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite \\(25\\) as \\(5^2\\) to reveal a difference of two squares.",
+              "work": "\\(x^2 - 25 = x^2 - 5^2\\)"
+            },
+            {
+              "explain": "Apply \\(a^2 - b^2 = (a - b)(a + b)\\) with \\(a = x\\) and \\(b = 5\\).",
+              "work": "\\((x - 5)(x + 5)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(x^2 + 5x - 5x - 25 = x^2 - 25\\). Exact!",
+              "work": "\\((x - 5)(x + 5) = x^2 - 25\\)"
+            },
+            {
+              "explain": "Therefore, \\(x^2 - 25 = (x - 5)(x + 5)\\).",
+              "work": "\\(\\text{Answer: } (x - 5)(x + 5)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(\\dfrac{4}{9} - a^2\\).",
+          "options": [
+            "\\(\\left(\\dfrac{2}{3} - a\\right)\\left(\\dfrac{2}{3} + a\\right)\\)",
+            "\\(\\left(\\dfrac{2}{3} - a\\right)^2\\)",
+            "\\(\\left(\\dfrac{4}{9} - a\\right)\\left(\\dfrac{4}{9} + a\\right)\\)",
+            "\\(\\left(a - \\dfrac{2}{3}\\right)\\left(a + \\dfrac{2}{3}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\dfrac{4}{9}\\) as \\(\\left(\\dfrac{2}{3}\\right)^2\\), then apply the difference of two squares \\(A^2 - B^2 = (A - B)(A + B)\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{4}{9} - a^2",
+              "note": "(2/3)² − a² = (2/3 − a)(2/3 + a)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise that \\(\\dfrac{4}{9} = \\left(\\dfrac{2}{3}\\right)^2\\), so this is a difference of two squares.",
+              "work": "\\(\\dfrac{4}{9} - a^2 = \\left(\\dfrac{2}{3}\\right)^2 - a^2\\)"
+            },
+            {
+              "explain": "Apply \\(A^2 - B^2 = (A - B)(A + B)\\) with \\(A = \\dfrac{2}{3}\\) and \\(B = a\\).",
+              "work": "\\(\\left(\\dfrac{2}{3} - a\\right)\\left(\\dfrac{2}{3} + a\\right)\\)"
+            },
+            {
+              "explain": "Check the order: \\(\\left(a - \\dfrac{2}{3}\\right)\\left(a + \\dfrac{2}{3}\\right) = a^2 - \\dfrac{4}{9}\\), which has the opposite sign!",
+              "work": "\\(\\left(\\dfrac{2}{3}\\right)^2 - a^2 = \\dfrac{4}{9} - a^2\\)"
+            },
+            {
+              "explain": "Therefore, the factorised form is \\(\\left(\\dfrac{2}{3} - a\\right)\\left(\\dfrac{2}{3} + a\\right)\\).",
+              "work": "\\(\\text{Answer: } \\left(\\dfrac{2}{3} - a\\right)\\left(\\dfrac{2}{3} + a\\right)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4490,6 +4650,86 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p14c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(x^2 + 7x - 18\\).",
+          "options": [
+            "\\((x + 9)(x - 2)\\)",
+            "\\((x - 9)(x + 2)\\)",
+            "\\((x + 6)(x - 3)\\)",
+            "\\((x + 9)(x + 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that MULTIPLY to \\(-18\\) and ADD to \\(+7\\) (try \\(+9\\) and \\(-2\\))!",
+          "keyPoints": [
+            {
+              "text": "x^2 + 7x - 18",
+              "note": "Product = −18, Sum = +7 → +9 and −2 → (x + 9)(x − 2)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a monic quadratic \\(x^2 + bx + c\\), find two numbers with product \\(-18\\) and sum \\(+7\\).",
+              "work": "\\(p \\times q = -18, \\quad p + q = 7\\)"
+            },
+            {
+              "explain": "Test factor pairs of \\(-18\\): \\(9 \\times (-2) = -18\\) and \\(9 + (-2) = 7\\).",
+              "work": "\\(p = 9, \\quad q = -2\\)"
+            },
+            {
+              "explain": "Write the factorised form: \\((x + 9)(x - 2)\\).",
+              "work": "\\((x + 9)(x - 2)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(x^2 - 2x + 9x - 18 = x^2 + 7x - 18\\). Exact!",
+              "work": "\\(\\text{Answer: } (x + 9)(x - 2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p14e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(5x^2 - 45x + 100\\).",
+          "options": [
+            "\\(5(x - 4)(x - 5)\\)",
+            "\\(5(x + 4)(x + 5)\\)",
+            "\\((5x - 20)(x - 5)\\)",
+            "\\(5(x - 10)(x - 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "ALWAYS pull out the common numerical factor FIRST: \\(5(x^2 - 9x + 20)\\), then factorise the simple quadratic inside!",
+          "keyPoints": [
+            {
+              "text": "5x^2 - 45x + 100",
+              "note": "Take out 5 first: 5(x² − 9x + 20) = 5(x − 4)(x − 5)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor out the highest common factor \\(5\\) from all three terms first.",
+              "work": "\\(5(x^2 - 9x + 20)\\)"
+            },
+            {
+              "explain": "Inside the brackets, find two numbers multiplying to \\(+20\\) and adding to \\(-9\\): \\(-4\\) and \\(-5\\).",
+              "work": "\\((-4)(-5) = 20, \\quad -4 + (-5) = -9\\)"
+            },
+            {
+              "explain": "Write the fully factorised form: \\(5(x - 4)(x - 5)\\).",
+              "work": "\\(5(x - 4)(x - 5)\\)"
+            },
+            {
+              "explain": "Check: \\(5(x^2 - 9x + 20) = 5x^2 - 45x + 100\\). Exact!",
+              "work": "\\(\\text{Answer: } 5(x - 4)(x - 5)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

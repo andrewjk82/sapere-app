@@ -3216,6 +3216,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "brig22-y9-a2-p2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(a = 2\\) and \\(b = -5\\), the value of \\(5a + 3b\\) is:",
+          "options": [
+            "\\(-15\\)",
+            "\\(-5\\)",
+            "\\(17\\)",
+            "\\(87\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(a = 2\\) and \\(b = -5\\) using brackets: \\(5(2) + 3(-5) = 10 + (-15)\\)!",
+          "keyPoints": [
+            {
+              "text": "5a + 3b",
+              "note": "5(2) + 3(−5) = 10 − 15 = −5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute \\(a = 2\\) and \\(b = -5\\) into \\(5a + 3b\\) using brackets around negative values.",
+              "work": "\\(5(2) + 3(-5)\\)"
+            },
+            {
+              "explain": "Multiply each term: \\(5 \\times 2 = 10\\) and \\(3 \\times (-5) = -15\\).",
+              "work": "\\(10 + (-15) = 10 - 15\\)"
+            },
+            {
+              "explain": "Subtract: \\(10 - 15 = -5\\).",
+              "work": "\\(10 - 15 = -5\\)"
+            },
+            {
+              "explain": "Therefore, the value of \\(5a + 3b\\) is \\(-5\\).",
+              "work": "\\(\\text{Answer: } -5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -6101,6 +6141,126 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which term is the constant in the expression \\(2x^2 - 5y - 7\\)?",
+          "options": [
+            "\\(-5\\)",
+            "\\(5\\)",
+            "\\(-7\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "The constant term has NO pronumerals attached — and remember to include the minus sign in front of it!",
+          "keyPoints": [
+            {
+              "text": "constant",
+              "note": "Term with no variable, including its sign: −7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Split the expression into its three signed terms: \\(+2x^2\\), \\(-5y\\), and \\(-7\\).",
+              "work": "\\(2x^2, \\quad -5y, \\quad -7\\)"
+            },
+            {
+              "explain": "A constant term contains no variable (pronumeral). Both \\(2x^2\\) and \\(-5y\\) contain variables.",
+              "work": "\\(\\text{Constant term} = -7\\)"
+            },
+            {
+              "explain": "Always include the negative sign belonging to the term: \\(-7\\), not \\(7\\).",
+              "work": "\\(-7 \\neq 7\\)"
+            },
+            {
+              "explain": "Therefore, the constant term is \\(-7\\).",
+              "work": "\\(\\text{Answer: } -7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The expression \\(9m + 5 - 7m - 12\\) can be simplified to:",
+          "options": [
+            "\\(2m + 17\\)",
+            "\\(2m - 7\\)",
+            "\\(16m + 17\\)",
+            "\\(16m - 7\\)"
+          ],
+          "answer": 1,
+          "hint": "Collect the \\(m\\) terms (\\(9m - 7m\\)) and the constant terms (\\(+5 - 12\\)) separately — keep each term's sign!",
+          "keyPoints": [
+            {
+              "text": "9m + 5 - 7m - 12",
+              "note": "(9m − 7m) + (5 − 12) = 2m − 7."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group like terms together, carrying the sign in front of each term.",
+              "work": "\\((9m - 7m) + (5 - 12)\\)"
+            },
+            {
+              "explain": "Combine the \\(m\\) terms: \\(9m - 7m = 2m\\).",
+              "work": "\\(9m - 7m = 2m\\)"
+            },
+            {
+              "explain": "Combine the constant terms: \\(5 - 12 = -7\\).",
+              "work": "\\(5 - 12 = -7\\)"
+            },
+            {
+              "explain": "Combine both parts: \\(2m - 7\\).",
+              "work": "\\(\\text{Answer: } 2m - 7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The expression \\(b - a\\) is equivalent to which of the following?",
+          "options": [
+            "\\(-a + b\\)",
+            "\\(-a - b\\)",
+            "\\(a - b\\)",
+            "\\(-(a + b)\\)"
+          ],
+          "answer": 0,
+          "hint": "When rearranging terms, each term MUST take its own sign with it: \\(+b\\) stays positive and \\(-a\\) stays negative!",
+          "keyPoints": [
+            {
+              "text": "b - a",
+              "note": "+b − a = −a + b (keep each term's sign)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the sign of each term in \\(b - a\\): \\(b\\) is positive (\\(+b\\)) and \\(a\\) is negative (\\(-a\\)).",
+              "work": "\\(b - a = (+b) + (-a)\\)"
+            },
+            {
+              "explain": "Swap the order using the commutative law of addition, keeping each sign attached.",
+              "work": "\\((-a) + (+b) = -a + b\\)"
+            },
+            {
+              "explain": "Test with numbers (say \\(b = 5, a = 2\\)): \\(b - a = 3\\) and \\(-a + b = -2 + 5 = 3\\). Exact!",
+              "work": "\\(-2 + 5 = 3 = 5 - 2\\)"
+            },
+            {
+              "explain": "Therefore, \\(b - a\\) is equivalent to \\(-a + b\\).",
+              "work": "\\(\\text{Answer: } -a + b\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -12043,6 +12203,86 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The product of \\(x\\) and \\(y\\) can be written as:",
+          "options": [
+            "\\(x - y\\)",
+            "\\(x + y\\)",
+            "\\(\\dfrac{x}{y}\\)",
+            "\\(xy\\)"
+          ],
+          "answer": 3,
+          "hint": "\"Product\" means MULTIPLICATION — in algebra we omit the \\(\\times\\) sign between pronumerals!",
+          "keyPoints": [
+            {
+              "text": "product of \\(x\\) and \\(y\\)",
+              "note": "Product means multiply: x × y = xy."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall mathematical vocabulary: \"product\" means the result of multiplying two quantities.",
+              "work": "\\(x \\times y\\)"
+            },
+            {
+              "explain": "In algebra, the multiplication sign between pronumerals is omitted: \\(x \\times y = xy\\).",
+              "work": "\\(x \\times y = xy\\)"
+            },
+            {
+              "explain": "Note the other options: \\(x - y\\) is difference, \\(x + y\\) is sum, and \\(\\dfrac{x}{y}\\) is quotient.",
+              "work": "\\(xy = \\text{product}\\)"
+            },
+            {
+              "explain": "Therefore, the product of \\(x\\) and \\(y\\) is \\(xy\\).",
+              "work": "\\(\\text{Answer: } xy\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(m \\times m \\times m\\).",
+          "options": [
+            "\\(3m^3\\)",
+            "\\(3m\\)",
+            "\\(m^3\\)",
+            "\\(m + 3\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiplying the same base \\(m\\) three times is written as a power \\(m^3\\) (whereas \\(m + m + m = 3m\\))!",
+          "keyPoints": [
+            {
+              "text": "m \\times m \\times m",
+              "note": "Repeated multiplication uses an index: m³."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count how many times \\(m\\) is multiplied by itself: \\(3\\) times.",
+              "work": "\\(m^1 \\times m^1 \\times m^1\\)"
+            },
+            {
+              "explain": "Apply the index multiplication law (add the indices): \\(m^{1 + 1 + 1} = m^3\\).",
+              "work": "\\(m^{1 + 1 + 1} = m^3\\)"
+            },
+            {
+              "explain": "Contrast with addition: \\(m + m + m = 3m\\), NOT \\(m^3\\).",
+              "work": "\\(m \\times m \\times m = m^3\\)"
+            },
+            {
+              "explain": "Therefore, the simplified form is \\(m^3\\).",
+              "work": "\\(\\text{Answer: } m^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -16333,6 +16573,86 @@
             "\\(25x^2+15x+9\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "brig22-y9-a2-p7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the correct expansion for \\(7a + 2(a - 9)\\)?",
+          "options": [
+            "\\(9a - 9\\)",
+            "\\(9a - 18\\)",
+            "\\(9a^2 - 9\\)",
+            "\\(9a^2 - 18\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(2(a - 9) = 2a - 18\\) first, then add \\(7a + 2a = 9a\\) (remember \\(a + a\\) stays \\(a\\), NOT \\(a^2\\))!",
+          "keyPoints": [
+            {
+              "text": "7a + 2(a - 9)",
+              "note": "7a + 2a − 18 = 9a − 18."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the brackets by multiplying \\(2\\) by both \\(a\\) and \\(-9\\).",
+              "work": "\\(7a + 2(a - 9) = 7a + 2a - 18\\)"
+            },
+            {
+              "explain": "Collect the like \\(a\\) terms: \\(7a + 2a = 9a\\).",
+              "work": "\\(7a + 2a = 9a\\)"
+            },
+            {
+              "explain": "Keep the constant term \\(-18\\): \\(9a - 18\\).",
+              "work": "\\(9a - 18\\)"
+            },
+            {
+              "explain": "Therefore, the correct expansion is \\(9a - 18\\).",
+              "work": "\\(\\text{Answer: } 9a - 18\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\(5(x + 7) - (x - 3)\\).",
+          "options": [
+            "\\(4x + 32\\)",
+            "\\(4x + 38\\)",
+            "\\(6x + 38\\)",
+            "\\(4x + 4\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the minus sign before the second bracket! \\(-(x - 3) = -x + 3\\) (double negative makes \\(+3\\))!",
+          "keyPoints": [
+            {
+              "text": "5(x + 7) - (x - 3)",
+              "note": "5x + 35 − x + 3 = 4x + 38."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the first bracket: \\(5(x + 7) = 5x + 35\\).",
+              "work": "\\(5(x + 7) = 5x + 35\\)"
+            },
+            {
+              "explain": "Expand \\(-(x - 3) = -1(x - 3) = -x + 3\\) (flipping both signs inside).",
+              "work": "\\(5x + 35 - x + 3\\)"
+            },
+            {
+              "explain": "Collect like terms: \\(5x - x = 4x\\) and \\(35 + 3 = 38\\).",
+              "work": "\\((5x - x) + (35 + 3) = 4x + 38\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(4x + 38\\).",
+              "work": "\\(\\text{Answer: } 4x + 38\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -19702,6 +20022,126 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify the binomial product \\((x + 4)(x + 1)\\).",
+          "options": [
+            "\\(x^2 + 5x + 4\\)",
+            "\\(x^2 + 4x + 5\\)",
+            "\\(x^2 + 4\\)",
+            "\\(x^2 + 5x + 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Use FOIL: First (\\(x^2\\)), Outer (\\(+x\\)), Inner (\\(+4x\\)), Last (\\(+4\\)), then combine the middle terms!",
+          "keyPoints": [
+            {
+              "text": "(x + 4)(x + 1)",
+              "note": "x² + x + 4x + 4 = x² + 5x + 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand using FOIL: multiply each term in \\((x + 4)\\) by each term in \\((x + 1)\\).",
+              "work": "\\(x(x) + x(1) + 4(x) + 4(1)\\)"
+            },
+            {
+              "explain": "Simplify each of the four products.",
+              "work": "\\(x^2 + x + 4x + 4\\)"
+            },
+            {
+              "explain": "Collect the like middle terms: \\(x + 4x = 5x\\).",
+              "work": "\\(x^2 + 5x + 4\\)"
+            },
+            {
+              "explain": "Therefore, \\((x + 4)(x + 1) = x^2 + 5x + 4\\).",
+              "work": "\\(\\text{Answer: } x^2 + 5x + 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify the binomial product \\((x - 6)(x + 7)\\).",
+          "options": [
+            "\\(x^2 + x - 42\\)",
+            "\\(x^2 - x - 42\\)",
+            "\\(x^2 + 13x - 42\\)",
+            "\\(x^2 + x + 42\\)"
+          ],
+          "answer": 0,
+          "hint": "Use FOIL: \\(x^2 + 7x - 6x - 42\\), and check the sign of the middle term (\\(7x - 6x = +x\\))!",
+          "keyPoints": [
+            {
+              "text": "(x - 6)(x + 7)",
+              "note": "x² + 7x − 6x − 42 = x² + x − 42."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply FOIL to \\((x - 6)(x + 7)\\).",
+              "work": "\\(x(x) + x(7) - 6(x) - 6(7)\\)"
+            },
+            {
+              "explain": "Compute each product carefully with signs.",
+              "work": "\\(x^2 + 7x - 6x - 42\\)"
+            },
+            {
+              "explain": "Combine the middle terms: \\(7x - 6x = +x\\).",
+              "work": "\\(x^2 + x - 42\\)"
+            },
+            {
+              "explain": "Therefore, \\((x - 6)(x + 7) = x^2 + x - 42\\).",
+              "work": "\\(\\text{Answer: } x^2 + x - 42\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify the binomial product \\((2x - 3)(x - 5)\\).",
+          "options": [
+            "\\(2x^2 - 13x + 15\\)",
+            "\\(2x^2 - 13x - 15\\)",
+            "\\(2x^2 - 7x + 15\\)",
+            "\\(2x^2 + 13x + 15\\)"
+          ],
+          "answer": 0,
+          "hint": "Use FOIL: \\(2x(x) + 2x(-5) - 3(x) - 3(-5)\\) — notice \\((-3)(-5) = +15\\) and \\(-10x - 3x = -13x\\)!",
+          "keyPoints": [
+            {
+              "text": "(2x - 3)(x - 5)",
+              "note": "2x² − 10x − 3x + 15 = 2x² − 13x + 15."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand every pair of terms using FOIL.",
+              "work": "\\((2x)(x) + (2x)(-5) + (-3)(x) + (-3)(-5)\\)"
+            },
+            {
+              "explain": "Evaluate all four products: \\(2x^2\\), \\(-10x\\), \\(-3x\\), and \\(+15\\).",
+              "work": "\\(2x^2 - 10x - 3x + 15\\)"
+            },
+            {
+              "explain": "Collect the like \\(x\\) terms: \\(-10x - 3x = -13x\\).",
+              "work": "\\(2x^2 - 13x + 15\\)"
+            },
+            {
+              "explain": "Therefore, \\((2x - 3)(x - 5) = 2x^2 - 13x + 15\\).",
+              "work": "\\(\\text{Answer: } 2x^2 - 13x + 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -22672,6 +23112,126 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify \\((x - 1)^2\\).",
+          "options": [
+            "\\(x^2 - 2x + 1\\)",
+            "\\(x^2 - 1\\)",
+            "\\(x^2 + 1\\)",
+            "\\(x^2 - 2x - 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Do NOT just square each term! Use the perfect square rule \\((a - b)^2 = a^2 - 2ab + b^2\\) (or expand \\((x - 1)(x - 1)\\))!",
+          "keyPoints": [
+            {
+              "text": "(x - 1)^2",
+              "note": "Perfect square: x² − 2(x)(1) + 1² = x² − 2x + 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the square as a binomial product (or use \\((a - b)^2 = a^2 - 2ab + b^2\\)).",
+              "work": "\\((x - 1)^2 = (x - 1)(x - 1)\\)"
+            },
+            {
+              "explain": "Expand using FOIL: \\(x^2 - x - x + 1\\).",
+              "work": "\\(x^2 - x - x + 1\\)"
+            },
+            {
+              "explain": "Combine the middle terms: \\(-x - x = -2x\\).",
+              "work": "\\(x^2 - 2x + 1\\)"
+            },
+            {
+              "explain": "Therefore, \\((x - 1)^2 = x^2 - 2x + 1\\).",
+              "work": "\\(\\text{Answer: } x^2 - 2x + 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p13e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((3x + 2)^2\\).",
+          "options": [
+            "\\(9x^2 + 4\\)",
+            "\\(9x^2 + 6x + 4\\)",
+            "\\(9x^2 + 12x + 4\\)",
+            "\\(3x^2 + 12x + 4\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\((a + b)^2 = a^2 + 2ab + b^2\\) with \\(a = 3x\\) and \\(b = 2\\): remember \\((3x)^2 = 9x^2\\) AND \\(2(3x)(2) = 12x\\)!",
+          "keyPoints": [
+            {
+              "text": "(3x + 2)^2",
+              "note": "(3x)² + 2(3x)(2) + 2² = 9x² + 12x + 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the perfect square identity \\((a + b)^2 = a^2 + 2ab + b^2\\) with \\(a = 3x\\) and \\(b = 2\\).",
+              "work": "\\((3x)^2 + 2(3x)(2) + 2^2\\)"
+            },
+            {
+              "explain": "Square the first term (both \\(3\\) and \\(x\\)): \\((3x)^2 = 9x^2\\).",
+              "work": "\\((3x)^2 = 9x^2\\)"
+            },
+            {
+              "explain": "Compute the middle and last terms: \\(2(3x)(2) = 12x\\) and \\(2^2 = 4\\).",
+              "work": "\\(9x^2 + 12x + 4\\)"
+            },
+            {
+              "explain": "Therefore, \\((3x + 2)^2 = 9x^2 + 12x + 4\\).",
+              "work": "\\(\\text{Answer: } 9x^2 + 12x + 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\(4\\left(p - \\dfrac{1}{2}\\right)^2\\).",
+          "options": [
+            "\\(4p^2 - 4p + 1\\)",
+            "\\(4p^2 - 1\\)",
+            "\\(4p^2 - 2p + 1\\)",
+            "\\(4p^2 + 4p + 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the perfect square \\(\\left(p - \\dfrac{1}{2}\\right)^2 = p^2 - p + \\dfrac{1}{4}\\) FIRST, then multiply every term by \\(4\\)!",
+          "keyPoints": [
+            {
+              "text": "4\\left(p - \\dfrac{1}{2}\\right)^2",
+              "note": "4(p² − p + 1/4) = 4p² − 4p + 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the squared bracket first using \\((a - b)^2 = a^2 - 2ab + b^2\\) with \\(a = p\\) and \\(b = \\dfrac{1}{2}\\).",
+              "work": "\\(\\left(p - \\dfrac{1}{2}\\right)^2 = p^2 - 2(p)\\left(\\dfrac{1}{2}\\right) + \\left(\\dfrac{1}{2}\\right)^2 = p^2 - p + \\dfrac{1}{4}\\)"
+            },
+            {
+              "explain": "Multiply every term inside by the outside \\(4\\).",
+              "work": "\\(4\\left(p^2 - p + \\dfrac{1}{4}\\right) = 4p^2 - 4p + 4\\left(\\dfrac{1}{4}\\right)\\)"
+            },
+            {
+              "explain": "Simplify \\(4 \\times \\dfrac{1}{4} = 1\\) to get \\(4p^2 - 4p + 1\\).",
+              "work": "\\(4p^2 - 4p + 1\\)"
+            },
+            {
+              "explain": "Therefore, the expanded and simplified form is \\(4p^2 - 4p + 1\\).",
+              "work": "\\(\\text{Answer: } 4p^2 - 4p + 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -24854,6 +25414,46 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p13f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify \\((4x + 3)(4x - 3)\\).",
+          "options": [
+            "\\(16x^2 - 9\\)",
+            "\\(16x^2 + 9\\)",
+            "\\(4x^2 - 9\\)",
+            "\\(16x^2 - 24x - 9\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise the difference of two squares: \\((a + b)(a - b) = a^2 - b^2\\) with \\(a = 4x\\) and \\(b = 3\\)!",
+          "keyPoints": [
+            {
+              "text": "(4x + 3)(4x - 3)",
+              "note": "Difference of two squares: (4x)² − 3² = 16x² − 9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the difference of two squares identity \\((a + b)(a - b) = a^2 - b^2\\) with \\(a = 4x\\) and \\(b = 3\\).",
+              "work": "\\((4x)^2 - 3^2\\)"
+            },
+            {
+              "explain": "Square both terms: \\((4x)^2 = 16x^2\\) and \\(3^2 = 9\\).",
+              "work": "\\(16x^2 - 9\\)"
+            },
+            {
+              "explain": "Check by FOIL: the middle terms \\(-12x + 12x\\) cancel to \\(0\\).",
+              "work": "\\(16x^2 - 12x + 12x - 9 = 16x^2 - 9\\)"
+            },
+            {
+              "explain": "Therefore, \\((4x + 3)(4x - 3) = 16x^2 - 9\\).",
+              "work": "\\(\\text{Answer: } 16x^2 - 9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

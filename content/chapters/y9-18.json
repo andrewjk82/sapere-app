@@ -518,6 +518,246 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-n5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bag contains \\(12\\) white, \\(15\\) blue and \\(9\\) yellow marbles. What is the ratio of blue to yellow marbles?",
+          "options": [
+            "\\(3 : 5\\)",
+            "\\(5 : 3\\)",
+            "\\(3 : 4\\)",
+            "\\(4 : 3\\)"
+          ],
+          "answer": 1,
+          "hint": "Write blue FIRST and yellow SECOND (\\(15 : 9\\)), then divide both numbers by their HCF (\\(3\\))!",
+          "keyPoints": [
+            {
+              "text": "blue to yellow",
+              "note": "Order matters: 15 : 9 = 5 : 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the ratio in the exact order requested (blue : yellow): \\(15 : 9\\).",
+              "work": "\\(\\text{Blue} : \\text{Yellow} = 15 : 9\\)"
+            },
+            {
+              "explain": "Find the highest common factor of \\(15\\) and \\(9\\): \\(\\text{HCF}(15, 9) = 3\\).",
+              "work": "\\(\\text{HCF}(15, 9) = 3\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\): \\(15 \\div 3 = 5\\) and \\(9 \\div 3 = 3\\).",
+              "work": "\\(15 : 9 = 5 : 3\\)"
+            },
+            {
+              "explain": "Therefore, the ratio of blue to yellow marbles is \\(5 : 3\\).",
+              "work": "\\(\\text{Answer: } 5 : 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If typing \\(875\\) words in \\(25\\) minutes, what typing speed in \\(\\text{words/min}\\) is this?",
+          "options": [
+            "\\(25\\)",
+            "\\(30\\)",
+            "\\(35\\)",
+            "\\(875\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide total words by total minutes: \\(875 \\div 25\\) (remember every \\(100\\) contains four \\(25\\)s)!",
+          "keyPoints": [
+            {
+              "text": "words/min",
+              "note": "875 ÷ 25 = 35 words/min."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the rate formula: \\(\\text{Speed} = \\dfrac{\\text{Words}}{\\text{Minutes}}\\).",
+              "work": "\\(\\text{Speed} = \\dfrac{875}{25}\\)"
+            },
+            {
+              "explain": "Split \\(875 = 800 + 75\\): \\(800 \\div 25 = 32\\) and \\(75 \\div 25 = 3\\).",
+              "work": "\\(\\dfrac{800}{25} + \\dfrac{75}{25} = 32 + 3 = 35\\)"
+            },
+            {
+              "explain": "Check: \\(35 \\times 25 = 875\\). Exact!",
+              "work": "\\(35 \\times 25 = 875\\)"
+            },
+            {
+              "explain": "Therefore, the typing speed is \\(35\\text{ words/min}\\).",
+              "work": "\\(\\text{Answer: } 35\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the ratio \\(9\\text{ cm}\\) to \\(24\\text{ mm}\\).",
+          "options": [
+            "\\(3 : 8\\)",
+            "\\(15 : 4\\)",
+            "\\(4 : 15\\)",
+            "\\(45 : 12\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert BOTH lengths to the same unit first! \\(9\\text{ cm} = 90\\text{ mm}\\), so simplify \\(90 : 24\\)!",
+          "keyPoints": [
+            {
+              "text": "9\\text{ cm}\\) to \\(24\\text{ mm}",
+              "note": "Convert 9 cm = 90 mm → 90 : 24 = 15 : 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert \\(9\\text{ cm}\\) to millimetres using \\(1\\text{ cm} = 10\\text{ mm}\\): \\(9 \\times 10 = 90\\text{ mm}\\).",
+              "work": "\\(9\\text{ cm} : 24\\text{ mm} = 90\\text{ mm} : 24\\text{ mm}\\)"
+            },
+            {
+              "explain": "Drop the matching units and find \\(\\text{HCF}(90, 24) = 6\\).",
+              "work": "\\(\\text{HCF}(90, 24) = 6\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(6\\): \\(90 \\div 6 = 15\\) and \\(24 \\div 6 = 4\\).",
+              "work": "\\(90 : 24 = 15 : 4\\)"
+            },
+            {
+              "explain": "Therefore, the simplified ratio is \\(15 : 4\\).",
+              "work": "\\(\\text{Answer: } 15 : 4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Divide \\(\\$495\\) in the ratio of \\(6 : 5\\).",
+          "options": [
+            "\\(\\$270 : \\$225\\)",
+            "\\(\\$225 : \\$270\\)",
+            "\\(\\$297 : \\$198\\)",
+            "\\(\\$265 : \\$230\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the ratio parts (\\(6 + 5 = 11\\)), divide \\(\\$495 \\div 11 = \\$45\\) per part, then multiply \\(6 \\times \\$45\\) and \\(5 \\times \\$45\\)!",
+          "keyPoints": [
+            {
+              "text": "ratio of \\(6 : 5\\)",
+              "note": "11 parts = $495 → 1 part = $45 → $270 : $225."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the total number of parts: \\(6 + 5 = 11\\text{ parts}\\).",
+              "work": "\\(\\text{Total parts} = 6 + 5 = 11\\)"
+            },
+            {
+              "explain": "Divide \\(\\$495\\) by \\(11\\) to find the value of \\(1\\) part: \\(495 \\div 11 = 45\\).",
+              "work": "\\(1\\text{ part} = \\dfrac{495}{11} = \\$45\\)"
+            },
+            {
+              "explain": "Calculate each share: \\(6 \\times \\$45 = \\$270\\) and \\(5 \\times \\$45 = \\$225\\).",
+              "work": "\\(6 \\times 45 = \\$270, \\quad 5 \\times 45 = \\$225\\)"
+            },
+            {
+              "explain": "Check: \\(\\$270 + \\$225 = \\$495\\). Therefore, the shares are \\(\\$270 : \\$225\\).",
+              "work": "\\(\\text{Answer: } \\$270 : \\$225\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n20a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert a speed of \\(35\\text{ m/s}\\) to \\(\\text{km/h}\\).",
+          "options": [
+            "\\(126\\text{ km/h}\\)",
+            "\\(12.6\\text{ km/h}\\)",
+            "\\(9.72\\text{ km/h}\\)",
+            "\\(210\\text{ km/h}\\)"
+          ],
+          "answer": 0,
+          "hint": "To convert \\(\\text{m/s}\\) to \\(\\text{km/h}\\), multiply by \\(3600\\) (seconds in an hour) and divide by \\(1000\\) (metres in a km) — i.e., multiply by \\(3.6\\)!",
+          "keyPoints": [
+            {
+              "text": "35\\text{ m/s}\\) to \\(\\text{km/h}",
+              "note": "35 × 3.6 = 126 km/h."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply by \\(3600\\) to find metres travelled in \\(1\\text{ hour}\\): \\(35 \\times 3600 = 126{,}000\\text{ m/h}\\).",
+              "work": "\\(35 \\times 3600 = 126{,}000\\text{ m/h}\\)"
+            },
+            {
+              "explain": "Divide by \\(1000\\) to convert metres to kilometres: \\(126{,}000 \\div 1000 = 126\\text{ km/h}\\).",
+              "work": "\\(126{,}000 \\div 1000 = 126\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Shortcut check: \\(35 \\times 3.6 = 126\\text{ km/h}\\).",
+              "work": "\\(35 \\times 3.6 = 126\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Therefore, \\(35\\text{ m/s} = 126\\text{ km/h}\\).",
+              "work": "\\(\\text{Answer: } 126\\text{ km/h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-n20b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Travelling at a speed of \\(35\\text{ m/s}\\) (\\(126\\text{ km/h}\\)), find the distance travelled in \\(3\\text{ hours}\\).",
+          "options": [
+            "\\(105\\text{ km}\\)",
+            "\\(378\\text{ km}\\)",
+            "\\(368\\text{ km}\\)",
+            "\\(42\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\) with speed in \\(\\text{km/h}\\) (\\(126\\text{ km/h}\\)) and time in hours (\\(3\\text{ h}\\))!",
+          "keyPoints": [
+            {
+              "text": "distance travelled in \\(3\\text{ hours}\\)",
+              "note": "126 km/h × 3 h = 378 km."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the speed in \\(\\text{km/h}\\) to match the time in hours: \\(35\\text{ m/s} = 35 \\times 3.6 = 126\\text{ km/h}\\).",
+              "work": "\\(\\text{Speed} = 126\\text{ km/h}, \\quad \\text{Time} = 3\\text{ h}\\)"
+            },
+            {
+              "explain": "Apply \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\).",
+              "work": "\\(D = 126 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply: \\(100 \\times 3 + 20 \\times 3 + 6 \\times 3 = 300 + 60 + 18 = 378\\text{ km}\\).",
+              "work": "\\(D = 378\\text{ km}\\)"
+            },
+            {
+              "explain": "Therefore, the distance travelled in \\(3\\text{ hours}\\) is \\(378\\text{ km}\\).",
+              "work": "\\(\\text{Answer: } 378\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

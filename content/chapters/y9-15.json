@@ -670,6 +670,86 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(7x - 14 + x^2 - 2x\\).",
+          "options": [
+            "\\((x - 2)(x + 7)\\)",
+            "\\((x + 2)(x - 7)\\)",
+            "\\((x - 2)(x - 7)\\)",
+            "\\(x(x + 5) - 14\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise in pairs! \\(7x - 14 = 7(x - 2)\\) and \\(x^2 - 2x = x(x - 2)\\) — now pull out the common bracket \\((x - 2)\\)!",
+          "keyPoints": [
+            {
+              "text": "7x - 14 + x^2 - 2x",
+              "note": "Grouping: 7(x − 2) + x(x − 2) = (x − 2)(x + 7)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the expression into two pairs: \\((7x - 14) + (x^2 - 2x)\\).",
+              "work": "\\((7x - 14) + (x^2 - 2x)\\)"
+            },
+            {
+              "explain": "Factor out the HCF from each pair: \\(7(x - 2) + x(x - 2)\\).",
+              "work": "\\(7(x - 2) + x(x - 2)\\)"
+            },
+            {
+              "explain": "Factor out the common binomial \\((x - 2)\\): \\((x - 2)(7 + x) = (x - 2)(x + 7)\\).",
+              "work": "\\((x - 2)(x + 7)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(x^2 + 5x - 14 = 7x - 14 + x^2 - 2x\\). Exact!",
+              "work": "\\(\\text{Answer: } (x - 2)(x + 7)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Fully factorise \\(x^3 - x + 2x^2 - 2\\).",
+          "options": [
+            "\\((x - 1)(x + 1)(x + 2)\\)",
+            "\\((x^2 - 1)(x + 2)\\)",
+            "\\((x - 1)(x - 1)(x + 2)\\)",
+            "\\((x + 1)(x - 2)(x + 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Group in pairs: \\(x(x^2 - 1) + 2(x^2 - 1) = (x^2 - 1)(x + 2)\\), then do NOT stop there — factorise \\(x^2 - 1\\) as a difference of two squares!",
+          "keyPoints": [
+            {
+              "text": "Fully factorise",
+              "note": "(x² − 1)(x + 2) must be factorised further to (x − 1)(x + 1)(x + 2)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the four terms into two pairs and pull out each pair's HCF.",
+              "work": "\\((x^3 - x) + (2x^2 - 2) = x(x^2 - 1) + 2(x^2 - 1)\\)"
+            },
+            {
+              "explain": "Factor out the common binomial \\((x^2 - 1)\\).",
+              "work": "\\((x^2 - 1)(x + 2)\\)"
+            },
+            {
+              "explain": "Notice \\(x^2 - 1\\) is a difference of two squares, so factorise it further: \\(x^2 - 1 = (x - 1)(x + 1)\\).",
+              "work": "\\((x - 1)(x + 1)(x + 2)\\)"
+            },
+            {
+              "explain": "Therefore, the fully factorised expression is \\((x - 1)(x + 1)(x + 2)\\).",
+              "work": "\\(\\text{Answer: } (x - 1)(x + 1)(x + 2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -1333,6 +1413,46 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p14d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Factorise \\(3x^2 - 11x - 4\\).",
+          "options": [
+            "\\((3x + 1)(x - 4)\\)",
+            "\\((3x - 1)(x + 4)\\)",
+            "\\((3x - 4)(x + 1)\\)",
+            "\\((3x + 4)(x - 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the PSF (ac) method: \\(a \\times c = 3 \\times (-4) = -12\\). Find two numbers multiplying to \\(-12\\) and adding to \\(-11\\) (\\(-12\\) and \\(+1\\)), then split \\(-11x\\)!",
+          "keyPoints": [
+            {
+              "text": "3x^2 - 11x - 4",
+              "note": "Split −11x = −12x + x → 3x(x − 4) + 1(x − 4) = (3x + 1)(x − 4)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compute \\(a \\times c = 3 \\times (-4) = -12\\). Find two numbers with product \\(-12\\) and sum \\(-11\\): \\(-12\\) and \\(+1\\).",
+              "work": "\\(-12 \\times 1 = -12, \\quad -12 + 1 = -11\\)"
+            },
+            {
+              "explain": "Split the middle term \\(-11x\\) into \\(-12x + x\\).",
+              "work": "\\(3x^2 - 12x + x - 4\\)"
+            },
+            {
+              "explain": "Factorise in pairs: \\(3x(x - 4) + 1(x - 4) = (3x + 1)(x - 4)\\).",
+              "work": "\\(3x(x - 4) + 1(x - 4) = (3x + 1)(x - 4)\\)"
+            },
+            {
+              "explain": "Check by FOIL: \\(3x^2 - 12x + x - 4 = 3x^2 - 11x - 4\\). Exact!",
+              "work": "\\(\\text{Answer: } (3x + 1)(x - 4)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2152,6 +2272,126 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{x^2}{y} \\times \\dfrac{y^2}{x}\\).",
+          "options": [
+            "\\(xy\\)",
+            "\\(2xy\\)",
+            "\\(\\dfrac{x}{y}\\)",
+            "\\(\\dfrac{y}{x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply numerators and denominators (\\(\\dfrac{x^2 y^2}{xy}\\)), then cancel one \\(x\\) and one \\(y\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{x^2}{y} \\times \\dfrac{y^2}{x}",
+              "note": "x²y² / (xy) = xy."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\(\\dfrac{x^2}{y} \\times \\dfrac{y^2}{x} = \\dfrac{x^2 y^2}{xy}\\)"
+            },
+            {
+              "explain": "Cancel common factors using index subtraction: \\(\\dfrac{x^2}{x} = x\\) and \\(\\dfrac{y^2}{y} = y\\).",
+              "work": "\\(x^{2 - 1} y^{2 - 1} = x^1 y^1\\)"
+            },
+            {
+              "explain": "Write simply as \\(xy\\).",
+              "work": "\\(xy\\)"
+            },
+            {
+              "explain": "Therefore, the simplified result is \\(xy\\).",
+              "work": "\\(\\text{Answer: } xy\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{18ab}{24a}\\).",
+          "options": [
+            "\\(\\dfrac{3b}{4}\\)",
+            "\\(\\dfrac{3ab}{4}\\)",
+            "\\(\\dfrac{4b}{3}\\)",
+            "\\(\\dfrac{9b}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide \\(18\\) and \\(24\\) by their HCF (\\(6\\)), and cancel the common factor \\(a\\) from top and bottom!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{18ab}{24a}",
+              "note": "Divide by 6a: 18ab ÷ 6a = 3b and 24a ÷ 6a = 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor of numerator and denominator: \\(\\text{HCF}(18ab, 24a) = 6a\\).",
+              "work": "\\(\\text{HCF} = 6a\\)"
+            },
+            {
+              "explain": "Cancel \\(6\\) from the numbers (\\(18 \\div 6 = 3\\), \\(24 \\div 6 = 4\\)) and cancel \\(a\\).",
+              "work": "\\(\\dfrac{18ab \\div 6a}{24a \\div 6a} = \\dfrac{3b}{4}\\)"
+            },
+            {
+              "explain": "Check: \\(3\\) and \\(4\\) share no common factor.",
+              "work": "\\(\\dfrac{3b}{4}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified fraction is \\(\\dfrac{3b}{4}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{3b}{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{12x^2}{y} \\div \\dfrac{9x}{4y}\\).",
+          "options": [
+            "\\(\\dfrac{16x}{3}\\)",
+            "\\(\\dfrac{3x}{16}\\)",
+            "\\(\\dfrac{27x^3}{4y^2}\\)",
+            "\\(\\dfrac{16x}{3y}\\)"
+          ],
+          "answer": 0,
+          "hint": "Keep-Change-Flip! Turn division into multiplying by the reciprocal \\(\\dfrac{4y}{9x}\\), then cancel \\(y\\), \\(x\\), and \\(3\\)!",
+          "keyPoints": [
+            {
+              "text": "\\div \\dfrac{9x}{4y}",
+              "note": "(12x²/y) × (4y/9x) = 48x²y / (9xy) = 16x/3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Change division to multiplication by taking the reciprocal of the second fraction.",
+              "work": "\\(\\dfrac{12x^2}{y} \\times \\dfrac{4y}{9x}\\)"
+            },
+            {
+              "explain": "Multiply numerators and denominators: \\(\\dfrac{48x^2 y}{9xy}\\).",
+              "work": "\\(\\dfrac{48x^2 y}{9xy}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\(3xy\\): \\(48 \\div 3 = 16\\), \\(9 \\div 3 = 3\\), \\(x^2 \\div x = x\\), and \\(y \\div y = 1\\).",
+              "work": "\\(\\dfrac{16x}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified result is \\(\\dfrac{16x}{3}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{16x}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2800,6 +3040,86 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "brig22-y9-a2-p10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{7p}{9} - \\dfrac{5p}{9}\\).",
+          "options": [
+            "\\(\\dfrac{2p}{9}\\)",
+            "\\(\\dfrac{2}{9}\\)",
+            "\\(\\dfrac{12p}{9}\\)",
+            "\\(2p\\)"
+          ],
+          "answer": 0,
+          "hint": "Both fractions already share the same denominator \\(9\\) — just subtract the numerators (\\(7p - 5p\\)) over \\(9\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{7p}{9} - \\dfrac{5p}{9}",
+              "note": "Same denominator 9: (7p − 5p)/9 = 2p/9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check the denominators: both fractions already have the common denominator \\(9\\).",
+              "work": "\\(\\dfrac{7p - 5p}{9}\\)"
+            },
+            {
+              "explain": "Subtract the like terms in the numerator: \\(7p - 5p = 2p\\).",
+              "work": "\\(\\dfrac{2p}{9}\\)"
+            },
+            {
+              "explain": "Check if \\(2\\) and \\(9\\) share a common factor: \\(\\text{HCF}(2, 9) = 1\\), so it is fully simplified.",
+              "work": "\\(\\dfrac{2p}{9}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified fraction is \\(\\dfrac{2p}{9}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{2p}{9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "brig22-y9-a2-p10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{5x}{6} + \\dfrac{x}{3}\\).",
+          "options": [
+            "\\(\\dfrac{7x}{6}\\)",
+            "\\(\\dfrac{6x}{9}\\)",
+            "\\(\\dfrac{2x}{3}\\)",
+            "\\(\\dfrac{6x}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert \\(\\dfrac{x}{3}\\) to sixths by multiplying top and bottom by \\(2\\) (\\(\\dfrac{2x}{6}\\)), then add the numerators!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{5x}{6} + \\dfrac{x}{3}",
+              "note": "Common denominator 6: 5x/6 + 2x/6 = 7x/6."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the lowest common denominator of \\(6\\) and \\(3\\), which is \\(6\\).",
+              "work": "\\(\\text{LCD}(6, 3) = 6\\)"
+            },
+            {
+              "explain": "Rewrite \\(\\dfrac{x}{3}\\) with denominator \\(6\\) by multiplying top and bottom by \\(2\\): \\(\\dfrac{2x}{6}\\).",
+              "work": "\\(\\dfrac{5x}{6} + \\dfrac{2x}{6}\\)"
+            },
+            {
+              "explain": "Add the numerators over the common denominator: \\(5x + 2x = 7x\\).",
+              "work": "\\(\\dfrac{5x + 2x}{6} = \\dfrac{7x}{6}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(\\dfrac{7x}{6}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{7x}{6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
