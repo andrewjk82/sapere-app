@@ -3927,10 +3927,10 @@
           "stem": "Consider the relation \\((x-3)^{2}+(y+1)^{2}=4\\). Write the domain and range of both relations.",
           "difficulty": "medium",
           "options": [
-            "Original: domain \\(1\\leq x\\leq5\\), range \\(-3\\leq y\\leq1\\); inverse: domain \\(-3\\leq x\\leq1\\), range \\(1\\leq y\\leq5\\)",
-            "Original: domain \\(-3\\leq x\\leq1\\), range \\(1\\leq y\\leq5\\); inverse: domain \\(1\\leq x\\leq5\\), range \\(-3\\leq y\\leq1\\)",
-            "Original: domain \\(-1\\leq x\\leq3\\), range \\(-1\\leq y\\leq3\\); inverse: domain \\(-1\\leq x\\leq3\\), range \\(-1\\leq y\\leq3\\)",
-            "Original: domain \\(1\\leq x\\leq5\\), range \\(1\\leq y\\leq5\\); inverse: domain \\(-3\\leq x\\leq1\\), range \\(-3\\leq y\\leq1\\)"
+            "\\(\\begin{aligned}&\\text{Original: domain}\\ 1\\leq x\\leq5\\text{, range}\\ -3\\leq y\\leq1\\text{;}\\\\ &\\text{inverse: domain}\\ -3\\leq x\\leq1\\text{, range}\\ 1\\leq y\\leq5\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Original: domain}\\ -3\\leq x\\leq1\\text{, range}\\ 1\\leq y\\leq5\\text{;}\\\\ &\\text{inverse: domain}\\ 1\\leq x\\leq5\\text{, range}\\ -3\\leq y\\leq1\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Original: domain}\\ -1\\leq x\\leq3\\text{, range}\\ -1\\leq y\\leq3\\text{;}\\\\ &\\text{inverse: domain}\\ -1\\leq x\\leq3\\text{, range}\\ -1\\leq y\\leq3\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Original: domain}\\ 1\\leq x\\leq5\\text{, range}\\ 1\\leq y\\leq5\\text{;}\\\\ &\\text{inverse: domain}\\ -3\\leq x\\leq1\\text{, range}\\ -3\\leq y\\leq1\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "For a circle with centre \\((a,b)\\) and radius \\(r\\): domain \\(a-r\\leq x\\leq a+r\\), range \\(b-r\\leq y\\leq b+r\\). The inverse swaps domain and range.",
@@ -3977,10 +3977,10 @@
           "stem": "Consider \\(f(x)=x^{2}-4x\\). Find the \\(x\\)-intercepts and vertex of \\(f(x)=x^{2}-4x\\).",
           "difficulty": "easy",
           "options": [
-            "\\(x\\)-intercepts \\(0\\) and \\(4\\); vertex \\((2,-4)\\)",
-            "\\(x\\)-intercepts \\(0\\) and \\(-4\\); vertex \\((-2,-4)\\)",
-            "\\(x\\)-intercepts \\(0\\) and \\(4\\); vertex \\((2,4)\\)",
-            "\\(x\\)-intercept \\(4\\) only; vertex \\((4,0)\\)"
+            "\\(\\begin{aligned}&x\\ \\text{-intercepts}\\ 0\\ \\text{and}\\ 4\\text{;}\\\\ &\\text{vertex}\\ (2,-4)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x\\ \\text{-intercepts}\\ 0\\ \\text{and}\\ -4\\text{;}\\\\ &\\text{vertex}\\ (-2,-4)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x\\ \\text{-intercepts}\\ 0\\ \\text{and}\\ 4\\text{;}\\\\ &\\text{vertex}\\ (2,4)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x\\ \\text{-intercept}\\ 4\\ \\text{only;}\\\\ &\\text{vertex}\\ (4,0)\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "\\(x\\)-intercepts: set \\(f(x)=0\\) and factorise. Vertex: the \\(x\\)-coordinate is halfway between the two intercepts (or \\(x=-\\dfrac{b}{2a}\\)); then find \\(y\\) by substituting.",
