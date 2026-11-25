@@ -1153,6 +1153,172 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q11a1",
+          "type": "mc",
+          "stem": "If \\(A=6-4i\\) and \\(B=-8+6i\\), evaluate the following: \\(AB\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-24+68i\\)",
+            "\\(-72+68i\\)",
+            "\\(24+68i\\)",
+            "\\(-24-68i\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand like two brackets (FOIL), then replace \\(i^{2}\\) by \\(-1\\) and collect the real and imaginary parts.",
+          "steps": [
+            {
+              "explain": "Multiply each term of the first bracket by each term of the second (four products).",
+              "work": "\\((6-4i)(-8+6i)=6(-8)+6(6i)-4i(-8)-4i(6i)\\)"
+            },
+            {
+              "explain": "Evaluate each product.",
+              "work": "\\(=-48+36i+32i-24i^{2}\\)"
+            },
+            {
+              "explain": "Replace \\(i^{2}=-1\\): the term \\(-24i^{2}\\) becomes \\(+24\\).",
+              "work": "\\(=-48+36i+32i+24\\)"
+            },
+            {
+              "explain": "Collect real parts and imaginary parts.",
+              "work": "\\(=(-48+24)+(36+32)i=-24+68i\\)"
+            },
+            {
+              "explain": "Why not the others: \\(-72+68i\\) uses \\(i^{2}=+1\\); \\(24+68i\\) and \\(-24-68i\\) have a sign slip in the real or imaginary part.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate the following",
+              "note": "Expand, then use i² = −1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q11a2",
+          "type": "mc",
+          "stem": "If \\(A=6-4i\\) and \\(B=-8+6i\\), evaluate the following: \\(\\dfrac{A}{B}\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\dfrac{18}{25}-\\dfrac{1}{25}i\\)",
+            "\\(-\\dfrac{18}{25}+\\dfrac{1}{25}i\\)",
+            "\\(\\dfrac{18}{25}+\\dfrac{1}{25}i\\)",
+            "\\(-\\dfrac{3}{4}-\\dfrac{2}{3}i\\)"
+          ],
+          "answer": 0,
+          "hint": "To divide complex numbers multiply top and bottom by the CONJUGATE of the denominator. The conjugate of \\(-8+6i\\) is \\(-8-6i\\). The denominator becomes a real number.",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by the conjugate of \\(B\\).",
+              "work": "\\(\\dfrac{A}{B}=\\dfrac{6-4i}{-8+6i}\\times\\dfrac{-8-6i}{-8-6i}\\)"
+            },
+            {
+              "explain": "Numerator: expand and use \\(i^{2}=-1\\).",
+              "work": "\\((6-4i)(-8-6i)=-48-36i+32i+24i^{2}=-48-4i-24=-72-4i\\)"
+            },
+            {
+              "explain": "Denominator: \\((a+bi)(a-bi)=a^{2}+b^{2}\\) (real).",
+              "work": "\\((-8+6i)(-8-6i)=64+36=100\\)"
+            },
+            {
+              "explain": "Divide each part by 100 and simplify.",
+              "work": "\\(\\dfrac{-72-4i}{100}=-\\dfrac{72}{100}-\\dfrac{4}{100}i=-\\dfrac{18}{25}-\\dfrac{1}{25}i\\)"
+            },
+            {
+              "explain": "Why not the others: the sign of the imaginary part must be negative; \\(-\\dfrac{3}{4}-\\dfrac{2}{3}i\\) wrongly divides real by real and imaginary by imaginary.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate the following",
+              "note": "Multiply top and bottom by the conjugate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q11a3",
+          "type": "mc",
+          "stem": "If \\(A=6-4i\\) and \\(B=-8+6i\\), evaluate the following: \\(\\sqrt{B}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\pm(1+3i)\\)",
+            "\\(1+3i\\) only",
+            "\\(\\pm(3+i)\\)",
+            "\\(\\pm(1-3i)\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(\\sqrt{B}=x+iy\\) with \\(x,y\\) real. Square it and equate the real and imaginary parts to \\(-8\\) and \\(6\\). A square root has TWO values (\\(\\pm\\)).",
+          "steps": [
+            {
+              "explain": "Let \\((x+iy)^{2}=-8+6i\\) and expand the left side.",
+              "work": "\\(x^{2}-y^{2}+2xyi=-8+6i\\)"
+            },
+            {
+              "explain": "Equate real parts and imaginary parts.",
+              "work": "\\(x^{2}-y^{2}=-8\\qquad\\text{and}\\qquad2xy=6\\ \\Rightarrow\\ xy=3\\)"
+            },
+            {
+              "explain": "From \\(xy=3\\): \\(y=\\dfrac{3}{x}\\). Substitute into the first equation.",
+              "work": "\\(x^{2}-\\dfrac{9}{x^{2}}=-8\\ \\Rightarrow\\ x^{4}+8x^{2}-9=0\\)"
+            },
+            {
+              "explain": "Factorise as a quadratic in \\(x^{2}\\): \\((x^{2}-1)(x^{2}+9)=0\\). Since \\(x\\) is real, \\(x^{2}=1\\) (not \\(-9\\)).",
+              "work": "\\(x^{2}=1\\ \\Rightarrow\\ x=\\pm1\\)"
+            },
+            {
+              "explain": "Find \\(y\\) from \\(y=\\dfrac{3}{x}\\): \\(x=1\\Rightarrow y=3\\); \\(x=-1\\Rightarrow y=-3\\).",
+              "work": "\\(x=1,y=3\\quad\\text{or}\\quad x=-1,y=-3\\)"
+            },
+            {
+              "explain": "Both roots: \\(\\sqrt{B}=\\pm(1+3i)\\). Check: \\((1+3i)^{2}=1+6i-9=-8+6i\\) ✓. Why not the others: \\(1+3i\\) alone misses the root \\(-(1+3i)\\); \\((3+i)^{2}=8+6i\\) and \\((1-3i)^{2}=-8-6i\\) do not equal \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "evaluate the following",
+              "note": "Square (x + iy) and equate real and imaginary parts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1823,6 +1989,62 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q4",
+          "type": "mc",
+          "stem": "The complex number \\(a+bi\\), where \\(a\\) and \\(b\\) are real constants, is represented in the Argand diagram shown (a point in the first quadrant, to the right of and above the origin). The complex number \\(-i(a+bi)\\) could be represented by",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 614 673\" width=\"100%\" height=\"auto\" style=\"max-width:620px;display:block;margin:0 auto\"><g transform=\"translate(157.0,0)\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"215\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"61.0\" y1=\"107.5\" x2=\"243.0\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"196.5\" x2=\"150.0\" y2=\"14.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"103.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"146.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"154.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"239.0\" y=\"123.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"158.0\" y=\"20.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"210.0\" cy=\"82.5\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\">Given: a + bi</text></g><g transform=\"translate(0,229)\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"215\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"61.0\" y1=\"107.5\" x2=\"243.0\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"196.5\" x2=\"150.0\" y2=\"14.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"103.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"146.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"154.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"239.0\" y=\"123.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"158.0\" y=\"20.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"210.0\" cy=\"132.5\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(314,229)\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"215\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"61.0\" y1=\"107.5\" x2=\"243.0\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"196.5\" x2=\"150.0\" y2=\"14.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"103.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"146.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"154.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"239.0\" y=\"123.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"158.0\" y=\"20.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"125.0\" cy=\"47.5\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(0,458)\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"215\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"61.0\" y1=\"107.5\" x2=\"243.0\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"196.5\" x2=\"150.0\" y2=\"14.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"103.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"146.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"154.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"239.0\" y=\"123.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"158.0\" y=\"20.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"175.0\" cy=\"167.5\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(314,458)\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"215\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"61.0\" y1=\"107.5\" x2=\"243.0\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"196.5\" x2=\"150.0\" y2=\"14.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"103.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"107.5\" x2=\"236.1\" y2=\"111.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"146.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"14.5\" x2=\"154.0\" y2=\"21.4\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"239.0\" y=\"123.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"158.0\" y=\"20.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"90.0\" cy=\"82.5\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "Multiplying by \\(-i\\) is a ROTATION by \\(-90^{\\circ}\\) (clockwise quarter turn) about the origin. Alternatively, multiply out \\(-i(a+bi)\\) and compare the real and imaginary parts.",
+          "steps": [
+            {
+              "explain": "Expand \\(-i(a+bi)\\), using \\(i^{2}=-1\\).",
+              "work": "\\(-i(a+bi)=-ai-bi^{2}=b-ai\\)"
+            },
+            {
+              "explain": "Read off the new point: real part \\(=b\\) (positive, small), imaginary part \\(=-a\\) (negative, large, since \\(a>b\\) in the diagram).",
+              "work": "\\((a,b)\\ \\longrightarrow\\ (b,\\,-a)\\)"
+            },
+            {
+              "explain": "Geometrically: the point is rotated \\(90^{\\circ}\\) clockwise (orange arrow). A first-quadrant point near the real axis moves into the fourth quadrant near the NEGATIVE imaginary axis.",
+              "work": "\\(z\\ \\to\\ -iz:\\ \\text{rotation by }-\\dfrac{\\pi}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"42.0\" y1=\"120.0\" x2=\"292.0\" y2=\"120.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"243.0\" x2=\"165.0\" y2=\"-7.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"120.0\" x2=\"285.1\" y2=\"116.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"292.0\" y1=\"120.0\" x2=\"285.1\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"-7.0\" x2=\"161.0\" y2=\"-0.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"-7.0\" x2=\"169.0\" y2=\"-0.1\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"288.0\" y=\"136.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"173.0\" y=\"-1.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"165.0\" y1=\"120.0\" x2=\"249.0\" y2=\"85.0\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"249.0\" cy=\"85.0\" r=\"4.6\" fill=\"#3b4ea8\"/><line x1=\"165.0\" y1=\"120.0\" x2=\"200.0\" y2=\"204.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"200.0\" cy=\"204.0\" r=\"4.6\" fill=\"#dc2626\"/><path d=\"M 223.2 95.8 A 63.0 63.0 0 0 1 189.2 178.2\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><line x1=\"189.2\" y1=\"178.2\" x2=\"198.2\" y2=\"179.3\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"189.2\" y1=\"178.2\" x2=\"194.7\" y2=\"171.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"235.0\" y=\"174.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−90°</text><text x=\"255.0\" y=\"77.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><text x=\"196.0\" y=\"222.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−iz</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare with the options: A is \\((a,-b)\\) (reflection in the real axis); B is \\((-b,a)\\) (rotation by \\(+90^{\\circ}\\)); D is \\((-a,b)\\) (reflection in the imaginary axis). Only C is below the real axis, a small distance to the right, and far down: the point \\((b,-a)\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The complex number \\(-i(a+bi)\\) could be represented by",
+              "note": "Multiply by −i: rotate 90° clockwise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2585,6 +2807,63 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q8",
+          "type": "mc",
+          "stem": "Which of the following is the complex number \\(z=5\\sqrt{3}-5i\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(10e^{-\\frac{i\\pi}{6}}\\)",
+            "\\(10e^{\\frac{5\\pi i}{6}}\\)",
+            "\\(5e^{-\\frac{i\\pi}{6}}\\)",
+            "\\(5e^{\\frac{5\\pi i}{6}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Exponential form is \\(re^{i\\theta}\\) with \\(r=|z|\\) and \\(\\theta=\\arg z\\). Find the modulus first, then the argument, and check which QUADRANT \\(z\\) is in.",
+          "steps": [
+            {
+              "explain": "Modulus: \\(|z|=\\sqrt{(\\text{real})^{2}+(\\text{imaginary})^{2}}\\).",
+              "work": "\\(|z|=\\sqrt{(5\\sqrt{3})^{2}+(-5)^{2}}=\\sqrt{75+25}=\\sqrt{100}=10\\)"
+            },
+            {
+              "explain": "Quadrant: real part \\(5\\sqrt{3}>0\\), imaginary part \\(-5<0\\): \\(z\\) is in the 4th quadrant, so \\(\\arg z\\) is a small NEGATIVE angle.",
+              "work": "\\(\\text{4th quadrant}\\Rightarrow-\\dfrac{\\pi}{2}<\\arg z<0\\)"
+            },
+            {
+              "explain": "Reference angle: \\(\\tan\\alpha=\\dfrac{5}{5\\sqrt{3}}=\\dfrac{1}{\\sqrt{3}}\\), so \\(\\alpha=\\dfrac{\\pi}{6}\\). In the 4th quadrant \\(\\arg z=-\\dfrac{\\pi}{6}\\).",
+              "work": "\\(\\arg z=-\\dfrac{\\pi}{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"22.0\" y1=\"222.5\" x2=\"22.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"39.0\" y1=\"222.5\" x2=\"39.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"222.5\" x2=\"56.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"73.0\" y1=\"222.5\" x2=\"73.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"222.5\" x2=\"90.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"107.0\" y1=\"222.5\" x2=\"107.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"124.0\" y1=\"222.5\" x2=\"124.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"141.0\" y1=\"222.5\" x2=\"141.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"158.0\" y1=\"222.5\" x2=\"158.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"175.0\" y1=\"222.5\" x2=\"175.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"192.0\" y1=\"222.5\" x2=\"192.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"209.0\" y1=\"222.5\" x2=\"209.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"226.0\" y1=\"222.5\" x2=\"226.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"243.0\" y1=\"222.5\" x2=\"243.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"222.5\" x2=\"260.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"277.0\" y1=\"222.5\" x2=\"277.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"214.0\" x2=\"277.0\" y2=\"214.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"197.0\" x2=\"277.0\" y2=\"197.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"180.0\" x2=\"277.0\" y2=\"180.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"163.0\" x2=\"277.0\" y2=\"163.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"146.0\" x2=\"277.0\" y2=\"146.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"129.0\" x2=\"277.0\" y2=\"129.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"112.0\" x2=\"277.0\" y2=\"112.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"95.0\" x2=\"277.0\" y2=\"95.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"78.0\" x2=\"277.0\" y2=\"78.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"61.0\" x2=\"277.0\" y2=\"61.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"44.0\" x2=\"277.0\" y2=\"44.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"27.0\" x2=\"277.0\" y2=\"27.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.0\" y1=\"10.0\" x2=\"277.0\" y2=\"10.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"18.0\" y1=\"95.0\" x2=\"285.0\" y2=\"95.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"226.5\" x2=\"90.0\" y2=\"2.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"285.0\" y1=\"95.0\" x2=\"278.1\" y2=\"91.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"285.0\" y1=\"95.0\" x2=\"278.1\" y2=\"99.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"2.0\" x2=\"86.0\" y2=\"8.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"90.0\" y1=\"2.0\" x2=\"94.0\" y2=\"8.9\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"281.0\" y=\"111.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"98.0\" y=\"8.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"90.0\" y1=\"95.0\" x2=\"237.2\" y2=\"180.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"237.2\" cy=\"180.0\" r=\"4.6\" fill=\"#dc2626\"/><text x=\"247.2\" y=\"190.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><path d=\"M 192.0 95.0 A 102.0 102.0 0 0 1 178.3 146.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><text x=\"115.5\" y=\"207.2\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\">arg z =</text><text x=\"177.5\" y=\"200.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−π</text><line x1=\"166.4\" y1=\"204.2\" x2=\"188.6\" y2=\"204.2\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"177.5\" y=\"217.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"237.2\" y1=\"180.0\" x2=\"237.2\" y2=\"95.0\" stroke=\"#3b4ea8\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"237.2\" y1=\"95.0\" x2=\"90.0\" y2=\"95.0\" stroke=\"#047857\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"245.2\" y=\"137.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−5</text><text x=\"163.6\" y=\"87.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5√3</text><text x=\"159.6\" y=\"163.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">|z| = 10</text></svg>"
+              }
+            },
+            {
+              "explain": "Write in exponential form.",
+              "work": "\\(z=10e^{-\\frac{i\\pi}{6}}\\)"
+            },
+            {
+              "explain": "Why not the others: C and D have the wrong modulus (5); B and D have argument \\(\\dfrac{5\\pi}{6}\\), which is in the 2nd quadrant (they would have a NEGATIVE real part).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is the complex number",
+              "note": "Find r = |z| and θ = arg z, check the quadrant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4781,6 +5060,238 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q5",
+          "type": "mc",
+          "stem": "The equation, in Cartesian form, of the locus of the point \\(z\\) if \\(|z+2i|=|z+4|\\) is:",
+          "difficulty": "medium",
+          "options": [
+            "\\(x-2y+3=0\\)",
+            "\\(2x-y+3=0\\)",
+            "\\(x+2y+3=0\\)",
+            "\\(2x+y+3=0\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(z=x+iy\\) and group the real and imaginary parts inside each modulus. Then SQUARE both sides to remove the square roots and simplify.",
+          "steps": [
+            {
+              "explain": "Let \\(z=x+iy\\). Group real and imaginary parts: \\(z+2i=x+(y+2)i\\) and \\(z+4=(x+4)+yi\\).",
+              "work": "\\(|z+2i|=\\sqrt{x^{2}+(y+2)^{2}},\\quad|z+4|=\\sqrt{(x+4)^{2}+y^{2}}\\)"
+            },
+            {
+              "explain": "Both moduli are equal, so their squares are equal.",
+              "work": "\\(x^{2}+(y+2)^{2}=(x+4)^{2}+y^{2}\\)"
+            },
+            {
+              "explain": "Expand the brackets.",
+              "work": "\\(x^{2}+y^{2}+4y+4=x^{2}+8x+16+y^{2}\\)"
+            },
+            {
+              "explain": "Cancel \\(x^{2}\\) and \\(y^{2}\\) from both sides.",
+              "work": "\\(4y+4=8x+16\\)"
+            },
+            {
+              "explain": "Collect everything on one side, then divide by 4.",
+              "work": "\\(8x-4y+12=0\\ \\Rightarrow\\ 2x-y+3=0\\)"
+            },
+            {
+              "explain": "Meaning: \\(|z+2i|\\) is the distance from \\(z\\) to \\(-2i\\), and \\(|z+4|\\) is the distance from \\(z\\) to \\(-4\\). Points equidistant from the two fixed points \\(-2i\\) and \\(-4\\) lie on the PERPENDICULAR BISECTOR of the segment joining them (green line, through the midpoint \\((-2,-1)\\)). Check: \\(2(-2)-(-1)+3=0\\) ✓.",
+              "work": "\\(P(-1,1):\\ \\text{both distances}=\\sqrt{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 262\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"49.0\" y1=\"256.2\" x2=\"49.0\" y2=\"9.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"93.0\" y1=\"256.2\" x2=\"93.0\" y2=\"9.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"137.0\" y1=\"256.2\" x2=\"137.0\" y2=\"9.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"256.2\" x2=\"181.0\" y2=\"9.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"225.0\" y1=\"256.2\" x2=\"225.0\" y2=\"9.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"13.8\" y1=\"243.0\" x2=\"260.2\" y2=\"243.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"13.8\" y1=\"199.0\" x2=\"260.2\" y2=\"199.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"13.8\" y1=\"155.0\" x2=\"260.2\" y2=\"155.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"13.8\" y1=\"111.0\" x2=\"260.2\" y2=\"111.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"13.8\" y1=\"67.0\" x2=\"260.2\" y2=\"67.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"13.8\" y1=\"23.0\" x2=\"260.2\" y2=\"23.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"9.8\" y1=\"111.0\" x2=\"268.2\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"225.0\" y1=\"260.2\" x2=\"225.0\" y2=\"1.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"268.2\" y1=\"111.0\" x2=\"261.3\" y2=\"107.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"268.2\" y1=\"111.0\" x2=\"261.3\" y2=\"115.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"225.0\" y1=\"1.8\" x2=\"221.0\" y2=\"8.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"225.0\" y1=\"1.8\" x2=\"229.0\" y2=\"8.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"264.2\" y=\"127.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"233.0\" y=\"7.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><line x1=\"82.0\" y1=\"265.0\" x2=\"214.0\" y2=\"1.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"181.0\" y1=\"67.0\" x2=\"225.0\" y2=\"199.0\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"181.0\" y1=\"67.0\" x2=\"49.0\" y2=\"111.0\" stroke=\"#3b4ea8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"225.0\" y1=\"199.0\" x2=\"49.0\" y2=\"111.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><circle cx=\"225.0\" cy=\"199.0\" r=\"4.6\" fill=\"#dc2626\"/><text x=\"235.0\" y=\"193.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−2i</text><circle cx=\"49.0\" cy=\"111.0\" r=\"4.6\" fill=\"#3b4ea8\"/><text x=\"43.0\" y=\"103.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−4</text><circle cx=\"137.0\" cy=\"155.0\" r=\"4.6\" fill=\"#1e293b\"/><text x=\"155.0\" y=\"143.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"181.0\" cy=\"67.0\" r=\"4.6\" fill=\"#047857\"/><text x=\"171.0\" y=\"59.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"194.2\" y=\"23.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y = 2x + 3</text></svg>"
+              }
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The equation, in Cartesian form, of the locus of the point \\(z\\)",
+              "note": "Equal distances: perpendicular bisector."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q11b1",
+          "type": "mc",
+          "stem": "For a complex number \\(z\\), \\(|z-1|=2|z+1|\\). Find the Cartesian equation of the locus of \\(z\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(3x^{2}+10x+3y^{2}+3=0\\)",
+            "\\(3x^{2}-10x+3y^{2}+3=0\\)",
+            "\\(x^{2}+6x+y^{2}+1=0\\)",
+            "\\(3x^{2}+10x+3y^{2}-3=0\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(z=x+iy\\). Write each modulus squared, remembering that \\(2|z+1|\\) squared is \\(4|z+1|^{2}\\) (the 2 must be squared too).",
+          "steps": [
+            {
+              "explain": "Let \\(z=x+iy\\). Square both sides of \\(|z-1|=2|z+1|\\) (the 2 becomes 4).",
+              "work": "\\(|z-1|^{2}=4|z+1|^{2}\\)"
+            },
+            {
+              "explain": "Write each modulus squared in terms of \\(x\\) and \\(y\\): \\(|a+bi|^{2}=a^{2}+b^{2}\\).",
+              "work": "\\((x-1)^{2}+y^{2}=4\\left[(x+1)^{2}+y^{2}\\right]\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(x^{2}-2x+1+y^{2}=4x^{2}+8x+4+4y^{2}\\)"
+            },
+            {
+              "explain": "Bring everything to the right side.",
+              "work": "\\(0=3x^{2}+10x+3y^{2}+3\\)"
+            },
+            {
+              "explain": "The Cartesian equation of the locus is \\(3x^{2}+10x+3y^{2}+3=0\\).",
+              "work": "\\(3x^{2}+10x+3y^{2}=-3\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps \\(z-1\\) and \\(z+1\\) (sign of \\(10x\\)); C does not square the factor 2 (uses 2 instead of 4); D has a wrong constant sign.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the Cartesian equation of the locus of \\(z\\)",
+              "note": "Square both sides; the factor 2 becomes 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q11b2",
+          "type": "mc",
+          "stem": "For a complex number \\(z\\), \\(|z-1|=2|z+1|\\). Describe the locus of \\(z\\).",
+          "difficulty": "medium",
+          "options": [
+            "A circle with centre \\(\\left(-\\dfrac{5}{3},0\\right)\\) and radius \\(\\dfrac{4}{3}\\)",
+            "A circle with centre \\(\\left(\\dfrac{5}{3},0\\right)\\) and radius \\(\\dfrac{4}{3}\\)",
+            "A circle with centre \\(\\left(-\\dfrac{5}{3},0\\right)\\) and radius \\(\\dfrac{16}{9}\\)",
+            "A straight line through \\(\\left(-\\dfrac{5}{3},0\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the equation \\(3x^{2}+10x+3y^{2}+3=0\\) by 3 so \\(x^{2}\\) and \\(y^{2}\\) have coefficient 1, then COMPLETE THE SQUARE in \\(x\\). Compare with \\((x-h)^{2}+(y-k)^{2}=r^{2}\\).",
+          "steps": [
+            {
+              "explain": "Divide by 3 so that the coefficients of \\(x^{2}\\) and \\(y^{2}\\) are both 1 (equal coefficients mean a circle).",
+              "work": "\\(x^{2}+\\dfrac{10}{3}x+y^{2}=-1\\)"
+            },
+            {
+              "explain": "Complete the square: add \\(\\left(\\dfrac{10}{3}\\div2\\right)^{2}=\\left(\\dfrac{5}{3}\\right)^{2}=\\dfrac{25}{9}\\) to both sides.",
+              "work": "\\(x^{2}+\\dfrac{10}{3}x+\\dfrac{25}{9}+y^{2}=-1+\\dfrac{25}{9}\\)"
+            },
+            {
+              "explain": "Factorise the \\(x\\)-terms and simplify the right side.",
+              "work": "\\(\\left(x+\\dfrac{5}{3}\\right)^{2}+y^{2}=\\dfrac{16}{9}\\)"
+            },
+            {
+              "explain": "Compare with \\((x-h)^{2}+(y-k)^{2}=r^{2}\\): centre \\(\\left(-\\dfrac{5}{3},0\\right)\\), and \\(r^{2}=\\dfrac{16}{9}\\), so \\(r=\\dfrac{4}{3}\\) (the square ROOT of \\(\\dfrac{16}{9}\\)).",
+              "work": "\\(\\text{centre}\\left(-\\dfrac{5}{3},0\\right),\\quad r=\\dfrac{4}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"15.2\" y1=\"214.2\" x2=\"15.2\" y2=\"15.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"77.2\" y1=\"214.2\" x2=\"77.2\" y2=\"15.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"139.2\" y1=\"214.2\" x2=\"139.2\" y2=\"15.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"201.2\" y1=\"214.2\" x2=\"201.2\" y2=\"15.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"263.2\" y1=\"214.2\" x2=\"263.2\" y2=\"15.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"325.2\" y1=\"214.2\" x2=\"325.2\" y2=\"15.8\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-9.6\" y1=\"177.0\" x2=\"325.2\" y2=\"177.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-9.6\" y1=\"115.0\" x2=\"325.2\" y2=\"115.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-9.6\" y1=\"53.0\" x2=\"325.2\" y2=\"53.0\" stroke=\"#eef2f7\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"-13.6\" y1=\"115.0\" x2=\"333.2\" y2=\"115.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"263.2\" y1=\"218.2\" x2=\"263.2\" y2=\"7.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"333.2\" y1=\"115.0\" x2=\"326.3\" y2=\"111.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"333.2\" y1=\"115.0\" x2=\"326.3\" y2=\"119.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"263.2\" y1=\"7.8\" x2=\"259.2\" y2=\"14.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"263.2\" y1=\"7.8\" x2=\"267.2\" y2=\"14.7\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"329.2\" y=\"131.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re(z)</text><text x=\"271.2\" y=\"13.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im(z)</text><circle cx=\"325.2\" cy=\"115.0\" r=\"4.6\" fill=\"#3b4ea8\"/><text x=\"325.2\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">1</text><circle cx=\"201.2\" cy=\"115.0\" r=\"4.6\" fill=\"#3b4ea8\"/><text x=\"201.2\" y=\"105.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">−1</text><circle cx=\"159.9\" cy=\"115.0\" r=\"4.6\" fill=\"#047857\"/><circle cx=\"159.9\" cy=\"115.0\" r=\"82.7\" fill=\"#047857\" fill-opacity=\"0.12\" stroke=\"#047857\" stroke-width=\"3\"/><line x1=\"159.9\" y1=\"115.0\" x2=\"242.5\" y2=\"115.0\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><text x=\"203.1\" y=\"133.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">radius 4/3</text><text x=\"159.9\" y=\"81.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">centre (−5/3, 0)</text></svg>"
+              }
+            },
+            {
+              "explain": "Check with the point \\(\\left(-\\dfrac{1}{3},0\\right)\\) on the circle: \\(|z-1|=\\dfrac{4}{3}\\) and \\(|z+1|=\\dfrac{2}{3}\\), so \\(|z-1|=2|z+1|\\) ✓. Why not the others: B has the wrong sign for the centre; C uses \\(r^{2}\\) as the radius; D is not a line (there are \\(x^{2}\\) and \\(y^{2}\\) terms).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Describe the locus of \\(z\\)",
+              "note": "Complete the square: (x − h)² + (y − k)² = r²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q11d",
+          "type": "mc",
+          "stem": "For a complex number \\(z\\), shade the region of the Argand plane in which \\(1<|z|\\le3\\) and \\(-\\dfrac{\\pi}{3}\\le\\arg z\\le\\dfrac{\\pi}{4}\\). Which diagram is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 484 414\" width=\"100%\" height=\"auto\" style=\"max-width:490px;display:block;margin:0 auto\"><g transform=\"translate(0,0)\"><rect x=\"0\" y=\"0\" width=\"235\" height=\"200\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"20.3\" y1=\"104.0\" x2=\"217.4\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"193.1\" x2=\"117.5\" y2=\"12.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"100.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"114.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"121.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"81\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"27\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 158.0 174.1 A 81.0 81.0 0 0 0 174.8 46.7 L 136.6 84.9 A 27.0 27.0 0 0 1 131.0 127.4 Z\" fill=\"#047857\" fill-opacity=\"0.28\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"147.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"201.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">A</text></g><g transform=\"translate(249,0)\"><rect x=\"0\" y=\"0\" width=\"235\" height=\"200\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"20.3\" y1=\"104.0\" x2=\"217.4\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"193.1\" x2=\"117.5\" y2=\"12.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"100.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"114.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"121.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"81\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"27\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 174.8 161.3 A 81.0 81.0 0 0 0 158.0 33.9 L 131.0 80.6 A 27.0 27.0 0 0 1 136.6 123.1 Z\" fill=\"#047857\" fill-opacity=\"0.28\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"147.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"201.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">B</text></g><g transform=\"translate(0,214)\"><rect x=\"0\" y=\"0\" width=\"235\" height=\"200\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"20.3\" y1=\"104.0\" x2=\"217.4\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"193.1\" x2=\"117.5\" y2=\"12.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"100.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"114.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"121.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"81\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"27\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 117.5 104.0 L 131.0 127.4 A 27.0 27.0 0 0 0 136.6 84.9 Z\" fill=\"#047857\" fill-opacity=\"0.28\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"147.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"201.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">C</text></g><g transform=\"translate(249,214)\"><rect x=\"0\" y=\"0\" width=\"235\" height=\"200\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"20.3\" y1=\"104.0\" x2=\"217.4\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"193.1\" x2=\"117.5\" y2=\"12.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"100.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"217.4\" y1=\"104.0\" x2=\"211.3\" y2=\"107.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"114.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"117.5\" y1=\"12.2\" x2=\"121.0\" y2=\"18.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"81\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><circle cx=\"117.5\" cy=\"104.0\" r=\"27\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 174.8 46.7 A 81.0 81.0 0 1 0 158.0 174.1 L 131.0 127.4 A 27.0 27.0 0 1 1 136.6 84.9 Z\" fill=\"#047857\" fill-opacity=\"0.28\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"147.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"201.5\" y=\"118.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"8\" y=\"22\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"19\" font-weight=\"800\" fill=\"#1e293b\">D</text></g></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "hint": "Do the two conditions one at a time. \\(|z|\\) is the DISTANCE from the origin (a ring between two circles). \\(\\arg z\\) is the ANGLE from the positive real axis (a wedge). The region is where they overlap. Use a dashed line for \\(<\\) and a solid line for \\(\\le\\).",
+          "steps": [
+            {
+              "explain": "Modulus condition \\(1<|z|\\le3\\): points between the circle of radius 1 (NOT included, dashed) and the circle of radius 3 (included, solid): a ring.",
+              "work": "\\(1<|z|\\le3\\)"
+            },
+            {
+              "explain": "Argument condition \\(-\\dfrac{\\pi}{3}\\le\\arg z\\le\\dfrac{\\pi}{4}\\): the wedge from \\(-60^{\\circ}\\) (below the real axis) to \\(+45^{\\circ}\\) (above), measured from the positive real axis. Both rays are included (solid).",
+              "work": "\\(-60^{\\circ}\\le\\arg z\\le45^{\\circ}\\)"
+            },
+            {
+              "explain": "The region is the part of the ring inside the wedge: the green region (a piece of the ring on the RIGHT, containing the positive real axis).",
+              "work": "\\(\\text{ring}\\ \\cap\\ \\text{wedge}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"20.4\" y1=\"134.0\" x2=\"283.2\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"252.8\" x2=\"150.0\" y2=\"11.6\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"283.2\" y1=\"134.0\" x2=\"277.1\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"283.2\" y1=\"134.0\" x2=\"277.1\" y2=\"137.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"11.6\" x2=\"146.5\" y2=\"17.7\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"150.0\" y1=\"11.6\" x2=\"153.5\" y2=\"17.7\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"134.0\" r=\"108\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><circle cx=\"150.0\" cy=\"134.0\" r=\"36\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><path d=\"M 204.0 227.5 A 108.0 108.0 0 0 0 226.4 57.6 L 175.5 108.5 A 36.0 36.0 0 0 1 168.0 165.2 Z\" fill=\"#047857\" fill-opacity=\"0.28\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"189.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"261.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"237.8\" y=\"39.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"230.8\" y1=\"43.2\" x2=\"244.9\" y2=\"43.2\" stroke=\"#d97706\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"237.8\" y=\"56.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"220.1\" y=\"236.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−π</text><line x1=\"209.0\" y1=\"240.6\" x2=\"231.2\" y2=\"240.6\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"220.1\" y=\"253.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"70.8\" y=\"22.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">|z| = 3 solid</text><text x=\"70.8\" y=\"247.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">|z| = 1 dashed</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B swaps the angles (\\(-45^{\\circ}\\) to \\(60^{\\circ}\\)); C shades inside the small circle (\\(|z|<1\\)); D shades the large reflex wedge from \\(45^{\\circ}\\) round to \\(300^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "shade the region of the Argand plane",
+              "note": "Ring from |z|, wedge from arg z."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }

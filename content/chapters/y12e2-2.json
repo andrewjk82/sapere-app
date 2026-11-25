@@ -857,6 +857,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q1",
+          "type": "mc",
+          "stem": "Let \\(m,n\\in\\mathbb{Z}\\). Which of the following statements is false?",
+          "difficulty": "medium",
+          "options": [
+            "\\(n\\) is even if and only if \\(n+1\\) is odd.",
+            "\\(m+n\\) is odd if and only if \\(m-n\\) is odd.",
+            "\\(m+n\\) is even if and only if \\(m\\) and \\(n\\) are even.",
+            "\\(m\\) and \\(n\\) are odd if and only if \\(mn\\) is odd."
+          ],
+          "answer": 2,
+          "hint": "\\\"If and only if\\\" statements must be true in BOTH directions. Look for ONE counterexample (a pair of numbers where one direction fails) to prove a statement false. Test small numbers such as 1 and 3.",
+          "steps": [
+            {
+              "explain": "Statement A: if \\(n\\) is even then \\(n+1\\) is odd, and if \\(n+1\\) is odd then \\(n\\) is even. Both directions are true.",
+              "work": "\\(n\\ \\text{even}\\iff n+1\\ \\text{odd}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Statement B: \\(m+n\\) and \\(m-n\\) always have the same parity, because their difference \\((m+n)-(m-n)=2n\\) is even. So one is odd exactly when the other is odd. True.",
+              "work": "\\((m+n)-(m-n)=2n\\ \\text{(even)}\\ \\Rightarrow\\ \\text{same parity}\\)"
+            },
+            {
+              "explain": "Statement C: \\(m+n\\) even does NOT force both to be even. Counterexample: take \\(m=1\\) and \\(n=3\\), both odd. Then \\(m+n=4\\), which is even, but \\(m\\) and \\(n\\) are not even. The direction \\(m+n\\) even \\(\\Rightarrow\\) both even FAILS.",
+              "work": "\\(m=1,\\ n=3:\\quad m+n=4\\ \\text{(even)},\\ \\text{but } m,n\\ \\text{are odd}\\)"
+            },
+            {
+              "explain": "Statement D: odd \\(\\times\\) odd \\(=\\) odd, and if either factor is even the product is even. So \\(mn\\) is odd exactly when both are odd. True.",
+              "work": "\\(mn\\ \\text{odd}\\iff m,n\\ \\text{both odd}\\ \\ \\checkmark\\)"
+            },
+            {
+              "explain": "Only statement C is false.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following statements is false",
+              "note": "One counterexample is enough to show an 'if and only if' false."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1371,6 +1425,118 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q15c1",
+          "type": "mc",
+          "stem": "Show that \\(k^{2}+k\\) is always even. Which proof is correct?",
+          "difficulty": "medium",
+          "options": [
+            "If \\(k=2x\\): \\(k^{2}+k=4x^{2}+2x=2(2x^{2}+x)\\), even. If \\(k=2x+1\\): \\(k^{2}+k=4x^{2}+4x+1+2x+1=2(2x^{2}+3x+1)\\), even. Every integer is even or odd, so \\(k^{2}+k\\) is always even.",
+            "If \\(k=2x\\): \\(k^{2}+k=4x^{2}+2x=2(2x^{2}+x)\\), even. Hence \\(k^{2}+k\\) is always even.",
+            "Test \\(k=1\\): \\(2\\); \\(k=2\\): \\(6\\); \\(k=3\\): \\(12\\). All are even, so it is always even.",
+            "Let \\(k^{2}+k=2y\\). Then \\(k^{2}+k\\) is even, because it equals \\(2y\\)."
+          ],
+          "answer": 0,
+          "hint": "Every integer is EVEN or ODD. Treat the two cases separately: write an even \\(k\\) as \\(2x\\) and an odd \\(k\\) as \\(2x+1\\), then show each time that \\(k^{2}+k\\) is a multiple of 2.",
+          "steps": [
+            {
+              "explain": "Case 1: \\(k\\) even, \\(k=2x\\) for some integer \\(x\\). Substitute.",
+              "work": "\\(k^{2}+k=(2x)^{2}+2x=4x^{2}+2x\\)"
+            },
+            {
+              "explain": "Factor out 2: the result is 2 times an integer.",
+              "work": "\\(=2(2x^{2}+x)=2y\\quad(y\\in\\mathbb{Z})\\)"
+            },
+            {
+              "explain": "Case 2: \\(k\\) odd, \\(k=2x+1\\). Expand \\((2x+1)^{2}\\) and add \\(k\\).",
+              "work": "\\(k^{2}+k=(2x+1)^{2}+2x+1=4x^{2}+4x+1+2x+1=4x^{2}+6x+2\\)"
+            },
+            {
+              "explain": "Factor out 2.",
+              "work": "\\(=2(2x^{2}+3x+1)=2y\\quad(y\\in\\mathbb{Z})\\)"
+            },
+            {
+              "explain": "Both cases give an even number, and every integer is in one of the two cases, so \\(k^{2}+k\\) is always even.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B covers only the even case; C tests three values (not a proof); D assumes the conclusion (circular).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(k^{2}+k\\) is always even",
+              "note": "Split into k even and k odd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q16c",
+          "type": "mc",
+          "stem": "Prove that \\(33^{n}-16^{n}-28^{n}+11^{n}\\) is divisible by \\(85\\) for all positive integers \\(n\\ge2\\). Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\left(33^{n}-16^{n}\\right)-\\left(28^{n}-11^{n}\\right)\\): each bracket is divisible by \\(33-16=17\\) and \\(28-11=17\\), so the expression is divisible by 17. Also \\(\\left(33^{n}-28^{n}\\right)-\\left(16^{n}-11^{n}\\right)\\): each bracket is divisible by \\(33-28=5\\) and \\(16-11=5\\), so it is divisible by 5. 17 and 5 are different primes, so it is divisible by \\(17\\times5=85\\).",
+            "For \\(n=2\\): \\(1089-256-784+121=170=2\\times85\\). So it is divisible by 85 for all \\(n\\ge2\\).",
+            "It is divisible by 17 and by 5, so it is divisible by \\(17+5=22\\), and hence by 85.",
+            "Assume it is divisible by 85 for \\(n=k+1\\); then it is divisible by 85 for \\(n=k\\), so it is true for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "\\(85=17\\times5\\) where 17 and 5 are DIFFERENT primes. Show it is divisible by 17 and by 5 separately using \\(a^{n}-b^{n}\\) is divisible by \\(a-b\\), then combine. Group the four terms in two different ways.",
+          "steps": [
+            {
+              "explain": "Fact: \\(a^{n}-b^{n}\\) is divisible by \\(a-b\\) (because \\(a^{n}-b^{n}=(a-b)(a^{n-1}+a^{n-2}b+\\cdots+b^{n-1})\\)).",
+              "work": "\\(a^{n}-b^{n}=(a-b)\\left(a^{n-1}+a^{n-2}b+\\cdots+b^{n-1}\\right)\\)"
+            },
+            {
+              "explain": "Divisible by 17: group as \\(\\left(33^{n}-16^{n}\\right)-\\left(28^{n}-11^{n}\\right)\\). The brackets are divisible by \\(33-16=17\\) and \\(28-11=17\\).",
+              "work": "\\(33^{n}-16^{n}-28^{n}+11^{n}=17(\\ldots)-17(\\ldots)\\)"
+            },
+            {
+              "explain": "Divisible by 5: group differently as \\(\\left(33^{n}-28^{n}\\right)-\\left(16^{n}-11^{n}\\right)\\). The brackets are divisible by \\(33-28=5\\) and \\(16-11=5\\).",
+              "work": "\\(33^{n}-16^{n}-28^{n}+11^{n}=5(\\ldots)-5(\\ldots)\\)"
+            },
+            {
+              "explain": "The expression is a multiple of BOTH 17 and 5. Since 17 and 5 are different primes (no common factor), it is a multiple of their product.",
+              "work": "\\(17\\times5=85\\)"
+            },
+            {
+              "explain": "Check with \\(n=2\\): \\(1089-256-784+121=170=2\\times85\\) ✓. Why not the others: B only checks \\(n=2\\) (an example); C wrongly adds the divisors (it should multiply coprime factors); D uses an invalid form of induction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(33^{n}-16^{n}-28^{n}+11^{n}\\) is divisible by \\(85\\)",
+              "note": "a^n − b^n is divisible by a − b; group two ways."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2069,6 +2235,168 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q12c1",
+          "type": "mc",
+          "stem": "Consider this statement: If \\(mn\\) and \\(m+n\\) are even, then \\(m\\) and \\(n\\) are even, for \\(m,n\\in\\mathbb{Z}\\). Write down the contrapositive.",
+          "difficulty": "medium",
+          "options": [
+            "If \\(m\\) is odd or \\(n\\) is odd, then \\(mn\\) is odd or \\(m+n\\) is odd.",
+            "If \\(m\\) is odd and \\(n\\) is odd, then \\(mn\\) is odd and \\(m+n\\) is odd.",
+            "If \\(m\\) and \\(n\\) are even, then \\(mn\\) and \\(m+n\\) are even.",
+            "If \\(m\\) is odd or \\(n\\) is odd, then \\(mn\\) is odd and \\(m+n\\) is odd."
+          ],
+          "answer": 0,
+          "hint": "The contrapositive of \\(P\\Rightarrow Q\\) is \\(\\neg Q\\Rightarrow\\neg P\\): swap the two parts AND negate each. Negating \\\"and\\\" gives \\\"or\\\" (De Morgan), and negating \\\"even\\\" gives \\\"odd\\\" (for integers).",
+          "steps": [
+            {
+              "explain": "Identify \\(P\\) and \\(Q\\). \\(P\\): \\(mn\\) is even AND \\(m+n\\) is even. \\(Q\\): \\(m\\) is even AND \\(n\\) is even.",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "Negate \\(Q\\): \\\"\\(m\\) and \\(n\\) are both even\\\" is false when AT LEAST ONE is odd. So \\(\\neg Q\\): \\\"\\(m\\) is odd OR \\(n\\) is odd\\\".",
+              "work": "\\(\\neg Q:\\ m\\ \\text{odd or}\\ n\\ \\text{odd}\\)"
+            },
+            {
+              "explain": "Negate \\(P\\): \\\"\\(mn\\) even AND \\(m+n\\) even\\\" is false when \\(mn\\) is odd OR \\(m+n\\) is odd.",
+              "work": "\\(\\neg P:\\ mn\\ \\text{odd or}\\ m+n\\ \\text{odd}\\)"
+            },
+            {
+              "explain": "Contrapositive \\(\\neg Q\\Rightarrow\\neg P\\).",
+              "work": "\\(m\\ \\text{odd or}\\ n\\ \\text{odd}\\ \\Rightarrow\\ mn\\ \\text{odd or}\\ m+n\\ \\text{odd}\\)"
+            },
+            {
+              "explain": "Why not the others: B and D use \\\"and\\\" where De Morgan gives \\\"or\\\"; C is neither swapped nor negated properly (it is a different statement).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write down the contrapositive",
+              "note": "Swap and negate both; and ↔ or."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q12c2",
+          "type": "mc",
+          "stem": "Consider this statement: If \\(mn\\) and \\(m+n\\) are even, then \\(m\\) and \\(n\\) are even, for \\(m,n\\in\\mathbb{Z}\\). Prove the contrapositive. Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Case 1: \\(m\\) odd, \\(n\\) even: \\(m=2j+1,\\ n=2k\\), so \\(m+n=2(j+k)+1\\) is odd. Case 2: \\(m\\) even, \\(n\\) odd: same by symmetry. Case 3: both odd: \\(m=2j+1,\\ n=2k+1\\), so \\(mn=2(2jk+j+k)+1\\) is odd. In every case \\(mn\\) or \\(m+n\\) is odd.",
+            "Test \\(m=1,\\ n=2\\): \\(m+n=3\\) is odd. Test \\(m=3,\\ n=5\\): \\(mn=15\\) is odd. So it is always true.",
+            "Assume \\(mn\\) and \\(m+n\\) are even. Then \\(m\\) and \\(n\\) must both be even, which is what we wanted.",
+            "Let \\(m=2j+1\\) be odd and \\(n=2k\\) be even. Then \\(m+n=2(j+k)+1\\) is odd. Hence the statement is proved."
+          ],
+          "answer": 0,
+          "hint": "To prove \\(\\neg Q\\Rightarrow\\neg P\\) assume \\(m\\) or \\(n\\) is odd and split into ALL the possible cases: (odd, even), (even, odd), (odd, odd). Write odd as \\(2j+1\\) and even as \\(2k\\).",
+          "steps": [
+            {
+              "explain": "Case 1: \\(m\\) odd and \\(n\\) even. Write \\(m=2j+1\\) and \\(n=2k\\) for integers \\(j,k\\) and add.",
+              "work": "\\(m+n=2j+1+2k=2(j+k)+1\\ \\text{(odd)}\\)"
+            },
+            {
+              "explain": "Case 2: \\(m\\) even and \\(n\\) odd: the same as Case 1 with the roles of \\(m\\) and \\(n\\) swapped (addition is commutative), so \\(m+n\\) is odd.",
+              "work": "\\(m+n\\ \\text{odd}\\)"
+            },
+            {
+              "explain": "Case 3: \\(m\\) and \\(n\\) both odd. Write \\(m=2j+1\\) and \\(n=2k+1\\) and multiply.",
+              "work": "\\(mn=(2j+1)(2k+1)=4jk+2j+2k+1=2(2jk+j+k)+1\\ \\text{(odd)}\\)"
+            },
+            {
+              "explain": "These cases cover every situation where at least one of \\(m,n\\) is odd, and in each case \\(mn\\) is odd or \\(m+n\\) is odd. So the contrapositive is proved (and so is the original statement).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B only tests examples (examples are not a proof); C assumes the ORIGINAL statement instead of proving the contrapositive (circular); D covers only one of the three cases.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove the contrapositive",
+              "note": "Cover every case: (odd, even), (even, odd), (odd, odd)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q12d",
+          "type": "mc",
+          "stem": "Suppose \\(c^{2}-b^{2}=4\\). Prove that \\(b\\) and \\(c\\) cannot both be positive integers. Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Suppose \\(b,c\\) are positive integers. \\((c-b)(c+b)=4\\), and \\(c-b\\), \\(c+b\\) are positive integer factors of 4 with \\(c-b<c+b\\) or equal: \\((1,4)\\) or \\((2,2)\\). If \\(c-b=1,\\ c+b=4\\) then \\(c=\\dfrac{5}{2}\\), not an integer. If \\(c-b=2,\\ c+b=2\\) then \\(b=0\\), not positive. Contradiction.",
+            "Suppose \\(b,c\\) are positive integers. \\((c-b)(c+b)=4\\), so \\(c-b=1\\) and \\(c+b=4\\). Then \\(c=\\dfrac{5}{2}\\), not an integer. Contradiction.",
+            "Suppose \\(b,c\\) are positive integers. \\((c-b)(c+b)=4\\), so \\(c-b=2\\) and \\(c+b=2\\). Then \\(b=0\\), not positive. Contradiction.",
+            "Try \\(b=1\\): \\(c^{2}=5\\); try \\(b=2\\): \\(c^{2}=8\\). Neither \\(c\\) is an integer, so \\(b\\) and \\(c\\) cannot both be positive integers."
+          ],
+          "answer": 0,
+          "hint": "PROOF BY CONTRADICTION: assume \\(b\\) and \\(c\\) ARE both positive integers. Factorise \\(c^{2}-b^{2}=(c-b)(c+b)\\) and list ALL the ways to write 4 as a product of two positive integers.",
+          "steps": [
+            {
+              "explain": "Assume \\(b\\) and \\(c\\) are both positive integers. Factorise the difference of two squares.",
+              "work": "\\(c^{2}-b^{2}=(c-b)(c+b)=4\\)"
+            },
+            {
+              "explain": "\\(c+b\\) and \\(c-b\\) are integers with product 4, and \\(c+b>c-b>0\\) when \\(b>0\\) (here \\(c-b>0\\) because the product is positive and \\(c+b>0\\)). The factor pairs of 4 are \\((1,4)\\) and \\((2,2)\\).",
+              "work": "\\((c-b,\\ c+b)=(1,4)\\ \\text{or}\\ (2,2)\\)"
+            },
+            {
+              "explain": "Pair \\((1,4)\\): add the equations \\(c-b=1\\) and \\(c+b=4\\).",
+              "work": "\\(2c=5\\ \\Rightarrow\\ c=\\dfrac{5}{2}\\ \\text{(not an integer)}\\)"
+            },
+            {
+              "explain": "Pair \\((2,2)\\): subtract to find \\(b\\): \\(c+b=2\\) and \\(c-b=2\\) give \\(2b=0\\).",
+              "work": "\\(b=0\\ \\text{(not positive)}\\)"
+            },
+            {
+              "explain": "Both cases contradict the assumption, so \\(b\\) and \\(c\\) cannot both be positive integers. Why not the others: B and C check only ONE factor pair (they miss the other); D tests only two values of \\(b\\), which is not a proof.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that \\(b\\) and \\(c\\) cannot both be positive integers",
+              "note": "Factorise, list all factor pairs of 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3120,6 +3448,272 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q9",
+          "type": "mc",
+          "stem": "If \\(a,b\\) and \\(c\\) are any real numbers with \\(a>b\\), which of the following statements must always be true?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{a}>\\dfrac{1}{b}\\)",
+            "\\(\\dfrac{1}{a}<\\dfrac{1}{b}\\)",
+            "\\(ac>bc\\)",
+            "\\(a+c>b+c\\)"
+          ],
+          "answer": 3,
+          "hint": "\\\"Must ALWAYS be true\\\" means true for EVERY choice of real numbers. One counterexample (using negative numbers, or \\(c=0\\) or \\(c<0\\)) kills a statement.",
+          "steps": [
+            {
+              "explain": "Option A: try \\(a=2,\\ b=1\\). Then \\(a>b\\) but \\(\\dfrac{1}{2}<\\dfrac{1}{1}\\). A is FALSE for this case.",
+              "work": "\\(a=2,b=1:\\quad \\dfrac{1}{2}>\\dfrac{1}{1}\\ \\text{is false}\\)"
+            },
+            {
+              "explain": "Option B: try \\(a=2,\\ b=-1\\). Then \\(a>b\\) but \\(\\dfrac{1}{2}>-1\\), so \\(\\dfrac{1}{a}<\\dfrac{1}{b}\\) fails. B is FALSE for this case.",
+              "work": "\\(a=2,b=-1:\\quad\\dfrac{1}{2}<-1\\ \\text{is false}\\)"
+            },
+            {
+              "explain": "Option C: try \\(a=2,\\ b=1,\\ c=-1\\). Then \\(ac=-2\\) and \\(bc=-1\\), and \\(-2<-1\\). C is FALSE (multiplying by a negative reverses the inequality; \\(c=0\\) also fails).",
+              "work": "\\(a=2,b=1,c=-1:\\quad 2(-1)=-2<-1=1(-1)\\)"
+            },
+            {
+              "explain": "Option D: adding the same number \\(c\\) to both sides of an inequality NEVER changes its direction. So \\(a>b\\Rightarrow a+c>b+c\\) always.",
+              "work": "\\(a>b\\ \\Rightarrow\\ a+c>b+c\\quad\\text{(true for every }c)\\)"
+            },
+            {
+              "explain": "Only D must always be true.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "which of the following statements must always be true",
+              "note": "Find a counterexample for each false option."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q12b1",
+          "type": "mc",
+          "stem": "Prove that \\(\\dfrac{1}{10}-\\dfrac{1}{11}<\\dfrac{1}{100}\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{10}-\\dfrac{1}{11}=\\dfrac{110}{1100}-\\dfrac{100}{1100}=\\dfrac{10}{1100}<\\dfrac{11}{1100}=\\dfrac{1}{100}\\)",
+            "\\(\\dfrac{1}{10}-\\dfrac{1}{11}=\\dfrac{1}{10-11}=-1<\\dfrac{1}{100}\\)",
+            "\\(\\dfrac{1}{10}-\\dfrac{1}{11}=\\dfrac{1}{110}\\) and \\(110<100\\), so \\(\\dfrac{1}{110}<\\dfrac{1}{100}\\)",
+            "\\(\\dfrac{1}{10}<\\dfrac{1}{100}\\) and \\(\\dfrac{1}{11}>0\\), so \\(\\dfrac{1}{10}-\\dfrac{1}{11}<\\dfrac{1}{100}\\)"
+          ],
+          "answer": 0,
+          "hint": "To subtract fractions use a COMMON DENOMINATOR (here 1100, which is a multiple of 10, 11 and 100). Then compare the two numerators.",
+          "steps": [
+            {
+              "explain": "Write \\(\\dfrac{1}{10}\\), \\(\\dfrac{1}{11}\\) and \\(\\dfrac{1}{100}\\) over the common denominator \\(1100\\) (\\(10\\times110=1100\\), \\(11\\times100=1100\\), \\(100\\times11=1100\\)).",
+              "work": "\\(\\dfrac{1}{10}=\\dfrac{110}{1100},\\quad\\dfrac{1}{11}=\\dfrac{100}{1100},\\quad\\dfrac{1}{100}=\\dfrac{11}{1100}\\)"
+            },
+            {
+              "explain": "Subtract.",
+              "work": "\\(\\dfrac{1}{10}-\\dfrac{1}{11}=\\dfrac{110-100}{1100}=\\dfrac{10}{1100}\\)"
+            },
+            {
+              "explain": "Compare numerators (same denominator): \\(10<11\\).",
+              "work": "\\(\\dfrac{10}{1100}<\\dfrac{11}{1100}=\\dfrac{1}{100}\\)"
+            },
+            {
+              "explain": "Conclusion: \\(\\dfrac{1}{10}-\\dfrac{1}{11}<\\dfrac{1}{100}\\). Why not the others: B subtracts denominators (not allowed; \\(\\dfrac{1}{a}-\\dfrac{1}{b}\\ne\\dfrac{1}{a-b}\\)); C claims \\(110<100\\) (false); D is not valid reasoning (a difference of two numbers is not bounded this way).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Common denominator, then compare numerators."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q12b2",
+          "type": "mc",
+          "stem": "Let \\(n>0\\). Prove that \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}<\\dfrac{1}{n^{2}}\\). Which argument is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{(n+1)-n}{n(n+1)}=\\dfrac{1}{n^{2}+n}\\). Since \\(n>0\\), \\(n^{2}+n>n^{2}\\), so \\(\\dfrac{1}{n^{2}+n}<\\dfrac{1}{n^{2}}\\)",
+            "\\(\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{1}{n-(n+1)}=-1<\\dfrac{1}{n^{2}}\\)",
+            "\\(\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{1}{n^{2}+n}\\). Since \\(n^{2}+n<n^{2}\\), \\(\\dfrac{1}{n^{2}+n}<\\dfrac{1}{n^{2}}\\)",
+            "\\(\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{1}{n^{2}+n}\\). Since \\(n^{2}+n>n^{2}\\), \\(\\dfrac{1}{n^{2}+n}>\\dfrac{1}{n^{2}}\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine the left side into ONE fraction. Then compare \\(\\dfrac{1}{n^{2}+n}\\) with \\(\\dfrac{1}{n^{2}}\\): a BIGGER denominator gives a SMALLER fraction (for positive numbers).",
+          "steps": [
+            {
+              "explain": "Common denominator \\(n(n+1)\\).",
+              "work": "\\(\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{(n+1)-n}{n(n+1)}=\\dfrac{1}{n(n+1)}=\\dfrac{1}{n^{2}+n}\\)"
+            },
+            {
+              "explain": "Compare the denominators. Since \\(n>0\\): \\(n^{2}+n=n^{2}+(\\text{a positive number})\\).",
+              "work": "\\(n^{2}+n>n^{2}\\)"
+            },
+            {
+              "explain": "For positive numbers, a bigger denominator makes a smaller fraction: if \\(n^{2}+n>n^{2}\\) then \\(\\dfrac{1}{n^{2}+n}<\\dfrac{1}{n^{2}}\\).",
+              "work": "\\(\\dfrac{1}{n}-\\dfrac{1}{n+1}=\\dfrac{1}{n^{2}+n}<\\dfrac{1}{n^{2}}\\)"
+            },
+            {
+              "explain": "Why not the others: B subtracts denominators (invalid); C claims \\(n^{2}+n<n^{2}\\) (false for \\(n>0\\)); D reverses the inequality sign (the bigger denominator makes the SMALLER fraction).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Bigger positive denominator means smaller fraction."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q15a1",
+          "type": "mc",
+          "stem": "Show that \\((a^{2}-b^{2})(c^{2}-d^{2})\\le(ac-bd)^{2}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\((ac-bd)^{2}-(a^{2}-b^{2})(c^{2}-d^{2})=a^{2}c^{2}-2abcd+b^{2}d^{2}-a^{2}c^{2}+a^{2}d^{2}+b^{2}c^{2}-b^{2}d^{2}=a^{2}d^{2}-2abcd+b^{2}c^{2}=(ad-bc)^{2}\\ge0\\)",
+            "\\((ac-bd)^{2}-(a^{2}-b^{2})(c^{2}-d^{2})=a^{2}c^{2}+b^{2}d^{2}-a^{2}c^{2}+a^{2}d^{2}+b^{2}c^{2}-b^{2}d^{2}=a^{2}d^{2}+b^{2}c^{2}\\ge0\\) (forgetting the middle term)",
+            "Let \\(a=2,\\ b=1,\\ c=3,\\ d=1\\): \\(3\\times8=24\\) and \\((6-1)^{2}=25\\), and \\(24\\le25\\). So it is true.",
+            "Squares are non-negative, so \\((a^{2}-b^{2})(c^{2}-d^{2})\\le(ac-bd)^{2}\\) is always true."
+          ],
+          "answer": 0,
+          "hint": "Move everything to one side: show \\((ac-bd)^{2}-(a^{2}-b^{2})(c^{2}-d^{2})\\ge0\\). Expand both products carefully (watch the middle term \\(-2abcd\\)) and look for a perfect square.",
+          "steps": [
+            {
+              "explain": "Plan: show that \\(\\text{RHS}-\\text{LHS}\\ge0\\). Expand \\((ac-bd)^{2}\\) (a binomial square).",
+              "work": "\\((ac-bd)^{2}=a^{2}c^{2}-2abcd+b^{2}d^{2}\\)"
+            },
+            {
+              "explain": "Expand \\((a^{2}-b^{2})(c^{2}-d^{2})\\) by FOIL.",
+              "work": "\\((a^{2}-b^{2})(c^{2}-d^{2})=a^{2}c^{2}-a^{2}d^{2}-b^{2}c^{2}+b^{2}d^{2}\\)"
+            },
+            {
+              "explain": "Subtract (change all signs in the second expansion).",
+              "work": "\\(a^{2}c^{2}-2abcd+b^{2}d^{2}-a^{2}c^{2}+a^{2}d^{2}+b^{2}c^{2}-b^{2}d^{2}\\)"
+            },
+            {
+              "explain": "Cancel \\(a^{2}c^{2}\\) and \\(b^{2}d^{2}\\).",
+              "work": "\\(=a^{2}d^{2}-2abcd+b^{2}c^{2}\\)"
+            },
+            {
+              "explain": "Recognise a perfect square: \\(a^{2}d^{2}-2(ad)(bc)+b^{2}c^{2}=(ad-bc)^{2}\\).",
+              "work": "\\(=(ad-bc)^{2}\\ge0\\)"
+            },
+            {
+              "explain": "A square is never negative, so \\((ac-bd)^{2}-(a^{2}-b^{2})(c^{2}-d^{2})\\ge0\\), i.e. \\((a^{2}-b^{2})(c^{2}-d^{2})\\le(ac-bd)^{2}\\). Why not the others: B forgets the middle term \\(-2abcd\\); C tests one example only (not a proof); D asserts the result without any algebra.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Prove: RHS − LHS = (ad − bc)² ≥ 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q15a2",
+          "type": "mc",
+          "stem": "Deduce that \\((a^{2}-b^{2})(a^{4}-b^{4})\\le(a^{3}-b^{3})^{2}\\). (Use the result \\((a^{2}-b^{2})(c^{2}-d^{2})\\le(ac-bd)^{2}\\) from the previous part.) Which substitution works?",
+          "difficulty": "hard",
+          "options": [
+            "Put \\(c=a^{2}\\) and \\(d=b^{2}\\)",
+            "Put \\(c=a\\) and \\(d=b\\)",
+            "Put \\(c=a^{3}\\) and \\(d=b^{3}\\)",
+            "Put \\(c=a^{4}\\) and \\(d=b^{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare the two inequalities. In the target, the second bracket on the left is \\(a^{4}-b^{4}\\): which \\(c,d\\) give \\(c^{2}-d^{2}=a^{4}-b^{4}\\)? Then check that \\(ac-bd\\) becomes \\(a^{3}-b^{3}\\).",
+          "steps": [
+            {
+              "explain": "The first bracket \\((a^{2}-b^{2})\\) matches \\((a^{2}-b^{2})\\) already. The second bracket must satisfy \\(c^{2}-d^{2}=a^{4}-b^{4}\\).",
+              "work": "\\(c^{2}=a^{4},\\quad d^{2}=b^{4}\\ \\Rightarrow\\ c=a^{2},\\quad d=b^{2}\\)"
+            },
+            {
+              "explain": "Substitute \\(c=a^{2}\\) and \\(d=b^{2}\\) into the left side of the previous result.",
+              "work": "\\((a^{2}-b^{2})(c^{2}-d^{2})=(a^{2}-b^{2})(a^{4}-b^{4})\\)"
+            },
+            {
+              "explain": "Substitute into the right side: \\(ac-bd=a\\cdot a^{2}-b\\cdot b^{2}\\).",
+              "work": "\\((ac-bd)^{2}=(a^{3}-b^{3})^{2}\\)"
+            },
+            {
+              "explain": "So the result becomes \\((a^{2}-b^{2})(a^{4}-b^{4})\\le(a^{3}-b^{3})^{2}\\), as required.",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: \\(c=a,d=b\\) gives \\((a^{2}-b^{2})^{2}\\le(a^{2}-b^{2})^{2}\\); \\(c=a^{3},d=b^{3}\\) gives \\(a^{6}-b^{6}\\) and \\((a^{4}-b^{4})^{2}\\); \\(c=a^{4},d=b^{4}\\) gives \\(a^{8}-b^{8}\\). None of them produce the target.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Deduce that",
+              "note": "Choose c and d so that c² − d² = a⁴ − b⁴."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4106,6 +4700,68 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q15c2",
+          "type": "mc",
+          "stem": "Using the result in the previous part (\\(k^{2}+k\\) is always even), prove, by mathematical induction, that for all positive integral values of \\(n\\), \\(n^{3}+5n\\) is divisible by 6. Which proof is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(n=1\\): \\(1+5=6\\), divisible by 6. Assume \\(k^{3}+5k=6p\\). Then \\((k+1)^{3}+5(k+1)=k^{3}+5k+3k^{2}+3k+6=6p+6+3(k^{2}+k)=6p+6+3(2y)=6(p+y+1)\\), using that \\(k^{2}+k=2y\\). So true for \\(n=k+1\\); by induction true for all \\(n\\ge1\\).",
+            "Assume \\(k^{3}+5k=6p\\). Then \\((k+1)^{3}+5(k+1)=6p+6+3(k^{2}+k)\\), which is divisible by 6. By induction true for all \\(n\\).",
+            "\\(n=1\\): \\(1+5=6\\). Assume true for \\(n=k+1\\), then show it is true for \\(n=k\\).",
+            "\\(n=1\\): \\(1+5=6\\). Assume \\(k^{3}+5k=6p\\). Then \\((k+1)^{3}+5(k+1)=6p+6+3(k^{2}+k)\\), and \\(3(k^{2}+k)\\) is divisible by 6 because 3 is divisible by 3. So true for all \\(n\\)."
+          ],
+          "answer": 0,
+          "hint": "Induction needs 3 parts: (1) BASE CASE \\(n=1\\); (2) ASSUMPTION for \\(n=k\\): \\(k^{3}+5k=6p\\); (3) STEP: expand \\((k+1)^{3}+5(k+1)\\), group the part equal to \\(6p\\), and show the rest is also a multiple of 6 (use \\(k^{2}+k\\) even).",
+          "steps": [
+            {
+              "explain": "BASE CASE: test \\(n=1\\).",
+              "work": "\\(1^{3}+5(1)=6\\ \\text{which is divisible by 6}\\)"
+            },
+            {
+              "explain": "ASSUMPTION: assume the result is true for \\(n=k\\), where \\(k\\) is a positive integer: \\(k^{3}+5k=6p\\) for some integer \\(p\\).",
+              "work": "\\(k^{3}+5k=6p\\)"
+            },
+            {
+              "explain": "STEP: prove for \\(n=k+1\\). Expand \\((k+1)^{3}=k^{3}+3k^{2}+3k+1\\) and \\(5(k+1)=5k+5\\).",
+              "work": "\\((k+1)^{3}+5(k+1)=k^{3}+3k^{2}+3k+1+5k+5\\)"
+            },
+            {
+              "explain": "Group the terms into \\(k^{3}+5k\\) (which is \\(6p\\)) and the rest.",
+              "work": "\\(=(k^{3}+5k)+3k^{2}+3k+6=6p+3(k^{2}+k)+6\\)"
+            },
+            {
+              "explain": "By the previous part \\(k^{2}+k=2y\\) for some integer \\(y\\), so \\(3(k^{2}+k)=6y\\).",
+              "work": "\\(=6p+6y+6=6(p+y+1)\\)"
+            },
+            {
+              "explain": "This is a multiple of 6, so the result is true for \\(n=k+1\\). True for \\(n=1\\), and true for \\(n=k\\Rightarrow\\) true for \\(n=k+1\\), so by induction \\(n^{3}+5n\\) is divisible by 6 for all positive integers \\(n\\).",
+              "work": ""
+            },
+            {
+              "explain": "Why not the others: B has no base case and does not use the previous part to justify \\(3(k^{2}+k)\\); C assumes the wrong direction (\\(k+1\\Rightarrow k\\)); D gives a false reason (3 being divisible by 3 does not make \\(3(k^{2}+k)\\) divisible by 6).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove, by mathematical induction",
+              "note": "Base case, assumption, step; use k² + k even."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }

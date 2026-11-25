@@ -704,6 +704,60 @@
             "origin": "teacher",
             "note": "Open response: teacher review."
           }
+        },
+        {
+          "id": "gosford2020-e2-q11c",
+          "type": "mc",
+          "stem": "The polynomial \\(P(x)=x^{3}-5x^{2}+ax+b\\), where \\(a\\) and \\(b\\) are real, has one root at \\(x=3-2\\sqrt{2}\\,i\\). Find the values of \\(a\\) and \\(b\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(a=11,\\ b=17\\)",
+            "\\(a=11,\\ b=-17\\)",
+            "\\(a=-11,\\ b=17\\)",
+            "\\(a=17,\\ b=11\\)"
+          ],
+          "answer": 0,
+          "hint": "The coefficients are REAL, so complex roots come in CONJUGATE pairs. Use the sum of the roots to find the third root, then the sum of products in pairs (for \\(a\\)) and the product of all roots (for \\(b\\)).",
+          "steps": [
+            {
+              "explain": "Real coefficients: the conjugate \\(3+2\\sqrt{2}\\,i\\) is also a root. Let the third root be \\(r\\).",
+              "work": "\\(\\text{roots: }3-2\\sqrt{2}\\,i,\\ \\ 3+2\\sqrt{2}\\,i,\\ \\ r\\)"
+            },
+            {
+              "explain": "Sum of roots \\(=-\\dfrac{-5}{1}=5\\). The two complex roots add to 6.",
+              "work": "\\(6+r=5\\ \\Rightarrow\\ r=-1\\)"
+            },
+            {
+              "explain": "Product of all roots \\(=-b\\) (for a cubic with leading coefficient 1). First \\((3-2\\sqrt{2}i)(3+2\\sqrt{2}i)=9+8=17\\).",
+              "work": "\\(17\\times(-1)=-b\\ \\Rightarrow\\ b=17\\)"
+            },
+            {
+              "explain": "Sum of the products of the roots in pairs \\(=a\\). Pairs: \\(17\\) (the two complex roots) and \\(r\\times\\) each complex root, which add to \\(r\\times6\\).",
+              "work": "\\(a=17+(-1)(3-2\\sqrt{2}i)+(-1)(3+2\\sqrt{2}i)=17-6=11\\)"
+            },
+            {
+              "explain": "So \\(a=11\\) and \\(b=17\\). Check: \\(P(-1)=-1-5-11+17=0\\) ✓. Why not the others: B and C have a sign error (\\(b=-17\\) from product \\(=b\\); \\(a=-11\\) from sign of the pair sum); D swaps \\(a\\) and \\(b\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the values of \\(a\\) and \\(b\\)",
+              "note": "Conjugate root theorem; sum, pairs and product of roots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2525,6 +2579,164 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q16b1",
+          "type": "mc",
+          "stem": "Use De Moivre's Theorem to express \\(\\cos5\\theta\\) and \\(\\sin5\\theta\\) in terms of powers of \\(\\sin\\theta\\) and \\(\\cos\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\cos5\\theta=\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\); \\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)",
+            "\\(\\cos5\\theta=\\cos^{5}\\theta+10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\); \\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta+10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)",
+            "\\(\\cos5\\theta=5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\); \\(\\sin5\\theta=\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\)",
+            "\\(\\cos5\\theta=\\cos^{5}\\theta-5\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\); \\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta-5\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "De Moivre: \\((\\cos\\theta+i\\sin\\theta)^{5}=\\cos5\\theta+i\\sin5\\theta\\). Expand the left side with the binomial theorem (coefficients \\(1,5,10,10,5,1\\)), use \\(i^{2}=-1,\\ i^{3}=-i,\\ i^{4}=1,\\ i^{5}=i\\), then equate REAL and IMAGINARY parts.",
+          "steps": [
+            {
+              "explain": "By De Moivre's theorem.",
+              "work": "\\((\\cos\\theta+i\\sin\\theta)^{5}=\\cos5\\theta+i\\sin5\\theta\\)"
+            },
+            {
+              "explain": "Expand the left side with the binomial theorem; the coefficients are \\(1,5,10,10,5,1\\) and the powers of \\(i\\) are \\(i^{0}=1,\\ i^{1}=i,\\ i^{2}=-1,\\ i^{3}=-i,\\ i^{4}=1,\\ i^{5}=i\\).",
+              "work": "\\(\\cos^{5}\\theta+5i\\cos^{4}\\theta\\sin\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta-10i\\cos^{2}\\theta\\sin^{3}\\theta+5\\cos\\theta\\sin^{4}\\theta+i\\sin^{5}\\theta\\)"
+            },
+            {
+              "explain": "Equate REAL parts (the terms without \\(i\\)).",
+              "work": "\\(\\cos5\\theta=\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta\\)"
+            },
+            {
+              "explain": "Equate IMAGINARY parts (the coefficients of \\(i\\)).",
+              "work": "\\(\\sin5\\theta=5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta\\)"
+            },
+            {
+              "explain": "Why not the others: B ignores the signs from \\(i^{2}\\) and \\(i^{3}\\); C swaps real and imaginary parts; D uses the wrong coefficient (5 instead of 10).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use De Moivre's Theorem to express",
+              "note": "Expand (cos θ + i sin θ)⁵; real part is cos 5θ."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q16b2",
+          "type": "mc",
+          "stem": "Write an expression for \\(\\tan5\\theta\\) in terms of \\(t\\), where \\(t=\\tan\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{5t-10t^{3}+t^{5}}{1-10t^{2}+5t^{4}}\\)",
+            "\\(\\dfrac{1-10t^{2}+5t^{4}}{5t-10t^{3}+t^{5}}\\)",
+            "\\(\\dfrac{5t+10t^{3}+t^{5}}{1+10t^{2}+5t^{4}}\\)",
+            "\\(\\dfrac{5t-10t^{3}+t^{5}}{1-10t^{2}+t^{4}}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\tan5\\theta=\\dfrac{\\sin5\\theta}{\\cos5\\theta}\\). Use the part (i) results, then divide TOP and BOTTOM by \\(\\cos^{5}\\theta\\) so that every \\(\\dfrac{\\sin\\theta}{\\cos\\theta}\\) becomes \\(t\\).",
+          "steps": [
+            {
+              "explain": "Write the quotient using part (i).",
+              "work": "\\(\\tan5\\theta=\\dfrac{5\\cos^{4}\\theta\\sin\\theta-10\\cos^{2}\\theta\\sin^{3}\\theta+\\sin^{5}\\theta}{\\cos^{5}\\theta-10\\cos^{3}\\theta\\sin^{2}\\theta+5\\cos\\theta\\sin^{4}\\theta}\\)"
+            },
+            {
+              "explain": "Divide every term (top and bottom) by \\(\\cos^{5}\\theta\\). Each term has total degree 5, so \\(\\sin^{a}\\theta\\cos^{5-a}\\theta\\div\\cos^{5}\\theta=\\tan^{a}\\theta\\).",
+              "work": "\\(=\\dfrac{5\\tan\\theta-10\\tan^{3}\\theta+\\tan^{5}\\theta}{1-10\\tan^{2}\\theta+5\\tan^{4}\\theta}\\)"
+            },
+            {
+              "explain": "Replace \\(\\tan\\theta\\) by \\(t\\).",
+              "work": "\\(\\tan5\\theta=\\dfrac{5t-10t^{3}+t^{5}}{1-10t^{2}+5t^{4}}\\)"
+            },
+            {
+              "explain": "Why not the others: B is upside down (that is \\(\\cot5\\theta\\)); C has the wrong signs; D has \\(t^{4}\\) with coefficient 1 instead of 5 in the denominator.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write an expression for \\(\\tan5\\theta\\)",
+              "note": "Divide top and bottom by cos⁵θ."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q16b3",
+          "type": "mc",
+          "stem": "By solving \\(\\tan5\\theta=0\\), deduce that \\(\\tan\\dfrac{\\pi}{5}\\tan\\dfrac{2\\pi}{5}\\tan\\dfrac{3\\pi}{5}\\tan\\dfrac{4\\pi}{5}=5\\). Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\tan5\\theta=0\\Rightarrow5\\theta=0,\\pi,2\\pi,3\\pi,4\\pi\\), so \\(\\theta=0,\\dfrac{\\pi}{5},\\dfrac{2\\pi}{5},\\dfrac{3\\pi}{5},\\dfrac{4\\pi}{5}\\). Also \\(5t-10t^{3}+t^{5}=t(t^{4}-10t^{2}+5)=0\\). The four non-zero roots of \\(t^{4}-10t^{2}+5\\) are \\(\\tan\\dfrac{k\\pi}{5}\\) for \\(k=1,2,3,4\\). Product of roots \\(=\\dfrac{5}{1}=5\\).",
+            "\\(\\tan5\\theta=0\\Rightarrow\\theta=\\dfrac{\\pi}{5},\\dfrac{2\\pi}{5},\\dfrac{3\\pi}{5},\\dfrac{4\\pi}{5}\\). The roots of \\(t^{4}-10t^{2}+5\\) have product \\(-\\dfrac{5}{1}=-5\\), so the product is \\(-5\\).",
+            "\\(\\tan5\\theta=0\\Rightarrow\\theta=\\dfrac{\\pi}{5},\\dfrac{2\\pi}{5},\\dfrac{3\\pi}{5},\\dfrac{4\\pi}{5}\\). The roots of \\(t^{4}-10t^{2}+5\\) add to \\(10\\), so the product is \\(10\\).",
+            "\\(\\tan5\\theta=0\\Rightarrow\\theta=0,\\dfrac{\\pi}{5},\\dfrac{2\\pi}{5},\\dfrac{3\\pi}{5},\\dfrac{4\\pi}{5}\\). All five roots of \\(t(t^{4}-10t^{2}+5)\\) multiply to 5, since the constant is 5."
+          ],
+          "answer": 0,
+          "hint": "Solve \\(\\tan5\\theta=0\\) in TWO ways: (1) by angles (\\(5\\theta\\) is a multiple of \\(\\pi\\)); (2) from the part (ii) numerator (\\(5t-10t^{3}+t^{5}=0\\)). Match the roots, then use the PRODUCT OF ROOTS formula for the quartic.",
+          "steps": [
+            {
+              "explain": "Angle method: \\(\\tan5\\theta=0\\) when \\(5\\theta\\) is a multiple of \\(\\pi\\). For \\(0\\le\\theta<\\pi\\) that gives five values.",
+              "work": "\\(5\\theta=0,\\pi,2\\pi,3\\pi,4\\pi\\ \\Rightarrow\\ \\theta=0,\\dfrac{\\pi}{5},\\dfrac{2\\pi}{5},\\dfrac{3\\pi}{5},\\dfrac{4\\pi}{5}\\)"
+            },
+            {
+              "explain": "Algebra method: \\(\\tan5\\theta=0\\) when the numerator of part (ii) is 0.",
+              "work": "\\(5t-10t^{3}+t^{5}=0\\ \\Rightarrow\\ t\\left(t^{4}-10t^{2}+5\\right)=0\\)"
+            },
+            {
+              "explain": "The root \\(t=0\\) matches \\(\\theta=0\\). The other four values \\(\\theta=\\dfrac{k\\pi}{5}\\) (\\(k=1,2,3,4\\)) give the four roots of \\(t^{4}-10t^{2}+5=0\\).",
+              "work": "\\(t=\\tan\\dfrac{\\pi}{5},\\ \\tan\\dfrac{2\\pi}{5},\\ \\tan\\dfrac{3\\pi}{5},\\ \\tan\\dfrac{4\\pi}{5}\\)"
+            },
+            {
+              "explain": "For a quartic \\(t^{4}+bt^{3}+ct^{2}+dt+e=0\\) the product of the four roots is \\(+e\\) (even degree: sign \\((-1)^{4}=+1\\)). Here \\(e=5\\).",
+              "work": "\\(\\tan\\dfrac{\\pi}{5}\\tan\\dfrac{2\\pi}{5}\\tan\\dfrac{3\\pi}{5}\\tan\\dfrac{4\\pi}{5}=5\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the sign for an ODD-degree polynomial; C uses the sum of roots; D includes the root \\(t=0\\) (the product would then be 0).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By solving \\(\\tan5\\theta=0\\), deduce that",
+              "note": "Roots of the quartic = tan(kπ/5); product of roots = constant term."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }

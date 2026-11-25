@@ -1688,6 +1688,172 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q6",
+          "type": "mc",
+          "stem": "Using a suitable substitution, \\(\\displaystyle\\int_{a}^{b}x\\left(x^{2}+1\\right)^{5}dx\\) is equal to",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{2}\\displaystyle\\int_{a^{2}+1}^{b^{2}+1}u^{5}\\,du\\)",
+            "\\(\\dfrac{1}{2}\\displaystyle\\int_{a}^{b}u^{5}\\,du\\)",
+            "\\(2\\displaystyle\\int_{a^{2}+1}^{b^{2}+1}u^{5}\\,du\\)",
+            "\\(2\\displaystyle\\int_{a}^{b}u^{5}\\,du\\)"
+          ],
+          "answer": 0,
+          "hint": "When you substitute in a DEFINITE integral you must change the LIMITS too (or go back to \\(x\\)). Let \\(u\\) be the expression inside the brackets.",
+          "steps": [
+            {
+              "explain": "Choose \\(u=x^{2}+1\\) (the inside of the bracket).",
+              "work": "\\(u=x^{2}+1\\)"
+            },
+            {
+              "explain": "Differentiate: \\(du=2x\\,dx\\), so \\(x\\,dx=\\dfrac{1}{2}du\\). The factor \\(x\\,dx\\) in the integral becomes \\(\\dfrac{1}{2}du\\).",
+              "work": "\\(du=2x\\,dx\\ \\Rightarrow\\ x\\,dx=\\dfrac{1}{2}\\,du\\)"
+            },
+            {
+              "explain": "Change the limits: when \\(x=a\\), \\(u=a^{2}+1\\); when \\(x=b\\), \\(u=b^{2}+1\\).",
+              "work": "\\(x=a\\Rightarrow u=a^{2}+1;\\qquad x=b\\Rightarrow u=b^{2}+1\\)"
+            },
+            {
+              "explain": "Substitute everything.",
+              "work": "\\(\\displaystyle\\int_{a}^{b}x(x^{2}+1)^{5}dx=\\dfrac{1}{2}\\displaystyle\\int_{a^{2}+1}^{b^{2}+1}u^{5}\\,du\\)"
+            },
+            {
+              "explain": "Why not the others: B and D keep the old limits \\(a,b\\) (wrong for \\(u\\)); C and D use a factor 2 instead of \\(\\dfrac{1}{2}\\) (since \\(x\\,dx=\\dfrac{1}{2}du\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using a suitable substitution",
+              "note": "Change the limits when you change the variable."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q13a",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{dx}{2x\\sqrt{\\ln x}}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sqrt{\\ln x}+c\\)",
+            "\\(2\\sqrt{\\ln x}+c\\)",
+            "\\(\\dfrac{1}{2}\\sqrt{\\ln x}+c\\)",
+            "\\(\\ln\\left(\\sqrt{\\ln x}\\right)+c\\)"
+          ],
+          "answer": 0,
+          "hint": "Look for a function and its derivative: \\(\\ln x\\) has derivative \\(\\dfrac{1}{x}\\), and \\(\\dfrac{1}{x}\\) appears in the integrand. Try \\(u=\\ln x\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\ln x\\), so \\(du=\\dfrac{1}{x}dx\\).",
+              "work": "\\(u=\\ln x,\\qquad du=\\dfrac{dx}{x}\\)"
+            },
+            {
+              "explain": "Rewrite the integral, pulling out the constant \\(\\dfrac{1}{2}\\): \\(\\dfrac{dx}{2x\\sqrt{\\ln x}}=\\dfrac{1}{2}\\cdot\\dfrac{1}{\\sqrt{u}}\\cdot\\dfrac{dx}{x}\\).",
+              "work": "\\(\\displaystyle\\int\\dfrac{dx}{2x\\sqrt{\\ln x}}=\\dfrac{1}{2}\\displaystyle\\int u^{-\\frac{1}{2}}du\\)"
+            },
+            {
+              "explain": "Integrate: add 1 to the power and divide by the new power: \\(\\dfrac{u^{\\frac{1}{2}}}{\\dfrac{1}{2}}=2u^{\\frac{1}{2}}\\).",
+              "work": "\\(\\dfrac{1}{2}\\times2u^{\\frac{1}{2}}+c=u^{\\frac{1}{2}}+c\\)"
+            },
+            {
+              "explain": "Substitute back \\(u=\\ln x\\).",
+              "work": "\\(\\sqrt{\\ln x}+c\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\sqrt{\\ln x}=\\dfrac{1}{2\\sqrt{\\ln x}}\\cdot\\dfrac{1}{x}\\) ✓. Why not the others: B forgets the \\(\\dfrac{1}{2}\\) in front; C has an extra \\(\\dfrac{1}{2}\\); D integrates as a logarithm.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\displaystyle\\int\\dfrac{dx}{2x\\sqrt{\\ln x}}\\)",
+              "note": "Substitute u = ln x; du = dx ÷ x."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q13b",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{dx}{x\\sqrt{x^{2}-1}}\\) using the substitution \\(u=\\sqrt{x^{2}-1}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\tan^{-1}\\left(\\sqrt{x^{2}-1}\\right)+c\\)",
+            "\\(\\sin^{-1}\\left(\\sqrt{x^{2}-1}\\right)+c\\)",
+            "\\(\\tan^{-1}\\left(\\dfrac{1}{\\sqrt{x^{2}-1}}\\right)+c\\)",
+            "\\(\\ln\\left|x+\\sqrt{x^{2}-1}\\right|+c\\)"
+          ],
+          "answer": 0,
+          "hint": "With \\(u=\\sqrt{x^{2}-1}\\) you need \\(x\\) and \\(dx\\) in terms of \\(u\\): square to get \\(u^{2}=x^{2}-1\\), so \\(x^{2}=u^{2}+1\\), and differentiate.",
+          "steps": [
+            {
+              "explain": "Square: \\(u^{2}=x^{2}-1\\), so \\(x=\\sqrt{u^{2}+1}\\) (take \\(x>1\\)).",
+              "work": "\\(x=\\sqrt{u^{2}+1}\\)"
+            },
+            {
+              "explain": "Differentiate \\(x=(u^{2}+1)^{\\frac{1}{2}}\\) with respect to \\(u\\) (chain rule).",
+              "work": "\\(\\dfrac{dx}{du}=\\dfrac{u}{\\sqrt{u^{2}+1}}\\ \\Rightarrow\\ dx=\\dfrac{u}{\\sqrt{u^{2}+1}}\\,du\\)"
+            },
+            {
+              "explain": "Substitute \\(x=\\sqrt{u^{2}+1}\\), \\(\\sqrt{x^{2}-1}=u\\) and \\(dx\\).",
+              "work": "\\(\\displaystyle\\int\\dfrac{1}{\\sqrt{u^{2}+1}\\cdot u}\\cdot\\dfrac{u}{\\sqrt{u^{2}+1}}\\,du\\)"
+            },
+            {
+              "explain": "Simplify: the \\(u\\)'s cancel and \\(\\sqrt{u^{2}+1}\\times\\sqrt{u^{2}+1}=u^{2}+1\\).",
+              "work": "\\(=\\displaystyle\\int\\dfrac{du}{u^{2}+1}\\)"
+            },
+            {
+              "explain": "Standard integral \\(\\displaystyle\\int\\dfrac{du}{1+u^{2}}=\\tan^{-1}u\\), then substitute back \\(u=\\sqrt{x^{2}-1}\\).",
+              "work": "\\(=\\tan^{-1}u+c=\\tan^{-1}\\left(\\sqrt{x^{2}-1}\\right)+c\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the wrong standard integral; C has \\(\\dfrac{1}{u}\\) inside (its derivative has the opposite sign); D is the integral of \\(\\dfrac{1}{\\sqrt{x^{2}-1}}\\), not of this function.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "using the substitution \\(u=\\sqrt{x^{2}-1}\\)",
+              "note": "Find x and dx in terms of u."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2717,6 +2883,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q2",
+          "type": "mc",
+          "stem": "The algebraic fraction \\(\\dfrac{x}{3(x+c)^{2}}\\), where \\(c\\) is a non-zero real number, can be written in partial fraction form, where \\(A\\) and \\(B\\) are real numbers, as",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{A}{x+c}+\\dfrac{B}{x+c}\\)",
+            "\\(\\dfrac{A}{3x+c}+\\dfrac{B}{x+c}\\)",
+            "\\(\\dfrac{A}{x+c}+\\dfrac{B}{(x+c)^{2}}\\)",
+            "\\(\\dfrac{A}{3x+c}+\\dfrac{B}{(x+c)^{2}}\\)"
+          ],
+          "answer": 2,
+          "hint": "The denominator has a REPEATED linear factor \\((x+c)^{2}\\). A repeated factor needs one term for EACH power: \\(\\dfrac{A}{x+c}\\) and \\(\\dfrac{B}{(x+c)^{2}}\\). The constant 3 is just a number and goes into \\(A\\) and \\(B\\).",
+          "steps": [
+            {
+              "explain": "Factor the denominator: \\(3(x+c)^{2}\\) contains the linear factor \\((x+c)\\) repeated twice, times the constant 3.",
+              "work": "\\(3(x+c)^{2}=3\\times(x+c)\\times(x+c)\\)"
+            },
+            {
+              "explain": "Rule for a repeated linear factor \\((x+c)^{2}\\): include a separate fraction for \\((x+c)\\) AND for \\((x+c)^{2}\\), each with its own constant.",
+              "work": "\\(\\dfrac{x}{3(x+c)^{2}}\\equiv\\dfrac{A}{x+c}+\\dfrac{B}{(x+c)^{2}}\\)"
+            },
+            {
+              "explain": "The constant 3 does not create a new factor, so there is no \\(3x+c\\) in the denominator (that is not a factor of \\(3(x+c)^{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "Check by finding \\(A\\) and \\(B\\): write \\(x=(x+c)-c\\), then divide by \\(3(x+c)^{2}\\).",
+              "work": "\\(\\dfrac{x}{3(x+c)^{2}}=\\dfrac{(x+c)-c}{3(x+c)^{2}}=\\dfrac{1}{3}\\cdot\\dfrac{1}{x+c}-\\dfrac{c}{3}\\cdot\\dfrac{1}{(x+c)^{2}}\\)"
+            },
+            {
+              "explain": "So \\(A=\\dfrac{1}{3}\\) and \\(B=-\\dfrac{c}{3}\\): real numbers, as required. Option A has the same denominator twice (cannot make a repeated factor); B and D contain the non-factor \\(3x+c\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "can be written in partial fraction form",
+              "note": "Repeated factor: one fraction for each power."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q13e1",
+          "type": "mc",
+          "stem": "Find the real numbers \\(A\\) and \\(B\\) such that \\(\\dfrac{3x^{2}-x+12}{(x-2)(x^{2}+2x+3)}\\equiv\\dfrac{A}{x-2}+\\dfrac{Bx-3}{x^{2}+2x+3}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(A=2,\\ B=1\\)",
+            "\\(A=1,\\ B=2\\)",
+            "\\(A=2,\\ B=-1\\)",
+            "\\(A=-2,\\ B=1\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by the common denominator \\((x-2)(x^{2}+2x+3)\\) to get an identity with no fractions, then substitute convenient values of \\(x\\).",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\((x-2)(x^{2}+2x+3)\\).",
+              "work": "\\(3x^{2}-x+12\\equiv A(x^{2}+2x+3)+(Bx-3)(x-2)\\)"
+            },
+            {
+              "explain": "Let \\(x=2\\): this makes \\((x-2)=0\\) so the \\(B\\) term disappears.",
+              "work": "\\(3(4)-2+12=A(4+4+3)\\ \\Rightarrow\\ 22=11A\\ \\Rightarrow\\ A=2\\)"
+            },
+            {
+              "explain": "Let \\(x=1\\) (an easy value).",
+              "work": "\\(3-1+12=A(1+2+3)+(B-3)(1-2)\\ \\Rightarrow\\ 14=6A-(B-3)\\)"
+            },
+            {
+              "explain": "Substitute \\(A=2\\) and solve for \\(B\\).",
+              "work": "\\(14=12-B+3\\ \\Rightarrow\\ 14=15-B\\ \\Rightarrow\\ B=1\\)"
+            },
+            {
+              "explain": "Check by comparing the \\(x^{2}\\) coefficients: left \\(3\\); right \\(A+B=2+1=3\\) ✓. Why not the others: they fail the check at \\(x=2\\) (\\(A\\ne2\\)) or at \\(x^{2}\\) (\\(A+B\\ne3\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the real numbers \\(A\\) and \\(B\\)",
+              "note": "Substitute x = 2 to get A directly."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3166,6 +3440,68 @@
           "meta": {
             "source": "Fort St High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Fort St High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q13e2",
+          "type": "mc",
+          "stem": "Hence find \\(\\displaystyle\\int\\dfrac{3x^{2}-x+12}{(x-2)(x^{2}+2x+3)}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left|x^{2}+2x+3\\right|-2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+c\\)",
+            "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left|x^{2}+2x+3\\right|+2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+c\\)",
+            "\\(2\\ln|x-2|+\\ln\\left|x^{2}+2x+3\\right|-2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+c\\)",
+            "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left|x^{2}+2x+3\\right|-4\\tan^{-1}(x+1)+c\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the partial fractions from part (i): \\(\\dfrac{2}{x-2}+\\dfrac{x-3}{x^{2}+2x+3}\\). For the second fraction write the numerator as (a multiple of the DERIVATIVE of the denominator) plus a constant, then complete the square.",
+          "steps": [
+            {
+              "explain": "Split the integral using part (i) with \\(A=2,\\ B=1\\).",
+              "work": "\\(\\displaystyle\\int\\dfrac{2}{x-2}dx+\\displaystyle\\int\\dfrac{x-3}{x^{2}+2x+3}dx\\)"
+            },
+            {
+              "explain": "First integral is a standard log: \\(\\displaystyle\\int\\dfrac{2}{x-2}dx=2\\ln|x-2|\\).",
+              "work": "\\(2\\ln|x-2|\\)"
+            },
+            {
+              "explain": "Second: the derivative of the denominator \\(x^{2}+2x+3\\) is \\(2x+2\\). Write \\(x-3=\\dfrac{1}{2}(2x+2)-4\\).",
+              "work": "\\(\\dfrac{x-3}{x^{2}+2x+3}=\\dfrac{1}{2}\\cdot\\dfrac{2x+2}{x^{2}+2x+3}-\\dfrac{4}{x^{2}+2x+3}\\)"
+            },
+            {
+              "explain": "The first piece integrates to \\(\\dfrac{1}{2}\\ln|x^{2}+2x+3|\\).",
+              "work": "\\(\\displaystyle\\int\\dfrac{1}{2}\\cdot\\dfrac{2x+2}{x^{2}+2x+3}dx=\\dfrac{1}{2}\\ln\\left|x^{2}+2x+3\\right|\\)"
+            },
+            {
+              "explain": "Complete the square in the other piece: \\(x^{2}+2x+3=(x+1)^{2}+2\\), then use \\(\\displaystyle\\int\\dfrac{du}{u^{2}+a^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\) with \\(a=\\sqrt{2}\\).",
+              "work": "\\(-4\\displaystyle\\int\\dfrac{dx}{(x+1)^{2}+2}=-\\dfrac{4}{\\sqrt{2}}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)=-2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)\\)"
+            },
+            {
+              "explain": "Combine all the pieces.",
+              "work": "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln\\left|x^{2}+2x+3\\right|-2\\sqrt{2}\\tan^{-1}\\left(\\dfrac{x+1}{\\sqrt{2}}\\right)+c\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign on the arctan; C has coefficient 1 instead of \\(\\dfrac{1}{2}\\) on the log; D drops the \\(\\sqrt{2}\\) inside the arctan and uses the wrong coefficient.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find",
+              "note": "Numerator = ½(derivative of denominator) + constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4143,6 +4479,64 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q13c",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}x^{2}\\cos x\\,dx\\) by using integration by parts.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\pi^{2}}{16\\sqrt{2}}+\\dfrac{\\pi}{2\\sqrt{2}}-\\sqrt{2}\\)",
+            "\\(\\dfrac{\\pi^{2}}{16\\sqrt{2}}-\\dfrac{\\pi}{2\\sqrt{2}}+\\sqrt{2}\\)",
+            "\\(\\dfrac{\\pi^{2}}{16\\sqrt{2}}+\\dfrac{\\pi}{2\\sqrt{2}}+\\sqrt{2}\\)",
+            "\\(\\dfrac{\\pi^{2}}{16\\sqrt{2}}-\\dfrac{\\pi}{2\\sqrt{2}}-\\sqrt{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Integration by parts: \\(\\int u\\,v'dx=uv-\\int u'v\\,dx\\). Choose \\(u=x^{2}\\) (it gets simpler when differentiated) and \\(v'=\\cos x\\). You will need to do it TWICE.",
+          "steps": [
+            {
+              "explain": "First application: \\(u=x^{2},\\ v'=\\cos x\\), so \\(u'=2x,\\ v=\\sin x\\).",
+              "work": "\\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}x^{2}\\cos x\\,dx=\\left[x^{2}\\sin x\\right]_{0}^{\\frac{\\pi}{4}}-\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}2x\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Evaluate the first part: \\(\\sin\\dfrac{\\pi}{4}=\\dfrac{1}{\\sqrt{2}}\\) and the lower limit gives 0.",
+              "work": "\\(\\left[x^{2}\\sin x\\right]_{0}^{\\frac{\\pi}{4}}=\\dfrac{\\pi^{2}}{16}\\cdot\\dfrac{1}{\\sqrt{2}}=\\dfrac{\\pi^{2}}{16\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Second application for \\(\\int2x\\sin x\\,dx\\): \\(u=2x,\\ v'=\\sin x\\), so \\(u'=2,\\ v=-\\cos x\\).",
+              "work": "\\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}2x\\sin x\\,dx=\\left[-2x\\cos x\\right]_{0}^{\\frac{\\pi}{4}}+\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}2\\cos x\\,dx\\)"
+            },
+            {
+              "explain": "Evaluate each piece: \\(-2\\cdot\\dfrac{\\pi}{4}\\cdot\\dfrac{1}{\\sqrt{2}}=-\\dfrac{\\pi}{2\\sqrt{2}}\\) and \\(\\left[2\\sin x\\right]_{0}^{\\frac{\\pi}{4}}=\\dfrac{2}{\\sqrt{2}}=\\sqrt{2}\\).",
+              "work": "\\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}2x\\sin x\\,dx=-\\dfrac{\\pi}{2\\sqrt{2}}+\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Put together: subtract this from the first part.",
+              "work": "\\(\\dfrac{\\pi^{2}}{16\\sqrt{2}}-\\left(-\\dfrac{\\pi}{2\\sqrt{2}}+\\sqrt{2}\\right)=\\dfrac{\\pi^{2}}{16\\sqrt{2}}+\\dfrac{\\pi}{2\\sqrt{2}}-\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Check: \\(\\approx0.4362+1.1107-1.4142=0.133\\), a small positive number, sensible since \\(x^{2}\\cos x\\) is small on \\([0,0.785]\\). The other options contain sign errors in the last two terms.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "by using integration by parts",
+              "note": "Parts twice; keep the signs of the second integral."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -5813,6 +6207,126 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q16a1",
+          "type": "mc",
+          "stem": "Show that for \\(I_{n}=\\displaystyle\\int x^{n}e^{-3x}dx\\), \\(I_{n}=\\dfrac{-x^{n}e^{-3x}}{3}+\\dfrac{n}{3}I_{n-1}\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(u=x^{n},\\ v'=e^{-3x}\\Rightarrow u'=nx^{n-1},\\ v=-\\dfrac{1}{3}e^{-3x}\\). \\(I_{n}=-\\dfrac{x^{n}e^{-3x}}{3}+\\dfrac{n}{3}\\displaystyle\\int x^{n-1}e^{-3x}dx=-\\dfrac{x^{n}e^{-3x}}{3}+\\dfrac{n}{3}I_{n-1}\\)",
+            "\\(u=x^{n},\\ v'=e^{-3x}\\Rightarrow u'=nx^{n-1},\\ v=-3e^{-3x}\\). \\(I_{n}=-3x^{n}e^{-3x}+3nI_{n-1}\\)",
+            "\\(u=x^{n},\\ v'=e^{-3x}\\Rightarrow u'=nx^{n-1},\\ v=-\\dfrac{1}{3}e^{-3x}\\). \\(I_{n}=-\\dfrac{x^{n}e^{-3x}}{3}-\\dfrac{n}{3}I_{n-1}\\)",
+            "\\(u=x^{n},\\ v'=e^{-3x}\\Rightarrow u'=x^{n-1},\\ v=-\\dfrac{1}{3}e^{-3x}\\). \\(I_{n}=-\\dfrac{x^{n}e^{-3x}}{3}+\\dfrac{1}{3}I_{n-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Integration by parts: \\(\\displaystyle\\int u\\,v'dx=uv-\\displaystyle\\int u'v\\,dx\\). Choose \\(u=x^{n}\\) (power goes down when differentiated) and \\(v'=e^{-3x}\\). Watch the signs and the constant \\(-\\dfrac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Choose \\(u=x^{n}\\) and \\(v'=e^{-3x}\\). Differentiate \\(u\\) and integrate \\(v'\\) (note \\(\\displaystyle\\int e^{-3x}dx=-\\dfrac{1}{3}e^{-3x}\\)).",
+              "work": "\\(u'=nx^{n-1},\\qquad v=-\\dfrac{1}{3}e^{-3x}\\)"
+            },
+            {
+              "explain": "Apply the by-parts formula \\(uv-\\displaystyle\\int u'v\\,dx\\).",
+              "work": "\\(I_{n}=x^{n}\\left(-\\dfrac{1}{3}e^{-3x}\\right)-\\displaystyle\\int\\left(-\\dfrac{1}{3}e^{-3x}\\right)nx^{n-1}dx\\)"
+            },
+            {
+              "explain": "Two minus signs make a PLUS. Pull the constants \\(\\dfrac{n}{3}\\) outside the integral.",
+              "work": "\\(I_{n}=-\\dfrac{x^{n}e^{-3x}}{3}+\\dfrac{n}{3}\\displaystyle\\int x^{n-1}e^{-3x}dx\\)"
+            },
+            {
+              "explain": "The remaining integral is exactly \\(I_{n-1}\\).",
+              "work": "\\(I_{n}=-\\dfrac{x^{n}e^{-3x}}{3}+\\dfrac{n}{3}I_{n-1}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B integrates \\(e^{-3x}\\) wrongly (\\(-3\\) instead of \\(-\\dfrac{1}{3}\\)); C has a sign error (\\(-\\) instead of \\(+\\)); D loses the factor \\(n\\) from \\(u'\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that for",
+              "note": "By parts: u = xⁿ, v′ = e^(−3x); two minus signs make a plus."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q16a2",
+          "type": "mc",
+          "stem": "Hence evaluate \\(\\displaystyle\\int x^{3}e^{-3x}dx\\), using \\(I_{n}=\\dfrac{-x^{n}e^{-3x}}{3}+\\dfrac{n}{3}I_{n-1}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(-\\dfrac{x^{3}e^{-3x}}{3}-\\dfrac{x^{2}e^{-3x}}{3}-\\dfrac{2xe^{-3x}}{9}-\\dfrac{2e^{-3x}}{27}+C\\)",
+            "\\(-\\dfrac{x^{3}e^{-3x}}{3}+\\dfrac{x^{2}e^{-3x}}{3}-\\dfrac{2xe^{-3x}}{9}+\\dfrac{2e^{-3x}}{27}+C\\)",
+            "\\(-\\dfrac{x^{3}e^{-3x}}{3}-\\dfrac{x^{2}e^{-3x}}{3}-\\dfrac{2xe^{-3x}}{3}-\\dfrac{2e^{-3x}}{3}+C\\)",
+            "\\(-\\dfrac{x^{3}e^{-3x}}{3}-\\dfrac{x^{2}e^{-3x}}{3}-\\dfrac{xe^{-3x}}{9}-\\dfrac{e^{-3x}}{27}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the reduction formula repeatedly: \\(I_{3}\\) uses \\(I_{2}\\), \\(I_{2}\\) uses \\(I_{1}\\), \\(I_{1}\\) uses \\(I_{0}=\\displaystyle\\int e^{-3x}dx\\). Keep every coefficient \\(\\dfrac{n}{3}\\).",
+          "steps": [
+            {
+              "explain": "Apply the formula with \\(n=3\\).",
+              "work": "\\(I_{3}=-\\dfrac{x^{3}e^{-3x}}{3}+\\dfrac{3}{3}I_{2}=-\\dfrac{x^{3}e^{-3x}}{3}+I_{2}\\)"
+            },
+            {
+              "explain": "Apply with \\(n=2\\).",
+              "work": "\\(I_{2}=-\\dfrac{x^{2}e^{-3x}}{3}+\\dfrac{2}{3}I_{1}\\)"
+            },
+            {
+              "explain": "Apply with \\(n=1\\).",
+              "work": "\\(I_{1}=-\\dfrac{xe^{-3x}}{3}+\\dfrac{1}{3}I_{0}\\)"
+            },
+            {
+              "explain": "\\(I_{0}=\\displaystyle\\int e^{-3x}dx=-\\dfrac{1}{3}e^{-3x}\\) (no more \\(x\\) powers).",
+              "work": "\\(I_{0}=-\\dfrac{1}{3}e^{-3x}\\)"
+            },
+            {
+              "explain": "Work back up. First \\(I_{1}\\).",
+              "work": "\\(I_{1}=-\\dfrac{xe^{-3x}}{3}+\\dfrac{1}{3}\\left(-\\dfrac{1}{3}e^{-3x}\\right)=-\\dfrac{xe^{-3x}}{3}-\\dfrac{e^{-3x}}{9}\\)"
+            },
+            {
+              "explain": "Then \\(I_{2}\\): multiply \\(I_{1}\\) by \\(\\dfrac{2}{3}\\).",
+              "work": "\\(I_{2}=-\\dfrac{x^{2}e^{-3x}}{3}-\\dfrac{2xe^{-3x}}{9}-\\dfrac{2e^{-3x}}{27}\\)"
+            },
+            {
+              "explain": "Finally \\(I_{3}=-\\dfrac{x^{3}e^{-3x}}{3}+I_{2}\\), adding the constant of integration.",
+              "work": "\\(I_{3}=-\\dfrac{x^{3}e^{-3x}}{3}-\\dfrac{x^{2}e^{-3x}}{3}-\\dfrac{2xe^{-3x}}{9}-\\dfrac{2e^{-3x}}{27}+C\\)"
+            },
+            {
+              "explain": "Why not the others: B has sign errors in the last two terms; C forgets that the coefficients get multiplied by \\(\\dfrac{1}{3}\\) at each step; D forgets the factor \\(\\dfrac{2}{3}\\) (so the last two coefficients are wrong).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence evaluate",
+              "note": "Apply the recurrence step by step down to I₀."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }

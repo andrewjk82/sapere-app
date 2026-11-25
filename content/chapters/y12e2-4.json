@@ -1621,6 +1621,126 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q14d1",
+          "type": "mc",
+          "stem": "With respect to a fixed origin \\(O\\), the lines \\(l_{1}\\) and \\(l_{2}\\) are given by \\(l_{1}:\\ \\mathbf{r}=9\\mathbf{i}+13\\mathbf{j}-3\\mathbf{k}+\\lambda(\\mathbf{i}+4\\mathbf{j}-2\\mathbf{k})\\) and \\(l_{2}:\\ \\mathbf{r}=2\\mathbf{i}-\\mathbf{j}+\\mathbf{k}+\\mu(2\\mathbf{i}+\\mathbf{j}+\\mathbf{k})\\), where \\(\\lambda\\) and \\(\\mu\\) are scalar parameters. Given that \\(l_{1}\\) and \\(l_{2}\\) meet, find the position vector of their point of intersection.",
+          "difficulty": "hard",
+          "options": [
+            "\\(6\\mathbf{i}+\\mathbf{j}+3\\mathbf{k}\\)",
+            "\\(9\\mathbf{i}+13\\mathbf{j}-3\\mathbf{k}\\)",
+            "\\(2\\mathbf{i}-\\mathbf{j}+\\mathbf{k}\\)",
+            "\\(6\\mathbf{i}+\\mathbf{j}-3\\mathbf{k}\\)"
+          ],
+          "answer": 0,
+          "hint": "At the intersection both lines give the SAME point: set the \\(\\mathbf{i}\\), \\(\\mathbf{j}\\), \\(\\mathbf{k}\\) components equal. Use two equations to find \\(\\lambda\\) and \\(\\mu\\), check the third, then substitute back.",
+          "steps": [
+            {
+              "explain": "Write both lines in components. \\(l_{1}\\): \\((9+\\lambda,\\ 13+4\\lambda,\\ -3-2\\lambda)\\). \\(l_{2}\\): \\((2+2\\mu,\\ -1+\\mu,\\ 1+\\mu)\\).",
+              "work": "\\(9+\\lambda=2+2\\mu,\\quad13+4\\lambda=-1+\\mu,\\quad-3-2\\lambda=1+\\mu\\)"
+            },
+            {
+              "explain": "From the \\(\\mathbf{i}\\) equation: \\(\\lambda=2\\mu-7\\). (\\(\\dagger\\))",
+              "work": "\\(9+\\lambda=2+2\\mu\\ \\Rightarrow\\ \\lambda=2\\mu-7\\)"
+            },
+            {
+              "explain": "Substitute into the \\(\\mathbf{j}\\) equation \\(13+4\\lambda=-1+\\mu\\).",
+              "work": "\\(13+4(2\\mu-7)=-1+\\mu\\ \\Rightarrow\\ 8\\mu-15=\\mu-1\\)"
+            },
+            {
+              "explain": "Solve: \\(7\\mu=14\\).",
+              "work": "\\(\\mu=2,\\qquad\\lambda=2(2)-7=-3\\)"
+            },
+            {
+              "explain": "Check with the \\(\\mathbf{k}\\) equation: \\(-3-2(-3)=3\\) and \\(1+\\mu=3\\) ✓ (so the lines really meet).",
+              "work": "\\(-3-2\\lambda=3=1+\\mu\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Substitute \\(\\lambda=-3\\) into \\(l_{1}\\) (or \\(\\mu=2\\) into \\(l_{2}\\)).",
+              "work": "\\((9-3,\\ 13-12,\\ -3+6)=(6,1,3)\\ \\Rightarrow\\ 6\\mathbf{i}+\\mathbf{j}+3\\mathbf{k}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(9\\mathbf{i}+13\\mathbf{j}-3\\mathbf{k}\\) is the point of \\(l_{1}\\) with \\(\\lambda=0\\), \\(2\\mathbf{i}-\\mathbf{j}+\\mathbf{k}\\) is the point with \\(\\mu=0\\); the last option has a wrong \\(\\mathbf{k}\\)-component.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the position vector of their point of intersection",
+              "note": "Equate components; check the third equation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q14d2",
+          "type": "mc",
+          "stem": "With respect to a fixed origin \\(O\\), the lines \\(l_{1}\\) and \\(l_{2}\\) are given by \\(l_{1}:\\ \\mathbf{r}=9\\mathbf{i}+13\\mathbf{j}-3\\mathbf{k}+\\lambda(\\mathbf{i}+4\\mathbf{j}-2\\mathbf{k})\\) and \\(l_{2}:\\ \\mathbf{r}=2\\mathbf{i}-\\mathbf{j}+\\mathbf{k}+\\mu(2\\mathbf{i}+\\mathbf{j}+\\mathbf{k})\\), where \\(\\lambda\\) and \\(\\mu\\) are scalar parameters. Find the acute angle between \\(l_{1}\\) and \\(l_{2}\\), correct to the nearest tenth of a degree.",
+          "difficulty": "medium",
+          "options": [
+            "\\(69.1^{\\circ}\\)",
+            "\\(110.9^{\\circ}\\)",
+            "\\(20.9^{\\circ}\\)",
+            "\\(54.7^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "The angle between two lines is the angle between their DIRECTION vectors (the vectors multiplying \\(\\lambda\\) and \\(\\mu\\)). Use \\(\\cos\\theta=\\dfrac{\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}}{|\\underset{\\sim}{a}||\\underset{\\sim}{b}|}\\). If it is obtuse, take the acute angle.",
+          "steps": [
+            {
+              "explain": "Direction vectors: \\(\\underset{\\sim}{a}=(1,4,-2)\\) for \\(l_{1}\\) and \\(\\underset{\\sim}{b}=(2,1,1)\\) for \\(l_{2}\\).",
+              "work": "\\(\\underset{\\sim}{a}=\\begin{pmatrix}1\\\\ 4\\\\ -2\\end{pmatrix},\\quad\\underset{\\sim}{b}=\\begin{pmatrix}2\\\\ 1\\\\ 1\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Dot product.",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=1(2)+4(1)+(-2)(1)=4\\)"
+            },
+            {
+              "explain": "Lengths.",
+              "work": "\\(|\\underset{\\sim}{a}|=\\sqrt{1+16+4}=\\sqrt{21},\\qquad|\\underset{\\sim}{b}|=\\sqrt{4+1+1}=\\sqrt{6}\\)"
+            },
+            {
+              "explain": "Angle formula.",
+              "work": "\\(\\cos\\theta=\\dfrac{4}{\\sqrt{21}\\sqrt{6}}=\\dfrac{4}{\\sqrt{126}}=0.3563\\ldots\\)"
+            },
+            {
+              "explain": "Inverse cosine (degree mode). The cosine is POSITIVE, so \\(\\theta\\) is already acute.",
+              "work": "\\(\\theta=\\cos^{-1}(0.3563\\ldots)=69.1^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(110.9^{\\circ}=180^{\\circ}-69.1^{\\circ}\\) is the obtuse angle (not asked); \\(20.9^{\\circ}=90^{\\circ}-69.1^{\\circ}\\); \\(54.7^{\\circ}\\) comes from a wrong length.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the acute angle between \\(l_{1}\\) and \\(l_{2}\\)",
+              "note": "Angle between direction vectors; acute if cos > 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1665,6 +1785,68 @@
             "grade": "12",
             "origin": "teacher",
             "note": "Open response: teacher review."
+          }
+        },
+        {
+          "id": "gosford2020-e2-q14d3",
+          "type": "mc",
+          "stem": "With respect to a fixed origin \\(O\\), the lines \\(l_{1}\\) and \\(l_{2}\\) are given by \\(l_{1}:\\ \\mathbf{r}=9\\mathbf{i}+13\\mathbf{j}-3\\mathbf{k}+\\lambda(\\mathbf{i}+4\\mathbf{j}-2\\mathbf{k})\\) and \\(l_{2}:\\ \\mathbf{r}=2\\mathbf{i}-\\mathbf{j}+\\mathbf{k}+\\mu(2\\mathbf{i}+\\mathbf{j}+\\mathbf{k})\\), where \\(\\lambda\\) and \\(\\mu\\) are scalar parameters. Given that the point \\(A\\) has position vector \\(4\\mathbf{i}+16\\mathbf{j}-3\\mathbf{k}\\) and that the point \\(P(x_{1},y_{1},z_{1})\\) lies on \\(l_{1}\\) such that \\(AP\\) is perpendicular to \\(l_{1}\\), find the exact coordinates of \\(P\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\left(\\dfrac{28}{3},\\dfrac{43}{3},-\\dfrac{11}{3}\\right)\\)",
+            "\\(\\left(10,17,-5\\right)\\)",
+            "\\(\\left(6,1,3\\right)\\)",
+            "\\(\\left(\\dfrac{29}{3},\\dfrac{47}{3},-\\dfrac{13}{3}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P\\) is on \\(l_{1}\\), so \\(P=(9+\\lambda,\\ 13+4\\lambda,\\ -3-2\\lambda)\\) for some \\(\\lambda\\). Find \\(\\overrightarrow{AP}=\\overrightarrow{OP}-\\overrightarrow{OA}\\), then use \\(\\overrightarrow{AP}\\cdot\\underset{\\sim}{d}=0\\) where \\(\\underset{\\sim}{d}\\) is the direction vector of \\(l_{1}\\).",
+          "steps": [
+            {
+              "explain": "A general point of \\(l_{1}\\).",
+              "work": "\\(P=(x_{1},y_{1},z_{1})=(9+\\lambda,\\ 13+4\\lambda,\\ -3-2\\lambda)\\)"
+            },
+            {
+              "explain": "Vector \\(\\overrightarrow{AP}=\\overrightarrow{OP}-\\overrightarrow{OA}\\) with \\(A=(4,16,-3)\\).",
+              "work": "\\(\\overrightarrow{AP}=\\begin{pmatrix}5+\\lambda\\\\ 4\\lambda-3\\\\ -2\\lambda\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "\\(AP\\perp l_{1}\\) means \\(\\overrightarrow{AP}\\) is perpendicular to the direction vector \\((1,4,-2)\\): their dot product is 0.",
+              "work": "\\(1(5+\\lambda)+4(4\\lambda-3)-2(-2\\lambda)=0\\)"
+            },
+            {
+              "explain": "Expand and collect \\(\\lambda\\)-terms and constants.",
+              "work": "\\(5+\\lambda+16\\lambda-12+4\\lambda=0\\ \\Rightarrow\\ 21\\lambda-7=0\\)"
+            },
+            {
+              "explain": "Solve for \\(\\lambda\\).",
+              "work": "\\(\\lambda=\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\lambda=\\dfrac{1}{3}\\) into the point of \\(l_{1}\\).",
+              "work": "\\(P=\\left(9+\\dfrac{1}{3},\\ 13+\\dfrac{4}{3},\\ -3-\\dfrac{2}{3}\\right)=\\left(\\dfrac{28}{3},\\dfrac{43}{3},-\\dfrac{11}{3}\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: \\((10,17,-5)\\) is the point with \\(\\lambda=1\\); \\((6,1,3)\\) is the intersection with \\(l_{2}\\) (\\(\\lambda=-3\\)); the last option uses a wrong \\(\\lambda\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact coordinates of \\(P\\)",
+              "note": "P on l1: write it with λ, then AP · d = 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
           }
         }
       ]
@@ -2416,6 +2598,64 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q15b",
+          "type": "mc",
+          "stem": "Find the point(s) of intersection of the line with parametric equation \\(\\mathbf{r}=\\mathbf{i}+3\\mathbf{j}-4\\mathbf{k}+t(\\mathbf{i}+2\\mathbf{j}+2\\mathbf{k})\\) and the sphere with equation \\((x-1)^{2}+(y-3)^{2}+(z+4)^{2}=81\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\((4,9,2)\\) and \\((-2,-3,-10)\\)",
+            "\\((4,9,2)\\) only",
+            "\\((4,9,2)\\) and \\((-2,-3,2)\\)",
+            "\\((10,21,14)\\) and \\((-8,-15,-22)\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(x,y,z\\) in terms of the parameter \\(t\\), substitute into the sphere's equation, solve the quadratic in \\(t\\), then find each point.",
+          "steps": [
+            {
+              "explain": "Components of the line.",
+              "work": "\\(x=1+t,\\qquad y=3+2t,\\qquad z=-4+2t\\)"
+            },
+            {
+              "explain": "Substitute into \\((x-1)^{2}+(y-3)^{2}+(z+4)^{2}=81\\). Notice \\(x-1=t\\), \\(y-3=2t\\), \\(z+4=2t\\).",
+              "work": "\\(t^{2}+(2t)^{2}+(2t)^{2}=81\\)"
+            },
+            {
+              "explain": "Simplify and solve (both roots).",
+              "work": "\\(9t^{2}=81\\ \\Rightarrow\\ t^{2}=9\\ \\Rightarrow\\ t=3\\ \\text{or}\\ t=-3\\)"
+            },
+            {
+              "explain": "For \\(t=3\\): \\(x=1+3=4\\), \\(y=3+6=9\\), \\(z=-4+6=2\\).",
+              "work": "\\((4,9,2)\\)"
+            },
+            {
+              "explain": "For \\(t=-3\\): \\(x=1-3=-2\\), \\(y=3-6=-3\\), \\(z=-4-6=-10\\).",
+              "work": "\\((-2,-3,-10)\\)"
+            },
+            {
+              "explain": "Two intersection points (the line passes through the CENTRE \\((1,3,-4)\\) of the sphere at \\(t=0\\), radius 9, so it meets the sphere twice, symmetrically at \\(t=\\pm3\\); \\(|t|\\times3=9\\) ✓). Why not the others: B misses the root \\(t=-3\\); C has a sign slip in the \\(z\\)-coordinate; D uses \\(t=\\pm9\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the point(s) of intersection",
+              "note": "Substitute the line into the sphere; solve for t."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3744,6 +3984,172 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q3",
+          "type": "mc",
+          "stem": "Let \\(\\underset{\\sim}{u}=\\begin{pmatrix}1\\\\ 1\\\\ 0\\end{pmatrix}\\) and \\(\\underset{\\sim}{v}=\\begin{pmatrix}1\\\\ 2\\\\ 2\\end{pmatrix}\\). The angle between the vectors \\(\\underset{\\sim}{u}\\) and \\(\\underset{\\sim}{v}\\) is",
+          "difficulty": "easy",
+          "options": [
+            "\\(0^{\\circ}\\)",
+            "\\(45^{\\circ}\\)",
+            "\\(30^{\\circ}\\)",
+            "\\(22.5^{\\circ}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\cos\\theta=\\dfrac{\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}}{|\\underset{\\sim}{u}||\\underset{\\sim}{v}|}\\). Find the dot product and the two lengths separately.",
+          "steps": [
+            {
+              "explain": "Dot product: multiply matching components and add.",
+              "work": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=1(1)+1(2)+0(2)=3\\)"
+            },
+            {
+              "explain": "Length of \\(\\underset{\\sim}{u}\\).",
+              "work": "\\(|\\underset{\\sim}{u}|=\\sqrt{1^{2}+1^{2}+0^{2}}=\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Length of \\(\\underset{\\sim}{v}\\).",
+              "work": "\\(|\\underset{\\sim}{v}|=\\sqrt{1^{2}+2^{2}+2^{2}}=\\sqrt{9}=3\\)"
+            },
+            {
+              "explain": "Substitute into the angle formula.",
+              "work": "\\(\\cos\\theta=\\dfrac{3}{\\sqrt{2}\\times3}=\\dfrac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "\\(\\cos\\theta=\\dfrac{1}{\\sqrt{2}}\\) is an exact value: \\(\\theta=45^{\\circ}\\).",
+              "work": "\\(\\theta=\\cos^{-1}\\left(\\dfrac{1}{\\sqrt{2}}\\right)=45^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(0^{\\circ}\\) would need \\(\\underset{\\sim}{u}\\) and \\(\\underset{\\sim}{v}\\) parallel (they are not); \\(\\cos30^{\\circ}=\\dfrac{\\sqrt{3}}{2}\\) and \\(\\cos22.5^{\\circ}\\) do not equal \\(\\dfrac{1}{\\sqrt{2}}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The angle between the vectors",
+              "note": "Angle between vectors: cos = dot ÷ product of lengths."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q7",
+          "type": "mc",
+          "stem": "A unit vector perpendicular to \\(\\begin{pmatrix}5\\\\ 1\\\\ -2\\end{pmatrix}\\) is",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{1}{4}\\begin{pmatrix}5\\\\ 1\\\\ -2\\end{pmatrix}\\)",
+            "\\(\\dfrac{1}{29}\\begin{pmatrix}2\\\\ -4\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\dfrac{1}{\\sqrt{30}}\\begin{pmatrix}5\\\\ 1\\\\ -2\\end{pmatrix}\\)",
+            "\\(\\dfrac{1}{\\sqrt{29}}\\begin{pmatrix}2\\\\ -4\\\\ 3\\end{pmatrix}\\)"
+          ],
+          "answer": 3,
+          "hint": "Two conditions: (1) PERPENDICULAR means dot product \\(=0\\). (2) UNIT vector means length \\(=1\\). Check both conditions for each option.",
+          "steps": [
+            {
+              "explain": "Options A and C are multiples of \\(\\left(5,1,-2\\right)\\) itself, so they are PARALLEL to the given vector, not perpendicular. Check the dot product: \\(5\\cdot5+1\\cdot1+(-2)(-2)=30\\ne0\\).",
+              "work": "\\((5,1,-2)\\cdot(5,1,-2)=25+1+4=30\\ne0\\)"
+            },
+            {
+              "explain": "Options B and D point along \\((2,-4,3)\\). Test perpendicularity with the dot product.",
+              "work": "\\((5,1,-2)\\cdot(2,-4,3)=10-4-6=0\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Now the length of \\((2,-4,3)\\).",
+              "work": "\\(|(2,-4,3)|=\\sqrt{4+16+9}=\\sqrt{29}\\)"
+            },
+            {
+              "explain": "A unit vector is the vector divided by its LENGTH, so we need \\(\\dfrac{1}{\\sqrt{29}}\\), not \\(\\dfrac{1}{29}\\). In B the length is \\(\\dfrac{\\sqrt{29}}{29}\\ne1\\).",
+              "work": "\\(\\dfrac{1}{\\sqrt{29}}(2,-4,3)\\ \\text{has length}\\ \\dfrac{\\sqrt{29}}{\\sqrt{29}}=1\\)"
+            },
+            {
+              "explain": "Only D is both perpendicular and of length 1.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "A unit vector perpendicular to",
+              "note": "Perpendicular: dot = 0. Unit: divide by the length."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q14a",
+          "type": "mc",
+          "stem": "Let \\(\\underset{\\sim}{u}=\\begin{pmatrix}2\\\\ -1\\\\ -2\\end{pmatrix}\\) and \\(\\underset{\\sim}{v}=\\begin{pmatrix}a\\\\ 2\\\\ -1\\end{pmatrix}\\). Given that the vector projection of \\(\\underset{\\sim}{v}\\) in the direction of \\(\\underset{\\sim}{u}\\) is \\(\\begin{pmatrix}\\dfrac{4}{9}\\\\ -\\dfrac{2}{9}\\\\ -\\dfrac{4}{9}\\end{pmatrix}\\), find the value of \\(a\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(a=1\\)",
+            "\\(a=2\\)",
+            "\\(a=-1\\)",
+            "\\(a=\\dfrac{3}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Vector projection of \\(\\underset{\\sim}{v}\\) onto \\(\\underset{\\sim}{u}\\) \\(=\\dfrac{\\underset{\\sim}{v}\\cdot\\underset{\\sim}{u}}{|\\underset{\\sim}{u}|^{2}}\\,\\underset{\\sim}{u}\\). Compute the dot product (it contains \\(a\\)) and \\(|\\underset{\\sim}{u}|^{2}\\), then match one component.",
+          "steps": [
+            {
+              "explain": "Dot product \\(\\underset{\\sim}{v}\\cdot\\underset{\\sim}{u}\\).",
+              "work": "\\(\\underset{\\sim}{v}\\cdot\\underset{\\sim}{u}=a(2)+2(-1)+(-1)(-2)=2a-2+2=2a\\)"
+            },
+            {
+              "explain": "Length squared of \\(\\underset{\\sim}{u}\\).",
+              "work": "\\(|\\underset{\\sim}{u}|^{2}=2^{2}+(-1)^{2}+(-2)^{2}=9\\)"
+            },
+            {
+              "explain": "Vector projection \\(=\\dfrac{\\underset{\\sim}{v}\\cdot\\underset{\\sim}{u}}{|\\underset{\\sim}{u}|^{2}}\\underset{\\sim}{u}=\\dfrac{2a}{9}\\underset{\\sim}{u}\\).",
+              "work": "\\(\\dfrac{2a}{9}\\begin{pmatrix}2\\\\ -1\\\\ -2\\end{pmatrix}=\\begin{pmatrix}\\dfrac{4a}{9}\\\\ -\\dfrac{2a}{9}\\\\ -\\dfrac{4a}{9}\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Match with the given projection: compare the first components (all three give the same equation).",
+              "work": "\\(\\dfrac{4a}{9}=\\dfrac{4}{9}\\ \\Rightarrow\\ a=1\\)"
+            },
+            {
+              "explain": "Check the second: \\(-\\dfrac{2a}{9}=-\\dfrac{2}{9}\\) ✓. Why not the others: \\(a=2\\) would give \\(\\dfrac{8}{9}\\) in the first component; \\(a=-1\\) the wrong sign; \\(a=\\dfrac{3}{2}\\) gives \\(\\dfrac{2}{3}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of \\(a\\)",
+              "note": "Projection = (v·u ÷ |u|²) u."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4523,6 +4929,121 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q14b",
+          "type": "mc",
+          "stem": "Using vectors, show that the lines connecting any point on the semicircle \\(y=\\sqrt{1-x^{2}}\\) to the points \\((1,0)\\) and \\((-1,0)\\) are perpendicular. Which argument is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Let \\(P(x,y)\\) be on the semicircle. The vectors are \\(\\overrightarrow{AP}=\\begin{pmatrix}x+1\\\\ y\\end{pmatrix}\\) and \\(\\overrightarrow{BP}=\\begin{pmatrix}x-1\\\\ y\\end{pmatrix}\\). Dot product \\(=(x+1)(x-1)+y^{2}=x^{2}+y^{2}-1=0\\) since \\(x^{2}+y^{2}=1\\). So they are perpendicular.",
+            "Let \\(P(x,y)\\) be on the semicircle. The vectors are \\(\\begin{pmatrix}x+1\\\\ y\\end{pmatrix}\\) and \\(\\begin{pmatrix}x-1\\\\ y\\end{pmatrix}\\). Dot product \\(=(x+1)(x-1)+y=x^{2}+y-1\\), which is \\(0\\) on the circle. So they are perpendicular.",
+            "The position vector of \\(P\\) is \\(\\begin{pmatrix}x\\\\ y\\end{pmatrix}\\). Then \\(\\begin{pmatrix}x\\\\ y\\end{pmatrix}\\cdot\\begin{pmatrix}x\\\\ y\\end{pmatrix}=x^{2}+y^{2}=1\\ne0\\), so the lines are perpendicular.",
+            "The distances \\(PA\\) and \\(PB\\) are equal, so the two lines are perpendicular."
+          ],
+          "answer": 0,
+          "hint": "Two lines are perpendicular when the DOT PRODUCT of their direction vectors is 0. Write \\(P=(x,y)\\) with \\(x^{2}+y^{2}=1\\) (it is on the unit semicircle). Find the vectors \\(\\overrightarrow{AP}\\) and \\(\\overrightarrow{BP}\\) where \\(A=(-1,0)\\), \\(B=(1,0)\\).",
+          "steps": [
+            {
+              "explain": "The point \\(P(x,y)\\) lies on \\(y=\\sqrt{1-x^{2}}\\), so \\(y^{2}=1-x^{2}\\), i.e. \\(x^{2}+y^{2}=1\\). Let \\(A=(-1,0)\\) and \\(B=(1,0)\\).",
+              "work": "\\(x^{2}+y^{2}=1\\)"
+            },
+            {
+              "explain": "Vector from \\(A\\) to \\(P\\) (blue): subtract coordinates, \\(P-A\\).",
+              "work": "\\(\\overrightarrow{AP}=\\begin{pmatrix}x\\\\ y\\end{pmatrix}-\\begin{pmatrix}-1\\\\ 0\\end{pmatrix}=\\begin{pmatrix}x+1\\\\ y\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Vector from \\(B\\) to \\(P\\) (red): \\(P-B\\).",
+              "work": "\\(\\overrightarrow{BP}=\\begin{pmatrix}x\\\\ y\\end{pmatrix}-\\begin{pmatrix}1\\\\ 0\\end{pmatrix}=\\begin{pmatrix}x-1\\\\ y\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><path d=\"M 50 165 A 115 115 0 0 1 280 165\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\"/><line x1=\"32.0\" y1=\"165.0\" x2=\"298.0\" y2=\"165.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"165.0\" x2=\"116.4\" y2=\"60.8\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"280.0\" y1=\"165.0\" x2=\"116.4\" y2=\"60.8\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"50.0\" cy=\"165.0\" r=\"4.6\" fill=\"#1e293b\"/><circle cx=\"280.0\" cy=\"165.0\" r=\"4.6\" fill=\"#1e293b\"/><circle cx=\"116.4\" cy=\"60.8\" r=\"5.5\" fill=\"#047857\"/><polyline points=\"110.5,70.1 119.8,76.0 125.7,66.7\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"116.4\" y=\"46.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P(x, y)</text><text x=\"50.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><text x=\"280.0\" y=\"187.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><text x=\"86.0\" y=\"151.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(x+1, y)</text><text x=\"178.0\" y=\"151.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(x−1, y)</text></svg>"
+              }
+            },
+            {
+              "explain": "Dot product: multiply matching components and add. \\((x+1)(x-1)\\) is a difference of two squares.",
+              "work": "\\(\\overrightarrow{AP}\\cdot\\overrightarrow{BP}=(x+1)(x-1)+y\\cdot y=x^{2}-1+y^{2}\\)"
+            },
+            {
+              "explain": "Substitute \\(x^{2}+y^{2}=1\\).",
+              "work": "\\(=1-1=0\\)"
+            },
+            {
+              "explain": "Dot product \\(=0\\) \\(\\Rightarrow\\) the lines are perpendicular (angle in a semicircle is a right angle). Why not the others: B has \\(y\\) instead of \\(y^{2}\\) (\\(y\\cdot y\\)); C uses the position vector of \\(P\\) only and the dot product is not 0; D equal distances do not imply perpendicular.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using vectors, show that the lines connecting any point on the semicircle",
+              "note": "Dot product of AP and BP equals 0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "gosford2020-e2-q14c",
+          "type": "mc",
+          "stem": "Three points \\(P\\), \\(Q\\) and \\(R\\) have position vectors \\(\\underset{\\sim}{p}\\), \\(\\underset{\\sim}{q}\\) and \\(k\\left(2\\underset{\\sim}{p}+\\underset{\\sim}{q}\\right)\\) respectively, relative to a fixed origin \\(O\\). The points \\(O\\), \\(P\\) and \\(Q\\) are not collinear. Find the value of \\(k\\) if \\(\\overrightarrow{QR}\\) is parallel to \\(\\underset{\\sim}{p}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(k=1\\)",
+            "\\(k=-1\\)",
+            "\\(k=\\dfrac{1}{2}\\)",
+            "\\(k=2\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(\\overrightarrow{QR}=\\overrightarrow{OR}-\\overrightarrow{OQ}\\) and collect terms in \\(\\underset{\\sim}{p}\\) and \\(\\underset{\\sim}{q}\\). Parallel to \\(\\underset{\\sim}{p}\\) means \\(\\overrightarrow{QR}=\\lambda\\underset{\\sim}{p}\\). Since \\(O,P,Q\\) are not collinear, \\(\\underset{\\sim}{p}\\) and \\(\\underset{\\sim}{q}\\) are NOT parallel, so their coefficients must match separately.",
+          "steps": [
+            {
+              "explain": "Vector from \\(Q\\) to \\(R\\): \\(\\overrightarrow{QR}=\\overrightarrow{OR}-\\overrightarrow{OQ}\\).",
+              "work": "\\(\\overrightarrow{QR}=k(2\\underset{\\sim}{p}+\\underset{\\sim}{q})-\\underset{\\sim}{q}\\)"
+            },
+            {
+              "explain": "Expand and collect \\(\\underset{\\sim}{p}\\) and \\(\\underset{\\sim}{q}\\) terms.",
+              "work": "\\(\\overrightarrow{QR}=2k\\,\\underset{\\sim}{p}+(k-1)\\,\\underset{\\sim}{q}\\)"
+            },
+            {
+              "explain": "Parallel to \\(\\underset{\\sim}{p}\\): \\(\\overrightarrow{QR}=\\lambda\\underset{\\sim}{p}\\) for some non-zero real number \\(\\lambda\\).",
+              "work": "\\(2k\\,\\underset{\\sim}{p}+(k-1)\\,\\underset{\\sim}{q}=\\lambda\\,\\underset{\\sim}{p}\\)"
+            },
+            {
+              "explain": "\\(\\underset{\\sim}{p}\\) and \\(\\underset{\\sim}{q}\\) are not parallel (since \\(O,P,Q\\) are not collinear), so the coefficients of \\(\\underset{\\sim}{q}\\) on both sides must be equal: left \\(k-1\\), right \\(0\\).",
+              "work": "\\(k-1=0\\ \\Rightarrow\\ k=1\\)"
+            },
+            {
+              "explain": "Then \\(\\lambda=2k=2\\), non-zero ✓, so \\(\\overrightarrow{QR}=2\\underset{\\sim}{p}\\). Why not the others: other values of \\(k\\) leave a non-zero multiple of \\(\\underset{\\sim}{q}\\), so \\(\\overrightarrow{QR}\\) is not parallel to \\(\\underset{\\sim}{p}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(k\\)",
+              "note": "Coefficient of q must be zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
             "grade": "12",
             "origin": "teacher"
           }

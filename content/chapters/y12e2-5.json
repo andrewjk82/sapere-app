@@ -214,6 +214,68 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "gosford2020-e2-q13d",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{3+5\\cos x}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\ln3}{4}\\)",
+            "\\(\\dfrac{\\ln3}{2}\\)",
+            "\\(\\dfrac{\\ln3}{8}\\)",
+            "\\(\\dfrac{\\ln2}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "For \\(\\dfrac{1}{a+b\\cos x}\\) use the \\(t\\)-substitution \\(t=\\tan\\dfrac{x}{2}\\): \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\) and \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\). Change the limits too.",
+          "steps": [
+            {
+              "explain": "Let \\(t=\\tan\\dfrac{x}{2}\\). Then \\(\\cos x=\\dfrac{1-t^{2}}{1+t^{2}}\\) and \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\). Limits: \\(x=0\\Rightarrow t=0\\); \\(x=\\dfrac{\\pi}{2}\\Rightarrow t=\\tan\\dfrac{\\pi}{4}=1\\).",
+              "work": "\\(x:\\ 0\\to\\dfrac{\\pi}{2}\\quad\\Rightarrow\\quad t:\\ 0\\to1\\)"
+            },
+            {
+              "explain": "Substitute into the integral.",
+              "work": "\\(\\displaystyle\\int_{0}^{1}\\dfrac{\\dfrac{2\\,dt}{1+t^{2}}}{3+5\\left(\\dfrac{1-t^{2}}{1+t^{2}}\\right)}\\)"
+            },
+            {
+              "explain": "Multiply top and bottom by \\(1+t^{2}\\) to clear the small fractions. Denominator: \\(3(1+t^{2})+5(1-t^{2})=8-2t^{2}\\).",
+              "work": "\\(=\\displaystyle\\int_{0}^{1}\\dfrac{2\\,dt}{8-2t^{2}}=\\displaystyle\\int_{0}^{1}\\dfrac{dt}{4-t^{2}}\\)"
+            },
+            {
+              "explain": "Partial fractions: \\(\\dfrac{1}{4-t^{2}}=\\dfrac{1}{(2-t)(2+t)}=\\dfrac{1}{4}\\left(\\dfrac{1}{2-t}+\\dfrac{1}{2+t}\\right)\\).",
+              "work": "\\(\\displaystyle\\int_{0}^{1}\\dfrac{1}{4}\\left(\\dfrac{1}{2-t}+\\dfrac{1}{2+t}\\right)dt\\)"
+            },
+            {
+              "explain": "Integrate (note \\(\\int\\dfrac{dt}{2-t}=-\\ln|2-t|\\)) and substitute the limits.",
+              "work": "\\(=\\dfrac{1}{4}\\left[-\\ln|2-t|+\\ln|2+t|\\right]_{0}^{1}=\\dfrac{1}{4}\\left[\\ln\\dfrac{2+t}{2-t}\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "At \\(t=1\\): \\(\\ln\\dfrac{3}{1}=\\ln3\\). At \\(t=0\\): \\(\\ln1=0\\).",
+              "work": "\\(=\\dfrac{1}{4}(\\ln3-0)=\\dfrac{\\ln3}{4}\\)"
+            },
+            {
+              "explain": "Check size: the integrand rises from \\(\\dfrac{1}{8}\\) to \\(\\dfrac{1}{3}\\) over an interval of length about 1.57, so the answer is about \\(0.2\\times1.57\\approx0.3\\); \\(\\dfrac{\\ln3}{4}\\approx0.275\\) ✓.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{3+5\\cos x}\\)",
+              "note": "t = tan(x/2): cos x = (1 − t²) ÷ (1 + t²)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
+            "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
