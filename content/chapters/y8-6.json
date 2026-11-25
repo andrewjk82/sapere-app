@@ -3740,6 +3740,206 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(3x = 9\\).",
+          "options": [
+            "\\(x = 3\\)",
+            "\\(x = 6\\)",
+            "\\(x = 12\\)",
+            "\\(x = 27\\)"
+          ],
+          "answer": 0,
+          "hint": "Undo multiplying by \\(3\\): divide both sides of \\(3x = 9\\) by \\(3\\)!",
+          "keyPoints": [
+            {
+              "text": "3x = 9",
+              "note": "Divide both sides by 3: x = 9 ÷ 3 = 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the operation on \\(x\\): \\(x\\) is multiplied by \\(3\\).",
+              "work": "\\(3x = 9\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\) to isolate \\(x\\).",
+              "work": "\\(\\dfrac{3x}{3} = \\dfrac{9}{3}\\)"
+            },
+            {
+              "explain": "Simplify both sides: \\(x = 3\\). Check: \\(3(3) = 9\\).",
+              "work": "\\(x = 3\\)"
+            },
+            {
+              "explain": "Therefore, the solution is \\(x = 3\\).",
+              "work": "\\(\\text{Answer: } x = 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q22a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(7x + 2 = 16\\).",
+          "options": [
+            "\\(x = 2\\)",
+            "\\(x = 3\\)",
+            "\\(x = 7\\)",
+            "\\(x = 14\\)"
+          ],
+          "answer": 0,
+          "hint": "First subtract \\(2\\) from both sides to get \\(7x = 14\\), then divide both sides by \\(7\\)!",
+          "keyPoints": [
+            {
+              "text": "7x + 2 = 16",
+              "note": "Subtract 2 (7x = 14), then divide by 7 (x = 2)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(2\\) from both sides to isolate the \\(7x\\) term.",
+              "work": "\\(7x + 2 - 2 = 16 - 2 \\implies 7x = 14\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(7\\) to solve for \\(x\\).",
+              "work": "\\(x = \\dfrac{14}{7} = 2\\)"
+            },
+            {
+              "explain": "Check by substituting \\(x = 2\\): \\(7(2) + 2 = 14 + 2 = 16\\). Exact!",
+              "work": "\\(7(2) + 2 = 16\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = 2\\).",
+              "work": "\\(\\text{Answer: } x = 2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(\\dfrac{5m}{2} = 40\\).",
+          "options": [
+            "\\(m = 4\\)",
+            "\\(m = 8\\)",
+            "\\(m = 16\\)",
+            "\\(m = 20\\)"
+          ],
+          "answer": 2,
+          "hint": "Undo dividing by \\(2\\) first (multiply both sides by \\(2\\) to get \\(5m = 80\\)), then divide both sides by \\(5\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{5m}{2} = 40",
+              "note": "Multiply by 2 → 5m = 80 → divide by 5 → m = 16."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(2\\) to clear the denominator.",
+              "work": "\\(\\dfrac{5m}{2} \\times 2 = 40 \\times 2 \\implies 5m = 80\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(5\\) to isolate \\(m\\).",
+              "work": "\\(m = \\dfrac{80}{5} = 16\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{5 \\times 16}{2} = \\dfrac{80}{2} = 40\\). Exact!",
+              "work": "\\(\\dfrac{5(16)}{2} = 40\\)"
+            },
+            {
+              "explain": "Therefore, \\(m = 16\\).",
+              "work": "\\(\\text{Answer: } m = 16\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(2x^2 = 18\\).",
+          "options": [
+            "\\(x = 3\\)",
+            "\\(x = \\pm 3\\)",
+            "\\(x = \\pm 9\\)",
+            "\\(x = 9\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide by \\(2\\) to get \\(x^2 = 9\\), and remember BOTH a positive and negative number square to \\(9\\): \\((+3)^2 = 9\\) and \\((-3)^2 = 9\\)!",
+          "keyPoints": [
+            {
+              "text": "2x^2 = 18",
+              "note": "x² = 9 has TWO solutions: x = 3 and x = −3 (x = ±3)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide both sides by \\(2\\) to isolate \\(x^2\\).",
+              "work": "\\(x^2 = \\dfrac{18}{2} = 9\\)"
+            },
+            {
+              "explain": "Take the square root of both sides, remembering to include both the positive and negative roots.",
+              "work": "\\(x = \\pm\\sqrt{9} = \\pm 3\\)"
+            },
+            {
+              "explain": "Verify both solutions: \\(2(3)^2 = 18\\) and \\(2(-3)^2 = 2(9) = 18\\).",
+              "work": "\\(x = 3 \\text{ or } x = -3\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = \\pm 3\\).",
+              "work": "\\(\\text{Answer: } x = \\pm 3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-c2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve \\(2 \\times \\dfrac{1}{x} + \\dfrac{1}{5} + \\dfrac{1}{x} = \\dfrac{1}{6}\\).",
+          "options": [
+            "\\(x = -90\\)",
+            "\\(x = 90\\)",
+            "\\(x = -30\\)",
+            "\\(x = -10\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine the like terms \\(2 \\times \\dfrac{1}{x} + \\dfrac{1}{x} = \\dfrac{3}{x}\\), then subtract \\(\\dfrac{1}{5}\\) from \\(\\dfrac{1}{6}\\) using common denominator \\(30\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{1}{x}",
+              "note": "3/x = 1/6 − 1/5 = −1/30 → x = −90."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the two \\(\\dfrac{1}{x}\\) terms on the left: \\(\\dfrac{2}{x} + \\dfrac{1}{x} = \\dfrac{3}{x}\\).",
+              "work": "\\(\\dfrac{3}{x} + \\dfrac{1}{5} = \\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Subtract \\(\\dfrac{1}{5}\\) from both sides using the common denominator \\(30\\).",
+              "work": "\\(\\dfrac{3}{x} = \\dfrac{1}{6} - \\dfrac{1}{5} = \\dfrac{5 - 6}{30} = -\\dfrac{1}{30}\\)"
+            },
+            {
+              "explain": "Cross-multiply (or divide both sides by \\(3\\) to get \\(\\dfrac{1}{x} = -\\dfrac{1}{90}\\)) and take reciprocals.",
+              "work": "\\(3 \\times 30 = -x \\implies x = -90\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{3}{-90} + \\dfrac{1}{5} = -\\dfrac{1}{30} + \\dfrac{6}{30} = \\dfrac{5}{30} = \\dfrac{1}{6}\\). Exact!",
+              "work": "\\(\\text{Answer: } x = -90\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4063,6 +4263,166 @@
             {
               "explain": "Therefore, the answer is \\(x = 15\\).",
               "work": "\\(\\text{Answer: } x = 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following could be added to \\(3y\\) to form a single term?",
+          "options": [
+            "\\(2x\\)",
+            "\\(2xy\\)",
+            "\\(2y\\)",
+            "\\(2y^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Only LIKE TERMS (same pronumeral and same power — here just \\(y^1\\)) can be added to \\(3y\\) to make one single term!",
+          "keyPoints": [
+            {
+              "text": "single term",
+              "note": "Like terms have the exact same variable and exponent: 3y + 2y = 5y."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "To combine two algebraic terms by addition into a single term, they must be like terms (identical pronumeral part and identical exponent).",
+              "work": "\\(3y \\text{ has pronumeral part } y\\)"
+            },
+            {
+              "explain": "Check each option: \\(2x\\) has \\(x\\), \\(2xy\\) has \\(xy\\), \\(2y^2\\) has \\(y^2\\), and \\(2y\\) has \\(y\\).",
+              "work": "\\(3y + 2y = (3 + 2)y = 5y\\)"
+            },
+            {
+              "explain": "Only \\(2y\\) matches the pronumeral part \\(y\\) exactly.",
+              "work": "\\(2y \\text{ is a like term with } 3y\\)"
+            },
+            {
+              "explain": "Therefore, the correct option is \\(2y\\).",
+              "work": "\\(\\text{Answer: } 2y\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q22c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(3x + 1 = x + 2\\).",
+          "options": [
+            "\\(x = \\dfrac{1}{2}\\)",
+            "\\(x = 2\\)",
+            "\\(x = \\dfrac{3}{2}\\)",
+            "\\(x = \\dfrac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Collect the \\(x\\) terms on the left by subtracting \\(x\\) from both sides, and collect constants on the right by subtracting \\(1\\) from both sides!",
+          "keyPoints": [
+            {
+              "text": "3x + 1 = x + 2",
+              "note": "Subtract x and subtract 1 → 2x = 1 → x = 1/2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Subtract \\(x\\) from both sides so all \\(x\\) terms are on the left.",
+              "work": "\\(3x - x + 1 = 2 \\implies 2x + 1 = 2\\)"
+            },
+            {
+              "explain": "Subtract \\(1\\) from both sides to isolate \\(2x\\).",
+              "work": "\\(2x = 2 - 1 = 1\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\): \\(x = \\dfrac{1}{2}\\). Check: LHS \\(= 3(\\tfrac{1}{2}) + 1 = 2.5\\), RHS \\(= 0.5 + 2 = 2.5\\).",
+              "work": "\\(x = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Therefore, \\(x = \\dfrac{1}{2}\\).",
+              "work": "\\(\\text{Answer: } x = \\dfrac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q22d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(3(a + 2) + a + 5 = 15\\).",
+          "options": [
+            "\\(a = 1\\)",
+            "\\(a = 2\\)",
+            "\\(a = 3\\)",
+            "\\(a = \\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(3(a + 2) = 3a + 6\\) first, then collect like terms (\\(3a + a = 4a\\) and \\(6 + 5 = 11\\))!",
+          "keyPoints": [
+            {
+              "text": "3(a + 2) + a + 5 = 15",
+              "note": "Expand → 4a + 11 = 15 → 4a = 4 → a = 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the brackets: \\(3(a + 2) = 3a + 6\\).",
+              "work": "\\(3a + 6 + a + 5 = 15\\)"
+            },
+            {
+              "explain": "Collect like terms on the left: \\(3a + a = 4a\\) and \\(6 + 5 = 11\\).",
+              "work": "\\(4a + 11 = 15\\)"
+            },
+            {
+              "explain": "Subtract \\(11\\) from both sides and divide by \\(4\\): \\(4a = 4 \\implies a = 1\\).",
+              "work": "\\(4a = 15 - 11 = 4 \\implies a = 1\\)"
+            },
+            {
+              "explain": "Check: \\(3(1 + 2) + 1 + 5 = 9 + 1 + 5 = 15\\). Exact!",
+              "work": "\\(\\text{Answer: } a = 1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is there a solution to \\(x + 3 = x + 5\\)?",
+          "options": [
+            "No, because subtracting \\(x\\) from both sides gives the impossible statement \\(3 = 5\\).",
+            "Yes, \\(x = 2\\).",
+            "Yes, \\(x = 0\\).",
+            "Yes, every real number \\(x\\) is a solution."
+          ],
+          "answer": 0,
+          "hint": "Try subtracting \\(x\\) from both sides of \\(x + 3 = x + 5\\) — what statement is left behind?",
+          "keyPoints": [
+            {
+              "text": "x + 3 = x + 5",
+              "note": "Subtracting x leaves 3 = 5 (contradiction), so no solution exists."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Attempt to collect the \\(x\\) terms by subtracting \\(x\\) from both sides.",
+              "work": "\\(x + 3 - x = x + 5 - x\\)"
+            },
+            {
+              "explain": "Both \\(x\\) terms cancel out, leaving \\(3 = 5\\).",
+              "work": "\\(3 = 5 \\; (\\text{false!})\\)"
+            },
+            {
+              "explain": "No number \\(x\\) can give the same value when \\(3\\) is added as when \\(5\\) is added.",
+              "work": "\\(\\text{Contradiction} \\implies \\text{no solution}\\)"
+            },
+            {
+              "explain": "Therefore, there is NO solution to \\(x + 3 = x + 5\\).",
+              "work": "\\(\\text{Answer: No solution } (3 \\neq 5)\\)"
             }
           ],
           "timeLimit": 60,
@@ -4540,6 +4900,249 @@
             {
               "explain": "Write all three numbers: \\(9, 11, 13\\). Check: \\(7(11) = 77\\) and \\(3(9 + 13) + 11 = 66 + 11 = 77\\). Exact!",
               "work": "\\(\\text{Answer: } 9, 11, 13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an equation for the following statement and solve it: \"A number \\(x\\) is subtracted from \\(20\\), and the result is \\(10\\).\"",
+          "options": [
+            "\\(20 - x = 10, \\; x = 10\\)",
+            "\\(x - 20 = 10, \\; x = 30\\)",
+            "\\(20 - x = 10, \\; x = 30\\)",
+            "\\(20 + x = 10, \\; x = -10\\)"
+          ],
+          "answer": 0,
+          "hint": "\"\\(x\\) is subtracted FROM \\(20\\)\" means start with \\(20\\) and take away \\(x\\): \\(20 - x = 10\\) (not \\(x - 20\\))!",
+          "keyPoints": [
+            {
+              "text": "subtracted from \\(20\\)",
+              "note": "20 − x = 10 → x = 10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Translate the phrase carefully: \"\\(x\\) is subtracted from \\(20\\)\" writes \\(20\\) first, then \\(- x\\).",
+              "work": "\\(20 - x = 10\\)"
+            },
+            {
+              "explain": "Add \\(x\\) to both sides: \\(20 = 10 + x\\).",
+              "work": "\\(20 = 10 + x\\)"
+            },
+            {
+              "explain": "Subtract \\(10\\) from both sides: \\(x = 20 - 10 = 10\\).",
+              "work": "\\(x = 10\\)"
+            },
+            {
+              "explain": "Check: \\(20 - 10 = 10\\). Therefore, \\(20 - x = 10\\) and \\(x = 10\\).",
+              "work": "\\(\\text{Answer: } 20 - x = 10, \\; x = 10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q30a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Hamish purchases a horse and a saddle and pays \\(4250\\) dollars to get them delivered to his stable. The cost of the horse is four times the cost of the saddle. By letting the price of the saddle be \\(x\\) dollars, form an equation for the cost of the horse and saddle.",
+          "options": [
+            "\\(4x + x = 4250\\)",
+            "\\(4x = 4250\\)",
+            "\\(x + 4 = 4250\\)",
+            "\\(4x - x = 4250\\)"
+          ],
+          "answer": 0,
+          "hint": "If the saddle costs \\(x\\) dollars, the horse costs \\(4x\\) dollars — add BOTH together to equal \\(4250\\)!",
+          "keyPoints": [
+            {
+              "text": "four times the cost of the saddle",
+              "note": "Saddle = x, Horse = 4x → 4x + x = 4250."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write expressions for each item: saddle \\(= x\\) dollars, and horse \\(= 4x\\) dollars (four times the saddle).",
+              "work": "\\(\\text{Saddle} = x, \\quad \\text{Horse} = 4x\\)"
+            },
+            {
+              "explain": "Add the cost of the horse and the cost of the saddle to equal the total paid (\\(\\$4250\\)).",
+              "work": "\\(4x + x = 4250\\)"
+            },
+            {
+              "explain": "Collecting like terms gives \\(5x = 4250\\).",
+              "work": "\\(5x = 4250\\)"
+            },
+            {
+              "explain": "Therefore, the equation is \\(4x + x = 4250\\).",
+              "work": "\\(\\text{Answer: } 4x + x = 4250\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q30b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Hamish purchases a horse and a saddle for a total of \\(\\$4250\\), where the cost of the horse is four times the cost of the saddle. Letting the price of the saddle be \\(x\\) dollars, solve the equation to find the price of the saddle.",
+          "options": [
+            "\\(\\$850\\)",
+            "\\(\\$1062.50\\)",
+            "\\(\\$3400\\)",
+            "\\(\\$825\\)"
+          ],
+          "answer": 0,
+          "hint": "From \\(4x + x = 4250\\), simplify to \\(5x = 4250\\), then divide \\(4250\\) by \\(5\\)!",
+          "keyPoints": [
+            {
+              "text": "price of the saddle",
+              "note": "5x = 4250 → x = 4250 ÷ 5 = $850."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the equation with saddle \\(= x\\) and horse \\(= 4x\\): \\(4x + x = 4250\\).",
+              "work": "\\(4x + x = 4250\\)"
+            },
+            {
+              "explain": "Combine like terms: \\(5x = 4250\\).",
+              "work": "\\(5x = 4250\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(5\\): \\(4250 \\div 5 = 850\\).",
+              "work": "\\(x = \\dfrac{4250}{5} = 850\\)"
+            },
+            {
+              "explain": "Check: saddle \\(= \\$850\\), horse \\(= 4 \\times \\$850 = \\$3400\\), total \\(= \\$4250\\). Exact!",
+              "work": "\\(\\text{Answer: } \\$850\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A basketball team won \\(\\dfrac{2}{9}\\) of its games in a season. If it lost \\(15\\) more games than it won, how many games were played in the season?",
+          "options": [
+            "\\(21\\text{ games}\\)",
+            "\\(27\\text{ games}\\)",
+            "\\(36\\text{ games}\\)",
+            "\\(45\\text{ games}\\)"
+          ],
+          "answer": 1,
+          "hint": "If they won \\(\\dfrac{2}{9}\\) of the games, they lost \\(\\dfrac{7}{9}\\) of the games! The difference \\(\\dfrac{7}{9} - \\dfrac{2}{9} = \\dfrac{5}{9}\\) of the season equals \\(15\\) games!",
+          "keyPoints": [
+            {
+              "text": "lost \\(15\\) more games than it won",
+              "note": "7/9 − 2/9 = 5/9 of total = 15 → total = 15 × 9/5 = 27."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let \\(x\\) be the total games played. The team won \\(\\dfrac{2}{9}x\\) games, so it lost the remaining \\(1 - \\dfrac{2}{9} = \\dfrac{7}{9}x\\) games.",
+              "work": "\\(\\text{Won} = \\dfrac{2}{9}x, \\quad \\text{Lost} = \\dfrac{7}{9}x\\)"
+            },
+            {
+              "explain": "Use the fact that losses exceed wins by \\(15\\): \\(\\dfrac{7}{9}x - \\dfrac{2}{9}x = 15\\).",
+              "work": "\\(\\dfrac{5}{9}x = 15\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(\\dfrac{9}{5}\\): \\(x = 15 \\times \\dfrac{9}{5} = 3 \\times 9 = 27\\).",
+              "work": "\\(x = 15 \\times \\dfrac{9}{5} = 27\\)"
+            },
+            {
+              "explain": "Check: won \\(= \\dfrac{2}{9}(27) = 6\\), lost \\(= 21\\), and \\(21 - 6 = 15\\). Exact!",
+              "work": "\\(\\text{Answer: } 27\\text{ games}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q32b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Carl and Flo each must read a \\(500\\)-page novel. Carl reads \\(1\\) page a minute starting at \\(\\text{1:00 pm}\\), and Flo reads \\(5\\) pages a minute starting at \\(\\text{1:40 pm}\\). At what time will Flo overtake Carl?",
+          "options": [
+            "\\(\\text{1:48 pm}\\)",
+            "\\(\\text{1:50 pm}\\)",
+            "\\(\\text{1:55 pm}\\)",
+            "\\(\\text{2:00 pm}\\)"
+          ],
+          "answer": 1,
+          "hint": "At \\(\\text{1:40 pm}\\), Carl has a \\(40\\)-page head start! Let \\(x\\) be the minutes after \\(\\text{1:40 pm}\\): solve \\(5x = 40 + x\\)!",
+          "keyPoints": [
+            {
+              "text": "overtake Carl",
+              "note": "5x = 40 + x → 4x = 40 → x = 10 min after 1:40 pm = 1:50 pm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "By \\(\\text{1:40 pm}\\), Carl has already read \\(40\\text{ pages}\\). Let \\(x\\) be the number of minutes after \\(\\text{1:40 pm}\\) until Flo catches up.",
+              "work": "\\(\\text{Carl: } 40 + x, \\quad \\text{Flo: } 5x\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 210\" width=\"65%\" height=\"auto\" style=\"max-width:403px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"310\" height=\"210\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><line x1=\"87.0\" y1=\"28\" x2=\"87.0\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"143.0\" x2=\"282\" y2=\"143.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"126.0\" y1=\"28\" x2=\"126.0\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"120.0\" x2=\"282\" y2=\"120.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"165.0\" y1=\"28\" x2=\"165.0\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"97.0\" x2=\"282\" y2=\"97.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"204.0\" y1=\"28\" x2=\"204.0\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"74.0\" x2=\"282\" y2=\"74.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"243.0\" y1=\"28\" x2=\"243.0\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"51.0\" x2=\"282\" y2=\"51.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"282.0\" y1=\"28\" x2=\"282.0\" y2=\"166\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"28.0\" x2=\"282\" y2=\"28.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"48\" y1=\"166\" x2=\"288\" y2=\"166\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"48\" y1=\"166\" x2=\"48\" y2=\"22\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"48.0\" y=\"181\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">1:00</text><text x=\"126.0\" y=\"181\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">1:20</text><text x=\"204.0\" y=\"181\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">1:40</text><text x=\"243.0\" y=\"181\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">1:50</text><text x=\"282.0\" y=\"181\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">2:00</text><text x=\"41\" y=\"123.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">20</text><text x=\"41\" y=\"77.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">40</text><text x=\"41\" y=\"54.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">50</text><text x=\"41\" y=\"31.5\" text-anchor=\"end\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"9.5\" fill=\"#334155\">60</text><text x=\"16\" y=\"98\" text-anchor=\"middle\" transform=\"rotate(-90 16 98)\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\">Pages read</text><line x1=\"48\" y1=\"166\" x2=\"282\" y2=\"28\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><line x1=\"204\" y1=\"166\" x2=\"250.8\" y2=\"28\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"243\" y1=\"51\" x2=\"243\" y2=\"166\" stroke=\"#16a34a\" stroke-width=\"1.6\" stroke-dasharray=\"3,2\"/><line x1=\"48\" y1=\"51\" x2=\"243\" y2=\"51\" stroke=\"#16a34a\" stroke-width=\"1.6\" stroke-dasharray=\"3,2\"/><circle cx=\"243\" cy=\"51\" r=\"5\" fill=\"#16a34a\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"86\" y=\"106\" width=\"44\" height=\"16\" rx=\"3\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"108\" y=\"118\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">Carl</text><rect x=\"218\" y=\"116\" width=\"34\" height=\"16\" rx=\"3\" fill=\"#ffffff\" fill-opacity=\"0.92\"/><text x=\"235\" y=\"128\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#dc2626\">Flo</text><rect x=\"116\" y=\"34\" width=\"118\" height=\"17\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.94\" stroke=\"#86efac\" stroke-width=\"1\"/><text x=\"175\" y=\"46\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#15803d\">Overtake: 1:50 pm (50 p)</text><text x=\"155\" y=\"203\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Flo catches Carl 10 min after 1:40 pm → 1:50 pm</text></svg>"
+              }
+            },
+            {
+              "explain": "Set their page counts equal to find when Flo overtakes Carl.",
+              "work": "\\(5x = 40 + x\\)"
+            },
+            {
+              "explain": "Subtract \\(x\\) from both sides and divide by \\(4\\): \\(4x = 40 \\implies x = 10\\text{ minutes}\\).",
+              "work": "\\(4x = 40 \\implies x = 10\\text{ min}\\)"
+            },
+            {
+              "explain": "Add \\(10\\text{ minutes}\\) to \\(\\text{1:40 pm}\\): \\(\\text{1:50 pm}\\) (both are on page \\(50\\)).",
+              "work": "\\(\\text{1:40 pm} + 10\\text{ min} = \\text{1:50 pm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-c1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Cindy was asked by her teacher to subtract \\(3\\) from a certain number and then divide the result by \\(9\\). Instead, she subtracted \\(9\\) from the number and divided the result by \\(3\\), giving the answer \\(43\\). What would her answer be if she had completed the problem correctly?",
+          "options": [
+            "\\(13\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(138\\)"
+          ],
+          "answer": 1,
+          "hint": "First recover the original number \\(x\\) from Cindy's wrong calculation \\(\\dfrac{x - 9}{3} = 43\\), then substitute \\(x\\) into the CORRECT formula \\(\\dfrac{x - 3}{9}\\)!",
+          "keyPoints": [
+            {
+              "text": "completed the problem correctly",
+              "note": "(x − 9)/3 = 43 → x = 138 → (138 − 3)/9 = 15."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the certain number be \\(x\\). Write Cindy's mistaken calculation as an equation: \\(\\dfrac{x - 9}{3} = 43\\).",
+              "work": "\\(\\dfrac{x - 9}{3} = 43\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\): multiply both sides by \\(3\\) to get \\(x - 9 = 129\\), then add \\(9\\) to get \\(x = 138\\).",
+              "work": "\\(x - 9 = 129 \\implies x = 138\\)"
+            },
+            {
+              "explain": "Now perform the teacher's intended calculation on \\(x = 138\\): subtract \\(3\\), then divide by \\(9\\).",
+              "work": "\\(\\dfrac{138 - 3}{9} = \\dfrac{135}{9} = 15\\)"
+            },
+            {
+              "explain": "Therefore, Cindy's correct answer would have been \\(15\\).",
+              "work": "\\(\\text{Answer: } 15\\)"
             }
           ],
           "timeLimit": 60,
@@ -5046,6 +5649,209 @@
             {
               "explain": "Therefore, the simplified fraction is \\(\\dfrac{13x - 4}{15}\\).",
               "work": "\\(\\text{Answer: } \\dfrac{13x - 4}{15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(5x \\times 3y\\).",
+          "options": [
+            "\\(8xy\\)",
+            "\\(15xy\\)",
+            "\\(15x + y\\)",
+            "\\(53xy\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the numerical coefficients (\\(5 \\times 3\\)) and combine the pronumerals (\\(x \\times y = xy\\))!",
+          "keyPoints": [
+            {
+              "text": "5x \\times 3y",
+              "note": "(5 × 3) × (x × y) = 15xy."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the numerical coefficients together and the pronumerals together.",
+              "work": "\\(5x \\times 3y = (5 \\times 3) \\times (x \\times y)\\)"
+            },
+            {
+              "explain": "Multiply the coefficients: \\(5 \\times 3 = 15\\).",
+              "work": "\\(5 \\times 3 = 15\\)"
+            },
+            {
+              "explain": "Multiply the pronumerals in alphabetical order: \\(x \\times y = xy\\).",
+              "work": "\\(15 \\times xy = 15xy\\)"
+            },
+            {
+              "explain": "Therefore, \\(5x \\times 3y = 15xy\\).",
+              "work": "\\(\\text{Answer: } 15xy\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(6x^2 \\div 3x\\).",
+          "options": [
+            "\\(2x\\)",
+            "\\(2x^2\\)",
+            "\\(3x\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Write as a fraction \\(\\dfrac{6x^2}{3x}\\): divide the numbers (\\(6 \\div 3 = 2\\)) and subtract the powers of \\(x\\) (\\(x^{2 - 1} = x\\))!",
+          "keyPoints": [
+            {
+              "text": "6x^2 \\div 3x",
+              "note": "6 ÷ 3 = 2 and x² ÷ x = x, giving 2x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the division as an algebraic fraction.",
+              "work": "\\(6x^2 \\div 3x = \\dfrac{6x^2}{3x}\\)"
+            },
+            {
+              "explain": "Divide the numerical coefficients: \\(6 \\div 3 = 2\\).",
+              "work": "\\(\\dfrac{6}{3} = 2\\)"
+            },
+            {
+              "explain": "Apply the index division law to the pronumeral: \\(\\dfrac{x^2}{x^1} = x^{2 - 1} = x\\).",
+              "work": "\\(x^{2 - 1} = x\\)"
+            },
+            {
+              "explain": "Combine the results to get \\(2x\\).",
+              "work": "\\(\\text{Answer: } 2x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{12ab}{9}\\).",
+          "options": [
+            "\\(\\dfrac{4ab}{3}\\)",
+            "\\(\\dfrac{3ab}{4}\\)",
+            "\\(3ab\\)",
+            "\\(\\dfrac{4}{3ab}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) of \\(12\\) and \\(9\\) (which is \\(3\\)) and divide both numerator and denominator by \\(3\\)!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{12ab}{9}",
+              "note": "Divide numerator and denominator by HCF(12, 9) = 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the highest common factor of the numbers \\(12\\) and \\(9\\): \\(\\text{HCF}(12, 9) = 3\\).",
+              "work": "\\(\\text{HCF}(12, 9) = 3\\)"
+            },
+            {
+              "explain": "Divide both the numerator and denominator by \\(3\\).",
+              "work": "\\(\\dfrac{12ab \\div 3}{9 \\div 3}\\)"
+            },
+            {
+              "explain": "Simplify: \\(12 \\div 3 = 4\\) and \\(9 \\div 3 = 3\\), keeping \\(ab\\) in the numerator.",
+              "work": "\\(\\dfrac{4ab}{3}\\)"
+            },
+            {
+              "explain": "Therefore, the simplified expression is \\(\\dfrac{4ab}{3}\\).",
+              "work": "\\(\\text{Answer: } \\dfrac{4ab}{3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is equivalent to \\(\\dfrac{a}{bc}\\)?",
+          "options": [
+            "\\(a \\div b \\times c\\)",
+            "\\(a \\div (c \\times b)\\)",
+            "\\(\\dfrac{a}{b} \\times c\\)",
+            "\\((a \\times b) \\div c\\)"
+          ],
+          "answer": 1,
+          "hint": "In \\(\\dfrac{a}{bc}\\), BOTH \\(b\\) and \\(c\\) are in the denominator — you need brackets around \\((c \\times b)\\) after the \\(\\div\\) sign!",
+          "keyPoints": [
+            {
+              "text": "\\dfrac{a}{bc}",
+              "note": "Dividing by the entire product bc requires brackets: a ÷ (c × b)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In the fraction \\(\\dfrac{a}{bc}\\), \\(a\\) is divided by the entire product \\(b \\times c\\).",
+              "work": "\\(\\dfrac{a}{bc} = a \\div (b \\times c)\\)"
+            },
+            {
+              "explain": "By the commutative law of multiplication, \\(b \\times c = c \\times b\\), so \\(a \\div (c \\times b) = \\dfrac{a}{bc}\\).",
+              "work": "\\(a \\div (c \\times b) = \\dfrac{a}{cb} = \\dfrac{a}{bc}\\)"
+            },
+            {
+              "explain": "Check why the other options fail: \\(a \\div b \\times c = \\dfrac{a}{b} \\times c = \\dfrac{ac}{b}\\), which puts \\(c\\) in the numerator!",
+              "work": "\\(a \\div b \\times c = \\dfrac{ac}{b} \\neq \\dfrac{a}{bc}\\)"
+            },
+            {
+              "explain": "Therefore, the equivalent expression is \\(a \\div (c \\times b)\\).",
+              "work": "\\(\\text{Answer: } a \\div (c \\times b)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "khs22-y8-t4b-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A floor of a room is rectangular in shape, has length \\(10x\\text{ metres}\\) and width \\(7x\\text{ metres}\\). The floor is to be tiled with rectangular tiles each of length \\(\\dfrac{x}{3}\\text{ metres}\\) and width \\(\\dfrac{x}{4}\\text{ metres}\\). How many tiles are needed to tile this floor area?",
+          "options": [
+            "\\(420\\text{ tiles}\\)",
+            "\\(700\\text{ tiles}\\)",
+            "\\(840\\text{ tiles}\\)",
+            "\\(1200\\text{ tiles}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(A_{\\text{room}} = 10x \\times 7x = 70x^2\\) and \\(A_{\\text{tile}} = \\dfrac{x}{3} \\times \\dfrac{x}{4} = \\dfrac{x^2}{12}\\), then divide \\(A_{\\text{room}} \\div A_{\\text{tile}}\\) (the \\(x^2\\) cancels out)!",
+          "keyPoints": [
+            {
+              "text": "How many tiles",
+              "note": "70x² ÷ (x²/12) = 70 × 12 = 840 tiles."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the area of the rectangular room: \\(10x \\times 7x = 70x^2\\text{ m}^2\\).",
+              "work": "\\(A_{\\text{room}} = 10x \\times 7x = 70x^2\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 176\" width=\"65%\" height=\"auto\" style=\"max-width:429px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"330\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"38\" y=\"36\" width=\"142\" height=\"96\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"109\" y=\"28\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">10<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan> m</text><text x=\"24\" y=\"88\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4ed8\">7<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan></text><text x=\"109\" y=\"88\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e3a8a\">Room: 70<tspan font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\">x</tspan><tspan dy=\"-4\" font-size=\"9\">2</tspan><tspan dy=\"4\"> m</tspan><tspan dy=\"-4\" font-size=\"9\">2</tspan></text><rect x=\"234\" y=\"64\" width=\"56\" height=\"42\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"262\" y=\"45\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\" fill=\"#15803d\">x</text><line x1=\"254\" y1=\"49\" x2=\"270\" y2=\"49\" stroke=\"#15803d\" stroke-width=\"1.2\"/><text x=\"262\" y=\"60\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" fill=\"#15803d\">3</text><text x=\"304\" y=\"81\" text-anchor=\"middle\" font-family=\"KaTeX_Math, 'Times New Roman', serif\" font-style=\"italic\" font-size=\"11.5\" fill=\"#15803d\">x</text><line x1=\"296\" y1=\"85\" x2=\"312\" y2=\"85\" stroke=\"#15803d\" stroke-width=\"1.2\"/><text x=\"304\" y=\"96\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" fill=\"#15803d\">4</text><text x=\"262\" y=\"89\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#166534\">Tile</text><text x=\"165\" y=\"167\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">Tiles = (70x²) ÷ (x²/12) = 70 × 12 = 840</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the area of one rectangular tile: \\(\\dfrac{x}{3} \\times \\dfrac{x}{4} = \\dfrac{x^2}{12}\\text{ m}^2\\).",
+              "work": "\\(A_{\\text{tile}} = \\dfrac{x}{3} \\times \\dfrac{x}{4} = \\dfrac{x^2}{12}\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Divide the room area by the tile area (multiply by the reciprocal and cancel \\(x^2\\)).",
+              "work": "\\(\\text{Tiles} = 70x^2 \\div \\dfrac{x^2}{12} = 70x^2 \\times \\dfrac{12}{x^2} = 70 \\times 12\\)"
+            },
+            {
+              "explain": "Multiply \\(70 \\times 12 = 840\\). Therefore, \\(840\\text{ tiles}\\) are needed.",
+              "work": "\\(70 \\times 12 = 840\\text{ tiles}\\)"
             }
           ],
           "timeLimit": 60,
