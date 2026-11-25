@@ -4,6 +4,18 @@ import { db } from '../firebase/config';
 // Make-up lessons the teacher still owes (admin-only by rules). An entry added from a lesson uses the session doc id,
 // so pressing the button twice never lists the same lesson twice.
 export const MAKEUP_COL = 'makeup_classes';
+export const DEFAULT_HOURS = 2;
+
+const minutes = (clock = '') => {
+  const m = String(clock).match(/(\d+):(\d+)\s*(AM|PM)/i);
+  return m ? ((Number(m[1]) % 12) + (m[3].toUpperCase() === 'PM' ? 12 : 0)) * 60 + Number(m[2]) : null;
+};
+// Lesson length in hours, to the half hour; 0 when a time is missing.
+export const lessonHours = ({ startTime, endTime } = {}) => {
+  const a = minutes(startTime);
+  const b = minutes(endTime);
+  return a == null || b == null || b <= a ? 0 : Math.round((b - a) / 30) / 2;
+};
 
 export const addMakeupFromSession = (session) => setDoc(doc(db, MAKEUP_COL, session.id), {
   studentName: session.studentName || session.groupStudentNames?.[0] || 'Student',
@@ -11,11 +23,12 @@ export const addMakeupFromSession = (session) => setDoc(doc(db, MAKEUP_COL, sess
   missedDate: session.date || '',
   missedTime: session.startTime || '',
   subject: session.subject || '',
+  ...(lessonHours(session) ? { hours: lessonHours(session) } : {}),
   createdAt: serverTimestamp(),
 }, { merge: true });
 
 export const addMakeup = (fields) => addDoc(collection(db, MAKEUP_COL), { ...fields, createdAt: serverTimestamp() });
-export const saveMakeupNote = (id, note) => updateDoc(doc(db, MAKEUP_COL, id), { note });
+export const updateMakeup = (id, fields) => updateDoc(doc(db, MAKEUP_COL, id), fields);
 export const removeMakeup = (id) => deleteDoc(doc(db, MAKEUP_COL, id));
 
 // A make-up lesson is an ordinary session doc (so Schedule, the Class page and the student all show it), tagged with
