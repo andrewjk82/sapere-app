@@ -20764,6 +20764,56 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "loreto2024-q24a",
+          "type": "mc",
+          "stem": "Show that \\(\\dfrac{1}{\\sec\\theta-\\tan\\theta}-\\dfrac{1}{\\sec\\theta+\\tan\\theta}=2\\tan\\theta\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "LHS \\(=\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{(\\sec\\theta-\\tan\\theta)(\\sec\\theta+\\tan\\theta)}=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{2\\tan\\theta}{1}=2\\tan\\theta\\)",
+            "LHS \\(=\\dfrac{1-1}{(\\sec\\theta-\\tan\\theta)-(\\sec\\theta+\\tan\\theta)}=\\dfrac{0}{-2\\tan\\theta}=0\\neq2\\tan\\theta\\)",
+            "LHS \\(=\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta+\\tan^{2}\\theta}\\)",
+            "LHS \\(=\\dfrac{(\\sec\\theta-\\tan\\theta)-(\\sec\\theta+\\tan\\theta)}{\\sec^{2}\\theta-\\tan^{2}\\theta}=\\dfrac{-2\\tan\\theta}{1}=-2\\tan\\theta\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the fractions over a COMMON denominator (the product is a difference of squares), then use the identity \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\) (from \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\)).",
+          "steps": [
+            {
+              "explain": "Common denominator: the numerators swap brackets. Be careful with the minus sign: \\(-(\\sec\\theta-\\tan\\theta)\\).",
+              "work": "\\(\\dfrac{(\\sec\\theta+\\tan\\theta)-(\\sec\\theta-\\tan\\theta)}{(\\sec\\theta-\\tan\\theta)(\\sec\\theta+\\tan\\theta)}\\)"
+            },
+            {
+              "explain": "Numerator: \\(\\sec\\theta+\\tan\\theta-\\sec\\theta+\\tan\\theta=2\\tan\\theta\\). Denominator: difference of squares.",
+              "work": "\\(=\\dfrac{2\\tan\\theta}{\\sec^{2}\\theta-\\tan^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Identity \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta\\) gives \\(\\sec^{2}\\theta-\\tan^{2}\\theta=1\\).",
+              "work": "\\(=\\dfrac{2\\tan\\theta}{1}=2\\tan\\theta=\\text{RHS}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B subtracts the denominators; C changes the denominator to a sum; D subtracts the numerators in the wrong order (sign error).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "Common denominator, then sec² − tan² = 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -22914,6 +22964,59 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "loreto2024-q17",
+          "type": "mc",
+          "stem": "Solve the equation \\(\\dfrac{\\operatorname{cosec}x}{5}-2=0\\) for \\(0\\leq x\\leq360^{\\circ}\\). Give your answer correct to the nearest minute.",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=5^{\\circ}44',\\ 174^{\\circ}16'\\)",
+            "\\(x=5^{\\circ}44'\\) only",
+            "\\(x=5^{\\circ}44',\\ 185^{\\circ}44'\\)",
+            "\\(x=84^{\\circ}16',\\ 275^{\\circ}44'\\)"
+          ],
+          "answer": 0,
+          "hint": "Isolate \\(\\operatorname{cosec}x\\), then use \\(\\operatorname{cosec}x=\\dfrac{1}{\\sin x}\\) to get \\(\\sin x\\). Sine is POSITIVE in quadrants 1 and 2 (two solutions). Convert decimal degrees to minutes (\\(1^{\\circ}=60'\\)).",
+          "steps": [
+            {
+              "explain": "Rearrange: add 2, multiply by 5.",
+              "work": "\\(\\dfrac{\\operatorname{cosec}x}{5}=2\\ \\Rightarrow\\ \\operatorname{cosec}x=10\\)"
+            },
+            {
+              "explain": "Reciprocal: \\(\\sin x=\\dfrac{1}{\\operatorname{cosec}x}\\).",
+              "work": "\\(\\sin x=\\dfrac{1}{10}=0.1\\)"
+            },
+            {
+              "explain": "Quadrant 1 (reference angle): \\(\\sin^{-1}0.1=5.739^{\\circ}\\); \\(0.739\\times60=44.35'\\), so \\(5^{\\circ}44'\\). Quadrant 2: \\(180^{\\circ}-5.739^{\\circ}=174.261^{\\circ}\\); \\(0.261\\times60=15.65'\\), so \\(174^{\\circ}16'\\).",
+              "work": "\\(x=5^{\\circ}44',\\ 174^{\\circ}16'\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 170\" width=\"100%\" height=\"auto\" style=\"max-width:350px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"100.0\" x2=\"340.0\" y2=\"100.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"144.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"340.0\" y1=\"100.0\" x2=\"333.1\" y2=\"96.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"340.0\" y1=\"100.0\" x2=\"333.1\" y2=\"104.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"10.0\" x2=\"36.0\" y2=\"16.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"10.0\" x2=\"44.0\" y2=\"16.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"342.0\" y=\"115.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x°</text><text x=\"49.0\" y=\"20.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"40.0,100.0 40.7,99.0 41.4,98.0 42.1,97.0 42.9,96.0 43.6,95.0 44.3,94.0 45.0,93.0 45.7,92.0 46.4,91.0 47.1,90.0 47.9,89.0 48.6,88.0 49.3,87.0 50.0,86.0 50.7,85.1 51.4,84.1 52.2,83.1 52.9,82.1 53.6,81.2 54.3,80.2 55.0,79.3 55.7,78.3 56.4,77.4 57.2,76.4 57.9,75.5 58.6,74.6 59.3,73.7 60.0,72.8 60.7,71.8 61.5,70.9 62.2,70.1 62.9,69.2 63.6,68.3 64.3,67.4 65.0,66.6 65.7,65.7 66.5,64.9 67.2,64.0 67.9,63.2 68.6,62.4 69.3,61.6 70.0,60.8 70.7,60.0 71.5,59.2 72.2,58.4 72.9,57.7 73.6,56.9 74.3,56.2 75.0,55.5 75.8,54.7 76.5,54.0 77.2,53.3 77.9,52.7 78.6,52.0 79.3,51.3 80.0,50.7 80.8,50.1 81.5,49.4 82.2,48.8 82.9,48.2 83.6,47.6 84.3,47.1 85.0,46.5 85.8,46.0 86.5,45.4 87.2,44.9 87.9,44.4 88.6,43.9 89.3,43.4 90.0,43.0 90.8,42.5 91.5,42.1 92.2,41.7 92.9,41.3 93.6,40.9 94.3,40.5 95.1,40.1 95.8,39.8 96.5,39.5 97.2,39.1 97.9,38.8 98.6,38.5 99.3,38.3 100.1,38.0 100.8,37.8 101.5,37.5 102.2,37.3 102.9,37.1 103.6,37.0 104.3,36.8 105.1,36.6 105.8,36.5 106.5,36.4 107.2,36.3 107.9,36.2 108.6,36.1 109.4,36.1 110.1,36.0 110.8,36.0 111.5,36.0 112.2,36.0 112.9,36.0 113.6,36.1 114.4,36.1 115.1,36.2 115.8,36.3 116.5,36.4 117.2,36.5 117.9,36.6 118.6,36.8 119.4,37.0 120.1,37.1 120.8,37.3 121.5,37.5 122.2,37.8 122.9,38.0 123.7,38.3 124.4,38.5 125.1,38.8 125.8,39.1 126.5,39.5 127.2,39.8 127.9,40.1 128.7,40.5 129.4,40.9 130.1,41.3 130.8,41.7 131.5,42.1 132.2,42.5 132.9,43.0 133.7,43.4 134.4,43.9 135.1,44.4 135.8,44.9 136.5,45.4 137.2,46.0 138.0,46.5 138.7,47.1 139.4,47.6 140.1,48.2 140.8,48.8 141.5,49.4 142.2,50.1 143.0,50.7 143.7,51.3 144.4,52.0 145.1,52.7 145.8,53.3 146.5,54.0 147.2,54.7 148.0,55.5 148.7,56.2 149.4,56.9 150.1,57.7 150.8,58.4 151.5,59.2 152.3,60.0 153.0,60.8 153.7,61.6 154.4,62.4 155.1,63.2 155.8,64.0 156.5,64.9 157.3,65.7 158.0,66.6 158.7,67.4 159.4,68.3 160.1,69.2 160.8,70.1 161.6,70.9 162.3,71.8 163.0,72.8 163.7,73.7 164.4,74.6 165.1,75.5 165.8,76.4 166.6,77.4 167.3,78.3 168.0,79.3 168.7,80.2 169.4,81.2 170.1,82.1 170.8,83.1 171.6,84.1 172.3,85.1 173.0,86.0 173.7,87.0 174.4,88.0 175.1,89.0 175.8,90.0 176.6,91.0 177.3,92.0 178.0,93.0 178.7,94.0 179.4,95.0 180.1,96.0 180.9,97.0 181.6,98.0 182.3,99.0 183.0,100.0 183.7,101.0 184.4,102.0 185.1,103.0 185.9,104.0 186.6,105.0 187.3,106.0 188.0,107.0 188.7,108.0 189.4,109.0 190.1,110.0 190.9,111.0 191.6,112.0 192.3,113.0 193.0,114.0 193.7,114.9 194.4,115.9 195.2,116.9 195.9,117.9 196.6,118.8 197.3,119.8 198.0,120.7 198.7,121.7 199.4,122.6 200.2,123.6 200.9,124.5 201.6,125.4 202.3,126.3 203.0,127.2 203.7,128.2 204.4,129.1 205.2,129.9 205.9,130.8 206.6,131.7 207.3,132.6 208.0,133.4 208.7,134.3 209.5,135.1 210.2,136.0 210.9,136.8 211.6,137.6 212.3,138.4 213.0,139.2 213.7,140.0 214.5,140.8 215.2,141.6 215.9,142.3 216.6,143.1 217.3,143.8 218.0,144.5 218.8,145.3 219.5,146.0 220.2,146.7 220.9,147.3 221.6,148.0 222.3,148.7 223.0,149.3 223.8,149.9 224.5,150.6 225.2,151.2 225.9,151.8 226.6,152.4 227.3,152.9 228.0,153.5 228.8,154.0 229.5,154.6 230.2,155.1 230.9,155.6 231.6,156.1 232.3,156.6 233.0,157.0 233.8,157.5 234.5,157.9 235.2,158.3 235.9,158.7 236.6,159.1 237.3,159.5 238.1,159.9 238.8,160.2 239.5,160.5 240.2,160.9 240.9,161.2 241.6,161.5 242.3,161.7 243.1,162.0 243.8,162.2 244.5,162.5 245.2,162.7 245.9,162.9 246.6,163.0 247.3,163.2 248.1,163.4 248.8,163.5 249.5,163.6 250.2,163.7 250.9,163.8 251.6,163.9 252.4,163.9 253.1,164.0 253.8,164.0 254.5,164.0 255.2,164.0 255.9,164.0 256.6,163.9 257.4,163.9 258.1,163.8 258.8,163.7 259.5,163.6 260.2,163.5 260.9,163.4 261.6,163.2 262.4,163.0 263.1,162.9 263.8,162.7 264.5,162.5 265.2,162.2 265.9,162.0 266.7,161.7 267.4,161.5 268.1,161.2 268.8,160.9 269.5,160.5 270.2,160.2 270.9,159.9 271.7,159.5 272.4,159.1 273.1,158.7 273.8,158.3 274.5,157.9 275.2,157.5 275.9,157.0 276.7,156.6 277.4,156.1 278.1,155.6 278.8,155.1 279.5,154.6 280.2,154.0 281.0,153.5 281.7,152.9 282.4,152.4 283.1,151.8 283.8,151.2 284.5,150.6 285.2,149.9 286.0,149.3 286.7,148.7 287.4,148.0 288.1,147.3 288.8,146.7 289.5,146.0 290.2,145.3 291.0,144.5 291.7,143.8 292.4,143.1 293.1,142.3 293.8,141.6 294.5,140.8 295.3,140.0 296.0,139.2 296.7,138.4 297.4,137.6 298.1,136.8 298.8,136.0 299.5,135.1 300.3,134.3 301.0,133.4 301.7,132.6 302.4,131.7 303.1,130.8 303.8,129.9 304.6,129.1 305.3,128.2 306.0,127.2 306.7,126.3 307.4,125.4 308.1,124.5 308.8,123.6 309.6,122.6 310.3,121.7 311.0,120.7 311.7,119.8 312.4,118.8 313.1,117.9 313.8,116.9 314.6,115.9 315.3,114.9 316.0,114.0 316.7,113.0 317.4,112.0 318.1,111.0 318.8,110.0 319.6,109.0 320.3,108.0 321.0,107.0 321.7,106.0 322.4,105.0 323.1,104.0 323.9,103.0 324.6,102.0 325.3,101.0 326.0,100.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"40.0\" y1=\"93.6\" x2=\"332.0\" y2=\"93.6\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><text x=\"330.0\" y=\"85.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = 0.1</text><circle cx=\"44.6\" cy=\"93.6\" r=\"5\" fill=\"#047857\"/><circle cx=\"178.4\" cy=\"93.6\" r=\"5\" fill=\"#047857\"/><text x=\"54.6\" y=\"109.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5°44′</text><text x=\"178.4\" y=\"83.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">174°16′</text><line x1=\"111.5\" y1=\"97.0\" x2=\"111.5\" y2=\"103.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"111.5\" y=\"115.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90</text><line x1=\"183.0\" y1=\"97.0\" x2=\"183.0\" y2=\"103.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"183.0\" y=\"115.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180</text><line x1=\"254.5\" y1=\"97.0\" x2=\"254.5\" y2=\"103.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"254.5\" y=\"115.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">270</text><line x1=\"326.0\" y1=\"97.0\" x2=\"326.0\" y2=\"103.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"326.0\" y=\"115.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">360</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B misses the quadrant 2 solution; C uses quadrant 3 (\\(180+5.74\\)), where sine is negative; D solves \\(\\cos x=0.1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Solve the equation",
+              "note": "\\(\\operatorname{cosec}x=10\\Rightarrow\\sin x=0.1\\), quadrants 1 and 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
             "grade": "11",
             "origin": "teacher"
           }
@@ -36340,6 +36443,118 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "loreto2024-q18a",
+          "type": "mc",
+          "stem": "Darline and Saher visit Sydney Harbour on New Year's Eve to watch the fireworks. Darline is standing outside the Sydney Opera House and Saher is on a yacht in the harbour. They can both see the fireworks at the top of the Sydney Harbour Bridge. From Darline's position (D), the Sydney Harbour Bridge (B) is at a bearing of 78°, and the angle of elevation to the top of the bridge (T) is 35°. From Saher's position (S), the Sydney Harbour Bridge is at a bearing of 140°, and the angle of elevation to the top of the bridge is 48°. The top of the bridge is 50 m above the base of the bridge. Using appropriate diagrams and reasoning, show that \\(\\angle SBD=62^{\\circ}\\). Which working is correct?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 225\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"94.0\" y1=\"95.0\" x2=\"262.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"200.0\" x2=\"262.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"262.0\" y1=\"22.0\" x2=\"262.0\" y2=\"166.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"95.0\" x2=\"262.0\" y2=\"166.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"200.0\" x2=\"262.0\" y2=\"166.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"251\" y=\"155\" width=\"11\" height=\"11\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"262.0\" cy=\"22.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"270.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text><circle cx=\"94.0\" cy=\"95.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"82.0\" y=\"99.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><circle cx=\"262.0\" cy=\"166.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"272.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"66.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"54.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"274.0\" y=\"96.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50 m</text><text x=\"330.0\" y=\"98.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"330.0\" y=\"112.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text><text x=\"122.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">48°</text><text x=\"100.0\" y=\"205.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35°</text></svg>"
+          },
+          "options": [
+            "Bearing of \\(D\\) from \\(B\\): \\(78^{\\circ}+180^{\\circ}=258^{\\circ}\\). Bearing of \\(S\\) from \\(B\\): \\(140^{\\circ}+180^{\\circ}=320^{\\circ}\\). \\(\\angle SBD=320^{\\circ}-258^{\\circ}=62^{\\circ}\\)",
+            "Bearing of \\(D\\) from \\(B\\): \\(78^{\\circ}\\). Bearing of \\(S\\) from \\(B\\): \\(140^{\\circ}\\). \\(\\angle SBD=140^{\\circ}-78^{\\circ}=62^{\\circ}\\)",
+            "Bearing of \\(D\\) from \\(B\\): \\(78^{\\circ}+180^{\\circ}=258^{\\circ}\\). Bearing of \\(S\\) from \\(B\\): \\(140^{\\circ}\\). \\(\\angle SBD=258^{\\circ}-140^{\\circ}=118^{\\circ}\\)",
+            "Bearing of \\(D\\) from \\(B\\): \\(258^{\\circ}\\). Bearing of \\(S\\) from \\(B\\): \\(320^{\\circ}\\). \\(\\angle SBD=360^{\\circ}-258^{\\circ}-320^{\\circ}\\), which is negative, so \\(62^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "The given bearings are measured AT \\(D\\) and AT \\(S\\), looking toward \\(B\\). The angle \\(\\angle SBD\\) is at \\(B\\), so we need the bearings FROM \\(B\\): add or subtract \\(180^{\\circ}\\) (the BACK bearing). Then subtract.",
+          "steps": [
+            {
+              "explain": "Back bearings: the bearing of \\(B\\) from \\(D\\) is \\(78^{\\circ}\\), so the bearing of \\(D\\) from \\(B\\) is \\(78^{\\circ}+180^{\\circ}\\). The bearing of \\(B\\) from \\(S\\) is \\(140^{\\circ}\\), so the bearing of \\(S\\) from \\(B\\) is \\(140^{\\circ}+180^{\\circ}=320^{\\circ}\\).",
+              "work": "\\(D\\text{ from }B:\\ 258^{\\circ},\\qquad S\\text{ from }B:\\ 320^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 235\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"190.0\" y1=\"190.0\" x2=\"190.0\" y2=\"10.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><line x1=\"190.0\" y1=\"10.0\" x2=\"186.0\" y2=\"16.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"10.0\" x2=\"194.0\" y2=\"16.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"196.0\" y=\"20.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><line x1=\"190.0\" y1=\"130.0\" x2=\"87.3\" y2=\"151.8\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"130.0\" x2=\"146.1\" y2=\"77.7\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"146.1\" y1=\"77.7\" x2=\"87.3\" y2=\"151.8\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><circle cx=\"190.0\" cy=\"130.0\" r=\"5\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"146.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"87.3\" cy=\"151.8\" r=\"5\" fill=\"#d97706\"/><text x=\"79.3\" y=\"165.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"146.1\" cy=\"77.7\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"138.1\" y=\"71.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><path d=\"M 190.0 60.0 A 70 70 0 1 1 121.5 144.6\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"266.0\" y=\"134.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">258°</text><path d=\"M 190.0 86.0 A 44 44 0 1 1 161.7 96.3\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"238.0\" y=\"164.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">320°</text><path d=\"M 162.6 135.8 A 28 28 0 0 1 172.0 108.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"138.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">62°</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\angle SBD\\) is the difference between the two bearings from \\(B\\) (measured from the same north line).",
+              "work": "\\(\\angle SBD=320^{\\circ}-258^{\\circ}=62^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the bearings from \\(D\\) and \\(S\\) (not from \\(B\\)); C subtracts the wrong back bearing (gives \\(118^{\\circ}\\), the reflex-type slip); D's subtraction makes no sense.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using appropriate diagrams and reasoning, show that",
+              "note": "Use bearings FROM B (back bearing ±180°), then subtract."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "loreto2024-q18b",
+          "type": "mc",
+          "stem": "Darline and Saher visit Sydney Harbour on New Year's Eve to watch the fireworks. Darline is standing outside the Sydney Opera House and Saher is on a yacht in the harbour. They can both see the fireworks at the top of the Sydney Harbour Bridge. From Darline's position (D), the Sydney Harbour Bridge (B) is at a bearing of 78°, and the angle of elevation to the top of the bridge (T) is 35°. From Saher's position (S), the Sydney Harbour Bridge is at a bearing of 140°, and the angle of elevation to the top of the bridge is 48°. The top of the bridge is 50 m above the base of the bridge. Find the distance between Saher and Darline. Give your answer correct to 2 decimal places.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 225\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"94.0\" y1=\"95.0\" x2=\"262.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"200.0\" x2=\"262.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"262.0\" y1=\"22.0\" x2=\"262.0\" y2=\"166.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"94.0\" y1=\"95.0\" x2=\"262.0\" y2=\"166.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"66.0\" y1=\"200.0\" x2=\"262.0\" y2=\"166.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><rect x=\"251\" y=\"155\" width=\"11\" height=\"11\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"262.0\" cy=\"22.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"270.0\" y=\"18.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">T</text><circle cx=\"94.0\" cy=\"95.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"82.0\" y=\"99.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text><circle cx=\"262.0\" cy=\"166.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"272.0\" y=\"182.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"66.0\" cy=\"200.0\" r=\"3.8\" fill=\"#1e293b\"/><text x=\"54.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"274.0\" y=\"96.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50 m</text><text x=\"330.0\" y=\"98.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"330.0\" y=\"112.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text><text x=\"122.0\" y=\"100.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">48°</text><text x=\"100.0\" y=\"205.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35°</text></svg>"
+          },
+          "options": [
+            "64.09 m",
+            "100.72 m",
+            "116.43 m",
+            "26.39 m"
+          ],
+          "answer": 0,
+          "hint": "Plan: (1) find \\(BS\\) and \\(BD\\) from the two RIGHT-ANGLED triangles \\(TBS\\) and \\(TBD\\) (using the 50 m height); (2) use the COSINE RULE in triangle \\(SBD\\) with \\(\\angle SBD=62^{\\circ}\\) from part (a).",
+          "steps": [
+            {
+              "explain": "Triangle \\(TBS\\) (right angle at \\(B\\)): \\(\\tan48^{\\circ}=\\dfrac{TB}{BS}=\\dfrac{50}{BS}\\).",
+              "work": "\\(BS=\\dfrac{50}{\\tan48^{\\circ}}=45.02\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Triangle \\(TBD\\): \\(\\tan35^{\\circ}=\\dfrac{50}{BD}\\).",
+              "work": "\\(BD=\\dfrac{50}{\\tan35^{\\circ}}=71.41\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Cosine rule in triangle \\(SBD\\): the known angle \\(62^{\\circ}\\) is at \\(B\\), between the sides \\(BS\\) and \\(BD\\); the side opposite is \\(SD\\).",
+              "work": "\\(SD^{2}=BS^{2}+BD^{2}-2(BS)(BD)\\cos62^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><polygon points=\"90,150 254.2,150 138.6,58.6\" fill=\"#fde68a\" fill-opacity=\".5\" stroke=\"#1e293b\" stroke-width=\"2.4\"/><line x1=\"138.6\" y1=\"58.6\" x2=\"254.2\" y2=\"150.0\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 120 150 A 30 30 0 0 0 104.1 123.5\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.2\"/><text x=\"134.0\" y=\"138.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">62°</text><text x=\"172.1\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BD = 50 ÷ tan 35° = 71.41</text><text x=\"10.0\" y=\"22.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">BS = 50 ÷ tan 48° = 45.02</text><text x=\"208.4\" y=\"96.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SD = ?</text><circle cx=\"90.0\" cy=\"150.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"82.0\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"254.2\" cy=\"150.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"262.2\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"138.6\" cy=\"58.6\" r=\"4\" fill=\"#1e293b\"/><text x=\"138.6\" y=\"48.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">S</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute and take the square root.",
+              "work": "\\(SD^{2}=45.02^{2}+71.41^{2}-2(45.02)(71.41)\\cos62^{\\circ}\\approx4107.3\\Rightarrow SD\\approx64.09\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Why not the others: 100.71 uses \\(\\cos118^{\\circ}\\) (wrong angle); 116.43 is \\(BS+BD\\) (the sides added); 26.39 is \\(BD-BS\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the distance between Saher and Darline.",
+              "note": "Right triangles give BS, BD; cosine rule gives SD."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
             "grade": "11",
             "origin": "teacher"
           }

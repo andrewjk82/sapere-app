@@ -14543,6 +14543,56 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "loreto2024-q24b",
+          "type": "mc",
+          "stem": "Hence, or otherwise, find \\(\\displaystyle\\int\\left(\\dfrac{1}{\\sec\\theta-\\tan\\theta}-\\dfrac{1}{\\sec\\theta+\\tan\\theta}\\right)d\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(2\\ln\\left|\\sec\\theta\\right|+C\\)",
+            "\\(2\\ln\\left|\\cos\\theta\\right|+C\\)",
+            "\\(2\\sec^{2}\\theta+C\\)",
+            "\\(2\\tan\\theta+C\\)"
+          ],
+          "answer": 0,
+          "hint": "By part (a) the integrand equals \\(2\\tan\\theta\\). Write \\(\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}\\) and use \\(\\int\\dfrac{f'}{f}=\\ln|f|\\) with \\(f=\\cos\\theta\\) (\\(f'=-\\sin\\theta\\)).",
+          "steps": [
+            {
+              "explain": "Use the result of part (a).",
+              "work": "\\(\\int2\\tan\\theta\\,d\\theta=2\\int\\dfrac{\\sin\\theta}{\\cos\\theta}\\,d\\theta\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{d}{d\\theta}\\cos\\theta=-\\sin\\theta\\), so \\(\\int\\dfrac{\\sin\\theta}{\\cos\\theta}d\\theta=-\\ln\\left|\\cos\\theta\\right|\\).",
+              "work": "\\(=-2\\ln\\left|\\cos\\theta\\right|+C\\)"
+            },
+            {
+              "explain": "Rewrite using \\(-\\ln|\\cos\\theta|=\\ln\\left|\\dfrac{1}{\\cos\\theta}\\right|=\\ln|\\sec\\theta|\\).",
+              "work": "\\(=2\\ln\\left|\\sec\\theta\\right|+C\\)"
+            },
+            {
+              "explain": "Why not the others: B loses the minus sign; C is the derivative of \\(2\\tan\\theta\\), not its integral; D just rewrites the integrand and does not integrate.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise, find",
+              "note": "\\(\\int\\tan\\theta\\,d\\theta=-\\ln|\\cos\\theta|=\\ln|\\sec\\theta|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -8071,6 +8071,62 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "loreto2024-q5",
+          "type": "mc",
+          "stem": "The diagram shows a circle with radius \\(r\\) cm and a sector with an internal angle of \\(30^{\\circ}\\). If the area of the shaded segment is \\(1.7\\ \\text{cm}^{2}\\), which of the following is closest to the radius of the circle?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 262\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><circle cx=\"170\" cy=\"128\" r=\"100\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><path d=\"M 170 28 A 100 100 0 0 1 220.0 41.4 Z\" fill=\"#94a3b8\" fill-opacity=\".8\"/><line x1=\"170.0\" y1=\"128.0\" x2=\"170.0\" y2=\"28.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"128.0\" x2=\"220.0\" y2=\"41.4\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 170 102 A 26 26 0 0 1 183.0 105.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"164.0\" y=\"76.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><text x=\"235.0\" y=\"98.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text></svg>"
+          },
+          "options": [
+            "0.12 cm",
+            "0.34 cm",
+            "12.00 cm",
+            "144.08 cm"
+          ],
+          "answer": 2,
+          "hint": "Segment = SECTOR minus TRIANGLE: \\(A=\\dfrac{1}{2}r^{2}(\\theta-\\sin\\theta)\\) with \\(\\theta\\) in RADIANS (\\(30^{\\circ}=\\dfrac{\\pi}{6}\\)). Solve for \\(r^{2}\\), then take the square root.",
+          "steps": [
+            {
+              "explain": "Shaded segment \\(=\\) sector (blue) \\(-\\) triangle (orange). Convert the angle: \\(30^{\\circ}=\\dfrac{\\pi}{6}\\) rad.",
+              "work": "\\(A=\\dfrac{1}{2}r^{2}\\theta-\\dfrac{1}{2}r^{2}\\sin\\theta=\\dfrac{1}{2}r^{2}(\\theta-\\sin\\theta)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 262\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><circle cx=\"170\" cy=\"128\" r=\"100\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><path d=\"M 170 128 L 170 28 A 100 100 0 0 1 220.0 41.4 Z\" fill=\"#3b4ea8\" fill-opacity=\".25\"/><polygon points=\"170,128 170,28 220.0,41.4\" fill=\"#d97706\" fill-opacity=\".35\"/><path d=\"M 170 28 A 100 100 0 0 1 220.0 41.4 Z\" fill=\"#047857\" fill-opacity=\".7\"/><line x1=\"170.0\" y1=\"128.0\" x2=\"170.0\" y2=\"28.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"128.0\" x2=\"220.0\" y2=\"41.4\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M 170 102 A 26 26 0 0 1 183.0 105.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><text x=\"186.0\" y=\"94.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"164.0\" y=\"76.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><text x=\"235.0\" y=\"98.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r</text><text x=\"170.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">green segment = sector − triangle</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(\\theta=\\dfrac{\\pi}{6}\\) and \\(\\sin\\dfrac{\\pi}{6}=\\dfrac{1}{2}\\): \\(\\dfrac{\\pi}{6}-\\dfrac{1}{2}=0.5236-0.5=0.0236\\).",
+              "work": "\\(1.7=\\dfrac{1}{2}r^{2}\\left(\\dfrac{\\pi}{6}-\\dfrac{1}{2}\\right)=0.01180\\,r^{2}\\)"
+            },
+            {
+              "explain": "Solve for \\(r^{2}\\) then take the square root (positive).",
+              "work": "\\(r^{2}=\\dfrac{1.7}{0.01180}\\approx144.08\\ \\Rightarrow\\ r=\\sqrt{144.08}\\approx12.00\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: 144.08 is \\(r^{2}\\) (forgot the square root); 0.12 and 0.34 come from using degrees (\\(\\theta=30\\)) in the formula.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If the area of the shaded segment is \\(1.7\\ \\text{cm}^{2}\\)",
+              "note": "Segment \\(=\\dfrac{1}{2}r^{2}(\\theta-\\sin\\theta)\\), \\(\\theta\\) in radians."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
