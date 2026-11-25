@@ -18378,10 +18378,10 @@
           "stem": "Consider the series \\(\\log_e x-3\\left(\\log_e x\\right)^{2}+9\\left(\\log_e x\\right)^{3}-27\\left(\\log_e x\\right)^{4}+\\dots\\) Show that this series is a geometric series.",
           "difficulty": "medium",
           "options": [
-            "\\(\\dfrac{T_2}{T_1}=\\dfrac{-3(\\log_ex)^{2}}{\\log_ex}=-3\\log_ex\\) and \\(\\dfrac{T_3}{T_2}=\\dfrac{9(\\log_ex)^{3}}{-3(\\log_ex)^{2}}=-3\\log_ex\\); the ratios are equal, so it is geometric with \\(r=-3\\log_ex\\)",
-            "\\(\\dfrac{T_2}{T_1}=\\dfrac{-3(\\log_ex)^{2}}{\\log_ex}=3\\log_ex\\) and \\(\\dfrac{T_3}{T_2}=3\\log_ex\\); the ratios are equal with \\(r=3\\log_ex\\)",
-            "\\(T_2-T_1=-3(\\log_ex)^{2}-\\log_ex\\) and \\(T_3-T_2=9(\\log_ex)^{3}+3(\\log_ex)^{2}\\); the differences are constant, so it is geometric",
-            "\\(\\dfrac{T_2}{T_1}=-3\\log_ex\\) but \\(\\dfrac{T_3}{T_2}=-3(\\log_ex)^{2}\\); the ratios differ, so it is NOT geometric"
+            "\\(\\begin{aligned}&\\dfrac{T_2}{T_1}=\\dfrac{-3(\\log_ex)^{2}}{\\log_ex}=-3\\log_ex\\ \\text{and}\\ \\dfrac{T_3}{T_2}=\\dfrac{9(\\log_ex)^{3}}{-3(\\log_ex)^{2}}=-3\\log_ex\\text{;}\\\\ &\\text{the ratios are equal, so it is geometric with}\\ r=-3\\log_ex\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{T_2}{T_1}=\\dfrac{-3(\\log_ex)^{2}}{\\log_ex}=3\\log_ex\\ \\text{and}\\ \\dfrac{T_3}{T_2}=3\\log_ex\\text{;}\\\\ &\\text{the ratios are equal with}\\ r=3\\log_ex\\end{aligned}\\)",
+            "\\(\\begin{aligned}&T_2-T_1=-3(\\log_ex)^{2}-\\log_ex\\ \\text{and}\\ T_3-T_2=9(\\log_ex)^{3}+3(\\log_ex)^{2}\\text{;}\\\\ &\\text{the differences are constant, so it is geometric}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{T_2}{T_1}=-3\\log_ex\\ \\text{but}\\ \\dfrac{T_3}{T_2}=-3(\\log_ex)^{2}\\text{;}\\\\ &\\text{the ratios differ, so it is NOT geometric}\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "A series is geometric when the ratio of consecutive terms \\(\\dfrac{T_{n+1}}{T_n}\\) is the SAME constant for every pair. Divide the 2nd by the 1st and the 3rd by the 2nd and compare (include the signs).",

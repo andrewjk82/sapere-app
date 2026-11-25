@@ -9355,10 +9355,10 @@
           "stem": "The monthly sales, \\(X\\) (in units of 100 000 dollars), of a business are modelled by the two probability density functions: Model 1: \\(g(x)=2x\\) for \\(0\\leq x\\leq1\\), and \\(0\\) otherwise; OR Model 2: \\(f(x)=kx^{3}\\left(1-x^{2}\\right)\\) for \\(0\\leq x\\leq1\\), and \\(0\\) otherwise. Show that the two models have the same median value. Which working is correct?",
           "difficulty": "hard",
           "options": [
-            "Model 1: \\(\\int_0^{M}2x\\,dx=M^{2}=\\dfrac{1}{2}\\). Model 2 (with \\(k=12\\)): \\(\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=3M^{4}-2M^{6}\\); with \\(M^{2}=\\dfrac{1}{2}\\): \\(3\\left(\\dfrac{1}{2}\\right)^{2}-2\\left(\\dfrac{1}{2}\\right)^{3}=\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2}\\). Same \\(M\\) ✓",
-            "Model 1: \\(\\int_0^{M}2x\\,dx=M^{2}=1\\), so \\(M=1\\). Model 2: \\(3(1)^{4}-2(1)^{6}=1\\). Same \\(M\\)",
-            "Model 1: \\(\\int_0^{M}2x\\,dx=2M^{2}=\\dfrac{1}{2}\\), so \\(M^{2}=\\dfrac{1}{4}\\). Model 2: \\(3\\left(\\dfrac{1}{4}\\right)^{2}-2\\left(\\dfrac{1}{4}\\right)^{3}=\\dfrac{1}{16}\\neq\\dfrac{1}{2}\\)",
-            "Model 1: \\(\\int_0^{M}2x\\,dx=M^{2}=\\dfrac{1}{2}\\). Model 2: \\(\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=3M^{4}-2M^{6}\\); with \\(M^{2}=\\dfrac{1}{2}\\): \\(3\\left(\\dfrac{1}{2}\\right)^{4}-2\\left(\\dfrac{1}{2}\\right)^{6}\\neq\\dfrac{1}{2}\\)"
+            "\\(\\begin{aligned}&\\text{Model 1:}\\\\ &\\int_0^{M}2x\\,dx=M^{2}=\\dfrac{1}{2}\\text{.}\\\\ &\\text{Model 2 (with}\\ k=12\\ \\text{):}\\\\ &\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=3M^{4}-2M^{6}\\text{;}\\\\ &\\text{with}\\ M^{2}=\\dfrac{1}{2}\\ \\text{:}\\\\ &3\\left(\\dfrac{1}{2}\\right)^{2}-2\\left(\\dfrac{1}{2}\\right)^{3}=\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2}\\text{.}\\\\ &\\text{Same}\\ M\\ \\text{✓}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Model 1:}\\\\ &\\int_0^{M}2x\\,dx=M^{2}=1\\text{,}\\\\ &\\text{so}\\ M=1\\text{.}\\\\ &\\text{Model 2:}\\\\ &3(1)^{4}-2(1)^{6}=1\\text{.}\\\\ &\\text{Same}\\ M\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Model 1:}\\\\ &\\int_0^{M}2x\\,dx=2M^{2}=\\dfrac{1}{2}\\text{,}\\\\ &\\text{so}\\ M^{2}=\\dfrac{1}{4}\\text{.}\\\\ &\\text{Model 2:}\\\\ &3\\left(\\dfrac{1}{4}\\right)^{2}-2\\left(\\dfrac{1}{4}\\right)^{3}=\\dfrac{1}{16}\\neq\\dfrac{1}{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Model 1:}\\\\ &\\int_0^{M}2x\\,dx=M^{2}=\\dfrac{1}{2}\\text{.}\\\\ &\\text{Model 2:}\\\\ &\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=3M^{4}-2M^{6}\\text{;}\\\\ &\\text{with}\\ M^{2}=\\dfrac{1}{2}\\ \\text{:}\\\\ &3\\left(\\dfrac{1}{2}\\right)^{4}-2\\left(\\dfrac{1}{2}\\right)^{6}\\neq\\dfrac{1}{2}\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "The MEDIAN \\(M\\) is the value where the area up to \\(M\\) is \\(\\dfrac{1}{2}\\). Find \\(M\\) for Model 1, then check that Model 2's area up to the SAME \\(M\\) is also \\(\\dfrac{1}{2}\\).",

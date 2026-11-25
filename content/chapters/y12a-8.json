@@ -15810,10 +15810,10 @@
           "stem": "Amy decides to invest money in a bank account to start saving for a house deposit. She invests an initial amount of 1000 dollars. At the beginning of each month, Amy invests an amount that is 0.5% more than the amount invested in the previous month. At the end of each month, the bank pays interest of 0.4% per month, compounding monthly. Let \\(A_n\\) be the balance at the end of the \\(n\\)th month. Show the balance of the account at the end of the second month is given by \\(1000(1.004)^{2}+1000(1.005)(1.004)\\). Which working is correct?",
           "difficulty": "medium",
           "options": [
-            "Deposit 1 (1000, start of month 1) earns interest for 2 months: \\(1000(1.004)^{2}\\). Deposit 2 (\\(1000\\times1.005\\), start of month 2) earns interest for 1 month: \\(1000(1.005)(1.004)\\). \\(A_2=1000(1.004)^{2}+1000(1.005)(1.004)\\)",
-            "Deposit 1 earns interest for 2 months: \\(1000(1.004)^{2}\\). Deposit 2 (\\(1000\\), the same amount) earns interest for 1 month: \\(1000(1.004)\\). \\(A_2=1000(1.004)^{2}+1000(1.004)\\)",
-            "Deposit 1 earns interest for 1 month: \\(1000(1.004)\\). Deposit 2 (\\(1000\\times1.005\\)) earns interest for 2 months: \\(1000(1.005)(1.004)^{2}\\)",
-            "Deposit 1 earns interest for 2 months at 0.5%: \\(1000(1.005)^{2}\\). Deposit 2 earns 1 month at 0.4%: \\(1000(1.005)(1.004)\\)"
+            "\\(\\begin{aligned}&\\text{Deposit 1 (1000, start of month 1) earns interest for 2 months:}\\\\ &1000(1.004)^{2}\\text{.}\\\\ &\\text{Deposit 2 (}\\ 1000\\times1.005\\text{,}\\\\ &\\text{start of month 2) earns interest for 1 month:}\\\\ &1000(1.005)(1.004)\\text{.}\\\\ &A_2=1000(1.004)^{2}+1000(1.005)(1.004)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Deposit 1 earns interest for 2 months:}\\\\ &1000(1.004)^{2}\\text{.}\\\\ &\\text{Deposit 2 (}\\ 1000\\text{,}\\\\ &\\text{the same amount) earns interest for 1 month:}\\\\ &1000(1.004)\\text{.}\\\\ &A_2=1000(1.004)^{2}+1000(1.004)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Deposit 1 earns interest for 1 month:}\\\\ &1000(1.004)\\text{.}\\\\ &\\text{Deposit 2 (}\\ 1000\\times1.005\\ \\text{) earns interest for 2 months:}\\\\ &1000(1.005)(1.004)^{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Deposit 1 earns interest for 2 months at 0.5\\%:}\\\\ &1000(1.005)^{2}\\text{.}\\\\ &\\text{Deposit 2 earns 1 month at 0.4\\%:}\\\\ &1000(1.005)(1.004)\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "Follow each deposit separately: it grows by \\(\\times1.004\\) for every month it stays in the account. The first deposit stays 2 months; the second (0.5% bigger) stays 1 month. Add the two.",
@@ -15867,10 +15867,10 @@
           "stem": "Amy decides to invest money in a bank account to start saving for a house deposit. She invests an initial amount of 1000 dollars. At the beginning of each month, Amy invests an amount that is 0.5% more than the amount invested in the previous month. At the end of each month, the bank pays interest of 0.4% per month, compounding monthly. Let \\(A_n\\) be the balance at the end of the \\(n\\)th month. Show that \\(A_n=1\\,004\\,000\\left(1.005^{n}-1.004^{n}\\right)\\). Which working is correct?",
           "difficulty": "hard",
           "options": [
-            "\\(A_n=1000\\left[1.004^{n}+1.005\\cdot1.004^{n-1}+\\dots+1.005^{n-1}\\cdot1.004\\right]\\), a GP with \\(a=1000(1.004)^{n}\\), \\(r=\\dfrac{1.005}{1.004}\\), \\(n\\) terms. \\(A_n=1000(1.004)^{n}\\dfrac{\\left(\\dfrac{1.005}{1.004}\\right)^{n}-1}{\\dfrac{1.005}{1.004}-1}=\\dfrac{1000\\left(1.005^{n}-1.004^{n}\\right)}{\\dfrac{0.001}{1.004}}=1\\,004\\,000\\left(1.005^{n}-1.004^{n}\\right)\\)",
-            "\\(A_n\\) is a GP with \\(a=1000(1.004)^{n}\\) and \\(r=1.005\\times1.004\\). \\(A_n=1000(1.004)^{n}\\dfrac{(1.005\\times1.004)^{n}-1}{1.005\\times1.004-1}\\)",
-            "\\(A_n\\) is a GP with \\(a=1000(1.004)^{n}\\) and \\(r=\\dfrac{1.004}{1.005}\\). \\(A_n=1000(1.004)^{n}\\dfrac{1-r^{n}}{1-r}\\), which gives \\(1\\,004\\,000\\left(1.004^{n}-1.005^{n}\\right)\\)",
-            "\\(A_n\\) is a GP with \\(a=1000\\) and \\(r=\\dfrac{1.005}{1.004}\\). \\(A_n=1000\\dfrac{\\left(\\dfrac{1.005}{1.004}\\right)^{n}-1}{\\dfrac{1.005}{1.004}-1}=1\\,004\\,000\\left(\\dfrac{1.005^{n}}{1.004^{n}}-1\\right)\\)"
+            "\\(\\begin{aligned}&A_n=1000\\left[1.004^{n}+1.005\\cdot1.004^{n-1}+\\dots+1.005^{n-1}\\cdot1.004\\right]\\text{,}\\\\ &\\text{a GP with}\\ a=1000(1.004)^{n}\\text{,}\\\\ &r=\\dfrac{1.005}{1.004}\\text{,}\\\\ &n\\ \\text{terms.}\\\\ &A_n=1000(1.004)^{n}\\dfrac{\\left(\\dfrac{1.005}{1.004}\\right)^{n}-1}{\\dfrac{1.005}{1.004}-1}=\\dfrac{1000\\left(1.005^{n}-1.004^{n}\\right)}{\\dfrac{0.001}{1.004}}=1\\,004\\,000\\left(1.005^{n}-1.004^{n}\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_n\\ \\text{is a GP with}\\ a=1000(1.004)^{n}\\ \\text{and}\\ r=1.005\\times1.004\\text{.}\\\\ &A_n=1000(1.004)^{n}\\dfrac{(1.005\\times1.004)^{n}-1}{1.005\\times1.004-1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_n\\ \\text{is a GP with}\\ a=1000(1.004)^{n}\\ \\text{and}\\ r=\\dfrac{1.004}{1.005}\\text{.}\\\\ &A_n=1000(1.004)^{n}\\dfrac{1-r^{n}}{1-r}\\text{,}\\\\ &\\text{which gives}\\ 1\\,004\\,000\\left(1.004^{n}-1.005^{n}\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_n\\ \\text{is a GP with}\\ a=1000\\ \\text{and}\\ r=\\dfrac{1.005}{1.004}\\text{.}\\\\ &A_n=1000\\dfrac{\\left(\\dfrac{1.005}{1.004}\\right)^{n}-1}{\\dfrac{1.005}{1.004}-1}=1\\,004\\,000\\left(\\dfrac{1.005^{n}}{1.004^{n}}-1\\right)\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "Extend part (a) to \\(n\\) months: the deposit made at the start of month \\(k\\) is \\(1000(1.005)^{k-1}\\) and earns \\(n-k+1\\) months of interest. Write the terms, spot the GP, then use \\(S_n=\\dfrac{a\\left(r^{n}-1\\right)}{r-1}\\).",
@@ -15985,10 +15985,10 @@
           "stem": "Sam invests \\(M\\) dollars into an account at the beginning of each month. The account earns 3% p.a. interest, compounded monthly. Show that the total amount in the account at the end of the second month, \\(A_2\\), is given by \\(A_2=M\\times\\left(1.0025+1.0025^{2}\\right)\\). Which working is correct?",
           "difficulty": "medium",
           "options": [
-            "\\(A_1=M\\times\\left(1+\\dfrac{3}{1200}\\right)=M\\times1.0025\\). \\(A_2=A_1\\times1.0025+M\\times1.0025=M\\times1.0025^{2}+M\\times1.0025=M\\left(1.0025+1.0025^{2}\\right)\\)",
-            "\\(A_1=M\\times1.0025\\). \\(A_2=A_1\\times1.0025+M=M\\times1.0025^{2}+M=M\\left(1+1.0025^{2}\\right)\\)",
-            "\\(A_1=M\\times1.03\\). \\(A_2=A_1\\times1.03+M\\times1.03=M\\left(1.03+1.03^{2}\\right)\\)",
-            "\\(A_1=M\\times1.0025\\). \\(A_2=A_1+M\\times1.0025=M\\times1.0025+M\\times1.0025=2M\\times1.0025\\)"
+            "\\(\\begin{aligned}&A_1=M\\times\\left(1+\\dfrac{3}{1200}\\right)=M\\times1.0025\\text{.}\\\\ &A_2=A_1\\times1.0025+M\\times1.0025=M\\times1.0025^{2}+M\\times1.0025=M\\left(1.0025+1.0025^{2}\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_1=M\\times1.0025\\text{.}\\\\ &A_2=A_1\\times1.0025+M=M\\times1.0025^{2}+M=M\\left(1+1.0025^{2}\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_1=M\\times1.03\\text{.}\\\\ &A_2=A_1\\times1.03+M\\times1.03=M\\left(1.03+1.03^{2}\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_1=M\\times1.0025\\text{.}\\\\ &A_2=A_1+M\\times1.0025=M\\times1.0025+M\\times1.0025=2M\\times1.0025\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "Payments are at the BEGINNING of each month, so each payment earns a full month of interest. Monthly rate \\(=\\dfrac{3\\%}{12}=0.25\\%\\): multiplier \\(1.0025\\). Track the balance month by month.",
