@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { addDoc, collection, doc, getDocs, query, where, writeBatch } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { addMakeupFromSession } from '../services/makeupService';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 
 // Small month calendar of ONE student's lessons (Class page). A dot marks a lesson day; picking a day lists its
@@ -33,6 +34,7 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
   const [confirmCancel, setConfirmCancel] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const [madeUp, setMadeUp] = useState({});
 
   const todayKey = key(new Date());
   const byDay = useMemo(() => {
@@ -156,6 +158,16 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
     } finally { setBusy(false); }
   };
 
+  const markMakeup = (s) => {
+    setError('');
+    setMadeUp((m) => ({ ...m, [s.id]: true }));
+    addMakeupFromSession({ ...s, studentId, studentName }).catch((err) => {
+      console.error(err);
+      setMadeUp((m) => ({ ...m, [s.id]: false }));
+      setError('Could not add to Make-up. Try again.');
+    });
+  };
+
   const options = timeOptions(form.startTime, form.endTime);
   const editor = (onSave, label) => (
     <div className="cls-edit">
@@ -227,6 +239,8 @@ export default function ClassMonthCalendar({ studentId, student, studentName, le
                       <button type="button" className="cls-link" onClick={() => startMove(s)}>Change</button>
                       {' · '}
                       <button type="button" className="cls-link" onClick={() => { setError(''); setConfirmCancel(s.id); }}>Cancel lesson</button>
+                      {' · '}
+                      <button type="button" className="cls-link" disabled={madeUp[s.id]} onClick={() => markMakeup(s)}>{madeUp[s.id] ? 'Added to Make-up ✓' : 'Make-up'}</button>
                     </span>
                   )}
                 </div>

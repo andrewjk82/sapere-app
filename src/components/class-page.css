@@ -356,3 +356,23 @@
 .cls--clay .cls-side--row > .cls-card:nth-child(3) { background: #fbc9dc; }
 
 .cls-hw-sum .cls-link { padding: 0; font-size: 0.95rem; }
+
+/* Make-up classes */
+.cls-makeup-form { display: flex; flex-wrap: wrap; gap: 8px; }
+.cls-makeup-form input, .cls-makeup li input {
+  flex: 1 1 140px; min-width: 0; border: 1px solid #e4e2f3; border-radius: 10px; padding: 9px 11px;
+  font: 500 16px var(--font-sans); color: #1e1b4b; background: #fff;
+}
+.cls-makeup-form input[type="date"] { flex: 0 1 165px; }
+.cls-makeup-form button { border: 0; border-radius: 10px; padding: 9px 18px; background: #4f46e5; color: #fff; font: 600 0.9rem var(--font-sans); cursor: pointer; }
+.cls-makeup-form button:disabled { opacity: 0.45; cursor: default; }
+.cls-makeup ul { list-style: none; margin: 12px 0 0; padding: 0; }
+.cls-makeup li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 9px 0; border-top: 1px solid #f0eef9; font-size: 0.9rem; }
+.cls-makeup li span { color: #6d6a85; }
+.cls-makeup li .cls-makeup-note { flex: 1 1 160px; }
+.cls-makeup li button { margin-left: auto; border: 1px solid #fecaca; border-radius: 8px; background: #fff; color: #dc2626; padding: 6px 12px; font: 600 0.8rem var(--font-sans); cursor: pointer; }
+.cls-top > .cls-pad-btn.cls-makeup-btn:not(.cls-style-btn) { margin-left: 0 !important; }
+.cls-makeup li button.cls-makeup-add { border-color: #c7d2fe; color: #4f46e5; }
+.cls-makeup li button.cls-makeup-add + button { margin-left: 0; }
+.cls-makeup-booked { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px; }
+.cls-makeup li .cls-makeup-booked span { background: #ecfdf5; color: #047857; border-radius: 999px; padding: 4px 10px; font-size: 0.8rem; font-weight: 700; }
