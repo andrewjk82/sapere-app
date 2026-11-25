@@ -1854,6 +1854,446 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q1",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{2x}{\\sqrt{1-x^{4}}}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(2\\sin^{-1}x+c\\)",
+            "\\(\\cos^{-1}x^{2}+c\\)",
+            "\\(\\sin^{-1}x^{2}+c\\)",
+            "\\(\\dfrac{1}{2}\\sin^{-1}x^{2}+c\\)"
+          ],
+          "answer": 2,
+          "hint": "Notice \\(2x\\,dx\\) is exactly the derivative of \\(x^{2}\\), and \\(x^{4}=(x^{2})^{2}\\). Substitute \\(u=x^{2}\\) and you get a standard \\(\\sin^{-1}\\) integral.",
+          "steps": [
+            {
+              "explain": "The denominator is \\(\\sqrt{1-x^{4}}=\\sqrt{1-(x^{2})^{2}}\\). The top \\(2x\\,dx\\) is \\(d(x^{2})\\), so let \\(u=x^{2}\\).",
+              "work": "\\(u=x^{2},\\qquad du=2x\\,dx\\)"
+            },
+            {
+              "explain": "Replace everything: \\(2x\\,dx\\to du\\) and \\(1-x^{4}\\to1-u^{2}\\).",
+              "work": "\\(\\int\\dfrac{2x}{\\sqrt{1-x^{4}}}\\,dx=\\int\\dfrac{du}{\\sqrt{1-u^{2}}}\\)"
+            },
+            {
+              "explain": "This is the standard integral \\(\\displaystyle\\int\\dfrac{du}{\\sqrt{a^{2}-u^{2}}}=\\sin^{-1}\\dfrac{u}{a}\\) with \\(a=1\\).",
+              "work": "\\(=\\sin^{-1}u+c\\)"
+            },
+            {
+              "explain": "Put \\(u=x^{2}\\) back.",
+              "work": "\\(=\\sin^{-1}x^{2}+c\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\sin^{-1}x^{2}=\\dfrac{2x}{\\sqrt{1-(x^{2})^{2}}}\\) ✓. Why not the others: A treats \\(x^{4}\\) as \\(x^{2}\\) (gives \\(2x\\) in the wrong place); B has the wrong sign (\\(\\cos^{-1}\\) differentiates to a NEGATIVE); D has an extra \\(\\dfrac{1}{2}\\) — the factor 2 in \\(2x\\) is already used by \\(du\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "\\(u=x^{2}\\), \\(du=2x\\,dx\\); then \\(\\int\\dfrac{du}{\\sqrt{1-u^{2}}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q5",
+          "type": "mc",
+          "stem": "Which of the following is an expression for \\(\\displaystyle\\int\\dfrac{\\sin x\\cos x}{4+\\sin x}\\,dx\\)?",
+          "difficulty": "medium",
+          "options": [
+            "\\(-\\sin x-4\\ln|4+\\sin x|+C\\)",
+            "\\(-4\\ln|4+\\sin x|+C\\)",
+            "\\(\\sin x-4\\ln|4+\\sin x|+C\\)",
+            "\\(4\\ln|4+\\sin x|+C\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(\\cos x\\,dx=d(\\sin x)\\). Let \\(u=\\sin x\\), then divide: \\(\\dfrac{u}{4+u}=1-\\dfrac{4}{4+u}\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\sin x\\). Then \\(du=\\cos x\\,dx\\), so the \\(\\cos x\\,dx\\) in the numerator is exactly \\(du\\).",
+              "work": "\\(u=\\sin x,\\quad du=\\cos x\\,dx\\quad\\Rightarrow\\quad\\int\\dfrac{u}{4+u}\\,du\\)"
+            },
+            {
+              "explain": "Rewrite the top: \\(u=(4+u)-4\\), so split the fraction (a proper way to divide when top and bottom have the same degree).",
+              "work": "\\(\\dfrac{u}{4+u}=\\dfrac{(4+u)-4}{4+u}=1-\\dfrac{4}{4+u}\\)"
+            },
+            {
+              "explain": "Integrate each term: \\(\\int1\\,du=u\\) and \\(\\int\\dfrac{4}{4+u}\\,du=4\\ln|4+u|\\).",
+              "work": "\\(\\int\\left(1-\\dfrac{4}{4+u}\\right)du=u-4\\ln|4+u|+C\\)"
+            },
+            {
+              "explain": "Put \\(u=\\sin x\\) back.",
+              "work": "\\(\\sin x-4\\ln|4+\\sin x|+C\\)"
+            },
+            {
+              "explain": "Check: derivative \\(=\\cos x-\\dfrac{4\\cos x}{4+\\sin x}=\\dfrac{\\cos x(4+\\sin x)-4\\cos x}{4+\\sin x}=\\dfrac{\\sin x\\cos x}{4+\\sin x}\\) ✓. Why not the others: A has the wrong sign on \\(\\sin x\\); B and D drop the \\(\\sin x\\) term (they integrate only the \\(\\dfrac{4}{4+u}\\) part).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is an expression for",
+              "note": "\\(u=\\sin x\\); \\(\\dfrac{u}{4+u}=1-\\dfrac{4}{4+u}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q8",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{1}x(1-x)^{2021}\\,dx\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{4090506}\\)",
+            "\\(13\\)",
+            "\\(786\\)",
+            "\\(3\\,456\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(u=1-x\\) so that \\(x=1-u\\); the bracket power becomes a simple \\(u^{2021}\\) and you get two easy power integrals.",
+          "steps": [
+            {
+              "explain": "Let \\(u=1-x\\). Then \\(x=1-u\\), \\(dx=-du\\). Limits: \\(x=0\\Rightarrow u=1\\); \\(x=1\\Rightarrow u=0\\).",
+              "work": "\\(\\int_{0}^{1}x(1-x)^{2021}dx=\\int_{1}^{0}(1-u)u^{2021}(-du)=\\int_{0}^{1}(1-u)u^{2021}du\\)"
+            },
+            {
+              "explain": "Flipping the limits cancels the minus sign. Expand the bracket.",
+              "work": "\\(\\int_{0}^{1}\\left(u^{2021}-u^{2022}\\right)du\\)"
+            },
+            {
+              "explain": "Integrate with \\(\\int u^{n}du=\\dfrac{u^{n+1}}{n+1}\\).",
+              "work": "\\(\\left[\\dfrac{u^{2022}}{2022}-\\dfrac{u^{2023}}{2023}\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "Substitute the limits (at 0 everything is 0).",
+              "work": "\\(=\\dfrac{1}{2022}-\\dfrac{1}{2023}\\)"
+            },
+            {
+              "explain": "Common denominator \\(2022\\times2023\\): the numerator is \\(2023-2022=1\\).",
+              "work": "\\(=\\dfrac{2023-2022}{2022\\times2023}=\\dfrac{1}{4090506}\\)"
+            },
+            {
+              "explain": "\\(2022\\times2023=2022\\times2000+2022\\times23=4\\,044\\,000+46\\,506=4\\,090\\,506\\) ✓. Why not the others: the integrand is between 0 and \\(\\dfrac{1}{2022}\\) on \\([0,1]\\), so the value must be tiny — B, C and D are far too big.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(u=1-x\\); expand \\((1-u)u^{2021}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q11a",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{1}{e^{x}+e^{-x}}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\tan^{-1}(e^{x})+c\\)",
+            "\\(\\ln\\left(e^{x}+e^{-x}\\right)+c\\)",
+            "\\(\\dfrac{1}{2}\\tan^{-1}(e^{x})+c\\)",
+            "\\(\\tan^{-1}(e^{-x})+c\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by \\(e^{x}\\) to clear the negative power. The bottom becomes \\(e^{2x}+1=(e^{x})^{2}+1\\) and the top \\(e^{x}dx=d(e^{x})\\): a \\(\\tan^{-1}\\) integral.",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by \\(e^{x}\\) (this does not change the value).",
+              "work": "\\(\\dfrac{1}{e^{x}+e^{-x}}\\times\\dfrac{e^{x}}{e^{x}}=\\dfrac{e^{x}}{e^{2x}+1}\\)"
+            },
+            {
+              "explain": "Let \\(u=e^{x}\\), \\(du=e^{x}dx\\). Also \\(e^{2x}=u^{2}\\).",
+              "work": "\\(\\int\\dfrac{e^{x}}{(e^{x})^{2}+1}dx=\\int\\dfrac{du}{u^{2}+1}\\)"
+            },
+            {
+              "explain": "Standard integral \\(\\displaystyle\\int\\dfrac{du}{a^{2}+u^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\) with \\(a=1\\).",
+              "work": "\\(=\\tan^{-1}u+c\\)"
+            },
+            {
+              "explain": "Substitute back.",
+              "work": "\\(=\\tan^{-1}(e^{x})+c\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\tan^{-1}(e^{x})=\\dfrac{e^{x}}{1+e^{2x}}=\\dfrac{1}{e^{-x}+e^{x}}\\) ✓. Why not the others: B is not the derivative of \\(\\ln(e^{x}+e^{-x})\\) (that gives \\(\\dfrac{e^{x}-e^{-x}}{e^{x}+e^{-x}}\\)); C has an extra \\(\\dfrac{1}{2}\\); D differentiates to a NEGATIVE.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Multiply top and bottom by \\(e^{x}\\); \\(u=e^{x}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q13b1",
+          "type": "mc",
+          "stem": "Use the substitution \\(u=\\dfrac{1}{x}\\) to show that \\(\\displaystyle\\int_{\\frac12}^{1}\\dfrac{\\ln x}{1+x^{2}}\\,dx=\\int_{2}^{1}\\dfrac{\\ln u}{1+u^{2}}\\,du\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&u=\\dfrac{1}{x},\\ dx=-\\dfrac{du}{u^{2}};\\ x=\\dfrac{1}{2}\\to u=2,\\ x=1\\to u=1\\\\ &\\int\\dfrac{\\ln\\dfrac{1}{u}}{1+\\dfrac{1}{u^{2}}}\\left(-\\dfrac{du}{u^{2}}\\right)=\\int_{2}^{1}\\dfrac{-\\ln u\\cdot u^{2}}{u^{2}+1}\\cdot\\dfrac{-1}{u^{2}}du=\\int_{2}^{1}\\dfrac{\\ln u}{1+u^{2}}du\\end{aligned}\\)",
+            "\\(\\begin{aligned}&u=\\dfrac{1}{x},\\ dx=-\\dfrac{du}{u^{2}};\\ x=\\dfrac{1}{2}\\to u=2,\\ x=1\\to u=1\\\\ &\\int\\dfrac{\\ln\\dfrac{1}{u}}{1+\\dfrac{1}{u^{2}}}\\left(-\\dfrac{du}{u^{2}}\\right)=\\int_{2}^{1}\\dfrac{-\\ln u}{1+u^{2}}du\\end{aligned}\\)",
+            "\\(\\begin{aligned}&u=\\dfrac{1}{x},\\ dx=\\dfrac{du}{u^{2}};\\ x=\\dfrac{1}{2}\\to u=2,\\ x=1\\to u=1\\\\ &\\int\\dfrac{\\ln\\dfrac{1}{u}}{1+\\dfrac{1}{u^{2}}}\\cdot\\dfrac{du}{u^{2}}=\\int_{2}^{1}\\dfrac{\\ln u}{1+u^{2}}du\\end{aligned}\\)",
+            "\\(\\begin{aligned}&u=\\dfrac{1}{x},\\ dx=-\\dfrac{du}{u^{2}};\\ x=\\dfrac{1}{2}\\to u=\\dfrac{1}{2},\\ x=1\\to u=1\\\\ &\\int\\dfrac{\\ln\\dfrac{1}{u}}{1+\\dfrac{1}{u^{2}}}\\left(-\\dfrac{du}{u^{2}}\\right)=\\int_{\\frac12}^{1}\\dfrac{\\ln u}{1+u^{2}}du\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Everything in \\(x\\) must become \\(u\\): \\(x=\\dfrac{1}{u}\\), \\(dx=-\\dfrac{1}{u^{2}}du\\), and the limits change too. Use \\(\\ln\\dfrac{1}{u}=-\\ln u\\). The two minus signs will cancel.",
+          "steps": [
+            {
+              "explain": "\\(u=\\dfrac{1}{x}\\Rightarrow x=\\dfrac{1}{u}\\) and \\(\\dfrac{du}{dx}=-\\dfrac{1}{x^{2}}=-u^{2}\\), so \\(dx=-\\dfrac{1}{u^{2}}du\\).",
+              "work": "\\(x=\\dfrac{1}{u},\\qquad dx=-\\dfrac{du}{u^{2}}\\)"
+            },
+            {
+              "explain": "New limits: \\(x=\\dfrac{1}{2}\\Rightarrow u=2\\); \\(x=1\\Rightarrow u=1\\).",
+              "work": "\\(x:\\dfrac{1}{2}\\to1\\ \\Longrightarrow\\ u:2\\to1\\)"
+            },
+            {
+              "explain": "Rewrite the integrand: \\(\\ln x=\\ln\\dfrac{1}{u}=-\\ln u\\) and \\(1+x^{2}=1+\\dfrac{1}{u^{2}}=\\dfrac{u^{2}+1}{u^{2}}\\).",
+              "work": "\\(\\dfrac{\\ln x}{1+x^{2}}=\\dfrac{-\\ln u}{\\dfrac{u^{2}+1}{u^{2}}}=\\dfrac{-u^{2}\\ln u}{u^{2}+1}\\)"
+            },
+            {
+              "explain": "Multiply by \\(dx=-\\dfrac{du}{u^{2}}\\): the \\(u^{2}\\) cancels and \\((-)(-)=+\\).",
+              "work": "\\(\\dfrac{-u^{2}\\ln u}{u^{2}+1}\\cdot\\left(-\\dfrac{1}{u^{2}}\\right)du=\\dfrac{\\ln u}{1+u^{2}}du\\)"
+            },
+            {
+              "explain": "Assemble with the new limits.",
+              "work": "\\(\\int_{\\frac12}^{1}\\dfrac{\\ln x}{1+x^{2}}dx=\\int_{2}^{1}\\dfrac{\\ln u}{1+u^{2}}du\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B loses the \\(-\\) from \\(dx\\) (sign error); C writes \\(dx=+\\dfrac{du}{u^{2}}\\); D forgets to change the limits.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(u=\\dfrac{1}{x}\\)",
+              "note": "\\(x=\\dfrac{1}{u}\\), \\(dx=-\\dfrac{du}{u^{2}}\\), limits \\(\\dfrac{1}{2}\\to2\\), \\(1\\to1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q13b2",
+          "type": "mc",
+          "stem": "Deduce the value of \\(\\displaystyle\\int_{\\frac12}^{2}\\dfrac{\\ln x}{1+x^{2}}\\,dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(0\\)",
+            "\\(\\ln2\\)",
+            "\\(\\dfrac{\\pi}{4}\\ln2\\)",
+            "\\(2\\int_{1}^{2}\\dfrac{\\ln x}{1+x^{2}}dx\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the interval at \\(x=1\\): \\(\\int_{\\frac{1}{2}}^{2}=\\int_{\\frac{1}{2}}^{1}+\\int_{1}^{2}\\). Use part (i) and the rule that reversing the limits changes the sign.",
+          "steps": [
+            {
+              "explain": "Split at \\(x=1\\).",
+              "work": "\\(\\int_{\\frac12}^{2}\\dfrac{\\ln x}{1+x^{2}}dx=\\int_{\\frac12}^{1}\\dfrac{\\ln x}{1+x^{2}}dx+\\int_{1}^{2}\\dfrac{\\ln x}{1+x^{2}}dx\\)"
+            },
+            {
+              "explain": "By part (i) the first integral equals \\(\\displaystyle\\int_{2}^{1}\\dfrac{\\ln u}{1+u^{2}}du\\). The variable name does not matter, so this is \\(\\displaystyle\\int_{2}^{1}\\dfrac{\\ln x}{1+x^{2}}dx\\).",
+              "work": "\\(\\int_{\\frac12}^{1}=\\int_{2}^{1}\\dfrac{\\ln x}{1+x^{2}}dx\\)"
+            },
+            {
+              "explain": "Reversing the limits flips the sign: \\(\\displaystyle\\int_{2}^{1}=-\\int_{1}^{2}\\).",
+              "work": "\\(=-\\int_{1}^{2}\\dfrac{\\ln x}{1+x^{2}}dx\\)"
+            },
+            {
+              "explain": "The two pieces are opposites and cancel.",
+              "work": "\\(-\\int_{1}^{2}+\\int_{1}^{2}=0\\)"
+            },
+            {
+              "explain": "Why not the others: the integrand is negative on \\(\\left(\\dfrac{1}{2},1\\right)\\) and positive on \\((1,2)\\) with equal areas, so the total is \\(0\\) (not \\(\\ln2\\) or \\(\\dfrac{\\pi}{4}\\ln2\\)); D forgets that the first piece is the NEGATIVE of the second.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Deduce the value of",
+              "note": "Split at 1; use part (i); reversing limits flips sign."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14d",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{6}}\\cos x\\sin^{3}x\\,dx\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{64}\\)",
+            "\\(\\dfrac{1}{16}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{3}{64}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\cos x\\,dx=d(\\sin x)\\): let \\(u=\\sin x\\), so the integral becomes \\(\\int u^{3}du\\). Don't forget to change the limits.",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\sin x\\), \\(du=\\cos x\\,dx\\). Limits: \\(x=0\\Rightarrow u=0\\); \\(x=\\dfrac{\\pi}{6}\\Rightarrow u=\\sin\\dfrac{\\pi}{6}=\\dfrac{1}{2}\\).",
+              "work": "\\(\\int_{0}^{\\frac12}u^{3}\\,du\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int u^{3}du=\\dfrac{u^{4}}{4}\\).",
+              "work": "\\(=\\left[\\dfrac{u^{4}}{4}\\right]_{0}^{\\frac12}\\)"
+            },
+            {
+              "explain": "Substitute the limits: \\(\\left(\\dfrac{1}{2}\\right)^{4}=\\dfrac{1}{16}\\).",
+              "work": "\\(=\\dfrac{1}{4}\\cdot\\dfrac{1}{16}=\\dfrac{1}{64}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{4}\\) from integrating; C uses \\(u=\\dfrac{\\pi}{6}\\) or \\(u=1\\) as the upper limit; D mistakes \\(\\left(\\dfrac{1}{2}\\right)^{4}\\) for \\(\\dfrac{3}{16}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(u=\\sin x\\); upper limit \\(\\sin\\dfrac{\\pi}{6}=\\dfrac{1}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14a",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{e^{2x}-e^{x}}{e^{x}+1}\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(e^{x}-2\\ln\\left(e^{x}+1\\right)+c\\)",
+            "\\(e^{x}-\\ln\\left(e^{x}+1\\right)+c\\)",
+            "\\(e^{x}+2\\ln\\left(e^{x}+1\\right)+c\\)",
+            "\\(\\dfrac{e^{2x}-e^{x}}{e^{x}+1}+c\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(u=e^{x}\\) (\\(du=e^{x}dx\\)). The numerator \\(e^{2x}-e^{x}=e^{x}(e^{x}-1)\\) so the integrand becomes \\(\\dfrac{u-1}{u+1}\\). Divide: \\(\\dfrac{u-1}{u+1}=1-\\dfrac{2}{u+1}\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=e^{x}\\). Then \\(du=e^{x}dx\\), so \\(dx=\\dfrac{du}{u}\\), and \\(e^{2x}=u^{2}\\).",
+              "work": "\\(\\int\\dfrac{u^{2}-u}{u+1}\\cdot\\dfrac{du}{u}\\)"
+            },
+            {
+              "explain": "Cancel the \\(u\\): \\(\\dfrac{u^{2}-u}{u}=u-1\\).",
+              "work": "\\(=\\int\\dfrac{u-1}{u+1}\\,du\\)"
+            },
+            {
+              "explain": "Top and bottom have the same degree: rewrite the top as \\((u+1)-2\\) and split.",
+              "work": "\\(\\dfrac{u-1}{u+1}=\\dfrac{(u+1)-2}{u+1}=1-\\dfrac{2}{u+1}\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int1\\,du=u\\) and \\(\\int\\dfrac{2}{u+1}du=2\\ln|u+1|\\).",
+              "work": "\\(=u-2\\ln|u+1|+c\\)"
+            },
+            {
+              "explain": "Put \\(u=e^{x}\\) back; \\(e^{x}+1>0\\) so the modulus is not needed.",
+              "work": "\\(=e^{x}-2\\ln\\left(e^{x}+1\\right)+c\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\left[e^{x}-2\\ln(e^{x}+1)\\right]=e^{x}-\\dfrac{2e^{x}}{e^{x}+1}=\\dfrac{e^{2x}+e^{x}-2e^{x}}{e^{x}+1}=\\dfrac{e^{2x}-e^{x}}{e^{x}+1}\\) ✓. Why not the others: B loses the factor 2; C has the wrong sign; D just copies the integrand (not an integration).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "\\(u=e^{x}\\); \\(\\dfrac{u-1}{u+1}=1-\\dfrac{2}{u+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2991,6 +3431,168 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q5",
+          "type": "mc",
+          "stem": "Which of these algebraic fractions cannot be written as partial fractions in the form \\(\\dfrac{a}{x+b}+\\dfrac{c}{x+d}\\), where \\(a\\), \\(b\\), \\(c\\) and \\(d\\) are real numbers?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{2x+6}{x^{2}+6x+5}\\)",
+            "\\(\\dfrac{2x-8}{x^{2}-8x+16}\\)",
+            "\\(\\dfrac{2x+4}{x^{2}-4x+8}\\)",
+            "\\(\\dfrac{2x+2}{x^{2}+2x-3}\\)"
+          ],
+          "answer": 2,
+          "hint": "This form needs the denominator to FACTORISE into two real linear factors \\((x+b)(x+d)\\). A quadratic does so exactly when its discriminant \\(\\Delta=b^{2}-4ac\\ge0\\). Check each denominator.",
+          "steps": [
+            {
+              "explain": "The form \\(\\dfrac{a}{x+b}+\\dfrac{c}{x+d}\\) has common denominator \\((x+b)(x+d)\\), a product of real linear factors. So the denominator must factorise over the reals: \\(\\Delta\\ge0\\).",
+              "work": "\\(\\Delta=b^{2}-4ac\\ge0\\)"
+            },
+            {
+              "explain": "A: \\(x^{2}+6x+5\\): \\(\\Delta=36-20=16\\ge0\\) ✓ — \\((x+1)(x+5)\\).",
+              "work": "\\(\\dfrac{2x+6}{(x+1)(x+5)}=\\dfrac{1}{x+5}+\\dfrac{1}{x+1}\\)"
+            },
+            {
+              "explain": "B: \\(x^{2}-8x+16\\): \\(\\Delta=64-64=0\\) ✓ — \\((x-4)^{2}\\) (repeated factor, which still has the form with \\(b=d\\)): \\(\\dfrac{2x-8}{(x-4)^{2}}=\\dfrac{2}{x-4}\\), i.e. \\(\\dfrac{1}{x-4}+\\dfrac{1}{x-4}\\).",
+              "work": "\\(\\Delta=0\\)"
+            },
+            {
+              "explain": "C: \\(x^{2}-4x+8\\): \\(\\Delta=16-32=-16<0\\). It does NOT factorise over the reals (\\(=(x-2)^{2}+4\\)), so it cannot be split into real linear partial fractions. ✗",
+              "work": "\\(\\Delta=(-4)^{2}-4(1)(8)=-16<0\\)"
+            },
+            {
+              "explain": "D: \\(x^{2}+2x-3\\): \\(\\Delta=4+12=16\\ge0\\) ✓ — \\((x-1)(x+3)\\): \\(\\dfrac{2x+2}{(x-1)(x+3)}=\\dfrac{1}{x-1}+\\dfrac{1}{x+3}\\).",
+              "work": "\\(\\Delta=16\\)"
+            },
+            {
+              "explain": "So only C cannot be written in that form.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "cannot be written as partial fractions",
+              "note": "Real linear factors \\(\\Leftrightarrow\\Delta\\ge0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11f1",
+          "type": "mc",
+          "stem": "Find the values of \\(a\\) and \\(b\\) such that \\(\\dfrac{x+7}{(x-2)(x+1)}=\\dfrac{a}{x-2}+\\dfrac{b}{x+1}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(a=3,\\ b=-2\\)",
+            "\\(a=-3,\\ b=2\\)",
+            "\\(a=2,\\ b=-3\\)",
+            "\\(a=1,\\ b=-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Cover-up / substitution: multiply both sides by \\((x-2)(x+1)\\) to get \\(x+7=a(x+1)+b(x-2)\\), then substitute the values that make one bracket ZERO: \\(x=2\\) and \\(x=-1\\).",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\((x-2)(x+1)\\).",
+              "work": "\\(x+7=a(x+1)+b(x-2)\\)"
+            },
+            {
+              "explain": "Let \\(x=2\\) (kills the \\(b\\) term): \\(2+7=a(3)+b(0)\\).",
+              "work": "\\(9=3a\\ \\Rightarrow\\ a=3\\)"
+            },
+            {
+              "explain": "Let \\(x=-1\\) (kills the \\(a\\) term): \\(-1+7=a(0)+b(-3)\\).",
+              "work": "\\(6=-3b\\ \\Rightarrow\\ b=-2\\)"
+            },
+            {
+              "explain": "Check by comparing the \\(x\\) coefficients: \\(a+b=3-2=1\\) ✓ and the constants: \\(a-2b=3+4=7\\) ✓. Why not the others: B swaps signs; C swaps the values; D has \\(a=1\\) (that is \\(a+b\\), the \\(x\\)-coefficient).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the values of \\(a\\) and \\(b\\) such that",
+              "note": "\\(x+7=a(x+1)+b(x-2)\\); let \\(x=2\\), \\(x=-1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11f2",
+          "type": "mc",
+          "stem": "Show that \\(\\displaystyle\\int_{0}^{1}\\dfrac{x+7}{(x-2)(x+1)}\\,dx=-5\\ln2\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\int_{0}^{1}\\left(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\right)dx=\\Big[3\\ln|x-2|-2\\ln|x+1|\\Big]_{0}^{1}\\\\ &=(3\\ln1-2\\ln2)-(3\\ln2-2\\ln1)=-2\\ln2-3\\ln2=-5\\ln2\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\int_{0}^{1}\\left(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\right)dx=\\Big[3\\ln(x-2)-2\\ln(x+1)\\Big]_{0}^{1}\\\\ &=3\\ln(-1)-2\\ln2\\ \\text{(undefined)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\int_{0}^{1}\\left(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\right)dx=\\Big[3\\ln|x-2|-2\\ln|x+1|\\Big]_{0}^{1}\\\\ &=(3\\ln1-2\\ln2)-(3\\ln2-2\\ln1)=-2\\ln2+3\\ln2=\\ln2\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\int_{0}^{1}\\left(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\right)dx=\\Big[\\dfrac{3}{(x-2)^{2}}-\\dfrac{2}{(x+1)^{2}}\\Big]_{0}^{1}\\\\ &=\\ldots\\ne-5\\ln2\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the partial fractions from part (i): \\(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\). Each integrates to a LOG: \\(\\int\\dfrac{k}{x+c}dx=k\\ln|x+c|\\). Use absolute values because \\(x-2<0\\) on \\([0,1]\\).",
+          "steps": [
+            {
+              "explain": "Rewrite the integrand with \\(a=3\\), \\(b=-2\\) from part (i).",
+              "work": "\\(\\int_{0}^{1}\\left(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\right)dx\\)"
+            },
+            {
+              "explain": "Integrate each term: \\(\\dfrac{3}{x-2}\\to3\\ln|x-2|\\) (the modulus is NEEDED: for \\(0\\le x\\le1\\), \\(x-2\\) is negative) and \\(\\dfrac{2}{x+1}\\to2\\ln|x+1|\\).",
+              "work": "\\(=\\Big[3\\ln|x-2|-2\\ln|x+1|\\Big]_{0}^{1}\\)"
+            },
+            {
+              "explain": "Upper limit \\(x=1\\): \\(3\\ln|-1|-2\\ln2=3\\ln1-2\\ln2=-2\\ln2\\). Lower limit \\(x=0\\): \\(3\\ln|-2|-2\\ln1=3\\ln2-0\\).",
+              "work": "\\(=(-2\\ln2)-(3\\ln2)\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(=-5\\ln2\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the modulus and gets \\(\\ln(-1)\\) (not defined); C subtracts the limits with the wrong sign; D integrates \\(\\dfrac{1}{x+c}\\) as a power (it is a log).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "\\(\\dfrac{3}{x-2}-\\dfrac{2}{x+1}\\); \\(3\\ln|x-2|-2\\ln|x+1|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3502,6 +4104,180 @@
           "meta": {
             "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
             "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q11c",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{2x^{2}-2x+1}{(x-2)(x^{2}+1)}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\ln|x-2|+\\dfrac{1}{2}\\ln(x^{2}+1)+c\\)",
+            "\\(\\ln|x-2|+\\ln(x^{2}+1)+c\\)",
+            "\\(\\ln|x-2|+\\tan^{-1}x+c\\)",
+            "\\(2\\ln|x-2|+\\dfrac{1}{2}\\ln(x^{2}+1)+c\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator has a linear factor and an irreducible quadratic, so use partial fractions \\(\\dfrac{A}{x-2}+\\dfrac{Bx+C}{x^{2}+1}\\). The \\(x\\) in \\(Bx+C\\) gives a LOG term after integrating and the constant gives \\(\\tan^{-1}\\).",
+          "steps": [
+            {
+              "explain": "Set up the partial fractions (a quadratic factor needs a LINEAR numerator \\(Bx+C\\)).",
+              "work": "\\(\\dfrac{2x^{2}-2x+1}{(x-2)(x^{2}+1)}=\\dfrac{A}{x-2}+\\dfrac{Bx+C}{x^{2}+1}\\)"
+            },
+            {
+              "explain": "Multiply through by \\((x-2)(x^{2}+1)\\).",
+              "work": "\\(2x^{2}-2x+1=A(x^{2}+1)+(Bx+C)(x-2)\\)"
+            },
+            {
+              "explain": "Let \\(x=2\\) (kills the \\(Bx+C\\) term): \\(8-4+1=A(5)\\).",
+              "work": "\\(5=5A\\ \\Rightarrow\\ A=1\\)"
+            },
+            {
+              "explain": "Compare \\(x^{2}\\) coefficients: \\(2=A+B\\), so \\(B=1\\). Compare constants: \\(1=A-2C\\), so \\(C=0\\). (Check the \\(x\\) terms: \\(-2=-2B+C=-2\\) ✓.)",
+              "work": "\\(B=1,\\qquad C=0\\)"
+            },
+            {
+              "explain": "So the integrand is \\(\\dfrac{1}{x-2}+\\dfrac{x}{x^{2}+1}\\).",
+              "work": "\\(\\int\\left(\\dfrac{1}{x-2}+\\dfrac{x}{x^{2}+1}\\right)dx\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{1}{x-2}dx=\\ln|x-2|\\). For the second, the top is half the derivative of the bottom (\\(\\dfrac{d}{dx}(x^{2}+1)=2x\\)), so \\(\\int\\dfrac{x}{x^{2}+1}dx=\\dfrac{1}{2}\\ln(x^{2}+1)\\).",
+              "work": "\\(=\\ln|x-2|+\\dfrac{1}{2}\\ln(x^{2}+1)+c\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the factor \\(\\dfrac{1}{2}\\); C has \\(C\\ne0\\) (a \\(\\tan^{-1}x\\) would need a constant numerator); D uses \\(A=2\\) (wrong value).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "\\(\\dfrac{A}{x-2}+\\dfrac{Bx+C}{x^{2}+1}\\); \\(x=2\\Rightarrow A\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q9",
+          "type": "mc",
+          "stem": "Evaluate: \\(\\displaystyle\\int_{0}^{3}\\dfrac{1+x}{9+x^{2}}\\,dx\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\pi}{4}+\\ln2\\sqrt3\\)",
+            "\\(\\dfrac{\\pi}{4}+\\ln\\sqrt2\\)",
+            "\\(\\dfrac{\\pi}{12}+\\ln2\\sqrt3\\)",
+            "\\(\\dfrac{\\pi}{12}+\\ln\\sqrt2\\)"
+          ],
+          "answer": 3,
+          "hint": "Split the numerator: \\(\\dfrac{1+x}{9+x^{2}}=\\dfrac{1}{9+x^{2}}+\\dfrac{x}{9+x^{2}}\\). The first part is a \\(\\tan^{-1}\\) integral (\\(a=3\\)) and the second a LOG integral (top is half the derivative of the bottom).",
+          "steps": [
+            {
+              "explain": "Split the fraction into two integrals that each have a standard form.",
+              "work": "\\(\\int_{0}^{3}\\left(\\dfrac{1}{9+x^{2}}+\\dfrac{x}{9+x^{2}}\\right)dx\\)"
+            },
+            {
+              "explain": "\\(\\displaystyle\\int\\dfrac{dx}{a^{2}+x^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{x}{a}\\) with \\(a=3\\); and \\(\\displaystyle\\int\\dfrac{x}{9+x^{2}}dx=\\dfrac{1}{2}\\ln(9+x^{2})\\) (since \\(\\dfrac{d}{dx}(9+x^{2})=2x\\)).",
+              "work": "\\(=\\left[\\dfrac{1}{3}\\tan^{-1}\\dfrac{x}{3}+\\dfrac{1}{2}\\ln(9+x^{2})\\right]_{0}^{3}\\)"
+            },
+            {
+              "explain": "Upper limit \\(x=3\\): \\(\\dfrac{1}{3}\\tan^{-1}1+\\dfrac{1}{2}\\ln18=\\dfrac{1}{3}\\cdot\\dfrac{\\pi}{4}+\\dfrac{1}{2}\\ln18\\). Lower limit \\(x=0\\): \\(\\dfrac{1}{3}\\tan^{-1}0+\\dfrac{1}{2}\\ln9=\\dfrac{1}{2}\\ln9\\).",
+              "work": "\\(=\\dfrac{1}{3}\\left(\\dfrac{\\pi}{4}-0\\right)+\\dfrac{1}{2}\\left(\\ln18-\\ln9\\right)\\)"
+            },
+            {
+              "explain": "Simplify: \\(\\dfrac{1}{3}\\cdot\\dfrac{\\pi}{4}=\\dfrac{\\pi}{12}\\) and \\(\\ln18-\\ln9=\\ln\\dfrac{18}{9}=\\ln2\\), so \\(\\dfrac{1}{2}\\ln2=\\ln2^{\\frac12}=\\ln\\sqrt2\\).",
+              "work": "\\(=\\dfrac{\\pi}{12}+\\dfrac{1}{2}\\ln2=\\dfrac{\\pi}{12}+\\ln\\sqrt2\\)"
+            },
+            {
+              "explain": "Why not the others: A and B have \\(\\dfrac{\\pi}{4}\\) (forgetting the \\(\\dfrac{1}{3}\\) from \\(\\dfrac{1}{a}\\)); A and C have \\(\\ln2\\sqrt3\\) (that would come from \\(\\ln\\dfrac{18}{\\ldots}\\) with a slip in the log rule). Note: the printed answer key first showed A and was corrected to D by hand.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(\\dfrac{1}{9+x^{2}}+\\dfrac{x}{9+x^{2}}\\): \\(\\dfrac{1}{3}\\tan^{-1}\\dfrac{x}{3}\\) and \\(\\dfrac{1}{2}\\ln(9+x^{2})\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q13a",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int\\dfrac{4x-3}{4x^{2}-4x+5}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)-\\dfrac{1}{4}\\tan^{-1}\\left(\\dfrac{2x-1}{2}\\right)+c\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)-\\dfrac{1}{2}\\tan^{-1}\\left(\\dfrac{2x-1}{2}\\right)+c\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)-\\dfrac{1}{4}\\tan^{-1}(2x-1)+c\\)",
+            "\\(\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)+\\dfrac{1}{4}\\tan^{-1}\\left(\\dfrac{2x-1}{2}\\right)+c\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator's derivative is \\(8x-4\\). Rewrite the numerator as a multiple of \\(8x-4\\) PLUS a constant: \\(4x-3=\\dfrac{1}{2}(8x-4)-1\\). The first part gives a log; the second a \\(\\tan^{-1}\\) after completing the square \\(4x^{2}-4x+5=(2x-1)^{2}+2^{2}\\).",
+          "steps": [
+            {
+              "explain": "\\(\\dfrac{d}{dx}\\left(4x^{2}-4x+5\\right)=8x-4\\). Write \\(4x-3=\\dfrac{1}{2}(8x-4)-1\\) (check: \\(4x-2-1=4x-3\\) ✓).",
+              "work": "\\(\\dfrac{4x-3}{4x^{2}-4x+5}=\\dfrac{1}{2}\\cdot\\dfrac{8x-4}{4x^{2}-4x+5}-\\dfrac{1}{4x^{2}-4x+5}\\)"
+            },
+            {
+              "explain": "First part: top is the derivative of the bottom, so \\(\\displaystyle\\dfrac{1}{2}\\int\\dfrac{8x-4}{4x^{2}-4x+5}dx=\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)\\) (no modulus: \\(4x^{2}-4x+5>0\\) for all \\(x\\)).",
+              "work": "\\(\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)\\)"
+            },
+            {
+              "explain": "Second part: complete the square: \\(4x^{2}-4x+5=(2x-1)^{2}+4\\). Let \\(u=2x-1\\), \\(du=2\\,dx\\).",
+              "work": "\\(\\int\\dfrac{dx}{(2x-1)^{2}+2^{2}}=\\dfrac{1}{2}\\int\\dfrac{du}{u^{2}+2^{2}}\\)"
+            },
+            {
+              "explain": "\\(\\displaystyle\\int\\dfrac{du}{u^{2}+a^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{u}{a}\\) with \\(a=2\\): \\(\\dfrac{1}{2}\\cdot\\dfrac{1}{2}\\tan^{-1}\\dfrac{u}{2}=\\dfrac{1}{4}\\tan^{-1}\\dfrac{2x-1}{2}\\).",
+              "work": "\\(=\\dfrac{1}{4}\\tan^{-1}\\left(\\dfrac{2x-1}{2}\\right)\\)"
+            },
+            {
+              "explain": "Subtract (there was a MINUS sign in front of this part).",
+              "work": "\\(\\int\\dfrac{4x-3}{4x^{2}-4x+5}dx=\\dfrac{1}{2}\\ln\\left(4x^{2}-4x+5\\right)-\\dfrac{1}{4}\\tan^{-1}\\left(\\dfrac{2x-1}{2}\\right)+c\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{4x-2}{4x^{2}-4x+5}-\\dfrac{1}{4x^{2}-4x+5}=\\dfrac{4x-3}{4x^{2}-4x+5}\\) ✓. Why not the others: B has \\(\\dfrac{1}{2}\\) instead of \\(\\dfrac{1}{4}\\) (forgot the factor \\(2\\) from \\(du\\)); C forgets to divide the argument by \\(2\\); D has the wrong sign.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "\\(4x-3=\\dfrac{1}{2}(8x-4)-1\\); \\(4x^{2}-4x+5=(2x-1)^{2}+4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4540,6 +5316,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q14b",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int e^{x}\\cos x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{e^{x}}{2}(\\cos x+\\sin x)+c\\)",
+            "\\(\\dfrac{e^{x}}{2}(\\cos x-\\sin x)+c\\)",
+            "\\(e^{x}(\\cos x+\\sin x)+c\\)",
+            "\\(\\dfrac{e^{x}}{2}(\\sin x-\\cos x)+c\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate by parts TWICE. The original integral \\(I\\) reappears with a minus sign — treat the equation as an equation in \\(I\\) and solve for \\(I\\).",
+          "steps": [
+            {
+              "explain": "Let \\(I=\\int e^{x}\\cos x\\,dx\\). Parts: \\(u=\\cos x\\), \\(dv=e^{x}dx\\), so \\(du=-\\sin x\\,dx\\), \\(v=e^{x}\\).",
+              "work": "\\(I=e^{x}\\cos x+\\int e^{x}\\sin x\\,dx\\)"
+            },
+            {
+              "explain": "Parts again on \\(\\int e^{x}\\sin x\\,dx\\): \\(u=\\sin x\\), \\(dv=e^{x}dx\\), \\(du=\\cos x\\,dx\\), \\(v=e^{x}\\).",
+              "work": "\\(\\int e^{x}\\sin x\\,dx=e^{x}\\sin x-\\int e^{x}\\cos x\\,dx=e^{x}\\sin x-I\\)"
+            },
+            {
+              "explain": "Substitute back: \\(I\\) appears on both sides.",
+              "work": "\\(I=e^{x}\\cos x+e^{x}\\sin x-I\\)"
+            },
+            {
+              "explain": "Add \\(I\\) to both sides and divide by 2 (add the constant \\(c\\) at the end).",
+              "work": "\\(2I=e^{x}(\\cos x+\\sin x)\\ \\Rightarrow\\ I=\\dfrac{e^{x}}{2}(\\cos x+\\sin x)+c\\)"
+            },
+            {
+              "explain": "Check by differentiating: \\(\\dfrac{d}{dx}\\left[\\dfrac{e^{x}}{2}(\\cos x+\\sin x)\\right]=\\dfrac{e^{x}}{2}(\\cos x+\\sin x)+\\dfrac{e^{x}}{2}(-\\sin x+\\cos x)=e^{x}\\cos x\\) ✓. Why not the others: B and D give \\(e^{x}\\sin x\\) or a wrong sign when differentiated; C forgets the factor \\(\\dfrac{1}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "By parts twice; solve \\(I=\\ldots-I\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q12b",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int x\\ln x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{x^{2}\\ln x}{2}-\\dfrac{x^{2}}{4}+c\\)",
+            "\\(\\dfrac{x^{2}\\ln x}{2}-\\dfrac{x^{2}}{2}+c\\)",
+            "\\(\\dfrac{x^{2}\\ln x}{2}+\\dfrac{x^{2}}{4}+c\\)",
+            "\\(x^{2}\\ln x-\\dfrac{x^{2}}{4}+c\\)"
+          ],
+          "answer": 0,
+          "hint": "Integration by parts \\(\\int u\\,dv=uv-\\int v\\,du\\). Choose \\(u=\\ln x\\) (it becomes simpler when differentiated) and \\(dv=x\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Choose \\(u=\\ln x\\) and \\(\\dfrac{dv}{dx}=x\\). Then \\(\\dfrac{du}{dx}=\\dfrac{1}{x}\\) and \\(v=\\dfrac{x^{2}}{2}\\).",
+              "work": "\\(u=\\ln x,\\ \\ du=\\dfrac{dx}{x};\\qquad dv=x\\,dx,\\ \\ v=\\dfrac{x^{2}}{2}\\)"
+            },
+            {
+              "explain": "Apply \\(\\int u\\,dv=uv-\\int v\\,du\\).",
+              "work": "\\(\\int x\\ln x\\,dx=\\dfrac{x^{2}}{2}\\ln x-\\int\\dfrac{x^{2}}{2}\\cdot\\dfrac{1}{x}\\,dx\\)"
+            },
+            {
+              "explain": "Simplify the new integrand: \\(\\dfrac{x^{2}}{2}\\cdot\\dfrac{1}{x}=\\dfrac{x}{2}\\).",
+              "work": "\\(=\\dfrac{x^{2}\\ln x}{2}-\\dfrac{1}{2}\\int x\\,dx\\)"
+            },
+            {
+              "explain": "Integrate \\(\\int x\\,dx=\\dfrac{x^{2}}{2}\\), so \\(\\dfrac{1}{2}\\cdot\\dfrac{x^{2}}{2}=\\dfrac{x^{2}}{4}\\).",
+              "work": "\\(=\\dfrac{x^{2}\\ln x}{2}-\\dfrac{x^{2}}{4}+c\\)"
+            },
+            {
+              "explain": "Check: \\(\\dfrac{d}{dx}\\left[\\dfrac{x^{2}\\ln x}{2}-\\dfrac{x^{2}}{4}\\right]=x\\ln x+\\dfrac{x}{2}-\\dfrac{x}{2}=x\\ln x\\) ✓. Why not the others: B has \\(\\dfrac{x^{2}}{2}\\) (forgot the extra \\(\\dfrac{1}{2}\\)); C has the wrong sign; D loses the \\(\\dfrac{1}{2}\\) in the first term.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "By parts: \\(u=\\ln x\\), \\(dv=x\\,dx\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4928,6 +5812,60 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q13c3",
+          "type": "mc",
+          "stem": "Hence, or otherwise, find \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{8}{15}\\)",
+            "\\(\\dfrac{16}{15}\\)",
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{8}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(\\cos^{5}\\theta\\) by the sum from part (ii), then integrate each cosine: \\(\\int\\cos k\\theta\\,d\\theta=\\dfrac{\\sin k\\theta}{k}\\).",
+          "steps": [
+            {
+              "explain": "Use \\(\\cos^{5}\\theta=\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\).",
+              "work": "\\(\\int_{0}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta=\\dfrac{1}{16}\\int_{0}^{\\frac{\\pi}{2}}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)d\\theta\\)"
+            },
+            {
+              "explain": "Integrate term by term (divide by the coefficient of \\(\\theta\\)).",
+              "work": "\\(=\\dfrac{1}{16}\\left[\\dfrac{\\sin5\\theta}{5}+\\dfrac{5\\sin3\\theta}{3}+10\\sin\\theta\\right]_{0}^{\\frac{\\pi}{2}}\\)"
+            },
+            {
+              "explain": "At \\(\\theta=\\dfrac{\\pi}{2}\\): \\(\\sin\\dfrac{5\\pi}{2}=1\\), \\(\\sin\\dfrac{3\\pi}{2}=-1\\), \\(\\sin\\dfrac{\\pi}{2}=1\\). At \\(\\theta=0\\) every sine is 0.",
+              "work": "\\(=\\dfrac{1}{16}\\left(\\dfrac{1}{5}+\\dfrac{5(-1)}{3}+10\\right)\\)"
+            },
+            {
+              "explain": "Common denominator 15: \\(\\dfrac{3}{15}-\\dfrac{25}{15}+\\dfrac{150}{15}=\\dfrac{128}{15}\\).",
+              "work": "\\(=\\dfrac{1}{16}\\cdot\\dfrac{128}{15}=\\dfrac{8}{15}\\)"
+            },
+            {
+              "explain": "Check with the reduction formula \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta=\\dfrac{4}{5}\\cdot\\dfrac{2}{3}=\\dfrac{8}{15}\\) ✓. Why not the others: B is twice the answer (it forgets that \\(\\dfrac{128}{15}\\) is divided by 16 only once, not by 8); C and D drop terms or mis-evaluate \\(\\sin\\dfrac{3\\pi}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise, find",
+              "note": "Integrate \\(\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -6330,6 +7268,218 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q16b4",
+          "type": "mc",
+          "stem": "Let \\(I_{n}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n}x}{2+\\sin x}\\,dx\\), where \\(n=0,1,2,\\dots\\). Show that \\(I_{n+1}+2I_{n}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&I_{n+1}+2I_{n}=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n+1}x+2\\sin^{n}x}{2+\\sin x}dx=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n}x\\,(\\sin x+2)}{2+\\sin x}dx=\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx\\end{aligned}\\)",
+            "\\(\\begin{aligned}&I_{n+1}+2I_{n}=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n+1}x+2\\sin^{n}x}{2+\\sin x}dx=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n}x\\,(\\sin x+2)}{2+\\sin x}dx=\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n+1}x\\,dx\\end{aligned}\\)",
+            "\\(\\begin{aligned}&I_{n+1}+2I_{n}=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n+1}x\\cdot2\\sin^{n}x}{2+\\sin x}dx=\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx\\end{aligned}\\)",
+            "\\(\\begin{aligned}&I_{n+1}+2I_{n}=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n+1}x+2\\sin^{n}x}{(2+\\sin x)^{2}}dx=\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Both integrals have the same denominator \\(2+\\sin x\\), so ADD the numerators. Factor \\(\\sin^{n}x\\) out: \\(\\sin^{n+1}x+2\\sin^{n}x=\\sin^{n}x(\\sin x+2)\\) — it cancels the denominator.",
+          "steps": [
+            {
+              "explain": "Write \\(I_{n+1}\\) and \\(2I_{n}\\) over the same denominator and add the integrands.",
+              "work": "\\(I_{n+1}+2I_{n}=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n+1}x+2\\sin^{n}x}{2+\\sin x}\\,dx\\)"
+            },
+            {
+              "explain": "Factor the numerator: \\(\\sin^{n+1}x=\\sin^{n}x\\cdot\\sin x\\).",
+              "work": "\\(=\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{\\sin^{n}x\\,(\\sin x+2)}{2+\\sin x}\\,dx\\)"
+            },
+            {
+              "explain": "Cancel \\(\\sin x+2=2+\\sin x\\).",
+              "work": "\\(=\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B leaves the wrong power \\(\\sin^{n+1}x\\); C multiplies the two terms instead of adding; D squares the denominator.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(I_{n+1}+2I_{n}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx\\)",
+              "note": "Common denominator; factor \\(\\sin^{n}x(\\sin x+2)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q16b5",
+          "type": "mc",
+          "stem": "Hence, or otherwise, find the value of \\(I_{2}\\). Give your answer in the form \\(m\\pi+1\\), where \\(m\\) is irrational.",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\left(\\dfrac{4\\sqrt3}{9}-1\\right)\\pi+1\\)",
+            "\\(\\left(\\dfrac{4\\sqrt3}{9}+1\\right)\\pi+1\\)",
+            "\\(\\left(\\dfrac{2\\sqrt3}{9}-1\\right)\\pi+1\\)",
+            "\\(\\left(\\dfrac{4\\sqrt3}{9}-1\\right)\\pi-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the recurrence \\(I_{n+1}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\sin^{n}x\\,dx-2I_{n}\\) twice, starting from \\(I_{0}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{2+\\sin x}\\). Get \\(I_{0}\\) from part (iii) with \\(k=\\dfrac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "\\(I_{0}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{2+\\sin x}=\\dfrac{1}{2}\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{1+\\dfrac{1}{2}\\sin x}\\). Use part (iii) with \\(k=\\dfrac{1}{2}\\): \\(\\sqrt{1-k^{2}}=\\dfrac{\\sqrt3}{2}\\) and \\(\\sqrt{\\dfrac{1-k}{1+k}}=\\dfrac{1}{\\sqrt3}\\).",
+              "work": "\\(I_{0}=\\dfrac{1}{2}\\cdot\\dfrac{2}{\\dfrac{\\sqrt3}{2}}\\tan^{-1}\\dfrac{1}{\\sqrt3}=\\dfrac{2}{\\sqrt3}\\cdot\\dfrac{\\pi}{6}=\\dfrac{\\pi}{3\\sqrt3}=\\dfrac{\\sqrt3\\pi}{9}\\)"
+            },
+            {
+              "explain": "Recurrence with \\(n=0\\): \\(I_{1}+2I_{0}=\\int_{0}^{\\frac{\\pi}{2}}1\\,dx=\\dfrac{\\pi}{2}\\).",
+              "work": "\\(I_{1}=\\dfrac{\\pi}{2}-2I_{0}=\\dfrac{\\pi}{2}-\\dfrac{2\\sqrt3\\pi}{9}\\)"
+            },
+            {
+              "explain": "Recurrence with \\(n=1\\): \\(I_{2}+2I_{1}=\\int_{0}^{\\frac{\\pi}{2}}\\sin x\\,dx=\\left[-\\cos x\\right]_{0}^{\\frac{\\pi}{2}}=1\\).",
+              "work": "\\(I_{2}=1-2I_{1}\\)"
+            },
+            {
+              "explain": "Substitute \\(I_{1}\\): \\(1-2\\left(\\dfrac{\\pi}{2}-\\dfrac{2\\sqrt3\\pi}{9}\\right)=1-\\pi+\\dfrac{4\\sqrt3\\pi}{9}\\).",
+              "work": "\\(I_{2}=\\left(\\dfrac{4\\sqrt3}{9}-1\\right)\\pi+1\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac{4\\sqrt3}{9}\\approx0.7698\\), so \\(I_{2}\\approx(-0.2302)(3.1416)+1\\approx0.277\\), and the integrand \\(\\dfrac{\\sin^{2}x}{2+\\sin x}\\) is between 0 and \\(\\dfrac{1}{3}\\) with average about \\(0.18\\), over a length \\(1.57\\) ✓ (\\(\\approx0.28\\)). Why not the others: B has the wrong sign on 1; C has \\(\\dfrac{2\\sqrt3}{9}\\) (forgot to double \\(I_{0}\\)); D has \\(-1\\) instead of \\(+1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of \\(I_{2}\\)",
+              "note": "\\(I_{0}\\) from (iii); then \\(I_{1}=\\dfrac\\pi2-2I_{0}\\); \\(I_{2}=1-2I_{1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q16a1",
+          "type": "mc",
+          "stem": "Consider the integral \\(I_{n}=\\displaystyle\\int_{0}^{1}\\sqrt{x}\\,(1-x)^{n}\\,dx\\), \\(n=0,1,2,3,\\dots\\). Show that \\(I_{n}=\\dfrac{2n}{2n+3}I_{n-1}\\), \\(n=1,2,3,\\dots\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\text{By parts: }u=(1-x)^{n},\\ dv=x^{\\frac12}dx\\ \\Rightarrow\\ I_{n}=\\left[\\dfrac23x^{\\frac32}(1-x)^{n}\\right]_{0}^{1}+\\dfrac{2n}{3}\\int_{0}^{1}x^{\\frac32}(1-x)^{n-1}dx\\\\ &=\\dfrac{2n}{3}\\int_{0}^{1}\\sqrt{x}\\,\\big(1-(1-x)\\big)(1-x)^{n-1}dx=\\dfrac{2n}{3}I_{n-1}-\\dfrac{2n}{3}I_{n}\\ \\Rightarrow\\ I_{n}=\\dfrac{2n}{2n+3}I_{n-1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{By parts: }u=(1-x)^{n},\\ dv=x^{\\frac12}dx\\ \\Rightarrow\\ I_{n}=\\left[\\dfrac23x^{\\frac32}(1-x)^{n}\\right]_{0}^{1}-\\dfrac{2n}{3}\\int_{0}^{1}x^{\\frac32}(1-x)^{n-1}dx\\\\ &=-\\dfrac{2n}{3}I_{n-1}+\\dfrac{2n}{3}I_{n}\\ \\Rightarrow\\ I_{n}=\\dfrac{2n}{2n-3}I_{n-1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{By parts: }u=x^{\\frac12},\\ dv=(1-x)^{n}dx\\ \\Rightarrow\\ I_{n}=\\ldots\\\\ &\\Rightarrow I_{n}=\\dfrac{2n}{2n+3}I_{n+1}\\ \\text{(wrong direction)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{By parts: }u=(1-x)^{n},\\ dv=x^{\\frac12}dx\\ \\Rightarrow\\ I_{n}=\\left[\\dfrac23x^{\\frac32}(1-x)^{n}\\right]_{0}^{1}+\\dfrac{2n}{3}\\int_{0}^{1}x^{\\frac32}(1-x)^{n-1}dx\\\\ &=\\dfrac{2n}{3}I_{n-1}\\ \\Rightarrow\\ I_{n}=\\dfrac{2n}{3}I_{n-1}\\ \\text{(forgot the split)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate by parts with \\(u=(1-x)^{n}\\) (so the power drops to \\(n-1\\)) and \\(dv=\\sqrt x\\,dx\\). The new integrand contains \\(x^{\\frac{3}{2}}=x\\sqrt x\\): write \\(x=1-(1-x)\\) to split it into \\(I_{n-1}\\) and \\(I_{n}\\), then solve for \\(I_{n}\\).",
+          "steps": [
+            {
+              "explain": "Choose \\(u=(1-x)^{n}\\), \\(\\dfrac{du}{dx}=-n(1-x)^{n-1}\\); \\(\\dfrac{dv}{dx}=x^{\\frac12}\\), \\(v=\\dfrac23x^{\\frac32}\\).",
+              "work": "\\(I_{n}=\\left[\\dfrac23x^{\\frac32}(1-x)^{n}\\right]_{0}^{1}+\\dfrac{2n}{3}\\int_{0}^{1}x^{\\frac32}(1-x)^{n-1}dx\\)"
+            },
+            {
+              "explain": "Boundary term: at \\(x=1\\), \\((1-x)^{n}=0\\) (\\(n\\ge1\\)); at \\(x=0\\), \\(x^{\\frac32}=0\\). So the bracket is \\(0-0=0\\).",
+              "work": "\\(I_{n}=\\dfrac{2n}{3}\\int_{0}^{1}x\\sqrt x\\,(1-x)^{n-1}dx\\)"
+            },
+            {
+              "explain": "Rewrite \\(x=1-(1-x)\\) so that the integrand splits into powers of \\((1-x)\\).",
+              "work": "\\(x\\sqrt x(1-x)^{n-1}=\\sqrt x\\left[1-(1-x)\\right](1-x)^{n-1}=\\sqrt x(1-x)^{n-1}-\\sqrt x(1-x)^{n}\\)"
+            },
+            {
+              "explain": "Integrate: the two pieces are \\(I_{n-1}\\) and \\(I_{n}\\).",
+              "work": "\\(I_{n}=\\dfrac{2n}{3}\\left(I_{n-1}-I_{n}\\right)\\)"
+            },
+            {
+              "explain": "Multiply by 3, collect the \\(I_{n}\\) terms: \\(3I_{n}+2nI_{n}=2nI_{n-1}\\), so \\((2n+3)I_{n}=2nI_{n-1}\\).",
+              "work": "\\(I_{n}=\\dfrac{2n}{2n+3}I_{n-1}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B has a sign error (gives \\(2n-3\\)); C chooses the parts the other way round (it raises the power, giving \\(I_{n+1}\\)); D forgets the \\(-I_{n}\\) piece.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(I_{n}=\\dfrac{2n}{2n+3}I_{n-1}\\)",
+              "note": "By parts \\(u=(1-x)^{n}\\); \\(x=1-(1-x)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q16a2",
+          "type": "mc",
+          "stem": "Consider the integral \\(I_{n}=\\displaystyle\\int_{0}^{1}\\sqrt{x}\\,(1-x)^{n}\\,dx\\) with \\(I_{n}=\\dfrac{2n}{2n+3}I_{n-1}\\) for \\(n\\ge1\\). Evaluate \\(I_{1}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{4}{15}\\)",
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Put \\(n=1\\) in the formula to get \\(I_{1}=\\dfrac{2}{5}I_{0}\\). Then find \\(I_{0}=\\displaystyle\\int_{0}^{1}\\sqrt x\\,dx\\) directly.",
+          "steps": [
+            {
+              "explain": "With \\(n=1\\): \\(\\dfrac{2n}{2n+3}=\\dfrac{2}{5}\\).",
+              "work": "\\(I_{1}=\\dfrac25I_{0}\\)"
+            },
+            {
+              "explain": "\\(I_{0}=\\displaystyle\\int_{0}^{1}\\sqrt x\\,(1-x)^{0}dx=\\int_{0}^{1}x^{\\frac12}dx\\) (anything to the power 0 is 1).",
+              "work": "\\(I_{0}=\\left[\\dfrac23x^{\\frac32}\\right]_{0}^{1}=\\dfrac{2}{3}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(I_{1}=\\dfrac{2}{5}\\cdot\\dfrac{2}{3}=\\dfrac{4}{15}\\)"
+            },
+            {
+              "explain": "Check directly: \\(I_{1}=\\int_{0}^{1}\\left(x^{\\frac12}-x^{\\frac32}\\right)dx=\\dfrac{2}{3}-\\dfrac{2}{5}=\\dfrac{10-6}{15}=\\dfrac{4}{15}\\) ✓. Why not the others: B is \\(\\dfrac{2}{5}\\) alone (forgot to multiply by \\(I_{0}\\)); C is \\(I_{0}\\) itself; D is twice \\(\\dfrac{2}{5}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(I_{1}\\).",
+              "note": "\\(I_{1}=\\dfrac25I_{0}\\), \\(I_{0}=\\int_{0}^{1}\\sqrt x\\,dx\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6614,6 +7764,301 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12e1",
+          "type": "mc",
+          "stem": "Show that \\(\\displaystyle\\int_{0}^{a}f(x)\\,dx=\\int_{0}^{a}f(a-x)\\,dx\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\text{Let }u=a-x,\\ du=-dx;\\ x=0\\Rightarrow u=a,\\ x=a\\Rightarrow u=0\\\\ &\\int_{0}^{a}f(a-x)dx=-\\int_{a}^{0}f(u)\\,du=\\int_{0}^{a}f(u)\\,du=\\int_{0}^{a}f(x)\\,dx\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Let }u=a-x,\\ du=-dx;\\ x=0\\Rightarrow u=a,\\ x=a\\Rightarrow u=0\\\\ &\\int_{0}^{a}f(a-x)dx=\\int_{a}^{0}f(u)\\,du=-\\int_{0}^{a}f(x)\\,dx\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Let }u=a-x,\\ du=dx;\\ x=0\\Rightarrow u=a,\\ x=a\\Rightarrow u=0\\\\ &\\int_{0}^{a}f(a-x)dx=\\int_{a}^{0}f(u)\\,du=-\\int_{0}^{a}f(x)\\,dx\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Let }u=a-x,\\ du=-dx;\\ \\text{limits unchanged}\\\\ &\\int_{0}^{a}f(a-x)dx=-\\int_{0}^{a}f(u)\\,du=-\\int_{0}^{a}f(x)\\,dx\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(u=a-x\\) on the RIGHT-hand side. Change \\(dx\\) AND the limits. The minus sign from \\(du=-dx\\) is cancelled by reversing the limits.",
+          "steps": [
+            {
+              "explain": "Start with the right-hand side and let \\(u=a-x\\). Then \\(\\dfrac{du}{dx}=-1\\), so \\(dx=-du\\).",
+              "work": "\\(u=a-x,\\qquad dx=-du\\)"
+            },
+            {
+              "explain": "Change the limits: when \\(x=0\\), \\(u=a-0=a\\); when \\(x=a\\), \\(u=a-a=0\\).",
+              "work": "\\(x:0\\to a\\ \\Longrightarrow\\ u:a\\to0\\)"
+            },
+            {
+              "explain": "Substitute: \\(f(a-x)=f(u)\\) and \\(dx=-du\\).",
+              "work": "\\(\\int_{0}^{a}f(a-x)dx=\\int_{a}^{0}f(u)(-du)=-\\int_{a}^{0}f(u)\\,du\\)"
+            },
+            {
+              "explain": "Swapping the limits of an integral changes its sign: \\(-\\int_{a}^{0}=+\\int_{0}^{a}\\).",
+              "work": "\\(=\\int_{0}^{a}f(u)\\,du\\)"
+            },
+            {
+              "explain": "The variable name does not matter (\\(u\\) is a dummy variable), so it equals \\(\\int_{0}^{a}f(x)\\,dx\\). ∎ Why not the others: B and C lose the sign change from reversing the limits or from \\(du=-dx\\); D keeps the limits unchanged although \\(u=a-x\\) swaps them.",
+              "work": "\\(\\int_{0}^{a}f(a-x)dx=\\int_{0}^{a}f(x)dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 170\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><text x=\"160.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">u = a − x reflects the interval [0, a]</text><line x1=\"30.0\" y1=\"70.0\" x2=\"290.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"70\" r=\"5\" fill=\"#3b4ea8\"/><circle cx=\"290\" cy=\"70\" r=\"5\" fill=\"#d97706\"/><text x=\"30.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = 0</text><text x=\"290.0\" y=\"96.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = a</text><line x1=\"30.0\" y1=\"130.0\" x2=\"290.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"130\" r=\"5\" fill=\"#d97706\"/><circle cx=\"290\" cy=\"130\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"30.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">u = a</text><text x=\"290.0\" y=\"156.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">u = 0</text><line x1=\"30.0\" y1=\"75.0\" x2=\"290.0\" y2=\"125.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"290.0\" y1=\"75.0\" x2=\"30.0\" y2=\"125.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/></svg>"
+              }
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "\\(u=a-x\\); new limits \\(a\\) to \\(0\\); flip back."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12e2",
+          "type": "mc",
+          "stem": "Hence find \\(\\displaystyle\\int_{0}^{\\pi}\\dfrac{x\\sin x}{1+\\cos^{2}x}\\,dx\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\pi^{2}}{4}\\)",
+            "\\(\\dfrac{\\pi^{2}}{2}\\)",
+            "\\(\\dfrac{\\pi}{4}\\)",
+            "\\(\\dfrac{\\pi^{2}}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (i) with \\(a=\\pi\\): \\(I=\\displaystyle\\int_{0}^{\\pi}\\dfrac{(\\pi-x)\\sin x}{1+\\cos^{2}x}dx\\). ADD the two forms of \\(I\\) so the \\(x\\) cancels, leaving \\(\\pi\\displaystyle\\int\\dfrac{\\sin x}{1+\\cos^{2}x}dx\\).",
+          "steps": [
+            {
+              "explain": "Let \\(I\\) be the integral. Replace \\(x\\) by \\(\\pi-x\\) using part (i); \\(\\sin(\\pi-x)=\\sin x\\) and \\(\\cos(\\pi-x)=-\\cos x\\) so \\(\\cos^{2}(\\pi-x)=\\cos^{2}x\\).",
+              "work": "\\(I=\\int_{0}^{\\pi}\\dfrac{(\\pi-x)\\sin x}{1+\\cos^{2}x}dx\\)"
+            },
+            {
+              "explain": "Add the two expressions for \\(I\\): \\(x+(\\pi-x)=\\pi\\), so the \\(x\\) disappears.",
+              "work": "\\(2I=\\int_{0}^{\\pi}\\dfrac{\\pi\\sin x}{1+\\cos^{2}x}dx=\\pi\\int_{0}^{\\pi}\\dfrac{\\sin x}{1+\\cos^{2}x}dx\\)"
+            },
+            {
+              "explain": "Substitute \\(u=\\cos x\\), \\(du=-\\sin x\\,dx\\). Limits: \\(x=0\\Rightarrow u=1\\); \\(x=\\pi\\Rightarrow u=-1\\).",
+              "work": "\\(\\int_{0}^{\\pi}\\dfrac{\\sin x}{1+\\cos^{2}x}dx=-\\int_{1}^{-1}\\dfrac{du}{1+u^{2}}=\\int_{-1}^{1}\\dfrac{du}{1+u^{2}}\\)"
+            },
+            {
+              "explain": "\\(\\displaystyle\\int\\dfrac{du}{1+u^{2}}=\\tan^{-1}u\\), so evaluate between \\(-1\\) and \\(1\\).",
+              "work": "\\(=\\tan^{-1}1-\\tan^{-1}(-1)=\\dfrac{\\pi}{4}+\\dfrac{\\pi}{4}=\\dfrac{\\pi}{2}\\)"
+            },
+            {
+              "explain": "So \\(2I=\\pi\\times\\dfrac{\\pi}{2}=\\dfrac{\\pi^{2}}{2}\\), giving \\(I=\\dfrac{\\pi^{2}}{4}\\).",
+              "work": "\\(I=\\dfrac{\\pi^{2}}{4}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets to divide by 2 (that is \\(2I\\)); C and D lose a factor of \\(\\pi\\) or use \\(\\int=\\dfrac{\\pi}{4}\\) only once.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence find",
+              "note": "Add \\(I\\) and its \\(x\\to\\pi-x\\) form; then \\(u=\\cos x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14e",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{4}}\\dfrac{1-\\tan x}{1+\\tan x}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{1}{2}\\ln2\\)",
+            "\\(\\ln2\\)",
+            "\\(\\dfrac{\\pi}{4}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise \\(\\dfrac{1-\\tan x}{1+\\tan x}=\\dfrac{\\tan\\dfrac{\\pi}{4}-\\tan x}{1+\\tan\\dfrac{\\pi}{4}\\tan x}=\\tan\\left(\\dfrac{\\pi}{4}-x\\right)\\) (compound-angle formula), or convert to sin and cos.",
+          "steps": [
+            {
+              "explain": "Since \\(\\tan\\dfrac{\\pi}{4}=1\\), use \\(\\tan(A-B)=\\dfrac{\\tan A-\\tan B}{1+\\tan A\\tan B}\\) with \\(A=\\dfrac{\\pi}{4}\\).",
+              "work": "\\(\\dfrac{1-\\tan x}{1+\\tan x}=\\tan\\left(\\dfrac{\\pi}{4}-x\\right)\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\tan u\\,du=-\\ln|\\cos u|\\). Here \\(u=\\dfrac{\\pi}{4}-x\\) with \\(\\dfrac{du}{dx}=-1\\), so \\(\\int\\tan\\left(\\dfrac{\\pi}{4}-x\\right)dx=+\\ln\\left|\\cos\\left(\\dfrac{\\pi}{4}-x\\right)\\right|\\).",
+              "work": "\\(\\int_{0}^{\\frac{\\pi}{4}}\\tan\\left(\\dfrac{\\pi}{4}-x\\right)dx=\\left[\\ln\\cos\\left(\\dfrac{\\pi}{4}-x\\right)\\right]_{0}^{\\frac{\\pi}{4}}\\)"
+            },
+            {
+              "explain": "At \\(x=\\dfrac{\\pi}{4}\\): \\(\\ln\\cos0=\\ln1=0\\). At \\(x=0\\): \\(\\ln\\cos\\dfrac{\\pi}{4}=\\ln\\dfrac{1}{\\sqrt2}=-\\dfrac{1}{2}\\ln2\\).",
+              "work": "\\(=0-\\left(-\\dfrac{1}{2}\\ln2\\right)=\\dfrac{1}{2}\\ln2\\)"
+            },
+            {
+              "explain": "Alternative: \\(\\dfrac{1-\\tan x}{1+\\tan x}=\\dfrac{\\cos x-\\sin x}{\\cos x+\\sin x}\\), and the top is the derivative of the bottom, so the integral is \\(\\left[\\ln(\\cos x+\\sin x)\\right]_{0}^{\\frac{\\pi}{4}}=\\ln\\sqrt2-\\ln1=\\dfrac{1}{2}\\ln2\\) ✓.",
+              "work": "\\(\\dfrac{1}{2}\\ln2\\approx0.347\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets \\(\\ln\\sqrt2=\\dfrac{1}{2}\\ln2\\); C and D confuse the integral with \\(\\int1\\,dx\\) or lose the sign from \\(du=-dx\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(\\tan\\left(\\dfrac{\\pi}{4}-x\\right)\\), or \\(\\dfrac{\\cos x-\\sin x}{\\cos x+\\sin x}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q15d",
+          "type": "mc",
+          "stem": "Evaluate \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{3}}\\dfrac{1}{9-8\\sin^{2}x}\\,dx\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\dfrac{\\pi}{18}\\)",
+            "\\(\\dfrac{\\pi}{6}\\)",
+            "\\(\\dfrac{\\pi}{9}\\)",
+            "\\(\\dfrac{\\pi}{54}\\)"
+          ],
+          "answer": 0,
+          "hint": "Only \\(\\sin^{2}x\\) appears, so use \\(t=\\tan x\\) (then \\(\\sin^{2}x=\\dfrac{t^{2}}{1+t^{2}}\\) and \\(dx=\\dfrac{dt}{1+t^{2}}\\)). The denominator simplifies to \\(\\dfrac{9+t^{2}}{1+t^{2}}\\) and the \\(1+t^{2}\\) cancels.",
+          "steps": [
+            {
+              "explain": "Let \\(t=\\tan x\\): \\(dt=\\sec^{2}x\\,dx=(1+t^{2})dx\\), so \\(dx=\\dfrac{dt}{1+t^{2}}\\). Also \\(\\sin^{2}x=\\dfrac{\\tan^{2}x}{1+\\tan^{2}x}=\\dfrac{t^{2}}{1+t^{2}}\\).",
+              "work": "\\(dx=\\dfrac{dt}{1+t^{2}},\\qquad\\sin^{2}x=\\dfrac{t^{2}}{1+t^{2}}\\)"
+            },
+            {
+              "explain": "Limits: \\(x=0\\Rightarrow t=0\\); \\(x=\\dfrac{\\pi}{3}\\Rightarrow t=\\tan\\dfrac{\\pi}{3}=\\sqrt3\\).",
+              "work": "\\(t:0\\to\\sqrt3\\)"
+            },
+            {
+              "explain": "Denominator: \\(9-8\\cdot\\dfrac{t^{2}}{1+t^{2}}=\\dfrac{9+9t^{2}-8t^{2}}{1+t^{2}}=\\dfrac{9+t^{2}}{1+t^{2}}\\).",
+              "work": "\\(\\dfrac{1}{9-8\\sin^{2}x}=\\dfrac{1+t^{2}}{9+t^{2}}\\)"
+            },
+            {
+              "explain": "Multiply by \\(dx=\\dfrac{dt}{1+t^{2}}\\): the \\(1+t^{2}\\) cancels.",
+              "work": "\\(\\int_{0}^{\\sqrt3}\\dfrac{1+t^{2}}{9+t^{2}}\\cdot\\dfrac{dt}{1+t^{2}}=\\int_{0}^{\\sqrt3}\\dfrac{dt}{9+t^{2}}\\)"
+            },
+            {
+              "explain": "Standard integral \\(\\displaystyle\\int\\dfrac{dt}{a^{2}+t^{2}}=\\dfrac{1}{a}\\tan^{-1}\\dfrac{t}{a}\\) with \\(a=3\\).",
+              "work": "\\(=\\left[\\dfrac{1}{3}\\tan^{-1}\\dfrac{t}{3}\\right]_{0}^{\\sqrt3}=\\dfrac{1}{3}\\tan^{-1}\\dfrac{\\sqrt3}{3}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{\\sqrt3}{3}=\\dfrac{1}{\\sqrt3}\\) and \\(\\tan^{-1}\\dfrac{1}{\\sqrt3}=\\dfrac{\\pi}{6}\\).",
+              "work": "\\(=\\dfrac{1}{3}\\cdot\\dfrac{\\pi}{6}=\\dfrac{\\pi}{18}\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the \\(\\dfrac{1}{3}\\); C uses \\(\\tan^{-1}\\sqrt3=\\dfrac{\\pi}{3}\\) (wrong argument); D divides by 3 twice.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Evaluate",
+              "note": "\\(t=\\tan x\\): \\(\\dfrac{1}{9-8\\sin^{2}x}dx=\\dfrac{dt}{9+t^{2}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q16d",
+          "type": "mc",
+          "stem": "Consider the curve \\(y=f(x)\\), where \\(f(x)=\\dfrac{1}{1+\\cos x+\\sin x}\\). The area of the region \\(R_{1}\\), bounded by the \\(x\\)-axis, the \\(y\\)-axis, the line \\(x=\\dfrac{\\pi}{2}\\) and the curve \\(y=f(x)\\), is \\(\\ln2\\) units\\(^{2}\\). The region \\(R_{2}\\) is bounded by the \\(x\\)-axis, the line \\(x=\\dfrac{\\pi}{2}\\) and the curve \\(y=xf(x)\\). Prove that the ratio of the area of \\(R_{1}\\) to the area of \\(R_{2}\\) is \\(4:\\pi\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 200\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:0 auto\"><line x1=\"16.0\" y1=\"150.0\" x2=\"209.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"24.0\" y1=\"158.0\" x2=\"24.0\" y2=\"22.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"209.0\" y1=\"150.0\" x2=\"202.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"209.0\" y1=\"150.0\" x2=\"202.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"24.0\" y1=\"22.0\" x2=\"20.0\" y2=\"28.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"24.0\" y1=\"22.0\" x2=\"28.0\" y2=\"28.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"24,150 24.0,107.5 25.2,107.8 26.5,108.0 27.8,108.3 29.0,108.6 30.2,108.8 31.5,109.0 32.8,109.3 34.0,109.5 35.2,109.7 36.5,109.9 37.8,110.2 39.0,110.4 40.2,110.6 41.5,110.7 42.8,110.9 44.0,111.1 45.2,111.3 46.5,111.5 47.8,111.6 49.0,111.8 50.2,111.9 51.5,112.1 52.8,112.2 54.0,112.4 55.2,112.5 56.5,112.7 57.8,112.8 59.0,112.9 60.2,113.0 61.5,113.1 62.7,113.3 64.0,113.4 65.2,113.5 66.5,113.6 67.8,113.7 69.0,113.8 70.2,113.8 71.5,113.9 72.8,114.0 74.0,114.1 75.2,114.1 76.5,114.2 77.8,114.3 79.0,114.3 80.2,114.4 81.5,114.4 82.8,114.5 84.0,114.5 85.2,114.6 86.5,114.6 87.8,114.6 89.0,114.7 90.2,114.7 91.5,114.7 92.8,114.7 94.0,114.8 95.2,114.8 96.5,114.8 97.8,114.8 99.0,114.8 100.2,114.8 101.5,114.8 102.8,114.8 104.0,114.8 105.2,114.7 106.5,114.7 107.7,114.7 109.0,114.7 110.2,114.6 111.5,114.6 112.8,114.6 114.0,114.5 115.2,114.5 116.5,114.4 117.8,114.4 119.0,114.3 120.2,114.3 121.5,114.2 122.8,114.1 124.0,114.1 125.2,114.0 126.5,113.9 127.8,113.8 129.0,113.8 130.2,113.7 131.5,113.6 132.8,113.5 134.0,113.4 135.2,113.3 136.5,113.1 137.8,113.0 139.0,112.9 140.2,112.8 141.5,112.7 142.8,112.5 144.0,112.4 145.2,112.2 146.5,112.1 147.8,111.9 149.0,111.8 150.2,111.6 151.5,111.5 152.7,111.3 154.0,111.1 155.2,110.9 156.5,110.7 157.7,110.6 159.0,110.4 160.2,110.2 161.5,109.9 162.8,109.7 164.0,109.5 165.2,109.3 166.5,109.0 167.8,108.8 169.0,108.6 170.2,108.3 171.5,108.0 172.7,107.8 174.0,107.5 174,150\" fill=\"#d1d5db\"/><polyline points=\"24.0,107.5 25.2,107.8 26.5,108.0 27.8,108.3 29.0,108.6 30.2,108.8 31.5,109.0 32.8,109.3 34.0,109.5 35.2,109.7 36.5,109.9 37.8,110.2 39.0,110.4 40.2,110.6 41.5,110.7 42.8,110.9 44.0,111.1 45.2,111.3 46.5,111.5 47.8,111.6 49.0,111.8 50.2,111.9 51.5,112.1 52.8,112.2 54.0,112.4 55.2,112.5 56.5,112.7 57.8,112.8 59.0,112.9 60.2,113.0 61.5,113.1 62.7,113.3 64.0,113.4 65.2,113.5 66.5,113.6 67.8,113.7 69.0,113.8 70.2,113.8 71.5,113.9 72.8,114.0 74.0,114.1 75.2,114.1 76.5,114.2 77.8,114.3 79.0,114.3 80.2,114.4 81.5,114.4 82.8,114.5 84.0,114.5 85.2,114.6 86.5,114.6 87.8,114.6 89.0,114.7 90.2,114.7 91.5,114.7 92.8,114.7 94.0,114.8 95.2,114.8 96.5,114.8 97.8,114.8 99.0,114.8 100.2,114.8 101.5,114.8 102.8,114.8 104.0,114.8 105.2,114.7 106.5,114.7 107.7,114.7 109.0,114.7 110.2,114.6 111.5,114.6 112.8,114.6 114.0,114.5 115.2,114.5 116.5,114.4 117.8,114.4 119.0,114.3 120.2,114.3 121.5,114.2 122.8,114.1 124.0,114.1 125.2,114.0 126.5,113.9 127.8,113.8 129.0,113.8 130.2,113.7 131.5,113.6 132.8,113.5 134.0,113.4 135.2,113.3 136.5,113.1 137.8,113.0 139.0,112.9 140.2,112.8 141.5,112.7 142.8,112.5 144.0,112.4 145.2,112.2 146.5,112.1 147.8,111.9 149.0,111.8 150.2,111.6 151.5,111.5 152.7,111.3 154.0,111.1 155.2,110.9 156.5,110.7 157.7,110.6 159.0,110.4 160.2,110.2 161.5,109.9 162.8,109.7 164.0,109.5 165.2,109.3 166.5,109.0 167.8,108.8 169.0,108.6 170.2,108.3 171.5,108.0 172.7,107.8 174.0,107.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"174\" y1=\"150\" x2=\"174\" y2=\"107.5\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"174.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"167.9\" y1=\"173.0\" x2=\"180.1\" y2=\"173.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"174.0\" y=\"183.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"209.0\" y=\"142.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"32.0\" y=\"20.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"40.0\" y=\"70.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y = f(x)</text><text x=\"100.0\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R1</text><line x1=\"262.0\" y1=\"150.0\" x2=\"455.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"158.0\" x2=\"270.0\" y2=\"22.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"455.0\" y1=\"150.0\" x2=\"448.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"455.0\" y1=\"150.0\" x2=\"448.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"22.0\" x2=\"266.0\" y2=\"28.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"270.0\" y1=\"22.0\" x2=\"274.0\" y2=\"28.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"270,150 270.0,150.0 271.2,149.4 272.5,148.9 273.8,148.4 275.0,147.8 276.2,147.3 277.5,146.8 278.8,146.3 280.0,145.8 281.2,145.3 282.5,144.8 283.8,144.3 285.0,143.8 286.2,143.3 287.5,142.8 288.8,142.3 290.0,141.9 291.2,141.4 292.5,140.9 293.8,140.5 295.0,140.0 296.2,139.5 297.5,139.1 298.8,138.6 300.0,138.2 301.2,137.7 302.5,137.3 303.8,136.8 305.0,136.4 306.2,136.0 307.5,135.5 308.8,135.1 310.0,134.7 311.2,134.2 312.5,133.8 313.8,133.4 315.0,132.9 316.2,132.5 317.5,132.1 318.8,131.6 320.0,131.2 321.2,130.8 322.5,130.3 323.8,129.9 325.0,129.5 326.2,129.0 327.5,128.6 328.8,128.2 330.0,127.7 331.2,127.3 332.5,126.8 333.8,126.4 335.0,126.0 336.2,125.5 337.5,125.1 338.8,124.6 340.0,124.2 341.2,123.7 342.5,123.3 343.8,122.8 345.0,122.3 346.2,121.9 347.5,121.4 348.8,121.0 350.0,120.5 351.2,120.0 352.5,119.5 353.8,119.0 355.0,118.6 356.2,118.1 357.5,117.6 358.8,117.1 360.0,116.6 361.2,116.1 362.5,115.6 363.8,115.0 365.0,114.5 366.2,114.0 367.5,113.5 368.8,112.9 370.0,112.4 371.2,111.8 372.5,111.3 373.8,110.7 375.0,110.1 376.2,109.6 377.5,109.0 378.8,108.4 380.0,107.8 381.2,107.2 382.5,106.6 383.8,106.0 385.0,105.3 386.2,104.7 387.5,104.1 388.8,103.4 390.0,102.7 391.2,102.1 392.5,101.4 393.8,100.7 395.0,100.0 396.2,99.3 397.5,98.5 398.8,97.8 400.0,97.1 401.2,96.3 402.5,95.5 403.8,94.8 405.0,94.0 406.2,93.1 407.5,92.3 408.8,91.5 410.0,90.6 411.2,89.8 412.5,88.9 413.8,88.0 415.0,87.1 416.2,86.1 417.5,85.2 418.8,84.2 420.0,83.2 420,150\" fill=\"#d1d5db\"/><polyline points=\"270.0,150.0 271.2,149.4 272.5,148.9 273.8,148.4 275.0,147.8 276.2,147.3 277.5,146.8 278.8,146.3 280.0,145.8 281.2,145.3 282.5,144.8 283.8,144.3 285.0,143.8 286.2,143.3 287.5,142.8 288.8,142.3 290.0,141.9 291.2,141.4 292.5,140.9 293.8,140.5 295.0,140.0 296.2,139.5 297.5,139.1 298.8,138.6 300.0,138.2 301.2,137.7 302.5,137.3 303.8,136.8 305.0,136.4 306.2,136.0 307.5,135.5 308.8,135.1 310.0,134.7 311.2,134.2 312.5,133.8 313.8,133.4 315.0,132.9 316.2,132.5 317.5,132.1 318.8,131.6 320.0,131.2 321.2,130.8 322.5,130.3 323.8,129.9 325.0,129.5 326.2,129.0 327.5,128.6 328.8,128.2 330.0,127.7 331.2,127.3 332.5,126.8 333.8,126.4 335.0,126.0 336.2,125.5 337.5,125.1 338.8,124.6 340.0,124.2 341.2,123.7 342.5,123.3 343.8,122.8 345.0,122.3 346.2,121.9 347.5,121.4 348.8,121.0 350.0,120.5 351.2,120.0 352.5,119.5 353.8,119.0 355.0,118.6 356.2,118.1 357.5,117.6 358.8,117.1 360.0,116.6 361.2,116.1 362.5,115.6 363.8,115.0 365.0,114.5 366.2,114.0 367.5,113.5 368.8,112.9 370.0,112.4 371.2,111.8 372.5,111.3 373.8,110.7 375.0,110.1 376.2,109.6 377.5,109.0 378.8,108.4 380.0,107.8 381.2,107.2 382.5,106.6 383.8,106.0 385.0,105.3 386.2,104.7 387.5,104.1 388.8,103.4 390.0,102.7 391.2,102.1 392.5,101.4 393.8,100.7 395.0,100.0 396.2,99.3 397.5,98.5 398.8,97.8 400.0,97.1 401.2,96.3 402.5,95.5 403.8,94.8 405.0,94.0 406.2,93.1 407.5,92.3 408.8,91.5 410.0,90.6 411.2,89.8 412.5,88.9 413.8,88.0 415.0,87.1 416.2,86.1 417.5,85.2 418.8,84.2 420.0,83.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"420\" y1=\"150\" x2=\"420\" y2=\"83.2\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"420.0\" y=\"169.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"413.9\" y1=\"173.0\" x2=\"426.1\" y2=\"173.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"420.0\" y=\"183.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"455.0\" y=\"142.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"278.0\" y=\"20.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><text x=\"290.0\" y=\"70.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y = x f(x)</text><text x=\"360.0\" y=\"135.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">R2</text><text x=\"494.0\" y=\"194.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&A_{2}=\\int_{0}^{\\frac\\pi2}x f(x)dx=\\int_{0}^{\\frac\\pi2}\\left(\\dfrac\\pi2-x\\right)f\\!\\left(\\dfrac\\pi2-x\\right)dx=\\int_{0}^{\\frac\\pi2}\\dfrac{\\dfrac\\pi2-x}{1+\\sin x+\\cos x}dx\\\\ &\\Rightarrow2A_{2}=\\dfrac\\pi2\\int_{0}^{\\frac\\pi2}f(x)dx=\\dfrac\\pi2A_{1}\\Rightarrow A_{1}:A_{2}=\\pi A_{1}:\\ldots=4:\\pi\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_{2}=\\int_{0}^{\\frac\\pi2}x f(x)dx=\\int_{0}^{\\frac\\pi2}\\left(\\dfrac\\pi2-x\\right)f\\!\\left(\\dfrac\\pi2-x\\right)dx=\\int_{0}^{\\frac\\pi2}\\dfrac{\\dfrac\\pi2-x}{1+\\sin x+\\cos x}dx\\\\ &\\Rightarrow2A_{2}=\\dfrac\\pi2A_{1}\\Rightarrow A_{2}=\\dfrac\\pi2A_{1}\\Rightarrow A_{1}:A_{2}=2:\\pi\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_{2}=\\int_{0}^{\\frac\\pi2}x f(x)dx\\le\\dfrac\\pi2\\int_{0}^{\\frac\\pi2}f(x)dx=\\dfrac\\pi2A_{1}\\\\ &\\Rightarrow A_{1}:A_{2}\\ge2:\\pi\\ \\ (\\text{only an inequality})\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_{2}=\\int_{0}^{\\frac\\pi2}x f(x)dx=\\left[\\dfrac{x^{2}}{2}\\right]_{0}^{\\frac\\pi2}\\ln2=\\dfrac{\\pi^{2}}{8}\\ln2\\\\ &\\Rightarrow A_{1}:A_{2}=8:\\pi^{2}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(A_{2}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}xf(x)\\,dx\\) cannot be done directly. Use the KING PROPERTY \\(\\displaystyle\\int_{0}^{a}h(x)dx=\\int_{0}^{a}h(a-x)dx\\) with \\(a=\\dfrac{\\pi}{2}\\): \\(f\\) is symmetric because \\(f\\!\\left(\\dfrac\\pi2-x\\right)=\\dfrac{1}{1+\\sin x+\\cos x}=f(x)\\). Then ADD the two forms of \\(A_{2}\\).",
+          "steps": [
+            {
+              "explain": "Area of \\(R_{1}\\) is given: \\(A_{1}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}f(x)dx=\\ln2\\). Area of \\(R_{2}\\): \\(A_{2}=\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}xf(x)dx\\).",
+              "work": "\\(A_{1}=\\ln2,\\qquad A_{2}=\\int_{0}^{\\frac\\pi2}x f(x)\\,dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"32.0\" y1=\"185.0\" x2=\"305.0\" y2=\"185.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"193.0\" x2=\"40.0\" y2=\"24.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"305.0\" y1=\"185.0\" x2=\"298.1\" y2=\"181.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"305.0\" y1=\"185.0\" x2=\"298.1\" y2=\"189.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"24.0\" x2=\"36.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"24.0\" x2=\"44.0\" y2=\"30.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"40.0,185.0 42.0,184.3 44.0,183.7 46.0,183.1 48.0,182.4 50.0,181.8 52.0,181.2 54.0,180.6 56.0,180.0 58.0,179.4 60.0,178.8 62.0,178.2 64.0,177.7 66.0,177.1 68.0,176.5 70.0,176.0 72.0,175.4 74.0,174.9 76.0,174.3 78.0,173.8 80.0,173.2 82.0,172.7 84.0,172.2 86.0,171.6 88.0,171.1 90.0,170.6 92.0,170.0 94.0,169.5 96.0,169.0 98.0,168.5 100.0,168.0 102.0,167.5 104.0,166.9 106.0,166.4 108.0,165.9 110.0,165.4 112.0,164.9 114.0,164.4 116.0,163.9 118.0,163.4 120.0,162.9 122.0,162.4 124.0,161.9 126.0,161.3 128.0,160.8 130.0,160.3 132.0,159.8 134.0,159.3 136.0,158.8 138.0,158.3 140.0,157.8 142.0,157.2 144.0,156.7 146.0,156.2 148.0,155.7 150.0,155.1 152.0,154.6 154.0,154.1 156.0,153.5 158.0,153.0 160.0,152.5 162.0,151.9 164.0,151.4 166.0,150.8 168.0,150.3 170.0,149.7 172.0,149.1 174.0,148.6 176.0,148.0 178.0,147.4 180.0,146.9 182.0,146.3 184.0,145.7 186.0,145.1 188.0,144.5 190.0,143.9 192.0,143.3 194.0,142.6 196.0,142.0 198.0,141.4 200.0,140.7 202.0,140.1 204.0,139.4 206.0,138.8 208.0,138.1 210.0,137.4 212.0,136.7 214.0,136.1 216.0,135.4 218.0,134.6 220.0,133.9 222.0,133.2 224.0,132.5 226.0,131.7 228.0,130.9 230.0,130.2 232.0,129.4 234.0,128.6 236.0,127.8 238.0,127.0 240.0,126.2 242.0,125.3 244.0,124.5 246.0,123.6 248.0,122.7 250.0,121.8 252.0,120.9 254.0,120.0 256.0,119.1 258.0,118.1 260.0,117.1 262.0,116.2 264.0,115.2 266.0,114.1 268.0,113.1 270.0,112.0 272.0,111.0 274.0,109.9 276.0,108.8 278.0,107.6 280.0,106.5\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><polyline points=\"40.0,106.5 42.0,107.6 44.0,108.8 46.0,109.9 48.0,111.0 50.0,112.0 52.0,113.1 54.0,114.1 56.0,115.2 58.0,116.2 60.0,117.1 62.0,118.1 64.0,119.1 66.0,120.0 68.0,120.9 70.0,121.8 72.0,122.7 74.0,123.6 76.0,124.5 78.0,125.3 80.0,126.2 82.0,127.0 84.0,127.8 86.0,128.6 88.0,129.4 90.0,130.2 92.0,130.9 94.0,131.7 96.0,132.5 98.0,133.2 100.0,133.9 102.0,134.6 104.0,135.4 106.0,136.1 108.0,136.7 110.0,137.4 112.0,138.1 114.0,138.8 116.0,139.4 118.0,140.1 120.0,140.7 122.0,141.4 124.0,142.0 126.0,142.6 128.0,143.3 130.0,143.9 132.0,144.5 134.0,145.1 136.0,145.7 138.0,146.3 140.0,146.9 142.0,147.4 144.0,148.0 146.0,148.6 148.0,149.1 150.0,149.7 152.0,150.3 154.0,150.8 156.0,151.4 158.0,151.9 160.0,152.5 162.0,153.0 164.0,153.5 166.0,154.1 168.0,154.6 170.0,155.1 172.0,155.7 174.0,156.2 176.0,156.7 178.0,157.2 180.0,157.8 182.0,158.3 184.0,158.8 186.0,159.3 188.0,159.8 190.0,160.3 192.0,160.8 194.0,161.3 196.0,161.9 198.0,162.4 200.0,162.9 202.0,163.4 204.0,163.9 206.0,164.4 208.0,164.9 210.0,165.4 212.0,165.9 214.0,166.4 216.0,166.9 218.0,167.5 220.0,168.0 222.0,168.5 224.0,169.0 226.0,169.5 228.0,170.0 230.0,170.6 232.0,171.1 234.0,171.6 236.0,172.2 238.0,172.7 240.0,173.2 242.0,173.8 244.0,174.3 246.0,174.9 248.0,175.4 250.0,176.0 252.0,176.5 254.0,177.1 256.0,177.7 258.0,178.2 260.0,178.8 262.0,179.4 264.0,180.0 266.0,180.6 268.0,181.2 270.0,181.8 272.0,182.4 274.0,183.1 276.0,183.7 278.0,184.3 280.0,185.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"7 4\"/><line x1=\"160.0\" y1=\"185.0\" x2=\"160.0\" y2=\"107.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"160.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"153.9\" y1=\"208.0\" x2=\"166.1\" y2=\"208.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"280.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"273.9\" y1=\"208.0\" x2=\"286.1\" y2=\"208.0\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"280.0\" y=\"218.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"305.0\" y=\"177.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"206.8\" y=\"99.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y = x f(x)</text><text x=\"55.6\" y=\"123.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">reflection</text></svg>"
+              }
+            },
+            {
+              "explain": "Symmetry of \\(f\\): \\(f\\!\\left(\\dfrac\\pi2-x\\right)=\\dfrac{1}{1+\\cos\\left(\\dfrac\\pi2-x\\right)+\\sin\\left(\\dfrac\\pi2-x\\right)}=\\dfrac{1}{1+\\sin x+\\cos x}=f(x)\\).",
+              "work": "\\(f\\!\\left(\\dfrac\\pi2-x\\right)=f(x)\\)"
+            },
+            {
+              "explain": "King property with \\(a=\\dfrac\\pi2\\): replace \\(x\\) by \\(\\dfrac\\pi2-x\\) in the integrand of \\(A_{2}\\).",
+              "work": "\\(A_{2}=\\int_{0}^{\\frac\\pi2}\\left(\\dfrac\\pi2-x\\right)f\\!\\left(\\dfrac\\pi2-x\\right)dx=\\int_{0}^{\\frac\\pi2}\\left(\\dfrac\\pi2-x\\right)f(x)\\,dx\\)"
+            },
+            {
+              "explain": "Add the two expressions for \\(A_{2}\\): \\(x+\\left(\\dfrac\\pi2-x\\right)=\\dfrac\\pi2\\), so the \\(x\\) cancels.",
+              "work": "\\(2A_{2}=\\int_{0}^{\\frac\\pi2}\\dfrac\\pi2f(x)\\,dx=\\dfrac\\pi2A_{1}\\)"
+            },
+            {
+              "explain": "So \\(A_{2}=\\dfrac\\pi4A_{1}\\). Ratio: \\(A_{1}:A_{2}=A_{1}:\\dfrac\\pi4A_{1}=1:\\dfrac\\pi4=4:\\pi\\). ∎ (\\(A_{2}=\\dfrac\\pi4\\ln2\\))",
+              "work": "\\(A_{1}:A_{2}=\\ln2:\\dfrac\\pi4\\ln2=4:\\pi\\)"
+            },
+            {
+              "explain": "Why not the others: B stops at \\(2A_{2}=\\dfrac\\pi2A_{1}\\) without dividing by 2 (giving \\(2:\\pi\\)); C only proves an inequality; D wrongly integrates \\(x\\) alone and ignores \\(f\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that the ratio of the area of \\(R_{1}\\) to the area of \\(R_{2}\\) is \\(4:\\pi\\).",
+              "note": "\\(f\\!\\left(\\dfrac\\pi2-x\\right)=f(x)\\); \\(A_{2}=\\int(\\dfrac\\pi2-x)f(x)dx\\); add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

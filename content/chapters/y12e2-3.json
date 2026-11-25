@@ -758,6 +758,60 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q13d",
+          "type": "mc",
+          "stem": "The complex number \\(1+i\\) is a zero of the polynomial \\(P(z)=z^{4}-2z^{3}+z^{2}+2z-2\\). Find the remaining zeros of the polynomial.",
+          "difficulty": "medium",
+          "options": [
+            "\\(1-i,\\ 1,\\ -1\\)",
+            "\\(1-i,\\ -1+i,\\ -1-i\\)",
+            "\\(1-i,\\ 2,\\ -1\\)",
+            "\\(1-i,\\ 1,\\ 2\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P\\) has REAL coefficients, so complex zeros come in CONJUGATE pairs: \\(1-i\\) is also a zero. Multiply the pair of factors to get a quadratic, divide it out, and solve what is left.",
+          "steps": [
+            {
+              "explain": "Real coefficients \\(\\Rightarrow\\) conjugate root theorem: \\(1+i\\) a zero \\(\\Rightarrow\\) \\(1-i\\) a zero.",
+              "work": "\\(\\text{zeros: }1+i,\\ 1-i\\)"
+            },
+            {
+              "explain": "Quadratic factor from the pair: sum of roots \\(=2\\), product \\(=(1+i)(1-i)=1+1=2\\), so \\(z^{2}-2z+2\\).",
+              "work": "\\((z-(1+i))(z-(1-i))=z^{2}-2z+2\\)"
+            },
+            {
+              "explain": "Divide \\(P(z)\\) by \\(z^{2}-2z+2\\): \\(z^{4}-2z^{3}+z^{2}+2z-2=(z^{2}-2z+2)(z^{2}+0z-1)\\). Check: \\((z^{2}-2z+2)(z^{2}-1)=z^{4}-2z^{3}+2z^{2}-z^{2}+2z-2\\) ✓.",
+              "work": "\\(P(z)=(z^{2}-2z+2)(z^{2}-1)\\)"
+            },
+            {
+              "explain": "Solve \\(z^{2}-1=0\\): difference of two squares.",
+              "work": "\\(z^{2}=1\\ \\Rightarrow\\ z=1\\ \\text{or}\\ z=-1\\)"
+            },
+            {
+              "explain": "Check \\(P(1)=1-2+1+2-2=0\\) ✓ and \\(P(-1)=1+2+1-2-2=0\\) ✓. Why not the others: B treats \\(-1\\pm i\\) as zeros (wrong quadratic factor); C and D give zeros (2) that do not satisfy \\(P(2)=16-16+4+4-2=6\\ne0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the remaining zeros of the polynomial.",
+              "note": "Conjugate \\(1-i\\); divide by \\(z^{2}-2z+2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1459,6 +1513,109 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q2",
+          "type": "mc",
+          "stem": "For a certain complex number \\(z\\) where \\(\\arg(z)=\\dfrac{\\pi}{5}\\), \\(\\arg(z^{7})\\) is:",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{-7\\pi}{5}\\)",
+            "\\(\\dfrac{-3\\pi}{5}\\)",
+            "\\(\\dfrac{2\\pi}{5}\\)",
+            "\\(\\dfrac{3\\pi}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "De Moivre: \\(\\arg(z^{n})=n\\arg z\\) BUT a principal argument must lie in \\((-\\pi,\\pi]\\). Multiply first, then subtract multiples of \\(2\\pi\\) until the angle is back in that range.",
+          "steps": [
+            {
+              "explain": "De Moivre's theorem multiplies the argument by the power.",
+              "work": "\\(\\arg(z^{7})\\equiv7\\times\\dfrac{\\pi}{5}=\\dfrac{7\\pi}{5}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{7\\pi}{5}=252^{\\circ}\\) is more than \\(\\pi\\) (\\(180^{\\circ}\\)), so it is NOT a principal argument. Subtract one full turn \\(2\\pi=\\dfrac{10\\pi}{5}\\).",
+              "work": "\\(\\dfrac{7\\pi}{5}-2\\pi=\\dfrac{7\\pi}{5}-\\dfrac{10\\pi}{5}=-\\dfrac{3\\pi}{5}\\)"
+            },
+            {
+              "explain": "Check the range: \\(-\\pi<-\\dfrac{3\\pi}{5}\\le\\pi\\) ✓ (\\(-108^{\\circ}\\)). On the unit circle, turning \\(252^{\\circ}\\) anticlockwise lands at the same point as turning \\(108^{\\circ}\\) clockwise.",
+              "work": "\\(\\arg(z^{7})=-\\dfrac{3\\pi}{5}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><circle cx=\"165.0\" cy=\"131.0\" r=\"80\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"59.0\" y1=\"131.0\" x2=\"271.0\" y2=\"131.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"233.0\" x2=\"165.0\" y2=\"29.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"271.0\" y1=\"131.0\" x2=\"264.1\" y2=\"127.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"271.0\" y1=\"131.0\" x2=\"264.1\" y2=\"135.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"29.0\" x2=\"161.0\" y2=\"35.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"29.0\" x2=\"169.0\" y2=\"35.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"269.0\" y=\"146.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Re</text><text x=\"173.0\" y=\"33.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Im</text><line x1=\"165.0\" y1=\"131.0\" x2=\"229.7\" y2=\"84.0\" stroke=\"#3b4ea8\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"229.7\" cy=\"84.0\" r=\"4.6\" fill=\"#3b4ea8\"/><text x=\"237.7\" y=\"78.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"165.0\" y1=\"131.0\" x2=\"140.3\" y2=\"207.1\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"140.3\" cy=\"207.1\" r=\"4.6\" fill=\"#dc2626\"/><text x=\"134.3\" y=\"223.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z<tspan dy=\"-6\" font-size=\"9\">7</tspan></text><polyline points=\"199.0,131.0 199.0,130.5 199.0,129.9 199.0,129.4 198.9,128.9 198.9,128.3 198.8,127.8 198.8,127.3 198.7,126.7 198.7,126.2 198.6,125.7 198.5,125.2 198.4,124.6 198.3,124.1 198.2,123.6 198.1,123.1 197.9,122.5 197.8,122.0 197.6,121.5 197.5,121.0 197.3,120.5 197.2,120.0 197.0,119.5 196.8,119.0 196.6,118.5 196.4,118.0 196.2,117.5 196.0,117.0 195.8,116.5 195.5,116.0 195.3,115.6 195.0,115.1 194.8,114.6 194.5,114.2 194.3,113.7 194.0,113.2 193.7,112.8 193.4,112.3 193.1,111.9 192.8,111.4 192.5,111.0\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.6\"/><polyline points=\"217.0,131.0 216.9,133.4 216.8,135.9 216.5,138.3 216.1,140.7 215.6,143.1 214.9,145.5 214.2,147.8 213.3,150.1 212.4,152.4 211.3,154.6 210.2,156.8 208.9,158.9 207.5,160.9 206.1,162.9 204.5,164.8 202.9,166.6 201.2,168.3 199.4,170.0 197.5,171.6 195.6,173.1 193.5,174.5 191.5,175.8 189.3,177.0 187.1,178.1 184.9,179.0 182.6,179.9 180.3,180.7 177.9,181.4 175.5,181.9 173.1,182.4 170.7,182.7 168.3,182.9 165.8,183.0 163.4,183.0 160.9,182.8 158.5,182.6 156.1,182.2 153.7,181.7 151.3,181.2 148.9,180.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"215.0\" y=\"114.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"208.9\" y1=\"118.0\" x2=\"221.1\" y2=\"118.0\" stroke=\"#3b4ea8\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"215.0\" y=\"128.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"173.0\" y=\"199.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−</text><text x=\"191.0\" y=\"192.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3π</text><line x1=\"181.8\" y1=\"196.0\" x2=\"200.2\" y2=\"196.0\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"191.0\" y=\"206.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: A, \\(-\\dfrac{7\\pi}{5}\\), is below \\(-\\pi\\) (not principal); C and D are not \\(\\dfrac{7\\pi}{5}\\) turned by any multiple of \\(2\\pi\\) (\\(\\dfrac{2\\pi}{5}\\) and \\(\\dfrac{3\\pi}{5}\\) differ from \\(\\dfrac{7\\pi}{5}\\) by \\(\\dfrac{5\\pi}{5}=\\pi\\) and \\(\\dfrac{4\\pi}{5}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\arg(z^{7})\\)",
+              "note": "\\(7\\times\\dfrac{\\pi}{5}\\), then subtract \\(2\\pi\\) to get into \\((-\\pi,\\pi]\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q6",
+          "type": "mc",
+          "stem": "Which of the following is equivalent to \\(\\left(\\sqrt{2}\\,e^{\\frac{\\pi}{4}i}\\right)^{3}\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-2-2i\\)",
+            "\\(-2+2i\\)",
+            "\\(2-2i\\)",
+            "\\(2+2i\\)"
+          ],
+          "answer": 1,
+          "hint": "De Moivre for exponential form: \\(\\left(re^{i\\theta}\\right)^{n}=r^{n}e^{in\\theta}\\). Cube the modulus and multiply the argument by 3, then convert to \\(x+iy\\).",
+          "steps": [
+            {
+              "explain": "Cube the modulus: \\((\\sqrt2)^{3}=2\\sqrt2\\). Multiply the argument: \\(3\\times\\dfrac{\\pi}{4}=\\dfrac{3\\pi}{4}\\).",
+              "work": "\\(\\left(\\sqrt2e^{\\frac{\\pi}{4}i}\\right)^{3}=2\\sqrt2\\,e^{\\frac{3\\pi}{4}i}\\)"
+            },
+            {
+              "explain": "Convert using \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\): \\(\\cos\\dfrac{3\\pi}{4}=-\\dfrac{1}{\\sqrt2}\\) and \\(\\sin\\dfrac{3\\pi}{4}=+\\dfrac{1}{\\sqrt2}\\) (second quadrant).",
+              "work": "\\(2\\sqrt2\\left(-\\dfrac{1}{\\sqrt2}+i\\dfrac{1}{\\sqrt2}\\right)\\)"
+            },
+            {
+              "explain": "Multiply \\(2\\sqrt2\\times\\dfrac{1}{\\sqrt2}=2\\).",
+              "work": "\\(=-2+2i\\)"
+            },
+            {
+              "explain": "Check another way: \\(\\sqrt2e^{\\frac{\\pi}{4}i}=\\sqrt2\\left(\\dfrac{1}{\\sqrt2}+\\dfrac{i}{\\sqrt2}\\right)=1+i\\) and \\((1+i)^{3}=(1+i)(2i)=2i+2i^{2}=-2+2i\\) ✓. Why not the others: A, C, D have the wrong signs (the angle \\(\\dfrac{3\\pi}{4}\\) is in the 2nd quadrant: real part negative, imaginary part positive).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\left(\\sqrt{2}\\,e^{\\frac{\\pi}{4}i}\\right)^{3}\\)",
+              "note": "\\(r^{3}e^{3i\\theta}\\); \\(\\dfrac{3\\pi}{4}\\) is in quadrant 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2737,6 +2894,276 @@
           "meta": {
             "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
             "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q13c1",
+          "type": "mc",
+          "stem": "Show that, for any integer \\(n\\), \\(e^{in\\theta}+e^{-in\\theta}=2\\cos n\\theta\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&e^{in\\theta}=\\cos n\\theta+i\\sin n\\theta,\\quad e^{-in\\theta}=\\cos n\\theta-i\\sin n\\theta\\\\ &\\text{Sum}=2\\cos n\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&e^{in\\theta}=\\cos n\\theta+i\\sin n\\theta,\\quad e^{-in\\theta}=-\\cos n\\theta+i\\sin n\\theta\\\\ &\\text{Sum}=2i\\sin n\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&e^{in\\theta}=\\cos n\\theta+i\\sin n\\theta,\\quad e^{-in\\theta}=\\cos n\\theta+i\\sin n\\theta\\\\ &\\text{Sum}=2\\cos n\\theta+2i\\sin n\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&e^{in\\theta}=\\cos n\\theta+i\\sin n\\theta,\\quad e^{-in\\theta}=\\sin n\\theta-i\\cos n\\theta\\\\ &\\text{Sum}=\\cos n\\theta+\\sin n\\theta\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Euler's form: \\(e^{i\\phi}=\\cos\\phi+i\\sin\\phi\\). For \\(e^{-in\\theta}\\) use \\(\\phi=-n\\theta\\) and the facts cosine is EVEN, sine is ODD.",
+          "steps": [
+            {
+              "explain": "Write \\(e^{in\\theta}\\) with \\(\\phi=n\\theta\\).",
+              "work": "\\(e^{in\\theta}=\\cos n\\theta+i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Write \\(e^{-in\\theta}\\) with \\(\\phi=-n\\theta\\): \\(\\cos(-n\\theta)=\\cos n\\theta\\) (even) and \\(\\sin(-n\\theta)=-\\sin n\\theta\\) (odd).",
+              "work": "\\(e^{-in\\theta}=\\cos n\\theta-i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Add: the \\(i\\sin n\\theta\\) terms cancel and the cosines double.",
+              "work": "\\(e^{in\\theta}+e^{-in\\theta}=2\\cos n\\theta\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the wrong sign for the cosine; C uses \\(+i\\sin\\) for both (so the imaginary parts do not cancel); D swaps sine and cosine.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that, for any integer \\(n\\)",
+              "note": "\\(e^{i\\phi}=\\cos\\phi+i\\sin\\phi\\); cos even, sin odd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q13c2",
+          "type": "mc",
+          "stem": "By expanding \\(\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}\\), show that \\(\\cos^{5}\\theta=\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}=(2\\cos\\theta)^{5}=32\\cos^{5}\\theta\\\\ &=\\left(e^{5i\\theta}+e^{-5i\\theta}\\right)+5\\left(e^{3i\\theta}+e^{-3i\\theta}\\right)+10\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\\\ &=2\\cos5\\theta+10\\cos3\\theta+20\\cos\\theta\\ \\Rightarrow\\ \\cos^{5}\\theta=\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}=(2\\cos\\theta)^{5}=32\\cos^{5}\\theta\\\\ &=\\left(e^{5i\\theta}+e^{-5i\\theta}\\right)+5\\left(e^{3i\\theta}+e^{-3i\\theta}\\right)+10\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\\\ &=2\\cos5\\theta+10\\cos3\\theta+20\\cos\\theta\\ \\Rightarrow\\ \\cos^{5}\\theta=\\dfrac{1}{8}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}=2\\cos\\theta\\ \\text{(taking the power inside)}\\\\ &=\\left(e^{5i\\theta}+e^{-5i\\theta}\\right)+5\\left(e^{3i\\theta}+e^{-3i\\theta}\\right)+10\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\\\ &\\Rightarrow\\ \\cos^{5}\\theta=\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}=(2\\cos\\theta)^{5}=32\\cos^{5}\\theta\\\\ &=\\left(e^{5i\\theta}+e^{-5i\\theta}\\right)+5\\left(e^{3i\\theta}+e^{-3i\\theta}\\right)+5\\left(e^{i\\theta}+e^{-i\\theta}\\right)\\\\ &\\Rightarrow\\ \\cos^{5}\\theta=\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+5\\cos\\theta)\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Two ways to evaluate \\((z+z^{-1})^{5}\\): (1) it equals \\((2\\cos\\theta)^{5}\\); (2) expand with the BINOMIAL theorem (coefficients \\(1,5,10,10,5,1\\)) and pair \\(z^{k}+z^{-k}=2\\cos k\\theta\\). Equate them.",
+          "steps": [
+            {
+              "explain": "Put \\(z=e^{i\\theta}\\). By part (i) with \\(n=1\\), \\(z+z^{-1}=2\\cos\\theta\\), so the left side is \\((2\\cos\\theta)^{5}=32\\cos^{5}\\theta\\).",
+              "work": "\\(\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}=(2\\cos\\theta)^{5}=32\\cos^{5}\\theta\\)"
+            },
+            {
+              "explain": "Binomial expansion with coefficients \\(1,5,10,10,5,1\\) (row 5 of Pascal's triangle); \\(e^{i\\theta}\\cdot e^{-i\\theta}=1\\) so the powers combine.",
+              "work": "\\(e^{5i\\theta}+5e^{3i\\theta}+10e^{i\\theta}+10e^{-i\\theta}+5e^{-3i\\theta}+e^{-5i\\theta}\\)"
+            },
+            {
+              "explain": "Pair the terms with opposite exponents and use part (i): \\(e^{ik\\theta}+e^{-ik\\theta}=2\\cos k\\theta\\).",
+              "work": "\\(=2\\cos5\\theta+5(2\\cos3\\theta)+10(2\\cos\\theta)=2\\cos5\\theta+10\\cos3\\theta+20\\cos\\theta\\)"
+            },
+            {
+              "explain": "Equate and divide by 32: \\(32\\cos^{5}\\theta=2(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\).",
+              "work": "\\(\\cos^{5}\\theta=\\dfrac{2}{32}(\\ldots)=\\dfrac{1}{16}(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta)\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B divides by 8 instead of 16; C wrongly says \\((z+z^{-1})^{5}=z+z^{-1}\\) (powers do not go inside a sum); D uses coefficient 5 instead of 10 for the last pair.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By expanding \\(\\left(e^{i\\theta}+e^{-i\\theta}\\right)^{5}\\)",
+              "note": "\\(32\\cos^{5}\\theta=\\)binomial expansion paired into \\(2\\cos k\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q13c4",
+          "type": "mc",
+          "stem": "Using the result of part (ii), solve the equation \\(\\cos5\\theta+5\\cos3\\theta+9\\cos\\theta=0\\) for \\(0\\le\\theta\\le\\pi\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\theta=\\dfrac{\\pi}{3},\\ \\dfrac{\\pi}{2},\\ \\dfrac{2\\pi}{3}\\)",
+            "\\(\\theta=\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{2},\\ \\dfrac{5\\pi}{6}\\)",
+            "\\(\\theta=0,\\ \\dfrac{\\pi}{2},\\ \\pi\\)",
+            "\\(\\theta=\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "From part (ii): \\(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta=16\\cos^{5}\\theta\\). Your equation has \\(9\\cos\\theta\\), i.e. \\(10\\cos\\theta-\\cos\\theta\\), so it becomes \\(16\\cos^{5}\\theta-\\cos\\theta=0\\). Factorise — do NOT divide by \\(\\cos\\theta\\).",
+          "steps": [
+            {
+              "explain": "Rewrite \\(9\\cos\\theta=10\\cos\\theta-\\cos\\theta\\) so the left side contains \\(\\cos5\\theta+5\\cos3\\theta+10\\cos\\theta=16\\cos^{5}\\theta\\).",
+              "work": "\\(16\\cos^{5}\\theta-\\cos\\theta=0\\)"
+            },
+            {
+              "explain": "Factorise by taking out \\(\\cos\\theta\\) (dividing would lose the solution \\(\\cos\\theta=0\\)).",
+              "work": "\\(\\cos\\theta\\left(16\\cos^{4}\\theta-1\\right)=0\\)"
+            },
+            {
+              "explain": "Difference of squares: \\(16\\cos^{4}\\theta-1=(4\\cos^{2}\\theta-1)(4\\cos^{2}\\theta+1)\\). The second factor is always positive, so only \\(4\\cos^{2}\\theta-1=0\\) can give solutions.",
+              "work": "\\(\\cos\\theta=0\\quad\\text{or}\\quad\\cos^{2}\\theta=\\dfrac{1}{4}\\Rightarrow\\cos\\theta=\\pm\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Solve on \\(0\\le\\theta\\le\\pi\\): \\(\\cos\\theta=0\\Rightarrow\\theta=\\dfrac{\\pi}{2}\\); \\(\\cos\\theta=\\dfrac{1}{2}\\Rightarrow\\theta=\\dfrac{\\pi}{3}\\); \\(\\cos\\theta=-\\dfrac{1}{2}\\Rightarrow\\theta=\\dfrac{2\\pi}{3}\\).",
+              "work": "\\(\\theta=\\dfrac{\\pi}{3},\\ \\dfrac{\\pi}{2},\\ \\dfrac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\cos\\theta=\\pm\\dfrac{\\sqrt3}{2}\\); C solves \\(\\cos\\theta=\\pm1\\); D loses \\(\\dfrac{\\pi}{2}\\) by dividing by \\(\\cos\\theta\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using the result of part (ii), solve the equation",
+              "note": "\\(16\\cos^{5}\\theta-\\cos\\theta=0\\); factorise."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14c1",
+          "type": "mc",
+          "stem": "Let \\(z=\\cos\\theta+i\\sin\\theta\\). Show that \\(z^{n}+z^{-n}=2\\cos n\\theta\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&z^{n}=\\cos n\\theta+i\\sin n\\theta,\\quad z^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)=\\cos n\\theta-i\\sin n\\theta\\\\ &z^{n}+z^{-n}=2\\cos n\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&z^{n}=\\cos n\\theta+i\\sin n\\theta,\\quad z^{-n}=\\cos n\\theta+i\\sin n\\theta\\\\ &z^{n}+z^{-n}=2\\cos n\\theta+2i\\sin n\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&z^{n}=\\cos n\\theta+i\\sin n\\theta,\\quad z^{-n}=-\\cos n\\theta-i\\sin n\\theta\\\\ &z^{n}+z^{-n}=0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&z^{n}=\\cos\\theta^{n}+i\\sin\\theta^{n},\\quad z^{-n}=\\cos\\theta^{-n}+i\\sin\\theta^{-n}\\\\ &\\text{no simplification possible}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "De Moivre's theorem: \\((\\cos\\theta+i\\sin\\theta)^{n}=\\cos n\\theta+i\\sin n\\theta\\) — it also holds for NEGATIVE integers \\(n\\). Then use cosine even, sine odd: \\(\\cos(-n\\theta)=\\cos n\\theta\\) and \\(\\sin(-n\\theta)=-\\sin n\\theta\\).",
+          "steps": [
+            {
+              "explain": "De Moivre for \\(z^{n}\\).",
+              "work": "\\(z^{n}=\\cos n\\theta+i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "De Moivre for \\(z^{-n}\\) (replace \\(n\\) by \\(-n\\)).",
+              "work": "\\(z^{-n}=\\cos(-n\\theta)+i\\sin(-n\\theta)\\)"
+            },
+            {
+              "explain": "Cosine is an EVEN function and sine is ODD.",
+              "work": "\\(z^{-n}=\\cos n\\theta-i\\sin n\\theta\\)"
+            },
+            {
+              "explain": "Add: the imaginary parts cancel.",
+              "work": "\\(z^{n}+z^{-n}=2\\cos n\\theta\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the sign change on \\(\\sin\\); C negates both parts; D writes \\(\\cos\\theta^{n}\\) (a power of \\(\\theta\\), not \\(\\cos n\\theta\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(z^{n}+z^{-n}=2\\cos n\\theta\\).",
+              "note": "De Moivre with \\(n\\) and \\(-n\\); cos even, sin odd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14c2",
+          "type": "mc",
+          "stem": "Hence prove that \\(8\\cos^{4}\\theta-10\\cos^{2}\\theta+2=\\cos4\\theta-\\cos2\\theta\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\text{LHS}=8\\left[\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\right]^{4}-10\\left[\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\right]^{2}+2\\\\ &=\\dfrac{1}{2}\\left(z^{4}+z^{-4}\\right)+2\\left(z^{2}+z^{-2}\\right)+3-\\dfrac{5}{2}\\left(z^{2}+z^{-2}\\right)-5+2=\\dfrac{1}{2}\\left(z^{4}+z^{-4}\\right)-\\dfrac{1}{2}\\left(z^{2}+z^{-2}\\right)=\\cos4\\theta-\\cos2\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=8\\left[\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\right]^{4}-10\\left[\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\right]^{2}+2\\\\ &=\\dfrac{1}{2}\\left(z^{4}+z^{-4}\\right)+2\\left(z^{2}+z^{-2}\\right)+3-\\dfrac{5}{2}\\left(z^{2}+z^{-2}\\right)-5+2=\\dfrac{1}{2}\\left(z^{4}+z^{-4}\\right)+\\dfrac{1}{2}\\left(z^{2}+z^{-2}\\right)=\\cos4\\theta+\\cos2\\theta\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=8\\left[2\\left(z+z^{-1}\\right)\\right]^{4}-10\\left[2\\left(z+z^{-1}\\right)\\right]^{2}+2\\\\ &\\text{(using }\\cos\\theta=2(z+z^{-1})\\text{, wrong)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=8\\left[\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\right]^{4}-10\\left[\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\right]^{2}+2\\\\ &\\text{expanding }(z+z^{-1})^{4}=z^{4}+z^{-4}\\ \\Rightarrow\\ \\ldots\\ \\ne\\text{RHS}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "From part (i) with \\(n=1\\): \\(\\cos\\theta=\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\). Expand \\((z+z^{-1})^{4}\\) with the binomial coefficients \\(1,4,6,4,1\\) and \\((z+z^{-1})^{2}\\) with \\(1,2,1\\), then GROUP \\(z^{k}+z^{-k}=2\\cos k\\theta\\).",
+          "steps": [
+            {
+              "explain": "Let \\(z=\\cos\\theta+i\\sin\\theta\\). By (i), \\(z+z^{-1}=2\\cos\\theta\\), so \\(\\cos\\theta=\\dfrac{1}{2}\\left(z+z^{-1}\\right)\\).",
+              "work": "\\(\\cos^{4}\\theta=\\dfrac{1}{16}\\left(z+z^{-1}\\right)^{4},\\qquad\\cos^{2}\\theta=\\dfrac{1}{4}\\left(z+z^{-1}\\right)^{2}\\)"
+            },
+            {
+              "explain": "Expand using binomial coefficients: \\((z+z^{-1})^{4}=z^{4}+4z^{2}+6+4z^{-2}+z^{-4}\\) and \\((z+z^{-1})^{2}=z^{2}+2+z^{-2}\\).",
+              "work": "\\(\\left(z+z^{-1}\\right)^{4}=\\left(z^{4}+z^{-4}\\right)+4\\left(z^{2}+z^{-2}\\right)+6\\)"
+            },
+            {
+              "explain": "Substitute: \\(8\\cdot\\dfrac{1}{16}=\\dfrac{1}{2}\\) and \\(10\\cdot\\dfrac{1}{4}=\\dfrac{5}{2}\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{1}{2}\\left[\\left(z^{4}+z^{-4}\\right)+4\\left(z^{2}+z^{-2}\\right)+6\\right]-\\dfrac{5}{2}\\left[\\left(z^{2}+z^{-2}\\right)+2\\right]+2\\)"
+            },
+            {
+              "explain": "Collect: \\(z^{2}+z^{-2}\\) terms: \\(2-\\dfrac{5}{2}=-\\dfrac{1}{2}\\). Constants: \\(3-5+2=0\\).",
+              "work": "\\(=\\dfrac{1}{2}\\left(z^{4}+z^{-4}\\right)-\\dfrac{1}{2}\\left(z^{2}+z^{-2}\\right)\\)"
+            },
+            {
+              "explain": "Use part (i): \\(z^{4}+z^{-4}=2\\cos4\\theta\\) and \\(z^{2}+z^{-2}=2\\cos2\\theta\\).",
+              "work": "\\(=\\cos4\\theta-\\cos2\\theta\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B has a sign error on the middle terms (gives \\(+\\cos2\\theta\\)); C uses \\(\\cos\\theta=2(z+z^{-1})\\) (the factor is \\(\\dfrac{1}{2}\\)); D mis-expands the binomial.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence prove that",
+              "note": "\\(\\cos\\theta=\\dfrac{1}{2}(z+z^{-1})\\); expand and group \\(z^{k}+z^{-k}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4385,6 +4812,380 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q9",
+          "type": "mc",
+          "stem": "Consider the Argand diagram, where \\(z=a+ib\\).\n\nWhich of the following pairs of points in the complex plane could represent the square roots of \\(z\\)?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"125.0\" x2=\"350.0\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"258.0\" x2=\"190.0\" y2=\"16.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"125.0\" x2=\"342.2\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"125.0\" x2=\"342.2\" y2=\"129.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"16.0\" x2=\"185.5\" y2=\"23.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"16.0\" x2=\"194.5\" y2=\"23.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"117.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Rez</text><text x=\"184.0\" y=\"14.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Imz</text><text x=\"181.0\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"98.0\" cy=\"171.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"94.0\" y=\"159.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"282.0\" cy=\"79.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"290.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"282.0\" cy=\"125.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"292.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"282.0\" cy=\"161.8\" r=\"4\" fill=\"#1e293b\"/><text x=\"292.0\" y=\"175.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"190.0\" cy=\"198.6\" r=\"4\" fill=\"#1e293b\"/><text x=\"202.0\" y=\"202.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text></svg>"
+          },
+          "options": [
+            "\\(A\\) and \\(D\\)",
+            "\\(B\\) and \\(C\\)",
+            "\\(B\\) and \\(E\\)",
+            "\\(C\\) and \\(E\\)"
+          ],
+          "answer": 3,
+          "hint": "The two square roots of any complex number are NEGATIVES of each other: \\(w\\) and \\(-w\\). On the Argand diagram, negating a point reflects it through the origin \\(O\\) (rotates it by \\(180^{\\circ}\\)). Look for the pair that sits on opposite sides of \\(O\\) in a straight line through \\(O\\).",
+          "steps": [
+            {
+              "explain": "If \\(w^{2}=z\\) then \\((-w)^{2}=z\\) too, so the square roots are \\(w\\) and \\(-w\\): \\(w_{2}=-w_{1}\\).",
+              "work": "\\(w_{1}^{2}=z\\ \\Rightarrow\\ (-w_{1})^{2}=z\\ \\Rightarrow\\ w_{2}=-w_{1}\\)"
+            },
+            {
+              "explain": "Geometrically \\(-w\\) is the point obtained by going from \\(w\\) straight through \\(O\\) to the same distance on the other side (rotation by \\(\\pi\\) about \\(O\\)). So the two roots and \\(O\\) are COLLINEAR with \\(O\\) in the middle (the midpoint).",
+              "work": "\\(w_{1}+w_{2}=0\\ \\Rightarrow\\ O=\\text{midpoint of }w_{1}w_{2}\\)"
+            },
+            {
+              "explain": "Test each pair using the diagram: A (on the negative imaginary axis) and D (on the positive real axis) are not opposite; B (below the axis, right) and C (below the axis, left) have the SAME vertical side, so one cannot be minus the other; B (right, below) and E (right, above) are both on the right of \\(O\\).",
+              "work": "\\(A,D\\ \\times\\qquad B,C\\ \\times\\qquad B,E\\ \\times\\)"
+            },
+            {
+              "explain": "C is to the LEFT of \\(O\\) and BELOW the real axis; E is to the RIGHT of \\(O\\) and ABOVE it — they are reflections of each other through \\(O\\), so \\(E=-C\\) (the line \\(CE\\) passes through \\(O\\)).",
+              "work": "\\(C\\ \\text{and}\\ E:\\ E=-C\\ \\checkmark\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"125.0\" x2=\"350.0\" y2=\"125.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"258.0\" x2=\"190.0\" y2=\"16.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"125.0\" x2=\"342.2\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"125.0\" x2=\"342.2\" y2=\"129.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"16.0\" x2=\"185.5\" y2=\"23.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"16.0\" x2=\"194.5\" y2=\"23.8\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"348.0\" y=\"117.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Rez</text><text x=\"184.0\" y=\"14.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Imz</text><text x=\"181.0\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><line x1=\"98.0\" y1=\"171.0\" x2=\"282.0\" y2=\"79.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><line x1=\"190.0\" y1=\"125.0\" x2=\"282.0\" y2=\"79.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"125.0\" x2=\"98.0\" y2=\"171.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"290.0\" y=\"83.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><circle cx=\"98.0\" cy=\"171.0\" r=\"5.2\" fill=\"#dc2626\"/><text x=\"94.0\" y=\"159.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"282.0\" cy=\"79.0\" r=\"5.2\" fill=\"#dc2626\"/><text x=\"290.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">E</text><circle cx=\"282.0\" cy=\"125.0\" r=\"4\" fill=\"#d97706\"/><text x=\"292.0\" y=\"137.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><circle cx=\"282.0\" cy=\"161.8\" r=\"4\" fill=\"#d97706\"/><text x=\"292.0\" y=\"175.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"190.0\" cy=\"198.6\" r=\"4\" fill=\"#d97706\"/><text x=\"202.0\" y=\"202.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"34.0\" y=\"40.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E = −C</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: roots must be opposite points through \\(O\\); the other three pairs do not have that property, so only “\\(C\\) and \\(E\\)” is possible.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "square roots of \\(z\\)",
+              "note": "Square roots: \\(w\\) and \\(-w\\) — opposite through \\(O\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14c1",
+          "type": "mc",
+          "stem": "\\(1\\), \\(\\omega\\) and \\(\\omega^{2}\\) are the three cube roots of unity. Show that \\(1+\\omega+\\omega^{2}=0\\) where \\(\\omega\\) is a non-real root of unity.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\omega^{3}=1\\Rightarrow\\omega^{3}-1=0\\Rightarrow(\\omega-1)(\\omega^{2}+\\omega+1)=0\\\\ &\\omega\\ne1\\Rightarrow\\omega-1\\ne0\\Rightarrow1+\\omega+\\omega^{2}=0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\omega^{3}=1\\Rightarrow\\omega^{3}-1=0\\Rightarrow(\\omega-1)(\\omega^{2}+\\omega+1)=0\\\\ &\\text{so }\\omega=1\\ \\text{or}\\ 1+\\omega+\\omega^{2}=0\\ \\Rightarrow\\ 1+\\omega+\\omega^{2}=0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\omega^{3}=1\\Rightarrow\\omega^{3}-1=0\\Rightarrow(\\omega-1)^{3}=0\\\\ &\\Rightarrow\\omega=1\\ \\Rightarrow\\ 1+1+1=3\\ne0\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\omega^{3}=1\\Rightarrow\\omega^{2}=\\dfrac{1}{\\omega}\\\\ &\\Rightarrow1+\\omega+\\dfrac{1}{\\omega}=0\\ \\text{(no reason given)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\omega\\) satisfies \\(\\omega^{3}=1\\), so \\(\\omega^{3}-1=0\\). Factorise the difference of cubes \\(a^{3}-b^{3}=(a-b)(a^{2}+ab+b^{2})\\). Since \\(\\omega\\ne1\\), the factor \\(\\omega-1\\) is NOT zero, so the other factor must be.",
+          "steps": [
+            {
+              "explain": "Cube roots of unity satisfy \\(z^{3}=1\\), so \\(\\omega^{3}-1=0\\).",
+              "work": "\\(\\omega^{3}-1=0\\)"
+            },
+            {
+              "explain": "Factorise (difference of cubes).",
+              "work": "\\((\\omega-1)(\\omega^{2}+\\omega+1)=0\\)"
+            },
+            {
+              "explain": "\\(\\omega\\) is NON-REAL, so \\(\\omega\\ne1\\) and therefore \\(\\omega-1\\ne0\\). A product is zero only if a factor is zero, so the second factor must be zero.",
+              "work": "\\(1+\\omega+\\omega^{2}=0\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B allows \\(\\omega=1\\) (which is excluded) so cannot conclude; C expands \\(\\omega^{3}-1\\) as \\((\\omega-1)^{3}\\) (false); D gives no justification.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(1+\\omega+\\omega^{2}=0\\)",
+              "note": "\\(\\omega^{3}-1=(\\omega-1)(\\omega^{2}+\\omega+1)\\), \\(\\omega\\ne1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14c2",
+          "type": "mc",
+          "stem": "\\(1\\), \\(\\omega\\) and \\(\\omega^{2}\\) are the three cube roots of unity. Simplify each of the expressions \\(\\left(1+3\\omega+\\omega^{2}\\right)^{2}\\) and \\(\\left(1+\\omega+3\\omega^{2}\\right)^{2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(4\\omega^{2}\\) and \\(4\\omega\\)",
+            "\\(4\\omega\\) and \\(4\\omega^{2}\\)",
+            "\\(-2\\omega\\) and \\(-2\\omega^{2}\\)",
+            "\\(2\\omega^{2}\\) and \\(2\\omega\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(1+\\omega+\\omega^{2}=0\\) to simplify INSIDE the bracket first: \\(1+3\\omega+\\omega^{2}=(1+\\omega+\\omega^{2})+2\\omega\\). Then square and use \\(\\omega^{3}=1\\).",
+          "steps": [
+            {
+              "explain": "Split off a zero: \\(1+3\\omega+\\omega^{2}=(1+\\omega+\\omega^{2})+2\\omega=0+2\\omega\\).",
+              "work": "\\(1+3\\omega+\\omega^{2}=2\\omega\\)"
+            },
+            {
+              "explain": "Square: \\((2\\omega)^{2}=4\\omega^{2}\\).",
+              "work": "\\(\\left(1+3\\omega+\\omega^{2}\\right)^{2}=4\\omega^{2}\\)"
+            },
+            {
+              "explain": "Similarly \\(1+\\omega+3\\omega^{2}=(1+\\omega+\\omega^{2})+2\\omega^{2}=2\\omega^{2}\\).",
+              "work": "\\(1+\\omega+3\\omega^{2}=2\\omega^{2}\\)"
+            },
+            {
+              "explain": "Square and use \\(\\omega^{3}=1\\) to reduce \\(\\omega^{4}=\\omega^{3}\\cdot\\omega=\\omega\\).",
+              "work": "\\(\\left(1+\\omega+3\\omega^{2}\\right)^{2}=4\\omega^{4}=4\\omega\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps the two results; C and D make arithmetic slips (\\(\\left(2\\omega\\right)^{2}\\ne2\\omega^{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify each of the expressions",
+              "note": "\\(1+\\omega+\\omega^{2}=0\\) inside the bracket first; \\(\\omega^{3}=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14c3",
+          "type": "mc",
+          "stem": "\\(1\\), \\(\\omega\\) and \\(\\omega^{2}\\) are the three cube roots of unity. Find \\(\\left(1+3\\omega+\\omega^{2}\\right)^{2}+\\left(1+\\omega+3\\omega^{2}\\right)^{2}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-4\\)",
+            "\\(4\\)",
+            "\\(0\\)",
+            "\\(16\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (ii): the two squares are \\(4\\omega^{2}\\) and \\(4\\omega\\). Then factor \\(4\\) and use \\(1+\\omega+\\omega^{2}=0\\).",
+          "steps": [
+            {
+              "explain": "From (ii) the two terms are \\(4\\omega^{2}\\) and \\(4\\omega\\).",
+              "work": "\\(4\\omega^{2}+4\\omega\\)"
+            },
+            {
+              "explain": "Factor out 4.",
+              "work": "\\(=4\\left(\\omega+\\omega^{2}\\right)\\)"
+            },
+            {
+              "explain": "From (i), \\(\\omega+\\omega^{2}=-1\\).",
+              "work": "\\(=4(-1)=-4\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the minus sign; C uses \\(\\omega+\\omega^{2}=0\\); D is the product from part (iv), not the sum.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(\\left(1+3\\omega+\\omega^{2}\\right)^{2}+\\left(1+\\omega+3\\omega^{2}\\right)^{2}\\)",
+              "note": "\\(4\\omega^{2}+4\\omega=4(\\omega+\\omega^{2})=-4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14c4",
+          "type": "mc",
+          "stem": "\\(1\\), \\(\\omega\\) and \\(\\omega^{2}\\) are the three cube roots of unity. Find the product of \\(\\left(1+3\\omega+\\omega^{2}\\right)^{2}\\) and \\(\\left(1+\\omega+3\\omega^{2}\\right)^{2}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(16\\)",
+            "\\(-16\\)",
+            "\\(4\\)",
+            "\\(16\\omega\\)"
+          ],
+          "answer": 0,
+          "hint": "Use part (ii) again: multiply \\(4\\omega^{2}\\) and \\(4\\omega\\), then use \\(\\omega^{3}=1\\).",
+          "steps": [
+            {
+              "explain": "Multiply the two simplified results.",
+              "work": "\\(4\\omega^{2}\\times4\\omega=16\\omega^{3}\\)"
+            },
+            {
+              "explain": "\\(\\omega\\) is a cube root of unity: \\(\\omega^{3}=1\\).",
+              "work": "\\(16\\omega^{3}=16\\times1=16\\)"
+            },
+            {
+              "explain": "Why not the others: B has a wrong sign; C forgets that \\(4\\times4=16\\); D forgets that \\(\\omega^{3}=1\\) (it leaves \\(\\omega\\) in the answer). Note: the sum is \\(-4\\) and the product \\(16\\), so these two squares are the roots of \\(t^{2}+4t+16=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the product of",
+              "note": "\\(4\\omega^{2}\\cdot4\\omega=16\\omega^{3}\\), \\(\\omega^{3}=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11b",
+          "type": "mc",
+          "stem": "The complex number \\(z^{2}\\) is shown on the diagram below. Given that \\(z\\) lies in the fourth quadrant only, find \\(z\\) in mod-arg form.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"110.0\" x2=\"370.0\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"260.0\" x2=\"190.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"110.0\" x2=\"363.1\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"110.0\" x2=\"363.1\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"12.0\" x2=\"186.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"12.0\" x2=\"194.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"368.0\" y=\"126.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Re</text><text x=\"198.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Im</text><line x1=\"190.0\" y1=\"110.0\" x2=\"138.0\" y2=\"200.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"138.0\" cy=\"200.1\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"132.0\" y=\"216.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z²</text><polyline points=\"230.0,110.0 229.9,112.1 229.8,114.2 229.5,116.3 229.1,118.3 228.6,120.4 228.0,122.4 227.3,124.3 226.5,126.3 225.6,128.2 224.6,130.0 223.5,131.8 222.4,133.5 221.1,135.2 219.7,136.8 218.3,138.3 216.8,139.7 215.2,141.1 213.5,142.4 211.8,143.5 210.0,144.6 208.2,145.6 206.3,146.5 204.3,147.3 202.4,148.0 200.4,148.6 198.3,149.1 196.3,149.5 194.2,149.8 192.1,149.9 190.0,150.0 187.9,149.9 185.8,149.8 183.7,149.5 181.7,149.1 179.6,148.6 177.6,148.0 175.7,147.3 173.7,146.5 171.8,145.6 170.0,144.6\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><text x=\"206.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2π</text><line x1=\"196.5\" y1=\"145.0\" x2=\"215.5\" y2=\"145.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"206.0\" y=\"155.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"156.0\" y=\"159.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"372.0\" y=\"262.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+          },
+          "options": [
+            "\\(2\\left(\\cos\\left(-\\dfrac{\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{\\pi}{3}\\right)\\right)\\)",
+            "\\(2\\left(\\cos\\dfrac{\\pi}{3}+i\\sin\\dfrac{\\pi}{3}\\right)\\)",
+            "\\(4\\left(\\cos\\left(-\\dfrac{\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{\\pi}{3}\\right)\\right)\\)",
+            "\\(2\\left(\\cos\\dfrac{2\\pi}{3}+i\\sin\\dfrac{2\\pi}{3}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Read \\(z^{2}\\) off the diagram: modulus \\(4\\), argument \\(-\\dfrac{2\\pi}{3}\\) (measured CLOCKWISE from the positive real axis into the 3rd quadrant). Square root: SQUARE-ROOT the modulus and HALVE the argument. The two roots are opposite each other; choose the one in quadrant 4.",
+          "steps": [
+            {
+              "explain": "From the diagram: the angle \\(\\dfrac{2\\pi}{3}\\) is drawn clockwise from the positive \\(\\mathrm{Re}\\) axis to the ray, so \\(\\arg z^{2}=-\\dfrac{2\\pi}{3}\\), and \\(|z^{2}|=4\\).",
+              "work": "\\(z^{2}=4\\left(\\cos\\left(-\\dfrac{2\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{2\\pi}{3}\\right)\\right)\\)"
+            },
+            {
+              "explain": "Take the square root: \\(\\sqrt4=2\\) and halve the argument: \\(-\\dfrac{2\\pi}{3}\\div2=-\\dfrac{\\pi}{3}\\).",
+              "work": "\\(z=2\\left(\\cos\\left(-\\dfrac{\\pi}{3}\\right)+i\\sin\\left(-\\dfrac{\\pi}{3}\\right)\\right)\\)"
+            },
+            {
+              "explain": "The other square root is \\(-z\\): its argument is \\(-\\dfrac{\\pi}{3}+\\pi=\\dfrac{2\\pi}{3}\\), which is in the 2nd quadrant. The question says \\(z\\) is in the FOURTH quadrant only, so we take \\(\\arg z=-\\dfrac{\\pi}{3}\\) (\\(-60^{\\circ}\\): right and down).",
+              "work": "\\(z=2\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 270\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"110.0\" x2=\"370.0\" y2=\"110.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"260.0\" x2=\"190.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"110.0\" x2=\"363.1\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"110.0\" x2=\"363.1\" y2=\"114.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"12.0\" x2=\"186.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"12.0\" x2=\"194.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"368.0\" y=\"126.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Re</text><text x=\"198.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Im</text><line x1=\"190.0\" y1=\"110.0\" x2=\"138.0\" y2=\"200.1\" stroke=\"#94a3b8\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"138.0\" cy=\"200.1\" r=\"4.5\" fill=\"#94a3b8\"/><text x=\"132.0\" y=\"216.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z²</text><line x1=\"190.0\" y1=\"110.0\" x2=\"216.0\" y2=\"155.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><circle cx=\"216.0\" cy=\"155.0\" r=\"5.5\" fill=\"#047857\"/><text x=\"226.0\" y=\"169.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><polyline points=\"220.0,110.0 220.0,110.8 220.0,111.6 219.9,112.4 219.8,113.1 219.7,113.9 219.6,114.7 219.5,115.5 219.3,116.2 219.2,117.0 219.0,117.8 218.8,118.5 218.5,119.3 218.3,120.0 218.0,120.8 217.7,121.5 217.4,122.2 217.1,122.9 216.7,123.6 216.4,124.3 216.0,125.0 215.6,125.7 215.2,126.3 214.7,127.0 214.3,127.6 213.8,128.3 213.3,128.9 212.8,129.5 212.3,130.1 211.8,130.7 211.2,131.2 210.7,131.8 210.1,132.3 209.5,132.8 208.9,133.3 208.3,133.8 207.6,134.3 207.0,134.7 206.3,135.2 205.7,135.6 205.0,136.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2.4\"/><text x=\"240.0\" y=\"117.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"233.7\" y1=\"121.0\" x2=\"246.3\" y2=\"121.0\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"195.0\" y=\"126.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(z^{2}\\) has modulus \\(2^{2}=4\\) and argument \\(2\\times\\left(-\\dfrac{\\pi}{3}\\right)=-\\dfrac{2\\pi}{3}\\) ✓. Why not the others: B has the wrong sign (quadrant 1); C keeps the modulus 4 (forgot the square root); D is the OTHER root (quadrant 2).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(z\\) in mod-arg form",
+              "note": "\\(\\sqrt{\\text{modulus}}\\), HALF the argument; pick quadrant 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q16b2",
+          "type": "mc",
+          "stem": "Hence solve \\(\\left(\\dfrac{z-1}{z+1}\\right)^{8}=-1\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(z=\\pm i\\cot\\dfrac{(2k+1)\\pi}{16}\\), i.e. \\(\\pm i\\cot\\dfrac{\\pi}{16},\\ \\pm i\\cot\\dfrac{3\\pi}{16},\\ \\pm i\\cot\\dfrac{5\\pi}{16},\\ \\pm i\\cot\\dfrac{7\\pi}{16}\\)",
+            "\\(z=\\pm i\\tan\\dfrac{(2k+1)\\pi}{16}\\), i.e. \\(\\pm i\\tan\\dfrac{\\pi}{16},\\ \\pm i\\tan\\dfrac{3\\pi}{16},\\ \\pm i\\tan\\dfrac{5\\pi}{16},\\ \\pm i\\tan\\dfrac{7\\pi}{16}\\)",
+            "\\(z=\\pm i\\cot\\dfrac{k\\pi}{8}\\) for \\(k=1,2,3,4\\)",
+            "\\(z=\\pm i\\cot\\dfrac{(2k+1)\\pi}{8}\\), i.e. \\(\\pm i\\cot\\dfrac{\\pi}{8},\\ \\pm i\\cot\\dfrac{3\\pi}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Let \\(w=\\dfrac{z-1}{z+1}\\) so \\(w^{8}=-1\\): the 8th roots of \\(-1\\) lie on the unit circle at angles \\(\\theta=\\dfrac{(2k+1)\\pi}{8}\\). Solve \\(w=\\dfrac{z-1}{z+1}\\) for \\(z\\): \\(z=\\dfrac{1+w}{1-w}\\) — exactly part (i)! Then \\(z=i\\cot\\dfrac\\theta2\\).",
+          "steps": [
+            {
+              "explain": "Put \\(w=\\dfrac{z-1}{z+1}\\). Then \\(w^{8}=-1=e^{i(\\pi+2k\\pi)}\\).",
+              "work": "\\(w^{8}=-1=e^{i(2k+1)\\pi}\\)"
+            },
+            {
+              "explain": "Take the 8th root: \\(w=e^{i\\theta}\\) with \\(\\theta=\\dfrac{(2k+1)\\pi}{8}\\). Principal arguments: \\(k=-4,-3,\\dots,3\\) (8 roots), all on the UNIT circle.",
+              "work": "\\(w=e^{i\\frac{(2k+1)\\pi}{8}},\\qquad k=-4,\\dots,3\\)"
+            },
+            {
+              "explain": "Solve \\(w=\\dfrac{z-1}{z+1}\\) for \\(z\\): \\(w(z+1)=z-1\\Rightarrow wz+w=z-1\\Rightarrow1+w=z(1-w)\\).",
+              "work": "\\(z=\\dfrac{1+w}{1-w}\\)"
+            },
+            {
+              "explain": "This is exactly part (i) (valid because \\(|w|=1\\)): \\(z=i\\cot\\dfrac\\theta2=i\\cot\\dfrac{(2k+1)\\pi}{16}\\).",
+              "work": "\\(z=i\\cot\\dfrac{(2k+1)\\pi}{16}\\)"
+            },
+            {
+              "explain": "The 8 values of \\(k\\) give angles \\(\\pm\\dfrac{\\pi}{16},\\pm\\dfrac{3\\pi}{16},\\pm\\dfrac{5\\pi}{16},\\pm\\dfrac{7\\pi}{16}\\). Since \\(\\cot(-x)=-\\cot x\\), the solutions come in \\(\\pm\\) pairs.",
+              "work": "\\(z=\\pm i\\cot\\dfrac{\\pi}{16},\\ \\pm i\\cot\\dfrac{3\\pi}{16},\\ \\pm i\\cot\\dfrac{5\\pi}{16},\\ \\pm i\\cot\\dfrac{7\\pi}{16}\\)"
+            },
+            {
+              "explain": "All solutions are purely imaginary: they lie on the \\(y\\)-axis (the perpendicular bisector of \\(-1\\) and \\(1\\), since \\(|z-1|=|z+1|\\) when \\(|w|=1\\)). Why not the others: B uses \\(\\tan\\); C uses the wrong angles (8th roots of \\(+1\\), not \\(-1\\)) and gives only 4 values; D gives only 4 of the 8 roots.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence solve",
+              "note": "\\(w^{8}=-1\\); \\(z=\\dfrac{1+w}{1-w}=i\\cot\\dfrac\\theta2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

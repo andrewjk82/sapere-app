@@ -126,6 +126,124 @@
               "note": "First get μ = tan α. Then friction can act either way: write one inequality for each direction."
             }
           ]
+        },
+        {
+          "id": "hillsgrammar-25-4u-q13e1",
+          "type": "mc",
+          "stem": "A tiler is working on the roof of a house which has an angle to the horizontal of \\(30^{\\circ}\\) on both sides as shown. The tiler uses a rope and pulley to move a 50-kilogram box 3 metres up the roof, with a 60-kilogram counterweight attached to the other end. Both masses are initially at rest. When the masses are released, the 60-kilogram mass slides down the roof until it hits the safety stop, pulling the 50-kilogram up the roof exactly 3 metres. Assume that there is no friction and no air resistance. The acceleration due to gravity is \\(10\\ \\mathrm{m\\,s^{-2}}\\). Prove that \\(v=\\dfrac{5t}{11}\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 250\" width=\"100%\" height=\"auto\" style=\"max-width:470px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"215.0\" x2=\"430.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"215.0\" x2=\"235.0\" y2=\"95.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"95.0\" x2=\"430.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"237\" cy=\"83\" r=\"9\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><g transform=\"translate(133.6,157.4) rotate(-31.6)\"><rect x=\"-24\" y=\"-34\" width=\"48\" height=\"34\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"0\" y=\"-13\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\">60 kg</text></g><g transform=\"translate(367.6,176.6) rotate(31.6)\"><rect x=\"-24\" y=\"-34\" width=\"48\" height=\"34\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"0\" y=\"-13\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\">50 kg</text></g><g transform=\"translate(54.0,206.4) rotate(-31.6)\"><rect x=\"-14\" y=\"-24\" width=\"28\" height=\"24\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/></g><text x=\"30.0\" y=\"178.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Safety</text><text x=\"30.0\" y=\"190.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">stop</text><text x=\"92.0\" y=\"208.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"398.0\" y=\"208.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><line x1=\"133.6\" y1=\"157.4\" x2=\"133.6\" y2=\"157.4\" stroke=\"#1e293b\" stroke-width=\"0.1\" stroke-linecap=\"round\"/><line x1=\"154.0\" y1=\"144.8\" x2=\"226.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"347.2\" y1=\"164.0\" x2=\"246.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"272.6\" y1=\"95.4\" x2=\"384.5\" y2=\"162.1\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"356.5\" y=\"120.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3 metres</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&60g\\sin30^{\\circ}-T=60a,\\quad T-50g\\sin30^{\\circ}=50a\\\\ &\\Rightarrow(60-50)\\cdot5=110a\\Rightarrow a=\\dfrac{5}{11}\\Rightarrow v=\\dfrac{5}{11}t\\ \\ (v=0\\text{ at }t=0)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&60g-T=60a,\\quad T-50g=50a\\\\ &\\Rightarrow10\\cdot10=110a\\Rightarrow a=\\dfrac{10}{11}\\Rightarrow v=\\dfrac{10}{11}t\\end{aligned}\\)",
+            "\\(\\begin{aligned}&60g\\sin30^{\\circ}-T=60a,\\quad T-50g\\sin30^{\\circ}=50a\\\\ &\\Rightarrow(60+50)\\cdot5=110a\\Rightarrow a=5\\Rightarrow v=5t\\end{aligned}\\)",
+            "\\(\\begin{aligned}&60g\\cos30^{\\circ}-T=60a,\\quad T-50g\\cos30^{\\circ}=50a\\\\ &\\Rightarrow10\\cdot10\\cdot\\dfrac{\\sqrt3}{2}=110a\\Rightarrow v=\\dfrac{5\\sqrt3}{11}t\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw a force diagram for EACH mass along its slope. The component of weight DOWN a \\(30^{\\circ}\\) slope is \\(mg\\sin30^{\\circ}=\\dfrac{mg}{2}\\). The rope tension \\(T\\) is the same on both sides and both masses have the same acceleration \\(a\\). Add the two equations to eliminate \\(T\\).",
+          "steps": [
+            {
+              "explain": "Weight component along the slope: \\(mg\\sin30^{\\circ}\\) (with \\(\\sin30^{\\circ}=\\dfrac{1}{2}\\)). The 60 kg mass moves DOWN its slope; the 50 kg mass moves UP its slope; the rope (tension \\(T\\), same throughout) links them so both have acceleration \\(a\\) (red arrows).",
+              "work": "\\(60g\\sin30^{\\circ}=300\\ \\text{N},\\qquad50g\\sin30^{\\circ}=250\\ \\text{N}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 470 250\" width=\"100%\" height=\"auto\" style=\"max-width:470px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"215.0\" x2=\"430.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"215.0\" x2=\"235.0\" y2=\"95.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"235.0\" y1=\"95.0\" x2=\"430.0\" y2=\"215.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"237\" cy=\"83\" r=\"9\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><g transform=\"translate(133.6,157.4) rotate(-31.6)\"><rect x=\"-24\" y=\"-34\" width=\"48\" height=\"34\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"0\" y=\"-13\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\">60 kg</text></g><g transform=\"translate(367.6,176.6) rotate(31.6)\"><rect x=\"-24\" y=\"-34\" width=\"48\" height=\"34\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"0\" y=\"-13\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\">50 kg</text></g><g transform=\"translate(54.0,206.4) rotate(-31.6)\"><rect x=\"-14\" y=\"-24\" width=\"28\" height=\"24\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/></g><text x=\"30.0\" y=\"178.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Safety</text><text x=\"30.0\" y=\"190.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">stop</text><text x=\"92.0\" y=\"208.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"398.0\" y=\"208.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><line x1=\"133.6\" y1=\"157.4\" x2=\"133.6\" y2=\"157.4\" stroke=\"#1e293b\" stroke-width=\"0.1\" stroke-linecap=\"round\"/><line x1=\"154.0\" y1=\"144.8\" x2=\"226.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"347.2\" y1=\"164.0\" x2=\"246.0\" y2=\"81.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"272.6\" y1=\"95.4\" x2=\"384.5\" y2=\"162.1\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"356.5\" y=\"120.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3 metres</text><line x1=\"129.6\" y1=\"165.4\" x2=\"90.4\" y2=\"189.5\" stroke=\"#d97706\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"90.4\" y1=\"189.5\" x2=\"94.7\" y2=\"197.4\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"90.4\" y1=\"189.5\" x2=\"99.4\" y2=\"189.8\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"73.6\" y=\"165.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><line x1=\"375.6\" y1=\"182.6\" x2=\"336.4\" y2=\"158.5\" stroke=\"#3b4ea8\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"336.4\" y1=\"158.5\" x2=\"340.7\" y2=\"166.4\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"336.4\" y1=\"158.5\" x2=\"345.4\" y2=\"158.7\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"315.6\" y=\"158.6\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text></svg>"
+              }
+            },
+            {
+              "explain": "Newton's second law \\(F_{net}=ma\\) for the 60 kg mass (down the slope is positive): weight component \\(-\\) tension \\(=60a\\).",
+              "work": "\\(300-T=60a\\quad(1)\\)"
+            },
+            {
+              "explain": "Newton's second law for the 50 kg mass (up the slope is positive): tension \\(-\\) weight component \\(=50a\\).",
+              "work": "\\(T-250=50a\\quad(2)\\)"
+            },
+            {
+              "explain": "Add (1) and (2): \\(T\\) cancels.",
+              "work": "\\(300-250=110a\\ \\Rightarrow\\ a=\\dfrac{50}{110}=\\dfrac{5}{11}\\ \\text{m\\,s}^{-2}\\)"
+            },
+            {
+              "explain": "\\(a=\\dfrac{dv}{dt}\\) is constant, so \\(v=\\dfrac{5}{11}t+c\\). Released from rest: \\(v=0\\) when \\(t=0\\), so \\(c=0\\).",
+              "work": "\\(v=\\dfrac{5t}{11}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B uses the full weights (it forgets the slope, i.e. \\(\\sin30^{\\circ}\\)); C adds the masses in the net force (they act in opposite directions, so they must be subtracted); D uses \\(\\cos30^{\\circ}\\) (that is the component perpendicular to the slope, balanced by the normal force).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Force diagram: \\(mg\\sin30^{\\circ}\\) along each slope; add the two equations."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q13e2",
+          "type": "mc",
+          "stem": "A 50-kilogram box is pulled up a roof by a 60-kilogram counterweight through a rope and pulley, starting at rest, with \\(v=\\dfrac{5t}{11}\\). Hence, or otherwise, find the time it takes for the 50-kilogram mass to move 3 metres up the roof, correct to 1 decimal place.",
+          "difficulty": "medium",
+          "options": [
+            "\\(3.6\\) s",
+            "\\(2.3\\) s",
+            "\\(3.3\\) s",
+            "\\(13.2\\) s"
+          ],
+          "answer": 0,
+          "hint": "Integrate \\(v=\\dfrac{dx}{dt}=\\dfrac{5t}{11}\\) to get the displacement \\(x(t)\\) (start \\(x=0\\) at \\(t=0\\)), then put \\(x=3\\) and solve for \\(t\\).",
+          "steps": [
+            {
+              "explain": "\\(v=\\dfrac{dx}{dt}\\), so integrate with respect to \\(t\\): \\(\\int\\dfrac{5t}{11}dt=\\dfrac{5t^{2}}{22}+c\\). At \\(t=0\\) the box is at \\(x=0\\), so \\(c=0\\).",
+              "work": "\\(x=\\dfrac{5t^{2}}{22}\\)"
+            },
+            {
+              "explain": "The box has moved 3 metres when \\(x=3\\).",
+              "work": "\\(3=\\dfrac{5t^{2}}{22}\\)"
+            },
+            {
+              "explain": "Solve for \\(t^{2}\\): multiply by \\(\\dfrac{22}{5}\\).",
+              "work": "\\(t^{2}=\\dfrac{66}{5}=13.2\\)"
+            },
+            {
+              "explain": "Take the positive root (time cannot be negative).",
+              "work": "\\(t=\\sqrt{13.2}=3.633\\ldots\\approx3.6\\ \\text{s}\\)"
+            },
+            {
+              "explain": "Why not the others: D \\(=13.2\\) forgets the square root; B and C use a wrong constant (e.g. \\(\\dfrac{5t^{2}}{11}\\), forgetting the \\(\\dfrac{1}{2}\\) from integrating \\(t\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the time it takes for the 50-kilogram mass to move 3 metres up the roof",
+              "note": "\\(x=\\int\\dfrac{5t}{11}dt=\\dfrac{5t^{2}}{22}\\); set \\(x=3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1462,6 +1580,125 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q15b",
+          "type": "mc",
+          "stem": "A cruise ship needs 24 metres of water to enter a harbour. At low tide the harbour is 16 metres deep and at high tide the depth is 28 metres. Low tide occurs at 10 a.m. and high tide occurs at 4 p.m. Assume the tide rise and fall in simple harmonic motion, find the earliest time the ship can enter the harbour.",
+          "difficulty": "hard",
+          "options": [
+            "About \\(1{:}39\\) p.m.",
+            "1 p.m.",
+            "About \\(12{:}21\\) p.m.",
+            "About \\(2{:}39\\) p.m."
+          ],
+          "answer": 0,
+          "hint": "SHM: depth \\(=\\) centre \\(\\pm\\) amplitude \\(\\times\\cos\\) (or \\(\\sin\\)). Find the centre \\(=\\dfrac{16+28}{2}\\), amplitude \\(=\\dfrac{28-16}{2}\\), and the period (low to high is HALF a period). Measure \\(t\\) from low tide (10 a.m.), where cosine starts at its minimum.",
+          "steps": [
+            {
+              "explain": "Centre of motion \\(=\\dfrac{16+28}{2}=22\\) m; amplitude \\(=\\dfrac{28-16}{2}=6\\) m.",
+              "work": "\\(\\text{centre}=22,\\qquad a=6\\)"
+            },
+            {
+              "explain": "Low tide (10 a.m.) to high tide (4 p.m.) is 6 hours = HALF a period, so the period is \\(T=12\\) h and \\(n=\\dfrac{2\\pi}{T}=\\dfrac{\\pi}{6}\\).",
+              "work": "\\(T=12,\\qquad n=\\dfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Let \\(t\\) = hours after 10 a.m. At \\(t=0\\) the depth is lowest, so use \\(-\\cos\\): \\(d=22-6\\cos\\dfrac{\\pi t}{6}\\). Check: \\(t=0\\Rightarrow16\\) ✓; \\(t=6\\Rightarrow28\\) ✓.",
+              "work": "\\(d(t)=22-6\\cos\\left(\\dfrac{\\pi t}{6}\\right)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 250\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"50.0\" y1=\"215.0\" x2=\"401.0\" y2=\"215.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"215.0\" x2=\"50.0\" y2=\"85.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"401.0\" y1=\"215.0\" x2=\"394.1\" y2=\"211.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"401.0\" y1=\"215.0\" x2=\"394.1\" y2=\"219.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"85.0\" x2=\"46.0\" y2=\"91.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"50.0\" y1=\"85.0\" x2=\"54.0\" y2=\"91.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"401.0\" y=\"247.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t (hours after 10 a.m.)</text><text x=\"58.0\" y=\"83.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">depth (m)</text><polyline points=\"50.0,176.0 52.6,175.9 55.2,175.8 57.8,175.5 60.4,175.1 63.0,174.7 65.6,174.1 68.2,173.4 70.8,172.6 73.4,171.7 76.0,170.8 78.6,169.7 81.2,168.6 83.8,167.3 86.4,166.0 89.0,164.6 91.6,163.1 94.2,161.5 96.8,159.9 99.4,158.2 102.0,156.5 104.6,154.7 107.2,152.9 109.8,151.0 112.4,149.1 115.0,147.1 117.6,145.1 120.2,143.1 122.8,141.1 125.4,139.0 128.0,137.0 130.6,135.0 133.2,132.9 135.8,130.9 138.4,128.9 141.0,126.9 143.6,124.9 146.2,123.0 148.8,121.1 151.4,119.3 154.0,117.5 156.6,115.8 159.2,114.1 161.8,112.5 164.4,110.9 167.0,109.4 169.6,108.0 172.2,106.7 174.8,105.4 177.4,104.3 180.0,103.2 182.6,102.3 185.2,101.4 187.8,100.6 190.4,99.9 193.0,99.3 195.6,98.9 198.2,98.5 200.8,98.2 203.4,98.1 206.0,98.0 208.6,98.1 211.2,98.2 213.8,98.5 216.4,98.9 219.0,99.3 221.6,99.9 224.2,100.6 226.8,101.4 229.4,102.3 232.0,103.2 234.6,104.3 237.2,105.4 239.8,106.7 242.4,108.0 245.0,109.4 247.6,110.9 250.2,112.5 252.8,114.1 255.4,115.8 258.0,117.5 260.6,119.3 263.2,121.1 265.8,123.0 268.4,124.9 271.0,126.9 273.6,128.9 276.2,130.9 278.8,132.9 281.4,135.0 284.0,137.0 286.6,139.0 289.2,141.1 291.8,143.1 294.4,145.1 297.0,147.1 299.6,149.1 302.2,151.0 304.8,152.9 307.4,154.7 310.0,156.5 312.6,158.2 315.2,159.9 317.8,161.5 320.4,163.1 323.0,164.6 325.6,166.0 328.2,167.3 330.8,168.6 333.4,169.7 336.0,170.8 338.6,171.7 341.2,172.6 343.8,173.4 346.4,174.1 349.0,174.7 351.6,175.1 354.2,175.5 356.8,175.8 359.4,175.9 362.0,176.0 364.6,175.9 367.2,175.8 369.8,175.5 372.4,175.1\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3\"/><line x1=\"50.0\" y1=\"124.0\" x2=\"375.0\" y2=\"124.0\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><text x=\"44.0\" y=\"128.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24</text><line x1=\"144.9\" y1=\"124.0\" x2=\"144.9\" y2=\"215.0\" stroke=\"#047857\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"144.9\" cy=\"124.0\" r=\"5\" fill=\"#047857\"/><text x=\"148.9\" y=\"245.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">t ≈ 3.65 h</text><line x1=\"47.0\" y1=\"176.0\" x2=\"53.0\" y2=\"176.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"44.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16</text><line x1=\"47.0\" y1=\"137.0\" x2=\"53.0\" y2=\"137.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"44.0\" y=\"141.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">22</text><line x1=\"47.0\" y1=\"98.0\" x2=\"53.0\" y2=\"98.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"44.0\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">28</text><line x1=\"50.0\" y1=\"212.0\" x2=\"50.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"50.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><line x1=\"128.0\" y1=\"212.0\" x2=\"128.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"128.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><line x1=\"206.0\" y1=\"212.0\" x2=\"206.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"206.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><line x1=\"284.0\" y1=\"212.0\" x2=\"284.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><line x1=\"362.0\" y1=\"212.0\" x2=\"362.0\" y2=\"218.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"362.0\" y=\"230.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"210.0\" y=\"90.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">high tide 28 m</text><text x=\"58.0\" y=\"194.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">low tide 16 m</text></svg>"
+              }
+            },
+            {
+              "explain": "The ship needs \\(d\\ge24\\): \\(22-6\\cos\\dfrac{\\pi t}{6}\\ge24\\Rightarrow\\cos\\dfrac{\\pi t}{6}\\le-\\dfrac{1}{3}\\). The EARLIEST time is when equality first holds.",
+              "work": "\\(\\cos\\dfrac{\\pi t}{6}=-\\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Take \\(\\cos^{-1}\\) (calculator in radians; \\(\\cos\\) is negative so the angle is between \\(\\dfrac{\\pi}{2}\\) and \\(\\pi\\)): \\(\\dfrac{\\pi t}{6}=\\cos^{-1}\\left(-\\dfrac{1}{3}\\right)\\approx1.9106\\) rad.",
+              "work": "\\(t=\\dfrac{6}{\\pi}\\times1.9106\\approx3.65\\ \\text{hours}\\)"
+            },
+            {
+              "explain": "\\(0.65\\) h \\(=0.65\\times60\\approx39\\) min, so \\(t\\approx3\\) h \\(39\\) min after 10 a.m. \\(=1{:}39\\) p.m. (check: \\(t=3\\) gives \\(d=22\\), still too shallow, so it must be a bit later ✓).",
+              "work": "\\(10{:}00\\text{ a.m.}+3\\text{ h }39\\text{ min}=1{:}39\\text{ p.m.}\\)"
+            },
+            {
+              "explain": "Why not the others: B (1 p.m.) is the mid-tide time, depth exactly \\(22\\) m (too shallow); C uses the positive angle \\(\\cos^{-1}\\dfrac{1}{3}\\) (sign error); D adds the extra \\(60\\) min wrongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the earliest time the ship can enter the harbour",
+              "note": "\\(d=22-6\\cos\\dfrac{\\pi t}{6}\\); solve \\(d=24\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14b1",
+          "type": "mc",
+          "stem": "A 2-kilogram mass is moving in simple harmonic motion along the \\(x\\)-axis about the origin, with a period of \\(\\pi\\) seconds. The greatest magnitude of the force acting on the mass during its motion is 24 newtons. Show that \\(\\ddot{x}=-4x\\) and the extremities of the mass' motion are 3 metres from the centre of its motion.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&T=\\dfrac{2\\pi}{n}=\\pi\\Rightarrow n=2;\\ \\ \\ddot{x}=-n^{2}x=-4x\\\\ &F_{max}=m|\\ddot{x}|_{max}=2\\cdot4a=24\\Rightarrow a=3\\end{aligned}\\)",
+            "\\(\\begin{aligned}&T=\\dfrac{2\\pi}{n}=\\pi\\Rightarrow n=2;\\ \\ \\ddot{x}=-nx=-2x\\\\ &F_{max}=2\\cdot2a=24\\Rightarrow a=6\\end{aligned}\\)",
+            "\\(\\begin{aligned}&T=\\dfrac{2\\pi}{n}=\\pi\\Rightarrow n=2;\\ \\ \\ddot{x}=-n^{2}x=-4x\\\\ &F_{max}=2\\cdot4a=24\\Rightarrow a=12\\end{aligned}\\)",
+            "\\(\\begin{aligned}&T=2\\pi n=\\pi\\Rightarrow n=\\dfrac{1}{2};\\ \\ \\ddot{x}=-\\dfrac14x\\\\ &F_{max}=2\\cdot\\dfrac14a=24\\Rightarrow a=48\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "SHM about the origin: \\(\\ddot{x}=-n^{2}x\\) with period \\(T=\\dfrac{2\\pi}{n}\\). The force \\(F=m\\ddot{x}\\) is largest in size at the extremities \\(x=\\pm a\\) (where \\(|x|\\) is greatest), so \\(F_{max}=m\\,n^{2}a\\).",
+          "steps": [
+            {
+              "explain": "Period \\(T=\\dfrac{2\\pi}{n}=\\pi\\), so \\(n=2\\).",
+              "work": "\\(n=\\dfrac{2\\pi}{\\pi}=2\\)"
+            },
+            {
+              "explain": "SHM about the origin satisfies \\(\\ddot{x}=-n^{2}x\\), so \\(\\ddot{x}=-4x\\) ✓.",
+              "work": "\\(\\ddot{x}=-n^{2}x=-4x\\)"
+            },
+            {
+              "explain": "Force \\(F=m\\ddot{x}=2(-4x)=-8x\\). Its magnitude \\(|F|=8|x|\\) is largest when \\(|x|\\) is largest, at the extremities \\(x=\\pm a\\) (amplitude \\(a\\)).",
+              "work": "\\(|F|_{max}=8a\\)"
+            },
+            {
+              "explain": "Set \\(8a=24\\).",
+              "work": "\\(a=3\\)"
+            },
+            {
+              "explain": "So the extremities are at \\(x=\\pm3\\): 3 metres from the centre ∎. Why not the others: B uses \\(\\ddot{x}=-nx\\); C divides \\(24\\) by \\(2\\) instead of \\(8\\); D uses \\(T=2\\pi n\\) (wrong relationship).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\ddot{x}=-4x\\)",
+              "note": "\\(T=\\dfrac{2\\pi}{n}\\Rightarrow n=2\\); \\(F_{max}=m\\,n^{2}a\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2539,6 +2776,114 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q12b",
+          "type": "mc",
+          "stem": "A particle moves along the \\(x\\) axis with its velocity \\(v\\) (cm per sec) at position \\(x\\) (cm), given by \\(v=\\sqrt{16x-x^{2}}\\). Find the acceleration of the particle when \\(x=5\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(3\\) cm per sec\\(^{2}\\)",
+            "\\(-3\\) cm per sec\\(^{2}\\)",
+            "\\(\\dfrac{3}{\\sqrt{55}}\\) cm per sec\\(^{2}\\)",
+            "\\(\\sqrt{55}\\) cm per sec\\(^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "When velocity is given as a function of POSITION use \\(a=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\). Square \\(v\\) first — the square root disappears.",
+          "steps": [
+            {
+              "explain": "Acceleration in terms of \\(x\\): \\(a=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\) (because \\(a=v\\dfrac{dv}{dx}\\)).",
+              "work": "\\(a=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\)"
+            },
+            {
+              "explain": "Square the velocity: \\(v^{2}=16x-x^{2}\\). Then \\(\\dfrac12v^{2}=8x-\\dfrac12x^{2}\\).",
+              "work": "\\(\\dfrac12v^{2}=8x-\\dfrac{x^{2}}{2}\\)"
+            },
+            {
+              "explain": "Differentiate with respect to \\(x\\).",
+              "work": "\\(a=8-x\\)"
+            },
+            {
+              "explain": "Substitute \\(x=5\\).",
+              "work": "\\(a=8-5=3\\)"
+            },
+            {
+              "explain": "The acceleration is \\(3\\) cm per sec\\(^{2}\\) (positive, so the velocity is increasing there). Why not the others: B has the wrong sign; C is \\(\\dfrac{dv}{dx}\\) (the rate of change of velocity with POSITION, not time) \\(=\\dfrac{16-2x}{2\\sqrt{16x-x^{2}}}=\\dfrac{3}{\\sqrt{55}}\\); D is the velocity \\(v=\\sqrt{80-25}=\\sqrt{55}\\) itself.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the acceleration of the particle when \\(x=5\\)",
+              "note": "\\(a=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14b2",
+          "type": "mc",
+          "stem": "By integrating \\(\\ddot{x}=-4x\\), prove that \\(v^{2}=-4\\left(x^{2}-9\\right)\\), given the mass has extremities at \\(x=\\pm3\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\ddot{x}=v\\dfrac{dv}{dx}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=-4x\\Rightarrow\\dfrac12v^{2}=-2x^{2}+c\\\\ &x=-3,\\ v=0:\\ 0=-18+c\\Rightarrow c=18\\Rightarrow v^{2}=-4x^{2}+36=-4(x^{2}-9)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\ddot{x}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=-4x\\Rightarrow\\dfrac12v^{2}=-2x^{2}+c\\\\ &x=0,\\ v=0:\\ c=0\\Rightarrow v^{2}=-4x^{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\ddot{x}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=-4x\\Rightarrow\\dfrac12v^{2}=-4x^{2}+c\\\\ &x=-3,\\ v=0:\\ c=36\\Rightarrow v^{2}=-8x^{2}+72\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\ddot{x}=v\\dfrac{dv}{dx}=-4x\\Rightarrow v=-2x^{2}+c\\\\ &x=-3,\\ v=0:\\ c=18\\Rightarrow v=-2x^{2}+18\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\ddot{x}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\) when acceleration is given in terms of \\(x\\). Integrate with respect to \\(x\\), then find \\(c\\) with the extremity condition: \\(v=0\\) at \\(x=\\pm3\\).",
+          "steps": [
+            {
+              "explain": "Write the acceleration as a derivative of KINETIC ENERGY per unit mass.",
+              "work": "\\(\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)=-4x\\)"
+            },
+            {
+              "explain": "Integrate both sides with respect to \\(x\\): \\(\\int-4x\\,dx=-2x^{2}\\).",
+              "work": "\\(\\dfrac12v^{2}=-2x^{2}+c\\)"
+            },
+            {
+              "explain": "At an extremity the mass momentarily stops: \\(v=0\\) when \\(x=\\pm3\\) (part (i)). Use \\(x=3\\): \\(0=-2(9)+c\\), so \\(c=18\\).",
+              "work": "\\(c=18\\)"
+            },
+            {
+              "explain": "Multiply by 2 and factorise.",
+              "work": "\\(v^{2}=-4x^{2}+36=-4\\left(x^{2}-9\\right)\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(x=0,\\ v=0\\) (the centre is where the speed is GREATEST, not zero); C integrates \\(-4x\\) as \\(-4x^{2}\\); D forgets the square on \\(v\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that \\(v^{2}=-4\\left(x^{2}-9\\right)\\)",
+              "note": "\\(\\ddot{x}=\\dfrac{d}{dx}\\left(\\dfrac12v^{2}\\right)\\); \\(v=0\\) at \\(x=3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3110,6 +3455,182 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11e",
+          "type": "mc",
+          "stem": "A particle is initially at the origin with velocity 2 metres per second. Its acceleration given by \\(v\\dfrac{dv}{dx}=v^{2}-v\\), where \\(v\\) is the velocity of the particle in metres per second and \\(x\\) is its displacement in metres. Find an expression for \\(x\\) in terms of \\(v\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(x=\\ln(v-1)\\)",
+            "\\(x=\\ln(v-1)+\\ln2\\)",
+            "\\(x=\\ln(v+1)-\\ln3\\)",
+            "\\(x=\\ln\\left(v^{2}-v\\right)-\\ln2\\)"
+          ],
+          "answer": 0,
+          "hint": "Cancel one \\(v\\): \\(v\\dfrac{dv}{dx}=v(v-1)\\Rightarrow\\dfrac{dv}{dx}=v-1\\). Then SEPARATE the variables and use the initial condition \\(x=0\\) when \\(v=2\\) to find the constant.",
+          "steps": [
+            {
+              "explain": "Factor the right side: \\(v^{2}-v=v(v-1)\\). The particle has \\(v\\ne0\\) (it starts at 2), so divide both sides by \\(v\\).",
+              "work": "\\(\\dfrac{dv}{dx}=v-1\\)"
+            },
+            {
+              "explain": "Separate variables: all \\(v\\) on one side, \\(dx\\) on the other.",
+              "work": "\\(\\int\\dfrac{dv}{v-1}=\\int dx\\)"
+            },
+            {
+              "explain": "Integrate: \\(\\int\\dfrac{dv}{v-1}=\\ln|v-1|\\).",
+              "work": "\\(\\ln|v-1|=x+c\\)"
+            },
+            {
+              "explain": "Initial conditions: \\(x=0\\) when \\(v=2\\): \\(\\ln|2-1|=\\ln1=0=0+c\\), so \\(c=0\\).",
+              "work": "\\(c=0\\)"
+            },
+            {
+              "explain": "So \\(x=\\ln|v-1|\\). Since the velocity starts at 2 and \\(\\dfrac{dv}{dx}=v-1>0\\), \\(v\\ge2\\) always, so \\(v-1>0\\) and the modulus signs can be dropped.",
+              "work": "\\(x=\\ln(v-1)\\)"
+            },
+            {
+              "explain": "Check: \\(v=2\\Rightarrow x=\\ln1=0\\) ✓. Why not the others: B and C add a wrong constant (ignoring or mis-using the initial condition); D integrates \\(v\\dfrac{dv}{dx}\\) without cancelling \\(v\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find an expression for \\(x\\) in terms of \\(v\\).",
+              "note": "Cancel \\(v\\); \\(\\int\\dfrac{dv}{v-1}=\\int dx\\); use \\(x=0,\\ v=2\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q12e1",
+          "type": "mc",
+          "stem": "An 80-kilogram mass is being dragged along a horizontal surface by a force of 100 newtons. The mass is subject to friction of \\(0.1v\\) newtons, where \\(v\\) is the speed of the mass in metres per second. The mass is initially at rest. The equation of motion is \\(\\ddot{x}=\\dfrac{1000-v}{800}\\). Show that the equation for time as a function of velocity is \\(t=800\\ln\\left(\\dfrac{1000}{1000-v}\\right)\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 150\" width=\"100%\" height=\"auto\" style=\"max-width:430px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"112.0\" x2=\"400.0\" y2=\"112.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><rect x=\"165\" y=\"64\" width=\"46\" height=\"48\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"188.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">80 kg</text><line x1=\"165.0\" y1=\"88.0\" x2=\"92.0\" y2=\"88.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"92.0\" y1=\"88.0\" x2=\"100.7\" y2=\"93.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"92.0\" y1=\"88.0\" x2=\"100.7\" y2=\"83.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"124.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1v N</text><line x1=\"211.0\" y1=\"88.0\" x2=\"350.0\" y2=\"88.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"88.0\" x2=\"341.3\" y2=\"83.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"88.0\" x2=\"341.3\" y2=\"93.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100 N</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&\\dfrac{dv}{dt}=\\dfrac{1000-v}{800}\\Rightarrow t=\\int_{0}^{v}\\dfrac{800}{1000-v}dv=\\Big[-800\\ln|1000-v|\\Big]_{0}^{v}\\\\ &t=-800\\ln(1000-v)+800\\ln1000=800\\ln\\dfrac{1000}{1000-v}\\quad(1000-v>0)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{dv}{dt}=\\dfrac{1000-v}{800}\\Rightarrow t=\\int_{0}^{v}\\dfrac{800}{1000-v}dv=\\Big[800\\ln|1000-v|\\Big]_{0}^{v}\\\\ &t=800\\ln(1000-v)-800\\ln1000=800\\ln\\dfrac{1000-v}{1000}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{dv}{dt}=\\dfrac{1000-v}{800}\\Rightarrow t=\\int\\dfrac{1000-v}{800}dv=\\dfrac{1000v-\\dfrac{v^{2}}{2}}{800}\\\\ &\\text{(not a logarithm)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{dv}{dt}=\\dfrac{1000-v}{800}\\Rightarrow t=\\int_{0}^{v}\\dfrac{800}{1000-v}dv=\\Big[-800\\ln|1000-v|\\Big]_{0}^{v}\\\\ &t=-800\\ln(1000-v)\\quad(\\text{initial condition ignored})\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\ddot{x}=\\dfrac{dv}{dt}\\). Flip it to get \\(\\dfrac{dt}{dv}=\\dfrac{800}{1000-v}\\), integrate from \\(v=0\\) (at rest) to \\(v\\), and use \\(-\\ln A+\\ln B=\\ln\\dfrac{B}{A}\\). Note \\(1000-v>0\\) because \\(\\ddot{x}>0\\) when the mass starts moving.",
+          "steps": [
+            {
+              "explain": "The acceleration is \\(\\dfrac{dv}{dt}\\) when the variable we want is \\(t\\). Invert both sides.",
+              "work": "\\(\\dfrac{dv}{dt}=\\dfrac{1000-v}{800}\\ \\Rightarrow\\ \\dfrac{dt}{dv}=\\dfrac{800}{1000-v}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 160\" width=\"100%\" height=\"auto\" style=\"max-width:430px;display:block;margin:0 auto\"><text x=\"215.0\" y=\"22.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Forces along the line of motion (m = 80 kg)</text><rect x=\"165\" y=\"78\" width=\"46\" height=\"48\" fill=\"#fff\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"211.0\" y1=\"102.0\" x2=\"350.0\" y2=\"102.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"102.0\" x2=\"341.3\" y2=\"97.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"350.0\" y1=\"102.0\" x2=\"341.3\" y2=\"107.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"300.0\" y=\"90.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100 N</text><line x1=\"165.0\" y1=\"102.0\" x2=\"92.0\" y2=\"102.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"92.0\" y1=\"102.0\" x2=\"100.7\" y2=\"107.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"92.0\" y1=\"102.0\" x2=\"100.7\" y2=\"97.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"90.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.1v</text><text x=\"215.0\" y=\"148.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">net force: 100 − 0.1v = 80 × acceleration</text></svg>"
+              }
+            },
+            {
+              "explain": "Separate variables and integrate: at rest means \\(v=0\\) when \\(t=0\\).",
+              "work": "\\(\\int_{0}^{t}dt=\\int_{0}^{v}\\dfrac{800}{1000-v}\\,dv\\)"
+            },
+            {
+              "explain": "\\(\\displaystyle\\int\\dfrac{800}{1000-v}dv=-800\\ln|1000-v|\\) (the derivative of \\(1000-v\\) is \\(-1\\), giving the minus sign).",
+              "work": "\\(\\Big[t\\Big]_{0}^{t}=-800\\Big[\\ln|1000-v|\\Big]_{0}^{v}\\)"
+            },
+            {
+              "explain": "Substitute the limits.",
+              "work": "\\(t-0=-800\\left(\\ln|1000-v|-\\ln1000\\right)\\)"
+            },
+            {
+              "explain": "Since \\(\\ddot{x}>0\\) the velocity increases from \\(0\\) towards \\(1000\\), so \\(1000-v>0\\) and the modulus can be dropped. Use \\(\\ln A-\\ln B=\\ln\\dfrac{A}{B}\\) and the minus sign flips the fraction.",
+              "work": "\\(t=800\\left(\\ln1000-\\ln(1000-v)\\right)=800\\ln\\left(\\dfrac{1000}{1000-v}\\right)\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B has the wrong sign (it gives a negative time); C integrates \\(\\dfrac{dv}{dt}\\) with respect to \\(v\\) (it forgets to flip); D ignores the initial condition \\(t=0\\) at \\(v=0\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the equation for time as a function of velocity is",
+              "note": "\\(\\dfrac{dt}{dv}=\\dfrac{800}{1000-v}\\); limits \\(v:0\\to v\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q12e2",
+          "type": "mc",
+          "stem": "An 80-kilogram mass is being dragged along a horizontal surface by a force of 100 newtons against friction of \\(0.1v\\) newtons, starting at rest, where \\(t=800\\ln\\left(\\dfrac{1000}{1000-v}\\right)\\). Find the velocity of the mass after 10 seconds, correct to 1 decimal place.",
+          "difficulty": "medium",
+          "options": [
+            "\\(12.4\\) m per s",
+            "\\(12.5\\) m per s",
+            "\\(12.0\\) m per s",
+            "\\(124.2\\) m per s"
+          ],
+          "answer": 0,
+          "hint": "Put \\(t=10\\) into \\(t=800\\ln\\left(\\dfrac{1000}{1000-v}\\right)\\), divide by 800, then remove the \\(\\ln\\) by taking \\(e\\) of both sides. Keep full calculator precision until the last step.",
+          "steps": [
+            {
+              "explain": "Substitute \\(t=10\\) and divide by 800.",
+              "work": "\\(10=800\\ln\\left(\\dfrac{1000}{1000-v}\\right)\\ \\Rightarrow\\ \\ln\\left(\\dfrac{1000}{1000-v}\\right)=\\dfrac{10}{800}=0.0125\\)"
+            },
+            {
+              "explain": "Remove the log: \\(\\ln A=B\\Rightarrow A=e^{B}\\).",
+              "work": "\\(\\dfrac{1000}{1000-v}=e^{0.0125}\\)"
+            },
+            {
+              "explain": "Invert both sides and rearrange: \\(\\dfrac{1000-v}{1000}=e^{-0.0125}\\), so \\(1000-v=1000e^{-0.0125}\\).",
+              "work": "\\(v=1000\\left(1-e^{-0.0125}\\right)\\)"
+            },
+            {
+              "explain": "Calculator: \\(e^{-0.0125}=0.987578\\ldots\\), so \\(v=1000\\times0.012422\\ldots\\).",
+              "work": "\\(v=12.422\\ldots\\approx12.4\\ \\text{m per s}\\)"
+            },
+            {
+              "explain": "Why not the others: B rounds wrongly (12.422 rounds DOWN to 12.4); C is 12.0 (rounding to the nearest whole before multiplying); D has a misplaced decimal.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the velocity of the mass after 10 seconds",
+              "note": "\\(v=1000\\left(1-e^{-0.0125}\\right)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3997,6 +4518,68 @@
           "meta": {
             "source": "Girraween High School 2020 Trial HSC Examination Mathematics Extension 2",
             "school": "Girraween High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q15d",
+          "type": "mc",
+          "stem": "A unit mass is projected vertically upward under gravity with a speed \\(S\\) metres per second in a medium that exerts a resistance to motion equal to \\(kv\\) newtons, where \\(k\\) is a positive constant and \\(v\\) is the upward velocity of the mass in metres per second. The acceleration due to gravity is \\(g\\ \\mathrm{m\\,s^{-2}}\\), where \\(g>0\\). If the particle reaches its greatest height in time \\(T\\) seconds, show for \\(0\\le t\\le T\\) that \\(v=\\dfrac{g\\left(e^{k(T-t)}-1\\right)}{k}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\dot v=-g-kv\\Rightarrow t=-\\int_{S}^{v}\\dfrac{dv}{g+kv}=\\dfrac{1}{k}\\ln\\dfrac{g+kS}{g+kv}\\ \\Rightarrow\\ g+kv=(g+kS)e^{-kt}\\\\ &v=0\\text{ at }t=T:\\ g=(g+kS)e^{-kT}\\Rightarrow g+kv=ge^{kT}e^{-kt}\\Rightarrow v=\\dfrac{g\\left(e^{k(T-t)}-1\\right)}{k}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dot v=g-kv\\Rightarrow t=\\int_{S}^{v}\\dfrac{dv}{g-kv}\\\\ &\\Rightarrow v=\\dfrac{g\\left(1-e^{k(T-t)}\\right)}{k}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dot v=-g-kv\\Rightarrow t=\\int_{S}^{v}\\dfrac{dv}{g+kv}=\\dfrac{1}{k}\\ln\\dfrac{g+kv}{g+kS}\\\\ &\\Rightarrow v=\\dfrac{g\\left(e^{k(T+t)}-1\\right)}{k}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dot v=-g-kv\\Rightarrow t=-\\int_{S}^{v}\\dfrac{dv}{g+kv}=\\dfrac{1}{k}\\ln\\dfrac{g+kS}{g+kv}\\\\ &\\text{(ignores that }v=0\\text{ at }t=T)\\Rightarrow v=Se^{-kt}-\\dfrac{g}{k}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Take UP as positive. Forces on a UNIT mass: gravity \\(-g\\) and resistance \\(-kv\\) (both act DOWN while it rises), so \\(\\dfrac{dv}{dt}=-g-kv\\). Separate variables, then use the condition \\(v=0\\) at \\(t=T\\) (greatest height) to eliminate \\(S\\).",
+          "steps": [
+            {
+              "explain": "Unit mass \\(\\Rightarrow\\) force \\(=\\) acceleration. Moving up: gravity and resistance both act downward.",
+              "work": "\\(\\ddot{x}=\\dfrac{dv}{dt}=-g-kv=-(g+kv)\\)"
+            },
+            {
+              "explain": "Separate variables. At \\(t=0\\), \\(v=S\\); at time \\(t\\) the velocity is \\(v\\).",
+              "work": "\\(\\int_{0}^{t}dt=-\\int_{S}^{v}\\dfrac{dv}{g+kv}\\)"
+            },
+            {
+              "explain": "\\(\\int\\dfrac{dv}{g+kv}=\\dfrac{1}{k}\\ln(g+kv)\\).",
+              "work": "\\(t=-\\dfrac{1}{k}\\Big[\\ln(g+kv)\\Big]_{S}^{v}=\\dfrac{1}{k}\\left(\\ln(g+kS)-\\ln(g+kv)\\right)=\\dfrac{1}{k}\\ln\\dfrac{g+kS}{g+kv}\\)"
+            },
+            {
+              "explain": "Rearrange: \\(kt=\\ln\\dfrac{g+kS}{g+kv}\\Rightarrow e^{kt}=\\dfrac{g+kS}{g+kv}\\Rightarrow g+kv=(g+kS)e^{-kt}\\).",
+              "work": "\\(g+kv=(g+kS)e^{-kt}\\quad(1)\\)"
+            },
+            {
+              "explain": "Greatest height: \\(v=0\\) when \\(t=T\\). Put into (1): \\(g=(g+kS)e^{-kT}\\), so \\(g+kS=ge^{kT}\\).",
+              "work": "\\(g+kS=ge^{kT}\\quad(2)\\)"
+            },
+            {
+              "explain": "Substitute (2) into (1): \\(g+kv=ge^{kT}e^{-kt}=ge^{k(T-t)}\\). Then solve for \\(v\\).",
+              "work": "\\(kv=ge^{k(T-t)}-g\\ \\Rightarrow\\ v=\\dfrac{g\\left(e^{k(T-t)}-1\\right)}{k}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Check: \\(t=T\\Rightarrow v=\\dfrac{g(1-1)}{k}=0\\) ✓; \\(t=0\\Rightarrow v=S\\) by (2) ✓. Why not the others: B uses \\(+g\\) (gravity acts DOWN); C has \\(T+t\\) and the log inverted; D never uses \\(v=0\\) at \\(t=T\\), so \\(S\\) remains and \\(T\\) is not in the answer.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "show for \\(0\\le t\\le T\\) that",
+              "note": "Up positive: \\(\\dot v=-(g+kv)\\); \\(v=0\\) at \\(t=T\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

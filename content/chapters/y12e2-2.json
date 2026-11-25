@@ -911,6 +911,326 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q3",
+          "type": "mc",
+          "stem": "Write down the contrapositive for the statement ‘If I like walking, then I do not like cycling’",
+          "difficulty": "easy",
+          "options": [
+            "If I dislike cycling, then I do not like walking.",
+            "If I like cycling, then I like walking.",
+            "If I dislike cycling, then I like walking.",
+            "If I like cycling, then I do not like walking."
+          ],
+          "answer": 3,
+          "hint": "For \\(P\\Rightarrow Q\\) the contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\): swap the two parts AND negate each. Here \\(Q\\) is already a negative (“do not like cycling”), so negating it gives “like cycling”.",
+          "steps": [
+            {
+              "explain": "Name the parts: \\(P\\): “I like walking”; \\(Q\\): “I do not like cycling”.",
+              "work": "\\(P\\Rightarrow Q\\ \\ \\text{ where }P=\\text{like walking},\\ Q=\\text{do not like cycling}\\)"
+            },
+            {
+              "explain": "The contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\) (it always has the same truth value as the original).",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "Negate \\(Q\\): not (do not like cycling) \\(=\\) “I like cycling” (two negatives cancel).",
+              "work": "\\(\\neg Q=\\text{I like cycling}\\)"
+            },
+            {
+              "explain": "Negate \\(P\\): not (like walking) \\(=\\) “I do not like walking”.",
+              "work": "\\(\\neg P=\\text{I do not like walking}\\)"
+            },
+            {
+              "explain": "Assemble: swap the order.",
+              "work": "\\(\\text{If I like cycling, then I do not like walking.}\\)"
+            },
+            {
+              "explain": "Why not the others: A negates \\(P\\) but leaves \\(Q\\) un-negated; B negates \\(Q\\) but leaves \\(P\\) un-negated; C is the CONVERSE \\(Q\\Rightarrow P\\) (swapped but not negated).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "contrapositive",
+              "note": "Swap AND negate: \\(\\neg Q\\Rightarrow\\neg P\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q7",
+          "type": "mc",
+          "stem": "Given that \\(x\\) and \\(y\\) are natural numbers, which of the following is a FALSE statement?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\forall x\\,\\exists y\\,(x-y=0)\\)",
+            "\\(\\forall x\\,\\exists y\\,(3x-y=0)\\)",
+            "\\(\\forall x\\,\\exists y\\,(x-3y=0)\\)",
+            "\\(\\exists x\\,\\exists y\\,(x+y=8)\\)"
+          ],
+          "answer": 2,
+          "hint": "Read each statement aloud: \\(\\forall x\\,\\exists y\\) means “for EVERY natural \\(x\\) there is at least one natural \\(y\\) that works”. Solve for \\(y\\) and ask whether it is always a natural number.",
+          "steps": [
+            {
+              "explain": "\\(\\forall\\) = “for all”, \\(\\exists\\) = “there exists”. Natural numbers are \\(1,2,3,\\dots\\).",
+              "work": "\\(\\forall x\\ \\exists y:\\ \\text{every }x\\text{ needs a natural partner }y\\)"
+            },
+            {
+              "explain": "A: \\(x-y=0\\Rightarrow y=x\\). Take \\(y=x\\) — always a natural number. TRUE.",
+              "work": "\\(y=x\\ \\checkmark\\)"
+            },
+            {
+              "explain": "B: \\(3x-y=0\\Rightarrow y=3x\\). A natural number times 3 is natural. TRUE.",
+              "work": "\\(y=3x\\ \\checkmark\\)"
+            },
+            {
+              "explain": "C: \\(x-3y=0\\Rightarrow y=\\dfrac{x}{3}\\). This is natural only when \\(3\\mid x\\). For \\(x=1\\) we would need \\(y=\\dfrac{1}{3}\\), which is NOT natural, so “for every \\(x\\)” fails. FALSE (counterexample \\(x=1\\)).",
+              "work": "\\(x=1\\ \\Rightarrow\\ y=\\dfrac{1}{3}\\notin\\mathbb{N}\\ \\ \\times\\)"
+            },
+            {
+              "explain": "D: \\(\\exists x\\,\\exists y\\,(x+y=8)\\) only needs ONE pair, e.g. \\(x=3,\\ y=5\\). TRUE.",
+              "work": "\\(3+5=8\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So the only FALSE statement is C.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "which of the following is a FALSE statement",
+              "note": "\\(\\forall x\\exists y\\): solve for \\(y\\) — is it natural for EVERY \\(x\\)?"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12a1",
+          "type": "mc",
+          "stem": "For the conditional statement ‘If \\(n\\) is divisible by 16 then \\(n\\) is divisible by 4’, write the converse statement.",
+          "difficulty": "easy",
+          "options": [
+            "If \\(n\\) is divisible by 4 then \\(n\\) is divisible by 16.",
+            "If \\(n\\) is not divisible by 16 then \\(n\\) is not divisible by 4.",
+            "If \\(n\\) is not divisible by 4 then \\(n\\) is not divisible by 16.",
+            "\\(n\\) is divisible by 16 and \\(n\\) is not divisible by 4."
+          ],
+          "answer": 0,
+          "hint": "For \\(P\\Rightarrow Q\\): the CONVERSE is \\(Q\\Rightarrow P\\) — just swap the two parts (no negating).",
+          "steps": [
+            {
+              "explain": "Identify the parts.",
+              "work": "\\(P:\\ n\\text{ is divisible by }16;\\qquad Q:\\ n\\text{ is divisible by }4\\)"
+            },
+            {
+              "explain": "The converse swaps hypothesis and conclusion: \\(Q\\Rightarrow P\\).",
+              "work": "\\(Q\\Rightarrow P:\\ \\text{If }n\\text{ is divisible by }4\\text{ then }n\\text{ is divisible by }16\\)"
+            },
+            {
+              "explain": "Note the converse is FALSE here (\\(n=4\\) is divisible by 4 but not by 16) — a converse need not have the same truth value as the original statement.",
+              "work": "\\(n=4:\\ 4\\mid4\\ \\text{but}\\ 16\\nmid4\\)"
+            },
+            {
+              "explain": "Why not the others: B is the INVERSE \\(\\neg P\\Rightarrow\\neg Q\\); C is the CONTRAPOSITIVE \\(\\neg Q\\Rightarrow\\neg P\\); D is the NEGATION \\(P\\wedge\\neg Q\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "write the converse statement",
+              "note": "Converse: swap \\(P\\) and \\(Q\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12a2",
+          "type": "mc",
+          "stem": "For the conditional statement ‘If \\(n\\) is divisible by 16 then \\(n\\) is divisible by 4’, write the negation statement.",
+          "difficulty": "easy",
+          "options": [
+            "\\(n\\) is divisible by 16 and \\(n\\) is not divisible by 4.",
+            "\\(n\\) is not divisible by 16 and \\(n\\) is divisible by 4.",
+            "If \\(n\\) is not divisible by 16 then \\(n\\) is not divisible by 4.",
+            "If \\(n\\) is not divisible by 4 then \\(n\\) is not divisible by 16."
+          ],
+          "answer": 0,
+          "hint": "The negation of an “if … then …” statement is the situation where it FAILS: the “if” part is TRUE but the “then” part is FALSE. So \\(\\neg(P\\Rightarrow Q)\\equiv P\\wedge\\neg Q\\).",
+          "steps": [
+            {
+              "explain": "\\(P\\Rightarrow Q\\) is false only when \\(P\\) is true and \\(Q\\) is false.",
+              "work": "\\(\\neg(P\\Rightarrow Q)\\equiv P\\ \\text{and}\\ \\neg Q\\)"
+            },
+            {
+              "explain": "Keep \\(P\\) as it is and negate \\(Q\\).",
+              "work": "\\(P:\\ n\\text{ divisible by }16;\\qquad\\neg Q:\\ n\\text{ NOT divisible by }4\\)"
+            },
+            {
+              "explain": "Join with “and” (the negation is NOT an “if … then” statement).",
+              "work": "\\(n\\text{ is divisible by 16 and }n\\text{ is not divisible by 4}\\)"
+            },
+            {
+              "explain": "Why not the others: B negates the wrong part; C is the inverse (still an implication); D is the contrapositive (logically EQUIVALENT to the original, not its negation).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "write the negation statement",
+              "note": "\\(\\neg(P\\Rightarrow Q)\\) is \\(P\\) AND \\(\\neg Q\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q1",
+          "type": "mc",
+          "stem": "Consider the statement: ‘If an animal can fly then it is a bird.’ Which of the following is the contrapositive of this statement?",
+          "difficulty": "easy",
+          "options": [
+            "If an animal is not a bird then it cannot fly.",
+            "If an animal is a bird then it can fly.",
+            "If an animal can fly then it is not a bird.",
+            "If an animal cannot fly then it is not a bird."
+          ],
+          "answer": 0,
+          "hint": "For \\(P\\Rightarrow Q\\) the contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\): REVERSE the two parts and NEGATE each.",
+          "steps": [
+            {
+              "explain": "Name the parts: \\(P\\): “an animal can fly”; \\(Q\\): “it is a bird”.",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "Reverse the order and negate both: \\(\\neg Q\\Rightarrow\\neg P\\).",
+              "work": "\\(\\neg Q:\\ \\text{not a bird},\\qquad\\neg P:\\ \\text{cannot fly}\\)"
+            },
+            {
+              "explain": "Write it out: “If an animal is not a bird then it cannot fly.”",
+              "work": "\\(\\neg Q\\Rightarrow\\neg P\\)"
+            },
+            {
+              "explain": "Why not the others: B is the CONVERSE \\(Q\\Rightarrow P\\); C negates only the conclusion; D is the INVERSE \\(\\neg P\\Rightarrow\\neg Q\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "contrapositive",
+              "note": "Reverse AND negate: \\(\\neg Q\\Rightarrow\\neg P\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q3",
+          "type": "mc",
+          "stem": "Consider the following proposition. ‘If a positive integer is not a perfect square, then it is not prime.’ If a number was found which had the following properties, which would be a counterexample to the proposition?",
+          "difficulty": "easy",
+          "options": [
+            "A positive integer that is not a perfect square and is prime.",
+            "A positive integer that is not a perfect square and is not prime.",
+            "A positive integer that is a perfect square and is prime.",
+            "A positive integer that is a perfect square and is not prime."
+          ],
+          "answer": 0,
+          "hint": "A counterexample to “\\(P\\Rightarrow Q\\)” is a case where \\(P\\) is TRUE but \\(Q\\) is FALSE. So it must satisfy the “if” part and BREAK the “then” part.",
+          "steps": [
+            {
+              "explain": "Parts: \\(P\\): “not a perfect square”; \\(Q\\): “not prime”.",
+              "work": "\\(P\\Rightarrow Q\\)"
+            },
+            {
+              "explain": "\\(P\\Rightarrow Q\\) fails exactly when \\(P\\) is true and \\(Q\\) is false: \\(P\\wedge\\neg Q\\).",
+              "work": "\\(\\neg(P\\Rightarrow Q)\\equiv P\\wedge\\neg Q\\)"
+            },
+            {
+              "explain": "\\(P\\): not a perfect square. \\(\\neg Q\\): NOT “not prime” \\(=\\) prime.",
+              "work": "\\(\\text{not a perfect square}\\ \\wedge\\ \\text{prime}\\)"
+            },
+            {
+              "explain": "Example: \\(2\\) is prime and is not a perfect square, so \\(2\\) is a counterexample ✓.",
+              "work": "\\(n=2\\)"
+            },
+            {
+              "explain": "Why not the others: B satisfies both parts (no contradiction); C and D have a perfect square, so the “if” part is false and the statement says nothing about them.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "counterexample",
+              "note": "Counterexample to \\(P\\Rightarrow Q\\): \\(P\\) true AND \\(Q\\) false."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1537,6 +1857,60 @@
           "meta": {
             "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
             "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q12c",
+          "type": "mc",
+          "stem": "Prove that \\((n+1)^{n}-n^{n+1}\\) is odd for all positive integers \\(n\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&n\\text{ odd}\\Rightarrow n+1\\text{ even}:\\ (n+1)^{n}\\text{ even},\\ n^{n+1}\\text{ odd}\\Rightarrow\\text{even}-\\text{odd}=\\text{odd}\\\\ &n\\text{ even}\\Rightarrow n+1\\text{ odd}:\\ (n+1)^{n}\\text{ odd},\\ n^{n+1}\\text{ even}\\Rightarrow\\text{odd}-\\text{even}=\\text{odd}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n\\text{ odd}\\Rightarrow n+1\\text{ even}:\\ (n+1)^{n}\\text{ even},\\ n^{n+1}\\text{ odd}\\Rightarrow\\text{even}-\\text{odd}=\\text{even}\\\\ &n\\text{ even}\\Rightarrow n+1\\text{ odd}:\\ (n+1)^{n}\\text{ odd},\\ n^{n+1}\\text{ even}\\Rightarrow\\text{odd}-\\text{even}=\\text{even}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n\\text{ odd}:\\ n+1\\text{ even and }n\\text{ odd, so both terms are odd}\\\\ &\\text{odd}-\\text{odd}=\\text{odd}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Test }n=1:\\ 2^{1}-1^{2}=1\\text{ (odd)}\\ \\Rightarrow\\ \\text{true for all }n\\\\ &\\text{(a single example is a proof)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Split into TWO cases by parity of \\(n\\). Use: an even number to any positive power is even; an odd number to any power is odd; even \\(-\\) odd \\(=\\) odd and odd \\(-\\) even \\(=\\) odd.",
+          "steps": [
+            {
+              "explain": "One of \\(n\\) and \\(n+1\\) is even and the other is odd. Treat the two cases separately (they cover every positive integer \\(n\\)).",
+              "work": "\\(n\\text{ even}\\quad\\text{or}\\quad n\\text{ odd}\\)"
+            },
+            {
+              "explain": "Case 1: \\(n=2k+1\\) (odd). Then \\(n+1=2k+2=2(k+1)\\) is EVEN, so \\((n+1)^{n}\\) is even (even to a positive power). And \\(n^{n+1}\\) is odd (odd to any power).",
+              "work": "\\((n+1)^{n}-n^{n+1}=\\text{even}-\\text{odd}=\\text{odd}\\)"
+            },
+            {
+              "explain": "Case 2: \\(n=2k\\) (even). Then \\(n+1=2k+1\\) is ODD, so \\((n+1)^{n}\\) is odd; and \\(n^{n+1}\\) is even (even to a positive power).",
+              "work": "\\((n+1)^{n}-n^{n+1}=\\text{odd}-\\text{even}=\\text{odd}\\)"
+            },
+            {
+              "explain": "In both cases the difference is odd. Since every positive integer is odd or even, \\((n+1)^{n}-n^{n+1}\\) is odd for all positive integers \\(n\\). ∎",
+              "work": "\\(\\forall n\\in\\mathbb{Z}^{+}:\\ (n+1)^{n}-n^{n+1}\\ \\text{odd}\\)"
+            },
+            {
+              "explain": "Why not the others: B concludes “even” (wrong parity rule: even \\(-\\) odd is odd); C wrongly says \\(n+1\\) is odd when \\(n\\) is odd; D tests one value only, which is NOT a proof (it proves nothing for other \\(n\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Cases: \\(n\\) odd / \\(n\\) even; even\\(-\\)odd \\(=\\) odd."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -2397,6 +2771,64 @@
           "meta": {
             "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
             "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q15b",
+          "type": "mc",
+          "stem": "For the positive real numbers \\(a\\) and \\(b\\), with \\(a\\ne2b\\), prove that \\(\\dfrac{1}{a-2b}\\ne\\dfrac{1}{a}-\\dfrac{1}{2b}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\text{Suppose }\\dfrac{1}{a-2b}=\\dfrac{1}{a}-\\dfrac{1}{2b}=\\dfrac{2b-a}{2ab}=-\\dfrac{a-2b}{2ab}\\\\ &\\Rightarrow-2ab=(a-2b)^{2}\\ \\text{: LHS}<0\\ (a,b>0),\\ \\text{RHS}>0\\ \\text{: contradiction}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Suppose }\\dfrac{1}{a-2b}=\\dfrac{1}{a}-\\dfrac{1}{2b}=\\dfrac{2b-a}{2ab}=-\\dfrac{a-2b}{2ab}\\\\ &\\Rightarrow2ab=(a-2b)^{2}\\ \\text{, which can be solved, so the statement is true}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Suppose }\\dfrac{1}{a-2b}=\\dfrac{1}{a}-\\dfrac{1}{2b}=\\dfrac{a-2b}{2ab}\\\\ &\\Rightarrow2ab=(a-2b)^{2}\\ \\text{(no contradiction)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Test }a=1,\\ b=1:\\ \\dfrac{1}{-1}\\ne\\dfrac{1}{1}-\\dfrac{1}{2}\\\\ &\\text{so the statement holds for all }a,b\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Proof by CONTRADICTION: assume the two sides ARE equal, simplify, and reach something impossible. Combine \\(\\dfrac{1}{a}-\\dfrac1{2b}\\) over the common denominator \\(2ab\\). Look at the SIGN of each side: \\(a,b>0\\) makes \\(-2ab\\) negative, but a square is never negative.",
+          "steps": [
+            {
+              "explain": "Assume the opposite: suppose \\(\\dfrac{1}{a-2b}=\\dfrac{1}{a}-\\dfrac{1}{2b}\\).",
+              "work": "\\(\\text{Suppose }\\dfrac{1}{a-2b}=\\dfrac{1}{a}-\\dfrac{1}{2b}\\)"
+            },
+            {
+              "explain": "Common denominator on the right: \\(\\dfrac{1}{a}-\\dfrac{1}{2b}=\\dfrac{2b-a}{2ab}=-\\dfrac{a-2b}{2ab}\\).",
+              "work": "\\(\\dfrac{1}{a-2b}=-\\dfrac{a-2b}{2ab}\\)"
+            },
+            {
+              "explain": "Cross-multiply (allowed since \\(a\\ne2b\\), \\(a,b\\ne0\\)): \\(2ab=-(a-2b)^{2}\\), i.e. \\(-2ab=(a-2b)^{2}\\).",
+              "work": "\\(-2ab=(a-2b)^{2}\\)"
+            },
+            {
+              "explain": "LEFT side: \\(a>0\\) and \\(b>0\\) so \\(-2ab<0\\). RIGHT side: a real square is \\(\\ge0\\) (and \\(>0\\) here because \\(a\\ne2b\\)). A negative number cannot equal a positive one.",
+              "work": "\\(-2ab<0<(a-2b)^{2}\\ \\Rightarrow\\ \\text{contradiction}\\)"
+            },
+            {
+              "explain": "So the assumption is false: \\(\\dfrac{1}{a-2b}\\ne\\dfrac{1}{a}-\\dfrac{1}{2b}\\). ∎",
+              "work": "\\(\\dfrac{1}{a-2b}\\ne\\dfrac{1}{a}-\\dfrac{1}{2b}\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the minus sign and finds no contradiction; C makes a sign slip so no contradiction appears; D checks one example (that is not a proof for ALL \\(a,b\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove that",
+              "note": "Assume equal; common denominator \\(2ab\\); \\(-2ab<0\\le(a-2b)^{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -3714,6 +4146,214 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q16a",
+          "type": "mc",
+          "stem": "If \\(a>0\\), \\(b>0\\), \\(c>0\\) and \\(d>0\\) show that \\(\\dfrac{a+b+c+d}{4}\\ge\\sqrt[4]{abcd}\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\dfrac{a+b}{2}\\ge\\sqrt{ab},\\quad\\dfrac{c+d}{2}\\ge\\sqrt{cd}\\ \\Rightarrow\\ \\dfrac{a+b+c+d}{4}\\ge\\dfrac{\\sqrt{ab}+\\sqrt{cd}}{2}\\\\ &\\dfrac{\\sqrt{ab}+\\sqrt{cd}}{2}\\ge\\sqrt{\\sqrt{ab}\\sqrt{cd}}=\\sqrt[4]{abcd}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{a+b}{2}\\ge\\sqrt{ab},\\quad\\dfrac{c+d}{2}\\ge\\sqrt{cd}\\ \\Rightarrow\\ \\dfrac{a+b+c+d}{4}\\ge\\dfrac{\\sqrt{ab}+\\sqrt{cd}}{2}\\\\ &\\dfrac{\\sqrt{ab}+\\sqrt{cd}}{2}\\ge\\sqrt{ab}\\sqrt{cd}=\\sqrt{abcd}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{a+b}{2}\\le\\sqrt{ab},\\quad\\dfrac{c+d}{2}\\le\\sqrt{cd}\\\\ &\\Rightarrow\\dfrac{a+b+c+d}{4}\\le\\sqrt[4]{abcd}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{a+b}{2}\\ge\\sqrt{ab},\\quad\\dfrac{c+d}{2}\\ge\\sqrt{cd}\\ \\Rightarrow\\ \\dfrac{a+b+c+d}{4}\\ge\\sqrt{ab}+\\sqrt{cd}\\\\ &\\ge\\sqrt[4]{abcd}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the TWO-variable AM–GM \\(\\dfrac{x+y}{2}\\ge\\sqrt{xy}\\) (for \\(x,y\\ge0\\)) THREE times: on \\((a,b)\\), on \\((c,d)\\), then on the two square roots \\(\\sqrt{ab}\\) and \\(\\sqrt{cd}\\).",
+          "steps": [
+            {
+              "explain": "Proof of the 2-variable result: \\((\\sqrt x-\\sqrt y)^{2}\\ge0\\Rightarrow x+y\\ge2\\sqrt{xy}\\). Apply to \\(a,b\\) and to \\(c,d\\).",
+              "work": "\\(\\dfrac{a+b}{2}\\ge\\sqrt{ab},\\qquad\\dfrac{c+d}{2}\\ge\\sqrt{cd}\\)"
+            },
+            {
+              "explain": "Add these and divide by 2 (the inequality direction is preserved when adding \\(\\ge\\)).",
+              "work": "\\(\\dfrac{a+b+c+d}{4}=\\dfrac{1}{2}\\left(\\dfrac{a+b}{2}+\\dfrac{c+d}{2}\\right)\\ge\\dfrac{\\sqrt{ab}+\\sqrt{cd}}{2}\\)"
+            },
+            {
+              "explain": "Apply AM–GM again to the two positive numbers \\(\\sqrt{ab}\\) and \\(\\sqrt{cd}\\).",
+              "work": "\\(\\dfrac{\\sqrt{ab}+\\sqrt{cd}}{2}\\ge\\sqrt{\\sqrt{ab}\\cdot\\sqrt{cd}}=\\sqrt{\\sqrt{abcd}}=\\sqrt[4]{abcd}\\)"
+            },
+            {
+              "explain": "Chain the two inequalities.",
+              "work": "\\(\\dfrac{a+b+c+d}{4}\\ge\\sqrt[4]{abcd}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B applies AM–GM and then gets \\(\\sqrt{ab}\\sqrt{cd}\\) (the product, not its square root); C reverses the inequality; D loses the factor \\(\\dfrac{1}{2}\\) and so would give a false inequality.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "If \\(a>0\\), \\(b>0\\), \\(c>0\\) and \\(d>0\\) show that",
+              "note": "AM–GM on \\((a,b)\\), \\((c,d)\\), then on \\(\\sqrt{ab},\\sqrt{cd}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q13b",
+          "type": "mc",
+          "stem": "It is known that for all positive real numbers \\(x,\\ y\\), \\(x+y\\ge2\\sqrt{xy}\\). Using this result, or otherwise, show that for all real \\(a\\), \\(|a|\\le\\dfrac{a^{2}+1}{2}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\text{Let }x=a^{2},\\ y=1:\\quad a^{2}+1\\ge2\\sqrt{a^{2}\\cdot1}=2|a|\\\\ &\\Rightarrow|a|\\le\\dfrac{a^{2}+1}{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Let }x=a,\\ y=1:\\quad a+1\\ge2\\sqrt{a}\\\\ &\\Rightarrow|a|\\le\\dfrac{a^{2}+1}{2}\\ \\text{(not justified)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Let }x=a^{2},\\ y=1:\\quad a^{2}+1\\ge2\\sqrt{a^{2}}=2a\\\\ &\\Rightarrow a\\le\\dfrac{a^{2}+1}{2}\\ \\text{(only for }a\\ge0)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{Let }x=a^{2},\\ y=1:\\quad a^{2}+1\\le2|a|\\\\ &\\Rightarrow|a|\\ge\\dfrac{a^{2}+1}{2}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Choose \\(x\\) and \\(y\\) so that \\(2\\sqrt{xy}\\) becomes \\(2|a|\\): \\(x=a^{2}\\) and \\(y=1\\) are positive for every real \\(a\\neq0\\). Remember \\(\\sqrt{a^{2}}=|a|\\) (NOT just \\(a\\)), because \\(a\\) may be negative.",
+          "steps": [
+            {
+              "explain": "The given result needs positive \\(x,y\\). Take \\(x=a^{2}\\) (positive when \\(a\\ne0\\)) and \\(y=1\\).",
+              "work": "\\(x+y\\ge2\\sqrt{xy}\\ \\Rightarrow\\ a^{2}+1\\ge2\\sqrt{a^{2}\\times1}\\)"
+            },
+            {
+              "explain": "\\(\\sqrt{a^{2}}=|a|\\) (the principal square root is never negative, even if \\(a<0\\)).",
+              "work": "\\(a^{2}+1\\ge2|a|\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(|a|\\le\\dfrac{a^{2}+1}{2}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Case \\(a=0\\) (not covered by \\(x>0\\)): \\(|0|=0\\le\\dfrac{0+1}{2}=\\dfrac{1}{2}\\) ✓. Alternatively: \\(\\dfrac{a^{2}+1}{2}-|a|=\\dfrac{(|a|-1)^{2}}{2}\\ge0\\). Why not the others: B uses the wrong substitution; C writes \\(\\sqrt{a^{2}}=a\\) (false for \\(a<0\\)); D reverses the inequality.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using this result, or otherwise, show that",
+              "note": "\\(x=a^{2}\\), \\(y=1\\); \\(\\sqrt{a^{2}}=|a|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q15a1",
+          "type": "mc",
+          "stem": "For the positive real numbers \\(a\\) and \\(b\\), \\(a\\ne b\\), it is given that \\(a^{3}+b^{3}=(a+b)\\left(a^{2}-ab+b^{2}\\right)\\) and \\((a-b)^{2}>0\\). Using these facts, or otherwise, prove \\(a^{3}+b^{3}>ab(a+b)\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&(a-b)^{2}>0\\Rightarrow a^{2}-2ab+b^{2}>0\\Rightarrow a^{2}-ab+b^{2}>ab\\\\ &a^{3}+b^{3}=(a+b)(a^{2}-ab+b^{2})>(a+b)\\,ab\\quad(a+b>0)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&(a-b)^{2}>0\\Rightarrow a^{2}-2ab+b^{2}>0\\Rightarrow a^{2}-ab+b^{2}>-ab\\\\ &a^{3}+b^{3}>-(a+b)\\,ab\\end{aligned}\\)",
+            "\\(\\begin{aligned}&(a-b)^{2}>0\\Rightarrow a^{2}-2ab+b^{2}>0\\Rightarrow a^{2}-ab+b^{2}>ab\\\\ &a^{3}+b^{3}>ab\\ \\text{(multiplying by }1\\text{)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&(a-b)^{2}>0\\Rightarrow a^{2}+b^{2}>0\\\\ &\\text{so }a^{3}+b^{3}>0\\ \\text{(this does not give the required result)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Start from \\((a-b)^{2}>0\\) and rearrange to \\(a^{2}-ab+b^{2}>ab\\) (add \\(ab\\) to both sides). Then multiply BOTH sides by \\((a+b)\\): you may do this without flipping the inequality because \\(a+b>0\\) (\\(a,b\\) are positive).",
+          "steps": [
+            {
+              "explain": "Expand the square.",
+              "work": "\\((a-b)^{2}=a^{2}-2ab+b^{2}>0\\)"
+            },
+            {
+              "explain": "Add \\(ab\\) to both sides to turn \\(-2ab\\) into \\(-ab\\).",
+              "work": "\\(a^{2}-ab+b^{2}>ab\\quad(1)\\)"
+            },
+            {
+              "explain": "Multiply (1) by \\(a+b\\). Since \\(a>0\\) and \\(b>0\\), \\(a+b>0\\), so the inequality sign STAYS the same (multiplying by a positive keeps \\(>\\)).",
+              "work": "\\((a+b)\\left(a^{2}-ab+b^{2}\\right)>(a+b)\\,ab\\)"
+            },
+            {
+              "explain": "The left side is \\(a^{3}+b^{3}\\) (given factorisation).",
+              "work": "\\(a^{3}+b^{3}>ab(a+b)\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B gets \\(-ab\\) (sign error when rearranging); C multiplies by 1 instead of \\(a+b\\); D never links to the required result.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove \\(a^{3}+b^{3}>ab(a+b)\\)",
+              "note": "\\((a-b)^{2}>0\\Rightarrow a^{2}-ab+b^{2}>ab\\); multiply by \\(a+b>0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q15a2",
+          "type": "mc",
+          "stem": "Hence, or otherwise, show that if \\(c\\) is also a positive real number that is not equal to \\(a\\) or \\(b\\), then \\(2\\left(a^{3}+b^{3}+c^{3}\\right)>a^{2}(b+c)+b^{2}(a+c)+c^{2}(a+b)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&a^{3}+b^{3}>ab(a+b),\\ \\ a^{3}+c^{3}>ac(a+c),\\ \\ b^{3}+c^{3}>bc(b+c)\\\\ &\\text{add: }2(a^{3}+b^{3}+c^{3})>a^{2}b+ab^{2}+a^{2}c+ac^{2}+b^{2}c+bc^{2}=a^{2}(b+c)+b^{2}(a+c)+c^{2}(a+b)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&a^{3}+b^{3}>ab(a+b),\\ \\ a^{3}+c^{3}>ac(a+c),\\ \\ b^{3}+c^{3}>bc(b+c)\\\\ &\\text{multiply: }(a^{3}+b^{3})(a^{3}+c^{3})(b^{3}+c^{3})>\\ldots\\end{aligned}\\)",
+            "\\(\\begin{aligned}&a^{3}+b^{3}>ab(a+b)\\ \\ \\text{(only this one)}\\\\ &\\Rightarrow2(a^{3}+b^{3}+c^{3})>a^{2}(b+c)+b^{2}(a+c)+c^{2}(a+b)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&a^{3}+b^{3}>ab(a+b),\\ \\ a^{3}+c^{3}>ac(a+c),\\ \\ b^{3}+c^{3}>bc(b+c)\\\\ &\\text{add: }(a^{3}+b^{3}+c^{3})>a^{2}(b+c)+b^{2}(a+c)+c^{2}(a+b)\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply part (i) to EACH of the three pairs \\((a,b)\\), \\((a,c)\\), \\((b,c)\\) (all different positive numbers), then ADD the three inequalities. Each cube appears in two of the pairs, which produces the factor 2.",
+          "steps": [
+            {
+              "explain": "Part (i) applies to any two different positive numbers. Use it three times.",
+              "work": "\\(a^{3}+b^{3}>ab(a+b),\\quad a^{3}+c^{3}>ac(a+c),\\quad b^{3}+c^{3}>bc(b+c)\\)"
+            },
+            {
+              "explain": "Add the three inequalities (adding inequalities of the same direction keeps the direction). LEFT: each of \\(a^{3},b^{3},c^{3}\\) appears twice.",
+              "work": "\\(2\\left(a^{3}+b^{3}+c^{3}\\right)>ab(a+b)+ac(a+c)+bc(b+c)\\)"
+            },
+            {
+              "explain": "Expand the right side: \\(a^{2}b+ab^{2}+a^{2}c+ac^{2}+b^{2}c+bc^{2}\\), then group by the squared letter.",
+              "work": "\\(=a^{2}(b+c)+b^{2}(a+c)+c^{2}(a+b)\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B multiplies inequalities (not helpful here); C uses only one inequality (it cannot involve \\(c\\)); D loses the factor 2 on the left (each cube is counted twice).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, or otherwise, show that",
+              "note": "Part (i) on \\((a,b)\\), \\((a,c)\\), \\((b,c)\\); add."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4762,6 +5402,130 @@
           "meta": {
             "source": "Gosford High School 2020 Year 12 Mathematics Extension 2 Trial HSC Examination",
             "school": "Gosford High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q15c",
+          "type": "mc",
+          "stem": "Prove by mathematical induction that for \\(n\\ge1\\): \\(1\\cdot\\ln\\dfrac{2}{1}+2\\cdot\\ln\\dfrac{3}{2}+\\cdots+n\\cdot\\ln\\left(\\dfrac{n+1}{n}\\right)=\\ln\\left(\\dfrac{(n+1)^{n}}{n!}\\right)\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=\\ln2=\\text{RHS}.\\quad\\text{Assume }S_{k}=\\ln\\dfrac{(k+1)^{k}}{k!}\\\\ &S_{k+1}=\\ln\\dfrac{(k+1)^{k}}{k!}+(k+1)\\ln\\dfrac{k+2}{k+1}=\\ln\\left[\\dfrac{(k+1)^{k}}{k!}\\cdot\\dfrac{(k+2)^{k+1}}{(k+1)^{k+1}}\\right]=\\ln\\dfrac{(k+2)^{k+1}}{(k+1)!}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=\\ln2=\\text{RHS}.\\quad\\text{Assume }S_{k}=\\ln\\dfrac{(k+1)^{k}}{k!}\\\\ &S_{k+1}=\\ln\\dfrac{(k+1)^{k}}{k!}+\\ln\\dfrac{k+2}{k+1}=\\ln\\dfrac{(k+1)^{k-1}(k+2)}{k!}\\ne\\ln\\dfrac{(k+2)^{k+1}}{(k+1)!}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=\\ln2=\\text{RHS}.\\quad\\text{Assume }S_{k}=\\ln\\dfrac{(k+1)^{k}}{k!}\\\\ &S_{k+1}=\\ln\\dfrac{(k+1)^{k}}{k!}+(k+1)\\ln\\dfrac{k+2}{k+1}=\\ln\\dfrac{(k+1)^{k}(k+2)^{k+1}}{k!\\,(k+1)^{k}}=\\ln\\dfrac{(k+2)^{k+1}}{k!}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ \\text{LHS}=\\ln1=0\\ne\\ln2\\ \\text{so the statement is false}\\\\ &\\text{(base case fails)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Three steps: (1) TEST \\(n=1\\); (2) ASSUME it is true for \\(n=k\\); (3) PROVE it for \\(n=k+1\\) by adding the NEXT term \\((k+1)\\ln\\dfrac{k+2}{k+1}\\) to the assumed sum. Use \\(a\\ln b=\\ln b^{a}\\) and \\(\\ln A+\\ln B=\\ln AB\\).",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): LHS \\(=1\\cdot\\ln\\dfrac{2}{1}=\\ln2\\). RHS \\(=\\ln\\dfrac{2^{1}}{1!}=\\ln2\\). Equal ✓.",
+              "work": "\\(\\text{LHS}=\\ln2=\\text{RHS}\\)"
+            },
+            {
+              "explain": "Assume \\(P(k)\\): the sum of the first \\(k\\) terms is \\(\\ln\\dfrac{(k+1)^{k}}{k!}\\).",
+              "work": "\\(S_{k}=\\ln\\dfrac{(k+1)^{k}}{k!}\\)"
+            },
+            {
+              "explain": "To prove \\(P(k+1)\\) we must show \\(S_{k+1}=\\ln\\dfrac{(k+2)^{k+1}}{(k+1)!}\\). The extra term (the \\((k+1)\\)th) is \\((k+1)\\ln\\dfrac{k+2}{k+1}\\).",
+              "work": "\\(S_{k+1}=S_{k}+(k+1)\\ln\\dfrac{k+2}{k+1}\\)"
+            },
+            {
+              "explain": "Substitute the assumption and move the multiplier into the log: \\((k+1)\\ln\\dfrac{k+2}{k+1}=\\ln\\left(\\dfrac{k+2}{k+1}\\right)^{k+1}\\).",
+              "work": "\\(S_{k+1}=\\ln\\dfrac{(k+1)^{k}}{k!}+\\ln\\dfrac{(k+2)^{k+1}}{(k+1)^{k+1}}\\)"
+            },
+            {
+              "explain": "Add the logs by MULTIPLYING the arguments; then cancel \\((k+1)^{k}\\) with \\((k+1)^{k+1}\\) (leaving \\(\\dfrac{1}{k+1}\\)) and use \\(k!\\,(k+1)=(k+1)!\\).",
+              "work": "\\(=\\ln\\dfrac{(k+1)^{k}(k+2)^{k+1}}{k!\\,(k+1)^{k+1}}=\\ln\\dfrac{(k+2)^{k+1}}{(k+1)!}\\)"
+            },
+            {
+              "explain": "This is \\(P(k+1)\\). So \\(P(1)\\) is true and \\(P(k)\\Rightarrow P(k+1)\\), so by mathematical induction \\(P(n)\\) holds for all \\(n\\ge1\\). ∎",
+              "work": "\\(P(1)\\ \\text{and}\\ P(k)\\Rightarrow P(k+1)\\ \\Rightarrow\\ P(n)\\ \\forall n\\ge1\\)"
+            },
+            {
+              "explain": "Why not the others: B drops the multiplier \\((k+1)\\) on the new term; C cancels \\((k+1)^{k}\\) instead of \\((k+1)^{k+1}\\), leaving \\(k!\\) instead of \\((k+1)!\\); D wrongly evaluates \\(\\ln\\dfrac{2}{1}\\) as \\(\\ln1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction",
+              "note": "Base \\(n=1\\); assume \\(S_k\\); add \\((k+1)\\ln\\dfrac{k+2}{k+1}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q13c",
+          "type": "mc",
+          "stem": "Given \\(a_{n+1}=\\sqrt{2a_{n}}\\) and \\(a_{1}=1\\), prove by mathematical induction that for all integers \\(n\\ge1\\), \\(a_{n}=2^{\\left(1-2^{(1-n)}\\right)}\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&n=1:\\ 2^{1-2^{0}}=2^{0}=1=a_{1}.\\quad\\text{Assume }a_{k}=2^{1-2^{1-k}}\\\\ &a_{k+1}=\\sqrt{2\\cdot2^{1-2^{1-k}}}=\\sqrt{2^{2-2^{1-k}}}=2^{1-2^{-k}}=2^{1-2^{1-(k+1)}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ 2^{1-2^{0}}=2^{0}=1=a_{1}.\\quad\\text{Assume }a_{k}=2^{1-2^{1-k}}\\\\ &a_{k+1}=\\sqrt{2\\cdot2^{1-2^{1-k}}}=\\sqrt{2^{2-2^{1-k}}}=2^{2-2^{1-k}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ 2^{1-2^{0}}=2^{0}=1=a_{1}.\\quad\\text{Assume }a_{k}=2^{1-2^{1-k}}\\\\ &a_{k+1}=\\sqrt{2}\\cdot2^{1-2^{1-k}}=2^{\\frac32-2^{1-k}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&n=1:\\ 2^{1-2^{1}}=2^{-1}\\ne1\\\\ &\\text{(the base case fails)}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Base case \\(n=1\\). Assume \\(P(k)\\): \\(a_{k}=2^{1-2^{1-k}}\\). Prove \\(P(k+1)\\): \\(a_{k+1}=2^{1-2^{-k}}\\) by substituting \\(a_{k}\\) into \\(a_{k+1}=\\sqrt{2a_{k}}\\) and using index laws (\\(\\sqrt{2^{m}}=2^{\\frac{m}{2}}\\)).",
+          "steps": [
+            {
+              "explain": "Base case \\(n=1\\): the formula gives \\(2^{1-2^{1-1}}=2^{1-2^{0}}=2^{1-1}=2^{0}=1\\), which equals \\(a_{1}=1\\) ✓.",
+              "work": "\\(P(1):\\ 2^{1-2^{0}}=2^{0}=1=a_{1}\\)"
+            },
+            {
+              "explain": "Assume \\(P(k)\\) is true for some \\(k\\ge1\\).",
+              "work": "\\(a_{k}=2^{1-2^{1-k}}\\)"
+            },
+            {
+              "explain": "We must show \\(P(k+1)\\): \\(a_{k+1}=2^{1-2^{1-(k+1)}}=2^{1-2^{-k}}\\).",
+              "work": "\\(\\text{RTP: }a_{k+1}=2^{1-2^{-k}}\\)"
+            },
+            {
+              "explain": "Use the recurrence and the assumption: \\(a_{k+1}=\\sqrt{2a_{k}}=\\sqrt{2\\times2^{1-2^{1-k}}}\\). Multiply powers of 2 by ADDING indices: \\(2^{1}\\times2^{1-2^{1-k}}=2^{2-2^{1-k}}\\).",
+              "work": "\\(a_{k+1}=\\sqrt{2^{2-2^{1-k}}}\\)"
+            },
+            {
+              "explain": "A square root halves the index: \\(\\dfrac{2-2^{1-k}}{2}=1-\\dfrac{2^{1-k}}{2}=1-2^{1-k-1}=1-2^{-k}\\).",
+              "work": "\\(a_{k+1}=2^{\\frac{2-2^{1-k}}{2}}=2^{1-2^{-k}}\\)"
+            },
+            {
+              "explain": "This is \\(P(k+1)\\). \\(P(1)\\) is true and \\(P(k)\\Rightarrow P(k+1)\\), so \\(P(n)\\) is true for all \\(n\\ge1\\) by mathematical induction. ∎",
+              "work": "\\(a_{n}=2^{1-2^{1-n}}\\ \\ \\forall n\\ge1\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets to halve the index (it drops the square root); C only square-roots one factor; D evaluates the base case incorrectly (\\(2^{1-1}=2^{0}\\), not \\(2^{1}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "prove by mathematical induction",
+              "note": "Base \\(n=1\\); sub \\(a_{k}\\) into \\(\\sqrt{2a_{k}}\\); halve the index."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

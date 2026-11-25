@@ -948,6 +948,324 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q12c",
+          "type": "mc",
+          "stem": "Using vectors, determine whether the points \\(A(0,4,4)\\), \\(B(8,20,36)\\) and \\(C(12,28,52)\\) are collinear.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}8\\\\ 16\\\\ 32\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}12\\\\ 24\\\\ 48\\end{pmatrix}\\\\ &\\overrightarrow{AC}=\\dfrac{3}{2}\\overrightarrow{AB}\\ \\Rightarrow\\ \\text{collinear}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}8\\\\ 16\\\\ 32\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}12\\\\ 24\\\\ 48\\end{pmatrix}\\\\ &\\overrightarrow{AB}\\ne\\overrightarrow{AC}\\ \\Rightarrow\\ \\text{not collinear}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}8\\\\ 16\\\\ 32\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}12\\\\ 24\\\\ 48\\end{pmatrix}\\\\ &|\\overrightarrow{AB}|\\ne|\\overrightarrow{AC}|\\ \\Rightarrow\\ \\text{not collinear}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}8\\\\ 24\\\\ 40\\end{pmatrix},\\ \\overrightarrow{AC}=\\begin{pmatrix}12\\\\ 32\\\\ 56\\end{pmatrix}\\\\ &\\text{no scalar }k\\text{ with }\\overrightarrow{AC}=k\\overrightarrow{AB}\\Rightarrow\\text{not collinear}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Three points are collinear exactly when \\(\\overrightarrow{AC}\\) is a SCALAR MULTIPLE of \\(\\overrightarrow{AB}\\) (parallel vectors sharing the point \\(A\\)). Compute both vectors as (end \\(-\\) start) and compare their components.",
+          "steps": [
+            {
+              "explain": "Find \\(\\overrightarrow{AB}=B-A\\) (end minus start), component by component.",
+              "work": "\\(\\overrightarrow{AB}=\\begin{pmatrix}8-0\\\\ 20-4\\\\ 36-4\\end{pmatrix}=\\begin{pmatrix}8\\\\ 16\\\\ 32\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Find \\(\\overrightarrow{AC}=C-A\\).",
+              "work": "\\(\\overrightarrow{AC}=\\begin{pmatrix}12-0\\\\ 28-4\\\\ 52-4\\end{pmatrix}=\\begin{pmatrix}12\\\\ 24\\\\ 48\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Compare the components: each component of \\(\\overrightarrow{AC}\\) divided by the matching component of \\(\\overrightarrow{AB}\\) must give the SAME number \\(k\\).",
+              "work": "\\(\\dfrac{12}{8}=\\dfrac{3}{2},\\qquad\\dfrac{24}{16}=\\dfrac{3}{2},\\qquad\\dfrac{48}{32}=\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "All three ratios equal \\(\\dfrac{3}{2}\\), so \\(\\overrightarrow{AC}=\\dfrac{3}{2}\\overrightarrow{AB}\\): the vectors are parallel AND share the point \\(A\\), so \\(A\\), \\(B\\), \\(C\\) lie on one line.",
+              "work": "\\(\\overrightarrow{AC}=\\dfrac{3}{2}\\overrightarrow{AB}\\ \\Rightarrow\\ A,B,C\\ \\text{collinear}\\)"
+            },
+            {
+              "explain": "Why not the others: B only says the vectors are not EQUAL (they only need to be parallel); C compares lengths (collinear points can be at any distances); D uses wrong vector components.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Using vectors, determine whether the points",
+              "note": "Collinear \\(\\Leftrightarrow\\overrightarrow{AC}=k\\overrightarrow{AB}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12d1",
+          "type": "mc",
+          "stem": "A line passes through the points \\(A(-3,2,6)\\) and \\(B(7,4,-3)\\). Write a vector equation of the line.",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}10\\\\ 2\\\\-9\\end{pmatrix}\\)",
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}4\\\\ 6\\\\ 3\\end{pmatrix}\\)",
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}10\\\\ 2\\\\ 9\\end{pmatrix}\\)",
+            "\\(\\underset{\\sim}{r}=\\begin{pmatrix}7\\\\ 4\\\\-3\\end{pmatrix}+\\lambda\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}\\)"
+          ],
+          "answer": 0,
+          "hint": "A line needs a POINT on it and a DIRECTION vector. Use \\(A\\) as the point and \\(\\overrightarrow{AB}=B-A\\) as the direction.",
+          "steps": [
+            {
+              "explain": "Direction vector: \\(\\overrightarrow{AB}=B-A\\) (end minus start).",
+              "work": "\\(\\overrightarrow{AB}=\\begin{pmatrix}7-(-3)\\\\ 4-2\\\\-3-6\\end{pmatrix}=\\begin{pmatrix}10\\\\ 2\\\\-9\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"10.0\" y1=\"205.0\" x2=\"320.0\" y2=\"60.0\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"60\" cy=\"170\" r=\"5\" fill=\"#3b4ea8\"/><circle cx=\"250\" cy=\"90\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"14.0\" y=\"148.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(−3, 2, 6)</text><text x=\"240.0\" y=\"78.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(7, 4, −3)</text><line x1=\"60.0\" y1=\"170.0\" x2=\"250.0\" y2=\"90.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><polygon points=\"250,90 237,92 243,99\" fill=\"#d97706\"/><text x=\"167.0\" y=\"152.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">direction AB</text><text x=\"352.0\" y=\"222.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+              }
+            },
+            {
+              "explain": "Take \\(A(-3,2,6)\\) as the known point (its position vector).",
+              "work": "\\(\\underset{\\sim}{a}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Vector equation of a line: \\(\\underset{\\sim}{r}=\\underset{\\sim}{a}+\\lambda\\underset{\\sim}{d}\\) with \\(\\lambda\\in\\mathbb{R}\\).",
+              "work": "\\(\\underset{\\sim}{r}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}10\\\\ 2\\\\-9\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the coordinates \\(A+B\\) instead of subtracting; C has a sign error in the \\(z\\)-component (\\(-3-6=-9\\), not \\(+9\\)); D uses \\(B\\) as the point but the position vector of \\(A\\) as the direction, which is wrong.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write a vector equation of the line.",
+              "note": "Point + \\(\\lambda\\) (end \\(-\\) start)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12d2",
+          "type": "mc",
+          "stem": "A line passes through the points \\(A(-3,2,6)\\) and \\(B(7,4,-3)\\). Write parametric equations for the line.",
+          "difficulty": "easy",
+          "options": [
+            "\\(x=-3+10\\lambda,\\ \\ y=2+2\\lambda,\\ \\ z=6-9\\lambda\\)",
+            "\\(x=10-3\\lambda,\\ \\ y=2+2\\lambda,\\ \\ z=-9+6\\lambda\\)",
+            "\\(x=-3+4\\lambda,\\ \\ y=2+6\\lambda,\\ \\ z=6+3\\lambda\\)",
+            "\\(x=-3+10\\lambda,\\ \\ y=2+2\\lambda,\\ \\ z=6+9\\lambda\\)"
+          ],
+          "answer": 0,
+          "hint": "Parametric equations are just the vector equation \\(\\underset{\\sim}{r}=\\underset{\\sim}{a}+\\lambda\\underset{\\sim}{d}\\) written one component at a time: \\(x=a_{1}+\\lambda d_{1}\\), \\(y=a_{2}+\\lambda d_{2}\\), \\(z=a_{3}+\\lambda d_{3}\\).",
+          "steps": [
+            {
+              "explain": "From part (i): \\(\\underset{\\sim}{r}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}10\\\\ 2\\\\-9\\end{pmatrix}\\).",
+              "work": "\\(\\begin{pmatrix}x\\\\ y\\\\ z\\end{pmatrix}=\\begin{pmatrix}-3\\\\ 2\\\\ 6\\end{pmatrix}+\\lambda\\begin{pmatrix}10\\\\ 2\\\\-9\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Write one equation for each row (top row is \\(x\\), middle \\(y\\), bottom \\(z\\)).",
+              "work": "\\(x=-3+10\\lambda,\\qquad y=2+2\\lambda,\\qquad z=6-9\\lambda\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps the point and the direction; C uses \\(A+B\\) as the direction; D has the wrong sign in \\(z\\) (\\(+9\\lambda\\) instead of \\(-9\\lambda\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write parametric equations for the line.",
+              "note": "One equation per component: \\(x=-3+10\\lambda\\)…"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q12d3",
+          "type": "mc",
+          "stem": "A line passes through the points \\(A(-3,2,6)\\) and \\(B(7,4,-3)\\). Determine if \\(C(-13,0,15)\\) lies on the line.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&-13=-3+10\\lambda\\Rightarrow\\lambda=-1;\\quad0=2+2\\lambda\\Rightarrow\\lambda=-1;\\quad15=6-9\\lambda\\Rightarrow\\lambda=-1\\\\ &\\text{same }\\lambda\\text{ in all three}\\Rightarrow C\\text{ lies on the line}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&-13=-3+10\\lambda\\Rightarrow\\lambda=-1;\\quad0=2+2\\lambda\\Rightarrow\\lambda=-1;\\quad15=6-9\\lambda\\Rightarrow\\lambda=1\\\\ &\\lambda\\text{ values differ}\\Rightarrow C\\text{ is not on the line}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&-13=-3+10\\lambda\\Rightarrow\\lambda=1;\\quad0=2+2\\lambda\\Rightarrow\\lambda=-1;\\quad15=6-9\\lambda\\Rightarrow\\lambda=-1\\\\ &\\lambda\\text{ values differ}\\Rightarrow C\\text{ is not on the line}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&-13=-3+10\\lambda\\Rightarrow\\lambda=-1\\\\ &\\text{only one coordinate is needed}\\Rightarrow C\\text{ is not on the line}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Put the coordinates of \\(C\\) into the parametric equations \\(x=-3+10\\lambda\\), \\(y=2+2\\lambda\\), \\(z=6-9\\lambda\\). \\(C\\) is on the line only if ONE value of \\(\\lambda\\) works for ALL THREE equations.",
+          "steps": [
+            {
+              "explain": "Use the parametric equations from part (ii) and substitute \\(C(-13,0,15)\\) into each.",
+              "work": "\\(x=-3+10\\lambda,\\quad y=2+2\\lambda,\\quad z=6-9\\lambda\\)"
+            },
+            {
+              "explain": "\\(x\\): \\(-13=-3+10\\lambda\\Rightarrow10\\lambda=-10\\Rightarrow\\lambda=-1\\).",
+              "work": "\\(\\lambda=-1\\)"
+            },
+            {
+              "explain": "\\(y\\): \\(0=2+2\\lambda\\Rightarrow2\\lambda=-2\\Rightarrow\\lambda=-1\\).",
+              "work": "\\(\\lambda=-1\\)"
+            },
+            {
+              "explain": "\\(z\\): \\(15=6-9\\lambda\\Rightarrow-9\\lambda=9\\Rightarrow\\lambda=-1\\).",
+              "work": "\\(\\lambda=-1\\)"
+            },
+            {
+              "explain": "The SAME \\(\\lambda=-1\\) satisfies all three equations, so \\(C\\) is the point on the line reached at \\(\\lambda=-1\\) (one step BEFORE \\(A\\)). Hence \\(C\\) lies on the line.",
+              "work": "\\(C=A-\\overrightarrow{AB}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"170.0\" x2=\"340.0\" y2=\"40.0\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"190.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C  (λ = −1)</text><circle cx=\"40\" cy=\"162\" r=\"6\" fill=\"#dc2626\"/><circle cx=\"110\" cy=\"133\" r=\"5\" fill=\"#3b4ea8\"/><circle cx=\"250\" cy=\"75\" r=\"5\" fill=\"#3b4ea8\"/><text x=\"110.0\" y=\"122.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A  (λ = 0)</text><text x=\"250.0\" y=\"64.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B  (λ = 1)</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B and C each contain an arithmetic slip (a \\(\\lambda\\) value of \\(+1\\)); D checks only one coordinate, but a point must satisfy ALL three equations.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine if \\(C(-13,0,15)\\) lies on the line.",
+              "note": "Same \\(\\lambda\\) in \\(x\\), \\(y\\), \\(z\\) \\(\\Rightarrow\\) on the line."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11a",
+          "type": "mc",
+          "stem": "Given \\(\\underset{\\sim}{a}=2\\underset{\\sim}{i}+3\\underset{\\sim}{j}+\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{b}=-5\\underset{\\sim}{i}+\\underset{\\sim}{j}-2\\underset{\\sim}{k}\\), find \\(2\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) in the form \\(\\begin{pmatrix}x\\\\ y\\\\ z\\end{pmatrix}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{pmatrix}9\\\\ 5\\\\ 4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-1\\\\ 7\\\\ 0\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}9\\\\ 7\\\\ 4\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}-1\\\\ 5\\\\ 0\\end{pmatrix}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write both vectors as columns, MULTIPLY every component of \\(\\underset{\\sim}{a}\\) by 2, then SUBTRACT the matching components of \\(\\underset{\\sim}{b}\\). Careful: subtracting a negative adds.",
+          "steps": [
+            {
+              "explain": "Column form: \\(\\underset{\\sim}{i},\\underset{\\sim}{j},\\underset{\\sim}{k}\\) are the top, middle and bottom entries.",
+              "work": "\\(\\underset{\\sim}{a}=\\begin{pmatrix}2\\\\ 3\\\\ 1\\end{pmatrix},\\qquad\\underset{\\sim}{b}=\\begin{pmatrix}-5\\\\ 1\\\\-2\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Double \\(\\underset{\\sim}{a}\\).",
+              "work": "\\(2\\underset{\\sim}{a}=\\begin{pmatrix}4\\\\ 6\\\\ 2\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Subtract \\(\\underset{\\sim}{b}\\) component by component: \\(4-(-5)=9\\), \\(6-1=5\\), \\(2-(-2)=4\\).",
+              "work": "\\(2\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}4-(-5)\\\\ 6-1\\\\ 2-(-2)\\end{pmatrix}=\\begin{pmatrix}9\\\\ 5\\\\ 4\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Why not the others: B and D (first entry \\(-1\\)) add \\(-5\\) instead of subtracting it; C has \\(6+1=7\\) (added the \\(\\underset{\\sim}{j}\\) parts instead of subtracting).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find \\(2\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+              "note": "\\(2\\underset{\\sim}{a}\\) first; subtracting \\(-5\\) gives \\(+5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11c1",
+          "type": "mc",
+          "stem": "Consider the line \\(\\underset{\\sim}{r}=\\begin{pmatrix}5\\\\ 3\\end{pmatrix}+\\lambda\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\) where \\(\\lambda\\in\\mathbb{R}\\). Show that the point \\((0,6)\\) lies on \\(\\underset{\\sim}{r}\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&5-5\\lambda=0\\Rightarrow\\lambda=1;\\quad3+3\\lambda=6\\Rightarrow\\lambda=1\\\\ &\\text{the same }\\lambda=1\\text{ works for both, so }(0,6)\\text{ lies on }\\underset{\\sim}{r}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&5-5\\lambda=0\\Rightarrow\\lambda=1;\\quad3+3\\lambda=6\\Rightarrow\\lambda=3\\\\ &\\text{different }\\lambda\\text{, so }(0,6)\\text{ is not on }\\underset{\\sim}{r}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&5-5\\lambda=0\\Rightarrow\\lambda=-1;\\quad3+3\\lambda=6\\Rightarrow\\lambda=1\\\\ &\\text{different }\\lambda\\text{, so }(0,6)\\text{ is not on }\\underset{\\sim}{r}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&5-5\\lambda=6\\Rightarrow\\lambda=-\\dfrac{1}{5};\\quad3+3\\lambda=0\\Rightarrow\\lambda=-1\\\\ &\\text{different }\\lambda\\text{, so }(0,6)\\text{ is not on }\\underset{\\sim}{r}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "A point is on the line if there is ONE value of \\(\\lambda\\) that gives BOTH its coordinates. Write \\(x=5-5\\lambda\\), \\(y=3+3\\lambda\\) and solve each for \\(\\lambda\\) using \\(x=0\\), \\(y=6\\).",
+          "steps": [
+            {
+              "explain": "Write the line as two equations, one per component.",
+              "work": "\\(x=5-5\\lambda,\\qquad y=3+3\\lambda\\)"
+            },
+            {
+              "explain": "Put \\(x=0\\): \\(0=5-5\\lambda\\Rightarrow5\\lambda=5\\Rightarrow\\lambda=1\\).",
+              "work": "\\(\\lambda=1\\)"
+            },
+            {
+              "explain": "Put \\(y=6\\): \\(6=3+3\\lambda\\Rightarrow3\\lambda=3\\Rightarrow\\lambda=1\\).",
+              "work": "\\(\\lambda=1\\)"
+            },
+            {
+              "explain": "Both coordinates give the SAME \\(\\lambda=1\\), so \\((0,6)\\) is the point of the line at \\(\\lambda=1\\). Check: \\(\\begin{pmatrix}5\\\\ 3\\end{pmatrix}+1\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}=\\begin{pmatrix}0\\\\ 6\\end{pmatrix}\\) ✓. ∎",
+              "work": "\\(\\begin{pmatrix}5\\\\ 3\\end{pmatrix}+\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}=\\begin{pmatrix}0\\\\ 6\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Why not the others: B, C and D contain an arithmetic slip, so they produce two different \\(\\lambda\\) values and wrongly conclude the point is not on the line.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the point \\((0,6)\\) lies on",
+              "note": "Same \\(\\lambda\\) from \\(x=5-5\\lambda\\) and \\(y=3+3\\lambda\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1848,6 +2166,63 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q11c2",
+          "type": "mc",
+          "stem": "Consider the line \\(\\underset{\\sim}{r}=\\begin{pmatrix}5\\\\ 3\\end{pmatrix}+\\lambda\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\) where \\(\\lambda\\in\\mathbb{R}\\). Show that the line through the points \\(A(2,3)\\) and \\(B(-1,-2)\\) is perpendicular to \\(\\underset{\\sim}{r}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}-3\\\\-5\\end{pmatrix};\\quad\\begin{pmatrix}-3\\\\-5\\end{pmatrix}\\cdot\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}=15-15=0\\\\ &\\text{dot product }0\\Rightarrow\\text{perpendicular}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}-3\\\\-5\\end{pmatrix};\\quad\\begin{pmatrix}-3\\\\-5\\end{pmatrix}\\cdot\\begin{pmatrix}5\\\\ 3\\end{pmatrix}=-15-15=-30\\\\ &\\text{not zero}\\Rightarrow\\text{not perpendicular}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}3\\\\ 5\\end{pmatrix};\\quad\\begin{pmatrix}3\\\\ 5\\end{pmatrix}\\cdot\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}=-15+15=0\\ \\text{but }\\overrightarrow{AB}=B+A\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{AB}=\\begin{pmatrix}-3\\\\-5\\end{pmatrix};\\quad\\dfrac{-3}{-5}=\\dfrac{-5}{3}\\ ?\\ \\text{gradients equal}\\\\ &\\Rightarrow\\text{parallel, not perpendicular}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Two lines are PERPENDICULAR when their direction vectors have DOT PRODUCT \\(0\\). The direction of \\(\\underset{\\sim}{r}\\) is \\(\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\) (the number multiplying \\(\\lambda\\)); find the direction of line \\(AB\\) as end minus start.",
+          "steps": [
+            {
+              "explain": "Direction of line \\(AB\\): \\(\\overrightarrow{AB}=B-A\\) (end minus start).",
+              "work": "\\(\\overrightarrow{AB}=\\begin{pmatrix}-1-2\\\\-2-3\\end{pmatrix}=\\begin{pmatrix}-3\\\\-5\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"20.0\" y1=\"225.0\" x2=\"410.0\" y2=\"225.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"294.0\" x2=\"140.0\" y2=\"12.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"225.0\" x2=\"403.1\" y2=\"221.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"225.0\" x2=\"403.1\" y2=\"229.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"12.0\" x2=\"136.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"12.0\" x2=\"144.0\" y2=\"18.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"408.0\" y=\"241.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"148.0\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"38.0\" y1=\"222.0\" x2=\"38.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"72.0\" y1=\"222.0\" x2=\"72.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"106.0\" y1=\"222.0\" x2=\"106.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"140.0\" y1=\"222.0\" x2=\"140.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"174.0\" y1=\"222.0\" x2=\"174.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"208.0\" y1=\"222.0\" x2=\"208.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"242.0\" y1=\"222.0\" x2=\"242.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"276.0\" y1=\"222.0\" x2=\"276.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"310.0\" y1=\"222.0\" x2=\"310.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"344.0\" y1=\"222.0\" x2=\"344.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"378.0\" y1=\"222.0\" x2=\"378.0\" y2=\"228.0\" stroke=\"#334155\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><line x1=\"38.0\" y1=\"37.8\" x2=\"378.0\" y2=\"181.8\" stroke=\"#3b4ea8\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><text x=\"65.2\" y=\"32.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">r = (5, 3) + λ(−5, 3)</text><line x1=\"72.0\" y1=\"328.2\" x2=\"255.6\" y2=\"97.8\" stroke=\"#d97706\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><circle cx=\"310.0\" cy=\"153.0\" r=\"4.5\" fill=\"#3b4ea8\"/><text x=\"320.0\" y=\"141.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">(5, 3)</text><circle cx=\"140.0\" cy=\"81.0\" r=\"4.5\" fill=\"#3b4ea8\"/><text x=\"130.0\" y=\"101.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">(0, 6)</text><circle cx=\"208.0\" cy=\"153.0\" r=\"4.5\" fill=\"#d97706\"/><text x=\"218.0\" y=\"169.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(2, 3)</text><circle cx=\"106.0\" cy=\"273.0\" r=\"4.5\" fill=\"#d97706\"/><text x=\"96.0\" y=\"279.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(−1, −2)</text><circle cx=\"235.0\" cy=\"121.2\" r=\"4\" fill=\"#dc2626\"/><text x=\"245.0\" y=\"113.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Direction of \\(\\underset{\\sim}{r}\\): \\(\\underset{\\sim}{d}=\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\).",
+              "work": "\\(\\underset{\\sim}{d}=\\begin{pmatrix}-5\\\\ 3\\end{pmatrix}\\)"
+            },
+            {
+              "explain": "Dot product: multiply matching components and add: \\((-3)(-5)+(-5)(3)=15-15\\).",
+              "work": "\\(\\overrightarrow{AB}\\cdot\\underset{\\sim}{d}=15-15=0\\)"
+            },
+            {
+              "explain": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=|\\underset{\\sim}{u}||\\underset{\\sim}{v}|\\cos\\theta=0\\) with both vectors non-zero means \\(\\cos\\theta=0\\), so \\(\\theta=90^{\\circ}\\): the lines are perpendicular. ∎",
+              "work": "\\(\\overrightarrow{AB}\\perp\\underset{\\sim}{r}\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\begin{pmatrix}5\\\\ 3\\end{pmatrix}\\) (the POINT vector) instead of the direction; C uses \\(A+B\\) not \\(B-A\\); D only shows the two directions are not parallel.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "is perpendicular to",
+              "note": "Perpendicular \\(\\Leftrightarrow\\) dot product of directions \\(=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2659,6 +3034,172 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q4",
+          "type": "mc",
+          "stem": "Find the radius and centre of the sphere: \\(x^{2}+y^{2}+z^{2}+x-3y+2z+2=0\\)",
+          "difficulty": "medium",
+          "options": [
+            "Radius \\(=\\dfrac{\\sqrt6}{2}\\) and centre \\(=\\left(\\dfrac{1}{2},\\dfrac{3}{2},1\\right)\\)",
+            "Radius \\(=\\dfrac{\\sqrt6}{3}\\) and centre \\(=\\left(-\\dfrac{1}{4},\\dfrac{3}{2},-3\\right)\\)",
+            "Radius \\(=\\dfrac{\\sqrt6}{2}\\) and centre \\(=\\left(-\\dfrac{1}{2},\\dfrac{3}{2},-1\\right)\\)",
+            "Radius \\(=\\dfrac{3\\sqrt6}{4}\\) and centre \\(=\\left(-\\dfrac{1}{3},\\dfrac{3}{2},-2\\right)\\)"
+          ],
+          "answer": 2,
+          "hint": "Complete the square separately in \\(x\\), \\(y\\) and \\(z\\). The centre is \\((-\\dfrac{\\text{coeff of }x}{2},\\ldots)\\): HALVE each linear coefficient and change its sign.",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\), \\(y\\), \\(z\\) terms and move the constant to the right.",
+              "work": "\\((x^{2}+x)+(y^{2}-3y)+(z^{2}+2z)=-2\\)"
+            },
+            {
+              "explain": "Complete the square: add \\(\\left(\\dfrac{\\text{coeff}}{2}\\right)^{2}\\) to each bracket (and to the right side). \\(x\\): \\(\\left(\\dfrac{1}{2}\\right)^{2}=\\dfrac{1}{4}\\); \\(y\\): \\(\\left(\\dfrac{-3}{2}\\right)^{2}=\\dfrac{9}{4}\\); \\(z\\): \\(\\left(\\dfrac{2}{2}\\right)^{2}=1\\).",
+              "work": "\\(\\left(x+\\dfrac{1}{2}\\right)^{2}+\\left(y-\\dfrac{3}{2}\\right)^{2}+(z+1)^{2}=-2+\\dfrac{1}{4}+\\dfrac{9}{4}+1\\)"
+            },
+            {
+              "explain": "Add the right-hand side: \\(-2+\\dfrac{1}{4}+\\dfrac{9}{4}+1=-1+\\dfrac{10}{4}=\\dfrac{3}{2}\\).",
+              "work": "\\(=\\dfrac{3}{2}\\)"
+            },
+            {
+              "explain": "Compare with \\((x-a)^{2}+(y-b)^{2}+(z-c)^{2}=r^{2}\\): the centre is \\((a,b,c)\\) — the OPPOSITE signs of the numbers inside the brackets.",
+              "work": "\\(\\text{centre}=\\left(-\\dfrac{1}{2},\\ \\dfrac{3}{2},\\ -1\\right)\\)"
+            },
+            {
+              "explain": "Radius: \\(r^{2}=\\dfrac{3}{2}\\), so \\(r=\\sqrt{\\dfrac{3}{2}}=\\dfrac{\\sqrt3}{\\sqrt2}=\\dfrac{\\sqrt6}{2}\\).",
+              "work": "\\(r=\\sqrt{\\dfrac{3}{2}}=\\dfrac{\\sqrt6}{2}\\)"
+            },
+            {
+              "explain": "Why not the others: A has the wrong signs on the centre; B and D divide the coefficients by the wrong numbers instead of halving them, so the centre and radius are wrong.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the radius and centre of the sphere",
+              "note": "Complete the square; centre = \\((-\\dfrac{1}{2}\\text{coeff})\\); \\(r^{2}\\) = right-hand side."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q8",
+          "type": "mc",
+          "stem": "The spheres represented by \\(\\left|\\begin{pmatrix}x\\\\ y\\\\ z\\end{pmatrix}\\right|=r_{1}\\) and \\(\\left|\\begin{pmatrix}x-a\\\\ y-b\\\\ z-c\\end{pmatrix}\\right|=r_{2}\\), where \\(r_{1},r_{2}\\) are prime numbers, intersect at one point only. Let \\(d=\\sqrt{a^{2}+b^{2}+c^{2}}\\). Which statement could be true?",
+          "difficulty": "hard",
+          "options": [
+            "\\(r_{1}+r_{2}+d=0\\)",
+            "\\(r_{1}-r_{2}=d\\)",
+            "\\((r_{1})^{2}+(r_{2})^{2}=d^{2}\\)",
+            "\\(r_{1}\\times r_{2}=d\\)"
+          ],
+          "answer": 1,
+          "hint": "Sphere 1 has centre \\(O\\) and radius \\(r_{1}\\); sphere 2 has centre \\((a,b,c)\\) and radius \\(r_{2}\\); \\(d\\) is the distance between the centres. Two spheres meet at ONE point only when they TOUCH — externally (\\(d=r_{1}+r_{2}\\)) or internally (\\(d=|r_{1}-r_{2}|\\)).",
+          "steps": [
+            {
+              "explain": "Read the equations: \\(|\\underset{\\sim}{r}-\\underset{\\sim}{c}|=r\\) is a sphere with centre \\(\\underset{\\sim}{c}\\). Centres \\(O(0,0,0)\\) and \\((a,b,c)\\); distance between centres \\(d=\\sqrt{a^{2}+b^{2}+c^{2}}\\).",
+              "work": "\\(d=\\text{distance between centres}\\)"
+            },
+            {
+              "explain": "Touching externally: \\(d=r_{1}+r_{2}\\). Touching internally (one inside the other): \\(d=r_{1}-r_{2}\\) or \\(d=r_{2}-r_{1}\\).",
+              "work": "\\(d=r_{1}+r_{2}\\quad\\text{or}\\quad d=|r_{1}-r_{2}|\\)"
+            },
+            {
+              "explain": "A: \\(r_{1}+r_{2}+d=0\\) is impossible: all three are positive, so the sum is positive.",
+              "work": "\\(r_{1},r_{2},d>0\\)"
+            },
+            {
+              "explain": "B: \\(r_{1}-r_{2}=d\\) matches internal touching, so it could be true. Example: \\(r_{1}=7\\), \\(r_{2}=2\\) (both prime) and centres \\(5\\) apart: \\(7-2=5=d\\) ✓.",
+              "work": "\\(r_{1}-r_{2}=d\\)"
+            },
+            {
+              "explain": "C: Case 1: \\(d^{2}=(r_{1}+r_{2})^{2}=r_{1}^{2}+2r_{1}r_{2}+r_{2}^{2}>r_{1}^{2}+r_{2}^{2}\\). Case 2: \\(d^{2}=(r_{1}-r_{2})^{2}=r_{1}^{2}-2r_{1}r_{2}+r_{2}^{2}<r_{1}^{2}+r_{2}^{2}\\). Never equal.",
+              "work": "\\(d^{2}\\ne r_{1}^{2}+r_{2}^{2}\\)"
+            },
+            {
+              "explain": "D: external touching would need \\(r_{1}r_{2}=r_{1}+r_{2}\\), i.e. \\(r_{1}=\\dfrac{r_{1}}{r_{2}}+1\\). For two DIFFERENT primes \\(\\dfrac{r_{1}}{r_{2}}\\) is not an integer, a contradiction; internal touching \\(r_{1}r_{2}=r_{1}-r_{2}\\) is impossible too. So D is rejected (the paper takes \\(r_{1}\\ne r_{2}\\); note that equal radii \\(2\\) and \\(2\\) would make D work, which the marking guide does not consider). Only B is the intended answer.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which statement could be true?",
+              "note": "One common point = tangent spheres: \\(d=r_{1}+r_{2}\\) or \\(d=|r_{1}-r_{2}|\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q10",
+          "type": "mc",
+          "stem": "The equation of the sphere with centre \\((4,b,-1)\\) is \\(x^{2}-8x+y^{2}+4y+z^{2}+2z=4\\). What is the value of \\(b\\)?",
+          "difficulty": "easy",
+          "options": [
+            "\\(-8\\)",
+            "\\(-4\\)",
+            "\\(-2\\)",
+            "\\(2\\)"
+          ],
+          "answer": 2,
+          "hint": "Complete the square in \\(x\\), \\(y\\), \\(z\\). The centre is \\((a,b,c)\\) from \\((x-a)^{2}+(y-b)^{2}+(z-c)^{2}=r^{2}\\) — so the sign INSIDE the bracket is opposite to the centre coordinate.",
+          "steps": [
+            {
+              "explain": "Complete the square: add \\(\\left(\\dfrac{\\text{coeff}}{2}\\right)^{2}\\) to both sides for each variable: \\(x\\): \\(16\\); \\(y\\): \\(4\\); \\(z\\): \\(1\\).",
+              "work": "\\((x^{2}-8x+16)+(y^{2}+4y+4)+(z^{2}+2z+1)=4+16+4+1\\)"
+            },
+            {
+              "explain": "Write each as a square.",
+              "work": "\\((x-4)^{2}+(y+2)^{2}+(z+1)^{2}=25\\)"
+            },
+            {
+              "explain": "Compare with \\((x-4)^{2}+(y-b)^{2}+(z-(-1))^{2}\\): \\(y+2=y-b\\Rightarrow b=-2\\). (Centre \\((4,-2,-1)\\), radius 5; the given \\(x\\)- and \\(z\\)-coordinates \\(4\\) and \\(-1\\) agree ✓.)",
+              "work": "\\(b=-2\\)"
+            },
+            {
+              "explain": "Why not the others: \\(b=2\\) forgets the sign change; \\(-4\\) halves wrongly (uses the coefficient \\(4\\) as the centre); \\(-8\\) comes from the \\(x\\)-term.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(b\\)?",
+              "note": "Complete the square; \\(y+2=y-b\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2953,6 +3494,127 @@
           "meta": {
             "source": "Glenwood High School 2023 Year 12 Mathematics Extension 2 Trial HSC Examination (Assessment Task 4)",
             "school": "Glenwood High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14d1",
+          "type": "mc",
+          "stem": "A spiral starts at the origin and completes two clockwise spirals to end at \\((0,2\\pi)\\). Its position from \\(t=0\\) to \\(t=T\\) is shown in the diagram. The parametric equations of the spiral are \\(x=f(t)\\), \\(y=g(t)\\) for \\([0,T]\\). Find \\(f(t)\\), \\(g(t)\\) and \\(T\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 430\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"230.0\" x2=\"410.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"422.0\" x2=\"230.0\" y2=\"16.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"230.0\" x2=\"403.1\" y2=\"226.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"230.0\" x2=\"403.1\" y2=\"234.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"16.0\" x2=\"226.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"16.0\" x2=\"234.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"414.0\" y=\"246.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"242.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"230.0,230.0 230.0,229.8 230.0,229.6 230.0,229.4 230.1,229.1 230.1,228.9 230.1,228.7 230.2,228.5 230.2,228.3 230.3,228.1 230.4,227.9 230.4,227.7 230.5,227.5 230.6,227.2 230.7,227.0 230.8,226.9 230.9,226.7 231.0,226.5 231.2,226.3 231.3,226.1 231.4,225.9 231.6,225.7 231.7,225.6 231.9,225.4 232.0,225.2 232.2,225.0 232.4,224.9 232.5,224.7 232.7,224.6 232.9,224.4 233.1,224.3 233.3,224.2 233.5,224.0 233.7,223.9 234.0,223.8 234.2,223.7 234.4,223.6 234.6,223.5 234.9,223.4 235.1,223.3 235.4,223.2 235.6,223.1 235.9,223.0 236.1,223.0 236.4,222.9 236.6,222.9 236.9,222.8 237.2,222.8 237.5,222.8 237.7,222.7 238.0,222.7 238.3,222.7 238.6,222.7 238.9,222.7 239.2,222.7 239.5,222.7 239.8,222.8 240.0,222.8 240.3,222.9 240.6,222.9 240.9,223.0 241.2,223.0 241.5,223.1 241.8,223.2 242.1,223.3 242.4,223.4 242.7,223.5 243.0,223.6 243.3,223.8 243.6,223.9 243.9,224.0 244.2,224.2 244.5,224.3 244.8,224.5 245.1,224.7 245.4,224.9 245.7,225.1 246.0,225.3 246.3,225.5 246.6,225.7 246.8,225.9 247.1,226.2 247.4,226.4 247.7,226.6 247.9,226.9 248.2,227.2 248.5,227.4 248.7,227.7 249.0,228.0 249.2,228.3 249.5,228.6 249.7,228.9 249.9,229.3 250.1,229.6 250.4,229.9 250.6,230.3 250.8,230.6 251.0,231.0 251.2,231.3 251.4,231.7 251.6,232.1 251.7,232.5 251.9,232.8 252.1,233.2 252.2,233.6 252.4,234.1 252.5,234.5 252.7,234.9 252.8,235.3 252.9,235.7 253.0,236.2 253.1,236.6 253.2,237.1 253.3,237.5 253.4,238.0 253.4,238.4 253.5,238.9 253.5,239.4 253.6,239.9 253.6,240.3 253.6,240.8 253.7,241.3 253.7,241.8 253.6,242.3 253.6,242.8 253.6,243.3 253.6,243.8 253.5,244.3 253.5,244.8 253.4,245.3 253.3,245.8 253.2,246.3 253.1,246.8 253.0,247.3 252.9,247.9 252.8,248.4 252.6,248.9 252.5,249.4 252.3,249.9 252.1,250.4 251.9,251.0 251.7,251.5 251.5,252.0 251.3,252.5 251.1,253.0 250.8,253.5 250.6,254.0 250.3,254.5 250.0,255.0 249.7,255.5 249.5,256.0 249.1,256.5 248.8,257.0 248.5,257.5 248.1,258.0 247.8,258.5 247.4,259.0 247.0,259.4 246.7,259.9 246.3,260.4 245.9,260.8 245.4,261.3 245.0,261.7 244.6,262.2 244.1,262.6 243.6,263.0 243.2,263.5 242.7,263.9 242.2,264.3 241.7,264.7 241.2,265.1 240.7,265.5 240.1,265.9 239.6,266.2 239.0,266.6 238.5,267.0 237.9,267.3 237.3,267.6 236.7,268.0 236.1,268.3 235.5,268.6 234.9,268.9 234.3,269.2 233.6,269.5 233.0,269.8 232.3,270.0 231.7,270.3 231.0,270.5 230.3,270.7 229.7,270.9 229.0,271.2 228.3,271.3 227.6,271.5 226.9,271.7 226.1,271.9 225.4,272.0 224.7,272.1 224.0,272.3 223.2,272.4 222.5,272.5 221.7,272.5 221.0,272.6 220.2,272.7 219.5,272.7 218.7,272.7 217.9,272.7 217.2,272.7 216.4,272.7 215.6,272.7 214.8,272.7 214.0,272.6 213.3,272.5 212.5,272.5 211.7,272.4 210.9,272.2 210.1,272.1 209.3,272.0 208.5,271.8 207.7,271.6 206.9,271.4 206.1,271.2 205.3,271.0 204.5,270.8 203.7,270.5 202.9,270.3 202.1,270.0 201.3,269.7 200.6,269.4 199.8,269.1 199.0,268.7 198.2,268.4 197.4,268.0 196.7,267.6 195.9,267.2 195.1,266.8 194.4,266.4 193.6,265.9 192.9,265.5 192.1,265.0 191.4,264.5 190.6,264.0 189.9,263.5 189.2,262.9 188.5,262.4 187.8,261.8 187.1,261.2 186.4,260.6 185.7,260.0 185.0,259.4 184.4,258.8 183.7,258.1 183.1,257.4 182.4,256.8 181.8,256.1 181.2,255.4 180.6,254.6 180.0,253.9 179.4,253.2 178.8,252.4 178.2,251.6 177.7,250.8 177.1,250.0 176.6,249.2 176.1,248.4 175.6,247.6 175.1,246.7 174.6,245.9 174.1,245.0 173.7,244.1 173.2,243.2 172.8,242.3 172.4,241.4 172.0,240.5 171.6,239.6 171.3,238.6 170.9,237.7 170.6,236.7 170.3,235.7 170.0,234.8 169.7,233.8 169.4,232.8 169.1,231.8 168.9,230.8 168.7,229.7 168.5,228.7 168.3,227.7 168.1,226.6 168.0,225.6 167.8,224.5 167.7,223.5 167.6,222.4 167.5,221.4 167.5,220.3 167.4,219.2 167.4,218.1 167.4,217.0 167.4,215.9 167.5,214.9 167.5,213.8 167.6,212.7 167.7,211.6 167.8,210.5 167.9,209.4 168.1,208.3 168.2,207.1 168.4,206.0 168.6,204.9 168.8,203.8 169.1,202.7 169.4,201.6 169.6,200.5 170.0,199.4 170.3,198.3 170.6,197.2 171.0,196.1 171.4,195.1 171.8,194.0 172.2,192.9 172.7,191.8 173.1,190.7 173.6,189.7 174.1,188.6 174.6,187.5 175.2,186.5 175.8,185.4 176.3,184.4 176.9,183.4 177.6,182.4 178.2,181.3 178.9,180.3 179.6,179.3 180.3,178.3 181.0,177.4 181.7,176.4 182.5,175.4 183.2,174.5 184.0,173.5 184.9,172.6 185.7,171.7 186.5,170.8 187.4,169.9 188.3,169.0 189.2,168.1 190.1,167.3 191.1,166.5 192.0,165.6 193.0,164.8 194.0,164.0 195.0,163.2 196.0,162.5 197.0,161.7 198.1,161.0 199.1,160.3 200.2,159.5 201.3,158.9 202.4,158.2 203.6,157.5 204.7,156.9 205.9,156.3 207.0,155.7 208.2,155.1 209.4,154.5 210.6,154.0 211.8,153.5 213.1,153.0 214.3,152.5 215.6,152.0 216.8,151.6 218.1,151.2 219.4,150.8 220.7,150.4 222.0,150.0 223.3,149.7 224.6,149.4 226.0,149.1 227.3,148.8 228.7,148.5 230.0,148.3 231.4,148.1 232.7,147.9 234.1,147.8 235.5,147.6 236.9,147.5 238.3,147.4 239.7,147.4 241.1,147.3 242.5,147.3 243.9,147.3 245.3,147.3 246.8,147.4 248.2,147.5 249.6,147.6 251.0,147.7 252.5,147.9 253.9,148.0 255.3,148.2 256.7,148.5 258.2,148.7 259.6,149.0 261.0,149.3 262.4,149.6 263.8,150.0 265.3,150.4 266.7,150.8 268.1,151.2 269.5,151.6 270.9,152.1 272.3,152.6 273.7,153.1 275.1,153.7 276.4,154.3 277.8,154.9 279.2,155.5 280.5,156.2 281.9,156.8 283.2,157.5 284.6,158.3 285.9,159.0 287.2,159.8 288.5,160.6 289.8,161.4 291.1,162.2 292.3,163.1 293.6,164.0 294.8,164.9 296.1,165.9 297.3,166.8 298.5,167.8 299.7,168.8 300.9,169.8 302.0,170.9 303.2,172.0 304.3,173.1 305.4,174.2 306.5,175.3 307.6,176.5 308.6,177.7 309.7,178.9 310.7,180.1 311.7,181.3 312.7,182.6 313.7,183.9 314.6,185.2 315.5,186.5 316.5,187.8 317.3,189.2 318.2,190.5 319.1,191.9 319.9,193.3 320.7,194.8 321.5,196.2 322.2,197.7 322.9,199.1 323.7,200.6 324.3,202.1 325.0,203.6 325.6,205.2 326.2,206.7 326.8,208.3 327.4,209.9 327.9,211.4 328.4,213.0 328.9,214.6 329.4,216.3 329.8,217.9 330.2,219.5 330.6,221.2 330.9,222.9 331.3,224.5 331.5,226.2 331.8,227.9 332.0,229.6 332.3,231.3 332.4,233.0 332.6,234.7 332.7,236.4 332.8,238.2 332.9,239.9 332.9,241.6 332.9,243.4 332.9,245.1 332.8,246.9 332.8,248.6 332.6,250.4 332.5,252.1 332.3,253.9 332.1,255.6 331.9,257.4 331.6,259.2 331.3,260.9 331.0,262.7 330.7,264.4 330.3,266.2 329.9,267.9 329.4,269.6 328.9,271.4 328.4,273.1 327.9,274.8 327.3,276.5 326.7,278.3 326.1,280.0 325.5,281.7 324.8,283.4 324.1,285.0 323.3,286.7 322.5,288.4 321.7,290.0 320.9,291.7 320.0,293.3 319.2,294.9 318.2,296.5 317.3,298.1 316.3,299.7 315.3,301.3 314.3,302.8 313.2,304.4 312.1,305.9 311.0,307.4 309.8,308.9 308.7,310.4 307.5,311.8 306.2,313.3 305.0,314.7 303.7,316.1 302.4,317.5 301.1,318.8 299.7,320.2 298.3,321.5 296.9,322.8 295.5,324.1 294.0,325.3 292.5,326.6 291.0,327.8 289.5,329.0 288.0,330.1 286.4,331.3 284.8,332.4 283.2,333.5 281.6,334.5 279.9,335.6 278.2,336.6 276.5,337.6 274.8,338.6 273.1,339.5 271.3,340.4 269.5,341.3 267.7,342.1 265.9,342.9 264.1,343.7 262.3,344.5 260.4,345.2 258.5,345.9 256.7,346.6 254.8,347.2 252.8,347.8 250.9,348.4 249.0,349.0 247.0,349.5 245.0,350.0 243.1,350.4 241.1,350.8 239.1,351.2 237.1,351.6 235.1,351.9 233.0,352.2 231.0,352.4 229.0,352.6 226.9,352.8 224.8,353.0 222.8,353.1 220.7,353.2 218.6,353.2 216.6,353.2 214.5,353.2 212.4,353.1 210.3,353.0 208.2,352.9 206.2,352.7 204.1,352.5 202.0,352.3 199.9,352.0 197.8,351.7 195.7,351.4 193.7,351.0 191.6,350.6 189.5,350.1 187.4,349.6 185.4,349.1 183.3,348.5 181.3,347.9 179.2,347.3 177.2,346.6 175.1,345.9 173.1,345.2 171.1,344.4 169.1,343.6 167.1,342.8 165.1,341.9 163.2,341.0 161.2,340.1 159.3,339.1 157.3,338.1 155.4,337.0 153.5,335.9 151.6,334.8 149.8,333.7 147.9,332.5 146.1,331.3 144.3,330.0 142.5,328.7 140.7,327.4 138.9,326.1 137.2,324.7 135.5,323.3 133.8,321.9 132.1,320.4 130.4,318.9 128.8,317.4 127.2,315.8 125.6,314.2 124.1,312.6 122.5,311.0 121.0,309.3 119.5,307.6 118.1,305.8 116.6,304.1 115.2,302.3 113.9,300.5 112.5,298.7 111.2,296.8 109.9,294.9 108.7,293.0 107.4,291.1 106.2,289.1 105.1,287.1 103.9,285.1 102.8,283.1 101.8,281.1 100.7,279.0 99.7,276.9 98.8,274.8 97.8,272.7 96.9,270.5 96.1,268.4 95.2,266.2 94.4,264.0 93.7,261.8 93.0,259.5 92.3,257.3 91.6,255.0 91.0,252.7 90.4,250.5 89.9,248.2 89.4,245.8 88.9,243.5 88.5,241.2 88.1,238.8 87.8,236.5 87.5,234.1 87.2,231.7 87.0,229.4 86.8,227.0 86.7,224.6 86.6,222.2 86.5,219.8 86.5,217.4 86.5,215.0 86.5,212.5 86.6,210.1 86.8,207.7 87.0,205.3 87.2,202.9 87.4,200.4 87.7,198.0 88.1,195.6 88.5,193.2 88.9,190.8 89.3,188.4 89.9,186.0 90.4,183.6 91.0,181.2 91.6,178.8 92.3,176.4 93.0,174.0 93.8,171.7 94.5,169.3 95.4,167.0 96.3,164.7 97.2,162.3 98.1,160.0 99.1,157.7 100.2,155.5 101.2,153.2 102.3,151.0 103.5,148.7 104.7,146.5 105.9,144.3 107.2,142.1 108.5,140.0 109.8,137.8 111.2,135.7 112.6,133.6 114.1,131.5 115.6,129.4 117.1,127.4 118.7,125.4 120.3,123.4 121.9,121.4 123.6,119.5 125.3,117.6 127.1,115.7 128.8,113.8 130.7,112.0 132.5,110.2 134.4,108.4 136.3,106.6 138.2,104.9 140.2,103.2 142.2,101.6 144.2,100.0 146.3,98.4 148.4,96.8 150.5,95.3 152.7,93.8 154.8,92.3 157.0,90.9 159.3,89.5 161.5,88.1 163.8,86.8 166.1,85.5 168.5,84.3 170.8,83.1 173.2,81.9 175.6,80.8 178.0,79.7 180.5,78.7 182.9,77.6 185.4,76.7 187.9,75.7 190.4,74.8 193.0,74.0 195.5,73.2 198.1,72.4 200.7,71.7 203.3,71.0 205.9,70.4 208.6,69.8 211.2,69.2 213.9,68.7 216.5,68.3 219.2,67.9 221.9,67.5 224.6,67.2 227.3,66.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><circle cx=\"250.4\" cy=\"230.0\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"168.7\" cy=\"230.0\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"332.1\" cy=\"230.0\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"87.1\" cy=\"230.0\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"230.0\" cy=\"270.8\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"230.0\" cy=\"148.3\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"230.0\" cy=\"352.5\" r=\"3\" fill=\"#1e293b\"/><circle cx=\"230.0\" cy=\"66.6\" r=\"3\" fill=\"#1e293b\"/><text x=\"258.4\" y=\"217.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"252.5\" y1=\"221.0\" x2=\"264.4\" y2=\"221.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"258.4\" y=\"230.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"9.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"332.1\" y=\"253.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5π</text><line x1=\"322.9\" y1=\"257.0\" x2=\"341.3\" y2=\"257.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"332.1\" y=\"267.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"168.7\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3π</text><line x1=\"159.5\" y1=\"219.0\" x2=\"177.9\" y2=\"219.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"168.7\" y=\"229.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"158.7\" y=\"218.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−</text><text x=\"87.1\" y=\"215.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7π</text><line x1=\"77.9\" y1=\"219.0\" x2=\"96.3\" y2=\"219.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"87.1\" y=\"229.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><text x=\"77.1\" y=\"218.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−</text><text x=\"238.0\" y=\"70.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2π</text><text x=\"238.0\" y=\"145.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><text x=\"244.0\" y=\"281.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"237.9\" y1=\"285.8\" x2=\"250.1\" y2=\"285.8\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"244.0\" y=\"295.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"232.0\" y=\"288.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−</text><text x=\"244.0\" y=\"363.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3π</text><line x1=\"234.8\" y1=\"367.5\" x2=\"253.2\" y2=\"367.5\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"244.0\" y=\"377.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"232.0\" y=\"370.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−</text></svg>"
+          },
+          "options": [
+            "\\(f(t)=\\dfrac{t}{2}\\sin t,\\ \\ g(t)=\\dfrac{t}{2}\\cos t,\\ \\ T=4\\pi\\)",
+            "\\(f(t)=\\dfrac{t}{2}\\cos t,\\ \\ g(t)=\\dfrac{t}{2}\\sin t,\\ \\ T=4\\pi\\)",
+            "\\(f(t)=t\\sin t,\\ \\ g(t)=t\\cos t,\\ \\ T=2\\pi\\)",
+            "\\(f(t)=\\dfrac{t}{2}\\sin t,\\ \\ g(t)=\\dfrac{t}{2}\\cos t,\\ \\ T=2\\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "A spiral has the form \\((x,y)=(kt\\cos t,\\ kt\\sin t)\\) (ANTICLOCKWISE from the \\(x\\)-axis). To go CLOCKWISE starting upward on the \\(y\\)-axis swap them: \\((kt\\sin t,\\ kt\\cos t)\\). Use the end point \\((0,2\\pi)\\) to find \\(k\\) and \\(T\\).",
+          "steps": [
+            {
+              "explain": "At \\(t=0\\) the spiral is at the origin and the distance from the origin grows steadily: radius \\(r=kt\\). The radius increases with \\(t\\), so \\(x\\) and \\(y\\) both carry the factor \\(kt\\).",
+              "work": "\\(r=kt\\ \\ (k>0)\\)"
+            },
+            {
+              "explain": "Direction: the spiral first moves from the origin to the RIGHT (the point \\(\\dfrac{\\pi}{4}\\) on the positive \\(x\\)-axis), then down, then left, then up: CLOCKWISE. Clockwise motion starting at angle \\(\\dfrac{\\pi}{2}\\) (the \\(+y\\) direction) uses \\(x=r\\sin t\\), \\(y=r\\cos t\\).",
+              "work": "\\(x=kt\\sin t,\\qquad y=kt\\cos t\\)"
+            },
+            {
+              "explain": "Two complete clockwise turns means the angle \\(t\\) goes through \\(2\\times2\\pi=4\\pi\\), so the spiral ends at \\(t=T=4\\pi\\). There \\(\\sin4\\pi=0\\) and \\(\\cos4\\pi=1\\), so the end point is \\((0,\\ k\\cdot4\\pi)\\).",
+              "work": "\\(T=4\\pi:\\quad(x,y)=(0,\\ 4\\pi k)\\)"
+            },
+            {
+              "explain": "The end point is \\((0,2\\pi)\\): \\(4\\pi k=2\\pi\\), so \\(k=\\dfrac{1}{2}\\).",
+              "work": "\\(k=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Check against the diagram: at \\(t=\\dfrac{\\pi}{2}\\): \\(\\left(\\dfrac{\\pi}{4}\\sin\\dfrac{\\pi}{2},\\dfrac{\\pi}{4}\\cos\\dfrac{\\pi}{2}\\right)=\\left(\\dfrac{\\pi}{4},0\\right)\\) ✓ (the label \\(\\dfrac{\\pi}{4}\\) on the \\(x\\)-axis). At \\(t=\\pi\\): \\(\\left(0,-\\dfrac{\\pi}{2}\\right)\\) ✓. At \\(t=2\\pi\\): \\((0,\\pi)\\) ✓.",
+              "work": "\\(f(t)=\\dfrac{t}{2}\\sin t,\\quad g(t)=\\dfrac{t}{2}\\cos t,\\quad T=4\\pi\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 430\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"230.0\" x2=\"410.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"422.0\" x2=\"230.0\" y2=\"16.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"230.0\" x2=\"403.1\" y2=\"226.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"230.0\" x2=\"403.1\" y2=\"234.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"16.0\" x2=\"226.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"16.0\" x2=\"234.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"414.0\" y=\"246.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"242.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"230.0,230.0 230.0,229.8 230.0,229.6 230.0,229.4 230.1,229.1 230.1,228.9 230.1,228.7 230.2,228.5 230.2,228.3 230.3,228.1 230.4,227.9 230.4,227.7 230.5,227.5 230.6,227.2 230.7,227.0 230.8,226.9 230.9,226.7 231.0,226.5 231.2,226.3 231.3,226.1 231.4,225.9 231.6,225.7 231.7,225.6 231.9,225.4 232.0,225.2 232.2,225.0 232.4,224.9 232.5,224.7 232.7,224.6 232.9,224.4 233.1,224.3 233.3,224.2 233.5,224.0 233.7,223.9 234.0,223.8 234.2,223.7 234.4,223.6 234.6,223.5 234.9,223.4 235.1,223.3 235.4,223.2 235.6,223.1 235.9,223.0 236.1,223.0 236.4,222.9 236.6,222.9 236.9,222.8 237.2,222.8 237.5,222.8 237.7,222.7 238.0,222.7 238.3,222.7 238.6,222.7 238.9,222.7 239.2,222.7 239.5,222.7 239.8,222.8 240.0,222.8 240.3,222.9 240.6,222.9 240.9,223.0 241.2,223.0 241.5,223.1 241.8,223.2 242.1,223.3 242.4,223.4 242.7,223.5 243.0,223.6 243.3,223.8 243.6,223.9 243.9,224.0 244.2,224.2 244.5,224.3 244.8,224.5 245.1,224.7 245.4,224.9 245.7,225.1 246.0,225.3 246.3,225.5 246.6,225.7 246.8,225.9 247.1,226.2 247.4,226.4 247.7,226.6 247.9,226.9 248.2,227.2 248.5,227.4 248.7,227.7 249.0,228.0 249.2,228.3 249.5,228.6 249.7,228.9 249.9,229.3 250.1,229.6 250.4,229.9 250.6,230.3 250.8,230.6 251.0,231.0 251.2,231.3 251.4,231.7 251.6,232.1 251.7,232.5 251.9,232.8 252.1,233.2 252.2,233.6 252.4,234.1 252.5,234.5 252.7,234.9 252.8,235.3 252.9,235.7 253.0,236.2 253.1,236.6 253.2,237.1 253.3,237.5 253.4,238.0 253.4,238.4 253.5,238.9 253.5,239.4 253.6,239.9 253.6,240.3 253.6,240.8 253.7,241.3 253.7,241.8 253.6,242.3 253.6,242.8 253.6,243.3 253.6,243.8 253.5,244.3 253.5,244.8 253.4,245.3 253.3,245.8 253.2,246.3 253.1,246.8 253.0,247.3 252.9,247.9 252.8,248.4 252.6,248.9 252.5,249.4 252.3,249.9 252.1,250.4 251.9,251.0 251.7,251.5 251.5,252.0 251.3,252.5 251.1,253.0 250.8,253.5 250.6,254.0 250.3,254.5 250.0,255.0 249.7,255.5 249.5,256.0 249.1,256.5 248.8,257.0 248.5,257.5 248.1,258.0 247.8,258.5 247.4,259.0 247.0,259.4 246.7,259.9 246.3,260.4 245.9,260.8 245.4,261.3 245.0,261.7 244.6,262.2 244.1,262.6 243.6,263.0 243.2,263.5 242.7,263.9 242.2,264.3 241.7,264.7 241.2,265.1 240.7,265.5 240.1,265.9 239.6,266.2 239.0,266.6 238.5,267.0 237.9,267.3 237.3,267.6 236.7,268.0 236.1,268.3 235.5,268.6 234.9,268.9 234.3,269.2 233.6,269.5 233.0,269.8 232.3,270.0 231.7,270.3 231.0,270.5 230.3,270.7 229.7,270.9 229.0,271.2 228.3,271.3 227.6,271.5 226.9,271.7 226.1,271.9 225.4,272.0 224.7,272.1 224.0,272.3 223.2,272.4 222.5,272.5 221.7,272.5 221.0,272.6 220.2,272.7 219.5,272.7 218.7,272.7 217.9,272.7 217.2,272.7 216.4,272.7 215.6,272.7 214.8,272.7 214.0,272.6 213.3,272.5 212.5,272.5 211.7,272.4 210.9,272.2 210.1,272.1 209.3,272.0 208.5,271.8 207.7,271.6 206.9,271.4 206.1,271.2 205.3,271.0 204.5,270.8 203.7,270.5 202.9,270.3 202.1,270.0 201.3,269.7 200.6,269.4 199.8,269.1 199.0,268.7 198.2,268.4 197.4,268.0 196.7,267.6 195.9,267.2 195.1,266.8 194.4,266.4 193.6,265.9 192.9,265.5 192.1,265.0 191.4,264.5 190.6,264.0 189.9,263.5 189.2,262.9 188.5,262.4 187.8,261.8 187.1,261.2 186.4,260.6 185.7,260.0 185.0,259.4 184.4,258.8 183.7,258.1 183.1,257.4 182.4,256.8 181.8,256.1 181.2,255.4 180.6,254.6 180.0,253.9 179.4,253.2 178.8,252.4 178.2,251.6 177.7,250.8 177.1,250.0 176.6,249.2 176.1,248.4 175.6,247.6 175.1,246.7 174.6,245.9 174.1,245.0 173.7,244.1 173.2,243.2 172.8,242.3 172.4,241.4 172.0,240.5 171.6,239.6 171.3,238.6 170.9,237.7 170.6,236.7 170.3,235.7 170.0,234.8 169.7,233.8 169.4,232.8 169.1,231.8 168.9,230.8 168.7,229.7 168.5,228.7 168.3,227.7 168.1,226.6 168.0,225.6 167.8,224.5 167.7,223.5 167.6,222.4 167.5,221.4 167.5,220.3 167.4,219.2 167.4,218.1 167.4,217.0 167.4,215.9 167.5,214.9 167.5,213.8 167.6,212.7 167.7,211.6 167.8,210.5 167.9,209.4 168.1,208.3 168.2,207.1 168.4,206.0 168.6,204.9 168.8,203.8 169.1,202.7 169.4,201.6 169.6,200.5 170.0,199.4 170.3,198.3 170.6,197.2 171.0,196.1 171.4,195.1 171.8,194.0 172.2,192.9 172.7,191.8 173.1,190.7 173.6,189.7 174.1,188.6 174.6,187.5 175.2,186.5 175.8,185.4 176.3,184.4 176.9,183.4 177.6,182.4 178.2,181.3 178.9,180.3 179.6,179.3 180.3,178.3 181.0,177.4 181.7,176.4 182.5,175.4 183.2,174.5 184.0,173.5 184.9,172.6 185.7,171.7 186.5,170.8 187.4,169.9 188.3,169.0 189.2,168.1 190.1,167.3 191.1,166.5 192.0,165.6 193.0,164.8 194.0,164.0 195.0,163.2 196.0,162.5 197.0,161.7 198.1,161.0 199.1,160.3 200.2,159.5 201.3,158.9 202.4,158.2 203.6,157.5 204.7,156.9 205.9,156.3 207.0,155.7 208.2,155.1 209.4,154.5 210.6,154.0 211.8,153.5 213.1,153.0 214.3,152.5 215.6,152.0 216.8,151.6 218.1,151.2 219.4,150.8 220.7,150.4 222.0,150.0 223.3,149.7 224.6,149.4 226.0,149.1 227.3,148.8 228.7,148.5 230.0,148.3 231.4,148.1 232.7,147.9 234.1,147.8 235.5,147.6 236.9,147.5 238.3,147.4 239.7,147.4 241.1,147.3 242.5,147.3 243.9,147.3 245.3,147.3 246.8,147.4 248.2,147.5 249.6,147.6 251.0,147.7 252.5,147.9 253.9,148.0 255.3,148.2 256.7,148.5 258.2,148.7 259.6,149.0 261.0,149.3 262.4,149.6 263.8,150.0 265.3,150.4 266.7,150.8 268.1,151.2 269.5,151.6 270.9,152.1 272.3,152.6 273.7,153.1 275.1,153.7 276.4,154.3 277.8,154.9 279.2,155.5 280.5,156.2 281.9,156.8 283.2,157.5 284.6,158.3 285.9,159.0 287.2,159.8 288.5,160.6 289.8,161.4 291.1,162.2 292.3,163.1 293.6,164.0 294.8,164.9 296.1,165.9 297.3,166.8 298.5,167.8 299.7,168.8 300.9,169.8 302.0,170.9 303.2,172.0 304.3,173.1 305.4,174.2 306.5,175.3 307.6,176.5 308.6,177.7 309.7,178.9 310.7,180.1 311.7,181.3 312.7,182.6 313.7,183.9 314.6,185.2 315.5,186.5 316.5,187.8 317.3,189.2 318.2,190.5 319.1,191.9 319.9,193.3 320.7,194.8 321.5,196.2 322.2,197.7 322.9,199.1 323.7,200.6 324.3,202.1 325.0,203.6 325.6,205.2 326.2,206.7 326.8,208.3 327.4,209.9 327.9,211.4 328.4,213.0 328.9,214.6 329.4,216.3 329.8,217.9 330.2,219.5 330.6,221.2 330.9,222.9 331.3,224.5 331.5,226.2 331.8,227.9 332.0,229.6 332.3,231.3 332.4,233.0 332.6,234.7 332.7,236.4 332.8,238.2 332.9,239.9 332.9,241.6 332.9,243.4 332.9,245.1 332.8,246.9 332.8,248.6 332.6,250.4 332.5,252.1 332.3,253.9 332.1,255.6 331.9,257.4 331.6,259.2 331.3,260.9 331.0,262.7 330.7,264.4 330.3,266.2 329.9,267.9 329.4,269.6 328.9,271.4 328.4,273.1 327.9,274.8 327.3,276.5 326.7,278.3 326.1,280.0 325.5,281.7 324.8,283.4 324.1,285.0 323.3,286.7 322.5,288.4 321.7,290.0 320.9,291.7 320.0,293.3 319.2,294.9 318.2,296.5 317.3,298.1 316.3,299.7 315.3,301.3 314.3,302.8 313.2,304.4 312.1,305.9 311.0,307.4 309.8,308.9 308.7,310.4 307.5,311.8 306.2,313.3 305.0,314.7 303.7,316.1 302.4,317.5 301.1,318.8 299.7,320.2 298.3,321.5 296.9,322.8 295.5,324.1 294.0,325.3 292.5,326.6 291.0,327.8 289.5,329.0 288.0,330.1 286.4,331.3 284.8,332.4 283.2,333.5 281.6,334.5 279.9,335.6 278.2,336.6 276.5,337.6 274.8,338.6 273.1,339.5 271.3,340.4 269.5,341.3 267.7,342.1 265.9,342.9 264.1,343.7 262.3,344.5 260.4,345.2 258.5,345.9 256.7,346.6 254.8,347.2 252.8,347.8 250.9,348.4 249.0,349.0 247.0,349.5 245.0,350.0 243.1,350.4 241.1,350.8 239.1,351.2 237.1,351.6 235.1,351.9 233.0,352.2 231.0,352.4 229.0,352.6 226.9,352.8 224.8,353.0 222.8,353.1 220.7,353.2 218.6,353.2 216.6,353.2 214.5,353.2 212.4,353.1 210.3,353.0 208.2,352.9 206.2,352.7 204.1,352.5 202.0,352.3 199.9,352.0 197.8,351.7 195.7,351.4 193.7,351.0 191.6,350.6 189.5,350.1 187.4,349.6 185.4,349.1 183.3,348.5 181.3,347.9 179.2,347.3 177.2,346.6 175.1,345.9 173.1,345.2 171.1,344.4 169.1,343.6 167.1,342.8 165.1,341.9 163.2,341.0 161.2,340.1 159.3,339.1 157.3,338.1 155.4,337.0 153.5,335.9 151.6,334.8 149.8,333.7 147.9,332.5 146.1,331.3 144.3,330.0 142.5,328.7 140.7,327.4 138.9,326.1 137.2,324.7 135.5,323.3 133.8,321.9 132.1,320.4 130.4,318.9 128.8,317.4 127.2,315.8 125.6,314.2 124.1,312.6 122.5,311.0 121.0,309.3 119.5,307.6 118.1,305.8 116.6,304.1 115.2,302.3 113.9,300.5 112.5,298.7 111.2,296.8 109.9,294.9 108.7,293.0 107.4,291.1 106.2,289.1 105.1,287.1 103.9,285.1 102.8,283.1 101.8,281.1 100.7,279.0 99.7,276.9 98.8,274.8 97.8,272.7 96.9,270.5 96.1,268.4 95.2,266.2 94.4,264.0 93.7,261.8 93.0,259.5 92.3,257.3 91.6,255.0 91.0,252.7 90.4,250.5 89.9,248.2 89.4,245.8 88.9,243.5 88.5,241.2 88.1,238.8 87.8,236.5 87.5,234.1 87.2,231.7 87.0,229.4 86.8,227.0 86.7,224.6 86.6,222.2 86.5,219.8 86.5,217.4 86.5,215.0 86.5,212.5 86.6,210.1 86.8,207.7 87.0,205.3 87.2,202.9 87.4,200.4 87.7,198.0 88.1,195.6 88.5,193.2 88.9,190.8 89.3,188.4 89.9,186.0 90.4,183.6 91.0,181.2 91.6,178.8 92.3,176.4 93.0,174.0 93.8,171.7 94.5,169.3 95.4,167.0 96.3,164.7 97.2,162.3 98.1,160.0 99.1,157.7 100.2,155.5 101.2,153.2 102.3,151.0 103.5,148.7 104.7,146.5 105.9,144.3 107.2,142.1 108.5,140.0 109.8,137.8 111.2,135.7 112.6,133.6 114.1,131.5 115.6,129.4 117.1,127.4 118.7,125.4 120.3,123.4 121.9,121.4 123.6,119.5 125.3,117.6 127.1,115.7 128.8,113.8 130.7,112.0 132.5,110.2 134.4,108.4 136.3,106.6 138.2,104.9 140.2,103.2 142.2,101.6 144.2,100.0 146.3,98.4 148.4,96.8 150.5,95.3 152.7,93.8 154.8,92.3 157.0,90.9 159.3,89.5 161.5,88.1 163.8,86.8 166.1,85.5 168.5,84.3 170.8,83.1 173.2,81.9 175.6,80.8 178.0,79.7 180.5,78.7 182.9,77.6 185.4,76.7 187.9,75.7 190.4,74.8 193.0,74.0 195.5,73.2 198.1,72.4 200.7,71.7 203.3,71.0 205.9,70.4 208.6,69.8 211.2,69.2 213.9,68.7 216.5,68.3 219.2,67.9 221.9,67.5 224.6,67.2 227.3,66.9\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><circle cx=\"250.4\" cy=\"230.0\" r=\"5.5\" fill=\"#dc2626\"/><circle cx=\"230.0\" cy=\"270.8\" r=\"5.5\" fill=\"#dc2626\"/><circle cx=\"230.0\" cy=\"148.3\" r=\"5.5\" fill=\"#dc2626\"/><circle cx=\"230.0\" cy=\"66.6\" r=\"6\" fill=\"#047857\"/><text x=\"240.0\" y=\"70.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">end: t = T</text><circle cx=\"230.0\" cy=\"230.0\" r=\"5\" fill=\"#d97706\"/><text x=\"222.0\" y=\"248.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">start</text><text x=\"30.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">red: points used to check f and g</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B swaps sine and cosine (anticlockwise, and it would start along the \\(x\\)-axis); C and D have \\(T=2\\pi\\) (one turn only) and/or \\(k=1\\) (which would end at \\((0,4\\pi)\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find \\(f(t)\\), \\(g(t)\\) and \\(T\\).",
+              "note": "Clockwise: \\(x=r\\sin t\\), \\(y=r\\cos t\\); \\(r=kt\\); end \\((0,2\\pi)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q14d2",
+          "type": "mc",
+          "stem": "The parametric equations of a second spiral are \\(x=g(t)\\), \\(y=f(t)\\) for \\(\\left[0,\\dfrac{T}{2}\\right]\\), where \\(f(t)=\\dfrac{t}{2}\\sin t\\), \\(g(t)=\\dfrac{t}{2}\\cos t\\) and \\(T=4\\pi\\) describe the first spiral. If the second spiral was drawn on the axes above, how many points of intersection would it have with the first spiral?",
+          "difficulty": "hard",
+          "options": [
+            "\\(3\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "The second spiral is \\(x=\\dfrac{t}{2}\\cos t\\), \\(y=\\dfrac{t}{2}\\sin t\\) for \\(0\\le t\\le2\\pi\\) (anticlockwise, half the length). Both spirals have distance \\(\\dfrac{t}{2}\\) from the origin at parameter \\(t\\), so a common point must have the SAME parameter value.",
+          "steps": [
+            {
+              "explain": "Second spiral: swap \\(f\\) and \\(g\\), and \\(\\dfrac{T}{2}=2\\pi\\).",
+              "work": "\\(x=\\dfrac{t}{2}\\cos t,\\quad y=\\dfrac{t}{2}\\sin t,\\quad0\\le t\\le2\\pi\\)"
+            },
+            {
+              "explain": "On each spiral the distance from the origin is \\(\\dfrac{t}{2}\\) (since \\(\\sqrt{\\left(\\dfrac{t}{2}\\sin t\\right)^{2}+\\left(\\dfrac{t}{2}\\cos t\\right)^{2}}=\\dfrac{t}{2}\\)). So a common point needs the same radius, i.e. the SAME \\(t\\) (the radius determines the parameter).",
+              "work": "\\(r=\\dfrac{t}{2}\\ \\text{on both}\\ \\Rightarrow\\ \\text{same }t\\)"
+            },
+            {
+              "explain": "Same \\(t\\): the points coincide when \\(\\dfrac{t}{2}\\sin t=\\dfrac{t}{2}\\cos t\\) (and the \\(y\\)'s match too, which is the same equation). So \\(t(\\sin t-\\cos t)=0\\).",
+              "work": "\\(t=0\\quad\\text{or}\\quad\\tan t=1\\)"
+            },
+            {
+              "explain": "\\(t=0\\): both start at the origin. \\(\\tan t=1\\) on \\([0,2\\pi]\\): \\(t=\\dfrac{\\pi}{4}\\) and \\(t=\\dfrac{5\\pi}{4}\\).",
+              "work": "\\(t=0,\\ \\dfrac{\\pi}{4},\\ \\dfrac{5\\pi}{4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 430\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"230.0\" x2=\"410.0\" y2=\"230.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"422.0\" x2=\"230.0\" y2=\"16.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"230.0\" x2=\"403.1\" y2=\"226.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"410.0\" y1=\"230.0\" x2=\"403.1\" y2=\"234.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"16.0\" x2=\"226.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"230.0\" y1=\"16.0\" x2=\"234.0\" y2=\"22.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"414.0\" y=\"246.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"242.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"230.0,230.0 230.0,229.8 230.0,229.6 230.0,229.4 230.1,229.1 230.1,228.9 230.1,228.7 230.2,228.5 230.2,228.3 230.3,228.1 230.4,227.9 230.4,227.7 230.5,227.5 230.6,227.2 230.7,227.0 230.8,226.9 230.9,226.7 231.0,226.5 231.2,226.3 231.3,226.1 231.4,225.9 231.6,225.7 231.7,225.6 231.9,225.4 232.0,225.2 232.2,225.0 232.4,224.9 232.5,224.7 232.7,224.6 232.9,224.4 233.1,224.3 233.3,224.2 233.5,224.0 233.7,223.9 234.0,223.8 234.2,223.7 234.4,223.6 234.6,223.5 234.9,223.4 235.1,223.3 235.4,223.2 235.6,223.1 235.9,223.0 236.1,223.0 236.4,222.9 236.6,222.9 236.9,222.8 237.2,222.8 237.5,222.8 237.7,222.7 238.0,222.7 238.3,222.7 238.6,222.7 238.9,222.7 239.2,222.7 239.5,222.7 239.8,222.8 240.0,222.8 240.3,222.9 240.6,222.9 240.9,223.0 241.2,223.0 241.5,223.1 241.8,223.2 242.1,223.3 242.4,223.4 242.7,223.5 243.0,223.6 243.3,223.8 243.6,223.9 243.9,224.0 244.2,224.2 244.5,224.3 244.8,224.5 245.1,224.7 245.4,224.9 245.7,225.1 246.0,225.3 246.3,225.5 246.6,225.7 246.8,225.9 247.1,226.2 247.4,226.4 247.7,226.6 247.9,226.9 248.2,227.2 248.5,227.4 248.7,227.7 249.0,228.0 249.2,228.3 249.5,228.6 249.7,228.9 249.9,229.3 250.1,229.6 250.4,229.9 250.6,230.3 250.8,230.6 251.0,231.0 251.2,231.3 251.4,231.7 251.6,232.1 251.7,232.5 251.9,232.8 252.1,233.2 252.2,233.6 252.4,234.1 252.5,234.5 252.7,234.9 252.8,235.3 252.9,235.7 253.0,236.2 253.1,236.6 253.2,237.1 253.3,237.5 253.4,238.0 253.4,238.4 253.5,238.9 253.5,239.4 253.6,239.9 253.6,240.3 253.6,240.8 253.7,241.3 253.7,241.8 253.6,242.3 253.6,242.8 253.6,243.3 253.6,243.8 253.5,244.3 253.5,244.8 253.4,245.3 253.3,245.8 253.2,246.3 253.1,246.8 253.0,247.3 252.9,247.9 252.8,248.4 252.6,248.9 252.5,249.4 252.3,249.9 252.1,250.4 251.9,251.0 251.7,251.5 251.5,252.0 251.3,252.5 251.1,253.0 250.8,253.5 250.6,254.0 250.3,254.5 250.0,255.0 249.7,255.5 249.5,256.0 249.1,256.5 248.8,257.0 248.5,257.5 248.1,258.0 247.8,258.5 247.4,259.0 247.0,259.4 246.7,259.9 246.3,260.4 245.9,260.8 245.4,261.3 245.0,261.7 244.6,262.2 244.1,262.6 243.6,263.0 243.2,263.5 242.7,263.9 242.2,264.3 241.7,264.7 241.2,265.1 240.7,265.5 240.1,265.9 239.6,266.2 239.0,266.6 238.5,267.0 237.9,267.3 237.3,267.6 236.7,268.0 236.1,268.3 235.5,268.6 234.9,268.9 234.3,269.2 233.6,269.5 233.0,269.8 232.3,270.0 231.7,270.3 231.0,270.5 230.3,270.7 229.7,270.9 229.0,271.2 228.3,271.3 227.6,271.5 226.9,271.7 226.1,271.9 225.4,272.0 224.7,272.1 224.0,272.3 223.2,272.4 222.5,272.5 221.7,272.5 221.0,272.6 220.2,272.7 219.5,272.7 218.7,272.7 217.9,272.7 217.2,272.7 216.4,272.7 215.6,272.7 214.8,272.7 214.0,272.6 213.3,272.5 212.5,272.5 211.7,272.4 210.9,272.2 210.1,272.1 209.3,272.0 208.5,271.8 207.7,271.6 206.9,271.4 206.1,271.2 205.3,271.0 204.5,270.8 203.7,270.5 202.9,270.3 202.1,270.0 201.3,269.7 200.6,269.4 199.8,269.1 199.0,268.7 198.2,268.4 197.4,268.0 196.7,267.6 195.9,267.2 195.1,266.8 194.4,266.4 193.6,265.9 192.9,265.5 192.1,265.0 191.4,264.5 190.6,264.0 189.9,263.5 189.2,262.9 188.5,262.4 187.8,261.8 187.1,261.2 186.4,260.6 185.7,260.0 185.0,259.4 184.4,258.8 183.7,258.1 183.1,257.4 182.4,256.8 181.8,256.1 181.2,255.4 180.6,254.6 180.0,253.9 179.4,253.2 178.8,252.4 178.2,251.6 177.7,250.8 177.1,250.0 176.6,249.2 176.1,248.4 175.6,247.6 175.1,246.7 174.6,245.9 174.1,245.0 173.7,244.1 173.2,243.2 172.8,242.3 172.4,241.4 172.0,240.5 171.6,239.6 171.3,238.6 170.9,237.7 170.6,236.7 170.3,235.7 170.0,234.8 169.7,233.8 169.4,232.8 169.1,231.8 168.9,230.8 168.7,229.7 168.5,228.7 168.3,227.7 168.1,226.6 168.0,225.6 167.8,224.5 167.7,223.5 167.6,222.4 167.5,221.4 167.5,220.3 167.4,219.2 167.4,218.1 167.4,217.0 167.4,215.9 167.5,214.9 167.5,213.8 167.6,212.7 167.7,211.6 167.8,210.5 167.9,209.4 168.1,208.3 168.2,207.1 168.4,206.0 168.6,204.9 168.8,203.8 169.1,202.7 169.4,201.6 169.6,200.5 170.0,199.4 170.3,198.3 170.6,197.2 171.0,196.1 171.4,195.1 171.8,194.0 172.2,192.9 172.7,191.8 173.1,190.7 173.6,189.7 174.1,188.6 174.6,187.5 175.2,186.5 175.8,185.4 176.3,184.4 176.9,183.4 177.6,182.4 178.2,181.3 178.9,180.3 179.6,179.3 180.3,178.3 181.0,177.4 181.7,176.4 182.5,175.4 183.2,174.5 184.0,173.5 184.9,172.6 185.7,171.7 186.5,170.8 187.4,169.9 188.3,169.0 189.2,168.1 190.1,167.3 191.1,166.5 192.0,165.6 193.0,164.8 194.0,164.0 195.0,163.2 196.0,162.5 197.0,161.7 198.1,161.0 199.1,160.3 200.2,159.5 201.3,158.9 202.4,158.2 203.6,157.5 204.7,156.9 205.9,156.3 207.0,155.7 208.2,155.1 209.4,154.5 210.6,154.0 211.8,153.5 213.1,153.0 214.3,152.5 215.6,152.0 216.8,151.6 218.1,151.2 219.4,150.8 220.7,150.4 222.0,150.0 223.3,149.7 224.6,149.4 226.0,149.1 227.3,148.8 228.7,148.5 230.0,148.3 231.4,148.1 232.7,147.9 234.1,147.8 235.5,147.6 236.9,147.5 238.3,147.4 239.7,147.4 241.1,147.3 242.5,147.3 243.9,147.3 245.3,147.3 246.8,147.4 248.2,147.5 249.6,147.6 251.0,147.7 252.5,147.9 253.9,148.0 255.3,148.2 256.7,148.5 258.2,148.7 259.6,149.0 261.0,149.3 262.4,149.6 263.8,150.0 265.3,150.4 266.7,150.8 268.1,151.2 269.5,151.6 270.9,152.1 272.3,152.6 273.7,153.1 275.1,153.7 276.4,154.3 277.8,154.9 279.2,155.5 280.5,156.2 281.9,156.8 283.2,157.5 284.6,158.3 285.9,159.0 287.2,159.8 288.5,160.6 289.8,161.4 291.1,162.2 292.3,163.1 293.6,164.0 294.8,164.9 296.1,165.9 297.3,166.8 298.5,167.8 299.7,168.8 300.9,169.8 302.0,170.9 303.2,172.0 304.3,173.1 305.4,174.2 306.5,175.3 307.6,176.5 308.6,177.7 309.7,178.9 310.7,180.1 311.7,181.3 312.7,182.6 313.7,183.9 314.6,185.2 315.5,186.5 316.5,187.8 317.3,189.2 318.2,190.5 319.1,191.9 319.9,193.3 320.7,194.8 321.5,196.2 322.2,197.7 322.9,199.1 323.7,200.6 324.3,202.1 325.0,203.6 325.6,205.2 326.2,206.7 326.8,208.3 327.4,209.9 327.9,211.4 328.4,213.0 328.9,214.6 329.4,216.3 329.8,217.9 330.2,219.5 330.6,221.2 330.9,222.9 331.3,224.5 331.5,226.2 331.8,227.9 332.0,229.6 332.3,231.3 332.4,233.0 332.6,234.7 332.7,236.4 332.8,238.2 332.9,239.9 332.9,241.6 332.9,243.4 332.9,245.1 332.8,246.9 332.8,248.6 332.6,250.4 332.5,252.1 332.3,253.9 332.1,255.6 331.9,257.4 331.6,259.2 331.3,260.9 331.0,262.7 330.7,264.4 330.3,266.2 329.9,267.9 329.4,269.6 328.9,271.4 328.4,273.1 327.9,274.8 327.3,276.5 326.7,278.3 326.1,280.0 325.5,281.7 324.8,283.4 324.1,285.0 323.3,286.7 322.5,288.4 321.7,290.0 320.9,291.7 320.0,293.3 319.2,294.9 318.2,296.5 317.3,298.1 316.3,299.7 315.3,301.3 314.3,302.8 313.2,304.4 312.1,305.9 311.0,307.4 309.8,308.9 308.7,310.4 307.5,311.8 306.2,313.3 305.0,314.7 303.7,316.1 302.4,317.5 301.1,318.8 299.7,320.2 298.3,321.5 296.9,322.8 295.5,324.1 294.0,325.3 292.5,326.6 291.0,327.8 289.5,329.0 288.0,330.1 286.4,331.3 284.8,332.4 283.2,333.5 281.6,334.5 279.9,335.6 278.2,336.6 276.5,337.6 274.8,338.6 273.1,339.5 271.3,340.4 269.5,341.3 267.7,342.1 265.9,342.9 264.1,343.7 262.3,344.5 260.4,345.2 258.5,345.9 256.7,346.6 254.8,347.2 252.8,347.8 250.9,348.4 249.0,349.0 247.0,349.5 245.0,350.0 243.1,350.4 241.1,350.8 239.1,351.2 237.1,351.6 235.1,351.9 233.0,352.2 231.0,352.4 229.0,352.6 226.9,352.8 224.8,353.0 222.8,353.1 220.7,353.2 218.6,353.2 216.6,353.2 214.5,353.2 212.4,353.1 210.3,353.0 208.2,352.9 206.2,352.7 204.1,352.5 202.0,352.3 199.9,352.0 197.8,351.7 195.7,351.4 193.7,351.0 191.6,350.6 189.5,350.1 187.4,349.6 185.4,349.1 183.3,348.5 181.3,347.9 179.2,347.3 177.2,346.6 175.1,345.9 173.1,345.2 171.1,344.4 169.1,343.6 167.1,342.8 165.1,341.9 163.2,341.0 161.2,340.1 159.3,339.1 157.3,338.1 155.4,337.0 153.5,335.9 151.6,334.8 149.8,333.7 147.9,332.5 146.1,331.3 144.3,330.0 142.5,328.7 140.7,327.4 138.9,326.1 137.2,324.7 135.5,323.3 133.8,321.9 132.1,320.4 130.4,318.9 128.8,317.4 127.2,315.8 125.6,314.2 124.1,312.6 122.5,311.0 121.0,309.3 119.5,307.6 118.1,305.8 116.6,304.1 115.2,302.3 113.9,300.5 112.5,298.7 111.2,296.8 109.9,294.9 108.7,293.0 107.4,291.1 106.2,289.1 105.1,287.1 103.9,285.1 102.8,283.1 101.8,281.1 100.7,279.0 99.7,276.9 98.8,274.8 97.8,272.7 96.9,270.5 96.1,268.4 95.2,266.2 94.4,264.0 93.7,261.8 93.0,259.5 92.3,257.3 91.6,255.0 91.0,252.7 90.4,250.5 89.9,248.2 89.4,245.8 88.9,243.5 88.5,241.2 88.1,238.8 87.8,236.5 87.5,234.1 87.2,231.7 87.0,229.4 86.8,227.0 86.7,224.6 86.6,222.2 86.5,219.8 86.5,217.4 86.5,215.0 86.5,212.5 86.6,210.1 86.8,207.7 87.0,205.3 87.2,202.9 87.4,200.4 87.7,198.0 88.1,195.6 88.5,193.2 88.9,190.8 89.3,188.4 89.9,186.0 90.4,183.6 91.0,181.2 91.6,178.8 92.3,176.4 93.0,174.0 93.8,171.7 94.5,169.3 95.4,167.0 96.3,164.7 97.2,162.3 98.1,160.0 99.1,157.7 100.2,155.5 101.2,153.2 102.3,151.0 103.5,148.7 104.7,146.5 105.9,144.3 107.2,142.1 108.5,140.0 109.8,137.8 111.2,135.7 112.6,133.6 114.1,131.5 115.6,129.4 117.1,127.4 118.7,125.4 120.3,123.4 121.9,121.4 123.6,119.5 125.3,117.6 127.1,115.7 128.8,113.8 130.7,112.0 132.5,110.2 134.4,108.4 136.3,106.6 138.2,104.9 140.2,103.2 142.2,101.6 144.2,100.0 146.3,98.4 148.4,96.8 150.5,95.3 152.7,93.8 154.8,92.3 157.0,90.9 159.3,89.5 161.5,88.1 163.8,86.8 166.1,85.5 168.5,84.3 170.8,83.1 173.2,81.9 175.6,80.8 178.0,79.7 180.5,78.7 182.9,77.6 185.4,76.7 187.9,75.7 190.4,74.8 193.0,74.0 195.5,73.2 198.1,72.4 200.7,71.7 203.3,71.0 205.9,70.4 208.6,69.8 211.2,69.2 213.9,68.7 216.5,68.3 219.2,67.9 221.9,67.5 224.6,67.2 227.3,66.9\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"2.2\"/><polyline points=\"230.0,230.0 230.2,230.0 230.4,230.0 230.6,230.0 230.9,229.9 231.1,229.9 231.3,229.9 231.5,229.8 231.7,229.8 231.9,229.7 232.1,229.6 232.3,229.6 232.5,229.5 232.8,229.4 233.0,229.3 233.1,229.2 233.3,229.1 233.5,229.0 233.7,228.8 233.9,228.7 234.1,228.6 234.3,228.4 234.4,228.3 234.6,228.1 234.8,228.0 235.0,227.8 235.1,227.6 235.3,227.5 235.4,227.3 235.6,227.1 235.7,226.9 235.8,226.7 236.0,226.5 236.1,226.3 236.2,226.0 236.3,225.8 236.4,225.6 236.5,225.4 236.6,225.1 236.7,224.9 236.8,224.6 236.9,224.4 237.0,224.1 237.0,223.9 237.1,223.6 237.1,223.4 237.2,223.1 237.2,222.8 237.2,222.5 237.3,222.3 237.3,222.0 237.3,221.7 237.3,221.4 237.3,221.1 237.3,220.8 237.3,220.5 237.2,220.2 237.2,220.0 237.1,219.7 237.1,219.4 237.0,219.1 237.0,218.8 236.9,218.5 236.8,218.2 236.7,217.9 236.6,217.6 236.5,217.3 236.4,217.0 236.2,216.7 236.1,216.4 236.0,216.1 235.8,215.8 235.7,215.5 235.5,215.2 235.3,214.9 235.1,214.6 234.9,214.3 234.7,214.0 234.5,213.7 234.3,213.4 234.1,213.2 233.8,212.9 233.6,212.6 233.4,212.3 233.1,212.1 232.8,211.8 232.6,211.5 232.3,211.3 232.0,211.0 231.7,210.8 231.4,210.5 231.1,210.3 230.7,210.1 230.4,209.9 230.1,209.6 229.7,209.4 229.4,209.2 229.0,209.0 228.7,208.8 228.3,208.6 227.9,208.4 227.5,208.3 227.2,208.1 226.8,207.9 226.4,207.8 225.9,207.6 225.5,207.5 225.1,207.3 224.7,207.2 224.3,207.1 223.8,207.0 223.4,206.9 222.9,206.8 222.5,206.7 222.0,206.6 221.6,206.6 221.1,206.5 220.6,206.5 220.1,206.4 219.7,206.4 219.2,206.4 218.7,206.3 218.2,206.3 217.7,206.4 217.2,206.4 216.7,206.4 216.2,206.4 215.7,206.5 215.2,206.5 214.7,206.6 214.2,206.7 213.7,206.8 213.2,206.9 212.7,207.0 212.1,207.1 211.6,207.2 211.1,207.4 210.6,207.5 210.1,207.7 209.6,207.9 209.0,208.1 208.5,208.3 208.0,208.5 207.5,208.7 207.0,208.9 206.5,209.2 206.0,209.4 205.5,209.7 205.0,210.0 204.5,210.3 204.0,210.5 203.5,210.9 203.0,211.2 202.5,211.5 202.0,211.9 201.5,212.2 201.0,212.6 200.6,213.0 200.1,213.3 199.6,213.7 199.2,214.1 198.7,214.6 198.3,215.0 197.8,215.4 197.4,215.9 197.0,216.4 196.5,216.8 196.1,217.3 195.7,217.8 195.3,218.3 194.9,218.8 194.5,219.3 194.1,219.9 193.8,220.4 193.4,221.0 193.0,221.5 192.7,222.1 192.4,222.7 192.0,223.3 191.7,223.9 191.4,224.5 191.1,225.1 190.8,225.7 190.5,226.4 190.2,227.0 190.0,227.7 189.7,228.3 189.5,229.0 189.3,229.7 189.1,230.3 188.8,231.0 188.7,231.7 188.5,232.4 188.3,233.1 188.1,233.9 188.0,234.6 187.9,235.3 187.7,236.0 187.6,236.8 187.5,237.5 187.5,238.3 187.4,239.0 187.3,239.8 187.3,240.5 187.3,241.3 187.3,242.1 187.3,242.8 187.3,243.6 187.3,244.4 187.3,245.2 187.4,246.0 187.5,246.7 187.5,247.5 187.6,248.3 187.8,249.1 187.9,249.9 188.0,250.7 188.2,251.5 188.4,252.3 188.6,253.1 188.8,253.9 189.0,254.7 189.2,255.5 189.5,256.3 189.7,257.1 190.0,257.9 190.3,258.7 190.6,259.4 190.9,260.2 191.3,261.0 191.6,261.8 192.0,262.6 192.4,263.3 192.8,264.1 193.2,264.9 193.6,265.6 194.1,266.4 194.5,267.1 195.0,267.9 195.5,268.6 196.0,269.4 196.5,270.1 197.1,270.8 197.6,271.5 198.2,272.2 198.8,272.9 199.4,273.6 200.0,274.3 200.6,275.0 201.2,275.6 201.9,276.3 202.6,276.9 203.2,277.6 203.9,278.2 204.6,278.8 205.4,279.4 206.1,280.0 206.8,280.6 207.6,281.2 208.4,281.8 209.2,282.3 210.0,282.9 210.8,283.4 211.6,283.9 212.4,284.4 213.3,284.9 214.1,285.4 215.0,285.9 215.9,286.3 216.8,286.8 217.7,287.2 218.6,287.6 219.5,288.0 220.4,288.4 221.4,288.7 222.3,289.1 223.3,289.4 224.3,289.7 225.2,290.0 226.2,290.3 227.2,290.6 228.2,290.9 229.2,291.1 230.3,291.3 231.3,291.5 232.3,291.7 233.4,291.9 234.4,292.0 235.5,292.2 236.5,292.3 237.6,292.4 238.6,292.5 239.7,292.5 240.8,292.6 241.9,292.6 243.0,292.6 244.1,292.6 245.1,292.5 246.2,292.5 247.3,292.4 248.4,292.3 249.5,292.2 250.6,292.1 251.7,291.9 252.9,291.8 254.0,291.6 255.1,291.4 256.2,291.2 257.3,290.9 258.4,290.6 259.5,290.4 260.6,290.0 261.7,289.7 262.8,289.4 263.9,289.0 264.9,288.6 266.0,288.2 267.1,287.8 268.2,287.3 269.3,286.9 270.3,286.4 271.4,285.9 272.5,285.4 273.5,284.8 274.6,284.2 275.6,283.7 276.6,283.1 277.6,282.4 278.7,281.8 279.7,281.1 280.7,280.4 281.7,279.7 282.6,279.0 283.6,278.3 284.6,277.5 285.5,276.8 286.5,276.0 287.4,275.1 288.3,274.3 289.2,273.5 290.1,272.6 291.0,271.7 291.9,270.8 292.7,269.9 293.5,268.9 294.4,268.0 295.2,267.0 296.0,266.0 296.8,265.0 297.5,264.0 298.3,263.0 299.0,261.9 299.7,260.9 300.5,259.8 301.1,258.7 301.8,257.6 302.5,256.4 303.1,255.3 303.7,254.1 304.3,253.0 304.9,251.8 305.5,250.6 306.0,249.4 306.5,248.2 307.0,246.9 307.5,245.7 308.0,244.4 308.4,243.2 308.8,241.9 309.2,240.6 309.6,239.3 310.0,238.0 310.3,236.7 310.6,235.4 310.9,234.0 311.2,232.7 311.5,231.3\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.4\" stroke-dasharray=\"7 4\"/><circle cx=\"230.0\" cy=\"230.0\" r=\"5.5\" fill=\"#dc2626\"/><text x=\"30.0\" y=\"30.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">solid: first spiral</text><text x=\"30.0\" y=\"46.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">dashed: second spiral</text></svg>"
+              }
+            },
+            {
+              "explain": "That is 3 intersection points (the origin and the two red points, which lie on the line \\(y=x\\)). Why not the others: counting only the two non-origin points gives 2; 1 or 4 misses/invents intersections.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how many points of intersection would it have with the first spiral?",
+              "note": "Same radius \\(\\dfrac{t}{2}\\) \\(\\Rightarrow\\) same \\(t\\); \\(\\sin t=\\cos t\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }
@@ -4150,6 +4812,186 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q13a",
+          "type": "mc",
+          "stem": "\\(A\\), \\(B\\) and \\(C\\) are points defined by the position vectors \\(\\underset{\\sim}{a}=2\\underset{\\sim}{i}+3\\underset{\\sim}{j}-2\\underset{\\sim}{k}\\), \\(\\underset{\\sim}{b}=3\\underset{\\sim}{i}+\\underset{\\sim}{j}\\) and \\(\\underset{\\sim}{c}=2\\underset{\\sim}{i}-2\\underset{\\sim}{j}-\\underset{\\sim}{k}\\). Find the magnitude of angle \\(ABC\\), correct to one decimal place.",
+          "difficulty": "medium",
+          "options": [
+            "\\(107.5^{\\circ}\\)",
+            "\\(72.5^{\\circ}\\)",
+            "\\(42.1^{\\circ}\\)",
+            "\\(111.0^{\\circ}\\)"
+          ],
+          "answer": 0,
+          "hint": "Angle \\(ABC\\) is the angle AT \\(B\\), between the vectors \\(\\overrightarrow{BA}\\) and \\(\\overrightarrow{BC}\\) (both starting at \\(B\\)). Use \\(\\cos\\theta=\\dfrac{\\overrightarrow{BA}\\cdot\\overrightarrow{BC}}{|\\overrightarrow{BA}||\\overrightarrow{BC}|}\\).",
+          "steps": [
+            {
+              "explain": "The middle letter \\(B\\) is the vertex, so use the two vectors that START at \\(B\\): \\(\\overrightarrow{BA}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) and \\(\\overrightarrow{BC}=\\underset{\\sim}{c}-\\underset{\\sim}{b}\\).",
+              "work": "\\(\\overrightarrow{BA}=\\begin{pmatrix}2-3\\\\ 3-1\\\\-2-0\\end{pmatrix}=\\begin{pmatrix}-1\\\\ 2\\\\-2\\end{pmatrix},\\quad\\overrightarrow{BC}=\\begin{pmatrix}2-3\\\\-2-1\\\\-1-0\\end{pmatrix}=\\begin{pmatrix}-1\\\\-3\\\\-1\\end{pmatrix}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 230\" width=\"100%\" height=\"auto\" style=\"max-width:360px;display:block;margin:0 auto\"><polygon points=\"70,60 200,170 320,90\" fill=\"#e0e7ff\" fill-opacity=\"0.5\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"200.0\" y1=\"170.0\" x2=\"70.0\" y2=\"60.0\" stroke=\"#d97706\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"170.0\" x2=\"320.0\" y2=\"90.0\" stroke=\"#047857\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"70\" cy=\"60\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"58.0\" y=\"54.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"200\" cy=\"170\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"192.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"320\" cy=\"90\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"332.0\" y=\"86.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><polyline points=\"177.1,150.6 178.3,149.2 179.7,147.9 181.1,146.7 182.5,145.6 184.1,144.6 185.7,143.6 187.3,142.8 189.0,142.1 190.8,141.5 192.5,140.9 194.3,140.5 196.2,140.2 198.0,140.1 199.9,140.0 201.7,140.0 203.6,140.2 205.4,140.5 207.2,140.9 209.0,141.4 210.7,142.0 212.4,142.7 214.1,143.5 215.7,144.4 217.2,145.5 218.7,146.6 220.1,147.8 221.5,149.0 222.7,150.4 223.9,151.9 225.0,153.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"202.0\" y=\"130.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"112.0\" y=\"128.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">BA</text><text x=\"278.0\" y=\"142.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">BC</text><text x=\"354.0\" y=\"224.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+              }
+            },
+            {
+              "explain": "Dot product: multiply matching components and add.",
+              "work": "\\(\\overrightarrow{BA}\\cdot\\overrightarrow{BC}=(-1)(-1)+(2)(-3)+(-2)(-1)=1-6+2=-3\\)"
+            },
+            {
+              "explain": "Magnitudes: \\(|\\overrightarrow{BA}|=\\sqrt{1+4+4}=3\\) and \\(|\\overrightarrow{BC}|=\\sqrt{1+9+1}=\\sqrt{11}\\).",
+              "work": "\\(|\\overrightarrow{BA}|=3,\\qquad|\\overrightarrow{BC}|=\\sqrt{11}\\)"
+            },
+            {
+              "explain": "Substitute into the angle formula.",
+              "work": "\\(\\cos\\theta=\\dfrac{-3}{3\\sqrt{11}}=-\\dfrac{1}{\\sqrt{11}}\\approx-0.3015\\)"
+            },
+            {
+              "explain": "A NEGATIVE cosine means an OBTUSE angle (more than \\(90^{\\circ}\\)). Use the inverse cosine.",
+              "work": "\\(\\theta=\\cos^{-1}(-0.3015)\\approx107.5^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: B (\\(72.5^{\\circ}\\)) is \\(180^{\\circ}-107.5^{\\circ}\\) — the sign of the dot product was ignored; C and D come from using \\(\\overrightarrow{AB}\\) with \\(\\overrightarrow{BC}\\) or the position vectors \\(\\underset{\\sim}{a},\\underset{\\sim}{c}\\) directly instead of vectors from \\(B\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the magnitude of angle \\(ABC\\)",
+              "note": "Vectors from \\(B\\): \\(\\overrightarrow{BA}\\), \\(\\overrightarrow{BC}\\); then \\(\\cos\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q14a",
+          "type": "mc",
+          "stem": "By considering the scalar product \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}\\) where \\(\\underset{\\sim}{a}=a_{1}\\underset{\\sim}{i}+a_{2}\\underset{\\sim}{j}+a_{3}\\underset{\\sim}{k}\\) and \\(\\underset{\\sim}{b}=b_{1}\\underset{\\sim}{i}+b_{2}\\underset{\\sim}{j}+b_{3}\\underset{\\sim}{k}\\), prove that \\(\\left(a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}\\right)^{2}\\le\\left(a_{1}^{2}+a_{2}^{2}+a_{3}^{2}\\right)\\left(b_{1}^{2}+b_{2}^{2}+b_{3}^{2}\\right)\\)",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\theta\\ \\Rightarrow\\ (\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b})^{2}=|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\cos^{2}\\theta\\le|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\quad(\\cos^{2}\\theta\\le1)\\\\ &\\text{with }\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3},\\ |\\underset{\\sim}{a}|^{2}=a_{1}^{2}+a_{2}^{2}+a_{3}^{2},\\ |\\underset{\\sim}{b}|^{2}=b_{1}^{2}+b_{2}^{2}+b_{3}^{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\theta\\ \\Rightarrow\\ (\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b})^{2}=|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\cos^{2}\\theta\\ge|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\quad(\\cos^{2}\\theta\\ge1)\\\\ &\\text{so the inequality is reversed}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\sin\\theta\\ \\Rightarrow\\ (\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b})^{2}=|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\sin^{2}\\theta\\le|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\\\ &\\text{with the component forms as above}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\theta\\ \\Rightarrow\\ (\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b})^{2}\\le|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\quad(\\cos^{2}\\theta\\le1)\\\\ &\\text{with }|\\underset{\\sim}{a}|=a_{1}^{2}+a_{2}^{2}+a_{3}^{2}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}\\) in TWO ways: components \\(a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}\\) and geometrically \\(|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\theta\\). Square it and use \\(\\cos^{2}\\theta\\le1\\).",
+          "steps": [
+            {
+              "explain": "Component form of the dot product (multiply matching components and add).",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}\\)"
+            },
+            {
+              "explain": "Geometric form, where \\(\\theta\\) is the angle between the vectors.",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\theta\\)"
+            },
+            {
+              "explain": "Square both sides.",
+              "work": "\\((\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b})^{2}=|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\cos^{2}\\theta\\)"
+            },
+            {
+              "explain": "For every real \\(\\theta\\), \\(0\\le\\cos^{2}\\theta\\le1\\), so the right-hand side is at most \\(|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\) (multiplying by a non-negative number keeps \\(\\le\\)).",
+              "work": "\\((\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b})^{2}\\le|\\underset{\\sim}{a}|^{2}|\\underset{\\sim}{b}|^{2}\\)"
+            },
+            {
+              "explain": "Substitute the components: \\(|\\underset{\\sim}{a}|^{2}=a_{1}^{2}+a_{2}^{2}+a_{3}^{2}\\) and \\(|\\underset{\\sim}{b}|^{2}=b_{1}^{2}+b_{2}^{2}+b_{3}^{2}\\).",
+              "work": "\\((a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3})^{2}\\le(a_{1}^{2}+a_{2}^{2}+a_{3}^{2})(b_{1}^{2}+b_{2}^{2}+b_{3}^{2})\\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B reverses the inequality (\\(\\cos^{2}\\theta\\le1\\), not \\(\\ge1\\)); C uses \\(\\sin\\theta\\) (the dot product has \\(\\cos\\theta\\)); D forgets to square the magnitudes (and \\(|\\underset{\\sim}{a}|\\) is a square ROOT, not the sum of squares).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "By considering the scalar product",
+              "note": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\theta\\) and \\(\\cos^{2}\\theta\\le1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q15c",
+          "type": "mc",
+          "stem": "The vectors \\(\\underset{\\sim}{u}\\) and \\(\\underset{\\sim}{v}\\) are defined as \\(\\underset{\\sim}{u}=\\underset{\\sim}{a}+m\\underset{\\sim}{b}\\) and \\(\\underset{\\sim}{v}=m\\underset{\\sim}{a}-\\underset{\\sim}{b}\\), where \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\) are unit vectors and \\(m\\) is a real constant. Given that the dot product of \\(\\underset{\\sim}{u}\\) and \\(\\underset{\\sim}{v}\\) is 1, and that the acute angle between \\(\\underset{\\sim}{a}\\) and \\(\\underset{\\sim}{b}\\) is \\(\\dfrac{\\pi}{3}\\), find the value of \\(m\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(m=\\pm\\sqrt3\\)",
+            "\\(m=\\sqrt3\\) only",
+            "\\(m=\\pm\\sqrt2\\)",
+            "\\(m=\\pm2\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}\\) using \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{a}=|\\underset{\\sim}{a}|^{2}=1\\), \\(\\underset{\\sim}{b}\\cdot\\underset{\\sim}{b}=1\\) and \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=|\\underset{\\sim}{a}||\\underset{\\sim}{b}|\\cos\\dfrac{\\pi}{3}=\\dfrac{1}{2}\\). The \\(m\\) terms cancel nicely.",
+          "steps": [
+            {
+              "explain": "Unit vectors have \\(|\\underset{\\sim}{a}|=|\\underset{\\sim}{b}|=1\\), so \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{a}=1\\), \\(\\underset{\\sim}{b}\\cdot\\underset{\\sim}{b}=1\\). The angle between them is \\(\\dfrac{\\pi}{3}\\):",
+              "work": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=1\\cdot1\\cdot\\cos\\dfrac{\\pi}{3}=\\dfrac{1}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 220\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"170.0\" x2=\"260.0\" y2=\"170.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"170.0\" x2=\"251.3\" y2=\"165.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"170.0\" x2=\"251.3\" y2=\"175.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"170.0\" x2=\"160.0\" y2=\"-3.2\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"-3.2\" x2=\"151.3\" y2=\"1.8\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"-3.2\" x2=\"160.0\" y2=\"6.8\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"106.0,170.0 106.0,168.8 105.9,167.6 105.9,166.4 105.7,165.2 105.6,164.0 105.4,162.8 105.2,161.6 105.0,160.4 104.7,159.3 104.4,158.1 104.1,156.9 103.7,155.8 103.4,154.6 102.9,153.5 102.5,152.4 102.0,151.3 101.5,150.2 101.0,149.1 100.4,148.1 99.8,147.0 99.2,146.0 98.6,144.9 97.9,143.9 97.2,143.0 96.5,142.0 95.7,141.1 95.0,140.1 94.2,139.2 93.4,138.3 92.5,137.5 91.7,136.6 90.8,135.8 89.9,135.0 88.9,134.3 88.0,133.5 87.0,132.8 86.1,132.1 85.1,131.4 84.0,130.8 83.0,130.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"122.0\" y=\"145.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"115.6\" y1=\"149.0\" x2=\"128.4\" y2=\"149.0\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"122.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"254.0\" y=\"188.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"172.0\" y=\"4.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><text x=\"52.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand the dot product like brackets (the dot product is distributive and commutative).",
+              "work": "\\(\\underset{\\sim}{u}\\cdot\\underset{\\sim}{v}=m\\,\\underset{\\sim}{a}\\cdot\\underset{\\sim}{a}-\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}+m^{2}\\,\\underset{\\sim}{b}\\cdot\\underset{\\sim}{a}-m\\,\\underset{\\sim}{b}\\cdot\\underset{\\sim}{b}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{a}=\\underset{\\sim}{b}\\cdot\\underset{\\sim}{b}=1\\): the \\(m\\) and \\(-m\\) cancel.",
+              "work": "\\(=m-\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}+m^{2}\\,\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}-m=\\left(m^{2}-1\\right)\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}\\)"
+            },
+            {
+              "explain": "Set equal to 1 and use \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=\\dfrac{1}{2}\\).",
+              "work": "\\(\\left(m^{2}-1\\right)\\cdot\\dfrac{1}{2}=1\\ \\Rightarrow\\ m^{2}-1=2\\ \\Rightarrow\\ m^{2}=3\\)"
+            },
+            {
+              "explain": "Square root: BOTH signs.",
+              "work": "\\(m=\\pm\\sqrt3\\)"
+            },
+            {
+              "explain": "Check \\(m=-\\sqrt3\\): \\(m^{2}-1=2\\) as well ✓. Why not the others: B drops the negative root; C solves \\(m^{2}-1=1\\) (forgot to multiply by 2); D solves \\(m^{2}-1=3\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the value of \\(m\\).",
+              "note": "\\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{a}=1\\); \\(\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=\\dfrac{1}{2}\\); \\((m^{2}-1)\\underset{\\sim}{a}\\cdot\\underset{\\sim}{b}=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5047,6 +5889,191 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q15a1",
+          "type": "mc",
+          "stem": "Let \\(OACB\\) be a parallelogram with \\(\\overrightarrow{OA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{OB}=\\underset{\\sim}{b}\\). \\(M\\) is a point on \\(OA\\) such that \\(|\\overrightarrow{OM}|=\\dfrac{1}{5}|\\overrightarrow{OA}|\\). \\(P\\) is a point on \\(MB\\) such that \\(|\\overrightarrow{MP}|=\\dfrac{1}{6}|\\overrightarrow{MB}|\\), as shown in the diagram. Show that \\(P\\) lies on \\(OC\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"40,190 260,190 330,50 110,50\" fill=\"#e0e7ff\" fill-opacity=\"0.35\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"330.0\" y2=\"50.0\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"190.0\" x2=\"110.0\" y2=\"50.0\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"260.0\" y2=\"190.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"110.0\" y2=\"50.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"182.2\" y2=\"185.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"182.2\" y2=\"194.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"127.0\" x2=\"64.0\" y2=\"132.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"127.0\" x2=\"72.0\" y2=\"136.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"40.0\" cy=\"190.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"28.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"260.0\" cy=\"190.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"272.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"110.0\" cy=\"50.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"330.0\" cy=\"50.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"340.0\" y=\"42.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"84.0\" cy=\"190.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"84.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"88.3\" cy=\"166.7\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"76.3\" y=\"162.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"150.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"56.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\dfrac{1}{5}\\underset{\\sim}{a},\\ \\overrightarrow{MB}=\\underset{\\sim}{b}-\\dfrac{1}{5}\\underset{\\sim}{a}\\\\ &\\overrightarrow{OP}=\\overrightarrow{OM}+\\dfrac{1}{6}\\overrightarrow{MB}=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}-\\dfrac{1}{30}\\underset{\\sim}{a}=\\dfrac{1}{6}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}=\\dfrac{1}{6}\\overrightarrow{OC}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\dfrac{1}{5}\\underset{\\sim}{a},\\ \\overrightarrow{MB}=\\underset{\\sim}{b}-\\dfrac{1}{5}\\underset{\\sim}{a}\\\\ &\\overrightarrow{OP}=\\overrightarrow{OM}+\\dfrac{1}{6}\\overrightarrow{MB}=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}-\\dfrac{1}{30}\\underset{\\sim}{a}=\\dfrac{1}{6}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}\\ \\text{but }\\overrightarrow{OC}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\dfrac{1}{5}\\underset{\\sim}{a},\\ \\overrightarrow{MB}=\\underset{\\sim}{b}+\\dfrac{1}{5}\\underset{\\sim}{a}\\\\ &\\overrightarrow{OP}=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}+\\dfrac{1}{30}\\underset{\\sim}{a}=\\dfrac{1}{5}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}\\ \\text{so }P\\text{ is not on }OC\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{OM}=\\dfrac{1}{5}\\underset{\\sim}{a},\\ \\overrightarrow{MB}=\\underset{\\sim}{b}-\\dfrac{1}{5}\\underset{\\sim}{a}\\\\ &\\overrightarrow{OP}=\\overrightarrow{OM}+\\overrightarrow{MB}\\cdot\\dfrac{1}{6}=\\dfrac{1}{6}\\underset{\\sim}{b}\\ \\text{so }P\\text{ is on }OB\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Show \\(\\overrightarrow{OP}\\) is a SCALAR MULTIPLE of \\(\\overrightarrow{OC}\\). In a parallelogram \\(\\overrightarrow{OC}=\\overrightarrow{OA}+\\overrightarrow{OB}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\). Build \\(\\overrightarrow{OP}\\) by going \\(O\\to M\\) then \\(\\dfrac{1}{6}\\) of the way along \\(MB\\).",
+          "steps": [
+            {
+              "explain": "Position of \\(M\\): \\(M\\) is \\(\\dfrac{1}{5}\\) of the way from \\(O\\) to \\(A\\).",
+              "work": "\\(\\overrightarrow{OM}=\\dfrac{1}{5}\\underset{\\sim}{a}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"40,190 260,190 330,50 110,50\" fill=\"#e0e7ff\" fill-opacity=\"0.35\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"330.0\" y2=\"50.0\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"190.0\" x2=\"110.0\" y2=\"50.0\" stroke=\"#94a3b8\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"260.0\" y2=\"190.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"110.0\" y2=\"50.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"182.2\" y2=\"185.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"182.2\" y2=\"194.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"127.0\" x2=\"64.0\" y2=\"132.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"127.0\" x2=\"72.0\" y2=\"136.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"40.0\" cy=\"190.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"28.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"260.0\" cy=\"190.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"272.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"110.0\" cy=\"50.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"330.0\" cy=\"50.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"340.0\" y=\"42.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"84.0\" cy=\"190.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"84.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"88.3\" cy=\"166.7\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"76.3\" y=\"162.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"150.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"56.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text><line x1=\"40.0\" y1=\"190.0\" x2=\"84.0\" y2=\"190.0\" stroke=\"#047857\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"62.0\" y=\"226.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">OM</text></svg>"
+              }
+            },
+            {
+              "explain": "Vector \\(\\overrightarrow{MB}=\\overrightarrow{MO}+\\overrightarrow{OB}=-\\dfrac{1}{5}\\underset{\\sim}{a}+\\underset{\\sim}{b}\\) (end minus start).",
+              "work": "\\(\\overrightarrow{MB}=\\underset{\\sim}{b}-\\dfrac{1}{5}\\underset{\\sim}{a}\\)"
+            },
+            {
+              "explain": "\\(|\\overrightarrow{MP}|=\\dfrac{1}{6}|\\overrightarrow{MB}|\\) and \\(P\\) is on \\(MB\\), so \\(\\overrightarrow{MP}=\\dfrac{1}{6}\\overrightarrow{MB}\\).",
+              "work": "\\(\\overrightarrow{MP}=\\dfrac{1}{6}\\underset{\\sim}{b}-\\dfrac{1}{30}\\underset{\\sim}{a}\\)"
+            },
+            {
+              "explain": "Go from \\(O\\) to \\(M\\) then to \\(P\\): \\(\\overrightarrow{OP}=\\overrightarrow{OM}+\\overrightarrow{MP}\\). Combine the \\(\\underset{\\sim}{a}\\) terms: \\(\\dfrac{1}{5}-\\dfrac{1}{30}=\\dfrac{6}{30}-\\dfrac{1}{30}=\\dfrac{5}{30}=\\dfrac{1}{6}\\).",
+              "work": "\\(\\overrightarrow{OP}=\\dfrac{1}{5}\\underset{\\sim}{a}-\\dfrac{1}{30}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}=\\dfrac{1}{6}\\underset{\\sim}{a}+\\dfrac{1}{6}\\underset{\\sim}{b}\\)"
+            },
+            {
+              "explain": "In the parallelogram \\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\), so \\(\\overrightarrow{OP}=\\dfrac{1}{6}\\overrightarrow{OC}\\): \\(\\overrightarrow{OP}\\) is parallel to \\(\\overrightarrow{OC}\\) and shares the point \\(O\\), so \\(P\\) lies on \\(OC\\) (red line). ∎",
+              "work": "\\(\\overrightarrow{OP}=\\dfrac{1}{6}\\overrightarrow{OC}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"40,190 260,190 330,50 110,50\" fill=\"#e0e7ff\" fill-opacity=\"0.35\" stroke=\"#64748b\" stroke-width=\"1.8\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"330.0\" y2=\"50.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"190.0\" x2=\"110.0\" y2=\"50.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"260.0\" y2=\"190.0\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"190.0\" x2=\"110.0\" y2=\"50.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"182.2\" y2=\"185.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"190.0\" x2=\"182.2\" y2=\"194.5\" stroke=\"#3b4ea8\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"127.0\" x2=\"64.0\" y2=\"132.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"127.0\" x2=\"72.0\" y2=\"136.0\" stroke=\"#d97706\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"40.0\" cy=\"190.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"28.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"260.0\" cy=\"190.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"272.0\" y=\"204.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><circle cx=\"110.0\" cy=\"50.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><circle cx=\"330.0\" cy=\"50.0\" r=\"3.6\" fill=\"#1e293b\"/><text x=\"340.0\" y=\"42.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><circle cx=\"84.0\" cy=\"190.0\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"84.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"88.3\" cy=\"166.7\" r=\"4.4\" fill=\"#1e293b\"/><text x=\"76.3\" y=\"162.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><text x=\"150.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">a</text><text x=\"56.0\" y=\"120.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">b</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: B takes \\(\\overrightarrow{OC}=\\underset{\\sim}{a}-\\underset{\\sim}{b}\\) (that is \\(\\overrightarrow{BA}\\)); C has a sign error in \\(\\overrightarrow{MB}\\); D forgets the \\(\\overrightarrow{OM}\\) term and so finds a point on \\(OB\\) direction.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(P\\) lies on \\(OC\\).",
+              "note": "\\(\\overrightarrow{OP}=\\overrightarrow{OM}+\\dfrac{1}{6}\\overrightarrow{MB}\\); compare with \\(\\overrightarrow{OC}=\\underset{\\sim}{a}+\\underset{\\sim}{b}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q15a2",
+          "type": "mc",
+          "stem": "Let \\(OACB\\) be a parallelogram with \\(\\overrightarrow{OA}=\\underset{\\sim}{a}\\) and \\(\\overrightarrow{OB}=\\underset{\\sim}{b}\\), \\(P\\) lying on the diagonal \\(OC\\) with \\(\\overrightarrow{OP}=\\dfrac{1}{6}\\overrightarrow{OC}\\). State the ratio of lengths \\(OP:PC\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(1:5\\)",
+            "\\(1:6\\)",
+            "\\(5:1\\)",
+            "\\(1:4\\)"
+          ],
+          "answer": 0,
+          "hint": "If \\(OP\\) is \\(\\dfrac{1}{6}\\) of \\(OC\\), then \\(PC\\) is the REMAINING \\(\\dfrac{5}{6}\\). Compare the two parts, not part to whole.",
+          "steps": [
+            {
+              "explain": "From part (i): \\(\\overrightarrow{OP}=\\dfrac{1}{6}\\overrightarrow{OC}\\), so \\(OP=\\dfrac16OC\\).",
+              "work": "\\(OP=\\dfrac{1}{6}\\,OC\\)"
+            },
+            {
+              "explain": "\\(P\\) is on \\(OC\\), so \\(PC=OC-OP=OC-\\dfrac16OC=\\dfrac{5}{6}\\,OC\\).",
+              "work": "\\(PC=\\dfrac{5}{6}\\,OC\\)"
+            },
+            {
+              "explain": "Ratio of the two parts (multiply by 6 to clear the fractions).",
+              "work": "\\(OP:PC=\\dfrac{1}{6}:\\dfrac{5}{6}=1:5\\)"
+            },
+            {
+              "explain": "Why not the others: B compares OP with the whole diagonal (\\(1:6\\)); C is upside down; D mistakes \\(OC\\) for 5 parts.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "State the ratio of lengths \\(OP:PC\\).",
+              "note": "\\(OP=\\dfrac16OC\\Rightarrow PC=\\dfrac56OC\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q16c",
+          "type": "mc",
+          "stem": "\\(M\\) and \\(P\\) are two points with position vectors \\(\\overrightarrow{OM}=\\underset{\\sim}{m}\\) and \\(\\overrightarrow{OP}=\\underset{\\sim}{p}\\) respectively. \\(N\\) is the midpoint of \\(MP\\) and has position vector \\(\\overrightarrow{ON}=\\underset{\\sim}{n}\\). \\(PQ\\) is perpendicular to \\(MN\\) and \\(\\overrightarrow{NQ}=\\lambda\\overrightarrow{ON}\\), where \\(\\lambda\\in\\mathbb{R}\\). Show that \\(\\lambda=\\dfrac{\\left|\\underset{\\sim}{m}\\right|^{2}+\\left|\\underset{\\sim}{n}\\right|^{2}-2\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}}{\\left|\\underset{\\sim}{n}\\right|^{2}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}}\\).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"110.0\" y1=\"285.0\" x2=\"303.0\" y2=\"7.3\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"95.0\" y1=\"170.0\" x2=\"330.0\" y2=\"105.0\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"105.0\" x2=\"303.0\" y2=\"7.3\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polyline points=\"326.8,93.4 315.2,96.6 318.4,108.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"110.0\" cy=\"285.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"100.0\" y=\"299.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"95.0\" cy=\"170.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"83.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"330.0\" cy=\"105.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"342.0\" y=\"111.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"212.5\" cy=\"137.5\" r=\"4\" fill=\"#1e293b\"/><text x=\"200.5\" y=\"129.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><circle cx=\"303.0\" cy=\"7.3\" r=\"4\" fill=\"#1e293b\"/><text x=\"303.0\" y=\"-2.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"412.0\" y=\"322.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+          },
+          "options": [
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=2\\underset{\\sim}{n}-\\underset{\\sim}{m},\\ \\ \\overrightarrow{OQ}=(1+\\lambda)\\underset{\\sim}{n},\\ \\ \\overrightarrow{PQ}=(\\lambda-1)\\underset{\\sim}{n}+\\underset{\\sim}{m},\\ \\ \\overrightarrow{MN}=\\underset{\\sim}{n}-\\underset{\\sim}{m}\\\\ &\\overrightarrow{PQ}\\cdot\\overrightarrow{MN}=0\\Rightarrow\\lambda\\left(|\\underset{\\sim}{n}|^{2}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}\\right)=|\\underset{\\sim}{m}|^{2}+|\\underset{\\sim}{n}|^{2}-2\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=2\\underset{\\sim}{n}-\\underset{\\sim}{m},\\ \\ \\overrightarrow{OQ}=\\lambda\\underset{\\sim}{n}\\\\ &\\overrightarrow{PQ}=(\\lambda-2)\\underset{\\sim}{n}+\\underset{\\sim}{m},\\ \\ \\overrightarrow{PQ}\\cdot\\overrightarrow{MN}=0\\Rightarrow\\lambda=\\ldots\\ne\\text{the required form}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\underset{\\sim}{p}=\\underset{\\sim}{n}+\\underset{\\sim}{m},\\ \\ \\overrightarrow{OQ}=(1+\\lambda)\\underset{\\sim}{n}\\\\ &\\overrightarrow{PQ}=(1+\\lambda)\\underset{\\sim}{n}-\\underset{\\sim}{m}-\\underset{\\sim}{n}\\ \\ \\text{(midpoint misused)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\overrightarrow{PQ}\\parallel\\overrightarrow{MN}\\ \\text{(perpendicular confused with parallel)}\\\\ &\\overrightarrow{PQ}=k\\overrightarrow{MN}\\Rightarrow\\ldots\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Perpendicular \\(\\Rightarrow\\) DOT PRODUCT \\(=0\\): \\(\\overrightarrow{PQ}\\cdot\\overrightarrow{MN}=0\\). Express \\(\\underset{\\sim}{p}\\) using the midpoint (\\(\\underset{\\sim}{n}=\\dfrac{1}{2}(\\underset{\\sim}{m}+\\underset{\\sim}{p})\\Rightarrow\\underset{\\sim}{p}=2\\underset{\\sim}{n}-\\underset{\\sim}{m}\\)), find \\(\\overrightarrow{OQ}\\) and \\(\\overrightarrow{PQ}\\) in terms of \\(\\underset{\\sim}{m},\\underset{\\sim}{n},\\lambda\\), expand, and solve for \\(\\lambda\\).",
+          "steps": [
+            {
+              "explain": "Midpoint: \\(\\underset{\\sim}{n}=\\dfrac{\\underset{\\sim}{m}+\\underset{\\sim}{p}}{2}\\), so \\(\\underset{\\sim}{p}=2\\underset{\\sim}{n}-\\underset{\\sim}{m}\\). Draw the diagram with the vectors marked (\\(MN\\) green, \\(PQ\\) red, perpendicular at \\(P\\)).",
+              "work": "\\(\\underset{\\sim}{p}=2\\underset{\\sim}{n}-\\underset{\\sim}{m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"110.0\" y1=\"285.0\" x2=\"212.5\" y2=\"137.5\" stroke=\"#3b4ea8\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"212.5\" y1=\"137.5\" x2=\"303.0\" y2=\"7.3\" stroke=\"#3b4ea8\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"95.0\" y1=\"170.0\" x2=\"330.0\" y2=\"105.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"330.0\" y1=\"105.0\" x2=\"303.0\" y2=\"7.3\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"285.0\" x2=\"95.0\" y2=\"170.0\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"110.0\" y1=\"285.0\" x2=\"330.0\" y2=\"105.0\" stroke=\"#7c3aed\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><polyline points=\"326.8,93.4 315.2,96.6 318.4,108.2\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><circle cx=\"110.0\" cy=\"285.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"100.0\" y=\"299.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><circle cx=\"95.0\" cy=\"170.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"83.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">M</text><circle cx=\"330.0\" cy=\"105.0\" r=\"4\" fill=\"#1e293b\"/><text x=\"342.0\" y=\"111.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">P</text><circle cx=\"212.5\" cy=\"137.5\" r=\"4\" fill=\"#1e293b\"/><text x=\"200.5\" y=\"129.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">N</text><circle cx=\"303.0\" cy=\"7.3\" r=\"4\" fill=\"#1e293b\"/><text x=\"303.0\" y=\"-2.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">Q</text><text x=\"412.0\" y=\"322.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(Q\\) is on line \\(ON\\): \\(\\overrightarrow{OQ}=\\overrightarrow{ON}+\\overrightarrow{NQ}=\\underset{\\sim}{n}+\\lambda\\underset{\\sim}{n}\\).",
+              "work": "\\(\\overrightarrow{OQ}=(1+\\lambda)\\underset{\\sim}{n}\\)"
+            },
+            {
+              "explain": "\\(\\overrightarrow{PQ}=\\overrightarrow{OQ}-\\overrightarrow{OP}=(1+\\lambda)\\underset{\\sim}{n}-(2\\underset{\\sim}{n}-\\underset{\\sim}{m})\\). And \\(\\overrightarrow{MN}=\\underset{\\sim}{n}-\\underset{\\sim}{m}\\) (end minus start).",
+              "work": "\\(\\overrightarrow{PQ}=(\\lambda-1)\\underset{\\sim}{n}+\\underset{\\sim}{m},\\qquad\\overrightarrow{MN}=\\underset{\\sim}{n}-\\underset{\\sim}{m}\\)"
+            },
+            {
+              "explain": "Perpendicular: \\(\\overrightarrow{PQ}\\cdot\\overrightarrow{MN}=0\\). Expand, using \\(\\underset{\\sim}{n}\\cdot\\underset{\\sim}{n}=|\\underset{\\sim}{n}|^{2}\\), \\(\\underset{\\sim}{m}\\cdot\\underset{\\sim}{m}=|\\underset{\\sim}{m}|^{2}\\), \\(\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}=\\underset{\\sim}{n}\\cdot\\underset{\\sim}{m}\\).",
+              "work": "\\(\\left[(\\lambda-1)\\underset{\\sim}{n}+\\underset{\\sim}{m}\\right]\\cdot\\left[\\underset{\\sim}{n}-\\underset{\\sim}{m}\\right]=(\\lambda-1)|\\underset{\\sim}{n}|^{2}-(\\lambda-1)\\,\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}+\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}-|\\underset{\\sim}{m}|^{2}=0\\)"
+            },
+            {
+              "explain": "Collect the \\(\\lambda\\) terms on one side.",
+              "work": "\\(\\lambda\\left(|\\underset{\\sim}{n}|^{2}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}\\right)=|\\underset{\\sim}{n}|^{2}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}+|\\underset{\\sim}{m}|^{2}\\)"
+            },
+            {
+              "explain": "Divide by \\(|\\underset{\\sim}{n}|^{2}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}\\) (not zero, or \\(N\\) would coincide with the foot of the perpendicular).",
+              "work": "\\(\\lambda=\\dfrac{|\\underset{\\sim}{m}|^{2}+|\\underset{\\sim}{n}|^{2}-2\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}}{|\\underset{\\sim}{n}|^{2}-\\underset{\\sim}{m}\\cdot\\underset{\\sim}{n}}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B takes \\(\\overrightarrow{OQ}=\\lambda\\underset{\\sim}{n}\\) (but \\(\\overrightarrow{NQ}=\\lambda\\underset{\\sim}{n}\\), so \\(\\overrightarrow{OQ}=(1+\\lambda)\\underset{\\sim}{n}\\)); C uses \\(\\underset{\\sim}{p}=\\underset{\\sim}{n}+\\underset{\\sim}{m}\\) (wrong midpoint relation); D uses parallel instead of perpendicular.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that",
+              "note": "\\(\\underset{\\sim}{p}=2\\underset{\\sim}{n}-\\underset{\\sim}{m}\\); \\(\\overrightarrow{PQ}\\cdot\\overrightarrow{MN}=0\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5610,6 +6637,66 @@
           "meta": {
             "source": "Cranbrook School 2020 Mathematics Extension 2 HSC Trial Examination (Assessment Task 3)",
             "school": "Cranbrook School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-4u-q7",
+          "type": "mc",
+          "stem": "Consider triangle \\(AOB\\), where \\(A\\) is the point \\((1,0,1)\\) and \\(B\\) is the point \\((0,2,2)\\). Which of the following is true?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 280\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"190.0\" y1=\"170.0\" x2=\"400.8\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"400.8\" y1=\"170.0\" x2=\"393.9\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"400.8\" y1=\"170.0\" x2=\"393.9\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"408.8\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"190.0\" y1=\"170.0\" x2=\"190.0\" y2=\"8.8\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"8.8\" x2=\"186.0\" y2=\"15.7\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"8.8\" x2=\"194.0\" y2=\"15.7\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"198.0\" y=\"4.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"190.0\" y1=\"170.0\" x2=\"125.2\" y2=\"234.8\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"125.2\" y1=\"234.8\" x2=\"132.9\" y2=\"232.7\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"125.2\" y1=\"234.8\" x2=\"127.3\" y2=\"227.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"119.2\" y=\"246.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"155.9\" y1=\"142.1\" x2=\"155.9\" y2=\"204.1\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"314.0\" y1=\"46.0\" x2=\"314.0\" y2=\"170.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"190.0\" cy=\"170.0\" r=\"4.5\" fill=\"#1e293b\"/><circle cx=\"155.9\" cy=\"142.1\" r=\"4.5\" fill=\"#1e293b\"/><circle cx=\"314.0\" cy=\"46.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"186.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"147.9\" y=\"138.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(1, 0, 1)</text><text x=\"322.0\" y=\"38.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(0, 2, 2)</text><text x=\"412.0\" y=\"272.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+          },
+          "options": [
+            "Angle \\(AOB\\) is a right angle",
+            "Triangle \\(AOB\\) is isosceles",
+            "Angle \\(OAB\\) is twice the size of angle \\(OBA\\)",
+            "Angle \\(AOB\\) is twice the size of angle \\(OBA\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the three side lengths with \\(\\sqrt{x^{2}+y^{2}+z^{2}}\\). The ratio of the sides tells you the shape (and the angles): compare with the special triangles \\(1:\\sqrt3:2\\) and \\(1:1:\\sqrt2\\).",
+          "steps": [
+            {
+              "explain": "Side lengths from the coordinates (\\(O\\) is the origin).",
+              "work": "\\(|OA|=\\sqrt{1+0+1}=\\sqrt2,\\quad|OB|=\\sqrt{0+4+4}=2\\sqrt2,\\quad|AB|=\\sqrt{1+4+1}=\\sqrt6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 280\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"190.0\" y1=\"170.0\" x2=\"400.8\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"400.8\" y1=\"170.0\" x2=\"393.9\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"400.8\" y1=\"170.0\" x2=\"393.9\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"408.8\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"190.0\" y1=\"170.0\" x2=\"190.0\" y2=\"8.8\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"8.8\" x2=\"186.0\" y2=\"15.7\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"8.8\" x2=\"194.0\" y2=\"15.7\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"198.0\" y=\"4.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">z</text><line x1=\"190.0\" y1=\"170.0\" x2=\"125.2\" y2=\"234.8\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"125.2\" y1=\"234.8\" x2=\"132.9\" y2=\"232.7\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"125.2\" y1=\"234.8\" x2=\"127.3\" y2=\"227.1\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"119.2\" y=\"246.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><line x1=\"155.9\" y1=\"142.1\" x2=\"155.9\" y2=\"204.1\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"314.0\" y1=\"46.0\" x2=\"314.0\" y2=\"170.0\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><polygon points=\"190.0,170.0 155.9,142.1 314.0,46.0\" fill=\"#fde68a\" fill-opacity=\"0.5\" stroke=\"none\"/><line x1=\"190.0\" y1=\"170.0\" x2=\"155.9\" y2=\"142.1\" stroke=\"#d97706\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"155.9\" y1=\"142.1\" x2=\"314.0\" y2=\"46.0\" stroke=\"#047857\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"170.0\" x2=\"314.0\" y2=\"46.0\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"164.9\" y=\"160.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√2</text><text x=\"236.9\" y=\"78.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√6</text><text x=\"264.0\" y=\"104.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2√2</text><circle cx=\"190.0\" cy=\"170.0\" r=\"4.5\" fill=\"#1e293b\"/><circle cx=\"155.9\" cy=\"142.1\" r=\"4.5\" fill=\"#1e293b\"/><circle cx=\"314.0\" cy=\"46.0\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"200.0\" y=\"186.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"147.9\" y=\"138.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A(1, 0, 1)</text><text x=\"322.0\" y=\"38.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B(0, 2, 2)</text><text x=\"412.0\" y=\"272.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">(NOT TO SCALE)</text></svg>"
+              }
+            },
+            {
+              "explain": "\\(\\overrightarrow{AB}=B-A=(-1,2,1)\\), so \\(|AB|=\\sqrt{(-1)^{2}+2^{2}+1^{2}}=\\sqrt6\\). The three sides are \\(\\sqrt2,\\ \\sqrt6,\\ 2\\sqrt2\\): all different, so the triangle is SCALENE.",
+              "work": "\\(|OA|:|AB|:|OB|=\\sqrt2:\\sqrt6:2\\sqrt2=1:\\sqrt3:2\\)"
+            },
+            {
+              "explain": "Pythagoras check: \\(|OA|^{2}+|AB|^{2}=2+6=8=|OB|^{2}\\), so the RIGHT angle is at \\(A\\) (opposite the longest side \\(OB\\)), not at \\(O\\).",
+              "work": "\\(\\angle OAB=90^{\\circ}\\)"
+            },
+            {
+              "explain": "A \\(1:\\sqrt3:2\\) right triangle is the \\(30^{\\circ}\\)-\\(60^{\\circ}\\)-\\(90^{\\circ}\\) triangle. Angle \\(AOB\\): \\(\\cos\\angle AOB=\\dfrac{|OA|}{|OB|}=\\dfrac{\\sqrt2}{2\\sqrt2}=\\dfrac{1}{2}\\), so \\(\\angle AOB=60^{\\circ}\\). Then \\(\\angle OBA=30^{\\circ}\\).",
+              "work": "\\(\\angle AOB=60^{\\circ}=2\\times30^{\\circ}=2\\angle OBA\\)"
+            },
+            {
+              "explain": "Check each option: A false (\\(\\angle AOB=60^{\\circ}\\), the right angle is at \\(A\\)); B false (scalene); C false (\\(\\angle OAB=90^{\\circ}\\) is three times \\(\\angle OBA=30^{\\circ}\\), not twice); D true (\\(60^{\\circ}=2\\times30^{\\circ}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Which of the following is true?",
+              "note": "Lengths \\(\\sqrt2,\\sqrt6,2\\sqrt2\\): ratio \\(1:\\sqrt3:2\\) (30-60-90)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hills Grammar 2025 Trial HSC Mathematics Extension 2",
+            "school": "The Hills Grammar School",
             "grade": "12",
             "origin": "teacher"
           }

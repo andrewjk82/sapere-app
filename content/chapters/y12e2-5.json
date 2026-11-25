@@ -276,6 +276,156 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "hornsby2021e2-q16b1",
+          "type": "mc",
+          "stem": "Let \\(t=\\tan\\dfrac{x}{2}\\). Show that \\(\\dfrac{dx}{dt}=\\dfrac{2}{1+t^{2}}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\begin{aligned}&t=\\tan\\dfrac{x}{2}\\Rightarrow x=2\\tan^{-1}t\\\\ &\\dfrac{dx}{dt}=2\\cdot\\dfrac{1}{1+t^{2}}=\\dfrac{2}{1+t^{2}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&t=\\tan\\dfrac{x}{2}\\Rightarrow x=\\tan^{-1}\\dfrac{t}{2}\\\\ &\\dfrac{dx}{dt}=\\dfrac{1}{1+t^{2}}\\cdot\\dfrac{1}{2}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{dt}{dx}=\\sec^{2}\\dfrac{x}{2}=1+t^{2}\\\\ &\\dfrac{dx}{dt}=\\dfrac{1}{1+t^{2}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&x=2\\tan^{-1}t\\\\ &\\dfrac{dx}{dt}=2\\ln(1+t^{2})\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Make \\(x\\) the subject first: \\(x=2\\tan^{-1}t\\). Then differentiate using \\(\\dfrac{d}{dt}\\tan^{-1}t=\\dfrac{1}{1+t^{2}}\\).",
+          "steps": [
+            {
+              "explain": "Double both sides and take \\(\\tan^{-1}\\): \\(\\dfrac{x}{2}=\\tan^{-1}t\\).",
+              "work": "\\(x=2\\tan^{-1}t\\)"
+            },
+            {
+              "explain": "Differentiate: \\(\\dfrac{d}{dt}\\tan^{-1}t=\\dfrac{1}{1+t^{2}}\\), and the constant 2 stays in front.",
+              "work": "\\(\\dfrac{dx}{dt}=\\dfrac{2}{1+t^{2}}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "(Alternatively \\(\\dfrac{dt}{dx}=\\dfrac{1}{2}\\sec^{2}\\dfrac{x}{2}=\\dfrac{1}{2}(1+t^{2})\\), then flip.) Why not the others: B puts the 2 under \\(t\\); C forgets the factor 2 from \\(\\dfrac{1}{2}\\sec^{2}\\dfrac{x}{2}\\); D integrates instead of using the inverse-tan derivative.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Let \\(t=\\tan\\dfrac{x}{2}\\)",
+              "note": "\\(x=2\\tan^{-1}t\\); differentiate."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q16b2",
+          "type": "mc",
+          "stem": "Let \\(t=\\tan\\dfrac{x}{2}\\). Without stating \\(t\\)-results, show that \\(\\dfrac{2\\tan\\dfrac{x}{2}}{1+\\tan^{2}\\dfrac{x}{2}}=\\sin x\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\dfrac{2\\tan\\dfrac{x}{2}}{1+\\tan^{2}\\dfrac{x}{2}}=\\dfrac{2\\tan\\dfrac{x}{2}}{\\sec^{2}\\dfrac{x}{2}}=2\\tan\\dfrac{x}{2}\\cos^{2}\\dfrac{x}{2}\\\\ &=2\\sin\\dfrac{x}{2}\\cos\\dfrac{x}{2}=\\sin x\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{2\\tan\\dfrac{x}{2}}{1+\\tan^{2}\\dfrac{x}{2}}=\\dfrac{2\\tan\\dfrac{x}{2}}{\\sec^{2}\\dfrac{x}{2}}=2\\tan\\dfrac{x}{2}\\sin^{2}\\dfrac{x}{2}\\\\ &=\\dfrac{2\\sin^{3}\\dfrac{x}{2}}{\\cos\\dfrac{x}{2}}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{2\\tan\\dfrac{x}{2}}{1+\\tan^{2}\\dfrac{x}{2}}=\\dfrac{2\\tan\\dfrac{x}{2}}{\\tan^{2}\\dfrac{x}{2}+1}=\\tan\\dfrac{x}{2}\\\\ &\\ne\\sin x\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\dfrac{2\\tan\\dfrac{x}{2}}{1+\\tan^{2}\\dfrac{x}{2}}=2\\tan\\dfrac{x}{2}\\cos\\dfrac{x}{2}\\\\ &=2\\sin\\dfrac{x}{2}=\\sin x\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(1+\\tan^{2}\\theta=\\sec^{2}\\theta=\\dfrac{1}{\\cos^{2}\\theta}\\) and \\(\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}\\) with \\(\\theta=\\dfrac{x}{2}\\), then the double-angle formula \\(\\sin x=2\\sin\\dfrac{x}{2}\\cos\\dfrac{x}{2}\\).",
+          "steps": [
+            {
+              "explain": "Denominator: \\(1+\\tan^{2}\\dfrac{x}{2}=\\sec^{2}\\dfrac{x}{2}=\\dfrac{1}{\\cos^{2}\\dfrac{x}{2}}\\). Dividing by it multiplies by \\(\\cos^{2}\\dfrac{x}{2}\\).",
+              "work": "\\(\\dfrac{2\\tan\\dfrac{x}{2}}{\\sec^{2}\\dfrac{x}{2}}=2\\tan\\dfrac{x}{2}\\cos^{2}\\dfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Replace \\(\\tan\\dfrac{x}{2}=\\dfrac{\\sin\\dfrac{x}{2}}{\\cos\\dfrac{x}{2}}\\); one \\(\\cos\\dfrac{x}{2}\\) cancels.",
+              "work": "\\(=2\\cdot\\dfrac{\\sin\\dfrac{x}{2}}{\\cos\\dfrac{x}{2}}\\cdot\\cos^{2}\\dfrac{x}{2}=2\\sin\\dfrac{x}{2}\\cos\\dfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Double-angle formula \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\) with \\(\\theta=\\dfrac{x}{2}\\).",
+              "work": "\\(=\\sin x\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B uses \\(\\sin^{2}\\) instead of \\(\\cos^{2}\\); C cancels wrongly; D forgets one power of \\(\\cos\\dfrac{x}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Without stating \\(t\\)-results, show that",
+              "note": "\\(1+\\tan^{2}=\\sec^{2}\\); then \\(2\\sin\\theta\\cos\\theta\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "hornsby2021e2-q16b3",
+          "type": "mc",
+          "stem": "Hence, show that \\(\\displaystyle\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{1}{1+k\\sin x}\\,dx=\\dfrac{2}{\\sqrt{1-k^{2}}}\\tan^{-1}\\sqrt{\\dfrac{1-k}{1+k}}\\), where \\(0<k<1\\).",
+          "difficulty": "hard",
+          "options": [
+            "\\(\\begin{aligned}&\\sin x=\\dfrac{2t}{1+t^{2}},\\ dx=\\dfrac{2\\,dt}{1+t^{2}},\\ t:0\\to1\\\\ &\\int_{0}^{1}\\dfrac{2\\,dt}{t^{2}+2kt+1}=\\int_{0}^{1}\\dfrac{2\\,dt}{(t+k)^{2}+(1-k^{2})}=\\dfrac{2}{\\sqrt{1-k^{2}}}\\left[\\tan^{-1}\\dfrac{t+k}{\\sqrt{1-k^{2}}}\\right]_{0}^{1}\\\\ &=\\dfrac{2}{\\sqrt{1-k^{2}}}\\tan^{-1}\\sqrt{\\dfrac{1-k}{1+k}}\\quad\\text{(using }\\tan(A-B)\\text{ on the two arctans)}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\sin x=\\dfrac{2t}{1+t^{2}},\\ dx=\\dfrac{dt}{1+t^{2}},\\ t:0\\to1\\\\ &\\int_{0}^{1}\\dfrac{dt}{t^{2}+2kt+1}=\\dfrac{1}{\\sqrt{1-k^{2}}}\\left[\\tan^{-1}\\dfrac{t+k}{\\sqrt{1-k^{2}}}\\right]_{0}^{1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\sin x=\\dfrac{2t}{1+t^{2}},\\ dx=\\dfrac{2\\,dt}{1+t^{2}},\\ t:0\\to\\infty\\\\ &\\int_{0}^{\\infty}\\dfrac{2\\,dt}{t^{2}+2kt+1}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\sin x=\\dfrac{1-t^{2}}{1+t^{2}},\\ dx=\\dfrac{2\\,dt}{1+t^{2}}\\\\ &\\int_{0}^{1}\\dfrac{2\\,dt}{1+t^{2}+k(1-t^{2})}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(t=\\tan\\dfrac{x}{2}\\): \\(\\sin x=\\dfrac{2t}{1+t^{2}}\\) and \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\) (parts (i),(ii)). Limits: \\(x=0\\Rightarrow t=0\\); \\(x=\\dfrac{\\pi}{2}\\Rightarrow t=\\tan\\dfrac{\\pi}{4}=1\\). Then complete the square in the denominator.",
+          "steps": [
+            {
+              "explain": "Substitute: \\(1+k\\sin x=\\dfrac{1+t^{2}+2kt}{1+t^{2}}\\); multiply by \\(dx=\\dfrac{2\\,dt}{1+t^{2}}\\): the \\((1+t^{2})\\) cancels.",
+              "work": "\\(\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{1+k\\sin x}=\\int_{0}^{1}\\dfrac{2\\,dt}{t^{2}+2kt+1}\\)"
+            },
+            {
+              "explain": "Complete the square: \\(t^{2}+2kt+1=(t+k)^{2}+(1-k^{2})\\), where \\(1-k^{2}>0\\) because \\(0<k<1\\). Let \\(s^{2}=1-k^{2}\\).",
+              "work": "\\(=\\int_{0}^{1}\\dfrac{2\\,dt}{(t+k)^{2}+s^{2}}=\\dfrac{2}{s}\\left[\\tan^{-1}\\dfrac{t+k}{s}\\right]_{0}^{1}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(\\dfrac{2}{s}\\left[\\tan^{-1}\\dfrac{1+k}{s}-\\tan^{-1}\\dfrac{k}{s}\\right]\\). Use \\(\\tan(A-B)=\\dfrac{\\tan A-\\tan B}{1+\\tan A\\tan B}\\).",
+              "work": "\\(\\tan(A-B)=\\dfrac{\\dfrac{1+k}{s}-\\dfrac{k}{s}}{1+\\dfrac{k(1+k)}{s^{2}}}=\\dfrac{\\dfrac{1}{s}}{\\dfrac{1-k^{2}+k+k^{2}}{s^{2}}}=\\dfrac{s}{1+k}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{s}{1+k}=\\dfrac{\\sqrt{(1-k)(1+k)}}{1+k}=\\sqrt{\\dfrac{1-k}{1+k}}\\).",
+              "work": "\\(\\int_{0}^{\\frac{\\pi}{2}}\\dfrac{dx}{1+k\\sin x}=\\dfrac{2}{\\sqrt{1-k^{2}}}\\tan^{-1}\\sqrt{\\dfrac{1-k}{1+k}}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B forgets the factor 2 in \\(dx\\); C uses upper limit \\(\\infty\\) (that is \\(x=\\pi\\)); D uses \\(\\cos x\\) instead of \\(\\sin x\\) in the \\(t\\)-formula.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Hence, show that",
+              "note": "\\(t=\\tan\\dfrac{x}{2}\\); limits \\(0\\to1\\); complete the square."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Hornsby Girls High School 2021 Year 12 Trial Mathematics Extension 2",
+            "school": "Hornsby Girls High School",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
