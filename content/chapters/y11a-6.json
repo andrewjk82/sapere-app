@@ -20710,6 +20710,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-q33a",
+          "type": "mc",
+          "stem": "Prove that \\(\\dfrac{1}{1-\\sin x}+\\dfrac{1}{1+\\sin x}\\equiv2\\sec^{2}x\\) where \\(\\sin x\\neq\\pm1\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "LHS \\(=\\dfrac{(1+\\sin x)+(1-\\sin x)}{(1-\\sin x)(1+\\sin x)}=\\dfrac{2}{1-\\sin^{2}x}=\\dfrac{2}{\\cos^{2}x}=2\\sec^{2}x=\\) RHS",
+            "LHS \\(=\\dfrac{1+1}{(1-\\sin x)+(1+\\sin x)}=\\dfrac{2}{2}=1\\neq2\\sec^{2}x\\)",
+            "LHS \\(=\\dfrac{(1+\\sin x)+(1-\\sin x)}{(1-\\sin x)(1+\\sin x)}=\\dfrac{2}{1-\\sin^{2}x}=\\dfrac{2}{\\sin^{2}x}=2\\operatorname{cosec}^{2}x\\)",
+            "LHS \\(=\\dfrac{(1+\\sin x)-(1-\\sin x)}{(1-\\sin x)(1+\\sin x)}=\\dfrac{2\\sin x}{\\cos^{2}x}=2\\tan x\\sec x\\)"
+          ],
+          "answer": 0,
+          "hint": "Start with the LEFT side. Add the fractions over a COMMON denominator (the product \\((1-\\sin x)(1+\\sin x)\\) is a difference of squares), then use \\(1-\\sin^{2}x=\\cos^{2}x\\) and \\(\\dfrac{1}{\\cos x}=\\sec x\\).",
+          "steps": [
+            {
+              "explain": "Common denominator: multiply each fraction's numerator by the other bracket.",
+              "work": "\\(\\dfrac{1}{1-\\sin x}+\\dfrac{1}{1+\\sin x}=\\dfrac{(1+\\sin x)+(1-\\sin x)}{(1-\\sin x)(1+\\sin x)}\\)"
+            },
+            {
+              "explain": "Numerator: \\(1+\\sin x+1-\\sin x=2\\). Denominator: difference of squares.",
+              "work": "\\(=\\dfrac{2}{1-\\sin^{2}x}\\)"
+            },
+            {
+              "explain": "Pythagorean identity \\(\\sin^{2}x+\\cos^{2}x=1\\Rightarrow1-\\sin^{2}x=\\cos^{2}x\\).",
+              "work": "\\(=\\dfrac{2}{\\cos^{2}x}\\)"
+            },
+            {
+              "explain": "Reciprocal identity \\(\\sec x=\\dfrac{1}{\\cos x}\\).",
+              "work": "\\(=2\\sec^{2}x=\\text{RHS}\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the denominators (never allowed); C uses \\(1-\\sin^{2}x=\\sin^{2}x\\); D subtracts the numerators.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove that",
+              "note": "Common denominator, then 1 − sin² = cos²."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

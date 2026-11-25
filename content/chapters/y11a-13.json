@@ -1723,6 +1723,59 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-q27a",
+          "type": "mc",
+          "stem": "The body weights and metabolic rate recordings for five women are shown in the table. Find the correlation coefficient, \\(r\\). (correct to 3 decimal places)",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 68\" width=\"100%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto\"><rect x=\"0\" y=\"0\" width=\"110\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"55.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Weight (kg)</text><rect x=\"110\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"140.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">52</text><rect x=\"170\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"200.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">63</text><rect x=\"230\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"260.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">65</text><rect x=\"290\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"320.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">47</text><rect x=\"350\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"380.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">49</text><rect x=\"0\" y=\"32\" width=\"110\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"55.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Metabolic rate</text><rect x=\"110\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"140.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1671</text><rect x=\"170\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"200.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1669</text><rect x=\"230\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"260.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1812</text><rect x=\"290\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"320.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1442</text><rect x=\"350\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"380.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1607</text></svg>"
+          },
+          "options": [
+            "0.823",
+            "0.678",
+            "0.913",
+            "-0.823"
+          ],
+          "answer": 0,
+          "hint": "Enter the five pairs (weight, rate) into the statistics mode of the calculator and read \\(r\\). The points rise together, so \\(r\\) must be POSITIVE and between 0 and 1.",
+          "steps": [
+            {
+              "explain": "Statistics mode (two variables): enter \\(x\\) = weight and \\(y\\) = metabolic rate.",
+              "work": "\\((52,1671),\\ (63,1669),\\ (65,1812),\\ (47,1442),\\ (49,1607)\\)"
+            },
+            {
+              "explain": "Read the correlation coefficient from the calculator.",
+              "work": "\\(r=0.8233\\ldots\\approx0.823\\)"
+            },
+            {
+              "explain": "Check: heavier women tend to have higher metabolic rates, so a strong POSITIVE correlation is sensible.",
+              "work": "\\(0<r<1\\)"
+            },
+            {
+              "explain": "Why not the others: 0.678 is \\(r^{2}\\); 0.913 is too high; \\(-0.823\\) has the wrong sign (the trend is upward).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the correlation coefficient, \\(r\\).",
+              "note": "r from the calculator; sign matches the trend."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -3087,6 +3140,108 @@
           "meta": {
             "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
             "school": "The King's School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q27b",
+          "type": "mc",
+          "stem": "The body weights and metabolic rate recordings for five women are shown in the table. Find the coefficients of the linear regression line, \\(y=mx+c\\), where \\(x\\) is the weight and \\(y\\) is the metabolic rate.",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 68\" width=\"100%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto\"><rect x=\"0\" y=\"0\" width=\"110\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"55.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Weight (kg)</text><rect x=\"110\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"140.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">52</text><rect x=\"170\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"200.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">63</text><rect x=\"230\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"260.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">65</text><rect x=\"290\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"320.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">47</text><rect x=\"350\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"380.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">49</text><rect x=\"0\" y=\"32\" width=\"110\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"55.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Metabolic rate</text><rect x=\"110\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"140.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1671</text><rect x=\"170\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"200.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1669</text><rect x=\"230\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"260.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1812</text><rect x=\"290\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"320.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1442</text><rect x=\"350\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"380.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1607</text></svg>"
+          },
+          "options": [
+            "\\(m=13.346,\\ c=903.499\\)",
+            "\\(m=903.499,\\ c=13.346\\)",
+            "\\(m=13.346,\\ c=-903.499\\)",
+            "\\(m=16.21,\\ c=903.499\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the calculator's regression output for \\(y=a+bx\\) (careful: the calculator's \\(a\\) is the intercept \\(c\\) and \\(b\\) is the gradient \\(m\\)). The gradient is the number multiplying \\(x\\).",
+          "steps": [
+            {
+              "explain": "Enter the data as in part (i), choose linear regression \\(y=mx+c\\) with \\(x\\) = weight.",
+              "work": "\\(\\text{gradient }m=13.346\\ldots,\\qquad\\text{intercept }c=903.499\\ldots\\)"
+            },
+            {
+              "explain": "Write the line: for every extra kilogram the metabolic rate rises by about 13.3 units.",
+              "work": "\\(y=13.346x+903.499\\)"
+            },
+            {
+              "explain": "Why not the others: B swaps \\(m\\) and \\(c\\); C has the wrong sign for \\(c\\) (the line cuts the \\(y\\)-axis ABOVE zero); D uses \\(\\dfrac{s_y}{s_x}\\) (without multiplying by \\(r\\)) as the gradient.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the coefficients of the linear regression line",
+              "note": "Gradient multiplies x; intercept is the constant."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q27c",
+          "type": "mc",
+          "stem": "The body weights and metabolic rate recordings for five women are shown in the table. Verify that \\(m=r\\dfrac{s_y}{s_x}\\), where \\(s_x\\) and \\(s_y\\) are the standard deviations of the \\(x\\) and \\(y\\) values respectively. Which working is correct?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 410 68\" width=\"100%\" height=\"auto\" style=\"max-width:416px;display:block;margin:0 auto\"><rect x=\"0\" y=\"0\" width=\"110\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"55.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Weight (kg)</text><rect x=\"110\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"140.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">52</text><rect x=\"170\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"200.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">63</text><rect x=\"230\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"260.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">65</text><rect x=\"290\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"320.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">47</text><rect x=\"350\" y=\"0\" width=\"60\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"380.0\" y=\"21.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">49</text><rect x=\"0\" y=\"32\" width=\"110\" height=\"32\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"55.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Metabolic rate</text><rect x=\"110\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"140.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1671</text><rect x=\"170\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"200.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1669</text><rect x=\"230\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"260.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1812</text><rect x=\"290\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"320.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1442</text><rect x=\"350\" y=\"32\" width=\"60\" height=\"32\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"380.0\" y=\"53.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1607</text></svg>"
+          },
+          "options": [
+            "\\(s_x=7.386,\\ s_y=119.732\\), so \\(r\\dfrac{s_y}{s_x}=0.8233\\times\\dfrac{119.732}{7.386}=0.8233\\times16.2096=13.346=m\\) ✓",
+            "\\(s_x=7.386,\\ s_y=119.732\\), so \\(r\\dfrac{s_x}{s_y}=0.8233\\times\\dfrac{7.386}{119.732}=0.0508\\neq m\\)",
+            "\\(s_x=7.386,\\ s_y=119.732\\), so \\(r^{2}\\dfrac{s_y}{s_x}=0.6779\\times16.2096=10.99\\neq m\\)",
+            "\\(s_x=8.258,\\ s_y=119.732\\), so \\(r\\dfrac{s_y}{s_x}=0.8233\\times14.50=11.94\\neq m\\)"
+          ],
+          "answer": 0,
+          "hint": "Find BOTH standard deviations of the same type (calculator \\(\\sigma_x,\\ \\sigma_y\\)), form the ratio \\(\\dfrac{s_y}{s_x}\\) (y on TOP), multiply by \\(r\\), and compare with \\(m=13.346\\).",
+          "steps": [
+            {
+              "explain": "Read \\(s_x\\) and \\(s_y\\) from the calculator (population standard deviations \\(\\sigma_x,\\ \\sigma_y\\)).",
+              "work": "\\(s_x=7.386,\\qquad s_y=119.732\\)"
+            },
+            {
+              "explain": "The ratio \\(\\dfrac{s_y}{s_x}\\) has the \\(y\\) standard deviation on top.",
+              "work": "\\(\\dfrac{s_y}{s_x}=\\dfrac{119.732}{7.386}=16.2096\\)"
+            },
+            {
+              "explain": "Multiply by \\(r=0.8233\\) from part (i).",
+              "work": "\\(r\\dfrac{s_y}{s_x}=0.8233\\times16.2096=13.346\\)"
+            },
+            {
+              "explain": "This equals the gradient \\(m=13.346\\) from part (ii), so the formula is verified. Why not the others: B inverts the ratio; C uses \\(r^{2}\\); D mixes the sample \\(s_x\\) with the population \\(s_y\\) (both must be the same type).",
+              "work": "\\(13.346=m\\ \\checkmark\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Verify that \\(m=r\\dfrac{s_y}{s_x}\\)",
+              "note": "m = r·(s_y/s_x), same type of SD for both."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
             "grade": "11",
             "origin": "teacher"
           }

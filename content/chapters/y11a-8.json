@@ -6471,6 +6471,60 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-q1",
+          "type": "mc",
+          "stem": "Given \\(\\log_3 5=1.46\\) and \\(\\log_3 2=0.63\\), evaluate \\(\\log_3 100\\)",
+          "difficulty": "easy",
+          "options": [
+            "2.09",
+            "2.72",
+            "3.55",
+            "4.18"
+          ],
+          "answer": 3,
+          "hint": "Write \\(100=10^{2}=(2\\times5)^{2}\\), then use the log laws: power law \\(\\log a^{n}=n\\log a\\) and product law \\(\\log(ab)=\\log a+\\log b\\).",
+          "steps": [
+            {
+              "explain": "Write 100 using 2 and 5 only: \\(100=2^{2}\\times5^{2}\\), or \\(100=(2\\times 5)^{2}\\).",
+              "work": "\\(\\log_3 100=\\log_3 (2\\times5)^{2}\\)"
+            },
+            {
+              "explain": "Power law: the index 2 comes to the front.",
+              "work": "\\(=2\\log_3(2\\times5)\\)"
+            },
+            {
+              "explain": "Product law: the log of a product is the SUM of the logs (add, do not multiply).",
+              "work": "\\(=2\\left(\\log_3 2+\\log_3 5\\right)\\)"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(=2(0.63+1.46)=2\\times2.09=4.18\\)"
+            },
+            {
+              "explain": "Why not the others: \\(2.09\\) forgets the factor 2; \\(2.72\\) is \\(2\\times1.36\\), a slip; \\(3.55\\) is \\(2\\times1.775\\) — comes from wrong arithmetic.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Given \\(\\log_3 5=1.46\\) and \\(\\log_3 2=0.63\\)",
+              "note": "Break 100 into 2s and 5s, then add the logs."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },

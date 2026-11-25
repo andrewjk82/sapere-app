@@ -15743,6 +15743,277 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-q13",
+          "type": "mc",
+          "stem": "Sarita opens an annuity account, which requires contributions to be made at the end of each period. The table below shows the future value of an annuity of 1 dollar for various interest rates per period. To save for a computer for university, Sarita makes regular deposits at the end of each month into an annuity account that pays 3% p.a. The annuity account compounds interest monthly. How much will Sarita have to deposit each month if she expects the computer to cost 2800 dollars at the end of two years?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -22 358 166\" width=\"100%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto\"><text x=\"179.0\" y=\"-8.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Future value of an annuity of 1 dollar</text><rect x=\"0\" y=\"0\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Periods</text><rect x=\"70\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.25%</text><rect x=\"142\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.75%</text><rect x=\"214\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5%</text><rect x=\"286\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3%</text><rect x=\"0\" y=\"28\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"70\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.0025</text><rect x=\"142\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.0075</text><rect x=\"214\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.015</text><rect x=\"286\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.03</text><rect x=\"0\" y=\"56\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><rect x=\"70\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.0376</text><rect x=\"142\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.1136</text><rect x=\"214\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2296</text><rect x=\"286\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.4684</text><rect x=\"0\" y=\"84\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><rect x=\"70\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12.1664</text><rect x=\"142\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12.5076</text><rect x=\"214\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13.0412</text><rect x=\"286\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14.1920</text><rect x=\"0\" y=\"112\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24</text><rect x=\"70\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24.7028</text><rect x=\"142\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26.1885</text><rect x=\"214\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">28.6335</text><rect x=\"286\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">34.4265</text></svg>"
+          },
+          "options": [
+            "113.35 dollars",
+            "116.67 dollars",
+            "106.92 dollars",
+            "81.33 dollars"
+          ],
+          "answer": 0,
+          "hint": "Convert the rate to a rate PER MONTH (\\(\\dfrac{3\\%}{12}\\)) and the time to MONTHS (24). Then the table factor × deposit = future value; divide to get the deposit.",
+          "steps": [
+            {
+              "explain": "Monthly rate: \\(3\\%\\) p.a. divided by 12 months. Number of periods: 2 years \\(\\times12\\).",
+              "work": "\\(r=\\dfrac{3\\%}{12}=0.25\\%\\text{ per month},\\qquad n=2\\times12=24\\)"
+            },
+            {
+              "explain": "Read the table: the column for 0.25% and the row for 24 periods gives the future value of 1 dollar deposited every month.",
+              "work": "\\(\\text{factor}=24.7028\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -18 358 188\" width=\"100%\" height=\"auto\" style=\"max-width:364px;display:block;margin:0 auto\"><text x=\"179.0\"  y=\"8.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Future value of an annuity of 1 dollar</text><rect x=\"0\" y=\"0\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Periods</text><rect x=\"70\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.25%</text><rect x=\"142\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.75%</text><rect x=\"214\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5%</text><rect x=\"286\" y=\"0\" width=\"72\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"19.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3%</text><rect x=\"0\" y=\"28\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"70\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.0025</text><rect x=\"142\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.0075</text><rect x=\"214\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.015</text><rect x=\"286\" y=\"28\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"47.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.03</text><rect x=\"0\" y=\"56\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><rect x=\"70\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.0376</text><rect x=\"142\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.1136</text><rect x=\"214\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2296</text><rect x=\"286\" y=\"56\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"75.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.4684</text><rect x=\"0\" y=\"84\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><rect x=\"70\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12.1664</text><rect x=\"142\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12.5076</text><rect x=\"214\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13.0412</text><rect x=\"286\" y=\"84\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"103.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">14.1920</text><rect x=\"0\" y=\"112\" width=\"70\" height=\"28\" fill=\"#e0e7ff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"35.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24</text><rect x=\"70\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"106.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24.7028</text><rect x=\"142\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"178.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">26.1885</text><rect x=\"214\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"250.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">28.6335</text><rect x=\"286\" y=\"112\" width=\"72\" height=\"28\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"1.4\"/><text x=\"322.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">34.4265</text><rect x=\"70\" y=\"112\" width=\"72\" height=\"28\" fill=\"#10b981\" fill-opacity=\".3\" stroke=\"#047857\" stroke-width=\"3\"/><text x=\"179.0\" y=\"160.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24 periods, 0.25% per period → 24.7028</text></svg>"
+              }
+            },
+            {
+              "explain": "Future value \\(=\\) deposit \\(\\times\\) factor. Solve for the deposit.",
+              "work": "\\(2800=D\\times24.7028\\ \\Rightarrow\\ D=\\dfrac{2800}{24.7028}=113.347\\ldots\\)"
+            },
+            {
+              "explain": "Round to cents.",
+              "work": "\\(D\\approx113.35\\ \\text{dollars}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{2800}{24}=116.67\\) ignores interest; 106.92 uses the 0.75% column; 81.33 uses the 3% column (that is 3% per MONTH).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "The annuity account compounds interest monthly",
+              "note": "Per-month rate 0.25%, 24 periods → table factor."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q37a",
+          "type": "mc",
+          "stem": "Sam invests \\(M\\) dollars into an account at the beginning of each month. The account earns 3% p.a. interest, compounded monthly. Show that the total amount in the account at the end of the second month, \\(A_2\\), is given by \\(A_2=M\\times\\left(1.0025+1.0025^{2}\\right)\\). Which working is correct?",
+          "difficulty": "medium",
+          "options": [
+            "\\(A_1=M\\times\\left(1+\\dfrac{3}{1200}\\right)=M\\times1.0025\\). \\(A_2=A_1\\times1.0025+M\\times1.0025=M\\times1.0025^{2}+M\\times1.0025=M\\left(1.0025+1.0025^{2}\\right)\\)",
+            "\\(A_1=M\\times1.0025\\). \\(A_2=A_1\\times1.0025+M=M\\times1.0025^{2}+M=M\\left(1+1.0025^{2}\\right)\\)",
+            "\\(A_1=M\\times1.03\\). \\(A_2=A_1\\times1.03+M\\times1.03=M\\left(1.03+1.03^{2}\\right)\\)",
+            "\\(A_1=M\\times1.0025\\). \\(A_2=A_1+M\\times1.0025=M\\times1.0025+M\\times1.0025=2M\\times1.0025\\)"
+          ],
+          "answer": 0,
+          "hint": "Payments are at the BEGINNING of each month, so each payment earns a full month of interest. Monthly rate \\(=\\dfrac{3\\%}{12}=0.25\\%\\): multiplier \\(1.0025\\). Track the balance month by month.",
+          "steps": [
+            {
+              "explain": "Monthly interest rate and multiplier.",
+              "work": "\\(\\dfrac{3\\%}{12}=0.25\\%=\\dfrac{3}{1200}\\ \\Rightarrow\\ \\text{multiply by }1.0025\\)"
+            },
+            {
+              "explain": "End of month 1: the first payment \\(M\\) has earned one month of interest.",
+              "work": "\\(A_1=M\\times1.0025\\)"
+            },
+            {
+              "explain": "Month 2: the balance \\(A_1\\) earns another month, AND the new payment \\(M\\) (made at the start of month 2) also earns one month.",
+              "work": "\\(A_2=\\left(A_1+M\\right)\\times1.0025=A_1\\times1.0025+M\\times1.0025\\)"
+            },
+            {
+              "explain": "Substitute \\(A_1\\) and take the common factor \\(M\\).",
+              "work": "\\(A_2=M\\times1.0025^{2}+M\\times1.0025=M\\left(1.0025+1.0025^{2}\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B gives the second payment NO interest; C uses 3% per month; D does not add the interest on \\(A_1\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the total amount in the account at the end of the second month",
+              "note": "(balance + new payment) × 1.0025 each month."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q37b",
+          "type": "mc",
+          "stem": "Sam invests \\(M\\) dollars into an account at the beginning of each month. The account earns 3% p.a. interest, compounded monthly. Show that the amount in the account after \\(n\\) months, \\(A_n\\), is given by \\(A_n=401M\\left(1.0025^{n}-1\\right)\\). Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "\\(A_n=M\\left(1.0025+1.0025^{2}+\\dots+1.0025^{n}\\right)\\) is a GP with \\(a=1.0025,\\ r=1.0025,\\ n\\) terms. \\(A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025-1}=M\\times\\dfrac{1.0025}{0.0025}\\left(1.0025^{n}-1\\right)=401M\\left(1.0025^{n}-1\\right)\\)",
+            "\\(A_n=M\\left(1+1.0025+\\dots+1.0025^{n-1}\\right)\\) is a GP with \\(a=1\\). \\(A_n=M\\times\\dfrac{1.0025^{n}-1}{0.0025}=400M\\left(1.0025^{n}-1\\right)\\)",
+            "\\(A_n=M\\left(1.0025+\\dots+1.0025^{n}\\right)\\), \\(a=1.0025\\). \\(A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1-1.0025}=-401M\\left(1.0025^{n}-1\\right)\\)",
+            "\\(A_n=M\\left(1.0025+\\dots+1.0025^{n}\\right)\\), \\(a=1.0025\\). \\(A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025}=M\\left(1.0025^{n}-1\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Extend the pattern of part (i): the payment made at the start of month \\(k\\) has earned \\(n-k+1\\) months of interest. Write \\(A_n\\) as a sum, spot the geometric series (first term \\(1.0025\\), ratio \\(1.0025\\)), and use \\(S_n=\\dfrac{a\\left(r^{n}-1\\right)}{r-1}\\) with \\(r>1\\).",
+          "steps": [
+            {
+              "explain": "Each payment is multiplied by \\(1.0025\\) for every month it stays in. The first payment stays \\(n\\) months, the last only 1 month.",
+              "work": "\\(A_n=M\\left(1.0025^{n}+1.0025^{n-1}+\\dots+1.0025^{2}+1.0025\\right)\\)"
+            },
+            {
+              "explain": "Read it backwards: a geometric series with first term \\(a=1.0025\\), ratio \\(r=1.0025\\) and \\(n\\) terms.",
+              "work": "\\(S_n=\\dfrac{a\\left(r^{n}-1\\right)}{r-1}=\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025-1}\\)"
+            },
+            {
+              "explain": "Denominator \\(=0.0025\\).",
+              "work": "\\(A_n=M\\times\\dfrac{1.0025}{0.0025}\\left(1.0025^{n}-1\\right)\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{1.0025}{0.0025}=401\\).",
+              "work": "\\(A_n=401M\\left(1.0025^{n}-1\\right)\\)"
+            },
+            {
+              "explain": "Why not the others: B starts the GP at 1 (the first payment would earn no interest); C uses \\(1-r\\) (negative amount); D drops the factor \\(0.0025\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the amount in the account after \\(n\\) months, \\(A_n\\), is given by",
+              "note": "Payments at start: GP with \\(a=r=1.0025\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q37c",
+          "type": "mc",
+          "stem": "Sam invests \\(M\\) dollars into an account at the beginning of each month. The account earns 3% p.a. interest, compounded monthly. Hence, calculate how much is needed to invest at the beginning of each month if the plan is to have 6000 dollars at the end of 12 months.",
+          "difficulty": "medium",
+          "options": [
+            "491.93 dollars",
+            "493.16 dollars",
+            "500.00 dollars",
+            "537.33 dollars"
+          ],
+          "answer": 0,
+          "hint": "Use \\(A_n=401M\\left(1.0025^{n}-1\\right)\\) from part (ii) with \\(n=12\\) and \\(A_{12}=6000\\), then solve for \\(M\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(n=12\\) and \\(A_{12}=6000\\).",
+              "work": "\\(6000=401M\\left(1.0025^{12}-1\\right)\\)"
+            },
+            {
+              "explain": "Solve for \\(M\\): divide by \\(401\\left(1.0025^{12}-1\\right)\\) (\\(1.0025^{12}=1.03042\\ldots\\)).",
+              "work": "\\(M=\\dfrac{6000}{401\\left(1.0025^{12}-1\\right)}=\\dfrac{6000}{12.1969\\ldots}=491.93\\)"
+            },
+            {
+              "explain": "Why not the others: 493.16 is for payments at the END of each month (annuity table value 12.1664); \\(\\dfrac{6000}{12}=500\\) ignores interest; 537.33 uses 11 months.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "calculate how much is needed to invest at the beginning of each month",
+              "note": "Solve 6000 = 401M(1.0025¹² − 1)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q37d",
+          "type": "mc",
+          "stem": "Sam invests \\(M\\) dollars into an account at the beginning of each month. The account earns 3% p.a. interest, compounded monthly. After the first five months of contributions of \\(M=491.93\\) dollars, Sam increases his monthly payment to 600 dollars. Given Sam's final contribution is less than 600 dollars, what will be the minimum amount of this contribution (to the nearest 5 dollars) to reach his goal of 6000 dollars?",
+          "difficulty": "hard",
+          "options": [
+            "455 dollars",
+            "470 dollars",
+            "450 dollars",
+            "435 dollars"
+          ],
+          "answer": 0,
+          "hint": "Step 1: balance after the first 5 months. Step 2: how long the 600-dollar payments last (to see the plan needs a smaller FINAL payment). Step 3: balance after the full 600-dollar payments. Step 4: the final payment \\(x\\) is added at the start of the last month and, with the whole balance, earns one more month of interest.",
+          "steps": [
+            {
+              "explain": "Balance after 5 months at \\(M=491.93\\) dollars: \\(A_5=401M\\left(1.0025^{5}-1\\right)\\).",
+              "work": "\\(A_5=401\\times491.93\\times\\left(1.0025^{5}-1\\right)=2478.16\\)"
+            },
+            {
+              "explain": "With 600-dollar payments, 6000 is reached after about \\(5.8\\) more months (\\(n=\\dfrac{\\ln1.01463}{\\ln1.0025}\\approx5.81\\) from \\(3521.84=401\\times600\\left(1.0025^{n}-1\\right)\\)). So there are 5 full payments of 600 and then a smaller 6th payment \\(x\\).",
+              "work": "\\(n\\approx5.81\\ \\Rightarrow\\ 5\\ \\text{payments of }600,\\ \\text{then }x<600\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 170\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><rect x=\"20.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#dbeafe\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"35.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><rect x=\"51.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#dbeafe\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"66.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><rect x=\"82.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#dbeafe\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"97.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><rect x=\"113.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#dbeafe\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"128.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4</text><rect x=\"144.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#dbeafe\" stroke=\"#3b4ea8\" stroke-width=\"2\"/><text x=\"159.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"175.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"190.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><rect x=\"206.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"221.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7</text><rect x=\"237.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"252.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8</text><rect x=\"268.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"283.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><rect x=\"299.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"314.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><rect x=\"330.0\" y=\"40\" width=\"30\" height=\"40\" fill=\"#fecaca\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"345.0\" y=\"65.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11</text><text x=\"97.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">months 1–5: M = 491.93</text><text x=\"252.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">months 6–10: 600</text><text x=\"345.0\" y=\"30.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">month 11:</text><text x=\"345.0\" y=\"100.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x ?</text><text x=\"97.0\" y=\"100.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">end of month 5: 2478.16</text><text x=\"252.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">end of month 10: 5531.87</text><line x1=\"174.0\" y1=\"84.0\" x2=\"174.0\" y2=\"108.0\" stroke=\"#3b4ea8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><line x1=\"329.0\" y1=\"84.0\" x2=\"329.0\" y2=\"132.0\" stroke=\"#d97706\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\"/><text x=\"414.0\" y=\"152.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">target at end of month 11: 6000</text></svg>"
+              }
+            },
+            {
+              "explain": "Balance at the end of month 10: the \\(A_5\\) balance grows for 5 months, plus the five 600-dollar payments.",
+              "work": "\\(A_{10}=2478.16\\times1.0025^{5}+401\\times600\\left(1.0025^{5}-1\\right)=2509.29+3022.58=5531.87\\)"
+            },
+            {
+              "explain": "Final payment \\(x\\) at the START of month 11: the balance plus \\(x\\) earns one more month, and must equal 6000.",
+              "work": "\\(\\left(5531.87+x\\right)\\times1.0025=6000\\ \\Rightarrow\\ x=\\dfrac{6000}{1.0025}-5531.87=453.17\\)"
+            },
+            {
+              "explain": "Nearest 5 dollars (and it must be enough to reach 6000): 455 dollars. Why not the others: 450 falls short of 6000; 470 comes from \\(6000-5531.87=468.13\\), which forgets the last month's interest on the whole balance; 435 comes from a rounding slip.",
+              "work": "\\(x\\approx455\\ \\text{dollars}\\)"
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what will be the minimum amount of this contribution (to the nearest 5 dollars)",
+              "note": "Last payment also earns 1 month of interest."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },

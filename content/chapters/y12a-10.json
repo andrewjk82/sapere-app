@@ -5975,6 +5975,118 @@
             "course": "Advanced",
             "sourceQuestion": "18"
           }
+        },
+        {
+          "id": "manly2020-q12a",
+          "type": "mc",
+          "stem": "Peter works in a restaurant, and each customer can leave him a tip, some extra money, for good service. On one day, Peter earns 50 tips, as shown in the cumulative histogram. One of the tips was incorrectly listed as 15 dollars instead of 25 dollars. Giving reasons, explain what effect this would have on the median.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 376 230\" width=\"100%\" height=\"auto\" style=\"max-width:376px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"170.0\" x2=\"356.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"170.0\" x2=\"349.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"170.0\" x2=\"349.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"170.0\" x2=\"60.0\" y2=\"29.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"29.6\" x2=\"56.0\" y2=\"36.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"29.6\" x2=\"64.0\" y2=\"36.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"144.0\" x2=\"64.0\" y2=\"144.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"56.0\" y1=\"118.0\" x2=\"64.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"56.0\" y1=\"92.0\" x2=\"64.0\" y2=\"92.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"96.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30</text><line x1=\"56.0\" y1=\"66.0\" x2=\"64.0\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"56.0\" y1=\"40.0\" x2=\"64.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><rect x=\"60\" y=\"107.6\" width=\"64\" height=\"62.400000000000006\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"92.0\" y1=\"170.0\" x2=\"92.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"124\" y=\"66.0\" width=\"64\" height=\"104.0\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"156.0\" y1=\"170.0\" x2=\"156.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"156.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><rect x=\"188\" y=\"45.19999999999999\" width=\"64\" height=\"124.80000000000001\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"220.0\" y1=\"170.0\" x2=\"220.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><rect x=\"252\" y=\"40.0\" width=\"64\" height=\"130.0\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"284.0\" y1=\"170.0\" x2=\"284.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35</text><text x=\"64.0\" y=\"31.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of tips</text><text x=\"356.0\" y=\"208.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Amount of tip (dollars)</text></svg>"
+          },
+          "options": [
+            "No effect: the median (about 10.6 dollars) is below 15, so changing one tip from 15 to 25 (both above the median) leaves the middle value unchanged",
+            "The median increases, because one tip was made larger",
+            "The median decreases, because the listed value 15 is smaller than the true value 25",
+            "The median changes by 0.20 dollars, because the total changes by 10 dollars shared over 50 tips"
+          ],
+          "answer": 0,
+          "hint": "The median depends only on the MIDDLE position of the ordered data, not on how large the extreme values are. Locate the median on the cumulative histogram, then ask whether the changed tip crosses it.",
+          "steps": [
+            {
+              "explain": "There are 50 tips, so the median is between the 25th and 26th values. Read the cumulative height 25 across to the ogive.",
+              "work": "\\(\\text{median position}=\\dfrac{50+1}{2}=25.5\\text{th value}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 376 230\" width=\"100%\" height=\"auto\" style=\"max-width:376px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"170.0\" x2=\"356.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"170.0\" x2=\"349.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"170.0\" x2=\"349.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"170.0\" x2=\"60.0\" y2=\"29.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"29.6\" x2=\"56.0\" y2=\"36.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"29.6\" x2=\"64.0\" y2=\"36.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"144.0\" x2=\"64.0\" y2=\"144.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"56.0\" y1=\"118.0\" x2=\"64.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"56.0\" y1=\"92.0\" x2=\"64.0\" y2=\"92.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"96.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30</text><line x1=\"56.0\" y1=\"66.0\" x2=\"64.0\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"56.0\" y1=\"40.0\" x2=\"64.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><rect x=\"60\" y=\"107.6\" width=\"64\" height=\"62.400000000000006\" fill=\"#64748b\" fill-opacity=\"0.35\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"92.0\" y1=\"170.0\" x2=\"92.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"124\" y=\"66.0\" width=\"64\" height=\"104.0\" fill=\"#64748b\" fill-opacity=\"0.35\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"156.0\" y1=\"170.0\" x2=\"156.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"156.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><rect x=\"188\" y=\"45.19999999999999\" width=\"64\" height=\"124.80000000000001\" fill=\"#64748b\" fill-opacity=\"0.35\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"220.0\" y1=\"170.0\" x2=\"220.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><rect x=\"252\" y=\"40.0\" width=\"64\" height=\"130.0\" fill=\"#64748b\" fill-opacity=\"0.35\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"284.0\" y1=\"170.0\" x2=\"284.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35</text><text x=\"64.0\" y=\"31.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of tips</text><text x=\"356.0\" y=\"208.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Amount of tip (dollars)</text><polyline points=\"60.0,170.0 124.0,107.6 188.0,66.0 252.0,45.2 316.0,40.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><line x1=\"60.0\" y1=\"105.0\" x2=\"128.0\" y2=\"105.0\" stroke=\"#3b4ea8\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><line x1=\"128.0\" y1=\"105.0\" x2=\"128.0\" y2=\"170.0\" stroke=\"#3b4ea8\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><circle cx=\"128.0\" cy=\"105.0\" r=\"4.2\" fill=\"#3b4ea8\"/><text x=\"76.0\" y=\"99.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25th tip</text><text x=\"132.0\" y=\"164.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\"></text><text x=\"128.0\" y=\"222.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">median ≈ 10.6</text><line x1=\"156.0\" y1=\"170.0\" x2=\"156.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"156.0\" y1=\"110\" x2=\"156.0\" y2=\"170\" stroke=\"#047857\" stroke-width=\"2.2\" stroke-dasharray=\"3 3\"/><text x=\"160.0\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text></svg>"
+              }
+            },
+            {
+              "explain": "At 10 dollars the cumulative count is 24, and at 20 dollars it is 40. So the 25th/26th values are in the \\(10\\)–\\(20\\) class, a little above 10 dollars (about 10.6), which is BELOW 15.",
+              "work": "\\(\\text{median}\\approx10.6<15\\)"
+            },
+            {
+              "explain": "The wrongly listed tip (15 dollars) and the true tip (25 dollars) are both ABOVE the median. Moving a value from one side of the median to a larger value on the same side does not change which value is in the middle.",
+              "work": "\\(\\text{median unchanged}\\)"
+            },
+            {
+              "explain": "Why not the others: B and C say it changes; D describes how the MEAN changes, not the median.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Giving reasons, explain what effect this would have on",
+              "note": "Median depends on position, not size, of values."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q12b",
+          "type": "mc",
+          "stem": "Peter works in a restaurant, and each customer can leave him a tip, some extra money, for good service. On one day, Peter earns 50 tips, as shown in the cumulative histogram. One of the tips was incorrectly listed as 15 dollars instead of 25 dollars. Giving reasons, explain what effect this would have on the mean.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 376 230\" width=\"100%\" height=\"auto\" style=\"max-width:376px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"170.0\" x2=\"356.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"170.0\" x2=\"349.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"356.0\" y1=\"170.0\" x2=\"349.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"170.0\" x2=\"60.0\" y2=\"29.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"29.6\" x2=\"56.0\" y2=\"36.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"29.6\" x2=\"64.0\" y2=\"36.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"56.0\" y1=\"144.0\" x2=\"64.0\" y2=\"144.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"148.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">10</text><line x1=\"56.0\" y1=\"118.0\" x2=\"64.0\" y2=\"118.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"122.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">20</text><line x1=\"56.0\" y1=\"92.0\" x2=\"64.0\" y2=\"92.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"96.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30</text><line x1=\"56.0\" y1=\"66.0\" x2=\"64.0\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"70.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40</text><line x1=\"56.0\" y1=\"40.0\" x2=\"64.0\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1.3\" stroke-linecap=\"round\"/><text x=\"52.0\" y=\"44.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><rect x=\"60\" y=\"107.6\" width=\"64\" height=\"62.400000000000006\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"92.0\" y1=\"170.0\" x2=\"92.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><rect x=\"124\" y=\"66.0\" width=\"64\" height=\"104.0\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"156.0\" y1=\"170.0\" x2=\"156.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"156.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><rect x=\"188\" y=\"45.19999999999999\" width=\"64\" height=\"124.80000000000001\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"220.0\" y1=\"170.0\" x2=\"220.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"220.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><rect x=\"252\" y=\"40.0\" width=\"64\" height=\"130.0\" fill=\"#64748b\" fill-opacity=\"0.85\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><line x1=\"284.0\" y1=\"170.0\" x2=\"284.0\" y2=\"175.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"284.0\" y=\"189.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35</text><text x=\"64.0\" y=\"31.6\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Number of tips</text><text x=\"356.0\" y=\"208.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Amount of tip (dollars)</text></svg>"
+          },
+          "options": [
+            "The mean would be 0.20 dollars lower: the mean uses every value, and the listed value is 10 dollars too small, so the total is understated by 10 dollars and the mean by \\(\\dfrac{10}{50}=0.20\\) dollars",
+            "No effect, because the tip is in the same class",
+            "The mean would be 10 dollars lower, because the total is 10 dollars smaller",
+            "The mean would be 0.20 dollars higher, because the listed value 15 is larger than 25"
+          ],
+          "answer": 0,
+          "hint": "The mean uses the exact size of EVERY value. Find how much the TOTAL changes, then divide by the number of tips (50).",
+          "steps": [
+            {
+              "explain": "The mean is \\(\\dfrac{\\text{total of all tips}}{50}\\), so every tip affects it by its exact value.",
+              "work": "\\(\\bar x=\\dfrac{\\sum x}{50}\\)"
+            },
+            {
+              "explain": "A tip that is really 25 dollars was listed as 15 dollars: the listed total is too small by the difference.",
+              "work": "\\(25-15=10\\ \\text{dollars}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 125\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"70.0\" x2=\"360.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"360.0\" y1=\"70.0\" x2=\"353.1\" y2=\"66.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"360.0\" y1=\"70.0\" x2=\"353.1\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"80.0\" y1=\"66.0\" x2=\"80.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"80.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><line x1=\"160.0\" y1=\"66.0\" x2=\"160.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">15</text><line x1=\"240.0\" y1=\"66.0\" x2=\"240.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"240.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">25</text><line x1=\"320.0\" y1=\"66.0\" x2=\"320.0\" y2=\"74.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"320.0\" y=\"89.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">35</text><path d=\"M 160 56 Q 200.0 12 236 52\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><line x1=\"236.0\" y1=\"52.0\" x2=\"236.0\" y2=\"43.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"236.0\" y1=\"52.0\" x2=\"228.2\" y2=\"47.5\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">listed</text><circle cx=\"160.0\" cy=\"70.0\" r=\"5\" fill=\"#d97706\"/><circle cx=\"240.0\" cy=\"70.0\" r=\"5\" fill=\"#047857\"/><text x=\"240.0\" y=\"62.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">true</text><text x=\"200.0\" y=\"16.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">+10 dollars to the total</text><text x=\"200.0\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#3b4ea8\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">mean rises by 10 ÷ 50 = 0.20</text></svg>"
+              }
+            },
+            {
+              "explain": "Spread this 10 dollars over the 50 tips.",
+              "work": "\\(\\dfrac{10}{50}=0.20\\ \\text{dollars}\\)"
+            },
+            {
+              "explain": "So the listed mean is 0.20 dollars lower than the true mean (correcting the tip raises the mean by 0.20 dollars). Why not the others: B treats the mean like the median; C forgets to divide by 50; D has the direction the wrong way round.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Giving reasons, explain what effect this would have on",
+              "note": "Mean changes by (change in total) ÷ n."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9018,6 +9130,106 @@
             "grade": "12",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "manly2020-q35a",
+          "type": "mc",
+          "stem": "The monthly sales, \\(X\\) (in units of 100 000 dollars), of a business are modelled by the two probability density functions: Model 1: \\(g(x)=2x\\) for \\(0\\leq x\\leq1\\), and \\(0\\) otherwise; OR Model 2: \\(f(x)=kx^{3}\\left(1-x^{2}\\right)\\) for \\(0\\leq x\\leq1\\), and \\(0\\) otherwise. Determine the value of \\(k\\) in the second model.",
+          "difficulty": "medium",
+          "options": [
+            "12",
+            "6",
+            "4",
+            "\\(\\dfrac{1}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "A probability density function must have TOTAL area 1: \\(\\int f(x)\\,dx=1\\) over the domain. Integrate \\(x^{3}(1-x^{2})=x^{3}-x^{5}\\) from 0 to 1, then solve for \\(k\\).",
+          "steps": [
+            {
+              "explain": "Total area \\(=1\\).",
+              "work": "\\(\\int_0^{1}kx^{3}\\left(1-x^{2}\\right)dx=1\\ \\Rightarrow\\ k\\int_0^{1}\\left(x^{3}-x^{5}\\right)dx=1\\)"
+            },
+            {
+              "explain": "Integrate term by term.",
+              "work": "\\(\\int_0^{1}\\left(x^{3}-x^{5}\\right)dx=\\left[\\dfrac{x^{4}}{4}-\\dfrac{x^{6}}{6}\\right]_0^{1}=\\dfrac{1}{4}-\\dfrac{1}{6}=\\dfrac{1}{12}\\)"
+            },
+            {
+              "explain": "Solve for \\(k\\).",
+              "work": "\\(\\dfrac{k}{12}=1\\ \\Rightarrow\\ k=12\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\dfrac{1}{12}\\) is the integral itself (not \\(k\\)); 6 and 4 come from integrating one term wrongly.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Determine the value of \\(k\\) in the second model.",
+              "note": "PDF total area = 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q35b",
+          "type": "mc",
+          "stem": "The monthly sales, \\(X\\) (in units of 100 000 dollars), of a business are modelled by the two probability density functions: Model 1: \\(g(x)=2x\\) for \\(0\\leq x\\leq1\\), and \\(0\\) otherwise; OR Model 2: \\(f(x)=kx^{3}\\left(1-x^{2}\\right)\\) for \\(0\\leq x\\leq1\\), and \\(0\\) otherwise. Show that the two models have the same median value. Which working is correct?",
+          "difficulty": "hard",
+          "options": [
+            "Model 1: \\(\\int_0^{M}2x\\,dx=M^{2}=\\dfrac{1}{2}\\). Model 2 (with \\(k=12\\)): \\(\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=3M^{4}-2M^{6}\\); with \\(M^{2}=\\dfrac{1}{2}\\): \\(3\\left(\\dfrac{1}{2}\\right)^{2}-2\\left(\\dfrac{1}{2}\\right)^{3}=\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2}\\). Same \\(M\\) ✓",
+            "Model 1: \\(\\int_0^{M}2x\\,dx=M^{2}=1\\), so \\(M=1\\). Model 2: \\(3(1)^{4}-2(1)^{6}=1\\). Same \\(M\\)",
+            "Model 1: \\(\\int_0^{M}2x\\,dx=2M^{2}=\\dfrac{1}{2}\\), so \\(M^{2}=\\dfrac{1}{4}\\). Model 2: \\(3\\left(\\dfrac{1}{4}\\right)^{2}-2\\left(\\dfrac{1}{4}\\right)^{3}=\\dfrac{1}{16}\\neq\\dfrac{1}{2}\\)",
+            "Model 1: \\(\\int_0^{M}2x\\,dx=M^{2}=\\dfrac{1}{2}\\). Model 2: \\(\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=3M^{4}-2M^{6}\\); with \\(M^{2}=\\dfrac{1}{2}\\): \\(3\\left(\\dfrac{1}{2}\\right)^{4}-2\\left(\\dfrac{1}{2}\\right)^{6}\\neq\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "The MEDIAN \\(M\\) is the value where the area up to \\(M\\) is \\(\\dfrac{1}{2}\\). Find \\(M\\) for Model 1, then check that Model 2's area up to the SAME \\(M\\) is also \\(\\dfrac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Median of Model 1: solve \\(\\int_0^{M}g(x)\\,dx=\\dfrac{1}{2}\\).",
+              "work": "\\(\\int_0^{M}2x\\,dx=\\left[x^{2}\\right]_0^{M}=M^{2}=\\dfrac{1}{2}\\ \\Rightarrow\\ M^{2}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Model 2 (\\(k=12\\) from part i): area from 0 to \\(M\\).",
+              "work": "\\(\\int_0^{M}12\\left(x^{3}-x^{5}\\right)dx=\\left[3x^{4}-2x^{6}\\right]_0^{M}=3M^{4}-2M^{6}\\)"
+            },
+            {
+              "explain": "Substitute \\(M^{2}=\\dfrac{1}{2}\\): \\(M^{4}=\\left(M^{2}\\right)^{2}=\\dfrac{1}{4}\\) and \\(M^{6}=\\left(M^{2}\\right)^{3}=\\dfrac{1}{8}\\).",
+              "work": "\\(3\\times\\dfrac{1}{4}-2\\times\\dfrac{1}{8}=\\dfrac{3}{4}-\\dfrac{1}{4}=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "The area up to \\(M\\) is \\(\\dfrac{1}{2}\\) for BOTH models, so they have the same median \\(M=\\dfrac{1}{\\sqrt2}\\approx0.707\\). Why not the others: B uses \\(M^2=1\\) (total area, not half); C has \\(2M^{2}\\) (wrong integral) and gets a different \\(M\\); D substitutes \\(M^{2}\\) into the wrong powers.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that the two models have the same median value.",
+              "note": "Median: area to M is ½; test in both models."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -10960,6 +11172,66 @@
               }
             }
           ]
+        },
+        {
+          "id": "manly2020-q31",
+          "type": "mc",
+          "stem": "The random variable \\(X\\) has the standard normal distribution, with probability density function \\(f(x)=\\dfrac{1}{\\sqrt{2\\pi}}e^{-\\frac{x^{2}}{2}}\\) over the domain \\((-\\infty,\\infty)\\). In the diagram, the region \\(R_{0.67}\\) indicates the area under \\(y=f(x)\\) over the domain \\([0,0.67]\\). If the area of \\(R_{0.67}\\) is 0.25, determine the range of scores that could be identified as outliers.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 190\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"190.0,150 190.0,50.3 190.4,50.3 190.8,50.3 191.2,50.3 191.6,50.3 192.0,50.4 192.4,50.4 192.8,50.4 193.2,50.5 193.6,50.5 194.0,50.6 194.4,50.7 194.8,50.8 195.2,50.9 195.6,50.9 196.0,51.0 196.4,51.2 196.8,51.3 197.2,51.4 197.6,51.5 198.0,51.7 198.4,51.8 198.8,51.9 199.2,52.1 199.6,52.3 200.1,52.4 200.5,52.6 200.9,52.8 201.3,53.0 201.7,53.2 202.1,53.4 202.5,53.6 202.9,53.8 203.3,54.0 203.7,54.2 204.1,54.5 204.5,54.7 204.9,54.9 205.3,55.2 205.7,55.4 206.1,55.7 206.5,56.0 206.9,56.2 207.3,56.5 207.7,56.8 208.1,57.1 208.5,57.4 208.9,57.7 209.3,58.0 209.7,58.3 210.1,58.6 210.5,59.0 210.9,59.3 211.3,59.6 211.7,60.0 212.1,60.3 212.5,60.7 212.9,61.0 213.3,61.4 213.7,61.7 214.1,62.1 214.5,62.5 214.9,62.8 215.3,63.2 215.7,63.6 216.1,64.0 216.5,64.4 216.9,64.8 217.3,65.2 217.7,65.6 218.1,66.0 218.5,66.4 218.9,66.8 219.3,67.3 219.7,67.7 220.2,68.1 220.6,68.6 221.0,69.0 221.4,69.4 221.8,69.9 222.2,70.3 222.2,150\" fill=\"#6366f1\" fill-opacity=\".25\"/><polyline points=\"12.4,149.9 13.6,149.9 14.8,149.9 16.0,149.9 17.1,149.8 18.3,149.8 19.5,149.8 20.7,149.8 21.9,149.8 23.1,149.8 24.2,149.7 25.4,149.7 26.6,149.7 27.8,149.7 29.0,149.6 30.2,149.6 31.3,149.6 32.5,149.5 33.7,149.5 34.9,149.5 36.1,149.4 37.3,149.4 38.4,149.3 39.6,149.3 40.8,149.2 42.0,149.1 43.2,149.1 44.4,149.0 45.6,148.9 46.7,148.8 47.9,148.8 49.1,148.7 50.3,148.6 51.5,148.5 52.7,148.3 53.8,148.2 55.0,148.1 56.2,147.9 57.4,147.8 58.6,147.7 59.8,147.5 60.9,147.3 62.1,147.1 63.3,146.9 64.5,146.7 65.7,146.5 66.9,146.3 68.0,146.0 69.2,145.8 70.4,145.5 71.6,145.2 72.8,144.9 74.0,144.6 75.2,144.3 76.3,144.0 77.5,143.6 78.7,143.2 79.9,142.8 81.1,142.4 82.3,142.0 83.4,141.5 84.6,141.0 85.8,140.5 87.0,140.0 88.2,139.5 89.4,138.9 90.5,138.3 91.7,137.7 92.9,137.1 94.1,136.4 95.3,135.8 96.5,135.1 97.6,134.3 98.8,133.6 100.0,132.8 101.2,132.0 102.4,131.1 103.6,130.3 104.8,129.4 105.9,128.5 107.1,127.5 108.3,126.6 109.5,125.6 110.7,124.5 111.9,123.5 113.0,122.4 114.2,121.3 115.4,120.2 116.6,119.0 117.8,117.8 119.0,116.6 120.1,115.4 121.3,114.2 122.5,112.9 123.7,111.6 124.9,110.3 126.1,108.9 127.2,107.6 128.4,106.2 129.6,104.8 130.8,103.4 132.0,102.0 133.2,100.5 134.4,99.1 135.5,97.6 136.7,96.1 137.9,94.7 139.1,93.2 140.3,91.7 141.5,90.2 142.6,88.7 143.8,87.2 145.0,85.7 146.2,84.2 147.4,82.8 148.6,81.3 149.7,79.8 150.9,78.4 152.1,77.0 153.3,75.5 154.5,74.2 155.7,72.8 156.8,71.4 158.0,70.1 159.2,68.8 160.4,67.5 161.6,66.3 162.8,65.1 164.0,63.9 165.1,62.8 166.3,61.7 167.5,60.6 168.7,59.6 169.9,58.7 171.1,57.7 172.2,56.9 173.4,56.0 174.6,55.3 175.8,54.5 177.0,53.9 178.2,53.3 179.3,52.7 180.5,52.2 181.7,51.7 182.9,51.4 184.1,51.0 185.3,50.7 186.4,50.5 187.6,50.4 188.8,50.3 190.0,50.3 191.2,50.3 192.4,50.4 193.6,50.5 194.7,50.7 195.9,51.0 197.1,51.4 198.3,51.7 199.5,52.2 200.7,52.7 201.8,53.3 203.0,53.9 204.2,54.5 205.4,55.3 206.6,56.0 207.8,56.9 208.9,57.7 210.1,58.7 211.3,59.6 212.5,60.6 213.7,61.7 214.9,62.8 216.0,63.9 217.2,65.1 218.4,66.3 219.6,67.5 220.8,68.8 222.0,70.1 223.2,71.4 224.3,72.8 225.5,74.2 226.7,75.5 227.9,77.0 229.1,78.4 230.3,79.8 231.4,81.3 232.6,82.8 233.8,84.2 235.0,85.7 236.2,87.2 237.4,88.7 238.5,90.2 239.7,91.7 240.9,93.2 242.1,94.7 243.3,96.1 244.5,97.6 245.6,99.1 246.8,100.5 248.0,102.0 249.2,103.4 250.4,104.8 251.6,106.2 252.8,107.6 253.9,108.9 255.1,110.3 256.3,111.6 257.5,112.9 258.7,114.2 259.9,115.4 261.0,116.6 262.2,117.8 263.4,119.0 264.6,120.2 265.8,121.3 267.0,122.4 268.1,123.5 269.3,124.5 270.5,125.6 271.7,126.6 272.9,127.5 274.1,128.5 275.2,129.4 276.4,130.3 277.6,131.1 278.8,132.0 280.0,132.8 281.2,133.6 282.4,134.3 283.5,135.1 284.7,135.8 285.9,136.4 287.1,137.1 288.3,137.7 289.5,138.3 290.6,138.9 291.8,139.5 293.0,140.0 294.2,140.5 295.4,141.0 296.6,141.5 297.7,142.0 298.9,142.4 300.1,142.8 301.3,143.2 302.5,143.6 303.7,144.0 304.8,144.3 306.0,144.6 307.2,144.9 308.4,145.2 309.6,145.5 310.8,145.8 312.0,146.0 313.1,146.3 314.3,146.5 315.5,146.7 316.7,146.9 317.9,147.1 319.1,147.3 320.2,147.5 321.4,147.7 322.6,147.8 323.8,147.9 325.0,148.1 326.2,148.2 327.3,148.3 328.5,148.5 329.7,148.6 330.9,148.7 332.1,148.8 333.3,148.8 334.4,148.9 335.6,149.0 336.8,149.1 338.0,149.1 339.2,149.2 340.4,149.3 341.6,149.3 342.7,149.4 343.9,149.4 345.1,149.5 346.3,149.5 347.5,149.5 348.7,149.6 349.8,149.6 351.0,149.6 352.2,149.7 353.4,149.7 354.6,149.7 355.8,149.7 356.9,149.8 358.1,149.8 359.3,149.8 360.5,149.8 361.7,149.8 362.9,149.8 364.0,149.9 365.2,149.9 366.4,149.9 367.6,149.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"10.0\" y1=\"150.0\" x2=\"370.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"150.0\" x2=\"363.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"150.0\" x2=\"363.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"150.0\" x2=\"190.0\" y2=\"45.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"45.0\" x2=\"186.0\" y2=\"51.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"45.0\" x2=\"194.0\" y2=\"51.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"206.1\" y=\"100.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#4f46e5\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">R₀.₆₇</text><line x1=\"222.2\" y1=\"150.0\" x2=\"222.2\" y2=\"70.3\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"222.2\" y=\"168.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.67</text><text x=\"198.0\" y=\"46.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">f(x)</text><text x=\"366.0\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x</text></svg>"
+          },
+          "options": [
+            "\\(x<-2.68\\) or \\(x>2.68\\)",
+            "\\(x<-0.67\\) or \\(x>0.67\\)",
+            "\\(x<-2.01\\) or \\(x>2.01\\)",
+            "\\(x<-1.34\\) or \\(x>1.34\\)"
+          ],
+          "answer": 0,
+          "hint": "Outliers are values below \\(Q_1-1.5\\times\\text{IQR}\\) or above \\(Q_3+1.5\\times\\text{IQR}\\). The area 0.25 between 0 and 0.67 tells you the quartiles: 25% of the distribution lies between the mean and \\(Q_3\\).",
+          "steps": [
+            {
+              "explain": "The curve is symmetric about 0, and half of the area (0.5) is above 0. The area from 0 to 0.67 is 0.25, so 0.25 remains above 0.67: \\(0.67\\) is the UPPER quartile \\(Q_3\\), and by symmetry \\(Q_1=-0.67\\).",
+              "work": "\\(Q_3=0.67,\\qquad Q_1=-0.67\\)"
+            },
+            {
+              "explain": "Interquartile range.",
+              "work": "\\(\\text{IQR}=Q_3-Q_1=0.67-(-0.67)=1.34\\)"
+            },
+            {
+              "explain": "Outlier fences: \\(1.5\\times\\text{IQR}=1.5\\times1.34=2.01\\).",
+              "work": "\\(\\text{upper fence}=0.67+2.01=2.68,\\qquad\\text{lower fence}=-0.67-2.01=-2.68\\)"
+            },
+            {
+              "explain": "Scores beyond the fences are outliers.",
+              "work": "\\(x<-2.68\\quad\\text{or}\\quad x>2.68\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 215\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"157.8,150 157.8,70.3 158.6,69.4 159.4,68.6 160.3,67.7 161.1,66.8 161.9,66.0 162.7,65.2 163.5,64.4 164.3,63.6 165.1,62.8 165.9,62.1 166.7,61.4 167.5,60.7 168.3,60.0 169.1,59.3 169.9,58.6 170.7,58.0 171.5,57.4 172.3,56.8 173.1,56.2 173.9,55.7 174.7,55.2 175.5,54.7 176.3,54.2 177.1,53.8 177.9,53.4 178.7,53.0 179.5,52.6 180.4,52.3 181.2,51.9 182.0,51.7 182.8,51.4 183.6,51.2 184.4,50.9 185.2,50.8 186.0,50.6 186.8,50.5 187.6,50.4 188.4,50.3 189.2,50.3 190.0,50.3 190.8,50.3 191.6,50.3 192.4,50.4 193.2,50.5 194.0,50.6 194.8,50.8 195.6,50.9 196.4,51.2 197.2,51.4 198.0,51.7 198.8,51.9 199.6,52.3 200.5,52.6 201.3,53.0 202.1,53.4 202.9,53.8 203.7,54.2 204.5,54.7 205.3,55.2 206.1,55.7 206.9,56.2 207.7,56.8 208.5,57.4 209.3,58.0 210.1,58.6 210.9,59.3 211.7,60.0 212.5,60.7 213.3,61.4 214.1,62.1 214.9,62.8 215.7,63.6 216.5,64.4 217.3,65.2 218.1,66.0 218.9,66.8 219.7,67.7 220.6,68.6 221.4,69.4 222.2,70.3 222.2,150\" fill=\"#6366f1\" fill-opacity=\".25\"/><polyline points=\"12.4,149.9 13.6,149.9 14.8,149.9 16.0,149.9 17.1,149.8 18.3,149.8 19.5,149.8 20.7,149.8 21.9,149.8 23.1,149.8 24.2,149.7 25.4,149.7 26.6,149.7 27.8,149.7 29.0,149.6 30.2,149.6 31.3,149.6 32.5,149.5 33.7,149.5 34.9,149.5 36.1,149.4 37.3,149.4 38.4,149.3 39.6,149.3 40.8,149.2 42.0,149.1 43.2,149.1 44.4,149.0 45.6,148.9 46.7,148.8 47.9,148.8 49.1,148.7 50.3,148.6 51.5,148.5 52.7,148.3 53.8,148.2 55.0,148.1 56.2,147.9 57.4,147.8 58.6,147.7 59.8,147.5 60.9,147.3 62.1,147.1 63.3,146.9 64.5,146.7 65.7,146.5 66.9,146.3 68.0,146.0 69.2,145.8 70.4,145.5 71.6,145.2 72.8,144.9 74.0,144.6 75.2,144.3 76.3,144.0 77.5,143.6 78.7,143.2 79.9,142.8 81.1,142.4 82.3,142.0 83.4,141.5 84.6,141.0 85.8,140.5 87.0,140.0 88.2,139.5 89.4,138.9 90.5,138.3 91.7,137.7 92.9,137.1 94.1,136.4 95.3,135.8 96.5,135.1 97.6,134.3 98.8,133.6 100.0,132.8 101.2,132.0 102.4,131.1 103.6,130.3 104.8,129.4 105.9,128.5 107.1,127.5 108.3,126.6 109.5,125.6 110.7,124.5 111.9,123.5 113.0,122.4 114.2,121.3 115.4,120.2 116.6,119.0 117.8,117.8 119.0,116.6 120.1,115.4 121.3,114.2 122.5,112.9 123.7,111.6 124.9,110.3 126.1,108.9 127.2,107.6 128.4,106.2 129.6,104.8 130.8,103.4 132.0,102.0 133.2,100.5 134.4,99.1 135.5,97.6 136.7,96.1 137.9,94.7 139.1,93.2 140.3,91.7 141.5,90.2 142.6,88.7 143.8,87.2 145.0,85.7 146.2,84.2 147.4,82.8 148.6,81.3 149.7,79.8 150.9,78.4 152.1,77.0 153.3,75.5 154.5,74.2 155.7,72.8 156.8,71.4 158.0,70.1 159.2,68.8 160.4,67.5 161.6,66.3 162.8,65.1 164.0,63.9 165.1,62.8 166.3,61.7 167.5,60.6 168.7,59.6 169.9,58.7 171.1,57.7 172.2,56.9 173.4,56.0 174.6,55.3 175.8,54.5 177.0,53.9 178.2,53.3 179.3,52.7 180.5,52.2 181.7,51.7 182.9,51.4 184.1,51.0 185.3,50.7 186.4,50.5 187.6,50.4 188.8,50.3 190.0,50.3 191.2,50.3 192.4,50.4 193.6,50.5 194.7,50.7 195.9,51.0 197.1,51.4 198.3,51.7 199.5,52.2 200.7,52.7 201.8,53.3 203.0,53.9 204.2,54.5 205.4,55.3 206.6,56.0 207.8,56.9 208.9,57.7 210.1,58.7 211.3,59.6 212.5,60.6 213.7,61.7 214.9,62.8 216.0,63.9 217.2,65.1 218.4,66.3 219.6,67.5 220.8,68.8 222.0,70.1 223.2,71.4 224.3,72.8 225.5,74.2 226.7,75.5 227.9,77.0 229.1,78.4 230.3,79.8 231.4,81.3 232.6,82.8 233.8,84.2 235.0,85.7 236.2,87.2 237.4,88.7 238.5,90.2 239.7,91.7 240.9,93.2 242.1,94.7 243.3,96.1 244.5,97.6 245.6,99.1 246.8,100.5 248.0,102.0 249.2,103.4 250.4,104.8 251.6,106.2 252.8,107.6 253.9,108.9 255.1,110.3 256.3,111.6 257.5,112.9 258.7,114.2 259.9,115.4 261.0,116.6 262.2,117.8 263.4,119.0 264.6,120.2 265.8,121.3 267.0,122.4 268.1,123.5 269.3,124.5 270.5,125.6 271.7,126.6 272.9,127.5 274.1,128.5 275.2,129.4 276.4,130.3 277.6,131.1 278.8,132.0 280.0,132.8 281.2,133.6 282.4,134.3 283.5,135.1 284.7,135.8 285.9,136.4 287.1,137.1 288.3,137.7 289.5,138.3 290.6,138.9 291.8,139.5 293.0,140.0 294.2,140.5 295.4,141.0 296.6,141.5 297.7,142.0 298.9,142.4 300.1,142.8 301.3,143.2 302.5,143.6 303.7,144.0 304.8,144.3 306.0,144.6 307.2,144.9 308.4,145.2 309.6,145.5 310.8,145.8 312.0,146.0 313.1,146.3 314.3,146.5 315.5,146.7 316.7,146.9 317.9,147.1 319.1,147.3 320.2,147.5 321.4,147.7 322.6,147.8 323.8,147.9 325.0,148.1 326.2,148.2 327.3,148.3 328.5,148.5 329.7,148.6 330.9,148.7 332.1,148.8 333.3,148.8 334.4,148.9 335.6,149.0 336.8,149.1 338.0,149.1 339.2,149.2 340.4,149.3 341.6,149.3 342.7,149.4 343.9,149.4 345.1,149.5 346.3,149.5 347.5,149.5 348.7,149.6 349.8,149.6 351.0,149.6 352.2,149.7 353.4,149.7 354.6,149.7 355.8,149.7 356.9,149.8 358.1,149.8 359.3,149.8 360.5,149.8 361.7,149.8 362.9,149.8 364.0,149.9 365.2,149.9 366.4,149.9 367.6,149.9\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"10.0\" y1=\"150.0\" x2=\"370.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"150.0\" x2=\"363.1\" y2=\"146.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"370.0\" y1=\"150.0\" x2=\"363.1\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"150.0\" x2=\"190.0\" y2=\"45.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"45.0\" x2=\"186.0\" y2=\"51.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"45.0\" x2=\"194.0\" y2=\"51.9\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"157.8\" y1=\"150.0\" x2=\"157.8\" y2=\"70.3\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"222.2\" y1=\"150.0\" x2=\"222.2\" y2=\"70.3\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"61.4\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−2.68</text><text x=\"157.8\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−0.67</text><text x=\"222.2\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.67</text><text x=\"318.6\" y=\"167.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2.68</text><line x1=\"61.4\" y1=\"150.0\" x2=\"61.4\" y2=\"100.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"61.4\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">outliers</text><line x1=\"318.6\" y1=\"150.0\" x2=\"318.6\" y2=\"100.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"318.6\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">outliers</text><line x1=\"157.8\" y1=\"35.0\" x2=\"222.2\" y2=\"35.0\" stroke=\"#047857\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"29.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">IQR = 1.34</text><line x1=\"61.4\" y1=\"35.0\" x2=\"157.8\" y2=\"35.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"222.2\" y1=\"35.0\" x2=\"318.6\" y2=\"35.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><text x=\"109.8\" y=\"29.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5 × IQR = 2.01</text><text x=\"270.2\" y=\"29.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1.5 × IQR = 2.01</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: \\(\\pm0.67\\) are the quartiles themselves; \\(\\pm2.01\\) forget to add on \\(Q_1\\)/\\(Q_3\\); \\(\\pm1.34\\) is the IQR.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "determine the range of scores that could be identified as outliers",
+              "note": "Outliers beyond Q₁ − 1.5 IQR and Q₃ + 1.5 IQR."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "12",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -12792,6 +13064,59 @@
           "meta": {
             "source": "Knox Grammar School 2021 Trial HSC Examination Mathematics Advanced",
             "school": "Knox Grammar School",
+            "grade": "12",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "manly2020-q17",
+          "type": "mc",
+          "stem": "The completion times for the Oztown triathlon race were normally distributed with mean time 60 minutes and standard deviation 5 minutes. Using the empirical rule, find Ozzie's completion time if he finished ahead of 84% of competitors.",
+          "difficulty": "medium",
+          "options": [
+            "55 minutes",
+            "50 minutes",
+            "65 minutes",
+            "45 minutes"
+          ],
+          "answer": 0,
+          "hint": "Empirical rule: 68% of scores lie within 1 SD of the mean, so 16% lie beyond (8% in each tail). \\(50\\%+34\\%=84\\%\\) lie ABOVE (the mean minus 1 SD). In a race, a SHORTER time means finishing ahead.",
+          "steps": [
+            {
+              "explain": "Empirical rule: 68% within one SD, so 34% between the mean and \\(\\mu-\\sigma\\), and 34% between the mean and \\(\\mu+\\sigma\\). The 16% outside 1 SD splits 8% / 8%.",
+              "work": "\\(\\mu=60,\\qquad\\sigma=5\\)"
+            },
+            {
+              "explain": "Finishing AHEAD of 84% means 84% of the competitors took LONGER than Ozzie. The area above Ozzie's time is \\(50\\%+34\\%=84\\%\\), so his time is one SD BELOW the mean.",
+              "work": "\\(\\text{Ozzie}=\\mu-\\sigma\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 185\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><polygon points=\"156.0,130 156.0,79.2 157.2,77.8 158.3,76.5 159.5,75.1 160.7,73.8 161.9,72.5 163.0,71.1 164.2,69.8 165.4,68.5 166.6,67.2 167.7,66.0 168.9,64.7 170.1,63.5 171.3,62.3 172.4,61.2 173.6,60.0 174.8,58.9 175.9,57.9 177.1,56.8 178.3,55.8 179.5,54.9 180.6,54.0 181.8,53.1 183.0,52.3 184.2,51.5 185.3,50.7 186.5,50.1 187.7,49.4 188.9,48.9 190.0,48.3 191.2,47.9 192.4,47.5 193.5,47.1 194.7,46.8 195.9,46.6 197.1,46.4 198.2,46.3 199.4,46.2 200.6,46.2 201.8,46.3 202.9,46.4 204.1,46.6 205.3,46.8 206.5,47.1 207.6,47.5 208.8,47.9 210.0,48.3 211.1,48.9 212.3,49.4 213.5,50.1 214.7,50.7 215.8,51.5 217.0,52.3 218.2,53.1 219.4,54.0 220.5,54.9 221.7,55.8 222.9,56.8 224.1,57.9 225.2,58.9 226.4,60.0 227.6,61.2 228.7,62.3 229.9,63.5 231.1,64.7 232.3,66.0 233.4,67.2 234.6,68.5 235.8,69.8 237.0,71.1 238.1,72.5 239.3,73.8 240.5,75.1 241.7,76.5 242.8,77.8 244.0,79.2 245.2,80.5 246.3,81.9 247.5,83.2 248.7,84.6 249.9,85.9 251.0,87.3 252.2,88.6 253.4,89.9 254.6,91.2 255.7,92.4 256.9,93.7 258.1,94.9 259.3,96.2 260.4,97.4 261.6,98.6 262.8,99.7 263.9,100.9 265.1,102.0 266.3,103.1 267.5,104.1 268.6,105.2 269.8,106.2 271.0,107.2 272.2,108.2 273.3,109.1 274.5,110.0 275.7,110.9 276.9,111.8 278.0,112.6 279.2,113.4 280.4,114.2 281.5,115.0 282.7,115.7 283.9,116.4 285.1,117.1 286.2,117.7 287.4,118.4 288.6,119.0 289.8,119.5 290.9,120.1 292.1,120.6 293.3,121.1 294.5,121.6 295.6,122.1 296.8,122.6 296.8,130\" fill=\"#10b981\" fill-opacity=\".28\"/><polygon points=\"59.2,130 59.2,129.5 60.8,129.4 62.4,129.4 64.0,129.3 65.7,129.2 67.3,129.1 68.9,129.0 70.5,128.9 72.1,128.8 73.7,128.6 75.3,128.5 76.9,128.3 78.6,128.1 80.2,127.9 81.8,127.7 83.4,127.5 85.0,127.2 86.6,127.0 88.2,126.7 89.9,126.3 91.5,126.0 93.1,125.6 94.7,125.2 96.3,124.8 97.9,124.3 99.5,123.8 101.1,123.3 102.8,122.7 104.4,122.1 106.0,121.5 107.6,120.8 109.2,120.0 110.8,119.3 112.4,118.4 114.1,117.6 115.7,116.7 117.3,115.7 118.9,114.7 120.5,113.6 122.1,112.5 123.7,111.3 125.3,110.1 127.0,108.9 128.6,107.6 130.2,106.2 131.8,104.8 133.4,103.3 135.0,101.8 136.6,100.3 138.3,98.7 139.9,97.1 141.5,95.4 143.1,93.7 144.7,92.0 146.3,90.2 147.9,88.4 149.5,86.6 151.2,84.8 152.8,82.9 154.4,81.0 156.0,79.2 156.0,130\" fill=\"#ef4444\" fill-opacity=\".2\"/><polyline points=\"59.2,129.5 60.6,129.4 62.0,129.4 63.4,129.3 64.8,129.3 66.2,129.2 67.6,129.1 69.1,129.0 70.5,128.9 71.9,128.8 73.3,128.7 74.7,128.5 76.1,128.4 77.5,128.3 78.9,128.1 80.3,127.9 81.7,127.7 83.1,127.5 84.5,127.3 86.0,127.1 87.4,126.8 88.8,126.6 90.2,126.3 91.6,126.0 93.0,125.6 94.4,125.3 95.8,124.9 97.2,124.5 98.6,124.1 100.0,123.7 101.4,123.2 102.8,122.7 104.3,122.1 105.7,121.6 107.1,121.0 108.5,120.4 109.9,119.7 111.3,119.0 112.7,118.3 114.1,117.5 115.5,116.7 116.9,115.9 118.3,115.0 119.7,114.1 121.2,113.2 122.6,112.2 124.0,111.2 125.4,110.1 126.8,109.0 128.2,107.9 129.6,106.7 131.0,105.5 132.4,104.2 133.8,103.0 135.2,101.6 136.6,100.3 138.0,98.9 139.5,97.5 140.9,96.0 142.3,94.6 143.7,93.1 145.1,91.5 146.5,90.0 147.9,88.4 149.3,86.9 150.7,85.3 152.1,83.6 153.5,82.0 154.9,80.4 156.4,78.8 157.8,77.2 159.2,75.5 160.6,73.9 162.0,72.3 163.4,70.7 164.8,69.2 166.2,67.6 167.6,66.1 169.0,64.6 170.4,63.2 171.8,61.7 173.2,60.4 174.7,59.0 176.1,57.7 177.5,56.5 178.9,55.3 180.3,54.2 181.7,53.2 183.1,52.2 184.5,51.3 185.9,50.4 187.3,49.6 188.7,48.9 190.1,48.3 191.6,47.8 193.0,47.3 194.4,46.9 195.8,46.6 197.2,46.4 198.6,46.3 200.0,46.2 201.4,46.3 202.8,46.4 204.2,46.6 205.6,46.9 207.0,47.3 208.4,47.8 209.9,48.3 211.3,48.9 212.7,49.6 214.1,50.4 215.5,51.3 216.9,52.2 218.3,53.2 219.7,54.2 221.1,55.3 222.5,56.5 223.9,57.7 225.3,59.0 226.8,60.4 228.2,61.7 229.6,63.2 231.0,64.6 232.4,66.1 233.8,67.6 235.2,69.2 236.6,70.7 238.0,72.3 239.4,73.9 240.8,75.5 242.2,77.2 243.6,78.8 245.1,80.4 246.5,82.0 247.9,83.6 249.3,85.3 250.7,86.9 252.1,88.4 253.5,90.0 254.9,91.5 256.3,93.1 257.7,94.6 259.1,96.0 260.5,97.5 262.0,98.9 263.4,100.3 264.8,101.6 266.2,103.0 267.6,104.2 269.0,105.5 270.4,106.7 271.8,107.9 273.2,109.0 274.6,110.1 276.0,111.2 277.4,112.2 278.8,113.2 280.3,114.1 281.7,115.0 283.1,115.9 284.5,116.7 285.9,117.5 287.3,118.3 288.7,119.0 290.1,119.7 291.5,120.4 292.9,121.0 294.3,121.6 295.7,122.1 297.2,122.7 298.6,123.2 300.0,123.7 301.4,124.1 302.8,124.5 304.2,124.9 305.6,125.3 307.0,125.6 308.4,126.0 309.8,126.3 311.2,126.6 312.6,126.8 314.0,127.1 315.5,127.3 316.9,127.5 318.3,127.7 319.7,127.9 321.1,128.1 322.5,128.3 323.9,128.4 325.3,128.5 326.7,128.7 328.1,128.8 329.5,128.9 330.9,129.0 332.4,129.1 333.8,129.2 335.2,129.3 336.6,129.3 338.0,129.4 339.4,129.4 340.8,129.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"50.0\" y1=\"130.0\" x2=\"350.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"68.0\" y1=\"126.0\" x2=\"68.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"68.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45</text><line x1=\"112.0\" y1=\"126.0\" x2=\"112.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"112.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">50</text><line x1=\"156.0\" y1=\"126.0\" x2=\"156.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"156.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">55</text><line x1=\"200.0\" y1=\"126.0\" x2=\"200.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"200.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60</text><line x1=\"244.0\" y1=\"126.0\" x2=\"244.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"244.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">65</text><line x1=\"288.0\" y1=\"126.0\" x2=\"288.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"288.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">70</text><line x1=\"332.0\" y1=\"126.0\" x2=\"332.0\" y2=\"134.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"332.0\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">75</text><line x1=\"156.0\" y1=\"130.0\" x2=\"156.0\" y2=\"79.2\" stroke=\"#047857\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"130.0\" x2=\"200.0\" y2=\"46.2\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"200.0\" y=\"166.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">minutes</text><text x=\"103.2\" y=\"120.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">16%</text><text x=\"217.6\" y=\"104.8\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">84%</text><text x=\"150.0\" y=\"71.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Ozzie</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(60-1\\times5=55\\ \\text{minutes}\\)"
+            },
+            {
+              "explain": "Why not the others: 65 is one SD ABOVE the mean (he would be behind 84% of competitors); 50 and 45 are 2 and 3 SD below (ahead of about 97.5% and 99.85%).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "finished ahead of 84% of competitors",
+              "note": "Shorter time = ahead; 84% above → μ − 1σ."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
+            "school": "Northern Beaches Secondary College, Manly Campus",
             "grade": "12",
             "origin": "teacher"
           }
