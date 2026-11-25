@@ -942,6 +942,46 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 164\" width=\"65%\" height=\"auto\" style=\"max-width:351px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"270\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 74 126 L 185.4 137.7 A 112 112 0 0 0 139.8 35.4 Z\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.9\" stroke-linejoin=\"round\"/><path d=\"M 99.9 128.7 A 26 26 0 0 0 89.3 105.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"116\" y=\"114\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">60°</text><line x1=\"130\" y1=\"126\" x2=\"130\" y2=\"138\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"103\" y1=\"77\" x2=\"112\" y2=\"85\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"132\" y=\"150\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">5 cm</text></svg>"
           }
+        },
+        {
+          "id": "khs22-y8-t4a-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bicycle wheel has a diameter of \\(62\\text{ cm}\\). The wheel makes \\(80\\) complete revolutions. How far has the bicycle travelled? Give your answer to the nearest centimetre.",
+          "options": [
+            "\\(7791\\text{ cm}\\)",
+            "\\(15{,}582\\text{ cm}\\)",
+            "\\(31{,}165\\text{ cm}\\)",
+            "\\(4960\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "One revolution equals the circumference \\(C = \\pi d = 62\\pi\\text{ cm}\\), so multiply by \\(80\\) revolutions!",
+          "keyPoints": [
+            {
+              "text": "80\\) complete revolutions",
+              "note": "Distance = 80 × π × 62 = 4960π ≈ 15,582 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the distance travelled in one revolution (the circumference \\(C = \\pi d\\)).",
+              "work": "\\(C = \\pi \\times 62 = 62\\pi\\text{ cm}\\)"
+            },
+            {
+              "explain": "Multiply by \\(80\\) complete revolutions.",
+              "work": "\\(D = 80 \\times 62\\pi = 4960\\pi\\text{ cm}\\)"
+            },
+            {
+              "explain": "Evaluate using \\(\\pi \\approx 3.14159265\\): \\(4960 \\times \\pi \\approx 15{,}582.299\\ldots\\text{ cm}\\).",
+              "work": "\\(D \\approx 15{,}582.30\\text{ cm}\\)"
+            },
+            {
+              "explain": "Round to the nearest centimetre: \\(15{,}582\\text{ cm}\\).",
+              "work": "\\(\\text{Answer: } 15{,}582\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -1225,6 +1265,52 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"130\" cy=\"92\" r=\"72\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"130\" cy=\"92\" r=\"36\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"92\" r=\"3\" fill=\"#0f172a\"/><line x1=\"130\" y1=\"92\" x2=\"94\" y2=\"92\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"92\" x2=\"181\" y2=\"41\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"112\" y=\"86\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-style=\"italic\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">r</text><text x=\"168\" y=\"74\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\" transform=\"rotate(-45 168 74)\">10 m</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y8-t4a-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The circle shown has a radius of \\(8\\text{ cm}\\). Find the area of the circle, leaving your answer as an exact value.",
+          "options": [
+            "\\(16\\pi\\text{ cm}^2\\)",
+            "\\(64\\pi\\text{ cm}^2\\)",
+            "\\(8\\pi\\text{ cm}^2\\)",
+            "\\(128\\pi\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(A = \\pi r^2\\) with \\(r = 8\\text{ cm}\\) — keep \\(\\pi\\) in your answer for an exact value!",
+          "keyPoints": [
+            {
+              "text": "exact value",
+              "note": "A = πr² = π(8)² = 64π cm²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the radius from the diagram: \\(r = 8\\text{ cm}\\).",
+              "work": "\\(r = 8\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 168\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"168\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"110\" cy=\"70\" r=\"52\" fill=\"#eff6ff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"110\" y1=\"70\" x2=\"162\" y2=\"70\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><circle cx=\"110\" cy=\"70\" r=\"3\" fill=\"#0f172a\"/><text x=\"136\" y=\"62\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\">8 cm</text><text x=\"110\" y=\"160\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\">A = πr² = π × 8² = 64π cm²</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute \\(r = 8\\) into the circle area formula \\(A = \\pi r^2\\).",
+              "work": "\\(A = \\pi \\times 8^2\\)"
+            },
+            {
+              "explain": "Square the radius: \\(8^2 = 64\\), giving \\(64\\pi\\text{ cm}^2\\).",
+              "work": "\\(A = 64\\pi\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Therefore, the exact area of the circle is \\(64\\pi\\text{ cm}^2\\).",
+              "work": "\\(\\text{Answer: } 64\\pi\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 142\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"142\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"110\" cy=\"70\" r=\"52\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"110\" y1=\"70\" x2=\"162\" y2=\"70\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"110\" cy=\"70\" r=\"3\" fill=\"#0f172a\"/><text x=\"136\" y=\"62\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\">8 cm</text></svg>"
           }
         }
       ]
@@ -1784,6 +1870,52 @@
           "xp": 1,
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 184\" width=\"65%\" height=\"auto\" style=\"max-width:338px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"260\" height=\"184\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M 72 46 A 70.7 70.7 0 0 1 172 146 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"72,46 72,146 172,146\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"72,135 83,135 83,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.3\"/><line x1=\"66\" y1=\"96\" x2=\"78\" y2=\"96\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"122\" y1=\"140\" x2=\"122\" y2=\"152\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"122\" y=\"166\" text-anchor=\"middle\" font-family=\"Georgia,serif\" font-size=\"13\" font-weight=\"700\">4 cm</text></svg>"
+          }
+        },
+        {
+          "id": "khs22-y8-t4a-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The square in the figure has side length \\(9\\text{ cm}\\). The white circle has radius \\(2\\text{ cm}\\) and sits tangent to the top and right edges of the square, with the top-right corner outside the circle also unshaded. What is the exact area of the shaded region?",
+          "options": [
+            "\\((77 - 3\\pi)\\text{ cm}^2\\)",
+            "\\((81 - 4\\pi)\\text{ cm}^2\\)",
+            "\\((77 - 4\\pi)\\text{ cm}^2\\)",
+            "\\((81 - 3\\pi)\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the unshaded white region into TWO non-overlapping pieces: a \\(2 \\times 2\\) square in the top-right corner (\\(4\\text{ cm}^2\\)) PLUS the remaining \\(\\dfrac{3}{4}\\) of the circle!",
+          "keyPoints": [
+            {
+              "text": "exact area of the shaded region",
+              "note": "Square (81) − corner 2×2 square (4) − ¾ circle (3π) = 77 − 3π cm²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the area of the full \\(9\\text{ cm} \\times 9\\text{ cm}\\) square: \\(9^2 = 81\\text{ cm}^2\\).",
+              "work": "\\(A_{\\text{square}} = 9^2 = 81\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 190\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"190\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"47\" y=\"22\" width=\"126\" height=\"126\" fill=\"#bfdbfe\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"145\" y=\"22\" width=\"28\" height=\"28\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1.6\"/><circle cx=\"145\" cy=\"50\" r=\"28\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.6\"/><rect x=\"145\" y=\"22\" width=\"28\" height=\"28\" fill=\"#fee2e2\" fill-opacity=\"0.45\" stroke=\"#dc2626\" stroke-width=\"1.8\" stroke-dasharray=\"3,2\"/><circle cx=\"145\" cy=\"50\" r=\"2.2\" fill=\"#0f172a\"/><rect x=\"47\" y=\"22\" width=\"126\" height=\"126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"110\" y=\"16\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text><text x=\"135\" y=\"54\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1d4ed8\">r=2</text><text x=\"110\" y=\"183\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#0369a1\">White = red 2×2 corner (4) + ¾ of circle (3π) → Shaded = 77 − 3π</text></svg>"
+              }
+            },
+            {
+              "explain": "Split the unshaded white area into the top-right \\(2\\text{ cm} \\times 2\\text{ cm}\\) corner square (red, area \\(2^2 = 4\\text{ cm}^2\\)) and the remaining \\(\\dfrac{3}{4}\\) of the circle.",
+              "work": "\\(A_{\\text{corner}} = 2^2 = 4\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Calculate the area of \\(\\dfrac{3}{4}\\) of the circle with \\(r = 2\\text{ cm}\\): \\(\\dfrac{3}{4} \\times \\pi(2)^2 = 3\\pi\\text{ cm}^2\\).",
+              "work": "\\(A_{\\frac{3}{4}\\text{ circle}} = \\dfrac{3}{4} \\times 4\\pi = 3\\pi\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Subtract both unshaded parts from \\(81\\): \\(81 - 4 - 3\\pi = (77 - 3\\pi)\\text{ cm}^2\\) (\\(\\approx 67.58\\text{ cm}^2\\)).",
+              "work": "\\(A_{\\text{shaded}} = 81 - 4 - 3\\pi = (77 - 3\\pi)\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 164\" width=\"65%\" height=\"auto\" style=\"max-width:286px;display:block;margin:0 auto;\"><rect x=\"0\" y=\"0\" width=\"220\" height=\"164\" rx=\"10\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><rect x=\"47\" y=\"22\" width=\"126\" height=\"126\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><rect x=\"145\" y=\"22\" width=\"28\" height=\"28\" fill=\"#ffffff\" stroke=\"none\" stroke-width=\"1.6\"/><circle cx=\"145\" cy=\"50\" r=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"145\" cy=\"50\" r=\"2.2\" fill=\"#0f172a\"/><rect x=\"47\" y=\"22\" width=\"126\" height=\"126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><text x=\"110\" y=\"16\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#0f172a\">9 cm</text><text x=\"135\" y=\"54\" text-anchor=\"middle\" font-family=\"KaTeX_Main, 'Times New Roman', serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1d4ed8\">r=2</text></svg>"
           }
         }
       ]
