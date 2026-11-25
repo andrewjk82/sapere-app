@@ -5715,6 +5715,168 @@
               "note": "Rationalise using the conjugate. In the sum, look for consecutive terms that cancel."
             }
           ]
+        },
+        {
+          "id": "kambala2020p-q1",
+          "type": "mc",
+          "stem": "What is the value of \\(\\sqrt{48}-\\sqrt{12}\\) ?",
+          "difficulty": "easy",
+          "options": [
+            "2",
+            "\\(2\\sqrt{3}\\)",
+            "\\(2\\sqrt{6}\\)",
+            "6"
+          ],
+          "answer": 1,
+          "hint": "You cannot subtract the numbers under the roots. Simplify each surd by pulling out the biggest PERFECT SQUARE factor, then subtract the like surds.",
+          "steps": [
+            {
+              "explain": "Simplify \\(\\sqrt{48}\\): the biggest perfect square that divides 48 is \\(16\\) (\\(48=16\\times3\\)).",
+              "work": "\\(\\sqrt{48}=\\sqrt{16\\times3}=4\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{12}\\): the biggest perfect square that divides 12 is \\(4\\) (\\(12=4\\times3\\)).",
+              "work": "\\(\\sqrt{12}=\\sqrt{4\\times3}=2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Both are now multiples of \\(\\sqrt{3}\\) (like surds), so subtract the coefficients as in \\(4a-2a\\).",
+              "work": "\\(\\sqrt{48}-\\sqrt{12}=4\\sqrt{3}-2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "\\(4-2=2\\).",
+              "work": "\\(=2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Check: \\(\\sqrt{48}-\\sqrt{12}=6.928-3.464=3.464\\) and \\(2\\sqrt{3}=3.464\\) ✓. Why not the others: D (6) comes from subtracting inside the root, \\(\\sqrt{48-12}=\\sqrt{36}=6\\), which is NOT allowed; A (2) and C (\\(2\\sqrt{6}\\)) do not equal 3.464.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the value of \\(\\sqrt{48}-\\sqrt{12}\\) ?",
+              "note": "Simplify each surd, then subtract like surds."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q7",
+          "type": "mc",
+          "stem": "Write \\(5x\\sqrt{11}\\) in the form \\(\\sqrt{a}\\) .",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\sqrt{55x^{2}}\\)",
+            "\\(\\sqrt{55x}\\)",
+            "\\(\\sqrt{275x^{2}}\\)",
+            "\\(\\sqrt{275x}\\)"
+          ],
+          "answer": 2,
+          "hint": "To move a number or a letter inside a square root it must be SQUARED first, because \\(k=\\sqrt{k^{2}}\\) (for \\(k\\geq0\\)). So \\(5x=\\sqrt{(5x)^{2}}\\).",
+          "steps": [
+            {
+              "explain": "Write the factor \\(5x\\) as a square root: \\(5x=\\sqrt{(5x)^{2}}\\) (square it, then take the root — it changes nothing).",
+              "work": "\\(5x=\\sqrt{(5x)^{2}}=\\sqrt{25x^{2}}\\)"
+            },
+            {
+              "explain": "Now the expression is a product of two square roots.",
+              "work": "\\(5x\\sqrt{11}=\\sqrt{25x^{2}}\\times\\sqrt{11}\\)"
+            },
+            {
+              "explain": "Use \\(\\sqrt{p}\\times\\sqrt{q}=\\sqrt{pq}\\) to combine them.",
+              "work": "\\(=\\sqrt{25x^{2}\\times11}\\)"
+            },
+            {
+              "explain": "Multiply: \\(25\\times11=275\\).",
+              "work": "\\(=\\sqrt{275x^{2}}\\)"
+            },
+            {
+              "explain": "Check with \\(x=1\\): \\(5\\sqrt{11}\\approx16.58\\) and \\(\\sqrt{275}\\approx16.58\\) ✓. Why not the others: A and B forget to square the 5 (they use \\(5\\times11=55\\)); B and D do not square the \\(x\\) (they leave \\(x\\) instead of \\(x^{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Write \\(5x\\sqrt{11}\\) in the form \\(\\sqrt{a}\\) .",
+              "note": "Square the outside factor: \\(5x=\\sqrt{25x^{2}}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q11",
+          "type": "mc",
+          "stem": "Simplify the expression \\(\\sqrt{32}-\\sqrt{8}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\sqrt{24}\\)",
+            "\\(2\\sqrt{2}\\)",
+            "\\(6\\sqrt{2}\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "You cannot subtract the numbers inside the roots. First simplify each surd by pulling out the biggest PERFECT SQUARE factor, then subtract the like surds (same root).",
+          "steps": [
+            {
+              "explain": "Simplify \\(\\sqrt{32}\\): the biggest perfect square that divides 32 is \\(16\\) (\\(32=16\\times2\\)).",
+              "work": "\\(\\sqrt{32}=\\sqrt{16\\times2}=\\sqrt{16}\\times\\sqrt{2}=4\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\sqrt{8}\\): the biggest perfect square that divides 8 is \\(4\\) (\\(8=4\\times2\\)).",
+              "work": "\\(\\sqrt{8}=\\sqrt{4\\times2}=\\sqrt{4}\\times\\sqrt{2}=2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Now both surds have the same root \\(\\sqrt{2}\\) (like surds), so they can be subtracted just like \\(4a-2a\\).",
+              "work": "\\(\\sqrt{32}-\\sqrt{8}=4\\sqrt{2}-2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Subtract the coefficients: \\(4-2=2\\).",
+              "work": "\\(=2\\sqrt{2}\\)"
+            },
+            {
+              "explain": "Check with a calculator: \\(\\sqrt{32}-\\sqrt{8}=5.657-2.828=2.828\\) and \\(2\\sqrt{2}=2.828\\) ✓. Why not the others: A subtracts inside the root (\\(\\sqrt{32-8}\\) is NOT allowed); C adds the coefficients \\(4+2\\); D is \\(\\sqrt{16}\\), a wrong simplification.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Simplify the expression \\(\\sqrt{32}-\\sqrt{8}\\)",
+              "note": "Pull out perfect squares: \\(\\sqrt{32}=4\\sqrt{2}\\), \\(\\sqrt{8}=2\\sqrt{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -8547,6 +8709,60 @@
           "meta": {
             "source": "The King's School 2022 Year 12 Mathematics Advanced Trial Examination",
             "school": "The King's School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q9",
+          "type": "mc",
+          "stem": "Express \\(\\dfrac{2}{2+\\sqrt{3}}\\) as a fraction with a rational denominator.",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{4-2\\sqrt{3}}{7}\\)",
+            "\\(\\dfrac{4+2\\sqrt{3}}{7}\\)",
+            "\\(4-2\\sqrt{3}\\)",
+            "\\(4+2\\sqrt{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the top and bottom by the CONJUGATE of the denominator: the same two terms with the sign in the middle changed, \\(2-\\sqrt{3}\\). Then use \\((a+b)(a-b)=a^{2}-b^{2}\\).",
+          "steps": [
+            {
+              "explain": "The denominator is \\(2+\\sqrt{3}\\). Its conjugate is \\(2-\\sqrt{3}\\). Multiplying by \\(\\dfrac{2-\\sqrt{3}}{2-\\sqrt{3}}\\) (which equals 1) does not change the value.",
+              "work": "\\(\\dfrac{2}{2+\\sqrt{3}}\\times\\dfrac{2-\\sqrt{3}}{2-\\sqrt{3}}\\)"
+            },
+            {
+              "explain": "Numerator: multiply out \\(2(2-\\sqrt{3})\\).",
+              "work": "\\(2(2-\\sqrt{3})=4-2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Denominator: difference of two squares \\((a+b)(a-b)=a^{2}-b^{2}\\) with \\(a=2,\\ b=\\sqrt{3}\\).",
+              "work": "\\((2+\\sqrt{3})(2-\\sqrt{3})=2^{2}-(\\sqrt{3})^{2}=4-3=1\\)"
+            },
+            {
+              "explain": "Put them together: the denominator is now the rational number 1.",
+              "work": "\\(\\dfrac{4-2\\sqrt{3}}{1}=4-2\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Check numerically: \\(\\dfrac{2}{2+1.732}=0.5359\\) and \\(4-2(1.732)=0.5359\\) ✓. Why not the others: A and B divide by 7 (they used \\(4+3=7\\), but the middle terms cancel so it is \\(4-3=1\\)); D uses the wrong sign in the numerator.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Express \\(\\dfrac{2}{2+\\sqrt{3}}\\) as a fraction with a rational denominator.",
+              "note": "Multiply by the conjugate \\(2-\\sqrt{3}\\); \\((a+b)(a-b)=a^{2}-b^{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

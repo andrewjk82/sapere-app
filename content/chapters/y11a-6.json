@@ -3133,6 +3133,66 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "intgrammar2020p-q10",
+          "type": "mc",
+          "stem": "Hannah correctly calculated the size of angle \\(\\theta\\) using trigonometry. What was her first line of working?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"165.0\" x2=\"160.0\" y2=\"165.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"165.0\" x2=\"160.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"165.0\" x2=\"160.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 146 165 L 146 151 L 160 151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M 160.0 56.0 A 34 34 0 0 1 138.1 48.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><text x=\"135.8\" y=\"85.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ°</text><text x=\"78.0\" y=\"91.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13</text><text x=\"100.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"262.0\" y=\"92.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">Not to scale</text></svg>"
+          },
+          "options": [
+            "\\(\\cos\\theta=\\dfrac{12}{13}\\)",
+            "\\(\\cos\\theta=\\dfrac{13}{12}\\)",
+            "\\(\\sin\\theta=\\dfrac{12}{13}\\)",
+            "\\(\\sin\\theta=\\dfrac{13}{12}\\)"
+          ],
+          "answer": 2,
+          "hint": "Label the sides from the point of view of the angle \\(\\theta\\): OPPOSITE (across from \\(\\theta\\)), ADJACENT (next to \\(\\theta\\), not the longest side) and HYPOTENUSE (opposite the right angle). Then pick the ratio that uses the two sides you know.",
+          "steps": [
+            {
+              "explain": "The right angle is at the bottom right, so the longest side \\(13\\) (opposite the right angle) is the HYPOTENUSE.",
+              "work": "\\(\\text{hypotenuse}=13\\)"
+            },
+            {
+              "explain": "The angle \\(\\theta\\) is at the top. The side across from it is the BASE: the side marked \\(12\\) is OPPOSITE \\(\\theta\\) (the vertical side, which is next to \\(\\theta\\), is the adjacent side and its length is not given).",
+              "work": "\\(\\text{opposite}=12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"165.0\" x2=\"160.0\" y2=\"165.0\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"160.0\" y1=\"165.0\" x2=\"160.0\" y2=\"22.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"165.0\" x2=\"160.0\" y2=\"22.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M 146 165 L 146 151 L 160 151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.6\"/><path d=\"M 160.0 56.0 A 34 34 0 0 1 138.1 48.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.6\"/><text x=\"135.8\" y=\"85.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ°</text><text x=\"78.0\" y=\"91.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13</text><text x=\"100.0\" y=\"185.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><text x=\"262.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">opposite θ = 12</text><text x=\"262.0\" y=\"76.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">hypotenuse = 13</text><text x=\"262.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">12</text><line x1=\"250.3\" y1=\"129.0\" x2=\"273.7\" y2=\"129.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"262.0\" y=\"143.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">13</text><text x=\"226.0\" y=\"128.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin θ =</text></svg>"
+              }
+            },
+            {
+              "explain": "The two known sides are opposite and hypotenuse, so use SINE: \\(\\sin\\theta=\\dfrac{\\text{opposite}}{\\text{hypotenuse}}\\) (SOH-CAH-TOA).",
+              "work": "\\(\\sin\\theta=\\dfrac{\\text{opp}}{\\text{hyp}}\\)"
+            },
+            {
+              "explain": "Substitute the lengths: the opposite is on TOP, the hypotenuse on the bottom.",
+              "work": "\\(\\sin\\theta=\\dfrac{12}{13}\\)"
+            },
+            {
+              "explain": "Then \\(\\theta=\\sin^{-1}\\!\\left(\\dfrac{12}{13}\\right)\\approx67.4^{\\circ}\\). Why not the others: A (cosine) needs the ADJACENT side, which is not given; B and D put the hypotenuse on top — a sine or cosine can never be bigger than 1.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What was her first line of working?",
+              "note": "12 is opposite \\(\\theta\\), 13 is the hypotenuse: use SOH."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5633,6 +5693,126 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kambala2020p-q19a",
+          "type": "mc",
+          "stem": "In the diagram, ABC is a triangle in which \\(\\angle ABC=45^{\\circ}\\), \\(\\angle ACB=30^{\\circ}\\) and \\(AB=6\\) cm. AD is the perpendicular from A to BC. Find in simplest exact form the length of \\(AD\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 205\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"168.0\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"123.4\" y2=\"84.6\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"123.4\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 111.4 168 L 111.4 156 L 123.4 156\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 168 A 32 32 0 0 0 62.6 145.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"95.4\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M 207.95849500422014 168 A 60 60 0 0 1 216.0 138.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"179.1\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"57.7\" y=\"122.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><text x=\"123.4\" y=\"75.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"173.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"277.0\" y=\"173.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"123.4\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"272.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"272.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(6\\sqrt{2}\\) cm",
+            "\\(3\\sqrt{2}\\) cm",
+            "\\(3\\) cm",
+            "\\(3\\sqrt{3}\\) cm"
+          ],
+          "answer": 1,
+          "hint": "Look at the RIGHT-angled triangle ABD: you know the hypotenuse \\(AB=6\\) and the angle \\(45^{\\circ}\\); AD is OPPOSITE the \\(45^{\\circ}\\) angle. Use \\(\\sin45^{\\circ}=\\dfrac{\\text{opp}}{\\text{hyp}}\\) with the exact value \\(\\sin45^{\\circ}=\\dfrac{\\sqrt{2}}{2}\\).",
+          "steps": [
+            {
+              "explain": "Use the right-angled triangle ABD (right angle at D). AD is opposite the \\(45^{\\circ}\\) angle at B; AB \\(=6\\) is the hypotenuse.",
+              "work": "\\(\\sin45^{\\circ}=\\dfrac{AD}{AB}=\\dfrac{AD}{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 205\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"168.0\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"123.4\" y2=\"84.6\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"123.4\" y2=\"168.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 111.4 168 L 111.4 156 L 123.4 156\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 168 A 32 32 0 0 0 62.6 145.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"95.4\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M 207.95849500422014 168 A 60 60 0 0 1 216.0 138.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"179.1\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"57.7\" y=\"122.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><text x=\"123.4\" y=\"75.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"173.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"277.0\" y=\"173.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"123.4\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"131.4\" y=\"130.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AD</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 6.",
+              "work": "\\(AD=6\\sin45^{\\circ}\\)"
+            },
+            {
+              "explain": "Exact value: \\(\\sin45^{\\circ}=\\dfrac{\\sqrt{2}}{2}\\).",
+              "work": "\\(AD=6\\times\\dfrac{\\sqrt{2}}{2}\\)"
+            },
+            {
+              "explain": "Cancel: \\(6\\div2=3\\).",
+              "work": "\\(AD=3\\sqrt{2}\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Check with \\(\\dfrac{6}{\\sqrt{2}}\\): \\(\\dfrac{6}{\\sqrt{2}}\\times\\dfrac{\\sqrt{2}}{\\sqrt{2}}=\\dfrac{6\\sqrt{2}}{2}=3\\sqrt{2}\\) ✓ (this is the same answer, rationalised). Why not the others: \\(6\\sqrt{2}\\) forgets to divide by 2; \\(3\\) and \\(3\\sqrt{3}\\) use the wrong ratio (\\(\\sin30^{\\circ}\\) or \\(\\sin60^{\\circ}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find in simplest exact form the length of \\(AD\\).",
+              "note": "Triangle ABD: \\(AD=6\\sin45^{\\circ}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kambala2020p-q19b",
+          "type": "mc",
+          "stem": "In the diagram, ABC is a triangle in which \\(\\angle ABC=45^{\\circ}\\), \\(\\angle ACB=30^{\\circ}\\) and \\(AB=6\\) cm. AD is the perpendicular from A to BC. Find in simplest exact form the length of \\(DC\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 205\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"168.0\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"123.4\" y2=\"84.6\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"123.4\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 111.4 168 L 111.4 156 L 123.4 156\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 168 A 32 32 0 0 0 62.6 145.4\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"95.4\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M 207.95849500422014 168 A 60 60 0 0 1 216.0 138.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"179.1\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"57.7\" y=\"122.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><text x=\"123.4\" y=\"75.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"173.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"277.0\" y=\"173.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"123.4\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"272.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"272.0\" y=\"56.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(3\\sqrt{6}\\) cm",
+            "\\(\\sqrt{6}\\) cm",
+            "\\(6\\sqrt{2}\\) cm",
+            "\\(3\\sqrt{3}\\) cm"
+          ],
+          "answer": 0,
+          "hint": "Use the other right-angled triangle ADC with the length of AD from part (a): \\(AD=3\\sqrt{2}\\). DC is ADJACENT to the \\(30^{\\circ}\\) angle and AD is OPPOSITE it, so use \\(\\tan30^{\\circ}=\\dfrac{\\text{opp}}{\\text{adj}}\\) with \\(\\tan30^{\\circ}=\\dfrac{1}{\\sqrt{3}}\\).",
+          "steps": [
+            {
+              "explain": "In triangle ADC (right angle at D): AD is opposite the \\(30^{\\circ}\\) angle, DC is adjacent to it, and \\(AD=3\\sqrt{2}\\) from part (a).",
+              "work": "\\(\\tan30^{\\circ}=\\dfrac{AD}{DC}=\\dfrac{3\\sqrt{2}}{DC}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 205\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"40.0\" y1=\"168.0\" x2=\"268.0\" y2=\"168.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"168.0\" x2=\"123.4\" y2=\"84.6\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"268.0\" y2=\"168.0\" stroke=\"#7c3aed\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"84.6\" x2=\"123.4\" y2=\"168.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"123.4\" y1=\"168.0\" x2=\"268.0\" y2=\"168.0\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 111.4 168 L 111.4 156 L 123.4 156\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 72 168 A 32 32 0 0 0 62.6 145.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"95.4\" y=\"149.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><path d=\"M 207.95849500422014 168 A 60 60 0 0 1 216.0 138.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"179.1\" y=\"148.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">30°</text><text x=\"57.7\" y=\"122.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><text x=\"123.4\" y=\"75.6\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"173.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"277.0\" y=\"173.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"123.4\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">D</text><text x=\"131.4\" y=\"130.3\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3√2</text><text x=\"195.7\" y=\"186.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">DC</text></svg>"
+              }
+            },
+            {
+              "explain": "Exact value \\(\\tan30^{\\circ}=\\dfrac{1}{\\sqrt{3}}\\), so \\(\\dfrac{1}{\\sqrt{3}}=\\dfrac{3\\sqrt{2}}{DC}\\).",
+              "work": "\\(\\dfrac{1}{\\sqrt{3}}=\\dfrac{3\\sqrt{2}}{DC}\\)"
+            },
+            {
+              "explain": "Rearrange: \\(DC=3\\sqrt{2}\\times\\sqrt{3}\\) (cross-multiply).",
+              "work": "\\(DC=3\\sqrt{2}\\times\\sqrt{3}\\)"
+            },
+            {
+              "explain": "Combine the roots: \\(\\sqrt{2}\\times\\sqrt{3}=\\sqrt{6}\\).",
+              "work": "\\(DC=3\\sqrt{6}\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Check: \\(3\\sqrt{6}\\approx7.35\\) and \\(\\dfrac{AD}{\\tan30^{\\circ}}=\\dfrac{4.243}{0.5774}=7.35\\) ✓. Why not the others: \\(\\sqrt{6}\\) multiplies by \\(\\tan30^{\\circ}\\) instead of dividing; the others use wrong ratios.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find in simplest exact form the length of \\(DC\\).",
+              "note": "Triangle ADC: \\(DC=\\dfrac{AD}{\\tan30^{\\circ}}=AD\\times\\sqrt{3}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
             "grade": "11",
             "origin": "teacher"
           }
@@ -14967,6 +15147,63 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "intgrammar2020p-q14a",
+          "type": "mc",
+          "stem": "Find the exact value of \\(\\cos120^{\\circ}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(-\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(-\\dfrac{\\sqrt{3}}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(120^{\\circ}\\) is in the SECOND quadrant. Find the acute (related) angle to the \\(x\\)-axis, use its exact value, then fix the sign: cosine is the \\(x\\)-coordinate, which is NEGATIVE in the second quadrant.",
+          "steps": [
+            {
+              "explain": "Locate \\(120^{\\circ}\\): it is between \\(90^{\\circ}\\) and \\(180^{\\circ}\\), the second quadrant (only sine is positive there).",
+              "work": "\\(90^{\\circ}<120^{\\circ}<180^{\\circ}\\)"
+            },
+            {
+              "explain": "Find the related acute angle to the \\(x\\)-axis: \\(180^{\\circ}-120^{\\circ}=60^{\\circ}\\).",
+              "work": "\\(\\cos120^{\\circ}=\\cos(180^{\\circ}-60^{\\circ})\\)"
+            },
+            {
+              "explain": "In the second quadrant the \\(x\\)-coordinate (cosine) is negative, so \\(\\cos(180^{\\circ}-\\theta)=-\\cos\\theta\\).",
+              "work": "\\(\\cos(180^{\\circ}-60^{\\circ})=-\\cos60^{\\circ}\\)"
+            },
+            {
+              "explain": "Use the exact value \\(\\cos60^{\\circ}=\\dfrac{1}{2}\\) (from the \\(30^{\\circ}\\)-\\(60^{\\circ}\\)-\\(90^{\\circ}\\) triangle).",
+              "work": "\\(=-\\dfrac{1}{2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 262\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"51.0\" y1=\"128.0\" x2=\"281.0\" y2=\"128.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"242.0\" x2=\"165.0\" y2=\"14.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"281.0\" y1=\"128.0\" x2=\"274.1\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"281.0\" y1=\"128.0\" x2=\"274.1\" y2=\"132.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"14.0\" x2=\"161.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"14.0\" x2=\"169.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"279.0\" y=\"144.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"175.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"165\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"119.0\" y1=\"48.3\" x2=\"119.0\" y2=\"128.0\" stroke=\"#7c3aed\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><line x1=\"165.0\" y1=\"128.0\" x2=\"119.0\" y2=\"128.0\" stroke=\"#047857\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"128.0\" x2=\"119.0\" y2=\"48.3\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M 135.0 128.0 A 30 30 0 0 0 150.0 102.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"121.7\" y=\"107.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><circle cx=\"119.0\" cy=\"48.3\" r=\"5\" fill=\"#dc2626\"/><text x=\"107.0\" y=\"38.3\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P</text><text x=\"113.0\" y=\"154.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = −</text><text x=\"153.0\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"146.7\" y1=\"154.0\" x2=\"159.2\" y2=\"154.0\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"153.0\" y=\"164.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"57.0\" y=\"92.2\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = </text><text x=\"92.0\" y=\"88.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√3</text><line x1=\"82.8\" y1=\"92.2\" x2=\"101.2\" y2=\"92.2\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"92.0\" y=\"102.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculator check: \\(\\cos120^{\\circ}=-0.5\\) ✓. Why not the others: A forgets the negative sign; C and D are \\(\\cos30^{\\circ}\\)-type values (\\(\\dfrac{\\sqrt{3}}{2}\\)), which belong to \\(\\sin60^{\\circ}\\) or \\(\\cos30^{\\circ}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact value of \\(\\cos120^{\\circ}\\)",
+              "note": "Related angle \\(60^{\\circ}\\); cosine is negative in quadrant 2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -18162,6 +18399,67 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "intgrammar2020p-q16",
+          "type": "mc",
+          "stem": "Given \\(\\sin\\theta=\\dfrac{5}{6}\\) and \\(90^{\\circ}\\leq\\theta\\leq180^{\\circ}\\), find the exact value of \\(\\cos\\theta\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\sqrt{11}}{6}\\)",
+            "\\(-\\dfrac{1}{6}\\)",
+            "\\(-\\dfrac{\\sqrt{61}}{6}\\)",
+            "\\(-\\dfrac{\\sqrt{11}}{6}\\)"
+          ],
+          "answer": 3,
+          "hint": "Draw a right-angled triangle for the acute 'reference' triangle (opposite \\(=5\\), hypotenuse \\(=6\\)), find the third side with Pythagoras, then decide the SIGN of cosine from the quadrant: \\(90^{\\circ}\\leq\\theta\\leq180^{\\circ}\\) is the second quadrant.",
+          "steps": [
+            {
+              "explain": "\\(\\sin\\theta=\\dfrac{\\text{opposite}}{\\text{hypotenuse}}\\), so draw a right triangle with opposite side \\(5\\) and hypotenuse \\(6\\).",
+              "work": "\\(\\sin\\theta=\\dfrac{5}{6}\\ \\Rightarrow\\ \\text{opp}=5,\\ \\text{hyp}=6\\)"
+            },
+            {
+              "explain": "Find the adjacent side with Pythagoras: \\(a^{2}=c^{2}-b^{2}\\).",
+              "work": "\\(\\text{adj}^{2}=6^{2}-5^{2}=36-25=11\\)"
+            },
+            {
+              "explain": "Take the positive square root (a length).",
+              "work": "\\(\\text{adj}=\\sqrt{11}\\)"
+            },
+            {
+              "explain": "Then the size (ignoring sign) of the cosine is \\(\\dfrac{\\text{adj}}{\\text{hyp}}=\\dfrac{\\sqrt{11}}{6}\\).",
+              "work": "\\(\\left|\\cos\\theta\\right|=\\dfrac{\\sqrt{11}}{6}\\)"
+            },
+            {
+              "explain": "Sign: \\(90^{\\circ}\\leq\\theta\\leq180^{\\circ}\\) is the SECOND quadrant, where the \\(x\\)-coordinate is negative, so cosine is NEGATIVE (only sine is positive in the second quadrant).",
+              "work": "\\(\\cos\\theta=-\\dfrac{\\sqrt{11}}{6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"25.0\" y1=\"170.0\" x2=\"260.0\" y2=\"170.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"192.0\" x2=\"200.0\" y2=\"20.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"170.0\" x2=\"253.1\" y2=\"166.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"260.0\" y1=\"170.0\" x2=\"253.1\" y2=\"174.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"196.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"20.0\" x2=\"204.0\" y2=\"26.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"258.0\" y=\"186.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"210.0\" y=\"28.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><line x1=\"127.0\" y1=\"60.0\" x2=\"127.0\" y2=\"170.0\" stroke=\"#7c3aed\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"127.0\" y1=\"170.0\" x2=\"200.0\" y2=\"170.0\" stroke=\"#047857\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"200.0\" y1=\"170.0\" x2=\"127.0\" y2=\"60.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M 143.0 170 L 143.0 154 L 127.0342546121812 154\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><path d=\"M 232 170 A 32 32 0 0 0 182.3 143.3\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"219.5\" y=\"128.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"137.5\" y=\"111.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"113.0\" y=\"119.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5</text><text x=\"163.5\" y=\"188.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√11</text><circle cx=\"127.0\" cy=\"60.0\" r=\"5\" fill=\"#dc2626\"/><text x=\"119.0\" y=\"52.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P(−√11, 5)</text><text x=\"210.0\" y=\"106.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos θ = </text><text x=\"278.0\" y=\"102.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−√11</text><line x1=\"262.6\" y1=\"106.0\" x2=\"293.4\" y2=\"106.0\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"278.0\" y=\"116.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(\\sin^{2}\\theta+\\cos^{2}\\theta=\\dfrac{25}{36}+\\dfrac{11}{36}=1\\) ✓. Why not the others: A has the wrong sign; B is \\(-\\dfrac{1}{6}\\), a guess; C uses \\(25+36=61\\) (adding instead of subtracting in Pythagoras).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "find the exact value of \\(\\cos\\theta\\).",
+              "note": "Reference triangle 5, 6, \\(\\sqrt{11}\\); quadrant 2 \\(\\Rightarrow\\) cos negative."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -20814,6 +21112,176 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kambala2020p-q25",
+          "type": "mc",
+          "stem": "Show that \\(\\dfrac{1}{1+\\sin x}+\\dfrac{1}{1-\\sin x}=2\\sec^{2}x\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{(1-\\sin x)+(1+\\sin x)}{(1+\\sin x)(1-\\sin x)}=\\dfrac{2}{1-\\sin^{2}x}\\\\ &=\\dfrac{2}{\\cos^{2}x}=2\\sec^{2}x=\\text{RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{1+1}{(1+\\sin x)+(1-\\sin x)}=\\dfrac{2}{2}=1\\\\ &\\text{not equal to the RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{(1-\\sin x)+(1+\\sin x)}{(1+\\sin x)(1-\\sin x)}=\\dfrac{2}{1-\\sin^{2}x}\\\\ &=\\dfrac{2}{\\sin^{2}x}=2\\operatorname{cosec}^{2}x\\ne\\text{RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{(1-\\sin x)+(1+\\sin x)}{(1+\\sin x)(1-\\sin x)}=\\dfrac{2}{1+\\sin^{2}x}\\\\ &\\text{which does not simplify to the RHS}\\end{aligned}\\)"
+          ],
+          "answer": 0,
+          "hint": "Work on the LEFT side. Add the fractions with a COMMON denominator \\((1+\\sin x)(1-\\sin x)\\) — a difference of two squares \\(=1-\\sin^{2}x\\) — then use \\(1-\\sin^{2}x=\\cos^{2}x\\) and \\(\\sec x=\\dfrac{1}{\\cos x}\\).",
+          "steps": [
+            {
+              "explain": "Common denominator: multiply the first fraction's top and bottom by \\((1-\\sin x)\\), the second by \\((1+\\sin x)\\).",
+              "work": "\\(\\text{LHS}=\\dfrac{1-\\sin x}{(1+\\sin x)(1-\\sin x)}+\\dfrac{1+\\sin x}{(1+\\sin x)(1-\\sin x)}\\)"
+            },
+            {
+              "explain": "Add the numerators: the \\(\\sin x\\) terms cancel (\\(-\\sin x+\\sin x=0\\)) and \\(1+1=2\\).",
+              "work": "\\(=\\dfrac{2}{(1+\\sin x)(1-\\sin x)}\\)"
+            },
+            {
+              "explain": "Difference of two squares in the denominator: \\((1+\\sin x)(1-\\sin x)=1-\\sin^{2}x\\).",
+              "work": "\\(=\\dfrac{2}{1-\\sin^{2}x}\\)"
+            },
+            {
+              "explain": "Pythagorean identity: \\(\\sin^{2}x+\\cos^{2}x=1\\Rightarrow1-\\sin^{2}x=\\cos^{2}x\\).",
+              "work": "\\(=\\dfrac{2}{\\cos^{2}x}\\)"
+            },
+            {
+              "explain": "Reciprocal identity: \\(\\dfrac{1}{\\cos^{2}x}=\\sec^{2}x\\).",
+              "work": "\\(=2\\sec^{2}x=\\text{RHS}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: B adds the tops and bottoms separately (illegal); C uses \\(1-\\sin^{2}x=\\sin^{2}x\\) (wrong identity, it is \\(\\cos^{2}x\\)); D writes \\(1+\\sin^{2}x\\) in the denominator (the product is a DIFFERENCE of squares).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Show that \\(\\dfrac{1}{1+\\sin x}+\\dfrac{1}{1-\\sin x}=2\\sec^{2}x\\)",
+              "note": "Common denominator \\(\\to1-\\sin^{2}x=\\cos^{2}x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q26a",
+          "type": "mc",
+          "stem": "Prove \\(\\tan\\alpha\\operatorname{cosec}\\alpha=\\sec\\alpha\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\times\\dfrac{1}{\\cos\\alpha}=\\dfrac{\\sin\\alpha}{\\cos^{2}\\alpha}\\\\ &\\text{not equal to }\\sec\\alpha\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\times\\dfrac{1}{\\sin\\alpha}\\\\ &=\\dfrac{1}{\\cos\\alpha}=\\sec\\alpha=\\text{RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\cos\\alpha}{\\sin\\alpha}\\times\\dfrac{1}{\\sin\\alpha}\\\\ &=\\dfrac{\\cos\\alpha}{\\sin^{2}\\alpha}\\ne\\sec\\alpha\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\times\\dfrac{\\cos\\alpha}{\\sin\\alpha}\\\\ &=1\\ne\\sec\\alpha\\end{aligned}\\)"
+          ],
+          "answer": 1,
+          "hint": "Start from the LEFT side and rewrite every term using \\(\\sin\\) and \\(\\cos\\): \\(\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\) and \\(\\operatorname{cosec}\\alpha=\\dfrac{1}{\\sin\\alpha}\\). Then cancel. The correct proof ends with \\(\\sec\\alpha=\\dfrac{1}{\\cos\\alpha}\\).",
+          "steps": [
+            {
+              "explain": "Choose the LEFT side (LHS) and rewrite it using the basic identities.",
+              "work": "\\(\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha},\\qquad\\operatorname{cosec}\\alpha=\\dfrac{1}{\\sin\\alpha}\\)"
+            },
+            {
+              "explain": "Substitute into the LHS.",
+              "work": "\\(\\text{LHS}=\\dfrac{\\sin\\alpha}{\\cos\\alpha}\\times\\dfrac{1}{\\sin\\alpha}\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\(\\sin\\alpha\\) (top and bottom).",
+              "work": "\\(=\\dfrac{1}{\\cos\\alpha}\\)"
+            },
+            {
+              "explain": "Recognise the reciprocal identity \\(\\sec\\alpha=\\dfrac{1}{\\cos\\alpha}\\), which is the RIGHT side.",
+              "work": "\\(=\\sec\\alpha=\\text{RHS}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: A uses \\(\\operatorname{cosec}\\alpha=\\dfrac{1}{\\cos\\alpha}\\) (that is \\(\\sec\\alpha\\)); C uses \\(\\tan\\alpha=\\dfrac{\\cos\\alpha}{\\sin\\alpha}\\) (that is \\(\\cot\\alpha\\)); D uses \\(\\operatorname{cosec}\\alpha=\\dfrac{\\cos\\alpha}{\\sin\\alpha}\\) — all wrong identities.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove \\(\\tan\\alpha\\operatorname{cosec}\\alpha=\\sec\\alpha\\)",
+              "note": "Write the LHS in sin and cos, then cancel."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q26b",
+          "type": "mc",
+          "stem": "Prove \\(\\dfrac{1}{\\sin^{2}\\theta}+\\dfrac{1}{\\cos^{2}\\theta}=\\sec^{2}\\theta\\operatorname{cosec}^{2}\\theta\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{1+1}{\\sin^{2}\\theta+\\cos^{2}\\theta}=\\dfrac{2}{1}=2\\\\ &\\text{not equal to the RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\cos^{2}\\theta+\\sin^{2}\\theta}{\\sin^{2}\\theta\\cos^{2}\\theta}=\\dfrac{1}{\\sin^{2}\\theta\\cos^{2}\\theta}\\\\ &=\\operatorname{cosec}^{2}\\theta\\sec^{2}\\theta=\\text{RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\cos^{2}\\theta-\\sin^{2}\\theta}{\\sin^{2}\\theta\\cos^{2}\\theta}\\\\ &\\text{which does not simplify to the RHS}\\end{aligned}\\)",
+            "\\(\\begin{aligned}&\\text{LHS}=\\dfrac{\\sin^{2}\\theta+\\cos^{2}\\theta}{\\sin^{2}\\theta+\\cos^{2}\\theta}=1\\\\ &\\text{not equal to the RHS}\\end{aligned}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the two fractions with a COMMON denominator \\(\\sin^{2}\\theta\\cos^{2}\\theta\\) (cross-multiply), then use the Pythagorean identity \\(\\sin^{2}\\theta+\\cos^{2}\\theta=1\\) on the top. Finish by splitting into reciprocal functions.",
+          "steps": [
+            {
+              "explain": "Start from the LEFT side. The common denominator of \\(\\sin^{2}\\theta\\) and \\(\\cos^{2}\\theta\\) is their product. Multiply each top and bottom to get it.",
+              "work": "\\(\\text{LHS}=\\dfrac{\\cos^{2}\\theta}{\\sin^{2}\\theta\\cos^{2}\\theta}+\\dfrac{\\sin^{2}\\theta}{\\sin^{2}\\theta\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Add the numerators (same denominator).",
+              "work": "\\(=\\dfrac{\\cos^{2}\\theta+\\sin^{2}\\theta}{\\sin^{2}\\theta\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Pythagorean identity: \\(\\sin^{2}\\theta+\\cos^{2}\\theta=1\\).",
+              "work": "\\(=\\dfrac{1}{\\sin^{2}\\theta\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Split into a product of two fractions.",
+              "work": "\\(=\\dfrac{1}{\\sin^{2}\\theta}\\times\\dfrac{1}{\\cos^{2}\\theta}\\)"
+            },
+            {
+              "explain": "Use \\(\\dfrac{1}{\\sin\\theta}=\\operatorname{cosec}\\theta\\) and \\(\\dfrac{1}{\\cos\\theta}=\\sec\\theta\\), squared.",
+              "work": "\\(=\\operatorname{cosec}^{2}\\theta\\sec^{2}\\theta=\\sec^{2}\\theta\\operatorname{cosec}^{2}\\theta=\\text{RHS}\\ \\ \\blacksquare\\)"
+            },
+            {
+              "explain": "Why not the others: A adds the tops and bottoms separately (illegal); C has \\(\\cos^{2}-\\sin^{2}\\) on top (wrong sign); D puts the numerator over itself.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Prove \\(\\dfrac{1}{\\sin^{2}\\theta}+\\dfrac{1}{\\cos^{2}\\theta}=\\sec^{2}\\theta\\operatorname{cosec}^{2}\\theta\\)",
+              "note": "Common denominator, then \\(\\sin^{2}+\\cos^{2}=1\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -23017,6 +23485,124 @@
           "meta": {
             "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
             "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q30a",
+          "type": "mc",
+          "stem": "Solve for \\(0^{\\circ}\\leq x\\leq360^{\\circ}\\): \\(2\\cos x-1=0\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(30^{\\circ}\\) and \\(330^{\\circ}\\)",
+            "\\(60^{\\circ}\\) and \\(120^{\\circ}\\)",
+            "\\(60^{\\circ}\\) and \\(300^{\\circ}\\)",
+            "\\(120^{\\circ}\\) and \\(240^{\\circ}\\)"
+          ],
+          "answer": 2,
+          "hint": "Get \\(\\cos x\\) alone first, find the acute (related) angle, then use the quadrants: cosine is POSITIVE in the 1st and 4th quadrants (\\(x\\) and \\(360^{\\circ}-x\\)).",
+          "steps": [
+            {
+              "explain": "Add 1 to both sides, then divide by 2.",
+              "work": "\\(2\\cos x=1\\ \\Rightarrow\\ \\cos x=\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Related acute angle: \\(\\cos^{-1}\\left(\\dfrac{1}{2}\\right)=60^{\\circ}\\) (exact value from the \\(30^{\\circ}\\)-\\(60^{\\circ}\\)-\\(90^{\\circ}\\) triangle).",
+              "work": "\\(\\text{acute angle}=60^{\\circ}\\)"
+            },
+            {
+              "explain": "Cosine is positive in quadrants 1 and 4 (ASTC): quadrant 1 gives \\(x=60^{\\circ}\\); quadrant 4 gives \\(360^{\\circ}-60^{\\circ}\\).",
+              "work": "\\(x=60^{\\circ}\\quad\\text{or}\\quad x=360^{\\circ}-60^{\\circ}=300^{\\circ}\\)"
+            },
+            {
+              "explain": "On the graph of \\(y=\\cos x\\), the line \\(y=0.5\\) crosses the curve exactly twice in \\(0^{\\circ}\\)–\\(360^{\\circ}\\).",
+              "work": "\\(x=60^{\\circ},\\ 300^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"117.5\" x2=\"334.0\" y2=\"117.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"41.2\" y1=\"229.0\" x2=\"41.2\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"117.5\" x2=\"327.1\" y2=\"113.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"117.5\" x2=\"327.1\" y2=\"121.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"41.2\" y1=\"6.0\" x2=\"37.2\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"41.2\" y1=\"6.0\" x2=\"45.2\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"336.0\" y=\"132.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"50.2\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"41.2,47.9 41.7,47.9 42.2,47.9 42.7,47.9 43.2,48.0 43.7,48.0 44.2,48.1 44.7,48.1 45.2,48.2 45.7,48.3 46.2,48.4 46.7,48.5 47.2,48.7 47.7,48.8 48.2,48.9 48.7,49.1 49.2,49.3 49.7,49.5 50.2,49.6 50.7,49.8 51.2,50.1 51.7,50.3 52.2,50.5 52.7,50.8 53.2,51.0 53.7,51.3 54.2,51.6 54.7,51.8 55.2,52.1 55.7,52.4 56.2,52.8 56.7,53.1 57.2,53.4 57.7,53.8 58.2,54.1 58.7,54.5 59.3,54.9 59.8,55.3 60.3,55.7 60.8,56.1 61.3,56.5 61.8,56.9 62.3,57.3 62.8,57.8 63.3,58.2 63.8,58.7 64.3,59.2 64.8,59.7 65.3,60.2 65.8,60.7 66.3,61.2 66.8,61.7 67.3,62.2 67.8,62.8 68.3,63.3 68.8,63.8 69.3,64.4 69.8,65.0 70.3,65.6 70.8,66.1 71.3,66.7 71.8,67.3 72.3,68.0 72.8,68.6 73.3,69.2 73.8,69.8 74.3,70.5 74.8,71.1 75.3,71.8 75.8,72.4 76.3,73.1 76.8,73.8 77.3,74.5 77.8,75.2 78.3,75.9 78.8,76.6 79.3,77.3 79.8,78.0 80.3,78.7 80.8,79.5 81.3,80.2 81.8,80.9 82.3,81.7 82.8,82.4 83.3,83.2 83.8,84.0 84.3,84.7 84.8,85.5 85.3,86.3 85.8,87.1 86.3,87.9 86.8,88.6 87.3,89.4 87.8,90.2 88.3,91.1 88.8,91.9 89.3,92.7 89.8,93.5 90.3,94.3 90.8,95.2 91.3,96.0 91.8,96.8 92.3,97.7 92.8,98.5 93.3,99.3 93.8,100.2 94.3,101.0 94.8,101.9 95.3,102.7 95.8,103.6 96.3,104.5 96.8,105.3 97.3,106.2 97.8,107.0 98.3,107.9 98.8,108.8 99.4,109.6 99.9,110.5 100.4,111.4 100.9,112.3 101.4,113.1 101.9,114.0 102.4,114.9 102.9,115.8 103.4,116.6 103.9,117.5 104.4,118.4 104.9,119.2 105.4,120.1 105.9,121.0 106.4,121.9 106.9,122.7 107.4,123.6 107.9,124.5 108.4,125.4 108.9,126.2 109.4,127.1 109.9,128.0 110.4,128.8 110.9,129.7 111.4,130.5 111.9,131.4 112.4,132.3 112.9,133.1 113.4,134.0 113.9,134.8 114.4,135.7 114.9,136.5 115.4,137.3 115.9,138.2 116.4,139.0 116.9,139.8 117.4,140.7 117.9,141.5 118.4,142.3 118.9,143.1 119.4,143.9 119.9,144.8 120.4,145.6 120.9,146.4 121.4,147.1 121.9,147.9 122.4,148.7 122.9,149.5 123.4,150.3 123.9,151.0 124.4,151.8 124.9,152.6 125.4,153.3 125.9,154.1 126.4,154.8 126.9,155.5 127.4,156.3 127.9,157.0 128.4,157.7 128.9,158.4 129.4,159.1 129.9,159.8 130.4,160.5 130.9,161.2 131.4,161.9 131.9,162.6 132.4,163.2 132.9,163.9 133.4,164.5 133.9,165.2 134.4,165.8 134.9,166.4 135.4,167.0 135.9,167.7 136.4,168.3 136.9,168.9 137.4,169.4 137.9,170.0 138.4,170.6 138.9,171.2 139.5,171.7 140.0,172.2 140.5,172.8 141.0,173.3 141.5,173.8 142.0,174.3 142.5,174.8 143.0,175.3 143.5,175.8 144.0,176.3 144.5,176.8 145.0,177.2 145.5,177.7 146.0,178.1 146.5,178.5 147.0,178.9 147.5,179.3 148.0,179.7 148.5,180.1 149.0,180.5 149.5,180.9 150.0,181.2 150.5,181.6 151.0,181.9 151.5,182.2 152.0,182.6 152.5,182.9 153.0,183.2 153.5,183.4 154.0,183.7 154.5,184.0 155.0,184.2 155.5,184.5 156.0,184.7 156.5,184.9 157.0,185.2 157.5,185.4 158.0,185.5 158.5,185.7 159.0,185.9 159.5,186.1 160.0,186.2 160.5,186.3 161.0,186.5 161.5,186.6 162.0,186.7 162.5,186.8 163.0,186.9 163.5,186.9 164.0,187.0 164.5,187.0 165.0,187.1 165.5,187.1 166.0,187.1 166.5,187.1 167.0,187.1 167.5,187.1 168.0,187.1 168.5,187.0 169.0,187.0 169.5,186.9 170.0,186.9 170.5,186.8 171.0,186.7 171.5,186.6 172.0,186.5 172.5,186.3 173.0,186.2 173.5,186.1 174.0,185.9 174.5,185.7 175.0,185.5 175.5,185.4 176.0,185.2 176.5,184.9 177.0,184.7 177.5,184.5 178.0,184.2 178.5,184.0 179.1,183.7 179.6,183.4 180.1,183.2 180.6,182.9 181.1,182.6 181.6,182.2 182.1,181.9 182.6,181.6 183.1,181.2 183.6,180.9 184.1,180.5 184.6,180.1 185.1,179.7 185.6,179.3 186.1,178.9 186.6,178.5 187.1,178.1 187.6,177.7 188.1,177.2 188.6,176.8 189.1,176.3 189.6,175.8 190.1,175.3 190.6,174.8 191.1,174.3 191.6,173.8 192.1,173.3 192.6,172.8 193.1,172.2 193.6,171.7 194.1,171.2 194.6,170.6 195.1,170.0 195.6,169.4 196.1,168.9 196.6,168.3 197.1,167.7 197.6,167.0 198.1,166.4 198.6,165.8 199.1,165.2 199.6,164.5 200.1,163.9 200.6,163.2 201.1,162.6 201.6,161.9 202.1,161.2 202.6,160.5 203.1,159.8 203.6,159.1 204.1,158.4 204.6,157.7 205.1,157.0 205.6,156.3 206.1,155.5 206.6,154.8 207.1,154.1 207.6,153.3 208.1,152.6 208.6,151.8 209.1,151.0 209.6,150.3 210.1,149.5 210.6,148.7 211.1,147.9 211.6,147.1 212.1,146.4 212.6,145.6 213.1,144.8 213.6,143.9 214.1,143.1 214.6,142.3 215.1,141.5 215.6,140.7 216.1,139.8 216.6,139.0 217.1,138.2 217.6,137.3 218.1,136.5 218.6,135.7 219.2,134.8 219.7,134.0 220.2,133.1 220.7,132.3 221.2,131.4 221.7,130.5 222.2,129.7 222.7,128.8 223.2,128.0 223.7,127.1 224.2,126.2 224.7,125.4 225.2,124.5 225.7,123.6 226.2,122.7 226.7,121.9 227.2,121.0 227.7,120.1 228.2,119.2 228.7,118.4 229.2,117.5 229.7,116.6 230.2,115.8 230.7,114.9 231.2,114.0 231.7,113.1 232.2,112.3 232.7,111.4 233.2,110.5 233.7,109.6 234.2,108.8 234.7,107.9 235.2,107.0 235.7,106.2 236.2,105.3 236.7,104.5 237.2,103.6 237.7,102.7 238.2,101.9 238.7,101.0 239.2,100.2 239.7,99.3 240.2,98.5 240.7,97.7 241.2,96.8 241.7,96.0 242.2,95.2 242.7,94.3 243.2,93.5 243.7,92.7 244.2,91.9 244.7,91.1 245.2,90.2 245.7,89.4 246.2,88.6 246.7,87.9 247.2,87.1 247.7,86.3 248.2,85.5 248.7,84.7 249.2,84.0 249.7,83.2 250.2,82.4 250.7,81.7 251.2,80.9 251.7,80.2 252.2,79.5 252.7,78.7 253.2,78.0 253.7,77.3 254.2,76.6 254.7,75.9 255.2,75.2 255.7,74.5 256.2,73.8 256.7,73.1 257.2,72.4 257.7,71.8 258.2,71.1 258.8,70.5 259.3,69.8 259.8,69.2 260.3,68.6 260.8,68.0 261.3,67.3 261.8,66.7 262.3,66.1 262.8,65.6 263.3,65.0 263.8,64.4 264.3,63.8 264.8,63.3 265.3,62.8 265.8,62.2 266.3,61.7 266.8,61.2 267.3,60.7 267.8,60.2 268.3,59.7 268.8,59.2 269.3,58.7 269.8,58.2 270.3,57.8 270.8,57.3 271.3,56.9 271.8,56.5 272.3,56.1 272.8,55.7 273.3,55.3 273.8,54.9 274.3,54.5 274.8,54.1 275.3,53.8 275.8,53.4 276.3,53.1 276.8,52.8 277.3,52.4 277.8,52.1 278.3,51.8 278.8,51.6 279.3,51.3 279.8,51.0 280.3,50.8 280.8,50.5 281.3,50.3 281.8,50.1 282.3,49.8 282.8,49.6 283.3,49.5 283.8,49.3 284.3,49.1 284.8,48.9 285.3,48.8 285.8,48.7 286.3,48.5 286.8,48.4 287.3,48.3 287.8,48.2 288.3,48.1 288.8,48.1 289.3,48.0 289.8,48.0 290.3,47.9 290.8,47.9 291.3,47.9 291.8,47.9\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"83.0\" y1=\"114.5\" x2=\"83.0\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><line x1=\"124.7\" y1=\"114.5\" x2=\"124.7\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.7\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120°</text><line x1=\"166.5\" y1=\"114.5\" x2=\"166.5\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"166.5\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180°</text><line x1=\"208.3\" y1=\"114.5\" x2=\"208.3\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"208.3\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">240°</text><line x1=\"250.1\" y1=\"114.5\" x2=\"250.1\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"250.1\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300°</text><line x1=\"291.8\" y1=\"114.5\" x2=\"291.8\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"291.8\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">360°</text><line x1=\"38.2\" y1=\"47.9\" x2=\"44.2\" y2=\"47.9\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"34.2\" y=\"51.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"38.2\" y1=\"187.1\" x2=\"44.2\" y2=\"187.1\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"34.2\" y=\"191.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"41.2\" y1=\"82.7\" x2=\"291.8\" y2=\"82.7\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"83.0\" y1=\"82.7\" x2=\"83.0\" y2=\"117.5\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"250.1\" y1=\"82.7\" x2=\"250.1\" y2=\"117.5\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"83.0\" cy=\"82.7\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"250.1\" cy=\"82.7\" r=\"5\" fill=\"#dc2626\"/><text x=\"166.5\" y=\"73.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cos x = 0.5</text><text x=\"79.0\" y=\"73.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"254.1\" y=\"73.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300°</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: A uses \\(\\cos^{-1}\\) of \\(\\dfrac{\\sqrt{3}}{2}\\); B uses the 2nd quadrant (where cosine is negative); D is the solution of \\(\\cos x=-\\dfrac{1}{2}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(2\\cos x-1=0\\)",
+              "note": "\\(\\cos x=\\dfrac{1}{2}\\): quadrants 1 and 4."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q30b",
+          "type": "mc",
+          "stem": "Solve for \\(0^{\\circ}\\leq x\\leq360^{\\circ}\\): \\(\\sin^{2}x+\\sin x=0\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(0^{\\circ},\\ 180^{\\circ},\\ 360^{\\circ}\\)",
+            "\\(180^{\\circ},\\ 270^{\\circ}\\)",
+            "\\(0^{\\circ},\\ 90^{\\circ},\\ 180^{\\circ},\\ 360^{\\circ}\\)",
+            "\\(0^{\\circ},\\ 180^{\\circ},\\ 270^{\\circ},\\ 360^{\\circ}\\)"
+          ],
+          "answer": 3,
+          "hint": "Do NOT divide by \\(\\sin x\\) (you would lose solutions). FACTORISE: take out the common factor \\(\\sin x\\), then solve each factor \\(=0\\) separately. Include the end values \\(0^{\\circ}\\) and \\(360^{\\circ}\\).",
+          "steps": [
+            {
+              "explain": "Factorise by taking out the common factor \\(\\sin x\\).",
+              "work": "\\(\\sin x(\\sin x+1)=0\\)"
+            },
+            {
+              "explain": "A product is zero when one of the factors is zero: two equations.",
+              "work": "\\(\\sin x=0\\qquad\\text{or}\\qquad\\sin x+1=0\\)"
+            },
+            {
+              "explain": "\\(\\sin x=0\\): sine is zero at the start, the half-turn and the full turn.",
+              "work": "\\(x=0^{\\circ},\\ 180^{\\circ},\\ 360^{\\circ}\\)"
+            },
+            {
+              "explain": "\\(\\sin x+1=0\\Rightarrow\\sin x=-1\\): sine reaches its minimum value \\(-1\\) only once (at the bottom of the wave).",
+              "work": "\\(x=270^{\\circ}\\)"
+            },
+            {
+              "explain": "Combine all the solutions in order.",
+              "work": "\\(x=0^{\\circ},\\ 180^{\\circ},\\ 270^{\\circ},\\ 360^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"139.2\" x2=\"334.0\" y2=\"139.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"41.2\" y1=\"229.0\" x2=\"41.2\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"139.2\" x2=\"327.1\" y2=\"135.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"139.2\" x2=\"327.1\" y2=\"143.2\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"41.2\" y1=\"6.0\" x2=\"37.2\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"41.2\" y1=\"6.0\" x2=\"45.2\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"336.0\" y=\"154.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"50.2\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"41.2,139.2 41.7,138.6 42.2,138.0 42.7,137.3 43.2,136.6 43.7,136.0 44.2,135.3 44.7,134.6 45.2,133.9 45.7,133.1 46.2,132.4 46.7,131.6 47.2,130.9 47.7,130.1 48.2,129.3 48.7,128.5 49.2,127.6 49.7,126.8 50.2,126.0 50.7,125.1 51.2,124.2 51.7,123.3 52.2,122.4 52.7,121.5 53.2,120.6 53.7,119.7 54.2,118.8 54.7,117.8 55.2,116.9 55.7,115.9 56.2,114.9 56.7,113.9 57.2,112.9 57.7,111.9 58.2,110.9 58.7,109.9 59.3,108.9 59.8,107.9 60.3,106.9 60.8,105.8 61.3,104.8 61.8,103.7 62.3,102.7 62.8,101.6 63.3,100.6 63.8,99.5 64.3,98.5 64.8,97.4 65.3,96.3 65.8,95.3 66.3,94.2 66.8,93.1 67.3,92.1 67.8,91.0 68.3,89.9 68.8,88.9 69.3,87.8 69.8,86.8 70.3,85.7 70.8,84.7 71.3,83.6 71.8,82.6 72.3,81.5 72.8,80.5 73.3,79.5 73.8,78.4 74.3,77.4 74.8,76.4 75.3,75.4 75.8,74.4 76.3,73.4 76.8,72.5 77.3,71.5 77.8,70.5 78.3,69.6 78.8,68.6 79.3,67.7 79.8,66.8 80.3,65.9 80.8,65.0 81.3,64.1 81.8,63.3 82.3,62.4 82.8,61.6 83.3,60.7 83.8,59.9 84.3,59.1 84.8,58.4 85.3,57.6 85.8,56.8 86.3,56.1 86.8,55.4 87.3,54.7 87.8,54.0 88.3,53.3 88.8,52.7 89.3,52.1 89.8,51.5 90.3,50.9 90.8,50.3 91.3,49.7 91.8,49.2 92.3,48.7 92.8,48.2 93.3,47.7 93.8,47.3 94.3,46.8 94.8,46.4 95.3,46.0 95.8,45.7 96.3,45.3 96.8,45.0 97.3,44.7 97.8,44.4 98.3,44.2 98.8,43.9 99.4,43.7 99.9,43.5 100.4,43.3 100.9,43.2 101.4,43.1 101.9,43.0 102.4,42.9 102.9,42.8 103.4,42.8 103.9,42.8 104.4,42.8 104.9,42.8 105.4,42.9 105.9,43.0 106.4,43.1 106.9,43.2 107.4,43.3 107.9,43.5 108.4,43.7 108.9,43.9 109.4,44.2 109.9,44.4 110.4,44.7 110.9,45.0 111.4,45.3 111.9,45.7 112.4,46.0 112.9,46.4 113.4,46.8 113.9,47.3 114.4,47.7 114.9,48.2 115.4,48.7 115.9,49.2 116.4,49.7 116.9,50.3 117.4,50.9 117.9,51.5 118.4,52.1 118.9,52.7 119.4,53.3 119.9,54.0 120.4,54.7 120.9,55.4 121.4,56.1 121.9,56.8 122.4,57.6 122.9,58.4 123.4,59.1 123.9,59.9 124.4,60.7 124.9,61.6 125.4,62.4 125.9,63.3 126.4,64.1 126.9,65.0 127.4,65.9 127.9,66.8 128.4,67.7 128.9,68.6 129.4,69.6 129.9,70.5 130.4,71.5 130.9,72.5 131.4,73.4 131.9,74.4 132.4,75.4 132.9,76.4 133.4,77.4 133.9,78.4 134.4,79.5 134.9,80.5 135.4,81.5 135.9,82.6 136.4,83.6 136.9,84.7 137.4,85.7 137.9,86.8 138.4,87.8 138.9,88.9 139.5,89.9 140.0,91.0 140.5,92.1 141.0,93.1 141.5,94.2 142.0,95.3 142.5,96.3 143.0,97.4 143.5,98.5 144.0,99.5 144.5,100.6 145.0,101.6 145.5,102.7 146.0,103.7 146.5,104.8 147.0,105.8 147.5,106.9 148.0,107.9 148.5,108.9 149.0,109.9 149.5,110.9 150.0,111.9 150.5,112.9 151.0,113.9 151.5,114.9 152.0,115.9 152.5,116.9 153.0,117.8 153.5,118.8 154.0,119.7 154.5,120.6 155.0,121.5 155.5,122.4 156.0,123.3 156.5,124.2 157.0,125.1 157.5,126.0 158.0,126.8 158.5,127.6 159.0,128.5 159.5,129.3 160.0,130.1 160.5,130.9 161.0,131.6 161.5,132.4 162.0,133.1 162.5,133.9 163.0,134.6 163.5,135.3 164.0,136.0 164.5,136.6 165.0,137.3 165.5,138.0 166.0,138.6 166.5,139.2 167.0,139.8 167.5,140.4 168.0,140.9 168.5,141.5 169.0,142.0 169.5,142.5 170.0,143.1 170.5,143.5 171.0,144.0 171.5,144.5 172.0,144.9 172.5,145.3 173.0,145.8 173.5,146.2 174.0,146.5 174.5,146.9 175.0,147.2 175.5,147.6 176.0,147.9 176.5,148.2 177.0,148.5 177.5,148.8 178.0,149.0 178.5,149.3 179.1,149.5 179.6,149.7 180.1,149.9 180.6,150.1 181.1,150.2 181.6,150.4 182.1,150.5 182.6,150.7 183.1,150.8 183.6,150.9 184.1,151.0 184.6,151.1 185.1,151.1 185.6,151.2 186.1,151.2 186.6,151.2 187.1,151.2 187.6,151.2 188.1,151.2 188.6,151.2 189.1,151.2 189.6,151.1 190.1,151.1 190.6,151.0 191.1,151.0 191.6,150.9 192.1,150.8 192.6,150.7 193.1,150.6 193.6,150.5 194.1,150.3 194.6,150.2 195.1,150.1 195.6,149.9 196.1,149.8 196.6,149.6 197.1,149.4 197.6,149.3 198.1,149.1 198.6,148.9 199.1,148.7 199.6,148.5 200.1,148.3 200.6,148.1 201.1,147.9 201.6,147.7 202.1,147.5 202.6,147.3 203.1,147.1 203.6,146.9 204.1,146.6 204.6,146.4 205.1,146.2 205.6,146.0 206.1,145.8 206.6,145.5 207.1,145.3 207.6,145.1 208.1,144.9 208.6,144.6 209.1,144.4 209.6,144.2 210.1,144.0 210.6,143.8 211.1,143.6 211.6,143.3 212.1,143.1 212.6,142.9 213.1,142.7 213.6,142.5 214.1,142.3 214.6,142.2 215.1,142.0 215.6,141.8 216.1,141.6 216.6,141.4 217.1,141.3 217.6,141.1 218.1,141.0 218.6,140.8 219.2,140.7 219.7,140.5 220.2,140.4 220.7,140.3 221.2,140.1 221.7,140.0 222.2,139.9 222.7,139.8 223.2,139.7 223.7,139.6 224.2,139.6 224.7,139.5 225.2,139.4 225.7,139.4 226.2,139.3 226.7,139.3 227.2,139.3 227.7,139.2 228.2,139.2 228.7,139.2 229.2,139.2 229.7,139.2 230.2,139.2 230.7,139.2 231.2,139.3 231.7,139.3 232.2,139.3 232.7,139.4 233.2,139.4 233.7,139.5 234.2,139.6 234.7,139.6 235.2,139.7 235.7,139.8 236.2,139.9 236.7,140.0 237.2,140.1 237.7,140.3 238.2,140.4 238.7,140.5 239.2,140.7 239.7,140.8 240.2,141.0 240.7,141.1 241.2,141.3 241.7,141.4 242.2,141.6 242.7,141.8 243.2,142.0 243.7,142.2 244.2,142.3 244.7,142.5 245.2,142.7 245.7,142.9 246.2,143.1 246.7,143.3 247.2,143.6 247.7,143.8 248.2,144.0 248.7,144.2 249.2,144.4 249.7,144.6 250.2,144.9 250.7,145.1 251.2,145.3 251.7,145.5 252.2,145.8 252.7,146.0 253.2,146.2 253.7,146.4 254.2,146.6 254.7,146.9 255.2,147.1 255.7,147.3 256.2,147.5 256.7,147.7 257.2,147.9 257.7,148.1 258.2,148.3 258.8,148.5 259.3,148.7 259.8,148.9 260.3,149.1 260.8,149.3 261.3,149.4 261.8,149.6 262.3,149.8 262.8,149.9 263.3,150.1 263.8,150.2 264.3,150.3 264.8,150.5 265.3,150.6 265.8,150.7 266.3,150.8 266.8,150.9 267.3,151.0 267.8,151.0 268.3,151.1 268.8,151.1 269.3,151.2 269.8,151.2 270.3,151.2 270.8,151.2 271.3,151.2 271.8,151.2 272.3,151.2 272.8,151.2 273.3,151.1 273.8,151.1 274.3,151.0 274.8,150.9 275.3,150.8 275.8,150.7 276.3,150.5 276.8,150.4 277.3,150.2 277.8,150.1 278.3,149.9 278.8,149.7 279.3,149.5 279.8,149.3 280.3,149.0 280.8,148.8 281.3,148.5 281.8,148.2 282.3,147.9 282.8,147.6 283.3,147.2 283.8,146.9 284.3,146.5 284.8,146.2 285.3,145.8 285.8,145.3 286.3,144.9 286.8,144.5 287.3,144.0 287.8,143.5 288.3,143.1 288.8,142.5 289.3,142.0 289.8,141.5 290.3,140.9 290.8,140.4 291.3,139.8 291.8,139.2\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"38.2\" y1=\"91.0\" x2=\"44.2\" y2=\"91.0\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"34.2\" y=\"95.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"38.2\" y1=\"187.4\" x2=\"44.2\" y2=\"187.4\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"34.2\" y=\"191.4\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"83.0\" y1=\"161.2\" x2=\"83.0\" y2=\"166.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"83.0\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><line x1=\"124.7\" y1=\"161.2\" x2=\"124.7\" y2=\"166.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"124.7\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120°</text><line x1=\"166.5\" y1=\"161.2\" x2=\"166.5\" y2=\"166.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"166.5\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180°</text><line x1=\"208.3\" y1=\"161.2\" x2=\"208.3\" y2=\"166.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"208.3\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">240°</text><line x1=\"250.1\" y1=\"161.2\" x2=\"250.1\" y2=\"166.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"250.1\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">300°</text><line x1=\"291.8\" y1=\"161.2\" x2=\"291.8\" y2=\"166.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"291.8\" y=\"177.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">360°</text><circle cx=\"41.2\" cy=\"139.2\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"166.5\" cy=\"139.2\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"291.8\" cy=\"139.2\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"229.2\" cy=\"139.2\" r=\"5\" fill=\"#dc2626\"/><text x=\"229.2\" y=\"127.2\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">270°</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: A misses \\(270^{\\circ}\\); B only gives the solutions of one part; C has \\(90^{\\circ}\\) (there \\(\\sin x=1\\), and \\(1+1\\ne0\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">D</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(\\sin^{2}x+\\sin x=0\\)",
+              "note": "Factorise \\(\\sin x(\\sin x+1)=0\\); do not divide by \\(\\sin x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -28302,6 +28888,133 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "kambala2020p-q11b",
+          "type": "mc",
+          "stem": "ABC is a triangle in which \\(AB=5\\) cm, \\(BC=8\\) cm and \\(\\angle ABC=60^{\\circ}\\). Find in simplest exact form the area of \\(\\Delta ABC\\)",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"40,175 248,175 105.0,62.4\" fill=\"#f8fafc\" stroke=\"none\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"105.0\" y2=\"62.4\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"248.0\" y2=\"175.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"62.4\" x2=\"248.0\" y2=\"175.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 74 175 A 34 34 0 0 0 57.0 145.6\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"90.2\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"46.5\" y=\"116.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 cm</text><text x=\"144.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"107.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"257.0\" y=\"180.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"262.0\" y=\"70.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"262.0\" y=\"86.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(20\\sqrt{3}\\) cm\\(^{2}\\)",
+            "\\(10\\sqrt{3}\\) cm\\(^{2}\\)",
+            "\\(10\\) cm\\(^{2}\\)",
+            "\\(20\\) cm\\(^{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Area formula with two sides and the ANGLE BETWEEN them: \\(A=\\dfrac{1}{2}ab\\sin C\\). Keep \\(\\sin60^{\\circ}=\\dfrac{\\sqrt{3}}{2}\\) exact (do not use the calculator decimal).",
+          "steps": [
+            {
+              "explain": "The two known sides are \\(AB=5\\) and \\(BC=8\\) with the included angle \\(60^{\\circ}\\).",
+              "work": "\\(A=\\dfrac{1}{2}ab\\sin C=\\dfrac{1}{2}(5)(8)\\sin60^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"40,175 248,175 105.0,62.4\" fill=\"#f8fafc\" stroke=\"none\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"105.0\" y2=\"62.4\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"248.0\" y2=\"175.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"62.4\" x2=\"248.0\" y2=\"175.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 74 175 A 34 34 0 0 0 57.0 145.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/><text x=\"90.2\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"46.5\" y=\"116.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 cm</text><text x=\"144.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"107.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"257.0\" y=\"180.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><line x1=\"105.0\" y1=\"62.4\" x2=\"105.0\" y2=\"175.0\" stroke=\"#7c3aed\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><text x=\"113.0\" y=\"122.7\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">h = 5 sin 60°</text><path d=\"M 95.0 175 L 95.0 165 L 105.0 165\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.4\"/></svg>"
+              }
+            },
+            {
+              "explain": "Multiply \\(\\dfrac{1}{2}\\times5\\times8=20\\).",
+              "work": "\\(A=20\\sin60^{\\circ}\\)"
+            },
+            {
+              "explain": "Exact value: \\(\\sin60^{\\circ}=\\dfrac{\\sqrt{3}}{2}\\).",
+              "work": "\\(A=20\\times\\dfrac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Cancel: \\(20\\div2=10\\).",
+              "work": "\\(A=10\\sqrt{3}\\ \\text{cm}^{2}\\)"
+            },
+            {
+              "explain": "Check: \\(10\\sqrt{3}\\approx17.3\\); and base \\(8\\) \\(\\times\\) height \\(5\\sin60^{\\circ}=4.33\\) \\(\\times\\dfrac{1}{2}=17.3\\) ✓. Why not the others: A forgets the \\(\\dfrac{1}{2}\\); C and D use \\(\\sin60^{\\circ}=\\dfrac{1}{2}\\) or drop it.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find in simplest exact form the area of \\(\\Delta ABC\\)",
+              "note": "Area \\(=\\dfrac{1}{2}ab\\sin C\\) with \\(\\sin60^{\\circ}=\\dfrac{\\sqrt{3}}{2}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q18",
+          "type": "mc",
+          "stem": "The diagram shows an obtuse triangle with side lengths \\(6.2\\) cm and \\(9.8\\) cm, and angles \\(24^{\\circ}\\) and \\(\\theta\\), where \\(\\theta\\) is the largest angle. Find the value of \\(\\theta\\) to the nearest degree.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 205\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"40,22 105,160 335,112\" fill=\"#f8fafc\" stroke=\"none\"/><line x1=\"40.0\" y1=\"22.0\" x2=\"105.0\" y2=\"160.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"22.0\" x2=\"335.0\" y2=\"112.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"160.0\" x2=\"335.0\" y2=\"112.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 94.8 138.3 A 24 24 0 0 1 128.5 155.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"119.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><path d=\"M 275.7 93.9 A 62 62 0 0 0 274.3 124.7\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"253.1\" y=\"112.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24°</text><text x=\"58.0\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2 cm</text><text x=\"190.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9.8 cm</text><text x=\"310.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"310.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(40^{\\circ}\\)",
+            "\\(116^{\\circ}\\)",
+            "\\(140^{\\circ}\\)",
+            "\\(156^{\\circ}\\)"
+          ],
+          "answer": 2,
+          "hint": "You know a side and its OPPOSITE angle (\\(6.2\\) opposite \\(24^{\\circ}\\)) and another side (\\(9.8\\)) opposite \\(\\theta\\): use the SINE RULE. Because \\(\\sin\\) is positive in two quadrants, the calculator gives only the ACUTE angle: use 'obtuse' to choose \\(180^{\\circ}-\\)(calculator angle).",
+          "steps": [
+            {
+              "explain": "Match each side with the angle across from it: \\(6.2\\) cm is opposite \\(24^{\\circ}\\); \\(9.8\\) cm is opposite \\(\\theta\\).",
+              "work": "\\(\\dfrac{\\sin\\theta}{9.8}=\\dfrac{\\sin24^{\\circ}}{6.2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 205\" width=\"100%\" height=\"auto\" style=\"max-width:380px;display:block;margin:0 auto\"><polygon points=\"40,22 105,160 335,112\" fill=\"#f8fafc\" stroke=\"none\"/><line x1=\"40.0\" y1=\"22.0\" x2=\"105.0\" y2=\"160.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"22.0\" x2=\"335.0\" y2=\"112.0\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"160.0\" x2=\"335.0\" y2=\"112.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 94.8 138.3 A 24 24 0 0 1 128.5 155.1\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"119.0\" y=\"131.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><path d=\"M 275.7 93.9 A 62 62 0 0 0 274.3 124.7\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/><text x=\"253.1\" y=\"112.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">24°</text><text x=\"58.0\" y=\"102.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2 cm</text><text x=\"190.0\" y=\"50.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9.8 cm</text><text x=\"300.0\" y=\"170.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6.2 is opposite 24°</text><text x=\"300.0\" y=\"188.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9.8 is opposite θ</text></svg>"
+              }
+            },
+            {
+              "explain": "Sine rule: \\(\\dfrac{\\sin A}{a}=\\dfrac{\\sin B}{b}\\). Put the unknown angle on the TOP so that you can multiply to solve.",
+              "work": "\\(\\dfrac{\\sin\\theta}{9.8}=\\dfrac{\\sin24^{\\circ}}{6.2}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(9.8\\).",
+              "work": "\\(\\sin\\theta=9.8\\times\\dfrac{\\sin24^{\\circ}}{6.2}\\approx0.6429\\)"
+            },
+            {
+              "explain": "Inverse sine on the calculator gives the ACUTE angle.",
+              "work": "\\(\\sin^{-1}(0.6429)\\approx40^{\\circ}\\)"
+            },
+            {
+              "explain": "But \\(\\sin\\theta=0.6429\\) has TWO angles between \\(0^{\\circ}\\) and \\(180^{\\circ}\\): \\(40^{\\circ}\\) and \\(180^{\\circ}-40^{\\circ}=140^{\\circ}\\). The triangle is OBTUSE and \\(\\theta\\) is the largest angle, so \\(\\theta\\) is the obtuse one.",
+              "work": "\\(\\theta=180^{\\circ}-40^{\\circ}=140^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"176.3\" x2=\"334.0\" y2=\"176.3\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"37.7\" y1=\"224.0\" x2=\"37.7\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"176.3\" x2=\"327.1\" y2=\"172.3\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"176.3\" x2=\"327.1\" y2=\"180.3\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"37.7\" y1=\"6.0\" x2=\"33.7\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"37.7\" y1=\"6.0\" x2=\"41.7\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"336.0\" y=\"191.3\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"46.7\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"37.7,176.3 38.2,175.6 38.7,174.8 39.2,174.0 39.7,173.3 40.2,172.5 40.7,171.7 41.2,170.9 41.7,170.2 42.2,169.4 42.7,168.6 43.2,167.9 43.7,167.1 44.2,166.3 44.7,165.6 45.2,164.8 45.7,164.0 46.2,163.3 46.7,162.5 47.2,161.7 47.7,161.0 48.3,160.2 48.8,159.4 49.3,158.7 49.8,157.9 50.3,157.1 50.8,156.4 51.3,155.6 51.8,154.9 52.3,154.1 52.8,153.3 53.3,152.6 53.8,151.8 54.3,151.1 54.8,150.3 55.3,149.6 55.8,148.8 56.3,148.1 56.8,147.3 57.3,146.6 57.8,145.8 58.3,145.1 58.8,144.3 59.3,143.6 59.8,142.9 60.3,142.1 60.8,141.4 61.3,140.6 61.8,139.9 62.3,139.2 62.8,138.4 63.3,137.7 63.8,137.0 64.3,136.2 64.8,135.5 65.3,134.8 65.8,134.1 66.3,133.3 66.8,132.6 67.3,131.9 67.8,131.2 68.3,130.5 68.8,129.7 69.3,129.0 69.8,128.3 70.3,127.6 70.8,126.9 71.3,126.2 71.8,125.5 72.3,124.8 72.8,124.1 73.3,123.4 73.8,122.7 74.3,122.0 74.8,121.3 75.3,120.6 75.8,120.0 76.3,119.3 76.8,118.6 77.3,117.9 77.8,117.2 78.3,116.6 78.8,115.9 79.3,115.2 79.8,114.6 80.3,113.9 80.8,113.2 81.3,112.6 81.8,111.9 82.3,111.3 82.8,110.6 83.3,110.0 83.8,109.3 84.3,108.7 84.8,108.0 85.3,107.4 85.8,106.7 86.3,106.1 86.8,105.5 87.3,104.9 87.8,104.2 88.4,103.6 88.9,103.0 89.4,102.4 89.9,101.8 90.4,101.2 90.9,100.5 91.4,99.9 91.9,99.3 92.4,98.7 92.9,98.1 93.4,97.6 93.9,97.0 94.4,96.4 94.9,95.8 95.4,95.2 95.9,94.6 96.4,94.1 96.9,93.5 97.4,92.9 97.9,92.4 98.4,91.8 98.9,91.2 99.4,90.7 99.9,90.1 100.4,89.6 100.9,89.1 101.4,88.5 101.9,88.0 102.4,87.4 102.9,86.9 103.4,86.4 103.9,85.9 104.4,85.3 104.9,84.8 105.4,84.3 105.9,83.8 106.4,83.3 106.9,82.8 107.4,82.3 107.9,81.8 108.4,81.3 108.9,80.8 109.4,80.4 109.9,79.9 110.4,79.4 110.9,78.9 111.4,78.5 111.9,78.0 112.4,77.5 112.9,77.1 113.4,76.6 113.9,76.2 114.4,75.8 114.9,75.3 115.4,74.9 115.9,74.4 116.4,74.0 116.9,73.6 117.4,73.2 117.9,72.8 118.4,72.4 118.9,71.9 119.4,71.5 119.9,71.1 120.4,70.7 120.9,70.4 121.4,70.0 121.9,69.6 122.4,69.2 122.9,68.8 123.4,68.5 123.9,68.1 124.4,67.7 124.9,67.4 125.4,67.0 125.9,66.7 126.4,66.3 126.9,66.0 127.4,65.7 128.0,65.3 128.5,65.0 129.0,64.7 129.5,64.4 130.0,64.1 130.5,63.8 131.0,63.5 131.5,63.2 132.0,62.9 132.5,62.6 133.0,62.3 133.5,62.0 134.0,61.7 134.5,61.4 135.0,61.2 135.5,60.9 136.0,60.7 136.5,60.4 137.0,60.2 137.5,59.9 138.0,59.7 138.5,59.4 139.0,59.2 139.5,59.0 140.0,58.8 140.5,58.5 141.0,58.3 141.5,58.1 142.0,57.9 142.5,57.7 143.0,57.5 143.5,57.3 144.0,57.1 144.5,57.0 145.0,56.8 145.5,56.6 146.0,56.5 146.5,56.3 147.0,56.1 147.5,56.0 148.0,55.8 148.5,55.7 149.0,55.6 149.5,55.4 150.0,55.3 150.5,55.2 151.0,55.1 151.5,54.9 152.0,54.8 152.5,54.7 153.0,54.6 153.5,54.5 154.0,54.5 154.5,54.4 155.0,54.3 155.5,54.2 156.0,54.1 156.5,54.1 157.0,54.0 157.5,54.0 158.0,53.9 158.5,53.9 159.0,53.8 159.5,53.8 160.0,53.8 160.5,53.7 161.0,53.7 161.5,53.7 162.0,53.7 162.5,53.7 163.0,53.7 163.5,53.7 164.0,53.7 164.5,53.7 165.0,53.7 165.5,53.7 166.0,53.8 166.5,53.8 167.0,53.8 167.5,53.9 168.1,53.9 168.6,54.0 169.1,54.0 169.6,54.1 170.1,54.1 170.6,54.2 171.1,54.3 171.6,54.4 172.1,54.5 172.6,54.5 173.1,54.6 173.6,54.7 174.1,54.8 174.6,54.9 175.1,55.1 175.6,55.2 176.1,55.3 176.6,55.4 177.1,55.6 177.6,55.7 178.1,55.8 178.6,56.0 179.1,56.1 179.6,56.3 180.1,56.5 180.6,56.6 181.1,56.8 181.6,57.0 182.1,57.1 182.6,57.3 183.1,57.5 183.6,57.7 184.1,57.9 184.6,58.1 185.1,58.3 185.6,58.5 186.1,58.8 186.6,59.0 187.1,59.2 187.6,59.4 188.1,59.7 188.6,59.9 189.1,60.2 189.6,60.4 190.1,60.7 190.6,60.9 191.1,61.2 191.6,61.4 192.1,61.7 192.6,62.0 193.1,62.3 193.6,62.6 194.1,62.9 194.6,63.2 195.1,63.5 195.6,63.8 196.1,64.1 196.6,64.4 197.1,64.7 197.6,65.0 198.1,65.3 198.6,65.7 199.1,66.0 199.6,66.3 200.1,66.7 200.6,67.0 201.1,67.4 201.6,67.7 202.1,68.1 202.6,68.5 203.1,68.8 203.6,69.2 204.1,69.6 204.6,70.0 205.1,70.4 205.6,70.7 206.1,71.1 206.6,71.5 207.1,71.9 207.6,72.4 208.2,72.8 208.7,73.2 209.2,73.6 209.7,74.0 210.2,74.4 210.7,74.9 211.2,75.3 211.7,75.8 212.2,76.2 212.7,76.6 213.2,77.1 213.7,77.5 214.2,78.0 214.7,78.5 215.2,78.9 215.7,79.4 216.2,79.9 216.7,80.4 217.2,80.8 217.7,81.3 218.2,81.8 218.7,82.3 219.2,82.8 219.7,83.3 220.2,83.8 220.7,84.3 221.2,84.8 221.7,85.3 222.2,85.9 222.7,86.4 223.2,86.9 223.7,87.4 224.2,88.0 224.7,88.5 225.2,89.1 225.7,89.6 226.2,90.1 226.7,90.7 227.2,91.2 227.7,91.8 228.2,92.4 228.7,92.9 229.2,93.5 229.7,94.1 230.2,94.6 230.7,95.2 231.2,95.8 231.7,96.4 232.2,97.0 232.7,97.6 233.2,98.1 233.7,98.7 234.2,99.3 234.7,99.9 235.2,100.5 235.7,101.2 236.2,101.8 236.7,102.4 237.2,103.0 237.7,103.6 238.2,104.2 238.7,104.9 239.2,105.5 239.7,106.1 240.2,106.7 240.7,107.4 241.2,108.0 241.7,108.7 242.2,109.3 242.7,110.0 243.2,110.6 243.7,111.3 244.2,111.9 244.7,112.6 245.2,113.2 245.7,113.9 246.2,114.6 246.7,115.2 247.2,115.9 247.8,116.6 248.3,117.2 248.8,117.9 249.3,118.6 249.8,119.3 250.3,120.0 250.8,120.6 251.3,121.3 251.8,122.0 252.3,122.7 252.8,123.4 253.3,124.1 253.8,124.8 254.3,125.5 254.8,126.2 255.3,126.9 255.8,127.6 256.3,128.3 256.8,129.0 257.3,129.7 257.8,130.5 258.3,131.2 258.8,131.9 259.3,132.6 259.8,133.3 260.3,134.1 260.8,134.8 261.3,135.5 261.8,136.2 262.3,137.0 262.8,137.7 263.3,138.4 263.8,139.2 264.3,139.9 264.8,140.6 265.3,141.4 265.8,142.1 266.3,142.9 266.8,143.6 267.3,144.3 267.8,145.1 268.3,145.8 268.8,146.6 269.3,147.3 269.8,148.1 270.3,148.8 270.8,149.6 271.3,150.3 271.8,151.1 272.3,151.8 272.8,152.6 273.3,153.3 273.8,154.1 274.3,154.9 274.8,155.6 275.3,156.4 275.8,157.1 276.3,157.9 276.8,158.7 277.3,159.4 277.8,160.2 278.3,161.0 278.8,161.7 279.3,162.5 279.8,163.3 280.3,164.0 280.8,164.8 281.3,165.6 281.8,166.3 282.3,167.1 282.8,167.9 283.3,168.6 283.8,169.4 284.3,170.2 284.8,170.9 285.3,171.7 285.8,172.5 286.3,173.3 286.8,174.0 287.3,174.8 287.9,175.6 288.4,176.3\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"37.7\" y1=\"173.3\" x2=\"37.7\" y2=\"179.3\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"37.7\" y=\"190.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0°</text><line x1=\"93.4\" y1=\"173.3\" x2=\"93.4\" y2=\"179.3\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"93.4\" y=\"190.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><line x1=\"163.0\" y1=\"173.3\" x2=\"163.0\" y2=\"179.3\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"163.0\" y=\"190.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">90°</text><line x1=\"232.7\" y1=\"173.3\" x2=\"232.7\" y2=\"179.3\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"232.7\" y=\"190.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">140°</text><line x1=\"288.4\" y1=\"173.3\" x2=\"288.4\" y2=\"179.3\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"288.4\" y=\"190.3\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">180°</text><line x1=\"34.7\" y1=\"53.7\" x2=\"40.7\" y2=\"53.7\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"30.7\" y=\"57.7\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"37.7\" y1=\"97.5\" x2=\"288.4\" y2=\"97.5\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"93.4\" y1=\"97.5\" x2=\"93.4\" y2=\"176.3\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"232.7\" y1=\"97.5\" x2=\"232.7\" y2=\"176.3\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"93.4\" cy=\"97.5\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"232.7\" cy=\"97.5\" r=\"5\" fill=\"#dc2626\"/><text x=\"163.0\" y=\"113.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin θ = 0.6429</text><text x=\"87.4\" y=\"87.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"238.7\" y=\"87.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">140°</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the angles add up: \\(24^{\\circ}+140^{\\circ}+16^{\\circ}=180^{\\circ}\\) (the third angle is \\(16^{\\circ}\\), smaller than \\(\\theta\\)) ✓. Why not the others: A is the calculator's acute angle (then the triangle would not be obtuse); B is \\(180-24-40\\); D is \\(180-24\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the value of \\(\\theta\\) to the nearest degree.",
+              "note": "Sine rule; \\(\\theta\\) obtuse \\(\\Rightarrow\\) \\(180^{\\circ}-\\sin^{-1}(\\ )\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -31302,6 +32015,130 @@
           "meta": {
             "source": "Hurlstone Agricultural High School 2020 Year 11 Task 3 Yearly Examination Mathematics Advanced",
             "school": "Hurlstone Agricultural High School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kambala2020p-q11a",
+          "type": "mc",
+          "stem": "ABC is a triangle in which \\(AB=5\\) cm, \\(BC=8\\) cm and \\(\\angle ABC=60^{\\circ}\\). Find the length of \\(AC\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"40,175 248,175 105.0,62.4\" fill=\"#f8fafc\" stroke=\"none\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"105.0\" y2=\"62.4\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"248.0\" y2=\"175.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"62.4\" x2=\"248.0\" y2=\"175.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 74 175 A 34 34 0 0 0 57.0 145.6\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"90.2\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"46.5\" y=\"116.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 cm</text><text x=\"144.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"107.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"257.0\" y=\"180.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"262.0\" y=\"70.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO</text><text x=\"262.0\" y=\"86.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">SCALE</text></svg>"
+          },
+          "options": [
+            "\\(7\\) cm",
+            "\\(\\sqrt{89}\\) cm",
+            "\\(49\\) cm",
+            "\\(\\sqrt{129}\\) cm"
+          ],
+          "answer": 0,
+          "hint": "Two sides (\\(5\\) and \\(8\\)) and the ANGLE BETWEEN THEM (\\(60^{\\circ}\\) at B) are known, and you want the side opposite that angle: use the COSINE RULE \\(c^{2}=a^{2}+b^{2}-2ab\\cos C\\).",
+          "steps": [
+            {
+              "explain": "The side we want (AC) is opposite angle B. The two sides around B are \\(AB=5\\) and \\(BC=8\\).",
+              "work": "\\(AC^{2}=AB^{2}+BC^{2}-2(AB)(BC)\\cos B\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 215\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><polygon points=\"40,175 248,175 105.0,62.4\" fill=\"#f8fafc\" stroke=\"none\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"105.0\" y2=\"62.4\" stroke=\"#d97706\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"175.0\" x2=\"248.0\" y2=\"175.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"62.4\" x2=\"248.0\" y2=\"175.0\" stroke=\"#dc2626\" stroke-width=\"3.6\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><path d=\"M 74 175 A 34 34 0 0 0 57.0 145.6\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.2\"/><text x=\"90.2\" y=\"150.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><text x=\"46.5\" y=\"116.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5 cm</text><text x=\"144.0\" y=\"194.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8 cm</text><text x=\"107.0\" y=\"53.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"32.0\" y=\"180.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"257.0\" y=\"180.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"188.0\" y=\"100.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">AC = ?</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the numbers.",
+              "work": "\\(AC^{2}=5^{2}+8^{2}-2(5)(8)\\cos60^{\\circ}\\)"
+            },
+            {
+              "explain": "Use the exact value \\(\\cos60^{\\circ}=\\dfrac{1}{2}\\): \\(2\\times5\\times8\\times\\dfrac{1}{2}=40\\).",
+              "work": "\\(AC^{2}=25+64-40\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(AC^{2}=49\\)"
+            },
+            {
+              "explain": "Take the positive square root (a length).",
+              "work": "\\(AC=\\sqrt{49}=7\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(\\sqrt{89}\\) forgets to subtract \\(2ab\\cos C\\) (\\(25+64=89\\)); \\(49\\) forgets the square root; \\(\\sqrt{129}\\) ADDS \\(2ab\\cos C\\) (\\(89+40\\)) instead of subtracting.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">A</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the length of \\(AC\\).",
+              "note": "Cosine rule: \\(c^{2}=a^{2}+b^{2}-2ab\\cos C\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q24b",
+          "type": "mc",
+          "stem": "Andrew swims \\(6\\) km from A to B on a bearing \\(N60^{\\circ}E\\). He then turns and cycles \\(9\\) km to C on a bearing \\(S40^{\\circ}E\\). He then runs from C to A. When at C, how far is he from its starting point? Give your answer correct to one decimal place.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 318\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"172.0\" x2=\"189.9\" y2=\"97.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"97.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"88.0\" y2=\"172.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"60.0\" y2=\"200.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"172.0\" x2=\"81.9\" y2=\"168.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"172.0\" x2=\"81.9\" y2=\"175.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"38.1\" y2=\"175.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"38.1\" y2=\"168.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"56.5\" y2=\"150.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"63.5\" y2=\"150.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"63.5\" y2=\"193.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"56.5\" y2=\"193.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"60.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"98.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"22.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"161.9\" y1=\"97.0\" x2=\"217.9\" y2=\"97.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"189.9\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.9\" y1=\"97.0\" x2=\"211.8\" y2=\"93.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.9\" y1=\"97.0\" x2=\"211.8\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"161.9\" y1=\"97.0\" x2=\"168.0\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"161.9\" y1=\"97.0\" x2=\"168.0\" y2=\"93.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"186.4\" y2=\"75.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"193.4\" y2=\"75.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"125.0\" x2=\"193.4\" y2=\"118.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"125.0\" x2=\"186.4\" y2=\"118.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"189.9\" y=\"64.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"189.9\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"227.9\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"151.9\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"296.9\" y1=\"257.9\" x2=\"352.9\" y2=\"257.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"324.9\" y2=\"285.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"352.9\" y1=\"257.9\" x2=\"346.8\" y2=\"254.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"352.9\" y1=\"257.9\" x2=\"346.8\" y2=\"261.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"296.9\" y1=\"257.9\" x2=\"303.0\" y2=\"261.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"296.9\" y1=\"257.9\" x2=\"303.0\" y2=\"254.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"321.4\" y2=\"235.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"328.4\" y2=\"235.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"285.9\" x2=\"328.4\" y2=\"279.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"285.9\" x2=\"321.4\" y2=\"279.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"324.9\" y=\"224.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"324.9\" y=\"299.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"362.9\" y=\"261.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"286.9\" y=\"261.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><path d=\"M 60.0 134.0 A 38 38 0 0 1 92.9 153.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"87.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><path d=\"M 189.9 135.0 A 38 38 0 0 0 214.3 126.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"211.9\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"46.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"177.9\" y=\"91.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"310.9\" y=\"274.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"151.0\" y=\"154.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 km</text><text x=\"287.4\" y=\"175.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9 km</text><text x=\"322.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "\\(9.9\\) km",
+            "\\(10.8\\) km",
+            "\\(11.7\\) km",
+            "\\(15.0\\) km"
+          ],
+          "answer": 2,
+          "hint": "Triangle ABC has two sides (\\(6\\) and \\(9\\)) and the angle BETWEEN them (\\(\\angle ABC=100^{\\circ}\\), from part (i)): use the COSINE RULE \\(c^{2}=a^{2}+b^{2}-2ab\\cos C\\). The angle is obtuse, so its cosine is NEGATIVE.",
+          "steps": [
+            {
+              "explain": "From part (i) \\(\\angle ABC=100^{\\circ}\\). The two sides around it are \\(AB=6\\) and \\(BC=9\\); the side opposite is \\(AC=x\\).",
+              "work": "\\(x^{2}=6^{2}+9^{2}-2\\times6\\times9\\times\\cos100^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"60.0,172.0 189.9,97.0 324.9,257.9\" fill=\"#eef2ff\" fill-opacity=\".7\" stroke=\"none\"/><line x1=\"60.0\" y1=\"172.0\" x2=\"189.9\" y2=\"97.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"97.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"172.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#dc2626\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-dasharray=\"7 4\"/><path d=\"M 160.5 114.0 A 34 34 0 0 0 211.8 123.0\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.6\"/><text x=\"190.9\" y=\"159.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">100°</text><text x=\"101.0\" y=\"120.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6</text><text x=\"281.4\" y=\"175.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9</text><text x=\"184.4\" y=\"236.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = AC</text><text x=\"54.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"179.9\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"332.9\" y=\"273.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"300.0\" y=\"40.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x² = 6² + 9² − 2·6·9·cos 100°</text></svg>"
+              }
+            },
+            {
+              "explain": "Work out each part: \\(6^{2}=36\\), \\(9^{2}=81\\), \\(2\\times6\\times9=108\\), and \\(\\cos100^{\\circ}=-0.17365\\) (negative, obtuse angle).",
+              "work": "\\(x^{2}=36+81-108\\times(-0.17365)\\)"
+            },
+            {
+              "explain": "Minus a negative is a plus: \\(-108\\times(-0.17365)=+18.754\\).",
+              "work": "\\(x^{2}=117+18.754=135.754\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(x=\\sqrt{135.754}=11.65\\ldots\\approx11.7\\ \\text{km}\\)"
+            },
+            {
+              "explain": "Check: it must be less than \\(6+9=15\\) and greater than \\(9-6=3\\) ✓. Why not the others: \\(9.9\\) uses \\(\\cos80^{\\circ}\\) (sign slip); \\(10.8\\) is Pythagoras \\(\\sqrt{6^{2}+9^{2}}\\) (not a right angle); \\(15.0\\) is \\(6+9\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "how far is he from its starting point?",
+              "note": "Cosine rule with the included angle \\(100^{\\circ}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
             "grade": "11",
             "origin": "teacher"
           }
@@ -36555,6 +37392,126 @@
           "meta": {
             "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
             "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q24a",
+          "type": "mc",
+          "stem": "Andrew swims \\(6\\) km from A to B on a bearing \\(N60^{\\circ}E\\). He then turns and cycles \\(9\\) km to C on a bearing \\(S40^{\\circ}E\\). He then runs from C to A. Find the size of \\(\\angle ABC\\).",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 318\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"172.0\" x2=\"189.9\" y2=\"97.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"97.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"88.0\" y2=\"172.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"60.0\" y2=\"200.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"172.0\" x2=\"81.9\" y2=\"168.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"172.0\" x2=\"81.9\" y2=\"175.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"38.1\" y2=\"175.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"38.1\" y2=\"168.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"56.5\" y2=\"150.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"63.5\" y2=\"150.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"63.5\" y2=\"193.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"56.5\" y2=\"193.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"60.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"98.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"22.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"161.9\" y1=\"97.0\" x2=\"217.9\" y2=\"97.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"189.9\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.9\" y1=\"97.0\" x2=\"211.8\" y2=\"93.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.9\" y1=\"97.0\" x2=\"211.8\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"161.9\" y1=\"97.0\" x2=\"168.0\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"161.9\" y1=\"97.0\" x2=\"168.0\" y2=\"93.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"186.4\" y2=\"75.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"193.4\" y2=\"75.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"125.0\" x2=\"193.4\" y2=\"118.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"125.0\" x2=\"186.4\" y2=\"118.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"189.9\" y=\"64.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"189.9\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"227.9\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"151.9\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"296.9\" y1=\"257.9\" x2=\"352.9\" y2=\"257.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"324.9\" y2=\"285.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"352.9\" y1=\"257.9\" x2=\"346.8\" y2=\"254.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"352.9\" y1=\"257.9\" x2=\"346.8\" y2=\"261.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"296.9\" y1=\"257.9\" x2=\"303.0\" y2=\"261.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"296.9\" y1=\"257.9\" x2=\"303.0\" y2=\"254.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"321.4\" y2=\"235.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"328.4\" y2=\"235.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"285.9\" x2=\"328.4\" y2=\"279.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"285.9\" x2=\"321.4\" y2=\"279.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"324.9\" y=\"224.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"324.9\" y=\"299.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"362.9\" y=\"261.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"286.9\" y=\"261.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><path d=\"M 60.0 134.0 A 38 38 0 0 1 92.9 153.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"87.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><path d=\"M 189.9 135.0 A 38 38 0 0 0 214.3 126.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"211.9\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"46.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"177.9\" y=\"91.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"310.9\" y=\"274.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"151.0\" y=\"154.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 km</text><text x=\"287.4\" y=\"175.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9 km</text><text x=\"322.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "\\(80^{\\circ}\\)",
+            "\\(100^{\\circ}\\)",
+            "\\(120^{\\circ}\\)",
+            "\\(140^{\\circ}\\)"
+          ],
+          "answer": 1,
+          "hint": "North–South lines are PARALLEL. A bearing like \\(N60^{\\circ}E\\) is measured from the north line, so the same \\(60^{\\circ}\\) also appears at B (alternate angles) between the SOUTH line and BA. Then add the \\(40^{\\circ}\\) on the other side of the south line.",
+          "steps": [
+            {
+              "explain": "At A the bearing \\(N60^{\\circ}E\\) means AB is \\(60^{\\circ}\\) east of north.",
+              "work": "\\(\\text{at A: north line to AB}=60^{\\circ}\\)"
+            },
+            {
+              "explain": "The north-south lines at A and B are parallel, so the angle between the SOUTH line at B and the line BA is also \\(60^{\\circ}\\) (alternate angles).",
+              "work": "\\(\\text{at B: south line to BA}=60^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 318\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><polygon points=\"60.0,172.0 189.9,97.0 324.9,257.9\" fill=\"#eef2ff\" fill-opacity=\".7\" stroke=\"none\"/><line x1=\"189.9\" y1=\"37.0\" x2=\"189.9\" y2=\"182.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"60.0\" y1=\"112.0\" x2=\"60.0\" y2=\"202.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"60.0\" y1=\"172.0\" x2=\"189.9\" y2=\"97.0\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"97.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#047857\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"172.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><path d=\"M 60.0 136.0 A 36 36 0 0 1 91.2 154.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"85.0\" y=\"126.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><path d=\"M 189.9 141.0 A 44 44 0 0 1 151.8 119.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"2.6\"/><text x=\"147.9\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><path d=\"M 189.9 141.0 A 44 44 0 0 0 218.2 130.7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.6\"/><text x=\"219.9\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"197.9\" y=\"193.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">∠ABC = 60° + 40° = 100°</text><text x=\"54.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"179.9\" y=\"89.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"332.9\" y=\"273.9\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"195.9\" y=\"33.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"66.0\" y=\"108.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text></svg>"
+              }
+            },
+            {
+              "explain": "At B the bearing \\(S40^{\\circ}E\\) means BC is \\(40^{\\circ}\\) east of south: the angle between the south line and BC is \\(40^{\\circ}\\).",
+              "work": "\\(\\text{at B: south line to BC}=40^{\\circ}\\)"
+            },
+            {
+              "explain": "BA is on the WEST side of the south line and BC on the EAST side, so \\(\\angle ABC\\) is the sum of the two.",
+              "work": "\\(\\angle ABC=60^{\\circ}+40^{\\circ}=100^{\\circ}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(80^{\\circ}\\) is \\(180-100\\); \\(120^{\\circ}\\) and \\(140^{\\circ}\\) come from \\(180-60\\) and \\(180-40\\) (using the wrong lines).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the size of \\(\\angle ABC\\).",
+              "note": "Parallel N–S lines: \\(\\angle ABC=60^{\\circ}+40^{\\circ}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q24c",
+          "type": "mc",
+          "stem": "Andrew swims \\(6\\) km from A to B on a bearing \\(N60^{\\circ}E\\). He then turns and cycles \\(9\\) km to C on a bearing \\(S40^{\\circ}E\\). He then runs from C to A. Andrew swims at \\(3\\) km/h, cycles at \\(18\\) km/h and runs at \\(10\\) km/h. If Andrew had left A at \\(6:30\\) am, what time would he arrive at C.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 318\" width=\"100%\" height=\"auto\" style=\"max-width:420px;display:block;margin:0 auto\"><line x1=\"60.0\" y1=\"172.0\" x2=\"189.9\" y2=\"97.0\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"97.0\" x2=\"324.9\" y2=\"257.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"88.0\" y2=\"172.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"60.0\" y2=\"200.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"172.0\" x2=\"81.9\" y2=\"168.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"88.0\" y1=\"172.0\" x2=\"81.9\" y2=\"175.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"38.1\" y2=\"175.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"32.0\" y1=\"172.0\" x2=\"38.1\" y2=\"168.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"56.5\" y2=\"150.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"144.0\" x2=\"63.5\" y2=\"150.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"63.5\" y2=\"193.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"56.5\" y2=\"193.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"60.0\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"60.0\" y=\"214.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"98.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"22.0\" y=\"176.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"161.9\" y1=\"97.0\" x2=\"217.9\" y2=\"97.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"189.9\" y2=\"125.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.9\" y1=\"97.0\" x2=\"211.8\" y2=\"93.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"217.9\" y1=\"97.0\" x2=\"211.8\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"161.9\" y1=\"97.0\" x2=\"168.0\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"161.9\" y1=\"97.0\" x2=\"168.0\" y2=\"93.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"186.4\" y2=\"75.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"69.0\" x2=\"193.4\" y2=\"75.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"125.0\" x2=\"193.4\" y2=\"118.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"189.9\" y1=\"125.0\" x2=\"186.4\" y2=\"118.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"189.9\" y=\"64.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"189.9\" y=\"139.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"227.9\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"151.9\" y=\"101.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><line x1=\"296.9\" y1=\"257.9\" x2=\"352.9\" y2=\"257.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"324.9\" y2=\"285.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"352.9\" y1=\"257.9\" x2=\"346.8\" y2=\"254.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"352.9\" y1=\"257.9\" x2=\"346.8\" y2=\"261.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"296.9\" y1=\"257.9\" x2=\"303.0\" y2=\"261.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"296.9\" y1=\"257.9\" x2=\"303.0\" y2=\"254.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"321.4\" y2=\"235.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"229.9\" x2=\"328.4\" y2=\"235.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"285.9\" x2=\"328.4\" y2=\"279.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><line x1=\"324.9\" y1=\"285.9\" x2=\"321.4\" y2=\"279.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"324.9\" y=\"224.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">N</text><text x=\"324.9\" y=\"299.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">S</text><text x=\"362.9\" y=\"261.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">E</text><text x=\"286.9\" y=\"261.9\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#475569\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">W</text><path d=\"M 60.0 134.0 A 38 38 0 0 1 92.9 153.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"87.0\" y=\"125.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">60°</text><path d=\"M 189.9 135.0 A 38 38 0 0 0 214.3 126.1\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"211.9\" y=\"155.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">40°</text><text x=\"46.0\" y=\"189.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">A</text><text x=\"177.9\" y=\"91.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">B</text><text x=\"310.9\" y=\"274.9\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">C</text><text x=\"151.0\" y=\"154.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 km</text><text x=\"287.4\" y=\"175.4\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9 km</text><text x=\"322.0\" y=\"34.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"500\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">NOT TO SCALE</text></svg>"
+          },
+          "options": [
+            "\\(8:30\\) am",
+            "\\(9:00\\) am",
+            "\\(9:30\\) am",
+            "\\(10:00\\) am"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\text{time}=\\dfrac{\\text{distance}}{\\text{speed}}\\) for EACH leg, with the speed for that leg (swim for AB, cycle for BC), add the times, and add the total to \\(6:30\\) am. He only runs from C to A, which is after he arrives at C.",
+          "steps": [
+            {
+              "explain": "Leg AB is SWUM: \\(6\\) km at \\(3\\) km/h.",
+              "work": "\\(t_{AB}=\\dfrac{6}{3}=2\\ \\text{hours}\\)"
+            },
+            {
+              "explain": "Leg BC is CYCLED: \\(9\\) km at \\(18\\) km/h.",
+              "work": "\\(t_{BC}=\\dfrac{9}{18}=\\dfrac{1}{2}\\ \\text{hour}\\)"
+            },
+            {
+              "explain": "Total time to reach C: add the two legs (the run from C to A comes afterwards, so it is not needed).",
+              "work": "\\(2+\\dfrac{1}{2}=2\\dfrac{1}{2}\\ \\text{hours}=2\\ \\text{h}\\ 30\\ \\text{min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:0 auto\"><line x1=\"30.0\" y1=\"70.0\" x2=\"370.0\" y2=\"70.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><rect x=\"30\" y=\"46\" width=\"272.0\" height=\"24\" fill=\"#d97706\" fill-opacity=\".35\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"302.0\" y=\"46\" width=\"68.0\" height=\"24\" fill=\"#047857\" fill-opacity=\".35\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"166.0\" y=\"63.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">swim AB: 2 h</text><text x=\"336.0\" y=\"38.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">cycle BC</text><text x=\"336.0\" y=\"24.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0.5 h</text><line x1=\"30.0\" y1=\"66.0\" x2=\"30.0\" y2=\"80.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"30.0\" y=\"98.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6:30 am</text><line x1=\"302.0\" y1=\"66.0\" x2=\"302.0\" y2=\"80.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"302.0\" y=\"98.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">8:30 am</text><line x1=\"370.0\" y1=\"66.0\" x2=\"370.0\" y2=\"80.0\" stroke=\"#334155\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"370.0\" y=\"98.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">9:00 am</text><text x=\"200.0\" y=\"128.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">total 2.5 hours</text></svg>"
+              }
+            },
+            {
+              "explain": "Add to the start time \\(6:30\\) am: \\(6:30+2\\ \\text{h}=8:30\\); then \\(+30\\) min \\(=9:00\\).",
+              "work": "\\(6{:}30\\ \\text{am}+2{:}30=9{:}00\\ \\text{am}\\)"
+            },
+            {
+              "explain": "Why not the others: \\(8:30\\) forgets the cycling leg; \\(9:30\\) uses 1 hour for BC; \\(10:00\\) adds the running time or uses the wrong speeds.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "what time would he arrive at C",
+              "note": "time = distance ÷ speed for each leg."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
             "grade": "11",
             "origin": "teacher"
           }

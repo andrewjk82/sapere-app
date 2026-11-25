@@ -4722,6 +4722,124 @@
             "grade": "11",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "intgrammar2020p-q13",
+          "type": "mc",
+          "stem": "Convert \\(\\dfrac{11\\pi}{12}\\) to degrees.",
+          "difficulty": "easy",
+          "options": [
+            "\\(150^{\\circ}\\)",
+            "\\(165^{\\circ}\\)",
+            "\\(330^{\\circ}\\)",
+            "\\(15^{\\circ}\\)"
+          ],
+          "answer": 1,
+          "hint": "Radians and degrees are linked by \\(\\pi\\) radians \\(=180^{\\circ}\\). To go from radians to degrees multiply by \\(\\dfrac{180^{\\circ}}{\\pi}\\); the \\(\\pi\\)'s cancel.",
+          "steps": [
+            {
+              "explain": "The key fact is that a half-turn is \\(\\pi\\) radians and also \\(180^{\\circ}\\).",
+              "work": "\\(\\pi\\ \\text{rad}=180^{\\circ}\\)"
+            },
+            {
+              "explain": "To convert radians to degrees, multiply by \\(\\dfrac{180^{\\circ}}{\\pi}\\).",
+              "work": "\\(\\dfrac{11\\pi}{12}\\times\\dfrac{180^{\\circ}}{\\pi}\\)"
+            },
+            {
+              "explain": "Cancel the \\(\\pi\\) from top and bottom.",
+              "work": "\\(=\\dfrac{11}{12}\\times180^{\\circ}\\)"
+            },
+            {
+              "explain": "Cancel 12 into 180 (\\(180\\div12=15\\)).",
+              "work": "\\(=11\\times15^{\\circ}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(=165^{\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 225\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"26.0\" y1=\"150.0\" x2=\"304.0\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 165 150 L 40.0 150.0 A 125 125 0 0 1 44.3 117.6 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 44.3 117.6 A 125 125 0 0 1 56.7 87.5 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 56.7 87.5 A 125 125 0 0 1 76.6 61.6 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 76.6 61.6 A 125 125 0 0 1 102.5 41.7 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 102.5 41.7 A 125 125 0 0 1 132.6 29.3 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 132.6 29.3 A 125 125 0 0 1 165.0 25.0 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 165.0 25.0 A 125 125 0 0 1 197.4 29.3 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 197.4 29.3 A 125 125 0 0 1 227.5 41.7 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 227.5 41.7 A 125 125 0 0 1 253.4 61.6 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 253.4 61.6 A 125 125 0 0 1 273.3 87.5 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 273.3 87.5 A 125 125 0 0 1 285.7 117.6 Z\" fill=\"#047857\" fill-opacity=\"0.3\" stroke=\"#94a3b8\" stroke-width=\"1\"/><path d=\"M 165 150 L 285.7 117.6 A 125 125 0 0 1 290.0 150.0 Z\" fill=\"#e2e8f0\" fill-opacity=\"0.6\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"165.0\" y1=\"150.0\" x2=\"40.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"150.0\" x2=\"285.7\" y2=\"117.6\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"150.0\" x2=\"290.0\" y2=\"150.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"32.0\" y=\"168.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><text x=\"298.0\" y=\"168.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">0</text><text x=\"299.2\" y=\"117.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">165°</text><text x=\"165.0\" y=\"190.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">11 of the 12 equal parts (green)</text><text x=\"165.0\" y=\"208.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">each part = π ÷ 12 = 15°</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: \\(\\dfrac{11\\pi}{12}\\) is a bit less than \\(\\pi\\) (\\(=180^{\\circ}\\)) — one twelfth of \\(\\pi\\) is \\(15^{\\circ}\\) short, \\(180-15=165\\) ✓. Why not the others: \\(150^{\\circ}\\) is \\(\\dfrac{5\\pi}{6}\\); \\(330^{\\circ}\\) is \\(\\dfrac{11\\pi}{6}\\); \\(15^{\\circ}\\) is \\(\\dfrac{\\pi}{12}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Convert \\(\\dfrac{11\\pi}{12}\\) to degrees.",
+              "note": "Multiply by \\(\\dfrac{180^{\\circ}}{\\pi}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q14b",
+          "type": "mc",
+          "stem": "Find the exact value of \\(\\tan\\dfrac{5\\pi}{4}\\)",
+          "difficulty": "easy",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(\\dfrac{1}{\\sqrt{3}}\\)"
+          ],
+          "answer": 1,
+          "hint": "Change to degrees if it helps (\\(\\pi=180^{\\circ}\\)). \\(\\dfrac{5\\pi}{4}\\) is a bit more than \\(\\pi\\): the THIRD quadrant, where tangent is positive. Use the related angle \\(\\dfrac{\\pi}{4}\\).",
+          "steps": [
+            {
+              "explain": "Write the angle as \\(\\pi\\) plus something: \\(\\dfrac{5\\pi}{4}=\\pi+\\dfrac{\\pi}{4}\\), i.e. \\(225^{\\circ}=180^{\\circ}+45^{\\circ}\\). It is in the THIRD quadrant (between \\(\\pi\\) and \\(\\dfrac{3\\pi}{2}\\)).",
+              "work": "\\(\\dfrac{5\\pi}{4}=\\pi+\\dfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Related acute angle: \\(\\dfrac{\\pi}{4}\\) (\\(45^{\\circ}\\)). In the third quadrant \\(x<0\\) and \\(y<0\\), so \\(\\tan=\\dfrac{y}{x}\\) is a negative divided by a negative = POSITIVE (the 'T' of ASTC).",
+              "work": "\\(\\tan(\\pi+\\theta)=\\tan\\theta\\)"
+            },
+            {
+              "explain": "So the tangent equals the tangent of the related angle.",
+              "work": "\\(\\tan\\dfrac{5\\pi}{4}=\\tan\\dfrac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "Use the exact value from the \\(45^{\\circ}\\)-\\(45^{\\circ}\\)-\\(90^{\\circ}\\) triangle (the two legs are equal, so \\(\\dfrac{y}{x}=1\\)).",
+              "work": "\\(\\tan\\dfrac{\\pi}{4}=1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 272\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><line x1=\"51.0\" y1=\"128.0\" x2=\"281.0\" y2=\"128.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"242.0\" x2=\"165.0\" y2=\"14.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"281.0\" y1=\"128.0\" x2=\"274.1\" y2=\"124.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"281.0\" y1=\"128.0\" x2=\"274.1\" y2=\"132.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"14.0\" x2=\"161.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"14.0\" x2=\"169.0\" y2=\"20.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"279.0\" y=\"144.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"175.0\" y=\"18.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><circle cx=\"165\" cy=\"128\" r=\"92\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"99.9\" y1=\"193.1\" x2=\"99.9\" y2=\"128.0\" stroke=\"#7c3aed\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\"/><line x1=\"165.0\" y1=\"128.0\" x2=\"99.9\" y2=\"128.0\" stroke=\"#047857\" stroke-width=\"4.2\" stroke-linecap=\"round\"/><line x1=\"165.0\" y1=\"128.0\" x2=\"99.9\" y2=\"193.1\" stroke=\"#d97706\" stroke-width=\"3.4\" stroke-linecap=\"round\"/><path d=\"M 135.0 128.0 A 30 30 0 0 1 143.8 149.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"118.8\" y=\"151.1\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">45°</text><circle cx=\"99.9\" cy=\"193.1\" r=\"5\" fill=\"#dc2626\"/><text x=\"89.9\" y=\"209.1\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11.5\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">P</text><text x=\"95.9\" y=\"116.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">x = −</text><text x=\"137.5\" y=\"112.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√2</text><line x1=\"128.3\" y1=\"116.0\" x2=\"146.7\" y2=\"116.0\" stroke=\"#047857\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"137.5\" y=\"126.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text><text x=\"29.9\" y=\"164.5\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">y = −</text><text x=\"71.5\" y=\"160.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">√2</text><line x1=\"62.3\" y1=\"164.5\" x2=\"80.7\" y2=\"164.5\" stroke=\"#7c3aed\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"71.5\" y=\"174.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#7c3aed\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2</text></svg>"
+              }
+            },
+            {
+              "explain": "Check: the point is \\(\\left(-\\dfrac{\\sqrt{2}}{2},-\\dfrac{\\sqrt{2}}{2}\\right)\\), so \\(\\tan=\\dfrac{y}{x}=\\dfrac{-\\dfrac{\\sqrt{2}}{2}}{-\\dfrac{\\sqrt{2}}{2}}=1\\) ✓. Why not the others: A has the wrong sign (tangent is positive in the third quadrant); C and D are the tangents of \\(\\dfrac{\\pi}{3}\\) and \\(\\dfrac{\\pi}{6}\\).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">B</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the exact value of \\(\\tan\\dfrac{5\\pi}{4}\\)",
+              "note": "\\(\\dfrac{5\\pi}{4}=\\pi+\\dfrac{\\pi}{4}\\); tan positive in quadrant 3."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
+            "grade": "11",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5261,6 +5379,67 @@
           "meta": {
             "source": "Northern Beaches Secondary College Manly Campus 2020 Year 12 Trial Examination Mathematics Advanced",
             "school": "Northern Beaches Secondary College, Manly Campus",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kambala2020p-q22",
+          "type": "mc",
+          "stem": "Solve \\(x\\) for the domain \\(0\\leq x\\leq2\\pi\\): \\(2\\sin x+\\sqrt{3}=0\\)",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\dfrac{\\pi}{3}\\) and \\(\\dfrac{2\\pi}{3}\\)",
+            "\\(\\dfrac{2\\pi}{3}\\) and \\(\\dfrac{4\\pi}{3}\\)",
+            "\\(\\dfrac{4\\pi}{3}\\) and \\(\\dfrac{5\\pi}{3}\\)",
+            "\\(\\dfrac{5\\pi}{6}\\) and \\(\\dfrac{7\\pi}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "Isolate \\(\\sin x\\), ignore the sign to find the related acute angle (\\(\\dfrac{\\pi}{3}\\)), then use the quadrants: sine is NEGATIVE in the 3rd and 4th quadrants, i.e. \\(\\pi+\\) related angle and \\(2\\pi-\\) related angle.",
+          "steps": [
+            {
+              "explain": "Subtract \\(\\sqrt{3}\\) and divide by 2 to isolate sine.",
+              "work": "\\(2\\sin x=-\\sqrt{3}\\ \\Rightarrow\\ \\sin x=-\\dfrac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Related acute angle: ignore the minus sign. \\(\\sin\\dfrac{\\pi}{3}=\\dfrac{\\sqrt{3}}{2}\\) (the \\(60^{\\circ}\\) angle).",
+              "work": "\\(\\text{related angle}=\\dfrac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "Sine is negative in quadrants 3 and 4 (ASTC: sine is positive only in quadrants 1 and 2).",
+              "work": "\\(\\text{3rd and 4th quadrants}\\)"
+            },
+            {
+              "explain": "Quadrant 3: \\(x=\\pi+\\dfrac{\\pi}{3}\\). Quadrant 4: \\(x=2\\pi-\\dfrac{\\pi}{3}\\).",
+              "work": "\\(x=\\pi+\\dfrac{\\pi}{3}=\\dfrac{4\\pi}{3}\\quad\\text{or}\\quad x=2\\pi-\\dfrac{\\pi}{3}=\\dfrac{5\\pi}{3}\\)"
+            },
+            {
+              "explain": "On the graph of \\(y=\\sin x\\), the line \\(y=-0.866\\) meets the curve at exactly these two values in one full turn.",
+              "work": "\\(x=\\dfrac{4\\pi}{3},\\ \\dfrac{5\\pi}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><line x1=\"6.0\" y1=\"117.5\" x2=\"334.0\" y2=\"117.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"43.6\" y1=\"229.0\" x2=\"43.6\" y2=\"6.0\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"117.5\" x2=\"327.1\" y2=\"113.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"117.5\" x2=\"327.1\" y2=\"121.5\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"43.6\" y1=\"6.0\" x2=\"39.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"43.6\" y1=\"6.0\" x2=\"47.6\" y2=\"12.9\" stroke=\"#334155\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"336.0\" y=\"132.5\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">x</text><text x=\"52.6\" y=\"16.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">y</text><polyline points=\"43.6,117.5 44.1,116.7 44.5,115.9 45.0,115.1 45.5,114.4 46.0,113.6 46.5,112.8 47.0,112.0 47.5,111.2 48.0,110.4 48.5,109.6 49.0,108.9 49.5,108.1 50.0,107.3 50.5,106.5 51.0,105.8 51.5,105.0 52.0,104.2 52.5,103.4 53.0,102.7 53.5,101.9 54.0,101.2 54.5,100.4 55.0,99.6 55.5,98.9 56.0,98.1 56.5,97.4 57.0,96.6 57.5,95.9 58.0,95.2 58.5,94.4 58.9,93.7 59.4,93.0 59.9,92.3 60.4,91.5 60.9,90.8 61.4,90.1 61.9,89.4 62.4,88.7 62.9,88.0 63.4,87.3 63.9,86.6 64.4,85.9 64.9,85.3 65.4,84.6 65.9,83.9 66.4,83.3 66.9,82.6 67.4,82.0 67.9,81.3 68.4,80.7 68.9,80.0 69.4,79.4 69.9,78.8 70.4,78.2 70.9,77.6 71.4,77.0 71.9,76.4 72.4,75.8 72.9,75.2 73.3,74.6 73.8,74.0 74.3,73.5 74.8,72.9 75.3,72.4 75.8,71.8 76.3,71.3 76.8,70.8 77.3,70.2 77.8,69.7 78.3,69.2 78.8,68.7 79.3,68.2 79.8,67.7 80.3,67.3 80.8,66.8 81.3,66.3 81.8,65.9 82.3,65.4 82.8,65.0 83.3,64.6 83.8,64.2 84.3,63.8 84.8,63.4 85.3,63.0 85.8,62.6 86.3,62.2 86.8,61.8 87.3,61.5 87.7,61.1 88.2,60.8 88.7,60.5 89.2,60.1 89.7,59.8 90.2,59.5 90.7,59.2 91.2,58.9 91.7,58.7 92.2,58.4 92.7,58.1 93.2,57.9 93.7,57.7 94.2,57.4 94.7,57.2 95.2,57.0 95.7,56.8 96.2,56.6 96.7,56.4 97.2,56.3 97.7,56.1 98.2,55.9 98.7,55.8 99.2,55.7 99.7,55.5 100.2,55.4 100.7,55.3 101.2,55.2 101.7,55.1 102.1,55.1 102.6,55.0 103.1,55.0 103.6,54.9 104.1,54.9 104.6,54.9 105.1,54.8 105.6,54.8 106.1,54.8 106.6,54.9 107.1,54.9 107.6,54.9 108.1,55.0 108.6,55.0 109.1,55.1 109.6,55.1 110.1,55.2 110.6,55.3 111.1,55.4 111.6,55.5 112.1,55.7 112.6,55.8 113.1,55.9 113.6,56.1 114.1,56.3 114.6,56.4 115.1,56.6 115.6,56.8 116.1,57.0 116.5,57.2 117.0,57.4 117.5,57.7 118.0,57.9 118.5,58.1 119.0,58.4 119.5,58.7 120.0,58.9 120.5,59.2 121.0,59.5 121.5,59.8 122.0,60.1 122.5,60.5 123.0,60.8 123.5,61.1 124.0,61.5 124.5,61.8 125.0,62.2 125.5,62.6 126.0,63.0 126.5,63.4 127.0,63.8 127.5,64.2 128.0,64.6 128.5,65.0 129.0,65.4 129.5,65.9 130.0,66.3 130.5,66.8 130.9,67.3 131.4,67.7 131.9,68.2 132.4,68.7 132.9,69.2 133.4,69.7 133.9,70.2 134.4,70.8 134.9,71.3 135.4,71.8 135.9,72.4 136.4,72.9 136.9,73.5 137.4,74.0 137.9,74.6 138.4,75.2 138.9,75.8 139.4,76.4 139.9,77.0 140.4,77.6 140.9,78.2 141.4,78.8 141.9,79.4 142.4,80.0 142.9,80.7 143.4,81.3 143.9,82.0 144.4,82.6 144.9,83.3 145.3,83.9 145.8,84.6 146.3,85.3 146.8,85.9 147.3,86.6 147.8,87.3 148.3,88.0 148.8,88.7 149.3,89.4 149.8,90.1 150.3,90.8 150.8,91.5 151.3,92.3 151.8,93.0 152.3,93.7 152.8,94.4 153.3,95.2 153.8,95.9 154.3,96.6 154.8,97.4 155.3,98.1 155.8,98.9 156.3,99.6 156.8,100.4 157.3,101.2 157.8,101.9 158.3,102.7 158.8,103.4 159.3,104.2 159.7,105.0 160.2,105.8 160.7,106.5 161.2,107.3 161.7,108.1 162.2,108.9 162.7,109.6 163.2,110.4 163.7,111.2 164.2,112.0 164.7,112.8 165.2,113.6 165.7,114.4 166.2,115.1 166.7,115.9 167.2,116.7 167.7,117.5 168.2,118.3 168.7,119.1 169.2,119.9 169.7,120.6 170.2,121.4 170.7,122.2 171.2,123.0 171.7,123.8 172.2,124.6 172.7,125.4 173.2,126.1 173.7,126.9 174.1,127.7 174.6,128.5 175.1,129.2 175.6,130.0 176.1,130.8 176.6,131.6 177.1,132.3 177.6,133.1 178.1,133.8 178.6,134.6 179.1,135.4 179.6,136.1 180.1,136.9 180.6,137.6 181.1,138.4 181.6,139.1 182.1,139.8 182.6,140.6 183.1,141.3 183.6,142.0 184.1,142.7 184.6,143.5 185.1,144.2 185.6,144.9 186.1,145.6 186.6,146.3 187.1,147.0 187.6,147.7 188.1,148.4 188.5,149.1 189.0,149.7 189.5,150.4 190.0,151.1 190.5,151.7 191.0,152.4 191.5,153.0 192.0,153.7 192.5,154.3 193.0,155.0 193.5,155.6 194.0,156.2 194.5,156.8 195.0,157.4 195.5,158.0 196.0,158.6 196.5,159.2 197.0,159.8 197.5,160.4 198.0,161.0 198.5,161.5 199.0,162.1 199.5,162.6 200.0,163.2 200.5,163.7 201.0,164.2 201.5,164.8 202.0,165.3 202.5,165.8 202.9,166.3 203.4,166.8 203.9,167.3 204.4,167.7 204.9,168.2 205.4,168.7 205.9,169.1 206.4,169.6 206.9,170.0 207.4,170.4 207.9,170.8 208.4,171.2 208.9,171.6 209.4,172.0 209.9,172.4 210.4,172.8 210.9,173.2 211.4,173.5 211.9,173.9 212.4,174.2 212.9,174.5 213.4,174.9 213.9,175.2 214.4,175.5 214.9,175.8 215.4,176.1 215.9,176.3 216.4,176.6 216.8,176.9 217.3,177.1 217.8,177.3 218.3,177.6 218.8,177.8 219.3,178.0 219.8,178.2 220.3,178.4 220.8,178.6 221.3,178.7 221.8,178.9 222.3,179.1 222.8,179.2 223.3,179.3 223.8,179.5 224.3,179.6 224.8,179.7 225.3,179.8 225.8,179.9 226.3,179.9 226.8,180.0 227.3,180.0 227.8,180.1 228.3,180.1 228.8,180.1 229.3,180.2 229.8,180.2 230.3,180.2 230.8,180.1 231.2,180.1 231.7,180.1 232.2,180.0 232.7,180.0 233.2,179.9 233.7,179.9 234.2,179.8 234.7,179.7 235.2,179.6 235.7,179.5 236.2,179.3 236.7,179.2 237.2,179.1 237.7,178.9 238.2,178.7 238.7,178.6 239.2,178.4 239.7,178.2 240.2,178.0 240.7,177.8 241.2,177.6 241.7,177.3 242.2,177.1 242.7,176.9 243.2,176.6 243.7,176.3 244.2,176.1 244.7,175.8 245.2,175.5 245.6,175.2 246.1,174.9 246.6,174.5 247.1,174.2 247.6,173.9 248.1,173.5 248.6,173.2 249.1,172.8 249.6,172.4 250.1,172.0 250.6,171.6 251.1,171.2 251.6,170.8 252.1,170.4 252.6,170.0 253.1,169.6 253.6,169.1 254.1,168.7 254.6,168.2 255.1,167.7 255.6,167.3 256.1,166.8 256.6,166.3 257.1,165.8 257.6,165.3 258.1,164.8 258.6,164.2 259.1,163.7 259.6,163.2 260.0,162.6 260.5,162.1 261.0,161.5 261.5,161.0 262.0,160.4 262.5,159.8 263.0,159.2 263.5,158.6 264.0,158.0 264.5,157.4 265.0,156.8 265.5,156.2 266.0,155.6 266.5,155.0 267.0,154.3 267.5,153.7 268.0,153.0 268.5,152.4 269.0,151.7 269.5,151.1 270.0,150.4 270.5,149.7 271.0,149.1 271.5,148.4 272.0,147.7 272.5,147.0 273.0,146.3 273.5,145.6 274.0,144.9 274.4,144.2 274.9,143.5 275.4,142.7 275.9,142.0 276.4,141.3 276.9,140.6 277.4,139.8 277.9,139.1 278.4,138.4 278.9,137.6 279.4,136.9 279.9,136.1 280.4,135.4 280.9,134.6 281.4,133.8 281.9,133.1 282.4,132.3 282.9,131.6 283.4,130.8 283.9,130.0 284.4,129.2 284.9,128.5 285.4,127.7 285.9,126.9 286.4,126.1 286.9,125.4 287.4,124.6 287.9,123.8 288.4,123.0 288.8,122.2 289.3,121.4 289.8,120.6 290.3,119.9 290.8,119.1 291.3,118.3 291.8,117.5\" fill=\"none\" stroke=\"#3b4ea8\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><line x1=\"167.7\" y1=\"114.5\" x2=\"167.7\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"167.7\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">π</text><line x1=\"291.8\" y1=\"114.5\" x2=\"291.8\" y2=\"120.5\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"291.8\" y=\"131.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">2π</text><line x1=\"40.6\" y1=\"54.8\" x2=\"46.6\" y2=\"54.8\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"36.6\" y=\"58.8\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">1</text><line x1=\"40.6\" y1=\"180.2\" x2=\"46.6\" y2=\"180.2\" stroke=\"#334155\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"36.6\" y=\"184.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#334155\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">−1</text><line x1=\"43.6\" y1=\"171.8\" x2=\"291.8\" y2=\"171.8\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"209.1\" y1=\"171.8\" x2=\"209.1\" y2=\"117.5\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"250.4\" y1=\"171.8\" x2=\"250.4\" y2=\"117.5\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"209.1\" cy=\"171.8\" r=\"5\" fill=\"#dc2626\"/><circle cx=\"250.4\" cy=\"171.8\" r=\"5\" fill=\"#dc2626\"/><text x=\"206.1\" y=\"84.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">4π</text><line x1=\"196.3\" y1=\"88.5\" x2=\"215.9\" y2=\"88.5\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"206.1\" y=\"99.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"253.4\" y=\"84.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">5π</text><line x1=\"243.6\" y1=\"88.5\" x2=\"263.3\" y2=\"88.5\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"253.4\" y=\"99.5\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">3</text><text x=\"87.0\" y=\"188.8\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">sin x = −0.866</text></svg>"
+              }
+            },
+            {
+              "explain": "Why not the others: A uses the 1st and 2nd quadrants (sine POSITIVE); B and D use \\(\\dfrac{\\pi}{3}\\)-multiples in the wrong places (they solve \\(\\cos x=-\\dfrac{1}{2}\\) and \\(\\sin x=-\\dfrac{1}{2}\\)).",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(2\\sin x+\\sqrt{3}=0\\)",
+              "note": "\\(\\sin x=-\\dfrac{\\sqrt{3}}{2}\\): quadrants 3 and 4, related angle \\(\\dfrac{\\pi}{3}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
             "grade": "11",
             "origin": "teacher"
           }
@@ -8124,6 +8303,127 @@
           "meta": {
             "source": "Loreto Kirribilli 2024 Year 12 Trial Examination Mathematics Advanced",
             "school": "Loreto Kirribilli",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "kambala2020p-q4",
+          "type": "mc",
+          "stem": "What is the perimeter of a sector of a circle of radius \\(6\\) cm which contains a sector angle of \\(\\dfrac{\\pi}{6}\\) radians at the centre of the circle?",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\pi\\) cm",
+            "\\(3\\pi\\) cm",
+            "\\((12+\\pi)\\) cm",
+            "\\((12+3\\pi)\\) cm"
+          ],
+          "answer": 2,
+          "hint": "Perimeter of a sector = ARC + TWO RADII. With the angle in RADIANS the arc length is simply \\(l=r\\theta\\).",
+          "steps": [
+            {
+              "explain": "The perimeter is the distance all the way around the sector: the curved arc plus the two straight radii.",
+              "work": "\\(P=l+r+r\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 150\" width=\"100%\" height=\"auto\" style=\"max-width:340px;display:block;margin:0 auto\"><path d=\"M 40 125 L 300 125 A 260 260 0 0 0 265.2 -5.0 Z\" fill=\"#f1f5f9\" fill-opacity=\".8\" stroke=\"none\"/><line x1=\"40.0\" y1=\"125.0\" x2=\"300.0\" y2=\"125.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"40.0\" y1=\"125.0\" x2=\"265.2\" y2=\"-5.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 300 125 A 260 260 0 0 0 265.2 -5.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M 86 125 A 46 46 0 0 0 79.8 102.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"118.0\" y=\"117.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">θ</text><text x=\"170.0\" y=\"141.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><text x=\"145.0\" y=\"43.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">6 cm</text><text x=\"308.0\" y=\"65.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">arc</text></svg>"
+              }
+            },
+            {
+              "explain": "The angle is in radians, so use \\(l=r\\theta\\) (no \\(360^{\\circ}\\) needed).",
+              "work": "\\(l=r\\theta=6\\times\\dfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "The 6's cancel.",
+              "work": "\\(l=\\pi\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Add the two radii: \\(6+6=12\\).",
+              "work": "\\(P=\\pi+6+6=12+\\pi\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: A is just the arc; B is \\(r\\theta\\) with the wrong angle (\\(6\\times\\dfrac{\\pi}{2}\\)); D uses \\(3\\pi\\) for the arc.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "What is the perimeter of a sector",
+              "note": "Perimeter = arc \\(r\\theta\\) + 2 radii."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Kambala 2020 Preliminary Yearly Mathematics Advanced",
+            "school": "Kambala",
+            "grade": "11",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "intgrammar2020p-q17",
+          "type": "mc",
+          "stem": "Find the perimeter of the sector of a circle centred at \\(O\\) with a radius of \\(7\\) cm and subtended by an angle of \\(120^{\\circ}\\). Give your answer rounded to one decimal place.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 205\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:0 auto\"><path d=\"M 105 165 L 230 165 A 125 125 0 0 0 42.5 56.7 Z\" fill=\"#fef3c7\" fill-opacity=\".6\" stroke=\"none\"/><line x1=\"105.0\" y1=\"165.0\" x2=\"230.0\" y2=\"165.0\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"165.0\" x2=\"42.5\" y2=\"56.7\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M 230 165 A 125 125 0 0 0 42.5 56.7\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><path d=\"M 131 165 A 26 26 0 0 0 92.0 142.5\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2.2\"/><text x=\"134.0\" y=\"126.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120°</text><text x=\"105.0\" y=\"184.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"167.5\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7 cm</text></svg>"
+          },
+          "options": [
+            "\\(14.7\\) cm",
+            "\\(21.7\\) cm",
+            "\\(28.7\\) cm",
+            "\\(44.0\\) cm"
+          ],
+          "answer": 2,
+          "hint": "The PERIMETER of a sector is the curved arc PLUS the TWO straight radii. Find the arc length with \\(l=\\dfrac{\\theta}{360^{\\circ}}\\times2\\pi r\\), then add \\(r+r\\).",
+          "steps": [
+            {
+              "explain": "A sector has three edges: one curved ARC and two straight RADII. Perimeter \\(=\\) arc \\(+\\ r+r\\).",
+              "work": "\\(P=l+r+r\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 205\" width=\"100%\" height=\"auto\" style=\"max-width:370px;display:block;margin:0 auto\"><path d=\"M 105 165 L 230 165 A 125 125 0 0 0 42.5 56.7 Z\" fill=\"#f1f5f9\" fill-opacity=\".6\" stroke=\"none\"/><line x1=\"105.0\" y1=\"165.0\" x2=\"230.0\" y2=\"165.0\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><line x1=\"105.0\" y1=\"165.0\" x2=\"42.5\" y2=\"56.7\" stroke=\"#047857\" stroke-width=\"3.6\" stroke-linecap=\"round\"/><path d=\"M 230 165 A 125 125 0 0 0 42.5 56.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M 131 165 A 26 26 0 0 0 92.0 142.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><text x=\"134.0\" y=\"126.7\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120°</text><text x=\"105.0\" y=\"184.0\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\" font-style=\"italic\">O</text><text x=\"167.5\" y=\"184.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7 cm</text><text x=\"29.9\" y=\"126.2\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#047857\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">7 cm</text><text x=\"184.7\" y=\"51.1\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"12.5\" font-weight=\"800\" fill=\"#d97706\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">arc</text><text x=\"249.9\" y=\"147.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">120</text><line x1=\"237.6\" y1=\"151.0\" x2=\"262.2\" y2=\"151.0\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><text x=\"249.9\" y=\"161.0\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"10\" font-weight=\"800\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">360</text><text x=\"264.0\" y=\"156.0\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,Segoe UI,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#fff\" stroke-width=\"3\" paint-order=\"stroke\" stroke-linejoin=\"round\">= one third</text></svg>"
+              }
+            },
+            {
+              "explain": "The angle is \\(120^{\\circ}\\), so the arc is the fraction \\(\\dfrac{120}{360}=\\dfrac{1}{3}\\) of the whole circumference \\(2\\pi r\\).",
+              "work": "\\(l=\\dfrac{\\theta}{360^{\\circ}}\\times2\\pi r=\\dfrac{120^{\\circ}}{360^{\\circ}}\\times2\\pi(7)\\)"
+            },
+            {
+              "explain": "Calculate: \\(\\dfrac{1}{3}\\times14\\pi=\\dfrac{14\\pi}{3}\\).",
+              "work": "\\(l=\\dfrac{14\\pi}{3}\\approx14.66\\ \\text{cm}\\approx14.7\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Add the two radii: \\(7+7=14\\).",
+              "work": "\\(P=14.7+7+7\\)"
+            },
+            {
+              "explain": "Total.",
+              "work": "\\(P=28.7\\ \\text{cm}\\)"
+            },
+            {
+              "explain": "Why not the others: A is only the arc; B is the arc plus ONE radius (\\(14.7+7\\)); D is the whole circumference \\(2\\pi(7)=44.0\\) cm.",
+              "work": ""
+            },
+            {
+              "explain": "So the correct choice is option <span style=\"color:#047857;font-weight:700\">C</span>.",
+              "work": ""
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "Find the perimeter of the sector",
+              "note": "Perimeter = arc + 2 radii. Arc \\(=\\dfrac{\\theta}{360}\\times2\\pi r\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "International Grammar School 2020 Assessment Task 3 Mathematics Advanced",
+            "school": "International Grammar School",
             "grade": "11",
             "origin": "teacher"
           }
