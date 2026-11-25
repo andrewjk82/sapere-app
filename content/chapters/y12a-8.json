@@ -16039,10 +16039,10 @@
           "stem": "Sam invests \\(M\\) dollars into an account at the beginning of each month. The account earns 3% p.a. interest, compounded monthly. Show that the amount in the account after \\(n\\) months, \\(A_n\\), is given by \\(A_n=401M\\left(1.0025^{n}-1\\right)\\). Which working is correct?",
           "difficulty": "hard",
           "options": [
-            "\\(A_n=M\\left(1.0025+1.0025^{2}+\\dots+1.0025^{n}\\right)\\) is a GP with \\(a=1.0025,\\ r=1.0025,\\ n\\) terms. \\(A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025-1}=M\\times\\dfrac{1.0025}{0.0025}\\left(1.0025^{n}-1\\right)=401M\\left(1.0025^{n}-1\\right)\\)",
-            "\\(A_n=M\\left(1+1.0025+\\dots+1.0025^{n-1}\\right)\\) is a GP with \\(a=1\\). \\(A_n=M\\times\\dfrac{1.0025^{n}-1}{0.0025}=400M\\left(1.0025^{n}-1\\right)\\)",
-            "\\(A_n=M\\left(1.0025+\\dots+1.0025^{n}\\right)\\), \\(a=1.0025\\). \\(A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1-1.0025}=-401M\\left(1.0025^{n}-1\\right)\\)",
-            "\\(A_n=M\\left(1.0025+\\dots+1.0025^{n}\\right)\\), \\(a=1.0025\\). \\(A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025}=M\\left(1.0025^{n}-1\\right)\\)"
+            "\\(\\begin{aligned}&A_n=M\\left(1.0025+1.0025^{2}+\\dots+1.0025^{n}\\right)\\\\ &\\text{GP: }a=1.0025,\\ r=1.0025,\\ n\\text{ terms}\\\\ &A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025-1}\\\\ &\\phantom{A_n}=M\\times\\dfrac{1.0025}{0.0025}\\left(1.0025^{n}-1\\right)\\\\ &\\phantom{A_n}=401M\\left(1.0025^{n}-1\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_n=M\\left(1+1.0025+\\dots+1.0025^{n-1}\\right)\\\\ &\\text{GP: }a=1\\\\ &A_n=M\\times\\dfrac{1.0025^{n}-1}{0.0025}\\\\ &\\phantom{A_n}=400M\\left(1.0025^{n}-1\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_n=M\\left(1.0025+\\dots+1.0025^{n}\\right),\\ a=1.0025\\\\ &A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1-1.0025}\\\\ &\\phantom{A_n}=-401M\\left(1.0025^{n}-1\\right)\\end{aligned}\\)",
+            "\\(\\begin{aligned}&A_n=M\\left(1.0025+\\dots+1.0025^{n}\\right),\\ a=1.0025\\\\ &A_n=M\\times\\dfrac{1.0025\\left(1.0025^{n}-1\\right)}{1.0025}\\\\ &\\phantom{A_n}=M\\left(1.0025^{n}-1\\right)\\end{aligned}\\)"
           ],
           "answer": 0,
           "hint": "Extend the pattern of part (i): the payment made at the start of month \\(k\\) has earned \\(n-k+1\\) months of interest. Write \\(A_n\\) as a sum, spot the geometric series (first term \\(1.0025\\), ratio \\(1.0025\\)), and use \\(S_n=\\dfrac{a\\left(r^{n}-1\\right)}{r-1}\\) with \\(r>1\\).",
